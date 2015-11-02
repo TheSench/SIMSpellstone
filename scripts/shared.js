@@ -216,7 +216,7 @@ var MakeAssault = (function () {
 var MakeBattleground = (function () {
     var Battleground = function (name, skill) {
         this.name = name;
-        this.skill = [skill];
+        this.skill = skill;
     }
 
     Battleground.prototype = {
@@ -416,7 +416,7 @@ function debug_dump_field() {
 }
 
 // Output formatted name of card
-function debug_name(card, stats) {
+function debug_name(card, hideStats) {
 	if (card.owner == 'cpu') {
 		var tag = 'i';
 	} else {
@@ -428,7 +428,7 @@ function debug_name(card, stats) {
 	if (card.maxLevel > 1) output += '{' + card.level + '/' + card.maxLevel + '}';
 	if (card['key'] !== undefined) output += ' (' + card['key'] + ')';
 	output += '</' + tag + '>';
-	if (stats) {
+	if (!hideStats) {
 	    output += '<u>';
 	    if (card.isCommander()) {
 	        output += ' [';
@@ -1025,9 +1025,9 @@ function load_deck_quest(id) {
 
 
 // Output card array
-function get_card_by_id(id) {
+function get_card_by_id(id, unit_level) {
 
-    var unit_level = 0;
+    if (typeof unit_level === 'undefined') { unit_level = 0; }
     var levelStart = 0;
     if (isNaN(id)) {
         levelStart = id.indexOf('(');

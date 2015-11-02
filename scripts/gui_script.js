@@ -259,7 +259,7 @@ function onpageload() {
 
 function load_tests()
 {
-    var startingPlayerDeck = "Urs(5), Hotiron(4) x2, Smelted Skeleton(4) x2, Swiftfoot(4), Outrunner(4)x2, Matriarch(5), Executioner(4), Purging(5), Mighty Clawkin(4), Chaos Storm(5) x2, Lilypad(4), Lightsworn(5)";
+    var startingPlayerDeck = "Urs(5), Hotiron(4), Smelted Skeleton(4) x3, Swiftfoot(4), Outrunner(4)x3, Matriarch(5), Executioner(4), Purging(5), Mighty Clawkin(4), Chaos Swell(5), Lilypad(4), Lightsworn(5)";
     var startingEnemyDeck = "Groc(6), Fire D(4), Executioner(4), Heroic(5), Chaos T(5), Tsunamari(5), Spearhunter(5), Bolt Ele(4), Poison(3), Lightsworn(5), Discordant(5), Blood(5), Blood(6), Glass T(4), Titan of S(5), Storm D(5)";
     var zDeck = "Groc(6), Heroic(5)x2; Fowl Swarm(5), Wind Spirit(5), Swell(5)x2, Garg(5)x2, Rock T(5), Sapling(5), Tsunamari(5), Honeycomb(5), Avenging(6), Blazekin(6), Nixfire(4)";
     var drypDeck = "Samael(6), Rhino Beast(6), Life Dragon(6), Rust Goliath(6)x2, Blazekin Dragon(6), Retribution Angel(6), Radiance(6), Royal Guardian(6), Darkness Elemental(5), Mentor(5), Mega(5), titan of s(5), Gravity Bender(5), Glass Titan(5)";
@@ -444,7 +444,7 @@ function generate_link(autostart, autolink) {
 	if (!getdeck && !getcardlist) getdeck = 'Po';
 	var getdeck2 = document.getElementById('deck2').value;
 	var getcardlist2 = document.getElementById('cardlist2').value;
-	//var getmission = document.getElementById('mission').value;
+	var getmission = document.getElementById('mission').value;
 	//var getbattleground = document.getElementById('battleground').value;
 
 	// Load player deck
@@ -459,9 +459,9 @@ function generate_link(autostart, autolink) {
 		deck['cpu'] = load_deck_from_cardlist(getcardlist2);
 	}/* else if (getdeck2) {
 		deck['cpu'] = hash_decode(getdeck2);
-	} else if (getmission) {
+	}*/ else if (getmission) {
 		deck['cpu'] = 0;
-	}*/
+	}
 
 	if (deck['player']) {
 		d = hash_encode(deck['player']);
@@ -612,6 +612,8 @@ var getexactorder = false;
 var getexactorder2 = false;
 var getmission = false;
 var getbattleground = 0;
+var getsiege = 0;
+var tower_level = 0;
 var echo = '';
 var wins = 0;
 var losses = 0;
@@ -628,7 +630,7 @@ var time_stop = 0;
 var time_start_batch = 0;
 var time_end = 0;	// TODO: Use this
 var surge = false;
-var battleground = '';
+var battleground = [];
 var total_turns = 0;
 var cache_player_deck = false;
 var cache_cpu_deck = false;

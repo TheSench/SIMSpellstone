@@ -270,7 +270,19 @@ var startsim = function (autostart) {
 	getexactorder = document.getElementById('exactorder').checked;
 	getexactorder2 = document.getElementById('exactorder2').checked;
 	getmission = document.getElementById('mission').value;
-	getbattleground = document.getElementById('battleground').value;
+	getsiege = document.getElementById('siege').checked;
+	tower_level = document.getElementById('tower_level').value;
+	if (quests && quests['root'] && quests['root']['battleground']) {
+	    getbattleground = [];
+	    for (var key in quests['root']['battleground']) {
+	        var battleground = quests['root']['battleground'][key];
+	        var checkbox = document.getElementById('battleground_' + battleground.id);
+	        if (checkbox && checkbox.checked) {
+	            getbattleground.push(battleground.id);
+	        }
+	    }
+	    getbattleground = getbattleground.join();
+	}
 	if (!getdeck2 && !getmission && !getcardlist2) getdeck2 = 'Po';
 	surge = document.getElementById('surge').checked;
 

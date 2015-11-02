@@ -38,6 +38,16 @@ void Main()
 		deck = node.Element("deck").Elements("card").Select(card => card.Attribute("id").Value).ToArray()
 	}).OrderBy(m => m.id);
 
+	xmlFile = @"C:\Users\jsen\Documents\Visual Studio 2013\Projects\SIMSpellstone\cards\fusion_recipes_cj2.xml";
+	doc = XDocument.Load(xmlFile);
+	var fusions = doc.Descendants("mission").Select(node => new mission()
+	{
+		id = node.Element("id").Value,
+		name = node.Element("name").Value,
+		commander = node.Element("commander").Attribute("id").Value,
+		deck = node.Element("deck").Elements("card").Select(card => card.Attribute("id").Value).ToArray()
+	}).OrderBy(m => m.id);
+
 	var file = new FileInfo(@"C:\Users\jsen\Documents\Visual Studio 2013\Projects\SIMSpellstone\cards\cache.js");
 	using (var writer = file.CreateText())
 	{
@@ -133,11 +143,6 @@ battleground[] battlegrounds = new battleground[] {
 			x = "2",
             y = ((int)FactionIDs.Dragon).ToString(),
 			all = "1",
-		},
-	},
-	new battleground {
-		Name = "Rise of the Frogs",
-		Effect = new skill() {
 		},
 	},
 };

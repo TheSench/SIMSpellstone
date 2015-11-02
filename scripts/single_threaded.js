@@ -30,7 +30,19 @@ var startsim = function (autostart) {
 	getexactorder = document.getElementById('exactorder').checked;
 	getexactorder2 = document.getElementById('exactorder2').checked;
 	getmission = document.getElementById('mission').value;
-//	getbattleground = document.getElementById('battleground').value;
+	getsiege = document.getElementById('siege').checked;
+	tower_level = document.getElementById('tower_level').value;
+	if (quests && quests['root'] && quests['root']['battleground']) {
+	    getbattleground = [];
+	    for (var key in quests['root']['battleground']) {
+	        var battleground = quests['root']['battleground'][key];
+	        var checkbox = document.getElementById('battleground_' + battleground.id);
+	        if (checkbox && checkbox.checked) {
+	            getbattleground.push(battleground.id);
+	        }
+	    }
+	    getbattleground = getbattleground.join();
+	}
 	if (!getdeck2 && !getmission && !getcardlist2) getdeck2 = 'Po';
 	surge = document.getElementById('surge').checked;
 
@@ -215,8 +227,16 @@ var run_sim = function () {
 	if (getordered && !getexactorder) deck['player']['ordered'] = copy_card_list(deck['player']['deck']);
 	if (getordered2 && !getexactorder2) deck['cpu']['ordered'] = copy_card_list(deck['cpu']['deck']);
 
-	// Load custom battleground if any
-	if (getbattleground) battleground = quests['root']['battleground'][getbattleground]['effect'];
+    // Set up battleground effects, if any
+	battlegrounds = [];
+	if (getbattleground) {
+	    var selected = getbattleground.split(",");
+	    for (i = 0; i < selected.length; i++) {
+	        var id = selected[i];
+	        var battleground = quests['root']['battleground'][id];
+	        battlegrounds.push(MakeBattleground(battleground.name, battleground.skill));
+	    }
+	}
 
 	// Output decks for first simulation
 	if (debug && loss_debug) {

@@ -20,7 +20,7 @@ var get_assault_by_key = function (assaults, key) {
 }
 
 // Play card
-var play_card = function (card, p, o, quiet) {
+var play_card = function (card, p, quiet) {
 	var current_card = card;
 	var id = card['id'];
 	var field_p_assaults = field[p]['assaults'];
@@ -761,25 +761,17 @@ var simulate = function () {
     field_cpu_commander.owner = 'cpu';
     field_cpu_commander['health_left'] = field_cpu_commander['health'];
 
-    var battlegrounds = [];
-    
-	// Set up battleground effects
-    if (quests && quests['root'] && quests['root']['battleground']) {
-        for (var key in quests['root']['battleground']) {
-            var battleground = quests['root']['battleground'][key];
-            var checkbox = document.getElementById('battleground_' + battleground.id);
-            if (checkbox && checkbox.checked) {
-                battlegrounds.push(MakeBattleground(battleground.name, battleground.skill));
-            }
-        }
-    }
-
 	// Set up players
 	var first_player = 'player';
 	var second_player = 'cpu';
 	if (surge) {
 		first_player = 'cpu';
 		second_player = 'player';
+	}
+
+	if (getsiege) {
+	    var towerCard = get_card_by_id("601", tower_level);
+	    play_card(towerCard, 'cpu', true);
 	}
 
 	just_died = [];
@@ -898,13 +890,13 @@ var simulate = function () {
 					    }
 					    deck_p_ordered.length = orderIdx;
 					    card_picked = handIdx;
-					    play_card(get_card_by_id(cardInHand), p, o);
+					    play_card(get_card_by_id(cardInHand), p);
 					    break;
 					}
 				}
 			} else {
 				// Play first card in hand
-				play_card(get_card_by_id(deck_p_deck[0]), p, o);
+				play_card(get_card_by_id(deck_p_deck[0]), p);
 			}
 
 			// Remove from deck
@@ -1065,7 +1057,7 @@ var simulate = function () {
 var doAttack = function (current_assault, field_o_assaults, field_o_commander) {
     
     // -- START ATTACK SEQUENCE --
-    var target = field_o_assaults[key];
+    var target = field_o_assaults[current_assault.key];
     if (!target || !target.isAlive()) target = field_o_commander;
 
     // -- CALCULATE DAMAGE --
@@ -1093,6 +1085,30 @@ var doAttack = function (current_assault, field_o_assaults, field_o_commander) {
         }
     }
 
+    // Enfeeble
+    var enfeeble = target['enfeebled'];
+    damage += enfeeble;
+
+    // Protect (triggered before armor)
+    var protect = target['protected'];
+    if (debug && protect) echo += ' Barrier: -' + protect;
+    if (pierce) {
+        if (pierce > protect) {
+            pierce -= protect;
+            protect = 0;
+        } else {
+            protect -= pierce;
+            pierce = 0;
+        }
+    }
+
+    if (damage > protect) {
+        target['protected'] = 0;
+    } else {
+        target['protected'] -= damage;
+    }
+    damage -= protect;
+
     // Armor
     var armor = 0;
     if (target['skill']['armored']) {
@@ -1116,30 +1132,8 @@ var doAttack = function (current_assault, field_o_assaults, field_o_commander) {
     damage -= armor;
     if (debug && target['skill']['armored']) echo += ' Armor: -' + target['skill']['armored']['x'];
 
-    // Enfeeble
-    var enfeeble = target['enfeebled'];
-    damage += enfeeble;
     if (debug && enfeeble) echo += ' Enfeeble: +' + enfeeble;
 
-    // Protect
-    var protect = target['protected'];
-    if (debug && protect) echo += ' Barrier: -' + protect;
-    if (pierce) {
-        if (pierce > protect) {
-            pierce -= protect;
-            protect = 0;
-        } else {
-            protect -= pierce;
-            pierce = 0;
-        }
-    }
-
-    if (damage > protect) {
-        target['protected'] = 0;
-    } else {
-        target['protected'] -= damage;
-    }
-    damage -= protect;
 
     // Pierce (debug text)
     if (debug && current_assault['skill']['pierce'] && pierce < current_assault['skill']['pierce']['x']) {

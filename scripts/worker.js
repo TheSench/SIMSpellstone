@@ -178,8 +178,16 @@ function run_sim() {
 	if (getordered && !getexactorder) deck['player']['ordered'] = copy_card_list(deck['player']['deck']);
 	if (getordered2 && !getexactorder2) deck['cpu']['ordered'] = copy_card_list(deck['cpu']['deck']);
 
-	// Load custom battleground if any
-	if (getbattleground) battleground = quests['root']['battleground'][getbattleground]['effect'];
+    // Set up battleground effects, if any
+	battlegrounds = [];
+	if (getbattleground) {
+	    var battlegrounds = getbattleground.split(",");
+	    for (i = 0; i < battlegrounds.length; i++) {
+	        var id = battlegrounds[i];
+	        var battleground = quests['root']['battleground'][id];
+	        battlegrounds.push(MakeBattleground(battleground.name, battleground.skill));
+	    }
+	}
 
 	var result = simulate();
 
@@ -253,7 +261,9 @@ var getexactorder = false;
 var getexactorder2 = false;
 var getmission = 0;
 var getbattleground = 0;
-var battleground = '';
+var gettowerSiege = 0;
+var tower_level = 0;
+var battleground = [];
 var cache_player_deck = 0;
 var cache_cpu_deck = 0;
 var echo = '';
