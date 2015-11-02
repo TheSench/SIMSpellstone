@@ -31,7 +31,7 @@ var play_card = function (card, p, o, quiet) {
 	if (quiet) current_card['summoned'] = true;
 
 	var newKey = field_p_assaults.length;
-	current_card['p'] = p;
+	current_card.owner = p;
 	current_card['health_left'] = current_card['health'];
 	current_card['timer'] = current_card['cost'];
 	current_card['attack_rally'] = 0;
@@ -112,12 +112,12 @@ var choose_random_target = function (targets) {
 }
 
 var get_p = function (card) {
-	return card['p'];
+	return card.owner;
 }
 
 var get_o = function (card) {
-	if (card['p'] == 'cpu') return 'player';
-	if (card['p'] == 'player') return 'cpu';
+	if (card.owner == 'cpu') return 'player';
+	if (card.owner == 'player') return 'cpu';
 }
 
 // Deal damage to card
@@ -752,46 +752,27 @@ var simulate = function () {
     var field_player = field['player'];
     var field_player_commander = get_card_by_id(deck['player']['commander']);
     field_player['commander'] = field_player_commander;
-    field_player_commander['p'] = 'player';
+    field_player_commander.owner = 'player';
     field_player_commander['health_left'] = field_player_commander['health'];
     // Initialize cpu Commander on the field
     var field_cpu = field['cpu'];
     var field_cpu_commander = get_card_by_id(deck['cpu']['commander']);
     field_cpu['commander'] = field_cpu_commander;
-    field_cpu_commander['p'] = 'cpu';
+    field_cpu_commander.owner = 'cpu';
     field_cpu_commander['health_left'] = field_cpu_commander['health'];
 
     var battlegrounds = [];
     
 	// Set up battleground effects
-	if (true/*battleground*/) {
-	    //if (battleground == 'frog') {
-	        battlegrounds.push(MakeBattleground("Rise of the Frogs", {
-	            id: 'protect',
-	            x: 2,
-	            y: factionIDs.Frog,
-	            all: 1,
-	        }));
-	    //}
-	    //if (battleground == 'elemental') {
-	        battlegrounds.push(MakeBattleground("World Awakening", {
-	            id: 'rally',
-	            x: 2,
-	            y: factionIDs.Elemental,
-	            all: 1,
-	        }))
-	    //}
-	    //if (battleground == 'dragon') {
-	        /*
-	        battlegrounds.push(MakeBattleground("Age of the Dragons", {
-	            id: 'heal',
-	            x: 2,
-	            y: factionIDs.Dragon,
-	            all: 1,
-	        }))
-            */
-	    //}
-	}
+    if (quests && quests['root'] && quests['root']['battleground']) {
+        for (var key in quests['root']['battleground']) {
+            var battleground = quests['root']['battleground'][key];
+            var checkbox = document.getElementById('battleground_' + battleground.id);
+            if (checkbox && checkbox.checked) {
+                battlegrounds.push(MakeBattleground(battleground.name, battleground.skill));
+            }
+        }
+    }
 
 	// Set up players
 	var first_player = 'player';
@@ -937,7 +918,7 @@ var simulate = function () {
         // Activate battleground effects
 		for (var key in battlegrounds) {
 		    var battleground = battlegrounds[key];
-		    battleground['p'] = p;
+		    battleground.owner = p;
 		    activation_skills(battleground);
 		}
 
@@ -1180,7 +1161,7 @@ var doAttack = function (current_assault, field_o_assaults, field_o_commander) {
 
     // WINNING CONDITION
     if (field_o_commander['health_left'] < 1) {
-        return field_o_commander.p == 'cpu';
+        return field_o_commander.owner == 'cpu';
     }
 
     // Counter

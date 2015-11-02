@@ -266,9 +266,6 @@ var total_turns = 0;
 var max_turns = 50;
 var sims_left = 0;
 var running = false;
-// Global arrays
-var types = new Array();
-types['2'] = 'assault';
 
 var simulator_thread = true;
 

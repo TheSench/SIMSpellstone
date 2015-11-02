@@ -295,6 +295,8 @@ var startsim = function (autostart) {
 		cache_cpu_deck = hash_decode(getdeck2);
 	} else*/ if (getcardlist2) {
 		cache_cpu_deck = load_deck_from_cardlist(getcardlist2);
+	} else if (getmission) {
+	    cache_cpu_deck = load_deck_mission(getmission);
 	} else {
 		cache_cpu_deck = false;
 	}

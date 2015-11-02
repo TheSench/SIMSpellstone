@@ -45,6 +45,18 @@ window.onerror = function (message, url, linenumber) {
 
 var style;
 
+if (!String.prototype.format) {
+    String.prototype.format = function () {
+        var args = arguments;
+        return this.replace(/{(\d+)}/g, function (match, number) {
+            return typeof args[number] != 'undefined'
+              ? args[number]
+              : match
+            ;
+        });
+    };
+}
+
 var u_black = false;
 function toggle_u() {
 	if(typeof style == 'undefined') {
@@ -84,117 +96,40 @@ function toggle_u() {
 // When Page Loads...
 // Set up user interface
 function onpageload() {
-    var startingPlayerDeck = "Urs(5), Hotiron(4) x2, Smelted Skeleton(4) x2, Swiftfoot(4), Outrunner(4)x2, Matriarch(5), Executioner(4), Purging(5), Mighty Clawkin(4), Chaos Storm(5) x2, Lilypad(4), Lightsworn(5)";
-    var startingEnemyDeck = "Groc(6), Fire D(4), Executioner(4), Heroic(5), Chaos T(5), Tsunamari(5), Spearhunter(5), Bolt Ele(4), Poison(3), Lightsworn(5), Discordant(5), Blood(5), Blood(6), Glass T(4), Titan of S(5), Storm D(5)";
-    var zDeck = "Groc(6), Heroic(5)x2; Fowl Swarm(5), Wind Spirit(5), Swell(5)x2, Garg(5)x2, Rock T(5), Sapling(5), Tsunamari(5), Honeycomb(5), Avenging(6), Blazekin(6), Nixfire(4)";
-    var drypDeck = "Samael(6), Rhino Beast(6), Life Dragon(6), Rust Goliath(6)x2, Blazekin Dragon(6), Retribution Angel(6), Radiance(6), Royal Guardian(6), Darkness Elemental(5), Mentor(5), Mega(5), titan of s(5), Gravity Bender(5), Glass Titan(5)";
-	var htmltext = '';
-	htmltext +=
-	'<form><div><b>Deck Hash:</b></div><input id="deck" type="text" value="" size="50" maxlength="200"><br>' +
-	'<div>&nbsp;</div><font color="#666"><strong>Hash example:</strong> QVD1+jJeKPK6gKgQ</font><br>'+
-	'<br>' +
-	'<div><b>Card List:</b></div><input id="cardlist" type="text" value="' + startingPlayerDeck + '" size="100" maxlength="500"><br>' +
-	'<div>&nbsp;</div><font color="#666"><strong>Card list example:</strong> Drac: AE(3); Razor*, 2xEMP, (2)Raider Hawkeye[507]; [2101]x2</font><br>'+
-	'<br>' +
-	'<div>Ordered Deck:</div><input type="checkbox" id="ordered"> ' +
-	'<div><u>Exact Order (ignore 3-card hand rule):</u></div><input type="checkbox" id="exactorder"><br>' +
-	'<div>Surge Mode:</div><input type="checkbox" id="surge"><br>' +
-	'<div>Tournament Mode:</div><input type="checkbox" id="tournament"><br>' +
-	'<br>' +
-	'<hr>' +
-	'<br>' +
-	'<div><i>Enemy Deck Hash:</i></div><input type="text" id="deck2" value="" size="50" maxlength="200"><br>' +
-	'<div>&nbsp;</div><font color="#666"><strong>Hash example:</strong> QVD1+jJeKPK6gKgQ</font><br>'+
-	'<br>' +
-	'<div><i>Enemy Card List:</i></div><input id="cardlist2" type="text" value="' + zDeck + '" size="100" maxlength="500"><br>' +
-	'<div>&nbsp;</div><font color="#666"><strong>Card list example:</strong> Drac: AE(3); Razor*, 2xEMP, (2)Raider Hawkeye[507]; [2101]x2</font><br>'+
-	'<br>' +
-	'<div>Ordered Enemy Deck:</div><input type="checkbox" id="ordered2"> ' +
-	'<div><u>Exact Order (ignore 3-card hand rule):</u></div><input type="checkbox" id="exactorder2"><br>';
 
 	// Check if missions are found
 	if (missions && missions['root'] && missions['root']['mission']) {
-
-		htmltext +=
-		'<br>' +
-		'<div><i>Mission:</i></div><select id="mission">'+
-		'<option value=""></option>';
-
-		// Mission drop down
-		var missions_text = '';
-		var alpha = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-		for (var a = 0; a < 26; a++) {
-			for (var key in missions['root']['mission']) {
-				var current_mission = missions['root']['mission'][key];
-				var current_missions_text = '';
-				if (current_mission['name'].substr(0, 7) == 'Mission') continue;
-				if (current_mission['name'].substr(0, 1) != alpha.substr(25-a,1)) continue;
-				current_missions_text += '<option value="';
-				current_missions_text += current_mission['id'];
-				current_missions_text += '">';
-				current_missions_text += current_mission['name'];
-				current_missions_text += '</option>';
-				missions_text = current_missions_text + missions_text;
-			}
-		}
+	    // Mission drop down
+	    var select = document.getElementById('mission');
 		for (var key in missions['root']['mission']) {
-			var current_mission = missions['root']['mission'][key];
-			var current_missions_text = '';
-			if (current_mission['name'].substr(0, 7) != 'Mission') continue;
-			current_missions_text += '<option value="';
-			current_missions_text += current_mission['id'];
-			current_missions_text += '">';
-			current_missions_text += current_mission['name'];
-			current_missions_text += '</option>';
-			missions_text = current_missions_text + missions_text;
+		    var mission = missions['root']['mission'][key];
+		    var option = document.createElement('option');
+		    option.appendChild(document.createTextNode(mission['name']));
+		    option.value = mission['id'];
+		    select.appendChild(option);
 		}
-
-		htmltext += missions_text;
-		htmltext +=
-		'</select><br>';
 	}
 
 	// Check if battlegrounds are found
 	if (quests && quests['root'] && quests['root']['battleground']) {
-		htmltext +=
-		'<br>' +
-		'<div><i>Battleground:</i></div><select id="battleground">'+
-		'<option value=""></option>';
-
-		// Battleground drop down
-		var battleground_text = '';
+	    // Battleground drop down
+	    var select = document.getElementById('battleground');
 		for (var key in quests['root']['battleground']) {
-			var current_battleground = quests['root']['battleground'][key];
-			var current_battleground_text = '';
-			var name = current_battleground['name'];
-			current_battleground_text += '<option value="';
-			current_battleground_text += current_battleground['id'];
-			current_battleground_text += '">';
-			current_battleground_text += name;
-			current_battleground_text += '</option>';
-			battleground_text += current_battleground_text;
+		    var battleground = quests['root']['battleground'][key];
+		    var checkbox = document.createElement('input');
+		    checkbox.type = "checkbox";
+		    checkbox.name = "battleground";
+		    checkbox.id = "battleground_" + battleground['id'];
+		    checkbox.value = battleground['id'];
+		    select.appendChild(checkbox);
+		    select.appendChild(document.createTextNode(battleground['name']));
+		    select.appendChild(document.createElement('br'));
 		}
-
-		htmltext += battleground_text;
-		htmltext +=
-		'</select><br>';
 	}
-
-	htmltext +=
-	'<br>' +
-	'<hr>' +
-	'<br>' +
-	'<div>Number of Simulations:</div><input type="text" id="sims" value="100" size="10"><br>' +
-	'<br>' +
-	'<div>Debug Mode:</div><input type="checkbox" id="debug"><br>' +
-	'<div>Mass Debug Mode (causes slowdown):</div><input type="checkbox" id="mass_debug"><br>' +
-	'<div>Debug Loss Mode (output first loss):</div><input type="checkbox" id="loss_debug"><br>' +
-	'<br>' +
-	'<div>&nbsp;</div><input id="btn_simulate" type="button" value="Simulate" onclick="return startsim();" style="text-align: center; font-weight: bold;"> <input type="button" value="Generate Link" onclick="return display_generated_link();" style="text-align: center; font-weight: normal;"> <input type="button" value="History" onclick="return display_history();" style="text-align: center; font-weight: normal;"></form>';
 
 	var c = document.getElementById('ui');
 	if (!c) return 0;
-	c.innerHTML = htmltext;
+	//c.innerHTML = htmltext;
 
 	if (_GET('deck1')) {
 		var d = document.getElementById('deck');
@@ -318,6 +253,28 @@ function onpageload() {
 	if (_GET('autostart')) {
 		startsim(1);
 	}
+
+	load_tests();
+}
+
+function load_tests()
+{
+    var startingPlayerDeck = "Urs(5), Hotiron(4) x2, Smelted Skeleton(4) x2, Swiftfoot(4), Outrunner(4)x2, Matriarch(5), Executioner(4), Purging(5), Mighty Clawkin(4), Chaos Storm(5) x2, Lilypad(4), Lightsworn(5)";
+    var startingEnemyDeck = "Groc(6), Fire D(4), Executioner(4), Heroic(5), Chaos T(5), Tsunamari(5), Spearhunter(5), Bolt Ele(4), Poison(3), Lightsworn(5), Discordant(5), Blood(5), Blood(6), Glass T(4), Titan of S(5), Storm D(5)";
+    var zDeck = "Groc(6), Heroic(5)x2; Fowl Swarm(5), Wind Spirit(5), Swell(5)x2, Garg(5)x2, Rock T(5), Sapling(5), Tsunamari(5), Honeycomb(5), Avenging(6), Blazekin(6), Nixfire(4)";
+    var drypDeck = "Samael(6), Rhino Beast(6), Life Dragon(6), Rust Goliath(6)x2, Blazekin Dragon(6), Retribution Angel(6), Radiance(6), Royal Guardian(6), Darkness Elemental(5), Mentor(5), Mega(5), titan of s(5), Gravity Bender(5), Glass Titan(5)";
+
+    var cardlist = document.getElementById('cardlist');
+    cardlist.value = startingPlayerDeck;
+    cardlist = document.getElementById('cardlist2');
+    cardlist.value = zDeck;
+
+    var d = document.getElementById('debug');
+    d.checked = true;
+    var d = document.getElementById('battleground_0');
+    d.checked = true;
+    var d = document.getElementById('battleground_1');
+    d.checked = true;
 }
 
 // Modify HTML to output simulation results
@@ -343,11 +300,6 @@ function gettable() {
 		'<i>Autostart link</i>' +
 		'<br>' +
 		'<a href="'+generate_link(1)+'">'+generate_link(1)+'</a>' +
-		'<br>' +
-		'<br>' +
-		'<i>Copy/paste these results into Fansite as a comment</i>' +
-		'<br>' +
-		'<textarea onclick="this.select()">'+generate_fansite_results()+'</textarea>' +
 		'<br>' +
 		'<br>';
 	}
@@ -472,61 +424,6 @@ function batch_time_elapsed(time_started) {
 	var v = (t - time_started)/1000;
 	v = v.toFixed(3);
 	return v;
-}
-
-// Generate formatted results for Fansite
-function generate_fansite_results() {
-	var text = '';
-	var d = 0;
-	var deck = [];
-
-	var getdeck = document.getElementById('deck').value;
-	var getcardlist = document.getElementById('cardlist').value;
-
-	// Load player deck
-	/*if (getdeck) {
-		deck['player'] = hash_decode(getdeck);
-	} else*/ if (getcardlist) {
-		deck['player'] = load_deck_from_cardlist(getcardlist);
-	}
-
-	text += '[b]';
-
-	var temp = wins / games * 100;
-	temp = temp.toFixed(1);
-	var winrate = temp;
-	text += temp;
-	text += '%';
-
-	d = document.getElementById('ordered');
-	if (d.checked) {
-		text += ' Ordered';
-	} else {
-		text += ' Auto';
-	}
-
-	text += ' Winrate[/b] ';
-	text += '[url=';
-	text += generate_link();
-	text += ']';
-
-	d = document.getElementById('sims');
-	if (d.value) {
-		temp = d.value / 1;
-		if (temp.toFixed(0) >= 1000) {
-			temp = d.value / 1000;
-			temp = temp.toFixed(0);
-			text += temp + 'k';
-		} else {
-			text += temp.toFixed(0);
-		}
-	}
-	text += ' trials';
-
-	text += ' - SimSpellstone ' + text_version;
-	text += '[/url]';
-
-	return text;
 }
 
 // Generate a link from current settings and input
@@ -737,32 +634,29 @@ var cache_player_deck = false;
 var cache_cpu_deck = false;
 
 // Global arrays
-var factions = [];
-factions[1] = 'Aether';
-factions[2] = 'Chaos';
-factions[3] = 'Wyld';
-factions[4] = 'Frog';
-factions[5] = 'Elemental';
-factions[6] = 'Angel';
-factions[7] = 'Undead';
-factions[8] = 'Void';
-factions[9] = 'Dragon';
-var factionIDs = {
-    Aether: 1,
-    Chaos: 2,
-    Wyld: 3,
-    Frog: 4,
-    Elemental: 5,
-    Angel: 6,
-    Undead: 7,
-    Void: 8,
-    Dragon: 9
+var factions = {
+    names: [
+        undefined,
+        'Aether',
+        'Chaos',
+        'Wyld',
+        'Frog',
+        'Elemental',
+        'Angel',
+        'Undead',
+        'Void',
+        'Dragon',
+    ],
+    IDs: {
+        Aether: 1,
+        Chaos: 2,
+        Wyld: 3,
+        Frog: 4,
+        Elemental: 5,
+        Angel: 6,
+        Undead: 7,
+        Void: 8,
+        Dragon: 9
+    }
 };
-var types = [];
-types['2'] = 'assault';
-var rarities = [];
-rarities['1'] = 'common';
-rarities['2'] = 'uncommon';
-rarities['3'] = 'rare';
-rarities['4'] = 'legendary';
 
