@@ -34606,14 +34606,6 @@ var quests = {
           },
         ]
       },
-      {
-        "name": "Rise of the Frogs",
-        "id": "3",
-        "skill": [
-          {
-          },
-        ]
-      },
     ]
   }
 };
