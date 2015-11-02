@@ -40,8 +40,36 @@ function copy_card_list(original_card_list) {
 	return new_card_list;
 }
 
-function copy_card(original_card, unit_level) {
-    return MakeAssault(original_card, unit_level);
+// http://stackoverflow.com/questions/728360/most-elegant-way-to-clone-a-javascript-object
+function clone(obj) {
+    if (null == obj || "object" != typeof obj) return obj;
+    var copy = obj.constructor();
+    copy.__proto__ = obj.__proto__;
+    for (var attr in obj) {
+        if (obj.hasOwnProperty(attr)) copy[attr] = obj[attr];
+    }
+    return copy;
+}
+
+function cloneCard(original) {
+    var copy = original.constructor();
+    copy.__proto__ = original.__proto__;
+    copy.id = original.id;
+    copy.name = original.name;
+    copy.attack = original.attack;
+    copy.health = original.health;
+    copy.maxLevel = original.maxLevel;
+    copy.level = original.level;
+    copy.cost = original.cost;
+    copy.rarity = original.rarity;
+    copy.card_type = original.card_type;
+    copy.type = original.type;
+    copy.sub_type = original.sub_type;
+    copy.set = original.set;
+    copy.skill = original.skill;
+    copy.timer = copy.cost;
+    copy.health_left = copy.health;
+    return copy;
 }
 
 var MakeAssault = (function () {
@@ -50,8 +78,8 @@ var MakeAssault = (function () {
 		this.name = original_card.name;
 		this.attack = original_card.attack;
 		this.health = original_card.health;
-		this.level = "1";
 		this.maxLevel = GetMaxLevel(original_card);
+		this.level = ((unit_level > this.maxLevel) ? this.maxLevel : unit_level);
 		this.cost = original_card.cost;
 		this.rarity = original_card.rarity;
 		this.card_type = original_card.card_type;
@@ -60,22 +88,49 @@ var MakeAssault = (function () {
 		this.set = original_card.set;
 		this.skill = copy_skills(original_card.skill);
 		this.timer = this.cost;
-		if (unit_level) {
-		    this.level = unit_level.replace(/[\(\)]/g, '');
-            if(this.level > this.maxLevel) this.level = this.maxLevel
-		    if (this.level > 1) {
-		        for (var key in original_card.upgrades) {
-		            var upgrade = original_card.upgrades[key];
-		            if (upgrade.cost !== undefined) this.cost = upgrade.cost;
-		            if (upgrade.health !== undefined) this.health = upgrade.health;
-		            if (upgrade.attack !== undefined) this.attack = upgrade.attack;
-		            update_skills(this.skill, upgrade.skill);
-		            if (key == this.level) break;
-		        }
+		if (this.level > 1) {
+		    for (var key in original_card.upgrades) {
+		        var upgrade = original_card.upgrades[key];
+		        if (upgrade.cost !== undefined) this.cost = upgrade.cost;
+		        if (upgrade.health !== undefined) this.health = upgrade.health;
+		        if (upgrade.attack !== undefined) this.attack = upgrade.attack;
+		        update_skills(this.skill, upgrade.skill);
+		        if (key == this.level) break;
 		    }
 		}
 		this.health_left = this.health;
+		card_cache[original_card.id + "-" + unit_level] = this;
 		return this;
+    }
+
+    var CopyValues = function (new_card, original_card, unit_level) {
+        new_card.id = original_card.id;
+        new_card.name = original_card.name;
+        new_card.attack = original_card.attack;
+        new_card.health = original_card.health;
+        new_card.maxLevel = GetMaxLevel(original_card);
+        new_card.level = ((unit_level > new_card.maxLevel) ? new_card.maxLevel : unit_level);
+        new_card.cost = original_card.cost;
+        new_card.rarity = original_card.rarity;
+        new_card.card_type = original_card.card_type;
+        new_card.type = original_card.type;
+        new_card.sub_type = original_card.sub_type;
+        new_card.set = original_card.set;
+        new_card.skill = copy_skills(original_card.skill);
+        new_card.timer = new_card.cost;
+        if (new_card.level > 1) {
+            for (var key in original_card.upgrades) {
+                var upgrade = original_card.upgrades[key];
+                if (upgrade.cost !== undefined) new_card.cost = upgrade.cost;
+                if (upgrade.health !== undefined) new_card.health = upgrade.health;
+                if (upgrade.attack !== undefined) new_card.attack = upgrade.attack;
+                update_skills(new_card.skill, upgrade.skill);
+                if (key == new_card.level) break;
+            }
+        }
+        new_card.health_left = new_card.health;
+        card_cache[original_card.id + "-" + unit_level] = new_card;
+        return new_card;
     }
 
     function GetMaxLevel(original_card) {
@@ -210,7 +265,21 @@ var MakeAssault = (function () {
 	}
 	
 	return (function (original_card, unit_level) {
-	    return new Card(original_card, unit_level);
+        // Format unit_level
+	    if (unit_level) unit_level = unit_level.replace(/[\(\)]/g, '');
+	    else unit_level = "1";
+
+        var card
+	    if(original_card) {
+	        var cached = card_cache[original_card.id + "-" + unit_level]
+	        if (cached) {
+	            card = cloneCard(cached);
+	        }
+	    }
+	    if (!card) {
+	        card = new Card(original_card, unit_level);
+	    }
+	    return card;
 	})
 }());
 
@@ -1056,7 +1125,7 @@ function get_card_by_id(id, unit_level) {
 		if (!current_card['skill']) {
 			current_card['skill'] = [];
 		}
-		return copy_card(current_card, unit_level);
+		return MakeAssault(current_card, unit_level);
 	}
 }
 
