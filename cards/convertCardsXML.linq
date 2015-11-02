@@ -11,21 +11,13 @@ void Main()
 
 	StringBuilder sbJSON = new StringBuilder();
 	List<unit> units = new List<unit>();
-	List<unit> heroes = new List<unit>();
 
 	var unitNodes = doc.Descendants("unit");
 	foreach (var unitXML in unitNodes)
 	{
 		var stringReader = new StringReader(unitXML.ToString());
 		var unit = (unit)unitDeserializer.Deserialize(stringReader);
-		if (unit.card_type == CardType.Hero)
-		{
-			heroes.Add(unit);
-		}
-		else
-		{
-			units.Add(unit);
-		}
+		units.Add(unit);
 	}
 	
 	xmlFile = @"C:\Users\jsen\Documents\Visual Studio 2013\Projects\SIMSpellstone\cards\missions.xml";
@@ -57,10 +49,6 @@ void Main()
 		foreach (var unit in units)
 		{
 			writer.Write(unit.ToString());
-		}
-		foreach (var hero in heroes)
-		{
-			writer.Write(hero.ToString());
 		}
 		writer.Write("}\r\n");
 		writer.Write("}\r\n");
@@ -195,6 +183,7 @@ public partial class unit
 		AppendEntryString(sb, "name", name, unitTabs);
 		AppendEntryString(sb, "rarity", rarity, unitTabs);
 		AppendEntryString(sb, "set", set, unitTabs);
+		AppendEntryString(sb, "card_type", card_type, unitTabs);
 		AppendEntryString(sb, "type", type, unitTabs);
 		AppendEntryString(sb, "sub_type", sub_type, unitTabs);
 		AppendEntry(sb, "attack", attack, unitTabs);
@@ -476,7 +465,7 @@ private static void AppendEntryString(StringBuilder sb, string name, string valu
 {
 	if (value != null)
 	{
-		sb.Append(tabs).Append("\"").Append(name).Append("\"").Append(":").Append("\"").Append(value).Append("\",\r\n");
+		sb.Append(tabs).Append("\"").Append(name).Append("\"").Append(": ").Append("\"").Append(value).Append("\",\r\n");
 	}
 }
 

@@ -54,6 +54,7 @@ var MakeAssault = (function () {
 		this.maxLevel = GetMaxLevel(original_card);
 		this.cost = original_card.cost;
 		this.rarity = original_card.rarity;
+		this.card_type = original_card.card_type;
 		this.type = original_card.type;
 		this.sub_type = original_card.sub_type;
 		this.set = original_card.set;
@@ -103,11 +104,11 @@ var MakeAssault = (function () {
 
 		//Card ID is ...
 		isCommander: function () {
-			return (this.set == 7000);
+			return (this.card_type == "1");
 		},
 
 		isAssault: function () {
-		    return (this.set != 7000);
+		    return (!this.isCommander());
 		},
 
 		isBattleground: function () {
@@ -424,7 +425,6 @@ function debug_name(card, hideStats) {
 	}
 	var output = '<' + tag + '>';
 	output += card['name'];
-	if (card['set'] == 5002) output += '*';
 	if (card.maxLevel > 1) output += '{' + card.level + '/' + card.maxLevel + '}';
 	if (card['key'] !== undefined) output += ' (' + card['key'] + ')';
 	output += '</' + tag + '>';
@@ -699,204 +699,207 @@ function hash_decode(hash) {
 // - if can't figure out what card it is, ignore it and move on
 // - support raid-only and mission-only cards by using Dracorex[1042] notation
 function load_deck_from_cardlist(list) {
-    
-	//var delimiters = ';,:';
-	var abbreviations = [];
-	// Safety mechanism to prevent long loops
-	if (list.length > 300) list = list.substr(0,300);
 
-	list = list.toLowerCase();
-	list = list.toString().replace(/[\&\/]/g, ',');
-	list = list.toString().replace(/[\+]/g, '*');
-	list = list.toString().replace(/ and /g, ',');
-	list = list.toString().replace(/[\.\!\?\']/g, '');
-	list = list.toString().replace(/\s/g, '');
-	list = list.toString().replace(/atlasplusspells/g, 'atlas,8xairstrike,2xemp');
-	list = list.toString().replace(/atlas,spells/g, 'atlas,8xairstrike,2xemp');
-	list = list.toString().replace(/-/g, '');
-	list = list.toString().replace(/\'/g, '');
-	list = list.toString().replace(/kogoth,theconsumer/g, 'kogoth');
-	list = list.toString().replace(/kapak,thedeceiver/g, 'kapak');
-	list = list.toString().replace(/svetlana,infectioushost/g, 'infectioushost');
-	list = list.toString().replace(/pip,epicarbiter/g, 'epicarbiter');
-	list = list.split(/[,;:]/);
+    var current_deck = [];
+    current_deck['deck'] = [];
 
-	var current_deck = [];
-	current_deck['deck'] = [];
+    if (list) {
+        //var delimiters = ';,:';
+        var abbreviations = [];
+        // Safety mechanism to prevent long loops
+        if (list.length > 300) list = list.substr(0, 300);
 
-	for (var i in list) {
-		var current_card = list[i].toString();
-		var unit_id = 0;
-		var unit_level = '';
-		var card_found = false;
-		var current_card_upgraded = false;
+        list = list.toLowerCase();
+        list = list.toString().replace(/[\&\/]/g, ',');
+        list = list.toString().replace(/[\+]/g, '*');
+        list = list.toString().replace(/ and /g, ',');
+        list = list.toString().replace(/[\.\!\?\']/g, '');
+        list = list.toString().replace(/\s/g, '');
+        list = list.toString().replace(/atlasplusspells/g, 'atlas,8xairstrike,2xemp');
+        list = list.toString().replace(/atlas,spells/g, 'atlas,8xairstrike,2xemp');
+        list = list.toString().replace(/-/g, '');
+        list = list.toString().replace(/\'/g, '');
+        list = list.toString().replace(/kogoth,theconsumer/g, 'kogoth');
+        list = list.toString().replace(/kapak,thedeceiver/g, 'kapak');
+        list = list.toString().replace(/svetlana,infectioushost/g, 'infectioushost');
+        list = list.toString().replace(/pip,epicarbiter/g, 'epicarbiter');
+        list = list.split(/[,;:]/);
 
-		// Detect advanced prioritization
-		var priority_id = 0;
-		if (current_card.toString().length > 3 && current_card.toString().match(/=[1-9]$/)) {
-			priority_id = parseInt(current_card.substr(current_card.length-1,1));
-			current_card = current_card.substr(0,current_card.length-2);
-		}
+        var unit_definitions = CARDS['root']['unit'];
 
-		// Detect upgraded cards
-		if (current_card.indexOf('*') != -1 && current_card.toString().length > 2) {
-			current_card = current_card.toString().replace(/\*/g, '');
-			current_card_upgraded = true;
-		}
+        for (var i in list) {
+            var current_card = list[i].toString();
+            var unit_id = 0;
+            var unit_level = '';
+            var card_found = false;
+            var current_card_upgraded = false;
 
-		var copies = 1;
-		// Detect multiple copies
-		if (current_card.toString().length < 3) {
-		} else if (current_card.indexOf('10x') == 0 && current_card.toString().length > 4) {
-			copies = 10;
-			current_card = current_card.toString().replace(/^10x/g, '');
-		} else if ((current_card.indexOf('10') == 0 && current_card.toString().length > 3) || (current_card.indexOf('x10') == current_card.length-3 && current_card.toString().length > 4) || current_card.indexOf('(10)') != -1 || (current_card.indexOf('#10') == current_card.length-3 && current_card.toString().length > 4)) {
-			copies = 10;
-			current_card = current_card.toString().replace(/^10/g, '');
-			current_card = current_card.toString().replace(/x10$/g, '');
-			current_card = current_card.toString().replace(/#10$/g, '');
-			current_card = current_card.toString().replace(/\(10\)/g, '');
-		} else if (current_card.toString().match(/^[1-9]x/)) {
-			copies = parseInt(current_card.substr(0,1));
-			current_card = current_card.substr(2);
-		} else if (current_card.toString().match(/^[1-9][^x]/)) {
-			copies = parseInt(current_card.substr(0,1));
-			current_card = current_card.substr(1);
-		} else if (current_card.toString().match(/x[1-9]$/)) {
-			copies = parseInt(current_card.substr(current_card.length-1,1));
-			current_card = current_card.substr(0,current_card.length-2);
-		} else if (current_card.toString().match(/#[1-9]$/)) {
-			copies = parseInt(current_card.substr(current_card.length-1,1));
-			current_card = current_card.substr(0,current_card.length-2);
-		} else if (current_card.toString().match(/^\([1-9]\)/)) {
-			copies = parseInt(current_card.substr(1,1));
-			current_card = current_card.substr(3);
-		}
+            // Detect advanced prioritization
+            var priority_id = 0;
+            if (current_card.toString().length > 3 && current_card.toString().match(/=[1-9]$/)) {
+                priority_id = parseInt(current_card.substr(current_card.length - 1, 1));
+                current_card = current_card.substr(0, current_card.length - 2);
+            }
 
-		// Remove trailing 'es' if any
-		if (current_card.length > 6 && current_card.substr(current_card.length-2) == 'es') current_card = current_card.substr(0,current_card.length-2);
+            // Detect upgraded cards
+            if (current_card.indexOf('*') != -1 && current_card.toString().length > 2) {
+                current_card = current_card.toString().replace(/\*/g, '');
+                current_card_upgraded = true;
+            }
 
-		// Remove trailing 's' if any
-		if (current_card.length > 4 && current_card.substr(current_card.length - 1) == 's') current_card = current_card.substr(0, current_card.length - 1);
+            var copies = 1;
+            // Detect multiple copies
+            if (current_card.toString().length < 3) {
+            } else if (current_card.indexOf('10x') == 0 && current_card.toString().length > 4) {
+                copies = 10;
+                current_card = current_card.toString().replace(/^10x/g, '');
+            } else if ((current_card.indexOf('10') == 0 && current_card.toString().length > 3) || (current_card.indexOf('x10') == current_card.length - 3 && current_card.toString().length > 4) || current_card.indexOf('(10)') != -1 || (current_card.indexOf('#10') == current_card.length - 3 && current_card.toString().length > 4)) {
+                copies = 10;
+                current_card = current_card.toString().replace(/^10/g, '');
+                current_card = current_card.toString().replace(/x10$/g, '');
+                current_card = current_card.toString().replace(/#10$/g, '');
+                current_card = current_card.toString().replace(/\(10\)/g, '');
+            } else if (current_card.toString().match(/^[1-9]x/)) {
+                copies = parseInt(current_card.substr(0, 1));
+                current_card = current_card.substr(2);
+            } else if (current_card.toString().match(/^[1-9][^x]/)) {
+                copies = parseInt(current_card.substr(0, 1));
+                current_card = current_card.substr(1);
+            } else if (current_card.toString().match(/x[1-9]$/)) {
+                copies = parseInt(current_card.substr(current_card.length - 1, 1));
+                current_card = current_card.substr(0, current_card.length - 2);
+            } else if (current_card.toString().match(/#[1-9]$/)) {
+                copies = parseInt(current_card.substr(current_card.length - 1, 1));
+                current_card = current_card.substr(0, current_card.length - 2);
+            } else if (current_card.toString().match(/^\([1-9]\)/)) {
+                copies = parseInt(current_card.substr(1, 1));
+                current_card = current_card.substr(3);
+            }
 
-	    // Use unit_id notation if available
-		if (current_card.indexOf('(') != -1 && current_card.indexOf(')') != -1) {
-		    unit_level = current_card.substr(current_card.indexOf('('));
-		    unit_level = unit_level.substr(0, unit_level.indexOf(')') + 1);
-		    current_card = current_card.substr(0, current_card.indexOf('('));
-		}
+            // Remove trailing 'es' if any
+            if (current_card.length > 6 && current_card.substr(current_card.length - 2) == 'es') current_card = current_card.substr(0, current_card.length - 2);
 
-		current_card = current_card.trim();
+            // Remove trailing 's' if any
+            if (current_card.length > 4 && current_card.substr(current_card.length - 1) == 's') current_card = current_card.substr(0, current_card.length - 1);
 
-		// Use unit_id notation if available
-		if (current_card.indexOf('[') != -1 && current_card.indexOf(']') != -1) {
-			unit_id = current_card.substr(current_card.indexOf('[') + 1);
-			unit_id = unit_id.substr(0, unit_id.indexOf(']'));
-			if (unit_level) unit_id += unit_level;
-			if (is_commander(unit_id)) {
-			    current_deck['commander'] = unit_id + unit_level;
-			} else {
-				current_deck['deck'][current_deck['deck'].length] = unit_id;
-				while (copies > 1) {
-					current_deck['deck'][current_deck['deck'].length] = unit_id;
-					copies--;
-				}
-			}
-			continue;
-		}
+            // Use unit_id notation if available
+            if (current_card.indexOf('(') != -1 && current_card.indexOf(')') != -1) {
+                unit_level = current_card.substr(current_card.indexOf('('));
+                unit_level = unit_level.substr(0, unit_level.indexOf(')') + 1);
+                current_card = current_card.substr(0, current_card.indexOf('('));
+            }
 
-		// Use abbreviation if available
-		current_card = current_card.toLowerCase();
-		current_card = current_card.toString().replace(/\s/g, '');
-		current_card = current_card.toString().replace(/-/g, '');
-		current_card = current_card.toString().replace(/\'/g, '');
-		if (abbreviations[current_card]) current_card = abbreviations[current_card];
-		current_card = current_card.toLowerCase();
-		current_card = current_card.toString().replace(/\s/g, '');
-		current_card = current_card.toString().replace(/-/g, '');
-		current_card = current_card.toString().replace(/\'/g, '');
+            current_card = current_card.trim();
 
-		// Match full name if available
-		for (var k in CARDS['root']['unit']) {
-		    unit_id = CARDS['root']['unit'][k]['id'];
-			var current_name = CARDS['root']['unit'][k]['name'].toLowerCase();
-			current_name = current_name.toString().replace(/[\&]/g, ',');
-			current_name = current_name.toString().replace(/[\.\!\?]/g, '');
-			current_name = current_name.toString().replace(/\s/g, '');
-			current_name = current_name.toString().replace(/-/g, '');
-			current_name = current_name.toString().replace(/\'/g, '');
+            // Use unit_id notation if available
+            if (current_card.indexOf('[') != -1 && current_card.indexOf(']') != -1) {
+                unit_id = current_card.substr(current_card.indexOf('[') + 1);
+                unit_id = unit_id.substr(0, unit_id.indexOf(']'));
+                if (unit_level) unit_id += unit_level;
+                if (is_commander(unit_id)) {
+                    current_deck['commander'] = unit_id + unit_level;
+                } else {
+                    current_deck['deck'].push(unit_id);
+                    while (copies > 1) {
+                        current_deck['deck'].push(unit_id);
+                        copies--;
+                    }
+                }
+                continue;
+            }
 
-			if (current_name == current_card) {
-			    var fullID = unit_id + unit_level;
-				if (is_commander(unit_id) && copies == 1) {
-				    current_deck['commander'] = fullID;
-				} else {
-				    if (priority_id > 0) {
-				        fullID += ',' + priority_id;
-				    }
-				    current_deck['deck'][current_deck['deck'].length] = fullID;
-					while (copies > 1) {
-					    current_deck['deck'][current_deck['deck'].length] = fullID;
-						copies--;
-					}
-				}
-				card_found = true;
-				break;
-			}
-		}
-		if (card_found) continue;
+            // Use abbreviation if available
+            current_card = current_card.toLowerCase();
+            current_card = current_card.toString().replace(/\s/g, '');
+            current_card = current_card.toString().replace(/-/g, '');
+            current_card = current_card.toString().replace(/\'/g, '');
+            if (abbreviations[current_card]) current_card = abbreviations[current_card];
+            current_card = current_card.toLowerCase();
+            current_card = current_card.toString().replace(/\s/g, '');
+            current_card = current_card.toString().replace(/-/g, '');
+            current_card = current_card.toString().replace(/\'/g, '');
 
-		// If no commanders yet, match partial name to commanders if available
-		if (!current_deck['commander'] && copies == 1) {
-			for (var k in CARDS['root']['unit']) {
-			    if (!CARDS['root']['unit'][k]['set']) continue;
-			    if (CARDS['root']['unit'][k]['set'] != '7000') continue;
-			    unit_id = CARDS['root']['unit'][k]['id'];
-				if (!is_commander(unit_id)) continue;
-				current_name = CARDS['root']['unit'][k]['name'].toLowerCase();
-				current_name = current_name.toString().replace(/[\&]/g, ',');
-				current_name = current_name.toString().replace(/[\.\!\?]/g, '');
-				current_name = current_name.toString().replace(/\s/g, '');
-				current_name = current_name.toString().replace(/-/g, '');
-				current_name = current_name.toString().replace(/\'/g, '');
-				if (current_name.indexOf(current_card) != -1) {
-				    current_deck['commander'] = unit_id + unit_level;
-					card_found = true;
-					break;
-				}
-			}
-		}
-		if (card_found) continue;
+            // Match full name if available
+            for (var k in unit_definitions) {
+                var card = unit_definitions[k];
+                unit_id = card['id'];
+                var current_name = card['name'].toLowerCase();
+                current_name = current_name.toString().replace(/[\&]/g, ',');
+                current_name = current_name.toString().replace(/[\.\!\?]/g, '');
+                current_name = current_name.toString().replace(/\s/g, '');
+                current_name = current_name.toString().replace(/-/g, '');
+                current_name = current_name.toString().replace(/\'/g, '');
 
-		// Match partial name to non-commanders if available
-		for (var k in CARDS['root']['unit']) {
-		    if (!CARDS['root']['unit'][k]['set']) continue;
-		    if (CARDS['root']['unit'][k]['set'] == '7000') continue;
-		    unit_id = CARDS['root']['unit'][k]['id'];
-			if (is_commander(unit_id)) continue;
-			current_name = CARDS['root']['unit'][k]['name'].toLowerCase();
-			current_name = current_name.toString().replace(/[\&]/g, ',');
-			current_name = current_name.toString().replace(/[\.\!\?]/g, '');
-			current_name = current_name.toString().replace(/\s/g, '');
-			current_name = current_name.toString().replace(/-/g, '');
-			current_name = current_name.toString().replace(/\'/g, '');
-			if (current_name.indexOf(current_card) != -1) {
-			    var fullID = unit_id + unit_level + ((priority_id > 0) ? ',' + priority_id : '');
-			    current_deck['deck'][current_deck['deck'].length] = fullID;
-				while (copies > 1) {
-				    current_deck['deck'][current_deck['deck'].length] = fullID;
-					copies--;
-				}
-				card_found = true;
-				break;
-			}
-		}
-		if (card_found) continue;
-	}
+                if (current_name == current_card) {
+                    var fullID = unit_id + unit_level;
+                    if (is_commander(unit_id) && copies == 1) {
+                        current_deck['commander'] = fullID;
+                    } else {
+                        if (priority_id > 0) {
+                            fullID += ',' + priority_id;
+                        }
+                        current_deck['deck'].push(fullID);
+                        while (copies > 1) {
+                            current_deck['deck'].push(fullID);
+                            copies--;
+                        }
+                    }
+                    card_found = true;
+                    break;
+                }
+            }
+            if (card_found) continue;
+
+            // If no commanders yet, match partial name to commanders if available
+            if (!current_deck['commander'] && copies == 1) {
+                for (var k in unit_definitions) {
+                    var card = unit_definitions[k];
+                    unit_id = card['id'];
+                    if (!is_commander(unit_id)) continue;
+                    current_name = card['name'].toLowerCase();
+                    current_name = current_name.toString().replace(/[\&]/g, ',');
+                    current_name = current_name.toString().replace(/[\.\!\?]/g, '');
+                    current_name = current_name.toString().replace(/\s/g, '');
+                    current_name = current_name.toString().replace(/-/g, '');
+                    current_name = current_name.toString().replace(/\'/g, '');
+                    if (current_name.indexOf(current_card) != -1) {
+                        current_deck['commander'] = unit_id + unit_level;
+                        card_found = true;
+                        break;
+                    }
+                }
+            }
+            if (card_found) continue;
+
+            // Match partial name to non-commanders if available
+            for (var k in unit_definitions) {
+                var card = unit_definitions[k];
+                unit_id = card['id'];
+                if (is_commander(unit_id)) continue;
+                current_name = card['name'].toLowerCase();
+                current_name = current_name.toString().replace(/[\&]/g, ',');
+                current_name = current_name.toString().replace(/[\.\!\?]/g, '');
+                current_name = current_name.toString().replace(/\s/g, '');
+                current_name = current_name.toString().replace(/-/g, '');
+                current_name = current_name.toString().replace(/\'/g, '');
+                if (current_name.indexOf(current_card) != -1) {
+                    var fullID = unit_id + unit_level + ((priority_id > 0) ? ',' + priority_id : '');
+                    current_deck['deck'].push(fullID);
+                    while (copies > 1) {
+                        current_deck['deck'].push(fullID);
+                        copies--;
+                    }
+                    card_found = true;
+                    break;
+                }
+            }
+            if (card_found) continue;
+        }
+    }
 
 	// Default commander to Cyrus if none found
 	if (!current_deck['commander']) {
-		current_deck['commander'] = 1;
+	    current_deck['commander'] = "202"; // Elaria Captain
 	}
 
 	return current_deck;
@@ -952,7 +955,7 @@ function load_deck_raid(id) {
 		current_pool = current_pool['card'];
 		for (var current_key in current_pool) {
 			var current_card = current_pool[current_key];
-			current_deck['deck'][current_deck['deck'].length] = current_card;
+			current_deck['deck'].push(current_card);
 		}
 	}
 
@@ -968,7 +971,7 @@ function load_deck_raid(id) {
 				for (var current_key in current_pool_cards) {
 					if (amount < 1) break;
 					var current_card = current_pool_cards[current_key];
-					current_deck['deck'][current_deck['deck'].length] = current_card;
+					current_deck['deck'].push(current_card);
 					amount--;
 				}
 			}
@@ -998,7 +1001,7 @@ function load_deck_quest(id) {
 		current_pool = current_pool['card'];
 		for (var current_key in current_pool) {
 			var current_card = current_pool[current_key];
-			current_deck['deck'][current_deck['deck'].length] = current_card;
+			current_deck['deck'].push(current_card);
 		}
 	}
 
@@ -1014,7 +1017,7 @@ function load_deck_quest(id) {
 				for (var current_key in current_pool_cards) {
 					if (amount < 1) break;
 					var current_card = current_pool_cards[current_key];
-					current_deck['deck'][current_deck['deck'].length] = current_card;
+					current_deck['deck'].push(current_card);
 					amount--;
 				}
 			}
@@ -1074,25 +1077,30 @@ function get_slim_card_by_id(id, getSkills) {
 	var new_card = [];
 	// Not a valid card
 	if (!current_card) {
-		new_card['id'] = undefined;
-		new_card['name'] = undefined;
-		new_card['set'] = undefined;
-		new_card['type'] = undefined;
-		new_card['rarity'] = undefined;
-		new_card['level'] = undefined;
-		new_card['maxLevel'] = undefined;
+		new_card.id = undefined;
+		new_card.name = undefined;
+		new_card.set = undefined;
+		new_card.card_type = undefined;
+		new_card.type = undefined;
+		new_card.sub_type = undefined;
+		new_card.rarity = undefined;
+		new_card.level = undefined;
+		new_card.maxLevel = undefined;
 		if(getSkills) new_card['skill'] = [];
 	} else {
-		new_card['id'] = current_card['id'];
-		new_card['name'] = current_card['name'];
-		new_card['set'] = current_card['set'];
-		new_card['type'] = current_card['type'];
-		new_card['sub_type'] = current_card['sub_type'];
-		new_card['maxLevel'] = current_card['maxLevel'];
-		if (unit_level) new_card['level'] = unit_level.replace(/[\(\)]/g, '');
-		else new_card['level'] = 1;
+		new_card.id = current_card.id;
+		new_card.name = current_card.name;
+		new_card.set = current_card.set;
+		new_card.card_type = current_card.card_type;
+		new_card.type = current_card.type;
+		new_card.sub_type = current_card.sub_type;
+		new_card.maxLevel = current_card.maxLevel;
+		if (unit_level) {
+		    new_card.level = unit_level.replace(/[\(\)]/g, '');
+		    if (new_card.level > new_card.maxLevel) new_card.level = new_card.maxLevel;
+		} else new_card.level = 1;
 		if (getSkills) {
-		    new_card['skill'] = copy_skills(current_card['skill']);
+		    new_card.skill = copy_skills(current_card.skill);
 		    if (new_card.level > 1) {
 		        for (var key in current_card.upgrades) {
 		            var upgrade = current_card.upgrades[key];
@@ -1117,5 +1125,5 @@ function get_card_name_by_id(id) {
 //Card ID is ...
 function is_commander(id) {
     var card = CARDS['root']['unit'][id];
-    return (card && card.set == '7000');
+    return (card && card.card_type == '1');
 }

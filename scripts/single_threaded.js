@@ -57,9 +57,9 @@ var startsim = function (autostart) {
 	/*if (getdeck) {
 		cache_player_deck = hash_decode(getdeck);
 	} else*/ if (getcardlist) {
-		cache_player_deck = load_deck_from_cardlist(getcardlist);
+	    cache_player_deck = load_deck_from_cardlist(getcardlist);
 	} else {
-		cache_player_deck = false;
+	    cache_player_deck = load_deck_from_cardlist();
 	}
 
 	max_turns = 50;
@@ -72,7 +72,7 @@ var startsim = function (autostart) {
 	} else if (getmission) {
 		cache_cpu_deck = load_deck_mission(getmission);
 	} else {
-		cache_cpu_deck = false;
+	    cache_cpu_deck = load_deck_from_cardlist();
 	}
 
 	wins = 0;
