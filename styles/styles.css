@@ -1,0 +1,43 @@
+body {
+	min-height: 1500px;
+}
+body, table, tr, td, input, select, option {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+}
+i {
+	text-decoration: none;
+	font-style:normal;
+	color: #ff0000;
+	font-weight: bold;
+}
+b {
+	text-decoration: none;
+	font-style:normal;
+	color: #0000ff;
+	font-weight: bold;
+}
+a {
+	text-decoration: underline;
+	font-style:normal;
+	color: #0000ff;
+}
+u {
+	text-decoration: none;
+	font-style:normal;
+	color: #dddddd;
+	font-weight: normal;
+}
+div {
+	float: left;
+	width: 250px;
+	margin-right: 10px;
+	text-align: right;
+}
+input {
+	float: left;
+	text-align: left;
+}
+br {
+	clear: both;
+}
