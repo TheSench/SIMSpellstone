@@ -4,7 +4,7 @@
 
 void Main()
 {
-	var xmlFile = @"C:\Users\jsen\Desktop\JSEN\Simulator\cards\cards.xml";
+	var xmlFile = @"C:\Users\jsen\Documents\Visual Studio 2013\Projects\SIMSpellstone\cards\cards.xml";
 	var doc = XDocument.Load(xmlFile);
 	
 	System.Xml.Serialization.XmlSerializer unitDeserializer = new System.Xml.Serialization.XmlSerializer(typeof(unit));
@@ -27,8 +27,18 @@ void Main()
 			units.Add(unit);
 		}
 	}
-	StringBuilder sb = new StringBuilder();
-	var file = new FileInfo(@"C:\Users\jsen\Documents\Visual Studio 2013\WebSites\Simulator\cards\cache.js");
+	
+	xmlFile = @"C:\Users\jsen\Documents\Visual Studio 2013\Projects\SIMSpellstone\cards\missions.xml";
+	doc = XDocument.Load(xmlFile);
+	var missions = doc.Descendants("mission").Select(node => new mission()
+	{
+		id = node.Element("id").Value,
+		name = node.Element("name").Value,
+		commander = node.Element("commander").Attribute("id").Value,
+		deck = node.Element("deck").Elements("card").Select(card => card.Attribute("id").Value).ToArray()
+	}).OrderBy(m => m.id);
+
+	var file = new FileInfo(@"C:\Users\jsen\Documents\Visual Studio 2013\Projects\SIMSpellstone\cards\cache.js");
 	using (var writer = file.CreateText())
 	{
 		writer.Write("var CARDS = {\r\n");
@@ -38,23 +48,121 @@ void Main()
 		{
 			writer.Write(unit.ToString());
 		}
-		/*
-		writer.Write("},\r\n");
-		writer.Write("\"heroes\": {\r\n");
-		*/
 		foreach (var hero in heroes)
 		{
 			writer.Write(hero.ToString());
 		}
 		writer.Write("}\r\n");
 		writer.Write("}\r\n");
-		writer.Write("}\r\n");
-		writer.Write("var missions = [];\r\n");
-		writer.Write("var achievements = [];\r\n");
-		writer.Write("var raids = [];\r\n");
-		writer.Write("var quests = [];\r\n");
+		writer.Write("};\r\n");
+		writer.WriteLine("var missions = {");
+		writer.WriteLine("  root: {");
+		writer.WriteLine("    mission: {");
+		foreach (var mission in missions)
+		{
+			writer.WriteLine("      \"" + mission.id + "\": {");
+			writer.WriteLine("        \"id\": \"" + mission.id + "\",");
+			writer.WriteLine("        \"name\": \"" + mission.name + "\",");
+			writer.WriteLine("        \"commander\": \"" + mission.commander + "\",");
+			writer.WriteLine("        \"deck\": [");
+			foreach (var card in mission.deck)
+			{
+				writer.WriteLine("          \"" + card + "\",");
+			}
+			writer.WriteLine("        ]");
+			writer.WriteLine("      },");
+		}
+		writer.WriteLine("    }");
+		writer.WriteLine("  }");
+		writer.WriteLine("};");
+
+		writer.WriteLine("var achievements = [];");
+		writer.WriteLine("var raids = [];");
+		writer.WriteLine("var quests = {");
+		writer.WriteLine("  root: {");
+		writer.WriteLine("    battleground: [");
+		for (int i = 0; i < battlegrounds.Length; i++)
+		{
+			var battleground = battlegrounds[i];
+			battleground.ID = i.ToString();
+			writer.Write(battleground.ToString());
+		}
+		writer.WriteLine("    ]");
+		writer.WriteLine("  }");
+		writer.WriteLine("};");
 	}
-	sb.ToString().Dump();
+
+}
+
+public enum FactionIDs
+{
+	Aether = 1,
+	Chaos = 2,
+	Wyld = 3,
+	Frog = 4,
+	Elemental = 5,
+	Angel = 6,
+	Undead = 7,
+	Void = 8,
+	Dragon = 9
+}
+
+battleground[] battlegrounds = new battleground[] {
+	new battleground {
+		Name = "Rise of the Frogs",
+		Effect = new skill() {
+			id = "protect",
+			x = "2",
+			y = ((int)FactionIDs.Frog).ToString(),
+			all = "1",
+		},
+	},
+	new battleground {
+		Name = "World Awakening",
+		Effect = new skill() {
+			id = "rally",
+			x = "2",
+			y = ((int)FactionIDs.Elemental).ToString(),
+			all = "1",
+		},
+	},
+	new battleground {
+		Name = "Age of the Dragons",
+		Effect = new skill() {
+			id = "heal",
+			x = "2",
+            y = ((int)FactionIDs.Dragon).ToString(),
+			all = "1",
+		},
+	},
+	new battleground {
+		Name = "Rise of the Frogs",
+		Effect = new skill() {
+		},
+	},
+};
+
+public class battleground
+{
+	private const string tabs = "        ";
+	private const string tabs2 = "          ";
+	
+	public string Name { get; set; }
+	public skill Effect { get; set; }
+	public string ID { get; set; }
+
+	public override string ToString()
+	{
+		StringBuilder sb = new StringBuilder();
+		sb.Append("      {\r\n");
+		sb.Append(tabs).Append("\"name\": \"").Append(Name).Append("\",\r\n");
+		sb.Append(tabs).Append("\"id\": \"").Append(ID).Append("\",\r\n");
+		sb.Append(tabs).Append("\"skill\": [\r\n");
+		AppendSkill(sb, Effect, tabs2);
+		sb.Append(tabs).Append("]\r\n");
+		sb.Append("      },\r\n");
+		return sb.ToString();
+	}
 }
 
 public abstract class CardType
@@ -97,53 +205,6 @@ public partial class unit
 		StringBuilder unit = new StringBuilder();
 		AppendUnit(unit);
 		return unit.ToString();
-	}
-
-	private void AppendEntry(StringBuilder sb, string name, string value, string tabs)
-	{
-		if (value != null)
-		{
-			sb.Append(tabs).Append("\"").Append(name).Append("\"").Append(":").Append(value).Append(",\r\n");
-		}
-	}
-
-	private void AppendEntryString(StringBuilder sb, string name, string value, string tabs)
-	{
-		if (value != null)
-		{
-			sb.Append(tabs).Append("\"").Append(name).Append("\"").Append(":").Append("\"").Append(value).Append("\",\r\n");
-		}
-	}
-
-	private void AppendSkills(StringBuilder sb, skill[] skills, string tabs)
-	{
-		if (skills == null || skills.Length == 0)
-		{
-			//sb.Append(tabs).Append("\"skill\": {},\r\n");
-			sb.Append(tabs).Append("\"skill\": [],\r\n");
-		}
-		else
-		{
-			string skillDefTabs = tabs + "  ";
-			string skillPropTabs = skillDefTabs + "  ";
-			//sb.Append(tabs).Append("\"skill\": {\r\n");
-			sb.Append(tabs).Append("\"skill\": [\r\n");
-			foreach (var skill in skills)
-			{
-				//sb.Append(skillDefTabs).Append("\"").Append(skill.id).Append("\": {\r\n");
-				sb.Append(skillDefTabs).Append("{\r\n");
-				AppendEntryString(sb, "id", skill.id, skillPropTabs);
-				AppendEntry(sb, "x", skill.x, skillPropTabs);
-				AppendEntryString(sb, "y", skill.y, skillPropTabs);
-				AppendEntry(sb, "z", skill.y, skillPropTabs);
-				AppendEntry(sb, "c", skill.c, skillPropTabs);
-				AppendEntryString(sb, "s", skill.s, skillPropTabs);
-				AppendEntryString(sb, "all", skill.all, skillPropTabs);
-				sb.Append(skillDefTabs).Append("},\r\n");
-			}
-			//sb.Append(tabs).Append("},\r\n");
-			sb.Append(tabs).Append("],\r\n");
-		}
 	}
 
 	private void AppendUpgrades(StringBuilder sb)
@@ -388,4 +449,67 @@ public partial class skill
 		get { return this.allField; }
 		set { this.allField = value; }
 	}
+}
+
+public partial class mission
+{
+	public string id { get; set; }
+	public string name { get; set; }
+	public string commander { get; set; }
+	public string[] deck { get; set; }
+}
+
+private static void AppendEntry(StringBuilder sb, string name, string value, string tabs)
+{
+	if (value != null)
+	{
+		sb.Append(tabs).Append("\"").Append(name).Append("\": ").Append(value).Append(",\r\n");
+	}
+}
+
+private static void AppendEntryString(StringBuilder sb, string name, string value, string tabs)
+{
+	if (value != null)
+	{
+		sb.Append(tabs).Append("\"").Append(name).Append("\"").Append(":").Append("\"").Append(value).Append("\",\r\n");
+	}
+}
+
+private static void AppendSkills(StringBuilder sb, skill[] skills, string tabs)
+{
+	if (skills == null || skills.Length == 0)
+	{
+		//sb.Append(tabs).Append("\"skill\": {},\r\n");
+		sb.Append(tabs).Append("\"skill\": [],\r\n");
+	}
+	else
+	{
+		string skillDefTabs = tabs + "  ";
+		string skillPropTabs = skillDefTabs + "  ";
+		//sb.Append(tabs).Append("\"skill\": {\r\n");
+		sb.Append(tabs).Append("\"skill\": [\r\n");
+		foreach (var skill in skills)
+		{
+			AppendSkill(sb, skill, skillDefTabs);
+		}
+		//sb.Append(tabs).Append("},\r\n");
+		sb.Append(tabs).Append("],\r\n");
+	}
+}
+
+private static void AppendSkill(StringBuilder sb, skill skill, string tabs)
+{
+	var propTabs = tabs + "  ";
+	//sb.Append(tabs).Append("\"").Append(skill.id).Append("\": {\r\n");
+	sb.Append(tabs).Append("{\r\n");
+	
+	AppendEntryString(sb, "id", skill.id, propTabs);
+	AppendEntry(sb, "x", skill.x, propTabs);
+	AppendEntryString(sb, "y", skill.y, propTabs);
+	AppendEntry(sb, "z", skill.y, propTabs);
+	AppendEntry(sb, "c", skill.c, propTabs);
+	AppendEntryString(sb, "s", skill.s, propTabs);
+	AppendEntryString(sb, "all", skill.all, propTabs);
+	
+	sb.Append(tabs).Append("},\r\n");
 }

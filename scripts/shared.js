@@ -61,6 +61,7 @@ var MakeAssault = (function () {
 		this.timer = this.cost;
 		if (unit_level) {
 		    this.level = unit_level.replace(/[\(\)]/g, '');
+            if(this.level > this.maxLevel) this.level = this.maxLevel
 		    if (this.level > 1) {
 		        for (var key in original_card.upgrades) {
 		            var upgrade = original_card.upgrades[key];
@@ -304,7 +305,7 @@ function debug_skills(skills) {
 		first_skill = false;
 		output += skill['id'];
 		if (skill['all']) output += ' all';
-		if (skill['y']) output += ' ' + factions[skill['y']];
+		if (skill['y']) output += ' ' + factions.names[skill['y']];
 		if (skill['s']) output += ' ' + skill['s'];
 		if (skill['c']) output += ' every ' + skill['c'] + ' turns';
 		else if (skill['x']) output += ' ' + skill['x'];
@@ -332,7 +333,7 @@ function debug_dump_decks() {
 	echo += '" onclick="this.select()" size="100">';
 	echo += '<br><br>';
 	var current_card = get_card_by_id(cache_player_deck['commander']);
-	current_card['p'] = 'player';
+	current_card.owner = 'player';
 	current_card['health_left'] = current_card['health'];
 	echo += debug_name(current_card) + debug_skills(current_card['skill']) + '<br>';
 
@@ -362,7 +363,7 @@ function debug_dump_decks() {
 	echo += '<u>Please note that Raid and Quest simulations randomize the enemy deck for each battle. Only one example enemy deck hash is generated.</u><br>';
 	echo += '<br>';
 	var current_card = get_card_by_id(debug_cpu_deck['commander']);
-	current_card['p'] = 'cpu';
+	current_card.owner = 'cpu';
 	current_card['health_left'] = current_card['health'];
 	echo += debug_name(current_card) + debug_skills(current_card['skill']) + '<br>';
 	debug_dump_cards(debug_cpu_deck, 'cpu');
@@ -379,12 +380,12 @@ function debug_dump_cards(deck, player) {
         }
         // Setup card for printing
         current_card = get_card_by_id(card_id);
-        current_card['p'] = player;
+        current_card.owner = player;
         current_card['key'] = undefined;
         // Echo card info
         echo += debug_name(current_card) + debug_skills(current_card['skill']);
-        if (current_card['type']) echo += ' <u>' + factions[current_card['type']] + '</u>';
-        if (current_card['sub_type']) echo += ' <u>' + factions[current_card['sub_type']] + '</u>';
+        if (current_card['type']) echo += ' <u>' + factions.names[current_card['type']] + '</u>';
+        if (current_card['sub_type']) echo += ' <u>' + factions.names[current_card['sub_type']] + '</u>';
         echo += '<br>';
     }
 }
@@ -416,7 +417,7 @@ function debug_dump_field() {
 
 // Output formatted name of card
 function debug_name(card, stats) {
-	if (card['p'] == 'cpu') {
+	if (card.owner == 'cpu') {
 		var tag = 'i';
 	} else {
 		var tag = 'b';
@@ -908,18 +909,21 @@ function load_deck_mission(id) {
 	if (!missions['root']['mission']) return 0;
 	if (!missions['root']['mission'][id]) return 0;
 
-	// Load battleground, if available
-	if (missions['root']['mission'][id]['effect'] && !getbattleground) {
-		battleground = quests['root']['battleground'][missions['root']['mission'][id]['effect']]['effect'];
-		getbattleground = missions['root']['mission'][id]['effect'];
-	}
+	var missionInfo = missions['root']['mission'][id];
 
 	var current_deck = [];
 	current_deck['deck'] = [];
-	current_deck['commander'] = missions['root']['mission'][id]['commander'];
-	for (var current_key in missions['root']['mission'][id]['deck']) {
-		var current_card = missions['root']['mission'][id]['deck'][current_key];
-		current_deck['deck'][current_deck['deck'].length] = current_card;
+	current_deck['commander'] = missionInfo['commander'] + "(6)";   // Set commander to max level
+	var missionDeck = missionInfo['deck'];
+	for (var current_key in missionDeck) {
+	    var current_card = missionDeck[current_key];
+        // Upgrade all cards to max fusion/level
+	    if (current_card.length > 4) {
+	        current_card[0] = '2';
+	    } else {
+	        current_card = '2' + current_card;
+	    }
+	    current_deck['deck'].push(current_card + "(6)");
 	}
 	return current_deck;
 }
