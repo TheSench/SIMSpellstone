@@ -94,7 +94,7 @@ var filterize = function (targets) {
 	var retval = [];
 	for (var key = 0, len = targets.length; key < len; key++) {
 		var target = targets[key];
-		if (target.isAlive()) retval[retval.length] = target;
+		if (target.isAlive()) retval.push(target);
 	}
 	return retval;
 }
@@ -157,7 +157,7 @@ var augment = function (src_card, skill) {
 		if( !target.isAugmentable(s) || !target.isInFaction(faction)) continue;
 		if (require_active_turn && !target.isActive()) continue;
 		{
-			targets[targets.length] = target
+		    targets.push(target);
 		}
 	}
 
@@ -220,7 +220,7 @@ var enfeeble = function (src_card, skill) {
 		if(target.isAlive()
 		&& target.isInFaction(faction) )
 		{
-			targets[targets.length] = target;
+		    targets.push(target);
 		}
 	}
 
@@ -279,8 +279,8 @@ var heal = function (src_card, skill) {
 		var target = field_p_assaults[key];
 		if (target.isAlive()
 		&& target.isDamaged()
-		&& target.isInFaction(faction) ) {
-			targets[targets.length] = target;
+		&& target.isInFaction(faction)) {
+		    targets.push(target);
 		}
 	}
 
@@ -328,8 +328,8 @@ var jam = function (src_card, skill) {
 		var target = field_x_assaults[key];
 		if (!target.isAlive()) continue;
 		if (!target.isActiveNextTurn()) continue;
-		if(target.isUnjammed()) {
-			targets[targets.length] = target;
+		if (target.isUnjammed()) {
+		    targets.push(target);
 		}
 	}
 
@@ -381,8 +381,8 @@ var protect = function (src_card, skill) {
 	for (var key = 0, len = field_p_assaults.length; key < len; key++) {
 		var target = field_p_assaults[key];
 		if( target.isAlive()
-		&& target.isInFaction(faction) ) {
-			targets[targets.length] = target;
+		&& target.isInFaction(faction)) {
+		    targets.push(target);
 		}
 	}
 
@@ -427,8 +427,8 @@ var strike = function (src_card, skill) {
 	for (var key = 0, len = field_x_assaults.length; key < len; key++) {
 		var target = field_x_assaults[key];
 		if( target.isAlive()
-		&& target.isInFaction(faction) ) {
-			targets[targets.length] = target;
+		&& target.isInFaction(faction)) {
+		    targets.push(target);
 		}
 	}
 
@@ -523,8 +523,8 @@ var weaken = function (src_card, skill) {
 		if (!target.isActiveNextTurn()) continue;
 		if(target.isUnjammed()
 		&& target.hasAttack()
-		&& target.isInFaction(faction) ) {
-			targets[targets.length] = target;
+		&& target.isInFaction(faction)) {
+		    targets.push(target);
 		}
 	}
 
