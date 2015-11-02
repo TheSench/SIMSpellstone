@@ -701,13 +701,6 @@ var activation_skills = function (src_card) {
 	for (var key in skills) {
 		var skill = skills[key];
 
-		if (!skill) continue;
-
-		// On Play
-		if (src_card['jammed']) {
-			continue;
-		}
-
 		// Delegate to skill functions
 		var id = skill['id'];
 		switch (id) {
@@ -1008,31 +1001,9 @@ var simulate = function () {
 
 			// -- END ATTACK SEQUENCE --
 		}
-		// End of Assaults
+	    // End of Assaults
 
-	    // Poison/Scorch damage
-		for (var key = 0, len = field_p_assaults.length; key < len; key++) {
-		    var current_assault = field_p_assaults[key];
-
-		    if (current_assault['poisoned']) {
-		        var amount = current_assault['poisoned'];
-		        do_damage(current_assault, amount);
-		        if (debug) echo += debug_name(current_assault) + ' takes ' + amount + ' poison damage';
-		        if (debug && current_assault['health_left'] < 1) echo += ' and it dies<br>';
-		        else if (debug) echo += '<br>';
-		    }
-
-		    if (current_assault['scorched']) {
-		        var scorch = current_assault['scorched'];
-		        var amount = scorch['amount'];
-		        do_damage(current_assault, amount);
-		        scorch['timer']--;
-		        if (debug) echo += debug_name(current_assault) + ' takes ' + amount + ' scorch damage';
-		        if (debug && current_assault['health_left'] < 1) echo += ' and it dies<br>';
-		        else if (debug) echo += '<br>';
-		        if (!scorch['timer']) current_assault['scorched'] = 0;
-		    }
-		}
+		processDOTs(field_p_assaults);
 
 		// Dead cards are removed from both fields. Cards on both fields all shift over to the left if there are any gaps.
 		remove_dead();
@@ -1052,6 +1023,33 @@ var simulate = function () {
 		//debug_dump_field();
 		if (debug) echo += '<u>Turn ' + turn + ' ends</u><br><br><hr><br>';
 	}
+}
+
+var processDOTs = function (field_p_assaults) {
+
+    // Poison/Scorch damage
+    for (var key = 0, len = field_p_assaults.length; key < len; key++) {
+        var current_assault = field_p_assaults[key];
+
+        if (current_assault['poisoned']) {
+            var amount = current_assault['poisoned'];
+            do_damage(current_assault, amount);
+            if (debug) echo += debug_name(current_assault) + ' takes ' + amount + ' poison damage';
+            if (debug && current_assault['health_left'] < 1) echo += ' and it dies<br>';
+            else if (debug) echo += '<br>';
+        }
+
+        if (current_assault['scorched']) {
+            var scorch = current_assault['scorched'];
+            var amount = scorch['amount'];
+            do_damage(current_assault, amount);
+            scorch['timer']--;
+            if (debug) echo += debug_name(current_assault) + ' takes ' + amount + ' scorch damage';
+            if (debug && current_assault['health_left'] < 1) echo += ' and it dies<br>';
+            else if (debug) echo += '<br>';
+            if (!scorch['timer']) current_assault['scorched'] = 0;
+        }
+    }
 }
 
 var doAttack = function (current_assault, field_o_assaults, field_o_commander) {
@@ -1245,5 +1243,5 @@ var field = [];
 var simulation_turns = 0;
 var just_died = [];
 var time_start_batch = 0;
-
+var card_cache = {};
 }

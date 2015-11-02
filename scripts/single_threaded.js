@@ -75,6 +75,8 @@ var startsim = function (autostart) {
 	    cache_cpu_deck = load_deck_from_cardlist();
 	}
 
+	card_cache = {};
+
 	wins = 0;
 	losses = 0;
 	draws = 0;
