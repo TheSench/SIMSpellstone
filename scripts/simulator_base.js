@@ -1069,9 +1069,14 @@ var doAttack = function (current_assault, field_o_assaults, field_o_commander) {
     var weaken = current_assault['attack_weaken'];
     damage -= weaken;
 
+    // Enfeeble
+    var enfeeble = target['enfeebled'];
+    damage += enfeeble;
+
     if (debug) echo += '<u>(Attack: +' + current_assault['attack'];
     if (debug && rally) echo += ' Rally: +' + rally;
     if (debug && weaken) echo += ' Weaken: -' + weaken;
+    if (debug && enfeeble) echo += ' Enfeeble: +' + enfeeble;
 
     // Pierce
     var pierce = 0;
@@ -1082,10 +1087,6 @@ var doAttack = function (current_assault, field_o_assaults, field_o_commander) {
             pierce += augment;
         }
     }
-
-    // Enfeeble
-    var enfeeble = target['enfeebled'];
-    damage += enfeeble;
 
     // Protect (triggered before armor)
     var protect = target['protected'];
@@ -1098,6 +1099,9 @@ var doAttack = function (current_assault, field_o_assaults, field_o_commander) {
             protect -= pierce;
             pierce = 0;
         }
+
+        // Remove pierced barrier
+        target['protected'] = protect;
     }
 
     if (damage > protect) {
@@ -1129,8 +1133,6 @@ var doAttack = function (current_assault, field_o_assaults, field_o_commander) {
     }
     damage -= armor;
     if (debug && target['skill']['armored']) echo += ' Armor: -' + target['skill']['armored']['x'];
-
-    if (debug && enfeeble) echo += ' Enfeeble: +' + enfeeble;
 
 
     // Pierce (debug text)
@@ -1202,8 +1204,9 @@ var doAttack = function (current_assault, field_o_assaults, field_o_commander) {
     }
 
     // Scorch
+    // - Attacker must not have died to Vengeance
     // - Target must be an assault
-    if (target.isAssault() && current_assault['skill']['burn']) {
+    if (target.isAssault() && current_assault['skill']['burn'] && current_assault.isAlive()) {
         var scorch = current_assault['skill']['burn']['x'];
         scorch += getAugment(current_assault, 'poison');
         if (!target['scorched']) {
