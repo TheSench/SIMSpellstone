@@ -951,15 +951,16 @@ var simulate = function () {
 			    continue;
 			}
 
+            // Dual-strike does not activate if unit has 0 attack
 			var activations = 1;
 			var dualStrike = current_assault['skill']['flurry'];
-			if (dualStrike) {
+			if (dualStrike && current_assault.hasAttack()) {
 			    if (dualStrike['coundown']) {
 			        dualStrike['coundown']--;
 			    } else {
 			        dualStrike['coundown'] = dualStrike['c'] - 1;
 			        activations++;
-			        if(debug) echo += debug_name(current_assault) + ' activates dual-strike<br>';
+			        if(debug) echo += debug_name(current_assault) + ' activates dualstrike<br>';
 			    }
 			}
 
