@@ -4,7 +4,8 @@
 
 void Main()
 {
-	var xmlFile = @"C:\Users\jsen\Documents\Visual Studio 2013\Projects\SIMSpellstone\cards\cards.xml";
+	var path = Path.GetDirectoryName(Util.CurrentQueryPath);
+	var xmlFile = Path.Combine(path, "cards.xml");
 	var doc = XDocument.Load(xmlFile);
 	
 	System.Xml.Serialization.XmlSerializer unitDeserializer = new System.Xml.Serialization.XmlSerializer(typeof(unit));
@@ -20,7 +21,7 @@ void Main()
 		units.Add(unit);
 	}
 	
-	xmlFile = @"C:\Users\jsen\Documents\Visual Studio 2013\Projects\SIMSpellstone\cards\missions.xml";
+	xmlFile = Path.Combine(path, "missions.xml");
 	doc = XDocument.Load(xmlFile);
 	var missions = doc.Descendants("mission").Select(node => new mission()
 	{
@@ -30,7 +31,7 @@ void Main()
 		deck = node.Element("deck").Elements("card").Select(card => card.Attribute("id").Value).ToArray()
 	}).OrderBy(m => m.id);
 
-	xmlFile = @"C:\Users\jsen\Documents\Visual Studio 2013\Projects\SIMSpellstone\cards\fusion_recipes_cj2.xml";
+	xmlFile = Path.Combine(path, "fusion_recipes_cj2.xml");
 	doc = XDocument.Load(xmlFile);
 	var fusions = doc.Descendants("mission").Select(node => new mission()
 	{
