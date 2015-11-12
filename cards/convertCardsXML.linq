@@ -41,7 +41,7 @@ void Main()
 		deck = node.Element("deck").Elements("card").Select(card => card.Attribute("id").Value).ToArray()
 	}).OrderBy(m => m.id);
 
-	var file = new FileInfo(@"C:\Users\jsen\Documents\Visual Studio 2013\Projects\SIMSpellstone\cards\cache.js");
+	var file = new FileInfo(Path.Combine(path, "cache.js"));
 	using (var writer = file.CreateText())
 	{
 		writer.Write("var CARDS = {\r\n");
