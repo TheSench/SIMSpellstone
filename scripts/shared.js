@@ -201,11 +201,11 @@ var MakeAssault = (function () {
 
 		// Has at least one Augmentable Activation Skill
 		// - strike, protect, enfeeble, rally, repair, supply, siege, heal, weaken (unless they have on play/death/attacked/kill)
-		isAugmentable: function (s) {
+		hasSkill: function (s) {
 			var target_skills = this['skill'];
 			for (var key in target_skills) {
 			    var skill = target_skills[key];
-			    if (skill.id == s) {
+			    if (skill.id === s) {
 			        return true;
 				}
 			}
