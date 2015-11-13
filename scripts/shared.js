@@ -222,8 +222,11 @@ var MakeAssault = (function () {
 		// Has Attack power
 		// - attack > 0
 		hasAttack: function () {
-			return ( (this['attack'] + this['attack_rally']
-					- this['attack_weaken']) > 0);
+		    return (this.adjustedAttack() > 0);
+		},
+
+		adjustedAttack: function() {
+		    return ((this['attack'] + this['attack_rally'] - this['attack_weaken']));
 		},
 
 		// Targets that are opposite of the source or to the right of it
