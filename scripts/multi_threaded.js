@@ -222,8 +222,7 @@ var display_final_results = function () {
 	// Hide stop button
 	document.getElementById('stop').style.display = 'none';
 
-	// Scroll to bottom of page
-	window.scrollTo(0, document.body.scrollHeight);
+	scroll_to_end();
 }
 
 // Initialize simulation loop - runs once per simulation session
@@ -255,7 +254,9 @@ var startsim = function (autostart) {
 	if (!num_sims) num_sims = 1;
 	sims_left = num_sims;
 	sims_to_process = num_sims;
-	debug = document.getElementById('debug').checked;
+	user_controlled = document.getElementById('user_controlled').checked;
+	if (user_controlled) debug = true;
+	else debug = document.getElementById('debug').checked;
 	mass_debug = document.getElementById('mass_debug').checked;
 	loss_debug = document.getElementById('loss_debug').checked;
 	if (loss_debug && mass_debug) mass_debug = false;

@@ -259,15 +259,19 @@ function onpageload() {
 
 function load_tests()
 {
-    var startingPlayerDeck = "Urs(5), Hotiron(4), Smelted Skeleton(4) x3, Swiftfoot(4), Outrunner(4)x3, Matriarch(5), Executioner(4), Purging(5), Mighty Clawkin(4), Chaos Swell(5), Lilypad(4), Lightsworn(5)";
+    var startingPlayerDeck = "Urs(5), Matriarch(5)=1, Fire Devil(4), Smelted Skeleton(4)x3=3, Outrunner(4)x3=1, Swiftfoot(4)=1, Toxin(5), Purging(5), Mighty Clawkin(4), Chaos Swell(5)=3, Lilypad(4), Lightsworn(5)";
     var startingEnemyDeck = "Groc(6), Fire D(4), Executioner(4), Heroic(5), Chaos T(5), Tsunamari(5), Spearhunter(5), Bolt Ele(4), Poison(3), Lightsworn(5), Discordant(5), Blood(5), Blood(6), Glass T(4), Titan of S(5), Storm D(5)";
     var zDeck = "Groc(6), Heroic(5)x2; Fowl Swarm(5), Wind Spirit(5), Swell(5)x2, Garg(5)x2, Rock T(5), Sapling(5), Tsunamari(5), Honeycomb(5), Avenging(6), Blazekin(6), Nixfire(4)";
-    var drypDeck = "Samael(6), Rhino Beast(6), Life Dragon(6), Rust Goliath(6)x2, Blazekin Dragon(6), Retribution Angel(6), Radiance(6), Royal Guardian(6), Darkness Elemental(5), Mentor(5), Mega(5), titan of s(5), Gravity Bender(5), Glass Titan(5)";
-
+    var drypDeck = "Samael(6), Glass Titan(5), Gravity Bender(5), Firebomb Spirit(5), Mega Garganatos(5), Sage Tsunamari(5), Swamp Aberration(5)x2, Darkness Elemental(5), Majestic Guardian(4), Shining Radiance(4), Brilliant Aurora(4), Rust Goliath(5), Pumpking Kong(5), Rhino Beast(6), Gold Incarnate(6)";
+    var oemseDeck = "Groc(6), Hellfrog(4), Outrunner(4)x4, Lilypad(5), Beacon(5), Blitz(5), Mob(5), Tempest(5), Noxious(5), Great Sage(5), King(5), Blazen D(6), Beat(6)"
+    var AMSP = "Urs(5), Smelted S(4)x3, Fire Devil(4)x3, Swiftfoot(4), Duoshot(4)x2, Outrunner(4)x2, Lightsworn(5), Swell(5)x2, Mega G(5)"
+    var alpha = "Tarian(6), Fire Devil(4)x2, Chaos Swell(5), Chaos Tempest(5), Branding Engine(6), Firebomb Spirit(5), Sage Tsunamari(5), Blazing Aurora(6), Blazen Dragon(6), Onyx Knight(6), Thousand Arm Fiend(6), Pumpking Kong(6), Spirit of Insanity(6)";
+    var golden = "Groc(6), Smelted S(4)x2, Duoshot(4), Outrunner(4)x3, Leaper(5), Castlerock(5)x2, Wayfarer(5), Chaos T(5)x2, Bedlam(5), Invisible(5), Clawkin E(5)"
+    
     var cardlist = document.getElementById('cardlist');
     cardlist.value = startingPlayerDeck;
     cardlist = document.getElementById('cardlist2');
-    cardlist.value = zDeck;
+    cardlist.value = drypDeck;
 
     var d = document.getElementById('debug');
     d.checked = true;
@@ -302,6 +306,7 @@ function gettable() {
 		'<a href="'+generate_link(1)+'">'+generate_link(1)+'</a>' +
 		'<br>' +
 		'<br>';
+        if (debug) return links;
 	}
 
 	// Win/Loss ratio
@@ -376,7 +381,6 @@ function gettable() {
 	table3 += '</td>';
 	table3 += '</tr>';
 
-	if (debug) return links;
 	var full_table = '<table cellspacing=0 cellpadding=0 border=0><tr><td>'+table+'</td><td>&nbsp;</td><td>'+table3+'</td></tr></table>';
 
 	// Final output
@@ -593,11 +597,198 @@ function display_history() {
 	'');
 }
 
+function scroll_to_end() {
+    // Scroll to bottom of page
+    window.scrollTo(0, document.body.scrollHeight);
+}
+
+function draw_cards(field) {
+    var cards = document.createElement("div");
+    cards.className = "float-left";
+    var commander = field.commander;
+    cards.appendChild(create_card_html(commander));
+    var units = field.assaults;
+    if(units) for (var i = 0, len = units.length; i < len; i++) {
+        var unit = units[i];
+        cards.appendChild(create_card_html(unit));
+    }
+    return cards;
+}
+
+function draw_hand(hand, callback, state) {
+    var cards = document.createElement("div");
+    cards.className = "float-left";
+    var units = field.assaults;
+    for (var i = 0, len = hand.length; i < len; i++) {
+        var unit = hand[i];
+        var htmlCard = create_card_html(unit);
+        var cardidx = i;
+        htmlCard.addEventListener("click", (function(inner){
+            return function () {
+                choice = inner;
+                callback(state);
+                debug_end();
+            };
+        })(i));
+        cards.appendChild(htmlCard);
+    }
+    return cards;
+}
+
+function create_card_html(card) {
+    var html = document.createElement("div");
+    html.className = "card";
+    html.appendChild(createDiv("card-name", card.name));
+    if(!card.isCommander()) {
+        html.appendChild(createDiv("card-attack", card.adjustedAttack().toString()));
+        if(card.timer) html.appendChild(createDiv("card-delay", card.timer));
+    }
+    html.appendChild(createDiv("card-health", card.health_left));
+    var divSkills = createDiv("card-skills");
+    var skills = card.skill;
+    for (var i in skills) {
+        divSkills.appendChild(getSkillHtml(skills[i]));
+        divSkills.appendChild(document.createElement('br'));
+    }
+    html.appendChild(divSkills);
+    var statuses = getStatuses(card);
+    if (statuses.length > 0) {
+        html.appendChild(createDiv("hidden"));
+        var divStatuses = createDiv("card-debuffs")
+        for (var i = 0, len = statuses.length; i < len; i++) {
+            divStatuses.appendChild(statuses[i]);
+        }
+        html.appendChild(divStatuses);
+    }
+    return html;
+}
+
+function getSkillHtml(skill) {
+    var htmlSkill = document.createElement("span");
+    htmlSkill.className = "skill";
+    htmlSkill.appendChild(getSkillIcon(skill.id));
+    if (skill.all) htmlSkill.innerHTML += ("All");
+    if (skill.s) htmlSkill.appendChild(getSkillIcon(skill.s));
+    if (skill.y) htmlSkill.appendChild(getFactionIcon(factions.names[skill.y]));
+    if (skill.x) htmlSkill.innerHTML += (skill.x);
+    if (skill.c) htmlSkill.innerHTML += (skill.c);
+    return htmlSkill;
+}
+
+function getSkillIcon(skillName) {
+    var src = 'res/skills/';
+    var iconName = skillName.charAt(0).toUpperCase() + skillName.slice(1) + '.png';
+    switch (skillName) {
+        case 'armored':
+            iconName = 'Armor.png';
+            break;
+        case 'strike':
+            iconName = 'Bolt.png';
+            break;
+        case 'burn':
+            iconName = 'Scorch.png';
+            break;
+        case 'flurry':
+            iconName = 'Dualstrike.png';
+            break;
+        case 'enfeeble':
+            iconName = 'Hex.png';
+            break;
+        case 'enhance':
+            iconName = 'Enhance.png';
+            break;
+        case 'jam':
+            iconName = 'Freeze.png';
+            break;
+        case 'leech':
+            iconName = 'Siphon.png';
+            break;
+        case 'evade':
+            iconName = 'Invisibility.png';
+            break;
+        case 'counter':
+            iconName = 'Vengeance.png';
+            break;
+        case 'protect':
+            iconName = 'Barrier.png';
+            break;
+        case 'rally':
+            iconName = 'Empower.png';
+            break;
+    }
+    src += iconName;
+    return createImg(src);
+}
+
+function getStatuses(card) {
+    var statuses = [];
+    if (card.attack_weaken) {
+        var status = createDiv("debuff");
+        status.appendChild(getSkillIcon("weaken"));
+        status.innerHTML += (card.attack_weaken);
+        statuses.push(status);
+    }
+    if (card.enfeebled) {
+        var status = createDiv("debuff");
+        status.appendChild(getSkillIcon("enfeeble"));
+        status.innerHTML += card.enfeebled;
+        statuses.push(status);
+    }
+    if (card.jammed) {
+        var status = createDiv("debuff");
+        status.appendChild(getSkillIcon("jam"));
+        statuses.push(status);
+    }
+    if (card.poisoned) {
+        var status = createDiv("debuff");
+        status.appendChild(getSkillIcon("poison"));
+        status.innerHTML += (card.poisoned);
+        statuses.push(status);
+    }
+    if (card.scorched) {
+        var status = createDiv("debuff");
+        status.appendChild(getSkillIcon("burn"));
+        status.innerHTML += (card.scorched.amount);
+        statuses.push(status);
+    }
+    if (card.attack_rally) {
+        var status = createDiv("debuff");
+        status.appendChild(getSkillIcon("rally"));
+        status.innerHTML += (card.attack_rally);
+        statuses.push(status);
+    }
+    if (card.protected) {
+        var status = createDiv("debuff");
+        status.appendChild(getSkillIcon("protect"));
+        status.innerHTML += (card.protected);
+        statuses.push(status);
+    }
+    return statuses;
+}
+
+function getFactionIcon(factionName) {
+    return createImg('res/factions/' + factionName + '.png');
+}
+
+function createImg(src) {
+    var html = document.createElement("img");
+    html.setAttribute("src", src);
+    return html;
+}
+
+function createDiv(className, value) {
+    var div = document.createElement("div");
+    if(className) div.className = className;
+    if(value) div.innerHTML = value;
+    return div;
+}
+
 // Initialize global variables
 var history = '';
 var turn = false;
 var max_turns = 50;
 var debug = false;
+var user_controlled = false;
 var mass_debug = false;
 var loss_debug = false;
 var found_loss = false;
@@ -634,6 +825,7 @@ var battleground = [];
 var total_turns = 0;
 var cache_player_deck = false;
 var cache_cpu_deck = false;
+var choice = undefined;
 
 // Global arrays
 var factions = {

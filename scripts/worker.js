@@ -189,48 +189,12 @@ function run_sim() {
 	    }
 	}
 
-	var result = simulate();
-
-	if (debug && mass_debug && sims_left > 1) echo += '<br><hr>NEW BATTLE BEGINS<hr><br>';
-
-	// Increment wins/losses/games
-	if (result == 'draw') {
-		draws++;
-	} else if (result) {
-		wins++;;
+	if (simulate()) {
+	    processSimResult2();
+	    return true;
 	} else {
-		losses++;
+	    return false;
 	}
-	games++;
-
-	// Increment total turn count
-	total_turns += simulation_turns;
-
-	if (debug && !mass_debug && !loss_debug) {
-		sims_left = 0;
-		return;
-	}
-
-	if (debug && loss_debug) {
-		if (result == 'draw') {
-			// Draw found
-			sims_left = 0;
-			return;
-		} else if (result) {
-			if (!sims_left) {
-				// 'No losses found
-				return;
-			} else {
-				echo = '';
-			}
-		} else {
-			// Loss found
-			sims_left = 0;
-			return;
-		}
-	}
-
-	if (sims_left > 0) sims_left--;
 }
 
 // Initialize simulation loop - runs once per simulation batch

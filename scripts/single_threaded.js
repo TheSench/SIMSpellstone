@@ -15,7 +15,9 @@ var startsim = function (autostart) {
 	games = 0;
 	sims_left = document.getElementById('sims').value;
 	if (!sims_left) sims_left = true;
-	debug = document.getElementById('debug').checked;
+	user_controlled = document.getElementById('user_controlled').checked;
+	if (user_controlled) debug = true;
+	else debug = document.getElementById('debug').checked;
 	mass_debug = document.getElementById('mass_debug').checked;
 	loss_debug = document.getElementById('loss_debug').checked;
 	if (loss_debug && mass_debug) mass_debug = false;
@@ -109,25 +111,41 @@ var stopsim = function () {
 
 // Loops through all simulations
 // - keeps track of number of simulations and outputs status
+var debug_end = function () {
+    if (simulating) {
+        return;
+    }
+
+    var cardSpace = document.getElementById("cardSpace");
+    cardSpace.innerHTML = '';
+
+    result = processSimResult();
+
+    time_stop = new Date();
+
+    if (result == 'draw') {
+        outp(echo + '<br><h1>DRAW</h1><br>' + gettable());
+    } else if (result) {
+        outp(echo + '<br><h1>WIN</h1><br>' + gettable());
+    } else {
+        outp(echo + '<br><h1>LOSS</h1><br>' + gettable());
+    }
+
+    // Show interface
+    document.getElementById('ui').style.display = 'block';
+
+    // Hide stop button
+    document.getElementById('stop').style.display = 'none';
+
+    if (user_controlled) {
+        scroll_to_end();
+    }
+}
+
 var run_sims = function () {
-	if (debug && !mass_debug && !loss_debug) {
-		var result = run_sim();
-		time_stop = new Date();
-
-		if (result == 'draw') {
-			outp(echo+'<br><h1>DRAW</h1><br>'+gettable());
-		} else if (result) {
-			outp(echo+'<br><h1>WIN</h1><br>'+gettable());
-		} else {
-			outp(echo+'<br><h1>LOSS</h1><br>'+gettable());
-		}
-
-		// Show interface
-		document.getElementById('ui').style.display = 'block';
-
-		// Hide stop button
-		document.getElementById('stop').style.display = 'none';
-
+    if (debug && !mass_debug && !loss_debug) {
+        run_sim();
+        debug_end();
 	} else if (sims_left > 0) {
 		// Interval output - speeds up simulations
 		if (run_sims_count >= run_sims_batch) {
@@ -182,121 +200,170 @@ var run_sims = function () {
 		// Hide stop button
 		document.getElementById('stop').style.display = 'none';
 
-		// Scroll to bottom of page
-		window.scrollTo(0, document.body.scrollHeight);
+		scroll_to_end();
 	}
 }
 
 // Initializes a single simulation - runs once before each individual simulation
 // - needs to reset the decks and fields before each simulation
 var run_sim = function () {
+    doSetup();
+    if (!simulate()) return false;
+    processSimResult();
+}
 
-	simulation_turns = 0;
+function doSetup() {
 
-	// Reset battleground effect
-	battleground = '';
+    simulation_turns = 0;
 
-	// Set up empty decks
-	deck = [];
-	deck['cpu'] = [];
-	deck['cpu']['deck'] = [];
-	deck['player'] = [];
-	deck['player']['deck'] = [];
+    // Reset battleground effect
+    battleground = '';
 
-	// Initialize summon counter to track limit
-	number_of_summons = [];
-	number_of_summons['cpu'] = 0;
-	number_of_summons['player'] = 0;
+    // Set up empty decks
+    deck = [];
+    deck['cpu'] = [];
+    deck['cpu']['deck'] = [];
+    deck['player'] = [];
+    deck['player']['deck'] = [];
 
-	// Set up empty field
-	field = [];
-	field['cpu'] = [];
-	field['cpu']['assaults'] = [];
-	field['player'] = [];
-	field['player']['assaults'] = [];
+    // Initialize summon counter to track limit
+    number_of_summons = [];
+    number_of_summons['cpu'] = 0;
+    number_of_summons['player'] = 0;
 
-	// Load player deck
-	if (cache_player_deck) {
-		deck['player'] = copy_deck(cache_player_deck);
-	}
+    // Set up empty field
+    field = [];
+    field['cpu'] = [];
+    field['cpu']['assaults'] = [];
+    field['player'] = [];
+    field['player']['assaults'] = [];
 
-	// Load enemy deck
-	if (cache_cpu_deck) {
-		deck['cpu'] = copy_deck(cache_cpu_deck);
-	}
+    // Load player deck
+    if (cache_player_deck) {
+        deck['player'] = copy_deck(cache_player_deck);
+    }
 
-	// Set up deck order priority reference
-	if (getordered && !getexactorder) deck['player']['ordered'] = copy_card_list(deck['player']['deck']);
-	if (getordered2 && !getexactorder2) deck['cpu']['ordered'] = copy_card_list(deck['cpu']['deck']);
+    // Load enemy deck
+    if (cache_cpu_deck) {
+        deck['cpu'] = copy_deck(cache_cpu_deck);
+    }
+
+    // Set up deck order priority reference
+    if (getordered && !getexactorder) deck['player']['ordered'] = copy_card_list(deck['player']['deck']);
+    if (getordered2 && !getexactorder2) deck['cpu']['ordered'] = copy_card_list(deck['cpu']['deck']);
 
     // Set up battleground effects, if any
-	battlegrounds = [];
-	if (getbattleground) {
-	    var selected = getbattleground.split(",");
-	    for (i = 0; i < selected.length; i++) {
-	        var id = selected[i];
-	        var battleground = quests['root']['battleground'][id];
-	        battlegrounds.push(MakeBattleground(battleground.name, battleground.skill));
-	    }
-	}
+    battlegrounds = [];
+    if (getbattleground) {
+        var selected = getbattleground.split(",");
+        for (i = 0; i < selected.length; i++) {
+            var id = selected[i];
+            var battleground = quests['root']['battleground'][id];
+            battlegrounds.push(MakeBattleground(battleground.name, battleground.skill));
+        }
+    }
 
-	// Output decks for first simulation
-	if (debug && loss_debug) {
-	} else if (echo == '') {
-		debug_dump_decks();
-	}
+    // Output decks for first simulation
+    if (debug && loss_debug) {
+    } else if (echo == '') {
+        debug_dump_decks();
+    }
+}
 
-	var result = simulate();
+function processSimResult() {
 
-	if (run_sims_batch > 0) {
-	    if (sims_left > 0) sims_left--;
-	    run_sims_count++;
-	}
+    var result;
+    if (!field.player.commander.isAlive()) {
+        result = false;
+    }
+    else if (!field.cpu.commander.isAlive()) {
+        result = true;
+    }
+    else {
+        result = 'draw';
+    }
 
-	if (debug && mass_debug && sims_left) echo += '<br><hr>NEW BATTLE BEGINS<hr><br>';
+    if (run_sims_batch > 0) {
+        if (sims_left > 0) sims_left--;
+        run_sims_count++;
+    }
 
-	// Increment wins/losses/games
-	if (result == 'draw') {
-		draws++;
-	} else if (result) {
-		wins++;;
-	} else {
-		losses++;
-	}
-	games++;
+    if (debug && mass_debug && sims_left) echo += '<br><hr>NEW BATTLE BEGINS<hr><br>';
 
-	// Increment total turn count
-	total_turns += simulation_turns;
+    // Increment wins/losses/games
+    if (result == 'draw') {
+        draws++;
+    } else if (result) {
+        wins++;;
+    } else {
+        losses++;
+    }
+    games++;
 
-	if (debug) {
-		if (loss_debug) {
-			if (result == 'draw') {
-				echo = 'Draw found. Displaying debug output... <br><br>'+echo;
-				echo += '<br><br>';
-				sims_left = false;
-				return result;
-			} else if (result) {
-				if (!sims_left) {
-					echo = 'No losses found. No debug output to display.<br><br>';
-					sims_left = false;
-					return result;
-				} else {
-					echo = '';
-				}
-			} else {
-				echo = 'Loss found. Displaying debug output... <br><br>'+echo;
-				echo += '<br><br>';
-				sims_left = false;
-				return result;
-			}
-		} else if (!mass_debug) {
-			return result;
-		}
-	}
+    // Increment total turn count
+    total_turns += simulation_turns;
+
+    if (debug) {
+        if (loss_debug) {
+            if (result == 'draw') {
+                echo = 'Draw found. Displaying debug output... <br><br>' + echo;
+                echo += '<br><h1>DRAW</h1><br>';
+                sims_left = false;
+                return result;
+            } else if (result) {
+                if (!sims_left) {
+                    echo = 'No losses found. No debug output to display.<br><br>';
+                    sims_left = false;
+                    return result;
+                } else {
+                    echo = '';
+                }
+            } else {
+                echo = 'Loss found. Displaying debug output... <br><br>' + echo;
+                echo += '<br><h1>LOSS</h1><br>';
+                sims_left = false;
+                return result;
+            }
+        } else if (!mass_debug) {
+            return result;
+        }
+    }
+}
+
+function processSimResult2() {
+
+    var result = processSimResult();
+
+    if (debug && !mass_debug && !loss_debug) {
+        sims_left = 0;
+        return;
+    }
+
+    if (debug && loss_debug) {
+        if (result == 'draw') {
+            // Draw found
+            sims_left = 0;
+            return;
+        } else if (result) {
+            if (!sims_left) {
+                // 'No losses found
+                return;
+            } else {
+                echo = '';
+            }
+        } else {
+            // Loss found
+            sims_left = 0;
+            return;
+        }
+    }
+
+    if (sims_left > 0) sims_left--;
 }
 
 // Global variables used by single-threaded simulator
-var run_sims_count = false;
+var run_sims_count = 0;
 var run_sims_batch = 0;
+var simulating = false;
 
 }
