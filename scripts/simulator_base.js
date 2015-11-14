@@ -63,7 +63,7 @@ if (simulator_thread) {
                 for (key++; key < len; key++) {
                     current_assault = units[key];
                     // If this unit is dead, don't update newkey, we still need to fill that slot
-                    if (current_assault.isAlive()) {
+                    if (!current_assault.isAlive()) {
                         if (debug) echo += debug_name(current_assault) + ' is removed from field<br>';
                     }
                     // If this unit is alive, set its key to newkey, and then update newkey to be the next slot
