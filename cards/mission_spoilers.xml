@@ -1,0 +1,858 @@
+<Missions>
+  <Mission>
+    <ID>101</ID>
+    <Name>City of Light</Name>
+    <Description>You've finally made it to Luminis, but the Owl Mystic Yuriel was waiting for your arrival. You must defeat him to get an audience with the leader of the Aether.</Description>
+    <Speech>
+      <Line>owlmystic: The ones I fought in the north? I see my 'persuassion' was not convincing enough. Allow me to reiterate the lesson.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>102</ID>
+    <Name>Audience</Name>
+    <Description>After proving your strength against Yuriel, he has decided to allow you entrance to the capital itself.</Description>
+    <Speech>
+      <Line>owlmystic: How dare you blemish our sanctified cit-!!</Line>
+      <Line>seraph: Yuriel, what is the meaning of this? If these outsiders wish an audience, I will grant it.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>103</ID>
+    <Name>Blind Eye</Name>
+    <Description>You've finally been granted access to Luminis, but the Aether leader refuses to listen to your words.</Description>
+    <Speech>
+      <Line>seraph: Who are you and what news have you brought to our land?</Line>
+      <Line>explorergirl: We come from Elaria where we sought the Heart of Blue Fire. A Chaos mage attacked us and she was under a strange-</Line>
+      <Line>seraph: The Chaos have always been a dangerous and unpredictable faction, outsider. Begone, your kind are no longer welcome.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>104</ID>
+    <Name>Rebuke</Name>
+    <Description>The Aether refuse to listen to the warnings you brought to them. They have closed their ears and sent their champion after you.</Description>
+    <Speech>
+      <Line>seraph: I have heard enough. The Aether have no time for this. Yuriel! Exile these outsiders.</Line>
+      <Line>explorergirl: What? What did we do?! We are telling you there is a strange and tainted magi-!!</Line>
+      <Line>owlmystic: Samael does not wish to hear your ramblings. Leave!</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>11</ID>
+    <Name>One Small Step</Name>
+    <Description>With the advent of crystal expeditions, new adventurers are needed to contain and fight the creatures that break out of these ancient Spellstones. You've traveled to Elaria for just that purpose.</Description>
+  </Mission>
+  <Mission>
+    <ID>111</ID>
+    <Name>Exile</Name>
+    <Description>You have been driven from the city of Luminis without a scrap of information. To make matters worse, the Aether forces still follow to assure you do not return.</Description>
+    <Speech>
+      <Line>bearcommander: They still chase us like fish down stream? They must really not like you.</Line>
+      <Line>owlmystic: Leave our lands! Do not return with your wasteful words. Samael has spoken.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>112</ID>
+    <Name>Open Fields</Name>
+    <Description>You have momentarily escaped the arm of Luminis and their Aether mages, but the land itself senses that you are not welcome and harrasses you at every turn.</Description>
+    <Speech>
+      <Line>bearcommander: Finally, we made it out of that bright place...</Line>
+      <Line>explorergirl: There is a wolf up ahead.</Line>
+      <Line>bearcommander: What is wrong with that beast? He looks sick.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>113</ID>
+    <Name>Sickness Spreading</Name>
+    <Description>While escaping the city of Luminis, you have come across a group of sick animals. It appears to be the same corruption as the Chaos mage.</Description>
+  </Mission>
+  <Mission>
+    <ID>114</ID>
+    <Name>Border's Edge</Name>
+    <Description>The Owl Mystic Yuriel has harried your party to the edges of the land.</Description>
+    <Speech>
+      <Line>owlmystic: Leave and never return. Allow me to help you remember the lesson.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>12</ID>
+    <Name>Guardian's Training</Name>
+    <Description>You've met up with a Captain of the Elaria expedition on your arrival. He's offered to team up with you to help train on your quest for the Heart of Blue Fire, but others aren't as thrilled.</Description>
+    <Speech>
+      <Line>ranger: This is the Elaria Expedition, the forefront a' Spellstone harvesting and the edge o' civilization as we know it!</Line>
+      <Line>ranger: Oda, come ova' here and help me show this new kid the ropes!</Line>
+      <Line>templeguardian: It would be my pleasure.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>121</ID>
+    <Name>Shelter</Name>
+    <Description>As the sun begins to set you seek shelter. The ordeal in Luminis has left you weary.</Description>
+    <Speech>
+      <Line>explorergirl: We need to find shelter before night.</Line>
+      <Line>bearcommander: And food. I could eat seventeen salmon.</Line>
+      <Line>explorergirl: ...</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>122</ID>
+    <Name>In The Distance</Name>
+    <Description>In the distance, you spot a castle on an outcropping of rock. You've decided to approach it to find shelter and rest.</Description>
+  </Mission>
+  <Mission>
+    <ID>123</ID>
+    <Name>Something's Off...</Name>
+    <Description>As you approach the castle, you can tell something is strange. You are set upon by various creatures, some of which are Chaos.</Description>
+    <Speech>
+      <Line>explorergirl: Something is wrong. Do you see the wildlife down there? They look like the Chaos back in Elaria.</Line>
+      <Line>bearcommander: ...</Line>
+      <Line>explorergirl: ... you can't eat them.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>124</ID>
+    <Name>Lightning and Brimstone</Name>
+    <Description>At the edge of Luminis you found an abandoned castle in the mountains. Before you can even reach it, you are assaulted by a familiar Chaos mage.</Description>
+    <Speech>
+      <Line>bearcommander: What is that ahead? In that old castle? Maybe something we can eat-</Line>
+      <Line>maniacgeneral: What have we here? Oh, the ones that drove me from Elaria? This should be FUN.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>13</ID>
+    <Name>Undead Emerge</Name>
+    <Description>A band of undead have wandered into the camp, causing mayhem. You spot a traveler's pack amongst them. An unfortunate merchant seems to be trapped!</Description>
+    <Speech>
+      <Line>ranger: Hah! You seem to be gettin' th' hang of it, now le-...</Line>
+      <Line>skeletonwarrior: URRRRAAAGGGGG!!!!</Line>
+      <Line>explorergirl: Undead in the camp?!! Look! A merchant is cornered by some of the skeletons!</Line>
+      <Line>goblinmerchant: Hey there, uh... skeleton... friend? Can I interest you in a new sword? Only 23,000 gold!</Line>
+      <Line>skeletonwarrior: RAAAARRRRRRRRRRR!!!!!!</Line>
+      <Line>goblinmerchant: Yikes! Help!</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>131</ID>
+    <Name>Unfamiliar Lands</Name>
+    <Description>You've taken your airship to meet up with Aria, who was sent to the Chaos home of Karthos in search of the Heart.</Description>
+    <Speech>
+      <Line>necromancer: Welcome to Karthos, the hospitable home of the Chaos mages.</Line>
+      <Line>bearcommander: I don't think I would use the word 'hospitable' for a place where everything is made of fire.</Line>
+      <Line>lavacrab: *SNAP!*</Line>
+      <Line>bearcommander: OUCH! Why is everything always so angry where we go?</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>132</ID>
+    <Name>Lava Crab Gang</Name>
+    <Description>You've disturbed a nest of Lava Crabs! They come at you with pincers at the ready!</Description>
+  </Mission>
+  <Mission>
+    <ID>133</ID>
+    <Name>Rocks and Lava</Name>
+    <Description>You follow Aria as you begin your walk towards Karthos. Unfortunately, everything appears to be hostile here and you are quickly attacked.</Description>
+    <Speech>
+      <Line>necromancer: It's unfortunate that you must walk the rest of the way. However, taking an airship any closer would be... unwise.</Line>
+      <Line>bearcommander: It's unfortunate that this place is all rocks. And lava. Rocks and lava. And meanness. Rocks, lava and meanness.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>134</ID>
+    <Name>Titans of Fire</Name>
+    <Description>As you defeat the final Chaos creature, a great roar is heard. A huge titan of fire comes around a cliff, drawn by the sound of battle.</Description>
+    <Speech>
+      <Line>bearcommander: What is that pounding in the ground?</Line>
+      <Line>firetitan: ROOAAAARRRRRRRR</Line>
+      <Line>necromancer: ... I want to make that creature mine.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>14</ID>
+    <Name>Bury the Dead</Name>
+    <Description>The undead have been rounded up, but some still struggle! Finish them off and keep the researchers safe!</Description>
+    <Speech>
+      <Line>ranger: Round up the last of these undead! Let's finish them off!</Line>
+      <Line>explorergirl: I'll stay with the researchers and keep them safe!</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>141</ID>
+    <Name>Chaotic... Evil?</Name>
+    <Description>You press towards the capital of Karthos with Aria while she reveals more about the Chaos.</Description>
+    <Speech>
+      <Line>necromancer: It's no surprise Samael refused to listen. The Aether have always been stubborn. They believe they are above the rest of us. We know there is an evil coming.</Line>
+      <Line>bearcommander: Aren't the Chaos evil?</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>142</ID>
+    <Name>Trust</Name>
+    <Description>As you near Karthos you can see the lair rising out of the rocks, Aria continues to enlighten you on the nature of the Chaos.</Description>
+    <Speech>
+      <Line>necromancer: What?! No, not all Chaos are 'evil'. Mischievous maybe, and some are evil, but not all.</Line>
+      <Line>lavacrab: *SNAP!* *SNAP!*</Line>
+      <Line>bearcommander: I believe that crab is evil.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>143</ID>
+    <Name>Troubling Travels</Name>
+    <Description>Karthos is larger than you first thought. As you come closer you can hear some kind of disturbance in the distance.</Description>
+  </Mission>
+  <Mission>
+    <ID>144</ID>
+    <Name>Pierce the Siege</Name>
+    <Description>A horde of Chaos creatures lay siege to Karthos. There is no path around. You must fight through them to get inside.</Description>
+    <Speech>
+      <Line>lavacrab: *skitters around*</Line>
+      <Line>necromancer: There is no other way into Karthos. The path is blocked.</Line>
+      <Line>bearcommander: Then we simply go through.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>151</ID>
+    <Name>Within the Walls</Name>
+    <Description>You have finally arrived at the Chaos lair of Karthos and broken through the siege.</Description>
+    <Speech>
+      <Line>flamebender: Oh-hoho! Aria, what a pleasant surprise. I heard you had lost your flaming mind in Elaria.</Line>
+      <Line>necromancer: Decim, I guess since you are here that this siege is your doing?</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>152</ID>
+    <Name>Decim the Firebringer</Name>
+    <Description>The fight with Decim spills into the lair itself, filling its halls with fire as his laughter echos off the walls.</Description>
+    <Speech>
+      <Line>flamebender: Oh-hoho! Your friend here is strong, Aria! I like them.</Line>
+      <Line>necromancer: Why are you sieging Karthos? Do you wish to upset Tarien?</Line>
+      <Line>flamebender: You might as well ask why I breathe, Aria! Hehehe!</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>153</ID>
+    <Name>Contention</Name>
+    <Description>As you fight with Decim, the gates of the lair break open and in pour the Chaos that have been sieging the lair.</Description>
+    <Speech>
+      <Line>bearcommander: The gates have broken! The creature from outside are coming in!</Line>
+      <Line>necromancer: Retreat to the inner chamber!</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>154</ID>
+    <Name>Lord of the Undead</Name>
+    <Description>You have come face to face with Tarian, leader of the Chaos mages. Before he can ask him what he knows of the Heart of Blue Fire, a figure attacks from the shadows.</Description>
+    <Speech>
+      <Line>necromancer: Bar the door! Blast anyone who walks through there. I am done playing games with that child Decim.</Line>
+      <Line>lichking: Aria. What have you brought back with you?</Line>
+      <Line>necromancer: Tarian, I bring the commander who helped break me free of the Vo- Who is that?</Line>
+      <Line>invisibleassassin: *Moves out of the shadows, knife in hand*</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>161</ID>
+    <Name>Path to The Void</Name>
+    <Description>After stopping the Void Assassin's attempt to kill Tarian you have been charged to travel out of the city of Karthos and towards the Caverns of Crossing.</Description>
+    <Speech>
+      <Line>lichking: It appears The Void are more aggressive than we thought. They may have uncovered the Heart of Blue Fire themselves...</Line>
+      <Line>necromancer: If only the Aether would get off their high pedestal and listen-</Line>
+      <Line>lichking: Aria, take them to the Caverns of Crossing and into The Void. It is beyond time for us to take this fight to their heart.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>162</ID>
+    <Name>River of Fire</Name>
+    <Description>The bridges cross the chasm to get around the river of lava. Aria leads the way, but you can see Chaos creatures all around you.</Description>
+    <Speech>
+      <Line>bearcommander: That is... a lot of lava and fire.</Line>
+      <Line>necromancer: We will be taking the bridges that connect the islands. The Caverns of Crossing are on the far side.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>163</ID>
+    <Name>Crossings</Name>
+    <Description>Crossing the bridges, you find many Chaos who have taken to living on it and who do not like the presence of Ursurio.</Description>
+  </Mission>
+  <Mission>
+    <ID>164</ID>
+    <Name>Fire Twins</Name>
+    <Description>On the center island between bridges, you are attacked by a huge group of Chaos creatures lead by a pair of Fire Titans.</Description>
+    <Speech>
+      <Line>bearcommander: Should we be concerned about these...?</Line>
+      <Line>firetitan: AARRRRRRRRRRR!!!!!</Line>
+      <Line>firetitan: OOWWWAAARRRRRRRRRRRRRRR!!!!!</Line>
+      <Line>necromancer: That would probably be a good idea.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>171</ID>
+    <Name>Exit Strategy</Name>
+    <Description>After crossing the river of lava, you come to the far side. Aria notices some strange patterns with the Chaos creatures and decides something must be done.</Description>
+    <Speech>
+      <Line>necromancer: This is strange. There are more creatures here than normal.</Line>
+      <Line>bearcommander: Great, more reason to keep movin-</Line>
+      <Line>necromancer: We need to clear them out. Something about their patterns of attack are strange.</Line>
+      <Line>necromancer: If they manage to take the bridges while we are gone we will have no way to return.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>172</ID>
+    <Name>Kicking the Nest</Name>
+    <Description>Trying to clear out the Chaos near the bridge proves to be harder than thought. There seems to be more than anticipated, and Aria seems to know something that she is not sharing.</Description>
+    <Speech>
+      <Line>bearcommander: WOAH! Where did all of these Chaos come from?! This is like sticking your head in the beehive for a taste of honey!</Line>
+      <Line>necromancer: ...</Line>
+      <Line>bearcommander: ... Not that I've done that...</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>173</ID>
+    <Name>Purging</Name>
+    <Description>As the Chaos swarm, you cut through their ranks and follow Aria as she seeks out her goal.</Description>
+  </Mission>
+  <Mission>
+    <ID>174</ID>
+    <Name>Wraith's Den</Name>
+    <Description>Clearing the last wave of undead and firey beasts has uncovered the real reason for their gathering. A den of Wraiths has gathered, drawing all nearby creatures to their power. Clear out the den!</Description>
+    <Speech>
+      <Line>bearcommander: I've never seen anything like this...</Line>
+      <Line>necromancer: It's a den of Wraiths. Its one of the most dangerous occurrences in these lands.</Line>
+      <Line>necromancer: Normally we leave them be, but this close to the Karthos could cause more issues if we do nothing.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>181</ID>
+    <Name>Pre-emptive Strike</Name>
+    <Description>As you near the Caverns of Crossing, you are ambushed by a group of Void creatures.</Description>
+    <Speech>
+      <Line>bearcommander: Something smells off...</Line>
+      <Line>necromancer: Above, On the ridge! Open your eyes!</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>182</ID>
+    <Name>The Second Wave</Name>
+    <Description>The minions of The Void pull back momentarily, giving you a moment to rest before attacking with a second wave. They seem persistent to stop you from making it to the caverns.</Description>
+    <Speech>
+      <Line>bearcommander: They are retreating... Why?</Line>
+      <Line>necromancer: No, they are just preparing a second wave.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>183</ID>
+    <Name>Clash</Name>
+    <Description>The second wave crashes down around you. You've survived the initial clash, but they just keep coming.</Description>
+  </Mission>
+  <Mission>
+    <ID>184</ID>
+    <Name>The Void's Champion</Name>
+    <Description>As the second wave retreats in defeat you feel the very earth itself shudder under your feet. A gigantic hand of fire reaches out of the cavern, pulling forth a massive Orobas.</Description>
+    <Speech>
+      <Line>bearcommander: Hah! Take that ya' stinking mongrels!</Line>
+      <Line>necromancer: No. This is not good.</Line>
+      <Line>bearcommander: What do you mean? We won the- What is THAT?!</Line>
+      <Line>balrog: NO PASSING!!!!!</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>191</ID>
+    <Name>Caverns of Crossing</Name>
+    <Description>After the defeat of Orobos at the entrance to the Caverns of Crossing, you proceed into the dark tunnels themselves.</Description>
+    <Speech>
+      <Line>necromancer: I really enjoyed the part where the Orobas split the ground with its fire whip. That was exciting.</Line>
+      <Line>bearcommander: I think I am starting to be able to tell when you are making the sarcasm.</Line>
+      <Line>necromancer: Oh really? That's good, I was beginning to think I was putting a show on for myself.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>192</ID>
+    <Name>Depths of the World</Name>
+    <Description>The caverns present many enemies that try to bar your way. As the tunnels twist and turn you find yourself crossing an underground chasm.</Description>
+  </Mission>
+  <Mission>
+    <ID>193</ID>
+    <Name>Deep Tremors</Name>
+    <Description>Deep tremors shake the caverns as you make your way through them. Aria leads you though the twists and turns, but even she seems unsure of the correct way.</Description>
+    <Speech>
+      <Line>bearcommander: What was that rumbling? Was that an earthquake?</Line>
+      <Line>necromancer: No, I don't think those were natural.</Line>
+      <Line>bearcommander: Not natural? What exactly does THAT mean?</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>194</ID>
+    <Name>Mr. Bear, Tear Down This Wall</Name>
+    <Description>The caverns have grown dangerous due to the tremors and you've come to a dead end. Aria says this is where the exit should be located.</Description>
+    <Speech>
+      <Line>necromancer: That is concerning...</Line>
+      <Line>bearcommander: I think it is concerning that I might be developing the claustrophobia.</Line>
+      <Line>necromancer: The exit should be here, but it looks like it might have collapsed-</Line>
+      <Line>bearcommander: UURRRRRAAAAAAAWWWWWWWWWWW!!!!! *SMASH*</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>201</ID>
+    <Name>The Ridge</Name>
+    <Description>After escaping the Caverns of Crossing, you take your first steps into the territory known as The Void. Spotting a nearby ridge, the party approaches it to find out where they are.</Description>
+    <Speech>
+      <Line>necromancer: Fresh air!... kind of.</Line>
+      <Line>bearcommander: What is that smell? Smells like burning.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>202</ID>
+    <Name>From the Pits</Name>
+    <Description>The hike out of the pits near the caverns proves to be more dangerous than first thought.</Description>
+    <Speech>
+      <Line>bearcommander: -and then I said to him, 'No, you're not a wet bear, you're a DRIZZLY BEAR!' Bwhahahahaha!</Line>
+      <Line>necromancer: .....</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>203</ID>
+    <Name>A Strange Man</Name>
+    <Description>At the top of the ridge overlooking all of The Void is a familiar figure sitting in meditation. He opens an eye as you approach.</Description>
+    <Speech>
+      <Line>templeguardian: ... Aria, Commander Ursurio. I see you are doing well.</Line>
+      <Line>necromancer: What are you doing out here on this ridge alone?</Line>
+      <Line>templeguardian: My mission was to find the Grand Excavator. I am not sure how successful I was...</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>204</ID>
+    <Name>Malchior, Grand Excavator</Name>
+    <Description>Your follow Oda further up the ridge where you can oversee all of The Void. There you meet the Grand Excavator.</Description>
+    <Speech>
+      <Line>grandexcavator: You won't take the Great Hermit Malchior down so EASILY!</Line>
+      <Line>templeguardian: Malchior, sir, these people are not here to-</Line>
+      <Line>grandexcavator: That's EXACTLY what a minion of The Void would say if I thought they were a minion of The Void! ON GUARD VILE BEASTS!</Line>
+      <Line>bearcommander: H-hey. Those words are hurtful...</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>21</ID>
+    <Name>Armored Up!</Name>
+    <Description>With the undead taken care of, the captain has brought you to a new section of the camp. Here you come across Oda once more, deep in meditation.</Description>
+    <Speech>
+      <Line>ranger: Some creatures 'ave special powers. Learning how to fight against these skills will be key. Oda! Com'ere!</Line>
+      <Line>templeguardian: Those undead appearing has put me on edge. This time I won't hold back.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>211</ID>
+    <Name>Misunderstanding</Name>
+    <Description>After fighting with Malchior, the Grand Hermit has decided that you are indeed not corrupted by The Void. Of course he is still not making much sense.</Description>
+    <Speech>
+      <Line>grandexcavator: Wait. You're not corrupted by The Void at all.</Line>
+      <Line>necromancer: Yes. We are quite aware of that point, thank you.</Line>
+      <Line>grandexcavator: Then maybe it's not too late. We could still contain it. The Void has already gotten the Heart!</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>212</ID>
+    <Name>Few Crystals Short of a Load</Name>
+    <Description>As you travel further into The Void, Malchior's ramblings become rather concerning.</Description>
+    <Speech>
+      <Line>grandexcavator: Forward, comrades! If you've come here it means there is not much cucumbers! .. I mean time! Time- no, not much time.</Line>
+      <Line>bearcommander: ... I don't think our friend is all here. Does he know where to find the Heart of Blue Fire?</Line>
+      <Line>templeguardian: This is what I feared. I am not even sure if he knows where he is, much less the Heart.</Line>
+      <Line>grandexcavator: Tremors... tremors...</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>213</ID>
+    <Name>Rumble Tumble</Name>
+    <Description>As you descend down the ridge, the tremors from earlier grow stronger. You seem to be nearing their source.</Description>
+  </Mission>
+  <Mission>
+    <ID>214</ID>
+    <Name>Source of the Tremors</Name>
+    <Description>At the base of a massive crater, a gigantic wurm bursts from its den. It sends rock and debris in every direction, before turning its attention towards the party.</Description>
+    <Speech>
+      <Line>grandexcavator: Tremors... there was SOMETHING important about these tremors...</Line>
+      <Line>templeguardian: Malchior... sir... I think we should sit down and tal-</Line>
+      <Line>tremorwurm: BWWAAAARRRRRR</Line>
+      <Line>grandexcavator: Ah, YES! The TREMOR WURM! That's what causes the tremors! Of course.</Line>
+      <Line>necromancer: SAY THESE THINGS SOONER!</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>22</ID>
+    <Name>The Buried Cache</Name>
+    <Description>The Captain takes you near the excavation. Near the bottom of the site you can see the top of what looks to be a massive chest.</Description>
+    <Speech>
+      <Line>ranger: If ya ever need to know more about an enemy tap them to bring up your field journal!</Line>
+      <Line>templeguardian: What is that buried in the center of the excavation?</Line>
+      <Line>ranger: That? It's th' cache that we're here to dig up. The researchers think it might be the Heart of Blue Fire, but they can't get it open.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>221</ID>
+    <Name>Gibberish</Name>
+    <Description>Malchior reveals that the Void have found the Heart of Blue Fire. The Heart is apparently the source of the corruption that is reaching across the land.</Description>
+    <Speech>
+      <Line>grandexcavator: Well done. The Tremor Wurm is quite the ferocious beast.</Line>
+      <Line>necromancer: I noticed. Now what did you mean when you said "we can still contain it"?</Line>
+      <Line>grandexcavator: The Heart of Blue Fire! The crystal harvesting worldwide has weakened it. The Jomar-Laws perimeter breached its maximum toligarm and has...</Line>
+      <Line>bearcommander: Does anyone know what this strange little man is saying? Because I'm just getting hungry listening to him...</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>222</ID>
+    <Name>Corrupted Lands</Name>
+    <Description>At Malchoir's lead, the group heads across the crater and towards the Void's Core. Unfortunately the land between here and there is full of creatures already corrupted.</Description>
+    <Speech>
+      <Line>templeguardian: Malchior, sir... you claim that the Heart is being used by the Void spread its corruption but that it can be contained, is that correct?</Line>
+      <Line>grandexcavator: Yes, yes. It is quite simple.</Line>
+      <Line>bearcommander: I feel like that is less than true.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>223</ID>
+    <Name>Bo Turvar Axis</Name>
+    <Description>The creatures you just fought off rise up, attacking again. They seem to be determined to stop you.</Description>
+    <Speech>
+      <Line>grandexcavator: ... and the conduit quadrant of the Bo Turvar axis will collapse upon itself! Simple!</Line>
+      <Line>bearcommander: ...</Line>
+      <Line>templeguardian: ...</Line>
+      <Line>necromancer: ... I didn't understand any of those words.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>224</ID>
+    <Name>Press On</Name>
+    <Description>The group approaches a series of narrow gorges in The Void that they must pass to get to the lands beyond.</Description>
+    <Speech>
+      <Line>templeguardian: Let's keep moving... we don't have the luxury to wait. I feel that time is not on our side.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>23</ID>
+    <Name>Scourge</Name>
+    <Description>While you were training with the captain and Oda, undead swarmed out of the forest and invaded the camp. They seem to be focusing on the buried cache.</Description>
+    <Speech>
+      <Line>skeletonwarrior: URRRRAAAGGGGG!!!!</Line>
+      <Line>ranger: The undead have returned!! Use your magic to help defend the researchers!</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>231</ID>
+    <Name>Aether Raid</Name>
+    <Description>As your group passes through a narrow gorge, you are ambushed by a raid of corrupted Aether. You spot them just in time to defend yourself.</Description>
+    <Speech>
+      <Line>necromancer: Those look like Aether- what is such a large group of them doing out here?</Line>
+      <Line>lightwisp: WhooooOOOOoooooo. You don't look familiar. Do I know you?</Line>
+      <Line>grandexcavator: Ah, I've studied these before. The Soul Wisps gather together into flocks that build their energy, empowering-</Line>
+      <Line>bearcommander: Ohhhh noooooo.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>232</ID>
+    <Name>Falling Feathers</Name>
+    <Description>The Aether pull back only to collapse upon you a second time, pushing their attack harder.</Description>
+  </Mission>
+  <Mission>
+    <ID>233</ID>
+    <Name>Yuriel's Ambush</Name>
+    <Description>You've come across the Owl Mystic Yuriel out in The Void. You are surprised to see him, and he goes on the offensive before you can find out why he is here.</Description>
+    <Speech>
+      <Line>owlmystic: Stop right there! I cannot allow you to proceed any further!</Line>
+      <Line>bearcommander: Yuriel?! What are you doing here?</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>234</ID>
+    <Name>Yuriel's Honor</Name>
+    <Description>Yuriel reveals that the Aether, led by Samael, have come to The Void to harness the power of the Heart of Blue Fire for themselves. They plan to destroy the Chaos once and for all with its power.</Description>
+    <Speech>
+      <Line>owlmystic: Samael has charged me with the guard of this pass. I will not allow you to interrupt him.</Line>
+      <Line>grandexcavator: You know not of the power the Heart of Blue Fire contains!</Line>
+      <Line>owlmystic: We will take this corruption and purify it with the cleansing light!</Line>
+      <Line>owlmystic: Samael has claimed this power for the Aether, and with it we will finally rid ourselves of the Chaos.</Line>
+      <Line>bearcommander: So you knew about the corruption all along?!</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>24</ID>
+    <Name>Savior</Name>
+    <Description>A group of researchers has been cornered by a shambling band of skeleton warriors. Help the captain defeat the undead and get to them.</Description>
+    <Speech>
+      <Line>templeguardian: Captain! There are researchers here that need help!</Line>
+      <Line>ranger: Sorry Oda, I'm a tad bit occupied! Get off me ya' grubbin' bones! Back to the earth with ya!</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>241</ID>
+    <Name>Mystic's Disgrace</Name>
+    <Description>With the defeat of Yuriel, the party heads into the Void Core. Below where you stand is what appears to be a huge black crystal of immense size. Before it stands Samael, the leader of the Aether.</Description>
+    <Speech>
+      <Line>seraph: I see you have laid low Yuriel's honor. It is disgraceful that he lost to such insignificant foes as yourself.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>242</ID>
+    <Name>Samael's Deceit</Name>
+    <Description>Samael's plan to take the Heart of Blue Fire for his own ascension comes to a head. You must stop him before he takes that power and uses it to destroy the Chaos and Wyld!</Description>
+    <Speech>
+      <Line>necromancer: You underestimate the Chaos as always, Samael. That will be your downfall!</Line>
+      <Line>seraph: My unraveling will never come from such weak opposition. Come! Let me show you the true might of the Aether!</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>243</ID>
+    <Name>Samael's Wrath</Name>
+    <Description>Samael approaches the crystal, energy wrapping around the room as he reaches out to draw energy from the Heart of Blue Fire.</Description>
+    <Speech>
+      <Line>seraph: HAH! You still think you can win?! PETTY MORTALS, BOW BEFORE THE GREATNESS THAT IS MY POWER!</Line>
+      <Line>necromancer: We need to stop him from breaking the crystal!</Line>
+      <Line>bearcommander: We won't make it!</Line>
+      <Line>seraph: YOU ARE TOO LATE!!!</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>244</ID>
+    <Name>The Void</Name>
+    <Description>Samael breaks the crystal that holds the Heart of Blue Fire, unsealing a Void monster within. You have one chance at containing it before it escapes.</Description>
+    <Speech>
+      <Line>seraph: What?! NO!! HOW CAN THIS BE- ARRRGGGGGgggg-</Line>
+      <Line>templeguardian: The energy is too much for him; it will rip him apart. We must fall bac-</Line>
+      <Line>grandexcavator: No. We need to contain the Heart no matter the cost.</Line>
+      <Line>necromancer: The crystal is breaking open!!</Line>
+      <Line>void: I... Have... Been... RELEASED!!!</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>31</ID>
+    <Name>Protecting the Tools</Name>
+    <Description>The undead are using lightning to destroy the excavation tools. Clear them out before they make it impossible to harvest crystals!</Description>
+    <Speech>
+      <Line>ranger: The equipment! Clear those blasted undead out! We can't afford to lose those tools!</Line>
+      <Line>templeguardian: Those red spirits are the ones creating the lightning! Send your strongest after them!</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>32</ID>
+    <Name>Collateral Damage</Name>
+    <Description>The undead have broken through our southern defenses and are pouring into the barracks. Stop them before they reach the defenseless researchers of the expedition.</Description>
+    <Speech>
+      <Line>explorergirl: Captain! I came as soon as I heard the shouts! Where do you need me?</Line>
+      <Line>ranger: The southern defensive line jus' buckled! Th' undead are pourin' in!</Line>
+      <Line>explorergirl: That's where the researchers are! We have to do something! Let's go!</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>33</ID>
+    <Name>Shattering</Name>
+    <Description>The flame spirits have set fire to much of the lower camp. A number of Spellstones the researchers were studying have been shattered, releasing the creatures within.</Description>
+    <Speech>
+      <Line>explorergirl: The undead are shattering the researchers' Spellstones!</Line>
+      <Line>templeguardian: The Aether creatures being released are confused. We must calm their minds.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>34</ID>
+    <Name>Missing Cache?!</Name>
+    <Description>The undead, angels, and pegasus are now running wild in the camp! To make matters worse, the buried cache has disappeared in the chaos!</Description>
+    <Speech>
+      <Line>templeguardian: Sir! The cache with the Heart of Blue Fire is missing!!!</Line>
+      <Line>ranger: These creatures are everywhere! Clear th' expedition and make sure the researchers are safe first!</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>41</ID>
+    <Name>Push Them Back</Name>
+    <Description>The undead still come from the woods, and they bring a corruption with them that poisons the land. Push them back and hold that bridge before it is too late!</Description>
+    <Speech>
+      <Line>ranger: The expedition camp is clear, but th' undead continue and the cache is still missing. Someone is behind this.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>42</ID>
+    <Name>Bottleneck</Name>
+    <Description>The undead have been bottlenecked at the bridge, but something is driving them forward with unnatural force. Defeat them here and find out who is behind this attack!</Description>
+  </Mission>
+  <Mission>
+    <ID>43</ID>
+    <Name>The Bridge</Name>
+    <Description>You've broken through the ranks of the undead, but they still pour over from the far side. A scout has spotted a cloaked figure on the bridge.</Description>
+    <Speech>
+      <Line>ranger: One of our frog scouts spotted a cloaked figure near th' bridge behind a wall o' undead. It might be the one behind this, check it out.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>44</ID>
+    <Name>The Necromancer</Name>
+    <Description>You've found a Chaos mage that has been controlling the undead from behind the scenes! Confront her on the bridge and defeat them!</Description>
+    <Speech>
+      <Line>necromancer: So you're the one who has defeated my precious minions? I shall add you to my collection!!</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>51</ID>
+    <Name>Into the Woods!</Name>
+    <Description>With Aria defeated, the undead are now wandering aimlessly with no direction at all. To make matters worse, the cache is still missing!</Description>
+    <Speech>
+      <Line>ranger: Aria, you better help clean up yer mess! The three of you will need to find the missing cache without me.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>52</ID>
+    <Name>The Wyldwood</Name>
+    <Description>The undead are scattered through the nearby trees. You enter the Wyldwood, but get the feeling that you are being... watched.</Description>
+    <Speech>
+      <Line>templeguardian: The undead must have gone this way. I can still feel their chaotic magic lingering in the trees.</Line>
+      <Line>explorergirl: I don't like this... I can barely see where we are going.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>53</ID>
+    <Name>Thick Bramble</Name>
+    <Description>The canopy above you grows tighter and the shadows darker. As you try to track the remaining undead, you start to feel uneasy.</Description>
+    <Speech>
+      <Line>necromancer: Did I really attack the expedition? My memory is foggy...</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>54</ID>
+    <Name>Nature's Heart</Name>
+    <Description>In the deepest part of the woods you come across a stranger fighting against immense beasts. You rush to his side to help.</Description>
+    <Speech>
+      <Line>bountyhunter: BE GONE FOUL BEASTS!</Line>
+      <Line>necromancer: A person?! Leave him, let's find the rest of my undead.</Line>
+      <Line>bountyhunter: ANOTHER?! COME'ERE, I ENJOY THE CHALLENGE!</Line>
+      <Line>explorergirl: I'm going to help him. You can go if you want Aria.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>61</ID>
+    <Name>Wind in the Woods</Name>
+    <Description>As you leave the deepest part of the woods, the wind starts to pick up between the trees. As you come to a clearing, you are attacked by some cyclone elementals.</Description>
+    <Speech>
+      <Line>templeguardian: The wind is picking up. I'm sensing something unnatural nearby.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>62</ID>
+    <Name>Branching Paths</Name>
+    <Description>As you leave the deepest part of the woods, you come upon a branching pathway. It appears as if something large was dragged through the soil here recently.</Description>
+  </Mission>
+  <Mission>
+    <ID>63</ID>
+    <Name>Renewed Trail</Name>
+    <Description>At a fork in the forest, you hear the gurgling growl of an undead down the northern path. Following the path, you find a band of undead fighting against Wyld creatures.</Description>
+    <Speech>
+      <Line>explorergirl: What's that smell?</Line>
+      <Line>skeletonwarrior: ...uuuurrrrrggggggggg....</Line>
+      <Line>necromancer: There is something wrong with them. I cannot touch their minds with my magic.</Line>
+      <Line>templeguardian: If we follow them, they should lead us to the cache.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>64</ID>
+    <Name>The Hollow</Name>
+    <Description>You follow the undead to a small hollow, and there sitting upon the missing cache is a large man. He turns towards you, his eyes etched with the signs of insanity.</Description>
+    <Speech>
+      <Line>explorergirl: Up ahead in the hollow... There's the cache!</Line>
+      <Line>maniacgeneral: So you've finally caught up to me? Have a taste of THIS!</Line>
+      <Line>necromancer: This aura... it's the same that took control of me!!</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>71</ID>
+    <Name>Woodland Departure</Name>
+    <Description>Commander Ursurio reveals that the Heart of Blue Fire was never in Elaria, but that the Aether leader Samael knows its location.</Description>
+    <Speech>
+      <Line>bearcommander: The Heart was never here in Elaria, that cache appears to have just been a trapped creature. Poor thing, looked hungry.</Line>
+      <Line>ranger: Aria and Oda will search for the Heart of Blue Fire on their own. Adventurer, travel with Elyse and Ursurio to Luminis to find what they know.</Line>
+      <Line>explorergirl: The Aether have the largest archives on the continent, they should know something about this corruption and the Heart of Blue Fire.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>72</ID>
+    <Name>Land of Light</Name>
+    <Description>With the unexpected company of Commander Ursurio, you and Elyse travel towards the Aether capital of Luminis. The woods between Luminis and Elaria are dark and full of dangers.</Description>
+    <Speech>
+      <Line>explorergirl: So...</Line>
+      <Line>bearcommander: You want food? I have food.</Line>
+      <Line>explorergirl: What? No. I was wondering why you decided to come with... actually, nevermind.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>73</ID>
+    <Name>Hunted</Name>
+    <Description>You continue through the forest between the two territories, but begin to get the feeling that you are not alone.</Description>
+  </Mission>
+  <Mission>
+    <ID>74</ID>
+    <Name>Prey Upon</Name>
+    <Description>The trees begin to thin, light breaking through the canopy of the woods. Growling can be heard as you near the edge of the woods. Suddenly a pack of hungry wolves descends on the party.</Description>
+    <Speech>
+      <Line>bearcommander: These wolves look hungry. Do you think they want food? I don't like to share.</Line>
+      <Line>explorergirl: Forget about the food, this one is nipping at my heels!!!!</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>81</ID>
+    <Name>Ghosts...?</Name>
+    <Description>It appears as if you have stumbled into a soul wisp gathering deep in the woods on your path to meet the Aether. They've turned hostile to your presence.</Description>
+    <Speech>
+      <Line>lightwisp: WoooOOOoooOOOooo, we're ghosts!</Line>
+      <Line>bearcommander: These are the same as the creature from the cache... Can we eat them?</Line>
+      <Line>lightwisp: W-What?! Why are you not scared!!?! Whatever. GET THEM!</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>82</ID>
+    <Name>Soul Wisp Swarm</Name>
+    <Description>The soul wisps gather around, swarming your party and forcing you to flee their small hollow.</Description>
+  </Mission>
+  <Mission>
+    <ID>83</ID>
+    <Name>Fight or Flight</Name>
+    <Description>The soul wisps have chased you out of their grove, but they are relentless. Also spooky.</Description>
+    <Speech>
+      <Line>bearcommander: Will not eat! WILL NOT EAT!</Line>
+      <Line>lightwisp: Leeeaaavveeee~! WoooooOOOOOooooo!</Line>
+      <Line>explorergirl: Who knew those little things could be so tough?!</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>84</ID>
+    <Name>Trespassing</Name>
+    <Description>You have come across an Aether creature that is bent on turning you away. By force if necessary.</Description>
+    <Speech>
+      <Line>owlmystic: Halt! Whoooo goes there? You are trespassing on Aether lands.</Line>
+      <Line>owlmystic: Turn back or face my wrath.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>91</ID>
+    <Name>Finding a Crossing</Name>
+    <Description>You were able to lose the Owl Mystic after the battle, but you've become lost in the woods. With nothing else to go on, you approach a nearby river.</Description>
+    <Speech>
+      <Line>bearcommander: *Ear twitches* I can hear running water. There is a river nearby.</Line>
+      <Line>explorergirl: I'm a bit more concerned with these flying rodents!</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>92</ID>
+    <Name>Mage's Decree</Name>
+    <Description>You manage to find a bridge, the gleam of a city on the horizon. However the denizens of the river seem to be protecting the passage.</Description>
+    <Speech>
+      <Line>mermaid: Who dares to try and cross our waters?</Line>
+      <Line>explorergirl: We need to get to the Aether capital! We seek important information!</Line>
+      <Line>mermaid: We told you to head back. We care not for your business with the light ones.</Line>
+    </Speech>
+  </Mission>
+  <Mission>
+    <ID>93</ID>
+    <Name>Water Under the Bridge</Name>
+    <Description>The denizens of the river are sworn to protect their home, and they have deemed you a threat. You cannot pass the bridge until you defeat them.</Description>
+  </Mission>
+  <Mission>
+    <ID>94</ID>
+    <Name>Wrath of the River</Name>
+    <Description>The creatures living in the river's waters summon the last of their strength to stop you from crossing the bridge. Overcome their swell of strength to pass through.</Description>
+    <Speech>
+      <Line>mermaid: ELEMENTALS! Stop these intruders who seek to taint your waters!</Line>
+    </Speech>
+  </Mission>
+</Missions>

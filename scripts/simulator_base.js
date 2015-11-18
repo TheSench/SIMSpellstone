@@ -43,7 +43,6 @@ if (simulator_thread) {
 
         if (debug && !quiet) echo += debug_name(field[p].commander) + ' plays ' + debug_name(card) + '<br>';
     };
-
     // Dead cards are removed from both fields. Cards on both fields all shift over to the left if there are any gaps.
     var remove_dead = function () {
         remove_dead_cards('player');
@@ -63,7 +62,7 @@ if (simulator_thread) {
                 for (key++; key < len; key++) {
                     current_assault = units[key];
                     // If this unit is dead, don't update newkey, we still need to fill that slot
-                    if (current_assault.isAlive()) {
+                    if (!current_assault.isAlive()) {
                         if (debug) echo += debug_name(current_assault) + ' is removed from field<br>';
                     }
                     // If this unit is alive, set its key to newkey, and then update newkey to be the next slot
@@ -105,10 +104,10 @@ if (simulator_thread) {
     // Deal damage to card
     // and keep track of cards that have died this turn
     var do_damage = function (card, damage) {
-        card['health_left'] -= damage;
-        if (card['health_left'] <= 0) {
-            card['health_left'] = 0;
-            just_died.push(card);
+        if (damage >= card.health_left) {
+            card.health_left = 0;
+        } else {
+            card.health_left -= damage;
         }
     };
 
@@ -135,7 +134,7 @@ if (simulator_thread) {
         var targets = [];
         for (var key = 0, len = field_p_assaults.length; key < len; key++) {
             var target = field_p_assaults[key];
-            if (!target.isAlive() || !target.isUnjammed()) continue;
+            if (/*!target.isAlive() ||*/ !target.isUnjammed()) continue;
             if (!target.isInFaction(faction)) continue;
             if (require_active_turn && !target.isActive()) continue;
             if(target.hasSkill(s))
@@ -274,8 +273,10 @@ if (simulator_thread) {
 
             if (heal_amt > target['health'] - target['health_left']) heal_amt = target['health'] - target['health_left'];
             target['health_left'] += heal_amt;
-            if (augment && augment > 0 && debug) echo += '<u>(Enhance: +' + augment + ')</u><br>';
-            if (debug) echo += debug_name(src_card) + ' heals ' + debug_name(target) + ' by ' + heal_amt + '<br>';
+            if (debug) {
+                if (augment && augment > 0) echo += '<u>(Enhance: +' + augment + ')</u><br>';
+                echo += debug_name(src_card) + ' heals ' + debug_name(target) + ' by ' + heal_amt + '<br>';
+            }
         }
     };
 
@@ -376,8 +377,10 @@ if (simulator_thread) {
             var target = targets[key];
 
             target['protected'] += protect;
-            if (augment && augment > 0 && debug) echo += '<u>(Enhance: +' + augment + ')</u><br>';
-            if (debug) echo += debug_name(src_card) + ' protects ' + debug_name(target) + ' by ' + protect + '<br>';
+            if (debug) {
+                if (augment && augment > 0) echo += '<u>(Enhance: +' + augment + ')</u><br>';
+                echo += debug_name(src_card) + ' protects ' + debug_name(target) + ' by ' + protect + '<br>';
+            }
         }
     };
 
@@ -426,9 +429,8 @@ if (simulator_thread) {
                 continue;
             }
 
-            var strike_damage = 0 + strike;
+            var strike_damage = strike;
 
-            if (debug) echo += '<u>(Strike: +' + strike_damage;
 
             // Check Protect/Enfeeble
             var enfeeble = 0;
@@ -438,28 +440,29 @@ if (simulator_thread) {
 
             if (enfeeble) {
                 strike_damage += enfeeble;
-                if (debug) echo += ' Enfeeble: +' + enfeeble;
             }
             if (augment) {
                 strike_damage += augment;
-                if (debug) echo += ' Enhance: +' + augment;
             }
             if (protect) {
                 if (strike_damage > protect) target['protected'] = 0;
                 else target['protected'] -= strike_damage;
                 strike_damage -= protect;
-                if (debug) echo += ' Barrier: -' + protect;
             }
 
-            if (strike_damage < 0) strike_damage = 0;
-            if (debug) echo += ') = ' + strike_damage + ' damage</u><br>';
-
-            do_damage(target, strike_damage);
-
+            if (strike_damage < 0) {
+                strike_damage = 0;
+            } else {
+               do_damage(target, strike_damage);
+            }
             if (debug) {
+                echo += '<u>(Strike: +' + strike;
+                if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
+                if (augment) echo += ' Enhance: +' + augment;
+                if (protect) echo += ' Barrier: -' + protect;
+                echo += ') = ' + strike_damage + ' damage</u><br>';
                 echo += debug_name(src_card) + ' strikes ' + debug_name(target) + ' for ' + strike_damage + ' damage';
-                if (target['health_left'] < 1) echo += ' and it dies<br>';
-                else echo += '<br>';
+                echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
             }
         }
     };
@@ -517,43 +520,54 @@ if (simulator_thread) {
             }
 
             target['attack_weaken'] += weaken;
-            if (augment && augment > 0 && debug) echo += '<u>(Enhance: +' + augment + ')</u><br>';
-            if (debug) echo += debug_name(src_card) + ' weakens ' + debug_name(target) + ' by ' + weaken + '<br>';
+            if (debug) {
+                if (augment && augment > 0) echo += '<u>(Enhance: +' + augment + ')</u><br>';
+                echo += debug_name(src_card) + ' weakens ' + debug_name(target) + ' by ' + weaken + '<br>';
+            }
         }
     };
 
     // Empower, Legion, and Fervor all activate at the beginning of the turn, after commander
-    var empower_skills = function (field_p_assaults) {
+    var empower_skills = function (field_p) {
+        doEmpower(field_p.commander);
+        var field_p_assaults = field_p.assaults;
         for (var unit_key = 0, unit_len = field_p_assaults.length; unit_key < unit_len; unit_key++) {
             var current_unit = field_p_assaults[unit_key];
-            if (current_unit && current_unit.isAlive() && current_unit.isActive()) {
-                var skills = current_unit['skill'];
-                var activations = 1;
-                var dualStrike = skills.flurry;
-                if (dualStrike && current_unit.hasAttack()) {
-                    if (!dualStrike.coundown) {
-                        // Let main attack loop deal with resetting timer
-                        if (debug) echo += debug_name(current_unit) + ' activates dualstrike<br>';
-                        activations++;
-                    }
-                }
-                for (; activations > 0; activations--) {
-                    for (var key in skills) {
-                        var skill = skills[key];
-                        if (skill.id == 'rally') {
-                            rally(current_unit, skill);
-                        }
-                        if (skill.id == 'legion') {
-                            legion(current_unit, skill);
-                        }
-                        if (skill.id == 'fervor') {
-                            fervor(current_unit, skill);
-                        }
-                    }
-                }
+            if (current_unit.isActive()) {
+                doEmpower(current_unit);
             }
         }
     };
+
+    var doEmpower = function (source_card) {
+        var skills = source_card['skill'];
+        for (var key in skills) {
+            var skill = skills[key];
+            var empowerSkill;
+            switch (skill.id) {
+                case 'rally':
+                    empowerSkill = rally;
+                    break;
+                case 'legion':
+                    empowerSkill = legion;
+                    break;
+                case 'fervor':
+                    empowerSkill = fervor;
+                    break;
+            }
+            if (empowerSkill) {
+                var dualStrike = skills.flurry;
+                if (dualStrike && source_card.hasAttack()) {
+                    if (!dualStrike.coundown) {
+                        // Let main attack loop deal with resetting timer
+                        if (debug) echo += debug_name(source_card) + ' activates dualstrike<br>';
+                        empowerSkill(source_card, skill);
+                    }
+                }
+                empowerSkill(source_card, skill);
+            }
+        }
+    }
 
     // Rally
     // - Can target specific faction
@@ -579,7 +593,7 @@ if (simulator_thread) {
         var targets = [];
         for (var key = 0, len = field_p_assaults.length; key < len; key++) {
             var target = field_p_assaults[key];
-            if (target.isAlive() && target.isActive() && target.isUnjammed() && target.isInFaction(faction)) {
+            if (/*target.isAlive() &&*/ target.isActive() && target.isUnjammed() && target.isInFaction(faction)) {
                 targets.push(target);
             }
         }
@@ -597,8 +611,10 @@ if (simulator_thread) {
             if (!target) return;
 
             target['attack_rally'] += rally;
-            if (augment && augment > 0 && debug) echo += '<u>(Enhance: +' + augment + ')</u><br>';
-            if (debug) echo += debug_name(src_card) + ' empowers ' + debug_name(target) + ' by ' + rally + '<br>';
+            if (debug) {
+                if (augment && augment > 0) echo += '<u>(Enhance: +' + augment + ')</u><br>';
+                echo += debug_name(src_card) + ' empowers ' + debug_name(target) + ' by ' + rally + '<br>';
+            }
         }
     };
 
@@ -623,16 +639,22 @@ if (simulator_thread) {
         var src_position = src_card['key'];
         var targets = [];
         if (src_position > 0) {
-            targets.push(get_assault_by_key(field_p_assaults, src_position - 1));   // Check left
+            // Check left
+            var target = get_assault_by_key(field_p_assaults, src_position - 1);
+            if (target) targets.push(target);
         }
-        targets.push(get_assault_by_key(field_p_assaults, src_position + 1));       // Check right
+        // Check right
+        var target = get_assault_by_key(field_p_assaults, src_position + 1);
+        if (target) targets.push(target);
 
         for (var key = 0, len = targets.length; key < len; key++) {
             var target = targets[key];
-            if (target && target.isAlive() && target.isActive() && target.isInFaction(faction)) {
+            if (/*target.isAlive() &&*/ target.isActive() && target.isInFaction(faction)) {
                 target['attack_rally'] += rally;
-                if (augment && augment > 0 && debug) echo += '<u>(Enhance: +' + augment + ')</u><br>';
-                if (debug) echo += debug_name(src_card) + ' activates legion and empowers ' + debug_name(target) + ' by ' + rally + '<br>';
+                if (debug) {
+                    if (augment && augment > 0) echo += '<u>(Enhance: +' + augment + ')</u><br>';
+                    echo += debug_name(src_card) + ' activates legion and empowers ' + debug_name(target) + ' by ' + rally + '<br>';
+                }
             }
         }
     };
@@ -657,21 +679,30 @@ if (simulator_thread) {
         var src_position = src_card['key'];
         var targets = [];
         if (src_position > 0) {
-            targets.push(get_assault_by_key(field_p_assaults, src_position - 1));   // Check left
+            // Check left
+            var target = get_assault_by_key(field_p_assaults, src_position - 1);
+            if (target) targets.push(target);
         }
-        targets.push(get_assault_by_key(field_p_assaults, src_position + 1));       // Check right
+        // Check right
+        var target = get_assault_by_key(field_p_assaults, src_position + 1);
+        if (target) targets.push(target);
+
+        // No Targets
+        if (!targets.length) return;
 
         var fervorAmount = 0;
         for (var key = 0, len = targets.length; key < len; key++) {
             var target = targets[key];
-            if (target && target.isAlive() && target.isInFaction(faction)) {
+            if (/*target.isAlive() &&*/ target.isInFaction(faction)) {
                 fervorAmount += rally;
             }
         }
         if (fervorAmount) {
             src_card['attack_rally'] += fervorAmount;
-            if (augment && augment > 0 && debug) echo += '<u>(Enhance: +' + augment + ')</u><br>';
-            if (debug) echo += debug_name(src_card) + ' activates fervor for ' + fervorAmount + '<br>';
+            if (debug) {
+                if (augment && augment > 0) echo += '<u>(Enhance: +' + augment + ')</u><br>';
+                echo += debug_name(src_card) + ' activates fervor for ' + fervorAmount + '<br>';
+            }
         }
     };
 
@@ -700,11 +731,6 @@ if (simulator_thread) {
                     break;
                 case 'protect':
                     protect(src_card, skill);
-                    break;
-                case 'rally':
-                    if (!src_card.isAssault()) {
-                        rally(src_card, skill);
-                    }
                     break;
                 case 'strike':
                     strike(src_card, skill);
@@ -749,8 +775,6 @@ if (simulator_thread) {
             var towerCard = get_card_by_id("601", tower_level);
             play_card(towerCard, 'cpu', true);
         }
-
-        just_died = [];
 
         return performTurns(0);
     };
@@ -886,26 +910,19 @@ if (simulator_thread) {
                 // Prepare 3-card hand
                 var hand = deck_p_deck.slice(0, 3);
                 var cardsInHand = [];
-                var cardsToDraw = [];
+                var drawableHand = [];
                 for (var handIdx = 0, hand_len = hand.length; handIdx < hand_len; handIdx++)
                 {
                     var card = get_card_by_id(hand[handIdx]);
                     var text = handIdx + ": " + card['name'];
                     if (card.maxLevel > 1) text += '{' + card.level + '/' + card.maxLevel + '}';
                     cardsInHand.push(text);
-                    cardsToDraw.push(card);
+                    drawableHand.push(card);
                 }
                 var cardSpace = document.getElementById("cardSpace");
                 if (redraw) {
                     outp(echo);
-                    cardSpace.innerHTML = '';
-                    cardSpace.appendChild(draw_cards(field['cpu']));
-                    cardSpace.appendChild(document.createElement('br'));
-                    cardSpace.appendChild(document.createElement('br'));
-                    cardSpace.appendChild(draw_cards(field['player']));
-                    cardSpace.appendChild(document.createElement('br'));
-                    cardSpace.appendChild(document.createElement('br'));
-                    cardSpace.appendChild(draw_hand(cardsToDraw, performTurns, turn));
+                    draw_cards(drawableHand, performTurns, turn);
                     scroll_to_end();
                 }
                 if (choice === undefined) return false;
@@ -1020,7 +1037,7 @@ if (simulator_thread) {
 
         // Units
         // - empower skills
-        empower_skills(field_p_assaults);
+        empower_skills(field_p);
 
         // Assaults
         for (var key = 0, len = field_p_assaults.length; key < len; key++) {
@@ -1104,28 +1121,32 @@ if (simulator_thread) {
     };
 
     var processDOTs = function (field_p_assaults) {
-
         // Poison/Scorch damage
         for (var key = 0, len = field_p_assaults.length; key < len; key++) {
             var current_assault = field_p_assaults[key];
 
-            if (current_assault['poisoned']) {
-                var amount = current_assault['poisoned'];
+            var amount = current_assault['poisoned'];
+            if (amount) {
                 do_damage(current_assault, amount);
-                if (debug) echo += debug_name(current_assault) + ' takes ' + amount + ' poison damage';
-                if (debug && current_assault['health_left'] < 1) echo += ' and it dies<br>';
-                else if (debug) echo += '<br>';
+                if (debug) {
+                    echo += debug_name(current_assault) + ' takes ' + amount + ' poison damage';
+                    echo += (!current_assault.isAlive() ? ' and it dies' : '') + '<br>';
+                }
             }
 
-            if (current_assault['scorched']) {
-                var scorch = current_assault['scorched'];
-                var amount = scorch['amount'];
+            var scorch = current_assault['scorched'];
+            if (scorch) {
+                amount = scorch['amount'];
                 do_damage(current_assault, amount);
-                scorch['timer']--;
-                if (debug) echo += debug_name(current_assault) + ' takes ' + amount + ' scorch damage';
-                if (debug && current_assault['health_left'] < 1) echo += ' and it dies<br>';
-                else if (debug) echo += '<br>';
-                if (!scorch['timer']) current_assault['scorched'] = 0;
+                if (debug) {
+                    echo += debug_name(current_assault) + ' takes ' + amount + ' scorch damage';
+                    echo += (!current_assault.isAlive() ? ' and it dies' : '') + '<br>';
+                }
+                if (scorch['timer'] > 1) {
+                    scorch['timer']--;
+                } else {
+                    current_assault['scorched'] = 0;
+                }
             }
         }
     };
@@ -1210,8 +1231,7 @@ if (simulator_thread) {
 
         if (debug) {
             echo += debug_name(current_assault) + ' attacks ' + debug_name(target) + ' for ' + damage + ' damage';
-            if (target['health_left'] < 1) echo += ' and it dies<br>';
-            else echo += '<br>';
+            echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
         }
 
         // WINNING CONDITION
@@ -1246,8 +1266,7 @@ if (simulator_thread) {
 
             if (debug) {
                 echo += debug_name(current_assault) + ' takes ' + counter_damage + ' counter damage';
-                if (current_assault['health_left'] < 1) echo += ' and it dies<br>';
-                else echo += '<br>';
+                echo += (!current_assault.isAlive() ? ' and it dies' : '') + '<br>';
             }
         }
 
@@ -1307,7 +1326,6 @@ if (simulator_thread) {
     var number_of_summons = [];
     var field = [];
     var simulation_turns = 0;
-    var just_died = [];
     var time_start_batch = 0;
     var card_cache = {};
 }

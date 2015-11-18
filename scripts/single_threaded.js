@@ -130,6 +130,7 @@ var debug_end = function () {
     } else {
         outp(echo + '<br><h1>LOSS</h1><br>' + gettable());
     }
+    draw_cards([]);
 
     // Show interface
     document.getElementById('ui').style.display = 'block';

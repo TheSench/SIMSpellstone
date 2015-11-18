@@ -28,7 +28,7 @@ u {
 	color: #dddddd;
 	font-weight: normal;
 }
-div {
+form div {
 	float: left;
 	width: 250px;
 	margin-right: 10px;
