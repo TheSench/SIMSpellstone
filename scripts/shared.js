@@ -1102,14 +1102,16 @@ function load_deck_quest(id) {
 // Output card array
 function get_card_by_id(id, unit_level) {
 
-    if (typeof unit_level === 'undefined') { unit_level = 0; }
-    var levelStart = 0;
-    if (isNaN(id)) {
-        levelStart = id.indexOf('(');
-        if (levelStart != -1 && id.indexOf(')') != -1) {
-            unit_level = id.substr(levelStart);
-            unit_level = unit_level.substr(0, unit_level.indexOf(')') + 1);
-            id = id.substr(0, levelStart)
+    if (typeof unit_level === 'undefined') {
+        unit_level = 0;
+        var levelStart = 0;
+        if (isNaN(id)) {
+            levelStart = id.indexOf('(');
+            if (levelStart != -1 && id.indexOf(')') != -1) {
+                unit_level = id.substr(levelStart);
+                unit_level = unit_level.substr(0, unit_level.indexOf(')') + 1);
+                id = id.substr(0, levelStart)
+            }
         }
     }
 

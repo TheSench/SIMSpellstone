@@ -1,0 +1,209 @@
+﻿.card {
+    background: #FFF;
+    border: 1px solid #AAA;
+    border-bottom: 3px solid #BBB;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    font-size: 10px;
+    position: relative;
+}
+
+.subfaction {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin: 1px -5px;
+}
+
+.wyld,
+.chaos,
+.aether {
+    position: absolute;
+    min-height: 5px;
+    bottom: 0px;
+    width: 100%;
+    z-index: 0;
+    border: solid;
+    border-width: 0.1em;
+    border-color: grey;
+}
+
+.wyld {
+    background-color: forestgreen;
+}
+
+.chaos {
+    background-color: red;
+}
+
+.aether {
+    background-color: #0099FF;
+}
+
+.card-name {
+    position: absolute;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-bottom: solid;
+    border-width: 1px;
+    width: 100%;
+}
+
+    .card-name:hover {
+        overflow: inherit;
+        text-overflow: inherit;
+        white-space: inherit;
+        z-index: 100;
+        background-color: #FFF;
+    }
+
+.card-attack,
+.card-health,
+.card-delay,
+.hand-delay {
+    position: absolute;
+    font-weight: bold;
+    padding: 1px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    min-width: 10px;
+    min-height: 10px;
+    text-align: center;
+    color: white;
+    border-color: white;
+    box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    z-index: 99;
+}
+
+.card-attack {
+    left: 0px;
+    bottom: 0px;
+    background-color: darkviolet;
+}
+
+.card-health {
+    right: 0px;
+    bottom: 0px;
+    background-color: deeppink;
+}
+
+.hand-delay {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #0099FF;
+}
+
+.card-delay {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    margin: -5px 0 0 -5px;
+    background-color: #0099FF;
+}
+
+.increased {
+    color: lightgreen;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.decreased {
+    color: red;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.card-skills-short {
+    position: absolute;
+    bottom: 13px;
+    width: 100%;
+    text-align: center;
+}
+
+.card-skills {
+    visibility: hidden;
+}
+
+.card-skills img {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+    .card-skills-short:hover ~ .card-skills,
+    .card-skills:hover {
+        position: absolute;
+        /*height: 75%;*/
+        width: 90%;
+    bottom: 13px;
+        border: solid;
+        border-color: grey;
+        background-color: #FFF;
+        border-radius: 5px;
+        z-index: 99;
+        visibility: visible;
+    }
+
+.card-statuses {
+    visibility: hidden;
+}
+
+.hidden {
+    position: absolute;
+    font-weight: bold;
+    padding: 1px;
+    top: 13px;
+    width: 100%;
+    text-align: center;
+}
+
+    .hidden:hover ~ .card-statuses,
+    .card-statuses:hover {
+        position: absolute;
+        top: 13px;
+        width: 90%;
+        border: solid;
+        background-color: #FFF;
+        border-radius: 5px;
+        z-index: 100;
+        visibility: visible;
+    }
+
+.card-buffs,
+.card-debuffs {
+    border: solid;
+    border-radius: 5px;
+}
+
+.card-buffs {
+    border-color: green;
+}
+
+.card-debuffs {
+    border-color: red;
+}
+
+img {
+    width: 12px;
+    height: 12px;
+}
+
+.float-left {
+    width: 100%;
+}
+
+    /*
+    .float-left div {
+        float: initial;
+        width: initial;
+        margin-right: initial;
+        text-align: initial;
+    }
+    */
+    .float-left .card {
+        float: left;
+        width: 60px;
+        height: 80px;
+    }
