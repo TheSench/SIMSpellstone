@@ -12055,6 +12055,471 @@ var CARDS = {
       },
     }
   },
+  "5025": {
+    "id": "5025",
+    "name": "Steelskin Dragon",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "9",
+    "attack": 6,
+    "health": 11,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "counter",
+        "x": 1,
+      },
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "9",
+        "z": 9,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 13,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "counter",
+            "x": 1,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "9",
+            "z": 9,
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "counter",
+            "x": 1,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "9",
+            "z": 9,
+          },
+        ],
+      },
+      "5": {
+        "attack": 7,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "counter",
+            "x": 2,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "9",
+            "z": 9,
+          },
+        ],
+      },
+    }
+  },
+  "15025": {
+    "id": "15025",
+    "name": "Plateskin Dragon",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "9",
+    "attack": 7,
+    "health": 14,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "counter",
+        "x": 2,
+      },
+      {
+        "id": "rally",
+        "x": 3,
+        "y": "9",
+        "z": 9,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 15,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "counter",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "9",
+            "z": 9,
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "counter",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "9",
+            "z": 9,
+          },
+        ],
+      },
+      "5": {
+        "attack": 8,
+        "skill": [],
+      },
+    }
+  },
+  "25025": {
+    "id": "25025",
+    "name": "Silverskin Dragon",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "9",
+    "attack": 8,
+    "health": 16,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 3,
+      },
+      {
+        "id": "counter",
+        "x": 3,
+      },
+      {
+        "id": "rally",
+        "x": 3,
+        "y": "9",
+        "z": 9,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 17,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "counter",
+            "x": 4,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "9",
+            "z": 9,
+          },
+        ],
+      },
+      "4": {
+        "health": 18,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "counter",
+            "x": 4,
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+          },
+        ],
+      },
+    }
+  },
+  "5026": {
+    "id": "5026",
+    "name": "Frostfire Wyrm",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "9",
+    "attack": 5,
+    "health": 7,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "weaken",
+        "x": 1,
+      },
+      {
+        "id": "burn",
+        "x": 1,
+      },
+      {
+        "id": "jam",
+        "c": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 9,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "weaken",
+            "x": 2,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+          {
+            "id": "jam",
+            "c": 6,
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "weaken",
+            "x": 2,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+      "6": {
+        "attack": 6,
+        "skill": [],
+      },
+    }
+  },
+  "15026": {
+    "id": "15026",
+    "name": "Frostflame Wyrm",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "9",
+    "attack": 6,
+    "health": 10,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "weaken",
+        "x": 3,
+      },
+      {
+        "id": "burn",
+        "x": 1,
+      },
+      {
+        "id": "jam",
+        "c": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 11,
+        "skill": [],
+      },
+      "3": {
+        "health": 12,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "weaken",
+            "x": 4,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+      "5": {
+        "health": 14,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "weaken",
+            "x": 4,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+    }
+  },
+  "25026": {
+    "id": "25026",
+    "name": "Frostscour Wyrm",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "9",
+    "attack": 6,
+    "health": 15,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "weaken",
+        "x": 4,
+      },
+      {
+        "id": "burn",
+        "x": 2,
+      },
+      {
+        "id": "jam",
+        "c": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 16,
+        "skill": [],
+      },
+      "3": {
+        "health": 17,
+        "skill": [],
+      },
+      "4": {
+        "attack": 7,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "weaken",
+            "x": 4,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "weaken",
+            "x": 4,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+        ],
+      },
+    }
+  },
   "6000": {
     "id": "6000",
     "name": "Furnace Mech",
@@ -16881,6 +17346,240 @@ var CARDS = {
       "4": {
         "attack": 3,
         "skill": [],
+      },
+    }
+  },
+  "6023": {
+    "id": "6023",
+    "name": "Broodmother",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "9",
+    "attack": 4,
+    "health": 12,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 1,
+      },
+      {
+        "id": "strike",
+        "x": 3,
+      },
+      {
+        "id": "legion",
+        "x": 1,
+        "y": "9",
+        "z": 9,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+          {
+            "id": "legion",
+            "x": 1,
+            "y": "9",
+            "z": 9,
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 4,
+          },
+          {
+            "id": "legion",
+            "x": 1,
+            "y": "9",
+            "z": 9,
+          },
+        ],
+      },
+      "5": {
+        "attack": 5,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 4,
+          },
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "9",
+            "z": 9,
+          },
+        ],
+      },
+    }
+  },
+  "16023": {
+    "id": "16023",
+    "name": "Fierce Broodmother",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "9",
+    "attack": 5,
+    "health": 16,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 2,
+      },
+      {
+        "id": "strike",
+        "x": 4,
+      },
+      {
+        "id": "legion",
+        "x": 2,
+        "y": "9",
+        "z": 9,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 17,
+        "skill": [],
+      },
+      "3": {
+        "health": 18,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 5,
+          },
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "9",
+            "z": 9,
+          },
+        ],
+      },
+      "5": {
+        "health": 19,
+        "skill": [],
+      },
+      "6": {
+        "attack": 6,
+        "skill": [],
+      },
+    }
+  },
+  "26023": {
+    "id": "26023",
+    "name": "Vicious Broodmother",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "9",
+    "attack": 6,
+    "health": 20,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 2,
+      },
+      {
+        "id": "strike",
+        "x": 5,
+      },
+      {
+        "id": "legion",
+        "x": 2,
+        "y": "9",
+        "z": 9,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 21,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 6,
+          },
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "9",
+            "z": 9,
+          },
+        ],
+      },
+      "4": {
+        "health": 22,
+        "skill": [],
+      },
+      "5": {
+        "attack": 7,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 6,
+          },
+          {
+            "id": "legion",
+            "x": 3,
+            "y": "9",
+            "z": 9,
+          },
+        ],
       },
     }
   },
@@ -22211,6 +22910,502 @@ var CARDS = {
             "x": 1,
           },
         ],
+      },
+    }
+  },
+  "7023": {
+    "id": "7023",
+    "name": "Zolmosh the Fist",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "attack": 4,
+    "health": 13,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "3",
+        "z": 3,
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "y": "3",
+        "z": 3,
+      },
+      {
+        "id": "poison",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "poison",
+            "x": 1,
+          },
+        ],
+      },
+      "4": {
+        "health": 16,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "poison",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "poison",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "17023": {
+    "id": "17023",
+    "name": "Zolmosh the Mace",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "attack": 4,
+    "health": 17,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 3,
+        "y": "3",
+        "z": 3,
+      },
+      {
+        "id": "protect",
+        "x": 2,
+        "y": "3",
+        "z": 3,
+      },
+      {
+        "id": "poison",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 18,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "poison",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "health": 19,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "poison",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "attack": 5,
+        "skill": [],
+      },
+    }
+  },
+  "27023": {
+    "id": "27023",
+    "name": "Zolmosh the Sledge",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "attack": 5,
+    "health": 21,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 3,
+        "y": "3",
+        "z": 3,
+      },
+      {
+        "id": "protect",
+        "x": 3,
+        "y": "3",
+        "z": 3,
+      },
+      {
+        "id": "poison",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 23,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "poison",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "poison",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "attack": 6,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 4,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "poison",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "7026": {
+    "id": "7026",
+    "name": "Frostjaw",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "attack": 7,
+    "health": 14,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "jam",
+        "c": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 16,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+      "4": {
+        "health": 17,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+        ],
+      },
+      "6": {
+        "attack": 8,
+        "health": 18,
+        "skill": [],
+      },
+    }
+  },
+  "17026": {
+    "id": "17026",
+    "name": "Frostjaw Giant",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "attack": 8,
+    "health": 19,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "jam",
+        "c": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 20,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+        ],
+      },
+      "4": {
+        "health": 22,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+        ],
+      },
+      "6": {
+        "attack": 9,
+        "skill": [],
+      },
+    }
+  },
+  "27026": {
+    "id": "27026",
+    "name": "Hulking Frostjaw",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "attack": 9,
+    "health": 23,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "armored",
+        "x": 3,
+      },
+      {
+        "id": "jam",
+        "c": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 24,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 26,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+        ],
+      },
+      "6": {
+        "attack": 10,
+        "skill": [],
       },
     }
   },
@@ -33257,7 +34452,7 @@ var CARDS = {
             "s": "fervor",
           },
           {
-            "id": "protect",
+            "id": "strike",
             "x": 1,
           },
           {
@@ -33275,7 +34470,7 @@ var CARDS = {
             "s": "fervor",
           },
           {
-            "id": "protect",
+            "id": "strike",
             "x": 1,
           },
           {
@@ -33297,7 +34492,7 @@ var CARDS = {
             "s": "fervor",
           },
           {
-            "id": "protect",
+            "id": "strike",
             "x": 2,
           },
           {
@@ -33327,7 +34522,7 @@ var CARDS = {
     "rarity": "3",
     "set": "9999",
     "card_type": "2",
-    "type": "3",
+    "type": "0",
     "attack": 0,
     "health": 1,
     "cost": 0,
@@ -33366,7 +34561,7 @@ var CARDS = {
     "rarity": "2",
     "set": "9999",
     "card_type": "2",
-    "type": "3",
+    "type": "0",
     "attack": 0,
     "health": 1,
     "cost": 0,
@@ -33379,7 +34574,7 @@ var CARDS = {
     "rarity": "3",
     "set": "9999",
     "card_type": "2",
-    "type": "3",
+    "type": "0",
     "attack": 0,
     "health": 1,
     "cost": 0,
@@ -33392,7 +34587,7 @@ var CARDS = {
     "rarity": "4",
     "set": "9999",
     "card_type": "2",
-    "type": "3",
+    "type": "0",
     "attack": 0,
     "health": 1,
     "cost": 0,
@@ -35139,7 +36334,7 @@ var quests = {
         "skill": [
           {
             "id": "heal",
-            "x": 2,
+            "mult": 0.2,
             "y": "9",
             "z": 9,
             "all": "1",

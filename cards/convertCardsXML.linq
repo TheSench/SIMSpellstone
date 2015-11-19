@@ -129,7 +129,8 @@ battleground[] battlegrounds = new battleground[] {
 		Name = "Age of the Dragons",
 		Effect = new skill() {
 			id = "heal",
-			x = "2",
+			//x = "2",
+			mult = "0.2",
             y = ((int)FactionIDs.Dragon).ToString(),
 			all = "1",
 		},
@@ -396,6 +397,7 @@ public partial class skill
 	private string cField;
 	private string sField;
 	private string allField;
+	private string multField;
 
 	/// <remarks/>
 	[System.Xml.Serialization.XmlAttributeAttribute()]
@@ -411,6 +413,14 @@ public partial class skill
 	{
 		get { return this.xField; }
 		set { this.xField = value; }
+	}
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string mult
+	{
+		get { return this.multField; }
+		set { this.multField = value; }
 	}
 
 	/// <remarks/>
@@ -497,9 +507,10 @@ private static void AppendSkill(StringBuilder sb, skill skill, string tabs)
 	var propTabs = tabs + "  ";
 	//sb.Append(tabs).Append("\"").Append(skill.id).Append("\": {\r\n");
 	sb.Append(tabs).Append("{\r\n");
-	
+
 	AppendEntryString(sb, "id", skill.id, propTabs);
 	AppendEntry(sb, "x", skill.x, propTabs);
+	AppendEntry(sb, "mult", skill.mult, propTabs);
 	AppendEntryString(sb, "y", skill.y, propTabs);
 	AppendEntry(sb, "z", skill.y, propTabs);
 	AppendEntry(sb, "c", skill.c, propTabs);
