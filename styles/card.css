@@ -70,13 +70,16 @@
     border: solid;
     border-width: 1px;
     border-radius: 10px;
-    min-width: 10px;
-    min-height: 10px;
+    min-width: 12px;
+    min-height: 12px;
     text-align: center;
+    padding: 0px;
+    margin: 0;
     color: white;
     border-color: white;
     box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     z-index: 99;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .card-attack {
@@ -101,19 +104,17 @@
 .card-delay {
     position: absolute;
     left: 50%;
-    top: 40%;
-    margin: -5px 0 0 -5px;
+    top: 50%;
+    margin: -6px 0 0 -6px;
     background-color: #0099FF;
 }
 
 .increased {
     color: lightgreen;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .decreased {
     color: red;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .card-skills-short {
@@ -192,6 +193,7 @@ img {
 
 .float-left {
     width: 100%;
+    display: block;
 }
 
     /*
