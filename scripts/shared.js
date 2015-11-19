@@ -353,6 +353,7 @@ function copy_skill(original_skill) {
 	var new_skill = {};
 	new_skill['id'] = original_skill['id'];
 	new_skill['x'] = original_skill['x'];
+	new_skill['mult'] = original_skill['mult'];
 	new_skill['all'] = original_skill['all'];
 	new_skill['y'] = original_skill['y'];
 	new_skill['z'] = original_skill['z'];

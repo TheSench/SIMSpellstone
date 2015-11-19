@@ -50,6 +50,7 @@
     border-bottom: solid;
     border-width: 1px;
     width: 100%;
+        background-color: #FFF;
 }
 
     .card-name:hover {
@@ -57,7 +58,6 @@
         text-overflow: inherit;
         white-space: inherit;
         z-index: 100;
-        background-color: #FFF;
     }
 
 .card-attack,
@@ -128,17 +128,17 @@
     visibility: hidden;
 }
 
-.card-skills img {
-    padding-left: 2px;
-    padding-right: 2px;
-}
+    .card-skills img {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
 
     .card-skills-short:hover ~ .card-skills,
     .card-skills:hover {
         position: absolute;
-        /*height: 75%;*/
         width: 90%;
-    bottom: 13px;
+        height: auto;
+        bottom: 13px;
         border: solid;
         border-color: grey;
         background-color: #FFF;
@@ -191,21 +191,63 @@ img {
     height: 12px;
 }
 
+.hand-left {
+    -ms-transform: rotate(-7deg) translate(0px, 5px); /* IE 9 */
+    -webkit-transform: rotate(-7deg) translate(0px, 5px); /* Chrome, Safari, Opera */
+    transform: rotate(-7deg) translate(0px, 5px);
+}
+
+.hand-right {
+    -ms-transform: rotate(7deg) translate(0px, 5px); /* IE 9 */
+    -webkit-transform: rotate(7deg) translate(0px, 5px); /* Chrome, Safari, Opera */
+    transform: rotate(7deg) translate(0px, 5px);
+}
+
+.hand .card-delay {
+    left: auto;
+    right: 0;
+    top: 0;
+    margin: initial;
+}
+
+.hand .card {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
 .float-left {
-    width: 100%;
     display: block;
 }
 
-    /*
-    .float-left div {
-        float: initial;
-        width: initial;
-        margin-right: initial;
-        text-align: initial;
-    }
-    */
-    .float-left .card {
-        float: left;
-        width: 60px;
-        height: 80px;
-    }
+.hand {
+    position: relative;
+    left: 80px;
+}
+
+.float-left:not(.hand) {
+    width: 100%;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    padding: 5px;
+    height: 80px;
+    margin-bottom: 5px;
+}
+
+.float-left .card {
+    float: left;
+    width: 60px;
+    height: 80px;
+    margin-right: 5px;
+}
+
+.float-left .spacer {
+    float: left;
+    height: 100%;
+    border: solid;
+    border-width: 1px;
+    margin-right: 5px;
+}
+
+.frozen {
+    background-color: lightblue;
+}

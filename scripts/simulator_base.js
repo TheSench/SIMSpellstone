@@ -269,6 +269,10 @@ if (simulator_thread) {
             var target = targets[key];
 
             var heal_amt = heal;
+            if (!heal_amt) {
+                var mult = skill.mult;
+                heal_amt = Math.ceil(target.health * mult);
+            }
 
             if (heal_amt > target['health'] - target['health_left']) heal_amt = target['health'] - target['health_left'];
             target['health_left'] += heal_amt;
