@@ -8,6 +8,8 @@ var startsim = function (autostart) {
 		return false;
 	}
 
+	clearCardSpace();
+
 	total_turns = 0;
 	time_start = new Date();
 	time_stop = 0;
@@ -115,10 +117,7 @@ var debug_end = function () {
     if (simulating) {
         return;
     }
-
-    var cardSpace = document.getElementById("cardSpace");
-    cardSpace.innerHTML = '';
-
+    
     result = processSimResult();
 
     time_stop = new Date();

@@ -1,5 +1,11 @@
 ﻿
+function clearCardSpace() {
+    var cardSpace = document.getElementById("cardSpace");
+    cardSpace.innerHTML = '';
+}
+
 function draw_cards(drawableHand, performTurns, turn) {
+    var cardSpace = document.getElementById("cardSpace");
     cardSpace.innerHTML = '';
     cardSpace.appendChild(draw_field(field['cpu']));
     cardSpace.appendChild(document.createElement('br'));

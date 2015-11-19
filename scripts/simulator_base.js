@@ -165,7 +165,6 @@ if (simulator_thread) {
         }
     };
 
-
     var getAugment = function (card, s) {
         var augments = card['augmented'];
         if (augments) return augments[s];
@@ -919,7 +918,6 @@ if (simulator_thread) {
                     cardsInHand.push(text);
                     drawableHand.push(card);
                 }
-                var cardSpace = document.getElementById("cardSpace");
                 if (redraw) {
                     outp(echo);
                     draw_cards(drawableHand, performTurns, turn);
@@ -927,7 +925,6 @@ if (simulator_thread) {
                 }
                 if (choice === undefined) return false;
                 card_picked = choice;
-                cardSpace.innerHTML = '';
                 if (!card_picked) card_picked = 0;
                 play_card(get_card_by_id(deck_p_deck[card_picked]), p);
             } else if (deck_p_ordered) {
