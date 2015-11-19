@@ -94,8 +94,10 @@ function create_card_html(card, inHand) {
     }
     htmlCard.appendChild(skillsShort);
     htmlCard.appendChild(divSkills);
-    var faction = factions.names[card.type].toLowerCase();
-    htmlCard.appendChild(createDiv(faction));
+    if (card.type > 0) {
+        var faction = factions.names[card.type].toLowerCase();
+        htmlCard.appendChild(createDiv(faction));
+    }
     if (card.sub_type) {
         var htmlSubfaction = getFactionIcon(card.sub_type);
         htmlSubfaction.className = "subfaction";
