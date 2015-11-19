@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title id="title_tag">CardRetriever - Retrieve your deck from your browser!</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="styles/card.css">
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <!-- This script contains the cached data for cards, missions, quests, raids,
+        and battlegrounds -->
+    <script id="cards_script" type="text/javascript" src="cards/cache.js"></script>
+    <script id="shared_functions" type="text/javascript" src="scripts/shared.js"></script>
+    <script id="gui_script" type="text/javascript" src="scripts/cards_gui.js"></script>
+    <script id="cards_script" type="text/javascript" src="scripts/gui_script.js"></script>
+    <script id="gui_script" type="text/javascript" src="scripts/RetrieveDeck.js"></script>
+
+</head>
+<body>
+    <h1 id="version_label">Deck Retriever</h1>
+    <br>
+    <span id="ui">
+        <form>
+            <div><b>User ID:</b></div><input id="user_id" type="text" value="" size="50"><br>
+        </form>
+        <form id="form-post">
+            <div><b>Kong ID:</b></div><input id="kong_id" name="kong_id" type="text" value="" size="50"><br>
+            <div><b>Password:</b></div><input id="password" name="password" type="text" value="" size="50"><br>
+            <div><b>Kong Token:</b></div><input id="kong_token" name="kong_token" type="text" value="" size="50"><br>
+            <div><b>Target User ID:</b></div><input id="target_user_id" name="target_user_id" type="text" value="" size="50"><br>
+            <br>
+            <div>&nbsp;</div><input id="btn_simulate" type="button" value="Retrieve" onclick="return retrieveDeck();" style="text-align: center; font-weight: bold;">
+        </form>
+    </span>
+    <br>
+    <span id="cardSpace"></span>
+</body>
+</html>
