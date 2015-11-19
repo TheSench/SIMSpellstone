@@ -4,6 +4,20 @@ function clearCardSpace() {
     cardSpace.innerHTML = '';
 }
 
+function draw_deck(deck) {
+    var cardSpace = document.getElementById("cardSpace");
+    cardSpace.innerHTML = '';
+    var cards = createDiv("float-left");
+    var commander = get_card_by_id(deck.commander);
+    cards.appendChild(create_card_html(commander, false));
+    cards.appendChild(createDiv("spacer"));
+    for (var i = 0, len = deck.length; i < len; i++) {
+        var unit = get_card_by_id(deck[i]);
+        cards.appendChild(create_card_html(unit, false));
+    }
+    cardSpace.appendChild(cards);
+}
+
 function draw_cards(drawableHand, performTurns, turn) {
     if (!drawableHand) drawableHand = [];
     var cardSpace = document.getElementById("cardSpace");

@@ -645,6 +645,7 @@ var total_turns = 0;
 var cache_player_deck = false;
 var cache_cpu_deck = false;
 var choice = undefined;
+var card_cache = {};
 
 // Global arrays
 var factions = {
