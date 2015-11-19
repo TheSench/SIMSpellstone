@@ -5,22 +5,26 @@ function clearCardSpace() {
 }
 
 function draw_cards(drawableHand, performTurns, turn) {
+    if (!drawableHand) drawableHand = [];
     var cardSpace = document.getElementById("cardSpace");
     cardSpace.innerHTML = '';
+    if (turn) {
+        var htmlTurnCounter = document.createElement("h1");
+        htmlTurnCounter.innerHTML = "Turn: " + turn
+        cardSpace.appendChild(htmlTurnCounter);
+    }
     cardSpace.appendChild(draw_field(field['cpu']));
-    cardSpace.appendChild(document.createElement('br'));
-    cardSpace.appendChild(document.createElement('br'));
     cardSpace.appendChild(draw_field(field['player']));
-    cardSpace.appendChild(document.createElement('br'));
-    cardSpace.appendChild(document.createElement('br'));
     cardSpace.appendChild(draw_hand(drawableHand, performTurns, turn));
+    cardSpace.appendChild(document.createElement('br'));
+    cardSpace.appendChild(document.createElement('br'));
 }
 
 function draw_field(field) {
-    var cards = document.createElement("div");
-    cards.className = "float-left";
+    var cards = createDiv("float-left");
     var commander = field.commander;
     cards.appendChild(create_card_html(commander, false));
+    cards.appendChild(createDiv("spacer"));
     var units = field.assaults;
     if (units) for (var i = 0, len = units.length; i < len; i++) {
         var unit = units[i];
@@ -30,12 +34,13 @@ function draw_field(field) {
 }
 
 function draw_hand(hand, callback, state) {
-    var cards = document.createElement("div");
-    cards.className = "float-left";
+    var cards = createDiv("float-left hand");
     var units = field.assaults;
     for (var i = 0, len = hand.length; i < len; i++) {
         var unit = hand[i];
-        var htmlCard = create_card_html(unit, true);
+        var htmlCard = create_card_html(unit);
+        if (i === 0) htmlCard.classList.add("hand-left");
+        else if (i === 2) htmlCard.classList.add("hand-right");
         var cardidx = i;
         htmlCard.addEventListener("click", (function (inner) {
             return function () {
@@ -50,24 +55,20 @@ function draw_hand(hand, callback, state) {
 }
 
 function create_card_html(card, inHand) {
-    var html = document.createElement("div");
-    html.className = "card";
+    var htmlCard = createDiv("card");
     var divName = createDiv("card-name", card.name);
-    //divName.classList.add(card.factionName);
-    html.appendChild(divName);
+    if (!card.isUnjammed()) htmlCard.classList.add("frozen");
+    htmlCard.appendChild(divName);
     if (!card.isCommander()) {
         var htmlAttack = createDiv("card-attack", card.adjustedAttack().toString());
         if (card.adjustedAttack() > card.attack) htmlAttack.classList.add("increased");
         else if (card.adjustedAttack() < card.attack) htmlAttack.classList.add("decreased");
-        html.appendChild(htmlAttack);
-        if (card.timer) {
-            if (inHand) html.appendChild(createDiv("hand-delay", card.timer));
-            else html.appendChild(createDiv("card-delay", card.timer));
-        }
+        htmlCard.appendChild(htmlAttack);
+        if (card.timer) htmlCard.appendChild(createDiv("card-delay", card.timer));
     }
     var htmlHealth = createDiv("card-health", card.health_left.toString());
     if (card.health_left < card.health) htmlHealth.classList.add("decreased");
-    html.appendChild(htmlHealth);
+    htmlCard.appendChild(htmlHealth);
     var divSkills = createDiv("card-skills");
     var skillsShort = createDiv("card-skills-short");
     var skills = card.skill;
@@ -77,27 +78,16 @@ function create_card_html(card, inHand) {
         divSkills.appendChild(document.createElement('br'));
         skillsShort.appendChild(getSkillIcon(skill.id));
     }
-    html.appendChild(skillsShort);
-    html.appendChild(divSkills);
-    if (!inHand) {
-        var statuses = getStatuses(card);
-        if (statuses.length > 0) {
-            html.appendChild(createDiv("hidden", "..."));
-            var divStatuses = createDiv("card-statuses")
-            for (var i = 0, len = statuses.length; i < len; i++) {
-                divStatuses.appendChild(statuses[i]);
-            }
-            html.appendChild(divStatuses);
-        }
-    }
+    htmlCard.appendChild(skillsShort);
+    htmlCard.appendChild(divSkills);
     var faction = factions.names[card.type].toLowerCase();
-    html.appendChild(createDiv(faction));
+    htmlCard.appendChild(createDiv(faction));
     if (card.sub_type) {
         var htmlSubfaction = getFactionIcon(card.sub_type);
         htmlSubfaction.className = "subfaction";
-        html.appendChild(htmlSubfaction);
+        htmlCard.appendChild(htmlSubfaction);
     }
-    return html;
+    return htmlCard;
 }
 
 function getSkillHtml(skill) {

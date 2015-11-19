@@ -103,7 +103,7 @@ var stopsim = function () {
 	if (current_timeout) clearTimeout(current_timeout);
 
 	outp(echo + '<strong>Simulations interrupted.</strong><br>'+elapse+' seconds ('+simpersec+' simulations per second)<br>'+gettable());
-
+	draw_cards();
 	// Show interface
 	document.getElementById('ui').style.display = 'block';
 
@@ -129,7 +129,7 @@ var debug_end = function () {
     } else {
         outp(echo + '<br><h1>LOSS</h1><br>' + gettable());
     }
-    draw_cards([]);
+    draw_cards();
 
     // Show interface
     document.getElementById('ui').style.display = 'block';
