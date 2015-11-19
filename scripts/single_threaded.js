@@ -16,8 +16,8 @@ var startsim = function (autostart) {
 	sims_left = document.getElementById('sims').value;
 	if (!sims_left) sims_left = true;
 	user_controlled = document.getElementById('user_controlled').checked;
-	if (user_controlled) debug = true;
-	else debug = document.getElementById('debug').checked;
+	/*if (user_controlled) debug = true;
+	else*/ debug = document.getElementById('debug').checked;
 	mass_debug = document.getElementById('mass_debug').checked;
 	loss_debug = document.getElementById('loss_debug').checked;
 	if (loss_debug && mass_debug) mass_debug = false;
@@ -145,6 +145,9 @@ var debug_end = function () {
 
 var run_sims = function () {
     if (debug && !mass_debug && !loss_debug) {
+        run_sim();
+        debug_end();
+    } else if (user_controlled) {
         run_sim();
         debug_end();
 	} else if (sims_left > 0) {
@@ -310,12 +313,10 @@ function processSimResult() {
                 echo = 'Draw found. Displaying debug output... <br><br>' + echo;
                 echo += '<br><h1>DRAW</h1><br>';
                 sims_left = false;
-                return result;
             } else if (result) {
                 if (!sims_left) {
                     echo = 'No losses found. No debug output to display.<br><br>';
                     sims_left = false;
-                    return result;
                 } else {
                     echo = '';
                 }
@@ -323,12 +324,10 @@ function processSimResult() {
                 echo = 'Loss found. Displaying debug output... <br><br>' + echo;
                 echo += '<br><h1>LOSS</h1><br>';
                 sims_left = false;
-                return result;
             }
-        } else if (!mass_debug) {
-            return result;
         }
     }
+    return result;
 }
 
 function processSimResult2() {
