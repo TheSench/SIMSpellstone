@@ -166,7 +166,7 @@ if (simulator_thread) {
     };
 
 
-    function getAugment(card, s) {
+    var getAugment = function (card, s) {
         var augments = card['augmented'];
         if (augments) return augments[s];
         else return 0;
