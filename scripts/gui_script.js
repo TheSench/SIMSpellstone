@@ -225,6 +225,9 @@ function onpageload() {
 
 	var version_label = document.getElementById('version_label');
 	if (use_workers) {
+	    document.getElementById("user_controlled").style.visibility = "hidden";
+	    document.getElementById("unavailable").style.visibility = "visible";
+
 		version_label.innerHTML += " " + text_version;
 		// Initialize workers
 		var param_maxworkers = _GET('maxworkers');
