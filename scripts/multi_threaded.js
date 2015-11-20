@@ -36,20 +36,20 @@ var ProcessTransferableObjectsMessage = function (e) {
 	if (sims_left) {
 	    var msg = e.data;
 
-		var view = new Int32Array(msg, 0, 8);
+		var view = new Int32Array(msg, 0, 5);
 		var num_games = view[0];
 		var num_wins = view[1];
 		var num_draws = view[2];
 		var num_losses = view[3];
 		var turns = view[4];
-		view = new Float64Array(msg, 56, 1);
+		view = new Float64Array(msg, 40, 1);
 		var time_started = view[0];
 		// If a worker's echo is included in results...
 		// Queue up next batch so that this worker isn't idle while we process the results
 		if (sims_to_process > 0) {
 			run_sims(this.id, num_games, time_started);
 		}
-		if (msg.byteLength > 72) {
+		if (msg.byteLength > 48) {
 			// ... convert it from a byte array to a string
 			var view = new Uint16Array(msg, 80);
 			var chararray = [];
@@ -86,8 +86,8 @@ var ProcessStructuredCloningMessage = function (e) {
 				var num_draws = results[2];
 				var num_losses = results[3];
 				var turns = results[4];
-				var time_started = results[8];
-				var worker_echo = results[10];
+				var time_started = results[5];
+				var worker_echo = results[6];
 				if (worker_echo) {
 					echo += worker_echo;
 				}

@@ -91,16 +91,16 @@ function initializeSims(params) {
 // by all browsers.)
 function returnResultsTransferableObjects() {
 	// Create results ArrayBuffer
-	var length = 72;
+	var length = 48;    // 8 bytes per int, 8 bytes per float
 	if (debug) length += (echo.length*2) + 8; // 2 bytes for each char
 	var buffer = new ArrayBuffer(length);
-	var view = new Int32Array(buffer, 0, 8);
+	var view = new Int32Array(buffer, 0, 5);
 	view[0] = games;
 	view[1] = wins;
 	view[2] = draws;
 	view[3] = losses;
 	view[4] = total_turns;
-	view = new Float64Array(buffer, 56, 1);
+	view = new Float64Array(buffer, 40, 1);
 	view[0] = time_start_batch;
 	if (debug) {
 		// Convert echo to bytes in the ArrayBuffer
@@ -124,8 +124,8 @@ function returnResultsStructuredCloning() {
 	resultsArray[2] = draws;
 	resultsArray[3] = losses;
 	resultsArray[4] = total_turns;
-	resultsArray[8] = time_start_batch;
-	if (debug) resultsArray[9] = echo;
+	resultsArray[5] = time_start_batch;
+	if (debug) resultsArray[6] = echo;
 
 	// Send batch results back to main thread
 	self.postMessage({"cmd":"return_results", "data":resultsArray});
@@ -199,38 +199,43 @@ function run_sim() {
 
 function processSimResult() {
 
+    games++;
+
     var result;
     if (!field.player.commander.isAlive()) {
         result = false;
+        losses++;
     }
     else if (!field.cpu.commander.isAlive()) {
         result = true;
+        wins++;
     }
     else {
         result = 'draw';
+        draws++;
     }
 
-    if (debug && !mass_debug && !loss_debug) {
-        sims_left = 0;
-        return;
-    }
-
-    if (debug && loss_debug) {
-        if (result == 'draw') {
-            // Draw found
+    if (debug) {
+        if (!mass_debug && !loss_debug) {
             sims_left = 0;
             return;
-        } else if (result) {
-            if (!sims_left) {
-                // 'No losses found
+        } else if (loss_debug) {
+            if (result == 'draw') {
+                // Draw found
+                sims_left = 0;
                 return;
+            } else if (result) {
+                if (!sims_left) {
+                    // 'No losses found
+                    return;
+                } else {
+                    echo = '';
+                }
             } else {
-                echo = '';
+                // Loss found
+                sims_left = 0;
+                return;
             }
-        } else {
-            // Loss found
-            sims_left = 0;
-            return;
         }
     }
 
