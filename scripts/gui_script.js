@@ -257,30 +257,6 @@ function onpageload() {
 	}
 }
 
-function load_tests()
-{
-    var startingPlayerDeck = "Urs(5), Matriarch(5)=1, Fire Devil(4), Smelted Skeleton(4)x3=3, Outrunner(4)x3=1, Swiftfoot(4)=1, Toxin(5), Purging(5), Mighty Clawkin(4), Chaos Swell(5)=3, Lilypad(4), Lightsworn(5)";
-    var startingEnemyDeck = "Groc(6), Fire D(4), Executioner(4), Heroic(5), Chaos T(5), Tsunamari(5), Spearhunter(5), Bolt Ele(4), Poison(3), Lightsworn(5), Discordant(5), Blood(5), Blood(6), Glass T(4), Titan of S(5), Storm D(5)";
-    var zDeck = "Groc(6), Heroic(5)x2; Fowl Swarm(5), Wind Spirit(5), Swell(5)x2, Garg(5)x2, Rock T(5), Sapling(5), Tsunamari(5), Honeycomb(5), Avenging(6), Blazekin(6), Nixfire(4)";
-    var drypDeck = "Samael(6), Glass Titan(5), Gravity Bender(5), Firebomb Spirit(5), Mega Garganatos(5), Sage Tsunamari(5), Swamp Aberration(5)x2, Darkness Elemental(5), Majestic Guardian(4), Shining Radiance(4), Brilliant Aurora(4), Rust Goliath(5), Pumpking Kong(5), Rhino Beast(6), Gold Incarnate(6)";
-    var oemseDeck = "Groc(6), Hellfrog(4), Outrunner(4)x4, Lilypad(5), Beacon(5), Blitz(5), Mob(5), Tempest(5), Noxious(5), Great Sage(5), King(5), Blazen D(6), Beat(6)"
-    var AMSP = "Urs(5), Smelted S(4)x3, Fire Devil(4)x3, Swiftfoot(4), Duoshot(4)x2, Outrunner(4)x2, Lightsworn(5), Swell(5)x2, Mega G(5)"
-    var alpha = "Tarian(6), Fire Devil(4)x2, Chaos Swell(5), Chaos Tempest(5), Branding Engine(6), Firebomb Spirit(5), Sage Tsunamari(5), Blazing Aurora(6), Blazen Dragon(6), Onyx Knight(6), Thousand Arm Fiend(6), Pumpking Kong(6), Spirit of Insanity(6)";
-    var golden = "Groc(6), Smelted S(4)x2, Duoshot(4), Outrunner(4)x3, Leaper(5), Castlerock(5)x2, Wayfarer(5), Chaos T(5)x2, Bedlam(5), Invisible(5), Clawkin E(5)"
-    
-    var cardlist = document.getElementById('cardlist');
-    cardlist.value = startingPlayerDeck;
-    cardlist = document.getElementById('cardlist2');
-    cardlist.value = drypDeck;
-
-    var d = document.getElementById('debug');
-    d.checked = true;
-    var d = document.getElementById('battleground_0');
-    d.checked = true;
-    var d = document.getElementById('battleground_1');
-    d.checked = true;
-}
-
 // Modify HTML to output simulation results
 function outp(text) {
 	var c = document.getElementById('content');
@@ -607,7 +583,6 @@ var history = '';
 var turn = false;
 var max_turns = 50;
 var debug = false;
-var user_controlled = false;
 var mass_debug = false;
 var loss_debug = false;
 var found_loss = false;
