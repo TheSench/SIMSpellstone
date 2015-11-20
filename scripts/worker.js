@@ -84,6 +84,7 @@ function initializeSims(params) {
 	debug = params['debug'];
 	loss_debug = params['loss_debug'];
 	mass_debug = params['mass_debug'];
+	user_controlled = params['user_controlled'];
 }
 
 // Return results to the GUI thread using Transferable Objects
