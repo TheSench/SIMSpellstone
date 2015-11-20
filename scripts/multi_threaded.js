@@ -322,7 +322,7 @@ var startsim = function (autostart) {
 
 	outp('<strong>Initializing simulations...</strong>');
 
-	var params = [];
+	var params = {};
 	params['cache_player_deck'] = cache_player_deck;
 	params['cache_cpu_deck'] = cache_cpu_deck;
 	params['getbattleground'] = getbattleground;
@@ -335,6 +335,7 @@ var startsim = function (autostart) {
 	params['debug'] = debug;
 	params['loss_debug'] = loss_debug;
 	params['mass_debug'] = mass_debug;
+	params['user_controlled'] = user_controlled;
 	for (var i = 0; i < max_workers; i++) {
 		workers[i].postMessage({'cmd': 'initializeSims', 'data': params});
 	}

@@ -333,5 +333,6 @@ function processSimResult() {
 var run_sims_count = 0;
 var run_sims_batch = 0;
 var card_cache = {};
+var user_controlled = false;
 
 }
