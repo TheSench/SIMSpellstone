@@ -181,20 +181,60 @@ function run_sim() {
     // Set up battleground effects, if any
 	battlegrounds = [];
 	if (getbattleground) {
-	    var battlegrounds = getbattleground.split(",");
-	    for (i = 0; i < battlegrounds.length; i++) {
-	        var id = battlegrounds[i];
+	    var bgIDs = getbattleground.split(",");
+	    for (i = 0; i < bgIDs.length; i++) {
+	        var id = bgIDs[i];
 	        var battleground = quests['root']['battleground'][id];
 	        battlegrounds.push(MakeBattleground(battleground.name, battleground.skill));
 	    }
 	}
 
 	if (simulate()) {
-	    processSimResult2();
+	    processSimResult();
 	    return true;
 	} else {
 	    return false;
 	}
+}
+
+function processSimResult() {
+
+    var result;
+    if (!field.player.commander.isAlive()) {
+        result = false;
+    }
+    else if (!field.cpu.commander.isAlive()) {
+        result = true;
+    }
+    else {
+        result = 'draw';
+    }
+
+    if (debug && !mass_debug && !loss_debug) {
+        sims_left = 0;
+        return;
+    }
+
+    if (debug && loss_debug) {
+        if (result == 'draw') {
+            // Draw found
+            sims_left = 0;
+            return;
+        } else if (result) {
+            if (!sims_left) {
+                // 'No losses found
+                return;
+            } else {
+                echo = '';
+            }
+        } else {
+            // Loss found
+            sims_left = 0;
+            return;
+        }
+    }
+
+    if (sims_left > 0) sims_left--;
 }
 
 // Initialize simulation loop - runs once per simulation batch
@@ -225,7 +265,8 @@ var getexactorder = false;
 var getexactorder2 = false;
 var getmission = 0;
 var getbattleground = 0;
-var gettowerSiege = 0;
+var getsiege = 0;
+var user_controlled = false;
 var tower_level = 0;
 var battleground = [];
 var cache_player_deck = 0;
@@ -242,5 +283,6 @@ var sims_left = 0;
 var running = false;
 
 var simulator_thread = true;
+var card_cache = {};
 
 importScripts('simulator_base.js', 'shared.js');

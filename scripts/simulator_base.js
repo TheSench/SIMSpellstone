@@ -1328,4 +1328,5 @@ if (simulator_thread) {
     var field = [];
     var simulation_turns = 0;
     var time_start_batch = 0;
+    var simulating = false;
 }

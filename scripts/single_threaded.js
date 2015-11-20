@@ -329,40 +329,9 @@ function processSimResult() {
     return result;
 }
 
-function processSimResult2() {
-
-    var result = processSimResult();
-
-    if (debug && !mass_debug && !loss_debug) {
-        sims_left = 0;
-        return;
-    }
-
-    if (debug && loss_debug) {
-        if (result == 'draw') {
-            // Draw found
-            sims_left = 0;
-            return;
-        } else if (result) {
-            if (!sims_left) {
-                // 'No losses found
-                return;
-            } else {
-                echo = '';
-            }
-        } else {
-            // Loss found
-            sims_left = 0;
-            return;
-        }
-    }
-
-    if (sims_left > 0) sims_left--;
-}
-
 // Global variables used by single-threaded simulator
 var run_sims_count = 0;
 var run_sims_batch = 0;
-var simulating = false;
+var card_cache = {};
 
 }
