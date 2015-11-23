@@ -13,6 +13,13 @@
 //	return xmlhttp.responseText;
 //}
 
+// GET variables
+function _GET(q, s) {
+    s = s ? s : window.location.search;
+    var re = new RegExp('&' + q + '(?:=([^&]*))?(?=&|$)', 'i');
+    return (s = s.replace(/^\?/, '&').match(re)) ? (typeof s[1] == 'undefined' ? '' : decodeURIComponent(s[1])) : undefined;
+}
+
 function shuffle(this_array) {
 	var i = this_array.length, j, tempi, tempj;
 	if ( i == 0 ) return false;

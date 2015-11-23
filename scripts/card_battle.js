@@ -1,5 +1,3 @@
-if (!use_workers) {
-
 // Initialize simulation loop - runs once per simulation session
 var startsim = function (autostart) {
 
@@ -15,23 +13,12 @@ var startsim = function (autostart) {
 	time_stop = 0;
 	echo = '';
 	games = 0;
-	sims_left = document.getElementById('sims').value;
-	if (!sims_left) sims_left = 1;
-	user_controlled = document.getElementById('user_controlled').checked;
-	/*if (user_controlled) debug = true;
-	else*/ debug = document.getElementById('debug').checked;
-	mass_debug = document.getElementById('mass_debug').checked;
-	loss_debug = document.getElementById('loss_debug').checked;
-	if (loss_debug && mass_debug) mass_debug = false;
-	getdeck = document.getElementById('deck').value;
+	sims_left = 1;
+	user_controlled = true;
+	debug = document.getElementById('debug').checked;
 	getcardlist = document.getElementById('cardlist').value;
-	if (!getdeck && !getcardlist) getdeck = 'Po';
-	getdeck2 = document.getElementById('deck2').value;
 	getcardlist2 = document.getElementById('cardlist2').value;
-	getordered = document.getElementById('ordered').checked;
 	getordered2 = document.getElementById('ordered2').checked;
-	gettournament = document.getElementById('tournament').checked;
-	getexactorder = document.getElementById('exactorder').checked;
 	getexactorder2 = document.getElementById('exactorder2').checked;
 	getmission = document.getElementById('mission').value;
 	getsiege = document.getElementById('siege').checked;
@@ -47,7 +34,6 @@ var startsim = function (autostart) {
 	    }
 	    getbattleground = getbattleground.join();
 	}
-	if (!getdeck2 && !getmission && !getcardlist2) getdeck2 = 'Po';
 	surge = document.getElementById('surge').checked;
 
 	// Hide interface
@@ -58,9 +44,7 @@ var startsim = function (autostart) {
 
 	// Cache decks where possible
 	// Load player deck
-	/*if (getdeck) {
-		cache_player_deck = hash_decode(getdeck);
-	} else*/ if (getcardlist) {
+	if (getcardlist) {
 	    cache_player_deck = load_deck_from_cardlist(getcardlist);
 	} else {
 	    cache_player_deck = load_deck_from_cardlist();
@@ -69,9 +53,7 @@ var startsim = function (autostart) {
 	max_turns = 50;
 
 	// Load enemy deck
-	/*if (getdeck2) {
-		cache_cpu_deck = hash_decode(getdeck2);
-	} else*/ if (getcardlist2) {
+	if (getcardlist2) {
 		cache_cpu_deck = load_deck_from_cardlist(getcardlist2);
 	} else if (getmission) {
 		cache_cpu_deck = load_deck_mission(getmission);
@@ -87,28 +69,14 @@ var startsim = function (autostart) {
 
 	outp('<strong>Initializing simulations...</strong>');
 
-	current_timeout = setTimeout(run_sims,1);
+	current_timeout = setTimeout(do_battle);
 
 	return false;
 }
 
 // Interrupt simulations
 var stopsim = function () {
-	time_stop = new Date();
-	var elapse = time_elapsed();
-	var simpersec = games/elapse;
-	simpersec = simpersec.toFixed(1);
-
-	// Stop the recursion\
-	if (current_timeout) clearTimeout(current_timeout);
-
-	outp(echo + '<strong>Simulations interrupted.</strong><br>'+elapse+' seconds ('+simpersec+' simulations per second)<br>'+gettable());
-	draw_cards();
-	// Show interface
-	document.getElementById('ui').style.display = 'block';
-
-	// Hide stop button
-	document.getElementById('stop').style.display = 'none';
+	draw_match_end();
 }
 
 // Loops through all simulations
@@ -120,16 +88,19 @@ var debug_end = function () {
     
     result = processSimResult();
 
-    time_stop = new Date();
-
     if (result == 'draw') {
-        outp(echo + '<br><h1>DRAW</h1><br>' + gettable());
+        outp(echo + '<br><h1>DRAW</h1><br>');
     } else if (result) {
-        outp(echo + '<br><h1>WIN</h1><br>' + gettable());
+        outp(echo + '<br><h1>WIN</h1><br>');
     } else {
-        outp(echo + '<br><h1>LOSS</h1><br>' + gettable());
+        outp(echo + '<br><h1>LOSS</h1><br>');
     }
-    draw_cards();
+
+    draw_match_end();
+}
+
+var draw_match_end = function () {
+    draw_cards();   // Draw battlefield with no hand
 
     // Show interface
     document.getElementById('ui').style.display = 'block';
@@ -137,74 +108,12 @@ var debug_end = function () {
     // Hide stop button
     document.getElementById('stop').style.display = 'none';
 
-    if (user_controlled) {
-        scroll_to_end();
-    }
+    scroll_to_end();
 }
 
 var run_sims = function () {
-    if (debug && !mass_debug && !loss_debug) {
-        run_sim();
-        debug_end();
-    } else if (user_controlled) {
-        run_sim();
-        debug_end();
-	} else if (sims_left > 0) {
-		// Interval output - speeds up simulations
-		if (run_sims_count >= run_sims_batch) {
-			var simpersecbatch = 0;
-			if (run_sims_batch > 0) { // Use run_sims_batch == 0 to imply a fresh set of simulations
-				run_sims_count = false;
-				var temp = games / (games+sims_left) * 100;
-				temp = temp.toFixed(1);
-
-				var elapse = time_elapsed();
-
-				var batch_elapse = batch_time_elapsed();
-				if (batch_elapse == 0) {
-					simpersecbatch = 0;
-				} else {
-					simpersecbatch = run_sims_batch / batch_elapse;
-				}
-
-				outp(echo + '<strong>Running simulations...</strong> ('+games+'/'+(games+sims_left)+') '+temp+'%<br>'+elapse+' seconds<br>'+simpersecbatch.toFixed(1)+' simulations per second<br>'+gettable());
-			}
-			run_sims_batch = 1;
-			if (simpersecbatch > run_sims_batch) // If we can run more at one time, then let's try to
-				run_sims_batch = Math.ceil(simpersecbatch/8);
-			if (run_sims_batch > sims_left) // Also limit by how many sims are left
-				run_sims_batch = sims_left;
-
-			// Batch messes up mass debug and loss debug! Let's disable batch!
-			if (debug && mass_debug) run_sims_batch = 1;
-			if (debug && loss_debug) run_sims_batch = 1;
-
-			time_start_batch = new Date();
-			for (var i = 0; i < run_sims_batch; i++) {  // Start a new batch
-				setTimeout(run_sim, 0);
-			}
-		}
-		current_timeout = setTimeout(run_sims,1);
-
-	} else {
-		run_sims_count = false;
-		run_sims_batch = 0;
-		time_stop = new Date();
-
-		var elapse = time_elapsed();
-		var simpersec = games/elapse;
-		simpersec = simpersec.toFixed(1);
-
-		outp(echo + '<br><strong>Simulations complete.</strong><br>'+elapse+' seconds ('+simpersec+' simulations per second)<br>'+gettable());
-
-		// Show interface
-		document.getElementById('ui').style.display = 'block';
-
-		// Hide stop button
-		document.getElementById('stop').style.display = 'none';
-
-		scroll_to_end();
-	}
+    run_sim();
+    debug_end();
 }
 
 // Initializes a single simulation - runs once before each individual simulation
@@ -213,6 +122,13 @@ var run_sim = function () {
     doSetup();
     if (!simulate()) return false;
     processSimResult();
+}
+
+var do_battle = function () {
+    doSetup();
+    if (!simulate()) return false;
+    processSimResult();
+    debug_end();
 }
 
 function doSetup() {
@@ -335,4 +251,7 @@ var run_sims_batch = 0;
 var card_cache = {};
 var user_controlled = false;
 
-}
+var use_workers = false;
+var one_worker = true;
+var simulator_thread = true;
+var battle_sim = true;
