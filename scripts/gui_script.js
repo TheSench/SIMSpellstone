@@ -91,38 +91,38 @@ function toggle_u() {
 }
 
 // Known issues:
-// - sometimes assault card's array key doesn't match card's ['key'] value (['key'] value appears more accurate)
+// - sometimes assault card's array key doesn't match card's .key value (.key value appears more accurate)
 
 // When Page Loads...
 // Set up user interface
 function onpageload() {
 
 	// Check if missions are found
-	if (missions && missions['root'] && missions['root']['mission']) {
+	if (missions && missions.root && missions.root.mission) {
 	    // Mission drop down
 	    var select = document.getElementById('mission');
-		for (var key in missions['root']['mission']) {
-		    var mission = missions['root']['mission'][key];
+		for (var key in missions.root.mission) {
+		    var mission = missions.root.mission[key];
 		    var option = document.createElement('option');
-		    option.appendChild(document.createTextNode(mission['name']));
-		    option.value = mission['id'];
+		    option.appendChild(document.createTextNode(mission.name));
+		    option.value = mission.id;
 		    select.appendChild(option);
 		}
 	}
 
 	// Check if battlegrounds are found
-	if (quests && quests['root'] && quests['root']['battleground']) {
+	if (quests && quests.root && quests.root.battleground) {
 	    // Battleground drop down
 	    var select = document.getElementById('battleground');
-		for (var key in quests['root']['battleground']) {
-		    var battleground = quests['root']['battleground'][key];
+		for (var key in quests.root.battleground) {
+		    var battleground = quests.root.battleground[key];
 		    var checkbox = document.createElement('input');
 		    checkbox.type = "checkbox";
 		    checkbox.name = "battleground";
-		    checkbox.id = "battleground_" + battleground['id'];
-		    checkbox.value = battleground['id'];
+		    checkbox.id = "battleground_" + battleground.id;
+		    checkbox.value = battleground.id;
 		    select.appendChild(checkbox);
-		    select.appendChild(document.createTextNode(battleground['name']));
+		    select.appendChild(document.createTextNode(battleground.name));
 		    select.appendChild(document.createElement('br'));
 		}
 	}
@@ -378,12 +378,12 @@ function gettable() {
 
 		// Load player deck
 		/*if (getdeck) {
-			deck['player'] = hash_decode(getdeck);
+			deck.player = hash_decode(getdeck);
 		} else*/ if (getcardlist) {
-			deck['player'] = load_deck_from_cardlist(getcardlist);
+			deck.player = load_deck_from_cardlist(getcardlist);
 		}
-		if (deck['player']) {
-			current_deck = hash_encode(deck['player']);
+		if (deck.player) {
+			current_deck = hash_encode(deck.player);
 		}
 
 		history += winrate + '% &nbsp; &nbsp; ' + current_deck + '<br>';
@@ -433,29 +433,29 @@ function generate_link(autostart, autolink) {
 
 	// Load player deck
 	/*if (getdeck) {
-		deck['player'] = hash_decode(getdeck);
+		deck.player = hash_decode(getdeck);
 	} else*/ if (getcardlist) {
-		deck['player'] = load_deck_from_cardlist(getcardlist);
+		deck.player = load_deck_from_cardlist(getcardlist);
 	}
 
 	// Load enemy deck
 	if (getcardlist2) {
-		deck['cpu'] = load_deck_from_cardlist(getcardlist2);
+		deck.cpu = load_deck_from_cardlist(getcardlist2);
 	}/* else if (getdeck2) {
-		deck['cpu'] = hash_decode(getdeck2);
+		deck.cpu = hash_decode(getdeck2);
 	}*/ else if (getmission) {
-		deck['cpu'] = 0;
+		deck.cpu = 0;
 	}
 
-	if (deck['player']) {
-		d = hash_encode(deck['player']);
+	if (deck.player) {
+		d = hash_encode(deck.player);
 		if (d) {
 			query += 'deck1=' + d + '&';
 		}
 	}
 
-	if (deck['cpu']) {
-		d = hash_encode(deck['cpu']);
+	if (deck.cpu) {
+		d = hash_encode(deck.cpu);
 		if (d) {
 			query += 'deck2=' + d + '&';
 		}

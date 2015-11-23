@@ -27,8 +27,8 @@ function draw_cards(drawableHand, performTurns, turn) {
         htmlTurnCounter.innerHTML = "Turn: " + turn
         cardSpace.appendChild(htmlTurnCounter);
     }
-    cardSpace.appendChild(draw_field(field['cpu']));
-    cardSpace.appendChild(draw_field(field['player']));
+    cardSpace.appendChild(draw_field(field.cpu));
+    cardSpace.appendChild(draw_field(field.player));
     cardSpace.appendChild(draw_hand(drawableHand, performTurns, turn));
     cardSpace.appendChild(document.createElement('br'));
     cardSpace.appendChild(document.createElement('br'));
@@ -52,6 +52,7 @@ function draw_hand(hand, callback, state) {
     var units = field.assaults;
     for (var i = 0, len = hand.length; i < len; i++) {
         var unit = hand[i];
+        if (!unit) continue;
         var htmlCard = create_card_html(unit);
         if (i === 0) htmlCard.classList.add("hand-left");
         else if (i === 2) htmlCard.classList.add("hand-right");
@@ -71,9 +72,9 @@ function draw_hand(hand, callback, state) {
 function create_card_html(card, inHand) {
     var htmlCard = createDiv("card");
     var divName = createDiv("card-name", card.name);
-    if (!card.isUnjammed()) htmlCard.classList.add("frozen");
     htmlCard.appendChild(divName);
     if (!card.isCommander()) {
+        if (!card.isUnjammed()) htmlCard.classList.add("frozen");
         var htmlAttack = createDiv("card-attack", card.adjustedAttack().toString());
         if (card.adjustedAttack() > card.attack) htmlAttack.classList.add("increased");
         else if (card.adjustedAttack() < card.attack) htmlAttack.classList.add("decreased");

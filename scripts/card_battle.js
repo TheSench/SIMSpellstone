@@ -23,10 +23,10 @@ var startsim = function (autostart) {
 	getmission = document.getElementById('mission').value;
 	getsiege = document.getElementById('siege').checked;
 	tower_level = document.getElementById('tower_level').value;
-	if (quests && quests['root'] && quests['root']['battleground']) {
+	if (quests && quests.root && quests.root.battleground) {
 	    getbattleground = [];
-	    for (var key in quests['root']['battleground']) {
-	        var battleground = quests['root']['battleground'][key];
+	    for (var key in quests.root.battleground) {
+	        var battleground = quests.root.battleground[key];
 	        var checkbox = document.getElementById('battleground_' + battleground.id);
 	        if (checkbox && checkbox.checked) {
 	            getbattleground.push(battleground.id);
@@ -140,36 +140,36 @@ function doSetup() {
 
     // Set up empty decks
     deck = [];
-    deck['cpu'] = [];
-    deck['cpu']['deck'] = [];
-    deck['player'] = [];
-    deck['player']['deck'] = [];
+    deck.cpu = [];
+    deck.cpu.deck = [];
+    deck.player = [];
+    deck.player.deck = [];
 
     // Initialize summon counter to track limit
     number_of_summons = [];
-    number_of_summons['cpu'] = 0;
-    number_of_summons['player'] = 0;
+    number_of_summons.cpu = 0;
+    number_of_summons.player = 0;
 
     // Set up empty field
     field = [];
-    field['cpu'] = [];
-    field['cpu']['assaults'] = [];
-    field['player'] = [];
-    field['player']['assaults'] = [];
+    field.cpu = [];
+    field.cpu.assaults = [];
+    field.player = [];
+    field.player.assaults = [];
 
     // Load player deck
     if (cache_player_deck) {
-        deck['player'] = copy_deck(cache_player_deck);
+        deck.player = copy_deck(cache_player_deck);
     }
 
     // Load enemy deck
     if (cache_cpu_deck) {
-        deck['cpu'] = copy_deck(cache_cpu_deck);
+        deck.cpu = copy_deck(cache_cpu_deck);
     }
 
     // Set up deck order priority reference
-    if (getordered && !getexactorder) deck['player']['ordered'] = copy_card_list(deck['player']['deck']);
-    if (getordered2 && !getexactorder2) deck['cpu']['ordered'] = copy_card_list(deck['cpu']['deck']);
+    if (getordered && !getexactorder) deck.player.ordered = copy_card_list(deck.player.deck);
+    if (getordered2 && !getexactorder2) deck.cpu.ordered = copy_card_list(deck.cpu.deck);
 
     // Set up battleground effects, if any
     battlegrounds = [];
@@ -177,7 +177,7 @@ function doSetup() {
         var selected = getbattleground.split(",");
         for (i = 0; i < selected.length; i++) {
             var id = selected[i];
-            var battleground = quests['root']['battleground'][id];
+            var battleground = quests.root.battleground[id];
             battlegrounds.push(MakeBattleground(battleground.name, battleground.skill));
         }
     }
