@@ -34,8 +34,8 @@ function shuffle(this_array) {
 
 function copy_deck(original_deck) {
 	var new_deck = [];
-	new_deck['commander'] = original_deck['commander'];
-	new_deck['deck'] = copy_card_list(original_deck['deck']);
+	new_deck.commander = original_deck.commander;
+	new_deck.deck = copy_card_list(original_deck.deck);
 	return new_deck;
 }
 
@@ -109,45 +109,6 @@ var MakeAssault = (function () {
 		card_cache[original_card.id + "-" + unit_level] = this;
 		return this;
     }
-
-    var CopyValues = function (new_card, original_card, unit_level) {
-        new_card.id = original_card.id;
-        new_card.name = original_card.name;
-        new_card.attack = original_card.attack;
-        new_card.health = original_card.health;
-        new_card.maxLevel = GetMaxLevel(original_card);
-        new_card.level = ((unit_level > new_card.maxLevel) ? new_card.maxLevel : unit_level);
-        new_card.cost = original_card.cost;
-        new_card.rarity = original_card.rarity;
-        new_card.card_type = original_card.card_type;
-        new_card.type = original_card.type;
-        new_card.sub_type = original_card.sub_type;
-        new_card.set = original_card.set;
-        new_card.skill = copy_skills(original_card.skill);
-        new_card.timer = new_card.cost;
-        if (new_card.level > 1) {
-            for (var key in original_card.upgrades) {
-                var upgrade = original_card.upgrades[key];
-                if (upgrade.cost !== undefined) new_card.cost = upgrade.cost;
-                if (upgrade.health !== undefined) new_card.health = upgrade.health;
-                if (upgrade.attack !== undefined) new_card.attack = upgrade.attack;
-                update_skills(new_card.skill, upgrade.skill);
-                if (key == new_card.level) break;
-            }
-        }
-        new_card.health_left = new_card.health;
-        card_cache[original_card.id + "-" + unit_level] = new_card;
-        return new_card;
-    }
-
-    function GetMaxLevel(original_card) {
-        var upgrades = original_card.upgrades;
-        var size = 1;
-        if(upgrades) for (key in upgrades) {
-            if (upgrades.hasOwnProperty(key)) size++;
-        }
-        return size;
-    }
 	
 	Card.prototype = {
 		p: null,
@@ -178,38 +139,38 @@ var MakeAssault = (function () {
 		},
 
 		// Alive
-		// -['health_left'] > 0
+		// -.health_left > 0
 		isAlive: function () {
-			return (this['health_left'] > 0);
+			return (this.health_left > 0);
 		},
 		
 		// Active
 		// - timer = 0
 		isActive: function () {
-			return (this['timer'] == 0);
+			return (this.timer == 0);
 		},
 		
 		// Active Next Turn
 		// - timer <=1
 		isActiveNextTurn: function () {
-			return (this['timer'] <= 1);
+			return (this.timer <= 1);
 		},
 
 		// Inactive
 		// - timer >=1
 		isInactive: function () {
-			return this['timer'] >= 1;
+			return this.timer >= 1;
 		},
 
 		// Unjammed
 		isUnjammed: function () {
-			return !(this['jammed']);
+			return !(this.jammed);
 		},
 
 		// Has at least one Augmentable Activation Skill
 		// - strike, protect, enfeeble, rally, repair, supply, siege, heal, weaken (unless they have on play/death/attacked/kill)
 		hasSkill: function (s) {
-			var target_skills = this['skill'];
+			var target_skills = this.skill;
 			for (var key in target_skills) {
 			    var skill = target_skills[key];
 			    if (skill.id === s) {
@@ -220,9 +181,9 @@ var MakeAssault = (function () {
 		},
 		
 		// Damaged
-		// -['health_left'] < health
+		// -.health_left < health
 		isDamaged: function () {
-			if (this['health_left'] < this['health']) return true;
+			if (this.health_left < this.health) return true;
 			return false;
 		},
 		
@@ -233,33 +194,33 @@ var MakeAssault = (function () {
 		},
 
 		adjustedAttack: function() {
-		    return ((this['attack'] + this['attack_rally'] - this['attack_weaken']));
+		    return ((this.attack + this.attack_rally - this.attack_weaken));
 		},
 
 		// Targets that are opposite of the source or to the right of it
 		// - only use this function for Chaos on Death, Jam on Death, and Weaken on Death
 		hasNotAttackedAlready2: function (relative_source) {
 			if (!relative_source.isAssault()) return true; // If source is not an assault, assume that the target has not attacked already
-			return (this['key'] >= relative_source['key']); // If source is an assault, check its relative position
+			return (this.key >= relative_source.key); // If source is an assault, check its relative position
 		},
 
 		// Targets that are opposite of the source or to the right of it
 		// - only use this function for Chaos on Attacked, Jam on Attacked, and Weaken on Attacked
 		hasNotAttackedAlready3: function (attacker) {
 			if (!attacker.isAssault()) return true; // If source is not an assault, assume that the target has not attacked already
-			return (this['key'] > attacker['key']); // If source is an assault, check its relative position
+			return (this.key > attacker.key); // If source is an assault, check its relative position
 		},
 		
 		// Currently attacking
 		// - only use this function for Chaos on Death, Jam on Death, and Weaken on Death
 		isAttacking2: function (relative_source) {
 			if (!relative_source.isAssault()) return false; // If source is not an assault, assume that the target is not attacking
-			return (this['key'] == relative_source['key']);
+			return (this.key == relative_source.key);
 		},
 
 		isAdjacent: function (src) {
-			var thisKey = this['key'];
-			var left = src['key'] - 1;
+			var thisKey = this.key;
+			var left = src.key - 1;
 			var right = left + 2;
 
 			return (thisKey >= left && thisKey <= right);
@@ -268,8 +229,8 @@ var MakeAssault = (function () {
 		// Filters by faction
 		isInFaction: function (faction) {
 			if (faction === undefined) return 1;
-			if (this['type'] == faction) return 1;
-			if (this['sub_type'] == faction) return 1;
+			if (this.type == faction) return 1;
+			if (this.sub_type == faction) return 1;
 			return 0;
 		},
 	}
@@ -358,18 +319,18 @@ function setSkill(current_skills, key, skill) {
 
 function copy_skill(original_skill) {
 	var new_skill = {};
-	new_skill['id'] = original_skill['id'];
-	new_skill['x'] = original_skill['x'];
-	new_skill['mult'] = original_skill['mult'];
-	new_skill['all'] = original_skill['all'];
-	new_skill['y'] = original_skill['y'];
-	new_skill['z'] = original_skill['z'];
-	new_skill['c'] = original_skill['c'];
-	new_skill['s'] = original_skill['s'];
-	new_skill['attacked'] = original_skill['attacked'];
-	new_skill['died'] = original_skill['died'];
-	new_skill['played'] = original_skill['played'];
-	new_skill['kill'] = original_skill['kill'];
+	new_skill.id = original_skill.id;
+	new_skill.x = original_skill.x;
+	new_skill.mult = original_skill.mult;
+	new_skill.all = original_skill.all;
+	new_skill.y = original_skill.y;
+	new_skill.z = original_skill.z;
+	new_skill.c = original_skill.c;
+	new_skill.s = original_skill.s;
+	new_skill.attacked = original_skill.attacked;
+	new_skill.died = original_skill.died;
+	new_skill.played = original_skill.played;
+	new_skill.kill = original_skill.kill;
 	return new_skill;
 }
 
@@ -384,12 +345,12 @@ function debug_skills(skills) {
 		if (first_skill) output += ' <u>( ';
 		else output += ' | ';
 		first_skill = false;
-		output += skill['id'];
-		if (skill['all']) output += ' all';
-		if (skill['y']) output += ' ' + factions.names[skill['y']];
-		if (skill['s']) output += ' ' + skill['s'];
-		if (skill['c']) output += ' every ' + skill['c'] + ' turns';
-		else if (skill['x']) output += ' ' + skill['x'];
+		output += skill.id;
+		if (skill.all) output += ' all';
+		if (skill.y) output += ' ' + factions.names[skill.y];
+		if (skill.s) output += ' ' + skill.s;
+		if (skill.c) output += ' every ' + skill.c + ' turns';
+		else if (skill.x) output += ' ' + skill.x;
 	}
 	if (!first_skill) output += ' )</u>';
 
@@ -413,10 +374,10 @@ function debug_dump_decks() {
 	echo += generate_card_list(cache_player_deck);
 	echo += '" onclick="this.select()" size="100">';
 	echo += '<br><br>';
-	var current_card = get_card_by_id(cache_player_deck['commander']);
+	var current_card = get_card_by_id(cache_player_deck.commander);
 	current_card.owner = 'player';
-	current_card['health_left'] = current_card['health'];
-	echo += debug_name(current_card) + debug_skills(current_card['skill']) + '<br>';
+	current_card.health_left = current_card.health;
+	echo += debug_name(current_card) + debug_skills(current_card.skill) + '<br>';
 
 	debug_dump_cards(cache_player_deck, 'player');
 	
@@ -443,18 +404,18 @@ function debug_dump_decks() {
 	echo += '<br>';
 	echo += '<u>Please note that Raid and Quest simulations randomize the enemy deck for each battle. Only one example enemy deck hash is generated.</u><br>';
 	echo += '<br>';
-	var current_card = get_card_by_id(debug_cpu_deck['commander']);
+	var current_card = get_card_by_id(debug_cpu_deck.commander);
 	current_card.owner = 'cpu';
-	current_card['health_left'] = current_card['health'];
-	echo += debug_name(current_card) + debug_skills(current_card['skill']) + '<br>';
+	current_card.health_left = current_card.health;
+	echo += debug_name(current_card) + debug_skills(current_card.skill) + '<br>';
 	debug_dump_cards(debug_cpu_deck, 'cpu');
 	echo += '<br><hr><br>';
 }
 
 function debug_dump_cards(deck, player) {
-    for (var key in deck['deck']) {
+    for (var key in deck.deck) {
         // Get cardID
-        var card_id = deck['deck'][key];
+        var card_id = deck.deck[key];
         if (isNaN(card_id) && card_id.indexOf(',') != -1) {
             card_id = card_id.split(',');
             card_id = card_id[0];
@@ -462,11 +423,11 @@ function debug_dump_cards(deck, player) {
         // Setup card for printing
         current_card = get_card_by_id(card_id);
         current_card.owner = player;
-        current_card['key'] = undefined;
+        current_card.key = undefined;
         // Echo card info
-        echo += debug_name(current_card) + debug_skills(current_card['skill']);
-        if (current_card['type']) echo += ' <u>' + factions.names[current_card['type']] + '</u>';
-        if (current_card['sub_type']) echo += ' <u>' + factions.names[current_card['sub_type']] + '</u>';
+        echo += debug_name(current_card) + debug_skills(current_card.skill);
+        if (current_card.type) echo += ' <u>' + factions.names[current_card.type] + '</u>';
+        if (current_card.sub_type) echo += ' <u>' + factions.names[current_card.sub_type] + '</u>';
         echo += '<br>';
     }
 }
@@ -483,14 +444,14 @@ function debug_dump_field() {
 		var player_val = players[player_key];
 		echo += '<br>';
 		echo += player_val + '\'s assaults:<br>';
-		var field_x_units = field[player_val]['assaults'];
+		var field_x_units = field[player_val].assaults;
 		for (var card_key = 0, unit_len = field_x_units.length; card_key < unit_len; card_key++) {
 			var current_card = field_x_units[card_key];
 			echo += debug_name(current_card);
 			echo += '('+key+')';
 			echo += '<br>';
 		}
-		if (!field[player_val]['assaults'].length) echo += 'None<br>';
+		if (!field[player_val].assaults.length) echo += 'None<br>';
 	}
 	echo += '</font>';
 	echo += '<br>';
@@ -504,28 +465,28 @@ function debug_name(card, hideStats) {
 		var tag = 'b';
 	}
 	var output = '<' + tag + '>';
-	output += card['name'];
+	output += card.name;
 	if (card.maxLevel > 1) output += '{' + card.level + '/' + card.maxLevel + '}';
-	if (card['key'] !== undefined) output += ' (' + card['key'] + ')';
+	if (card.key !== undefined) output += ' (' + card.key + ')';
 	output += '</' + tag + '>';
 	if (!hideStats) {
 	    output += '<u>';
 	    if (card.isCommander()) {
 	        output += ' [';
-	        if (card['health_left'] !== undefined) output += card['health_left'];
-	        else output += card['health'];
+	        if (card.health_left !== undefined) output += card.health_left;
+	        else output += card.health;
 	        output += ' HP]';
 	    } else if (card.isAssault()) {
 	        output += ' [';
-	        var atk = parseInt(card['attack']) + parseInt(card['attack_rally']) - parseInt(card['attack_weaken']);
-	        if (isNaN(atk) || atk == undefined) atk = card['attack'];
+	        var atk = parseInt(card.attack) + parseInt(card.attack_rally) - parseInt(card.attack_weaken);
+	        if (isNaN(atk) || atk == undefined) atk = card.attack;
 	        output += atk;
 	        output += '/';
-	        if (card['health_left'] !== undefined) output += card['health_left'];
-	        else output += card['health'];
+	        if (card.health_left !== undefined) output += card.health_left;
+	        else output += card.health;
 	        output += '/';
-	        if (card['timer'] !== undefined) output += card['timer'];
-	        else output += card['cost'];
+	        if (card.timer !== undefined) output += card.timer;
+	        else output += card.cost;
 	        output += ']';
 	    }
 	    output += '</u>';
@@ -544,42 +505,51 @@ function dump(card) {
 //Returns written card list built from deck array
 function generate_card_list(deck) {
 
-	var cardlist = '';
+    var cardlist = [];
+    var copies = [];
+    var priorities = [];
 
-	var commander = get_slim_card_by_id(deck['commander']);
-	cardlist += commander['name'];
-	if (commander['set'] == '5002') cardlist += '*';
-	if (!commander['set'] || commander['set'] == '9999') cardlist += '['+commander['id']+']';
-	for (var key in deck['deck']) {
-		var card = get_slim_card_by_id(deck['deck'][key]);
-		var priority = 0;
-		if (isNaN(deck['deck'][key]) && deck['deck'][key].indexOf(',') != -1) {
-			card = deck['deck'][key].split(',');
-			priority = parseInt(card[1]);
-			card = card[0];//parseInt(card[0]);
-			card = get_slim_card_by_id(card);
-		}
+	var commander = get_slim_card_by_id(deck.commander);
+	cardlist.push(commander.name + "(" + commander.level + ")");
+	copies.push(1);
+	priorities.push(0);
+	var lastidx = 0;
+	for (var key in deck.deck) {
+	    var card = deck.deck[key];
+	    var priority = 0;
+        if (isNaN(card) && card.indexOf(',') != -1) {
+	        card = card.split(',');
+	        priority = parseInt(card[1]);
+	        card = card[0];
+	    }
+        card = get_slim_card_by_id(card);
+
 		if (!card) continue;
-		var current_card = ', ' + card['name'];
-		if (card['set'] == '5002') current_card += '*';
-		if (!card['set'] || card['set'] == '9999') current_card += '['+card['id']+']';
 
-		if (cardlist.length > current_card.length+3 && cardlist.lastIndexOf(current_card+'(') == cardlist.length-current_card.length-3) {
-			var num = cardlist.substr(cardlist.length-4);
-			num = parseInt(num.substr(num.indexOf('(')+1,num.length-1));
-			num++;
-			while (cardlist.substr(cardlist.length-1,1) != '(') {
-				cardlist = cardlist.substr(0,cardlist.length-1);
-			}
-			cardlist = cardlist.substr(0,cardlist.length-1);
-			cardlist += '(' + num + ')';
-		} else if (cardlist.length > current_card.length && cardlist.lastIndexOf(current_card) == cardlist.length-current_card.length) {
-			cardlist += '(2)';
+		var card_name = card.name + "(" + card.level + ")";
+
+		if (cardlist[lastidx] == card_name) {
+		    copies[lastidx]++;
 		} else {
-			cardlist += current_card;
-			if (priority > 0) cardlist += '=' + priority;
+		    cardlist.push(card_name);
+		    copies.push(1);
+		    priorities.push(priority);
+		    lastidx++;
 		}
 	}
+
+	for (var i = copies.length - 1; i >= 0; i--) {
+	    var numCopies = copies[i];
+	    var priority = priorities[i];
+	    if (numCopies > 1) {
+	        cardlist[i] += "x" + numCopies;
+	    }
+	    if (priority > 0) {
+	        cardlist[i] += "=" + priority;
+	    }
+	}
+
+	cardlist = cardlist.join("; ");
 
 	return cardlist;
 }
@@ -622,15 +592,15 @@ function hash_encode(deck) {
 	var current_hash = '';
 	var has_priorities = false;
 
-	if (deck['commander']) {
-		var current_card = deck['commander'];
+	if (deck.commander) {
+		var current_card = deck.commander;
 		// Card ID
 		var pair = decimal_to_base64pair(current_card);
 		if (pair) current_hash += pair;
 	}
 
-	for (var k in deck['deck']) {
-		var current_card = deck['deck'][k];
+	for (var k in deck.deck) {
+		var current_card = deck.deck[k];
 		if (isNaN(current_card) && current_card.indexOf(',') != -1) {
 			has_priorities = true;
 			current_card = current_card.split(',');
@@ -679,8 +649,8 @@ function hash_encode(deck) {
 
 	if (has_priorities) {
 		current_hash += '|';
-		for (var k in deck['deck']) {
-			var current_card = deck['deck'][k];
+		for (var k in deck.deck) {
+			var current_card = deck.deck[k];
 			if (isNaN(current_card) && current_card.indexOf(',') != -1) {
 				var current_priority = current_card.split(',');
 				current_priority = parseInt(current_priority[1]);
@@ -709,7 +679,7 @@ function hash_decode(hash) {
 
 	var base64 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 /+';
 	var current_deck = [];
-	current_deck['deck'] = [];
+	current_deck.deck = [];
 	var last_id = 0;
 	var offset = false;
 	for (var i = 0; i < hash.length; i+=2) {
@@ -738,14 +708,14 @@ function hash_decode(hash) {
 		if (current_id >= 4000 && last_id && offset == 0) {
 			var num_repeat = current_id - 4000;
 			for (var j = 1; j < num_repeat; j++) {
-				current_deck['deck'].push(last_id);
+				current_deck.deck.push(last_id);
 			}
 		// Change commander
 		} else if (is_commander(current_id)) {
-			current_deck['commander'] = current_id;
+			current_deck.commander = current_id;
 		// Add to deck
 		} else {
-			current_deck['deck'].push(current_id);
+			current_deck.deck.push(current_id);
 		}
 
 		// Remember previous card
@@ -760,8 +730,8 @@ function hash_decode(hash) {
 		var hash_priorities = hash.split('|');
 		hash_priorities = ''+hash_priorities[1];
 		for (var i = 0; i < hash_priorities.length; i++) {
-			if (parseInt(hash_priorities.substr(i,1)) > 0 && current_deck['deck'][i]) {
-				current_deck['deck'][i] += ','+hash_priorities.substr(i,1);
+			if (parseInt(hash_priorities.substr(i,1)) > 0 && current_deck.deck[i]) {
+				current_deck.deck[i] += ','+hash_priorities.substr(i,1);
 			}
 		}
 	}
@@ -781,7 +751,7 @@ function hash_decode(hash) {
 function load_deck_from_cardlist(list) {
 
     var current_deck = [];
-    current_deck['deck'] = [];
+    current_deck.deck = [];
 
     if (list) {
         //var delimiters = ';,:';
@@ -790,98 +760,56 @@ function load_deck_from_cardlist(list) {
         if (list.length > 300) list = list.substr(0, 300);
 
         list = list.toLowerCase();
-        list = list.toString().replace(/[\&\/]/g, ',');
-        list = list.toString().replace(/[\+]/g, '*');
-        list = list.toString().replace(/ and /g, ',');
-        list = list.toString().replace(/[\.\!\?\']/g, '');
-        list = list.toString().replace(/\s/g, '');
-        list = list.toString().replace(/atlasplusspells/g, 'atlas,8xairstrike,2xemp');
-        list = list.toString().replace(/atlas,spells/g, 'atlas,8xairstrike,2xemp');
-        list = list.toString().replace(/-/g, '');
-        list = list.toString().replace(/\'/g, '');
-        list = list.toString().replace(/kogoth,theconsumer/g, 'kogoth');
-        list = list.toString().replace(/kapak,thedeceiver/g, 'kapak');
-        list = list.toString().replace(/svetlana,infectioushost/g, 'infectioushost');
-        list = list.toString().replace(/pip,epicarbiter/g, 'epicarbiter');
+        list = list.toString().replace(/[\&\/\.\!\?\'-]/g, ''); // Replace random punctuation characters
+        list = list.toString().replace(/\s/g, '');              // Remove all whitespace
         list = list.split(/[,;:]/);
 
-        var unit_definitions = CARDS['root']['unit'];
+        var unit_definitions = CARDS.root.unit;
 
         for (var i in list) {
             var current_card = list[i].toString();
             var unit_id = 0;
-            var unit_level = '';
+            var unit_level = '(99)'; // Default all cards to max leve if none is specified
             var card_found = false;
             var current_card_upgraded = false;
 
             // Detect advanced prioritization
             var priority_id = 0;
-            if (current_card.toString().length > 3 && current_card.toString().match(/=[1-9]$/)) {
+            if (current_card.toString().length > 3 && current_card.toString().match(/=[1-9][0-9]*$/)) {
                 priority_id = parseInt(current_card.substr(current_card.length - 1, 1));
                 current_card = current_card.substr(0, current_card.length - 2);
             }
 
-            // Detect upgraded cards
-            if (current_card.indexOf('*') != -1 && current_card.toString().length > 2) {
-                current_card = current_card.toString().replace(/\*/g, '');
-                current_card_upgraded = true;
-            }
-
             var copies = 1;
             // Detect multiple copies
-            if (current_card.toString().length < 3) {
-            } else if (current_card.indexOf('10x') == 0 && current_card.toString().length > 4) {
-                copies = 10;
-                current_card = current_card.toString().replace(/^10x/g, '');
-            } else if ((current_card.indexOf('10') == 0 && current_card.toString().length > 3) || (current_card.indexOf('x10') == current_card.length - 3 && current_card.toString().length > 4) || current_card.indexOf('(10)') != -1 || (current_card.indexOf('#10') == current_card.length - 3 && current_card.toString().length > 4)) {
-                copies = 10;
-                current_card = current_card.toString().replace(/^10/g, '');
-                current_card = current_card.toString().replace(/x10$/g, '');
-                current_card = current_card.toString().replace(/#10$/g, '');
-                current_card = current_card.toString().replace(/\(10\)/g, '');
-            } else if (current_card.toString().match(/^[1-9]x/)) {
-                copies = parseInt(current_card.substr(0, 1));
-                current_card = current_card.substr(2);
-            } else if (current_card.toString().match(/^[1-9][^x]/)) {
-                copies = parseInt(current_card.substr(0, 1));
-                current_card = current_card.substr(1);
-            } else if (current_card.toString().match(/x[1-9]$/)) {
-                copies = parseInt(current_card.substr(current_card.length - 1, 1));
-                current_card = current_card.substr(0, current_card.length - 2);
-            } else if (current_card.toString().match(/#[1-9]$/)) {
-                copies = parseInt(current_card.substr(current_card.length - 1, 1));
-                current_card = current_card.substr(0, current_card.length - 2);
-            } else if (current_card.toString().match(/^\([1-9]\)/)) {
-                copies = parseInt(current_card.substr(1, 1));
-                current_card = current_card.substr(3);
+            var match;
+            // Look for Nx at the beginning of the card name
+            if (match = current_card.toString().match(/^[1-9]+x/)) {
+                copies = parseInt(match[0]);
+                current_card = current_card.substr(match[0].length);
+            // Look for Nx at the end of the card name
+            } else if (match = current_card.toString().match(/x[1-9]+$/)) {
+                copies = parseInt(match[0].substr(1));
+                current_card = current_card.substr(0, current_card.length - match[0].length);
             }
 
-            // Remove trailing 'es' if any
-            if (current_card.length > 6 && current_card.substr(current_card.length - 2) == 'es') current_card = current_card.substr(0, current_card.length - 2);
-
-            // Remove trailing 's' if any
-            if (current_card.length > 4 && current_card.substr(current_card.length - 1) == 's') current_card = current_card.substr(0, current_card.length - 1);
-
-            // Use unit_id notation if available
-            if (current_card.indexOf('(') != -1 && current_card.indexOf(')') != -1) {
-                unit_level = current_card.substr(current_card.indexOf('('));
-                unit_level = unit_level.substr(0, unit_level.indexOf(')') + 1);
-                current_card = current_card.substr(0, current_card.indexOf('('));
+            // Look for (N) at the end to denote level
+            if (match = current_card.toString().match(/\([1-9]+\)$/)) {
+                unit_level = match[0];
+                current_card = current_card.substr(0, current_card.length - match[0].length);
             }
 
             current_card = current_card.trim();
 
             // Use unit_id notation if available
-            if (current_card.indexOf('[') != -1 && current_card.indexOf(']') != -1) {
-                unit_id = current_card.substr(current_card.indexOf('[') + 1);
-                unit_id = unit_id.substr(0, unit_id.indexOf(']'));
+            if (match = current_card.toString().match(/\[[1-9]+\]/)) {
+                unit_id = match[0];
                 if (unit_level) unit_id += unit_level;
                 if (is_commander(unit_id)) {
-                    current_deck['commander'] = unit_id + unit_level;
+                    current_deck.commander = unit_id;
                 } else {
-                    current_deck['deck'].push(unit_id);
-                    while (copies > 1) {
-                        current_deck['deck'].push(unit_id);
+                    while (copies > 0) {
+                        current_deck.deck.push(unit_id);
                         copies--;
                     }
                 }
@@ -889,38 +817,27 @@ function load_deck_from_cardlist(list) {
             }
 
             // Use abbreviation if available
-            current_card = current_card.toLowerCase();
-            current_card = current_card.toString().replace(/\s/g, '');
-            current_card = current_card.toString().replace(/-/g, '');
-            current_card = current_card.toString().replace(/\'/g, '');
+            current_card = clean_name_for_matching(current_card);
             if (abbreviations[current_card]) current_card = abbreviations[current_card];
-            current_card = current_card.toLowerCase();
-            current_card = current_card.toString().replace(/\s/g, '');
-            current_card = current_card.toString().replace(/-/g, '');
-            current_card = current_card.toString().replace(/\'/g, '');
+            current_card = clean_name_for_matching(current_card);
 
             // Match full name if available
             for (var k in unit_definitions) {
                 var card = unit_definitions[k];
-                unit_id = card['id'];
-                var current_name = card['name'].toLowerCase();
-                current_name = current_name.toString().replace(/[\&]/g, ',');
-                current_name = current_name.toString().replace(/[\.\!\?]/g, '');
-                current_name = current_name.toString().replace(/\s/g, '');
-                current_name = current_name.toString().replace(/-/g, '');
-                current_name = current_name.toString().replace(/\'/g, '');
+                unit_id = card.id;
+                var current_name = clean_name_for_matching(card.name);
 
                 if (current_name == current_card) {
                     var fullID = unit_id + unit_level;
                     if (is_commander(unit_id) && copies == 1) {
-                        current_deck['commander'] = fullID;
+                        current_deck.commander = fullID;
                     } else {
                         if (priority_id > 0) {
                             fullID += ',' + priority_id;
                         }
-                        current_deck['deck'].push(fullID);
+                        current_deck.deck.push(fullID);
                         while (copies > 1) {
-                            current_deck['deck'].push(fullID);
+                            current_deck.deck.push(fullID);
                             copies--;
                         }
                     }
@@ -931,19 +848,14 @@ function load_deck_from_cardlist(list) {
             if (card_found) continue;
 
             // If no commanders yet, match partial name to commanders if available
-            if (!current_deck['commander'] && copies == 1) {
+            if (!current_deck.commander && copies == 1) {
                 for (var k in unit_definitions) {
                     var card = unit_definitions[k];
-                    unit_id = card['id'];
+                    unit_id = card.id;
                     if (!is_commander(unit_id)) continue;
-                    current_name = card['name'].toLowerCase();
-                    current_name = current_name.toString().replace(/[\&]/g, ',');
-                    current_name = current_name.toString().replace(/[\.\!\?]/g, '');
-                    current_name = current_name.toString().replace(/\s/g, '');
-                    current_name = current_name.toString().replace(/-/g, '');
-                    current_name = current_name.toString().replace(/\'/g, '');
+                    var current_name = clean_name_for_matching(card.name);
                     if (current_name.indexOf(current_card) != -1) {
-                        current_deck['commander'] = unit_id + unit_level;
+                        current_deck.commander = unit_id + unit_level;
                         card_found = true;
                         break;
                     }
@@ -954,19 +866,14 @@ function load_deck_from_cardlist(list) {
             // Match partial name to non-commanders if available
             for (var k in unit_definitions) {
                 var card = unit_definitions[k];
-                unit_id = card['id'];
+                unit_id = card.id;
                 if (is_commander(unit_id)) continue;
-                current_name = card['name'].toLowerCase();
-                current_name = current_name.toString().replace(/[\&]/g, ',');
-                current_name = current_name.toString().replace(/[\.\!\?]/g, '');
-                current_name = current_name.toString().replace(/\s/g, '');
-                current_name = current_name.toString().replace(/-/g, '');
-                current_name = current_name.toString().replace(/\'/g, '');
+                var current_name = clean_name_for_matching(card.name);
                 if (current_name.indexOf(current_card) != -1) {
                     var fullID = unit_id + unit_level + ((priority_id > 0) ? ',' + priority_id : '');
-                    current_deck['deck'].push(fullID);
+                    current_deck.deck.push(fullID);
                     while (copies > 1) {
-                        current_deck['deck'].push(fullID);
+                        current_deck.deck.push(fullID);
                         copies--;
                     }
                     card_found = true;
@@ -977,27 +884,38 @@ function load_deck_from_cardlist(list) {
         }
     }
 
-	// Default commander to Cyrus if none found
-	if (!current_deck['commander']) {
-	    current_deck['commander'] = "202"; // Elaria Captain
+    // Default commander to Elaria Captain if none found
+	if (!current_deck.commander) {
+	    current_deck.commander = "202";
 	}
 
 	return current_deck;
 }
 
+function clean_name_for_matching(name) {
+    name = name.toLowerCase();
+    name = name.toString().replace(/[\&]/g, ',');
+    name = name.toString().replace(/[\.\!\?]/g, '');
+    name = name.toString().replace(/\s/g, '');
+    name = name.toString().replace(/-/g, '');
+    name = name.toString().replace(/\'/g, '');
+    return name;
+}
+
+function add_to_deck(card) {
+
+}
+
 // Load mission deck
 function load_deck_mission(id) {
-	if (!missions) return 0;
-	if (!missions['root']) return 0;
-	if (!missions['root']['mission']) return 0;
-	if (!missions['root']['mission'][id]) return 0;
-
-	var missionInfo = missions['root']['mission'][id];
+	
+	var missionInfo = missions.root.mission[id];
+	if (!missionInfo) return 0;
 
 	var current_deck = [];
-	current_deck['deck'] = [];
-	current_deck['commander'] = missionInfo['commander'] + "(6)";   // Set commander to max level
-	var missionDeck = missionInfo['deck'];
+	current_deck.deck = [];
+	current_deck.commander = missionInfo.commander + "(6)";   // Set commander to max level
+	var missionDeck = missionInfo.deck;
 	for (var current_key in missionDeck) {
 	    var current_card = missionDeck[current_key];
         // Upgrade all cards to max fusion/level
@@ -1006,7 +924,7 @@ function load_deck_mission(id) {
 	    } else {
 	        current_card = '2' + current_card;
 	    }
-	    current_deck['deck'].push(current_card + "(6)");
+	    current_deck.deck.push(current_card + "(6)");
 	}
 	return current_deck;
 }
@@ -1014,90 +932,43 @@ function load_deck_mission(id) {
 // Load raid deck
 // - randomize it as required
 function load_deck_raid(id) {
-	if (!raids) return 0;
-	if (!raids['root']) return 0;
-	if (!raids['root']['raid']) return 0;
-	if (!raids['root']['raid'][id]) return 0;
+
+	var raid = raids.root.raid[id];
+	if (!raid) return 0;
 
 	// Load battleground, if available
-	if (raids['root']['raid'][id]['effect'] && !getbattleground) {
-		battleground = quests['root']['battleground'][raids['root']['raid'][id]['effect']]['effect'];
-		getbattleground = raids['root']['raid'][id]['effect'];
+	if (raid.effect && !getbattleground) {
+	    battleground = quests.root.battleground[raid.effect.effect];
+		getbattleground = raid.effect;
 	}
 
 	var current_deck = [];
-	current_deck['deck'] = [];
-	current_deck['commander'] = raids['root']['raid'][id]['commander'];
+	current_deck.deck = [];
+	current_deck.commander = raid.commander;
 
 	// Always included raid cards
-	var current_pool = raids['root']['raid'][id]['deck']['always_include'];
-	if (current_pool && current_pool['card']) {
-		current_pool = current_pool['card'];
+	var current_pool = raid.deck.always_include;
+	if (current_pool && current_pool.card) {
+		current_pool = current_pool.card;
 		for (var current_key in current_pool) {
 			var current_card = current_pool[current_key];
-			current_deck['deck'].push(current_card);
+			current_deck.deck.push(current_card);
 		}
 	}
 
 	// Variable Card Pools
-	var parent_pool = raids['root']['raid'][id]['deck']['card_pool'];
+	var parent_pool = raid.deck.card_pool;
 	if (parent_pool) {
 		for (var pool_key in parent_pool) {
 			current_pool = parent_pool[pool_key];
-			if (current_pool && current_pool['card']) {
-				var amount = current_pool['amount'];
-				var current_pool_cards = copy_card_list(current_pool['card']);
+			if (current_pool && current_pool.card) {
+				var amount = current_pool.amount;
+				var current_pool_cards = copy_card_list(current_pool.card);
 				shuffle(current_pool_cards);
 				for (var current_key in current_pool_cards) {
 					if (amount < 1) break;
 					var current_card = current_pool_cards[current_key];
-					current_deck['deck'].push(current_card);
-					amount--;
-				}
-			}
-		}
-	}
-	return current_deck;
-}
-
-// Load quest deck
-// - randomize it as required
-function load_deck_quest(id) {
-	if (!quests) return 0;
-	if (!quests['root']) return 0;
-	if (!quests['root']['step']) return 0;
-	if (!quests['root']['step'][id]) return 0;
-
-	// Load battleground
-	battleground = quests['root']['battleground'][quests['root']['step'][id]['battleground_id']]['effect'];
-
-	var current_deck = [];
-	current_deck['deck'] = [];
-	current_deck['commander'] = quests['root']['step'][id]['commander'];
-
-	// Always included quest cards
-	var current_pool = quests['root']['step'][id]['deck']['always_include'];
-	if (current_pool && current_pool['card']) {
-		current_pool = current_pool['card'];
-		for (var current_key in current_pool) {
-			var current_card = current_pool[current_key];
-			current_deck['deck'].push(current_card);
-		}
-	}
-
-	// Variable Card Pools
-	var parent_pool = quests['root']['step'][id]['deck']['card_pool'];
-	if (parent_pool) {
-		for (var pool_key in parent_pool) {
-			current_pool = parent_pool[pool_key];
-			if (current_pool && current_pool['card']) {
-				var amount = current_pool['amount'];
-				var current_pool_cards = copy_card_list(current_pool['card']);
-				shuffle(current_pool_cards);
-				for (var current_key in current_pool_cards) {
-					if (amount < 1) break;
-					var current_card = current_pool_cards[current_key];
-					current_deck['deck'].push(current_card);
+					current_deck.deck.push(current_card);
 					amount--;
 				}
 			}
@@ -1114,29 +985,28 @@ function get_card_by_id(id, unit_level) {
         unit_level = 0;
         var levelStart = 0;
         if (isNaN(id)) {
-            levelStart = id.indexOf('(');
-            if (levelStart != -1 && id.indexOf(')') != -1) {
-                unit_level = id.substr(levelStart);
-                unit_level = unit_level.substr(0, unit_level.indexOf(')') + 1);
-                id = id.substr(0, levelStart)
+            var match = id.match(/\(([1-9]+)\).*/);
+            if (match) {
+                unit_level = match[1];
+                id = id.substr(0, id.length - match[0].length);
             }
         }
     }
 
-	var current_card = CARDS['root']['unit'][id];
+	var current_card = CARDS.root.unit[id];
 
 	// Not a valid card
 	if (!current_card) {
 		current_card = [];
-		current_card['id'] = undefined;
-		current_card['name'] = undefined;
-		current_card['health'] = undefined;
-		current_card['skill'] = [];
+		current_card.id = undefined;
+		current_card.name = undefined;
+		current_card.health = undefined;
+		current_card.skill = [];
 		return current_card;
 	} else {
 		// Add empty skill array to prevent skill condition-checking errors
-		if (!current_card['skill']) {
-			current_card['skill'] = [];
+		if (!current_card.skill) {
+			current_card.skill = [];
 		}
 		return MakeAssault(current_card, unit_level);
 	}
@@ -1155,7 +1025,7 @@ function get_slim_card_by_id(id, getSkills) {
         }
     }
 
-	var current_card = CARDS['root']['unit'][id];
+	var current_card = CARDS.root.unit[id];
 	var new_card = [];
 	// Not a valid card
 	if (!current_card) {
@@ -1168,7 +1038,7 @@ function get_slim_card_by_id(id, getSkills) {
 		new_card.rarity = undefined;
 		new_card.level = undefined;
 		new_card.maxLevel = undefined;
-		if(getSkills) new_card['skill'] = [];
+		if(getSkills) new_card.skill = [];
 	} else {
 		new_card.id = current_card.id;
 		new_card.name = current_card.name;
@@ -1176,7 +1046,7 @@ function get_slim_card_by_id(id, getSkills) {
 		new_card.card_type = current_card.card_type;
 		new_card.type = current_card.type;
 		new_card.sub_type = current_card.sub_type;
-		new_card.maxLevel = current_card.maxLevel;
+		new_card.maxLevel = GetMaxLevel(current_card);
 		if (unit_level) {
 		    new_card.level = unit_level.replace(/[\(\)]/g, '');
 		    if (new_card.level > new_card.maxLevel) new_card.level = new_card.maxLevel;
@@ -1195,17 +1065,27 @@ function get_slim_card_by_id(id, getSkills) {
 	return new_card;
 }
 
+function GetMaxLevel(original_card) {
+    if (original_card.maxLevel) return original_card.maxLevel;
+    original_card.maxLevel = 1;
+    var upgrades = original_card.upgrades;
+    if (upgrades) for (key in upgrades) {
+        if (upgrades.hasOwnProperty(key)) original_card.maxLevel++;
+    }
+    return original_card.maxLevel;
+}
+
 // Output card name
 function get_card_name_by_id(id) {
-	var card = CARDS['root']['unit'][id];
+	var card = CARDS.root.unit[id];
 	if (!card) return 0;
-	else if (card['set'] == 5002) return card['name'] + '*';
-	else return card['name'];
+	else if (card.set == 5002) return card.name + '*';
+	else return card.name;
 }
 
 
 //Card ID is ...
 function is_commander(id) {
-    var card = CARDS['root']['unit'][id];
+    var card = CARDS.root.unit[id];
     return (card && card.card_type == '1');
 }
