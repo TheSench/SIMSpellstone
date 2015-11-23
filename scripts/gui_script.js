@@ -224,7 +224,8 @@ function onpageload() {
 	document.title = "SimSpellstone " + text_version + " - The Spellstone Simulator that runs from your browser!";
 
 	var version_label = document.getElementById('version_label');
-	if (use_workers) {
+	if (battle_sim) {}
+	else if (use_workers) {
 	    document.getElementById("user_controlled").style.visibility = "hidden";
 	    document.getElementById("unavailable").style.visibility = "visible";
 

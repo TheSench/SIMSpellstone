@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title id="title_tag">SimSpellstone - The Spellstone Simulator that runs from your browser!</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="styles/card.css">
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <!-- This script contains the cached data for cards, missions, quests, raids,
+        and battlegrounds -->
+    <script id="cards_script" type="text/javascript" src="cards/cache.js"></script>
+
+    <!-- This script contains version info that changes each update -->
+    <script id="common_variables" type="text/javascript" src="scripts/common.js"></script>
+
+    <script id="shared_functions" type="text/javascript" src="scripts/shared.js"></script>
+
+    <script id="single_threaded_simulator" type="text/javascript" src="scripts/card_battle.js"></script>
+
+    <!-- These are the generic functions/variables used to simulate battles.
+    All of the logic for simulating a single battle goes in here.
+    -->
+    <script id="simulator_base" type="text/javascript" src="scripts/simulator_base.js"></script>
+
+    <!-- This script handles the base GUI functionality (getting user input and displaying simulation). -->
+    <script id="gui_script" type="text/javascript" src="scripts/gui_script.js"></script>
+
+    <!-- This script handles drawing the UI for user-controlled mode. -->
+    <script id="gui_script" type="text/javascript" src="scripts/cards_gui.js"></script>
+
+    <script id="gui_script" type="text/javascript" src="scripts/saved_decks.js"></script>
+
+    <!-- SIMULATOR CODE ENDS HERE -->
+
+</head>
+<body onload="onpageload()">
+    <input type="button" onclick="toggle_u()" value="Toggle Gray Text" />
+    <br>
+    <h1 id="version_label">SimSpellstone</h1>
+    <h4 id="version_label2"></h4>
+    <br>
+    <span id="ui">
+        <form>
+            <div><b>Card List:</b></div><input id="cardlist" type="text" value="" size="100" maxlength="500"><br>
+            <div>&nbsp;</div><font color="#666"><strong>Card list example:</strong> Urs(5), Matriarch(5), Fire Devil(4); Smelted Skeleton(4)x2, Outrunner(4)x3</font><br>
+            <br>
+            <hr>
+            <br>
+            <div><i>Enemy Card List:</i></div><input id="cardlist2" type="text" value="" size="100" maxlength="500"><br>
+            <div>&nbsp;</div><font color="#666"><strong>Card list example:</strong> Urs(5), Matriarch(5), Fire Devil(4), Smelted Skeleton(4)x2, Outrunner(4)x3</font><br>
+            <br>
+            <div><i>Mission (7*):</i></div>
+            <select id="mission"><option value="" /></select><br>
+            <br>
+            <div>Ordered Enemy Deck:</div><input type="checkbox" id="ordered2">
+            <div><u>Exact Order (ignore 3-card hand rule):</u></div><input type="checkbox" id="exactorder2"><br>
+            <div>Castle Siege:</div><input type="checkbox" id="siege"><input type="NUMBER" id="tower_level" min="1" max="15" step="1" value="10" size="6"><br>
+            <div>Surge Mode:</div><input type="checkbox" id="surge"><br>
+            <br>
+            <div><i>Battleground:</i></div>
+            <div id="battleground" style="overflow: auto; width: 200px; height: 80px; border: 1px solid #336699; padding-left: 5px; text-align: left; "></div>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <div>Debug Mode:</div><input type="checkbox" id="debug"><br>
+            <br>
+            <div>&nbsp;</div><input id="btn_simulate" type="button" value="Simulate" onclick="return startsim();" style="text-align: center; font-weight: bold;">
+        </form>
+    </span>
+    <br>
+    <span id="content"></span>
+    <br>
+    <span id="cardSpace"></span>
+    <br>
+    <span id="stop" style="display: none;"><input type="button" value="Stop Sim(s)" onclick="stopsim()"><br>TIP: Switching browser tabs may cause your simulation to pause!</span>
+</body>
+</html>
