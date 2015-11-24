@@ -554,15 +554,50 @@ function generate_card_list(deck) {
 	return cardlist;
 }
 
+var base64chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 /+';
+var base96chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"#$%&'()*+,--.//:;<=>?@[\\]^_`{|}~";
+var fusionChars = '-*';
+
+function base96pair_to_decimal(pair) {
+    
+    // Make sure we have valid characters
+    var decimal = 0 + ((base64chars.indexOf(pair.substr(0, 1)) * 64) + base64chars.indexOf(pair.substr(1, 1)));
+    var upgradeFusionIndex = pair[0];
+    var fusion = Math.floor(upgradeFusionIndex / 7);
+    var level = upgradeFusionIndex % 7;
+    var baseID = base64chars.indexOf(pair[1] * 96) + base64chars.indexOf(pair[2]);
+    if (fusion > 0) {
+        baseID = fusion + "" + baseID;
+    }
+    return baseID + "(" + level + ")";
+}
+
+function decimal_to_base96pair(decimal, no_extra) {
+    var id_parts = get_id_parts(decimal);
+    var baseID = id_parts[0];
+    var level = id_parts[1];
+    var fusion = '0';
+    if (baseID.length > 4) {
+        fusion = baseID[baseID[0]];
+        baseID = baseID.substr(1);
+    }
+    var upgradeFusionIndex = level + (fusion * 7);
+    var char1 = base96chars[upgradeFusionIndex]
+    baseID = baseID % 9216;
+    var char2 = base96chars[Math.floor(baseID / 96)];
+    var char3 = base96chars[baseID % 96];
+    if (char1 == undefined || char2 == undefined || char3 == undefined) return '';
+    else return char1 + char2 + char3;
+}
+
 function base64pair_to_decimal(pair) {
-	var base64 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 /+';
 
 	// Make sure we have two characters
 	if (pair.length != 2) return 0;
 
 	// Make sure we have valid characters
-	var decimal = 0 + ((base64.indexOf(pair.substr(0, 1))*64) + base64.indexOf(pair.substr(1, 1)));
-	// Support both "+" and " " characters
+	var decimal = 0 + ((base64chars.indexOf(pair.substr(0, 1)) * 64) + base64chars.indexOf(pair.substr(1, 1)));
+	// Support both "+" and "*" characters
 	if (pair.substr(0, 1) == '+') decimal -= 128;
 	if (pair.substr(1, 1) == '+') decimal -= 2;
 
@@ -571,24 +606,85 @@ function base64pair_to_decimal(pair) {
 }
 
 function decimal_to_base64pair(decimal, no_extra) {
-	var offset = false;
-	var extra_char = '';
-	if (decimal > 4000 && !no_extra) {
-		offset = 4000;
-		decimal -= 4000;
-		extra_char = '-';
+    var id_parts = get_id_parts(decimal);
+    var baseID = id_parts[0];
+    var level = id_parts[1];
+    var fusion = '';
+    if (baseID.length > 4) {
+        fusion = fusionChars[baseID[0]];
+	    baseID = baseID.substr(1);
 	}
-	var base64 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
-	var first_char = base64.substr(Math.floor(decimal/64),1);
-	var second_char = base64.substr(decimal%64,1);
-	if (first_char == undefined || second_char == undefined) return '';
-	else return extra_char + '' + first_char + '' + second_char;
+    var char1 = base64chars.substr(Math.floor(baseID / 4096), 1);
+    baseID = baseID % 4096;
+    var char2 = base64chars.substr(Math.floor(baseID / 64), 1);
+    var char3 = base64chars.substr(baseID % 64, 1);
+	if (char1 == undefined || char2 == undefined || char3 == undefined) return '';
+	else return fusion + char1 + char2 + char3;
 }
+
 
 //Returns hash built from deck array
 function hash_encode(deck) {
 
-	var base64 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
+    var current_hash = '';
+    var has_priorities = false;
+
+    if (deck.commander) {
+        current_hash += decimal_to_base96pair(deck.commander);
+    }
+
+    for (var k in deck.deck) {
+        var current_card = deck.deck[k];
+        if (isNaN(current_card) && current_card.indexOf(',') != -1) {
+            has_priorities = true;
+            current_card = current_card.split(',');
+            current_card = current_card[0];
+        }
+        current_hash += decimal_to_base96pair(current_card);
+    }
+    /*
+    if (has_priorities) {
+        current_hash += '|';
+        for (var k in deck.deck) {
+            var current_card = deck.deck[k];
+            if (isNaN(current_card) && current_card.indexOf(',') != -1) {
+                var current_priority = current_card.split(',');
+                current_priority = parseInt(current_priority[1]);
+                current_hash += '' + current_priority;
+            } else {
+                current_hash += '0';
+            }
+        }
+    }
+    */
+    return current_hash;
+}
+
+//Returns deck array built from hash
+function hash_decode(hash) {
+
+    var current_deck = [];
+    current_deck.deck = [];
+    for (var i = 0; i < hash.length; i += 3) {
+        // Make sure we have valid characters
+        var current_id = offset + base96pair_to_decimal(hash.substr(i, 3));
+
+        // Repeat previous card multiple times
+        if (is_commander(current_id)) {
+            current_deck.commander = current_id;
+            // Add to deck
+        } else {
+            current_deck.deck.push(current_id);
+        }
+    }
+
+    return current_deck;
+}
+
+/*
+//Returns hash built from deck array
+function hash_encode(deck) {
+
 	var current_hash = '';
 	var has_priorities = false;
 
@@ -738,7 +834,7 @@ function hash_decode(hash) {
 
 	return current_deck;
 }
-
+*/
 // Convert card list into an actual deck
 // - assume that first card is always commander
 // - possible delimiters include ; , :
@@ -982,15 +1078,10 @@ function load_deck_raid(id) {
 function get_card_by_id(id, unit_level) {
 
     if (typeof unit_level === 'undefined') {
-        unit_level = 0;
-        var levelStart = 0;
-        if (isNaN(id)) {
-            var match = id.match(/\(([1-9]+)\).*/);
-            if (match) {
-                unit_level = match[1];
-                id = id.substr(0, id.length - match[0].length);
-            }
-        }
+        unit_level = 99;
+        var parts = get_id_parts(id);
+        id = parts[0];
+        unit_level = parts[1];
     }
 
 	var current_card = CARDS.root.unit[id];
@@ -1010,6 +1101,18 @@ function get_card_by_id(id, unit_level) {
 		}
 		return MakeAssault(current_card, unit_level);
 	}
+}
+
+function get_id_parts(id) {
+    var level = "99";
+    if (isNaN(id)) {
+        var match = id.match(/\(([1-9]+)\).*/);
+        if (match) {
+            level = match[1];
+            id = id.substr(0, id.length - match[0].length);
+        }
+    }
+    return [id, level];
 }
 
 function get_slim_card_by_id(id, getSkills) {
