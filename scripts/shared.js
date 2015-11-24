@@ -554,11 +554,12 @@ function generate_card_list(deck) {
     return cardlist;
 }
 
-var base64chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 /+';
+var base64chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!~-";
+var multiplierChars = "_*.'";
 
 function base64triplet_to_decimal(triplet) {
 
-    if (triplet.length != 3) return "0";
+    if (triplet.length != 3) return false;
 
     var dec1 = base64chars.indexOf(triplet[0]);
     var level = (dec1 % 7) + 1;
@@ -591,6 +592,22 @@ function decimal_to_base64triplet(decimal) {
     return char1 + char2 + char3;
 }
 
+function encode_multiplier(copies) {
+    copies = copies - 2;    // Encoded as "2 + value"
+    if(copies > 256) {
+        return "";
+    }
+    var char1 = multiplierChars[Math.floor(copies/64)];
+    var char2 = base64chars[copies % 64];
+    return char1 + char2;
+}
+
+function decode_multiplier(encoded) {
+    var dec1 = multiplierChars.indexOf(encoded[0]) * 64;
+    var dec2 = base64chars.indexOf(encoded[1]);
+    return dec1 + dec2;
+}
+
 
 //Returns hash built from deck array
 function hash_encode(deck) {
@@ -601,7 +618,8 @@ function hash_encode(deck) {
     if (deck.commander) {
         current_hash.push(decimal_to_base64triplet(deck.commander));
     }
-
+    var copies = [1];
+    var lastIndex = 0;
     for (var k in deck.deck) {
         var current_card = deck.deck[k];
         if (isNaN(current_card) && current_card.indexOf(',') != -1) {
@@ -609,7 +627,14 @@ function hash_encode(deck) {
             current_card = current_card.split(',');
             current_card = current_card[0];
         }
-        current_hash.push(decimal_to_base64triplet(current_card));
+        var triplet = decimal_to_base64triplet(current_card);
+        if (triplet == current_hash[lastIndex]) {
+            copies[lastIndex]++;
+        } else {
+            current_hash.push(triplet);
+            copies.push(1);
+            lastIndex++;
+        }
     }
     /*
     if (has_priorities) {
@@ -626,6 +651,12 @@ function hash_encode(deck) {
         }
     }
     */
+    for (var i = 0; i < copies.length; i++) {
+        var num = copies[i];
+        if (num > 1) {
+            current_hash[i] += encode_multiplier(num);
+        }
+    }
     current_hash = current_hash.join("");
 
     return current_hash;
@@ -636,17 +667,36 @@ function hash_decode(hash) {
 
     var current_deck = [];
     current_deck.deck = [];
+    var current_id;
     for (var i = 0; i < hash.length; i += 3) {
-        // Make sure we have valid characters
-        var current_id = base64triplet_to_decimal(hash.substr(i, 3));
+        if (multiplierChars.indexOf(hash[i]) == -1) {
+            // Make sure we have valid characters
+            current_id = base64triplet_to_decimal(hash.substr(i, 3));
 
-        // Repeat previous card multiple times
-        if (is_commander(get_id_parts(current_id)[0])) {
-            current_deck.commander = current_id;
-            // Add to deck
+            if (current_id) {
+                var id = get_id_parts(current_id)[0];
+                if (CARDS.root.unit[id]) {
+                    // Repeat previous card multiple times
+                    if (is_commander(id)) {
+                        current_deck.commander = current_id;
+                        // Add to deck
+                    } else {
+                        current_deck.deck.push(current_id);
+                    }
+                }
+            }
         } else {
-            current_deck.deck.push(current_id);
+            var multiplier = decode_multiplier(hash.substr(i, 2)) + 1;
+            for (var n = 0; n < multiplier; n++) {
+                current_deck.deck.push(current_id);
+            }
+            i -= 1; // Offset i so that the += 3 in the loop sets it to the correct next index
         }
+    }
+
+    // Default commander to Elaria Captain if none found
+    if (!current_deck.commander) {
+        current_deck.commander = "202";
     }
 
     return current_deck;
@@ -682,7 +732,7 @@ function load_deck_from_cardlist(list) {
         for (var i in list) {
             var current_card = list[i].toString();
             var unit_id = 0;
-            var unit_level = '(99)'; // Default all cards to max leve if none is specified
+            var unit_level = '(7)'; // Default all cards to max leve if none is specified
             var card_found = false;
             var current_card_upgraded = false;
 
@@ -921,7 +971,7 @@ function get_card_by_id(id, unit_level) {
 }
 
 function get_id_parts(id) {
-    var level = "99";
+    var level = "7";
     if (isNaN(id)) {
         var match = id.match(/\(([1-9]+)\).*/);
         if (match) {
