@@ -262,7 +262,6 @@ var startsim = function (autostart) {
 	if (loss_debug && mass_debug) mass_debug = false;
 	getdeck = document.getElementById('deck').value;
 	getcardlist = document.getElementById('cardlist').value;
-	if (!getdeck && !getcardlist) getdeck = 'Po';
 	getdeck2 = document.getElementById('deck2').value;
 	getcardlist2 = document.getElementById('cardlist2').value;
 	getordered = document.getElementById('ordered').checked;
@@ -284,7 +283,6 @@ var startsim = function (autostart) {
 	    }
 	    getbattleground = getbattleground.join();
 	}
-	if (!getdeck2 && !getmission && !getcardlist2) getdeck2 = 'Po';
 	surge = document.getElementById('surge').checked;
 
 	// Hide interface
@@ -304,9 +302,9 @@ var startsim = function (autostart) {
 	}
 
 	// Load enemy deck
-	/*if (getdeck2) {
+	if (getdeck2) {
 		cache_cpu_deck = hash_decode(getdeck2);
-	} else*/ if (getcardlist2) {
+	} else if (getcardlist2) {
 		cache_cpu_deck = load_deck_from_cardlist(getcardlist2);
 	} else if (getmission) {
 	    cache_cpu_deck = load_deck_mission(getmission);
