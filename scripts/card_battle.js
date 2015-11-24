@@ -1,88 +1,82 @@
 // Initialize simulation loop - runs once per simulation session
 var startsim = function (autostart) {
 
-    if (_GET('autolink') && !autostart) {
-        window.location.href = generate_link(1, 1);
-        return false;
-    }
+	if (_GET('autolink') && !autostart) {
+		window.location.href = generate_link(1, 1);
+		return false;
+	}
 
-    clearCardSpace();
+	clearCardSpace();
 
-    total_turns = 0;
-    time_start = new Date();
-    time_stop = 0;
-    echo = '';
-    games = 0;
-    sims_left = 1;
-    user_controlled = true;
-    debug = document.getElementById('debug').checked;
-    getdeck = document.getElementById('deck').value;
-    getcardlist = document.getElementById('cardlist').value;
-    getdeck2 = document.getElementById('deck2').value;
-    getcardlist2 = document.getElementById('cardlist2').value;
-    getordered2 = document.getElementById('ordered2').checked;
-    getexactorder2 = document.getElementById('exactorder2').checked;
-    getmission = document.getElementById('mission').value;
-    getsiege = document.getElementById('siege').checked;
-    tower_level = document.getElementById('tower_level').value;
-    if (quests && quests.root && quests.root.battleground) {
-        getbattleground = [];
-        for (var key in quests.root.battleground) {
-            var battleground = quests.root.battleground[key];
-            var checkbox = document.getElementById('battleground_' + battleground.id);
-            if (checkbox && checkbox.checked) {
-                getbattleground.push(battleground.id);
-            }
-        }
-        getbattleground = getbattleground.join();
-    }
-    surge = document.getElementById('surge').checked;
+	total_turns = 0;
+	time_start = new Date();
+	time_stop = 0;
+	echo = '';
+	games = 0;
+	sims_left = 1;
+	user_controlled = true;
+	debug = document.getElementById('debug').checked;
+	getcardlist = document.getElementById('cardlist').value;
+	getcardlist2 = document.getElementById('cardlist2').value;
+	getordered2 = document.getElementById('ordered2').checked;
+	getexactorder2 = document.getElementById('exactorder2').checked;
+	getmission = document.getElementById('mission').value;
+	getsiege = document.getElementById('siege').checked;
+	tower_level = document.getElementById('tower_level').value;
+	if (quests && quests.root && quests.root.battleground) {
+	    getbattleground = [];
+	    for (var key in quests.root.battleground) {
+	        var battleground = quests.root.battleground[key];
+	        var checkbox = document.getElementById('battleground_' + battleground.id);
+	        if (checkbox && checkbox.checked) {
+	            getbattleground.push(battleground.id);
+	        }
+	    }
+	    getbattleground = getbattleground.join();
+	}
+	surge = document.getElementById('surge').checked;
 
-    // Hide interface
-    document.getElementById('ui').style.display = 'none';
+	// Hide interface
+	document.getElementById('ui').style.display = 'none';
 
-    // Display stop button
-    document.getElementById('stop').style.display = 'block';
+	// Display stop button
+	document.getElementById('stop').style.display = 'block';
 
-    // Cache decks where possible
-    // Load player deck
-    if (getdeck) {
-        cache_player_deck = hash_decode(getdeck);
-    } else if (getcardlist) {
-        cache_player_deck = load_deck_from_cardlist(getcardlist);
-    } else {
-        cache_player_deck = load_deck_from_cardlist();
-    }
+	// Cache decks where possible
+	// Load player deck
+	if (getcardlist) {
+	    cache_player_deck = load_deck_from_cardlist(getcardlist);
+	} else {
+	    cache_player_deck = load_deck_from_cardlist();
+	}
 
-    max_turns = 50;
+	max_turns = 50;
 
-    // Load enemy deck
-    if (getdeck2) {
-        cache_cpu_deck = hash_decode(getdeck2);
-    } else if (getcardlist2) {
-        cache_cpu_deck = load_deck_from_cardlist(getcardlist2);
-    } else if (getmission) {
-        cache_cpu_deck = load_deck_mission(getmission);
-    } else {
-        cache_cpu_deck = load_deck_from_cardlist();
-    }
+	// Load enemy deck
+	if (getcardlist2) {
+		cache_cpu_deck = load_deck_from_cardlist(getcardlist2);
+	} else if (getmission) {
+		cache_cpu_deck = load_deck_mission(getmission);
+	} else {
+	    cache_cpu_deck = load_deck_from_cardlist();
+	}
 
-    card_cache = {};
+	card_cache = {};
 
-    wins = 0;
-    losses = 0;
-    draws = 0;
+	wins = 0;
+	losses = 0;
+	draws = 0;
 
-    outp('<strong>Initializing simulations...</strong>');
+	outp('<strong>Initializing simulations...</strong>');
 
-    current_timeout = setTimeout(do_battle);
+	current_timeout = setTimeout(do_battle);
 
-    return false;
+	return false;
 }
 
 // Interrupt simulations
 var stopsim = function () {
-    draw_match_end();
+	draw_match_end();
 }
 
 // Loops through all simulations
@@ -91,7 +85,7 @@ var debug_end = function () {
     if (simulating) {
         return;
     }
-
+    
     result = processSimResult();
 
     if (result == 'draw') {
@@ -106,7 +100,6 @@ var debug_end = function () {
 }
 
 var draw_match_end = function () {
-
     draw_cards();   // Draw battlefield with no hand
 
     // Show interface
