@@ -377,9 +377,9 @@ function gettable() {
 		if (!getdeck && !getcardlist) getdeck = 'Po';
 
 		// Load player deck
-		/*if (getdeck) {
+		if (getdeck) {
 			deck.player = hash_decode(getdeck);
-		} else*/ if (getcardlist) {
+		} else if (getcardlist) {
 			deck.player = load_deck_from_cardlist(getcardlist);
 		}
 		if (deck.player) {
@@ -439,11 +439,11 @@ function generate_link(autostart, autolink) {
 	}
 
 	// Load enemy deck
-	if (getcardlist2) {
+	if (getdeck2) {
+	    deck.cpu = hash_decode(getdeck2);
+	} else if (getcardlist2) {
 		deck.cpu = load_deck_from_cardlist(getcardlist2);
-	}/* else if (getdeck2) {
-		deck.cpu = hash_decode(getdeck2);
-	}*/ else if (getmission) {
+	} else if (getmission) {
 		deck.cpu = 0;
 	}
 
