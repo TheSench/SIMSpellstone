@@ -916,7 +916,11 @@ if (simulator_thread) {
                 var drawableHand = [];
                 for (var handIdx = 0, hand_len = hand.length; handIdx < hand_len; handIdx++)
                 {
-                    var card = get_card_by_id(hand[handIdx]);
+                    var card = hand[handIdx];
+                    if (isNaN(card) && card.indexOf(',') != -1) {
+                        card = card.split(',')[0];
+                    }
+                    card = get_card_by_id(card);
                     var text = handIdx + ": " + card['name'];
                     if (card.maxLevel > 1) text += '{' + card.level + '/' + card.maxLevel + '}';
                     cardsInHand.push(text);
