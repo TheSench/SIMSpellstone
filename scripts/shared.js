@@ -366,7 +366,7 @@ function debug_dump_decks() {
 	echo += '<br>';
 	echo += '<input type="text" value="';
 	echo += hash_encode(cache_player_deck);
-	echo += '" onclick="this.select()" size="100">';
+	echo += '" onclick="this.select()" size="50">';
 	echo += '<br><br>';
 	echo += '<b>Card List:</b>';
 	echo += '<br>';
@@ -392,7 +392,7 @@ function debug_dump_decks() {
 	echo += '<br>';
 	echo += '<input type="text" value="';
 	echo += hash_encode(debug_cpu_deck);
-	echo += '" onclick="this.select()" size="100">';
+	echo += '" onclick="this.select()" size="50">';
 	echo += '<br>';
 	echo += '<u>Please note that Raid and Quest simulations randomize the enemy deck for each battle. Only one example enemy deck hash is generated.</u><br>';
 	echo += '<br>';
@@ -555,51 +555,82 @@ function generate_card_list(deck) {
 }
 
 var base64chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 /+';
+var base96chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"#$%&'()*+,--.//:;<=>?@[\\]^_`{|}~";
+var fusionChars = '-*';
 
-function base64triplet_to_decimal(triplet) {
-
-    if (triplet.length != 3) return "0";
-
-    var dec1 = base64chars.indexOf(triplet[0]);
-	var level = (dec1 % 7)+1;
-	dec1 = Math.floor(dec1 / 7);
-	var fusion = (dec1 % 3)*10000;
-	dec1 = Math.floor(dec1 / 3) * 4096;
-
-	var dec2 = base64chars.indexOf(triplet[1]) * 64;
-	var dec3 = base64chars.indexOf(triplet[2]);
-
-	var id = (fusion + dec1 + dec2 + dec3) + "(" + level + ")";
-	return id;
+function base96pair_to_decimal(pair) {
+    
+    // Make sure we have valid characters
+    var decimal = 0 + ((base64chars.indexOf(pair.substr(0, 1)) * 64) + base64chars.indexOf(pair.substr(1, 1)));
+    var upgradeFusionIndex = pair[0];
+    var fusion = Math.floor(upgradeFusionIndex / 7);
+    var level = upgradeFusionIndex % 7;
+    var baseID = base64chars.indexOf(pair[1] * 96) + base64chars.indexOf(pair[2]);
+    if (fusion > 0) {
+        baseID = fusion + "" + baseID;
+    }
+    return baseID + "(" + level + ")";
 }
 
-function decimal_to_base64triplet(decimal) {
-
+function decimal_to_base96pair(decimal, no_extra) {
     var id_parts = get_id_parts(decimal);
-    var baseID = parseInt(id_parts[0]);
-    var level = (parseInt(id_parts[1]) - 1);
+    var baseID = id_parts[0];
+    var level = id_parts[1];
+    var fusion = '0';
+    if (baseID.length > 4) {
+        fusion = baseID[baseID[0]];
+        baseID = baseID.substr(1);
+    }
+    var upgradeFusionIndex = level + (fusion * 7);
+    var char1 = base96chars[upgradeFusionIndex]
+    baseID = baseID % 9216;
+    var char2 = base96chars[Math.floor(baseID / 96)];
+    var char3 = base96chars[baseID % 96];
+    if (char1 == undefined || char2 == undefined || char3 == undefined) return '';
+    else return char1 + char2 + char3;
+}
 
-    var fusion = Math.floor(baseID / 10000);
-    baseID %= 10000;
+function base64pair_to_decimal(pair) {
 
-    var char1 = base64chars[(Math.floor(baseID / 4096) * 3 + fusion) * 7 + level];
-    baseID %= 4096;
+	// Make sure we have two characters
+	if (pair.length != 2) return 0;
 
-    var char2 = base64chars[Math.floor(baseID / 64)];
-    var char3 = base64chars[baseID % 64];
+	// Make sure we have valid characters
+	var decimal = 0 + ((base64chars.indexOf(pair.substr(0, 1)) * 64) + base64chars.indexOf(pair.substr(1, 1)));
+	// Support both "+" and "*" characters
+	if (pair.substr(0, 1) == '+') decimal -= 128;
+	if (pair.substr(1, 1) == '+') decimal -= 2;
 
-    return char1 + char2 + char3;
+	if (decimal >= 0 && decimal <= 4095) return decimal;
+	else return 0;
+}
+
+function decimal_to_base64pair(decimal, no_extra) {
+    var id_parts = get_id_parts(decimal);
+    var baseID = id_parts[0];
+    var level = id_parts[1];
+    var fusion = '';
+    if (baseID.length > 4) {
+        fusion = fusionChars[baseID[0]];
+	    baseID = baseID.substr(1);
+	}
+    var char1 = base64chars.substr(Math.floor(baseID / 4096), 1);
+    baseID = baseID % 4096;
+    var char2 = base64chars.substr(Math.floor(baseID / 64), 1);
+    var char3 = base64chars.substr(baseID % 64, 1);
+	if (char1 == undefined || char2 == undefined || char3 == undefined) return '';
+	else return fusion + char1 + char2 + char3;
 }
 
 
 //Returns hash built from deck array
 function hash_encode(deck) {
 
-    var current_hash = [];
+    var current_hash = '';
     var has_priorities = false;
 
     if (deck.commander) {
-        current_hash.push(decimal_to_base64triplet(deck.commander));
+        current_hash += decimal_to_base96pair(deck.commander);
     }
 
     for (var k in deck.deck) {
@@ -609,7 +640,7 @@ function hash_encode(deck) {
             current_card = current_card.split(',');
             current_card = current_card[0];
         }
-        current_hash.push(decimal_to_base64triplet(current_card));
+        current_hash += decimal_to_base96pair(current_card);
     }
     /*
     if (has_priorities) {
@@ -626,8 +657,6 @@ function hash_encode(deck) {
         }
     }
     */
-    current_hash = current_hash.join("");
-
     return current_hash;
 }
 
@@ -638,10 +667,10 @@ function hash_decode(hash) {
     current_deck.deck = [];
     for (var i = 0; i < hash.length; i += 3) {
         // Make sure we have valid characters
-        var current_id = base64triplet_to_decimal(hash.substr(i, 3));
+        var current_id = offset + base96pair_to_decimal(hash.substr(i, 3));
 
         // Repeat previous card multiple times
-        if (is_commander(get_id_parts(current_id)[0])) {
+        if (is_commander(current_id)) {
             current_deck.commander = current_id;
             // Add to deck
         } else {
@@ -652,6 +681,160 @@ function hash_decode(hash) {
     return current_deck;
 }
 
+/*
+//Returns hash built from deck array
+function hash_encode(deck) {
+
+	var current_hash = '';
+	var has_priorities = false;
+
+	if (deck.commander) {
+		var current_card = deck.commander;
+		// Card ID
+		var pair = decimal_to_base64pair(current_card);
+		if (pair) current_hash += pair;
+	}
+
+	for (var k in deck.deck) {
+		var current_card = deck.deck[k];
+		if (isNaN(current_card) && current_card.indexOf(',') != -1) {
+			has_priorities = true;
+			current_card = current_card.split(',');
+			current_card = current_card[0];
+		}
+
+		// Card ID
+		var pair = decimal_to_base64pair(current_card);
+		if (!pair) continue;
+
+		// Successive multiple found exceeding ID 4000!
+		if (current_hash.length > 4 && current_hash.substr(current_hash.length-5,3) == pair && base64pair_to_decimal(current_hash.substr(current_hash.length-2)) >= 4000) {
+			var num = base64pair_to_decimal(current_hash.substr(current_hash.length-2))+1;
+			//increment count
+			pair = decimal_to_base64pair(num, true);
+			// remove last pair
+			current_hash = current_hash.substr(0,current_hash.length-2);
+			// insert new pair
+			current_hash += pair;
+		// Successive multiple found not exceeding ID 4000!
+		} else if (current_hash.length > 3 && current_hash.substr(current_hash.length-5,1) != '-' && current_hash.substr(current_hash.length-4,2) == pair && base64pair_to_decimal(current_hash.substr(current_hash.length-2)) >= 4000) {
+			var num = base64pair_to_decimal(current_hash.substr(current_hash.length-2))+1;
+			//increment count
+			pair = decimal_to_base64pair(num, true);
+			// remove last pair
+			current_hash = current_hash.substr(0,current_hash.length-2);
+			// insert new pair
+			current_hash += pair;
+		// First multiple found exceeding ID 4000!
+		} else if (current_hash.length > 2 && current_hash.substr(current_hash.length-3) == pair) {
+			// 4002 means repeat this card twice!
+			var num = 4002;
+			pair = decimal_to_base64pair(num, true);
+			current_hash += pair;
+		// First multiple found not exceeding ID 4000!
+		} else if (current_hash.length > 1 && current_hash.substr(current_hash.length-3,1) != '-' && current_hash.substr(current_hash.length-2) == pair) {
+			// 4002 means repeat this card twice!
+			var num = 4002;
+			pair = decimal_to_base64pair(num, true);
+			current_hash += pair;
+		// First of its kind!
+		} else {
+			current_hash += pair;
+		}
+	}
+
+	if (has_priorities) {
+		current_hash += '|';
+		for (var k in deck.deck) {
+			var current_card = deck.deck[k];
+			if (isNaN(current_card) && current_card.indexOf(',') != -1) {
+				var current_priority = current_card.split(',');
+				current_priority = parseInt(current_priority[1]);
+				current_hash += '' + current_priority;
+			} else {
+				current_hash += '0';
+			}
+		}
+	}
+
+	return current_hash;
+}
+
+//Returns deck array built from hash
+function hash_decode(hash) {
+
+	// If fansite URL, extract the hash
+	if (hash.indexOf('?nid=') != -1) {
+		hash = hash.substr(hash.indexOf('?nid=')+5);
+	}
+	// If fansite image URL, extract the hash
+	if (hash.indexOf('40in') != -1 && hash.indexOf('-') != -1 && hash.indexOf('.jpg') != -1) {
+		hash = hash.substr(hash.indexOf('-')+1);
+		hash = hash.substr(0,hash.length-4);
+	}
+
+	var base64 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 /+';
+	var current_deck = [];
+	current_deck.deck = [];
+	var last_id = 0;
+	var offset = false;
+	for (var i = 0; i < hash.length; i+=2) {
+
+		// Get Offset
+		if (hash.substr(i, 1) == '-') {
+			offset = 4000;
+			i++;
+		}
+
+		// Make sure we have two characters
+		if (i == hash.length) break;
+		if (base64.indexOf(hash.substr(i, 1)) == -1) break;
+		if (base64.indexOf(hash.substr(i+1, 1)) == -1) break;
+
+		// Ignore extraneous mission data from EvalDecks
+		if (hash.substr(i, 1) == '.') break;
+
+		// Ignore advanced ordering for now
+		if (hash.substr(i, 1) == '|') break;
+
+		// Make sure we have valid characters
+		var current_id = offset + base64pair_to_decimal(hash.substr(i, 2));
+
+		// Repeat previous card multiple times
+		if (current_id >= 4000 && last_id && offset == 0) {
+			var num_repeat = current_id - 4000;
+			for (var j = 1; j < num_repeat; j++) {
+				current_deck.deck.push(last_id);
+			}
+		// Change commander
+		} else if (is_commander(current_id)) {
+			current_deck.commander = current_id;
+		// Add to deck
+		} else {
+			current_deck.deck.push(current_id);
+		}
+
+		// Remember previous card
+		last_id = current_id;
+
+		// Remove offset
+		offset = false;
+	}
+
+	// Add priorities to the deck
+	if (hash.indexOf('|')) {
+		var hash_priorities = hash.split('|');
+		hash_priorities = ''+hash_priorities[1];
+		for (var i = 0; i < hash_priorities.length; i++) {
+			if (parseInt(hash_priorities.substr(i,1)) > 0 && current_deck.deck[i]) {
+				current_deck.deck[i] += ','+hash_priorities.substr(i,1);
+			}
+		}
+	}
+
+	return current_deck;
+}
+*/
 // Convert card list into an actual deck
 // - assume that first card is always commander
 // - possible delimiters include ; , :
