@@ -2,13 +2,6 @@ var use_workers = false;
 var one_worker = false;
 var simulator_thread = true;
 
-// GET variables
-function _GET(q,s) {
-	s = s ? s : window.location.search;
-	var re = new RegExp('&'+q+'(?:=([^&]*))?(?=&|$)','i');
-	return (s=s.replace(/^\?/,'&').match(re)) ? (typeof s[1] == 'undefined' ? '' : decodeURIComponent(s[1])) : undefined;
-}
-
 // If the browser doesn't support Workers (IE9 and before)
 if (typeof(Worker) === "undefined") {
 // If the browser does support workers, but doesn't support Blob URLs (Opera, pre-6.0 Safari)
