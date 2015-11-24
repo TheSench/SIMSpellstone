@@ -561,11 +561,11 @@ var fusionChars = '-*';
 function base96pair_to_decimal(pair) {
     
     // Make sure we have valid characters
-    var decimal = 0 + ((base64chars.indexOf(pair.substr(0, 1)) * 64) + base64chars.indexOf(pair.substr(1, 1)));
-    var upgradeFusionIndex = pair[0];
-    var fusion = Math.floor(upgradeFusionIndex / 7);
-    var level = upgradeFusionIndex % 7;
-    var baseID = base64chars.indexOf(pair[1] * 96) + base64chars.indexOf(pair[2]);
+    var decimal = 0 + ((base96chars.indexOf(pair.substr(0, 1)) * 64) + base96chars.indexOf(pair.substr(1, 1)));
+    var upgradeFusionIndex = base96chars.indexOf(pair[0]);
+    var fusion = upgradeFusionIndex % 7;
+    var level = Math.floor(upgradeFusionIndex / 7);
+    var baseID = base96chars.indexOf(pair[1] * 96) + base96chars.indexOf(pair[2]);
     if (fusion > 0) {
         baseID = fusion + "" + baseID;
     }
@@ -581,9 +581,8 @@ function decimal_to_base96pair(decimal, no_extra) {
         fusion = baseID[baseID[0]];
         baseID = baseID.substr(1);
     }
-    var upgradeFusionIndex = level + (fusion * 7);
+    var upgradeFusionIndex = parseInt(level) + (parseInt(fusion) * 7);
     var char1 = base96chars[upgradeFusionIndex]
-    baseID = baseID % 9216;
     var char2 = base96chars[Math.floor(baseID / 96)];
     var char3 = base96chars[baseID % 96];
     if (char1 == undefined || char2 == undefined || char3 == undefined) return '';
@@ -667,7 +666,7 @@ function hash_decode(hash) {
     current_deck.deck = [];
     for (var i = 0; i < hash.length; i += 3) {
         // Make sure we have valid characters
-        var current_id = offset + base96pair_to_decimal(hash.substr(i, 3));
+        var current_id = base96pair_to_decimal(hash.substr(i, 3));
 
         // Repeat previous card multiple times
         if (is_commander(current_id)) {
@@ -865,7 +864,7 @@ function load_deck_from_cardlist(list) {
         for (var i in list) {
             var current_card = list[i].toString();
             var unit_id = 0;
-            var unit_level = '(99)'; // Default all cards to max leve if none is specified
+            var unit_level = '(7)'; // Default all cards to max leve if none is specified
             var card_found = false;
             var current_card_upgraded = false;
 
@@ -1104,7 +1103,7 @@ function get_card_by_id(id, unit_level) {
 }
 
 function get_id_parts(id) {
-    var level = "99";
+    var level = "7";
     if (isNaN(id)) {
         var match = id.match(/\(([1-9]+)\).*/);
         if (match) {
