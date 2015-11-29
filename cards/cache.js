@@ -1199,7 +1199,7 @@ var CARDS = {
       },
       {
         "id": "flurry",
-        "c": 4,
+        "c": 3,
       },
     ],
     "upgrades": {
@@ -1624,26 +1624,13 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": "7",
-    "attack": 3,
-    "health": 5,
+    "attack": 2,
+    "health": 4,
     "cost": 1,
-    "skill": [
-      {
-        "id": "strike",
-        "x": 1,
-      },
-      {
-        "id": "burn",
-        "x": 1,
-      },
-    ],
+    "skill": [],
     "upgrades": {
       "2": {
         "skill": [
-          {
-            "id": "strike",
-            "x": 2,
-          },
           {
             "id": "burn",
             "x": 1,
@@ -1651,20 +1638,12 @@ var CARDS = {
         ],
       },
       "3": {
-        "health": 6,
+        "health": 5,
         "skill": [],
       },
       "4": {
-        "skill": [
-          {
-            "id": "strike",
-            "x": 2,
-          },
-          {
-            "id": "burn",
-            "x": 2,
-          },
-        ],
+        "attack": 3,
+        "skill": [],
       },
     }
   },
@@ -2816,29 +2795,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "attack": 2,
-    "health": 5,
+    "health": 4,
     "cost": 1,
     "skill": [
       {
         "id": "pierce",
-        "x": 2,
+        "x": 1,
       },
     ],
     "upgrades": {
       "2": {
-        "attack": 3,
+        "health": 5,
         "skill": [],
       },
       "3": {
-        "health": 6,
-        "skill": [
-          {
-            "id": "pierce",
-            "x": 3,
-          },
-        ],
-      },
-      "4": {
         "skill": [
           {
             "id": "rally",
@@ -2848,9 +2818,13 @@ var CARDS = {
           },
           {
             "id": "pierce",
-            "x": 3,
+            "x": 1,
           },
         ],
+      },
+      "4": {
+        "attack": 3,
+        "skill": [],
       },
     }
   },
@@ -3200,7 +3174,7 @@ var CARDS = {
     "type": "3",
     "sub_type": "4",
     "attack": 1,
-    "health": 7,
+    "health": 5,
     "cost": 1,
     "skill": [
       {
@@ -3212,36 +3186,16 @@ var CARDS = {
     ],
     "upgrades": {
       "2": {
-        "health": 9,
+        "health": 6,
         "skill": [],
       },
       "3": {
-        "skill": [
-          {
-            "id": "evade",
-            "x": 1,
-          },
-          {
-            "id": "rally",
-            "x": 1,
-            "y": "4",
-            "z": 4,
-          },
-        ],
+        "health": 7,
+        "skill": [],
       },
       "4": {
-        "skill": [
-          {
-            "id": "evade",
-            "x": 1,
-          },
-          {
-            "id": "rally",
-            "x": 2,
-            "y": "4",
-            "z": 4,
-          },
-        ],
+        "attack": 2,
+        "skill": [],
       },
     }
   },
@@ -5626,15 +5580,15 @@ var CARDS = {
           },
           {
             "id": "legion",
-            "x": 1,
-            "y": "1",
-            "z": 1,
-          },
-          {
-            "id": "legion",
             "x": 2,
             "y": "5",
             "z": 5,
+          },
+          {
+            "id": "legion",
+            "x": 1,
+            "y": "1",
+            "z": 1,
           },
         ],
       },
@@ -5647,14 +5601,14 @@ var CARDS = {
           {
             "id": "legion",
             "x": 2,
-            "y": "1",
-            "z": 1,
+            "y": "5",
+            "z": 5,
           },
           {
             "id": "legion",
             "x": 2,
-            "y": "5",
-            "z": 5,
+            "y": "1",
+            "z": 1,
           },
         ],
       },
@@ -5679,14 +5633,14 @@ var CARDS = {
       {
         "id": "legion",
         "x": 2,
-        "y": "1",
-        "z": 1,
+        "y": "5",
+        "z": 5,
       },
       {
         "id": "legion",
         "x": 2,
-        "y": "5",
-        "z": 5,
+        "y": "1",
+        "z": 1,
       },
     ],
     "upgrades": {
@@ -5712,14 +5666,14 @@ var CARDS = {
           {
             "id": "legion",
             "x": 2,
-            "y": "1",
-            "z": 1,
+            "y": "5",
+            "z": 5,
           },
           {
             "id": "legion",
             "x": 2,
-            "y": "5",
-            "z": 5,
+            "y": "1",
+            "z": 1,
           },
         ],
       },
@@ -5731,15 +5685,15 @@ var CARDS = {
           },
           {
             "id": "legion",
-            "x": 2,
-            "y": "1",
-            "z": 1,
-          },
-          {
-            "id": "legion",
             "x": 3,
             "y": "5",
             "z": 5,
+          },
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "1",
+            "z": 1,
           },
         ],
       },
@@ -5763,15 +5717,15 @@ var CARDS = {
       },
       {
         "id": "legion",
-        "x": 2,
-        "y": "1",
-        "z": 1,
-      },
-      {
-        "id": "legion",
         "x": 3,
         "y": "5",
         "z": 5,
+      },
+      {
+        "id": "legion",
+        "x": 2,
+        "y": "1",
+        "z": 1,
       },
     ],
     "upgrades": {
@@ -5791,15 +5745,15 @@ var CARDS = {
           },
           {
             "id": "legion",
-            "x": 2,
-            "y": "1",
-            "z": 1,
-          },
-          {
-            "id": "legion",
             "x": 3,
             "y": "5",
             "z": 5,
+          },
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "1",
+            "z": 1,
           },
         ],
       },
@@ -5812,14 +5766,14 @@ var CARDS = {
           {
             "id": "legion",
             "x": 3,
-            "y": "1",
-            "z": 1,
+            "y": "5",
+            "z": 5,
           },
           {
             "id": "legion",
             "x": 3,
-            "y": "5",
-            "z": 5,
+            "y": "1",
+            "z": 1,
           },
         ],
       },
@@ -5831,15 +5785,15 @@ var CARDS = {
           },
           {
             "id": "legion",
-            "x": 3,
-            "y": "1",
-            "z": 1,
-          },
-          {
-            "id": "legion",
             "x": 4,
             "y": "5",
             "z": 5,
+          },
+          {
+            "id": "legion",
+            "x": 3,
+            "y": "1",
+            "z": 1,
           },
         ],
       },
@@ -17948,6 +17902,469 @@ var CARDS = {
       },
     }
   },
+  "6024": {
+    "id": "6024",
+    "name": "Bane Dragon",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "9",
+    "attack": 5,
+    "health": 15,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 1,
+        "y": "2",
+        "z": 2,
+      },
+      {
+        "id": "enfeeble",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "pierce",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 16,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 18,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "attack": 6,
+        "skill": [],
+      },
+    }
+  },
+  "16024": {
+    "id": "16024",
+    "name": "Blight Dragon",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "9",
+    "attack": 6,
+    "health": 19,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "2",
+        "z": 2,
+      },
+      {
+        "id": "enfeeble",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "pierce",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 20,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+        ],
+      },
+      "4": {
+        "health": 22,
+        "skill": [],
+      },
+      "5": {
+        "attack": 7,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+        ],
+      },
+    }
+  },
+  "26024": {
+    "id": "26024",
+    "name": "Ruination Dragon",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "9",
+    "attack": 7,
+    "health": 23,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "2",
+        "z": 2,
+      },
+      {
+        "id": "enfeeble",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "pierce",
+        "x": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 25,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "pierce",
+            "x": 6,
+          },
+        ],
+      },
+      "4": {
+        "health": 27,
+        "skill": [],
+      },
+      "5": {
+        "attack": 8,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "pierce",
+            "x": 6,
+          },
+        ],
+      },
+    }
+  },
+  "6025": {
+    "id": "6025",
+    "name": "Dragon Keeper",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "attack": 4,
+    "health": 7,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "pierce",
+        "x": 2,
+      },
+      {
+        "id": "fervor",
+        "x": 1,
+        "y": "9",
+        "z": 9,
+      },
+      {
+        "id": "burn",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 9,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "pierce",
+            "x": 2,
+          },
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "attack": 5,
+        "health": 10,
+        "skill": [],
+      },
+    }
+  },
+  "16025": {
+    "id": "16025",
+    "name": "Dragon Commander",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "attack": 5,
+    "health": 11,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "pierce",
+        "x": 3,
+      },
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "9",
+        "z": 9,
+      },
+      {
+        "id": "burn",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 12,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "health": 14,
+        "skill": [],
+      },
+      "5": {
+        "attack": 6,
+        "skill": [],
+      },
+    }
+  },
+  "26025": {
+    "id": "26025",
+    "name": "Dragon Warlord",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "attack": 6,
+    "health": 15,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "pierce",
+        "x": 4,
+      },
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "9",
+        "z": 9,
+      },
+      {
+        "id": "burn",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+        ],
+      },
+      "3": {
+        "health": 16,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
   "7000": {
     "id": "7000",
     "name": "Treant King",
@@ -23559,6 +23976,267 @@ var CARDS = {
       },
     }
   },
+  "7025": {
+    "id": "7025",
+    "name": "Webclaw Dragon",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "9",
+    "attack": 5,
+    "health": 12,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "9",
+        "z": 9,
+      },
+      {
+        "id": "rally",
+        "x": 1,
+        "y": "3",
+        "z": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+          },
+        ],
+      },
+      "5": {
+        "attack": 6,
+        "health": 15,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+          },
+        ],
+      },
+    }
+  },
+  "17025": {
+    "id": "17025",
+    "name": "Webfang Dragon",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "9",
+    "attack": 6,
+    "health": 16,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "rally",
+        "x": 3,
+        "y": "9",
+        "z": 9,
+      },
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "3",
+        "z": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 17,
+        "skill": [],
+      },
+      "3": {
+        "health": 18,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+          },
+        ],
+      },
+      "6": {
+        "attack": 7,
+        "skill": [],
+      },
+    }
+  },
+  "27025": {
+    "id": "27025",
+    "name": "Webtalon Dragon",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "9",
+    "attack": 7,
+    "health": 19,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 2,
+      },
+      {
+        "id": "rally",
+        "x": 4,
+        "y": "9",
+        "z": 9,
+      },
+      {
+        "id": "rally",
+        "x": 3,
+        "y": "3",
+        "z": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 20,
+        "skill": [],
+      },
+      "3": {
+        "health": 21,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "3",
+            "z": 3,
+          },
+        ],
+      },
+      "5": {
+        "health": 23,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "rally",
+            "x": 5,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "3",
+            "z": 3,
+          },
+        ],
+      },
+    }
+  },
   "7026": {
     "id": "7026",
     "name": "Frostjaw",
@@ -26446,30 +27124,34 @@ var CARDS = {
     "type": "2",
     "sub_type": "7",
     "attack": 3,
-    "health": 7,
+    "health": 6,
     "cost": 1,
     "skill": [
       {
-        "id": "strike",
-        "x": 2,
-      },
-      {
         "id": "burn",
-        "x": 2,
+        "x": 1,
       },
     ],
     "upgrades": {
       "2": {
-        "health": 8,
+        "health": 7,
         "skill": [],
       },
       "3": {
-        "health": 9,
+        "health": 8,
         "skill": [],
       },
       "4": {
-        "attack": 4,
-        "skill": [],
+        "skill": [
+          {
+            "id": "strike",
+            "x": 1,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+        ],
       },
     }
   },
@@ -26482,36 +27164,36 @@ var CARDS = {
     "type": "2",
     "sub_type": "7",
     "attack": 4,
-    "health": 10,
+    "health": 8,
     "cost": 1,
     "skill": [
       {
         "id": "strike",
-        "x": 2,
+        "x": 1,
       },
       {
         "id": "burn",
-        "x": 2,
+        "x": 1,
       },
     ],
     "upgrades": {
       "2": {
-        "health": 11,
+        "health": 9,
         "skill": [],
       },
       "3": {
-        "health": 12,
+        "health": 10,
         "skill": [],
       },
       "4": {
         "skill": [
           {
             "id": "strike",
-            "x": 3,
+            "x": 2,
           },
           {
             "id": "burn",
-            "x": 2,
+            "x": 1,
           },
         ],
       },
@@ -28732,7 +29414,7 @@ var CARDS = {
     "set": "1000",
     "card_type": "2",
     "type": "3",
-    "attack": 4,
+    "attack": 3,
     "health": 6,
     "cost": 1,
     "skill": [
@@ -28744,16 +29426,26 @@ var CARDS = {
       },
       {
         "id": "pierce",
-        "x": 3,
+        "x": 1,
       },
     ],
     "upgrades": {
       "2": {
-        "health": 7,
-        "skill": [],
+        "skill": [
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "pierce",
+            "x": 2,
+          },
+        ],
       },
       "3": {
-        "health": 8,
+        "health": 7,
         "skill": [],
       },
       "4": {
@@ -28766,7 +29458,7 @@ var CARDS = {
           },
           {
             "id": "pierce",
-            "x": 3,
+            "x": 2,
           },
         ],
       },
@@ -28779,8 +29471,8 @@ var CARDS = {
     "set": "1000",
     "card_type": "2",
     "type": "3",
-    "attack": 4,
-    "health": 9,
+    "attack": 3,
+    "health": 8,
     "cost": 1,
     "skill": [
       {
@@ -28791,42 +29483,21 @@ var CARDS = {
       },
       {
         "id": "pierce",
-        "x": 3,
+        "x": 2,
       },
     ],
     "upgrades": {
       "2": {
-        "skill": [
-          {
-            "id": "rally",
-            "x": 2,
-            "y": "3",
-            "z": 3,
-          },
-          {
-            "id": "pierce",
-            "x": 4,
-          },
-        ],
+        "health": 9,
+        "skill": [],
       },
       "3": {
         "health": 10,
         "skill": [],
       },
       "4": {
-        "attack": 5,
-        "skill": [
-          {
-            "id": "rally",
-            "x": 2,
-            "y": "3",
-            "z": 3,
-          },
-          {
-            "id": "pierce",
-            "x": 4,
-          },
-        ],
+        "attack": 4,
+        "skill": [],
       },
     }
   },
@@ -29408,7 +30079,7 @@ var CARDS = {
     "type": "3",
     "sub_type": "4",
     "attack": 2,
-    "health": 9,
+    "health": 7,
     "cost": 1,
     "skill": [
       {
@@ -29417,18 +30088,18 @@ var CARDS = {
       },
       {
         "id": "rally",
-        "x": 2,
+        "x": 1,
         "y": "4",
         "z": 4,
       },
     ],
     "upgrades": {
       "2": {
-        "health": 10,
+        "health": 8,
         "skill": [],
       },
       "3": {
-        "health": 11,
+        "health": 9,
         "skill": [],
       },
       "4": {
@@ -29439,7 +30110,7 @@ var CARDS = {
           },
           {
             "id": "rally",
-            "x": 3,
+            "x": 2,
             "y": "4",
             "z": 4,
           },
@@ -29456,7 +30127,7 @@ var CARDS = {
     "type": "3",
     "sub_type": "4",
     "attack": 2,
-    "health": 12,
+    "health": 10,
     "cost": 1,
     "skill": [
       {
@@ -29465,14 +30136,14 @@ var CARDS = {
       },
       {
         "id": "rally",
-        "x": 3,
+        "x": 2,
         "y": "4",
         "z": 4,
       },
     ],
     "upgrades": {
       "2": {
-        "health": 13,
+        "health": 11,
         "skill": [],
       },
       "3": {
@@ -29483,7 +30154,7 @@ var CARDS = {
           },
           {
             "id": "rally",
-            "x": 4,
+            "x": 3,
             "y": "4",
             "z": 4,
           },
@@ -31042,10 +31713,9 @@ var CARDS = {
     "health": 22,
     "skill": [
       {
-        "id": "rally",
+        "id": "enhance",
         "x": 1,
-        "y": "3",
-        "z": 3,
+        "s": "pierce",
       },
       {
         "id": "rally",
@@ -31063,16 +31733,19 @@ var CARDS = {
         "health": 32,
         "skill": [
           {
-            "id": "rally",
-            "x": 2,
-            "y": "3",
-            "z": 3,
+            "id": "enhance",
+            "x": 1,
+            "s": "pierce",
           },
           {
             "id": "rally",
             "x": 1,
             "y": "3",
             "z": 3,
+          },
+          {
+            "id": "heal",
+            "x": 1,
           },
         ],
       },
@@ -31084,16 +31757,19 @@ var CARDS = {
         "health": 42,
         "skill": [
           {
-            "id": "rally",
-            "x": 2,
-            "y": "3",
-            "z": 3,
+            "id": "enhance",
+            "x": 1,
+            "s": "pierce",
           },
           {
             "id": "rally",
             "x": 2,
             "y": "3",
             "z": 3,
+          },
+          {
+            "id": "heal",
+            "x": 1,
           },
         ],
       },
