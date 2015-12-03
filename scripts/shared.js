@@ -345,7 +345,7 @@ function debug_skills(skills) {
         if (first_skill) output += ' <u>( ';
         else output += ' | ';
         first_skill = false;
-        output += skill.id;
+        output += convertName(skill.id);
         if (skill.all) output += ' all';
         if (skill.y) output += ' ' + factions.names[skill.y];
         if (skill.s) output += ' ' + skill.s;
@@ -355,6 +355,31 @@ function debug_skills(skills) {
     if (!first_skill) output += ' )</u>';
 
     return output;
+}
+
+function convertName(oldName) {
+    switch (oldName) {
+        case "rally":
+            return "empower";
+        case "protect":
+            return "barrier";
+        case "enfeeble":
+            return "hex";
+        case "jam":
+            return "freeze";
+        case "evade":
+            return "invisibility";
+        case "counter":
+            return "vengeance";
+        case "strike":
+            return "bolt";
+        case "flurry":
+            return "dualstrike";
+        case "leech":
+            return "siphon";
+        default:
+            return oldName;
+    }
 }
 
 // Dump deck contents

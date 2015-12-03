@@ -382,7 +382,7 @@ if (simulator_thread) {
             target['protected'] += protect;
             if (debug) {
                 if (augment && augment > 0) echo += '<u>(Enhance: +' + augment + ')</u><br>';
-                echo += debug_name(src_card) + ' protects ' + debug_name(target) + ' by ' + protect + '<br>';
+                echo += debug_name(src_card) + ' barriers ' + debug_name(target) + ' by ' + protect + '<br>';
             }
         }
     };
@@ -428,7 +428,7 @@ if (simulator_thread) {
             // Check Evade
             if (target['invisible']) {
                 target['invisible']--;
-                if (debug) echo += debug_name(src_card) + ' strikes ' + debug_name(target) + ' but it is invisible!<br>';
+                if (debug) echo += debug_name(src_card) + ' bolts ' + debug_name(target) + ' but it is invisible!<br>';
                 continue;
             }
 
@@ -464,7 +464,7 @@ if (simulator_thread) {
                 if (augment) echo += ' Enhance: +' + augment;
                 if (protect) echo += ' Barrier: -' + protect;
                 echo += ') = ' + strike_damage + ' damage</u><br>';
-                echo += debug_name(src_card) + ' strikes ' + debug_name(target) + ' for ' + strike_damage + ' damage';
+                echo += debug_name(src_card) + ' bolts ' + debug_name(target) + ' for ' + strike_damage + ' damage';
                 echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
             }
         }
@@ -1270,7 +1270,7 @@ if (simulator_thread) {
             do_damage(current_assault, counter_damage);
 
             if (debug) {
-                echo += debug_name(current_assault) + ' takes ' + counter_damage + ' counter damage';
+                echo += debug_name(current_assault) + ' takes ' + counter_damage + ' vengeance damage';
                 echo += (!current_assault.isAlive() ? ' and it dies' : '') + '<br>';
             }
         }
