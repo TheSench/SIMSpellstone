@@ -3127,7 +3127,7 @@
 	
 	<mission>
 		<id>1501</id>
-		<name>The Land Cracks...</name>
+		<name>The Land Shatters...</name>
 		<energy>10</energy>
 		<desc>The great behemoth Atlas has ruptured the earth to emerge and slay all enemies of nature. You will need to be very well prepared for this battle.</desc>
 		<commander id="254"/>
@@ -3197,56 +3197,6 @@
 			<card id="7008" name="Rock Dragon"/>
 		</deck>
 	</mission>
-	<!--
-	<mission>
-		<id>1504</id>
-		<name>Test Raid</name>
-		<energy>10000</energy>
-		<desc>DO NOT RELEASE</desc>
-		<commander id="253"/>
-		<deck>
-			<card id='28000' level='6'/>
-			<card id='28001' level='6'/>
-			<card id='28002' level='6'/>
-			<card id='28003' level='6'/>
-			<card id='28004' level='6'/>
-			<card id='27003' level='6'/>
-			<card id='27024' level='5'/>
-			<card id='25008' level='6'/>
-			<card id='25020' level='5'/>
-			<card id='28000' level='6' />
-			<card id='28001' level='6' />
-			<card id='28002' level='6' />
-			<card id='28003' level='6' />
-			<card id='25009' level='6' />
-			<card id='25015' level='6' />
-		</deck>
-	</mission>
-	-->
-	<mission>
-		<id>1505</id>
-		<name>Test Mid Raid</name>
-		<energy>10000</energy>
-		<desc>DO NOT RELEASE</desc>
-		<commander level='3' id="253"/>
-		<deck>
-			<card id='18000' level='3'/>
-			<card id='18001' level='3'/>
-			<card id='18002' level='3'/>
-			<card id='18003' level='3'/>
-			<card id='18004' level='3'/>
-			<card id='17003' level='3'/>
-			<card id='17024' level='3'/>
-			<card id='15008' level='3'/>
-			<card id='15020' level='3'/>
-			<card id='18000' level='3' />
-			<card id='18001' level='3' />
-			<card id='18002' level='3' />
-			<card id='18003' level='3' />
-			<card id='15009' level='3' />
-			<card id='15015' level='3' />
-		</deck>
-	</mission>
 	
 	<mission>
 		<id>1504</id>
@@ -3297,7 +3247,7 @@
 			<card id="6018" name="Underwater Lasher"/>
 		</deck>
 	</mission>
- 
+
 <!-- END Side Missions -->
 
 
