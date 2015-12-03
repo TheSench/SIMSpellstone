@@ -3197,7 +3197,7 @@
 			<card id="7008" name="Rock Dragon"/>
 		</deck>
 	</mission>
-	
+	<!--
 	<mission>
 		<id>1504</id>
 		<name>Test Raid</name>
@@ -3222,7 +3222,7 @@
 			<card id='25015' level='6' />
 		</deck>
 	</mission>
-	
+	-->
 	<mission>
 		<id>1505</id>
 		<name>Test Mid Raid</name>
@@ -3248,7 +3248,7 @@
 		</deck>
 	</mission>
 	
-	<!-- <mission>
+	<mission>
 		<id>1504</id>
 		<name>Atlas</name>
 		<energy>10</energy>
@@ -3297,7 +3297,7 @@
 			<card id="6018" name="Underwater Lasher"/>
 		</deck>
 	</mission>
- -->
+ 
 <!-- END Side Missions -->
 
 
