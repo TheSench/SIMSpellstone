@@ -23355,14 +23355,13 @@
 		<id>253</id>
 		<card_type>1</card_type>
 		<name>Frostbite</name>
-		<portrait>frogemperor</portrait>
+		<portrait>Portrait_Frostbite</portrait>
 		<asset_bundle></asset_bundle>
 		<attack>0</attack>
 		<health>30</health>
 		<rarity>4</rarity>
 		<skill id="protect" x="1" all="1"/>
 		<skill id="rally" x="1" all="1"/>
-		<skill id="jam" c="9"/>
 		<type>1</type>
 		<set>9999</set>
 		<upgrade>
@@ -23370,14 +23369,13 @@
 			<health>42</health>
 			<skill id="protect" x="1" all="1"/>
 			<skill id="rally" x="1" all="1"/>
-			<skill id="jam" c="8"/>
 		</upgrade>
 		<upgrade>
 			<level>3</level>
 			<health>56</health>
 			<skill id="protect" x="1" all="1"/>
 			<skill id="rally" x="2" all="1"/>
-			<skill id="jam" c="7"/>
+			<skill id="jam" c="8"/>
 		</upgrade>
 		<upgrade>
 			<level>4</level>
@@ -23908,7 +23906,7 @@
 		<order>120</order>
 		<icon>burn</icon>
 		<name>Scorch</name> 
-		<desc>Deals X damage in a cone to the three creatures in front of it.</desc>
+		<desc>Deals stacking damage to the enemy across from this creature at end of turn. Wears off if not reapplied for a turn.</desc>
 		<status_flag>burn</status_flag>
 		<status_flag>burn_cooldown</status_flag>
 		<attributes x='1' y='0' all='0' c='0' s='0' />
