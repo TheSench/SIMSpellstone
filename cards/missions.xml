@@ -35,6 +35,10 @@
 		<id>quest</id>
 		<mission_req>12</mission_req>	<!-- 12 -->
 	</feature_lock>
+	<feature_lock>
+		<id>runes</id>
+		<mission_req>-1</mission_req>	<!-- 244 -->
+	</feature_lock>
 	
 	<feature_lock>
 		<id>combatspeed</id>
@@ -2514,7 +2518,7 @@
 		<name>Malchior, Grand Excavator</name>
 		<energy>4</energy>
 		<commander id='213' />
-		<desc>Your follow Oda further up the ridge where you can oversee all of The Void. There you meet the Grand Excavator.</desc>
+		<desc>You follow Oda further up the ridge where you can oversee all of The Void. There you meet the Grand Excavator.</desc>
 		<speech>
 			<line>
 				<commander>grandexcavator</commander> 
@@ -2728,7 +2732,7 @@
 		<name>Corrupted Lands</name>
 		<energy>4</energy>
 		<commander id='210' level='2' />
-		<desc>At Malchoir's lead, the group heads across the crater and towards the Void's Core. Unfortunately the land between here and there is full of creatures already corrupted.</desc>
+		<desc>At Malchior's lead, the group heads across the crater and towards the Void's Core. Unfortunately the land between here and there is full of creatures already corrupted.</desc>
 		<speech>
 			<line>
 				<commander>templeguardian</commander>
@@ -3093,6 +3097,208 @@
 	</mission>
 
 <!-- END The Void Missions -->
+
+<!-- START Side Missions -->
+	
+	<mission>
+		<id>1500</id>
+		<name>The Earth Trembles...</name>
+		<energy>10</energy>
+		<desc>The great behemoth Atlas has ruptured the earth to emerge and slay all enemies of nature. You will need to be very well prepared for this battle.</desc>
+		<commander id="254"/>
+		<deck>
+			<card id="8005" name="Atlas' Shaman"/>
+			<card id="8005"/>
+			<card id="8005"/>
+			<card id="8006" name="Atlas' Dragon"/>
+			<card id="8006"/>
+			<card id="8006"/>
+			<card id="7018" name="Frog Emperor"/>
+			<card id="7014" name="Genbu"/>
+			<card id="7014"/>
+			<card id="7009" name="Rhino Beast"/>
+			<card id="7009"/>
+			<card id="7002" name="Cerberus"/>
+			<card id="7001" name="Hekaton"/>
+			<card id="7001"/>
+			<card id="7008" name="Rock Dragon"/>
+		</deck>
+	</mission>
+	
+	<mission>
+		<id>1501</id>
+		<name>The Land Cracks...</name>
+		<energy>10</energy>
+		<desc>The great behemoth Atlas has ruptured the earth to emerge and slay all enemies of nature. You will need to be very well prepared for this battle.</desc>
+		<commander id="254"/>
+		<deck>
+			<card id="8005" name="Atlas' Shaman"/>
+			<card id="8005"/>
+			<card id="8006" name="Atlas' Dragon"/>
+			<card id="8006"/>
+			<card id="7018" name="Frog Emperor"/>
+			<card id="7014" name="Genbu"/>
+			<card id="7014"/>
+			<card id="7009" name="Rhino Beast"/>
+			<card id="7009"/>
+			<card id="7002" name="Cerberus"/>
+			<card id="7002"/>
+			<card id="7001" name="Hekaton"/>
+			<card id="7001"/>
+			<card id="2013" name="Armored Toad"/>
+			<card id="7008" name="Rock Dragon"/>
+		</deck>
+	</mission>
+	<mission>
+		<id>1502</id>
+		<name>Rising from the Depths...</name>
+		<energy>10</energy>
+		<desc>The great behemoth Atlas has ruptured the earth to emerge and slay all enemies of nature. You will need to be very well prepared for this battle.</desc>
+		<commander id="254"/>
+		<deck>
+			<card id="8005" name="Atlas' Shaman"/>
+			<card id="8005"/>
+			<card id="8006" name="Atlas' Dragon"/>
+			<card id="7018" name="Frog Emperor"/>
+			<card id="7014" name="Genbu"/>
+			<card id="7014"/>
+			<card id="7009" name="Rhino Beast"/>
+			<card id="7009"/>
+			<card id="7002" name="Cerberus"/>
+			<card id="7002"/>
+			<card id="7001" name="Hekaton"/>
+			<card id="7001"/>
+			<card id="2013" name="Armored Toad"/>
+			<card id="7008" name="Rock Dragon"/>
+			<card id="7008"/>
+		</deck>
+	</mission>
+	<mission>
+		<id>1503</id>
+		<name>Atlas, the Ancient</name>
+		<energy>10</energy>
+		<desc>The great behemoth Atlas has ruptured the earth to emerge and slay all enemies of nature. You will need to be very well prepared for this battle.</desc>
+		<commander id="254"/>
+		<deck>
+			<card id="8005" name="Atlas' Shaman"/>
+			<card id="8006" name="Atlas' Dragon"/>
+			<card id="7018" name="Frog Emperor"/>
+			<card id="7018"/>
+			<card id="7014" name="Genbu"/>
+			<card id="7014"/>
+			<card id="7009" name="Rhino Beast"/>
+			<card id="7009"/>
+			<card id="7002" name="Cerberus"/>
+			<card id="7002"/>
+			<card id="7001" name="Hekaton"/>
+			<card id="7001"/>
+			<card id="2013" name="Armored Toad"/>
+			<card id="2013"/>
+			<card id="7008" name="Rock Dragon"/>
+		</deck>
+	</mission>
+	
+	<mission>
+		<id>1504</id>
+		<name>Test Raid</name>
+		<energy>10000</energy>
+		<desc>DO NOT RELEASE</desc>
+		<commander id="253"/>
+		<deck>
+			<card id='28000' level='6'/>
+			<card id='28001' level='6'/>
+			<card id='28002' level='6'/>
+			<card id='28003' level='6'/>
+			<card id='28004' level='6'/>
+			<card id='27003' level='6'/>
+			<card id='27024' level='5'/>
+			<card id='25008' level='6'/>
+			<card id='25020' level='5'/>
+			<card id='28000' level='6' />
+			<card id='28001' level='6' />
+			<card id='28002' level='6' />
+			<card id='28003' level='6' />
+			<card id='25009' level='6' />
+			<card id='25015' level='6' />
+		</deck>
+	</mission>
+	
+	<mission>
+		<id>1505</id>
+		<name>Test Mid Raid</name>
+		<energy>10000</energy>
+		<desc>DO NOT RELEASE</desc>
+		<commander level='3' id="253"/>
+		<deck>
+			<card id='18000' level='3'/>
+			<card id='18001' level='3'/>
+			<card id='18002' level='3'/>
+			<card id='18003' level='3'/>
+			<card id='18004' level='3'/>
+			<card id='17003' level='3'/>
+			<card id='17024' level='3'/>
+			<card id='15008' level='3'/>
+			<card id='15020' level='3'/>
+			<card id='18000' level='3' />
+			<card id='18001' level='3' />
+			<card id='18002' level='3' />
+			<card id='18003' level='3' />
+			<card id='15009' level='3' />
+			<card id='15015' level='3' />
+		</deck>
+	</mission>
+	
+	<!-- <mission>
+		<id>1504</id>
+		<name>Atlas</name>
+		<energy>10</energy>
+		<desc>The great behemoth Atlas has descended from the heavens seeking to crush any that would oppose his Justice. You will need to be very well prepared for this battle.</desc>
+		<commander id="255"/>
+		<deck>
+			<card id="8007" name="Atlas Cyclone"/>
+			<card id="8007"/>
+			<card id="8008" name="Atlas Sentinel"/>
+			<card id="8008"/>
+			<card id="5008" name="Ice Dragon"/>
+			<card id="5008"/>
+			<card id="5018" name="Grand Knight Frog"/>
+			<card id="5003" name="White Knight"/>
+			<card id="5013" name="Radiance"/>
+			<card id="5009" name="Royal Guardian"/>
+			<card id="5019" name="Vivid Aurora"/>
+			<card id="5002" name="Twilight Mirror"/>
+			<card id="5001" name="Aven Skypiercer"/>
+			<card id="5014" name="Winged Raptor"/>
+			<card id="5014"/>
+		</deck>
+	</mission>
+	
+	<mission>
+		<id>1508</id>
+		<name>Vulcanos</name>
+		<energy>10</energy>
+		<desc>The great behemoth Vulcanos has erupted from atop the tallest mountains laying waste to the land under his molten presence. You will need to be very well prepared for this battle.</desc>
+		<commander id="256"/>
+		<deck>
+			<card id="8009" name="Vulcanos Obsidian"/>
+			<card id="8009"/>
+			<card id="8010" name="Vulcanos Skeleton"/>
+			<card id="8010"/>
+			<card id="1340" name="Blazekin Dragon"/>
+			<card id="1340"/>
+			<card id="2015" name="Pumpking"/>
+			<card id="2015"/>
+			<card id="6014" name="Armored Ogre"/>
+			<card id="6013" name="Rust Goliath"/>
+			<card id="6003" name="Black Knight"/>
+			<card id="6002" name="Spirit of Madness"/>
+			<card id="2006" name="Zhulong"/>
+			<card id="6019" name="Canopy Horror"/>
+			<card id="6018" name="Underwater Lasher"/>
+		</deck>
+	</mission>
+ -->
+<!-- END Side Missions -->
 
 
 <!-- Rival Mission Nodes START -->
