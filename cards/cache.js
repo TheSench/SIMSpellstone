@@ -1091,6 +1091,461 @@ var CARDS = {
       },
     }
   },
+  "1031": {
+    "id": "1031",
+    "name": "Noble Champion",
+    "rarity": "3",
+    "set": "1000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "6",
+    "attack": 2,
+    "health": 7,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 1,
+        "y": "6",
+        "z": 6,
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 8,
+        "skill": [],
+      },
+      "3": {
+        "attack": 3,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "11031": {
+    "id": "11031",
+    "name": "Righteous Champion",
+    "rarity": "3",
+    "set": "1000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "6",
+    "attack": 3,
+    "health": 9,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 1,
+        "y": "6",
+        "z": 6,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+      },
+      {
+        "id": "weaken",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 10,
+        "skill": [],
+      },
+      "3": {
+        "attack": 4,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "21031": {
+    "id": "21031",
+    "name": "Light's Champion",
+    "rarity": "3",
+    "set": "1000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "6",
+    "attack": 4,
+    "health": 11,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 1,
+        "y": "6",
+        "z": 6,
+      },
+      {
+        "id": "strike",
+        "x": 2,
+      },
+      {
+        "id": "weaken",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 12,
+        "skill": [],
+      },
+      "3": {
+        "health": 13,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "weaken",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "1032": {
+    "id": "1032",
+    "name": "Lunar Elemental",
+    "rarity": "3",
+    "set": "1000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "5",
+    "attack": 2,
+    "health": 16,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 2,
+      },
+      {
+        "id": "legion",
+        "x": 1,
+        "y": "5",
+        "z": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 17,
+        "skill": [],
+      },
+      "3": {
+        "health": 18,
+        "skill": [],
+      },
+      "4": {
+        "attack": 3,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 1,
+            "y": "5",
+            "z": 5,
+          },
+        ],
+      },
+    }
+  },
+  "11032": {
+    "id": "11032",
+    "name": "Crescent Elemental",
+    "rarity": "3",
+    "set": "1000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "5",
+    "attack": 3,
+    "health": 18,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "y": "1",
+        "z": 1,
+      },
+      {
+        "id": "legion",
+        "x": 1,
+        "y": "5",
+        "z": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 19,
+        "skill": [],
+      },
+      "3": {
+        "attack": 4,
+        "skill": [],
+      },
+      "4": {
+        "health": 20,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "legion",
+            "x": 1,
+            "y": "5",
+            "z": 5,
+          },
+        ],
+      },
+      "5": {
+        "health": 21,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "5",
+            "z": 5,
+          },
+        ],
+      },
+    }
+  },
+  "21032": {
+    "id": "21032",
+    "name": "Moonlight Elemental",
+    "rarity": "3",
+    "set": "1000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "5",
+    "attack": 5,
+    "health": 21,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "protect",
+        "x": 2,
+        "y": "1",
+        "z": 1,
+      },
+      {
+        "id": "legion",
+        "x": 2,
+        "y": "5",
+        "z": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 22,
+        "skill": [],
+      },
+      "3": {
+        "health": 23,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "legion",
+            "x": 3,
+            "y": "5",
+            "z": 5,
+          },
+        ],
+      },
+      "4": {
+        "health": 24,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "legion",
+            "x": 3,
+            "y": "5",
+            "z": 5,
+          },
+        ],
+      },
+      "5": {
+        "health": 25,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "legion",
+            "x": 3,
+            "y": "5",
+            "z": 5,
+          },
+        ],
+      },
+    }
+  },
   "1040": {
     "id": "1040",
     "name": "Storm Dragon",
@@ -1386,6 +1841,546 @@ var CARDS = {
           {
             "id": "flurry",
             "c": 4,
+          },
+        ],
+      },
+    }
+  },
+  "1042": {
+    "id": "1042",
+    "name": "Archgeneral",
+    "rarity": "4",
+    "set": "1000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "6",
+    "attack": 5,
+    "health": 7,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 1,
+      },
+      {
+        "id": "heal",
+        "x": 1,
+        "y": "6",
+        "z": 6,
+      },
+      {
+        "id": "rally",
+        "x": 1,
+        "y": "1",
+        "z": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 8,
+        "skill": [],
+      },
+      "3": {
+        "health": 10,
+        "skill": [],
+      },
+      "4": {
+        "attack": 6,
+        "skill": [],
+      },
+      "5": {
+        "health": 12,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 1,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "1",
+            "z": 1,
+          },
+        ],
+      },
+    }
+  },
+  "11042": {
+    "id": "11042",
+    "name": "High Archgeneral",
+    "rarity": "4",
+    "set": "1000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "6",
+    "attack": 6,
+    "health": 12,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 1,
+      },
+      {
+        "id": "heal",
+        "x": 2,
+        "y": "6",
+        "z": 6,
+      },
+      {
+        "id": "rally",
+        "x": 1,
+        "y": "1",
+        "z": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "health": 16,
+        "skill": [],
+      },
+      "4": {
+        "attack": 7,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 2,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 2,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "21042": {
+    "id": "21042",
+    "name": "Grand Archgeneral",
+    "rarity": "4",
+    "set": "1000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "6",
+    "attack": 7,
+    "health": 16,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 2,
+      },
+      {
+        "id": "heal",
+        "x": 3,
+        "y": "6",
+        "z": 6,
+      },
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "1",
+        "z": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 17,
+        "skill": [],
+      },
+      "3": {
+        "health": 18,
+        "skill": [],
+      },
+      "4": {
+        "attack": 8,
+        "skill": [],
+      },
+      "5": {
+        "health": 20,
+        "skill": [],
+      },
+      "6": {
+        "health": 21,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 3,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "1043": {
+    "id": "1043",
+    "name": "Lilypad Bard",
+    "rarity": "4",
+    "set": "1000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "4",
+    "attack": 2,
+    "health": 10,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 1,
+        "y": "4",
+        "z": 4,
+      },
+      {
+        "id": "rally",
+        "x": 1,
+        "y": "4",
+        "z": 4,
+      },
+      {
+        "id": "legion",
+        "x": 1,
+        "y": "4",
+        "z": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 11,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "legion",
+            "x": 1,
+            "y": "4",
+            "z": 4,
+          },
+        ],
+      },
+      "4": {
+        "health": 13,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "4",
+            "z": 4,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "4",
+            "z": 4,
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "4",
+            "z": 4,
+          },
+        ],
+      },
+    }
+  },
+  "11043": {
+    "id": "11043",
+    "name": "Lilypad Minstrel",
+    "rarity": "4",
+    "set": "1000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "4",
+    "attack": 2,
+    "health": 14,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 2,
+        "y": "4",
+        "z": 4,
+      },
+      {
+        "id": "rally",
+        "x": 1,
+        "y": "4",
+        "z": 4,
+        "all": "1",
+      },
+      {
+        "id": "legion",
+        "x": 2,
+        "y": "4",
+        "z": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 15,
+        "skill": [],
+      },
+      "3": {
+        "attack": 3,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "4",
+            "z": 4,
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "4",
+            "z": 4,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "4",
+            "z": 4,
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 3,
+            "y": "4",
+            "z": 4,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "4",
+            "z": 4,
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 3,
+            "y": "4",
+            "z": 4,
+          },
+        ],
+      },
+    }
+  },
+  "21043": {
+    "id": "21043",
+    "name": "Lilypad Muse",
+    "rarity": "4",
+    "set": "1000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "4",
+    "attack": 3,
+    "health": 16,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 3,
+        "y": "4",
+        "z": 4,
+      },
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "4",
+        "z": 4,
+        "all": "1",
+      },
+      {
+        "id": "legion",
+        "x": 3,
+        "y": "4",
+        "z": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 17,
+        "skill": [],
+      },
+      "3": {
+        "health": 18,
+        "skill": [],
+      },
+      "4": {
+        "attack": 4,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "4",
+            "z": 4,
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 3,
+            "y": "4",
+            "z": 4,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "4",
+            "z": 4,
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 3,
+            "y": "4",
+            "z": 4,
           },
         ],
       },
@@ -2389,6 +3384,428 @@ var CARDS = {
       },
     }
   },
+  "1331": {
+    "id": "1331",
+    "name": "Fallen Soldiers",
+    "rarity": "3",
+    "set": "1000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "7",
+    "attack": 2,
+    "health": 6,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "legion",
+        "x": 1,
+        "y": "2",
+        "z": 2,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 7,
+        "skill": [],
+      },
+      "3": {
+        "health": 8,
+        "skill": [],
+      },
+      "4": {
+        "attack": 3,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 1,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "11331": {
+    "id": "11331",
+    "name": "Haunted Soldiers",
+    "rarity": "3",
+    "set": "1000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "7",
+    "attack": 3,
+    "health": 9,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "legion",
+        "x": 1,
+        "y": "2",
+        "z": 2,
+      },
+      {
+        "id": "strike",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 10,
+        "skill": [],
+      },
+      "3": {
+        "health": 11,
+        "skill": [],
+      },
+      "4": {
+        "attack": 4,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "legion",
+            "x": 1,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "21331": {
+    "id": "21331",
+    "name": "Cursed Soldiers",
+    "rarity": "3",
+    "set": "1000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "7",
+    "attack": 4,
+    "health": 12,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "legion",
+        "x": 1,
+        "y": "2",
+        "z": 2,
+      },
+      {
+        "id": "strike",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 13,
+        "skill": [],
+      },
+      "3": {
+        "health": 14,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "1332": {
+    "id": "1332",
+    "name": "Vampiric Emira",
+    "rarity": "3",
+    "set": "1000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "7",
+    "attack": 4,
+    "health": 15,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 1,
+        "y": "7",
+        "z": 7,
+      },
+      {
+        "id": "poison",
+        "x": 1,
+      },
+      {
+        "id": "leech",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 16,
+        "skill": [],
+      },
+      "3": {
+        "attack": 5,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "poison",
+            "x": 2,
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "poison",
+            "x": 2,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "11332": {
+    "id": "11332",
+    "name": "Cloaked Emira",
+    "rarity": "3",
+    "set": "1000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "7",
+    "attack": 6,
+    "health": 16,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 1,
+        "y": "7",
+        "z": 7,
+      },
+      {
+        "id": "poison",
+        "x": 2,
+      },
+      {
+        "id": "leech",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 17,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "poison",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 18,
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "poison",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "health": 19,
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "poison",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "21332": {
+    "id": "21332",
+    "name": "Nocturn Emira",
+    "rarity": "3",
+    "set": "1000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "7",
+    "attack": 6,
+    "health": 20,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "7",
+        "z": 7,
+      },
+      {
+        "id": "poison",
+        "x": 3,
+      },
+      {
+        "id": "leech",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 21,
+        "skill": [],
+      },
+      "3": {
+        "attack": 7,
+        "skill": [],
+      },
+      "4": {
+        "health": 22,
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "poison",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "health": 23,
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "poison",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+        ],
+      },
+    }
+  },
   "1340": {
     "id": "1340",
     "name": "Blazekin Dragon",
@@ -2559,6 +3976,441 @@ var CARDS = {
           {
             "id": "leech",
             "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "1342": {
+    "id": "1342",
+    "name": "Ronin",
+    "rarity": "4",
+    "set": "1000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "7",
+    "attack": 3,
+    "health": 7,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 1,
+      },
+      {
+        "id": "flurry",
+        "c": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 8,
+        "skill": [],
+      },
+      "3": {
+        "health": 9,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 5,
+          },
+        ],
+      },
+      "5": {
+        "attack": 4,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 5,
+          },
+        ],
+      },
+    }
+  },
+  "11342": {
+    "id": "11342",
+    "name": "Risen Ronin",
+    "rarity": "4",
+    "set": "1000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "7",
+    "attack": 4,
+    "health": 10,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 2,
+      },
+      {
+        "id": "flurry",
+        "c": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 11,
+        "skill": [],
+      },
+      "3": {
+        "health": 12,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "5": {
+        "attack": 5,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 2,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+    }
+  },
+  "21342": {
+    "id": "21342",
+    "name": "Dai Ronin",
+    "rarity": "4",
+    "set": "1000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "7",
+    "attack": 5,
+    "health": 13,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 2,
+      },
+      {
+        "id": "enfeeble",
+        "x": 1,
+      },
+      {
+        "id": "flurry",
+        "c": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "health": 15,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 2,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 2,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+      "6": {
+        "attack": 6,
+        "skill": [],
+      },
+    }
+  },
+  "1343": {
+    "id": "1343",
+    "name": "Firehorn",
+    "rarity": "4",
+    "set": "1000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "5",
+    "attack": 6,
+    "health": 20,
+    "cost": 4,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 3,
+      },
+      {
+        "id": "burn",
+        "x": 2,
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 21,
+        "skill": [],
+      },
+      "3": {
+        "health": 22,
+        "skill": [],
+      },
+      "4": {
+        "attack": 7,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 3,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 3,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "11343": {
+    "id": "11343",
+    "name": "Burnhorn",
+    "rarity": "4",
+    "set": "1000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "5",
+    "attack": 7,
+    "health": 24,
+    "cost": 4,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 3,
+      },
+      {
+        "id": "burn",
+        "x": 3,
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 25,
+        "skill": [],
+      },
+      "3": {
+        "health": 26,
+        "skill": [],
+      },
+      "4": {
+        "attack": 8,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 4,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "health": 27,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 4,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "21343": {
+    "id": "21343",
+    "name": "Blazehorn",
+    "rarity": "4",
+    "set": "1000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "5",
+    "attack": 9,
+    "health": 27,
+    "cost": 4,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 4,
+      },
+      {
+        "id": "burn",
+        "x": 3,
+      },
+      {
+        "id": "weaken",
+        "x": 2,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 28,
+        "skill": [],
+      },
+      "3": {
+        "health": 29,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 5,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 30,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 5,
+          },
+          {
+            "id": "burn",
+            "x": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "health": 31,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 5,
+          },
+          {
+            "id": "burn",
+            "x": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+            "all": "1",
           },
         ],
       },
@@ -3236,6 +5088,396 @@ var CARDS = {
           {
             "id": "armored",
             "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "1631": {
+    "id": "1631",
+    "name": "Venom Dragon",
+    "rarity": "3",
+    "set": "1000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "9",
+    "attack": 4,
+    "health": 15,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "poison",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 16,
+        "skill": [],
+      },
+      "3": {
+        "health": 17,
+        "skill": [],
+      },
+      "4": {
+        "attack": 5,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "poison",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "11631": {
+    "id": "11631",
+    "name": "Toxic Dragon",
+    "rarity": "3",
+    "set": "1000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "9",
+    "attack": 5,
+    "health": 19,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "poison",
+        "x": 3,
+      },
+      {
+        "id": "enfeeble",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 20,
+        "skill": [],
+      },
+      "3": {
+        "health": 21,
+        "skill": [],
+      },
+      "4": {
+        "attack": 6,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "poison",
+            "x": 4,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "21631": {
+    "id": "21631",
+    "name": "Tainted Dragon",
+    "rarity": "3",
+    "set": "1000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "9",
+    "attack": 6,
+    "health": 23,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "poison",
+        "x": 4,
+      },
+      {
+        "id": "enfeeble",
+        "x": 2,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 24,
+        "skill": [],
+      },
+      "3": {
+        "attack": 7,
+        "skill": [],
+      },
+      "4": {
+        "health": 25,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "poison",
+            "x": 4,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 26,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "poison",
+            "x": 5,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "1632": {
+    "id": "1632",
+    "name": "Shadow Rider",
+    "rarity": "3",
+    "set": "1000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "7",
+    "attack": 4,
+    "health": 11,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 1,
+        "y": "7",
+        "z": 7,
+      },
+      {
+        "id": "leech",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 12,
+        "skill": [],
+      },
+      "3": {
+        "attack": 5,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "11632": {
+    "id": "11632",
+    "name": "Dark Rider",
+    "rarity": "3",
+    "set": "1000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "7",
+    "attack": 5,
+    "health": 13,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "7",
+        "z": 7,
+      },
+      {
+        "id": "leech",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "attack": 6,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "21632": {
+    "id": "21632",
+    "name": "Shade Rider",
+    "rarity": "3",
+    "set": "1000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "7",
+    "attack": 7,
+    "health": 14,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "7",
+        "z": 7,
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "y": "3",
+        "z": 3,
+      },
+      {
+        "id": "leech",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 15,
+        "skill": [],
+      },
+      "3": {
+        "health": 16,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 4,
           },
         ],
       },
@@ -4111,6 +6353,459 @@ var CARDS = {
           {
             "id": "jam",
             "c": 4,
+          },
+        ],
+      },
+    }
+  },
+  "1642": {
+    "id": "1642",
+    "name": "Icestone Beast",
+    "rarity": "4",
+    "set": "1000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "5",
+    "attack": 5,
+    "health": 11,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 3,
+      },
+      {
+        "id": "jam",
+        "c": 5,
+      },
+      {
+        "id": "enfeeble",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 12,
+        "skill": [],
+      },
+      "3": {
+        "health": 13,
+        "skill": [],
+      },
+      "4": {
+        "attack": 6,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 3,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+          {
+            "id": "enfeeble",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 4,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+          {
+            "id": "enfeeble",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "11642": {
+    "id": "11642",
+    "name": "Icestone Brute",
+    "rarity": "4",
+    "set": "1000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "5",
+    "attack": 6,
+    "health": 14,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 4,
+      },
+      {
+        "id": "jam",
+        "c": 5,
+      },
+      {
+        "id": "enfeeble",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 15,
+        "skill": [],
+      },
+      "3": {
+        "health": 16,
+        "skill": [],
+      },
+      "4": {
+        "attack": 7,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 4,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+          {
+            "id": "enfeeble",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 5,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+          {
+            "id": "enfeeble",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "21642": {
+    "id": "21642",
+    "name": "Icestone Demon",
+    "rarity": "4",
+    "set": "1000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "5",
+    "attack": 7,
+    "health": 17,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 5,
+      },
+      {
+        "id": "jam",
+        "c": 4,
+      },
+      {
+        "id": "enfeeble",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 18,
+        "skill": [],
+      },
+      "3": {
+        "attack": 8,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 5,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+          {
+            "id": "enfeeble",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "health": 19,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 5,
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+          {
+            "id": "enfeeble",
+            "x": 4,
+          },
+        ],
+      },
+      "6": {
+        "health": 20,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 6,
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+          {
+            "id": "enfeeble",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "1643": {
+    "id": "1643",
+    "name": "Nimble Leaper",
+    "rarity": "4",
+    "set": "1000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "4",
+    "attack": 4,
+    "health": 7,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "leech",
+        "x": 2,
+      },
+      {
+        "id": "pierce",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 8,
+        "skill": [],
+      },
+      "3": {
+        "attack": 5,
+        "skill": [],
+      },
+      "4": {
+        "attack": 6,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "leech",
+            "x": 2,
+          },
+          {
+            "id": "pierce",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "pierce",
+            "x": 2,
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "11643": {
+    "id": "11643",
+    "name": "Swift Leaper",
+    "rarity": "4",
+    "set": "1000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "4",
+    "attack": 6,
+    "health": 9,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 1,
+        "y": "3",
+        "z": 3,
+      },
+      {
+        "id": "pierce",
+        "x": 2,
+      },
+      {
+        "id": "leech",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 10,
+        "skill": [],
+      },
+      "3": {
+        "health": 11,
+        "skill": [],
+      },
+      "4": {
+        "health": 12,
+        "skill": [],
+      },
+      "5": {
+        "attack": 7,
+        "skill": [],
+      },
+      "6": {
+        "health": 13,
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "21643": {
+    "id": "21643",
+    "name": "Lightning Leaper ",
+    "rarity": "4",
+    "set": "1000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "4",
+    "attack": 7,
+    "health": 14,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 1,
+        "y": "3",
+        "z": 3,
+      },
+      {
+        "id": "pierce",
+        "x": 3,
+      },
+      {
+        "id": "leech",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 15,
+        "skill": [],
+      },
+      "3": {
+        "health": 16,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 3,
           },
         ],
       },
@@ -24918,6 +27613,3203 @@ var CARDS = {
       },
     }
   },
+  "8000": {
+    "id": "8000",
+    "name": "Frostbite Giant",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "3",
+    "attack": 3,
+    "health": 21,
+    "cost": 4,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "counter",
+        "x": 1,
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 22,
+        "skill": [],
+      },
+      "3": {
+        "health": 23,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "counter",
+            "x": 2,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+          },
+        ],
+      },
+      "4": {
+        "health": 25,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "counter",
+            "x": 2,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 26,
+        "skill": [],
+      },
+      "6": {
+        "health": 27,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "counter",
+            "x": 2,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "18000": {
+    "id": "18000",
+    "name": "Frostbite Giant",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "3",
+    "attack": 3,
+    "health": 29,
+    "cost": 4,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "counter",
+        "x": 3,
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 30,
+        "skill": [],
+      },
+      "3": {
+        "health": 31,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "counter",
+            "x": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "health": 33,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "counter",
+            "x": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 34,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "counter",
+            "x": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "health": 35,
+        "skill": [],
+      },
+    }
+  },
+  "28000": {
+    "id": "28000",
+    "name": "Frostbite Giant",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "3",
+    "attack": 3,
+    "health": 37,
+    "cost": 4,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 3,
+      },
+      {
+        "id": "counter",
+        "x": 4,
+      },
+      {
+        "id": "weaken",
+        "x": 2,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 38,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "counter",
+            "x": 5,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "3": {
+        "health": 39,
+        "skill": [],
+      },
+      "4": {
+        "health": 41,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "counter",
+            "x": 5,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 42,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "counter",
+            "x": 6,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "health": 44,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "counter",
+            "x": 7,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "8001": {
+    "id": "8001",
+    "name": "Frostbite Wyrm",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "9",
+    "attack": 5,
+    "health": 7,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 1,
+      },
+      {
+        "id": "jam",
+        "c": 9,
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 1,
+          },
+          {
+            "id": "jam",
+            "c": 8,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+          },
+        ],
+      },
+      "3": {
+        "health": 8,
+        "skill": [],
+      },
+      "4": {
+        "health": 9,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 1,
+          },
+          {
+            "id": "jam",
+            "c": 7,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+          },
+        ],
+      },
+      "5": {
+        "health": 10,
+        "skill": [],
+      },
+      "6": {
+        "health": 11,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 1,
+          },
+          {
+            "id": "jam",
+            "c": 7,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "18001": {
+    "id": "18001",
+    "name": "Frostbite Wyrm",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "9",
+    "attack": 5,
+    "health": 11,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 1,
+      },
+      {
+        "id": "jam",
+        "c": 6,
+      },
+      {
+        "id": "weaken",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 6,
+        "health": 12,
+        "skill": [],
+      },
+      "3": {
+        "health": 13,
+        "skill": [],
+      },
+      "4": {
+        "health": 14,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 2,
+          },
+          {
+            "id": "jam",
+            "c": 6,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 2,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "health": 15,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 2,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "28001": {
+    "id": "28001",
+    "name": "Frostbite Wyrm",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "9",
+    "attack": 6,
+    "health": 16,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 2,
+      },
+      {
+        "id": "jam",
+        "c": 5,
+      },
+      {
+        "id": "weaken",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+        ],
+      },
+      "3": {
+        "attack": 7,
+        "skill": [],
+      },
+      "4": {
+        "health": 17,
+        "skill": [],
+      },
+      "5": {
+        "health": 18,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "8002": {
+    "id": "8002",
+    "name": "Frostbite Skeleton",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "7",
+    "attack": 4,
+    "health": 7,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "enfeeble",
+        "x": 1,
+      },
+      {
+        "id": "leech",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 8,
+        "skill": [],
+      },
+      "3": {
+        "health": 9,
+        "skill": [],
+      },
+      "4": {
+        "health": 10,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "attack": 5,
+        "health": 11,
+        "skill": [],
+      },
+    }
+  },
+  "18002": {
+    "id": "18002",
+    "name": "Frostbite Skeleton",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "7",
+    "attack": 5,
+    "health": 12,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 2,
+      },
+      {
+        "id": "enfeeble",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "leech",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 13,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+      "3": {
+        "health": 14,
+        "skill": [],
+      },
+      "4": {
+        "health": 16,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "attack": 6,
+        "skill": [],
+      },
+      "6": {
+        "health": 17,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "28002": {
+    "id": "28002",
+    "name": "Frostbite Skeleton",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "7",
+    "attack": 6,
+    "health": 18,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 3,
+      },
+      {
+        "id": "enfeeble",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "leech",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 22,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+        ],
+      },
+      "3": {
+        "health": 20,
+        "skill": [],
+      },
+      "4": {
+        "attack": 7,
+        "health": 21,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 4,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 4,
+          },
+          {
+            "id": "enfeeble",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+        ],
+      },
+    }
+  },
+  "8003": {
+    "id": "8003",
+    "name": "Frostbite Dragon",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "9",
+    "attack": 4,
+    "health": 14,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "legion",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 15,
+        "skill": [],
+      },
+      "3": {
+        "health": 16,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "legion",
+            "x": 2,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+        ],
+      },
+      "4": {
+        "health": 17,
+        "skill": [],
+      },
+      "5": {
+        "attack": 5,
+        "health": 18,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "legion",
+            "x": 2,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "18003": {
+    "id": "18003",
+    "name": "Frostbite Dragon",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "9",
+    "attack": 5,
+    "health": 19,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "legion",
+        "x": 2,
+      },
+      {
+        "id": "burn",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 20,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "legion",
+            "x": 3,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "health": 21,
+        "skill": [],
+      },
+      "5": {
+        "attack": 5,
+        "health": 22,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "legion",
+            "x": 3,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "28003": {
+    "id": "28003",
+    "name": "Frostbite Dragon",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "9",
+    "attack": 5,
+    "health": 22,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "legion",
+        "x": 4,
+      },
+      {
+        "id": "burn",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 23,
+        "skill": [],
+      },
+      "3": {
+        "attack": 6,
+        "health": 24,
+        "skill": [],
+      },
+      "4": {
+        "health": 25,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "legion",
+            "x": 4,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "legion",
+            "x": 5,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "8004": {
+    "id": "8004",
+    "name": "Frostbite Serpent",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "9",
+    "attack": 6,
+    "health": 16,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 1,
+      },
+      {
+        "id": "rally",
+        "x": 1,
+        "y": "9",
+        "z": 9,
+      },
+      {
+        "id": "flurry",
+        "c": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 17,
+        "skill": [],
+      },
+      "3": {
+        "health": 18,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 1,
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "flurry",
+            "c": 5,
+          },
+        ],
+      },
+      "4": {
+        "health": 19,
+        "skill": [],
+      },
+      "5": {
+        "health": 20,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 1,
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "6": {
+        "health": 21,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 1,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+    }
+  },
+  "18004": {
+    "id": "18004",
+    "name": "Frostbite Serpent",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "9",
+    "attack": 6,
+    "health": 22,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 1,
+      },
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "9",
+        "z": 9,
+      },
+      {
+        "id": "flurry",
+        "c": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 23,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 1,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+      "3": {
+        "health": 24,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 25,
+        "skill": [],
+      },
+      "5": {
+        "health": 27,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+    }
+  },
+  "28004": {
+    "id": "28004",
+    "name": "Frostbite Serpent",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "9",
+    "attack": 6,
+    "health": 28,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "rally",
+        "x": 3,
+        "y": "9",
+        "z": 9,
+      },
+      {
+        "id": "flurry",
+        "c": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 29,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "flurry",
+            "c": 2,
+          },
+        ],
+      },
+      "3": {
+        "health": 31,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 5,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "flurry",
+            "c": 2,
+          },
+        ],
+      },
+      "5": {
+        "health": 32,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 5,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "flurry",
+            "c": 1,
+          },
+        ],
+      },
+    }
+  },
+  "8005": {
+    "id": "8005",
+    "name": "Atlas' Shaman",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "4",
+    "attack": 5,
+    "health": 19,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "heal",
+        "x": 1,
+        "y": "3",
+        "z": 3,
+        "all": "1",
+      },
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "3",
+        "z": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 20,
+        "skill": [],
+      },
+      "3": {
+        "attack": 6,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "heal",
+            "x": 1,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "heal",
+            "x": 1,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "heal",
+            "x": 1,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "18005": {
+    "id": "18005",
+    "name": "Atlas' Shaman",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "4",
+    "attack": 7,
+    "health": 22,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 3,
+      },
+      {
+        "id": "heal",
+        "x": 1,
+        "y": "3",
+        "z": 3,
+        "all": "1",
+      },
+      {
+        "id": "rally",
+        "x": 1,
+        "y": "3",
+        "z": 3,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 26,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "heal",
+            "x": 1,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "3": {
+        "health": 29,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "heal",
+            "x": 1,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "health": 32,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 36,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "attack": 8,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "heal",
+            "x": 4,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "28005": {
+    "id": "28005",
+    "name": "Atlas' Shaman",
+    "rarity": "3",
+    "set": "9999",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "4",
+    "attack": 8,
+    "health": 36,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 4,
+      },
+      {
+        "id": "heal",
+        "x": 5,
+        "y": "3",
+        "z": 3,
+        "all": "1",
+      },
+      {
+        "id": "rally",
+        "x": 4,
+        "y": "3",
+        "z": 3,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 9,
+        "health": 39,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 5,
+          },
+          {
+            "id": "heal",
+            "x": 5,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 5,
+          },
+          {
+            "id": "heal",
+            "x": 6,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 5,
+          },
+          {
+            "id": "heal",
+            "x": 7,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 5,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 5,
+          },
+          {
+            "id": "heal",
+            "x": 8,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 6,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "8006": {
+    "id": "8006",
+    "name": "Atlas' Dragon",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "9",
+    "attack": 6,
+    "health": 24,
+    "cost": 4,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "rally",
+        "x": 3,
+        "y": "3",
+        "z": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 25,
+        "skill": [],
+      },
+      "3": {
+        "attack": 7,
+        "health": 26,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "18006": {
+    "id": "18006",
+    "name": "Atlas' Dragon",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "3",
+    "attack": 7,
+    "health": 26,
+    "cost": 4,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 2,
+      },
+      {
+        "id": "armored",
+        "x": 3,
+      },
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "3",
+        "z": 3,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 8,
+        "health": 27,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "3": {
+        "health": 28,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "attack": 9,
+        "health": 29,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "armored",
+            "x": 5,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 30,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "armored",
+            "x": 5,
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "attack": 10,
+        "health": 31,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "armored",
+            "x": 5,
+          },
+          {
+            "id": "rally",
+            "x": 5,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "28006": {
+    "id": "28006",
+    "name": "Atlas' Dragon",
+    "rarity": "3",
+    "set": "9999",
+    "card_type": "2",
+    "type": "3",
+    "attack": 11,
+    "health": 32,
+    "cost": 4,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 3,
+      },
+      {
+        "id": "armored",
+        "x": 5,
+      },
+      {
+        "id": "rally",
+        "x": 5,
+        "y": "3",
+        "z": 3,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 37,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "armored",
+            "x": 6,
+          },
+          {
+            "id": "rally",
+            "x": 6,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "3": {
+        "health": 42,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 4,
+          },
+          {
+            "id": "armored",
+            "x": 6,
+          },
+          {
+            "id": "rally",
+            "x": 7,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "attack": 12,
+        "health": 47,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 4,
+          },
+          {
+            "id": "armored",
+            "x": 7,
+          },
+          {
+            "id": "rally",
+            "x": 8,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 52,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 5,
+          },
+          {
+            "id": "armored",
+            "x": 8,
+          },
+          {
+            "id": "rally",
+            "x": 8,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "attack": 13,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 5,
+          },
+          {
+            "id": "armored",
+            "x": 9,
+          },
+          {
+            "id": "rally",
+            "x": 9,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "8007": {
+    "id": "8007",
+    "name": "Solaron Cyclone",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "1",
+    "attack": 4,
+    "health": 9,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 2,
+        "y": "1",
+        "z": 1,
+      },
+      {
+        "id": "rally",
+        "x": 1,
+        "y": "1",
+        "z": 1,
+      },
+      {
+        "id": "jam",
+        "c": 7,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 10,
+        "skill": [],
+      },
+      "3": {
+        "health": 11,
+        "skill": [],
+      },
+      "4": {
+        "health": 12,
+        "skill": [],
+      },
+      "5": {
+        "attack": 5,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "jam",
+            "c": 7,
+          },
+        ],
+      },
+    }
+  },
+  "18007": {
+    "id": "18007",
+    "name": "Solaron Cyclone",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "1",
+    "attack": 6,
+    "health": 13,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 3,
+        "y": "1",
+        "z": 1,
+      },
+      {
+        "id": "rally",
+        "x": 1,
+        "y": "1",
+        "z": 1,
+      },
+      {
+        "id": "jam",
+        "c": 7,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "jam",
+            "c": 6,
+          },
+        ],
+      },
+      "3": {
+        "health": 14,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "jam",
+            "c": 6,
+          },
+        ],
+      },
+      "4": {
+        "health": 15,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+      "5": {
+        "health": 16,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 5,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+      "6": {
+        "attack": 7,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 5,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+    }
+  },
+  "28007": {
+    "id": "28007",
+    "name": "Solaron Cyclone",
+    "rarity": "3",
+    "set": "9999",
+    "card_type": "2",
+    "type": "1",
+    "attack": 7,
+    "health": 16,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 6,
+        "y": "1",
+        "z": 1,
+      },
+      {
+        "id": "rally",
+        "x": 1,
+        "y": "1",
+        "z": 1,
+        "all": "1",
+      },
+      {
+        "id": "jam",
+        "c": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 17,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 7,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+      "3": {
+        "health": 18,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 8,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+      "4": {
+        "health": 19,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 8,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+        ],
+      },
+      "5": {
+        "health": 20,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 8,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+        ],
+      },
+      "6": {
+        "attack": 8,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 8,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+        ],
+      },
+    }
+  },
+  "8008": {
+    "id": "8008",
+    "name": "Solaron Sentinel",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "1",
+    "attack": 6,
+    "health": 14,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "y": "1",
+        "z": 1,
+        "all": "1",
+      },
+      {
+        "id": "heal",
+        "x": 1,
+        "y": "1",
+        "z": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 15,
+        "skill": [],
+      },
+      "3": {
+        "health": 16,
+        "skill": [],
+      },
+      "4": {
+        "attack": 7,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "18008": {
+    "id": "18008",
+    "name": "Solaron Sentinel",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "1",
+    "attack": 7,
+    "health": 17,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "y": "1",
+        "z": 1,
+        "all": "1",
+      },
+      {
+        "id": "heal",
+        "x": 2,
+        "y": "1",
+        "z": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 18,
+        "skill": [],
+      },
+      "3": {
+        "attack": 8,
+        "health": 19,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "health": 20,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 3,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "28008": {
+    "id": "28008",
+    "name": "Solaron Sentinel",
+    "rarity": "3",
+    "set": "9999",
+    "card_type": "2",
+    "type": "1",
+    "attack": 8,
+    "health": 22,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 3,
+      },
+      {
+        "id": "protect",
+        "x": 2,
+        "y": "1",
+        "z": 1,
+        "all": "1",
+      },
+      {
+        "id": "heal",
+        "x": 3,
+        "y": "1",
+        "z": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 24,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 3,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 5,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 3,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 5,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 4,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "attack": 9,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 5,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 4,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "8009": {
+    "id": "8009",
+    "name": "Vulcanos Obsidian",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "9",
+    "attack": 3,
+    "health": 10,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "2",
+        "z": 2,
+      },
+      {
+        "id": "strike",
+        "x": 3,
+      },
+      {
+        "id": "burn",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 11,
+        "skill": [],
+      },
+      "3": {
+        "health": 12,
+        "skill": [],
+      },
+      "4": {
+        "attack": 4,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "strike",
+            "x": 4,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "18009": {
+    "id": "18009",
+    "name": "Vulcanos Obsidian",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "9",
+    "attack": 4,
+    "health": 13,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "2",
+        "z": 2,
+      },
+      {
+        "id": "strike",
+        "x": 4,
+      },
+      {
+        "id": "burn",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "health": 15,
+        "skill": [],
+      },
+      "4": {
+        "health": 16,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "strike",
+            "x": 4,
+          },
+          {
+            "id": "burn",
+            "x": 4,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "strike",
+            "x": 4,
+          },
+          {
+            "id": "burn",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "28009": {
+    "id": "28009",
+    "name": "Vulcanos Obsidian",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "9",
+    "attack": 4,
+    "health": 17,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 3,
+        "y": "2",
+        "z": 2,
+      },
+      {
+        "id": "strike",
+        "x": 4,
+      },
+      {
+        "id": "burn",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 18,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "strike",
+            "x": 5,
+          },
+          {
+            "id": "burn",
+            "x": 4,
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "strike",
+            "x": 5,
+          },
+          {
+            "id": "burn",
+            "x": 5,
+          },
+        ],
+      },
+      "5": {
+        "attack": 5,
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "strike",
+            "x": 5,
+          },
+          {
+            "id": "burn",
+            "x": 5,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 4,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "strike",
+            "x": 5,
+          },
+          {
+            "id": "burn",
+            "x": 5,
+          },
+        ],
+      },
+    }
+  },
+  "8010": {
+    "id": "8010",
+    "name": "Vulcanos Skeleton",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "7",
+    "attack": 3,
+    "health": 8,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 1,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 9,
+        "skill": [],
+      },
+      "3": {
+        "health": 10,
+        "skill": [],
+      },
+      "4": {
+        "attack": 4,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "18010": {
+    "id": "18010",
+    "name": "Vulcanos Skeleton",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "7",
+    "attack": 4,
+    "health": 11,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 1,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+      },
+      {
+        "id": "leech",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 12,
+        "skill": [],
+      },
+      "3": {
+        "health": 13,
+        "skill": [],
+      },
+      "4": {
+        "attack": 5,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "28010": {
+    "id": "28010",
+    "name": "Vulcanos Skeleton",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "7",
+    "attack": 5,
+    "health": 14,
+    "cost": 0,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 1,
+      },
+      {
+        "id": "strike",
+        "x": 2,
+      },
+      {
+        "id": "leech",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 15,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+          },
+          {
+            "id": "strike",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+          },
+          {
+            "id": "strike",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "strike",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+        ],
+      },
+    }
+  },
   "11000": {
     "id": "11000",
     "name": "Stormcloud Pegasus",
@@ -35779,6 +41671,539 @@ var CARDS = {
           {
             "id": "protect",
             "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "253": {
+    "id": "253",
+    "name": "Frostbite",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "1",
+    "attack": 0,
+    "health": 30,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "rally",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "jam",
+        "c": 9,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 42,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 8,
+          },
+        ],
+      },
+      "3": {
+        "health": 56,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 7,
+          },
+        ],
+      },
+      "4": {
+        "health": 64,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 7,
+          },
+        ],
+      },
+      "5": {
+        "health": 72,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 6,
+          },
+        ],
+      },
+      "6": {
+        "health": 80,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 6,
+          },
+        ],
+      },
+    }
+  },
+  "254": {
+    "id": "254",
+    "name": "Atlas",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "3",
+    "attack": 0,
+    "health": 40,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "3",
+        "z": 3,
+        "all": "1",
+      },
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "3",
+        "z": 3,
+      },
+      {
+        "id": "heal",
+        "x": 2,
+        "y": "3",
+        "z": 3,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 46,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "3": {
+        "health": 54,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 5,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "health": 63,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 5,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "heal",
+            "x": 4,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 76,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 5,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "heal",
+            "x": 4,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "health": 88,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 6,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "heal",
+            "x": 5,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "255": {
+    "id": "255",
+    "name": "Solaron",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "1",
+    "attack": 0,
+    "health": 35,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 1,
+        "y": "1",
+        "z": 1,
+        "all": "1",
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "y": "3",
+        "z": 3,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 41,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "3": {
+        "health": 48,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 3,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "health": 56,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 4,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 65,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 4,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+      "6": {
+        "health": 75,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 4,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+        ],
+      },
+    }
+  },
+  "256": {
+    "id": "256",
+    "name": "Vulcanos",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "2",
+    "attack": 0,
+    "health": 45,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "strike",
+        "x": 1,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 53,
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+          },
+        ],
+      },
+      "3": {
+        "health": 62,
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "health": 72,
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "health": 83,
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "health": 95,
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 4,
+            "all": "1",
+          },
+          {
+            "id": "strike",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
           },
         ],
       },
