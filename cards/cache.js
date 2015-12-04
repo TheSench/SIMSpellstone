@@ -10286,6 +10286,103 @@ var CARDS = {
       },
     }
   },
+  "2016": {
+    "id": "2016",
+    "name": "Atlas, the Ancient",
+    "rarity": "5",
+    "set": "2000",
+    "card_type": "2",
+    "type": "3",
+    "attack": 9,
+    "health": 32,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 2,
+      },
+      {
+        "id": "rally",
+        "x": 3,
+        "all": "1",
+      },
+      {
+        "id": "heal",
+        "x": 3,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 35,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "attack": 10,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 4,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "attack": 11,
+        "health": 37,
+        "skill": [],
+      },
+      "7": {
+        "health": 38,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 4,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
   "5000": {
     "id": "5000",
     "name": "Azure Sphinx",
