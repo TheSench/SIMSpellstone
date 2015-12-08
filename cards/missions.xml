@@ -59,7 +59,7 @@
 	</feature_lock>
 	<feature_lock>
 		<id>mythic</id>
-		<mission_req>-1</mission_req> 	<!-- -1 -->
+		<mission_req>11</mission_req> 	<!-- -1 -->
 	</feature_lock>
 
 

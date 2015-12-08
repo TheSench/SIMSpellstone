@@ -5859,7 +5859,54 @@
 		</upgrade>
 	</unit>	
 	
-	
+	<unit>
+		<id>2016</id>
+		<card_type>2</card_type>
+		<name>Atlas, the Ancient</name>
+		<asset_prefab>wyldBoss_A</asset_prefab>
+		<asset_bundle>36</asset_bundle>
+		<attack>9</attack>
+		<health>32</health>
+		<cost>3</cost>
+		<rarity>5</rarity>
+		<skill id='evade' x='2' />
+		<skill id='rally' x='3' all='1' />
+		<skill id='heal' x='3' all='1' />
+		<type>3</type>
+		<set>2000</set>
+		<upgrade>
+			<level>2</level>
+			<health>35</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<skill id='evade' x='3' />
+			<skill id='rally' x='3' all='1' />
+			<skill id='heal' x='3' all='1' />
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<attack>10</attack>
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<skill id='evade' x='3' />
+			<skill id='rally' x='3' all='1' />
+			<skill id='heal' x='4' all='1' />
+		</upgrade>
+		<upgrade>
+			<level>6</level>
+			<attack>11</attack>
+			<health>37</health>
+		</upgrade>
+		<upgrade>
+			<level>7</level>
+			<health>38</health>
+			<skill id='evade' x='3' />
+			<skill id='rally' x='4' all='1' />
+			<skill id='heal' x='4' all='1' />
+		</upgrade>
+	</unit>
 
 <!-- END SET 2000 - Reward -->
 
@@ -15199,6 +15246,130 @@
 			<attack>10</attack>
 		</upgrade>
 	</unit>	
+	
+	<unit>
+		<id>7027</id>
+		<card_type>2</card_type>
+		<name>Kitsune</name>
+		<picture>Mystical_Fox_Spirit_A</picture>
+		<asset_bundle>33</asset_bundle>
+		<attack>4</attack>
+		<health>7</health>
+		<cost>1</cost>
+		<rarity>4</rarity>
+		<skill id='heal' all='1' x='1' />
+		<skill id='fervor' x='1' y='3' />
+		<type>3</type>
+		<set>3000</set>
+		<upgrade>
+			<level>2</level>
+			<health>8</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<skill id='heal' all='1' x='1' />
+			<skill id='fervor' x='1' y='3' />
+			<skill id='enfeeble' x='1' />
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<skill id='heal' all='1' x='1' />
+			<skill id='fervor' x='1' y='3' />
+			<skill id='enfeeble' x='2' />
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<attack>5</attack>
+		</upgrade>
+		<upgrade>
+			<level>6</level>
+			<skill id='heal' all='1' x='1' />
+			<skill id='fervor' x='2' y='3' />
+			<skill id='enfeeble' x='2' />
+		</upgrade>
+	</unit>	
+	<unit>
+		<id>17027</id>
+		<card_type>2</card_type>
+		<fusion_level>1</fusion_level>
+		<name>Kitsune Yosei</name>
+		<picture>Mystical_Fox_Spirit_A</picture>
+		<asset_bundle>33</asset_bundle>
+		<attack>5</attack>
+		<health>10</health>
+		<cost>1</cost>
+		<rarity>4</rarity>
+		<skill id='heal' all='1' x='1' />
+		<skill id='fervor' x='2' y='3' />
+		<skill id='enfeeble' x='2' />
+		<type>3</type>
+		<set>3000</set>
+		<upgrade>
+			<level>2</level>
+			<health>11</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<health>12</health>
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<skill id='heal' all='1' x='1' />
+			<skill id='fervor' x='2' y='3' />
+			<skill id='enfeeble' x='3' />
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<health>13</health>
+		</upgrade>
+		<upgrade>
+			<level>6</level>
+			<attack>6</attack>
+		</upgrade>
+	</unit>	
+	<unit>
+		<id>27027</id>
+		<card_type>2</card_type>
+		<fusion_level>2</fusion_level>
+		<name>Kitsune Seishin</name>
+		<picture>Mystical_Fox_Spirit_B</picture>
+		<asset_bundle>33</asset_bundle>
+		<attack>6</attack>
+		<health>14</health>
+		<cost>1</cost>
+		<rarity>4</rarity>
+		<skill id='heal' all='1' x='1' />
+		<skill id='fervor' x='2' y='3' />
+		<skill id='enfeeble' x='3' />
+		<type>3</type>
+		<set>3000</set>
+		<upgrade>
+			<level>2</level>
+			<health>15</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<skill id='heal' all='1' x='1' />
+			<skill id='fervor' x='2' y='3' />
+			<skill id='enfeeble' x='4' />
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<health>16</health>
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<skill id='heal' all='1' x='2' />
+			<skill id='fervor' x='2' y='3' />
+			<skill id='enfeeble' x='4' />
+		</upgrade>
+		<upgrade>
+			<level>6</level>
+			<skill id='heal' all='1' x='2' />
+			<skill id='fervor' x='3' y='3' />
+			<skill id='enfeeble' x='4' />
+		</upgrade>
+	</unit>
 
 <!-- END SET 3000 - Premium -->
 
@@ -15534,7 +15705,7 @@
 		<health>12</health>
 		<cost>2</cost>
 		<rarity>4</rarity>
-		<skill id="evade" x="2"/>
+		<skill id="evade" x="1"/>
 		<skill id="enfeeble" x="1" all="1"/>
 		<skill id="leech" x="3"/>
 		<type>3</type>
@@ -15543,7 +15714,7 @@
 		<upgrade>
 			<level>2</level>
 			<health>13</health>
-			<skill id="evade" x="2"/>
+			<skill id="evade" x="1"/>
 			<skill id="enfeeble" x="2" all="1"/>
 			<skill id="leech" x="3"/>
 		</upgrade>
@@ -15554,7 +15725,7 @@
 		<upgrade>
 			<level>4</level>
 			<health>16</health>
-			<skill id="evade" x="2"/>
+			<skill id="evade" x="1"/>
 			<skill id="enfeeble" x="2" all="1"/>
 			<skill id="leech" x="4"/>
 		</upgrade>
@@ -15565,7 +15736,7 @@
 		<upgrade>
 			<level>6</level>
 			<health>17</health>
-			<skill id="evade" x="3"/>
+			<skill id="evade" x="2"/>
 			<skill id="enfeeble" x="2" all="1"/>
 			<skill id="leech" x="4"/>
 		</upgrade>
@@ -15581,7 +15752,7 @@
 		<health>18</health>
 		<cost>2</cost>
 		<rarity>4</rarity>
-		<skill id="evade" x="3"/>
+		<skill id="evade" x="2"/>
 		<skill id="enfeeble" x="2" all="1"/>
 		<skill id="leech" x="4"/>
 		<type>3</type>
@@ -15589,8 +15760,8 @@
 		<set>9999</set>
 		<upgrade>
 			<level>2</level>
-			<health>22</health>
-			<skill id="evade" x="3"/>
+			<health>19</health>
+			<skill id="evade" x="2"/>
 			<skill id="enfeeble" x="2" all="1"/>
 			<skill id="leech" x="5"/>
 		</upgrade>
@@ -15605,13 +15776,13 @@
 		</upgrade>
 		<upgrade>
 			<level>5</level>
-			<skill id="evade" x="4"/>
+			<skill id="evade" x="3"/>
 			<skill id="enfeeble" x="2" all="1"/>
 			<skill id="leech" x="5"/>
 		</upgrade>
 		<upgrade>
 			<level>6</level>
-			<skill id="evade" x="4"/>
+			<skill id="evade" x="3"/>
 			<skill id="enfeeble" x="3" all="1"/>
 			<skill id="leech" x="5"/>
 		</upgrade>
@@ -15656,7 +15827,7 @@
 			<level>6</level>
 			<skill id="armored" x="1"/>
 			<skill id="legion" x="2"/>
-			<skill id="burn" x="1"/>
+			<skill id="burn" x="2"/>
 		</upgrade>
 	</unit>
 	<unit>
@@ -15992,7 +16163,7 @@
 			<skill id='armored' x='4' />
 			<skill id='heal' all='1' x='5' y='3'/>
 			<skill id='rally' all='1' x='4' y='3'/>
-		<rarity>3</rarity>
+		<rarity>4</rarity>
 		<type>3</type>
 		<sub_type>4</sub_type>
 		<set>9999</set>
@@ -16055,7 +16226,7 @@
 			<level>4</level>
 			<skill id='evade' x='1' />
 			<skill id='armored' x='3' />
-			<skill id='rally'  x='2' y='3'/>
+			<skill id='rally' x='3' y='3'/>
 		</upgrade>
 		<upgrade>
 			<level>5</level>
@@ -16138,7 +16309,7 @@
 			<skill id='evade' x='3' />
 			<skill id='armored' x='5' />
 			<skill id='rally' all='1' x='5' y='3'/>
-		<rarity>3</rarity>
+		<rarity>4</rarity>
 		<type>3</type>
 		<set>9999</set>
 		<upgrade>
@@ -16182,7 +16353,7 @@
 	<unit>
 		<id>8007</id>
 		<card_type>2</card_type>
-		<name>Solaron Cyclone</name>
+		<name>Solaron's Cyclone</name>
 		<picture>Cloud_Elemental_C</picture>
 		<asset_bundle>8</asset_bundle>
 			<cost>1</cost>
@@ -16220,7 +16391,7 @@
 	<unit>
 		<id>18007</id>
 		<card_type>2</card_type>
-		<name>Solaron Cyclone</name>
+		<name>Solaron's Cyclone</name>
 		<picture>Cloud_Elemental_C</picture>
 		<asset_bundle>8</asset_bundle>
 			<cost>1</cost>
@@ -16271,7 +16442,7 @@
 		<id>28007</id>
 		<card_type>2</card_type>
 		<fusion_level>2</fusion_level>
-		<name>Solaron Cyclone</name>
+		<name>Solaron's Cyclone</name>
 		<picture>Cloud_Elemental_C</picture>
 		<asset_bundle>8</asset_bundle>
 			<cost>1</cost>
@@ -16280,7 +16451,7 @@
 			<skill id='protect' x='6' y='1'/>
 			<skill id='rally' all='1' x='1' y='1'/>
 			<skill id='jam' c='5'/>
-		<rarity>3</rarity>
+		<rarity>4</rarity>
 		<type>1</type>
 		<set>9999</set>
 		<upgrade>
@@ -16322,7 +16493,7 @@
 	<unit>
 		<id>8008</id>
 		<card_type>2</card_type>
-		<name>Solaron Sentinel</name>
+		<name>Solaron's Sentinel</name>
 		<picture>Seraph_C</picture>
 		<asset_bundle>2</asset_bundle>
 			<cost>2</cost>
@@ -16363,7 +16534,7 @@
 		<id>18008</id>
 		<card_type>2</card_type>
 		<fusion_level>1</fusion_level>
-		<name>Solaron Sentinel</name>
+		<name>Solaron's Sentinel</name>
 		<picture>Seraph_C</picture>
 		<asset_bundle>2</asset_bundle>
 			<cost>2</cost>
@@ -16408,7 +16579,7 @@
 		<id>28008</id>
 		<card_type>2</card_type>
 		<fusion_level>2</fusion_level>
-		<name>Solaron Sentinel</name>
+		<name>Solaron's Sentinel</name>
 		<picture>Seraph_C</picture>
 		<asset_bundle>2</asset_bundle>
 			<cost>2</cost>
@@ -16417,7 +16588,7 @@
 			<skill id='armored' x='3' />
 			<skill id='protect' all='1' x='2' y='1'/>
 			<skill id='heal' all='1' x='3' y='1'/>
-		<rarity>3</rarity>
+		<rarity>4</rarity>
 		<type>1</type>
 		<set>9999</set>
 		<upgrade>
@@ -16454,7 +16625,7 @@
 	<unit>
 		<id>8009</id>
 		<card_type>2</card_type>
-		<name>Vulcanos Obsidian</name>
+		<name>Vulcanos' Obsidian</name>
 		<picture>Molten_Dragon_B</picture>
 		<asset_bundle>19</asset_bundle>
 			<cost>1</cost>
@@ -16496,16 +16667,16 @@
 		<id>18009</id>
 		<card_type>2</card_type>
 		<fusion_level>1</fusion_level>
-		<name>Vulcanos Obsidian</name>
+		<name>Vulcanos' Obsidian</name>
 		<picture>Molten_Dragon_B</picture>
 		<asset_bundle>19</asset_bundle>
 			<attack>4</attack>
 			<health>13</health>
 			<cost>1</cost>
-			<rarity>4</rarity>
 			<skill id="fervor" x="2" y="2"/>
 			<skill id="strike" x="4"/>
 			<skill id="burn" x="3"/>
+		<rarity>4</rarity>
 		<type>2</type>
 		<sub_type>9</sub_type>
 		<set>9999</set>
@@ -16538,7 +16709,7 @@
 		<id>28009</id>
 		<card_type>2</card_type>
 		<fusion_level>2</fusion_level>
-		<name>Vulcanos Obsidian</name>
+		<name>Vulcanos' Obsidian</name>
 		<picture>Molten_Dragon_B</picture>
 		<asset_bundle>19</asset_bundle>
 			<attack>4</attack>
@@ -16585,7 +16756,7 @@
 	<unit>
 		<id>8010</id>
 		<card_type>2</card_type>
-		<name>Vulcanos Skeleton</name>
+		<name>Vulcanos' Skeleton</name>
 		<picture>Flaming_Skeleton_Warrior_C</picture>
 		<asset_bundle>10</asset_bundle>
 			<cost>1</cost>
@@ -16626,16 +16797,16 @@
 		<id>18010</id>
 		<card_type>2</card_type>
 		<fusion_level>1</fusion_level>
-		<name>Vulcanos Skeleton</name>
+		<name>Vulcanos' Skeleton</name>
 		<picture>Flaming_Skeleton_Warrior_C</picture>
 		<asset_bundle>10</asset_bundle>
 			<attack>4</attack>
 			<health>11</health>
 			<cost>1</cost>
-			<rarity>4</rarity>
 			<skill id='enfeeble' x='1' />
 			<skill id="strike" x="1"/>
 			<skill id='leech' x='3' />
+		<rarity>4</rarity>
 		<type>2</type>
 		<sub_type>7</sub_type>
 		<set>9999</set>
@@ -16663,12 +16834,12 @@
 			<skill id="strike" x="2"/>
 			<skill id='leech' x='4' />
 		</upgrade>
-	</unit>	
+	</unit>
 	<unit>
 		<id>28010</id>
 		<card_type>2</card_type>
 		<fusion_level>2</fusion_level>
-		<name>Vulcanos Skeleton</name>
+		<name>Vulcanos' Skeleton</name>
 		<picture>Flaming_Skeleton_Warrior_C</picture>
 		<asset_bundle>10</asset_bundle>
 			<attack>5</attack>
@@ -22742,9 +22913,9 @@
 			<skill id='jam' c='6' />
 		</upgrade>
 	</unit>
-	
 	<!-- END Event 2 Heroes -->
 	
+	<!-- Event 3 Heroes -->
 	<unit>
 		<id>238</id>
 		<card_type>1</card_type>
@@ -23068,11 +23239,6 @@
 			<skill id='strike' x='1' all='1' c='3' />
 		</upgrade>
 	</unit>
-	
-	<!-- Event 3 Heroes -->
-	
-	
-	
 	<!-- END Event 3 Heroes -->
 	
 	<!-- Event 4 Heroes -->
@@ -23350,13 +23516,12 @@
 			<skill id='protect' x='1' />
 		</upgrade>
 	</unit>
-	
+	<!-- Raid Boss -->
 	<unit>
 		<id>253</id>
 		<card_type>1</card_type>
 		<name>Frostbite</name>
 		<portrait>Portrait_Frostbite</portrait>
-		<asset_bundle></asset_bundle>
 		<attack>0</attack>
 		<health>30</health>
 		<rarity>4</rarity>
@@ -23375,7 +23540,6 @@
 			<health>56</health>
 			<skill id="protect" x="1" all="1"/>
 			<skill id="rally" x="2" all="1"/>
-			<skill id="jam" c="8"/>
 		</upgrade>
 		<upgrade>
 			<level>4</level>
@@ -23394,12 +23558,12 @@
 		<upgrade>
 			<level>6</level>
 			<health>80</health>
-			<skill id="protect" x="3" all="1"/>
+			<skill id="protect" x="2" all="1"/>
 			<skill id="rally" x="3" all="1"/>
-			<skill id="jam" c="6"/>
+			<skill id="jam" c="5"/>
 		</upgrade>
 	</unit>
-	
+	<!-- Titan Bosses -->
 	<unit>
 		<id>254</id>
 		<card_type>1</card_type>
@@ -23546,6 +23710,49 @@
 			<skill id='enfeeble' x='4' all='1' />
 			<skill id='strike' x='3' all='1'/>
 			<skill id='strike' x='2' all='1' />
+		</upgrade>
+	</unit>
+	<!-- Event 5 Bosses -->
+	<unit>
+		<id>257</id>
+		<card_type>1</card_type>
+		<name>Golden Lava Lord</name>
+		<portrait>goldelemental</portrait>
+		<attack>0</attack>
+		<health>25</health>
+		<rarity>4</rarity>
+		<skill id='rally' x='1' all='1' />
+		<type>3</type>
+		<set>9999</set>
+		<upgrade>
+			<level>2</level>
+			<health>30</health>
+			<skill id='rally' x='1' all='1' y='5' />
+			<skill id='enfeeble' x='1' />
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<health>35</health>
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<health>40</health>
+			<skill id='rally' x='1' all='1' />
+			<skill id='enfeeble' x='1' all='1' />
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<health>45</health>
+			<skill id='rally' x='1' all='1' />
+			<skill id='enfeeble' x='1' all='1' />
+			<skill id='protect' x='1' all='1' />
+		</upgrade>
+		<upgrade>
+			<level>6</level>
+			<health>52</health>
+			<skill id='rally' x='2' all='1' />
+			<skill id='enfeeble' x='1' all='1' />
+			<skill id='protect' x='1' all='1' />
 		</upgrade>
 	</unit>
 	
@@ -23890,7 +24097,7 @@
 		<attributes x='1' y='0' all='1' c='0' s='0' />
 		<balance_points>3</balance_points>
 	</skillType>
-	<!-- <skillType>
+	<skillType>
 		<id>frost</id>
 		<order>110</order>
 		<icon>frostbreath</icon>
@@ -23900,7 +24107,8 @@
 		<status_flag>frost_cooldown</status_flag>
 		<attributes x='1' y='0' all='0' c='0' s='0' />
 		<balance_points>8</balance_points>
-	</skillType>-->
+		<hidden>1</hidden>
+	</skillType>
 	<skillType>
 		<id>burn</id>
 		<order>120</order>
