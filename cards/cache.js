@@ -10286,6 +10286,103 @@ var CARDS = {
       },
     }
   },
+  "2016": {
+    "id": "2016",
+    "name": "Atlas, the Ancient",
+    "rarity": "5",
+    "set": "2000",
+    "card_type": "2",
+    "type": "3",
+    "attack": 9,
+    "health": 32,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 2,
+      },
+      {
+        "id": "rally",
+        "x": 3,
+        "all": "1",
+      },
+      {
+        "id": "heal",
+        "x": 3,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 35,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "attack": 10,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 4,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "attack": 11,
+        "health": 37,
+        "skill": [],
+      },
+      "7": {
+        "health": 38,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 4,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
   "5000": {
     "id": "5000",
     "name": "Azure Sphinx",
@@ -27613,6 +27710,257 @@ var CARDS = {
       },
     }
   },
+  "7027": {
+    "id": "7027",
+    "name": "Kitsune",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "attack": 4,
+    "health": 7,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "fervor",
+        "x": 1,
+        "y": "3",
+        "z": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 8,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "attack": 5,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "17027": {
+    "id": "17027",
+    "name": "Kitsune Yosei",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "attack": 5,
+    "health": 10,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "3",
+        "z": 3,
+      },
+      {
+        "id": "enfeeble",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 11,
+        "skill": [],
+      },
+      "3": {
+        "health": 12,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "enfeeble",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "health": 13,
+        "skill": [],
+      },
+      "6": {
+        "attack": 6,
+        "skill": [],
+      },
+    }
+  },
+  "27027": {
+    "id": "27027",
+    "name": "Kitsune Seishin",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "attack": 6,
+    "health": 14,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "3",
+        "z": 3,
+      },
+      {
+        "id": "enfeeble",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 15,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "enfeeble",
+            "x": 4,
+          },
+        ],
+      },
+      "4": {
+        "health": 16,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "enfeeble",
+            "x": 4,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "enfeeble",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
   "8000": {
     "id": "8000",
     "name": "Frostbite Giant",
@@ -28232,7 +28580,7 @@ var CARDS = {
     "skill": [
       {
         "id": "evade",
-        "x": 2,
+        "x": 1,
       },
       {
         "id": "enfeeble",
@@ -28250,7 +28598,7 @@ var CARDS = {
         "skill": [
           {
             "id": "evade",
-            "x": 2,
+            "x": 1,
           },
           {
             "id": "enfeeble",
@@ -28272,7 +28620,7 @@ var CARDS = {
         "skill": [
           {
             "id": "evade",
-            "x": 2,
+            "x": 1,
           },
           {
             "id": "enfeeble",
@@ -28294,7 +28642,7 @@ var CARDS = {
         "skill": [
           {
             "id": "evade",
-            "x": 3,
+            "x": 2,
           },
           {
             "id": "enfeeble",
@@ -28323,7 +28671,7 @@ var CARDS = {
     "skill": [
       {
         "id": "evade",
-        "x": 3,
+        "x": 2,
       },
       {
         "id": "enfeeble",
@@ -28337,11 +28685,11 @@ var CARDS = {
     ],
     "upgrades": {
       "2": {
-        "health": 22,
+        "health": 19,
         "skill": [
           {
             "id": "evade",
-            "x": 3,
+            "x": 2,
           },
           {
             "id": "enfeeble",
@@ -28367,7 +28715,7 @@ var CARDS = {
         "skill": [
           {
             "id": "evade",
-            "x": 4,
+            "x": 3,
           },
           {
             "id": "enfeeble",
@@ -28384,7 +28732,7 @@ var CARDS = {
         "skill": [
           {
             "id": "evade",
-            "x": 4,
+            "x": 3,
           },
           {
             "id": "enfeeble",
@@ -28463,7 +28811,7 @@ var CARDS = {
           },
           {
             "id": "burn",
-            "x": 1,
+            "x": 2,
           },
         ],
       },
@@ -29160,7 +29508,7 @@ var CARDS = {
   "28005": {
     "id": "28005",
     "name": "Atlas' Shaman",
-    "rarity": "3",
+    "rarity": "4",
     "set": "9999",
     "card_type": "2",
     "type": "3",
@@ -29333,7 +29681,7 @@ var CARDS = {
           },
           {
             "id": "rally",
-            "x": 2,
+            "x": 3,
             "y": "3",
             "z": 3,
           },
@@ -29515,7 +29863,7 @@ var CARDS = {
   "28006": {
     "id": "28006",
     "name": "Atlas' Dragon",
-    "rarity": "3",
+    "rarity": "4",
     "set": "9999",
     "card_type": "2",
     "type": "3",
@@ -29645,7 +29993,7 @@ var CARDS = {
   },
   "8007": {
     "id": "8007",
-    "name": "Solaron Cyclone",
+    "name": "Solaron's Cyclone",
     "rarity": "4",
     "set": "9999",
     "card_type": "2",
@@ -29712,7 +30060,7 @@ var CARDS = {
   },
   "18007": {
     "id": "18007",
-    "name": "Solaron Cyclone",
+    "name": "Solaron's Cyclone",
     "rarity": "4",
     "set": "9999",
     "card_type": "2",
@@ -29848,8 +30196,8 @@ var CARDS = {
   },
   "28007": {
     "id": "28007",
-    "name": "Solaron Cyclone",
-    "rarity": "3",
+    "name": "Solaron's Cyclone",
+    "rarity": "4",
     "set": "9999",
     "card_type": "2",
     "type": "1",
@@ -29990,7 +30338,7 @@ var CARDS = {
   },
   "8008": {
     "id": "8008",
-    "name": "Solaron Sentinel",
+    "name": "Solaron's Sentinel",
     "rarity": "4",
     "set": "9999",
     "card_type": "2",
@@ -30077,7 +30425,7 @@ var CARDS = {
   },
   "18008": {
     "id": "18008",
-    "name": "Solaron Sentinel",
+    "name": "Solaron's Sentinel",
     "rarity": "4",
     "set": "9999",
     "card_type": "2",
@@ -30186,8 +30534,8 @@ var CARDS = {
   },
   "28008": {
     "id": "28008",
-    "name": "Solaron Sentinel",
-    "rarity": "3",
+    "name": "Solaron's Sentinel",
+    "rarity": "4",
     "set": "9999",
     "card_type": "2",
     "type": "1",
@@ -30312,7 +30660,7 @@ var CARDS = {
   },
   "8009": {
     "id": "8009",
-    "name": "Vulcanos Obsidian",
+    "name": "Vulcanos' Obsidian",
     "rarity": "4",
     "set": "9999",
     "card_type": "2",
@@ -30390,7 +30738,7 @@ var CARDS = {
   },
   "18009": {
     "id": "18009",
-    "name": "Vulcanos Obsidian",
+    "name": "Vulcanos' Obsidian",
     "rarity": "4",
     "set": "9999",
     "card_type": "2",
@@ -30468,7 +30816,7 @@ var CARDS = {
   },
   "28009": {
     "id": "28009",
-    "name": "Vulcanos Obsidian",
+    "name": "Vulcanos' Obsidian",
     "rarity": "4",
     "set": "9999",
     "card_type": "2",
@@ -30575,7 +30923,7 @@ var CARDS = {
   },
   "8010": {
     "id": "8010",
-    "name": "Vulcanos Skeleton",
+    "name": "Vulcanos' Skeleton",
     "rarity": "4",
     "set": "9999",
     "card_type": "2",
@@ -30643,7 +30991,7 @@ var CARDS = {
   },
   "18010": {
     "id": "18010",
-    "name": "Vulcanos Skeleton",
+    "name": "Vulcanos' Skeleton",
     "rarity": "4",
     "set": "9999",
     "card_type": "2",
@@ -30715,7 +31063,7 @@ var CARDS = {
   },
   "28010": {
     "id": "28010",
-    "name": "Vulcanos Skeleton",
+    "name": "Vulcanos' Skeleton",
     "rarity": "4",
     "set": "9999",
     "card_type": "2",
@@ -41726,10 +42074,6 @@ var CARDS = {
             "x": 2,
             "all": "1",
           },
-          {
-            "id": "jam",
-            "c": 8,
-          },
         ],
       },
       "4": {
@@ -41775,7 +42119,7 @@ var CARDS = {
         "skill": [
           {
             "id": "protect",
-            "x": 3,
+            "x": 2,
             "all": "1",
           },
           {
@@ -41785,7 +42129,7 @@ var CARDS = {
           },
           {
             "id": "jam",
-            "c": 6,
+            "c": 5,
           },
         ],
       },
@@ -42195,6 +42539,100 @@ var CARDS = {
           {
             "id": "strike",
             "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "257": {
+    "id": "257",
+    "name": "Golden Lava Lord",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "3",
+    "attack": 0,
+    "health": 25,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 30,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "5",
+            "z": 5,
+            "all": "1",
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+          },
+        ],
+      },
+      "3": {
+        "health": 35,
+        "skill": [],
+      },
+      "4": {
+        "health": 40,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 45,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "health": 52,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 1,
             "all": "1",
           },
         ],
