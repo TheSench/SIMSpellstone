@@ -115,7 +115,10 @@ function getSkillHtml(skill) {
     if (skill.s) htmlSkill.appendChild(getSkillIcon(skill.s));
     if (skill.y) htmlSkill.appendChild(getFactionIcon(skill.y));
     if (skill.x) htmlSkill.innerHTML += (skill.x);
-    if (skill.c) htmlSkill.innerHTML += (skill.c);
+    if (skill.c) {
+        htmlSkill.innerHTML += (skill.c);
+        htmlSkill.innerHTML += " (" + (skill.coundown ? skill.coundown : "0") + ")";
+    }
     return htmlSkill;
 }
 
