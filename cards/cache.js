@@ -43304,7 +43304,7 @@ var missions = {
       },
       "1504": {
         "id": "1504",
-        "name": "Atlas",
+        "name": "Solaron",
         "commander": "255",
         "deck": [
           "8007",
