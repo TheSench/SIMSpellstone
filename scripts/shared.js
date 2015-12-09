@@ -47,17 +47,6 @@ function copy_card_list(original_card_list) {
     return new_card_list;
 }
 
-// http://stackoverflow.com/questions/728360/most-elegant-way-to-clone-a-javascript-object
-function clone(obj) {
-    if (null == obj || "object" != typeof obj) return obj;
-    var copy = obj.constructor();
-    copy.__proto__ = obj.__proto__;
-    for (var attr in obj) {
-        if (obj.hasOwnProperty(attr)) copy[attr] = obj[attr];
-    }
-    return copy;
-}
-
 function cloneCard(original) {
     var copy = original.constructor();
     copy.__proto__ = original.__proto__;
@@ -73,10 +62,14 @@ function cloneCard(original) {
     copy.type = original.type;
     copy.sub_type = original.sub_type;
     copy.set = original.set;
-    copy.skill = original.skill;
+    copy.skill = copy_skills(original.skill);
     copy.timer = copy.cost;
     copy.health_left = copy.health;
     return copy;
+}
+
+function cloneSkill(original) {
+
 }
 
 var MakeAssault = (function () {
@@ -747,9 +740,9 @@ function load_deck_from_cardlist(list) {
         // Safety mechanism to prevent long loops
         if (list.length > 300) list = list.substr(0, 300);
 
-        list = list.toLowerCase();
-        list = list.toString().replace(/[\&\/\.\!\?\'-]/g, ''); // Replace random punctuation characters
-        list = list.toString().replace(/\s/g, '');              // Remove all whitespace
+        list = list.toString().toLowerCase();
+        list = list.replace(/[\&\/\.\!\?\'-]/g, ''); // Replace random punctuation characters
+        list = list.replace(/\s/g, '');              // Remove all whitespace
         list = list.split(/[,;:]/);
 
         var unit_definitions = CARDS.root.unit;
