@@ -99,6 +99,16 @@ function create_card_html(card, inHand) {
         var faction = factions.names[card.type].toLowerCase();
         htmlCard.appendChild(createDiv(faction));
     }
+    var statuses = getStatuses(card);
+    if (statuses.length > 0) {
+        htmlCard.appendChild(createDiv("hidden", "..."));
+        var divStatuses = createDiv("card-statuses");
+        for (var i = 0; i < statuses.length; i++) {
+            var status = statuses[i];
+            divStatuses.appendChild(status);
+        }
+        htmlCard.appendChild(divStatuses);
+    }
     if (card.sub_type) {
         var htmlSubfaction = getFactionIcon(card.sub_type);
         htmlSubfaction.className = "subfaction";
@@ -198,6 +208,14 @@ function getStatuses(card) {
     if (card.protected) {
         var status = createStatus("protect", card.protected);
         buffs.push(status);
+    }
+    if (card.augmented) {
+        for (var key in card.augmented) {
+            if (key == 'counter' || key == 'armored' || key == 'evade') {
+                var status = createStatus(key, "+" + card.augmented[key]);
+                buffs.push(status);
+            }
+        }
     }
 
     var statuses = [];
