@@ -8745,20 +8745,20 @@
 			<level>3</level>
 			<skill id='protect' x='2' />
 			<skill id='rally' all='1' x='1' y='9' />
-			<skill id='heal' all='1' x='1' y='9' />
+			<skill id='heal' all='1' x='1' />
 		</upgrade>
 		<upgrade>
 			<level>4</level>
 			<skill id='protect' x='2' />
 			<skill id='rally' all='1' x='1' y='9' />
-			<skill id='heal' all='1' x='2' y='9' />
+			<skill id='heal' all='1' x='2' />
 		</upgrade>
 		<upgrade>
 			<level>5</level>
 			<health>17</health>
 			<skill id='protect' x='2' />
 			<skill id='rally' all='1' x='2' y='9' />
-			<skill id='heal' all='1' x='2' y='9' />
+			<skill id='heal' all='1' x='2' />
 		</upgrade>
 	</unit>	
 	<unit>
@@ -8774,7 +8774,7 @@
 		<cost>3</cost>
 		<skill id='protect' x='2' />
 		<skill id='rally' all='1' x='2' y='9' />
-		<skill id='heal' all='1' x='2' y='9' />
+		<skill id='heal' all='1' x='2' />
 		<rarity>3</rarity>
 		<type>1</type>
 		<sub_type>9</sub_type>
@@ -8787,7 +8787,7 @@
 			<level>3</level>
 			<skill id='protect' x='3' />
 			<skill id='rally' all='1' x='2' y='9' />
-			<skill id='heal' all='1' x='2' y='9' />
+			<skill id='heal' all='1' x='2' />
 		</upgrade>
 		<upgrade>
 			<level>4</level>
@@ -8811,7 +8811,7 @@
 		<cost>3</cost>
 		<skill id='protect' x='3' />
 		<skill id='rally' all='1' x='2' y='9' />
-		<skill id='heal' all='1' x='2' y='9' />
+		<skill id='heal' all='1' x='2' />
 		<rarity>3</rarity>
 		<type>1</type>
 		<sub_type>9</sub_type>
@@ -8824,7 +8824,7 @@
 			<level>3</level>
 			<skill id='protect' x='4' />
 			<skill id='rally' all='1' x='2' y='9' />
-			<skill id='heal' all='1' x='2' y='9' />
+			<skill id='heal' all='1' x='2' />
 		</upgrade>
 		<upgrade>
 			<level>4</level>
@@ -8834,7 +8834,7 @@
 			<level>5</level>
 			<skill id='protect' x='4' />
 			<skill id='rally' all='1' x='3' y='9' />
-			<skill id='heal' all='1' x='2' y='9' />
+			<skill id='heal' all='1' x='2' />
 		</upgrade>
 	</unit>	
 	
@@ -23968,7 +23968,7 @@
 			<skill id='strike' x='2' all='1' />
 		</upgrade>
 	</unit>
-	<!-- Event 5 Bosses -->
+	<!-- Event 5 Heroes -->
 	<unit>
 		<id>257</id>
 		<card_type>1</card_type>
@@ -24012,156 +24012,10 @@
 		</upgrade>
 	</unit>
 	
-	<!-- END Event 4 Heroes -->
+	<!-- END Event 5 Heroes -->
 	
 	<!-- START Event 6 Heroes -->
 	
-	<unit>
-		<id>261</id>
-		<card_type>1</card_type>
-		<name>Coldspirit Wisp</name>
-		<portrait>lightwisp</portrait>
-		<attack>0</attack>
-		<health>25</health>
-		<rarity>3</rarity>
-			<skill id='protect' x='1' />
-			<skill id="rally" x="2"/>
-		<type>3</type>
-		<set>9999</set>
-		<upgrade>
-			<level>2</level>
-			<health>30</health>
-
-		</upgrade>
-		<upgrade>
-			<level>3</level>
-			<health>34</health>
-
-		</upgrade>
-		<upgrade>
-			<level>4</level>
-			<health>38</health>
-			<skill id='protect' x='2' />
-			<skill id="rally" x="2"/>
-		</upgrade>
-		<upgrade>
-			<level>5</level>
-			<health>45</health>
-			<skill id='protect' x='2' />
-			<skill id='protect' x='1' />
-			<skill id="rally" x="2"/>
-		</upgrade>
-	</unit>
-	<unit>
-		<id>262</id>
-		<card_type>1</card_type>
-		<name>Frostwhip Storm</name>
-		<portrait>windstormelemental</portrait>
-		<attack>0</attack>
-		<health>30</health>
-		<rarity>3</rarity>
-			<skill id="enfeeble" x="2"/>
-			<skill id='weaken' x='2' />
-		<type>3</type>
-		<set>9999</set>
-		<upgrade>
-			<level>2</level>
-			<health>34</health>
-
-		</upgrade>
-		<upgrade>
-			<level>3</level>
-			<health>38</health>
-			<skill id="enfeeble" x="3"/>
-			<skill id='weaken' x='2' />
-		</upgrade>
-		<upgrade>
-			<level>4</level>
-			<health>44</health>
-			<skill id="enfeeble" x="3"/>
-			<skill id='weaken' x='3' />
-		</upgrade>
-		<upgrade>
-			<level>5</level>
-			<health>50</health>
-			<skill id="enfeeble" x="3"/>
-			<skill id='weaken' x='4' />
-		</upgrade>
-	</unit>
-	<unit>
-		<id>263</id>
-		<card_type>1</card_type>
-		<name>Snow Assassin</name>
-		<portrait>invisibleassassin</portrait>
-		<attack>0</attack>
-		<health>27</health>
-		<rarity>3</rarity>
-			<skill id='enhance' s='evade' x='1' />
-			<skill id='strike' x='2' />
-		<type>3</type>
-		<set>9999</set>
-		<upgrade>
-			<level>2</level>
-			<health>35</health>
-		</upgrade>
-		<upgrade>
-			<level>3</level>
-			<health>40</health>
-			<skill id='enhance' s='evade' x='1' />
-			<skill id='strike' x='3' />
-		</upgrade>
-		<upgrade>
-			<level>4</level>
-			<health>46</health>
-		</upgrade>
-		<upgrade>
-			<level>5</level>
-			<health>53</health>
-			<skill id='enhance' s='evade' x='1' />
-			<skill id='strike' x='3' />
-			<skill id='weaken' x='3' />
-		</upgrade>
-	</unit>
-	
-	<unit>
-		<id>264</id>
-		<card_type>1</card_type>
-		<name>Vapor Hunters</name>
-		<portrait>frogemperor</portrait>
-		<attack>0</attack>
-		<health>40</health>
-		<rarity>4</rarity>
-			<skill id='enhance' s='protect' x='1' />
-			<skill id='strike' x='2' />
-		<type>3</type>
-		<set>9999</set>
-		<upgrade>
-			<level>2</level>
-			<health>44</health>
-		</upgrade>
-		<upgrade>
-			<level>3</level>
-			<health>48</health>
-		</upgrade>
-		<upgrade>
-			<level>4</level>
-			<health>43</health>
-			<skill id='enhance' s='protect' x='1' />
-			<skill id='strike' x='3' />
-		</upgrade>
-		<upgrade>
-			<level>5</level>
-			<health>59</health>
-			<skill id='enhance' s='protect' x='2' />
-			<skill id='strike' x='3' />
-		</upgrade>
-		<upgrade>
-			<level>6</level>
-			<health>65</health>
-			<skill id='enhance' s='protect' x='3' />
-			<skill id='strike' x='4' />
-		</upgrade>
-	</unit>
 	<unit>
 		<id>258</id>
 		<card_type>1</card_type>
@@ -24284,6 +24138,155 @@
 			<skill id='rally' x='4' y='9' />
 			<skill id='rally' x='3' y='9' />
 			<skill id='jam' c='3' />
+		</upgrade>
+	</unit>
+	
+	<unit>
+		<id>261</id>
+		<card_type>1</card_type>
+		<name>Coldspirit Wisp</name>
+		<portrait>lightwisp</portrait>
+		<attack>0</attack>
+		<health>25</health>
+		<rarity>3</rarity>
+			<skill id='protect' x='1' />
+			<skill id="rally" x="2"/>
+		<type>3</type>
+		<set>9999</set>
+		<upgrade>
+			<level>2</level>
+			<health>30</health>
+
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<health>34</health>
+
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<health>38</health>
+			<skill id='protect' x='2' />
+			<skill id="rally" x="2"/>
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<health>45</health>
+			<skill id='protect' x='2' />
+			<skill id='protect' x='1' />
+			<skill id="rally" x="2"/>
+		</upgrade>
+	</unit>
+	
+	<unit>
+		<id>262</id>
+		<card_type>1</card_type>
+		<name>Frostwhip Storm</name>
+		<portrait>windstormelemental</portrait>
+		<attack>0</attack>
+		<health>30</health>
+		<rarity>3</rarity>
+			<skill id="enfeeble" x="2"/>
+			<skill id='weaken' x='2' />
+		<type>3</type>
+		<set>9999</set>
+		<upgrade>
+			<level>2</level>
+			<health>34</health>
+
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<health>38</health>
+			<skill id="enfeeble" x="3"/>
+			<skill id='weaken' x='2' />
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<health>44</health>
+			<skill id="enfeeble" x="3"/>
+			<skill id='weaken' x='3' />
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<health>50</health>
+			<skill id="enfeeble" x="3"/>
+			<skill id='weaken' x='4' />
+		</upgrade>
+	</unit>
+	
+	<unit>
+		<id>263</id>
+		<card_type>1</card_type>
+		<name>Snow Assassin</name>
+		<portrait>invisibleassassin</portrait>
+		<attack>0</attack>
+		<health>27</health>
+		<rarity>3</rarity>
+			<skill id='enhance' s='evade' x='1' />
+			<skill id='strike' x='2' />
+		<type>3</type>
+		<set>9999</set>
+		<upgrade>
+			<level>2</level>
+			<health>35</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<health>40</health>
+			<skill id='enhance' s='evade' x='1' />
+			<skill id='strike' x='3' />
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<health>46</health>
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<health>53</health>
+			<skill id='enhance' s='evade' x='1' />
+			<skill id='strike' x='3' />
+			<skill id='weaken' x='3' />
+		</upgrade>
+	</unit>
+	
+	<unit>
+		<id>264</id>
+		<card_type>1</card_type>
+		<name>Vapor Hunters</name>
+		<portrait>frogemperor</portrait>
+		<attack>0</attack>
+		<health>40</health>
+		<rarity>4</rarity>
+			<skill id='enhance' s='protect' x='1' />
+			<skill id='strike' x='2' />
+		<type>3</type>
+		<set>9999</set>
+		<upgrade>
+			<level>2</level>
+			<health>44</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<health>48</health>
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<health>43</health>
+			<skill id='enhance' s='protect' x='1' />
+			<skill id='strike' x='3' />
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<health>59</health>
+			<skill id='enhance' s='protect' x='2' />
+			<skill id='strike' x='3' />
+		</upgrade>
+		<upgrade>
+			<level>6</level>
+			<health>65</health>
+			<skill id='enhance' s='protect' x='3' />
+			<skill id='strike' x='4' />
 		</upgrade>
 	</unit>
 	
