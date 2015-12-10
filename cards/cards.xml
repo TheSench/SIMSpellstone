@@ -24015,7 +24015,7 @@
 	<!-- END Event 4 Heroes -->
 	
 	<!-- START Event 6 Heroes -->
-	
+	<!--
 	<unit>
 		<id>254</id>
 		<card_type>1</card_type>
@@ -24286,7 +24286,7 @@
 			<skill id='jam' c='3' />
 		</upgrade>
 	</unit>
-	
+	-->
 	<!-- END Event 6 Heroes -->
 	
 	
