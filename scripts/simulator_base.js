@@ -775,7 +775,8 @@ if (simulator_thread) {
         }
 
         if (getsiege) {
-            var towerCard = get_card_by_id("601", tower_level);
+            var towerID = 601 + parseInt(tower_type);
+            var towerCard = get_card_by_id(towerID.toString(), tower_level);
             play_card(towerCard, 'cpu', true);
         }
 

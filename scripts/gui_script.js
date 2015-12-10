@@ -126,6 +126,15 @@ function onpageload() {
             select.appendChild(document.createElement('br'));
         }
     }
+    var select = document.getElementById('tower_type');
+    var towerTypes = ["Castle Tower", "Cannon Tower"];
+    for (var i = 0; i < towerTypes.length; i++) {
+        var towerType = towerTypes[i];
+        var option = document.createElement('option');
+        option.appendChild(document.createTextNode(towerType));
+        option.value = i;
+        select.appendChild(option);
+    }
 
     var c = document.getElementById('ui');
     if (!c) return 0;
@@ -166,6 +175,13 @@ function onpageload() {
         var tower_level = _GET('tower_level');
         tower_level = Math.min(Math.max(tower_level, 0), 15);
         d.value = tower_level;
+    }
+
+    if (_GET('tower_type')) {
+        var d = document.getElementById('tower_type');
+        var tower_type = _GET('tower_type');
+        tower_type = Math.min(Math.max(tower_type, 0), 15);
+        d.value = tower_type;
     }
 
     if (_GET('tournament')) {
@@ -487,6 +503,8 @@ function generate_link(autostart, autolink) {
         parameters.push('siege=1');
         d = document.getElementById('tower_level');
         parameters.push('tower_level=' + d.value);
+        d = document.getElementById('tower_type');
+        parameters.push('tower_type=' + d.value);
     }
 
     /*
@@ -640,6 +658,7 @@ var getmission = false;
 var getbattleground = 0;
 var getsiege = 0;
 var tower_level = 0;
+var tower_type = 0;
 var echo = '';
 var wins = 0;
 var losses = 0;

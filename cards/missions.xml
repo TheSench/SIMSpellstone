@@ -3104,7 +3104,7 @@
 		<id>1500</id>
 		<name>The Earth Trembles...</name>
 		<energy>10</energy>
-		<desc>The great behemoth Atlas has ruptured the earth to emerge and slay all enemies of nature. You will need to be very well prepared for this battle.</desc>
+		<desc>The great Titan Atlas has ruptured the earth to emerge and slay all enemies of nature. You will need to be very well prepared for this battle.</desc>
 		<commander id="254"/>
 		<deck>
 			<card id="8005" name="Atlas' Shaman"/>
@@ -3129,7 +3129,7 @@
 		<id>1501</id>
 		<name>The Land Shatters...</name>
 		<energy>10</energy>
-		<desc>The great behemoth Atlas has ruptured the earth to emerge and slay all enemies of nature. You will need to be very well prepared for this battle.</desc>
+		<desc>The great Titan Atlas has ruptured the earth to emerge and slay all enemies of nature. You will need to be very well prepared for this battle.</desc>
 		<commander id="254"/>
 		<deck>
 			<card id="8005" name="Atlas' Shaman"/>
@@ -3153,7 +3153,7 @@
 		<id>1502</id>
 		<name>Rising from the Depths...</name>
 		<energy>10</energy>
-		<desc>The great behemoth Atlas has ruptured the earth to emerge and slay all enemies of nature. You will need to be very well prepared for this battle.</desc>
+		<desc>The great Titan Atlas has ruptured the earth to emerge and slay all enemies of nature. You will need to be very well prepared for this battle.</desc>
 		<commander id="254"/>
 		<deck>
 			<card id="8005" name="Atlas' Shaman"/>
@@ -3177,7 +3177,7 @@
 		<id>1503</id>
 		<name>Atlas, the Ancient</name>
 		<energy>10</energy>
-		<desc>The great behemoth Atlas has ruptured the earth to emerge and slay all enemies of nature. You will need to be very well prepared for this battle.</desc>
+		<desc>The great Titan Atlas has ruptured the earth to emerge and slay all enemies of nature. You will need to be very well prepared for this battle.</desc>
 		<commander id="254"/>
 		<deck>
 			<card id="8005" name="Atlas' Shaman"/>
@@ -3200,9 +3200,9 @@
 	
 	<mission>
 		<id>1504</id>
-		<name>Solaron</name>
+		<name>The Wind Stirs...</name>
 		<energy>10</energy>
-		<desc>The great behemoth Atlas has descended from the heavens seeking to crush any that would oppose his Justice. You will need to be very well prepared for this battle.</desc>
+		<desc>The great Titan Solaron has descended from the heavens seeking to crush any that would oppose his Justice. You will need to be very well prepared for this battle.</desc>
 		<commander id="255"/>
 		<deck>
 			<card id="8007" name="Solaron's Cyclone"/>
@@ -3211,15 +3211,89 @@
 			<card id="8008"/>
 			<card id="5008" name="Ice Dragon"/>
 			<card id="5008"/>
-			<card id="5018" name="Grand Knight Frog"/>
-			<card id="5003" name="White Knight"/>
+			<card id="2007" name="Platinum Golem"/>
+			<card id="2007"/>
 			<card id="5013" name="Radiance"/>
-			<card id="5009" name="Royal Guardian"/>
-			<card id="5019" name="Vivid Aurora"/>
-			<card id="5002" name="Twilight Mirror"/>
-			<card id="5001" name="Aven Skypiercer"/>
-			<card id="5014" name="Winged Raptor"/>
-			<card id="5014"/>
+			<card id="5013"/>
+			<card id="5026" name="Frostfire Wyrm"/>
+			<card id="5026"/>
+			<card id="5023" name="Nightfall Dragon"/>
+			<card id="5018" name="Grand Knight Frog"/>
+			<card id="1042" name="Archgeneral"/>
+		</deck>
+	</mission>
+	<mission>
+		<id>1505</id>
+		<name>The Clouds Part...</name>
+		<energy>10</energy>
+		<desc>The great Titan Solaron has descended from the heavens seeking to crush any that would oppose his Justice. You will need to be very well prepared for this battle.</desc>
+		<commander id="255"/>
+		<deck>
+			<card id="8007" name="Solaron's Cyclone"/>
+			<card id="8007"/>
+			<card id="8008" name="Solaron's Sentinel"/>
+			<card id="8008"/>
+			<card id="8008"/>
+			<card id="5008" name="Ice Dragon"/>
+			<card id="5008"/>
+			<card id="2007" name="Platinum Golem"/>
+			<card id="2007"/>
+			<card id="5013" name="Radiance"/>
+			<card id="5013"/>
+			<card id="5026" name="Frostfire Wyrm"/>
+			<card id="5026"/>
+			<card id="5023" name="Nightfall Dragon"/>
+			<card id="5018" name="Grand Knight Frog"/>
+			<card id="1042" name="Archgeneral"/>
+		</deck>
+	</mission>
+	<mission>
+		<id>1506</id>
+		<name>The Air Chills...</name>
+		<energy>10</energy>
+		<desc>The great Titan Solaron has descended from the heavens seeking to crush any that would oppose his Justice. You will need to be very well prepared for this battle.</desc>
+		<commander id="255"/>
+		<deck>
+			<card id="8007" name="Solaron's Cyclone"/>
+			<card id="8008" name="Solaron's Sentinel"/>
+			<card id="8008"/>
+			<card id="8008"/>
+			<card id="5008" name="Ice Dragon"/>
+			<card id="5008"/>
+			<card id="2007" name="Platinum Golem"/>
+			<card id="2007"/>
+			<card id="5013" name="Radiance"/>
+			<card id="5026" name="Frostfire Wyrm"/>
+			<card id="5026"/>
+			<card id="5023" name="Nightfall Dragon"/>
+			<card id="5018" name="Grand Knight Frog"/>
+			<card id="1042" name="Archgeneral"/>
+			<card id="1042"/>
+			<card id="1042"/>
+		</deck>
+	</mission>
+	<mission>
+		<id>1507</id>
+		<name>Solaron, The Origin</name>
+		<energy>10</energy>
+		<desc>The great Titan Solaron has descended from the heavens seeking to crush any that would oppose his Justice. You will need to be very well prepared for this battle.</desc>
+		<commander id="255"/>
+		<deck>
+			<card id="8007" name="Solaron's Cyclone"/>
+			<card id="8008" name="Solaron's Sentinel"/>
+			<card id="5008" name="Ice Dragon"/>
+			<card id="5008"/>
+			<card id="2007" name="Platinum Golem"/>
+			<card id="2007"/>
+			<card id="5013" name="Radiance"/>
+			<card id="5013"/>
+			<card id="5026" name="Frostfire Wyrm"/>
+			<card id="5026"/>
+			<card id="5026"/>
+			<card id="5023" name="Nightfall Dragon"/>
+			<card id="5023"/>
+			<card id="5018" name="Grand Knight Frog"/>
+			<card id="1042" name="Archgeneral"/>
 		</deck>
 	</mission>
 	
@@ -3227,7 +3301,7 @@
 		<id>1508</id>
 		<name>Vulcanos</name>
 		<energy>10</energy>
-		<desc>The great behemoth Vulcanos has erupted from atop the tallest mountains laying waste to the land under his molten presence. You will need to be very well prepared for this battle.</desc>
+		<desc>The great Titan Vulcanos has erupted from atop the tallest mountains laying waste to the land under his molten presence. You will need to be very well prepared for this battle.</desc>
 		<commander id="256"/>
 		<deck>
 			<card id="8009" name="Vulcanos Obsidian"/>
@@ -3247,7 +3321,7 @@
 			<card id="6018" name="Underwater Lasher"/>
 		</deck>
 	</mission>
-
+ 
 <!-- END Side Missions -->
 
 
