@@ -24015,9 +24015,9 @@
 	<!-- END Event 4 Heroes -->
 	
 	<!-- START Event 6 Heroes -->
-	<!--
+	
 	<unit>
-		<id>254</id>
+		<id>261</id>
 		<card_type>1</card_type>
 		<name>Coldspirit Wisp</name>
 		<portrait>lightwisp</portrait>
@@ -24053,7 +24053,7 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>255</id>
+		<id>262</id>
 		<card_type>1</card_type>
 		<name>Frostwhip Storm</name>
 		<portrait>windstormelemental</portrait>
@@ -24089,7 +24089,7 @@
 		</upgrade>
 	</unit>
 	<unit>
-		<id>256</id>
+		<id>263</id>
 		<card_type>1</card_type>
 		<name>Snow Assassin</name>
 		<portrait>invisibleassassin</portrait>
@@ -24124,7 +24124,7 @@
 	</unit>
 	
 	<unit>
-		<id>257</id>
+		<id>264</id>
 		<card_type>1</card_type>
 		<name>Vapor Hunters</name>
 		<portrait>frogemperor</portrait>
@@ -24286,7 +24286,7 @@
 			<skill id='jam' c='3' />
 		</upgrade>
 	</unit>
-	-->
+	
 	<!-- END Event 6 Heroes -->
 	
 	
