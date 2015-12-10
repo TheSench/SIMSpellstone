@@ -35,6 +35,7 @@ if (!use_workers) {
         getmission = document.getElementById('mission').value;
         getsiege = document.getElementById('siege').checked;
         tower_level = document.getElementById('tower_level').value;
+        tower_type = document.getElementById('tower_type').value;
         if (quests && quests['root'] && quests['root']['battleground']) {
             getbattleground = [];
             for (var key in quests['root']['battleground']) {

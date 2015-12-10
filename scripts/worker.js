@@ -274,6 +274,7 @@ var getbattleground = 0;
 var getsiege = 0;
 var user_controlled = false;
 var tower_level = 0;
+var tower_type = 0;
 var battleground = [];
 var cache_player_deck = 0;
 var cache_cpu_deck = 0;

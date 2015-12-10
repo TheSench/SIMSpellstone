@@ -8721,6 +8721,124 @@
 	</unit>
 	
 	<unit>
+		<id>5024</id>
+		<card_type>2</card_type>
+		<name>Cloudtop Dragon</name>
+		<picture>Sky_Dragon_A</picture>
+		<hidden_until_time>1449766800</hidden_until_time> <!-- Thu, 10 Dec 2015 17:00:00 GMT -->
+		<asset_bundle>33</asset_bundle>
+		<attack>5</attack>
+		<health>14</health>
+		<cost>3</cost>
+		<skill id='protect' x='1' />
+		<skill id='rally' all='1' x='1' y='9' />
+		<skill id='heal' all='1' x='1' />
+		<rarity>3</rarity>
+		<type>1</type>
+		<sub_type>9</sub_type>
+		<set>3000</set>
+		<upgrade>
+			<level>2</level>
+			<health>16</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<skill id='protect' x='2' />
+			<skill id='rally' all='1' x='1' y='9' />
+			<skill id='heal' all='1' x='1' y='9' />
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<skill id='protect' x='2' />
+			<skill id='rally' all='1' x='1' y='9' />
+			<skill id='heal' all='1' x='2' y='9' />
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<health>17</health>
+			<skill id='protect' x='2' />
+			<skill id='rally' all='1' x='2' y='9' />
+			<skill id='heal' all='1' x='2' y='9' />
+		</upgrade>
+	</unit>	
+	<unit>
+		<id>15024</id>
+		<card_type>2</card_type>
+		<fusion_level>1</fusion_level>
+		<name>Billowtop Dragon</name>
+		<hidden_until_time>1449766800</hidden_until_time> <!-- Thu, 10 Dec 2015 17:00:00 GMT -->
+		<picture>Sky_Dragon_A</picture>
+		<asset_bundle>33</asset_bundle>
+		<attack>5</attack>
+		<health>18</health>
+		<cost>3</cost>
+		<skill id='protect' x='2' />
+		<skill id='rally' all='1' x='2' y='9' />
+		<skill id='heal' all='1' x='2' y='9' />
+		<rarity>3</rarity>
+		<type>1</type>
+		<sub_type>9</sub_type>
+		<set>3000</set>
+		<upgrade>
+			<level>2</level>
+			<health>19</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<skill id='protect' x='3' />
+			<skill id='rally' all='1' x='2' y='9' />
+			<skill id='heal' all='1' x='2' y='9' />
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<health>21</health>
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<attack>6</attack>
+		</upgrade>
+	</unit>	
+	<unit>
+		<id>25024</id>
+		<card_type>2</card_type>
+		<fusion_level>2</fusion_level>
+		<name>Skytop Dragon</name>
+		<hidden_until_time>1449766800</hidden_until_time> <!-- Thu, 10 Dec 2015 17:00:00 GMT -->
+		<picture>Sky_Dragon_B</picture>
+		<asset_bundle>33</asset_bundle>
+		<attack>7</attack>
+		<health>21</health>
+		<cost>3</cost>
+		<skill id='protect' x='3' />
+		<skill id='rally' all='1' x='2' y='9' />
+		<skill id='heal' all='1' x='2' y='9' />
+		<rarity>3</rarity>
+		<type>1</type>
+		<sub_type>9</sub_type>
+		<set>3000</set>
+		<upgrade>
+			<level>2</level>
+			<health>23</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<skill id='protect' x='4' />
+			<skill id='rally' all='1' x='2' y='9' />
+			<skill id='heal' all='1' x='2' y='9' />
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<health>25</health>
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<skill id='protect' x='4' />
+			<skill id='rally' all='1' x='3' y='9' />
+			<skill id='heal' all='1' x='2' y='9' />
+		</upgrade>
+	</unit>	
+	
+	<unit>
 		<id>5025</id>
 		<card_type>2</card_type>
 		<name>Steelskin Dragon</name>
@@ -12030,6 +12148,137 @@
 			<skill id="pierce" x="5" />
 			<skill id="fervor" x="3" y="9"/>
 			<skill id="burn" x="3" />
+		</upgrade>
+	</unit>	
+	
+	<unit>
+		<id>6026</id>
+		<card_type>2</card_type>
+		<name>Smokefang</name>
+		<hidden_until_time>1449766800</hidden_until_time> <!-- Thu, 10 Dec 2015 17:00:00 GMT -->
+		<picture>Smoke_Dragon_A</picture>
+		<asset_bundle>33</asset_bundle>
+		<attack>5</attack>
+		<health>7</health>
+		<cost>1</cost>
+		<skill id='pierce' x='1' />
+		<skill id='burn' x='1' />
+		<rarity>4</rarity>
+		<type>2</type>
+		<sub_type>9</sub_type>
+		<set>3000</set>
+		<upgrade>
+			<level>2</level>
+			<health>9</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<skill id='pierce' x='2' />
+			<skill id='burn' x='1' />
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<attack>6</attack>
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<skill id='evade' x='1' />
+			<skill id='pierce' x='2' />
+			<skill id='burn' x='1' />
+		</upgrade>
+		<upgrade>
+			<level>6</level>
+			<skill id='evade' x='1' />
+			<skill id='pierce' x='2' />
+			<skill id='burn' x='2' />
+		</upgrade>
+	</unit>	
+	<unit>
+		<id>16026</id>
+		<card_type>2</card_type>
+		<fusion_level>1</fusion_level>
+		<name>Sootfang</name>
+		<hidden_until_time>1449766800</hidden_until_time> <!-- Thu, 10 Dec 2015 17:00:00 GMT -->
+		<picture>Smoke_Dragon_A</picture>
+		<asset_bundle>33</asset_bundle>
+		<attack>6</attack>
+		<health>10</health>
+		<cost>1</cost>
+		<skill id='evade' x='1' />
+		<skill id='pierce' x='2' />
+		<skill id='burn' x='2' />
+		<rarity>4</rarity>
+		<type>2</type>
+		<sub_type>9</sub_type>
+		<set>3000</set>
+		<upgrade>
+			<level>2</level>
+			<health>11</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<skill id='evade' x='1' />
+			<skill id='pierce' x='3' />
+			<skill id='burn' x='2' />
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<skill id='evade' x='2' />
+			<skill id='pierce' x='3' />
+			<skill id='burn' x='2' />
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<skill id='evade' x='2' />
+			<skill id='pierce' x='4' />
+			<skill id='burn' x='2' />
+		</upgrade>
+		<upgrade>
+			<level>6</level>
+			<attack>7</attack>
+		</upgrade>
+	</unit>	
+	<unit>
+		<id>26026</id>
+		<card_type>2</card_type>
+		<fusion_level>2</fusion_level>
+		<name>Crimsonfang</name>
+		<hidden_until_time>1449766800</hidden_until_time> <!-- Thu, 10 Dec 2015 17:00:00 GMT -->
+		<picture>Smoke_Dragon_B</picture>
+		<asset_bundle>33</asset_bundle>
+		<attack>7</attack>
+		<health>12</health>
+		<cost>1</cost>
+		<skill id='evade' x='2' />
+		<skill id='pierce' x='4' />
+		<skill id='burn' x='2' />
+		<rarity>4</rarity>
+		<type>2</type>
+		<sub_type>9</sub_type>
+		<set>3000</set>
+		<upgrade>
+			<level>2</level>
+			<health>13</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<skill id='evade' x='2' />
+			<skill id='pierce' x='5' />
+			<skill id='burn' x='2' />
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<health>14</health>
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<attack>8</attack>
+		</upgrade>
+		<upgrade>
+			<level>6</level>
+			<skill id='evade' x='2' />
+			<skill id='pierce' x='5' />
+			<skill id='burn' x='3' />
 		</upgrade>
 	</unit>	
 
@@ -16357,8 +16606,8 @@
 		<picture>Cloud_Elemental_C</picture>
 		<asset_bundle>8</asset_bundle>
 			<cost>1</cost>
-			<attack>4</attack>
-			<health>9</health>
+			<attack>3</attack>
+			<health>8</health>
 			<skill id='protect' x='2' y='1'/>
 			<skill id='rally' x='1' y='1'/>
 			<skill id='jam' c='7'/>
@@ -16367,24 +16616,25 @@
 		<set>9999</set>
 		<upgrade>
 			<level>2</level>
-			<health>10</health>
+			<health>9</health>
 		</upgrade>
 		<upgrade>
 			<level>3</level>
-			<health>11</health>
+			<health>10</health>
 		</upgrade>
 		<upgrade>
 			<level>4</level>
-			<health>12</health>
+			<health>11</health>
 		</upgrade>
 		<upgrade>
 			<level>5</level>
-			<attack>5</attack>
+			<attack>4</attack>
+			<health>12</health>
 		</upgrade>
 		<upgrade>
 			<level>6</level>
 			<skill id='protect' x='3' y='1'/>
-			<skill id='rally' x='1' y='1'/>
+			<skill id='rally' x='2' y='1'/>
 			<skill id='jam' c='7'/>
 		</upgrade>
 	</unit>
@@ -16395,10 +16645,10 @@
 		<picture>Cloud_Elemental_C</picture>
 		<asset_bundle>8</asset_bundle>
 			<cost>1</cost>
-			<attack>6</attack>
+			<attack>4</attack>
 			<health>13</health>
 			<skill id='protect' x='3' y='1'/>
-			<skill id='rally' x='1' y='1'/>
+			<skill id='rally' x='2' y='1'/>
 			<skill id='jam' c='7'/>
 		<rarity>4</rarity>
 		<type>1</type>
@@ -16406,35 +16656,35 @@
 		<upgrade>
 			<level>2</level>
 			<skill id='protect' x='3' y='1'/>
-			<skill id='rally' x='1' y='1'/>
+			<skill id='rally' x='2' y='1'/>
 			<skill id='jam' c='6'/>
 		</upgrade>
 		<upgrade>
 			<level>3</level>
 			<health>14</health>
 			<skill id='protect' x='4' y='1'/>
-			<skill id='rally' x='1' y='1'/>
+			<skill id='rally' x='2' y='1'/>
 			<skill id='jam' c='6'/>
 		</upgrade>
 		<upgrade>
 			<level>4</level>
 			<health>15</health>
 			<skill id='protect' x='4' y='1'/>
-			<skill id='rally' x='1' y='1'/>
+			<skill id='rally' x='2' y='1'/>
 			<skill id='jam' c='5'/>
 		</upgrade>
 		<upgrade>
 			<level>5</level>
 			<health>16</health>
 			<skill id='protect' x='5' y='1'/>
-			<skill id='rally' x='1' y='1'/>
+			<skill id='rally' x='2' y='1'/>
 			<skill id='jam' c='5'/>
 		</upgrade>
 		<upgrade>
 			<level>6</level>
-			<attack>7</attack>
+			<attack>5</attack>
 			<skill id='protect' x='5' y='1'/>
-			<skill id='rally' all='1' x='1' y='1'/>
+			<skill id='rally' all='1' x='3' y='1'/>
 			<skill id='jam' c='5'/>
 		</upgrade>
 	</unit>
@@ -16446,47 +16696,48 @@
 		<picture>Cloud_Elemental_C</picture>
 		<asset_bundle>8</asset_bundle>
 			<cost>1</cost>
-			<attack>7</attack>
-			<health>16</health>
+			<attack>5</attack>
+			<health>17</health>
 			<skill id='protect' x='6' y='1'/>
-			<skill id='rally' all='1' x='1' y='1'/>
+			<skill id='rally' all='1' x='3' y='1'/>
 			<skill id='jam' c='5'/>
 		<rarity>4</rarity>
 		<type>1</type>
 		<set>9999</set>
 		<upgrade>
 			<level>2</level>
-			<health>17</health>
+			<health>18</health>
 			<skill id='protect' x='7' y='1'/>
-			<skill id='rally' all='1' x='1' y='1'/>
+			<skill id='rally' all='1' x='3' y='1'/>
 			<skill id='jam' c='5'/>
 		</upgrade>
 		<upgrade>
 			<level>3</level>
-			<health>18</health>
-			<skill id='protect' x='8' y='1'/>
-			<skill id='rally' all='1' x='1' y='1'/>
+			<health>19</health>
+			<attack>6</attack>
+			<skill id='protect' x='7' y='1'/>
+			<skill id='rally' all='1' x='3' y='1'/>
 			<skill id='jam' c='5'/>
 		</upgrade>
 		<upgrade>
 			<level>4</level>
-			<health>19</health>
-			<skill id='protect' x='8' y='1'/>
-			<skill id='rally' all='1' x='1' y='1'/>
+			<health>20</health>
+			<skill id='protect' x='7' y='1'/>
+			<skill id='rally' all='1' x='3' y='1'/>
 			<skill id='jam' c='4'/>
 		</upgrade>
 		<upgrade>
 			<level>5</level>
-			<health>20</health>
-			<skill id='protect' x='8' y='1'/>
-			<skill id='rally' all='1' x='2' y='1'/>
+			<health>21</health>
+			<skill id='protect' x='7' y='1'/>
+			<skill id='rally' all='1' x='4' y='1'/>
 			<skill id='jam' c='4'/>
 		</upgrade>
 		<upgrade>
 			<level>6</level>
-			<attack>8</attack>
+			<attack>7</attack>
 			<skill id='protect' x='8' y='1'/>
-			<skill id='rally' all='1' x='3' y='1'/>
+			<skill id='rally' all='1' x='4' y='1'/>
 			<skill id='jam' c='3'/>
 		</upgrade>
 	</unit>
@@ -16497,7 +16748,7 @@
 		<picture>Seraph_C</picture>
 		<asset_bundle>2</asset_bundle>
 			<cost>2</cost>
-			<attack>6</attack>
+			<attack>5</attack>
 			<health>14</health>
 			<skill id='armored' x='2' />
 			<skill id='protect' all='1' x='1' y='1'/>
@@ -16511,11 +16762,11 @@
 		</upgrade>
 		<upgrade>
 			<level>3</level>
-			<health>16</health>
+			<health>17</health>
 		</upgrade>
 		<upgrade>
 			<level>4</level>
-			<attack>7</attack>
+			<attack>6</attack>
 		</upgrade>
 		<upgrade>
 			<level>5</level>
@@ -16526,7 +16777,7 @@
 		<upgrade>
 			<level>6</level>
 			<skill id='armored' x='2' />
-			<skill id='protect' all='1' x='1' y='1'/>
+			<skill id='protect' all='1' x='2' y='1'/>
 			<skill id='heal' all='1' x='2' y='1'/>
 		</upgrade>
 	</unit>
@@ -16538,40 +16789,41 @@
 		<picture>Seraph_C</picture>
 		<asset_bundle>2</asset_bundle>
 			<cost>2</cost>
-			<attack>7</attack>
-			<health>17</health>
+			<attack>6</attack>
+			<health>20</health>
 			<skill id='armored' x='2' />
-			<skill id='protect' all='1' x='1' y='1'/>
+			<skill id='protect' all='1' x='2' y='1'/>
 			<skill id='heal' all='1' x='2' y='1'/>
 		<rarity>4</rarity>
 		<type>1</type>
 		<set>9999</set>
 		<upgrade>
 			<level>2</level>
-			<health>18</health>
+			<health>22</health>
 		</upgrade>
 		<upgrade>
 			<level>3</level>
-			<attack>8</attack>
-			<health>19</health>
+			<attack>7</attack>
+			<health>23</health>
 		</upgrade>
 		<upgrade>
 			<level>4</level>
+			<health>25</health>
 			<skill id='armored' x='3' />
-			<skill id='protect' all='1' x='1' y='1'/>
-			<skill id='heal' all='1' x='2' y='1'/>
+			<skill id='protect' all='1' x='2' y='1'/>
+			<skill id='heal' all='1' x='3' y='1'/>
 		</upgrade>
 		<upgrade>
 			<level>5</level>
 			<skill id='armored' x='3' />
 			<skill id='protect' all='1' x='2' y='1'/>
-			<skill id='heal' all='1' x='2' y='1'/>
+			<skill id='heal' all='1' x='3' y='1'/>
 		</upgrade>
 		<upgrade>
 			<level>6</level>
-			<health>20</health>
+			<health>27</health>
 			<skill id='armored' x='3' />
-			<skill id='protect' all='1' x='2' y='1'/>
+			<skill id='protect' all='1' x='3' y='1'/>
 			<skill id='heal' all='1' x='3' y='1'/>
 		</upgrade>
 	</unit>
@@ -16583,42 +16835,42 @@
 		<picture>Seraph_C</picture>
 		<asset_bundle>2</asset_bundle>
 			<cost>2</cost>
-			<attack>8</attack>
-			<health>22</health>
+			<attack>7</attack>
+			<health>29</health>
 			<skill id='armored' x='3' />
-			<skill id='protect' all='1' x='2' y='1'/>
-			<skill id='heal' all='1' x='3' y='1'/>
+			<skill id='protect' all='1' x='3' y='1'/>
+			<skill id='heal' all='1' x='4' y='1'/>
 		<rarity>4</rarity>
 		<type>1</type>
 		<set>9999</set>
 		<upgrade>
 			<level>2</level>
-			<health>24</health>
+			<health>30</health>
 		</upgrade>
 		<upgrade>
 			<level>3</level>
 			<skill id='armored' x='4' />
-			<skill id='protect' all='1' x='2' y='1'/>
-			<skill id='heal' all='1' x='3' y='1'/>
+			<skill id='protect' all='1' x='3' y='1'/>
+			<skill id='heal' all='1' x='4' y='1'/>
 		</upgrade>
 		<upgrade>
 			<level>4</level>
 			<skill id='armored' x='5' />
-			<skill id='protect' all='1' x='2' y='1'/>
-			<skill id='heal' all='1' x='3' y='1'/>
+			<skill id='protect' all='1' x='3' y='1'/>
+			<skill id='heal' all='1' x='4' y='1'/>
 		</upgrade>
 		<upgrade>
 			<level>5</level>
 			<skill id='armored' x='5' />
-			<skill id='protect' all='1' x='2' y='1'/>
-			<skill id='heal' all='1' x='4' y='1'/>
+			<skill id='protect' all='1' x='4' y='1'/>
+			<skill id='heal' all='1' x='5' y='1'/>
 		</upgrade>
 		<upgrade>
 			<level>6</level>
-			<attack>9</attack>
+			<attack>8</attack>
 			<skill id='armored' x='5' />
-			<skill id='protect' all='1' x='3' y='1'/>
-			<skill id='heal' all='1' x='4' y='1'/>
+			<skill id='protect' all='1' x='5' y='1'/>
+			<skill id='heal' all='1' x='6' y='1'/>
 		</upgrade>
 	</unit>
 	
@@ -23622,42 +23874,46 @@
 		<portrait>aetherguardian</portrait>
 		<asset_bundle>27</asset_bundle>
 			<attack>0</attack>
-			<health>35</health>
+			<health>37</health>
 			<skill id='heal' x='1' all='1' y='1'/>
-			<skill id='protect' x='1' all='1' y='3'/>
+			<skill id='protect' x='1' all='1' y='1'/>
+			<skill id='jam' c='8' />
 		<rarity>4</rarity>
 		<type>1</type>
 		<set>9999</set>
 		<upgrade>
 			<level>2</level>
-			<health>41</health>
-			<skill id='heal' x='2' all='1' y='1'/>
-			<skill id='protect' all='1' x='2' y='3'/>
+			<health>48</health>
+			<skill id='heal' x='1' all='1' y='1'/>
+			<skill id='protect' all='1' x='1' y='1'/>
+			<skill id='jam' c='7' />
 		</upgrade>
 		<upgrade>
 			<level>3</level>
-			<health>48</health>
-			<skill id='heal' x='3' all='1' y='1'/>
-			<skill id='protect' all='1' x='3' y='3'/>
+			<health>59</health>
+			<skill id='heal' x='2' all='1' y='1'/>
+			<skill id='protect' all='1' x='1' y='1'/>
+			<skill id='jam' c='7' />
 		</upgrade>
 		<upgrade>
 			<level>4</level>
-			<health>56</health>
-			<skill id='heal' x='4' all='1' y='1'/>
-			<skill id='protect' all='1' x='4' y='3'/>
+			<health>70</health>
+			<skill id='heal' x='3' all='1' y='1'/>
+			<skill id='protect' all='1' x='2' y='1'/>
+			<skill id='jam' c='6' />
 		</upgrade>
 		<upgrade>
 			<level>5</level>
-			<health>65</health>
+			<health>80</health>
 			<skill id='heal' x='4' all='1' y='1'/>
-			<skill id='protect' all='1' x='4' y='3'/>
+			<skill id='protect' all='1' x='2' y='1'/>
 			<skill id='jam' c='5' />
 		</upgrade>
 		<upgrade>
 			<level>6</level>
-			<health>75</health>
-			<skill id='heal' x='4' all='1' y='1'/>
-			<skill id='protect' all='1' x='4' y='3'/>
+			<health>89</health>
+			<skill id='heal' x='5' all='1' y='1'/>
+			<skill id='protect' all='1' x='3' y='1'/>
 			<skill id='jam' c='4' />
 		</upgrade>
 	</unit>
@@ -23721,13 +23977,13 @@
 		<attack>0</attack>
 		<health>25</health>
 		<rarity>4</rarity>
-		<skill id='rally' x='1' all='1' />
-		<type>3</type>
+		<skill id='strike' x='1' all='1' />
+		<type>2</type>
 		<set>9999</set>
 		<upgrade>
 			<level>2</level>
 			<health>30</health>
-			<skill id='rally' x='1' all='1' y='5' />
+			<skill id='strike' x='1' all='1' />
 			<skill id='enfeeble' x='1' />
 		</upgrade>
 		<upgrade>
@@ -23737,26 +23993,301 @@
 		<upgrade>
 			<level>4</level>
 			<health>40</health>
-			<skill id='rally' x='1' all='1' />
+			<skill id='strike' x='1' all='1' />
 			<skill id='enfeeble' x='1' all='1' />
 		</upgrade>
 		<upgrade>
 			<level>5</level>
 			<health>45</health>
-			<skill id='rally' x='1' all='1' />
+			<skill id='strike' x='1' all='1' />
 			<skill id='enfeeble' x='1' all='1' />
-			<skill id='protect' x='1' all='1' />
+			<skill id='weaken' x='1' all='1' />
 		</upgrade>
 		<upgrade>
 			<level>6</level>
 			<health>52</health>
-			<skill id='rally' x='2' all='1' />
+			<skill id='strike' x='2' all='1' />
 			<skill id='enfeeble' x='1' all='1' />
-			<skill id='protect' x='1' all='1' />
+			<skill id='weaken' x='1' all='1' />
 		</upgrade>
 	</unit>
 	
 	<!-- END Event 4 Heroes -->
+	
+	<!-- START Event 6 Heroes -->
+	
+	<unit>
+		<id>254</id>
+		<card_type>1</card_type>
+		<name>Coldspirit Wisp</name>
+		<portrait>lightwisp</portrait>
+		<attack>0</attack>
+		<health>25</health>
+		<rarity>3</rarity>
+			<skill id='protect' x='1' />
+			<skill id="rally" x="2"/>
+		<type>3</type>
+		<set>9999</set>
+		<upgrade>
+			<level>2</level>
+			<health>30</health>
+
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<health>34</health>
+
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<health>38</health>
+			<skill id='protect' x='2' />
+			<skill id="rally" x="2"/>
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<health>45</health>
+			<skill id='protect' x='2' />
+			<skill id='protect' x='1' />
+			<skill id="rally" x="2"/>
+		</upgrade>
+	</unit>
+	<unit>
+		<id>255</id>
+		<card_type>1</card_type>
+		<name>Frostwhip Storm</name>
+		<portrait>windstormelemental</portrait>
+		<attack>0</attack>
+		<health>30</health>
+		<rarity>3</rarity>
+			<skill id="enfeeble" x="2"/>
+			<skill id='weaken' x='2' />
+		<type>3</type>
+		<set>9999</set>
+		<upgrade>
+			<level>2</level>
+			<health>34</health>
+
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<health>38</health>
+			<skill id="enfeeble" x="3"/>
+			<skill id='weaken' x='2' />
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<health>44</health>
+			<skill id="enfeeble" x="3"/>
+			<skill id='weaken' x='3' />
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<health>50</health>
+			<skill id="enfeeble" x="3"/>
+			<skill id='weaken' x='4' />
+		</upgrade>
+	</unit>
+	<unit>
+		<id>256</id>
+		<card_type>1</card_type>
+		<name>Snow Assassin</name>
+		<portrait>invisibleassassin</portrait>
+		<attack>0</attack>
+		<health>27</health>
+		<rarity>3</rarity>
+			<skill id='enhance' s='evade' x='1' />
+			<skill id='strike' x='2' />
+		<type>3</type>
+		<set>9999</set>
+		<upgrade>
+			<level>2</level>
+			<health>35</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<health>40</health>
+			<skill id='enhance' s='evade' x='1' />
+			<skill id='strike' x='3' />
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<health>46</health>
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<health>53</health>
+			<skill id='enhance' s='evade' x='1' />
+			<skill id='strike' x='3' />
+			<skill id='weaken' x='3' />
+		</upgrade>
+	</unit>
+	
+	<unit>
+		<id>257</id>
+		<card_type>1</card_type>
+		<name>Vapor Hunters</name>
+		<portrait>frogemperor</portrait>
+		<attack>0</attack>
+		<health>40</health>
+		<rarity>4</rarity>
+			<skill id='enhance' s='protect' x='1' />
+			<skill id='strike' x='2' />
+		<type>3</type>
+		<set>9999</set>
+		<upgrade>
+			<level>2</level>
+			<health>44</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<health>48</health>
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<health>43</health>
+			<skill id='enhance' s='protect' x='1' />
+			<skill id='strike' x='3' />
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<health>59</health>
+			<skill id='enhance' s='protect' x='2' />
+			<skill id='strike' x='3' />
+		</upgrade>
+		<upgrade>
+			<level>6</level>
+			<health>65</health>
+			<skill id='enhance' s='protect' x='3' />
+			<skill id='strike' x='4' />
+		</upgrade>
+	</unit>
+	<unit>
+		<id>258</id>
+		<card_type>1</card_type>
+		<name>Arcane Apparition</name>
+		<portrait>frogemperor</portrait>
+		<attack>0</attack>
+		<health>26</health>
+		<rarity>3</rarity>
+			<skill id='counter' x='2' />
+			<skill id='heal' x='2' />
+		<type>3</type>
+		<set>9999</set>
+		<upgrade>
+			<level>2</level>
+			<health>30</health>
+			<skill id='counter' x='2' />
+			<skill id='heal' x='3' />
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<health>35</health>
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<health>41</health>
+			<skill id='counter' x='3' />
+			<skill id='heal' x='3' />
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<health>48</health>
+			<skill id='counter' x='3' />
+			<skill id='heal' x='4' />
+		</upgrade>
+	</unit>
+	
+	<unit>
+		<id>259</id>
+		<card_type>1</card_type>
+		<name>Iceback Dragon</name>
+		<portrait>icedragon</portrait>
+		<attack>0</attack>
+		<health>43</health>
+		<rarity>4</rarity>
+			<skill id='enfeeble' x='3' />
+			<skill id='enhance' s='weaken' x='2' />
+		<type>3</type>
+		<set>9999</set>
+		<upgrade>
+			<level>2</level>
+			<health>47</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<health>51</health>
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<health>57</health>
+			<skill id='enfeeble' x='3' />
+			<skill id='enhance' s='weaken' x='2' />
+			<skill id='enhance' s='weaken' x='1' />
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<health>64</health>
+			<skill id='enfeeble' x='3' />
+			<skill id='enhance' s='weaken' x='2' />
+			<skill id='enhance' s='weaken' x='2' />
+		</upgrade>
+		<upgrade>
+			<level>6</level>
+			<health>69</health>
+			<skill id='enfeeble' x='4' />
+			<skill id='enhance' s='weaken' x='2' />
+			<skill id='enhance' s='weaken' x='3' />
+		</upgrade>
+	</unit>
+	
+	<unit>
+		<id>260</id>
+		<card_type>1</card_type>
+		<name>Void Demon</name>
+		<portrait>icedragon</portrait>
+		<attack>0</attack>
+		<health>50</health>
+		<rarity>4</rarity>
+			<skill id='rally' x='2' y='9' />
+			<skill id='jam' c='6' />
+		<type>3</type>
+		<set>9999</set>
+		<upgrade>
+			<level>2</level>
+			<health>47</health>
+			<skill id='rally' x='3' y='9' />
+			<skill id='jam' c='5' />
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<health>51</health>
+			<skill id='rally' x='4' y='9' />
+			<skill id='jam' c='5' />
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<health>57</health>
+			<skill id='rally' x='4' y='9' />
+			<skill id='jam' c='4' />
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<health>64</health>
+			<skill id='rally' x='4' y='9' />
+			<skill id='rally' x='2' y='9' />
+			<skill id='jam' c='4' />
+		</upgrade>
+		<upgrade>
+			<level>6</level>
+			<health>69</health>
+			<skill id='rally' x='4' y='9' />
+			<skill id='rally' x='3' y='9' />
+			<skill id='jam' c='3' />
+		</upgrade>
+	</unit>
+	
+	<!-- END Event 6 Heroes -->
 	
 	
 	<!-- START AETHER Default Cards -->
@@ -23962,6 +24493,83 @@
 		<desc>These structures are built by adventurers to protect their camps as they travel Arcantica.</desc>
 	</unit>
 
+	<unit>
+		<id>602</id>
+		<card_type>2</card_type>
+		<name>Cannon Tower</name>
+		<picture>Enemy_Tower_A</picture>
+		<asset_bundle>1</asset_bundle>
+		<attack>0</attack>
+		<health>1</health>
+		<cost>4</cost>
+		<type>0</type>
+		<skill id='strike' x='1' />
+		<rarity>0</rarity>
+		<set>9999</set>
+		<upgrade>
+			<level>2</level>
+			<health>2</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<health>3</health>
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<health>4</health>
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<health>5</health>
+			<cost>3</cost>
+		</upgrade>
+		<upgrade>
+			<level>6</level>
+			<health>6</health>
+			<skill id='strike' x='2' />
+		</upgrade>
+		<upgrade>
+			<level>7</level>
+			<health>7</health>
+		</upgrade>
+		<upgrade>
+			<level>8</level>
+			<health>8</health>
+		</upgrade>
+		<upgrade>
+			<level>9</level>
+			<health>9</health>
+		</upgrade>
+		<upgrade>
+			<level>10</level>
+			<health>10</health>
+			<cost>2</cost>
+		</upgrade>
+		<upgrade>
+			<level>11</level>
+			<health>11</health>
+			<skill id='strike' x='3' />
+		</upgrade>
+		<upgrade>
+			<level>12</level>
+			<health>12</health>
+		</upgrade>
+		<upgrade>
+			<level>13</level>
+			<health>13</health>
+		</upgrade>
+		<upgrade>
+			<level>14</level>
+			<health>14</health>
+			<cost>1</cost>
+		</upgrade>
+		<upgrade>
+			<level>15</level>
+			<health>15</health>
+			<skill id='strike' x='4' />
+		</upgrade>
+		<desc>"You know what's better than a tower? A tower with a CANNON!" - Jarad, Castle Guard</desc>
+	</unit>
 
 <!-- SKILLS -->
 
@@ -24020,7 +24628,7 @@
 		<desc_faction>Heals a random allied {y} creature</desc_faction>
 		<desc_all_faction>Heals all allied {y} creatures</desc_all_faction>
 		<attributes x='1' y='1' all='1' c='0' s='0' />
-		<balance_points>1.5</balance_points>
+		<balance_points>2</balance_points>
 	</skillType>
 	<skillType>
 		<id>protect</id>
@@ -24033,7 +24641,7 @@
 		<desc_all_faction>Reduces the next Damage dealt to all allied {y} creatures</desc_all_faction>
 		<status_flag>protect</status_flag>
 		<attributes x='1' y='1' all='1' c='0' s='0' />
-		<balance_points>3</balance_points>
+		<balance_points>2</balance_points>
 	</skillType>
 	<skillType>
 		<id>rally</id>
@@ -24185,6 +24793,20 @@
 	</skillType>
 
 
+	<skillType>
+		<id>protect_ice</id>
+		<order>50</order>
+		<icon>mystic_barrier</icon>
+		<name>Iceshatter Barrier</name>
+		<desc>Reduces the next Damage dealt to a random allied creature</desc>
+		<desc_all>Reduces the next Damage dealt to all allied creatures</desc_all>
+		<desc_faction>Reduces the next Damage dealt to a random allied {y} creature</desc_faction>
+		<desc_all_faction>Reduces the next Damage dealt to all allied {y} creatures</desc_all_faction>
+		<status_flag>protect</status_flag>
+		<attributes x='1' y='1' all='1' c='0' s='0' />
+		<balance_points>3</balance_points>
+		<hidden>1</hidden>
+	</skillType>
 <!-- CARD FACTIONS -->
 	<unitType>
 		<id>0</id>
