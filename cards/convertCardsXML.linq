@@ -2,8 +2,11 @@
   <Reference>&lt;RuntimeDirectory&gt;\System.XML.dll</Reference>
 </Query>
 
+static HashSet<string> g_unitIDs;
+
 void Main()
 {
+	g_unitIDs = new HashSet<string>();
 	var path = Path.GetDirectoryName(Util.CurrentQueryPath);
 	var xmlFile = Path.Combine(path, "cards.xml");
 	var doc = XDocument.Load(xmlFile);
@@ -200,6 +203,9 @@ public partial class unit
 	{
 		StringBuilder unit = new StringBuilder();
 		AppendUnit(unit);
+		if(!g_unitIDs.Add(this.id)) {
+			"Conflict".Dump(this.id + " : " + this.name);
+		}
 		return unit.ToString();
 	}
 
