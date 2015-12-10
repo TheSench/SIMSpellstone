@@ -43145,6 +43145,531 @@ var CARDS = {
       },
     }
   },
+  "261": {
+    "id": "261",
+    "name": "Coldspirit Wisp",
+    "rarity": "3",
+    "set": "9999",
+    "card_type": "1",
+    "type": "3",
+    "attack": 0,
+    "health": 25,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 1,
+      },
+      {
+        "id": "rally",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 30,
+        "skill": [],
+      },
+      "3": {
+        "health": 34,
+        "skill": [],
+      },
+      "4": {
+        "health": 38,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 2,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "health": 45,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 1,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "262": {
+    "id": "262",
+    "name": "Frostwhip Storm",
+    "rarity": "3",
+    "set": "9999",
+    "card_type": "1",
+    "type": "3",
+    "attack": 0,
+    "health": 30,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 2,
+      },
+      {
+        "id": "weaken",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 34,
+        "skill": [],
+      },
+      "3": {
+        "health": 38,
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 3,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "health": 44,
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 3,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "health": 50,
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 3,
+          },
+          {
+            "id": "weaken",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "263": {
+    "id": "263",
+    "name": "Snow Assassin",
+    "rarity": "3",
+    "set": "9999",
+    "card_type": "1",
+    "type": "3",
+    "attack": 0,
+    "health": 27,
+    "skill": [
+      {
+        "id": "enhance",
+        "x": 1,
+        "s": "evade",
+      },
+      {
+        "id": "strike",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 35,
+        "skill": [],
+      },
+      "3": {
+        "health": 40,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "evade",
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 46,
+        "skill": [],
+      },
+      "5": {
+        "health": 53,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "evade",
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "264": {
+    "id": "264",
+    "name": "Vapor Hunters",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "3",
+    "attack": 0,
+    "health": 40,
+    "skill": [
+      {
+        "id": "enhance",
+        "x": 1,
+        "s": "protect",
+      },
+      {
+        "id": "strike",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 44,
+        "skill": [],
+      },
+      "3": {
+        "health": 48,
+        "skill": [],
+      },
+      "4": {
+        "health": 43,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "protect",
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "health": 59,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 2,
+            "s": "protect",
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "health": 65,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 3,
+            "s": "protect",
+          },
+          {
+            "id": "strike",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "258": {
+    "id": "258",
+    "name": "Arcane Apparition",
+    "rarity": "3",
+    "set": "9999",
+    "card_type": "1",
+    "type": "3",
+    "attack": 0,
+    "health": 26,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 2,
+      },
+      {
+        "id": "heal",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 30,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 2,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+          },
+        ],
+      },
+      "3": {
+        "health": 35,
+        "skill": [],
+      },
+      "4": {
+        "health": 41,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 3,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "health": 48,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 3,
+          },
+          {
+            "id": "heal",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "259": {
+    "id": "259",
+    "name": "Iceback Dragon",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "3",
+    "attack": 0,
+    "health": 43,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 3,
+      },
+      {
+        "id": "enhance",
+        "x": 2,
+        "s": "weaken",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 47,
+        "skill": [],
+      },
+      "3": {
+        "health": 51,
+        "skill": [],
+      },
+      "4": {
+        "health": 57,
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 3,
+          },
+          {
+            "id": "enhance",
+            "x": 2,
+            "s": "weaken",
+          },
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "weaken",
+          },
+        ],
+      },
+      "5": {
+        "health": 64,
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 3,
+          },
+          {
+            "id": "enhance",
+            "x": 2,
+            "s": "weaken",
+          },
+          {
+            "id": "enhance",
+            "x": 2,
+            "s": "weaken",
+          },
+        ],
+      },
+      "6": {
+        "health": 69,
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 4,
+          },
+          {
+            "id": "enhance",
+            "x": 2,
+            "s": "weaken",
+          },
+          {
+            "id": "enhance",
+            "x": 3,
+            "s": "weaken",
+          },
+        ],
+      },
+    }
+  },
+  "260": {
+    "id": "260",
+    "name": "Void Demon",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "3",
+    "attack": 0,
+    "health": 50,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "9",
+        "z": 9,
+      },
+      {
+        "id": "jam",
+        "c": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 47,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+      "3": {
+        "health": 51,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+      "4": {
+        "health": 57,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+        ],
+      },
+      "5": {
+        "health": 64,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+        ],
+      },
+      "6": {
+        "health": 69,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+        ],
+      },
+    }
+  },
   "500": {
     "id": "500",
     "name": "Arcane Dustling",
