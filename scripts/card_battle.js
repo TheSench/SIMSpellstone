@@ -16,6 +16,10 @@ var startsim = function (autostart) {
     sims_left = 1;
     user_controlled = true;
     debug = document.getElementById('debug').checked;
+    var d = document.getElementById('auto_mode');
+    if (d) {
+        auto_mode = d.checked;
+    }
     getdeck = document.getElementById('deck').value;
     getcardlist = document.getElementById('cardlist').value;
     getdeck2 = document.getElementById('deck2').value;
