@@ -16093,6 +16093,250 @@ var CARDS = {
       },
     }
   },
+  "5027": {
+    "id": "5027",
+    "name": "Northern War-kin",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "attack": 6,
+    "health": 15,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "rally",
+        "x": 1,
+        "y": "1",
+        "z": 1,
+        "all": "1",
+      },
+      {
+        "id": "jam",
+        "c": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+      "3": {
+        "health": 16,
+        "skill": [],
+      },
+      "4": {
+        "attack": 7,
+        "health": 17,
+        "skill": [],
+      },
+      "5": {
+        "health": 18,
+        "skill": [],
+      },
+      "6": {
+        "health": 19,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+    }
+  },
+  "15027": {
+    "id": "15027",
+    "name": "Northern Clash-kin",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "attack": 7,
+    "health": 19,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "1",
+        "z": 1,
+        "all": "1",
+      },
+      {
+        "id": "jam",
+        "c": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 20,
+        "skill": [],
+      },
+      "3": {
+        "health": 22,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+        ],
+      },
+      "5": {
+        "health": 22,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+        ],
+      },
+      "6": {
+        "attack": 8,
+        "health": 23,
+        "skill": [],
+      },
+    }
+  },
+  "25027": {
+    "id": "25027",
+    "name": "Northern Strife-kin",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "attack": 8,
+    "health": 23,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "rally",
+        "x": 3,
+        "y": "1",
+        "z": 1,
+        "all": "1",
+      },
+      {
+        "id": "jam",
+        "c": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 24,
+        "skill": [],
+      },
+      "3": {
+        "health": 26,
+        "skill": [],
+      },
+      "4": {
+        "attack": 9,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+        ],
+      },
+    }
+  },
   "6000": {
     "id": "6000",
     "name": "Furnace Mech",
@@ -43200,7 +43444,7 @@ var CARDS = {
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
-    "type": "3",
+    "type": "1",
     "attack": 0,
     "health": 43,
     "skill": [
@@ -43288,7 +43532,7 @@ var CARDS = {
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
-    "type": "3",
+    "type": "2",
     "attack": 0,
     "health": 50,
     "skill": [
@@ -43399,7 +43643,7 @@ var CARDS = {
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
-    "type": "3",
+    "type": "1",
     "attack": 0,
     "health": 25,
     "skill": [
@@ -43521,7 +43765,7 @@ var CARDS = {
   "263": {
     "id": "263",
     "name": "Snow Assassin",
-    "rarity": "3",
+    "rarity": "2",
     "set": "9999",
     "card_type": "1",
     "type": "3",
@@ -43587,7 +43831,7 @@ var CARDS = {
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
-    "type": "3",
+    "type": "1",
     "attack": 0,
     "health": 40,
     "skill": [
