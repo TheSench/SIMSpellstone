@@ -5907,6 +5907,67 @@
 			<skill id='heal' x='4' all='1' />
 		</upgrade>
 	</unit>
+	
+	<unit>
+		<id>2017</id>
+		<card_type>2</card_type>
+		<name>Solaron, the Origin</name>
+		<asset_prefab>aetherBoss_A</asset_prefab>
+		<asset_bundle>36</asset_bundle>
+		<attack>8</attack>
+		<health>29</health>
+		<cost>3</cost>
+		<rarity>5</rarity>
+		<skill id='armored' x='4' />
+		<skill id='legion' x='5' />
+		<skill id='protect' all='1' x='3' />
+		<type>1</type>
+		<set>2000</set>
+		<upgrade>
+			<level>2</level>
+			<skill id='armored' x='4' />
+			<skill id='legion' x='6' />
+			<skill id='protect' all='1' x='3' />
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<health>30</health>
+			<attack>9</attack>
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<health>31</health>
+			<skill id='armored' x='5' />
+			<skill id='legion' x='6' />
+			<skill id='protect' all='1' x='3' />
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<health>32</health>
+			<skill id='armored' x='5' />
+			<skill id='legion' x='6' />
+			<skill id='protect' all='1' x='4' />
+		</upgrade>
+		<upgrade>
+			<level>6</level>
+			<health>33</health>
+			<attack>10</attack>
+		</upgrade>
+		<upgrade>
+			<level>6</level>
+			<health>34</health>
+			<skill id='armored' x='5' />
+			<skill id='legion' x='7' />
+			<skill id='protect' all='1' x='4' />
+		</upgrade>
+		<upgrade>
+			<level>7</level>
+			<health>35</health>
+			<skill id='armored' x='5' />
+			<skill id='legion' x='7' />
+			<skill id='protect' all='1' x='5' />
+		</upgrade>
+	</unit>
 
 <!-- END SET 2000 - Reward -->
 

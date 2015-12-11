@@ -10383,6 +10383,133 @@ var CARDS = {
       },
     }
   },
+  "2017": {
+    "id": "2017",
+    "name": "Solaron, the Origin",
+    "rarity": "5",
+    "set": "2000",
+    "card_type": "2",
+    "type": "1",
+    "attack": 8,
+    "health": 29,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 4,
+      },
+      {
+        "id": "legion",
+        "x": 5,
+      },
+      {
+        "id": "protect",
+        "x": 3,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "legion",
+            "x": 6,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "3": {
+        "attack": 9,
+        "health": 30,
+        "skill": [],
+      },
+      "4": {
+        "health": 31,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 5,
+          },
+          {
+            "id": "legion",
+            "x": 6,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 32,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 5,
+          },
+          {
+            "id": "legion",
+            "x": 6,
+          },
+          {
+            "id": "protect",
+            "x": 4,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "attack": 10,
+        "health": 33,
+        "skill": [],
+      },
+      "6": {
+        "health": 34,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 5,
+          },
+          {
+            "id": "legion",
+            "x": 7,
+          },
+          {
+            "id": "protect",
+            "x": 4,
+            "all": "1",
+          },
+        ],
+      },
+      "7": {
+        "health": 35,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 5,
+          },
+          {
+            "id": "legion",
+            "x": 7,
+          },
+          {
+            "id": "protect",
+            "x": 5,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
   "5000": {
     "id": "5000",
     "name": "Azure Sphinx",
