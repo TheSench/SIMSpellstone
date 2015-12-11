@@ -87,7 +87,6 @@ var MakeAssault = (function () {
         this.sub_type = original_card.sub_type;
         this.set = original_card.set;
         this.skill = copy_skills(original_card.skill);
-        this.timer = this.cost;
         if (this.level > 1) {
             for (var key in original_card.upgrades) {
                 var upgrade = original_card.upgrades[key];
@@ -98,6 +97,7 @@ var MakeAssault = (function () {
                 if (key == this.level) break;
             }
         }
+        this.timer = this.cost;
         this.health_left = this.health;
         card_cache[original_card.id + "-" + unit_level] = this;
         return this;
