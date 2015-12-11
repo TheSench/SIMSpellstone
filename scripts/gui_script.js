@@ -191,12 +191,16 @@ function onpageload() {
 
     if (_GET('ordered')) {
         var d = document.getElementById('ordered');
-        d.checked = true;
+        if (d) {
+            d.checked = true;
+        }
     }
 
     if (_GET('exactorder')) {
         var d = document.getElementById('exactorder');
-        d.checked = true;
+        if (d) {
+            d.checked = true;
+        }
     }
 
     if (_GET('ordered2')) {
@@ -234,27 +238,42 @@ function onpageload() {
 
     if (_GET('sims')) {
         var d = document.getElementById('sims');
-        d.value = _GET('sims');
+        if (d) {
+            d.value = _GET('sims');
+        }
     }
 
     if (_GET('debug')) {
         var d = document.getElementById('debug');
         d.checked = true;
     }
+    
+    if (_GET('auto_mode')) {
+        var d = document.getElementById('auto_mode');
+        if (d) {
+            d.checked = true;
+        }
+    }
 
     if (_GET('mass_debug')) {
         var d = document.getElementById('mass_debug');
-        d.checked = true;
+        if (d) {
+            d.checked = true;
+        }
     }
 
     if (_GET('loss_debug')) {
         var d = document.getElementById('loss_debug');
-        d.checked = true;
+        if (d) {
+            d.checked = true;
+        }
     }
 
     if (_GET('user_controlled')) {
         var d = document.getElementById('user_controlled');
-        d.checked = true;
+        if (d) {
+            d.checked = true;
+        }
     }
 
     document.title = "SimSpellstone " + text_version + " - The Spellstone Simulator that runs from your browser!";
@@ -565,6 +584,11 @@ function generate_link(autostart, autolink) {
         parameters.push('debug=1');
     }
 
+    d = document.getElementById('auto_mode');
+    if (d && d.checked) {
+        parameters.push('auto_mode=1');
+    }
+
     d = document.getElementById('mass_debug');
     if (d && d.checked) {
         parameters.push('mass_debug=1');
@@ -680,6 +704,7 @@ var total_turns = 0;
 var cache_player_deck = false;
 var cache_cpu_deck = false;
 var choice = undefined;
+var auto_mode = false;
 
 // Global arrays
 var factions = {

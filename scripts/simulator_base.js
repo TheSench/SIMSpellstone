@@ -849,7 +849,7 @@ if (simulator_thread) {
     var setup_turn = function (turn, first_player, second_player, field) {
         simulation_turns = turn;
 
-        if (user_controlled) choice = undefined;
+        if (user_controlled) choice = (auto_mode ? 0 : undefined);
 
         if (turn % 2) {
             var p = first_player;

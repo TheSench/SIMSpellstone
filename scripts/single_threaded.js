@@ -20,6 +20,10 @@ if (!use_workers) {
         user_controlled = document.getElementById('user_controlled').checked;
         /*if (user_controlled) debug = true;
         else*/ debug = document.getElementById('debug').checked;
+        var d = document.getElementById('auto_mode');
+        if (d) {
+            auto_mode = d.checked;
+        }
         mass_debug = document.getElementById('mass_debug').checked;
         loss_debug = document.getElementById('loss_debug').checked;
         if (loss_debug && mass_debug) mass_debug = false;
