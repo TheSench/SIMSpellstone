@@ -53,7 +53,7 @@ function draw_hand(hand, callback, state) {
     for (var i = 0, len = hand.length; i < len; i++) {
         var unit = hand[i];
         if (!unit) continue;
-        var htmlCard = create_card_html(unit);
+        var htmlCard = create_card_html(unit, true);
         if (i === 0) htmlCard.classList.add("hand-left");
         else if (i === 2) htmlCard.classList.add("hand-right");
         var cardidx = i;
@@ -89,7 +89,7 @@ function create_card_html(card, inHand) {
     var skills = card.skill;
     for (var i in skills) {
         var skill = skills[i];
-        divSkills.appendChild(getSkillHtml(skill));
+        divSkills.appendChild(getSkillHtml(skill, inHand));
         divSkills.appendChild(document.createElement('br'));
         skillsShort.appendChild(getSkillIcon(skill.id));
     }
@@ -117,7 +117,7 @@ function create_card_html(card, inHand) {
     return htmlCard;
 }
 
-function getSkillHtml(skill) {
+function getSkillHtml(skill, inHand) {
     var htmlSkill = document.createElement("span");
     htmlSkill.className = "skill";
     htmlSkill.appendChild(getSkillIcon(skill.id));
@@ -127,7 +127,7 @@ function getSkillHtml(skill) {
     if (skill.x) htmlSkill.innerHTML += (skill.x);
     if (skill.c) {
         htmlSkill.innerHTML += (skill.c);
-        htmlSkill.innerHTML += " (" + (skill.coundown ? skill.coundown : "0") + ")";
+        if (!inHand) htmlSkill.innerHTML += " (" + (skill.coundown ? skill.coundown : "0") + ")";
     }
     return htmlSkill;
 }
