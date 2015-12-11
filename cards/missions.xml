@@ -3321,7 +3321,7 @@
 			<card id="6018" name="Underwater Lasher"/>
 		</deck>
 	</mission>
- 
+
 <!-- END Side Missions -->
 
 
@@ -3445,8 +3445,9 @@
 		<arena_x>250</arena_x>
 		<arena_y>150</arena_y>
 	</location>
-
 	
+
+
 <!-- Event Portals BEGIN -->
 
 	<!-- <portal>
