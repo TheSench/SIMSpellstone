@@ -62,7 +62,7 @@ if (use_workers) {
 
             add_results(num_games, num_wins, num_draws, num_losses, turns);
 
-            if (debug && !mass_debug && !loss_debug) {
+            if (debug && !mass_debug && !loss_debug && !win_debug) {
                 display_debug_results(num_wins, num_draws);
             } else if (!sims_left) {
                 display_final_results();
@@ -98,7 +98,7 @@ if (use_workers) {
 
                     add_results(num_games, num_wins, num_draws, num_losses, turns);
 
-                    if (debug && !mass_debug && !loss_debug) {
+                    if (debug && !mass_debug && !loss_debug && !win_debug) {
                         var result = (num_wins ? 1 : num_draws ? 'draw' : 0);
                         display_debug_results(result);
                     } else if (!sims_left) {
@@ -171,6 +171,23 @@ if (use_workers) {
                 } else {
                     if (sims_left <= num_games) {
                         echo = 'No losses found. No debug output to display.<br><br>';
+                        sims_left = false;
+                        sims_to_process = 0;
+                    } else {
+                        echo = ' ';
+                    }
+                }
+            } else if (loss_debug && !found_loss) {
+                if (num_wins > 0) {
+                    echo = 'Win found. Displaying debug output... <br><br>' + echo;
+                    echo += '<br><br>';
+                    found_loss = true;
+                    sims_left = false;
+                    sims_to_process = 0;
+                    stopsim(1);
+                } else {
+                    if (sims_left <= num_games) {
+                        echo = 'No wins found. No debug output to display.<br><br>';
                         sims_left = false;
                         sims_to_process = 0;
                     } else {
@@ -260,7 +277,8 @@ if (use_workers) {
         }
         mass_debug = document.getElementById('mass_debug').checked;
         loss_debug = document.getElementById('loss_debug').checked;
-        if (loss_debug && mass_debug) mass_debug = false;
+        win_debug = document.getElementById('win_debug').checked;
+        if ((win_debug || loss_debug) && mass_debug) mass_debug = false;
         getdeck = document.getElementById('deck').value;
         getcardlist = document.getElementById('cardlist').value;
         getdeck2 = document.getElementById('deck2').value;
@@ -334,6 +352,7 @@ if (use_workers) {
         params['surge'] = surge;
         params['debug'] = debug;
         params['loss_debug'] = loss_debug;
+        params['win_debug'] = loss_debug;
         params['mass_debug'] = mass_debug;
         params['user_controlled'] = user_controlled;
         for (var i = 0; i < max_workers; i++) {
@@ -344,7 +363,7 @@ if (use_workers) {
         run_sims();
 
         // Output decks for first simulation
-        if (debug && loss_debug) {
+        if (debug && (loss_debug || win_debug)) {
         } else if (echo == '') {
             debug_dump_decks();
         }
@@ -382,7 +401,7 @@ if (use_workers) {
     // Loops through all simulations
     // - keeps track of number of simulations and outputs status
     var run_sims = function (worker_id, batch_size, time_started) {
-        if (debug && !mass_debug && !loss_debug) {
+        if (debug && !mass_debug && !loss_debug && !win_debug) {
             workers[0].postMessage({ 'cmd': 'run_sims' });
 
         } else {

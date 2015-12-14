@@ -269,6 +269,13 @@ function onpageload() {
         }
     }
 
+    if (_GET('win_debug')) {
+        var d = document.getElementById('win_debug');
+        if (d) {
+            d.checked = true;
+        }
+    }
+
     if (_GET('user_controlled')) {
         var d = document.getElementById('user_controlled');
         if (d) {
@@ -599,6 +606,11 @@ function generate_link(autostart, autolink) {
         parameters.push('loss_debug=1');
     }
 
+    d = document.getElementById('win_debug');
+    if (d && d.checked) {
+        parameters.push('win_debug=1');
+    }
+
     if (autostart) {
         parameters.push('autostart=1');
     }
@@ -661,6 +673,32 @@ function scroll_to_end() {
     window.scrollTo(0, document.body.scrollHeight);
 }
 
+function toggleRadio(radio) {
+    var value = eval(radio.id);
+    if (radio.checked == value) {
+        radio.checked = false;
+        eval(radio.id + "=false;");
+    } else {
+        switch (radio.id) {
+            case "mass_debug":
+                mass_debug = true;
+                loss_debug = false;
+                win_debug = false;
+                break;
+            case "loss_debug":
+                mass_debug = false;
+                loss_debug = true;
+                win_debug = false;
+                break;
+            case "win_debug":
+                mass_debug = false;
+                loss_debug = false;;
+                win_debug = true;
+                break;
+        }
+    }
+}
+
 // Initialize global variables
 var history = '';
 var turn = false;
@@ -668,6 +706,7 @@ var max_turns = 50;
 var debug = false;
 var mass_debug = false;
 var loss_debug = false;
+var win_debug = false;
 var found_loss = false;
 var gettournament = false;
 var getdeck = '';

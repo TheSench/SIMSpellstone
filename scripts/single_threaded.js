@@ -26,7 +26,8 @@ if (!use_workers) {
         }
         mass_debug = document.getElementById('mass_debug').checked;
         loss_debug = document.getElementById('loss_debug').checked;
-        if (loss_debug && mass_debug) mass_debug = false;
+        win_debug = document.getElementById('win_debug').checked;
+        if ((loss_debug || win_debug) && mass_debug) mass_debug = false;
         getdeck = document.getElementById('deck').value;
         getcardlist = document.getElementById('cardlist').value;
         getdeck2 = document.getElementById('deck2').value;
@@ -148,7 +149,7 @@ if (!use_workers) {
     }
 
     var run_sims = function () {
-        if (debug && !mass_debug && !loss_debug) {
+        if (debug && !mass_debug && !loss_debug && !win_debug) {
             run_sim();
             debug_end();
         } else if (user_controlled) {
@@ -182,7 +183,7 @@ if (!use_workers) {
 
                 // Batch messes up mass debug and loss debug! Let's disable batch!
                 if (debug && mass_debug) run_sims_batch = 1;
-                if (debug && loss_debug) run_sims_batch = 1;
+                if (debug && (loss_debug || win_debug)) run_sims_batch = 1;
 
                 time_start_batch = new Date();
                 for (var i = 0; i < run_sims_batch; i++) {  // Start a new batch
@@ -272,7 +273,7 @@ if (!use_workers) {
         }
 
         // Output decks for first simulation
-        if (debug && loss_debug) {
+        if (debug && (loss_debug || win_debug)) {
         } else if (echo == '') {
             debug_dump_decks();
         }
@@ -295,8 +296,6 @@ if (!use_workers) {
             if (sims_left > 0) sims_left--;
             run_sims_count++;
         }
-
-        if (debug && mass_debug && sims_left) echo += '<br><hr>NEW BATTLE BEGINS<hr><br>';
 
         // Increment wins/losses/games
         if (result == 'draw') {
@@ -329,8 +328,32 @@ if (!use_workers) {
                     echo += '<br><h1>LOSS</h1><br>';
                     sims_left = false;
                 }
+            } else if (win_debug) {
+                if (result && result != 'draw') {
+                    echo = 'Win found. Displaying debug output... <br><br>' + echo;
+                    echo += '<br><h1>WIN</h1><br>';
+                    sims_left = false;
+                } else {
+                    if (!sims_left) {
+                        echo = 'No wins found. No debug output to display.<br><br>';
+                        sims_left = false;
+                    } else {
+                        echo = '';
+                    }
+                }
+            } else if (mass_debug) {
+                if (result == 'draw') {
+                    echo += '<br><h1>DRAW</h1><br>';
+                } else if (result) {
+                    echo += '<br><h1>WIN</h1><br>';
+                } else {
+                    echo += '<br><h1>LOSS</h1><br>';
+                }
             }
         }
+
+        if (debug && mass_debug && sims_left) echo += '<br><hr>NEW BATTLE BEGINS<hr><br>';
+
         return result;
     }
 

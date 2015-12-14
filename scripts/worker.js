@@ -83,6 +83,7 @@ function initializeSims(params) {
 	surge = params['surge'];
 	debug = params['debug'];
 	loss_debug = params['loss_debug'];
+	win_debug = params['win_debug'];
 	mass_debug = params['mass_debug'];
 	user_controlled = params['user_controlled'];
 }
@@ -217,7 +218,7 @@ function processSimResult() {
     }
 
     if (debug) {
-        if (!mass_debug && !loss_debug) {
+        if (!mass_debug && !loss_debug && !win_debug) {
             sims_left = 0;
             return;
         } else if (loss_debug) {
@@ -236,6 +237,19 @@ function processSimResult() {
                 // Loss found
                 sims_left = 0;
                 return;
+            }
+        } else if (win_debug) {
+            if (result && result != 'draw') {
+                // Win found
+                sims_left = 0;
+                return;
+            } else {
+                if (!sims_left) {
+                    // 'No wins found
+                    return;
+                } else {
+                    echo = '';
+                }
             }
         }
     }
@@ -263,6 +277,7 @@ function run_sims() {
 var turn = 0;
 var debug = false;
 var loss_debug = false;
+var win_debug = false;
 var mass_debug = false;
 var getordered = false;
 var getordered2 = false;

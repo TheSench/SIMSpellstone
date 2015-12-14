@@ -138,8 +138,9 @@
             <br>
             <div>Use Controlled:</div><input type="checkbox" id="user_controlled"><span id="unavailable" style="visibility:hidden;">(Only available in Single Core mode)</span><br>
             <div>Debug Mode:</div><input type="checkbox" id="debug"><br>
-            <div>Mass Debug Mode (causes slowdown):</div><input type="checkbox" id="mass_debug"><br>
-            <div>Debug Loss Mode (output first loss):</div><input type="checkbox" id="loss_debug"><br>
+            <div>Mass Debug Mode (causes slowdown):</div><input type="radio" id="mass_debug" name="debugMode" onclick="toggleRadio(this)"><br><!-- onchange="massDebugChanged(this)"><br>-->
+            <div>Debug Win Mode (output first win):</div><input type="radio" id="win_debug" name="debugMode" onclick="toggleRadio(this)"><br><!--onchange="debugModeChanged(this)"><br>-->
+            <div>Debug Loss Mode (output first loss):</div><input type="radio" id="loss_debug" name="debugMode" onclick="toggleRadio(this)"><br><!--onchange="debugModeChanged(this)"><br>-->
             <br>
             <div>&nbsp;</div><input id="btn_simulate" type="button" value="Simulate" onclick="return startsim();" style="text-align: center; font-weight: bold;"> <input type="button" value="Generate Link" onclick="return display_generated_link();" style="text-align: center; font-weight: normal;"> <input type="button" value="History" onclick="return display_history();" style="text-align: center; font-weight: normal;">
         </form>
