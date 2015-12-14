@@ -302,7 +302,7 @@ function update_skills(current_skills, upgrades) {
 function setSkill(current_skills, key, skill) {
     var name = skill.id;
     // These skills could have multiple instances
-    if (name == 'protect' || name == 'strike' || name == 'rally' || name == 'enhance' | name == 'fervor' || name == 'freeze' || name == 'heal'
+    if (name == 'protect' || name == 'strike' || name == 'rally' || name == 'enhance' | name == 'fervor' || name == 'jam' || name == 'heal'
         || name == 'enfeeble' || name == 'legion' || name == 'weaken') {
         current_skills[key.toString()] = skill;
     } else {
