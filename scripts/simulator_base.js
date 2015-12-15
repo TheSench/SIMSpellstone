@@ -776,7 +776,7 @@ if (simulator_thread) {
 
         if (getsiege) {
             var towerID = 601 + parseInt(tower_type);
-            var towerCard = get_card_by_id(towerID.toString(), tower_level);
+            var towerCard = get_card_by_id(towerID.toString(), (parseInt(tower_level)-1));
             play_card(towerCard, 'cpu', true);
         }
 
@@ -853,49 +853,26 @@ if (simulator_thread) {
 
         if (turn % 2) {
             var p = first_player;
-            var o = second_player;
         } else {
             var p = second_player;
-            var o = first_player;
         }
 
-        // Allow functions to learn whose turn it is!
-        field['whose_turn'] = p;
+        if (debug) echo += '<u>Turn ' + turn + ' begins for ' + debug_name(field[p]['commander']) + '</u><br>';
 
-        var field_p = field[p];
-        var field_p_commander = field_p['commander'];
-        var field_p_assaults = field_p['assaults'];
-
-        var field_o = field[o];
-        var field_o_commander = field_o['commander'];
-        var field_o_assaults = field_o['assaults'];
-
-        var deck_p = deck[p];
-        var deck_p_deck = deck_p['deck'];
-        var deck_p_ordered = deck_p['ordered'];
-
-        field_p['died_this_turn'] = false;
-        field_o['died_this_turn'] = false;
-
-        if (debug) echo += '<u>Turn ' + turn + ' begins for ' + debug_name(field_p_commander) + '</u><br>';
-
+        var field_p_assaults = field[p]['assaults'];
         // Count down timer on your field
-        for (var key = 0, len = field_p_assaults.length; key < len; key++) {
-            var current_assault = field_p_assaults[key];
-
-            if (current_assault['timer'] > 0) {
-                current_assault['timer']--;
-                if (debug) echo += debug_name(current_assault) + ' reduces its timer<br>';
-            }
-        }
-
         // Remove from your field: Enfeeble, Protect
         for (var key = 0, len = field_p_assaults.length; key < len; key++) {
             var current_assault = field_p_assaults[key];
 
-            current_assault['enfeebled'] = 0;
-            current_assault['protected'] = 0;
-            delete current_assault.augmented;
+            if (current_assault.timer > 0) {
+                current_assault.timer--;
+                if (debug) echo += debug_name(current_assault) + ' reduces its timer<br>';
+            }
+
+            current_assault.enfeebled = 0;
+            current_assault.protected = 0;
+            current_assault.augmented = 0;;
         }
     }
 

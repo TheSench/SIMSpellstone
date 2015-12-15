@@ -62,7 +62,11 @@ function cloneCard(original) {
     copy.type = original.type;
     copy.sub_type = original.sub_type;
     copy.set = original.set;
-    copy.skill = copy_skills(original.skill);
+    if (original.reusableSkills) {
+        copy.skill = original.skill;
+    } else {
+        copy.skill = copy_skills(original.skill)[0];
+    }
     copy.timer = copy.cost;
     copy.health_left = copy.health;
     return copy;
@@ -86,16 +90,21 @@ var MakeAssault = (function () {
         this.type = original_card.type;
         this.sub_type = original_card.sub_type;
         this.set = original_card.set;
-        this.skill = copy_skills(original_card.skill);
+        var skillInfo = copy_skills(original_card.skill)
+        this.skill = skillInfo[0];
+        this.reusableSkills = skillInfo[1];
         if (this.level > 1) {
+            var upgrade;
             for (var key in original_card.upgrades) {
-                var upgrade = original_card.upgrades[key];
+                upgrade = original_card.upgrades[key];
+                // Upgrade levels only contain attack/health/delay if they changed at that level.
                 if (upgrade.cost !== undefined) this.cost = upgrade.cost;
                 if (upgrade.health !== undefined) this.health = upgrade.health;
                 if (upgrade.attack !== undefined) this.attack = upgrade.attack;
-                update_skills(this.skill, upgrade.skill);
                 if (key == this.level) break;
             }
+            // Every upgrade level contains all skills at that level, so we only need the last one
+            if (upgrade) update_skills(this.skill, upgrade.skill);
         }
         this.timer = this.cost;
         this.health_left = this.health;
@@ -229,9 +238,7 @@ var MakeAssault = (function () {
     }
 
     return (function (original_card, unit_level) {
-        // Format unit_level
-        if (unit_level) unit_level = unit_level.replace(/[\(\)]/g, '');
-        else unit_level = "1";
+        if (!unit_level) unit_level = 1;
 
         var card
         if (original_card) {
@@ -279,10 +286,17 @@ var MakeBattleground = (function () {
 
 function copy_skills(original_skills) {
     var new_skills = {};
+    var reusable = true;
     for (var key in original_skills) {
-        setSkill(new_skills, key, copy_skill(original_skills[key]));
+        var newSkill = original_skills[key];
+        if (newSkill.c) {   // If skill has a timer, we need to clone it
+            setSkill(new_skills, key, copy_skill(newSkill));
+            reusable = false;
+        } else {            // If skill has no timer, we can use the same instance
+            setSkill(new_skills, key, newSkill);
+        }
     }
-    return new_skills;
+    return [new_skills, reusable];
 }
 
 function update_skills(current_skills, upgrades) {
@@ -300,13 +314,23 @@ function update_skills(current_skills, upgrades) {
 }
 
 function setSkill(current_skills, key, skill) {
-    var name = skill.id;
     // These skills could have multiple instances
-    if (name == 'protect' || name == 'strike' || name == 'rally' || name == 'enhance' | name == 'fervor' || name == 'jam' || name == 'heal'
-        || name == 'enfeeble' || name == 'legion' || name == 'weaken') {
-        current_skills[key.toString()] = skill;
-    } else {
-        current_skills[name] = skill;
+    switch (skill.id) {
+        case 'protect':
+        case 'strike':
+        case 'rally':
+        case 'enhance':
+        case 'fervor':
+        case 'jam':
+        case 'heal':
+        case 'enfeeble':
+        case 'legion':
+        case 'weaken':
+            current_skills[key] = skill;
+            break;
+        default:
+            current_skills[skill.id] = skill;
+            break;
     }
 }
 
@@ -973,13 +997,14 @@ function get_card_by_id(id, unit_level) {
 
     // Not a valid card
     if (!current_card) {
-        current_card = [];
+        current_card = {};
         current_card.id = undefined;
         current_card.name = undefined;
         current_card.health = undefined;
         current_card.skill = [];
         return current_card;
     } else {
+    {
         // Add empty skill array to prevent skill condition-checking errors
         if (!current_card.skill) {
             current_card.skill = [];
@@ -1040,7 +1065,7 @@ function get_slim_card_by_id(id, getSkills) {
             if (new_card.level > new_card.maxLevel) new_card.level = new_card.maxLevel;
         } else new_card.level = 1;
         if (getSkills) {
-            new_card.skill = copy_skills(current_card.skill);
+            new_card.skill = current_card.skill;
             if (new_card.level > 1) {
                 for (var key in current_card.upgrades) {
                     var upgrade = current_card.upgrades[key];
