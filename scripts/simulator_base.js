@@ -775,8 +775,8 @@ if (simulator_thread) {
         }
 
         if (getsiege) {
-            var towerID = 601 + parseInt(tower_type);
-            var towerCard = get_card_by_id(towerID.toString(), (parseInt(tower_level)-1));
+            var tower = { id: 601 + parseInt(tower_type), level: parseInt(tower_level)-1 };
+            var towerCard = get_card_by_id(tower);
             play_card(towerCard, 'cpu', true);
         }
 
@@ -898,7 +898,7 @@ if (simulator_thread) {
                     if (isNaN(card) && card.indexOf(',') != -1) {
                         card = card.split(',')[0];
                     }
-                    card = get_card_by_id(card);
+                    card = get_slim_card_by_id(card, true);
                     var text = handIdx + ": " + card['name'];
                     if (card.maxLevel > 1) text += '{' + card.level + '/' + card.maxLevel + '}';
                     cardsInHand.push(text);
@@ -1262,8 +1262,8 @@ if (simulator_thread) {
         // - Target must have taken damage
         // - Target must be an assault
         // - Target must not be already poisoned of that level
-        if (damage > 0 && target.isAssault() && current_assault['skill']['poison']) {
-            var poison = current_assault['skill']['poison']['x'];
+        if (damage > 0 && target.isAssault() && current_assault.poison && target.isAlive()) {
+            var poison = current_assault.poison;
             poison += getAugment(current_assault, 'poison');
             if (poison > target['poisoned']) {
                 target['poisoned'] = poison;
@@ -1274,8 +1274,8 @@ if (simulator_thread) {
         // Scorch
         // - Attacker must not have died to Vengeance
         // - Target must be an assault
-        if (target.isAssault() && current_assault['skill']['burn'] && current_assault.isAlive()) {
-            var scorch = current_assault['skill']['burn']['x'];
+        if (target.isAssault() && current_assault.burn && target.isAlive() && current_assault.isAlive()) {
+            var scorch = current_assault.burn;
             scorch += getAugment(current_assault, 'poison');
             if (!target['scorched']) {
                 target['scorched'] = { 'amount': scorch, 'timer': 2 };
