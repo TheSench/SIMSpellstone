@@ -202,6 +202,8 @@ function run_sim() {
 function processSimResult() {
 
     games++;
+    // Increment total turn count
+    total_turns += simulation_turns;
 
     var result;
     if (!field.player.commander.isAlive()) {

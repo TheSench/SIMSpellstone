@@ -543,7 +543,7 @@ if (simulator_thread) {
     };
 
     var doEmpower = function (source_card) {
-        var skills = source_card['skill'];
+        var skills = source_card.empowerSkills;
         for (var key in skills) {
             var skill = skills[key];
             var empowerSkill;
@@ -1009,11 +1009,13 @@ if (simulator_thread) {
         // Reset invisibility count after enhance has had a chance to fire
         for (var key = 0, len = field_p_assaults.length; key < len; key++) {
             var current_assault = field_p_assaults[key];
-            if (current_assault.skill.evade) {
-                current_assault['invisible'] = current_assault.skill.evade.x;
+            /*if (current_assault.skill.evade) {
+                current_assault['invisible'] = current_assault.skill.evade.x;*/
+            if (current_assault.evade) {
+                current_assault.invisible = current_assault.evade;
                 var augment = getAugment(current_assault, 'evade');
                 if (augment) {
-                    current_assault['invisible'] += augment;
+                    current_assault.invisible += augment;
                 }
             }
         }
@@ -1155,9 +1157,9 @@ if (simulator_thread) {
         }
 
         // Pierce
-        var pierce = current_assault['skill']['pierce'];
+        // var pierce = current_assault['skill']['pierce'];
+        var pierce = current_assault.pierce;
         if (pierce) {
-            pierce = pierce.x
             var augment = getAugment(current_assault, 'pierce');
             if (augment && augment > 0) {
                 pierce += augment;
@@ -1168,9 +1170,10 @@ if (simulator_thread) {
 
         // Damage reduction
         var protect = target.protected;
-        var armor = 0;
-        if (target.skill.armored) {
-            armor = target.skill.armored.x;
+        var armor = target.armored; //0;
+        if(armor) {
+        /*if (target.skill.armored) {
+            //armor = target.skill.armored.x;*/
             var augment = getAugment(target, 'armored');
             if (augment && augment > 0) {
                 armor += augment;
@@ -1225,9 +1228,9 @@ if (simulator_thread) {
         // Counter
         // - Target must have received some amount of damage
         // - Attacker must not be already dead
-        if (damage > 0 && current_assault['health_left'] > 0 && target['skill']['counter']) {
+        if (damage > 0 && target.counter /*target['skill']['counter']*/) {
 
-            var counter_damage = 0 + target['skill']['counter']['x'];
+            var counter_damage = 0 + target.counter;//target['skill']['counter']['x'];
             var augment = getAugment(target, 'counter');
             if (augment && augment > 0) {
                 counter_damage += augment;
