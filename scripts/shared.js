@@ -680,13 +680,9 @@ function hash_encode(deck) {
     var lastIndex = 0;
     for (var k in deck.deck) {
         var current_card = deck.deck[k];
-        /*
         if (current_card.priority) {
             has_priorities = true;
-            current_card = current_card.split(',');
-            current_card = current_card[0];
         }
-        */
         var triplet = unitInfo_to_base64triplet(current_card);
         if (triplet == current_hash[lastIndex]) {
             copies[lastIndex]++;
@@ -696,21 +692,20 @@ function hash_encode(deck) {
             lastIndex++;
         }
     }
-    /*
+
     if (has_priorities) {
-        current_hash += '|';
+        var priorities = '|';
         for (var k in deck.deck) {
             var current_card = deck.deck[k];
-            if (isNaN(current_card) && current_card.indexOf(',') != -1) {
-                var current_priority = current_card.split(',');
-                current_priority = parseInt(current_priority[1]);
-                current_hash += '' + current_priority;
+            if (current_card.priority) {
+                priorities += current_card.priority;
             } else {
-                current_hash += '0';
+                priorities += '0';
             }
         }
+        current_hash.push(priorities);
     }
-    */
+
     for (var i = 0; i < copies.length; i++) {
         var num = copies[i];
         if (num > 1) {
@@ -728,19 +723,29 @@ function hash_decode(hash) {
     var current_deck = [];
     current_deck.deck = [];
     var unitInfo;
+    var priorities;
+    if (hash.indexOf('|') > 0) {
+        // Ignore priorities for now
+        priorities = hash.substr(hash.indexOf('|')+1);
+        hash = hash.substr(0, hash.indexOf('|'));
+    }
+    var unitidx = 0;
     for (var i = 0; i < hash.length; i += 3) {
         if (multiplierChars.indexOf(hash[i]) == -1) {
             // Make sure we have valid characters
             unitInfo = base64triplet_to_unitInfo(hash.substr(i, 3));
+            if (priorities) unitInfo.priority = priorities[unitidx];
 
             if (unitInfo) {
                 if (CARDS.root.unit[unitInfo.id]) {
                     // Repeat previous card multiple times
                     if (is_commander(unitInfo.id)) {
                         current_deck.commander = unitInfo;
+                        unitidx++;
                         // Add to deck
                     } else {
                         current_deck.deck.push(unitInfo);
+                        unitidx++;
                     }
                 }
             }
@@ -748,6 +753,7 @@ function hash_decode(hash) {
             var multiplier = decode_multiplier(hash.substr(i, 2)) + 1;
             for (var n = 0; n < multiplier; n++) {
                 current_deck.deck.push(unitInfo);
+                unitidx++;
             }
             i -= 1; // Offset i so that the += 3 in the loop sets it to the correct next index
         }
