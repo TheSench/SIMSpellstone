@@ -74,15 +74,23 @@ function create_card_html(card, inHand) {
     var divName = createDiv("card-name", card.name);
     htmlCard.appendChild(divName);
     if (!card.isCommander()) {
-        if (!card.isUnjammed()) htmlCard.classList.add("frozen");
-        var htmlAttack = createDiv("card-attack", card.adjustedAttack().toString());
-        if (card.adjustedAttack() > card.attack) htmlAttack.classList.add("increased");
-        else if (card.adjustedAttack() < card.attack) htmlAttack.classList.add("decreased");
+        if (inHand) {
+            var htmlAttack = createDiv("card-attack", card.attack.toString());
+        } else {
+            if (!card.isUnjammed()) htmlCard.classList.add("frozen");
+            var htmlAttack = createDiv("card-attack", card.adjustedAttack().toString());
+            if (card.adjustedAttack() > card.attack) htmlAttack.classList.add("increased");
+            else if (card.adjustedAttack() < card.attack) htmlAttack.classList.add("decreased");
+        }
         htmlCard.appendChild(htmlAttack);
         if (card.timer) htmlCard.appendChild(createDiv("card-delay", card.timer));
     }
-    var htmlHealth = createDiv("card-health", card.health_left.toString());
-    if (card.health_left < card.health) htmlHealth.classList.add("decreased");
+    if (inHand) {
+        var htmlHealth = createDiv("card-health", card.health.toString());
+    } else {
+        var htmlHealth = createDiv("card-health", card.health_left.toString());
+        if (card.health_left < card.health) htmlHealth.classList.add("decreased");
+    }
     htmlCard.appendChild(htmlHealth);
     var divSkills = createDiv("card-skills");
     var skillsShort = createDiv("card-skills-short");
