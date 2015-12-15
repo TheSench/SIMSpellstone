@@ -72,10 +72,6 @@ function cloneCard(original) {
     return copy;
 }
 
-function cloneSkill(original) {
-
-}
-
 var MakeAssault = (function () {
     var Card = function (original_card, unit_level) {
         this.id = original_card.id;
@@ -90,7 +86,7 @@ var MakeAssault = (function () {
         this.type = original_card.type;
         this.sub_type = original_card.sub_type;
         this.set = original_card.set;
-        var skillInfo = copy_skills(original_card.skill)
+        var skillInfo = copy_skills(original_card.skill);
         this.skill = skillInfo[0];
         this.reusableSkills = skillInfo[1];
         if (this.level > 1) {
@@ -119,6 +115,11 @@ var MakeAssault = (function () {
         attack_rally: 0,
         attack_weaken: 0,
         key: undefined,
+        // Passives
+        counter: 0,
+        evade: 0,
+        armored: 0,
+        pierce: 0,
         // Statuses
         poisoned: 0,
         scorched: 0,
@@ -199,35 +200,6 @@ var MakeAssault = (function () {
             return ((this.attack + this.attack_rally - this.attack_weaken));
         },
 
-        // Targets that are opposite of the source or to the right of it
-        // - only use this function for Chaos on Death, Jam on Death, and Weaken on Death
-        hasNotAttackedAlready2: function (relative_source) {
-            if (!relative_source.isAssault()) return true; // If source is not an assault, assume that the target has not attacked already
-            return (this.key >= relative_source.key); // If source is an assault, check its relative position
-        },
-
-        // Targets that are opposite of the source or to the right of it
-        // - only use this function for Chaos on Attacked, Jam on Attacked, and Weaken on Attacked
-        hasNotAttackedAlready3: function (attacker) {
-            if (!attacker.isAssault()) return true; // If source is not an assault, assume that the target has not attacked already
-            return (this.key > attacker.key); // If source is an assault, check its relative position
-        },
-
-        // Currently attacking
-        // - only use this function for Chaos on Death, Jam on Death, and Weaken on Death
-        isAttacking2: function (relative_source) {
-            if (!relative_source.isAssault()) return false; // If source is not an assault, assume that the target is not attacking
-            return (this.key == relative_source.key);
-        },
-
-        isAdjacent: function (src) {
-            var thisKey = this.key;
-            var left = src.key - 1;
-            var right = left + 2;
-
-            return (thisKey >= left && thisKey <= right);
-        },
-
         // Filters by faction
         isInFaction: function (faction) {
             if (faction === undefined) return 1;
@@ -283,6 +255,59 @@ var MakeBattleground = (function () {
         return new Battleground(name, skill);
     })
 }());
+
+function copy_skills_2(new_card, original_skills) {
+    new_card.skills = {};
+    new_card.empowerSkills = {};
+    var reusable = true;
+    for (var key in original_skills) {
+        var newSkill = original_skills[key];
+        if (newSkill.c) {   // If skill has a timer, we need to clone it
+            setSkill_2(new_card, key, copy_skill(newSkill));
+            reusable = false;
+        } else {            // If skill has no timer, we can use the same instance
+            setSkill_2(new_card, key, newSkill);
+        }
+    }
+    new_card.reusableSkills = reusable;
+    return [new_skills, reusable];
+}
+
+function setSkill_2(new_card, key, skill) {
+    // These skills could have multiple instances
+    switch (skill.id) {
+        case 'pierce':
+            new_card.pierce = skill.x;
+            break;
+        case 'evade':
+            new_card.evade = skill.x;
+            break;
+        case 'armored':
+            new_card.armored = skill.x;
+            break;
+        case 'fervor':
+        case 'rally':
+        case 'legion':
+            new_card.empowerSkills[key] = skill;
+            break;
+        case 'protect':
+        case 'strike':
+        case 'enhance':
+        case 'jam':
+        case 'heal':
+        case 'enfeeble':
+        case 'weaken':
+            new_card.skill[key] = skill;
+            break;
+        case 'flurry':
+        case 'poison':
+        case 'burn':
+        case 'leech':
+        default:
+            new_card.skill[skill.id] = skill;
+            break;
+    }
+}
 
 function copy_skills(original_skills) {
     var new_skills = {};
@@ -907,10 +932,6 @@ function clean_name_for_matching(name) {
     return name;
 }
 
-function add_to_deck(card) {
-
-}
-
 // Load mission deck
 function load_deck_mission(id) {
 
@@ -1004,7 +1025,6 @@ function get_card_by_id(id, unit_level) {
         current_card.skill = [];
         return current_card;
     } else {
-    {
         // Add empty skill array to prevent skill condition-checking errors
         if (!current_card.skill) {
             current_card.skill = [];
