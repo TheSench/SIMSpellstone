@@ -86,9 +86,7 @@ var MakeAssault = (function () {
         this.type = original_card.type;
         this.sub_type = original_card.sub_type;
         this.set = original_card.set;
-        var skillInfo = copy_skills(original_card.skill);
-        this.skill = skillInfo[0];
-        this.reusableSkills = skillInfo[1];
+        var original_skill = original_card.skill;
         if (this.level > 1) {
             var upgrade;
             for (var key in original_card.upgrades) {
@@ -97,11 +95,13 @@ var MakeAssault = (function () {
                 if (upgrade.cost !== undefined) this.cost = upgrade.cost;
                 if (upgrade.health !== undefined) this.health = upgrade.health;
                 if (upgrade.attack !== undefined) this.attack = upgrade.attack;
+                if (upgrade.skill.length > 0) original_skill = upgrade.skill;
                 if (key == this.level) break;
             }
-            // Every upgrade level contains all skills at that level, so we only need the last one
-            if (upgrade) update_skills(this.skill, upgrade.skill);
         }
+        var skillInfo = copy_skills(original_skill);
+        this.skill = skillInfo[0];
+        this.reusableSkills = skillInfo[1];
         this.timer = this.cost;
         this.health_left = this.health;
         card_cache[original_card.id + "-" + unit_level] = this;
@@ -661,10 +661,10 @@ function decimal_to_base64triplet(decimal) {
 
 function encode_multiplier(copies) {
     copies = copies - 2;    // Encoded as "2 + value"
-    if(copies > 256) {
+    if (copies > 256) {
         return "";
     }
-    var char1 = multiplierChars[Math.floor(copies/64)];
+    var char1 = multiplierChars[Math.floor(copies / 64)];
     var char2 = base64chars[copies % 64];
     return char1 + char2;
 }
