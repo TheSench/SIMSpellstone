@@ -233,18 +233,7 @@ var MakeAssault = (function () {
 
     return (function (original_card, unit_level) {
         if (!unit_level) unit_level = 1;
-
-        var card
-        if (original_card) {
-            var cached = card_cache[original_card.id + "-" + unit_level]
-            if (cached) {
-                card = cloneCard(cached);
-            }
-        }
-        if (!card) {
-            card = new Card(original_card, unit_level);
-        }
-        return card;
+        return new Card(original_card, unit_level);
     })
 }());
 
@@ -1020,6 +1009,11 @@ function get_card_by_id(id, unit_level) {
         var parts = get_id_parts(id);
         id = parts[0];
         unit_level = parts[1];
+    }
+
+    var cached = card_cache[id + "-" + unit_level]
+    if (cached) {
+        return cloneCard(cached);
     }
 
     var current_card = CARDS.root.unit[id];

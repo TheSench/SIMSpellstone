@@ -10,6 +10,7 @@ if (!use_workers) {
 
         clearCardSpace();
 
+        card_cache = {};    // clear card cache to avoid memory bloat when simulating different decks
         total_turns = 0;
         time_start = new Date();
         time_stop = 0;

@@ -86,6 +86,7 @@ function initializeSims(params) {
 	win_debug = params['win_debug'];
 	mass_debug = params['mass_debug'];
 	user_controlled = params['user_controlled'];
+	card_cache = {};    // clear card cache to avoid memory bloat when simulating different decks
 }
 
 // Return results to the GUI thread using Transferable Objects
@@ -261,6 +262,7 @@ function processSimResult() {
 
 // Initialize simulation loop - runs once per simulation batch
 function run_sims() {
+    card_cache = {};    // clear card cache to avoid memory bloat when simulating different decks
 	total_turns = 0;
 	echo = '';
 	games = 0;

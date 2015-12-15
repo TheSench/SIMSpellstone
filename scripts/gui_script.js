@@ -12,7 +12,6 @@ window.onerror = function (message, url, linenumber) {
     }
     var err_msg = "JavaScript error:\n " + message + "\n on line " + linenumber + "\n for " + url;
     var short_msg = err_msg;
-    //	alert(err_msg);
 
     err_msg += "\n";
     err_msg += "Browser CodeName: " + navigator.appCodeName + "\n";
