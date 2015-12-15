@@ -62,10 +62,18 @@ function cloneCard(original) {
     copy.type = original.type;
     copy.sub_type = original.sub_type;
     copy.set = original.set;
+    // Passives
+    copy.armored = original.armored;
+    copy.counter = original.counter;
+    copy.evade = original.evade;
+    copy.pierce = original.pierce;
+    // Other skills
     if (original.reusableSkills) {
         copy.skill = original.skill;
+        copy.empowerSkills = original.empowerSkills;
     } else {
         copy.skill = copy_skills(original.skill)[0];
+        copy.empowerSkills = copy_skills(original.empowerSkills)[0];
     }
     copy.timer = copy.cost;
     copy.health_left = copy.health;
@@ -86,7 +94,7 @@ var MakeAssault = (function () {
         this.type = original_card.type;
         this.sub_type = original_card.sub_type;
         this.set = original_card.set;
-        var original_skill = original_card.skill;
+        var original_skills = original_card.skill;
         if (this.level > 1) {
             var upgrade;
             for (var key in original_card.upgrades) {
@@ -95,13 +103,11 @@ var MakeAssault = (function () {
                 if (upgrade.cost !== undefined) this.cost = upgrade.cost;
                 if (upgrade.health !== undefined) this.health = upgrade.health;
                 if (upgrade.attack !== undefined) this.attack = upgrade.attack;
-                if (upgrade.skill.length > 0) original_skill = upgrade.skill;
+                if (upgrade.skill.length > 0) original_skills = upgrade.skill;
                 if (key == this.level) break;
             }
         }
-        var skillInfo = copy_skills(original_skill);
-        this.skill = skillInfo[0];
-        this.reusableSkills = skillInfo[1];
+        copy_skills_2(this, original_skills)
         this.timer = this.cost;
         this.health_left = this.health;
         card_cache[original_card.id + "-" + unit_level] = this;
@@ -116,9 +122,9 @@ var MakeAssault = (function () {
         attack_weaken: 0,
         key: undefined,
         // Passives
+        armored: 0,
         counter: 0,
         evade: 0,
-        armored: 0,
         pierce: 0,
         // Statuses
         poisoned: 0,
@@ -174,6 +180,22 @@ var MakeAssault = (function () {
         // - strike, protect, enfeeble, rally, repair, supply, siege, heal, weaken (unless they have on play/death/attacked/kill)
         hasSkill: function (s) {
             var target_skills = this.skill;
+            switch (s) {
+                case 'armored':
+                case 'counter':
+                case 'evade':
+                case 'pierce':
+                    return this[s];
+                    break;
+                case 'empower':
+                case 'legion':
+                case 'fervor':
+                    target_skills = this.empowerSkills;
+                    break;
+                default:
+                    target_skills = this.skill
+                    break;
+            }
             for (var key in target_skills) {
                 var skill = target_skills[key];
                 if (skill.id === s) {
@@ -257,7 +279,7 @@ var MakeBattleground = (function () {
 }());
 
 function copy_skills_2(new_card, original_skills) {
-    new_card.skills = {};
+    new_card.skill = {};
     new_card.empowerSkills = {};
     var reusable = true;
     for (var key in original_skills) {
@@ -270,26 +292,25 @@ function copy_skills_2(new_card, original_skills) {
         }
     }
     new_card.reusableSkills = reusable;
-    return [new_skills, reusable];
 }
 
 function setSkill_2(new_card, key, skill) {
     // These skills could have multiple instances
     switch (skill.id) {
-        case 'pierce':
-            new_card.pierce = skill.x;
-            break;
-        case 'evade':
-            new_card.evade = skill.x;
-            break;
+        // Passives
         case 'armored':
-            new_card.armored = skill.x;
+        case 'counter':
+        case 'evade':
+        case 'pierce':
+            new_card[skill.id] = skill.x;
             break;
+        // Empower Skills
         case 'fervor':
         case 'rally':
         case 'legion':
             new_card.empowerSkills[key] = skill;
             break;
+        // Activation skills (can occur twice on a card)
         case 'protect':
         case 'strike':
         case 'enhance':
@@ -299,6 +320,7 @@ function setSkill_2(new_card, key, skill) {
         case 'weaken':
             new_card.skill[key] = skill;
             break;
+        // All other skills
         case 'flurry':
         case 'poison':
         case 'burn':
@@ -322,20 +344,6 @@ function copy_skills(original_skills) {
         }
     }
     return [new_skills, reusable];
-}
-
-function update_skills(current_skills, upgrades) {
-    for (var key in upgrades) {
-        var name = upgrades[key].id;
-        for (var key2 in current_skills) {
-            var current_skill = current_skills[key2];
-            if (current_skill && current_skill.id == name) delete current_skills[key2];
-        }
-    }
-    for (var key in upgrades) {
-        setSkill(current_skills, key, copy_skill(upgrades[key]));
-    }
-    return current_skills;
 }
 
 function setSkill(current_skills, key, skill) {
@@ -390,7 +398,7 @@ function debug_skills(skills) {
         output += convertName(skill.id);
         if (skill.all) output += ' all';
         if (skill.y) output += ' ' + factions.names[skill.y];
-        if (skill.s) output += ' ' + skill.s;
+        if (skill.s) output += ' ' + convertName(skill.s);
         if (skill.c) output += ' every ' + skill.c + ' turns';
         else if (skill.x) output += ' ' + skill.x;
     }
@@ -441,7 +449,7 @@ function debug_dump_decks() {
     echo += generate_card_list(cache_player_deck);
     echo += '" onclick="this.select()" size="100">';
     echo += '<br><br>';
-    var current_card = get_card_by_id(cache_player_deck.commander);
+    var current_card = get_slim_card_by_id(cache_player_deck.commander, true);
     current_card.owner = 'player';
     current_card.health_left = current_card.health;
     echo += debug_name(current_card) + debug_skills(current_card.skill) + '<br>';
@@ -471,7 +479,7 @@ function debug_dump_decks() {
     echo += '<br>';
     echo += '<u>Please note that Raid and Quest simulations randomize the enemy deck for each battle. Only one example enemy deck hash is generated.</u><br>';
     echo += '<br>';
-    var current_card = get_card_by_id(debug_cpu_deck.commander);
+    var current_card = get_slim_card_by_id(debug_cpu_deck.commander, true);
     current_card.owner = 'cpu';
     current_card.health_left = current_card.health;
     echo += debug_name(current_card) + debug_skills(current_card.skill) + '<br>';
@@ -488,7 +496,7 @@ function debug_dump_cards(deck, player) {
             card_id = card_id[0];
         }
         // Setup card for printing
-        current_card = get_card_by_id(card_id);
+        current_card = get_slim_card_by_id(card_id, true);
         current_card.owner = player;
         current_card.key = undefined;
         // Echo card info
@@ -661,10 +669,10 @@ function decimal_to_base64triplet(decimal) {
 
 function encode_multiplier(copies) {
     copies = copies - 2;    // Encoded as "2 + value"
-    if (copies > 256) {
+    if(copies > 256) {
         return "";
     }
-    var char1 = multiplierChars[Math.floor(copies / 64)];
+    var char1 = multiplierChars[Math.floor(copies/64)];
     var char2 = base64chars[copies % 64];
     return char1 + char2;
 }
@@ -1045,51 +1053,59 @@ function get_id_parts(id) {
     return [id, level];
 }
 
-function get_slim_card_by_id(id, getSkills) {
+function get_slim_card_by_id(id, getDetails) {
 
     var unit_level = 0;
     var levelStart = 0;
     if (isNaN(id)) {
         levelStart = id.indexOf('(');
         if (levelStart != -1 && id.indexOf(')') != -1) {
-            unit_level = id.substr(levelStart);
-            unit_level = unit_level.substr(0, unit_level.indexOf(')') + 1);
+            unit_level = id.substr(levelStart+1);
+            unit_level = unit_level.substr(0, unit_level.indexOf(')'));
             id = id.substr(0, levelStart)
         }
     }
 
     var current_card = CARDS.root.unit[id];
-    var new_card = [];
+    var new_card = {};
+    if (current_card.card_type == "1") {
+        new_card.isCommander = function () { return true; };
+        new_card.isAssault = function () { return false; };
+    } else {
+        new_card.isCommander = function () { return false; };
+        new_card.isAssault = function () { return true; };
+    }
     // Not a valid card
     if (!current_card) {
         new_card.id = undefined;
         new_card.name = undefined;
-        new_card.set = undefined;
-        new_card.card_type = undefined;
         new_card.type = undefined;
         new_card.sub_type = undefined;
-        new_card.rarity = undefined;
         new_card.level = undefined;
         new_card.maxLevel = undefined;
-        if (getSkills) new_card.skill = [];
+        if (getSkills) new_card.skill = {};
     } else {
         new_card.id = current_card.id;
         new_card.name = current_card.name;
-        new_card.set = current_card.set;
-        new_card.card_type = current_card.card_type;
-        new_card.type = current_card.type;
-        new_card.sub_type = current_card.sub_type;
         new_card.maxLevel = GetMaxLevel(current_card);
         if (unit_level) {
             new_card.level = unit_level.replace(/[\(\)]/g, '');
             if (new_card.level > new_card.maxLevel) new_card.level = new_card.maxLevel;
         } else new_card.level = 1;
-        if (getSkills) {
+        if (getDetails) {
+            new_card.attack = current_card.attack;
+            new_card.health = current_card.health;
+            new_card.cost = current_card.cost;
+            new_card.type = current_card.type;
+            new_card.sub_type = current_card.sub_type;
             new_card.skill = current_card.skill;
             if (new_card.level > 1) {
                 for (var key in current_card.upgrades) {
                     var upgrade = current_card.upgrades[key];
-                    update_skills(this.skill, upgrade.skill);
+                    if (upgrade.cost !== undefined) new_card.cost = upgrade.cost;
+                    if (upgrade.health !== undefined) new_card.health = upgrade.health;
+                    if (upgrade.attack !== undefined) new_card.attack = upgrade.attack;
+                    if (upgrade.skill.length > 0) new_card.skill = upgrade.skill;
                     if (key == new_card.level) break;
                 }
             }
