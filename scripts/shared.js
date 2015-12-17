@@ -906,7 +906,7 @@ function load_deck_from_cardlist(list) {
 
     // Default commander to Elaria Captain if none found
     if (!current_deck.commander) {
-        current_deck.commander = "202";
+        current_deck.commander = { id: 202, level: 7 };
     }
 
     return current_deck;
