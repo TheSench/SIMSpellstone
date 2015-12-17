@@ -83,7 +83,8 @@ function create_card_html(card, inHand) {
             else if (card.adjustedAttack() < card.attack) htmlAttack.classList.add("decreased");
         }
         htmlCard.appendChild(htmlAttack);
-        if (card.timer) htmlCard.appendChild(createDiv("card-delay", card.timer));
+        if (inHand) htmlCard.appendChild(createDiv("card-delay", card.cost));
+        else if (card.timer) htmlCard.appendChild(createDiv("card-delay", card.timer));
     }
     if (inHand) {
         var htmlHealth = createDiv("card-health", card.health.toString());
