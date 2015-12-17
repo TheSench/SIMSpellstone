@@ -1166,32 +1166,72 @@ if (simulator_thread) {
                 armor += augment;
             }
         }
+
+        //-- Begin  Bug 23216
+        if (protect) {
+            if (debug) {
+                echo += ' Barrier: -' + protect;
+            }
+            // Remove pierce from Barrier
+            if (pierce) {
+                if (pierce > protect) {
+                    if (debug) echo += ' Pierce: +' + protect;
+                    target.protected = 0;
+                } else {
+                    if (debug) echo += ' Pierce: +' + pierce;
+                    protect -= pierce;
+                    damage -= protect;
+                    target.protected -= pierce;
+                }
+            }
+        }
+        if (armor) {
+            if (debug) {
+                if (protect) echo += ' Armor: -' + armor;
+            }
+            // Remove pierce from Armor
+            if (pierce) {
+                if (pierce > armor) {
+                    if (debug) echo += ' Pierce: +' + armor;
+                    armor = 0;
+                } else {
+                    if (debug) echo += ' Pierce: +' + pierce;
+                    armor -= pierce;
+                    damage -= protect;
+                }
+            }
+        }
+
+        /*
         var totalReduction = armor + protect;
         if (totalReduction > 0) {
             if (debug) {
                 if (protect) echo += ' Barrier: -' + protect;
                 if (armor) echo += ' Armor: -' + armor;
-                if (pierce) echo += ' Pierce: +' + pierce;
             }
             // Remove pierce from total damage reduction
             if (pierce) {
                 if (pierce > totalReduction) {
+                    if (debug) echo += ' Pierce: +' + totalReduction;
                     totalReduction = 0;
                 } else {
+                    if (debug) echo += ' Pierce: +' + pierce;
                     totalReduction -= pierce;
                 }
-            }
-            // Remove damaged protect (even if damage is blocked by armor)
-            if (protect) {
-                pierce += damage;
-                if (pierce > protect) {
-                    target.protected = 0;
-                } else {
-                    target.protected -= pierce;
+                // Remove damaged protect (even if damage is blocked by armor)
+                if (protect) {
+                    pierce += damage;
+                    if (pierce > protect) {
+                        target.protected = 0;
+                    } else {
+                        target.protected -= pierce;
+                    }
                 }
             }
             damage -= totalReduction;
         }
+        */
+        //-- End Bug 23216
 
         if (damage < 0) damage = 0;
 
