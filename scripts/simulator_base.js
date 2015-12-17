@@ -895,9 +895,6 @@ if (simulator_thread) {
                 for (var handIdx = 0, hand_len = hand.length; handIdx < hand_len; handIdx++)
                 {
                     var card = hand[handIdx];
-                    if (isNaN(card) && card.indexOf(',') != -1) {
-                        card = card.split(',')[0];
-                    }
                     card = get_slim_card_by_id(card, true);
                     var text = handIdx + ": " + card['name'];
                     if (card.maxLevel > 1) text += '{' + card.level + '/' + card.maxLevel + '}';
@@ -923,23 +920,13 @@ if (simulator_thread) {
                     var desiredCard = deck_p_ordered[orderIdx];
 
                     // Get advanced priority
-                    var priority_id = 0;
-                    if (isNaN(desiredCard) && desiredCard.indexOf(',') != -1) {
-                        priority_id = desiredCard.split(',');
-                        desiredCard = (priority_id[0]);
-                        priority_id = parseInt(priority_id[1]);
-                    }
+                    var priority_id = desiredCard.priority;
 
                     var samePriority = -1;
                     var cardInHand
                     for (var handIdx = 0, hand_len = hand.length; handIdx < hand_len; handIdx++) {
                         cardInHand = hand[handIdx];
-                        var b_priority
-                        if (isNaN(cardInHand)) {
-                            b_priority = cardInHand.split(',');
-                            cardInHand = b_priority[0];
-                            b_priority = parseInt(b_priority[1]);
-                        }
+                        var b_priority = cardInHand.priority;
 
                         // If this is the exact card at this spot
                         if (desiredCard == cardInHand) {
