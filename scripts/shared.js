@@ -404,24 +404,26 @@ function debug_skills(skills) {
 
 function convertName(oldName) {
     switch (oldName) {
-        case "rally":
-            return "empower";
-        case "protect":
-            return "barrier";
-        case "enfeeble":
-            return "hex";
-        case "jam":
-            return "freeze";
-        case "evade":
-            return "invisibility";
+        case "burn":
+            return "scorch";
         case "counter":
             return "vengeance";
-        case "strike":
-            return "bolt";
+        case "enfeeble":
+            return "hex";
+        case "evade":
+            return "invisibility";
         case "flurry":
             return "dualstrike";
+        case "jam":
+            return "freeze";
         case "leech":
             return "siphon";
+        case "protect":
+            return "barrier";
+        case "rally":
+            return "empower";
+        case "strike":
+            return "bolt";
         default:
             return oldName;
     }
