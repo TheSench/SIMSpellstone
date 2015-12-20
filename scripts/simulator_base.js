@@ -447,9 +447,14 @@ if (simulator_thread) {
             if (augment) {
                 strike_damage += augment;
             }
+            var shatter = 0;
             if (protect) {
-                if (strike_damage > protect) target['protected'] = 0;
-                else target['protected'] -= strike_damage;
+                if (strike_damage >= protect) {
+                    shatter = target['protected'];
+                    target['protected'] = 0;
+                }  else  {
+                    target['protected'] -= strike_damage;
+                }
                 strike_damage -= protect;
             }
 
@@ -467,8 +472,25 @@ if (simulator_thread) {
                 echo += debug_name(src_card) + ' bolts ' + debug_name(target) + ' for ' + strike_damage + ' damage';
                 echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
             }
+            if (shatter) {
+                iceshatter(target, field[src_card.owner].assaults, shatter);
+            }
         }
     };
+
+    var iceshatter = function (src_card, assaults, amount) {
+        if (amount) {
+            var target = assaults[src_card.key];
+            if (!target || !target.isAlive()) target = field.commander;
+
+            do_damage(target, amount);
+
+            if (debug) {
+                echo += debug_name(src_card) + "'s barrier shatters and hits " + debug_name(target) + ' for ' + amount + ' damage';
+                echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
+            }
+        }
+    }
 
     // Weaken
     // - Can target specific faction
@@ -1157,6 +1179,7 @@ if (simulator_thread) {
 
         // Damage reduction
         var protect = target.protected;
+        var shatter = 0;
         var armor = target.armored; //0;
         if(armor) {
         /*if (target.skill.armored) {
@@ -1174,14 +1197,24 @@ if (simulator_thread) {
             }
             // Remove pierce from Barrier
             if (pierce) {
-                if (pierce > protect) {
+                if (pierce >= protect) {
                     if (debug) echo += ' Pierce: +' + protect;
+                    protect = 0;
                     target.protected = 0;
                 } else {
                     if (debug) echo += ' Pierce: +' + pierce;
                     protect -= pierce;
-                    damage -= protect;
                     target.protected -= pierce;
+                }
+            }
+            if (protect) {
+                if (damage >= protect) {
+                    shatter = protect;
+                    damage -= protect;
+                    target.protected = 0;
+                } else {
+                    target.protected -= damage;
+                    damage = 0;
                 }
             }
         }
@@ -1197,9 +1230,9 @@ if (simulator_thread) {
                 } else {
                     if (debug) echo += ' Pierce: +' + pierce;
                     armor -= pierce;
-                    damage -= protect;
                 }
             }
+            damage -= armor;
         }
 
         /*
@@ -1252,6 +1285,42 @@ if (simulator_thread) {
             return;
         }
 
+        // Poison
+        // - Target must have taken damage
+        // - Target must be an assault
+        // - Target must not be already poisoned of that level
+        if (damage > 0 && target.isAssault() && current_assault.poison && target.isAlive()) {
+            var poison = current_assault.poison;
+            poison += getAugment(current_assault, 'poison');
+            if (poison > target['poisoned']) {
+                target['poisoned'] = poison;
+                if (debug) echo += debug_name(current_assault) + ' inflicts poison(' + poison + ') on ' + debug_name(target) + '<br>';
+            }
+        }
+
+        if (shatter > 0) {
+            iceshatter(target, field[current_assault.owner].assaults, shatter);
+        }
+
+        // Leech
+        // - Must have done some damage to an assault unit
+        // - Cannot leech more than damage dealt
+        // - Cannot leech more health than damage sustained
+        // - Leecher must not be already dead
+        // - Leecher must not be at full health
+        // - Increases attack too during Invigorate battleground effect
+        if (damage > 0 && target.isAssault() && current_assault['health_left'] > 0 &&
+        current_assault['health_left'] < current_assault['health'] && current_assault['skill']['leech']) {
+
+            var leech_health = current_assault['skill']['leech']['x'];
+            leech_health += getAugment(current_assault, 'leech');
+            if (leech_health > damage) leech_health = damage;
+            if (leech_health > current_assault['health'] - current_assault['health_left']) leech_health = current_assault['health'] - current_assault['health_left'];
+
+            current_assault['health_left'] += leech_health;
+            if (debug) echo += debug_name(current_assault) + ' siphons ' + leech_health + ' health<br>';
+        }
+
         // Counter
         // - Target must have received some amount of damage
         // - Attacker must not be already dead
@@ -1285,19 +1354,6 @@ if (simulator_thread) {
 
         // -- CHECK STATUS INFLICTION --
 
-        // Poison
-        // - Target must have taken damage
-        // - Target must be an assault
-        // - Target must not be already poisoned of that level
-        if (damage > 0 && target.isAssault() && current_assault.poison && target.isAlive()) {
-            var poison = current_assault.poison;
-            poison += getAugment(current_assault, 'poison');
-            if (poison > target['poisoned']) {
-                target['poisoned'] = poison;
-                if (debug) echo += debug_name(current_assault) + ' inflicts poison(' + poison + ') on ' + debug_name(target) + '<br>';
-            }
-        }
-
         // Scorch
         // - Attacker must not have died to Vengeance
         // - Target must be an assault
@@ -1314,25 +1370,6 @@ if (simulator_thread) {
         }
 
         // -- END OF STATUS INFLICTION --
-
-        // Leech
-        // - Must have done some damage to an assault unit
-        // - Cannot leech more than damage dealt
-        // - Cannot leech more health than damage sustained
-        // - Leecher must not be already dead
-        // - Leecher must not be at full health
-        // - Increases attack too during Invigorate battleground effect
-        if (damage > 0 && target.isAssault() && current_assault['health_left'] > 0 &&
-        current_assault['health_left'] < current_assault['health'] && current_assault['skill']['leech']) {
-
-            var leech_health = current_assault['skill']['leech']['x'];
-            leech_health += getAugment(current_assault, 'leech');
-            if (leech_health > damage) leech_health = damage;
-            if (leech_health > current_assault['health'] - current_assault['health_left']) leech_health = current_assault['health'] - current_assault['health_left'];
-
-            current_assault['health_left'] += leech_health;
-            if (debug) echo += debug_name(current_assault) + ' siphons ' + leech_health + ' health<br>';
-        }
     };
 
     var deck = [];
