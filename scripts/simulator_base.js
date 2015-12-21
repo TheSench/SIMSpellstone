@@ -1332,17 +1332,21 @@ if (simulator_thread) {
                 counter_damage += augment;
             }
 
-            // Enfeeble
-            var enfeeble = 0;
-            if (current_assault['enfeebled']) enfeeble = current_assault['enfeebled'];
-            counter_damage += 0 + enfeeble;
-
             // Protect
             var protect = 0;
             if (current_assault['protected']) protect = current_assault['protected'];
-            counter_damage -= protect;
+            if (counter_damage >= protect) {
+                current_assault['protected'] = 0;
+                counter_damage -= protect;
+            } else {
+                current_assault['protected'] -= counter_damage;
+                counter_damage = 0;
+            }
 
-            if (counter_damage < 0) counter_damage = 0;
+            echo += '<u>(Counter: +' + target.counter;
+            if (augment) echo += ' Enhance: +' + augment;
+            if (protect) echo += ' Barrier: +' + protect;
+            echo += ') = ' + counter_damage + ' damage</u><br>';
 
             do_damage(current_assault, counter_damage);
 
