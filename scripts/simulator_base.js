@@ -447,9 +447,14 @@ if (simulator_thread) {
             if (augment) {
                 strike_damage += augment;
             }
+            var shatter = 0;
             if (protect) {
-                if (strike_damage > protect) target['protected'] = 0;
-                else target['protected'] -= strike_damage;
+                if (strike_damage >= protect) {
+                    shatter = target['protected'];
+                    target['protected'] = 0;
+                }  else  {
+                    target['protected'] -= strike_damage;
+                }
                 strike_damage -= protect;
             }
 
@@ -467,8 +472,25 @@ if (simulator_thread) {
                 echo += debug_name(src_card) + ' bolts ' + debug_name(target) + ' for ' + strike_damage + ' damage';
                 echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
             }
+            if (shatter) {
+                iceshatter(target, field[src_card.owner], shatter);
+            }
         }
     };
+
+    var iceshatter = function (src_card, field, amount) {
+        if (amount) {
+            var target = field.assaults[src_card.key];
+            if (!target || !target.isAlive()) target = field.commander;
+
+            do_damage(target, amount);
+
+            if (debug) {
+                echo += debug_name(src_card) + "'s barrier shatters and hits " + debug_name(target) + ' for ' + amount + ' damage';
+                echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
+            }
+        }
+    }
 
     // Weaken
     // - Can target specific faction
@@ -1157,6 +1179,7 @@ if (simulator_thread) {
 
         // Damage reduction
         var protect = target.protected;
+        var shatter = 0;
         var armor = target.armored; //0;
         if(armor) {
         /*if (target.skill.armored) {
@@ -1174,20 +1197,30 @@ if (simulator_thread) {
             }
             // Remove pierce from Barrier
             if (pierce) {
-                if (pierce > protect) {
+                if (pierce >= protect) {
                     if (debug) echo += ' Pierce: +' + protect;
+                    protect = 0;
                     target.protected = 0;
                 } else {
                     if (debug) echo += ' Pierce: +' + pierce;
                     protect -= pierce;
-                    damage -= protect;
                     target.protected -= pierce;
+                }
+            }
+            if (protect) {
+                if (damage >= protect) {
+                    shatter = protect;
+                    damage -= protect;
+                    target.protected = 0;
+                } else {
+                    target.protected -= damage;
+                    damage = 0;
                 }
             }
         }
         if (armor) {
             if (debug) {
-                if (protect) echo += ' Armor: -' + armor;
+                echo += ' Armor: -' + armor;
             }
             // Remove pierce from Armor
             if (pierce) {
@@ -1197,9 +1230,9 @@ if (simulator_thread) {
                 } else {
                     if (debug) echo += ' Pierce: +' + pierce;
                     armor -= pierce;
-                    damage -= protect;
                 }
             }
+            damage -= armor;
         }
 
         /*
@@ -1252,39 +1285,6 @@ if (simulator_thread) {
             return;
         }
 
-        // Counter
-        // - Target must have received some amount of damage
-        // - Attacker must not be already dead
-        if (damage > 0 && target.counter /*target['skill']['counter']*/) {
-
-            var counter_damage = 0 + target.counter;//target['skill']['counter']['x'];
-            var augment = getAugment(target, 'counter');
-            if (augment && augment > 0) {
-                counter_damage += augment;
-            }
-
-            // Enfeeble
-            var enfeeble = 0;
-            if (current_assault['enfeebled']) enfeeble = current_assault['enfeebled'];
-            counter_damage += 0 + enfeeble;
-
-            // Protect
-            var protect = 0;
-            if (current_assault['protected']) protect = current_assault['protected'];
-            counter_damage -= protect;
-
-            if (counter_damage < 0) counter_damage = 0;
-
-            do_damage(current_assault, counter_damage);
-
-            if (debug) {
-                echo += debug_name(current_assault) + ' takes ' + counter_damage + ' vengeance damage';
-                echo += (!current_assault.isAlive() ? ' and it dies' : '') + '<br>';
-            }
-        }
-
-        // -- CHECK STATUS INFLICTION --
-
         // Poison
         // - Target must have taken damage
         // - Target must be an assault
@@ -1298,22 +1298,9 @@ if (simulator_thread) {
             }
         }
 
-        // Scorch
-        // - Attacker must not have died to Vengeance
-        // - Target must be an assault
-        if (target.isAssault() && current_assault.burn && target.isAlive() && current_assault.isAlive()) {
-            var scorch = current_assault.burn;
-            scorch += getAugment(current_assault, 'poison');
-            if (!target['scorched']) {
-                target['scorched'] = { 'amount': scorch, 'timer': 2 };
-            } else {
-                target['scorched']['amount'] += scorch;
-                target['scorched']['timer'] = 2;
-            }
-            if (debug) echo += debug_name(current_assault) + ' inflicts scorch(' + scorch + ') on ' + debug_name(target) + '<br>';
+        if (shatter > 0) {
+            iceshatter(target, field[current_assault.owner], shatter);
         }
-
-        // -- END OF STATUS INFLICTION --
 
         // Leech
         // - Must have done some damage to an assault unit
@@ -1333,6 +1320,60 @@ if (simulator_thread) {
             current_assault['health_left'] += leech_health;
             if (debug) echo += debug_name(current_assault) + ' siphons ' + leech_health + ' health<br>';
         }
+
+        // Counter
+        // - Target must have received some amount of damage
+        // - Attacker must not be already dead
+        if (damage > 0 && target.counter /*target['skill']['counter']*/) {
+
+            var counter_damage = 0 + target.counter;//target['skill']['counter']['x'];
+            var augment = getAugment(target, 'counter');
+            if (augment && augment > 0) {
+                counter_damage += augment;
+            }
+
+            // Protect
+            var protect = 0;
+            if (current_assault['protected']) protect = current_assault['protected'];
+            if (counter_damage >= protect) {
+                current_assault['protected'] = 0;
+                counter_damage -= protect;
+            } else {
+                current_assault['protected'] -= counter_damage;
+                counter_damage = 0;
+            }
+
+            echo += '<u>(Counter: +' + target.counter;
+            if (augment) echo += ' Enhance: +' + augment;
+            if (protect) echo += ' Barrier: +' + protect;
+            echo += ') = ' + counter_damage + ' damage</u><br>';
+
+            do_damage(current_assault, counter_damage);
+
+            if (debug) {
+                echo += debug_name(current_assault) + ' takes ' + counter_damage + ' vengeance damage';
+                echo += (!current_assault.isAlive() ? ' and it dies' : '') + '<br>';
+            }
+        }
+
+        // -- CHECK STATUS INFLICTION --
+
+        // Scorch
+        // - Attacker must not have died to Vengeance
+        // - Target must be an assault
+        if (target.isAssault() && current_assault.burn && target.isAlive() && current_assault.isAlive()) {
+            var scorch = current_assault.burn;
+            scorch += getAugment(current_assault, 'poison');
+            if (!target['scorched']) {
+                target['scorched'] = { 'amount': scorch, 'timer': 2 };
+            } else {
+                target['scorched']['amount'] += scorch;
+                target['scorched']['timer'] = 2;
+            }
+            if (debug) echo += debug_name(current_assault) + ' inflicts scorch(' + scorch + ') on ' + debug_name(target) + '<br>';
+        }
+
+        // -- END OF STATUS INFLICTION --
     };
 
     var deck = [];
