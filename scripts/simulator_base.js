@@ -473,14 +473,14 @@ if (simulator_thread) {
                 echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
             }
             if (shatter) {
-                iceshatter(target, field[src_card.owner].assaults, shatter);
+                iceshatter(target, field[src_card.owner], shatter);
             }
         }
     };
 
-    var iceshatter = function (src_card, assaults, amount) {
+    var iceshatter = function (src_card, field, amount) {
         if (amount) {
-            var target = assaults[src_card.key];
+            var target = field.assaults[src_card.key];
             if (!target || !target.isAlive()) target = field.commander;
 
             do_damage(target, amount);
@@ -1299,7 +1299,7 @@ if (simulator_thread) {
         }
 
         if (shatter > 0) {
-            iceshatter(target, field[current_assault.owner].assaults, shatter);
+            iceshatter(target, field[current_assault.owner], shatter);
         }
 
         // Leech
