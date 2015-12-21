@@ -10469,26 +10469,8 @@ var CARDS = {
       },
       "6": {
         "attack": 10,
-        "health": 33,
-        "skill": [],
-      },
-      "6": {
         "health": 34,
-        "skill": [
-          {
-            "id": "armored",
-            "x": 5,
-          },
-          {
-            "id": "legion",
-            "x": 7,
-          },
-          {
-            "id": "protect",
-            "x": 4,
-            "all": "1",
-          },
-        ],
+        "skill": [],
       },
       "7": {
         "health": 35,
@@ -10504,6 +10486,127 @@ var CARDS = {
           {
             "id": "protect",
             "x": 5,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "2018": {
+    "id": "2018",
+    "name": "Vulcanos, the Forge",
+    "rarity": "5",
+    "set": "2000",
+    "card_type": "2",
+    "type": "2",
+    "attack": 6,
+    "health": 26,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 5,
+      },
+      {
+        "id": "burn",
+        "x": 3,
+      },
+      {
+        "id": "strike",
+        "x": 3,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 5,
+          },
+          {
+            "id": "burn",
+            "x": 4,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 6,
+          },
+          {
+            "id": "burn",
+            "x": 4,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "attack": 7,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 7,
+          },
+          {
+            "id": "burn",
+            "x": 4,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "attack": 8,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 7,
+          },
+          {
+            "id": "burn",
+            "x": 5,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "7": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 7,
+          },
+          {
+            "id": "burn",
+            "x": 5,
+          },
+          {
+            "id": "strike",
+            "x": 4,
             "all": "1",
           },
         ],
