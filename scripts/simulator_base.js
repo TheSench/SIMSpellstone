@@ -1220,7 +1220,7 @@ if (simulator_thread) {
         }
         if (armor) {
             if (debug) {
-                if (protect) echo += ' Armor: -' + armor;
+                echo += ' Armor: -' + armor;
             }
             // Remove pierce from Armor
             if (pierce) {
