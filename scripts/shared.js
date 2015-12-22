@@ -202,7 +202,7 @@ var MakeAssault = (function () {
             }
             for (var key in target_skills) {
                 var skill = target_skills[key];
-                if (skill.id === s) {
+                if (skill.id === s && !skill.all) {
                     return true;
                 }
             }

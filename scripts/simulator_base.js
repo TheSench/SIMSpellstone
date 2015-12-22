@@ -65,7 +65,7 @@ if (simulator_thread) {
                     if (!current_assault.isAlive()) {
                         if (debug) echo += debug_name(current_assault) + ' is removed from field<br>';
                     }
-                    // If this unit is alive, set its key to newkey, and then update newkey to be the next slot
+                        // If this unit is alive, set its key to newkey, and then update newkey to be the next slot
                     else {
                         current_assault['key'] = newkey;
                         units[newkey] = current_assault;
@@ -111,447 +111,26 @@ if (simulator_thread) {
         }
     };
 
-    // Augment
-    // - Can target specific faction
-    // - Targets allied unjammed, active assaults
-    // - Target must be active this turn (for activation skills only)
-    // - Target must not have specific "augmentable skill"
-    // - Cannot be augmented
-    var augment = function (src_card, skill) {
-        if (skill['id'] != 'enhance') return;
-
-        var faction = skill['y'];
-
-        var p = get_p(src_card);
-        var o = get_o(src_card);
-
-        var augment = skill['x'];
-        var s = skill['s'];
-        var all = skill['all'];
-
-        var field_p_assaults = field[p]['assaults'];
-        var require_active_turn = (s != 'counter' && s != 'armored' && s != 'evade');
-        var targets = [];
-        for (var key = 0, len = field_p_assaults.length; key < len; key++) {
-            var target = field_p_assaults[key];
-            if (/*!target.isAlive() ||*/ !target.isUnjammed()) continue;
-            if (!target.isInFaction(faction)) continue;
-            if (require_active_turn && !target.isActive()) continue;
-            if(target.hasSkill(s))
-            {
-                targets.push(target);
-            }
-        }
-
-        // No Targets
-        if (!targets.length) return;
-
-        // Check All
-        if (!all) {
-            targets = choose_random_target(targets);
-        }
-
-        for (var key = 0, len = targets.length; key < len; key++) {
-            var target = targets[key];
-            var augments = target['augmented'];
-            if (!augments) {
-                augments = {};
-                target['augmented'] = augments;
-            }
-            var augmented_skill = augments[s];
-            if (augmented_skill) augmented_skill += augment;
-            else augments[s] = augment;
-            if (debug) echo += debug_name(src_card) + ' enhances ' + s + ' of ' + debug_name(target, false) + ' by ' + augment + '<br>';
-        }
-    };
-
     var getAugment = function (card, s) {
         var augments = card['augmented'];
         if (augments && augments[s]) return augments[s];
         else return 0;
     };
 
-    // Enfeeble
-    // - Can target specific faction
-    // - Targets enemy assaults
-    // - Can be evaded
-    // - Can be augmented
-    var enfeeble = function (src_card, skill) {
-        if (skill['id'] != 'enfeeble') return;
-
-        var faction = skill['y'];
-
-        var p = get_p(src_card);
-        var o = get_o(src_card);
-
-        var enfeeble = skill['x'];
-        var augment = getAugment(src_card, skill.id);
-        if (augment && augment > 0) {
-            enfeeble += augment;
-        }
-
-        var all = skill['all'];
-
-        var field_x_assaults = field[o]['assaults'];
-
-        var targets = [];
-        for (var key = 0, len = field_x_assaults.length; key < len; key++) {
-            var target = field_x_assaults[key];
-            if (target.isAlive()
-            && target.isInFaction(faction)) {
-                targets.push(target);
-            }
-        }
-
-        // No Targets
-        if (!targets.length) return;
-
-        // Check All
-        if (!all) targets = choose_random_target(targets);
-
-        for (var key = 0, len = targets.length; key < len; key++) {
-            var target = targets[key];
-            // Check Evade
-            if (target['invisible']) {
-                target['invisible']--;
-                if (debug) echo += debug_name(src_card) + ' hexes ' + debug_name(target) + ' but it is invisible!<br>';
-                continue;
-            }
-
-            target['enfeebled'] += enfeeble;
-            if (debug) echo += debug_name(src_card) + ' hexes ' + debug_name(target) + ' by ' + enfeeble + '<br>';
-        }
-    };
-
-    // Heal
-    // - Can target specific faction
-    // - Targets allied damaged assaults
-    // - Can be augmented
-    var heal = function (src_card, skill) {
-        if (skill['id'] != 'heal') return;
-
-        if (skill['coundown']) {
-            skill['coundown']--;
-            if (skill['coundown'] > 0) return;
-            skill['coundown'] = skill['c'];
-        }
-
-        var faction = skill['y'];
-
-        var p = get_p(src_card);
-        var o = get_o(src_card);
-
-        var heal = skill['x'];
-        var augment = getAugment(src_card, skill.id);
-        if (augment && augment > 0) {
-            heal += augment;
-        }
-        var all = skill['all'];
-
-        var field_p_assaults = field[p]['assaults'];
-
-        var targets = [];
-        for (var key = 0, len = field_p_assaults.length; key < len; key++) {
-            var target = field_p_assaults[key];
-            if (target.isAlive()
-            && target.isDamaged()
-            && target.isInFaction(faction)) {
-                targets.push(target);
-            }
-        }
-
-        // No Targets
-        if (!targets.length) return;
-
-        if (!all) targets = choose_random_target(targets);
-
-        for (var key = 0, len = targets.length; key < len; key++) {
-            var target = targets[key];
-
-            var heal_amt = heal;
-            if (!heal_amt) {
-                var mult = skill.mult;
-                heal_amt = Math.floor(target.health * mult);
-            }
-
-            if (heal_amt > target['health'] - target['health_left']) heal_amt = target['health'] - target['health_left'];
-            target['health_left'] += heal_amt;
-            if (debug) {
-                if (augment && augment > 0) echo += '<u>(Enhance: +' + augment + ')</u><br>';
-                echo += debug_name(src_card) + ' heals ' + debug_name(target) + ' by ' + heal_amt + '<br>';
-            }
-        }
-    };
-
-    // Jam
-    // - Has cooldown timer (only fires every x turns)
-    // - Can target specific faction
-    // - Targets active_next_turn, unjammed enemy assaults
-    // - Can be evaded
-    // - Ff evaded, cooldown timer is not reset (tries again next turn)
-    var jam = function (src_card, skill) {
-        if (skill['id'] != 'jam') return;
-
-        if (skill['coundown']) {
-            skill['coundown']--;
-            if (skill['coundown'] > 0) return;
-        }
-
-        var p = get_p(src_card);
-        var o = get_o(src_card);
-
-        var all = skill['all'];
-
-        var field_x_assaults = field[o]['assaults'];
-
-        var targets = [];
-
-        for (var key = 0, len = field_x_assaults.length; key < len; key++) {
-            var target = field_x_assaults[key];
-            if (!target.isAlive()) continue;
-            if (!target.isActiveNextTurn()) continue;
-            if (target.isUnjammed()) {
-                targets.push(target);
-            }
-        }
-
-        // No Targets
-        if (!targets.length) return;
-
-        // Check All
-        if (!all) targets = choose_random_target(targets);
-
-        for (var key = 0, len = targets.length; key < len; key++) {
-            var target = targets[key];
-            // Check Evade
-            if (target['invisible']) {
-                target['invisible']--;
-                if (debug) echo += debug_name(src_card) + ' freezes ' + debug_name(target) + ' but it is invisible!<br>';
-                continue;
-            }
-
-            // If we got a valid target, reset the timer
-            if (skill['c']) skill['coundown'] = skill['c'];
-
-            target['jammed'] = true;
-            if (debug) echo += debug_name(src_card) + ' freezes ' + debug_name(target) + '<br>';
-        }
-    };
-
-    // Protect
-    // - Can target specific faction
-    // - Targets allied assaults
-    // - Can be augmented
-    var protect = function (src_card, skill) {
-        if (skill['id'] != 'protect') return;
-
-        var faction = skill['y'];
-
-        var p = get_p(src_card);
-        var o = get_o(src_card);
-
-        var protect = skill['x'];
-        var augment = getAugment(src_card, skill.id);
-        if (augment && augment > 0) {
-            protect += augment;
-        }
-        var all = skill['all'];
-
-        var field_p_assaults = field[p]['assaults'];
-
-        var targets = [];
-        for (var key = 0, len = field_p_assaults.length; key < len; key++) {
-            var target = field_p_assaults[key];
-            if (target.isAlive()
-            && target.isInFaction(faction)) {
-                targets.push(target);
-            }
-        }
-
-        // No Targets
-        if (!targets.length) return;
-
-        // Check All
-        if (!all) {
-            targets = choose_random_target(targets);
-        }
-
-        for (var key = 0, len = targets.length; key < len; key++) {
-            var target = targets[key];
-
-            target['protected'] += protect;
-            // Bug 27344 - Damage capped at most recently applied Barrier 
-            target['barrier_ice'] = protect;
-            if (debug) {
-                if (augment && augment > 0) echo += '<u>(Enhance: +' + augment + ')</u><br>';
-                echo += debug_name(src_card) + ' barriers ' + debug_name(target) + ' by ' + protect + '<br>';
-            }
-        }
-    };
-
-    // Strike
-    // - Can target specific faction
-    // - Targets enemy assaults
-    // - Can be evaded
-    // - Must calculate enfeeble/protect
-    // - Can be augmented
-    var strike = function (src_card, skill) {
-        if (skill['id'] != 'strike') return;
-
-        var faction = skill['y'];
-
-        var o = get_o(src_card);
-
-        var strike = skill['x'];
-        var augment = getAugment(src_card, skill.id);
-
-        var all = skill['all'];
-
-        var field_x_assaults = field[o]['assaults'];
-
-        var targets = [];
-        for (var key = 0, len = field_x_assaults.length; key < len; key++) {
-            var target = field_x_assaults[key];
-            if (target.isAlive()
-            && target.isInFaction(faction)) {
-                targets.push(target);
-            }
-        }
-
-        // No Targets
-        if (!targets.length) return;
-
-        // Check All
-        if (!all) targets = choose_random_target(targets);
-
-        for (var key = 0, len = targets.length; key < len; key++) {
-            var target = targets[key];
-
-            // Check Evade
-            if (target['invisible']) {
-                target['invisible']--;
-                if (debug) echo += debug_name(src_card) + ' bolts ' + debug_name(target) + ' but it is invisible!<br>';
-                continue;
-            }
-
-            var strike_damage = strike;
-
-
-            // Check Protect/Enfeeble
-            var enfeeble = 0;
-            if (target['enfeebled']) enfeeble = target['enfeebled'];
-            var protect = 0;
-            if (target['protected']) protect = target['protected'];
-
-            if (enfeeble) {
-                strike_damage += enfeeble;
-            }
-            if (augment) {
-                strike_damage += augment;
-            }
-            var shatter = 0;
-            if (protect) {
-                if (strike_damage >= protect) {
-                    shatter = target['protected'];
-                    target['protected'] = 0;
-                }  else  {
-                    target['protected'] -= strike_damage;
-                }
-                strike_damage -= protect;
-            }
-
-            if (strike_damage < 0) {
-                strike_damage = 0;
-            } else {
-               do_damage(target, strike_damage);
-            }
-            if (debug) {
-                echo += '<u>(Strike: +' + strike;
-                if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
-                if (augment) echo += ' Enhance: +' + augment;
-                if (protect) echo += ' Barrier: -' + protect;
-                echo += ') = ' + strike_damage + ' damage</u><br>';
-                echo += debug_name(src_card) + ' bolts ' + debug_name(target) + ' for ' + strike_damage + ' damage';
-                echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
-            }
-            if (shatter) {
-                iceshatter(target, field[src_card.owner], shatter);
-            }
-        }
-    };
-
-    var iceshatter = function (src_card, field, amount) {
+    var iceshatter = function (src_card, amount) {
         if (amount) {
             // Bug 27344 - Damage capped at most recently applied Barrier 
             if (amount > src_card.barrier_ice) amount = src_card.barrier_ice;
-            var target = field.assaults[src_card.key];
-            if (!target || !target.isAlive()) target = field.commander;
+            var o = get_o(src_card);
+            var field_o = field[o];
+            var target = field_o.assaults[src_card.key];
+            if (!target || !target.isAlive()) target = field_o.commander;
 
             do_damage(target, amount);
 
             if (debug) {
                 echo += debug_name(src_card) + "'s barrier shatters and hits " + debug_name(target) + ' for ' + amount + ' damage';
                 echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
-            }
-        }
-    }
-
-    // Weaken
-    // - Can target specific faction
-    // - Targets active_next_turn, unjammed, enemy assaults with attack > 0
-    // - Can be evaded
-    // - Can be augmented
-    var weaken = function (src_card, skill) {
-        if (skill['id'] != 'weaken') return;
-
-        var faction = skill['y'];
-
-        var p = get_p(src_card);
-        var o = get_o(src_card);
-
-        var weaken = skill['x'];
-        var augment = getAugment(src_card, skill.id);
-        if (augment && augment > 0) {
-            weaken += augment;
-        }
-
-        var all = skill['all'];
-
-        var field_x_assaults = field[o]['assaults'];
-
-        var targets = [];
-
-        for (var key = 0, len = field_x_assaults.length; key < len; key++) {
-            var target = field_x_assaults[key];
-            if (!target.isAlive()) continue;
-            if (!target.isActiveNextTurn()) continue;
-            if (target.isUnjammed()
-            && target.hasAttack()
-            && target.isInFaction(faction)) {
-                targets.push(target);
-            }
-        }
-
-        // No Targets
-        if (!targets.length) return;
-
-        // Check All
-        if (!all) targets = choose_random_target(targets);
-
-        for (var key = 0, len = targets.length; key < len; key++) {
-            var target = targets[key];
-
-            // Check Evade
-            if (target['invisible']) {
-                target['invisible']--;
-                if (debug) echo += debug_name(src_card) + ' weakens ' + debug_name(target) + ' but it is invisible!<br>';
-                continue;
-            }
-
-            target['attack_weaken'] += weaken;
-            if (debug) {
-                if (augment && augment > 0) echo += '<u>(Enhance: +' + augment + ')</u><br>';
-                echo += debug_name(src_card) + ' weakens ' + debug_name(target) + ' by ' + weaken + '<br>';
             }
         }
     };
@@ -572,167 +151,680 @@ if (simulator_thread) {
         var skills = source_card.empowerSkills;
         for (var key in skills) {
             var skill = skills[key];
-            var empowerSkill;
-            switch (skill.id) {
-                case 'rally':
-                    empowerSkill = rally;
-                    break;
-                case 'legion':
-                    empowerSkill = legion;
-                    break;
-                case 'fervor':
-                    empowerSkill = fervor;
-                    break;
-            }
-            if (empowerSkill) {
-                var dualStrike = skills.flurry;
-                if (dualStrike && source_card.hasAttack()) {
-                    if (!dualStrike.coundown) {
-                        // Let main attack loop deal with resetting timer
-                        if (debug) echo += debug_name(source_card) + ' activates dualstrike<br>';
-                        empowerSkill(source_card, skill);
-                    }
+            var dualStrike = skills.flurry;
+            if (dualStrike && source_card.hasAttack()) {
+                if (!dualStrike.coundown) {
+                    // Let main attack loop deal with resetting timer
+                    if (debug) echo += debug_name(source_card) + ' activates dualstrike<br>';
+                    empowerSkills[key](source_card, skill);
                 }
-                empowerSkill(source_card, skill);
             }
-        }
-    }
-
-    // Rally
-    // - Can target specific faction
-    // - Targets allied unjammed, active assaults
-    // - Can be augmented
-    var rally = function (src_card, skill) {
-        if (skill['id'] != 'rally') return;
-
-        var faction = skill['y'];
-
-        var p = get_p(src_card);
-        var o = get_o(src_card);
-
-        var rally = skill['x'];
-        var augment = getAugment(src_card, skill.id);
-        if (augment && augment > 0) {
-            rally += augment;
-        }
-        var all = skill['all'];
-
-        var field_p_assaults = field[p]['assaults'];
-
-        var targets = [];
-        for (var key = 0, len = field_p_assaults.length; key < len; key++) {
-            var target = field_p_assaults[key];
-            if (/*target.isAlive() &&*/ target.isActive() && target.isUnjammed() && target.isInFaction(faction)) {
-                targets.push(target);
-            }
-        }
-
-        // No Targets
-        if (!targets.length) return;
-
-        // Check All
-        if (!all) {
-            targets = choose_random_target(targets);
-        }
-
-        for (var key = 0, len = targets.length; key < len; key++) {
-            var target = targets[key];
-            if (!target) return;
-
-            target['attack_rally'] += rally;
-            if (debug) {
-                if (augment && augment > 0) echo += '<u>(Enhance: +' + augment + ')</u><br>';
-                echo += debug_name(src_card) + ' empowers ' + debug_name(target) + ' by ' + rally + '<br>';
-            }
+            empowerSkills[skill.id](source_card, skill);
         }
     };
 
-    // Legion
-    // - Targets specific faction
-    // - Targets allied adjacent unjammed, active assaults
-    // - Can be augmented?
-    var legion = function (src_card, skill) {
+    var activationSkills = {
 
-        if (skill['id'] != 'legion') return;
+        // Protect (Barrier)
+        // - Can target specific faction
+        // - Targets allied assaults
+        // - Can be augmented
+        protect: function (src_card, skill) {
+            if (skill['id'] != 'protect') return;
 
-        var p = get_p(src_card);
-        var field_p_assaults = field[p]['assaults'];
+            var faction = skill['y'];
 
-        var rally = skill['x'];
-        var augment = getAugment(src_card, skill.id);
-        if (augment && augment > 0) {
-            rally += augment;
-        }
-        var faction = skill['y'];
+            var p = get_p(src_card);
+            var o = get_o(src_card);
 
-        var src_position = src_card['key'];
-        var targets = [];
-        if (src_position > 0) {
-            // Check left
-            var target = get_assault_by_key(field_p_assaults, src_position - 1);
-            if (target) targets.push(target);
-        }
-        // Check right
-        var target = get_assault_by_key(field_p_assaults, src_position + 1);
-        if (target) targets.push(target);
+            var protect = skill['x'];
+            var augment = getAugment(src_card, skill.id);
+            if (augment && augment > 0) {
+                protect += augment;
+            }
+            var all = skill['all'];
 
-        for (var key = 0, len = targets.length; key < len; key++) {
-            var target = targets[key];
-            if (/*target.isAlive() &&*/ target.isActive() && target.isInFaction(faction)) {
+            var field_p_assaults = field[p]['assaults'];
+
+            var targets = [];
+            for (var key = 0, len = field_p_assaults.length; key < len; key++) {
+                var target = field_p_assaults[key];
+                if (target.isAlive()
+                && target.isInFaction(faction)) {
+                    targets.push(target);
+                }
+            }
+
+            // No Targets
+            if (!targets.length) return;
+
+            // Check All
+            if (!all) {
+                targets = choose_random_target(targets);
+            }
+
+            for (var key = 0, len = targets.length; key < len; key++) {
+                var target = targets[key];
+
+                target['protected'] += protect;
+                // Bug 27344 - Damage capped at most recently applied Barrier 
+                target['barrier_ice'] = protect;
+                if (debug) {
+                    if (augment && augment > 0) echo += '<u>(Enhance: +' + augment + ')</u><br>';
+                    echo += debug_name(src_card) + ' barriers ' + debug_name(target) + ' by ' + protect + '<br>';
+                }
+            }
+        },
+
+        // Enhance
+        // - Can target specific faction
+        // - Targets allied, units
+        // - Target must be active this turn (for activation skills only)
+        // - Target must not be frozen (for activation skills only)
+        // - Target must have specific "augmentable skill" ("all" versions aren't counted)
+        enhance: function (src_card, skill) {
+            if (skill['id'] != 'enhance') return;
+
+            var faction = skill['y'];
+
+            var p = get_p(src_card);
+            var o = get_o(src_card);
+
+            var augment = skill['x'];
+            var s = skill['s'];
+            var all = skill['all'];
+
+            var field_p_assaults = field[p]['assaults'];
+            var require_active_turn = (s != 'counter' && s != 'armored' && s != 'evade');
+            var targets = [];
+            for (var key = 0, len = field_p_assaults.length; key < len; key++) {
+                var target = field_p_assaults[key];
+                if (/*!target.isAlive() ||*/ !target.isUnjammed()) continue;
+                if (!target.isInFaction(faction)) continue;
+                if (require_active_turn && !target.isActive()) continue;
+                if (target.hasSkill(s)) {
+                    targets.push(target);
+                }
+            }
+
+            // No Targets
+            if (!targets.length) return;
+
+            // Check All
+            if (!all) {
+                targets = choose_random_target(targets);
+            }
+
+            for (var key = 0, len = targets.length; key < len; key++) {
+                var target = targets[key];
+                var augments = target['augmented'];
+                if (!augments) {
+                    augments = {};
+                    target['augmented'] = augments;
+                }
+                var augmented_skill = augments[s];
+                if (augmented_skill) augmented_skill += augment;
+                else augments[s] = augment;
+                if (debug) echo += debug_name(src_card) + ' enhances ' + s + ' of ' + debug_name(target, false) + ' by ' + augment + '<br>';
+            }
+        },
+
+        // Heal
+        // - Can target specific faction
+        // - Targets allied damaged assaults
+        // - Can be enhanced
+        heal: function (src_card, skill) {
+            if (skill['id'] != 'heal') return;
+
+            if (skill['coundown']) {
+                skill['coundown']--;
+                if (skill['coundown'] > 0) return;
+                skill['coundown'] = skill['c'];
+            }
+
+            var faction = skill['y'];
+
+            var p = get_p(src_card);
+            var o = get_o(src_card);
+
+            var heal = skill['x'];
+            var augment = getAugment(src_card, skill.id);
+            if (augment && augment > 0) {
+                heal += augment;
+            }
+            var all = skill['all'];
+
+            var field_p_assaults = field[p]['assaults'];
+
+            var targets = [];
+            for (var key = 0, len = field_p_assaults.length; key < len; key++) {
+                var target = field_p_assaults[key];
+                if (target.isAlive()
+                && target.isDamaged()
+                && target.isInFaction(faction)) {
+                    targets.push(target);
+                }
+            }
+
+            // No Targets
+            if (!targets.length) return;
+
+            if (!all) targets = choose_random_target(targets);
+
+            for (var key = 0, len = targets.length; key < len; key++) {
+                var target = targets[key];
+
+                var heal_amt = heal;
+                if (!heal_amt) {
+                    var mult = skill.mult;
+                    heal_amt = Math.floor(target.health * mult);
+                }
+
+                if (heal_amt > target['health'] - target['health_left']) heal_amt = target['health'] - target['health_left'];
+                target['health_left'] += heal_amt;
+                if (debug) {
+                    if (augment && augment > 0) echo += '<u>(Enhance: +' + augment + ')</u><br>';
+                    echo += debug_name(src_card) + ' heals ' + debug_name(target) + ' by ' + heal_amt + '<br>';
+                }
+            }
+        },
+
+        // Strike (Bolt)
+        // - Can target specific faction
+        // - Targets enemy assaults
+        // - Can be evaded
+        // - Must calculate enfeeble/protect
+        // - Can be enhanced
+        strike: function (src_card, skill) {
+            if (skill['id'] != 'strike') return;
+
+            var faction = skill['y'];
+
+            var o = get_o(src_card);
+
+            var strike = skill['x'];
+            var augment = getAugment(src_card, skill.id);
+
+            var all = skill['all'];
+
+            var field_x_assaults = field[o]['assaults'];
+
+            var targets = [];
+            for (var key = 0, len = field_x_assaults.length; key < len; key++) {
+                var target = field_x_assaults[key];
+                if (target.isAlive()
+                && target.isInFaction(faction)) {
+                    targets.push(target);
+                }
+            }
+
+            // No Targets
+            if (!targets.length) return;
+
+            // Check All
+            if (!all) targets = choose_random_target(targets);
+
+            for (var key = 0, len = targets.length; key < len; key++) {
+                var target = targets[key];
+
+                // Check Evade
+                if (target['invisible']) {
+                    target['invisible']--;
+                    if (debug) echo += debug_name(src_card) + ' bolts ' + debug_name(target) + ' but it is invisible!<br>';
+                    continue;
+                }
+
+                var strike_damage = strike;
+
+
+                // Check Protect/Enfeeble
+                var enfeeble = 0;
+                if (target['enfeebled']) enfeeble = target['enfeebled'];
+                var protect = 0;
+                if (target['protected']) protect = target['protected'];
+
+                if (enfeeble) {
+                    strike_damage += enfeeble;
+                }
+                if (augment) {
+                    strike_damage += augment;
+                }
+                var shatter = 0;
+                if (protect) {
+                    if (strike_damage >= protect) {
+                        shatter = target['protected'];
+                        target['protected'] = 0;
+                    } else {
+                        target['protected'] -= strike_damage;
+                    }
+                    strike_damage -= protect;
+                }
+
+                if (strike_damage < 0) {
+                    strike_damage = 0;
+                } else {
+                    do_damage(target, strike_damage);
+                }
+                if (debug) {
+                    echo += '<u>(Strike: +' + strike;
+                    if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
+                    if (augment) echo += ' Enhance: +' + augment;
+                    if (protect) echo += ' Barrier: -' + protect;
+                    echo += ') = ' + strike_damage + ' damage</u><br>';
+                    echo += debug_name(src_card) + ' bolts ' + debug_name(target) + ' for ' + strike_damage + ' damage';
+                    echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
+                }
+                if (shatter) {
+                    iceshatter(target, shatter);
+                }
+            }
+        },
+
+        // Jam (Freeze)
+        // - Has cooldown timer (only fires every x turns)
+        // - Can target specific faction
+        // - Targets active_next_turn, unjammed enemy assaults
+        // - Can be evaded
+        // - If evaded, cooldown timer is not reset (tries again next turn)
+        jam: function (src_card, skill) {
+            if (skill['id'] != 'jam') return;
+
+            if (skill['coundown']) {
+                skill['coundown']--;
+                if (skill['coundown'] > 0) return;
+            }
+
+            var p = get_p(src_card);
+            var o = get_o(src_card);
+
+            var all = skill['all'];
+
+            var field_x_assaults = field[o]['assaults'];
+
+            var targets = [];
+
+            for (var key = 0, len = field_x_assaults.length; key < len; key++) {
+                var target = field_x_assaults[key];
+                if (!target.isAlive()) continue;
+                if (!target.isActiveNextTurn()) continue;
+                if (target.isUnjammed()) {
+                    targets.push(target);
+                }
+            }
+
+            // No Targets
+            if (!targets.length) return;
+
+            // Check All
+            if (!all) targets = choose_random_target(targets);
+
+            for (var key = 0, len = targets.length; key < len; key++) {
+                var target = targets[key];
+                // Check Evade
+                if (target['invisible']) {
+                    target['invisible']--;
+                    if (debug) echo += debug_name(src_card) + ' freezes ' + debug_name(target) + ' but it is invisible!<br>';
+                    continue;
+                }
+
+                // If we got a valid target, reset the timer
+                if (skill['c']) skill['coundown'] = skill['c'];
+
+                target['jammed'] = true;
+                if (debug) echo += debug_name(src_card) + ' freezes ' + debug_name(target) + '<br>';
+            }
+        },
+
+        // Frostbreath
+        // - Targets opposing enemy unit and any adjacent enemy units
+        // - Can be evaded
+        // - Must calculate enfeeble/protect
+        // - Can be enhanced
+        frost: function (src_card, skill) {
+
+            if (skill['coundown']) {
+                skill['coundown']--;
+                if (skill['coundown'] > 0) return;
+            }
+
+            var p = get_p(src_card);
+            var o = get_o(src_card);
+
+            var frost = skill['x'];
+            var augment = getAugment(src_card, skill.id);
+
+            var all = skill['all'];
+
+            var field_x_assaults = field[o]['assaults'];
+
+            var targets = [];
+
+            var src_position = src_card['key'];
+            var target = field_x_assaults[src_position];
+            if (target && target.isAlive()) {
+                // Check left
+                var adjacent = field_x_assaults[src_position - 1];
+                if (adjacent && adjacent.isAlive()) {
+                    targets.push(adjacent);
+                }
+                // Add opposing unit
+                targets.push(target);
+                // Check right
+                adjacent = field_x_assaults[src_position + 1];
+                if (adjacent && adjacent.isAlive()) {
+                    targets.push(adjacent);
+                }
+            }
+
+            // No Targets
+            if (!targets.length) return;
+
+            for (var key = 0, len = targets.length; key < len; key++) {
+                var target = targets[key];
+
+                // Check Evade
+                if (target['invisible']) {
+                    target['invisible']--;
+                    if (debug) echo += debug_name(src_card) + ' breathes frost at ' + debug_name(target) + ' but it is invisible!<br>';
+                    continue;
+                }
+
+                var frost_damage = frost;
+
+
+                // Check Protect/Enfeeble
+                var enfeeble = 0;
+                if (target['enfeebled']) enfeeble = target['enfeebled'];
+                var protect = 0;
+                if (target['protected']) protect = target['protected'];
+
+                if (enfeeble) {
+                    frost_damage += enfeeble;
+                }
+                if (augment) {
+                    frost_damage += augment;
+                }
+                var shatter = 0;
+                if (protect) {
+                    if (frost_damage >= protect) {
+                        shatter = target['protected'];
+                        target['protected'] = 0;
+                    } else {
+                        target['protected'] -= frost_damage;
+                    }
+                    frost_damage -= protect;
+                }
+
+                if (frost_damage < 0) {
+                    frost_damage = 0;
+                } else {
+                    do_damage(target, frost_damage);
+                }
+                if (debug) {
+                    echo += '<u>(Strike: +' + frost;
+                    if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
+                    if (augment) echo += ' Enhance: +' + augment;
+                    if (protect) echo += ' Barrier: -' + protect;
+                    echo += ') = ' + frost_damage + ' damage</u><br>';
+                    echo += debug_name(src_card) + ' breathes frost at ' + debug_name(target) + ' for ' + frost_damage + ' damage';
+                    echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
+                }
+                if (shatter) {
+                    iceshatter(target, shatter);
+                }
+            }
+        },
+
+        // Enfeeble (Hex)
+        // - Can target specific faction
+        // - Targets enemy assaults
+        // - Can be evaded
+        // - Can be augmented
+        enfeeble: function (src_card, skill) {
+            if (skill['id'] != 'enfeeble') return;
+
+            var faction = skill['y'];
+
+            var p = get_p(src_card);
+            var o = get_o(src_card);
+
+            var enfeeble = skill['x'];
+            var augment = getAugment(src_card, skill.id);
+            if (augment && augment > 0) {
+                enfeeble += augment;
+            }
+
+            var all = skill['all'];
+
+            var field_x_assaults = field[o]['assaults'];
+
+            var targets = [];
+            for (var key = 0, len = field_x_assaults.length; key < len; key++) {
+                var target = field_x_assaults[key];
+                if (target.isAlive()
+                && target.isInFaction(faction)) {
+                    targets.push(target);
+                }
+            }
+
+            // No Targets
+            if (!targets.length) return;
+
+            // Check All
+            if (!all) targets = choose_random_target(targets);
+
+            for (var key = 0, len = targets.length; key < len; key++) {
+                var target = targets[key];
+                // Check Evade
+                if (target['invisible']) {
+                    target['invisible']--;
+                    if (debug) echo += debug_name(src_card) + ' hexes ' + debug_name(target) + ' but it is invisible!<br>';
+                    continue;
+                }
+
+                target['enfeebled'] += enfeeble;
+                if (debug) echo += debug_name(src_card) + ' hexes ' + debug_name(target) + ' by ' + enfeeble + '<br>';
+            }
+        },
+
+        // Weaken
+        // - Can target specific faction
+        // - Targets active_next_turn, unjammed, enemy assaults with attack > 0
+        // - Can be evaded
+        // - Can be enhanced
+        weaken: function (src_card, skill) {
+            if (skill['id'] != 'weaken') return;
+
+            var faction = skill['y'];
+
+            var p = get_p(src_card);
+            var o = get_o(src_card);
+
+            var weaken = skill['x'];
+            var augment = getAugment(src_card, skill.id);
+            if (augment && augment > 0) {
+                weaken += augment;
+            }
+
+            var all = skill['all'];
+
+            var field_x_assaults = field[o]['assaults'];
+
+            var targets = [];
+
+            for (var key = 0, len = field_x_assaults.length; key < len; key++) {
+                var target = field_x_assaults[key];
+                if (!target.isAlive()) continue;
+                if (!target.isActiveNextTurn()) continue;
+                if (target.isUnjammed()
+                && target.hasAttack()
+                && target.isInFaction(faction)) {
+                    targets.push(target);
+                }
+            }
+
+            // No Targets
+            if (!targets.length) return;
+
+            // Check All
+            if (!all) targets = choose_random_target(targets);
+
+            for (var key = 0, len = targets.length; key < len; key++) {
+                var target = targets[key];
+
+                // Check Evade
+                if (target['invisible']) {
+                    target['invisible']--;
+                    if (debug) echo += debug_name(src_card) + ' weakens ' + debug_name(target) + ' but it is invisible!<br>';
+                    continue;
+                }
+
+                target['attack_weaken'] += weaken;
+                if (debug) {
+                    if (augment && augment > 0) echo += '<u>(Enhance: +' + augment + ')</u><br>';
+                    echo += debug_name(src_card) + ' weakens ' + debug_name(target) + ' by ' + weaken + '<br>';
+                }
+            }
+        },
+    };
+
+    var empowerSkills = {
+        // Rally
+        // - Can target specific faction
+        // - Targets allied unjammed, active assaults
+        // - Can be augmented
+        rally: function (src_card, skill) {
+            if (skill['id'] != 'rally') return;
+
+            var faction = skill['y'];
+
+            var p = get_p(src_card);
+            var o = get_o(src_card);
+
+            var rally = skill['x'];
+            var augment = getAugment(src_card, skill.id);
+            if (augment && augment > 0) {
+                rally += augment;
+            }
+            var all = skill['all'];
+
+            var field_p_assaults = field[p]['assaults'];
+
+            var targets = [];
+            for (var key = 0, len = field_p_assaults.length; key < len; key++) {
+                var target = field_p_assaults[key];
+                if (/*target.isAlive() &&*/ target.isActive() && target.isUnjammed() && target.isInFaction(faction)) {
+                    targets.push(target);
+                }
+            }
+
+            // No Targets
+            if (!targets.length) return;
+
+            // Check All
+            if (!all) {
+                targets = choose_random_target(targets);
+            }
+
+            for (var key = 0, len = targets.length; key < len; key++) {
+                var target = targets[key];
+                if (!target) return;
+
                 target['attack_rally'] += rally;
                 if (debug) {
                     if (augment && augment > 0) echo += '<u>(Enhance: +' + augment + ')</u><br>';
-                    echo += debug_name(src_card) + ' activates legion and empowers ' + debug_name(target) + ' by ' + rally + '<br>';
+                    echo += debug_name(src_card) + ' empowers ' + debug_name(target) + ' by ' + rally + '<br>';
                 }
             }
-        }
-    };
+        },
 
-    // Fervor
-    // - Targets self for each adjacent unjammed, active assault in specific faction
-    // - Can be augmented?
-    var fervor = function (src_card, skill) {
+        // Legion
+        // - Targets specific faction
+        // - Targets allied adjacent unjammed, active assaults
+        // - Can be augmented?
+        legion: function (src_card, skill) {
 
-        if (skill['id'] != 'fervor') return;
+            if (skill['id'] != 'legion') return;
 
-        var p = get_p(src_card);
-        var field_p_assaults = field[p]['assaults'];
+            var p = get_p(src_card);
+            var field_p_assaults = field[p]['assaults'];
 
-        var rally = skill['x'];
-        var augment = getAugment(src_card, skill.id);
-        if (augment && augment > 0) {
-            rally += augment;
-        }
-        var faction = skill['y'];
+            var rally = skill['x'];
+            var augment = getAugment(src_card, skill.id);
+            if (augment && augment > 0) {
+                rally += augment;
+            }
+            var faction = skill['y'];
 
-        var src_position = src_card['key'];
-        var targets = [];
-        if (src_position > 0) {
-            // Check left
-            var target = get_assault_by_key(field_p_assaults, src_position - 1);
+            var src_position = src_card['key'];
+            var targets = [];
+            if (src_position > 0) {
+                // Check left
+                var target = get_assault_by_key(field_p_assaults, src_position - 1);
+                if (target) targets.push(target);
+            }
+            // Check right
+            var target = get_assault_by_key(field_p_assaults, src_position + 1);
             if (target) targets.push(target);
-        }
-        // Check right
-        var target = get_assault_by_key(field_p_assaults, src_position + 1);
-        if (target) targets.push(target);
 
-        // No Targets
-        if (!targets.length) return;
+            for (var key = 0, len = targets.length; key < len; key++) {
+                var target = targets[key];
+                if (/*target.isAlive() &&*/ target.isActive() && target.isInFaction(faction)) {
+                    target['attack_rally'] += rally;
+                    if (debug) {
+                        if (augment && augment > 0) echo += '<u>(Enhance: +' + augment + ')</u><br>';
+                        echo += debug_name(src_card) + ' activates legion and empowers ' + debug_name(target) + ' by ' + rally + '<br>';
+                    }
+                }
+            }
+        },
 
-        var fervorAmount = 0;
-        for (var key = 0, len = targets.length; key < len; key++) {
-            var target = targets[key];
-            if (/*target.isAlive() &&*/ target.isInFaction(faction)) {
-                fervorAmount += rally;
+        // Fervor
+        // - Targets self for each adjacent unjammed, active assault in specific faction
+        // - Can be augmented?
+        fervor: function (src_card, skill) {
+
+            if (skill['id'] != 'fervor') return;
+
+            var p = get_p(src_card);
+            var field_p_assaults = field[p]['assaults'];
+
+            var rally = skill['x'];
+            var augment = getAugment(src_card, skill.id);
+            if (augment && augment > 0) {
+                rally += augment;
             }
-        }
-        if (fervorAmount) {
-            src_card['attack_rally'] += fervorAmount;
-            if (debug) {
-                if (augment && augment > 0) echo += '<u>(Enhance: +' + augment + ')</u><br>';
-                echo += debug_name(src_card) + ' activates fervor for ' + fervorAmount + '<br>';
+            var faction = skill['y'];
+
+            var src_position = src_card['key'];
+            var targets = [];
+            if (src_position > 0) {
+                // Check left
+                var target = get_assault_by_key(field_p_assaults, src_position - 1);
+                if (target) targets.push(target);
             }
-        }
+            // Check right
+            var target = get_assault_by_key(field_p_assaults, src_position + 1);
+            if (target) targets.push(target);
+
+            // No Targets
+            if (!targets.length) return;
+
+            var fervorAmount = 0;
+            for (var key = 0, len = targets.length; key < len; key++) {
+                var target = targets[key];
+                if (/*target.isAlive() &&*/ target.isInFaction(faction)) {
+                    fervorAmount += rally;
+                }
+            }
+            if (fervorAmount) {
+                src_card['attack_rally'] += fervorAmount;
+                if (debug) {
+                    if (augment && augment > 0) echo += '<u>(Enhance: +' + augment + ')</u><br>';
+                    echo += debug_name(src_card) + ' activates fervor for ' + fervorAmount + '<br>';
+                }
+            }
+        },
     };
 
     // Activation Skills
@@ -743,31 +835,8 @@ if (simulator_thread) {
 
         for (var key in skills) {
             var skill = skills[key];
-
-            // Delegate to skill functions
-            switch (skill.id) {
-                case 'enhance':
-                    augment(src_card, skill);
-                    break;
-                case 'enfeeble':
-                    enfeeble(src_card, skill);
-                    break;
-                case 'heal':
-                    heal(src_card, skill);
-                    break;
-                case 'jam':
-                    jam(src_card, skill);
-                    break;
-                case 'protect':
-                    protect(src_card, skill);
-                    break;
-                case 'strike':
-                    strike(src_card, skill);
-                    break;
-                case 'weaken':
-                    weaken(src_card, skill);
-                    break;
-            }
+            // Delegate to skill function
+            activationSkills[skill.id](src_card, skill);
         }
     };
 
@@ -1305,7 +1374,7 @@ if (simulator_thread) {
         }
 
         if (shatter > 0) {
-            iceshatter(target, field[current_assault.owner], shatter);
+            iceshatter(target, shatter);
         }
 
         // Leech
