@@ -321,7 +321,7 @@ function setSkill_2(new_card, key, skill) {
         case 'burn':
         case 'leech':
         default:
-            new_card.skill[skill.id] = skill;
+            new_card[skill.id] = skill;
             break;
     }
 }

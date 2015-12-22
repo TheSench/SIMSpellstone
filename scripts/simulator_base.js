@@ -151,7 +151,7 @@ if (simulator_thread) {
         var skills = source_card.empowerSkills;
         for (var key in skills) {
             var skill = skills[key];
-            var dualStrike = skills.flurry;
+            var dualStrike = source_card.flurry;
             if (dualStrike && source_card.hasAttack()) {
                 if (!dualStrike.coundown) {
                     // Let main attack loop deal with resetting timer
@@ -1125,7 +1125,7 @@ if (simulator_thread) {
 
             // Dual-strike does not activate if unit has 0 attack
             var activations = 1;
-            var dualStrike = current_assault['skill']['flurry'];
+            var dualStrike = current_assault.flurry;
             if (dualStrike && current_assault.hasAttack()) {
                 if (dualStrike['coundown']) {
                     dualStrike['coundown']--;
@@ -1385,9 +1385,9 @@ if (simulator_thread) {
         // - Leecher must not be at full health
         // - Increases attack too during Invigorate battleground effect
         if (damage > 0 && target.isAssault() && current_assault['health_left'] > 0 &&
-        current_assault['health_left'] < current_assault['health'] && current_assault['skill']['leech']) {
+        current_assault['health_left'] < current_assault['health'] && current_assault.leech) {
 
-            var leech_health = current_assault['skill']['leech']['x'];
+            var leech_health = current_assault.leech.x;
             leech_health += getAugment(current_assault, 'leech');
             if (leech_health > damage) leech_health = damage;
             if (leech_health > current_assault['health'] - current_assault['health_left']) leech_health = current_assault['health'] - current_assault['health_left'];
