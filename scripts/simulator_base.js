@@ -1349,10 +1349,12 @@ if (simulator_thread) {
                 counter_damage = 0;
             }
 
-            echo += '<u>(Counter: +' + target.counter;
-            if (augment) echo += ' Enhance: +' + augment;
-            if (protect) echo += ' Barrier: +' + protect;
-            echo += ') = ' + counter_damage + ' damage</u><br>';
+            if (debug) {
+                echo += '<u>(Counter: +' + target.counter;
+                if (augment) echo += ' Enhance: +' + augment;
+                if (protect) echo += ' Barrier: +' + protect;
+                echo += ') = ' + counter_damage + ' damage</u><br>';
+            }
 
             do_damage(current_assault, counter_damage);
 
