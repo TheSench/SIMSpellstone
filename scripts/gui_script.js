@@ -231,7 +231,7 @@ function onpageload() {
         }
     } else {
         // Load current battlegrounds
-        var d = document.getElementById("battleground_0").checked = true;
+        //var d = document.getElementById("battleground_0").checked = true;
         var d = document.getElementById("battleground_2").checked = true;
     }
 
