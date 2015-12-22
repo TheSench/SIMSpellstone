@@ -380,6 +380,8 @@ if (simulator_thread) {
             var target = targets[key];
 
             target['protected'] += protect;
+            // Bug 27344 - Damage capped at most recently applied Barrier 
+            target['barrier_ice'] = protect;
             if (debug) {
                 if (augment && augment > 0) echo += '<u>(Enhance: +' + augment + ')</u><br>';
                 echo += debug_name(src_card) + ' barriers ' + debug_name(target) + ' by ' + protect + '<br>';
@@ -480,6 +482,8 @@ if (simulator_thread) {
 
     var iceshatter = function (src_card, field, amount) {
         if (amount) {
+            // Bug 27344 - Damage capped at most recently applied Barrier 
+            if (amount > src_card.barrier_ice) amount = src_card.barrier_ice;
             var target = field.assaults[src_card.key];
             if (!target || !target.isAlive()) target = field.commander;
 
@@ -894,6 +898,7 @@ if (simulator_thread) {
 
             current_assault.enfeebled = 0;
             current_assault.protected = 0;
+            current_assault.barrier_ice = 0;
             current_assault.augmented = 0;;
         }
     }
@@ -1190,7 +1195,8 @@ if (simulator_thread) {
             }
         }
 
-        //-- Begin  Bug 23216
+        // Bug 23216
+        //-- Begin Bug
         if (protect) {
             if (debug) {
                 echo += ' Barrier: -' + protect;
@@ -1251,20 +1257,20 @@ if (simulator_thread) {
                     if (debug) echo += ' Pierce: +' + pierce;
                     totalReduction -= pierce;
                 }
-                // Remove damaged protect (even if damage is blocked by armor)
-                if (protect) {
-                    pierce += damage;
-                    if (pierce > protect) {
-                        target.protected = 0;
-                    } else {
-                        target.protected -= pierce;
-                    }
+            }
+            // Remove damaged protect (even if damage is blocked by armor)
+            if (protect) {
+                pierce += damage;
+                if (pierce > protect) {
+                    target.protected = 0;
+                } else {
+                    target.protected -= pierce;
                 }
             }
             damage -= totalReduction;
         }
         */
-        //-- End Bug 23216
+        //-- End Bug
 
         if (damage < 0) damage = 0;
 
