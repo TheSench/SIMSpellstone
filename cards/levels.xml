@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 	<config max_level="40" />
-	
+
 	<!-- Scrub -->
 	<card_level>
 		<rarity>0</rarity>
 		<level>1</level>
-		<salvage0>0</salvage0> <!-- Fusion 0 salvage amount -->
-		<salvage1>0</salvage1>  <!-- Fusion 1 salvage amount -->
-		<salvage2>0</salvage2>  <!-- Fusion 2 salvage amount -->
-		<sp_cost>0</sp_cost> <!-- This is how much it costs to increase to next level, not how much this level costs -->
+		<salvage0>0</salvage0>
+		<!-- Fusion 0 salvage amount -->
+		<salvage1>0</salvage1>
+		<!-- Fusion 1 salvage amount -->
+		<salvage2>0</salvage2>
+		<!-- Fusion 2 salvage amount -->
+		<sp_cost>0</sp_cost>
+		<!-- This is how much it costs to increase to next level, not how much this level costs -->
 	</card_level>
-	
+
 	<!-- Common -->
 	<card_level>
 		<rarity>1</rarity>
 		<level>1</level>
-		<salvage0>1</salvage0> <!-- Fusion 0 salvage amount -->
-		<salvage1>40</salvage1>  <!-- Fusion 1 salvage amount -->
-		<salvage2>120</salvage2>  <!-- Fusion 2 salvage amount -->
-		<sp_cost>5</sp_cost> <!-- This is how much it costs to increase to next level, not how much this level costs -->
+		<salvage0>1</salvage0>
+		<!-- Fusion 0 salvage amount -->
+		<salvage1>40</salvage1>
+		<!-- Fusion 1 salvage amount -->
+		<salvage2>120</salvage2>
+		<!-- Fusion 2 salvage amount -->
+		<sp_cost>5</sp_cost>
+		<!-- This is how much it costs to increase to next level, not how much this level costs -->
 	</card_level>
 	<card_level>
 		<rarity>1</rarity>
@@ -36,7 +44,7 @@
 		<salvage1>60</salvage1>
 		<salvage2>140</salvage2>
 	</card_level>
-	
+
 	<!-- Rare -->
 	<card_level>
 		<rarity>2</rarity>
@@ -68,8 +76,8 @@
 		<salvage0>30</salvage0>
 		<salvage1>70</salvage1>
 		<salvage2>145</salvage2>
-	</card_level>	
-	
+	</card_level>
+
 	<!-- Epic -->
 	<card_level>
 		<rarity>3</rarity>
@@ -110,7 +118,7 @@
 		<salvage1>160</salvage1>
 		<salvage2>310</salvage2>
 	</card_level>
-	
+
 	<!-- Legendary -->
 	<card_level>
 		<rarity>4</rarity>
@@ -159,7 +167,7 @@
 		<salvage1>320</salvage1>
 		<salvage2>600</salvage2>
 	</card_level>
-	
+
 	<!-- Mythic -->
 	<card_level>
 		<rarity>5</rarity>
@@ -216,7 +224,7 @@
 		<salvage1>650</salvage1>
 		<salvage2>1190</salvage2>
 	</card_level>
-	
+
 	<!-- Player Levels -->
 	<level>
 		<id>1</id>

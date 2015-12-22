@@ -73,8 +73,7 @@
 			<health>6</health>
 		</upgrade>
 		<desc>"Majestic Hooved Beast, Sky Galloper, Long Faced Bird" - Rejected names from the historical text 'Mythical Nomenclature'.</desc>
-	</unit>
-	
+	</unit>	
 	<unit>
 		<id>1001</id>
 		<card_type>2</card_type>
@@ -6126,6 +6125,118 @@
 			<skill id="fervor" x="2" y="3"/>
 		</upgrade>
 	</unit>
+	
+	<unit>
+		<id>2020</id>
+		<card_type>2</card_type>
+		<name>Tidetaken Fighter</name>
+		<picture>Frozen_Skeleton_A</picture>
+		<asset_bundle>40</asset_bundle>
+		<attack>2</attack>
+		<health>9</health>
+		<cost>2</cost>
+		<rarity>3</rarity>
+		<skill id="strike" x="1"/>
+		<skill id="frost" x="1"/>
+		<skill id="weaken" x="1"/>
+		<type>2</type>
+		<sub_type>7</sub_type>
+		<set>2000</set>
+		<upgrade>
+			<level>2</level>
+			<health>10</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<health>11</health>
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<health>12</health>
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<skill id="strike" x="1"/>
+			<skill id="frost" x="1"/>
+			<skill id="weaken" x="2"/>
+		</upgrade>
+	</unit>
+	<unit>
+		<id>12020</id>
+		<card_type>2</card_type>
+		<fusion_level>1</fusion_level>
+		<name>Tidetaken Warrior</name>
+		<picture>Frozen_Skeleton_A</picture>
+		<asset_bundle>40</asset_bundle>
+		<attack>2</attack>
+		<health>13</health>
+		<cost>2</cost>
+		<rarity>3</rarity>
+		<skill id="strike" x="1"/>
+		<skill id="frost" x="1"/>
+		<skill id="weaken" x="2"/>
+		<type>2</type>
+		<sub_type>7</sub_type>
+		<set>2000</set>
+		<upgrade>
+			<level>2</level>
+			<health>14</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<health>15</health>
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<skill id="strike" x="2"/>
+			<skill id="frost" x="1"/>
+			<skill id="weaken" x="2"/>
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<skill id="strike" x="2"/>
+			<skill id="frost" x="2"/>
+			<skill id="weaken" x="2"/>
+		</upgrade>
+	</unit>
+	<unit>
+		<id>22020</id>
+		<card_type>2</card_type>
+		<fusion_level>2</fusion_level>
+		<name>Tidetaken Destroyer</name>
+		<picture>Frozen_Skeleton_B</picture>
+		<asset_bundle>40</asset_bundle>
+		<attack>2</attack>
+		<health>16</health>
+		<cost>2</cost>
+		<rarity>3</rarity>
+			<skill id="strike" x="2"/>
+			<skill id="frost" x="2"/>
+			<skill id="weaken" x="2"/>
+		<type>2</type>
+		<sub_type>7</sub_type>
+		<set>2000</set>
+		<upgrade>
+			<level>2</level>
+			<health>17</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<health>18</health>
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<skill id="strike" x="2"/>
+			<skill id="frost" x="2"/>
+			<skill id="weaken" x="3"/>
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<skill id="strike" x="3"/>
+			<skill id="frost" x="2"/>
+			<skill id="weaken" x="3"/>
+		</upgrade>
+	</unit>
 
 <!-- END SET 2000 - Reward -->
 
@@ -9532,6 +9643,134 @@
 			<skill id="armored" x="3"/>
 			<skill id="protect" x="2" all="1"/>
 			<skill id="rally" x="4" y="1"/>
+		</upgrade>
+	</unit>
+	
+	<unit>
+		<id>5029</id>
+		<card_type>2</card_type>
+		<name>Snowback Dragon</name>
+		<picture>Snowhidden_Dragon_A</picture>
+		<asset_bundle>40</asset_bundle>
+		<attack>2</attack>
+		<health>16</health>
+		<cost>3</cost>
+		<rarity>4</rarity>
+		<skill id="protect" x="2" all="1"/>
+		<skill id="frost" x="1"/>
+		<skill id="burn" x="1"/>
+		<type>1</type>
+		<sub_type>9</sub_type>
+		<set>3000</set>
+		<upgrade>
+			<level>2</level>
+			<health>17</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<health>18</health>
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<attack>3</attack>
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<skill id="protect" x="2" all="1"/>
+			<skill id="frost" x="2"/>
+			<skill id="burn" x="1"/>
+		</upgrade>
+		<upgrade>
+			<level>6</level>
+			<skill id="protect" x="2" all="1"/>
+			<skill id="frost" x="2"/>
+			<skill id="burn" x="2"/>
+		</upgrade>
+	</unit>
+	<unit>
+		<id>15029</id>
+		<card_type>2</card_type>
+		<fusion_level>1</fusion_level>
+		<name>Snowmasked Dragon</name>
+		<picture>Snowhidden_Dragon_A</picture>
+		<asset_bundle>40</asset_bundle>
+		<attack>3</attack>
+		<health>19</health>
+		<cost>3</cost>
+		<rarity>4</rarity>
+		<skill id="protect" x="2" all="1"/>
+		<skill id="frost" x="2"/>
+		<skill id="burn" x="2"/>
+		<type>1</type>
+		<sub_type>9</sub_type>
+		<set>3000</set>
+		<upgrade>
+			<level>2</level>
+			<health>20</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<health>21</health>
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<attack>4</attack>
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<health>22</health>
+			<skill id="protect" x="2" all="1"/>
+			<skill id="frost" x="3"/>
+			<skill id="burn" x="2"/>
+		</upgrade>
+		<upgrade>
+			<level>6</level>
+			<health>23</health>
+			<skill id="protect" x="3" all="1"/>
+			<skill id="frost" x="3"/>
+			<skill id="burn" x="2"/>
+		</upgrade>
+	</unit>
+	<unit>
+		<id>25029</id>
+		<card_type>2</card_type>
+		<fusion_level>2</fusion_level>
+		<name>Snowcloaked Dragon</name>
+		<picture>Snowhidden_Dragon_B</picture>
+		<asset_bundle>40</asset_bundle>
+		<attack>4</attack>
+		<health>25</health>
+		<cost>3</cost>
+		<rarity>4</rarity>
+		<skill id="protect" x="3" all="1"/>
+		<skill id="frost" x="3"/>
+		<skill id="burn" x="2"/>
+		<type>1</type>
+		<sub_type>9</sub_type>
+		<set>3000</set>
+		<upgrade>
+			<level>2</level>
+			<health>26</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<health>27</health>
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<skill id="protect" x="3" all="1"/>
+			<skill id="frost" x="4"/>
+			<skill id="burn" x="2"/>
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<health>28</health>
+		</upgrade>
+		<upgrade>
+			<level>6</level>
+			<skill id="protect" x="4" all="1"/>
+			<skill id="frost" x="4"/>
+			<skill id="burn" x="2"/>
 		</upgrade>
 	</unit>
 
@@ -12973,6 +13212,120 @@
 			<skill id="counter" x="5"/>
 			<skill id="legion" x="3" y="2"/>
 			<skill id="fervor" x="2" y="2"/>
+		</upgrade>
+	</unit>
+	
+	<unit>
+		<id>6029</id>
+		<card_type>2</card_type>
+		<name>Spinehead Stalker</name>
+		<picture>Spinehead_Undead_A</picture>
+		<asset_bundle>40</asset_bundle>
+		<attack>2</attack>
+		<health>8</health>
+		<cost>1</cost>
+		<rarity>3</rarity>
+		<skill id="rally" x="1" y="7"/>
+		<skill id="enfeeble" x="1"/>
+		<skill id="poison" x="1"/>
+		<type>2</type>
+		<sub_type>7</sub_type>
+		<set>3000</set>
+		<upgrade>
+			<level>2</level>
+			<health>9</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<attack>3</attack>
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<skill id="rally" x="1" y="7"/>
+			<skill id="enfeeble" x="1"/>
+			<skill id="poison" x="2"/>
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<skill id="rally" x="2" y="7"/>
+			<skill id="enfeeble" x="1"/>
+			<skill id="poison" x="2"/>
+		</upgrade>
+	</unit>
+	<unit>
+		<id>16029</id>
+		<card_type>2</card_type>
+		<fusion_level>1</fusion_level>
+		<name>Spinehead Trapper</name>
+		<picture>Spinehead_Undead_A</picture>
+		<asset_bundle>40</asset_bundle>
+		<attack>3</attack>
+		<health>10</health>
+		<cost>1</cost>
+		<rarity>3</rarity>
+		<skill id="rally" x="2" y="7"/>
+		<skill id="enfeeble" x="1"/>
+		<skill id="poison" x="2"/>
+		<type>2</type>
+		<sub_type>7</sub_type>
+		<set>3000</set>
+		<upgrade>
+			<level>2</level>
+			<health>11</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<health>12</health>
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<skill id="rally" x="2" y="7"/>
+			<skill id="enfeeble" x="2"/>
+			<skill id="poison" x="2"/>
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<skill id="rally" x="3" y="7"/>
+			<skill id="enfeeble" x="2"/>
+			<skill id="poison" x="2"/>
+		</upgrade>
+	</unit>
+	<unit>
+		<id>26029</id>
+		<card_type>2</card_type>
+		<fusion_level>2</fusion_level>
+		<name>Spinehead Huntress</name>
+		<picture>Spinehead_Undead_B</picture>
+		<asset_bundle>40</asset_bundle>
+		<attack>3</attack>
+		<health>13</health>
+		<cost>1</cost>
+		<rarity>3</rarity>
+		<skill id="rally" x="3" y="7"/>
+		<skill id="enfeeble" x="2"/>
+		<skill id="poison" x="2"/>
+		<type>2</type>
+		<sub_type>7</sub_type>
+		<set>3000</set>
+		<upgrade>
+			<level>2</level>
+			<health>14</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<attack>4</attack>
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<skill id="rally" x="3" y="7"/>
+			<skill id="enfeeble" x="3"/>
+			<skill id="poison" x="2"/>
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<skill id="rally" x="4" y="7"/>
+			<skill id="enfeeble" x="3"/>
+			<skill id="poison" x="2"/>
 		</upgrade>
 	</unit>
 
@@ -16435,6 +16788,255 @@
 			<skill id="evade" x="1"/>
 			<skill id="protect" x="4" all="1" y="3"/>
 			<skill id="jam" c="4"/>
+		</upgrade>
+	</unit>
+	
+	<unit>
+		<id>7029</id>
+		<card_type>2</card_type>
+		<name>Owl Griffin</name>
+		<picture>Owl_Leopard_A</picture>
+		<asset_bundle>40</asset_bundle>
+		<attack>5</attack>
+		<health>11</health>
+		<cost>2</cost>
+		<rarity>3</rarity>
+		<skill id="rally" x="2" y="3"/>
+		<skill id="protect" x="2"/>
+		<skill id="pierce" x="2"/>
+		<type>3</type>
+		<set>3000</set>
+		<upgrade>
+			<level>2</level>
+			<health>12</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<attack>6</attack>
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<skill id="rally" x="2" y="3"/>
+			<skill id="protect" x="2"/>
+			<skill id="pierce" x="3"/>
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<skill id="rally" x="3" y="3"/>
+			<skill id="protect" x="2"/>
+			<skill id="pierce" x="3"/>
+		</upgrade>
+	</unit>
+	<unit>
+		<id>17029</id>
+		<card_type>2</card_type>
+		<fusion_level>1</fusion_level>
+		<name>Night Griffin</name>
+		<picture>Owl_Leopard_A</picture>
+		<asset_bundle>40</asset_bundle>
+		<attack>6</attack>
+		<health>13</health>
+		<cost>2</cost>
+		<rarity>3</rarity>
+			<skill id="rally" x="3" y="3"/>
+			<skill id="protect" x="2"/>
+			<skill id="pierce" x="3"/>
+		<type>3</type>
+		<set>3000</set>
+		<upgrade>
+			<level>2</level>
+			<health>14</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<skill id="rally" x="3" y="3"/>
+			<skill id="protect" x="2"/>
+			<skill id="pierce" x="4"/>
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<skill id="rally" x="3" y="3"/>
+			<skill id="protect" x="3"/>
+			<skill id="pierce" x="4"/>
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<health>15</health>
+			<skill id="rally" x="4" y="3"/>
+			<skill id="protect" x="3"/>
+			<skill id="pierce" x="4"/>
+		</upgrade>
+	</unit>
+	<unit>
+		<id>27029</id>
+		<card_type>2</card_type>
+		<fusion_level>2</fusion_level>
+		<name>Blutorch Griffin</name>
+		<picture>Owl_Leopard_B</picture>
+		<asset_bundle>40</asset_bundle>
+		<attack>6</attack>
+		<health>16</health>
+		<cost>2</cost>
+		<rarity>3</rarity>
+		<skill id="rally" x="4" y="3"/>
+		<skill id="protect" x="3"/>
+		<skill id="pierce" x="4"/>
+		<type>3</type>
+		<set>3000</set>
+		<upgrade>
+			<level>2</level>
+			<health>17</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<skill id="rally" x="4" y="3"/>
+			<skill id="protect" x="4"/>
+			<skill id="pierce" x="4"/>
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<health>18</health>
+			<skill id="rally" x="4" y="3"/>
+			<skill id="protect" x="4"/>
+			<skill id="pierce" x="5"/>
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<attack>7</attack>
+			<skill id="rally" x="5" y="3"/>
+			<skill id="protect" x="4"/>
+			<skill id="pierce" x="5"/>
+		</upgrade>
+	</unit>
+	
+	<unit>
+		<id>7032</id>
+		<card_type>2</card_type>
+		<name>Nidhogg</name>
+		<picture>Elk_Dragon_A</picture>
+		<asset_bundle>40</asset_bundle>
+		<attack>9</attack>
+		<health>20</health>
+		<cost>4</cost>
+		<rarity>4</rarity>
+		<skill id="evade" x="1"/>
+		<skill id="protect" x="1" all="1" y="3"/>
+		<skill id="enfeeble" x="2" all="1"/>
+		<type>3</type>
+		<sub_type>9</sub_type>
+		<set>3000</set>
+		<upgrade>
+			<level>2</level>
+			<health>21</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<health>22</health>
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<health>23</health>
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<attack>10</attack>
+		</upgrade>
+		<upgrade>
+			<level>6</level>
+			<skill id="evade" x="1"/>
+			<skill id="protect" x="2" all="1" y="3"/>
+			<skill id="enfeeble" x="2" all="1"/>
+		</upgrade>
+	</unit>
+	<unit>
+		<id>17032</id>
+		<card_type>2</card_type>
+		<fusion_level>1</fusion_level>
+		<name>Timber Nidhogg</name>
+		<picture>Elk_Dragon_A</picture>
+		<asset_bundle>40</asset_bundle>
+		<attack>10</attack>
+		<health>25</health>
+		<cost>4</cost>
+		<rarity>4</rarity>
+			<skill id="evade" x="1"/>
+			<skill id="protect" x="2" all="1" y="3"/>
+			<skill id="enfeeble" x="2" all="1"/>
+		<type>3</type>
+		<sub_type>9</sub_type>
+		<set>3000</set>
+		<upgrade>
+			<level>2</level>
+			<health>27</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<health>28</health>
+			<attack>11</attack>
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<health>29</health>
+			<skill id="evade" x="2"/>
+			<skill id="protect" x="2" all="1" y="3"/>
+			<skill id="enfeeble" x="2" all="1"/>
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<health>30</health>
+			<skill id="evade" x="2"/>
+			<skill id="protect" x="3" all="1" y="3"/>
+			<skill id="enfeeble" x="2" all="1"/>
+		</upgrade>
+		<upgrade>
+			<level>6</level>
+			<health>31</health>
+			<skill id="evade" x="2"/>
+			<skill id="protect" x="3" all="1" y="3"/>
+			<skill id="enfeeble" x="3" all="1"/>
+		</upgrade>
+	</unit>
+	<unit>
+		<id>27032</id>
+		<card_type>2</card_type>
+		<fusion_level>2</fusion_level>
+		<name>Sylvan Nidhogg</name>
+		<picture>Elk_Dragon_B</picture>
+		<asset_bundle>40</asset_bundle>
+		<attack>11</attack>
+		<health>32</health>
+		<cost>4</cost>
+		<rarity>4</rarity>
+			<skill id="evade" x="2"/>
+			<skill id="protect" x="3" all="1" y="3"/>
+			<skill id="enfeeble" x="3" all="1"/>
+		<type>3</type>
+		<sub_type>9</sub_type>
+		<set>3000</set>
+		<upgrade>
+			<level>2</level>
+			<health>33</health>
+		</upgrade>
+		<upgrade>
+			<level>3</level>
+			<health>34</health>
+		</upgrade>
+		<upgrade>
+			<level>4</level>
+			<health>36</health>
+		</upgrade>
+		<upgrade>
+			<level>5</level>
+			<skill id="evade" x="2"/>
+			<skill id="protect" x="4" all="1" y="3"/>
+			<skill id="enfeeble" x="3" all="1"/>
+		</upgrade>
+		<upgrade>
+			<level>6</level>
+			<attack>12</attack>
+			<skill id="evade" x="2"/>
+			<skill id="protect" x="4" all="1" y="3"/>
+			<skill id="enfeeble" x="4" all="1"/>
 		</upgrade>
 	</unit>
 	
