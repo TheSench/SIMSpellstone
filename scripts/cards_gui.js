@@ -214,6 +214,10 @@ function getStatuses(card) {
         var status = createStatus("rally", card.attack_rally);
         buffs.push(status);
     }
+    if (card.attack_berserk) {
+        var status = createStatus("berserk", card.attack_rally);
+        buffs.push(status);
+    }
     if (card.protected) {
         var status = createStatus("protect", card.protected);
         buffs.push(status);
