@@ -121,6 +121,7 @@ var MakeAssault = (function () {
         health_left: 0,
         timer: 0,
         attack_rally: 0,
+        attack_berserk: 0,
         attack_weaken: 0,
         key: undefined,
         // Passives
@@ -128,6 +129,7 @@ var MakeAssault = (function () {
         burn: 0,
         counter: 0,
         evade: 0,
+        leech: 0,
         pierce: 0,
         poison: 0,
         // Statuses
@@ -155,6 +157,12 @@ var MakeAssault = (function () {
         // -.health_left > 0
         isAlive: function () {
             return (this.health_left > 0);
+        },
+
+        // Alive
+        // -.health_left > 0
+        isDamaged: function () {
+            return (this.health_left < this.health);
         },
 
         // Active
@@ -223,7 +231,7 @@ var MakeAssault = (function () {
         },
 
         adjustedAttack: function () {
-            return ((this.attack + this.attack_rally - this.attack_weaken));
+            return ((this.attack + this.attack_rally + this.attack_berserk - this.attack_weaken));
         },
 
         // Filters by faction
@@ -292,9 +300,11 @@ function setSkill_2(new_card, key, skill) {
     switch (skill.id) {
         // Passives
         case 'armored':
+        case 'berserk':
         case 'burn':
         case 'counter':
         case 'evade':
+        case 'leech':
         case 'pierce':
         case 'poison':
             new_card[skill.id] = skill.x;
@@ -317,9 +327,6 @@ function setSkill_2(new_card, key, skill) {
             break;
         // All other skills
         case 'flurry':
-        case 'poison':
-        case 'burn':
-        case 'leech':
         default:
             new_card[skill.id] = skill;
             break;
@@ -546,7 +553,7 @@ function debug_name(card, hideStats) {
             output += ' HP]';
         } else if (card.isAssault()) {
             output += ' [';
-            var atk = parseInt(card.attack) + parseInt(card.attack_rally) - parseInt(card.attack_weaken);
+            var atk = parseInt(card.attack) + parseInt(card.attack_rally) + parseInt(card.attack_berserk) - parseInt(card.attack_weaken);
             if (isNaN(atk) || atk == undefined) atk = card.attack;
             output += atk;
             output += '/';

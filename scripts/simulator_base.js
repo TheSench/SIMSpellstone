@@ -31,6 +31,7 @@ if (simulator_thread) {
         // Setup status effects
         card.attack_rally = 0;
         card.attack_weaken = 0;
+        card.attack_berserk = 0;
         card.poisoned = 0;
         card.scorched = 0;
         card.enfeebled = 0;
@@ -716,7 +717,7 @@ if (simulator_thread) {
             var targets = [];
             for (var key = 0, len = field_p_assaults.length; key < len; key++) {
                 var target = field_p_assaults[key];
-                if (/*target.isAlive() &&*/ target.isActive() && target.isUnjammed() && target.isInFaction(faction)) {
+                if (target.isActive() && target.isUnjammed() && target.isInFaction(faction)) {
                     targets.push(target);
                 }
             }
@@ -733,7 +734,7 @@ if (simulator_thread) {
                 var target = targets[key];
                 if (!target) return;
 
-                target['attack_rally'] += rally;
+                target.attack_rally += rally;
                 if (debug) {
                     if (augment && augment > 0) echo += '<u>(Enhance: +' + augment + ')</u><br>';
                     echo += debug_name(src_card) + ' empowers ' + debug_name(target) + ' by ' + rally + '<br>';
@@ -772,8 +773,8 @@ if (simulator_thread) {
 
             for (var key = 0, len = targets.length; key < len; key++) {
                 var target = targets[key];
-                if (/*target.isAlive() &&*/ target.isActive() && target.isInFaction(faction)) {
-                    target['attack_rally'] += rally;
+                if (target.isActive() && target.isInFaction(faction)) {
+                    target.attack_rally += rally;
                     if (debug) {
                         if (augment && augment > 0) echo += '<u>(Enhance: +' + augment + ')</u><br>';
                         echo += debug_name(src_card) + ' activates legion and empowers ' + debug_name(target) + ' by ' + rally + '<br>';
@@ -1181,10 +1182,10 @@ if (simulator_thread) {
         for (var key = 0, len = field_p_assaults.length; key < len; key++) {
             var current_assault = field_p_assaults[key];
 
-            current_assault['jammed'] = false;
-            current_assault['enfeebled'] = 0;
-            current_assault['attack_rally'] = 0;
-            current_assault['attack_weaken'] = 0;
+            current_assault.jammed = false;
+            current_assault.enfeebled = 0;
+            current_assault.attack_rally = 0;
+            current_assault.attack_weaken = 0;
         }
 
         //debug_dump_field();
@@ -1238,6 +1239,7 @@ if (simulator_thread) {
         if (debug) {
             echo += '<u>(Attack: +' + current_assault.attack;
             if (current_assault.attack_rally) echo += ' Rally: +' + current_assault.attack_rally;
+            if (current_assault.attack_berserk) echo += ' Berserk: +' + current_assault.attack_berserk;
             if (current_assault.attack_weaken) echo += ' Weaken: -' + current_assault.attack_weaken;
             if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
         }
@@ -1352,59 +1354,70 @@ if (simulator_thread) {
             iceshatter(target, shatter);
         }
 
-        // Leech
-        // - Must have done some damage to an assault unit
-        // - Cannot leech more than damage dealt
-        // - Cannot leech more health than damage sustained
-        // - Leecher must not be already dead
-        // - Leecher must not be at full health
-        // - Increases attack too during Invigorate battleground effect
-        if (damage > 0 && target.isAssault() && current_assault['health_left'] > 0 &&
-        current_assault['health_left'] < current_assault['health'] && current_assault.leech) {
+        if (damage > 0) {
+            // Leech
+            // - Must have done some damage to an assault unit
+            // - Cannot leech more than damage dealt
+            // - Cannot leech more health than damage sustained
+            // - Leecher must not be already dead
+            // - Leecher must not be at full health
+            // - Increases attack too during Invigorate battleground effect
+            if (current_assault.leech && target.isAssault() && current_assault.isAlive() && current_assault.isDamaged()) {
 
-            var leech_health = current_assault.leech.x;
-            leech_health += getAugment(current_assault, 'leech');
-            if (leech_health > damage) leech_health = damage;
-            if (leech_health > current_assault['health'] - current_assault['health_left']) leech_health = current_assault['health'] - current_assault['health_left'];
+                var leech_health = current_assault.leech;
+                leech_health += getAugment(current_assault, 'leech');
+                leech_health = Math.min(leech_health, damage, (current_assault.health - current_assault.health_left));
 
-            current_assault['health_left'] += leech_health;
-            if (debug) echo += debug_name(current_assault) + ' siphons ' + leech_health + ' health<br>';
-        }
-
-        // Counter
-        // - Target must have received some amount of damage
-        // - Attacker must not be already dead
-        if (damage > 0 && target.counter /*target['skill']['counter']*/) {
-
-            var counter_damage = 0 + target.counter;//target['skill']['counter']['x'];
-            var augment = getAugment(target, 'counter');
-            if (augment && augment > 0) {
-                counter_damage += augment;
+                current_assault.health_left += leech_health;
+                if (debug) echo += debug_name(current_assault) + ' siphons ' + leech_health + ' health<br>';
             }
 
-            // Protect
-            var protect = 0;
-            if (current_assault['protected']) protect = current_assault['protected'];
-            if (counter_damage >= protect) {
-                current_assault['protected'] = 0;
-                counter_damage -= protect;
-            } else {
-                current_assault['protected'] -= counter_damage;
-                counter_damage = 0;
+            // Counter
+            // - Target must have received some amount of damage
+            // - Attacker must not be already dead
+            if (target.counter) {
+
+                var counter_damage = 0 + target.counter;
+                var augment = getAugment(target, 'counter');
+                if (augment && augment > 0) {
+                    counter_damage += augment;
+                }
+
+                // Protect
+                var protect = 0;
+                if (current_assault['protected']) protect = current_assault['protected'];
+                if (counter_damage >= protect) {
+                    current_assault['protected'] = 0;
+                    counter_damage -= protect;
+                } else {
+                    current_assault['protected'] -= counter_damage;
+                    counter_damage = 0;
+                }
+
+                if (debug) {
+                    echo += '<u>(Counter: +' + target.counter;
+                    if (augment) echo += ' Enhance: +' + augment;
+                    if (protect) echo += ' Barrier: +' + protect;
+                    echo += ') = ' + counter_damage + ' damage</u><br>';
+                }
+
+                do_damage(current_assault, counter_damage);
+
+                if (debug) {
+                    echo += debug_name(current_assault) + ' takes ' + counter_damage + ' vengeance damage';
+                    echo += (!current_assault.isAlive() ? ' and it dies' : '') + '<br>';
+                }
             }
 
-            if (debug) {
-                echo += '<u>(Counter: +' + target.counter;
-                if (augment) echo += ' Enhance: +' + augment;
-                if (protect) echo += ' Barrier: +' + protect;
-                echo += ') = ' + counter_damage + ' damage</u><br>';
-            }
+            // Berserk
+            // - Must have done some damage to an assault unit
+            if (damage > 0 && current_assault.berserk && current_assault.isAlive()) {
 
-            do_damage(current_assault, counter_damage);
+                var berserk = current_assault.berserk;
+                berserk += getAugment(current_assault, 'berserk');
 
-            if (debug) {
-                echo += debug_name(current_assault) + ' takes ' + counter_damage + ' vengeance damage';
-                echo += (!current_assault.isAlive() ? ' and it dies' : '') + '<br>';
+                current_assault.attack_berserk += berserk;
+                if (debug) echo += debug_name(current_assault) + ' activates berserk and gains ' + berserk + ' attack<br>';
             }
         }
 
@@ -1415,7 +1428,7 @@ if (simulator_thread) {
         // - Target must be an assault
         if (target.isAssault() && current_assault.burn && target.isAlive() && current_assault.isAlive()) {
             var scorch = current_assault.burn;
-            scorch += getAugment(current_assault, 'poison');
+            scorch += getAugment(current_assault, 'burn');
             if (!target['scorched']) {
                 target['scorched'] = { 'amount': scorch, 'timer': 2 };
             } else {
