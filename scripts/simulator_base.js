@@ -35,6 +35,7 @@ if (simulator_thread) {
         card.scorched = 0;
         card.enfeebled = 0;
         card.protected = 0;
+        card.barrier_ice = 0;
         card.augmented = 0;
         card.jammed = false;
         card.key = newKey;
@@ -119,8 +120,9 @@ if (simulator_thread) {
 
     var iceshatter = function (src_card, amount) {
         if (amount) {
-            // Bug 27344 - Damage capped at most recently applied Barrier 
-            if (amount > src_card.barrier_ice) amount = src_card.barrier_ice;
+            // Bug 27391 - If Barrier is partially reduced before being completely depleted, Iceshatter still deals full damage
+            amount = src_card.barrier_ice;
+            //if (amount > src_card.barrier_ice) amount = src_card.barrier_ice;
             var o = get_o(src_card);
             var field_o = field[o];
             var target = field_o.assaults[src_card.key];
@@ -206,9 +208,8 @@ if (simulator_thread) {
             for (var key = 0, len = targets.length; key < len; key++) {
                 var target = targets[key];
 
-                target['protected'] += protect;
-                // Bug 27344 - Damage capped at most recently applied Barrier 
-                target['barrier_ice'] = protect;
+                target.protected += protect;
+                target.barrier_ice += protect;
                 if (debug) {
                     if (augment && augment > 0) echo += '<u>(Enhance: +' + augment + ')</u><br>';
                     echo += debug_name(src_card) + ' barriers ' + debug_name(target) + ' by ' + protect + '<br>';
@@ -464,6 +465,8 @@ if (simulator_thread) {
                 if (target['invisible']) {
                     target['invisible']--;
                     if (debug) echo += debug_name(src_card) + ' freezes ' + debug_name(target) + ' but it is invisible!<br>';
+                    // Bug 27296 - Freeze now resets when it misses
+                    if (skill['c']) skill['coundown'] = skill['c'];
                     continue;
                 }
 
@@ -1264,8 +1267,7 @@ if (simulator_thread) {
             }
         }
 
-        // Bug 23216
-        //-- Begin Bug
+        // Barrier is applied BEFORE Armor
         if (protect) {
             if (debug) {
                 echo += ' Barrier: -' + protect;
@@ -1274,12 +1276,16 @@ if (simulator_thread) {
             if (pierce) {
                 if (pierce >= protect) {
                     if (debug) echo += ' Pierce: +' + protect;
+                    pierce -= protect;
                     protect = 0;
                     target.protected = 0;
                 } else {
                     if (debug) echo += ' Pierce: +' + pierce;
                     protect -= pierce;
                     target.protected -= pierce;
+                    // Bug 27415 - Pierce does NOT reduce potential Iceshatter damage unless protect is completely removed by it
+                    //target.iceshatter -= pierce;
+                    pierce = 0;
                 }
             }
             if (protect) {
@@ -1309,37 +1315,6 @@ if (simulator_thread) {
             }
             damage -= armor;
         }
-
-        /*
-        var totalReduction = armor + protect;
-        if (totalReduction > 0) {
-            if (debug) {
-                if (protect) echo += ' Barrier: -' + protect;
-                if (armor) echo += ' Armor: -' + armor;
-            }
-            // Remove pierce from total damage reduction
-            if (pierce) {
-                if (pierce > totalReduction) {
-                    if (debug) echo += ' Pierce: +' + totalReduction;
-                    totalReduction = 0;
-                } else {
-                    if (debug) echo += ' Pierce: +' + pierce;
-                    totalReduction -= pierce;
-                }
-            }
-            // Remove damaged protect (even if damage is blocked by armor)
-            if (protect) {
-                pierce += damage;
-                if (pierce > protect) {
-                    target.protected = 0;
-                } else {
-                    target.protected -= pierce;
-                }
-            }
-            damage -= totalReduction;
-        }
-        */
-        //-- End Bug
 
         if (damage < 0) damage = 0;
 
