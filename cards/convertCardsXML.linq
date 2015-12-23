@@ -31,7 +31,7 @@ void Main()
 		id = node.Element("id").Value,
 		name = node.Element("name").Value,
 		commander = node.Element("commander").Attribute("id").Value,
-		deck = node.Element("deck").Elements("card").Select(card => card.Attribute("id").Value).ToArray()
+		deck = node.Element("deck").Elements("card").Where(card => card.Attribute("remove_mastery_level") == null).Select(card => card.Attribute("id").Value).ToArray()
 	}).OrderBy(m => m.id);
 
 	xmlFile = Path.Combine(path, "fusion_recipes_cj2.xml");
