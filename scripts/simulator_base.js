@@ -503,20 +503,12 @@ if (simulator_thread) {
 
             var targets = [];
 
-            var src_position = src_card['key'];
-            var target = field_x_assaults[src_position];
-            if (target && target.isAlive()) {
-                // Check left
-                var adjacent = field_x_assaults[src_position - 1];
-                if (adjacent && adjacent.isAlive()) {
-                    targets.push(adjacent);
-                }
-                // Add opposing unit
-                targets.push(target);
-                // Check right
-                adjacent = field_x_assaults[src_position + 1];
-                if (adjacent && adjacent.isAlive()) {
-                    targets.push(adjacent);
+            var i = src_card['key'] - 1;
+            var end = i + 2
+            for (; i <= end; i++) {
+                var target = field_x_assaults[i];
+                if (target && target.isAlive()) {
+                    targets.push(target);
                 }
             }
 
