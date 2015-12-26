@@ -152,8 +152,8 @@ if (simulator_thread) {
 
     var doEmpower = function (source_card) {
         var skills = source_card.empowerSkills;
-        for (var key in skills) {
-            var skill = skills[key];
+        for (var i = 0, len = skills.length; i < len; i++) {
+            var skill = skills[i];
             var dualStrike = source_card.flurry;
             if (dualStrike && source_card.hasAttack()) {
                 if (!dualStrike.coundown) {
@@ -173,7 +173,6 @@ if (simulator_thread) {
         // - Targets allied assaults
         // - Can be augmented
         protect: function (src_card, skill) {
-            if (skill['id'] != 'protect') return;
 
             var faction = skill['y'];
 
@@ -225,7 +224,6 @@ if (simulator_thread) {
         // - Target must not be frozen (for activation skills only)
         // - Target must have specific "augmentable skill" ("all" versions aren't counted)
         enhance: function (src_card, skill) {
-            if (skill['id'] != 'enhance') return;
 
             var faction = skill['y'];
 
@@ -276,7 +274,6 @@ if (simulator_thread) {
         // - Targets allied damaged assaults
         // - Can be enhanced
         heal: function (src_card, skill) {
-            if (skill['id'] != 'heal') return;
 
             if (skill['coundown']) {
                 skill['coundown']--;
@@ -338,7 +335,6 @@ if (simulator_thread) {
         // - Must calculate enfeeble/protect
         // - Can be enhanced
         strike: function (src_card, skill) {
-            if (skill['id'] != 'strike') return;
 
             var faction = skill['y'];
 
@@ -429,7 +425,6 @@ if (simulator_thread) {
         // - Can be evaded
         // - If evaded, cooldown timer is not reset (tries again next turn)
         jam: function (src_card, skill) {
-            if (skill['id'] != 'jam') return;
 
             if (skill['coundown']) {
                 skill['coundown']--;
@@ -577,7 +572,6 @@ if (simulator_thread) {
         // - Can be evaded
         // - Can be augmented
         enfeeble: function (src_card, skill) {
-            if (skill['id'] != 'enfeeble') return;
 
             var faction = skill['y'];
 
@@ -629,7 +623,6 @@ if (simulator_thread) {
         // - Can be evaded
         // - Can be enhanced
         weaken: function (src_card, skill) {
-            if (skill['id'] != 'weaken') return;
 
             var faction = skill['y'];
 
@@ -690,7 +683,6 @@ if (simulator_thread) {
         // - Targets allied unjammed, active assaults
         // - Can be augmented
         rally: function (src_card, skill) {
-            if (skill['id'] != 'rally') return;
 
             var faction = skill['y'];
 
@@ -740,8 +732,6 @@ if (simulator_thread) {
         // - Can be augmented?
         legion: function (src_card, skill) {
 
-            if (skill['id'] != 'legion') return;
-
             var p = get_p(src_card);
             var field_p_assaults = field[p]['assaults'];
 
@@ -779,8 +769,6 @@ if (simulator_thread) {
         // - Targets self for each adjacent unjammed, active assault in specific faction
         // - Can be augmented?
         fervor: function (src_card, skill) {
-
-            if (skill['id'] != 'fervor') return;
 
             var p = get_p(src_card);
             var field_p_assaults = field[p]['assaults'];
@@ -829,8 +817,8 @@ if (simulator_thread) {
 
         var skills = src_card.skill;
 
-        for (var key in skills) {
-            var skill = skills[key];
+        for (var i = 0, len = skills.length; i < len; i++) {
+            var skill = skills[i];
             // Delegate to skill function
             activationSkills[skill.id](src_card, skill);
         }

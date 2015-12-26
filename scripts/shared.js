@@ -280,8 +280,8 @@ var MakeBattleground = (function () {
 }());
 
 function copy_skills_2(new_card, original_skills) {
-    new_card.skill = {};
-    new_card.empowerSkills = {};
+    new_card.skill = [];
+    new_card.empowerSkills = [];
     var reusable = true;
     for (var key in original_skills) {
         var newSkill = original_skills[key];
@@ -313,7 +313,7 @@ function setSkill_2(new_card, key, skill) {
         case 'fervor':
         case 'rally':
         case 'legion':
-            new_card.empowerSkills[key] = skill;
+            new_card.empowerSkills.push(skill);
             break;
         // Activation skills (can occur twice on a card)
         case 'enfeeble':
@@ -324,7 +324,7 @@ function setSkill_2(new_card, key, skill) {
         case 'protect':
         case 'strike':
         case 'weaken':
-            new_card.skill[key] = skill;
+            new_card.skill.push(skill);
             break;
         // All other skills
         case 'flurry':
@@ -1052,7 +1052,7 @@ function get_slim_card_by_id(unit, getDetails) {
         new_card.sub_type = undefined;
         new_card.level = undefined;
         new_card.maxLevel = undefined;
-        if (getSkills) new_card.skill = {};
+        if (getSkills) new_card.skill = [];
     } else {
         new_card.id = current_card.id;
         new_card.name = current_card.name;
