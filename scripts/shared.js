@@ -316,12 +316,13 @@ function setSkill_2(new_card, key, skill) {
             new_card.empowerSkills[key] = skill;
             break;
         // Activation skills (can occur twice on a card)
+        case 'enfeeble':
+        case 'enhance':
+        case 'frost':
+        case 'heal':
+        case 'jam':
         case 'protect':
         case 'strike':
-        case 'enhance':
-        case 'jam':
-        case 'heal':
-        case 'enfeeble':
         case 'weaken':
             new_card.skill[key] = skill;
             break;
