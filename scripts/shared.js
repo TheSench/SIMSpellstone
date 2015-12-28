@@ -64,12 +64,15 @@ function cloneCard(original) {
     copy.sub_type = original.sub_type;
     copy.set = original.set;
     // Passives
-    copy.armored = original.armored
+    copy.armored = original.armored;
+    copy.berserk = original.berserk;
     copy.burn = original.burn;
     copy.counter = original.counter;
     copy.evade = original.evade;
+    copy.leech = original.leech;
     copy.pierce = original.pierce;
     copy.poison = original.poison;
+    if (original.flurry) copy.flurry = copy_skill(original.flurry);
     // Other skills
     if (original.reusableSkills) {
         copy.skill = original.skill;
