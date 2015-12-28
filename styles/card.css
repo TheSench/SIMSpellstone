@@ -1,6 +1,7 @@
 ﻿.card {
     background: #FFF;
     border: 1px solid black;
+    border-radius: 4px;
     padding: 0px;
     margin: 0px;
     overflow: hidden;
@@ -64,13 +65,10 @@
 }
 
 .card-image {
-    background-image: url(Error.src);
     position: absolute;
-    top: 10px;
-    height: 80px;
+    height: 100%;
     width: 100%;
 }
-
 
     .card-image::after {
         position: absolute;
@@ -85,7 +83,29 @@
 img[src='Error.src'] {
     display: none;
 }
+.card-name {
+    position: absolute;
+    font-weight: bold;
+    white-space: nowrap;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
 
+    .card-name:hover {
+        overflow: inherit;
+        text-overflow: inherit;
+        white-space: inherit;
+        z-index: 100;
+        color: black;
+    text-shadow: none;
+        border-bottom: solid;
+        border-width: 1px;
+        background-color: #FFF;
+    }
+/*
 .card-name {
     position: absolute;
     font-weight: bold;
@@ -104,7 +124,7 @@ img[src='Error.src'] {
         white-space: inherit;
         z-index: 100;
     }
-
+    */
 .card-attack,
 .card-health,
 .card-delay,
@@ -164,10 +184,16 @@ img[src='Error.src'] {
 
 .card-skills-short {
     position: absolute;
-    bottom: 13px;
+    bottom: 0px;
     width: 100%;
+    height: 40px;
     text-align: center;
+    background-image: -webkit-gradient( linear, left bottom, left top, from(rgba(50,50,50,0.5)), to(rgba(80,80,80,0.0)), color-stop(0.4,#333333) );
 }
+
+    .card-skills-short img {
+        margin-top: 12px;
+    }
 
 .card-skills {
     visibility: hidden;
@@ -274,14 +300,14 @@ img {
     border-top-style: solid;
     border-bottom-style: solid;
     padding: 5px;
-    height: 100px;
+    height: 120px;
     margin-bottom: 5px;
 }
 
 .float-left .card {
     float: left;
-    width: 63px;
-    height: 100px;
+    width: 84px;
+    height: 120px;
     margin-right: 5px;
 }
 
