@@ -18,6 +18,17 @@ function draw_deck(deck) {
     cardSpace.appendChild(cards);
 }
 
+function draw_card_list(list) {
+    var cardSpace = document.getElementById("cardSpace");
+    cardSpace.innerHTML = '';
+    var cards = createDiv("float-left");
+    for (var i = 0, len = list.length; i < len; i++) {
+        var unit = get_card_by_id(list[i]);
+        cards.appendChild(create_card_html(unit, false));
+    }
+    cardSpace.appendChild(cards);
+}
+
 function draw_cards(drawableHand, performTurns, turn) {
     if (!drawableHand) drawableHand = [];
     var cardSpace = document.getElementById("cardSpace");

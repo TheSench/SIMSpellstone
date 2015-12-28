@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title id="title_tag">CardRetriever - Retrieve your deck from your browser!</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="styles/card.css">
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <!-- This script contains the cached data for cards, missions, quests, raids,
+        and battlegrounds -->
+    <script id="cards_script" type="text/javascript" src="cards/cache.js"></script>
+    <script id="shared_functions" type="text/javascript" src="scripts/shared.js"></script>
+    <script id="gui_script" type="text/javascript" src="scripts/cards_gui.js"></script>
+    <script id="cards_script" type="text/javascript" src="scripts/gui_script.js"></script>
+    <script id="gui_script" type="text/javascript" src="scripts/retrieve_deck.js"></script>
+    <script id="deckbuilder" type="text/javascript" src="scripts/deckbuilder.js"></script>
+
+</head>
+<body onload ="drawAllCards()">
+    <h1 id="version_label">Deck Builder</h1>
+    <br>
+    <span id="ui">
+        <form></form>
+    </span>
+    <br>
+    <span id="cardSpace"></span>
+    </body>
+</html>
