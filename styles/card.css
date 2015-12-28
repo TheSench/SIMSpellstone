@@ -1,7 +1,6 @@
 ﻿.card {
     background: #FFF;
-    border: 1px solid #AAA;
-    border-bottom: 3px solid #BBB;
+    border: 1px solid black;
     padding: 0px;
     margin: 0px;
     overflow: hidden;
