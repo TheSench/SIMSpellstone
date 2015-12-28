@@ -17,6 +17,7 @@ void Main()
 	List<unit> units = new List<unit>();
 
 	var pictures = new Dictionary<string, string>();
+	var notFound = new List<string>();
 
 	var unitNodes = doc.Descendants("unit");
 	foreach (var unitXML in unitNodes)
@@ -30,7 +31,7 @@ void Main()
 		}
 		else
 		{
-			unit.Dump();
+			notFound.Add(unit.name);
 		}
 	}
 
@@ -108,7 +109,6 @@ void Main()
 	var folder = @"C:\Users\jsen\Documents\Visual Studio 2013\Projects\SIMSpellstone\res\cardImages\";
 	pictures.Dump("Image URLs");
 	var client = new System.Net.WebClient();
-	var notFound = new List<string>();
 	foreach (var name in pictures.Keys)
 	{
 		var url1 = baseurl + name + ".png";
@@ -117,6 +117,8 @@ void Main()
 		var file2 = folder + name + ".jpg";
 		if (!File.Exists(file1) && !File.Exists(file2))
 		{
+			notFound.Add(name);
+			continue;
 			try
 			{
 				var url = "http://spellstone.wikia.com/wiki/" + pictures[name].Replace(" ", "%20");
@@ -127,28 +129,43 @@ void Main()
 				{
 					contents = reader.ReadToEnd();
 				}
-				html.Delete();
-				//contents.Dump();
 				var regex = new Regex("<meta property=\"og:image\" content=\"(.*" + name + ".*)\".*/>");
 				var matches = regex.Match(contents);
 				if (matches.Success)
 				{
+					html.Delete();
 					url = matches.Groups[1].Value;
-					client.DownloadFile(url, @"C:\Users\jsen\Documents\Visual Studio 2013\Projects\SIMSpellstone\res\cardImages\" + name);
+					var extension = (url.Contains(".jpg") ? ".jpg" : ".png");
+					client.DownloadFile(url, @"C:\Users\jsen\Documents\Visual Studio 2013\Projects\SIMSpellstone\res\cardImages\" + name + extension);
+				}
+				else
+				{
+					regex = new Regex("<meta property=\"og:image\" content=\"(http://vignette1.wikia.nocookie.net/spellstone/images.*)\".*/>");
+					matches = regex.Match(contents);
+					if (matches.Success)
+					{
+						html.Delete();
+						url = matches.Groups[1].Value;
+						var extension = (url.Contains(".jpg") ? ".jpg" : ".png");
+						client.DownloadFile(url, @"C:\Users\jsen\Documents\Visual Studio 2013\Projects\SIMSpellstone\res\cardImages\" + name + extension);
+					}
+					else
+					{
+					"Fail".Dump();
+					}
 				}
 				//client.DownloadFile(url1, file1);
-				break;
 			}
 			catch
-			{/*
+			{
 				try
 				{
 					client.DownloadFile(url1, file1);
 				}
 				catch
 				{
-					notFound.Add(name);
-				}*/
+					notFound.Add(name + " : " + pictures[name]);
+				}
 			}
 		}
 	}
@@ -295,6 +312,7 @@ public partial class unit
 	private string card_typeField;
 	private string nameField;
 	private string pictureField;
+	private string portraitField;
 	private string asset_bundleField;
 	private string attackField;
 	private string healthField;
@@ -330,8 +348,15 @@ public partial class unit
 	/// <remarks/>
 	public string picture
 	{
-		get { return this.pictureField; }
+		get { return this.pictureField ?? this.portraitField; }
 		set { this.pictureField = value; }
+	}
+
+	/// <remarks/>
+	public string portrait
+	{
+		get { return this.portraitField; }
+		set { this.portraitField = value; }
 	}
 
 	/// <remarks/>
