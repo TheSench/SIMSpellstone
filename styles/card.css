@@ -11,16 +11,39 @@
 
 .subfaction {
     position: absolute;
+    top: 12px;
+    left: 0%%;
+    margin: 1px 1px;
+    border-radius: 10px;
+    box-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.fusion-left {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin: 1px -14px;
+}
+
+.level {
+    position: absolute;
     bottom: 0px;
     left: 50%;
     margin: 1px -5px;
+}
+
+.fusion-right {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin: 1px 4px;
 }
 
 .wyld,
 .chaos,
 .aether {
     position: absolute;
-    min-height: 5px;
+    min-height: 10px;
     bottom: 0px;
     width: 100%;
     z-index: 0;
@@ -41,6 +64,13 @@
     background-color: #0099FF;
 }
 
+.card-image {
+    position: absolute;
+    top: 10px;
+    height: 80px;
+    width: 100%;
+}
+
 .card-name {
     position: absolute;
     font-weight: bold;
@@ -50,7 +80,7 @@
     border-bottom: solid;
     border-width: 1px;
     width: 100%;
-        background-color: #FFF;
+    background-color: #FFF;
 }
 
     .card-name:hover {
@@ -229,14 +259,14 @@ img {
     border-top-style: solid;
     border-bottom-style: solid;
     padding: 5px;
-    height: 80px;
+    height: 100px;
     margin-bottom: 5px;
 }
 
 .float-left .card {
     float: left;
     width: 60px;
-    height: 80px;
+    height: 100px;
     margin-right: 5px;
 }
 
