@@ -64,10 +64,26 @@
 }
 
 .card-image {
+    background-image: url(Error.src);
     position: absolute;
     top: 10px;
     height: 80px;
     width: 100%;
+}
+
+
+    .card-image::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: '';
+        background: lightgrey url('http://placehold.it/63x80');
+    }
+
+img[src='Error.src'] {
+    display: none;
 }
 
 .card-name {
