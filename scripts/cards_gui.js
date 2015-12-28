@@ -82,13 +82,15 @@ function draw_hand(hand, callback, state) {
 
 function create_card_html(card, inHand) {
     var htmlCard = createDiv("card");
-    var imageUrl = 'res/cardImages/' + card.picture + '.png';
-    if (false) {
-        var img = createImg(imageUrl);
-        htmlCard.appendChild(img);
-    } else {
-        htmlCard.style.backgroundImage = 'url("' + imageUrl + '")';
-        htmlCard.style.backgroundSize = "cover";
+    if (card.picture) {
+        var imageUrl = 'res/cardImages/' + card.picture + '.png';
+        if (false) {
+            var img = createImg(imageUrl);
+            htmlCard.appendChild(img);
+        } else {
+            htmlCard.style.backgroundImage = 'url("' + imageUrl + '")';
+            htmlCard.style.backgroundSize = "cover";
+        }
     }
     var divName = createDiv("card-name", card.name);
     htmlCard.appendChild(divName);
