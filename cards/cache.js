@@ -41910,6 +41910,7 @@ var CARDS = {
   "1": {
     "id": "1",
     "name": "Oda, Guardian",
+    "picture": "templeguardian",
     "rarity": "2",
     "set": "7000",
     "card_type": "1",
@@ -41949,6 +41950,7 @@ var CARDS = {
   "2": {
     "id": "2",
     "name": "Yuriel, Owl Mystic",
+    "picture": "owlmystic",
     "rarity": "3",
     "set": "7000",
     "card_type": "1",
@@ -42016,6 +42018,7 @@ var CARDS = {
   "3": {
     "id": "3",
     "name": "Samael",
+    "picture": "seraph",
     "rarity": "4",
     "set": "7000",
     "card_type": "1",
@@ -42107,6 +42110,7 @@ var CARDS = {
   "4": {
     "id": "4",
     "name": "Aria, Necromancer",
+    "picture": "necromancer",
     "rarity": "2",
     "set": "7000",
     "card_type": "1",
@@ -42146,6 +42150,7 @@ var CARDS = {
   "5": {
     "id": "5",
     "name": "Decim, the Firebringer",
+    "picture": "flamebender",
     "rarity": "3",
     "set": "7000",
     "card_type": "1",
@@ -42221,6 +42226,7 @@ var CARDS = {
   "6": {
     "id": "6",
     "name": "Tarian, Lich Lord",
+    "picture": "lichking",
     "rarity": "4",
     "set": "7000",
     "card_type": "1",
@@ -42313,6 +42319,7 @@ var CARDS = {
   "7": {
     "id": "7",
     "name": "Elyse, Ranger",
+    "picture": "elyse",
     "rarity": "2",
     "set": "7000",
     "card_type": "1",
@@ -42348,6 +42355,7 @@ var CARDS = {
   "8": {
     "id": "8",
     "name": "Commander Ursurio",
+    "picture": "bearcommander",
     "rarity": "3",
     "set": "7000",
     "card_type": "1",
@@ -42421,6 +42429,7 @@ var CARDS = {
   "9": {
     "id": "9",
     "name": "Groc the Hammer",
+    "picture": "groc",
     "rarity": "4",
     "set": "7000",
     "card_type": "1",
@@ -42503,6 +42512,7 @@ var CARDS = {
   "200": {
     "id": "200",
     "name": "Undead Horde",
+    "picture": "skeletonwarrior",
     "rarity": "2",
     "set": "9999",
     "card_type": "1",
@@ -42538,6 +42548,7 @@ var CARDS = {
   "201": {
     "id": "201",
     "name": "Wyld Wolf",
+    "picture": "wolf",
     "rarity": "2",
     "set": "9999",
     "card_type": "1",
@@ -42577,6 +42588,7 @@ var CARDS = {
   "202": {
     "id": "202",
     "name": "Elaria Captain",
+    "picture": "ranger",
     "rarity": "0",
     "set": "9999",
     "card_type": "1",
@@ -42589,6 +42601,7 @@ var CARDS = {
   "203": {
     "id": "203",
     "name": "Luminis Angel",
+    "picture": "angelknight",
     "rarity": "2",
     "set": "9999",
     "card_type": "1",
@@ -42654,6 +42667,7 @@ var CARDS = {
   "204": {
     "id": "204",
     "name": "Will O' Wisp",
+    "picture": "lightwisp",
     "rarity": "2",
     "set": "9999",
     "card_type": "1",
@@ -42718,6 +42732,7 @@ var CARDS = {
   "205": {
     "id": "205",
     "name": "Mermaid Augurer",
+    "picture": "mermaid",
     "rarity": "2",
     "set": "9999",
     "card_type": "1",
@@ -42766,6 +42781,7 @@ var CARDS = {
   "206": {
     "id": "206",
     "name": "Grim Titan",
+    "picture": "firetitan",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -42824,6 +42840,7 @@ var CARDS = {
   "207": {
     "id": "207",
     "name": "Void Assassin",
+    "picture": "invisibleassassin",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -42865,6 +42882,7 @@ var CARDS = {
   "208": {
     "id": "208",
     "name": "Void Minions",
+    "picture": "voidminions",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -42922,6 +42940,7 @@ var CARDS = {
   "209": {
     "id": "209",
     "name": "Orobas of the Void",
+    "picture": "balrog",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -42996,6 +43015,7 @@ var CARDS = {
   "210": {
     "id": "210",
     "name": "Lava Crab Gang",
+    "picture": "lavacrab",
     "rarity": "2",
     "set": "9999",
     "card_type": "1",
@@ -43066,6 +43086,7 @@ var CARDS = {
   "211": {
     "id": "211",
     "name": "Wraith Den",
+    "picture": "wraithden",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -43130,6 +43151,7 @@ var CARDS = {
   "212": {
     "id": "212",
     "name": "Caverns of Crossing",
+    "picture": "cavernsofcrossings",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -43188,6 +43210,7 @@ var CARDS = {
   "213": {
     "id": "213",
     "name": "Grand Hermit Malchior",
+    "picture": "grandexcavator",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -43284,6 +43307,7 @@ var CARDS = {
   "214": {
     "id": "214",
     "name": "Tremor Wurm",
+    "picture": "tremorwurm",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -43352,6 +43376,7 @@ var CARDS = {
   "215": {
     "id": "215",
     "name": "Void Abomination",
+    "picture": "void",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -43447,6 +43472,7 @@ var CARDS = {
   "216": {
     "id": "216",
     "name": "Trainee Elyse",
+    "picture": "elyse",
     "rarity": "2",
     "set": "9999",
     "card_type": "1",
@@ -43472,6 +43498,7 @@ var CARDS = {
   "217": {
     "id": "217",
     "name": "Trainee Oda",
+    "picture": "templeguardian",
     "rarity": "2",
     "set": "9999",
     "card_type": "1",
@@ -43497,6 +43524,7 @@ var CARDS = {
   "218": {
     "id": "218",
     "name": "Tainted Wolf",
+    "picture": "wolf",
     "rarity": "2",
     "set": "9999",
     "card_type": "1",
@@ -43552,6 +43580,7 @@ var CARDS = {
   "219": {
     "id": "219",
     "name": "Maniac General",
+    "picture": "maniacgeneral",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -43609,6 +43638,7 @@ var CARDS = {
   "220": {
     "id": "220",
     "name": "Voidlings",
+    "picture": "voidminions",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -43686,6 +43716,7 @@ var CARDS = {
   "221": {
     "id": "221",
     "name": "Alpha Wisp",
+    "picture": "lightwisp",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -43773,6 +43804,7 @@ var CARDS = {
   "222": {
     "id": "222",
     "name": "Titan Twins",
+    "picture": "firetitan",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -43829,6 +43861,7 @@ var CARDS = {
   "223": {
     "id": "223",
     "name": "Escaped Angel",
+    "picture": "angelknight",
     "rarity": "2",
     "set": "9999",
     "card_type": "1",
@@ -43860,6 +43893,7 @@ var CARDS = {
   "224": {
     "id": "224",
     "name": "Consumed Undead",
+    "picture": "skeletonwarrior",
     "rarity": "2",
     "set": "9999",
     "card_type": "1",
@@ -43891,6 +43925,7 @@ var CARDS = {
   "231": {
     "id": "231",
     "name": "Skeletal Army",
+    "picture": "skeletonwarrior",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -43953,6 +43988,7 @@ var CARDS = {
   "225": {
     "id": "225",
     "name": "Wasteland Wolf Pack",
+    "picture": "wolf",
     "rarity": "2",
     "set": "9999",
     "card_type": "1",
@@ -44014,6 +44050,7 @@ var CARDS = {
   "226": {
     "id": "226",
     "name": "Lost Lava Crab",
+    "picture": "lavacrab",
     "rarity": "2",
     "set": "9999",
     "card_type": "1",
@@ -44054,6 +44091,7 @@ var CARDS = {
   "227": {
     "id": "227",
     "name": "Wasteland Wraiths",
+    "picture": "wraithden",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -44134,6 +44172,7 @@ var CARDS = {
   "228": {
     "id": "228",
     "name": "Voidlings",
+    "picture": "voidminions",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -44194,6 +44233,7 @@ var CARDS = {
   "229": {
     "id": "229",
     "name": "Skeleton Familiar",
+    "picture": "skeletonwarrior",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -44256,6 +44296,7 @@ var CARDS = {
   "230": {
     "id": "230",
     "name": "Aria, Void Consumed",
+    "picture": "necromancer",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -44321,6 +44362,7 @@ var CARDS = {
   "232": {
     "id": "232",
     "name": "Frenzied Dragon",
+    "picture": "moltendragon",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -44392,6 +44434,7 @@ var CARDS = {
   "233": {
     "id": "233",
     "name": "Orobas, Raging Beast",
+    "picture": "balrog",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -44467,6 +44510,7 @@ var CARDS = {
   "234": {
     "id": "234",
     "name": "Decim, Flame Incarnate",
+    "picture": "flamebender",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -44532,6 +44576,7 @@ var CARDS = {
   "235": {
     "id": "235",
     "name": "Obsidian Claw",
+    "picture": "lavacrab",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -44591,6 +44636,7 @@ var CARDS = {
   "236": {
     "id": "236",
     "name": "Aerie Guardian",
+    "picture": "angelknight",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -44656,6 +44702,7 @@ var CARDS = {
   "237": {
     "id": "237",
     "name": "Kerlor, Ice Dragon",
+    "picture": "icedragon",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -44741,6 +44788,7 @@ var CARDS = {
   "238": {
     "id": "238",
     "name": "Lantern Guardian",
+    "picture": "lanternguardian",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -44823,6 +44871,7 @@ var CARDS = {
   "239": {
     "id": "239",
     "name": "Groc, Vault Ancient",
+    "picture": "groc",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -44900,6 +44949,7 @@ var CARDS = {
   "240": {
     "id": "240",
     "name": "Molten Crab",
+    "picture": "lavacrab",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -44953,6 +45003,7 @@ var CARDS = {
   "241": {
     "id": "241",
     "name": "Gold Monstrosity",
+    "picture": "goldelemental",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -45055,6 +45106,7 @@ var CARDS = {
   "242": {
     "id": "242",
     "name": "Coral Hunter",
+    "picture": "carl",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -45153,6 +45205,7 @@ var CARDS = {
   "243": {
     "id": "243",
     "name": "Windstorm Avatar",
+    "picture": "windstormelemental",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -45241,6 +45294,7 @@ var CARDS = {
   "244": {
     "id": "244",
     "name": "Celestial Grotto",
+    "picture": "cavernsofcrossings",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -45331,6 +45385,7 @@ var CARDS = {
   "245": {
     "id": "245",
     "name": "Vault Titan",
+    "picture": "firetitan",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -45455,6 +45510,7 @@ var CARDS = {
   "246": {
     "id": "246",
     "name": "Darkwater Mermaid",
+    "picture": "mermaid",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -45535,6 +45591,7 @@ var CARDS = {
   "247": {
     "id": "247",
     "name": "Canopy Hunter",
+    "picture": "canopyhunter",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -45613,6 +45670,7 @@ var CARDS = {
   "248": {
     "id": "248",
     "name": "Swamp Swarm",
+    "picture": "cavernsofcrossings",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -45688,6 +45746,7 @@ var CARDS = {
   "249": {
     "id": "249",
     "name": "Lone Frog Scout",
+    "picture": "frogscout",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -45748,6 +45807,7 @@ var CARDS = {
   "250": {
     "id": "250",
     "name": "Tainted Coral Elemental",
+    "picture": "carl",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -45816,6 +45876,7 @@ var CARDS = {
   "251": {
     "id": "251",
     "name": "Guardian  Wurm",
+    "picture": "tremorwurm",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -45880,6 +45941,7 @@ var CARDS = {
   "252": {
     "id": "252",
     "name": "Berserk Emperor",
+    "picture": "frogemperor",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -45964,6 +46026,7 @@ var CARDS = {
   "253": {
     "id": "253",
     "name": "Frostbite",
+    "picture": "Portrait_Frostbite",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -46075,6 +46138,7 @@ var CARDS = {
   "254": {
     "id": "254",
     "name": "Atlas",
+    "picture": "wyldguardian",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -46234,6 +46298,7 @@ var CARDS = {
   "255": {
     "id": "255",
     "name": "Solaron",
+    "picture": "aetherguardian",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -46381,6 +46446,7 @@ var CARDS = {
   "256": {
     "id": "256",
     "name": "Vulcanos",
+    "picture": "chaosguardian",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -46502,6 +46568,7 @@ var CARDS = {
   "257": {
     "id": "257",
     "name": "Golden Lava Lord",
+    "picture": "goldelemental",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -46594,6 +46661,7 @@ var CARDS = {
   "258": {
     "id": "258",
     "name": "Winterback Ape",
+    "picture": "wintercreature",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -46663,6 +46731,7 @@ var CARDS = {
   "259": {
     "id": "259",
     "name": "Iceback Dragon",
+    "picture": "icedragon",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -46744,6 +46813,7 @@ var CARDS = {
   "260": {
     "id": "260",
     "name": "Ice Abomination",
+    "picture": "winterbigbad",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -46855,6 +46925,7 @@ var CARDS = {
   "261": {
     "id": "261",
     "name": "Coldspirit Wisp",
+    "picture": "lightwisp",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -46915,6 +46986,7 @@ var CARDS = {
   "262": {
     "id": "262",
     "name": "Frostwhip Storm",
+    "picture": "windstormelemental",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -46989,6 +47061,7 @@ var CARDS = {
   "263": {
     "id": "263",
     "name": "Snow Assassin",
+    "picture": "invisibleassassin",
     "rarity": "2",
     "set": "9999",
     "card_type": "1",
@@ -47062,6 +47135,7 @@ var CARDS = {
   "264": {
     "id": "264",
     "name": "Vapor Hunters",
+    "picture": "winteradventurers",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
