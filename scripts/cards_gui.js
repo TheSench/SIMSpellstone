@@ -84,8 +84,9 @@ function create_card_html(card, inHand) {
     var htmlCard = createDiv("card");
     if (card.picture) {
         var imageUrl = 'res/cardImages/' + card.picture + '.png';
-        if (false) {
+        if (true) {
             var img = createImg(imageUrl);
+            img.className = "card-image";
             htmlCard.appendChild(img);
         } else {
             htmlCard.style.backgroundImage = 'url("' + imageUrl + '")';
@@ -140,6 +141,18 @@ function create_card_html(card, inHand) {
         var htmlSubfaction = getFactionIcon(card.sub_type);
         htmlSubfaction.className = "subfaction";
         htmlCard.appendChild(htmlSubfaction);
+    }
+    var htmlLevel = createImg('res/upgrades/' + "Level_" + card.rarity + "_" + card.level + ".png");
+    htmlLevel.className = "level";
+    htmlCard.appendChild(htmlLevel);
+    if (card.id > 9999) {
+        var fusion = ((card.id.toString()[0] == "1") ? "Dualfuse" : "Quadfuse");
+        var fusionLeft = createImg('res/upgrades/' + fusion + "_left.png");
+        fusionLeft.className = "fusion-left";
+        htmlCard.appendChild(fusionLeft);
+        var fusionRight = createImg('res/upgrades/' + fusion + "_right.png");
+        fusionRight.className = "fusion-right";
+        htmlCard.appendChild(fusionRight);
     }
     return htmlCard;
 }

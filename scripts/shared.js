@@ -1062,6 +1062,7 @@ function get_slim_card_by_id(unit, getDetails) {
     } else {
         new_card.id = current_card.id;
         new_card.name = current_card.name;
+        new_card.rarity = current_card.rarity;
         new_card.picture = current_card.picture;
         new_card.maxLevel = GetMaxLevel(current_card);
         if (unit.level) {
