@@ -16,14 +16,24 @@ void Main()
 	StringBuilder sbJSON = new StringBuilder();
 	List<unit> units = new List<unit>();
 
+	var pictures = new Dictionary<string, string>();
+
 	var unitNodes = doc.Descendants("unit");
 	foreach (var unitXML in unitNodes)
 	{
 		var stringReader = new StringReader(unitXML.ToString());
 		var unit = (unit)unitDeserializer.Deserialize(stringReader);
 		units.Add(unit);
+		if (unit.picture != null)
+		{
+			pictures[unit.picture] = unit.name;
+		}
+		else
+		{
+			unit.Dump();
+		}
 	}
-	
+
 	xmlFile = Path.Combine(path, "missions.xml");
 	doc = XDocument.Load(xmlFile);
 	var missions = doc.Descendants("mission").Select(node => new mission()
@@ -94,6 +104,55 @@ void Main()
 		writer.WriteLine("};");
 	}
 
+	var baseurl = @"http://spellstone.wikia.com/wiki/File:";
+	var folder = @"C:\Users\jsen\Documents\Visual Studio 2013\Projects\SIMSpellstone\res\cardImages\";
+	pictures.Dump("Image URLs");
+	var client = new System.Net.WebClient();
+	var notFound = new List<string>();
+	foreach (var name in pictures.Keys)
+	{
+		var url1 = baseurl + name + ".png";
+		var file1 = folder + name + ".png";
+		var url2 = baseurl + name + ".jpg";
+		var file2 = folder + name + ".jpg";
+		if (!File.Exists(file1) && !File.Exists(file2))
+		{
+			try
+			{
+				var url = "http://spellstone.wikia.com/wiki/" + pictures[name].Replace(" ", "%20");
+				var html = new FileInfo(folder + name + ".html");
+				client.DownloadFile(url, html.FullName);
+				string contents;
+				using (var reader = html.OpenText())
+				{
+					contents = reader.ReadToEnd();
+				}
+				html.Delete();
+				//contents.Dump();
+				var regex = new Regex("<meta property=\"og:image\" content=\"(.*" + name + ".*)\".*/>");
+				var matches = regex.Match(contents);
+				if (matches.Success)
+				{
+					url = matches.Groups[1].Value;
+					client.DownloadFile(url, @"C:\Users\jsen\Documents\Visual Studio 2013\Projects\SIMSpellstone\res\cardImages\" + name);
+				}
+				//client.DownloadFile(url1, file1);
+				break;
+			}
+			catch
+			{/*
+				try
+				{
+					client.DownloadFile(url1, file1);
+				}
+				catch
+				{
+					notFound.Add(name);
+				}*/
+			}
+		}
+	}
+	notFound.Dump("Not Found");
 }
 
 public enum FactionIDs
@@ -186,6 +245,7 @@ public partial class unit
 		sb.Append("  \"").Append(id).Append("\": {\r\n");
 		AppendEntryString(sb, "id", id, unitTabs);
 		AppendEntryString(sb, "name", name, unitTabs);
+		AppendEntryString(sb, "picture", picture, unitTabs);
 		AppendEntryString(sb, "rarity", rarity, unitTabs);
 		AppendEntryString(sb, "set", set, unitTabs);
 		AppendEntryString(sb, "card_type", card_type, unitTabs);

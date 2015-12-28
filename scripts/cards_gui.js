@@ -24,7 +24,7 @@ function draw_card_list(list) {
     var cards = createDiv("float-left");
     for (var i = 0, len = list.length; i < len; i++) {
         var unit = get_card_by_id(list[i]);
-        cards.appendChild(create_card_html(unit, false));
+        cards.appendChild(create_card_html(unit, true));
     }
     cardSpace.appendChild(cards);
 }
@@ -82,6 +82,14 @@ function draw_hand(hand, callback, state) {
 
 function create_card_html(card, inHand) {
     var htmlCard = createDiv("card");
+    var imageUrl = 'res/cardImages/' + card.picture + '.png';
+    if (false) {
+        var img = createImg(imageUrl);
+        htmlCard.appendChild(img);
+    } else {
+        htmlCard.style.backgroundImage = 'url("' + imageUrl + '")';
+        htmlCard.style.backgroundSize = "cover";
+    }
     var divName = createDiv("card-name", card.name);
     htmlCard.appendChild(divName);
     if (!card.isCommander()) {
@@ -94,7 +102,7 @@ function create_card_html(card, inHand) {
             else if (card.adjustedAttack() < card.attack) htmlAttack.classList.add("decreased");
         }
         htmlCard.appendChild(htmlAttack);
-        if (inHand) htmlCard.appendChild(createDiv("card-delay", card.cost));
+        if (inHand) htmlCard.appendChild(createDiv("hand-delay", card.cost));
         else if (card.timer) htmlCard.appendChild(createDiv("card-delay", card.timer));
     }
     if (inHand) {

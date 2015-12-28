@@ -86,6 +86,8 @@ var MakeAssault = (function () {
     var Card = function (original_card, unit_level) {
         this.id = original_card.id;
         this.name = original_card.name;
+        // TODO: Remove this
+        this.picture = original_card.picture;
         this.attack = original_card.attack;
         this.health = original_card.health;
         this.maxLevel = GetMaxLevel(original_card);
