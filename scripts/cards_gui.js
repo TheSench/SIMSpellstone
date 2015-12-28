@@ -116,13 +116,10 @@ function create_card_html(card, inHand) {
     htmlCard.appendChild(htmlHealth);
     var divSkills = createDiv("card-skills");
     var skillsShort = createDiv("card-skills-short");
-    var skills = card.skill;
-    for (var i in skills) {
-        var skill = skills[i];
-        divSkills.appendChild(getSkillHtml(skill, inHand));
-        divSkills.appendChild(document.createElement('br'));
-        skillsShort.appendChild(getSkillIcon(skill.id));
-    }
+    getPassiveSkills(divSkills, skillsShort, card, inHand);
+    getSkillsHtml(divSkills, skillsShort, card.skill, inHand);
+    if (empowerSkills) getSkillsHtml(divSkills, skillsShort, card.empowerSkills, inHand);
+    getTriggeredSkills(divSkills, skillsShort, card, inHand);
     htmlCard.appendChild(skillsShort);
     htmlCard.appendChild(divSkills);
     if (card.type > 0) {
@@ -145,6 +142,49 @@ function create_card_html(card, inHand) {
         htmlCard.appendChild(htmlSubfaction);
     }
     return htmlCard;
+}
+
+function getSkillsHtml(divSkills, skillsShort, skills, inHand) {
+    for (var i in skills) {
+        var skill = skills[i];
+        divSkills.appendChild(getSkillHtml(skill, inHand));
+        divSkills.appendChild(document.createElement('br'));
+        skillsShort.appendChild(getSkillIcon(skill.id));
+    }
+}
+
+function getPassiveSkills(divSkills, skillsShort, card, inHand)
+{
+    getNonActivatedSkill(divSkills, skillsShort, inHand, card, "evade");
+    getNonActivatedSkill(divSkills, skillsShort, inHand, card, "armored");
+    getNonActivatedSkill(divSkills, skillsShort, inHand, card, "counter");
+}
+
+function getTriggeredSkills(divSkills, skillsShort, card, inHand) {
+    getNonActivatedSkill(divSkills, skillsShort, inHand, card, "pierce");
+    getNonActivatedSkill(divSkills, skillsShort, inHand, card, "burn");
+    getNonActivatedSkill(divSkills, skillsShort, inHand, card, "poison");
+    getNonActivatedSkill(divSkills, skillsShort, inHand, card, "leech");
+    var flurry = card.flurry;
+    if (flurry) {
+        divSkills.appendChild(getSkillHtml(flurry, inHand));
+        divSkills.appendChild(document.createElement('br'));
+        skillsShort.appendChild(getSkillIcon(flurry.id));
+    }
+}
+
+function getNonActivatedSkill(divSkills, skillsShort, inHand, card, skillName)
+{
+    var value = card[skillName];
+    if (value) {
+        var skill = {
+            id: skillName,
+            x: value
+        };
+        divSkills.appendChild(getSkillHtml(skill, inHand));
+        divSkills.appendChild(document.createElement('br'));
+        skillsShort.appendChild(getSkillIcon(skill.id));
+    }
 }
 
 function getSkillHtml(skill, inHand) {
