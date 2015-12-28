@@ -79,7 +79,7 @@
         width: 100%;
         height: 100%;
         content: '';
-        background: lightgrey url('http://placehold.it/63x80');
+        background: lightgrey url('http://placehold.it/');
     }
 
 img[src='Error.src'] {
