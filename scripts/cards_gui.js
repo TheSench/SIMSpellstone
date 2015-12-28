@@ -118,7 +118,7 @@ function create_card_html(card, inHand) {
     var skillsShort = createDiv("card-skills-short");
     getPassiveSkills(divSkills, skillsShort, card, inHand);
     getSkillsHtml(divSkills, skillsShort, card.skill, inHand);
-    if (empowerSkills) getSkillsHtml(divSkills, skillsShort, card.empowerSkills, inHand);
+    if (card.empowerSkills) getSkillsHtml(divSkills, skillsShort, card.empowerSkills, inHand);
     getTriggeredSkills(divSkills, skillsShort, card, inHand);
     htmlCard.appendChild(skillsShort);
     htmlCard.appendChild(divSkills);
