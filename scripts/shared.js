@@ -52,6 +52,7 @@ function cloneCard(original) {
     copy.__proto__ = original.__proto__;
     copy.id = original.id;
     copy.name = original.name;
+    copy.picture = original.picture;
     copy.attack = original.attack;
     copy.health = original.health;
     copy.maxLevel = original.maxLevel;
@@ -1058,6 +1059,7 @@ function get_slim_card_by_id(unit, getDetails) {
     } else {
         new_card.id = current_card.id;
         new_card.name = current_card.name;
+        new_card.picture = current_card.picture;
         new_card.maxLevel = GetMaxLevel(current_card);
         if (unit.level) {
             new_card.level = unit.level;
