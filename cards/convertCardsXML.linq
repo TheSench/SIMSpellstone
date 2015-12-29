@@ -6,6 +6,7 @@ static HashSet<string> g_unitIDs;
 
 void Main()
 {
+	var getImages = false;
 	g_unitIDs = new HashSet<string>();
 	var path = Path.GetDirectoryName(Util.CurrentQueryPath);
 	var xmlFile = Path.Combine(path, "cards.xml");
@@ -31,7 +32,7 @@ void Main()
 		}
 		else
 		{
-			notFound.Add(unit.name);
+			notFound.Add(unit.name + "(NO IMAGE)");
 		}
 	}
 
@@ -105,9 +106,11 @@ void Main()
 		writer.WriteLine("};");
 	}
 
+	if(!getImages) return;
+	
 	var baseurl = @"http://spellstone.wikia.com/wiki/File:";
 	var folder = @"C:\Users\jsen\Documents\Visual Studio 2013\Projects\SIMSpellstone\res\cardImages\";
-	pictures.Dump("Image URLs");
+	//pictures.Dump("Image URLs");
 	var client = new System.Net.WebClient();
 	foreach (var name in pictures.Keys)
 	{
@@ -115,13 +118,17 @@ void Main()
 		var file1 = folder + name + ".png";
 		var url2 = baseurl + name + ".jpg";
 		var file2 = folder + name + ".jpg";
-		if (!File.Exists(file1) && !File.Exists(file2))
+		if (!File.Exists(file1))
 		{
-			notFound.Add(name);
-			continue;
+			if (name.EndsWith("_A") || name.EndsWith("_B") || name.EndsWith("_C"))
+			{
+				notFound.Add(name);
+				continue;
+			}
+			name.Dump();
 			try
 			{
-				var url = "http://spellstone.wikia.com/wiki/" + pictures[name].Replace(" ", "%20");
+				var url = "http://spellstone.wikia.com/wiki/File:Portrait_" + name + ".png";
 				var html = new FileInfo(folder + name + ".html");
 				client.DownloadFile(url, html.FullName);
 				string contents;
@@ -313,6 +320,7 @@ public partial class unit
 	private string nameField;
 	private string pictureField;
 	private string portraitField;
+	private string asset_prefabField;
 	private string asset_bundleField;
 	private string attackField;
 	private string healthField;
@@ -348,8 +356,14 @@ public partial class unit
 	/// <remarks/>
 	public string picture
 	{
-		get { return this.pictureField ?? this.portraitField; }
+		get { return this.pictureField ?? this.portraitField ?? this.asset_prefabField; }
 		set { this.pictureField = value; }
+	}
+
+	public string asset_prefab
+	{
+		get { return this.asset_prefabField; }
+		set { this.asset_prefabField = value; }
 	}
 
 	/// <remarks/>
