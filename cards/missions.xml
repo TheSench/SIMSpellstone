@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <root>
 <!-- Feature Locking Based on Mission Completion -->
 	<feature_lock>
@@ -70,19 +71,19 @@
 		<id>11</id>
 		<name>One Small Step</name>
 		<energy>1</energy>
-		<commander id="216"/>
+		<commander id='216' />
 		<desc>With the advent of crystal expeditions, new adventurers are needed to contain and fight the creatures that break out of these ancient Spellstones. You've traveled to Elaria for just that purpose.</desc>
 		<deck>
-			<card id="1600"/>
-			<card id="1600"/>
-			<card id="1600"/>
-			<card mastery_level="2" id="1601"/>
-			<card mastery_level="2" id="1601"/>
-			<card mastery_level="3" id="1601"/>
-			<card mastery_level="3" id="1603"/>
-			<card mastery_level="3" id="1603"/>
-			<card mastery_level="3" id="1606"/>
-			<card mastery_level="3" id="1601" level="3"/>
+			<card id='1600' />
+			<card id='1600' />
+			<card id='1600' />
+			<card mastery_level='2' id='1601' />
+			<card mastery_level='2' id='1601' />
+			<card mastery_level='3' id='1601' />
+			<card mastery_level='3' id='1603' />
+			<card mastery_level='3' id='1603' />
+			<card mastery_level='3' id='1606' />
+			<card mastery_level='3' id='1601' level='3' />
 		</deck>
 	</mission>
 	
@@ -90,7 +91,7 @@
 		<id>12</id>
 		<name>Guardian's Training</name>
 		<energy>1</energy>
-		<commander id="217"/>
+		<commander id='217' />
 		<desc>You've met up with a Captain of the Elaria expedition on your arrival. He's offered to team up with you to help train on your quest for the Heart of Blue Fire, but others aren't as thrilled.</desc>
 		<speech>
 			<line>
@@ -108,16 +109,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1000"/>
-			<card id="1000"/>
-			<card id="1000"/>
-			<card mastery_level="2" id="1001"/>
-			<card mastery_level="2" id="1001"/>
-			<card mastery_level="2" id="1601"/>
-			<card mastery_level="3" id="1601"/>
-			<card mastery_level="3" id="1603"/>
-			<card mastery_level="3" id="1005"/>
-			<card mastery_level="3" id="1005"/>
+			<card id='1000' />
+			<card id='1000' />
+			<card id='1000' />
+			<card mastery_level='2' id='1001' />
+			<card mastery_level='2' id='1001' />
+			<card mastery_level='2' id='1601' />
+			<card mastery_level='3' id='1601' />
+			<card mastery_level='3' id='1603' />
+			<card mastery_level='3' id='1005' />
+			<card mastery_level='3' id='1005' />
 		</deck>
 	</mission>
 	
@@ -125,7 +126,7 @@
 		<id>13</id>
 		<name>Undead Emerge</name>
 		<energy>1</energy>
-		<commander id="200"/>
+		<commander id='200' />
 		<desc>A band of undead have wandered into the camp, causing mayhem. You spot a traveler's pack amongst them. An unfortunate merchant seems to be trapped!</desc>
 		<speech>
 			<line>
@@ -156,16 +157,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1300"/>
-			<card id="1300"/>
-			<card id="1300"/>
-			<card mastery_level="2" id="1300" level="2"/>
-			<card mastery_level="2" id="1300" level="2"/>
-			<card mastery_level="2" id="1302"/>
-			<card mastery_level="3" id="1302"/>
-			<card mastery_level="3" id="1303"/>
-			<card mastery_level="3" id="1305"/>
-			<card mastery_level="3" id="1313"/>
+			<card id='1300' />
+			<card id='1300' />
+			<card id='1300' />
+			<card mastery_level='2' id='1300' level='2'/>
+			<card mastery_level='2' id='1300' level='2'/>
+			<card mastery_level='2' id='1302' />
+			<card mastery_level='3' id='1302' />
+			<card mastery_level='3' id='1303' />
+			<card mastery_level='3' id='1305' />
+			<card mastery_level='3' id='1313' />
 		</deck>
 	</mission>
 
@@ -173,7 +174,7 @@
 		<id>14</id>
 		<name>Bury the Dead</name>
 		<energy>1</energy>
-		<commander id="200" level="1"/>
+		<commander id='200' level='1' />
 		<desc>The undead have been rounded up, but some still struggle! Finish them off and keep the researchers safe!</desc>
 		<speech>
 			<line>
@@ -186,16 +187,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1300"/>
-			<card id="1300"/>
-			<card id="1300"/>
-			<card id="1302"/>
-			<card mastery_level="2" id="1301"/>
-			<card mastery_level="2" id="1302"/>
-			<card mastery_level="3" id="1302"/>
-			<card mastery_level="3" id="1303"/>
-			<card mastery_level="3" id="1305"/>
-			<card mastery_level="3" id="1313"/>
+			<card id='1300' />
+			<card id='1300' />
+			<card id='1300' />
+			<card id='1302' />
+			<card mastery_level='2' id='1301' />
+			<card mastery_level='2' id='1302' />
+			<card mastery_level='3' id='1302' />
+			<card mastery_level='3' id='1303' />
+			<card mastery_level='3' id='1305' />
+			<card mastery_level='3' id='1313' />
 		</deck>
 	</mission>
 
@@ -204,7 +205,7 @@
 		<id>21</id>
 		<name>Armored Up!</name>
 		<energy>1</energy>
-		<commander id="217"/>
+		<commander id='217' />
 		<desc>With the undead taken care of, the captain has brought you to a new section of the camp. Here you come across Oda once more, deep in meditation.</desc>
 		<speech>
 			<line>
@@ -218,16 +219,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1001"/>
-			<card id="1001"/>
-			<card id="1000"/>
-			<card id="1000"/>
-			<card mastery_level="2" id="1001" level="2"/>
-			<card mastery_level="2" id="1601"/>
-			<card mastery_level="3" id="1006"/>
-			<card mastery_level="3" id="1615"/>
-			<card mastery_level="3" id="1014"/>
-			<card mastery_level="3" id="1011"/>
+			<card id='1001' />
+			<card id='1001' />
+			<card id='1000' />
+			<card id='1000' />
+			<card mastery_level='2' id='1001' level='2' />
+			<card mastery_level='2' id='1601' />
+			<card mastery_level='3' id='1006' />
+			<card mastery_level='3' id='1615' />
+			<card mastery_level='3' id='1014' />
+			<card mastery_level='3' id='1011' />
 		</deck>
 	</mission>
 	
@@ -235,7 +236,7 @@
 		<id>22</id>
 		<name>The Buried Cache</name>
 		<energy>1</energy>
-		<commander id="217"/>
+		<commander id='217' />
 		<desc>The Captain takes you near the excavation. Near the bottom of the site you can see the top of what looks to be a massive chest.</desc>
 		<speech>
 			<line>
@@ -253,16 +254,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1001"/>
-			<card id="1001" level="2"/>
-			<card id="1001" level="2"/>
-			<card id="1000"/>
-			<card mastery_level="2" id="1600" level="3"/>
-			<card mastery_level="2" id="1001" level="2"/>
-			<card mastery_level="3" id="1006"/>
-			<card mastery_level="3" id="1014"/>
-			<card mastery_level="3" id="1619"/>
-			<card mastery_level="3" id="1011"/>
+			<card id='1001' />
+			<card id='1001' level='2' />
+			<card id='1001' level='2' />
+			<card id='1000' />
+			<card mastery_level='2' id='1600' level='3' />
+			<card mastery_level='2' id='1001' level='2' />
+			<card mastery_level='3' id='1006' />
+			<card mastery_level='3' id='1014' />
+			<card mastery_level='3' id='1619' />
+			<card mastery_level='3' id='1011' />
 		</deck>
 	</mission>
 	
@@ -270,7 +271,7 @@
 		<id>23</id>
 		<name>Scourge</name>
 		<energy>1</energy>
-		<commander id="200"/>
+		<commander id='200' />
 		<desc>While you were training with the captain and Oda, undead swarmed out of the forest and invaded the camp. They seem to be focusing on the buried cache.</desc>
 		<speech>
 			<line>
@@ -284,16 +285,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1300"/>
-			<card id="1300"/>
-			<card id="1300" level="2"/>
-			<card id="1300" level="2"/>
-			<card mastery_level="2" id="1300" level="2"/>
-			<card mastery_level="2" id="1302"/>
-			<card mastery_level="2" id="1302"/>
-			<card mastery_level="3" id="1303"/>
-			<card mastery_level="3" id="1305"/>
-			<card mastery_level="3" id="1315"/>
+			<card id='1300' />
+			<card id='1300' />
+			<card id='1300' level='2' />
+			<card id='1300' level='2' />
+			<card mastery_level='2' id='1300' level='2' />
+			<card mastery_level='2' id='1302' />
+			<card mastery_level='2' id='1302' />
+			<card mastery_level='3' id='1303' />
+			<card mastery_level='3' id='1305' />
+			<card mastery_level='3' id='1315' />
 		</deck>
 	</mission>
 
@@ -301,7 +302,7 @@
 		<id>24</id>
 		<name>Savior</name>
 		<energy>1</energy>
-		<commander id="200"/>
+		<commander id='200' />
 		<desc>A group of researchers has been cornered by a shambling band of skeleton warriors. Help the captain defeat the undead and get to them.</desc>
 		<speech>
 			<line>
@@ -314,16 +315,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1300"/>
-			<card id="1300"/>
-			<card id="1300" level="2"/>
-			<card id="1300" level="2"/>
-			<card id="1302"/>
-			<card mastery_level="2" id="1300" level="2"/>
-			<card mastery_level="2" id="1302"/>
-			<card mastery_level="3" id="1303"/>
-			<card mastery_level="3" id="1305"/>
-			<card mastery_level="3" id="1315"/>
+			<card id='1300' />
+			<card id='1300' />
+			<card id='1300' level='2' />
+			<card id='1300' level='2' />
+			<card id='1302' />
+			<card mastery_level='2' id='1300' level='2' />
+			<card mastery_level='2' id='1302' />
+			<card mastery_level='3' id='1303' />
+			<card mastery_level='3' id='1305' />
+			<card mastery_level='3' id='1315' />
 		</deck>
 	</mission>
 	
@@ -331,7 +332,7 @@
 		<id>31</id>
 		<name>Protecting the Tools</name>
 		<energy>1</energy>
-		<commander id="200"/>
+		<commander id='200' />
 		<desc>The undead are using lightning to destroy the excavation tools. Clear them out before they make it impossible to harvest crystals!</desc>
 		<speech>
 			<line>
@@ -344,16 +345,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1300"/>
-			<card id="1300"/>
-			<card id="1301"/>
-			<card id="1301"/>
-			<card id="1301"/>
-			<card mastery_level="2" id="1302"/>
-			<card mastery_level="2" id="1303"/>
-			<card mastery_level="2" id="1305"/>
-			<card mastery_level="3" id="1314"/>
-			<card mastery_level="3" id="1314"/>
+			<card id='1300' />
+			<card id='1300' />
+			<card id='1301' />
+			<card id='1301' />
+			<card id='1301' />
+			<card mastery_level='2' id='1302' />
+			<card mastery_level='2' id='1303' />
+			<card mastery_level='2' id='1305' />
+			<card mastery_level='3' id='1314' />
+			<card mastery_level='3' id='1314' />
 		</deck>
 	</mission>
 	
@@ -361,7 +362,7 @@
 		<id>32</id>
 		<name>Collateral Damage</name>
 		<energy>1</energy>
-		<commander id="200"/>
+		<commander id='200' />
 		<desc>The undead have broken through our southern defenses and are pouring into the barracks. Stop them before they reach the defenseless researchers of the expedition.</desc>
 		<speech>
 			<line>
@@ -378,16 +379,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1300"/>
-			<card id="1300" level="2"/>
-			<card id="1300" level="2"/>
-			<card id="1301"/>
-			<card id="1301"/>
-			<card mastery_level="2" id="1302"/>
-			<card mastery_level="2" id="1303"/>
-			<card mastery_level="2" id="1305"/>
-			<card mastery_level="3" id="1319"/>
-			<card mastery_level="3" id="1319"/>
+			<card id='1300' />
+			<card id='1300' level='2' />
+			<card id='1300' level='2' />
+			<card id='1301' />
+			<card id='1301' />
+			<card mastery_level='2' id='1302' />
+			<card mastery_level='2' id='1303' />
+			<card mastery_level='2' id='1305' />
+			<card mastery_level='3' id='1319' />
+			<card mastery_level='3' id='1319' />
 		</deck>
 	</mission>
 	
@@ -395,7 +396,7 @@
 		<id>33</id>
 		<name>Shattering</name>
 		<energy>1</energy>
-		<commander id="223"/>
+		<commander id='223' />
 		<veffect>1</veffect>
 		<desc>The flame spirits have set fire to much of the lower camp. A number of Spellstones the researchers were studying have been shattered, releasing the creatures within.</desc>
 		<speech>
@@ -409,16 +410,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1000"/>
-			<card id="1300" level="2"/>
-			<card id="1001"/>
-			<card id="1301"/>
-			<card id="1301"/>
-			<card mastery_level="2" id="1003"/>
-			<card mastery_level="2" id="1004"/>
-			<card mastery_level="2" id="1305"/>
-			<card mastery_level="3" id="1313"/>
-			<card mastery_level="3" id="1313"/>
+			<card id='1000' />
+			<card id='1300' level='2' />
+			<card id='1001' />
+			<card id='1301' />
+			<card id='1301' />
+			<card mastery_level='2' id='1003' />
+			<card mastery_level='2' id='1004' />
+			<card mastery_level='2' id='1305' />
+			<card mastery_level='3' id='1313' />
+			<card mastery_level='3' id='1313' />
 		</deck>
 	</mission>
 
@@ -426,7 +427,7 @@
 		<id>34</id>
 		<name>Missing Cache?!</name>
 		<energy>2</energy>
-		<commander id="223"/>
+		<commander id='223' />
 		<veffect>1</veffect>
 		<desc>The undead, angels, and pegasus are now running wild in the camp! To make matters worse, the buried cache has disappeared in the chaos!</desc>
 		<speech>
@@ -440,16 +441,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1000"/>
-			<card id="1000" level="2"/>
-			<card id="1301"/>
-			<card id="1001"/>
-			<card id="1302"/>
-			<card mastery_level="2" id="1302"/>
-			<card mastery_level="2" id="1303"/>
-			<card mastery_level="2" id="1005"/>
-			<card mastery_level="3" id="1015"/>
-			<card mastery_level="3" id="1015"/>
+			<card id='1000' />
+			<card id='1000' level='2' />
+			<card id='1301' />
+			<card id='1001' />
+			<card id='1302' />
+			<card mastery_level='2' id='1302' />
+			<card mastery_level='2' id='1303' />
+			<card mastery_level='2' id='1005' />
+			<card mastery_level='3' id='1015' />
+			<card mastery_level='3' id='1015' />
 		</deck>
 	</mission>
 	
@@ -457,7 +458,7 @@
 		<id>41</id>
 		<name>Push Them Back</name>
 		<energy>1</energy>
-		<commander id="224"/>
+		<commander id='224' />
 		<veffect>1</veffect>
 		<desc>The undead still come from the woods, and they bring a corruption with them that poisons the land. Push them back and hold that bridge before it is too late!</desc>
 		<speech>
@@ -467,15 +468,15 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1300" level="2"/>
-			<card id="1300" level="2"/>
-			<card id="1302"/>
-			<card id="1302"/>
-			<card id="1305"/>
-			<card mastery_level="2" id="1305"/>
-			<card mastery_level="2" id="1303"/>
-			<card mastery_level="2" id="1314"/>
-			<card mastery_level="3" id="1318"/>
+			<card id='1300' level='2' />
+			<card id='1300' level='2' />
+			<card id='1302' />
+			<card id='1302' />
+			<card id='1305' />
+			<card mastery_level='2' id='1305' />
+			<card mastery_level='2' id='1303' />
+			<card mastery_level='2' id='1314' />
+			<card mastery_level='3' id='1318' />
 		</deck>
 	</mission>
 	
@@ -483,20 +484,20 @@
 		<id>42</id>
 		<name>Bottleneck</name>
 		<energy>1</energy>
-		<commander id="224"/>
+		<commander id='224' />
 		<veffect>1</veffect>
 		<desc>The undead have been bottlenecked at the bridge, but something is driving them forward with unnatural force. Defeat them here and find out who is behind this attack!</desc>
 		<deck>
-			<card id="1300" level="2"/>
-			<card id="1302" level="2"/>
-			<card id="1302" level="2"/>
-			<card id="1302" level="2"/>
-			<card id="1305"/>
-			<card id="1305"/>
-			<card mastery_level="2" id="1305"/>
-			<card mastery_level="2" id="1303"/>
-			<card mastery_level="2" id="1314"/>
-			<card mastery_level="3" id="1318"/>
+			<card id='1300' level='2' />
+			<card id='1302' level='2' />
+			<card id='1302' level='2' />
+			<card id='1302' level='2' />
+			<card id='1305' />
+			<card id='1305' />
+			<card mastery_level='2' id='1305' />
+			<card mastery_level='2' id='1303' />
+			<card mastery_level='2' id='1314' />
+			<card mastery_level='3' id='1318' />
 		</deck>
 	</mission>
 	
@@ -504,7 +505,7 @@
 		<id>43</id>
 		<name>The Bridge</name>
 		<energy>1</energy>
-		<commander id="224"/>
+		<commander id='224' />
 		<veffect>1</veffect>
 		<desc>You've broken through the ranks of the undead, but they still pour over from the far side. A scout has spotted a cloaked figure on the bridge.</desc>
 		<speech>
@@ -514,16 +515,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1300" level="3"/>
-			<card id="1301"/>
-			<card id="1302" level="2"/>
-			<card id="1302" level="2"/>
-			<card id="1305"/>
-			<card id="1305"/>
-			<card mastery_level="2" id="1305"/>
-			<card mastery_level="2" id="1303"/>
-			<card mastery_level="2" id="1317"/>
-			<card mastery_level="3" id="1318"/>
+			<card id='1300' level='3' />
+			<card id='1301' />
+			<card id='1302' level='2' />
+			<card id='1302' level='2' />
+			<card id='1305' />
+			<card id='1305' />
+			<card mastery_level='2' id='1305' />
+			<card mastery_level='2' id='1303' />
+			<card mastery_level='2' id='1317' />
+			<card mastery_level='3' id='1318' />
 		</deck>
 	</mission>
 	
@@ -531,7 +532,7 @@
 		<id>44</id>
 		<name>The Necromancer</name>
 		<energy>1</energy>
-		<commander id="4"/>
+		<commander id='4' />
 		<veffect>1</veffect>
 		<desc>You've found a Chaos mage that has been controlling the undead from behind the scenes! Confront her on the bridge and defeat them!</desc>
 		<speech>
@@ -543,16 +544,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1300"/>
-			<card id="1300" level="2"/>
-			<card id="1301"/>
-			<card id="1302"/>
-			<card id="1302" level="2"/>
-			<card id="1305"/>
-			<card id="1303"/>
-			<card mastery_level="2" id="1317"/>
-			<card mastery_level="2" id="1311"/>
-			<card mastery_level="3" id="1311"/>
+			<card id='1300' />
+			<card id='1300' level='2' />
+			<card id='1301' />
+			<card id='1302' />
+			<card id='1302' level='2' />
+			<card id='1305' />
+			<card id='1303' />
+			<card mastery_level='2' id='1317' />
+			<card mastery_level='2' id='1311' />
+			<card mastery_level='3' id='1311' />
 		</deck>
 	</mission>
 	
@@ -560,7 +561,7 @@
 		<id>51</id>
 		<name>Into the Woods!</name>
 		<energy>1</energy>
-		<commander id="201"/>
+		<commander id='201' />
 		<desc>With Aria defeated, the undead are now wandering aimlessly with no direction at all. To make matters worse, the cache is still missing!</desc>
 		<speech>
 			<line>
@@ -569,16 +570,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1600" level="2"/>
-			<card id="1601" level="2"/>
-			<card id="1603"/>
-			<card id="1603"/>
-			<card id="1603"/>
-			<card id="1603" level="2"/>
-			<card id="1603" level="2"/>
-			<card id="1606"/>
-			<card id="1606"/>
-			<card mastery_level="2" id="1615"/>
+			<card id='1600' level='2' />
+			<card id='1601' level='2' />
+			<card id='1603' />
+			<card id='1603' />
+			<card id='1603' />
+			<card id='1603' level='2' />
+			<card id='1603' level='2' />
+			<card id='1606' />
+			<card id='1606' />
+			<card mastery_level='2' id='1615' />
 			<!-- <card mastery_level='2' id='1014' />
 			<card mastery_level='3' id='1012' /> -->
 		</deck>
@@ -588,7 +589,7 @@
 		<id>52</id>
 		<name>The Wyldwood</name>
 		<energy>1</energy>
-		<commander id="201"/>
+		<commander id='201' />
 		<desc>The undead are scattered through the nearby trees. You enter the Wyldwood, but get the feeling that you are being... watched.</desc>
 		<speech>
 			<line>
@@ -601,16 +602,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1601" level="2"/>
-			<card id="1603" level="2"/>
-			<card id="1603"/>
-			<card id="1603"/>
-			<card id="1603" level="2"/>
-			<card id="1603" level="2"/>
-			<card id="1606"/>
-			<card id="1607"/>
-			<card id="1607"/>
-			<card mastery_level="2" id="1012"/>
+			<card id='1601' level='2' />
+			<card id='1603' level='2' />
+			<card id='1603' />
+			<card id='1603' />
+			<card id='1603' level='2' />
+			<card id='1603' level='2' />
+			<card id='1606' />
+			<card id='1607' />
+			<card id='1607' />
+			<card mastery_level='2' id='1012' />
 			<!-- <card mastery_level='2' id='1619' />
 			<card mastery_level='3' id='1019' />-->
 		</deck>
@@ -620,23 +621,23 @@
 		<id>53</id>
 		<name>Thick Bramble</name>
 		<energy>1</energy>
-		<commander id="201"/>
+		<commander id='201' />
 		<desc>The canopy above you grows tighter and the shadows darker. As you try to track the remaining undead, you start to feel uneasy.</desc>
 			<line>
 				<commander>necromancer</commander>
 				<text>Did I really attack the expedition? My memory is foggy...</text>
 			</line>
 		<deck>
-			<card id="1601" level="2"/>
-			<card id="1603" level="2"/>
-			<card id="1604"/>
-			<card id="1604" level="2"/>
-			<card id="1605"/>
-			<card id="1606"/>
-			<card id="1606"/>
-			<card id="1607"/>
-			<card id="1607"/>
-			<card id="1002"/>
+			<card id='1601' level='2' />
+			<card id='1603' level='2' />
+			<card id='1604' />
+			<card id='1604' level='2' />
+			<card id='1605' />
+			<card id='1606' />
+			<card id='1606' />
+			<card id='1607' />
+			<card id='1607' />
+			<card id='1002' />
 			<!-- <card mastery_level='2' id='1606' level='2' />
 			<card mastery_level='3' id='1011' />-->
 		</deck>
@@ -646,7 +647,7 @@
 		<id>54</id>
 		<name>Nature's Heart</name>
 		<energy>1</energy>
-		<commander id="201"/>
+		<commander id='201' />
 		<desc>In the deepest part of the woods you come across a stranger fighting against immense beasts. You rush to his side to help.</desc>
 		<speech>
 			<line>
@@ -667,16 +668,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1601" level="2"/>
-			<card id="1601" level="2"/>
-			<card id="1601" level="2"/>
-			<card id="1603" level="2"/>
-			<card id="1603" level="2"/>
-			<card id="1604"/>
-			<card id="1604"/>
-			<card id="1607"/>
-			<card id="1607"/>
-			<card id="1607"/>
+			<card id='1601' level='2' />
+			<card id='1601' level='2' />
+			<card id='1601' level='2' />
+			<card id='1603' level='2' />
+			<card id='1603' level='2' />
+			<card id='1604' />
+			<card id='1604' />
+			<card id='1607' />
+			<card id='1607' />
+			<card id='1607' />
 			<!-- <card mastery_level='2' id='1015' />
 			<card mastery_level='3' id='1616' /> -->
 		</deck>
@@ -686,7 +687,7 @@
 		<id>61</id>
 		<name>Wind in the Woods</name>
 		<energy>2</energy>
-		<commander id="201"/>
+		<commander id='201' />
 		<desc>As you leave the deepest part of the woods, the wind starts to pick up between the trees. As you come to a clearing, you are attacked by some cyclone elementals.</desc>
 		<speech>
 			<line>
@@ -695,16 +696,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1000" level="2"/>
-			<card id="1600" level="2"/>
-			<card id="1601"/>
-			<card id="1601" level="2"/>
-			<card id="1601" level="2"/>
-			<card id="1002" level="2"/>
-			<card id="1002" level="2"/>
-			<card id="1002" level="2"/>
-			<card id="1302"/>
-			<card id="1311"/>
+			<card id='1000' level='2' />
+			<card id='1600' level='2' />
+			<card id='1601' />
+			<card id='1601' level='2'/>
+			<card id='1601' level='2'/>
+			<card id='1002' level='2' />
+			<card id='1002' level='2' />
+			<card id='1002' level='2' />
+			<card id='1302' />
+			<card id='1311' />
 		</deck>
 	</mission>
 	
@@ -712,19 +713,19 @@
 		<id>62</id>
 		<name>Branching Paths</name>
 		<energy>2</energy>
-		<commander id="201"/>
+		<commander id='201' />
 		<desc>As you leave the deepest part of the woods, you come upon a branching pathway. It appears as if something large was dragged through the soil here recently.</desc>
 		<deck>
-			<card id="1000" level="2"/>
-			<card id="1600" level="2"/>
-			<card id="1601" level="2"/>
-			<card id="1001" level="2"/>
-			<card id="1002" level="2"/>
-			<card id="1002" level="2"/>
-			<card id="1002" level="2"/>
-			<card id="1002" level="2"/>
-			<card id="1302"/>
-			<card id="1311"/>
+			<card id='1000' level='2' />
+			<card id='1600' level='2' />
+			<card id='1601' level='2' />
+			<card id='1001' level='2' />
+			<card id='1002' level='2' />
+			<card id='1002' level='2' />
+			<card id='1002' level='2' />
+			<card id='1002' level='2' />
+			<card id='1302' />
+			<card id='1311' />
 		</deck>
 	</mission>
 	
@@ -732,7 +733,7 @@
 		<id>63</id>
 		<name>Renewed Trail</name>
 		<energy>2</energy>
-		<commander id="200" level="2"/>
+		<commander id='200' level='2' />
 		<veffect>1</veffect>
 		<desc>At a fork in the forest, you hear the gurgling growl of an undead down the northern path. Following the path, you find a band of undead fighting against Wyld creatures.</desc>
 		<speech>
@@ -755,16 +756,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1600" level="2"/>
-			<card id="1300" level="2"/>
-			<card id="1601" level="2"/>
-			<card id="1603"/>
-			<card id="1607"/>
-			<card id="1307" level="2"/>
-			<card id="1303"/>
-			<card id="1303" level="2"/>
-			<card id="1615"/>
-			<card id="1615"/>
+			<card id='1600' level='2' />
+			<card id='1300' level='2' />
+			<card id='1601' level='2' />
+			<card id='1603' />
+			<card id='1607' />
+			<card id='1307' level='2' />
+			<card id='1303' />
+			<card id='1303' level='2' />
+			<card id='1615' />
+			<card id='1615' />
 		</deck>
 	</mission>
 
@@ -773,7 +774,7 @@
 		<name>The Hollow</name>
 		<mission_type>2</mission_type>
 		<energy>2</energy>
-		<commander id="219"/>
+		<commander id='219' />
 		<veffect>1</veffect>
 		<desc>You follow the undead to a small hollow, and there sitting upon the missing cache is a large man. He turns towards you, his eyes etched with the signs of insanity.</desc>
 		<speech>
@@ -793,16 +794,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1300" level="2"/>
-			<card id="1300" level="3"/>
-			<card id="1301" level="2"/>
-			<card id="1301"/>
-			<card id="1303"/>
-			<card id="1303" level="2"/>
-			<card id="1305"/>
-			<card id="1305"/>
-			<card id="1311"/>
-			<card id="1314"/>
+			<card id='1300' level='2' />
+			<card id='1300' level='3' />
+			<card id='1301' level='2' />
+			<card id='1301' />
+			<card id='1303' />
+			<card id='1303' level='2' />
+			<card id='1305' />
+			<card id='1305' />
+			<card id='1311' />
+			<card id='1314' />
 		</deck>
 	</mission>
 	
@@ -814,7 +815,7 @@
 		<id>71</id>
 		<name>Woodland Departure</name>
 		<energy>2</energy>
-		<commander id="203"/>
+		<commander id='203' />
 		<desc>Commander Ursurio reveals that the Heart of Blue Fire was never in Elaria, but that the Aether leader Samael knows its location.</desc>
 		
 		<speech>
@@ -832,16 +833,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1600" level="3"/>
-			<card id="1601" level="2"/>
-			<card id="1601" level="2"/>
-			<card id="1602"/>
-			<card id="1602"/>
-			<card id="1602"/>
-			<card id="1602"/>
-			<card id="1000" level="2"/>
-			<card id="1015"/>
-			<card id="1615"/>
+			<card id='1600' level='3' />
+			<card id='1601' level='2' />
+			<card id='1601' level='2' />
+			<card id='1602' />
+			<card id='1602' />
+			<card id='1602' />
+			<card id='1602' />
+			<card id='1000' level='2' />
+			<card id='1015' />
+			<card id='1615' />
 		</deck>
 	</mission>
 	
@@ -849,7 +850,7 @@
 		<id>72</id>
 		<name>Land of Light</name>
 		<energy>2</energy>
-		<commander id="203"/>
+		<commander id='203' />
 		<desc>With the unexpected company of Commander Ursurio, you and Elyse travel towards the Aether capital of Luminis. The woods between Luminis and Elaria are dark and full of dangers.</desc>
 		<speech>
 			<line>
@@ -866,16 +867,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1602"/>
-			<card id="1602"/>
-			<card id="1602"/>
-			<card id="1304"/>
-			<card id="1304"/>
-			<card id="1601" level="2"/>
-			<card id="1601" level="2"/>
-			<card id="1604" level="3"/>
-			<card id="1618"/>
-			<card id="1613"/>
+			<card id='1602' />
+			<card id='1602' />
+			<card id='1602' />
+			<card id='1304' />
+			<card id='1304' />
+			<card id='1601' level='2' />
+			<card id='1601' level='2' />
+			<card id='1604' level='3' />
+			<card id='1618' />
+			<card id='1613' />
 		</deck>
 	</mission>
 	
@@ -883,19 +884,19 @@
 		<id>73</id>
 		<name>Hunted</name>
 		<energy>2</energy>
-		<commander id="203"/>
+		<commander id='203' />
 		<desc>You continue through the forest between the two territories, but begin to get the feeling that you are not alone.</desc>
 		<deck>
-			<card id="1607"/>
-			<card id="1602"/>
-			<card id="1602"/>
-			<card id="1304" level="3"/>
-			<card id="1304" level="3"/>
-			<card id="1601" level="2"/>
-			<card id="1601" level="2"/>
-			<card id="1604" level="3"/>
-			<card id="1618"/>
-			<card id="1613"/>
+			<card id='1607' />
+			<card id='1602' />
+			<card id='1602' />
+			<card id='1304' level='3' />
+			<card id='1304' level='3' />
+			<card id='1601' level='2' />
+			<card id='1601' level='2' />
+			<card id='1604' level='3' />
+			<card id='1618' />
+			<card id='1613' />
 		</deck>
 	</mission>
 	
@@ -903,7 +904,7 @@
 		<id>74</id>
 		<name>Prey Upon</name>
 		<energy>2</energy>
-		<commander id="203"/>
+		<commander id='203' />
 		<desc>The trees begin to thin, light breaking through the canopy of the woods. Growling can be heard as you near the edge of the woods. Suddenly a pack of hungry wolves descends on the party.</desc>
 		<speech>
 			<line>
@@ -916,16 +917,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1602"/>
-			<card id="1602"/>
-			<card id="1602"/>
-			<card id="1602" level="2"/>
-			<card id="1602" level="2"/>
-			<card id="1602" level="2"/>
-			<card id="1001" level="2"/>
-			<card id="1601" level="2"/>
-			<card id="1615"/>
-			<card id="1615"/>
+			<card id='1602' />
+			<card id='1602' />
+			<card id='1602' />
+			<card id='1602' level='2' />
+			<card id='1602' level='2' />
+			<card id='1602' level='2' />
+			<card id='1001' level='2' />
+			<card id='1601' level='2' />
+			<card id='1615' />
+			<card id='1615' />
 		</deck>
 	</mission>
 	
@@ -933,7 +934,7 @@
 		<id>81</id>
 		<name>Ghosts...?</name>
 		<energy>2</energy>
-		<commander id="204"/>
+		<commander id='204' />
 		<desc>It appears as if you have stumbled into a soul wisp gathering deep in the woods on your path to meet the Aether. They've turned hostile to your presence.</desc>
 		<speech>
 			<line>
@@ -952,16 +953,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1001" level="2"/>
-			<card id="1001" level="2"/>
-			<card id="1006"/>
-			<card id="1006"/>
-			<card id="1006"/>
-			<card id="1006"/>
-			<card id="1006"/>
-			<card id="1006"/>
-			<card id="1006"/>
-			<card id="1018"/>
+			<card id='1001' level='2' />
+			<card id='1001' level='2' />
+			<card id='1006' />
+			<card id='1006' />
+			<card id='1006' />
+			<card id='1006' />
+			<card id='1006' />
+			<card id='1006' />
+			<card id='1006' />
+			<card id='1018' />
 		</deck>
 	</mission>
 	
@@ -969,19 +970,19 @@
 		<id>82</id>
 		<name>Soul Wisp Swarm</name>
 		<energy>2</energy>
-		<commander id="204"/>
+		<commander id='204' />
 		<desc>The soul wisps gather around, swarming your party and forcing you to flee their small hollow.</desc>
 		<deck>
-			<card id="1006"/>
-			<card id="1006"/>
-			<card id="1006"/>
-			<card id="1006"/>
-			<card id="1006"/>
-			<card id="1006"/>
-			<card id="1006"/>
-			<card id="11006"/>
-			<card id="11006"/>
-			<card id="1018"/>
+			<card id='1006' />
+			<card id='1006' />
+			<card id='1006' />
+			<card id='1006' />
+			<card id='1006' />
+			<card id='1006' />
+			<card id='1006' />
+			<card id='11006' />
+			<card id='11006' />
+			<card id='1018' />
 		</deck>
 	</mission>
 	
@@ -989,7 +990,7 @@
 		<id>83</id>
 		<name>Fight or Flight</name>
 		<energy>2</energy>
-		<commander id="204"/>
+		<commander id='204' />
 		<desc>The soul wisps have chased you out of their grove, but they are relentless. Also spooky.</desc>
 		<speech>
 			<line>
@@ -1007,16 +1008,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1000" level="2"/>
-			<card id="1601" level="2"/>
-			<card id="1602"/>
-			<card id="1602"/>
-			<card id="1003"/>
-			<card id="1006"/>
-			<card id="1006"/>
-			<card id="11006"/>
-			<card id="1012" level="2"/>
-			<card id="1012"/>
+			<card id='1000' level='2' />
+			<card id='1601' level='2' />
+			<card id='1602' />
+			<card id='1602' />
+			<card id='1003' />
+			<card id='1006' />
+			<card id='1006' />
+			<card id='11006' />
+			<card id='1012' level='2' />
+			<card id='1012' />
 		</deck>
 	</mission>
 	
@@ -1024,7 +1025,7 @@
 		<id>84</id>
 		<name>Trespassing</name>
 		<energy>2</energy>
-		<commander id="2"/>
+		<commander id='2' />
 		<desc>You have come across an Aether creature that is bent on turning you away. By force if necessary.</desc>
 		<speech>
 			<line>
@@ -1039,16 +1040,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1001" level="2"/>
-			<card id="1001" level="2"/>
-			<card id="1002" level="2"/>
-			<card id="1002"/>
-			<card id="1003" level="2"/>
-			<card id="1006"/>
-			<card id="1006"/>
-			<card id="1011"/>
-			<card id="1018"/>
-			<card id="1014"/>
+			<card id='1001' level='2' />
+			<card id='1001' level='2' />
+			<card id='1002' level='2' />
+			<card id='1002' />
+			<card id='1003' level='2' />
+			<card id='1006' />
+			<card id='1006' />
+			<card id='1011' />
+			<card id='1018' />
+			<card id='1014' />
 		</deck>
 	</mission>
 	
@@ -1056,7 +1057,7 @@
 		<id>91</id>
 		<name>Finding a Crossing</name>
 		<energy>2</energy>
-		<commander id="205"/>
+		<commander id='205' />
 		<desc>You were able to lose the Owl Mystic after the battle, but you've become lost in the woods. With nothing else to go on, you approach a nearby river.</desc>
 		<speech>
 			<line>
@@ -1070,16 +1071,16 @@
 		</speech>
 		<deck>
 			
-			<card id="1601"/>
-			<card id="1605"/>
-			<card id="1605"/>
-			<card id="1605"/>
-			<card id="1605"/>
-			<card id="1605"/>
-			<card id="1607"/>
-			<card id="1607"/>
-			<card id="1613"/>
-			<card id="1613"/>
+			<card id='1601' />
+			<card id='1605' />
+			<card id='1605' />
+			<card id='1605' />
+			<card id='1605' />
+			<card id='1605' />
+			<card id='1607' />
+			<card id='1607' />
+			<card id='1613' />
+			<card id='1613' />
 		</deck>
 	</mission>
 	
@@ -1087,7 +1088,7 @@
 		<id>92</id>
 		<name>Mage's Decree</name>
 		<energy>2</energy>
-		<commander id="205"/>
+		<commander id='205' />
 		<desc>You manage to find a bridge, the gleam of a city on the horizon. However the denizens of the river seem to be protecting the passage.</desc>
 		<speech>
 			<line>
@@ -1106,16 +1107,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1603" level="2"/>
-			<card id="1603" level="2"/>
-			<card id="1603" level="3"/>
-			<card id="1604"/>
-			<card id="1604"/>
-			<card id="1605"/>
-			<card id="1606"/>
-			<card id="1606"/>
-			<card id="1618"/>
-			<card id="1618"/>
+			<card id='1603' level='2' />
+			<card id='1603' level='2' />
+			<card id='1603' level='3' />
+			<card id='1604' />
+			<card id='1604' />
+			<card id='1605' />
+			<card id='1606' />
+			<card id='1606' />
+			<card id='1618' />
+			<card id='1618' />
 		</deck>
 	</mission>
 	
@@ -1123,19 +1124,19 @@
 		<id>93</id>
 		<name>Water Under the Bridge</name>
 		<energy>2</energy>
-		<commander id="205"/>
+		<commander id='205' />
 		<desc>The denizens of the river are sworn to protect their home, and they have deemed you a threat. You cannot pass the bridge until you defeat them.</desc>
 		<deck>
-			<card id="1603"/>
-			<card id="1603" level="3"/>
-			<card id="1603" level="3"/>
-			<card id="1604"/>
-			<card id="1604"/>
-			<card id="1606"/>
-			<card id="1606"/>
-			<card id="1606"/>
-			<card id="1617"/>
-			<card id="1617"/>
+			<card id='1603' />
+			<card id='1603' level='3' />
+			<card id='1603' level='3' />
+			<card id='1604' />
+			<card id='1604' />
+			<card id='1606' />
+			<card id='1606' />
+			<card id='1606' />
+			<card id='1617' />
+			<card id='1617' />
 		</deck>
 	</mission>
 	
@@ -1143,7 +1144,7 @@
 		<id>94</id>
 		<name>Wrath of the River</name>
 		<energy>2</energy>
-		<commander id="205"/>
+		<commander id='205' />
 		<desc>The creatures living in the river's waters summon the last of their strength to stop you from crossing the bridge. Overcome their swell of strength to pass through.</desc>
 		<speech>
 			<line>
@@ -1153,16 +1154,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1603" level="3"/>
-			<card id="1603" level="3"/>
-			<card id="1604" level="2"/>
-			<card id="1604" level="2"/>
-			<card id="1606"/>
-			<card id="1606"/>
-			<card id="1607"/>
-			<card id="1607"/>
-			<card id="1619"/>
-			<card id="1617"/>
+			<card id='1603' level='3' />
+			<card id='1603' level='3' />
+			<card id='1604' level='2' />
+			<card id='1604' level='2' />
+			<card id='1606' />
+			<card id='1606' />
+			<card id='1607' />
+			<card id='1607' />
+			<card id='1619' />
+			<card id='1617' />
 		</deck>
 	</mission>
 	
@@ -1170,7 +1171,7 @@
 		<id>101</id>
 		<name>City of Light</name>
 		<energy>3</energy>
-		<commander id="2"/>
+		<commander id='2' />
 		<desc>You've finally made it to Luminis, but the Owl Mystic Yuriel was waiting for your arrival. You must defeat him to get an audience with the leader of the Aether.</desc>
 		<speech>
 			<line>
@@ -1180,16 +1181,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1003"/>
-			<card id="1004"/>
-			<card id="1004"/>
-			<card id="1004" level="2"/>
-			<card id="1006"/>
-			<card id="1007" level="2"/>
-			<card id="1007" level="2"/>
-			<card id="1011"/>
-			<card id="1011"/>
-			<card id="1019"/>
+			<card id='1003' />
+			<card id='1004' />
+			<card id='1004' />
+			<card id='1004' level='2' />
+			<card id='1006' />
+			<card id='1007' level='2' />
+			<card id='1007' level='2' />
+			<card id='1011' />
+			<card id='1011' />
+			<card id='1019' />
 		</deck>
 	</mission>
 	
@@ -1197,7 +1198,7 @@
 		<id>102</id>
 		<name>Audience</name>
 		<energy>3</energy>
-		<commander id="2"/>
+		<commander id='2' />
 		<desc>After proving your strength against Yuriel, he has decided to allow you entrance to the capital itself.</desc>
 		<speech>
 			<line>
@@ -1212,16 +1213,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1002"/>
-			<card id="1004"/>
-			<card id="1004"/>
-			<card id="1005"/>
-			<card id="1006"/>
-			<card id="1007" level="2"/>
-			<card id="1007" level="2"/>
-			<card id="1018"/>
-			<card id="1017"/>
-			<card id="1017"/>
+			<card id='1002' />
+			<card id='1004' />
+			<card id='1004' />
+			<card id='1005' />
+			<card id='1006' />
+			<card id='1007' level='2' />
+			<card id='1007' level='2' />
+			<card id='1018' />
+			<card id='1017' />
+			<card id='1017' />
 		</deck>
 	</mission>
 	
@@ -1229,7 +1230,7 @@
 		<id>103</id>
 		<name>Blind Eye</name>
 		<energy>3</energy>
-		<commander id="2" level="2"/>
+		<commander id='2' level='2' />
 		<desc>You've finally been granted access to Luminis, but the Aether leader refuses to listen to your words.</desc>
 		<speech>
 			<line>
@@ -1248,16 +1249,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1002"/>
-			<card id="1004"/>
-			<card id="1004"/>
-			<card id="1005"/>
-			<card id="1005"/>
-			<card id="1006"/>
-			<card id="11006"/>
-			<card id="1018"/>
-			<card id="1017"/>
-			<card id="1017"/>
+			<card id='1002' />
+			<card id='1004' />
+			<card id='1004' />
+			<card id='1005' />
+			<card id='1005' />
+			<card id='1006' />
+			<card id='11006' />
+			<card id='1018' />
+			<card id='1017' />
+			<card id='1017' />
 		</deck>
 	</mission>
 	
@@ -1265,7 +1266,7 @@
 		<id>104</id>
 		<name>Rebuke</name>
 		<energy>2</energy>
-		<commander id="3"/>
+		<commander id='3' />
 		<desc>The Aether refuse to listen to the warnings you brought to them. They have closed their ears and sent their champion after you.</desc>
 		<speech>
 			<line>
@@ -1284,16 +1285,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1002" level="2"/>
-			<card id="1002" level="2"/>
-			<card id="1003" level="2"/>
-			<card id="1003" level="2"/>
-			<card id="1005"/>
-			<card id="11006"/>
-			<card id="1011"/>
-			<card id="1017"/>
-			<card id="1018"/>
-			<card id="1027"/>
+			<card id='1002' level='2' />
+			<card id='1002' level='2' />
+			<card id='1003' level='2' />
+			<card id='1003' level='2' />
+			<card id='1005' />
+			<card id='11006' />
+			<card id='1011' />
+			<card id='1017' />
+			<card id='1018' />
+			<card id='1027' />
 		</deck>
 	</mission>
 	
@@ -1302,7 +1303,7 @@
 		<id>111</id>
 		<name>Exile</name>
 		<energy>2</energy>
-		<commander id="2" level="2"/>
+		<commander id='2' level='2' />
 		<desc>You have been driven from the city of Luminis without a scrap of information. To make matters worse, the Aether forces still follow to assure you do not return.</desc>
 		<speech>
 			<line>
@@ -1316,16 +1317,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1004"/>
-			<card id="1002"/>
-			<card id="1006"/>
-			<card id="1004"/>
-			<card id="1005"/>
-			<card id="1017"/>
-			<card id="1018"/>
-			<card id="1018"/>
-			<card id="1019"/>
-			<card id="1019"/>
+			<card id='1004' />
+			<card id='1002' />
+			<card id='1006' />
+			<card id='1004' />
+			<card id='1005' />
+			<card id='1017' />
+			<card id='1018' />
+			<card id='1018' />
+			<card id='1019' />
+			<card id='1019' />
 		</deck>
 	</mission>
 	
@@ -1333,7 +1334,7 @@
 		<id>112</id>
 		<name>Open Fields</name>
 		<energy>2</energy>
-		<commander id="218"/>
+		<commander id='218' />
 		<veffect>1</veffect>
 		<desc>You have momentarily escaped the arm of Luminis and their Aether mages, but the land itself senses that you are not welcome and harrasses you at every turn.</desc>
 		<speech>
@@ -1351,16 +1352,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1602" level="2"/>
-			<card id="1602" level="2"/>
-			<card id="1605"/>
-			<card id="1003"/>
-			<card id="1004" level="2"/>
-			<card id="1613"/>
-			<card id="1015"/>
-			<card id="1613"/>
-			<card id="1010"/>
-			<card id="1018"/>
+			<card id='1602' level='2' />
+			<card id='1602' level='2' />
+			<card id='1605' />
+			<card id='1003' />
+			<card id='1004' level='2' />
+			<card id='1613' />
+			<card id='1015' />
+			<card id='1613' />
+			<card id='1010' />
+			<card id='1018' />
 		</deck>
 	</mission>
 	
@@ -1368,20 +1369,20 @@
 		<id>113</id>
 		<name>Sickness Spreading</name>
 		<energy>2</energy>
-		<commander id="218"/>
+		<commander id='218' />
 		<veffect>1</veffect>
 		<desc>While escaping the city of Luminis, you have come across a group of sick animals. It appears to be the same corruption as the Chaos mage.</desc>
 		<deck>
-			<card id="1602" level="2"/>
-			<card id="1602" level="2"/>
-			<card id="1605" level="2"/>
-			<card id="1003" level="2"/>
-			<card id="1004"/>
-			<card id="1015"/>
-			<card id="1613"/>
-			<card id="1613"/>
-			<card id="1010"/>
-			<card id="1018"/>
+			<card id='1602' level='2' />
+			<card id='1602' level='2' />
+			<card id='1605' level='2' />
+			<card id='1003' level='2' />
+			<card id='1004' />
+			<card id='1015' />
+			<card id='1613' />
+			<card id='1613' />
+			<card id='1010' />
+			<card id='1018' />
 		</deck>
 	</mission>
 	
@@ -1389,7 +1390,7 @@
 		<id>114</id>
 		<name>Border's Edge</name>
 		<energy>2</energy>
-		<commander id="2" level="2"/>
+		<commander id='2' level='2' />
 		<desc>The Owl Mystic Yuriel has harried your party to the edges of the land.</desc>
 		<speech>
 			<line>
@@ -1399,16 +1400,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1602" level="2"/>
-			<card id="1605"/>
-			<card id="1003"/>
-			<card id="1004"/>
-			<card id="1010"/>
-			<card id="1015"/>
-			<card id="1017"/>
-			<card id="1017"/>
-			<card id="1613"/>
-			<card id="1625"/>
+			<card id='1602' level='2' />
+			<card id='1605' />
+			<card id='1003' />
+			<card id='1004' />
+			<card id='1010' />
+			<card id='1015' />
+			<card id='1017' />
+			<card id='1017' />
+			<card id='1613' />
+			<card id='1625' />
 		</deck>
 	</mission>
 	
@@ -1416,7 +1417,7 @@
 		<id>121</id>
 		<name>Shelter</name>
 		<energy>3</energy>
-		<commander id="203" level="3"/>
+		<commander id='203' level='3' />
 		<desc>As the sun begins to set you seek shelter. The ordeal in Luminis has left you weary.</desc>
 		<speech>
 			<line>
@@ -1433,16 +1434,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1602"/>
-			<card id="1602"/>
-			<card id="1605"/>
-			<card id="1004"/>
-			<card id="1619"/>
-			<card id="1015"/>
-			<card id="1613"/>
-			<card id="1010"/>
-			<card id="1018"/>
-			<card id="1018"/>
+			<card id='1602' />
+			<card id='1602' />
+			<card id='1605' />
+			<card id='1004' />
+			<card id='1619' />
+			<card id='1015' />
+			<card id='1613' />
+			<card id='1010' />
+			<card id='1018' />
+			<card id='1018' />
 		</deck>
 	</mission>
 	
@@ -1450,19 +1451,19 @@
 		<id>122</id>
 		<name>In The Distance</name>
 		<energy>3</energy>
-		<commander id="203" level="2"/>
+		<commander id='203' level='2' />
 		<desc>In the distance, you spot a castle on an outcropping of rock. You've decided to approach it to find shelter and rest.</desc>
 		<deck>
-			<card id="1602"/>
-			<card id="1602"/>
-			<card id="1304"/>
-			<card id="1004"/>
-			<card id="1313"/>
-			<card id="1314" level="2"/>
-			<card id="1314" level="2"/>
-			<card id="1613"/>
-			<card id="1010"/>
-			<card id="1018"/>
+			<card id='1602' />
+			<card id='1602' />
+			<card id='1304' />
+			<card id='1004' />
+			<card id='1313' />
+			<card id='1314' level='2' />
+			<card id='1314' level='2' />
+			<card id='1613' />
+			<card id='1010' />
+			<card id='1018' />
 		</deck>
 	</mission>
 	
@@ -1470,7 +1471,7 @@
 		<id>123</id>
 		<name>Something's Off...</name>
 		<energy>3</energy>
-		<commander id="218" level="2"/>
+		<commander id='218' level='2' />
 		<veffect>1</veffect>
 		<desc>As you approach the castle, you can tell something is strange. You are set upon by various creatures, some of which are Chaos.</desc>
 		<speech>
@@ -1488,16 +1489,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1602"/>
-			<card id="1602"/>
-			<card id="1304"/>
-			<card id="1304"/>
-			<card id="1313"/>
-			<card id="1314"/>
-			<card id="1613"/>
-			<card id="1010"/>
-			<card id="1018"/>
-			<card id="1629"/>
+			<card id='1602' />
+			<card id='1602' />
+			<card id='1304' />
+			<card id='1304' />
+			<card id='1313' />
+			<card id='1314' />
+			<card id='1613' />
+			<card id='1010' />
+			<card id='1018' />
+			<card id='1629' />
 		</deck>
 	</mission>
 	
@@ -1505,7 +1506,7 @@
 		<id>124</id>
 		<name>Lightning and Brimstone</name>
 		<energy>3</energy>
-		<commander id="219"/>
+		<commander id='219' />
 		<veffect>1</veffect>
 		<desc>At the edge of Luminis you found an abandoned castle in the mountains. Before you can even reach it, you are assaulted by a familiar Chaos mage.</desc>
 		<speech>
@@ -1520,16 +1521,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1303" level="2"/>
-			<card id="1303" level="2"/>
-			<card id="1304" level="2"/>
-			<card id="1306" level="2"/>
-			<card id="1311" level="2"/>
-			<card id="1311" level="2"/>
-			<card id="1317" level="2"/>
-			<card id="1314"/>
-			<card id="1329"/>
-			<card id="1326"/>
+			<card id='1303' level='2' />
+			<card id='1303' level='2' />
+			<card id='1304' level='2' />
+			<card id='1306' level='2' />
+			<card id='1311' level='2' />
+			<card id='1311' level='2' />
+			<card id='1317' level='2' />
+			<card id='1314' />
+			<card id='1329' />
+			<card id='1326' />
 		</deck>
 	</mission>
 	
@@ -1541,7 +1542,7 @@
 		<id>131</id>
 		<name>Unfamiliar Lands</name>
 		<energy>3</energy>
-		<commander id="210"/>
+		<commander id='210' />
 		<desc>You've taken your airship to meet up with Aria, who was sent to the Chaos home of Karthos in search of the Heart.</desc>
 		<speech>
 			<line>
@@ -1563,16 +1564,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1306"/>
-			<card id="1306"/>
-			<card id="1306"/>
-			<card id="1306"/>
-			<card id="1306"/>
-			<card id="1311"/>
-			<card id="1313"/>
-			<card id="1314"/>
-			<card id="1314"/>
-			<card id="1330"/>
+			<card id='1306' />
+			<card id='1306' />
+			<card id='1306' />
+			<card id='1306' />
+			<card id='1306' />
+			<card id='1311' />
+			<card id='1313' />
+			<card id='1314' />
+			<card id='1314' />
+			<card id='1330' />
 		</deck>
 	</mission>
 	
@@ -1580,19 +1581,19 @@
 		<id>132</id>
 		<name>Lava Crab Gang</name>
 		<energy>3</energy>
-		<commander id="210"/>
+		<commander id='210' />
 		<desc>You've disturbed a nest of Lava Crabs! They come at you with pincers at the ready!</desc>
 		<deck>
-			<card id="1306"/>
-			<card id="1306"/>
-			<card id="1306"/>
-			<card id="1306"/>
-			<card id="1306"/>
-			<card id="1311"/>
-			<card id="1311"/>
-			<card id="1313"/>
-			<card id="1314"/>
-			<card id="1328"/>
+			<card id='1306' />
+			<card id='1306' />
+			<card id='1306' />
+			<card id='1306' />
+			<card id='1306' />
+			<card id='1311' />
+			<card id='1311' />
+			<card id='1313' />
+			<card id='1314' />
+			<card id='1328' />
 		</deck>
 	</mission>
 	
@@ -1600,7 +1601,7 @@
 		<id>133</id>
 		<name>Rocks and Lava</name>
 		<energy>3</energy>
-		<commander id="210"/>
+		<commander id='210' />
 		<desc>You follow Aria as you begin your walk towards Karthos. Unfortunately, everything appears to be hostile here and you are quickly attacked.</desc>
 		<speech>
 			<line>
@@ -1613,16 +1614,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1306"/>
-			<card id="1306"/>
-			<card id="1306"/>
-			<card id="1306"/>
-			<card id="1306"/>
-			<card id="1311"/>
-			<card id="1311"/>
-			<card id="1314"/>
-			<card id="1317" level="2"/>
-			<card id="1330"/>
+			<card id='1306' />
+			<card id='1306' />
+			<card id='1306' />
+			<card id='1306' />
+			<card id='1306' />
+			<card id='1311' />
+			<card id='1311' />
+			<card id='1314' />
+			<card id='1317' level='2' />
+			<card id='1330' />
 		</deck>
 	</mission>
 	
@@ -1630,7 +1631,7 @@
 		<id>134</id>
 		<name>Titans of Fire</name>
 		<energy>3</energy>
-		<commander id="206"/>
+		<commander id='206' />
 		<desc>As you defeat the final Chaos creature, a great roar is heard. A huge titan of fire comes around a cliff, drawn by the sound of battle.</desc>
 		<speech>
 			<line>
@@ -1648,16 +1649,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1301"/>
-			<card id="1301"/>
-			<card id="1305"/>
-			<card id="1305"/>
-			<card id="1317" level="2"/>
-			<card id="1317" level="2"/>
-			<card id="1318"/>
-			<card id="1318"/>
-			<card id="1326"/>
-			<card id="1330"/>
+			<card id='1301' />
+			<card id='1301' />
+			<card id='1305' />
+			<card id='1305' />
+			<card id='1317' level='2' />
+			<card id='1317' level='2' />
+			<card id='1318' />
+			<card id='1318' />
+			<card id='1326' />
+			<card id='1330' />
 		</deck>
 	</mission>
 	
@@ -1665,7 +1666,7 @@
 		<id>141</id>
 		<name>Chaotic... Evil?</name>
 		<energy>3</energy>
-		<commander id="210"/>
+		<commander id='210' />
 		<desc>You press towards the capital of Karthos with Aria while she reveals more about the Chaos.</desc>
 		<speech>
 			<line>
@@ -1678,16 +1679,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1302"/>
-			<card id="1303"/>
-			<card id="1306"/>
-			<card id="1305"/>
-			<card id="1317"/>
-			<card id="1318"/>
-			<card id="1319"/>
-			<card id="1319"/>
-			<card id="1327"/>
-			<card id="1328"/>
+			<card id='1302' />
+			<card id='1303' />
+			<card id='1306' />
+			<card id='1305' />
+			<card id='1317' />
+			<card id='1318' />
+			<card id='1319' />
+			<card id='1319' />
+			<card id='1327' />
+			<card id='1328' />
 		</deck>
 	</mission>
 	
@@ -1695,7 +1696,7 @@
 		<id>142</id>
 		<name>Trust</name>
 		<energy>3</energy>
-		<commander id="210" level="2"/>
+		<commander id='210' level='2' />
 		<desc>As you near Karthos you can see the lair rising out of the rocks, Aria continues to enlighten you on the nature of the Chaos.</desc>
 		<speech>
 			<line>
@@ -1713,16 +1714,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1306"/>
-			<card id="1306"/>
-			<card id="1304"/>
-			<card id="1314"/>
-			<card id="1314"/>
-			<card id="1315"/>
-			<card id="1317"/>
-			<card id="1318"/>
-			<card id="1325"/>
-			<card id="1328"/>
+			<card id='1306' />
+			<card id='1306' />
+			<card id='1304' />
+			<card id='1314' />
+			<card id='1314' />
+			<card id='1315' />
+			<card id='1317' />
+			<card id='1318' />
+			<card id='1325' />
+			<card id='1328' />
 		</deck>
 	</mission>
 	
@@ -1730,19 +1731,19 @@
 		<id>143</id>
 		<name>Troubling Travels</name>
 		<energy>3</energy>
-		<commander id="231"/>
+		<commander id='231' />
 		<desc>Karthos is larger than you first thought. As you come closer you can hear some kind of disturbance in the distance.</desc>
 		<deck>
-			<card id="1306"/>
-			<card id="1306"/>
-			<card id="1304"/>
-			<card id="1314"/>
-			<card id="1314"/>
-			<card id="1315"/>
-			<card id="1317"/>
-			<card id="1318"/>
-			<card id="1325"/>
-			<card id="1328"/>
+			<card id='1306' />
+			<card id='1306' />
+			<card id='1304' />
+			<card id='1314' />
+			<card id='1314' />
+			<card id='1315' />
+			<card id='1317' />
+			<card id='1318' />
+			<card id='1325' />
+			<card id='1328' />
 		</deck>
 	</mission>
 	
@@ -1750,7 +1751,7 @@
 		<id>144</id>
 		<name>Pierce the Siege</name>
 		<energy>3</energy>
-		<commander id="231" level="2"/>
+		<commander id='231' level='2' />
 		<desc>A horde of Chaos creatures lay siege to Karthos. There is no path around. You must fight through them to get inside.</desc>
 		<speech>
 			<line>
@@ -1768,16 +1769,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1302"/>
-			<card id="1301"/>
-			<card id="1303"/>
-			<card id="1313"/>
-			<card id="1313"/>
-			<card id="1315"/>
-			<card id="1318"/>
-			<card id="1330"/>
-			<card id="1325"/>
-			<card id="1326"/>
+			<card id='1302' />
+			<card id='1301' />
+			<card id='1303' />
+			<card id='1313' />
+			<card id='1313' />
+			<card id='1315' />
+			<card id='1318' />
+			<card id='1330' />
+			<card id='1325' />
+			<card id='1326' />
 		</deck>
 	</mission>
 	
@@ -1785,7 +1786,7 @@
 		<id>151</id>
 		<name>Within the Walls</name>
 		<energy>4</energy>
-		<commander id="5" level="2"/>
+		<commander id='5' level='2' />
 		<desc>You have finally arrived at the Chaos lair of Karthos and broken through the siege.</desc>
 		<speech>
 			<line>
@@ -1799,16 +1800,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1302"/>
-			<card id="1306"/>
-			<card id="1305"/>
-			<card id="1315"/>
-			<card id="1315"/>
-			<card id="1318"/>
-			<card id="1319"/>
-			<card id="1319"/>
-			<card id="1325"/>
-			<card id="1328"/>
+			<card id='1302' />
+			<card id='1306' />
+			<card id='1305' />
+			<card id='1315' />
+			<card id='1315' />
+			<card id='1318' />
+			<card id='1319' />
+			<card id='1319' />
+			<card id='1325' />
+			<card id='1328' />
 		</deck>
 	</mission>
 	
@@ -1816,7 +1817,7 @@
 		<id>152</id>
 		<name>Decim the Firebringer</name>
 		<energy>4</energy>
-		<commander id="5" level="2"/>
+		<commander id='5' level='2'/>
 		<desc>The fight with Decim spills into the lair itself, filling its halls with fire as his laughter echos off the walls.</desc>
 		<speech>
 			<line>
@@ -1835,16 +1836,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1302"/>
-			<card id="1306"/>
-			<card id="1305"/>
-			<card id="1315"/>
-			<card id="1315"/>
-			<card id="1318"/>
-			<card id="1319"/>
-			<card id="1319"/>
-			<card id="1325"/>
-			<card id="1328"/>
+			<card id='1302' />
+			<card id='1306' />
+			<card id='1305' />
+			<card id='1315' />
+			<card id='1315' />
+			<card id='1318' />
+			<card id='1319' />
+			<card id='1319' />
+			<card id='1325' />
+			<card id='1328' />
 		</deck>
 	</mission>
 	
@@ -1852,7 +1853,7 @@
 		<id>153</id>
 		<name>Contention</name>
 		<energy>4</energy>
-		<commander id="206" level="2"/>
+		<commander id='206' level='2' />
 		<desc>As you fight with Decim, the gates of the lair break open and in pour the Chaos that have been sieging the lair.</desc>
 		<speech>
 			<line>
@@ -1865,16 +1866,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1306"/>
-			<card id="1303"/>
-			<card id="1304"/>
-			<card id="1314"/>
-			<card id="1314"/>
-			<card id="1318"/>
-			<card id="1319"/>
-			<card id="1315"/>
-			<card id="1328"/>
-			<card id="1326"/>
+			<card id='1306' />
+			<card id='1303' />
+			<card id='1304' />
+			<card id='1314' />
+			<card id='1314' />
+			<card id='1318' />
+			<card id='1319' />
+			<card id='1315' />
+			<card id='1328' />
+			<card id='1326' />
 		</deck>
 	</mission>
 	
@@ -1882,7 +1883,7 @@
 		<id>154</id>
 		<name>Lord of the Undead</name>
 		<energy>4</energy>
-		<commander id="207"/>
+		<commander id='207' />
 		<desc>You have come face to face with Tarian, leader of the Chaos mages. Before he can ask him what he knows of the Heart of Blue Fire, a figure attacks from the shadows.</desc>
 		<speech>
 			<line>
@@ -1905,11 +1906,11 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1329" level="5"/>
-			<card id="1329" level="5"/>
-			<card id="1329" level="5"/>
-			<card id="1329" level="5"/>
-			<card id="1329" level="5"/>
+			<card id='1329' level='5' />
+			<card id='1329' level='5' />
+			<card id='1329' level='5' />
+			<card id='1329' level='5' />
+			<card id='1329' level='5' />
 		</deck>
 	</mission>
 	
@@ -1917,7 +1918,7 @@
 		<id>161</id>
 		<name>Path to The Void</name>
 		<energy>3</energy>
-		<commander id="231"/>
+		<commander id='231' />
 		<desc>After stopping the Void Assassin's attempt to kill Tarian you have been charged to travel out of the city of Karthos and towards the Caverns of Crossing.</desc>
 		<speech>
 			<line>
@@ -1936,16 +1937,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1302"/>
-			<card id="1303"/>
-			<card id="1315"/>
-			<card id="1317"/>
-			<card id="1317"/>
-			<card id="1318"/>
-			<card id="1319"/>
-			<card id="1319"/>
-			<card id="1327"/>
-			<card id="1326"/>
+			<card id='1302' />
+			<card id='1303' />
+			<card id='1315' />
+			<card id='1317' />
+			<card id='1317' />
+			<card id='1318' />
+			<card id='1319' />
+			<card id='1319' />
+			<card id='1327' />
+			<card id='1326' />
 		</deck>
 	</mission>
 	
@@ -1953,7 +1954,7 @@
 		<id>162</id>
 		<name>River of Fire</name>
 		<energy>3</energy>
-		<commander id="231" level="2"/>
+		<commander id='231' level='2' />
 		<desc>The bridges cross the chasm to get around the river of lava. Aria leads the way, but you can see Chaos creatures all around you.</desc>
 		<speech>
 			<line>
@@ -1966,16 +1967,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1307"/>
-			<card id="1307"/>
-			<card id="1314"/>
-			<card id="1314"/>
-			<card id="1318"/>
-			<card id="1318"/>
-			<card id="1314"/>
-			<card id="1314"/>
-			<card id="1325"/>
-			<card id="1327"/>
+			<card id='1307' />
+			<card id='1307' />
+			<card id='1314' />
+			<card id='1314' />
+			<card id='1318' />
+			<card id='1318' />
+			<card id='1314' />
+			<card id='1314' />
+			<card id='1325' />
+			<card id='1327' />
 		</deck>
 	</mission>
 	
@@ -1983,19 +1984,19 @@
 		<id>163</id>
 		<name>Crossings</name>
 		<energy>3</energy>
-		<commander id="206" level="2"/>
+		<commander id='206' level='2' />
 		<desc>Crossing the bridges, you find many Chaos who have taken to living on it and who do not like the presence of Ursurio.</desc>
 		<deck>
-			<card id="1305"/>
-			<card id="1307"/>
-			<card id="1312"/>
-			<card id="1312"/>
-			<card id="1314"/>
-			<card id="1315"/>
-			<card id="1319"/>
-			<card id="1319"/>
-			<card id="1325"/>
-			<card id="1328"/>
+			<card id='1305' />
+			<card id='1307' />
+			<card id='1312' />
+			<card id='1312' />
+			<card id='1314' />
+			<card id='1315' />
+			<card id='1319' />
+			<card id='1319' />
+			<card id='1325' />
+			<card id='1328' />
 		</deck>
 	</mission>
 	
@@ -2003,7 +2004,7 @@
 		<id>164</id>
 		<name>Fire Twins</name>
 		<energy>3</energy>
-		<commander id="222"/>
+		<commander id='222' />
 		<desc>On the center island between bridges, you are attacked by a huge group of Chaos creatures lead by a pair of Fire Titans.</desc>
 		<speech>
 			<line>
@@ -2025,16 +2026,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1302"/>
-			<card id="1314"/>
-			<card id="1314"/>
-			<card id="1315"/>
-			<card id="1318"/>
-			<card id="1318"/>
-			<card id="1319"/>
-			<card id="1327"/>
-			<card id="1326"/>
-			<card id="1326"/>
+			<card id='1302' />
+			<card id='1314' />
+			<card id='1314' />
+			<card id='1315' />
+			<card id='1318' />
+			<card id='1318' />
+			<card id='1319' />
+			<card id='1327' />
+			<card id='1326' />
+			<card id='1326' />
 		</deck>
 	</mission>
 	
@@ -2042,7 +2043,7 @@
 		<id>171</id>
 		<name>Exit Strategy</name>
 		<energy>3</energy>
-		<commander id="206" level="2"/>
+		<commander id='206' level='2' />
 		<desc>After crossing the river of lava, you come to the far side. Aria notices some strange patterns with the Chaos creatures and decides something must be done.</desc>
 		<speech>
 			<line>
@@ -2063,16 +2064,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1311"/>
-			<card id="1312"/>
-			<card id="1312"/>
-			<card id="1314"/>
-			<card id="1314"/>
-			<card id="1315"/>
-			<card id="1315"/>
-			<card id="1325"/>
-			<card id="1330"/>
-			<card id="1330"/>
+			<card id='1311' />
+			<card id='1312' />
+			<card id='1312' />
+			<card id='1314' />
+			<card id='1314' />
+			<card id='1315' />
+			<card id='1315' />
+			<card id='1325' />
+			<card id='1330' />
+			<card id='1330' />
 		</deck>
 	</mission>
 	
@@ -2080,7 +2081,7 @@
 		<id>172</id>
 		<name>Kicking the Nest</name>
 		<energy>3</energy>
-		<commander id="211"/>
+		<commander id='211' />
 		<desc>Trying to clear out the Chaos near the bridge proves to be harder than thought. There seems to be more than anticipated, and Aria seems to know something that she is not sharing.</desc>
 		<speech>
 			<line>
@@ -2097,16 +2098,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1313"/>
-			<card id="1313"/>
-			<card id="1314"/>
-			<card id="1315"/>
-			<card id="1319"/>
-			<card id="1319"/>
-			<card id="1319"/>
-			<card id="1326"/>
-			<card id="1327"/>
-			<card id="1329"/>
+			<card id='1313' />
+			<card id='1313' />
+			<card id='1314' />
+			<card id='1315' />
+			<card id='1319' />
+			<card id='1319' />
+			<card id='1319' />
+			<card id='1326' />
+			<card id='1327' />
+			<card id='1329' />
 		</deck>
 	</mission>
 	
@@ -2114,19 +2115,19 @@
 		<id>173</id>
 		<name>Purging</name>
 		<energy>3</energy>
-		<commander id="211"/>
+		<commander id='211' />
 		<desc>As the Chaos swarm, you cut through their ranks and follow Aria as she seeks out her goal.</desc>
 		<deck>
-			<card id="1311"/>
-			<card id="1311"/>
-			<card id="1313"/>
-			<card id="1313"/>
-			<card id="1317"/>
-			<card id="1319"/>
-			<card id="1319"/>
-			<card id="1326"/>
-			<card id="1325"/>
-			<card id="1326"/>
+			<card id='1311' />
+			<card id='1311' />
+			<card id='1313' />
+			<card id='1313' />
+			<card id='1317' />
+			<card id='1319' />
+			<card id='1319' />
+			<card id='1326' />
+			<card id='1325' />
+			<card id='1326' />
 		</deck>
 	</mission>
 	
@@ -2134,7 +2135,7 @@
 		<id>174</id>
 		<name>Wraith's Den</name>
 		<energy>3</energy>
-		<commander id="211"/>
+		<commander id='211' />
 		<desc>Clearing the last wave of undead and firey beasts has uncovered the real reason for their gathering. A den of Wraiths has gathered, drawing all nearby creatures to their power. Clear out the den!</desc>
 		<speech>
 			<line>
@@ -2151,16 +2152,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1319"/>
-			<card id="1319"/>
-			<card id="1319"/>
-			<card id="1319"/>
-			<card id="1319"/>
-			<card id="1319"/>
-			<card id="1319"/>
-			<card id="1319"/>
-			<card id="1319"/>
-			<card mastery_level="2" id="1319"/>
+			<card id='1319' />
+			<card id='1319' />
+			<card id='1319' />
+			<card id='1319' />
+			<card id='1319' />
+			<card id='1319' />
+			<card id='1319' />
+			<card id='1319' />
+			<card id='1319' />
+			<card mastery_level='2' id='1319' />
 		</deck>
 	</mission>
 	
@@ -2168,7 +2169,7 @@
 		<id>181</id>
 		<name>Pre-emptive Strike</name>
 		<energy>5</energy>
-		<commander id="208"/>
+		<commander id='208' />
 		<veffect>1</veffect>
 		<desc>As you near the Caverns of Crossing, you are ambushed by a group of Void creatures.</desc>
 		<speech>
@@ -2182,16 +2183,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1319"/>
-			<card id="1319"/>
-			<card id="1011"/>
-			<card id="1018"/>
-			<card id="1616"/>
-			<card id="1613"/>
-			<card id="1329" level="5"/>
-			<card id="1329" level="5"/>
-			<card id="1628"/>
-			<card id="5004"/>
+			<card id='1319' />
+			<card id='1319' />
+			<card id='1011' />
+			<card id='1018' />
+			<card id='1616' />
+			<card id='1613' />
+			<card id='1329' level='5' />
+			<card id='1329' level='5' />
+			<card id='1628' />
+			<card id='5004' />
 		</deck>
 	</mission>
 	
@@ -2199,7 +2200,7 @@
 		<id>182</id>
 		<name>The Second Wave</name>
 		<energy>5</energy>
-		<commander id="208"/>
+		<commander id='208' />
 		<veffect>1</veffect>
 		<desc>The minions of The Void pull back momentarily, giving you a moment to rest before attacking with a second wave. They seem persistent to stop you from making it to the caverns.</desc>
 		<speech>
@@ -2213,16 +2214,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1306"/>
-			<card id="1314"/>
-			<card id="1017"/>
-			<card id="1010"/>
-			<card id="1615"/>
-			<card id="1618"/>
-			<card id="6007"/>
-			<card id="1328"/>
-			<card id="1026"/>
-			<card id="1628"/>
+			<card id='1306' />
+			<card id='1314' />
+			<card id='1017' />
+			<card id='1010' />
+			<card id='1615' />
+			<card id='1618' />
+			<card id='6007' />
+			<card id='1328' />
+			<card id='1026' />
+			<card id='1628' />
 		</deck>
 	</mission>
 	
@@ -2230,20 +2231,20 @@
 		<id>183</id>
 		<name>Clash</name>
 		<energy>5</energy>
-		<commander id="208"/>
+		<commander id='208' />
 		<veffect>1</veffect>
 		<desc>The second wave crashes down around you. You've survived the initial clash, but they just keep coming.</desc>
 		<deck>
-			<card id="1010"/>
-			<card id="1314"/>
-			<card id="1318"/>
-			<card id="6006"/>
-			<card id="6006"/>
-			<card id="1327"/>
-			<card id="1629"/>
-			<card id="1628"/>
-			<card id="6005"/>
-			<card id="6005"/>
+			<card id='1010' />
+			<card id='1314' />
+			<card id='1318' />
+			<card id='6006' />
+			<card id='6006' />
+			<card id='1327' />
+			<card id='1629' />
+			<card id='1628' />
+			<card id='6005' />
+			<card id='6005' />
 		</deck>
 	</mission>
 	
@@ -2251,7 +2252,7 @@
 		<id>184</id>
 		<name>The Void's Champion</name>
 		<energy>5</energy>
-		<commander id="209"/>
+		<commander id='209' />
 		<veffect>1</veffect>
 		<desc>As the second wave retreats in defeat you feel the very earth itself shudder under your feet. A gigantic hand of fire reaches out of the cavern, pulling forth a massive Orobas.</desc>
 		<speech>
@@ -2275,16 +2276,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1312"/>
-			<card id="1311"/>
-			<card id="1314"/>
-			<card id="1314"/>
-			<card id="1312"/>
-			<card id="1312"/>
-			<card id="1326"/>
-			<card id="1327"/>
-			<card id="1327"/>
-			<card id="1341"/>
+			<card id='1312' />
+			<card id='1311' />
+			<card id='1314' />
+			<card id='1314' />
+			<card id='1312' />
+			<card id='1312' />
+			<card id='1326' />
+			<card id='1327' />
+			<card id='1327' />
+			<card id='1341' />
 		</deck>
 	</mission>
 	
@@ -2296,7 +2297,7 @@
 		<id>191</id>
 		<name>Caverns of Crossing</name>
 		<energy>4</energy>
-		<commander id="212"/>
+		<commander id='212' />
 		<desc>After the defeat of Orobos at the entrance to the Caverns of Crossing, you proceed into the dark tunnels themselves.</desc>
 		<speech>
 			<line>
@@ -2313,16 +2314,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1011"/>
-			<card id="1011"/>
-			<card id="1313"/>
-			<card id="1314"/>
-			<card id="1314"/>
-			<card id="1329" level="3"/>
-			<card id="1628"/>
-			<card id="1330"/>
-			<card id="1328"/>
-			<card id="1328"/>
+			<card id='1011' />
+			<card id='1011' />
+			<card id='1313' />
+			<card id='1314' />
+			<card id='1314' />
+			<card id='1329' level='3' />
+			<card id='1628' />
+			<card id='1330' />
+			<card id='1328' />
+			<card id='1328' />
 		</deck>
 	</mission>
 	
@@ -2330,19 +2331,19 @@
 		<id>192</id>
 		<name>Depths of the World</name>
 		<energy>4</energy>
-		<commander id="212"/>
+		<commander id='212' />
 		<desc>The caverns present many enemies that try to bar your way. As the tunnels twist and turn you find yourself crossing an underground chasm.</desc>
 		<deck>
-			<card id="1311"/>
-			<card id="1011"/>
-			<card id="1613"/>
-			<card id="1613"/>
-			<card id="1017"/>
-			<card id="1026"/>
-			<card id="1328"/>
-			<card id="1328"/>
-			<card id="1629"/>
-			<card id="1629"/>
+			<card id='1311' />
+			<card id='1011' />
+			<card id='1613' />
+			<card id='1613' />
+			<card id='1017' />
+			<card id='1026' />
+			<card id='1328' />
+			<card id='1328' />
+			<card id='1629' />
+			<card id='1629' />
 		</deck>
 	</mission>
 	
@@ -2350,7 +2351,7 @@
 		<id>193</id>
 		<name>Deep Tremors</name>
 		<energy>4</energy>
-		<commander id="212"/>
+		<commander id='212' />
 		<desc>Deep tremors shake the caverns as you make your way through them. Aria leads you though the twists and turns, but even she seems unsure of the correct way.</desc>
 		<speech>
 			<line>
@@ -2367,16 +2368,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1613"/>
-			<card id="1613"/>
-			<card id="1613"/>
-			<card id="1613"/>
-			<card id="1017"/>
-			<card id="1026"/>
-			<card id="1328"/>
-			<card id="1628"/>
-			<card id="1629"/>
-			<card id="1629"/>
+			<card id='1613' />
+			<card id='1613' />
+			<card id='1613' />
+			<card id='1613' />
+			<card id='1017' />
+			<card id='1026' />
+			<card id='1328' />
+			<card id='1628' />
+			<card id='1629' />
+			<card id='1629' />
 		</deck>
 	</mission>
 	
@@ -2384,7 +2385,7 @@
 		<id>194</id>
 		<name>Mr. Bear, Tear Down This Wall</name>
 		<energy>4</energy>
-		<commander id="212"/>
+		<commander id='212' />
 		<desc>The caverns have grown dangerous due to the tremors and you've come to a dead end. Aria says this is where the exit should be located.</desc>
 		<speech>
 			<line>
@@ -2405,16 +2406,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1313"/>
-			<card id="1015"/>
-			<card id="1015"/>
-			<card id="1619"/>
-			<card id="6004"/>
-			<card id="6005"/>
-			<card id="6005"/>
-			<card id="1629"/>
-			<card id="1627"/>
-			<card id="7004"/>
+			<card id='1313' />
+			<card id='1015' />
+			<card id='1015' />
+			<card id='1619' />
+			<card id='6004' />
+			<card id='6005' />
+			<card id='6005' />
+			<card id='1629' />
+			<card id='1627' />
+			<card id='7004' />
 		</deck>
 	</mission>
 	
@@ -2422,7 +2423,7 @@
 		<id>201</id>
 		<name>The Ridge</name>
 		<energy>4</energy>
-		<commander id="220"/>
+		<commander id='220' />
 		<desc>After escaping the Caverns of Crossing, you take your first steps into the territory known as The Void. Spotting a nearby ridge, the party approaches it to find out where they are.</desc>
 		<speech>
 			<line>
@@ -2435,16 +2436,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1012"/>
-			<card id="1018"/>
-			<card id="1317" level="3"/>
-			<card id="1615"/>
-			<card id="1026"/>
-			<card id="1027"/>
-			<card id="1027"/>
-			<card id="1329"/>
-			<card id="1329"/>
-			<card id="5005"/>
+			<card id='1012' />
+			<card id='1018' />
+			<card id='1317' level='3' />
+			<card id='1615' />
+			<card id='1026' />
+			<card id='1027' />
+			<card id='1027' />
+			<card id='1329' />
+			<card id='1329' />
+			<card id='5005' />
 		</deck>
 	</mission>
 	
@@ -2452,7 +2453,7 @@
 		<id>202</id>
 		<name>From the Pits</name>
 		<energy>4</energy>
-		<commander id="220"/>
+		<commander id='220' />
 		<desc>The hike out of the pits near the caverns proves to be more dangerous than first thought.</desc>
 		<speech>
 			<line>
@@ -2465,16 +2466,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1610"/>
-			<card id="1610"/>
-			<card id="1616"/>
-			<card id="1614"/>
-			<card id="1625"/>
-			<card id="1625"/>
-			<card id="1626"/>
-			<card id="1626"/>
-			<card id="1626"/>
-			<card id="1628"/>
+			<card id='1610' />
+			<card id='1610' />
+			<card id='1616' />
+			<card id='1614' />
+			<card id='1625' />
+			<card id='1625' />
+			<card id='1626' />
+			<card id='1626' />
+			<card id='1626' />
+			<card id='1628' />
 		</deck>
 	</mission>
 	
@@ -2482,7 +2483,7 @@
 		<id>203</id>
 		<name>A Strange Man</name>
 		<energy>4</energy>
-		<commander id="220"/>
+		<commander id='220' />
 		<desc>At the top of the ridge overlooking all of The Void is a familiar figure sitting in meditation. He opens an eye as you approach.</desc>
 		<speech>
 			<line>
@@ -2499,16 +2500,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1610"/>
-			<card id="1610"/>
-			<card id="1617"/>
-			<card id="1617"/>
-			<card id="1327"/>
-			<card id="1629"/>
-			<card id="1628"/>
-			<card id="1628"/>
-			<card id="1626"/>
-			<card id="1330"/>
+			<card id='1610' />
+			<card id='1610' />
+			<card id='1617' />
+			<card id='1617' />
+			<card id='1327' />
+			<card id='1629' />
+			<card id='1628' />
+			<card id='1628' />
+			<card id='1626' />
+			<card id='1330' />
 		</deck>
 	</mission>
 	
@@ -2516,7 +2517,7 @@
 		<id>204</id>
 		<name>Malchior, Grand Excavator</name>
 		<energy>4</energy>
-		<commander id="213"/>
+		<commander id='213' />
 		<desc>You follow Oda further up the ridge where you can oversee all of The Void. There you meet the Grand Excavator.</desc>
 		<speech>
 			<line>
@@ -2539,16 +2540,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1010"/>
-			<card id="1012"/>
-			<card id="1617"/>
-			<card id="1619"/>
-			<card id="1619"/>
-			<card id="1029"/>
-			<card id="1029"/>
-			<card id="1629"/>
-			<card id="1629"/>
-			<card id="1629"/>
+			<card id='1010' />
+			<card id='1012' />
+			<card id='1617' />
+			<card id='1619' />
+			<card id='1619' />
+			<card id='1029' />
+			<card id='1029' />
+			<card id='1629' />
+			<card id='1629' />
+			<card id='1629' />
 		</deck>
 	</mission>
 	
@@ -2556,7 +2557,7 @@
 		<id>211</id>
 		<name>Misunderstanding</name>
 		<energy>6</energy>
-		<commander id="220" level="2"/>
+		<commander id='220' level='2' />
 		<desc>After fighting with Malchior, the Grand Hermit has decided that you are indeed not corrupted by The Void. Of course he is still not making much sense.</desc>
 		<speech>
 			<line>
@@ -2575,16 +2576,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1010"/>
-			<card id="1312"/>
-			<card id="1030"/>
-			<card id="1030"/>
-			<card id="1327"/>
-			<card id="1327"/>
-			<card id="1329" level="4"/>
-			<card id="1027"/>
-			<card id="1628"/>
-			<card id="1628"/>
+			<card id='1010' />
+			<card id='1312' />
+			<card id='1030' />
+			<card id='1030' />
+			<card id='1327' />
+			<card id='1327' />
+			<card id='1329' level='4' />
+			<card id='1027' />
+			<card id='1628' />
+			<card id='1628' />
 		</deck>
 	</mission>
 	
@@ -2592,7 +2593,7 @@
 		<id>212</id>
 		<name>Few Crystals Short of a Load</name>
 		<energy>6</energy>
-		<commander id="220" level="2"/>
+		<commander id='220' level='2' />
 		<desc>As you travel further into The Void, Malchior's ramblings become rather concerning.</desc>
 		<speech>
 			<line>
@@ -2613,16 +2614,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1311"/>
-			<card id="1315"/>
-			<card id="1326"/>
-			<card id="1326"/>
-			<card id="1629"/>
-			<card id="1625"/>
-			<card id="1626"/>
-			<card id="1626"/>
-			<card id="1629"/>
-			<card id="1629"/>
+			<card id='1311' />
+			<card id='1315' />
+			<card id='1326' />
+			<card id='1326' />
+			<card id='1629' />
+			<card id='1625' />
+			<card id='1626' />
+			<card id='1626' />
+			<card id='1629' />
+			<card id='1629' />
 		</deck>
 	</mission>
 	
@@ -2630,19 +2631,19 @@
 		<id>213</id>
 		<name>Rumble Tumble</name>
 		<energy>6</energy>
-		<commander id="220"/>
+		<commander id='220' />
 		<desc>As you descend down the ridge, the tremors from earlier grow stronger. You seem to be nearing their source.</desc>
 		<deck>
-			<card id="1311"/>
-			<card id="1010"/>
-			<card id="1326"/>
-			<card id="1326"/>
-			<card id="1629"/>
-			<card id="1625"/>
-			<card id="1626"/>
-			<card id="1628"/>
-			<card id="6005"/>
-			<card id="6005"/>
+			<card id='1311' />
+			<card id='1010' />
+			<card id='1326' />
+			<card id='1326' />
+			<card id='1629' />
+			<card id='1625' />
+			<card id='1626' />
+			<card id='1628' />
+			<card id='6005' />
+			<card id='6005' />
 		</deck>
 	</mission>
 	
@@ -2650,7 +2651,7 @@
 		<id>214</id>
 		<name>Source of the Tremors</name>
 		<energy>6</energy>
-		<commander id="214"/>
+		<commander id='214' />
 		<desc>At the base of a massive crater, a gigantic wurm bursts from its den. It sends rock and debris in every direction, before turning its attention towards the party.</desc>
 		<speech>
 			<line>
@@ -2675,16 +2676,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1311"/>
-			<card id="1619"/>
-			<card id="1326"/>
-			<card id="1026"/>
-			<card id="1330"/>
-			<card id="1629"/>
-			<card id="1629"/>
-			<card id="1027"/>
-			<card id="6004"/>
-			<card id="1040"/>
+			<card id='1311' />
+			<card id='1619' />
+			<card id='1326' />
+			<card id='1026' />
+			<card id='1330' />
+			<card id='1629' />
+			<card id='1629' />
+			<card id='1027' />
+			<card id='6004' />
+			<card id='1040' />
 		</deck>
 	</mission>
 	
@@ -2692,7 +2693,7 @@
 		<id>221</id>
 		<name>Gibberish</name>
 		<energy>4</energy>
-		<commander id="210" level="2"/>
+		<commander id='210' level='2' />
 		<desc>Malchior reveals that the Void have found the Heart of Blue Fire. The Heart is apparently the source of the corruption that is reaching across the land.</desc>
 		<speech>
 			<line>
@@ -2713,16 +2714,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1318"/>
-			<card id="1613"/>
-			<card id="1030"/>
-			<card id="1326"/>
-			<card id="1326"/>
-			<card id="1629"/>
-			<card id="1629"/>
-			<card id="7004"/>
-			<card id="6004"/>
-			<card id="6004"/>
+			<card id='1318' />
+			<card id='1613' />
+			<card id='1030' />
+			<card id='1326' />
+			<card id='1326' />
+			<card id='1629' />
+			<card id='1629' />
+			<card id='7004' />
+			<card id='6004' />
+			<card id='6004' />
 		</deck>
 	</mission>
 	
@@ -2730,7 +2731,7 @@
 		<id>222</id>
 		<name>Corrupted Lands</name>
 		<energy>4</energy>
-		<commander id="210" level="2"/>
+		<commander id='210' level='2' />
 		<desc>At Malchior's lead, the group heads across the crater and towards the Void's Core. Unfortunately the land between here and there is full of creatures already corrupted.</desc>
 		<speech>
 			<line>
@@ -2747,16 +2748,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1311"/>
-			<card id="1615"/>
-			<card id="1028"/>
-			<card id="1028"/>
-			<card id="1328"/>
-			<card id="1326"/>
-			<card id="1628"/>
-			<card id="6005"/>
-			<card id="7004"/>
-			<card id="7004"/>
+			<card id='1311' />
+			<card id='1615' />
+			<card id='1028' />
+			<card id='1028' />
+			<card id='1328' />
+			<card id='1326' />
+			<card id='1628' />
+			<card id='6005' />
+			<card id='7004' />
+			<card id='7004' />
 		</deck>
 	</mission>
 	
@@ -2764,7 +2765,7 @@
 		<id>223</id>
 		<name>Bo Turvar Axis</name>
 		<energy>4</energy>
-		<commander id="210" level="3"/>
+		<commander id='210' level='3' />
 		<desc>The creatures you just fought off rise up, attacking again. They seem to be determined to stop you.</desc>
 		<speech>
 			<line>
@@ -2785,16 +2786,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1018"/>
-			<card id="1018"/>
-			<card id="1326"/>
-			<card id="1326"/>
-			<card id="1626"/>
-			<card id="1626"/>
-			<card id="1629"/>
-			<card id="6004"/>
-			<card id="5005"/>
-			<card id="5005"/>
+			<card id='1018' />
+			<card id='1018' />
+			<card id='1326' />
+			<card id='1326' />
+			<card id='1626' />
+			<card id='1626' />
+			<card id='1629' />
+			<card id='6004' />
+			<card id='5005' />
+			<card id='5005' />
 		</deck>
 	</mission>
 	
@@ -2802,7 +2803,7 @@
 		<id>224</id>
 		<name>Press On</name>
 		<energy>4</energy>
-		<commander id="210" level="3"/>
+		<commander id='210' level='3' />
 		<desc>The group approaches a series of narrow gorges in The Void that they must pass to get to the lands beyond.</desc>
 		<speech>
 			<line>
@@ -2811,16 +2812,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1311"/>
-			<card id="1311"/>
-			<card id="1327"/>
-			<card id="1326"/>
-			<card id="1326"/>
-			<card id="1026"/>
-			<card id="1330"/>
-			<card id="5004"/>
-			<card id="1328"/>
-			<card id="6003"/>
+			<card id='1311' />
+			<card id='1311' />
+			<card id='1327' />
+			<card id='1326' />
+			<card id='1326' />
+			<card id='1026' />
+			<card id='1330' />
+			<card id='5004' />
+			<card id='1328' />
+			<card id='6003' />
 		</deck>
 	</mission>
 	
@@ -2828,7 +2829,7 @@
 		<id>231</id>
 		<name>Aether Raid</name>
 		<energy>4</energy>
-		<commander id="221"/>
+		<commander id='221' />
 		<desc>As your group passes through a narrow gorge, you are ambushed by a raid of corrupted Aether. You spot them just in time to defend yourself.</desc>
 		<speech>
 			<line>
@@ -2850,16 +2851,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1014"/>
-			<card id="1019"/>
-			<card id="1026"/>
-			<card id="1026"/>
-			<card id="1027"/>
-			<card id="1028"/>
-			<card id="1028"/>
-			<card id="1030"/>
-			<card id="1030"/>
-			<card id="1041"/>
+			<card id='1014' />
+			<card id='1019' />
+			<card id='1026' />
+			<card id='1026' />
+			<card id='1027' />
+			<card id='1028' />
+			<card id='1028' />
+			<card id='1030' />
+			<card id='1030' />
+			<card id='1041' />
 		</deck>
 	</mission>
 	
@@ -2867,19 +2868,19 @@
 		<id>232</id>
 		<name>Falling Feathers</name>
 		<energy>4</energy>
-		<commander id="221"/>
+		<commander id='221' />
 		<desc>The Aether pull back only to collapse upon you a second time, pushing their attack harder.</desc>
 		<deck>
-			<card id="1010"/>
-			<card id="1011"/>
-			<card id="1026"/>
-			<card id="1027"/>
-			<card id="1027"/>
-			<card id="1027"/>
-			<card id="1027"/>
-			<card id="1028"/>
-			<card id="1030"/>
-			<card id="5003"/>
+			<card id='1010' />
+			<card id='1011' />
+			<card id='1026' />
+			<card id='1027' />
+			<card id='1027' />
+			<card id='1027' />
+			<card id='1027' />
+			<card id='1028' />
+			<card id='1030' />
+			<card id='5003' />
 		</deck>
 	</mission>
 	
@@ -2887,7 +2888,7 @@
 		<id>233</id>
 		<name>Yuriel's Ambush</name>
 		<energy>4</energy>
-		<commander id="2" level="3"/>
+		<commander id='2' level='3' />
 		<desc>You've come across the Owl Mystic Yuriel out in The Void. You are surprised to see him, and he goes on the offensive before you can find out why he is here.</desc>
 		<speech>
 			<line>
@@ -2900,16 +2901,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1017"/>
-			<card id="1017"/>
-			<card id="1025"/>
-			<card id="1025"/>
-			<card id="1025"/>
-			<card id="1028"/>
-			<card id="1030"/>
-			<card id="1025"/>
-			<card id="1025"/>
-			<card id="5003"/>
+			<card id='1017' />
+			<card id='1017' />
+			<card id='1025' />
+			<card id='1025' />
+			<card id='1025' />
+			<card id='1028' />
+			<card id='1030' />
+			<card id='1025' />
+			<card id='1025' />
+			<card id='5003' />
 		</deck>
 	</mission>
 	
@@ -2917,7 +2918,7 @@
 		<id>234</id>
 		<name>Yuriel's Honor</name>
 		<energy>4</energy>
-		<commander id="2" level="3"/>
+		<commander id='2' level='3'/>
 		<desc>Yuriel reveals that the Aether, led by Samael, have come to The Void to harness the power of the Heart of Blue Fire for themselves. They plan to destroy the Chaos once and for all with its power.</desc>
 		<speech>
 			<line>
@@ -2942,15 +2943,15 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1019"/>
-			<card id="1019"/>
-			<card id="1030"/>
-			<card id="1025"/>
-			<card id="1025"/>
-			<card id="1025"/>
-			<card id="1027"/>
-			<card id="5001"/>
-			<card id="5000"/>
+			<card id='1019' />
+			<card id='1019' />
+			<card id='1030' />
+			<card id='1025' />
+			<card id='1025' />
+			<card id='1025' />
+			<card id='1027' />
+			<card id='5001' />
+			<card id='5000' />
 		</deck>
 	</mission>
 	
@@ -2958,7 +2959,7 @@
 		<id>241</id>
 		<name>Mystic's Disgrace</name>
 		<energy>10</energy>
-		<commander id="3" level="2"/>
+		<commander id='3' level='2' />
 		<desc>With the defeat of Yuriel, the party heads into the Void Core. Below where you stand is what appears to be a huge black crystal of immense size. Before it stands Samael, the leader of the Aether.</desc>
 		<speech>
 			<line>
@@ -2968,16 +2969,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1011"/>
-			<card id="1017"/>
-			<card id="1025"/>
-			<card id="1025"/>
-			<card id="1025"/>
-			<card id="1025"/>
-			<card id="1027"/>
-			<card id="1027"/>
-			<card id="1040"/>
-			<card id="1041"/>
+			<card id='1011' />
+			<card id='1017' />
+			<card id='1025' />
+			<card id='1025' />
+			<card id='1025' />
+			<card id='1025' />
+			<card id='1027' />
+			<card id='1027' />
+			<card id='1040' />
+			<card id='1041' />
 		</deck>
 	</mission>
 	
@@ -2985,7 +2986,7 @@
 		<id>242</id>
 		<name>Samael's Deceit</name>
 		<energy>10</energy>
-		<commander id="3" level="4"/>
+		<commander id='3' level='4' />
 		<desc>Samael's plan to take the Heart of Blue Fire for his own ascension comes to a head. You must stop him before he takes that power and uses it to destroy the Chaos and Wyld!</desc>
 		<speech>
 			<line>
@@ -2999,15 +3000,15 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1017"/>
-			<card id="1017"/>
-			<card id="1025"/>
-			<card id="1027"/>
-			<card id="1027"/>
-			<card id="1027"/>
-			<card id="1028"/>
-			<card id="1040"/>
-			<card id="1041"/>
+			<card id='1017' />
+			<card id='1017' />
+			<card id='1025' />
+			<card id='1027' />
+			<card id='1027' />
+			<card id='1027' />
+			<card id='1028' />
+			<card id='1040' />
+			<card id='1041' />
 		</deck>
 	</mission>
 	
@@ -3015,7 +3016,7 @@
 		<id>243</id>
 		<name>Samael's Wrath</name>
 		<energy>10</energy>
-		<commander id="3" level="6"/>
+		<commander id='3' level='6' />
 		<desc>Samael approaches the crystal, energy wrapping around the room as he reaches out to draw energy from the Heart of Blue Fire.</desc>
 		<speech>
 			<line>
@@ -3038,16 +3039,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1011"/>
-			<card id="1019"/>
-			<card id="1025"/>
-			<card id="1026"/>
-			<card id="1026"/>
-			<card id="1030"/>
-			<card id="5004"/>
-			<card id="5004"/>
-			<card id="1040"/>
-			<card id="1041"/>
+			<card id='1011' />
+			<card id='1019' />
+			<card id='1025' />
+			<card id='1026' />
+			<card id='1026' />
+			<card id='1030' />
+			<card id='5004' />
+			<card id='5004' />
+			<card id='1040' />
+			<card id='1041' />
 		</deck>
 	</mission>
 	
@@ -3055,7 +3056,7 @@
 		<id>244</id>
 		<name>The Void</name>
 		<energy>10</energy>
-		<commander id="215"/>
+		<commander id='215' />
 		<desc>Samael breaks the crystal that holds the Heart of Blue Fire, unsealing a Void monster within. You have one chance at containing it before it escapes.</desc>
 		<speech>
 			<line>
@@ -3082,16 +3083,16 @@
 			</line>
 		</speech>
 		<deck>
-			<card id="1315" level="2"/>
-			<card id="1012" level="2"/>
-			<card id="5005"/>
-			<card id="1628"/>
-			<card id="1629"/>
-			<card id="1327"/>
-			<card id="1327"/>
-			<card id="1040"/>
-			<card id="1340"/>
-			<card id="6001"/>
+			<card id='1315' level='2' />
+			<card id='1012' level='2' />
+			<card id='5005' />
+			<card id='1628' />
+			<card id='1629' />
+			<card id='1327' />
+			<card id='1327' />
+			<card id='1040' />
+			<card id='1340' />
+			<card id='6001' />
 		</deck>
 	</mission>
 
