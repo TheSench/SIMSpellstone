@@ -90,6 +90,26 @@
         background: lightgrey url('http://placehold.it/');
     }
 
+.aether-commander {
+    background-image: linear-gradient(skyblue, black);
+}
+
+.chaos-commander {
+    background-image: linear-gradient(darkred, black);
+}
+
+.wyld-commander {
+     background-image: linear-gradient(darkgreen, black);
+}
+
+.void-commander {
+    background-image: linear-gradient(purple, black);
+}
+
+.factionless-commander {
+     background-image: linear-gradient(grey, black);
+}
+
 img[src='Error.src'] {
     display: none;
 }
