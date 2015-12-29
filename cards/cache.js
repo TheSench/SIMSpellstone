@@ -10449,6 +10449,7 @@ var CARDS = {
   "2016": {
     "id": "2016",
     "name": "Atlas, the Ancient",
+    "picture": "wyldBoss_A",
     "rarity": "5",
     "set": "2000",
     "card_type": "2",
@@ -10546,6 +10547,7 @@ var CARDS = {
   "2017": {
     "id": "2017",
     "name": "Solaron, the Origin",
+    "picture": "aetherBoss_A",
     "rarity": "5",
     "set": "2000",
     "card_type": "2",
@@ -10655,6 +10657,7 @@ var CARDS = {
   "2018": {
     "id": "2018",
     "name": "Vulcanos, the Forge",
+    "picture": "chaosBoss_A",
     "rarity": "5",
     "set": "2000",
     "card_type": "2",
@@ -47062,7 +47065,7 @@ var CARDS = {
     "id": "263",
     "name": "Snow Assassin",
     "picture": "invisibleassassin",
-    "rarity": "2",
+    "rarity": "3",
     "set": "9999",
     "card_type": "1",
     "type": "1",
