@@ -85,7 +85,7 @@ function draw_hand(hand, callback, state) {
 function create_card_html(card, inHand) {
     var htmlCard = createDiv("card");
     if (card.picture) {
-        var imageUrl = 'res/cardImages/' + card.picture + '.png';
+        var imageUrl = 'res/cardImages/' + card.picture + '.jpg';
         var img = createImg(imageUrl);
         img.className = "card-image";
         if (card.isCommander()) {
