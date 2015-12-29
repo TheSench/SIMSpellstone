@@ -99,7 +99,7 @@
 }
 
 .wyld-commander {
-     background-image: linear-gradient(darkgreen, black);
+    background-image: linear-gradient(darkgreen, black);
 }
 
 .void-commander {
@@ -107,12 +107,13 @@
 }
 
 .factionless-commander {
-     background-image: linear-gradient(grey, black);
+    background-image: linear-gradient(grey, black);
 }
 
 img[src='Error.src'] {
     display: none;
 }
+
 .card-name {
     position: absolute;
     font-weight: bold;
@@ -130,31 +131,12 @@ img[src='Error.src'] {
         white-space: inherit;
         z-index: 100;
         color: black;
-    text-shadow: none;
+        text-shadow: none;
         border-bottom: solid;
         border-width: 1px;
         background-color: #FFF;
     }
-/*
-.card-name {
-    position: absolute;
-    font-weight: bold;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    border-bottom: solid;
-    border-width: 1px;
-    width: 100%;
-    background-color: #FFF;
-}
 
-    .card-name:hover {
-        overflow: inherit;
-        text-overflow: inherit;
-        white-space: inherit;
-        z-index: 100;
-    }
-    */
 .card-attack,
 .card-health,
 .card-delay,
@@ -325,8 +307,15 @@ img {
     left: 80px;
 }
 
-.float-left:not(.hand) {
+.field {
     width: 100%;
+    display: inline-block;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.field .float-left {
     border-top-style: solid;
     border-bottom-style: solid;
     padding: 5px;
@@ -335,10 +324,11 @@ img {
 }
 
 .float-left .card {
-    float: left;
     width: 84px;
     height: 120px;
     margin-right: 5px;
+    display: inline-block;
+    vertical-align:top;
 }
 
 .float-left .spacer {
