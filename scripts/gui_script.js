@@ -747,7 +747,7 @@ var auto_mode = false;
 // Global arrays
 var factions = {
     names: [
-        undefined,
+        'Factionless',
         'Aether',
         'Chaos',
         'Wyld',
@@ -759,6 +759,7 @@ var factions = {
         'Dragon',
     ],
     IDs: {
+        Factionless: 0,
         Aether: 1,
         Chaos: 2,
         Wyld: 3,
@@ -770,4 +771,3 @@ var factions = {
         Dragon: 9
     }
 };
-

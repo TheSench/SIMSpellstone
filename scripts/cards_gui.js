@@ -123,10 +123,8 @@ function create_card_html(card, inHand) {
     getTriggeredSkills(divSkills, skillsShort, card, inHand);
     htmlCard.appendChild(skillsShort);
     htmlCard.appendChild(divSkills);
-    if (card.type > 0) {
-        var faction = factions.names[card.type].toLowerCase();
-        htmlCard.appendChild(createDiv(faction));
-    }
+    var faction = factions.names[card.type].toLowerCase();
+    htmlCard.appendChild(createDiv(faction));
     var statuses = getStatuses(card);
     if (statuses.length > 0) {
         htmlCard.appendChild(createDiv("hidden", "..."));

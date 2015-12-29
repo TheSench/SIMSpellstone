@@ -41,7 +41,9 @@
 
 .wyld,
 .chaos,
-.aether {
+.aether,
+.void,
+.factionless {
     position: absolute;
     min-height: 10px;
     bottom: 0px;
@@ -62,6 +64,14 @@
 
 .aether {
     background-color: #0099FF;
+}
+
+.void {
+    background-color: purple;
+}
+
+.factionless {
+    background-color: grey;
 }
 
 .card-image {
