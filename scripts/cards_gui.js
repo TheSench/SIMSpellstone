@@ -84,14 +84,12 @@ function create_card_html(card, inHand) {
     var htmlCard = createDiv("card");
     if (card.picture) {
         var imageUrl = 'res/cardImages/' + card.picture + '.png';
-        if (true) {
-            var img = createImg(imageUrl);
-            img.className = "card-image";
-            htmlCard.appendChild(img);
-        } else {
-            htmlCard.style.backgroundImage = 'url("' + imageUrl + '")';
-            htmlCard.style.backgroundSize = "cover";
+        var img = createImg(imageUrl);
+        img.className = "card-image";
+        if (card.isCommander()) {
+            img.classList.add(factions.names[card.type].toLowerCase() + "-commander");
         }
+        htmlCard.appendChild(img);
     }
     var divName = createDiv("card-name", card.name);
     htmlCard.appendChild(divName);
