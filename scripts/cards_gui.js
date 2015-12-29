@@ -38,8 +38,10 @@ function draw_cards(drawableHand, performTurns, turn) {
         htmlTurnCounter.innerHTML = "Turn: " + turn
         cardSpace.appendChild(htmlTurnCounter);
     }
-    cardSpace.appendChild(draw_field(field.cpu));
-    cardSpace.appendChild(draw_field(field.player));
+    var divField = createDiv("field");
+    divField.appendChild(draw_field(field.cpu));
+    divField.appendChild(draw_field(field.player));
+    cardSpace.appendChild(divField);
     cardSpace.appendChild(draw_hand(drawableHand, performTurns, turn));
     cardSpace.appendChild(document.createElement('br'));
     cardSpace.appendChild(document.createElement('br'));
