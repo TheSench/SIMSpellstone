@@ -87,7 +87,7 @@
         width: 100%;
         height: 100%;
         content: '';
-        background: lightgrey url('http://placehold.it/');
+        background-image: url('../res/cardImages/NotFound.png');
     }
 
 .aether-commander {
