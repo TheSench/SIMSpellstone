@@ -29,6 +29,11 @@ void Main()
 		if (unit.picture != null)
 		{
 			pictures[unit.picture] = unit.name;
+			var imageFile = Path.Combine(@"D:\Programs\Source\Repos\SIMSpellstone\res\cardImages\", unit.picture+".jpg");
+			if(!File.Exists(imageFile))
+			{
+				unit.picture = "NotFound";
+			}s
 		}
 		else
 		{
