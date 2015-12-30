@@ -24,17 +24,22 @@
     <span id="ui">
         <form>
             <div><b>User ID:</b></div><input id="user_id" type="text" value="" size="50"><br>
+            <div><b>Request JSON:</b></div><input id="request_json" type="text" value="" size="50"><br>
         </form>
+        <hr/>
         <form id="form-post">
             <div><b>Kong ID:</b></div><input id="kong_id" name="kong_id" type="text" value="" size="50"><br>
             <div><b>Password:</b></div><input id="password" name="password" type="text" value="" size="50"><br>
             <div><b>Kong Token:</b></div><input id="kong_token" name="kong_token" type="text" value="" size="50"><br>
             <div><b>Target User ID:</b></div><input id="target_user_id" name="target_user_id" type="text" value="" size="50"><br>
+            <div><b>Client Version:</b></div><input id="client_version" name="client_version" type="text" value="17" size="50"><br>
+            <div><b>Unity Version:</b></div><input id="unity" name="unity" type="text" value="Unity4_6_6" size="50"><br>
+            <div><b>Platform:</b></div><input id="platform" name="platform" type="text" value="web" size="50"><br>
             <br>
             <div>&nbsp;</div><input id="btn_simulate" type="button" value="Retrieve" onclick="return retrieveDeck();" style="text-align: center; font-weight: bold;">
         </form>
     </span>
     <br>
-    <span id="cardSpace"></span>
+    <span id="deck"></span>
 </body>
 </html>

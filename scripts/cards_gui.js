@@ -4,8 +4,13 @@ function clearCardSpace() {
     cardSpace.innerHTML = '';
 }
 
+function clearDeckSpace() {
+    var cardSpace = document.getElementById("deck");
+    cardSpace.innerHTML = '';
+}
+
 function draw_deck(deck) {
-    var cardSpace = document.getElementById("cardSpace");
+    var cardSpace = document.getElementById("deck");
     cardSpace.innerHTML = '';
     var cards = createDiv("float-left");
     var commander = get_card_by_id(deck.commander);
@@ -88,11 +93,12 @@ function create_card_html(card, inHand) {
         var imageUrl = 'res/cardImages/' + card.picture + '.jpg';
         var img = createImg(imageUrl);
         img.className = "card-image";
-        if (card.isCommander()) {
-            img.classList.add(factions.names[card.type].toLowerCase() + "-commander");
-        }
         htmlCard.appendChild(img);
     }
+    if (card.isCommander()) {
+        htmlCard.classList.add("commander");
+    }
+    htmlCard.classList.add(factions.names[card.type].toLowerCase());
     var divName = createDiv("card-name", card.name);
     htmlCard.appendChild(divName);
     if (!card.isCommander()) {
@@ -121,10 +127,18 @@ function create_card_html(card, inHand) {
     getSkillsHtml(divSkills, skillsShort, card.skill, inHand);
     if (card.empowerSkills) getSkillsHtml(divSkills, skillsShort, card.empowerSkills, inHand);
     getTriggeredSkills(divSkills, skillsShort, card, inHand);
-    htmlCard.appendChild(skillsShort);
-    htmlCard.appendChild(divSkills);
-    var faction = factions.names[card.type].toLowerCase();
-    htmlCard.appendChild(createDiv(faction));
+    if (skillsShort.hasChildNodes()) {
+        htmlCard.appendChild(skillsShort);
+        htmlCard.appendChild(divSkills);
+    }
+    //var faction = factions.names[card.type].toLowerCase();
+    if (false) {
+        var img = createImg('res/cardAssets/Frame_Aether_01.png');
+        img.className = "card-image";
+        htmlCard.insertBefore(img, divName);
+    } else {
+        htmlCard.appendChild(createDiv("faction"));
+    }
     var statuses = getStatuses(card);
     if (statuses.length > 0) {
         htmlCard.appendChild(createDiv("hidden", "..."));
@@ -141,18 +155,15 @@ function create_card_html(card, inHand) {
         htmlCard.appendChild(htmlSubfaction);
     }
     if (card.rarity > 0) {
-        var htmlLevel = createImg('res/upgrades/' + "Level_" + card.rarity + "_" + card.level + ".png");
+        var htmlLevel = createImg('res/cardAssets/' + "Level_" + card.rarity + "_" + card.level + ".png");
         htmlLevel.className = "level";
-        htmlCard.appendChild(htmlLevel);
         if (card.id > 9999) {
             var fusion = ((card.id.toString()[0] == "1") ? "Dualfuse" : "Quadfuse");
-            var fusionLeft = createImg('res/upgrades/' + fusion + "_left.png");
-            fusionLeft.className = "fusion-left";
-            htmlCard.appendChild(fusionLeft);
-            var fusionRight = createImg('res/upgrades/' + fusion + "_right.png");
-            fusionRight.className = "fusion-right";
-            htmlCard.appendChild(fusionRight);
+            fusion = createImg('res/cardAssets/' + fusion + ".png");
+            fusion.className = "fusion";
+            htmlCard.appendChild(fusion);
         }
+        htmlCard.appendChild(htmlLevel);
     }
     return htmlCard;
 }
