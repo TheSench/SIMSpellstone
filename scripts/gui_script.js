@@ -628,6 +628,46 @@ function generate_link(autostart, autolink) {
     }
 }
 
+function load_deck_builder(player) {
+    if (player == 'player') {
+        var getdeck = document.getElementById('deck').value;
+        var getcardlist = document.getElementById('cardlist').value;
+        var getmission;
+    } else {
+        var getdeck = document.getElementById('deck2').value;
+        var getcardlist = document.getElementById('cardlist2').value;
+        var getmission = document.getElementById('mission').value;
+    }
+    //var getbattleground = document.getElementById('battleground').value;
+
+    // Load player deck
+    var url = "DeckBuilder.html";
+    var deck = {
+        commander: elariaCaptain,
+        deck: [],
+    };
+    if (getdeck) {
+        deck = hash_decode(getdeck);
+    } else if (getcardlist) {
+        deck = load_deck_from_cardlist(getcardlist);
+    } else if (getmission) {
+        deck = load_deck_mission(getmission);
+    }
+    if (deck) {
+        url += "?hash=" + hash_encode(deck);
+    }
+
+    var width = Math.min(screen.width, 1000);
+    var height = Math.min(screen.height, 700);
+    var left = Number((screen.width - width) / 2);
+    var top = Number((screen.height - height) / 2);
+
+    var windowFeatures = 'location=0,menubar=0,resizable=0,scrollbars=0,status=0,width=' + width + ',height=' + height + ',top=' + top + ',left=' + left;
+    var win = window.open(url, '', windowFeatures);
+
+    win.moveTo(left, top);
+}
+
 function display_generated_link() {
     outp('' +
 	'<br>' +

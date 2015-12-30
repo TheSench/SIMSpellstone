@@ -777,7 +777,7 @@ function hash_decode(hash) {
 
     // Default commander to Elaria Captain if none found
     if (!current_deck.commander) {
-        current_deck.commander = { id: 202, level: 7 };
+        current_deck.commander = elariaCaptain;
     }
 
     return current_deck;
@@ -922,7 +922,7 @@ function load_deck_from_cardlist(list) {
 
     // Default commander to Elaria Captain if none found
     if (!current_deck.commander) {
-        current_deck.commander = { id: 202, level: 7 };
+        current_deck.commander = elariaCaptain;
     }
 
     return current_deck;
@@ -1115,3 +1115,5 @@ function is_commander(id) {
     var card = CARDS.root.unit[id];
     return (card && card.card_type == '1');
 }
+
+var elariaCaptain = { id: 202, level: 7 };
