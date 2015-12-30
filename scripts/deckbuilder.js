@@ -17,6 +17,9 @@ var skillHidden = [];
 var factionHidden = [];
 var subfactionHidden = [];
 
+var typeFilters = [];
+var typeHidden = [];
+
 var allCards = CARDS.root.unit;
 
 var units = [];
@@ -233,13 +236,46 @@ var filterDelay = function (button, delay) {
     applyFilters();
 }
 
+var filterType = function (button, type) {
+    typeHidden = [];
+    if (button.classList.contains("selected")) {
+        button.classList.remove("selected");
+        button.checked = false;
+        for (var i = 0; i < typeFilters.length; i++) {
+            if (typeFilters[i] == type) {
+                typeFilters.splice(i, 1);
+                break;
+            }
+        }
+    } else {
+        button.classList.add("selected");
+        typeFilters.push(type);
+    }
+    if (typeFilters.length > 0) {
+        for (var i = 0, len = units.length; i < len; i++) {
+            var unit = units[i];
+            var hide = true;
+            for (var j = 0; j < typeFilters.length; j++) {
+                var type = typeFilters[j];
+                if (isInRange(unit, "card_type", type, type)) {
+                    hide = false;
+                    break;
+                }
+            }
+            if (hide) typeHidden.push(unit.id);
+        }
+    }
+    applyFilters();
+}
+
 var applyFilters = function () {
     var cards = document.getElementById("cardSpace").getElementsByClassName("card");
     for (var i = 0, len = cards.length; i < len; i++) {
         var card = cards[i];
         var id = card.id.replace("Card_", "");
         if (skillHidden.indexOf(id) > -1 || factionHidden.indexOf(id) > -1 || subfactionHidden.indexOf(id) > -1
-             || attackHidden.indexOf(id) > -1 || healthHidden.indexOf(id) > -1 || delayHidden.indexOf(id) > -1) {
+             || attackHidden.indexOf(id) > -1 || healthHidden.indexOf(id) > -1 || delayHidden.indexOf(id) > -1
+             || typeHidden.indexOf(id) > -1) {
             card.style.display = "none";
         } else {
             card.style.display = "";

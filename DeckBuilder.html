@@ -33,6 +33,9 @@
     <hr />
     <h1>Filters:</h1>
     <span>
+        <input type="button" value="Commanders" onclick="filterType(this, '1')" />
+        <input type="button" value="Units" onclick="filterType(this, '2')" />
+        <br/>
         <input type="image" name="skill" src="res/skills/Armor.png" onclick="filterSkill(this, 'armored')" />
         <input type="image" name="skill" src="res/skills/Barrier.png" onclick="filterSkill(this, 'protect')" />
         <input type="image" name="skill" src="res/skills/Bolt.png" onclick="filterSkill(this, 'strike')" />
@@ -51,11 +54,11 @@
         <input type="image" name="skill" src="res/skills/Siphon.png" onclick="filterSkill(this, 'leech')" />
         <input type="image" name="skill" src="res/skills/Vengeance.png" onclick="filterSkill(this, 'counter')" />
         <input type="image" name="skill" src="res/skills/Weaken.png" onclick="filterSkill(this, 'weaken')" />
-
+        <span style="float:left;">&nbsp;&nbsp;</span>
         <input type="image" name="faction" src="res/factions/Aether.png" onclick="filterFaction(this, 'Aether')" />
         <input type="image" name="faction" src="res/factions/Chaos.png" onclick="filterFaction(this, 'Chaos')" />
         <input type="image" name="faction" src="res/factions/Wyld.png" onclick="filterFaction(this, 'Wyld')" />
-
+        <span style="float:left;">&nbsp;&nbsp;</span>
         <input type="image" name="subfaction" src="res/factions/Angel.png" onclick="filterSubfaction(this, 'Angel')" />
         <input type="image" name="subfaction" src="res/factions/Dragon.png" onclick="filterSubfaction(this, 'Dragon')" />
         <input type="image" name="subfaction" src="res/factions/Elemental.png" onclick="filterSubfaction(this, 'Elemental')" />
@@ -68,6 +71,8 @@
         <input type="button" value="3-5" onclick="filterAttack(this, 3, 5)" />
         <input type="button" value="6-8" onclick="filterAttack(this, 6, 8)" />
         <input type="button" value="9+" onclick="filterAttack(this, 9, -1)" />
+
+        <span style="float:left;">&nbsp;&nbsp;</span>
         <img src="res/cardAssets/Health.png" style="height: 24px; float:left;" />
         <input type="button" value="1-5" onclick="filterHealth(this, 1, 5)" />
         <input type="button" value="6-10" onclick="filterHealth(this, 6, 10)" />
@@ -76,6 +81,8 @@
         <input type="button" value="21-25" onclick="filterHealth(this, 21, 25)" />
         <input type="button" value="26-30" onclick="filterHealth(this, 26, 30)" />
         <input type="button" value="31+" onclick="filterHealth(this, 31, -1)" />
+
+        <span style="float:left;">&nbsp;&nbsp;</span>
         <img src="res/cardAssets/Timer.png" style="height: 24px; float:left;" />
         <input type="button" value="0" onclick="filterDelay(this, 0)" />
         <input type="button" value="1" onclick="filterDelay(this, 1)" />
