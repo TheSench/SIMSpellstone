@@ -12,3 +12,7 @@ label > input + img{ /* IMAGE STYLES */
 label > input:checked + img{ /* (CHECKED) IMAGE STYLES */
   border:2px solid #f00;
 }
+
+input[type="image"] {
+    height: 21px;
+}

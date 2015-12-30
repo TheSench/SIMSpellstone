@@ -20,6 +20,12 @@ var subfactionHidden = [];
 var typeFilters = [];
 var typeHidden = [];
 
+var setFilters = [];
+var setHidden = [];
+
+var fusionFilters = [];
+var fusionHidden = [];
+
 var allCards = CARDS.root.unit;
 
 var units = [];
@@ -268,6 +274,70 @@ var filterType = function (button, type) {
     applyFilters();
 }
 
+var filterFusion = function (button, fusion) {
+    fusionHidden = [];
+    if (button.classList.contains("selected")) {
+        button.classList.remove("selected");
+        button.checked = false;
+        for (var i = 0; i < fusionFilters.length; i++) {
+            if (fusionFilters[i] == fusion) {
+                fusionFilters.splice(i, 1);
+                break;
+            }
+        }
+    } else {
+        button.classList.add("selected");
+        fusionFilters.push(fusion);
+    }
+    if (fusionFilters.length > 0) {
+        for (var i = 0, len = units.length; i < len; i++) {
+            var unit = units[i];
+            var fusion = (unit.id.length > 4 ? unit.id[0] : '');
+            var hide = true;
+            for (var j = 0; j < fusionFilters.length; j++) {
+                if (fusion == fusionFilters[j]) {
+                    hide = false;
+                    break;
+                }
+            }
+            if (hide) fusionHidden.push(unit.id);
+        }
+    }
+    applyFilters();
+}
+
+var filterSet = function (button, set) {
+    setHidden = [];
+    if (button.classList.contains("selected")) {
+        button.classList.remove("selected");
+        button.checked = false;
+        for (var i = 0; i < setFilters.length; i++) {
+            if (setFilters[i] == set) {
+                setFilters.splice(i, 1);
+                break;
+            }
+        }
+    } else {
+        button.classList.add("selected");
+        setFilters.push(set);
+    }
+    if (setFilters.length > 0) {
+        for (var i = 0, len = units.length; i < len; i++) {
+            var unit = units[i];
+            var hide = true;
+            for (var j = 0; j < setFilters.length; j++) {
+                var set = setFilters[j];
+                if (isInRange(unit, "set", set, set)) {
+                    hide = false;
+                    break;
+                }
+            }
+            if (hide) setHidden.push(unit.id);
+        }
+    }
+    applyFilters();
+}
+
 var applyFilters = function () {
     var cards = document.getElementById("cardSpace").getElementsByClassName("card");
     for (var i = 0, len = cards.length; i < len; i++) {
@@ -275,7 +345,7 @@ var applyFilters = function () {
         var id = card.id.replace("Card_", "");
         if (skillHidden.indexOf(id) > -1 || factionHidden.indexOf(id) > -1 || subfactionHidden.indexOf(id) > -1
              || attackHidden.indexOf(id) > -1 || healthHidden.indexOf(id) > -1 || delayHidden.indexOf(id) > -1
-             || typeHidden.indexOf(id) > -1) {
+             || typeHidden.indexOf(id) > -1 || fusionHidden.indexOf(id) > -1 || setHidden.indexOf(id) > -1) {
             card.style.display = "none";
         } else {
             card.style.display = "";
