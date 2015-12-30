@@ -10194,7 +10194,7 @@ var CARDS = {
     "name": "Pumpking",
     "picture": "Arcane_Pumpkin_A",
     "rarity": "4",
-    "set": "2000",
+    "set": "4000",
     "card_type": "2",
     "type": "2",
     "attack": 4,
@@ -10279,7 +10279,7 @@ var CARDS = {
     "name": "Pumpkhan",
     "picture": "Arcane_Pumpkin_A",
     "rarity": "4",
-    "set": "2000",
+    "set": "4000",
     "card_type": "2",
     "type": "2",
     "attack": 5,
@@ -10365,7 +10365,7 @@ var CARDS = {
     "name": "Pumpking Kong",
     "picture": "Arcane_Pumpkin_B",
     "rarity": "4",
-    "set": "2000",
+    "set": "4000",
     "card_type": "2",
     "type": "2",
     "attack": 6,
@@ -10739,23 +10739,6 @@ var CARDS = {
       "6": {
         "attack": 8,
         "skill": [],
-      },
-      "6": {
-        "skill": [
-          {
-            "id": "counter",
-            "x": 7,
-          },
-          {
-            "id": "burn",
-            "x": 5,
-          },
-          {
-            "id": "strike",
-            "x": 3,
-            "all": "1",
-          },
-        ],
       },
       "7": {
         "skill": [
@@ -11213,6 +11196,415 @@ var CARDS = {
           {
             "id": "weaken",
             "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "2021": {
+    "id": "2021",
+    "name": "Snowstep Ranger",
+    "picture": "NotFound",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "1",
+    "attack": 3,
+    "health": 8,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "y": "1",
+        "z": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 9,
+        "skill": [],
+      },
+      "3": {
+        "attack": 4,
+        "skill": [],
+      },
+      "4": {
+        "attack": 5,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+          },
+        ],
+      },
+    }
+  },
+  "12021": {
+    "id": "12021",
+    "name": "Snowstep Scout",
+    "picture": "NotFound",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "1",
+    "attack": 5,
+    "health": 10,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "protect",
+        "x": 2,
+        "y": "1",
+        "z": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 11,
+        "skill": [],
+      },
+      "3": {
+        "health": 12,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "22021": {
+    "id": "22021",
+    "name": "Snowstep Strider",
+    "picture": "NotFound",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "1",
+    "attack": 5,
+    "health": 13,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "protect",
+        "x": 2,
+        "y": "1",
+        "z": 1,
+      },
+      {
+        "id": "frost",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "health": 15,
+        "skill": [],
+      },
+      "4": {
+        "attack": 6,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "2022": {
+    "id": "2022",
+    "name": "Avalanche Equine",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "2000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "5",
+    "attack": 6,
+    "health": 12,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "fervor",
+        "x": 1,
+        "y": "3",
+        "z": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 13,
+        "skill": [],
+      },
+      "3": {
+        "health": 14,
+        "skill": [],
+      },
+      "4": {
+        "health": 15,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "3",
+            "z": 3,
+          },
+        ],
+      },
+      "6": {
+        "attack": 7,
+        "skill": [],
+      },
+    }
+  },
+  "12022": {
+    "id": "12022",
+    "name": "Snowslide Equine",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "2000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "5",
+    "attack": 7,
+    "health": 16,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "protect",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "fervor",
+        "x": 1,
+        "y": "3",
+        "z": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 17,
+        "skill": [],
+      },
+      "3": {
+        "health": 18,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+          },
+        ],
+      },
+      "5": {
+        "health": 19,
+        "skill": [],
+      },
+      "6": {
+        "attack": 8,
+        "skill": [],
+      },
+    }
+  },
+  "22022": {
+    "id": "22022",
+    "name": "Snowcrush Equine",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "2000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "5",
+    "attack": 8,
+    "health": 20,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "protect",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "3",
+        "z": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 21,
+        "skill": [],
+      },
+      "3": {
+        "health": 22,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "3",
+            "z": 3,
           },
         ],
       },
@@ -16783,7 +17175,7 @@ var CARDS = {
     "name": "Frostfire Wyrm",
     "picture": "Frost_Wyrm_A",
     "rarity": "4",
-    "set": "3000",
+    "set": "4000",
     "card_type": "2",
     "type": "1",
     "sub_type": "9",
@@ -16868,7 +17260,7 @@ var CARDS = {
     "name": "Frostflame Wyrm",
     "picture": "Frost_Wyrm_A",
     "rarity": "4",
-    "set": "3000",
+    "set": "4000",
     "card_type": "2",
     "type": "1",
     "sub_type": "9",
@@ -16941,7 +17333,7 @@ var CARDS = {
     "name": "Frostscour Wyrm",
     "picture": "Frost_Wyrm_B",
     "rarity": "4",
-    "set": "3000",
+    "set": "4000",
     "card_type": "2",
     "type": "1",
     "sub_type": "9",
@@ -17014,7 +17406,7 @@ var CARDS = {
     "name": "Northern War-kin",
     "picture": "Polar_Bear_Warrior_A",
     "rarity": "4",
-    "set": "3000",
+    "set": "4000",
     "card_type": "2",
     "type": "1",
     "attack": 6,
@@ -17097,7 +17489,7 @@ var CARDS = {
     "name": "Northern Clash-kin",
     "picture": "Polar_Bear_Warrior_A",
     "rarity": "4",
-    "set": "3000",
+    "set": "4000",
     "card_type": "2",
     "type": "1",
     "attack": 7,
@@ -17180,7 +17572,7 @@ var CARDS = {
     "name": "Northern Strife-kin",
     "picture": "Polar_Bear_Warrior_B",
     "rarity": "4",
-    "set": "3000",
+    "set": "4000",
     "card_type": "2",
     "type": "1",
     "attack": 8,
@@ -17678,6 +18070,670 @@ var CARDS = {
           {
             "id": "burn",
             "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "5030": {
+    "id": "5030",
+    "name": "Loxphas Mage",
+    "picture": "NotFound",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "attack": 4,
+    "health": 11,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 2,
+      },
+      {
+        "id": "protect",
+        "x": 1,
+      },
+      {
+        "id": "protect",
+        "x": 2,
+        "y": "1",
+        "z": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 12,
+        "skill": [],
+      },
+      "3": {
+        "health": 13,
+        "skill": [],
+      },
+      "4": {
+        "attack": 5,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+          },
+        ],
+      },
+    }
+  },
+  "15030": {
+    "id": "15030",
+    "name": "Loxphas Sorcerer",
+    "picture": "NotFound",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "attack": 5,
+    "health": 14,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 2,
+      },
+      {
+        "id": "protect",
+        "x": 2,
+      },
+      {
+        "id": "protect",
+        "x": 2,
+        "y": "1",
+        "z": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 15,
+        "skill": [],
+      },
+      "3": {
+        "attack": 6,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 3,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+          },
+        ],
+      },
+      "5": {
+        "health": 16,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 3,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "1",
+            "z": 1,
+          },
+        ],
+      },
+    }
+  },
+  "25030": {
+    "id": "25030",
+    "name": "Loxphas Wizard",
+    "picture": "NotFound",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "attack": 6,
+    "health": 17,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 3,
+      },
+      {
+        "id": "protect",
+        "x": 2,
+      },
+      {
+        "id": "protect",
+        "x": 3,
+        "y": "1",
+        "z": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 18,
+        "skill": [],
+      },
+      "3": {
+        "attack": 7,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 3,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "1",
+            "z": 1,
+          },
+        ],
+      },
+      "5": {
+        "health": 19,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 4,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "1",
+            "z": 1,
+          },
+        ],
+      },
+    }
+  },
+  "5031": {
+    "id": "5031",
+    "name": "Frostlance Valkyrie",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "6",
+    "attack": 3,
+    "health": 6,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 1,
+        "y": "1",
+        "z": 1,
+      },
+      {
+        "id": "frost",
+        "x": 1,
+      },
+      {
+        "id": "jam",
+        "c": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 7,
+        "skill": [],
+      },
+      "3": {
+        "attack": 4,
+        "skill": [],
+      },
+      "4": {
+        "health": 8,
+        "skill": [],
+      },
+      "5": {
+        "attack": 5,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+          {
+            "id": "jam",
+            "c": 6,
+          },
+        ],
+      },
+    }
+  },
+  "15031": {
+    "id": "15031",
+    "name": "Snowlance Valkyrie",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "6",
+    "attack": 5,
+    "health": 9,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 2,
+        "y": "1",
+        "z": 1,
+      },
+      {
+        "id": "frost",
+        "x": 1,
+      },
+      {
+        "id": "jam",
+        "c": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 10,
+        "skill": [],
+      },
+      "3": {
+        "health": 11,
+        "skill": [],
+      },
+      "4": {
+        "attack": 6,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+    }
+  },
+  "25031": {
+    "id": "25031",
+    "name": "Icelance Valkyrie",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "6",
+    "attack": 6,
+    "health": 12,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 3,
+        "y": "1",
+        "z": 1,
+      },
+      {
+        "id": "frost",
+        "x": 1,
+      },
+      {
+        "id": "jam",
+        "c": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 13,
+        "skill": [],
+      },
+      "3": {
+        "health": 14,
+        "skill": [],
+      },
+      "4": {
+        "attack": 7,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+        ],
+      },
+    }
+  },
+  "5032": {
+    "id": "5032",
+    "name": "Hail Hurler",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "5",
+    "attack": 0,
+    "health": 12,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "frost",
+        "x": 2,
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 13,
+        "skill": [],
+      },
+      "3": {
+        "health": 14,
+        "skill": [],
+      },
+      "4": {
+        "health": 15,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "frost",
+            "x": 3,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "15032": {
+    "id": "15032",
+    "name": "Iceblock Hurler",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "5",
+    "attack": 0,
+    "health": 16,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "frost",
+        "x": 3,
+      },
+      {
+        "id": "weaken",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 17,
+        "skill": [],
+      },
+      "3": {
+        "health": 18,
+        "skill": [],
+      },
+      "4": {
+        "health": 19,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "frost",
+            "x": 3,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "frost",
+            "x": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "25032": {
+    "id": "25032",
+    "name": "Frostshard Hurler",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "5",
+    "attack": 0,
+    "health": 20,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "frost",
+        "x": 4,
+      },
+      {
+        "id": "weaken",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 21,
+        "skill": [],
+      },
+      "3": {
+        "health": 22,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "frost",
+            "x": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "frost",
+            "x": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "frost",
+            "x": 5,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
           },
         ],
       },
@@ -22830,7 +23886,7 @@ var CARDS = {
     "name": "Bane Dragon",
     "picture": "Ruination_Dragon_A",
     "rarity": "4",
-    "set": "3000",
+    "set": "4000",
     "card_type": "2",
     "type": "2",
     "sub_type": "9",
@@ -22912,7 +23968,7 @@ var CARDS = {
     "name": "Blight Dragon",
     "picture": "Ruination_Dragon_A",
     "rarity": "4",
-    "set": "3000",
+    "set": "4000",
     "card_type": "2",
     "type": "2",
     "sub_type": "9",
@@ -22994,7 +24050,7 @@ var CARDS = {
     "name": "Ruination Dragon",
     "picture": "Ruination_Dragon_B",
     "rarity": "4",
-    "set": "3000",
+    "set": "4000",
     "card_type": "2",
     "type": "2",
     "sub_type": "9",
@@ -23726,7 +24782,7 @@ var CARDS = {
     "name": "Brahmet",
     "picture": "Multi_Armed_Beast_A",
     "rarity": "4",
-    "set": "3000",
+    "set": "4000",
     "card_type": "2",
     "type": "2",
     "attack": 6,
@@ -23810,7 +24866,7 @@ var CARDS = {
     "name": "Great Brahmet",
     "picture": "Multi_Armed_Beast_A",
     "rarity": "4",
-    "set": "3000",
+    "set": "4000",
     "card_type": "2",
     "type": "2",
     "attack": 6,
@@ -23894,7 +24950,7 @@ var CARDS = {
     "name": "Vast Brahmet",
     "picture": "Multi_Armed_Beast_B",
     "rarity": "4",
-    "set": "3000",
+    "set": "4000",
     "card_type": "2",
     "type": "2",
     "attack": 7,
@@ -24193,6 +25249,412 @@ var CARDS = {
           {
             "id": "poison",
             "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "6030": {
+    "id": "6030",
+    "name": "Noveria Yeti",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "attack": 4,
+    "health": 21,
+    "cost": 4,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 1,
+        "y": "2",
+        "z": 2,
+      },
+      {
+        "id": "frost",
+        "x": 2,
+      },
+      {
+        "id": "pierce",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 22,
+        "skill": [],
+      },
+      "3": {
+        "health": 23,
+        "skill": [],
+      },
+      "4": {
+        "health": 24,
+        "skill": [],
+      },
+      "5": {
+        "attack": 5,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "frost",
+            "x": 3,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "16030": {
+    "id": "16030",
+    "name": "Noveria Hulk",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "attack": 5,
+    "health": 25,
+    "cost": 4,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 1,
+        "y": "2",
+        "z": 2,
+      },
+      {
+        "id": "frost",
+        "x": 3,
+      },
+      {
+        "id": "pierce",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 26,
+        "skill": [],
+      },
+      "3": {
+        "health": 27,
+        "skill": [],
+      },
+      "4": {
+        "attack": 6,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "frost",
+            "x": 3,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+        ],
+      },
+      "6": {
+        "health": 28,
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "frost",
+            "x": 3,
+          },
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+        ],
+      },
+    }
+  },
+  "26030": {
+    "id": "26030",
+    "name": "Noveria Abomination",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "attack": 6,
+    "health": 29,
+    "cost": 4,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "2",
+        "z": 2,
+      },
+      {
+        "id": "frost",
+        "x": 3,
+      },
+      {
+        "id": "pierce",
+        "x": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 30,
+        "skill": [],
+      },
+      "3": {
+        "health": 31,
+        "skill": [],
+      },
+      "4": {
+        "health": 32,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "frost",
+            "x": 4,
+          },
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+        ],
+      },
+      "6": {
+        "health": 33,
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "frost",
+            "x": 4,
+          },
+          {
+            "id": "pierce",
+            "x": 6,
+          },
+        ],
+      },
+    }
+  },
+  "6031": {
+    "id": "6031",
+    "name": "Iceblood Assassin",
+    "picture": "NotFound",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "7",
+    "attack": 6,
+    "health": 7,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "pierce",
+        "x": 2,
+      },
+      {
+        "id": "leech",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 8,
+        "skill": [],
+      },
+      "3": {
+        "health": 9,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "pierce",
+            "x": 2,
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "16031": {
+    "id": "16031",
+    "name": "Iceblood Cutthroat",
+    "picture": "NotFound",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "7",
+    "attack": 6,
+    "health": 10,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "pierce",
+        "x": 3,
+      },
+      {
+        "id": "leech",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 7,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "health": 11,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "26031": {
+    "id": "26031",
+    "name": "Iceblood Rogue",
+    "picture": "NotFound",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "7",
+    "attack": 7,
+    "health": 12,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "pierce",
+        "x": 4,
+      },
+      {
+        "id": "leech",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 13,
+        "skill": [],
+      },
+      "3": {
+        "health": 14,
+        "skill": [],
+      },
+      "4": {
+        "attack": 8,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+          {
+            "id": "leech",
+            "x": 3,
           },
         ],
       },
@@ -29602,7 +31064,7 @@ var CARDS = {
     "name": "Zolmosh the Fist",
     "picture": "Earthquake_Hammer_A",
     "rarity": "4",
-    "set": "3000",
+    "set": "4000",
     "card_type": "2",
     "type": "3",
     "attack": 4,
@@ -29702,7 +31164,7 @@ var CARDS = {
     "name": "Zolmosh the Mace",
     "picture": "Earthquake_Hammer_B",
     "rarity": "4",
-    "set": "3000",
+    "set": "4000",
     "card_type": "2",
     "type": "3",
     "attack": 4,
@@ -29786,7 +31248,7 @@ var CARDS = {
     "name": "Zolmosh the Sledge",
     "picture": "Earthquake_Hammer_C",
     "rarity": "4",
-    "set": "3000",
+    "set": "4000",
     "card_type": "2",
     "type": "3",
     "attack": 5,
@@ -30391,7 +31853,7 @@ var CARDS = {
     "name": "Frostjaw",
     "picture": "Ice_Giant_A",
     "rarity": "4",
-    "set": "3000",
+    "set": "4000",
     "card_type": "2",
     "type": "3",
     "attack": 7,
@@ -30465,7 +31927,7 @@ var CARDS = {
     "name": "Frostjaw Giant",
     "picture": "Ice_Giant_A",
     "rarity": "4",
-    "set": "3000",
+    "set": "4000",
     "card_type": "2",
     "type": "3",
     "attack": 8,
@@ -30537,7 +31999,7 @@ var CARDS = {
     "name": "Hulking Frostjaw",
     "picture": "Ice_Giant_B",
     "rarity": "4",
-    "set": "3000",
+    "set": "4000",
     "card_type": "2",
     "type": "3",
     "attack": 9,
@@ -30609,7 +32071,7 @@ var CARDS = {
     "name": "Kitsune",
     "picture": "Mystical_Fox_Spirit_A",
     "rarity": "4",
-    "set": "3000",
+    "set": "4000",
     "card_type": "2",
     "type": "3",
     "attack": 4,
@@ -30701,7 +32163,7 @@ var CARDS = {
     "name": "Kitsune Yosei",
     "picture": "Mystical_Fox_Spirit_A",
     "rarity": "4",
-    "set": "3000",
+    "set": "4000",
     "card_type": "2",
     "type": "3",
     "attack": 5,
@@ -30767,7 +32229,7 @@ var CARDS = {
     "name": "Kitsune Seishin",
     "picture": "Mystical_Fox_Spirit_B",
     "rarity": "4",
-    "set": "3000",
+    "set": "4000",
     "card_type": "2",
     "type": "3",
     "attack": 6,
@@ -31336,12 +32798,388 @@ var CARDS = {
       },
     }
   },
+  "7030": {
+    "id": "7030",
+    "name": "Arctic Ambusher",
+    "picture": "NotFound",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "attack": 4,
+    "health": 8,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "3",
+        "z": 3,
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "y": "3",
+        "z": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 9,
+        "skill": [],
+      },
+      "3": {
+        "health": 10,
+        "skill": [],
+      },
+      "4": {
+        "attack": 5,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+          },
+        ],
+      },
+    }
+  },
+  "17030": {
+    "id": "17030",
+    "name": "Arctic Trooper",
+    "picture": "NotFound",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "attack": 5,
+    "health": 11,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "3",
+        "z": 3,
+      },
+      {
+        "id": "protect",
+        "x": 2,
+        "y": "3",
+        "z": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 12,
+        "skill": [],
+      },
+      "3": {
+        "health": 13,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+          },
+        ],
+      },
+    }
+  },
+  "27030": {
+    "id": "27030",
+    "name": "Arctic Warrior",
+    "picture": "NotFound",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "attack": 5,
+    "health": 14,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 3,
+        "y": "3",
+        "z": 3,
+      },
+      {
+        "id": "protect",
+        "x": 3,
+        "y": "3",
+        "z": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 15,
+        "skill": [],
+      },
+      "3": {
+        "health": 16,
+        "skill": [],
+      },
+      "4": {
+        "attack": 6,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+          },
+        ],
+      },
+    }
+  },
+  "7031": {
+    "id": "7031",
+    "name": "Saberjaw Elite",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "attack": 8,
+    "health": 11,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "pierce",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 12,
+        "skill": [],
+      },
+      "3": {
+        "health": 13,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "attack": 9,
+        "skill": [],
+      },
+      "6": {
+        "health": 14,
+        "skill": [],
+      },
+    }
+  },
+  "17031": {
+    "id": "17031",
+    "name": "Saberjaw Veteran",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "attack": 9,
+    "health": 15,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "pierce",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+        ],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+        ],
+      },
+      "4": {
+        "health": 16,
+        "skill": [],
+      },
+      "5": {
+        "attack": 10,
+        "skill": [],
+      },
+      "6": {
+        "health": 17,
+        "skill": [],
+      },
+    }
+  },
+  "27031": {
+    "id": "27031",
+    "name": "Saberjaw Magus",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "attack": 10,
+    "health": 17,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "pierce",
+        "x": 5,
+      },
+      {
+        "id": "protect",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 18,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "health": 19,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "pierce",
+            "x": 6,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
   "7032": {
     "id": "7032",
     "name": "Nidhogg",
     "picture": "Elk_Dragon_A",
     "rarity": "4",
-    "set": "3000",
+    "set": "4000",
     "card_type": "2",
     "type": "3",
     "sub_type": "9",
@@ -31410,7 +33248,7 @@ var CARDS = {
     "name": "Timber Nidhogg",
     "picture": "Elk_Dragon_A",
     "rarity": "4",
-    "set": "3000",
+    "set": "4000",
     "card_type": "2",
     "type": "3",
     "sub_type": "9",
@@ -31515,7 +33353,7 @@ var CARDS = {
     "name": "Sylvan Nidhogg",
     "picture": "Elk_Dragon_B",
     "rarity": "4",
-    "set": "3000",
+    "set": "4000",
     "card_type": "2",
     "type": "3",
     "sub_type": "9",
