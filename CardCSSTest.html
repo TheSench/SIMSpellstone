@@ -6,7 +6,7 @@
     <script id="cards_gui" type="text/javascript" src="scripts/cards_gui.js"></script>
 </head>
 <body>
-    <div class="float-left cpu">
+    <div class="float-left field">
         <div class="card commander">
             <img src="res/cardImages/bearcommander.jpg" class="card-image wyld-commander">
             <div class="oval"></div>
@@ -32,7 +32,7 @@
             <div class="card-name">Skills Example</div>
             <div class="card-attack">5</div>
             <div class="card-health">14</div>
-            <div class="card-delay">1</div>
+            <div class="delay">1</div>
             <div class="card-skills-short">
                 <img src="res/skills/Bolt.png" />
                 <img src="res/skills/Dualstrike.png" />
@@ -54,7 +54,7 @@
             <div class="card-name">Lots of Statuses</div>
             <div class="card-attack">5</div>
             <div class="card-health">14</div>
-            <div class="card-delay">1</div>
+            <div class="delay">1</div>
             <div class="card-skills-short">
                 <img src="res/skills/Bolt.png" />
                 <img src="res/skills/Dualstrike.png" />
@@ -105,7 +105,7 @@
             <div class="card-name">One Status</div>
             <div class="card-attack boosted">5</div>
             <div class="card-health reduced">14</div>
-            <div class="card-delay">1</div>
+            <div class="delay">1</div>
             <div class="card-skills-short">
                 <img src="res/skills/Bolt.png" />
                 <img src="res/skills/Dualstrike.png" />
@@ -133,7 +133,7 @@
             <div class="card-name">Stat Increases</div>
             <div class="card-attack increased">5</div>
             <div class="card-health increased">14</div>
-            <div class="card-delay">1</div>
+            <div class="delay">1</div>
             <div class="chaos">
             </div>
         </div>
@@ -141,7 +141,7 @@
             <div class="card-name">Stat Decreases</div>
             <div class="card-attack decreased">5</div>
             <div class="card-health decreased">14</div>
-            <div class="card-delay">1</div>
+            <div class="delay">1</div>
             <div class="chaos">
             </div>
         </div>
@@ -149,7 +149,7 @@
             <div class="card-name">Aether</div>
             <div class="card-attack">5</div>
             <div class="card-health">14</div>
-            <div class="card-delay">1</div>
+            <div class="delay">1</div>
             <div class="aether">
             </div>
             <img class="subfaction" src="res/factions/Elemental.png">
@@ -159,7 +159,7 @@
         <div class="card"></div>
         <div class="card"></div>
     </div>
-    <div class="float-left player">
+    <div class="float-left field">
         <div class="card commander">
             <img src="res/cardImages/ranger.jpg" class="card-image">
             <div class="oval"></div>
@@ -184,8 +184,11 @@
         <div class="card">
             <div class="card-name">Skills Example</div>
             <div class="card-attack">5</div>
+            <img class="attack" src="../res/cardAssets/Attack.png" />
             <div class="card-health">14</div>
-            <div class="card-delay">1</div>
+            <img class="health" src="res/cardAssets/Health.png" />
+            <div class="delay">1</div>
+            <img class="timer" src="res/cardAssets/Timer.png" />
             <div class="card-skills-short">
                 <img src="res/skills/Bolt.png" />
                 <img src="res/skills/Dualstrike.png" />
@@ -203,7 +206,7 @@
             <div class="card-name">Lots of Statuses</div>
             <div class="card-attack">5</div>
             <div class="card-health">14</div>
-            <div class="card-delay">1</div>
+            <div class="delay">1</div>
             <div class="card-skills-short">
                 <img src="res/skills/Bolt.png" />
                 <img src="res/skills/Dualstrike.png" />
@@ -254,7 +257,7 @@
             <div class="card-name">One Status</div>
             <div class="card-attack boosted">5</div>
             <div class="card-health reduced">14</div>
-            <div class="card-delay">1</div>
+            <div class="delay">1</div>
             <div class="card-skills-short">
                 <img src="res/skills/Bolt.png" />
                 <img src="res/skills/Dualstrike.png" />
@@ -282,7 +285,7 @@
             <div class="card-name">Stat Increases</div>
             <div class="card-attack increased">5</div>
             <div class="card-health increased">14</div>
-            <div class="card-delay">1</div>
+            <div class="delay">1</div>
             <div class="chaos">
             </div>
         </div>
@@ -290,7 +293,7 @@
             <div class="card-name">Stat Decreases</div>
             <div class="card-attack decreased">5</div>
             <div class="card-health decreased">14</div>
-            <div class="card-delay">1</div>
+            <div class="delay">1</div>
             <div class="chaos">
             </div>
         </div>
@@ -298,7 +301,7 @@
             <div class="card-name">Aether</div>
             <div class="card-attack">5</div>
             <div class="card-health">14</div>
-            <div class="card-delay">1</div>
+            <div class="delay">1</div>
             <div class="aether">
             </div>
             <img class="subfaction" src="res/factions/Elemental.png">
@@ -309,11 +312,12 @@
         <div class="card"></div>
     </div>
     <div class="float-left hand">
-        <div class="card hand-left">
+        <div class="card left">
             <div class="card-name">In Hand</div>
             <div class="card-attack">5</div>
             <div class="card-health">14</div>
-            <div class="card-delay">1</div>
+            <div class="delay">1</div>
+            <img class="timer" src="res/cardAssets/Timer.png" />
             <div class="card-skills-short">
                 <img src="res/skills/Bolt.png" />
                 <img src="res/skills/Dualstrike.png" />
@@ -334,7 +338,8 @@
             <div class="card-name">In Hand</div>
             <div class="card-attack">5</div>
             <div class="card-health">14</div>
-            <div class="hand-delay">1</div>
+            <div class="delay">1</div>
+            <img class="timer" src="res/cardAssets/Timer.png" />
             <div class="card-skills-short">
                 <img src="res/skills/Bolt.png" />
                 <img src="res/skills/Dualstrike.png" />
@@ -351,11 +356,12 @@
             </div>
             <img class="subfaction" src="res/factions/Frog.png">
         </div>
-        <div class="card hand-right">
+        <div class="card right">
             <div class="card-name">In Hand</div>
             <div class="card-attack">5</div>
             <div class="card-health">14</div>
-            <div class="hand-delay">1</div>
+            <div class="delay">1</div>
+            <img class="timer" src="res/cardAssets/Timer.png" />
             <div class="card-skills-short">
                 <img src="res/skills/Bolt.png" />
                 <img src="res/skills/Dualstrike.png" />

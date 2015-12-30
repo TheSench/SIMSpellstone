@@ -74,8 +74,8 @@ function draw_hand(hand, callback, state) {
         var unit = hand[i];
         if (!unit) continue;
         var htmlCard = create_card_html(unit, true);
-        if (i === 0) htmlCard.classList.add("hand-left");
-        else if (i === 2) htmlCard.classList.add("hand-right");
+        if (i === 0) htmlCard.classList.add("left");
+        else if (i === 2) htmlCard.classList.add("right");
         var cardidx = i;
         htmlCard.addEventListener("click", (function (inner) {
             return function () {
@@ -112,9 +112,11 @@ function create_card_html(card, inHand) {
             if (card.adjustedAttack() > card.attack) htmlAttack.classList.add("increased");
             else if (card.adjustedAttack() < card.attack) htmlAttack.classList.add("decreased");
         }
+        htmlCard.appendChild(createImg("res/cardAssets/Attack.png", "attack"));
         htmlCard.appendChild(htmlAttack);
-        if (inHand) htmlCard.appendChild(createDiv("hand-delay", card.cost));
-        else if (card.timer) htmlCard.appendChild(createDiv("card-delay", card.timer));
+        if (inHand) htmlCard.appendChild(createDiv("delay", card.cost));
+        else if (card.timer) htmlCard.appendChild(createDiv("delay", card.timer));
+        htmlCard.appendChild(createImg("res/cardAssets/Timer.png", "timer"));
     }
     if (inHand) {
         var htmlHealth = createDiv("card-health", card.health.toString());
@@ -122,6 +124,7 @@ function create_card_html(card, inHand) {
         var htmlHealth = createDiv("card-health", card.health_left.toString());
         if (card.health_left < card.health) htmlHealth.classList.add("decreased");
     }
+    htmlCard.appendChild(createImg("res/cardAssets/Health.png", "health"));
     htmlCard.appendChild(htmlHealth);
     var divSkills = createDiv("card-skills");
     var skillsShort = createDiv("card-skills-short");
@@ -349,9 +352,10 @@ function getFactionIcon(factionID) {
     return createImg('res/factions/' + factionName + '.png');
 }
 
-function createImg(src) {
+function createImg(src, className) {
     var html = document.createElement("img");
     html.setAttribute("src", src);
+    if (className) html.className = className;
     return html;
 }
 

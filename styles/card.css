@@ -12,7 +12,8 @@
 .subfaction {
     position: absolute;
     top: 12px;
-    left: 0%%;
+    left: 0px;
+    width: 12px;
     margin: 1px 1px;
     border-radius: 10px;
     box-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
@@ -148,56 +149,87 @@ img[src='Error.src'] {
 
 .card-attack,
 .card-health,
-.card-delay,
-.hand-delay {
+.delay {
     position: absolute;
     font-weight: bold;
-    padding: 1px;
-    border: solid;
-    border-width: 1px;
-    border-radius: 10px;
     width: 12px;
-    height: 12px;
     text-align: center;
-    padding: 0px;
-    margin: 0;
     color: white;
-    border-color: white;
-    box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     z-index: 99;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .card-attack {
+    left: 4px;
+    bottom: 7px;
+    border: none;
+    box-shadow: none;
+    -ms-transform: rotate(-11deg); /* IE 9 */
+    -webkit-transform: rotate(-11deg); /* Chrome, Safari, Opera */
+    transform: rotate(-11deg);
+}
+
+.card .attack {
+    position: absolute;
+    z-index: 98;
     left: 0px;
+    width: 20px;
     bottom: 0px;
-    background-color: darkviolet;
+}
+
+.card.commander .health {
+    left: 0px;
 }
 
 .card-health {
+    right: 5px;
+    bottom: 6px;
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(7deg);
+}
+
+.card .health {
+    position: absolute;
+    z-index: 98;
     right: 0px;
-    bottom: 0px;
-    background-color: deeppink;
+    width: 20px;
+    bottom: 2px;
 }
 
 .commander .card-health {
-    left: 0px;
-    bottom: 0px;
+    left: 3px;
 }
 
-.hand-delay {
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-color: #0099FF;
+.card .delay {
+    left: auto;
+    right: 4px;
+    top: 4px;
+    margin: initial;
 }
 
-.card-delay {
+.field .card .delay {
     position: absolute;
     left: 50%;
     top: 50%;
     margin: -6px 0 0 -6px;
-    background-color: #0099FF;
+}
+
+.card .timer {
+    position: absolute;
+    z-index: 98;
+    top: 0px;
+    right: 0px;
+    left: auto;
+    width: 20px;
+}
+
+.field .card .timer {
+    position: absolute;
+    z-index: 98;
+    top: 50px;
+    left: 32px;
+    width: 20px;
 }
 
 .increased {
@@ -226,8 +258,13 @@ img[src='Error.src'] {
 }
 
     .card-skills img {
+        width: 12px;
         padding-left: 2px;
         padding-right: 2px;
+    }
+
+    .card-skills-short img {
+        width: 12px;
     }
 
     .card-skills-short:hover ~ .card-skills,
@@ -283,27 +320,20 @@ img[src='Error.src'] {
     border-color: red;
 }
 
-img {
+/*img {
     width: 12px;
-}
+}*/
 
-.hand-left {
+.left {
     -ms-transform: rotate(-7deg) translate(0px, 5px); /* IE 9 */
     -webkit-transform: rotate(-7deg) translate(0px, 5px); /* Chrome, Safari, Opera */
     transform: rotate(-7deg) translate(0px, 5px);
 }
 
-.hand-right {
+.right {
     -ms-transform: rotate(7deg) translate(0px, 5px); /* IE 9 */
     -webkit-transform: rotate(7deg) translate(0px, 5px); /* Chrome, Safari, Opera */
     transform: rotate(7deg) translate(0px, 5px);
-}
-
-.hand .card-delay {
-    left: auto;
-    right: 0;
-    top: 0;
-    margin: initial;
 }
 
 .hand .card {
