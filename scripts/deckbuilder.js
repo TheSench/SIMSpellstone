@@ -40,6 +40,11 @@ var drawAllCards = function () {
     updateHash();
 };
 
+var hash_changed = function () {
+    deck = hash_decode(document.getElementById("hash").value);
+    draw_deck(deck, removeFromDeck);
+}
+
 var addToDeck = function (unit) {
     if (is_commander(unit.id)) {
         deck.commander = unit;
