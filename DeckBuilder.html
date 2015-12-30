@@ -35,6 +35,15 @@
     <span>
         <input type="button" value="Commanders" onclick="filterType(this, '1')" />
         <input type="button" value="Units" onclick="filterType(this, '2')" />
+        <span style="float:left;">&nbsp;&nbsp;</span>
+        <input type="image" name="skill" src="res/cardAssets/Singlefuse.png" onclick="filterFusion(this, '')" />
+        <input type="image" name="skill" src="res/cardAssets/Dualfuse.png" onclick="filterFusion(this, '1')" />
+        <input type="image" name="skill" src="res/cardAssets/Quadfuse.png" onclick="filterFusion(this, '2')" />
+        <span style="float:left;">&nbsp;&nbsp;</span>
+        <input type="image" name="skill" alt="Basic Set" src="res/cardAssets/Basic.png" onclick="filterSet(this, '1000')" />
+        <input type="image" name="skill" src="res/cardAssets/Premium.png" onclick="filterSet(this, '3000')" />
+        <input type="image" name="skill" src="res/cardAssets/Reward.png" onclick="filterSet(this, '2000')" />
+        <input type="image" name="skill" src="res/cardAssets/PvE.png" onclick="filterSet(this, '9999')" />
         <br/>
         <input type="image" name="skill" src="res/skills/Armor.png" onclick="filterSkill(this, 'armored')" />
         <input type="image" name="skill" src="res/skills/Barrier.png" onclick="filterSkill(this, 'protect')" />

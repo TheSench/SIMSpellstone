@@ -1055,6 +1055,7 @@ function get_slim_card_by_id(unit, getDetails) {
         new_card.id = undefined;
         new_card.name = undefined;
         new_card.card_type = undefined;
+        new_card.set = undefined;
         new_card.type = undefined;
         new_card.sub_type = undefined;
         new_card.level = undefined;
@@ -1074,6 +1075,7 @@ function get_slim_card_by_id(unit, getDetails) {
             new_card.attack = current_card.attack;
             new_card.health = current_card.health;
             new_card.cost = current_card.cost;
+            new_card.set = current_card.set;
             new_card.card_type = current_card.card_type;
             new_card.type = current_card.type;
             new_card.sub_type = current_card.sub_type;
