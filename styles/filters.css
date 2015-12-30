@@ -15,4 +15,5 @@ label > input:checked + img{ /* (CHECKED) IMAGE STYLES */
 
 input[type="image"] {
     height: 21px;
+    padding-left: 2px;
 }
