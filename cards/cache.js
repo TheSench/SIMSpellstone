@@ -18078,7 +18078,7 @@ var CARDS = {
   "5030": {
     "id": "5030",
     "name": "Loxphas Mage",
-    "picture": "NotFound",
+    "picture": "Mastodon_Mage_A",
     "rarity": "3",
     "set": "3000",
     "card_type": "2",
@@ -18138,7 +18138,7 @@ var CARDS = {
   "15030": {
     "id": "15030",
     "name": "Loxphas Sorcerer",
-    "picture": "NotFound",
+    "picture": "Mastodon_Mage_A",
     "rarity": "3",
     "set": "3000",
     "card_type": "2",
@@ -18213,7 +18213,7 @@ var CARDS = {
   "25030": {
     "id": "25030",
     "name": "Loxphas Wizard",
-    "picture": "NotFound",
+    "picture": "Mastodon_Mage_B",
     "rarity": "3",
     "set": "3000",
     "card_type": "2",
@@ -18511,7 +18511,7 @@ var CARDS = {
   "5032": {
     "id": "5032",
     "name": "Hail Hurler",
-    "picture": "NotFound",
+    "picture": "Hail_Hurler_A",
     "rarity": "4",
     "set": "4000",
     "card_type": "2",
@@ -18584,7 +18584,7 @@ var CARDS = {
   "15032": {
     "id": "15032",
     "name": "Iceblock Hurler",
-    "picture": "NotFound",
+    "picture": "Hail_Hurler_A",
     "rarity": "4",
     "set": "4000",
     "card_type": "2",
@@ -18657,7 +18657,7 @@ var CARDS = {
   "25032": {
     "id": "25032",
     "name": "Frostshard Hurler",
-    "picture": "NotFound",
+    "picture": "Hail_Hurler_B",
     "rarity": "4",
     "set": "4000",
     "card_type": "2",
@@ -25257,7 +25257,7 @@ var CARDS = {
   "6030": {
     "id": "6030",
     "name": "Noveria Yeti",
-    "picture": "NotFound",
+    "picture": "Ice_Yeti_A",
     "rarity": "4",
     "set": "3000",
     "card_type": "2",
@@ -25321,7 +25321,7 @@ var CARDS = {
   "16030": {
     "id": "16030",
     "name": "Noveria Hulk",
-    "picture": "NotFound",
+    "picture": "Ice_Yeti_A",
     "rarity": "4",
     "set": "3000",
     "card_type": "2",
@@ -25400,7 +25400,7 @@ var CARDS = {
   "26030": {
     "id": "26030",
     "name": "Noveria Abomination",
-    "picture": "NotFound",
+    "picture": "Ice_Yeti_B",
     "rarity": "4",
     "set": "3000",
     "card_type": "2",
@@ -25479,7 +25479,7 @@ var CARDS = {
   "6031": {
     "id": "6031",
     "name": "Iceblood Assassin",
-    "picture": "NotFound",
+    "picture": "Snow_Assassin_A",
     "rarity": "3",
     "set": "3000",
     "card_type": "2",
@@ -25536,7 +25536,7 @@ var CARDS = {
   "16031": {
     "id": "16031",
     "name": "Iceblood Cutthroat",
-    "picture": "NotFound",
+    "picture": "Snow_Assassin_A",
     "rarity": "3",
     "set": "3000",
     "card_type": "2",
@@ -25606,7 +25606,7 @@ var CARDS = {
   "26031": {
     "id": "26031",
     "name": "Iceblood Rogue",
-    "picture": "NotFound",
+    "picture": "Snow_Assassin_B",
     "rarity": "3",
     "set": "3000",
     "card_type": "2",
@@ -32801,7 +32801,7 @@ var CARDS = {
   "7030": {
     "id": "7030",
     "name": "Arctic Ambusher",
-    "picture": "NotFound",
+    "picture": "Penguin_Warrior_A",
     "rarity": "3",
     "set": "3000",
     "card_type": "2",
@@ -32857,7 +32857,7 @@ var CARDS = {
   "17030": {
     "id": "17030",
     "name": "Arctic Trooper",
-    "picture": "NotFound",
+    "picture": "Penguin_Warrior_A",
     "rarity": "3",
     "set": "3000",
     "card_type": "2",
@@ -32925,7 +32925,7 @@ var CARDS = {
   "27030": {
     "id": "27030",
     "name": "Arctic Warrior",
-    "picture": "NotFound",
+    "picture": "Penguin_Warrior_B",
     "rarity": "3",
     "set": "3000",
     "card_type": "2",
@@ -32981,7 +32981,7 @@ var CARDS = {
   "7031": {
     "id": "7031",
     "name": "Saberjaw Elite",
-    "picture": "NotFound",
+    "picture": "Saber_Tooth_A",
     "rarity": "4",
     "set": "3000",
     "card_type": "2",
@@ -33033,7 +33033,7 @@ var CARDS = {
   "17031": {
     "id": "17031",
     "name": "Saberjaw Veteran",
-    "picture": "NotFound",
+    "picture": "Saber_Tooth_A",
     "rarity": "4",
     "set": "3000",
     "card_type": "2",
@@ -33093,7 +33093,7 @@ var CARDS = {
   "27031": {
     "id": "27031",
     "name": "Saberjaw Magus",
-    "picture": "NotFound",
+    "picture": "Saber_Tooth_B",
     "rarity": "4",
     "set": "3000",
     "card_type": "2",
