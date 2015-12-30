@@ -1,7 +1,5 @@
 ﻿var card_cache = {};
 
-var elariaCaptain = { id: 202, level: 1 };
-
 var deck = [];
 deck.commander = elariaCaptain;
 deck.deck = [];
@@ -24,6 +22,10 @@ var allCards = CARDS.root.unit;
 var units = [];
 
 var drawAllCards = function () {
+    var hash = _GET('hash');
+    if (hash) {
+        deck = hash_decode(hash);
+    }
     for (var id in allCards) {
         if (id < 10000) {
             units.push({ id: id, level: 7 });
