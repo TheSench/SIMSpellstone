@@ -42670,7 +42670,7 @@ var CARDS = {
   "204": {
     "id": "204",
     "name": "Will O' Wisp",
-    "picture": "lightwisp",
+    "picture": "NotFound",
     "rarity": "2",
     "set": "9999",
     "card_type": "1",
@@ -42735,7 +42735,7 @@ var CARDS = {
   "205": {
     "id": "205",
     "name": "Mermaid Augurer",
-    "picture": "mermaid",
+    "picture": "NotFound",
     "rarity": "2",
     "set": "9999",
     "card_type": "1",
@@ -42784,7 +42784,7 @@ var CARDS = {
   "206": {
     "id": "206",
     "name": "Grim Titan",
-    "picture": "firetitan",
+    "picture": "NotFound",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -42843,7 +42843,7 @@ var CARDS = {
   "207": {
     "id": "207",
     "name": "Void Assassin",
-    "picture": "invisibleassassin",
+    "picture": "NotFound",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -43213,7 +43213,7 @@ var CARDS = {
   "213": {
     "id": "213",
     "name": "Grand Hermit Malchior",
-    "picture": "grandexcavator",
+    "picture": "NotFound",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -43583,7 +43583,7 @@ var CARDS = {
   "219": {
     "id": "219",
     "name": "Maniac General",
-    "picture": "maniacgeneral",
+    "picture": "NotFound",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -43719,7 +43719,7 @@ var CARDS = {
   "221": {
     "id": "221",
     "name": "Alpha Wisp",
-    "picture": "lightwisp",
+    "picture": "NotFound",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -43807,7 +43807,7 @@ var CARDS = {
   "222": {
     "id": "222",
     "name": "Titan Twins",
-    "picture": "firetitan",
+    "picture": "NotFound",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -44365,7 +44365,7 @@ var CARDS = {
   "232": {
     "id": "232",
     "name": "Frenzied Dragon",
-    "picture": "moltendragon",
+    "picture": "NotFound",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -44705,7 +44705,7 @@ var CARDS = {
   "237": {
     "id": "237",
     "name": "Kerlor, Ice Dragon",
-    "picture": "icedragon",
+    "picture": "NotFound",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -44791,7 +44791,7 @@ var CARDS = {
   "238": {
     "id": "238",
     "name": "Lantern Guardian",
-    "picture": "lanternguardian",
+    "picture": "NotFound",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -45109,7 +45109,7 @@ var CARDS = {
   "242": {
     "id": "242",
     "name": "Coral Hunter",
-    "picture": "carl",
+    "picture": "NotFound",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -45388,7 +45388,7 @@ var CARDS = {
   "245": {
     "id": "245",
     "name": "Vault Titan",
-    "picture": "firetitan",
+    "picture": "NotFound",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -45513,7 +45513,7 @@ var CARDS = {
   "246": {
     "id": "246",
     "name": "Darkwater Mermaid",
-    "picture": "mermaid",
+    "picture": "NotFound",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -45594,7 +45594,7 @@ var CARDS = {
   "247": {
     "id": "247",
     "name": "Canopy Hunter",
-    "picture": "canopyhunter",
+    "picture": "NotFound",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -45749,7 +45749,7 @@ var CARDS = {
   "249": {
     "id": "249",
     "name": "Lone Frog Scout",
-    "picture": "frogscout",
+    "picture": "NotFound",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -45810,7 +45810,7 @@ var CARDS = {
   "250": {
     "id": "250",
     "name": "Tainted Coral Elemental",
-    "picture": "carl",
+    "picture": "NotFound",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -45944,7 +45944,7 @@ var CARDS = {
   "252": {
     "id": "252",
     "name": "Berserk Emperor",
-    "picture": "frogemperor",
+    "picture": "NotFound",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -46029,7 +46029,7 @@ var CARDS = {
   "253": {
     "id": "253",
     "name": "Frostbite",
-    "picture": "Portrait_Frostbite",
+    "picture": "NotFound",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -46301,7 +46301,7 @@ var CARDS = {
   "255": {
     "id": "255",
     "name": "Solaron",
-    "picture": "aetherguardian",
+    "picture": "NotFound",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -46664,7 +46664,7 @@ var CARDS = {
   "258": {
     "id": "258",
     "name": "Winterback Ape",
-    "picture": "wintercreature",
+    "picture": "NotFound",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -46734,7 +46734,7 @@ var CARDS = {
   "259": {
     "id": "259",
     "name": "Iceback Dragon",
-    "picture": "icedragon",
+    "picture": "NotFound",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -46816,7 +46816,7 @@ var CARDS = {
   "260": {
     "id": "260",
     "name": "Ice Abomination",
-    "picture": "winterbigbad",
+    "picture": "NotFound",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -46928,7 +46928,7 @@ var CARDS = {
   "261": {
     "id": "261",
     "name": "Coldspirit Wisp",
-    "picture": "lightwisp",
+    "picture": "NotFound",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -47064,7 +47064,7 @@ var CARDS = {
   "263": {
     "id": "263",
     "name": "Snow Assassin",
-    "picture": "invisibleassassin",
+    "picture": "NotFound",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -47138,7 +47138,7 @@ var CARDS = {
   "264": {
     "id": "264",
     "name": "Vapor Hunters",
-    "picture": "winteradventurers",
+    "picture": "NotFound",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
