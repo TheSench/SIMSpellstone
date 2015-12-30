@@ -29,7 +29,9 @@ function draw_card_list(list) {
     var cards = createDiv("float-left");
     for (var i = 0, len = list.length; i < len; i++) {
         var unit = get_card_by_id(list[i]);
-        cards.appendChild(create_card_html(unit, true));
+        var card = create_card_html(unit, true)
+        card.id = "Card_" + list[i].id;
+        cards.appendChild(card);
     }
     cardSpace.appendChild(cards);
 }
