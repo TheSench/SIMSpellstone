@@ -26,6 +26,8 @@ var setHidden = [];
 var fusionFilters = [];
 var fusionHidden = [];
 
+var nameHidden = [];
+
 var allCards = CARDS.root.unit;
 
 var units = [];
@@ -122,6 +124,21 @@ var filterFaction = function (button, faction) {
     applyFilters();
 }
 
+var filterName = function (field) {
+    nameHidden = [];
+    var filter = field.value.toLowerCase();
+    if (filter) {
+        for (var i = 0, len = units.length; i < len; i++) {
+            var unit = units[i];
+            var card = get_slim_card_by_id(unit, true);
+            if (card.name.toLowerCase().indexOf(filter) == -1) {
+                nameHidden.push(unit.id);
+            }
+        }
+    }
+    applyFilters();
+}
+
 var filterSubfaction = function (button, faction) {
     subfactionHidden = [];
     if (button.classList.contains("selected")) {
@@ -172,7 +189,7 @@ var filterAttack = function (button, min, max) {
                     break;
                 }
             }
-            if(hide) attackHidden.push(unit.id);
+            if (hide) attackHidden.push(unit.id);
         }
     }
     applyFilters();
@@ -345,7 +362,8 @@ var applyFilters = function () {
         var id = card.id.replace("Card_", "");
         if (skillHidden.indexOf(id) > -1 || factionHidden.indexOf(id) > -1 || subfactionHidden.indexOf(id) > -1
              || attackHidden.indexOf(id) > -1 || healthHidden.indexOf(id) > -1 || delayHidden.indexOf(id) > -1
-             || typeHidden.indexOf(id) > -1 || fusionHidden.indexOf(id) > -1 || setHidden.indexOf(id) > -1) {
+             || typeHidden.indexOf(id) > -1 || fusionHidden.indexOf(id) > -1 || setHidden.indexOf(id) > -1
+             || nameHidden.indexOf(id) > -1) {
             card.style.display = "none";
         } else {
             card.style.display = "";
@@ -356,8 +374,8 @@ var applyFilters = function () {
 var hasSkill = function (unit, skill) {
     var card = get_slim_card_by_id(unit, true);
     var skills = card.skill;
-    for(var i = 0, len = skills.length; i < len; i++) {
-        if(skill == skills[i].id) return true;
+    for (var i = 0, len = skills.length; i < len; i++) {
+        if (skill == skills[i].id) return true;
     }
     return false;
 }
