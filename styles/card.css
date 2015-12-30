@@ -18,60 +18,89 @@
     box-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
-.fusion-left {
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    margin: 1px -14px;
-}
-
 .level {
     position: absolute;
     bottom: 0px;
     left: 50%;
-    margin: 1px -5px;
+    margin: 1px -8px;
+    width: 16px;
 }
 
-.fusion-right {
+.commander .level {
+    left:auto;
+    right: 0px;
+    margin: 1px 0px;
+}
+
+.commander .card-image {
+    border: solid;
+    border-width: 5px;
+    color: gold;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%; 
+    box-sizing: border-box;
+    box-shadow: -2px 0 black, 0 5px black, 1px 0 black, 0 -1px black;
+    outline: 5px solid red;
+}
+
+.fusion {
     position: absolute;
     bottom: 0px;
     left: 50%;
-    margin: 1px 4px;
+    margin: 1px -14px;
+    width: 28px;
 }
 
-.wyld,
-.chaos,
-.aether,
-.void,
-.factionless {
+.faction {
     position: absolute;
     min-height: 10px;
     bottom: 0px;
     width: 100%;
     z-index: 0;
-    border: solid;
+    border-top: solid;
     border-width: 0.1em;
     border-color: grey;
 }
 
-.wyld {
-    background-color: forestgreen;
+.aether .faction {
+    background-color: steelblue;
 }
 
-.chaos {
-    background-color: red;
+.chaos .faction {
+    background-color: maroon;
 }
 
-.aether {
-    background-color: #0099FF;
+.wyld .faction {
+    background-color: darkolivegreen;
 }
 
-.void {
+.void .faction {
     background-color: purple;
 }
 
-.factionless {
+.factionless .faction {
     background-color: grey;
+}
+
+.aether.commander {
+    background-image: linear-gradient(steelblue, black);
+}
+
+.chaos.commander {
+    background-image: linear-gradient(maroon, black);
+}
+
+.wyld.commander {
+    background-image: linear-gradient(darkolivegreen, black);
+}
+
+.void.commander {
+    background-image: linear-gradient(purple, black);
+}
+
+.factionless.commander {
+    background-image: linear-gradient(grey, black);
 }
 
 .card-image {
@@ -89,26 +118,6 @@
         content: '';
         background-image: url('../res/cardImages/NotFound.jpg');
     }
-
-.aether-commander {
-    background-image: linear-gradient(skyblue, black);
-}
-
-.chaos-commander {
-    background-image: linear-gradient(darkred, black);
-}
-
-.wyld-commander {
-    background-image: linear-gradient(darkgreen, black);
-}
-
-.void-commander {
-    background-image: linear-gradient(purple, black);
-}
-
-.factionless-commander {
-    background-image: linear-gradient(grey, black);
-}
 
 img[src='Error.src'] {
     display: none;
@@ -147,8 +156,8 @@ img[src='Error.src'] {
     border: solid;
     border-width: 1px;
     border-radius: 10px;
-    min-width: 12px;
-    min-height: 12px;
+    width: 12px;
+    height: 12px;
     text-align: center;
     padding: 0px;
     margin: 0;
@@ -169,6 +178,11 @@ img[src='Error.src'] {
     right: 0px;
     bottom: 0px;
     background-color: deeppink;
+}
+
+.commander .card-health {
+    left: 0px;
+    bottom: 0px;
 }
 
 .hand-delay {
@@ -271,7 +285,6 @@ img[src='Error.src'] {
 
 img {
     width: 12px;
-    height: 12px;
 }
 
 .hand-left {
