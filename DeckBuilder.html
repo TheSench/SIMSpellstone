@@ -5,6 +5,7 @@
     <title id="title_tag">DeckBuilder</title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css" media="screen">
     <link rel="stylesheet" type="text/css" href="styles/card.css">
+    <link rel="stylesheet" type="text/css" href="styles/filters.css">
 
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
@@ -18,7 +19,7 @@
     <script id="deckbuilder" type="text/javascript" src="scripts/deckbuilder.js"></script>
 
 </head>
-<body onload ="drawAllCards()">
+<body onload="drawAllCards()">
 
     <h1 id="version_label">Deck Builder</h1>
     <br>
@@ -27,6 +28,63 @@
     </span>
     <br>
     <span id="deck"></span>
+    <div><b>Deck Hash:</b></div><input id="hash" type="text" value="" size="100"><br>
+    <div>&nbsp;</div><font color="#666"><strong>Hash example:</strong> EAIgtjRUlRUfRUfRZSRZSRZS</font><br>
+    <hr />
+    <h1>Filters:</h1>
+    <span>
+        <input type="image" name="skill" src="res/skills/Armor.png" onclick="filterSkill(this, 'armored')" />
+        <input type="image" name="skill" src="res/skills/Barrier.png" onclick="filterSkill(this, 'protect')" />
+        <input type="image" name="skill" src="res/skills/Bolt.png" onclick="filterSkill(this, 'strike')" />
+        <input type="image" name="skill" src="res/skills/Dualstrike.png" onclick="filterSkill(this, 'flurry')" />
+        <input type="image" name="skill" src="res/skills/Empower.png" onclick="filterSkill(this, 'rally')" />
+        <input type="image" name="skill" src="res/skills/Enhance.png" onclick="filterSkill(this, 'enhance')" />
+        <input type="image" name="skill" src="res/skills/Fervor.png" onclick="filterSkill(this, 'fervor')" />
+        <input type="image" name="skill" src="res/skills/Freeze.png" onclick="filterSkill(this, 'jam')" />
+        <input type="image" name="skill" src="res/skills/Frost.png" onclick="filterSkill(this, 'frost')" />
+        <input type="image" name="skill" src="res/skills/Heal.png" onclick="filterSkill(this, 'heal')" />
+        <input type="image" name="skill" src="res/skills/Hex.png" onclick="filterSkill(this, 'enfeeble')" />
+        <input type="image" name="skill" src="res/skills/Invisibility.png" onclick="filterSkill(this, 'evade')" />
+        <input type="image" name="skill" src="res/skills/Pierce.png" onclick="filterSkill(this, 'pierce')" />
+        <input type="image" name="skill" src="res/skills/Poison.png" onclick="filterSkill(this, 'poison')" />
+        <input type="image" name="skill" src="res/skills/Scorch.png" onclick="filterSkill(this, 'burn')" />
+        <input type="image" name="skill" src="res/skills/Siphon.png" onclick="filterSkill(this, 'leech')" />
+        <input type="image" name="skill" src="res/skills/Vengeance.png" onclick="filterSkill(this, 'counter')" />
+        <input type="image" name="skill" src="res/skills/Weaken.png" onclick="filterSkill(this, 'weaken')" />
+
+        <input type="image" name="faction" src="res/factions/Aether.png" onclick="filterFaction(this, 'Aether')" />
+        <input type="image" name="faction" src="res/factions/Chaos.png" onclick="filterFaction(this, 'Chaos')" />
+        <input type="image" name="faction" src="res/factions/Wyld.png" onclick="filterFaction(this, 'Wyld')" />
+
+        <input type="image" name="subfaction" src="res/factions/Angel.png" onclick="filterSubfaction(this, 'Angel')" />
+        <input type="image" name="subfaction" src="res/factions/Dragon.png" onclick="filterSubfaction(this, 'Dragon')" />
+        <input type="image" name="subfaction" src="res/factions/Elemental.png" onclick="filterSubfaction(this, 'Elemental')" />
+        <input type="image" name="subfaction" src="res/factions/Frog.png" onclick="filterSubfaction(this, 'Frog')" />
+        <input type="image" name="subfaction" src="res/factions/Undead.png" onclick="filterSubfaction(this, 'Undead')" />
+        <br />
+        <img src="res/cardAssets/Attack.png" style="height: 24px; float:left;"/>
+        <input type="button" value="0" onclick="filterAttack(this, 0, 0)" />
+        <input type="button" value="1-2" onclick="filterAttack(this, 1, 2)" />
+        <input type="button" value="3-5" onclick="filterAttack(this, 3, 5)" />
+        <input type="button" value="6-8" onclick="filterAttack(this, 6, 8)" />
+        <input type="button" value="9+" onclick="filterAttack(this, 9, -1)" />
+        <img src="res/cardAssets/Health.png" style="height: 24px; float:left;" />
+        <input type="button" value="1-5" onclick="filterHealth(this, 1, 5)" />
+        <input type="button" value="6-10" onclick="filterHealth(this, 6, 10)" />
+        <input type="button" value="11-15" onclick="filterHealth(this, 11, 15)" />
+        <input type="button" value="16-20" onclick="filterHealth(this, 16, 20)" />
+        <input type="button" value="21-25" onclick="filterHealth(this, 21, 25)" />
+        <input type="button" value="26-30" onclick="filterHealth(this, 26, 30)" />
+        <input type="button" value="31+" onclick="filterHealth(this, 31, -1)" />
+        <img src="res/cardAssets/Timer.png" style="height: 24px; float:left;" />
+        <input type="button" value="0" onclick="filterDelay(this, 0)" />
+        <input type="button" value="1" onclick="filterDelay(this, 1)" />
+        <input type="button" value="2" onclick="filterDelay(this, 2)" />
+        <input type="button" value="3" onclick="filterDelay(this, 3)" />
+        <input type="button" value="4" onclick="filterDelay(this, 4)" />
+    </span>
+    <br>
+    <hr />
     <span id="cardSpace"></span>
-    </body>
+</body>
 </html>

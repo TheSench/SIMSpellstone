@@ -9,27 +9,27 @@ function clearDeckSpace() {
     cardSpace.innerHTML = '';
 }
 
-function draw_deck(deck) {
+function draw_deck(deck, onclick) {
     var cardSpace = document.getElementById("deck");
     cardSpace.innerHTML = '';
     var cards = createDiv("float-left");
     var commander = get_card_by_id(deck.commander);
-    cards.appendChild(create_card_html(commander, false));
+    cards.appendChild(create_card_html(commander, false, onclick));
     cards.appendChild(createDiv("spacer"));
-    for (var i = 0, len = deck.length; i < len; i++) {
-        var unit = get_card_by_id(deck[i]);
-        cards.appendChild(create_card_html(unit, false));
+    for (var i = 0, len = deck.deck.length; i < len; i++) {
+        var unit = get_card_by_id(deck.deck[i]);
+        cards.appendChild(create_card_html(unit, false, onclick));
     }
     cardSpace.appendChild(cards);
 }
 
-function draw_card_list(list) {
+function draw_card_list(list, onclick) {
     var cardSpace = document.getElementById("cardSpace");
     cardSpace.innerHTML = '';
     var cards = createDiv("float-left");
     for (var i = 0, len = list.length; i < len; i++) {
         var unit = get_card_by_id(list[i]);
-        var card = create_card_html(unit, true)
+        var card = create_card_html(unit, true, onclick);
         card.id = "Card_" + list[i].id;
         cards.appendChild(card);
     }
@@ -89,7 +89,7 @@ function draw_hand(hand, callback, state) {
     return cards;
 }
 
-function create_card_html(card, inHand) {
+function create_card_html(card, inHand, onclick) {
     var htmlCard = createDiv("card");
     if (card.picture) {
         var imageUrl = 'res/cardImages/' + card.picture + '.jpg';
@@ -169,6 +169,13 @@ function create_card_html(card, inHand) {
             htmlCard.appendChild(fusion);
         }
         htmlCard.appendChild(htmlLevel);
+    }
+    if (onclick) {
+        htmlCard.addEventListener("click", (function (inner) {
+            return function () {
+                onclick(inner);
+            };
+        })({id: card.id, level: card.level}));
     }
     return htmlCard;
 }

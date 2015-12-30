@@ -45,10 +45,11 @@ function myCallback(data) {
     var commander = deck_info.commander;
     var deck = [];
     deck.commander = { id: commander.unit_id, level: commander.level };
+    deck.deck = [];
     var units = deck_info.units
     for (var i = 0; i < units.length; i++) {
         var unit = units[i];
-        deck.push({ id: unit.unit_id, level: unit.level });
+        deck.deck.push({ id: unit.unit_id, level: unit.level });
     }
     draw_deck(deck);
 }
