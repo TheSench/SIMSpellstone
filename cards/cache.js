@@ -11516,7 +11516,7 @@ var CARDS = {
   "22022": {
     "id": "22022",
     "name": "Snowcrush Equine",
-    "picture": "NotFound",
+    "picture": "Avalanche_Spirit_A",
     "rarity": "4",
     "set": "2000",
     "card_type": "2",
