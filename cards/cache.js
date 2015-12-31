@@ -11204,7 +11204,7 @@ var CARDS = {
   "2021": {
     "id": "2021",
     "name": "Snowstep Ranger",
-    "picture": "NotFound",
+    "picture": "Snowstep_Ranger_A",
     "rarity": "3",
     "set": "2000",
     "card_type": "2",
@@ -11256,7 +11256,7 @@ var CARDS = {
   "12021": {
     "id": "12021",
     "name": "Snowstep Scout",
-    "picture": "NotFound",
+    "picture": "Snowstep_Ranger_A",
     "rarity": "3",
     "set": "2000",
     "card_type": "2",
@@ -11322,7 +11322,7 @@ var CARDS = {
   "22021": {
     "id": "22021",
     "name": "Snowstep Strider",
-    "picture": "NotFound",
+    "picture": "Snowstep_Ranger_B",
     "rarity": "3",
     "set": "2000",
     "card_type": "2",
@@ -11382,7 +11382,7 @@ var CARDS = {
   "2022": {
     "id": "2022",
     "name": "Avalanche Equine",
-    "picture": "NotFound",
+    "picture": "Avalanche_Spirit_A",
     "rarity": "4",
     "set": "2000",
     "card_type": "2",
@@ -11449,7 +11449,7 @@ var CARDS = {
   "12022": {
     "id": "12022",
     "name": "Snowslide Equine",
-    "picture": "NotFound",
+    "picture": "Avalanche_Spirit_A",
     "rarity": "4",
     "set": "2000",
     "card_type": "2",
@@ -18288,7 +18288,7 @@ var CARDS = {
   "5031": {
     "id": "5031",
     "name": "Frostlance Valkyrie",
-    "picture": "NotFound",
+    "picture": "Winter_Angel_A",
     "rarity": "4",
     "set": "3000",
     "card_type": "2",
@@ -18353,7 +18353,7 @@ var CARDS = {
   "15031": {
     "id": "15031",
     "name": "Snowlance Valkyrie",
-    "picture": "NotFound",
+    "picture": "Winter_Angel_A",
     "rarity": "4",
     "set": "3000",
     "card_type": "2",
@@ -18432,7 +18432,7 @@ var CARDS = {
   "25031": {
     "id": "25031",
     "name": "Icelance Valkyrie",
-    "picture": "NotFound",
+    "picture": "Winter_Angel_B",
     "rarity": "4",
     "set": "3000",
     "card_type": "2",
