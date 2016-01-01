@@ -395,7 +395,7 @@ var isInSubfaction = function (unit, faction) {
 var isInRange = function (unit, field, min, max) {
     var card = get_slim_card_by_id(unit, true);
     var value = card[field];
-    if (value < min) return false;
-    if (max > 0 && value > max) return false;
+    if (min >= 0 && value < min) return false;
+    if (max >= 0 && value > max) return false;
     return true;
 }
