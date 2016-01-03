@@ -2,13 +2,22 @@
   <Reference>&lt;RuntimeDirectory&gt;\System.XML.dll</Reference>
 </Query>
 
+static bool getImages = false;
+static string path = @"D:\Programs\Source\Repos\SIMSpellstone\cards";
+static string baseUrl = @"https://spellstone.synapse-games.com/assets";
+
+
+static System.Net.WebClient webClient = new System.Net.WebClient();
 static HashSet<string> g_unitIDs;
 
 void Main()
 {
-	var getImages = false;
+	Normalize(Path.Combine("cards.xml"));
+	Normalize(Path.Combine("missions.xml"));
+	Normalize(Path.Combine("fusion_recipes_cj2.xml"));
+	Normalize(Path.Combine("levels.xml"));
+	
 	g_unitIDs = new HashSet<string>();
-	var path = Path.GetDirectoryName(Util.CurrentQueryPath);
 	var xmlFile = Path.Combine(path, "cards.xml");
 	var doc = XDocument.Load(xmlFile);
 	
@@ -628,4 +637,12 @@ private static void AppendSkill(StringBuilder sb, skill skill, string tabs)
 	AppendEntryString(sb, "all", skill.all, propTabs);
 	
 	sb.Append(tabs).Append("},\r\n");
+}
+
+private static void Normalize(string fileName)
+{
+	string filepath = Path.Combine(path, fileName);
+	string url = Path.Combine(baseUrl, fileName);
+	webClient.DownloadFile(url, filepath);
+	XDocument.Load(filepath).Save(filepath);
 }
