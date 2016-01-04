@@ -369,6 +369,6 @@ function createImg(src, className) {
 function createDiv(className, value) {
     var div = document.createElement("div");
     if (className) div.className = className;
-    if (value) div.innerHTML = value;
+    if (value !== undefined) div.innerHTML = value;
     return div;
 }
