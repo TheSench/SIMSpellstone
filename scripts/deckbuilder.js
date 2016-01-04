@@ -17,6 +17,9 @@ var skillHidden = [];
 var factionHidden = [];
 var subfactionHidden = [];
 
+var rarityFilters = [];
+var rarityHidden = [];
+
 var typeFilters = [];
 var typeHidden = [];
 
@@ -345,6 +348,38 @@ var filterSet = function (button, set) {
             for (var j = 0; j < setFilters.length; j++) {
                 var set = setFilters[j];
                 if (isInRange(unit, "set", set, set)) {
+                    hide = false;
+                    break;
+                }
+            }
+            if (hide) setHidden.push(unit.id);
+        }
+    }
+    applyFilters();
+}
+
+var filterRarity = function (button, rarity) {
+    setHidden = [];
+    if (button.classList.contains("selected")) {
+        button.classList.remove("selected");
+        button.checked = false;
+        for (var i = 0; i < rarityFilters.length; i++) {
+            if (rarityFilters[i] == rarity) {
+                rarityFilters.splice(i, 1);
+                break;
+            }
+        }
+    } else {
+        button.classList.add("selected");
+        rarityFilters.push(rarity);
+    }
+    if (rarityFilters.length > 0) {
+        for (var i = 0, len = units.length; i < len; i++) {
+            var unit = units[i];
+            var hide = true;
+            for (var j = 0; j < rarityFilters.length; j++) {
+                var rarity = rarityFilters[j];
+                if (isInRange(unit, "rarity", rarity, rarity)) {
                     hide = false;
                     break;
                 }
