@@ -359,7 +359,7 @@ var filterSet = function (button, set) {
 }
 
 var filterRarity = function (button, rarity) {
-    setHidden = [];
+    rarityHidden = [];
     if (button.classList.contains("selected")) {
         button.classList.remove("selected");
         button.checked = false;
@@ -384,7 +384,7 @@ var filterRarity = function (button, rarity) {
                     break;
                 }
             }
-            if (hide) setHidden.push(unit.id);
+            if (hide) rarityHidden.push(unit.id);
         }
     }
     applyFilters();
@@ -398,7 +398,7 @@ var applyFilters = function () {
         if (skillHidden.indexOf(id) > -1 || factionHidden.indexOf(id) > -1 || subfactionHidden.indexOf(id) > -1
              || attackHidden.indexOf(id) > -1 || healthHidden.indexOf(id) > -1 || delayHidden.indexOf(id) > -1
              || typeHidden.indexOf(id) > -1 || fusionHidden.indexOf(id) > -1 || setHidden.indexOf(id) > -1
-             || nameHidden.indexOf(id) > -1) {
+             || nameHidden.indexOf(id) > -1 || rarityHidden.indexOf(id) > -1) {
             card.style.display = "none";
         } else {
             card.style.display = "";
