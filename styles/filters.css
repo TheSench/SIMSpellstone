@@ -2,18 +2,25 @@
     background: grey;
 }
 
-label > input{ /* HIDE RADIO */
-  display:none;
+label > input { /* HIDE RADIO */
+    display: none;
 }
-label > input + img{ /* IMAGE STYLES */
-  cursor:pointer;
-  border:2px solid transparent;
-}
-label > input:checked + img{ /* (CHECKED) IMAGE STYLES */
-  border:2px solid #f00;
-}
+
+    label > input + img { /* IMAGE STYLES */
+        cursor: pointer;
+        border: 2px solid transparent;
+    }
+
+    label > input:checked + img { /* (CHECKED) IMAGE STYLES */
+        border: 2px solid #f00;
+    }
 
 input[type="image"] {
     height: 21px;
     padding-left: 2px;
+}
+
+.spacer {
+    float: left;
+    width: 10px;
 }
