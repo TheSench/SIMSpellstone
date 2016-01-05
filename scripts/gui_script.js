@@ -159,12 +159,12 @@ function onpageload() {
         d.value = _GET('list2');
     }
 
-    if (_GET('surge')) {
+    if (_DEFINED('surge')) {
         var d = document.getElementById('surge');
         d.checked = true;
     }
 
-    if (_GET('siege')) {
+    if (_DEFINED('siege')) {
         var d = document.getElementById('siege');
         d.checked = true;
     }
@@ -183,31 +183,31 @@ function onpageload() {
         d.value = tower_type;
     }
 
-    if (_GET('tournament')) {
+    if (_DEFINED('tournament')) {
         var d = document.getElementById('tournament');
         d.checked = true;
     }
 
-    if (_GET('ordered')) {
+    if (_DEFINED('ordered')) {
         var d = document.getElementById('ordered');
         if (d) {
             d.checked = true;
         }
     }
 
-    if (_GET('exactorder')) {
+    if (_DEFINED('exactorder')) {
         var d = document.getElementById('exactorder');
         if (d) {
             d.checked = true;
         }
     }
 
-    if (_GET('ordered2')) {
+    if (_DEFINED('ordered2')) {
         var d = document.getElementById('ordered2');
         d.checked = true;
     }
 
-    if (_GET('exactorder2')) {
+    if (_DEFINED('exactorder2')) {
         var d = document.getElementById('exactorder2');
         d.checked = true;
     }
@@ -242,40 +242,40 @@ function onpageload() {
         }
     }
 
-    if (_GET('debug')) {
+    if (_DEFINED('debug')) {
         var d = document.getElementById('debug');
         d.checked = true;
     }
     
-    if (_GET('auto_mode')) {
+    if (_DEFINED('auto_mode')) {
         var d = document.getElementById('auto_mode');
         if (d) {
             d.checked = true;
         }
     }
 
-    if (_GET('mass_debug')) {
+    if (_DEFINED('mass_debug')) {
         var d = document.getElementById('mass_debug');
         if (d) {
             d.checked = true;
         }
     }
 
-    if (_GET('loss_debug')) {
+    if (_DEFINED('loss_debug')) {
         var d = document.getElementById('loss_debug');
         if (d) {
             d.checked = true;
         }
     }
 
-    if (_GET('win_debug')) {
+    if (_DEFINED('win_debug')) {
         var d = document.getElementById('win_debug');
         if (d) {
             d.checked = true;
         }
     }
 
-    if (_GET('user_controlled')) {
+    if (_DEFINED('user_controlled')) {
         var d = document.getElementById('user_controlled');
         if (d) {
             d.checked = true;
@@ -315,7 +315,7 @@ function onpageload() {
         }
     }
 
-    if (_GET('autostart')) {
+    if (_DEFINED('autostart')) {
         startsim(1);
     }
 }
@@ -520,12 +520,12 @@ function generate_link(autostart, autolink) {
 
     d = document.getElementById('surge');
     if (d.checked) {
-        parameters.push('surge=1');
+        parameters.push('surge');
     }
 
     d = document.getElementById('siege');
     if (d.checked) {
-        parameters.push('siege=1');
+        parameters.push('siege');
         d = document.getElementById('tower_level');
         parameters.push('tower_level=' + d.value);
         d = document.getElementById('tower_type');
@@ -540,22 +540,22 @@ function generate_link(autostart, autolink) {
     */
     d = document.getElementById('ordered');
     if (d && d.checked) {
-        parameters.push('ordered=1');
+        parameters.push('ordered');
     }
 
     d = document.getElementById('exactorder');
     if (d && d.checked) {
-        parameters.push('exactorder=1');
+        parameters.push('exactorder');
     }
 
     d = document.getElementById('ordered2');
     if (d.checked) {
-        parameters.push('ordered2=1');
+        parameters.push('ordered2');
     }
 
     d = document.getElementById('exactorder2');
     if (d.checked) {
-        parameters.push('exactorder2=1');
+        parameters.push('exactorder2');
     }
 
     d = document.getElementById('mission');
@@ -582,40 +582,40 @@ function generate_link(autostart, autolink) {
 
     d = document.getElementById('user_controlled');
     if (d && d.checked) {
-        parameters.push('user_controlled=1');
+        parameters.push('user_controlled');
     }
 
     d = document.getElementById('debug');
     if (d.checked) {
-        parameters.push('debug=1');
+        parameters.push('debug');
     }
 
     d = document.getElementById('auto_mode');
     if (d && d.checked) {
-        parameters.push('auto_mode=1');
+        parameters.push('auto_mode');
     }
 
     d = document.getElementById('mass_debug');
     if (d && d.checked) {
-        parameters.push('mass_debug=1');
+        parameters.push('mass_debug');
     }
 
     d = document.getElementById('loss_debug');
     if (d && d.checked) {
-        parameters.push('loss_debug=1');
+        parameters.push('loss_debug');
     }
 
     d = document.getElementById('win_debug');
     if (d && d.checked) {
-        parameters.push('win_debug=1');
+        parameters.push('win_debug');
     }
 
     if (autostart) {
-        parameters.push('autostart=1');
+        parameters.push('autostart');
     }
 
     if (autolink) {
-        parameters.push('autolink=1');
+        parameters.push('autolink');
     }
 
     if (use_workers && max_workers) {

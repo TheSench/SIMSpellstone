@@ -39,11 +39,8 @@ var drawAllCards = function () {
     var hash = _GET('hash');
     if (hash) {
         deck = hash_decode(hash);
-    } else {
-        hash = _GET('spoilers');
-        if (hash) {
-            deck = spoilers;
-        }
+    } else if (_DEFINED('spoilers')) {
+        deck = spoilers;
     }
     for (var id in allCards) {
         if (id < 10000) {

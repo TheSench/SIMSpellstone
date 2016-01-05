@@ -247,7 +247,7 @@ if (use_workers) {
             return false;
         }
 
-        if (_GET('autolink') && !autostart) {
+        if (_DEFINED('autolink') && !autostart) {
             window.location.href = generate_link(1, 1);
             return false;
         }

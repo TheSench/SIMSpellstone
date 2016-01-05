@@ -1,7 +1,7 @@
 // Initialize simulation loop - runs once per simulation session
 var startsim = function (autostart) {
 
-    if (_GET('autolink') && !autostart) {
+    if (_DEFINED('autolink') && !autostart) {
         window.location.href = generate_link(1, 1);
         return false;
     }
