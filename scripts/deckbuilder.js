@@ -147,17 +147,18 @@ var filterAdvanced = function (skill) {
         var max = parseInt($("#amount-max")[0].value);
         if (isNaN(min)) min = 0;
         if (isNaN(max)) max = 99;
-        info.x = {min: min, max: max};
+        info.x = { min: min, max: max };
     }
     if ($("div#timer")[0].style.display != "none") {
         var min = parseInt($("#timer-min")[0].value);
         var max = parseInt($("#timer-max")[0].value);
         if (isNaN(min)) min = 0;
         if (isNaN(max)) max = 99;
-        info.c = {min: min, max: max};
+        info.c = { min: min, max: max };
     }
     if ($("div#faction")[0].style.display != "none") {
-        info.y = factions.IDs[$("select#faction")[0].value];
+        var faction = $("select#faction")[0].value;
+        info.y = (faction == "Generic") ? -1 : factions.IDs[faction];
     }
     if ($("div#skill")[0].style.display != "none") {
         if ($("select#skill")[0].value.length > 0) {
@@ -457,7 +458,7 @@ var contextTest = function (skill) {
     $("#amount-max")[0].value = 99;
     $("#timer-min")[0].value = 0;
     $("#timer-max")[0].value = 99;
-    $("select#faction")[0].value = 'Any';
+    $("select#faction")[0].value = '';
     $("select#skill")[0].value = '';
     $("select#all")[0].value = -1;
     for (var i = 0; i < skillFiltersAdv.length; i++) {
@@ -471,7 +472,10 @@ var contextTest = function (skill) {
                 $("#timer-min")[0].value = skillInfo.c.min;
                 $("#timer-max")[0].value = skillInfo.c.max;
             }
-            if (skillInfo.y) $("select#faction")[0].value = factions.names[skillInfo.y];
+            if (skillInfo.y) {
+                if (skillInfo.y == -1)
+                    $("select#faction")[0].value = "Generic";
+            }
             if (skillInfo.s) $("select#skill")[0].value = skillInfo.s;
             if (skillInfo.all) $("select#all")[0].value = skillInfo.all;
             break;
@@ -491,7 +495,7 @@ var contextTest = function (skill) {
         case 'berserk':
             $("div#amount").show();
             break;
-        // x="1" y="1" all="0" c="0" s="0"
+            // x="1" y="1" all="0" c="0" s="0"
         case 'legion':
         case 'fervor':
         case 'reanimate':
@@ -499,7 +503,7 @@ var contextTest = function (skill) {
             $("div#amount").show();
             $("div#faction").show();
             break;
-        // x="1" y="1" all="1" c="0" s="0"
+            // x="1" y="1" all="1" c="0" s="0"
         case 'rally':
         case 'heal':
         case 'protect':
@@ -507,14 +511,14 @@ var contextTest = function (skill) {
             $("label[for=all]").show();
             $("div#faction").show();
             break;
-        // x="1" y="0" all="1" c="0" s="0"
+            // x="1" y="0" all="1" c="0" s="0"
         case 'enfeeble':
         case 'strike':
         case 'weaken':
             $("div#amount").show();
             $("label[for=all]").show();
             break;
-        // x="1" y="1" all="1" c="1" s="1"
+            // x="1" y="1" all="1" c="1" s="1"
         case 'enhance':
             $("div#amount").show();
             $("label[for=all]").show();
@@ -522,12 +526,12 @@ var contextTest = function (skill) {
             $("div#skill").show();
             $("div#timer").show();
             break;
-        // x="0" y="0" all="1" c="1" s="0"
+            // x="0" y="0" all="1" c="1" s="0"
         case 'jam':
             $("label[for=all]").show();
             $("div#timer").show();
             break;
-        // x="0" y="0" all="0" c="1" s="0"
+            // x="0" y="0" all="0" c="1" s="0"
         case 'flurry':
             $("div#timer").show();
             break;
@@ -635,7 +639,8 @@ var hasSkillAdvanced = function (unit, skillInfo) {
         if (skillInfo.id == skill.id) {
             if (skillInfo.x && (skill.x < skillInfo.x.min || skill.x > skillInfo.x.max)) return false;
             if (skillInfo.c && (skill.c < skillInfo.c.min || skill.c > skillInfo.c.max)) return false;
-            if (skillInfo.y && skill.y != skillInfo.y) return false;
+            if (skillInfo.y == -1 && skill.y) return false;
+            if (skillInfo.y > 0 && skill.y != skillInfo.y) return false;
             if (skillInfo.s && skill.s != skillInfo.s) return false;
             if (skillInfo.all > -1 && skill.all != skillInfo.all) return false;
             return true;
