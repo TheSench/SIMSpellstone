@@ -14,10 +14,28 @@
 //}
 
 // GET variables
-function _GET(q, s) {
-    s = s ? s : window.location.search;
-    var re = new RegExp('&' + q + '(?:=([^&]*))?(?=&|$)', 'i');
-    return (s = s.replace(/^\?/, '&').match(re)) ? (typeof s[1] == 'undefined' ? '' : decodeURIComponent(s[1])) : undefined;
+function _GET(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split('&');
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split('=');
+        if (decodeURIComponent(pair[0]) == variable) {
+            return decodeURIComponent(pair[1] ? pair[1] : '');
+        }
+    }
+    return undefined;
+}
+
+function _DEFINED(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split('&');
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split('=');
+        if (decodeURIComponent(pair[0]) == variable) {
+            return true;
+        }
+    }
+    return false;
 }
 
 function shuffle(this_array) {
