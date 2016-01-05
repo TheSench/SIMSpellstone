@@ -3,25 +3,32 @@
 </Query>
 
 static bool getImages = false;
-static string path = @"D:\Programs\Source\Repos\SIMSpellstone\cards";
+static string path = Path.GetDirectoryName(Util.CurrentQueryPath);
 static string baseUrl = @"https://spellstone.synapse-games.com/assets";
 
 
 static System.Net.WebClient webClient = new System.Net.WebClient();
 static HashSet<string> g_unitIDs;
 
+
+static System.Xml.Serialization.XmlSerializer unitDeserializer = new System.Xml.Serialization.XmlSerializer(typeof(unit));
+
 void Main()
 {
+	var xmlFile = Path.Combine(path, "cards.xml");
+	var doc = XDocument.Load(xmlFile);
+
+	HashSet<string> existingUnits = LoadUnits(doc);
+	HashSet<string> newUnits = new HashSet<string>();
+
 	Normalize(Path.Combine("cards.xml"));
 	Normalize(Path.Combine("missions.xml"));
 	Normalize(Path.Combine("fusion_recipes_cj2.xml"));
 	Normalize(Path.Combine("levels.xml"));
 	
 	g_unitIDs = new HashSet<string>();
-	var xmlFile = Path.Combine(path, "cards.xml");
-	var doc = XDocument.Load(xmlFile);
-	
-	System.Xml.Serialization.XmlSerializer unitDeserializer = new System.Xml.Serialization.XmlSerializer(typeof(unit));
+	xmlFile = Path.Combine(path, "cards.xml");
+	doc = XDocument.Load(xmlFile);
 
 	StringBuilder sbJSON = new StringBuilder();
 	List<unit> units = new List<unit>();
@@ -35,6 +42,10 @@ void Main()
 		var stringReader = new StringReader(unitXML.ToString());
 		var unit = (unit)unitDeserializer.Deserialize(stringReader);
 		units.Add(unit);
+		if (!existingUnits.Contains(unit.id))
+		{
+			newUnits.Add(unit.id);
+		}
 		if (unit.picture != null)
 		{
 			pictures[unit.picture] = unit.name;
@@ -48,6 +59,12 @@ void Main()
 		{
 			notFound.Add(unit.name + "(NO IMAGE)");
 		}
+	}
+	if (newUnits.Count > 0)
+	{
+		var spoilers = "var spoilers = {commander: elariaCaptain, deck: [ " + String.Join(", ", newUnits.Select(unit => String.Format("{{id: {0}, level: 7}}", unit))) + " ]};";
+		newUnits.Dump("New Units:");
+		File.WriteAllText(Path.Combine(path, "../scripts", "spoilers.js"), spoilers);
 	}
 
 	xmlFile = Path.Combine(path, "missions.xml");
@@ -191,6 +208,19 @@ void Main()
 		}
 	}
 	notFound.Dump("Not Found");
+}
+
+private HashSet<string> LoadUnits(XDocument doc)
+{
+	var existingUnits = new HashSet<string>();
+	var unitNodes = doc.Descendants("unit");
+	foreach (var unitXML in unitNodes)
+	{
+		var stringReader = new StringReader(unitXML.ToString());
+		var unit = (unit)unitDeserializer.Deserialize(stringReader);
+		existingUnits.Add(unit.id);
+	}
+	return existingUnits;
 }
 
 public enum FactionIDs
