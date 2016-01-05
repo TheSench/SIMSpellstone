@@ -1,0 +1,99 @@
+﻿.selected {
+    background: grey;
+}
+
+.selected-advanced {
+    background: darkblue;
+}
+
+input[type="image"] {
+    height: 21px;
+    padding-left: 2px;
+}
+
+input[type="button"].attack-filter,
+input[type="button"].health-filter,
+input[type="button"].delay-filter {
+    box-sizing: content-box;
+    min-height: 24px;
+    min-width: 24px;
+    padding: 0;
+    margin: 0px 0px 0px 1px;
+    text-align: center;
+    border: 0;
+    background: none;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+    input[type="button"].selected {
+        background: grey;
+    }
+
+    input[type="button"].delay-filter {
+        background-image: url('../res/cardAssets/Timer.png');
+        background-size: contain;
+    }
+
+    input[type="button"].health-filter {
+        font-size: 8px;
+        background-image: url('../res/cardAssets/Health.png');
+        background-size: contain;
+    }
+
+    input[type="button"].attack-filter {
+        font-size: 8px;
+        margin: 0;
+        padding: 5px 0px 0px 2px;
+        background-image: url('../res/cardAssets/Attack2.png');
+        background-size: cover;
+    }
+
+#filters fieldset {
+    display: inline;
+    padding: 2px;
+    margin: 0;
+}
+
+#dialog-form {
+    padding: 0;
+}
+
+    #dialog-form label {
+        display: block;
+        width: 100%;
+    }
+
+    #dialog-form div {
+        width: initial;
+    }
+
+    #dialog-form input[type=number] {
+        width: 40%;
+    }
+
+    #dialog-form label {
+        float: left;
+        display: block;
+        text-align: left;
+    }
+
+    #dialog-form select {
+        float: left;
+        display: block;
+        text-align: left;
+    }
+
+#filters span {
+    float: left;
+    margin: 5px 5px 0px 0px;
+}
+
+#dialog-form span {
+    float: left;
+    margin: 2px;
+}
+
+.ui-draggable .ui-dialog-titlebar {
+    display: none;
+}
