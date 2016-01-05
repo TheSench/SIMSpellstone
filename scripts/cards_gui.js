@@ -15,7 +15,6 @@ function draw_deck(deck, onclick) {
     var cards = createDiv("float-left");
     var commander = get_card_by_id(deck.commander);
     cards.appendChild(create_card_html(commander, false, onclick));
-    cards.appendChild(createDiv("spacer"));
     for (var i = 0, len = deck.deck.length; i < len; i++) {
         var unit = get_card_by_id(deck.deck[i]);
         cards.appendChild(create_card_html(unit, false, onclick));
@@ -58,7 +57,6 @@ function draw_field(field) {
     var cards = createDiv("float-left");
     var commander = field.commander;
     cards.appendChild(create_card_html(commander, false));
-    cards.appendChild(createDiv("spacer"));
     var units = field.assaults;
     if (units) for (var i = 0, len = units.length; i < len; i++) {
         var unit = units[i];
