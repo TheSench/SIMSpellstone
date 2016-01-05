@@ -14,6 +14,9 @@ var delayRanges = [];
 var skillFilters = [];
 var skillHidden = [];
 
+var skillFiltersAdv = [];
+var skillHiddenAdv = [];
+
 var factionHidden = [];
 var subfactionHidden = [];
 
@@ -34,6 +37,42 @@ var nameHidden = [];
 var allCards = CARDS.root.unit;
 
 var units = [];
+var dialog;
+var form;
+
+var initDeckBuilder = function () {
+    setupPopups();
+    drawAllCards();
+}
+
+var setupPopups = function () {
+    dialog = $("#dialog-form").dialog({
+        autoOpen: false,
+        width: 100,
+        minHeight: 20,
+        modal: true,
+        buttons: {
+            OK: function () {
+                filterAdvanced(dialog.skill);
+                dialog.dialog("close");
+            },
+            Cancel: function () {
+                dialog.dialog("close");
+            }
+        },
+    });
+    $("#slider-range").slider({
+        range: true,
+        min: 0,
+        max: 500,
+        values: [75, 300],
+        slide: function (event, ui) {
+            $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+        }
+    });
+    $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+		" - $" + $("#slider-range").slider("values", 1));
+}
 
 var drawAllCards = function () {
     var hash = _GET('hash');
@@ -85,11 +124,88 @@ var updateHash = function () {
     document.getElementById("hash").value = hash_encode(deck);
 }
 
+var filterAdvanced = function (skill) {
+
+    var info = {
+        id: skill,
+        x: undefined,
+        y: undefined,
+        c: undefined,
+        s: undefined,
+        all: undefined,
+    }
+
+    for (var i = 0; i < skillFiltersAdv.length; i++) {
+        if (skillFiltersAdv[i].id == skill) {
+            skillFiltersAdv.splice(i, 1);
+            break;
+        }
+    }
+
+    if ($("div#amount")[0].style.display != "none") {
+        var min = parseInt($("#amount-min")[0].value);
+        var max = parseInt($("#amount-max")[0].value);
+        if (isNaN(min)) min = 0;
+        if (isNaN(max)) max = 99;
+        info.x = {min: min, max: max};
+    }
+    if ($("div#timer")[0].style.display != "none") {
+        var min = parseInt($("#timer-min")[0].value);
+        var max = parseInt($("#timer-max")[0].value);
+        if (isNaN(min)) min = 0;
+        if (isNaN(max)) max = 99;
+        info.c = {min: min, max: max};
+    }
+    if ($("div#faction")[0].style.display != "none") {
+        info.y = factions.IDs[$("select#faction")[0].value];
+    }
+    if ($("div#skill")[0].style.display != "none") {
+        if ($("select#skill")[0].value.length > 0) {
+            info.s = $("select#skill")[0].value;
+        }
+    }
+    if ($("label[for=all]")[0].style.display != "none") {
+        info.all = $("select#all")[0].value;
+    }
+
+    $("input#" + skill)[0].classList.add("selected-advanced");
+    skillFiltersAdv.push(info);
+
+    checkAdvancedFilters();
+}
+
+var checkAdvancedFilters = function () {
+    skillHiddenAdv = [];
+
+    for (var i = 0; i < units.length; i++) {
+        var unit = units[i];
+        for (var s = 0; s < skillFiltersAdv.length; s++) {
+            if (!hasSkillAdvanced(unit, skillFiltersAdv[s])) {
+                skillHiddenAdv.push(unit.id);
+            }
+        }
+    }
+    for (var key in skillFiltersAdv) {
+        var info = skillFiltersAdv[key];
+    }
+    applyFilters();
+}
+
 var filterSkill = function (button, skill) {
     skillHidden = [];
     if (button.classList.contains("selected")) {
         button.classList.remove("selected");
         skillFilters.splice(skillFilters.indexOf(skill), 1);
+    } else if (button.classList.contains("selected-advanced")) {
+        button.classList.remove("selected-advanced");
+        for (var i = 0; i < skillFiltersAdv.length; i++) {
+            if (skillFiltersAdv[i].id == skill) {
+                skillFiltersAdv.splice(i, 1);
+                break;
+            }
+        }
+        checkAdvancedFilters();
+        return;
     } else {
         button.classList.add("selected");
         skillFilters.push(skill);
@@ -99,6 +215,7 @@ var filterSkill = function (button, skill) {
         for (var s = 0; s < skillFilters.length; s++) {
             if (!hasSkill(unit, skillFilters[s])) {
                 skillHidden.push(unit.id);
+                break;
             }
         }
     }
@@ -328,6 +445,99 @@ var filterFusion = function (button, fusion) {
     applyFilters();
 }
 
+var contextTest = function (skill) {
+
+    $("label[for=all]").hide();
+    $("div#amount").hide();
+    $("div#faction").hide();
+    $("div#skill").hide();
+    $("div#timer").hide();
+
+    $("#amount-min")[0].value = 0;
+    $("#amount-max")[0].value = 99;
+    $("#timer-min")[0].value = 0;
+    $("#timer-max")[0].value = 99;
+    $("select#faction")[0].value = 'Any';
+    $("select#skill")[0].value = '';
+    $("select#all")[0].value = -1;
+    for (var i = 0; i < skillFiltersAdv.length; i++) {
+        var skillInfo = skillFiltersAdv[i];
+        if (skillInfo.id == skill) {
+            if (skillInfo.x) {
+                $("#amount-min")[0].value = skillInfo.x.min;
+                $("#amount-max")[0].value = skillInfo.x.max;
+            }
+            if (skillInfo.c) {
+                $("#timer-min")[0].value = skillInfo.c.min;
+                $("#timer-max")[0].value = skillInfo.c.max;
+            }
+            if (skillInfo.y) $("select#faction")[0].value = factions.names[skillInfo.y];
+            if (skillInfo.s) $("select#skill")[0].value = skillInfo.s;
+            if (skillInfo.all) $("select#all")[0].value = skillInfo.all;
+            break;
+        }
+    }
+
+    switch (skill) {
+        // x="1" y="0" all="0" c="0" s="0"
+        case 'evade':
+        case 'armored':
+        case 'counter':
+        case 'burn':
+        case 'frost':
+        case 'pierce':
+        case 'poison':
+        case 'leech':
+        case 'berserk':
+            $("div#amount").show();
+            break;
+        // x="1" y="1" all="0" c="0" s="0"
+        case 'legion':
+        case 'fervor':
+        case 'reanimate':
+        case 'resurrect':
+            $("div#amount").show();
+            $("div#faction").show();
+            break;
+        // x="1" y="1" all="1" c="0" s="0"
+        case 'rally':
+        case 'heal':
+        case 'protect':
+            $("div#amount").show();
+            $("label[for=all]").show();
+            $("div#faction").show();
+            break;
+        // x="1" y="0" all="1" c="0" s="0"
+        case 'enfeeble':
+        case 'strike':
+        case 'weaken':
+            $("div#amount").show();
+            $("label[for=all]").show();
+            break;
+        // x="1" y="1" all="1" c="1" s="1"
+        case 'enhance':
+            $("div#amount").show();
+            $("label[for=all]").show();
+            $("div#faction").show();
+            $("div#skill").show();
+            $("div#timer").show();
+            break;
+        // x="0" y="0" all="1" c="1" s="0"
+        case 'jam':
+            $("label[for=all]").show();
+            $("div#timer").show();
+            break;
+        // x="0" y="0" all="0" c="1" s="0"
+        case 'flurry':
+            $("div#timer").show();
+            break;
+    }
+    dialog.dialog("open");
+    dialog.skill = skill;
+
+    return false;
+}
+
 var filterSet = function (button, set) {
     setHidden = [];
     if (button.classList.contains("selected")) {
@@ -400,7 +610,7 @@ var applyFilters = function () {
         if (skillHidden.indexOf(id) > -1 || factionHidden.indexOf(id) > -1 || subfactionHidden.indexOf(id) > -1
              || attackHidden.indexOf(id) > -1 || healthHidden.indexOf(id) > -1 || delayHidden.indexOf(id) > -1
              || typeHidden.indexOf(id) > -1 || fusionHidden.indexOf(id) > -1 || setHidden.indexOf(id) > -1
-             || nameHidden.indexOf(id) > -1 || rarityHidden.indexOf(id) > -1) {
+             || nameHidden.indexOf(id) > -1 || rarityHidden.indexOf(id) > -1 || skillHiddenAdv.indexOf(id) > -1) {
             card.style.display = "none";
         } else {
             card.style.display = "";
@@ -413,6 +623,23 @@ var hasSkill = function (unit, skill) {
     var skills = card.skill;
     for (var i = 0, len = skills.length; i < len; i++) {
         if (skill == skills[i].id) return true;
+    }
+    return false;
+}
+
+var hasSkillAdvanced = function (unit, skillInfo) {
+    var card = get_slim_card_by_id(unit, true);
+    var skills = card.skill;
+    for (var i = 0, len = skills.length; i < len; i++) {
+        var skill = skills[i];
+        if (skillInfo.id == skill.id) {
+            if (skillInfo.x && (skill.x < skillInfo.x.min || skill.x > skillInfo.x.max)) return false;
+            if (skillInfo.c && (skill.c < skillInfo.c.min || skill.c > skillInfo.c.max)) return false;
+            if (skillInfo.y && skill.y != skillInfo.y) return false;
+            if (skillInfo.s && skill.s != skillInfo.s) return false;
+            if (skillInfo.all > -1 && skill.all != skillInfo.all) return false;
+            return true;
+        }
     }
     return false;
 }
