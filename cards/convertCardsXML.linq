@@ -3,6 +3,8 @@
 </Query>
 
 static bool getImages = false;
+static bool downloadFiles = false;
+
 static string path = Path.GetDirectoryName(Util.CurrentQueryPath);
 static string baseUrl = @"https://spellstone.synapse-games.com/assets";
 
@@ -20,16 +22,16 @@ void Main()
 
 	HashSet<string> existingUnits = LoadUnits(doc);
 	HashSet<string> newUnits = new HashSet<string>();
-
-	Normalize(Path.Combine("cards.xml"));
-	Normalize(Path.Combine("missions.xml"));
-	Normalize(Path.Combine("fusion_recipes_cj2.xml"));
-	Normalize(Path.Combine("levels.xml"));
+	
+	Normalize(Path.Combine("cards.xml"), downloadFiles);
+	Normalize(Path.Combine("missions.xml"), downloadFiles);
+	Normalize(Path.Combine("fusion_recipes_cj2.xml"), downloadFiles);
+	Normalize(Path.Combine("levels.xml"), downloadFiles);
 	
 	g_unitIDs = new HashSet<string>();
 	xmlFile = Path.Combine(path, "cards.xml");
 	doc = XDocument.Load(xmlFile);
-
+	
 	StringBuilder sbJSON = new StringBuilder();
 	List<unit> units = new List<unit>();
 
@@ -669,10 +671,13 @@ private static void AppendSkill(StringBuilder sb, skill skill, string tabs)
 	sb.Append(tabs).Append("},\r\n");
 }
 
-private static void Normalize(string fileName)
+private static void Normalize(string fileName, bool downloadFiles)
 {
 	string filepath = Path.Combine(path, fileName);
 	string url = Path.Combine(baseUrl, fileName);
-	webClient.DownloadFile(url, filepath);
+	if(downloadFiles)
+	{
+		webClient.DownloadFile(url, filepath);
+	}
 	XDocument.Load(filepath).Save(filepath);
 }
