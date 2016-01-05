@@ -642,7 +642,7 @@ var hasSkillAdvanced = function (unit, skillInfo) {
             if (skillInfo.y == -1 && skill.y) return false;
             if (skillInfo.y > 0 && skill.y != skillInfo.y) return false;
             if (skillInfo.s && skill.s != skillInfo.s) return false;
-            if (skillInfo.all > -1 && skill.all != skillInfo.all) return false;
+            if (skillInfo.all > -1 && (skill.all | "0") != skillInfo.all) return false;
             return true;
         }
     }
