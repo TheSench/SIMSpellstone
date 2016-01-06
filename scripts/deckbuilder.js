@@ -588,9 +588,20 @@ var filterSet = function (button, set) {
                 break;
             }
         }
+        if(set == "1000") {
+            for (var i = 0; i < setFilters.length; i++) {
+                if (setFilters[i] == "7000") {
+                    setFilters.splice(i, 1);
+                    break;
+                }
+            }
+        }
     } else {
         button.classList.add("selected");
         setFilters.push(set);
+        if (set == "1000") {
+            setFilters.push("7000");
+        }
     }
     if (setFilters.length > 0) {
         for (var i = 0, len = units.length; i < len; i++) {
