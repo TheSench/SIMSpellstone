@@ -649,6 +649,44 @@ var hasSkillAdvanced = function (unit, skillInfo) {
     return false;
 }
 
+var clearFilters = function () {
+    attackHidden = [];
+    attackRanges = [];
+    healthHidden = [];
+    healthRanges = [];
+    delayHidden = [];
+    delayRanges = [];
+
+    skillFilters = [];
+    skillHidden = [];
+
+    skillFiltersAdv = [];
+    skillHiddenAdv = [];
+
+    factionHidden = [];
+    subfactionHidden = [];
+
+    rarityFilters = [];
+    rarityHidden = [];
+
+    typeFilters = [];
+    typeHidden = [];
+
+    setFilters = [];
+    setHidden = [];
+
+    fusionFilters = [];
+    fusionHidden = [];
+
+    nameHidden = [];
+
+    $(".selected").removeClass("selected");
+    $(".selected-advanced").removeClass("selected-advanced");
+    $("#nameFilter").val("");
+
+    applyFilters();
+}
+
 var isInFaction = function (unit, faction) {
     var factionID = factions.IDs[faction];
     var card = get_slim_card_by_id(unit, true);
