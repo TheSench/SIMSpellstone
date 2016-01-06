@@ -135,7 +135,8 @@ var hash_changed = function (hash) {
     draw_deck(deck, removeFromDeck);
 }
 
-var addToDeck = function (unit) {
+var addToDeck = function (htmlCard) {
+    var unit = getUnitFromCard(htmlCard);
     if (is_commander(unit.id)) {
         deck.commander = unit;
     } else {
@@ -145,11 +146,12 @@ var addToDeck = function (unit) {
     updateHash();
 };
 
-var removeFromDeck = function (unit) {
+var removeFromDeck = function (htmlCard, index) {
+    var unit = getUnitFromCard(htmlCard);
     if (is_commander(unit.id)) {
         deck.commander = elariaCaptain;
     } else {
-        deck.deck.splice(deck.indexOf(unit), 1);
+        deck.deck.splice(index, 1);
     }
     draw_deck(deck, removeFromDeck);
     updateHash();
@@ -792,6 +794,11 @@ var toggleUpgrades = function (checkbox) {
 
 var makeUnitKey = function (unit) {
     return unit.id + "_" + unit.level;
+}
+
+var getUnitFromCard = function (htmlCard) {
+    var unit = htmlCard.id.split("_");
+    return { id: unit[1], level: unit[2] };
 }
 
 var skillStyle = document.createElement('style');
