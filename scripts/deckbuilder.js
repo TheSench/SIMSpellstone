@@ -95,7 +95,10 @@ var drawAllCards = function () {
     updateHash();
 };
 
-var hash_changed = function () {
+var hash_changed = function (hash) {
+    if (hash) {
+        document.getElementById("hash").value = hash;
+    }
     deck = hash_decode(document.getElementById("hash").value);
     draw_deck(deck, removeFromDeck);
 }
