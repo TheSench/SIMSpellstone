@@ -54,6 +54,7 @@
             <span>Skills:</span>
             <input type="image" id="armored" name="skill" title="Armor" src="res/skills/Armor.png" onclick="filterSkill(this, 'armored')" oncontextmenu="return contextTest('armored')" />
             <input type="image" id="protect" name="skill" title="Barrier" src="res/skills/Barrier.png" onclick="filterSkill(this, 'protect')" oncontextmenu="return contextTest('protect')" />
+            <input type="image" id="berserk" name="skill" title="Berserk" src="res/skills/Berserk.png" onclick="filterSkill(this, 'berserk')" oncontextmenu="return contextTest('berserk')" />
             <input type="image" id="strike" name="skill" title="Bolt" src="res/skills/Bolt.png" onclick="filterSkill(this, 'strike')" oncontextmenu="return contextTest('strike')" />
             <input type="image" id="flurry" name="skill" title="Dualstrike" src="res/skills/Dualstrike.png" onclick="filterSkill(this, 'flurry')" oncontextmenu="return contextTest('flurry')" />
             <input type="image" id="rally" name="skill" title="Empower" src="res/skills/Empower.png" onclick="filterSkill(this, 'rally')" oncontextmenu="return contextTest('rally')" />
@@ -123,6 +124,12 @@
         </fieldset>
         <div><b>Name Filter:</b></div><input id="nameFilter" type="text" value="" size="100" onkeyup="filterName(this);"><br>
         <input type="button" value="Clear All" onclick="clearFilters()" />
+        <br />
+        <br />
+        <label>
+            <input type="checkbox" value="Compact Skills" onclick="toggleSkillDetails(this);" />
+            Compact Skills
+        </label>
     </div>
     <br>
     <hr />
@@ -167,6 +174,7 @@
                         <option value=""></option>
                         <option value="armored">Armor</option>
                         <option value="protect">Barrier</option>
+                        <option value="berserk">Berserk</option>
                         <option value="strike">Bolt</option>
                         <option value="rally">Empower</option>
                         <option value="fervor">Fervor</option>
