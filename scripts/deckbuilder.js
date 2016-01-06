@@ -36,13 +36,24 @@ var nameHidden = [];
 
 var allCards = CARDS.root.unit;
 
+var showUpgrades = false;
+
 var units = [];
+var unitsShown = [];
 var dialog;
 var form;
 
 var initDeckBuilder = function () {
     setupPopups();
-    drawAllCards();
+
+    $body = $("body");
+    $body.addClass("loading");
+
+    setTimeout(function () {
+        drawAllCards();
+        $body = $("body");
+        $body.removeClass("loading");
+    }, 1);
 }
 
 var setupPopups = function () {
@@ -75,25 +86,46 @@ var setupPopups = function () {
 }
 
 var drawAllCards = function () {
+    
     var hash = _GET('hash');
     if (hash) {
         deck = hash_decode(hash);
     } else if (_DEFINED('spoilers')) {
         deck = spoilers;
     }
+
+    units = [];
+    unitsShown = [];
+
     for (var id in allCards) {
         if (id < 10000) {
-            units.push({ id: id, level: 7 });
-            if (id > 999 && allCards["1" + id]) {
-                units.push({ id: "1" + id, level: 7 });
-                units.push({ id: "2" + id, level: 7 });
-            }
+            addUnit(allCards[id]);
         }
     }
     draw_deck(deck, removeFromDeck);
-    draw_card_list(units, addToDeck);
+    draw_card_list(unitsShown, addToDeck);
     updateHash();
 };
+
+var addUnit = function (unit) {
+    var id = unit.id;
+    var maxlevel = 1;
+    if (unit.upgrades) for (var maxlevel in unit.upgrades) { }
+    addUnitLevels(id, maxlevel);
+    if (id > 999 && allCards["1" + id]) {
+        addUnitLevels("1" + id, maxlevel);
+        addUnitLevels("2" + id, maxlevel);
+    }
+}
+
+var addUnitLevels = function (id, maxlevel) {
+    for (var level = 1; level <= maxlevel; level++) {
+        var unit = { id: id, level: level };
+        units.push(unit);
+        if (showUpgrades || level == maxlevel) unitsShown.push(unit);
+    }
+}
+
 
 var hash_changed = function (hash) {
     if (hash) {
@@ -185,7 +217,7 @@ var checkAdvancedFilters = function () {
         var unit = units[i];
         for (var s = 0; s < skillFiltersAdv.length; s++) {
             if (!hasSkillAdvanced(unit, skillFiltersAdv[s])) {
-                skillHiddenAdv.push(unit.id);
+                skillHiddenAdv.push(makeUnitKey(unit));
             }
         }
     }
@@ -218,7 +250,7 @@ var filterSkill = function (button, skill) {
         var unit = units[i];
         for (var s = 0; s < skillFilters.length; s++) {
             if (!hasSkill(unit, skillFilters[s])) {
-                skillHidden.push(unit.id);
+                skillHidden.push(makeUnitKey(unit));
                 break;
             }
         }
@@ -236,7 +268,7 @@ var filterFaction = function (button, faction) {
         for (var i = 0, len = units.length; i < len; i++) {
             var unit = units[i];
             if (!isInFaction(unit, faction)) {
-                factionHidden.push(unit.id);
+                factionHidden.push(makeUnitKey(unit));
             }
         }
     }
@@ -258,7 +290,7 @@ var filterName = function (field) {
             var unit = units[i];
             var card = get_slim_card_by_id(unit, true);
             if (card.name.toLowerCase().indexOf(filter) == -1) {
-                nameHidden.push(unit.id);
+                nameHidden.push(makeUnitKey(unit));
             }
         }
     }
@@ -275,7 +307,7 @@ var filterSubfaction = function (button, faction) {
         for (var i = 0, len = units.length; i < len; i++) {
             var unit = units[i];
             if (!isInSubfaction(unit, faction)) {
-                subfactionHidden.push(unit.id);
+                subfactionHidden.push(makeUnitKey(unit));
             }
         }
     }
@@ -315,7 +347,7 @@ var filterAttack = function (button, min, max) {
                     break;
                 }
             }
-            if (hide) attackHidden.push(unit.id);
+            if (hide) attackHidden.push(makeUnitKey(unit));
         }
     }
     applyFilters();
@@ -347,7 +379,7 @@ var filterHealth = function (button, min, max) {
                     break;
                 }
             }
-            if (hide) healthHidden.push(unit.id);
+            if (hide) healthHidden.push(makeUnitKey(unit));
         }
     }
     applyFilters();
@@ -379,7 +411,7 @@ var filterDelay = function (button, delay) {
                     break;
                 }
             }
-            if (hide) delayHidden.push(unit.id);
+            if (hide) delayHidden.push(makeUnitKey(unit));
         }
     }
     applyFilters();
@@ -411,7 +443,7 @@ var filterType = function (button, type) {
                     break;
                 }
             }
-            if (hide) typeHidden.push(unit.id);
+            if (hide) typeHidden.push(makeUnitKey(unit));
         }
     }
     applyFilters();
@@ -443,7 +475,7 @@ var filterFusion = function (button, fusion) {
                     break;
                 }
             }
-            if (hide) fusionHidden.push(unit.id);
+            if (hide) fusionHidden.push(makeUnitKey(unit));
         }
     }
     applyFilters();
@@ -571,7 +603,7 @@ var filterSet = function (button, set) {
                     break;
                 }
             }
-            if (hide) setHidden.push(unit.id);
+            if (hide) setHidden.push(makeUnitKey(unit));
         }
     }
     applyFilters();
@@ -603,7 +635,7 @@ var filterRarity = function (button, rarity) {
                     break;
                 }
             }
-            if (hide) rarityHidden.push(unit.id);
+            if (hide) rarityHidden.push(makeUnitKey(unit));
         }
     }
     applyFilters();
@@ -613,11 +645,12 @@ var applyFilters = function () {
     var cards = document.getElementById("cardSpace").getElementsByClassName("card");
     for (var i = 0, len = cards.length; i < len; i++) {
         var card = cards[i];
+        var unit = card.id.replace("Card_", "");
         var id = card.id.replace("Card_", "");
-        if (skillHidden.indexOf(id) > -1 || factionHidden.indexOf(id) > -1 || subfactionHidden.indexOf(id) > -1
-             || attackHidden.indexOf(id) > -1 || healthHidden.indexOf(id) > -1 || delayHidden.indexOf(id) > -1
-             || typeHidden.indexOf(id) > -1 || fusionHidden.indexOf(id) > -1 || setHidden.indexOf(id) > -1
-             || nameHidden.indexOf(id) > -1 || rarityHidden.indexOf(id) > -1 || skillHiddenAdv.indexOf(id) > -1) {
+        if (skillHidden.indexOf(unit) > -1 || factionHidden.indexOf(unit) > -1 || subfactionHidden.indexOf(unit) > -1
+             || attackHidden.indexOf(unit) > -1 || healthHidden.indexOf(unit) > -1 || delayHidden.indexOf(unit) > -1
+             || typeHidden.indexOf(unit) > -1 || fusionHidden.indexOf(unit) > -1 || setHidden.indexOf(unit) > -1
+             || nameHidden.indexOf(unit) > -1 || rarityHidden.indexOf(unit) > -1 || skillHiddenAdv.indexOf(unit) > -1) {
             card.style.display = "none";
         } else {
             card.style.display = "";
@@ -731,6 +764,24 @@ var toggleSkillDetails = function (checkbox) {
     }
 }
 
+var toggleUpgrades = function (checkbox) {
+    showUpgrades = checkbox.checked;
+    clearCardSpace();
+
+    $body = $("body");
+    $body.addClass("loading");
+
+    setTimeout(function () {
+        drawAllCards();
+        $body = $("body");
+        $body.removeClass("loading");
+        applyFilters();
+    }, 1);
+}
+
+var makeUnitKey = function (unit) {
+    return unit.id + "_" + unit.level;
+}
 
 var skillStyle = document.createElement('style');
 (function () {

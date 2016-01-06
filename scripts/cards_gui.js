@@ -29,7 +29,7 @@ function draw_card_list(list, onclick) {
     for (var i = 0, len = list.length; i < len; i++) {
         var unit = get_card_by_id(list[i]);
         var card = create_card_html(unit, true, onclick);
-        card.id = "Card_" + list[i].id;
+        card.id = "Card_" + list[i].id + "_" + list[i].level;
         cards.appendChild(card);
     }
     cardSpace.appendChild(cards);

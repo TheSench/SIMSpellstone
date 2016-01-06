@@ -124,12 +124,18 @@
             <input class="delay-filter" type="button" value="3" onclick="filterDelay(this, 3)" />
             <input class="delay-filter" type="button" value="4" onclick="filterDelay(this, 4)" />
         </fieldset>
-        <div><b>Name Filter:</b></div><input id="nameFilter" type="text" value="" size="100" onkeyup="filterName(this);"><br>
+        <div><strong>Name Filter:</strong></div><input id="nameFilter" type="text" value="" size="100" onkeyup="filterName(this);"><br>
+
+        <br />
         <input type="button" value="Clear All" onclick="clearFilters()" />
         <br />
+        <label style="float:left; margin: 5px 0px;">
+            <input type="checkbox" onclick="toggleUpgrades(this);" />
+            All Upgrade Levels (may degrade performance)
+        </label>
         <br />
-        <label>
-            <input type="checkbox" value="Compact Skills" onclick="toggleSkillDetails(this);" />
+        <label style="float:left;">
+            <input type="checkbox" onclick="toggleSkillDetails(this);" />
             Compact Skills
         </label>
     </div>
@@ -204,5 +210,6 @@
             </fieldset>
         </form>
     </div>
+    <div class="modal"><span>Loading...</span></div>
 </body>
 </html>

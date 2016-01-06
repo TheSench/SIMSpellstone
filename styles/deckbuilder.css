@@ -26,28 +26,28 @@ input[type="button"].delay-filter {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-    input[type="button"].selected {
-        background: grey;
-    }
+input[type="button"].selected {
+    background: grey;
+}
 
-    input[type="button"].delay-filter {
-        background-image: url('../res/cardAssets/Timer.png');
-        background-size: contain;
-    }
+input[type="button"].delay-filter {
+    background-image: url('../res/cardAssets/Timer.png');
+    background-size: contain;
+}
 
-    input[type="button"].health-filter {
-        font-size: 8px;
-        background-image: url('../res/cardAssets/Health.png');
-        background-size: contain;
-    }
+input[type="button"].health-filter {
+    font-size: 8px;
+    background-image: url('../res/cardAssets/Health.png');
+    background-size: contain;
+}
 
-    input[type="button"].attack-filter {
-        font-size: 8px;
-        margin: 0;
-        padding: 5px 0px 0px 2px;
-        background-image: url('../res/cardAssets/Attack2.png');
-        background-size: cover;
-    }
+input[type="button"].attack-filter {
+    font-size: 8px;
+    margin: 0;
+    padding: 5px 0px 0px 2px;
+    background-image: url('../res/cardAssets/Attack2.png');
+    background-size: cover;
+}
 
 #filters fieldset {
     display: inline;
@@ -97,3 +97,39 @@ input[type="button"].delay-filter {
 .ui-draggable .ui-dialog-titlebar {
     display: none;
 }
+
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.modal {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba( 255, 255, 255, .8 );
+    z-index: 1000;
+}
+
+    .modal span {
+    font-size: 24px;
+    font-weight: bold;
+        display: inline-block;
+        margin-top: 200px;
+    }
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;
+}
+
+    /* Anytime the body has the loading class, our
+   modal element will be visible */
+    body.loading .modal {
+        display: block;
+    }
