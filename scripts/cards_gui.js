@@ -17,7 +17,7 @@ function draw_deck(deck, onclick) {
     cards.appendChild(create_card_html(commander, false, onclick));
     for (var i = 0, len = deck.deck.length; i < len; i++) {
         var unit = get_card_by_id(deck.deck[i]);
-        cards.appendChild(create_card_html(unit, false, onclick));
+        cards.appendChild(create_card_html(unit, false, onclick, i));
     }
     cardSpace.appendChild(cards);
 }
@@ -87,7 +87,7 @@ function draw_hand(hand, callback, state) {
     return cards;
 }
 
-function create_card_html(card, inHand, onclick) {
+function create_card_html(card, inHand, onclick, state) {
     var htmlCard = createDiv("card");
     if (card.picture) {
         var imageUrl = 'res/cardImages/' + card.picture + '.jpg';
@@ -174,9 +174,9 @@ function create_card_html(card, inHand, onclick) {
     if (onclick) {
         htmlCard.addEventListener("click", (function (inner) {
             return function () {
-                onclick(inner);
+                onclick(htmlCard, state);
             };
-        })({id: card.id, level: card.level}));
+        })(htmlCard, state));
     }
     return htmlCard;
 }
