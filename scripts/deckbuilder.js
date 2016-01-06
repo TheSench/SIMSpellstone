@@ -706,3 +706,32 @@ var isInRange = function (unit, field, min, max) {
     if (max >= 0 && value > max) return false;
     return true;
 }
+
+var toggleSkillDetails = function (checkbox) {
+    while (skillStyle.hasChildNodes()) {
+        skillStyle.removeChild(skillStyle.firstChild);
+    }
+    if (checkbox.checked) {
+        rules = document.createTextNode(
+            '.card-skills-short { display: initial; } .card-skills-detailed { display: none; }'
+        );
+    } else {
+        rules = document.createTextNode(
+            '.card-skills-short { display: none; } .card-skills-detailed { display: initial; }'
+        );
+    }
+
+    if (skillStyle.styleSheet) {
+        skillStyle.styleSheet.cssText = rules.nodeValue;
+    } else {
+        skillStyle.appendChild(rules);
+    }
+}
+
+
+var skillStyle = document.createElement('style');
+(function () {
+    skillStyle.type = 'text/css';
+    document.getElementsByTagName('head')[0].appendChild(skillStyle);
+    toggleSkillDetails({ checked: false });
+})();

@@ -130,9 +130,12 @@ function create_card_html(card, inHand, onclick) {
     getSkillsHtml(divSkills, skillsShort, card.skill, inHand);
     if (card.empowerSkills) getSkillsHtml(divSkills, skillsShort, card.empowerSkills, inHand);
     getTriggeredSkills(divSkills, skillsShort, card, inHand);
+    var skillsDetail = divSkills.cloneNode(true);
+    skillsDetail.className = "card-skills-detailed";
     if (skillsShort.hasChildNodes()) {
         htmlCard.appendChild(skillsShort);
         htmlCard.appendChild(divSkills);
+        htmlCard.appendChild(skillsDetail);
     }
     //var faction = factions.names[card.type].toLowerCase();
     if (false) {
@@ -225,10 +228,10 @@ function getSkillHtml(skill, inHand) {
     var htmlSkill = document.createElement("span");
     htmlSkill.className = "skill";
     htmlSkill.appendChild(getSkillIcon(skill.id));
-    if (skill.all) htmlSkill.innerHTML += ("All");
+    if (skill.all) htmlSkill.innerHTML += (" All ");
     if (skill.s) htmlSkill.appendChild(getSkillIcon(skill.s));
     if (skill.y) htmlSkill.appendChild(getFactionIcon(skill.y));
-    if (skill.x) htmlSkill.innerHTML += (skill.x);
+    if (skill.x) htmlSkill.innerHTML += (" " + skill.x + " ");
     if (skill.c) {
         htmlSkill.innerHTML += (skill.c);
         if (!inHand) htmlSkill.innerHTML += " (" + (skill.coundown ? skill.coundown : "0") + ")";

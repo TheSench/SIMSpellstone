@@ -28,7 +28,7 @@
 }
 
 .commander .level {
-    left:auto;
+    left: auto;
     right: 0px;
     margin: 1px 0px;
 }
@@ -39,7 +39,7 @@
     color: gold;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
-    border-radius: 50%; 
+    border-radius: 50%;
     box-sizing: border-box;
     box-shadow: -2px 0 black, 0 5px black, 1px 0 black, 0 -1px black;
     outline: 5px solid red;
@@ -246,11 +246,30 @@ img[src='Error.src'] {
     width: 100%;
     height: 40px;
     text-align: center;
-    background-image: -webkit-gradient( linear, left bottom, left top, from(rgba(50,50,50,0.5)), to(rgba(80,80,80,0.0)), color-stop(0.4,#333333) );
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.9), rgba(0,0,0,0.8) 80%, rgba(0,0,0,0.7) 85%, rgba(0,0,0,0.0));
 }
 
     .card-skills-short img {
         margin-top: 12px;
+        width: 12px;
+    }
+
+.card-skills-detailed {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 0px;
+    padding: 5px 20px 13px 20px;
+    left: 0px;
+    text-align: left;
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.9), rgba(0,0,0,0.8) 80%, rgba(0,0,0,0.7) 85%, rgba(0,0,0,0.0));
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    display: none;
+}
+
+    .card-skills-detailed img {
+        width: 12px;
     }
 
 .card-skills {
@@ -258,12 +277,6 @@ img[src='Error.src'] {
 }
 
     .card-skills img {
-        width: 12px;
-        padding-left: 2px;
-        padding-right: 2px;
-    }
-
-    .card-skills-short img {
         width: 12px;
     }
 
@@ -320,10 +333,6 @@ img[src='Error.src'] {
     border-color: red;
 }
 
-/*img {
-    width: 12px;
-}*/
-
 .left {
     -ms-transform: rotate(-7deg) translate(0px, 5px); /* IE 9 */
     -webkit-transform: rotate(-7deg) translate(0px, 5px); /* Chrome, Safari, Opera */
@@ -358,20 +367,20 @@ img[src='Error.src'] {
     white-space: nowrap;
 }
 
-.field .float-left {
-    border-top-style: solid;
-    border-bottom-style: solid;
-    padding: 5px;
-    height: 120px;
-    margin-bottom: 5px;
-}
+    .field .float-left {
+        border-top-style: solid;
+        border-bottom-style: solid;
+        padding: 5px;
+        height: 120px;
+        margin-bottom: 5px;
+    }
 
 .float-left .card {
     width: 84px;
     height: 120px;
     margin-right: 5px;
     display: inline-block;
-    vertical-align:top;
+    vertical-align: top;
 }
 
 .float-left .spacer {
