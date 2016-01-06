@@ -12,14 +12,18 @@ function clearDeckSpace() {
 function draw_deck(deck, onclick) {
     var cardSpace = document.getElementById("deck");
     cardSpace.innerHTML = '';
-    var cards = createDiv("float-left");
+    cardSpace.appendChild(makeDeckHTML(deck, onclick));
+}
+
+function makeDeckHTML(deck, onclick) {
+    var deckHTML = createDiv("float-left");
     var commander = get_card_by_id(deck.commander);
-    cards.appendChild(create_card_html(commander, false, onclick));
+    deckHTML.appendChild(create_card_html(commander, false, onclick));
     for (var i = 0, len = deck.deck.length; i < len; i++) {
         var unit = get_card_by_id(deck.deck[i]);
-        cards.appendChild(create_card_html(unit, false, onclick, i));
+        deckHTML.appendChild(create_card_html(unit, false, onclick, i));
     }
-    cardSpace.appendChild(cards);
+    return deckHTML;
 }
 
 function draw_card_list(list, onclick) {
