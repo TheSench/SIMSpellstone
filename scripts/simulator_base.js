@@ -159,7 +159,7 @@ if (simulator_thread) {
                 if (!dualStrike.coundown) {
                     // Let main attack loop deal with resetting timer
                     if (debug) echo += debug_name(source_card) + ' activates dualstrike<br>';
-                    empowerSkills[key](source_card, skill);
+                    empowerSkills[skill.id](source_card, skill);
                 }
             }
             empowerSkills[skill.id](source_card, skill);
