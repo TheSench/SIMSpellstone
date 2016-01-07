@@ -393,7 +393,7 @@ if (simulator_thread) {
                 var shatter = false;
                 if (protect) {
                     if (strike_damage >= protect) {
-                        shatter = barrier_ice;
+                        shatter = target.barrier_ice;
                         target['protected'] = 0;
                     } else {
                         target['protected'] -= strike_damage;
@@ -541,7 +541,7 @@ if (simulator_thread) {
                 var shatter = false;
                 if (protect) {
                     if (frost_damage >= protect) {
-                        shatter = barrier_ice;
+                        shatter = target.barrier_ice;
                         target['protected'] = 0;
                     } else {
                         target['protected'] -= frost_damage;
