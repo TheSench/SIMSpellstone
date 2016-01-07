@@ -686,8 +686,7 @@ var applyFilters = function () {
     var cards = document.getElementById("cardSpace").getElementsByClassName("card");
     for (var i = 0, len = cards.length; i < len; i++) {
         var card = cards[i];
-        var unit = card.id.replace("Card_", "");
-        var id = card.id.replace("Card_", "");
+        var unit = makeUnitKey(getUnitFromCard(card));
         if (skillHidden.indexOf(unit) > -1 || factionHidden.indexOf(unit) > -1 || subfactionHidden.indexOf(unit) > -1
              || attackHidden.indexOf(unit) > -1 || healthHidden.indexOf(unit) > -1 || delayHidden.indexOf(unit) > -1
              || typeHidden.indexOf(unit) > -1 || fusionHidden.indexOf(unit) > -1 || setHidden.indexOf(unit) > -1
