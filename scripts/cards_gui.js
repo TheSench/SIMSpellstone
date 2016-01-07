@@ -278,6 +278,7 @@ function getSkillIcon(skillName) {
             iconName = 'Vengeance.png';
             break;
         case 'protect':
+        case 'protect_ice':
             iconName = 'Barrier.png';
             break;
         case 'rally':

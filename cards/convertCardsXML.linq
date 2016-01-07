@@ -22,16 +22,16 @@ void Main()
 
 	HashSet<string> existingUnits = LoadUnits(doc);
 	HashSet<string> newUnits = new HashSet<string>();
-	
+
 	Normalize(Path.Combine("cards.xml"), downloadFiles);
 	Normalize(Path.Combine("missions.xml"), downloadFiles);
 	Normalize(Path.Combine("fusion_recipes_cj2.xml"), downloadFiles);
 	Normalize(Path.Combine("levels.xml"), downloadFiles);
-	
+
 	g_unitIDs = new HashSet<string>();
 	xmlFile = Path.Combine(path, "cards.xml");
 	doc = XDocument.Load(xmlFile);
-	
+
 	StringBuilder sbJSON = new StringBuilder();
 	List<unit> units = new List<unit>();
 
@@ -51,8 +51,8 @@ void Main()
 		if (unit.picture != null)
 		{
 			pictures[unit.picture] = unit.name;
-			var imageFile = Path.Combine(path, @"..\res\cardImages\", unit.picture+".jpg");
-			if(!File.Exists(imageFile))
+			var imageFile = Path.Combine(path, @"..\res\cardImages\", unit.picture + ".jpg");
+			if (!File.Exists(imageFile))
 			{
 				unit.picture = "NotFound";
 			}
@@ -93,54 +93,41 @@ void Main()
 	using (var writer = file.CreateText())
 	{
 		writer.Write("var CARDS = {\r\n");
-		writer.Write("\"root\": {\r\n");
-		writer.Write("\"unit\": {\r\n");
 		foreach (var unit in units)
 		{
 			writer.Write(unit.ToString());
 		}
-		writer.Write("}\r\n");
-		writer.Write("}\r\n");
 		writer.Write("};\r\n");
-		writer.WriteLine("var missions = {");
-		writer.WriteLine("  root: {");
-		writer.WriteLine("    mission: {");
+		writer.WriteLine("var MISSIONS = {");
 		foreach (var mission in missions)
 		{
-			writer.WriteLine("      \"" + mission.id + "\": {");
-			writer.WriteLine("        \"id\": \"" + mission.id + "\",");
-			writer.WriteLine("        \"name\": \"" + mission.name + "\",");
-			writer.WriteLine("        \"commander\": \"" + mission.commander + "\",");
-			writer.WriteLine("        \"deck\": [");
+			writer.WriteLine("  \"" + mission.id + "\": {");
+			writer.WriteLine("    \"id\": \"" + mission.id + "\",");
+			writer.WriteLine("    \"name\": \"" + mission.name + "\",");
+			writer.WriteLine("    \"commander\": \"" + mission.commander + "\",");
+			writer.WriteLine("    \"deck\": [");
 			foreach (var card in mission.deck)
 			{
-				writer.WriteLine("          \"" + card + "\",");
+				writer.WriteLine("      \"" + card + "\",");
 			}
-			writer.WriteLine("        ]");
-			writer.WriteLine("      },");
+			writer.WriteLine("    ]");
+			writer.WriteLine("  },");
 		}
-		writer.WriteLine("    }");
-		writer.WriteLine("  }");
 		writer.WriteLine("};");
 
-		writer.WriteLine("var achievements = [];");
-		writer.WriteLine("var raids = [];");
-		writer.WriteLine("var quests = {");
-		writer.WriteLine("  root: {");
-		writer.WriteLine("    battleground: [");
+		writer.WriteLine("var ACHIEVEMENTS = [];");
+		writer.WriteLine("var RAIDS = [];");
+		writer.WriteLine("var BATTLEGROUNDS = [");
 		for (int i = 0; i < battlegrounds.Length; i++)
 		{
 			var battleground = battlegrounds[i];
-			battleground.ID = i.ToString();
 			writer.Write(battleground.ToString());
 		}
-		writer.WriteLine("    ]");
-		writer.WriteLine("  }");
-		writer.WriteLine("};");
+		writer.WriteLine("];");
 	}
 
-	if(!getImages) return;
-	
+	if (!getImages) return;
+
 	var baseurl = @"http://spellstone.wikia.com/wiki/File:";
 	var folder = @"C:\Users\jsen\Documents\Visual Studio 2013\Projects\SIMSpellstone\res\cardImages\";
 	//pictures.Dump("Image URLs");
@@ -191,7 +178,7 @@ void Main()
 					}
 					else
 					{
-					"Fail".Dump();
+						"Fail".Dump();
 					}
 				}
 				//client.DownloadFile(url1, file1);
@@ -240,55 +227,117 @@ public enum FactionIDs
 
 battleground[] battlegrounds = new battleground[] {
 	new battleground {
-		Name = "Rise of the Frogs",
-		Effect = new skill() {
-			id = "protect",
-			x = "2",
-			y = ((int)FactionIDs.Frog).ToString(),
-			all = "1",
+		Name = "Age of the Dragons",
+		ID = "101",
+		Effects = new skill[] {
+			new skill() {
+				id = "heal",
+				//x = "2",
+				mult = "0.2",
+				y = ((int)FactionIDs.Dragon).ToString(),
+				all = "1",
+			},
 		},
 	},
 	new battleground {
 		Name = "World Awakening",
-		Effect = new skill() {
-			id = "rally",
-			x = "2",
-			y = ((int)FactionIDs.Elemental).ToString(),
-			all = "1",
+		ID = "102",
+		Effects = new skill[] {
+			new skill() {
+				id = "rally",
+				x = "2",
+				y = ((int)FactionIDs.Elemental).ToString(),
+				all = "1",
+			},
 		},
 	},
 	new battleground {
-		Name = "Age of the Dragons",
-		Effect = new skill() {
-			id = "heal",
-			//x = "2",
-			mult = "0.2",
-            y = ((int)FactionIDs.Dragon).ToString(),
-			all = "1",
+		Name = "Rise of the Frogs",
+		ID = "103",
+		Effects = new skill[] {
+			new skill() {
+				id = "protect",
+				x = "2",
+				y = ((int)FactionIDs.Frog).ToString(),
+				all = "1",
+			},
+		},
+	},
+	new battleground {
+		Name = "Iceshatter Barrier",
+		ID = "104",
+		Effects = new evolve_skill[] {
+			new evolve_skill() {
+				id = "protect",
+				s = "protect_ice",
+			},
+			new evolve_skill() {
+				id = "protect",
+				s = "protect_ice",
+				all = "1",
+			},
+		},
+	},
+	new battleground {
+		Name = "Devouring Hunger",
+		ID = "105",
+		Effects = new add_skill[] {
+			new add_skill() {
+				id = "berserk",
+				mult = "0.2",
+				Base = "attack",
+				y = ((int)FactionIDs.Undead).ToString(),
+			},
 		},
 	},
 };
 
 public class battleground
 {
-	private const string tabs = "        ";
-	private const string tabs2 = "          ";
-	
+	private const string tabs = "    ";
+	private const string tabs2 = "      ";
+	private const string tabs3 = "        ";
+	private const string tabs4 = "        ";
+
 	public string Name { get; set; }
-	public skill Effect { get; set; }
+	public object[] Effects { get; set; }
 	public string ID { get; set; }
 
 	public override string ToString()
 	{
 		StringBuilder sb = new StringBuilder();
-		sb.Append("      {\r\n");
+		sb.Append("  {\r\n");
 		sb.Append(tabs).Append("\"name\": \"").Append(Name).Append("\",\r\n");
 		sb.Append(tabs).Append("\"id\": \"").Append(ID).Append("\",\r\n");
-		sb.Append(tabs).Append("\"skill\": [\r\n");
-		AppendSkill(sb, Effect, tabs2);
-		sb.Append(tabs).Append("]\r\n");
-		sb.Append("      },\r\n");
+		sb.Append(tabs).Append("\"effect\": {\r\n");
+		sb.Append(tabs2).Append("\"" + Effects.GetType().Name.Replace("[]", "") + "\": [\r\n");
+		AppendEffect(sb);
+		sb.Append(tabs2).Append("]\r\n");
+		sb.Append(tabs).Append("}\r\n");
+		sb.Append("  },\r\n");
 		return sb.ToString();
+	}
+
+	private void AppendEffect(StringBuilder sb)
+	{
+		for (int i = 0; i < Effects.Length; i++)
+		{
+			sb.Append(tabs3).Append("{\r\n");
+			var effect = Effects[i];
+			if (effect is skill)
+			{
+				AppendSkill(sb, (skill)effect, tabs4, false);
+			}
+			else if (effect is evolve_skill)
+			{
+				AppendEvolve(sb, (evolve_skill)effect, tabs4);
+			}
+			else if (effect is add_skill)
+			{
+				AppendAddSkill(sb, (add_skill)effect, tabs4);
+			}
+			sb.Append(tabs3).Append("},\r\n");
+		}
 	}
 }
 
@@ -333,7 +382,8 @@ public partial class unit
 	{
 		StringBuilder unit = new StringBuilder();
 		AppendUnit(unit);
-		if(!g_unitIDs.Add(this.id)) {
+		if (!g_unitIDs.Add(this.id))
+		{
 			"Conflict".Dump(this.id + " : " + this.name);
 		}
 		return unit.ToString();
@@ -607,6 +657,118 @@ public partial class skill
 	}
 }
 
+/// <remarks/>
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+public partial class evolve_skill
+{
+	private string idField;
+	private string sField;
+	private string allField;
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string id
+	{
+		get { return this.idField; }
+		set { this.idField = value; }
+	}
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string s
+	{
+		get { return this.sField; }
+		set { this.sField = value; }
+	}
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string all
+	{
+		get { return this.allField; }
+		set { this.allField = value; }
+	}
+}
+
+
+/// <remarks/>
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+public partial class add_skill
+{
+	private string idField;
+	private string xField;
+	private string yField;
+	private string cField;
+	private string sField;
+	private string allField;
+	private string multField;
+	private string baseField;
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string id
+	{
+		get { return this.idField; }
+		set { this.idField = value; }
+	}
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string x
+	{
+		get { return this.xField; }
+		set { this.xField = value; }
+	}
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string mult
+	{
+		get { return this.multField; }
+		set { this.multField = value; }
+	}
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string Base
+	{
+		get { return this.baseField; }
+		set { this.baseField = value; }
+	}
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string y
+	{
+		get { return this.yField; }
+		set { this.yField = value; }
+	}
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string c
+	{
+		get { return this.cField; }
+		set { this.cField = value; }
+	}
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string s
+	{
+		get { return this.sField; }
+		set { this.sField = value; }
+	}
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string all
+	{
+		get { return this.allField; }
+		set { this.allField = value; }
+	}
+}
+
 public partial class mission
 {
 	public string id { get; set; }
@@ -653,11 +815,14 @@ private static void AppendSkills(StringBuilder sb, skill[] skills, string tabs)
 	}
 }
 
-private static void AppendSkill(StringBuilder sb, skill skill, string tabs)
+private static void AppendSkill(StringBuilder sb, skill skill, string tabs, bool braces = true)
 {
 	var propTabs = tabs + "  ";
 	//sb.Append(tabs).Append("\"").Append(skill.id).Append("\": {\r\n");
-	sb.Append(tabs).Append("{\r\n");
+	if (braces)
+	{
+		sb.Append(tabs).Append("{\r\n");
+	}
 
 	AppendEntryString(sb, "id", skill.id, propTabs);
 	AppendEntry(sb, "x", skill.x, propTabs);
@@ -667,15 +832,41 @@ private static void AppendSkill(StringBuilder sb, skill skill, string tabs)
 	AppendEntry(sb, "c", skill.c, propTabs);
 	AppendEntryString(sb, "s", skill.s, propTabs);
 	AppendEntryString(sb, "all", skill.all, propTabs);
-	
-	sb.Append(tabs).Append("},\r\n");
+
+	if (braces)
+	{
+		sb.Append(tabs).Append("},\r\n");
+	}
+}
+
+private static void AppendEvolve(StringBuilder sb, evolve_skill evolve, string tabs)
+{
+	var propTabs = tabs + "  ";
+	AppendEntryString(sb, "id", evolve.id, propTabs);
+	AppendEntryString(sb, "s", evolve.s, propTabs);
+	AppendEntryString(sb, "all", evolve.all, propTabs);
+}
+
+private static void AppendAddSkill(StringBuilder sb, add_skill skill, string tabs)
+{
+	var propTabs = tabs + "  ";
+
+	AppendEntryString(sb, "id", skill.id, propTabs);
+	AppendEntry(sb, "x", skill.x, propTabs);
+	AppendEntry(sb, "mult", skill.mult, propTabs);
+	AppendEntryString(sb, "base", skill.Base, propTabs);
+	AppendEntryString(sb, "y", skill.y, propTabs);
+	AppendEntry(sb, "z", skill.y, propTabs);
+	AppendEntry(sb, "c", skill.c, propTabs);
+	AppendEntryString(sb, "s", skill.s, propTabs);
+	AppendEntryString(sb, "all", skill.all, propTabs);
 }
 
 private static void Normalize(string fileName, bool downloadFiles)
 {
 	string filepath = Path.Combine(path, fileName);
 	string url = Path.Combine(baseUrl, fileName);
-	if(downloadFiles)
+	if (downloadFiles)
 	{
 		webClient.DownloadFile(url, filepath);
 	}

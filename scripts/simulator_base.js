@@ -119,22 +119,20 @@ if (simulator_thread) {
         else return 0;
     };
 
-    var iceshatter = function (src_card, amount) {
-        if (amount) {
-            // Bug 27391 - If Barrier is partially reduced before being completely depleted, Iceshatter still deals full damage
-            amount = src_card.barrier_ice;
-            //if (amount > src_card.barrier_ice) amount = src_card.barrier_ice;
-            var o = get_o(src_card);
-            var field_o = field[o];
-            var target = field_o.assaults[src_card.key];
-            if (!target || !target.isAlive()) target = field_o.commander;
+    var iceshatter = function (src_card) {
+        // Bug 27391 - If Barrier is partially reduced before being completely depleted, Iceshatter still deals full damage
+        var amount = src_card.barrier_ice;
+        //if (amount > src_card.barrier_ice) amount = src_card.barrier_ice;
+        var o = get_o(src_card);
+        var field_o = field[o];
+        var target = field_o.assaults[src_card.key];
+        if (!target || !target.isAlive()) target = field_o.commander;
 
-            do_damage(target, amount);
+        do_damage(target, amount);
 
-            if (debug) {
-                echo += debug_name(src_card) + "'s barrier shatters and hits " + debug_name(target) + ' for ' + amount + ' damage';
-                echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
-            }
+        if (debug) {
+            echo += debug_name(src_card) + "'s barrier shatters and hits " + debug_name(target) + ' for ' + amount + ' damage';
+            echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
         }
     };
 
@@ -172,7 +170,10 @@ if (simulator_thread) {
         // - Can target specific faction
         // - Targets allied assaults
         // - Can be augmented
-        protect: function (src_card, skill) {
+        protect_ice: function(src_card, skill) {
+            activationSkills.protect(src_card, skill, true);
+        },
+        protect: function (src_card, skill, ice) {
 
             var faction = skill['y'];
 
@@ -209,7 +210,9 @@ if (simulator_thread) {
                 var target = targets[key];
 
                 target.protected += protect;
-                target.barrier_ice += protect;
+                if (ice) {
+                    target.barrier_ice += protect;
+                }
                 if (debug) {
                     if (augment && augment > 0) echo += '<u>(Enhance: +' + augment + ')</u><br>';
                     echo += debug_name(src_card) + ' barriers ' + debug_name(target) + ' by ' + protect + '<br>';
@@ -387,10 +390,10 @@ if (simulator_thread) {
                 if (augment) {
                     strike_damage += augment;
                 }
-                var shatter = 0;
+                var shatter = false;
                 if (protect) {
                     if (strike_damage >= protect) {
-                        shatter = target['protected'];
+                        shatter = barrier_ice;
                         target['protected'] = 0;
                     } else {
                         target['protected'] -= strike_damage;
@@ -413,7 +416,7 @@ if (simulator_thread) {
                     echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
                 }
                 if (shatter) {
-                    iceshatter(target, shatter);
+                    iceshatter(target);
                 }
             }
         },
@@ -535,10 +538,10 @@ if (simulator_thread) {
                 if (augment) {
                     frost_damage += augment;
                 }
-                var shatter = 0;
+                var shatter = false;
                 if (protect) {
                     if (frost_damage >= protect) {
-                        shatter = target['protected'];
+                        shatter = barrier_ice;
                         target['protected'] = 0;
                     } else {
                         target['protected'] -= frost_damage;
@@ -561,7 +564,7 @@ if (simulator_thread) {
                     echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
                 }
                 if (shatter) {
-                    iceshatter(target, shatter);
+                    iceshatter(target);
                 }
             }
         },
@@ -834,13 +837,13 @@ if (simulator_thread) {
 
         // Initialize player Commander on the field
         var field_player = field['player'];
-        var field_player_commander = get_card_by_id(deck['player']['commander']);
+        var field_player_commander = get_card_apply_battlegrounds(deck['player']['commander']);
         field_player['commander'] = field_player_commander;
         field_player_commander.owner = 'player';
         field_player_commander['health_left'] = field_player_commander['health'];
         // Initialize cpu Commander on the field
         var field_cpu = field['cpu'];
-        var field_cpu_commander = get_card_by_id(deck['cpu']['commander']);
+        var field_cpu_commander = get_card_apply_battlegrounds(deck['cpu']['commander']);
         field_cpu['commander'] = field_cpu_commander;
         field_cpu_commander.owner = 'cpu';
         field_cpu_commander['health_left'] = field_cpu_commander['health'];
@@ -855,7 +858,7 @@ if (simulator_thread) {
 
         if (getsiege) {
             var tower = { id: 601 + parseInt(tower_type), level: parseInt(tower_level)-1 };
-            var towerCard = get_card_by_id(tower);
+            var towerCard = get_card_apply_battlegrounds(tower);
             play_card(towerCard, 'cpu', true);
         }
 
@@ -989,7 +992,7 @@ if (simulator_thread) {
                 if (choice === undefined) return false;
                 card_picked = choice;
                 if (!card_picked) card_picked = 0;
-                play_card(get_card_by_id(deck_p_deck[card_picked]), p);
+                play_card(get_card_apply_battlegrounds(deck_p_deck[card_picked]), p);
             } else if (deck_p_ordered) {
                 // Prepare 3-card hand
                 var hand = deck_p_deck.slice(0, 3);
@@ -1033,13 +1036,13 @@ if (simulator_thread) {
                         }
                         deck_p_ordered.length = orderIdx;
                         card_picked = handIdx;
-                        play_card(get_card_by_id(cardInHand), p);
+                        play_card(get_card_apply_battlegrounds(cardInHand), p);
                         break;
                     }
                 }
             } else {
                 // Play first card in hand
-                play_card(get_card_by_id(deck_p_deck[0]), p);
+                play_card(get_card_apply_battlegrounds(deck_p_deck[0]), p);
             }
 
             // Remove from deck
@@ -1052,6 +1055,10 @@ if (simulator_thread) {
         return true;
     };
 
+    var get_card_apply_battlegrounds = function (id) {
+        return get_card_by_id(id, battlegrounds.onCreate);
+    }
+
     var play_turn = function (p, o, field) {
 
         var field_p = field[p];
@@ -1063,9 +1070,10 @@ if (simulator_thread) {
         var field_o_assaults = field_o['assaults'];
 
         // Activate battleground effects
-        for (var key in battlegrounds) {
-            var battleground = battlegrounds[key];
+        for (var key in battlegrounds.onTurn) {
+            var battleground = battlegrounds.onTurn[key];
             battleground.owner = p;
+            doEmpower(battleground);
             activation_skills(battleground);
         }
 
@@ -1238,7 +1246,7 @@ if (simulator_thread) {
 
         // Damage reduction
         var protect = target.protected;
-        var shatter = 0;
+        var shatter = false;
         var armor = target.armored; //0;
         if(armor) {
         /*if (target.skill.armored) {
@@ -1272,7 +1280,7 @@ if (simulator_thread) {
             }
             if (protect) {
                 if (damage >= protect) {
-                    shatter = protect;
+                    shatter = target.barrier_ice;
                     damage -= protect;
                     target.protected = 0;
                 } else {
@@ -1330,8 +1338,8 @@ if (simulator_thread) {
             }
         }
 
-        if (shatter > 0) {
-            iceshatter(target, shatter);
+        if (shatter) {
+            iceshatter(target);
         }
 
         if (damage > 0) {

@@ -105,7 +105,7 @@ function cloneCard(original) {
 }
 
 var MakeAssault = (function () {
-    var Card = function (original_card, unit_level) {
+    var Card = function (original_card, unit_level, skillModifiers) {
         this.id = original_card.id;
         this.name = original_card.name;
         // TODO: Remove this
@@ -120,7 +120,7 @@ var MakeAssault = (function () {
         this.type = original_card.type;
         this.sub_type = original_card.sub_type;
         this.set = original_card.set;
-        var original_skills = original_card.skill;
+        var original_skills = original_card.skill.slice();
         if (this.level > 1) {
             var upgrade;
             for (var key in original_card.upgrades) {
@@ -133,11 +133,55 @@ var MakeAssault = (function () {
                 if (key == this.level) break;
             }
         }
+
+        if (skillModifiers) {
+            original_skills = original_skills.slice();
+            modifySkills(this, original_skills, skillModifiers);
+        }
         copy_skills_2(this, original_skills)
         this.timer = this.cost;
         this.health_left = this.health;
+
         card_cache[original_card.id + "-" + unit_level] = this;
+
         return this;
+    }
+
+    function modifySkills(new_card, original_skills, skillModifiers) {
+        for (var i = 0; i < skillModifiers.length; i++) {
+            var skillModifier = skillModifiers[i];
+            if (skillModifier.modifierType == "evolve") {
+                for (var j = 0; j < skillModifier.effects.length; j++) {
+                    var evolution = skillModifier.effects[j];
+                    for (var key in original_skills) {
+                        var skill = original_skills[key];
+                        if (skill.id == evolution.id && skill.all == evolution.all) {
+                            skill = copy_skill(skill);
+                            skill.id = evolution.s;
+                            original_skills[key] = skill;
+                        }
+                    }
+                }
+            } else if (skillModifier.modifierType == "add") {
+                for (var j = 0; j < skillModifier.effects.length; j++) {
+                    var addedSkill = skillModifier.effects[j];
+                    var new_skill = {};
+                    new_skill.id = addedSkill.id;
+                    if (addedSkill.mult && addedSkill.base) {
+                        new_skill.x = Math.floor(addedSkill.mult * new_card[addedSkill.base]);
+                    } else {
+                        new_skill.x = addedSkill.x;
+                    }
+                    new_skill.y = addedSkill.y;
+                    new_skill.z = addedSkill.z;
+                    new_skill.c = addedSkill.c;
+                    new_skill.s = addedSkill.s;
+                    new_skill.all = addedSkill.all;
+                    if (addedSkill.mult && addedSkill.base && new_skill.x == 0) continue;
+                    original_skills.push(new_skill);
+                }
+            }
+        }
     }
 
     Card.prototype = {
@@ -267,16 +311,33 @@ var MakeAssault = (function () {
         },
     }
 
-    return (function (original_card, unit_level) {
+    return (function (original_card, unit_level, skillModifiers) {
         if (!unit_level) unit_level = 1;
-        return new Card(original_card, unit_level);
+        return new Card(original_card, unit_level, skillModifiers);
+    })
+}());
+
+var MakeSkillModifier = (function () {
+    var Modifier = function (name, effects) {
+        this.name = name;
+        if (effects.add_skill) {
+            this.modifierType = "add";
+            this.effects = effects.add_skill;
+        } else if (effects.evolve_skill) {
+            this.modifierType = "evolve";
+            this.effects = effects.evolve_skill;
+        }
+    }
+
+    return (function (name, effects) {
+        return new Modifier(name, effects);
     })
 }());
 
 var MakeBattleground = (function () {
-    var Battleground = function (name, skill) {
+    var Battleground = function (name, original_skills) {
         this.name = name;
-        this.skill = skill;
+        copy_skills_2(this, original_skills);
     }
 
     Battleground.prototype = {
@@ -333,24 +394,25 @@ function setSkill_2(new_card, key, skill) {
         case 'poison':
             new_card[skill.id] = skill.x;
             break;
-        // Empower Skills
+            // Empower Skills
         case 'fervor':
         case 'rally':
         case 'legion':
             new_card.empowerSkills.push(skill);
             break;
-        // Activation skills (can occur twice on a card)
+            // Activation skills (can occur twice on a card)
         case 'enfeeble':
         case 'enhance':
         case 'frost':
         case 'heal':
         case 'jam':
         case 'protect':
+        case 'protect_ice':
         case 'strike':
         case 'weaken':
             new_card.skill.push(skill);
             break;
-        // All other skills
+            // All other skills
         case 'flurry':
         default:
             new_card[skill.id] = skill;
@@ -377,6 +439,7 @@ function setSkill(current_skills, key, skill) {
     // These skills could have multiple instances
     switch (skill.id) {
         case 'protect':
+        case 'protect_ice':
         case 'strike':
         case 'rally':
         case 'enhance':
@@ -404,10 +467,6 @@ function copy_skill(original_skill) {
     new_skill.z = original_skill.z;
     new_skill.c = original_skill.c;
     new_skill.s = original_skill.s;
-    new_skill.attacked = original_skill.attacked;
-    new_skill.died = original_skill.died;
-    new_skill.played = original_skill.played;
-    new_skill.kill = original_skill.kill;
     return new_skill;
 }
 
@@ -452,6 +511,8 @@ function convertName(oldName) {
             return "siphon";
         case "protect":
             return "barrier";
+        case "protect_ice":
+            return "iceshatter barrier";
         case "rally":
             return "empower";
         case "strike":
@@ -686,10 +747,10 @@ function unitInfo_to_base64triplet(unit_info) {
 
 function encode_multiplier(copies) {
     copies = copies - 2;    // Encoded as "2 + value"
-    if(copies > 256) {
+    if (copies > 256) {
         return "";
     }
-    var char1 = multiplierChars[Math.floor(copies/64)];
+    var char1 = multiplierChars[Math.floor(copies / 64)];
     var char2 = base64chars[copies % 64];
     return char1 + char2;
 }
@@ -760,7 +821,7 @@ function hash_decode(hash) {
     var priorities;
     if (hash.indexOf('|') > 0) {
         // Ignore priorities for now
-        priorities = hash.substr(hash.indexOf('|')+1);
+        priorities = hash.substr(hash.indexOf('|') + 1);
         hash = hash.substr(0, hash.indexOf('|'));
     }
     var unitidx = 0;
@@ -771,7 +832,7 @@ function hash_decode(hash) {
             if (priorities) unitInfo.priority = priorities[unitidx];
 
             if (unitInfo) {
-                if (CARDS.root.unit[unitInfo.id]) {
+                if (CARDS[unitInfo.id]) {
                     // Repeat previous card multiple times
                     if (is_commander(unitInfo.id)) {
                         current_deck.commander = unitInfo;
@@ -826,7 +887,7 @@ function load_deck_from_cardlist(list) {
         list = list.replace(/\s/g, '');              // Remove all whitespace
         list = list.split(/[,;:]/);
 
-        var unit_definitions = CARDS.root.unit;
+        var unit_definitions = CARDS;
 
         for (var i in list) {
             var current_card = list[i].toString();
@@ -959,7 +1020,7 @@ function clean_name_for_matching(name) {
 // Load mission deck
 function load_deck_mission(id) {
 
-    var missionInfo = missions.root.mission[id];
+    var missionInfo = MISSIONS[id];
     if (!missionInfo) return 0;
 
     var current_deck = [];
@@ -985,12 +1046,12 @@ function load_deck_mission(id) {
 // - randomize it as required
 function load_deck_raid(id) {
 
-    var raid = raids.root.raid[id];
+    var raid = raids[id];
     if (!raid) return 0;
 
     // Load battleground, if available
     if (raid.effect && !getbattleground) {
-        battleground = quests.root.battleground[raid.effect.effect];
+        battleground = BATTLEGROUNDS[raid.effect.effect];
         getbattleground = raid.effect;
     }
 
@@ -1031,14 +1092,14 @@ function load_deck_raid(id) {
 
 
 // Output card array
-function get_card_by_id(unit) {
+function get_card_by_id(unit, skillModifiers) {
 
     var cached = card_cache[unit.id + "-" + unit.level]
     if (cached) {
         return cloneCard(cached);
     }
 
-    var current_card = CARDS.root.unit[unit.id];
+    var current_card = CARDS[unit.id];
 
     // Not a valid card
     if (!current_card) {
@@ -1053,13 +1114,13 @@ function get_card_by_id(unit) {
         if (!current_card.skill) {
             current_card.skill = [];
         }
-        return MakeAssault(current_card, unit.level);
+        return MakeAssault(current_card, unit.level, skillModifiers);
     }
 }
 
 function get_slim_card_by_id(unit, getDetails) {
-    
-    var current_card = CARDS.root.unit[unit.id];
+
+    var current_card = CARDS[unit.id];
     var new_card = {};
     if (current_card.card_type == "1") {
         new_card.isCommander = function () { return true; };
@@ -1125,7 +1186,7 @@ function GetMaxLevel(original_card) {
 
 // Output card name
 function get_card_name_by_id(id) {
-    var card = CARDS.root.unit[id];
+    var card = CARDS[id];
     if (!card) return 0;
     else if (card.set == 5002) return card.name + '*';
     else return card.name;
@@ -1134,7 +1195,7 @@ function get_card_name_by_id(id) {
 
 //Card ID is ...
 function is_commander(id) {
-    var card = CARDS.root.unit[id];
+    var card = CARDS[id];
     return (card && card.card_type == '1');
 }
 
