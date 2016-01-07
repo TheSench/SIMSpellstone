@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title id="title_tag">SimSpellstone - The Spellstone Simulator that runs from your browser!</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="styles/card.css">
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <!-- This script contains the cached data for cards, missions, quests, raids,
+        and battlegrounds -->
+    <script id="cards_script" type="text/javascript" src="cards/cache.js"></script>
+
+    <!-- This script contains version info that changes each update -->
+    <script id="common_variables" type="text/javascript" src="scripts/common.js"></script>
+
+    <!-- SIMULATOR CODE BEGINS HERE -->
+    <!--
+    These are the functions that are used by both the GUI script and the worker
+    scripts. The following logic goes in here:
+    * Shuffle()
+    * Copy functions
+    * "Card ID is..." functions
+    * debug_dump functtions
+    * generate_card_list()
+    * hash encoding/decoding
+    * load_deck_from_x functions
+    * get_x_by_id functions
+    * -->
+    <script id="shared_functions" type="text/javascript" src="scripts/shared.js"></script>
+
+    <!-- These are the functions/variables that are specific to running the
+    simulator from worker threads.
+    The following functions/variables are defined here:
+    * initializeWorker()
+    * Functions for handling messages from the GUI thread (initializing/running/stopping simulations)
+    * Returning simulation results to the GUI thread
+    * Global variables used by the simulator when run in worker threads
+    -->
+    <script id="worker_script" type="text/worker" src="scripts/worker.js">
+    </script>
+
+    <!-- This script determines if the user's browser supports the multi-threaded logic, or if the single-threaded logic must be used. -->
+    <script id="determine_simulator_type" type="text/javascript" src="scripts/determine.js"></script>
+
+    <!-- These are the generic functions/variables used to simulate battles.
+    All of the logic for simulating a single battle goes in here.
+    -->
+    <script id="simulator_base" type="text/javascript" src="scripts/simulator_base.js"></script>
+
+    <!-- The following two scripts are the functions/variables needed by the main
+    thread for the two types of simulators.  The following functions must be
+    defined in each of these:
+    * startsim(autostart)
+    * stopsim()
+    * run_sim()
+    -->
+    <!-- For the single-threaded simulator, the simulator_base script is loaded
+    into the GUI script.  In addition, the following functions are also defined
+    here so that the GUI thread can run simulations:
+    * run_sims()
+    -->
+    <script id="single_threaded_simulator" type="text/javascript" src="scripts/single_threaded.js"></script>
+
+    <!-- For the multi-threaded simulator, the following functions are also defined here:
+    * Variables to store worker objects
+    * Functions to create the worker threads
+    * Event Listener to handle messages from worker threads
+    * Functions to add results from worker thread to the overall simulation results
+    * var to = function display progress on a regular basis
+    * Global variable used for smoothing out sims/sec calculation
+    -->
+    <script id="multi_threaded_simulator" type="text/javascript" src="scripts/multi_threaded.js"></script>
+
+    <!-- This script handles the base GUI functionality (getting user input and displaying simulation). -->
+    <script id="gui_script" type="text/javascript" src="scripts/gui_script.js"></script>
+
+    <!-- This script handles drawing the UI for user-controlled mode. -->
+    <script id="gui_script" type="text/javascript" src="scripts/cards_gui.js"></script>
+
+    <script id="gui_script" type="text/javascript" src="scripts/saved_decks.js"></script>
+
+    <!-- SIMULATOR CODE ENDS HERE -->
+
+</head>
+<body onload="onpageload()">
+    <font style="font-size: 10px;">Multi-core support:</font>
+    <a style="font-size: 10px; color: #993333;" href="?maxworkers=1">Single core</a> |
+    <a style="font-size: 10px; color: #993333;" href="?maxworkers=2">Dual-core</a> |
+    <a style="font-size: 10px; color: #993333;" href="?maxworkers=4">Quad-core</a> |
+    <a style="font-size: 10px; color: #993333;" href="?maxworkers=6">Hexa-core</a> |
+    <a style="font-size: 10px; color: #993333;" href="?maxworkers=8">Octo-core</a>
+    <br>
+    <input type="button" onclick="toggle_u()" value="Toggle Gray Text" />
+    <br>
+    <h1 id="version_label">SimSpellstone</h1>
+    <h4 id="version_label2"></h4>
+    <br>
+    <span id="ui">
+        <form>
+            <div><b>Deck Hash:</b></div><input id="deck" type="text" value="" size="100"><br>
+            <div><label class="button" onclick="load_deck_builder('player');"><b>Deck Builder</b></label></div><font color="#666"><strong>Hash example:</strong> EAIgtjRUlRUf_ARZS_B</font><br>
+            <br>
+            <div><b>Card List:</b></div><input id="cardlist" type="text" value="" size="100"><br>
+            <div>&nbsp;</div><font color="#666"><strong>Card list example:</strong> Urs(5), Matriarch(5), Fire Devil(4); Smelted Skeleton(4)x2, Outrunner(4)x3</font><br>
+            <br>
+            <div>Ordered Deck:</div><input type="checkbox" id="ordered">
+            <div><u>Exact Order (ignore 3-card hand rule):</u></div><input type="checkbox" id="exactorder"><br>
+            <div>Surge Mode:</div><input type="checkbox" id="surge"><br>
+            <div style="display:none"><div>Tournament Mode:</div><input type="checkbox" id="tournament"><br></div>
+            <br>
+            <hr>
+            <br>
+            <div><i>Enemy Deck Hash:</i></div><input type="text" id="deck2" value="" size="100"><br>
+            <div><label class="button" onclick="load_deck_builder('cpu');"><i>Deck Builder</i></label></div><font color="#666"><strong>Hash example:</strong> EAIgtjRUlRUf_ARZS_B</font><br>
+            <br>
+            <div><i>Enemy Card List:</i></div><input id="cardlist2" type="text" value="" size="100"><br>
+            <div>&nbsp;</div><font color="#666"><strong>Card list example:</strong> Urs(5), Matriarch(5), Fire Devil(4); Smelted Skeleton(4)x2, Outrunner(4)x3</font><br>
+            <br>
+            <div>Ordered Enemy Deck:</div><input type="checkbox" id="ordered2">
+            <div><u>Exact Order (ignore 3-card hand rule):</u></div><input type="checkbox" id="exactorder2"><br>
+            <div>Castle Siege:</div><input type="checkbox" id="siege"><input type="NUMBER" id="tower_level" min="1" max="15" step="1" value="10" size="6"><select id="tower_type"></select>
+            <br>
+            <div><i>Mission (7*):</i></div>
+            <select id="mission">
+                <option value="" />
+            </select>
+            <br>
+            <div><i>Battleground:</i></div>
+            <div id="battleground" style="overflow: auto; width: 200px; height: 80px; border: 1px solid #336699; padding-left: 5px; text-align: left; "></div>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <div>Number of Simulations:</div><input type="text" id="sims" value="100" size="10"><br>
+            <br>
+            <div>Use Controlled:</div><input type="checkbox" id="user_controlled"><span id="unavailable" style="visibility:hidden;">(Only available in Single Core mode)</span><br>
+            <div>Debug Mode:</div><input type="checkbox" id="debug"><br>
+            <div>Mass Debug Mode (causes slowdown):</div><input type="radio" id="mass_debug" name="debugMode" onclick="toggleRadio(this)"><br><!-- onchange="massDebugChanged(this)"><br>-->
+            <div>Debug Win Mode (output first win):</div><input type="radio" id="win_debug" name="debugMode" onclick="toggleRadio(this)"><br><!--onchange="debugModeChanged(this)"><br>-->
+            <div>Debug Loss Mode (output first loss):</div><input type="radio" id="loss_debug" name="debugMode" onclick="toggleRadio(this)"><br><!--onchange="debugModeChanged(this)"><br>-->
+            <br>
+            <div>&nbsp;</div><input id="btn_simulate" type="button" value="Simulate" onclick="return startsim();" style="text-align: center; font-weight: bold;"> <input type="button" value="Generate Link" onclick="return display_generated_link();" style="text-align: center; font-weight: normal;"> <input type="button" value="History" onclick="return display_history();" style="text-align: center; font-weight: normal;">
+        </form>
+    </span>
+    <br>
+    <span id="content"></span>
+    <br>
+    <span id="cardSpace"></span>
+    <br>
+    <span id="stop" style="display: none;"><input type="button" value="Stop Sim(s)" onclick="stopsim()"><br>TIP: Switching browser tabs may cause your simulation to pause!</span>
+</body>
+</html>
