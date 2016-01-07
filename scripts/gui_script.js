@@ -638,7 +638,6 @@ function load_deck_builder(player) {
     //var getbattleground = document.getElementById('battleground').value;
 
     // Load player deck
-    var url = "DeckBuilder.html";
     var deck = {
         commander: elariaCaptain,
         deck: [],
@@ -650,8 +649,17 @@ function load_deck_builder(player) {
     } else if (getmission) {
         deck = load_deck_mission(getmission);
     }
+
+    open_deck_builder(deck);
+}
+
+function open_deck_builder(deck, hash) {
+    var url = "DeckBuilder.html";
     if (deck) {
-        url += "?hash=" + hash_encode(deck);
+        hash = hash_encode(deck);
+    }
+    if (hash) {
+        url += "?hash=" + hash;
     }
 
     var width = Math.min(screen.width, 1000);
