@@ -115,6 +115,21 @@ var drawAllCards = function () {
 
     draw_deck(deck, removeFromDeck);
     draw_card_list(unitsShown, addToDeck);
+    if (inventory) {
+        var unitsToHide = deck.deck.slice();
+        unitsToHide.push(deck.commander);
+        for (var i = 0; i < unitsToHide.length; i++) {
+            var unit = unitsToHide[i];
+            var cards = $("#cardSpace [data-id=" + unit.id + "][data-level=" + unit.level + "]");
+            for (var j = 0; j < cards.length; j++) {
+                var htmlCard = cards[j];
+                if (!htmlCard.classList.contains('picked')) {
+                    htmlCard.classList.add("picked");
+                    break;
+                }
+            }
+        }
+    }
     updateHash();
 };
 
