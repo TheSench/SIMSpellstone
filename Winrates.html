@@ -82,6 +82,9 @@
 
     <script id="gui_script" type="text/javascript" src="scripts/saved_decks.js"></script>
 
+    <script id="gui_script" type="text/javascript" src="scripts/retrieve_deck.js"></script>
+    <script id="gui_script" type="text/javascript" src="scripts/winrates.js"></script>
+
     <!-- SIMULATOR CODE ENDS HERE -->
 
 </head>
@@ -99,6 +102,12 @@
     <h4 id="version_label2"></h4>
     <br>
     <span id="ui">
+        <form>
+            <input style="float:initial" id="btn_simulate" type="button" value="SIM Guild" onclick="return SimGuild();" style="text-align: center; font-weight: bold;">
+            <div><b>Response JSON:</b></div><input id="request_json" type="text" value="" size="50" onchange="DeckRetriever.getFieldsFromRequest();"><br>
+        </form>
+        <br/>
+        <hr/>
         <form>
             <div><b>Deck Hash:</b></div><input id="deck" type="text" value="" size="100"><br>
             <div><label class="button" onclick="load_deck_builder('player');"><b>Deck Builder</b></label></div><font color="#666"><strong>Hash example:</strong> EAIgtjRUlRUf_ARZS_B</font><br>
@@ -151,5 +160,7 @@
     <span id="cardSpace"></span>
     <br>
     <span id="stop" style="display: none;"><input type="button" value="Stop Sim(s)" onclick="stopsim()"><br>TIP: Switching browser tabs may cause your simulation to pause!</span>
+    <br />
+    <div id="winrates"></div>
 </body>
 </html>

@@ -23,14 +23,14 @@
     <br>
     <span id="ui">
         <form>
-            <div><b>Response JSON:</b></div><input id="request_json" type="text" value="" size="50" onchange="getFieldsFromRequest();"><br>
+            <div><b>Response JSON:</b></div><input id="request_json" type="text" value="" size="50" onchange="DeckRetriever.getFieldsFromRequest();"><br>
         </form>
         <hr/>
         <form id="form-post">
             <div>&nbsp;</div>
-            <input id="btn_simulate" type="button" value="Entire Guild" onclick="return retrieveGuildDecks();" style="text-align: center; font-weight: bold;">
-            <input id="btn_simulate" type="button" value="Just My Deck" onclick="return retrieveMyDeck();" style="text-align: center; font-weight: bold;">
-            <input id="btn_simulate" type="button" value="Get My Inventory" onclick="return getFullUserData();" style="text-align: center; font-weight: bold;">
+            <input id="btn_simulate" type="button" value="Entire Guild" onclick="return DeckRetriever.retrieveGuildDecks(true);" style="text-align: center; font-weight: bold;">
+            <input id="btn_simulate" type="button" value="Just My Deck" onclick="return DeckRetriever.retrieveMyDeck();" style="text-align: center; font-weight: bold;">
+            <input id="btn_simulate" type="button" value="Get My Inventory" onclick="return DeckRetriever.getFullUserData();" style="text-align: center; font-weight: bold;">
         </form>
     </span>
     <br>
