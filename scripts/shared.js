@@ -168,7 +168,7 @@ var MakeAssault = (function () {
                     var new_skill = {};
                     new_skill.id = addedSkill.id;
                     if (addedSkill.mult && addedSkill.base) {
-                        new_skill.x = Math.floor(addedSkill.mult * new_card[addedSkill.base]);
+                        new_skill.x = Math.ceil(addedSkill.mult * new_card[addedSkill.base]);
                     } else {
                         new_skill.x = addedSkill.x;
                     }
