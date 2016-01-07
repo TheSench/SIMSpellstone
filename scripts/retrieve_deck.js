@@ -1,4 +1,4 @@
-﻿function retrieveDecks() {
+﻿function retrieveGuildDecks() {
     var existingRequest = document.getElementById("request_json").value;
     if (existingRequest.length > 0) {
         existingRequest = JSON.parse(existingRequest);
@@ -14,7 +14,23 @@
     }
     clearDeckSpace();
     getFactionMembers();
-    //retrieveDeck();
+}
+
+function retrieveMyDeck() {
+    var existingRequest = document.getElementById("request_json").value;
+    if (existingRequest.length > 0) {
+        existingRequest = JSON.parse(existingRequest);
+        existingRequest = existingRequest.request;
+        document.getElementById("user_id").value = existingRequest.user_id;
+        document.getElementById("kong_id").value = existingRequest.kong_id;
+        document.getElementById("password").value = existingRequest.password;
+        document.getElementById("kong_token").value = existingRequest.kong_token;
+        document.getElementById("kong_name").value = existingRequest.kong_name;
+        document.getElementById("client_version").value = existingRequest.client_version;
+        document.getElementById("unity").value = existingRequest.unity;
+        if (!document.getElementById("target_user_id").value) document.getElementById("target_user_id").value = existingRequest.user_id;
+    }
+    getUserDeck(document.getElementById("user_id").value);
 }
 
 function getFactionMembers() {
@@ -105,6 +121,8 @@ function onGetUserDeck(data, name) {
         var unit = units[i];
         deck.deck.push({ id: unit.unit_id, level: unit.level });
     }
+    var hash = hash_encode(deck);
+
     var nameDiv = createDiv("float-left", name);
     nameDiv.style.fontSize = "xx-large";
     nameDiv.style.fontWeight = "bold";
@@ -113,8 +131,9 @@ function onGetUserDeck(data, name) {
     div.appendChild(nameDiv);
     div.appendChild(makeDeckHTML(deck));
     div.appendChild(document.createElement("br"));
+    div.appendChild($('<div><label style="float:left;" class="button" onclick="open_deck_builder(null, \'' + hash + '\');"><b>Deck Builder</b></label>')[0]);
     div.appendChild(
-        $('<input>').attr('type', 'text').attr('value', hash_encode(deck)).width(500)[0]
+        $('<input>').attr('type', 'text').attr('value', hash).width(500)[0]
     );
     div.appendChild(document.createElement("br"));
     div.appendChild(document.createElement("hr"));
