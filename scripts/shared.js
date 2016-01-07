@@ -165,20 +165,22 @@ var MakeAssault = (function () {
             } else if (skillModifier.modifierType == "add") {
                 for (var j = 0; j < skillModifier.effects.length; j++) {
                     var addedSkill = skillModifier.effects[j];
-                    var new_skill = {};
-                    new_skill.id = addedSkill.id;
-                    if (addedSkill.mult && addedSkill.base) {
-                        new_skill.x = Math.ceil(addedSkill.mult * new_card[addedSkill.base]);
-                    } else {
-                        new_skill.x = addedSkill.x;
+                    if (new_card.isInFaction(addedSkill.y)) {
+                        var new_skill = {};
+                        new_skill.id = addedSkill.id;
+                        if (addedSkill.mult && addedSkill.base) {
+                            new_skill.x = Math.ceil(addedSkill.mult * new_card[addedSkill.base]);
+                        } else {
+                            new_skill.x = addedSkill.x;
+                        }
+                        new_skill.y = addedSkill.y;
+                        new_skill.z = addedSkill.z;
+                        new_skill.c = addedSkill.c;
+                        new_skill.s = addedSkill.s;
+                        new_skill.all = addedSkill.all;
+                        if (addedSkill.mult && addedSkill.base && new_skill.x == 0) continue;
+                        original_skills.push(new_skill);
                     }
-                    new_skill.y = addedSkill.y;
-                    new_skill.z = addedSkill.z;
-                    new_skill.c = addedSkill.c;
-                    new_skill.s = addedSkill.s;
-                    new_skill.all = addedSkill.all;
-                    if (addedSkill.mult && addedSkill.base && new_skill.x == 0) continue;
-                    original_skills.push(new_skill);
                 }
             }
         }
