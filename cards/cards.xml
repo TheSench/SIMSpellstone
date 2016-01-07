@@ -8756,6 +8756,7 @@
     <skill id="strike" x="1" />
     <skill id="flurry" c="7" />
     <type>1</type>
+    <sub_type>7</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
@@ -8797,6 +8798,7 @@
     <skill id="strike" x="2" />
     <skill id="flurry" c="6" />
     <type>1</type>
+    <sub_type>7</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
@@ -8836,6 +8838,7 @@
     <skill id="strike" x="2" />
     <skill id="flurry" c="5" />
     <type>1</type>
+    <sub_type>7</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
