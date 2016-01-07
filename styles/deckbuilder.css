@@ -11,6 +11,10 @@ input[type="image"] {
     padding-left: 2px;
 }
 
+#cardSpace .card.picked {
+    display: none;
+}
+
 input[type="button"].attack-filter,
 input[type="button"].health-filter,
 input[type="button"].delay-filter {

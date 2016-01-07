@@ -1,5 +1,6 @@
 ﻿var card_cache = {};
 
+var fromInventory = false;
 var deck = [];
 deck.commander = elariaCaptain;
 deck.deck = [];
@@ -97,15 +98,30 @@ var drawAllCards = function () {
     units = [];
     unitsShown = [];
 
-    for (var id in allCards) {
-        if (id < 10000) {
-            addUnit(allCards[id]);
+    var inventory = _GET('inventory');
+    if (inventory) {
+        fromInventory = true;
+        inventory = hash_decode(inventory).deck;
+        for (var i = 0; i < inventory.length; i++) {
+            addInventoryUnit(inventory[i]);
+        }
+    } else {
+        for (var id in allCards) {
+            if (id < 10000) {
+                addUnit(allCards[id]);
+            }
         }
     }
+
     draw_deck(deck, removeFromDeck);
     draw_card_list(unitsShown, addToDeck);
     updateHash();
 };
+
+var addInventoryUnit = function (unit) {
+    units.push(unit);
+    unitsShown.push(unit);
+}
 
 var addUnit = function (unit) {
     var id = unit.id;
@@ -142,16 +158,27 @@ var addToDeck = function (htmlCard) {
     } else {
         deck.deck.push(unit);
     }
+    if (fromInventory) htmlCard.classList.add("picked");
     draw_deck(deck, removeFromDeck);
     updateHash();
 };
 
 var removeFromDeck = function (htmlCard, index) {
-    var unit = getUnitFromCard(htmlCard);
-    if (is_commander(unit.id)) {
+    if (htmlCard.classList.contains('commander')) {
         deck.commander = elariaCaptain;
     } else {
         deck.deck.splice(index, 1);
+    }
+    if(fromInventory) {
+        var unit = getUnitFromCard(htmlCard);
+        var cards = $("#cardSpace [data-id=" + unit.id + "][data-level=" + unit.level + "]");
+        for(var i = 0; i < cards.length; i++) {
+            var card = cards[i];
+            if (card.classList.contains('picked')) {
+                card.classList.remove("picked");
+                break;
+            }
+        }
     }
     draw_deck(deck, removeFromDeck);
     updateHash();
@@ -798,8 +825,8 @@ var makeUnitKey = function (unit) {
 }
 
 var getUnitFromCard = function (htmlCard) {
-    var unit = htmlCard.id.split("_");
-    return { id: unit[1], level: unit[2] };
+    var unit = { id: htmlCard.attributes.getNamedItem("data-id").value, level: htmlCard.attributes.getNamedItem("data-level").value };
+    return unit;
 }
 
 var skillStyle = document.createElement('style');

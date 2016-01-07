@@ -33,7 +33,7 @@ function draw_card_list(list, onclick) {
     for (var i = 0, len = list.length; i < len; i++) {
         var unit = get_card_by_id(list[i]);
         var card = create_card_html(unit, true, onclick);
-        card.id = "Card_" + list[i].id + "_" + list[i].level;
+        //card.id = "Card_" + list[i].id + "_" + list[i].level;
         cards.appendChild(card);
     }
     cardSpace.appendChild(cards);
@@ -93,6 +93,12 @@ function draw_hand(hand, callback, state) {
 
 function create_card_html(card, inHand, onclick, state) {
     var htmlCard = createDiv("card");
+    var attr = document.createAttribute("data-id");
+    attr.value = card.id;
+    htmlCard.attributes.setNamedItem(attr);
+    attr = document.createAttribute("data-level");
+    attr.value = card.level;
+    htmlCard.attributes.setNamedItem(attr);
     if (card.picture) {
         var imageUrl = 'res/cardImages/' + card.picture + '.jpg';
         var img = createImg(imageUrl);
