@@ -100,25 +100,28 @@ function getUserDeck(target_user_id, name) {
 
 function onGetUserDeck(data, name) {
     var deck_info = data.player_info.deck;
+    drawDeck(deck_info, name);
+}
+
+function getDeckFromDeckInfo(deck_info) {
     var commander = deck_info.commander;
-    var deck = [];
-    deck.commander = { id: commander.unit_id, level: commander.level };
-    deck.deck = [];
+    var deck = {
+        commander: { id: commander.unit_id, level: commander.level },
+        deck: [],
+    }
+
     var units = deck_info.units
     for (var i = 0; i < units.length; i++) {
         var unit = units[i];
         deck.deck.push({ id: unit.unit_id, level: unit.level });
     }
-    var hash = hash_encode(deck);
+    return deck;
+}
 
-    var nameDiv = createDiv("float-left", name);
-    nameDiv.style.fontSize = "xx-large";
-    nameDiv.style.fontWeight = "bold";
-    var div = document.createElement("div");
-    div.appendChild(document.createElement("br"));
-    div.appendChild(nameDiv);
-    div.appendChild(makeDeckHTML(deck));
-    div.appendChild(document.createElement("br"));
+function drawDeck(deck_info, name) {
+    var deck = getDeckFromDeckInfo(deck_info);
+    var div = doDrawDeck(deck, name);
+    var hash = hash_encode(deck);
     div.appendChild($('<div><label style="float:left;" class="button" onclick="open_deck_builder(null, \'' + hash + '\');"><b>Deck Builder</b></label>')[0]);
     div.appendChild(
         $('<input>').attr('type', 'text').attr('value', hash).width(500)[0]
@@ -129,8 +132,25 @@ function onGetUserDeck(data, name) {
     cardSpace.appendChild(div);
 }
 
+function doDrawDeck(deck, name) {
+    var nameDiv = createDiv("float-left", name);
+    nameDiv.style.fontSize = "xx-large";
+    nameDiv.style.fontWeight = "bold";
+    var div = document.createElement("div");
+    div.appendChild(document.createElement("br"));
+    div.appendChild(nameDiv);
+    div.appendChild(makeDeckHTML(deck));
+    div.appendChild(document.createElement("br"));
+    return div;
+}
 
 function getInventory(data) {
+    var cardSpace = document.getElementById("deck");
+    var deck = getDeckFromDeckInfo(data.user_decks[1]);
+    var div = doDrawDeck(deck, "Deck");
+    cardSpace.appendChild(div);
+    var hash = hash_encode(deck);
+
     var deck = {
         commander: elariaCaptain,
         deck: [],
@@ -147,9 +167,9 @@ function getInventory(data) {
         if (unit1.level > unit2.level) return 1;
         if (unit1.id < unit2.id) return 0;
     });
-    var hash = hash_encode(deck);
+    var inventory = hash_encode(deck);
 
-    var nameDiv = createDiv("float-left", data.user_data.name);
+    var nameDiv = createDiv("float-left", "Inventory");
     nameDiv.style.fontSize = "xx-large";
     nameDiv.style.fontWeight = "bold";
     var div = document.createElement("div");
@@ -158,13 +178,12 @@ function getInventory(data) {
     div.appendChild(makeDeckHTML(deck));
     div.appendChild(document.createElement("br"));
     div.appendChild($('<div><label style="float:left;" class="button" onclick="open_deck_builder(null, \'' + hash + '\');"><b>Deck Builder</b></label>')[0]);
-    div.appendChild($('<div><label style="float:left;" class="button" onclick="open_deck_builder(null, null, \'' + hash + '\');"><b>Deck Builder (w/ Inventory)</b></label>')[0]);
+    div.appendChild($('<div><label style="float:left;" class="button" onclick="open_deck_builder(null, \'' + hash + '\', \'' + inventory + '\');"><b>Deck Builder (w/ Inventory)</b></label>')[0]);
     div.appendChild(
         $('<input>').attr('type', 'text').attr('value', hash).width(500)[0]
     );
     div.appendChild(document.createElement("br"));
     div.appendChild(document.createElement("hr"));
-    var cardSpace = document.getElementById("deck");
     cardSpace.appendChild(div);
 }
 

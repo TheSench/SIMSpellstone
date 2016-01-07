@@ -836,7 +836,7 @@ function hash_decode(hash) {
             if (unitInfo) {
                 if (CARDS[unitInfo.id]) {
                     // Repeat previous card multiple times
-                    if (is_commander(unitInfo.id)) {
+                    if (!current_deck.commander && is_commander(unitInfo.id)) {
                         current_deck.commander = unitInfo;
                         unitidx++;
                         // Add to deck

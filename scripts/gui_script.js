@@ -655,14 +655,18 @@ function load_deck_builder(player) {
 
 function open_deck_builder(deck, hash, inventory) {
     var url = "DeckBuilder.html";
+    var parameters = [];
     if (deck) {
         hash = hash_encode(deck);
     }
     if (hash) {
-        url += "?hash=" + hash;
+        parameters.push("hash=" + hash);
     }
     if (inventory) {
-        url += "?inventory=" + inventory;
+        parameters.push("inventory=" + inventory);
+    }
+    if (parameters.length > 0) {
+        url += '?' + parameters.join('&');
     }
 
     var width = Math.min(screen.width, 1000);
