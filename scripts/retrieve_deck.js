@@ -85,6 +85,7 @@ function getUserDeck(target_user_id, name) {
 
     $.ajax({
         url: url,
+        async: false,
         dataType: 'json', /* Optional - jQuery autodetects this by default */
         success: function (response) {
             onGetUserDeck(response, name);
@@ -104,18 +105,21 @@ function onGetUserDeck(data, name) {
         var unit = units[i];
         deck.deck.push({ id: unit.unit_id, level: unit.level });
     }
-    var cardSpace = document.getElementById("deck");
     var nameDiv = createDiv("float-left", name);
     nameDiv.style.fontSize = "xx-large";
     nameDiv.style.fontWeight = "bold";
-    cardSpace.appendChild(nameDiv);
-    cardSpace.appendChild(makeDeckHTML(deck));
-    cardSpace.appendChild(document.createElement("br"));
-    cardSpace.appendChild(
+    var div = document.createElement("div");
+    div.appendChild(document.createElement("br"));
+    div.appendChild(nameDiv);
+    div.appendChild(makeDeckHTML(deck));
+    div.appendChild(document.createElement("br"));
+    div.appendChild(
         $('<input>').attr('type', 'text').attr('value', hash_encode(deck)).width(500)[0]
     );
-    cardSpace.appendChild(document.createElement("br"));
-    cardSpace.appendChild(document.createElement("hr"));
+    div.appendChild(document.createElement("br"));
+    div.appendChild(document.createElement("hr"));
+    var cardSpace = document.getElementById("deck");
+    cardSpace.appendChild(div);
 }
 
 var card_cache = {};
