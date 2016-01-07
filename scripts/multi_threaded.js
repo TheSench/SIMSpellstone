@@ -292,13 +292,13 @@ if (use_workers) {
         getsiege = document.getElementById('siege').checked;
         tower_level = document.getElementById('tower_level').value;
         tower_type = document.getElementById('tower_type').value;
-        if (quests && quests['root'] && quests['root']['battleground']) {
+        if (BATTLEGROUNDS) {
             getbattleground = [];
-            for (var key in quests['root']['battleground']) {
-                var battleground = quests['root']['battleground'][key];
-                var checkbox = document.getElementById('battleground_' + battleground.id);
+            var bgCheckBoxes = document.getElementsByName("battleground");
+            for (var i = 0; i < bgCheckBoxes.length; i++) {
+                var checkbox = bgCheckBoxes[i];
                 if (checkbox && checkbox.checked) {
-                    getbattleground.push(battleground.id);
+                    getbattleground.push(i);
                 }
             }
             getbattleground = getbattleground.join();
@@ -443,5 +443,4 @@ if (use_workers) {
             sims_to_process -= new_batch_size;
         }
     }
-
 }

@@ -42,13 +42,13 @@ if (!use_workers) {
         getsiege = document.getElementById('siege').checked;
         tower_level = document.getElementById('tower_level').value;
         tower_type = document.getElementById('tower_type').value;
-        if (quests && quests['root'] && quests['root']['battleground']) {
+        if (BATTLEGROUNDS) {
             getbattleground = [];
-            for (var key in quests['root']['battleground']) {
-                var battleground = quests['root']['battleground'][key];
-                var checkbox = document.getElementById('battleground_' + battleground.id);
+            var bgCheckBoxes = document.getElementsByName("battleground");
+            for (var i = 0; i < bgCheckBoxes.length; i++) {
+                var checkbox = bgCheckBoxes[i];
                 if (checkbox && checkbox.checked) {
-                    getbattleground.push(battleground.id);
+                    getbattleground.push(i);
                 }
             }
             getbattleground = getbattleground.join();
@@ -83,8 +83,6 @@ if (!use_workers) {
         } else {
             cache_cpu_deck = load_deck_from_cardlist();
         }
-
-        card_cache = {};
 
         wins = 0;
         losses = 0;
@@ -263,13 +261,20 @@ if (!use_workers) {
         if (getordered2 && !getexactorder2) deck['cpu']['ordered'] = copy_card_list(deck['cpu']['deck']);
 
         // Set up battleground effects, if any
-        battlegrounds = [];
+        battlegrounds = {
+            onCreate: [],
+            onTurn: [],
+        };
         if (getbattleground) {
             var selected = getbattleground.split(",");
             for (i = 0; i < selected.length; i++) {
                 var id = selected[i];
-                var battleground = quests['root']['battleground'][id];
-                battlegrounds.push(MakeBattleground(battleground.name, battleground.skill));
+                var battleground = BATTLEGROUNDS[id];
+                if (battleground.effect.skill) {
+                    battlegrounds.onTurn.push(MakeBattleground(battleground.name, battleground.effect.skill));
+                } else if (battleground.effect.evolve_skill || battleground.effect.add_skill) {
+                    battlegrounds.onCreate.push(MakeSkillModifier(battleground.name, battleground.effect));
+                }
             }
         }
 

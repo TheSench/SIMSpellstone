@@ -97,11 +97,11 @@ function toggle_u() {
 function onpageload() {
 
     // Check if missions are found
-    if (missions && missions.root && missions.root.mission) {
+    if (MISSIONS) {
         // Mission drop down
         var select = document.getElementById('mission');
-        for (var key in missions.root.mission) {
-            var mission = missions.root.mission[key];
+        for (var key in MISSIONS) {
+            var mission = MISSIONS[key];
             var option = document.createElement('option');
             option.appendChild(document.createTextNode(mission.name));
             option.value = mission.id;
@@ -110,11 +110,11 @@ function onpageload() {
     }
 
     // Check if battlegrounds are found
-    if (quests && quests.root && quests.root.battleground) {
+    if (BATTLEGROUNDS) {
         // Battleground drop down
         var select = document.getElementById('battleground');
-        for (var key in quests.root.battleground) {
-            var battleground = quests.root.battleground[key];
+        for (var key in BATTLEGROUNDS) {
+            var battleground = BATTLEGROUNDS[key];
             var checkbox = document.createElement('input');
             checkbox.type = "checkbox";
             checkbox.name = "battleground";
@@ -222,17 +222,18 @@ function onpageload() {
         d.value = _GET('raid');
     }
 
-    if (_GET('battleground')) {
+    if (_DEFINED('battleground')) {
         var bgIndexes = _GET('battleground');
+        var bgCheckBoxes = document.getElementsByName("battleground");
         for (var i = 0; i < bgIndexes.length; i++) {
-            var id = "battleground_" + bgIndexes[i];
-            var d = document.getElementById(id);
+            var d = bgCheckBoxes[bgIndexes[i]];
             d.checked = true;
         }
     } else {
         // Load current battlegrounds
-        //var d = document.getElementById("battleground_0").checked = true;
-        var d = document.getElementById("battleground_2").checked = true;
+        var bgCheckBoxes = document.getElementsByName("battleground");
+        bgCheckBoxes[0].checked = true;
+        bgCheckBoxes[3].checked = true;
     }
 
     if (_GET('sims')) {
@@ -564,17 +565,13 @@ function generate_link(autostart, autolink) {
     }
 
     var battlegrounds = '';
-    for (var i = 0; ; i++) {
-        d = document.getElementById('battleground_' + i);
-        if (d) {
-            if (d.checked) battlegrounds += d.value;
-        } else {
-            if (battlegrounds) {
-                parameters.push('battleground=' + battlegrounds);
-            }
-            break;
-        }
+    var bgCheckBoxes = document.getElementsByName("battleground");
+    for (var i = 0; i < bgCheckBoxes.length; i++) {
+        d = bgCheckBoxes[i];
+        if (d.checked) battlegrounds += i;
     }
+    parameters.push('battleground=' + battlegrounds);
+
     d = document.getElementById('sims');
     if (d && d.value) {
         parameters.push('sims=' + d.value);

@@ -187,8 +187,8 @@ function run_sim() {
 	    var bgIDs = getbattleground.split(",");
 	    for (i = 0; i < bgIDs.length; i++) {
 	        var id = bgIDs[i];
-	        var battleground = quests['root']['battleground'][id];
-	        battlegrounds.push(MakeBattleground(battleground.name, battleground.skill));
+	        var battleground = BATTLEGROUNDS[id];
+	        battlegrounds.push(MakeBattleground(battleground.name, battleground.effect));
 	    }
 	}
 

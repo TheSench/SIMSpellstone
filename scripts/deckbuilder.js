@@ -34,7 +34,7 @@ var fusionHidden = [];
 
 var nameHidden = [];
 
-var allCards = CARDS.root.unit;
+var allCards = CARDS;
 
 var showUpgrades = false;
 
@@ -544,6 +544,7 @@ var contextTest = function (skill) {
         case 'rally':
         case 'heal':
         case 'protect':
+        case 'protect_ice':
             $("div#amount").show();
             $("label[for=all]").show();
             $("div#faction").show();

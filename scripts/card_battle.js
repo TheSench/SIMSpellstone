@@ -30,13 +30,13 @@ var startsim = function (autostart) {
     getsiege = document.getElementById('siege').checked;
     tower_level = document.getElementById('tower_level').value;
     tower_type = document.getElementById('tower_type').value;
-    if (quests && quests.root && quests.root.battleground) {
+    if (BATTLEGROUNDS) {
         getbattleground = [];
-        for (var key in quests.root.battleground) {
-            var battleground = quests.root.battleground[key];
-            var checkbox = document.getElementById('battleground_' + battleground.id);
+        var bgCheckBoxes = document.getElementsByName("battleground");
+        for (var i = 0; i < bgCheckBoxes.length; i++) {
+            var checkbox = bgCheckBoxes[i];
             if (checkbox && checkbox.checked) {
-                getbattleground.push(battleground.id);
+                getbattleground.push(i);
             }
         }
         getbattleground = getbattleground.join();
@@ -189,7 +189,7 @@ function doSetup() {
         var selected = getbattleground.split(",");
         for (i = 0; i < selected.length; i++) {
             var id = selected[i];
-            var battleground = quests.root.battleground[id];
+            var battleground = BATTLEGROUNDS[id];
             battlegrounds.push(MakeBattleground(battleground.name, battleground.skill));
         }
     }
