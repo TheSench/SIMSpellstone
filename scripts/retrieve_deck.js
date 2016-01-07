@@ -1,117 +1,105 @@
-﻿function retrieveGuildDecks() {
+﻿var baseURL = "https://crossorigin.me/https://spellstone.synapse-games.com/api.php?";
+var baseRequest = {};
+var form;
+
+function getFieldsFromRequest() {
     var existingRequest = document.getElementById("request_json").value;
     if (existingRequest.length > 0) {
         existingRequest = JSON.parse(existingRequest);
         existingRequest = existingRequest.request;
-        document.getElementById("user_id").value = existingRequest.user_id;
-        document.getElementById("kong_id").value = existingRequest.kong_id;
-        document.getElementById("password").value = existingRequest.password;
-        document.getElementById("kong_token").value = existingRequest.kong_token;
-        document.getElementById("kong_name").value = existingRequest.kong_name;
-        document.getElementById("client_version").value = existingRequest.client_version;
-        document.getElementById("unity").value = existingRequest.unity;
-        if (!document.getElementById("target_user_id").value) document.getElementById("target_user_id").value = existingRequest.user_id;
+        baseRequest.user_id = existingRequest.user_id;
+        baseRequest.kong_id = existingRequest.kong_id;
+        baseRequest.password = existingRequest.password;
+        baseRequest.kong_token = existingRequest.kong_token;
+        baseRequest.kong_name = existingRequest.kong_name;
+        baseRequest.client_version = existingRequest.client_version;
+        baseRequest.unity = existingRequest.unity;
     }
+}
+
+function retrieveGuildDecks() {
     clearDeckSpace();
     getFactionMembers();
 }
 
+function getBaseRequestForm(messageType) {
+
+    var form = $('<form>');
+
+    appendInput(form, 'message', messageType);
+    appendInput(form, 'user_id', baseRequest.user_id);
+    appendInput(form, 'kong_id', baseRequest.kong_id);
+    appendInput(form, 'password', baseRequest.password);
+    appendInput(form, 'kong_token', baseRequest.kong_token);
+    appendInput(form, 'kong_name', baseRequest.kong_name);
+    appendInput(form, 'client_version', baseRequest.client_version);
+    appendInput(form, 'unity', baseRequest.unity);
+    appendInput(form, 'platform', baseRequest.platform);
+
+    return form;
+}
+
+function sendRequest(form, callback) {
+    $.ajax({
+        url: baseURL + form.serialize(),
+        async: false,
+        dataType: 'json', /* Optional - jQuery autodetects this by default */
+        success: callback,
+    });
+}
+
+function appendInput(form, name, value) {
+    form.append($('<input>').attr('name', name).attr('value', value));
+}
+
 function retrieveMyDeck() {
-    var existingRequest = document.getElementById("request_json").value;
-    if (existingRequest.length > 0) {
-        existingRequest = JSON.parse(existingRequest);
-        existingRequest = existingRequest.request;
-        document.getElementById("user_id").value = existingRequest.user_id;
-        document.getElementById("kong_id").value = existingRequest.kong_id;
-        document.getElementById("password").value = existingRequest.password;
-        document.getElementById("kong_token").value = existingRequest.kong_token;
-        document.getElementById("kong_name").value = existingRequest.kong_name;
-        document.getElementById("client_version").value = existingRequest.client_version;
-        document.getElementById("unity").value = existingRequest.unity;
-        if (!document.getElementById("target_user_id").value) document.getElementById("target_user_id").value = existingRequest.user_id;
-    }
-    getUserDeck(document.getElementById("user_id").value);
+    clearDeckSpace();
+    getUserDeck(baseRequest.user_id);
+}
+
+function retrieveMyCards() {
+    clearDeckSpace();
+    getUserDeck(baseRequest.user_id);
+}
+
+function getFullUserData() {
+    clearDeckSpace();
+    var form = getBaseRequestForm('init');
+
+    sendRequest(form, function (response) {
+        getInventory(response);
+    });
 }
 
 function getFactionMembers() {
 
-    var user_id = document.getElementById("user_id").value;
-    var form = $('<form>')
-        .append($('#kong_id').clone())
-        .append($('#password').clone())
-        .append($('#kong_token').clone())
-        .append($('#kong_name').clone())
-        .append($('#client_version').clone())
-        .append($('#unity').clone())
-        .append($('#platform').clone())
-        .append($('<input>').attr('name', 'last_activity_id').attr('value', '0'))
-        .append($('<input>').attr('name', 'api_stat_name').attr('value', 'getChat'))
-        .append($('<input>').attr('name', 'api_stat_time').attr('value', '84'))
-        .append($('<input>').attr('name', 'data_usage').attr('value', '793766'))
+    var form = getBaseRequestForm('updateFaction');
+    appendInput(form, 'last_activity_id', '0');
+    appendInput(form, 'api_stat_name', 'getChat');
+    appendInput(form, 'api_stat_time', '84');
+    appendInput(form, 'data_usage', '793766');
 
-    var url = ("https://crossorigin.me/https://spellstone.synapse-games.com/api.php?message=updateFaction&user_id=" + user_id + "&" + form.serialize());
-    $.ajax({
-        url: url,
-        dataType: 'json', /* Optional - jQuery autodetects this by default */
-        success: function (response) {
-            onGetFactionMembers(response);
+    sendRequest(form, function (response) {
+        var members = response.faction.members;
+        for (var key in members) {
+            //guildMemberIDs.push(key);
+            getUserDeck(key, members[key].name);
         }
     });
 }
 
-function onGetFactionMembers(data) {
-    guildMemberIDs = [];
-    var resp = /*JSON.parse*/(data);
-    var members = resp.faction.members;
-    for(var key in members) {
-        //guildMemberIDs.push(key);
-        getUserDeck(key, members[key].name);
-    }
-}
-
-function retrieveDeck() {
-    var user_id = document.getElementById("user_id").value;
-    var kong_id = document.getElementById("kong_id").value;
-    var password = document.getElementById("password").value;
-    var kong_token = document.getElementById("kong_token").value;
-    var client_version = document.getElementById("client_version").value;
-    var unity = document.getElementById("unity").value;
-    var target_user_id = document.getElementById("target_user_id").value;
-    var platform = document.getElementById("platform").value;
-
-    if (user_id && kong_id && password && kong_token && target_user_id) {
-        getUserDeck(target_user_id);
-    }
-}
-
 function getUserDeck(target_user_id, name) {
-    var user_id = document.getElementById("user_id").value;
 
-    var form = $('<form>')
-        .append($('#kong_id').clone())
-        .append($('#password').clone())
-        .append($('#kong_token').clone())
-        .append($('#kong_name').clone())
-        .append($('#client_version').clone())
-        .append($('#unity').clone())
-        .append($('#platform').clone())
-        .append($('<input>').attr('name', 'target_user_id').attr('value', target_user_id))
+    var form = getBaseRequestForm('getProfileData');
+    appendInput(form, 'target_user_id', target_user_id);
 
-    var url = ("https://crossorigin.me/https://spellstone.synapse-games.com/api.php?message=getProfileData&user_id=" + user_id + "&" + form.serialize());
-
-    $.ajax({
-        url: url,
-        async: false,
-        dataType: 'json', /* Optional - jQuery autodetects this by default */
-        success: function (response) {
-            onGetUserDeck(response, name);
-        }
+    sendRequest(form, function (response) {
+        onGetUserDeck(response, name);
     });
 }
 
 function onGetUserDeck(data, name) {
-    var resp = /*JSON.parse*/(data);
-    var deck_info = resp.player_info.deck;
+    var deck_info = data.player_info.deck;
     var commander = deck_info.commander;
     var deck = [];
     deck.commander = { id: commander.unit_id, level: commander.level };
@@ -132,6 +120,45 @@ function onGetUserDeck(data, name) {
     div.appendChild(makeDeckHTML(deck));
     div.appendChild(document.createElement("br"));
     div.appendChild($('<div><label style="float:left;" class="button" onclick="open_deck_builder(null, \'' + hash + '\');"><b>Deck Builder</b></label>')[0]);
+    div.appendChild(
+        $('<input>').attr('type', 'text').attr('value', hash).width(500)[0]
+    );
+    div.appendChild(document.createElement("br"));
+    div.appendChild(document.createElement("hr"));
+    var cardSpace = document.getElementById("deck");
+    cardSpace.appendChild(div);
+}
+
+
+function getInventory(data) {
+    var deck = {
+        commander: elariaCaptain,
+        deck: [],
+    }
+    var units = data.user_units;
+    for (var i in units) {
+        var unit = units[i];
+        deck.deck.push({ id: unit.unit_id, level: unit.level });
+    }
+    deck.deck.sort(function (unit1, unit2) {
+        if (unit1.id < unit2.id) return -1;
+        if (unit1.id > unit2.id) return 1;
+        if (unit1.level < unit2.level) return -1;
+        if (unit1.level > unit2.level) return 1;
+        if (unit1.id < unit2.id) return 0;
+    });
+    var hash = hash_encode(deck);
+
+    var nameDiv = createDiv("float-left", data.user_data.name);
+    nameDiv.style.fontSize = "xx-large";
+    nameDiv.style.fontWeight = "bold";
+    var div = document.createElement("div");
+    div.appendChild(document.createElement("br"));
+    div.appendChild(nameDiv);
+    div.appendChild(makeDeckHTML(deck));
+    div.appendChild(document.createElement("br"));
+    div.appendChild($('<div><label style="float:left;" class="button" onclick="open_deck_builder(null, \'' + hash + '\');"><b>Deck Builder</b></label>')[0]);
+    div.appendChild($('<div><label style="float:left;" class="button" onclick="open_deck_builder(null, null, \'' + hash + '\');"><b>Deck Builder (w/ Inventory)</b></label>')[0]);
     div.appendChild(
         $('<input>').attr('type', 'text').attr('value', hash).width(500)[0]
     );

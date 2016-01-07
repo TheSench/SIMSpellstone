@@ -653,13 +653,16 @@ function load_deck_builder(player) {
     open_deck_builder(deck);
 }
 
-function open_deck_builder(deck, hash) {
+function open_deck_builder(deck, hash, inventory) {
     var url = "DeckBuilder.html";
     if (deck) {
         hash = hash_encode(deck);
     }
     if (hash) {
         url += "?hash=" + hash;
+    }
+    if (inventory) {
+        url += "?inventory=" + inventory;
     }
 
     var width = Math.min(screen.width, 1000);
