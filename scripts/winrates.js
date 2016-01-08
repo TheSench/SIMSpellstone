@@ -28,6 +28,9 @@ function RunGuildSIMS() {
         if (!defender) defenderKeys.push(key);
     }
 
+    attackerKeys.sort();
+    defenderKeys.sort();
+
     if (attacker) {
         var key = 'CustomAttackDeck';
         attackerKeys.push(key);
