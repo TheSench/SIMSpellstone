@@ -59,6 +59,7 @@ function nextFight(attackKey, defendKey, firstMatch) {
             var table = document.createElement('table');
             table.style.width = "100%";
             var header = document.createElement("tr");
+            header.appendChild(document.createElement("th"));
             table.appendChild(header);
             for (var attacker in winrates) {
                 var name = document.createElement("th");
