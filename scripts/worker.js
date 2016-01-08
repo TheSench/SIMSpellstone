@@ -182,13 +182,20 @@ function run_sim() {
 	if (getordered2 && !getexactorder2) deck['cpu']['ordered'] = copy_card_list(deck['cpu']['deck']);
 
     // Set up battleground effects, if any
-	battlegrounds = [];
+	battlegrounds = {
+	    onCreate: [],
+	    onTurn: [],
+	};
 	if (getbattleground) {
-	    var bgIDs = getbattleground.split(",");
-	    for (i = 0; i < bgIDs.length; i++) {
-	        var id = bgIDs[i];
+	    var selected = getbattleground.split(",");
+	    for (i = 0; i < selected.length; i++) {
+	        var id = selected[i];
 	        var battleground = BATTLEGROUNDS[id];
-	        battlegrounds.push(MakeBattleground(battleground.name, battleground.effect));
+	        if (battleground.effect.skill) {
+	            battlegrounds.onTurn.push(MakeBattleground(battleground.name, battleground.effect.skill));
+	        } else if (battleground.effect.evolve_skill || battleground.effect.add_skill) {
+	            battlegrounds.onCreate.push(MakeSkillModifier(battleground.name, battleground.effect));
+	        }
 	    }
 	}
 

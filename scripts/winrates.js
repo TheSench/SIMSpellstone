@@ -15,6 +15,9 @@ function RunGuildSIMS() {
     defenderKeys = [];
     winrates = {};
 
+    delete (DeckRetriever.factionDecks['CustomAttackDeck']);
+    delete (DeckRetriever.factionDecks['CustomDefenseDeck']);
+
     var attacker = checkForSpecifiedAttacker();
     var defender = checkForSpecifiedDefender();
 
@@ -36,6 +39,8 @@ function RunGuildSIMS() {
         DeckRetriever.factionDecks[key] = defender;
     }
 
+    testTable();
+    return;
     nextFight(0, -1);
 }
 
@@ -117,9 +122,22 @@ function nextFight(attackKey, defendKey) {
     }
 }
 
+function testTable() {
+    for (var attackKey = 0; ; attackKey++) {
+        var attacker = attackerKeys[attackKey];
+        if (!attacker) break;
+        winrates[attacker] = {};
+        for (var defendKey = 0; ; defendKey++) {
+            var defender = defenderKeys[defendKey];
+            if (!defender) break;
+            winrates[attacker][defender] = "100.00%";
+        }
+    }
+    drawResults();
+}
+
 function drawResults() {
     var table = document.createElement('table');
-    table.style.width = "100%";
     var header = document.createElement("tr");
     var corner = document.createElement("th");
     corner.classList.add("diagonal-line");
@@ -147,6 +165,7 @@ function drawResults() {
         table.appendChild(row);
     }
 
-    var tblDiv = document.createElement('div');
-    document.getElementById("winrates").appendChild(table);
+    var tblDiv = document.getElementById("winrates");
+    tblDiv.style.width = document.getElementsByTagName("body")[0].offsetWidth + 'px';
+    tblDiv.appendChild(table);
 }
