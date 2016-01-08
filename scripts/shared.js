@@ -96,8 +96,7 @@ function cloneCard(original) {
         copy.skill = original.skill;
         copy.empowerSkills = original.empowerSkills;
     } else {
-        copy.skill = copy_skills(original.skill)[0];
-        copy.empowerSkills = copy_skills(original.empowerSkills)[0];
+        copy_skills(copy, original.skill, original.empowerSkills);
     }
     copy.timer = copy.cost;
     copy.health_left = copy.health;
@@ -373,16 +372,16 @@ function copy_skills_2(new_card, original_skills) {
     for (var key in original_skills) {
         var newSkill = original_skills[key];
         if (newSkill.c) {   // If skill has a timer, we need to clone it
-            setSkill_2(new_card, key, copy_skill(newSkill));
+            setSkill_2(new_card, copy_skill(newSkill));
             reusable = false;
         } else {            // If skill has no timer, we can use the same instance
-            setSkill_2(new_card, key, newSkill);
+            setSkill_2(new_card, newSkill);
         }
     }
     new_card.reusableSkills = reusable;
 }
 
-function setSkill_2(new_card, key, skill) {
+function setSkill_2(new_card, skill) {
     // These skills could have multiple instances
     switch (skill.id) {
         // Passives
@@ -422,40 +421,24 @@ function setSkill_2(new_card, key, skill) {
     }
 }
 
-function copy_skills(original_skills) {
-    var new_skills = {};
-    var reusable = true;
-    for (var key in original_skills) {
-        var newSkill = original_skills[key];
-        if (newSkill.c) {   // If skill has a timer, we need to clone it
-            setSkill(new_skills, key, copy_skill(newSkill));
-            reusable = false;
-        } else {            // If skill has no timer, we can use the same instance
-            setSkill(new_skills, key, newSkill);
-        }
-    }
-    return [new_skills, reusable];
+function copy_skills(new_card, skills, empower_skills) {
+    new_card.skill = [];
+    new_card.empowerSkills = [];
+    new_card.reusableSkills = true;
+
+    copy_Skill_lists(new_card, skills);
+    copy_Skill_lists(new_card, empower_skills);
 }
 
-function setSkill(current_skills, key, skill) {
-    // These skills could have multiple instances
-    switch (skill.id) {
-        case 'protect':
-        case 'protect_ice':
-        case 'strike':
-        case 'rally':
-        case 'enhance':
-        case 'fervor':
-        case 'jam':
-        case 'heal':
-        case 'enfeeble':
-        case 'legion':
-        case 'weaken':
-            current_skills[key] = skill;
-            break;
-        default:
-            current_skills[skill.id] = skill;
-            break;
+function copy_Skill_lists(new_card, original_skills) {
+    for (var i = 0; i < original_skills.length; i++) {
+        var newSkill = original_skills[i];
+        if (newSkill.c) {   // If skill has a timer, we need to clone it
+            setSkill_2(new_card, copy_skill(newSkill));
+            new_card.reusableSkills = false;
+        } else {            // If skill has no timer, we can use the same instance
+            setSkill_2(new_card, newSkill);
+        }
     }
 }
 
