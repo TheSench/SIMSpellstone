@@ -752,7 +752,7 @@ function toggleRadio(radio) {
 
 // Initialize global variables
 var history = '';
-var turn = false;
+var turn = 0;
 var max_turns = 50;
 var debug = false;
 var mass_debug = false;
