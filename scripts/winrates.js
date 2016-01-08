@@ -39,8 +39,6 @@ function RunGuildSIMS() {
         DeckRetriever.factionDecks[key] = defender;
     }
 
-    testTable();
-    return;
     nextFight(0, -1);
 }
 
