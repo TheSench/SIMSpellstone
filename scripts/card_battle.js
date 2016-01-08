@@ -1,7 +1,7 @@
 // Initialize simulation loop - runs once per simulation session
 var startsim = function (autostart) {
 
-    if (_GET('autolink') && !autostart) {
+    if (_DEFINED('autolink') && !autostart) {
         window.location.href = generate_link(1, 1);
         return false;
     }
@@ -16,6 +16,10 @@ var startsim = function (autostart) {
     sims_left = 1;
     user_controlled = true;
     debug = document.getElementById('debug').checked;
+    var d = document.getElementById('auto_mode');
+    if (d) {
+        auto_mode = d.checked;
+    }
     getdeck = document.getElementById('deck').value;
     getcardlist = document.getElementById('cardlist').value;
     getdeck2 = document.getElementById('deck2').value;
@@ -25,13 +29,14 @@ var startsim = function (autostart) {
     getmission = document.getElementById('mission').value;
     getsiege = document.getElementById('siege').checked;
     tower_level = document.getElementById('tower_level').value;
-    if (quests && quests.root && quests.root.battleground) {
+    tower_type = document.getElementById('tower_type').value;
+    if (BATTLEGROUNDS) {
         getbattleground = [];
-        for (var key in quests.root.battleground) {
-            var battleground = quests.root.battleground[key];
-            var checkbox = document.getElementById('battleground_' + battleground.id);
+        var bgCheckBoxes = document.getElementsByName("battleground");
+        for (var i = 0; i < bgCheckBoxes.length; i++) {
+            var checkbox = bgCheckBoxes[i];
             if (checkbox && checkbox.checked) {
-                getbattleground.push(battleground.id);
+                getbattleground.push(i);
             }
         }
         getbattleground = getbattleground.join();
@@ -184,13 +189,13 @@ function doSetup() {
         var selected = getbattleground.split(",");
         for (i = 0; i < selected.length; i++) {
             var id = selected[i];
-            var battleground = quests.root.battleground[id];
+            var battleground = BATTLEGROUNDS[id];
             battlegrounds.push(MakeBattleground(battleground.name, battleground.skill));
         }
     }
 
     // Output decks for first simulation
-    if (debug && loss_debug) {
+    if (debug && (loss_debug || win_debug)) {
     } else if (echo == '') {
         debug_dump_decks();
     }
@@ -246,6 +251,19 @@ function processSimResult() {
                 echo = 'Loss found. Displaying debug output... <br><br>' + echo;
                 echo += '<br><h1>LOSS</h1><br>';
                 sims_left = false;
+            }
+        } else if (win_debug) {
+            if (result && result != 'draw') {
+                echo = 'Win found. Displaying debug output... <br><br>' + echo;
+                echo += '<br><h1>WIN</h1><br>';
+                sims_left = false;
+            } else {
+                if (!sims_left) {
+                    echo = 'No wins found. No debug output to display.<br><br>';
+                    sims_left = false;
+                } else {
+                    echo = '';
+                }
             }
         }
     }

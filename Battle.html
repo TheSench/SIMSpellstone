@@ -45,7 +45,7 @@
     <span id="ui">
         <form>
             <div><b>Deck Hash:</b></div><input id="deck" type="text" value="" size="100"><br>
-            <div>&nbsp;</div><font color="#666"><strong>Hash example:</strong> QVD1+jJeKPK6gKgQ</font><br>
+            <div><label class="button" onclick="load_deck_builder('player');"><b>Deck Builder</b></label></div><font color="#666"><strong>Hash example:</strong> EAIgtjRUlRUf_ARZS_B</font><br>
             <br>
             <div><b>Card List:</b></div><input id="cardlist" type="text" value="" size="100" maxlength="500"><br>
             <div>&nbsp;</div><font color="#666"><strong>Card list example:</strong> Urs(5), Matriarch(5), Fire Devil(4); Smelted Skeleton(4)x2, Outrunner(4)x3</font><br>
@@ -53,7 +53,7 @@
             <hr>
             <br>
             <div><i>Enemy Deck Hash:</i></div><input type="text" id="deck2" value="" size="100"><br>
-            <div>&nbsp;</div><font color="#666"><strong>Hash example:</strong> QVD1+jJeKPK6gKgQ</font><br>
+            <div><label class="button" onclick="load_deck_builder('cpu');"><i>Deck Builder</i></label></div><font color="#666"><strong>Hash example:</strong> EAIgtjRUlRUf_ARZS_B</font><br>
             <br>
             <div><i>Enemy Card List:</i></div><input id="cardlist2" type="text" value="" size="100" maxlength="500"><br>
             <div>&nbsp;</div><font color="#666"><strong>Card list example:</strong> Urs(5), Matriarch(5), Fire Devil(4), Smelted Skeleton(4)x2, Outrunner(4)x3</font><br>
@@ -63,7 +63,7 @@
             <br>
             <div>Ordered Enemy Deck:</div><input type="checkbox" id="ordered2">
             <div><u>Exact Order (ignore 3-card hand rule):</u></div><input type="checkbox" id="exactorder2"><br>
-            <div>Castle Siege:</div><input type="checkbox" id="siege"><input type="NUMBER" id="tower_level" min="1" max="15" step="1" value="10" size="6"><br>
+            <div>Castle Siege:</div><input type="checkbox" id="siege"><input type="NUMBER" id="tower_level" min="1" max="15" step="1" value="10" size="6"><select id="tower_type"></select><br>
             <div>Surge Mode:</div><input type="checkbox" id="surge"><br>
             <br>
             <div><i>Battleground:</i></div>
@@ -73,9 +73,10 @@
             <hr>
             <br>
             <div>Debug Mode:</div><input type="checkbox" id="debug"><br>
+            <div>Auto Mode:</div><input type="checkbox" id="auto_mode"><br>
             <br>
             <div>&nbsp;</div>
-            <input id="btn_simulate" type="button" value="Simulate" onclick="return startsim();" style="text-align: center; font-weight: bold;">
+            <input id="btn_simulate" type="button" value="Battle!" onclick="return startsim();" style="text-align: center; font-weight: bold;">
             <input type="button" value="Generate Link" onclick="return display_generated_link();" style="text-align: center; font-weight: normal;">
         </form>
     </span>

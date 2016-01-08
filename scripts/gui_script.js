@@ -12,7 +12,6 @@ window.onerror = function (message, url, linenumber) {
     }
     var err_msg = "JavaScript error:\n " + message + "\n on line " + linenumber + "\n for " + url;
     var short_msg = err_msg;
-    //	alert(err_msg);
 
     err_msg += "\n";
     err_msg += "Browser CodeName: " + navigator.appCodeName + "\n";
@@ -98,11 +97,11 @@ function toggle_u() {
 function onpageload() {
 
     // Check if missions are found
-    if (missions && missions.root && missions.root.mission) {
+    if (MISSIONS) {
         // Mission drop down
         var select = document.getElementById('mission');
-        for (var key in missions.root.mission) {
-            var mission = missions.root.mission[key];
+        for (var key in MISSIONS) {
+            var mission = MISSIONS[key];
             var option = document.createElement('option');
             option.appendChild(document.createTextNode(mission.name));
             option.value = mission.id;
@@ -111,11 +110,11 @@ function onpageload() {
     }
 
     // Check if battlegrounds are found
-    if (quests && quests.root && quests.root.battleground) {
+    if (BATTLEGROUNDS) {
         // Battleground drop down
         var select = document.getElementById('battleground');
-        for (var key in quests.root.battleground) {
-            var battleground = quests.root.battleground[key];
+        for (var key in BATTLEGROUNDS) {
+            var battleground = BATTLEGROUNDS[key];
             var checkbox = document.createElement('input');
             checkbox.type = "checkbox";
             checkbox.name = "battleground";
@@ -125,6 +124,15 @@ function onpageload() {
             select.appendChild(document.createTextNode(battleground.name));
             select.appendChild(document.createElement('br'));
         }
+    }
+    var select = document.getElementById('tower_type');
+    var towerTypes = ["Castle Tower", "Cannon Tower"];
+    for (var i = 0; i < towerTypes.length; i++) {
+        var towerType = towerTypes[i];
+        var option = document.createElement('option');
+        option.appendChild(document.createTextNode(towerType));
+        option.value = i;
+        select.appendChild(option);
     }
 
     var c = document.getElementById('ui');
@@ -151,12 +159,12 @@ function onpageload() {
         d.value = _GET('list2');
     }
 
-    if (_GET('surge')) {
+    if (_DEFINED('surge')) {
         var d = document.getElementById('surge');
         d.checked = true;
     }
 
-    if (_GET('siege')) {
+    if (_DEFINED('siege')) {
         var d = document.getElementById('siege');
         d.checked = true;
     }
@@ -168,27 +176,38 @@ function onpageload() {
         d.value = tower_level;
     }
 
-    if (_GET('tournament')) {
+    if (_GET('tower_type')) {
+        var d = document.getElementById('tower_type');
+        var tower_type = _GET('tower_type');
+        tower_type = Math.min(Math.max(tower_type, 0), 15);
+        d.value = tower_type;
+    }
+
+    if (_DEFINED('tournament')) {
         var d = document.getElementById('tournament');
         d.checked = true;
     }
 
-    if (_GET('ordered')) {
+    if (_DEFINED('ordered')) {
         var d = document.getElementById('ordered');
-        d.checked = true;
+        if (d) {
+            d.checked = true;
+        }
     }
 
-    if (_GET('exactorder')) {
+    if (_DEFINED('exactorder')) {
         var d = document.getElementById('exactorder');
-        d.checked = true;
+        if (d) {
+            d.checked = true;
+        }
     }
 
-    if (_GET('ordered2')) {
+    if (_DEFINED('ordered2')) {
         var d = document.getElementById('ordered2');
         d.checked = true;
     }
 
-    if (_GET('exactorder2')) {
+    if (_DEFINED('exactorder2')) {
         var d = document.getElementById('exactorder2');
         d.checked = true;
     }
@@ -203,42 +222,65 @@ function onpageload() {
         d.value = _GET('raid');
     }
 
-    if (_GET('battleground')) {
+    if (_DEFINED('battleground')) {
         var bgIndexes = _GET('battleground');
+        var bgCheckBoxes = document.getElementsByName("battleground");
         for (var i = 0; i < bgIndexes.length; i++) {
-            var id = "battleground_" + bgIndexes[i];
-            var d = document.getElementById(id);
+            var d = bgCheckBoxes[bgIndexes[i]];
             d.checked = true;
         }
     } else {
         // Load current battlegrounds
-        var d = document.getElementById("battleground_0").checked = true;
-        var d = document.getElementById("battleground_2").checked = true;
+        var bgCheckBoxes = document.getElementsByName("battleground");
+        bgCheckBoxes[0].checked = true;
+        bgCheckBoxes[3].checked = true;
     }
 
     if (_GET('sims')) {
         var d = document.getElementById('sims');
-        d.value = _GET('sims');
+        if (d) {
+            d.value = _GET('sims');
+        }
     }
 
-    if (_GET('debug')) {
+    if (_DEFINED('debug')) {
         var d = document.getElementById('debug');
         d.checked = true;
     }
+    
+    if (_DEFINED('auto_mode')) {
+        var d = document.getElementById('auto_mode');
+        if (d) {
+            d.checked = true;
+        }
+    }
 
-    if (_GET('mass_debug')) {
+    if (_DEFINED('mass_debug')) {
         var d = document.getElementById('mass_debug');
-        d.checked = true;
+        if (d) {
+            d.checked = true;
+        }
     }
 
-    if (_GET('loss_debug')) {
+    if (_DEFINED('loss_debug')) {
         var d = document.getElementById('loss_debug');
-        d.checked = true;
+        if (d) {
+            d.checked = true;
+        }
     }
 
-    if (_GET('user_controlled')) {
+    if (_DEFINED('win_debug')) {
+        var d = document.getElementById('win_debug');
+        if (d) {
+            d.checked = true;
+        }
+    }
+
+    if (_DEFINED('user_controlled')) {
         var d = document.getElementById('user_controlled');
-        d.checked = true;
+        if (d) {
+            d.checked = true;
+        }
     }
 
     document.title = "SimSpellstone " + text_version + " - The Spellstone Simulator that runs from your browser!";
@@ -274,7 +316,7 @@ function onpageload() {
         }
     }
 
-    if (_GET('autostart')) {
+    if (_DEFINED('autostart')) {
         startsim(1);
     }
 }
@@ -479,14 +521,16 @@ function generate_link(autostart, autolink) {
 
     d = document.getElementById('surge');
     if (d.checked) {
-        parameters.push('surge=1');
+        parameters.push('surge');
     }
 
     d = document.getElementById('siege');
     if (d.checked) {
-        parameters.push('siege=1');
+        parameters.push('siege');
         d = document.getElementById('tower_level');
         parameters.push('tower_level=' + d.value);
+        d = document.getElementById('tower_type');
+        parameters.push('tower_type=' + d.value);
     }
 
     /*
@@ -497,22 +541,22 @@ function generate_link(autostart, autolink) {
     */
     d = document.getElementById('ordered');
     if (d && d.checked) {
-        parameters.push('ordered=1');
+        parameters.push('ordered');
     }
 
     d = document.getElementById('exactorder');
     if (d && d.checked) {
-        parameters.push('exactorder=1');
+        parameters.push('exactorder');
     }
 
     d = document.getElementById('ordered2');
     if (d.checked) {
-        parameters.push('ordered2=1');
+        parameters.push('ordered2');
     }
 
     d = document.getElementById('exactorder2');
     if (d.checked) {
-        parameters.push('exactorder2=1');
+        parameters.push('exactorder2');
     }
 
     d = document.getElementById('mission');
@@ -521,17 +565,13 @@ function generate_link(autostart, autolink) {
     }
 
     var battlegrounds = '';
-    for (var i = 0; ; i++) {
-        d = document.getElementById('battleground_' + i);
-        if (d) {
-            if (d.checked) battlegrounds += d.value;
-        } else {
-            if (battlegrounds) {
-                parameters.push('battleground=' + battlegrounds);
-            }
-            break;
-        }
+    var bgCheckBoxes = document.getElementsByName("battleground");
+    for (var i = 0; i < bgCheckBoxes.length; i++) {
+        d = bgCheckBoxes[i];
+        if (d.checked) battlegrounds += i;
     }
+    parameters.push('battleground=' + battlegrounds);
+
     d = document.getElementById('sims');
     if (d && d.value) {
         parameters.push('sims=' + d.value);
@@ -539,30 +579,40 @@ function generate_link(autostart, autolink) {
 
     d = document.getElementById('user_controlled');
     if (d && d.checked) {
-        parameters.push('user_controlled=1');
+        parameters.push('user_controlled');
     }
 
     d = document.getElementById('debug');
     if (d.checked) {
-        parameters.push('debug=1');
+        parameters.push('debug');
+    }
+
+    d = document.getElementById('auto_mode');
+    if (d && d.checked) {
+        parameters.push('auto_mode');
     }
 
     d = document.getElementById('mass_debug');
     if (d && d.checked) {
-        parameters.push('mass_debug=1');
+        parameters.push('mass_debug');
     }
 
     d = document.getElementById('loss_debug');
     if (d && d.checked) {
-        parameters.push('loss_debug=1');
+        parameters.push('loss_debug');
+    }
+
+    d = document.getElementById('win_debug');
+    if (d && d.checked) {
+        parameters.push('win_debug');
     }
 
     if (autostart) {
-        parameters.push('autostart=1');
+        parameters.push('autostart');
     }
 
     if (autolink) {
-        parameters.push('autolink=1');
+        parameters.push('autolink');
     }
 
     if (use_workers && max_workers) {
@@ -573,6 +623,61 @@ function generate_link(autostart, autolink) {
     } else {
         return url_base;
     }
+}
+
+function load_deck_builder(player) {
+    if (player == 'player') {
+        var getdeck = document.getElementById('deck').value;
+        var getcardlist = document.getElementById('cardlist').value;
+        var getmission;
+    } else {
+        var getdeck = document.getElementById('deck2').value;
+        var getcardlist = document.getElementById('cardlist2').value;
+        var getmission = document.getElementById('mission').value;
+    }
+    //var getbattleground = document.getElementById('battleground').value;
+
+    // Load player deck
+    var deck = {
+        commander: elariaCaptain,
+        deck: [],
+    };
+    if (getdeck) {
+        deck = hash_decode(getdeck);
+    } else if (getcardlist) {
+        deck = load_deck_from_cardlist(getcardlist);
+    } else if (getmission) {
+        deck = load_deck_mission(getmission);
+    }
+
+    open_deck_builder(deck);
+}
+
+function open_deck_builder(deck, hash, inventory) {
+    var url = "DeckBuilder.html";
+    var parameters = [];
+    if (deck) {
+        hash = hash_encode(deck);
+    }
+    if (hash) {
+        parameters.push("hash=" + hash);
+    }
+    if (inventory) {
+        parameters.push("inventory=" + inventory);
+    }
+    if (parameters.length > 0) {
+        url += '?' + parameters.join('&');
+    }
+
+    var width = Math.min(screen.width, 1000);
+    var height = Math.min(screen.height, 700);
+    var left = Number((screen.width - width) / 2);
+    var top = Number((screen.height - height) / 2);
+
+    var windowFeatures = 'location=0,menubar=0,resizable=0,scrollbars=0,status=0,width=' + width + ',height=' + height + ',top=' + top + ',left=' + left;
+    var win = window.open(url, '', windowFeatures);
+
+    win.moveTo(left, top);
 }
 
 function display_generated_link() {
@@ -619,6 +724,32 @@ function scroll_to_end() {
     window.scrollTo(0, document.body.scrollHeight);
 }
 
+function toggleRadio(radio) {
+    var value = eval(radio.id);
+    if (radio.checked == value) {
+        radio.checked = false;
+        eval(radio.id + "=false;");
+    } else {
+        switch (radio.id) {
+            case "mass_debug":
+                mass_debug = true;
+                loss_debug = false;
+                win_debug = false;
+                break;
+            case "loss_debug":
+                mass_debug = false;
+                loss_debug = true;
+                win_debug = false;
+                break;
+            case "win_debug":
+                mass_debug = false;
+                loss_debug = false;;
+                win_debug = true;
+                break;
+        }
+    }
+}
+
 // Initialize global variables
 var history = '';
 var turn = false;
@@ -626,6 +757,7 @@ var max_turns = 50;
 var debug = false;
 var mass_debug = false;
 var loss_debug = false;
+var win_debug = false;
 var found_loss = false;
 var gettournament = false;
 var getdeck = '';
@@ -640,6 +772,7 @@ var getmission = false;
 var getbattleground = 0;
 var getsiege = 0;
 var tower_level = 0;
+var tower_type = 0;
 var echo = '';
 var wins = 0;
 var losses = 0;
@@ -661,11 +794,12 @@ var total_turns = 0;
 var cache_player_deck = false;
 var cache_cpu_deck = false;
 var choice = undefined;
+var auto_mode = false;
 
 // Global arrays
 var factions = {
     names: [
-        undefined,
+        'Factionless',
         'Aether',
         'Chaos',
         'Wyld',
@@ -677,6 +811,7 @@ var factions = {
         'Dragon',
     ],
     IDs: {
+        Factionless: 0,
         Aether: 1,
         Chaos: 2,
         Wyld: 3,
@@ -688,4 +823,3 @@ var factions = {
         Dragon: 9
     }
 };
-

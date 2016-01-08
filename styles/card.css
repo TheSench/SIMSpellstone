@@ -1,7 +1,7 @@
 ﻿.card {
     background: #FFF;
-    border: 1px solid #AAA;
-    border-bottom: 3px solid #BBB;
+    border: 1px solid black;
+    border-radius: 4px;
     padding: 0px;
     margin: 0px;
     overflow: hidden;
@@ -11,46 +11,128 @@
 
 .subfaction {
     position: absolute;
-    bottom: 0px;
-    left: 50%;
-    margin: 1px -5px;
+    top: 12px;
+    left: 0px;
+    width: 12px;
+    margin: 1px 1px;
+    border-radius: 10px;
+    box-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
-.wyld,
-.chaos,
-.aether {
+.level {
     position: absolute;
-    min-height: 5px;
+    bottom: 0px;
+    left: 50%;
+    margin: 1px -8px;
+    width: 16px;
+}
+
+.commander .level {
+    left: auto;
+    right: 0px;
+    margin: 1px 0px;
+}
+
+.commander .card-image {
+    border: solid;
+    border-width: 5px;
+    color: gold;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: -2px 0 black, 0 5px black, 1px 0 black, 0 -1px black;
+    outline: 5px solid red;
+}
+
+.fusion {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin: 1px -14px;
+    width: 28px;
+}
+
+.faction {
+    position: absolute;
+    min-height: 10px;
     bottom: 0px;
     width: 100%;
     z-index: 0;
-    border: solid;
+    border-top: solid;
     border-width: 0.1em;
     border-color: grey;
 }
 
-.wyld {
-    background-color: forestgreen;
+.aether .faction {
+    background-color: steelblue;
 }
 
-.chaos {
-    background-color: red;
+.chaos .faction {
+    background-color: maroon;
 }
 
-.aether {
-    background-color: #0099FF;
+.wyld .faction {
+    background-color: darkolivegreen;
+}
+
+.void .faction {
+    background-color: purple;
+}
+
+.factionless .faction {
+    background-color: grey;
+}
+
+.aether.commander {
+    background-image: linear-gradient(steelblue, black);
+}
+
+.chaos.commander {
+    background-image: linear-gradient(maroon, black);
+}
+
+.wyld.commander {
+    background-image: linear-gradient(darkolivegreen, black);
+}
+
+.void.commander {
+    background-image: linear-gradient(purple, black);
+}
+
+.factionless.commander {
+    background-image: linear-gradient(grey, black);
+}
+
+.card-image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+    .card-image::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: '';
+        background-image: url('../res/cardImages/NotFound.jpg');
+    }
+
+img[src='Error.src'] {
+    display: none;
 }
 
 .card-name {
     position: absolute;
     font-weight: bold;
     white-space: nowrap;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     overflow: hidden;
     text-overflow: ellipsis;
-    border-bottom: solid;
-    border-width: 1px;
     width: 100%;
-        background-color: #FFF;
 }
 
     .card-name:hover {
@@ -58,55 +140,96 @@
         text-overflow: inherit;
         white-space: inherit;
         z-index: 100;
+        color: black;
+        text-shadow: none;
+        border-bottom: solid;
+        border-width: 1px;
+        background-color: #FFF;
     }
 
 .card-attack,
 .card-health,
-.card-delay,
-.hand-delay {
+.delay {
     position: absolute;
     font-weight: bold;
-    padding: 1px;
-    border: solid;
-    border-width: 1px;
-    border-radius: 10px;
-    min-width: 12px;
-    min-height: 12px;
+    width: 12px;
     text-align: center;
-    padding: 0px;
-    margin: 0;
     color: white;
-    border-color: white;
-    box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     z-index: 99;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .card-attack {
+    left: 4px;
+    bottom: 7px;
+    border: none;
+    box-shadow: none;
+    -ms-transform: rotate(-11deg); /* IE 9 */
+    -webkit-transform: rotate(-11deg); /* Chrome, Safari, Opera */
+    transform: rotate(-11deg);
+}
+
+.card .attack {
+    position: absolute;
+    z-index: 98;
     left: 0px;
+    width: 20px;
     bottom: 0px;
-    background-color: darkviolet;
+}
+
+.card.commander .health {
+    left: 0px;
 }
 
 .card-health {
-    right: 0px;
-    bottom: 0px;
-    background-color: deeppink;
+    right: 5px;
+    bottom: 6px;
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(7deg);
 }
 
-.hand-delay {
+.card .health {
     position: absolute;
-    right: 0;
-    top: 0;
-    background-color: #0099FF;
+    z-index: 98;
+    right: 0px;
+    width: 20px;
+    bottom: 2px;
 }
 
-.card-delay {
+.commander .card-health {
+    left: 3px;
+}
+
+.card .delay {
+    left: auto;
+    right: 4px;
+    top: 4px;
+    margin: initial;
+}
+
+.field .card .delay {
     position: absolute;
     left: 50%;
     top: 50%;
     margin: -6px 0 0 -6px;
-    background-color: #0099FF;
+}
+
+.card .timer {
+    position: absolute;
+    z-index: 98;
+    top: 0px;
+    right: 0px;
+    left: auto;
+    width: 20px;
+}
+
+.field .card .timer {
+    position: absolute;
+    z-index: 98;
+    top: 50px;
+    left: 32px;
+    width: 20px;
 }
 
 .increased {
@@ -119,18 +242,42 @@
 
 .card-skills-short {
     position: absolute;
-    bottom: 13px;
+    bottom: 0px;
     width: 100%;
+    height: 40px;
     text-align: center;
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.9), rgba(0,0,0,0.8) 80%, rgba(0,0,0,0.7) 85%, rgba(0,0,0,0.0));
 }
+
+    .card-skills-short img {
+        margin-top: 12px;
+        width: 12px;
+    }
+
+.card-skills-detailed {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 0px;
+    padding: 5px 20px 13px 20px;
+    left: 0px;
+    text-align: left;
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.9), rgba(0,0,0,0.8) 80%, rgba(0,0,0,0.7) 85%, rgba(0,0,0,0.0));
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    display: none;
+}
+
+    .card-skills-detailed img {
+        width: 12px;
+    }
 
 .card-skills {
     visibility: hidden;
 }
 
     .card-skills img {
-        padding-left: 2px;
-        padding-right: 2px;
+        width: 12px;
     }
 
     .card-skills-short:hover ~ .card-skills,
@@ -186,28 +333,16 @@
     border-color: red;
 }
 
-img {
-    width: 12px;
-    height: 12px;
-}
-
-.hand-left {
+.left {
     -ms-transform: rotate(-7deg) translate(0px, 5px); /* IE 9 */
     -webkit-transform: rotate(-7deg) translate(0px, 5px); /* Chrome, Safari, Opera */
     transform: rotate(-7deg) translate(0px, 5px);
 }
 
-.hand-right {
+.right {
     -ms-transform: rotate(7deg) translate(0px, 5px); /* IE 9 */
     -webkit-transform: rotate(7deg) translate(0px, 5px); /* Chrome, Safari, Opera */
     transform: rotate(7deg) translate(0px, 5px);
-}
-
-.hand .card-delay {
-    left: auto;
-    right: 0;
-    top: 0;
-    margin: initial;
 }
 
 .hand .card {
@@ -224,20 +359,28 @@ img {
     left: 80px;
 }
 
-.float-left:not(.hand) {
+.field {
     width: 100%;
-    border-top-style: solid;
-    border-bottom-style: solid;
-    padding: 5px;
-    height: 80px;
-    margin-bottom: 5px;
+    display: inline-block;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
 
+    .field .float-left {
+        border-top-style: solid;
+        border-bottom-style: solid;
+        padding: 5px;
+        height: 120px;
+        margin-bottom: 5px;
+    }
+
 .float-left .card {
-    float: left;
-    width: 60px;
-    height: 80px;
+    width: 84px;
+    height: 120px;
     margin-right: 5px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .float-left .spacer {
