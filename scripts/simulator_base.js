@@ -1070,8 +1070,8 @@ if (simulator_thread) {
         var field_o_assaults = field_o['assaults'];
 
         // Activate battleground effects
-        for (var key in battlegrounds.onTurn) {
-            var battleground = battlegrounds.onTurn[key];
+        for (var i = 0; i < battlegrounds.onTurn.length; i++) {
+            var battleground = battlegrounds.onTurn[i];
             battleground.owner = p;
             doEmpower(battleground);
             activation_skills(battleground);
