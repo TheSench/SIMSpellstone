@@ -3,13 +3,14 @@ if (!use_workers) {
     // Initialize simulation loop - runs once per simulation session
     var startsim = function (autostart) {
 
-        if (_GET('autolink') && !autostart) {
+        if (_DEFINED('autolink') && !autostart) {
             window.location.href = generate_link(1, 1);
             return false;
         }
 
         clearCardSpace();
 
+        card_cache = {};    // clear card cache to avoid memory bloat when simulating different decks
         total_turns = 0;
         time_start = new Date();
         time_stop = 0;
@@ -20,9 +21,14 @@ if (!use_workers) {
         user_controlled = document.getElementById('user_controlled').checked;
         /*if (user_controlled) debug = true;
         else*/ debug = document.getElementById('debug').checked;
+        var d = document.getElementById('auto_mode');
+        if (d) {
+            auto_mode = d.checked;
+        }
         mass_debug = document.getElementById('mass_debug').checked;
         loss_debug = document.getElementById('loss_debug').checked;
-        if (loss_debug && mass_debug) mass_debug = false;
+        win_debug = document.getElementById('win_debug').checked;
+        if ((loss_debug || win_debug) && mass_debug) mass_debug = false;
         getdeck = document.getElementById('deck').value;
         getcardlist = document.getElementById('cardlist').value;
         getdeck2 = document.getElementById('deck2').value;
@@ -35,13 +41,14 @@ if (!use_workers) {
         getmission = document.getElementById('mission').value;
         getsiege = document.getElementById('siege').checked;
         tower_level = document.getElementById('tower_level').value;
-        if (quests && quests['root'] && quests['root']['battleground']) {
+        tower_type = document.getElementById('tower_type').value;
+        if (BATTLEGROUNDS) {
             getbattleground = [];
-            for (var key in quests['root']['battleground']) {
-                var battleground = quests['root']['battleground'][key];
-                var checkbox = document.getElementById('battleground_' + battleground.id);
+            var bgCheckBoxes = document.getElementsByName("battleground");
+            for (var i = 0; i < bgCheckBoxes.length; i++) {
+                var checkbox = bgCheckBoxes[i];
                 if (checkbox && checkbox.checked) {
-                    getbattleground.push(battleground.id);
+                    getbattleground.push(i);
                 }
             }
             getbattleground = getbattleground.join();
@@ -76,8 +83,6 @@ if (!use_workers) {
         } else {
             cache_cpu_deck = load_deck_from_cardlist();
         }
-
-        card_cache = {};
 
         wins = 0;
         losses = 0;
@@ -143,7 +148,7 @@ if (!use_workers) {
     }
 
     var run_sims = function () {
-        if (debug && !mass_debug && !loss_debug) {
+        if (debug && !mass_debug && !loss_debug && !win_debug) {
             run_sim();
             debug_end();
         } else if (user_controlled) {
@@ -177,7 +182,7 @@ if (!use_workers) {
 
                 // Batch messes up mass debug and loss debug! Let's disable batch!
                 if (debug && mass_debug) run_sims_batch = 1;
-                if (debug && loss_debug) run_sims_batch = 1;
+                if (debug && (loss_debug || win_debug)) run_sims_batch = 1;
 
                 time_start_batch = new Date();
                 for (var i = 0; i < run_sims_batch; i++) {  // Start a new batch
@@ -256,18 +261,25 @@ if (!use_workers) {
         if (getordered2 && !getexactorder2) deck['cpu']['ordered'] = copy_card_list(deck['cpu']['deck']);
 
         // Set up battleground effects, if any
-        battlegrounds = [];
+        battlegrounds = {
+            onCreate: [],
+            onTurn: [],
+        };
         if (getbattleground) {
             var selected = getbattleground.split(",");
             for (i = 0; i < selected.length; i++) {
                 var id = selected[i];
-                var battleground = quests['root']['battleground'][id];
-                battlegrounds.push(MakeBattleground(battleground.name, battleground.skill));
+                var battleground = BATTLEGROUNDS[id];
+                if (battleground.effect.skill) {
+                    battlegrounds.onTurn.push(MakeBattleground(battleground.name, battleground.effect.skill));
+                } else if (battleground.effect.evolve_skill || battleground.effect.add_skill) {
+                    battlegrounds.onCreate.push(MakeSkillModifier(battleground.name, battleground.effect));
+                }
             }
         }
 
         // Output decks for first simulation
-        if (debug && loss_debug) {
+        if (debug && (loss_debug || win_debug)) {
         } else if (echo == '') {
             debug_dump_decks();
         }
@@ -290,8 +302,6 @@ if (!use_workers) {
             if (sims_left > 0) sims_left--;
             run_sims_count++;
         }
-
-        if (debug && mass_debug && sims_left) echo += '<br><hr>NEW BATTLE BEGINS<hr><br>';
 
         // Increment wins/losses/games
         if (result == 'draw') {
@@ -324,8 +334,32 @@ if (!use_workers) {
                     echo += '<br><h1>LOSS</h1><br>';
                     sims_left = false;
                 }
+            } else if (win_debug) {
+                if (result && result != 'draw') {
+                    echo = 'Win found. Displaying debug output... <br><br>' + echo;
+                    echo += '<br><h1>WIN</h1><br>';
+                    sims_left = false;
+                } else {
+                    if (!sims_left) {
+                        echo = 'No wins found. No debug output to display.<br><br>';
+                        sims_left = false;
+                    } else {
+                        echo = '';
+                    }
+                }
+            } else if (mass_debug) {
+                if (result == 'draw') {
+                    echo += '<br><h1>DRAW</h1><br>';
+                } else if (result) {
+                    echo += '<br><h1>WIN</h1><br>';
+                } else {
+                    echo += '<br><h1>LOSS</h1><br>';
+                }
             }
         }
+
+        if (debug && mass_debug && sims_left) echo += '<br><hr>NEW BATTLE BEGINS<hr><br>';
+
         return result;
     }
 

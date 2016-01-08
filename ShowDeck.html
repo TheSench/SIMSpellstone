@@ -23,18 +23,17 @@
     <br>
     <span id="ui">
         <form>
-            <div><b>User ID:</b></div><input id="user_id" type="text" value="" size="50"><br>
+            <div><b>Response JSON:</b></div><input id="request_json" type="text" value="" size="50" onchange="DeckRetriever.getFieldsFromRequest();"><br>
         </form>
+        <hr/>
         <form id="form-post">
-            <div><b>Kong ID:</b></div><input id="kong_id" name="kong_id" type="text" value="" size="50"><br>
-            <div><b>Password:</b></div><input id="password" name="password" type="text" value="" size="50"><br>
-            <div><b>Kong Token:</b></div><input id="kong_token" name="kong_token" type="text" value="" size="50"><br>
-            <div><b>Target User ID:</b></div><input id="target_user_id" name="target_user_id" type="text" value="" size="50"><br>
-            <br>
-            <div>&nbsp;</div><input id="btn_simulate" type="button" value="Retrieve" onclick="return retrieveDeck();" style="text-align: center; font-weight: bold;">
+            <div>&nbsp;</div>
+            <input id="btn_simulate" type="button" value="Entire Guild" onclick="return DeckRetriever.retrieveGuildDecks(true);" style="text-align: center; font-weight: bold;">
+            <input id="btn_simulate" type="button" value="Just My Deck" onclick="return DeckRetriever.retrieveMyDeck();" style="text-align: center; font-weight: bold;">
+            <input id="btn_simulate" type="button" value="Get My Inventory" onclick="return DeckRetriever.getFullUserData();" style="text-align: center; font-weight: bold;">
         </form>
     </span>
     <br>
-    <span id="cardSpace"></span>
+    <span id="deck"></span>
 </body>
 </html>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<raids>
+	<mission>
+		<id>24001</id>
+		<name>Test Raid</name>
+		<energy>10000</energy>
+		<desc>Defeat Frostbite in the allotted time to gain points! With each victory Frostbite will return, stronger than before!</desc>
+		<commander id="253"/>
+		<enemy_bge>503</enemy_bge>
+		<deck>
+			<card id='8000' />
+			<card id='8001' />
+			<card id='8002' />
+			<card id='8003' />
+			<card id='8004' />
+			<card id='7003' />
+			<card id='1642' />
+			<card id='5009' />
+			<card id='5008' />
+			<card id='5015'  />
+			<card id='5020'  />
+			<card mastery_level='2' id='8000' level='2' />
+			<card mastery_level='2' id='8001' level='2' />
+			<card mastery_level='4' id='8002' level='3' />
+			<card mastery_level='6' id='8003' level='3' />
+		</deck>
+	</mission>
+</raids>

@@ -83,8 +83,10 @@ function initializeSims(params) {
 	surge = params['surge'];
 	debug = params['debug'];
 	loss_debug = params['loss_debug'];
+	win_debug = params['win_debug'];
 	mass_debug = params['mass_debug'];
 	user_controlled = params['user_controlled'];
+	card_cache = {};    // clear card cache to avoid memory bloat when simulating different decks
 }
 
 // Return results to the GUI thread using Transferable Objects
@@ -180,13 +182,20 @@ function run_sim() {
 	if (getordered2 && !getexactorder2) deck['cpu']['ordered'] = copy_card_list(deck['cpu']['deck']);
 
     // Set up battleground effects, if any
-	battlegrounds = [];
+	battlegrounds = {
+	    onCreate: [],
+	    onTurn: [],
+	};
 	if (getbattleground) {
-	    var bgIDs = getbattleground.split(",");
-	    for (i = 0; i < bgIDs.length; i++) {
-	        var id = bgIDs[i];
-	        var battleground = quests['root']['battleground'][id];
-	        battlegrounds.push(MakeBattleground(battleground.name, battleground.skill));
+	    var selected = getbattleground.split(",");
+	    for (i = 0; i < selected.length; i++) {
+	        var id = selected[i];
+	        var battleground = BATTLEGROUNDS[id];
+	        if (battleground.effect.skill) {
+	            battlegrounds.onTurn.push(MakeBattleground(battleground.name, battleground.effect.skill));
+	        } else if (battleground.effect.evolve_skill || battleground.effect.add_skill) {
+	            battlegrounds.onCreate.push(MakeSkillModifier(battleground.name, battleground.effect));
+	        }
 	    }
 	}
 
@@ -201,6 +210,8 @@ function run_sim() {
 function processSimResult() {
 
     games++;
+    // Increment total turn count
+    total_turns += simulation_turns;
 
     var result;
     if (!field.player.commander.isAlive()) {
@@ -217,7 +228,7 @@ function processSimResult() {
     }
 
     if (debug) {
-        if (!mass_debug && !loss_debug) {
+        if (!mass_debug && !loss_debug && !win_debug) {
             sims_left = 0;
             return;
         } else if (loss_debug) {
@@ -237,6 +248,19 @@ function processSimResult() {
                 sims_left = 0;
                 return;
             }
+        } else if (win_debug) {
+            if (result && result != 'draw') {
+                // Win found
+                sims_left = 0;
+                return;
+            } else {
+                if (!sims_left) {
+                    // 'No wins found
+                    return;
+                } else {
+                    echo = '';
+                }
+            }
         }
     }
 
@@ -245,6 +269,7 @@ function processSimResult() {
 
 // Initialize simulation loop - runs once per simulation batch
 function run_sims() {
+    card_cache = {};    // clear card cache to avoid memory bloat when simulating different decks
 	total_turns = 0;
 	echo = '';
 	games = 0;
@@ -263,6 +288,7 @@ function run_sims() {
 var turn = 0;
 var debug = false;
 var loss_debug = false;
+var win_debug = false;
 var mass_debug = false;
 var getordered = false;
 var getordered2 = false;
@@ -274,6 +300,7 @@ var getbattleground = 0;
 var getsiege = 0;
 var user_controlled = false;
 var tower_level = 0;
+var tower_type = 0;
 var battleground = [];
 var cache_player_deck = 0;
 var cache_cpu_deck = 0;

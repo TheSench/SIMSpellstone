@@ -87,7 +87,7 @@
 </head>
 <body onload="onpageload()">
     <font style="font-size: 10px;">Multi-core support:</font>
-    <a style="font-size: 10px; color: #993333;" href="">Single core</a> |
+    <a style="font-size: 10px; color: #993333;" href="?maxworkers=1">Single core</a> |
     <a style="font-size: 10px; color: #993333;" href="?maxworkers=2">Dual-core</a> |
     <a style="font-size: 10px; color: #993333;" href="?maxworkers=4">Quad-core</a> |
     <a style="font-size: 10px; color: #993333;" href="?maxworkers=6">Hexa-core</a> |
@@ -101,7 +101,7 @@
     <span id="ui">
         <form>
             <div><b>Deck Hash:</b></div><input id="deck" type="text" value="" size="100"><br>
-            <div>&nbsp;</div><font color="#666"><strong>Hash example:</strong> QVD1+jJeKPK6gKgQ</font><br>
+            <div><label class="button" onclick="load_deck_builder('player');"><b>Deck Builder</b></label></div><font color="#666"><strong>Hash example:</strong> EAIgtjRUlRUf_ARZS_B</font><br>
             <br>
             <div><b>Card List:</b></div><input id="cardlist" type="text" value="" size="100"><br>
             <div>&nbsp;</div><font color="#666"><strong>Card list example:</strong> Urs(5), Matriarch(5), Fire Devil(4); Smelted Skeleton(4)x2, Outrunner(4)x3</font><br>
@@ -114,14 +114,14 @@
             <hr>
             <br>
             <div><i>Enemy Deck Hash:</i></div><input type="text" id="deck2" value="" size="100"><br>
-            <div>&nbsp;</div><font color="#666"><strong>Hash example:</strong> QVD1+jJeKPK6gKgQ</font><br>
+            <div><label class="button" onclick="load_deck_builder('cpu');"><i>Deck Builder</i></label></div><font color="#666"><strong>Hash example:</strong> EAIgtjRUlRUf_ARZS_B</font><br>
             <br>
             <div><i>Enemy Card List:</i></div><input id="cardlist2" type="text" value="" size="100"><br>
             <div>&nbsp;</div><font color="#666"><strong>Card list example:</strong> Urs(5), Matriarch(5), Fire Devil(4); Smelted Skeleton(4)x2, Outrunner(4)x3</font><br>
             <br>
             <div>Ordered Enemy Deck:</div><input type="checkbox" id="ordered2">
             <div><u>Exact Order (ignore 3-card hand rule):</u></div><input type="checkbox" id="exactorder2"><br>
-            <div>Castle Siege:</div><input type="checkbox" id="siege"><input type="NUMBER" id="tower_level" min="1" max="15" step="1" value="10" size="6">
+            <div>Castle Siege:</div><input type="checkbox" id="siege"><input type="NUMBER" id="tower_level" min="1" max="15" step="1" value="10" size="6"><select id="tower_type"></select>
             <br>
             <div><i>Mission (7*):</i></div>
             <select id="mission">
@@ -138,8 +138,9 @@
             <br>
             <div>Use Controlled:</div><input type="checkbox" id="user_controlled"><span id="unavailable" style="visibility:hidden;">(Only available in Single Core mode)</span><br>
             <div>Debug Mode:</div><input type="checkbox" id="debug"><br>
-            <div>Mass Debug Mode (causes slowdown):</div><input type="checkbox" id="mass_debug"><br>
-            <div>Debug Loss Mode (output first loss):</div><input type="checkbox" id="loss_debug"><br>
+            <div>Mass Debug Mode (causes slowdown):</div><input type="radio" id="mass_debug" name="debugMode" onclick="toggleRadio(this)"><br><!-- onchange="massDebugChanged(this)"><br>-->
+            <div>Debug Win Mode (output first win):</div><input type="radio" id="win_debug" name="debugMode" onclick="toggleRadio(this)"><br><!--onchange="debugModeChanged(this)"><br>-->
+            <div>Debug Loss Mode (output first loss):</div><input type="radio" id="loss_debug" name="debugMode" onclick="toggleRadio(this)"><br><!--onchange="debugModeChanged(this)"><br>-->
             <br>
             <div>&nbsp;</div><input id="btn_simulate" type="button" value="Simulate" onclick="return startsim();" style="text-align: center; font-weight: bold;"> <input type="button" value="Generate Link" onclick="return display_generated_link();" style="text-align: center; font-weight: normal;"> <input type="button" value="History" onclick="return display_history();" style="text-align: center; font-weight: normal;">
         </form>
