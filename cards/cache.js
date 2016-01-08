@@ -25664,7 +25664,7 @@ var CARDS = {
   "6032": {
     "id": "6032",
     "name": "Mumohotep",
-    "picture": "NotFound",
+    "picture": "Giant_Mummy_A",
     "rarity": "4",
     "set": "4000",
     "card_type": "2",
@@ -25754,7 +25754,7 @@ var CARDS = {
   "16032": {
     "id": "16032",
     "name": "Lord Mumohotep",
-    "picture": "NotFound",
+    "picture": "Giant_Mummy_A",
     "rarity": "4",
     "set": "4000",
     "card_type": "2",
@@ -25831,7 +25831,7 @@ var CARDS = {
   "26032": {
     "id": "26032",
     "name": "King Mumohotep",
-    "picture": "NotFound",
+    "picture": "Giant_Mummy_B",
     "rarity": "4",
     "set": "4000",
     "card_type": "2",
