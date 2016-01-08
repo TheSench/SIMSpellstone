@@ -1,51 +1,107 @@
-﻿var keys = [];
+﻿var attackerKeys = [];
+var defenderKeys = [];
 var winrates = {};
 
 function SimGuild() {
-    keys = [];
-    winrates = {};
-
     DeckRetriever.retrieveGuildDecks();
-    var decks = DeckRetriever.factionDecks;
-    for(var attackKey in decks)
-    {
-        keys.push(attackKey);
-    }
-    nextFight(0, 0, true);
+    RunGuildSIMS();
 }
 
-function nextFight(attackKey, defendKey, firstMatch) {
+function RunGuildSIMS() {
+    // Remove previous winrate table
+    document.getElementById("winrates").innerHTML = '';
+
+    attackerKeys = [];
+    defenderKeys = [];
+    winrates = {};
+
+    var attacker = checkForSpecifiedAttacker();
+    var defender = checkForSpecifiedDefender();
+
+    var decks = DeckRetriever.factionDecks;
+    for(var key in decks)
+    {
+        if (!attacker) attackerKeys.push(key);
+        if (!defender) defenderKeys.push(key);
+    }
+
+    if (attacker) {
+        var key = 'CustomAttackDeck';
+        attackerKeys.push(key);
+        DeckRetriever.factionDecks[key] = attacker;
+    }
+    if (defender) {
+        var key = 'CustomDefenseDeck';
+        defenderKeys.push(key);
+        DeckRetriever.factionDecks[key] = defender;
+    }
+
+    nextFight(0, -1);
+}
+
+function checkForSpecifiedAttacker() {
+
+    var getdeck = document.getElementById('deck').value;
+    var getcardlist = document.getElementById('cardlist').value;
+
+    // Load deck
+    var deck;
+    if (getdeck) {
+        deck = hash_decode(getdeck);
+    } else if (getcardlist) {
+        deck = load_deck_from_cardlist(getcardlist);
+    }
+
+    return deck;
+}
+
+function checkForSpecifiedDefender() {
+
+    var getdeck2 = document.getElementById('deck2').value;
+    var getcardlist2 = document.getElementById('cardlist2').value;
+    var getmission = document.getElementById('mission').value;
+    
+    // Load deck
+    var deck;
+    if (getdeck2) {
+        deck = hash_decode(getdeck2);
+    } else if (getcardlist2) {
+        deck = load_deck_from_cardlist(getcardlist2);
+    } else if (getmission) {
+        deck = load_deck_mission(getmission);
+    }
+
+    return deck;
+}
+
+function nextFight(attackKey, defendKey) {
     if (sims_left) {
         setTimeout(nextFight, 250, attackKey, defendKey);
     } else {
-        if (!firstMatch) {
-            var attacker = keys[attackKey];
-            var defender = keys[defendKey];
+        if (defendKey >= 0) {
+            var attacker = attackerKeys[attackKey];
+            var defender = defenderKeys[defendKey];
             if (!winrates[attacker]) winrates[attacker] = {};
             winrates[attacker][defender] = (wins / games * 100).toFixed(1);;
-        } else {
-            var attacker = keys[attackKey];
-            var defender = keys[defendKey];
-            winrates[attacker] = {};
-            winrates[attacker][defender] = "-";
         }
 
         defendKey++;
-        if (defendKey == attackKey) {
-            var attacker = keys[attackKey];
-            var defender = keys[defendKey];
+        if (attackerKeys[attackKey] == defenderKeys[defendKey]) {
+            var attacker = attackerKeys[attackKey];
+            var defender = defenderKeys[defendKey];
+            if (!winrates[attacker]) winrates[attacker] = {};
             winrates[attacker][defender] = "-";
             defendKey++;
         }
-        var defender = keys[defendKey];
+        var defender = defenderKeys[defendKey];
         if (!defender) {
             defendKey = 0;
             attackKey++;
-            defender = keys[defendKey]
+            defender = defenderKeys[defendKey]
         }
-        var attacker = keys[attackKey];
+        var attacker = attackerKeys[attackKey];
         if (attacker) {
-            var attacker = keys[attackKey];
+            var attacker = attackerKeys[attackKey];
 
             if (attacker) {
                 attacker = DeckRetriever.factionDecks[attacker];
@@ -56,29 +112,41 @@ function nextFight(attackKey, defendKey, firstMatch) {
             }
             setTimeout(nextFight, 1000, attackKey, defendKey);
         } else {
-            var table = document.createElement('table');
-            table.style.width = "100%";
-            var header = document.createElement("tr");
-            header.appendChild(document.createElement("th"));
-            table.appendChild(header);
-            for (var attacker in winrates) {
-                var name = document.createElement("th");
-                name.innerHTML = attacker;
-                header.appendChild(name);
-                var row = document.createElement("tr");
-                name = document.createElement("th");
-                name.innerHTML = attacker;
-                row.appendChild(name);
-                for (var defender in winrates[attacker]) {
-                    var winrate = winrates[attacker][defender];
-                    var data = document.createElement("td");
-                    data.innerHTML = winrate;
-                    row.appendChild(data);
-                }
-                table.appendChild(row);
-            }
-            document.getElementById("winrates").innerHTML = '';
-            document.getElementById("winrates").appendChild(table);
+            drawResults();
         }
     }
+}
+
+function drawResults() {
+    var table = document.createElement('table');
+    table.style.width = "100%";
+    var header = document.createElement("tr");
+    var corner = document.createElement("th");
+    corner.classList.add("diagonal-line");
+    header.appendChild(corner);
+    table.appendChild(header);
+    for (var defender in defenderKeys) {
+        var name = document.createElement("th");
+        name.innerHTML = defenderKeys[defender];
+        header.appendChild(name);
+    }
+
+    for (var attacker in attackerKeys) {
+        attacker = attackerKeys[attacker];
+        var row = document.createElement("tr");
+        var name = document.createElement("th");
+        name.innerHTML = attacker;
+        row.appendChild(name);
+        for (var defender in defenderKeys) {
+            defender = defenderKeys[defender];
+            var winrate = winrates[attacker][defender];
+            var data = document.createElement("td");
+            data.innerHTML = winrate + "%";
+            row.appendChild(data);
+        }
+        table.appendChild(row);
+    }
+
+    var tblDiv = document.createElement('div');
+    document.getElementById("winrates").appendChild(table);
 }

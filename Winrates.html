@@ -5,6 +5,7 @@
     <title id="title_tag">SimSpellstone - The Spellstone Simulator that runs from your browser!</title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css" media="screen">
     <link rel="stylesheet" type="text/css" href="styles/card.css">
+    <link rel="stylesheet" type="text/css" href="styles/winrates.css">
 
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
@@ -103,7 +104,8 @@
     <br>
     <span id="ui">
         <form>
-            <input style="float:initial" id="btn_simulate" type="button" value="SIM Guild" onclick="return SimGuild();" style="text-align: center; font-weight: bold;">
+            <input style="float:initial" id="btn_simGuild" type="button" value="SIM Guild" onclick="return SimGuild();" style="text-align: center; font-weight: bold;">
+            <input style="float:initial" id="btn_reSimGuild" type="button" value="re-SIM Guild" onclick="return RunGuildSIMS();" style="text-align: center; font-weight: bold;">
             <div><b>Response JSON:</b></div><input id="request_json" type="text" value="" size="50" onchange="DeckRetriever.getFieldsFromRequest();"><br>
         </form>
         <br/>

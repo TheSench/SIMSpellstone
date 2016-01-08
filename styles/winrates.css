@@ -1,0 +1,26 @@
+﻿#winrates {
+    overflow-x: scroll;
+    border: 1px solid black;
+        float: left;
+}
+
+    #winrates table {
+        text-align: center;
+        color: white;
+        background-color: black;
+        border-collapse: collapse;
+    }
+
+    .diagonal-line {
+        background: linear-gradient(to right top, #000000 0%, #000000 48.9%,#ffffff 49%,#ffffff 51%,#000000 51.1%,#000000 100%);
+    }
+
+    #winrates th {
+        padding: 5px
+    }
+
+    #winrates td {
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+    }
