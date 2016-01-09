@@ -28,8 +28,8 @@ function RunGuildSIMS() {
         if (!defender) defenderKeys.push(key);
     }
 
-    attackerKeys.sort();
-    defenderKeys.sort();
+    attackerKeys.sort(caselessCompare);
+    defenderKeys.sort(caselessCompare);
 
     if (attacker) {
         var key = 'CustomAttackDeck';
@@ -43,6 +43,10 @@ function RunGuildSIMS() {
     }
 
     nextFight(0, -1);
+}
+
+function caselessCompare(a, b) {
+    return a.toLowerCase().localeCompare(b.toLowerCase());
 }
 
 function checkForSpecifiedAttacker() {
