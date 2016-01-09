@@ -116,6 +116,7 @@ function nextFight(attackKey, defendKey) {
                 document.getElementById('deck2').value = hash_encode(defender);
                 var tblDiv = document.getElementById("winrates");
                 tblDiv.innerHTML = getCurrentMatch(attackKey, defendKey);
+                scroll_to_end();
                 startsim();
             }
             setTimeout(nextFight, 1000, attackKey, defendKey);
