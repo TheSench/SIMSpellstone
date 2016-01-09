@@ -114,6 +114,8 @@ function nextFight(attackKey, defendKey) {
                 defender = DeckRetriever.factionDecks[defender];
                 document.getElementById('deck').value = hash_encode(attacker);
                 document.getElementById('deck2').value = hash_encode(defender);
+                var tblDiv = document.getElementById("winrates");
+                tblDiv.innerHTML = "(" + attackKey + "/" + attackerKeys.length + ") vs. (" + defendKey + " / " + defenderKeys.length + ") : " + ((attackerKeys.length - attackKey) * defenderKeys.length - defendKey) + " battles remaining";
                 startsim();
             }
             setTimeout(nextFight, 1000, attackKey, defendKey);
@@ -138,6 +140,7 @@ function testTable() {
 }
 
 function drawResults() {
+    document.getElementById("winrates").innerHTML = '';
     var table = document.createElement('table');
     var header = document.createElement("tr");
     var corner = document.createElement("th");
