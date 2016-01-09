@@ -115,7 +115,7 @@ function nextFight(attackKey, defendKey) {
                 document.getElementById('deck').value = hash_encode(attacker);
                 document.getElementById('deck2').value = hash_encode(defender);
                 var tblDiv = document.getElementById("winrates");
-                tblDiv.innerHTML = "(" + attackKey + "/" + attackerKeys.length + ") vs. (" + defendKey + " / " + defenderKeys.length + ") : " + ((attackerKeys.length - attackKey) * defenderKeys.length - defendKey) + " battles remaining";
+                tblDiv.innerHTML = getCurrentMatch(attackKey, defendKey);
                 startsim();
             }
             setTimeout(nextFight, 1000, attackKey, defendKey);
@@ -123,6 +123,15 @@ function nextFight(attackKey, defendKey) {
             drawResults();
         }
     }
+}
+
+function getCurrentMatch(attackKey, defendKey) {
+    var attacker = attackerKeys[attackKey] + " (" + attackKey + "/" + attackerKeys.length + ")";
+    var defender = defenderKeys[defendKey] + " (" + defendKey + "/" + defenderKeys.length + ")";
+    var battlesRemaining = ((attackerKeys.length - attackKey) * defenderKeys.length - defendKey);
+    var output = attacker + " vs. " + defender + " - " + battlesRemaining + " battles remaining";
+
+    return output;
 }
 
 function testTable() {
