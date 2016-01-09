@@ -172,4 +172,5 @@ function drawResults() {
     var tblDiv = document.getElementById("winrates");
     tblDiv.style.width = document.getElementsByTagName("body")[0].offsetWidth + 'px';
     tblDiv.appendChild(table);
+    tblDiv.appendChild(document.createElement('br'));
 }
