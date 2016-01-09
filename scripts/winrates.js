@@ -114,9 +114,9 @@ function nextFight(attackKey, defendKey) {
                 defender = DeckRetriever.factionDecks[defender];
                 document.getElementById('deck').value = hash_encode(attacker);
                 document.getElementById('deck2').value = hash_encode(defender);
-                var tblDiv = document.getElementById("winrates");
+                var tblDiv = document.getElementById("remaining");
+                tblDiv.style.display = "block";
                 tblDiv.innerHTML = getCurrentMatch(attackKey, defendKey);
-                scroll_to_end();
                 startsim();
             }
             setTimeout(nextFight, 1000, attackKey, defendKey);
@@ -183,5 +183,6 @@ function drawResults() {
     tblDiv.style.width = document.getElementsByTagName("body")[0].offsetWidth + 'px';
     tblDiv.appendChild(table);
     tblDiv.appendChild(document.createElement('br'));
+    document.getElementById("remaining").style.display = "none";
     scroll_to_end();
 }

@@ -1,4 +1,10 @@
-﻿#winrates {
+﻿#remaining {
+    border: 1px solid black;
+    float: left;
+    border-style: inset;
+    border-width: 5px;
+}
+#winrates {
     overflow-x: scroll;
     border: 1px solid black;
     float: left;
