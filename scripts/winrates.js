@@ -96,6 +96,7 @@ function nextFight(attackKey, defendKey) {
         }
 
         defendKey++;
+        /*
         if (attackerKeys[attackKey] == defenderKeys[defendKey]) {
             var attacker = attackerKeys[attackKey];
             var defender = defenderKeys[defendKey];
@@ -103,6 +104,7 @@ function nextFight(attackKey, defendKey) {
             winrates[attacker][defender] = "-";
             defendKey++;
         }
+        */
         var defender = defenderKeys[defendKey];
         if (!defender) {
             defendKey = 0;
