@@ -122,9 +122,13 @@ function create_card_html(card, inHand, onclick, state) {
         }
         htmlCard.appendChild(createImg("res/cardAssets/Attack.png", "attack"));
         htmlCard.appendChild(htmlAttack);
-        if (inHand) htmlCard.appendChild(createDiv("delay", card.cost));
-        else if (card.timer) htmlCard.appendChild(createDiv("delay", card.timer));
-        htmlCard.appendChild(createImg("res/cardAssets/Timer.png", "timer"));
+        if (inHand) {
+            htmlCard.appendChild(createDiv("delay", card.cost));
+            htmlCard.appendChild(createImg("res/cardAssets/Timer.png", "timer"));
+        } else if (card.timer) {
+            htmlCard.appendChild(createDiv("delay", card.timer));
+            htmlCard.appendChild(createImg("res/cardAssets/Timer.png", "timer"));
+        }
     }
     if (inHand) {
         var htmlHealth = createDiv("card-health", card.health.toString());
