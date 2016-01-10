@@ -213,4 +213,3 @@
     }
     return publicInfo;
 })();
-var card_cache = {};

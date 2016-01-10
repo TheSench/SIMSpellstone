@@ -156,12 +156,7 @@ function doSetup() {
     deck.cpu.deck = [];
     deck.player = [];
     deck.player.deck = [];
-
-    // Initialize summon counter to track limit
-    number_of_summons = [];
-    number_of_summons.cpu = 0;
-    number_of_summons.player = 0;
-
+    
     // Set up empty field
     field = [];
     field.cpu = [];
@@ -280,7 +275,6 @@ function processSimResult() {
 // Global variables used by single-threaded simulator
 var run_sims_count = 0;
 var run_sims_batch = 0;
-var card_cache = {};
 var user_controlled = false;
 
 var use_workers = false;

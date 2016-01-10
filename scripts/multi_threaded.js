@@ -238,6 +238,7 @@ if (use_workers) {
         document.getElementById('stop').style.display = 'none';
 
         scroll_to_end();
+        if (end_sims_callback) end_sims_callback();
     }
 
     // Initialize simulation loop - runs once per simulation session
@@ -443,4 +444,7 @@ if (use_workers) {
             sims_to_process -= new_batch_size;
         }
     }
+
+    var last_start_times = [];
+    var end_sims_callback;
 }

@@ -1430,9 +1430,9 @@ if (simulator_thread) {
     };
 
     var deck = [];
-    var number_of_summons = [];
     var field = [];
     var simulation_turns = 0;
     var time_start_batch = 0;
     var simulating = false;
+    var turn = 0;
 }

@@ -77,7 +77,6 @@ function initializeSims(params) {
 	getbattleground = params['getbattleground'];
 	getordered = params['getordered'];
 	getordered2 = params['getordered2'];
-	gettournament = params['gettournament'];
 	getexactorder = params['getexactorder'];
 	getexactorder2 = params['getexactorder2'];
 	surge = params['surge'];
@@ -154,12 +153,7 @@ function run_sim() {
 	deck['cpu']['deck'] = new Array();
 	deck['player'] = new Array();
 	deck['player']['deck'] = new Array();
-
-	// Initialize summon counter to track limit
-	number_of_summons = new Array();
-	number_of_summons['cpu'] = 0;
-	number_of_summons['player'] = 0;
-
+    
 	// Set up empty field
 	field = new Array();
 	field['cpu'] = new Array();
@@ -285,14 +279,12 @@ function run_sims() {
 }
 
 // Global variables used by worker-threads to run simulations
-var turn = 0;
 var debug = false;
 var loss_debug = false;
 var win_debug = false;
 var mass_debug = false;
 var getordered = false;
 var getordered2 = false;
-var gettournament = false;
 var getexactorder = false;
 var getexactorder2 = false;
 var getmission = 0;
@@ -316,6 +308,5 @@ var sims_left = 0;
 var running = false;
 
 var simulator_thread = true;
-var card_cache = {};
 
 importScripts('simulator_base.js', 'shared.js');

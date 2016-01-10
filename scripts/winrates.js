@@ -125,9 +125,13 @@ function nextFight(attackKey, defendKey) {
                 tblDiv.innerHTML = getCurrentMatch(attackKey, defendKey);
                 startsim();
             }
-            setTimeout(nextFight, 1000, attackKey, defendKey);
+
+            end_sims_callback = function () {
+                nextFight(attackKey, defendKey);
+            }
         } else {
             drawResults();
+            end_sims_callback = undefined;
         }
     }
 }
@@ -136,7 +140,7 @@ function getCurrentMatch(attackKey, defendKey) {
     var attacker = attackerKeys[attackKey] + " (" + attackKey + "/" + attackerKeys.length + ")";
     var defender = defenderKeys[defendKey] + " (" + defendKey + "/" + defenderKeys.length + ")";
     var battlesRemaining = ((attackerKeys.length - attackKey) * defenderKeys.length - defendKey);
-    var output = attacker + " vs. " + defender + " - " + battlesRemaining + " battles remaining";
+    var output = battlesRemaining + " battles remaining - " + attacker + " vs. " + defender;
 
     return output;
 }
@@ -163,6 +167,9 @@ function drawResults() {
     corner.classList.add("diagonal-line");
     header.appendChild(corner);
     table.appendChild(header);
+    var hash = document.createElement("th");
+    hash.innerHTML = 'Deck Hash';
+    header.appendChild(hash);
     for (var defender in defenderKeys) {
         var name = document.createElement("th");
         name.innerHTML = defenderKeys[defender];
@@ -175,6 +182,9 @@ function drawResults() {
         var name = document.createElement("th");
         name.innerHTML = attacker;
         row.appendChild(name);
+        var hash = document.createElement("th");
+        hash.innerHTML = hash_encode(DeckRetriever.factionDecks[attacker]);
+        row.appendChild(hash);
         for (var defender in defenderKeys) {
             defender = defenderKeys[defender];
             var winrate = winrates[attacker][defender];
