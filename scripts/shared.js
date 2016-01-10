@@ -1185,3 +1185,33 @@ function is_commander(id) {
 }
 
 var elariaCaptain = { id: 202, level: 7 };
+var card_cache = {};
+
+
+// Global arrays
+var factions = {
+    names: [
+        'Factionless',
+        'Aether',
+        'Chaos',
+        'Wyld',
+        'Frog',
+        'Elemental',
+        'Angel',
+        'Undead',
+        'Void',
+        'Dragon',
+    ],
+    IDs: {
+        Factionless: 0,
+        Aether: 1,
+        Chaos: 2,
+        Wyld: 3,
+        Frog: 4,
+        Elemental: 5,
+        Angel: 6,
+        Undead: 7,
+        Void: 8,
+        Dragon: 9
+    }
+};

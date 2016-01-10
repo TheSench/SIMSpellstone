@@ -26,7 +26,6 @@ window.onerror = function (message, url, linenumber) {
     if (getcardlist) err_msg += "Card list: " + getcardlist + "\n";
     if (getordered) err_msg += "Ordered: Yes\n";
     if (getexactorder) err_msg += "Exact-order: Yes\n";
-    if (gettournament) err_msg += "Tournament Mode: Yes\n";
     if (surge) err_msg += "Surge: Yes\n";
     if (getdeck2) err_msg += "Enemy deck hash: " + getdeck2 + "\n";
     if (getcardlist2) err_msg += "Enemy Card list: " + getcardlist2 + "\n";
@@ -432,14 +431,14 @@ function gettable() {
 
         var current_deck = '';
         var deck = [];
-        var getdeck = document.getElementById('deck').value;
-        var getcardlist = document.getElementById('cardlist').value;
+        var deck1Hash = document.getElementById('deck').value;
+        var deck1List = document.getElementById('cardlist').value;
 
         // Load player deck
-        if (getdeck) {
-            deck.player = hash_decode(getdeck);
-        } else if (getcardlist) {
-            deck.player = load_deck_from_cardlist(getcardlist);
+        if (deck1Hash) {
+            deck.player = hash_decode(deck1Hash);
+        } else if (deck1List) {
+            deck.player = load_deck_from_cardlist(deck1List);
         }
         if (deck.player) {
             current_deck = hash_encode(deck.player);
@@ -752,14 +751,12 @@ function toggleRadio(radio) {
 
 // Initialize global variables
 var history = '';
-var turn = 0;
 var max_turns = 50;
 var debug = false;
 var mass_debug = false;
 var loss_debug = false;
 var win_debug = false;
 var found_loss = false;
-var gettournament = false;
 var getdeck = '';
 var getdeck2 = '';
 var getcardlist = '';
@@ -780,46 +777,17 @@ var draws = 0;
 var games = 0;
 var num_sims = 0;
 var last_games = [];
-var last_start_times = [];
-var sims_left = false;
+var sims_left = 0;
 var sims_to_process = 0;
-var current_timeout = false;
-var time_start = false;
+var current_timeout;
+var time_start = 0;
 var time_stop = 0;
 var time_start_batch = 0;
 var time_end = 0;	// TODO: Use this
 var surge = false;
 var battleground = [];
 var total_turns = 0;
-var cache_player_deck = false;
-var cache_cpu_deck = false;
+var cache_player_deck;
+var cache_cpu_deck;
 var choice = undefined;
 var auto_mode = false;
-
-// Global arrays
-var factions = {
-    names: [
-        'Factionless',
-        'Aether',
-        'Chaos',
-        'Wyld',
-        'Frog',
-        'Elemental',
-        'Angel',
-        'Undead',
-        'Void',
-        'Dragon',
-    ],
-    IDs: {
-        Factionless: 0,
-        Aether: 1,
-        Chaos: 2,
-        Wyld: 3,
-        Frog: 4,
-        Elemental: 5,
-        Angel: 6,
-        Undead: 7,
-        Void: 8,
-        Dragon: 9
-    }
-};
