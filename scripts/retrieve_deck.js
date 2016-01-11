@@ -1,7 +1,16 @@
 ﻿var DeckRetriever = (function () {
+
     var baseURL = "https://crossorigin.me/https://spellstone.synapse-games.com/api.php?";
     var baseRequest = {};
     var form;
+
+    function HideLoadingSplash() {
+        $("body").removeClass("loading");
+    }
+
+    function DisplayLoadingSplash() {
+        $("body").addClass("loading");
+    }
 
     function getFieldsFromRequest() {
         var existingRequest = document.getElementById("request_json").value;
@@ -45,7 +54,11 @@
             async: false,
             cache: false,
             dataType: 'json', /* Optional - jQuery autodetects this by default */
-            success: callback,
+            success: function (response) {
+                callback(response);
+                HideLoadingSplash();
+            },
+            failure: HideLoadingSplash,
         });
     }
 
@@ -62,28 +75,40 @@
             activeYN: "0",
         }
 
-        sendRequest('setDeckCards', params, function (response) {
-            alert("Deck has been updated - refresh Spellstone before using in-game Deck Editor.")
-        });
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('setDeckCards', params, function (response) {
+                alert("Deck has been updated - refresh Spellstone before using in-game Deck Editor.");
+                HideLoadingSplash();
+            });
+        }, 1);
     }
 
     function getFullUserData() {
         clearDeckSpace();
-
-        sendRequest('init', null, function (response) {
-            getInventory(response);
-        });
+        
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('init', null, function (response) {
+                getInventory(response);
+                HideLoadingSplash();
+            });
+        }, 1);
     }
 
     function getFactionMembers(draw) {
-
-        sendRequest('updateFaction', null, function (response) {
-            var members = response.faction.members;
-            publicInfo.factionDecks = {};
-            for (var key in members) {
-                getUserDeck(key, members[key].name, draw);
-            }
-        });
+        
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('updateFaction', null, function (response) {
+                var members = response.faction.members;
+                publicInfo.factionDecks = {};
+                for (var key in members) {
+                    getUserDeck(key, members[key].name, draw);
+                    HideLoadingSplash();
+                }
+            });
+        }, 1);
     }
 
     function getUserDeck(target_user_id, name, draw) {

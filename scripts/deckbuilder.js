@@ -38,13 +38,11 @@ var form;
 var initDeckBuilder = function () {
     setupPopups();
 
-    $body = $("body");
-    $body.addClass("loading");
+    $("body").addClass("loading");
 
     setTimeout(function () {
         drawAllCards();
-        $body = $("body");
-        $body.removeClass("loading");
+        $("body").removeClass("loading");
     }, 1);
 }
 
@@ -805,13 +803,11 @@ var toggleUpgrades = function (checkbox) {
     showUpgrades = checkbox.checked;
     clearCardSpace();
 
-    $body = $("body");
-    $body.addClass("loading");
+    $("body").addClass("loading");
 
     setTimeout(function () {
         drawAllCards();
-        $body = $("body");
-        $body.removeClass("loading");
+        $("body").removeClass("loading");
         applyFilters();
     }, 1);
 }
