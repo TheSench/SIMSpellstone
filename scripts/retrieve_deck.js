@@ -8,13 +8,9 @@
         if (existingRequest.length > 0) {
             existingRequest = JSON.parse(existingRequest);
             existingRequest = existingRequest.request;
+
             baseRequest.user_id = existingRequest.user_id;
-            baseRequest.kong_id = existingRequest.kong_id;
             baseRequest.password = existingRequest.password;
-            baseRequest.kong_token = existingRequest.kong_token;
-            baseRequest.kong_name = existingRequest.kong_name;
-            baseRequest.client_version = existingRequest.client_version;
-            baseRequest.unity = existingRequest.unity;
         }
     }
 
@@ -23,78 +19,79 @@
         getFactionMembers(draw);
     }
 
-    function getBaseRequestForm(messageType) {
+    function getRequestParams(messageType, additionalParams) {
+        var request = { message: messageType };
+        if (!baseRequest.user_id) baseRequest = requestFields
+        request = $.extend(request, baseRequest);
+        if (additionalParams) request = $.extend(request, additionalParams);
 
-        var form = $('<form>');
-
-        appendInput(form, 'message', messageType);
-        appendInput(form, 'user_id', baseRequest.user_id);
-        appendInput(form, 'kong_id', baseRequest.kong_id);
-        appendInput(form, 'password', baseRequest.password);
-        appendInput(form, 'kong_token', baseRequest.kong_token);
-        appendInput(form, 'kong_name', baseRequest.kong_name);
-        appendInput(form, 'client_version', baseRequest.client_version);
-        appendInput(form, 'unity', baseRequest.unity);
-        appendInput(form, 'platform', baseRequest.platform);
-
-        return form;
+        var str = [];
+        for (var param in request) {
+            if (request.hasOwnProperty(param)) {
+                str.push(encodeURIComponent(param) + "=" + encodeURIComponent(request[param]));
+            }
+        }
+        return str.join("&");
     }
 
-    function sendRequest(form, callback) {
+
+    function sendRequest(messageType, params, callback) {
+        if (!baseRequest.user_id) {
+            throw "Missing user id";
+        }
+        var params = getRequestParams(messageType, params);
         $.ajax({
-            url: baseURL + form.serialize(),
+            url: baseURL + params,
             async: false,
+            cache: false,
             dataType: 'json', /* Optional - jQuery autodetects this by default */
             success: callback,
         });
     }
 
-    function appendInput(form, name, value) {
-        form.append($('<input>').attr('name', name).attr('value', value));
-    }
-
     function retrieveMyDeck() {
         clearDeckSpace();
-        getUserDeck(baseRequest.user_id);
+        getUserDeck(baseRequest.user_id, 'Deck', true);
     }
 
-    function retrieveMyCards() {
-        clearDeckSpace();
-        getUserDeck(baseRequest.user_id);
+    function updateMyDeck(newCommander, newDeck) {
+        var params = {
+            deck_id: "1",
+            cards: newDeck,
+            commander_index: newCommander,
+            activeYN: "0",
+        }
+
+        sendRequest('setDeckCards', params, function (response) {
+            alert("Deck has been updated - refresh Spellstone before using in-game Deck Editor.")
+        });
     }
 
     function getFullUserData() {
         clearDeckSpace();
-        var form = getBaseRequestForm('init');
 
-        sendRequest(form, function (response) {
+        sendRequest('init', null, function (response) {
             getInventory(response);
         });
     }
 
     function getFactionMembers(draw) {
 
-        var form = getBaseRequestForm('updateFaction');
-        appendInput(form, 'last_activity_id', '0');
-        appendInput(form, 'api_stat_name', 'getChat');
-        appendInput(form, 'api_stat_time', '84');
-        appendInput(form, 'data_usage', '793766');
-
-        sendRequest(form, function (response) {
+        sendRequest('updateFaction', null, function (response) {
             var members = response.faction.members;
             publicInfo.factionDecks = {};
             for (var key in members) {
-                loadUserDeck(key, members[key].name, draw);
+                getUserDeck(key, members[key].name, draw);
             }
         });
     }
 
-    function loadUserDeck(target_user_id, name, draw) {
+    function getUserDeck(target_user_id, name, draw) {
+        var params = {
+            target_user_id: target_user_id
+        }
 
-        var form = getBaseRequestForm('getProfileData');
-        appendInput(form, 'target_user_id', target_user_id);
-
-        sendRequest(form, function (response) {
+        sendRequest('getProfileData',  params, function (response) {
             if (draw) {
                 onGetUserDeck(response, name);
             } else {
@@ -102,16 +99,6 @@
                 var deck = getDeckFromDeckInfo(deck_info);
                 publicInfo.factionDecks[name] = deck;
             }
-        });
-    }
-
-    function getUserDeck(target_user_id, name) {
-
-        var form = getBaseRequestForm('getProfileData');
-        appendInput(form, 'target_user_id', target_user_id);
-
-        sendRequest(form, function (response) {
-            onGetUserDeck(response, name);
         });
     }
 
@@ -175,7 +162,7 @@
         var units = data.user_units;
         for (var i in units) {
             var unit = units[i];
-            deck.deck.push({ id: unit.unit_id, level: unit.level });
+            deck.deck.push({ id: unit.unit_id, level: unit.level, index: unit.unit_index });
         }
         deck.deck.sort(function (unit1, unit2) {
             if (unit1.id < unit2.id) return -1;
@@ -209,7 +196,9 @@
         retrieveGuildDecks: retrieveGuildDecks,
         retrieveMyDeck: retrieveMyDeck,
         getFullUserData: getFullUserData,
+        updateMyDeck: updateMyDeck,
         factionDecks: {},
+        baseRequest: baseRequest,
     }
     return publicInfo;
 })();

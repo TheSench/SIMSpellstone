@@ -19,7 +19,7 @@
     <script id="cards_script" type="text/javascript" src="scripts/gui_script.js"></script>
     <script id="deckbuilder" type="text/javascript" src="scripts/deckbuilder.js"></script>
     <script id="spoilers" type="text/javascript" src="scripts/spoilers.js"></script>
-    <script id="spoilers" type="text/javascript" src="scripts/spoilers.js"></script>
+    <script id="spoilers" type="text/javascript" src="scripts/retrieve_deck.js"></script>
 
 </head>
 <body onload="initDeckBuilder()">
@@ -30,6 +30,7 @@
     <div><b>Deck Hash:</b></div><input id="hash" type="text" value="" size="100" onchange="hash_changed();"><br>
     <div>&nbsp;</div><font color="#666"><strong>Hash example:</strong> EAIgtjRUlRUfRUfRZSRZSRZS</font><br>
     <input id="resetDeck" type="button" value="Reset" onclick="hash_changed('GDK')" />
+    <input type="button" value="Save" onclick="updateDeck()" />
     <br/>
     <hr />
     <h1>Filters:</h1>
