@@ -694,7 +694,7 @@ function generate_card_list(deck) {
     return cardlist;
 }
 
-var base64chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!~-";
+var base64chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!~";
 var multiplierChars = "_*.'";
 
 function base64triplet_to_unitInfo(triplet) {
@@ -730,6 +730,18 @@ function unitInfo_to_base64triplet(unit_info) {
     return char1 + char2 + char3;
 }
 
+function numberToBase64(decimal) {
+    var char1 = base64chars[Math.floor(decimal / 64)];
+    var char2 = base64chars[decimal % 64];
+    return char1 + char2;
+}
+
+function base64ToNumber(base64) {
+    var dec1 = base64chars.indexOf(base64[0]) * 64;
+    var dec2 = base64chars.indexOf(base64[1]);
+    return dec1 + dec2;
+}
+
 function encode_multiplier(copies) {
     copies = copies - 2;    // Encoded as "2 + value"
     if (copies > 256) {
@@ -752,6 +764,8 @@ function hash_encode(deck) {
 
     var current_hash = [];
     var has_priorities = false;
+    var has_indexes = false;
+    var indexes = [];
 
     if (deck.commander) {
         current_hash.push(unitInfo_to_base64triplet(deck.commander));
@@ -762,6 +776,10 @@ function hash_encode(deck) {
         var current_card = deck.deck[k];
         if (current_card.priority) {
             has_priorities = true;
+        }
+        if (current_card.index) {
+            indexes.push(numberToBase64(current_card.index));
+            has_indexes = true;
         }
         var triplet = unitInfo_to_base64triplet(current_card);
         if (triplet == current_hash[lastIndex]) {
@@ -786,6 +804,11 @@ function hash_encode(deck) {
         current_hash.push(priorities);
     }
 
+    if (has_indexes) {
+        indexes = '-' + indexes.join('');
+        current_hash.push(indexes);
+    }
+
     for (var i = 0; i < copies.length; i++) {
         var num = copies[i];
         if (num > 1) {
@@ -804,6 +827,12 @@ function hash_decode(hash) {
     current_deck.deck = [];
     var unitInfo;
     var priorities;
+    var indexes;
+    if (hash.indexOf('-') > 0) {
+        // Ignore priorities for now
+        indexes = hash.substr(hash.indexOf('-') + 1).match(/.{1,2}/g);
+        hash = hash.substr(0, hash.indexOf('-'));
+    }
     if (hash.indexOf('|') > 0) {
         // Ignore priorities for now
         priorities = hash.substr(hash.indexOf('|') + 1);
@@ -815,6 +844,7 @@ function hash_decode(hash) {
             // Make sure we have valid characters
             unitInfo = base64triplet_to_unitInfo(hash.substr(i, 3));
             if (priorities) unitInfo.priority = priorities[unitidx];
+            if(unitidx > 0 && indexes) unitInfo.index = base64ToNumber(indexes[unitidx-1]); // Skip commander
 
             if (unitInfo) {
                 if (CARDS[unitInfo.id]) {
@@ -832,6 +862,10 @@ function hash_decode(hash) {
         } else {
             var multiplier = decode_multiplier(hash.substr(i, 2)) + 1;
             for (var n = 0; n < multiplier; n++) {
+                if (indexes) {
+                    unitInfo = $.extend({}, unitInfo);
+                    unitInfo.index = base64ToNumber(indexes[unitidx - 1]); // Skip commander
+                }
                 current_deck.deck.push(unitInfo);
                 unitidx++;
             }

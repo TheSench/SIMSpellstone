@@ -18,10 +18,27 @@ function draw_deck(deck, onclick) {
 function makeDeckHTML(deck, onclick) {
     var deckHTML = createDiv("float-left");
     var commander = get_card_by_id(deck.commander);
-    deckHTML.appendChild(create_card_html(commander, false, onclick));
+    var htmlCard = create_card_html(commander, false, onclick);
+    if (deck.commander.index !== undefined) {
+        attr = document.createAttribute("data-index");
+        attr.value = deck.commander.index;
+        htmlCard.attributes.setNamedItem(attr);
+    }
+    deckHTML.appendChild(htmlCard);
     for (var i = 0, len = deck.deck.length; i < len; i++) {
-        var unit = get_card_by_id(deck.deck[i]);
-        deckHTML.appendChild(create_card_html(unit, false, onclick, i));
+        var deckEntry = deck.deck[i];
+        var unit = get_card_by_id(deckEntry);
+        var htmlCard = create_card_html(unit, false, onclick, i);
+        if (deckEntry.index !== undefined) {
+            attr = document.createAttribute("data-index");
+            attr.value = deckEntry.index;
+            htmlCard.attributes.setNamedItem(attr);
+        }
+        deckHTML.appendChild(htmlCard);
+    }
+    for (; i < 15; i++) {
+        var htmlCard = createDiv("card");
+        deckHTML.appendChild(htmlCard);
     }
     return deckHTML;
 }
@@ -31,10 +48,15 @@ function draw_card_list(list, onclick) {
     cardSpace.innerHTML = '';
     var cards = createDiv("float-left");
     for (var i = 0, len = list.length; i < len; i++) {
-        var unit = get_card_by_id(list[i]);
-        var card = create_card_html(unit, true, onclick);
-        //card.id = "Card_" + list[i].id + "_" + list[i].level;
-        cards.appendChild(card);
+        var listEntry = list[i];
+        var unit = get_card_by_id(listEntry);
+        var htmlCard = create_card_html(unit, true, onclick);
+        if (listEntry.index !== undefined) {
+            attr = document.createAttribute("data-index");
+            attr.value = listEntry.index;
+            htmlCard.attributes.setNamedItem(attr);
+        }
+        cards.appendChild(htmlCard);
     }
     cardSpace.appendChild(cards);
 }

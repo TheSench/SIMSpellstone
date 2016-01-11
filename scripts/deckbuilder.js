@@ -151,6 +151,7 @@ var addToDeck = function (htmlCard) {
     if (is_commander(unit.id)) {
         deck.commander = unit;
     } else {
+        if (deck.deck.length == 15) return;
         deck.deck.push(unit);
     }
     if (fromInventory) htmlCard.classList.add("picked");
@@ -491,7 +492,8 @@ var filterFusion = function (button, fusion) {
     if (fusionFilters.length > 0) {
         for (var i = 0, len = units.length; i < len; i++) {
             var unit = units[i];
-            var fusion = (unit.id.length > 4 ? unit.id[0] : '');
+            var id = unit.id.toString();
+            var fusion = (id.length > 4 ? id[0] : '');
             var hide = true;
             for (var j = 0; j < fusionFilters.length; j++) {
                 if (fusion == fusionFilters[j]) {
@@ -821,6 +823,25 @@ var makeUnitKey = function (unit) {
 var getUnitFromCard = function (htmlCard) {
     var unit = { id: htmlCard.attributes.getNamedItem("data-id").value, level: htmlCard.attributes.getNamedItem("data-level").value };
     return unit;
+}
+
+var updateDeck = function () {
+    var deck = $(".picked");
+    if (deck.length == 16) {
+        var newDeck = [];
+        var newCommander;
+        for (var i = 0; i < deck.length; i++) {
+            var htmlCard = deck[i];
+            if (htmlCard.classList.contains("commander")) {
+                newCommander = htmlCard.attributes.getNamedItem("data-index").value;
+            } else {
+                newDeck.push(htmlCard.attributes.getNamedItem("data-index").value)
+            }
+
+        }
+        newDeck = "[" + newDeck.join() + "]";
+        DeckRetriever.updateMyDeck(newCommander, newDeck);
+    }
 }
 
 var skillStyle = document.createElement('style');
