@@ -9,18 +9,24 @@
             existingRequest = JSON.parse(existingRequest);
             existingRequest = existingRequest.request;
             baseRequest.user_id = existingRequest.user_id;
-            baseRequest.kong_id = existingRequest.kong_id;
             baseRequest.password = existingRequest.password;
-            baseRequest.kong_token = existingRequest.kong_token;
-            baseRequest.kong_name = existingRequest.kong_name;
-            baseRequest.client_version = existingRequest.client_version;
-            baseRequest.unity = existingRequest.unity;
         }
     }
 
     function retrieveGuildDecks(draw) {
         clearDeckSpace();
         getFactionMembers(draw);
+    }
+
+    function getBaseRequest(messageType) {
+
+        var request = {
+            message: messageType,
+            user_id: baseRequest.user_id,
+            password: baseRequest.password
+        }
+
+        return request;
     }
 
     function getBaseRequestForm(messageType) {
@@ -40,13 +46,20 @@
         return form;
     }
 
-    function sendRequest(form, callback) {
+    function sendRequest(request, callback) {
         $.ajax({
-            url: baseURL + form.serialize(),
+            url: baseURL + EncodeQueryData(request),//form.serialize(),
             async: false,
             dataType: 'json', /* Optional - jQuery autodetects this by default */
             success: callback,
         });
+    }
+
+    function EncodeQueryData(data) {
+        var ret = [];
+        for (var d in data)
+            ret.push(encodeURIComponent(d) + "=" + encodeURIComponent(data[d]));
+        return ret.join("&");
     }
 
     function appendInput(form, name, value) {
@@ -55,46 +68,37 @@
 
     function retrieveMyDeck() {
         clearDeckSpace();
-        getUserDeck(baseRequest.user_id);
-    }
-
-    function retrieveMyCards() {
-        clearDeckSpace();
-        getUserDeck(baseRequest.user_id);
+        getUserDeck(baseRequest.user_id, 'My Deck', true);
     }
 
     function getFullUserData() {
         clearDeckSpace();
-        var form = getBaseRequestForm('init');
+        var request = getBaseRequest('init');
 
-        sendRequest(form, function (response) {
+        sendRequest(request, function (response) {
             getInventory(response);
         });
     }
 
     function getFactionMembers(draw) {
 
-        var form = getBaseRequestForm('updateFaction');
-        appendInput(form, 'last_activity_id', '0');
-        appendInput(form, 'api_stat_name', 'getChat');
-        appendInput(form, 'api_stat_time', '84');
-        appendInput(form, 'data_usage', '793766');
+        var request = getBaseRequest('updateFaction');
 
-        sendRequest(form, function (response) {
+        sendRequest(request, function (response) {
             var members = response.faction.members;
             publicInfo.factionDecks = {};
             for (var key in members) {
-                loadUserDeck(key, members[key].name, draw);
+                getUserDeck(key, members[key].name, draw);
             }
         });
     }
 
-    function loadUserDeck(target_user_id, name, draw) {
+    function getUserDeck(target_user_id, name, draw) {
 
-        var form = getBaseRequestForm('getProfileData');
-        appendInput(form, 'target_user_id', target_user_id);
+        var request = getBaseRequest('getProfileData');
+        request.target_user_id = target_user_id;
 
-        sendRequest(form, function (response) {
+        sendRequest(request, function (response) {
             if (draw) {
                 onGetUserDeck(response, name);
             } else {
@@ -102,16 +106,6 @@
                 var deck = getDeckFromDeckInfo(deck_info);
                 publicInfo.factionDecks[name] = deck;
             }
-        });
-    }
-
-    function getUserDeck(target_user_id, name) {
-
-        var form = getBaseRequestForm('getProfileData');
-        appendInput(form, 'target_user_id', target_user_id);
-
-        sendRequest(form, function (response) {
-            onGetUserDeck(response, name);
         });
     }
 
