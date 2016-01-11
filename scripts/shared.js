@@ -1037,6 +1037,7 @@ function clean_name_for_matching(name) {
 }
 
 // Load mission deck
+var DoNotFuse = ["8005", "8006", "8007", "8008", "8009", "8010"];
 function load_deck_mission(id) {
 
     var missionInfo = MISSIONS[id];
@@ -1050,10 +1051,10 @@ function load_deck_mission(id) {
         var unit = { id: 0, level: 7 };
         var current_card = missionDeck[current_key];
         // Upgrade all cards to max fusion/level
-        if (current_card.length > 4) {
-            current_card[0] = '2';
-        } else {
-            current_card = '2' + current_card;
+        if (DoNotFuse.indexOf(current_card) == -1) {
+            if (current_card.length > 4) {
+                current_card[0] = '2';
+            }
         }
         unit.id = current_card;
         current_deck.deck.push(unit);
