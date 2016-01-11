@@ -177,16 +177,16 @@
         nameDiv.style.fontSize = "xx-large";
         nameDiv.style.fontWeight = "bold";
         var div = document.createElement("div");
-        div.appendChild(document.createElement("br"));
-        div.appendChild(nameDiv);
-        div.appendChild(makeDeckHTML(deck));
-        div.appendChild(document.createElement("br"));
         div.appendChild($('<div><label style="float:left;" class="button" onclick="open_deck_builder(null, \'' + hash + '\');"><b>Deck Builder</b></label>')[0]);
         div.appendChild($('<div><label style="float:left;" class="button" onclick="open_deck_builder(null, \'' + hash + '\', \'' + inventory + '\');"><b>Deck Builder (w/ Inventory)</b></label>')[0]);
+        div.appendChild(document.createElement("br"));
         div.appendChild(
             $('<input>').attr('type', 'text').attr('value', hash).width(500)[0]
         );
         div.appendChild(document.createElement("br"));
+        div.appendChild(document.createElement("br"));
+        div.appendChild(nameDiv);
+        div.appendChild(makeDeckHTML(deck));
         div.appendChild(document.createElement("hr"));
         cardSpace.appendChild(div);
     }
