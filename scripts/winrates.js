@@ -3,13 +3,12 @@ var defenderKeys = [];
 var winrates = {};
 
 function SimGuild() {
-    DeckRetriever.retrieveGuildDecks();
-    RunGuildSIMS();
+    DeckRetriever.retrieveGuildDecks(false, RunGuildSIMS);
 }
 
 function RunGuildSIMS() {
     // Remove previous winrate table
-    document.getElementById("winrates").innerHTML = '';
+    document.getElementById("results_table").innerHTML = '';
 
     attackerKeys = [];
     defenderKeys = [];
@@ -22,8 +21,7 @@ function RunGuildSIMS() {
     var defender = checkForSpecifiedDefender();
 
     var decks = DeckRetriever.factionDecks;
-    for(var key in decks)
-    {
+    for (var key in decks) {
         if (!attacker) attackerKeys.push(key);
         if (!defender) defenderKeys.push(key);
     }
@@ -70,7 +68,7 @@ function checkForSpecifiedDefender() {
     var getdeck2 = document.getElementById('deck2').value;
     var getcardlist2 = document.getElementById('cardlist2').value;
     var getmission = document.getElementById('mission').value;
-    
+
     // Load deck
     var deck;
     if (getdeck2) {
@@ -85,55 +83,52 @@ function checkForSpecifiedDefender() {
 }
 
 function nextFight(attackKey, defendKey) {
-    if (sims_left) {
-        setTimeout(nextFight, 250, attackKey, defendKey);
-    } else {
-        if (defendKey >= 0) {
-            var attacker = attackerKeys[attackKey];
-            var defender = defenderKeys[defendKey];
-            if (!winrates[attacker]) winrates[attacker] = {};
-            winrates[attacker][defender] = (wins / games * 100).toFixed(1);;
-        }
-
-        defendKey++;
-        /*
-        if (attackerKeys[attackKey] == defenderKeys[defendKey]) {
-            var attacker = attackerKeys[attackKey];
-            var defender = defenderKeys[defendKey];
-            if (!winrates[attacker]) winrates[attacker] = {};
-            winrates[attacker][defender] = "-";
-            defendKey++;
-        }
-        */
-        var defender = defenderKeys[defendKey];
-        if (!defender) {
-            defendKey = 0;
-            attackKey++;
-            defender = defenderKeys[defendKey]
-        }
+    if (defendKey >= 0) {
         var attacker = attackerKeys[attackKey];
-        if (attacker) {
-            var attacker = attackerKeys[attackKey];
+        var defender = defenderKeys[defendKey];
+        if (!winrates[attacker]) winrates[attacker] = {};
+        winrates[attacker][defender] = (wins / games * 100).toFixed(1);;
+    }
 
-            if (attacker) {
-                attacker = DeckRetriever.factionDecks[attacker];
-                defender = DeckRetriever.factionDecks[defender];
-                document.getElementById('deck').value = hash_encode(attacker);
-                document.getElementById('deck2').value = hash_encode(defender);
-                var tblDiv = document.getElementById("remaining");
-                tblDiv.style.display = "block";
-                tblDiv.innerHTML = getCurrentMatch(attackKey, defendKey);
-                startsim();
-            }
+    defendKey++;
+    /*
+    if (attackerKeys[attackKey] == defenderKeys[defendKey]) {
+        var attacker = attackerKeys[attackKey];
+        var defender = defenderKeys[defendKey];
+        if (!winrates[attacker]) winrates[attacker] = {};
+        winrates[attacker][defender] = "-";
+        defendKey++;
+    }
+    */
+    var defender = defenderKeys[defendKey];
+    if (!defender) {
+        defendKey = 0;
+        attackKey++;
+        defender = defenderKeys[defendKey]
+    }
+    var attacker = attackerKeys[attackKey];
+    if (attacker) {
+        var attacker = attackerKeys[attackKey];
+
+        if (attacker) {
+            attacker = DeckRetriever.factionDecks[attacker];
+            defender = DeckRetriever.factionDecks[defender];
+            document.getElementById('deck').value = hash_encode(attacker);
+            document.getElementById('deck2').value = hash_encode(defender);
+            var tblDiv = document.getElementById("remaining");
+            tblDiv.style.display = "block";
+            tblDiv.innerHTML = getCurrentMatch(attackKey, defendKey);
 
             end_sims_callback = function () {
                 nextFight(attackKey, defendKey);
             }
-        } else {
-            drawResults();
-            end_sims_callback = undefined;
+            startsim();
+            return;
         }
     }
+
+    drawResults();
+    end_sims_callback = undefined;
 }
 
 function getCurrentMatch(attackKey, defendKey) {
@@ -160,7 +155,7 @@ function testTable() {
 }
 
 function drawResults() {
-    document.getElementById("winrates").innerHTML = '';
+    document.getElementById("results_table").innerHTML = '';
     var table = document.createElement('table');
     var header = document.createElement("tr");
     var corner = document.createElement("th");
@@ -195,7 +190,7 @@ function drawResults() {
         table.appendChild(row);
     }
 
-    var tblDiv = document.getElementById("winrates");
+    var tblDiv = document.getElementById("results_table");
     tblDiv.style.width = document.getElementsByTagName("body")[0].offsetWidth + 'px';
     tblDiv.appendChild(table);
     tblDiv.appendChild(document.createElement('br'));

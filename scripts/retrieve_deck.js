@@ -23,9 +23,9 @@
         }
     }
 
-    function retrieveGuildDecks(draw) {
+    function retrieveGuildDecks(draw, callback) {
         clearDeckSpace();
-        getFactionMembers(draw);
+        getFactionMembers(draw, callback);
     }
 
     function getRequestParams(messageType, additionalParams) {
@@ -96,7 +96,7 @@
         }, 1);
     }
 
-    function getFactionMembers(draw) {
+    function getFactionMembers(draw, callback) {
         
         DisplayLoadingSplash();
         setTimeout(function () {
@@ -105,8 +105,9 @@
                 publicInfo.factionDecks = {};
                 for (var key in members) {
                     getUserDeck(key, members[key].name, draw);
-                    HideLoadingSplash();
                 }
+                HideLoadingSplash();
+                callback();
             });
         }, 1);
     }
