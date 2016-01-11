@@ -156,12 +156,7 @@ function doSetup() {
     deck.cpu.deck = [];
     deck.player = [];
     deck.player.deck = [];
-
-    // Initialize summon counter to track limit
-    number_of_summons = [];
-    number_of_summons.cpu = 0;
-    number_of_summons.player = 0;
-
+    
     // Set up empty field
     field = [];
     field.cpu = [];
@@ -184,13 +179,20 @@ function doSetup() {
     if (getordered2 && !getexactorder2) deck.cpu.ordered = copy_card_list(deck.cpu.deck);
 
     // Set up battleground effects, if any
-    battlegrounds = [];
+    battlegrounds = {
+        onCreate: [],
+        onTurn: [],
+    };
     if (getbattleground) {
         var selected = getbattleground.split(",");
         for (i = 0; i < selected.length; i++) {
             var id = selected[i];
             var battleground = BATTLEGROUNDS[id];
-            battlegrounds.push(MakeBattleground(battleground.name, battleground.skill));
+            if (battleground.effect.skill) {
+                battlegrounds.onTurn.push(MakeBattleground(battleground.name, battleground.effect.skill));
+            } else if (battleground.effect.evolve_skill || battleground.effect.add_skill) {
+                battlegrounds.onCreate.push(MakeSkillModifier(battleground.name, battleground.effect));
+            }
         }
     }
 
@@ -273,7 +275,6 @@ function processSimResult() {
 // Global variables used by single-threaded simulator
 var run_sims_count = 0;
 var run_sims_batch = 0;
-var card_cache = {};
 var user_controlled = false;
 
 var use_workers = false;
