@@ -19,8 +19,7 @@ if (!use_workers) {
         sims_left = document.getElementById('sims').value;
         if (!sims_left) sims_left = 1;
         user_controlled = document.getElementById('user_controlled').checked;
-        /*if (user_controlled) debug = true;
-        else*/ debug = document.getElementById('debug').checked;
+        debug = document.getElementById('debug').checked;
         var d = document.getElementById('auto_mode');
         if (d) {
             auto_mode = d.checked;
@@ -35,7 +34,6 @@ if (!use_workers) {
         getcardlist2 = document.getElementById('cardlist2').value;
         getordered = document.getElementById('ordered').checked;
         getordered2 = document.getElementById('ordered2').checked;
-        gettournament = document.getElementById('tournament').checked;
         getexactorder = document.getElementById('exactorder').checked;
         getexactorder2 = document.getElementById('exactorder2').checked;
         getmission = document.getElementById('mission').value;
@@ -209,6 +207,7 @@ if (!use_workers) {
             document.getElementById('stop').style.display = 'none';
 
             scroll_to_end();
+            if(end_sims_callback) end_sims_callback();
         }
     }
 
@@ -233,11 +232,6 @@ if (!use_workers) {
         deck['cpu']['deck'] = [];
         deck['player'] = [];
         deck['player']['deck'] = [];
-
-        // Initialize summon counter to track limit
-        number_of_summons = [];
-        number_of_summons['cpu'] = 0;
-        number_of_summons['player'] = 0;
 
         // Set up empty field
         field = [];
@@ -366,7 +360,6 @@ if (!use_workers) {
     // Global variables used by single-threaded simulator
     var run_sims_count = 0;
     var run_sims_batch = 0;
-    var card_cache = {};
     var user_controlled = false;
-
+    var end_sims_callback;
 }

@@ -28,8 +28,8 @@ function RunGuildSIMS() {
         if (!defender) defenderKeys.push(key);
     }
 
-    attackerKeys.sort();
-    defenderKeys.sort();
+    attackerKeys.sort(caselessCompare);
+    defenderKeys.sort(caselessCompare);
 
     if (attacker) {
         var key = 'CustomAttackDeck';
@@ -43,6 +43,10 @@ function RunGuildSIMS() {
     }
 
     nextFight(0, -1);
+}
+
+function caselessCompare(a, b) {
+    return a.toLowerCase().localeCompare(b.toLowerCase());
 }
 
 function checkForSpecifiedAttacker() {
@@ -92,6 +96,7 @@ function nextFight(attackKey, defendKey) {
         }
 
         defendKey++;
+        /*
         if (attackerKeys[attackKey] == defenderKeys[defendKey]) {
             var attacker = attackerKeys[attackKey];
             var defender = defenderKeys[defendKey];
@@ -99,6 +104,7 @@ function nextFight(attackKey, defendKey) {
             winrates[attacker][defender] = "-";
             defendKey++;
         }
+        */
         var defender = defenderKeys[defendKey];
         if (!defender) {
             defendKey = 0;
@@ -114,13 +120,29 @@ function nextFight(attackKey, defendKey) {
                 defender = DeckRetriever.factionDecks[defender];
                 document.getElementById('deck').value = hash_encode(attacker);
                 document.getElementById('deck2').value = hash_encode(defender);
+                var tblDiv = document.getElementById("remaining");
+                tblDiv.style.display = "block";
+                tblDiv.innerHTML = getCurrentMatch(attackKey, defendKey);
                 startsim();
             }
-            setTimeout(nextFight, 1000, attackKey, defendKey);
+
+            end_sims_callback = function () {
+                nextFight(attackKey, defendKey);
+            }
         } else {
             drawResults();
+            end_sims_callback = undefined;
         }
     }
+}
+
+function getCurrentMatch(attackKey, defendKey) {
+    var attacker = attackerKeys[attackKey] + " (" + attackKey + "/" + attackerKeys.length + ")";
+    var defender = defenderKeys[defendKey] + " (" + defendKey + "/" + defenderKeys.length + ")";
+    var battlesRemaining = ((attackerKeys.length - attackKey) * defenderKeys.length - defendKey);
+    var output = battlesRemaining + " battles remaining - " + attacker + " vs. " + defender;
+
+    return output;
 }
 
 function testTable() {
@@ -138,12 +160,16 @@ function testTable() {
 }
 
 function drawResults() {
+    document.getElementById("winrates").innerHTML = '';
     var table = document.createElement('table');
     var header = document.createElement("tr");
     var corner = document.createElement("th");
     corner.classList.add("diagonal-line");
     header.appendChild(corner);
     table.appendChild(header);
+    var hash = document.createElement("th");
+    hash.innerHTML = 'Deck Hash';
+    header.appendChild(hash);
     for (var defender in defenderKeys) {
         var name = document.createElement("th");
         name.innerHTML = defenderKeys[defender];
@@ -156,6 +182,9 @@ function drawResults() {
         var name = document.createElement("th");
         name.innerHTML = attacker;
         row.appendChild(name);
+        var hash = document.createElement("th");
+        hash.innerHTML = hash_encode(DeckRetriever.factionDecks[attacker]);
+        row.appendChild(hash);
         for (var defender in defenderKeys) {
             defender = defenderKeys[defender];
             var winrate = winrates[attacker][defender];
@@ -169,4 +198,7 @@ function drawResults() {
     var tblDiv = document.getElementById("winrates");
     tblDiv.style.width = document.getElementsByTagName("body")[0].offsetWidth + 'px';
     tblDiv.appendChild(table);
+    tblDiv.appendChild(document.createElement('br'));
+    document.getElementById("remaining").style.display = "none";
+    scroll_to_end();
 }

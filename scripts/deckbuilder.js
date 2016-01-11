@@ -1,38 +1,29 @@
-﻿var card_cache = {};
-
-var fromInventory = false;
+﻿var fromInventory = false;
 var deck = [];
 deck.commander = elariaCaptain;
 deck.deck = [];
 
+// Filters
 var attackHidden = [];
 var attackRanges = [];
 var healthHidden = [];
 var healthRanges = [];
 var delayHidden = [];
 var delayRanges = [];
-
 var skillFilters = [];
 var skillHidden = [];
-
 var skillFiltersAdv = [];
 var skillHiddenAdv = [];
-
 var factionHidden = [];
 var subfactionHidden = [];
-
 var rarityFilters = [];
 var rarityHidden = [];
-
 var typeFilters = [];
 var typeHidden = [];
-
 var setFilters = [];
 var setHidden = [];
-
 var fusionFilters = [];
 var fusionHidden = [];
-
 var nameHidden = [];
 
 var allCards = CARDS;
@@ -73,17 +64,6 @@ var setupPopups = function () {
             }
         },
     });
-    $("#slider-range").slider({
-        range: true,
-        min: 0,
-        max: 500,
-        values: [75, 300],
-        slide: function (event, ui) {
-            $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
-        }
-    });
-    $("#amount").val("$" + $("#slider-range").slider("values", 0) +
-		" - $" + $("#slider-range").slider("values", 1));
 }
 
 var drawAllCards = function () {

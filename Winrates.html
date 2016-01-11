@@ -101,7 +101,8 @@
     <br>
     <h1 id="version_label">SimSpellstone</h1>
     <h4 id="version_label2"></h4>
-    <br>
+    <div id="remaining" style="display:none"></div>
+    <br />
     <span id="ui">
         <form>
             <input style="float:initial" id="btn_simGuild" type="button" value="SIM Guild" onclick="return SimGuild();" style="text-align: center; font-weight: bold;">
@@ -156,13 +157,14 @@
             <div>&nbsp;</div><input id="btn_simulate" type="button" value="Simulate" onclick="return startsim();" style="text-align: center; font-weight: bold;"> <input type="button" value="Generate Link" onclick="return display_generated_link();" style="text-align: center; font-weight: normal;"> <input type="button" value="History" onclick="return display_history();" style="text-align: center; font-weight: normal;">
         </form>
     </span>
-    <br>
+    <br />
     <span id="content"></span>
     <br>
     <span id="cardSpace"></span>
     <br>
     <span id="stop" style="display: none;"><input type="button" value="Stop Sim(s)" onclick="stopsim()"><br>TIP: Switching browser tabs may cause your simulation to pause!</span>
-    <br />
+    <br>
     <div id="winrates"></div>
+    <br />
 </body>
 </html>
