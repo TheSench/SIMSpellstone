@@ -24656,6 +24656,13 @@
       <level>4</level>
       <health>29</health>
     </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>35</health>
+      <skill id="enhance" s="strike" x="1" />
+      <skill id="strike" x="2" />
+      <skill id="weaken" all="1" x="1" />
+    </upgrade>
   </unit>
   <unit>
     <id>220</id>
@@ -26565,6 +26572,18 @@
       <level>15</level>
       <health>15</health>
     </upgrade>
+    <upgrade>
+      <level>16</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>17</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>18</level>
+      <health>18</health>
+    </upgrade>
     <desc>These structures are built by adventurers to protect their camps as they travel Arcantica.</desc>
   </unit>
   <unit>
@@ -26641,6 +26660,19 @@
       <level>15</level>
       <health>15</health>
       <skill id="strike" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>16</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>17</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>18</level>
+      <health>18</health>
+      <skill id="strike" x="5" />
     </upgrade>
     <desc>"You know what's better than a tower? A tower with a CANNON!" - Jarad, Castle Guard</desc>
   </unit>
