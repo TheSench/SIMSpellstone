@@ -2,6 +2,11 @@
 var defenderKeys = [];
 var winrates = {};
 
+var clearHash1 = true;
+var clearList1 = true;
+var clearHash2 = true;
+var clearList2 = true;
+
 function SimGuild() {
     DeckRetriever.retrieveGuildDecks(false, RunGuildSIMS);
 }
@@ -49,14 +54,19 @@ function caselessCompare(a, b) {
 
 function checkForSpecifiedAttacker() {
 
+    clearHash1 = true;
+    clearList1 = true;
+
     var getdeck = document.getElementById('deck').value;
     var getcardlist = document.getElementById('cardlist').value;
 
     // Load deck
     var deck;
     if (getdeck) {
+        clearHash1 = false;
         deck = hash_decode(getdeck);
     } else if (getcardlist) {
+        clearList1 = false;
         deck = load_deck_from_cardlist(getcardlist);
     }
 
@@ -64,6 +74,9 @@ function checkForSpecifiedAttacker() {
 }
 
 function checkForSpecifiedDefender() {
+
+    clearHash2 = true;
+    clearList2 = true;
 
     var getdeck2 = document.getElementById('deck2').value;
     var getcardlist2 = document.getElementById('cardlist2').value;
@@ -73,13 +86,22 @@ function checkForSpecifiedDefender() {
     var deck;
     if (getdeck2) {
         deck = hash_decode(getdeck2);
+        clearHash2 = false;
     } else if (getcardlist2) {
         deck = load_deck_from_cardlist(getcardlist2);
+        clearList2 = false;
     } else if (getmission) {
         deck = load_deck_mission(getmission);
     }
 
     return deck;
+}
+
+function clearFields() {
+    if (clearHash1) document.getElementById('deck').value = '';
+    if (clearList1) document.getElementById('cardlist').value = '';
+    if (clearHash2) getdeck2 = document.getElementById('deck2').value = '';
+    if (clearList2) document.getElementById('cardlist2').value = '';
 }
 
 function nextFight(attackKey, defendKey) {
@@ -128,6 +150,7 @@ function nextFight(attackKey, defendKey) {
     }
 
     drawResults();
+    clearFields();
     end_sims_callback = undefined;
 }
 
