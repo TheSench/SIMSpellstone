@@ -464,8 +464,6 @@ if (simulator_thread) {
                 if (target['invisible']) {
                     target['invisible']--;
                     if (debug) echo += debug_name(src_card) + ' freezes ' + debug_name(target) + ' but it is invisible!<br>';
-                    // Bug 27296 - Freeze now resets when it misses
-                    if (skill['c']) skill['coundown'] = skill['c'];
                     continue;
                 }
 
