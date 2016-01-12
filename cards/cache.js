@@ -45719,6 +45719,25 @@ var CARDS = {
         "health": 29,
         "skill": [],
       },
+      "5": {
+        "health": 35,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "strike",
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
     }
   },
   "220": {
@@ -49458,6 +49477,18 @@ var CARDS = {
         "health": 15,
         "skill": [],
       },
+      "16": {
+        "health": 16,
+        "skill": [],
+      },
+      "17": {
+        "health": 17,
+        "skill": [],
+      },
+      "18": {
+        "health": 18,
+        "skill": [],
+      },
     }
   },
   "602": {
@@ -49549,6 +49580,23 @@ var CARDS = {
           {
             "id": "strike",
             "x": 4,
+          },
+        ],
+      },
+      "16": {
+        "health": 16,
+        "skill": [],
+      },
+      "17": {
+        "health": 17,
+        "skill": [],
+      },
+      "18": {
+        "health": 18,
+        "skill": [
+          {
+            "id": "strike",
+            "x": 5,
           },
         ],
       },

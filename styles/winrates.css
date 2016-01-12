@@ -4,7 +4,7 @@
     border-style: inset;
     border-width: 5px;
 }
-#winrates {
+#results_table {
     overflow-x: scroll;
     border: 1px solid black;
     float: left;
@@ -12,7 +12,7 @@
     border-width: 5px;
 }
 
-    #winrates table {
+    #results_table table {
         text-align: center;
         color: white;
         background-color: black;
@@ -23,11 +23,11 @@
     background: linear-gradient(to right top, #000000 0%, #000000 48.9%,#ffffff 49%,#ffffff 51%,#000000 51.1%,#000000 100%);
 }
 
-#winrates th {
+#results_table th {
     padding: 5px;
 }
 
-#winrates td {
+#results_table td {
     color: black;
     background-color: white;
     border: 1px solid black;
