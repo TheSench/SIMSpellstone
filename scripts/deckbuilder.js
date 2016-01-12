@@ -135,10 +135,12 @@ var addUnitLevels = function (id, maxlevel) {
     }
 }
 
-
+var i = 0;
 var hash_changed = function (hash) {
+    if (i == 0) throw "first time error";
     if (hash) {
         document.getElementById("hash").value = hash;
+        if (typeof simulatorDeckHashField !== 'undefined') simulatorDeckHashField.value = hash;
     }
     deck = hash_decode(document.getElementById("hash").value);
     draw_deck(deck, removeFromDeck);
@@ -179,7 +181,9 @@ var removeFromDeck = function (htmlCard, index) {
 };
 
 var updateHash = function () {
-    document.getElementById("hash").value = hash_encode(deck);
+    var deckHash = hash_encode(deck);
+    document.getElementById("hash").value = deckHash;
+    if (typeof simulatorDeckHashField !== 'undefined') simulatorDeckHashField.value = deckHash;
 }
 
 var filterAdvanced = function (skill) {
@@ -846,3 +850,14 @@ var skillStyle = document.createElement('style');
     document.getElementsByTagName('head')[0].appendChild(skillStyle);
     toggleSkillDetails({ checked: false });
 })();
+
+function setDeckName(name) {
+    var lbl = document.getElementById("version_label");
+    lbl.innerHTML += " - " + name;
+}
+
+function init(name, deckHashField, baseRequest) {
+    if (name) setDeckName(name);
+    if (deckHashField) simulatorDeckHashField = deckHashField;
+    $.extend(DeckRetriever.baseRequest, baseRequest);
+}

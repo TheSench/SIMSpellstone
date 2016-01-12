@@ -648,25 +648,37 @@ function load_deck_builder(player) {
     } else if (getmission) {
         deck = load_deck_mission(getmission);
     }
-
-    open_deck_builder(deck);
-}
-
-function open_deck_builder(deck, hash, inventory) {
-    var url = (inventory ? "DeckUpdater.html" : "DeckBuilder.html");
-    var parameters = [];
+    var hash;
     if (deck) {
         hash = hash_encode(deck);
     }
+    open_deck_builder(null, hash, null, player);
+}
+
+function open_deck_builder(name, hash, inventory, player) {
+    var url = (inventory ? "DeckUpdater.html" : "DeckBuilder.html");
+    var parameters = [];
     if (hash) {
         parameters.push("hash=" + hash);
     }
     if (inventory) {
         parameters.push("inventory=" + inventory);
     }
+
+    if (!name) {
+        if (player) {
+            name = (player == 'player' ? 'Player Deck' : 'Enemy Deck');
+        }
+    }
+    if (name) {
+        parameters.push("name=" + name);
+    }
     if (parameters.length > 0) {
         url += '?' + parameters.join('&');
     }
+
+    var deckHashField = (player ? document.getElementById(player == 'player' ? 'deck' : 'deck2') : null);
+    var baseRequest = (typeof DeckRetriever !== 'undefined' ? DeckRetriever.baseRequest : null);
 
     var width = Math.min(screen.width, 1000);
     var height = Math.min(screen.height, 700);
@@ -675,15 +687,15 @@ function open_deck_builder(deck, hash, inventory) {
 
     var windowFeatures = 'location=0,menubar=0,resizable=0,scrollbars=0,status=0,width=' + width + ',height=' + height + ',top=' + top + ',left=' + left;
     var win = window.open(url, '', windowFeatures);
-
-    if (DeckRetriever) {
-        win.onload = (function (inner) {
-            return function () {
-                $.extend(win.DeckRetriever.baseRequest, inner);
-            }
-        }(DeckRetriever.baseRequest));
-    }
     win.moveTo(left, top);
+    // Push values to window once it has loaded
+    win.onload = (function (name, deckHashField, baseRequest) {
+        return function () {
+            if (name) this.setDeckName(name);
+            if (deckHashField) this.simulatorDeckHashField = deckHashField;
+            if (inventory) $.extend(this.DeckRetriever.baseRequest, baseRequest);
+        }
+    })(name, deckHashField, baseRequest);
 }
 
 function display_generated_link() {
