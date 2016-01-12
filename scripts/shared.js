@@ -1054,6 +1054,8 @@ function load_deck_mission(id) {
         if (DoNotFuse.indexOf(current_card) == -1) {
             if (current_card.length > 4) {
                 current_card[0] = '2';
+            } else {
+                current_card = '2' + current_card;
             }
         }
         unit.id = current_card;
