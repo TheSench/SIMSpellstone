@@ -84,6 +84,33 @@
         }, 1);
     }
 
+    function upgradeCard(index) {
+        var params = {
+            unit_index: index,
+        }
+
+        DisplayLoadingSplash(); 
+        setTimeout(function () {
+            sendRequest('upgradeUnit', params, function (response) {
+                HideLoadingSplash();
+            });
+        }, 1);
+    }
+
+    function fuseCards(fusion, index1, index2) {
+        var params = {
+            fusion_id: fusion,
+            components: [index1, index2]
+        }
+
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('startFusion', params, function (response) {
+                HideLoadingSplash();
+            });
+        }, 1);
+    }
+
     function getFullUserData() {
         clearDeckSpace();
         
