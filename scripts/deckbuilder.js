@@ -137,7 +137,6 @@ var addUnitLevels = function (id, maxlevel) {
 
 var i = 0;
 var hash_changed = function (hash) {
-    if (i == 0) throw "first time error";
     if (hash) {
         document.getElementById("hash").value = hash;
         if (typeof simulatorDeckHashField !== 'undefined') simulatorDeckHashField.value = hash;
