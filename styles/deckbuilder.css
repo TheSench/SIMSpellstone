@@ -1,4 +1,20 @@
-﻿.selected {
+﻿h1,
+.collapser {
+    background-color: lightgray;
+}
+
+    .collapser img {
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    .collapser h1 {
+        vertical-align: middle;
+        display: inline-block;
+        margin: 0px;
+    }
+
+.selected {
     background: grey;
 }
 
@@ -53,11 +69,23 @@ input[type="button"].attack-filter {
     background-size: cover;
 }
 
-#filters fieldset {
-    display: inline;
-    padding: 2px;
-    margin: 0;
+#filters {
+    transition: max-height 0.25s ease-in;
+    max-height: 300px;
+    overflow: hidden;
 }
+
+    #filters.collapsed {
+        overflow: hidden;
+        max-height: 0px;
+    transition: max-height 0.15s ease-out;
+    }
+
+    #filters fieldset {
+        display: inline;
+        padding: 2px;
+        margin: 0;
+    }
 
 #dialog-form {
     padding: 0;

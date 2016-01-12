@@ -26,124 +26,129 @@
 <body onload="initDeckBuilder()">
 
     <h1 id="version_label">Deck Builder</h1>
+    <div><b>Deck Hash:</b></div><input id="hash" type="text" value="" size="100" onchange="hash_changed();"><br>
     <br>
     <span id="deck"></span>
-    <div><b>Deck Hash:</b></div><input id="hash" type="text" value="" size="100" onchange="hash_changed();"><br>
-    <div>&nbsp;</div><font color="#666"><strong>Hash example:</strong> EAIgtjRUlRUfRUfRZSRZSRZS</font><br>
+    <br />
     <input id="resetDeck" type="button" value="Reset" onclick="hash_changed('GDK')" />
     <br/>
     <hr />
-    <h1>Filters:</h1>
-    <div id="filters">
-        <fieldset>
-            <span>Card Type:</span>
-            <input type="button" value="Commander" onclick="filterType(this, '1')" />
-            <input type="button" value="Unit" onclick="filterType(this, '2')" />
-        </fieldset>
-        <fieldset>
-            <span>Fusion:</span>
-            <input type="image" name="skill" src="res/cardAssets/Singlefuse.png" onclick="filterFusion(this, '')" />
-            <input type="image" name="skill" src="res/cardAssets/Dualfuse.png" onclick="filterFusion(this, '1')" />
-            <input type="image" name="skill" src="res/cardAssets/Quadfuse.png" onclick="filterFusion(this, '2')" />
-        </fieldset>
-        <fieldset>
-            <span>Set:</span>
-            <input type="image" name="skill" title="Basic Set" src="res/cardAssets/Basic.png" onclick="filterSet(this, '1000')" />
-            <input type="image" name="skill" title="Reward Set" src="res/cardAssets/Reward.png" onclick="filterSet(this, '2000')" />
-            <input type="image" name="skill" title="Premium Set" src="res/cardAssets/Premium.png" onclick="filterSet(this, '3000')" />
-            <input type="image" name="skill" title="Chance Boxes" src="res/cardAssets/BoxOnly.png" onclick="filterSet(this, '4000')" />
-            <input type="image" name="skill" title="Story Elements" src="res/cardAssets/StoryElements.png" onclick="filterSet(this, '9999')" />
-        </fieldset>
-        <fieldset>
-            <span>Skills:</span>
-            <input type="image" id="armored" name="skill" title="Armor" src="res/skills/Armor.png" onclick="filterSkill(this, 'armored')" oncontextmenu="return contextTest('armored')" />
-            <input type="image" id="protect" name="skill" title="Barrier" src="res/skills/Barrier.png" onclick="filterSkill(this, 'protect')" oncontextmenu="return contextTest('protect')" />
-            <input type="image" id="berserk" name="skill" title="Berserk" src="res/skills/Berserk.png" onclick="filterSkill(this, 'berserk')" oncontextmenu="return contextTest('berserk')" />
-            <input type="image" id="strike" name="skill" title="Bolt" src="res/skills/Bolt.png" onclick="filterSkill(this, 'strike')" oncontextmenu="return contextTest('strike')" />
-            <input type="image" id="flurry" name="skill" title="Dualstrike" src="res/skills/Dualstrike.png" onclick="filterSkill(this, 'flurry')" oncontextmenu="return contextTest('flurry')" />
-            <input type="image" id="rally" name="skill" title="Empower" src="res/skills/Empower.png" onclick="filterSkill(this, 'rally')" oncontextmenu="return contextTest('rally')" />
-            <input type="image" id="enhance" name="skill" title="Enhance" src="res/skills/Enhance.png" onclick="filterSkill(this, 'enhance')" oncontextmenu="return contextTest('enhance')" />
-            <input type="image" id="fervor" name="skill" title="Fervor" src="res/skills/Fervor.png" onclick="filterSkill(this, 'fervor')" oncontextmenu="return contextTest('fervor')" />
-            <input type="image" id="jam" name="skill" title="Freeze" src="res/skills/Freeze.png" onclick="filterSkill(this, 'jam')" oncontextmenu="return contextTest('jam')" />
-            <input type="image" id="frost" name="skill" title="Frostbreath" src="res/skills/Frost.png" onclick="filterSkill(this, 'frost')" oncontextmenu="return contextTest('frost')" />
-            <input type="image" id="heal" name="skill" title="Heal" src="res/skills/Heal.png" onclick="filterSkill(this, 'heal')" oncontextmenu="return contextTest('heal')" />
-            <input type="image" id="enfeeble" name="skill" title="Hex" src="res/skills/Hex.png" onclick="filterSkill(this, 'enfeeble')" oncontextmenu="return contextTest('enfeeble')" />
-            <input type="image" id="evade" name="skill" title="Invisibile" src="res/skills/Invisibility.png" onclick="filterSkill(this, 'evade')" oncontextmenu="return contextTest('evade')" />
-            <input type="image" id="pierce" name="skill" title="Pierce" src="res/skills/Pierce.png" onclick="filterSkill(this, 'pierce')" oncontextmenu="return contextTest('pierce')" />
-            <input type="image" id="poison" name="skill" title="Poison" src="res/skills/Poison.png" onclick="filterSkill(this, 'poison')" oncontextmenu="return contextTest('poison')" />
-            <input type="image" id="burn" name="skill" title="Scorch" src="res/skills/Scorch.png" onclick="filterSkill(this, 'burn')" oncontextmenu="return contextTest('burn')" />
-            <input type="image" id="leech" name="skill" title="Siphon" src="res/skills/Siphon.png" onclick="filterSkill(this, 'leech')" oncontextmenu="return contextTest('leech')" />
-            <input type="image" id="counter" name="skill" title="Vengeance" src="res/skills/Vengeance.png" onclick="filterSkill(this, 'counter')" oncontextmenu="return contextTest('counter')" />
-            <input type="image" id="weaken" name="skill" title="Weaken" src="res/skills/Weaken.png" onclick="filterSkill(this, 'weaken')" oncontextmenu="return contextTest('weaken')" />
-        </fieldset>
-        <fieldset>
-            <span>Faction:</span>
-            <input type="image" name="faction" title="Aether" src="res/factions/Aether.png" onclick="filterFaction(this, 'Aether')" />
-            <input type="image" name="faction" title="Chaos" src="res/factions/Chaos.png" onclick="filterFaction(this, 'Chaos')" />
-            <input type="image" name="faction" title="Wyld" src="res/factions/Wyld.png" onclick="filterFaction(this, 'Wyld')" />
-            <input type="image" name="faction" title="Void" src="res/factions/Void.png" onclick="filterFaction(this, 'Void')" />
-            <input type="image" name="faction" title="Factionless" src="res/factions/Factionless.png" onclick="filterFaction(this, 'Factionless')" />
-        </fieldset>
-        <fieldset>
-            <span>Subfaction:</span>
-            <input type="image" name="subfaction" title="Angel" src="res/factions/Angel.png" onclick="filterSubfaction(this, 'Angel')" />
-            <input type="image" name="subfaction" title="Dragon" src="res/factions/Dragon.png" onclick="filterSubfaction(this, 'Dragon')" />
-            <input type="image" name="subfaction" title="Elemental" src="res/factions/Elemental.png" onclick="filterSubfaction(this, 'Elemental')" />
-            <input type="image" name="subfaction" title="Frog" src="res/factions/Frog.png" onclick="filterSubfaction(this, 'Frog')" />
-            <input type="image" name="subfaction" title="Undead" src="res/factions/Undead.png" onclick="filterSubfaction(this, 'Undead')" />
-        </fieldset>
-        <fieldset>
-            <span>Rarity:</span>
-            <input type="image" name="rarity" title="Common" src="res/cardAssets/Level_1_3.png" onclick="filterRarity(this, 1)" />
-            <input type="image" name="rarity" title="Rare" src="res/cardAssets/Level_2_4.png" onclick="filterRarity(this, 2)" />
-            <input type="image" name="rarity" title="Epic" src="res/cardAssets/Level_3_5.png" onclick="filterRarity(this, 3)" />
-            <input type="image" name="rarity" title="Legendary" src="res/cardAssets/Level_4_6.png" onclick="filterRarity(this, 4)" />
-            <input type="image" name="rarity" title="Mythic" src="res/cardAssets/Level_5_7.png" onclick="filterRarity(this, 5)" />
-        </fieldset>
-        <fieldset>
-            <span>Attack:</span>
-            <input class="attack-filter" type="button" value="0" onclick="filterAttack(this, 0, 0)" />
-            <input class="attack-filter" type="button" value="1-2" onclick="filterAttack(this, 1, 2)" />
-            <input class="attack-filter" type="button" value="3-4" onclick="filterAttack(this, 3, 4)" />
-            <input class="attack-filter" type="button" value="5-6" onclick="filterAttack(this, 5, 6)" />
-            <input class="attack-filter" type="button" value="7-8" onclick="filterAttack(this, 7, 8)" />
-            <input class="attack-filter" type="button" value="9-10" onclick="filterAttack(this, 9, 10)" />
-            <input class="attack-filter" type="button" value="11+" onclick="filterAttack(this, 11, -1)" />
-        </fieldset>
-        <fieldset>
-            <span>Health:</span>
-            <input class="health-filter" type="button" value="1-5" onclick="filterHealth(this, 1, 5)" />
-            <input class="health-filter" type="button" value="6-10" onclick="filterHealth(this, 6, 10)" />
-            <input class="health-filter" type="button" value="11-15" onclick="filterHealth(this, 11, 15)" />
-            <input class="health-filter" type="button" value="16-20" onclick="filterHealth(this, 16, 20)" />
-            <input class="health-filter" type="button" value="21-25" onclick="filterHealth(this, 21, 25)" />
-            <input class="health-filter" type="button" value="26-30" onclick="filterHealth(this, 26, 30)" />
-            <input class="health-filter" type="button" value="31+" onclick="filterHealth(this, 31, -1)" />
-        </fieldset>
-        <fieldset>
-            <span>Delay:</span>
-            <input class="delay-filter" type="button" value="0" onclick="filterDelay(this, 0)" />
-            <input class="delay-filter" type="button" value="1" onclick="filterDelay(this, 1)" />
-            <input class="delay-filter" type="button" value="2" onclick="filterDelay(this, 2)" />
-            <input class="delay-filter" type="button" value="3" onclick="filterDelay(this, 3)" />
-            <input class="delay-filter" type="button" value="4" onclick="filterDelay(this, 4)" />
-        </fieldset>
-        <div><strong>Name Filter:</strong></div><input id="nameFilter" type="text" value="" size="100" onkeyup="filterName(this);"><br>
-
-        <br />
-        <input type="button" value="Clear All" onclick="clearFilters()" />
-        <br />
-        <label style="float:left; margin: 5px 0px;">
-            <input type="checkbox" onclick="toggleUpgrades(this);" />
-            All Upgrade Levels (may degrade performance)
-        </label>
-        <br />
-        <label style="float:left;">
-            <input type="checkbox" onclick="toggleSkillDetails(this);" />
-            Compact Skills
-        </label>
+    <div class="collapser">
+        <img id="collapseFilters" src="res/misc/Minus.png" onclick="toggleFilterDisplay(this);" />
+        <h1>Filters:</h1>
     </div>
-    <br>
+    <div id="filters">
+        <div>
+            <fieldset>
+                <span>Card Type:</span>
+                <input type="button" value="Commander" onclick="filterType(this, '1')" />
+                <input type="button" value="Unit" onclick="filterType(this, '2')" />
+            </fieldset>
+            <fieldset>
+                <span>Fusion:</span>
+                <input type="image" name="skill" src="res/cardAssets/Singlefuse.png" onclick="filterFusion(this, '')" />
+                <input type="image" name="skill" src="res/cardAssets/Dualfuse.png" onclick="filterFusion(this, '1')" />
+                <input type="image" name="skill" src="res/cardAssets/Quadfuse.png" onclick="filterFusion(this, '2')" />
+            </fieldset>
+            <fieldset>
+                <span>Set:</span>
+                <input type="image" name="skill" title="Basic Set" src="res/cardAssets/Basic.png" onclick="filterSet(this, '1000')" />
+                <input type="image" name="skill" title="Reward Set" src="res/cardAssets/Reward.png" onclick="filterSet(this, '2000')" />
+                <input type="image" name="skill" title="Premium Set" src="res/cardAssets/Premium.png" onclick="filterSet(this, '3000')" />
+                <input type="image" name="skill" title="Chance Boxes" src="res/cardAssets/BoxOnly.png" onclick="filterSet(this, '4000')" />
+                <input type="image" name="skill" title="Story Elements" src="res/cardAssets/StoryElements.png" onclick="filterSet(this, '9999')" />
+            </fieldset>
+            <fieldset>
+                <span>Skills:</span>
+                <input type="image" id="armored" name="skill" title="Armor" src="res/skills/Armor.png" onclick="filterSkill(this, 'armored')" oncontextmenu="return contextTest('armored')" />
+                <input type="image" id="protect" name="skill" title="Barrier" src="res/skills/Barrier.png" onclick="filterSkill(this, 'protect')" oncontextmenu="return contextTest('protect')" />
+                <input type="image" id="berserk" name="skill" title="Berserk" src="res/skills/Berserk.png" onclick="filterSkill(this, 'berserk')" oncontextmenu="return contextTest('berserk')" />
+                <input type="image" id="strike" name="skill" title="Bolt" src="res/skills/Bolt.png" onclick="filterSkill(this, 'strike')" oncontextmenu="return contextTest('strike')" />
+                <input type="image" id="flurry" name="skill" title="Dualstrike" src="res/skills/Dualstrike.png" onclick="filterSkill(this, 'flurry')" oncontextmenu="return contextTest('flurry')" />
+                <input type="image" id="rally" name="skill" title="Empower" src="res/skills/Empower.png" onclick="filterSkill(this, 'rally')" oncontextmenu="return contextTest('rally')" />
+                <input type="image" id="enhance" name="skill" title="Enhance" src="res/skills/Enhance.png" onclick="filterSkill(this, 'enhance')" oncontextmenu="return contextTest('enhance')" />
+                <input type="image" id="fervor" name="skill" title="Fervor" src="res/skills/Fervor.png" onclick="filterSkill(this, 'fervor')" oncontextmenu="return contextTest('fervor')" />
+                <input type="image" id="jam" name="skill" title="Freeze" src="res/skills/Freeze.png" onclick="filterSkill(this, 'jam')" oncontextmenu="return contextTest('jam')" />
+                <input type="image" id="frost" name="skill" title="Frostbreath" src="res/skills/Frost.png" onclick="filterSkill(this, 'frost')" oncontextmenu="return contextTest('frost')" />
+                <input type="image" id="heal" name="skill" title="Heal" src="res/skills/Heal.png" onclick="filterSkill(this, 'heal')" oncontextmenu="return contextTest('heal')" />
+                <input type="image" id="enfeeble" name="skill" title="Hex" src="res/skills/Hex.png" onclick="filterSkill(this, 'enfeeble')" oncontextmenu="return contextTest('enfeeble')" />
+                <input type="image" id="evade" name="skill" title="Invisibile" src="res/skills/Invisibility.png" onclick="filterSkill(this, 'evade')" oncontextmenu="return contextTest('evade')" />
+                <input type="image" id="pierce" name="skill" title="Pierce" src="res/skills/Pierce.png" onclick="filterSkill(this, 'pierce')" oncontextmenu="return contextTest('pierce')" />
+                <input type="image" id="poison" name="skill" title="Poison" src="res/skills/Poison.png" onclick="filterSkill(this, 'poison')" oncontextmenu="return contextTest('poison')" />
+                <input type="image" id="burn" name="skill" title="Scorch" src="res/skills/Scorch.png" onclick="filterSkill(this, 'burn')" oncontextmenu="return contextTest('burn')" />
+                <input type="image" id="leech" name="skill" title="Siphon" src="res/skills/Siphon.png" onclick="filterSkill(this, 'leech')" oncontextmenu="return contextTest('leech')" />
+                <input type="image" id="counter" name="skill" title="Vengeance" src="res/skills/Vengeance.png" onclick="filterSkill(this, 'counter')" oncontextmenu="return contextTest('counter')" />
+                <input type="image" id="weaken" name="skill" title="Weaken" src="res/skills/Weaken.png" onclick="filterSkill(this, 'weaken')" oncontextmenu="return contextTest('weaken')" />
+            </fieldset>
+            <fieldset>
+                <span>Faction:</span>
+                <input type="image" name="faction" title="Aether" src="res/factions/Aether.png" onclick="filterFaction(this, 'Aether')" />
+                <input type="image" name="faction" title="Chaos" src="res/factions/Chaos.png" onclick="filterFaction(this, 'Chaos')" />
+                <input type="image" name="faction" title="Wyld" src="res/factions/Wyld.png" onclick="filterFaction(this, 'Wyld')" />
+                <input type="image" name="faction" title="Void" src="res/factions/Void.png" onclick="filterFaction(this, 'Void')" />
+                <input type="image" name="faction" title="Factionless" src="res/factions/Factionless.png" onclick="filterFaction(this, 'Factionless')" />
+            </fieldset>
+            <fieldset>
+                <span>Subfaction:</span>
+                <input type="image" name="subfaction" title="Angel" src="res/factions/Angel.png" onclick="filterSubfaction(this, 'Angel')" />
+                <input type="image" name="subfaction" title="Dragon" src="res/factions/Dragon.png" onclick="filterSubfaction(this, 'Dragon')" />
+                <input type="image" name="subfaction" title="Elemental" src="res/factions/Elemental.png" onclick="filterSubfaction(this, 'Elemental')" />
+                <input type="image" name="subfaction" title="Frog" src="res/factions/Frog.png" onclick="filterSubfaction(this, 'Frog')" />
+                <input type="image" name="subfaction" title="Undead" src="res/factions/Undead.png" onclick="filterSubfaction(this, 'Undead')" />
+            </fieldset>
+            <fieldset>
+                <span>Rarity:</span>
+                <input type="image" name="rarity" title="Common" src="res/cardAssets/Level_1_3.png" onclick="filterRarity(this, 1)" />
+                <input type="image" name="rarity" title="Rare" src="res/cardAssets/Level_2_4.png" onclick="filterRarity(this, 2)" />
+                <input type="image" name="rarity" title="Epic" src="res/cardAssets/Level_3_5.png" onclick="filterRarity(this, 3)" />
+                <input type="image" name="rarity" title="Legendary" src="res/cardAssets/Level_4_6.png" onclick="filterRarity(this, 4)" />
+                <input type="image" name="rarity" title="Mythic" src="res/cardAssets/Level_5_7.png" onclick="filterRarity(this, 5)" />
+            </fieldset>
+            <fieldset>
+                <span>Attack:</span>
+                <input class="attack-filter" type="button" value="0" onclick="filterAttack(this, 0, 0)" />
+                <input class="attack-filter" type="button" value="1-2" onclick="filterAttack(this, 1, 2)" />
+                <input class="attack-filter" type="button" value="3-4" onclick="filterAttack(this, 3, 4)" />
+                <input class="attack-filter" type="button" value="5-6" onclick="filterAttack(this, 5, 6)" />
+                <input class="attack-filter" type="button" value="7-8" onclick="filterAttack(this, 7, 8)" />
+                <input class="attack-filter" type="button" value="9-10" onclick="filterAttack(this, 9, 10)" />
+                <input class="attack-filter" type="button" value="11+" onclick="filterAttack(this, 11, -1)" />
+            </fieldset>
+            <fieldset>
+                <span>Health:</span>
+                <input class="health-filter" type="button" value="1-5" onclick="filterHealth(this, 1, 5)" />
+                <input class="health-filter" type="button" value="6-10" onclick="filterHealth(this, 6, 10)" />
+                <input class="health-filter" type="button" value="11-15" onclick="filterHealth(this, 11, 15)" />
+                <input class="health-filter" type="button" value="16-20" onclick="filterHealth(this, 16, 20)" />
+                <input class="health-filter" type="button" value="21-25" onclick="filterHealth(this, 21, 25)" />
+                <input class="health-filter" type="button" value="26-30" onclick="filterHealth(this, 26, 30)" />
+                <input class="health-filter" type="button" value="31+" onclick="filterHealth(this, 31, -1)" />
+            </fieldset>
+            <fieldset>
+                <span>Delay:</span>
+                <input class="delay-filter" type="button" value="0" onclick="filterDelay(this, 0)" />
+                <input class="delay-filter" type="button" value="1" onclick="filterDelay(this, 1)" />
+                <input class="delay-filter" type="button" value="2" onclick="filterDelay(this, 2)" />
+                <input class="delay-filter" type="button" value="3" onclick="filterDelay(this, 3)" />
+                <input class="delay-filter" type="button" value="4" onclick="filterDelay(this, 4)" />
+            </fieldset>
+            <div><strong>Name Filter:</strong></div><input id="nameFilter" type="text" value="" size="100" onkeyup="filterName(this);"><br>
+
+            <br />
+            <input type="button" value="Clear All" onclick="clearFilters()" />
+            <br />
+            <label style="float:left; margin: 5px 0px;">
+                <input type="checkbox" onclick="toggleUpgrades(this);" />
+                All Upgrade Levels (may degrade performance)
+            </label>
+            <br />
+            <label style="float:left;">
+                <input type="checkbox" onclick="toggleSkillDetails(this);" />
+                Compact Skills
+            </label>
+            <br>
+        </div>
+    </div>
     <hr />
     <span id="cardSpace"></span>
 

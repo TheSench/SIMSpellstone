@@ -816,6 +816,18 @@ var toggleUpgrades = function (checkbox) {
     }, 1);
 }
 
+
+var toggleFilterDisplay = function (img) {
+    var filters = document.getElementById("filters");
+    if (filters.classList.contains("collapsed")) {
+        filters.classList.remove("collapsed");
+        img.src = "res/misc/Minus.png";
+    } else {
+        filters.classList.add("collapsed");
+        img.src = "res/misc/Plus.png";
+    }
+}
+
 var makeUnitKey = function (unit) {
     return unit.id + "_" + unit.level;
 }
