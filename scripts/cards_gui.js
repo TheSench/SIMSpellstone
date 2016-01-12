@@ -86,7 +86,9 @@ function draw_field(field) {
     var units = field.assaults;
     if (units) for (var i = 0, len = units.length; i < len; i++) {
         var unit = units[i];
-        cards.appendChild(create_card_html(unit, false));
+        var htmlCard = create_card_html(unit, false);
+        if (unit.timer) htmlCard.classList.add("inactive");
+        cards.appendChild(htmlCard);
     }
     return cards;
 }
