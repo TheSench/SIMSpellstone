@@ -653,7 +653,7 @@ function load_deck_builder(player) {
 }
 
 function open_deck_builder(deck, hash, inventory) {
-    var url = "DeckBuilder.html";
+    var url = (inventory ? "DeckUpdater.html" : "DeckBuilder.html");
     var parameters = [];
     if (deck) {
         hash = hash_encode(deck);
@@ -676,6 +676,13 @@ function open_deck_builder(deck, hash, inventory) {
     var windowFeatures = 'location=0,menubar=0,resizable=0,scrollbars=0,status=0,width=' + width + ',height=' + height + ',top=' + top + ',left=' + left;
     var win = window.open(url, '', windowFeatures);
 
+    if (DeckRetriever) {
+        win.onload = (function (inner) {
+            return function () {
+                $.extend(win.DeckRetriever.baseRequest, inner);
+            }
+        }(DeckRetriever.baseRequest));
+    }
     win.moveTo(left, top);
 }
 
@@ -746,6 +753,14 @@ function toggleRadio(radio) {
                 win_debug = true;
                 break;
         }
+    }
+}
+
+function supports_html5_storage() {
+    try {
+        return 'localStorage' in window && window['localStorage'] !== null;
+    } catch (e) {
+        return false;
     }
 }
 

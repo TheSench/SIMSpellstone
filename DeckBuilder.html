@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="styles/styles.css" media="screen">
     <link rel="stylesheet" type="text/css" href="styles/card.css">
     <link rel="stylesheet" type="text/css" href="styles/deckbuilder.css">
+    <link rel="stylesheet" type="text/css" href="styles/loading.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
@@ -18,7 +19,8 @@
     <script id="gui_script" type="text/javascript" src="scripts/cards_gui.js"></script>
     <script id="cards_script" type="text/javascript" src="scripts/gui_script.js"></script>
     <script id="deckbuilder" type="text/javascript" src="scripts/deckbuilder.js"></script>
-    <script id="deckbuilder" type="text/javascript" src="scripts/spoilers.js"></script>
+    <script id="spoilers" type="text/javascript" src="scripts/spoilers.js"></script>
+    <script id="spoilers" type="text/javascript" src="scripts/spoilers.js"></script>
 
 </head>
 <body onload="initDeckBuilder()">
@@ -28,7 +30,7 @@
     <span id="deck"></span>
     <div><b>Deck Hash:</b></div><input id="hash" type="text" value="" size="100" onchange="hash_changed();"><br>
     <div>&nbsp;</div><font color="#666"><strong>Hash example:</strong> EAIgtjRUlRUfRUfRZSRZSRZS</font><br>
-    <input type="button" value="Reset" onclick="hash_changed('GDK')" />
+    <input id="resetDeck" type="button" value="Reset" onclick="hash_changed('GDK')" />
     <br/>
     <hr />
     <h1>Filters:</h1>
