@@ -64,7 +64,7 @@
 
     function retrieveMyDeck() {
         clearDeckSpace();
-        getUserDeck(baseRequest.user_id, 'Deck', true);
+        getUserDeck(baseRequest.user_id, true);
     }
 
     function updateMyDeck(newCommander, newDeck) {
@@ -123,6 +123,91 @@
         }, 1);
     }
 
+    function startCampaignBattle(mission_id) {
+        var params = {
+            campaign: mission_id
+        }
+
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('startCampaign', params, function (response) {
+                beginBattle(response);
+                HideLoadingSplash();
+            });
+        }, 1);
+    }
+
+    function startBountyBattle(target_user_id) {
+        var params = {
+            rival_id: target_user_id
+        }
+
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('startHuntingBattle', params, function (response) {
+                beginBattle(response);
+                HideLoadingSplash();
+            });
+        }, 1);
+    }
+
+    function startGuildWarBattle() {
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('fightGuildWar', null, function (response) {
+                beginBattle(response);
+                HideLoadingSplash();
+            });
+        }, 1);
+    }
+
+    function fightGuildMember(target_user_id) {
+        var params = {
+            target_user_id: target_user_id
+        }
+
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('startHuntingBattle', params, function (response) {
+                beginBattle(response);
+                HideLoadingSplash();
+            });
+        }, 1);
+    }
+
+    function playCard(card_index) {
+        var params = {
+            battle_id: 0,
+            skip: 0,
+            card_uid: card_index,
+            host_id: baseRequest.user_id
+        }
+
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('playCard', params, function (response) {
+                continueBattle(response);
+                HideLoadingSplash();
+            });
+        }, 1);
+    }
+
+    function forfeitBattle() {
+        var params = {
+            battle_id: 0,
+            skip: 0,
+            hist_id: baseRequest.user_id
+        }
+
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('forfeitBattle', params, function (response) {
+                continueBattle(response);
+                HideLoadingSplash();
+            });
+        }, 1);
+    }
+
     function getFactionMembers(draw, callback) {
         
         DisplayLoadingSplash();
@@ -131,7 +216,7 @@
                 var members = response.faction.members;
                 publicInfo.factionDecks = {};
                 for (var key in members) {
-                    getUserDeck(key, members[key].name, draw);
+                    getUserDeck(key, draw);
                 }
                 HideLoadingSplash();
                 callback();
@@ -139,14 +224,14 @@
         }, 1);
     }
 
-    function getUserDeck(target_user_id, name, draw) {
+    function getUserDeck(target_user_id, draw) {
         var params = {
             target_user_id: target_user_id
         }
 
         sendRequest('getProfileData',  params, function (response) {
             if (draw) {
-                onGetUserDeck(response, name);
+                onGetUserDeck(response);
             } else {
                 var deck_info = response.player_info.deck;
                 var deck = getDeckFromDeckInfo(deck_info);
@@ -155,9 +240,9 @@
         });
     }
 
-    function onGetUserDeck(data, name) {
+    function onGetUserDeck(data) {
         var deck_info = data.player_info.deck;
-        drawDeck(deck_info, name);
+        drawDeck(deck_info, data.player_info.name);
     }
 
     function getDeckFromDeckInfo(deck_info) {
@@ -179,7 +264,7 @@
         var deck = getDeckFromDeckInfo(deck_info);
         var div = doDrawDeck(deck, name);
         var hash = hash_encode(deck);
-        div.appendChild($('<div><label style="float:left;" class="button" onclick="open_deck_builder(null, \'' + hash + '\');"><b>Deck Builder</b></label>')[0]);
+        div.appendChild($('<div><label style="float:left;" class="button" onclick="open_deck_builder(\'' + name + '\', \'' + hash + '\');"><b>Deck Builder</b></label>')[0]);
         div.appendChild(
             $('<input>').attr('type', 'text').attr('value', hash).width(500)[0]
         );
@@ -202,9 +287,10 @@
     }
 
     function getInventory(data) {
+        var name = data.user_data.name;
         var cardSpace = document.getElementById("deck");
         var deck = getDeckFromDeckInfo(data.user_decks[1]);
-        var div = doDrawDeck(deck, "Deck");
+        var div = doDrawDeck(deck, name);
         cardSpace.appendChild(div);
         var hash = hash_encode(deck);
 
@@ -226,12 +312,13 @@
         });
         var inventory = hash_encode(deck);
 
+
         var nameDiv = createDiv("float-left", "Inventory");
         nameDiv.style.fontSize = "xx-large";
         nameDiv.style.fontWeight = "bold";
         var div = document.createElement("div");
-        div.appendChild($('<div><label style="float:left;" class="button" onclick="open_deck_builder(null, \'' + hash + '\');"><b>Deck Builder</b></label>')[0]);
-        div.appendChild($('<div><label style="float:left;" class="button" onclick="open_deck_builder(null, \'' + hash + '\', \'' + inventory + '\');"><b>Deck Builder (w/ Inventory)</b></label>')[0]);
+        div.appendChild($('<div><label style="float:left;" class="button" onclick="open_deck_builder(\'' + name + '\', \'' + hash + '\');"><b>Deck Builder</b></label>')[0]);
+        div.appendChild($('<div><label style="float:left;" class="button" onclick="open_deck_builder(\'' + name + '\', \'' + hash + '\', \'' + inventory + '\');"><b>Deck Builder (w/ Inventory)</b></label>')[0]);
         div.appendChild(document.createElement("br"));
         div.appendChild(
             $('<input>').attr('type', 'text').attr('value', hash).width(500)[0]
