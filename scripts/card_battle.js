@@ -197,8 +197,7 @@ function doSetup() {
     }
 
     // Output decks for first simulation
-    if (debug && (loss_debug || win_debug)) {
-    } else if (echo == '') {
+    if (echo == '') {
         debug_dump_decks();
     }
 }
@@ -221,8 +220,6 @@ function processSimResult() {
         run_sims_count++;
     }
 
-    if (debug && mass_debug && sims_left) echo += '<br><hr>NEW BATTLE BEGINS<hr><br>';
-
     // Increment wins/losses/games
     if (result == 'draw') {
         draws++;
@@ -235,40 +232,7 @@ function processSimResult() {
 
     // Increment total turn count
     total_turns += simulation_turns;
-
-    if (debug) {
-        if (loss_debug) {
-            if (result == 'draw') {
-                echo = 'Draw found. Displaying debug output... <br><br>' + echo;
-                echo += '<br><h1>DRAW</h1><br>';
-                sims_left = false;
-            } else if (result) {
-                if (!sims_left) {
-                    echo = 'No losses found. No debug output to display.<br><br>';
-                    sims_left = false;
-                } else {
-                    echo = '';
-                }
-            } else {
-                echo = 'Loss found. Displaying debug output... <br><br>' + echo;
-                echo += '<br><h1>LOSS</h1><br>';
-                sims_left = false;
-            }
-        } else if (win_debug) {
-            if (result && result != 'draw') {
-                echo = 'Win found. Displaying debug output... <br><br>' + echo;
-                echo += '<br><h1>WIN</h1><br>';
-                sims_left = false;
-            } else {
-                if (!sims_left) {
-                    echo = 'No wins found. No debug output to display.<br><br>';
-                    sims_left = false;
-                } else {
-                    echo = '';
-                }
-            }
-        }
-    }
+        
     return result;
 }
 

@@ -155,14 +155,14 @@ if (use_workers) {
         if (debug) {
             if (loss_debug && !found_loss) {
                 if (num_draws > 0) {
-                    echo = 'Draw found. Displaying debug output... <br><br>' + echo;
+                    echo = 'Draw found after ' + games + ' games. Displaying debug output... <br><br>' + echo;
                     echo += '<br><br>';
                     found_loss = true;
                     sims_left = false;
                     sims_to_process = 0;
                     stopsim(1);
                 } else if (num_losses > 0) {
-                    echo = 'Loss found. Displaying debug output... <br><br>' + echo;
+                    echo = 'Loss found after ' + games + ' games. Displaying debug output... <br><br>' + echo;
                     echo += '<br><br>';
                     found_loss = true;
                     sims_left = false;
@@ -170,7 +170,7 @@ if (use_workers) {
                     stopsim(1);
                 } else {
                     if (sims_left <= num_games) {
-                        echo = 'No losses found. No debug output to display.<br><br>';
+                        echo = 'No losses found after ' + games + ' games. No debug output to display.<br><br>';
                         sims_left = false;
                         sims_to_process = 0;
                     } else {
@@ -179,7 +179,7 @@ if (use_workers) {
                 }
             } else if (loss_debug && !found_loss) {
                 if (num_wins > 0) {
-                    echo = 'Win found. Displaying debug output... <br><br>' + echo;
+                    echo = 'Win found after ' + games + ' games. Displaying debug output... <br><br>' + echo;
                     echo += '<br><br>';
                     found_loss = true;
                     sims_left = false;
@@ -187,7 +187,7 @@ if (use_workers) {
                     stopsim(1);
                 } else {
                     if (sims_left <= num_games) {
-                        echo = 'No wins found. No debug output to display.<br><br>';
+                        echo = 'No wins found after ' + games + ' games. No debug output to display.<br><br>';
                         sims_left = false;
                         sims_to_process = 0;
                     } else {

@@ -313,29 +313,29 @@ if (!use_workers) {
         if (debug) {
             if (loss_debug) {
                 if (result == 'draw') {
-                    echo = 'Draw found. Displaying debug output... <br><br>' + echo;
+                    echo = 'Draw found after ' + games + ' games. Displaying debug output... <br><br>' + echo;
                     echo += '<br><h1>DRAW</h1><br>';
                     sims_left = false;
                 } else if (result) {
                     if (!sims_left) {
-                        echo = 'No losses found. No debug output to display.<br><br>';
+                        echo = 'No losses found after ' + games + ' games. No debug output to display.<br><br>';
                         sims_left = false;
                     } else {
                         echo = '';
                     }
                 } else {
-                    echo = 'Loss found. Displaying debug output... <br><br>' + echo;
+                    echo = 'Loss found after ' + games + ' games. Displaying debug output... <br><br>' + echo;
                     echo += '<br><h1>LOSS</h1><br>';
                     sims_left = false;
                 }
             } else if (win_debug) {
                 if (result && result != 'draw') {
-                    echo = 'Win found. Displaying debug output... <br><br>' + echo;
+                    echo = 'Win found after ' + games + ' games. Displaying debug output... <br><br>' + echo;
                     echo += '<br><h1>WIN</h1><br>';
                     sims_left = false;
                 } else {
                     if (!sims_left) {
-                        echo = 'No wins found. No debug output to display.<br><br>';
+                        echo = 'No wins found after ' + games + ' games. No debug output to display.<br><br>';
                         sims_left = false;
                     } else {
                         echo = '';
