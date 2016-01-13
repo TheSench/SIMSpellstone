@@ -2,7 +2,6 @@ if (!use_workers) {
 
     // Initialize simulation loop - runs once per simulation session
     var startsim = function (autostart) {
-        Math.seedrandom('hello.');
 
         if (_DEFINED('autolink') && !autostart) {
             window.location.href = generate_link(1, 1);
