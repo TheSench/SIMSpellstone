@@ -181,7 +181,7 @@ if (simulator_thread) {
                 var target = field_p_assaults[key];
                 if (target.isAlive()
                 && target.isInFaction(faction)) {
-                    targets.push(target);
+                    targets.push(key);
                 }
             }
 
@@ -194,7 +194,7 @@ if (simulator_thread) {
             }
 
             for (var key = 0, len = targets.length; key < len; key++) {
-                var target = targets[key];
+                var target = field_p_assaults[targets[key]];
 
                 target.protected += protect;
                 if (ice) {
@@ -479,7 +479,7 @@ if (simulator_thread) {
             for (; i <= end; i++) {
                 var target = field_x_assaults[i];
                 if (target && target.isAlive()) {
-                    targets.push(key);
+                    targets.push(i);
                 }
             }
 
