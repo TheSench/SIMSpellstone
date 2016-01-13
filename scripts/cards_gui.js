@@ -50,7 +50,7 @@ function draw_card_list(list, onclick) {
     for (var i = 0, len = list.length; i < len; i++) {
         var listEntry = list[i];
         var unit = get_card_by_id(listEntry);
-        var htmlCard = create_card_html(unit, true, onclick);
+        var htmlCard = create_card_html(unit, false, onclick);
         if (listEntry.index !== undefined) {
             attr = document.createAttribute("data-index");
             attr.value = listEntry.index;
@@ -82,11 +82,11 @@ function draw_cards(drawableHand, performTurns, turn) {
 function draw_field(field) {
     var cards = createDiv("float-left");
     var commander = field.commander;
-    cards.appendChild(create_card_html(commander, false));
+    cards.appendChild(create_card_html(commander, true));
     var units = field.assaults;
     if (units) for (var i = 0, len = units.length; i < len; i++) {
         var unit = units[i];
-        var htmlCard = create_card_html(unit, false);
+        var htmlCard = create_card_html(unit, true);
         if (unit.timer) htmlCard.classList.add("inactive");
         cards.appendChild(htmlCard);
     }
@@ -99,7 +99,7 @@ function draw_hand(hand, callback, state) {
     for (var i = 0, len = hand.length; i < len; i++) {
         var unit = hand[i];
         if (!unit) continue;
-        var htmlCard = create_card_html(unit, true);
+        var htmlCard = create_card_html(unit);
         if (i === 0) htmlCard.classList.add("left");
         else if (i === 2) htmlCard.classList.add("right");
         var cardidx = i;
@@ -115,7 +115,7 @@ function draw_hand(hand, callback, state) {
     return cards;
 }
 
-function create_card_html(card, inHand, onclick, state) {
+function create_card_html(card, onField, onclick, state) {
     var htmlCard = createDiv("card");
     var attr = document.createAttribute("data-id");
     attr.value = card.id;
@@ -136,38 +136,40 @@ function create_card_html(card, inHand, onclick, state) {
     var divName = createDiv("card-name", card.name);
     htmlCard.appendChild(divName);
     if (!card.isCommander()) {
-        if (inHand) {
-            var htmlAttack = createDiv("card-attack", card.attack.toString());
-        } else {
+        if (onField) {
             if (!card.isUnjammed()) htmlCard.classList.add("frozen");
             var htmlAttack = createDiv("card-attack", card.adjustedAttack().toString());
             if (card.adjustedAttack() > card.attack) htmlAttack.classList.add("increased");
             else if (card.adjustedAttack() < card.attack) htmlAttack.classList.add("decreased");
+        } else {
+            var htmlAttack = createDiv("card-attack", card.attack.toString());
         }
         htmlCard.appendChild(createImg("res/cardAssets/Attack.png", "attack"));
         htmlCard.appendChild(htmlAttack);
-        if (inHand) {
+        if (onField) {
+            if (card.timer) {
+                htmlCard.appendChild(createDiv("delay", card.timer));
+                htmlCard.appendChild(createImg("res/cardAssets/Timer.png", "timer"));
+            }
+        } else {
             htmlCard.appendChild(createDiv("delay", card.cost));
-            htmlCard.appendChild(createImg("res/cardAssets/Timer.png", "timer"));
-        } else if (card.timer) {
-            htmlCard.appendChild(createDiv("delay", card.timer));
             htmlCard.appendChild(createImg("res/cardAssets/Timer.png", "timer"));
         }
     }
-    if (inHand) {
-        var htmlHealth = createDiv("card-health", card.health.toString());
-    } else {
+    if (onField) {
         var htmlHealth = createDiv("card-health", card.health_left.toString());
         if (card.health_left < card.health) htmlHealth.classList.add("decreased");
+    } else {
+        var htmlHealth = createDiv("card-health", card.health.toString());
     }
     htmlCard.appendChild(createImg("res/cardAssets/Health.png", "health"));
     htmlCard.appendChild(htmlHealth);
     var divSkills = createDiv("card-skills");
     var skillsShort = createDiv("card-skills-short");
-    getPassiveSkills(divSkills, skillsShort, card, inHand);
-    getSkillsHtml(divSkills, skillsShort, card.skill, inHand);
-    if (card.empowerSkills) getSkillsHtml(divSkills, skillsShort, card.empowerSkills, inHand);
-    getTriggeredSkills(divSkills, skillsShort, card, inHand);
+    getPassiveSkills(divSkills, skillsShort, card, onField);
+    getSkillsHtml(divSkills, skillsShort, card.skill, onField);
+    if (card.empowerSkills) getSkillsHtml(divSkills, skillsShort, card.empowerSkills, onField);
+    getTriggeredSkills(divSkills, skillsShort, card, onField);
     var skillsDetail = divSkills.cloneNode(true);
     skillsDetail.className = "card-skills-detailed";
     if (skillsShort.hasChildNodes()) {
@@ -219,36 +221,37 @@ function create_card_html(card, inHand, onclick, state) {
     return htmlCard;
 }
 
-function getSkillsHtml(divSkills, skillsShort, skills, inHand) {
+function getSkillsHtml(divSkills, skillsShort, skills, onField) {
     for (var i in skills) {
         var skill = skills[i];
-        divSkills.appendChild(getSkillHtml(skill, inHand));
+        divSkills.appendChild(getSkillHtml(skill, onField));
         divSkills.appendChild(document.createElement('br'));
         skillsShort.appendChild(getSkillIcon(skill.id));
     }
 }
 
-function getPassiveSkills(divSkills, skillsShort, card, inHand)
+function getPassiveSkills(divSkills, skillsShort, card, onField)
 {
-    getNonActivatedSkill(divSkills, skillsShort, inHand, card, "evade");
-    getNonActivatedSkill(divSkills, skillsShort, inHand, card, "armored");
-    getNonActivatedSkill(divSkills, skillsShort, inHand, card, "counter");
+    getNonActivatedSkill(divSkills, skillsShort, onField, card, "evade");
+    getNonActivatedSkill(divSkills, skillsShort, onField, card, "armored");
+    getNonActivatedSkill(divSkills, skillsShort, onField, card, "counter");
 }
 
-function getTriggeredSkills(divSkills, skillsShort, card, inHand) {
-    getNonActivatedSkill(divSkills, skillsShort, inHand, card, "pierce");
-    getNonActivatedSkill(divSkills, skillsShort, inHand, card, "burn");
-    getNonActivatedSkill(divSkills, skillsShort, inHand, card, "poison");
-    getNonActivatedSkill(divSkills, skillsShort, inHand, card, "leech");
+function getTriggeredSkills(divSkills, skillsShort, card, onField) {
+    getNonActivatedSkill(divSkills, skillsShort, onField, card, "pierce");
+    getNonActivatedSkill(divSkills, skillsShort, onField, card, "burn");
+    getNonActivatedSkill(divSkills, skillsShort, onField, card, "poison");
+    getNonActivatedSkill(divSkills, skillsShort, onField, card, "leech");
+    getNonActivatedSkill(divSkills, skillsShort, onField, card, "berserk");
     var flurry = card.flurry;
     if (flurry) {
-        divSkills.appendChild(getSkillHtml(flurry, inHand));
+        divSkills.appendChild(getSkillHtml(flurry, onField));
         divSkills.appendChild(document.createElement('br'));
         skillsShort.appendChild(getSkillIcon(flurry.id));
     }
 }
 
-function getNonActivatedSkill(divSkills, skillsShort, inHand, card, skillName)
+function getNonActivatedSkill(divSkills, skillsShort, onField, card, skillName)
 {
     var value = card[skillName];
     if (value) {
@@ -256,13 +259,13 @@ function getNonActivatedSkill(divSkills, skillsShort, inHand, card, skillName)
             id: skillName,
             x: value
         };
-        divSkills.appendChild(getSkillHtml(skill, inHand));
+        divSkills.appendChild(getSkillHtml(skill, onField));
         divSkills.appendChild(document.createElement('br'));
         skillsShort.appendChild(getSkillIcon(skill.id));
     }
 }
 
-function getSkillHtml(skill, inHand) {
+function getSkillHtml(skill, onField) {
     var htmlSkill = document.createElement("span");
     htmlSkill.className = "skill";
     htmlSkill.appendChild(getSkillIcon(skill.id));
@@ -272,7 +275,7 @@ function getSkillHtml(skill, inHand) {
     if (skill.x) htmlSkill.innerHTML += (" " + skill.x + " ");
     if (skill.c) {
         htmlSkill.innerHTML += (skill.c);
-        if (!inHand) htmlSkill.innerHTML += " (" + (skill.coundown ? skill.coundown : "0") + ")";
+        if (onField) htmlSkill.innerHTML += " (" + (skill.countdown ? skill.countdown : "0") + ")";
     }
     return htmlSkill;
 }
@@ -352,7 +355,7 @@ function getStatuses(card) {
         buffs.push(status);
     }
     if (card.attack_berserk) {
-        var status = createStatus("berserk", card.attack_rally);
+        var status = createStatus("berserk", card.attack_berserk);
         buffs.push(status);
     }
     if (card.protected) {
