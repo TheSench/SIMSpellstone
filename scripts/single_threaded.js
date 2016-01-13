@@ -2,6 +2,7 @@ if (!use_workers) {
 
     // Initialize simulation loop - runs once per simulation session
     var startsim = function (autostart) {
+        Math.seedrandom('hello.');
 
         if (_DEFINED('autolink') && !autostart) {
             window.location.href = generate_link(1, 1);
@@ -53,6 +54,24 @@ if (!use_workers) {
         }
         surge = document.getElementById('surge').checked;
 
+        // Set up battleground effects, if any
+        battlegrounds = {
+            onCreate: [],
+            onTurn: [],
+        };
+        if (getbattleground) {
+            var selected = getbattleground.split(",");
+            for (i = 0; i < selected.length; i++) {
+                var id = selected[i];
+                var battleground = BATTLEGROUNDS[id];
+                if (battleground.effect.skill) {
+                    battlegrounds.onTurn.push(MakeBattleground(battleground.name, battleground.effect.skill));
+                } else if (battleground.effect.evolve_skill || battleground.effect.add_skill) {
+                    battlegrounds.onCreate.push(MakeSkillModifier(battleground.name, battleground.effect));
+                }
+            }
+        }
+
         // Hide interface
         document.getElementById('ui').style.display = 'none';
 
@@ -68,6 +87,7 @@ if (!use_workers) {
         } else {
             cache_player_deck = load_deck_from_cardlist();
         }
+        cache_player_deck_cards = getDeckCards(cache_player_deck);
 
         max_turns = 50;
 
@@ -81,6 +101,7 @@ if (!use_workers) {
         } else {
             cache_cpu_deck = load_deck_from_cardlist();
         }
+        cache_cpu_deck_cards = getDeckCards(cache_cpu_deck);
 
         wins = 0;
         losses = 0;
@@ -146,6 +167,7 @@ if (!use_workers) {
     }
 
     var run_sims = function () {
+
         if (debug && !mass_debug && !loss_debug && !win_debug) {
             run_sim();
             debug_end();
@@ -183,11 +205,11 @@ if (!use_workers) {
                 if (debug && (loss_debug || win_debug)) run_sims_batch = 1;
 
                 time_start_batch = new Date();
+                current_timeout = setTimeout(run_sims, 1);
                 for (var i = 0; i < run_sims_batch; i++) {  // Start a new batch
-                    setTimeout(run_sim, 0);
+                    run_sim();
                 }
             }
-            current_timeout = setTimeout(run_sims, 1);
 
         } else {
             run_sims_count = false;
@@ -241,36 +263,18 @@ if (!use_workers) {
         field['player']['assaults'] = [];
 
         // Load player deck
-        if (cache_player_deck) {
-            deck['player'] = copy_deck(cache_player_deck);
+        if (cache_player_deck_cards) {
+            deck['player'] = copy_deck(cache_player_deck_cards);
         }
 
         // Load enemy deck
-        if (cache_cpu_deck) {
-            deck['cpu'] = copy_deck(cache_cpu_deck);
+        if (cache_cpu_deck_cards) {
+            deck['cpu'] = copy_deck(cache_cpu_deck_cards);
         }
-
+        
         // Set up deck order priority reference
-        if (getordered && !getexactorder) deck['player']['ordered'] = copy_card_list(deck['player']['deck']);
-        if (getordered2 && !getexactorder2) deck['cpu']['ordered'] = copy_card_list(deck['cpu']['deck']);
-
-        // Set up battleground effects, if any
-        battlegrounds = {
-            onCreate: [],
-            onTurn: [],
-        };
-        if (getbattleground) {
-            var selected = getbattleground.split(",");
-            for (i = 0; i < selected.length; i++) {
-                var id = selected[i];
-                var battleground = BATTLEGROUNDS[id];
-                if (battleground.effect.skill) {
-                    battlegrounds.onTurn.push(MakeBattleground(battleground.name, battleground.effect.skill));
-                } else if (battleground.effect.evolve_skill || battleground.effect.add_skill) {
-                    battlegrounds.onCreate.push(MakeSkillModifier(battleground.name, battleground.effect));
-                }
-            }
-        }
+        if (getordered && !getexactorder) deck.player.ordered = copy_card_list(deck.player.deck);
+        if (getordered2 && !getexactorder2) deck.cpu.ordered = copy_card_list(deck.cpu.deck);
 
         // Output decks for first simulation
         if (debug && (loss_debug || win_debug)) {
@@ -315,28 +319,28 @@ if (!use_workers) {
                 if (result == 'draw') {
                     echo = 'Draw found after ' + games + ' games. Displaying debug output... <br><br>' + echo;
                     echo += '<br><h1>DRAW</h1><br>';
-                    sims_left = false;
+                    sims_left = 0;
                 } else if (result) {
                     if (!sims_left) {
                         echo = 'No losses found after ' + games + ' games. No debug output to display.<br><br>';
-                        sims_left = false;
+                        sims_left = 0;
                     } else {
                         echo = '';
                     }
                 } else {
                     echo = 'Loss found after ' + games + ' games. Displaying debug output... <br><br>' + echo;
                     echo += '<br><h1>LOSS</h1><br>';
-                    sims_left = false;
+                    sims_left = 0;
                 }
             } else if (win_debug) {
                 if (result && result != 'draw') {
                     echo = 'Win found after ' + games + ' games. Displaying debug output... <br><br>' + echo;
                     echo += '<br><h1>WIN</h1><br>';
-                    sims_left = false;
+                    sims_left = 0;
                 } else {
                     if (!sims_left) {
                         echo = 'No wins found after ' + games + ' games. No debug output to display.<br><br>';
-                        sims_left = false;
+                        sims_left = 0;
                     } else {
                         echo = '';
                     }

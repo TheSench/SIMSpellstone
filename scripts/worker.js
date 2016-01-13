@@ -86,6 +86,27 @@ function initializeSims(params) {
 	mass_debug = params['mass_debug'];
 	user_controlled = params['user_controlled'];
 	card_cache = {};    // clear card cache to avoid memory bloat when simulating different decks
+
+    // Set up battleground effects, if any
+	battlegrounds = {
+	    onCreate: [],
+	    onTurn: [],
+	};
+	if (getbattleground) {
+	    var selected = getbattleground.split(",");
+	    for (i = 0; i < selected.length; i++) {
+	        var id = selected[i];
+	        var battleground = BATTLEGROUNDS[id];
+	        if (battleground.effect.skill) {
+	            battlegrounds.onTurn.push(MakeBattleground(battleground.name, battleground.effect.skill));
+	        } else if (battleground.effect.evolve_skill || battleground.effect.add_skill) {
+	            battlegrounds.onCreate.push(MakeSkillModifier(battleground.name, battleground.effect));
+	        }
+	    }
+	}
+
+	cache_player_deck_cards = getDeckCards(cache_player_deck);
+	cache_cpu_deck_cards = getDeckCards(cache_cpu_deck);
 }
 
 // Return results to the GUI thread using Transferable Objects
@@ -163,35 +184,20 @@ function run_sim() {
 
 	// Load player deck
 	if (cache_player_deck) {
-		deck['player'] = copy_deck(cache_player_deck);
+	    deck['player'] = copy_deck(cache_player_deck_cards);
 	}
 
 	// Load enemy deck
 	if (cache_cpu_deck) {
-		deck['cpu'] = copy_deck(cache_cpu_deck);
+	    deck['cpu'] = copy_deck(cache_cpu_deck_cards);
 	}
+
+	deck.player.cards = getDeckCards(deck.player);
+	deck.cpu.cards = getDeckCards(deck.cpu);
 
 	// Set up deck order priority reference
-	if (getordered && !getexactorder) deck['player']['ordered'] = copy_card_list(deck['player']['deck']);
-	if (getordered2 && !getexactorder2) deck['cpu']['ordered'] = copy_card_list(deck['cpu']['deck']);
-
-    // Set up battleground effects, if any
-	battlegrounds = {
-	    onCreate: [],
-	    onTurn: [],
-	};
-	if (getbattleground) {
-	    var selected = getbattleground.split(",");
-	    for (i = 0; i < selected.length; i++) {
-	        var id = selected[i];
-	        var battleground = BATTLEGROUNDS[id];
-	        if (battleground.effect.skill) {
-	            battlegrounds.onTurn.push(MakeBattleground(battleground.name, battleground.effect.skill));
-	        } else if (battleground.effect.evolve_skill || battleground.effect.add_skill) {
-	            battlegrounds.onCreate.push(MakeSkillModifier(battleground.name, battleground.effect));
-	        }
-	    }
-	}
+	if (getordered && !getexactorder) deck['player']['ordered'] = copy_card_list(deck.player.cards);
+	if (getordered2 && !getexactorder2) deck['cpu']['ordered'] = copy_card_list(deck.cpu.cards);
 
 	if (simulate()) {
 	    processSimResult();
@@ -263,7 +269,6 @@ function processSimResult() {
 
 // Initialize simulation loop - runs once per simulation batch
 function run_sims() {
-    card_cache = {};    // clear card cache to avoid memory bloat when simulating different decks
 	total_turns = 0;
 	echo = '';
 	games = 0;
@@ -296,6 +301,8 @@ var tower_type = 0;
 var battleground = [];
 var cache_player_deck = 0;
 var cache_cpu_deck = 0;
+var cache_player_deck_cards;
+var cache_cpu_deck_cards;
 var echo = '';
 var surge = false;
 var games = 0;

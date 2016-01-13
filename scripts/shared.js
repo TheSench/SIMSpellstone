@@ -51,9 +51,20 @@ function shuffle(this_array) {
 }
 
 function copy_deck(original_deck) {
-    var new_deck = [];
+    var new_deck = {};
     new_deck.commander = original_deck.commander;
     new_deck.deck = copy_card_list(original_deck.deck);
+    return new_deck;
+}
+
+function getDeckCards(original_deck) {
+    var new_deck = {};
+    new_deck.commander = get_card_apply_battlegrounds(original_deck.commander);
+    new_deck.deck = [];
+    var list = original_deck.deck;
+    for (var i = 0, len = list.length; i < len; i++) {
+        new_deck.deck.push(get_card_apply_battlegrounds(list[i]));
+    }
     return new_deck;
 }
 
@@ -90,16 +101,19 @@ function cloneCard(original) {
     copy.leech = original.leech;
     copy.pierce = original.pierce;
     copy.poison = original.poison;
-    if (original.flurry) copy.flurry = copy_skill(original.flurry);
+    if (original.flurry) {
+        copy.skillTimers = [];
+        copy.flurry = { id: original.flurry.id, c: original.flurry.c };
+        copy.skillTimers.push(copy.flurry);
+    }
     // Other skills
+    copy.reusableSkills = original.reusableSkills;
     if (original.reusableSkills) {
         copy.skill = original.skill;
         copy.empowerSkills = original.empowerSkills;
     } else {
         copy_skills(copy, original.skill, original.empowerSkills);
     }
-    copy.timer = copy.cost;
-    copy.health_left = copy.health;
     return copy;
 }
 
@@ -138,8 +152,6 @@ var MakeAssault = (function () {
             modifySkills(this, original_skills, skillModifiers);
         }
         copy_skills_2(this, original_skills)
-        this.timer = this.cost;
-        this.health_left = this.health;
 
         card_cache[original_card.id + "-" + unit_level] = this;
 
@@ -310,6 +322,12 @@ var MakeAssault = (function () {
             if (this.sub_type == faction) return 1;
             return 0;
         },
+
+        resetTimers: function () {
+            for (var i = 0, len = this.skillTimers.length; i < len; i++) {
+                this.skillTimers[i].countdown = 0;
+            }
+        },
     }
 
     return (function (original_card, unit_level, skillModifiers) {
@@ -344,7 +362,6 @@ var MakeBattleground = (function () {
     Battleground.prototype = {
         p: null,
         name: null,
-        skill: null,
 
         //Card ID is ...
         isCommander: function () {
@@ -358,6 +375,12 @@ var MakeBattleground = (function () {
         isBattleground: function () {
             return true;
         },
+
+        resetTimers: function () {
+            for (var i = 0, len = this.skillTimers.length; i < len; i++) {
+                this.skillTimers[i].countdown = 0;
+            }
+        },
     }
 
     return (function (name, skill) {
@@ -368,17 +391,21 @@ var MakeBattleground = (function () {
 function copy_skills_2(new_card, original_skills) {
     new_card.skill = [];
     new_card.empowerSkills = [];
+    skillTimers = [];
     var reusable = true;
     for (var key in original_skills) {
         var newSkill = original_skills[key];
         if (newSkill.c) {   // If skill has a timer, we need to clone it
-            setSkill_2(new_card, copy_skill(newSkill));
+            var copySkill = copy_skill(newSkill);
+            setSkill_2(new_card, copySkill);
+            skillTimers.push(copySkill);
             reusable = false;
         } else {            // If skill has no timer, we can use the same instance
             setSkill_2(new_card, newSkill);
         }
     }
     new_card.reusableSkills = reusable;
+    new_card.skillTimers = skillTimers;
 }
 
 function setSkill_2(new_card, skill) {
@@ -421,23 +448,24 @@ function setSkill_2(new_card, skill) {
     }
 }
 
-function copy_skills(new_card, skills, empower_skills) {
+function copy_skills(new_card, original_skills, original_empower_skills) {
     new_card.skill = [];
     new_card.empowerSkills = [];
-    new_card.reusableSkills = true;
+    if (!new_card.skillTimers) new_card.skillTimers = [];
 
-    copy_Skill_lists(new_card, skills);
-    copy_Skill_lists(new_card, empower_skills);
+    copy_Skill_lists(new_card, new_card.skill, original_skills);
+    copy_Skill_lists(new_card, new_card.empowerSkills, original_empower_skills);
 }
 
-function copy_Skill_lists(new_card, original_skills) {
+function copy_Skill_lists(new_card, new_skills, original_skills) {
     for (var i = 0; i < original_skills.length; i++) {
-        var newSkill = original_skills[i];
-        if (newSkill.c) {   // If skill has a timer, we need to clone it
-            setSkill_2(new_card, copy_skill(newSkill));
-            new_card.reusableSkills = false;
+        var originalSkill = original_skills[i];
+        if (originalSkill.c) {   // If skill has a timer, we need to clone it
+            var newSkill = copy_skill(originalSkill);
+            new_skills.push(newSkill);
+            new_card.skillTimers.push(newSkill);
         } else {            // If skill has no timer, we can use the same instance
-            setSkill_2(new_card, newSkill);
+            new_skills.push(originalSkill);
         }
     }
 }
@@ -844,7 +872,7 @@ function hash_decode(hash) {
             // Make sure we have valid characters
             unitInfo = base64triplet_to_unitInfo(hash.substr(i, 3));
             if (priorities) unitInfo.priority = priorities[unitidx];
-            if(unitidx > 0 && indexes) unitInfo.index = base64ToNumber(indexes[unitidx-1]); // Skip commander
+            if (unitidx > 0 && indexes) unitInfo.index = base64ToNumber(indexes[unitidx - 1]); // Skip commander
 
             if (unitInfo) {
                 if (CARDS[unitInfo.id]) {
