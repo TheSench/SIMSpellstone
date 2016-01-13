@@ -816,5 +816,7 @@ var battleground = [];
 var total_turns = 0;
 var cache_player_deck;
 var cache_cpu_deck;
+var cache_player_deck_cards;
+var cache_cpu_deck_cards;
 var choice = undefined;
 var auto_mode = false;

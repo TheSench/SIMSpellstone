@@ -43,6 +43,24 @@ var startsim = function (autostart) {
     }
     surge = document.getElementById('surge').checked;
 
+    // Set up battleground effects, if any
+    battlegrounds = {
+        onCreate: [],
+        onTurn: [],
+    };
+    if (getbattleground) {
+        var selected = getbattleground.split(",");
+        for (i = 0; i < selected.length; i++) {
+            var id = selected[i];
+            var battleground = BATTLEGROUNDS[id];
+            if (battleground.effect.skill) {
+                battlegrounds.onTurn.push(MakeBattleground(battleground.name, battleground.effect.skill));
+            } else if (battleground.effect.evolve_skill || battleground.effect.add_skill) {
+                battlegrounds.onCreate.push(MakeSkillModifier(battleground.name, battleground.effect));
+            }
+        }
+    }
+
     // Hide interface
     document.getElementById('ui').style.display = 'none';
 
@@ -58,6 +76,7 @@ var startsim = function (autostart) {
     } else {
         cache_player_deck = load_deck_from_cardlist();
     }
+    cache_player_deck_cards = getDeckCards(cache_player_deck);
 
     max_turns = 50;
 
@@ -71,6 +90,7 @@ var startsim = function (autostart) {
     } else {
         cache_cpu_deck = load_deck_from_cardlist();
     }
+    cache_cpu_deck_cards = getDeckCards(cache_player_deck);
 
     card_cache = {};
 
@@ -80,7 +100,7 @@ var startsim = function (autostart) {
 
     outp('<strong>Initializing simulations...</strong>');
 
-    current_timeout = setTimeout(do_battle);
+    current_timeout = setTimeout(run_sims);
 
     return false;
 }
@@ -134,12 +154,6 @@ var run_sim = function () {
     doSetup();
     if (!simulate()) return false;
     processSimResult();
-}
-
-var do_battle = function () {
-    doSetup();
-    if (!simulate()) return false;
-    processSimResult();
     debug_end();
 }
 
@@ -166,17 +180,20 @@ function doSetup() {
 
     // Load player deck
     if (cache_player_deck) {
-        deck.player = copy_deck(cache_player_deck);
+        deck['player'] = copy_deck(cache_player_deck_cards);
     }
 
     // Load enemy deck
     if (cache_cpu_deck) {
-        deck.cpu = copy_deck(cache_cpu_deck);
+        deck['cpu'] = copy_deck(cache_cpu_deck_cards);
     }
 
+    deck.player.cards = getDeckCards(deck.player);
+    deck.cpu.cards = getDeckCards(deck.cpu);
+
     // Set up deck order priority reference
-    if (getordered && !getexactorder) deck.player.ordered = copy_card_list(deck.player.deck);
-    if (getordered2 && !getexactorder2) deck.cpu.ordered = copy_card_list(deck.cpu.deck);
+    if (getordered && !getexactorder) deck.player.ordered = copy_card_list(deck.player.cards);
+    if (getordered2 && !getexactorder2) deck.cpu.ordered = copy_card_list(deck.cpu.cards);
 
     // Set up battleground effects, if any
     battlegrounds = {
