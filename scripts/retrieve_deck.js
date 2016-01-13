@@ -233,6 +233,7 @@
             if (draw) {
                 onGetUserDeck(response);
             } else {
+                var name = response.player_info.name;
                 var deck_info = response.player_info.deck;
                 var deck = getDeckFromDeckInfo(deck_info);
                 publicInfo.factionDecks[name] = deck;

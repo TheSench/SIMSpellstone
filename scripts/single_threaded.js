@@ -120,7 +120,7 @@ if (!use_workers) {
         var simpersec = games / elapse;
         simpersec = simpersec.toFixed(1);
 
-        // Stop the recursion\
+        // Stop the recursion
         if (current_timeout) clearTimeout(current_timeout);
 
         outp(echo + '<strong>Simulations interrupted.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>' + gettable());
