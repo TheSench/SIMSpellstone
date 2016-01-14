@@ -11611,7 +11611,7 @@ var CARDS = {
   "2023": {
     "id": "2023",
     "name": "Grizzly Terror",
-    "picture": "NotFound",
+    "picture": "Undead_Bear_A",
     "rarity": "3",
     "set": "2000",
     "card_type": "2",
@@ -11681,7 +11681,7 @@ var CARDS = {
   "12023": {
     "id": "12023",
     "name": "Grizzly Tear",
-    "picture": "NotFound",
+    "picture": "Undead_Bear_A",
     "rarity": "3",
     "set": "2000",
     "card_type": "2",
@@ -11763,7 +11763,7 @@ var CARDS = {
   "22023": {
     "id": "22023",
     "name": "Grizzly Despair",
-    "picture": "NotFound",
+    "picture": "Undead_Bear_B",
     "rarity": "3",
     "set": "2000",
     "card_type": "2",
@@ -11832,7 +11832,7 @@ var CARDS = {
   "2026": {
     "id": "2026",
     "name": "Lazarus",
-    "picture": "NotFound",
+    "picture": "Undead_King_A",
     "rarity": "4",
     "set": "2000",
     "card_type": "2",
@@ -11939,7 +11939,7 @@ var CARDS = {
   "12026": {
     "id": "12026",
     "name": "Lazarus, Harbinger",
-    "picture": "NotFound",
+    "picture": "Undead_King_A",
     "rarity": "4",
     "set": "2000",
     "card_type": "2",
@@ -12032,7 +12032,7 @@ var CARDS = {
   "22026": {
     "id": "22026",
     "name": "Lazarus, Betrayer",
-    "picture": "NotFound",
+    "picture": "Undead_King_B",
     "rarity": "4",
     "set": "2000",
     "card_type": "2",
