@@ -241,6 +241,45 @@
         });
     }
 
+    function getDecksFromJSON(field) {
+        var data = JSON.parse(field.value);
+        var deck_player = { deck: [] };
+        var deck_cpu = { deck: [] };
+        var card_map = data.battle_data.card_map;
+        
+        try
+        {
+            var commander = data.battle_data.attack_commander;
+            deck_player.commander = { id: commander.unit_id, level: commander.level };
+            commander = data.battle_data.defend_commander;
+            deck_cpu.commander = { id: commander.unit_id, level: commander.level };
+
+            for (var key in card_map) {
+                var unit = card_map[key];
+                unit = { id: unit.unit_id, level: unit.level };
+                if (key <= 15) {
+                    deck_player.deck.push(unit);
+                } else {
+                    deck_cpu.deck.push(unit);
+                }
+            }
+        }
+        catch(err)
+        {
+        }
+
+        deck_player = hash_encode(deck_player);
+        deck_cpu = hash_encode(deck_cpu);
+        document.getElementById("deck").value = deck_player;
+        document.getElementById("deck2").value = deck_cpu;
+        var d = document.getElementById("exactorder");
+        if (d) d.checked = true;
+        d = document.getElementById("ordered2");
+        if (d) d.checked = true;
+        d = document.getElementById("exactorder2");
+        if (d) d.checked = true;
+    }
+
     function onGetUserDeck(data) {
         var deck_info = data.player_info.deck;
         drawDeck(deck_info, data.player_info.name);
@@ -340,6 +379,7 @@
         updateMyDeck: updateMyDeck,
         factionDecks: {},
         baseRequest: baseRequest,
+        getDecksFromJSON: getDecksFromJSON,
     }
     return publicInfo;
 })();

@@ -45,7 +45,7 @@
   </feature_lock>
   <feature_lock>
     <id>runes</id>
-    <mission_req>-1</mission_req>
+    <mission_req>244</mission_req>
     <!-- 244 -->
   </feature_lock>
   <feature_lock>

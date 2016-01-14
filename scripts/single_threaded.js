@@ -2,6 +2,7 @@ if (!use_workers) {
 
     // Initialize simulation loop - runs once per simulation session
     var startsim = function (autostart) {
+        orders = {};
 
         if (_DEFINED('autolink') && !autostart) {
             window.location.href = generate_link(1, 1);
@@ -18,7 +19,10 @@ if (!use_workers) {
         games = 0;
         sims_left = document.getElementById('sims').value;
         if (!sims_left) sims_left = 1;
-        user_controlled = document.getElementById('user_controlled').checked;
+        var d = document.getElementById('user_controlled');
+        if (d) {
+            user_controlled = d.checked;
+        }
         debug = document.getElementById('debug').checked;
         var d = document.getElementById('auto_mode');
         if (d) {
@@ -219,7 +223,7 @@ if (!use_workers) {
             var simpersec = games / elapse;
             simpersec = simpersec.toFixed(1);
 
-            outp(echo + '<br><strong>Simulations complete.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>' + gettable());
+            outp(echo + '<br><strong>Simulations complete.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>' + gettable() + getOrderStatsTable());
 
             // Show interface
             document.getElementById('ui').style.display = 'block';
@@ -310,6 +314,8 @@ if (!use_workers) {
         }
         games++;
 
+        if (trackStats) updateStats(result);
+
         // Increment total turn count
         total_turns += simulation_turns;
 
@@ -365,4 +371,5 @@ if (!use_workers) {
     var run_sims_batch = 0;
     var user_controlled = false;
     var end_sims_callback;
+    var orders = {};
 }

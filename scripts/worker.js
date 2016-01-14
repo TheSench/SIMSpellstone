@@ -63,9 +63,11 @@ function initializeWorker(url, use_transferables) {
 
 	// Determine which results-reporting mechanism to use
 	if (use_transferables) {
-		self.returnResults = returnResultsTransferableObjects;
+	    self.returnResults = returnResultsTransferableObjects;
+	    self.returnBest = returnBestTransferableObjects;
 	} else {
-		self.returnResults = returnResultsStructuredCloning;
+	    self.returnResults = returnResultsStructuredCloning;
+	    self.returnBest = returnBestStructuredCloning;
 	}
 }
 
@@ -85,6 +87,7 @@ function initializeSims(params) {
 	win_debug = params['win_debug'];
 	mass_debug = params['mass_debug'];
 	user_controlled = params['user_controlled'];
+	trackStats = params['trackStats'];
 	card_cache = {};    // clear card cache to avoid memory bloat when simulating different decks
 
     // Set up battleground effects, if any
@@ -109,25 +112,28 @@ function initializeSims(params) {
 	cache_cpu_deck_cards = getDeckCards(cache_cpu_deck);
 }
 
+var RESULTS = 0;
+var STATS = 1;
 // Return results to the GUI thread using Transferable Objects
 // (Transferable Objects are faster, but they are not supported
 // by all browsers.)
 function returnResultsTransferableObjects() {
 	// Create results ArrayBuffer
-	var length = 48;    // 8 bytes per int, 8 bytes per float
+	var length = 32;    // 4 bytes per int, 8 bytes per float
 	if (debug) length += (echo.length*2) + 8; // 2 bytes for each char
 	var buffer = new ArrayBuffer(length);
-	var view = new Int32Array(buffer, 0, 5);
-	view[0] = games;
-	view[1] = wins;
-	view[2] = draws;
-	view[3] = losses;
-	view[4] = total_turns;
-	view = new Float64Array(buffer, 40, 1);
-	view[0] = time_start_batch;
+	var view = new Int32Array(buffer, 0, 6);
+	view[0] = RESULTS
+	view[1] = games;
+	view[2] = wins;
+	view[3] = draws;
+	view[4] = losses;
+	view[5] = total_turns;
+	view = new DataView(buffer, 24, 8);
+	view.setFloat64(0, time_start_batch);
 	if (debug) {
 		// Convert echo to bytes in the ArrayBuffer
-		var bufView = new Uint16Array(buffer, 80);
+		var bufView = new Uint16Array(buffer, 56);
 		for (var i=0, len = echo.length; i < len; i++) {
 			bufView[i] = echo.charCodeAt(i);
 		}
@@ -152,6 +158,55 @@ function returnResultsStructuredCloning() {
 
 	// Send batch results back to main thread
 	self.postMessage({"cmd":"return_results", "data":resultsArray});
+}
+
+// Return results to the GUI thread using Structured Cloning
+// (used when Transferable Objects are NOT supported by the browser)
+function returnBestTransferableObjects() {
+    // Create results ArrayBuffer
+    var hashLength = 96;                // 16 cards - 3 characters each - 2 bytes per character
+    var statLength = hashLength + 16;   // 4 ints @ 4 bytes per float
+    var numKeys = 0;
+    for (var key in orders) {
+        numKeys++;
+    }
+    var offset = 4;
+    var buffer = new ArrayBuffer(numKeys * statLength + offset); // Extra int for message type
+    var view = new Int32Array(buffer, 0, 1);
+    view[0] = STATS;
+    var filler = ' '.charCodeAt(0);
+    for (var hash in orders) {
+        var stat = orders[hash];
+        // Convert echo to bytes in the ArrayBuffer
+        var bufView = new Int16Array(buffer, offset, 48);
+        var i = 0;
+        var len = hash.length;
+        for (; i < len; i++) {
+            bufView[i] = hash.charCodeAt(i);
+        }
+        for (; i < 48;) {
+            bufView[i++] = filler;
+            bufView[i++] = filler;
+            bufView[i++] = filler;
+        }
+        var view = new Int32Array(buffer, offset + hashLength, 4);
+        view[0] = stat.games;
+        view[1] = stat.wins;
+        view[2] = stat.draws;
+        view[3] = stat.losses;
+
+        offset += statLength;
+    }
+
+    // Send batch results back to main thread
+    self.postMessage(buffer, [buffer]);
+}
+
+// Return results to the GUI thread using Structured Cloning
+// (used when Transferable Objects are NOT supported by the browser)
+function returnBestStructuredCloning() {
+    // Send batch results back to main thread
+    self.postMessage({ "cmd": "order_stats", "data": orders });
 }
 
 // prevents new batches from starting until new simulation loop is started
@@ -227,6 +282,8 @@ function processSimResult() {
         draws++;
     }
 
+    if (trackStats) updateStats(result);
+
     if (debug) {
         if (!mass_debug && !loss_debug && !win_debug) {
             sims_left = 0;
@@ -280,6 +337,7 @@ function run_sims() {
 	while (sims_left) {
 		run_sim();
 	}
+	returnBest();
 	returnResults();
 }
 
@@ -315,5 +373,6 @@ var sims_left = 0;
 var running = false;
 
 var simulator_thread = true;
+var orders = {};
 
 importScripts('simulator_base.js', 'shared.js');

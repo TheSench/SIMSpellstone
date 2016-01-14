@@ -30,6 +30,9 @@ if (use_workers) {
         return worker;
     }
 
+    var RESULTS = 0;
+    var STATS = 1;
+
     // Handle messages from the worker thread using Transferable Objects
     // (Transferable Objects are faster, but they are not supported
     // by all browsers.)
@@ -37,37 +40,66 @@ if (use_workers) {
         if (sims_left) {
             progress = true;
             var msg = e.data;
+            var view = new Int32Array(msg, 0, 1);
+            switch (view[0]) {
+                case RESULTS:
+                    view = new Int32Array(msg, 4, 5);
+                    var num_games = view[0];
+                    var num_wins = view[1];
+                    var num_draws = view[2];
+                    var num_losses = view[3];
+                    var turns = view[4];
+                    view = new DataView(msg, 24, 8);
+                    var time_started = view.getFloat64(0);
+                    // If a worker's echo is included in results...
+                    // Queue up next batch so that this worker isn't idle while we process the results
+                    if (sims_to_process > 0) {
+                        run_sims(this.id, num_games, time_started);
+                    }
+                    if (msg.byteLength > 56) {
+                        // ... convert it from a byte array to a string
+                        var view = new Uint16Array(msg, 56);
+                        var chararray = [];
+                        for (var i = 0, len = view.length; i < len; i++) {
+                            chararray.push(String.fromCharCode(view[i]));
+                        }
+                        // ... and append it to echo
+                        echo += chararray.join("");
+                    }
 
-            var view = new Int32Array(msg, 0, 5);
-            var num_games = view[0];
-            var num_wins = view[1];
-            var num_draws = view[2];
-            var num_losses = view[3];
-            var turns = view[4];
-            view = new Float64Array(msg, 40, 1);
-            var time_started = view[0];
-            // If a worker's echo is included in results...
-            // Queue up next batch so that this worker isn't idle while we process the results
-            if (sims_to_process > 0) {
-                run_sims(this.id, num_games, time_started);
-            }
-            if (msg.byteLength > 48) {
-                // ... convert it from a byte array to a string
-                var view = new Uint16Array(msg, 80);
-                var chararray = [];
-                for (var i = false, len = view.length; i < len; i++) {
-                    chararray.push(String.fromCharCode(view[i]));
-                }
-                // ... and append it to echo
-                echo += chararray.join("");
-            }
+                    add_results(num_games, num_wins, num_draws, num_losses, turns);
 
-            add_results(num_games, num_wins, num_draws, num_losses, turns);
+                    if (debug && !mass_debug && !loss_debug && !win_debug) {
+                        display_debug_results(num_wins, num_draws);
+                    } else if (!sims_left) {
+                        display_final_results();
+                    }
+                    break;
+                case STATS:
+                    var hashLength = 96;                // 16 cards - 3 characters each - 2 bytes per character
+                    var statLength = hashLength + 16;   // 4 ints @ 4 bytes per float
+                    for (var offset = 4, len = msg.byteLength; offset < len; offset += statLength) {
+                        // Convert echo to bytes in the ArrayBuffer
+                        var bufView = new Int16Array(msg, offset, 48);
+                        var chararray = [];
+                        for (var i = 0, hashLen = 16; i < hashLen; i++) {
+                            var char = String.fromCharCode(bufView[i]);
+                            if (char == ' ') break;
+                            chararray.push(char);
+                        }
+                        // ... and append it to echo
+                        var hash = chararray.join("");
+                        var view = new Int32Array(msg, offset + hashLength, 4);
+                        var stats = {
+                            games: view[0],
+                            wins: view[1],
+                            draws: view[2],
+                            losses: view[3],
+                        }
 
-            if (debug && !mass_debug && !loss_debug && !win_debug) {
-                display_debug_results(num_wins, num_draws);
-            } else if (!sims_left) {
-                display_final_results();
+                        updateStats(hash, stats);
+                    }
+                    break;
             }
         } else {
             sims_left = 0;
@@ -108,16 +140,34 @@ if (use_workers) {
                         display_final_results();
                     }
                     break;
+                case 'order_stats':
+                    var updates = msg.data;
+                    for (var hash in updates) {
+                        updateStats(hash, updates[hash]);
+                    }
+                    break;
             }
         } else {
             sims_left = 0;
         }
     }
 
+    var updateStats = function (hash, update) {
+        var existing = orders[hash];
+        if (!existing) {
+            orders[hash] = update;
+        } else {
+            existing.wins += update.wins;
+            existing.losses += update.losses;
+            existing.draws += update.draws;
+            existing.games += update.games;
+        }
+    }
+
     // Update the GUI with the current status (sims/sec, % complete, etc...)
     var display_progress = function () {
         // If stopsims was called, don't display any more output
-        if (sims_to_process > 0) {
+        if (sims_left > 0) {
             if (progress) {
                 progress = false;
                 var percent_complete = (games / (num_sims) * 100).toFixed(1);
@@ -235,7 +285,7 @@ if (use_workers) {
         var simpersec = games / elapse;
         simpersec = simpersec.toFixed(1);
 
-        outp(echo + '<br><strong>Simulations complete.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>' + gettable());
+        outp(echo + '<br><strong>Simulations complete.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>' + gettable() + getOrderStatsTable());
 
         // Show interface
         document.getElementById('ui').style.display = 'block';
@@ -249,6 +299,7 @@ if (use_workers) {
 
     // Initialize simulation loop - runs once per simulation session
     var startsim = function (autostart) {
+        orders = {};
 
         if (typeof (Worker) === "undefined") {
             return false;
@@ -275,7 +326,10 @@ if (use_workers) {
         if (!num_sims) num_sims = 1;
         sims_left = num_sims;
         sims_to_process = num_sims;
-        user_controlled = document.getElementById('user_controlled').checked;
+        var d = document.getElementById('user_controlled');
+        if (d) {
+            user_controlled = d.checked;
+        }
         /*if (user_controlled) debug = true;
         else*/ debug = document.getElementById('debug').checked;
         var d = document.getElementById('auto_mode');
@@ -362,6 +416,7 @@ if (use_workers) {
         params['win_debug'] = loss_debug;
         params['mass_debug'] = mass_debug;
         params['user_controlled'] = user_controlled;
+        params['trackStats'] = trackStats;
         for (var i = 0; i < max_workers; i++) {
             workers[i].postMessage({ 'cmd': 'initializeSims', 'data': params });
         }
@@ -453,4 +508,5 @@ if (use_workers) {
 
     var last_start_times = [];
     var end_sims_callback;
+    var orders = {};
 }

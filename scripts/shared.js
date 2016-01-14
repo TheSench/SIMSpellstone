@@ -133,7 +133,7 @@ var MakeAssault = (function () {
         this.type = original_card.type;
         this.sub_type = original_card.sub_type;
         this.set = original_card.set;
-        var original_skills = original_card.skill.slice();
+        var original_skills = original_card.skill;
         if (this.level > 1) {
             var upgrade;
             for (var key in original_card.upgrades) {
@@ -151,8 +151,7 @@ var MakeAssault = (function () {
             original_skills = original_skills.slice();
             modifySkills(this, original_skills, skillModifiers);
         }
-        copy_skills_2(this, original_skills)
-
+        copy_skills_2(this, original_skills);
         card_cache[original_card.id + "-" + unit_level] = this;
 
         return this;
@@ -788,7 +787,7 @@ function decode_multiplier(encoded) {
 
 
 //Returns hash built from deck array
-function hash_encode(deck) {
+function hash_encode(deck, combineMultiples) {
 
     var current_hash = [];
     var has_priorities = false;
@@ -810,7 +809,7 @@ function hash_encode(deck) {
             has_indexes = true;
         }
         var triplet = unitInfo_to_base64triplet(current_card);
-        if (triplet == current_hash[lastIndex]) {
+        if (combineMultiples && (triplet == current_hash[lastIndex])) {
             copies[lastIndex]++;
         } else {
             current_hash.push(triplet);
