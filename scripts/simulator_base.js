@@ -798,10 +798,23 @@ if (simulator_thread) {
     // Simulate one game
     var simulate = function () {
         simulating = true;
+        plays = [];
 
         // Shuffle decks
-        if (!getexactorder || !getordered) shuffle(deck.player.deck);
-        if (!getexactorder2 || !getordered2) shuffle(deck.cpu.deck);
+        if (getexactorder) {
+            if (!getordered) {
+                deck.player.shuffleHand = true;
+            }
+        } else {
+            shuffle(deck.player.deck);
+        }
+        if (getexactorder2) {
+            if (!getordered2) {
+                deck.cpu.shuffleHand = true;
+            }
+        } else {
+            shuffle(deck.cpu.deck);
+        }
 
         // Initialize player Commander on the field
         var field_player = field.player;
@@ -1012,7 +1025,16 @@ if (simulator_thread) {
                 }
             } else {
                 // Play first card in hand
-                play_card(deck_p_deck[0], p);
+                if (deck_p_deck.length > 1 && deck_p.shuffleHand) {
+                    card_picked = Math.floor(Math.random() * deck_p_deck.slice(0, 3).length);
+                }
+                play_card(deck_p_deck[card_picked], p);
+            }
+
+            // Store plays
+            if (trackStats && p == 'player') {
+                var unit = deck_p_deck[card_picked];
+                plays.push({ id: unit.id, level: unit.level });
             }
 
             // Remove from deck
@@ -1403,6 +1425,30 @@ if (simulator_thread) {
         // -- END OF STATUS INFLICTION --
     };
 
+    var updateStats = function (result) {
+        var hash = hash_encode({ commander: cache_player_deck.commander, deck: plays }, false);
+        var order_stats = orders[hash];
+        if (!order_stats) {
+            order_stats = {
+                wins: 0,
+                losses: 0,
+                draws: 0,
+                games: 0,
+            }
+            orders[hash] = order_stats;
+        }
+        order_stats.games++;
+
+        var result;
+        if (result == 'draw') {
+            order_stats.draws++;
+        } else if (result) {
+            order_stats.wins++;
+        } else {
+            order_stats.losses++;
+        }
+    };
+
     var deck = [];
     var field = [];
     var battlegrounds;
@@ -1410,4 +1456,5 @@ if (simulator_thread) {
     var time_start_batch = 0;
     var simulating = false;
     var turn = 0;
+    var plays = [];
 }

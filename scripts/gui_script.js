@@ -287,9 +287,6 @@ function onpageload() {
     var version_label = document.getElementById('version_label');
     if (battle_sim) { }
     else if (use_workers) {
-        document.getElementById("user_controlled").style.visibility = "hidden";
-        document.getElementById("unavailable").style.visibility = "visible";
-
         version_label.innerHTML += " " + text_version;
         // Initialize workers
         var param_maxworkers = _GET('maxworkers');
@@ -449,6 +446,62 @@ function gettable() {
     }
 
     return full_table;
+}
+
+function getOrderStatsTable() {
+
+    if (!trackStats) return '';
+
+    var winrateKeys = [];
+    for (var key in orders) {
+        stats = orders[key];
+        for (var i = 3, len = key.length; i < len; i += 3) {
+            var parentHash = key.substring(0, key.length - i);
+            var parent = orders[parentHash];
+            if (orders[parentHash]) {
+                parent.wins += stats.wins;
+                parent.losses += stats.losses;
+                parent.draws += stats.draws;
+                parent.games += stats.games;
+                parent.winrate = (parent.wins / parent.games);
+            } else {
+                break;
+            }
+        }
+        stats.winrate = (stats.wins / stats.games);
+        winrateKeys.push(key);
+    }
+    winrateKeys.sort(function (a, b) {
+        var compare = orders[b].winrate - orders[a].winrate;
+        if (compare != 0) return compare;
+        if (a < b) return -1;
+        if (a > b) return 1;
+        return 0;
+    });
+
+    var bestPlays = '<br><table cellspacing=0 cellpadding=5 style="border: 1px solid #000000;">';
+    var len = Math.min(winrateKeys.length, 100);
+    for (var i = 0; i < len; i++) {
+        var hash = winrateKeys[i];
+        var stats = orders[hash];
+        bestPlays += '<tr>';
+        bestPlays += '<td>';
+        bestPlays += hash;
+        bestPlays += '</td>';
+        bestPlays += '<td>';
+        bestPlays += stats.wins + "/" + stats.games;
+        bestPlays += '</td>';
+        bestPlays += '<td>';
+        bestPlays += (stats.winrate * 100).toFixed(1);
+        bestPlays += '%</td>';
+        bestPlays += '<td>';
+        bestPlays += generate_card_list(hash_decode(hash));
+        bestPlays += '</td>';
+        bestPlays += '</tr>';
+    }
+    bestPlays += '</table>';
+
+    return bestPlays;
 }
 
 // Time elapsed
@@ -794,6 +847,7 @@ var getordered2 = false;
 var getexactorder = false;
 var getexactorder2 = false;
 var getmission = false;
+var trackStats = false;
 var getbattleground = 0;
 var getsiege = 0;
 var tower_level = 0;
