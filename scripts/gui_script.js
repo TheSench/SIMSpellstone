@@ -231,8 +231,8 @@ function onpageload() {
     } else {
         // Load current battlegrounds
         var bgCheckBoxes = document.getElementsByName("battleground");
-        bgCheckBoxes[0].checked = true;
         bgCheckBoxes[3].checked = true;
+        bgCheckBoxes[4].checked = true;
     }
 
     if (_GET('sims')) {
@@ -419,13 +419,14 @@ function gettable() {
 
     table3 += '</td>';
     table3 += '</tr>';
+    table3 += '</table>';
 
     var full_table = '<table cellspacing=0 cellpadding=0 border=0><tr><td>' + table + '</td><td>&nbsp;</td><td>' + table3 + '</td></tr></table>';
 
     // Final output
     if (sims_left == 0) {
         // Add generated links to final output
-        full_table = full_table + links;
+        full_table += links;
 
         // Append results to history
 
