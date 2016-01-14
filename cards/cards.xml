@@ -6322,6 +6322,266 @@
       <skill id="fervor" x="3" y="3" />
     </upgrade>
   </unit>
+  <unit>
+    <id>2023</id>
+    <card_type>2</card_type>
+    <name>Grizzly Terror</name>
+    <picture>Undead_Bear_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time>1452790800</hidden_until_time>
+    <!-- Thu, 14 Jan 2016 17:00:00 GMT -->
+    <attack>3</attack>
+    <health>13</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="pierce" x="1" />
+    <skill id="leech" x="1" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="pierce" x="2" />
+      <skill id="leech" x="1" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>4</attack>
+      <skill id="pierce" x="2" />
+      <skill id="leech" x="2" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12023</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Grizzly Tear</name>
+    <picture>Undead_Bear_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time>1452790800</hidden_until_time>
+    <!-- Thu, 14 Jan 2016 17:00:00 GMT -->
+    <attack>4</attack>
+    <health>16</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="pierce" x="2" />
+    <skill id="leech" x="2" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="pierce" x="3" />
+      <skill id="leech" x="2" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+      <skill id="pierce" x="3" />
+      <skill id="leech" x="3" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="pierce" x="3" />
+      <skill id="leech" x="3" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22023</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Grizzly Despair</name>
+    <picture>Undead_Bear_B</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time>1452790800</hidden_until_time>
+    <!-- Thu, 14 Jan 2016 17:00:00 GMT -->
+    <attack>5</attack>
+    <health>19</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="pierce" x="3" />
+    <skill id="leech" x="3" />
+    <skill id="berserk" x="2" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="pierce" x="4" />
+      <skill id="leech" x="3" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="pierce" x="4" />
+      <skill id="leech" x="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2026</id>
+    <card_type>2</card_type>
+    <name>Lazarus</name>
+    <picture>Undead_King_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time>1452790800</hidden_until_time>
+    <!-- Thu, 14 Jan 2016 17:00:00 GMT -->
+    <attack>4</attack>
+    <health>15</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="fervor" x="2" y="7" />
+    <skill id="enfeeble" x="1" />
+    <skill id="leech" x="2" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="fervor" x="2" y="7" />
+      <skill id="enfeeble" x="2" />
+      <skill id="leech" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="fervor" x="2" y="7" />
+      <skill id="enfeeble" x="2" />
+      <skill id="leech" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="fervor" x="2" y="7" />
+      <skill id="enfeeble" x="3" />
+      <skill id="leech" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="fervor" x="3" y="7" />
+      <skill id="enfeeble" x="3" />
+      <skill id="leech" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12026</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Lazarus, Harbinger</name>
+    <picture>Undead_King_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time>1452790800</hidden_until_time>
+    <!-- Thu, 14 Jan 2016 17:00:00 GMT -->
+    <attack>4</attack>
+    <health>19</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="fervor" x="3" y="7" />
+    <skill id="enfeeble" x="3" />
+    <skill id="leech" x="3" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="fervor" x="3" y="7" />
+      <skill id="enfeeble" x="4" />
+      <skill id="leech" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="fervor" x="3" y="7" />
+      <skill id="enfeeble" x="4" />
+      <skill id="leech" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="fervor" x="4" y="7" />
+      <skill id="enfeeble" x="4" />
+      <skill id="leech" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22026</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Lazarus, Betrayer</name>
+    <picture>Undead_King_B</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time>1452790800</hidden_until_time>
+    <!-- Thu, 14 Jan 2016 17:00:00 GMT -->
+    <attack>4</attack>
+    <health>23</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="fervor" x="4" y="7" />
+    <skill id="enfeeble" x="4" />
+    <skill id="leech" x="4" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="fervor" x="4" y="7" />
+      <skill id="enfeeble" x="4" />
+      <skill id="leech" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="fervor" x="4" y="7" />
+      <skill id="enfeeble" x="5" />
+      <skill id="leech" x="5" />
+    </upgrade>
+  </unit>
   <!-- END SET 2000 - Reward -->
   <!-- START SET 3000 - Premium -->
   <!-- 5000 - 7999 -->
@@ -10170,6 +10430,123 @@
       <skill id="armored" x="3" />
       <skill id="frost" x="5" />
       <skill id="weaken" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5033</id>
+    <card_type>2</card_type>
+    <name>Lost Soul</name>
+    <picture>Lost_Soul_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time>1452790800</hidden_until_time>
+    <!-- Thu, 14 Jan 2016 17:00:00 GMT -->
+    <attack>3</attack>
+    <health>7</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="1" />
+    <skill id="rally" x="1" y="7" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>8</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="counter" x="1" />
+      <skill id="rally" x="2" y="7" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="1" />
+      <skill id="rally" x="2" y="7" />
+      <skill id="legion" x="1" y="7" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15033</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Wandering Soul</name>
+    <picture>Lost_Soul_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time>1452790800</hidden_until_time>
+    <!-- Thu, 14 Jan 2016 17:00:00 GMT -->
+    <attack>3</attack>
+    <health>10</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="1" />
+    <skill id="rally" x="2" y="7" />
+    <skill id="legion" x="1" y="7" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="counter" x="2" />
+      <skill id="rally" x="2" y="7" />
+      <skill id="legion" x="1" y="7" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="2" />
+      <skill id="rally" x="2" y="7" />
+      <skill id="legion" x="2" y="7" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25033</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Dread Soul</name>
+    <picture>Lost_Soul_B</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time>1452790800</hidden_until_time>
+    <!-- Thu, 14 Jan 2016 17:00:00 GMT -->
+    <attack>3</attack>
+    <health>13</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="2" />
+    <skill id="rally" x="2" y="7" />
+    <skill id="legion" x="2" y="7" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counter" x="3" />
+      <skill id="rally" x="2" y="7" />
+      <skill id="legion" x="2" y="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="3" />
+      <skill id="rally" x="3" y="7" />
+      <skill id="legion" x="2" y="7" />
     </upgrade>
   </unit>
   <!-- Chaos Premium Begin -->
@@ -14046,6 +14423,135 @@
       <skill id="counter" x="5" />
       <skill id="enfeeble" x="8" />
       <skill id="weaken" x="3" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6033</id>
+    <card_type>2</card_type>
+    <name>Firebeard</name>
+    <picture>Lost_Captain_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time>1452790800</hidden_until_time>
+    <!-- Thu, 14 Jan 2016 17:00:00 GMT -->
+    <attack>4</attack>
+    <health>10</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="enfeeble" x="1" all="1" />
+    <skill id="leech" x="1" />
+    <skill id="berserk" x="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="leech" x="2" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>14</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16033</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Pirate Firebeard</name>
+    <picture>Lost_Captain_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time>1452790800</hidden_until_time>
+    <!-- Thu, 14 Jan 2016 17:00:00 GMT -->
+    <attack>5</attack>
+    <health>14</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="enfeeble" x="1" all="1" />
+    <skill id="leech" x="2" />
+    <skill id="berserk" x="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="leech" x="3" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="leech" x="4" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26033</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Captain Firebeard</name>
+    <picture>Lost_Captain_B</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time>1452790800</hidden_until_time>
+    <!-- Thu, 14 Jan 2016 17:00:00 GMT -->
+    <attack>5</attack>
+    <health>18</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="enfeeble" x="1" all="1" />
+    <skill id="leech" x="4" />
+    <skill id="berserk" x="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="leech" x="4" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="leech" x="5" />
+      <skill id="berserk" x="2" />
     </upgrade>
   </unit>
   <!-- Wyld Premium Begin -->
@@ -17928,6 +18434,142 @@
       <skill id="enfeeble" x="4" all="1" />
     </upgrade>
   </unit>
+  <unit>
+    <id>7033</id>
+    <card_type>2</card_type>
+    <name>Treebond Skull</name>
+    <picture>Treebound_Skeleton_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time>1452790800</hidden_until_time>
+    <!-- Thu, 14 Jan 2016 17:00:00 GMT -->
+    <attack>5</attack>
+    <health>19</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="1" />
+    <skill id="rally" x="1" all="1" y="7" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="2" />
+      <skill id="rally" x="1" all="1" y="7" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="2" />
+      <skill id="rally" x="1" all="1" y="7" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="2" />
+      <skill id="rally" x="2" all="1" y="7" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17033</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Woodbond Skull</name>
+    <picture>Treebound_Skeleton_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time>1452790800</hidden_until_time>
+    <!-- Thu, 14 Jan 2016 17:00:00 GMT -->
+    <attack>5</attack>
+    <health>24</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="2" />
+    <skill id="rally" x="2" all="1" y="7" />
+    <skill id="berserk" x="2" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="3" />
+      <skill id="rally" x="2" all="1" y="7" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="3" />
+      <skill id="rally" x="3" all="1" y="7" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27033</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Copsebond Skull</name>
+    <picture>Treebound_Skeleton_B</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time>1452790800</hidden_until_time>
+    <!-- Thu, 14 Jan 2016 17:00:00 GMT -->
+    <attack>6</attack>
+    <health>29</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="3" />
+    <skill id="rally" x="3" all="1" y="7" />
+    <skill id="berserk" x="2" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>30</health>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>32</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="4" />
+      <skill id="rally" x="3" all="1" y="7" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="4" />
+      <skill id="rally" x="3" all="1" y="7" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="4" />
+      <skill id="rally" x="4" all="1" y="7" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
   <!-- END SET 3000 - Premium -->
   <!-- START SET 8000 - Story Element Assaults -->
   <unit>
@@ -19121,7 +19763,7 @@
     <upgrade>
       <level>4</level>
       <health>25</health>
-      <skill id="armored" x="3" />
+      <skill id="armored" x="2" />
       <skill id="protect" all="1" x="2" y="1" />
       <skill id="heal" all="1" x="3" y="1" />
     </upgrade>
@@ -19317,7 +19959,6 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>5</attack>
       <skill id="fervor" x="4" y="2" />
       <skill id="strike" x="3" all="1" />
       <skill id="burn" x="6" />
@@ -24773,6 +25414,10 @@
       <skill id="strike" x="3" />
       <skill id="strike" x="3" />
     </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>55</health>
+    </upgrade>
   </unit>
   <unit>
     <id>223</id>
@@ -26378,6 +27023,283 @@
       <skill id="strike" x="2" />
     </upgrade>
   </unit>
+  <!-- START Event 7 Heroes -->
+  <unit>
+    <id>265</id>
+    <card_type>1</card_type>
+    <name>Void Warrior</name>
+    <portrait>skeletonwarrior</portrait>
+    <attack>0</attack>
+    <health>30</health>
+    <rarity>3</rarity>
+    <skill id="enhance" s="poison" x="1" />
+    <skill id="enhance" s="leech" x="2" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>34</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>39</health>
+      <skill id="enhance" s="poison" x="2" />
+      <skill id="enhance" s="leech" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>45</health>
+      <skill id="enhance" s="poison" x="2" />
+      <skill id="enhance" s="leech" x="3" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>52</health>
+      <skill id="enhance" s="poison" x="3" />
+      <skill id="enhance" s="leech" x="3" />
+      <skill id="weaken" all="1" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>266</id>
+    <card_type>1</card_type>
+    <name>Shade Gang</name>
+    <portrait>voidminions</portrait>
+    <attack>0</attack>
+    <health>27</health>
+    <rarity>3</rarity>
+    <skill id="strike" x="1" />
+    <skill id="strike" x="2" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>35</health>
+      <skill id="strike" x="2" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>40</health>
+      <skill id="enfeeble" x="1" />
+      <skill id="strike" x="2" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>46</health>
+      <skill id="enfeeble" all="1" x="1" />
+      <skill id="strike" x="2" />
+      <skill id="strike" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>267</id>
+    <card_type>1</card_type>
+    <name>Wandering Wraith</name>
+    <portrait>wraithden</portrait>
+    <attack>0</attack>
+    <health>29</health>
+    <rarity>3</rarity>
+    <skill id="protect" x="2" />
+    <skill id="jam" c="5" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>34</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>39</health>
+      <skill id="protect" x="3" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>45</health>
+      <skill id="protect" x="3" />
+      <skill id="jam" c="5" />
+      <skill id="enhance" s="evade" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>51</health>
+      <skill id="protect" x="3" />
+      <skill id="jam" c="5" />
+      <skill id="enhance" s="evade" all="1" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>268</id>
+    <card_type>1</card_type>
+    <name>Spine Coil</name>
+    <portrait>undeadsnake</portrait>
+    <attack>0</attack>
+    <health>32</health>
+    <rarity>4</rarity>
+    <skill id="rally" x="2" />
+    <skill id="protect" x="2" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>36</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>41</health>
+      <skill id="rally" x="3" />
+      <skill id="protect" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>47</health>
+      <skill id="rally" x="3" />
+      <skill id="protect" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>54</health>
+      <skill id="rally" x="4" />
+      <skill id="protect" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>62</health>
+      <skill id="rally" x="4" />
+      <skill id="protect" x="3" />
+      <skill id="protect" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>269</id>
+    <card_type>1</card_type>
+    <name>Arcane Turret</name>
+    <portrait>frogemperor</portrait>
+    <attack>0</attack>
+    <health>34</health>
+    <rarity>4</rarity>
+    <skill id="strike" x="3" />
+    <skill id="jam" c="6" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>44</health>
+      <skill id="strike" x="3" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>49</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>55</health>
+      <skill id="strike" x="3" />
+      <skill id="jam" c="5" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>63</health>
+      <skill id="strike" all="1" x="2" />
+      <skill id="jam" c="5" />
+      <skill id="jam" c="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>270</id>
+    <card_type>1</card_type>
+    <name>Feral Scientists</name>
+    <portrait>frogemperor</portrait>
+    <attack>0</attack>
+    <health>32</health>
+    <rarity>4</rarity>
+    <skill id="enhance" s="fervor" x="2" />
+    <skill id="counter" x="2" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>37</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>42</health>
+      <skill id="enhance" s="fervor" x="2" />
+      <skill id="counter" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>48</health>
+      <skill id="enhance" s="fervor" x="3" />
+      <skill id="counter" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>54</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>61</health>
+      <skill id="enhance" s="fervor" x="3" />
+      <skill id="enhance" s="legion" x="3" />
+      <skill id="counter" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>271</id>
+    <card_type>1</card_type>
+    <name>Dr. Oppenhinder</name>
+    <portrait>frogemperor</portrait>
+    <attack>0</attack>
+    <health>40</health>
+    <rarity>4</rarity>
+    <skill id="enhance" s="berserk" x="1" />
+    <skill id="heal" x="3" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>44</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>49</health>
+      <skill id="enhance" s="berserk" x="1" />
+      <skill id="heal" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>55</health>
+      <skill id="enhance" s="berserk" x="2" />
+      <skill id="heal" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>62</health>
+      <skill id="enhance" s="berserk" x="2" />
+      <skill id="heal" all="1" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>70</health>
+      <skill id="enhance" s="berserk" all="1" x="1" />
+      <skill id="heal" all="1" x="2" />
+    </upgrade>
+  </unit>
+  <!-- END Event 7 Heroes -->
   <!-- END Event 6 Heroes -->
   <!-- START AETHER Default Cards -->
   <!-- 
@@ -26895,7 +27817,6 @@
     <desc>When this creature deals attack damage, Attack is permanently increased</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <balance_points>6</balance_points>
-    <hidden>1</hidden>
   </skillType>
   <!-- Dualstrike -->
   <skillType>
@@ -26942,6 +27863,13 @@
     <attributes x="1" y="1" all="0" c="0" s="0" />
     <status_flag>resurrected</status_flag>
     <balance_points>8</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>displayEffect</id>
+    <order>0</order>
+    <upkeep>1</upkeep>
+    <!-- This skill occurs before all other actions -->
     <hidden>1</hidden>
   </skillType>
   <!-- CARD FACTIONS -->
