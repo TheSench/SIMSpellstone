@@ -11608,6 +11608,506 @@ var CARDS = {
       },
     }
   },
+  "2023": {
+    "id": "2023",
+    "name": "Grizzly Terror",
+    "picture": "NotFound",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "7",
+    "attack": 3,
+    "health": 13,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "pierce",
+        "x": 1,
+      },
+      {
+        "id": "leech",
+        "x": 1,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "health": 15,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "pierce",
+            "x": 2,
+          },
+          {
+            "id": "leech",
+            "x": 1,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "5": {
+        "attack": 4,
+        "skill": [
+          {
+            "id": "pierce",
+            "x": 2,
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "12023": {
+    "id": "12023",
+    "name": "Grizzly Tear",
+    "picture": "NotFound",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "7",
+    "attack": 4,
+    "health": 16,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "pierce",
+        "x": 2,
+      },
+      {
+        "id": "leech",
+        "x": 2,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 17,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "4": {
+        "health": 18,
+        "skill": [
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "22023": {
+    "id": "22023",
+    "name": "Grizzly Despair",
+    "picture": "NotFound",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "7",
+    "attack": 5,
+    "health": 19,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "pierce",
+        "x": 3,
+      },
+      {
+        "id": "leech",
+        "x": 3,
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 20,
+        "skill": [],
+      },
+      "3": {
+        "health": 21,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "2026": {
+    "id": "2026",
+    "name": "Lazarus",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "2000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "7",
+    "attack": 4,
+    "health": 15,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "7",
+        "z": 7,
+      },
+      {
+        "id": "enfeeble",
+        "x": 1,
+      },
+      {
+        "id": "leech",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+        ],
+      },
+      "3": {
+        "health": 17,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "enfeeble",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "enfeeble",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "12026": {
+    "id": "12026",
+    "name": "Lazarus, Harbinger",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "2000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "7",
+    "attack": 4,
+    "health": 19,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 3,
+        "y": "7",
+        "z": 7,
+      },
+      {
+        "id": "enfeeble",
+        "x": 3,
+      },
+      {
+        "id": "leech",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 20,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "enfeeble",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 22,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "enfeeble",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 4,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "enfeeble",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "22026": {
+    "id": "22026",
+    "name": "Lazarus, Betrayer",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "2000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "7",
+    "attack": 4,
+    "health": 23,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 4,
+        "y": "7",
+        "z": 7,
+      },
+      {
+        "id": "enfeeble",
+        "x": 4,
+      },
+      {
+        "id": "leech",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 24,
+        "skill": [],
+      },
+      "3": {
+        "attack": 5,
+        "skill": [],
+      },
+      "4": {
+        "health": 25,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 4,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "enfeeble",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 4,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "enfeeble",
+            "x": 5,
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+        ],
+      },
+    }
+  },
   "5000": {
     "id": "5000",
     "name": "Azure Sphinx",
@@ -18735,6 +19235,237 @@ var CARDS = {
           {
             "id": "weaken",
             "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "5033": {
+    "id": "5033",
+    "name": "Lost Soul",
+    "picture": "Lost_Soul_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "7",
+    "attack": 3,
+    "health": 7,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 1,
+      },
+      {
+        "id": "rally",
+        "x": 1,
+        "y": "7",
+        "z": 7,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 8,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 1,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "7",
+            "z": 7,
+          },
+        ],
+      },
+      "4": {
+        "health": 9,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 1,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "legion",
+            "x": 1,
+            "y": "7",
+            "z": 7,
+          },
+        ],
+      },
+    }
+  },
+  "15033": {
+    "id": "15033",
+    "name": "Wandering Soul",
+    "picture": "Lost_Soul_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "7",
+    "attack": 3,
+    "health": 10,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 1,
+      },
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "7",
+        "z": 7,
+      },
+      {
+        "id": "legion",
+        "x": 1,
+        "y": "7",
+        "z": 7,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 2,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "legion",
+            "x": 1,
+            "y": "7",
+            "z": 7,
+          },
+        ],
+      },
+      "3": {
+        "health": 11,
+        "skill": [],
+      },
+      "4": {
+        "health": 12,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 2,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "7",
+            "z": 7,
+          },
+        ],
+      },
+    }
+  },
+  "25033": {
+    "id": "25033",
+    "name": "Dread Soul",
+    "picture": "Lost_Soul_B",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "7",
+    "attack": 3,
+    "health": 13,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 2,
+      },
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "7",
+        "z": 7,
+      },
+      {
+        "id": "legion",
+        "x": 2,
+        "y": "7",
+        "z": 7,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 4,
+        "skill": [],
+      },
+      "3": {
+        "health": 15,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "7",
+            "z": 7,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "7",
+            "z": 7,
           },
         ],
       },
@@ -25900,6 +26631,221 @@ var CARDS = {
             "id": "weaken",
             "x": 3,
             "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "6033": {
+    "id": "6033",
+    "name": "Firebeard",
+    "picture": "Lost_Captain_A",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "7",
+    "attack": 4,
+    "health": 10,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "leech",
+        "x": 1,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 11,
+        "skill": [],
+      },
+      "3": {
+        "health": 12,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "5": {
+        "health": 13,
+        "skill": [],
+      },
+      "6": {
+        "health": 14,
+        "skill": [],
+      },
+    }
+  },
+  "16033": {
+    "id": "16033",
+    "name": "Pirate Firebeard",
+    "picture": "Lost_Captain_A",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "7",
+    "attack": 5,
+    "health": 14,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "leech",
+        "x": 2,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 15,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "4": {
+        "health": 16,
+        "skill": [],
+      },
+      "5": {
+        "health": 17,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "26033": {
+    "id": "26033",
+    "name": "Captain Firebeard",
+    "picture": "Lost_Captain_B",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "7",
+    "attack": 5,
+    "health": 18,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "leech",
+        "x": 4,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 19,
+        "skill": [],
+      },
+      "3": {
+        "attack": 6,
+        "skill": [],
+      },
+      "4": {
+        "health": 20,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
           },
         ],
       },
@@ -33679,6 +34625,283 @@ var CARDS = {
       },
     }
   },
+  "7033": {
+    "id": "7033",
+    "name": "Treebond Skull",
+    "picture": "Treebound_Skeleton_A",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "7",
+    "attack": 5,
+    "health": 19,
+    "cost": 4,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "rally",
+        "x": 1,
+        "y": "7",
+        "z": 7,
+        "all": "1",
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 21,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "7",
+            "z": 7,
+            "all": "1",
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "4": {
+        "health": 23,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "7",
+            "z": 7,
+            "all": "1",
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "7",
+            "z": 7,
+            "all": "1",
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "17033": {
+    "id": "17033",
+    "name": "Woodbond Skull",
+    "picture": "Treebound_Skeleton_A",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "7",
+    "attack": 5,
+    "health": 24,
+    "cost": 4,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "7",
+        "z": 7,
+        "all": "1",
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "7",
+            "z": 7,
+            "all": "1",
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "3": {
+        "health": 25,
+        "skill": [],
+      },
+      "4": {
+        "health": 26,
+        "skill": [],
+      },
+      "5": {
+        "attack": 6,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "7",
+            "z": 7,
+            "all": "1",
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "27033": {
+    "id": "27033",
+    "name": "Copsebond Skull",
+    "picture": "Treebound_Skeleton_B",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "7",
+    "attack": 6,
+    "health": 29,
+    "cost": 4,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 3,
+      },
+      {
+        "id": "rally",
+        "x": 3,
+        "y": "7",
+        "z": 7,
+        "all": "1",
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 7,
+        "health": 30,
+        "skill": [],
+      },
+      "3": {
+        "health": 32,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "7",
+            "z": 7,
+            "all": "1",
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "7",
+            "z": 7,
+            "all": "1",
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "7",
+            "z": 7,
+            "all": "1",
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
   "8000": {
     "id": "8000",
     "name": "Frostbite Giant",
@@ -36214,7 +37437,7 @@ var CARDS = {
         "skill": [
           {
             "id": "armored",
-            "x": 3,
+            "x": 2,
           },
           {
             "id": "protect",
@@ -36696,7 +37919,6 @@ var CARDS = {
         ],
       },
       "5": {
-        "attack": 5,
         "skill": [
           {
             "id": "fervor",
@@ -45961,6 +47183,10 @@ var CARDS = {
           },
         ],
       },
+      "6": {
+        "health": 55,
+        "skill": [],
+      },
     }
   },
   "223": {
@@ -49306,6 +50532,569 @@ var CARDS = {
           {
             "id": "strike",
             "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "265": {
+    "id": "265",
+    "name": "Void Warrior",
+    "picture": "skeletonwarrior",
+    "rarity": "3",
+    "set": "9999",
+    "card_type": "1",
+    "type": "2",
+    "attack": 0,
+    "health": 30,
+    "skill": [
+      {
+        "id": "enhance",
+        "x": 1,
+        "s": "poison",
+      },
+      {
+        "id": "enhance",
+        "x": 2,
+        "s": "leech",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 34,
+        "skill": [],
+      },
+      "3": {
+        "health": 39,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 2,
+            "s": "poison",
+          },
+          {
+            "id": "enhance",
+            "x": 2,
+            "s": "leech",
+          },
+        ],
+      },
+      "4": {
+        "health": 45,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 2,
+            "s": "poison",
+          },
+          {
+            "id": "enhance",
+            "x": 3,
+            "s": "leech",
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "health": 52,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 3,
+            "s": "poison",
+          },
+          {
+            "id": "enhance",
+            "x": 3,
+            "s": "leech",
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "266": {
+    "id": "266",
+    "name": "Shade Gang",
+    "picture": "voidminions",
+    "rarity": "3",
+    "set": "9999",
+    "card_type": "1",
+    "type": "2",
+    "attack": 0,
+    "health": 27,
+    "skill": [
+      {
+        "id": "strike",
+        "x": 1,
+      },
+      {
+        "id": "strike",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 31,
+        "skill": [],
+      },
+      "3": {
+        "health": 35,
+        "skill": [
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "health": 40,
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "health": 46,
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "267": {
+    "id": "267",
+    "name": "Wandering Wraith",
+    "picture": "wraithden",
+    "rarity": "3",
+    "set": "9999",
+    "card_type": "1",
+    "type": "1",
+    "attack": 0,
+    "health": 29,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 2,
+      },
+      {
+        "id": "jam",
+        "c": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 34,
+        "skill": [],
+      },
+      "3": {
+        "health": 39,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 3,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+      "4": {
+        "health": 45,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 3,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "evade",
+          },
+        ],
+      },
+      "5": {
+        "health": 51,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 3,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+          {
+            "id": "enhance",
+            "x": 2,
+            "s": "evade",
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "268": {
+    "id": "268",
+    "name": "Spine Coil",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "3",
+    "attack": 0,
+    "health": 32,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 2,
+      },
+      {
+        "id": "protect",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 36,
+        "skill": [],
+      },
+      "3": {
+        "health": 41,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 3,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "health": 47,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 3,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "health": 54,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 4,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "health": 62,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 4,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "269": {
+    "id": "269",
+    "name": "Arcane Turret",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "1",
+    "attack": 0,
+    "health": 34,
+    "skill": [
+      {
+        "id": "strike",
+        "x": 3,
+      },
+      {
+        "id": "jam",
+        "c": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 40,
+        "skill": [],
+      },
+      "3": {
+        "health": 44,
+        "skill": [
+          {
+            "id": "strike",
+            "x": 3,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+      "4": {
+        "health": 49,
+        "skill": [],
+      },
+      "5": {
+        "health": 55,
+        "skill": [
+          {
+            "id": "strike",
+            "x": 3,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+      "6": {
+        "health": 63,
+        "skill": [
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+    }
+  },
+  "270": {
+    "id": "270",
+    "name": "Feral Scientists",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "1",
+    "attack": 0,
+    "health": 32,
+    "skill": [
+      {
+        "id": "enhance",
+        "x": 2,
+        "s": "fervor",
+      },
+      {
+        "id": "counter",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 37,
+        "skill": [],
+      },
+      "3": {
+        "health": 42,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 2,
+            "s": "fervor",
+          },
+          {
+            "id": "counter",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 48,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 3,
+            "s": "fervor",
+          },
+          {
+            "id": "counter",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "health": 54,
+        "skill": [],
+      },
+      "6": {
+        "health": 61,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 3,
+            "s": "fervor",
+          },
+          {
+            "id": "enhance",
+            "x": 3,
+            "s": "legion",
+          },
+          {
+            "id": "counter",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "271": {
+    "id": "271",
+    "name": "Dr. Oppenhinder",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "1",
+    "attack": 0,
+    "health": 40,
+    "skill": [
+      {
+        "id": "enhance",
+        "x": 1,
+        "s": "berserk",
+      },
+      {
+        "id": "heal",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 44,
+        "skill": [],
+      },
+      "3": {
+        "health": 49,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "berserk",
+          },
+          {
+            "id": "heal",
+            "x": 4,
+          },
+        ],
+      },
+      "4": {
+        "health": 55,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 2,
+            "s": "berserk",
+          },
+          {
+            "id": "heal",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "health": 62,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 2,
+            "s": "berserk",
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "health": 70,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "berserk",
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "all": "1",
           },
         ],
       },
