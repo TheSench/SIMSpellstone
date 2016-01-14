@@ -124,12 +124,6 @@ function create_card_html(card, onField, onclick, state) {
     attr.value = card.level;
     htmlCard.attributes.setNamedItem(attr);
     if (card.picture) {
-        /*
-        var imageUrl = 'res/cardImages/' + card.picture + '.jpg';
-        var img = createImg(imageUrl);
-        img.className = "card-image";
-        htmlCard.appendChild(img);
-        */
         var icon = document.createElement("i");
         icon.className = 'sprite sprite-' + card.picture;
         htmlCard.appendChild(icon);
@@ -182,23 +176,18 @@ function create_card_html(card, onField, onclick, state) {
         htmlCard.appendChild(divSkills);
         htmlCard.appendChild(skillsDetail);
     }
-    //var faction = factions.names[card.type].toLowerCase();
-    if (false) {
-        var img = createImg('res/cardAssets/Frame_Aether_01.png');
-        img.className = "card-image";
-        htmlCard.insertBefore(img, divName);
-    } else {
-        htmlCard.appendChild(createDiv("faction"));
-    }
-    var statuses = getStatuses(card);
-    if (statuses.length > 0) {
-        htmlCard.appendChild(createDiv("hidden", "..."));
-        var divStatuses = createDiv("card-statuses");
-        for (var i = 0; i < statuses.length; i++) {
-            var status = statuses[i];
-            divStatuses.appendChild(status);
+    htmlCard.appendChild(createDiv("faction"));
+    if (onField) {
+        var statuses = getStatuses(card);
+        if (statuses.length > 0) {
+            htmlCard.appendChild(createDiv("hidden", "..."));
+            var divStatuses = createDiv("card-statuses");
+            for (var i = 0; i < statuses.length; i++) {
+                var status = statuses[i];
+                divStatuses.appendChild(status);
+            }
+            htmlCard.appendChild(divStatuses);
         }
-        htmlCard.appendChild(divStatuses);
     }
     if (card.sub_type) {
         var htmlSubfaction = getFactionIcon(card.sub_type);
@@ -235,8 +224,7 @@ function getSkillsHtml(divSkills, skillsShort, skills, onField) {
     }
 }
 
-function getPassiveSkills(divSkills, skillsShort, card, onField)
-{
+function getPassiveSkills(divSkills, skillsShort, card, onField) {
     getNonActivatedSkill(divSkills, skillsShort, onField, card, "evade");
     getNonActivatedSkill(divSkills, skillsShort, onField, card, "armored");
     getNonActivatedSkill(divSkills, skillsShort, onField, card, "counter");
@@ -256,8 +244,7 @@ function getTriggeredSkills(divSkills, skillsShort, card, onField) {
     }
 }
 
-function getNonActivatedSkill(divSkills, skillsShort, onField, card, skillName)
-{
+function getNonActivatedSkill(divSkills, skillsShort, onField, card, skillName) {
     var value = card[skillName];
     if (value) {
         var skill = {

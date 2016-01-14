@@ -33,7 +33,7 @@
     margin: 1px 0px;
 }
 
-.commander .card-image {
+.commander .sprite {
     border: solid;
     border-width: 5px;
     color: gold;
@@ -104,8 +104,11 @@
     background-image: linear-gradient(grey, black);
 }
 
-.card-image {
+.sprite {
     position: absolute;
+    background-repeat: no-repeat;
+    background-image: url('../res/cardImages/SpriteSheet.png');
+    display: block;
     height: 100%;
     width: 100%;
 }

@@ -1,11 +1,3 @@
-.sprite {
-    background-repeat: no-repeat;
-    background-image: url('../res/cardImages/SpriteSheet.png');
-    display: block;
-    width: 84px;
-    height: 120px;
-}
-
 .sprite-Acid_Elemental_A{ background-position: -0px 0; }
 .sprite-Acid_Elemental_B{ background-position: -84px 0; }
 .sprite-aetherBoss_A{ background-position: -168px 0; }
