@@ -90,7 +90,7 @@ var startsim = function (autostart) {
     } else {
         cache_cpu_deck = load_deck_from_cardlist();
     }
-    cache_cpu_deck_cards = getDeckCards(cache_player_deck);
+    cache_cpu_deck_cards = getDeckCards(cache_cpu_deck);
 
     card_cache = {};
 
