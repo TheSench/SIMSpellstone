@@ -7,6 +7,7 @@ var startsim = function (autostart) {
     }
 
     clearCardSpace();
+    card_cache = {};
 
     total_turns = 0;
     time_start = new Date();
@@ -91,8 +92,6 @@ var startsim = function (autostart) {
         cache_cpu_deck = load_deck_from_cardlist();
     }
     cache_cpu_deck_cards = getDeckCards(cache_cpu_deck);
-
-    card_cache = {};
 
     wins = 0;
     losses = 0;
@@ -194,24 +193,6 @@ function doSetup() {
     // Set up deck order priority reference
     if (getordered && !getexactorder) deck.player.ordered = copy_card_list(deck.player.cards);
     if (getordered2 && !getexactorder2) deck.cpu.ordered = copy_card_list(deck.cpu.cards);
-
-    // Set up battleground effects, if any
-    battlegrounds = {
-        onCreate: [],
-        onTurn: [],
-    };
-    if (getbattleground) {
-        var selected = getbattleground.split(",");
-        for (i = 0; i < selected.length; i++) {
-            var id = selected[i];
-            var battleground = BATTLEGROUNDS[id];
-            if (battleground.effect.skill) {
-                battlegrounds.onTurn.push(MakeBattleground(battleground.name, battleground.effect.skill));
-            } else if (battleground.effect.evolve_skill || battleground.effect.add_skill) {
-                battlegrounds.onCreate.push(MakeSkillModifier(battleground.name, battleground.effect));
-            }
-        }
-    }
 
     // Output decks for first simulation
     if (echo == '') {
