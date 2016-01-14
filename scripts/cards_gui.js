@@ -124,10 +124,15 @@ function create_card_html(card, onField, onclick, state) {
     attr.value = card.level;
     htmlCard.attributes.setNamedItem(attr);
     if (card.picture) {
+        /*
         var imageUrl = 'res/cardImages/' + card.picture + '.jpg';
         var img = createImg(imageUrl);
         img.className = "card-image";
         htmlCard.appendChild(img);
+        */
+        var icon = document.createElement("i");
+        icon.className = 'sprite sprite-' + card.picture;
+        htmlCard.appendChild(icon);
     }
     if (card.isCommander()) {
         htmlCard.classList.add("commander");
