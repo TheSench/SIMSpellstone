@@ -614,6 +614,7 @@ var showAdvancedFilters = function (skill) {
             $("div#timer").show();
             break;
     }
+    advancedFilters.dialog("option", "position", { mw: "center", at: "center", of: $("#" + skill)[0] });;
     advancedFilters.dialog("open");
     advancedFilters.skill = skill;
 
@@ -639,6 +640,7 @@ var showRunePicker = function (htmlCard, index) {
             }
         }
 
+        runesDialog.dialog("option", "position", { mw: "center", at: "center", of: htmlCard });;
         runesDialog.dialog("open");
         if (card.runes.length) {
             document.getElementById("runeChoices").value = card.runes[0].id;
