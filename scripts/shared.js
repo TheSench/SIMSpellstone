@@ -894,7 +894,7 @@ function base64triplet_to_unitInfo(triplet) {
     var dec2 = base64chars.indexOf(triplet[1]) * 64;
     var dec3 = base64chars.indexOf(triplet[2]);
 
-    return { id: (fusion + dec1 + dec2 + dec3), level: level };
+    return { id: (fusion + dec1 + dec2 + dec3), level: level, runes: [] };
 }
 
 function runeID_to_base64(runeID) {
@@ -1130,6 +1130,7 @@ function hash_decode(hash) {
                     unitInfo = {
                         id: unitInfo.id,
                         level: unitInfo.level,
+                        runes: [],
                     };
                     unitInfo.index = base64ToNumber(indexes[unitidx - 1]); // Skip commander
                 }
