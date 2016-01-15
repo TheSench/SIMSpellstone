@@ -266,7 +266,11 @@
 
             for (var key in card_map) {
                 var unit = card_map[key];
-                unit = { id: unit.unit_id, level: unit.level };
+                var runes = unit.runes;
+                unit = { id: unit.unit_id, level: unit.level, runes: [] };
+                for (var key in runes) {
+                    unit.runes.push({ id: runes[key].item_id });
+                }
                 if (key <= 15) {
                     deck_player.deck.push(unit);
                 } else {
