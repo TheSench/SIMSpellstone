@@ -78,7 +78,7 @@ input[type="button"].attack-filter {
     #filters.collapsed {
         overflow: hidden;
         max-height: 0px;
-    transition: max-height 0.15s ease-out;
+        transition: max-height 0.15s ease-out;
     }
 
     #filters fieldset {
@@ -87,43 +87,43 @@ input[type="button"].attack-filter {
         margin: 0;
     }
 
-#dialog-form {
+.dialog-form {
     padding: 0;
 }
 
-    #dialog-form label {
+    .dialog-form label {
         display: block;
         width: 100%;
     }
 
-    #dialog-form div {
+    .dialog-form div {
         width: initial;
     }
 
-    #dialog-form input[type=number] {
+    .dialog-form input[type=number] {
         width: 40%;
     }
 
-    #dialog-form label {
+    .dialog-form label {
         float: left;
         display: block;
         text-align: left;
     }
 
-    #dialog-form select {
+    .dialog-form select {
         float: left;
         display: block;
         text-align: left;
+    }
+
+    .dialog-form span {
+        float: left;
+        margin: 2px;
     }
 
 #filters span {
     float: left;
     margin: 5px 5px 0px 0px;
-}
-
-#dialog-form span {
-    float: left;
-    margin: 2px;
 }
 
 .ui-draggable .ui-dialog-titlebar {

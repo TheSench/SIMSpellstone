@@ -168,10 +168,6 @@ if (simulator_thread) {
             var o = get_o(src_card);
 
             var protect = skill['x'];
-            var augment = getAugment(src_card, skill.id);
-            if (augment && augment > 0) {
-                protect += augment;
-            }
             var all = skill['all'];
 
             var field_p_assaults = field[p]['assaults'];
@@ -189,8 +185,14 @@ if (simulator_thread) {
             if (!targets.length) return;
 
             // Check All
-            if (!all) {
+            if (all) {
+                var augment = 0;
+            } else {
                 targets = choose_random_target(targets);
+                var augment = getAugment(src_card, skill.id);
+                if (augment) {
+                    protect += augment;
+                }
             }
 
             for (var key = 0, len = targets.length; key < len; key++) {
@@ -201,7 +203,7 @@ if (simulator_thread) {
                     target.barrier_ice += protect;
                 }
                 if (debug) {
-                    if (augment && augment > 0) echo += '<u>(Enhance: +' + augment + ')</u><br>';
+                    if (augment) echo += '<u>(Enhance: +' + augment + ')</u><br>';
                     echo += debug_name(src_card) + ' barriers ' + debug_name(target) + ' by ' + protect + '<br>';
                 }
             }
@@ -232,7 +234,7 @@ if (simulator_thread) {
                 if (!target.isUnjammed()) continue;
                 if (!target.isInFaction(faction)) continue;
                 if (require_active_turn && !target.isActive()) continue;
-                if (target.hasSkill(s)) {
+                if (target.hasSkill(s, 0)) {
                     targets.push(key);
                 }
             }
@@ -271,10 +273,6 @@ if (simulator_thread) {
             var o = get_o(src_card);
 
             var heal = skill['x'];
-            var augment = getAugment(src_card, skill.id);
-            if (augment && augment > 0) {
-                heal += augment;
-            }
             var all = skill['all'];
 
             var field_p_assaults = field[p]['assaults'];
@@ -292,7 +290,16 @@ if (simulator_thread) {
             // No Targets
             if (!targets.length) return;
 
-            if (!all) targets = choose_random_target(targets);
+            // Check All
+            if (all) {
+                var augment = 0;
+            } else {
+                targets = choose_random_target(targets);
+                var augment = getAugment(src_card, skill.id);
+                if (augment) {
+                    heal += augment;
+                }
+            }
 
             for (var key = 0, len = targets.length; key < len; key++) {
                 var target = field_p_assaults[targets[key]];
@@ -306,7 +313,7 @@ if (simulator_thread) {
                 if (heal_amt > target['health'] - target['health_left']) heal_amt = target['health'] - target['health_left'];
                 target['health_left'] += heal_amt;
                 if (debug) {
-                    if (augment && augment > 0) echo += '<u>(Enhance: +' + augment + ')</u><br>';
+                    if (augment) echo += '<u>(Enhance: +' + augment + ')</u><br>';
                     echo += debug_name(src_card) + ' heals ' + debug_name(target) + ' by ' + heal_amt + '<br>';
                 }
             }
@@ -325,7 +332,6 @@ if (simulator_thread) {
             var o = get_o(src_card);
 
             var strike = skill['x'];
-            var augment = getAugment(src_card, skill.id);
 
             var all = skill['all'];
 
@@ -344,7 +350,15 @@ if (simulator_thread) {
             if (!targets.length) return;
 
             // Check All
-            if (!all) targets = choose_random_target(targets);
+            if (all) {
+                var augment = 0;
+            } else {
+                targets = choose_random_target(targets);
+                var augment = getAugment(src_card, skill.id);
+                if (augment) {
+                    strike += augment;
+                }
+            }
 
             for (var key = 0, len = targets.length; key < len; key++) {
                 var target = field_x_assaults[targets[key]];
@@ -467,6 +481,7 @@ if (simulator_thread) {
 
             var frost = skill['x'];
             var augment = getAugment(src_card, skill.id);
+            if (augment) frost += augment;
 
             var all = skill['all'];
 
@@ -555,10 +570,6 @@ if (simulator_thread) {
             var o = get_o(src_card);
 
             var enfeeble = skill['x'];
-            var augment = getAugment(src_card, skill.id);
-            if (augment && augment > 0) {
-                enfeeble += augment;
-            }
 
             var all = skill['all'];
 
@@ -577,7 +588,15 @@ if (simulator_thread) {
             if (!targets.length) return;
 
             // Check All
-            if (!all) targets = choose_random_target(targets);
+            if (all) {
+                var augment = 0;
+            } else {
+                targets = choose_random_target(targets);
+                var augment = getAugment(src_card, skill.id);
+                if (augment) {
+                    enfeeble += augment;
+                }
+            }
 
             for (var key = 0, len = targets.length; key < len; key++) {
                 var target = field_x_assaults[targets[key]];
@@ -606,10 +625,6 @@ if (simulator_thread) {
             var o = get_o(src_card);
 
             var weaken = skill['x'];
-            var augment = getAugment(src_card, skill.id);
-            if (augment && augment > 0) {
-                weaken += augment;
-            }
 
             var all = skill['all'];
 
@@ -632,7 +647,15 @@ if (simulator_thread) {
             if (!targets.length) return;
 
             // Check All
-            if (!all) targets = choose_random_target(targets);
+            if (all) {
+                var augment = 0;
+            } else {
+                targets = choose_random_target(targets);
+                var augment = getAugment(src_card, skill.id);
+                if (augment) {
+                    weaken += augment;
+                }
+            }
 
             for (var key = 0, len = targets.length; key < len; key++) {
                 var target = field_x_assaults[targets[key]];
@@ -646,7 +669,7 @@ if (simulator_thread) {
 
                 target['attack_weaken'] += weaken;
                 if (debug) {
-                    if (augment && augment > 0) echo += '<u>(Enhance: +' + augment + ')</u><br>';
+                    if (augment) echo += '<u>(Enhance: +' + augment + ')</u><br>';
                     echo += debug_name(src_card) + ' weakens ' + debug_name(target) + ' by ' + weaken + '<br>';
                 }
             }
@@ -665,10 +688,6 @@ if (simulator_thread) {
             var p = get_p(src_card);
 
             var rally = skill['x'];
-            var augment = getAugment(src_card, 'rally');
-            if (augment) {
-                rally += augment;
-            }
             var all = skill['all'];
 
             var field_p_assaults = field[p]['assaults'];
@@ -685,8 +704,14 @@ if (simulator_thread) {
             if (!targets.length) return;
 
             // Check All
-            if (!all) {
+            if (all) {
+                var augment = 0;
+            } else {
                 targets = choose_random_target(targets);
+                var augment = getAugment(src_card, skill.id);
+                if (augment) {
+                    rally += augment;
+                }
             }
 
             for (var key = 0, len = targets.length; key < len; key++) {
@@ -710,9 +735,8 @@ if (simulator_thread) {
 
             var rally = skill['x'];
             var augment = getAugment(src_card, skill.id);
-            if (augment) {
-                rally += augment;
-            }
+            if (augment) rally += augment;
+
             var faction = skill['y'];
 
             var target_key = src_card['key'] - 1;
@@ -743,9 +767,8 @@ if (simulator_thread) {
 
             var rally = skill['x'];
             var augment = getAugment(src_card, skill.id);
-            if (augment) {
-                rally += augment;
-            }
+            if (augment) rally += augment;
+
             var faction = skill['y'];
 
             var fervorAmount = 0;
@@ -1229,7 +1252,7 @@ if (simulator_thread) {
         var pierce = current_assault.pierce;
         if (pierce) {
             var augment = getAugment(current_assault, 'pierce');
-            if (augment && augment > 0) {
+            if (augment) {
                 pierce += augment;
             }
         } else {
@@ -1244,7 +1267,7 @@ if (simulator_thread) {
         /*if (target.skill.armored) {
             //armor = target.skill.armored.x;*/
             var augment = getAugment(target, 'armored');
-            if (augment && augment > 0) {
+            if (augment) {
                 armor += augment;
             }
         }
@@ -1363,7 +1386,7 @@ if (simulator_thread) {
 
                 var counter_damage = 0 + target.counter;
                 var augment = getAugment(target, 'counter');
-                if (augment && augment > 0) {
+                if (augment) {
                     counter_damage += augment;
                 }
 
