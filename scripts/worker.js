@@ -64,10 +64,10 @@ function initializeWorker(url, use_transferables) {
 	// Determine which results-reporting mechanism to use
 	if (use_transferables) {
 	    self.returnResults = returnResultsTransferableObjects;
-	    self.returnBest = returnBestTransferableObjects;
+	    self.returnStats = returnStatsTransferableObjects;
 	} else {
 	    self.returnResults = returnResultsStructuredCloning;
-	    self.returnBest = returnBestStructuredCloning;
+	    self.returnStats = returnStatsStructuredCloning;
 	}
 }
 
@@ -162,7 +162,7 @@ function returnResultsStructuredCloning() {
 
 // Return results to the GUI thread using Structured Cloning
 // (used when Transferable Objects are NOT supported by the browser)
-function returnBestTransferableObjects() {
+function returnStatsTransferableObjects() {
     // Create results ArrayBuffer
     var hashLength = 96;                // 16 cards - 3 characters each - 2 bytes per character
     var statLength = hashLength + 16;   // 4 ints @ 4 bytes per float
@@ -204,7 +204,7 @@ function returnBestTransferableObjects() {
 
 // Return results to the GUI thread using Structured Cloning
 // (used when Transferable Objects are NOT supported by the browser)
-function returnBestStructuredCloning() {
+function returnStatsStructuredCloning() {
     // Send batch results back to main thread
     self.postMessage({ "cmd": "order_stats", "data": orders });
 }
@@ -335,9 +335,9 @@ function run_sims() {
 	draws = 0;
 
 	while (sims_left) {
-		run_sim();
+	    run_sim();
 	}
-	returnBest();
+	if (trackStats) returnStats();
 	returnResults();
 }
 
