@@ -2,13 +2,43 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
+    <script type="text/javascript" src="scripts/shared.js"></script>
     <script>
         function parseRunes(field) {
-            var data = JSON.parse(field.value);
+            var runes = {};
+            try
+            {
+                var items = JSON.parse(field.value).item_data;
+                for (var key in items) {
+                    var item = items[key];
+                    if (item.name.indexOf("Rune") > -1 && item.type == 3) {
+                        runes[key] = item;
+                    }
+                }
+            } catch (error) {}
+            field.value = "";
+            document.getElementById("output").value = ("var RUNES = " + JSON.stringify(runes));
+        }
+
+        function hashAndUnHash(field) {
+            var endResult = {};
+            try
+            {
+                var unit_info = JSON.parse(field.value);
+                endResult = decimal_to_unitInfo(unitInfo_to_decimal(unit_info));
+            }
+            catch (error) {
+            //    alert(error)
+            }
+            field.value = "";
+            //document.getElementById("output").innerHTML = base64_to_runeID(runeID_to_base64(5111));
+            document.getElementById("output").innerHTML = (JSON.stringify(endResult));
         }
     </script>
 </head>
 <body>
-    <input id="runes" type="text" />
+    <input id="runes" type="text" onchange="hashAndUnHash(this)" style="width:100%" />
+    <br/>
+    <div id="output" style="width:100%" />
 </body>
 </html>

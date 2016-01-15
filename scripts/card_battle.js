@@ -194,10 +194,7 @@ function doSetup() {
     if (getordered && !getexactorder) deck.player.ordered = copy_card_list(deck.player.cards);
     if (getordered2 && !getexactorder2) deck.cpu.ordered = copy_card_list(deck.cpu.cards);
 
-    // Output decks for first simulation
-    if (echo == '') {
-        debug_dump_decks();
-    }
+    debug_dump_decks();
 }
 
 function processSimResult() {

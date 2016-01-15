@@ -104,6 +104,7 @@ if (use_workers) {
         } else {
             sims_left = 0;
         }
+        delete e;
     }
 
     // Handle messages from the worker thread using Structured Cloning
@@ -181,7 +182,11 @@ if (use_workers) {
                     simpersecbatch = batch_size / batch_elapse;
                 }
                 simpersecbatch = simpersecbatch.toFixed(1);
-                outp(echo + '<strong>Running simulations...</strong> (' + games + '/' + (num_sims) + ') ' + percent_complete + '%<br>' + elapse + ' seconds<br>' + simpersecbatch + ' simulations per second<br>' + gettable());
+                if (suppressOutput) {
+                    outp(echo + '<strong>Running simulations...</strong> (' + games + '/' + (num_sims) + ') ' + percent_complete + '%<br>' + elapse + ' seconds<br>' + simpersecbatch + ' simulations per second<br>');
+                } else {
+                    outp(echo + '<strong>Running simulations...</strong> (' + games + '/' + (num_sims) + ') ' + percent_complete + '%<br>' + elapse + ' seconds<br>' + simpersecbatch + ' simulations per second<br>' + gettable());
+                }
 
                 // Smooth output by calcuating stats for the last few .1 second intervals, rather than the last one
                 // This reduces the impact of this loop firing multiple times in between getting results from workers
@@ -285,7 +290,11 @@ if (use_workers) {
         var simpersec = games / elapse;
         simpersec = simpersec.toFixed(1);
 
-        outp(echo + '<br><strong>Simulations complete.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>' + gettable() + getOrderStatsTable());
+        if (suppressOutput) {
+            outp(echo + '<br><strong>Simulations complete.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>');
+        } else {
+            outp(echo + '<br><strong>Simulations complete.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>' + gettable() + getOrderStatsTable());
+        }
 
         // Show interface
         document.getElementById('ui').style.display = 'block';
@@ -426,6 +435,7 @@ if (use_workers) {
 
         // Output decks for first simulation
         if (debug && (loss_debug || win_debug)) {
+        } else if (suppressOutput) {
         } else if (echo == '') {
             debug_dump_decks();
         }
@@ -467,7 +477,7 @@ if (use_workers) {
             workers[0].postMessage({ 'cmd': 'run_sims' });
 
         } else {
-            var simpersecbatch = 0;
+            var simpersecbatch = 2500;
             if (batch_size > 0) { // batch_size == 0 means a fresh set of simulations
                 var temp = games / (num_sims) * 100;
                 temp = temp.toFixed(1);

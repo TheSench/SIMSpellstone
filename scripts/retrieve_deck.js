@@ -161,6 +161,16 @@
         }, 1);
     }
 
+    function startClashBattle() {
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('startClashBattle', null, function (response) {
+                beginBattle(response);
+                HideLoadingSplash();
+            });
+        }, 1);
+    }
+
     function fightGuildMember(target_user_id) {
         var params = {
             target_user_id: target_user_id
@@ -295,7 +305,12 @@
         var units = deck_info.units
         for (var i = 0; i < units.length; i++) {
             var unit = units[i];
-            deck.deck.push({ id: unit.unit_id, level: unit.level });
+            var runes = unit.runes;
+            unit = { id: unit.unit_id, level: unit.level, runes: [] };
+            for(var key in runes) {
+                unit.runes.push({ id: runes[key].item_id });
+            }
+            deck.deck.push(unit);
         }
         return deck;
     }

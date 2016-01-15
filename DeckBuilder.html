@@ -16,6 +16,7 @@
     <!-- This script contains the cached data for cards, missions, quests, raids,
         and battlegrounds -->
     <script id="cards_script" type="text/javascript" src="cards/cache.js"></script>
+    <script id="runes_script" type="text/javascript" src="scripts/runes.js"></script>
     <script id="shared_functions" type="text/javascript" src="scripts/shared.js"></script>
     <script id="gui_script" type="text/javascript" src="scripts/cards_gui.js"></script>
     <script id="cards_script" type="text/javascript" src="scripts/gui_script.js"></script>
@@ -32,7 +33,7 @@
     <span id="deck"></span>
     <br />
     <input id="resetDeck" type="button" value="Reset" onclick="hash_changed('GDK')" />
-    <br/>
+    <br />
     <hr />
     <div class="collapser">
         <img id="collapseFilters" src="res/misc/Minus.png" onclick="toggleFilterDisplay(this);" />
@@ -61,26 +62,26 @@
             </fieldset>
             <fieldset>
                 <span>Skills:</span>
-                <input type="image" id="armored" name="skill" title="Armor" src="res/skills/Armor.png" onclick="filterSkill(this, 'armored')" oncontextmenu="return contextTest('armored')" />
-                <input type="image" id="protect" name="skill" title="Barrier" src="res/skills/Barrier.png" onclick="filterSkill(this, 'protect')" oncontextmenu="return contextTest('protect')" />
-                <input type="image" id="protect_ice" name="skill" title="Iceshatter Barrier" src="res/skills/Iceshatter.png" onclick="filterSkill(this, 'protect_ice')" oncontextmenu="    return contextTest('protect_ice')" />
-                <input type="image" id="berserk" name="skill" title="Berserk" src="res/skills/Berserk.png" onclick="filterSkill(this, 'berserk')" oncontextmenu="return contextTest('berserk')" />
-                <input type="image" id="strike" name="skill" title="Bolt" src="res/skills/Bolt.png" onclick="filterSkill(this, 'strike')" oncontextmenu="return contextTest('strike')" />
-                <input type="image" id="flurry" name="skill" title="Dualstrike" src="res/skills/Dualstrike.png" onclick="filterSkill(this, 'flurry')" oncontextmenu="return contextTest('flurry')" />
-                <input type="image" id="rally" name="skill" title="Empower" src="res/skills/Empower.png" onclick="filterSkill(this, 'rally')" oncontextmenu="return contextTest('rally')" />
-                <input type="image" id="enhance" name="skill" title="Enhance" src="res/skills/Enhance.png" onclick="filterSkill(this, 'enhance')" oncontextmenu="return contextTest('enhance')" />
-                <input type="image" id="fervor" name="skill" title="Fervor" src="res/skills/Fervor.png" onclick="filterSkill(this, 'fervor')" oncontextmenu="return contextTest('fervor')" />
-                <input type="image" id="jam" name="skill" title="Freeze" src="res/skills/Freeze.png" onclick="filterSkill(this, 'jam')" oncontextmenu="return contextTest('jam')" />
-                <input type="image" id="frost" name="skill" title="Frostbreath" src="res/skills/Frost.png" onclick="filterSkill(this, 'frost')" oncontextmenu="return contextTest('frost')" />
-                <input type="image" id="heal" name="skill" title="Heal" src="res/skills/Heal.png" onclick="filterSkill(this, 'heal')" oncontextmenu="return contextTest('heal')" />
-                <input type="image" id="enfeeble" name="skill" title="Hex" src="res/skills/Hex.png" onclick="filterSkill(this, 'enfeeble')" oncontextmenu="return contextTest('enfeeble')" />
-                <input type="image" id="evade" name="skill" title="Invisibile" src="res/skills/Invisibility.png" onclick="filterSkill(this, 'evade')" oncontextmenu="return contextTest('evade')" />
-                <input type="image" id="pierce" name="skill" title="Pierce" src="res/skills/Pierce.png" onclick="filterSkill(this, 'pierce')" oncontextmenu="return contextTest('pierce')" />
-                <input type="image" id="poison" name="skill" title="Poison" src="res/skills/Poison.png" onclick="filterSkill(this, 'poison')" oncontextmenu="return contextTest('poison')" />
-                <input type="image" id="burn" name="skill" title="Scorch" src="res/skills/Scorch.png" onclick="filterSkill(this, 'burn')" oncontextmenu="return contextTest('burn')" />
-                <input type="image" id="leech" name="skill" title="Siphon" src="res/skills/Siphon.png" onclick="filterSkill(this, 'leech')" oncontextmenu="return contextTest('leech')" />
-                <input type="image" id="counter" name="skill" title="Vengeance" src="res/skills/Vengeance.png" onclick="filterSkill(this, 'counter')" oncontextmenu="return contextTest('counter')" />
-                <input type="image" id="weaken" name="skill" title="Weaken" src="res/skills/Weaken.png" onclick="filterSkill(this, 'weaken')" oncontextmenu="return contextTest('weaken')" />
+                <input type="image" id="armored" name="skill" title="Armor" src="res/skills/Armor.png" onclick="filterSkill(this, 'armored')" oncontextmenu="return showAdvancedFilters('armored')" />
+                <input type="image" id="protect" name="skill" title="Barrier" src="res/skills/Barrier.png" onclick="filterSkill(this, 'protect')" oncontextmenu="return showAdvancedFilters('protect')" />
+                <input type="image" id="protect_ice" name="skill" title="Iceshatter Barrier" src="res/skills/Iceshatter.png" onclick="filterSkill(this, 'protect_ice')" oncontextmenu="    return showAdvancedFilters('protect_ice')" />
+                <input type="image" id="berserk" name="skill" title="Berserk" src="res/skills/Berserk.png" onclick="filterSkill(this, 'berserk')" oncontextmenu="return showAdvancedFilters('berserk')" />
+                <input type="image" id="strike" name="skill" title="Bolt" src="res/skills/Bolt.png" onclick="filterSkill(this, 'strike')" oncontextmenu="return showAdvancedFilters('strike')" />
+                <input type="image" id="flurry" name="skill" title="Dualstrike" src="res/skills/Dualstrike.png" onclick="filterSkill(this, 'flurry')" oncontextmenu="return showAdvancedFilters('flurry')" />
+                <input type="image" id="rally" name="skill" title="Empower" src="res/skills/Empower.png" onclick="filterSkill(this, 'rally')" oncontextmenu="return showAdvancedFilters('rally')" />
+                <input type="image" id="enhance" name="skill" title="Enhance" src="res/skills/Enhance.png" onclick="filterSkill(this, 'enhance')" oncontextmenu="return showAdvancedFilters('enhance')" />
+                <input type="image" id="fervor" name="skill" title="Fervor" src="res/skills/Fervor.png" onclick="filterSkill(this, 'fervor')" oncontextmenu="return showAdvancedFilters('fervor')" />
+                <input type="image" id="jam" name="skill" title="Freeze" src="res/skills/Freeze.png" onclick="filterSkill(this, 'jam')" oncontextmenu="return showAdvancedFilters('jam')" />
+                <input type="image" id="frost" name="skill" title="Frostbreath" src="res/skills/Frost.png" onclick="filterSkill(this, 'frost')" oncontextmenu="return showAdvancedFilters('frost')" />
+                <input type="image" id="heal" name="skill" title="Heal" src="res/skills/Heal.png" onclick="filterSkill(this, 'heal')" oncontextmenu="return showAdvancedFilters('heal')" />
+                <input type="image" id="enfeeble" name="skill" title="Hex" src="res/skills/Hex.png" onclick="filterSkill(this, 'enfeeble')" oncontextmenu="return showAdvancedFilters('enfeeble')" />
+                <input type="image" id="evade" name="skill" title="Invisibile" src="res/skills/Invisibility.png" onclick="filterSkill(this, 'evade')" oncontextmenu="return showAdvancedFilters('evade')" />
+                <input type="image" id="pierce" name="skill" title="Pierce" src="res/skills/Pierce.png" onclick="filterSkill(this, 'pierce')" oncontextmenu="return showAdvancedFilters('pierce')" />
+                <input type="image" id="poison" name="skill" title="Poison" src="res/skills/Poison.png" onclick="filterSkill(this, 'poison')" oncontextmenu="return showAdvancedFilters('poison')" />
+                <input type="image" id="burn" name="skill" title="Scorch" src="res/skills/Scorch.png" onclick="filterSkill(this, 'burn')" oncontextmenu="return showAdvancedFilters('burn')" />
+                <input type="image" id="leech" name="skill" title="Siphon" src="res/skills/Siphon.png" onclick="filterSkill(this, 'leech')" oncontextmenu="return showAdvancedFilters('leech')" />
+                <input type="image" id="counter" name="skill" title="Vengeance" src="res/skills/Vengeance.png" onclick="filterSkill(this, 'counter')" oncontextmenu="return showAdvancedFilters('counter')" />
+                <input type="image" id="weaken" name="skill" title="Weaken" src="res/skills/Weaken.png" onclick="filterSkill(this, 'weaken')" oncontextmenu="return showAdvancedFilters('weaken')" />
             </fieldset>
             <fieldset>
                 <span>Faction:</span>
@@ -154,7 +155,7 @@
     <hr />
     <span id="cardSpace"></span>
 
-    <div id="dialog-form">
+    <div id="advancedFilters" class="dialog-form">
         <form>
             <fieldset>
                 <div id="amount">
@@ -218,6 +219,19 @@
                         <option value="1">All</option>
                     </select>
                 </label>
+            </fieldset>
+        </form>
+    </div>
+
+    <div id="runes" class="dialog-form">
+        <form>
+            <fieldset>
+                <div>
+                    <label for="runeChoices">Rune</label>
+                    <select name="runeChoices" id="runeChoices">
+                        <option value=""></option>
+                    </select>
+                </div>
             </fieldset>
         </form>
     </div>

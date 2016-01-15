@@ -32,7 +32,8 @@ var showUpgrades = false;
 
 var units = [];
 var unitsShown = [];
-var dialog;
+var advancedFilters;
+var runesDialog;
 var form;
 
 var initDeckBuilder = function () {
@@ -47,18 +48,33 @@ var initDeckBuilder = function () {
 }
 
 var setupPopups = function () {
-    dialog = $("#dialog-form").dialog({
+    advancedFilters = $("#advancedFilters").dialog({
         autoOpen: false,
         width: 100,
         minHeight: 20,
         modal: true,
         buttons: {
             OK: function () {
-                filterAdvanced(dialog.skill);
-                dialog.dialog("close");
+                filterAdvanced(advancedFilters.skill);
+                advancedFilters.dialog("close");
             },
             Cancel: function () {
-                dialog.dialog("close");
+                advancedFilters.dialog("close");
+            }
+        },
+    });
+    runesDialog = $("#runes").dialog({
+        autoOpen: false,
+        width: 250,
+        minHeight: 20,
+        modal: true,
+        buttons: {
+            OK: function () {
+                setRune(runesDialog);
+                runesDialog.dialog("close");
+            },
+            Cancel: function () {
+                runesDialog.dialog("close");
             }
         },
     });
@@ -91,7 +107,7 @@ var drawAllCards = function () {
         }
     }
 
-    draw_deck(deck, removeFromDeck);
+    draw_deck(deck, removeFromDeck, showRunePicker);
     draw_card_list(unitsShown, addToDeck);
     if (inventory) {
         var unitsToHide = deck.deck.slice();
@@ -135,14 +151,13 @@ var addUnitLevels = function (id, maxlevel) {
     }
 }
 
-var i = 0;
 var hash_changed = function (hash) {
     if (hash) {
         document.getElementById("hash").value = hash;
         if (typeof simulatorDeckHashField !== 'undefined') simulatorDeckHashField.value = hash;
     }
     deck = hash_decode(document.getElementById("hash").value);
-    draw_deck(deck, removeFromDeck);
+    draw_deck(deck, removeFromDeck, showRunePicker);
 }
 
 var addToDeck = function (htmlCard) {
@@ -154,7 +169,7 @@ var addToDeck = function (htmlCard) {
         deck.deck.push(unit);
     }
     if (fromInventory) htmlCard.classList.add("picked");
-    draw_deck(deck, removeFromDeck);
+    draw_deck(deck, removeFromDeck, showRunePicker);
     updateHash();
 };
 
@@ -175,7 +190,7 @@ var removeFromDeck = function (htmlCard, index) {
             }
         }
     }
-    draw_deck(deck, removeFromDeck);
+    draw_deck(deck, removeFromDeck, showRunePicker);
     updateHash();
 };
 
@@ -508,7 +523,7 @@ var filterFusion = function (button, fusion) {
     applyFilters();
 }
 
-var contextTest = function (skill) {
+var showAdvancedFilters = function (skill) {
 
     $("label[for=all]").hide();
     $("div#amount").hide();
@@ -599,10 +614,49 @@ var contextTest = function (skill) {
             $("div#timer").show();
             break;
     }
-    dialog.dialog("open");
-    dialog.skill = skill;
+    advancedFilters.dialog("open");
+    advancedFilters.skill = skill;
 
     return false;
+}
+
+var showRunePicker = function (htmlCard, index) {
+    var unit = getUnitFromCard(htmlCard);
+    var card = get_card_by_id(unit);
+
+    var select = document.getElementById("runeChoices");
+    select.innerHTML = '<option value=""></option>';
+
+    if(card.rarity >= 3 && !card.isCommander()) {
+
+        for (var key in RUNES) {
+            var rune = RUNES[key];
+            if (canUseRune(card, rune.id)) {
+                var option = document.createElement('option');
+                option.appendChild(document.createTextNode(rune.desc));
+                option.value = rune.id;
+                select.appendChild(option);
+            }
+        }
+
+        runesDialog.dialog("open");
+        if (card.runes.length) {
+            document.getElementById("runeChoices").value = card.runes[0].id;
+        } else {
+            document.getElementById("runeChoices").value = '';
+        }
+        runesDialog.index = index;
+    }
+
+    return false;
+}
+
+var setRune = function (runesDialog) {
+    var runeID = document.getElementById("runeChoices").value;
+    var index = runesDialog.index;
+    deck.deck[index].runes = [{ id: runeID }];
+    draw_deck(deck, removeFromDeck, showRunePicker);
+    updateHash();
 }
 
 var filterSet = function (button, set) {
@@ -832,7 +886,19 @@ var makeUnitKey = function (unit) {
 }
 
 var getUnitFromCard = function (htmlCard) {
-    var unit = { id: htmlCard.attributes.getNamedItem("data-id").value, level: htmlCard.attributes.getNamedItem("data-level").value };
+    var unit = {
+        id: htmlCard.attributes.getNamedItem("data-id").value,
+        level: htmlCard.attributes.getNamedItem("data-level").value,
+    };
+    var runeIDs = htmlCard.attributes.getNamedItem("data-runeids").value.split(",");
+    var runes = [];
+    for (var i = 0, len = runeIDs.length; i < len; i++) {
+        var runeID = runeIDs[i];
+        if (runeID > 0) {
+            runes.push({ id: runeID });
+        }
+    }
+    unit.runes = runes;
     return unit;
 }
 

@@ -6,6 +6,7 @@ var clearHash1 = true;
 var clearList1 = true;
 var clearHash2 = true;
 var clearList2 = true;
+var suppressOutput = true;
 
 function SimGuild() {
     DeckRetriever.retrieveGuildDecks(false, RunGuildSIMS);

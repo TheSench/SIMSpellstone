@@ -875,3 +875,4 @@ var cache_player_deck_cards;
 var cache_cpu_deck_cards;
 var choice = undefined;
 var auto_mode = false;
+var suppressOutput = false;

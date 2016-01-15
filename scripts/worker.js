@@ -375,4 +375,4 @@ var running = false;
 var simulator_thread = true;
 var orders = {};
 
-importScripts('simulator_base.js', 'shared.js');
+importScripts('simulator_base.js', 'shared.js', 'runes.js');
