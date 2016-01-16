@@ -864,7 +864,7 @@ if (simulator_thread) {
         }
 
         if (getsiege) {
-            var tower = { id: 601 + parseInt(tower_type), level: parseInt(tower_level)-1 };
+            var tower = makeUnitInfo(601 + parseInt(tower_type), parseInt(tower_level)-1);
             var towerCard = get_card_apply_battlegrounds(tower);
             play_card(towerCard, 'cpu', true);
         }
@@ -1057,7 +1057,7 @@ if (simulator_thread) {
             // Store plays
             if (trackStats && p == 'player') {
                 var unit = deck_p_deck[card_picked];
-                plays.push({ id: unit.id, level: unit.level });
+                plays.push(makeUnitInfo(unit.id, unit.level));
             }
 
             // Remove from deck

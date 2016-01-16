@@ -145,7 +145,7 @@ var addUnit = function (unit) {
 
 var addUnitLevels = function (id, maxlevel) {
     for (var level = 1; level <= maxlevel; level++) {
-        var unit = { id: id, level: level };
+        var unit = makeUnitInfo(id, level);
         units.push(unit);
         if (showUpgrades || level == maxlevel) unitsShown.push(unit);
     }
