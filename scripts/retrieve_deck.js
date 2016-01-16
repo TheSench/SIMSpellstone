@@ -268,8 +268,8 @@
                 var unit = card_map[key];
                 var runes = unit.runes;
                 unit = makeUnitInfo(unit.unit_id, unit.level);
-                for (var key in runes) {
-                    unit.runes.push({ id: runes[key].item_id });
+                for (var r in runes) {
+                    unit.runes.push({ id: runes[r].item_id });
                 }
                 if (key <= 15) {
                     deck_player.deck.push(unit);
