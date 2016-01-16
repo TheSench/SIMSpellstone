@@ -273,17 +273,34 @@ var MakeAssault = (function () {
         hasSkill: function (s, all) {
             var target_skills = this.skill;
             switch (s) {
+                // Passives
                 case 'armored':
+                case 'berserk':
+                case 'burn':
                 case 'counter':
                 case 'evade':
+                case 'leech':
                 case 'pierce':
+                case 'poison':
+                case 'flurry':
                     return this[s];
                     break;
+                // Early Activation skills
                 case 'rally':
                 case 'legion':
                 case 'fervor':
                     target_skills = this.empowerSkills;
                     break;
+                // Activation skills
+                case 'enfeeble':
+                case 'enhance':
+                case 'frost':
+                case 'heal':
+                case 'jam':
+                case 'protect':
+                case 'protect_ice':
+                case 'strike':
+                case 'weaken':
                 default:
                     target_skills = this.skill
                     break;
@@ -376,10 +393,10 @@ var boostSkill = function (card, boost) {
         case 'poison':
             card[skillID] += parseInt(boost.x);
             return;
-            // Empower Skills
         case 'flurry':
             card[skillID].c -= parseInt(boost.c);
             return;
+        // Early Activation skills
         case 'fervor':
         case 'rally':
         case 'legion':
