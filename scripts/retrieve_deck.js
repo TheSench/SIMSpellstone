@@ -225,6 +225,7 @@
             sendRequest('updateFaction', null, function (response) {
                 var members = response.faction.members;
                 publicInfo.factionDecks = {};
+                publicInfo.allDecks = {};
                 for (var key in members) {
                     getUserDeck(key, draw);
                 }
@@ -247,6 +248,7 @@
                 var deck_info = response.player_info.deck;
                 var deck = getDeckFromDeckInfo(deck_info);
                 publicInfo.factionDecks[name] = deck;
+                publicInfo.allDecks[name] = deck;
             }
         });
     }
@@ -399,6 +401,7 @@
         getFullUserData: getFullUserData,
         updateMyDeck: updateMyDeck,
         factionDecks: {},
+        allDecks: {},
         baseRequest: baseRequest,
         getDecksFromJSON: getDecksFromJSON,
     }

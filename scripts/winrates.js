@@ -20,6 +20,108 @@ function RunGuildSIMS() {
     defenderKeys = [];
     winrates = {};
 
+    delete (DeckRetriever.allDecks['CustomAttackDeck']);
+    delete (DeckRetriever.allDecks['CustomDefenseDeck']);
+
+    var attacker = checkForSpecifiedAttacker();
+    var defender = checkForSpecifiedDefender();
+
+    var decks = DeckRetriever.factionDecks;
+    for (var key in decks) {
+        if (!attacker) attackerKeys.push(key);
+        if (!defender) defenderKeys.push(key);
+    }
+
+    attackerKeys.sort(caselessCompare);
+    defenderKeys.sort(caselessCompare);
+
+    if (attacker) {
+        var key = 'CustomAttackDeck';
+        attackerKeys.push(key);
+        DeckRetriever.allDecks[key] = attacker;
+    }
+    if (defender) {
+        var key = 'CustomDefenseDeck';
+        defenderKeys.push(key);
+        DeckRetriever.allDecks[key] = defender;
+    }
+
+    nextFight(0, -1);
+}
+
+function GenerateHashes(field) {
+    var hash = field.value;
+    var deck = hash_decode(hash);
+    var commander = deck.commander;
+    var cards = deck.deck;
+    var len = cards.length;
+    var decks = 0;
+    for(var i1 = 0; i1 < len - 14; i1++){
+        for(var i2 = i1+1; i2 < len - 13; i2++){
+            for (var i3 = i2 + 1; i3 < len - 12; i3++) {
+                for (var i4 = i3 + 1; i4 < len - 11; i4++) {
+                    for (var i5 = i4 + 1; i5 < len - 10; i5++) {
+                        for (var i6 = i5 + 1; i6 < len - 9; i6++) {
+                            for (var i7 = i6 + 1; i7 < len - 8; i7++) {
+                                for (var i8 = i7 + 1; i8 < len - 7; i8++) {
+                                    for (var i9 = i8 + 1; i9 < len - 6; i9++) {
+                                        for (var i10 = i9 + 1; i10 < len - 5; i10++) {
+                                            for (var i11 = i10 + 1; i11 < len - 4; i11++) {
+                                                for (var i12 = i11 + 1; i12 < len - 3; i12++) {
+                                                    for (var i13 = i12 + 1; i13 < len - 2; i13++) {
+                                                        for (var i14 = i13 + 1; i14 < len - 1; i14++) {
+                                                            for (var i15 = i14 + 1; i15 < len; i15++) {
+                                                                decks++;
+                                                                /*
+                                                                var deck = {
+                                                                    commander: commander,
+                                                                    deck: []
+                                                                };
+                                                                deck.deck.push(cards[i1]);
+                                                                deck.deck.push(cards[i2]);
+                                                                deck.deck.push(cards[i3]);
+                                                                deck.deck.push(cards[i4]);
+                                                                deck.deck.push(cards[i5]);
+                                                                deck.deck.push(cards[i6]);
+                                                                deck.deck.push(cards[i7]);
+                                                                deck.deck.push(cards[i8]);
+                                                                deck.deck.push(cards[i9]);
+                                                                deck.deck.push(cards[i10]);
+                                                                deck.deck.push(cards[i11]);
+                                                                deck.deck.push(cards[i12]);
+                                                                deck.deck.push(cards[i13]);
+                                                                deck.deck.push(cards[i14]);
+                                                                deck.deck.push(cards[i15]);
+                                                                var key = hash_encode(deck);
+                                                                attackerKeys.push(key);
+                                                                DeckRetriever.allDecks[key] = deck;
+                                                                */
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    alert(decks);
+}
+
+function RunGuildSIMSs() {
+    // Remove previous winrate table
+    document.getElementById("results_table").innerHTML = '';
+
+    attackerKeys = [];
+    defenderKeys = [];
+    winrates = {};
+
     delete (DeckRetriever.factionDecks['CustomAttackDeck']);
     delete (DeckRetriever.factionDecks['CustomDefenseDeck']);
 
@@ -134,8 +236,8 @@ function nextFight(attackKey, defendKey) {
         var attacker = attackerKeys[attackKey];
 
         if (attacker) {
-            attacker = DeckRetriever.factionDecks[attacker];
-            defender = DeckRetriever.factionDecks[defender];
+            attacker = DeckRetriever.allDecks[attacker];
+            defender = DeckRetriever.allDecks[defender];
             document.getElementById('deck').value = hash_encode(attacker);
             document.getElementById('deck2').value = hash_encode(defender);
             var tblDiv = document.getElementById("remaining");
@@ -202,7 +304,7 @@ function drawResults() {
         name.innerHTML = attacker;
         row.appendChild(name);
         var hash = document.createElement("th");
-        hash.innerHTML = hash_encode(DeckRetriever.factionDecks[attacker]);
+        hash.innerHTML = hash_encode(DeckRetriever.allDecks[attacker]);
         row.appendChild(hash);
         for (var defender in defenderKeys) {
             defender = defenderKeys[defender];
