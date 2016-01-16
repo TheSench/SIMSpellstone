@@ -333,6 +333,7 @@ function run_sims() {
 	losses = 0;
 	max_turns = 50;
 	draws = 0;
+	orders = {};
 
 	while (sims_left) {
 	    run_sim();
