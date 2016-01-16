@@ -1404,7 +1404,7 @@ if (simulator_thread) {
                 if (debug) {
                     echo += '<u>(Counter: +' + target.counter;
                     if (augment) echo += ' Enhance: +' + augment;
-                    if (protect) echo += ' Barrier: +' + protect;
+                    if (protect) echo += ' Barrier: -' + protect;
                     echo += ') = ' + counter_damage + ' damage</u><br>';
                 }
 
