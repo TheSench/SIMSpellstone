@@ -279,7 +279,7 @@ var MakeAssault = (function () {
                 case 'pierce':
                     return this[s];
                     break;
-                case 'empower':
+                case 'rally':
                 case 'legion':
                 case 'fervor':
                     target_skills = this.empowerSkills;
