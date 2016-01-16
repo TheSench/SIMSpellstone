@@ -878,7 +878,8 @@ function base64triplet_to_unitInfo(triplet) {
     var dec2 = base64chars.indexOf(triplet[1]) * 64;
     var dec3 = base64chars.indexOf(triplet[2]);
 
-    return { id: (fusion + dec1 + dec2 + dec3), level: level };;
+    var id = (fusion + dec1 + dec2 + dec3);
+    return makeUnitInfo(id, level);
 }
 
 function unitInfo_to_base64triplet(unit_info) {
@@ -896,22 +897,6 @@ function unitInfo_to_base64triplet(unit_info) {
     var char3 = base64chars[baseID % 64];
 
     return char1 + char2 + char3;
-} 
-
-function base64triplet_to_unitInfo(triplet) {
-
-    if (triplet.length != 3) return false;
-
-    var dec1 = base64chars.indexOf(triplet[0]);
-    var level = (dec1 % 7) + 1;
-    dec1 = Math.floor(dec1 / 7);
-    var fusion = (dec1 % 3) * 10000;
-    dec1 = Math.floor(dec1 / 3) * 4096;
-
-    var dec2 = base64chars.indexOf(triplet[1]) * 64;
-    var dec3 = base64chars.indexOf(triplet[2]);
-
-    return { id: (fusion + dec1 + dec2 + dec3), level: level, runes: [] };
 }
 
 function runeID_to_base64(runeID) {
@@ -966,11 +951,7 @@ function decimal_to_unitInfo(decimal) {
     decimal = (decimal - unitID) / 30000;
     var level = decimal % 7;
     var runeID = decimal_to_runeID((decimal - level) / 7);
-    var unit_info = {
-        id: unitID,
-        level: level + 1,
-        runes: [],
-    }
+    var unit_info = makeUnitInfo(unitID, level);
     if (runeID > 0) {
         unit_info.runes.push({ id: runeID });
     }
@@ -1042,7 +1023,7 @@ function hash_encode(deck, combineMultiples) {
             indexes.push(numberToBase64(current_card.index));
             has_indexes = true;
         }
-        if (current_card.runes) {
+        if (current_card.runes.length) {
             has_runes = true;
         }
         var triplet = unitInfo_to_base64triplet(current_card);
@@ -1144,11 +1125,7 @@ function hash_decode(hash) {
             var multiplier = decode_multiplier(hash.substr(i, 2)) + 1;
             for (var n = 0; n < multiplier; n++) {
                 if (indexes) {
-                    unitInfo = {
-                        id: unitInfo.id,
-                        level: unitInfo.level,
-                        runes: [],
-                    };
+                    var unit_info = makeUnitInfo(unitInfo.id, unitInfo.level);
                     unitInfo.index = base64ToNumber(indexes[unitidx - 1]); // Skip commander
                 }
                 current_deck.deck.push(unitInfo);
@@ -1204,7 +1181,8 @@ function load_deck_from_cardlist(list) {
 
         for (var i in list) {
             var current_card = list[i].toString();
-            var unit = { id: 1, level: 7, priority: 0 }; // Default all cards to max level if none is specified
+            var unit = makeUnitInfo(1, 7);// Default all cards to max level if none is specified
+            unit.priority = 0;
             var card_found = false;
             var current_card_upgraded = false;
 
@@ -1339,10 +1317,9 @@ function load_deck_mission(id) {
 
     var current_deck = [];
     current_deck.deck = [];
-    current_deck.commander = { id: missionInfo.commander, level: 7 };   // Set commander to max level
+    current_deck.commander = makeUnitInfo(missionInfo.commander, 7);   // Set commander to max level
     var missionDeck = missionInfo.deck;
     for (var current_key in missionDeck) {
-        var unit = { id: 0, level: 7 };
         var current_card = missionDeck[current_key];
         // Upgrade all cards to max fusion/level
         if (DoNotFuse.indexOf(current_card) == -1) {
@@ -1352,7 +1329,7 @@ function load_deck_mission(id) {
                 current_card = '2' + current_card;
             }
         }
-        unit.id = current_card;
+        var unit = makeUnitInfo(current_card, 7);
         current_deck.deck.push(unit);
     }
     return current_deck;
@@ -1526,7 +1503,16 @@ function is_commander(id) {
     return (card && card.card_type == '1');
 }
 
-var elariaCaptain = { id: 202, level: 7 };
+function makeUnitInfo(id, level) {
+    var unit = {
+        id: id,
+        level: level,
+        runes: []
+    };
+    return unit;
+}
+
+var elariaCaptain = makeUnitInfo(202, 7);
 var card_cache = {};
 
 
