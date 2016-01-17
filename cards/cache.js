@@ -19471,6 +19471,246 @@ var CARDS = {
       },
     }
   },
+  "5037": {
+    "id": "5037",
+    "name": "Dauntless Baneblade",
+    "picture": "Phantom_Swordsman_A",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "7",
+    "attack": 2,
+    "health": 10,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "legion",
+        "x": 1,
+        "y": "7",
+        "z": 7,
+      },
+      {
+        "id": "frost",
+        "x": 1,
+      },
+      {
+        "id": "flurry",
+        "c": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 1,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 5,
+          },
+        ],
+      },
+      "3": {
+        "health": 11,
+        "skill": [],
+      },
+      "4": {
+        "health": 12,
+        "skill": [],
+      },
+      "5": {
+        "health": 13,
+        "skill": [],
+      },
+      "6": {
+        "health": 14,
+        "skill": [
+          {
+            "id": "legion",
+            "x": 1,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 5,
+          },
+        ],
+      },
+    }
+  },
+  "15037": {
+    "id": "15037",
+    "name": "Dauntless Claymore",
+    "picture": "Phantom_Swordsman_A",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "7",
+    "attack": 2,
+    "health": 15,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "legion",
+        "x": 1,
+        "y": "7",
+        "z": 7,
+      },
+      {
+        "id": "frost",
+        "x": 2,
+      },
+      {
+        "id": "flurry",
+        "c": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 16,
+        "skill": [],
+      },
+      "3": {
+        "attack": 3,
+        "skill": [],
+      },
+      "4": {
+        "health": 17,
+        "skill": [
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 5,
+          },
+        ],
+      },
+      "5": {
+        "health": 18,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+    }
+  },
+  "25037": {
+    "id": "25037",
+    "name": "Dauntless Deathknell",
+    "picture": "Phantom_Swordsman_B",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "7",
+    "attack": 3,
+    "health": 19,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "legion",
+        "x": 2,
+        "y": "7",
+        "z": 7,
+      },
+      {
+        "id": "frost",
+        "x": 2,
+      },
+      {
+        "id": "flurry",
+        "c": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 20,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 22,
+        "skill": [],
+      },
+      "5": {
+        "attack": 4,
+        "health": 23,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 3,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+    }
+  },
   "6000": {
     "id": "6000",
     "name": "Furnace Mech",

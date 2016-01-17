@@ -10549,6 +10549,134 @@
       <skill id="legion" x="2" y="7" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5037</id>
+    <card_type>2</card_type>
+    <name>Dauntless Baneblade</name>
+    <picture>Phantom_Swordsman_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <attack>2</attack>
+    <health>10</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="legion" x="1" y="7" />
+    <skill id="frost" x="1" />
+    <skill id="flurry" c="6" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="legion" x="1" y="7" />
+      <skill id="frost" x="1" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>14</health>
+      <skill id="legion" x="1" y="7" />
+      <skill id="frost" x="2" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15037</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Dauntless Claymore</name>
+    <picture>Phantom_Swordsman_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <attack>2</attack>
+    <health>15</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="legion" x="1" y="7" />
+    <skill id="frost" x="2" />
+    <skill id="flurry" c="5" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>3</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>17</health>
+      <skill id="legion" x="2" y="7" />
+      <skill id="frost" x="2" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="legion" x="2" y="7" />
+      <skill id="frost" x="2" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25037</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Dauntless Deathknell</name>
+    <picture>Phantom_Swordsman_B</picture>
+    <asset_bundle>43</asset_bundle>
+    <attack>3</attack>
+    <health>19</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="legion" x="2" y="7" />
+    <skill id="frost" x="2" />
+    <skill id="flurry" c="4" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="legion" x="2" y="7" />
+      <skill id="frost" x="2" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>23</health>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="legion" x="3" y="7" />
+      <skill id="frost" x="2" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+  </unit>
   <!-- Chaos Premium Begin -->
   <unit>
     <id>6000</id>
