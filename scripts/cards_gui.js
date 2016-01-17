@@ -138,7 +138,6 @@ function create_card_html(card, onField, onclick, onrightclick, state) {
             var val = true;
             if (key == "skill") {
                 key = rune.stat_boost.skill.id;
-                if (rune.stat_boost.skill.all) val = "all";
             }
             boosts[key] = val;
         }
@@ -294,13 +293,8 @@ function getSkillHtml(skill, onField, boosts) {
     var htmlSkill = document.createElement("span");
     htmlSkill.className = "skill";
     htmlSkill.appendChild(getSkillIcon(skill.id));
-    if (boosts[skill.id]) {
-        var all = boosts[skill.id] == "all";
-        var skillAll = skill.all | false;
-        if (all == skillAll) {
-            htmlSkill.classList.add("increased");
-            delete (boosts[skill.id]);
-        }
+    if (skill.boosted) {
+        htmlSkill.classList.add("increased");
     }
     if (skill.all) htmlSkill.innerHTML += (" All ");
     if (skill.s) htmlSkill.appendChild(getSkillIcon(skill.s));
