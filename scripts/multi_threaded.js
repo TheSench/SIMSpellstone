@@ -182,7 +182,7 @@ if (use_workers) {
                     simpersecbatch = batch_size / batch_elapse;
                 }
                 simpersecbatch = simpersecbatch.toFixed(1);
-                if (suppressOutput) {
+                if (suppressOutput && end_sims_callback) {
                     outp(echo + '<strong>Running simulations...</strong> (' + games + '/' + (num_sims) + ') ' + percent_complete + '%<br>' + elapse + ' seconds<br>' + simpersecbatch + ' simulations per second<br>');
                 } else {
                     outp(echo + '<strong>Running simulations...</strong> (' + games + '/' + (num_sims) + ') ' + percent_complete + '%<br>' + elapse + ' seconds<br>' + simpersecbatch + ' simulations per second<br>' + gettable());
@@ -290,7 +290,7 @@ if (use_workers) {
         var simpersec = games / elapse;
         simpersec = simpersec.toFixed(1);
 
-        if (suppressOutput) {
+        if (suppressOutput && end_sims_callback) {
             outp(echo + '<br><strong>Simulations complete.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>');
         } else {
             outp(echo + '<br><strong>Simulations complete.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>' + gettable() + getOrderStatsTable());
@@ -419,6 +419,9 @@ if (use_workers) {
         params['gettournament'] = gettournament;
         params['getexactorder'] = getexactorder;
         params['getexactorder2'] = getexactorder2;
+        params['getsiege'] = getsiege;
+        params['tower_level'] = tower_level;
+        params['tower_type'] = tower_type;
         params['surge'] = surge;
         params['debug'] = debug;
         params['loss_debug'] = loss_debug;
@@ -508,8 +511,10 @@ if (use_workers) {
                 for (; worker_index < remainingSims; worker_index++) {  // Start a new batch
                     workers[worker_index].postMessage({ 'cmd': 'run_sims', 'data': [sims_per_worker + 1, time_start_batch] });
                 }
-                for (; worker_index < max_workers; worker_index++) {  // Start a new batch
-                    workers[worker_index].postMessage({ 'cmd': 'run_sims', 'data': [sims_per_worker, time_start_batch] });
+                if (sims_per_worker) {
+                    for (; worker_index < max_workers; worker_index++) {  // Start a new batch
+                        workers[worker_index].postMessage({ 'cmd': 'run_sims', 'data': [sims_per_worker, time_start_batch] });
+                    }
                 }
             }
             sims_to_process -= new_batch_size;

@@ -145,7 +145,7 @@ var addUnit = function (unit) {
 
 var addUnitLevels = function (id, maxlevel) {
     for (var level = 1; level <= maxlevel; level++) {
-        var unit = { id: id, level: level };
+        var unit = makeUnitInfo(id, level);
         units.push(unit);
         if (showUpgrades || level == maxlevel) unitsShown.push(unit);
     }
@@ -656,7 +656,11 @@ var showRunePicker = function (htmlCard, index) {
 var setRune = function (runesDialog) {
     var runeID = document.getElementById("runeChoices").value;
     var index = runesDialog.index;
-    deck.deck[index].runes = [{ id: runeID }];
+    if (runeID) {
+        deck.deck[index].runes = [{ id: runeID }];
+    } else {
+        deck.deck[index].runes = [];
+    }
     draw_deck(deck, removeFromDeck, showRunePicker);
     updateHash();
 }

@@ -81,6 +81,9 @@ function initializeSims(params) {
 	getordered2 = params['getordered2'];
 	getexactorder = params['getexactorder'];
 	getexactorder2 = params['getexactorder2'];
+	getsiege = params['getsiege'];
+	tower_level = params['tower_level'];
+	tower_type = params['tower_type'];
 	surge = params['surge'];
 	debug = params['debug'];
 	loss_debug = params['loss_debug'];
@@ -133,7 +136,7 @@ function returnResultsTransferableObjects() {
 	view.setFloat64(0, time_start_batch);
 	if (debug) {
 		// Convert echo to bytes in the ArrayBuffer
-		var bufView = new Uint16Array(buffer, 56);
+		var bufView = new Uint16Array(buffer, 32);
 		for (var i=0, len = echo.length; i < len; i++) {
 			bufView[i] = echo.charCodeAt(i);
 		}
@@ -333,6 +336,7 @@ function run_sims() {
 	losses = 0;
 	max_turns = 50;
 	draws = 0;
+	orders = {};
 
 	while (sims_left) {
 	    run_sim();

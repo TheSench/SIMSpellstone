@@ -225,6 +225,7 @@
             sendRequest('updateFaction', null, function (response) {
                 var members = response.faction.members;
                 publicInfo.factionDecks = {};
+                publicInfo.allDecks = {};
                 for (var key in members) {
                     getUserDeck(key, draw);
                 }
@@ -247,6 +248,7 @@
                 var deck_info = response.player_info.deck;
                 var deck = getDeckFromDeckInfo(deck_info);
                 publicInfo.factionDecks[name] = deck;
+                publicInfo.allDecks[name] = deck;
             }
         });
     }
@@ -260,16 +262,16 @@
         try
         {
             var commander = data.battle_data.attack_commander;
-            deck_player.commander = { id: commander.unit_id, level: commander.level };
+            deck_player.commander = makeUnitInfo(commander.unit_id, commander.level);
             commander = data.battle_data.defend_commander;
-            deck_cpu.commander = { id: commander.unit_id, level: commander.level };
+            deck_cpu.commander = makeUnitInfo(commander.unit_id, commander.level);
 
             for (var key in card_map) {
                 var unit = card_map[key];
                 var runes = unit.runes;
-                unit = { id: unit.unit_id, level: unit.level, runes: [] };
-                for (var key in runes) {
-                    unit.runes.push({ id: runes[key].item_id });
+                unit = makeUnitInfo(unit.unit_id, unit.level);
+                for (var r in runes) {
+                    unit.runes.push({ id: runes[r].item_id });
                 }
                 if (key <= 15) {
                     deck_player.deck.push(unit);
@@ -302,7 +304,7 @@
     function getDeckFromDeckInfo(deck_info) {
         var commander = deck_info.commander;
         var deck = {
-            commander: { id: commander.unit_id, level: commander.level },
+            commander: makeUnitInfo(commander.unit_id, commander.level),
             deck: [],
         }
 
@@ -310,7 +312,7 @@
         for (var i = 0; i < units.length; i++) {
             var unit = units[i];
             var runes = unit.runes;
-            unit = { id: unit.unit_id, level: unit.level, runes: [] };
+            unit = makeUnitInfo(unit.unit_id, unit.level);
             for(var key in runes) {
                 unit.runes.push({ id: runes[key].item_id });
             }
@@ -360,7 +362,9 @@
         var units = data.user_units;
         for (var i in units) {
             var unit = units[i];
-            deck.deck.push({ id: unit.unit_id, level: unit.level, index: unit.unit_index });
+            var unit_info = makeUnitInfo(unit.unit_id, unit.level);
+            unit_info.index = unit.unit_index;
+            deck.deck.push(unit_info);
         }
         deck.deck.sort(function (unit1, unit2) {
             if (unit1.id < unit2.id) return -1;
@@ -397,6 +401,7 @@
         getFullUserData: getFullUserData,
         updateMyDeck: updateMyDeck,
         factionDecks: {},
+        allDecks: {},
         baseRequest: baseRequest,
         getDecksFromJSON: getDecksFromJSON,
     }
