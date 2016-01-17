@@ -419,15 +419,23 @@ var boostSkill = function (card, boost) {
     }
 
     // Boost the first instance of this skill
+    var skillToBoost = -1;
     for (var i = 0, len = skills.length; i < len; i++) {
         var skill = skills[i];
         if (skill.id == skillID && (skill.all | 0) == (boost.all | 0)) {
-            skill = copy_skill(skill);
-            if (boost.x) skill.x += parseInt(boost.x)
-            if (boost.c) skill.c -= parseInt(boost.c);
-            skills[i] = skill;
-            return;
+            if (skillToBoost >= 0 && boost.x && skills[skillToBoost].x < skill.x) {
+                continue;
+            }
+            skillToBoost = i;
         }
+    }
+
+    if (skillToBoost >= 0) {
+        skill = copy_skill(skills[skillToBoost]);
+        if (boost.x) skill.x += parseInt(boost.x)
+        if (boost.c) skill.c -= parseInt(boost.c);
+        skill.boosted = true;
+        skills[skillToBoost] = skill;
     }
 };
 
