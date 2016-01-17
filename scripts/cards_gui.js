@@ -292,7 +292,10 @@ function getSkillHtml(skill, onField, boosts) {
     var htmlSkill = document.createElement("span");
     htmlSkill.className = "skill";
     htmlSkill.appendChild(getSkillIcon(skill.id));
-    if (boosts[skill.id]) htmlSkill.classList.add("increased");
+    if (boosts[skill.id]) {
+        htmlSkill.classList.add("increased");
+        delete (boosts[skill.id]);
+    }
     if (skill.all) htmlSkill.innerHTML += (" All ");
     if (skill.s) htmlSkill.appendChild(getSkillIcon(skill.s));
     if (skill.y) htmlSkill.appendChild(getFactionIcon(skill.y));
