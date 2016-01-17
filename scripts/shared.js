@@ -114,7 +114,8 @@ function cloneCard(original) {
     } else {
         copy_skills(copy, original.skill, original.empowerSkills);
     }
-    copy.runes = [];
+    copy.runes = original.runes;
+    if (!copy.runes) copy.runes = [];
     return copy;
 }
 
@@ -421,8 +422,10 @@ var boostSkill = function (card, boost) {
     for (var i = 0, len = skills.length; i < len; i++) {
         var skill = skills[i];
         if (skill.id == skillID) {
+            skill = copy_skill(skill);
             if (boost.x) skill.x += parseInt(boost.x)
             if (boost.c) skill.c -= parseInt(boost.c);
+            skills[i] = skill;
             return;
         }
     }
@@ -1388,12 +1391,12 @@ function load_deck_raid(id) {
 function get_card_by_id(unit, skillModifiers) {
 
     var unitKey = unit.id + "-" + unit.level;
+    if (unit.runes.length) {
+        unitKey += "-" + unit.runes[0].id;
+    }
     var cached = card_cache[unitKey];
     if (cached) {
         cached = cloneCard(cached);
-        if (unit.runes) {
-            cached.addRunes(unit.runes);
-        }
         return cached;
     }
 
@@ -1413,11 +1416,11 @@ function get_card_by_id(unit, skillModifiers) {
             current_card.skill = [];
         }
         var cached = MakeAssault(current_card, unit.level, skillModifiers);
-        card_cache[unitKey] = cached;
-        cached = cloneCard(cached);
         if (unit.runes) {
             cached.addRunes(unit.runes);
         }
+        card_cache[unitKey] = cached;
+        cached = cloneCard(cached);
         return cached
     }
 }
