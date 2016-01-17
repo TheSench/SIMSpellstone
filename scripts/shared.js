@@ -421,7 +421,7 @@ var boostSkill = function (card, boost) {
     // Boost the first instance of this skill
     for (var i = 0, len = skills.length; i < len; i++) {
         var skill = skills[i];
-        if (skill.id == skillID) {
+        if (skill.id == skillID && (skill.all | 0) == (boost.all | 0)) {
             skill = copy_skill(skill);
             if (boost.x) skill.x += parseInt(boost.x)
             if (boost.c) skill.c -= parseInt(boost.c);
