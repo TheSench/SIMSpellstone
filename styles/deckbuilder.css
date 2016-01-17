@@ -129,3 +129,8 @@ input[type="button"].attack-filter {
 .ui-draggable .ui-dialog-titlebar {
     display: none;
 }
+
+#runeChoices,
+#runeChoicesDiv {
+    width: 100%;
+}
