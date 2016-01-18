@@ -250,7 +250,7 @@ function create_card_html(card, onField, onclick, onrightclick, state) {
 function getSkillsHtml(divSkills, skillsShort, skills, onField, boosts) {
     for (var i in skills) {
         var skill = skills[i];
-        divSkills.appendChild(getSkillHtml(skill, onField, boosts));
+        divSkills.appendChild(getSkillHtml(skill, onField));
         divSkills.appendChild(document.createElement('br'));
         skillsShort.appendChild(getSkillIcon(skill.id));
     }
@@ -270,7 +270,7 @@ function getTriggeredSkills(divSkills, skillsShort, card, onField, boosts) {
     getNonActivatedSkill(divSkills, skillsShort, onField, card, "berserk", boosts);
     var flurry = card.flurry;
     if (flurry) {
-        divSkills.appendChild(getSkillHtml(flurry, onField, boosts));
+        divSkills.appendChild(getSkillHtml(flurry, onField));
         divSkills.appendChild(document.createElement('br'));
         skillsShort.appendChild(getSkillIcon(flurry.id));
     }
@@ -281,15 +281,16 @@ function getNonActivatedSkill(divSkills, skillsShort, onField, card, skillName, 
     if (value) {
         var skill = {
             id: skillName,
-            x: value
+            x: value,
+            boosted: boosts[skillName]
         };
-        divSkills.appendChild(getSkillHtml(skill, onField, boosts));
+        divSkills.appendChild(getSkillHtml(skill, onField));
         divSkills.appendChild(document.createElement('br'));
         skillsShort.appendChild(getSkillIcon(skill.id));
     }
 }
 
-function getSkillHtml(skill, onField, boosts) {
+function getSkillHtml(skill, onField) {
     var htmlSkill = document.createElement("span");
     htmlSkill.className = "skill";
     htmlSkill.appendChild(getSkillIcon(skill.id));
