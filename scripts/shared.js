@@ -874,6 +874,7 @@ function generate_card_list(deck) {
 var base64chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!~";
 var multiplierChars = "_*.'";
 var runeDelimiter = "/";
+var indexDelimiter = '-';
 var priorityDelimiter = '|';
 
 function base64triplet_to_unitInfo(triplet) {
@@ -1061,7 +1062,7 @@ function hash_encode(deck, combineMultiples) {
     }
 
     if (has_indexes) {
-        indexes = '-' + indexes.join('');
+        indexes = indexDelimiter + indexes.join('');
         current_hash.push(indexes);
     }
 
@@ -1106,6 +1107,11 @@ function hash_decode(hash) {
             runes.push(base64_to_runeID(runesHash.substring(i, i+2)));
         }
         hash = hash.substr(0, hash.indexOf(runeDelimiter));
+    }
+    if (hash.indexOf(indexDelimiter) > 0) {
+        // Ignore priorities for now
+        indexes = hash.substr(hash.indexOf(indexDelimiter) + 1).match(/.{1,2}/g);
+        hash = hash.substr(0, hash.indexOf(indexDelimiter));
     }
     if (hash.indexOf(priorityDelimiter) > 0) {
         priorities = hash.substr(hash.indexOf(priorityDelimiter) + 1);
