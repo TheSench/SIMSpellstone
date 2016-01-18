@@ -8,6 +8,7 @@ var clearHash2 = true;
 var clearList2 = true;
 var suppressOutput = true;
 var extraCards = [];
+var evolutions = [];
 
 function SimGuild() {
     DeckRetriever.retrieveGuildDecks(false, RunGuildSIMS);
@@ -126,6 +127,7 @@ function GenerateHashes_2(field) {
         extraCards.push(cards[i]);
     }
 
+    evolutions = [];
     nextEvolution(true);
 }
 
@@ -341,7 +343,40 @@ function nextFight(attackKey, defendKey, sortByWins) {
         }
     }
 
-    drawResults(sortByWins);
+
+    if (extraCards.length) {
+        var key = 'Original'
+        var deck = DeckRetriever.allDecks[key];
+        var winrate = winrates[key];
+        evolutions.push({
+            deck: deck,
+            winrate: winrate,
+        });
+    } else {
+        // for final display, show all evolutions
+        for (var i = 0; i < evolutions.length; i++) {
+            var evolution = evolutions[i];
+            var deck = evolution.deck;
+            var winrate = evolution.winrate;
+            var attackerKey = (i > 0 ? "Evolution " + i : "Starting Deck");
+            attackerKeys.push(attackerKey);
+            DeckRetriever.allDecks[attackerKey] = deck;
+            winrates[attackerKey] = winrate;
+        }
+        if (sortByWins) {
+            attackerKeys.sort(function (a, b) {
+                return getAverage(b) - getAverage(a);
+            });
+        }
+    }
+
+    if (sortByWins) {
+        attackerKeys.sort(function (a, b) {
+            return getAverage(b) - getAverage(a);
+        });
+    }
+
+    drawResults();
     clearFields();
     end_sims_callback = undefined;
     nextEvolution();
@@ -370,7 +405,7 @@ function testTable() {
     drawResults();
 }
 
-function drawResults(sortByWins) {
+function drawResults() {
     document.getElementById("results_table").innerHTML = '';
     var table = document.createElement('table');
     var header = document.createElement("tr");
@@ -389,11 +424,6 @@ function drawResults(sortByWins) {
     var name = document.createElement("th");
     name.innerHTML = "AVERAGE";
     header.appendChild(name);
-    if (sortByWins) {
-        attackerKeys.sort(function (a, b) {
-            return getAverage(b) - getAverage(a);
-        });
-    }
     for (var attacker in attackerKeys) {
         attacker = attackerKeys[attacker];
         var row = document.createElement("tr");
