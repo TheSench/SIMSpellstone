@@ -126,18 +126,21 @@ function GenerateHashes_2(field) {
         extraCards.push(cards[i]);
     }
 
-    nextEvolution();
+    nextEvolution(true);
 }
 
-function nextEvolution() {
+function nextEvolution(isFirst) {
     if (!extraCards.length) return;
 
     var best;
-    for (var key in attackerKeys) {
-        if (!best) {
-            best = key;
-        } else {
-            if (getAverage(key) > getAverage(best)) best = key;
+    if (!isFirst) {
+        for (var key in attackerKeys) {
+            var attacker = attackerKeys[key];
+            if (!best) {
+                best = attacker;
+            } else {
+                if (getAverage(attacker) > getAverage(best)) best = attacker;
+            }
         }
     }
     if (best) {
@@ -184,7 +187,7 @@ function nextEvolution() {
     attackerKeys.sort(caselessCompare);
     defenderKeys.sort(caselessCompare);
 
-    nextFight(0, -1);
+    nextFight(0, -1, true);
 }
 
 function getAverage(attacker) {
@@ -293,7 +296,7 @@ function clearFields() {
     if (clearList2) document.getElementById('cardlist2').value = '';
 }
 
-function nextFight(attackKey, defendKey) {
+function nextFight(attackKey, defendKey, sortByWins) {
     if (defendKey >= 0) {
         var attacker = attackerKeys[attackKey];
         var defender = defenderKeys[defendKey];
@@ -331,14 +334,14 @@ function nextFight(attackKey, defendKey) {
             tblDiv.innerHTML = getCurrentMatch(attackKey, defendKey);
 
             end_sims_callback = function () {
-                nextFight(attackKey, defendKey);
+                nextFight(attackKey, defendKey, sortByWins);
             }
             startsim();
             return;
         }
     }
 
-    drawResults();
+    drawResults(sortByWins);
     clearFields();
     end_sims_callback = undefined;
     nextEvolution();
@@ -367,7 +370,7 @@ function testTable() {
     drawResults();
 }
 
-function drawResults() {
+function drawResults(sortByWins) {
     document.getElementById("results_table").innerHTML = '';
     var table = document.createElement('table');
     var header = document.createElement("tr");
@@ -386,7 +389,11 @@ function drawResults() {
     var name = document.createElement("th");
     name.innerHTML = "AVERAGE";
     header.appendChild(name);
-
+    if (sortByWins) {
+        attackerKeys.sort(function (a, b) {
+            return getAverage(a) - getAverage(b);
+        });
+    }
     for (var attacker in attackerKeys) {
         attacker = attackerKeys[attacker];
         var row = document.createElement("tr");
@@ -396,20 +403,15 @@ function drawResults() {
         var hash = document.createElement("th");
         hash.innerHTML = hash_encode(DeckRetriever.allDecks[attacker]);
         row.appendChild(hash);
-        var avg = 0;
-        var count = 0;
         for (var defender in defenderKeys) {
             defender = defenderKeys[defender];
             var winrate = winrates[attacker][defender];
             var data = document.createElement("td");
             data.innerHTML = winrate.toFixed(1) + "%";
             row.appendChild(data);
-            avg += winrate;
-            count++;
         }
-        avg /= count;
         var data = document.createElement("td");
-        data.innerHTML = avg.toFixed(1) + "%";
+        data.innerHTML = getAverage(attacker).toFixed(1) + "%";
         row.appendChild(data);
         table.appendChild(row);
     }
