@@ -152,11 +152,36 @@ var addUnitLevels = function (id, maxlevel) {
 }
 
 var hash_changed = function (hash) {
+
+    if (fromInventory) {
+        var pickedCards = document.getElementsByClassName("picked");
+        while (pickedCards.length > 0) {
+            pickedCards[0].classList.remove("picked");
+        }
+    }
+
     if (hash) {
         document.getElementById("hash").value = hash;
         if (typeof simulatorDeckHashField !== 'undefined') simulatorDeckHashField.value = hash;
     }
     deck = hash_decode(document.getElementById("hash").value);
+
+    if (fromInventory) {
+        var unitsToHide = deck.deck.slice();
+        unitsToHide.push(deck.commander);
+        for (var i = 0; i < unitsToHide.length; i++) {
+            var unit = unitsToHide[i];
+            var cards = $("#cardSpace [data-id=" + unit.id + "][data-level=" + unit.level + "]");
+            for (var j = 0; j < cards.length; j++) {
+                var htmlCard = cards[j];
+                if (!htmlCard.classList.contains('picked')) {
+                    htmlCard.classList.add("picked");
+                    break;
+                }
+            }
+        }
+    }
+
     draw_deck(deck, removeFromDeck, showRunePicker);
 }
 
