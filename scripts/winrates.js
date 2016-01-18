@@ -164,9 +164,9 @@ function nextEvolution(isFirst) {
     var attackDeck = attacker.deck;
     var key = 'Original';
     attackerKeys.push(key);
-    DeckRetriever.allDecks[key] = attackDeck;
+    DeckRetriever.allDecks[key] = attacker;
 
-    for (var i = 0; i < attacker.deck.length; i++) {
+    for (var i = 0; i < attackDeck.length; i++) {
         var newDeck = {
             commander: attacker.commander,
             deck: attackDeck.slice()

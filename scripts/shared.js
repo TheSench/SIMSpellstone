@@ -1093,7 +1093,7 @@ function hash_encode(deck, combineMultiples) {
 //Returns deck array built from hash
 function hash_decode(hash) {
 
-    var current_deck = [];
+    var current_deck = {};
     current_deck.deck = [];
     var unitInfo;
     var priorities;
