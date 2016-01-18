@@ -347,7 +347,9 @@ function drawResults() {
         name.innerHTML = defenderKeys[defender];
         header.appendChild(name);
     }
-    header.appendChild("AVERAGE");
+    var name = document.createElement("th");
+    name.innerHTML = "AVERAGE";
+    header.appendChild(name);
 
     for (var attacker in attackerKeys) {
         attacker = attackerKeys[attacker];
