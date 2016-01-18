@@ -126,6 +126,26 @@ function GenerateHashes_2(field) {
         extraCards.push(cards[i]);
     }
 
+    nextEvolution();
+}
+
+function nextEvolution() {
+    if (!extraCards.length) return;
+
+    var best;
+    for (var key in attackerKeys) {
+        if (!best) {
+            best = key;
+        } else {
+            if (getAverage(key) > getAverage(best)) best = key;
+        }
+    }
+    if (best) {
+        var attacker = DeckRetriever.allDecks[best];
+    } else {
+        var attacker = checkForSpecifiedAttacker();
+    }
+
     // Remove previous winrate table
     document.getElementById("results_table").innerHTML = '';
 
@@ -138,7 +158,6 @@ function GenerateHashes_2(field) {
         DeckRetriever.allDecks[key] = DeckRetriever.factionDecks[key];
     }
 
-    var attacker = checkForSpecifiedAttacker();
     var attackDeck = attacker.deck;
     var key = 'Original';
     attackerKeys.push(key);
@@ -155,6 +174,8 @@ function GenerateHashes_2(field) {
         DeckRetriever.allDecks[key] = newDeck;
     }
 
+    extraCards.splice(0, 1);
+
     var decks = DeckRetriever.factionDecks;
     for (var key in decks) {
         defenderKeys.push(key);
@@ -165,6 +186,20 @@ function GenerateHashes_2(field) {
 
     nextFight(0, -1);
 }
+
+function getAverage(attacker) {
+    
+    var avg = 0;
+    var count = 0;;
+    for (var defender in defenderKeys) {
+        defender = defenderKeys[defender];
+        var winrate = winrates[attacker][defender];
+        avg += winrate;
+        count++;
+    }
+    return avg / count;
+}
+
 function RunGuildSIMSs() {
     // Remove previous winrate table
     document.getElementById("results_table").innerHTML = '';
@@ -306,6 +341,7 @@ function nextFight(attackKey, defendKey) {
     drawResults();
     clearFields();
     end_sims_callback = undefined;
+    nextEvolution();
 }
 
 function getCurrentMatch(attackKey, defendKey) {
