@@ -391,7 +391,7 @@ function drawResults(sortByWins) {
     header.appendChild(name);
     if (sortByWins) {
         attackerKeys.sort(function (a, b) {
-            return getAverage(a) - getAverage(b);
+            return getAverage(b) - getAverage(a);
         });
     }
     for (var attacker in attackerKeys) {
