@@ -111,6 +111,10 @@
             <input style="float:initial" id="btn_reSimGuild" type="button" value="re-SIM Guild" onclick="return RunGuildSIMS();" style="text-align: center; font-weight: bold;">
             <div><b>Response JSON:</b></div><input id="request_json" type="text" value="" size="50" onchange="DeckRetriever.getFieldsFromRequest();"><br>
         </form>
+        <form>
+            <input style="float:initial" id="btn_simGuild" type="button" value="SIM Guild" onclick="return RunGuildSIMS();" style="text-align: center; font-weight: bold;">
+            <div><b>Card Hash:</b></div><input id="request_json" type="text" value="" size="50" onchange="GenerateHashes_2(this);"><br>
+        </form>
         <br/>
         <hr/>
         <form>
