@@ -154,7 +154,7 @@
         </div>
     </div>
     <hr />
-    <span id="cardSpace"></span>
+    <div id="cardSpace"></div>
 
     <div id="advancedFilters" class="dialog-form">
         <form>
@@ -223,18 +223,24 @@
             </fieldset>
         </form>
     </div>
-    <div id="runes" class="dialog-form">
+
+    <div id="unitOptions" class="dialog-form">
         <form>
             <fieldset>
+                <div id="upgradeDiv">
+                    <label for="upgrade">Upgrade Level</label>
+                    <input type="number" name="upgrade" id="upgrade" min="1" step="1" class="ui-widget-content ui-corner-all">
+                </div>
                 <div id="runeChoicesDiv">
                     <label for="runeChoices">Rune</label>
-                    <select name="runeChoices" id="runeChoices">
+                    <select name="runeChoices" id="runeChoices" class="ui-widget-content ui-corner-all">
                         <option value=""></option>
                     </select>
                 </div>
             </fieldset>
         </form>
     </div>
+
     <div class="modal"><span>Loading...</span></div>
 </body>
 </html>
