@@ -649,6 +649,7 @@ var showAdvancedFilters = function (skill) {
 var showRunePicker = function (htmlCard, index) {
     var unit = getUnitFromCard(htmlCard);
     var card = get_card_by_id(unit);
+    optionsDialog.hiddenOptions = [];
 
     var select = document.getElementById("runeChoices");
     select.innerHTML = '<option value=""></option>';
@@ -657,16 +658,21 @@ var showRunePicker = function (htmlCard, index) {
     upgradeLevel.max = card.maxLevel;
     upgradeLevel.value = card.level;
 
+    var showUnreleased = document.getElementById("showUnreleased").checked;
+
     if(card.rarity >= 3 && !card.isCommander()) {
         $("#runeChoicesDiv").show();
         for (var key in RUNES) {
             var rune = RUNES[key];
-            if (rune.rarity > 2) continue;
             if (canUseRune(card, rune.id)) {
                 var option = document.createElement('option');
                 option.appendChild(document.createTextNode(rune.desc));
                 option.value = rune.id;
                 select.appendChild(option);
+                if (rune.rarity > 2) {
+                    optionsDialog.hiddenOptions.push(option);
+                    option.hidden = !showUnreleased;
+                }
             }
         }
 
@@ -688,6 +694,13 @@ var showRunePicker = function (htmlCard, index) {
     optionsDialog.index = index;
 
     return false;
+}
+
+var toggleUnreleasedRunes = function (checkbox) {
+    var runesToToggle = optionsDialog.hiddenOptions;
+    for (var i = 0, len = runesToToggle.length; i < len; i++) {
+        runesToToggle[i].hidden = !checkbox.checked;
+    }
 }
 
 var setRune = function (optionsDialog) {
