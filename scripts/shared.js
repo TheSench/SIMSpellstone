@@ -423,9 +423,6 @@ var boostSkill = function (card, boost) {
     for (var i = 0, len = skills.length; i < len; i++) {
         var skill = skills[i];
         if (skill.id == skillID && (skill.all | 0) == (boost.all | 0)) {
-            if (skillToBoost >= 0 && boost.x && skills[skillToBoost].x < skill.x) {
-                continue;
-            }
             skillToBoost = i;
         }
     }
