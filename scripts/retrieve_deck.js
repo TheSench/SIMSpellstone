@@ -290,8 +290,6 @@
         document.getElementById("deck2").value = deck_cpu;
         var d = document.getElementById("exactorder");
         if (d) d.checked = true;
-        d = document.getElementById("ordered2");
-        if (d) d.checked = true;
         d = document.getElementById("exactorder2");
         if (d) d.checked = true;
     }
