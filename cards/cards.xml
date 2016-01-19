@@ -27302,14 +27302,14 @@
       <health>62</health>
       <skill id="rally" x="4" />
       <skill id="protect" x="3" />
-      <skill id="protect" x="3" />
+      <skill id="protect" x="1" />
     </upgrade>
   </unit>
   <unit>
     <id>269</id>
     <card_type>1</card_type>
     <name>Arcane Turret</name>
-    <portrait>frogemperor</portrait>
+    <portrait>arcaneturret</portrait>
     <attack>0</attack>
     <health>34</health>
     <rarity>4</rarity>
