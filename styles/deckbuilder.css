@@ -27,6 +27,13 @@ input[type="image"] {
     padding-left: 2px;
 }
 
+#cardSpace {
+    transition: max-height 0.25s ease-in;
+    max-height: 500px;
+    overflow: scroll;
+
+}
+
 #cardSpace .card.picked {
     display: none;
 }
@@ -121,6 +128,15 @@ input[type="button"].attack-filter {
         margin: 2px;
     }
 
+    .dialog-form div,
+    .dialog-form select {
+        width: 100%;
+    }
+
+    .dialog-form #upgrade {
+        width: initial,
+    }
+
 #filters span {
     float: left;
     margin: 5px 5px 0px 0px;
@@ -128,9 +144,4 @@ input[type="button"].attack-filter {
 
 .ui-draggable .ui-dialog-titlebar {
     display: none;
-}
-
-#runeChoices,
-#runeChoicesDiv {
-    width: 100%;
 }

@@ -33,7 +33,7 @@ var showUpgrades = false;
 var units = [];
 var unitsShown = [];
 var advancedFilters;
-var runesDialog;
+var optionsDialog;
 var form;
 
 var initDeckBuilder = function () {
@@ -63,18 +63,18 @@ var setupPopups = function () {
             }
         },
     });
-    runesDialog = $("#runes").dialog({
+    optionsDialog = $("#unitOptions").dialog({
         autoOpen: false,
         width: 250,
         minHeight: 20,
         modal: true,
         buttons: {
             OK: function () {
-                setRune(runesDialog);
-                runesDialog.dialog("close");
+                setRune(optionsDialog);
+                optionsDialog.dialog("close");
             },
             Cancel: function () {
-                runesDialog.dialog("close");
+                optionsDialog.dialog("close");
             }
         },
     });
@@ -653,10 +653,15 @@ var showRunePicker = function (htmlCard, index) {
     var select = document.getElementById("runeChoices");
     select.innerHTML = '<option value=""></option>';
 
-    if(card.rarity >= 3 && !card.isCommander()) {
+    var upgradeLevel = document.getElementById("upgrade");
+    upgradeLevel.max = card.maxLevel;
+    upgradeLevel.value = card.level;
 
+    if(card.rarity >= 3 && !card.isCommander()) {
+        $("#runeChoicesDiv").show();
         for (var key in RUNES) {
             var rune = RUNES[key];
+            if (rune.rarity > 2) continue;
             if (canUseRune(card, rune.id)) {
                 var option = document.createElement('option');
                 option.appendChild(document.createTextNode(rune.desc));
@@ -665,27 +670,42 @@ var showRunePicker = function (htmlCard, index) {
             }
         }
 
-        runesDialog.dialog("option", "position", { mw: "center", at: "center", of: htmlCard });;
-        runesDialog.dialog("open");
         if (card.runes.length) {
             document.getElementById("runeChoices").value = card.runes[0].id;
         } else {
             document.getElementById("runeChoices").value = '';
         }
-        runesDialog.index = index;
+    } else {
+        $("#runeChoicesDiv").hide();
     }
+
+    optionsDialog.dialog("open");
+    if ((htmlCard.offsetLeft + htmlCard.offsetWidth / 2 - ($("#unitOptions")[0].offsetWidth / 2)) < 10) {
+        optionsDialog.dialog("option", "position", { my: "left", at: "left", of: htmlCard });;
+    } else {
+        optionsDialog.dialog("option", "position", { my: "center", at: "center", of: htmlCard });;
+    }
+    optionsDialog.index = index;
 
     return false;
 }
 
-var setRune = function (runesDialog) {
-    var runeID = document.getElementById("runeChoices").value;
-    var index = runesDialog.index;
-    if (runeID) {
-        deck.deck[index].runes = [{ id: runeID }];
+var setRune = function (optionsDialog) {
+    var index = optionsDialog.index;
+    if (index !== undefined) {
+        var unit = deck.deck[index];
+        var runeID = document.getElementById("runeChoices").value;
+        if (runeID) {
+            unit.runes = [{ id: runeID }];
+        } else {
+            unit.runes = [];
+        }
     } else {
-        deck.deck[index].runes = [];
+        var unit = deck.commander;
     }
+
+    unit.level = document.getElementById("upgrade").value;
+
     draw_deck(deck, removeFromDeck, showRunePicker);
     updateHash();
 }

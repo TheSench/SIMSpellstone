@@ -153,7 +153,7 @@
         </div>
     </div>
     <hr />
-    <span id="cardSpace"></span>
+    <div id="cardSpace"></div>
 
     <div id="advancedFilters" class="dialog-form">
         <form>
@@ -167,14 +167,14 @@
 
                 <div id="timer">
                     <label for="timer">Timer</label>
-                    <input type="number" name="timer" id="timer-min" min="1" step="1" class="ui-widget-content ui-corner-all">
+                    <input type="number" name="timer" id="timer-min" min="1" step="1" class="ui-widget-content ui-corner-all" />
                     <span style="float:left">-</span>
-                    <input type="number" name="timer" id="timer-max" min="1" step="1" class="ui-widget-content ui-corner-all">
+                    <input type="number" name="timer" id="timer-max" min="1" step="1" class="ui-widget-content ui-corner-all" />
                 </div>
 
                 <div id="faction">
                     <label for="faction">Faction</label>
-                    <select name="faction" id="faction">
+                    <select name="faction" id="faction" class="ui-widget-content ui-corner-all">
                         <option value=""></option>
                         <option value="Generic">Generic</option>
                         <option value="Aether">Aether</option>
@@ -190,7 +190,7 @@
 
                 <div id="skill">
                     <label for="skill">Skill</label>
-                    <select name="skill" id="skill">
+                    <select name="skill" id="skill" class="ui-widget-content ui-corner-all">
                         <option value=""></option>
                         <option value="armored">Armor</option>
                         <option value="protect">Barrier</option>
@@ -213,7 +213,7 @@
 
                 <label for="all">
                     <label for="all">Targetting</label>
-                    <select name="all" id="all">
+                    <select name="all" id="all" class="ui-widget-content ui-corner-all">
                         <option value="-1"></option>
                         <option value="0">Single</option>
                         <option value="1">All</option>
@@ -223,18 +223,23 @@
         </form>
     </div>
 
-    <div id="runes" class="dialog-form">
+    <div id="unitOptions" class="dialog-form">
         <form>
             <fieldset>
+                <div id="upgradeDiv">
+                    <label for="upgrade">Upgrade Level</label>
+                    <input type="number" name="upgrade" id="upgrade" min="1" step="1" class="ui-widget-content ui-corner-all">
+                </div>
                 <div id="runeChoicesDiv">
                     <label for="runeChoices">Rune</label>
-                    <select name="runeChoices" id="runeChoices">
+                    <select name="runeChoices" id="runeChoices" class="ui-widget-content ui-corner-all">
                         <option value=""></option>
                     </select>
                 </div>
             </fieldset>
         </form>
     </div>
+
     <div class="modal"><span>Loading...</span></div>
 </body>
 </html>
