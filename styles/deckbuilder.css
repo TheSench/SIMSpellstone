@@ -1,17 +1,21 @@
 ﻿h1,
 .collapser {
     background-color: lightgray;
+    width: 100%;
 }
 
     .collapser img {
         vertical-align: middle;
-        display: inline-block;
     }
 
     .collapser h1 {
         vertical-align: middle;
         display: inline-block;
         margin: 0px;
+    }
+
+    .collapser td {
+        white-space: nowrap;
     }
 
 .selected {
@@ -25,13 +29,6 @@
 input[type="image"] {
     height: 21px;
     padding-left: 2px;
-}
-
-#cardSpace {
-    transition: max-height 0.25s ease-in;
-    max-height: 500px;
-    overflow: scroll;
-
 }
 
 #cardSpace .card.picked {
@@ -76,23 +73,24 @@ input[type="button"].attack-filter {
     background-size: cover;
 }
 
-#filters {
+.collapsible {
+    height: auto;
     transition: max-height 0.25s ease-in;
-    max-height: 300px;
-    overflow: hidden;
+    max-height: 80%;
+    overflow: auto;
 }
 
-    #filters.collapsed {
+    .collapsible.collapsed {
         overflow: hidden;
         max-height: 0px;
         transition: max-height 0.15s ease-out;
     }
 
-    #filters fieldset {
-        display: inline;
-        padding: 2px;
-        margin: 0;
-    }
+#filters fieldset {
+    display: inline;
+    padding: 2px;
+    margin: 0;
+}
 
 .dialog-form {
     padding: 0;
@@ -134,7 +132,7 @@ input[type="button"].attack-filter {
     }
 
     .dialog-form #upgrade {
-        width: initial,
+        width: initial,;
     }
 
 #filters span {

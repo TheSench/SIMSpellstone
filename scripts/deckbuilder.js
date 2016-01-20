@@ -38,6 +38,7 @@ var form;
 
 var initDeckBuilder = function () {
     setupPopups();
+    adjustHeight();
 
     $("body").addClass("loading");
 
@@ -45,6 +46,13 @@ var initDeckBuilder = function () {
         drawAllCards();
         $("body").removeClass("loading");
     }, 1);
+}
+
+var adjustHeight = function () {
+    var deckBuilderContainer = $("#deckBuilderContainer");
+    var height = $(window).height();
+    deckBuilderContainer.css('height', height);
+    deckBuilderContainer.css('max-height', height);
 }
 
 var setupPopups = function () {
@@ -107,8 +115,13 @@ var drawAllCards = function () {
         }
     }
 
+    var sortField = document.getElementById("sortField");
+    if (sortField.value != "id") {
+        sortCards(sortField);
+    }
+
     draw_deck(deck, removeFromDeck, showRunePicker);
-    draw_card_list(unitsShown, addToDeck);
+    draw_card_list(unitsShown, false, addToDeck);
     if (inventory) {
         var unitsToHide = deck.deck.slice();
         unitsToHide.push(deck.commander);
@@ -900,24 +913,7 @@ var isInRange = function (unit, field, min, max) {
 }
 
 var toggleSkillDetails = function (checkbox) {
-    while (skillStyle.hasChildNodes()) {
-        skillStyle.removeChild(skillStyle.firstChild);
-    }
-    if (checkbox.checked) {
-        rules = document.createTextNode(
-            '.card-skills-short { display: initial; } .card-skills-detailed { display: none; }'
-        );
-    } else {
-        rules = document.createTextNode(
-            '.card-skills-short { display: none; } .card-skills-detailed { display: initial; }'
-        );
-    }
-
-    if (skillStyle.styleSheet) {
-        skillStyle.styleSheet.cssText = rules.nodeValue;
-    } else {
-        skillStyle.appendChild(rules);
-    }
+    draw_card_list(unitsShown, checkbox.checked, addToDeck);
 }
 
 var toggleUpgrades = function (checkbox) {
@@ -933,6 +929,16 @@ var toggleUpgrades = function (checkbox) {
     }, 1);
 }
 
+var toggleDeckDisplay = function (img) {
+    var deckContainer = document.getElementById("deckContainer");
+    if (deckContainer.classList.contains("collapsed")) {
+        deckContainer.classList.remove("collapsed");
+        img.src = "res/misc/Minus.png";
+    } else {
+        deckContainer.classList.add("collapsed");
+        img.src = "res/misc/Plus.png";
+    }
+}
 
 var toggleFilterDisplay = function (img) {
     var filters = document.getElementById("filters");
@@ -943,6 +949,61 @@ var toggleFilterDisplay = function (img) {
         filters.classList.add("collapsed");
         img.src = "res/misc/Plus.png";
     }
+}
+
+var toggleCardDisplay = function (img) {
+    var cardSpace = document.getElementById("cardSpace");
+    if (cardSpace.classList.contains("collapsed")) {
+        cardSpace.classList.remove("collapsed");
+        img.src = "res/misc/Minus.png";
+    } else {
+        cardSpace.classList.add("collapsed");
+        img.src = "res/misc/Plus.png";
+    }
+}
+
+var sortCards = function (select) {
+    var sortField = select.value;
+    unitsShown.sort(function (unitA, unitB) {
+        // Always sort by commander/unit first
+        var comparison = is_commander(unitB.id) - is_commander(unitA.id);
+        if(comparison != 0) return comparison;
+
+        if (sortField == "id") {
+            return sortByID(unitA, unitB);
+        } else {
+            var cardA = get_card_by_id(unitA);
+            var cardB = get_card_by_id(unitB);
+            comparison = (cardA[sortField] | 0) - (cardB[sortField] | 0);
+            if (comparison != 0) return comparison;
+            // Fall back on sorting by ID
+            return sortByID(unitA, unitB);
+        }
+    });
+    draw_card_list(unitsShown, document.getElementById("skillDetails").checked, addToDeck);
+    applyFilters();
+}
+
+var sortByID = function (unitA, unitB) {
+    var baseIDA = unitA.id.toString();
+    var baseIDB = unitB.id.toString();
+    var fusionA = 0;
+    var fusionB = 0;
+    if (baseIDA.length > 4) {
+        fusionA = baseIDA.substring(0, 1);
+        baseIDA = parseInt(baseIDA.substring(1, 5));
+    } else {
+        baseIDA = parseInt(baseIDA);
+    }
+    if (baseIDB.length > 4) {
+        fusionB = baseIDB.substring(0, 1);
+        baseIDB = parseInt(baseIDB.substring(1, 5));
+    } else {
+        baseIDB = parseInt(baseIDB);
+    }
+    var comparison = baseIDA - baseIDB;
+    if (comparison != 0) return comparison;
+    return fusionA - fusionB;
 }
 
 var makeUnitKey = function (unit) {
@@ -989,7 +1050,6 @@ var skillStyle = document.createElement('style');
 (function () {
     skillStyle.type = 'text/css';
     document.getElementsByTagName('head')[0].appendChild(skillStyle);
-    toggleSkillDetails({ checked: false });
 })();
 
 function setDeckName(name) {

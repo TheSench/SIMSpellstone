@@ -18,7 +18,7 @@ function draw_deck(deck, onclick, onrightclick) {
 function makeDeckHTML(deck, onclick, onrightclick) {
     var deckHTML = createDiv("float-left");
     var commander = get_card_by_id(deck.commander);
-    var htmlCard = create_card_html(commander, false, onclick, onrightclick);
+    var htmlCard = create_card_html(commander, false, false, onclick, onrightclick);
     if (deck.commander.index !== undefined) {
         attr = document.createAttribute("data-index");
         attr.value = deck.commander.index;
@@ -28,7 +28,7 @@ function makeDeckHTML(deck, onclick, onrightclick) {
     for (var i = 0, len = deck.deck.length; i < len; i++) {
         var deckEntry = deck.deck[i];
         var unit = get_card_by_id(deckEntry);
-        var htmlCard = create_card_html(unit, false, onclick, onrightclick, i);
+        var htmlCard = create_card_html(unit, false, false, onclick, onrightclick, i);
         if (deckEntry.index !== undefined) {
             attr = document.createAttribute("data-index");
             attr.value = deckEntry.index;
@@ -43,14 +43,14 @@ function makeDeckHTML(deck, onclick, onrightclick) {
     return deckHTML;
 }
 
-function draw_card_list(list, onclick, onrightclick) {
+function draw_card_list(list, compactSkills, onclick, onrightclick) {
     var cardSpace = document.getElementById("cardSpace");
     cardSpace.innerHTML = '';
     var cards = createDiv("float-left");
     for (var i = 0, len = list.length; i < len; i++) {
         var listEntry = list[i];
         var unit = get_card_by_id(listEntry);
-        var htmlCard = create_card_html(unit, false, onclick, onrightclick);
+        var htmlCard = create_card_html(unit, compactSkills, false, onclick, onrightclick);
         if (listEntry.index !== undefined) {
             attr = document.createAttribute("data-index");
             attr.value = listEntry.index;
@@ -82,11 +82,11 @@ function draw_cards(drawableHand, performTurns, turn) {
 function draw_field(field) {
     var cards = createDiv("float-left");
     var commander = field.commander;
-    cards.appendChild(create_card_html(commander, true));
+    cards.appendChild(create_card_html(commander, true, true));
     var units = field.assaults;
     if (units) for (var i = 0, len = units.length; i < len; i++) {
         var unit = units[i];
-        var htmlCard = create_card_html(unit, true);
+        var htmlCard = create_card_html(unit, true, true);
         if (unit.timer) htmlCard.classList.add("inactive");
         cards.appendChild(htmlCard);
     }
@@ -99,7 +99,7 @@ function draw_hand(hand, callback, state) {
     for (var i = 0, len = hand.length; i < len; i++) {
         var unit = hand[i];
         if (!unit) continue;
-        var htmlCard = create_card_html(unit);
+        var htmlCard = create_card_html(unit, false);
         if (i === 0) htmlCard.classList.add("left");
         else if (i === 2) htmlCard.classList.add("right");
         var cardidx = i;
@@ -115,7 +115,7 @@ function draw_hand(hand, callback, state) {
     return cards;
 }
 
-function create_card_html(card, onField, onclick, onrightclick, state) {
+function create_card_html(card, compactSkills, onField, onclick, onrightclick, state) {
     var htmlCard = createDiv("card");
     // Add ID to card
     var attr = document.createAttribute("data-id");
@@ -197,9 +197,12 @@ function create_card_html(card, onField, onclick, onrightclick, state) {
     var skillsDetail = divSkills.cloneNode(true);
     skillsDetail.className = "card-skills-detailed";
     if (skillsShort.hasChildNodes()) {
-        htmlCard.appendChild(skillsShort);
-        htmlCard.appendChild(divSkills);
-        htmlCard.appendChild(skillsDetail);
+        if (compactSkills) {
+            htmlCard.appendChild(skillsShort);
+            htmlCard.appendChild(divSkills);
+        } else {
+            htmlCard.appendChild(skillsDetail);
+        }
     }
     htmlCard.appendChild(createDiv("faction"));
     if (onField) {

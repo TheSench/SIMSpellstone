@@ -259,7 +259,6 @@ img[src='Error.src'] {
     background-image: linear-gradient( 0deg, rgba(0,0,0,0.9), rgba(0,0,0,0.8) 80%, rgba(0,0,0,0.7) 85%, rgba(0,0,0,0.0));
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    display: none;
 }
 
     .card-skills-detailed img {
