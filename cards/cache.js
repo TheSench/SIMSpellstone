@@ -11832,7 +11832,7 @@ var CARDS = {
   "2024": {
     "id": "2024",
     "name": "Dusk Noble",
-    "picture": "NotFound",
+    "picture": "Vampire_Noble_A",
     "rarity": "3",
     "set": "2000",
     "card_type": "2",
@@ -11885,7 +11885,7 @@ var CARDS = {
   "12024": {
     "id": "12024",
     "name": "Dusk Aristocrat",
-    "picture": "NotFound",
+    "picture": "Vampire_Noble_A",
     "rarity": "3",
     "set": "2000",
     "card_type": "2",
@@ -11942,7 +11942,7 @@ var CARDS = {
   "22024": {
     "id": "22024",
     "name": "Dusk Highborn",
-    "picture": "NotFound",
+    "picture": "Vampire_Noble_B",
     "rarity": "3",
     "set": "2000",
     "card_type": "2",
@@ -19641,7 +19641,7 @@ var CARDS = {
   "5034": {
     "id": "5034",
     "name": "Skyward Guardian",
-    "picture": "NotFound",
+    "picture": "Skyward_Guardian_A",
     "rarity": "4",
     "set": "3000",
     "card_type": "2",
@@ -19707,7 +19707,7 @@ var CARDS = {
   "15034": {
     "id": "15034",
     "name": "Skyward Defender",
-    "picture": "NotFound",
+    "picture": "Skyward_Guardian_A",
     "rarity": "4",
     "set": "3000",
     "card_type": "2",
@@ -19773,7 +19773,7 @@ var CARDS = {
   "25034": {
     "id": "25034",
     "name": "Skyward Sentinel",
-    "picture": "NotFound",
+    "picture": "Skyward_Guardian_B",
     "rarity": "4",
     "set": "3000",
     "card_type": "2",
@@ -27472,7 +27472,7 @@ var CARDS = {
   "6034": {
     "id": "6034",
     "name": "Bone Viper",
-    "picture": "NotFound",
+    "picture": "Snake_Skeleton_A",
     "rarity": "3",
     "set": "3000",
     "card_type": "2",
@@ -27534,7 +27534,7 @@ var CARDS = {
   "16034": {
     "id": "16034",
     "name": "Grave Rattle Viper",
-    "picture": "NotFound",
+    "picture": "Snake_Skeleton_A",
     "rarity": "3",
     "set": "3000",
     "card_type": "2",
@@ -27603,7 +27603,7 @@ var CARDS = {
   "26034": {
     "id": "26034",
     "name": "Death Rattle Viper",
-    "picture": "NotFound",
+    "picture": "Snake_Skeleton_B",
     "rarity": "3",
     "set": "3000",
     "card_type": "2",
@@ -35711,7 +35711,7 @@ var CARDS = {
   "7034": {
     "id": "7034",
     "name": "Spore Elk",
-    "picture": "NotFound",
+    "picture": "Spore_Infected_Elk_A",
     "rarity": "3",
     "set": "3000",
     "card_type": "2",
@@ -35787,7 +35787,7 @@ var CARDS = {
   "17034": {
     "id": "17034",
     "name": "Infected Elk",
-    "picture": "NotFound",
+    "picture": "Spore_Infected_Elk_A",
     "rarity": "3",
     "set": "3000",
     "card_type": "2",
@@ -35862,7 +35862,7 @@ var CARDS = {
   "27034": {
     "id": "27034",
     "name": "Contagion Elk",
-    "picture": "NotFound",
+    "picture": "Spore_Infected_Elk_B",
     "rarity": "3",
     "set": "3000",
     "card_type": "2",
