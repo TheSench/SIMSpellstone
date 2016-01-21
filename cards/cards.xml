@@ -6446,6 +6446,118 @@
     </upgrade>
   </unit>
   <unit>
+    <id>2024</id>
+    <card_type>2</card_type>
+    <name>Dusk Noble</name>
+    <picture>Vampire_Noble_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until>1453395600</hidden_until>
+    <!-- Thu, 21 Jan 2016 17:00:00 GMT -->
+    <attack>3</attack>
+    <health>10</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="poison" x="1" />
+    <skill id="berserk" x="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="1" />
+      <skill id="poison" x="1" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12024</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Dusk Aristocrat</name>
+    <picture>Vampire_Noble_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until>1453395600</hidden_until>
+    <!-- Thu, 21 Jan 2016 17:00:00 GMT -->
+    <attack>4</attack>
+    <health>12</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="poison" x="2" />
+    <skill id="berserk" x="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="1" />
+      <skill id="poison" x="2" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22024</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Dusk Highborn</name>
+    <picture>Vampire_Noble_B</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until>1453395600</hidden_until>
+    <!-- Thu, 21 Jan 2016 17:00:00 GMT -->
+    <attack>5</attack>
+    <health>15</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="poison" x="2" />
+    <skill id="berserk" x="2" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="1" />
+      <skill id="poison" x="3" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>2026</id>
     <card_type>2</card_type>
     <name>Lazarus</name>
@@ -10547,6 +10659,135 @@
       <skill id="counter" x="3" />
       <skill id="rally" x="3" y="7" />
       <skill id="legion" x="2" y="7" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5034</id>
+    <card_type>2</card_type>
+    <name>Skyward Guardian</name>
+    <picture>Skyward_Guardian_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until>1453395600</hidden_until>
+    <!-- Thu, 21 Jan 2016 17:00:00 GMT -->
+    <attack>4</attack>
+    <health>14</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="1" />
+    <skill id="strike" x="1" all="1" />
+    <skill id="weaken" x="1" all="1" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>18</health>
+      <skill id="counter" x="2" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15034</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Skyward Defender</name>
+    <picture>Skyward_Guardian_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until>1453395600</hidden_until>
+    <!-- Thu, 21 Jan 2016 17:00:00 GMT -->
+    <attack>5</attack>
+    <health>19</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="2" />
+    <skill id="strike" x="1" all="1" />
+    <skill id="weaken" x="1" all="1" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>22</health>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counter" x="3" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25034</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Skyward Sentinel</name>
+    <picture>Skyward_Guardian_B</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until>1453395600</hidden_until>
+    <!-- Thu, 21 Jan 2016 17:00:00 GMT -->
+    <attack>6</attack>
+    <health>24</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="3" />
+    <skill id="strike" x="1" all="1" />
+    <skill id="weaken" x="2" all="1" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="4" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counter" x="4" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="weaken" x="2" all="1" />
     </upgrade>
   </unit>
   <unit>
@@ -14682,6 +14923,122 @@
       <skill id="berserk" x="2" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6034</id>
+    <card_type>2</card_type>
+    <name>Bone Viper</name>
+    <picture>Snake_Skeleton_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until>1453395600</hidden_until>
+    <!-- Thu, 21 Jan 2016 17:00:00 GMT -->
+    <attack>2</attack>
+    <health>6</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="poison" x="1" />
+    <skill id="berserk" x="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>7</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="poison" x="2" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>8</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>3</attack>
+      <skill id="pierce" x="1" />
+      <skill id="poison" x="2" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16034</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Grave Rattle Viper</name>
+    <picture>Snake_Skeleton_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until>1453395600</hidden_until>
+    <!-- Thu, 21 Jan 2016 17:00:00 GMT -->
+    <attack>3</attack>
+    <health>9</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="pierce" x="1" />
+    <skill id="poison" x="2" />
+    <skill id="berserk" x="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="pierce" x="2" />
+      <skill id="poison" x="2" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="pierce" x="3" />
+      <skill id="poison" x="2" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>11</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26034</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Death Rattle Viper</name>
+    <picture>Snake_Skeleton_B</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until>1453395600</hidden_until>
+    <!-- Thu, 21 Jan 2016 17:00:00 GMT -->
+    <attack>3</attack>
+    <health>12</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="pierce" x="3" />
+    <skill id="poison" x="2" />
+    <skill id="berserk" x="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="pierce" x="3" />
+      <skill id="poison" x="3" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+  </unit>
   <!-- Wyld Premium Begin -->
   <unit>
     <id>7000</id>
@@ -18696,6 +19053,127 @@
       <skill id="armored" x="4" />
       <skill id="rally" x="4" all="1" y="7" />
       <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7034</id>
+    <card_type>2</card_type>
+    <name>Spore Elk</name>
+    <picture>Spore_Infected_Elk_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until>1453395600</hidden_until>
+    <!-- Thu, 21 Jan 2016 17:00:00 GMT -->
+    <attack>2</attack>
+    <health>10</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="heal" x="2" y="3" />
+    <skill id="enfeeble" x="1" />
+    <skill id="poison" x="1" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="heal" x="2" y="3" />
+      <skill id="enfeeble" x="1" />
+      <skill id="poison" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>3</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>13</health>
+      <skill id="heal" x="2" y="3" />
+      <skill id="enfeeble" x="2" />
+      <skill id="poison" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17034</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Infected Elk</name>
+    <picture>Spore_Infected_Elk_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until>1453395600</hidden_until>
+    <!-- Thu, 21 Jan 2016 17:00:00 GMT -->
+    <attack>3</attack>
+    <health>14</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="heal" x="2" y="3" />
+    <skill id="enfeeble" x="2" />
+    <skill id="poison" x="2" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="heal" x="3" y="3" />
+      <skill id="enfeeble" x="2" />
+      <skill id="poison" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="heal" x="3" y="3" />
+      <skill id="enfeeble" x="3" />
+      <skill id="poison" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27034</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Contagion Elk</name>
+    <picture>Spore_Infected_Elk_B</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until>1453395600</hidden_until>
+    <!-- Thu, 21 Jan 2016 17:00:00 GMT -->
+    <attack>4</attack>
+    <health>16</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="heal" x="3" y="3" />
+    <skill id="enfeeble" x="3" />
+    <skill id="poison" x="2" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="heal" x="3" y="3" />
+      <skill id="enfeeble" x="3" />
+      <skill id="poison" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="heal" x="4" y="3" />
+      <skill id="enfeeble" x="4" />
+      <skill id="poison" x="3" />
     </upgrade>
   </unit>
   <!-- END SET 3000 - Premium -->
