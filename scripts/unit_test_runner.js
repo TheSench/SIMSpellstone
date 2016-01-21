@@ -6,9 +6,12 @@
 
 var unitTestResults = [];
 var numPassed = 0;
+var drawResults;
 
 function runUnitTests() {
     document.getElementById("results_table").innerHTML = '';
+    var resultType = _GET("unit_tests");
+    drawResults = (resultType ? drawResultsAll : drawResultsFailed);
     unitTestResults = [];
     numPassed = 0;
     nextUnitTest();
@@ -21,10 +24,11 @@ function nextUnitTest(testNumber) {
         var winPercent = (wins / games);
         var lossPercent = (losses / games);
         var drawPercent = (draws / games);
+        
         var passed = true;
-        if (test.wins && winPercent != test.wins) passed = false;
-        if (test.losses && lossPercent != test.losses) passed = false;
-        if (test.draws && drawPercent != test.draws) passed = false;
+        if (test.wins != undefined) passed &= compareResults(test.wins, winPercent);
+        if (test.losses != undefined) passed &= compareResults(test.losses, lossPercent);
+        if (test.draws != undefined) passed &= compareResults(test.draws, drawPercent);
 
         if (passed) numPassed++
 
@@ -55,6 +59,15 @@ function nextUnitTest(testNumber) {
         drawResults();
         clearFields();
         end_sims_callback = undefined;
+    }
+}
+
+var tolerance = 0.01;
+function compareResults(expected, actual) {
+    if (expected == 0 || expected == 1) {
+        return expected = actual;
+    } else {
+        return Math.abs(expected - actual) > tolerance;
     }
 }
 
@@ -196,10 +209,19 @@ function setupTest(test) {
     if (d) d.value = test.sims | 100;
 }
 
-function drawResults() {
-    document.getElementById("results_table").innerHTML = '';
+function drawResultsAll() {
+    var tblDiv = document.getElementById("results_table");
+    tblDiv.innerHTML = '';
+    var overall = document.createElement("span");
+    overall.innerHTML = numPassed + "/" + UNIT_TESTS.length + " Tests Passed";
+    overall.style.fontWeight = "bold";
+    tblDiv.appendChild(overall);
     var table = document.createElement('table');
+    table.cellSpacing = 0;
+    table.cellPadding = 5;
+    table.style.border = "1px solid #000000";
     var header = document.createElement("tr");
+    header.classList.add("header");
     table.appendChild(header);
     var cell = document.createElement("th");
     cell.innerHTML = 'Test #';
@@ -224,6 +246,7 @@ function drawResults() {
         var test = UNIT_TESTS[i];
         var results = unitTestResults[i];
         var row = document.createElement("tr");
+        row.classList.add("alternating");
         var cell = document.createElement("th");
         cell.innerHTML = i;
         row.appendChild(cell);
@@ -239,13 +262,12 @@ function drawResults() {
         row.appendChild(cell);
 
         var cell = document.createElement("th");
-        cell.innerHTML = results.passed;
+        cell.innerHTML = (results.passed ? "Yes" : "No");
         row.appendChild(cell);
 
         table.appendChild(row);
     }
 
-    var tblDiv = document.getElementById("results_table");
     tblDiv.style.width = document.getElementsByTagName("body")[0].offsetWidth + 'px';
     tblDiv.appendChild(table);
     tblDiv.appendChild(document.createElement('br'));
@@ -253,9 +275,72 @@ function drawResults() {
     scroll_to_end();
 }
 
+function drawResultsFailed() {
+    var tblDiv = document.getElementById("results_table");
+    tblDiv.innerHTML = '';
+    var overall = document.createElement("span");
+    overall.innerHTML = numPassed + "/" + UNIT_TESTS.length + " Tests Passed";
+    overall.style.fontWeight = "bold";
+    tblDiv.appendChild(overall);
+    if (numPassed < UNIT_TESTS.length) {
+        var table = document.createElement('table');
+        table.cellSpacing = 0;
+        table.cellPadding = 5;
+        table.style.border = "1px solid #000000";
+        var header = document.createElement("tr");
+        header.classList.add("header");
+        table.appendChild(header);
+        var cell = document.createElement("th");
+        cell.innerHTML = 'Test #';
+        header.appendChild(cell);
+        var cell = document.createElement("th");
+        cell.innerHTML = 'Name';
+        header.appendChild(cell);
+        var cell = document.createElement("th");
+        cell.innerHTML = 'Wins';
+        header.appendChild(cell);
+        var cell = document.createElement("th");
+        cell.innerHTML = 'Losses';
+        header.appendChild(cell);
+        var cell = document.createElement("th");
+        cell.innerHTML = 'Draws';
+        header.appendChild(cell);
+
+        for (var i = 0; i < unitTestResults.length; i++) {
+            var test = UNIT_TESTS[i];
+            var results = unitTestResults[i];
+            if (!results.passed) {
+                var row = document.createElement("tr");
+                row.classList.add("alternating");
+                var cell = document.createElement("th");
+                cell.innerHTML = i;
+                row.appendChild(cell);
+                var cell = document.createElement("th");
+                cell.innerHTML = test.name;
+                row.appendChild(cell);
+
+                var cell = createResultCell(results.wins, test.wins);
+                row.appendChild(cell);
+                var cell = createResultCell(results.losses, test.losses);
+                row.appendChild(cell);
+                var cell = createResultCell(results.draws, test.draws);
+                row.appendChild(cell);
+
+                table.appendChild(row);
+            }
+        }
+
+        tblDiv.style.width = document.getElementsByTagName("body")[0].offsetWidth + 'px';
+        tblDiv.appendChild(table);
+    }
+    tblDiv.appendChild(document.createElement('br'));
+    document.getElementById("remaining").style.display = "none";
+    scroll_to_end();
+}
+
 function createResultCell(actual, expected) {
     var cell = document.createElement("td");
-    cell.innerHTML = (actual*100).toFixed() + "%";
+    cell.innerHTML = (actual * 100).toFixed() + "%";
     return cell;
 }
 
