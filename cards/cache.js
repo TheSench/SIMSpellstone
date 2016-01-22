@@ -35938,7 +35938,7 @@ var CARDS = {
   "7037": {
     "id": "7037",
     "name": "Bane",
-    "picture": "NotFound",
+    "picture": "Undead_Hornedbeast_A",
     "rarity": "4",
     "set": "4000",
     "card_type": "2",
@@ -36023,7 +36023,7 @@ var CARDS = {
   "17037": {
     "id": "17037",
     "name": "Vicious Bane",
-    "picture": "NotFound",
+    "picture": "Undead_Hornedbeast_A",
     "rarity": "4",
     "set": "4000",
     "card_type": "2",
@@ -36096,7 +36096,7 @@ var CARDS = {
   "27037": {
     "id": "27037",
     "name": "Noxious Bane",
-    "picture": "NotFound",
+    "picture": "Undead_Hornedbeast_B",
     "rarity": "4",
     "set": "4000",
     "card_type": "2",
