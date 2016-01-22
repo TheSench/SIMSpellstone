@@ -81,7 +81,7 @@ var CARDS = {
   },
   "1003": {
     "id": "1003",
-    "name": "Kestral",
+    "name": "Kestrel",
     "picture": "Kestral_A",
     "rarity": "1",
     "set": "1000",
@@ -35935,6 +35935,237 @@ var CARDS = {
       },
     }
   },
+  "7037": {
+    "id": "7037",
+    "name": "Bane",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "7",
+    "attack": 4,
+    "health": 12,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "poison",
+        "x": 1,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "poison",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "4": {
+        "attack": 5,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "poison",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "poison",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "17037": {
+    "id": "17037",
+    "name": "Vicious Bane",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "7",
+    "attack": 5,
+    "health": 15,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "poison",
+        "x": 2,
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 16,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "poison",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "health": 17,
+        "skill": [],
+      },
+      "5": {
+        "attack": 6,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "poison",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "27037": {
+    "id": "27037",
+    "name": "Noxious Bane",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "7",
+    "attack": 6,
+    "health": 18,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 3,
+      },
+      {
+        "id": "poison",
+        "x": 3,
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 19,
+        "skill": [],
+      },
+      "3": {
+        "attack": 7,
+        "skill": [],
+      },
+      "4": {
+        "health": 21,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "poison",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "poison",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
   "8000": {
     "id": "8000",
     "name": "Frostbite Giant",
@@ -39494,7 +39725,7 @@ var CARDS = {
   },
   "11003": {
     "id": "11003",
-    "name": "Purified Kestral",
+    "name": "Purified Kestrel",
     "picture": "Kestral_B",
     "rarity": "1",
     "set": "1000",
@@ -39530,7 +39761,7 @@ var CARDS = {
   },
   "21003": {
     "id": "21003",
-    "name": "Spirit Kestral",
+    "name": "Spirit Kestrel",
     "picture": "Kestral_C",
     "rarity": "1",
     "set": "1000",
