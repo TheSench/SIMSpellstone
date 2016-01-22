@@ -117,7 +117,7 @@
   <unit>
     <id>1003</id>
     <card_type>2</card_type>
-    <name>Kestral</name>
+    <name>Kestrel</name>
     <picture>Kestral_A</picture>
     <attack>2</attack>
     <health>4</health>
@@ -134,7 +134,7 @@
       <level>3</level>
       <attack>3</attack>
     </upgrade>
-    <desc>Kestrals are the favored form of guard for noble Aether mages.</desc>
+    <desc>Kestrels are the favored form of guard for noble Aether mages.</desc>
   </unit>
   <unit>
     <id>1004</id>
@@ -19176,6 +19176,136 @@
       <skill id="poison" x="3" />
     </upgrade>
   </unit>
+  <unit>
+    <id>7037</id>
+    <card_type>2</card_type>
+    <name>Bane</name>
+    <picture>Undead_Hornedbeast_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time>1453741200</hidden_until_time>
+    <attack>4</attack>
+    <health>12</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="1" />
+    <skill id="poison" x="1" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="1" />
+      <skill id="poison" x="2" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="2" />
+      <skill id="poison" x="2" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="2" />
+      <skill id="poison" x="2" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17037</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Vicious Bane</name>
+    <picture>Undead_Hornedbeast_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time>1453741200</hidden_until_time>
+    <attack>5</attack>
+    <health>15</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="2" />
+    <skill id="poison" x="2" />
+    <skill id="berserk" x="2" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="2" />
+      <skill id="poison" x="3" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="3" />
+      <skill id="poison" x="3" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27037</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Noxious Bane</name>
+    <picture>Undead_Hornedbeast_B</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time>1453741200</hidden_until_time>
+    <attack>6</attack>
+    <health>18</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="3" />
+    <skill id="poison" x="3" />
+    <skill id="berserk" x="2" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="3" />
+      <skill id="poison" x="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="3" />
+      <skill id="poison" x="4" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
   <!-- END SET 3000 - Premium -->
   <!-- START SET 8000 - Story Element Assaults -->
   <unit>
@@ -20874,7 +21004,7 @@
     <id>11003</id>
     <card_type>2</card_type>
     <fusion_level>1</fusion_level>
-    <name>Purified Kestral</name>
+    <name>Purified Kestrel</name>
     <picture>Kestral_B</picture>
     <asset_bundle>8</asset_bundle>
     <attack>3</attack>
@@ -20898,7 +21028,7 @@
     <id>21003</id>
     <card_type>2</card_type>
     <fusion_level>2</fusion_level>
-    <name>Spirit Kestral</name>
+    <name>Spirit Kestrel</name>
     <picture>Kestral_C</picture>
     <asset_bundle>8</asset_bundle>
     <attack>3</attack>
@@ -20917,7 +21047,7 @@
       <skill id="counter" x="1" />
       <skill id="protect" x="2" y="1" />
     </upgrade>
-    <desc>Having gathered the natural energy of Aether lands, the Kestral transcends its physical form.</desc>
+    <desc>Having gathered the natural energy of Aether lands, the Kestrel transcends its physical form.</desc>
   </unit>
   <unit>
     <id>11004</id>
@@ -28469,6 +28599,37 @@
     <attributes x="1" y="1" all="0" c="0" s="0" />
     <status_flag>resurrected</status_flag>
     <balance_points>8</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>valor</id>
+    <order>500</order>
+    <icon>valor</icon>
+    <name>Valor</name>
+    <desc>Valor.</desc>
+    <attributes x="1" y="1" all="0" c="0" s="0" />
+    <balance_points>1</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>nullify</id>
+    <order>500</order>
+    <icon>nullify</icon>
+    <name>Nullify</name>
+    <desc>Nullify.</desc>
+    <attributes x="1" y="1" all="0" c="0" s="0" />
+    <status_flag>nullified</status_flag>
+    <balance_points>1</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>taunt</id>
+    <order>500</order>
+    <icon>taunt</icon>
+    <name>Taunt</name>
+    <desc>Taunt.</desc>
+    <attributes x="1" y="1" all="0" c="0" s="0" />
+    <balance_points>1</balance_points>
     <hidden>1</hidden>
   </skillType>
   <skillType>

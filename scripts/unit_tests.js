@@ -84,4 +84,16 @@
         deck2: "AAECUb",
         losses: 1
     },
+    {
+        name: "Freeze",
+        deck1: "GDKQPu",
+        deck2: "GDKEQE",
+        losses: 1
+    },
+    {
+        name: "Freeze-Invis",
+        deck1: "GDKIUx",
+        deck2: "GDKYtf",
+        wins: 1
+    },
 ];
