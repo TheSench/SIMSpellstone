@@ -82,10 +82,12 @@ if (use_workers) {
                         // Convert echo to bytes in the ArrayBuffer
                         var bufView = new Int16Array(msg, offset, 48);
                         var chararray = [];
-                        for (var i = 0, hashLen = 16; i < hashLen; i++) {
-                            var char = String.fromCharCode(bufView[i]);
+                        for (var i = 0, hashLen = 48; i < hashLen; ) {
+                            var char = String.fromCharCode(bufView[i++]);
                             if (char == ' ') break;
                             chararray.push(char);
+                            chararray.push(String.fromCharCode(bufView[i++]));
+                            chararray.push(String.fromCharCode(bufView[i++]));
                         }
                         // ... and append it to echo
                         var hash = chararray.join("");

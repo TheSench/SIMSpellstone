@@ -11,6 +11,11 @@ if (simulator_thread) {
     var play_card = function (card, p, quiet) {
         var field_p_assaults = field[p]['assaults'];
 
+        // Store plays
+        if (trackStats && p == 'player') {
+            plays.push(makeUnitInfo(card.id, card.level));
+        }
+
         // Not a valid card
         if (!card.id) return 0;
 
@@ -1052,12 +1057,6 @@ if (simulator_thread) {
                     card_picked = Math.floor(Math.random() * deck_p_deck.slice(0, 3).length);
                 }
                 play_card(deck_p_deck[card_picked], p);
-            }
-
-            // Store plays
-            if (trackStats && p == 'player') {
-                var unit = deck_p_deck[card_picked];
-                plays.push(makeUnitInfo(unit.id, unit.level));
             }
 
             // Remove from deck
