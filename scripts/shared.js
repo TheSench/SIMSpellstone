@@ -1430,6 +1430,8 @@ function get_card_by_id(unit, skillModifiers) {
         var cached = MakeAssault(current_card, unit.level, skillModifiers);
         if (unit.runes) {
             cached.addRunes(unit.runes);
+        } else {
+            cached.runes = [];
         }
         card_cache[unitKey] = cached;
         cached = cloneCard(cached);
