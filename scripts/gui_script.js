@@ -314,6 +314,16 @@ function onpageload() {
 
     if (_DEFINED('autostart')) {
         startsim(1);
+    } else if (_DEFINED('unit_tests')) {
+        var body = document.getElementsByTagName("body")[0];
+        var script = document.createElement("script");
+        script.src = "scripts/unit_tests.js";
+        body.appendChild(script);
+        script.onload = function () {
+            var script = document.createElement("script");
+            script.src = "scripts/unit_test_runner.js";
+            body.appendChild(script);
+        };
     }
 }
 

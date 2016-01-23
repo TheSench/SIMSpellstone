@@ -81,7 +81,7 @@ var CARDS = {
   },
   "1003": {
     "id": "1003",
-    "name": "Kestral",
+    "name": "Kestrel",
     "picture": "Kestral_A",
     "rarity": "1",
     "set": "1000",
@@ -11832,7 +11832,7 @@ var CARDS = {
   "2024": {
     "id": "2024",
     "name": "Dusk Noble",
-    "picture": "NotFound",
+    "picture": "Vampire_Noble_A",
     "rarity": "3",
     "set": "2000",
     "card_type": "2",
@@ -11885,7 +11885,7 @@ var CARDS = {
   "12024": {
     "id": "12024",
     "name": "Dusk Aristocrat",
-    "picture": "NotFound",
+    "picture": "Vampire_Noble_A",
     "rarity": "3",
     "set": "2000",
     "card_type": "2",
@@ -11942,7 +11942,7 @@ var CARDS = {
   "22024": {
     "id": "22024",
     "name": "Dusk Highborn",
-    "picture": "NotFound",
+    "picture": "Vampire_Noble_B",
     "rarity": "3",
     "set": "2000",
     "card_type": "2",
@@ -19641,7 +19641,7 @@ var CARDS = {
   "5034": {
     "id": "5034",
     "name": "Skyward Guardian",
-    "picture": "NotFound",
+    "picture": "Skyward_Guardian_A",
     "rarity": "4",
     "set": "3000",
     "card_type": "2",
@@ -19707,7 +19707,7 @@ var CARDS = {
   "15034": {
     "id": "15034",
     "name": "Skyward Defender",
-    "picture": "NotFound",
+    "picture": "Skyward_Guardian_A",
     "rarity": "4",
     "set": "3000",
     "card_type": "2",
@@ -19773,7 +19773,7 @@ var CARDS = {
   "25034": {
     "id": "25034",
     "name": "Skyward Sentinel",
-    "picture": "NotFound",
+    "picture": "Skyward_Guardian_B",
     "rarity": "4",
     "set": "3000",
     "card_type": "2",
@@ -27472,7 +27472,7 @@ var CARDS = {
   "6034": {
     "id": "6034",
     "name": "Bone Viper",
-    "picture": "NotFound",
+    "picture": "Snake_Skeleton_A",
     "rarity": "3",
     "set": "3000",
     "card_type": "2",
@@ -27534,7 +27534,7 @@ var CARDS = {
   "16034": {
     "id": "16034",
     "name": "Grave Rattle Viper",
-    "picture": "NotFound",
+    "picture": "Snake_Skeleton_A",
     "rarity": "3",
     "set": "3000",
     "card_type": "2",
@@ -27603,7 +27603,7 @@ var CARDS = {
   "26034": {
     "id": "26034",
     "name": "Death Rattle Viper",
-    "picture": "NotFound",
+    "picture": "Snake_Skeleton_B",
     "rarity": "3",
     "set": "3000",
     "card_type": "2",
@@ -35711,7 +35711,7 @@ var CARDS = {
   "7034": {
     "id": "7034",
     "name": "Spore Elk",
-    "picture": "NotFound",
+    "picture": "Spore_Infected_Elk_A",
     "rarity": "3",
     "set": "3000",
     "card_type": "2",
@@ -35787,7 +35787,7 @@ var CARDS = {
   "17034": {
     "id": "17034",
     "name": "Infected Elk",
-    "picture": "NotFound",
+    "picture": "Spore_Infected_Elk_A",
     "rarity": "3",
     "set": "3000",
     "card_type": "2",
@@ -35862,7 +35862,7 @@ var CARDS = {
   "27034": {
     "id": "27034",
     "name": "Contagion Elk",
-    "picture": "NotFound",
+    "picture": "Spore_Infected_Elk_B",
     "rarity": "3",
     "set": "3000",
     "card_type": "2",
@@ -35929,6 +35929,237 @@ var CARDS = {
           },
           {
             "id": "poison",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "7037": {
+    "id": "7037",
+    "name": "Bane",
+    "picture": "Undead_Hornedbeast_A",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "7",
+    "attack": 4,
+    "health": 12,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "poison",
+        "x": 1,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "poison",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "4": {
+        "attack": 5,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "poison",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "poison",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "17037": {
+    "id": "17037",
+    "name": "Vicious Bane",
+    "picture": "Undead_Hornedbeast_A",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "7",
+    "attack": 5,
+    "health": 15,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "poison",
+        "x": 2,
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 16,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "poison",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "health": 17,
+        "skill": [],
+      },
+      "5": {
+        "attack": 6,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "poison",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "27037": {
+    "id": "27037",
+    "name": "Noxious Bane",
+    "picture": "Undead_Hornedbeast_B",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "7",
+    "attack": 6,
+    "health": 18,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 3,
+      },
+      {
+        "id": "poison",
+        "x": 3,
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 19,
+        "skill": [],
+      },
+      "3": {
+        "attack": 7,
+        "skill": [],
+      },
+      "4": {
+        "health": 21,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "poison",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "poison",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
             "x": 3,
           },
         ],
@@ -39494,7 +39725,7 @@ var CARDS = {
   },
   "11003": {
     "id": "11003",
-    "name": "Purified Kestral",
+    "name": "Purified Kestrel",
     "picture": "Kestral_B",
     "rarity": "1",
     "set": "1000",
@@ -39530,7 +39761,7 @@ var CARDS = {
   },
   "21003": {
     "id": "21003",
-    "name": "Spirit Kestral",
+    "name": "Spirit Kestrel",
     "picture": "Kestral_C",
     "rarity": "1",
     "set": "1000",

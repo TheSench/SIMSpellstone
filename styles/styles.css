@@ -52,3 +52,12 @@ br {
   border-bottom: 1px solid #333333;
   border-left: 1px solid #CCCCCC;
 }
+
+.header {
+    background-color: black;
+    color: white;
+}
+
+tr:nth-child(odd).alternating {
+    background-color: lightgrey;
+}
