@@ -13,7 +13,7 @@ if (simulator_thread) {
 
         // Store plays
         if (trackStats && p == 'player') {
-            plays.push(makeUnitInfo(card.id, card.level));
+            plays.push(makeUnitInfo(card.id, card.level, card.runes));
         }
 
         // Not a valid card
