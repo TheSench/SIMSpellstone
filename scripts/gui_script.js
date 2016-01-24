@@ -482,7 +482,11 @@ function getOrderStatsTable() {
         winrateKeys.push(key);
     }
     winrateKeys.sort(function (a, b) {
-        var compare = orders[b].winrate - orders[a].winrate;
+        var statsA = orders[a];
+        var statsB = orders[b];
+        var compare = statsB.winrate - statsA.winrate;
+        if (compare != 0) return compare;
+        compare = statsA.games - statsB.games;
         if (compare != 0) return compare;
         if (a < b) return -1;
         if (a > b) return 1;
