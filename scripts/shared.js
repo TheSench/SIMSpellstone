@@ -829,18 +829,19 @@ function generate_card_list(deck) {
     var copies = [];
     var priorities = [];
 
-    var commander = get_slim_card_by_id(deck.commander);
+    var commander = get_card_by_id(deck.commander);
     cardlist.push(commander.name + "(" + commander.level + ")");
     copies.push(1);
     priorities.push(0);
     var lastidx = 0;
     for (var key in deck.deck) {
         var unit = deck.deck[key];
-        var card = get_slim_card_by_id(unit);
+        var card = get_card_by_id(unit);
 
         if (!card) continue;
 
         var card_name = card.name + "(" + card.level + ")";
+        if (card.runes.length) card_name += "*";
 
         if (cardlist[lastidx] == card_name) {
             copies[lastidx]++;
@@ -1429,6 +1430,8 @@ function get_card_by_id(unit, skillModifiers) {
         var cached = MakeAssault(current_card, unit.level, skillModifiers);
         if (unit.runes) {
             cached.addRunes(unit.runes);
+        } else {
+            cached.runes = [];
         }
         card_cache[unitKey] = cached;
         cached = cloneCard(cached);
@@ -1517,12 +1520,13 @@ function is_commander(id) {
     return (card && card.card_type == '1');
 }
 
-function makeUnitInfo(id, level) {
+function makeUnitInfo(id, level, runes) {
     var unit = {
         id: id,
         level: level,
         runes: []
     };
+    if (runes) unit.runes = runes;
     return unit;
 }
 

@@ -167,38 +167,42 @@ function returnResultsStructuredCloning() {
 // (used when Transferable Objects are NOT supported by the browser)
 function returnStatsTransferableObjects() {
     // Create results ArrayBuffer
-    var hashLength = 96;                // 16 cards - 3 characters each - 2 bytes per character
-    var statLength = hashLength + 16;   // 4 ints @ 4 bytes per float
-    var numKeys = 0;
+    var hashLength = 0;
+    var statLength = 0;   
     for (var key in orders) {
-        numKeys++;
+        statLength++;
+        hashLength += key.length;
     }
+    statLength *= 20;   // 5 ints @ 4 bytes each
+    hashLength *= 2;    // 2 bytes per character
+    var dataLength = statLength + hashLength;
     var offset = 4;
-    var buffer = new ArrayBuffer(numKeys * statLength + offset); // Extra int for message type
-    var view = new Int32Array(buffer, 0, 1);
-    view[0] = STATS;
-    var filler = ' '.charCodeAt(0);
+    var buffer = new ArrayBuffer(offset + dataLength); // Extra int for message type
+    var view = new DataView(buffer);
+    view.setInt32(0, STATS);
     for (var hash in orders) {
         var stat = orders[hash];
-        // Convert echo to bytes in the ArrayBuffer
-        var bufView = new Int16Array(buffer, offset, 48);
-        var i = 0;
-        var len = hash.length;
-        for (; i < len; i++) {
-            bufView[i] = hash.charCodeAt(i);
-        }
-        for (; i < 48;) {
-            bufView[i++] = filler;
-            bufView[i++] = filler;
-            bufView[i++] = filler;
-        }
-        var view = new Int32Array(buffer, offset + hashLength, 4);
-        view[0] = stat.games;
-        view[1] = stat.wins;
-        view[2] = stat.draws;
-        view[3] = stat.losses;
 
-        offset += statLength;
+        // Length of hash
+        var len = hash.length;
+        view.setInt32(offset, len);
+        offset += 4;
+
+        // Convert hash to bytes in the ArrayBuffer
+        var i = 0;
+        for (; i < len; i++) {
+            view.setInt16(offset, hash.charCodeAt(i));
+            offset += 2;
+        }
+
+        view.setInt32(offset, stat.games);
+        offset += 4;
+        view.setInt32(offset, stat.wins);
+        offset += 4;
+        view.setInt32(offset, stat.draws);
+        offset += 4;
+        view.setInt32(offset, stat.losses);
+        offset += 4;
     }
 
     // Send batch results back to main thread
