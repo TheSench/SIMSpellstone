@@ -40,8 +40,8 @@ if (use_workers) {
         if (sims_left) {
             progress = true;
             var msg = e.data;
-            var view = new Int32Array(msg, 0, 1);
-            switch (view[0]) {
+            var view = new DataView(msg, 0, 4);
+            switch (view.getInt32(0)) {
                 case RESULTS:
                     view = new Int32Array(msg, 4, 5);
                     var num_games = view[0];
@@ -78,26 +78,29 @@ if (use_workers) {
                 case STATS:
                     var hashLength = 96;                // 16 cards - 3 characters each - 2 bytes per character
                     var statLength = hashLength + 16;   // 4 ints @ 4 bytes per float
-                    for (var offset = 4, len = msg.byteLength; offset < len; offset += statLength) {
+                    var offset = 4, len = msg.byteLength;
+                    while (offset < len) {
                         // Convert echo to bytes in the ArrayBuffer
-                        var bufView = new Int16Array(msg, offset, 48);
+                        var view = new DataView(msg);
+                        var hashLen = view.getInt32(offset);
+                        offset += 4;
+
                         var chararray = [];
-                        for (var i = 0, hashLen = 48; i < hashLen; ) {
-                            var char = String.fromCharCode(bufView[i++]);
-                            if (char == ' ') break;
+                        for (var i = 0; i < hashLen; i++) {
+                            var char = String.fromCharCode(view.getInt16(offset));
+                            offset += 2;
                             chararray.push(char);
-                            chararray.push(String.fromCharCode(bufView[i++]));
-                            chararray.push(String.fromCharCode(bufView[i++]));
                         }
+
                         // ... and append it to echo
                         var hash = chararray.join("");
-                        var view = new Int32Array(msg, offset + hashLength, 4);
                         var stats = {
-                            games: view[0],
-                            wins: view[1],
-                            draws: view[2],
-                            losses: view[3],
+                            games: view.getInt32(offset),
+                            wins: view.getInt32(offset+4),
+                            draws: view.getInt32(offset+8),
+                            losses: view.getInt32(offset+12),
                         }
+                        offset += 16;
 
                         updateStats(hash, stats);
                     }
