@@ -96,6 +96,7 @@ var drawAllCards = function () {
     } else if (_DEFINED('spoilers')) {
         deck = spoilers;
     }
+    sortDeck(deck);
 
     units = [];
     unitsShown = [];
@@ -183,6 +184,7 @@ var hash_changed = function (hash) {
         if (typeof simulatorDeckHashField !== 'undefined') simulatorDeckHashField.value = hash;
     }
     deck = hash_decode(document.getElementById("hash").value);
+    sortDeck(deck);
 
     if (fromInventory) {
         var unitsToHide = deck.deck.slice();
@@ -203,6 +205,24 @@ var hash_changed = function (hash) {
     draw_deck(deck, removeFromDeck, showRunePicker);
 }
 
+var sortDeck = function (deck) {
+    deck.deck.sort(function (unitA, unitB) {
+        var cardA = get_card_by_id(unitA);
+        var cardB = get_card_by_id(unitB);
+        var compare;
+        compare = (cardA.rarity - cardB.rarity);
+        if (compare) return compare;
+        compare = (cardA.type - cardB.type);
+        if (compare) return compare;
+        compare = (unitA.id - unitB.id);
+        if (compare) return compare;
+        compare = unitA.level - unitB.level;
+        if (compare) return compare;
+        compare = (unitA.runes.length ? unitA.runes[0].id : 0) - (unitB.runes.length ? unitB.runes[0].id : 0);
+        return compare;
+    });
+}
+
 var addToDeck = function (htmlCard) {
     var unit = getUnitFromCard(htmlCard);
     if (is_commander(unit.id)) {
@@ -211,6 +231,7 @@ var addToDeck = function (htmlCard) {
         if (deck.deck.length == 15) return;
         deck.deck.push(unit);
     }
+    sortDeck(deck);
     if (fromInventory) htmlCard.classList.add("picked");
     draw_deck(deck, removeFromDeck, showRunePicker);
     updateHash();
