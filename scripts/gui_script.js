@@ -759,8 +759,9 @@ function open_deck_builder(name, hash, inventory, player) {
     // Push values to window once it has loaded
     win.onload = (function (name, deckHashField, baseRequest) {
         return function () {
-            if (name) this.setDeckName(name);
+            // Tie deck-builder back to the hash field in the simulator.
             if (deckHashField) this.simulatorDeckHashField = deckHashField;
+            // Link deckbuilder to base request data.
             if (inventory) $.extend(this.DeckRetriever.baseRequest, baseRequest);
         }
     })(name, deckHashField, baseRequest);

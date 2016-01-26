@@ -115,6 +115,11 @@ var drawAllCards = function () {
         }
     }
 
+    var name = _GET('name');
+    if (name) {
+        setDeckName(name);
+    }
+
     var sortField = document.getElementById("sortField");
     if (sortField.value != "id") {
         sortCards(sortField);
