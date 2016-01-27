@@ -11996,6 +11996,177 @@ var CARDS = {
       },
     }
   },
+  "2025": {
+    "id": "2025",
+    "name": "Blight Knight",
+    "picture": "Void_Infected_Knight_A",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "7",
+    "attack": 2,
+    "health": 7,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "legion",
+        "x": 1,
+        "y": "1",
+        "z": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 8,
+        "skill": [],
+      },
+      "3": {
+        "attack": 3,
+        "skill": [],
+      },
+      "4": {
+        "health": 9,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 1,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "12025": {
+    "id": "12025",
+    "name": "Infected Knight",
+    "picture": "Void_Infected_Knight_A",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "7",
+    "attack": 3,
+    "health": 9,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "legion",
+        "x": 1,
+        "y": "1",
+        "z": 1,
+      },
+      {
+        "id": "frost",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 10,
+        "skill": [],
+      },
+      "3": {
+        "health": 11,
+        "skill": [],
+      },
+      "4": {
+        "health": 12,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "legion",
+            "x": 1,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "22025": {
+    "id": "22025",
+    "name": "Void Knight",
+    "picture": "Void_Infected_Knight_B",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "7",
+    "attack": 3,
+    "health": 13,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "legion",
+        "x": 1,
+        "y": "1",
+        "z": 1,
+      },
+      {
+        "id": "frost",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "health": 15,
+        "skill": [],
+      },
+      "4": {
+        "attack": 4,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
   "2026": {
     "id": "2026",
     "name": "Lazarus",
@@ -19849,6 +20020,243 @@ var CARDS = {
       },
     }
   },
+  "5035": {
+    "id": "5035",
+    "name": "Vapor Guard",
+    "picture": "Vapor_Ghost_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "7",
+    "attack": 4,
+    "health": 10,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 1,
+        "y": "1",
+        "z": 1,
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "y": "7",
+        "z": 7,
+        "all": "1",
+      },
+      {
+        "id": "burn",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 11,
+        "skill": [],
+      },
+      "3": {
+        "health": 12,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "y": "7",
+            "z": 7,
+            "all": "1",
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+        ],
+      },
+      "5": {
+        "attack": 5,
+        "skill": [],
+      },
+    }
+  },
+  "15035": {
+    "id": "15035",
+    "name": "Vapor Defender",
+    "picture": "Vapor_Ghost_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "7",
+    "attack": 5,
+    "health": 13,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "1",
+        "z": 1,
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "y": "7",
+        "z": 7,
+        "all": "1",
+      },
+      {
+        "id": "burn",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "y": "7",
+            "z": 7,
+            "all": "1",
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "attack": 6,
+        "health": 15,
+        "skill": [],
+      },
+      "5": {
+        "health": 16,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "7",
+            "z": 7,
+            "all": "1",
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "25035": {
+    "id": "25035",
+    "name": "Vapor Warden",
+    "picture": "Vapor_Ghost_B",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "7",
+    "attack": 6,
+    "health": 17,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "1",
+        "z": 1,
+      },
+      {
+        "id": "protect",
+        "x": 2,
+        "y": "7",
+        "z": 7,
+        "all": "1",
+      },
+      {
+        "id": "burn",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 18,
+        "skill": [],
+      },
+      "3": {
+        "health": 19,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "7",
+            "z": 7,
+            "all": "1",
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "7",
+            "z": 7,
+            "all": "1",
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
   "5037": {
     "id": "5037",
     "name": "Dauntless Baneblade",
@@ -27652,6 +28060,252 @@ var CARDS = {
           {
             "id": "berserk",
             "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "6035": {
+    "id": "6035",
+    "name": "Demos",
+    "picture": "Devil_Vanguard_A",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "7",
+    "attack": 3,
+    "health": 13,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "legion",
+        "x": 2,
+        "y": "2",
+        "z": 2,
+      },
+      {
+        "id": "burn",
+        "x": 1,
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "health": 15,
+        "skill": [],
+      },
+      "4": {
+        "health": 16,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 3,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 3,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "16035": {
+    "id": "16035",
+    "name": "Demos, Vanguard",
+    "picture": "Devil_Vanguard_A",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "7",
+    "attack": 3,
+    "health": 17,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "legion",
+        "x": 3,
+        "y": "2",
+        "z": 2,
+      },
+      {
+        "id": "burn",
+        "x": 2,
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 18,
+        "skill": [],
+      },
+      "3": {
+        "health": 19,
+        "skill": [],
+      },
+      "4": {
+        "health": 20,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 3,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 3,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "26035": {
+    "id": "26035",
+    "name": "Demos, Wrathhammer",
+    "picture": "Devil_Vanguard_B",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "7",
+    "attack": 3,
+    "health": 22,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "legion",
+        "x": 3,
+        "y": "2",
+        "z": 2,
+      },
+      {
+        "id": "burn",
+        "x": 3,
+      },
+      {
+        "id": "weaken",
+        "x": 2,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 23,
+        "skill": [],
+      },
+      "3": {
+        "attack": 4,
+        "skill": [],
+      },
+      "4": {
+        "health": 24,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 3,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "burn",
+            "x": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 4,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "burn",
+            "x": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
           },
         ],
       },
@@ -35930,6 +36584,193 @@ var CARDS = {
           {
             "id": "poison",
             "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "7035": {
+    "id": "7035",
+    "name": "Carrion Tiger",
+    "picture": "Undead_Tiger_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "7",
+    "attack": 2,
+    "health": 7,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 1,
+        "y": "3",
+        "z": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 8,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "3",
+            "z": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 9,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+          },
+        ],
+      },
+    }
+  },
+  "17035": {
+    "id": "17035",
+    "name": "Carrion Slasher",
+    "picture": "Undead_Tiger_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "7",
+    "attack": 2,
+    "health": 10,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "3",
+        "z": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 11,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 12,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "27035": {
+    "id": "27035",
+    "name": "Carrion King",
+    "picture": "Undead_Tiger_B",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "7",
+    "attack": 2,
+    "health": 13,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "fervor",
+        "x": 3,
+        "y": "3",
+        "z": 3,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "health": 15,
+        "skill": [],
+      },
+      "4": {
+        "attack": 3,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
           },
         ],
       },
