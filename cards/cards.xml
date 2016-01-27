@@ -6558,6 +6558,116 @@
     </upgrade>
   </unit>
   <unit>
+    <id>2025</id>
+    <card_type>2</card_type>
+    <name>Blight Knight</name>
+    <picture>Void_Infected_Knight_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time>1454000400</hidden_until_time>
+    <!-- Thu, 28 Jan 2016 17:00:00 GMT -->
+    <attack>2</attack>
+    <health>7</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="legion" x="1" y="1" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>8</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>3</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="legion" x="1" y="1" />
+      <skill id="frost" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12025</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Infected Knight</name>
+    <picture>Void_Infected_Knight_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time>1454000400</hidden_until_time>
+    <!-- Thu, 28 Jan 2016 17:00:00 GMT -->
+    <attack>3</attack>
+    <health>9</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="1" />
+    <skill id="legion" x="1" y="1" />
+    <skill id="frost" x="1" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="1" />
+      <skill id="legion" x="1" y="1" />
+      <skill id="frost" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22025</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Void Knight</name>
+    <picture>Void_Infected_Knight_B</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time>1454000400</hidden_until_time>
+    <!-- Thu, 28 Jan 2016 17:00:00 GMT -->
+    <attack>3</attack>
+    <health>13</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="1" />
+    <skill id="legion" x="1" y="1" />
+    <skill id="frost" x="2" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="1" />
+      <skill id="legion" x="2" y="1" />
+      <skill id="frost" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>2026</id>
     <card_type>2</card_type>
     <name>Lazarus</name>
@@ -10788,6 +10898,125 @@
       <skill id="counter" x="4" />
       <skill id="strike" x="2" all="1" />
       <skill id="weaken" x="2" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5035</id>
+    <card_type>2</card_type>
+    <name>Vapor Guard</name>
+    <picture>Vapor_Ghost_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time>1454000400</hidden_until_time>
+    <!-- Thu, 28 Jan 2016 17:00:00 GMT -->
+    <attack>4</attack>
+    <health>10</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="rally" x="1" y="1" />
+    <skill id="protect" x="1" all="1" y="7" />
+    <skill id="burn" x="1" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="rally" x="2" y="1" />
+      <skill id="protect" x="1" all="1" y="7" />
+      <skill id="burn" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>5</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15035</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Vapor Defender</name>
+    <picture>Vapor_Ghost_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time>1454000400</hidden_until_time>
+    <!-- Thu, 28 Jan 2016 17:00:00 GMT -->
+    <attack>5</attack>
+    <health>13</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="rally" x="2" y="1" />
+    <skill id="protect" x="1" all="1" y="7" />
+    <skill id="burn" x="1" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="rally" x="2" y="1" />
+      <skill id="protect" x="1" all="1" y="7" />
+      <skill id="burn" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>15</health>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>16</health>
+      <skill id="rally" x="2" y="1" />
+      <skill id="protect" x="2" all="1" y="7" />
+      <skill id="burn" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25035</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Vapor Warden</name>
+    <picture>Vapor_Ghost_B</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time>1454000400</hidden_until_time>
+    <!-- Thu, 28 Jan 2016 17:00:00 GMT -->
+    <attack>6</attack>
+    <health>17</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="rally" x="2" y="1" />
+    <skill id="protect" x="2" all="1" y="7" />
+    <skill id="burn" x="2" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="rally" x="3" y="1" />
+      <skill id="protect" x="2" all="1" y="7" />
+      <skill id="burn" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="rally" x="3" y="1" />
+      <skill id="protect" x="2" all="1" y="7" />
+      <skill id="burn" x="3" />
     </upgrade>
   </unit>
   <unit>
@@ -15039,6 +15268,137 @@
       <skill id="berserk" x="1" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6035</id>
+    <card_type>2</card_type>
+    <name>Demos</name>
+    <picture>Devil_Vanguard_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time>1454000400</hidden_until_time>
+    <!-- Thu, 28 Jan 2016 17:00:00 GMT -->
+    <attack>3</attack>
+    <health>13</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="legion" x="2" y="2" />
+    <skill id="burn" x="1" />
+    <skill id="weaken" x="1" all="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="legion" x="3" y="2" />
+      <skill id="burn" x="1" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="legion" x="3" y="2" />
+      <skill id="burn" x="2" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16035</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Demos, Vanguard</name>
+    <picture>Devil_Vanguard_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time>1454000400</hidden_until_time>
+    <!-- Thu, 28 Jan 2016 17:00:00 GMT -->
+    <attack>3</attack>
+    <health>17</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="legion" x="3" y="2" />
+    <skill id="burn" x="2" />
+    <skill id="weaken" x="1" all="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="legion" x="3" y="2" />
+      <skill id="burn" x="2" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="legion" x="3" y="2" />
+      <skill id="burn" x="3" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26035</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Demos, Wrathhammer</name>
+    <picture>Devil_Vanguard_B</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time>1454000400</hidden_until_time>
+    <!-- Thu, 28 Jan 2016 17:00:00 GMT -->
+    <attack>3</attack>
+    <health>22</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="legion" x="3" y="2" />
+    <skill id="burn" x="3" />
+    <skill id="weaken" x="2" all="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="legion" x="3" y="2" />
+      <skill id="burn" x="4" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="legion" x="4" y="2" />
+      <skill id="burn" x="4" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+  </unit>
   <!-- Wyld Premium Begin -->
   <unit>
     <id>7000</id>
@@ -19174,6 +19534,117 @@
       <skill id="heal" x="4" y="3" />
       <skill id="enfeeble" x="4" />
       <skill id="poison" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7035</id>
+    <card_type>2</card_type>
+    <name>Carrion Tiger</name>
+    <picture>Undead_Tiger_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time>1454000400</hidden_until_time>
+    <!-- Thu, 28 Jan 2016 17:00:00 GMT -->
+    <attack>2</attack>
+    <health>7</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="fervor" x="1" y="3" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>8</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="1" />
+      <skill id="fervor" x="1" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="1" />
+      <skill id="fervor" x="2" y="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17035</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Carrion Slasher</name>
+    <picture>Undead_Tiger_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time>1454000400</hidden_until_time>
+    <!-- Thu, 28 Jan 2016 17:00:00 GMT -->
+    <attack>2</attack>
+    <health>10</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="fervor" x="2" y="3" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="1" />
+      <skill id="fervor" x="3" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="1" />
+      <skill id="fervor" x="3" y="3" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27035</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Carrion King</name>
+    <picture>Undead_Tiger_B</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time>1454000400</hidden_until_time>
+    <!-- Thu, 28 Jan 2016 17:00:00 GMT -->
+    <attack>2</attack>
+    <health>13</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="fervor" x="3" y="3" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>3</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="1" />
+      <skill id="fervor" x="3" y="3" />
+      <skill id="berserk" x="2" />
     </upgrade>
   </unit>
   <unit>
@@ -27958,7 +28429,7 @@
     <id>270</id>
     <card_type>1</card_type>
     <name>Feral Scientists</name>
-    <portrait>frogemperor</portrait>
+    <portrait>undeadscientists</portrait>
     <attack>0</attack>
     <health>32</health>
     <rarity>4</rarity>
@@ -27998,7 +28469,7 @@
     <id>271</id>
     <card_type>1</card_type>
     <name>Dr. Oppenhinder</name>
-    <portrait>frogemperor</portrait>
+    <portrait>madscientist</portrait>
     <attack>0</attack>
     <health>40</health>
     <rarity>4</rarity>
@@ -28619,6 +29090,26 @@
     <desc>Nullify.</desc>
     <attributes x="1" y="1" all="0" c="0" s="0" />
     <status_flag>nullified</status_flag>
+    <balance_points>1</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>corrosive</id>
+    <order>500</order>
+    <icon>corrosive</icon>
+    <name>Corrosive</name>
+    <desc>Corrosive.</desc>
+    <attributes x="1" y="1" all="0" c="0" s="0" />
+    <balance_points>1</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>silence</id>
+    <order>500</order>
+    <icon>silence</icon>
+    <name>Silence</name>
+    <desc>Silence.</desc>
+    <attributes x="1" y="1" all="0" c="1" s="0" />
     <balance_points>1</balance_points>
     <hidden>1</hidden>
   </skillType>
