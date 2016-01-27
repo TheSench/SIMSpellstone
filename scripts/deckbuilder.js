@@ -214,7 +214,7 @@ var sortDeck = function (deck) {
         if (compare) return compare;
         compare = (cardA.type - cardB.type);
         if (compare) return compare;
-        compare = (unitA.id - unitB.id);
+        compare = sortByID(unitA, unitB);
         if (compare) return compare;
         compare = unitA.level - unitB.level;
         if (compare) return compare;
