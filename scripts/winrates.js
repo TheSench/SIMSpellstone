@@ -132,8 +132,8 @@ function GenerateHashes(field) {
     alert(decks);
 }
 
-function GenerateHashes_2(field) {
-    var hash = field.value;
+function Optimize(field) {
+    var hash = document.getElementById("optimizer_cards").value;
     var deck = hash_decode(hash);
     var cards = deck.deck;
     var len = cards.length;
@@ -161,8 +161,10 @@ function nextEvolution(isFirst) {
     }
     if (best) {
         var attacker = DeckRetriever.allDecks[best];
+        var defender;
     } else {
         var attacker = checkForSpecifiedAttacker();
+        var defender = checkForSpecifiedDefender();
     }
 
     // Remove previous winrate table
@@ -195,9 +197,15 @@ function nextEvolution(isFirst) {
 
     extraCards.splice(0, 1);
 
-    var decks = DeckRetriever.factionDecks;
-    for (var key in decks) {
-        defenderKeys.push(key);
+    if (defender) {
+        var defenderKey = 'defender';
+        defenderKeys.push(defenderKey);
+        DeckRetriever.allDecks[defenderKey] = defender;
+    } else {
+        var decks = DeckRetriever.factionDecks;
+        for (var key in decks) {
+            defenderKeys.push(key);
+        }
     }
 
     attackerKeys.sort(caselessCompare);

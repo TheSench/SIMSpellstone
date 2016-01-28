@@ -692,6 +692,22 @@ function generate_link(autostart, autolink) {
     }
 }
 
+function load_deck_builder_for_field(fieldID) {
+    var field = document.getElementById(fieldID);
+    var deck = {
+        commander: elariaCaptain,
+        deck: [],
+    };
+    var hash = field.value;
+    if (!hash) {
+        hash = hash_encode({
+            commander: elariaCaptain,
+            deck: [],
+        });
+    }
+    open_deck_builder("Card Hash", hash, null, field);
+}
+
 function load_deck_builder(player) {
     if (player == 'player') {
         var getdeck = document.getElementById('deck').value;
@@ -720,10 +736,13 @@ function load_deck_builder(player) {
     if (deck) {
         hash = hash_encode(deck);
     }
-    open_deck_builder(null, hash, null, player);
+
+    var name = (player == 'player' ? 'Player Deck' : 'Enemy Deck');
+    var deckHashField = (player ? document.getElementById(player == 'player' ? 'deck' : 'deck2') : null);
+    open_deck_builder(name, hash, null, deckHashField);
 }
 
-function open_deck_builder(name, hash, inventory, player) {
+function open_deck_builder(name, hash, inventory, deckHashField) {
     var url = (inventory ? "DeckUpdater.html" : "DeckBuilder.html");
     var parameters = [];
     if (hash) {
@@ -733,11 +752,6 @@ function open_deck_builder(name, hash, inventory, player) {
         parameters.push("inventory=" + inventory);
     }
 
-    if (!name) {
-        if (player) {
-            name = (player == 'player' ? 'Player Deck' : 'Enemy Deck');
-        }
-    }
     if (name) {
         parameters.push("name=" + name);
     }
@@ -745,7 +759,6 @@ function open_deck_builder(name, hash, inventory, player) {
         url += '?' + parameters.join('&');
     }
 
-    var deckHashField = (player ? document.getElementById(player == 'player' ? 'deck' : 'deck2') : null);
     var baseRequest = (typeof DeckRetriever !== 'undefined' ? DeckRetriever.baseRequest : null);
 
     var width = Math.min(screen.width, 1000);

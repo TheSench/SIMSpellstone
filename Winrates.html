@@ -120,8 +120,8 @@
         </form>
         <br />
         <form>
-            <input style="float:initial" id="btn_simGuild" type="button" value="SIM Guild" onclick="return RunGuildSIMS();" style="text-align: center; font-weight: bold;">
-            <div><b>Card Hash:</b></div><input id="request_json" type="text" value="" size="50" onchange="GenerateHashes_2(this);"><br>
+            <input style="float:initial" id="btn_simGuild" type="button" value="Optimize" onclick="return Optimize();" style="text-align: center; font-weight: bold;">
+            <div><label class="button" onclick="load_deck_builder_for_field('optimizer_cards');"><b>Card Hash</b></label></div><input id="optimizer_cards" type="text" value="" size="50"><br>
         </form>
         <br/>
         <hr/>
