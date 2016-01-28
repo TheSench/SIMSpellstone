@@ -5,6 +5,7 @@
     <title id="title_tag">SimSpellstone - The Spellstone Simulator that runs from your browser!</title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css" media="screen">
     <link rel="stylesheet" type="text/css" href="styles/card.css">
+    <link rel="stylesheet" type="text/css" href="styles/loading.css">
     <link rel="stylesheet" type="text/css" href="styles/winrates.css">
     <link rel="stylesheet" type="text/css" href="styles/spritesheet.css">
 
@@ -107,10 +108,17 @@
     <br />
     <span id="ui">
         <form>
-            <input style="float:initial" id="btn_simGuild" type="button" value="SIM Guild" onclick="return SimGuild();" style="text-align: center; font-weight: bold;">
-            <input style="float:initial" id="btn_reSimGuild" type="button" value="re-SIM Guild" onclick="return RunGuildSIMS();" style="text-align: center; font-weight: bold;">
-            <div><b>Response JSON:</b></div><input id="request_json" type="text" value="" size="50" onchange="DeckRetriever.getFieldsFromRequest();"><br>
+            <br/>
+            <div><b>Response JSON:</b></div><input id="request_json" type="text" value="" size="50" onchange="DeckRetriever.getFieldsFromRequest();"><br />
+            <div>&nbsp;</div><input id="btn_retrieveDecks" type="button" value="Retrieve Guild Decks" onclick="return LoadGuildDecks();" style="float:initial; text-align: center; font-weight: bold;">
+            <input id="inputId" type="file" onchange="LoadFileDecks(this);" style="float:initial; text-align: center; font-weight: bold;">
         </form>
+        <br />
+        <form>
+            <div>&nbsp;</div>
+            <input id="btn_reSimGuild" type="button" value="Run Guild SIMs" onclick="return RunGuildSIMS();" style="float:initial; text-align: center; font-weight: bold;">
+        </form>
+        <br />
         <form>
             <input style="float:initial" id="btn_simGuild" type="button" value="SIM Guild" onclick="return RunGuildSIMS();" style="text-align: center; font-weight: bold;">
             <div><b>Card Hash:</b></div><input id="request_json" type="text" value="" size="50" onchange="GenerateHashes_2(this);"><br>
@@ -172,5 +180,7 @@
     <br>
     <div id="results_table"></div>
     <br />
+
+    <div class="modal"><span>Loading...</span></div>
 </body>
 </html>

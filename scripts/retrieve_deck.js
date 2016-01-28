@@ -28,6 +28,11 @@
         getFactionMembers(draw, callback);
     }
 
+    function loadDeckFile(draw, callback) {
+        clearDeckSpace();
+        getDecksfromFile(draw, callback);
+    }
+
     function getRequestParams(messageType, additionalParams) {
         var request = { message: messageType };
         if (!baseRequest.user_id) baseRequest = requestFields
@@ -230,9 +235,27 @@
                     getUserDeck(key, draw);
                 }
                 HideLoadingSplash();
-                callback();
+                if(callback) callback();
             });
         }, 1);
+    }
+
+    function getDecksfromFile(file, draw, callback) {
+
+        if (!file) {
+            return;
+        }
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            var decks = JSON.parse(e.target.result);
+            publicInfo.factionDecks = {};
+            publicInfo.allDecks = {};
+            for (var key in decks) {
+                getDeckFromFile(key, decks[key], draw);
+            }
+            if(callback) callback();
+        };
+        reader.readAsText(file);
     }
 
     function getUserDeck(target_user_id, draw) {
@@ -253,50 +276,20 @@
         });
     }
 
-    function getDecksFromJSON(field) {
-        var data = JSON.parse(field.value);
-        var deck_player = { deck: [] };
-        var deck_cpu = { deck: [] };
-        var card_map = data.battle_data.card_map;
-        
-        try
-        {
-            var commander = data.battle_data.attack_commander;
-            deck_player.commander = makeUnitInfo(commander.unit_id, commander.level);
-            commander = data.battle_data.defend_commander;
-            deck_cpu.commander = makeUnitInfo(commander.unit_id, commander.level);
-
-            for (var key in card_map) {
-                var unit = card_map[key];
-                var runes = unit.runes;
-                unit = makeUnitInfo(unit.unit_id, unit.level);
-                for (var r in runes) {
-                    unit.runes.push({ id: runes[r].item_id });
-                }
-                if (key <= 15) {
-                    deck_player.deck.push(unit);
-                } else {
-                    deck_cpu.deck.push(unit);
-                }
-            }
+    function getDeckFromFile(name, hash, draw) {
+        var deck = hash_decode(hash);
+        if (draw) {
+            drawDeck(deck, data.name);
+        } else {
+            publicInfo.factionDecks[name] = deck;
+            publicInfo.allDecks[name] = deck;
         }
-        catch(err)
-        {
-        }
-
-        deck_player = hash_encode(deck_player);
-        deck_cpu = hash_encode(deck_cpu);
-        document.getElementById("deck").value = deck_player;
-        document.getElementById("deck2").value = deck_cpu;
-        var d = document.getElementById("exactorder");
-        if (d) d.checked = true;
-        d = document.getElementById("exactorder2");
-        if (d) d.checked = true;
     }
 
     function onGetUserDeck(data) {
         var deck_info = data.player_info.deck;
-        drawDeck(deck_info, data.player_info.name);
+        var deck = getDeckFromDeckInfo(deck_info);
+        drawDeck(deck, data.player_info.name);
     }
 
     function getDeckFromDeckInfo(deck_info) {
@@ -319,8 +312,7 @@
         return deck;
     }
 
-    function drawDeck(deck_info, name) {
-        var deck = getDeckFromDeckInfo(deck_info);
+    function drawDeck(deck, name) {
         var div = doDrawDeck(deck, name);
         var hash = hash_encode(deck);
         div.appendChild($('<div><label style="float:left;" class="button" onclick="open_deck_builder(\'' + name + '\', \'' + hash + '\');"><b>Deck Builder</b></label>')[0]);
@@ -395,13 +387,13 @@
     var publicInfo = {
         getFieldsFromRequest: getFieldsFromRequest,
         retrieveGuildDecks: retrieveGuildDecks,
+        getDecksfromFile: getDecksfromFile,
         retrieveMyDeck: retrieveMyDeck,
         getFullUserData: getFullUserData,
         updateMyDeck: updateMyDeck,
         factionDecks: {},
         allDecks: {},
         baseRequest: baseRequest,
-        getDecksFromJSON: getDecksFromJSON,
     }
     return publicInfo;
 })();

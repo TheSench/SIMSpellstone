@@ -10,8 +10,18 @@ var suppressOutput = true;
 var extraCards = [];
 var evolutions = [];
 
-function SimGuild() {
-    DeckRetriever.retrieveGuildDecks(false, RunGuildSIMS);
+function LoadGuildDecks() {
+    DeckRetriever.retrieveGuildDecks(false);
+}
+
+function LoadFileDecks(fileChooser) {
+    if (window.File && window.FileReader && window.FileList && window.Blob) {
+        //Retrieve the first (and only!) File from the FileList object
+        var f = fileChooser.files[0];
+        DeckRetriever.getDecksfromFile(f);
+    } else {
+        alert('The File APIs are not fully supported by your browser.');
+    }
 }
 
 function RunGuildSIMS() {
