@@ -111,7 +111,7 @@
             <br/>
             <div><b>Response JSON:</b></div><input id="request_json" type="text" value="" size="50" onchange="DeckRetriever.getFieldsFromRequest();"><br />
             <div>&nbsp;</div><input id="btn_retrieveDecks" type="button" value="Retrieve Guild Decks" onclick="return LoadGuildDecks();" style="float:initial; text-align: center; font-weight: bold;">
-            <input id="inputId" type="file" onchange="LoadFileDecks(this);" style="float:initial; text-align: center; font-weight: bold;">
+            <input id="deckFile" type="file" onclick="clearSelection();" onchange="LoadFileDecks(this);" style="float:initial; text-align: center; font-weight: bold;">
         </form>
         <br />
         <form>

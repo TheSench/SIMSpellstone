@@ -14,6 +14,10 @@ function LoadGuildDecks() {
     DeckRetriever.retrieveGuildDecks(false);
 }
 
+function clearSelection() {
+    $("#deckFile").val('');
+}
+
 function LoadFileDecks(fileChooser) {
     if (window.File && window.FileReader && window.FileList && window.Blob) {
         //Retrieve the first (and only!) File from the FileList object
