@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="styles/styles.css" media="screen">
     <link rel="stylesheet" type="text/css" href="styles/card.css">
     <link rel="stylesheet" type="text/css" href="styles/winrates.css">
+    <link rel="stylesheet" type="text/css" href="styles/spritesheet.css">
 
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
@@ -85,6 +86,7 @@
     <script id="saved_decks" type="text/javascript" src="scripts/saved_decks.js"></script>
 
     <script id="retrieve_deck" type="text/javascript" src="scripts/retrieve_deck.js"></script>
+    <script id="retrieve_deck" type="text/javascript" src="scripts/process_plays.js"></script>
     <script id="winrates" type="text/javascript" src="scripts/winrates.js"></script>
 
     <script>trackStats = true;</script>
@@ -108,7 +110,7 @@
     <br />
     <span id="ui">
         <form>
-            <div><b>Response JSON:</b></div><input id="request_json" type="text" value="" size="50" onchange="DeckRetriever.getDecksFromJSON(this);"><br>
+            <div><b>Response JSON:</b></div><input id="request_json" type="text" value="" size="50" onchange="BATTLE_PROCESSOR.getDecksFromJSON(this);"><br>
         </form>
         <br/>
         <hr/>

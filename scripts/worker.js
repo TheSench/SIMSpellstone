@@ -231,18 +231,24 @@ function run_sim() {
 	battleground = '';
 
 	// Set up empty decks
-	deck = new Array();
-	deck['cpu'] = new Array();
-	deck['cpu']['deck'] = new Array();
-	deck['player'] = new Array();
-	deck['player']['deck'] = new Array();
+	deck = {
+	    cpu: {
+	        deck: []
+	    },
+	    player: {
+	        deck: []
+	    }
+	}
     
 	// Set up empty field
-	field = new Array();
-	field['cpu'] = new Array();
-	field['cpu']['assaults'] = new Array();
-	field['player'] = new Array();
-	field['player']['assaults'] = new Array();
+	field = {
+	    cpu: {
+            assaults: []
+	    },
+	    player: {
+            assaults: []
+	    }
+	};
 
 	// Load player deck
 	if (cache_player_deck) {

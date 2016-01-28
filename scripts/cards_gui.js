@@ -70,13 +70,18 @@ function draw_cards(drawableHand, performTurns, turn) {
         htmlTurnCounter.innerHTML = "Turn: " + turn
         cardSpace.appendChild(htmlTurnCounter);
     }
+    draw_fields(field);
+    cardSpace.appendChild(draw_hand(drawableHand, performTurns, turn));
+    cardSpace.appendChild(document.createElement('br'));
+    cardSpace.appendChild(document.createElement('br'));
+}
+
+function draw_fields(field) {
+    var cardSpace = document.getElementById("cardSpace");
     var divField = createDiv("field");
     divField.appendChild(draw_field(field.cpu));
     divField.appendChild(draw_field(field.player));
     cardSpace.appendChild(divField);
-    cardSpace.appendChild(draw_hand(drawableHand, performTurns, turn));
-    cardSpace.appendChild(document.createElement('br'));
-    cardSpace.appendChild(document.createElement('br'));
 }
 
 function draw_field(field) {
@@ -395,10 +400,10 @@ function getStatuses(card) {
         var status = createStatus("protect", card.protected);
         buffs.push(status);
     }
-    if (card.augmented) {
-        for (var key in card.augmented) {
+    if (card.enhanced) {
+        for (var key in card.enhanced) {
             if (key == 'counter' || key == 'armored' || key == 'evade') {
-                var status = createStatus(key, "+" + card.augmented[key]);
+                var status = createStatus(key, "+" + card.enhanced[key]);
                 buffs.push(status);
             }
         }

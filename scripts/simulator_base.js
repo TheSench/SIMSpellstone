@@ -32,7 +32,7 @@ if (simulator_thread) {
         card.enfeebled = 0;
         card.protected = 0;
         card.barrier_ice = 0;
-        card.augmented = 0;
+        card.enhanced = 0;
         card.jammed = false;
         card.key = newKey;
         if (!card.reusableSkills) card.resetTimers();
@@ -103,10 +103,9 @@ if (simulator_thread) {
         }
     };
 
-    var getAugment = function (card, s) {
-        var augments = card['augmented'];
-        if (augments && augments[s]) return augments[s];
-        else return 0;
+    var getEnhancement = function (card, s) {
+        var enhancements = card.enhanced;
+        return (enhancements ? (enhancements[s]|0) : 0);
     };
 
     var iceshatter = function (src_card) {
@@ -149,6 +148,14 @@ if (simulator_thread) {
         var skills = source_card.empowerSkills;
         for (var i = 0, len = skills.length; i < len; i++) {
             var skill = skills[i];
+            if (skill.c) {
+                if (skill.countdown) {
+                    skill.countdown--;
+                    continue;
+                } else {
+                    skill.countdown = skill.c - 1;
+                }
+            }
             empowerSkills[skill.id](source_card, skill);
             if (dualStrike) {
                 empowerSkills[skill.id](source_card, skill);
@@ -161,7 +168,7 @@ if (simulator_thread) {
         // Protect (Barrier)
         // - Can target specific faction
         // - Targets allied assaults
-        // - Can be augmented
+        // - Can be enhanced
         protect_ice: function(src_card, skill) {
             activationSkills.protect(src_card, skill, true);
         },
@@ -191,12 +198,12 @@ if (simulator_thread) {
 
             // Check All
             if (all) {
-                var augment = 0;
+                var enhanced = 0;
             } else {
                 targets = choose_random_target(targets);
-                var augment = getAugment(src_card, skill.id);
-                if (augment) {
-                    protect += augment;
+                var enhanced = getEnhancement(src_card, skill.id);
+                if (enhanced) {
+                    protect += enhanced;
                 }
             }
 
@@ -208,7 +215,7 @@ if (simulator_thread) {
                     target.barrier_ice += protect;
                 }
                 if (debug) {
-                    if (augment) echo += '<u>(Enhance: +' + augment + ')</u><br>';
+                    if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
                     echo += debug_name(src_card) + ' barriers ' + debug_name(target) + ' by ' + protect + '<br>';
                 }
             }
@@ -219,7 +226,7 @@ if (simulator_thread) {
         // - Targets allied, units
         // - Target must be active this turn (for activation skills only)
         // - Target must not be frozen (for activation skills only)
-        // - Target must have specific "augmentable skill" ("all" versions aren't counted)
+        // - Target must have specific "enhanceable skill" ("all" versions aren't counted)
         enhance: function (src_card, skill) {
 
             var faction = skill['y'];
@@ -227,7 +234,7 @@ if (simulator_thread) {
             var p = get_p(src_card);
             var o = get_o(src_card);
 
-            var augment = skill['x'];
+            var x = skill['x'];
             var s = skill['s'];
             var all = skill['all'];
 
@@ -254,15 +261,13 @@ if (simulator_thread) {
 
             for (var key = 0, len = targets.length; key < len; key++) {
                 var target = field_p_assaults[targets[key]];
-                var augments = target['augmented'];
-                if (!augments) {
-                    augments = {};
-                    target['augmented'] = augments;
+                var enhancements = target.enhanced;
+                if (!enhancements) {
+                    enhancements = {};
+                    target.enhanced = enhancements;
                 }
-                var augmented_skill = augments[s];
-                if (augmented_skill) augmented_skill += augment;
-                else augments[s] = augment;
-                if (debug) echo += debug_name(src_card) + ' enhances ' + s + ' of ' + debug_name(target, false) + ' by ' + augment + '<br>';
+                enhancements[s] = (enhancements[s] | 0) + x;
+                if (debug) echo += debug_name(src_card) + ' enhances ' + s + ' of ' + debug_name(target, false) + ' by ' + x + '<br>';
             }
         },
 
@@ -297,12 +302,12 @@ if (simulator_thread) {
 
             // Check All
             if (all) {
-                var augment = 0;
+                var enhanced = 0;
             } else {
                 targets = choose_random_target(targets);
-                var augment = getAugment(src_card, skill.id);
-                if (augment) {
-                    heal += augment;
+                var enhanced = getEnhancement(src_card, skill.id);
+                if (enhanced) {
+                    heal += enhanced;
                 }
             }
 
@@ -318,7 +323,7 @@ if (simulator_thread) {
                 if (heal_amt > target['health'] - target['health_left']) heal_amt = target['health'] - target['health_left'];
                 target['health_left'] += heal_amt;
                 if (debug) {
-                    if (augment) echo += '<u>(Enhance: +' + augment + ')</u><br>';
+                    if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
                     echo += debug_name(src_card) + ' heals ' + debug_name(target) + ' by ' + heal_amt + '<br>';
                 }
             }
@@ -356,12 +361,12 @@ if (simulator_thread) {
 
             // Check All
             if (all) {
-                var augment = 0;
+                var enhanced = 0;
             } else {
                 targets = choose_random_target(targets);
-                var augment = getAugment(src_card, skill.id);
-                if (augment) {
-                    strike += augment;
+                var enhanced = getEnhancement(src_card, skill.id);
+                if (enhanced) {
+                    strike += enhanced;
                 }
             }
 
@@ -387,8 +392,8 @@ if (simulator_thread) {
                 if (enfeeble) {
                     strike_damage += enfeeble;
                 }
-                if (augment) {
-                    strike_damage += augment;
+                if (enhanced) {
+                    strike_damage += enhanced;
                 }
                 var shatter = false;
                 if (protect) {
@@ -409,7 +414,7 @@ if (simulator_thread) {
                 if (debug) {
                     echo += '<u>(Strike: +' + strike;
                     if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
-                    if (augment) echo += ' Enhance: +' + augment;
+                    if (enhanced) echo += ' Enhance: +' + enhanced;
                     if (protect) echo += ' Barrier: -' + protect;
                     echo += ') = ' + strike_damage + ' damage</u><br>';
                     echo += debug_name(src_card) + ' bolts ' + debug_name(target) + ' for ' + strike_damage + ' damage';
@@ -485,8 +490,8 @@ if (simulator_thread) {
             var o = get_o(src_card);
 
             var frost = skill['x'];
-            var augment = getAugment(src_card, skill.id);
-            if (augment) frost += augment;
+            var enhanced = getEnhancement(src_card, skill.id);
+            if (enhanced) frost += enhanced;
 
             var all = skill['all'];
 
@@ -528,8 +533,8 @@ if (simulator_thread) {
                 if (enfeeble) {
                     frost_damage += enfeeble;
                 }
-                if (augment) {
-                    frost_damage += augment;
+                if (enhanced) {
+                    frost_damage += enhanced;
                 }
                 var shatter = false;
                 if (protect) {
@@ -550,7 +555,7 @@ if (simulator_thread) {
                 if (debug) {
                     echo += '<u>(Strike: +' + frost;
                     if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
-                    if (augment) echo += ' Enhance: +' + augment;
+                    if (enhanced) echo += ' Enhance: +' + enhanced;
                     if (protect) echo += ' Barrier: -' + protect;
                     echo += ') = ' + frost_damage + ' damage</u><br>';
                     echo += debug_name(src_card) + ' breathes frost at ' + debug_name(target) + ' for ' + frost_damage + ' damage';
@@ -566,7 +571,7 @@ if (simulator_thread) {
         // - Can target specific faction
         // - Targets enemy assaults
         // - Can be evaded
-        // - Can be augmented
+        // - Can be enhanced
         enfeeble: function (src_card, skill) {
 
             var faction = skill['y'];
@@ -594,12 +599,12 @@ if (simulator_thread) {
 
             // Check All
             if (all) {
-                var augment = 0;
+                var enhanced = 0;
             } else {
                 targets = choose_random_target(targets);
-                var augment = getAugment(src_card, skill.id);
-                if (augment) {
-                    enfeeble += augment;
+                var enhanced = getEnhancement(src_card, skill.id);
+                if (enhanced) {
+                    enfeeble += enhanced;
                 }
             }
 
@@ -653,12 +658,12 @@ if (simulator_thread) {
 
             // Check All
             if (all) {
-                var augment = 0;
+                var enhanced = 0;
             } else {
                 targets = choose_random_target(targets);
-                var augment = getAugment(src_card, skill.id);
-                if (augment) {
-                    weaken += augment;
+                var enhanced = getEnhancement(src_card, skill.id);
+                if (enhanced) {
+                    weaken += enhanced;
                 }
             }
 
@@ -674,7 +679,7 @@ if (simulator_thread) {
 
                 target['attack_weaken'] += weaken;
                 if (debug) {
-                    if (augment) echo += '<u>(Enhance: +' + augment + ')</u><br>';
+                    if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
                     echo += debug_name(src_card) + ' weakens ' + debug_name(target) + ' by ' + weaken + '<br>';
                 }
             }
@@ -685,7 +690,7 @@ if (simulator_thread) {
         // Rally
         // - Can target specific faction
         // - Targets allied unjammed, active assaults
-        // - Can be augmented
+        // - Can be enhanced
         rally: function (src_card, skill) {
 
             var faction = skill['y'];
@@ -710,12 +715,12 @@ if (simulator_thread) {
 
             // Check All
             if (all) {
-                var augment = 0;
+                var enhanced = 0;
             } else {
                 targets = choose_random_target(targets);
-                var augment = getAugment(src_card, skill.id);
-                if (augment) {
-                    rally += augment;
+                var enhanced = getEnhancement(src_card, skill.id);
+                if (enhanced) {
+                    rally += enhanced;
                 }
             }
 
@@ -723,7 +728,7 @@ if (simulator_thread) {
                 var target = field_p_assaults[targets[key]];
                 target.attack_rally += rally;
                 if (debug) {
-                    if (augment) echo += '<u>(Enhance: +' + augment + ')</u><br>';
+                    if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
                     echo += debug_name(src_card) + ' empowers ' + debug_name(target) + ' by ' + rally + '<br>';
                 }
             }
@@ -732,15 +737,15 @@ if (simulator_thread) {
         // Legion
         // - Targets specific faction
         // - Targets allied adjacent unjammed, active assaults
-        // - Can be augmented?
+        // - Can be enhanced?
         legion: function (src_card, skill) {
 
             var p = get_p(src_card);
             var field_p_assaults = field[p]['assaults'];
 
             var rally = skill['x'];
-            var augment = getAugment(src_card, skill.id);
-            if (augment) rally += augment;
+            var enhanced = getEnhancement(src_card, skill.id);
+            if (enhanced) rally += enhanced;
 
             var faction = skill['y'];
 
@@ -754,7 +759,7 @@ if (simulator_thread) {
                 if (target && target.isActive() && target.isInFaction(faction)) {
                     target.attack_rally += rally;
                     if (debug) {
-                        if (augment) echo += '<u>(Enhance: +' + augment + ')</u><br>';
+                        if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
                         echo += debug_name(src_card) + ' activates legion and empowers ' + debug_name(target) + ' by ' + rally + '<br>';
                     }
                 }
@@ -764,15 +769,15 @@ if (simulator_thread) {
 
         // Fervor
         // - Targets self for each adjacent unjammed, active assault in specific faction
-        // - Can be augmented?
+        // - Can be enhanced?
         fervor: function (src_card, skill) {
 
             var p = get_p(src_card);
             var field_p_assaults = field[p]['assaults'];
 
             var rally = skill['x'];
-            var augment = getAugment(src_card, skill.id);
-            if (augment) rally += augment;
+            var enhanced = getEnhancement(src_card, skill.id);
+            if (enhanced) rally += enhanced;
 
             var faction = skill['y'];
 
@@ -793,7 +798,7 @@ if (simulator_thread) {
             if (fervorAmount) {
                 src_card['attack_rally'] += fervorAmount;
                 if (debug) {
-                    if (augment) echo += '<u>(Enhance: +' + augment + ')</u><br>';
+                    if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
                     echo += debug_name(src_card) + ' activates fervor for ' + fervorAmount + '<br>';
                 }
             }
@@ -844,6 +849,18 @@ if (simulator_thread) {
             shuffle(deck.cpu.deck);
         }
 
+        setupField(field);
+
+        if (getsiege) {
+            var tower = makeUnitInfo(601 + parseInt(tower_type), parseInt(tower_level)-1);
+            var towerCard = get_card_apply_battlegrounds(tower);
+            play_card(towerCard, 'cpu', true);
+        }
+
+        return performTurns(0);
+    };
+
+    var setupField = function () {
         // Initialize player Commander on the field
         var field_player = field.player;
         var field_player_commander = deck.player.commander;
@@ -859,23 +876,7 @@ if (simulator_thread) {
         field_cpu_commander.owner = 'cpu';
         field_cpu_commander.health_left = field_cpu_commander.health;
         if (!field_cpu_commander.reusableSkills) field_cpu_commander.resetTimers();
-
-        // Set up players
-        var first_player = 'player';
-        var second_player = 'cpu';
-        if (surge) {
-            first_player = 'cpu';
-            second_player = 'player';
-        }
-
-        if (getsiege) {
-            var tower = makeUnitInfo(601 + parseInt(tower_type), parseInt(tower_level)-1);
-            var towerCard = get_card_apply_battlegrounds(tower);
-            play_card(towerCard, 'cpu', true);
-        }
-
-        return performTurns(0);
-    };
+    }
 
     var performTurns = function (turn) {
         // Set up players
@@ -967,7 +968,7 @@ if (simulator_thread) {
             current_assault.enfeebled = 0;
             current_assault.protected = 0;
             current_assault.barrier_ice = 0;
-            current_assault.augmented = 0;;
+            current_assault.enhanced = 0;;
         }
     }
 
@@ -1102,9 +1103,9 @@ if (simulator_thread) {
                 current_assault['invisible'] = current_assault.skill.evade.x;*/
             if (current_assault.evade) {
                 current_assault.invisible = current_assault.evade;
-                var augment = getAugment(current_assault, 'evade');
-                if (augment) {
-                    current_assault.invisible += augment;
+                var enhanced = getEnhancement(current_assault, 'evade');
+                if (enhanced) {
+                    current_assault.invisible += enhanced;
                 }
             }
         }
@@ -1180,7 +1181,7 @@ if (simulator_thread) {
 
         field_p_assaults = field_p['assaults'];
 
-        // Remove from your field: Chaos, Jam, Enfeeble, Rally, Weaken, Augment
+        // Remove from your field: Chaos, Jam, Enfeeble, Rally, Weaken, Enhance
         for (var key = 0, len = field_p_assaults.length; key < len; key++) {
             var current_assault = field_p_assaults[key];
 
@@ -1250,9 +1251,9 @@ if (simulator_thread) {
         // var pierce = current_assault['skill']['pierce'];
         var pierce = current_assault.pierce;
         if (pierce) {
-            var augment = getAugment(current_assault, 'pierce');
-            if (augment) {
-                pierce += augment;
+            var enhanced = getEnhancement(current_assault, 'pierce');
+            if (enhanced) {
+                pierce += enhanced;
             }
         } else {
             pierce = 0;
@@ -1265,9 +1266,9 @@ if (simulator_thread) {
         if(armor) {
         /*if (target.skill.armored) {
             //armor = target.skill.armored.x;*/
-            var augment = getAugment(target, 'armored');
-            if (augment) {
-                armor += augment;
+            var enhanced = getEnhancement(target, 'armored');
+            if (enhanced) {
+                armor += enhanced;
             }
         }
 
@@ -1288,7 +1289,7 @@ if (simulator_thread) {
                     protect -= pierce;
                     target.protected -= pierce;
                     // Bug 27415 - Pierce does NOT reduce potential Iceshatter damage unless protect is completely removed by it
-                    //target.iceshatter -= pierce;
+                    //target.barrier_ice -= pierce;
                     pierce = 0;
                 }
             }
@@ -1345,7 +1346,7 @@ if (simulator_thread) {
         // - Target must not be already poisoned of that level
         if (damage > 0 && target.isAssault() && current_assault.poison && target.isAlive()) {
             var poison = current_assault.poison;
-            poison += getAugment(current_assault, 'poison');
+            poison += getEnhancement(current_assault, 'poison');
             if (poison > target['poisoned']) {
                 target['poisoned'] = poison;
                 if (debug) echo += debug_name(current_assault) + ' inflicts poison(' + poison + ') on ' + debug_name(target) + '<br>';
@@ -1367,7 +1368,7 @@ if (simulator_thread) {
             if (current_assault.leech && target.isAssault() && current_assault.isAlive() && current_assault.isDamaged()) {
 
                 var leech_health = current_assault.leech;
-                leech_health += getAugment(current_assault, 'leech');
+                leech_health += getEnhancement(current_assault, 'leech');
                 leech_health = Math.min(leech_health, damage);
                 var healthMissing = current_assault.health - current_assault.health_left;
                 if (leech_health >= healthMissing) {
@@ -1384,9 +1385,9 @@ if (simulator_thread) {
             if (target.counter) {
 
                 var counter_damage = 0 + target.counter;
-                var augment = getAugment(target, 'counter');
-                if (augment) {
-                    counter_damage += augment;
+                var enhanced = getEnhancement(target, 'counter');
+                if (enhanced) {
+                    counter_damage += enhanced;
                 }
 
                 // Protect
@@ -1402,7 +1403,7 @@ if (simulator_thread) {
 
                 if (debug) {
                     echo += '<u>(Counter: +' + target.counter;
-                    if (augment) echo += ' Enhance: +' + augment;
+                    if (enhanced) echo += ' Enhance: +' + enhanced;
                     if (protect) echo += ' Barrier: -' + protect;
                     echo += ') = ' + counter_damage + ' damage</u><br>';
                 }
@@ -1420,7 +1421,7 @@ if (simulator_thread) {
             if (damage > 0 && current_assault.berserk && current_assault.isAlive()) {
 
                 var berserk = current_assault.berserk;
-                berserk += getAugment(current_assault, 'berserk');
+                berserk += getEnhancement(current_assault, 'berserk');
 
                 current_assault.attack_berserk += berserk;
                 if (debug) echo += debug_name(current_assault) + ' activates berserk and gains ' + berserk + ' attack<br>';
@@ -1434,7 +1435,7 @@ if (simulator_thread) {
         // - Target must be an assault
         if (target.isAssault() && current_assault.burn && target.isAlive() && current_assault.isAlive()) {
             var scorch = current_assault.burn;
-            scorch += getAugment(current_assault, 'burn');
+            scorch += getEnhancement(current_assault, 'burn');
             if (!target['scorched']) {
                 target['scorched'] = { 'amount': scorch, 'timer': 2 };
             } else {

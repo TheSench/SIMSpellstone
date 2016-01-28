@@ -218,7 +218,7 @@ var MakeAssault = (function () {
         scorched: 0,
         enfeebled: 0,
         protected: 0,
-        augmented: 0,
+        enhanced: 0,
         jammed: false,
 
         //Card ID is ...
@@ -269,7 +269,7 @@ var MakeAssault = (function () {
             return !(this.jammed);
         },
 
-        // Has at least one Augmentable Activation Skill
+        // Has at least one Enhanceable Activation Skill
         // - strike, protect, enfeeble, rally, repair, supply, siege, heal, weaken (unless they have on play/death/attacked/kill)
         hasSkill: function (s, all) {
             var target_skills = this.skill;

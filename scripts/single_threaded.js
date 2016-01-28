@@ -2,6 +2,7 @@ if (!use_workers) {
 
     // Initialize simulation loop - runs once per simulation session
     var startsim = function (autostart) {
+        Math.seedrandom('hello.');
         orders = {};
 
         if (_DEFINED('autolink') && !autostart) {
@@ -252,18 +253,24 @@ if (!use_workers) {
         battleground = '';
 
         // Set up empty decks
-        deck = [];
-        deck['cpu'] = [];
-        deck['cpu']['deck'] = [];
-        deck['player'] = [];
-        deck['player']['deck'] = [];
+        deck = {
+            cpu: {
+                deck: []
+            },
+            player: {
+                deck: []
+            }
+        }
 
         // Set up empty field
-        field = [];
-        field['cpu'] = [];
-        field['cpu']['assaults'] = [];
-        field['player'] = [];
-        field['player']['assaults'] = [];
+        field = {
+            cpu: {
+                assaults: []
+            },
+            player: {
+                assaults: []
+            }
+        };
 
         // Load player deck
         if (cache_player_deck_cards) {
