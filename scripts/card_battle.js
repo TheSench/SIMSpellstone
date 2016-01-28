@@ -164,18 +164,24 @@ function doSetup() {
     battleground = '';
 
     // Set up empty decks
-    deck = [];
-    deck.cpu = [];
-    deck.cpu.deck = [];
-    deck.player = [];
-    deck.player.deck = [];
-    
+    deck = {
+        cpu: {
+            deck: []
+        },
+        player: {
+            deck: []
+        }
+    }
+
     // Set up empty field
-    field = [];
-    field.cpu = [];
-    field.cpu.assaults = [];
-    field.player = [];
-    field.player.assaults = [];
+    field = {
+        cpu: {
+            assaults: []
+        },
+        player: {
+            assaults: []
+        }
+    };
 
     // Load player deck
     if (cache_player_deck) {
