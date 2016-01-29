@@ -171,7 +171,7 @@ function onpageload() {
     if (_GET('tower_level')) {
         var d = document.getElementById('tower_level');
         var tower_level = _GET('tower_level');
-        tower_level = Math.min(Math.max(tower_level, 0), 15);
+        tower_level = Math.min(Math.max(tower_level, 0), 18);
         d.value = tower_level;
     }
 
