@@ -1,11 +1,30 @@
 ﻿var BATTLE_PROCESSOR = (function () {
     var cachedField;
+    var cachedHands;
+    var cachedDraws;
 
     var module = {};
 
+    BattleAPI.beginBattle = processJSONResponse;
+    BattleAPI.continueBattle = processJSONResponse;
+
     module.getDecksFromJSON = function (field) {
-        var data = JSON.parse(field.value);
+        var jsonText = field.value;
         field.value = '';
+        DeckRetriever.getFieldsFromRequest(jsonText);
+        var data = JSON.parse(jsonText);
+        processJSONResponse(data);
+    }
+
+    module.fight = function () {
+        var baseRequest = DeckRetriever.baseRequest;
+        var targetID = document.getElementById("targetUserID").value;
+        if (baseRequest) {
+            BattleAPI.fightGuildMember(targetID);
+        }
+    }
+
+    function processJSONResponse(data) {
         var action = data.request.message;
         switch (action) {
             case 'playCard':
@@ -20,7 +39,7 @@
     }
 
     function resetField() {
-        field = {
+        cachedField = {
             cpu: {
                 assaults: []
             },
@@ -29,9 +48,15 @@
             },
             uids: {}
         };
+        cachedHands = {
+            cpu: [],
+            player: []
+        };
+        cachedDraws = {};
     }
 
     function startBattle(data) {
+        document.getElementById('ui').style.display = 'none';
         var deck_player = { deck: [] };
         var deck_cpu = { deck: [] };
         var card_map = data.battle_data.card_map;
@@ -43,35 +68,37 @@
             deck_player.commander = makeUnitInfo(commander.unit_id, commander.level);
             commander = get_card_by_id(deck_player.commander);
             commander.health_left = commander.health;
-            field.player.commander = commander;
-            field.uids[-1] = commander;
+            cachedField.player.commander = commander;
+            cachedField.uids[-1] = commander;
 
             commander = data.battle_data.defend_commander;
             deck_cpu.commander = makeUnitInfo(commander.unit_id, commander.level);
             commander = get_card_by_id(deck_cpu.commander);
             commander.health_left = commander.health;
-            field.cpu.commander = commander;
-            field.uids[-2] = commander;
+            cachedField.cpu.commander = commander;
+            cachedField.uids[-2] = commander;
 
-            for (var key in card_map) {
-                var unit = card_map[key];
+            for (var uid in card_map) {
+                var unit = card_map[uid];
                 var runes = unit.runes;
                 unit = makeUnitInfo(unit.unit_id, unit.level);
                 for (var r in runes) {
                     unit.runes.push({ id: runes[r].item_id });
                 }
-                if (key <= 15) {
+                if (uid <= 15) {
                     deck_player.deck.push(unit);
                 } else {
                     deck_cpu.deck.push(unit);
                 }
-                field.uids[key] = get_card_by_id(unit);
+                var cachedCard = get_card_by_id(unit);
+                cachedCard.uid = uid;
+                cachedField.uids[uid] = cachedCard;
             }
         }
         catch (err) {
         }
 
-        drawField();
+        drawField(1);
 
         deck_player = hash_encode(deck_player);
         deck_cpu = hash_encode(deck_cpu);
@@ -84,9 +111,11 @@
     }
 
     function playTurns(data, playTurn0) {
+        var lastTurn = 0;
         try {
             var turns = data.battle_data.turn;
             for (var turn in turns) {
+                if (turn > lastTurn) lastTurn = turn;
                 if (turn == 0 && !playTurn0) continue;
                 var turnInfo = turns[turn];
                 var p = (turn % 2 == 1 ? 'player' : 'cpu');
@@ -98,14 +127,41 @@
         catch (err) {
             alert(err);
         }
-        drawField();
+        if (areCommandersAlive()) {
+            drawField(lastTurn);
+        } else {
+            drawField(lastTurn, true);
+            document.getElementById('ui').style.display = 'block';
+
+            if (!cachedField.uids[-1].isAlive()) {
+                outp('<br><h1>LOSS</h1><br>');
+            } else if (!cachedField.uids[-2].isAlive()) {
+                outp('<br><h1>WIN</h1><br>');
+            } else {
+                outp('<br><h1>DRAW</h1><br>');
+            }
+        }
+    }
+
+    function areCommandersAlive() {
+        var commander = cachedField.uids[-1];
+        if (!commander.isAlive()) {
+            return false;
+        }
+        var commander = cachedField.uids[-2];
+        if (!commander.isAlive()) {
+            return false;
+        }
+        return true;
     }
 
     function processTurnPhase(phase, p, turnData) {
         switch (phase.toLowerCase()) {
             case 'begin':
                 updateFlags(turnData);
+                break;
             case 'draws':
+                processDraws(p, turnData);
                 break;
             case 'plays':
                 processPlay(p, turnData);
@@ -124,6 +180,18 @@
         }
     }
 
+    function processDraws(p, draws) {
+        var hand = cachedHands[p];
+        for (var i = 0; i < draws.length; i++) {
+            var uid = draws[i];
+            if (!cachedDraws[uid]) {
+                cachedDraws[uid] = true;
+                var card = cachedField.uids[uid];
+                hand.push(card);
+            }
+        }
+    }
+
     function updateFlags(turnData) {
         for (var key in turnData) {
             var status = turnData[key];
@@ -132,7 +200,7 @@
     }
 
     function updateStatusFlag(status) {
-        var card = field.uids[status.card_uid];
+        var card = cachedField.uids[status.card_uid];
         var status_flag = status.status_flag;
         if (status_flag) {
             if (status_flag.indexOf("_") >= 0) {
@@ -271,7 +339,7 @@
         for (var key in targets) {
             jamTracking[uid] = (jamTracking[uid] + 1 | 1);
             if (targets[key].x) {
-                var card = field.uids[uid];
+                var card = cachedField.uids[uid];
                 countdownSkillInner(card, "jam", jamTracking[uid]);
             }
         }
@@ -281,7 +349,7 @@
         var targets = action.targets;
         for (var key in targets) {
             var target = targets[key];
-            var card = field.uids[target];
+            var card = cachedField.uids[target];
             var dualStrike = card.flurry;
             dualStrike.countdown = dualStrike.c;
         }
@@ -291,7 +359,7 @@
         var targets = action.targets;
         for (var key in targets) {
             var target = targets[key];
-            var card = field.uids[target];
+            var card = cachedField.uids[target];
             card[statusName]--;
         }
     }
@@ -301,7 +369,7 @@
         if (targets) {
             for (var key in targets) {
                 var target = targets[key];
-                var card = field.uids[target.t];
+                var card = cachedField.uids[target.t];
                 card[statusName] = target.x;
             }
         } else {
@@ -309,7 +377,7 @@
             targets = action.targets;
             for (var key in targets) {
                 var target = targets[key];
-                var card = field.uids[target];
+                var card = cachedField.uids[target];
                 card[statusName] += value;
             }
         }
@@ -320,7 +388,7 @@
         if (targets) {
             for (var key in targets) {
                 var target = targets[key];
-                var card = field.uids[target.t];
+                var card = cachedField.uids[target.t];
                 doWeakenTarget(card, target.x);
             }
         } else {
@@ -328,7 +396,7 @@
             targets = action.targets;
             for (var key in targets) {
                 var target = targets[key];
-                var card = field.uids[target];
+                var card = cachedField.uids[target];
                 doWeakenTarget(card, value);
             }
         }
@@ -336,7 +404,7 @@
 
     function doWeakenTarget(card, value) {
         card.attack_weaken += value;
-        if( card.attack_weaken > (card.attack + card.attack_berserk)) {
+        if (card.attack_weaken > (card.attack + card.attack_berserk)) {
             card.attack_weaken = card.attack + card.attack_berserk;
         }
     }
@@ -346,7 +414,7 @@
         if (targets) {
             for (var key in targets) {
                 var target = targets[key];
-                var card = field.uids[target.t];
+                var card = cachedField.uids[target.t];
                 card.health_left += target.x;
             }
         } else {
@@ -354,7 +422,7 @@
             targets = action.targets;
             for (var key in targets) {
                 var target = targets[key];
-                var card = field.uids[target];
+                var card = cachedField.uids[target];
                 card.health_left += value;
             }
         }
@@ -364,7 +432,7 @@
     function doLeech(action) {
         var target = action.card_uid;
         var value = action.value;
-        var card = field.uids[target];
+        var card = cachedField.uids[target];
         card.health_left += value;
     }
 
@@ -373,7 +441,7 @@
         if (targets) {
             for (var key in targets) {
                 var target = targets[key];
-                var card = field.uids[target.t];
+                var card = cachedField.uids[target.t];
                 card.health_left -= target.x;
             }
         } else {
@@ -381,7 +449,7 @@
             targets = action.targets;
             for (var key in targets) {
                 var target = targets[key];
-                var card = field.uids[target];
+                var card = cachedField.uids[target];
                 card.health_left -= value;
             }
         }
@@ -389,7 +457,7 @@
     }
 
     function processPlay(p, turnData) {
-        var assaults = field[p].assaults;
+        var assaults = cachedField[p].assaults;
         for (var i = 0; i < assaults.length; i++) {
             var card = assaults[i];
             if (card.timer) card.timer--;
@@ -403,18 +471,26 @@
 
     function playCard(uid) {
         var p = (uid <= 15 ? 'player' : 'cpu');
-        var card = field.uids[uid];
+        var card = cachedField.uids[uid];
         card.health_left = card.health;
         card.timer = card.cost;
         card.uid = uid;
-        field[p].assaults.push(card);
+        cachedField[p].assaults.push(card);
+        var hand = cachedHands[p];
+        for (var i = 0; i < hand.length; i++) {
+            var card = hand[i];
+            if (card.uid == uid) {
+                hand.splice(i, 1);
+                break;
+            }
+        }
     }
 
     function processRemoval(turnData) {
         for (var dead = 0; dead < turnData.length; dead++) {
             var uid = turnData[dead];
             var p = (uid <= 15 ? 'player' : 'cpu');
-            var assaults = field[p].assaults;
+            var assaults = cachedField[p].assaults;
             for (var i = 0; i < assaults.length; i++) {
                 var card = assaults[i];
                 if (card.uid == uid) {
@@ -425,10 +501,20 @@
         }
     }
 
-    function drawField() {
+    function drawField(turn, matchEnded) {
         clearCardSpace();
         var copy_field = copyField();
-        draw_fields(copy_field);
+        if (matchEnded) {
+            draw_cards(field, null, pickCard, turn);
+        } else {
+            draw_cards(field, cachedHands.player, pickCard, turn);
+        }
+    }
+
+    function pickCard() {
+        var card = cachedHands.player[choice];
+        var uid = card.uid;
+        BattleAPI.playCard(uid);
     }
 
     function copyField() {
@@ -437,15 +523,17 @@
             player: { assaults: [] },
             uids: {}
         };
-        for (var i in field.uids) {
+        for (var i in cachedField.uids) {
             var copy = {};
-            copy_field.uids[i] = $.extend(copy, field.uids[i]);
+            copy_field.uids[i] = $.extend(copy, cachedField.uids[i]);
         }
-        copy_field.cpu.commander = field.uids[-2];
-        copy_field.player.commander = field.uids[-1];
+        copy_field.cpu.commander = cachedField.uids[-2];
+        copy_field.player.commander = cachedField.uids[-1];
 
-        copyPlayerField(field, copy_field, 'cpu');
-        copyPlayerField(field, copy_field, 'player');
+        copyPlayerField(cachedField, copy_field, 'cpu');
+        copyPlayerField(cachedField, copy_field, 'player');
+
+        field = copy_field;
 
         return copy_field;
     }
@@ -479,3 +567,12 @@
 
     return module;
 }())
+
+function setFightButtonText(textField) {
+    var fightButton = document.getElementById("btn_fightSelf");
+    if (textField.value) {
+        fightButton.value = "Fight";
+    } else {
+        fightButton.value = "Fight Self";
+    }
+}

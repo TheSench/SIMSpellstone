@@ -108,12 +108,19 @@
     <h4 id="version_label2"></h4>
     <div id="remaining" style="display:none"></div>
     <br />
-    <span id="ui">
+    <span id="jsonFields">
         <form>
             <div><b>Response JSON:</b></div><input id="request_json" type="text" value="" size="50" onchange="BATTLE_PROCESSOR.getDecksFromJSON(this);"><br>
         </form>
-        <br/>
-        <hr/>
+        <br />
+        <form>
+            <div>&nbsp;</div>
+            <input id="targetUserID" type="text" value="" size="50" onchange="setFightButtonText(this)"><input id="btn_fightSelf" type="button" value="Fight Self" onclick="return BATTLE_PROCESSOR.fight();" style="float:initial; text-align: center; font-weight: bold;">
+        </form>
+        <br />
+    </span>
+    <hr />
+    <span id="ui">
         <form>
             <div><b>Deck Hash:</b></div><input id="deck" type="text" value="" size="100"><br>
             <div><label class="button" onclick="load_deck_builder('player');"><b>Deck Builder</b></label></div><font color="#666"><strong>Hash example:</strong> EAIgtjRUlRUf_ARZS_B</font><br>

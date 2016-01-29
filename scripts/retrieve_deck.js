@@ -1,4 +1,6 @@
-﻿var DeckRetriever = (function () {
+﻿var BattleAPI;
+
+var DeckRetriever = (function () {
 
     var baseURL = "https://crossorigin.me/https://spellstone.synapse-games.com/api.php?";
     var baseRequest = {};
@@ -12,8 +14,8 @@
         $("body").addClass("loading");
     }
 
-    function getFieldsFromRequest() {
-        var existingRequest = document.getElementById("request_json").value;
+    function getFieldsFromRequest(existingRequest) {
+        if (!existingRequest) existingRequest = document.getElementById("request_json").value;
         if (existingRequest.length > 0) {
             existingRequest = JSON.parse(existingRequest);
             existingRequest = existingRequest.request;
@@ -47,7 +49,6 @@
         }
         return str.join("&");
     }
-
 
     function sendRequest(messageType, params, callback) {
         if (!baseRequest.user_id) {
@@ -136,7 +137,7 @@
         DisplayLoadingSplash();
         setTimeout(function () {
             sendRequest('startCampaign', params, function (response) {
-                beginBattle(response);
+                BattleAPI.beginBattle(response);
                 HideLoadingSplash();
             });
         }, 1);
@@ -150,7 +151,7 @@
         DisplayLoadingSplash();
         setTimeout(function () {
             sendRequest('startHuntingBattle', params, function (response) {
-                beginBattle(response);
+                BattleAPI.beginBattle(response);
                 HideLoadingSplash();
             });
         }, 1);
@@ -160,7 +161,7 @@
         DisplayLoadingSplash();
         setTimeout(function () {
             sendRequest('fightGuildWar', null, function (response) {
-                beginBattle(response);
+                BattleAPI.beginBattle(response);
                 HideLoadingSplash();
             });
         }, 1);
@@ -170,7 +171,7 @@
         DisplayLoadingSplash();
         setTimeout(function () {
             sendRequest('startClashBattle', null, function (response) {
-                beginBattle(response);
+                BattleAPI.beginBattle(response);
                 HideLoadingSplash();
             });
         }, 1);
@@ -183,8 +184,8 @@
 
         DisplayLoadingSplash();
         setTimeout(function () {
-            sendRequest('startHuntingBattle', params, function (response) {
-                beginBattle(response);
+            sendRequest('fightGuildMember', params, function (response) {
+                BattleAPI.beginBattle(response);
                 HideLoadingSplash();
             });
         }, 1);
@@ -201,7 +202,7 @@
         DisplayLoadingSplash();
         setTimeout(function () {
             sendRequest('playCard', params, function (response) {
-                continueBattle(response);
+                BattleAPI.continueBattle(response);
                 HideLoadingSplash();
             });
         }, 1);
@@ -217,7 +218,7 @@
         DisplayLoadingSplash();
         setTimeout(function () {
             sendRequest('forfeitBattle', params, function (response) {
-                continueBattle(response);
+                BattleAPI.continueBattle(response);
                 HideLoadingSplash();
             });
         }, 1);
@@ -279,7 +280,7 @@
     function getDeckFromFile(name, hash, draw) {
         var deck = hash_decode(hash);
         if (draw) {
-            drawDeck(deck, data.name);
+            drawDeck(deck, data);
         } else {
             publicInfo.factionDecks[name] = deck;
             publicInfo.allDecks[name] = deck;
@@ -289,7 +290,7 @@
     function onGetUserDeck(data) {
         var deck_info = data.player_info.deck;
         var deck = getDeckFromDeckInfo(deck_info);
-        drawDeck(deck, data.player_info.name);
+        drawDeck(deck, data.player_info);
     }
 
     function getDeckFromDeckInfo(deck_info) {
@@ -312,8 +313,10 @@
         return deck;
     }
 
-    function drawDeck(deck, name) {
-        var div = doDrawDeck(deck, name);
+    function drawDeck(deck, player_info) {
+        var name = player_info.name;
+        var user_id = player_info.user_id;
+        var div = doDrawDeck(deck, user_id, name);
         var hash = hash_encode(deck);
         div.appendChild($('<div><label style="float:left;" class="button" onclick="open_deck_builder(\'' + name + '\', \'' + hash + '\');"><b>Deck Builder</b></label>')[0]);
         div.appendChild(
@@ -325,13 +328,20 @@
         cardSpace.appendChild(div);
     }
 
-    function doDrawDeck(deck, name) {
+    function doDrawDeck(deck, user_id, name) {
+        var div = document.createElement("div");
+        div.appendChild(document.createElement("br"));
+
         var nameDiv = createDiv("float-left", name);
         nameDiv.style.fontSize = "xx-large";
         nameDiv.style.fontWeight = "bold";
-        var div = document.createElement("div");
-        div.appendChild(document.createElement("br"));
         div.appendChild(nameDiv);
+
+        var useridDiv = createDiv("float-left", "(" + user_id + ")");
+        useridDiv.style.fontSize = "xx-large";
+        useridDiv.style.fontWeight = "bold";
+        div.appendChild(useridDiv);
+
         div.appendChild(makeDeckHTML(deck));
         div.appendChild(document.createElement("br"));
         return div;
@@ -339,9 +349,10 @@
 
     function getInventory(data) {
         var name = data.user_data.name;
+        var user_id = data.user_data.user_id;
         var cardSpace = document.getElementById("deck");
         var deck = getDeckFromDeckInfo(data.user_decks[1]);
-        var div = doDrawDeck(deck, name);
+        var div = doDrawDeck(deck, user_id, name);
         cardSpace.appendChild(div);
         var hash = hash_encode(deck);
 
@@ -382,6 +393,16 @@
         div.appendChild(makeDeckHTML(deck));
         div.appendChild(document.createElement("hr"));
         cardSpace.appendChild(div);
+    }
+
+    BattleAPI = {
+        startCampaignBattle: startCampaignBattle,
+        startBountyBattle: startBountyBattle,
+        startGuildWarBattle: startGuildWarBattle,
+        startClashBattle: startClashBattle,
+        fightGuildMember: fightGuildMember,
+        playCard: playCard,
+        forfeitBattle: forfeitBattle,
     }
 
     var publicInfo = {

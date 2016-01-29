@@ -2,7 +2,6 @@ if (!use_workers) {
 
     // Initialize simulation loop - runs once per simulation session
     var startsim = function (autostart) {
-        Math.seedrandom('hello.');
         orders = {};
 
         if (_DEFINED('autolink') && !autostart) {
@@ -130,7 +129,7 @@ if (!use_workers) {
 
         outp(echo + '<strong>Simulations interrupted.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>' + gettable());
         if (user_controlled) {
-            draw_cards();
+            draw_cards(field);
         }
         // Show interface
         document.getElementById('ui').style.display = 'block';
@@ -157,7 +156,7 @@ if (!use_workers) {
         } else {
             outp(echo + '<br><h1>LOSS</h1><br>' + gettable());
         }
-        draw_cards();
+        draw_cards(field);
 
         // Show interface
         document.getElementById('ui').style.display = 'block';

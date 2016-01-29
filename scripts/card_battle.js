@@ -1,5 +1,6 @@
 // Initialize simulation loop - runs once per simulation session
 var startsim = function (autostart) {
+    document.getElementById('ui').style.display = 'none';
 
     if (_DEFINED('autolink') && !autostart) {
         window.location.href = generate_link(1, 1);
@@ -130,8 +131,9 @@ var debug_end = function () {
 }
 
 var draw_match_end = function () {
+    document.getElementById('ui').style.display = 'block';
 
-    draw_cards();   // Draw battlefield with no hand
+    draw_cards(field);   // Draw battlefield with no hand
 
     // Show interface
     document.getElementById('ui').style.display = 'block';
