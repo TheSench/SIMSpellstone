@@ -881,6 +881,13 @@ if (simulator_thread) {
     }
 
     var performTurns = function (turn) {
+        var done = performTurnsInner(turn);
+        if (done && user_controlled) {
+            debug_end();
+        }
+    }
+
+    var performTurnsInner = function (turn) {
         // Set up players
         var first_player, second_player;
         if (surge) {
@@ -1000,7 +1007,7 @@ if (simulator_thread) {
                 }
                 if (redraw) {
                     outp(echo);
-                    draw_cards(drawableHand, performTurns, turn);
+                    draw_cards(field, drawableHand, performTurns, turn);
                     scroll_to_end();
                 }
                 if (choice === undefined) return false;

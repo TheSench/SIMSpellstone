@@ -61,7 +61,7 @@ function draw_card_list(list, compactSkills, onclick, onrightclick) {
     cardSpace.appendChild(cards);
 }
 
-function draw_cards(drawableHand, performTurns, turn) {
+function draw_cards(field, drawableHand, callback, turn) {
     if (!drawableHand) drawableHand = [];
     var cardSpace = document.getElementById("cardSpace");
     cardSpace.innerHTML = '';
@@ -71,7 +71,7 @@ function draw_cards(drawableHand, performTurns, turn) {
         cardSpace.appendChild(htmlTurnCounter);
     }
     draw_fields(field);
-    cardSpace.appendChild(draw_hand(drawableHand, performTurns, turn));
+    cardSpace.appendChild(draw_hand(drawableHand, callback, turn));
     cardSpace.appendChild(document.createElement('br'));
     cardSpace.appendChild(document.createElement('br'));
 }
@@ -108,13 +108,14 @@ function draw_hand(hand, callback, state) {
         if (i === 0) htmlCard.classList.add("left");
         else if (i === 2) htmlCard.classList.add("right");
         var cardidx = i;
-        htmlCard.addEventListener("click", (function (inner) {
-            return function () {
-                choice = inner;
-                callback(state);
-                debug_end();
-            };
-        })(i));
+        if (callback) {
+            htmlCard.addEventListener("click", (function (inner) {
+                return function () {
+                    choice = inner;
+                    callback(state);
+                };
+            })(i));
+        }
         cards.appendChild(htmlCard);
     }
     return cards;
