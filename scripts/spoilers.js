@@ -1,1 +1,13 @@
-var spoilers = {commander: elariaCaptain, deck: [ {id: 2025, level: 7, runes: []}, {id: 12025, level: 7, runes: []}, {id: 22025, level: 7, runes: []}, {id: 5035, level: 7, runes: []}, {id: 15035, level: 7, runes: []}, {id: 25035, level: 7, runes: []}, {id: 6035, level: 7, runes: []}, {id: 16035, level: 7, runes: []}, {id: 26035, level: 7, runes: []}, {id: 7035, level: 7, runes: []}, {id: 17035, level: 7, runes: []}, {id: 27035, level: 7, runes: []} ]};
+var spoilers = {};
+spoilers[2025] = true;
+spoilers[12025] = true;
+spoilers[22025] = true;
+spoilers[5035] = true;
+spoilers[15035] = true;
+spoilers[25035] = true;
+spoilers[6035] = true;
+spoilers[16035] = true;
+spoilers[26035] = true;
+spoilers[7035] = true;
+spoilers[17035] = true;
+spoilers[27035] = true;
