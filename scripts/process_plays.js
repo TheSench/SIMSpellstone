@@ -56,9 +56,14 @@
     }
 
     function startBattle(data) {
+        suppressOutput = true;
         setupField = function () { copyField(false); };
         setupDecks = function () { doSetupDecks(); setDeckCaches(); };
-        //document.getElementById('ui').style.display = 'none';
+        end_sims_callback = function() {
+            document.getElementById('ui').style.display = 'none';
+            drawField();
+        }
+        document.getElementById('ui').style.display = 'none';
         var deck_player = { deck: [] };
         var deck_cpu = { deck: [] };
         var card_map = data.battle_data.card_map;
@@ -139,9 +144,11 @@
         if (areCommandersAlive()) {
             resetKeys();
             drawField(lastTurn);
+            startsim();
         } else {
             drawField(lastTurn, true);
             document.getElementById('ui').style.display = 'block';
+            end_sims_callback = null;
 
             if (!cachedField.uids[-1].isAlive()) {
                 outp('<br><h1>LOSS</h1><br>');
