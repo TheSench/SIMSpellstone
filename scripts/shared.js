@@ -330,7 +330,11 @@ var MakeAssault = (function () {
         },
 
         adjustedAttack: function () {
-            return ((this.attack + this.attack_rally + this.attack_berserk - this.attack_weaken));
+            return (this.attack + this.attack_rally + this.attack_berserk - this.attack_weaken);
+        },
+
+        permanentAttack: function () {
+            return (this.attack + this.attack_berserk);
         },
 
         // Filters by faction

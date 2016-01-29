@@ -677,7 +677,9 @@ if (simulator_thread) {
                     continue;
                 }
 
-                target['attack_weaken'] += weaken;
+                target.attack_weaken += weaken;
+                var maxWeaken = target.permanentAttack();
+                if (target.attack_weaken > maxWeaken) target.attack_weaken = maxWeaken;
                 if (debug) {
                     if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
                     echo += debug_name(src_card) + ' weakens ' + debug_name(target) + ' by ' + weaken + '<br>';
@@ -1262,10 +1264,8 @@ if (simulator_thread) {
         // Damage reduction
         var protect = target.protected;
         var shatter = false;
-        var armor = target.armored; //0;
+        var armor = target.armored;
         if(armor) {
-        /*if (target.skill.armored) {
-            //armor = target.skill.armored.x;*/
             var enhanced = getEnhancement(target, 'armored');
             if (enhanced) {
                 armor += enhanced;

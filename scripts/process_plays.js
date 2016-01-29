@@ -9,14 +9,12 @@
         var action = data.request.message;
         switch (action) {
             case 'playCard':
-                playTurns(data);
+                playTurns(data, false);
                 break;
             case 'getBattleResults':
-                startBattle(data);
-                playTurns(data);
-                break;
             default:
                 startBattle(data);
+                playTurns(data, true);
                 break;
         }
     }
@@ -85,10 +83,11 @@
         if (d) d.checked = true;
     }
 
-    function playTurns(data) {
+    function playTurns(data, playTurn0) {
         try {
             var turns = data.battle_data.turn;
             for (var turn in turns) {
+                if (turn == 0 && !playTurn0) continue;
                 var turnInfo = turns[turn];
                 var p = (turn % 2 == 1 ? 'player' : 'cpu');
                 for (phase in turnInfo) {
@@ -154,9 +153,16 @@
                     return;
                 }
                 card[status_flag] = status.value;
+            } else if (status_flag == "protect") {
+                card.protected = status.value;
             } else if (status_flag == "poison") {
                 card.poisoned = status.value;
             } else if (status_flag == "poisoner") {
+                // Ignore
+            } else if (status_flag == "burn") {
+                card['scorched'] = { 'amount': status.value, 'timer': 2 };
+            } else if (status_flag == "burn_timer") {
+                // Ignore
             } else {
                 card[status_flag] = status.value;
             }
@@ -225,7 +231,7 @@
                     break;
 
                 case 'weaken':
-                    setStatus(action, 'attack_weaken', 'attack');
+                    doWeaken(action);
                     break;
 
                 case 'jam':
@@ -290,14 +296,13 @@
         }
     }
 
-    function setStatus(action, statusName, max) {
+    function setStatus(action, statusName) {
         var targets = action.target_values;
         if (targets) {
             for (var key in targets) {
                 var target = targets[key];
                 var card = field.uids[target.t];
                 card[statusName] = target.x;
-                if (max && card[statusName] > card[max]) card[statusName] = card[max];
             }
         } else {
             var value = action.value;
@@ -306,8 +311,33 @@
                 var target = targets[key];
                 var card = field.uids[target];
                 card[statusName] += value;
-                if (max && card[statusName] > card[max]) card[statusName] = card[max];
             }
+        }
+    }
+
+    function doWeaken(action) {
+        var targets = action.target_values;
+        if (targets) {
+            for (var key in targets) {
+                var target = targets[key];
+                var card = field.uids[target.t];
+                doWeakenTarget(card, target.x);
+            }
+        } else {
+            var value = action.value;
+            targets = action.targets;
+            for (var key in targets) {
+                var target = targets[key];
+                var card = field.uids[target];
+                doWeakenTarget(card, value);
+            }
+        }
+    }
+
+    function doWeakenTarget(card, value) {
+        card.attack_weaken += value;
+        if( card.attack_weaken > (card.attack + card.attack_berserk)) {
+            card.attack_weaken = card.attack + card.attack_berserk;
         }
     }
 
@@ -431,7 +461,7 @@
                 // Count down skills/timer for player's cards in GUI
                 if (copy.timer) {
                     copy.timer--;
-                } else if(!copy.jammed) {
+                } else if (!copy.jammed) {
                     countDownSkills(copy.skill);
                     countDownSkills(copy.empowerSkills);
                 }
