@@ -885,20 +885,40 @@ function base64triplet_to_unitInfo(triplet) {
     var fusion = (dec1 % 3) * 10000;
     dec1 = Math.floor(dec1 / 3) * 4096;
 
+    if (towers[baseID]) {
+        var level = level + fusion * 3;
+        fusion = 1;
+    }
+
     var dec2 = base64chars.indexOf(triplet[1]) * 64;
     var dec3 = base64chars.indexOf(triplet[2]);
-
-    var id = (fusion + dec1 + dec2 + dec3);
+    var baseID = dec1 + dec2 + dec3;
+    if (towers[baseID]) {
+        var id = baseID;
+        var level = level + fusion * 3;
+        fusion = 1;
+    } else {
+        var id = (fusion + baseID);
+    }
     return makeUnitInfo(id, level);
 }
 
+var towers = {
+    601: true,
+    602: true
+};
 function unitInfo_to_base64triplet(unit_info) {
 
     var baseID = parseInt(unit_info.id);
     var level = (parseInt(unit_info.level) - 1);
 
-    var fusion = Math.floor(baseID / 10000);
-    baseID %= 10000;
+    if (towers[baseID]) {
+        var fusion = level % 3;
+        var level = Math.floor(level / 3);
+    } else {
+        var fusion = Math.floor(baseID / 10000);
+        baseID %= 10000;
+    }
 
     var char1 = base64chars[(Math.floor(baseID / 4096) * 3 + fusion) * 7 + level];
     baseID %= 4096;
