@@ -12,7 +12,7 @@ if (simulator_thread) {
         var field_p_assaults = field[p]['assaults'];
 
         // Store plays
-        if (trackStats && p == 'player') {
+        if (trackStats && p == 'player' && plays.length == 0) {
             plays.push(makeUnitInfo(card.id, card.level, card.runes));
         }
 
@@ -20,6 +20,14 @@ if (simulator_thread) {
         if (!card.id) return 0;
 
         var newKey = field_p_assaults.length;
+        initializeCard(card, p, newKey);
+
+        field_p_assaults[newKey] = card;
+
+        if (debug && !quiet) echo += debug_name(field[p].commander) + ' plays ' + debug_name(card) + '<br>';
+    };
+
+    var initializeCard = function (card, p, newKey) {
         card.owner = p;
         card.timer = card.cost;
         card.health_left = card.health;
@@ -36,11 +44,7 @@ if (simulator_thread) {
         card.jammed = false;
         card.key = newKey;
         if (!card.reusableSkills) card.resetTimers();
-
-        field_p_assaults[newKey] = card;
-
-        if (debug && !quiet) echo += debug_name(field[p].commander) + ' plays ' + debug_name(card) + '<br>';
-    };
+    }
 
     // Dead cards are removed from both fields. Cards on both fields all shift over to the left if there are any gaps.
     var remove_dead = function () {
@@ -862,7 +866,36 @@ if (simulator_thread) {
         return performTurns(0);
     };
 
-    var setupField = function () {
+    var setupDecks = function () {
+        doSetupDecks();
+    }
+
+    var doSetupDecks = function () {
+        // Cache decks where possible
+        // Load player deck
+        if (getdeck) {
+            cache_player_deck = hash_decode(getdeck);
+        } else if (getcardlist) {
+            cache_player_deck = load_deck_from_cardlist(getcardlist);
+        } else {
+            cache_player_deck = load_deck_from_cardlist();
+        }
+        cache_player_deck_cards = getDeckCards(cache_player_deck);
+
+        // Load enemy deck
+        if (getdeck2) {
+            cache_cpu_deck = hash_decode(getdeck2);
+        } else if (getcardlist2) {
+            cache_cpu_deck = load_deck_from_cardlist(getcardlist2);
+        } else if (getmission) {
+            cache_cpu_deck = load_deck_mission(getmission);
+        } else {
+            cache_cpu_deck = load_deck_from_cardlist();
+        }
+        cache_cpu_deck_cards = getDeckCards(cache_cpu_deck);
+    }
+
+    var setupField = function (field) {
         // Initialize player Commander on the field
         var field_player = field.player;
         var field_player_commander = deck.player.commander;
@@ -885,6 +918,7 @@ if (simulator_thread) {
         if (done && user_controlled) {
             debug_end();
         }
+        return done;
     }
 
     var performTurnsInner = function (turn) {

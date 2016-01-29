@@ -56,7 +56,9 @@
     }
 
     function startBattle(data) {
-        document.getElementById('ui').style.display = 'none';
+        setupField = function () { copyField(false); };
+        setupDecks = function () { doSetupDecks(); setDeckCaches(); };
+        //document.getElementById('ui').style.display = 'none';
         var deck_player = { deck: [] };
         var deck_cpu = { deck: [] };
         var card_map = data.battle_data.card_map;
@@ -68,6 +70,7 @@
             deck_player.commander = makeUnitInfo(commander.unit_id, commander.level);
             commander = get_card_by_id(deck_player.commander);
             commander.health_left = commander.health;
+            commander.owner = 'player';
             cachedField.player.commander = commander;
             cachedField.uids[-1] = commander;
 
@@ -75,6 +78,7 @@
             deck_cpu.commander = makeUnitInfo(commander.unit_id, commander.level);
             commander = get_card_by_id(deck_cpu.commander);
             commander.health_left = commander.health;
+            commander.owner = 'cpu';
             cachedField.cpu.commander = commander;
             cachedField.uids[-2] = commander;
 
@@ -91,6 +95,11 @@
                     deck_cpu.deck.push(unit);
                 }
                 var cachedCard = get_card_by_id(unit);
+                if (uid >= 0 && uid <= 15) {
+                    cachedCard.owner = 'player';
+                } else if (uid > 15) {
+                    cachedCard.owner = 'cpu';
+                }
                 cachedCard.uid = uid;
                 cachedField.uids[uid] = cachedCard;
             }
@@ -128,6 +137,7 @@
             alert(err);
         }
         if (areCommandersAlive()) {
+            resetKeys();
             drawField(lastTurn);
         } else {
             drawField(lastTurn, true);
@@ -472,10 +482,11 @@
     function playCard(uid) {
         var p = (uid <= 15 ? 'player' : 'cpu');
         var card = cachedField.uids[uid];
-        card.health_left = card.health;
-        card.timer = card.cost;
-        card.uid = uid;
-        cachedField[p].assaults.push(card);
+        var assaults = cachedField[p].assaults;
+        initializeCard(card, p, assaults.length);
+        card.played = true;
+        assaults.push(card);
+
         var hand = cachedHands[p];
         for (var i = 0; i < hand.length; i++) {
             var card = hand[i];
@@ -501,9 +512,21 @@
         }
     }
 
+    function resetKeys() {
+        resetKeysForPlayer('player');
+        resetKeysForPlayer('cpu');
+    }
+
+    function resetKeysForPlayer(p) {
+        var assaults = cachedField[p].assaults;
+        for (var i = 0; i < assaults.length; i++) {
+            assaults[i].key = i;
+        }
+    }
+
     function drawField(turn, matchEnded) {
         clearCardSpace();
-        var copy_field = copyField();
+        var copy_field = copyField(true);
         if (matchEnded) {
             draw_cards(field, null, pickCard, turn);
         } else {
@@ -517,7 +540,7 @@
         BattleAPI.playCard(uid);
     }
 
-    function copyField() {
+    function copyField(doCountdowns) {
         var copy_field = {
             cpu: { assaults: [] },
             player: { assaults: [] },
@@ -527,25 +550,49 @@
             var copy = {};
             copy_field.uids[i] = $.extend(copy, cachedField.uids[i]);
         }
-        copy_field.cpu.commander = cachedField.uids[-2];
-        copy_field.player.commander = cachedField.uids[-1];
+        copy_field.cpu.commander = $.extend({}, cachedField.uids[-2]);
+        copy_field.player.commander = $.extend({}, cachedField.uids[-1]);
 
-        copyPlayerField(cachedField, copy_field, 'cpu');
-        copyPlayerField(cachedField, copy_field, 'player');
+        copyPlayerField(cachedField, copy_field, 'cpu', doCountdowns);
+        copyPlayerField(cachedField, copy_field, 'player', doCountdowns);
 
         field = copy_field;
 
         return copy_field;
     }
 
-    function copyPlayerField(original_field, copy_field, player) {
+    function setDeckCaches() {
+        setDeckCache('player');
+        setDeckCache('cpu');
+    }
+
+    function setDeckCache(p) {
+        var deck_cache = {
+            commander: null,
+            deck: []
+        };
+        var assaults = cachedField.uids;
+        for (var key in assaults) {
+            var card = assaults[key];
+            if (card.owner != p || card.played) continue;
+            if (card.isCommander()) continue;
+            deck_cache.deck.push(card);
+        }
+        if (p == 'player') {
+            cache_player_deck_cards = deck_cache;
+        } else {
+            cache_cpu_deck_cards = deck_cache;
+        }
+    }
+
+    function copyPlayerField(original_field, copy_field, player, doCountdowns) {
         var originalAssaults = original_field[player].assaults;
         var copyAssaults = copy_field[player].assaults;
         var uids = copy_field.uids;
         for (var i = 0; i < originalAssaults.length; i++) {
             var uid = originalAssaults[i].uid;
             var copy = uids[uid];
-            if (player == 'player') {
+            if (doCountdowns && player == 'player') {
                 // Count down skills/timer for player's cards in GUI
                 if (copy.timer) {
                     copy.timer--;

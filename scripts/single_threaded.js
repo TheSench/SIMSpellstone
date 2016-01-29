@@ -17,6 +17,7 @@ if (!use_workers) {
         time_stop = 0;
         echo = '';
         games = 0;
+        run_sims_batch = 0;
         sims_left = document.getElementById('sims').value;
         if (!sims_left) sims_left = 1;
         var d = document.getElementById('user_controlled');
@@ -81,30 +82,9 @@ if (!use_workers) {
         // Display stop button
         document.getElementById('stop').style.display = 'block';
 
-        // Cache decks where possible
-        // Load player deck
-        if (getdeck) {
-            cache_player_deck = hash_decode(getdeck);
-        } else if (getcardlist) {
-            cache_player_deck = load_deck_from_cardlist(getcardlist);
-        } else {
-            cache_player_deck = load_deck_from_cardlist();
-        }
-        cache_player_deck_cards = getDeckCards(cache_player_deck);
+        setupDecks();
 
         max_turns = 50;
-
-        // Load enemy deck
-        if (getdeck2) {
-            cache_cpu_deck = hash_decode(getdeck2);
-        } else if (getcardlist2) {
-            cache_cpu_deck = load_deck_from_cardlist(getcardlist2);
-        } else if (getmission) {
-            cache_cpu_deck = load_deck_mission(getmission);
-        } else {
-            cache_cpu_deck = load_deck_from_cardlist();
-        }
-        cache_cpu_deck_cards = getDeckCards(cache_cpu_deck);
 
         wins = 0;
         losses = 0;
@@ -182,7 +162,7 @@ if (!use_workers) {
             if (run_sims_count >= run_sims_batch) {
                 var simpersecbatch = 0;
                 if (run_sims_batch > 0) { // Use run_sims_batch == 0 to imply a fresh set of simulations
-                    run_sims_count = false;
+                    run_sims_count = 0;
                     var temp = games / (games + sims_left) * 100;
                     temp = temp.toFixed(1);
 
@@ -215,7 +195,7 @@ if (!use_workers) {
             }
 
         } else {
-            run_sims_count = false;
+            run_sims_count = 0;
             run_sims_batch = 0;
             time_stop = new Date();
 
