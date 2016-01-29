@@ -64,7 +64,7 @@ void Main()
 	}
 	if (newUnits.Count > 0)
 	{
-		var spoilers = "var spoilers = {commander: elariaCaptain, deck: [ " + String.Join(", ", newUnits.Select(unit => String.Format("{{id: {0}, level: 7, runes: []}}", unit))) + " ]};";
+		var spoilers = "var spoilers = {};\r\n" + String.Join("\r\n", newUnits.Select(id => String.Format("spoilers[{0}] = true;", id)));
 		newUnits.Dump("New Units:");
 		File.WriteAllText(Path.Combine(path, "../scripts", "spoilers.js"), spoilers);
 	}

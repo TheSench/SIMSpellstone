@@ -89,12 +89,10 @@ var setupPopups = function () {
 }
 
 var drawAllCards = function () {
-    
+
     var hash = _GET('hash');
     if (hash) {
         deck = hash_decode(hash);
-    } else if (_DEFINED('spoilers')) {
-        deck = spoilers;
     }
     sortDeck(deck);
 
@@ -109,8 +107,13 @@ var drawAllCards = function () {
             addInventoryUnit(inventory[i]);
         }
     } else {
+        var onlyNew = false;
+        if (_DEFINED('spoilers')) {
+            onlyNew = true;
+            toggleDeckDisplay(document.getElementById("collapseFilters"));
+        }
         for (var id in allCards) {
-            if (id < 10000) {
+            if (id < 10000 && (!onlyNew || spoilers[id])) {
                 addUnit(allCards[id]);
             }
         }
@@ -243,10 +246,10 @@ var removeFromDeck = function (htmlCard, index) {
     } else {
         deck.deck.splice(index, 1);
     }
-    if(fromInventory) {
+    if (fromInventory) {
         var unit = getUnitFromCard(htmlCard);
         var cards = $("#cardSpace [data-id=" + unit.id + "][data-level=" + unit.level + "]");
-        for(var i = 0; i < cards.length; i++) {
+        for (var i = 0; i < cards.length; i++) {
             var card = cards[i];
             if (card.classList.contains('picked')) {
                 card.classList.remove("picked");
@@ -699,7 +702,7 @@ var showRunePicker = function (htmlCard, index) {
 
     var showUnreleased = document.getElementById("showUnreleased").checked;
 
-    if(card.rarity >= 3 && !card.isCommander()) {
+    if (card.rarity >= 3 && !card.isCommander()) {
         $("#runeChoicesDiv").show();
         for (var key in RUNES) {
             var rune = RUNES[key];
@@ -773,7 +776,7 @@ var filterSet = function (button, set) {
                 break;
             }
         }
-        if(set == "1000") {
+        if (set == "1000") {
             for (var i = 0; i < setFilters.length; i++) {
                 if (setFilters[i] == "7000") {
                     setFilters.splice(i, 1);
@@ -993,7 +996,7 @@ var sortCards = function (select) {
     unitsShown.sort(function (unitA, unitB) {
         // Always sort by commander/unit first
         var comparison = is_commander(unitB.id) - is_commander(unitA.id);
-        if(comparison != 0) return comparison;
+        if (comparison != 0) return comparison;
 
         if (sortField == "id") {
             return sortByID(unitA, unitB);
