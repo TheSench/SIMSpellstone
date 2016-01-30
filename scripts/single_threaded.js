@@ -267,6 +267,7 @@ if (!use_workers) {
 
         // Output decks for first simulation
         if (debug && (loss_debug || win_debug)) {
+        } else if (suppressOutput) {
         } else if (echo == '') {
             debug_dump_decks();
         }

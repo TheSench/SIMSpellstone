@@ -337,7 +337,8 @@ function outp(text) {
 // Return table of simulation results
 function gettable() {
 
-    if (debug || sims_left == 0) {
+    if (suppressOutput) {
+    } else if (debug || sims_left == 0) {
         // Generate links
         var links = '';
         links += '<br>' +
@@ -464,7 +465,8 @@ function getOrderStatsTable() {
 
     var winrateKeys = [];
     for (var key in orders) {
-        stats = orders[key];
+        var stats = orders[key];
+        /*
         for (var i = 3, len = key.length; i < len; i += 3) {
             var parentHash = key.substring(0, key.length - i);
             var parent = orders[parentHash];
@@ -478,9 +480,29 @@ function getOrderStatsTable() {
                 break;
             }
         }
+        */
         stats.winrate = (stats.wins / stats.games);
-        winrateKeys.push(key);
+        //winrateKeys.push(key);
     }
+
+    var best = {};
+    for (var hash in orders) {
+        var first = hash.substring(3, 6);
+        if (!best[first]) {
+            best[first] = hash;
+        } else {
+            var stats = orders[hash];
+            var stats2 = orders[best[first]];
+            // Pikc AI's best for each possible opening card
+            if (stats.winrate < stats2.winrate) {
+                best[first] = hash;
+            }
+        }
+    }
+    for (var key in best) {
+        winrateKeys.push(best[key]);
+    }
+
     winrateKeys.sort(function (a, b) {
         var statsA = orders[a];
         var statsB = orders[b];

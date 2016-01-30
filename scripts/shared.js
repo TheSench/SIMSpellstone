@@ -537,7 +537,7 @@ function setSkill_2(new_card, skill) {
         case 'leech':
         case 'pierce':
         case 'poison':
-            new_card[skill.id] = skill.x;
+            new_card[skill.id] = (new_card[skill.id]|0) + skill.x;
             break;
         case 'flurry':
             new_card[skill.id] = skill;

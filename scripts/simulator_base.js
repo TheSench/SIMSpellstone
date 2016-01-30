@@ -12,7 +12,8 @@ if (simulator_thread) {
         var field_p_assaults = field[p]['assaults'];
 
         // Store plays
-        if (trackStats && p == 'player' && plays.length == 0) {
+        //if (trackStats && p == 'player' && plays.length == 0) {
+        if (trackStats && plays.length <= 1) {
             plays.push(makeUnitInfo(card.id, card.level, card.runes));
         }
 
