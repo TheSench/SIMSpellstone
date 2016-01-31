@@ -15399,6 +15399,151 @@
       <skill id="weaken" x="2" all="1" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6037</id>
+    <card_type>2</card_type>
+    <name>Keeper of Souls</name>
+    <picture>Keeper_Of_The_Dead_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time>1454346000</hidden_until_time>
+    <!-- Mon, 01 Feb 2016 17:00:00 GMT -->
+    <attack>4</attack>
+    <health>21</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="enfeeble" x="1" all="1" />
+    <skill id="poison" x="3" />
+    <skill id="leech" x="3" />
+    <type>2</type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>23</health>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>24</health>
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="poison" x="4" />
+      <skill id="leech" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>25</health>
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="poison" x="4" />
+      <skill id="leech" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="poison" x="4" />
+      <skill id="leech" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16037</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Keeper of the Lost</name>
+    <picture>Keeper_Of_The_Dead_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time>1454346000</hidden_until_time>
+    <!-- Mon, 01 Feb 2016 17:00:00 GMT -->
+    <attack>6</attack>
+    <health>26</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="enfeeble" x="2" all="1" />
+    <skill id="poison" x="4" />
+    <skill id="leech" x="4" />
+    <type>2</type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>27</health>
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="poison" x="5" />
+      <skill id="leech" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>28</health>
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="poison" x="5" />
+      <skill id="leech" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>7</attack>
+      <health>30</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>31</health>
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="poison" x="6" />
+      <skill id="leech" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26037</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Keeper of the Dead</name>
+    <picture>Keeper_Of_The_Dead_B</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time>1454346000</hidden_until_time>
+    <!-- Mon, 01 Feb 2016 17:00:00 GMT -->
+    <attack>7</attack>
+    <health>31</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="enfeeble" x="3" all="1" />
+    <skill id="poison" x="6" />
+    <skill id="leech" x="6" />
+    <type>2</type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>32</health>
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="poison" x="7" />
+      <skill id="leech" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>33</health>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>34</health>
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="poison" x="7" />
+      <skill id="leech" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>35</health>
+      <skill id="enfeeble" x="4" all="1" />
+      <skill id="poison" x="7" />
+      <skill id="leech" x="7" />
+    </upgrade>
+  </unit>
   <!-- Wyld Premium Begin -->
   <unit>
     <id>7000</id>
