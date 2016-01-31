@@ -20,7 +20,11 @@
         var baseRequest = DeckRetriever.baseRequest;
         var targetID = document.getElementById("targetUserID").value;
         if (baseRequest) {
-            BattleAPI.fightGuildMember(targetID);
+            if (_DEFINED("war")) {
+                BattleAPI.startGuildWarBattle();
+            } else {
+                BattleAPI.fightGuildMember(targetID);
+            }
         }
     }
 
