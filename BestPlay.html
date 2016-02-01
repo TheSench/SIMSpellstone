@@ -111,7 +111,7 @@
     <span id="jsonFields">
         <form>
             <div><b>Response JSON:</b></div><input id="request_json" type="text" value="" size="50" onchange="BATTLE_PROCESSOR.getDecksFromJSON(this);"><br>
-            <div>&nbsp;</div><input type='file' id='responseFiles'>
+            <div>&nbsp;</div><input type='file' id='responseFiles' onchange="">
         </form>
         <br />
         <form>
@@ -157,7 +157,7 @@
             <br>
             <hr>
             <br>
-            <div>Number of Simulations:</div><input type="text" id="sims" value="100" size="10"><br>
+            <div>Number of Simulations:</div><input type="text" id="sims" value="1000" size="10"><br>
             <br>
             <div>Debug Mode:</div><input type="checkbox" id="debug"><br>
             <div>Mass Debug Mode (causes slowdown):</div><input type="radio" id="mass_debug" name="debugMode" onclick="toggleRadio(this)"><br><!-- onchange="massDebugChanged(this)"><br>-->
