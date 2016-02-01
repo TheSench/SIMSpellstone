@@ -420,13 +420,24 @@ function gettable() {
     table3 += 'Avg. Battle Length';
     table3 += '</td>';
     table3 += '<td>';
-
     // Calculate Average length of battle
     var avg_length = (total_turns / games).toFixed(3);
     table3 += avg_length;
-
     table3 += '</td>';
     table3 += '</tr>';
+
+    // Average points
+    table3 += '<tr>';
+    table3 += '<td>';
+    table3 += 'Avg. Points';
+    table3 += '</td>';
+    table3 += '<td>';
+    // Calculate Average length of battle
+    var avg_points = (total_points / games).toFixed(3);
+    table3 += avg_points;
+    table3 += '</td>';
+    table3 += '</tr>';
+
     table3 += '</table>';
 
     var full_table = '<table cellspacing=0 cellpadding=0 border=0><tr><td>' + table + '</td><td>&nbsp;</td><td>' + table3 + '</td></tr></table>';
@@ -583,6 +594,20 @@ function getOrderStatsTable() {
     return bestPlays2;
 }
 
+function sortByAvgPoints(stats, keys) {
+    keys.sort(function (a, b) {
+        var statsA = stats[a];
+        var statsB = stats[b];
+        var compare = statsB.avgPoints - statsA.avgPoints;
+        if (compare != 0) return compare;
+        compare = statsA.games - statsB.games;
+        if (compare != 0) return compare;
+        if (a < b) return -1;
+        if (a > b) return 1;
+        return 0;
+    });
+}
+
 function sortByWinrate(stats, keys) {
     keys.sort(function (a, b) {
         var statsA = stats[a];
@@ -604,7 +629,7 @@ function addData(stats) {
 }
 
 function addChildRows(stats, keys, aryHTML, isPlayer) {
-    sortByWinrate(stats, keys);
+    sortByAvgPoints(stats, keys);
     for (var i = 0; i < keys.length; i++) {
         var stat = stats[keys[i]];
         addRowData(stats, stat, aryHTML, isPlayer);
@@ -622,6 +647,8 @@ function addRowData(stats, stat, aryHTML, isPlayer) {
 
     var winrate = (stat.winrate * 100).toFixed(1) + '%';
     var htmlEntry = makeTD(rowSpan, winrate, isPlayer);
+
+    htmlEntry += makeTD(rowSpan, stat.avgPoints, isPlayer);
 
     htmlEntry += makeTD(rowSpan, stat.card, isPlayer);
     if (aryChildren.length) {
@@ -657,6 +684,7 @@ function CalculatePlayStats(hash, cardStats) {
                 card: card_name,
                 wins: 0,
                 games: 0,
+                points: 0,
                 children: []
             };
             cardStats[playKey] = playStats;
@@ -668,7 +696,9 @@ function CalculatePlayStats(hash, cardStats) {
         }
         playStats.wins += stats.wins;
         playStats.games += stats.games;
+        playStats.points += stats.points;
         playStats.winrate = (playStats.wins / playStats.games);
+        playStats.avgPoints = (playStats.points / playStats.games);
         parentKey = playKey;
     }
 }
@@ -1052,6 +1082,7 @@ var time_end = 0;	// TODO: Use this
 var surge = false;
 var battleground = [];
 var total_turns = 0;
+var total_points = 0;
 var cache_player_deck;
 var cache_cpu_deck;
 var cache_player_deck_cards;

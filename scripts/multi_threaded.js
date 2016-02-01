@@ -43,22 +43,23 @@ if (use_workers) {
             var view = new DataView(msg, 0, 4);
             switch (view.getInt32(0)) {
                 case RESULTS:
-                    view = new Int32Array(msg, 4, 5);
+                    view = new Int32Array(msg, 4, 6);
                     var num_games = view[0];
                     var num_wins = view[1];
                     var num_draws = view[2];
                     var num_losses = view[3];
                     var turns = view[4];
-                    view = new DataView(msg, 24, 8);
+                    var points = view[5];
+                    view = new DataView(msg, 28, 8);
                     var time_started = view.getFloat64(0);
                     // If a worker's echo is included in results...
                     // Queue up next batch so that this worker isn't idle while we process the results
                     if (sims_to_process > 0) {
                         run_sims(this.id, num_games, time_started);
                     }
-                    if (msg.byteLength > 56) {
+                    if (msg.byteLength > 36) {
                         // ... convert it from a byte array to a string
-                        var view = new Uint16Array(msg, 56);
+                        var view = new Uint16Array(msg, 36);
                         var chararray = [];
                         for (var i = 0, len = view.length; i < len; i++) {
                             chararray.push(String.fromCharCode(view[i]));
@@ -67,7 +68,7 @@ if (use_workers) {
                         echo += chararray.join("");
                     }
 
-                    add_results(num_games, num_wins, num_draws, num_losses, turns);
+                    add_results(num_games, num_wins, num_draws, num_losses, turns, points);
 
                     if (debug && !mass_debug && !loss_debug && !win_debug) {
                         display_debug_results(num_wins, num_draws);
@@ -98,7 +99,8 @@ if (use_workers) {
                             games: view.getInt32(offset),
                             wins: view.getInt32(offset+4),
                             draws: view.getInt32(offset+8),
-                            losses: view.getInt32(offset+12),
+                            losses: view.getInt32(offset + 12),
+                            points: view.getInt32(offset + 16), // TODO
                         }
                         offset += 16;
 
@@ -126,8 +128,9 @@ if (use_workers) {
                     var num_draws = results[2];
                     var num_losses = results[3];
                     var turns = results[4];
-                    var time_started = results[5];
-                    var worker_echo = results[6];
+                    var points = results[5];
+                    var time_started = results[6];
+                    var worker_echo = results[7];
                     if (worker_echo) {
                         echo += worker_echo;
                     }
@@ -137,7 +140,7 @@ if (use_workers) {
                         run_sims(this.id, num_games, time_started);
                     }
 
-                    add_results(num_games, num_wins, num_draws, num_losses, turns);
+                    add_results(num_games, num_wins, num_draws, num_losses, turns, points);
 
                     if (debug && !mass_debug && !loss_debug && !win_debug) {
                         var result = (num_wins ? 1 : num_draws ? 'draw' : 0);
@@ -167,6 +170,7 @@ if (use_workers) {
             existing.losses += update.losses;
             existing.draws += update.draws;
             existing.games += update.games;
+            existing.points += update.points;
         }
     }
 
@@ -208,13 +212,14 @@ if (use_workers) {
     }
 
     // Add results from a batch to the total results
-    var add_results = function (num_games, num_wins, num_draws, num_losses, turns) {
+    var add_results = function (num_games, num_wins, num_draws, num_losses, turns, points) {
 
         games += num_games;
         wins += num_wins;
         draws += num_draws;
         losses += num_losses;
         total_turns += turns;
+        total_points += points;
 
         if (sims_left > 0) sims_left -= num_games;
 
@@ -325,6 +330,7 @@ if (use_workers) {
         }
 
         total_turns = 0;
+        total_points = 0;
         time_start = new Date().getTime();
         time_stop = 0;
         echo = '';

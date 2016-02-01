@@ -62,12 +62,14 @@ if (simulator_thread) {
             // Starting at the first dead unit, start shifting.
             if (!current_assault.isAlive()) {
                 if (debug) echo += debug_name(current_assault) + ' is removed from field<br>';
+                if (current_assault.owner == 'player') health_lost += current_assault.health;
                 var newkey = key;	// Store the new key value for the next alive unit
                 for (key++; key < len; key++) {
                     current_assault = units[key];
                     // If this unit is dead, don't update newkey, we still need to fill that slot
                     if (!current_assault.isAlive()) {
                         if (debug) echo += debug_name(current_assault) + ' is removed from field<br>';
+                        if (current_assault.owner == 'player') health_lost += current_assault.health;
                     }
                         // If this unit is alive, set its key to newkey, and then update newkey to be the next slot
                     else {
@@ -838,6 +840,7 @@ if (simulator_thread) {
     // Simulate one game
     var simulate = function () {
         simulating = true;
+        health_lost = 0;
         plays = [];
 
         // Shuffle decks
@@ -882,6 +885,11 @@ if (simulator_thread) {
             cache_player_deck = load_deck_from_cardlist();
         }
         cache_player_deck_cards = getDeckCards(cache_player_deck);
+
+        totalDeckHealth = 0;
+        for(var i = 0; i < cache_player_deck_cards.deck.length; i++) {
+            totalDeckHealth += cache_player_deck_cards.deck[i].health;
+        }
 
         // Load enemy deck
         if (getdeck2) {
@@ -1490,7 +1498,7 @@ if (simulator_thread) {
         // -- END OF STATUS INFLICTION --
     };
 
-    var updateStats = function (result) {
+    var updateStats = function (result, points) {
         var hash = hash_encode({ commander: cache_player_deck.commander, deck: plays }, false);
         var order_stats = orders[hash];
         if (!order_stats) {
@@ -1499,6 +1507,7 @@ if (simulator_thread) {
                 losses: 0,
                 draws: 0,
                 games: 0,
+                points: 0
             }
             orders[hash] = order_stats;
         }
@@ -1512,7 +1521,22 @@ if (simulator_thread) {
         } else {
             order_stats.losses++;
         }
+        order_stats.points += points;
     };
+
+
+    var CalculatePoints = function () {
+        var commander = field.player.commander;
+        var assaults = field.player.assaults;
+        for (var i = 0, len = assaults.length; i < len; i++) {
+            var assault = assaults[i];
+            health_lost += (assault.health - assault.health_left);
+        }
+        health_lost += (commander.health - commander.health_left);
+        var pointsLost = Math.floor((100 * health_lost / totalDeckHealth) / 5);
+        var points = (field.cpu.commander.isAlive() ? 25 : 130) - pointsLost;
+        return points;
+    }
 
     var deck = [];
     var field = [];
@@ -1521,5 +1545,7 @@ if (simulator_thread) {
     var time_start_batch = 0;
     var simulating = false;
     var turn = 0;
+    var health_lost = 0;
     var plays = [];
+    var totalDeckHealth = 0;
 }

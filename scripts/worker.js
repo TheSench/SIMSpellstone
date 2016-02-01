@@ -113,6 +113,11 @@ function initializeSims(params) {
 
 	cache_player_deck_cards = getDeckCards(cache_player_deck);
 	cache_cpu_deck_cards = getDeckCards(cache_cpu_deck);
+
+	totalDeckHealth = 0;
+	for (var i = 0; i < cache_player_deck_cards.deck.length; i++) {
+	    totalDeckHealth += cache_player_deck_cards.deck[i].health;
+	}
 }
 
 var RESULTS = 0;
@@ -122,21 +127,22 @@ var STATS = 1;
 // by all browsers.)
 function returnResultsTransferableObjects() {
 	// Create results ArrayBuffer
-	var length = 32;    // 4 bytes per int, 8 bytes per float
-	if (debug) length += (echo.length*2) + 8; // 2 bytes for each char
+	var length = 36;    // 4 bytes per int, 8 bytes per float
+	if (debug) length += (echo.length*2); // 2 bytes for each char
 	var buffer = new ArrayBuffer(length);
-	var view = new Int32Array(buffer, 0, 6);
+	var view = new Int32Array(buffer, 0, 7);
 	view[0] = RESULTS
 	view[1] = games;
 	view[2] = wins;
 	view[3] = draws;
 	view[4] = losses;
 	view[5] = total_turns;
-	view = new DataView(buffer, 24, 8);
+	view[6] = total_points;
+	view = new DataView(buffer, 28, 8);
 	view.setFloat64(0, time_start_batch);
 	if (debug) {
 		// Convert echo to bytes in the ArrayBuffer
-		var bufView = new Uint16Array(buffer, 32);
+		var bufView = new Uint16Array(buffer, 36);
 		for (var i=0, len = echo.length; i < len; i++) {
 			bufView[i] = echo.charCodeAt(i);
 		}
@@ -156,8 +162,9 @@ function returnResultsStructuredCloning() {
 	resultsArray[2] = draws;
 	resultsArray[3] = losses;
 	resultsArray[4] = total_turns;
-	resultsArray[5] = time_start_batch;
-	if (debug) resultsArray[6] = echo;
+	resultsArray[6] = total_points;
+	resultsArray[7] = time_start_batch;
+	if (debug) resultsArray[8] = echo;
 
 	// Send batch results back to main thread
 	self.postMessage({"cmd":"return_results", "data":resultsArray});
@@ -280,6 +287,8 @@ function processSimResult() {
     games++;
     // Increment total turn count
     total_turns += simulation_turns;
+    var points = CalculatePoints();
+    total_points += points;
 
     var result;
     if (!field.player.commander.isAlive()) {
@@ -295,7 +304,7 @@ function processSimResult() {
         draws++;
     }
 
-    if (trackStats) updateStats(result);
+    if (trackStats) updateStats(result, points);
 
     if (debug) {
         if (!mass_debug && !loss_debug && !win_debug) {
@@ -339,7 +348,8 @@ function processSimResult() {
 
 // Initialize simulation loop - runs once per simulation batch
 function run_sims() {
-	total_turns = 0;
+    total_turns = 0;
+    total_points = 0;
 	echo = '';
 	games = 0;
 	wins = 0;
