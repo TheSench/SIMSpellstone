@@ -480,118 +480,15 @@ function getOrderStatsTable() {
     };
     for (var key in orders) {
         var stats = orders[key];
-        /*
-        for (var i = 3, len = key.length; i < len; i += 3) {
-            var parentHash = key.substring(0, key.length - i);
-            var parent = orders[parentHash];
-            if (orders[parentHash]) {
-                parent.wins += stats.wins;
-                parent.losses += stats.losses;
-                parent.draws += stats.draws;
-                parent.games += stats.games;
-                parent.winrate = (parent.wins / parent.games);
-            } else {
-                break;
-            }
-        }
-        */
         stats.winrate = (stats.wins / stats.games);
-        winrateKeys.push(key);
         CalculatePlayStats(key, cardStats)
     }
-
-    /*
-    for (var key in best) {
-        winrateKeys.push(best[key]);
-    }*/
-
-    winrateKeys.sort(
-        /*
-        function (a, b) {
-            var statsA = orders[a];
-            var statsB = orders[b];
-            var compare = statsB.winrate - statsA.winrate;
-            if (compare != 0) return compare;
-            compare = statsA.games - statsB.games;
-            if (compare != 0) return compare;
-            if (a < b) return -1;
-            if (a > b) return 1;
-            return 0;
-        }
-        */
-    );
-    /*
-    var bestPlays = '<br><table cellspacing=0 cellpadding=5 style="border: 1px solid #000000;">';
-    var len = Math.min(winrateKeys.length, 100);
-    for (var i = 0; i < len; i++) {
-        var hash = winrateKeys[i];
-        var stats = orders[hash];
-        bestPlays += '<tr>';
-        bestPlays += '<td>';
-        bestPlays += stats.wins + "/" + stats.games;
-        bestPlays += '</td>';
-        bestPlays += '<td>';
-        bestPlays += (stats.winrate * 100).toFixed(1);
-        bestPlays += '%</td>';
-        bestPlays += '<td>';
-        bestPlays += generate_play_list(hash_decode(hash).deck);
-        bestPlays += '</td>';
-        bestPlays += '</tr>';
-    }
-    bestPlays += '</table>';
-    */
-    /*
-    cardStats.keys.sort(function (a, b) {
-        var deckA = hash_decode(a).deck;
-        var deckB = hash_decode(b).deck;
-        var len = Math.max(deckA.length, deckB.length);
-        for (var i = 0; i < len; i++) {
-            var cardA = deckA[i];
-            var cardB = deckB[i];
-            if (!cardA) return -1;
-            if (!cardB) return 1;
-            compare = cardA.id - cardB.id;
-            if (compare) return compare;
-            compare = cardA.level - cardB.level;
-            if (compare) return compare;
-            compare = (cardA.runes.length ? cardA.runes[0].id : 0) - (cardB.runes.length ? cardB.runes[0].id : 0);
-            if (compare) return compare;
-        }
-        return 0;
-    });
-    */
-    var bestPlays2 = '<br><table cellspacing=0 cellpadding=5 style="border: 1px solid #000000;">';
+    var statsTable = '<br><table cellspacing=0 cellpadding=5 style="border: 1px solid #000000;">';
     var lastColumn = 0;
-    bestPlays2 += addData(cardStats);
-    /*
-    for (var i = 0; i < cardStats.keys.length; i++) {
-        var play = cardStats.keys[i];
-        var stats = cardStats[play];
-        if (lastColumn >= stats.column) {
-            if (i > 0) {
-                bestPlays2 += '</tr>';
-            }
-            bestPlays2 += '<tr>';
-        }
-        var rowSpan = stats.rowSpan;
-        bestPlays2 += '<td rowSpan="'+rowSpan+'" ' + style + '>';
-        bestPlays2 += stats.wins + "/" + stats.games;
-        bestPlays2 += '</td>';
-        bestPlays2 += '<td rowSpan="' + rowSpan + '"' + style + '>';
-        bestPlays2 += (stats.winrate * 100).toFixed(1);
-        bestPlays2 += '%</td>';
-        bestPlays2 += '<td rowSpan="' + rowSpan + '"' + style + '>';
-        bestPlays2 += dumpPlay(hash_decode(play).deck[stats.column], stats.column);
-        bestPlays2 += '</td>';
-        lastColumn = stats.column;
-    }
-    if (lastColumn == stats.column) {
-        bestPlays2 += '</tr>';
-    }
-    */
-    bestPlays2 += '</table>';
+    statsTable += getStatsRows(cardStats);
+    statsTable += '</table>';
 
-    return bestPlays2;
+    return statsTable;
 }
 
 function sortByAvgPoints(stats, keys) {
@@ -608,21 +505,7 @@ function sortByAvgPoints(stats, keys) {
     });
 }
 
-function sortByWinrate(stats, keys) {
-    keys.sort(function (a, b) {
-        var statsA = stats[a];
-        var statsB = stats[b];
-        var compare = statsB.winrate - statsA.winrate;
-        if (compare != 0) return compare;
-        compare = statsA.games - statsB.games;
-        if (compare != 0) return compare;
-        if (a < b) return -1;
-        if (a > b) return 1;
-        return 0;
-    });
-}
-
-function addData(stats) {
+function getStatsRows(stats) {
     var aryHTML = [];
     addChildRows(stats, stats.keys, aryHTML, true);
     return '<tr>' + aryHTML.join('</tr><tr>') + '</tr>';
@@ -645,10 +528,10 @@ function addRowData(stats, stat, aryHTML, isPlayer) {
     var matches = (stat.wins + "/" + stat.games);
     htmlEntry += makeTD(rowSpan, matches, isPlayer);
 
-    var winrate = (stat.winrate * 100).toFixed(1) + '%';
+    var winrate = (stat.winrate * 100).toFixed(2) + '%';
     var htmlEntry = makeTD(rowSpan, winrate, isPlayer);
 
-    htmlEntry += makeTD(rowSpan, stat.avgPoints, isPlayer);
+    htmlEntry += makeTD(rowSpan, stat.avgPoints.toFixed(2), isPlayer);
 
     htmlEntry += makeTD(rowSpan, stat.card, isPlayer);
     if (aryChildren.length) {
