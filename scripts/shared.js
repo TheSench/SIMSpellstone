@@ -873,6 +873,33 @@ function generate_card_list(deck) {
     return cardlist;
 }
 
+function generate_play_list(cards) {
+    var cardlist = [];
+    for (var i = 0; i < cards.length; i++) {
+        var unit = cards[i];
+        var card = get_card_by_id(unit);
+
+        if (!card) continue;
+        var o = (i % 2 == 0 ? 'b' : 'i');
+        var card_name = "<"+o+">" + card.name + "(" + card.level + ")";
+        if (card.runes.length) card_name += "*";
+        card_name += "</" + o + ">";
+
+        cardlist.push(card_name);
+    }
+
+    return "<td>" + cardlist.join("</td><td>") + "</td>";
+}
+
+function dumpPlay(unit, i) {
+    var card = get_card_by_id(unit);
+    var o = (i % 2 == 0 ? 'b' : 'i');
+    var card_name = "<" + o + ">" + card.name + "(" + card.level + ")";
+    if (card.runes.length) card_name += "*";
+    card_name += "</" + o + ">";
+    return card_name;
+}
+
 var base64chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!~";
 var multiplierChars = "_*.'";
 var runeDelimiter = "/";

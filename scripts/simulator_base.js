@@ -13,7 +13,7 @@ if (simulator_thread) {
 
         // Store plays
         //if (trackStats && p == 'player' && plays.length == 0) {
-        if (trackStats && plays.length <= 1) {
+        if (trackStats && plays.length < 3) {
             plays.push(makeUnitInfo(card.id, card.level, card.runes));
         }
 
