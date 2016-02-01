@@ -18,11 +18,10 @@
         DeckRetriever.getFieldsFromRequest(jsonText);
         var data = JSON.parse(jsonText);
         processJSONResponse(data);
-        watchFile();
     }
 
     var lastModified;
-    function watchFile() {
+    module.watchFile = function() {
         var file;
 
         if (typeof window.FileReader !== 'function') {
