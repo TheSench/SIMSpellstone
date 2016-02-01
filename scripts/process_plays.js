@@ -11,9 +11,48 @@
     module.getDecksFromJSON = function (field) {
         var jsonText = field.value;
         field.value = '';
+        processDeckFromJSON(jsonText);
+    }
+
+    function processDeckFromJSON(jsonText) {
         DeckRetriever.getFieldsFromRequest(jsonText);
         var data = JSON.parse(jsonText);
         processJSONResponse(data);
+        watchFile();
+    }
+
+    var lastModified;
+    function watchFile() {
+        var file;
+
+        if (typeof window.FileReader !== 'function') {
+            return;
+        }
+
+        var input = document.getElementById('responseFiles');
+        if (!input) {
+        } else if (!input.files) {
+        } else if (!input.files[0]) {
+        } else {
+            file = input.files[0];
+            lastModified = file.lastModifiedDate;
+            setInterval(tick, 250);
+        }
+    }
+
+    function tick() {
+        var input = document.getElementById('responseFiles');
+        var file = input.files && input.files[0];
+        if (file && lastModified && file.lastModifiedDate.getTime() !== lastModified.getTime()) {
+            lastModified = file.lastModifiedDate;
+            
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                processDeckFromJSON(e.target.result);
+            };
+            reader.readAsText(file);
+
+        }
     }
 
     module.fight = function () {
@@ -540,7 +579,7 @@
         var copy_field = copyField(true);
         if (matchEnded) {
             draw_cards(field, null, pickCard, turn);
-        } else {
+        } else if (!_DEFINED("nodraw")) {
             draw_cards(field, cachedHands.player, pickCard, turn);
         }
     }
