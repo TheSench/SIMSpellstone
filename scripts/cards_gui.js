@@ -238,6 +238,10 @@ function create_card_html(card, compactSkills, onField, onclick, onrightclick, s
             htmlCard.appendChild(fusion);
         }
         htmlCard.appendChild(htmlLevel);
+    } else if (card.maxLevel > 1) {
+        var htmlLevel = createImg('res/cardAssets/' + card.maxLevel + "_" + card.level + ".png");
+        htmlLevel.className = "level";
+        htmlCard.appendChild(htmlLevel);
     }
     if (onclick) {
         htmlCard.addEventListener("click", (function (inner) {
