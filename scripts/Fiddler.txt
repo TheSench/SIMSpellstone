@@ -11,7 +11,7 @@ static function OnBeforeResponse(oSession: Session) {
         || oSession.PathAndQuery.indexOf("message=startClashBattle") > 0
         || oSession.PathAndQuery.indexOf("message=fightGuildMember") > 0
         || oSession.PathAndQuery.indexOf("message=playCard") > 0
-        || oSession.PathAndQuery.indexOf("getBattleResults") > 0) {) {
+        || oSession.PathAndQuery.indexOf("getBattleResults") > 0) {
             oSession.utilDecodeResponse();
             oSession.SaveResponseBody("C:\\Users\\jsen\\Desktop\\JSEN\\BattleTest\\battle.json");
         }
