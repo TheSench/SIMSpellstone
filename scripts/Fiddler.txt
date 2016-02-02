@@ -1,15 +1,9 @@
 ﻿
 
 static function OnBeforeResponse(oSession: Session) {
-    /*
     if (m_Hide304s && oSession.responseCode == 304) {
         oSession["ui-hide"] = "true";
     }
-    if (oSession.HostnameIs("spellstone.synapse-games.com")) {
-        oSession.utilDecodeResponse();
-        oSession.utilReplaceInResponse('"runes":0', '"runes":1');
-    }
-    */
     if (oSession.HostnameIs("spellstone.synapse-games.com")) {
         if (oSession.PathAndQuery.indexOf("message=startCampaign") > 0
         || oSession.PathAndQuery.indexOf("message=startHuntingBattle") > 0
