@@ -26,7 +26,7 @@ void Main()
 	Normalize(Path.Combine("cards.xml"), downloadFiles);
 	Normalize(Path.Combine("missions.xml"), downloadFiles);
 	Normalize(Path.Combine("fusion_recipes_cj2.xml"), downloadFiles);
-//	Normalize(Path.Combine("levels.xml"), downloadFiles);
+	Normalize(Path.Combine("levels.xml"), downloadFiles);
 
 	g_unitIDs = new HashSet<string>();
 	xmlFile = Path.Combine(path, "cards.xml");
