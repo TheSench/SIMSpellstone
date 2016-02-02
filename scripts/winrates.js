@@ -158,8 +158,6 @@ function nextEvolution(isFirst) {
                 if (getAverage(attacker) > getAverage(best)) best = attacker;
             }
         }
-    }
-    if (best) {
         var attacker = DeckRetriever.allDecks[best];
     } else {
         var attacker = checkForSpecifiedAttacker();
@@ -196,6 +194,7 @@ function nextEvolution(isFirst) {
 
     extraCards.splice(0, 1);
 
+    // Only set up defenders once
     if (defender) {
         var defenderKey = 'defender';
         defenderKeys.push(defenderKey);
