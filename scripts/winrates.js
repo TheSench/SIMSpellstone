@@ -161,11 +161,10 @@ function nextEvolution(isFirst) {
     }
     if (best) {
         var attacker = DeckRetriever.allDecks[best];
-        var defender;
     } else {
         var attacker = checkForSpecifiedAttacker();
-        var defender = checkForSpecifiedDefender();
     }
+    var defender = checkForSpecifiedDefender();
 
     // Remove previous winrate table
     document.getElementById("results_table").innerHTML = '';
