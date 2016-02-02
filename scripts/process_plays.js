@@ -138,7 +138,7 @@
                 }
                 if (uid <= 15) {
                     deck_player.deck.push(unit);
-                } else {
+                } else if (uid <= 115) {
                     deck_cpu.deck.push(unit);
                 }
                 var cachedCard = get_card_by_id(unit);
