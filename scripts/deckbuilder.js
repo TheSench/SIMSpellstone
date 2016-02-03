@@ -696,7 +696,7 @@ var showAdvancedFilters = function (skill) {
 }
 
 var showCardOptions = function (htmlCard, index) {
-    var unit = getUnitFromCard(htmlCard);
+    var unit = deck.deck[index];
     var card = get_card_by_id(unit);
 
     var upgradeLevel = document.getElementById("upgrade");
@@ -723,18 +723,16 @@ var showCardOptions = function (htmlCard, index) {
 
     optionsDialog.dialog("open");
     optionsDialog.dialog("option", "position", { my: "left", at: "right", of: htmlCard });;
-    optionsDialog.index = index;
-    optionsDialog.originalUnit = unit;
+    optionsDialog.unit = unit;
+    optionsDialog.originalUnit = $.extend({}, unit);
 
     return false;
 }
 
 var resetRuneChoices = function() {
-    var index = optionsDialog.index;
-    if (index !== undefined) {
-        var unit = deck.deck[index];
-        var card = get_card_by_id(unit);
-        setRuneChoices(card);
+    var unit = optionsDialog.unit;
+    if (unit !== undefined) {
+        $.extend(unit, optionsDialog.originalUnit);
     }
 }
 
@@ -779,9 +777,8 @@ var toggleUnreleasedRunes = function (checkbox) {
 }
 
 var modifyCard = function (optionsDialog) {
-    var index = optionsDialog.index;
-    if (index !== undefined) {
-        var unit = deck.deck[index];
+    var unit = optionsDialog.unit;
+    if (unit !== undefined) {
         var runeID = document.getElementById("runeChoices").value;
         if (runeID) {
             unit.runes = [{ id: runeID }];
