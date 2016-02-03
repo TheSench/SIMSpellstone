@@ -91,8 +91,18 @@ var setupPopups = function () {
         modifyCard(optionsDialog);
     });
     $("#upgrade").parents("#unitOptions").bind("change", function () {
-        resetRuneChoices();
+        resetUnit();
     });
+
+    var imageButtons = $('input[type="image"]');
+    for (var i = 0; i < imageButtons.length; i++) {
+        var imageButton = imageButtons[i];
+        var toolTip = '<div class="tooltip">' + imageButton.getAttribute("title") + '</div>';
+        imageButton.removeAttribute("title");
+        org_html = imageButton.outerHTML;
+        new_html = '<div style="display:inline; position:relative; overflow:visible;">' + org_html + toolTip + '</div>';
+        imageButton.outerHTML = new_html;
+    }
 }
 
 var drawAllCards = function () {
@@ -696,12 +706,22 @@ var showAdvancedFilters = function (skill) {
 }
 
 var showCardOptions = function (htmlCard, index) {
-    var unit = deck.deck[index];
+    var show = false;
+    if (index != undefined) {
+        var unit = deck.deck[index];
+    } else {
+        var unit = deck.commander;
+    }
     var card = get_card_by_id(unit);
 
+    $("#upgradeDiv").hide();
     var upgradeLevel = document.getElementById("upgrade");
     upgradeLevel.max = card.maxLevel;
     upgradeLevel.value = card.level;
+    if (card.maxLevel > 1) {
+        $("#upgradeDiv").show();
+        show = true;
+    }
 
     var fusionField = document.getElementById("fusion");
     fusionField.value = 0;
@@ -716,35 +736,40 @@ var showCardOptions = function (htmlCard, index) {
         if (FUSIONS[baseID]) {
             fusionField.value = fusion;
             $("#fusionDiv").show();
+            show = true;
         }
     }
 
-    setRuneChoices(card);
+    if (showRunePicker(card)) {
+        show = true;
+    }
 
-    optionsDialog.dialog("open");
-    optionsDialog.dialog("option", "position", { my: "left", at: "right", of: htmlCard });;
-    optionsDialog.unit = unit;
-    optionsDialog.originalUnit = $.extend({}, unit);
+    if (show) {
+        optionsDialog.dialog("open");
+        optionsDialog.dialog("option", "position", { my: "left", at: "right", of: htmlCard });;
+        optionsDialog.unit = unit;
+        optionsDialog.originalUnit = $.extend({}, unit);
+    }
 
     return false;
 }
 
-var resetRuneChoices = function() {
+var resetUnit = function () {
     var unit = optionsDialog.unit;
     if (unit !== undefined) {
         $.extend(unit, optionsDialog.originalUnit);
     }
 }
 
-var setRuneChoices = function (card) {
+var showRunePicker = function (card) {
     var select = document.getElementById("runeChoices");
     select.innerHTML = '<option value=""></option>';
     var showUnreleased = document.getElementById("showUnreleased").checked;
 
     optionsDialog.hiddenOptions = [];
 
+    $("#runeChoicesDiv").hide();
     if (card.rarity >= 3 && !card.isCommander()) {
-        $("#runeChoicesDiv").show();
         for (var key in RUNES) {
             var rune = RUNES[key];
             if (canUseRune(card, rune.id)) {
@@ -764,8 +789,14 @@ var setRuneChoices = function (card) {
         } else {
             document.getElementById("runeChoices").value = '';
         }
+        if (select.childNodes.length > 0) {
+            $("#runeChoicesDiv").show();
+            return true;
+        } else {
+            return false;
+        }
     } else {
-        $("#runeChoicesDiv").hide();
+        return false;
     }
 }
 
