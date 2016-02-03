@@ -266,8 +266,12 @@
     <div id="unitOptions" class="dialog-form">
         <form>
             <fieldset>
-                <div id="upgradeDiv">
-                    <label for="upgrade">Upgrade Level</label>
+                <div id="fusionDiv" class="split">
+                    <label for="upgrade">Fusion</label>
+                    <input type="number" name="fusion" id="fusion" min="1" max="3" step="1" class="ui-widget-content ui-corner-all">
+                </div>
+                <div id="upgradeDiv" class="split">
+                    <label for="upgrade">Level</label>
                     <input type="number" name="upgrade" id="upgrade" min="1" step="1" class="ui-widget-content ui-corner-all">
                 </div>
                 <div id="runeChoicesDiv">
