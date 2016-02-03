@@ -66,9 +66,9 @@
                 </fieldset>
                 <fieldset>
                     <span>Fusion:</span>
-                    <input type="image" name="skill" src="res/cardAssets/Singlefuse.png" onclick="filterFusion(this, '')" />
-                    <input type="image" name="skill" src="res/cardAssets/Dualfuse.png" onclick="filterFusion(this, '1')" />
-                    <input type="image" name="skill" src="res/cardAssets/Quadfuse.png" onclick="filterFusion(this, '2')" />
+                    <input type="image" title="Single Fused" name="skill" src="res/cardAssets/Singlefuse.png" onclick="filterFusion(this, '')" />
+                    <input type="image" title="Dual Fused" name="skill" src="res/cardAssets/Dualfuse.png" onclick="filterFusion(this, '1')" />
+                    <input type="image" title="Quad Fused" name="skill" src="res/cardAssets/Quadfuse.png" onclick="filterFusion(this, '2')" />
                 </fieldset>
                 <fieldset>
                     <span>Set:</span>
@@ -153,9 +153,10 @@
                     <input class="delay-filter" type="button" value="3" onclick="filterDelay(this, 3)" />
                     <input class="delay-filter" type="button" value="4" onclick="filterDelay(this, 4)" />
                 </fieldset>
-                <div><strong>Name Filter:</strong></div><input id="nameFilter" type="text" value="" size="100" onkeyup="filterName(this);"><br />
-
-                <br />
+                <div style="white-space:nowrap; margin: 5px 0px;">
+                    <strong>Name Filter:</strong><br />
+                    <input id="nameFilter" type="text" value="" size="100" onkeyup="filterName(this);">
+                </div>
                 <input type="button" value="Clear All" onclick="clearFilters()" />
                 <br />
             </div>
