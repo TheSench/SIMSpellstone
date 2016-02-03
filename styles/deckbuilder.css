@@ -101,10 +101,6 @@ input[type="button"].attack-filter {
         width: 100%;
     }
 
-    .dialog-form div {
-        width: initial;
-    }
-
     .dialog-form input[type=number] {
         width: 40%;
     }
@@ -130,6 +126,11 @@ input[type="button"].attack-filter {
     .dialog-form select {
         width: 100%;
     }
+
+        .dialog-form div.split {
+            width: 50%;
+            float: left;
+        }
 
     .dialog-form #upgrade {
         width: initial,;
