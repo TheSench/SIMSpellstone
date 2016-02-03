@@ -292,6 +292,30 @@ battleground[] battlegrounds = new battleground[] {
 			},
 		},
 	},
+	new battleground {
+		Name = "Angelic Legion",
+		ID = "106",
+		Effects = new add_skill[] {
+			new add_skill() {
+				id = "legion",
+				mult = "1",
+				Base = "rarity",
+				y = ((int)FactionIDs.Angel).ToString(),
+			},
+		},
+	},
+	new battleground {
+		Name = "Elemental Surge",
+		ID = "105",
+		Effects = new skill[] {
+			new skill() {
+				id = "rally",
+				mult = "0.2",
+				y = ((int)FactionIDs.Elemental).ToString(),
+				all = "1",
+			},
+		},
+	},
 };
 
 public class battleground

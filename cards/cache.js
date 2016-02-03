@@ -56315,4 +56315,34 @@ var BATTLEGROUNDS = [
       ]
     }
   },
+  {
+    "name": "Angelic Legion",
+    "id": "106",
+    "effect": {
+      "add_skill": [
+        {
+          "id": "legion",
+          "mult": 1,
+          "base": "rarity",
+          "y": "6",
+          "z": 6,
+        },
+      ]
+    }
+  },
+  {
+    "name": "Elemental Surge",
+    "id": "105",
+    "effect": {
+      "skill": [
+        {
+          "id": "rally",
+          "mult": 0.2,
+          "y": "5",
+          "z": 5,
+          "all": "1",
+        },
+      ]
+    }
+  },
 ];

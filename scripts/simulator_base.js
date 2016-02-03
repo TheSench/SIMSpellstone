@@ -734,11 +734,19 @@ if (simulator_thread) {
             }
 
             for (var key = 0, len = targets.length; key < len; key++) {
+
                 var target = field_p_assaults[targets[key]];
-                target.attack_rally += rally;
+
+                var rally_amt = rally;
+                if (!rally_amt) {
+                    var mult = skill.mult;
+                    rally_amt = Math.ceil(target.attack * mult);
+                }
+
+                target.attack_rally += rally_amt;
                 if (debug) {
                     if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
-                    echo += debug_name(src_card) + ' empowers ' + debug_name(target) + ' by ' + rally + '<br>';
+                    echo += debug_name(src_card) + ' empowers ' + debug_name(target) + ' by ' + rally_amt + '<br>';
                 }
             }
         },
