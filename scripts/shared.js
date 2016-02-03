@@ -479,6 +479,7 @@ var MakeBattleground = (function () {
     Battleground.prototype = {
         p: null,
         name: null,
+        runes: [],
 
         //Card ID is ...
         isCommander: function () {
