@@ -96,9 +96,9 @@ if (use_workers) {
                             wins: view.getInt32(offset+4),
                             draws: view.getInt32(offset+8),
                             losses: view.getInt32(offset + 12),
-                            points: view.getInt32(offset + 16), // TODO
+                            points: view.getInt32(offset + 16),
                         }
-                        offset += 16;
+                        offset += 20;
 
                         updateStats(hash, stats);
                     }
@@ -108,6 +108,25 @@ if (use_workers) {
             sims_left = 0;
         }
         delete e;
+    }
+
+    var initializeCard = function (card, p, newKey) {
+        card.owner = p;
+        card.timer = card.cost;
+        card.health_left = card.health;
+        // Setup status effects
+        card.attack_rally = 0;
+        card.attack_weaken = 0;
+        card.attack_berserk = 0;
+        card.poisoned = 0;
+        card.scorched = 0;
+        card.enfeebled = 0;
+        card.protected = 0;
+        card.barrier_ice = 0;
+        card.enhanced = 0;
+        card.jammed = false;
+        card.key = newKey;
+        if (!card.reusableSkills) card.resetTimers();
     }
 
     // Handle messages from the worker thread using Structured Cloning
@@ -290,7 +309,11 @@ if (use_workers) {
         simpersec = simpersec.toFixed(1);
 
         if (suppressOutput && end_sims_callback) {
-            outp(echo + '<br><strong>Simulations complete.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>');
+            if (trackStats) {
+                outp(echo + '<br><strong>Simulations complete.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>' + gettable() + getOrderStatsTable());
+            } else {
+                outp(echo + '<br><strong>Simulations complete.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>');
+            }
         } else {
             outp(echo + '<br><strong>Simulations complete.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>' + gettable() + getOrderStatsTable());
         }
@@ -362,6 +385,7 @@ if (use_workers) {
         getexactorder = document.getElementById('exactorder').checked;
         getexactorder2 = document.getElementById('exactorder2').checked;
         getmission = document.getElementById('mission').value;
+        getraid = document.getElementById('raid').value;
         getsiege = document.getElementById('siege').checked;
         tower_level = document.getElementById('tower_level').value;
         tower_type = document.getElementById('tower_type').value;
@@ -401,6 +425,8 @@ if (use_workers) {
             cache_cpu_deck = load_deck_from_cardlist(getcardlist2);
         } else if (getmission) {
             cache_cpu_deck = load_deck_mission(getmission);
+        } else if (getraid) {
+            cache_cpu_deck = load_deck_raid(getraid);
         } else {
             cache_cpu_deck = load_deck_from_cardlist();
         }
@@ -434,6 +460,7 @@ if (use_workers) {
         params['trackStats'] = trackStats;
         for (var i = 0; i < max_workers; i++) {
             workers[i].postMessage({ 'cmd': 'initializeSims', 'data': params });
+            setupWorkerField(workers[i]);
         }
 
         current_timeout = setTimeout(display_progress, 100);
@@ -451,9 +478,6 @@ if (use_workers) {
 
     // Interrupt simulations
     var stopsim = function (supress_output) {
-        for (var i = 0; i < max_workers; i++) {
-            workers[i].terminate();
-        }
 
         sims_left = 0;
         time_stop = new Date().getTime();
@@ -461,12 +485,12 @@ if (use_workers) {
         var simpersec = games / elapse;
         simpersec = simpersec.toFixed(1);
 
+        for (var i = 0; i < max_workers; i++) {
+            workers[i].terminate();
+        }
+
         // Stop the recursion
         if (current_timeout) clearTimeout(current_timeout);
-
-        for (var i = 0; i < max_workers; i++) {
-            workers[i].postMessage({ 'cmd': 'stopsim' });
-        }
 
         if (!supress_output) {
             outp(echo + '<strong>Simulations interrupted.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>' + gettable());
@@ -478,6 +502,8 @@ if (use_workers) {
         // Hide stop button
         document.getElementById('stop').style.display = 'none';
     }
+
+    var setupWorkerField = function () { };
 
     // Loops through all simulations
     // - keeps track of number of simulations and outputs status

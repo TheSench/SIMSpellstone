@@ -295,6 +295,7 @@ function checkForSpecifiedDefender() {
     var getdeck2 = document.getElementById('deck2').value;
     var getcardlist2 = document.getElementById('cardlist2').value;
     var getmission = document.getElementById('mission').value;
+    var getraid = document.getElementById('raid').value;
 
     // Load deck
     var deck;
@@ -306,6 +307,8 @@ function checkForSpecifiedDefender() {
         clearList2 = false;
     } else if (getmission) {
         deck = load_deck_mission(getmission);
+    } else if (getraid) {
+        deck = load_deck_raid(getraid);
     }
 
     return deck;

@@ -43,6 +43,7 @@ if (!use_workers) {
         getexactorder = document.getElementById('exactorder').checked;
         getexactorder2 = document.getElementById('exactorder2').checked;
         getmission = document.getElementById('mission').value;
+        getraid = document.getElementById('raid').value;
         getsiege = document.getElementById('siege').checked;
         tower_level = document.getElementById('tower_level').value;
         tower_type = document.getElementById('tower_type').value;

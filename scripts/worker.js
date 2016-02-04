@@ -30,7 +30,100 @@ function ProcessMessage(e) {
 		case 'initializeSims':
 			initializeSims(msg.data);
 			break;
+            
+	    case 'setupField':
+	        doSetupField(msg.data);
+	        break;
 	};
+}
+
+var setDeckCaches;
+
+function doSetupField(jsonText) {
+    var cachedField = JSON.parse(jsonText);
+
+    var copyPlayerField = function (original_field, copy_field, player) {
+        var originalAssaults = original_field[player].assaults;
+        var copyAssaults = copy_field[player].assaults;
+        var uids = copy_field.uids;
+        for (var i = 0; i < originalAssaults.length; i++) {
+            var uid = originalAssaults[i].uid;
+            var copy = uids[uid];
+            copyAssaults.push(copy);
+        }
+    }
+
+    setupField = function (copy_field) {
+        copy_field.cpu = { assaults: [] };
+        copy_field.player = { assaults: [] };
+        copy_field.uids = {};
+
+        for (var i in cachedField.uids) {
+            copy_field.uids[i] = copyCard(cachedField.uids[i]);
+        }
+        copy_field.cpu.commander = copy_field.uids[-2];
+        copy_field.player.commander = copy_field.uids[-1];
+
+        var uids = copy_field.uids;
+
+        var originalAssaults = cachedField.player.assaults;
+        var copyAssaults = copy_field.player.assaults;
+        for (var i = 0; i < originalAssaults.length; i++) {
+            var uid = originalAssaults[i].uid;
+            copyAssaults.push(uids[uid]);
+        }
+
+        var originalAssaults = cachedField.cpu.assaults;
+        var copyAssaults = copy_field.cpu.assaults;
+        for (var i = 0; i < originalAssaults.length; i++) {
+            var uid = originalAssaults[i].uid;
+            copyAssaults.push(uids[uid]);
+        }
+    }
+
+    setDeckCaches = function () {
+        setDeckCache('player');
+        setDeckCache('cpu');
+    }
+
+    var setDeckCache = function(p) {
+        var deck_cache = {
+            commander: null,
+            deck: []
+        };
+        var assaults = cachedField.uids;
+        for (var key in assaults) {
+            var card = assaults[key];
+            if (card.owner != p || card.played) continue;
+            if (card.isCommander()) continue;
+            deck_cache.deck.push(card);
+        }
+        if (p == 'player') {
+            cache_player_deck_cards = deck_cache;
+        } else {
+            cache_cpu_deck_cards = deck_cache;
+        }
+    }
+
+    //setDeckCaches();
+}
+
+function copyCard(card) {
+    var unit = makeUnitInfo(card.id, card.level, card.runes);
+    var newCard = get_card_by_id(unit);
+    extend(newCard, card)
+    return newCard;
+}
+
+function extend(target, source) {
+    for (var prop in source) {
+        if (typeof source[prop] === 'object') {
+            target[prop] = extend(target[prop], source[prop]);
+        } else {
+            target[prop] = source[prop];
+        }
+    }
+    return target;
 }
 
 // Initialize worker thread - runs once when worker thread is created
@@ -167,7 +260,7 @@ function returnStatsTransferableObjects() {
         statLength++;
         hashLength += key.length;
     }
-    statLength *= 20;   // 5 ints @ 4 bytes each
+    statLength *= 24;   // 6 ints @ 4 bytes each
     hashLength *= 2;    // 2 bytes per character
     var dataLength = statLength + hashLength;
     var offset = 4;
@@ -196,6 +289,8 @@ function returnStatsTransferableObjects() {
         view.setInt32(offset, stat.draws);
         offset += 4;
         view.setInt32(offset, stat.losses);
+        offset += 4;
+        view.setInt32(offset, stat.points);
         offset += 4;
     }
 
@@ -392,6 +487,7 @@ var getordered2 = false;
 var getexactorder = false;
 var getexactorder2 = false;
 var getmission = 0;
+var getraid = 0;
 var getbattleground = 0;
 var getsiege = 0;
 var user_controlled = false;
@@ -416,4 +512,4 @@ var running = false;
 var simulator_thread = true;
 var orders = {};
 
-importScripts('simulator_base.js', 'shared.js', 'runes.js');
+importScripts('simulator_base.js', 'shared.js', 'runes.js', 'raids.js');

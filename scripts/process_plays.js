@@ -99,8 +99,9 @@
 
     function startBattle(data) {
         suppressOutput = true;
-        setupField = function () { copyField(false); };
+        setupField = function (field) { copyField(field, false); };
         setupDecks = function () { doSetupDecks(); setDeckCaches(); };
+        setupWorkerField = function (worker) { postField(worker); }
         end_sims_callback = function() {
             document.getElementById('ui').style.display = 'none';
             drawField();
@@ -575,11 +576,12 @@
 
     function drawField(turn, matchEnded) {
         clearCardSpace();
-        var copy_field = copyField(true);
+        var copy_field = {};
+        copyField(copy_field, true);
         if (matchEnded) {
-            draw_cards(field, null, pickCard, turn);
+            draw_cards(copy_field, null, pickCard, turn);
         } else if (!_DEFINED("nodraw")) {
-            draw_cards(field, cachedHands.player, pickCard, turn);
+            draw_cards(copy_field, cachedHands.player, pickCard, turn);
         }
     }
 
@@ -589,25 +591,28 @@
         BattleAPI.playCard(uid);
     }
 
-    function copyField(doCountdowns) {
-        var copy_field = {
-            cpu: { assaults: [] },
-            player: { assaults: [] },
-            uids: {}
-        };
+    function postField(worker) {
+        worker.postMessage(
+            {
+                'cmd': 'setupField',
+                'data': JSON.stringify(cachedField)
+            });
+    }
+
+    function copyField(copy_field, doCountdowns) {
+        copy_field.cpu = { assaults: [] };
+        copy_field.player = { assaults: [] };
+        copy_field.uids = {};
+
         for (var i in cachedField.uids) {
             var copy = {};
-            copy_field.uids[i] = $.extend(copy, cachedField.uids[i]);
+            copy_field.uids[i] = $.extend({}, cachedField.uids[i]);
         }
-        copy_field.cpu.commander = $.extend({}, cachedField.uids[-2]);
-        copy_field.player.commander = $.extend({}, cachedField.uids[-1]);
+        copy_field.cpu.commander = copy_field.uids[-2];
+        copy_field.player.commander = copy_field.uids[-1];
 
         copyPlayerField(cachedField, copy_field, 'cpu', doCountdowns);
         copyPlayerField(cachedField, copy_field, 'player', doCountdowns);
-
-        field = copy_field;
-
-        return copy_field;
     }
 
     function setDeckCaches() {

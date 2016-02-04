@@ -1371,80 +1371,54 @@ function clean_name_for_matching(name) {
 }
 
 // Load mission deck
-var DoNotFuse = ["8005", "8006", "8007", "8008", "8009", "8010"];
 function load_deck_mission(id) {
-
     var missionInfo = MISSIONS[id];
-    if (!missionInfo) return 0;
+    if (missionInfo) {
+        return load_preset_deck(missionInfo);
+    } else {
+        return 0;
+    }
+}
+
+function load_deck_raid(id) {
+
+    var raidInfo = RAIDS[id];
+    if (raidInfo) {
+        var newRaidInfo = {
+            commander: raidInfo.commander,
+            deck: raidInfo.deck.card
+        }
+        return load_preset_deck(newRaidInfo);
+    } else {
+        return 0;
+    }
+}
+
+var DoNotFuse = ["8005", "8006", "8007", "8008", "8009", "8010"];
+function load_preset_deck(deckInfo) {
 
     var current_deck = [];
     current_deck.deck = [];
-    current_deck.commander = makeUnitInfo(missionInfo.commander, 7);   // Set commander to max level
-    var missionDeck = missionInfo.deck;
-    for (var current_key in missionDeck) {
-        var current_card = missionDeck[current_key];
+    current_deck.commander = makeUnitInfo(deckInfo.commander.id, 7);   // Set commander to max level
+    var presetDeck = deckInfo.deck;
+    for (var current_key in presetDeck) {
+        var unit = presetDeck[current_key];
+        // For now, skip all cards that would be removed
+        if (unit.remove_mastery_level) continue;
         // Upgrade all cards to max fusion/level
-        if (DoNotFuse.indexOf(current_card) == -1) {
-            if (current_card.length > 4) {
-                current_card[0] = '2';
+        var cardID = unit.id;
+        if (DoNotFuse.indexOf(cardID) == -1) {
+            if (cardID.length > 4) {
+                cardID[0] = '2';
             } else {
-                current_card = '2' + current_card;
+                cardID = '2' + cardID;
             }
         }
-        var unit = makeUnitInfo(current_card, 7);
+        var unit = makeUnitInfo(cardID, 7);
         current_deck.deck.push(unit);
     }
     return current_deck;
 }
-
-// Load raid deck
-// - randomize it as required
-function load_deck_raid(id) {
-
-    var raid = raids[id];
-    if (!raid) return 0;
-
-    // Load battleground, if available
-    if (raid.effect && !getbattleground) {
-        battleground = BATTLEGROUNDS[raid.effect.effect];
-        getbattleground = raid.effect;
-    }
-
-    var current_deck = [];
-    current_deck.deck = [];
-    current_deck.commander = raid.commander;
-
-    // Always included raid cards
-    var current_pool = raid.deck.always_include;
-    if (current_pool && current_pool.card) {
-        current_pool = current_pool.card;
-        for (var current_key in current_pool) {
-            var current_card = current_pool[current_key];
-            current_deck.deck.push(current_card);
-        }
-    }
-
-    // Variable Card Pools
-    var parent_pool = raid.deck.card_pool;
-    if (parent_pool) {
-        for (var pool_key in parent_pool) {
-            current_pool = parent_pool[pool_key];
-            if (current_pool && current_pool.card) {
-                var amount = current_pool.amount;
-                var current_pool_cards = copy_card_list(current_pool.card);
-                shuffle(current_pool_cards);
-                for (var current_key in current_pool_cards) {
-                    if (amount < 1) break;
-                    var current_card = current_pool_cards[current_key];
-                    current_deck.deck.push(current_card);
-                    amount--;
-                }
-            }
-        }
-    }
-    return current_deck;
-}
-
 
 // Output card array
 function get_card_by_id(unit, skillModifiers) {
