@@ -20260,7 +20260,7 @@ var CARDS = {
   "5036": {
     "id": "5036",
     "name": "Winter Tail",
-    "picture": "New2_A",
+    "picture": "Fox_Spirit_A",
     "rarity": "4",
     "set": "3000",
     "card_type": "2",
@@ -20334,7 +20334,7 @@ var CARDS = {
   "15036": {
     "id": "15036",
     "name": "Spring Tail",
-    "picture": "New2_A",
+    "picture": "Fox_Spirit_A",
     "rarity": "4",
     "set": "3000",
     "card_type": "2",
@@ -20406,7 +20406,7 @@ var CARDS = {
   "25036": {
     "id": "25036",
     "name": "Summer Tail",
-    "picture": "New2_B",
+    "picture": "Fox_Spirit_B",
     "rarity": "4",
     "set": "3000",
     "card_type": "2",
@@ -28549,7 +28549,7 @@ var CARDS = {
   "6036": {
     "id": "6036",
     "name": "Cursed Ogre",
-    "picture": "New3_A",
+    "picture": "Void_Ogre_A",
     "rarity": "3",
     "set": "3000",
     "card_type": "2",
@@ -28608,7 +28608,7 @@ var CARDS = {
   "16036": {
     "id": "16036",
     "name": "Plaguecursed Ogre",
-    "picture": "New3_A",
+    "picture": "Void_Ogre_A",
     "rarity": "3",
     "set": "3000",
     "card_type": "2",
@@ -28687,7 +28687,7 @@ var CARDS = {
   "26036": {
     "id": "26036",
     "name": "Deathcursed Ogre",
-    "picture": "New3_B",
+    "picture": "Void_Ogre_B",
     "rarity": "3",
     "set": "3000",
     "card_type": "2",
@@ -37506,7 +37506,7 @@ var CARDS = {
   "7036": {
     "id": "7036",
     "name": "Deepwood Corpse",
-    "picture": "New1_A",
+    "picture": "Woodland_Ranger_A",
     "rarity": "4",
     "set": "3000",
     "card_type": "2",
@@ -37586,7 +37586,7 @@ var CARDS = {
   "17036": {
     "id": "17036",
     "name": "Deepwood Dead",
-    "picture": "New1_A",
+    "picture": "Woodland_Ranger_A",
     "rarity": "4",
     "set": "3000",
     "card_type": "2",
@@ -37665,7 +37665,7 @@ var CARDS = {
   "27036": {
     "id": "27036",
     "name": "Deepwood Zombie",
-    "picture": "New1_B",
+    "picture": "Woodland_Ranger_B",
     "rarity": "4",
     "set": "3000",
     "card_type": "2",
