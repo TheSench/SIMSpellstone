@@ -1133,10 +1133,6 @@ if (simulator_thread) {
         return true;
     };
 
-    var get_card_apply_battlegrounds = function (id) {
-        return get_card_by_id(id, battlegrounds.onCreate);
-    }
-
     var play_turn = function (p, o, field) {
 
         var field_p = field[p];
@@ -1162,8 +1158,6 @@ if (simulator_thread) {
         // Reset invisibility count after enhance has had a chance to fire
         for (var key = 0, len = field_p_assaults.length; key < len; key++) {
             var current_assault = field_p_assaults[key];
-            /*if (current_assault.skill.evade) {
-                current_assault['invisible'] = current_assault.skill.evade.x;*/
             if (current_assault.evade) {
                 current_assault.invisible = current_assault.evade;
                 var enhanced = getEnhancement(current_assault, 'evade');
@@ -1539,8 +1533,18 @@ if (simulator_thread) {
     var CalculatePoints = function () {
         var commander = field.player.commander;
         var assaults = field.player.assaults;
+        var uids = field.uids;
+        if (uids) {
+            for (var i in uids) {
+                var assault = uids[i];
+                if (assault.owner == 'player') {
+                    health_lost += (assault.health - assault.health_left);
+                }
+            }
+        }
         for (var i = 0, len = assaults.length; i < len; i++) {
             var assault = assaults[i];
+            if (uids && uids[assault.uid]) continue;    // Already counted this card
             health_lost += (assault.health - assault.health_left);
         }
         health_lost += (commander.health - commander.health_left);

@@ -1421,6 +1421,10 @@ function load_preset_deck(deckInfo) {
 }
 
 // Output card array
+var get_card_apply_battlegrounds = function (id) {
+    return get_card_by_id(id, battlegrounds.onCreate);
+}
+
 function get_card_by_id(unit, skillModifiers) {
 
     var unitKey = unit.id + "-" + unit.level;
