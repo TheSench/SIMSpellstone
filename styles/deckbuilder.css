@@ -58,8 +58,7 @@ input[type="button"].selected {
     display: none;
 }
 
-input[type="image"]:hover + .tooltip,
-.tooltip:hover {
+input[type="image"]:hover + .tooltip {
     display: block;
     position: absolute;
     background-color: white;
