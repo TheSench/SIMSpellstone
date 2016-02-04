@@ -32,6 +32,7 @@ window.onerror = function (message, url, linenumber) {
     if (getordered2) err_msg += "Enemy Ordered: Yes\n";
     if (getexactorder2) err_msg += "Enemy Exact-order: Yes\n";
     if (getmission) err_msg += "Mission ID: " + getmission + "\n";
+    if (getraid) err_msg += "Raid ID: " + getraid + "\n";
     if (getbattleground) err_msg += "Battleground ID: " + getbattleground + "\n";
     if (games) err_msg += "Sims run so far: " + games + "\n";
 
@@ -107,6 +108,20 @@ function onpageload() {
             select.appendChild(option);
         }
     }
+
+    // Check if raids are found
+    if (RAIDS) {
+        // Mission drop down
+        var select = document.getElementById('raid');
+        for (var key in RAIDS) {
+            var raid = RAIDS[key];
+            var option = document.createElement('option');
+            option.appendChild(document.createTextNode(raid.name));
+            option.value = raid.id;
+            select.appendChild(option);
+        }
+    }
+
 
     // Check if battlegrounds are found
     if (BATTLEGROUNDS) {
@@ -617,7 +632,7 @@ function generate_link(autostart, autolink) {
     var getdeck2 = document.getElementById('deck2').value;
     var getcardlist2 = document.getElementById('cardlist2').value;
     var getmission = document.getElementById('mission').value;
-    //var getbattleground = document.getElementById('battleground').value;
+    var getraid = document.getElementById('raid').value;
 
     // Load player deck
     if (getdeck) {
@@ -632,6 +647,8 @@ function generate_link(autostart, autolink) {
     } else if (getcardlist2) {
         deck.cpu = load_deck_from_cardlist(getcardlist2);
     } else if (getmission) {
+        deck.cpu = 0;
+    } else if (getraid) {
         deck.cpu = 0;
     }
 
@@ -693,6 +710,11 @@ function generate_link(autostart, autolink) {
     d = document.getElementById('mission');
     if (d.value) {
         parameters.push('mission=' + d.value);
+    }
+
+    d = document.getElementById('raid');
+    if (d.value) {
+        parameters.push('raid=' + d.value);
     }
 
     var battlegrounds = '';
@@ -777,10 +799,12 @@ function load_deck_builder(player) {
         var getdeck = document.getElementById('deck').value;
         var getcardlist = document.getElementById('cardlist').value;
         var getmission;
+        var getraid;
     } else {
         var getdeck = document.getElementById('deck2').value;
         var getcardlist = document.getElementById('cardlist2').value;
         var getmission = document.getElementById('mission').value;
+        var getraid = document.getElementById('raid').value;
     }
     //var getbattleground = document.getElementById('battleground').value;
 
@@ -795,6 +819,8 @@ function load_deck_builder(player) {
         deck = load_deck_from_cardlist(getcardlist);
     } else if (getmission) {
         deck = load_deck_mission(getmission);
+    } else if (getraid) {
+        deck = load_deck_raid(getmission);
     }
     var hash;
     if (deck) {
@@ -939,6 +965,7 @@ var getordered2 = false;
 var getexactorder = false;
 var getexactorder2 = false;
 var getmission = false;
+var getraid = false;
 var trackStats = false;
 var getbattleground = 0;
 var getsiege = 0;

@@ -75,8 +75,18 @@ void Main()
 	{
 		id = node.Element("id").Value,
 		name = node.Element("name").Value,
-		commander = node.Element("commander").Attribute("id").Value,
-		deck = node.Element("deck").Elements("card").Where(card => card.Attribute("remove_mastery_level") == null).Select(card => card.Attribute("id").Value).ToArray()
+		commander = node.Elements("commander").Select(card => new missionCard()
+		{
+			id = card.Attribute("id").Value,
+			level = (string)card.Attribute("level"),
+		}).FirstOrDefault(),
+		deck = node.Element("deck").Elements("card").Select(card => new missionCard()
+		{
+			id = card.Attribute("id").Value,
+			level = (string)card.Attribute("level"),
+			mastery_level = (string)card.Attribute("mastery_level"),
+			remove_mastery_level = (string)card.Attribute("remove_mastery_level"),
+		}).ToArray()
 	}).OrderBy(m => m.id);
 
 	xmlFile = Path.Combine(path, "fusion_recipes_cj2.xml");
@@ -102,11 +112,15 @@ void Main()
 			writer.WriteLine("  \"" + mission.id + "\": {");
 			writer.WriteLine("    \"id\": \"" + mission.id + "\",");
 			writer.WriteLine("    \"name\": \"" + mission.name + "\",");
-			writer.WriteLine("    \"commander\": \"" + mission.commander + "\",");
+			writer.WriteLine("    \"commander\": {");
+			writer.WriteLine(mission.commander.ToString());
+			writer.WriteLine(     "},");
 			writer.WriteLine("    \"deck\": [");
 			foreach (var card in mission.deck)
 			{
-				writer.WriteLine("      \"" + card + "\",");
+				writer.WriteLine("      {");
+				writer.WriteLine(card.ToString());
+				writer.WriteLine("      },");
 			}
 			writer.WriteLine("    ]");
 			writer.WriteLine("  },");
@@ -799,8 +813,35 @@ public partial class mission
 {
 	public string id { get; set; }
 	public string name { get; set; }
-	public string commander { get; set; }
-	public string[] deck { get; set; }
+	public missionCard commander { get; set; }
+	public missionCard[] deck { get; set; }
+}
+
+public partial class missionCard
+{
+	public string id { get; set; }
+	public string level { get; set; }
+	public string mastery_level { get; set; }
+	public string remove_mastery_level { get; set; }
+
+	public override string ToString()
+	{
+		var fields = new List<string>();
+		var spaces = "        ";
+		AddFieldIfSpecified(fields, "id", id, spaces);
+		AddFieldIfSpecified(fields, "level", level, spaces);
+		AddFieldIfSpecified(fields, "mastery_level", mastery_level, spaces);
+		AddFieldIfSpecified(fields, "remove_mastery_level", remove_mastery_level, spaces);
+		return String.Join(",\r\n", fields);
+	}
+}
+
+private static void AddFieldIfSpecified(List<string> fields, string name, string value, string spaces)
+{
+	if (!String.IsNullOrWhiteSpace(value))
+	{
+		fields.Add(spaces + "\"" + name + "\": \"" + value + "\"");
+	}
 }
 
 public partial class fusionRecipe

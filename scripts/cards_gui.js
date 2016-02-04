@@ -100,7 +100,6 @@ function draw_field(field) {
 
 function draw_hand(hand, callback, state) {
     var cards = createDiv("float-left hand");
-    var units = field.assaults;
     for (var i = 0, len = hand.length; i < len; i++) {
         var unit = hand[i];
         if (!unit) continue;
