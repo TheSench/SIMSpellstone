@@ -74,9 +74,43 @@
                 break;
             case 'getBattleResults':
             default:
+                setupBattlegrounds();
                 startBattle(data);
                 playTurns(data, true);
                 break;
+        }
+    }
+
+    function setupBattlegrounds() {
+
+        if (BATTLEGROUNDS) {
+            getbattleground = [];
+            var bgCheckBoxes = document.getElementsByName("battleground");
+            for (var i = 0; i < bgCheckBoxes.length; i++) {
+                var checkbox = bgCheckBoxes[i];
+                if (checkbox && checkbox.checked) {
+                    getbattleground.push(i);
+                }
+            }
+            getbattleground = getbattleground.join();
+        }
+
+        // Set up battleground effects, if any
+        battlegrounds = {
+            onCreate: [],
+            onTurn: [],
+        };
+        if (getbattleground) {
+            var selected = getbattleground.split(",");
+            for (i = 0; i < selected.length; i++) {
+                var id = selected[i];
+                var battleground = BATTLEGROUNDS[id];
+                if (battleground.effect.skill) {
+                    battlegrounds.onTurn.push(MakeBattleground(battleground.name, battleground.effect.skill));
+                } else if (battleground.effect.evolve_skill || battleground.effect.add_skill) {
+                    battlegrounds.onCreate.push(MakeSkillModifier(battleground.name, battleground.effect));
+                }
+            }
         }
     }
 
@@ -98,6 +132,7 @@
     }
 
     function startBattle(data) {
+
         suppressOutput = true;
         setupField = function (field) { copyField(field, false); };
         setupDecks = function () { doSetupDecks(); setDeckCaches(); };
@@ -116,7 +151,7 @@
         try {
             var commander = data.battle_data.attack_commander;
             deck_player.commander = makeUnitInfo(commander.unit_id, commander.level);
-            commander = get_card_by_id(deck_player.commander);
+            commander = get_card_apply_battlegrounds(deck_player.commander);
             commander.health_left = commander.health;
             commander.owner = 'player';
             cachedField.player.commander = commander;
@@ -124,7 +159,7 @@
 
             commander = data.battle_data.defend_commander;
             deck_cpu.commander = makeUnitInfo(commander.unit_id, commander.level);
-            commander = get_card_by_id(deck_cpu.commander);
+            commander = get_card_apply_battlegrounds(deck_cpu.commander);
             commander.health_left = commander.health;
             commander.owner = 'cpu';
             cachedField.cpu.commander = commander;
@@ -142,7 +177,7 @@
                 } else if (uid <= 115) {
                     deck_cpu.deck.push(unit);
                 }
-                var cachedCard = get_card_by_id(unit);
+                var cachedCard = get_card_apply_battlegrounds(unit);
                 if (uid >= 0 && uid <= 15) {
                     cachedCard.owner = 'player';
                 } else if (uid > 15) {
@@ -225,6 +260,7 @@
                 break;
             case 'plays':
                 processPlay(p, turnData);
+                doSetEvade(p);
                 break;
             case 'upkeep':
             case 'actions':
@@ -345,7 +381,7 @@
                     break;
 
                 case 'evade':
-                    decrementField(action, 'evade');
+                    decrementField(action, 'invisible');
                     break;
 
                 case 'berserk':
@@ -502,7 +538,7 @@
             for (var key in targets) {
                 var target = targets[key];
                 var card = cachedField.uids[target.t];
-                card.health_left -= target.x;
+                damageCard(card, target.x);
             }
         } else {
             var value = action.value;
@@ -510,10 +546,16 @@
             for (var key in targets) {
                 var target = targets[key];
                 var card = cachedField.uids[target];
-                card.health_left -= value;
+                damageCard(card, value);
             }
         }
         updateFlags(action.status);
+    }
+
+    function damageCard(card, damage)
+    {
+        card.health_left -= damage;
+        if (card.health_left < 0) card.health_left = 0;
     }
 
     function processPlay(p, turnData) {
@@ -526,6 +568,15 @@
         for (var key in turnData) {
             var play = turnData[key];
             playCard(play.card_uid);
+        }
+    }
+
+
+    function doSetEvade(p) {
+        var assaults = cachedField[p].assaults;
+        for (var i = 0; i < assaults.length; i++) {
+            var card = assaults[i];
+            if (card.evade) card.invisible = card.evade;
         }
     }
 

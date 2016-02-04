@@ -806,7 +806,6 @@ function load_deck_builder(player) {
         var getmission = document.getElementById('mission').value;
         var getraid = document.getElementById('raid').value;
     }
-    //var getbattleground = document.getElementById('battleground').value;
 
     // Load player deck
     var deck = {

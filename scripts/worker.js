@@ -100,10 +100,14 @@ function doSetupField(jsonText) {
         for (var i in cachedUids) {
             var cachedInfo = cachedUids[i];
             if (i < 0 || cachedInfo.played) {
-                var unit = makeUnitInfo(cachedInfo.id, cachedInfo.level, cachedInfo.runes);
-                var newCard = get_card_by_id(unit);
-                setStatuses(newCard, cachedInfo.statuses);
-                copy_field.uids[i] = newCard;
+                if (cachedInfo.health_left) {
+                    var unit = makeUnitInfo(cachedInfo.id, cachedInfo.level, cachedInfo.runes);
+                    var newCard = get_card_apply_battlegrounds(unit);
+                    setStatuses(newCard, cachedInfo.statuses);
+                    copy_field.uids[i] = newCard;
+                } else {
+                    copy_field.uids[i] = cachedInfo;
+                }
             }
         }
         copy_field.cpu.commander = copy_field.uids[-2];
@@ -113,15 +117,17 @@ function doSetupField(jsonText) {
         var originalAssaults = cachedField.player.assaults;
         var copyAssaults = copy_field.player.assaults;
         for (var i = 0; i < originalAssaults.length; i++) {
-            var uid = originalAssaults[i].uid;
-            copyAssaults.push(uids[uid]);
+            var card = uids[originalAssaults[i].uid];
+            card.key = i;
+            copyAssaults.push(card);
         }
 
         var originalAssaults = cachedField.cpu.assaults;
         var copyAssaults = copy_field.cpu.assaults;
         for (var i = 0; i < originalAssaults.length; i++) {
-            var uid = originalAssaults[i].uid;
-            copyAssaults.push(uids[uid]);
+            var card = uids[originalAssaults[i].uid];
+            card.key = i;
+            copyAssaults.push(card);
         }
     };
 
@@ -185,7 +191,7 @@ function setStatuses(card, statuses)
     }
 
     if (statuses.flurry_timer) {
-        card.flurry.c = statuses.flurry_timer;
+        card.flurry.countdown = statuses.flurry_timer;
     }
     if(statuses.skillTimers)
     {
@@ -221,7 +227,8 @@ function copyStatuses(card, statuses) {
     if (card.barrier_ice) statusEffects.push({ key: "barrier_ice", value: card.barrier_ice });
     if (card.enhanced) statusEffects.push({ key: "enhanced", value: card.enhanced });
     if (card.jammed) statusEffects.push({ key: "jammed", value: card.jammed });
-    if (card.key) statusEffects.push({ key: "key", value: card.key });
+    if (card.evade) statusEffects.push({ key: "evade", value: card.evade });
+    if (card.invisible) statusEffects.push({ key: "invisible", value: card.invisible });
     statuses.statusEffects = statusEffects;
 
     if (card.flurry) {

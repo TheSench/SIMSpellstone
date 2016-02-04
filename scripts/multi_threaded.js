@@ -278,6 +278,10 @@ if (use_workers) {
 
     // Display the results of a regular debug simulation
     var display_debug_results = function (win, draw) {
+        for (var i = 0; i < max_workers; i++) {
+            workers[i].terminate();
+        }
+
         sims_left = 0;
         time_stop = new Date().getTime();
 
