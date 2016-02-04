@@ -1409,7 +1409,7 @@ function load_preset_deck(deckInfo) {
         var cardID = unit.id;
         if (DoNotFuse.indexOf(cardID) == -1) {
             if (cardID.length > 4) {
-                cardID[0] = '2';
+                cardID = '2' + cardID.substring(1);
             } else {
                 cardID = '2' + cardID;
             }
