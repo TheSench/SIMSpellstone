@@ -78,14 +78,31 @@ var setupPopups = function () {
         modal: true,
         buttons: {
             OK: function () {
-                setRune(optionsDialog);
+                //modifyCard(optionsDialog);
                 optionsDialog.dialog("close");
             },
             Cancel: function () {
+                resetCard(optionsDialog);
                 optionsDialog.dialog("close");
             }
         },
     });
+    $("input").add("option").parents("#unitOptions").bind("change", function () {
+        modifyCard(optionsDialog);
+    });
+    $("#upgrade").parents("#unitOptions").bind("change", function () {
+        resetUnit();
+    });
+
+    var imageButtons = $('input[type="image"]');
+    for (var i = 0; i < imageButtons.length; i++) {
+        var imageButton = imageButtons[i];
+        var toolTip = '<div class="tooltip">' + imageButton.getAttribute("title") + '</div>';
+        imageButton.removeAttribute("title");
+        org_html = imageButton.outerHTML;
+        new_html = '<div style="display:inline; position:relative; overflow:visible;">' + org_html + toolTip + '</div>';
+        imageButton.outerHTML = new_html;
+    }
 }
 
 var drawAllCards = function () {
@@ -129,7 +146,7 @@ var drawAllCards = function () {
         sortCards(sortField);
     }
 
-    draw_deck(deck, removeFromDeck, showRunePicker);
+    draw_deck(deck, removeFromDeck, showCardOptions);
     draw_card_list(unitsShown, false, addToDeck);
     if (inventory) {
         var unitsToHide = deck.deck.slice();
@@ -205,7 +222,7 @@ var hash_changed = function (hash) {
         }
     }
 
-    draw_deck(deck, removeFromDeck, showRunePicker);
+    draw_deck(deck, removeFromDeck, showCardOptions);
 }
 
 var sortDeck = function (deck) {
@@ -236,7 +253,7 @@ var addToDeck = function (htmlCard) {
     }
     sortDeck(deck);
     if (fromInventory) htmlCard.classList.add("picked");
-    draw_deck(deck, removeFromDeck, showRunePicker);
+    draw_deck(deck, removeFromDeck, showCardOptions);
     updateHash();
 };
 
@@ -257,7 +274,7 @@ var removeFromDeck = function (htmlCard, index) {
             }
         }
     }
-    draw_deck(deck, removeFromDeck, showRunePicker);
+    draw_deck(deck, removeFromDeck, showCardOptions);
     updateHash();
 };
 
@@ -688,22 +705,71 @@ var showAdvancedFilters = function (skill) {
     return false;
 }
 
-var showRunePicker = function (htmlCard, index) {
-    var unit = getUnitFromCard(htmlCard);
+var showCardOptions = function (htmlCard, index) {
+    var show = false;
+    if (index != undefined) {
+        var unit = deck.deck[index];
+    } else {
+        var unit = deck.commander;
+    }
     var card = get_card_by_id(unit);
-    optionsDialog.hiddenOptions = [];
 
-    var select = document.getElementById("runeChoices");
-    select.innerHTML = '<option value=""></option>';
-
+    $("#upgradeDiv").hide();
     var upgradeLevel = document.getElementById("upgrade");
     upgradeLevel.max = card.maxLevel;
     upgradeLevel.value = card.level;
+    if (card.maxLevel > 1) {
+        $("#upgradeDiv").show();
+        show = true;
+    }
 
+    var fusionField = document.getElementById("fusion");
+    fusionField.value = 0;
+    $("#fusionDiv").hide();
+    if (!card.isCommander()) {
+        var fusion = 1;
+        var baseID = card.id.toString();
+        if (baseID.length > 4) {
+            var fusion = parseInt(baseID[0]) + 1;
+            var baseID = baseID.substring(1);
+        }
+        if (FUSIONS[baseID]) {
+            fusionField.value = fusion;
+            $("#fusionDiv").show();
+            show = true;
+        }
+    }
+
+    if (showRunePicker(card)) {
+        show = true;
+    }
+
+    if (show) {
+        optionsDialog.dialog("open");
+        optionsDialog.dialog("option", "position", { my: "left", at: "right", of: htmlCard });;
+        optionsDialog.unit = unit;
+        optionsDialog.originalUnit = $.extend({}, unit);
+    }
+
+    return false;
+}
+
+var resetUnit = function () {
+    var unit = optionsDialog.unit;
+    if (unit !== undefined) {
+        $.extend(unit, optionsDialog.originalUnit);
+    }
+}
+
+var showRunePicker = function (card) {
+    var select = document.getElementById("runeChoices");
+    select.innerHTML = '<option value=""></option>';
     var showUnreleased = document.getElementById("showUnreleased").checked;
 
+    optionsDialog.hiddenOptions = [];
+
+    $("#runeChoicesDiv").hide();
     if (card.rarity >= 3 && !card.isCommander()) {
-        $("#runeChoicesDiv").show();
         for (var key in RUNES) {
             var rune = RUNES[key];
             if (canUseRune(card, rune.id)) {
@@ -723,19 +789,15 @@ var showRunePicker = function (htmlCard, index) {
         } else {
             document.getElementById("runeChoices").value = '';
         }
+        if (select.childNodes.length > 0) {
+            $("#runeChoicesDiv").show();
+            return true;
+        } else {
+            return false;
+        }
     } else {
-        $("#runeChoicesDiv").hide();
+        return false;
     }
-
-    optionsDialog.dialog("open");
-    if ((htmlCard.offsetLeft + htmlCard.offsetWidth / 2 - ($("#unitOptions")[0].offsetWidth / 2)) < 10) {
-        optionsDialog.dialog("option", "position", { my: "left", at: "left", of: htmlCard });;
-    } else {
-        optionsDialog.dialog("option", "position", { my: "center", at: "center", of: htmlCard });;
-    }
-    optionsDialog.index = index;
-
-    return false;
 }
 
 var toggleUnreleasedRunes = function (checkbox) {
@@ -745,10 +807,9 @@ var toggleUnreleasedRunes = function (checkbox) {
     }
 }
 
-var setRune = function (optionsDialog) {
-    var index = optionsDialog.index;
-    if (index !== undefined) {
-        var unit = deck.deck[index];
+var modifyCard = function (optionsDialog) {
+    var unit = optionsDialog.unit;
+    if (unit !== undefined) {
         var runeID = document.getElementById("runeChoices").value;
         if (runeID) {
             unit.runes = [{ id: runeID }];
@@ -760,8 +821,23 @@ var setRune = function (optionsDialog) {
     }
 
     unit.level = document.getElementById("upgrade").value;
+    var fusion = document.getElementById("fusion").value;
+    if (fusion) {
+        fusion = (fusion - 1).toString();
+        var unitID = unit.id.toString();
+        if (unitID.length > 4) unitID = unitID.substring(1);
+        if (fusion >= 0) unitID = fusion + unitID;
+        unit.id = parseInt(unitID);
+    }
 
-    draw_deck(deck, removeFromDeck, showRunePicker);
+    draw_deck(deck, removeFromDeck, showCardOptions);
+    updateHash();
+}
+
+var resetCard = function (optionsDialog) {
+    var index = optionsDialog.index;
+    deck.deck[index] = optionsDialog.originalUnit;
+    draw_deck(deck, removeFromDeck, showCardOptions);
     updateHash();
 }
 
@@ -1068,7 +1144,6 @@ var updateDeck = function () {
             } else {
                 newDeck.push(htmlCard.attributes.getNamedItem("data-index").value)
             }
-
         }
         newDeck = "[" + newDeck.join() + "]";
         DeckRetriever.updateMyDeck(newCommander, newDeck);

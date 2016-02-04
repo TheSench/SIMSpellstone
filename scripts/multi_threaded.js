@@ -53,10 +53,6 @@ if (use_workers) {
                     view = new DataView(msg, 28, 8);
                     var time_started = view.getFloat64(0);
                     // If a worker's echo is included in results...
-                    // Queue up next batch so that this worker isn't idle while we process the results
-                    if (sims_to_process > 0) {
-                        run_sims(this.id, num_games, time_started);
-                    }
                     if (msg.byteLength > 36) {
                         // ... convert it from a byte array to a string
                         var view = new Uint16Array(msg, 36);
@@ -133,11 +129,6 @@ if (use_workers) {
                     var worker_echo = results[7];
                     if (worker_echo) {
                         echo += worker_echo;
-                    }
-
-                    // Queue up next batch
-                    if (sims_to_process > 0) {
-                        run_sims(this.id, num_games, time_started);
                     }
 
                     add_results(num_games, num_wins, num_draws, num_losses, turns, points);
@@ -230,20 +221,17 @@ if (use_workers) {
                     echo += '<br><br>';
                     found_loss = true;
                     sims_left = 0;
-                    sims_to_process = 0;
                     stopsim(1);
                 } else if (num_losses > 0) {
                     echo = 'Loss found after ' + games + ' games. Displaying debug output... <br><br>' + echo;
                     echo += '<br><br>';
                     found_loss = true;
                     sims_left = 0;
-                    sims_to_process = 0;
                     stopsim(1);
                 } else {
                     if (sims_left <= num_games) {
                         echo = 'No losses found after ' + games + ' games. No debug output to display.<br><br>';
                         sims_left = 0;
-                        sims_to_process = 0;
                     } else {
                         echo = ' ';
                     }
@@ -254,13 +242,11 @@ if (use_workers) {
                     echo += '<br><br>';
                     found_loss = true;
                     sims_left = 0;
-                    sims_to_process = 0;
                     stopsim(1);
                 } else {
                     if (sims_left <= num_games) {
                         echo = 'No wins found after ' + games + ' games. No debug output to display.<br><br>';
                         sims_left = 0;
-                        sims_to_process = 0;
                     } else {
                         echo = ' ';
                     }
@@ -274,7 +260,6 @@ if (use_workers) {
     // Display the results of a regular debug simulation
     var display_debug_results = function (win, draw) {
         sims_left = 0;
-        sims_to_process = 0;
         time_stop = new Date().getTime();
 
         if (win) {
@@ -294,6 +279,10 @@ if (use_workers) {
 
     // Display the final results after a simulation loop has completed
     var display_final_results = function () {
+        for (var i = 0; i < max_workers; i++) {
+            workers[i].terminate();
+        }
+
         time_stop = new Date().getTime();
 
         var elapse = time_elapsed();
@@ -318,6 +307,10 @@ if (use_workers) {
 
     // Initialize simulation loop - runs once per simulation session
     var startsim = function (autostart) {
+        for (var i = 0; i < max_workers; i++) {
+            workers[i] = createWorker(i);
+        }
+
         orders = {};
 
         if (typeof (Worker) === "undefined") {
@@ -345,7 +338,6 @@ if (use_workers) {
         num_sims = document.getElementById('sims').value;
         if (!num_sims) num_sims = 1;
         sims_left = num_sims;
-        sims_to_process = num_sims;
         var d = document.getElementById('user_controlled');
         if (d) {
             user_controlled = d.checked;
@@ -459,8 +451,11 @@ if (use_workers) {
 
     // Interrupt simulations
     var stopsim = function (supress_output) {
+        for (var i = 0; i < max_workers; i++) {
+            workers[i].terminate();
+        }
+
         sims_left = 0;
-        sims_to_process = 0;
         time_stop = new Date().getTime();
         var elapse = time_elapsed();
         var simpersec = games / elapse;
@@ -489,46 +484,20 @@ if (use_workers) {
     var run_sims = function (worker_id, batch_size, time_started) {
         if (debug && !mass_debug && !loss_debug && !win_debug) {
             workers[0].postMessage({ 'cmd': 'run_sims' });
-
         } else {
-            var simpersecbatch = 2500;
-            if (batch_size > 0) { // batch_size == 0 means a fresh set of simulations
-                var temp = games / (num_sims) * 100;
-                temp = temp.toFixed(1);
-
-                var elapse = time_elapsed();
-
-                var batch_elapse = batch_time_elapsed(time_started);
-                if (batch_elapse == 0) {
-                    simpersecbatch = 0;
-                } else {
-                    simpersecbatch = batch_size / batch_elapse;
-                }
-            }
-            var new_batch_size = (worker_id ? 1 : max_workers);
-            if (simpersecbatch > new_batch_size) // If we can run more at one time, then let's try to
-                new_batch_size = Math.ceil(simpersecbatch * max_workers / 10);
-            if (new_batch_size > sims_to_process) // Also limit by how many sims are left
-                new_batch_size = sims_to_process;
-
             time_start_batch = new Date().getTime();
 
-            if (worker_id !== undefined) {
-                workers[worker_id].postMessage({ 'cmd': 'new_batch', 'data': [new_batch_size, time_start_batch] });
-            } else {
-                var sims_per_worker = Math.floor(new_batch_size / max_workers);
-                var remainingSims = new_batch_size - (sims_per_worker * max_workers);
-                var worker_index = 0;
-                for (; worker_index < remainingSims; worker_index++) {  // Start a new batch
-                    workers[worker_index].postMessage({ 'cmd': 'run_sims', 'data': [sims_per_worker + 1, time_start_batch] });
-                }
-                if (sims_per_worker) {
-                    for (; worker_index < max_workers; worker_index++) {  // Start a new batch
-                        workers[worker_index].postMessage({ 'cmd': 'run_sims', 'data': [sims_per_worker, time_start_batch] });
-                    }
+            var sims_per_worker = Math.floor(num_sims / max_workers);
+            var remainingSims = num_sims - (sims_per_worker * max_workers);
+            var worker_index = 0;
+            for (; worker_index < remainingSims; worker_index++) {  // Start a new batch
+                workers[worker_index].postMessage({ 'cmd': 'run_sims', 'data': [sims_per_worker + 1, time_start_batch] });
+            }
+            if (sims_per_worker) {
+                for (; worker_index < max_workers; worker_index++) {  // Start a new batch
+                    workers[worker_index].postMessage({ 'cmd': 'run_sims', 'data': [sims_per_worker, time_start_batch] });
                 }
             }
-            sims_to_process -= new_batch_size;
         }
     }
 

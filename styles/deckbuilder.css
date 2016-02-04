@@ -54,6 +54,26 @@ input[type="button"].selected {
     background: grey;
 }
 
+.tooltip {
+    display: none;
+}
+
+input[type="image"]:hover + .tooltip,
+.tooltip:hover {
+    display: block;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 25px;
+    overflow: visible;
+    color: grey;
+    border: 1px solid grey;
+    font-size: 12px;
+    padding: 2px;
+    white-space: nowrap;
+    z-index: 9999;
+}
+
 input[type="button"].delay-filter {
     background-image: url('../res/cardAssets/Timer.png');
     background-size: contain;
@@ -90,6 +110,8 @@ input[type="button"].attack-filter {
     display: inline;
     padding: 2px;
     margin: 0;
+    min-height: 32px;
+    vertical-align: top;
 }
 
 .dialog-form {
@@ -99,10 +121,6 @@ input[type="button"].attack-filter {
     .dialog-form label {
         display: block;
         width: 100%;
-    }
-
-    .dialog-form div {
-        width: initial;
     }
 
     .dialog-form input[type=number] {
@@ -130,6 +148,11 @@ input[type="button"].attack-filter {
     .dialog-form select {
         width: 100%;
     }
+
+        .dialog-form div.split {
+            width: 50%;
+            float: left;
+        }
 
     .dialog-form #upgrade {
         width: initial,;

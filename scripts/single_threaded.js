@@ -153,10 +153,10 @@ if (!use_workers) {
     var run_sims = function () {
 
         if (debug && !mass_debug && !loss_debug && !win_debug) {
-            run_sim();
+            run_sim(true);
             debug_end();
         } else if (user_controlled) {
-            run_sim();
+            run_sim(true);
             debug_end();
         } else if (sims_left > 0) {
             // Interval output - speeds up simulations
@@ -219,10 +219,10 @@ if (!use_workers) {
 
     // Initializes a single simulation - runs once before each individual simulation
     // - needs to reset the decks and fields before each simulation
-    var run_sim = function () {
+    var run_sim = function (skipResults) {
         doSetup();
         if (!simulate()) return false;
-        processSimResult();
+        if (!skipResults) processSimResult();
     }
 
     function doSetup() {

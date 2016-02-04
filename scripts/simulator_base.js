@@ -734,11 +734,19 @@ if (simulator_thread) {
             }
 
             for (var key = 0, len = targets.length; key < len; key++) {
+
                 var target = field_p_assaults[targets[key]];
-                target.attack_rally += rally;
+
+                var rally_amt = rally;
+                if (!rally_amt) {
+                    var mult = skill.mult;
+                    rally_amt = Math.ceil(target.attack * mult);
+                }
+
+                target.attack_rally += rally_amt;
                 if (debug) {
                     if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
-                    echo += debug_name(src_card) + ' empowers ' + debug_name(target) + ' by ' + rally + '<br>';
+                    echo += debug_name(src_card) + ' empowers ' + debug_name(target) + ' by ' + rally_amt + '<br>';
                 }
             }
         },
@@ -1528,9 +1536,25 @@ if (simulator_thread) {
     var CalculatePoints = function () {
         var commander = field.player.commander;
         var assaults = field.player.assaults;
-        for (var i = 0, len = assaults.length; i < len; i++) {
-            var assault = assaults[i];
-            health_lost += (assault.health - assault.health_left);
+        // If we have uids, just iterate through those
+        if (field.uids) {
+            health_lost = 0;
+            for (var i in field.uids) {
+                var assault = field.uids[i];
+                if (assault.owner == "player") {
+                    // Bug 29445 - Overkill damage is counted
+                    /*if (assault.health_left <= 0) {
+                        health_lost += assault.health;
+                    } else */{
+                        health_lost += (assault.health - assault.health_left);
+                    }
+                }
+            }
+        } else {
+            for (var i = 0, len = assaults.length; i < len; i++) {
+                var assault = assaults[i];
+                health_lost += (assault.health - assault.health_left);
+            }
         }
         health_lost += (commander.health - commander.health_left);
         var pointsLost = Math.floor((100 * health_lost / totalDeckHealth) / 5);

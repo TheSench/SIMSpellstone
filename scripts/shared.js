@@ -479,6 +479,7 @@ var MakeBattleground = (function () {
     Battleground.prototype = {
         p: null,
         name: null,
+        runes: [],
 
         //Card ID is ...
         isCommander: function () {
@@ -905,6 +906,10 @@ var multiplierChars = "_*.'";
 var runeDelimiter = "/";
 var indexDelimiter = '-';
 var priorityDelimiter = '|';
+var towers = {
+    601: true,
+    602: true
+};
 
 function base64triplet_to_unitInfo(triplet) {
 
@@ -915,11 +920,6 @@ function base64triplet_to_unitInfo(triplet) {
     dec1 = Math.floor(dec1 / 7);
     var fusion = (dec1 % 3) * 10000;
     dec1 = Math.floor(dec1 / 3) * 4096;
-
-    if (towers[baseID]) {
-        var level = level + fusion * 3;
-        fusion = 1;
-    }
 
     var dec2 = base64chars.indexOf(triplet[1]) * 64;
     var dec3 = base64chars.indexOf(triplet[2]);
@@ -934,10 +934,6 @@ function base64triplet_to_unitInfo(triplet) {
     return makeUnitInfo(id, level);
 }
 
-var towers = {
-    601: true,
-    602: true
-};
 function unitInfo_to_base64triplet(unit_info) {
 
     var baseID = parseInt(unit_info.id);

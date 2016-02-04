@@ -26,7 +26,7 @@ void Main()
 	Normalize(Path.Combine("cards.xml"), downloadFiles);
 	Normalize(Path.Combine("missions.xml"), downloadFiles);
 	Normalize(Path.Combine("fusion_recipes_cj2.xml"), downloadFiles);
-//	Normalize(Path.Combine("levels.xml"), downloadFiles);
+	Normalize(Path.Combine("levels.xml"), downloadFiles);
 
 	g_unitIDs = new HashSet<string>();
 	xmlFile = Path.Combine(path, "cards.xml");
@@ -81,13 +81,11 @@ void Main()
 
 	xmlFile = Path.Combine(path, "fusion_recipes_cj2.xml");
 	doc = XDocument.Load(xmlFile);
-	var fusions = doc.Descendants("mission").Select(node => new mission()
+	var fusions = doc.Descendants("fusion_recipe").Select(node => new fusionRecipe()
 	{
-		id = node.Element("id").Value,
-		name = node.Element("name").Value,
-		commander = node.Element("commander").Attribute("id").Value,
-		deck = node.Element("deck").Elements("card").Select(card => card.Attribute("id").Value).ToArray()
-	}).OrderBy(m => m.id);
+		fusedCardID = node.Element("card_id").Value,
+		baseCardID = node.Element("resource").Attribute("card_id").Value,
+	}).OrderBy(f => f.baseCardID);
 
 	var file = new FileInfo(Path.Combine(path, "cache.js"));
 	using (var writer = file.CreateText())
@@ -113,6 +111,10 @@ void Main()
 			writer.WriteLine("    ]");
 			writer.WriteLine("  },");
 		}
+		writer.WriteLine("};");
+		
+		writer.WriteLine("var FUSIONS = {");
+		writer.WriteLine(String.Join(",\r\n", fusions.Select(f => f.ToString())));
 		writer.WriteLine("};");
 
 		writer.WriteLine("var ACHIEVEMENTS = [];");
@@ -287,6 +289,30 @@ battleground[] battlegrounds = new battleground[] {
 				mult = "0.2",
 				Base = "attack",
 				y = ((int)FactionIDs.Undead).ToString(),
+			},
+		},
+	},
+	new battleground {
+		Name = "Angelic Legion",
+		ID = "106",
+		Effects = new add_skill[] {
+			new add_skill() {
+				id = "legion",
+				mult = "1",
+				Base = "rarity",
+				y = ((int)FactionIDs.Angel).ToString(),
+			},
+		},
+	},
+	new battleground {
+		Name = "Elemental Surge",
+		ID = "105",
+		Effects = new skill[] {
+			new skill() {
+				id = "rally",
+				mult = "0.2",
+				y = ((int)FactionIDs.Elemental).ToString(),
+				all = "1",
 			},
 		},
 	},
@@ -775,6 +801,17 @@ public partial class mission
 	public string name { get; set; }
 	public string commander { get; set; }
 	public string[] deck { get; set; }
+}
+
+public partial class fusionRecipe
+{
+	public string baseCardID;
+	public string fusedCardID;
+
+	public override string ToString()
+	{
+		return "  \"" + baseCardID + "\" : \"" + fusedCardID + "\"";
+	}
 }
 
 private static void AppendEntry(StringBuilder sb, string name, string value, string tabs)

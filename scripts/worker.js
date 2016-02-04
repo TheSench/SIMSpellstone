@@ -11,15 +11,6 @@ self.addEventListener('message', ProcessMessage, false);
 function ProcessMessage(e) {
 	var msg = e.data;
 	switch (msg.cmd) {
-		case 'new_batch':
-			if (running) {
-				var data = msg.data;
-				sims_left = data[0];
-				time_start_batch = data[1];
-				run_sims();
-			}
-			break;
-
 		case 'run_sims':
 			var data = msg.data;
 			if (data) {
@@ -28,12 +19,8 @@ function ProcessMessage(e) {
 			} else {
 				sims_left = 1;
 			}
-			run_sims();
+			runBatches();
 			running = true;
-			break;
-
-		case 'stopsim':
-			stopsim();
 			break;
 
 		case 'initializeWorker':
@@ -346,6 +333,38 @@ function processSimResult() {
     if (sims_left > 0) sims_left--;
 }
 
+function runBatches() {
+
+    var total_remaining = sims_left;
+    var batch_size = 0;
+    var time_start_batch;
+    var elapsed;
+
+    while (total_remaining) {
+        if (batch_size > 0) { // batch_size == 0 means a fresh set of simulations
+            if (elapsed == 0) {
+                batch_size = 1;
+            } else {
+                batch_size = Math.ceil(batch_size / elapsed);
+            }
+        } else {
+            batch_size = 2500;
+        }
+        if (batch_size > total_remaining) // Limit by how many sims are left
+            batch_size = total_remaining;
+
+        sims_left = batch_size;
+        total_remaining -= batch_size;
+
+        time_start = new Date().getTime();
+        run_sims();
+        elapsed = (new Date().getTime() - time_start) / 1000;
+
+        if (trackStats) returnStats();
+        returnResults();
+    }
+}
+
 // Initialize simulation loop - runs once per simulation batch
 function run_sims() {
     total_turns = 0;
@@ -361,8 +380,6 @@ function run_sims() {
 	while (sims_left) {
 	    run_sim();
 	}
-	if (trackStats) returnStats();
-	returnResults();
 }
 
 // Global variables used by worker-threads to run simulations

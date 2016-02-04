@@ -158,14 +158,11 @@ function nextEvolution(isFirst) {
                 if (getAverage(attacker) > getAverage(best)) best = attacker;
             }
         }
-    }
-    if (best) {
         var attacker = DeckRetriever.allDecks[best];
-        var defender;
     } else {
         var attacker = checkForSpecifiedAttacker();
-        var defender = checkForSpecifiedDefender();
     }
+    var defender = checkForSpecifiedDefender();
 
     // Remove previous winrate table
     document.getElementById("results_table").innerHTML = '';
@@ -197,6 +194,7 @@ function nextEvolution(isFirst) {
 
     extraCards.splice(0, 1);
 
+    // Only set up defenders once
     if (defender) {
         var defenderKey = 'defender';
         defenderKeys.push(defenderKey);
