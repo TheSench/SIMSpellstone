@@ -37,7 +37,10 @@ function ProcessMessage(e) {
 	};
 }
 
-var setDeckCaches;
+var setDeckCaches = function () {
+    cache_player_deck_cards = getDeckCards(cache_player_deck);
+    cache_cpu_deck_cards = getDeckCards(cache_cpu_deck);
+};
 
 function doSetupField(jsonText) {
     var cachedField = JSON.parse(jsonText);
@@ -79,6 +82,8 @@ function doSetupField(jsonText) {
             var uid = originalAssaults[i].uid;
             copyAssaults.push(uids[uid]);
         }
+
+        return copy_field;
     }
 
     setDeckCaches = function () {
@@ -95,8 +100,11 @@ function doSetupField(jsonText) {
         for (var key in assaults) {
             var card = assaults[key];
             if (card.owner != p || card.played) continue;
-            if (card.isCommander()) continue;
-            deck_cache.deck.push(card);
+            if (card.isCommander()) {
+                deck_cache.commander = card;
+            } else {
+                deck_cache.deck.push(card);
+            }
         }
         if (p == 'player') {
             cache_player_deck_cards = deck_cache;
@@ -105,7 +113,7 @@ function doSetupField(jsonText) {
         }
     }
 
-    //setDeckCaches();
+    cachedField = setupField({});
 }
 
 function copyCard(card) {
@@ -191,8 +199,7 @@ function initializeSims(params) {
 	    }
 	}
 
-	cache_player_deck_cards = getDeckCards(cache_player_deck);
-	cache_cpu_deck_cards = getDeckCards(cache_cpu_deck);
+	setDeckCaches();
 
 	totalDeckHealth = 0;
 	for (var i = 0; i < cache_player_deck_cards.deck.length; i++) {

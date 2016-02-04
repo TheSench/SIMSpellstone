@@ -459,8 +459,8 @@ if (use_workers) {
         params['user_controlled'] = user_controlled;
         params['trackStats'] = trackStats;
         for (var i = 0; i < max_workers; i++) {
-            workers[i].postMessage({ 'cmd': 'initializeSims', 'data': params });
             setupWorkerField(workers[i]);
+            workers[i].postMessage({ 'cmd': 'initializeSims', 'data': params });
         }
 
         current_timeout = setTimeout(display_progress, 100);
