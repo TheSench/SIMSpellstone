@@ -11020,6 +11020,128 @@
     </upgrade>
   </unit>
   <unit>
+    <id>5036</id>
+    <card_type>2</card_type>
+    <name>Winter Tail</name>
+    <picture>Fox_Spirit_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <attack>1</attack>
+    <health>7</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="1" y="7" />
+    <skill id="heal" x="1" y="1" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="rally" x="1" y="7" />
+      <skill id="heal" x="2" y="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>8</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>2</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="rally" x="1" all="1" y="7" />
+      <skill id="heal" x="2" y="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15036</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Spring Tail</name>
+    <picture>Fox_Spirit_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <attack>2</attack>
+    <health>10</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="1" all="1" y="7" />
+    <skill id="heal" x="2" y="1" />
+    <skill id="jam" c="6" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="rally" x="1" all="1" y="7" />
+      <skill id="heal" x="2" y="1" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>14</health>
+      <attack>3</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25036</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Summer Tail</name>
+    <picture>Fox_Spirit_B</picture>
+    <asset_bundle>43</asset_bundle>
+    <attack>3</attack>
+    <health>16</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="1" all="1" y="7" />
+    <skill id="heal" x="3" y="1" />
+    <skill id="jam" c="5" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="rally" x="1" all="1" y="7" />
+      <skill id="heal" x="3" y="1" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>19</health>
+      <skill id="rally" x="1" all="1" y="7" />
+      <skill id="heal" x="4" y="1" />
+      <skill id="jam" c="4" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>5037</id>
     <card_type>2</card_type>
     <name>Dauntless Baneblade</name>
@@ -15397,6 +15519,118 @@
       <skill id="legion" x="4" y="2" />
       <skill id="burn" x="4" />
       <skill id="weaken" x="2" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6036</id>
+    <card_type>2</card_type>
+    <name>Cursed Ogre</name>
+    <picture>Void_Ogre_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <attack>3</attack>
+    <health>19</health>
+    <cost>4</cost>
+    <rarity>3</rarity>
+    <skill id="fervor" x="1" y="2" />
+    <skill id="strike" x="1" all="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="fervor" x="1" y="2" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16036</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Plaguecursed Ogre</name>
+    <picture>Void_Ogre_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <attack>4</attack>
+    <health>23</health>
+    <cost>4</cost>
+    <rarity>3</rarity>
+    <skill id="fervor" x="2" y="2" />
+    <skill id="strike" x="1" all="1" />
+    <skill id="berserk" x="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>27</health>
+      <skill id="fervor" x="2" y="2" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="fervor" x="2" y="2" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26036</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Deathcursed Ogre</name>
+    <picture>Void_Ogre_B</picture>
+    <asset_bundle>43</asset_bundle>
+    <attack>5</attack>
+    <health>29</health>
+    <cost>4</cost>
+    <rarity>3</rarity>
+    <skill id="fervor" x="2" y="2" />
+    <skill id="strike" x="3" all="1" />
+    <skill id="berserk" x="2" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="fervor" x="3" y="2" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>32</health>
+      <skill id="fervor" x="3" y="2" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="berserk" x="3" />
     </upgrade>
   </unit>
   <unit>
@@ -19793,6 +20027,133 @@
     </upgrade>
   </unit>
   <unit>
+    <id>7036</id>
+    <card_type>2</card_type>
+    <name>Deepwood Corpse</name>
+    <picture>Woodland_Ranger_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <attack>3</attack>
+    <health>6</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="fervor" x="1" y="7" />
+    <skill id="enfeeble" x="1" />
+    <skill id="pierce" x="2" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>7</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>8</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="fervor" x="1" y="7" />
+      <skill id="enfeeble" x="1" />
+      <skill id="pierce" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>9</health>
+      <skill id="fervor" x="1" y="7" />
+      <skill id="enfeeble" x="2" />
+      <skill id="pierce" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17036</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Deepwood Dead</name>
+    <picture>Woodland_Ranger_A</picture>
+    <asset_bundle>43</asset_bundle>
+    <attack>4</attack>
+    <health>11</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="fervor" x="1" y="7" />
+    <skill id="enfeeble" x="2" />
+    <skill id="pierce" x="3" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="fervor" x="1" y="7" />
+      <skill id="enfeeble" x="2" />
+      <skill id="pierce" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="fervor" x="2" y="7" />
+      <skill id="enfeeble" x="2" />
+      <skill id="pierce" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27036</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Deepwood Zombie</name>
+    <picture>Woodland_Ranger_B</picture>
+    <asset_bundle>43</asset_bundle>
+    <attack>5</attack>
+    <health>14</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="fervor" x="2" y="7" />
+    <skill id="enfeeble" x="2" />
+    <skill id="pierce" x="4" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>17</health>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="fervor" x="2" y="7" />
+      <skill id="enfeeble" x="3" />
+      <skill id="pierce" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="fervor" x="3" y="7" />
+      <skill id="enfeeble" x="3" />
+      <skill id="pierce" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>7037</id>
     <card_type>2</card_type>
     <name>Bane</name>
@@ -21461,6 +21822,690 @@
       <skill id="enfeeble" x="2" all="1" />
       <skill id="strike" x="3" all="1" />
       <skill id="leech" x="8" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8011</id>
+    <card_type>2</card_type>
+    <name>Nether Soldiers</name>
+    <picture>Undead_Soldiers_B</picture>
+    <asset_bundle>38</asset_bundle>
+    <attack>2</attack>
+    <health>12</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="pierce" x="3" />
+    <skill id="berserk" x="1" />
+    <skill id="flurry" c="9" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="pierce" x="3" />
+      <skill id="berserk" x="1" />
+      <skill id="flurry" c="8" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>13</health>
+      <skill id="pierce" x="3" />
+      <skill id="berserk" x="1" />
+      <skill id="flurry" c="7" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>14</health>
+      <skill id="pierce" x="4" />
+      <skill id="berserk" x="1" />
+      <skill id="flurry" c="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>15</health>
+      <attack>3</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>16</health>
+      <skill id="pierce" x="4" />
+      <skill id="berserk" x="1" />
+      <skill id="flurry" c="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>18011</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Nether Soldiers</name>
+    <picture>Undead_Soldiers_B</picture>
+    <asset_bundle>38</asset_bundle>
+    <attack>3</attack>
+    <health>17</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="pierce" x="4" />
+    <skill id="berserk" x="1" />
+    <skill id="flurry" c="6" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+      <skill id="pierce" x="5" />
+      <skill id="berserk" x="1" />
+      <skill id="flurry" c="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>4</attack>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="pierce" x="5" />
+      <skill id="berserk" x="2" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>20</health>
+      <skill id="pierce" x="6" />
+      <skill id="berserk" x="2" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>21</health>
+      <skill id="pierce" x="6" />
+      <skill id="berserk" x="2" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>28011</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Nether Soldiers</name>
+    <picture>Undead_Soldiers_B</picture>
+    <asset_bundle>38</asset_bundle>
+    <attack>5</attack>
+    <health>21</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="pierce" x="6" />
+    <skill id="berserk" x="2" />
+    <skill id="flurry" c="4" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>22</health>
+      <skill id="pierce" x="7" />
+      <skill id="berserk" x="2" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>23</health>
+      <skill id="pierce" x="7" />
+      <skill id="berserk" x="2" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>24</health>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>25</health>
+      <skill id="pierce" x="8" />
+      <skill id="berserk" x="2" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>26</health>
+      <skill id="pierce" x="8" />
+      <skill id="berserk" x="3" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8012</id>
+    <card_type>2</card_type>
+    <name>Nether Warrior</name>
+    <picture>Skeleton_Warrior_C</picture>
+    <asset_bundle>9</asset_bundle>
+    <attack>5</attack>
+    <health>19</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="legion" x="2" y="7" />
+    <skill id="fervor" x="1" y="7" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>21</health>
+      <skill id="evade" x="1" />
+      <skill id="legion" x="3" y="7" />
+      <skill id="fervor" x="1" y="7" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>23</health>
+      <skill id="evade" x="2" />
+      <skill id="legion" x="3" y="7" />
+      <skill id="fervor" x="1" y="7" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>24</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>18012</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Nether Warrior</name>
+    <picture>Skeleton_Warrior_C</picture>
+    <asset_bundle>9</asset_bundle>
+    <attack>5</attack>
+    <health>25</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="legion" x="3" y="7" />
+    <skill id="fervor" x="2" y="7" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>26</health>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="2" />
+      <skill id="legion" x="4" y="7" />
+      <skill id="fervor" x="2" y="7" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>27</health>
+      <skill id="evade" x="3" />
+      <skill id="legion" x="4" y="7" />
+      <skill id="fervor" x="2" y="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>28</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>29</health>
+      <skill id="evade" x="3" />
+      <skill id="legion" x="4" y="7" />
+      <skill id="fervor" x="3" y="7" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>28012</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Nether Warrior</name>
+    <picture>Skeleton_Warrior_C</picture>
+    <asset_bundle>9</asset_bundle>
+    <attack>6</attack>
+    <health>30</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="3" />
+    <skill id="legion" x="5" y="7" />
+    <skill id="fervor" x="3" y="7" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>32</health>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>33</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>34</health>
+      <skill id="evade" x="4" />
+      <skill id="legion" x="5" y="7" />
+      <skill id="fervor" x="3" y="7" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="4" />
+      <skill id="legion" x="6" y="7" />
+      <skill id="fervor" x="4" y="7" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8013</id>
+    <card_type>2</card_type>
+    <name>Nether Brute</name>
+    <picture>Undead_Brute_C</picture>
+    <asset_bundle>9</asset_bundle>
+    <attack>5</attack>
+    <health>24</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="1" />
+    <skill id="counter" x="1" />
+    <skill id="strike" x="1" all="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>26</health>
+      <skill id="armored" x="2" />
+      <skill id="counter" x="1" />
+      <skill id="strike" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>27</health>
+      <skill id="armored" x="2" />
+      <skill id="counter" x="2" />
+      <skill id="strike" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>28</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>29</health>
+      <skill id="armored" x="2" />
+      <skill id="counter" x="2" />
+      <skill id="strike" x="2" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>18013</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Nether Brute</name>
+    <picture>Undead_Brute_C</picture>
+    <asset_bundle>9</asset_bundle>
+    <attack>5</attack>
+    <health>30</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="3" />
+    <skill id="counter" x="2" />
+    <skill id="strike" x="2" all="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>32</health>
+      <skill id="armored" x="3" />
+      <skill id="counter" x="3" />
+      <skill id="strike" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>33</health>
+      <skill id="armored" x="3" />
+      <skill id="counter" x="3" />
+      <skill id="strike" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>34</health>
+      <skill id="armored" x="4" />
+      <skill id="counter" x="3" />
+      <skill id="strike" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>35</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>28013</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Nether Brute</name>
+    <picture>Undead_Brute_C</picture>
+    <asset_bundle>9</asset_bundle>
+    <attack>5</attack>
+    <health>36</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="4" />
+    <skill id="counter" x="4" />
+    <skill id="strike" x="3" all="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>37</health>
+      <skill id="armored" x="4" />
+      <skill id="counter" x="4" />
+      <skill id="strike" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>38</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>39</health>
+      <skill id="armored" x="5" />
+      <skill id="counter" x="4" />
+      <skill id="strike" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>40</health>
+      <skill id="armored" x="5" />
+      <skill id="counter" x="5" />
+      <skill id="strike" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>42</health>
+      <skill id="armored" x="5" />
+      <skill id="counter" x="5" />
+      <skill id="strike" x="5" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8014</id>
+    <card_type>2</card_type>
+    <name>Nether Hound</name>
+    <picture>Skeleton_Hound_B</picture>
+    <asset_bundle>11</asset_bundle>
+    <attack>3</attack>
+    <health>9</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="burn" x="1" />
+    <skill id="leech" x="2" />
+    <skill id="berserk" x="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="burn" x="1" />
+      <skill id="leech" x="3" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>12</health>
+      <skill id="burn" x="2" />
+      <skill id="leech" x="3" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>18014</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Nether Hound</name>
+    <picture>Skeleton_Hound_B</picture>
+    <asset_bundle>11</asset_bundle>
+    <attack>4</attack>
+    <health>13</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="burn" x="2" />
+    <skill id="leech" x="3" />
+    <skill id="berserk" x="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="burn" x="2" />
+      <skill id="leech" x="4" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>15</health>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="burn" x="3" />
+      <skill id="leech" x="4" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>28014</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Nether Hound</name>
+    <picture>Skeleton_Hound_B</picture>
+    <asset_bundle>11</asset_bundle>
+    <attack>5</attack>
+    <health>16</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="burn" x="3" />
+    <skill id="leech" x="5" />
+    <skill id="berserk" x="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="burn" x="4" />
+      <skill id="leech" x="5" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="burn" x="4" />
+      <skill id="leech" x="6" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8015</id>
+    <card_type>2</card_type>
+    <name>Nether Wraith</name>
+    <picture>Wraith_B</picture>
+    <asset_bundle>11</asset_bundle>
+    <attack>4</attack>
+    <health>12</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="frost" x="1" />
+    <skill id="frost" x="1" />
+    <skill id="weaken" x="1" all="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>5</attack>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="frost" x="1" />
+      <skill id="frost" x="1" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>18015</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Nether Wraith</name>
+    <picture>Wraith_B</picture>
+    <asset_bundle>11</asset_bundle>
+    <attack>5</attack>
+    <health>17</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="frost" x="1" />
+    <skill id="frost" x="1" />
+    <skill id="weaken" x="2" all="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+      <skill id="frost" x="2" />
+      <skill id="frost" x="1" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="frost" x="2" />
+      <skill id="frost" x="2" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>20</health>
+      <skill id="frost" x="2" />
+      <skill id="frost" x="2" />
+      <skill id="weaken" x="3" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>28015</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Nether Wraith</name>
+    <picture>Wraith_B</picture>
+    <asset_bundle>11</asset_bundle>
+    <attack>6</attack>
+    <health>21</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="frost" x="2" />
+    <skill id="frost" x="2" />
+    <skill id="weaken" x="3" all="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>23</health>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="frost" x="2" />
+      <skill id="frost" x="2" />
+      <skill id="weaken" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="frost" x="3" />
+      <skill id="frost" x="3" />
+      <skill id="weaken" x="4" all="1" />
     </upgrade>
   </unit>
   <!-- END SET 8000 - Story Element Assaults -->
@@ -28653,6 +29698,60 @@
   </unit>
   <!-- END Event 7 Heroes -->
   <!-- END Event 6 Heroes -->
+  <!-- START Nethergore Raid Boss -->
+  <unit>
+    <id>279</id>
+    <card_type>1</card_type>
+    <name>Nethergore</name>
+    <portrait>nethergore</portrait>
+    <asset_bundle>42</asset_bundle>
+    <attack>0</attack>
+    <health>30</health>
+    <rarity>5</rarity>
+    <skill id="enhance" x="1" s="berserk" />
+    <skill id="heal" x="1" all="1" y="7" />
+    <skill id="enfeeble" x="1" all="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>38</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>46</health>
+      <skill id="enhance" x="1" s="berserk" />
+      <skill id="heal" x="2" all="1" y="7" />
+      <skill id="enfeeble" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>55</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>63</health>
+      <skill id="enhance" x="1" s="berserk" />
+      <skill id="heal" x="2" all="1" y="7" />
+      <skill id="enfeeble" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>71</health>
+      <skill id="enhance" x="1" all="1" s="berserk" />
+      <skill id="heal" x="3" all="1" y="7" />
+      <skill id="enfeeble" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>80</health>
+      <skill id="enhance" x="2" all="1" s="berserk" />
+      <skill id="heal" x="3" all="1" y="7" />
+      <skill id="enfeeble" x="3" all="1" />
+    </upgrade>
+  </unit>
+  <!-- END Nethergore Raid Boss -->
   <!-- START AETHER Default Cards -->
   <!-- 
 	
