@@ -42,6 +42,14 @@ var setDeckCaches = function () {
     cache_cpu_deck_cards = getDeckCards(cache_cpu_deck);
 };
 
+var calculateTotalDeckHealth = function () {
+    totalDeckHealth = 0;
+    totalDeckHealth += cache_player_deck_cards.commander.health;
+    for (var i = 0; i < cache_player_deck_cards.deck.length; i++) {
+        totalDeckHealth += cache_player_deck_cards.deck[i].health;
+    }
+}
+
 function doSetupField(jsonText) {
     var cachedField = JSON.parse(jsonText);
 
@@ -54,36 +62,6 @@ function doSetupField(jsonText) {
             var copy = uids[uid];
             copyAssaults.push(copy);
         }
-    }
-
-    setupField = function (copy_field) {
-        copy_field.cpu = { assaults: [] };
-        copy_field.player = { assaults: [] };
-        copy_field.uids = {};
-
-        for (var i in cachedField.uids) {
-            copy_field.uids[i] = copyCard(cachedField.uids[i]);
-        }
-        copy_field.cpu.commander = copy_field.uids[-2];
-        copy_field.player.commander = copy_field.uids[-1];
-
-        var uids = copy_field.uids;
-
-        var originalAssaults = cachedField.player.assaults;
-        var copyAssaults = copy_field.player.assaults;
-        for (var i = 0; i < originalAssaults.length; i++) {
-            var uid = originalAssaults[i].uid;
-            copyAssaults.push(uids[uid]);
-        }
-
-        var originalAssaults = cachedField.cpu.assaults;
-        var copyAssaults = copy_field.cpu.assaults;
-        for (var i = 0; i < originalAssaults.length; i++) {
-            var uid = originalAssaults[i].uid;
-            copyAssaults.push(uids[uid]);
-        }
-
-        return copy_field;
     }
 
     setDeckCaches = function () {
@@ -113,7 +91,167 @@ function doSetupField(jsonText) {
         }
     }
 
-    cachedField = setupField({});
+    setupField = function (copy_field) {
+        copy_field.cpu = { assaults: [] };
+        copy_field.player = { assaults: [] };
+        copy_field.uids = {};
+
+        var cachedUids = cachedField.uids;
+        for (var i in cachedUids) {
+            var cachedInfo = cachedUids[i];
+            if (i < 0 || cachedInfo.played) {
+                var unit = makeUnitInfo(cachedInfo.id, cachedInfo.level, cachedInfo.runes);
+                var newCard = get_card_by_id(unit);
+                setStatuses(newCard, cachedInfo.statuses);
+                copy_field.uids[i] = newCard;
+            }
+        }
+        copy_field.cpu.commander = copy_field.uids[-2];
+        copy_field.player.commander = copy_field.uids[-1];
+
+        var uids = copy_field.uids;
+        var originalAssaults = cachedField.player.assaults;
+        var copyAssaults = copy_field.player.assaults;
+        for (var i = 0; i < originalAssaults.length; i++) {
+            var uid = originalAssaults[i].uid;
+            copyAssaults.push(uids[uid]);
+        }
+
+        var originalAssaults = cachedField.cpu.assaults;
+        var copyAssaults = copy_field.cpu.assaults;
+        for (var i = 0; i < originalAssaults.length; i++) {
+            var uid = originalAssaults[i].uid;
+            copyAssaults.push(uids[uid]);
+        }
+    };
+
+    calculateTotalDeckHealth = function ()
+    {
+        totalDeckHealth = 0;
+        for (var i in cachedField.uids) {
+            var card = cachedField.uids[i];
+            if (i >= -1 && i <= 15) {
+                totalDeckHealth += card.health;
+            }
+        }
+    }
+
+    cachedField = (function () {
+        var copy_field = {
+            cpu: { assaults: [] },
+            player: { assaults: [] },
+            uids: {},
+            statuses: {}
+        };
+
+        for (var i in cachedField.uids) {
+            var cached = cachedField.uids[i];
+            var copy = copyCard(cached);
+            copy_field.uids[i] = copy;
+            var statuses = {};
+            copy.statuses = statuses;
+            copyStatuses(cached, statuses);
+        }
+        copy_field.cpu.commander = copy_field.uids[-2];
+        copy_field.player.commander = copy_field.uids[-1];
+
+        var uids = copy_field.uids;
+
+        var originalAssaults = cachedField.player.assaults;
+        var copyAssaults = copy_field.player.assaults;
+        for (var i = 0; i < originalAssaults.length; i++) {
+            var uid = originalAssaults[i].uid;
+            copyAssaults.push(uids[uid]);
+        }
+
+        var originalAssaults = cachedField.cpu.assaults;
+        var copyAssaults = copy_field.cpu.assaults;
+        for (var i = 0; i < originalAssaults.length; i++) {
+            var uid = originalAssaults[i].uid;
+            copyAssaults.push(uids[uid]);
+        }
+
+        return copy_field;
+    })();
+}
+
+function setStatuses(card, statuses)
+{
+    var statusEffects = statuses.statusEffects;
+    for (var i = 0, len = statusEffects.length; i < len; i++)
+    {
+        var statusEffect = statusEffects[i];
+        card[statusEffect.key] = statusEffect.value;
+    }
+
+    if (statuses.flurry_timer) {
+        card.flurry.c = statuses.flurry_timer;
+    }
+    if(statuses.skillTimers)
+    {
+        setSkillTimers(card.skill, statuses.skillTimers);
+    }
+    if (statuses.empowerSkillTimers) {
+        setSkillTimers(card.empowerSkills, statuses.empowerSkillTimers);
+    }
+}
+
+function setSkillTimers(skills, skillTimers)
+{
+    for(var key in skillTimers)
+    {
+        skills[key].countdown = skillTimers[key];
+    }
+}
+
+function copyStatuses(card, statuses) {
+    var statusEffects = [];
+    if (card.health_left !== undefined) statusEffects.push({ key: "health_left", value: card.health_left });
+    if (card.timer !== undefined) statusEffects.push({ key: "timer", value: card.timer });
+    if (card.owner !== undefined) statusEffects.push({ key: "owner", value: card.owner });
+    if (card.played !== undefined) statusEffects.push({ key: "played", value: card.played });
+
+    if (card.attack_rally) statusEffects.push({ key: "attack_rally", value: card.attack_rally });
+    if (card.attack_weaken) statusEffects.push({ key: "attack_weaken", value: card.attack_weaken });
+    if (card.attack_berserk) statusEffects.push({ key: "attack_berserk", value: card.attack_berserk });
+    if (card.poisoned) statusEffects.push({ key: "poisoned", value: card.poisoned });
+    if (card.scorched) statusEffects.push({ key: "scorched", value: card.scorched });
+    if (card.enfeebled) statusEffects.push({ key: "enfeebled", value: card.enfeebled });
+    if (card.protected) statusEffects.push({ key: "protected", value: card.protected });
+    if (card.barrier_ice) statusEffects.push({ key: "barrier_ice", value: card.barrier_ice });
+    if (card.enhanced) statusEffects.push({ key: "enhanced", value: card.enhanced });
+    if (card.jammed) statusEffects.push({ key: "jammed", value: card.jammed });
+    if (card.key) statusEffects.push({ key: "key", value: card.key });
+    statuses.statusEffects = statusEffects;
+
+    if (card.flurry) {
+        statuses.flurry_timer = card.flurry.c;
+    }
+    // Other skills
+    if (!card.reusableSkills) {
+        var skillTimers = [];
+        if (copySkillTimers(card.skill, skillTimers))
+        {
+            statuses.skillTimers = skillTimers;
+        }
+        var skillTimers = [];
+        if (copySkillTimers(card.empowerSkills, skillTimers)) {
+            statuses.empowerSkillTimers = skillTimers;
+        }
+    }
+}
+
+function copySkillTimers(skills, skillTimers)
+{
+    var hasTimers = false;
+    for (var i = 0; i < skills.length; i++) {
+        var skill = skills[i];
+        if (skill.countdown) {
+            skillTimers[i] = skill.countdown;
+            hasTimers = true;
+        }
+    }
+    return hasTimers;
 }
 
 function copyCard(card) {
@@ -201,10 +339,7 @@ function initializeSims(params) {
 
 	setDeckCaches();
 
-	totalDeckHealth = 0;
-	for (var i = 0; i < cache_player_deck_cards.deck.length; i++) {
-	    totalDeckHealth += cache_player_deck_cards.deck[i].health;
-	}
+	calculateTotalDeckHealth();
 }
 
 var RESULTS = 0;
@@ -450,7 +585,7 @@ function runBatches() {
                 batch_size = Math.ceil(batch_size / elapsed);
             }
         } else {
-            batch_size = 2500;
+            batch_size = 1;
         }
         if (batch_size > total_remaining) // Limit by how many sims are left
             batch_size = total_remaining;

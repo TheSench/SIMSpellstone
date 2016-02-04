@@ -895,6 +895,7 @@ if (simulator_thread) {
         cache_player_deck_cards = getDeckCards(cache_player_deck);
 
         totalDeckHealth = 0;
+        totalDeckHealth += cache_player_deck_cards.commander.health;
         for(var i = 0; i < cache_player_deck_cards.deck.length; i++) {
             totalDeckHealth += cache_player_deck_cards.deck[i].health;
         }
@@ -1538,25 +1539,9 @@ if (simulator_thread) {
     var CalculatePoints = function () {
         var commander = field.player.commander;
         var assaults = field.player.assaults;
-        // If we have uids, just iterate through those
-        if (field.uids) {
-            health_lost = 0;
-            for (var i in field.uids) {
-                var assault = field.uids[i];
-                if (assault.owner == "player") {
-                    // Bug 29445 - Overkill damage is counted
-                    /*if (assault.health_left <= 0) {
-                        health_lost += assault.health;
-                    } else */{
-                        health_lost += (assault.health - assault.health_left);
-                    }
-                }
-            }
-        } else {
-            for (var i = 0, len = assaults.length; i < len; i++) {
-                var assault = assaults[i];
-                health_lost += (assault.health - assault.health_left);
-            }
+        for (var i = 0, len = assaults.length; i < len; i++) {
+            var assault = assaults[i];
+            health_lost += (assault.health - assault.health_left);
         }
         health_lost += (commander.health - commander.health_left);
         var pointsLost = Math.floor((100 * health_lost / totalDeckHealth) / 5);

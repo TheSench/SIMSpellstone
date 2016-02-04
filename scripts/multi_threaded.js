@@ -38,11 +38,11 @@ if (use_workers) {
     // by all browsers.)
     var ProcessTransferableObjectsMessage = function (e) {
         if (sims_left) {
-            progress = true;
             var msg = e.data;
             var view = new DataView(msg, 0, 4);
             switch (view.getInt32(0)) {
                 case RESULTS:
+                    progress = true;
                     view = new Int32Array(msg, 4, 6);
                     var num_games = view[0];
                     var num_wins = view[1];
@@ -201,7 +201,7 @@ if (use_workers) {
                     simpersecbatch = batch_size / batch_elapse;
                 }
                 simpersecbatch = simpersecbatch.toFixed(1);
-                if (suppressOutput && end_sims_callback) {
+                if (suppressOutput && end_sims_callback && !trackStats) {
                     outp(echo + '<strong>Running simulations...</strong> (' + games + '/' + (num_sims) + ') ' + percent_complete + '%<br>' + elapse + ' seconds<br>' + simpersecbatch + ' simulations per second<br>');
                 } else {
                     outp(echo + '<strong>Running simulations...</strong> (' + games + '/' + (num_sims) + ') ' + percent_complete + '%<br>' + elapse + ' seconds<br>' + simpersecbatch + ' simulations per second<br>' + gettable());
@@ -308,12 +308,8 @@ if (use_workers) {
         var simpersec = games / elapse;
         simpersec = simpersec.toFixed(1);
 
-        if (suppressOutput && end_sims_callback) {
-            if (trackStats) {
-                outp(echo + '<br><strong>Simulations complete.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>' + gettable() + getOrderStatsTable());
-            } else {
-                outp(echo + '<br><strong>Simulations complete.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>');
-            }
+        if (suppressOutput && end_sims_callback && !trackStats) {
+            outp(echo + '<br><strong>Simulations complete.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>');
         } else {
             outp(echo + '<br><strong>Simulations complete.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>' + gettable() + getOrderStatsTable());
         }
