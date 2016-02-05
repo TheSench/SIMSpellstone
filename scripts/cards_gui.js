@@ -159,7 +159,8 @@ function create_card_html(card, compactSkills, onField, onclick, onrightclick, s
         htmlCard.classList.add("commander");
     }
     htmlCard.classList.add(factions.names[card.type].toLowerCase());
-    var divName = createDiv("card-name", card.name);
+    var cardName = (card.uid !== undefined ? "(" + card.uid + ") " : "") + card.name;
+    var divName = createDiv("card-name", cardName);
     htmlCard.appendChild(divName);
     if (!card.isCommander()) {
         if (onField) {
