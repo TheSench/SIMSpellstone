@@ -633,6 +633,7 @@ function generate_link(autostart, autolink) {
     var getcardlist2 = document.getElementById('cardlist2').value;
     var getmission = document.getElementById('mission').value;
     var getraid = document.getElementById('raid').value;
+    var raidlevel = document.getElementById('raid_level').value;
 
     // Load player deck
     if (getdeck) {
@@ -800,11 +801,13 @@ function load_deck_builder(player) {
         var getcardlist = document.getElementById('cardlist').value;
         var getmission;
         var getraid;
+        var raidlevel;
     } else {
         var getdeck = document.getElementById('deck2').value;
         var getcardlist = document.getElementById('cardlist2').value;
         var getmission = document.getElementById('mission').value;
         var getraid = document.getElementById('raid').value;
+        var raidlevel = document.getElementById('raid_level').value;
     }
 
     // Load player deck
@@ -819,7 +822,7 @@ function load_deck_builder(player) {
     } else if (getmission) {
         deck = load_deck_mission(getmission);
     } else if (getraid) {
-        deck = load_deck_raid(getmission);
+        deck = load_deck_raid(getraid, raidlevel);
     }
     var hash;
     if (deck) {
@@ -965,6 +968,7 @@ var getexactorder = false;
 var getexactorder2 = false;
 var getmission = false;
 var getraid = false;
+var raidlevel = 0;
 var trackStats = false;
 var getbattleground = 0;
 var getsiege = 0;

@@ -908,7 +908,7 @@ if (simulator_thread) {
         } else if (getmission) {
             cache_cpu_deck = load_deck_mission(getmission);
         } else if (getraid) {
-            cache_cpu_deck = load_deck_raid(getraid);
+            cache_cpu_deck = load_deck_raid(getraid, raidlevel);
         } else {
             cache_cpu_deck = load_deck_from_cardlist();
         }

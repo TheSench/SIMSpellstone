@@ -1371,53 +1371,71 @@ function clean_name_for_matching(name) {
 }
 
 // Load mission deck
-function load_deck_mission(id) {
+function load_deck_mission(id, level) {
     var missionInfo = MISSIONS[id];
     if (missionInfo) {
-        return load_preset_deck(missionInfo);
+        return load_preset_deck(missionInfo, level, 7);
     } else {
         return 0;
     }
 }
 
-function load_deck_raid(id) {
-
+function load_deck_raid(id, level, maxLevel) {
+    if (!maxLevel) maxLevel = 25;
     var raidInfo = RAIDS[id];
     if (raidInfo) {
         var newRaidInfo = {
             commander: raidInfo.commander,
             deck: raidInfo.deck.card
         }
-        return load_preset_deck(newRaidInfo);
+        return load_preset_deck(newRaidInfo, level, maxLevel);
     } else {
         return 0;
     }
 }
 
 var DoNotFuse = ["8005", "8006", "8007", "8008", "8009", "8010"];
-function load_preset_deck(deckInfo) {
+function load_preset_deck(deckInfo, level, maxLevel) {
+
+    if (!level) level = maxLevel;
 
     var current_deck = [];
     current_deck.deck = [];
-    current_deck.commander = makeUnitInfo(deckInfo.commander.id, 7);   // Set commander to max level
+    current_deck.commander = getPresetUnit(deckInfo.commander, level, maxLevel);   // Set commander to max level
     var presetDeck = deckInfo.deck;
     for (var current_key in presetDeck) {
-        var unit = presetDeck[current_key];
-        // For now, skip all cards that would be removed
-        if (unit.remove_mastery_level) continue;
-        // Upgrade all cards to max fusion/level
-        var cardID = unit.id;
-        if (DoNotFuse.indexOf(cardID) == -1) {
-            if (cardID.length > 4) {
-                cardID = '2' + cardID.substring(1);
-            } else {
-                cardID = '2' + cardID;
-            }
-        }
-        var unit = makeUnitInfo(cardID, 7);
-        current_deck.deck.push(unit);
+        var unitInfo = presetDeck[current_key];
+        var unit = getPresetUnit(unitInfo, level, maxLevel);
+        if(unit) current_deck.deck.push(unit);
     }
     return current_deck;
+}
+
+function getPresetUnit(unitInfo, level, maxLevel)
+{
+    if (level < unitInfo.mastery_level) return null;
+    if (level >= unitInfo.remove_mastery_level) return null;
+
+    var cardID = unitInfo.id;
+    var unitLevel = (unitInfo.level | 1);
+
+    if (level == maxLevel) {
+        unitLevel = 7;
+        cardID = fuseCard(cardID, "2");
+    }
+
+    return makeUnitInfo(cardID, unitLevel);
+}
+
+function fuseCard(cardID, fusion) {
+    if (!is_commander(cardID) && DoNotFuse.indexOf(cardID) == -1) {
+        if (cardID.length > 4) {
+            cardID = fusion + cardID.substring(1);
+        } else {
+            cardID = fusion + cardID;
+        }
+    }
+    return cardID;
 }
 
 // Output card array
