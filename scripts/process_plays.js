@@ -154,6 +154,7 @@
             commander = get_card_apply_battlegrounds(deck_player.commander);
             commander.health_left = commander.health;
             commander.owner = 'player';
+            commander.uid = -1;
             cachedField.player.commander = commander;
             cachedField.uids[-1] = commander;
 
@@ -162,6 +163,7 @@
             commander = get_card_apply_battlegrounds(deck_cpu.commander);
             commander.health_left = commander.health;
             commander.owner = 'cpu';
+            commander.uid = -2;
             cachedField.cpu.commander = commander;
             cachedField.uids[-2] = commander;
 
@@ -385,13 +387,13 @@
                     break;
 
                 case 'berserk':
-                    setStatus(action, 'attack_berserk');
+                    incrementField(action, 'attack_berserk');
                     break;
 
                 case 'fervor':
                 case 'rally':
                 case 'legion':
-                    setStatus(action, 'attack_rally');
+                    incrementField(action, 'attack_rally');
                     break;
 
                 case 'weaken':
@@ -460,6 +462,25 @@
         }
     }
 
+    function incrementField(action, statusName) {
+        var targets = action.target_values;
+        if (targets) {
+            for (var key in targets) {
+                var target = targets[key];
+                var card = cachedField.uids[target.t];
+                card[statusName] += target.x;
+            }
+        } else {
+            var value = action.value;
+            targets = action.targets;
+            for (var key in targets) {
+                var target = targets[key];
+                var card = cachedField.uids[target];
+                card[statusName] += value;
+            }
+        }
+    }
+
     function setStatus(action, statusName) {
         var targets = action.target_values;
         if (targets) {
@@ -474,7 +495,7 @@
             for (var key in targets) {
                 var target = targets[key];
                 var card = cachedField.uids[target];
-                card[statusName] += value;
+                card[statusName] = value;
             }
         }
     }
