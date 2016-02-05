@@ -1398,7 +1398,7 @@ var DoNotFuse = ["8005", "8006", "8007", "8008", "8009", "8010"];
 function load_preset_deck(deckInfo, level, maxLevel) {
 
     if (!level) level = maxLevel;
-    var upgradePoints = level * 7;
+    var upgradePoints = getUpgradePoints(level, 7);
 
     var current_deck = [];
     current_deck.deck = [];
@@ -1428,6 +1428,15 @@ function load_preset_deck(deckInfo, level, maxLevel) {
     }
 
     return current_deck;
+}
+
+function getUpgradePoints(level, pointsPer) {
+    var points = 0;
+    for (var i = 2; i <= level; i++) {
+        if (i % 3 == 0) pointsPer++;
+        points += pointsPer;
+    }
+    return points;
 }
 
 function getPresetUnit(unitInfo, level, maxLevel)
