@@ -1398,37 +1398,87 @@ var DoNotFuse = ["8005", "8006", "8007", "8008", "8009", "8010"];
 function load_preset_deck(deckInfo, level, maxLevel) {
 
     if (!level) level = maxLevel;
+    var upgradePoints = level * 7;
 
     var current_deck = [];
     current_deck.deck = [];
     current_deck.commander = getPresetUnit(deckInfo.commander, level, maxLevel);   // Set commander to max level
+    upgradePoints -= current_deck.commander.level - 1;
     var presetDeck = deckInfo.deck;
+
+    var deck = current_deck.deck;
     for (var current_key in presetDeck) {
         var unitInfo = presetDeck[current_key];
         var unit = getPresetUnit(unitInfo, level, maxLevel);
-        if(unit) current_deck.deck.push(unit);
+        if (unit) {
+            deck.push(unit);
+        }
     }
+
+    if (level > 1 && level < maxLevel) {
+        var canFuse = deck.slice();
+        while (upgradePoints > 0 && canFuse.length > 0) {
+            var index = Math.floor(Math.random() * canFuse.length);
+            if (upgradeCard(canFuse[index])) {
+                upgradePoints--;
+            } else {
+                canFuse.splice(index, 1);
+            }
+        }
+    }
+
     return current_deck;
 }
 
 function getPresetUnit(unitInfo, level, maxLevel)
 {
-    if (level < unitInfo.mastery_level) return null;
-    if (level >= unitInfo.remove_mastery_level) return null;
+    if (unitInfo.mastery_level && level < parseInt(unitInfo.mastery_level)) return null;
+    if (unitInfo.remove_mastery_level && level >= parseInt(unitInfo.remove_mastery_level)) return null;
 
     var cardID = unitInfo.id;
     var unitLevel = (unitInfo.level | 1);
 
-    if (level == maxLevel) {
+    if (level >= maxLevel) {
         unitLevel = 7;
-        cardID = fuseCard(cardID, "2");
+        if (canFuse(cardID)) {
+            cardID = fuseCard(cardID, "2");
+        }
+    } else if (level > 1 && is_commander(cardID)) {
+        unitLevel = Math.min(level, parseInt(CARDS[cardID].rarity) + 2);
     }
 
     return makeUnitInfo(cardID, unitLevel);
 }
 
+function upgradeCard(unitInfo) {
+    var maxLevel = (parseInt(CARDS[unitInfo.id].rarity) + 2);
+    if (unitInfo.level == maxLevel) {
+        if (canFuse(unitInfo.id)) {
+            unitInfo.id = fuseCard(unitInfo.id);
+            unitInfo.level = 1;
+        } else {
+            return false;
+        }
+    } else {
+        unitInfo.level++;
+    }
+    return true;
+}
+
+function canFuse(cardID) {
+    if (DoNotFuse.indexOf(cardID) > -1) {
+        return false;
+    } else if (is_commander(cardID)) {
+        return false;
+    } else if (cardID.length > 4) {
+        return parseInt(cardID[0]) < 2;
+    }
+    return true;
+}
+
 function fuseCard(cardID, fusion) {
-    if (!is_commander(cardID) && DoNotFuse.indexOf(cardID) == -1) {
+    if (DoNotFuse.indexOf(cardID) == -1) {
+        if (!fusion) fusion = (cardID.length > 4 ? "2" : "1");
         if (cardID.length > 4) {
             cardID = fusion + cardID.substring(1);
         } else {
