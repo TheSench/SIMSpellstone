@@ -637,6 +637,7 @@ var getexactorder = false;
 var getexactorder2 = false;
 var getmission = 0;
 var getraid = 0;
+var raidlevel = 0;
 var getbattleground = 0;
 var getsiege = 0;
 var user_controlled = false;

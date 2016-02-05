@@ -114,7 +114,8 @@
     <span id="jsonFields">
         <form>
             <div><b>Response JSON:</b></div><input id="request_json" type="text" value="" size="50" onchange="BATTLE_PROCESSOR.getDecksFromJSON(this);"><br>
-            <div>&nbsp;</div><input type='file' id='responseFiles' onchange="BATTLE_PROCESSOR.watchFile();">
+            <div>&nbsp;</div><input type='file' id='responseFiles' onchange="BATTLE_PROCESSOR.watchFile();"><br />
+            <div>&nbsp;</div><input type='file' id="saveFile" >
         </form>
         <br />
         <form>
@@ -153,11 +154,13 @@
             <select id="mission">
                 <option value="" />
             </select>
+            <input style="float:initial;" type="NUMBER" id="mission_level" min="1" max="7" step="1" value="7" size="6">
             <br>
             <div><i>Raid (Maxed):</i></div>
             <select id="raid">
                 <option value="" />
             </select>
+            <input style="float:initial;" type="NUMBER" id="raid_level" min="1" max="40" step="1" value="25" size="6">
             <br>
             <div><i>Battleground:</i></div>
             <div id="battleground" style="overflow: auto; width: 200px; height: 80px; border: 1px solid #336699; padding-left: 5px; text-align: left; "></div>

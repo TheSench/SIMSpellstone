@@ -386,6 +386,7 @@ if (use_workers) {
         getexactorder2 = document.getElementById('exactorder2').checked;
         getmission = document.getElementById('mission').value;
         getraid = document.getElementById('raid').value;
+        raidlevel = document.getElementById('raid_level').value;;
         getsiege = document.getElementById('siege').checked;
         tower_level = document.getElementById('tower_level').value;
         tower_type = document.getElementById('tower_type').value;
@@ -426,7 +427,7 @@ if (use_workers) {
         } else if (getmission) {
             cache_cpu_deck = load_deck_mission(getmission);
         } else if (getraid) {
-            cache_cpu_deck = load_deck_raid(getraid);
+            cache_cpu_deck = load_deck_raid(getraid, raidlevel);
         } else {
             cache_cpu_deck = load_deck_from_cardlist();
         }

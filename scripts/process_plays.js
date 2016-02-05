@@ -21,7 +21,7 @@
     }
 
     var lastModified;
-    module.watchFile = function() {
+    module.watchFile = function () {
         var file;
 
         if (typeof window.FileReader !== 'function') {
@@ -44,13 +44,12 @@
         var file = input.files && input.files[0];
         if (file && lastModified && file.lastModifiedDate.getTime() !== lastModified.getTime()) {
             lastModified = file.lastModifiedDate;
-            
+
             var reader = new FileReader();
             reader.onload = function (e) {
                 processDeckFromJSON(e.target.result);
             };
             reader.readAsText(file);
-
         }
     }
 
@@ -79,6 +78,52 @@
                 playTurns(data, true);
                 break;
         }
+    }
+
+    function getDeck(data) {
+        var card_map = data.battle_data.card_map;
+        var deck = {
+            commander: {},
+            deck: []
+        };
+
+        deck.commander = getUnitFromCardMapInfo(data.battle_data.defend_commander);
+        for (var uid in card_map) {
+            if (uid > 15 || uid == -2) {
+                var unit = card_map[uid];
+                deck.deck.push(getUnitFromCardMapInfo(unit));
+            }
+        }
+        return deck;
+    }
+
+    function getUnitFromCardMapInfo(unit) {
+        var runes = unit.runes;
+        unit = makeUnitInfo(unit.unit_id, unit.level);
+        for (var r in runes) {
+            unit.runes.push({ id: runes[r].item_id });
+        }
+        return unit;
+    }
+
+    function makeUnitList(deck) {
+        var unitList = [];
+        unitList.push(makeUnitString(deck.commander));
+        deck = deck.deck;
+        for(var i = 0; i < deck.length; i++) {
+            unitList.push(makeUnitString(deck[i]));
+        }
+        return unitList.join(",");
+    }
+
+    function makeUnitString(unit) {
+        var unit2 = {
+            id: unit.id,
+            level: unit.level,
+            rune: ""
+        };
+        if (unit.runes.length) unit2.rune = unit.runes[0].id;
+        return JSON.stringify(unit2);
     }
 
     function setupBattlegrounds() {
@@ -137,7 +182,7 @@
         setupField = function (field) { copyField(field, false); };
         setupDecks = function () { doSetupDecks(); setDeckCaches(); };
         setupWorkerField = function (worker) { postField(worker); }
-        end_sims_callback = function() {
+        end_sims_callback = function () {
             document.getElementById('ui').style.display = 'none';
             drawField();
         }
@@ -573,8 +618,7 @@
         updateFlags(action.status);
     }
 
-    function damageCard(card, damage)
-    {
+    function damageCard(card, damage) {
         card.health_left -= damage;
         if (card.health_left < 0) card.health_left = 0;
     }

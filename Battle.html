@@ -62,12 +62,16 @@
             <div>&nbsp;</div><font color="#666"><strong>Card list example:</strong> Urs(5), Matriarch(5), Fire Devil(4), Smelted Skeleton(4)x2, Outrunner(4)x3</font><br>
             <br>
             <div><i>Mission (7*):</i></div>
-            <select id="mission"><option value="" /></select><br>
+            <select id="mission">
+                <option value="" />
+            </select>
+            <input style="float:initial;" type="NUMBER" id="mission_level" min="1" max="7" step="1" value="7" size="6">
             <br>
             <div><i>Raid (Maxed):</i></div>
             <select id="raid">
                 <option value="" />
             </select>
+            <input style="float:initial;" type="NUMBER" id="raid_level" min="1" max="40" step="1" value="25" size="6">
             <br>
             <div>Ordered Enemy Deck:</div><input type="checkbox" id="ordered2">
             <div><u>Exact Order (ignore 3-card hand rule):</u></div><input type="checkbox" id="exactorder2"><br>
