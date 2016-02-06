@@ -87,11 +87,11 @@ function draw_fields(field) {
 function draw_field(field) {
     var cards = createDiv("float-left");
     var commander = field.commander;
-    cards.appendChild(create_card_html(commander, true, true));
+    cards.appendChild(create_card_html(commander, false, true));
     var units = field.assaults;
     if (units) for (var i = 0, len = units.length; i < len; i++) {
         var unit = units[i];
-        var htmlCard = create_card_html(unit, true, true);
+        var htmlCard = create_card_html(unit, false, true);
         if (unit.timer) htmlCard.classList.add("inactive");
         cards.appendChild(htmlCard);
     }
@@ -371,6 +371,7 @@ function getSkillIcon(skillName) {
 
 function getStatuses(card) {
     var debuffs = [];
+    /*
     if (card.attack_weaken) {
         var status = createStatus("weaken", card.attack_weaken);
         debuffs.push(status);
@@ -383,16 +384,18 @@ function getStatuses(card) {
         var status = createStatus("jam");
         debuffs.push(status);
     }
+    */
     if (card.poisoned) {
         var status = createStatus("poison", card.poisoned);
         debuffs.push(status);
     }
-    if (card.scorched) {
+    if (card.scorched && card.scorched.amount) {
         var status = createStatus("burn", card.scorched.amount);
         debuffs.push(status);
     }
 
     var buffs = [];
+    /*
     if (card.attack_rally) {
         var status = createStatus("rally", card.attack_rally);
         buffs.push(status);
@@ -401,10 +404,12 @@ function getStatuses(card) {
         var status = createStatus("berserk", card.attack_berserk);
         buffs.push(status);
     }
+    */
     if (card.protected) {
         var status = createStatus("protect", card.protected);
         buffs.push(status);
     }
+    /*
     if (card.enhanced) {
         for (var key in card.enhanced) {
             if (key == 'counter' || key == 'armored' || key == 'evade') {
@@ -413,6 +418,7 @@ function getStatuses(card) {
             }
         }
     }
+    */
 
     var statuses = [];
     if (debuffs.length > 0) {
