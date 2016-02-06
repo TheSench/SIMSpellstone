@@ -163,7 +163,7 @@ var DeckRetriever = (function () {
     //-- Bounties
     var huntingTargets = {};
 
-    function startBountyBattle(skipGetTargets) {
+    function startBountyBattle() {
         if (!startFirstBountyBattle()) {
             getHuntingTargets(true);
         }

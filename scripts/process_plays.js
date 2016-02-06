@@ -58,7 +58,7 @@
         var targetID = document.getElementById("targetUserID").value;
         if (baseRequest) {
             var battleType = document.getElementById("battleType").value;
-            BattleAPI[battleType]();
+            BattleAPI[battleType](targetID);
         }
     }
 
