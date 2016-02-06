@@ -119,7 +119,16 @@
         <br />
         <form>
             <div>&nbsp;</div>
-            <input id="targetUserID" type="text" value="" size="50" onchange="setFightButtonText(this)"><input id="btn_fightSelf" type="button" value="Fight Self" onclick="return BATTLE_PROCESSOR.fight();" style="float:initial; text-align: center; font-weight: bold;">
+            <input id="targetUserID" type="text" value="" size="50" onchange="setFightButtonText(this)">
+            <select id="battleType">
+                <option value="fightGuildMember">Practice</option>
+                <option value="startRaidBattle">Raid</option>
+                <option value="startGuildWarBattle">War</option>
+                <option value="startClashBattle">Clash</option>
+                <option value="startCampaignBattle">Campaign</option>
+                <option value="startBountyBattle">Bounty</option>
+            </select>
+            <input id="btn_fightSelf" type="button" value="Fight Self" onclick="return BATTLE_PROCESSOR.fight();" style="float:initial; text-align: center; font-weight: bold;">
         </form>
         <br />
     </span>

@@ -57,11 +57,8 @@
         var baseRequest = DeckRetriever.baseRequest;
         var targetID = document.getElementById("targetUserID").value;
         if (baseRequest) {
-            if (_DEFINED("war")) {
-                BattleAPI.startGuildWarBattle();
-            } else {
-                BattleAPI.fightGuildMember(targetID);
-            }
+            var battleType = document.getElementById("battleType").value;
+            BattleAPI[battleType]();
         }
     }
 
@@ -204,6 +201,7 @@
             cachedField.uids[-1] = commander;
 
             commander = data.battle_data.defend_commander;
+            if (!commander) commander = data.battle_data.attack_commander
             deck_cpu.commander = makeUnitInfo(commander.unit_id, commander.level);
             commander = get_card_apply_battlegrounds(deck_cpu.commander);
             commander.health_left = commander.health;

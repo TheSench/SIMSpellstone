@@ -1,7 +1,6 @@
 ﻿var BattleAPI;
 
 var DeckRetriever = (function () {
-
     var baseURL = "https://crossorigin.me/https://spellstone.synapse-games.com/api.php?";
     var baseRequest = {};
     var form;
@@ -22,6 +21,12 @@ var DeckRetriever = (function () {
 
             baseRequest.user_id = existingRequest.user_id;
             baseRequest.password = existingRequest.password;
+            baseRequest.unity = existingRequest.unity;
+            baseRequest.client_version = existingRequest.client_version;
+            baseRequest.kong_id = existingRequest.kong_id;
+            baseRequest.kong_token = existingRequest.kong_token;
+            baseRequest.kong_name = existingRequest.kong_name;
+            baseRequest.platform = existingRequest.platform;
         }
     }
 
@@ -55,12 +60,15 @@ var DeckRetriever = (function () {
             throw "Missing user id";
         }
         var params = getRequestParams(messageType, params);
+        var startTime = new Date().getTime();
         $.ajax({
             url: baseURL + params,
             async: false,
             cache: false,
             dataType: 'json', /* Optional - jQuery autodetects this by default */
             success: function (response) {
+                baseRequest.api_stat_name = messageType;
+                baseRequest.api_stat_time = (new Date().getTime() - startTime);
                 callback(response);
                 HideLoadingSplash();
             },
@@ -130,6 +138,7 @@ var DeckRetriever = (function () {
     }
 
     function startCampaignBattle(mission_id) {
+        if (!mission_id) mission_id = 1034; //Lost Labratory
         var params = {
             campaign: mission_id
         }
@@ -137,17 +146,60 @@ var DeckRetriever = (function () {
         DisplayLoadingSplash();
         setTimeout(function () {
             sendRequest('startCampaign', params, function (response) {
-                BattleAPI.beginBattle(response);
+                checkResponse(response, BattleAPI.beginBattle);
                 HideLoadingSplash();
             });
         }, 1);
     }
 
-    function startBountyBattle(target_user_id) {
+    function checkResponse(response, callback) {
+        if (response.result) {
+            callback(response);
+        } else {
+            alert(response.result_message[0]);
+        }
+    }
+
+    //-- Bounties
+    var huntingTargets = {};
+
+    function startBountyBattle(skipGetTargets) {
+        if (!startFirstBountyBattle()) {
+            getHuntingTargets(true);
+        }
+    }
+
+    function getHuntingTargets(fightFirst) {
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('getHuntingTargets', null, function (response) {
+                processHuntingTargets(response);
+                if (fightFirst && !startFirstBountyBattle()) {
+                    alert("No targets at this time");
+                }
+                HideLoadingSplash();
+            });
+        }, 1);
+    }
+
+    function processHuntingTargets(data) {
+        huntingTargets = data.hunting_targets;
+    }
+
+    function startFirstBountyBattle() {
+        for (var key in huntingTargets) {
+            target_user_id = key;
+            doStartBountyBattle();
+            return true;
+            break;
+        }
+        return false;
+    }
+
+    function doStartBountyBattle(target_user_id, skipGetTargets) {
         var params = {
             rival_id: target_user_id
         }
-
         DisplayLoadingSplash();
         setTimeout(function () {
             sendRequest('startHuntingBattle', params, function (response) {
@@ -156,7 +208,9 @@ var DeckRetriever = (function () {
             });
         }, 1);
     }
+    //-- End Bounties
 
+    //-- Guild War
     function startGuildWarBattle() {
         DisplayLoadingSplash();
         setTimeout(function () {
@@ -166,7 +220,9 @@ var DeckRetriever = (function () {
             });
         }, 1);
     }
+    //-- End Guild War
 
+    //-- Clash
     function startClashBattle() {
         DisplayLoadingSplash();
         setTimeout(function () {
@@ -176,7 +232,48 @@ var DeckRetriever = (function () {
             });
         }, 1);
     }
+    //-- End Clash
 
+    //-- Raid
+    var raidEnergy = 0;
+
+    function startRaidBattle() {
+        getRaidStatus(true);
+    }
+
+    function getRaidStatus(doFight) {
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('getRaidStatus', null, function (response) {
+                processGetRaidStatus(response);
+                if (doFight) {
+                    if (raidEnergy > 0) {
+                        doStartRaidBattle();
+                    } else {
+                        alert("No fights left");
+                    }
+                }
+                HideLoadingSplash();
+            });
+        }, 1);
+    }
+
+    function processGetRaidStatus(data) {
+        raidEnergy = data.raid_status.energy;
+    }
+
+    function doStartRaidBattle() {
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('startRaidBattle', null, function (response) {
+                BattleAPI.beginBattle(response);
+                HideLoadingSplash();
+            });
+        }, 1);
+    }
+    //-- End Raid
+
+    //-- Practice Battle
     function fightGuildMember(target_user_id) {
         var params = {
             target_user_id: target_user_id
@@ -185,11 +282,12 @@ var DeckRetriever = (function () {
         DisplayLoadingSplash();
         setTimeout(function () {
             sendRequest('fightGuildMember', params, function (response) {
-                BattleAPI.beginBattle(response);
+                checkResponse(response, BattleAPI.beginBattle);
                 HideLoadingSplash();
             });
         }, 1);
     }
+    //-- End  Practice Battle
 
     function playCard(card_index) {
         var params = {
@@ -401,6 +499,7 @@ var DeckRetriever = (function () {
         startGuildWarBattle: startGuildWarBattle,
         startClashBattle: startClashBattle,
         fightGuildMember: fightGuildMember,
+        startRaidBattle: startRaidBattle,
         playCard: playCard,
         forfeitBattle: forfeitBattle,
     }

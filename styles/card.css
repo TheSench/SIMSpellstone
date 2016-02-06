@@ -287,8 +287,14 @@ img[src='Error.src'] {
         visibility: visible;
     }
 
+/*
 .card-statuses {
     visibility: hidden;
+}
+*/
+
+.card-statuses img {
+    width: 12px;
 }
 
 .hidden {
@@ -300,6 +306,7 @@ img[src='Error.src'] {
     text-align: center;
 }
 
+    .card-statuses,
     .hidden:hover ~ .card-statuses,
     .card-statuses:hover {
         position: absolute;
