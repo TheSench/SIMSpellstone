@@ -20732,6 +20732,262 @@ var CARDS = {
       },
     }
   },
+  "5038": {
+    "id": "5038",
+    "name": "Celestial Monarch",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "6",
+    "attack": 4,
+    "health": 18,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "jam",
+        "c": 7,
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "jam",
+            "c": 6,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "3": {
+        "health": 19,
+        "skill": [],
+      },
+      "4": {
+        "health": 20,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "jam",
+            "c": 6,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "attack": 5,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "jam",
+            "c": 6,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "15038": {
+    "id": "15038",
+    "name": "Celestial Empress",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "6",
+    "attack": 5,
+    "health": 21,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "jam",
+        "c": 6,
+      },
+      {
+        "id": "weaken",
+        "x": 2,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "3": {
+        "health": 22,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 24,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "25038": {
+    "id": "25038",
+    "name": "Celestial Queen",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "6",
+    "attack": 5,
+    "health": 25,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 3,
+      },
+      {
+        "id": "jam",
+        "c": 4,
+      },
+      {
+        "id": "weaken",
+        "x": 2,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 26,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "3": {
+        "health": 27,
+        "skill": [],
+      },
+      "4": {
+        "attack": 6,
+        "skill": [],
+      },
+      "5": {
+        "health": 28,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
   "6000": {
     "id": "6000",
     "name": "Furnace Mech",
@@ -28766,7 +29022,7 @@ var CARDS = {
   "6037": {
     "id": "6037",
     "name": "Keeper of Souls",
-    "picture": "Keeper_Of_The_Dead_A",
+    "picture": "NotFound",
     "rarity": "4",
     "set": "4000",
     "card_type": "2",
@@ -28857,7 +29113,7 @@ var CARDS = {
   "16037": {
     "id": "16037",
     "name": "Keeper of the Lost",
-    "picture": "Keeper_Of_The_Dead_A",
+    "picture": "NotFound",
     "rarity": "4",
     "set": "4000",
     "card_type": "2",
@@ -28949,7 +29205,7 @@ var CARDS = {
   "26037": {
     "id": "26037",
     "name": "Keeper of the Dead",
-    "picture": "Keeper_Of_The_Dead_B",
+    "picture": "NotFound",
     "rarity": "4",
     "set": "4000",
     "card_type": "2",
@@ -60763,6 +61019,7 @@ var FUSIONS = {
   "15035" : "25035",
   "15036" : "25036",
   "15037" : "25037",
+  "15038" : "25038",
   "1600" : "11600",
   "16000" : "26000",
   "16001" : "26001",
@@ -60939,6 +61196,7 @@ var FUSIONS = {
   "5035" : "15035",
   "5036" : "15036",
   "5037" : "15037",
+  "5038" : "15038",
   "6000" : "16000",
   "6001" : "16001",
   "6002" : "16002",
