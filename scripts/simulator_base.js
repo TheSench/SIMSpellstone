@@ -62,14 +62,16 @@ if (simulator_thread) {
             // Starting at the first dead unit, start shifting.
             if (!current_assault.isAlive()) {
                 if (debug) echo += debug_name(current_assault) + ' is removed from field<br>';
-                if (current_assault.owner == 'player') health_lost += current_assault.health;
+                if (current_assault.owner == 'player') damage_taken += current_assault.health;
+                else damage_dealt += current_assault.health;
                 var newkey = key;	// Store the new key value for the next alive unit
                 for (key++; key < len; key++) {
                     current_assault = units[key];
                     // If this unit is dead, don't update newkey, we still need to fill that slot
                     if (!current_assault.isAlive()) {
                         if (debug) echo += debug_name(current_assault) + ' is removed from field<br>';
-                        if (current_assault.owner == 'player') health_lost += current_assault.health;
+                        if (current_assault.owner == 'player') damage_taken += current_assault.health;
+                        else damage_dealt += current_assault.health;
                     }
                         // If this unit is alive, set its key to newkey, and then update newkey to be the next slot
                     else {
@@ -848,7 +850,8 @@ if (simulator_thread) {
     // Simulate one game
     var simulate = function () {
         simulating = true;
-        health_lost = 0;
+        damage_taken = 0;
+        damage_dealt = 0;
         plays = [];
 
         // Shuffle decks
@@ -913,6 +916,12 @@ if (simulator_thread) {
             cache_cpu_deck = load_deck_from_cardlist();
         }
         cache_cpu_deck_cards = getDeckCards(cache_cpu_deck);
+
+        totalCpuDeckHealth = 0;
+        totalCpuDeckHealth += cache_cpu_deck_cards.commander.health;
+        for (var i = 0; i < cache_cpu_deck_cards.deck.length; i++) {
+            totalCpuDeckHealth += cache_cpu_deck_cards.deck[i].health;
+        }
     }
 
     var setupField = function (field) {
@@ -1531,25 +1540,42 @@ if (simulator_thread) {
 
 
     var CalculatePoints = function () {
-        var commander = field.player.commander;
-        var assaults = field.player.assaults;
         var uids = field.uids;
         if (uids) {
             for (var i in uids) {
                 var assault = uids[i];
                 if (assault.owner == 'player') {
-                    health_lost += (assault.health - assault.health_left);
+                    damage_taken += (assault.health - assault.health_left);
+                } else {
+                    damage_dealt += (assault.health - assault.health_left);
                 }
             }
         }
+        var assaults = field.player.assaults;
         for (var i = 0, len = assaults.length; i < len; i++) {
             var assault = assaults[i];
             if (uids && uids[assault.uid]) continue;    // Already counted this card
-            health_lost += (assault.health - assault.health_left);
+            damage_taken += (assault.health - assault.health_left);
         }
-        health_lost += (commander.health - commander.health_left);
-        var pointsLost = Math.floor((100 * health_lost / totalDeckHealth) / 5);
-        var points = (field.cpu.commander.isAlive() ? 25 : 130) - pointsLost;
+        var assaults = field.cpu.assaults;
+        for (var i = 0, len = assaults.length; i < len; i++) {
+            var assault = assaults[i];
+            if (uids && uids[assault.uid]) continue;    // Already counted this card
+            damage_dealt += (assault.health - assault.health_left);
+        }
+        var commander = field.cpu.commander;
+        damage_dealt += (commander.health - commander.health_left);
+        var commander = field.player.commander;
+        damage_taken += (commander.health - commander.health_left);
+        if (getraid) {
+            if (field.cpu.commander.isAlive()) {
+                var points = 5 + Math.floor((damage_dealt / totalCpuDeckHealth) / 0.02);
+            } else {
+                var points = 200 - Math.floor((damage_taken / totalDeckHealth) / 0.02);
+            }
+        } else {
+            var points = (field.cpu.commander.isAlive() ? 25 : 130) - Math.floor((damage_taken / totalDeckHealth) / 0.05);
+        }
         return points;
     }
 
@@ -1560,7 +1586,9 @@ if (simulator_thread) {
     var time_start_batch = 0;
     var simulating = false;
     var turn = 0;
-    var health_lost = 0;
+    var damage_taken = 0;
+    var damage_dealt = 0;
     var plays = [];
     var totalDeckHealth = 0;
+    var totalCpuDeckHealth = 0;
 }
