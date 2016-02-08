@@ -517,7 +517,7 @@ if (use_workers) {
         } else {
             time_start_batch = new Date().getTime();
 
-            var sims_per_worker = Math.floor(num_sims / max_workers);
+            var sims_per_worker = ~~(num_sims / max_workers);
             var remainingSims = num_sims - (sims_per_worker * max_workers);
             var worker_index = 0;
             for (; worker_index < remainingSims; worker_index++) {  // Start a new batch
