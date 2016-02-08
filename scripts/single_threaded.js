@@ -78,6 +78,37 @@ if (!use_workers) {
                 }
             }
         }
+        if (getraid) {
+            var bge_id = RAIDS[getraid].bge;
+            if (bge_id) {
+                var battleground;
+                for (var i = 0; i < BATTLEGROUNDS.length; i++) {
+                    var battleground = BATTLEGROUNDS[i];
+                    if (battleground.id == bge_id) {
+                        break;
+                    } else {
+                        battleground = null;
+                    }
+                }
+                if (battleground && raidlevel >= battleground.starting_level) {
+                    var enemy_only = battleground.enemy_only;
+                    if (battleground.effect.skill) {
+                        if(battleground.scale_with_level) {
+                            var mult = battleground.scale_with_level * (raidlevel - battleground.starting_level + 1);
+                        } else {
+                            mult = 1;
+                        }
+                        var battleground = MakeBattleground(battleground.name, battleground.effect.skill, mult);
+                        battleground.enemy_only = enemy_only;
+                        battlegrounds.onTurn.push(battleground);
+                    } else if (battleground.effect.evolve_skill || battleground.effect.add_skill) {
+                        var battleground = MakeSkillModifier(battleground.name, battleground.effect);
+                        battleground.enemy_only = enemy_only;
+                        battlegrounds.onTurn.push(battleground);
+                    }
+                }
+            }
+        }
 
         // Hide interface
         document.getElementById('ui').style.display = 'none';

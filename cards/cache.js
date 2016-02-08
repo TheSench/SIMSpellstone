@@ -29022,7 +29022,7 @@ var CARDS = {
   "6037": {
     "id": "6037",
     "name": "Keeper of Souls",
-    "picture": "NotFound",
+    "picture": "Keeper_Of_The_Dead_A",
     "rarity": "4",
     "set": "4000",
     "card_type": "2",
@@ -29113,7 +29113,7 @@ var CARDS = {
   "16037": {
     "id": "16037",
     "name": "Keeper of the Lost",
-    "picture": "NotFound",
+    "picture": "Keeper_Of_The_Dead_A",
     "rarity": "4",
     "set": "4000",
     "card_type": "2",
@@ -29205,7 +29205,7 @@ var CARDS = {
   "26037": {
     "id": "26037",
     "name": "Keeper of the Dead",
-    "picture": "NotFound",
+    "picture": "Keeper_Of_The_Dead_B",
     "rarity": "4",
     "set": "4000",
     "card_type": "2",
@@ -61285,7 +61285,6 @@ var FUSIONS = {
   "8015" : "18015"
 };
 var ACHIEVEMENTS = [];
-var RAIDS = [];
 var BATTLEGROUNDS = [
   {
     "name": "Age of the Dragons",
@@ -61381,7 +61380,7 @@ var BATTLEGROUNDS = [
   },
   {
     "name": "Elemental Surge",
-    "id": "105",
+    "id": "107",
     "effect": {
       "skill": [
         {
@@ -61389,6 +61388,27 @@ var BATTLEGROUNDS = [
           "mult": 0.2,
           "y": "5",
           "z": 5,
+          "all": "1",
+        },
+      ]
+    }
+  },
+  {
+    "name": "Nethergore's Reckoning",
+    "id": "504",
+    "enemy_only": "1",
+    "scale_with_level": "1",
+    "starting_level": "26",
+    "effect": {
+      "skill": [
+        {
+          "id": "heal",
+          "x": 0.8,
+          "all": "1",
+        },
+        {
+          "id": "rally",
+          "x": 0.4,
           "all": "1",
         },
       ]

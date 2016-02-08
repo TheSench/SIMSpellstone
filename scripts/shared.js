@@ -471,9 +471,9 @@ var MakeSkillModifier = (function () {
 }());
 
 var MakeBattleground = (function () {
-    var Battleground = function (name, original_skills) {
+    var Battleground = function (name, original_skills, mult) {
         this.name = name;
-        copy_skills_2(this, original_skills);
+        copy_skills_2(this, original_skills, mult);
     }
 
     Battleground.prototype = {
@@ -501,12 +501,12 @@ var MakeBattleground = (function () {
         },
     }
 
-    return (function (name, skill) {
-        return new Battleground(name, skill);
+    return (function (name, skill, mult) {
+        return new Battleground(name, skill, mult);
     })
 }());
 
-function copy_skills_2(new_card, original_skills) {
+function copy_skills_2(new_card, original_skills, mult) {
     new_card.skill = [];
     new_card.empowerSkills = [];
     skillTimers = [];
@@ -518,6 +518,10 @@ function copy_skills_2(new_card, original_skills) {
             setSkill_2(new_card, copySkill);
             skillTimers.push(copySkill);
             reusable = false;
+        } else if (mult) {
+            var copySkill = copy_skill(newSkill);
+            copySkill.x *= mult;
+            setSkill_2(new_card, copySkill);
         } else {            // If skill has no timer, we can use the same instance
             setSkill_2(new_card, newSkill);
         }
@@ -798,7 +802,7 @@ function debug_name(card, hideStats) {
         output += '<u>';
         if (card.isCommander()) {
             output += ' [';
-            if (card.health_left !== undefined) output += card.health_left;
+            if (card.health_left !== undefined) output += Math.floor(card.health_left);
             else output += card.health;
             output += ' HP]';
         } else if (card.isAssault()) {
@@ -807,7 +811,7 @@ function debug_name(card, hideStats) {
             if (isNaN(atk) || atk == undefined) atk = card.attack;
             output += atk;
             output += '/';
-            if (card.health_left !== undefined) output += card.health_left;
+            if (card.health_left !== undefined) output += Math.floor(card.health_left);
             else output += card.health;
             output += '/';
             if (card.timer !== undefined) output += card.timer;
