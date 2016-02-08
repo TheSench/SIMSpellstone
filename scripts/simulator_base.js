@@ -1569,7 +1569,8 @@ if (simulator_thread) {
         damage_taken += (commander.health - commander.health_left);
         if (getraid) {
             if (field.cpu.commander.isAlive()) {
-                var points = 5 + Math.floor((damage_dealt / totalCpuDeckHealth) / 0.02);
+                var points = Math.floor((damage_dealt / totalCpuDeckHealth) / 0.02);
+                points = Math.max(5, points);
             } else {
                 var points = 200 - Math.floor((damage_taken / totalDeckHealth) / 0.02);
             }
