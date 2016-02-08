@@ -449,6 +449,9 @@ if (use_workers) {
         params['gettournament'] = gettournament;
         params['getexactorder'] = getexactorder;
         params['getexactorder2'] = getexactorder2;
+        params['getmission'] = getmission;
+        params['getraid'] = getraid;
+        params['raidlevel'] = raidlevel;
         params['getsiege'] = getsiege;
         params['tower_level'] = tower_level;
         params['tower_type'] = tower_type;

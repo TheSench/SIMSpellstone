@@ -48,6 +48,12 @@ var calculateTotalDeckHealth = function () {
     for (var i = 0; i < cache_player_deck_cards.deck.length; i++) {
         totalDeckHealth += cache_player_deck_cards.deck[i].health;
     }
+
+    totalCpuDeckHealth = 0;
+    totalCpuDeckHealth += cache_cpu_deck_cards.commander.health;
+    for (var i = 0; i < cache_cpu_deck_cards.deck.length; i++) {
+        totalCpuDeckHealth += cache_cpu_deck_cards.deck[i].health;
+    }
 }
 
 function doSetupField(jsonText) {
@@ -134,10 +140,13 @@ function doSetupField(jsonText) {
     calculateTotalDeckHealth = function ()
     {
         totalDeckHealth = 0;
+        totalCpuDeckHealth = 0;
         for (var i in cachedField.uids) {
             var card = cachedField.uids[i];
             if (i >= -1 && i <= 15) {
                 totalDeckHealth += card.health;
+            } else {
+                totalCpuDeckHealth += card.health;
             }
         }
     }
@@ -314,6 +323,9 @@ function initializeSims(params) {
 	getordered2 = params['getordered2'];
 	getexactorder = params['getexactorder'];
 	getexactorder2 = params['getexactorder2'];
+	getmission = params['getmission'];
+	getraid = params['getraid'];
+	raidlevel = params['raidlevel'];
 	getsiege = params['getsiege'];
 	tower_level = params['tower_level'];
 	tower_type = params['tower_type'];
