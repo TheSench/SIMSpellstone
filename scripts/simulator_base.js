@@ -1155,6 +1155,7 @@ if (simulator_thread) {
         // Activate battleground effects
         for (var i = 0; i < battlegrounds.onTurn.length; i++) {
             var battleground = battlegrounds.onTurn[i];
+            if (battleground.enemy_only && p != 'cpu') continue;
             battleground.owner = p;
             doEmpower(battleground);
             activation_skills(battleground);

@@ -2,6 +2,7 @@
     "24002": {
         "id": "24002",
         "name": "Nethergore Raid",
+        "bge": "504",
         "commander": {
             "id": "279"
         },
