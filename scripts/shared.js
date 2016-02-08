@@ -42,7 +42,7 @@ function shuffle(this_array) {
     var i = this_array.length, j, tempi, tempj;
     if (i == 0) return false;
     while (--i) {
-        j = Math.floor(Math.random() * (i + 1));
+        j = ~~(Math.random() * (i + 1));
         tempi = this_array[i];
         tempj = this_array[j];
         this_array[i] = tempj;
@@ -520,7 +520,8 @@ function copy_skills_2(new_card, original_skills, mult) {
             reusable = false;
         } else if (mult) {
             var copySkill = copy_skill(newSkill);
-            copySkill.x *= mult;
+            //copySkill.x = ~~(copySkill.x * mult);   // Floor the results
+            copySkill.x = (copySkill.x * mult);
             setSkill_2(new_card, copySkill);
         } else {            // If skill has no timer, we can use the same instance
             setSkill_2(new_card, newSkill);
@@ -802,7 +803,7 @@ function debug_name(card, hideStats) {
         output += '<u>';
         if (card.isCommander()) {
             output += ' [';
-            if (card.health_left !== undefined) output += Math.floor(card.health_left);
+            if (card.health_left !== undefined) output += debug_fraction(card.health_left);
             else output += card.health;
             output += ' HP]';
         } else if (card.isAssault()) {
@@ -811,7 +812,7 @@ function debug_name(card, hideStats) {
             if (isNaN(atk) || atk == undefined) atk = card.attack;
             output += atk;
             output += '/';
-            if (card.health_left !== undefined) output += Math.floor(card.health_left);
+            if (card.health_left !== undefined) output += debug_fraction(card.health_left);
             else output += card.health;
             output += '/';
             if (card.timer !== undefined) output += card.timer;
@@ -822,6 +823,13 @@ function debug_name(card, hideStats) {
     }
 
     return output;
+}
+
+function debug_fraction(value) {
+    if (value > Math.floor(value)) {
+        value = value.toFixed(1);
+    }
+    return value;
 }
 
 // Dump whatever card or array

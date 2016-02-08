@@ -90,7 +90,8 @@ if (simulator_thread) {
 
     // Picks one target by random
     var choose_random_target = function (targets) {
-        return [targets[Math.floor(Math.random() * targets.length)]];
+        var targetIndex = ~~(Math.random() * targets.length)
+        return [targets[targetIndex]];
     };
 
     var get_p = function (card) {
@@ -326,7 +327,7 @@ if (simulator_thread) {
                 var heal_amt = heal;
                 if (!heal_amt) {
                     var mult = skill.mult;
-                    heal_amt = Math.floor(target.health * mult);
+                    heal_amt = ~~(target.health * mult);
                 }
 
                 if (heal_amt > target['health'] - target['health_left']) heal_amt = target['health'] - target['health_left'];
@@ -1127,7 +1128,7 @@ if (simulator_thread) {
             } else {
                 // Play first card in hand
                 if (deck_p_deck.length > 1 && deck_p.shuffleHand) {
-                    card_picked = Math.floor(Math.random() * deck_p_deck.slice(0, 3).length);
+                    card_picked = ~~(Math.random() * deck_p_deck.slice(0, 3).length);
                 }
                 play_card(deck_p_deck[card_picked], p);
             }
