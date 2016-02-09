@@ -326,7 +326,11 @@
 
         var card = cachedHands.player[choice];
         var uid = card.uid;
-        BattleAPI.playCard(uid, 1);
+        if (_DEFINED("spam")) {
+            BattleAPI.playCard(uid, 1);
+        } else {
+            BattleAPI.playCard(uid);
+        }
     }
 
     function playTurns(data, playTurn0) {
