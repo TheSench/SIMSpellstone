@@ -20735,7 +20735,7 @@ var CARDS = {
   "5038": {
     "id": "5038",
     "name": "Celestial Monarch",
-    "picture": "NotFound",
+    "picture": "Angel_Queen_A",
     "rarity": "4",
     "set": "4000",
     "card_type": "2",
@@ -20825,7 +20825,7 @@ var CARDS = {
   "15038": {
     "id": "15038",
     "name": "Celestial Empress",
-    "picture": "NotFound",
+    "picture": "Angel_Queen_A",
     "rarity": "4",
     "set": "4000",
     "card_type": "2",
@@ -20914,7 +20914,7 @@ var CARDS = {
   "25038": {
     "id": "25038",
     "name": "Celestial Queen",
-    "picture": "NotFound",
+    "picture": "Angel_Queen_B",
     "rarity": "4",
     "set": "4000",
     "card_type": "2",
@@ -29022,7 +29022,7 @@ var CARDS = {
   "6037": {
     "id": "6037",
     "name": "Keeper of Souls",
-    "picture": "NotFound",
+    "picture": "Keeper_Of_The_Dead_A",
     "rarity": "4",
     "set": "4000",
     "card_type": "2",
@@ -29113,7 +29113,7 @@ var CARDS = {
   "16037": {
     "id": "16037",
     "name": "Keeper of the Lost",
-    "picture": "NotFound",
+    "picture": "Keeper_Of_The_Dead_A",
     "rarity": "4",
     "set": "4000",
     "card_type": "2",
@@ -29205,7 +29205,7 @@ var CARDS = {
   "26037": {
     "id": "26037",
     "name": "Keeper of the Dead",
-    "picture": "NotFound",
+    "picture": "Keeper_Of_The_Dead_B",
     "rarity": "4",
     "set": "4000",
     "card_type": "2",
@@ -56175,6 +56175,123 @@ var CARDS = {
       },
     }
   },
+  "9997": {
+      "id": "9997",
+      "name": "Unknown 1",
+      "picture": "New1_A",
+      "rarity": "0",
+      "set": "9999",
+      "card_type": "2",
+      "type": "0",
+      "attack": 0,
+      "health": 1,
+      "cost": 0,
+      "skill": [],
+  },
+  "19997": {
+      "id": "19997",
+      "name": "Unknown 1",
+      "picture": "New1_A",
+      "rarity": "0",
+      "set": "9999",
+      "card_type": "2",
+      "type": "0",
+      "attack": 0,
+      "health": 1,
+      "cost": 0,
+      "skill": [],
+  },
+  "29997": {
+      "id": "29997",
+      "name": "Unknown 1",
+      "picture": "New1_B",
+      "rarity": "0",
+      "set": "9999",
+      "card_type": "2",
+      "type": "0",
+      "attack": 0,
+      "health": 1,
+      "cost": 0,
+      "skill": [],
+  },
+  "9998": {
+      "id": "9998",
+      "name": "Unknown 2",
+      "picture": "New2_A",
+      "rarity": "0",
+      "set": "9999",
+      "card_type": "2",
+      "type": "0",
+      "attack": 0,
+      "health": 1,
+      "cost": 0,
+      "skill": [],
+  },
+  "19998": {
+      "id": "19998",
+      "name": "Unknown 2",
+      "picture": "New2_A",
+      "rarity": "0",
+      "set": "9999",
+      "card_type": "2",
+      "type": "0",
+      "attack": 0,
+      "health": 1,
+      "cost": 0,
+      "skill": [],
+  },
+  "29998": {
+      "id": "29998",
+      "name": "Unknown 2",
+      "picture": "New2_B",
+      "rarity": "0",
+      "set": "9999",
+      "card_type": "2",
+      "type": "0",
+      "attack": 0,
+      "health": 1,
+      "cost": 0,
+      "skill": [],
+  },
+  "9999": {
+      "id": "9999",
+      "name": "Unknown 3",
+      "picture": "New3_A",
+      "rarity": "0",
+      "set": "9999",
+      "card_type": "2",
+      "type": "0",
+      "attack": 0,
+      "health": 1,
+      "cost": 0,
+      "skill": [],
+  },
+  "19999": {
+      "id": "19999",
+      "name": "Unknown 3",
+      "picture": "New3_A",
+      "rarity": "0",
+      "set": "9999",
+      "card_type": "2",
+      "type": "0",
+      "attack": 0,
+      "health": 1,
+      "cost": 0,
+      "skill": [],
+  },
+  "29999": {
+      "id": "29999",
+      "name": "Unknown 3",
+      "picture": "New3_B",
+      "rarity": "0",
+      "set": "9999",
+      "card_type": "2",
+      "type": "0",
+      "attack": 0,
+      "health": 1,
+      "cost": 0,
+      "skill": [],
+  },
 };
 var MISSIONS = {
   "101": {
@@ -61285,7 +61402,6 @@ var FUSIONS = {
   "8015" : "18015"
 };
 var ACHIEVEMENTS = [];
-var RAIDS = [];
 var BATTLEGROUNDS = [
   {
     "name": "Age of the Dragons",
@@ -61381,7 +61497,7 @@ var BATTLEGROUNDS = [
   },
   {
     "name": "Elemental Surge",
-    "id": "105",
+    "id": "107",
     "effect": {
       "skill": [
         {
@@ -61389,6 +61505,27 @@ var BATTLEGROUNDS = [
           "mult": 0.2,
           "y": "5",
           "z": 5,
+          "all": "1",
+        },
+      ]
+    }
+  },
+  {
+    "name": "Nethergore's Reckoning",
+    "id": "504",
+    "enemy_only": "1",
+    "scale_with_level": "1",
+    "starting_level": "26",
+    "effect": {
+      "skill": [
+        {
+          "id": "heal",
+          "x": 0.8,
+          "all": "1",
+        },
+        {
+          "id": "rally",
+          "x": 0.4,
           "all": "1",
         },
       ]

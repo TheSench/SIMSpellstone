@@ -132,7 +132,6 @@ void Main()
 		writer.WriteLine("};");
 
 		writer.WriteLine("var ACHIEVEMENTS = [];");
-		writer.WriteLine("var RAIDS = [];");
 		writer.WriteLine("var BATTLEGROUNDS = [");
 		for (int i = 0; i < battlegrounds.Length; i++)
 		{
@@ -320,12 +319,31 @@ battleground[] battlegrounds = new battleground[] {
 	},
 	new battleground {
 		Name = "Elemental Surge",
-		ID = "105",
+		ID = "107",
 		Effects = new skill[] {
 			new skill() {
 				id = "rally",
 				mult = "0.2",
 				y = ((int)FactionIDs.Elemental).ToString(),
+				all = "1",
+			},
+		},
+	},
+	new battleground {
+		Name = "Nethergore's Reckoning",
+		ID = "504",
+		enemy_only = "1",
+		scale_with_level = "1",
+		starting_level = "26",
+		Effects = new skill[] {
+			new skill() {
+				id = "heal",
+				x = "0.8",
+				all = "1",
+			},
+			new skill() {
+				id = "rally",
+				x = "0.4",
 				all = "1",
 			},
 		},
@@ -342,6 +360,9 @@ public class battleground
 	public string Name { get; set; }
 	public object[] Effects { get; set; }
 	public string ID { get; set; }
+	public string enemy_only { get; set; }
+	public string scale_with_level { get; set; }
+	public string starting_level { get; set; }
 
 	public override string ToString()
 	{
@@ -349,6 +370,9 @@ public class battleground
 		sb.Append("  {\r\n");
 		sb.Append(tabs).Append("\"name\": \"").Append(Name).Append("\",\r\n");
 		sb.Append(tabs).Append("\"id\": \"").Append(ID).Append("\",\r\n");
+		if (enemy_only != null) sb.Append(tabs).Append("\"enemy_only\": \"").Append(enemy_only).Append("\",\r\n");
+		if (scale_with_level != null) sb.Append(tabs).Append("\"scale_with_level\": \"").Append(scale_with_level).Append("\",\r\n");
+		if (starting_level != null) sb.Append(tabs).Append("\"starting_level\": \"").Append(starting_level).Append("\",\r\n");
 		sb.Append(tabs).Append("\"effect\": {\r\n");
 		sb.Append(tabs2).Append("\"" + Effects.GetType().Name.Replace("[]", "") + "\": [\r\n");
 		AppendEffect(sb);

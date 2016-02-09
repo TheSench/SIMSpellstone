@@ -259,6 +259,7 @@
                 for (phase in turnInfo) {
                     processTurnPhase(phase, p, turnInfo[phase]);
                 }
+                drawField(lastTurn);
             }
         }
         catch (err) {
@@ -266,7 +267,6 @@
         }
         if (areCommandersAlive()) {
             resetKeys();
-            drawField(lastTurn);
             startsim();
         } else {
             drawField(lastTurn, true);
@@ -281,6 +281,12 @@
                 outp('<br><h1>DRAW</h1><br>');
             }
         }
+    }
+    function pausecomp(millis) {
+        var date = new Date();
+        var curDate = null;
+        do { curDate = new Date(); }
+        while (curDate - date < millis);
     }
 
     function areCommandersAlive() {
@@ -511,7 +517,7 @@
             for (var key in targets) {
                 var target = targets[key];
                 var card = cachedField.uids[target.t];
-                card[statusName] += target.x;
+                card[statusName] += ~~target.x;
             }
         } else {
             var value = action.value;
@@ -519,7 +525,7 @@
             for (var key in targets) {
                 var target = targets[key];
                 var card = cachedField.uids[target];
-                card[statusName] += value;
+                card[statusName] += ~~value;
             }
         }
     }
@@ -530,7 +536,7 @@
             for (var key in targets) {
                 var target = targets[key];
                 var card = cachedField.uids[target.t];
-                card[statusName] = target.x;
+                card[statusName] = ~~target.x;
             }
         } else {
             var value = action.value;
@@ -538,7 +544,7 @@
             for (var key in targets) {
                 var target = targets[key];
                 var card = cachedField.uids[target];
-                card[statusName] = value;
+                card[statusName] = ~~value;
             }
         }
     }
@@ -575,7 +581,7 @@
             for (var key in targets) {
                 var target = targets[key];
                 var card = cachedField.uids[target.t];
-                card.health_left += target.x;
+                card.health_left += ~~target.x;
             }
         } else {
             var value = action.value;
@@ -583,7 +589,7 @@
             for (var key in targets) {
                 var target = targets[key];
                 var card = cachedField.uids[target];
-                card.health_left += value;
+                card.health_left += ~~value;
             }
         }
         updateFlags(action.status);
@@ -602,7 +608,7 @@
             for (var key in targets) {
                 var target = targets[key];
                 var card = cachedField.uids[target.t];
-                damageCard(card, target.x);
+                damageCard(card, ~~target.x);
             }
         } else {
             var value = action.value;
@@ -610,7 +616,7 @@
             for (var key in targets) {
                 var target = targets[key];
                 var card = cachedField.uids[target];
-                damageCard(card, value);
+                damageCard(card, ~~value);
             }
         }
         updateFlags(action.status);
