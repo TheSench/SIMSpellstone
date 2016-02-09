@@ -292,6 +292,16 @@ var DeckRetriever = (function () {
     }
     //-- End  Practice Battle
 
+    function resumeBattle() {
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('getBattleResults', params, function (response) {
+                BattleAPI.continueBattle(response);
+                HideLoadingSplash();
+            });
+        }, 1);
+    }
+
     function playCard(card_index) {
         var params = {
             battle_id: 0,
@@ -503,6 +513,7 @@ var DeckRetriever = (function () {
         startClashBattle: startClashBattle,
         fightGuildMember: fightGuildMember,
         startRaidBattle: startRaidBattle,
+        resumeBattle: resumeBattle,
         playCard: playCard,
         forfeitBattle: forfeitBattle,
     }
