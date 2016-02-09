@@ -104,15 +104,6 @@
     background-image: linear-gradient(grey, black);
 }
 
-.sprite {
-    position: absolute;
-    background-repeat: no-repeat;
-    background-image: url('../res/cardImages/SpriteSheet.png');
-    display: block;
-    height: 100%;
-    width: 100%;
-}
-
 img[src='Error.src'] {
     display: none;
 }
