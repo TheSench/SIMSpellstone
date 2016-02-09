@@ -1514,6 +1514,20 @@ var get_card_apply_battlegrounds = function (id) {
     return get_card_by_id(id, battlegrounds.onCreate);
 }
 
+function get_skills(id, level) {
+    var card = CARDS[id];
+    var skills = card.skill;
+    if (level > 1) {
+        var upgrade;
+        for (var key in card.upgrades) {
+            upgrade = card.upgrades[key];
+            if (upgrade.skill.length > 0) skills = upgrade.skill;
+            if (key == level) break;
+        }
+    }
+    return skills;
+}
+
 function get_card_by_id(unit, skillModifiers) {
 
     var unitKey = unit.id + "-" + unit.level;

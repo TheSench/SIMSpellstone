@@ -487,7 +487,7 @@ function getOrderStatsTable() {
     if (!trackStats) return '';
 
     var winrateKeys = [];
-    var cardStats = {
+    cardStats = {
         keys: []
     };
     for (var key in orders) {
@@ -999,3 +999,5 @@ var cache_cpu_deck_cards;
 var choice = undefined;
 var auto_mode = false;
 var suppressOutput = false;
+var orders = {};
+var cardStats = {};
