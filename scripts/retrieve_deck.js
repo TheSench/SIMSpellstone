@@ -189,7 +189,7 @@ var DeckRetriever = (function () {
     function startFirstBountyBattle() {
         for (var key in huntingTargets) {
             target_user_id = key;
-            doStartBountyBattle();
+            doStartBountyBattle(target_user_id);
             return true;
             break;
         }
