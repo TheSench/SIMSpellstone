@@ -3,6 +3,10 @@
     var cachedHands;
     var cachedDraws;
 
+    var trackPlays = _DEFINED("trackPlays");
+    var trackedPlays = {};
+    var statPlays = {};
+
     var module = {};
 
     BattleAPI.beginBattle = processJSONResponse;
@@ -53,13 +57,38 @@
         }
     }
 
-    module.fight = function () {
+    var lastID = 0;
+    var continues = 0;
+    module.fight = function (isContinue) {
         var baseRequest = DeckRetriever.baseRequest;
         var targetID = document.getElementById("targetUserID").value;
         if (baseRequest) {
             var battleType = document.getElementById("battleType").value;
+            if (battleType == "fightGuildMember" && _DEFINED("spam")) {
+                targetID = getTarget();
+                if (!isContinue) {
+                    continues = 20;
+                } else {
+                    continues--;
+                }
+                if (!targetID) {
+                    DeckRetriever.getFactionMemberIDs();
+                    lastID = 0;
+                    return;
+                }
+            }
+
             BattleAPI[battleType](targetID);
         }
+    }
+
+    function getTarget() {
+        var target = DeckRetriever.factionMemberIDs[lastID];
+        if (target && target == DeckRetriever.baseRequest.user_id) {
+            lastID++;
+            target = getTarget();
+        }
+        return target;
     }
 
     function processJSONResponse(data) {
@@ -120,7 +149,15 @@
             rune: ""
         };
         if (unit.runes.length) unit2.rune = unit.runes[0].id;
-        return JSON.stringify(unit2);
+        var unitString = JSON.stringify(unit2).replace(/"/g, "");
+        return unitString;
+    }
+
+
+    function makeStatString(unit) {
+        var rarity = CARDS[unit.id].rarity;
+        var unitString = "{ " + getFusion(unit.id) + " " + getRarity(rarity) + " " + getLevel(rarity, unit.level) + " }"
+        return unitString;
     }
 
     function setupBattlegrounds() {
@@ -182,6 +219,9 @@
         end_sims_callback = function () {
             document.getElementById('ui').style.display = 'none';
             drawField();
+            if (_DEFINED("auto")) {
+                checkBest();
+            }
         }
         document.getElementById('ui').style.display = 'none';
         var deck_player = { deck: [] };
@@ -247,9 +287,51 @@
         if (d) d.checked = true;
     }
 
+    function checkBest() {
+        var avgPoints = -99;
+        var hash;
+        var name;
+        for (var i = 0; i < cardStats.keys.length; i++) {
+            var key = cardStats.keys[i];
+            var stats = cardStats[key];
+            if (stats.avgPoints > avgPoints) {
+                avgPoints = stats.avgPoints;
+                hash = key;
+                name = stats.card;
+            }
+        }
+
+        choice = 0;
+
+        if (hash) {
+            var card = hash_decode(hash).deck[0];
+            var hand = cachedHands.player;
+            for (var i = 0; i < hand.length; i++) {
+                var cardInHand = hand[i];
+                if (cardInHand.id == card.id && cardInHand.level == card.level) {
+                    if (cardInHand.runes.length == card.runes.length) {
+                        if (cardInHand.runes.length) {
+                            if (cardInHand.runes[0].id == card.runes[0].id) {
+                                choice = i;
+                                break;
+                            }
+                        } else {
+                            choice = i;
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        var card = cachedHands.player[choice];
+        var uid = card.uid;
+        BattleAPI.playCard(uid, 1);
+    }
+
     function playTurns(data, playTurn0) {
         var lastTurn = 0;
-        try {
+        /*try {*/
             var turns = data.battle_data.turn;
             for (var turn in turns) {
                 if (turn > lastTurn) lastTurn = turn;
@@ -261,10 +343,10 @@
                 }
                 drawField(lastTurn);
             }
-        }
+        /*}
         catch (err) {
             alert(err);
-        }
+        }*/
         if (areCommandersAlive()) {
             resetKeys();
             startsim();
@@ -280,8 +362,24 @@
             } else {
                 outp('<br><h1>DRAW</h1><br>');
             }
+
+            if (trackPlays) {
+                //outputTrackedCards();
+                //outputTrackedStats();
+            }
+
+            if (_DEFINED("spam")) {
+                if (continues > 0) {
+                    module.fight(true);
+                } else {
+                    lastID++;
+                    module.fight(false);
+                }
+            }
         }
     }
+
+
     function pausecomp(millis) {
         var date = new Date();
         var curDate = null;
@@ -386,7 +484,7 @@
 
     function countdownSkill(card, status_flag, value) {
         var skillIndex = status_flag.substring(0, status_flag.indexOf("_"));
-        var skills = CARDS[card.id].skill;
+        var skills = get_skills(card.id, card.level);
         var skillType = skills[skillIndex].id;
         var instances = 0;
         for (var i = 0; i <= skillIndex; i++) {
@@ -640,7 +738,6 @@
         }
     }
 
-
     function doSetEvade(p) {
         var assaults = cachedField[p].assaults;
         for (var i = 0; i < assaults.length; i++) {
@@ -658,6 +755,11 @@
         assaults.push(card);
 
         var hand = cachedHands[p];
+
+        if (trackPlays && p == 'cpu') {
+            trackPlay(card, hand);
+        }
+
         for (var i = 0; i < hand.length; i++) {
             var card = hand[i];
             if (card.uid == uid) {
@@ -665,6 +767,206 @@
                 break;
             }
         }
+    }
+
+    function trackPlay(card, hand) {
+        var picked = makeUnitInfo(card.id, card.level, card.runes);
+        //var pickedKey = makeUnitString(picked);
+        var pickedStatsKey = makeStatString(picked);
+        //var pickedChoiceInfo = getChoices(pickedKey, picked);
+        var pickedStatChoiceInfo = getStatChoices(pickedStatsKey);
+        //var skipped = false;
+        for (var i = 0; i < hand.length; i++) {
+            var card = hand[i];
+            var unitInfo = makeUnitInfo(card.id, card.level, card.runes);
+            //var unitKey = makeUnitString(unitInfo);
+            var unitStatsKey = makeStatString(unitInfo);
+            /*if (pickedKey == unitKey && !skipped) {
+                skipped = true; // Don't mark this card against itself, but do track it against other copies.
+            } else*/ {
+                /*
+                var cardChoiceInfo = getChoices(unitKey, unitInfo);
+                var pickedBefore = pickedChoiceInfo.chosenBefore[unitKey];
+                if (pickedBefore) {
+                    pickedBefore.times++;
+                } else {
+                    pickedChoiceInfo.chosenBefore[unitKey] = {
+                        cardName: cardChoiceInfo.cardName,
+                        times: 1
+                    }
+                }
+                
+                var pickedAfter = cardChoiceInfo.chosenAfter[pickedKey];
+                if (pickedAfter) {
+                    pickedAfter.times++;
+                } else {
+                    cardChoiceInfo.chosenAfter[pickedKey] = {
+                        cardName: pickedChoiceInfo.cardName,
+                        times: 1
+                    }
+                }
+                */
+                if (pickedStatsKey != unitStatsKey) {
+                    var pickedBefore = pickedStatChoiceInfo.chosenBefore[unitStatsKey];
+                    if (pickedBefore) {
+                        pickedBefore.times++;
+                    } else {
+                        pickedStatChoiceInfo.chosenBefore[unitStatsKey] = {
+                            times: 1
+                        }
+                    }
+                    var statChoiceInfo = getStatChoices(unitStatsKey);
+                    var pickedAfter = statChoiceInfo.chosenAfter[pickedStatsKey];
+                    if (pickedAfter) {
+                        pickedAfter.times++;
+                    } else {
+                        statChoiceInfo.chosenAfter[pickedStatsKey] = {
+                            times: 1
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    function getChoices(key, unitInfo) {
+        var choices = trackedPlays[key];
+        var card = get_card_by_id(unitInfo);
+        var cardName = card.name + " {" + getFusion(unitInfo.id) + "} (" + card.level + "/" + card.maxLevel + ")" + (card.runes.length ? "*" : "");
+        if (!choices) {
+            choices = {
+                cardName: cardName,
+                chosenBefore: {},
+                chosenAfter: {}
+            };
+            trackedPlays[key] = choices;
+        }
+        return choices;
+    }
+
+    function getStatChoices(key) {
+        var choices = statPlays[key];
+        if (!choices) {
+            choices = {
+                chosenBefore: {},
+                chosenAfter: {}
+            };
+            statPlays[key] = choices;
+        }
+        return choices;
+    }
+
+    var fusionStrings = ["S", "D", "Q"];
+    //var fusionStrings = ["Single", "Dual", "Quad"];
+    function getFusion(cardID) {
+        var fusion = (cardID.length > 4 ? parseInt(cardID[0]) : 0);
+        return fusionStrings[fusion];
+    }
+
+    var rarityStrings = ["None", "Common", "Rare", "Epic", "Legendary", "Mythic"];
+    function getRarity(rarity) {
+        return rarityStrings[rarity];
+    }
+
+    function getLevel(rarity, level) {
+        return "(" + level + "/" + (2 + parseInt(rarity)) + ")";
+    }
+
+    function outputTrackedCards() {
+        var trackedPlayRows = [];
+        var plays = [];
+        for (var key in trackedPlays) {
+            plays.push(key);
+
+            var play = trackedPlays[key];
+            play.beforeCount = getChoiceCount(play.chosenBefore);
+            play.afterCount = getChoiceCount(play.chosenAfter);
+        }
+        plays.sort(function (keyA, keyB) {
+            var compare = trackedPlays[keyA].afterCount - trackedPlays[keyB].afterCount;
+            if(compare != 0) return compare;
+            return trackedPlays[keyB].beforeCount - trackedPlays[keyA].beforeCount;
+        })
+        for (var i = 0; i < plays.length; i++) {
+            var key = plays[i];
+            var play = trackedPlays[key];
+            var output = "<b>" + play.cardName + "</b>";
+            var chosenAfter = [];
+            for (var key in play.chosenAfter) {
+                var choice = play.chosenAfter[key];
+                chosenAfter.push(choice.cardName);// + " x" + choice.times);
+            }
+            chosenAfter.sort();
+            var chosenBefore = [];
+            for (var key in play.chosenBefore) {
+                var choice = play.chosenBefore[key];
+                chosenBefore.push(choice.cardName);// + " x" + choice.times);
+            }
+            chosenBefore.sort();
+
+            if (play.afterCount > 0) output += "<br/>&nbsp;&nbsp;&nbsp;&nbsp;<strong>chosen after (" + play.afterCount + "):</strong> " + chosenAfter.join(", ");
+            if (play.beforeCount > 0) output += "<br/>&nbsp;&nbsp;&nbsp;&nbsp;<strong>chosen before (" + play.beforeCount + "):</strong> " + chosenBefore.join(", ");
+            trackedPlayRows.push(output);
+        }
+        trackedPlayRows = trackedPlayRows.join("<br/>");
+        document.getElementById("results_table").innerHTML = trackedPlayRows;
+    }
+
+    function outputTrackedStats() {
+        var trackedPlayRows = [];
+        var plays = [];
+        for (var key in statPlays) {
+            plays.push(key);
+
+            var play = statPlays[key];
+            play.beforeCount = getChoiceCount(play.chosenBefore);
+            play.afterCount = getChoiceCount(play.chosenAfter);
+        }
+        plays.sort(function (keyA, keyB) {
+            var compare = statPlays[keyA].afterCount - statPlays[keyB].afterCount;
+            if (compare != 0) return compare;
+            return statPlays[keyB].beforeCount - statPlays[keyA].beforeCount;
+        })
+        for (var i = 0; i < plays.length; i++) {
+            var key = plays[i];
+            var play = statPlays[key];
+            var output = "<b>" + key + "</b>";
+
+            var chosenAfter = [];
+            var equivalent = [];
+            for (var key in play.chosenAfter) {
+                var choice = play.chosenAfter[key];
+                if (play.chosenBefore[key]) equivalent.push(key)
+                else chosenAfter.push(key);// + " x" + choice.times);
+            }
+            chosenAfter.sort();
+            var chosenBefore = [];
+            for (var key in play.chosenBefore) {
+                var choice = play.chosenBefore[key];
+                if (play.chosenAfter[key]) equivalent.push(key)
+                else chosenBefore.push(key);// + " x" + choice.times);
+            }
+            equivalent = equivalent.filter(function (item, pos) {
+                return equivalent.indexOf(item) == pos;
+            });
+
+            chosenBefore.sort();
+            var newLine = "<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+            if (chosenBefore.length > 0) output += "<br/>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Better than (" + chosenBefore.length + "):</strong>" + newLine + chosenBefore.join(newLine);
+            if (equivalent.length > 0) output += "<br/>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Same As (" + equivalent.length + "):</strong>" + newLine + equivalent.join(newLine);
+            if (chosenAfter.length > 0) output += "<br/>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Worse than (" + chosenAfter.length + "):</strong>" + newLine + chosenAfter.join(newLine);
+            trackedPlayRows.push(output);
+        }
+        trackedPlayRows = trackedPlayRows.join("<br/>");
+        document.getElementById("results_table").innerHTML = '<br/><br/>' + trackedPlayRows;
+    }
+
+    function getChoiceCount(choices) {
+        var count = 0;
+        for (var key in choices) {
+            count++;// += choices[key].times;
+        }
+        return count;
     }
 
     function processRemoval(turnData) {

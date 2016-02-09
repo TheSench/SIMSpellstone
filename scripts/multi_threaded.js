@@ -533,5 +533,4 @@ if (use_workers) {
 
     var last_start_times = [];
     var end_sims_callback;
-    var orders = {};
 }

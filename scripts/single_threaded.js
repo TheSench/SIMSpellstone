@@ -394,5 +394,4 @@ if (!use_workers) {
     var run_sims_batch = 0;
     var user_controlled = false;
     var end_sims_callback;
-    var orders = {};
 }

@@ -1128,7 +1128,23 @@ if (simulator_thread) {
             } else {
                 // Play first card in hand
                 if (deck_p_deck.length > 1 && deck_p.shuffleHand) {
-                    card_picked = ~~(Math.random() * deck_p_deck.slice(0, 3).length);
+                    var best = [];
+                    var bestRank = 0;
+                    var hand = deck_p_deck.slice(0, 3);
+                    for (var i = 0; i < hand.length; i++) {
+                        var card = hand[i];
+                        var rank = getCardRanking(card);
+                        if (!bestRank) {
+                            bestRank = rank;
+                            best.push(i);
+                        } else if (rank == bestRank) {
+                            best.push(i);
+                        } else if (rank > bestRank) {
+                            bestRank = rank;
+                            best = [i];
+                        }
+                    }
+                    card_picked = best[~~(Math.random() * best.length)];
                 }
                 play_card(deck_p_deck[card_picked], p);
             }
@@ -1142,6 +1158,18 @@ if (simulator_thread) {
         }
         return true;
     };
+
+    var getCardRanking = function(card) {
+        var cardID = card.id.toString();
+
+        var fusion = (cardID.length > 4 ? parseInt(cardID[0]) : 0);
+        var rarity = parseInt(card.rarity);
+        var level = parseInt(card.level);
+
+        var ranking = rarity + fusion + level;
+
+        return ranking;
+    }
 
     var play_turn = function (p, o, field) {
 

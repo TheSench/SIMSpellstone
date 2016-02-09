@@ -4,6 +4,7 @@ var DeckRetriever = (function () {
     var baseURL = "https://crossorigin.me/https://spellstone.synapse-games.com/api.php?";
     var baseRequest = {};
     var form;
+    var factionMemberIDs = [];
 
     function HideLoadingSplash() {
         $("body").removeClass("loading");
@@ -295,19 +296,22 @@ var DeckRetriever = (function () {
     function resumeBattle() {
         DisplayLoadingSplash();
         setTimeout(function () {
-            sendRequest('getBattleResults', params, function (response) {
+            sendRequest('getBattleResults', null, function (response) {
                 BattleAPI.continueBattle(response);
                 HideLoadingSplash();
             });
         }, 1);
     }
 
-    function playCard(card_index) {
+    function playCard(card_index, skip) {
         var params = {
             battle_id: 0,
             skip: 0,
             card_uid: card_index,
             host_id: baseRequest.user_id
+        }
+        if (skip) {
+            params.skip = 1;
         }
 
         DisplayLoadingSplash();
@@ -348,6 +352,21 @@ var DeckRetriever = (function () {
                 }
                 HideLoadingSplash();
                 if(callback) callback();
+            });
+        }, 1);
+    }
+
+    function getFactionMemberIDs(callback) {
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('updateFaction', null, function (response) {
+                var members = response.faction.members;
+                factionMemberIDs.length = 0;
+                for (var key in members) {
+                    factionMemberIDs.push(key);
+                }
+                HideLoadingSplash();
+                if (callback) callback();
             });
         }, 1);
     }
@@ -520,6 +539,7 @@ var DeckRetriever = (function () {
 
     var publicInfo = {
         getFieldsFromRequest: getFieldsFromRequest,
+        getFactionMemberIDs: getFactionMemberIDs,
         retrieveGuildDecks: retrieveGuildDecks,
         getDecksfromFile: getDecksfromFile,
         retrieveMyDeck: retrieveMyDeck,
@@ -528,6 +548,7 @@ var DeckRetriever = (function () {
         factionDecks: {},
         allDecks: {},
         baseRequest: baseRequest,
+        factionMemberIDs: factionMemberIDs
     }
     return publicInfo;
 })();
