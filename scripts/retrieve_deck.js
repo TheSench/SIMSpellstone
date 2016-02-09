@@ -183,15 +183,18 @@ var DeckRetriever = (function () {
     }
 
     function processHuntingTargets(data) {
-        huntingTargets = data.hunting_targets;
+        huntingTargets = [];
+        for (var key in data.hunting_targets) {
+            huntingTargets.push(key);
+        }
     }
 
     function startFirstBountyBattle() {
-        for (var key in huntingTargets) {
-            target_user_id = key;
+        if (huntingTargets.length) {
+            target_user_id = huntingTargets[0];
+            huntingTargets.splice(0, 1);
             doStartBountyBattle(target_user_id);
             return true;
-            break;
         }
         return false;
     }
