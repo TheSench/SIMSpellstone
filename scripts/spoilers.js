@@ -1,1 +1,13 @@
-var spoilers = {commander: elariaCaptain, deck: [ {id: 6032, level: 7}, {id: 16032, level: 7}, {id: 26032, level: 7} ]};
+var spoilers = {};
+spoilers[5038] = true;
+spoilers[15038] = true;
+spoilers[25038] = true;
+spoilers[9997] = true;
+spoilers[19997] = true;
+spoilers[29997] = true;
+spoilers[9998] = true;
+spoilers[19998] = true;
+spoilers[29998] = true;
+spoilers[9999] = true;
+spoilers[19999] = true;
+spoilers[29999] = true;

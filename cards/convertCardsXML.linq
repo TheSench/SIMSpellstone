@@ -3,7 +3,7 @@
 </Query>
 
 static bool getImages = false;
-static bool downloadFiles = false;
+static bool downloadFiles = true;
 
 static string path = Path.GetDirectoryName(Util.CurrentQueryPath);
 static string baseUrl = @"https://spellstone.synapse-games.com/assets";
@@ -64,7 +64,7 @@ void Main()
 	}
 	if (newUnits.Count > 0)
 	{
-		var spoilers = "var spoilers = {commander: elariaCaptain, deck: [ " + String.Join(", ", newUnits.Select(unit => String.Format("{{id: {0}, level: 7}}", unit))) + " ]};";
+		var spoilers = "var spoilers = {};\r\n" + String.Join("\r\n", newUnits.Select(id => String.Format("spoilers[{0}] = true;", id)));
 		newUnits.Dump("New Units:");
 		File.WriteAllText(Path.Combine(path, "../scripts", "spoilers.js"), spoilers);
 	}
@@ -75,19 +75,27 @@ void Main()
 	{
 		id = node.Element("id").Value,
 		name = node.Element("name").Value,
-		commander = node.Element("commander").Attribute("id").Value,
-		deck = node.Element("deck").Elements("card").Where(card => card.Attribute("remove_mastery_level") == null).Select(card => card.Attribute("id").Value).ToArray()
+		commander = node.Elements("commander").Select(card => new missionCard()
+		{
+			id = card.Attribute("id").Value,
+			level = (string)card.Attribute("level"),
+		}).FirstOrDefault(),
+		deck = node.Element("deck").Elements("card").Select(card => new missionCard()
+		{
+			id = card.Attribute("id").Value,
+			level = (string)card.Attribute("level"),
+			mastery_level = (string)card.Attribute("mastery_level"),
+			remove_mastery_level = (string)card.Attribute("remove_mastery_level"),
+		}).ToArray()
 	}).OrderBy(m => m.id);
 
 	xmlFile = Path.Combine(path, "fusion_recipes_cj2.xml");
 	doc = XDocument.Load(xmlFile);
-	var fusions = doc.Descendants("mission").Select(node => new mission()
+	var fusions = doc.Descendants("fusion_recipe").Select(node => new fusionRecipe()
 	{
-		id = node.Element("id").Value,
-		name = node.Element("name").Value,
-		commander = node.Element("commander").Attribute("id").Value,
-		deck = node.Element("deck").Elements("card").Select(card => card.Attribute("id").Value).ToArray()
-	}).OrderBy(m => m.id);
+		fusedCardID = node.Element("card_id").Value,
+		baseCardID = node.Element("resource").Attribute("card_id").Value,
+	}).OrderBy(f => f.baseCardID);
 
 	var file = new FileInfo(Path.Combine(path, "cache.js"));
 	using (var writer = file.CreateText())
@@ -104,19 +112,26 @@ void Main()
 			writer.WriteLine("  \"" + mission.id + "\": {");
 			writer.WriteLine("    \"id\": \"" + mission.id + "\",");
 			writer.WriteLine("    \"name\": \"" + mission.name + "\",");
-			writer.WriteLine("    \"commander\": \"" + mission.commander + "\",");
+			writer.WriteLine("    \"commander\": {");
+			writer.WriteLine(mission.commander.ToString());
+			writer.WriteLine(     "},");
 			writer.WriteLine("    \"deck\": [");
 			foreach (var card in mission.deck)
 			{
-				writer.WriteLine("      \"" + card + "\",");
+				writer.WriteLine("      {");
+				writer.WriteLine(card.ToString());
+				writer.WriteLine("      },");
 			}
 			writer.WriteLine("    ]");
 			writer.WriteLine("  },");
 		}
 		writer.WriteLine("};");
+		
+		writer.WriteLine("var FUSIONS = {");
+		writer.WriteLine(String.Join(",\r\n", fusions.Select(f => f.ToString())));
+		writer.WriteLine("};");
 
 		writer.WriteLine("var ACHIEVEMENTS = [];");
-		writer.WriteLine("var RAIDS = [];");
 		writer.WriteLine("var BATTLEGROUNDS = [");
 		for (int i = 0; i < battlegrounds.Length; i++)
 		{
@@ -290,6 +305,49 @@ battleground[] battlegrounds = new battleground[] {
 			},
 		},
 	},
+	new battleground {
+		Name = "Angelic Legion",
+		ID = "106",
+		Effects = new add_skill[] {
+			new add_skill() {
+				id = "legion",
+				mult = "1",
+				Base = "rarity",
+				y = ((int)FactionIDs.Angel).ToString(),
+			},
+		},
+	},
+	new battleground {
+		Name = "Elemental Surge",
+		ID = "107",
+		Effects = new skill[] {
+			new skill() {
+				id = "rally",
+				mult = "0.2",
+				y = ((int)FactionIDs.Elemental).ToString(),
+				all = "1",
+			},
+		},
+	},
+	new battleground {
+		Name = "Nethergore's Reckoning",
+		ID = "504",
+		enemy_only = "1",
+		scale_with_level = "1",
+		starting_level = "26",
+		Effects = new skill[] {
+			new skill() {
+				id = "heal",
+				x = "0.8",
+				all = "1",
+			},
+			new skill() {
+				id = "rally",
+				x = "0.4",
+				all = "1",
+			},
+		},
+	},
 };
 
 public class battleground
@@ -302,6 +360,9 @@ public class battleground
 	public string Name { get; set; }
 	public object[] Effects { get; set; }
 	public string ID { get; set; }
+	public string enemy_only { get; set; }
+	public string scale_with_level { get; set; }
+	public string starting_level { get; set; }
 
 	public override string ToString()
 	{
@@ -309,6 +370,9 @@ public class battleground
 		sb.Append("  {\r\n");
 		sb.Append(tabs).Append("\"name\": \"").Append(Name).Append("\",\r\n");
 		sb.Append(tabs).Append("\"id\": \"").Append(ID).Append("\",\r\n");
+		if (enemy_only != null) sb.Append(tabs).Append("\"enemy_only\": \"").Append(enemy_only).Append("\",\r\n");
+		if (scale_with_level != null) sb.Append(tabs).Append("\"scale_with_level\": \"").Append(scale_with_level).Append("\",\r\n");
+		if (starting_level != null) sb.Append(tabs).Append("\"starting_level\": \"").Append(starting_level).Append("\",\r\n");
 		sb.Append(tabs).Append("\"effect\": {\r\n");
 		sb.Append(tabs2).Append("\"" + Effects.GetType().Name.Replace("[]", "") + "\": [\r\n");
 		AppendEffect(sb);
@@ -773,8 +837,46 @@ public partial class mission
 {
 	public string id { get; set; }
 	public string name { get; set; }
-	public string commander { get; set; }
-	public string[] deck { get; set; }
+	public missionCard commander { get; set; }
+	public missionCard[] deck { get; set; }
+}
+
+public partial class missionCard
+{
+	public string id { get; set; }
+	public string level { get; set; }
+	public string mastery_level { get; set; }
+	public string remove_mastery_level { get; set; }
+
+	public override string ToString()
+	{
+		var fields = new List<string>();
+		var spaces = "        ";
+		AddFieldIfSpecified(fields, "id", id, spaces);
+		AddFieldIfSpecified(fields, "level", level, spaces);
+		AddFieldIfSpecified(fields, "mastery_level", mastery_level, spaces);
+		AddFieldIfSpecified(fields, "remove_mastery_level", remove_mastery_level, spaces);
+		return String.Join(",\r\n", fields);
+	}
+}
+
+private static void AddFieldIfSpecified(List<string> fields, string name, string value, string spaces)
+{
+	if (!String.IsNullOrWhiteSpace(value))
+	{
+		fields.Add(spaces + "\"" + name + "\": \"" + value + "\"");
+	}
+}
+
+public partial class fusionRecipe
+{
+	public string baseCardID;
+	public string fusedCardID;
+
+	public override string ToString()
+	{
+		return "  \"" + baseCardID + "\" : \"" + fusedCardID + "\"";
+	}
 }
 
 private static void AppendEntry(StringBuilder sb, string name, string value, string tabs)

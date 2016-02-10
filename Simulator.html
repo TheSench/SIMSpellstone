@@ -5,13 +5,18 @@
     <title id="title_tag">SimSpellstone - The Spellstone Simulator that runs from your browser!</title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css" media="screen">
     <link rel="stylesheet" type="text/css" href="styles/card.css">
+    <link rel="stylesheet" type="text/css" href="styles/spritesheet.css">
 
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/seedrandom/2.4.0/seedrandom.min.js"></script>
+
     <!-- This script contains the cached data for cards, missions, quests, raids,
         and battlegrounds -->
     <script id="cards_script" type="text/javascript" src="cards/cache.js"></script>
+    <script id="runes_script" type="text/javascript" src="scripts/runes.js"></script>
+    <script id="raids_script" type="text/javascript" src="scripts/raids.js"></script>
 
     <!-- This script contains version info that changes each update -->
     <script id="common_variables" type="text/javascript" src="scripts/common.js"></script>
@@ -97,6 +102,7 @@
     <br>
     <h1 id="version_label">SimSpellstone</h1>
     <h4 id="version_label2"></h4>
+    <div id="remaining" style="display:none"></div>
     <br>
     <span id="ui">
         <form>
@@ -121,12 +127,19 @@
             <br>
             <div>Ordered Enemy Deck:</div><input type="checkbox" id="ordered2">
             <div><u>Exact Order (ignore 3-card hand rule):</u></div><input type="checkbox" id="exactorder2"><br>
-            <div>Castle Siege:</div><input type="checkbox" id="siege"><input type="NUMBER" id="tower_level" min="1" max="15" step="1" value="10" size="6"><select id="tower_type"></select>
+            <div>Castle Siege:</div><input type="checkbox" id="siege"><input type="NUMBER" id="tower_level" min="1" max="18" step="1" value="10" size="6"><select id="tower_type"></select>
             <br>
             <div><i>Mission (7*):</i></div>
             <select id="mission">
                 <option value="" />
             </select>
+            <input style="float:initial;" type="NUMBER" id="mission_level" min="1" max="7" step="1" value="7" size="6">
+            <br>
+            <div><i>Raid (Maxed):</i></div>
+            <select id="raid">
+                <option value="" />
+            </select>
+            <input style="float:initial;" type="NUMBER" id="raid_level" min="1" max="40" step="1" value="40" size="6">
             <br>
             <div><i>Battleground:</i></div>
             <div id="battleground" style="overflow: auto; width: 200px; height: 80px; border: 1px solid #336699; padding-left: 5px; text-align: left; "></div>

@@ -848,6 +848,38 @@
     <card_id>22022</card_id>
     <resource card_id="12022" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12023</card_id>
+    <resource card_id="2023" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22023</card_id>
+    <resource card_id="12023" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12024</card_id>
+    <resource card_id="2024" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22024</card_id>
+    <resource card_id="12024" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12025</card_id>
+    <resource card_id="2025" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22025</card_id>
+    <resource card_id="12025" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12026</card_id>
+    <resource card_id="2026" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22026</card_id>
+    <resource card_id="12026" number="2" />
+  </fusion_recipe>
   <!-- END SET 2000 - Reward -->
   <!-- START SET 3000 - Premium -->
   <!-- AETHER PREMIUM SET BEGIN -->
@@ -1115,6 +1147,54 @@
     <card_id>25032</card_id>
     <resource card_id="15032" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15033</card_id>
+    <resource card_id="5033" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25033</card_id>
+    <resource card_id="15033" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15034</card_id>
+    <resource card_id="5034" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25034</card_id>
+    <resource card_id="15034" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15035</card_id>
+    <resource card_id="5035" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25035</card_id>
+    <resource card_id="15035" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15036</card_id>
+    <resource card_id="5036" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25036</card_id>
+    <resource card_id="15036" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15037</card_id>
+    <resource card_id="5037" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25037</card_id>
+    <resource card_id="15037" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15038</card_id>
+    <resource card_id="5038" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25038</card_id>
+    <resource card_id="15038" number="2" />
+  </fusion_recipe>
   <!-- CHAOS PREMIUM SET BEGIN -->
   <fusion_recipe>
     <card_id>16000</card_id>
@@ -1379,6 +1459,46 @@
   <fusion_recipe>
     <card_id>26032</card_id>
     <resource card_id="16032" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16033</card_id>
+    <resource card_id="6033" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26033</card_id>
+    <resource card_id="16033" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16034</card_id>
+    <resource card_id="6034" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26034</card_id>
+    <resource card_id="16034" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16035</card_id>
+    <resource card_id="6035" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26035</card_id>
+    <resource card_id="16035" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16036</card_id>
+    <resource card_id="6036" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26036</card_id>
+    <resource card_id="16036" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16037</card_id>
+    <resource card_id="6037" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26037</card_id>
+    <resource card_id="16037" number="2" />
   </fusion_recipe>
   <!-- WYLD PREMIUM SET BEGIN -->
   <fusion_recipe>
@@ -1645,6 +1765,46 @@
     <card_id>27032</card_id>
     <resource card_id="17032" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17033</card_id>
+    <resource card_id="7033" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27033</card_id>
+    <resource card_id="17033" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17034</card_id>
+    <resource card_id="7034" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27034</card_id>
+    <resource card_id="17034" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17035</card_id>
+    <resource card_id="7035" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27035</card_id>
+    <resource card_id="17035" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17036</card_id>
+    <resource card_id="7036" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27036</card_id>
+    <resource card_id="17036" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17037</card_id>
+    <resource card_id="7037" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27037</card_id>
+    <resource card_id="17037" number="2" />
+  </fusion_recipe>
   <!-- END SET 3000 - Premium -->
   <!-- START SET 8000 - Story Element Assaults -->
   <fusion_recipe>
@@ -1686,6 +1846,46 @@
   <fusion_recipe>
     <card_id>28004</card_id>
     <resource card_id="18004" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>18011</card_id>
+    <resource card_id="8011" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>28011</card_id>
+    <resource card_id="18011" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>18012</card_id>
+    <resource card_id="8012" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>28012</card_id>
+    <resource card_id="18012" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>18013</card_id>
+    <resource card_id="8013" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>28013</card_id>
+    <resource card_id="18013" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>18014</card_id>
+    <resource card_id="8014" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>28014</card_id>
+    <resource card_id="18014" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>18015</card_id>
+    <resource card_id="8015" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>28015</card_id>
+    <resource card_id="18015" number="2" />
   </fusion_recipe>
   <!-- END SET 8000 - Story Element Assaults -->
 </root>

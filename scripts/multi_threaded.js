@@ -4,6 +4,7 @@ if (use_workers) {
     var workers = [];
     var max_workers = 1;
     var smoothing_factor = 5;	// Used by the progress reporting logic, determines how many .1 second intervals back to go for sims/sec calculations
+    var progress = false;
 
     // Create a new worker object and add a listener to handle messages from it.
     var createWorker = function (id) {
@@ -29,47 +30,103 @@ if (use_workers) {
         return worker;
     }
 
+    var RESULTS = 0;
+    var STATS = 1;
+
     // Handle messages from the worker thread using Transferable Objects
     // (Transferable Objects are faster, but they are not supported
     // by all browsers.)
     var ProcessTransferableObjectsMessage = function (e) {
         if (sims_left) {
             var msg = e.data;
+            var view = new DataView(msg, 0, 4);
+            switch (view.getInt32(0)) {
+                case RESULTS:
+                    progress = true;
+                    view = new Int32Array(msg, 4, 6);
+                    var num_games = view[0];
+                    var num_wins = view[1];
+                    var num_draws = view[2];
+                    var num_losses = view[3];
+                    var turns = view[4];
+                    var points = view[5];
+                    view = new DataView(msg, 28, 8);
+                    var time_started = view.getFloat64(0);
+                    // If a worker's echo is included in results...
+                    if (msg.byteLength > 36) {
+                        // ... convert it from a byte array to a string
+                        var view = new Uint16Array(msg, 36);
+                        var chararray = [];
+                        for (var i = 0, len = view.length; i < len; i++) {
+                            chararray.push(String.fromCharCode(view[i]));
+                        }
+                        // ... and append it to echo
+                        echo += chararray.join("");
+                    }
 
-            var view = new Int32Array(msg, 0, 5);
-            var num_games = view[0];
-            var num_wins = view[1];
-            var num_draws = view[2];
-            var num_losses = view[3];
-            var turns = view[4];
-            view = new Float64Array(msg, 40, 1);
-            var time_started = view[0];
-            // If a worker's echo is included in results...
-            // Queue up next batch so that this worker isn't idle while we process the results
-            if (sims_to_process > 0) {
-                run_sims(this.id, num_games, time_started);
-            }
-            if (msg.byteLength > 48) {
-                // ... convert it from a byte array to a string
-                var view = new Uint16Array(msg, 80);
-                var chararray = [];
-                for (var i = false, len = view.length; i < len; i++) {
-                    chararray.push(String.fromCharCode(view[i]));
-                }
-                // ... and append it to echo
-                echo += chararray.join("");
-            }
+                    add_results(num_games, num_wins, num_draws, num_losses, turns, points);
 
-            add_results(num_games, num_wins, num_draws, num_losses, turns);
+                    if (debug && !mass_debug && !loss_debug && !win_debug) {
+                        display_debug_results(num_wins, num_draws);
+                    } else if (!sims_left) {
+                        display_final_results();
+                    }
+                    break;
+                case STATS:
+                    var hashLength = 96;                // 16 cards - 3 characters each - 2 bytes per character
+                    var statLength = hashLength + 16;   // 4 ints @ 4 bytes per float
+                    var offset = 4, len = msg.byteLength;
+                    while (offset < len) {
+                        // Convert echo to bytes in the ArrayBuffer
+                        var view = new DataView(msg);
+                        var hashLen = view.getInt32(offset);
+                        offset += 4;
 
-            if (debug && !mass_debug && !loss_debug && !win_debug) {
-                display_debug_results(num_wins, num_draws);
-            } else if (!sims_left) {
-                display_final_results();
+                        var chararray = [];
+                        for (var i = 0; i < hashLen; i++) {
+                            var char = String.fromCharCode(view.getInt16(offset));
+                            offset += 2;
+                            chararray.push(char);
+                        }
+
+                        // ... and append it to echo
+                        var hash = chararray.join("");
+                        var stats = {
+                            games: view.getInt32(offset),
+                            wins: view.getInt32(offset+4),
+                            draws: view.getInt32(offset+8),
+                            losses: view.getInt32(offset + 12),
+                            points: view.getInt32(offset + 16),
+                        }
+                        offset += 20;
+
+                        updateStats(hash, stats);
+                    }
+                    break;
             }
         } else {
-            sims_left = false;
+            sims_left = 0;
         }
+        delete e;
+    }
+
+    var initializeCard = function (card, p, newKey) {
+        card.owner = p;
+        card.timer = card.cost;
+        card.health_left = card.health;
+        // Setup status effects
+        card.attack_rally = 0;
+        card.attack_weaken = 0;
+        card.attack_berserk = 0;
+        card.poisoned = 0;
+        card.scorched = 0;
+        card.enfeebled = 0;
+        card.protected = 0;
+        card.barrier_ice = 0;
+        card.enhanced = 0;
+        card.jammed = false;
+        card.key = newKey;
+        if (!card.reusableSkills) card.resetTimers();
     }
 
     // Handle messages from the worker thread using Structured Cloning
@@ -79,24 +136,21 @@ if (use_workers) {
             var msg = e.data;
             switch (msg.cmd) {
                 case 'return_results':
+                    progress = true;
                     var results = msg.data;
                     var num_games = results[0];
                     var num_wins = results[1];
                     var num_draws = results[2];
                     var num_losses = results[3];
                     var turns = results[4];
-                    var time_started = results[5];
-                    var worker_echo = results[6];
+                    var points = results[5];
+                    var time_started = results[6];
+                    var worker_echo = results[7];
                     if (worker_echo) {
                         echo += worker_echo;
                     }
 
-                    // Queue up next batch
-                    if (sims_to_process > 0) {
-                        run_sims(this.id, num_games, time_started);
-                    }
-
-                    add_results(num_games, num_wins, num_draws, num_losses, turns);
+                    add_results(num_games, num_wins, num_draws, num_losses, turns, points);
 
                     if (debug && !mass_debug && !loss_debug && !win_debug) {
                         var result = (num_wins ? 1 : num_draws ? 'draw' : 0);
@@ -105,91 +159,113 @@ if (use_workers) {
                         display_final_results();
                     }
                     break;
+                case 'order_stats':
+                    var updates = msg.data;
+                    for (var hash in updates) {
+                        updateStats(hash, updates[hash]);
+                    }
+                    break;
             }
         } else {
-            sims_left = false;
+            sims_left = 0;
+        }
+    }
+
+    var updateStats = function (hash, update) {
+        var existing = orders[hash];
+        if (!existing) {
+            orders[hash] = update;
+        } else {
+            existing.wins += update.wins;
+            existing.losses += update.losses;
+            existing.draws += update.draws;
+            existing.games += update.games;
+            existing.points += update.points;
         }
     }
 
     // Update the GUI with the current status (sims/sec, % complete, etc...)
     var display_progress = function () {
         // If stopsims was called, don't display any more output
-        if (sims_to_process > 0) {
-            var percent_complete = (games / (num_sims) * 100).toFixed(1);
-            var elapse = time_elapsed();
-            var batch_size = games - last_games[0];
-            var batch_elapse = batch_time_elapsed(last_start_times[0]);
-            var simpersecbatch = 0;
-            if (batch_elapse == 0) {
-                simpersecbatch = 0;
-            } else {
-                simpersecbatch = batch_size / batch_elapse;
-            }
-            simpersecbatch = simpersecbatch.toFixed(1);
-            outp(echo + '<strong>Running simulations...</strong> (' + games + '/' + (num_sims) + ') ' + percent_complete + '%<br>' + elapse + ' seconds<br>' + simpersecbatch + ' simulations per second<br>' + gettable());
+        if (sims_left > 0) {
+            if (progress) {
+                progress = false;
+                var percent_complete = (games / (num_sims) * 100).toFixed(1);
+                var elapse = time_elapsed();
+                var batch_size = games - last_games[0];
+                var batch_elapse = batch_time_elapsed(last_start_times[0]);
+                var simpersecbatch = 0;
+                if (batch_elapse == 0) {
+                    simpersecbatch = 0;
+                } else {
+                    simpersecbatch = batch_size / batch_elapse;
+                }
+                simpersecbatch = simpersecbatch.toFixed(1);
+                if (suppressOutput && end_sims_callback && !trackStats) {
+                    outp(echo + '<strong>Running simulations...</strong> (' + games + '/' + (num_sims) + ') ' + percent_complete + '%<br>' + elapse + ' seconds<br>' + simpersecbatch + ' simulations per second<br>');
+                } else {
+                    outp(echo + '<strong>Running simulations...</strong> (' + games + '/' + (num_sims) + ') ' + percent_complete + '%<br>' + elapse + ' seconds<br>' + simpersecbatch + ' simulations per second<br>' + gettable());
+                }
 
-            // Smooth output by calcuating stats for the last few .1 second intervals, rather than the last one
-            // This reduces the impact of this loop firing multiple times in between getting results from workers
-            var i = 0;
-            for (var len = smoothing_factor - 1; i < len; i++) {
-                last_games[i] = last_games[i + 1];
-                last_start_times[i] = last_start_times[i + 1];
+                // Smooth output by calcuating stats for the last few .1 second intervals, rather than the last one
+                // This reduces the impact of this loop firing multiple times in between getting results from workers
+                var i = 0;
+                for (var len = smoothing_factor - 1; i < len; i++) {
+                    last_games[i] = last_games[i + 1];
+                    last_start_times[i] = last_start_times[i + 1];
+                }
+                last_games[i] = games;
+                last_start_times[i] = new Date().getTime();
             }
-            last_games[i] = games;
-            last_start_times[i] = new Date().getTime();
             setTimeout(display_progress, 100);
         }
     }
 
     // Add results from a batch to the total results
-    var add_results = function (num_games, num_wins, num_draws, num_losses, turns) {
+    var add_results = function (num_games, num_wins, num_draws, num_losses, turns, points) {
 
         games += num_games;
         wins += num_wins;
         draws += num_draws;
         losses += num_losses;
         total_turns += turns;
+        total_points += points;
 
         if (sims_left > 0) sims_left -= num_games;
 
         if (debug) {
             if (loss_debug && !found_loss) {
                 if (num_draws > 0) {
-                    echo = 'Draw found. Displaying debug output... <br><br>' + echo;
+                    echo = 'Draw found after ' + games + ' games. Displaying debug output... <br><br>' + echo;
                     echo += '<br><br>';
                     found_loss = true;
-                    sims_left = false;
-                    sims_to_process = 0;
+                    sims_left = 0;
                     stopsim(1);
                 } else if (num_losses > 0) {
-                    echo = 'Loss found. Displaying debug output... <br><br>' + echo;
+                    echo = 'Loss found after ' + games + ' games. Displaying debug output... <br><br>' + echo;
                     echo += '<br><br>';
                     found_loss = true;
-                    sims_left = false;
-                    sims_to_process = 0;
+                    sims_left = 0;
                     stopsim(1);
                 } else {
                     if (sims_left <= num_games) {
-                        echo = 'No losses found. No debug output to display.<br><br>';
-                        sims_left = false;
-                        sims_to_process = 0;
+                        echo = 'No losses found after ' + games + ' games. No debug output to display.<br><br>';
+                        sims_left = 0;
                     } else {
                         echo = ' ';
                     }
                 }
             } else if (loss_debug && !found_loss) {
                 if (num_wins > 0) {
-                    echo = 'Win found. Displaying debug output... <br><br>' + echo;
+                    echo = 'Win found after ' + games + ' games. Displaying debug output... <br><br>' + echo;
                     echo += '<br><br>';
                     found_loss = true;
-                    sims_left = false;
-                    sims_to_process = 0;
+                    sims_left = 0;
                     stopsim(1);
                 } else {
                     if (sims_left <= num_games) {
-                        echo = 'No wins found. No debug output to display.<br><br>';
-                        sims_left = false;
-                        sims_to_process = 0;
+                        echo = 'No wins found after ' + games + ' games. No debug output to display.<br><br>';
+                        sims_left = 0;
                     } else {
                         echo = ' ';
                     }
@@ -202,8 +278,11 @@ if (use_workers) {
 
     // Display the results of a regular debug simulation
     var display_debug_results = function (win, draw) {
-        sims_left = false;
-        sims_to_process = 0;
+        for (var i = 0; i < max_workers; i++) {
+            workers[i].terminate();
+        }
+
+        sims_left = 0;
         time_stop = new Date().getTime();
 
         if (win) {
@@ -223,13 +302,21 @@ if (use_workers) {
 
     // Display the final results after a simulation loop has completed
     var display_final_results = function () {
+        for (var i = 0; i < max_workers; i++) {
+            workers[i].terminate();
+        }
+
         time_stop = new Date().getTime();
 
         var elapse = time_elapsed();
         var simpersec = games / elapse;
         simpersec = simpersec.toFixed(1);
 
-        outp(echo + '<br><strong>Simulations complete.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>' + gettable());
+        if (suppressOutput && end_sims_callback && !trackStats) {
+            outp(echo + '<br><strong>Simulations complete.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>');
+        } else {
+            outp(echo + '<br><strong>Simulations complete.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>' + gettable() + getOrderStatsTable());
+        }
 
         // Show interface
         document.getElementById('ui').style.display = 'block';
@@ -238,10 +325,16 @@ if (use_workers) {
         document.getElementById('stop').style.display = 'none';
 
         scroll_to_end();
+        if (end_sims_callback) end_sims_callback();
     }
 
     // Initialize simulation loop - runs once per simulation session
     var startsim = function (autostart) {
+        for (var i = 0; i < max_workers; i++) {
+            workers[i] = createWorker(i);
+        }
+
+        orders = {};
 
         if (typeof (Worker) === "undefined") {
             return false;
@@ -253,6 +346,7 @@ if (use_workers) {
         }
 
         total_turns = 0;
+        total_points = 0;
         time_start = new Date().getTime();
         time_stop = 0;
         echo = '';
@@ -267,8 +361,10 @@ if (use_workers) {
         num_sims = document.getElementById('sims').value;
         if (!num_sims) num_sims = 1;
         sims_left = num_sims;
-        sims_to_process = num_sims;
-        user_controlled = document.getElementById('user_controlled').checked;
+        var d = document.getElementById('user_controlled');
+        if (d) {
+            user_controlled = d.checked;
+        }
         /*if (user_controlled) debug = true;
         else*/ debug = document.getElementById('debug').checked;
         var d = document.getElementById('auto_mode');
@@ -289,6 +385,8 @@ if (use_workers) {
         getexactorder = document.getElementById('exactorder').checked;
         getexactorder2 = document.getElementById('exactorder2').checked;
         getmission = document.getElementById('mission').value;
+        getraid = document.getElementById('raid').value;
+        raidlevel = document.getElementById('raid_level').value;;
         getsiege = document.getElementById('siege').checked;
         tower_level = document.getElementById('tower_level').value;
         tower_type = document.getElementById('tower_type').value;
@@ -328,6 +426,8 @@ if (use_workers) {
             cache_cpu_deck = load_deck_from_cardlist(getcardlist2);
         } else if (getmission) {
             cache_cpu_deck = load_deck_mission(getmission);
+        } else if (getraid) {
+            cache_cpu_deck = load_deck_raid(getraid, raidlevel);
         } else {
             cache_cpu_deck = load_deck_from_cardlist();
         }
@@ -349,13 +449,21 @@ if (use_workers) {
         params['gettournament'] = gettournament;
         params['getexactorder'] = getexactorder;
         params['getexactorder2'] = getexactorder2;
+        params['getmission'] = getmission;
+        params['getraid'] = getraid;
+        params['raidlevel'] = raidlevel;
+        params['getsiege'] = getsiege;
+        params['tower_level'] = tower_level;
+        params['tower_type'] = tower_type;
         params['surge'] = surge;
         params['debug'] = debug;
         params['loss_debug'] = loss_debug;
         params['win_debug'] = loss_debug;
         params['mass_debug'] = mass_debug;
         params['user_controlled'] = user_controlled;
+        params['trackStats'] = trackStats;
         for (var i = 0; i < max_workers; i++) {
+            setupWorkerField(workers[i]);
             workers[i].postMessage({ 'cmd': 'initializeSims', 'data': params });
         }
 
@@ -364,6 +472,7 @@ if (use_workers) {
 
         // Output decks for first simulation
         if (debug && (loss_debug || win_debug)) {
+        } else if (suppressOutput) {
         } else if (echo == '') {
             debug_dump_decks();
         }
@@ -373,19 +482,19 @@ if (use_workers) {
 
     // Interrupt simulations
     var stopsim = function (supress_output) {
-        sims_left = false;
-        sims_to_process = 0;
+
+        sims_left = 0;
         time_stop = new Date().getTime();
         var elapse = time_elapsed();
         var simpersec = games / elapse;
         simpersec = simpersec.toFixed(1);
 
+        for (var i = 0; i < max_workers; i++) {
+            workers[i].terminate();
+        }
+
         // Stop the recursion
         if (current_timeout) clearTimeout(current_timeout);
-
-        for (var i = 0; i < max_workers; i++) {
-            workers[i].postMessage({ 'cmd': 'stopsim' });
-        }
 
         if (!supress_output) {
             outp(echo + '<strong>Simulations interrupted.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>' + gettable());
@@ -398,49 +507,30 @@ if (use_workers) {
         document.getElementById('stop').style.display = 'none';
     }
 
+    var setupWorkerField = function () { };
+
     // Loops through all simulations
     // - keeps track of number of simulations and outputs status
     var run_sims = function (worker_id, batch_size, time_started) {
         if (debug && !mass_debug && !loss_debug && !win_debug) {
             workers[0].postMessage({ 'cmd': 'run_sims' });
-
         } else {
-            var simpersecbatch = 0;
-            if (batch_size > 0) { // batch_size == 0 means a fresh set of simulations
-                var temp = games / (num_sims) * 100;
-                temp = temp.toFixed(1);
-
-                var elapse = time_elapsed();
-
-                var batch_elapse = batch_time_elapsed(time_started);
-                if (batch_elapse == 0) {
-                    simpersecbatch = 0;
-                } else {
-                    simpersecbatch = batch_size / batch_elapse;
-                }
-            }
-            var new_batch_size = (worker_id ? 1 : max_workers);
-            if (simpersecbatch > new_batch_size) // If we can run more at one time, then let's try to
-                new_batch_size = Math.ceil(simpersecbatch * max_workers / 10);
-            if (new_batch_size > sims_to_process) // Also limit by how many sims are left
-                new_batch_size = sims_to_process;
-
             time_start_batch = new Date().getTime();
 
-            if (worker_id !== undefined) {
-                workers[worker_id].postMessage({ 'cmd': 'new_batch', 'data': [new_batch_size, time_start_batch] });
-            } else {
-                var sims_per_worker = Math.floor(new_batch_size / max_workers);
-                var remainingSims = new_batch_size - (sims_per_worker * max_workers);
-                var worker_index = 0;
-                for (; worker_index < remainingSims; worker_index++) {  // Start a new batch
-                    workers[worker_index].postMessage({ 'cmd': 'run_sims', 'data': [sims_per_worker + 1, time_start_batch] });
-                }
+            var sims_per_worker = ~~(num_sims / max_workers);
+            var remainingSims = num_sims - (sims_per_worker * max_workers);
+            var worker_index = 0;
+            for (; worker_index < remainingSims; worker_index++) {  // Start a new batch
+                workers[worker_index].postMessage({ 'cmd': 'run_sims', 'data': [sims_per_worker + 1, time_start_batch] });
+            }
+            if (sims_per_worker) {
                 for (; worker_index < max_workers; worker_index++) {  // Start a new batch
                     workers[worker_index].postMessage({ 'cmd': 'run_sims', 'data': [sims_per_worker, time_start_batch] });
                 }
             }
-            sims_to_process -= new_batch_size;
         }
     }
+
+    var last_start_times = [];
+    var end_sims_callback;
 }

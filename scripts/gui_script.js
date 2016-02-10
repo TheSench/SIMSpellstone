@@ -26,13 +26,13 @@ window.onerror = function (message, url, linenumber) {
     if (getcardlist) err_msg += "Card list: " + getcardlist + "\n";
     if (getordered) err_msg += "Ordered: Yes\n";
     if (getexactorder) err_msg += "Exact-order: Yes\n";
-    if (gettournament) err_msg += "Tournament Mode: Yes\n";
     if (surge) err_msg += "Surge: Yes\n";
     if (getdeck2) err_msg += "Enemy deck hash: " + getdeck2 + "\n";
     if (getcardlist2) err_msg += "Enemy Card list: " + getcardlist2 + "\n";
     if (getordered2) err_msg += "Enemy Ordered: Yes\n";
     if (getexactorder2) err_msg += "Enemy Exact-order: Yes\n";
     if (getmission) err_msg += "Mission ID: " + getmission + "\n";
+    if (getraid) err_msg += "Raid ID: " + getraid + "\n";
     if (getbattleground) err_msg += "Battleground ID: " + getbattleground + "\n";
     if (games) err_msg += "Sims run so far: " + games + "\n";
 
@@ -109,12 +109,27 @@ function onpageload() {
         }
     }
 
+    // Check if raids are found
+    if (RAIDS) {
+        // Mission drop down
+        var select = document.getElementById('raid');
+        for (var key in RAIDS) {
+            var raid = RAIDS[key];
+            var option = document.createElement('option');
+            option.appendChild(document.createTextNode(raid.name));
+            option.value = raid.id;
+            select.appendChild(option);
+        }
+    }
+
+
     // Check if battlegrounds are found
     if (BATTLEGROUNDS) {
         // Battleground drop down
         var select = document.getElementById('battleground');
         for (var key in BATTLEGROUNDS) {
             var battleground = BATTLEGROUNDS[key];
+            if (battleground.enemy_only) continue;
             var checkbox = document.createElement('input');
             checkbox.type = "checkbox";
             checkbox.name = "battleground";
@@ -172,7 +187,7 @@ function onpageload() {
     if (_GET('tower_level')) {
         var d = document.getElementById('tower_level');
         var tower_level = _GET('tower_level');
-        tower_level = Math.min(Math.max(tower_level, 0), 15);
+        tower_level = Math.min(Math.max(tower_level, 0), 18);
         d.value = tower_level;
     }
 
@@ -232,8 +247,8 @@ function onpageload() {
     } else {
         // Load current battlegrounds
         var bgCheckBoxes = document.getElementsByName("battleground");
-        bgCheckBoxes[0].checked = true;
         bgCheckBoxes[3].checked = true;
+        bgCheckBoxes[4].checked = true;
     }
 
     if (_GET('sims')) {
@@ -247,7 +262,7 @@ function onpageload() {
         var d = document.getElementById('debug');
         d.checked = true;
     }
-    
+
     if (_DEFINED('auto_mode')) {
         var d = document.getElementById('auto_mode');
         if (d) {
@@ -288,9 +303,6 @@ function onpageload() {
     var version_label = document.getElementById('version_label');
     if (battle_sim) { }
     else if (use_workers) {
-        document.getElementById("user_controlled").style.visibility = "hidden";
-        document.getElementById("unavailable").style.visibility = "visible";
-
         version_label.innerHTML += " " + text_version;
         // Initialize workers
         var param_maxworkers = _GET('maxworkers');
@@ -304,10 +316,6 @@ function onpageload() {
         else if (max_workers == 6) version_label.innerHTML += " - Hexa-core";
         else if (max_workers == 8) version_label.innerHTML += " - Octo-core";
         else version_label.innerHTML += " - Multi-core";
-
-        for (var i = 0; i < max_workers; i++) {
-            workers[i] = createWorker(i);
-        }
     } else {
         version_label.innerHTML += " " + text_version + " - Single-Threaded";
         if (!one_worker) {
@@ -318,6 +326,16 @@ function onpageload() {
 
     if (_DEFINED('autostart')) {
         startsim(1);
+    } else if (_DEFINED('unit_tests')) {
+        var body = document.getElementsByTagName("body")[0];
+        var script = document.createElement("script");
+        script.src = "scripts/unit_tests.js";
+        body.appendChild(script);
+        script.onload = function () {
+            var script = document.createElement("script");
+            script.src = "scripts/unit_test_runner.js";
+            body.appendChild(script);
+        };
     }
 }
 
@@ -331,7 +349,8 @@ function outp(text) {
 // Return table of simulation results
 function gettable() {
 
-    if (debug || sims_left == 0) {
+    if (suppressOutput) {
+    } else if (debug || sims_left == 0) {
         // Generate links
         var links = '';
         links += '<br>' +
@@ -413,33 +432,45 @@ function gettable() {
     table3 += 'Avg. Battle Length';
     table3 += '</td>';
     table3 += '<td>';
-
     // Calculate Average length of battle
     var avg_length = (total_turns / games).toFixed(3);
     table3 += avg_length;
-
     table3 += '</td>';
     table3 += '</tr>';
+
+    // Average points
+    table3 += '<tr>';
+    table3 += '<td>';
+    table3 += 'Avg. Points';
+    table3 += '</td>';
+    table3 += '<td>';
+    // Calculate Average length of battle
+    var avg_points = (total_points / games).toFixed(3);
+    table3 += avg_points;
+    table3 += '</td>';
+    table3 += '</tr>';
+
+    table3 += '</table>';
 
     var full_table = '<table cellspacing=0 cellpadding=0 border=0><tr><td>' + table + '</td><td>&nbsp;</td><td>' + table3 + '</td></tr></table>';
 
     // Final output
     if (sims_left == 0) {
         // Add generated links to final output
-        full_table = full_table + links;
+        full_table += links;
 
         // Append results to history
 
         var current_deck = '';
         var deck = [];
-        var getdeck = document.getElementById('deck').value;
-        var getcardlist = document.getElementById('cardlist').value;
+        var deck1Hash = document.getElementById('deck').value;
+        var deck1List = document.getElementById('cardlist').value;
 
         // Load player deck
-        if (getdeck) {
-            deck.player = hash_decode(getdeck);
-        } else if (getcardlist) {
-            deck.player = load_deck_from_cardlist(getcardlist);
+        if (deck1Hash) {
+            deck.player = hash_decode(deck1Hash);
+        } else if (deck1List) {
+            deck.player = load_deck_from_cardlist(deck1List);
         }
         if (deck.player) {
             current_deck = hash_encode(deck.player);
@@ -449,6 +480,122 @@ function gettable() {
     }
 
     return full_table;
+}
+
+function getOrderStatsTable() {
+
+    if (!trackStats) return '';
+
+    var winrateKeys = [];
+    cardStats = {
+        keys: []
+    };
+    for (var key in orders) {
+        var stats = orders[key];
+        stats.winrate = (stats.wins / stats.games);
+        CalculatePlayStats(key, cardStats)
+    }
+    var statsTable = '<br><table cellspacing=0 cellpadding=5 style="border: 1px solid #000000;">';
+    var lastColumn = 0;
+    statsTable += getStatsRows(cardStats);
+    statsTable += '</table>';
+
+    return statsTable;
+}
+
+function sortByAvgPoints(stats, keys) {
+    keys.sort(function (a, b) {
+        var statsA = stats[a];
+        var statsB = stats[b];
+        var compare = statsB.avgPoints - statsA.avgPoints;
+        if (compare != 0) return compare;
+        compare = statsA.games - statsB.games;
+        if (compare != 0) return compare;
+        if (a < b) return -1;
+        if (a > b) return 1;
+        return 0;
+    });
+}
+
+function getStatsRows(stats) {
+    var aryHTML = [];
+    addChildRows(stats, stats.keys, aryHTML, true);
+    return '<tr>' + aryHTML.join('</tr><tr>') + '</tr>';
+}
+
+function addChildRows(stats, keys, aryHTML, isPlayer) {
+    sortByAvgPoints(stats, keys);
+    for (var i = 0; i < keys.length; i++) {
+        var stat = stats[keys[i]];
+        addRowData(stats, stat, aryHTML, isPlayer);
+    }
+}
+
+function addRowData(stats, stat, aryHTML, isPlayer) {
+    var aryChildren = [];
+    addChildRows(stats, stat.children, aryChildren, !isPlayer);
+
+    var rowSpan = Math.max(aryChildren.length, 1);
+
+    var matches = (stat.wins + "/" + stat.games);
+    htmlEntry += makeTD(rowSpan, matches, isPlayer);
+
+    var winrate = (stat.winrate * 100).toFixed(2) + '%';
+    var htmlEntry = makeTD(rowSpan, winrate, isPlayer);
+
+    htmlEntry += makeTD(rowSpan, stat.avgPoints.toFixed(2), isPlayer);
+
+    htmlEntry += makeTD(rowSpan, stat.card, isPlayer);
+    if (aryChildren.length) {
+        htmlEntry += aryChildren[0];
+    }
+
+    aryHTML.push(htmlEntry);
+    for (var i = 1; i < aryChildren.length; i++) {
+        aryHTML.push(aryChildren[i]);
+    }
+}
+
+function makeTD(rowSpan, contents, isPlayer) {
+    var formatStart = '<' + (isPlayer ? 'i' : 'b') + '>';
+    var formatEnd = formatStart.replace('<', '</');
+    var td = '<td rowSpan=' + rowSpan + '" style="border: 1px solid #000000;">' + formatStart  + contents + formatEnd + '</td>';
+    return td;
+}
+
+function CalculatePlayStats(hash, cardStats) {
+    var cards = hash_decode(hash).deck;
+    var stats = orders[hash];
+    var parentKey = null;
+    for (var i = 0; i < cards.length; i++) {
+        var play = { deck: cards.slice(0, i+1) };
+        var playKey = hash_encode(play);
+        var playStats = cardStats[playKey];
+        if (!playStats) {
+            var card = get_card_by_id(cards[i]);
+            var card_name = card.name + "(" + card.level + ")";
+            if (card.runes.length) card_name += "*";
+            playStats = {
+                card: card_name,
+                wins: 0,
+                games: 0,
+                points: 0,
+                children: []
+            };
+            cardStats[playKey] = playStats;
+            if (parentKey) {
+                cardStats[parentKey].children.push(playKey);
+            } else {
+                cardStats.keys.push(playKey);
+            }
+        }
+        playStats.wins += stats.wins;
+        playStats.games += stats.games;
+        playStats.points += stats.points;
+        playStats.winrate = (playStats.wins / playStats.games);
+        playStats.avgPoints = (playStats.points / playStats.games);
+        parentKey = playKey;
+    }
 }
 
 // Time elapsed
@@ -486,7 +633,8 @@ function generate_link(autostart, autolink) {
     var getdeck2 = document.getElementById('deck2').value;
     var getcardlist2 = document.getElementById('cardlist2').value;
     var getmission = document.getElementById('mission').value;
-    //var getbattleground = document.getElementById('battleground').value;
+    var getraid = document.getElementById('raid').value;
+    var raidlevel = document.getElementById('raid_level').value;
 
     // Load player deck
     if (getdeck) {
@@ -501,6 +649,8 @@ function generate_link(autostart, autolink) {
     } else if (getcardlist2) {
         deck.cpu = load_deck_from_cardlist(getcardlist2);
     } else if (getmission) {
+        deck.cpu = 0;
+    } else if (getraid) {
         deck.cpu = 0;
     }
 
@@ -564,6 +714,11 @@ function generate_link(autostart, autolink) {
         parameters.push('mission=' + d.value);
     }
 
+    d = document.getElementById('raid');
+    if (d.value) {
+        parameters.push('raid=' + d.value);
+    }
+
     var battlegrounds = '';
     var bgCheckBoxes = document.getElementsByName("battleground");
     for (var i = 0; i < bgCheckBoxes.length; i++) {
@@ -625,17 +780,36 @@ function generate_link(autostart, autolink) {
     }
 }
 
+function load_deck_builder_for_field(fieldID) {
+    var field = document.getElementById(fieldID);
+    var deck = {
+        commander: elariaCaptain,
+        deck: [],
+    };
+    var hash = field.value;
+    if (!hash) {
+        hash = hash_encode({
+            commander: elariaCaptain,
+            deck: [],
+        });
+    }
+    open_deck_builder("Card Hash", hash, null, field);
+}
+
 function load_deck_builder(player) {
     if (player == 'player') {
         var getdeck = document.getElementById('deck').value;
         var getcardlist = document.getElementById('cardlist').value;
         var getmission;
+        var getraid;
+        var raidlevel;
     } else {
         var getdeck = document.getElementById('deck2').value;
         var getcardlist = document.getElementById('cardlist2').value;
         var getmission = document.getElementById('mission').value;
+        var getraid = document.getElementById('raid').value;
+        var raidlevel = document.getElementById('raid_level').value;
     }
-    //var getbattleground = document.getElementById('battleground').value;
 
     // Load player deck
     var deck = {
@@ -648,26 +822,37 @@ function load_deck_builder(player) {
         deck = load_deck_from_cardlist(getcardlist);
     } else if (getmission) {
         deck = load_deck_mission(getmission);
+    } else if (getraid) {
+        deck = load_deck_raid(getraid, raidlevel);
     }
-
-    open_deck_builder(deck);
-}
-
-function open_deck_builder(deck, hash, inventory) {
-    var url = "DeckBuilder.html";
-    var parameters = [];
+    var hash;
     if (deck) {
         hash = hash_encode(deck);
     }
+
+    var name = (player == 'player' ? 'Player Deck' : 'Enemy Deck');
+    var deckHashField = (player ? document.getElementById(player == 'player' ? 'deck' : 'deck2') : null);
+    open_deck_builder(name, hash, null, deckHashField);
+}
+
+function open_deck_builder(name, hash, inventory, deckHashField) {
+    var url = (inventory ? "DeckUpdater.html" : "DeckBuilder.html");
+    var parameters = [];
     if (hash) {
         parameters.push("hash=" + hash);
     }
     if (inventory) {
         parameters.push("inventory=" + inventory);
     }
+
+    if (name) {
+        parameters.push("name=" + name);
+    }
     if (parameters.length > 0) {
         url += '?' + parameters.join('&');
     }
+
+    var baseRequest = (typeof DeckRetriever !== 'undefined' ? DeckRetriever.baseRequest : null);
 
     var width = Math.min(screen.width, 1000);
     var height = Math.min(screen.height, 700);
@@ -676,8 +861,16 @@ function open_deck_builder(deck, hash, inventory) {
 
     var windowFeatures = 'location=0,menubar=0,resizable=0,scrollbars=0,status=0,width=' + width + ',height=' + height + ',top=' + top + ',left=' + left;
     var win = window.open(url, '', windowFeatures);
-
     win.moveTo(left, top);
+    // Push values to window once it has loaded
+    win.onload = (function (name, deckHashField, baseRequest) {
+        return function () {
+            // Tie deck-builder back to the hash field in the simulator.
+            if (deckHashField) this.simulatorDeckHashField = deckHashField;
+            // Link deckbuilder to base request data.
+            if (inventory) $.extend(this.DeckRetriever.baseRequest, baseRequest);
+        }
+    })(name, deckHashField, baseRequest);
 }
 
 function display_generated_link() {
@@ -750,16 +943,22 @@ function toggleRadio(radio) {
     }
 }
 
+function supports_html5_storage() {
+    try {
+        return 'localStorage' in window && window['localStorage'] !== null;
+    } catch (e) {
+        return false;
+    }
+}
+
 // Initialize global variables
 var history = '';
-var turn = false;
 var max_turns = 50;
 var debug = false;
 var mass_debug = false;
 var loss_debug = false;
 var win_debug = false;
 var found_loss = false;
-var gettournament = false;
 var getdeck = '';
 var getdeck2 = '';
 var getcardlist = '';
@@ -769,6 +968,9 @@ var getordered2 = false;
 var getexactorder = false;
 var getexactorder2 = false;
 var getmission = false;
+var getraid = false;
+var raidlevel = 0;
+var trackStats = false;
 var getbattleground = 0;
 var getsiege = 0;
 var tower_level = 0;
@@ -780,46 +982,22 @@ var draws = 0;
 var games = 0;
 var num_sims = 0;
 var last_games = [];
-var last_start_times = [];
-var sims_left = false;
-var sims_to_process = 0;
-var current_timeout = false;
-var time_start = false;
+var sims_left = 0;
+var current_timeout;
+var time_start = 0;
 var time_stop = 0;
 var time_start_batch = 0;
 var time_end = 0;	// TODO: Use this
 var surge = false;
 var battleground = [];
 var total_turns = 0;
-var cache_player_deck = false;
-var cache_cpu_deck = false;
+var total_points = 0;
+var cache_player_deck;
+var cache_cpu_deck;
+var cache_player_deck_cards;
+var cache_cpu_deck_cards;
 var choice = undefined;
 var auto_mode = false;
-
-// Global arrays
-var factions = {
-    names: [
-        'Factionless',
-        'Aether',
-        'Chaos',
-        'Wyld',
-        'Frog',
-        'Elemental',
-        'Angel',
-        'Undead',
-        'Void',
-        'Dragon',
-    ],
-    IDs: {
-        Factionless: 0,
-        Aether: 1,
-        Chaos: 2,
-        Wyld: 3,
-        Frog: 4,
-        Elemental: 5,
-        Angel: 6,
-        Undead: 7,
-        Void: 8,
-        Dragon: 9
-    }
-};
+var suppressOutput = false;
+var orders = {};
+var cardStats = {};
