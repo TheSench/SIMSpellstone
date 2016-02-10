@@ -1126,7 +1126,7 @@ if (simulator_thread) {
                     }
                 }
             } else {
-                if (deck_p_deck.length > 1 && deck_p.shuffleHand) {
+                if (deck_p_deck.length > 1 /*&& deck_p.shuffleHand*/) {
                     // Play random card in hand
                     var hand = deck_p_deck.slice(0, 3);
                     if (p == 'player') {
