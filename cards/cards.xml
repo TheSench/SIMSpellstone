@@ -5846,6 +5846,7 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
+      <health>27</health>
       <skill id="counter" x="5" />
       <skill id="burn" x="4" />
       <skill id="strike" all="1" x="3" />
@@ -5858,6 +5859,7 @@
     </upgrade>
     <upgrade>
       <level>4</level>
+      <health>29</health>
       <attack>7</attack>
     </upgrade>
     <upgrade>
@@ -5868,10 +5870,12 @@
     </upgrade>
     <upgrade>
       <level>6</level>
+      <health>31</health>
       <attack>8</attack>
     </upgrade>
     <upgrade>
       <level>7</level>
+      <health>33</health>
       <skill id="counter" x="7" />
       <skill id="burn" x="5" />
       <skill id="strike" all="1" x="4" />
