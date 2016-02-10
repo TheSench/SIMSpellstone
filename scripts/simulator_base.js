@@ -1126,25 +1126,33 @@ if (simulator_thread) {
                     }
                 }
             } else {
-                // Play first card in hand
                 if (deck_p_deck.length > 1 && deck_p.shuffleHand) {
-                    var best = [];
-                    var bestRank = 0;
+                    // Play random card in hand
                     var hand = deck_p_deck.slice(0, 3);
-                    for (var i = 0; i < hand.length; i++) {
-                        var card = hand[i];
-                        var rank = getCardRanking(card);
-                        if (!bestRank) {
-                            bestRank = rank;
-                            best.push(i);
-                        } else if (rank == bestRank) {
-                            best.push(i);
-                        } else if (rank > bestRank) {
-                            bestRank = rank;
-                            best = [i];
+                    if (p == 'player') {
+                        card_picked = ~~(Math.random() * deck_p_deck.slice(0, 3).length);
+                    } else {
+                        // Play card in hand with most upgrade points
+                        var best = [];
+                        var bestRank = 0;
+                        for (var i = 0; i < hand.length; i++) {
+                            var card = hand[i];
+                            var rank = getCardRanking(card);
+                            if (!bestRank) {
+                                bestRank = rank;
+                                best.push(i);
+                            } else if (rank == bestRank) {
+                                best.push(i);
+                            } else if (rank > bestRank) {
+                                bestRank = rank;
+                                best = [i];
+                            }
                         }
+                        card_picked = best[~~(Math.random() * best.length)];
                     }
-                    card_picked = best[~~(Math.random() * best.length)];
+                } else {
+                    // Play first card in hand
+                    card_picked = 0;
                 }
                 play_card(deck_p_deck[card_picked], p);
             }
