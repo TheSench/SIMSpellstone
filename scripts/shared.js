@@ -184,7 +184,6 @@ var MakeAssault = (function () {
                         } else {
                             new_skill.x = addedSkill.x;
                         }
-                        new_skill.y = addedSkill.y;
                         new_skill.z = addedSkill.z;
                         new_skill.c = addedSkill.c;
                         new_skill.s = addedSkill.s;
