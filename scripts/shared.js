@@ -42,7 +42,7 @@ function shuffle(this_array) {
     var i = this_array.length, j, tempi, tempj;
     if (i == 0) return false;
     while (--i) {
-        j = Math.floor(Math.random() * (i + 1));
+        j = ~~(Math.random() * (i + 1));
         tempi = this_array[i];
         tempj = this_array[j];
         this_array[i] = tempj;
@@ -51,9 +51,20 @@ function shuffle(this_array) {
 }
 
 function copy_deck(original_deck) {
-    var new_deck = [];
+    var new_deck = {};
     new_deck.commander = original_deck.commander;
     new_deck.deck = copy_card_list(original_deck.deck);
+    return new_deck;
+}
+
+function getDeckCards(original_deck) {
+    var new_deck = {};
+    new_deck.commander = get_card_apply_battlegrounds(original_deck.commander);
+    new_deck.deck = [];
+    var list = original_deck.deck;
+    for (var i = 0, len = list.length; i < len; i++) {
+        new_deck.deck.push(get_card_apply_battlegrounds(list[i]));
+    }
     return new_deck;
 }
 
@@ -90,17 +101,21 @@ function cloneCard(original) {
     copy.leech = original.leech;
     copy.pierce = original.pierce;
     copy.poison = original.poison;
-    if (original.flurry) copy.flurry = copy_skill(original.flurry);
+    if (original.flurry) {
+        copy.skillTimers = [];
+        copy.flurry = { id: original.flurry.id, c: original.flurry.c };
+        copy.skillTimers.push(copy.flurry);
+    }
     // Other skills
+    copy.reusableSkills = original.reusableSkills;
     if (original.reusableSkills) {
         copy.skill = original.skill;
         copy.empowerSkills = original.empowerSkills;
     } else {
-        copy.skill = copy_skills(original.skill)[0];
-        copy.empowerSkills = copy_skills(original.empowerSkills)[0];
+        copy_skills(copy, original.skill, original.empowerSkills);
     }
-    copy.timer = copy.cost;
-    copy.health_left = copy.health;
+    copy.runes = original.runes;
+    if (!copy.runes) copy.runes = [];
     return copy;
 }
 
@@ -120,7 +135,7 @@ var MakeAssault = (function () {
         this.type = original_card.type;
         this.sub_type = original_card.sub_type;
         this.set = original_card.set;
-        var original_skills = original_card.skill.slice();
+        var original_skills = original_card.skill;
         if (this.level > 1) {
             var upgrade;
             for (var key in original_card.upgrades) {
@@ -138,11 +153,7 @@ var MakeAssault = (function () {
             original_skills = original_skills.slice();
             modifySkills(this, original_skills, skillModifiers);
         }
-        copy_skills_2(this, original_skills)
-        this.timer = this.cost;
-        this.health_left = this.health;
-
-        card_cache[original_card.id + "-" + unit_level] = this;
+        copy_skills_2(this, original_skills);
 
         return this;
     }
@@ -173,7 +184,6 @@ var MakeAssault = (function () {
                         } else {
                             new_skill.x = addedSkill.x;
                         }
-                        new_skill.y = addedSkill.y;
                         new_skill.z = addedSkill.z;
                         new_skill.c = addedSkill.c;
                         new_skill.s = addedSkill.s;
@@ -207,7 +217,7 @@ var MakeAssault = (function () {
         scorched: 0,
         enfeebled: 0,
         protected: 0,
-        augmented: 0,
+        enhanced: 0,
         jammed: false,
 
         //Card ID is ...
@@ -258,31 +268,49 @@ var MakeAssault = (function () {
             return !(this.jammed);
         },
 
-        // Has at least one Augmentable Activation Skill
+        // Has at least one Enhanceable Activation Skill
         // - strike, protect, enfeeble, rally, repair, supply, siege, heal, weaken (unless they have on play/death/attacked/kill)
-        hasSkill: function (s) {
+        hasSkill: function (s, all) {
             var target_skills = this.skill;
             switch (s) {
+                // Passives
                 case 'armored':
+                case 'berserk':
+                case 'burn':
                 case 'counter':
                 case 'evade':
+                case 'leech':
                 case 'pierce':
+                case 'poison':
+                case 'flurry':
                     return this[s];
                     break;
-                case 'empower':
+                // Early Activation skills
+                case 'rally':
                 case 'legion':
                 case 'fervor':
                     target_skills = this.empowerSkills;
                     break;
+                // Activation skills
+                case 'enfeeble':
+                case 'enhance':
+                case 'frost':
+                case 'heal':
+                case 'jam':
+                case 'protect':
+                case 'protect_ice':
+                case 'strike':
+                case 'weaken':
                 default:
                     target_skills = this.skill
                     break;
             }
             for (var key in target_skills) {
                 var skill = target_skills[key];
-                if (skill.id === s && !skill.all) {
-                    return true;
-                }
+                if (skill.id !== s) continue;
+                if (skill.all && !all) continue;
+                if (!skill.all && all) continue;
+                return true;
             }
             return false;
         },
@@ -301,7 +329,11 @@ var MakeAssault = (function () {
         },
 
         adjustedAttack: function () {
-            return ((this.attack + this.attack_rally + this.attack_berserk - this.attack_weaken));
+            return (this.attack + this.attack_rally + this.attack_berserk - this.attack_weaken);
+        },
+
+        permanentAttack: function () {
+            return (this.attack + this.attack_berserk);
         },
 
         // Filters by faction
@@ -311,6 +343,16 @@ var MakeAssault = (function () {
             if (this.sub_type == faction) return 1;
             return 0;
         },
+
+        resetTimers: function () {
+            for (var i = 0, len = this.skillTimers.length; i < len; i++) {
+                this.skillTimers[i].countdown = 0;
+            }
+        },
+
+        addRunes: function (runes) {
+            addRunes(this, runes);
+        },
     }
 
     return (function (original_card, unit_level, skillModifiers) {
@@ -318,6 +360,97 @@ var MakeAssault = (function () {
         return new Card(original_card, unit_level, skillModifiers);
     })
 }());
+
+var addRunes = function (card, runes) {
+    if (!card.runes) card.runes = [];
+    for (var i = 0, len = runes.length; i < len; i++) {
+        var runeID = runes[i].id;
+        var statBoost = RUNES[runeID].stat_boost;
+        card.runes.push({
+            id: runeID,
+            stat_boost: statBoost,
+        });
+
+        for (var key in statBoost) {
+            var boost = statBoost[key];
+            if (key == "skill") {
+                boostSkill(card, boost)
+            } else {
+                card[key] += parseInt(boost);
+            }
+        }
+    }
+};
+
+var boostSkill = function (card, boost) {
+    var skills;
+    var skillID = boost.id;
+    switch (skillID) {
+        // Passives
+        case 'armored':
+        case 'berserk':
+        case 'burn':
+        case 'counter':
+        case 'evade':
+        case 'leech':
+        case 'pierce':
+        case 'poison':
+            card[skillID] += parseInt(boost.x);
+            return;
+        case 'flurry':
+            card[skillID].c -= parseInt(boost.c);
+            return;
+        // Early Activation skills
+        case 'fervor':
+        case 'rally':
+        case 'legion':
+            skills = card.empowerSkills;
+            break;
+            // Activation skills (can occur twice on a card)
+        case 'enfeeble':
+        case 'enhance':
+        case 'frost':
+        case 'heal':
+        case 'jam':
+        case 'protect':
+        case 'protect_ice':
+        case 'strike':
+        case 'weaken':
+        default:
+            skills = card.skill;;
+            break;
+    }
+
+    // Boost the first instance of this skill
+    var skillToBoost = -1;
+    for (var i = 0, len = skills.length; i < len; i++) {
+        var skill = skills[i];
+        if (skill.id == skillID && (skill.all | 0) == (boost.all | 0)) {
+            skillToBoost = i;
+        }
+    }
+
+    if (skillToBoost >= 0) {
+        skill = copy_skill(skills[skillToBoost]);
+        if (boost.x) skill.x += parseInt(boost.x)
+        if (boost.c) skill.c -= parseInt(boost.c);
+        skill.boosted = true;
+        skills[skillToBoost] = skill;
+    }
+};
+
+var canUseRune = function (card, runeID) {
+    var rune = RUNES[runeID];
+
+    var statBoost = rune.stat_boost;
+    for (var key in statBoost) {
+        if (key == "skill") {
+            var skill = statBoost[key]
+            if (!card.hasSkill(skill.id, skill.all)) return false;
+        }
+    }
+    return true;
+}
 
 var MakeSkillModifier = (function () {
     var Modifier = function (name, effects) {
@@ -337,15 +470,15 @@ var MakeSkillModifier = (function () {
 }());
 
 var MakeBattleground = (function () {
-    var Battleground = function (name, original_skills) {
+    var Battleground = function (name, original_skills, mult) {
         this.name = name;
-        copy_skills_2(this, original_skills);
+        copy_skills_2(this, original_skills, mult);
     }
 
     Battleground.prototype = {
         p: null,
         name: null,
-        skill: null,
+        runes: [],
 
         //Card ID is ...
         isCommander: function () {
@@ -359,30 +492,45 @@ var MakeBattleground = (function () {
         isBattleground: function () {
             return true;
         },
+
+        resetTimers: function () {
+            for (var i = 0, len = this.skillTimers.length; i < len; i++) {
+                this.skillTimers[i].countdown = 0;
+            }
+        },
     }
 
-    return (function (name, skill) {
-        return new Battleground(name, skill);
+    return (function (name, skill, mult) {
+        return new Battleground(name, skill, mult);
     })
 }());
 
-function copy_skills_2(new_card, original_skills) {
+function copy_skills_2(new_card, original_skills, mult) {
     new_card.skill = [];
     new_card.empowerSkills = [];
+    skillTimers = [];
     var reusable = true;
     for (var key in original_skills) {
         var newSkill = original_skills[key];
         if (newSkill.c) {   // If skill has a timer, we need to clone it
-            setSkill_2(new_card, key, copy_skill(newSkill));
+            var copySkill = copy_skill(newSkill);
+            setSkill_2(new_card, copySkill);
+            skillTimers.push(copySkill);
             reusable = false;
+        } else if (mult) {
+            var copySkill = copy_skill(newSkill);
+            //copySkill.x = ~~(copySkill.x * mult);   // Floor the results
+            copySkill.x = (copySkill.x * mult);
+            setSkill_2(new_card, copySkill);
         } else {            // If skill has no timer, we can use the same instance
-            setSkill_2(new_card, key, newSkill);
+            setSkill_2(new_card, newSkill);
         }
     }
     new_card.reusableSkills = reusable;
+    new_card.skillTimers = skillTimers;
 }
 
-function setSkill_2(new_card, key, skill) {
+function setSkill_2(new_card, skill) {
     // These skills could have multiple instances
     switch (skill.id) {
         // Passives
@@ -394,15 +542,18 @@ function setSkill_2(new_card, key, skill) {
         case 'leech':
         case 'pierce':
         case 'poison':
-            new_card[skill.id] = skill.x;
+            new_card[skill.id] = (new_card[skill.id]|0) + skill.x;
             break;
-            // Empower Skills
+        case 'flurry':
+            new_card[skill.id] = skill;
+            break;
+        // Empower Skills
         case 'fervor':
         case 'rally':
         case 'legion':
             new_card.empowerSkills.push(skill);
             break;
-            // Activation skills (can occur twice on a card)
+        // Activation skills (can occur twice on a card)
         case 'enfeeble':
         case 'enhance':
         case 'frost':
@@ -412,50 +563,32 @@ function setSkill_2(new_card, key, skill) {
         case 'protect_ice':
         case 'strike':
         case 'weaken':
+        // All other skills
+        default:
             new_card.skill.push(skill);
             break;
-            // All other skills
-        case 'flurry':
-        default:
-            new_card[skill.id] = skill;
-            break;
     }
 }
 
-function copy_skills(original_skills) {
-    var new_skills = {};
-    var reusable = true;
-    for (var key in original_skills) {
-        var newSkill = original_skills[key];
-        if (newSkill.c) {   // If skill has a timer, we need to clone it
-            setSkill(new_skills, key, copy_skill(newSkill));
-            reusable = false;
+function copy_skills(new_card, original_skills, original_empower_skills) {
+    new_card.skill = [];
+    new_card.empowerSkills = [];
+    if (!new_card.skillTimers) new_card.skillTimers = [];
+
+    copy_Skill_lists(new_card, new_card.skill, original_skills);
+    copy_Skill_lists(new_card, new_card.empowerSkills, original_empower_skills);
+}
+
+function copy_Skill_lists(new_card, new_skills, original_skills) {
+    for (var i = 0; i < original_skills.length; i++) {
+        var originalSkill = original_skills[i];
+        if (originalSkill.c) {   // If skill has a timer, we need to clone it
+            var newSkill = copy_skill(originalSkill);
+            new_skills.push(newSkill);
+            new_card.skillTimers.push(newSkill);
         } else {            // If skill has no timer, we can use the same instance
-            setSkill(new_skills, key, newSkill);
+            new_skills.push(originalSkill);
         }
-    }
-    return [new_skills, reusable];
-}
-
-function setSkill(current_skills, key, skill) {
-    // These skills could have multiple instances
-    switch (skill.id) {
-        case 'protect':
-        case 'protect_ice':
-        case 'strike':
-        case 'rally':
-        case 'enhance':
-        case 'fervor':
-        case 'jam':
-        case 'heal':
-        case 'enfeeble':
-        case 'legion':
-        case 'weaken':
-            current_skills[key] = skill;
-            break;
-        default:
-            current_skills[skill.id] = skill;
-            break;
     }
 }
 
@@ -475,24 +608,54 @@ function copy_skill(original_skill) {
 //Debug functions
 
 //return skills in readable format
-function debug_skills(skills) {
-    var first_skill = true;
-    var output = '';
-    for (var key in skills) {
-        var skill = skills[key];
-        if (first_skill) output += ' <u>( ';
-        else output += ' | ';
-        first_skill = false;
-        output += convertName(skill.id);
-        if (skill.all) output += ' all';
-        if (skill.y) output += ' ' + factions.names[skill.y];
-        if (skill.s) output += ' ' + convertName(skill.s);
-        if (skill.c) output += ' every ' + skill.c + ' turns';
-        else if (skill.x) output += ' ' + skill.x;
-    }
-    if (!first_skill) output += ' )</u>';
+function debug_skills(card) {
+    var skillText = [];
 
+    for (var key in card.empowerSkills) {
+        skillText.push(debug_skill(card.empowerSkills[key]));
+    }
+    for (var key in card.skill) {
+        skillText.push(debug_skill(card.skill[key]));
+    }
+    debug_passive_skills(card, skillText);
+    debug_triggered_skills(card, skillText);
+
+    if (skillText.length > 0) {
+        return ' <u>( ' + skillText.join(" | ") + ' )</u>';
+    } else {
+        return '';
+    }
+}
+
+function debug_skill(skill) {
+    var output = convertName(skill.id);
+    if (skill.all) output += ' all';
+    if (skill.y) output += ' ' + factions.names[skill.y];
+    if (skill.s) output += ' ' + convertName(skill.s);
+    if (skill.c) output += ' every ' + skill.c + ' turns';
+    else if (skill.x) output += ' ' + skill.x;
     return output;
+}
+
+function debug_passive_skills(card, skillText) {
+    debugNonActivatedSkill(card, "evade", skillText);
+    debugNonActivatedSkill(card, "armored", skillText);
+    debugNonActivatedSkill(card, "counter", skillText);
+}
+
+function debug_triggered_skills(card, skillText) {
+    debugNonActivatedSkill(card, "pierce", skillText);
+    debugNonActivatedSkill(card, "burn", skillText);
+    debugNonActivatedSkill(card, "poison", skillText);
+    debugNonActivatedSkill(card, "leech", skillText);
+    debugNonActivatedSkill(card, "berserk", skillText);
+}
+
+function debugNonActivatedSkill(card, skillName, skillText) {
+    var value = card[skillName];
+    if (value) {
+        skillText.push(convertName(skillName) + ' ' + value);
+    } 
 }
 
 function convertName(oldName) {
@@ -541,10 +704,10 @@ function debug_dump_decks() {
     echo += generate_card_list(cache_player_deck);
     echo += '" onclick="this.select()" size="100">';
     echo += '<br><br>';
-    var current_card = get_slim_card_by_id(cache_player_deck.commander, true);
+    var current_card = get_card_by_id(cache_player_deck.commander, true);
     current_card.owner = 'player';
     current_card.health_left = current_card.health;
-    echo += debug_name(current_card) + debug_skills(current_card.skill) + '<br>';
+    echo += debug_name(current_card) + debug_skills(current_card) + '<br>';
 
     debug_dump_cards(cache_player_deck, 'player');
 
@@ -571,10 +734,10 @@ function debug_dump_decks() {
     echo += '<br>';
     echo += '<u>Please note that Raid and Quest simulations randomize the enemy deck for each battle. Only one example enemy deck hash is generated.</u><br>';
     echo += '<br>';
-    var current_card = get_slim_card_by_id(debug_cpu_deck.commander, true);
+    var current_card = get_card_by_id(debug_cpu_deck.commander, true);
     current_card.owner = 'cpu';
     current_card.health_left = current_card.health;
-    echo += debug_name(current_card) + debug_skills(current_card.skill) + '<br>';
+    echo += debug_name(current_card) + debug_skills(current_card) + '<br>';
     debug_dump_cards(debug_cpu_deck, 'cpu');
     echo += '<br><hr><br>';
 }
@@ -582,13 +745,15 @@ function debug_dump_decks() {
 function debug_dump_cards(deck, player) {
     for (var key in deck.deck) {
         // Get cardID
-        var card_id = deck.deck[key];
+        var unit_info = deck.deck[key];
         // Setup card for printing
-        current_card = get_slim_card_by_id(card_id, true);
+        current_card = get_card_by_id(unit_info, true);
         current_card.owner = player;
         current_card.key = undefined;
+        current_card.health_left = current_card.health;
+        current_card.timer = current_card.cost;
         // Echo card info
-        echo += debug_name(current_card) + debug_skills(current_card.skill);
+        echo += debug_name(current_card) + debug_skills(current_card);
         if (current_card.type) echo += ' <u>' + factions.names[current_card.type] + '</u>';
         if (current_card.sub_type) echo += ' <u>' + factions.names[current_card.sub_type] + '</u>';
         echo += '<br>';
@@ -629,6 +794,7 @@ function debug_name(card, hideStats) {
     }
     var output = '<' + tag + '>';
     output += card.name;
+    if (card.runes.length) output += "*";
     if (card.maxLevel > 1) output += '{' + card.level + '/' + card.maxLevel + '}';
     if (card.key !== undefined) output += ' (' + card.key + ')';
     output += '</' + tag + '>';
@@ -636,7 +802,7 @@ function debug_name(card, hideStats) {
         output += '<u>';
         if (card.isCommander()) {
             output += ' [';
-            if (card.health_left !== undefined) output += card.health_left;
+            if (card.health_left !== undefined) output += debug_fraction(card.health_left);
             else output += card.health;
             output += ' HP]';
         } else if (card.isAssault()) {
@@ -645,7 +811,7 @@ function debug_name(card, hideStats) {
             if (isNaN(atk) || atk == undefined) atk = card.attack;
             output += atk;
             output += '/';
-            if (card.health_left !== undefined) output += card.health_left;
+            if (card.health_left !== undefined) output += debug_fraction(card.health_left);
             else output += card.health;
             output += '/';
             if (card.timer !== undefined) output += card.timer;
@@ -656,6 +822,13 @@ function debug_name(card, hideStats) {
     }
 
     return output;
+}
+
+function debug_fraction(value) {
+    if (value > Math.floor(value)) {
+        value = value.toFixed(1);
+    }
+    return value;
 }
 
 // Dump whatever card or array
@@ -672,18 +845,19 @@ function generate_card_list(deck) {
     var copies = [];
     var priorities = [];
 
-    var commander = get_slim_card_by_id(deck.commander);
+    var commander = get_card_by_id(deck.commander);
     cardlist.push(commander.name + "(" + commander.level + ")");
     copies.push(1);
     priorities.push(0);
     var lastidx = 0;
     for (var key in deck.deck) {
         var unit = deck.deck[key];
-        var card = get_slim_card_by_id(unit);
+        var card = get_card_by_id(unit);
 
         if (!card) continue;
 
         var card_name = card.name + "(" + card.level + ")";
+        if (card.runes.length) card_name += "*";
 
         if (cardlist[lastidx] == card_name) {
             copies[lastidx]++;
@@ -711,8 +885,42 @@ function generate_card_list(deck) {
     return cardlist;
 }
 
-var base64chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!~-";
+function generate_play_list(cards) {
+    var cardlist = [];
+    for (var i = 0; i < cards.length; i++) {
+        var unit = cards[i];
+        var card = get_card_by_id(unit);
+
+        if (!card) continue;
+        var o = (i % 2 == 0 ? 'b' : 'i');
+        var card_name = "<"+o+">" + card.name + "(" + card.level + ")";
+        if (card.runes.length) card_name += "*";
+        card_name += "</" + o + ">";
+
+        cardlist.push(card_name);
+    }
+
+    return "<td>" + cardlist.join("</td><td>") + "</td>";
+}
+
+function dumpPlay(unit, i) {
+    var card = get_card_by_id(unit);
+    var o = (i % 2 == 0 ? 'b' : 'i');
+    var card_name = "<" + o + ">" + card.name + "(" + card.level + ")";
+    if (card.runes.length) card_name += "*";
+    card_name += "</" + o + ">";
+    return card_name;
+}
+
+var base64chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!~";
 var multiplierChars = "_*.'";
+var runeDelimiter = "/";
+var indexDelimiter = '-';
+var priorityDelimiter = '|';
+var towers = {
+    601: true,
+    602: true
+};
 
 function base64triplet_to_unitInfo(triplet) {
 
@@ -726,8 +934,15 @@ function base64triplet_to_unitInfo(triplet) {
 
     var dec2 = base64chars.indexOf(triplet[1]) * 64;
     var dec3 = base64chars.indexOf(triplet[2]);
-
-    return { id: (fusion + dec1 + dec2 + dec3), level: level };;
+    var baseID = dec1 + dec2 + dec3;
+    if (towers[baseID]) {
+        var id = baseID;
+        var level = level + fusion * 3;
+        fusion = 1;
+    } else {
+        var id = (fusion + baseID);
+    }
+    return makeUnitInfo(id, level);
 }
 
 function unitInfo_to_base64triplet(unit_info) {
@@ -735,8 +950,13 @@ function unitInfo_to_base64triplet(unit_info) {
     var baseID = parseInt(unit_info.id);
     var level = (parseInt(unit_info.level) - 1);
 
-    var fusion = Math.floor(baseID / 10000);
-    baseID %= 10000;
+    if (towers[baseID]) {
+        var fusion = level % 3;
+        var level = Math.floor(level / 3);
+    } else {
+        var fusion = Math.floor(baseID / 10000);
+        baseID %= 10000;
+    }
 
     var char1 = base64chars[(Math.floor(baseID / 4096) * 3 + fusion) * 7 + level];
     baseID %= 4096;
@@ -745,6 +965,90 @@ function unitInfo_to_base64triplet(unit_info) {
     var char3 = base64chars[baseID % 64];
 
     return char1 + char2 + char3;
+}
+
+function runeID_to_base64(runeID) {
+    runeID = runeID_to_decimal(runeID);
+    var dec1 = runeID % 64;
+    var dec2 = (runeID - dec1) / 64;
+    return (base64chars[dec1] + base64chars[dec2]);
+}
+
+function runeID_to_decimal(runeID) {
+    if (runeID == 0) return 0;
+    runeID = parseInt(runeID) % 5000;
+    var runeLevel = runeID % 10;
+    var runeType = (runeID - runeLevel) / 10;
+    runeID = (runeType * 5) + runeLevel - 1;    // Make level 0-based
+    return runeID;
+}
+
+function base64_to_runeID(base64) {
+    var dec1 = base64chars.indexOf(base64[0]);
+    var dec2 = base64chars.indexOf(base64[1]) * 64;
+    var runeID = dec1 + dec2;
+    return decimal_to_runeID(runeID);
+}
+
+function decimal_to_runeID(decimal) {
+    var runeLevel = decimal % 5;
+    var runeType = (decimal - runeLevel) / 5;
+    if (runeType == 0) return 0;
+    var runeID = (runeType * 10) + runeLevel + 5001;    // Make level 0-based
+    return runeID;
+}
+
+function unitInfo_to_decimal(unit_info) {
+
+    var unitID = parseInt(unit_info.id);            // Max 30000
+    var level = (parseInt(unit_info.level) - 1);    // Max 7
+    var runeID = 0;                                 // Max 1000
+    if (unit_info.runes.length) {
+        runeID = runeID_to_decimal(parseInt(unit_info.runes[0].id) % 5000);
+    }
+    // Shift values and then add them to get decimal total
+    var decimal = runeID;
+    decimal = decimal * 7 + level;
+    decimal = decimal * 30000 + unitID;
+    return decimal;
+}
+
+function decimal_to_unitInfo(decimal) {
+
+    var unitID = decimal % 30000;
+    decimal = (decimal - unitID) / 30000;
+    var level = decimal % 7;
+    var runeID = decimal_to_runeID((decimal - level) / 7);
+    var unit_info = makeUnitInfo(unitID, level);
+    if (runeID > 0) {
+        unit_info.runes.push({ id: runeID });
+    }
+
+    return unit_info;
+}
+
+function numberToBase64(decimal) {
+    var char1 = base64chars[Math.floor(decimal / 64)];
+    var char2 = base64chars[decimal % 64];
+    return char1 + char2;
+}
+
+function numberToBase64Unlimited(decimal) {
+    var base64 = '';
+    var done = false
+    while (!done) {
+        if (dec == 0) done = true;
+        var dec = decimal % 64;
+        base64 += base64chars[dec];
+        decimal = (decimal - dec) / 64;
+    }
+    return base64;
+}
+
+function base64ToNumber(base64) {
+    var dec1 = base64chars.indexOf(base64[0]) * 64;
+    var dec2 = base64chars.indexOf(base64[1]);
+    return dec1 + dec2;
 }
 
 function encode_multiplier(copies) {
@@ -765,10 +1069,13 @@ function decode_multiplier(encoded) {
 
 
 //Returns hash built from deck array
-function hash_encode(deck) {
+function hash_encode(deck, combineMultiples) {
 
     var current_hash = [];
     var has_priorities = false;
+    var has_indexes = false;
+    var has_runes = false;
+    var indexes = [];
 
     if (deck.commander) {
         current_hash.push(unitInfo_to_base64triplet(deck.commander));
@@ -780,8 +1087,15 @@ function hash_encode(deck) {
         if (current_card.priority) {
             has_priorities = true;
         }
+        if (current_card.index) {
+            indexes.push(numberToBase64(current_card.index));
+            has_indexes = true;
+        }
+        if (current_card.runes.length) {
+            has_runes = true;
+        }
         var triplet = unitInfo_to_base64triplet(current_card);
-        if (triplet == current_hash[lastIndex]) {
+        if (combineMultiples && (triplet == current_hash[lastIndex])) {
             copies[lastIndex]++;
         } else {
             current_hash.push(triplet);
@@ -791,7 +1105,7 @@ function hash_encode(deck) {
     }
 
     if (has_priorities) {
-        var priorities = '|';
+        var priorities = priorityDelimiter;
         for (var k in deck.deck) {
             var current_card = deck.deck[k];
             if (current_card.priority) {
@@ -801,6 +1115,25 @@ function hash_encode(deck) {
             }
         }
         current_hash.push(priorities);
+    }
+
+    if (has_indexes) {
+        indexes = indexDelimiter + indexes.join('');
+        current_hash.push(indexes);
+    }
+
+    if (has_runes) {
+        var runes = runeDelimiter;
+        for (var k in deck.deck) {
+            var current_runes = deck.deck[k].runes;
+            var runeID = 0;                                 // Max 1000
+            if (current_runes.length) {
+                runeID = parseInt(current_runes[0].id);
+            }
+            runeID = runeID_to_base64(runeID);
+            runes += runeID;
+        }
+        current_hash.push(runes);
     }
 
     for (var i = 0; i < copies.length; i++) {
@@ -817,14 +1150,28 @@ function hash_encode(deck) {
 //Returns deck array built from hash
 function hash_decode(hash) {
 
-    var current_deck = [];
+    var current_deck = {};
     current_deck.deck = [];
     var unitInfo;
     var priorities;
-    if (hash.indexOf('|') > 0) {
+    var runes;
+    var indexes;
+    if (hash.indexOf(runeDelimiter) > 0) {
+        runes = [];
+        runesHash = hash.substr(hash.indexOf(runeDelimiter) + 1);
+        for (var i = 0, len = runesHash.length; i < len; i += 2) {
+            runes.push(base64_to_runeID(runesHash.substring(i, i+2)));
+        }
+        hash = hash.substr(0, hash.indexOf(runeDelimiter));
+    }
+    if (hash.indexOf(indexDelimiter) > 0) {
         // Ignore priorities for now
-        priorities = hash.substr(hash.indexOf('|') + 1);
-        hash = hash.substr(0, hash.indexOf('|'));
+        indexes = hash.substr(hash.indexOf(indexDelimiter) + 1).match(/.{1,2}/g);
+        hash = hash.substr(0, hash.indexOf(indexDelimiter));
+    }
+    if (hash.indexOf(priorityDelimiter) > 0) {
+        priorities = hash.substr(hash.indexOf(priorityDelimiter) + 1);
+        hash = hash.substr(0, hash.indexOf(priorityDelimiter));
     }
     var unitidx = 0;
     for (var i = 0; i < hash.length; i += 3) {
@@ -832,6 +1179,7 @@ function hash_decode(hash) {
             // Make sure we have valid characters
             unitInfo = base64triplet_to_unitInfo(hash.substr(i, 3));
             if (priorities) unitInfo.priority = priorities[unitidx];
+            if (unitidx > 0 && indexes) unitInfo.index = base64ToNumber(indexes[unitidx - 1]); // Skip commander
 
             if (unitInfo) {
                 if (CARDS[unitInfo.id]) {
@@ -849,10 +1197,23 @@ function hash_decode(hash) {
         } else {
             var multiplier = decode_multiplier(hash.substr(i, 2)) + 1;
             for (var n = 0; n < multiplier; n++) {
+                if (indexes) {
+                    var unit_info = makeUnitInfo(unitInfo.id, unitInfo.level);
+                    unitInfo.index = base64ToNumber(indexes[unitidx - 1]); // Skip commander
+                }
                 current_deck.deck.push(unitInfo);
                 unitidx++;
             }
             i -= 1; // Offset i so that the += 3 in the loop sets it to the correct next index
+        }
+    }
+
+    if (runes) {
+        for (var i = 0, len = runes.length; i < len; i++) {
+            var runeID = runes[i];
+            if (runeID) {
+                current_deck.deck[i].runes = [{ id: runeID }];
+            }
         }
     }
 
@@ -893,7 +1254,8 @@ function load_deck_from_cardlist(list) {
 
         for (var i in list) {
             var current_card = list[i].toString();
-            var unit = { id: 1, level: 7, priority: 0 }; // Default all cards to max level if none is specified
+            var unit = makeUnitInfo(1, 7);// Default all cards to max level if none is specified
+            unit.priority = 0;
             var card_found = false;
             var current_card_upgraded = false;
 
@@ -1020,85 +1382,161 @@ function clean_name_for_matching(name) {
 }
 
 // Load mission deck
-function load_deck_mission(id) {
-
+function load_deck_mission(id, level) {
     var missionInfo = MISSIONS[id];
-    if (!missionInfo) return 0;
-
-    var current_deck = [];
-    current_deck.deck = [];
-    current_deck.commander = { id: missionInfo.commander, level: 7 };   // Set commander to max level
-    var missionDeck = missionInfo.deck;
-    for (var current_key in missionDeck) {
-        var unit = { id: 0, level: 7 };
-        var current_card = missionDeck[current_key];
-        // Upgrade all cards to max fusion/level
-        if (current_card.length > 4) {
-            current_card[0] = '2';
-        } else {
-            current_card = '2' + current_card;
-        }
-        unit.id = current_card;
-        current_deck.deck.push(unit);
+    if (missionInfo) {
+        return load_preset_deck(missionInfo, level, 7);
+    } else {
+        return 0;
     }
-    return current_deck;
 }
 
-// Load raid deck
-// - randomize it as required
-function load_deck_raid(id) {
-
-    var raid = raids[id];
-    if (!raid) return 0;
-
-    // Load battleground, if available
-    if (raid.effect && !getbattleground) {
-        battleground = BATTLEGROUNDS[raid.effect.effect];
-        getbattleground = raid.effect;
+function load_deck_raid(id, level, maxLevel) {
+    if (!maxLevel) maxLevel = 25;
+    var raidInfo = RAIDS[id];
+    if (raidInfo) {
+        var newRaidInfo = {
+            commander: raidInfo.commander,
+            deck: raidInfo.deck.card
+        }
+        return load_preset_deck(newRaidInfo, level, maxLevel);
+    } else {
+        return 0;
     }
+}
+
+var DoNotFuse = ["8005", "8006", "8007", "8008", "8009", "8010"];
+function load_preset_deck(deckInfo, level, maxLevel) {
+
+    if (!level) level = maxLevel;
+    var upgradePoints = getUpgradePoints(level, 7);
 
     var current_deck = [];
     current_deck.deck = [];
-    current_deck.commander = raid.commander;
+    current_deck.commander = getPresetUnit(deckInfo.commander, level, maxLevel);   // Set commander to max level
+    upgradePoints -= current_deck.commander.level - 1;
+    var presetDeck = deckInfo.deck;
 
-    // Always included raid cards
-    var current_pool = raid.deck.always_include;
-    if (current_pool && current_pool.card) {
-        current_pool = current_pool.card;
-        for (var current_key in current_pool) {
-            var current_card = current_pool[current_key];
-            current_deck.deck.push(current_card);
+    var deck = current_deck.deck;
+    for (var current_key in presetDeck) {
+        var unitInfo = presetDeck[current_key];
+        var unit = getPresetUnit(unitInfo, level, maxLevel);
+        if (unit) {
+            deck.push(unit);
         }
     }
 
-    // Variable Card Pools
-    var parent_pool = raid.deck.card_pool;
-    if (parent_pool) {
-        for (var pool_key in parent_pool) {
-            current_pool = parent_pool[pool_key];
-            if (current_pool && current_pool.card) {
-                var amount = current_pool.amount;
-                var current_pool_cards = copy_card_list(current_pool.card);
-                shuffle(current_pool_cards);
-                for (var current_key in current_pool_cards) {
-                    if (amount < 1) break;
-                    var current_card = current_pool_cards[current_key];
-                    current_deck.deck.push(current_card);
-                    amount--;
-                }
+    if (level > 1 && level < maxLevel) {
+        var canFuse = deck.slice();
+        while (upgradePoints > 0 && canFuse.length > 0) {
+            var index = Math.floor(Math.random() * canFuse.length);
+            if (upgradeCard(canFuse[index])) {
+                upgradePoints--;
+            } else {
+                canFuse.splice(index, 1);
             }
         }
     }
+
     return current_deck;
 }
 
+function getUpgradePoints(level, pointsPer) {
+    var points = 0;
+    for (var i = 2; i <= level; i++) {
+        if (i % 3 == 0) pointsPer++;
+        points += pointsPer;
+    }
+    return points;
+}
+
+function getPresetUnit(unitInfo, level, maxLevel)
+{
+    if (unitInfo.mastery_level && level < parseInt(unitInfo.mastery_level)) return null;
+    if (unitInfo.remove_mastery_level && level >= parseInt(unitInfo.remove_mastery_level)) return null;
+
+    var cardID = unitInfo.id;
+    var unitLevel = (unitInfo.level | 1);
+
+    if (level >= maxLevel) {
+        unitLevel = 7;
+        if (canFuse(cardID)) {
+            cardID = fuseCard(cardID, "2");
+        }
+    } else if (level > 1 && is_commander(cardID)) {
+        unitLevel = Math.min(level, parseInt(CARDS[cardID].rarity) + 2);
+    }
+
+    return makeUnitInfo(cardID, unitLevel);
+}
+
+function upgradeCard(unitInfo) {
+    var maxLevel = (parseInt(CARDS[unitInfo.id].rarity) + 2);
+    if (unitInfo.level == maxLevel) {
+        if (canFuse(unitInfo.id)) {
+            unitInfo.id = fuseCard(unitInfo.id);
+            unitInfo.level = 1;
+        } else {
+            return false;
+        }
+    } else {
+        unitInfo.level++;
+    }
+    return true;
+}
+
+function canFuse(cardID) {
+    if (DoNotFuse.indexOf(cardID) > -1) {
+        return false;
+    } else if (is_commander(cardID)) {
+        return false;
+    } else if (cardID.length > 4) {
+        return parseInt(cardID[0]) < 2;
+    }
+    return true;
+}
+
+function fuseCard(cardID, fusion) {
+    if (DoNotFuse.indexOf(cardID) == -1) {
+        if (!fusion) fusion = (cardID.length > 4 ? "2" : "1");
+        if (cardID.length > 4) {
+            cardID = fusion + cardID.substring(1);
+        } else {
+            cardID = fusion + cardID;
+        }
+    }
+    return cardID;
+}
 
 // Output card array
+var get_card_apply_battlegrounds = function (id) {
+    return get_card_by_id(id, battlegrounds.onCreate);
+}
+
+function get_skills(id, level) {
+    var card = CARDS[id];
+    var skills = card.skill;
+    if (level > 1) {
+        var upgrade;
+        for (var key in card.upgrades) {
+            upgrade = card.upgrades[key];
+            if (upgrade.skill.length > 0) skills = upgrade.skill;
+            if (key == level) break;
+        }
+    }
+    return skills;
+}
+
 function get_card_by_id(unit, skillModifiers) {
 
-    var cached = card_cache[unit.id + "-" + unit.level]
+    var unitKey = unit.id + "-" + unit.level;
+    if (unit.runes.length) {
+        unitKey += "-" + unit.runes[0].id;
+    }
+    var cached = card_cache[unitKey];
     if (cached) {
-        return cloneCard(cached);
+        cached = cloneCard(cached);
+        return cached;
     }
 
     var current_card = CARDS[unit.id];
@@ -1116,7 +1554,15 @@ function get_card_by_id(unit, skillModifiers) {
         if (!current_card.skill) {
             current_card.skill = [];
         }
-        return MakeAssault(current_card, unit.level, skillModifiers);
+        var cached = MakeAssault(current_card, unit.level, skillModifiers);
+        if (unit.runes) {
+            cached.addRunes(unit.runes);
+        } else {
+            cached.runes = [];
+        }
+        card_cache[unitKey] = cached;
+        cached = cloneCard(cached);
+        return cached
     }
 }
 
@@ -1201,4 +1647,44 @@ function is_commander(id) {
     return (card && card.card_type == '1');
 }
 
-var elariaCaptain = { id: 202, level: 7 };
+function makeUnitInfo(id, level, runes) {
+    var unit = {
+        id: id,
+        level: level,
+        runes: []
+    };
+    if (runes) unit.runes = runes;
+    return unit;
+}
+
+var elariaCaptain = makeUnitInfo(202, 7);
+var card_cache = {};
+
+
+// Global arrays
+var factions = {
+    names: [
+        'Factionless',
+        'Aether',
+        'Chaos',
+        'Wyld',
+        'Frog',
+        'Elemental',
+        'Angel',
+        'Undead',
+        'Void',
+        'Dragon',
+    ],
+    IDs: {
+        Factionless: 0,
+        Aether: 1,
+        Chaos: 2,
+        Wyld: 3,
+        Frog: 4,
+        Elemental: 5,
+        Angel: 6,
+        Undead: 7,
+        Void: 8,
+        Dragon: 9
+    }
+};

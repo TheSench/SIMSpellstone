@@ -7,27 +7,31 @@ if (simulator_thread) {
         return Math.round(Math.random() * 1) == 1;
     };
 
-    // Get assault card by key
-    // - Don't rely on array keys! Use ['key'] field instead!
-    var get_assault_by_key = function (assaults, key) {
-        for (var assault_key = 0, len = assaults.length; assault_key < len; assault_key++) {
-            var assault = assaults[assault_key];
-            if (assault && assault['key'] == key) {
-                return assault;
-            }
-        }
-        return 0;
-    };
-
     // Play card
     var play_card = function (card, p, quiet) {
         var field_p_assaults = field[p]['assaults'];
+
+        // Store plays
+        //if (trackStats && p == 'player' && plays.length == 0) {
+        if (trackStats && plays.length < 3) {
+            plays.push(makeUnitInfo(card.id, card.level, card.runes));
+        }
 
         // Not a valid card
         if (!card.id) return 0;
 
         var newKey = field_p_assaults.length;
+        initializeCard(card, p, newKey);
+
+        field_p_assaults[newKey] = card;
+
+        if (debug && !quiet) echo += debug_name(field[p].commander) + ' plays ' + debug_name(card) + '<br>';
+    };
+
+    var initializeCard = function (card, p, newKey) {
         card.owner = p;
+        card.timer = card.cost;
+        card.health_left = card.health;
         // Setup status effects
         card.attack_rally = 0;
         card.attack_weaken = 0;
@@ -37,14 +41,12 @@ if (simulator_thread) {
         card.enfeebled = 0;
         card.protected = 0;
         card.barrier_ice = 0;
-        card.augmented = 0;
+        card.enhanced = 0;
         card.jammed = false;
         card.key = newKey;
+        if (!card.reusableSkills) card.resetTimers();
+    }
 
-        field_p_assaults[newKey] = card;
-
-        if (debug && !quiet) echo += debug_name(field[p].commander) + ' plays ' + debug_name(card) + '<br>';
-    };
     // Dead cards are removed from both fields. Cards on both fields all shift over to the left if there are any gaps.
     var remove_dead = function () {
         remove_dead_cards('player');
@@ -60,12 +62,16 @@ if (simulator_thread) {
             // Starting at the first dead unit, start shifting.
             if (!current_assault.isAlive()) {
                 if (debug) echo += debug_name(current_assault) + ' is removed from field<br>';
+                if (current_assault.owner == 'player') damage_taken += current_assault.health;
+                else damage_dealt += current_assault.health;
                 var newkey = key;	// Store the new key value for the next alive unit
                 for (key++; key < len; key++) {
                     current_assault = units[key];
                     // If this unit is dead, don't update newkey, we still need to fill that slot
                     if (!current_assault.isAlive()) {
                         if (debug) echo += debug_name(current_assault) + ' is removed from field<br>';
+                        if (current_assault.owner == 'player') damage_taken += current_assault.health;
+                        else damage_dealt += current_assault.health;
                     }
                         // If this unit is alive, set its key to newkey, and then update newkey to be the next slot
                     else {
@@ -84,14 +90,8 @@ if (simulator_thread) {
 
     // Picks one target by random
     var choose_random_target = function (targets) {
-        var len = targets.length
-        if (len == 0) return [];
-
-        var target = targets[Math.floor(Math.random() * len)];
-
-        if (!target) return [];
-
-        return [target];
+        var targetIndex = ~~(Math.random() * targets.length)
+        return [targets[targetIndex]];
     };
 
     var get_p = function (card) {
@@ -113,10 +113,9 @@ if (simulator_thread) {
         }
     };
 
-    var getAugment = function (card, s) {
-        var augments = card['augmented'];
-        if (augments && augments[s]) return augments[s];
-        else return 0;
+    var getEnhancement = function (card, s) {
+        var enhancements = card.enhanced;
+        return (enhancements ? (enhancements[s]|0) : 0);
     };
 
     var iceshatter = function (src_card) {
@@ -142,25 +141,35 @@ if (simulator_thread) {
         var field_p_assaults = field_p.assaults;
         for (var unit_key = 0, unit_len = field_p_assaults.length; unit_key < unit_len; unit_key++) {
             var current_unit = field_p_assaults[unit_key];
-            if (current_unit.isActive()) {
+            if (current_unit.empowerSkills.length && current_unit.isActive()) {
                 doEmpower(current_unit);
             }
         }
     };
 
     var doEmpower = function (source_card) {
+
+        var dualStrike = source_card.flurry && !source_card.flurry.countdown && source_card.hasAttack();
+        if (debug && dualStrike) {
+            // Let main attack loop deal with resetting timer
+            echo += debug_name(source_card) + ' activates dualstrike<br>';
+        }
+
         var skills = source_card.empowerSkills;
         for (var i = 0, len = skills.length; i < len; i++) {
             var skill = skills[i];
-            var dualStrike = source_card.flurry;
-            if (dualStrike && source_card.hasAttack()) {
-                if (!dualStrike.coundown) {
-                    // Let main attack loop deal with resetting timer
-                    if (debug) echo += debug_name(source_card) + ' activates dualstrike<br>';
-                    empowerSkills[skill.id](source_card, skill);
+            if (skill.c) {
+                if (skill.countdown) {
+                    skill.countdown--;
+                    continue;
+                } else {
+                    skill.countdown = skill.c - 1;
                 }
             }
             empowerSkills[skill.id](source_card, skill);
+            if (dualStrike) {
+                empowerSkills[skill.id](source_card, skill);
+            }
         }
     };
 
@@ -169,7 +178,7 @@ if (simulator_thread) {
         // Protect (Barrier)
         // - Can target specific faction
         // - Targets allied assaults
-        // - Can be augmented
+        // - Can be enhanced
         protect_ice: function(src_card, skill) {
             activationSkills.protect(src_card, skill, true);
         },
@@ -181,10 +190,6 @@ if (simulator_thread) {
             var o = get_o(src_card);
 
             var protect = skill['x'];
-            var augment = getAugment(src_card, skill.id);
-            if (augment && augment > 0) {
-                protect += augment;
-            }
             var all = skill['all'];
 
             var field_p_assaults = field[p]['assaults'];
@@ -194,7 +199,7 @@ if (simulator_thread) {
                 var target = field_p_assaults[key];
                 if (target.isAlive()
                 && target.isInFaction(faction)) {
-                    targets.push(target);
+                    targets.push(key);
                 }
             }
 
@@ -202,19 +207,25 @@ if (simulator_thread) {
             if (!targets.length) return;
 
             // Check All
-            if (!all) {
+            if (all) {
+                var enhanced = 0;
+            } else {
                 targets = choose_random_target(targets);
+                var enhanced = getEnhancement(src_card, skill.id);
+                if (enhanced) {
+                    protect += enhanced;
+                }
             }
 
             for (var key = 0, len = targets.length; key < len; key++) {
-                var target = targets[key];
+                var target = field_p_assaults[targets[key]];
 
                 target.protected += protect;
                 if (ice) {
                     target.barrier_ice += protect;
                 }
                 if (debug) {
-                    if (augment && augment > 0) echo += '<u>(Enhance: +' + augment + ')</u><br>';
+                    if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
                     echo += debug_name(src_card) + ' barriers ' + debug_name(target) + ' by ' + protect + '<br>';
                 }
             }
@@ -225,7 +236,7 @@ if (simulator_thread) {
         // - Targets allied, units
         // - Target must be active this turn (for activation skills only)
         // - Target must not be frozen (for activation skills only)
-        // - Target must have specific "augmentable skill" ("all" versions aren't counted)
+        // - Target must have specific "enhanceable skill" ("all" versions aren't counted)
         enhance: function (src_card, skill) {
 
             var faction = skill['y'];
@@ -233,7 +244,7 @@ if (simulator_thread) {
             var p = get_p(src_card);
             var o = get_o(src_card);
 
-            var augment = skill['x'];
+            var x = skill['x'];
             var s = skill['s'];
             var all = skill['all'];
 
@@ -242,11 +253,11 @@ if (simulator_thread) {
             var targets = [];
             for (var key = 0, len = field_p_assaults.length; key < len; key++) {
                 var target = field_p_assaults[key];
-                if (/*!target.isAlive() ||*/ !target.isUnjammed()) continue;
+                if (!target.isUnjammed()) continue;
                 if (!target.isInFaction(faction)) continue;
                 if (require_active_turn && !target.isActive()) continue;
-                if (target.hasSkill(s)) {
-                    targets.push(target);
+                if (target.hasSkill(s, 0)) {
+                    targets.push(key);
                 }
             }
 
@@ -259,16 +270,14 @@ if (simulator_thread) {
             }
 
             for (var key = 0, len = targets.length; key < len; key++) {
-                var target = targets[key];
-                var augments = target['augmented'];
-                if (!augments) {
-                    augments = {};
-                    target['augmented'] = augments;
+                var target = field_p_assaults[targets[key]];
+                var enhancements = target.enhanced;
+                if (!enhancements) {
+                    enhancements = {};
+                    target.enhanced = enhancements;
                 }
-                var augmented_skill = augments[s];
-                if (augmented_skill) augmented_skill += augment;
-                else augments[s] = augment;
-                if (debug) echo += debug_name(src_card) + ' enhances ' + s + ' of ' + debug_name(target, false) + ' by ' + augment + '<br>';
+                enhancements[s] = (enhancements[s] | 0) + x;
+                if (debug) echo += debug_name(src_card) + ' enhances ' + s + ' of ' + debug_name(target, false) + ' by ' + x + '<br>';
             }
         },
 
@@ -278,22 +287,12 @@ if (simulator_thread) {
         // - Can be enhanced
         heal: function (src_card, skill) {
 
-            if (skill['coundown']) {
-                skill['coundown']--;
-                if (skill['coundown'] > 0) return;
-                skill['coundown'] = skill['c'];
-            }
-
             var faction = skill['y'];
 
             var p = get_p(src_card);
             var o = get_o(src_card);
 
             var heal = skill['x'];
-            var augment = getAugment(src_card, skill.id);
-            if (augment && augment > 0) {
-                heal += augment;
-            }
             var all = skill['all'];
 
             var field_p_assaults = field[p]['assaults'];
@@ -304,28 +303,37 @@ if (simulator_thread) {
                 if (target.isAlive()
                 && target.isDamaged()
                 && target.isInFaction(faction)) {
-                    targets.push(target);
+                    targets.push(key);
                 }
             }
 
             // No Targets
             if (!targets.length) return;
 
-            if (!all) targets = choose_random_target(targets);
+            // Check All
+            if (all) {
+                var enhanced = 0;
+            } else {
+                targets = choose_random_target(targets);
+                var enhanced = getEnhancement(src_card, skill.id);
+                if (enhanced) {
+                    heal += enhanced;
+                }
+            }
 
             for (var key = 0, len = targets.length; key < len; key++) {
-                var target = targets[key];
+                var target = field_p_assaults[targets[key]];
 
                 var heal_amt = heal;
                 if (!heal_amt) {
                     var mult = skill.mult;
-                    heal_amt = Math.floor(target.health * mult);
+                    heal_amt = ~~(target.health * mult);
                 }
 
                 if (heal_amt > target['health'] - target['health_left']) heal_amt = target['health'] - target['health_left'];
                 target['health_left'] += heal_amt;
                 if (debug) {
-                    if (augment && augment > 0) echo += '<u>(Enhance: +' + augment + ')</u><br>';
+                    if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
                     echo += debug_name(src_card) + ' heals ' + debug_name(target) + ' by ' + heal_amt + '<br>';
                 }
             }
@@ -344,7 +352,6 @@ if (simulator_thread) {
             var o = get_o(src_card);
 
             var strike = skill['x'];
-            var augment = getAugment(src_card, skill.id);
 
             var all = skill['all'];
 
@@ -355,7 +362,7 @@ if (simulator_thread) {
                 var target = field_x_assaults[key];
                 if (target.isAlive()
                 && target.isInFaction(faction)) {
-                    targets.push(target);
+                    targets.push(key);
                 }
             }
 
@@ -363,10 +370,18 @@ if (simulator_thread) {
             if (!targets.length) return;
 
             // Check All
-            if (!all) targets = choose_random_target(targets);
+            if (all) {
+                var enhanced = 0;
+            } else {
+                targets = choose_random_target(targets);
+                var enhanced = getEnhancement(src_card, skill.id);
+                if (enhanced) {
+                    strike += enhanced;
+                }
+            }
 
             for (var key = 0, len = targets.length; key < len; key++) {
-                var target = targets[key];
+                var target = field_x_assaults[targets[key]];
 
                 // Check Evade
                 if (target['invisible']) {
@@ -387,8 +402,8 @@ if (simulator_thread) {
                 if (enfeeble) {
                     strike_damage += enfeeble;
                 }
-                if (augment) {
-                    strike_damage += augment;
+                if (enhanced) {
+                    strike_damage += enhanced;
                 }
                 var shatter = false;
                 if (protect) {
@@ -409,7 +424,7 @@ if (simulator_thread) {
                 if (debug) {
                     echo += '<u>(Strike: +' + strike;
                     if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
-                    if (augment) echo += ' Enhance: +' + augment;
+                    if (enhanced) echo += ' Enhance: +' + enhanced;
                     if (protect) echo += ' Barrier: -' + protect;
                     echo += ') = ' + strike_damage + ' damage</u><br>';
                     echo += debug_name(src_card) + ' bolts ' + debug_name(target) + ' for ' + strike_damage + ' damage';
@@ -429,11 +444,6 @@ if (simulator_thread) {
         // - If evaded, cooldown timer is not reset (tries again next turn)
         jam: function (src_card, skill) {
 
-            if (skill['coundown']) {
-                skill['coundown']--;
-                if (skill['coundown'] > 0) return;
-            }
-
             var p = get_p(src_card);
             var o = get_o(src_card);
 
@@ -448,31 +458,33 @@ if (simulator_thread) {
                 if (!target.isAlive()) continue;
                 if (!target.isActiveNextTurn()) continue;
                 if (target.isUnjammed()) {
-                    targets.push(target);
+                    targets.push(key);
                 }
             }
 
             // No Targets
-            if (!targets.length) return;
+            if (!targets.length) {
+                // No targets - retry next turn
+                skill.countdown = 0;
+                return;
+            }
 
             // Check All
             if (!all) targets = choose_random_target(targets);
 
             for (var key = 0, len = targets.length; key < len; key++) {
-                var target = targets[key];
+                var target = field_x_assaults[targets[key]];
+
                 // Check Evade
-                if (target['invisible']) {
-                    target['invisible']--;
+                if (target.invisible) {
+                    target.invisible--;
+                    // Missed - retry next turn
+                    skill.countdown = 0;
                     if (debug) echo += debug_name(src_card) + ' freezes ' + debug_name(target) + ' but it is invisible!<br>';
-                    // Bug 27296 - Freeze now resets when it misses
-                    if (skill['c']) skill['coundown'] = skill['c'];
                     continue;
                 }
 
-                // If we got a valid target, reset the timer
-                if (skill['c']) skill['coundown'] = skill['c'];
-
-                target['jammed'] = true;
+                target.jammed = true;
                 if (debug) echo += debug_name(src_card) + ' freezes ' + debug_name(target) + '<br>';
             }
         },
@@ -484,16 +496,12 @@ if (simulator_thread) {
         // - Can be enhanced
         frost: function (src_card, skill) {
 
-            if (skill['coundown']) {
-                skill['coundown']--;
-                if (skill['coundown'] > 0) return;
-            }
-
             var p = get_p(src_card);
             var o = get_o(src_card);
 
             var frost = skill['x'];
-            var augment = getAugment(src_card, skill.id);
+            var enhanced = getEnhancement(src_card, skill.id);
+            if (enhanced) frost += enhanced;
 
             var all = skill['all'];
 
@@ -506,7 +514,7 @@ if (simulator_thread) {
             for (; i <= end; i++) {
                 var target = field_x_assaults[i];
                 if (target && target.isAlive()) {
-                    targets.push(target);
+                    targets.push(i);
                 }
             }
 
@@ -514,7 +522,7 @@ if (simulator_thread) {
             if (!targets.length) return;
 
             for (var key = 0, len = targets.length; key < len; key++) {
-                var target = targets[key];
+                var target = field_x_assaults[targets[key]];
 
                 // Check Evade
                 if (target['invisible']) {
@@ -535,8 +543,8 @@ if (simulator_thread) {
                 if (enfeeble) {
                     frost_damage += enfeeble;
                 }
-                if (augment) {
-                    frost_damage += augment;
+                if (enhanced) {
+                    frost_damage += enhanced;
                 }
                 var shatter = false;
                 if (protect) {
@@ -557,7 +565,7 @@ if (simulator_thread) {
                 if (debug) {
                     echo += '<u>(Strike: +' + frost;
                     if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
-                    if (augment) echo += ' Enhance: +' + augment;
+                    if (enhanced) echo += ' Enhance: +' + enhanced;
                     if (protect) echo += ' Barrier: -' + protect;
                     echo += ') = ' + frost_damage + ' damage</u><br>';
                     echo += debug_name(src_card) + ' breathes frost at ' + debug_name(target) + ' for ' + frost_damage + ' damage';
@@ -573,7 +581,7 @@ if (simulator_thread) {
         // - Can target specific faction
         // - Targets enemy assaults
         // - Can be evaded
-        // - Can be augmented
+        // - Can be enhanced
         enfeeble: function (src_card, skill) {
 
             var faction = skill['y'];
@@ -582,10 +590,6 @@ if (simulator_thread) {
             var o = get_o(src_card);
 
             var enfeeble = skill['x'];
-            var augment = getAugment(src_card, skill.id);
-            if (augment && augment > 0) {
-                enfeeble += augment;
-            }
 
             var all = skill['all'];
 
@@ -596,7 +600,7 @@ if (simulator_thread) {
                 var target = field_x_assaults[key];
                 if (target.isAlive()
                 && target.isInFaction(faction)) {
-                    targets.push(target);
+                    targets.push(key);
                 }
             }
 
@@ -604,10 +608,18 @@ if (simulator_thread) {
             if (!targets.length) return;
 
             // Check All
-            if (!all) targets = choose_random_target(targets);
+            if (all) {
+                var enhanced = 0;
+            } else {
+                targets = choose_random_target(targets);
+                var enhanced = getEnhancement(src_card, skill.id);
+                if (enhanced) {
+                    enfeeble += enhanced;
+                }
+            }
 
             for (var key = 0, len = targets.length; key < len; key++) {
-                var target = targets[key];
+                var target = field_x_assaults[targets[key]];
                 // Check Evade
                 if (target['invisible']) {
                     target['invisible']--;
@@ -633,10 +645,6 @@ if (simulator_thread) {
             var o = get_o(src_card);
 
             var weaken = skill['x'];
-            var augment = getAugment(src_card, skill.id);
-            if (augment && augment > 0) {
-                weaken += augment;
-            }
 
             var all = skill['all'];
 
@@ -651,7 +659,7 @@ if (simulator_thread) {
                 if (target.isUnjammed()
                 && target.hasAttack()
                 && target.isInFaction(faction)) {
-                    targets.push(target);
+                    targets.push(key);
                 }
             }
 
@@ -659,10 +667,18 @@ if (simulator_thread) {
             if (!targets.length) return;
 
             // Check All
-            if (!all) targets = choose_random_target(targets);
+            if (all) {
+                var enhanced = 0;
+            } else {
+                targets = choose_random_target(targets);
+                var enhanced = getEnhancement(src_card, skill.id);
+                if (enhanced) {
+                    weaken += enhanced;
+                }
+            }
 
             for (var key = 0, len = targets.length; key < len; key++) {
-                var target = targets[key];
+                var target = field_x_assaults[targets[key]];
 
                 // Check Evade
                 if (target['invisible']) {
@@ -671,9 +687,11 @@ if (simulator_thread) {
                     continue;
                 }
 
-                target['attack_weaken'] += weaken;
+                target.attack_weaken += weaken;
+                var maxWeaken = target.permanentAttack();
+                if (target.attack_weaken > maxWeaken) target.attack_weaken = maxWeaken;
                 if (debug) {
-                    if (augment && augment > 0) echo += '<u>(Enhance: +' + augment + ')</u><br>';
+                    if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
                     echo += debug_name(src_card) + ' weakens ' + debug_name(target) + ' by ' + weaken + '<br>';
                 }
             }
@@ -684,19 +702,14 @@ if (simulator_thread) {
         // Rally
         // - Can target specific faction
         // - Targets allied unjammed, active assaults
-        // - Can be augmented
+        // - Can be enhanced
         rally: function (src_card, skill) {
 
             var faction = skill['y'];
 
             var p = get_p(src_card);
-            var o = get_o(src_card);
 
             var rally = skill['x'];
-            var augment = getAugment(src_card, skill.id);
-            if (augment && augment > 0) {
-                rally += augment;
-            }
             var all = skill['all'];
 
             var field_p_assaults = field[p]['assaults'];
@@ -704,8 +717,8 @@ if (simulator_thread) {
             var targets = [];
             for (var key = 0, len = field_p_assaults.length; key < len; key++) {
                 var target = field_p_assaults[key];
-                if (target.isActive() && target.isUnjammed() && target.isInFaction(faction)) {
-                    targets.push(target);
+                if (target.isActive() && target.isInFaction(faction) && target.isUnjammed()) {
+                    targets.push(key);
                 }
             }
 
@@ -713,18 +726,30 @@ if (simulator_thread) {
             if (!targets.length) return;
 
             // Check All
-            if (!all) {
+            if (all) {
+                var enhanced = 0;
+            } else {
                 targets = choose_random_target(targets);
+                var enhanced = getEnhancement(src_card, skill.id);
+                if (enhanced) {
+                    rally += enhanced;
+                }
             }
 
             for (var key = 0, len = targets.length; key < len; key++) {
-                var target = targets[key];
-                if (!target) return;
 
-                target.attack_rally += rally;
+                var target = field_p_assaults[targets[key]];
+
+                var rally_amt = rally;
+                if (!rally_amt) {
+                    var mult = skill.mult;
+                    rally_amt = Math.ceil(target.attack * mult);
+                }
+
+                target.attack_rally += rally_amt;
                 if (debug) {
-                    if (augment && augment > 0) echo += '<u>(Enhance: +' + augment + ')</u><br>';
-                    echo += debug_name(src_card) + ' empowers ' + debug_name(target) + ' by ' + rally + '<br>';
+                    if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
+                    echo += debug_name(src_card) + ' empowers ' + debug_name(target) + ' by ' + rally_amt + '<br>';
                 }
             }
         },
@@ -732,82 +757,68 @@ if (simulator_thread) {
         // Legion
         // - Targets specific faction
         // - Targets allied adjacent unjammed, active assaults
-        // - Can be augmented?
+        // - Can be enhanced?
         legion: function (src_card, skill) {
 
             var p = get_p(src_card);
             var field_p_assaults = field[p]['assaults'];
 
             var rally = skill['x'];
-            var augment = getAugment(src_card, skill.id);
-            if (augment && augment > 0) {
-                rally += augment;
-            }
+            var enhanced = getEnhancement(src_card, skill.id);
+            if (enhanced) rally += enhanced;
+
             var faction = skill['y'];
 
-            var src_position = src_card['key'];
-            var targets = [];
-            if (src_position > 0) {
-                // Check left
-                var target = get_assault_by_key(field_p_assaults, src_position - 1);
-                if (target) targets.push(target);
-            }
-            // Check right
-            var target = get_assault_by_key(field_p_assaults, src_position + 1);
-            if (target) targets.push(target);
+            var target_key = src_card['key'] - 1;
+            var len = target_key + 2;
+            if (target_key < 0) target_key += 2;
 
-            for (var key = 0, len = targets.length; key < len; key++) {
-                var target = targets[key];
-                if (target.isActive() && target.isInFaction(faction)) {
+            while (target_key <= len) {
+                // Check left
+                var target = field_p_assaults[target_key];
+                if (target && target.isActive() && target.isInFaction(faction)) {
                     target.attack_rally += rally;
                     if (debug) {
-                        if (augment && augment > 0) echo += '<u>(Enhance: +' + augment + ')</u><br>';
+                        if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
                         echo += debug_name(src_card) + ' activates legion and empowers ' + debug_name(target) + ' by ' + rally + '<br>';
                     }
                 }
+                target_key += 2;
             }
         },
 
         // Fervor
         // - Targets self for each adjacent unjammed, active assault in specific faction
-        // - Can be augmented?
+        // - Can be enhanced?
         fervor: function (src_card, skill) {
 
             var p = get_p(src_card);
             var field_p_assaults = field[p]['assaults'];
 
             var rally = skill['x'];
-            var augment = getAugment(src_card, skill.id);
-            if (augment && augment > 0) {
-                rally += augment;
-            }
+            var enhanced = getEnhancement(src_card, skill.id);
+            if (enhanced) rally += enhanced;
+
             var faction = skill['y'];
 
-            var src_position = src_card['key'];
-            var targets = [];
-            if (src_position > 0) {
-                // Check left
-                var target = get_assault_by_key(field_p_assaults, src_position - 1);
-                if (target) targets.push(target);
-            }
-            // Check right
-            var target = get_assault_by_key(field_p_assaults, src_position + 1);
-            if (target) targets.push(target);
-
-            // No Targets
-            if (!targets.length) return;
-
             var fervorAmount = 0;
-            for (var key = 0, len = targets.length; key < len; key++) {
-                var target = targets[key];
-                if (/*target.isAlive() &&*/ target.isInFaction(faction)) {
+
+            var target_key = src_card['key'] - 1;
+            var len = target_key + 2;
+            if (target_key < 0) target_key += 2;
+
+            while (target_key <= len) {
+                var target = field_p_assaults[target_key];
+                if (target && target.isInFaction(faction)) {
                     fervorAmount += rally;
                 }
+                target_key += 2
             }
+
             if (fervorAmount) {
                 src_card['attack_rally'] += fervorAmount;
                 if (debug) {
-                    if (augment && augment > 0) echo += '<u>(Enhance: +' + augment + ')</u><br>';
+                    if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
                     echo += debug_name(src_card) + ' activates fervor for ' + fervorAmount + '<br>';
                 }
             }
@@ -822,6 +833,16 @@ if (simulator_thread) {
 
         for (var i = 0, len = skills.length; i < len; i++) {
             var skill = skills[i];
+
+            if (skill.c) {
+                if (skill.countdown) {
+                    skill.countdown--;
+                    continue;
+                } else {
+                    skill.countdown = skill.c - 1;
+                }
+            }
+
             // Delegate to skill function
             activationSkills[skill.id](src_card, skill);
         }
@@ -830,34 +851,30 @@ if (simulator_thread) {
     // Simulate one game
     var simulate = function () {
         simulating = true;
+        damage_taken = 0;
+        damage_dealt = 0;
+        plays = [];
 
         // Shuffle decks
-        if (!getexactorder || !getordered) shuffle(deck['player']['deck']);
-        if (!getexactorder2 || !getordered2) shuffle(deck['cpu']['deck']);
-
-        // Initialize player Commander on the field
-        var field_player = field['player'];
-        var field_player_commander = get_card_apply_battlegrounds(deck['player']['commander']);
-        field_player['commander'] = field_player_commander;
-        field_player_commander.owner = 'player';
-        field_player_commander['health_left'] = field_player_commander['health'];
-        // Initialize cpu Commander on the field
-        var field_cpu = field['cpu'];
-        var field_cpu_commander = get_card_apply_battlegrounds(deck['cpu']['commander']);
-        field_cpu['commander'] = field_cpu_commander;
-        field_cpu_commander.owner = 'cpu';
-        field_cpu_commander['health_left'] = field_cpu_commander['health'];
-
-        // Set up players
-        var first_player = 'player';
-        var second_player = 'cpu';
-        if (surge) {
-            first_player = 'cpu';
-            second_player = 'player';
+        if (getexactorder) {
+            if (!getordered) {
+                deck.player.shuffleHand = true;
+            }
+        } else {
+            shuffle(deck.player.deck);
+        }
+        if (getexactorder2) {
+            if (!getordered2) {
+                deck.cpu.shuffleHand = true;
+            }
+        } else {
+            shuffle(deck.cpu.deck);
         }
 
+        setupField(field);
+
         if (getsiege) {
-            var tower = { id: 601 + parseInt(tower_type), level: parseInt(tower_level)-1 };
+            var tower = makeUnitInfo(601 + parseInt(tower_type), parseInt(tower_level)-1);
             var towerCard = get_card_apply_battlegrounds(tower);
             play_card(towerCard, 'cpu', true);
         }
@@ -865,7 +882,76 @@ if (simulator_thread) {
         return performTurns(0);
     };
 
+    var setupDecks = function () {
+        doSetupDecks();
+    }
+
+    var doSetupDecks = function () {
+        // Cache decks where possible
+        // Load player deck
+        if (getdeck) {
+            cache_player_deck = hash_decode(getdeck);
+        } else if (getcardlist) {
+            cache_player_deck = load_deck_from_cardlist(getcardlist);
+        } else {
+            cache_player_deck = load_deck_from_cardlist();
+        }
+        cache_player_deck_cards = getDeckCards(cache_player_deck);
+
+        totalDeckHealth = 0;
+        totalDeckHealth += cache_player_deck_cards.commander.health;
+        for(var i = 0; i < cache_player_deck_cards.deck.length; i++) {
+            totalDeckHealth += cache_player_deck_cards.deck[i].health;
+        }
+
+        // Load enemy deck
+        if (getdeck2) {
+            cache_cpu_deck = hash_decode(getdeck2);
+        } else if (getcardlist2) {
+            cache_cpu_deck = load_deck_from_cardlist(getcardlist2);
+        } else if (getmission) {
+            cache_cpu_deck = load_deck_mission(getmission);
+        } else if (getraid) {
+            cache_cpu_deck = load_deck_raid(getraid, raidlevel);
+        } else {
+            cache_cpu_deck = load_deck_from_cardlist();
+        }
+        cache_cpu_deck_cards = getDeckCards(cache_cpu_deck);
+
+        totalCpuDeckHealth = 0;
+        totalCpuDeckHealth += cache_cpu_deck_cards.commander.health;
+        for (var i = 0; i < cache_cpu_deck_cards.deck.length; i++) {
+            totalCpuDeckHealth += cache_cpu_deck_cards.deck[i].health;
+        }
+    }
+
+    var setupField = function (field) {
+        // Initialize player Commander on the field
+        var field_player = field.player;
+        var field_player_commander = deck.player.commander;
+        field_player.commander = field_player_commander;
+        field_player_commander.owner = 'player';
+        field_player_commander.health_left = field_player_commander.health;
+        if (!field_player_commander.reusableSkills) field_player_commander.resetTimers();
+
+        // Initialize cpu Commander on the field
+        var field_cpu = field.cpu;
+        var field_cpu_commander = deck.cpu.commander;
+        field_cpu.commander = field_cpu_commander;
+        field_cpu_commander.owner = 'cpu';
+        field_cpu_commander.health_left = field_cpu_commander.health;
+        if (!field_cpu_commander.reusableSkills) field_cpu_commander.resetTimers();
+    }
+
     var performTurns = function (turn) {
+        var done = performTurnsInner(turn);
+        if (done && user_controlled) {
+            debug_end();
+        }
+        return done;
+    }
+
+    var performTurnsInner = function (turn) {
         // Set up players
         var first_player, second_player;
         if (surge) {
@@ -882,7 +968,7 @@ if (simulator_thread) {
                 // Try this turn again
                 return false;
             }
-            if ((field.player.commander['health_left'] < 1) || (field.cpu.commander['health_left'] < 1)) {
+            if (!field.player.commander.isAlive() || !field.cpu.commander.isAlive()) {
                 simulating = false;
                 return true;
             }
@@ -902,7 +988,7 @@ if (simulator_thread) {
             if (!performTurn(turn, field, first_player, second_player, true)) {
                 // Try this turn again
                 return false;
-            } else if ((field.player.commander['health_left'] < 1) || (field.cpu.commander['health_left'] < 1)) {
+            } else if (!field.player.commander.isAlive() || !field.cpu.commander.isAlive()) {
                 simulating = false;
                 return true;
             }
@@ -955,14 +1041,14 @@ if (simulator_thread) {
             current_assault.enfeebled = 0;
             current_assault.protected = 0;
             current_assault.barrier_ice = 0;
-            current_assault.augmented = 0;;
+            current_assault.enhanced = 0;;
         }
     }
 
     var choose_card = function (p, turn, redraw) {
         
         var deck_p = deck[p];
-        var deck_p_deck = deck_p['deck'];
+        var deck_p_deck = deck_p.deck;
         var deck_p_ordered = deck_p['ordered'];
 
         // Deck not empty yet
@@ -978,7 +1064,6 @@ if (simulator_thread) {
                 for (var handIdx = 0, hand_len = hand.length; handIdx < hand_len; handIdx++)
                 {
                     var card = hand[handIdx];
-                    card = get_slim_card_by_id(card, true);
                     var text = handIdx + ": " + card['name'];
                     if (card.maxLevel > 1) text += '{' + card.level + '/' + card.maxLevel + '}';
                     cardsInHand.push(text);
@@ -986,13 +1071,13 @@ if (simulator_thread) {
                 }
                 if (redraw) {
                     outp(echo);
-                    draw_cards(drawableHand, performTurns, turn);
+                    draw_cards(field, drawableHand, performTurns, turn);
                     scroll_to_end();
                 }
                 if (choice === undefined) return false;
                 card_picked = choice;
                 if (!card_picked) card_picked = 0;
-                play_card(get_card_apply_battlegrounds(deck_p_deck[card_picked]), p);
+                play_card(deck_p_deck[card_picked], p);
             } else if (deck_p_ordered) {
                 // Prepare 3-card hand
                 var hand = deck_p_deck.slice(0, 3);
@@ -1036,13 +1121,40 @@ if (simulator_thread) {
                         }
                         deck_p_ordered.length = orderIdx;
                         card_picked = handIdx;
-                        play_card(get_card_apply_battlegrounds(cardInHand), p);
+                        play_card(cardInHand, p);
                         break;
                     }
                 }
             } else {
-                // Play first card in hand
-                play_card(get_card_apply_battlegrounds(deck_p_deck[0]), p);
+                if (deck_p_deck.length > 1 /*&& deck_p.shuffleHand*/) {
+                    // Play random card in hand
+                    var hand = deck_p_deck.slice(0, 3);
+                    if (p == 'player') {
+                        card_picked = ~~(Math.random() * deck_p_deck.slice(0, 3).length);
+                    } else {
+                        // Play card in hand with most upgrade points
+                        var best = [];
+                        var bestRank = 0;
+                        for (var i = 0; i < hand.length; i++) {
+                            var card = hand[i];
+                            var rank = getCardRanking(card);
+                            if (!bestRank) {
+                                bestRank = rank;
+                                best.push(i);
+                            } else if (rank == bestRank) {
+                                best.push(i);
+                            } else if (rank > bestRank) {
+                                bestRank = rank;
+                                best = [i];
+                            }
+                        }
+                        card_picked = best[~~(Math.random() * best.length)];
+                    }
+                } else {
+                    // Play first card in hand
+                    card_picked = 0;
+                }
+                play_card(deck_p_deck[card_picked], p);
             }
 
             // Remove from deck
@@ -1055,8 +1167,16 @@ if (simulator_thread) {
         return true;
     };
 
-    var get_card_apply_battlegrounds = function (id) {
-        return get_card_by_id(id, battlegrounds.onCreate);
+    var getCardRanking = function(card) {
+        var cardID = card.id.toString();
+
+        var fusion = (cardID.length > 4 ? parseInt(cardID[0]) : 0);
+        var rarity = parseInt(card.rarity);
+        var level = parseInt(card.level);
+
+        var ranking = rarity + fusion + level;
+
+        return ranking;
     }
 
     var play_turn = function (p, o, field) {
@@ -1070,8 +1190,9 @@ if (simulator_thread) {
         var field_o_assaults = field_o['assaults'];
 
         // Activate battleground effects
-        for (var key in battlegrounds.onTurn) {
-            var battleground = battlegrounds.onTurn[key];
+        for (var i = 0; i < battlegrounds.onTurn.length; i++) {
+            var battleground = battlegrounds.onTurn[i];
+            if (battleground.enemy_only && p != 'cpu') continue;
             battleground.owner = p;
             doEmpower(battleground);
             activation_skills(battleground);
@@ -1084,13 +1205,11 @@ if (simulator_thread) {
         // Reset invisibility count after enhance has had a chance to fire
         for (var key = 0, len = field_p_assaults.length; key < len; key++) {
             var current_assault = field_p_assaults[key];
-            /*if (current_assault.skill.evade) {
-                current_assault['invisible'] = current_assault.skill.evade.x;*/
             if (current_assault.evade) {
                 current_assault.invisible = current_assault.evade;
-                var augment = getAugment(current_assault, 'evade');
-                if (augment) {
-                    current_assault.invisible += augment;
+                var enhanced = getEnhancement(current_assault, 'evade');
+                if (enhanced) {
+                    current_assault.invisible += enhanced;
                 }
             }
         }
@@ -1119,10 +1238,10 @@ if (simulator_thread) {
             var activations = 1;
             var dualStrike = current_assault.flurry;
             if (dualStrike && current_assault.hasAttack()) {
-                if (dualStrike['coundown']) {
-                    dualStrike['coundown']--;
+                if (dualStrike.countdown) {
+                    dualStrike.countdown--;
                 } else if (current_assault.hasAttack()) {
-                    dualStrike['coundown'] = dualStrike['c'] - 1;
+                    dualStrike.countdown = dualStrike.c - 1;
                     activations++;
                     if (debug) echo += debug_name(current_assault) + ' activates dualstrike<br>';
                 }
@@ -1143,7 +1262,7 @@ if (simulator_thread) {
                 doAttack(current_assault, field_o_assaults, field_o_commander);
 
                 // WINNING CONDITION (in case of backfire or shock)
-                if ((field_o_commander['health_left'] < 1) || (field_p_commander['health_left'] < 1)) {
+                if (!field_o_commander.isAlive() || !field_p_commander.isAlive()) {
                     return;
                 }
 
@@ -1166,7 +1285,7 @@ if (simulator_thread) {
 
         field_p_assaults = field_p['assaults'];
 
-        // Remove from your field: Chaos, Jam, Enfeeble, Rally, Weaken, Augment
+        // Remove from your field: Chaos, Jam, Enfeeble, Rally, Weaken, Enhance
         for (var key = 0, len = field_p_assaults.length; key < len; key++) {
             var current_assault = field_p_assaults[key];
 
@@ -1236,9 +1355,9 @@ if (simulator_thread) {
         // var pierce = current_assault['skill']['pierce'];
         var pierce = current_assault.pierce;
         if (pierce) {
-            var augment = getAugment(current_assault, 'pierce');
-            if (augment && augment > 0) {
-                pierce += augment;
+            var enhanced = getEnhancement(current_assault, 'pierce');
+            if (enhanced) {
+                pierce += enhanced;
             }
         } else {
             pierce = 0;
@@ -1247,13 +1366,11 @@ if (simulator_thread) {
         // Damage reduction
         var protect = target.protected;
         var shatter = false;
-        var armor = target.armored; //0;
+        var armor = target.armored;
         if(armor) {
-        /*if (target.skill.armored) {
-            //armor = target.skill.armored.x;*/
-            var augment = getAugment(target, 'armored');
-            if (augment && augment > 0) {
-                armor += augment;
+            var enhanced = getEnhancement(target, 'armored');
+            if (enhanced) {
+                armor += enhanced;
             }
         }
 
@@ -1274,7 +1391,7 @@ if (simulator_thread) {
                     protect -= pierce;
                     target.protected -= pierce;
                     // Bug 27415 - Pierce does NOT reduce potential Iceshatter damage unless protect is completely removed by it
-                    //target.iceshatter -= pierce;
+                    //target.barrier_ice -= pierce;
                     pierce = 0;
                 }
             }
@@ -1321,7 +1438,7 @@ if (simulator_thread) {
         }
 
         // WINNING CONDITION
-        if (field_o_commander['health_left'] < 1) {
+        if (!field_o_commander.isAlive()) {
             return;
         }
 
@@ -1331,7 +1448,7 @@ if (simulator_thread) {
         // - Target must not be already poisoned of that level
         if (damage > 0 && target.isAssault() && current_assault.poison && target.isAlive()) {
             var poison = current_assault.poison;
-            poison += getAugment(current_assault, 'poison');
+            poison += getEnhancement(current_assault, 'poison');
             if (poison > target['poisoned']) {
                 target['poisoned'] = poison;
                 if (debug) echo += debug_name(current_assault) + ' inflicts poison(' + poison + ') on ' + debug_name(target) + '<br>';
@@ -1353,8 +1470,12 @@ if (simulator_thread) {
             if (current_assault.leech && target.isAssault() && current_assault.isAlive() && current_assault.isDamaged()) {
 
                 var leech_health = current_assault.leech;
-                leech_health += getAugment(current_assault, 'leech');
-                leech_health = Math.min(leech_health, damage, (current_assault.health - current_assault.health_left));
+                leech_health += getEnhancement(current_assault, 'leech');
+                leech_health = Math.min(leech_health, damage);
+                var healthMissing = current_assault.health - current_assault.health_left;
+                if (leech_health >= healthMissing) {
+                    leech_health = healthMissing;
+                }
 
                 current_assault.health_left += leech_health;
                 if (debug) echo += debug_name(current_assault) + ' siphons ' + leech_health + ' health<br>';
@@ -1366,9 +1487,9 @@ if (simulator_thread) {
             if (target.counter) {
 
                 var counter_damage = 0 + target.counter;
-                var augment = getAugment(target, 'counter');
-                if (augment && augment > 0) {
-                    counter_damage += augment;
+                var enhanced = getEnhancement(target, 'counter');
+                if (enhanced) {
+                    counter_damage += enhanced;
                 }
 
                 // Protect
@@ -1384,8 +1505,8 @@ if (simulator_thread) {
 
                 if (debug) {
                     echo += '<u>(Counter: +' + target.counter;
-                    if (augment) echo += ' Enhance: +' + augment;
-                    if (protect) echo += ' Barrier: +' + protect;
+                    if (enhanced) echo += ' Enhance: +' + enhanced;
+                    if (protect) echo += ' Barrier: -' + protect;
                     echo += ') = ' + counter_damage + ' damage</u><br>';
                 }
 
@@ -1402,7 +1523,7 @@ if (simulator_thread) {
             if (damage > 0 && current_assault.berserk && current_assault.isAlive()) {
 
                 var berserk = current_assault.berserk;
-                berserk += getAugment(current_assault, 'berserk');
+                berserk += getEnhancement(current_assault, 'berserk');
 
                 current_assault.attack_berserk += berserk;
                 if (debug) echo += debug_name(current_assault) + ' activates berserk and gains ' + berserk + ' attack<br>';
@@ -1416,7 +1537,7 @@ if (simulator_thread) {
         // - Target must be an assault
         if (target.isAssault() && current_assault.burn && target.isAlive() && current_assault.isAlive()) {
             var scorch = current_assault.burn;
-            scorch += getAugment(current_assault, 'burn');
+            scorch += getEnhancement(current_assault, 'burn');
             if (!target['scorched']) {
                 target['scorched'] = { 'amount': scorch, 'timer': 2 };
             } else {
@@ -1429,10 +1550,84 @@ if (simulator_thread) {
         // -- END OF STATUS INFLICTION --
     };
 
+    var updateStats = function (result, points) {
+        var hash = hash_encode({ commander: cache_player_deck.commander, deck: plays }, false);
+        var order_stats = orders[hash];
+        if (!order_stats) {
+            order_stats = {
+                wins: 0,
+                losses: 0,
+                draws: 0,
+                games: 0,
+                points: 0
+            }
+            orders[hash] = order_stats;
+        }
+        order_stats.games++;
+
+        var result;
+        if (result == 'draw') {
+            order_stats.draws++;
+        } else if (result) {
+            order_stats.wins++;
+        } else {
+            order_stats.losses++;
+        }
+        order_stats.points += points;
+    };
+
+
+    var CalculatePoints = function () {
+        var uids = field.uids;
+        if (uids) {
+            for (var i in uids) {
+                var assault = uids[i];
+                if (assault.owner == 'player') {
+                    damage_taken += (assault.health - assault.health_left);
+                } else {
+                    damage_dealt += (assault.health - assault.health_left);
+                }
+            }
+        }
+        var assaults = field.player.assaults;
+        for (var i = 0, len = assaults.length; i < len; i++) {
+            var assault = assaults[i];
+            if (uids && uids[assault.uid]) continue;    // Already counted this card
+            damage_taken += (assault.health - assault.health_left);
+        }
+        var assaults = field.cpu.assaults;
+        for (var i = 0, len = assaults.length; i < len; i++) {
+            var assault = assaults[i];
+            if (uids && uids[assault.uid]) continue;    // Already counted this card
+            damage_dealt += (assault.health - assault.health_left);
+        }
+        var commander = field.cpu.commander;
+        damage_dealt += (commander.health - commander.health_left);
+        var commander = field.player.commander;
+        damage_taken += (commander.health - commander.health_left);
+        if (getraid) {
+            if (field.cpu.commander.isAlive()) {
+                var points = Math.floor((damage_dealt / totalCpuDeckHealth) / 0.02);
+                points = Math.max(5, points);
+            } else {
+                var points = 200 - Math.floor((damage_taken / totalDeckHealth) / 0.02);
+            }
+        } else {
+            var points = (field.cpu.commander.isAlive() ? 25 : 130) - Math.floor((damage_taken / totalDeckHealth) / 0.05);
+        }
+        return points;
+    }
+
     var deck = [];
-    var number_of_summons = [];
     var field = [];
+    var battlegrounds;
     var simulation_turns = 0;
     var time_start_batch = 0;
     var simulating = false;
+    var turn = 0;
+    var damage_taken = 0;
+    var damage_dealt = 0;
+    var plays = [];
+    var totalDeckHealth = 0;
+    var totalCpuDeckHealth = 0;
 }

@@ -33,7 +33,7 @@
     margin: 1px 0px;
 }
 
-.commander .card-image {
+.commander .sprite {
     border: solid;
     border-width: 5px;
     color: gold;
@@ -103,22 +103,6 @@
 .factionless.commander {
     background-image: linear-gradient(grey, black);
 }
-
-.card-image {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
-
-    .card-image::after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        content: '';
-        background-image: url('../res/cardImages/NotFound.jpg');
-    }
 
 img[src='Error.src'] {
     display: none;
@@ -257,15 +241,15 @@ img[src='Error.src'] {
 .card-skills-detailed {
     position: absolute;
     width: 100%;
+    box-sizing: border-box;
     height: auto;
     bottom: 0px;
-    padding: 5px 20px 13px 20px;
+    padding: 10px 20px 22px 13px;
     left: 0px;
     text-align: left;
     background-image: linear-gradient( 0deg, rgba(0,0,0,0.9), rgba(0,0,0,0.8) 80%, rgba(0,0,0,0.7) 85%, rgba(0,0,0,0.0));
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    display: none;
 }
 
     .card-skills-detailed img {
@@ -294,8 +278,14 @@ img[src='Error.src'] {
         visibility: visible;
     }
 
+/*
 .card-statuses {
     visibility: hidden;
+}
+*/
+
+.card-statuses img {
+    width: 12px;
 }
 
 .hidden {
@@ -307,6 +297,7 @@ img[src='Error.src'] {
     text-align: center;
 }
 
+    .card-statuses,
     .hidden:hover ~ .card-statuses,
     .card-statuses:hover {
         position: absolute;
@@ -378,7 +369,7 @@ img[src='Error.src'] {
 .float-left .card {
     width: 84px;
     height: 120px;
-    margin-right: 5px;
+    margin: 2px;
     display: inline-block;
     vertical-align: top;
 }
@@ -391,6 +382,26 @@ img[src='Error.src'] {
     margin-right: 5px;
 }
 
-.frozen {
-    background-color: lightblue;
+.inactive:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.75;
+    background-color: darkgrey;
+    z-index: 1;
+}
+
+.frozen:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background-color: cyan;
+    z-index: 1000;
 }
