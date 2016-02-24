@@ -11,13 +11,13 @@
                 var items = JSON.parse(field.value).item_data;
                 for (var key in items) {
                     var item = items[key];
-                    if (item.name.indexOf("Rune") > -1 && item.type == 3) {
+                    if (item.category == 3) {
                         runes[key] = item;
                     }
                 }
             } catch (error) {}
             field.value = "";
-            document.getElementById("output").value = ("var RUNES = " + JSON.stringify(runes));
+            document.getElementById("output").innerHTML = ("var RUNES = " + JSON.stringify(runes, null, "<br>"));
         }
 
         function hashAndUnHash(field) {
@@ -37,7 +37,7 @@
     </script>
 </head>
 <body>
-    <input id="runes" type="text" onchange="hashAndUnHash(this)" style="width:100%" />
+    <input id="runes" type="text" onchange="parseRunes(this)" style="width:100%" />
     <br/>
     <div id="output" style="width:100%" />
 </body>

@@ -13,7 +13,8 @@ var RUNES = {
         "usable": "0",
         "stat_boost": {
             "health": "3"
-        }
+        },
+        "category": 3
     },
     "5012": {
         "id": "5012",
@@ -27,7 +28,8 @@ var RUNES = {
         "usable": "0",
         "stat_boost": {
             "health": "5"
-        }
+        },
+        "category": 3
     },
     "5013": {
         "id": "5013",
@@ -41,7 +43,8 @@ var RUNES = {
         "usable": "0",
         "stat_boost": {
             "health": "8"
-        }
+        },
+        "category": 3
     },
     "5021": {
         "id": "5021",
@@ -58,7 +61,8 @@ var RUNES = {
                 "id": "evade",
                 "x": "1"
             }
-        }
+        },
+        "category": 3
     },
     "5031": {
         "id": "5031",
@@ -75,7 +79,8 @@ var RUNES = {
                 "id": "protect",
                 "x": "2"
             }
-        }
+        },
+        "category": 3
     },
     "5032": {
         "id": "5032",
@@ -92,7 +97,8 @@ var RUNES = {
                 "id": "protect",
                 "x": "3"
             }
-        }
+        },
+        "category": 3
     },
     "5033": {
         "id": "5033",
@@ -109,7 +115,8 @@ var RUNES = {
                 "id": "protect",
                 "x": "4"
             }
-        }
+        },
+        "category": 3
     },
     "5034": {
         "id": "5034",
@@ -127,7 +134,8 @@ var RUNES = {
                 "x": "1",
                 "all": "1"
             }
-        }
+        },
+        "category": 3
     },
     "5041": {
         "id": "5041",
@@ -144,7 +152,8 @@ var RUNES = {
                 "id": "heal",
                 "x": "2"
             }
-        }
+        },
+        "category": 3
     },
     "5042": {
         "id": "5042",
@@ -161,7 +170,8 @@ var RUNES = {
                 "id": "heal",
                 "x": "3"
             }
-        }
+        },
+        "category": 3
     },
     "5043": {
         "id": "5043",
@@ -178,7 +188,8 @@ var RUNES = {
                 "id": "heal",
                 "x": "5"
             }
-        }
+        },
+        "category": 3
     },
     "5044": {
         "id": "5044",
@@ -196,7 +207,8 @@ var RUNES = {
                 "x": "1",
                 "all": "1"
             }
-        }
+        },
+        "category": 3
     },
     "5045": {
         "id": "5045",
@@ -214,7 +226,8 @@ var RUNES = {
                 "x": "2",
                 "all": "1"
             }
-        }
+        },
+        "category": 3
     },
     "5051": {
         "id": "5051",
@@ -231,7 +244,8 @@ var RUNES = {
                 "id": "counter",
                 "x": "1"
             }
-        }
+        },
+        "category": 3
     },
     "5052": {
         "id": "5052",
@@ -248,7 +262,8 @@ var RUNES = {
                 "id": "counter",
                 "x": "2"
             }
-        }
+        },
+        "category": 3
     },
     "5053": {
         "id": "5053",
@@ -265,7 +280,8 @@ var RUNES = {
                 "id": "counter",
                 "x": "3"
             }
-        }
+        },
+        "category": 3
     },
     "5061": {
         "id": "5061",
@@ -282,7 +298,8 @@ var RUNES = {
                 "id": "armored",
                 "x": "1"
             }
-        }
+        },
+        "category": 3
     },
     "5062": {
         "id": "5062",
@@ -299,7 +316,8 @@ var RUNES = {
                 "id": "armored",
                 "x": "2"
             }
-        }
+        },
+        "category": 3
     },
     "5063": {
         "id": "5063",
@@ -316,7 +334,8 @@ var RUNES = {
                 "id": "armored",
                 "x": "3"
             }
-        }
+        },
+        "category": 3
     },
     "5071": {
         "id": "5071",
@@ -333,7 +352,8 @@ var RUNES = {
                 "id": "rally",
                 "x": "1"
             }
-        }
+        },
+        "category": 3
     },
     "5072": {
         "id": "5072",
@@ -350,7 +370,8 @@ var RUNES = {
                 "id": "rally",
                 "x": "2"
             }
-        }
+        },
+        "category": 3
     },
     "5073": {
         "id": "5073",
@@ -367,7 +388,8 @@ var RUNES = {
                 "id": "rally",
                 "x": "3"
             }
-        }
+        },
+        "category": 3
     },
     "5074": {
         "id": "5074",
@@ -385,7 +407,8 @@ var RUNES = {
                 "x": "1",
                 "all": "1"
             }
-        }
+        },
+        "category": 3
     },
     "5081": {
         "id": "5081",
@@ -402,7 +425,8 @@ var RUNES = {
                 "id": "legion",
                 "x": "1"
             }
-        }
+        },
+        "category": 3
     },
     "5082": {
         "id": "5082",
@@ -419,7 +443,8 @@ var RUNES = {
                 "id": "legion",
                 "x": "2"
             }
-        }
+        },
+        "category": 3
     },
     "5091": {
         "id": "5091",
@@ -436,7 +461,8 @@ var RUNES = {
                 "id": "fervor",
                 "x": "1"
             }
-        }
+        },
+        "category": 3
     },
     "5092": {
         "id": "5092",
@@ -453,7 +479,8 @@ var RUNES = {
                 "id": "fervor",
                 "x": "2"
             }
-        }
+        },
+        "category": 3
     },
     "5101": {
         "id": "5101",
@@ -470,7 +497,8 @@ var RUNES = {
                 "id": "enfeeble",
                 "x": "1"
             }
-        }
+        },
+        "category": 3
     },
     "5102": {
         "id": "5102",
@@ -487,7 +515,8 @@ var RUNES = {
                 "id": "enfeeble",
                 "x": "2"
             }
-        }
+        },
+        "category": 3
     },
     "5103": {
         "id": "5103",
@@ -504,7 +533,8 @@ var RUNES = {
                 "id": "enfeeble",
                 "x": "4"
             }
-        }
+        },
+        "category": 3
     },
     "5104": {
         "id": "5104",
@@ -522,7 +552,8 @@ var RUNES = {
                 "x": "1",
                 "all": "1"
             }
-        }
+        },
+        "category": 3
     },
     "5111": {
         "id": "5111",
@@ -539,7 +570,8 @@ var RUNES = {
                 "id": "strike",
                 "x": "1"
             }
-        }
+        },
+        "category": 3
     },
     "5112": {
         "id": "5112",
@@ -556,7 +588,8 @@ var RUNES = {
                 "id": "strike",
                 "x": "2"
             }
-        }
+        },
+        "category": 3
     },
     "5113": {
         "id": "5113",
@@ -573,7 +606,8 @@ var RUNES = {
                 "id": "strike",
                 "x": "4"
             }
-        }
+        },
+        "category": 3
     },
     "5114": {
         "id": "5114",
@@ -591,7 +625,8 @@ var RUNES = {
                 "x": "1",
                 "all": "1"
             }
-        }
+        },
+        "category": 3
     },
     "5121": {
         "id": "5121",
@@ -608,7 +643,8 @@ var RUNES = {
                 "id": "burn",
                 "x": "1"
             }
-        }
+        },
+        "category": 3
     },
     "5122": {
         "id": "5122",
@@ -625,7 +661,8 @@ var RUNES = {
                 "id": "burn",
                 "x": "2"
             }
-        }
+        },
+        "category": 3
     },
     "5151": {
         "id": "5151",
@@ -642,7 +679,8 @@ var RUNES = {
                 "id": "weaken",
                 "x": "1"
             }
-        }
+        },
+        "category": 3
     },
     "5152": {
         "id": "5152",
@@ -659,7 +697,8 @@ var RUNES = {
                 "id": "weaken",
                 "x": "2"
             }
-        }
+        },
+        "category": 3
     },
     "5153": {
         "id": "5153",
@@ -676,7 +715,8 @@ var RUNES = {
                 "id": "weaken",
                 "x": "4"
             }
-        }
+        },
+        "category": 3
     },
     "5154": {
         "id": "5154",
@@ -694,7 +734,8 @@ var RUNES = {
                 "x": "1",
                 "all": "1"
             }
-        }
+        },
+        "category": 3
     },
     "5161": {
         "id": "5161",
@@ -712,7 +753,8 @@ var RUNES = {
                 "x": "1"
             },
             "health": "1"
-        }
+        },
+        "category": 3
     },
     "5162": {
         "id": "5162",
@@ -730,7 +772,8 @@ var RUNES = {
                 "x": "2"
             },
             "health": "2"
-        }
+        },
+        "category": 3
     },
     "5163": {
         "id": "5163",
@@ -748,7 +791,8 @@ var RUNES = {
                 "x": "3"
             },
             "health": "3"
-        }
+        },
+        "category": 3
     },
     "5171": {
         "id": "5171",
@@ -765,7 +809,8 @@ var RUNES = {
                 "id": "poison",
                 "x": "1"
             }
-        }
+        },
+        "category": 3
     },
     "5172": {
         "id": "5172",
@@ -782,7 +827,8 @@ var RUNES = {
                 "id": "poison",
                 "x": "2"
             }
-        }
+        },
+        "category": 3
     },
     "5181": {
         "id": "5181",
@@ -799,6 +845,115 @@ var RUNES = {
                 "id": "leech",
                 "x": "2"
             }
-        }
+        },
+        "category": 3
+    },
+    "5182": {
+        "id": "5182",
+        "name": "Rune of Siphoning",
+        "type": "3",
+        "set": "1",
+        "rarity": "3",
+        "icon": "rune_siphon_epic",
+        "bundle": "34",
+        "desc": "Siphon +3",
+        "usable": "0",
+        "stat_boost": {
+            "skill": {
+                "id": "leech",
+                "x": "3"
+            }
+        },
+        "category": 3
+    },
+    "5183": {
+        "id": "5183",
+        "name": "Rune of Greater Siphoning",
+        "type": "3",
+        "set": "1",
+        "rarity": "4",
+        "icon": "rune_siphon_legendary",
+        "bundle": "34",
+        "desc": "Siphon +4",
+        "usable": "0",
+        "stat_boost": {
+            "skill": {
+                "id": "leech",
+                "x": "4"
+            }
+        },
+        "category": 3
+    },
+    "5184": {
+        "id": "5184",
+        "name": "Rune of Berserk",
+        "type": "3",
+        "set": "1",
+        "rarity": "3",
+        "icon": "rune_berserk_epic",
+        "bundle": "34",
+        "desc": "Berserk +1",
+        "usable": "0",
+        "stat_boost": {
+            "skill": {
+                "id": "berserk",
+                "x": "1"
+            }
+        },
+        "category": 3
+    },
+    "5185": {
+        "id": "5185",
+        "name": "Rune of Greater Berserk",
+        "type": "3",
+        "set": "1",
+        "rarity": "4",
+        "icon": "rune_berserk_legendary",
+        "bundle": "34",
+        "desc": "Berserk +2",
+        "usable": "0",
+        "stat_boost": {
+            "skill": {
+                "id": "berserk",
+                "x": "2"
+            }
+        },
+        "category": 3
+    },
+    "5186": {
+        "id": "5186",
+        "name": "Rune of Frostbreath",
+        "type": "3",
+        "set": "1",
+        "rarity": "3",
+        "icon": "rune_frostbreath_epic",
+        "bundle": "34",
+        "desc": "Frostbreath +1",
+        "usable": "0",
+        "stat_boost": {
+            "skill": {
+                "id": "frost",
+                "x": "1"
+            }
+        },
+        "category": 3
+    },
+    "5187": {
+        "id": "5187",
+        "name": "Rune of Greater Frostbreath",
+        "type": "3",
+        "set": "1",
+        "rarity": "4",
+        "icon": "rune_frostbreath_legendary",
+        "bundle": "34",
+        "desc": "Frostbreath +2",
+        "usable": "0",
+        "stat_boost": {
+            "skill": {
+                "id": "frost",
+                "x": "2"
+            }
+        },
+        "category": 3
     }
 }
