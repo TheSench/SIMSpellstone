@@ -52933,7 +52933,7 @@ var CARDS = {
   "10": {
     "id": "10",
     "name": "Rayne the Wavecrasher",
-    "picture": "NotFound",
+    "picture": "portrait_elementalhero",
     "rarity": "4",
     "set": "7000",
     "card_type": "1",
@@ -53029,7 +53029,7 @@ var CARDS = {
   "11": {
     "id": "11",
     "name": "Orgoth the Hex Fist",
-    "picture": "NotFound",
+    "picture": "portrait_orchero",
     "rarity": "4",
     "set": "7000",
     "card_type": "1",
@@ -53130,7 +53130,7 @@ var CARDS = {
   "12": {
     "id": "12",
     "name": "Ol' Cedric",
-    "picture": "NotFound",
+    "picture": "portrait_froghero",
     "rarity": "4",
     "set": "7000",
     "card_type": "1",
@@ -59759,7 +59759,7 @@ var CARDS = {
   "285": {
     "id": "285",
     "name": "Corruptlings",
-    "picture": "NotFound",
+    "picture": "portrait_dawnglowbabies",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -59855,7 +59855,7 @@ var CARDS = {
   "286": {
     "id": "286",
     "name": "Corruptrex",
-    "picture": "NotFound",
+    "picture": "portrait_dawnglowmonster",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
