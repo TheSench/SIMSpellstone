@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
+<head profile="http://www.w3.org/2005/10/profile">
     <meta charset="UTF-8">
     <title id="title_tag">SimSpellstone - The Spellstone Simulator that runs from your browser!</title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css" media="screen">
@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="styles/loading.css">
     <link rel="stylesheet" type="text/css" href="styles/winrates.css">
     <link rel="stylesheet" type="text/css" href="styles/spritesheet.css">
+    <link rel="icon" type="image/png" href="res/favicon-16x16.png">
 
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
@@ -16,9 +17,9 @@
 
     <!-- This script contains the cached data for cards, missions, quests, raids,
         and battlegrounds -->
-    <script id="cards_script" type="text/javascript" src="cards/cache.js"></script>
-    <script id="runes_script" type="text/javascript" src="scripts/runes.js"></script>
-    <script id="raids_script" type="text/javascript" src="scripts/raids.js"></script>
+    <script id="cards_script" type="text/javascript" src="scripts/data/cache.js"></script>
+    <script id="runes_script" type="text/javascript" src="scripts/data/runes.js"></script>
+    <script id="raids_script" type="text/javascript" src="scripts/data/raids.js"></script>
 
     <!-- This script contains version info that changes each update -->
     <script id="common_variables" type="text/javascript" src="scripts/common.js"></script>
@@ -86,8 +87,6 @@
 
     <!-- This script handles drawing the UI for user-controlled mode. -->
     <script id="gui_script" type="text/javascript" src="scripts/cards_gui.js"></script>
-
-    <script id="saved_decks" type="text/javascript" src="scripts/saved_decks.js"></script>
 
     <script id="retrieve_deck" type="text/javascript" src="scripts/retrieve_deck.js"></script>
     <script id="winrates" type="text/javascript" src="scripts/winrates.js"></script>
@@ -158,7 +157,7 @@
             </select>
             <input style="float:initial;" type="NUMBER" id="mission_level" min="1" max="7" step="1" value="7" size="6">
             <br>
-            <div><i>Raid (Maxed):</i></div>
+            <div><i>Raid:</i></div>
             <select id="raid">
                 <option value="" />
             </select>
@@ -170,7 +169,7 @@
             <br>
             <hr>
             <br>
-            <div>Number of Simulations:</div><input type="text" id="sims" value="100" size="10"><br>
+            <div>Number of Simulations:</div><input type="text" id="sims" value="10000" size="10"><br>
             <br>
             <div>Use Controlled:</div><input type="checkbox" id="user_controlled"><span id="unavailable" style="visibility:hidden;">(Only available in Single Core mode)</span><br>
             <div>Debug Mode:</div><input type="checkbox" id="debug"><br>

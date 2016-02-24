@@ -1,3 +1,5 @@
+"use strict";
+
 self.addEventListener('message', ProcessMessage, false);
 
 // Handles the following messages from GUI thread:
@@ -19,9 +21,13 @@ function ProcessMessage(e) {
 			} else {
 				sims_left = 1;
 			}
-			runBatches();
 			running = true;
+			runBatches(sims_left);
 			break;
+
+        case 'stopsim':
+            stopsim();
+            break;
 
 		case 'initializeWorker':
 			initializeWorker(msg.url, msg.use_transferables);
@@ -280,12 +286,26 @@ function copyCard(card) {
 function extend(target, source) {
     for (var prop in source) {
         if (typeof source[prop] === 'object') {
-            target[prop] = extend(target[prop], source[prop]);
+            if (Array.isArray(source[prop])) {
+                var targetArray = [];
+                var sourceArray = source[prop];
+                for (var i = 0, len = sourceArray.length; i < len; i++) {
+                    targetArray.push(extend({}, sourceArray[i]));
+                }
+                target[prop] = targetArray;
+            } else {
+                var targetVal = (target[prop] || {});
+                target[prop] = extend(targetVal, source[prop]);
+            }
         } else {
             target[prop] = source[prop];
         }
     }
     return target;
+}
+
+function makyCopy(target, source) {
+
 }
 
 // Initialize worker thread - runs once when worker thread is created
@@ -301,7 +321,7 @@ function initializeWorker(url, use_transferables) {
 	if (index != -1) {
 		url = url.substring(0, index+1);
 	}
-	importScripts(url + 'cards/cache.js?');
+	importScripts(url + 'scripts/data/cache.js?');
 
 	// Determine which results-reporting mechanism to use
 	if (use_transferables) {
@@ -329,6 +349,7 @@ function initializeSims(params) {
 	getsiege = params['getsiege'];
 	tower_level = params['tower_level'];
 	tower_type = params['tower_type'];
+	smartAI = params['smartAI'];
 	surge = params['surge'];
 	debug = params['debug'];
 	loss_debug = params['loss_debug'];
@@ -620,14 +641,14 @@ function processSimResult() {
     if (sims_left > 0) sims_left--;
 }
 
-function runBatches() {
+function runBatches(total_remaining) {
 
-    var total_remaining = sims_left;
     var batch_size = 0;
     var time_start_batch;
     var elapsed;
 
-    while (total_remaining) {
+    var i = 0;
+    while (running && total_remaining && i < 5) {
         if (batch_size > 0) { // batch_size == 0 means a fresh set of simulations
             if (elapsed == 0) {
                 batch_size = 1;
@@ -643,13 +664,15 @@ function runBatches() {
         sims_left = batch_size;
         total_remaining -= batch_size;
 
-        time_start = new Date().getTime();
+        var time_start = new Date().getTime();
         run_sims();
         elapsed = (new Date().getTime() - time_start) / 1000;
 
         if (trackStats) returnStats();
         returnResults();
+        i++;
     }
+    if (running && total_remaining) setTimeout(runBatches, 0, total_remaining);
 }
 
 // Initialize simulation loop - runs once per simulation batch
@@ -681,11 +704,13 @@ var getexactorder2 = false;
 var getmission = 0;
 var getraid = 0;
 var raidlevel = 0;
+var trackStats = false;
 var getbattleground = 0;
 var getsiege = 0;
 var user_controlled = false;
 var tower_level = 0;
 var tower_type = 0;
+var smartAI = true;
 var battleground = [];
 var cache_player_deck = 0;
 var cache_cpu_deck = 0;
@@ -698,6 +723,7 @@ var wins = 0;
 var losses = 0;
 var draws = 0;
 var total_turns = 0;
+var total_points = 0;
 var max_turns = 50;
 var sims_left = 0;
 var running = false;
@@ -705,4 +731,4 @@ var running = false;
 var simulator_thread = true;
 var orders = {};
 
-importScripts('simulator_base.js', 'shared.js', 'runes.js', 'raids.js');
+importScripts('simulator_base.js', 'shared.js', 'data/runes.js', 'data/raids.js');

@@ -9,10 +9,21 @@
     position: relative;
 }
 
-.subfaction {
+.set {
+    background-color: dimgray;
     position: absolute;
     top: 12px;
     left: 0px;
+    width: 12px;
+    margin: 1px 1px;
+    border-radius: 10px;
+    box-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.subfaction {
+    position: absolute;
+    top: 12px;
+    left: 15px;
     width: 12px;
     margin: 1px 1px;
     border-radius: 10px;
@@ -33,7 +44,7 @@
     margin: 1px 0px;
 }
 
-.commander .sprite {
+.commander .portrait {
     border: solid;
     border-width: 5px;
     color: gold;
@@ -42,7 +53,6 @@
     border-radius: 50%;
     box-sizing: border-box;
     box-shadow: -2px 0 black, 0 5px black, 1px 0 black, 0 -1px black;
-    outline: 5px solid red;
 }
 
 .fusion {

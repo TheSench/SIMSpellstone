@@ -1,3 +1,5 @@
+"use strict";
+
 var use_workers = false;
 var one_worker = false;
 var simulator_thread = true;
@@ -10,7 +12,8 @@ if (typeof(Worker) === "undefined") {
 } else if (navigator.userAgent.indexOf("MSIE 10") != -1) {
 // If only using one worker
 } else if (_GET('maxworkers') === '1') {
-	one_worker = true;
+    one_worker = true;
+    use_workers = true;
 } else if (typeof(_GET('maxworkers')) === 'undefined') {
 	one_worker = true;
 } else {

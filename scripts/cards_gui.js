@@ -1,4 +1,5 @@
-﻿
+﻿"use strict";
+
 function clearCardSpace() {
     var cardSpace = document.getElementById("cardSpace");
     cardSpace.innerHTML = '';
@@ -20,7 +21,7 @@ function makeDeckHTML(deck, onclick, onrightclick) {
     var commander = get_card_by_id(deck.commander);
     var htmlCard = create_card_html(commander, false, false, onclick, onrightclick);
     if (deck.commander.index !== undefined) {
-        attr = document.createAttribute("data-index");
+        var attr = document.createAttribute("data-index");
         attr.value = deck.commander.index;
         htmlCard.attributes.setNamedItem(attr);
     }
@@ -30,7 +31,7 @@ function makeDeckHTML(deck, onclick, onrightclick) {
         var unit = get_card_by_id(deckEntry);
         var htmlCard = create_card_html(unit, false, false, onclick, onrightclick, i);
         if (deckEntry.index !== undefined) {
-            attr = document.createAttribute("data-index");
+            var attr = document.createAttribute("data-index");
             attr.value = deckEntry.index;
             htmlCard.attributes.setNamedItem(attr);
         }
@@ -52,7 +53,7 @@ function draw_card_list(list, compactSkills, onclick, onrightclick) {
         var unit = get_card_by_id(listEntry);
         var htmlCard = create_card_html(unit, compactSkills, false, onclick, onrightclick);
         if (listEntry.index !== undefined) {
-            attr = document.createAttribute("data-index");
+            var attr = document.createAttribute("data-index");
             attr.value = listEntry.index;
             htmlCard.attributes.setNamedItem(attr);
         }
@@ -104,6 +105,9 @@ function draw_hand(hand, callback, state) {
         var unit = hand[i];
         if (!unit) continue;
         var htmlCard = create_card_html(unit, false);
+        if (hand.choice == i) {
+            htmlCard.style.outline = "5px solid LawnGreen";
+        }
         if (i === 0) htmlCard.classList.add("left");
         else if (i === 2) htmlCard.classList.add("right");
         var cardidx = i;
@@ -140,19 +144,27 @@ function create_card_html(card, compactSkills, onField, onclick, onrightclick, s
         runeIDs.push(runes[i].id);
         var rune = RUNES[runeID];
         for (var key in rune.stat_boost) {
-            var val = true;
             if (key == "skill") {
                 key = rune.stat_boost.skill.id;
             }
-            boosts[key] = val;
+            boosts[key] = true;
         }
+    }
+    var highlighted = card.highlighted;
+    if (highlighted) for (var i = 0; i < highlighted.length; i++) {
+        var key = highlighted[i];
+        boosts[key] = true;
     }
     attr.value = runeIDs.join(",");
     htmlCard.attributes.setNamedItem(attr);
 
     if (card.picture) {
         var icon = document.createElement("i");
-        icon.className = 'sprite sprite-' + card.picture;
+        if (card.picture.indexOf("portrait_") == 0) {
+            icon.className = 'portrait portrait-' + card.picture;
+        } else {
+            icon.className = 'sprite sprite-' + card.picture;
+        }
         htmlCard.appendChild(icon);
     }
     if (card.isCommander()) {
@@ -197,8 +209,8 @@ function create_card_html(card, compactSkills, onField, onclick, onrightclick, s
     var divSkills = createDiv("card-skills");
     var skillsShort = createDiv("card-skills-short");
     getPassiveSkills(divSkills, skillsShort, card, onField, boosts);
-    if (card.empowerSkills) getSkillsHtml(divSkills, skillsShort, card.empowerSkills, onField, boosts);
-    getSkillsHtml(divSkills, skillsShort, card.skill, onField, boosts);
+    if (card.empowerSkills) getSkillsHtml(divSkills, skillsShort, card.empowerSkills, onField);
+    getSkillsHtml(divSkills, skillsShort, card.skill, onField);
     getTriggeredSkills(divSkills, skillsShort, card, onField, boosts);
     var skillsDetail = divSkills.cloneNode(true);
     skillsDetail.className = "card-skills-detailed";
@@ -222,6 +234,11 @@ function create_card_html(card, compactSkills, onField, onclick, onrightclick, s
             }
             htmlCard.appendChild(divStatuses);
         }
+    }
+    if (card.set) {
+        var htmlSet = getSetIcon(card.set);
+        htmlSet.className = "set";
+        htmlCard.appendChild(htmlSet);
     }
     if (card.sub_type) {
         var htmlSubfaction = getFactionIcon(card.sub_type);
@@ -260,7 +277,7 @@ function create_card_html(card, compactSkills, onField, onclick, onrightclick, s
     return htmlCard;
 }
 
-function getSkillsHtml(divSkills, skillsShort, skills, onField, boosts) {
+function getSkillsHtml(divSkills, skillsShort, skills, onField) {
     for (var i in skills) {
         var skill = skills[i];
         divSkills.appendChild(getSkillHtml(skill, onField));
@@ -446,6 +463,11 @@ function createStatus(name, value) {
     return spanStatus;
 }
 
+function getSetIcon(set) {
+    var setName = setNames[set];
+    return createImg('res/cardAssets/' + setName + '.png');
+}
+
 function getFactionIcon(factionID) {
     var factionName = factions.names[factionID];
     return createImg('res/factions/' + factionName + '.png');
@@ -463,4 +485,13 @@ function createDiv(className, value) {
     if (className) div.className = className;
     if (value !== undefined) div.innerHTML = value;
     return div;
+}
+
+var setNames = {
+    1000: "Basic",
+    7000: "Basic",
+    2000: "Reward",
+    3000: "Premium",
+    4000: "BoxOnly",
+    9999: "StoryElements"
 }

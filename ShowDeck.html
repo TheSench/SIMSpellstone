@@ -1,21 +1,23 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
+<head profile="http://www.w3.org/2005/10/profile">
     <meta charset="UTF-8">
     <title id="title_tag">CardRetriever - Retrieve your deck from your browser!</title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css" media="screen">
     <link rel="stylesheet" type="text/css" href="styles/card.css">
     <link rel="stylesheet" type="text/css" href="styles/loading.css">
     <link rel="stylesheet" type="text/css" href="styles/spritesheet.css">
+    <link rel="icon" type="image/png" href="res/favicon-16x16.png">
 
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
     <!-- This script contains the cached data for cards, missions, quests, raids,
         and battlegrounds -->
-    <script id="cards_script" type="text/javascript" src="cards/cache.js"></script>
-    <script id="runes_script" type="text/javascript" src="scripts/runes.js"></script>
+    <script id="cards_script" type="text/javascript" src="scripts/data/cache.js"></script>
+    <script id="runes_script" type="text/javascript" src="scripts/data/runes.js"></script>
     <script id="shared_functions" type="text/javascript" src="scripts/shared.js"></script>
+    <script id="common_variables" type="text/javascript" src="scripts/common.js"></script>
     <script id="gui_script" type="text/javascript" src="scripts/cards_gui.js"></script>
     <script id="cards_script" type="text/javascript" src="scripts/gui_script.js"></script>
     <script id="gui_script" type="text/javascript" src="scripts/retrieve_deck.js"></script>

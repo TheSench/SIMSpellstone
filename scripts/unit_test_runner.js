@@ -1,4 +1,6 @@
-﻿function createResultsTable() {
+﻿"use strict";
+
+function createResultsTable() {
     if (!document.getElementById("results_table")) {
         document.getElementsByTagName("body")[0].innerHTML += '<br /><div id="results_table"></div>';
     }

@@ -1,3 +1,5 @@
+"use strict";
+
 if (!use_workers) {
 
     // Initialize simulation loop - runs once per simulation session

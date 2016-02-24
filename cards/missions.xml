@@ -3006,25 +3006,23 @@
   <!-- END The Void Missions -->
   <!-- START The Dawnglow Missions -->
   <mission>
-    <id>245</id>
+    <id>251</id>
     <name>Call From the Emperor </name>
     <energy>6</energy>
     <desc>Groc has received a distress letter from the Emperor of Dawnglow Swamp. He is worried about the health of his citizens. Groc and Ursurio head out to the swamps to investigate the issue. </desc>
     <commander id="280" />
     <deck>
       <card id="1616" name="Werewarg" />
-      <card id="1616" />
       <card id="6006" name="Chaos Golem" />
-      <card id="6006" />
       <card id="1617" name="Water Elemental" />
       <card id="1617" />
-      <card id="1617" />
+      <card id="7038" name="Sol King" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="7034" name="Spore Elk" />
       <card id="1629" name="Rock Titan" />
-      <card id="1018" mastery_level="2" name="Armored Eagle" />
-      <card id="6021" mastery_level="2" name="Marsh Ogre" />
-      <card id="6006" mastery_level="3" name="Chaos Golem" />
-      <card id="1631" mastery_level="4" name="Venom Dragon" />
-      <card id="7034" mastery_level="5" name="Spore Elk" />
+      <card id="6021" name="Marsh Ogre" />
+      <card id="1631" name="Venom Dragon" />
+      <card id="7034" mastery_level="4" name="Spore Elk" />
       <card id="7031" mastery_level="6" name="Saberjaw Elite" />
       <card id="2015" mastery_level="7" name="Pumpking" />
     </deck>
@@ -3032,177 +3030,171 @@
       <line>
         <commander>groc</commander>
         <enemy>0</enemy>
-        <text> I have gotten a letter from the Frog Emperor. It appears something is poisoning the swamplands of Dawnglow.</text>
+        <text>I have gotten a letter from the Frog Emperor. It appears something is poisoning the swamplands of Dawnglow.</text>
       </line>
       <line>
         <commander>groc</commander>
         <enemy>0</enemy>
-        <text>We should investigate. If the swamplands turn bad it could have cascading effect on the surrounding areas.</text>
+        <text>We must investigate. If the swamplands are poisoned, it could have cascading effects on the surrounding areas.</text>
       </line>
       <line>
         <commander>bearcommander</commander>
         <enemy>0</enemy>
-        <text> I'll join you in the swamplands. They have some of the best shrimp in Arcantica! </text>
+        <text>I'll join you in the swamplands. After all, they have some of the best crayfish in Arcantica!</text>
       </line>
     </speech>
   </mission>
+  <!-- armor hex protect  | Coral -->
   <mission>
-    <id>246</id>
+    <id>252</id>
     <name>To the Swamps</name>
     <energy>6</energy>
-    <desc>Groc and Ursurio start their Journey to Dawnglow. Groc notices a sickness in the area as soon as they arrive.</desc>
+    <desc>Groc and Ursurio start their journey to Dawnglow. Groc notices a sickness in the area as soon as they arrive.</desc>
     <commander id="281" />
     <deck>
       <card id="7006" name="Treant Sapling" />
-      <card id="7006" />
       <card id="1613" name="Acidic Spider" />
-      <card id="1613" />
       <card id="1619" name="Earth Elemental" />
-      <card id="1619" />
       <card id="1015" name="Windfrog" />
+      <card id="5030" name="Loxphas Mage" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="7015" name="Bog Aberration" />
       <card id="1328" name="Poison Bullfrog" />
-      <card id="1015" mastery_level="2" name="Windfrog" />
-      <card id="2011" mastery_level="2" name="Poliworg" />
-      <card id="1313" mastery_level="3" name="Lavafrog" />
-      <card id="7011" mastery_level="4" name="Wolf Girl" />
-      <card id="7024" mastery_level="5" name="Woolmane Dragon " />
+      <card id="2011" name="Poliworg" />
+      <card id="7011" name="Wolf Girl" />
+      <card id="7024" mastery_level="4" name="Woolmane Dragon" />
       <card id="7009" mastery_level="6" name="Rhino Beast" />
       <card id="7027" mastery_level="7" name="Kitsune" />
     </deck>
   </mission>
+  <!-- strike pierce protect  | Canopy -->
   <mission>
-    <id>247</id>
-    <name>Road Block</name>
+    <id>253</id>
+    <name>Thick Goop</name>
     <energy>6</energy>
-    <desc>Dawnglow is in sight. As Groc and Ursurio travel through the swamp that notice how much harder it is to travel through the swamp water.</desc>
+    <desc>Dawnglow is in sight. As Groc and Ursurio travel, they notice how much harder it is to progress through the swamp water.</desc>
     <commander id="247" />
     <deck>
       <card id="5012" name="Static Drake" />
       <card id="5012" />
-      <card id="5012" />
       <card id="1010" name="Lightning Elemental" />
       <card id="1010" />
-      <card id="1615" name="Rune Panther" />
-      <card id="1615" />
+      <card id="6004" name="Branding Construct" />
       <card id="2008" name="Shadow of Ash" />
-      <card id="5022" mastery_level="2" name="Webfoot Raider" />
-      <card id="6020" mastery_level="2" name="Croak Piercer" />
-      <card id="1610" mastery_level="3" name="Ranger" />
-      <card id="7016" mastery_level="4" name="Webfist Shaman" />
-      <card id="7029" mastery_level="5" name="Owl Griffin" />
+      <card id="7016" name="Webfist Shaman" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="6020" name="Croak Piercer" />
+      <card id="7016" name="Webfist Shaman" />
+      <card id="7029" mastery_level="4" name="Owl Griffin" />
       <card id="5001" mastery_level="6" name="Aven Skypiercer" />
       <card id="1643" mastery_level="7" name="Nimble Leaper" />
     </deck>
   </mission>
+  <!-- heal hex   | Tremor -->
   <mission>
-    <id>248</id>
+    <id>254</id>
     <name>Royal Company</name>
     <energy>6</energy>
-    <desc>Groc and Ursurio have made it to just outside of the Kingdom of Dawnglow. They make their way to hear the Emperor's request.</desc>
+    <desc>Groc and Ursurio have made it just outside of the Kingdom of Dawnglow. They make their way to hear the Emperor's request.</desc>
     <commander id="282" />
     <deck>
       <card id="7012" name="Life Drake" />
-      <card id="7012" />
       <card id="7017" name="Coral Elemental" />
-      <card id="7017" />
       <card id="6006" name="Chaos Golem" />
-      <card id="6006" />
       <card id="6029" name="Spinehead Stalker" />
       <card id="7020" name="Trapper Frog" />
-      <card id="1617" mastery_level="2" name="Water Elemental" />
-      <card id="2019" mastery_level="2" name="Chalistomper" />
-      <card id="1613" mastery_level="3" name="Acidic Spider" />
-      <card id="1330" mastery_level="4" name="Devouring Locusts" />
-      <card id="5011" mastery_level="5" name="Sky Whale" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="2019" name="Chalistomper" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="5011" name="Sky Whale" />
+      <card id="7039" mastery_level="4" name="Winged Giant" />
       <card id="6002" mastery_level="6" name="Spirit of Madness" />
       <card id="7000" mastery_level="7" name="Treant King" />
     </deck>
     <speech>
       <line>
         <commander>frogemperor</commander>
-        <enemy>0</enemy>
-        <text>Thank the swamp lady you've arrived! The swamps in Dawnglow have been making my citizens sick. We need your help exploring the swamps for the cause.</text>
+        <enemy>1</enemy>
+        <text>Thank the swamp lady you've arrived! The waters in Dawnglow have been making my citizens sick. We need your help exploring the swamplands for the cause.</text>
       </line>
       <line>
         <commander>groc</commander>
         <enemy>0</enemy>
-        <text>I have felt the disturbance in the swamp on the way here. Do you know the cause of the sickness?</text>
+        <text>I have felt the disturbance in the land on the way here. Do you know where the sickness began?</text>
       </line>
       <line>
         <commander>frogemperor</commander>
-        <enemy>0</enemy>
-        <text> Not yet. Different areas of the swamp are effected day to day. Our scouts have not seen anything unusual in the swamps.</text>
+        <enemy>1</enemy>
+        <text>Not yet. Different areas of the swamp are affected day to day. Our scouts have not found anything unusual except the sickness itself.</text>
       </line>
     </speech>
   </mission>
+  <!-- rally burn  | Mermaid -->
   <mission>
-    <id>249</id>
+    <id>261</id>
     <name>Cloudy Waters</name>
     <energy>6</energy>
-    <desc>The Emperor have given Groc and Ursurio their orders. They head out from Dawnglow to investigate the surrounding swamps.</desc>
+    <desc>The Emperor has given Groc and Ursurio their mission. They head out from Dawnglow to investigate the surrounding swamps.</desc>
     <commander id="280" />
     <deck>
       <card id="1618" name="Frog Scout" />
-      <card id="1618" />
       <card id="1617" name="Water Elemental" />
-      <card id="1617" />
       <card id="5017" name="Steam Tempest" />
       <card id="5017" />
-      <card id="5017" />
       <card id="6010" name="Cliffpass Defender" />
-      <card id="1311" mastery_level="2" name="Molten Skeleton" />
-      <card id="5035" mastery_level="2" name="Vapor Guard" />
-      <card id="1616" mastery_level="3" name="Werewarg" />
-      <card id="1632" mastery_level="4" name="Shadow Rider" />
-      <card id="6029" mastery_level="5" name="Spinehead Stalker" />
+      <card id="5035" name="Vapor Guard" />
+      <card id="5035" />
+      <card id="5033" name="Lost Soul" />
+      <card id="7021" name="Shadow Elemental" />
+      <card id="1632" name="Shadow Rider" />
+      <card id="6029" mastery_level="4" name="Spinehead Stalker" />
       <card id="6035" mastery_level="6" name="Demos" />
       <card id="7033" mastery_level="7" name="Treebond Skull" />
     </deck>
   </mission>
+  <!-- armor hex fervor  | Coral -->
   <mission>
-    <id>250</id>
+    <id>262</id>
     <name>Fog of War</name>
     <energy>6</energy>
-    <desc>The air is thicker than usual and the smell is noticeably more pungent. Even Ursuiro is having a hard time traveling through the swamp.</desc>
+    <desc>The air is thicker than usual and the smell is noticeably more pungent. Even Ursurio is having a hard time traveling through the swamp.</desc>
     <commander id="281" />
     <deck>
       <card id="6017" name="Tar Pit Stalker" />
-      <card id="6017" />
-      <card id="6017" />
       <card id="1010" name="Lightning Elemental" />
       <card id="1010" />
       <card id="1619" name="Earth Elemental" />
-      <card id="1619" />
       <card id="7015" name="Bog Aberration" />
-      <card id="1619" mastery_level="2" name="Earth Elemental" />
-      <card id="2008" mastery_level="2" name="Shadow of Ash" />
-      <card id="7006" mastery_level="3" name="Treant Sapling" />
-      <card id="2009" mastery_level="4" name="Sapling" />
-      <card id="7035" mastery_level="5" name="Carrion Tiger" />
+      <card id="2021" name="Snowstep Ranger" />
+      <card id="1630" name="Giant Squid" />
+      <card id="7038" name="Sol King" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="7035" name="Carrion Tiger" />
+      <card id="7035" mastery_level="4" />
       <card id="7013" mastery_level="6" name="Gold Elemental" />
       <card id="6024" mastery_level="7" name="Bane Dragon" />
     </deck>
   </mission>
+  <!-- armor hex flurry  | Undead snake -->
   <mission>
-    <id>251</id>
+    <id>263</id>
     <name>Marks of the Void</name>
     <energy>6</energy>
-    <desc>The swamp water is getting darker and more pungent as they travel. The smell is reminiscent of The Void.</desc>
+    <desc>The waters are getting darker and more pungent as they travel. The smell is reminiscent of The Void.</desc>
     <commander id="283" />
     <deck>
       <card id="6017" name="Tar Pit Stalker" />
-      <card id="6017" />
       <card id="1011" name="Archive Keeper" />
-      <card id="1011" />
       <card id="1018" name="Armored Eagle" />
-      <card id="1018" />
-      <card id="1018" />
       <card id="2004" name="Lavatail Dragon" />
-      <card id="7006" mastery_level="2" name="Treant Sapling" />
-      <card id="5025" mastery_level="2" name="Steelskin Dragon" />
-      <card id="6006" mastery_level="3" name="Chaos Golem" />
-      <card id="5010" mastery_level="4" name="Concealed Dragon" />
-      <card id="5010" mastery_level="5" name="Concealed Dragon" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="5010" name="Concealed Dragon" />
+      <card id="6010" name="Cliffpass Defender" />
+      <card id="1629" name="Rock Titan" />
+      <card id="2030" name="Ebon Duelist" />
+      <card id="1030" name="Paladin" />
+      <card id="1342" mastery_level="4" name="Ronin" />
       <card id="5023" mastery_level="6" name="Nightfall Dragon" />
       <card id="6037" mastery_level="7" name="Keeper of Souls" />
     </deck>
@@ -3210,12 +3202,12 @@
       <line>
         <commander>bearcommander</commander>
         <enemy>0</enemy>
-        <text>Ugh, the shrip in the swamps taste aweful today. </text>
+        <text>Ugh, these crayfish taste awful today. Not at all like I remember!</text>
       </line>
       <line>
         <commander>groc</commander>
         <enemy>0</enemy>
-        <text> Don't eat those! The whole swamp is contaminated! We don't even know what's causing it?!</text>
+        <text>Don't eat those! The whole swamp is contaminated! We don't even know what's causing it?!</text>
       </line>
       <line>
         <commander>bearcommander</commander>
@@ -3224,95 +3216,94 @@
       </line>
     </speech>
   </mission>
+  <!-- poison hex  | swamp creature -->
   <mission>
-    <id>252</id>
+    <id>264</id>
     <name>Bad Fur Day</name>
     <energy>6</energy>
-    <desc>Ursurio's fur is starting to get matted with the slime that has developed in the swamp. For the first time Groc notices a disgusted look on his face</desc>
+    <desc>Ursurio's fur is starting to get matted with the slime that has developed in the swamp. For the first time, Groc notices a disgusted look on his face.</desc>
     <commander id="284" />
     <deck>
       <card id="1613" name="Acidic Spider" />
-      <card id="1613" />
-      <card id="1613" />
       <card id="1313" name="Lavafrog" />
       <card id="1313" />
-      <card id="7006" name="Treant Sapling" />
       <card id="6034" name="Bone Viper" />
+      <card id="6034" />
       <card id="7011" name="Wolf Girl" />
-      <card id="6006" mastery_level="2" name="Chaos Golem" />
-      <card id="7034" mastery_level="2" name="Spore Elk" />
-      <card id="1613" mastery_level="3" name="Acidic Spider" />
-      <card id="1628" mastery_level="4" name="Garganotos" />
-      <card id="6015" mastery_level="5" name="Acidic Sludge" />
+      <card id="7034" name="Spore Elk" />
+      <card id="1628" name="Garganotos" />
+      <card id="6038" name="Hemlock" />
+      <card id="6015" name="Acidic Sludge" />
+      <card id="2015" mastery_level="4" name="Pumpking" />
       <card id="6019" mastery_level="6" name="Canopy Horror" />
       <card id="7019" mastery_level="7" name="Lady of the Swamp" />
     </deck>
   </mission>
+  <!-- strike pierce legion chaos  | Canopy -->
   <mission>
-    <id>253</id>
+    <id>271</id>
     <name>Rough Roads</name>
     <energy>6</energy>
-    <desc>Groc is starting to slow down as they travel. What ever is infecting the swamp seems to be taking a toll on him.</desc>
+    <desc>Groc is starting to slow down as they travel. Whatever is infecting the swamp appears to be strong enough to affect the massive stone leader.</desc>
     <commander id="247" />
     <deck>
       <card id="6007" name="Goblin Crew" />
-      <card id="6007" />
-      <card id="6007" />
       <card id="1615" name="Rune Panther" />
-      <card id="1615" />
       <card id="5022" name="Webfoot Raider" />
       <card id="5022" />
       <card id="2012" name="Frogling Swarm" />
-      <card id="1331" mastery_level="2" name="Fallen Soldiers" />
-      <card id="1313" mastery_level="3" name="Lavafrog" />
-      <card id="2012" mastery_level="4" name="Frogling Swarm" />
-      <card id="2014" mastery_level="5" name="Tadpole Warmage" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="6011" name="Bomb Spirit" />
+      <card id="1325" name="Chaos Storm" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="2012" name="Frogling Swarm" />
+      <card id="2014" mastery_level="4" name="Tadpole Warmage" />
       <card id="6000" mastery_level="6" name="Furnace Mech" />
       <card id="6028" mastery_level="7" name="Brahmet" />
     </deck>
   </mission>
+  <!-- jam evade  | tremor -->
   <mission>
-    <id>254</id>
+    <id>272</id>
     <name>Rabid Wylds</name>
     <energy>6</energy>
-    <desc>The creatures of the swamp are acting strange. They seem more rabid than usual. What ever is infecting the swamp seems to be spreading fast.</desc>
+    <desc>The creatures of the swamp are acting strange. They seem more rabid than usual. Whatever is infecting the swamp seems to be spreading fast.</desc>
     <commander id="282" />
     <deck>
       <card id="7007" name="Water Serpent" />
-      <card id="7007" />
-      <card id="7007" />
       <card id="1613" name="Acidic Spider" />
-      <card id="1613" />
       <card id="1615" name="Rune Panther" />
-      <card id="1615" />
       <card id="1028" name="Heroic Frog" />
-      <card id="7007" mastery_level="2" name="Water Serpent" />
-      <card id="5015" mastery_level="3" name="Gravity Swell" />
-      <card id="1315" mastery_level="4" name="Nix Elemental" />
-      <card id="6015" mastery_level="5" name="Acidic Sludge" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="6015" name="Acidic Sludge" />
+      <card id="5020" name="Frost Frog" />
+      <card id="5020" />
+      <card id="7010" name="Honeycomb Dragon" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="7028" mastery_level="4" name="Frozen Tide" />
       <card id="5001" mastery_level="6" name="Aven Skypiercer" />
       <card id="6026" mastery_level="7" name="Smokefang" />
     </deck>
   </mission>
+  <!-- Armor Fervor | Undead Snake -->
   <mission>
-    <id>255</id>
+    <id>273</id>
     <name>Seeping Toxins</name>
     <energy>6</energy>
-    <desc>Groc must stop to take a breather. He is breathing heavily and beginning to sweat. The toxins in the environment are making him sick.</desc>
+    <desc>Groc must stop to rest a moment. He is starting to have trouble moving his body. The toxins in the environment are making him sick.</desc>
     <commander id="283" />
     <deck>
       <card id="7022" name="Beetle Tamer" />
       <card id="7022" />
       <card id="1618" name="Frog Scout" />
-      <card id="1018" name="Armored Eagle" />
-      <card id="1018" />
-      <card id="1018" />
       <card id="7016" name="Webfist Shaman" />
       <card id="2014" name="Tadpole Warmage" />
-      <card id="7022" mastery_level="2" name="Beetle Tamer" />
-      <card id="2011" mastery_level="3" name="Poliworg" />
-      <card id="7022" mastery_level="4" name="Beetle Tamer" />
-      <card id="1027" mastery_level="5" name="Griffin Knight" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="2011" name="Poliworg" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="2012" name="Frogling Swarm" />
+      <card id="7033" mastery_level="4" name="Treebond Skull" />
       <card id="6018" mastery_level="6" name="Underwater Lasher" />
       <card id="5009" mastery_level="7" name="Royal Guardian" />
     </deck>
@@ -3320,7 +3311,7 @@
       <line>
         <commander>groc</commander>
         <enemy>0</enemy>
-        <text>The sickness in the swamp is so strong...</text>
+        <text>The contamination in the swamp is so strong...</text>
       </line>
       <line>
         <commander>groc</commander>
@@ -3329,49 +3320,48 @@
       </line>
     </speech>
   </mission>
+  <!-- Poison Berserk Rally | Swamp Creature -->
   <mission>
-    <id>256</id>
-    <name>Plot On</name>
+    <id>274</id>
+    <name>Plod On</name>
     <energy>6</energy>
-    <desc>Groc and Ursurio pick up their pace. With the wear of the toxins in the swamp they know they need to find its source quickly.</desc>
+    <desc>Groc and Ursurio pick up their pace. With the toxins from the swamp wearing them down, they know they need to find its source quickly.</desc>
     <commander id="284" />
     <deck>
       <card id="1613" name="Acidic Spider" />
-      <card id="1613" />
-      <card id="1613" />
       <card id="7006" name="Treant Sapling" />
-      <card id="7006" />
-      <card id="6006" name="Chaos Golem" />
       <card id="2024" name="Dusk Noble" />
       <card id="2023" name="Grizzly Terror" />
-      <card id="6034" mastery_level="2" name="Bone Viper" />
-      <card id="1330" mastery_level="2" name="Devouring Locusts" />
-      <card id="5033" mastery_level="3" name="Lost Soul" />
-      <card id="1616" mastery_level="4" name="Werewarg" />
-      <card id="6029" mastery_level="5" name="Spinehead Stalker" />
+      <card id="2019" name="Chalistomper" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="5033" name="Lost Soul" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="2019" name="Chalistomper" />
+      <card id="6039" mastery_level="4" name="Auroch" />
       <card id="7033" mastery_level="6" name="Treebond Skull" />
       <card id="7037" mastery_level="7" name="Bane" />
     </deck>
   </mission>
+  <!-- Leech Counter | Swamp Creature -->
   <mission>
-    <id>257</id>
+    <id>281</id>
     <name>Unfamiliar Footsteps</name>
     <energy>6</energy>
     <desc>Groc and Ursurio reach a pond with animal tracks around it. They don't appear to be from any known creatures in the area.</desc>
     <commander id="280" />
     <deck>
       <card id="7006" name="Treant Sapling" />
-      <card id="7006" />
       <card id="1613" name="Acidic Spider" />
-      <card id="1613" />
       <card id="1617" name="Water Elemental" />
-      <card id="1617" />
-      <card id="1617" />
       <card id="1027" name="Griffin Knight" />
-      <card id="1613" mastery_level="2" name="Acidic Spider" />
-      <card id="6015" mastery_level="3" name="Acidic Sludge" />
-      <card id="7017" mastery_level="4" name="Coral Elemental" />
-      <card id="7021" mastery_level="5" name="Shadow Elemental" />
+      <card id="1027" />
+      <card id="6015" name="Acidic Sludge" />
+      <card id="7021" name="Shadow Elemental" />
+      <card id="1632" name="Shadow Rider" />
+      <card id="1325" name="Chaos Storm" />
+      <card id="7021" name="Shadow Elemental" />
+      <card id="5002" mastery_level="4" name="Twilight Mirror" />
       <card id="5013" mastery_level="6" name="Radiance" />
       <card id="6013" mastery_level="7" name="Rust Goliath" />
     </deck>
@@ -3379,81 +3369,80 @@
       <line>
         <commander>bearcommander</commander>
         <enemy>0</enemy>
-        <text>Well look at this, I think we found a clue to the corruption. These footprints here, they are odd for creatures of swamp. </text>
+        <text>Well look at this. I think we found a clue to the corruption. These footprints here... they are odd for creatures of the swamp.</text>
       </line>
       <line>
         <commander>groc</commander>
         <enemy>0</enemy>
-        <text>I think you're right, something unusual has found its way here. </text>
+        <text>I think you're right. Something unusual has found its way here.</text>
       </line>
     </speech>
   </mission>
+  <!-- armor hex Evade  | Coral -->
   <mission>
-    <id>258</id>
+    <id>282</id>
     <name>A Step in the Right Direction</name>
     <energy>6</energy>
-    <desc>Groc and Ursurio are able to find a trail of the unusual tracks. The is trail not fresh but it may be getting them closer to the source of the infection.</desc>
+    <desc>Groc and Ursurio are able to find a trail of the unusual tracks. The trail is not fresh, but it may be getting them closer to the source of the infection.</desc>
     <commander id="281" />
     <deck>
       <card id="6006" name="Chaos Golem" />
-      <card id="6006" />
       <card id="1313" name="Lavafrog" />
-      <card id="1313" />
-      <card id="1313" />
       <card id="1613" name="Acidic Spider" />
-      <card id="7007" name="Water Serpent" />
       <card id="1631" name="Venom Dragon" />
-      <card id="7006" mastery_level="2" name="Treant Sapling" />
-      <card id="1629" mastery_level="3" name="Rock Titan" />
-      <card id="7007" mastery_level="4" name="Water Serpent" />
-      <card id="1026" mastery_level="5" name="Glass Colossus" />
+      <card id="1629" name="Rock Titan" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="6015" name="Acidic Sludge" />
+      <card id="6015" name="Acidic Sludge" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="7021" name="Shadow Elemental" />
+      <card id="6037" mastery_level="4" name="Keeper of Souls" />
       <card id="6014" mastery_level="6" name="Armored Ogre" />
       <card id="7009" mastery_level="7" name="Rhino Beast" />
     </deck>
   </mission>
+  <!--  strike pierce jam  | Canopy -->
   <mission>
-    <id>259</id>
+    <id>283</id>
     <name>Glowing Prints</name>
     <energy>6</energy>
-    <desc>The tracks are growing in number and have been made more recently. The fresh tracks have a slight glow to them as they continue through the swamp.</desc>
+    <desc>The tracks are growing in number and have been made recently. The fresh tracks have a slight glow to them as they continue through the swamp.</desc>
     <commander id="247" />
     <deck>
       <card id="1615" name="Rune Panther" />
-      <card id="1615" />
       <card id="6007" name="Goblin Crew" />
-      <card id="6007" />
-      <card id="6007" />
-      <card id="7007" name="Water Serpent" />
       <card id="6004" name="Branding Construct" />
       <card id="2002" name="Lantern Guardian" />
-      <card id="6012" mastery_level="2" name="Ember Drake" />
-      <card id="6011" mastery_level="3" name="Bomb Spirit" />
-      <card id="1615" mastery_level="4" name="Rune Panther" />
-      <card id="6011" mastery_level="5" name="Bomb Spirit" />
+      <card id="6011" name="Bomb Spirit" />
+      <card id="6011" name="Bomb Spirit" />
+      <card id="6011" name="Bomb Spirit" />
+      <card id="7015" name="Bog Aberration" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="2025" name="Blight Knight" />
+      <card id="5038" mastery_level="4" name="Celestial Monarch" />
       <card id="5019" mastery_level="6" name="Vivid Aurora" />
       <card id="7000" mastery_level="7" name="Treant King" />
     </deck>
   </mission>
+  <!--  poison frost  | swamp creature -->
   <mission>
-    <id>260</id>
-    <name>Big Step Small Step</name>
+    <id>284</id>
+    <name>Big Step, Small Step</name>
     <energy>6</energy>
-    <desc>Ursurio notices two sizes of prints. A set or large prints and many sets of small ones. Whatever this creature is may have a family with it.</desc>
+    <desc>Ursurio notices two sizes of prints. A set of large prints and many sets of small ones. Whatever this creature is, it may have a family with it.</desc>
     <commander id="284" />
     <deck>
       <card id="1315" name="Nix Elemental" />
-      <card id="1315" />
-      <card id="1315" />
       <card id="1613" name="Acidic Spider" />
-      <card id="1613" />
-      <card id="1613" />
       <card id="2020" name="Tidetaken Fighter" />
       <card id="2025" name="Blight Knight" />
-      <card id="2020" mastery_level="2" name="Tidetaken Fighter" />
-      <card id="2025" mastery_level="2" name="Blight Knight" />
-      <card id="5021" mastery_level="3" name="Tower Spirit" />
-      <card id="1613" mastery_level="4" name="Acidic Spider" />
-      <card id="2025" mastery_level="5" name="Blight Knight" />
+      <card id="7034" name="Spore Elk" />
+      <card id="2025" name="Blight Knight" />
+      <card id="5021" name="Tower Spirit" />
+      <card id="2025" name="Blight Knight" />
+      <card id="1332" name="Vampiric Emira" />
+      <card id="2027" name="Halo Mage" />
+      <card id="7019" mastery_level="4" name="Lady of the Swamp" />
       <card id="5037" mastery_level="6" name="Dauntless Baneblade" />
       <card id="5031" mastery_level="7" name="Frostlance Valkyrie" />
     </deck>
@@ -3465,95 +3454,94 @@
       </line>
     </speech>
   </mission>
+  <!--  leech weaken  | Mermaid -->
   <mission>
-    <id>261</id>
+    <id>291</id>
     <name>A Broken Home</name>
     <energy>6</energy>
-    <desc>Bits of grass and sticks are now becoming common around the tracks. Groc and Ursurio are getting closer to finding these beasts.</desc>
+    <desc>Freshly torn grass and recently broken sticks are now becoming common around the tracks. Groc and Ursurio are getting closer to finding these beasts.</desc>
     <commander id="280" />
     <deck>
       <card id="6022" name="Illusion Caster" />
-      <card id="6022" />
       <card id="1318" name="Smelted Lava Slug" />
-      <card id="1318" />
-      <card id="1318" />
       <card id="5017" name="Steam Tempest" />
-      <card id="5017" />
       <card id="1325" name="Chaos Storm" />
-      <card id="7012" mastery_level="2" name="Life Drake" />
-      <card id="1630" mastery_level="3" name="Giant Squid" />
-      <card id="6022" mastery_level="4" name="Illusion Caster" />
-      <card id="5020" mastery_level="5" name="Frost Frog" />
+      <card id="1630" name="Giant Squid" />
+      <card id="5020" name="Frost Frog" />
+      <card id="5020" name="Frost Frog" />
+      <card id="1031" name="Noble Champion" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="2023" name="Grizzly Terror" />
+      <card id="1341" mastery_level="4" name="Blood Demon" />
       <card id="6009" mastery_level="6" name="Siphon Dragon" />
       <card id="1640" mastery_level="7" name="Life Dragon" />
     </deck>
   </mission>
+  <!-- armor hex Protect  | Coral -->
   <mission>
-    <id>262</id>
+    <id>292</id>
     <name>Filthy Pests</name>
     <energy>6</energy>
-    <desc>Large pools of water similar to those found in The Void now surround the area. The creatures appeared to be linked to the infection in the swamp.</desc>
+    <desc>Large purple fissures in the ground, similar to those found in The Void, now surround the area. The creatures appear to be linked to the infection in the swamp.</desc>
     <commander id="281" />
     <deck>
       <card id="1015" name="Windfrog" />
-      <card id="1015" />
       <card id="5012" name="Static Drake" />
-      <card id="5012" />
-      <card id="1314" name="Skeletal Hound" />
-      <card id="1314" />
-      <card id="1314" />
       <card id="1026" name="Glass Colossus" />
-      <card id="5012" mastery_level="2" name="Static Drake" />
-      <card id="5025" mastery_level="3" name="Steelskin Dragon" />
-      <card id="6006" mastery_level="4" name="Chaos Golem" />
-      <card id="1631" mastery_level="5" name="Venom Dragon" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="1631" name="Venom Dragon" />
+      <card id="5021" name="Tower Spirit" />
+      <card id="5024" name="Cloudtop Dragon" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="1631" name="Venom Dragon" />
+      <card id="7002" mastery_level="4" name="Cerberus" />
       <card id="7008" mastery_level="6" name="Rock Dragon" />
       <card id="1040" mastery_level="7" name="Storm Dragon" />
     </deck>
   </mission>
+  <!-- Leech Armor  | tremor -->
   <mission>
-    <id>263</id>
+    <id>293</id>
     <name>Beyond the Bush</name>
     <energy>6</energy>
-    <desc>Groc and Ursurio peek through the bushes. They see a nest of tiny beasts just a few feet away. They appear to be creatures that have escaped from The Void.</desc>
+    <desc>Groc and Ursurio peer through the bushes to find a nest of tiny beasts up ahead. They appear to be creatures that have escaped from The Void. Before they can investigate, a creature lunges from the water!</desc>
     <commander id="282" />
     <deck>
       <card id="1018" name="Armored Eagle" />
-      <card id="1018" />
-      <card id="1018" />
       <card id="1312" name="Scythe Demon" />
-      <card id="1312" />
-      <card id="7017" name="Coral Elemental" />
       <card id="1332" name="Vampiric Emira" />
       <card id="5033" name="Lost Soul" />
-      <card id="2020" mastery_level="2" name="Tidetaken Fighter" />
-      <card id="6016" mastery_level="3" name="Skeletal Giant" />
-      <card id="1018" mastery_level="4" name="Armored Eagle" />
-      <card id="1632" mastery_level="5" name="Shadow Rider" />
+      <card id="2020" name="Tidetaken Fighter" />
+      <card id="6016" name="Skeletal Giant" />
+      <card id="1632" name="Shadow Rider" />
+      <card id="2021" name="Snowstep Ranger" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="1632" name="Shadow Rider" />
+      <card id="6033" mastery_level="4" name="Firebeard" />
       <card id="7033" mastery_level="6" name="Treebond Skull" />
       <card id="2026" mastery_level="7" name="Lazarus" />
     </deck>
   </mission>
+  <!-- Legion aether elemental rally | Babies -->
   <mission>
-    <id>264</id>
+    <id>294</id>
     <name>Don't Wake the Babies</name>
     <energy>6</energy>
     <desc>Groc and Ursurio creep closer to the nest. Perhaps they can lure these creatures away peacefully?</desc>
     <commander id="285" />
     <deck>
-      <card id="1617" name="Water Elemental" />
-      <card id="1617" />
-      <card id="1617" />
       <card id="1616" name="Werewarg" />
-      <card id="1616" />
       <card id="1032" name="Lunar Elemental" />
       <card id="2010" name="Silver Wind" />
-      <card id="1610" name="Ranger" />
-      <card id="2025" mastery_level="2" name="Blight Knight" />
-      <card id="5016" mastery_level="2" name="Fowl Swarm" />
-      <card id="1029" mastery_level="3" name="Elementalist" />
-      <card id="1012" mastery_level="4" name="Cloud Sylph" />
-      <card id="5016" mastery_level="5" name="Fowl Swarm" />
+      <card id="2025" name="Blight Knight" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="1029" name="Elementalist" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="7021" name="Shadow Elemental" />
+      <card id="5033" name="Lost Soul" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="6023" mastery_level="4" name="Broodmother" />
       <card id="5027" mastery_level="6" name="Northern War-kin" />
       <card id="2007" mastery_level="7" name="Platinum Golem" />
     </deck>
@@ -3561,104 +3549,103 @@
       <line>
         <commander>groc</commander>
         <enemy>0</enemy>
-        <text>Look, beyond the bush. I think we have found out little beasts. They look like they came here from the Void.</text>
+        <text>Look, beyond the bush. I think we have found little beasts. They look like they came here from The Void.</text>
       </line>
       <line>
         <commander>bearcommander</commander>
         <enemy>0</enemy>
-        <text>Those tiny things are causing all this mess?  They look like snakes. This will be easier to take care of than I thought.</text>
+        <text>Those tiny things are causing all this mess? They look like snakes. This will be easier to take care of than I thought.</text>
       </line>
     </speech>
   </mission>
+  <!-- strike pierce fervor  | Canopy -->
   <mission>
-    <id>265</id>
+    <id>301</id>
     <name>Cries of the Young</name>
     <energy>12</energy>
-    <desc>The Void babies are startled and begin to screech! They are drawling a lot of attention to the nest...</desc>
+    <desc>The Void babies are startled and begin to screech! They are drawing a lot of attention to the nest...</desc>
     <commander id="247" />
     <deck>
       <card id="5012" name="Static Drake" />
-      <card id="5012" />
-      <card id="5012" />
       <card id="1615" name="Rune Panther" />
-      <card id="1615" />
-      <card id="6012" name="Ember Drake" />
-      <card id="6012" />
       <card id="6025" name="Dragon Keeper" />
-      <card id="1616" mastery_level="2" name="Werewarg" />
-      <card id="2005" mastery_level="3" name="Sailing Drake" />
-      <card id="6007" mastery_level="4" name="Goblin Crew" />
-      <card id="6025" mastery_level="5" name="Dragon Keeper" />
+      <card id="2005" name="Sailing Drake" />
+      <card id="2005" />
+      <card id="7024" name="Woolmane Dragon" />
+      <card id="6025" name="Dragon Keeper" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="6025" name="Dragon Keeper" />
+      <card id="6026" mastery_level="4" name="Smokefang" />
       <card id="6023" mastery_level="6" name="Broodmother" />
       <card id="1340" mastery_level="7" name="Blazekin Dragon" />
     </deck>
   </mission>
+  <!-- Armor heal | Undead Snake -->
   <mission>
-    <id>266</id>
+    <id>302</id>
     <name>What Hunger Brings</name>
     <energy>12</energy>
     <desc>Groc and Ursurio continue to hear rustling in the woods around them. Hungry creatures are coming after the sound of the young.</desc>
     <commander id="283" />
     <deck>
-      <card id="7012" name="Life Drake" />
-      <card id="7012" />
-      <card id="1619" name="Earth Elemental" />
       <card id="1614" name="Druid" />
-      <card id="1614" />
-      <card id="1614" />
       <card id="2019" name="Chalistomper" />
       <card id="7004" name="Ice Golem" />
-      <card id="7012" mastery_level="2" name="Life Drake" />
-      <card id="1631" mastery_level="3" name="Venom Dragon" />
-      <card id="1617" mastery_level="4" name="Water Elemental" />
-      <card id="7004" mastery_level="5" name="Ice Golem" />
+      <card id="1631" name="Venom Dragon" />
+      <card id="7004" name="Ice Golem" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="7005" name="Tsunamari" />
+      <card id="5024" name="Cloudtop Dragon" />
+      <card id="2027" name="Halo Mage" />
+      <card id="5023" mastery_level="4" name="Nightfall Dragon" />
       <card id="1641" mastery_level="6" name="Rhythm of the Wyld" />
       <card id="7014" mastery_level="7" name="Genbu" />
     </deck>
   </mission>
+  <!-- Legion chaos frog hex | Babies -->
   <mission>
-    <id>267</id>
+    <id>303</id>
     <name>Last Leg</name>
     <energy>12</energy>
-    <desc>The Void babies are now in a fully panic with all the attention they have drawn. They are clawing at anything that comes near them!</desc>
+    <desc>The Void babies are now in a full panic with all the attention they have drawn. They are clawing at anything that comes near them!</desc>
     <commander id="285" />
     <deck>
-      <card id="2012" name="Frogling Swarm" />
-      <card id="2011" name="Poliworg" />
       <card id="1313" name="Lavafrog" />
-      <card id="1313" />
-      <card id="1313" />
-      <card id="1314" name="Skeletal Hound" />
-      <card id="1314" />
-      <card id="1314" />
-      <card id="2012" mastery_level="2" name="Frogling Swarm" />
-      <card id="1328" mastery_level="2" name="Poison Bullfrog" />
-      <card id="1331" mastery_level="3" name="Fallen Soldiers" />
-      <card id="2004" mastery_level="4" name="Lavatail Dragon" />
-      <card id="2012" mastery_level="5" name="Frogling Swarm" />
+      <card id="1313" name="Lavafrog" />
+      <card id="2012" name="Frogling Swarm" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="2012" name="Frogling Swarm" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="2012" name="Frogling Swarm" />
+      <card id="6035" name="Demos" />
+      <card id="6028" mastery_level="4" name="Brahmet" />
       <card id="1043" mastery_level="6" name="Lilypad Bard" />
       <card id="6027" mastery_level="7" name="Frigela, the Dread" />
     </deck>
   </mission>
+  <!-- Beserk weaken | Big Bad -->
   <mission>
-    <id>268</id>
-    <name>A Mother's Love</name>
+    <id>304</id>
+    <name>Corrupter's Wrath</name>
     <energy>12</energy>
-    <desc>A loud fast-paced stomping is heard coming toward the nest. Looks like mama has heard the cries of her children...</desc>
+    <desc>A loud, fast-paced stomping is heard coming toward the nest. Looks like mama has heard the cries of her children...</desc>
     <commander id="286" />
     <deck>
+      <card id="6022" name="Illusion Caster" />
       <card id="6036" name="Cursed Ogre" />
       <card id="6034" name="Bone Viper" />
-      <card id="6022" name="Illusion Caster" />
-      <card id="6022" />
-      <card id="1319" name="Wraith" />
-      <card id="1319" />
-      <card id="6006" name="Chaos Golem" />
-      <card id="6036" mastery_level="2" name="Cursed Ogre" />
-      <card id="2023" mastery_level="2" name="Grizzly Terror" />
-      <card id="2024" mastery_level="3" name="Dusk Noble" />
-      <card id="2012" mastery_level="4" name="Frogling Swarm" />
-      <card id="7033" mastery_level="5" name="Treebond Skull" />
+      <card id="6036" name="Cursed Ogre" />
+      <card id="2023" name="Grizzly Terror" />
+      <card id="2023" name="Grizzly Terror" />
+      <card id="2024" name="Dusk Noble" />
+      <card id="2012" name="Frogling Swarm" />
+      <card id="6009" name="Siphon Dragon" />
+      <card id="6039" name="Auroch" />
+      <card id="7033" mastery_level="4" name="Treebond Skull" />
       <card id="6033" mastery_level="6" name="Firebeard" />
       <card id="6035" mastery_level="7" name="Demos" />
     </deck>
@@ -3666,7 +3653,7 @@
       <line>
         <commander>bearcommander</commander>
         <enemy>0</enemy>
-        <text>Uhh..do you hear that loud stomping? That is a bad sound.</text>
+        <text>Uhh... do you hear that loud stomping? This is not a sound I wish to hear.</text>
       </line>
       <line>
         <commander>groc</commander>
@@ -3674,7 +3661,7 @@
         <text>I think we found the big footprints...</text>
       </line>
       <line>
-        <commander>elyse</commander>
+        <commander>dawnglowmonster</commander>
         <enemy>1</enemy>
         <text>GRAAAA!!!</text>
       </line>
@@ -4039,16 +4026,16 @@
     <arena_x>250</arena_x>
     <arena_y>150</arena_y>
   </location>
-  <!-- 	<location>
-		<id>5</id>
-		<name>Dawnglow Swamp</name>
-		<mapBG>map5</mapBG>
-		<asset_bundle>4</asset_bundle>
-		<combatBG>CombatBGEvent004</combatBG>
-		<req>24</req>
-		<arena_x>250</arena_x>
-		<arena_y>150</arena_y>
-	</location> -->
+  <location>
+    <id>5</id>
+    <name>Dawnglow Swamp</name>
+    <mapBG>EventMap_009</mapBG>
+    <asset_bundle>48</asset_bundle>
+    <combatBG>CombatBGEvent004</combatBG>
+    <req>24</req>
+    <arena_x>250</arena_x>
+    <arena_y>150</arena_y>
+  </location>
   <location>
     <id>100</id>
     <name>Salt Wastes</name>
@@ -4113,7 +4100,7 @@
     <id>106</id>
     <name>Skyhaven</name>
     <mapBG>EventMap_008</mapBG>
-    <combatBG>CombatBGVoid</combatBG>
+    <combatBG>CombatBGEvent008</combatBG>
     <asset_bundle>44</asset_bundle>
     <req>-1</req>
     <arena_x>250</arena_x>

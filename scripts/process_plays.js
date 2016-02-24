@@ -1,7 +1,14 @@
-﻿var BATTLE_PROCESSOR = (function () {
+﻿"use strict";
+
+var BATTLE_PROCESSOR = (function () {
     var cachedField;
     var cachedHands;
     var cachedDraws;
+
+    alert = function (message) {
+        clearCardSpace();
+        document.getElementById("content").innerHTML = '<div><font size="24">' + message + '</font></div>';
+    }
 
     var trackPlays = _DEFINED("trackPlays");
     var trackedPlays = {};
@@ -11,6 +18,7 @@
 
     BattleAPI.beginBattle = processJSONResponse;
     BattleAPI.continueBattle = processJSONResponse;
+    BattleAPI.noEnergy = noEnergy;
 
     module.getDecksFromJSON = function (field) {
         var jsonText = field.value;
@@ -22,6 +30,29 @@
         DeckRetriever.getFieldsFromRequest(jsonText);
         var data = JSON.parse(jsonText);
         processJSONResponse(data);
+    }
+
+    var noCapTimer = null;
+    function noEnergy(response) {
+        var battleType = document.getElementById("battleType").value;
+        if (battleType == "startClashBattle") {
+            document.getElementById("battleType").value = "startCampaignBattle";
+            module.fight();
+        } else if (battleType == "startCampaignBattle") {
+            document.getElementById("battleType").value = "startBountyBattle";
+            module.fight();
+        } else if (battleType == "startBountyBattle") {
+            document.getElementById("battleType").value = "startClashBattle";
+            // Alert when the next check will be
+            var addTime = 1000 * 60 * 60 * 3;
+            var nextTime = Date.now() + addTime;
+            var dateObj = new Date(nextTime);
+            alert(dateObj);
+
+            noCapTimer = setTimeout(module.fight, addTime);//7200000);
+        } else {
+            alert(response.result_message[0]);
+        }
     }
 
     var lastModified;
@@ -40,6 +71,7 @@
             file = input.files[0];
             lastModified = file.lastModifiedDate;
             setInterval(tick, 250);
+            readFile(file);
         }
     }
 
@@ -47,23 +79,33 @@
         var input = document.getElementById('responseFiles');
         var file = input.files && input.files[0];
         if (file && lastModified && file.lastModifiedDate.getTime() !== lastModified.getTime()) {
-            lastModified = file.lastModifiedDate;
-
-            var reader = new FileReader();
-            reader.onload = function (e) {
-                processDeckFromJSON(e.target.result);
-            };
-            reader.readAsText(file);
+            readFile(file);
         }
+    }
+
+    function readFile(file) {
+        lastModified = file.lastModifiedDate;
+
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            processDeckFromJSON(e.target.result);
+        };
+        reader.readAsText(file);
     }
 
     var lastID = 0;
     var continues = 0;
     module.fight = function (isContinue) {
+        if (noCapTimer != null) {
+            clearTimeout(noCapTimer);
+            noCapTimer = null;
+        }
         var baseRequest = DeckRetriever.baseRequest;
         var targetID = document.getElementById("targetUserID").value;
         if (baseRequest) {
-            var battleType = document.getElementById("battleType").value;
+            var battleType = document.getElementById("battleType");
+            var additionalParam = battleType.options[battleType.selectedIndex].getAttribute("data-param");
+            battleType = battleType.value;
             if (battleType == "fightGuildMember" && _DEFINED("spam")) {
                 targetID = getTarget();
                 if (!isContinue) {
@@ -78,7 +120,7 @@
                 }
             }
 
-            BattleAPI[battleType](targetID);
+            BattleAPI[battleType](targetID, additionalParam);
         }
     }
 
@@ -93,16 +135,20 @@
 
     function processJSONResponse(data) {
         var action = data.request.message;
-        switch (action) {
-            case 'playCard':
-                playTurns(data, false);
-                break;
-            case 'getBattleResults':
-            default:
-                setupBattlegrounds();
-                startBattle(data);
-                playTurns(data, true);
-                break;
+        if (data.battle_data) {
+            switch (action) {
+                case 'playCard':
+                    playTurns(data, false);
+                    break;
+                case 'getBattleResults':
+                default:
+                    setupBattlegrounds();
+                    startBattle(data);
+                    playTurns(data, true);
+                    break;
+            }
+        } else if(data.result == undefined) {
+            alert("Loaded");
         }
     }
 
@@ -136,7 +182,7 @@
         var unitList = [];
         unitList.push(makeUnitString(deck.commander));
         deck = deck.deck;
-        for(var i = 0; i < deck.length; i++) {
+        for (var i = 0; i < deck.length; i++) {
             unitList.push(makeUnitString(deck[i]));
         }
         return unitList.join(",");
@@ -218,9 +264,11 @@
         setupWorkerField = function (worker) { postField(worker); }
         end_sims_callback = function () {
             document.getElementById('ui').style.display = 'none';
-            drawField();
             if (_DEFINED("auto")) {
-                checkBest();
+                checkBest(true);
+            } else {
+                checkBest(false);
+                drawField();
             }
         }
         document.getElementById('ui').style.display = 'none';
@@ -275,7 +323,9 @@
         catch (err) {
         }
 
-        drawField(1);
+        if (!_DEFINED("auto")) {
+            drawField(1);
+        }
 
         deck_player = hash_encode(deck_player);
         deck_cpu = hash_encode(deck_cpu);
@@ -287,15 +337,24 @@
         if (d) d.checked = true;
     }
 
-    function checkBest() {
+    var lastWinrate = 0;
+    function checkBest(playCard) {
         var avgPoints = -99;
+        var winrate = -1;
         var hash;
         var name;
         for (var i = 0; i < cardStats.keys.length; i++) {
             var key = cardStats.keys[i];
             var stats = cardStats[key];
+            /*
             if (stats.avgPoints > avgPoints) {
                 avgPoints = stats.avgPoints;
+                hash = key;
+                name = stats.card;
+            }
+            */
+            if (stats.winrate > winrate) {
+                winrate = stats.winrate;
                 hash = key;
                 name = stats.card;
             }
@@ -324,39 +383,44 @@
             }
         }
 
-        var card = cachedHands.player[choice];
-        var uid = card.uid;
-        if (_DEFINED("spam")) {
-            BattleAPI.playCard(uid, 1);
-        } else {
-            BattleAPI.playCard(uid);
+        if (playCard) {
+            var card = cachedHands.player[choice];
+            var uid = card.uid;
+            var two100 = ((lastWinrate + winrate) == 2);
+            lastWinrate = winrate;
+            if (_DEFINED("spam") || two100) {
+                BattleAPI.playCard(uid, 1);
+            } else {
+                BattleAPI.playCard(uid);
+            }
         }
     }
 
     function playTurns(data, playTurn0) {
         var lastTurn = 0;
-        /*try {*/
-            var turns = data.battle_data.turn;
-            for (var turn in turns) {
-                if (turn > lastTurn) lastTurn = turn;
-                if (turn == 0 && !playTurn0) continue;
-                var turnInfo = turns[turn];
-                var p = (turn % 2 == 1 ? 'player' : 'cpu');
-                for (phase in turnInfo) {
-                    processTurnPhase(phase, p, turnInfo[phase]);
-                }
+
+        var turns = data.battle_data.turn;
+        for (var turn in turns) {
+            if (turn > lastTurn) lastTurn = turn;
+            if (turn == 0 && !playTurn0) continue;
+            var turnInfo = turns[turn];
+            var p = (turn % 2 == 1 ? 'player' : 'cpu');
+            for (var phase in turnInfo) {
+                processTurnPhase(phase, p, turnInfo[phase]);
+            }
+            if (!_DEFINED("auto")) {
                 drawField(lastTurn);
             }
-        /*}
-        catch (err) {
-            alert(err);
-        }*/
+        }
+
         if (areCommandersAlive()) {
             resetKeys();
             startsim();
         } else {
-            drawField(lastTurn, true);
-            document.getElementById('ui').style.display = 'block';
+            if (!_DEFINED("auto")) {
+                drawField(lastTurn, true);
+            }
+            //document.getElementById('ui').style.display = 'block';
             end_sims_callback = null;
 
             if (!cachedField.uids[-1].isAlive()) {
@@ -369,17 +433,21 @@
 
             if (trackPlays) {
                 //outputTrackedCards();
-                //outputTrackedStats();
+                outputTrackedStats();
             }
 
-            if (_DEFINED("spam")) {
-                if (continues > 0) {
-                    module.fight(true);
-                } else {
-                    lastID++;
-                    module.fight(false);
+            setTimeout(function () {
+                if (_DEFINED("spam")) {
+                    if (continues > 0) {
+                        module.fight(true);
+                    } else {
+                        lastID++;
+                        module.fight(false);
+                    }
+                } else if (_DEFINED("auto")) {
+                    module.fight();
                 }
-            }
+            }, 1000);
         }
     }
 
@@ -888,7 +956,7 @@
         }
         plays.sort(function (keyA, keyB) {
             var compare = trackedPlays[keyA].afterCount - trackedPlays[keyB].afterCount;
-            if(compare != 0) return compare;
+            if (compare != 0) return compare;
             return trackedPlays[keyB].beforeCount - trackedPlays[keyA].beforeCount;
         })
         for (var i = 0; i < plays.length; i++) {
@@ -1007,6 +1075,7 @@
         if (matchEnded) {
             draw_cards(copy_field, null, pickCard, turn);
         } else if (!_DEFINED("nodraw")) {
+            cachedHands.player.choice = choice;
             draw_cards(copy_field, cachedHands.player, pickCard, turn);
         }
     }

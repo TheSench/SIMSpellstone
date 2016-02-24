@@ -1,4 +1,6 @@
-﻿var attackerKeys = [];
+﻿"use strict";
+
+var attackerKeys = [];
 var defenderKeys = [];
 var winrates = {};
 

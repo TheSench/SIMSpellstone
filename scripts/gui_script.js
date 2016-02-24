@@ -1,3 +1,5 @@
+"use strict";
+
 window.onerror = function (message, url, linenumber) {
     if (linenumber == 0) {
         var msg = "<br><br><i>Error Message:</i><br><br>" +
@@ -100,7 +102,13 @@ function onpageload() {
     if (MISSIONS) {
         // Mission drop down
         var select = document.getElementById('mission');
+        var IDs = [];
         for (var key in MISSIONS) {
+            IDs.push(key);
+        }
+        for (var i = 0; i < IDs.length; i++)
+        {
+            var key = IDs[i];
             var mission = MISSIONS[key];
             var option = document.createElement('option');
             option.appendChild(document.createTextNode(mission.name));
@@ -113,7 +121,12 @@ function onpageload() {
     if (RAIDS) {
         // Mission drop down
         var select = document.getElementById('raid');
+        var IDs = [];
         for (var key in RAIDS) {
+            IDs.push(key);
+        }
+        for (var i = 0; i < IDs.length; i++) {
+            var key = IDs[i];
             var raid = RAIDS[key];
             var option = document.createElement('option');
             option.appendChild(document.createTextNode(raid.name));
@@ -210,6 +223,10 @@ function onpageload() {
         }
     }
 
+    if (_DEFINED("randomAI")) {
+        smartAI = false;
+    }
+
     if (_DEFINED('exactorder')) {
         var d = document.getElementById('exactorder');
         if (d) {
@@ -247,8 +264,8 @@ function onpageload() {
     } else {
         // Load current battlegrounds
         var bgCheckBoxes = document.getElementsByName("battleground");
-        bgCheckBoxes[3].checked = true;
         bgCheckBoxes[4].checked = true;
+        bgCheckBoxes[5].checked = true;
     }
 
     if (_GET('sims')) {
@@ -584,7 +601,9 @@ function CalculatePlayStats(hash, cardStats) {
             };
             cardStats[playKey] = playStats;
             if (parentKey) {
-                cardStats[parentKey].children.push(playKey);
+                if (!_DEFINED("succinct")) {
+                    cardStats[parentKey].children.push(playKey);
+                }
             } else {
                 cardStats.keys.push(playKey);
             }
@@ -837,7 +856,7 @@ function load_deck_builder(player) {
 
 function open_deck_builder(name, hash, inventory, deckHashField) {
     var url = (inventory ? "DeckUpdater.html" : "DeckBuilder.html");
-    var parameters = [];
+    var parameters = ["nosort"];
     if (hash) {
         parameters.push("hash=" + hash);
     }
@@ -975,6 +994,7 @@ var getbattleground = 0;
 var getsiege = 0;
 var tower_level = 0;
 var tower_type = 0;
+var smartAI = true;
 var echo = '';
 var wins = 0;
 var losses = 0;

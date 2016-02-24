@@ -1,3 +1,5 @@
+"use strict";
+
 if (use_workers) {
 
     // Global variables needed by the GUI thread when workers are used
@@ -107,7 +109,6 @@ if (use_workers) {
         } else {
             sims_left = 0;
         }
-        delete e;
     }
 
     var initializeCard = function (card, p, newKey) {
@@ -278,9 +279,6 @@ if (use_workers) {
 
     // Display the results of a regular debug simulation
     var display_debug_results = function (win, draw) {
-        for (var i = 0; i < max_workers; i++) {
-            workers[i].terminate();
-        }
 
         sims_left = 0;
         time_stop = new Date().getTime();
@@ -302,9 +300,6 @@ if (use_workers) {
 
     // Display the final results after a simulation loop has completed
     var display_final_results = function () {
-        for (var i = 0; i < max_workers; i++) {
-            workers[i].terminate();
-        }
 
         time_stop = new Date().getTime();
 
@@ -331,7 +326,7 @@ if (use_workers) {
     // Initialize simulation loop - runs once per simulation session
     var startsim = function (autostart) {
         for (var i = 0; i < max_workers; i++) {
-            workers[i] = createWorker(i);
+            if(!workers[i]) workers[i] = createWorker(i);
         }
 
         orders = {};
@@ -381,7 +376,6 @@ if (use_workers) {
         getcardlist2 = document.getElementById('cardlist2').value;
         getordered = document.getElementById('ordered').checked;
         getordered2 = document.getElementById('ordered2').checked;
-        gettournament = document.getElementById('tournament').checked;
         getexactorder = document.getElementById('exactorder').checked;
         getexactorder2 = document.getElementById('exactorder2').checked;
         getmission = document.getElementById('mission').value;
@@ -446,7 +440,6 @@ if (use_workers) {
         params['getbattleground'] = getbattleground;
         params['getordered'] = getordered;
         params['getordered2'] = getordered2;
-        params['gettournament'] = gettournament;
         params['getexactorder'] = getexactorder;
         params['getexactorder2'] = getexactorder2;
         params['getmission'] = getmission;
@@ -455,6 +448,7 @@ if (use_workers) {
         params['getsiege'] = getsiege;
         params['tower_level'] = tower_level;
         params['tower_type'] = tower_type;
+        params['smartAI'] = smartAI;
         params['surge'] = surge;
         params['debug'] = debug;
         params['loss_debug'] = loss_debug;
@@ -489,12 +483,12 @@ if (use_workers) {
         var simpersec = games / elapse;
         simpersec = simpersec.toFixed(1);
 
-        for (var i = 0; i < max_workers; i++) {
-            workers[i].terminate();
-        }
-
         // Stop the recursion
         if (current_timeout) clearTimeout(current_timeout);
+
+        for (var i = 0; i < max_workers; i++) {
+            workers[i].postMessage({ 'cmd': 'stopsim' });
+        }
 
         if (!supress_output) {
             outp(echo + '<strong>Simulations interrupted.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>' + gettable());

@@ -2,7 +2,6 @@
   <Reference>&lt;RuntimeDirectory&gt;\System.XML.dll</Reference>
 </Query>
 
-static bool getImages = false;
 static bool downloadFiles = true;
 
 static string path = Path.GetDirectoryName(Util.CurrentQueryPath);
@@ -36,7 +35,8 @@ void Main()
 	List<unit> units = new List<unit>();
 
 	var pictures = new Dictionary<string, string>();
-	var notFound = new List<string>();
+	var noImage = new List<string>();
+	var notFound = new Dictionary<string, string>();
 
 	var unitNodes = doc.Descendants("unit");
 	foreach (var unitXML in unitNodes)
@@ -47,26 +47,77 @@ void Main()
 		if (!existingUnits.Contains(unit.id))
 		{
 			newUnits.Add(unit.id);
+			unit.picture.Dump("New Image");
 		}
-		if (unit.picture != null)
+		if (unit.portrait != null)
+		{
+			pictures[unit.portrait] = unit.name;
+			var imageFile = Path.Combine(path, @"..\res\cardImages\", unit.picture + ".png");
+			if (!File.Exists(imageFile))
+			{
+				notFound[unit.picture] = unit.asset_bundle;
+				unit.picture = "NotFound";
+			}
+		}
+		else if (unit.picture != null)
 		{
 			pictures[unit.picture] = unit.name;
 			var imageFile = Path.Combine(path, @"..\res\cardImages\", unit.picture + ".jpg");
 			if (!File.Exists(imageFile))
 			{
+				notFound[unit.picture] = unit.asset_bundle;
 				unit.picture = "NotFound";
 			}
 		}
 		else
 		{
-			notFound.Add(unit.name + "(NO IMAGE)");
+			noImage.Add(unit.name + "(NO IMAGE)");
 		}
 	}
+	
+	notFound.Dump("Missing these");
+
+	// Add placeholder units for unused images
+	var unusedImages = new DirectoryInfo(Path.Combine(path, @"..\res\cardImages"))
+		.GetFiles("New*A.jpg")
+		.Select(imageFile => imageFile.Name);
+	var idPrefixes = new[] { "", "1", "2" };
+	var imageSuffixes = new[] { "A", "A", "B" };
+	var nameSuffixes = new[] { "S", "D", "Q" };
+	var unitID = 10000 - unusedImages.Count();
+	foreach (var image in unusedImages)
+	{
+		var imageName = image.Split('_')[0];
+		var imageNumber = imageName.Replace("New", "");
+		for (var i = 0; i < 3; i++)
+		{
+			var unit = new unit()
+			{
+				id = idPrefixes[i] + unitID.ToString(),
+				name = "New " + imageNumber + " (" + nameSuffixes[i] + ")",
+				picture = imageName + "_" + imageSuffixes[i],
+				rarity = "0",
+				card_type = "2",
+				type = "0",
+				attack = "0",
+				health = "1",
+				cost = "0",
+			};
+			units.Add(unit);
+			// Only add these to spoilers if there are other new units - don't want to overwrite spoilers with just new art
+			if (newUnits.Count > 0)
+			{
+				newUnits.Add(unit.id);
+			}
+		}
+		unitID++;
+	}
+
 	if (newUnits.Count > 0)
 	{
 		var spoilers = "var spoilers = {};\r\n" + String.Join("\r\n", newUnits.Select(id => String.Format("spoilers[{0}] = true;", id)));
 		newUnits.Dump("New Units:");
-		File.WriteAllText(Path.Combine(path, "../scripts", "spoilers.js"), spoilers);
+		File.WriteAllText(Path.Combine(path, "../scripts/data", "spoilers.js"), spoilers);
 	}
 
 	xmlFile = Path.Combine(path, "missions.xml");
@@ -97,7 +148,7 @@ void Main()
 		baseCardID = node.Element("resource").Attribute("card_id").Value,
 	}).OrderBy(f => f.baseCardID);
 
-	var file = new FileInfo(Path.Combine(path, "cache.js"));
+	var file = new FileInfo(Path.Combine(path, "../scripts/data", "cache.js"));
 	using (var writer = file.CreateText())
 	{
 		writer.Write("var CARDS = {\r\n");
@@ -114,7 +165,7 @@ void Main()
 			writer.WriteLine("    \"name\": \"" + mission.name + "\",");
 			writer.WriteLine("    \"commander\": {");
 			writer.WriteLine(mission.commander.ToString());
-			writer.WriteLine(     "},");
+			writer.WriteLine("},");
 			writer.WriteLine("    \"deck\": [");
 			foreach (var card in mission.deck)
 			{
@@ -126,7 +177,7 @@ void Main()
 			writer.WriteLine("  },");
 		}
 		writer.WriteLine("};");
-		
+
 		writer.WriteLine("var FUSIONS = {");
 		writer.WriteLine(String.Join(",\r\n", fusions.Select(f => f.ToString())));
 		writer.WriteLine("};");
@@ -140,78 +191,6 @@ void Main()
 		}
 		writer.WriteLine("];");
 	}
-
-	if (!getImages) return;
-
-	var baseurl = @"http://spellstone.wikia.com/wiki/File:";
-	var folder = @"C:\Users\jsen\Documents\Visual Studio 2013\Projects\SIMSpellstone\res\cardImages\";
-	//pictures.Dump("Image URLs");
-	var client = new System.Net.WebClient();
-	foreach (var name in pictures.Keys)
-	{
-		var url1 = baseurl + name + ".png";
-		var file1 = folder + name + ".png";
-		var url2 = baseurl + name + ".jpg";
-		var file2 = folder + name + ".jpg";
-		if (!File.Exists(file1))
-		{
-			if (name.EndsWith("_A") || name.EndsWith("_B") || name.EndsWith("_C"))
-			{
-				notFound.Add(name);
-				continue;
-			}
-			name.Dump();
-			try
-			{
-				var url = "http://spellstone.wikia.com/wiki/File:Portrait_" + name + ".png";
-				var html = new FileInfo(folder + name + ".html");
-				client.DownloadFile(url, html.FullName);
-				string contents;
-				using (var reader = html.OpenText())
-				{
-					contents = reader.ReadToEnd();
-				}
-				var regex = new Regex("<meta property=\"og:image\" content=\"(.*" + name + ".*)\".*/>");
-				var matches = regex.Match(contents);
-				if (matches.Success)
-				{
-					html.Delete();
-					url = matches.Groups[1].Value;
-					var extension = (url.Contains(".jpg") ? ".jpg" : ".png");
-					client.DownloadFile(url, @"C:\Users\jsen\Documents\Visual Studio 2013\Projects\SIMSpellstone\res\cardImages\" + name + extension);
-				}
-				else
-				{
-					regex = new Regex("<meta property=\"og:image\" content=\"(http://vignette1.wikia.nocookie.net/spellstone/images.*)\".*/>");
-					matches = regex.Match(contents);
-					if (matches.Success)
-					{
-						html.Delete();
-						url = matches.Groups[1].Value;
-						var extension = (url.Contains(".jpg") ? ".jpg" : ".png");
-						client.DownloadFile(url, @"C:\Users\jsen\Documents\Visual Studio 2013\Projects\SIMSpellstone\res\cardImages\" + name + extension);
-					}
-					else
-					{
-						"Fail".Dump();
-					}
-				}
-				//client.DownloadFile(url1, file1);
-			}
-			catch
-			{
-				try
-				{
-					client.DownloadFile(url1, file1);
-				}
-				catch
-				{
-					notFound.Add(name + " : " + pictures[name]);
-				}
-			}
-		}
-	}
-	notFound.Dump("Not Found");
 }
 
 private HashSet<string> LoadUnits(XDocument doc)
@@ -516,7 +495,7 @@ public partial class unit
 	/// <remarks/>
 	public string picture
 	{
-		get { return this.pictureField ?? this.portraitField ?? this.asset_prefabField; }
+		get { return this.pictureField ?? this.portrait ?? this.asset_prefabField; }
 		set { this.pictureField = value; }
 	}
 
@@ -529,7 +508,17 @@ public partial class unit
 	/// <remarks/>
 	public string portrait
 	{
-		get { return this.portraitField; }
+		get
+		{
+			if (this.portraitField != null)
+			{
+				return "portrait_" + this.portraitField.ToLower().Replace("portrait_", "");
+			}
+			else
+			{
+				return null;
+			}
+		}
 		set { this.portraitField = value; }
 	}
 

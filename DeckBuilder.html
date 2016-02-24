@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
+<head profile="http://www.w3.org/2005/10/profile">
     <meta charset="UTF-8">
     <title id="title_tag">DeckBuilder</title>
     <link rel="stylesheet" type="text/css" href="styles/card.css">
@@ -8,19 +8,21 @@
     <link rel="stylesheet" type="text/css" href="styles/loading.css">
     <link rel="stylesheet" type="text/css" href="styles/spritesheet.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="icon" type="image/png" href="res/deck-16x16.png">
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
     <!-- This script contains the cached data for cards, missions, quests, raids,
         and battlegrounds -->
-    <script id="cards_script" type="text/javascript" src="cards/cache.js"></script>
-    <script id="runes_script" type="text/javascript" src="scripts/runes.js"></script>
+    <script id="cards_script" type="text/javascript" src="scripts/data/cache.js"></script>
+    <script id="runes_script" type="text/javascript" src="scripts/data/runes.js"></script>
     <script id="shared_functions" type="text/javascript" src="scripts/shared.js"></script>
+    <script id="common_variables" type="text/javascript" src="scripts/common.js"></script>
     <script id="gui_script" type="text/javascript" src="scripts/cards_gui.js"></script>
     <script id="cards_script" type="text/javascript" src="scripts/gui_script.js"></script>
     <script id="deckbuilder" type="text/javascript" src="scripts/deckbuilder.js"></script>
-    <script id="spoilers" type="text/javascript" src="scripts/spoilers.js"></script>
+    <script id="spoilers" type="text/javascript" src="scripts/data/spoilers.js"></script>
 
 </head>
 <body onload="initDeckBuilder()" onresize="adjustHeight();">
@@ -41,7 +43,7 @@
             <br />
             <div><b>Deck Hash:</b></div><input id="hash" type="text" value="" size="100" onchange="hash_changed();"><br />
             <br />
-            <input id="resetDeck" type="button" value="Reset" onclick="hash_changed('GDK')" />
+            <input id="resetDeck" type="button" value="Reset" onclick="hash_changed('ADK')" />
         </div>
         <hr />
         <div class="collapser">
@@ -91,6 +93,7 @@
                     <input type="image" id="heal" name="skill" title="Heal" src="res/skills/Heal.png" onclick="filterSkill(this, 'heal')" oncontextmenu="return showAdvancedFilters('heal')" />
                     <input type="image" id="enfeeble" name="skill" title="Hex" src="res/skills/Hex.png" onclick="filterSkill(this, 'enfeeble')" oncontextmenu="return showAdvancedFilters('enfeeble')" />
                     <input type="image" id="evade" name="skill" title="Invisibile" src="res/skills/Invisibility.png" onclick="filterSkill(this, 'evade')" oncontextmenu="return showAdvancedFilters('evade')" />
+                    <input type="image" id="legion" name="skill" title="Legion" src="res/skills/Legion.png" onclick="filterSkill(this, 'legion')" oncontextmenu="    return showAdvancedFilters('legion')" />
                     <input type="image" id="pierce" name="skill" title="Pierce" src="res/skills/Pierce.png" onclick="filterSkill(this, 'pierce')" oncontextmenu="return showAdvancedFilters('pierce')" />
                     <input type="image" id="poison" name="skill" title="Poison" src="res/skills/Poison.png" onclick="filterSkill(this, 'poison')" oncontextmenu="return showAdvancedFilters('poison')" />
                     <input type="image" id="burn" name="skill" title="Scorch" src="res/skills/Scorch.png" onclick="filterSkill(this, 'burn')" oncontextmenu="return showAdvancedFilters('burn')" />
