@@ -1,0 +1,11 @@
+var spoilers = {};
+spoilers[10] = true;
+spoilers[11] = true;
+spoilers[12] = true;
+spoilers[280] = true;
+spoilers[281] = true;
+spoilers[282] = true;
+spoilers[283] = true;
+spoilers[284] = true;
+spoilers[285] = true;
+spoilers[286] = true;

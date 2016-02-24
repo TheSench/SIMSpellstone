@@ -1,4 +1,6 @@
-﻿var fromInventory = false;
+﻿"use strict";
+
+var fromInventory = false;
 var deck = [];
 deck.commander = elariaCaptain;
 deck.deck = [];
@@ -90,28 +92,41 @@ var setupPopups = function () {
     $("input").add("option").parents("#unitOptions").bind("change", function () {
         modifyCard(optionsDialog);
     });
-    $("#upgrade").parents("#unitOptions").bind("change", function () {
-        resetUnit();
-    });
 
     var imageButtons = $('input[type="image"]');
     for (var i = 0; i < imageButtons.length; i++) {
         var imageButton = imageButtons[i];
         var toolTip = '<div class="tooltip">' + imageButton.getAttribute("title") + '</div>';
         imageButton.removeAttribute("title");
-        org_html = imageButton.outerHTML;
-        new_html = '<div style="display:inline; position:relative; overflow:visible;">' + org_html + toolTip + '</div>';
+        var orig_html = imageButton.outerHTML;
+        var new_html = '<div style="display:inline; position:relative; overflow:visible;">' + orig_html + toolTip + '</div>';
         imageButton.outerHTML = new_html;
     }
 }
 
 var drawAllCards = function () {
+    drawDeck();
+    drawCardList();
+}
+
+var drawDeck = function () {
 
     var hash = _GET('hash');
     if (hash) {
         deck = hash_decode(hash);
     }
     sortDeck(deck);
+
+    var name = _GET('name');
+    if (name) {
+        setDeckName(name);
+    }
+
+    draw_deck(deck, removeFromDeck, showCardOptions);
+    updateHash();
+};
+
+var drawCardList = function () {
 
     units = [];
     unitsShown = [];
@@ -136,17 +151,11 @@ var drawAllCards = function () {
         }
     }
 
-    var name = _GET('name');
-    if (name) {
-        setDeckName(name);
-    }
-
     var sortField = document.getElementById("sortField");
     if (sortField.value != "id") {
         sortCards(sortField);
     }
 
-    draw_deck(deck, removeFromDeck, showCardOptions);
     draw_card_list(unitsShown, false, addToDeck);
     if (inventory) {
         var unitsToHide = deck.deck.slice();
@@ -163,8 +172,7 @@ var drawAllCards = function () {
             }
         }
     }
-    updateHash();
-};
+}
 
 var addInventoryUnit = function (unit) {
     units.push(unit);
@@ -226,6 +234,8 @@ var hash_changed = function (hash) {
 }
 
 var sortDeck = function (deck) {
+    if (_DEFINED("nosort")) return;
+
     deck.deck.sort(function (unitA, unitB) {
         var cardA = get_card_by_id(unitA);
         var cardB = get_card_by_id(unitB);
@@ -777,7 +787,7 @@ var showRunePicker = function (card) {
                 option.appendChild(document.createTextNode(rune.desc));
                 option.value = rune.id;
                 select.appendChild(option);
-                if (rune.rarity > 2) {
+                if (rune.rarity > 3) {
                     optionsDialog.hiddenOptions.push(option);
                     option.hidden = !showUnreleased;
                 }
@@ -1028,7 +1038,7 @@ var toggleUpgrades = function (checkbox) {
     $("body").addClass("loading");
 
     setTimeout(function () {
-        drawAllCards();
+        drawCardList();
         $("body").removeClass("loading");
         applyFilters();
     }, 1);

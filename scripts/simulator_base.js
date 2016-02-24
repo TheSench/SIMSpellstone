@@ -1129,7 +1129,7 @@ if (simulator_thread) {
                 if (deck_p_deck.length > 1 /*&& deck_p.shuffleHand*/) {
                     // Play random card in hand
                     var hand = deck_p_deck.slice(0, 3);
-                    if (p == 'player') {
+                    if (p == 'player' || !smartAI) {
                         card_picked = ~~(Math.random() * deck_p_deck.slice(0, 3).length);
                     } else {
                         // Play card in hand with most upgrade points
@@ -1169,10 +1169,12 @@ if (simulator_thread) {
 
     var getCardRanking = function(card) {
         var cardID = card.id.toString();
-
-        var fusion = (cardID.length > 4 ? parseInt(cardID[0]) : 0);
-        var rarity = parseInt(card.rarity);
-        var level = parseInt(card.level);
+        // Each rarity level is worth 6 points
+        var rarity = parseInt(card.rarity) * 6;
+        // Each fusion is worth half of a rarity
+        var fusion = (cardID.length > 4 ? parseInt(cardID[0]) : 0) * 3;
+        // Subtract a point for every missing upgrade level
+        var level = parseInt(card.level) - parseInt(card.maxLevel);
 
         var ranking = rarity + fusion + level;
 
@@ -1230,6 +1232,7 @@ if (simulator_thread) {
 
             // Check jammed ("frozen")
             if (current_assault['jammed']) {
+                doCountDowns(current_assault);  // Still countdown any skills with timers
                 if (debug) echo += debug_name(current_assault) + ' is frozen and cannot attack<br>';
                 continue;
             }
@@ -1261,7 +1264,7 @@ if (simulator_thread) {
 
                 doAttack(current_assault, field_o_assaults, field_o_commander);
 
-                // WINNING CONDITION (in case of backfire or shock)
+                // WINNING CONDITION
                 if (!field_o_commander.isAlive() || !field_p_commander.isAlive()) {
                     return;
                 }
@@ -1298,6 +1301,25 @@ if (simulator_thread) {
         //debug_dump_field();
         if (debug) echo += '<u>Turn ' + turn + ' ends</u><br><br><hr><br>';
     };
+
+    var doCountDowns = function (unit) {
+        doSkillCountDowns(unit.skill);
+        doSkillCountDowns(unit.empowerSkills);
+
+        var dualStrike = unit.flurry;
+        if (dualStrike && dualStrike.countdown) dualStrike.countdown--;
+    }
+
+    var doSkillCountDowns = function (skills) {
+        for (var i = 0, len = skills.length; i < len; i++) {
+            var skill = skills[i];
+            if (skill.countdown) {
+                if (skill.countdown) {
+                    skill.countdown--;
+                }
+            }
+        }
+    }
 
     var processDOTs = function (field_p_assaults) {
         // Poison/Scorch damage

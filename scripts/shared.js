@@ -1,3 +1,5 @@
+"use strict";
+
 //function ajax_call(url) {
 //	var xmlhttp;
 //	if (window.XMLHttpRequest) {
@@ -114,6 +116,7 @@ function cloneCard(original) {
     } else {
         copy_skills(copy, original.skill, original.empowerSkills);
     }
+    copy.highlighted = original.highlighted;
     copy.runes = original.runes;
     if (!copy.runes) copy.runes = [];
     return copy;
@@ -159,6 +162,7 @@ var MakeAssault = (function () {
     }
 
     function modifySkills(new_card, original_skills, skillModifiers) {
+        new_card.highlighted = [];
         for (var i = 0; i < skillModifiers.length; i++) {
             var skillModifier = skillModifiers[i];
             if (skillModifier.modifierType == "evolve") {
@@ -169,7 +173,9 @@ var MakeAssault = (function () {
                         if (skill.id == evolution.id && skill.all == evolution.all) {
                             skill = copy_skill(skill);
                             skill.id = evolution.s;
+                            skill.boosted = true;
                             original_skills[key] = skill;
+                            new_card.highlighted.push(skill.id);
                         }
                     }
                 }
@@ -180,7 +186,9 @@ var MakeAssault = (function () {
                         var new_skill = {};
                         new_skill.id = addedSkill.id;
                         if (addedSkill.mult && addedSkill.base) {
-                            new_skill.x = Math.ceil(addedSkill.mult * new_card[addedSkill.base]);
+                            var base = new_card[addedSkill.base];
+                            if (addedSkill.base == "rarity") base--;
+                            new_skill.x = Math.ceil(addedSkill.mult * base);
                         } else {
                             new_skill.x = addedSkill.x;
                         }
@@ -188,8 +196,10 @@ var MakeAssault = (function () {
                         new_skill.c = addedSkill.c;
                         new_skill.s = addedSkill.s;
                         new_skill.all = addedSkill.all;
+                        new_skill.boosted = true;
                         if (addedSkill.mult && addedSkill.base && new_skill.x == 0) continue;
                         original_skills.push(new_skill);
+                        new_card.highlighted.push(new_skill.id);
                     }
                 }
             }
@@ -315,13 +325,6 @@ var MakeAssault = (function () {
             return false;
         },
 
-        // Damaged
-        // -.health_left < health
-        isDamaged: function () {
-            if (this.health_left < this.health) return true;
-            return false;
-        },
-
         // Has Attack power
         // - attack > 0
         hasAttack: function () {
@@ -427,6 +430,7 @@ var boostSkill = function (card, boost) {
         var skill = skills[i];
         if (skill.id == skillID && (skill.all | 0) == (boost.all | 0)) {
             skillToBoost = i;
+            break;
         }
     }
 
@@ -508,7 +512,7 @@ var MakeBattleground = (function () {
 function copy_skills_2(new_card, original_skills, mult) {
     new_card.skill = [];
     new_card.empowerSkills = [];
-    skillTimers = [];
+    var skillTimers = [];
     var reusable = true;
     for (var key in original_skills) {
         var newSkill = original_skills[key];
@@ -747,7 +751,7 @@ function debug_dump_cards(deck, player) {
         // Get cardID
         var unit_info = deck.deck[key];
         // Setup card for printing
-        current_card = get_card_by_id(unit_info, true);
+        var current_card = get_card_by_id(unit_info, true);
         current_card.owner = player;
         current_card.key = undefined;
         current_card.health_left = current_card.health;
@@ -1158,7 +1162,7 @@ function hash_decode(hash) {
     var indexes;
     if (hash.indexOf(runeDelimiter) > 0) {
         runes = [];
-        runesHash = hash.substr(hash.indexOf(runeDelimiter) + 1);
+        var runesHash = hash.substr(hash.indexOf(runeDelimiter) + 1);
         for (var i = 0, len = runesHash.length; i < len; i += 2) {
             runes.push(base64_to_runeID(runesHash.substring(i, i+2)));
         }
@@ -1536,6 +1540,7 @@ function get_card_by_id(unit, skillModifiers) {
     var cached = card_cache[unitKey];
     if (cached) {
         cached = cloneCard(cached);
+        if (unit.priority) cached.priority = unit.priority;
         return cached;
     }
 
@@ -1562,6 +1567,7 @@ function get_card_by_id(unit, skillModifiers) {
         }
         card_cache[unitKey] = cached;
         cached = cloneCard(cached);
+        if (unit.priority) cached.priority = unit.priority;
         return cached
     }
 }
@@ -1626,7 +1632,7 @@ function GetMaxLevel(original_card) {
     if (original_card.maxLevel) return original_card.maxLevel;
     original_card.maxLevel = 1;
     var upgrades = original_card.upgrades;
-    if (upgrades) for (key in upgrades) {
+    if (upgrades) for (var key in upgrades) {
         if (upgrades.hasOwnProperty(key)) original_card.maxLevel++;
     }
     return original_card.maxLevel;
@@ -1657,7 +1663,7 @@ function makeUnitInfo(id, level, runes) {
     return unit;
 }
 
-var elariaCaptain = makeUnitInfo(202, 7);
+var elariaCaptain = makeUnitInfo(202, 1);
 var card_cache = {};
 
 
