@@ -12894,6 +12894,249 @@ var CARDS = {
       },
     }
   },
+  "2029": {
+    "id": "2029",
+    "name": "Sly Critters",
+    "picture": "Cute_Angel_Critter_A",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "6",
+    "attack": 3,
+    "health": 8,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 3,
+        "y": "3",
+        "z": 3,
+      },
+      {
+        "id": "fervor",
+        "x": 1,
+        "y": "6",
+        "z": 6,
+      },
+      {
+        "id": "pierce",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 9,
+        "skill": [],
+      },
+      "3": {
+        "health": 10,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 4,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "12029": {
+    "id": "12029",
+    "name": "Cunning Critters",
+    "picture": "Cute_Angel_Critter_A",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "6",
+    "attack": 3,
+    "health": 11,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 4,
+        "y": "3",
+        "z": 3,
+      },
+      {
+        "id": "fervor",
+        "x": 1,
+        "y": "6",
+        "z": 6,
+      },
+      {
+        "id": "pierce",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 12,
+        "skill": [],
+      },
+      "3": {
+        "attack": 4,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 4,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 5,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "22029": {
+    "id": "22029",
+    "name": "Devilish Critters",
+    "picture": "Cute_Angel_Critter_B",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "6",
+    "attack": 4,
+    "health": 13,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 5,
+        "y": "3",
+        "z": 3,
+      },
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "6",
+        "z": 6,
+      },
+      {
+        "id": "pierce",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "health": 15,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 5,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 5,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
   "2030": {
     "id": "2030",
     "name": "Ebon Duelist",
@@ -22149,6 +22392,493 @@ var CARDS = {
       },
     }
   },
+  "5041": {
+    "id": "5041",
+    "name": "Skylance Raiders",
+    "picture": "Swiftlance_Raiders_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "attack": 4,
+    "health": 12,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "legion",
+        "x": 1,
+        "y": "1",
+        "z": 1,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+      },
+      {
+        "id": "flurry",
+        "c": 7,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 1,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 6,
+          },
+        ],
+      },
+      "3": {
+        "health": 13,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 1,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 6,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 6,
+          },
+        ],
+      },
+    }
+  },
+  "15041": {
+    "id": "15041",
+    "name": "Divelance Raiders",
+    "picture": "Swiftlance_Raiders_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "attack": 4,
+    "health": 14,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "legion",
+        "x": 2,
+        "y": "1",
+        "z": 1,
+      },
+      {
+        "id": "strike",
+        "x": 2,
+      },
+      {
+        "id": "flurry",
+        "c": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 15,
+        "skill": [],
+      },
+      "3": {
+        "health": 16,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 5,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+          {
+            "id": "flurry",
+            "c": 5,
+          },
+        ],
+      },
+    }
+  },
+  "25041": {
+    "id": "25041",
+    "name": "Swiftlance Raiders",
+    "picture": "Swiftlance_Raiders_B",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "attack": 4,
+    "health": 17,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "legion",
+        "x": 2,
+        "y": "1",
+        "z": 1,
+      },
+      {
+        "id": "strike",
+        "x": 3,
+      },
+      {
+        "id": "flurry",
+        "c": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 18,
+        "skill": [],
+      },
+      "3": {
+        "attack": 5,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "strike",
+            "x": 4,
+          },
+          {
+            "id": "flurry",
+            "c": 5,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "strike",
+            "x": 4,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+    }
+  },
+  "5042": {
+    "id": "5042",
+    "name": "Tinkerer",
+    "picture": "The_Tinkerer_A",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "attack": 4,
+    "health": 8,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 1,
+        "y": "1",
+        "z": 1,
+      },
+      {
+        "id": "heal",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 9,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "heal",
+            "x": 1,
+          },
+        ],
+      },
+      "4": {
+        "attack": 5,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "15042": {
+    "id": "15042",
+    "name": "Wingspan Tinkerer",
+    "picture": "The_Tinkerer_A",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "attack": 5,
+    "health": 10,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "rally",
+        "x": 1,
+        "y": "1",
+        "z": 1,
+        "all": "1",
+      },
+      {
+        "id": "heal",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 11,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "attack": 6,
+        "skill": [],
+      },
+      "5": {
+        "health": 12,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "25042": {
+    "id": "25042",
+    "name": "Steelfeather Tinkerer",
+    "picture": "The_Tinkerer_B",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "attack": 6,
+    "health": 13,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "rally",
+        "x": 1,
+        "y": "1",
+        "z": 1,
+        "all": "1",
+      },
+      {
+        "id": "heal",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "health": 15,
+        "skill": [],
+      },
+      "4": {
+        "attack": 7,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 4,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "1",
+            "z": 1,
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
   "6000": {
     "id": "6000",
     "name": "Furnace Mech",
@@ -31032,6 +31762,241 @@ var CARDS = {
           {
             "id": "burn",
             "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "6041": {
+    "id": "6041",
+    "name": "Reaper",
+    "picture": "Angel_Of_Death_A",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "6",
+    "attack": 7,
+    "health": 15,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "weaken",
+        "x": 3,
+      },
+      {
+        "id": "pierce",
+        "x": 3,
+      },
+      {
+        "id": "leech",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 16,
+        "skill": [],
+      },
+      "3": {
+        "health": 17,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+        ],
+      },
+      "5": {
+        "attack": 8,
+        "health": 18,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "weaken",
+            "x": 4,
+          },
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+        ],
+      },
+    }
+  },
+  "16041": {
+    "id": "16041",
+    "name": "Grim Reaper",
+    "picture": "Angel_Of_Death_A",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "6",
+    "attack": 8,
+    "health": 19,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "weaken",
+        "x": 4,
+      },
+      {
+        "id": "pierce",
+        "x": 3,
+      },
+      {
+        "id": "leech",
+        "x": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 20,
+        "skill": [
+          {
+            "id": "weaken",
+            "x": 4,
+          },
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 6,
+          },
+        ],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "weaken",
+            "x": 4,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 6,
+          },
+        ],
+      },
+      "4": {
+        "health": 21,
+        "skill": [],
+      },
+      "5": {
+        "attack": 9,
+        "skill": [],
+      },
+      "6": {
+        "health": 22,
+        "skill": [
+          {
+            "id": "weaken",
+            "x": 5,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 6,
+          },
+        ],
+      },
+    }
+  },
+  "26041": {
+    "id": "26041",
+    "name": "Death Reaper",
+    "picture": "Angel_Of_Death_B",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "6",
+    "attack": 9,
+    "health": 22,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "weaken",
+        "x": 5,
+      },
+      {
+        "id": "pierce",
+        "x": 4,
+      },
+      {
+        "id": "leech",
+        "x": 7,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 23,
+        "skill": [],
+      },
+      "3": {
+        "attack": 10,
+        "health": 24,
+        "skill": [],
+      },
+      "4": {
+        "health": 25,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "weaken",
+            "x": 6,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 7,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "weaken",
+            "x": 6,
+          },
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+          {
+            "id": "leech",
+            "x": 8,
           },
         ],
       },
@@ -40684,6 +41649,233 @@ var CARDS = {
             "x": 3,
             "y": "3",
             "z": 3,
+          },
+        ],
+      },
+    }
+  },
+  "7041": {
+    "id": "7041",
+    "name": "Feral Angel",
+    "picture": "Feral_Angel_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "6",
+    "attack": 4,
+    "health": 10,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 1,
+        "y": "6",
+        "z": 6,
+      },
+      {
+        "id": "leech",
+        "x": 1,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 11,
+        "skill": [],
+      },
+      "3": {
+        "health": 12,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "4": {
+        "health": 13,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "17041": {
+    "id": "17041",
+    "name": "Wilderness Angel",
+    "picture": "Feral_Angel_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "6",
+    "attack": 5,
+    "health": 14,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "6",
+        "z": 6,
+      },
+      {
+        "id": "leech",
+        "x": 2,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 15,
+        "skill": [],
+      },
+      "3": {
+        "health": 17,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "27041": {
+    "id": "27041",
+    "name": "Savage Angel",
+    "picture": "Feral_Angel_B",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "6",
+    "attack": 5,
+    "health": 19,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 3,
+        "y": "6",
+        "z": 6,
+      },
+      {
+        "id": "leech",
+        "x": 4,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 20,
+        "skill": [],
+      },
+      "3": {
+        "attack": 6,
+        "health": 21,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
           },
         ],
       },
@@ -58964,7 +60156,7 @@ var CARDS = {
   "277": {
     "id": "277",
     "name": "Royal Engineer",
-    "picture": "portrait_frogemperor",
+    "picture": "NotFound",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -60263,6 +61455,84 @@ var CARDS = {
         ],
       },
     }
+  },
+  "9998": {
+    "id": "9998",
+    "name": "New 1 (S)",
+    "picture": "New1_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": 0,
+    "health": 1,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19998": {
+    "id": "19998",
+    "name": "New 1 (D)",
+    "picture": "New1_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": 0,
+    "health": 1,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {}
+  },
+  "29998": {
+    "id": "29998",
+    "name": "New 1 (Q)",
+    "picture": "New1_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": 0,
+    "health": 1,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9999": {
+    "id": "9999",
+    "name": "New 2 (S)",
+    "picture": "New2_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": 0,
+    "health": 1,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19999": {
+    "id": "19999",
+    "name": "New 2 (D)",
+    "picture": "New2_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": 0,
+    "health": 1,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {}
+  },
+  "29999": {
+    "id": "29999",
+    "name": "New 2 (Q)",
+    "picture": "New2_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": 0,
+    "health": 1,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {}
   },
 };
 var MISSIONS = {
@@ -66339,6 +67609,9 @@ var FUSIONS = {
   "15038" : "25038",
   "15039" : "25039",
   "15040" : "25040",
+  "15041" : "25041",
+  "15042" : "25042",
+  "15043" : "25043",
   "1600" : "11600",
   "16000" : "26000",
   "16001" : "26001",
@@ -66385,6 +67658,8 @@ var FUSIONS = {
   "16039" : "26039",
   "1604" : "11604",
   "16040" : "26040",
+  "16041" : "26041",
+  "16042" : "26042",
   "1605" : "11605",
   "1606" : "11606",
   "1607" : "11607",
@@ -66449,6 +67724,8 @@ var FUSIONS = {
   "17038" : "27038",
   "17039" : "27039",
   "17040" : "27040",
+  "17041" : "27041",
+  "17042" : "27042",
   "18000" : "28000",
   "18001" : "28001",
   "18002" : "28002",
@@ -66528,6 +67805,9 @@ var FUSIONS = {
   "5038" : "15038",
   "5039" : "15039",
   "5040" : "15040",
+  "5041" : "15041",
+  "5042" : "15042",
+  "5043" : "15043",
   "6000" : "16000",
   "6001" : "16001",
   "6002" : "16002",
@@ -66569,6 +67849,8 @@ var FUSIONS = {
   "6038" : "16038",
   "6039" : "16039",
   "6040" : "16040",
+  "6041" : "16041",
+  "6042" : "16042",
   "7000" : "17000",
   "7001" : "17001",
   "7002" : "17002",
@@ -66610,6 +67892,8 @@ var FUSIONS = {
   "7038" : "17038",
   "7039" : "17039",
   "7040" : "17040",
+  "7041" : "17041",
+  "7042" : "17042",
   "8000" : "18000",
   "8001" : "18001",
   "8002" : "18002",
