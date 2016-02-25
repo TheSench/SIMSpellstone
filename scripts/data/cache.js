@@ -67967,7 +67967,7 @@ var BATTLEGROUNDS = [
       "skill": [
         {
           "id": "rally",
-          "mult": 0.2,
+          "mult": 0.5,
           "y": "5",
           "z": 5,
           "all": "1",

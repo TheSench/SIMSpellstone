@@ -302,7 +302,7 @@ battleground[] battlegrounds = new battleground[] {
 		Effects = new skill[] {
 			new skill() {
 				id = "rally",
-				mult = "0.2",
+				mult = "0.5",
 				y = ((int)FactionIDs.Elemental).ToString(),
 				all = "1",
 			},
