@@ -608,6 +608,10 @@ var DeckRetriever = (function () {
         for (var i in units) {
             var unit = units[i];
             var unit_info = makeUnitInfo(unit.unit_id, unit.level);
+            var runes = unit.runes;
+            for (var key in runes) {
+                unit_info.runes.push({ id: runes[key].item_id });
+            }
             unit_info.index = unit.unit_index;
             deck.deck.push(unit_info);
         }
