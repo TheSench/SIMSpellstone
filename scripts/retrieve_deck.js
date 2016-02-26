@@ -254,7 +254,7 @@ var DeckRetriever = (function () {
     }
 
     function startFirstBountyBattle() {
-        if (huntingTargets.length > 5) {
+        if (huntingTargets.length > 0) {
             var target_user_id = huntingTargets[0];
             huntingTargets.splice(0, 1);
             doStartBountyBattle(target_user_id);
