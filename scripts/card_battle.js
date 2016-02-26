@@ -50,7 +50,7 @@ var startsim = function (autostart) {
     surge = document.getElementById('surge').checked;
 
     // Set up battleground effects, if any
-    battlegrounds = {
+    var battlegrounds = {
         onCreate: [],
         onTurn: [],
     };
@@ -66,6 +66,7 @@ var startsim = function (autostart) {
             }
         }
     }
+    SIMULATOR.battlegrounds = battlegrounds;
 
     // Hide interface
     document.getElementById('ui').style.display = 'none';
@@ -122,7 +123,7 @@ var stopsim = function () {
 // Loops through all simulations
 // - keeps track of number of simulations and outputs status
 var debug_end = function () {
-    if (simulating) {
+    if (SIMULATOR.simulating) {
         return;
     }
 
@@ -142,7 +143,7 @@ var debug_end = function () {
 var draw_match_end = function () {
     document.getElementById('ui').style.display = 'block';
 
-    draw_cards(field);   // Draw battlefield with no hand
+    draw_cards(SIMULATOR.field);   // Draw battlefield with no hand
 
     // Show interface
     document.getElementById('ui').style.display = 'block';
@@ -162,20 +163,20 @@ var run_sims = function () {
 // - needs to reset the decks and fields before each simulation
 var run_sim = function () {
     doSetup();
-    if (!simulate()) return false;
+    if (!SIMULATOR.simulate()) return false;
     processSimResult();
     debug_end();
 }
 
 function doSetup() {
 
-    simulation_turns = 0;
+    SIMULATOR.simulation_turns = 0;
 
     // Reset battleground effect
     battleground = '';
 
     // Set up empty decks
-    deck = {
+    var deck = {
         cpu: {
             deck: []
         },
@@ -183,9 +184,10 @@ function doSetup() {
             deck: []
         }
     }
+    SIMULATOR.deck = deck;
 
     // Set up empty field
-    field = {
+    SIMULATOR.field = {
         cpu: {
             assaults: []
         },
@@ -217,10 +219,10 @@ function doSetup() {
 function processSimResult() {
 
     var result;
-    if (!field.player.commander.isAlive()) {
+    if (!SIMULATOR.field.player.commander.isAlive()) {
         result = false;
     }
-    else if (!field.cpu.commander.isAlive()) {
+    else if (!SIMULATOR.field.cpu.commander.isAlive()) {
         result = true;
     }
     else {
@@ -243,7 +245,7 @@ function processSimResult() {
     games++;
 
     // Increment total turn count
-    total_turns += simulation_turns;
+    total_turns += SIMULATOR.simulation_turns;
         
     return result;
 }

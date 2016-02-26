@@ -1,14 +1,15 @@
 "use strict";
 
-if (simulator_thread) {
+var SIMULATOR = {};
+if (simulator_thread) (function () {
 
     //50% proc function
-    var roll_proc = function () {
+    function roll_proc() {
         return Math.round(Math.random() * 1) == 1;
     };
 
     // Play card
-    var play_card = function (card, p, quiet) {
+    function play_card(card, p, quiet) {
         var field_p_assaults = field[p]['assaults'];
 
         // Store plays
@@ -28,7 +29,7 @@ if (simulator_thread) {
         if (debug && !quiet) echo += debug_name(field[p].commander) + ' plays ' + debug_name(card) + '<br>';
     };
 
-    var initializeCard = function (card, p, newKey) {
+    function initializeCard(card, p, newKey) {
         card.owner = p;
         card.timer = card.cost;
         card.health_left = card.health;
@@ -46,15 +47,15 @@ if (simulator_thread) {
         card.key = newKey;
         if (!card.reusableSkills) card.resetTimers();
     }
-
+    
     // Dead cards are removed from both fields. Cards on both fields all shift over to the left if there are any gaps.
-    var remove_dead = function () {
+    function remove_dead() {
         remove_dead_cards('player');
         remove_dead_cards('cpu');
     };
 
     // Shift over to the left if there are any gaps.
-    var remove_dead_cards = function (p) {
+    function remove_dead_cards(p) {
         var units = field[p].assaults
         // Find first dead unit (don't need to update the keys of any units before this one)
         for (var key = 0, len = units.length; key < len; key++) {
@@ -89,23 +90,23 @@ if (simulator_thread) {
     };
 
     // Picks one target by random
-    var choose_random_target = function (targets) {
+    function choose_random_target(targets) {
         var targetIndex = ~~(Math.random() * targets.length)
         return [targets[targetIndex]];
     };
 
-    var get_p = function (card) {
+    function get_p(card) {
         return card.owner;
     };
 
-    var get_o = function (card) {
+    function get_o(card) {
         if (card.owner == 'cpu') return 'player';
         if (card.owner == 'player') return 'cpu';
     };
 
     // Deal damage to card
     // and keep track of cards that have died this turn
-    var do_damage = function (card, damage) {
+    function do_damage(card, damage) {
         if (damage >= card.health_left) {
             card.health_left = 0;
         } else {
@@ -113,12 +114,12 @@ if (simulator_thread) {
         }
     };
 
-    var getEnhancement = function (card, s) {
+    function getEnhancement(card, s) {
         var enhancements = card.enhanced;
-        return (enhancements ? (enhancements[s]|0) : 0);
+        return (enhancements ? (enhancements[s] | 0) : 0);
     };
 
-    var iceshatter = function (src_card) {
+    function iceshatter(src_card) {
         // Bug 27391 - If Barrier is partially reduced before being completely depleted, Iceshatter still deals full damage
         var amount = src_card.barrier_ice;
         //if (amount > src_card.barrier_ice) amount = src_card.barrier_ice;
@@ -136,7 +137,7 @@ if (simulator_thread) {
     };
 
     // Empower, Legion, and Fervor all activate at the beginning of the turn, after commander
-    var empower_skills = function (field_p) {
+    function empower_skills(field_p) {
         doEmpower(field_p.commander);
         var field_p_assaults = field_p.assaults;
         for (var unit_key = 0, unit_len = field_p_assaults.length; unit_key < unit_len; unit_key++) {
@@ -147,7 +148,7 @@ if (simulator_thread) {
         }
     };
 
-    var doEmpower = function (source_card) {
+    function doEmpower(source_card) {
 
         var dualStrike = source_card.flurry && !source_card.flurry.countdown && source_card.hasAttack();
         if (debug && dualStrike) {
@@ -179,7 +180,7 @@ if (simulator_thread) {
         // - Can target specific faction
         // - Targets allied assaults
         // - Can be enhanced
-        protect_ice: function(src_card, skill) {
+        protect_ice: function (src_card, skill) {
             activationSkills.protect(src_card, skill, true);
         },
         protect: function (src_card, skill, ice) {
@@ -827,7 +828,7 @@ if (simulator_thread) {
 
     // Activation Skills
     // - Must traverse through skills from top to bottom
-    var activation_skills = function (src_card) {
+    function activation_skills(src_card) {
 
         var skills = src_card.skill;
 
@@ -849,7 +850,7 @@ if (simulator_thread) {
     };
 
     // Simulate one game
-    var simulate = function () {
+    function simulate() {
         simulating = true;
         damage_taken = 0;
         damage_dealt = 0;
@@ -874,19 +875,19 @@ if (simulator_thread) {
         setupField(field);
 
         if (getsiege) {
-            var tower = makeUnitInfo(601 + parseInt(tower_type), parseInt(tower_level)-1);
+            var tower = makeUnitInfo(601 + parseInt(tower_type), parseInt(tower_level) - 1);
             var towerCard = get_card_apply_battlegrounds(tower);
             play_card(towerCard, 'cpu', true);
         }
 
         return performTurns(0);
     };
-
-    var setupDecks = function () {
+    
+    function setupDecks() {
         doSetupDecks();
     }
-
-    var doSetupDecks = function () {
+    
+    function doSetupDecks() {
         // Cache decks where possible
         // Load player deck
         if (getdeck) {
@@ -900,7 +901,7 @@ if (simulator_thread) {
 
         totalDeckHealth = 0;
         totalDeckHealth += cache_player_deck_cards.commander.health;
-        for(var i = 0; i < cache_player_deck_cards.deck.length; i++) {
+        for (var i = 0; i < cache_player_deck_cards.deck.length; i++) {
             totalDeckHealth += cache_player_deck_cards.deck[i].health;
         }
 
@@ -925,7 +926,7 @@ if (simulator_thread) {
         }
     }
 
-    var setupField = function (field) {
+    function setupField(field) {
         // Initialize player Commander on the field
         var field_player = field.player;
         var field_player_commander = deck.player.commander;
@@ -943,7 +944,7 @@ if (simulator_thread) {
         if (!field_cpu_commander.reusableSkills) field_cpu_commander.resetTimers();
     }
 
-    var performTurns = function (turn) {
+    function performTurns(turn) {
         var done = performTurnsInner(turn);
         if (done && user_controlled) {
             debug_end();
@@ -951,7 +952,7 @@ if (simulator_thread) {
         return done;
     }
 
-    var performTurnsInner = function (turn) {
+    function performTurnsInner(turn) {
         // Set up players
         var first_player, second_player;
         if (surge) {
@@ -997,7 +998,7 @@ if (simulator_thread) {
         return true;
     }
 
-    var performTurn = function (turn, field, first_player, second_player, redraw) {
+    function performTurn(turn, field, first_player, second_player, redraw) {
         if (turn % 2) {
             var p = first_player;
             var o = second_player;
@@ -1014,7 +1015,7 @@ if (simulator_thread) {
         }
     }
 
-    var setup_turn = function (turn, first_player, second_player, field) {
+    function setup_turn(turn, first_player, second_player, field) {
         simulation_turns = turn;
 
         if (user_controlled) choice = (auto_mode ? 0 : undefined);
@@ -1045,8 +1046,8 @@ if (simulator_thread) {
         }
     }
 
-    var choose_card = function (p, turn, redraw) {
-        
+    function choose_card(p, turn, redraw) {
+
         var deck_p = deck[p];
         var deck_p_deck = deck_p.deck;
         var deck_p_ordered = deck_p['ordered'];
@@ -1056,106 +1057,24 @@ if (simulator_thread) {
 
             var card_picked = 0;
 
-            if (user_controlled && p == 'player') {
-                // Prepare 3-card hand
-                var hand = deck_p_deck.slice(0, 3);
-                var cardsInHand = [];
-                var drawableHand = [];
-                for (var handIdx = 0, hand_len = hand.length; handIdx < hand_len; handIdx++)
-                {
-                    var card = hand[handIdx];
-                    var text = handIdx + ": " + card['name'];
-                    if (card.maxLevel > 1) text += '{' + card.level + '/' + card.maxLevel + '}';
-                    cardsInHand.push(text);
-                    drawableHand.push(card);
-                }
-                if (redraw) {
-                    outp(echo);
-                    draw_cards(field, drawableHand, performTurns, turn);
-                    scroll_to_end();
-                }
-                if (choice === undefined) return false;
-                card_picked = choice;
-                if (!card_picked) card_picked = 0;
-                play_card(deck_p_deck[card_picked], p);
+            if (deck_p_deck.length == 1) {
+                // Play first card in hand
+                card_picked = 0;
+            } else if (user_controlled && p == 'player') {
+                card_picked = chooseCardUserManually(p, deck_p_deck, deck_p_ordered, redraw);
             } else if (deck_p_ordered) {
-                // Prepare 3-card hand
-                var hand = deck_p_deck.slice(0, 3);
-
-                // Play highest priority card
-                var played = false;
-                for (var orderIdx = 0, deck_len = deck_p_ordered.length; orderIdx < deck_len; orderIdx++) {
-                    var desiredCard = deck_p_ordered[orderIdx];
-
-                    // Get advanced priority
-                    var priority_id = desiredCard.priority;
-
-                    var samePriority = -1;
-                    var cardInHand
-                    for (var handIdx = 0, hand_len = hand.length; handIdx < hand_len; handIdx++) {
-                        cardInHand = hand[handIdx];
-                        var b_priority = cardInHand.priority;
-
-                        // If this is the exact card at this spot
-                        if (desiredCard == cardInHand) {
-                            played = true;
-                            break;
-                        }
-                            // Compare advanced priority field
-                        else if (priority_id > 0) {
-                            if (priority_id == b_priority) {
-                                samePriority = handIdx;
-                            }
-                        }
-                    }
-                    // If we didnt' find exact card, but found one of the same priority, pick that one
-                    if (!played && samePriority >= 0) {
-                        played = true;
-                        handIdx = samePriority;
-                        cardInHand = hand[handIdx];
-                    }
-                    // If we found the desired card, play it, otherwise move on to the next desired card
-                    if (played) {
-                        for (var len = deck_p_ordered.length - 1; orderIdx < len; orderIdx++) {
-                            deck_p_ordered[orderIdx] = deck_p_ordered[orderIdx + 1];
-                        }
-                        deck_p_ordered.length = orderIdx;
-                        card_picked = handIdx;
-                        play_card(cardInHand, p);
-                        break;
-                    }
-                }
+                card_picked = chooseCardOrdered(p, deck_p_deck, deck_p_ordered, redraw);
             } else {
-                if (deck_p_deck.length > 1 /*&& deck_p.shuffleHand*/) {
-                    // Play random card in hand
-                    var hand = deck_p_deck.slice(0, 3);
-                    if (p == 'player' || !smartAI) {
-                        card_picked = ~~(Math.random() * deck_p_deck.slice(0, 3).length);
-                    } else {
-                        // Play card in hand with most upgrade points
-                        var best = [];
-                        var bestRank = 0;
-                        for (var i = 0; i < hand.length; i++) {
-                            var card = hand[i];
-                            var rank = getCardRanking(card);
-                            if (!bestRank) {
-                                bestRank = rank;
-                                best.push(i);
-                            } else if (rank == bestRank) {
-                                best.push(i);
-                            } else if (rank > bestRank) {
-                                bestRank = rank;
-                                best = [i];
-                            }
-                        }
-                        card_picked = best[~~(Math.random() * best.length)];
-                    }
+                // Play random card in hand
+                var hand = deck_p_deck.slice(0, 3);
+                if (p == 'player' || !smartAI) {
+                    card_picked = chooseCardRandomly(p, deck_p_deck, deck_p_ordered, redraw);
                 } else {
-                    // Play first card in hand
-                    card_picked = 0;
+                    card_picked = chooseCardByPoints(p, deck_p_deck, deck_p_ordered, redraw);
                 }
-                play_card(deck_p_deck[card_picked], p);
             }
+
+            if (card_picked < 0) return false;
 
             // Remove from deck
             var key = card_picked;
@@ -1167,7 +1086,117 @@ if (simulator_thread) {
         return true;
     };
 
-    var getCardRanking = function(card) {
+    function chooseCardUserManually(p, shuffledDeck, orderedDeck, redraw) {
+        // Prepare 3-card hand
+        var hand = shuffledDeck.slice(0, 3);
+        var cardsInHand = [];
+        var drawableHand = [];
+        for (var handIdx = 0, hand_len = hand.length; handIdx < hand_len; handIdx++) {
+            var card = hand[handIdx];
+            var text = handIdx + ": " + card['name'];
+            if (card.maxLevel > 1) text += '{' + card.level + '/' + card.maxLevel + '}';
+            cardsInHand.push(text);
+            drawableHand.push(card);
+        }
+        if (redraw) {
+            outp(echo);
+            draw_cards(field, drawableHand, performTurns, turn);
+            scroll_to_end();
+        }
+        if (choice === undefined) {
+            return -1;
+        } else {
+            var card_picked = choice;
+            if (!card_picked) card_picked = 0;
+            play_card(shuffledDeck[card_picked], p);
+            return card_picked;
+        }
+    }
+
+    function chooseCardOrdered(p, shuffledDeck, orderedDeck, redraw) {
+        // Prepare 3-card hand
+        var hand = shuffledDeck.slice(0, 3);
+
+        // Play highest priority card
+        var played = false;
+        for (var orderIdx = 0, deck_len = orderedDeck.length; orderIdx < deck_len; orderIdx++) {
+            var desiredCard = orderedDeck[orderIdx];
+
+            // Get advanced priority
+            var priority_id = desiredCard.priority;
+
+            var samePriority = -1;
+            var cardInHand
+            for (var handIdx = 0, hand_len = hand.length; handIdx < hand_len; handIdx++) {
+                cardInHand = hand[handIdx];
+                var b_priority = cardInHand.priority;
+
+                // If this is the exact card at this spot
+                if (desiredCard == cardInHand) {
+                    played = true;
+                    break;
+                }
+                    // Compare advanced priority field
+                else if (priority_id > 0) {
+                    if (priority_id == b_priority) {
+                        samePriority = handIdx;
+                    }
+                }
+            }
+            // If we didnt' find exact card, but found one of the same priority, pick that one
+            if (!played && samePriority >= 0) {
+                played = true;
+                handIdx = samePriority;
+                cardInHand = hand[handIdx];
+            }
+            // If we found the desired card, play it, otherwise move on to the next desired card
+            if (played) {
+                for (var len = orderedDeck.length - 1; orderIdx < len; orderIdx++) {
+                    orderedDeck[orderIdx] = orderedDeck[orderIdx + 1];
+                }
+                orderedDeck.length = orderIdx;
+                play_card(cardInHand, p);
+                return handIdx;
+            }
+        }
+        return -1;
+    }
+
+    function chooseCardRandomly(p, shuffledDeck, orderedDeck, redraw) {
+        // Prepare 3-card hand
+        var hand = shuffledDeck.slice(0, 3);
+
+        var card_picked = (~~(Math.random() * hand.length));
+        play_card(shuffledDeck[card_picked], p);
+        return card_picked;
+    }
+
+    function chooseCardByPoints(p, shuffledDeck, orderedDeck, redraw) {
+        // Prepare 3-card hand
+        var hand = shuffledDeck.slice(0, 3);
+
+        // Play card in hand with most upgrade points
+        var best = [];
+        var bestRank = 0;
+        for (var i = 0; i < hand.length; i++) {
+            var card = hand[i];
+            var rank = getCardRanking(card);
+            if (!bestRank) {
+                bestRank = rank;
+                best.push(i);
+            } else if (rank == bestRank) {
+                best.push(i);
+            } else if (rank > bestRank) {
+                bestRank = rank;
+                best = [i];
+            }
+        }
+        var card_picked = (best[~~(Math.random() * best.length)]);
+        play_card(shuffledDeck[card_picked], p);
+        return card_picked;
+    }
+
+    function getCardRanking(card) {
         var cardID = card.id.toString();
         // Each rarity level is worth 6 points
         var rarity = parseInt(card.rarity) * 6;
@@ -1181,7 +1210,7 @@ if (simulator_thread) {
         return ranking;
     }
 
-    var play_turn = function (p, o, field) {
+    function play_turn(p, o, field) {
 
         var field_p = field[p];
         var field_p_commander = field_p['commander'];
@@ -1298,19 +1327,19 @@ if (simulator_thread) {
             current_assault.attack_weaken = 0;
         }
 
-        //debug_dump_field();
+        //debug_dump_field(field);
         if (debug) echo += '<u>Turn ' + turn + ' ends</u><br><br><hr><br>';
     };
 
-    var doCountDowns = function (unit) {
+    function doCountDowns(unit) {
         doSkillCountDowns(unit.skill);
         doSkillCountDowns(unit.empowerSkills);
 
         var dualStrike = unit.flurry;
         if (dualStrike && dualStrike.countdown) dualStrike.countdown--;
     }
-
-    var doSkillCountDowns = function (skills) {
+    
+    function doSkillCountDowns(skills) {
         for (var i = 0, len = skills.length; i < len; i++) {
             var skill = skills[i];
             if (skill.countdown) {
@@ -1321,7 +1350,7 @@ if (simulator_thread) {
         }
     }
 
-    var processDOTs = function (field_p_assaults) {
+    function processDOTs(field_p_assaults) {
         // Poison/Scorch damage
         for (var key = 0, len = field_p_assaults.length; key < len; key++) {
             var current_assault = field_p_assaults[key];
@@ -1352,7 +1381,7 @@ if (simulator_thread) {
         }
     };
 
-    var doAttack = function (current_assault, field_o_assaults, field_o_commander) {
+    function doAttack(current_assault, field_o_assaults, field_o_commander) {
 
         // -- START ATTACK SEQUENCE --
         var target = field_o_assaults[current_assault.key];
@@ -1389,7 +1418,7 @@ if (simulator_thread) {
         var protect = target.protected;
         var shatter = false;
         var armor = target.armored;
-        if(armor) {
+        if (armor) {
             var enhanced = getEnhancement(target, 'armored');
             if (enhanced) {
                 armor += enhanced;
@@ -1572,7 +1601,7 @@ if (simulator_thread) {
         // -- END OF STATUS INFLICTION --
     };
 
-    var updateStats = function (result, points) {
+    function updateStats(result, points) {
         var hash = hash_encode({ commander: cache_player_deck.commander, deck: plays }, false);
         var order_stats = orders[hash];
         if (!order_stats) {
@@ -1597,9 +1626,8 @@ if (simulator_thread) {
         }
         order_stats.points += points;
     };
-
-
-    var CalculatePoints = function () {
+    
+    function CalculatePoints() {
         var uids = field.uids;
         if (uids) {
             for (var i in uids) {
@@ -1644,7 +1672,6 @@ if (simulator_thread) {
     var field = [];
     var battlegrounds;
     var simulation_turns = 0;
-    var time_start_batch = 0;
     var simulating = false;
     var turn = 0;
     var damage_taken = 0;
@@ -1652,4 +1679,86 @@ if (simulator_thread) {
     var plays = [];
     var totalDeckHealth = 0;
     var totalCpuDeckHealth = 0;
-}
+
+    // public functions
+    SIMULATOR.initializeCard = initializeCard;
+    SIMULATOR.simulate = simulate;
+    SIMULATOR.updateStats = updateStats;
+    SIMULATOR.CalculatePoints = CalculatePoints;
+    // public variables
+    Object.defineProperties(SIMULATOR, {
+        "setupDecks": { 
+            get: function() { 
+                return setupDecks; 
+            }, 
+            set: function(value) {
+                setupDecks = value;
+            }
+        },
+        "setupField": { 
+            get: function() { 
+                return setupField; 
+            }, 
+            set: function(value) {
+                setupField = value;
+            }
+        },
+        "deck": { 
+            get: function() { 
+                return deck; 
+            }, 
+            set: function(value) {
+                deck = value;
+            }
+        },
+        "field": {
+            get: function() { 
+                return field;
+            }, 
+            set: function(value) {
+                field = value;
+            }
+        },
+        "battlegrounds": {
+            get: function() { 
+                return battlegrounds;
+            }, 
+            set: function(value) {
+                battlegrounds = value;
+            }
+        },
+        "battlegrounds": {
+            get: function() { 
+                return battlegrounds;
+            }, 
+            set: function(value) {
+                battlegrounds = value;
+            }
+        },
+        "simulation_turns": {
+            get: function() { 
+                return simulation_turns;
+            }, 
+            set: function(value) {
+                simulation_turns = value;
+            }
+        },
+        "totalDeckHealth": {
+            get: function() { 
+                return totalDeckHealth;
+            }, 
+            set: function(value) {
+                totalDeckHealth = value;
+            }
+        },
+        "totalCpuDeckHealth": {
+            get: function() { 
+                return totalCpuDeckHealth;
+            }, 
+            set: function(value) {
+                totalCpuDeckHealth = value;
+            }
+        }
+    });
+    SIMULATOR.simulating = simulating;
+})();
