@@ -432,19 +432,21 @@ var BATTLE_PROCESSOR = (function () {
                 //outputTrackedCards();
                 outputTrackedStats();
             }
-
-            setTimeout(function () {
-                if (_DEFINED("spam")) {
-                    if (continues > 0) {
-                        module.fight(true);
-                    } else {
-                        lastID++;
-                        module.fight(false);
+            
+            if (battleType = document.getElementById("battleType").value != "resumeBattle") {
+                setTimeout(function () {
+                    if (_DEFINED("spam")) {
+                        if (continues > 0) {
+                            module.fight(true);
+                        } else {
+                            lastID++;
+                            module.fight(false);
+                        }
+                    } else if (_DEFINED("auto")) {
+                        module.fight();
                     }
-                } else if (_DEFINED("auto")) {
-                    module.fight();
-                }
-            }, 1000);
+                }, 1000);
+            }
         }
     }
 
