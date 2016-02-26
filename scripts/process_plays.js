@@ -35,14 +35,11 @@ var BATTLE_PROCESSOR = (function () {
     var noCapTimer = null;
     function noEnergy(response) {
         var battleType = document.getElementById("battleType").value;
-        if (battleType == "startClashBattle") {
-            document.getElementById("battleType").value = "startCampaignBattle";
-            module.fight();
-        } else if (battleType == "startCampaignBattle") {
+        if (battleType == "startCampaignBattle") {
             document.getElementById("battleType").value = "startBountyBattle";
             module.fight();
         } else if (battleType == "startBountyBattle") {
-            document.getElementById("battleType").value = "startClashBattle";
+            document.getElementById("battleType").value = "startCampaignBattle";
             // Alert when the next check will be
             var addTime = 1000 * 60 * 60 * 3;
             var nextTime = Date.now() + addTime;
