@@ -52,10 +52,8 @@ if (use_workers) {
                     var num_losses = view[3];
                     var turns = view[4];
                     var points = view[5];
-                    view = new DataView(msg, 28, 8);
-                    var time_started = view.getFloat64(0);
                     // If a worker's echo is included in results...
-                    if (msg.byteLength > 36) {
+                    if (msg.byteLength > 28) {
                         // ... convert it from a byte array to a string
                         var view = new Uint16Array(msg, 36);
                         var chararray = [];
@@ -145,7 +143,6 @@ if (use_workers) {
                     var num_losses = results[3];
                     var turns = results[4];
                     var points = results[5];
-                    var time_started = results[6];
                     var worker_echo = results[7];
                     if (worker_echo) {
                         echo += worker_echo;
@@ -515,11 +512,11 @@ if (use_workers) {
             var remainingSims = num_sims - (sims_per_worker * max_workers);
             var worker_index = 0;
             for (; worker_index < remainingSims; worker_index++) {  // Start a new batch
-                workers[worker_index].postMessage({ 'cmd': 'run_sims', 'data': [sims_per_worker + 1, time_start_batch] });
+                workers[worker_index].postMessage({ 'cmd': 'run_sims', 'data': [sims_per_worker + 1] });
             }
             if (sims_per_worker) {
                 for (; worker_index < max_workers; worker_index++) {  // Start a new batch
-                    workers[worker_index].postMessage({ 'cmd': 'run_sims', 'data': [sims_per_worker, time_start_batch] });
+                    workers[worker_index].postMessage({ 'cmd': 'run_sims', 'data': [sims_per_worker] });
                 }
             }
         }

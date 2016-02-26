@@ -64,7 +64,7 @@ if (!use_workers) {
         surge = document.getElementById('surge').checked;
 
         // Set up battleground effects, if any
-        battlegrounds = {
+        var battlegrounds = {
             onCreate: [],
             onTurn: [],
         };
@@ -80,6 +80,7 @@ if (!use_workers) {
                 }
             }
         }
+
         if (getraid) {
             var bge_id = RAIDS[getraid].bge;
             if (bge_id) {
@@ -111,6 +112,7 @@ if (!use_workers) {
                 }
             }
         }
+        SIMULATOR.battlegrounds = battlegrounds;
 
         // Hide interface
         document.getElementById('ui').style.display = 'none';
@@ -118,7 +120,7 @@ if (!use_workers) {
         // Display stop button
         document.getElementById('stop').style.display = 'block';
 
-        setupDecks();
+        SIMULATOR.setupDecks();
 
         max_turns = 50;
 
@@ -145,7 +147,7 @@ if (!use_workers) {
 
         outp(echo + '<strong>Simulations interrupted.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>' + gettable());
         if (user_controlled) {
-            draw_cards(field);
+            draw_cards(SIMULATOR.field);
         }
         // Show interface
         document.getElementById('ui').style.display = 'block';
@@ -157,7 +159,7 @@ if (!use_workers) {
     // Loops through all simulations
     // - keeps track of number of simulations and outputs status
     var debug_end = function () {
-        if (simulating) {
+        if (SIMULATOR.simulating) {
             return;
         }
 
@@ -172,7 +174,7 @@ if (!use_workers) {
         } else {
             outp(echo + '<br><h1>LOSS</h1><br>' + gettable());
         }
-        draw_cards(field);
+        draw_cards(SIMULATOR.field);
 
         // Show interface
         document.getElementById('ui').style.display = 'block';
@@ -256,19 +258,19 @@ if (!use_workers) {
     // - needs to reset the decks and fields before each simulation
     var run_sim = function (skipResults) {
         doSetup();
-        if (!simulate()) return false;
+        if (!SIMULATOR.simulate()) return false;
         if (!skipResults) processSimResult();
     }
 
     function doSetup() {
 
-        simulation_turns = 0;
+        SIMULATOR.simulation_turns = 0;
 
         // Reset battleground effect
         battleground = '';
 
         // Set up empty decks
-        deck = {
+        var deck = {
             cpu: {
                 deck: []
             },
@@ -276,9 +278,10 @@ if (!use_workers) {
                 deck: []
             }
         }
+        SIMULATOR.deck = deck;
 
         // Set up empty field
-        field = {
+        var field = {
             cpu: {
                 assaults: []
             },
@@ -286,6 +289,7 @@ if (!use_workers) {
                 assaults: []
             }
         };
+        SIMULATOR.field = field;
 
         // Load player deck
         if (cache_player_deck_cards) {
@@ -312,10 +316,10 @@ if (!use_workers) {
     function processSimResult() {
 
         var result;
-        if (!field.player.commander.isAlive()) {
+        if (!SIMULATOR.field.player.commander.isAlive()) {
             result = false;
         }
-        else if (!field.cpu.commander.isAlive()) {
+        else if (!SIMULATOR.field.cpu.commander.isAlive()) {
             result = true;
         }
         else {
@@ -337,11 +341,11 @@ if (!use_workers) {
         }
         games++;
 
-        var points = CalculatePoints();
-        if (trackStats) updateStats(result, points);
+        var points = SIMULATOR.CalculatePoints();
+        if (trackStats) SIMULATOR.updateStats(result, points);
 
         // Increment total turn count
-        total_turns += simulation_turns;
+        total_turns += SIMULATOR.simulation_turns;
         total_points += points;
 
         if (debug) {
@@ -390,6 +394,8 @@ if (!use_workers) {
 
         return result;
     }
+
+    var initializeCard = SIMULATOR.initializeCard;
 
     // Global variables used by single-threaded simulator
     var run_sims_count = 0;

@@ -218,7 +218,7 @@ var BATTLE_PROCESSOR = (function () {
         }
 
         // Set up battleground effects, if any
-        battlegrounds = {
+        var battlegrounds = {
             onCreate: [],
             onTurn: [],
         };
@@ -234,6 +234,7 @@ var BATTLE_PROCESSOR = (function () {
                 }
             }
         }
+        SIMULATOR.battlegrounds = battlegrounds;
     }
 
     function resetField() {
@@ -256,8 +257,8 @@ var BATTLE_PROCESSOR = (function () {
     function startBattle(data) {
 
         suppressOutput = true;
-        setupField = function (field) { copyField(field, false); };
-        setupDecks = function () { doSetupDecks(); setDeckCaches(); };
+        SIMULATOR.setupField = function (field) { copyField(field, false); };
+        SIMULATOR.setupDecks = function () { doSetupDecks(); setDeckCaches(); };
         setupWorkerField = function (worker) { postField(worker); }
         end_sims_callback = function () {
             document.getElementById('ui').style.display = 'none';
