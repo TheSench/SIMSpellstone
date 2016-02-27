@@ -402,4 +402,5 @@ if (!use_workers) (function () {
     var run_sims_count = 0;
     var run_sims_batch = 0;
     SIM_CONTROLLER.end_sims_callback = false;
+    SIM_CONTROLLER.debug_end = debug_end;
 })();

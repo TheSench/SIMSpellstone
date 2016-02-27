@@ -928,7 +928,7 @@ if (simulator_thread) (function () {
     function performTurns(turn) {
         var done = performTurnsInner(turn);
         if (done && user_controlled) {
-            debug_end();
+            SIM_CONTROLLER.debug_end();
         }
         return done;
     }
@@ -1059,8 +1059,9 @@ if (simulator_thread) (function () {
 
             // Remove from deck
             var key = card_picked;
-            for (var len = deck_p_deck.length - 1; key < len; key++) {
-                deck_p_deck[key] = deck_p_deck[key + 1];
+            var len = deck_p_deck.length - 1;
+            while (key < len) {
+                deck_p_deck[key] = deck_p_deck[++key];
             }
             deck_p_deck.length = key;
         }
