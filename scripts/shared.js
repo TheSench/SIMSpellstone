@@ -14,6 +14,9 @@
 //	xmlhttp.send();
 //	return xmlhttp.responseText;
 //}
+Array.prototype.push = function (data) {
+    this[this.length] = data;
+};
 
 // GET variables
 function _GET(variable) {

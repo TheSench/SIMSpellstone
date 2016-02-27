@@ -249,6 +249,8 @@ var SIM_CONTROLLER;
 
         return result;
     }
+
+    SIM_CONTROLLER.debug_end = debug_end;
 })();
 
 var use_workers = false;
