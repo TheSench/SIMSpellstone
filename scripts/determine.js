@@ -3,6 +3,7 @@
 var use_workers = false;
 var one_worker = false;
 var simulator_thread = true;
+var max_workers = 0;
 
 // If the browser doesn't support Workers (IE9 and before)
 if (typeof(Worker) === "undefined") {

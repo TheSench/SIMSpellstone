@@ -1,8 +1,9 @@
 "use strict";
 
-var SIM_CONTROLLER = {};
+var SIM_CONTROLLER;
 
 if (use_workers) (function () {
+    SIM_CONTROLLER = {};
 
     // Global variables needed by the GUI thread when workers are used
     SIM_CONTROLLER.max_workers = 1;
@@ -474,7 +475,7 @@ if (use_workers) (function () {
         document.getElementById('stop').style.display = 'none';
     }
 
-    setupWorkerField = function () { };
+    function setupWorkerField() { };
     
     // Loops through all simulations
     // - keeps track of number of simulations and outputs status

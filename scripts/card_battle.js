@@ -1,8 +1,10 @@
 "use strict";
 
-var SIM_CONTROLLER = {};
+var SIM_CONTROLLER;
 
 (function () {
+    SIM_CONTROLLER = {};
+
     // Initialize simulation loop - runs once per simulation session
     SIM_CONTROLLER.startsim = function (autostart) {
         document.getElementById('ui').style.display = 'none';

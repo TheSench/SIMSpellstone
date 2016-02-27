@@ -1,8 +1,9 @@
 "use strict";
 
-var SIM_CONTROLLER = {};
+var SIM_CONTROLLER;
 
 if (!use_workers) (function () {
+    SIM_CONTROLLER = {};
 
     // Initialize simulation loop - runs once per simulation session
     SIM_CONTROLLER.startsim = function (autostart) {
@@ -165,7 +166,7 @@ if (!use_workers) (function () {
             return;
         }
 
-        result = processSimResult();
+        var result = processSimResult();
 
         time_stop = new Date();
 

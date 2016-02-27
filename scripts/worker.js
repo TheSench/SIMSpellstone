@@ -1,5 +1,7 @@
 "use strict";
 
+var SIM_CONTROLLER = {};
+
 self.addEventListener('message', ProcessMessage, false);
 
 // Handles the following messages from GUI thread:
@@ -520,7 +522,7 @@ function returnStatsStructuredCloning() {
 }
 
 // prevents new batches from starting until new simulation loop is started
-function SIM_CONTROLLER.stopsim() {
+SIM_CONTROLLER.stopsim = function (){
 	running = false;
 }
 
