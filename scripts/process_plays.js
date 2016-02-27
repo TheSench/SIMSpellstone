@@ -257,7 +257,7 @@ var BATTLE_PROCESSOR = (function () {
     }
 
     function startBattle(data) {
-
+        lastWinrate = 0;
         suppressOutput = true;
         setupField = function (field) { copyField(field, false); };
         setupDecks = function () { doSetupDecks(); setDeckCaches(); };
