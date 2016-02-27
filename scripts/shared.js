@@ -765,7 +765,7 @@ function debug_dump_cards(deck, player) {
 }
 
 // Dump field contents
-function debug_dump_field() {
+function debug_dump_field(field) {
     if (!debug) return;
 
     echo += '<font color="#666666">';
@@ -1514,7 +1514,7 @@ function fuseCard(cardID, fusion) {
 
 // Output card array
 var get_card_apply_battlegrounds = function (id) {
-    return get_card_by_id(id, battlegrounds.onCreate);
+    return get_card_by_id(id, SIMULATOR.battlegrounds.onCreate);
 }
 
 function get_skills(id, level) {
