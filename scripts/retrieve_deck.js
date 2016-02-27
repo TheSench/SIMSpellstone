@@ -35,12 +35,12 @@ var DeckRetriever = (function () {
     }
 
     function retrieveGuildDecks(draw, callback) {
-        clearDeckSpace();
+        CARD_GUI.clearDeckSpace();
         getFactionMembers(draw, callback);
     }
 
     function loadDeckFile(draw, callback) {
-        clearDeckSpace();
+        CARD_GUI.clearDeckSpace();
         getDecksfromFile(draw, callback);
     }
 
@@ -164,7 +164,7 @@ var DeckRetriever = (function () {
     }
 
     function retrieveMyDeck() {
-        clearDeckSpace();
+        CARD_GUI.clearDeckSpace();
         getUserDeck(baseRequest.user_id, true);
     }
 
@@ -208,7 +208,7 @@ var DeckRetriever = (function () {
     }
 
     function getFullUserData() {
-        clearDeckSpace();
+        CARD_GUI.clearDeckSpace();
         
         DisplayLoadingSplash();
         setTimeout(function () {
@@ -602,7 +602,7 @@ var DeckRetriever = (function () {
         useridDiv.style.fontWeight = "bold";
         div.appendChild(useridDiv);
 
-        div.appendChild(makeDeckHTML(deck));
+        div.appendChild(CARD_GUI.makeDeckHTML(deck));
         div.appendChild(document.createElement("br"));
         return div;
     }
@@ -654,7 +654,7 @@ var DeckRetriever = (function () {
         div.appendChild(document.createElement("br"));
         div.appendChild(document.createElement("br"));
         div.appendChild(nameDiv);
-        div.appendChild(makeDeckHTML(deck));
+        div.appendChild(CARD_GUI.makeDeckHTML(deck));
         div.appendChild(document.createElement("hr"));
         cardSpace.appendChild(div);
     }

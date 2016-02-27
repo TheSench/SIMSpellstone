@@ -25,7 +25,7 @@ function ProcessMessage(e) {
 			break;
 
         case 'stopsim':
-            stopsim();
+            SIM_CONTROLLER.stopsim();
             break;
 
 		case 'initializeWorker':
@@ -358,7 +358,7 @@ function initializeSims(params) {
 	loss_debug = params['loss_debug'];
 	win_debug = params['win_debug'];
 	mass_debug = params['mass_debug'];
-	user_controlled = params['user_controlled'];
+	SIMULATOR.user_controlled = params['user_controlled'];
 	trackStats = params['trackStats'];
 	card_cache = {};    // clear card cache to avoid memory bloat when simulating different decks
 
@@ -520,7 +520,7 @@ function returnStatsStructuredCloning() {
 }
 
 // prevents new batches from starting until new simulation loop is started
-function stopsim() {
+function SIM_CONTROLLER.stopsim() {
 	running = false;
 }
 
@@ -708,7 +708,6 @@ var raidlevel = 0;
 var trackStats = false;
 var getbattleground = 0;
 var getsiege = 0;
-var user_controlled = false;
 var tower_level = 0;
 var tower_type = 0;
 var smartAI = true;

@@ -28,25 +28,6 @@ if (simulator_thread) (function () {
 
         if (debug && !quiet) echo += debug_name(field[p].commander) + ' plays ' + debug_name(card) + '<br>';
     };
-
-    function initializeCard(card, p, newKey) {
-        card.owner = p;
-        card.timer = card.cost;
-        card.health_left = card.health;
-        // Setup status effects
-        card.attack_rally = 0;
-        card.attack_weaken = 0;
-        card.attack_berserk = 0;
-        card.poisoned = 0;
-        card.scorched = 0;
-        card.enfeebled = 0;
-        card.protected = 0;
-        card.barrier_ice = 0;
-        card.enhanced = 0;
-        card.jammed = false;
-        card.key = newKey;
-        if (!card.reusableSkills) card.resetTimers();
-    }
     
     // Dead cards are removed from both fields. Cards on both fields all shift over to the left if there are any gaps.
     function remove_dead() {
@@ -1061,16 +1042,16 @@ if (simulator_thread) (function () {
                 // Play first card in hand
                 card_picked = 0;
             } else if (user_controlled && p == 'player') {
-                card_picked = chooseCardUserManually(p, deck_p_deck, deck_p_ordered, redraw);
+                card_picked = chooseCardUserManually(p, deck_p_deck, deck_p_ordered, turn, redraw);
             } else if (deck_p_ordered) {
-                card_picked = chooseCardOrdered(p, deck_p_deck, deck_p_ordered, redraw);
+                card_picked = chooseCardOrdered(p, deck_p_deck, deck_p_ordered, turn, redraw);
             } else {
                 // Play random card in hand
                 var hand = deck_p_deck.slice(0, 3);
                 if (p == 'player' || !smartAI) {
-                    card_picked = chooseCardRandomly(p, deck_p_deck, deck_p_ordered, redraw);
+                    card_picked = chooseCardRandomly(p, deck_p_deck, deck_p_ordered, turn, redraw);
                 } else {
-                    card_picked = chooseCardByPoints(p, deck_p_deck, deck_p_ordered, redraw);
+                    card_picked = chooseCardByPoints(p, deck_p_deck, deck_p_ordered, turn, redraw);
                 }
             }
 
@@ -1086,7 +1067,7 @@ if (simulator_thread) (function () {
         return true;
     };
 
-    function chooseCardUserManually(p, shuffledDeck, orderedDeck, redraw) {
+    function chooseCardUserManually(p, shuffledDeck, orderedDeck, turn, redraw) {
         // Prepare 3-card hand
         var hand = shuffledDeck.slice(0, 3);
         var cardsInHand = [];
@@ -1100,7 +1081,7 @@ if (simulator_thread) (function () {
         }
         if (redraw) {
             outp(echo);
-            draw_cards(field, drawableHand, performTurns, turn);
+            CARD_GUI.draw_cards(field, drawableHand, performTurns, turn);
             scroll_to_end();
         }
         if (choice === undefined) {
@@ -1673,6 +1654,7 @@ if (simulator_thread) (function () {
     var battlegrounds;
     var simulation_turns = 0;
     var simulating = false;
+    var user_controlled = false;
     var turn = 0;
     var damage_taken = 0;
     var damage_dealt = 0;
@@ -1681,7 +1663,6 @@ if (simulator_thread) (function () {
     var totalCpuDeckHealth = 0;
 
     // public functions
-    SIMULATOR.initializeCard = initializeCard;
     SIMULATOR.simulate = simulate;
     SIMULATOR.updateStats = updateStats;
     SIMULATOR.CalculatePoints = CalculatePoints;
@@ -1743,6 +1724,14 @@ if (simulator_thread) (function () {
                 simulation_turns = value;
             }
         },
+        simulating: {
+            get: function() { 
+                return simulating;
+            }, 
+            set: function(value) {
+                simulating = value;
+            }
+        },
         "totalDeckHealth": {
             get: function() { 
                 return totalDeckHealth;
@@ -1758,7 +1747,14 @@ if (simulator_thread) (function () {
             set: function(value) {
                 totalCpuDeckHealth = value;
             }
+        },
+        user_controlled: {
+            get: function() { 
+                return user_controlled;
+            }, 
+            set: function(value) {
+                user_controlled = value;
+            }
         }
     });
-    SIMULATOR.simulating = simulating;
 })();

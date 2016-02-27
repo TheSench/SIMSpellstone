@@ -1,15 +1,15 @@
 "use strict";
 
-if (use_workers) {
+var SIM_CONTROLLER = {};
+
+if (use_workers) (function () {
 
     // Global variables needed by the GUI thread when workers are used
-    var workers = [];
-    var max_workers = 1;
-    var smoothing_factor = 5;	// Used by the progress reporting logic, determines how many .1 second intervals back to go for sims/sec calculations
-    var progress = false;
+    SIM_CONTROLLER.max_workers = 1;
+    SIM_CONTROLLER.end_sims_callback = false;
 
     // Create a new worker object and add a listener to handle messages from it.
-    var createWorker = function (id) {
+    function createWorker (id) {
         var worker = new Worker('scripts/worker.js');
         worker.postMessage = worker.webkitPostMessage || worker.postMessage;
         worker.id = id;
@@ -38,7 +38,7 @@ if (use_workers) {
     // Handle messages from the worker thread using Transferable Objects
     // (Transferable Objects are faster, but they are not supported
     // by all browsers.)
-    var ProcessTransferableObjectsMessage = function (e) {
+    function  ProcessTransferableObjectsMessage (e) {
         if (sims_left) {
             var msg = e.data;
             var view = new DataView(msg, 0, 4);
@@ -93,8 +93,8 @@ if (use_workers) {
                         var hash = chararray.join("");
                         var stats = {
                             games: view.getInt32(offset),
-                            wins: view.getInt32(offset+4),
-                            draws: view.getInt32(offset+8),
+                            wins: view.getInt32(offset + 4),
+                            draws: view.getInt32(offset + 8),
                             losses: view.getInt32(offset + 12),
                             points: view.getInt32(offset + 16),
                         }
@@ -109,28 +109,9 @@ if (use_workers) {
         }
     }
 
-    var initializeCard = function (card, p, newKey) {
-        card.owner = p;
-        card.timer = card.cost;
-        card.health_left = card.health;
-        // Setup status effects
-        card.attack_rally = 0;
-        card.attack_weaken = 0;
-        card.attack_berserk = 0;
-        card.poisoned = 0;
-        card.scorched = 0;
-        card.enfeebled = 0;
-        card.protected = 0;
-        card.barrier_ice = 0;
-        card.enhanced = 0;
-        card.jammed = false;
-        card.key = newKey;
-        if (!card.reusableSkills) card.resetTimers();
-    }
-
     // Handle messages from the worker thread using Structured Cloning
     // (used when Transferable Objects are NOT supported by the browser)
-    var ProcessStructuredCloningMessage = function (e) {
+    function  ProcessStructuredCloningMessage (e) {
         if (sims_left) {
             var msg = e.data;
             switch (msg.cmd) {
@@ -169,7 +150,7 @@ if (use_workers) {
         }
     }
 
-    var updateStats = function (hash, update) {
+    function updateStats(hash, update) {
         var existing = orders[hash];
         if (!existing) {
             orders[hash] = update;
@@ -181,9 +162,9 @@ if (use_workers) {
             existing.points += update.points;
         }
     }
-
+    
     // Update the GUI with the current status (sims/sec, % complete, etc...)
-    var display_progress = function () {
+    function display_progress() {
         // If stopsims was called, don't display any more output
         if (sims_left > 0) {
             if (progress) {
@@ -199,7 +180,7 @@ if (use_workers) {
                     simpersecbatch = batch_size / batch_elapse;
                 }
                 simpersecbatch = simpersecbatch.toFixed(1);
-                if (suppressOutput && end_sims_callback && !trackStats) {
+                if (suppressOutput && SIM_CONTROLLER.end_sims_callback && !trackStats) {
                     outp(echo + '<strong>Running simulations...</strong> (' + games + '/' + (num_sims) + ') ' + percent_complete + '%<br>' + elapse + ' seconds<br>' + simpersecbatch + ' simulations per second<br>');
                 } else {
                     outp(echo + '<strong>Running simulations...</strong> (' + games + '/' + (num_sims) + ') ' + percent_complete + '%<br>' + elapse + ' seconds<br>' + simpersecbatch + ' simulations per second<br>' + gettable());
@@ -220,7 +201,7 @@ if (use_workers) {
     }
 
     // Add results from a batch to the total results
-    var add_results = function (num_games, num_wins, num_draws, num_losses, turns, points) {
+    function add_results(num_games, num_wins, num_draws, num_losses, turns, points) {
 
         games += num_games;
         wins += num_wins;
@@ -238,13 +219,13 @@ if (use_workers) {
                     echo += '<br><br>';
                     found_loss = true;
                     sims_left = 0;
-                    stopsim(1);
+                    SIM_CONTROLLER.stopsim(1);
                 } else if (num_losses > 0) {
                     echo = 'Loss found after ' + games + ' games. Displaying debug output... <br><br>' + echo;
                     echo += '<br><br>';
                     found_loss = true;
                     sims_left = 0;
-                    stopsim(1);
+                    SIM_CONTROLLER.stopsim(1);
                 } else {
                     if (sims_left <= num_games) {
                         echo = 'No losses found after ' + games + ' games. No debug output to display.<br><br>';
@@ -259,7 +240,7 @@ if (use_workers) {
                     echo += '<br><br>';
                     found_loss = true;
                     sims_left = 0;
-                    stopsim(1);
+                    SIM_CONTROLLER.stopsim(1);
                 } else {
                     if (sims_left <= num_games) {
                         echo = 'No wins found after ' + games + ' games. No debug output to display.<br><br>';
@@ -275,7 +256,7 @@ if (use_workers) {
     }
 
     // Display the results of a regular debug simulation
-    var display_debug_results = function (win, draw) {
+    function display_debug_results(win, draw) {
 
         sims_left = 0;
         time_stop = new Date().getTime();
@@ -296,7 +277,7 @@ if (use_workers) {
     }
 
     // Display the final results after a simulation loop has completed
-    var display_final_results = function () {
+    function display_final_results() {
 
         time_stop = new Date().getTime();
 
@@ -304,7 +285,7 @@ if (use_workers) {
         var simpersec = games / elapse;
         simpersec = simpersec.toFixed(1);
 
-        if (suppressOutput && end_sims_callback && !trackStats) {
+        if (suppressOutput && SIM_CONTROLLER.end_sims_callback && !trackStats) {
             outp(echo + '<br><strong>Simulations complete.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>');
         } else {
             outp(echo + '<br><strong>Simulations complete.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>' + gettable() + getOrderStatsTable());
@@ -317,13 +298,13 @@ if (use_workers) {
         document.getElementById('stop').style.display = 'none';
 
         scroll_to_end();
-        if (end_sims_callback) end_sims_callback();
+        if (SIM_CONTROLLER.end_sims_callback) SIM_CONTROLLER.end_sims_callback();
     }
 
     // Initialize simulation loop - runs once per simulation session
-    var startsim = function (autostart) {
+    SIM_CONTROLLER.startsim = function (autostart) {
         for (var i = 0; i < max_workers; i++) {
-            if(!workers[i]) workers[i] = createWorker(i);
+            if (!workers[i]) workers[i] = createWorker(i);
         }
 
         orders = {};
@@ -353,12 +334,7 @@ if (use_workers) {
         num_sims = document.getElementById('sims').value;
         if (!num_sims) num_sims = 1;
         sims_left = num_sims;
-        var d = document.getElementById('user_controlled');
-        if (d) {
-            user_controlled = d.checked;
-        }
-        /*if (user_controlled) debug = true;
-        else*/ debug = document.getElementById('debug').checked;
+        debug = document.getElementById('debug').checked;
         var d = document.getElementById('auto_mode');
         if (d) {
             auto_mode = d.checked;
@@ -451,7 +427,7 @@ if (use_workers) {
         params['loss_debug'] = loss_debug;
         params['win_debug'] = loss_debug;
         params['mass_debug'] = mass_debug;
-        params['user_controlled'] = user_controlled;
+        params['user_controlled'] = false;
         params['trackStats'] = trackStats;
         for (var i = 0; i < max_workers; i++) {
             setupWorkerField(workers[i]);
@@ -472,7 +448,7 @@ if (use_workers) {
     }
 
     // Interrupt simulations
-    var stopsim = function (supress_output) {
+    SIM_CONTROLLER.stopsim = function (supress_output) {
 
         sims_left = 0;
         time_stop = new Date().getTime();
@@ -498,11 +474,11 @@ if (use_workers) {
         document.getElementById('stop').style.display = 'none';
     }
 
-    var setupWorkerField = function () { };
-
+    setupWorkerField = function () { };
+    
     // Loops through all simulations
     // - keeps track of number of simulations and outputs status
-    var run_sims = function (worker_id, batch_size, time_started) {
+    function run_sims(worker_id, batch_size, time_started) {
         if (debug && !mass_debug && !loss_debug && !win_debug) {
             workers[0].postMessage({ 'cmd': 'run_sims' });
         } else {
@@ -522,6 +498,11 @@ if (use_workers) {
         }
     }
 
+    SIM_CONTROLLER.updateStats = updateStats;
+    SIM_CONTROLLER.setupWorkerField = setupWorkerField;
+
+    var workers = [];
+    var smoothing_factor = 5;	// Used by the progress reporting logic, determines how many .1 second intervals back to go for sims/sec calculations
+    var progress = false;
     var last_start_times = [];
-    var end_sims_callback;
-}
+})();

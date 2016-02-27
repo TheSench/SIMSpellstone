@@ -96,7 +96,7 @@
     <!-- SIMULATOR CODE ENDS HERE -->
 
 </head>
-<body onload="onpageload()">
+<body>
     <font style="font-size: 10px;">Multi-core support:</font>
     <a style="font-size: 10px; color: #993333;" href="?maxworkers=1">Single core</a> |
     <a style="font-size: 10px; color: #993333;" href="?maxworkers=2">Dual-core</a> |
@@ -184,7 +184,7 @@
             <div>Debug Win Mode (output first win):</div><input type="radio" id="win_debug" name="debugMode" onclick="toggleRadio(this)"><br><!--onchange="debugModeChanged(this)"><br>-->
             <div>Debug Loss Mode (output first loss):</div><input type="radio" id="loss_debug" name="debugMode" onclick="toggleRadio(this)"><br><!--onchange="debugModeChanged(this)"><br>-->
             <br>
-            <div>&nbsp;</div><input id="btn_simulate" type="button" value="Simulate" onclick="return startsim();" style="text-align: center; font-weight: bold;"> <input type="button" value="Generate Link" onclick="return display_generated_link();" style="text-align: center; font-weight: normal;"> <input type="button" value="History" onclick="return display_history();" style="text-align: center; font-weight: normal;">
+            <div>&nbsp;</div><input id="btn_simulate" type="button" value="Simulate" onclick="return SIM_CONTROLLER.startsim();" style="text-align: center; font-weight: bold;"> <input type="button" value="Generate Link" onclick="return display_generated_link();" style="text-align: center; font-weight: normal;"> <input type="button" value="History" onclick="return display_history();" style="text-align: center; font-weight: normal;">
         </form>
     </span>
     <br />
@@ -192,7 +192,7 @@
     <br>
     <span id="cardSpace"></span>
     <br>
-    <span id="stop" style="display: none;"><input type="button" value="Stop Sim(s)" onclick="stopsim()"><br>TIP: Switching browser tabs may cause your simulation to pause!</span>
+    <span id="stop" style="display: none;"><input type="button" value="Stop Sim(s)" onclick="SIM_CONTROLLER.stopsim()"><br>TIP: Switching browser tabs may cause your simulation to pause!</span>
     <br>
     <div id="results_table"></div>
     <br />

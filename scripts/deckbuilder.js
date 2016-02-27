@@ -122,7 +122,7 @@ var drawDeck = function () {
         setDeckName(name);
     }
 
-    draw_deck(deck, removeFromDeck, showCardOptions);
+    CARD_GUI.draw_deck(deck, removeFromDeck, showCardOptions);
     updateHash();
 };
 
@@ -156,7 +156,7 @@ var drawCardList = function () {
         sortCards(sortField);
     }
 
-    draw_card_list(unitsShown, false, addToDeck);
+    CARD_GUI.draw_card_list(unitsShown, false, addToDeck);
     if (inventory) {
         var unitsToHide = deck.deck.slice();
         unitsToHide.push(deck.commander);
@@ -230,7 +230,7 @@ var hash_changed = function (hash) {
         }
     }
 
-    draw_deck(deck, removeFromDeck, showCardOptions);
+    CARD_GUI.draw_deck(deck, removeFromDeck, showCardOptions);
 }
 
 var sortDeck = function (deck) {
@@ -263,7 +263,7 @@ var addToDeck = function (htmlCard) {
     }
     sortDeck(deck);
     if (fromInventory) htmlCard.classList.add("picked");
-    draw_deck(deck, removeFromDeck, showCardOptions);
+    CARD_GUI.draw_deck(deck, removeFromDeck, showCardOptions);
     updateHash();
 };
 
@@ -284,7 +284,7 @@ var removeFromDeck = function (htmlCard, index) {
             }
         }
     }
-    draw_deck(deck, removeFromDeck, showCardOptions);
+    CARD_GUI.draw_deck(deck, removeFromDeck, showCardOptions);
     updateHash();
 };
 
@@ -840,14 +840,14 @@ var modifyCard = function (optionsDialog) {
         unit.id = parseInt(unitID);
     }
 
-    draw_deck(deck, removeFromDeck, showCardOptions);
+    CARD_GUI.draw_deck(deck, removeFromDeck, showCardOptions);
     updateHash();
 }
 
 var resetCard = function (optionsDialog) {
     var index = optionsDialog.index;
     deck.deck[index] = optionsDialog.originalUnit;
-    draw_deck(deck, removeFromDeck, showCardOptions);
+    CARD_GUI.draw_deck(deck, removeFromDeck, showCardOptions);
     updateHash();
 }
 
@@ -1028,12 +1028,12 @@ var isInRange = function (unit, field, min, max) {
 }
 
 var toggleSkillDetails = function (checkbox) {
-    draw_card_list(unitsShown, checkbox.checked, addToDeck);
+    CARD_GUI.draw_card_list(unitsShown, checkbox.checked, addToDeck);
 }
 
 var toggleUpgrades = function (checkbox) {
     showUpgrades = checkbox.checked;
-    clearCardSpace();
+    CARD_GUI.clearCardSpace();
 
     $("body").addClass("loading");
 
@@ -1095,7 +1095,7 @@ var sortCards = function (select) {
             return sortByID(unitA, unitB);
         }
     });
-    draw_card_list(unitsShown, document.getElementById("skillDetails").checked, addToDeck);
+    CARD_GUI.draw_card_list(unitsShown, document.getElementById("skillDetails").checked, addToDeck);
     applyFilters();
 }
 

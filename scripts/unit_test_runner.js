@@ -53,14 +53,14 @@ function nextUnitTest(testNumber) {
         tblDiv.style.display = "block";
         tblDiv.innerHTML = unitTestsStatus(testNumber);
 
-        end_sims_callback = function () {
+        SIM_CONTROLLER.end_sims_callback = function () {
             nextUnitTest(testNumber);
         }
-        startsim();
+        SIM_CONTROLLER.startsim();
     } else {
         drawResults();
         clearFields();
-        end_sims_callback = undefined;
+        SIM_CONTROLLER.end_sims_callback = false;
     }
 }
 

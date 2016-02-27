@@ -40,6 +40,24 @@ function _DEFINED(variable) {
     return false;
 }
 
+// Time elapsed
+function time_elapsed() {
+    var t = new Date().getTime();
+    if (time_stop) t = time_stop;
+    var v = (t - time_start) / 1000;
+    v = v.toFixed(3);
+    return v;
+}
+
+// Time elapsed for one batch
+function batch_time_elapsed(time_started) {
+    var t = new Date().getTime();
+    if (!time_started) time_started = time_start_batch;
+    var v = (t - time_started) / 1000;
+    v = v.toFixed(3);
+    return v;
+}
+
 function shuffle(this_array) {
     var i = this_array.length, j, tempi, tempj;
     if (i == 0) return false;
@@ -50,6 +68,25 @@ function shuffle(this_array) {
         this_array[i] = tempj;
         this_array[j] = tempi;
     }
+}
+
+function initializeCard(card, p, newKey) {
+    card.owner = p;
+    card.timer = card.cost;
+    card.health_left = card.health;
+    // Setup status effects
+    card.attack_rally = 0;
+    card.attack_weaken = 0;
+    card.attack_berserk = 0;
+    card.poisoned = 0;
+    card.scorched = 0;
+    card.enfeebled = 0;
+    card.protected = 0;
+    card.barrier_ice = 0;
+    card.enhanced = 0;
+    card.jammed = false;
+    card.key = newKey;
+    if (!card.reusableSkills) card.resetTimers();
 }
 
 function copy_deck(original_deck) {

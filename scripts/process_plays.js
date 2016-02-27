@@ -6,7 +6,7 @@ var BATTLE_PROCESSOR = (function () {
     var cachedDraws;
 
     alert = function (message) {
-        clearCardSpace();
+        CARD_GUI.clearCardSpace();
         document.getElementById("content").innerHTML = '<div><font size="24">' + message + '</font></div>';
     }
 
@@ -259,8 +259,8 @@ var BATTLE_PROCESSOR = (function () {
         suppressOutput = true;
         SIMULATOR.setupField = function (field) { copyField(field, false); };
         SIMULATOR.setupDecks = function () { doSetupDecks(); setDeckCaches(); };
-        setupWorkerField = function (worker) { postField(worker); }
-        end_sims_callback = function () {
+        SIM_CONTROLLER.setupWorkerField = function (worker) { postField(worker); }
+        SIM_CONTROLLER.end_sims_callback = function () {
             document.getElementById('ui').style.display = 'none';
             if (_DEFINED("auto")) {
                 checkBest(true);
@@ -413,13 +413,13 @@ var BATTLE_PROCESSOR = (function () {
 
         if (areCommandersAlive()) {
             resetKeys();
-            startsim();
+            SIM_CONTROLLER.startsim();
         } else {
             if (!_DEFINED("auto")) {
                 drawField(lastTurn, true);
             }
             //document.getElementById('ui').style.display = 'block';
-            end_sims_callback = null;
+            SIM_CONTROLLER.end_sims_callback = null;
 
             if (!cachedField.uids[-1].isAlive()) {
                 outp('<br><h1>LOSS</h1><br>');
@@ -1069,14 +1069,14 @@ var BATTLE_PROCESSOR = (function () {
     }
 
     function drawField(turn, matchEnded) {
-        clearCardSpace();
+        CARD_GUI.clearCardSpace();
         var copy_field = {};
         copyField(copy_field, true);
         if (matchEnded) {
-            draw_cards(copy_field, null, pickCard, turn);
+            CARD_GUI.draw_cards(copy_field, null, pickCard, turn);
         } else if (!_DEFINED("nodraw")) {
             cachedHands.player.choice = choice;
-            draw_cards(copy_field, cachedHands.player, pickCard, turn);
+            CARD_GUI.draw_cards(copy_field, cachedHands.player, pickCard, turn);
         }
     }
 

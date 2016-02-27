@@ -296,10 +296,10 @@ function nextFight(attackKey, defendKey, sortByWins) {
             tblDiv.style.display = "block";
             tblDiv.innerHTML = getCurrentMatch(attackKey, defendKey);
 
-            end_sims_callback = function () {
+            SIM_CONTROLLER.end_sims_callback = function () {
                 nextFight(attackKey, defendKey, sortByWins);
             }
-            startsim();
+            SIM_CONTROLLER.startsim();
             return;
         }
     }
@@ -339,7 +339,7 @@ function nextFight(attackKey, defendKey, sortByWins) {
 
     drawResults();
     clearFields();
-    end_sims_callback = undefined;
+    SIM_CONTROLLER.end_sims_callback = false;
     nextEvolution();
 }
 

@@ -1,9 +1,11 @@
 "use strict";
 
-if (!use_workers) {
+var SIM_CONTROLLER = {};
+
+if (!use_workers) (function () {
 
     // Initialize simulation loop - runs once per simulation session
-    var startsim = function (autostart) {
+    SIM_CONTROLLER.startsim = function (autostart) {
         orders = {};
 
         if (_DEFINED('autolink') && !autostart) {
@@ -11,7 +13,7 @@ if (!use_workers) {
             return false;
         }
 
-        clearCardSpace();
+        CARD_GUI.clearCardSpace();
 
         card_cache = {};    // clear card cache to avoid memory bloat when simulating different decks
         total_turns = 0;
@@ -25,7 +27,7 @@ if (!use_workers) {
         if (!sims_left) sims_left = 1;
         var d = document.getElementById('user_controlled');
         if (d) {
-            user_controlled = d.checked;
+            SIMULATOR.user_controlled = d.checked;
         }
         debug = document.getElementById('debug').checked;
         var d = document.getElementById('auto_mode');
@@ -96,7 +98,7 @@ if (!use_workers) {
                 if (battleground && raidlevel >= battleground.starting_level) {
                     var enemy_only = battleground.enemy_only;
                     if (battleground.effect.skill) {
-                        if(battleground.scale_with_level) {
+                        if (battleground.scale_with_level) {
                             var mult = battleground.scale_with_level * (raidlevel - battleground.starting_level + 1);
                         } else {
                             mult = 1;
@@ -136,7 +138,7 @@ if (!use_workers) {
     }
 
     // Interrupt simulations
-    var stopsim = function () {
+    SIM_CONTROLLER.stopsim = function () {
         time_stop = new Date();
         var elapse = time_elapsed();
         var simpersec = games / elapse;
@@ -146,8 +148,8 @@ if (!use_workers) {
         if (current_timeout) clearTimeout(current_timeout);
 
         outp(echo + '<strong>Simulations interrupted.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>' + gettable());
-        if (user_controlled) {
-            draw_cards(SIMULATOR.field);
+        if (SIMULATOR.user_controlled) {
+            CARD_GUI.draw_cards(SIMULATOR.field);
         }
         // Show interface
         document.getElementById('ui').style.display = 'block';
@@ -158,7 +160,7 @@ if (!use_workers) {
 
     // Loops through all simulations
     // - keeps track of number of simulations and outputs status
-    var debug_end = function () {
+    function debug_end() {
         if (SIMULATOR.simulating) {
             return;
         }
@@ -174,7 +176,7 @@ if (!use_workers) {
         } else {
             outp(echo + '<br><h1>LOSS</h1><br>' + gettable());
         }
-        draw_cards(SIMULATOR.field);
+        CARD_GUI.draw_cards(SIMULATOR.field);
 
         // Show interface
         document.getElementById('ui').style.display = 'block';
@@ -182,17 +184,17 @@ if (!use_workers) {
         // Hide stop button
         document.getElementById('stop').style.display = 'none';
 
-        if (user_controlled) {
+        if (SIMULATOR.user_controlled) {
             scroll_to_end();
         }
     }
 
-    var run_sims = function () {
+    function run_sims() {
 
         if (debug && !mass_debug && !loss_debug && !win_debug) {
             run_sim(true);
             debug_end();
-        } else if (user_controlled) {
+        } else if (SIMULATOR.user_controlled) {
             run_sim(true);
             debug_end();
         } else if (sims_left > 0) {
@@ -250,13 +252,13 @@ if (!use_workers) {
             document.getElementById('stop').style.display = 'none';
 
             scroll_to_end();
-            if(end_sims_callback) end_sims_callback();
+            if (SIM_CONTROLLER.end_sims_callback) SIM_CONTROLLER.end_sims_callback();
         }
     }
 
     // Initializes a single simulation - runs once before each individual simulation
     // - needs to reset the decks and fields before each simulation
-    var run_sim = function (skipResults) {
+    function run_sim(skipResults) {
         doSetup();
         if (!SIMULATOR.simulate()) return false;
         if (!skipResults) processSimResult();
@@ -300,7 +302,7 @@ if (!use_workers) {
         if (cache_cpu_deck_cards) {
             deck['cpu'] = copy_deck(cache_cpu_deck_cards);
         }
-        
+
         // Set up deck order priority reference
         if (getordered && !getexactorder) deck.player.ordered = copy_card_list(deck.player.deck);
         if (getordered2 && !getexactorder2) deck.cpu.ordered = copy_card_list(deck.cpu.deck);
@@ -395,11 +397,8 @@ if (!use_workers) {
         return result;
     }
 
-    var initializeCard = SIMULATOR.initializeCard;
-
     // Global variables used by single-threaded simulator
     var run_sims_count = 0;
     var run_sims_batch = 0;
-    var user_controlled = false;
-    var end_sims_callback;
-}
+    SIM_CONTROLLER.end_sims_callback = false;
+})();
