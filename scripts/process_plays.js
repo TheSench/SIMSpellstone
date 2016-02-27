@@ -434,7 +434,8 @@ var BATTLE_PROCESSOR = (function () {
                 outputTrackedStats();
             }
             
-            if (document.getElementById("battleType").value != "resumeBattle") {
+            if (document.getElementById("battleType").value != "resumeBattle"
+            && document.getElementById("battleType").value != "fightGuildMember") {
                 setTimeout(function () {
                     if (_DEFINED("spam")) {
                         if (continues > 0) {

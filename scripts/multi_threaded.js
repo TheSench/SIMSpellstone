@@ -498,9 +498,17 @@ if (use_workers) (function () {
             }
         }
     }
-
-    SIM_CONTROLLER.updateStats = updateStats;
-    SIM_CONTROLLER.setupWorkerField = setupWorkerField;
+    
+    Object.defineProperties(SIM_CONTROLLER, {
+        setupWorkerField: {
+            get: function () {
+                return setupWorkerField;
+            },
+            set: function (value) {
+                setupWorkerField = value;
+            }
+        },
+    });
 
     var workers = [];
     var smoothing_factor = 5;	// Used by the progress reporting logic, determines how many .1 second intervals back to go for sims/sec calculations
