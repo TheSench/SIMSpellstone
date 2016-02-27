@@ -4,8 +4,7 @@ var BattleAPI;
 var HandleJSONPResponse;
 
 var DeckRetriever = (function () {
-    var baseURL = "https://crossorigin.me/"
-    baseURL = "https://script.google.com/macros/s/AKfycby8KJvYjt3swV3nLAHKtsOSvPyrMHdYOTWGAs-yb8I0BqihqhqV/exec?";
+    var baseURL = "https://script.google.com/macros/s/AKfycby8KJvYjt3swV3nLAHKtsOSvPyrMHdYOTWGAs-yb8I0BqihqhqV/exec?";
     var baseRequest = {};
     var form;
     var factionMemberIDs = [];
@@ -62,6 +61,12 @@ var DeckRetriever = (function () {
 
     var lastAPICall = 0;
     var makingAPICall = false;
+    var sendMethod = jsonp;
+    if (_DEFINED("ajax")) {
+        var sendMethod = ajax;
+        baseURL = "https://crossorigin.me/https://spellstone.synapse-games.com/api.php?";
+    }
+
     function sendRequest(messageType, params, callback) {
         var now = Date.now();
         var ellapsed = now - lastAPICall;
@@ -78,8 +83,15 @@ var DeckRetriever = (function () {
             throw "Missing user id";
         }
         var params = getRequestParams(messageType, params);
-        var startTime = new Date().getTime();
         var url = baseURL + params;
+
+        sendMethod(url, messageType, params, callback);
+
+        return;
+    }
+
+    function jsonp(url, messageType, params, callback) {
+        var startTime = new Date().getTime();
 
         var head = document.getElementsByTagName('head')[0];
         var script = document.createElement('script');
@@ -102,16 +114,18 @@ var DeckRetriever = (function () {
             HideLoadingSplash();
         }
         head.appendChild(script);
+    }
 
-        return;
+    function ajax(url, messageType, params, callback) {
+        var startTime = new Date().getTime();
 
         $.ajax({
-            url: url,
+            url: baseURL + params,
             async: false,
             cache: false,
-            dataType: 'jsonp',
-            jsonpCallback: "myCallback",
+            dataType: 'json', /* Optional - jQuery autodetects this by default */
             success: function (response) {
+                makingAPICall = false;
                 console.log('callback success');
                 baseRequest.api_stat_name = messageType;
                 baseRequest.api_stat_time = (new Date().getTime() - startTime);
@@ -125,10 +139,12 @@ var DeckRetriever = (function () {
                 HideLoadingSplash();
             },
             error: function (xhr, status, error) {
+                makingAPICall = false;
                 HideLoadingSplash();
                 console.log(status + '; ' + error);
             },
             failure: function () {
+                makingAPICall = false;
                 console.log('callback error');
                 HideLoadingSplash();
             }
@@ -254,7 +270,7 @@ var DeckRetriever = (function () {
     }
 
     function startFirstBountyBattle() {
-        if (huntingTargets.length > 5) {
+        if (huntingTargets.length > 0) {
             var target_user_id = huntingTargets[0];
             huntingTargets.splice(0, 1);
             doStartBountyBattle(target_user_id);
@@ -397,7 +413,7 @@ var DeckRetriever = (function () {
         DisplayLoadingSplash();
         setTimeout(function () {
             sendRequest('getBattleResults', null, function (response) {
-                BattleAPI.continueBattle(response);
+                checkResponse(response, BattleAPI.continueBattle);
             });
         }, 1);
     }
@@ -416,7 +432,7 @@ var DeckRetriever = (function () {
         DisplayLoadingSplash();
         setTimeout(function () {
             sendRequest('playCard', params, function (response) {
-                BattleAPI.continueBattle(response);
+                checkResponse(response, BattleAPI.continueBattle);
             });
         }, 1);
     }
@@ -608,6 +624,10 @@ var DeckRetriever = (function () {
         for (var i in units) {
             var unit = units[i];
             var unit_info = makeUnitInfo(unit.unit_id, unit.level);
+            var runes = unit.runes;
+            for (var key in runes) {
+                unit_info.runes.push({ id: runes[key].item_id });
+            }
             unit_info.index = unit.unit_index;
             deck.deck.push(unit_info);
         }

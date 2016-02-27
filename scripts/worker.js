@@ -17,7 +17,6 @@ function ProcessMessage(e) {
 			var data = msg.data;
 			if (data) {
 				sims_left = data[0];
-				time_start_batch = data[1];
 			} else {
 				sims_left = 1;
 			}
@@ -49,17 +48,19 @@ var setDeckCaches = function () {
 };
 
 var calculateTotalDeckHealth = function () {
-    totalDeckHealth = 0;
+    var totalDeckHealth = 0;
     totalDeckHealth += cache_player_deck_cards.commander.health;
     for (var i = 0; i < cache_player_deck_cards.deck.length; i++) {
         totalDeckHealth += cache_player_deck_cards.deck[i].health;
     }
+    SIMULATOR.totalDeckHealth = totalDeckHealth;
 
-    totalCpuDeckHealth = 0;
+    var totalCpuDeckHealth = 0;
     totalCpuDeckHealth += cache_cpu_deck_cards.commander.health;
     for (var i = 0; i < cache_cpu_deck_cards.deck.length; i++) {
         totalCpuDeckHealth += cache_cpu_deck_cards.deck[i].health;
     }
+    SIMULATOR.totalCpuDeckHealth = totalCpuDeckHealth;
 }
 
 function doSetupField(jsonText) {
@@ -103,7 +104,7 @@ function doSetupField(jsonText) {
         }
     }
 
-    setupField = function (copy_field) {
+    SIMULATOR.setupField = function (copy_field) {
         copy_field.cpu = { assaults: [] };
         copy_field.player = { assaults: [] };
         copy_field.uids = {};
@@ -145,8 +146,8 @@ function doSetupField(jsonText) {
 
     calculateTotalDeckHealth = function ()
     {
-        totalDeckHealth = 0;
-        totalCpuDeckHealth = 0;
+        var totalDeckHealth = 0;
+        var totalCpuDeckHealth = 0;
         for (var i in cachedField.uids) {
             var card = cachedField.uids[i];
             if (i >= -1 && i <= 15) {
@@ -155,6 +156,8 @@ function doSetupField(jsonText) {
                 totalCpuDeckHealth += card.health;
             }
         }
+        SIMULATOR.totalDeckHealth = totalDeckHealth;
+        SIMULATOR.totalCpuDeckHealth = totalCpuDeckHealth;
     }
 
     cachedField = (function () {
@@ -360,7 +363,7 @@ function initializeSims(params) {
 	card_cache = {};    // clear card cache to avoid memory bloat when simulating different decks
 
     // Set up battleground effects, if any
-	battlegrounds = {
+	var battlegrounds = {
 	    onCreate: [],
 	    onTurn: [],
 	};
@@ -407,6 +410,7 @@ function initializeSims(params) {
 	        }
 	    }
 	}
+	SIMULATOR.battlegrounds = battlegrounds;
 
 	setDeckCaches();
 
@@ -431,11 +435,9 @@ function returnResultsTransferableObjects() {
 	view[4] = losses;
 	view[5] = total_turns;
 	view[6] = total_points;
-	view = new DataView(buffer, 28, 8);
-	view.setFloat64(0, time_start_batch);
 	if (debug) {
 		// Convert echo to bytes in the ArrayBuffer
-		var bufView = new Uint16Array(buffer, 36);
+		var bufView = new Uint16Array(buffer, 28);
 		for (var i=0, len = echo.length; i < len; i++) {
 			bufView[i] = echo.charCodeAt(i);
 		}
@@ -456,8 +458,7 @@ function returnResultsStructuredCloning() {
 	resultsArray[3] = losses;
 	resultsArray[4] = total_turns;
 	resultsArray[6] = total_points;
-	resultsArray[7] = time_start_batch;
-	if (debug) resultsArray[8] = echo;
+	if (debug) resultsArray[7] = echo;
 
 	// Send batch results back to main thread
 	self.postMessage({"cmd":"return_results", "data":resultsArray});
@@ -527,13 +528,13 @@ function stopsim() {
 // - needs to reset the decks and fields before each simulation
 function run_sim() {
 
-	simulation_turns = 0;
+    SIMULATOR.simulation_turns = 0;
 
 	// Reset battleground effect
 	battleground = '';
 
 	// Set up empty decks
-	deck = {
+	var deck = {
 	    cpu: {
 	        deck: []
 	    },
@@ -541,9 +542,10 @@ function run_sim() {
 	        deck: []
 	    }
 	}
+	SIMULATOR.deck = deck;
     
 	// Set up empty field
-	field = {
+	SIMULATOR.field = {
 	    cpu: {
             assaults: []
 	    },
@@ -566,10 +568,10 @@ function run_sim() {
 	deck.cpu.cards = getDeckCards(deck.cpu);
 
 	// Set up deck order priority reference
-	if (getordered && !getexactorder) deck['player']['ordered'] = copy_card_list(deck.player.cards);
-	if (getordered2 && !getexactorder2) deck['cpu']['ordered'] = copy_card_list(deck.cpu.cards);
+	if (getordered && !getexactorder) deck['player']['ordered'] = copy_card_list(deck.player.deck);
+	if (getordered2 && !getexactorder2) deck['cpu']['ordered'] = copy_card_list(deck.cpu.deck);
 
-	if (simulate()) {
+	if (SIMULATOR.simulate()) {
 	    processSimResult();
 	    return true;
 	} else {
@@ -581,16 +583,16 @@ function processSimResult() {
 
     games++;
     // Increment total turn count
-    total_turns += simulation_turns;
-    var points = CalculatePoints();
+    total_turns += SIMULATOR.simulation_turns;
+    var points = SIMULATOR.CalculatePoints();
     total_points += points;
 
     var result;
-    if (!field.player.commander.isAlive()) {
+    if (!SIMULATOR.field.player.commander.isAlive()) {
         result = false;
         losses++;
     }
-    else if (!field.cpu.commander.isAlive()) {
+    else if (!SIMULATOR.field.cpu.commander.isAlive()) {
         result = true;
         wins++;
     }
@@ -599,7 +601,7 @@ function processSimResult() {
         draws++;
     }
 
-    if (trackStats) updateStats(result, points);
+    if (trackStats) SIMULATOR.updateStats(result, points);
 
     if (debug) {
         if (!mass_debug && !loss_debug && !win_debug) {
@@ -644,7 +646,6 @@ function processSimResult() {
 function runBatches(total_remaining) {
 
     var batch_size = 0;
-    var time_start_batch;
     var elapsed;
 
     var i = 0;

@@ -35,14 +35,11 @@ var BATTLE_PROCESSOR = (function () {
     var noCapTimer = null;
     function noEnergy(response) {
         var battleType = document.getElementById("battleType").value;
-        if (battleType == "startClashBattle") {
-            document.getElementById("battleType").value = "startCampaignBattle";
-            module.fight();
-        } else if (battleType == "startCampaignBattle") {
+        if (battleType == "startCampaignBattle") {
             document.getElementById("battleType").value = "startBountyBattle";
             module.fight();
         } else if (battleType == "startBountyBattle") {
-            document.getElementById("battleType").value = "startClashBattle";
+            document.getElementById("battleType").value = "startCampaignBattle";
             // Alert when the next check will be
             var addTime = 1000 * 60 * 60 * 3;
             var nextTime = Date.now() + addTime;
@@ -221,7 +218,7 @@ var BATTLE_PROCESSOR = (function () {
         }
 
         // Set up battleground effects, if any
-        battlegrounds = {
+        var battlegrounds = {
             onCreate: [],
             onTurn: [],
         };
@@ -237,6 +234,7 @@ var BATTLE_PROCESSOR = (function () {
                 }
             }
         }
+        SIMULATOR.battlegrounds = battlegrounds;
     }
 
     function resetField() {
@@ -259,8 +257,8 @@ var BATTLE_PROCESSOR = (function () {
     function startBattle(data) {
         lastWinrate = 0;
         suppressOutput = true;
-        setupField = function (field) { copyField(field, false); };
-        setupDecks = function () { doSetupDecks(); setDeckCaches(); };
+        SIMULATOR.setupField = function (field) { copyField(field, false); };
+        SIMULATOR.setupDecks = function () { doSetupDecks(); setDeckCaches(); };
         setupWorkerField = function (worker) { postField(worker); }
         end_sims_callback = function () {
             document.getElementById('ui').style.display = 'none';
@@ -435,19 +433,21 @@ var BATTLE_PROCESSOR = (function () {
                 //outputTrackedCards();
                 outputTrackedStats();
             }
-
-            setTimeout(function () {
-                if (_DEFINED("spam")) {
-                    if (continues > 0) {
-                        module.fight(true);
-                    } else {
-                        lastID++;
-                        module.fight(false);
+            
+            if (document.getElementById("battleType").value != "resumeBattle") {
+                setTimeout(function () {
+                    if (_DEFINED("spam")) {
+                        if (continues > 0) {
+                            module.fight(true);
+                        } else {
+                            lastID++;
+                            module.fight(false);
+                        }
+                    } else if (_DEFINED("auto")) {
+                        module.fight();
                     }
-                } else if (_DEFINED("auto")) {
-                    module.fight();
-                }
-            }, 1000);
+                }, 1000);
+            }
         }
     }
 
