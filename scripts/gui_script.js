@@ -95,8 +95,7 @@ function toggle_u() {
 // - sometimes assault card's array key doesn't match card's .key value (.key value appears more accurate)
 
 // When Page Loads...
-// Set up user interface
-function onpageload() {
+window.onload = function () {
 
     // Check if missions are found
     if (MISSIONS) {
@@ -342,7 +341,7 @@ function onpageload() {
     }
 
     if (_DEFINED('autostart')) {
-        startsim(1);
+        SIM_CONTROLLER.startsim(1);
     } else if (_DEFINED('unit_tests')) {
         var body = document.getElementsByTagName("body")[0];
         var script = document.createElement("script");
@@ -615,24 +614,6 @@ function CalculatePlayStats(hash, cardStats) {
         playStats.avgPoints = (playStats.points / playStats.games);
         parentKey = playKey;
     }
-}
-
-// Time elapsed
-function time_elapsed() {
-    var t = new Date().getTime();
-    if (time_stop) t = time_stop;
-    var v = (t - time_start) / 1000;
-    v = v.toFixed(3);
-    return v;
-}
-
-// Time elapsed for one batch
-function batch_time_elapsed(time_started) {
-    var t = new Date().getTime();
-    if (!time_started) time_started = time_start_batch;
-    var v = (t - time_started) / 1000;
-    v = v.toFixed(3);
-    return v;
 }
 
 // Generate a link from current settings and input

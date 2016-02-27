@@ -38,7 +38,7 @@
     <!-- SIMULATOR CODE ENDS HERE -->
 
 </head>
-<body onload="onpageload()">
+<body>
     <input type="button" onclick="toggle_u()" value="Toggle Gray Text" />
     <br>
     <h1 id="version_label">SimSpellstone</h1>
@@ -87,7 +87,7 @@
             <div>Auto Mode:</div><input type="checkbox" id="auto_mode"><br>
             <br>
             <div>&nbsp;</div>
-            <input id="btn_simulate" type="button" value="Battle!" onclick="return startsim();" style="text-align: center; font-weight: bold;">
+            <input id="btn_simulate" type="button" value="Battle!" onclick="return SIM_CONTROLLER.startsim();" style="text-align: center; font-weight: bold;">
             <input type="button" value="Generate Link" onclick="return display_generated_link();" style="text-align: center; font-weight: normal;">
         </form>
     </span>
@@ -96,6 +96,6 @@
     <br>
     <span id="cardSpace"></span>
     <br>
-    <span id="stop" style="display: none;"><input type="button" value="Stop Sim(s)" onclick="stopsim()"><br>TIP: Switching browser tabs may cause your simulation to pause!</span>
+    <span id="stop" style="display: none;"><input type="button" value="Stop Sim(s)" onclick="SIM_CONTROLLER.stopsim()"><br>TIP: Switching browser tabs may cause your simulation to pause!</span>
 </body>
 </html>
