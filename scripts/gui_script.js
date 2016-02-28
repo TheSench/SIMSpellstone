@@ -492,7 +492,7 @@ function gettable() {
             current_deck = hash_encode(deck.player);
         }
 
-        history += winrate + '% &nbsp; &nbsp; ' + current_deck + '<br>';
+        battle_history += winrate + '% &nbsp; &nbsp; ' + current_deck + '<br>';
     }
 
     return full_table;
@@ -890,12 +890,12 @@ function display_generated_link() {
 }
 
 function clear_history() {
-    history = '';
+    battle_history = '';
     display_history();
 }
 
 function display_history() {
-    var h = history;
+    var h = battle_history;
     if (h == '') {
         h = 'No history available.';
     }
@@ -952,7 +952,7 @@ function supports_html5_storage() {
 }
 
 // Initialize global variables
-var history = '';
+var battle_history = '';
 var max_turns = 50;
 var debug = false;
 var mass_debug = false;
