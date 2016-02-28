@@ -22,9 +22,7 @@ var CARD_GUI = {};
         var commander = get_card_by_id(deck.commander);
         var htmlCard = create_card_html(commander, false, false, onclick, onrightclick);
         if (deck.commander.index !== undefined) {
-            var attr = document.createAttribute("data-index");
-            attr.value = deck.commander.index;
-            htmlCard.attributes.setNamedItem(attr);
+            htmlCard.setAttribute("data-index", deck.commander.index);
         }
         deckHTML.appendChild(htmlCard);
         for (var i = 0, len = deck.deck.length; i < len; i++) {
@@ -32,9 +30,7 @@ var CARD_GUI = {};
             var unit = get_card_by_id(deckEntry);
             var htmlCard = create_card_html(unit, false, false, onclick, onrightclick, i);
             if (deckEntry.index !== undefined) {
-                var attr = document.createAttribute("data-index");
-                attr.value = deckEntry.index;
-                htmlCard.attributes.setNamedItem(attr);
+                htmlCard.setAttribute("data-index", deckEntry.index);
             }
             deckHTML.appendChild(htmlCard);
         }
@@ -54,9 +50,7 @@ var CARD_GUI = {};
             var unit = get_card_by_id(listEntry);
             var htmlCard = create_card_html(unit, compactSkills, false, onclick, onrightclick);
             if (listEntry.index !== undefined) {
-                var attr = document.createAttribute("data-index");
-                attr.value = listEntry.index;
-                htmlCard.attributes.setNamedItem(attr);
+                htmlCard.setAttribute("data-index", listEntry.index);
             }
             cards.appendChild(htmlCard);
         }
@@ -128,15 +122,10 @@ var CARD_GUI = {};
     function create_card_html(card, compactSkills, onField, onclick, onrightclick, state) {
         var htmlCard = createDiv("card");
         // Add ID to card
-        var attr = document.createAttribute("data-id");
-        attr.value = card.id;
-        htmlCard.attributes.setNamedItem(attr);
+        htmlCard.setAttribute("data-id", card.id);
         // Add level to card
-        attr = document.createAttribute("data-level");
-        attr.value = card.level;
-        htmlCard.attributes.setNamedItem(attr);
+        htmlCard.setAttribute("data-level", card.level);
         // Add Rune(s) to card
-        attr = document.createAttribute("data-runeids");
         var runes = card.runes;
         var runeIDs = [];
         var boosts = {};
@@ -156,8 +145,7 @@ var CARD_GUI = {};
             var key = highlighted[i];
             boosts[key] = true;
         }
-        attr.value = runeIDs.join(",");
-        htmlCard.attributes.setNamedItem(attr);
+        htmlCard.setAttribute("data-runeids", runeIDs.join(","));
 
         if (card.picture) {
             var icon = document.createElement("i");

@@ -119,8 +119,9 @@ function copy_card_list(original_card_list) {
 }
 
 function cloneCard(original) {
-    var copy = original.constructor();
-    copy.__proto__ = original.__proto__;
+    //var copy = original.constructor();
+    //copy.__proto__ = original.__proto__;
+    var copy = Object.create(original.__proto__);
     copy.id = original.id;
     copy.name = original.name;
     copy.picture = original.picture;
