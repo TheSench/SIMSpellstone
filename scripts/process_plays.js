@@ -137,6 +137,9 @@ var BATTLE_PROCESSOR = (function () {
                 case 'playCard':
                     playTurns(data, false);
                     break;
+                case 'forfeitBattle':
+                    battleFinished("Surrendered", true);
+                    break;
                 case 'getBattleResults':
                 default:
                     setupBattlegrounds();
@@ -144,7 +147,7 @@ var BATTLE_PROCESSOR = (function () {
                     playTurns(data, true);
                     break;
             }
-        } else if(data.result == undefined) {
+        } else if (data.result == undefined) {
             alert("Loaded");
         }
     }
@@ -255,7 +258,7 @@ var BATTLE_PROCESSOR = (function () {
     }
 
     function startBattle(data) {
-        lastWinrate = 0;
+        lastWinrate = -1;
         suppressOutput = true;
         SIMULATOR.setupField = function (field) { copyField(field, false); };
         var currentSetupDecks = SIMULATOR.setupDecks;
@@ -336,7 +339,7 @@ var BATTLE_PROCESSOR = (function () {
         if (d) d.checked = true;
     }
 
-    var lastWinrate = 0;
+    var lastWinrate = -1;
     function checkBest(playCard) {
         var avgPoints = -99;
         var winrate = -1;
@@ -385,10 +388,13 @@ var BATTLE_PROCESSOR = (function () {
         if (playCard) {
             var card = cachedHands.player[choice];
             var uid = card.uid;
-            var two100 = ((lastWinrate + winrate) == 2);
+            var inevitableWin = ((lastWinrate + winrate) == 2);
+            var inevitableLoss = ((lastWinrate + winrate) == 0);
             lastWinrate = winrate;
-            if (_DEFINED("spam") || two100) {
-                BattleAPI.playCard(uid, 1);
+            if (inevitableWin || _DEFINED("spam")) {
+                BattleAPI.playCard(uid, 1);// Set skip = true to auto-skip the rest of the battle
+            } else if (inevitableLoss) {
+                BattleAPI.forfeitBattle(); // Surrender and move on
             } else {
                 BattleAPI.playCard(uid);
             }
@@ -416,43 +422,48 @@ var BATTLE_PROCESSOR = (function () {
             resetKeys();
             SIM_CONTROLLER.startsim();
         } else {
-            if (!_DEFINED("auto")) {
-                drawField(lastTurn, true);
-            }
-            //document.getElementById('ui').style.display = 'block';
-            SIM_CONTROLLER.end_sims_callback = null;
-
-            if (!cachedField.uids[-1].isAlive()) {
-                outp('<br><h1>LOSS</h1><br>');
-            } else if (!cachedField.uids[-2].isAlive()) {
-                outp('<br><h1>WIN</h1><br>');
-            } else {
-                outp('<br><h1>DRAW</h1><br>');
-            }
-
-            if (trackPlays) {
-                //outputTrackedCards();
-                outputTrackedStats();
-            }
-            
-            if (document.getElementById("battleType").value != "resumeBattle"
-            && document.getElementById("battleType").value != "fightGuildMember") {
-                setTimeout(function () {
-                    if (_DEFINED("spam")) {
-                        if (continues > 0) {
-                            module.fight(true);
-                        } else {
-                            lastID++;
-                            module.fight(false);
-                        }
-                    } else if (_DEFINED("auto")) {
-                        module.fight();
-                    }
-                }, 1000);
-            }
+            battleFinished();
         }
     }
 
+    function battleFinished(lastTurn, surrender) {
+        if (!_DEFINED("auto")) {
+            drawField(lastTurn, true);
+        }
+        //document.getElementById('ui').style.display = 'block';
+        SIM_CONTROLLER.end_sims_callback = null;
+
+        if (surrender) {
+            outp('<br><h1>SURRENDERED</h1><br>');
+        } else if (!cachedField.uids[-1].isAlive()) {
+            outp('<br><h1>LOSS</h1><br>');
+        } else if (!cachedField.uids[-2].isAlive()) {
+            outp('<br><h1>WIN</h1><br>');
+        } else {
+            outp('<br><h1>DRAW</h1><br>');
+        }
+
+        if (trackPlays) {
+            //outputTrackedCards();
+            outputTrackedStats();
+        }
+
+        if (document.getElementById("battleType").value != "resumeBattle"
+        && document.getElementById("battleType").value != "fightGuildMember") {
+            setTimeout(function () {
+                if (_DEFINED("spam")) {
+                    if (continues > 0) {
+                        module.fight(true);
+                    } else {
+                        lastID++;
+                        module.fight(false);
+                    }
+                } else if (_DEFINED("auto")) {
+                    module.fight();
+                }
+            }, 1000);
+        }
+    }
 
     function pausecomp(millis) {
         var date = new Date();
@@ -1079,6 +1090,13 @@ var BATTLE_PROCESSOR = (function () {
         } else if (!_DEFINED("nodraw")) {
             cachedHands.player.choice = choice;
             CARD_GUI.draw_cards(copy_field, cachedHands.player, pickCard, turn);
+            if (cachedHands.player.length > 1) {
+                var cardSpace = document.getElementById("cardSpace");
+                var surrender = document.createElement('button');
+                surrender.innerHTML = "Surrender";
+                surrender.onclick = BattleAPI.forfeitBattle;
+                cardSpace.appendChild(surrender);
+            }
         }
     }
 

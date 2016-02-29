@@ -440,8 +440,7 @@ var DeckRetriever = (function () {
     function forfeitBattle() {
         var params = {
             battle_id: 0,
-            skip: 0,
-            hist_id: baseRequest.user_id
+            host_id: baseRequest.user_id
         }
 
         DisplayLoadingSplash();
