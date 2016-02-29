@@ -47,6 +47,9 @@ window.onerror = function (message, url, linenumber) {
 // When Page Loads...
 window.onload = function () {
 
+    var ui = document.getElementById('ui');
+    if (!ui) return 0;
+
     // Check if missions are found
     if (MISSIONS) {
         // Mission drop down
@@ -110,9 +113,6 @@ window.onload = function () {
         option.value = i;
         select.appendChild(option);
     }
-
-    var c = document.getElementById('ui');
-    if (!c) return 0;
     
     var button = document.getElementById("generate_link");
     if (button) button.onclick = display_generated_link;
