@@ -70,7 +70,7 @@ var DeckRetriever = (function () {
     function sendRequest(messageType, params, callback) {
         var now = Date.now();
         var ellapsed = now - lastAPICall;
-        if (messageType == "playCard" && ellapsed < 1000) {
+        if (_DEFINED("throttle") && messageType == "playCard" && ellapsed < 1000) {
             setTimeout(sendRequest, ellapsed, messageType, params, callback);
             return;
         } else if (makingAPICall) {
