@@ -28,7 +28,6 @@ var DeckRetriever = (function () {
     }
 
     function copyRequest(existingRequest) {
-        alert("loaded");
         baseRequest.user_id = existingRequest.user_id;
         baseRequest.password = existingRequest.password;
         baseRequest.unity = existingRequest.unity;
