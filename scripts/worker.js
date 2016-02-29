@@ -426,7 +426,7 @@ var STATS = 1;
 // by all browsers.)
 function returnResultsTransferableObjects() {
 	// Create results ArrayBuffer
-	var length = 36;    // 4 bytes per int, 8 bytes per float
+	var length = 28;    // 4 bytes per int
 	if (debug) length += (echo.length*2); // 2 bytes for each char
 	var buffer = new ArrayBuffer(length);
 	var view = new Int32Array(buffer, 0, 7);
@@ -616,7 +616,7 @@ function processSimResult() {
                 return;
             } else if (result) {
                 if (!sims_left) {
-                    // 'No losses found
+                    echo = 'No losses found';
                     return;
                 } else {
                     echo = '';
@@ -633,7 +633,7 @@ function processSimResult() {
                 return;
             } else {
                 if (!sims_left) {
-                    // 'No wins found
+                    echo = 'No wins found';
                     return;
                 } else {
                     echo = '';

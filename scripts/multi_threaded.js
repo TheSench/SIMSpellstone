@@ -56,7 +56,7 @@ if (use_workers) (function () {
                     // If a worker's echo is included in results...
                     if (msg.byteLength > 28) {
                         // ... convert it from a byte array to a string
-                        var view = new Uint16Array(msg, 36);
+                        var view = new Uint16Array(msg, 28);
                         var chararray = [];
                         for (var i = 0, len = view.length; i < len; i++) {
                             chararray.push(String.fromCharCode(view[i]));
@@ -426,7 +426,7 @@ if (use_workers) (function () {
         params['surge'] = surge;
         params['debug'] = debug;
         params['loss_debug'] = loss_debug;
-        params['win_debug'] = loss_debug;
+        params['win_debug'] = win_debug;
         params['mass_debug'] = mass_debug;
         params['user_controlled'] = false;
         params['trackStats'] = trackStats;
