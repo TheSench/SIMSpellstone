@@ -1669,7 +1669,7 @@ if (simulator_thread) (function () {
     SIMULATOR.CalculatePoints = CalculatePoints;
     // public variables
     Object.defineProperties(SIMULATOR, {
-        "setupDecks": { 
+        setupDecks: { 
             get: function() { 
                 return setupDecks; 
             }, 
@@ -1677,7 +1677,7 @@ if (simulator_thread) (function () {
                 setupDecks = value;
             }
         },
-        "setupField": { 
+        setupField: { 
             get: function() { 
                 return setupField; 
             }, 
@@ -1685,7 +1685,7 @@ if (simulator_thread) (function () {
                 setupField = value;
             }
         },
-        "deck": { 
+        deck: { 
             get: function() { 
                 return deck; 
             }, 
@@ -1693,7 +1693,7 @@ if (simulator_thread) (function () {
                 deck = value;
             }
         },
-        "field": {
+        field: {
             get: function() { 
                 return field;
             }, 
@@ -1701,7 +1701,7 @@ if (simulator_thread) (function () {
                 field = value;
             }
         },
-        "battlegrounds": {
+        battlegrounds: {
             get: function() { 
                 return battlegrounds;
             }, 
@@ -1709,7 +1709,7 @@ if (simulator_thread) (function () {
                 battlegrounds = value;
             }
         },
-        "battlegrounds": {
+        battlegrounds: {
             get: function() { 
                 return battlegrounds;
             }, 
@@ -1717,7 +1717,7 @@ if (simulator_thread) (function () {
                 battlegrounds = value;
             }
         },
-        "simulation_turns": {
+        simulation_turns: {
             get: function() { 
                 return simulation_turns;
             }, 
@@ -1733,7 +1733,7 @@ if (simulator_thread) (function () {
                 simulating = value;
             }
         },
-        "totalDeckHealth": {
+        totalDeckHealth: {
             get: function() { 
                 return totalDeckHealth;
             }, 
@@ -1741,7 +1741,7 @@ if (simulator_thread) (function () {
                 totalDeckHealth = value;
             }
         },
-        "totalCpuDeckHealth": {
+        totalCpuDeckHealth: {
             get: function() { 
                 return totalCpuDeckHealth;
             }, 
