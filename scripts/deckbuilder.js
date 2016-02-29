@@ -209,9 +209,11 @@ var hash_changed = function (hash) {
 
     if (hash) {
         document.getElementById("hash").value = hash;
-        if (typeof simulatorDeckHashField !== 'undefined') simulatorDeckHashField.value = hash;
+    } else {
+        hash = document.getElementById("hash").value;
     }
-    deck = hash_decode(document.getElementById("hash").value);
+    if (typeof simulatorDeckHashField !== 'undefined') simulatorDeckHashField.value = hash;
+    deck = hash_decode(hash);
     sortDeck(deck);
 
     if (fromInventory) {
