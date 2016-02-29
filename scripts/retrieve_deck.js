@@ -23,15 +23,20 @@ var DeckRetriever = (function () {
             existingRequest = JSON.parse(existingRequest);
             existingRequest = existingRequest.request;
 
-            baseRequest.user_id = existingRequest.user_id;
-            baseRequest.password = existingRequest.password;
-            baseRequest.unity = existingRequest.unity;
-            baseRequest.client_version = existingRequest.client_version;
-            baseRequest.kong_id = existingRequest.kong_id;
-            baseRequest.kong_token = existingRequest.kong_token;
-            baseRequest.kong_name = existingRequest.kong_name;
-            baseRequest.platform = existingRequest.platform;
+            copyRequest(existingRequest);
         }
+    }
+
+    function copyRequest(existingRequest) {
+        alert("loaded");
+        baseRequest.user_id = existingRequest.user_id;
+        baseRequest.password = existingRequest.password;
+        baseRequest.unity = existingRequest.unity;
+        baseRequest.client_version = existingRequest.client_version;
+        baseRequest.kong_id = existingRequest.kong_id;
+        baseRequest.kong_token = existingRequest.kong_token;
+        baseRequest.kong_name = existingRequest.kong_name;
+        baseRequest.platform = existingRequest.platform;
     }
 
     function retrieveGuildDecks(draw, callback) {
@@ -678,6 +683,7 @@ var DeckRetriever = (function () {
         retrieveMyDeck: retrieveMyDeck,
         getFullUserData: getFullUserData,
         updateMyDeck: updateMyDeck,
+        copyRequest: copyRequest,
         factionDecks: {},
         allDecks: {},
         baseRequest: baseRequest,
