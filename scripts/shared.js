@@ -1,22 +1,20 @@
 "use strict";
 
-//function ajax_call(url) {
-//	var xmlhttp;
-//	if (window.XMLHttpRequest) {
-//		// code for IE7+, Firefox, Chrome, Opera, Safari
-//		xmlhttp=new XMLHttpRequest();
-//	} else {
-//		// code for IE6, IE5
-//		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-//	}
-//
-//	xmlhttp.open("GET", url, false);
-//	xmlhttp.send();
-//	return xmlhttp.responseText;
-//}
 Array.prototype.push = function (data) {
     this[this.length] = data;
 };
+
+if (!String.prototype.format) {
+    String.prototype.format = function () {
+        var args = arguments;
+        return this.replace(/{(\d+)}/g, function (match, number) {
+            return typeof args[number] != 'undefined'
+              ? args[number]
+              : match
+            ;
+        });
+    };
+}
 
 // GET variables
 function _GET(variable) {
