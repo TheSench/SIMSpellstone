@@ -44,56 +44,6 @@ window.onerror = function (message, url, linenumber) {
     if (current_timeout) clearTimeout(current_timeout);
 }
 
-var style;
-
-if (!String.prototype.format) {
-    String.prototype.format = function () {
-        var args = arguments;
-        return this.replace(/{(\d+)}/g, function (match, number) {
-            return typeof args[number] != 'undefined'
-              ? args[number]
-              : match
-            ;
-        });
-    };
-}
-
-var u_black = false;
-function toggle_u() {
-    if (typeof style == 'undefined') {
-        var append = true;
-        style = document.createElement('style');
-    } else {
-        while (style.hasChildNodes()) {
-            style.removeChild(style.firstChild);
-        }
-    }
-    var head = document.getElementsByTagName('head')[0];
-    var rules;
-    if (!u_black) {
-        u_black = true;
-        rules = document.createTextNode(
-			'u { text-decoration: none; font-style:normal; color: #000000; font-weight: normal; }'
-		);
-    } else {
-        u_black = false;
-        rules = document.createTextNode(
-			'u { text-decoration: none; font-style:normal; color: #dddddd; font-weight: normal; }'
-		);
-    }
-
-    style.type = 'text/css';
-    if (style.styleSheet) {
-        style.styleSheet.cssText = rules.nodeValue;
-    } else {
-        style.appendChild(rules);
-    }
-    if (append === true) head.appendChild(style);
-}
-
-// Known issues:
-// - sometimes assault card's array key doesn't match card's .key value (.key value appears more accurate)
-
 // When Page Loads...
 window.onload = function () {
 
@@ -105,8 +55,7 @@ window.onload = function () {
         for (var key in MISSIONS) {
             IDs.push(key);
         }
-        for (var i = 0; i < IDs.length; i++)
-        {
+        for (var i = 0; i < IDs.length; i++) {
             var key = IDs[i];
             var mission = MISSIONS[key];
             var option = document.createElement('option');
@@ -164,7 +113,21 @@ window.onload = function () {
 
     var c = document.getElementById('ui');
     if (!c) return 0;
-    //c.innerHTML = htmltext;
+    
+    var button = document.getElementById("generate_link");
+    if (button) button.onclick = display_generated_link;
+
+    var button = document.getElementById("btn_simulate");
+    if (button) button.onclick = SIM_CONTROLLER.startsim;
+
+    var button = document.getElementById("display_history");
+    if (button) button.onclick = display_history;
+
+    var radios = document.getElementsByName("debugMode");
+    for (var i = 0; i < radios.length; i++) {
+        var radio = radios[i];
+        radio.onclick = toggleRadio;
+    }
 
     if (_GET('deck1')) {
         var d = document.getElementById('deck');
@@ -353,6 +316,40 @@ window.onload = function () {
             body.appendChild(script);
         };
     }
+}
+
+var style;
+var u_black = false;
+function toggle_u() {
+    if (typeof style == 'undefined') {
+        var append = true;
+        style = document.createElement('style');
+    } else {
+        while (style.hasChildNodes()) {
+            style.removeChild(style.firstChild);
+        }
+    }
+    var head = document.getElementsByTagName('head')[0];
+    var rules;
+    if (!u_black) {
+        u_black = true;
+        rules = document.createTextNode(
+			'u { text-decoration: none; font-style:normal; color: #000000; font-weight: normal; }'
+		);
+    } else {
+        u_black = false;
+        rules = document.createTextNode(
+			'u { text-decoration: none; font-style:normal; color: #dddddd; font-weight: normal; }'
+		);
+    }
+
+    style.type = 'text/css';
+    if (style.styleSheet) {
+        style.styleSheet.cssText = rules.nodeValue;
+    } else {
+        style.appendChild(rules);
+    }
+    if (append === true) head.appendChild(style);
 }
 
 // Modify HTML to output simulation results
@@ -918,7 +915,8 @@ function scroll_to_end() {
     window.scrollTo(0, document.body.scrollHeight);
 }
 
-function toggleRadio(radio) {
+function toggleRadio(event) {
+    var radio = event.srcElement;
     var value = eval(radio.id);
     if (radio.checked == value) {
         radio.checked = false;
