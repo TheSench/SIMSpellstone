@@ -258,7 +258,7 @@ var BATTLE_PROCESSOR = (function () {
     }
 
     function startBattle(data) {
-        lastWinrate = -1;
+        lastWinrate = -2;
         suppressOutput = true;
         SIMULATOR.setupField = function (field) { copyField(field, false); };
         var currentSetupDecks = SIMULATOR.setupDecks;
@@ -339,7 +339,7 @@ var BATTLE_PROCESSOR = (function () {
         if (d) d.checked = true;
     }
 
-    var lastWinrate = -1;
+    var lastWinrate = -2;
     function checkBest(playCard) {
         var avgPoints = -99;
         var winrate = -1;
