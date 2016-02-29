@@ -860,12 +860,12 @@ function open_deck_builder(name, hash, inventory, deckHashField) {
     var win = window.open(url, '', windowFeatures);
     win.moveTo(left, top);
     // Push values to window once it has loaded
-    $(win).ready((function (name, deckHashField, baseRequest) {
+    $(win).load((function (name, deckHashField, baseRequest) {
         return function () {
             // Tie deck-builder back to the hash field in the simulator.
             if (deckHashField) win.simulatorDeckHashField = deckHashField;
             // Link deckbuilder to base request data.
-            if (inventory) $.extend(win.DeckRetriever.baseRequest, baseRequest);
+            if (inventory) win.DeckRetriever.copyRequest(baseRequest);
         }
     })(name, deckHashField, baseRequest));
     var breakpoint = true;

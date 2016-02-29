@@ -1172,9 +1172,3 @@ function setDeckName(name) {
     var lbl = document.getElementById("version_label");
     lbl.innerHTML += " " + name;
 }
-
-function init(name, deckHashField, baseRequest) {
-    if (name) setDeckName(name);
-    if (deckHashField) simulatorDeckHashField = deckHashField;
-    $.extend(DeckRetriever.baseRequest, baseRequest);
-}
