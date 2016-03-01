@@ -108,7 +108,7 @@
     <h4 id="version_label2"></h4>
     <div id="remaining" style="display:none"></div>
     <br />
-    <span id="ui">
+    <div id="ui">
         <form>
             <br/>
             <div><b>Response JSON:</b></div><input id="request_json" type="text" value="" size="50" onchange="DeckRetriever.getFieldsFromRequest();"><br />
@@ -122,7 +122,7 @@
         </form>
         <br />
         <form>
-            <input style="float:initial" id="btn_simGuild" type="button" value="Optimize" onclick="return Optimize();" style="text-align: center; font-weight: bold;">
+            <input style="float:initial; text-align: center; font-weight: bold" id="btn_simGuild" type="button" value="Optimize" onclick="return Optimize();">
             <div><label class="button" onclick="load_deck_builder_for_field('optimizer_cards');"><b>Card Hash</b></label></div><input id="optimizer_cards" type="text" value="" size="50"><br>
         </form>
         <br/>
@@ -179,7 +179,7 @@
             <br>
             <div>&nbsp;</div><input id="btn_simulate" type="button" value="Simulate" style="text-align: center; font-weight: bold;"> <input type="button" id="generate_link" value="Generate Link" style="text-align: center; font-weight: normal;"> <input type="button" id="display_history" value="History" style="text-align: center; font-weight: normal;">
         </form>
-    </span>
+    </div>
     <br />
     <span id="content"></span>
     <br>

@@ -26,7 +26,7 @@
 <body>
     <h1 id="version_label">Deck Retriever</h1>
     <br>
-    <span>
+    <div>
         <form>
             <div><b>Response JSON:</b></div><input id="request_json" type="text" value="" size="50" onchange="DeckRetriever.getFieldsFromRequest();"><br>
         </form>
@@ -37,7 +37,7 @@
             <input id="btn_simulate" type="button" value="Just My Deck" onclick="return DeckRetriever.retrieveMyDeck();" style="text-align: center; font-weight: bold;">
             <input id="btn_simulate" type="button" value="Get My Inventory" onclick="return DeckRetriever.getFullUserData();" style="text-align: center; font-weight: bold;">
         </form>
-    </span>
+    </div>
     <br>
     <span id="deck"></span>
     <div class="modal"><span>Loading...</span></div>
