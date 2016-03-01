@@ -1190,6 +1190,20 @@ function hash_encode(deck, combineMultiples) {
     return current_hash;
 }
 
+function areEqual(unitInfo1, unitInfo2) {
+    if ((!unitInfo1) != (!unitInfo2)) return false;
+    if (!unitInfo1) return true;
+    if (unitInfo1.id != unitInfo2.id) return false;
+    if (unitInfo1.level != unitInfo2.level) return false;
+    if (unitInfo1.runes.length != unitInfo2.runes.length) return false;
+    for (var i = 0; i < unitInfo1.runes.length; i++) {
+        var runeID1 = unitInfo1.runes[i].id;
+        var runeID2 = unitInfo2.runes[i].id;
+        if (runeID1 != runeID2) return false;
+    }
+    return true;
+}
+
 //Returns deck array built from hash
 function hash_decode(hash) {
 

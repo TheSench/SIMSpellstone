@@ -193,7 +193,7 @@ var DeckRetriever = (function () {
             unit_index: index,
         }
 
-        DisplayLoadingSplash(); 
+        DisplayLoadingSplash();
         setTimeout(function () {
             sendRequest('upgradeUnit', params);
         }, 1);
@@ -211,9 +211,37 @@ var DeckRetriever = (function () {
         }, 1);
     }
 
+    function getUserAccount(callback) {
+        var params = {
+            os_version: "Windows 8.1  (6.3.9600) 64bit",
+            device_type: "Intel(R) Core(TM) i5-4570 CPU @ 3.20GHz (7986 MB)",
+            platform: "web"
+        }
+
+        // Reset these
+        delete baseRequest.api_stat_name;
+        delete baseRequest.api_stat_time;
+
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('getUserAccount', params, function (response) {
+                checkResponse(response, callback);
+            });
+        }, 1);
+    }
+
+    function init(callback) {
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('init', null, function (response) {
+                checkResponse(response, callback);
+            });
+        }, 1);
+    }
+
     function getFullUserData() {
         CARD_GUI.clearDeckSpace();
-        
+
         DisplayLoadingSplash();
         setTimeout(function () {
             sendRequest('init', null, function (response) {
@@ -341,7 +369,7 @@ var DeckRetriever = (function () {
             setTimeout(BattleAPI.noEnergy, 2000);
         }
     }
-    
+
     function doStartClashBattle() {
         smartAI = true;
         DisplayLoadingSplash();
@@ -456,7 +484,7 @@ var DeckRetriever = (function () {
     }
 
     function getFactionMembers(draw, callback) {
-        
+
         DisplayLoadingSplash();
         setTimeout(function () {
             sendRequest('updateFaction', null, function (response) {
@@ -516,7 +544,7 @@ var DeckRetriever = (function () {
             for (var key in decks) {
                 getDeckFromFile(key, decks[key], draw);
             }
-            if(callback) callback();
+            if (callback) callback();
         };
         reader.readAsText(file);
     }
@@ -526,7 +554,7 @@ var DeckRetriever = (function () {
             target_user_id: target_user_id
         }
 
-        sendRequest('getProfileData',  params, function (response) {
+        sendRequest('getProfileData', params, function (response) {
             if (draw) {
                 onGetUserDeck(response);
             } else {
@@ -568,7 +596,7 @@ var DeckRetriever = (function () {
             var unit = units[i];
             var runes = unit.runes;
             unit = makeUnitInfo(unit.unit_id, unit.level);
-            for(var key in runes) {
+            for (var key in runes) {
                 unit.runes.push({ id: runes[key].item_id });
             }
             deck.deck.push(unit);
@@ -675,6 +703,8 @@ var DeckRetriever = (function () {
     }
 
     var publicInfo = {
+        getUserAccount: getUserAccount,
+        init: init,
         getFieldsFromRequest: getFieldsFromRequest,
         getFactionMemberIDs: getFactionMemberIDs,
         retrieveGuildDecks: retrieveGuildDecks,

@@ -90,6 +90,18 @@ var BATTLE_PROCESSOR = (function () {
         reader.readAsText(file);
     }
 
+    var initialized = false;
+    module.startBattles = function () {
+        if (!initialized) {
+            initialized = true;
+            DeckRetriever.getUserAccount(function () {
+                DeckRetriever.init(module.fight);
+            });
+        } else {
+            module.fight(false);
+        }
+    }
+
     var lastID = 0;
     var continues = 0;
     module.fight = function (isContinue) {
