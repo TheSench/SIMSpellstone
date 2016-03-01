@@ -1240,11 +1240,11 @@ function hash_decode(hash) {
         } else {
             var multiplier = decode_multiplier(hash.substr(i, 2)) + 1;
             for (var n = 0; n < multiplier; n++) {
+                var duplicate = makeUnitInfo(unitInfo.id, unitInfo.level);
                 if (indexes) {
-                    var unit_info = makeUnitInfo(unitInfo.id, unitInfo.level);
-                    unitInfo.index = base64ToNumber(indexes[unitidx - 1]); // Skip commander
+                    duplicate.index = base64ToNumber(indexes[unitidx - 1]); // Skip commander
                 }
-                current_deck.deck.push(unitInfo);
+                current_deck.deck.push(duplicate);
                 unitidx++;
             }
             i -= 1; // Offset i so that the += 3 in the loop sets it to the correct next index
