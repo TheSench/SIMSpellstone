@@ -107,7 +107,7 @@ var DeckRetriever = (function () {
             var response = JSONPResponse;
             console.log('callback success');
             baseRequest.api_stat_name = messageType;
-            baseRequest.api_stat_time = (new Date().getTime() - startTime);
+            baseRequest.api_stat_time = (Date.now() - startTime);
             if (response.result === false) {
                 if (response.result_message[0] == "Please try again in a moment.") {
                     setTimeout(sendRequest, 1, messageType, params, callback);
@@ -157,7 +157,7 @@ var DeckRetriever = (function () {
 
     function checkResponse(response, callback, failureCallback) {
         if (response.result || response.result === undefined) {
-            callback(response);
+            if(callback) callback(response);
         } else {
             if (failureCallback) {
                 failureCallback(response);
@@ -211,7 +211,8 @@ var DeckRetriever = (function () {
         }, 1);
     }
 
-    function getUserAccount(callback) {
+    //-- Startup Functions
+    function getUserAccount() {
         var params = {
             os_version: "Windows 8.1  (6.3.9600) 64bit",
             device_type: "Intel(R) Core(TM) i5-4570 CPU @ 3.20GHz (7986 MB)",
@@ -225,19 +226,56 @@ var DeckRetriever = (function () {
         DisplayLoadingSplash();
         setTimeout(function () {
             sendRequest('getUserAccount', params, function (response) {
-                checkResponse(response, callback);
+                checkResponse(response, init);
             });
         }, 1);
     }
 
-    function init(callback) {
+    var timeStart;
+    function init() {
+        timeStart = Date.now();
         DisplayLoadingSplash();
         setTimeout(function () {
             sendRequest('init', null, function (response) {
-                checkResponse(response, callback);
+                checkResponse(response, handleAutoUseItems);
             });
         }, 1);
     }
+
+    function handleAutoUseItems() {
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('handleAutoUseItems', null, function (response) {
+                checkResponse(response, recordStartup);
+            });
+        }, 1);
+    }
+
+    function recordStartup() {
+        var params = {
+            startup: 1,
+            init: 1,
+            category: "app_event",
+            time_to_load: (Date.now() - timeStart)
+        };
+
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('recordEvent', params, function (response) {
+                checkResponse(response, updateEvents);
+            });
+        }, 1);
+    }
+
+    function updateEvents() {
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('updateEvents', null, function (response) {
+                checkResponse(response);
+            });
+        }, 1);
+    }
+    //-- End Startup Functions
 
     function getFullUserData() {
         CARD_GUI.clearDeckSpace();

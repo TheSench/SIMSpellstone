@@ -161,6 +161,7 @@ var BATTLE_PROCESSOR = (function () {
             }
         } else if (data.result == undefined) {
             alert("Loaded");
+            DeckRetriever.getUserAccount();
         }
     }
 
