@@ -1097,7 +1097,8 @@ var sortCards = function (select) {
             return sortByID(unitA, unitB);
         }
     });
-    CARD_GUI.draw_card_list(unitsShown, document.getElementById("skillDetails").checked, addToDeck);
+    var detailedSkills = document.getElementById("skillDetails").checked;
+    CARD_GUI.draw_card_list(unitsShown, detailedSkills, addToDeck);
     applyFilters();
 }
 
