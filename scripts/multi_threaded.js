@@ -71,6 +71,11 @@ if (use_workers) (function () {
                         display_debug_results(num_wins, num_draws);
                     } else if (!sims_left) {
                         display_final_results();
+                    } else if (debug && (win_debug || loss_debug)) {
+                        if ( (win_debug && num_wins) || (loss_debug && (num_losses || num_draws)) ){
+                            SIM_CONTROLLER.stopsim(1);
+                            display_final_results();
+                        }
                     }
                     break;
                 case STATS:

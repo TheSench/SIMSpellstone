@@ -529,7 +529,7 @@ SIM_CONTROLLER.stopsim = function (){
 // Initializes a single simulation - runs once before each individual simulation
 // - needs to reset the decks and fields before each simulation
 function run_sim() {
-
+    if (captureSeed) captureSeed = Math.seedrandom();
     SIMULATOR.simulation_turns = 0;
 
 	// Reset battleground effect
@@ -605,7 +605,7 @@ function processSimResult() {
 
     if (trackStats) SIMULATOR.updateStats(result, points);
 
-    if (debug) {
+    if (debug || captureSeed) {
         if (!mass_debug && !loss_debug && !win_debug) {
             sims_left = 0;
             return;
@@ -616,7 +616,7 @@ function processSimResult() {
                 return;
             } else if (result) {
                 if (!sims_left) {
-                    echo = 'No losses found';
+                    //echo = 'No losses found';
                     return;
                 } else {
                     echo = '';
@@ -633,7 +633,7 @@ function processSimResult() {
                 return;
             } else {
                 if (!sims_left) {
-                    echo = 'No wins found';
+                    //echo = 'No wins found';
                     return;
                 } else {
                     echo = '';
@@ -679,6 +679,7 @@ function runBatches(total_remaining) {
 }
 
 // Initialize simulation loop - runs once per simulation batch
+var captureSeed = false;
 function run_sims() {
     total_turns = 0;
     total_points = 0;
@@ -690,8 +691,21 @@ function run_sims() {
 	draws = 0;
 	orders = {};
 
+	if (debug && (win_debug || loss_debug)) {
+	    debug = false;
+	    captureSeed = true;
+	}
+
 	while (sims_left) {
 	    run_sim();
+	}
+	if (captureSeed) {
+	    if ((win_debug && wins)||(loss_debug && (losses||draws))) {
+	        debug = true;
+	        Math.seedrandom(captureSeed);
+	        captureSeed = false;
+	        run_sim();
+	    }
 	}
 }
 
@@ -733,4 +747,5 @@ var running = false;
 var simulator_thread = true;
 var orders = {};
 
+importScripts('//cdnjs.cloudflare.com/ajax/libs/seedrandom/2.4.0/seedrandom.min.js');
 importScripts('simulator_base.js', 'shared.js', 'data/runes.js', 'data/raids.js');
