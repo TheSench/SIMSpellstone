@@ -126,6 +126,17 @@ var drawDeck = function () {
     updateHash();
 };
 
+function getFromInventory(unit) {
+    for (var i = 0, len = unitsShown.length; i < len; i++) {
+        var unit_i = unitsShown[i];
+        if (areEqual(unit, unit_i)) {
+            unitsShown.splice(i, 1);
+            return unit_i;
+        }
+    }
+    return unit;
+}
+
 var drawCardList = function () {
 
     units = [];
@@ -137,6 +148,11 @@ var drawCardList = function () {
         inventory = hash_decode(inventory).deck;
         for (var i = 0; i < inventory.length; i++) {
             addInventoryUnit(inventory[i]);
+        }
+        deck.commander = getFromInventory(deck.commander);
+        for (var i = 0; i < deck.deck.length; i++) {
+            var unit = deck.deck[i];
+            deck.deck[i] = getFromInventory(unit);
         }
     } else {
         var onlyNew = false;
@@ -158,6 +174,11 @@ var drawCardList = function () {
 
     CARD_GUI.draw_card_list(unitsShown, false, addToDeck);
     if (inventory) {
+        deck.commander = removeFromInventory(deck.commander);
+        for (var i = 0; i < deck.deck.length; i++) {
+            deck.deck[i] = removeFromInventory(deck.deck[i]);
+        }
+        /*
         var unitsToHide = deck.deck.slice();
         unitsToHide.push(deck.commander);
         for (var i = 0; i < unitsToHide.length; i++) {
@@ -171,7 +192,15 @@ var drawCardList = function () {
                 }
             }
         }
+        */
     }
+}
+
+function redrawCardList() {
+    sortCards(document.getElementById("sortField"));
+    var detailedSkills = document.getElementById("skillDetails").checked;
+    CARD_GUI.draw_card_list(unitsShown, detailedSkills, addToDeck);
+    applyFilters();
 }
 
 var addInventoryUnit = function (unit) {
@@ -200,13 +229,6 @@ var addUnitLevels = function (id, maxlevel) {
 
 var hash_changed = function (hash) {
 
-    if (fromInventory) {
-        var pickedCards = document.getElementsByClassName("picked");
-        while (pickedCards.length > 0) {
-            pickedCards[0].classList.remove("picked");
-        }
-    }
-
     if (hash) {
         document.getElementById("hash").value = hash;
     } else {
@@ -217,6 +239,22 @@ var hash_changed = function (hash) {
     sortDeck(deck);
 
     if (fromInventory) {
+        /*
+        var pickedCards = document.getElementsByClassName("picked");
+        while (pickedCards.length > 0) {
+            pickedCards[0].classList.remove("picked");
+        }
+        */
+        // Reset which units show up in inventory
+        unitsShown = [];
+        for (var i = 0, len = units.length; i < len; i++) {
+            unitsShown.push(units[i]);
+        }
+        deck.commander = removeFromInventory(deck.commander);
+        for (var i = 0; i < deck.deck.length; i++) {
+            deck.deck[i] = removeFromInventory(deck.deck[i]);
+        }
+        /*
         var unitsToHide = deck.deck.slice();
         unitsToHide.push(deck.commander);
         for (var i = 0; i < unitsToHide.length; i++) {
@@ -230,9 +268,11 @@ var hash_changed = function (hash) {
                 }
             }
         }
+        */
     }
 
     CARD_GUI.draw_deck(deck, removeFromDeck, showCardOptions);
+    redrawCardList();
 }
 
 var sortDeck = function (deck) {
@@ -257,6 +297,10 @@ var sortDeck = function (deck) {
 
 var addToDeck = function (htmlCard) {
     var unit = getUnitFromCard(htmlCard);
+    if (fromInventory) {
+        //htmlCard.classList.add("picked");
+        unit = removeFromInventory(unit);
+    }
     if (is_commander(unit.id)) {
         deck.commander = unit;
     } else {
@@ -264,10 +308,21 @@ var addToDeck = function (htmlCard) {
         deck.deck.push(unit);
     }
     sortDeck(deck);
-    if (fromInventory) htmlCard.classList.add("picked");
     CARD_GUI.draw_deck(deck, removeFromDeck, showCardOptions);
+    redrawCardList();
     updateHash();
 };
+
+function removeFromInventory(unit) {
+    for (var i = 0; i < unitsShown.length; i++) {
+        var unit_i = unitsShown[i];
+        if (areEqual(unit, unit_i)) {
+            var removed = unitsShown.splice(i, 1);
+            return removed[0];
+        }
+    }
+    return unit;
+}
 
 var removeFromDeck = function (htmlCard, index) {
     if (htmlCard.classList.contains('commander')) {
@@ -277,6 +332,8 @@ var removeFromDeck = function (htmlCard, index) {
     }
     if (fromInventory) {
         var unit = getUnitFromCard(htmlCard);
+        unitsShown.push(unit);
+        /*
         var cards = $("#cardSpace [data-id=" + unit.id + "][data-level=" + unit.level + "]");
         for (var i = 0; i < cards.length; i++) {
             var card = cards[i];
@@ -285,8 +342,10 @@ var removeFromDeck = function (htmlCard, index) {
                 break;
             }
         }
+        */
     }
     CARD_GUI.draw_deck(deck, removeFromDeck, showCardOptions);
+    redrawCardList();
     updateHash();
 };
 
@@ -1080,6 +1139,13 @@ var toggleCardDisplay = function (img) {
 }
 
 var sortCards = function (select) {
+    doSort(select);
+    var detailedSkills = document.getElementById("skillDetails").checked;
+    CARD_GUI.draw_card_list(unitsShown, detailedSkills, addToDeck);
+    applyFilters();
+}
+
+function doSort(select) {
     var sortField = select.value;
     unitsShown.sort(function (unitA, unitB) {
         // Always sort by commander/unit first
@@ -1097,9 +1163,6 @@ var sortCards = function (select) {
             return sortByID(unitA, unitB);
         }
     });
-    var detailedSkills = document.getElementById("skillDetails").checked;
-    CARD_GUI.draw_card_list(unitsShown, detailedSkills, addToDeck);
-    applyFilters();
 }
 
 var sortByID = function (unitA, unitB) {
@@ -1121,7 +1184,18 @@ var sortByID = function (unitA, unitB) {
     }
     var comparison = baseIDA - baseIDB;
     if (comparison != 0) return comparison;
-    return fusionA - fusionB;
+    comparison = fusionA - fusionB;
+    if (comparison != 0) return comparison;
+    comparison = unitA.level - unitB.level;
+    if (comparison != 0) return comparison;
+    return sortByRunes(unitA, unitB);
+}
+
+function sortByRunes(unitA, unitB) {
+    var comparison = unitA.runes.length - unitB.runes.length;
+    if (comparison != 0) return comparison;
+    if (!unitA.runes.length) return 0;
+    return unitA.runes[0].id - unitB.runes[0].id;
 }
 
 var makeUnitKey = function (unit) {
@@ -1141,23 +1215,22 @@ var getUnitFromCard = function (htmlCard) {
             runes.push({ id: runeID });
         }
     }
+    var index = htmlCard.attributes.getNamedItem("data-index");
+    if(index) {
+        unit.index = index.value;
+    }
     unit.runes = runes;
     return unit;
 }
 
 var updateDeck = function () {
-    var deck = $(".picked");
-    if (deck.length == 16) {
-        var newDeck = [];
-        var newCommander;
-        for (var i = 0; i < deck.length; i++) {
-            var htmlCard = deck[i];
-            if (htmlCard.classList.contains("commander")) {
-                newCommander = htmlCard.attributes.getNamedItem("data-index").value;
-            } else {
-                newDeck.push(htmlCard.attributes.getNamedItem("data-index").value)
-            }
-        }
+    var newDeck = [];
+    var newCommander = deck.commander.index;
+    for (var i = 0; i < deck.deck.length; i++) {
+        var unit = deck.deck[i];
+        newDeck.push(unit.index);
+    }
+    if (newDeck.length == 15) {
         newDeck = "[" + newDeck.join() + "]";
         DeckRetriever.updateMyDeck(newCommander, newDeck);
     }
