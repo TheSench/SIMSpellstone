@@ -431,11 +431,14 @@ var BATTLE_PROCESSOR = (function () {
             }
         }
 
-        if (areCommandersAlive()) {
+        
+        if (!areCommandersAlive()) {
+            battleFinished(lastTurn);
+        } else if (data.battle_data.winner !== undefined) {
+            battleFinished(lastTurn, true);
+        } else {
             resetKeys();
             SIM_CONTROLLER.startsim();
-        } else {
-            battleFinished();
         }
     }
 
