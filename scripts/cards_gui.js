@@ -45,14 +45,41 @@ var CARD_GUI = {};
         var cardSpace = document.getElementById("cardSpace");
         cardSpace.innerHTML = '';
         var cards = createDiv("float-left");
+        var htmlCard;
+        var lastUnit;
+        var multiplier;
         for (var i = 0, len = list.length; i < len; i++) {
             var listEntry = list[i];
             var unit = get_card_by_id(listEntry);
-            var htmlCard = create_card_html(unit, compactSkills, false, onclick, onrightclick);
+            if (areEqual(unit, lastUnit)) {
+                multiplier++;
+            } else {
+                if (multiplier > 1) {
+                    var multDiv = createDiv("multiplier", "x" + multiplier);
+                    var multIcon = createImg("res/cardAssets/multiplier.png", "multiplier");
+                    htmlCard.appendChild(multIcon);
+                    htmlCard.appendChild(multDiv);
+                }
+                multiplier = 1;
+                htmlCard = create_card_html(unit, compactSkills, false, onclick, onrightclick);
+                if (listEntry.index !== undefined) {
+                    htmlCard.setAttribute("data-index", listEntry.index);
+                }
+                cards.appendChild(htmlCard);
+                lastUnit = unit;
+            }
+        }
+        if (multiplier > 1) {
+            htmlCard = create_card_html(unit, compactSkills, false, onclick, onrightclick);
+            var multDiv = createDiv("multiplier", "x" + multiplier);
+            var multIcon = createImg("res/cardAssets/multiplier.png", "multiplier");
+            htmlCard.appendChild(multIcon);
+            htmlCard.appendChild(multDiv);
             if (listEntry.index !== undefined) {
                 htmlCard.setAttribute("data-index", listEntry.index);
             }
             cards.appendChild(htmlCard);
+            lastUnit = unit;
         }
         cardSpace.appendChild(cards);
     }

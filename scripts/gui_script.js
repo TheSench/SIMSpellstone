@@ -845,6 +845,9 @@ function open_deck_builder(name, hash, inventory, deckHashField) {
     if (name) {
         parameters.push("name=" + name);
     }
+    if (_DEFINED("ajax")) {
+        parameters.push("ajax");
+    }
     if (parameters.length > 0) {
         url += '?' + parameters.join('&');
     }
