@@ -35,10 +35,7 @@ var BATTLE_PROCESSOR = (function () {
     var noCapTimer = null;
     function noEnergy(response) {
         var battleType = document.getElementById("battleType").value;
-        if (battleType == "startCampaignBattle") {
-            document.getElementById("battleType").value = "startBountyBattle";
-            module.fight();
-        } else if (battleType == "startBountyBattle") {
+        if (battleType == "startBountyBattle" || _DEFINED("campaign")) {
             document.getElementById("battleType").value = "startCampaignBattle";
             // Alert when the next check will be
             var addTime = 1000 * 60 * 60 * 3;
@@ -47,6 +44,9 @@ var BATTLE_PROCESSOR = (function () {
             alert(dateObj);
 
             noCapTimer = setTimeout(module.fight, addTime);//7200000);
+        } else if (battleType == "startCampaignBattle") {
+            document.getElementById("battleType").value = "startBountyBattle";
+            module.fight();
         } else {
             alert(response.result_message[0]);
         }
