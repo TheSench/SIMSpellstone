@@ -254,6 +254,7 @@ var hash_changed = function (hash) {
         for (var i = 0; i < deck.deck.length; i++) {
             deck.deck[i] = removeFromInventory(deck.deck[i]);
         }
+        redrawCardList();
         /*
         var unitsToHide = deck.deck.slice();
         unitsToHide.push(deck.commander);
@@ -272,7 +273,6 @@ var hash_changed = function (hash) {
     }
 
     CARD_GUI.draw_deck(deck, removeFromDeck, showCardOptions);
-    redrawCardList();
 }
 
 var sortDeck = function (deck) {
@@ -300,6 +300,7 @@ var addToDeck = function (htmlCard) {
     if (fromInventory) {
         //htmlCard.classList.add("picked");
         unit = removeFromInventory(unit);
+        redrawCardList();
     }
     if (is_commander(unit.id)) {
         deck.commander = unit;
@@ -309,7 +310,6 @@ var addToDeck = function (htmlCard) {
     }
     sortDeck(deck);
     CARD_GUI.draw_deck(deck, removeFromDeck, showCardOptions);
-    redrawCardList();
     updateHash();
 };
 
@@ -333,6 +333,7 @@ var removeFromDeck = function (htmlCard, index) {
     if (fromInventory) {
         var unit = getUnitFromCard(htmlCard);
         unitsShown.push(unit);
+        redrawCardList();
         /*
         var cards = $("#cardSpace [data-id=" + unit.id + "][data-level=" + unit.level + "]");
         for (var i = 0; i < cards.length; i++) {
@@ -345,7 +346,6 @@ var removeFromDeck = function (htmlCard, index) {
         */
     }
     CARD_GUI.draw_deck(deck, removeFromDeck, showCardOptions);
-    redrawCardList();
     updateHash();
 };
 
