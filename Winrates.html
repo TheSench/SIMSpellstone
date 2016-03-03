@@ -113,7 +113,11 @@
             <br/>
             <div><b>Response JSON:</b></div><input id="request_json" type="text" value="" size="50" onchange="DeckRetriever.getFieldsFromRequest();"><br />
             <div>&nbsp;</div><input id="btn_retrieveDecks" type="button" value="Retrieve Guild Decks" onclick="return LoadGuildDecks();" style="float:initial; text-align: center; font-weight: bold;">
-            <input id="deckFile" type="file" onclick="clearSelection();" onchange="LoadFileDecks(this);" style="float:initial; text-align: center; font-weight: bold;">
+            <input id="deckFile" type="file" onclick="clearSelection(this);" onchange="    LoadFileDecks(this);" style="float:initial; text-align: center; font-weight: bold;">
+            <br/>
+            <div>Attack Decks:</div><input id="attackDeckFile" type="file" onclick="clearSelection(this);" onchange="LoadFileDecksAttackDef(this, true);" style="float:initial; text-align: center; font-weight: bold;">
+            <br/>
+            <div>Defense Decks:</div><input id="defendDeckFile" type="file" onclick="clearSelection(this);" onchange="LoadFileDecksAttackDef(this, false);" style="float:initial; text-align: center; font-weight: bold;">
         </form>
         <br />
         <form>
@@ -185,7 +189,7 @@
     <br>
     <span id="cardSpace"></span>
     <br>
-    <span id="stop" style="display: none;"><input type="button" value="Stop Sim(s)" onclick="SIM_CONTROLLER.stopsim()"><br>TIP: Switching browser tabs may cause your simulation to pause!</span>
+    <span id="stop" style="display: none;"><input type="button" value="Stop Sim(s)" onclick="SIM_CONTROLLER.stopsim()"><br>TIP: Switching browser tabs may cause your simulation to pause!</span><input id="pauseResume" type="button" value="Pause Sim(s)" onclick="pauseFights()" style="display:none;">
     <br>
     <div id="results_table"></div>
     <br />

@@ -16,8 +16,8 @@ function LoadGuildDecks() {
     DeckRetriever.retrieveGuildDecks(false);
 }
 
-function clearSelection() {
-    $("#deckFile").val('');
+function clearSelection(chooser) {
+    chooser.value = '';
 }
 
 function LoadFileDecks(fileChooser) {
@@ -28,6 +28,26 @@ function LoadFileDecks(fileChooser) {
     } else {
         alert('The File APIs are not fully supported by your browser.');
     }
+}
+
+function LoadFileDecksAttackDef(fileChooser, isAttacker) {
+    if (window.File && window.FileReader && window.FileList && window.Blob) {
+        //Retrieve the first (and only!) File from the FileList object
+        var f = fileChooser.files[0];
+        DeckRetriever.getDecksfromFile(f, false, (isAttacker ? setAttackDecks : setDefenseDecks));
+    } else {
+        alert('The File APIs are not fully supported by your browser.');
+    }
+}
+
+function setAttackDecks() {
+    DeckRetriever.attackDecks = DeckRetriever.allDecks;
+    DeckRetriever.allDecks = {};
+}
+
+function setDefenseDecks() {
+    DeckRetriever.defenseDecks = DeckRetriever.allDecks;
+    DeckRetriever.allDecks = {};
 }
 
 function RunGuildSIMS() {
@@ -43,11 +63,25 @@ function RunGuildSIMS() {
         DeckRetriever.allDecks[key] = DeckRetriever.factionDecks[key];
     }
 
+
     var attacker = checkForSpecifiedAttacker();
+    if (!attacker) {
+        for (var key in DeckRetriever.attackDecks) {
+            DeckRetriever.allDecks[key] = DeckRetriever.attackDecks[key];
+            attacker = true;
+        }
+    }
+
     var defender = checkForSpecifiedDefender();
+    if (!defender) {
+        for (var key in DeckRetriever.defenseDecks) {
+            DeckRetriever.allDecks[key] = DeckRetriever.defenseDecks[key];
+            defender = true;
+        }
+    }
 
     var decks = DeckRetriever.factionDecks;
-    for (var key in decks) {
+    if(!attacker || !defender) for (var key in decks) {
         if (!attacker) attackerKeys.push(key);
         if (!defender) defenderKeys.push(key);
     }
@@ -55,12 +89,20 @@ function RunGuildSIMS() {
     attackerKeys.sort(caselessCompare);
     defenderKeys.sort(caselessCompare);
 
-    if (attacker) {
+    if (attacker === true) {
+        for (var key in DeckRetriever.attackDecks) {
+            attackerKeys.push(key);
+        }
+    } else if(attacker) {
         var key = 'CustomAttackDeck';
         attackerKeys.push(key);
         DeckRetriever.allDecks[key] = attacker;
     }
-    if (defender) {
+    if (defender === true) {
+        for (var key in DeckRetriever.defenseDecks) {
+            defenderKeys.push(key);
+        }
+    } else if (defender) {
         var key = 'CustomDefenseDeck';
         defenderKeys.push(key);
         DeckRetriever.allDecks[key] = defender;
@@ -83,7 +125,10 @@ function Optimize(field) {
 }
 
 function nextEvolution(isFirst) {
-    if (!extraCards.length) return;
+    if (!extraCards.length) {
+        var button = document.getElementById("pauseResume").style.display = "none";
+        return;
+    }
 
     var best;
     if (!isFirst) {
@@ -163,6 +208,7 @@ function getAverage(attacker) {
 }
 
 function RunGuildSIMSs() {
+
     // Remove previous winrate table
     document.getElementById("results_table").innerHTML = '';
 
@@ -259,12 +305,20 @@ function clearFields() {
     if (clearList2) document.getElementById('cardlist2').value = '';
 }
 
+var paused = false;
 function nextFight(attackKey, defendKey, sortByWins) {
+    if (paused) {
+        setupResume(attackKey, defendKey, sortByWins);
+        return;
+    }
+
     if (defendKey >= 0) {
         var attacker = attackerKeys[attackKey];
         var defender = defenderKeys[defendKey];
         if (!winrates[attacker]) winrates[attacker] = {};
         winrates[attacker][defender] = (wins / games * 100);
+    } else {
+        var button = document.getElementById("pauseResume").style.display = "block";
     }
 
     defendKey++;
@@ -341,6 +395,22 @@ function nextFight(attackKey, defendKey, sortByWins) {
     clearFields();
     SIM_CONTROLLER.end_sims_callback = false;
     nextEvolution();
+}
+
+function setupResume(attackKey, defendKey, sortByWins) {
+    var button = document.getElementById("pauseResume");
+    button.value = "Resume";
+    document.getElementById("ui").style.display = "none";
+    button.onclick = function () {
+        paused = false;
+        nextFight(attackKey, defendKey, sortByWins);
+        button.onclick = pauseFights;
+        button.value = "Pause";
+    }
+}
+
+function pauseFights() {
+    paused = true;
 }
 
 function getCurrentMatch(attackKey, defendKey) {

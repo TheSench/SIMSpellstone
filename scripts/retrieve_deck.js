@@ -71,6 +71,37 @@ var DeckRetriever = (function () {
         baseURL = "https://crossorigin.me/https://spellstone.synapse-games.com/api.php?";
     }
 
+    function createCORSRequest(method, url) {
+        var xhr = new XMLHttpRequest();
+        if ("withCredentials" in xhr) {
+
+            // Check if the XMLHttpRequest object has a "withCredentials" property.
+            // "withCredentials" only exists on XMLHTTPRequest2 objects.
+            xhr.open(method, url, true);
+
+        } else if (typeof XDomainRequest != "undefined") {
+
+            // Otherwise, check if XDomainRequest.
+            // XDomainRequest only exists in IE, and is IE's way of making CORS requests.
+            xhr = new XDomainRequest();
+            xhr.open(method, url);
+
+        } else {
+
+            // Otherwise, CORS is not supported by the browser.
+            xhr = null;
+
+        }
+        return xhr;
+    }
+
+    /*
+    var xhr = createCORSRequest('GET', "https://spellstone.synapse-games.com/");
+    if (!xhr) {
+        throw new Error('CORS not supported');
+    }
+    */
+
     function sendRequest(messageType, params, callback) {
         var now = Date.now();
         var ellapsed = now - lastAPICall;
@@ -124,7 +155,7 @@ var DeckRetriever = (function () {
         var startTime = new Date().getTime();
 
         $.ajax({
-            url: baseURL + params,
+            url: url,
             async: false,
             cache: false,
             dataType: 'json', /* Optional - jQuery autodetects this by default */
@@ -152,6 +183,25 @@ var DeckRetriever = (function () {
                 console.log('callback error');
                 HideLoadingSplash();
             }
+        });
+    }
+
+    function getJSON(url, messageType, params, callback) {
+        var startTime = new Date().getTime();
+
+        $.getJSON(url, function (response) {
+            makingAPICall = false;
+            console.log('callback success');
+            baseRequest.api_stat_name = messageType;
+            baseRequest.api_stat_time = (new Date().getTime() - startTime);
+            if (response.result === false) {
+                if (response.result_message[0] == "Please try again in a moment.") {
+                    setTimeout(sendRequest, 1, messageType, params, callback);
+                    return null;
+                }
+            }
+            callback(response);
+            HideLoadingSplash();
         });
     }
 
@@ -291,6 +341,7 @@ var DeckRetriever = (function () {
     var energy = {
         campaign: 0,
         clash: 0,
+        war: 0,
         raid: 0,
     };
     //-- Campaign
@@ -326,7 +377,7 @@ var DeckRetriever = (function () {
                 processHuntingTargets(response);
                 if (fightFirst && !startFirstBountyBattle()) {
                     alert("No targets at this time");
-                    setTimeout(BattleAPI.noEnergy, 2000);
+                    setTimeout(BattleAPI.noEnergy, 2000, response);
                 }
             });
         }, 1);
@@ -365,6 +416,45 @@ var DeckRetriever = (function () {
 
     //-- Guild War
     function startGuildWarBattle() {
+        if (energy.war > 0) {
+            doStartGuildWarBattle();
+        } else {
+            getGuildWarStatus(true);
+        }
+    }
+
+    function getGuildWarStatus(fight) {
+        var callback = (fight ? setWarEnergyAndFight : setWarEnergy);
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('getGuildWarStatus', null, function (response) {
+                checkResponse(response, callback);
+            });
+        }, 1);
+    }
+
+    function setWarEnergy(response) {
+         var warData = response.guild_war_event_data;
+         var matchStart = warData.match_start_time*1000;
+         if(matchStart < Date.now())
+         {
+             energy.war = warData.num_attacks;
+         } else {
+             energy.war = 0;
+         }
+    }
+
+    function setWarEnergyAndFight(response) {
+        setWarEnergy(response);
+        if (energy.war > 0) {
+            doStartGuildWarBattle();
+        } else {
+            alert("No targets at this time");
+            setTimeout(BattleAPI.noEnergy, 2000, response);
+        }
+    }
+
+    function doStartGuildWarBattle() {
         smartAI = true;
         DisplayLoadingSplash();
         setTimeout(function () {
@@ -404,7 +494,7 @@ var DeckRetriever = (function () {
             doStartClashBattle();
         } else {
             alert("No targets at this time");
-            setTimeout(BattleAPI.noEnergy, 2000);
+            setTimeout(BattleAPI.noEnergy, 2000, response);
         }
     }
 
@@ -741,6 +831,7 @@ var DeckRetriever = (function () {
     }
 
     var publicInfo = {
+        createCORSRequest: createCORSRequest,
         getUserAccount: getUserAccount,
         init: init,
         getFieldsFromRequest: getFieldsFromRequest,

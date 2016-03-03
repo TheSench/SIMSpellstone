@@ -115,6 +115,7 @@ var BATTLE_PROCESSOR = (function () {
             var battleType = document.getElementById("battleType");
             var additionalParam = battleType.options[battleType.selectedIndex].getAttribute("data-param");
             battleType = battleType.value;
+            sortByPoints = (battleType == 'startGuildWarBattle' || battleType == 'startRaidBattle');
             if (battleType == "fightGuildMember" && _DEFINED("spam")) {
                 targetID = getTarget();
                 if (!isContinue) {
@@ -150,7 +151,7 @@ var BATTLE_PROCESSOR = (function () {
                     playTurns(data, false);
                     break;
                 case 'forfeitBattle':
-                    battleFinished("Surrendered", true);
+                    battleFinished("Surrendered", true, data.battle_data);
                     break;
                 case 'getBattleResults':
                 default:
@@ -352,6 +353,7 @@ var BATTLE_PROCESSOR = (function () {
         if (d) d.checked = true;
     }
 
+    var sortByPoints = false;
     var lastWinrate = -2;
     function checkBest(playCard) {
         var avgPoints = -99;
@@ -361,17 +363,18 @@ var BATTLE_PROCESSOR = (function () {
         for (var i = 0; i < cardStats.keys.length; i++) {
             var key = cardStats.keys[i];
             var stats = cardStats[key];
-            /*
-            if (stats.avgPoints > avgPoints) {
-                avgPoints = stats.avgPoints;
-                hash = key;
-                name = stats.card;
-            }
-            */
-            if (stats.winrate > winrate) {
-                winrate = stats.winrate;
-                hash = key;
-                name = stats.card;
+            if (sortByPoints) {
+                if (stats.avgPoints > avgPoints) {
+                    avgPoints = stats.avgPoints;
+                    hash = key;
+                    name = stats.card;
+                }
+            } else {
+                if (stats.winrate > winrate) {
+                    winrate = stats.winrate;
+                    hash = key;
+                    name = stats.card;
+                }
             }
         }
 
@@ -401,8 +404,12 @@ var BATTLE_PROCESSOR = (function () {
         if (playCard) {
             var card = cachedHands.player[choice];
             var uid = card.uid;
-            var inevitableWin = ((lastWinrate + winrate) == 2);
-            var inevitableLoss = ((lastWinrate + winrate) == 0);
+            var inevitableWin = false;
+            var inevitableLoss = false;
+            if (!sortByPoints) {
+                inevitableWin = ((lastWinrate + winrate) == 2);
+                inevitableLoss = ((lastWinrate + winrate) == 0);
+            }
             lastWinrate = winrate;
             if (inevitableWin || _DEFINED("spam")) {
                 BattleAPI.playCard(uid, 1);// Set skip = true to auto-skip the rest of the battle
@@ -433,30 +440,38 @@ var BATTLE_PROCESSOR = (function () {
 
         
         if (!areCommandersAlive()) {
-            battleFinished(lastTurn);
+            battleFinished(lastTurn, false, data.battle_data);
         } else if (data.battle_data.winner !== undefined) {
-            battleFinished(lastTurn, true);
+            battleFinished(lastTurn, true, data.battle_data);
         } else {
             resetKeys();
             SIM_CONTROLLER.startsim();
         }
     }
 
-    function battleFinished(lastTurn, surrender) {
+    function battleFinished(lastTurn, surrender, battle_data) {
         if (!_DEFINED("auto")) {
             drawField(lastTurn, true);
         }
         //document.getElementById('ui').style.display = 'block';
         SIM_CONTROLLER.end_sims_callback = null;
 
+        var points = '';
+        if (battle_data.rewards) {
+            var rewards = battle_data.rewards[0];
+            if (rewards.guild_war_points) {
+                points = " (" + rewards.guild_war_points + " Points)";
+            }
+        }
+
         if (surrender) {
-            outp('<br><h1>SURRENDERED</h1><br>');
+            outp('<br><h1>SURRENDERED' + points + '</h1><br>');
         } else if (!cachedField.uids[-1].isAlive()) {
-            outp('<br><h1>LOSS</h1><br>');
+            outp('<br><h1>LOSS' + points + '</h1><br>');
         } else if (!cachedField.uids[-2].isAlive()) {
-            outp('<br><h1>WIN</h1><br>');
+            outp('<br><h1>WIN' + points + '</h1><br>');
         } else {
-            outp('<br><h1>DRAW</h1><br>');
+            outp('<br><h1>DRAW' + points + '</h1><br>');
         }
 
         if (trackPlays) {

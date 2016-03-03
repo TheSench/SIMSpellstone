@@ -1023,6 +1023,7 @@ function runeID_to_decimal(runeID) {
     var runeLevel = runeID % 10;
     var runeType = (runeID - runeLevel) / 10;
     runeID = (runeType * 5) + runeLevel - 1;    // Make level 0-based
+    runeID = (runeType * 5) + runeLevel - 1;    // Make level 0-based
     return runeID;
 }
 
