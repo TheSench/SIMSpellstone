@@ -288,7 +288,7 @@ var DeckRetriever = (function () {
         setTimeout(function () {
             sendRequest('init', null, function (response) {
                 checkResponse(response, function () {
-                    processInitResponse();
+                    processInitResponse(response);
                     handleAutoUseItems();
                 });
             });
