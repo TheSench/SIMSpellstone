@@ -32463,6 +32463,257 @@ var CARDS = {
       },
     }
   },
+  "6043": {
+    "id": "6043",
+    "name": "Sandstorm",
+    "picture": "Sandstorm_Elemental_A",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "5",
+    "attack": 5,
+    "health": 17,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 2,
+      },
+      {
+        "id": "enfeeble",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 19,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 3,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "attack": 6,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 4,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 4,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "16043": {
+    "id": "16043",
+    "name": "Sandsurge",
+    "picture": "Sandstorm_Elemental_A",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "5",
+    "attack": 6,
+    "health": 21,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 4,
+      },
+      {
+        "id": "enfeeble",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 22,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 5,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "health": 23,
+        "skill": [],
+      },
+      "5": {
+        "attack": 7,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 5,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "26043": {
+    "id": "26043",
+    "name": "Sandsunder",
+    "picture": "Sandstorm_Elemental_B",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "5",
+    "attack": 7,
+    "health": 25,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 5,
+      },
+      {
+        "id": "enfeeble",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "weaken",
+        "x": 2,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 26,
+        "skill": [],
+      },
+      "3": {
+        "attack": 8,
+        "skill": [],
+      },
+      "4": {
+        "health": 27,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 5,
+          },
+          {
+            "id": "enfeeble",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 5,
+          },
+          {
+            "id": "enfeeble",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
   "7000": {
     "id": "7000",
     "name": "Treant King",
@@ -62041,6 +62292,240 @@ var CARDS = {
       },
     }
   },
+  "9994": {
+    "id": "9994",
+    "name": "New 1 (S)",
+    "picture": "New1_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": 0,
+    "health": 1,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19994": {
+    "id": "19994",
+    "name": "New 1 (D)",
+    "picture": "New1_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": 0,
+    "health": 1,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {}
+  },
+  "29994": {
+    "id": "29994",
+    "name": "New 1 (Q)",
+    "picture": "New1_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": 0,
+    "health": 1,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9995": {
+    "id": "9995",
+    "name": "New 2 (S)",
+    "picture": "New2_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": 0,
+    "health": 1,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19995": {
+    "id": "19995",
+    "name": "New 2 (D)",
+    "picture": "New2_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": 0,
+    "health": 1,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {}
+  },
+  "29995": {
+    "id": "29995",
+    "name": "New 2 (Q)",
+    "picture": "New2_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": 0,
+    "health": 1,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9996": {
+    "id": "9996",
+    "name": "New 3 (S)",
+    "picture": "New3_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": 0,
+    "health": 1,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19996": {
+    "id": "19996",
+    "name": "New 3 (D)",
+    "picture": "New3_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": 0,
+    "health": 1,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {}
+  },
+  "29996": {
+    "id": "29996",
+    "name": "New 3 (Q)",
+    "picture": "New3_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": 0,
+    "health": 1,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9997": {
+    "id": "9997",
+    "name": "New 4 (S)",
+    "picture": "New4_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": 0,
+    "health": 1,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19997": {
+    "id": "19997",
+    "name": "New 4 (D)",
+    "picture": "New4_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": 0,
+    "health": 1,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {}
+  },
+  "29997": {
+    "id": "29997",
+    "name": "New 4 (Q)",
+    "picture": "New4_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": 0,
+    "health": 1,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9998": {
+    "id": "9998",
+    "name": "New 5 (S)",
+    "picture": "New5_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": 0,
+    "health": 1,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19998": {
+    "id": "19998",
+    "name": "New 5 (D)",
+    "picture": "New5_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": 0,
+    "health": 1,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {}
+  },
+  "29998": {
+    "id": "29998",
+    "name": "New 5 (Q)",
+    "picture": "New5_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": 0,
+    "health": 1,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9999": {
+    "id": "9999",
+    "name": "New 6 (S)",
+    "picture": "New6_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": 0,
+    "health": 1,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19999": {
+    "id": "19999",
+    "name": "New 6 (D)",
+    "picture": "New6_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": 0,
+    "health": 1,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {}
+  },
+  "29999": {
+    "id": "29999",
+    "name": "New 6 (Q)",
+    "picture": "New6_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": 0,
+    "health": 1,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {}
+  },
 };
 var MISSIONS = {
   "101": {
@@ -68167,6 +68652,7 @@ var FUSIONS = {
   "16040" : "26040",
   "16041" : "26041",
   "16042" : "26042",
+  "16043" : "26043",
   "1605" : "11605",
   "1606" : "11606",
   "1607" : "11607",
@@ -68358,6 +68844,7 @@ var FUSIONS = {
   "6040" : "16040",
   "6041" : "16041",
   "6042" : "16042",
+  "6043" : "16043",
   "7000" : "17000",
   "7001" : "17001",
   "7002" : "17002",
