@@ -413,7 +413,10 @@ public partial class unit
 		AppendEntryString(sb, "card_type", card_type, unitTabs);
 		AppendEntryString(sb, "type", type, unitTabs);
 		AppendEntryString(sb, "sub_type", sub_type, unitTabs);
-		AppendEntry(sb, "attack", attack, unitTabs);
+		if (card_type != "1")
+		{
+			AppendEntry(sb, "attack", attack, unitTabs);
+		}
 		AppendEntry(sb, "health", health, unitTabs);
 		AppendEntry(sb, "cost", cost, unitTabs);
 		AppendSkills(sb, skills, unitTabs);

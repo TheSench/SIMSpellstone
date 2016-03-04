@@ -6,27 +6,27 @@ deck.commander = elariaCaptain;
 deck.deck = [];
 
 // Filters
-var attackHidden = [];
+var attackHidden = {};
 var attackRanges = [];
-var healthHidden = [];
+var healthHidden = {};
 var healthRanges = [];
-var delayHidden = [];
+var delayHidden = {};
 var delayRanges = [];
 var skillFilters = [];
-var skillHidden = [];
+var skillHidden = {};
 var skillFiltersAdv = [];
-var skillHiddenAdv = [];
-var factionHidden = [];
-var subfactionHidden = [];
+var skillHiddenAdv = {};
+var factionHidden = {};
+var subfactionHidden = {};
 var rarityFilters = [];
-var rarityHidden = [];
+var rarityHidden = {};
 var typeFilters = [];
-var typeHidden = [];
+var typeHidden = {};
 var setFilters = [];
-var setHidden = [];
+var setHidden = {};
 var fusionFilters = [];
-var fusionHidden = [];
-var nameHidden = [];
+var fusionHidden = {};
+var nameHidden = {};
 
 var allCards = CARDS;
 
@@ -34,8 +34,10 @@ var showUpgrades = false;
 
 var units = [];
 var unitsShown = [];
+var unitsFiltered = [];
 var advancedFilters;
 var optionsDialog;
+var inventoryOptionsDialog;
 var form;
 
 var initDeckBuilder = function () {
@@ -43,6 +45,8 @@ var initDeckBuilder = function () {
     adjustHeight();
 
     $("body").addClass("loading");
+
+    $(window).resize(onResize);
 
     setTimeout(function () {
         drawAllCards();
@@ -89,8 +93,27 @@ var setupPopups = function () {
             }
         },
     });
-    $("input").add("option").parents("#unitOptions").bind("change", function () {
+    inventoryOptionsDialog = $("#inventoryOptions").dialog({
+        autoOpen: false,
+        width: 250,
+        minHeight: 20,
+        modal: true,
+        buttons: {
+            OK: function () {
+                upgradeInventoriedCard(inventoryOptionsDialog);
+                inventoryOptionsDialog.dialog("close");
+            },
+            Cancel: function () {
+                resetInventoriedCard(inventoryOptionsDialog);
+                inventoryOptionsDialog.dialog("close");
+            }
+        },
+    });
+    $("#unitOptions").bind("change", function () {
         modifyCard(optionsDialog);
+    });
+    $("#inventoryOptions").bind("change", function () {
+        modifyInventoriedCard(inventoryOptionsDialog);
     });
 
     var imageButtons = $('input[type="image"]');
@@ -168,11 +191,12 @@ var drawCardList = function () {
     }
 
     var sortField = document.getElementById("sortField");
-    if (sortField.value != "id") {
+    if (sortField.value != "id" || fromInventory) {
         sortCards(sortField);
     }
 
-    CARD_GUI.draw_card_list(unitsShown, false, addToDeck);
+    applyFilters();
+    //doDrawCardList(unitsShown);
     if (inventory) {
         deck.commander = removeFromInventory(deck.commander);
         for (var i = 0; i < deck.deck.length; i++) {
@@ -196,11 +220,107 @@ var drawCardList = function () {
     }
 }
 
-function redrawCardList() {
-    sortCards(document.getElementById("sortField"));
+var page = 0;
+function doDrawCardList(cardList, resetPage) {
+
     var detailedSkills = document.getElementById("skillDetails").checked;
-    CARD_GUI.draw_card_list(unitsShown, detailedSkills, addToDeck);
-    applyFilters();
+    var cardspace = document.getElementById("cardSpace");
+
+    if (resetPage) {
+        page = 0;
+    }
+
+    var contextMenu = (fromInventory ? showInventoryOptions : hideContext);
+
+    var width = cardspace.offsetWidth;
+    var cards = ~~(width / 90); // Each card is 84 pixels wide and has 2 pixels of padding and 1 pixel of border
+    cards *= 3; // Draw 3 rows of cards
+    var lastUnit = null;
+    var unique = 0;
+    for (var i = 0, len = cardList.length; i < len; i++) {
+        var unit = cardList[i];
+        if (!areEqual(unit, lastUnit)) unique++;
+        lastUnit = unit;
+    }
+    var pages = Math.ceil(unique / cards);
+    if (pages > 1) {
+        var start = cards * page;
+        if (page >= pages) {
+            page = pages - 1;
+            start = cards * page;
+        }
+        CARD_GUI.draw_card_list(cardList, detailedSkills, addToDeck, contextMenu, start, start + cards);
+    } else {
+        CARD_GUI.draw_card_list(cardList, detailedSkills, addToDeck, contextMenu);
+    }
+    document.getElementById("pageNumber").innerHTML = "Page " + (page + 1) + "/" + pages;
+}
+
+var resizing = false;
+function onResize() {
+    /*
+    if (!resizing) {
+        resizing = true;
+        var fillers = $("#filler");
+        for (var i = 0; i < fillers.length; i++) {
+            adjustTable(fillers[i]);
+        }
+        resizing = false;
+    }
+    */
+}
+
+function adjustTable(filler) {
+    var currentRow = filler.parentElement;
+    var table = currentRow.parentElement;
+    if (filler.offsetWidth <= 2) {
+        if (table.childElementCount == 1) {
+            var siblings = [];
+            var sibling = filler.nextElementSibling;
+            while (sibling) {
+                siblings.push(sibling);
+                sibling = sibling.nextElementSibling
+            }
+            if (siblings.length) {
+                var tr = document.createElement("tr");
+                for (var i = 0; i < siblings.length; i++) {
+                    tr.appendChild(siblings[i]);
+                }
+                table.appendChild(tr);
+            }
+        }
+    } else {
+        if (table.childElementCount > 1) {
+            var tr = currentRow.nextElementSibling;
+            if (tr) {
+                for (var i = 0; i < tr.childNodes.length; i++) {
+                    currentRow.appendChild(tr.childNodes[i]);
+                }
+                table.removeChild(tr);
+            }
+        }
+    }
+}
+
+function pageUp() {
+    page--;
+    if (page < 0) {
+        page = 0;
+    }
+    else {
+        redrawCardList(true);
+    }
+}
+
+function pageDown() {
+    page++;
+    redrawCardList(true);
+}
+
+function redrawCardList(keepPaging) {
+    sortCards(document.getElementById("sortField"));
+    //doDrawCardList(unitsShown);
+    applyFilters(keepPaging);
 }
 
 var addInventoryUnit = function (unit) {
@@ -254,7 +374,7 @@ var hash_changed = function (hash) {
         for (var i = 0; i < deck.deck.length; i++) {
             deck.deck[i] = removeFromInventory(deck.deck[i]);
         }
-        redrawCardList();
+        redrawCardList(true);
         /*
         var unitsToHide = deck.deck.slice();
         unitsToHide.push(deck.commander);
@@ -286,7 +406,7 @@ var sortDeck = function (deck) {
         if (compare) return compare;
         compare = (cardA.type - cardB.type);
         if (compare) return compare;
-        compare = sortByID(unitA, unitB);
+        compare = compareByID(unitA, unitB);
         if (compare) return compare;
         compare = unitA.level - unitB.level;
         if (compare) return compare;
@@ -300,7 +420,7 @@ var addToDeck = function (htmlCard) {
     if (fromInventory) {
         //htmlCard.classList.add("picked");
         unit = removeFromInventory(unit);
-        redrawCardList();
+        redrawCardList(true);
     }
     if (is_commander(unit.id)) {
         deck.commander = unit;
@@ -333,7 +453,7 @@ var removeFromDeck = function (htmlCard, index) {
     if (fromInventory) {
         var unit = getUnitFromCard(htmlCard);
         unitsShown.push(unit);
-        redrawCardList();
+        redrawCardList(true);
         /*
         var cards = $("#cardSpace [data-id=" + unit.id + "][data-level=" + unit.level + "]");
         for (var i = 0; i < cards.length; i++) {
@@ -407,13 +527,13 @@ var filterAdvanced = function (skill) {
 }
 
 var checkAdvancedFilters = function () {
-    skillHiddenAdv = [];
+    skillHiddenAdv = {};
 
     for (var i = 0; i < units.length; i++) {
         var unit = units[i];
         for (var s = 0; s < skillFiltersAdv.length; s++) {
             if (!hasSkillAdvanced(unit, skillFiltersAdv[s])) {
-                skillHiddenAdv.push(makeUnitKey(unit));
+                skillHiddenAdv[makeUnitKey(unit)] = true;
             }
         }
     }
@@ -424,7 +544,7 @@ var checkAdvancedFilters = function () {
 }
 
 var filterSkill = function (button, skill) {
-    skillHidden = [];
+    skillHidden = {};
     if (button.classList.contains("selected")) {
         button.classList.remove("selected");
         skillFilters.splice(skillFilters.indexOf(skill), 1);
@@ -446,7 +566,7 @@ var filterSkill = function (button, skill) {
         var unit = units[i];
         for (var s = 0; s < skillFilters.length; s++) {
             if (!hasSkill(unit, skillFilters[s])) {
-                skillHidden.push(makeUnitKey(unit));
+                skillHidden[makeUnitKey(unit)] = true;
                 break;
             }
         }
@@ -455,7 +575,7 @@ var filterSkill = function (button, skill) {
 }
 
 var filterFaction = function (button, faction) {
-    factionHidden = [];
+    factionHidden = {};
     if (button.classList.contains("selected")) {
         button.classList.remove("selected");
         button.checked = false;
@@ -464,7 +584,7 @@ var filterFaction = function (button, faction) {
         for (var i = 0, len = units.length; i < len; i++) {
             var unit = units[i];
             if (!isInFaction(unit, faction)) {
-                factionHidden.push(makeUnitKey(unit));
+                factionHidden[makeUnitKey(unit)] = true;
             }
         }
     }
@@ -479,14 +599,14 @@ var filterFaction = function (button, faction) {
 }
 
 var filterName = function (field) {
-    nameHidden = [];
+    nameHidden = {};
     var filter = field.value.toLowerCase();
     if (filter) {
         for (var i = 0, len = units.length; i < len; i++) {
             var unit = units[i];
             var card = get_slim_card_by_id(unit, true);
             if (card.name.toLowerCase().indexOf(filter) == -1) {
-                nameHidden.push(makeUnitKey(unit));
+                nameHidden[makeUnitKey(unit)] = true;
             }
         }
     }
@@ -494,7 +614,7 @@ var filterName = function (field) {
 }
 
 var filterSubfaction = function (button, faction) {
-    subfactionHidden = [];
+    subfactionHidden = {};
     if (button.classList.contains("selected")) {
         button.classList.remove("selected");
         button.checked = false;
@@ -503,7 +623,7 @@ var filterSubfaction = function (button, faction) {
         for (var i = 0, len = units.length; i < len; i++) {
             var unit = units[i];
             if (!isInSubfaction(unit, faction)) {
-                subfactionHidden.push(makeUnitKey(unit));
+                subfactionHidden[makeUnitKey(unit)] = true;
             }
         }
     }
@@ -518,7 +638,7 @@ var filterSubfaction = function (button, faction) {
 }
 
 var filterAttack = function (button, min, max) {
-    attackHidden = [];
+    attackHidden = {};
     if (button.classList.contains("selected")) {
         button.classList.remove("selected");
         button.checked = false;
@@ -543,14 +663,14 @@ var filterAttack = function (button, min, max) {
                     break;
                 }
             }
-            if (hide) attackHidden.push(makeUnitKey(unit));
+            if (hide) attackHidden[makeUnitKey(unit)] = true;
         }
     }
     applyFilters();
 }
 
 var filterHealth = function (button, min, max) {
-    healthHidden = [];
+    healthHidden = {};
     if (button.classList.contains("selected")) {
         button.classList.remove("selected");
         button.checked = false;
@@ -575,14 +695,14 @@ var filterHealth = function (button, min, max) {
                     break;
                 }
             }
-            if (hide) healthHidden.push(makeUnitKey(unit));
+            if (hide) healthHidden[makeUnitKey(unit)] = true;
         }
     }
     applyFilters();
 }
 
 var filterDelay = function (button, delay) {
-    delayHidden = [];
+    delayHidden = {};
     if (button.classList.contains("selected")) {
         button.classList.remove("selected");
         button.checked = false;
@@ -607,14 +727,14 @@ var filterDelay = function (button, delay) {
                     break;
                 }
             }
-            if (hide) delayHidden.push(makeUnitKey(unit));
+            if (hide) delayHidden[makeUnitKey(unit)] = true;
         }
     }
     applyFilters();
 }
 
 var filterType = function (button, type) {
-    typeHidden = [];
+    typeHidden = {};
     if (button.classList.contains("selected")) {
         button.classList.remove("selected");
         button.checked = false;
@@ -639,14 +759,14 @@ var filterType = function (button, type) {
                     break;
                 }
             }
-            if (hide) typeHidden.push(makeUnitKey(unit));
+            if (hide) typeHidden[makeUnitKey(unit)] = true;
         }
     }
     applyFilters();
 }
 
 var filterFusion = function (button, fusion) {
-    fusionHidden = [];
+    fusionHidden = {};
     if (button.classList.contains("selected")) {
         button.classList.remove("selected");
         button.checked = false;
@@ -672,7 +792,7 @@ var filterFusion = function (button, fusion) {
                     break;
                 }
             }
-            if (hide) fusionHidden.push(makeUnitKey(unit));
+            if (hide) fusionHidden[makeUnitKey(unit)] = true;
         }
     }
     applyFilters();
@@ -825,6 +945,64 @@ var showCardOptions = function (htmlCard, index) {
     return false;
 }
 
+function hideContext() {
+    return false;
+}
+
+var showInventoryOptions = function (htmlCard, index) {
+    var show = false;
+    var unit = unitsFiltered[index];
+    var card = get_card_by_id(unit);
+
+    $("#invUpgradeDiv").hide();
+    var upgradeLevel = document.getElementById("invUpgrade");
+    upgradeLevel.max = card.maxLevel;
+    upgradeLevel.value = card.level;
+    if (card.maxLevel > 1 && card.level < card.maxLevel) {
+        $("#invUpgradeDiv").show();
+        show = true;
+    }
+
+    var fusionField = document.getElementById("invFusion");
+    fusionField.value = 0;
+    $("#invFusionDiv").hide();
+    if (!card.isCommander()) {
+        var fusion = 1;
+        var baseID = card.id.toString();
+        if (baseID.length > 4) {
+            var fusion = parseInt(baseID[0]) + 1;
+            var baseID = baseID.substring(1);
+        }
+        if (FUSIONS[baseID] && card.level == card.maxLevel) {
+            fusionField.value = fusion;
+            $("#invFusionDiv").show();
+            show = true;
+        }
+        unit.baseStats = {
+            fusion: fusion,
+            level: unit.level,
+        }
+    } else {
+        unit.baseStats = {
+            fusion: 1,
+            level: unit.level,
+        }
+    }
+
+    if (showRunePicker(card, true)) {
+        show = true;
+    }
+
+    if (show) {
+        inventoryOptionsDialog.dialog("open");
+        inventoryOptionsDialog.dialog("option", "position", { my: "left", at: "right", of: htmlCard });;
+        inventoryOptionsDialog.unit = unit;
+        inventoryOptionsDialog.originalUnit = $.extend({}, unit);
+    }
+
+    return false;
+}
+
 var resetUnit = function () {
     var unit = optionsDialog.unit;
     if (unit !== undefined) {
@@ -832,14 +1010,18 @@ var resetUnit = function () {
     }
 }
 
-var showRunePicker = function (card) {
-    var select = document.getElementById("runeChoices");
+var showRunePicker = function (card, inventory) {
+    var divID = (inventory ? "#invRuneChoicesDiv" : "#runeChoicesDiv");
+    var cmbID = (inventory ? "invRuneChoices" : "runeChoices");
+
+    var select = document.getElementById(cmbID);
     select.innerHTML = '<option value=""></option>';
     var showUnreleased = document.getElementById("showUnreleased").checked;
 
     optionsDialog.hiddenOptions = [];
 
-    $("#runeChoicesDiv").hide();
+
+    $(divID).hide();
     if (card.rarity >= 3 && !card.isCommander()) {
         for (var key in RUNES) {
             var rune = RUNES[key];
@@ -856,12 +1038,12 @@ var showRunePicker = function (card) {
         }
 
         if (card.runes.length) {
-            document.getElementById("runeChoices").value = card.runes[0].id;
+            document.getElementById(cmbID).value = card.runes[0].id;
         } else {
-            document.getElementById("runeChoices").value = '';
+            document.getElementById(cmbID).value = '';
         }
         if (select.childNodes.length > 0) {
-            $("#runeChoicesDiv").show();
+            $(divID).show();
             return true;
         } else {
             return false;
@@ -905,6 +1087,86 @@ var modifyCard = function (optionsDialog) {
     updateHash();
 }
 
+var modifyInventoriedCard = function (optionsDialog) {
+    var unit = optionsDialog.unit;
+    if (unit !== undefined) {
+        var runeID = document.getElementById("invRuneChoices").value;
+        if (runeID) {
+            unit.runes = [{ id: runeID }];
+        } else {
+            unit.runes = [];
+        }
+    } else {
+        var unit = deck.commander;
+    }
+
+    var fusion = document.getElementById("invFusion").value;
+    var level = document.getElementById("invUpgrade").value;
+    var baseFusion = unit.baseStats.fusion;
+
+    if (fusion < baseFusion) {
+        fusion = baseFusion;
+        document.getElementById("invFusion").value = fusion;
+    } else if (fusion == baseFusion) {
+        var fused = optionsDialog.fused;
+        if (fused) {
+            var level = unit.baseStats.level;
+            document.getElementById("invUpgrade").value = level;
+            unitsShown.push(fused);
+            optionsDialog.fused = null;
+            var sortField = document.getElementById("sortField");
+            sortCards(sortField);
+            applyFilters(true, true);
+        }
+    } else if (fusion - baseFusion > 1) {
+        fusion--;
+        document.getElementById("invFusion").value = fusion;
+    } else if (fusion > unit.baseStats.fusion) {
+        var thisKey = makeUnitKey(unit);
+        var best;
+        var index;
+        for (var i = 0; i < unitsShown.length; i++) {
+            var inventoryUnit = unitsShown[i];
+            if (thisKey) {
+                var newKey = makeUnitKey(inventoryUnit);
+                if (newKey == thisKey) {
+                    thisKey = false;
+                    continue;
+                }
+            }
+            if (unit.id == inventoryUnit.id && unit.level == inventoryUnit.level) {
+                best = inventoryUnit;
+                index = i;
+                break;
+            }
+        }
+        if (best) {
+            optionsDialog.fused = best;
+            unitsShown.splice(index, 1);
+            applyFilters(true, true);
+            level = 1;
+            document.getElementById("invUpgrade").value = level;
+        } else {
+            fusion = unit.baseStats.fusion;
+            document.getElementById("invFusion").value = fusion;
+        }
+    } else if (fusion == unit.baseStats.fusion && level < unit.baseStats.level) {
+        level = unit.baseStats.level;
+        document.getElementById("invUpgrade").value = level;
+    }
+
+    unit.level = level;
+    if (fusion) {
+        fusion = (fusion - 1).toString();
+        var unitID = unit.id.toString();
+        if (unitID.length > 4) unitID = unitID.substring(1);
+        if (fusion >= 0) unitID = fusion + unitID;
+        unit.id = parseInt(unitID);
+    }
+
+    doDrawCardList(unitsFiltered, true);
+}
+
 var resetCard = function (optionsDialog) {
     var index = optionsDialog.index;
     deck.deck[index] = optionsDialog.originalUnit;
@@ -912,8 +1174,53 @@ var resetCard = function (optionsDialog) {
     updateHash();
 }
 
+var resetInventoriedCard = function (optionsDialog) {
+    var index = optionsDialog.index;
+    if (optionsDialog.fused) {
+        unitsShown.push(optionsDialog.fused);
+    }
+    unitsFiltered[index] = optionsDialog.originalUnit;
+    doDrawCardList(unitsFiltered, true);
+}
+
+var levelCosts = {
+    1: [0, 5, 15],
+    2: [0, 5, 15, 30],
+    3: [0, 5, 15, 30, 75],
+    4: [0, 5, 15, 30, 75, 150],
+    5: [0, 5, 15, 30, 75, 150, 200]
+};
+
+function upgradeInventoriedCard(optionsDialog) {
+    var unit = optionsDialog.unit;
+    var original = unit.baseStats;
+
+    var fusions = ~~(unit.id / 10000) - original.fusion + 1;
+
+    var rarity = CARDS[unit.id].rarity;
+
+    var dust = 0;
+    var costs = levelCosts[rarity];
+    if (optionsDialog.fused) {
+        var confirmed = confirm("Fuse these cards?");
+        if (confirmed) {
+
+        }
+    } else {
+        for (var i = original.level; i < unit.level; i++) {
+            dust += costs[i];
+        }
+        if (dust > 0) {
+            var confirmed = confirm("This will cost " + dust + " dust!");
+            if (confirmed) {
+
+            }
+        }
+    }
+}
+
 var filterSet = function (button, set) {
-    setHidden = [];
+    setHidden = {};
     if (button.classList.contains("selected")) {
         button.classList.remove("selected");
         button.checked = false;
@@ -949,14 +1256,14 @@ var filterSet = function (button, set) {
                     break;
                 }
             }
-            if (hide) setHidden.push(makeUnitKey(unit));
+            if (hide) setHidden[makeUnitKey(unit)] = true;
         }
     }
     applyFilters();
 }
 
 var filterRarity = function (button, rarity) {
-    rarityHidden = [];
+    rarityHidden = {};
     if (button.classList.contains("selected")) {
         button.classList.remove("selected");
         button.checked = false;
@@ -981,25 +1288,43 @@ var filterRarity = function (button, rarity) {
                     break;
                 }
             }
-            if (hide) rarityHidden.push(makeUnitKey(unit));
+            if (hide) rarityHidden[makeUnitKey(unit)] = true;
         }
     }
     applyFilters();
 }
 
-var applyFilters = function () {
+var applyFilters_old = function () {
     var cards = document.getElementById("cardSpace").getElementsByClassName("card");
     for (var i = 0, len = cards.length; i < len; i++) {
         var card = cards[i];
         var unit = makeUnitKey(getUnitFromCard(card));
-        if (skillHidden.indexOf(unit) > -1 || factionHidden.indexOf(unit) > -1 || subfactionHidden.indexOf(unit) > -1
-             || attackHidden.indexOf(unit) > -1 || healthHidden.indexOf(unit) > -1 || delayHidden.indexOf(unit) > -1
-             || typeHidden.indexOf(unit) > -1 || fusionHidden.indexOf(unit) > -1 || setHidden.indexOf(unit) > -1
-             || nameHidden.indexOf(unit) > -1 || rarityHidden.indexOf(unit) > -1 || skillHiddenAdv.indexOf(unit) > -1) {
+        if (skillHidden[unit] || factionHidden[unit] || subfactionHidden[unit]
+             || attackHidden[unit] || healthHidden[unit] || delayHidden[unit]
+             || typeHidden[unit] || fusionHidden[unit] || setHidden[unit]
+             || nameHidden[unit] || rarityHidden[unit] || skillHiddenAdv[unit]) {
             card.style.display = "none";
         } else {
             card.style.display = "";
         }
+    }
+}
+
+var applyFilters = function (keepPage, skipDraw) {
+    unitsFiltered = [];
+    for (var i = 0, len = unitsShown.length; i < len; i++) {
+        var card = unitsShown[i];
+        var unit = makeUnitKey(card);
+        if (skillHidden[unit] || factionHidden[unit] || subfactionHidden[unit]
+             || attackHidden[unit] || healthHidden[unit] || delayHidden[unit]
+             || typeHidden[unit] || fusionHidden[unit] || setHidden[unit]
+             || nameHidden[unit] || rarityHidden[unit] || skillHiddenAdv[unit]) {
+        } else {
+            unitsFiltered.push(card);
+        }
+    }
+    if (!skipDraw) {
+        doDrawCardList(unitsFiltered, !keepPage);
     }
 }
 
@@ -1023,7 +1348,7 @@ var hasSkillAdvanced = function (unit, skillInfo) {
             if (skillInfo.y == -1 && skill.y) return false;
             if (skillInfo.y > 0 && skill.y != skillInfo.y) return false;
             if (skillInfo.s && skill.s != skillInfo.s) return false;
-            if (skillInfo.all > -1 && (skill.all | "0") != skillInfo.all) return false;
+            if (skillInfo.all > -1 && (skill.all || "0") != skillInfo.all) return false;
             return true;
         }
     }
@@ -1031,35 +1356,36 @@ var hasSkillAdvanced = function (unit, skillInfo) {
 }
 
 var clearFilters = function () {
-    attackHidden = [];
+    attackHidden = {};
     attackRanges = [];
-    healthHidden = [];
+
+    healthHidden = {};
     healthRanges = [];
-    delayHidden = [];
+
+    delayHidden = {};
     delayRanges = [];
 
     skillFilters = [];
-    skillHidden = [];
-
+    skillHidden = {};
     skillFiltersAdv = [];
-    skillHiddenAdv = [];
+    skillHiddenAdv = {};
 
-    factionHidden = [];
-    subfactionHidden = [];
+    factionHidden = {};
+    subfactionHidden = {};
 
     rarityFilters = [];
-    rarityHidden = [];
+    rarityHidden = {};
 
     typeFilters = [];
-    typeHidden = [];
+    typeHidden = {};
 
     setFilters = [];
-    setHidden = [];
+    setHidden = {};
 
     fusionFilters = [];
-    fusionHidden = [];
+    fusionHidden = {};
 
-    nameHidden = [];
+    nameHidden = {};
 
     $(".selected").removeClass("selected");
     $(".selected-advanced").removeClass("selected-advanced");
@@ -1083,25 +1409,28 @@ var isInSubfaction = function (unit, faction) {
 var isInRange = function (unit, field, min, max) {
     var card = get_slim_card_by_id(unit, true);
     var value = card[field];
+    if (value === undefined) return false;
     if (min >= 0 && value < min) return false;
     if (max >= 0 && value > max) return false;
     return true;
 }
 
-var toggleSkillDetails = function (checkbox) {
-    CARD_GUI.draw_card_list(unitsShown, checkbox.checked, addToDeck);
+var toggleSkillDetails = function () {
+    //doDrawCardList(unitsShown);
+    applyFilters(true);
 }
 
 var toggleUpgrades = function (checkbox) {
     showUpgrades = checkbox.checked;
+    /*
     CARD_GUI.clearCardSpace();
 
     $("body").addClass("loading");
-
+    */
     setTimeout(function () {
         drawCardList();
         $("body").removeClass("loading");
-        applyFilters();
+        applyFilters(false);
     }, 1);
 }
 
@@ -1138,55 +1467,61 @@ var toggleCardDisplay = function (img) {
     }
 }
 
+function sortAndDraw(select) {
+    doSort(select);
+    applyFilters();
+}
+
 var sortCards = function (select) {
     doSort(select);
-    var detailedSkills = document.getElementById("skillDetails").checked;
-    CARD_GUI.draw_card_list(unitsShown, detailedSkills, addToDeck);
-    applyFilters();
+    //doDrawCardList(unitsShown);
 }
 
 function doSort(select) {
     var sortField = select.value;
-    unitsShown.sort(function (unitA, unitB) {
+    unitsShown.sort(/* = quicksort(unitsShown, */function (unitA, unitB) {
         // Always sort by commander/unit first
         var comparison = is_commander(unitB.id) - is_commander(unitA.id);
         if (comparison != 0) return comparison;
 
         if (sortField == "id") {
-            return sortByID(unitA, unitB);
+            return compareByID(unitA, unitB);
         } else {
             var cardA = get_card_by_id(unitA);
             var cardB = get_card_by_id(unitB);
-            comparison = (cardA[sortField] | 0) - (cardB[sortField] | 0);
+            comparison = (cardA[sortField] || 0) - (cardB[sortField] || 0);
             if (comparison != 0) return comparison;
             // Fall back on sorting by ID
-            return sortByID(unitA, unitB);
+            return compareByID(unitA, unitB);
         }
     });
 }
 
-var sortByID = function (unitA, unitB) {
-    var baseIDA = unitA.id.toString();
-    var baseIDB = unitB.id.toString();
-    var fusionA = 0;
-    var fusionB = 0;
-    if (baseIDA.length > 4) {
-        fusionA = baseIDA.substring(0, 1);
-        baseIDA = parseInt(baseIDA.substring(1, 5));
-    } else {
-        baseIDA = parseInt(baseIDA);
+function quicksort(arr, comparator) {
+    //if array is empty
+    if (arr.length === 0) {
+        return [];
     }
-    if (baseIDB.length > 4) {
-        fusionB = baseIDB.substring(0, 1);
-        baseIDB = parseInt(baseIDB.substring(1, 5));
-    } else {
-        baseIDB = parseInt(baseIDB);
+    var left = [];
+    var right = [];
+    var pivot = arr[0];
+    //go through each element in array
+    for (var i = 1; i < arr.length; i++) {
+        if (comparator(arr[i], pivot) < 0) {
+            left.push(arr[i]);
+        } else {
+            right.push(arr[i]);
+        }
     }
-    var comparison = baseIDA - baseIDB;
-    if (comparison != 0) return comparison;
-    comparison = fusionA - fusionB;
-    if (comparison != 0) return comparison;
-    comparison = unitA.level - unitB.level;
+    return quicksort(left, comparator).concat(pivot, quicksort(right, comparator));
+}
+
+var compareByID = function (unitA, unitB) {
+    var unitIDA = unitA.id;
+    var unitIDB = unitB.id;
+    var keyA = (unitIDA % 1000) + "." + ~~(unitIDA / 1000) + unitA.level;
+    var keyB = (unitIDB % 1000) + "." + ~~(unitIDB / 1000) + unitB.level;
+    var comparison = keyA - keyB;
     if (comparison != 0) return comparison;
     return sortByRunes(unitA, unitB);
 }
@@ -1216,7 +1551,7 @@ var getUnitFromCard = function (htmlCard) {
         }
     }
     var index = htmlCard.attributes.getNamedItem("data-index");
-    if(index) {
+    if (index) {
         unit.index = index.value;
     }
     unit.runes = runes;

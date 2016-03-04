@@ -117,12 +117,9 @@ function copy_card_list(original_card_list) {
 }
 
 function cloneCard(original) {
-    //var copy = original.constructor();
-    //copy.__proto__ = original.__proto__;
     var copy = Object.create(original.__proto__);
     copy.id = original.id;
     copy.name = original.name;
-    copy.picture = original.picture;
     copy.attack = original.attack;
     copy.health = original.health;
     copy.maxLevel = original.maxLevel;
@@ -165,8 +162,6 @@ var MakeAssault = (function () {
     var Card = function (original_card, unit_level, skillModifiers) {
         this.id = original_card.id;
         this.name = original_card.name;
-        // TODO: Remove this
-        this.picture = original_card.picture;
         this.attack = original_card.attack;
         this.health = original_card.health;
         this.maxLevel = GetMaxLevel(original_card);
@@ -467,7 +462,7 @@ var boostSkill = function (card, boost) {
     var skillToBoost = -1;
     for (var i = 0, len = skills.length; i < len; i++) {
         var skill = skills[i];
-        if (skill.id == skillID && (skill.all | 0) == (boost.all | 0)) {
+        if (skill.id == skillID && (skill.all || 0) == (boost.all || 0)) {
             skillToBoost = i;
             break;
         }
@@ -1514,7 +1509,7 @@ function getPresetUnit(unitInfo, level, maxLevel)
     if (unitInfo.remove_mastery_level && level >= parseInt(unitInfo.remove_mastery_level)) return null;
 
     var cardID = unitInfo.id;
-    var unitLevel = (unitInfo.level | 1);
+    var unitLevel = (unitInfo.level || 1);
 
     if (level >= maxLevel) {
         unitLevel = 7;
@@ -1652,7 +1647,6 @@ function get_slim_card_by_id(unit, getDetails) {
         new_card.id = current_card.id;
         new_card.name = current_card.name;
         new_card.rarity = current_card.rarity;
-        new_card.picture = current_card.picture;
         new_card.maxLevel = GetMaxLevel(current_card);
         if (unit.level) {
             new_card.level = unit.level;

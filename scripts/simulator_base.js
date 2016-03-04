@@ -97,7 +97,7 @@ if (simulator_thread) (function () {
 
     function getEnhancement(card, s) {
         var enhancements = card.enhanced;
-        return (enhancements ? (enhancements[s] | 0) : 0);
+        return (enhancements ? (enhancements[s] || 0) : 0);
     };
 
     function iceshatter(src_card) {
@@ -258,7 +258,7 @@ if (simulator_thread) (function () {
                     enhancements = {};
                     target.enhanced = enhancements;
                 }
-                enhancements[s] = (enhancements[s] | 0) + x;
+                enhancements[s] = (enhancements[s] || 0) + x;
                 if (debug) echo += debug_name(src_card) + ' enhances ' + s + ' of ' + debug_name(target, false) + ' by ' + x + '<br>';
             }
         },

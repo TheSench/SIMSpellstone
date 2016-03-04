@@ -41,45 +41,43 @@ var CARD_GUI = {};
         return deckHTML;
     }
 
-    function draw_card_list(list, compactSkills, onclick, onrightclick) {
+    function draw_card_list(list, compactSkills, onclick, onrightclick, skip, end) {
         var cardSpace = document.getElementById("cardSpace");
         cardSpace.innerHTML = '';
         var cards = createDiv("float-left");
         var htmlCard;
         var lastUnit;
         var multiplier;
+        var uniqueCard = 0;
         for (var i = 0, len = list.length; i < len; i++) {
             var listEntry = list[i];
             var unit = get_card_by_id(listEntry);
             if (areEqual(unit, lastUnit)) {
                 multiplier++;
             } else {
-                if (multiplier > 1) {
-                    var multDiv = createDiv("multiplier", "x" + multiplier);
-                    var multIcon = createImg("res/cardAssets/multiplier.png", "multiplier");
-                    htmlCard.appendChild(multIcon);
-                    htmlCard.appendChild(multDiv);
+                if (!end || (uniqueCard >= skip && uniqueCard < end)) {
+                    if (multiplier > 1) {
+                        var multDiv = createDiv("multiplier", "x" + multiplier);
+                        var multIcon = createImg("res/cardAssets/multiplier.png", "multiplier");
+                        htmlCard.appendChild(multIcon);
+                        htmlCard.appendChild(multDiv);
+                    }
+                    multiplier = 1;
+                    htmlCard = create_card_html(unit, compactSkills, false, onclick, onrightclick, i);
+                    if (listEntry.index !== undefined) {
+                        htmlCard.setAttribute("data-index", listEntry.index);
+                    }
+                    cards.appendChild(htmlCard);
                 }
-                multiplier = 1;
-                htmlCard = create_card_html(unit, compactSkills, false, onclick, onrightclick);
-                if (listEntry.index !== undefined) {
-                    htmlCard.setAttribute("data-index", listEntry.index);
-                }
-                cards.appendChild(htmlCard);
                 lastUnit = unit;
+                uniqueCard++;
             }
         }
         if (multiplier > 1) {
-            htmlCard = create_card_html(unit, compactSkills, false, onclick, onrightclick);
             var multDiv = createDiv("multiplier", "x" + multiplier);
             var multIcon = createImg("res/cardAssets/multiplier.png", "multiplier");
             htmlCard.appendChild(multIcon);
             htmlCard.appendChild(multDiv);
-            if (listEntry.index !== undefined) {
-                htmlCard.setAttribute("data-index", listEntry.index);
-            }
-            cards.appendChild(htmlCard);
-            lastUnit = unit;
         }
         cardSpace.appendChild(cards);
     }
@@ -174,12 +172,13 @@ var CARD_GUI = {};
         }
         htmlCard.setAttribute("data-runeids", runeIDs.join(","));
 
-        if (card.picture) {
+        var picture = CARDS[card.id].picture;
+        if (picture) {
             var icon = document.createElement("i");
-            if (card.picture.indexOf("portrait_") == 0) {
-                icon.className = 'portrait portrait-' + card.picture;
+            if (picture.indexOf("portrait_") == 0) {
+                icon.className = 'portrait portrait-' + picture;
             } else {
-                icon.className = 'sprite sprite-' + card.picture;
+                icon.className = 'sprite sprite-' + picture;
             }
             htmlCard.appendChild(icon);
         }
