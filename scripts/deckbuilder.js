@@ -1546,8 +1546,8 @@ function quicksort(arr, comparator) {
 var compareByID = function (unitA, unitB) {
     var unitIDA = unitA.id;
     var unitIDB = unitB.id;
-    var keyA = (unitIDA % 1000) + "." + ~~(unitIDA / 1000) + unitA.level;
-    var keyB = (unitIDB % 1000) + "." + ~~(unitIDB / 1000) + unitB.level;
+    var keyA = (unitIDA % 10000) + "." + ~~(unitIDA / 10000) + unitA.level;
+    var keyB = (unitIDB % 10000) + "." + ~~(unitIDB / 10000) + unitB.level;
     var comparison = keyA - keyB;
     if (comparison != 0) return comparison;
     return sortByRunes(unitA, unitB);
