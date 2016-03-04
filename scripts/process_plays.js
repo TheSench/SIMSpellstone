@@ -36,16 +36,19 @@ var BATTLE_PROCESSOR = (function () {
     function noEnergy(response) {
         var battleType = document.getElementById("battleType").value;
         if (battleType == "startBountyBattle" || _DEFINED("campaign")) {
-            document.getElementById("battleType").value = "startCampaignBattle";
+            document.getElementById("battleType").value = (selectedType || "startCampaignBattle");
             // Alert when the next check will be
             var addTime = 1000 * 60 * 60 * 3;
             var nextTime = Date.now() + addTime;
             var dateObj = new Date(nextTime);
             alert(dateObj);
 
-            noCapTimer = setTimeout(module.fight, addTime);//7200000);
+            noCapTimer = setTimeout(module.fight, addTime);
         } else if (battleType == "startCampaignBattle") {
             document.getElementById("battleType").value = "startBountyBattle";
+            module.fight();
+        } else if (battleType != "resumeBattle" && battleType != "fightGuildMember") {
+            document.getElementById("battleType").value = "startCampaignBattle";
             module.fight();
         } else {
             alert(response.result_message[0]);
@@ -91,15 +94,10 @@ var BATTLE_PROCESSOR = (function () {
     }
 
     var initialized = false;
+    var selectedType;
     module.startBattles = function () {
-        if (!initialized) {
-            initialized = true;
-            DeckRetriever.getUserAccount(function () {
-                DeckRetriever.init(module.fight);
-            });
-        } else {
-            module.fight(false);
-        }
+        selectedType = document.getElementById("battleType").value;
+        module.fight(false);
     }
 
     var lastID = 0;
@@ -421,13 +419,25 @@ var BATTLE_PROCESSOR = (function () {
         }
     }
 
+    var turnsGlobal = [];
     function playTurns(data, playTurn0) {
         var lastTurn = 0;
-
+        
         var turns = data.battle_data.turn;
+        turnsGlobal = [];
         for (var turn in turns) {
+            if (turn != 0 || playTurn0) {
+                turnsGlobal.push(turn);
+            }
+        }
+        setTimeout(processTurnsAsync, 1, 0, lastTurn, data);
+    }
+
+    function processTurnsAsync(i, lastTurn, data) {
+        if (i < turnsGlobal.length) {
+            var turns = data.battle_data.turn;
+            var turn = turnsGlobal[i];
             if (turn > lastTurn) lastTurn = turn;
-            if (turn == 0 && !playTurn0) continue;
             var turnInfo = turns[turn];
             var p = (turn % 2 == 1 ? 'player' : 'cpu');
             for (var phase in turnInfo) {
@@ -436,16 +446,17 @@ var BATTLE_PROCESSOR = (function () {
             if (!_DEFINED("auto")) {
                 drawField(lastTurn);
             }
-        }
-
-        
-        if (!areCommandersAlive()) {
-            battleFinished(lastTurn, false, data.battle_data);
-        } else if (data.battle_data.winner !== undefined) {
-            battleFinished(lastTurn, true, data.battle_data);
+            i++;
+            setTimeout(processTurnsAsync, 1, i, lastTurn, data);
         } else {
-            resetKeys();
-            SIM_CONTROLLER.startsim();
+            if (!areCommandersAlive()) {
+                battleFinished(lastTurn, false, data.battle_data);
+            } else if (data.battle_data.winner !== undefined) {
+                battleFinished(lastTurn, true, data.battle_data);
+            } else {
+                resetKeys();
+                SIM_CONTROLLER.startsim();
+            }
         }
     }
 
