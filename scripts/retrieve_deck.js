@@ -592,6 +592,8 @@ var DeckRetriever = (function () {
     function resumeIncompleteBattle() {
         if (battle_to_resume) {
             resumeBattle();
+        } else {
+            alert("Ready!");
         }
     }
 
