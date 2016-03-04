@@ -709,7 +709,7 @@ var BATTLE_PROCESSOR = (function () {
         var uid = action.card_uid;
         var targets = action.target_values;
         for (var key in targets) {
-            jamTracking[uid] = (jamTracking[uid] + 1 | 1);
+            jamTracking[uid] = (jamTracking[uid] + 1 || 1);
             if (targets[key].x) {
                 var card = cachedField.uids[uid];
                 countdownSkillInner(card, "jam", jamTracking[uid]);

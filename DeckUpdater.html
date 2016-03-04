@@ -171,18 +171,30 @@
                         <img id="collapseFilters" src="res/misc/Minus.png" onclick="toggleCardDisplay(this);" />
                         <h1>Cards:</h1>
                     </td>
-                    <td>
-                        <input type="checkbox" onclick="toggleUpgrades(this);" class="ui-widget-content ui-corner-all" />
-                        All Upgrade Levels (may degrade performance)
+                    <td style="min-width:70px;">
+                        <div id="pageNumber">Page </div>
                     </td>
                     <td>
-                        <input type="checkbox" id="skillDetails" onclick="toggleSkillDetails(this);" class="ui-widget-content ui-corner-all" />
-                        Compact Skills
+                        <img id="collapseFilters" src="res/misc/upArrow.png" onclick="pageUp();">
+                        <img id="collapseFilters" src="res/misc/downArrow.png" onclick="pageDown();">
                     </td>
-                    <td style="width:100%;"></td>
+                    <td id="filler" style="width:100%;"></td>
+                    <td>
+                        <div id="advancedMenu" class="dropdown">
+                            <div><u>Advanced Options</u></div>
+                            <div id="dropdown" class="dropdown-content">
+                                <input type="checkbox" onclick="toggleUpgrades(this);" class="ui-widget-content ui-corner-all" />
+                                All Upgrade Levels
+                                <br />
+                                <input type="checkbox" id="skillDetails" onclick="toggleSkillDetails(this);" class="ui-widget-content ui-corner-all" />
+                                Compact Skills
+                            </div>
+                        </div>
+                    </td>
+                    <td style="min-width:10px;"></td>
                     <td>
                         Sort By:
-                        <select name="sortField" id="sortField" class="ui-widget-content ui-corner-all" onchange="sortCards(this);">
+                        <select name="sortField" id="sortField" class="ui-widget-content ui-corner-all" onchange="sortAndDraw(this);">
                             <option value="id">ID</option>
                             <option value="type">Faction</option>
                             <option value="sub_type">Sub-Faction</option>
@@ -286,6 +298,27 @@
                         <input type="checkbox" id="showUnreleased" onclick="toggleUnreleasedRunes(this);" />
                         Show Unreleased
                     </label>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <div id="inventoryOptions" class="dialog-form">
+        <form>
+            <fieldset>
+                <div id="invFusionDiv" class="split">
+                    <label for="upgrade">Fusion</label>
+                    <input type="number" name="fusion" id="invFusion" min="1" max="3" step="1" class="ui-widget-content ui-corner-all">
+                </div>
+                <div id="invUpgradeDiv" class="split">
+                    <label for="upgrade">Level</label>
+                    <input type="number" name="upgrade" id="invUpgrade" min="1" step="1" class="ui-widget-content ui-corner-all">
+                </div>
+                <div id="invRuneChoicesDiv">
+                    <label for="runeChoices">Rune</label>
+                    <select name="runeChoices" id="invRuneChoices" class="ui-widget-content ui-corner-all">
+                        <option value=""></option>
+                    </select>
                 </div>
             </fieldset>
         </form>

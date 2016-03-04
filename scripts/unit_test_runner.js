@@ -169,37 +169,37 @@ function setupTest(test) {
     if (d) d.value = test.deck2;
 
     var d = document.getElementById('surge');
-    if (d) d.checked = test.surge | false;
+    if (d) d.checked = test.surge || false;
 
     var d = document.getElementById('siege');
-    if (d) d.checked = test.siege | false;
+    if (d) d.checked = test.siege || false;
 
     var d = document.getElementById('tower_level');
-    if (d) d.value = test.tower_level | 10;
+    if (d) d.value = test.tower_level || 10;
 
     var d = document.getElementById('tower_type');
-    if (d) d.value = test.tower_type | 0;
+    if (d) d.value = test.tower_type || 0;
 
     var d = document.getElementById('tournament');
-    if (d) d.checked = test.tournament | false;
+    if (d) d.checked = test.tournament || false;
 
     var d = document.getElementById('ordered');
-    if (d) d.checked = test.ordered | false;
+    if (d) d.checked = test.ordered || false;
 
     var d = document.getElementById('exactorder');
-    if (d) d.checked = test.exactorder | false;
+    if (d) d.checked = test.exactorder || false;
 
     var d = document.getElementById('ordered2');
-    if (d) d.checked = test.ordered2 | false;
+    if (d) d.checked = test.ordered2 || false;
 
     var d = document.getElementById('exactorder2');
-    if (d) d.checked = test.exactorder2 | false;
+    if (d) d.checked = test.exactorder2 || false;
 
     var d = document.getElementById('mission');
-    if (d) d.value = test.mission | '';
+    if (d) d.value = test.mission || '';
 
     var d = document.getElementById('raid');
-    if (d) d.checked = test.raid | false;
+    if (d) d.checked = test.raid || false;
 
     var bgCheckBoxes = document.getElementsByName("battleground");
     if (test.battlegrounds) for (var i = 0; i < test.battlegrounds.length; i++) {
@@ -208,7 +208,7 @@ function setupTest(test) {
     }
 
     var d = document.getElementById('sims');
-    if (d) d.value = test.sims | 100;
+    if (d) d.value = test.sims || 100;
 }
 
 function drawResultsAll() {

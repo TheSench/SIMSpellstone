@@ -287,9 +287,24 @@ var DeckRetriever = (function () {
         DisplayLoadingSplash();
         setTimeout(function () {
             sendRequest('init', null, function (response) {
-                checkResponse(response, handleAutoUseItems);
+                checkResponse(response, function () {
+                    processInitResponse();
+                    handleAutoUseItems();
+                });
             });
         }, 1);
+    }
+
+    function processInitResponse(response) {
+        processHuntingTargets(response);
+        var user_data = response.user_data;
+        if (user_data) {
+            resources.gold = user_data.money;
+            resources.shards = user_data.tokens;
+            resources.dust = user_data.salvage;
+            energy.campaign = user_data.energy;
+        }
+        battle_to_resume = response.battle_to_resume;
     }
 
     function handleAutoUseItems() {
@@ -321,7 +336,7 @@ var DeckRetriever = (function () {
         DisplayLoadingSplash();
         setTimeout(function () {
             sendRequest('updateEvents', null, function (response) {
-                checkResponse(response);
+                checkResponse(response, resumeIncompleteBattle);
             });
         }, 1);
     }
@@ -333,11 +348,19 @@ var DeckRetriever = (function () {
         DisplayLoadingSplash();
         setTimeout(function () {
             sendRequest('init', null, function (response) {
+                processInitResponse(response);
                 getInventory(response);
             });
         }, 1);
     }
 
+    var resources = {
+        gold: 0,
+        shards: 0,
+        dust: 0,
+    }
+
+    //-- Begin Battle APIs
     var energy = {
         campaign: 0,
         clash: 0,
@@ -565,7 +588,16 @@ var DeckRetriever = (function () {
     }
     //-- End  Practice Battle
 
+    var battle_to_resume = true;
+    function resumeIncompleteBattle() {
+        if (battle_to_resume) {
+            resumeBattle();
+        }
+    }
+
     function resumeBattle() {
+        battle_to_resume = false;
+
         var params = {
             battle_id: 0,
         }
@@ -610,6 +642,7 @@ var DeckRetriever = (function () {
             });
         }, 1);
     }
+    //-- End Battle APIs
 
     function getFactionMembers(draw, callback) {
 

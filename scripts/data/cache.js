@@ -54212,7 +54212,6 @@ var CARDS = {
     "set": "7000",
     "card_type": "1",
     "type": "1",
-    "attack": 0,
     "health": 8,
     "skill": [
       {
@@ -54252,7 +54251,6 @@ var CARDS = {
     "set": "7000",
     "card_type": "1",
     "type": "1",
-    "attack": 0,
     "health": 15,
     "skill": [
       {
@@ -54320,7 +54318,6 @@ var CARDS = {
     "set": "7000",
     "card_type": "1",
     "type": "1",
-    "attack": 0,
     "health": 22,
     "skill": [
       {
@@ -54412,7 +54409,6 @@ var CARDS = {
     "set": "7000",
     "card_type": "1",
     "type": "2",
-    "attack": 0,
     "health": 8,
     "skill": [
       {
@@ -54452,7 +54448,6 @@ var CARDS = {
     "set": "7000",
     "card_type": "1",
     "type": "2",
-    "attack": 0,
     "health": 16,
     "skill": [
       {
@@ -54528,7 +54523,6 @@ var CARDS = {
     "set": "7000",
     "card_type": "1",
     "type": "2",
-    "attack": 0,
     "health": 22,
     "skill": [
       {
@@ -54621,7 +54615,6 @@ var CARDS = {
     "set": "7000",
     "card_type": "1",
     "type": "3",
-    "attack": 0,
     "health": 8,
     "skill": [
       {
@@ -54657,7 +54650,6 @@ var CARDS = {
     "set": "7000",
     "card_type": "1",
     "type": "3",
-    "attack": 0,
     "health": 22,
     "skill": [
       {
@@ -54731,7 +54723,6 @@ var CARDS = {
     "set": "7000",
     "card_type": "1",
     "type": "3",
-    "attack": 0,
     "health": 25,
     "skill": [
       {
@@ -54814,7 +54805,6 @@ var CARDS = {
     "set": "7000",
     "card_type": "1",
     "type": "1",
-    "attack": 0,
     "health": 21,
     "skill": [
       {
@@ -54910,7 +54900,6 @@ var CARDS = {
     "set": "7000",
     "card_type": "1",
     "type": "2",
-    "attack": 0,
     "health": 23,
     "skill": [
       {
@@ -55011,7 +55000,6 @@ var CARDS = {
     "set": "7000",
     "card_type": "1",
     "type": "3",
-    "attack": 0,
     "health": 20,
     "skill": [
       {
@@ -55131,7 +55119,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "2",
-    "attack": 0,
     "health": 6,
     "skill": [],
     "upgrades": {
@@ -55167,7 +55154,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "3",
-    "attack": 0,
     "health": 9,
     "skill": [],
     "upgrades": {
@@ -55207,7 +55193,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "3",
-    "attack": 0,
     "health": 8,
     "skill": [],
     "upgrades": {}
@@ -55220,7 +55205,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "1",
-    "attack": 0,
     "health": 11,
     "skill": [
       {
@@ -55286,7 +55270,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "1",
-    "attack": 0,
     "health": 8,
     "skill": [
       {
@@ -55351,7 +55334,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "3",
-    "attack": 0,
     "health": 12,
     "skill": [
       {
@@ -55400,7 +55382,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "2",
-    "attack": 0,
     "health": 17,
     "skill": [
       {
@@ -55459,7 +55440,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "2",
-    "attack": 0,
     "health": 16,
     "skill": [],
     "upgrades": {
@@ -55501,7 +55481,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "2",
-    "attack": 0,
     "health": 20,
     "skill": [
       {
@@ -55559,7 +55538,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "2",
-    "attack": 0,
     "health": 25,
     "skill": [
       {
@@ -55634,7 +55612,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "2",
-    "attack": 0,
     "health": 13,
     "skill": [
       {
@@ -55705,7 +55682,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "2",
-    "attack": 0,
     "health": 17,
     "skill": [
       {
@@ -55770,7 +55746,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "8",
-    "attack": 0,
     "health": 18,
     "skill": [
       {
@@ -55829,7 +55804,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "3",
-    "attack": 0,
     "health": 23,
     "skill": [
       {
@@ -55926,7 +55900,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "8",
-    "attack": 0,
     "health": 23,
     "skill": [
       {
@@ -55995,7 +55968,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "8",
-    "attack": 0,
     "health": 40,
     "skill": [
       {
@@ -56091,7 +56063,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "3",
-    "attack": 0,
     "health": 2,
     "skill": [],
     "upgrades": {
@@ -56117,7 +56088,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "1",
-    "attack": 0,
     "health": 6,
     "skill": [],
     "upgrades": {
@@ -56143,7 +56113,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "3",
-    "attack": 0,
     "health": 11,
     "skill": [
       {
@@ -56199,7 +56168,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "2",
-    "attack": 0,
     "health": 11,
     "skill": [
       {
@@ -56276,7 +56244,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "8",
-    "attack": 0,
     "health": 25,
     "skill": [
       {
@@ -56354,7 +56321,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "1",
-    "attack": 0,
     "health": 29,
     "skill": [
       {
@@ -56442,7 +56408,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "2",
-    "attack": 0,
     "health": 20,
     "skill": [
       {
@@ -56503,7 +56468,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "1",
-    "attack": 0,
     "health": 6,
     "skill": [],
     "upgrades": {
@@ -56535,7 +56499,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "2",
-    "attack": 0,
     "health": 7,
     "skill": [],
     "upgrades": {
@@ -56567,7 +56530,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "2",
-    "attack": 0,
     "health": 17,
     "skill": [
       {
@@ -56630,7 +56592,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "3",
-    "attack": 0,
     "health": 12,
     "skill": [
       {
@@ -56692,7 +56653,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "3",
-    "attack": 0,
     "health": 12,
     "skill": [
       {
@@ -56733,7 +56693,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "2",
-    "attack": 0,
     "health": 14,
     "skill": [
       {
@@ -56814,7 +56773,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "8",
-    "attack": 0,
     "health": 18,
     "skill": [
       {
@@ -56875,7 +56833,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "8",
-    "attack": 0,
     "health": 17,
     "skill": [
       {
@@ -56938,7 +56895,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "2",
-    "attack": 0,
     "health": 18,
     "skill": [
       {
@@ -57004,7 +56960,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "2",
-    "attack": 0,
     "health": 18,
     "skill": [
       {
@@ -57076,7 +57031,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "2",
-    "attack": 0,
     "health": 18,
     "skill": [
       {
@@ -57152,7 +57106,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "2",
-    "attack": 0,
     "health": 18,
     "skill": [
       {
@@ -57218,7 +57171,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "2",
-    "attack": 0,
     "health": 17,
     "skill": [
       {
@@ -57278,7 +57230,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "1",
-    "attack": 0,
     "health": 19,
     "skill": [
       {
@@ -57344,7 +57295,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "1",
-    "attack": 0,
     "health": 24,
     "skill": [
       {
@@ -57430,7 +57380,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "1",
-    "attack": 0,
     "health": 19,
     "skill": [
       {
@@ -57513,7 +57462,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "3",
-    "attack": 0,
     "health": 24,
     "skill": [
       {
@@ -57591,7 +57539,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "2",
-    "attack": 0,
     "health": 19,
     "skill": [
       {
@@ -57645,7 +57592,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "3",
-    "attack": 0,
     "health": 25,
     "skill": [
       {
@@ -57748,7 +57694,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "3",
-    "attack": 0,
     "health": 23,
     "skill": [
       {
@@ -57847,7 +57792,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "1",
-    "attack": 0,
     "health": 24,
     "skill": [
       {
@@ -57936,7 +57880,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "3",
-    "attack": 0,
     "health": 28,
     "skill": [
       {
@@ -58027,7 +57970,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "2",
-    "attack": 0,
     "health": 22,
     "skill": [
       {
@@ -58152,7 +58094,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "3",
-    "attack": 0,
     "health": 23,
     "skill": [
       {
@@ -58233,7 +58174,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "3",
-    "attack": 0,
     "health": 30,
     "skill": [
       {
@@ -58312,7 +58252,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "3",
-    "attack": 0,
     "health": 26,
     "skill": [
       {
@@ -58388,7 +58327,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "3",
-    "attack": 0,
     "health": 32,
     "skill": [
       {
@@ -58449,7 +58387,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "3",
-    "attack": 0,
     "health": 27,
     "skill": [
       {
@@ -58518,7 +58455,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "3",
-    "attack": 0,
     "health": 32,
     "skill": [
       {
@@ -58583,7 +58519,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "3",
-    "attack": 0,
     "health": 35,
     "skill": [
       {
@@ -58668,7 +58603,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "1",
-    "attack": 0,
     "health": 30,
     "skill": [
       {
@@ -58780,7 +58714,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "3",
-    "attack": 0,
     "health": 40,
     "skill": [
       {
@@ -58940,7 +58873,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "1",
-    "attack": 0,
     "health": 37,
     "skill": [
       {
@@ -59088,7 +59020,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "2",
-    "attack": 0,
     "health": 45,
     "skill": [
       {
@@ -59210,7 +59141,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "2",
-    "attack": 0,
     "health": 25,
     "skill": [
       {
@@ -59303,7 +59233,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "1",
-    "attack": 0,
     "health": 26,
     "skill": [
       {
@@ -59373,7 +59302,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "2",
-    "attack": 0,
     "health": 43,
     "skill": [
       {
@@ -59455,7 +59383,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "3",
-    "attack": 0,
     "health": 40,
     "skill": [
       {
@@ -59567,7 +59494,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "1",
-    "attack": 0,
     "health": 25,
     "skill": [
       {
@@ -59628,7 +59554,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "1",
-    "attack": 0,
     "health": 30,
     "skill": [
       {
@@ -59703,7 +59628,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "1",
-    "attack": 0,
     "health": 27,
     "skill": [
       {
@@ -59777,7 +59701,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "1",
-    "attack": 0,
     "health": 40,
     "skill": [
       {
@@ -59851,7 +59774,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "2",
-    "attack": 0,
     "health": 30,
     "skill": [
       {
@@ -59934,7 +59856,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "2",
-    "attack": 0,
     "health": 27,
     "skill": [
       {
@@ -60009,7 +59930,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "1",
-    "attack": 0,
     "health": 29,
     "skill": [
       {
@@ -60086,7 +60006,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "3",
-    "attack": 0,
     "health": 32,
     "skill": [
       {
@@ -60169,7 +60088,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "1",
-    "attack": 0,
     "health": 34,
     "skill": [
       {
@@ -60248,7 +60166,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "1",
-    "attack": 0,
     "health": 32,
     "skill": [
       {
@@ -60327,7 +60244,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "1",
-    "attack": 0,
     "health": 40,
     "skill": [
       {
@@ -60414,7 +60330,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "2",
-    "attack": 0,
     "health": 23,
     "skill": [
       {
@@ -60493,7 +60408,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "1",
-    "attack": 0,
     "health": 22,
     "skill": [
       {
@@ -60576,7 +60490,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "3",
-    "attack": 0,
     "health": 26,
     "skill": [
       {
@@ -60653,7 +60566,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "1",
-    "attack": 0,
     "health": 26,
     "skill": [
       {
@@ -60753,7 +60665,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "2",
-    "attack": 0,
     "health": 28,
     "skill": [
       {
@@ -60845,7 +60756,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "1",
-    "attack": 0,
     "health": 21,
     "skill": [
       {
@@ -60926,7 +60836,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "2",
-    "attack": 0,
     "health": 32,
     "skill": [
       {
@@ -61037,7 +60946,6 @@ var CARDS = {
     "card_type": "1",
     "type": "2",
     "sub_type": "7",
-    "attack": 0,
     "health": 30,
     "skill": [
       {
@@ -61167,7 +61075,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "1",
-    "attack": 0,
     "health": 26,
     "skill": [
       {
@@ -61251,7 +61158,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "3",
-    "attack": 0,
     "health": 30,
     "skill": [
       {
@@ -61352,7 +61258,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "1",
-    "attack": 0,
     "health": 28,
     "skill": [
       {
@@ -61439,7 +61344,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "3",
-    "attack": 0,
     "health": 35,
     "skill": [
       {
@@ -61545,7 +61449,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "2",
-    "attack": 0,
     "health": 36,
     "skill": [
       {
@@ -61640,7 +61543,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "2",
-    "attack": 0,
     "health": 23,
     "skill": [
       {
@@ -61736,7 +61638,6 @@ var CARDS = {
     "set": "9999",
     "card_type": "1",
     "type": "3",
-    "attack": 0,
     "health": 35,
     "skill": [
       {

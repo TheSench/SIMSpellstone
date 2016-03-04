@@ -152,8 +152,10 @@
                     <input class="delay-filter" type="button" value="3" onclick="filterDelay(this, 3)" />
                     <input class="delay-filter" type="button" value="4" onclick="filterDelay(this, 4)" />
                 </fieldset>
-                <div style="white-space:nowrap; margin: 5px 0px;"><strong>Name Filter:</strong><br/>
-                <input id="nameFilter" type="text" value="" size="100" onkeyup="filterName(this);"></div>
+                <div style="white-space:nowrap; margin: 5px 0px;">
+                    <strong>Name Filter:</strong><br />
+                    <input id="nameFilter" type="text" value="" size="100" onkeyup="filterName(this);">
+                </div>
                 <input type="button" value="Clear All" onclick="clearFilters()" />
                 <br />
             </div>
@@ -166,18 +168,30 @@
                         <img id="collapseFilters" src="res/misc/Minus.png" onclick="toggleCardDisplay(this);" />
                         <h1>Cards:</h1>
                     </td>
-                    <td>
-                        <input type="checkbox" onclick="toggleUpgrades(this);" class="ui-widget-content ui-corner-all" />
-                        All Upgrade Levels (may degrade performance)
+                    <td style="min-width:70px;">
+                        <div id="pageNumber">Page </div>
                     </td>
                     <td>
-                        <input type="checkbox" id="skillDetails" onclick="toggleSkillDetails(this);" class="ui-widget-content ui-corner-all" />
-                        Compact Skills
+                        <img id="collapseFilters" src="res/misc/upArrow.png" onclick="pageUp();">
+                        <img id="collapseFilters" src="res/misc/downArrow.png" onclick="pageDown();">
                     </td>
                     <td style="width:100%;"></td>
                     <td>
+                        <div id="advancedMenu" class="dropdown">
+                            <div><u>Advanced Options</u></div>
+                            <div id="dropdown" class="dropdown-content">
+                                <input type="checkbox" onclick="toggleUpgrades(this);" class="ui-widget-content ui-corner-all" />
+                                All Upgrade Levels
+                                <br />
+                                <input type="checkbox" id="skillDetails" onclick="toggleSkillDetails(this);" class="ui-widget-content ui-corner-all" />
+                                Compact Skills
+                            </div>
+                        </div>
+                    </td>
+                    <td style="min-width:10px;"></td>
+                    <td>
                         Sort By:
-                        <select name="sortField" id="sortField" class="ui-widget-content ui-corner-all" onchange="sortCards(this);">
+                        <select name="sortField" id="sortField" class="ui-widget-content ui-corner-all" onchange="sortAndDraw(this);">
                             <option value="id">ID</option>
                             <option value="type">Faction</option>
                             <option value="sub_type">Sub-Faction</option>
