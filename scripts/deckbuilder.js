@@ -238,8 +238,9 @@ function doDrawCardList(cardList, resetPage) {
     var contextMenu = (fromInventory ? showInventoryOptions : hideContext);
 
     var width = cardspace.offsetWidth;
+    var rows = document.getElementById("rows").value;
     var cards = ~~(width / 90); // Each card is 84 pixels wide and has 2 pixels of padding and 1 pixel of border
-    cards *= 3; // Draw 3 rows of cards
+    cards *= rows;
     var lastUnit = null;
     var unique = 0;
     for (var i = 0, len = cardList.length; i < len; i++) {
