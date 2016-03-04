@@ -172,6 +172,10 @@
                         <div id="pageNumber">Page </div>
                     </td>
                     <td>
+                        Rows:
+                        <input type="number" name="rows" id="rows" min="1" step="1" max="9" value="3" class="ui-widget-content ui-corner-all" style="width:25px;" onchange="applyFilters(true, false);">
+                    </td>
+                    <td>
                         <img id="collapseFilters" src="res/misc/upArrow.png" onclick="pageUp();">
                         <img id="collapseFilters" src="res/misc/downArrow.png" onclick="pageDown();">
                     </td>
