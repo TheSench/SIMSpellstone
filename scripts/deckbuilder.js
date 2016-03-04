@@ -48,6 +48,11 @@ var initDeckBuilder = function () {
 
     $(window).resize(onResize);
 
+    var cs = $("#cardSpace");
+    cs.mouseenter(enterInventory);
+    cs.mouseleave(leaveInventory);
+    window.onwheel = changePage;
+
     setTimeout(function () {
         drawAllCards();
         $("body").removeClass("loading");
@@ -300,6 +305,28 @@ function adjustTable(filler) {
             }
         }
     }
+}
+
+var overInventory = false;
+function enterInventory() {
+    overInventory = true;
+}
+
+function leaveInventory() {
+    overInventory = false;
+}
+
+function changePage(event) {
+    if (overInventory) {
+        if (event.deltaY < 0) {
+            pageUp();
+            return false;
+        } else if (event.deltaY > 0) {
+            pageDown();
+            return false;
+        }
+    }
+    return true;
 }
 
 function pageUp() {
