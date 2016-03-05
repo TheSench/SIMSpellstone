@@ -1,6 +1,7 @@
 ﻿"use strict";
 
 var BattleAPI;
+var InventoryAPI;
 var HandleJSONPResponse;
 
 var DeckRetriever = (function () {
@@ -257,7 +258,35 @@ var DeckRetriever = (function () {
 
         DisplayLoadingSplash();
         setTimeout(function () {
-            sendRequest('startFusion');
+            sendRequest('startFusion', params);
+        }, 1);
+    }
+
+    function vaporizeUnits(units, callback) {
+        var params = {
+            units: units
+        }
+
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('salvageUnitList', params, function (response) {
+                checkResponse(response, callback);
+            });
+        }, 1);
+    }
+
+    function buyStoreItem(expected_cost, cost_type, item_id, callback) {
+        var params = {
+            item_id: item_id,
+            expected_cost: expected_cost,
+            cost_type: cost_type
+        };
+
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('buyStoreItem', params, function (response) {
+                checkResponse(response, callback);
+            });
         }, 1);
     }
 
@@ -349,7 +378,7 @@ var DeckRetriever = (function () {
         setTimeout(function () {
             sendRequest('init', null, function (response) {
                 processInitResponse(response);
-                getInventory(response);
+                getDeckAndInventory(response);
             });
         }, 1);
     }
@@ -801,7 +830,7 @@ var DeckRetriever = (function () {
         return div;
     }
 
-    function getInventory(data) {
+    function getDeckAndInventory(data) {
         var name = data.user_data.name;
         var user_id = data.user_data.user_id;
         var cardSpace = document.getElementById("deck");
@@ -809,8 +838,30 @@ var DeckRetriever = (function () {
         var div = doDrawDeck(deck, user_id, name);
         cardSpace.appendChild(div);
         var hash = hash_encode(deck);
+        var inventory = getInventoryFromDeckInfo(data);
+        var inventoryHash = hash_encode(inventory);
 
-        var deck = {
+
+        var nameDiv = createDiv("float-left", "Inventory");
+        nameDiv.style.fontSize = "xx-large";
+        nameDiv.style.fontWeight = "bold";
+        var div = document.createElement("div");
+        div.appendChild($('<div><label style="float:left;" class="button" onclick="open_deck_builder(\'' + name + '\', \'' + hash + '\');"><b>Deck Builder</b></label>')[0]);
+        div.appendChild($('<div><label style="float:left;" class="button" onclick="open_deck_builder(\'' + name + '\', \'' + hash + '\', \'' + inventoryHash + '\');"><b>Deck Builder (w/ Inventory)</b></label>')[0]);
+        div.appendChild(document.createElement("br"));
+        div.appendChild(
+            $('<input>').attr('type', 'text').attr('value', hash).width(500)[0]
+        );
+        div.appendChild(document.createElement("br"));
+        div.appendChild(document.createElement("br"));
+        div.appendChild(nameDiv);
+        div.appendChild(CARD_GUI.makeDeckHTML(inventory));
+        div.appendChild(document.createElement("hr"));
+        cardSpace.appendChild(div);
+    }
+
+    function getInventoryFromDeckInfo(data) {
+        var inventory = {
             commander: elariaCaptain,
             deck: [],
         }
@@ -823,34 +874,16 @@ var DeckRetriever = (function () {
                 unit_info.runes.push({ id: runes[key].item_id });
             }
             unit_info.index = unit.unit_index;
-            deck.deck.push(unit_info);
+            inventory.deck.push(unit_info);
         }
-        deck.deck.sort(function (unit1, unit2) {
+        inventory.deck.sort(function (unit1, unit2) {
             if (unit1.id < unit2.id) return -1;
             if (unit1.id > unit2.id) return 1;
             if (unit1.level < unit2.level) return -1;
             if (unit1.level > unit2.level) return 1;
             if (unit1.id < unit2.id) return 0;
         });
-        var inventory = hash_encode(deck);
-
-
-        var nameDiv = createDiv("float-left", "Inventory");
-        nameDiv.style.fontSize = "xx-large";
-        nameDiv.style.fontWeight = "bold";
-        var div = document.createElement("div");
-        div.appendChild($('<div><label style="float:left;" class="button" onclick="open_deck_builder(\'' + name + '\', \'' + hash + '\');"><b>Deck Builder</b></label>')[0]);
-        div.appendChild($('<div><label style="float:left;" class="button" onclick="open_deck_builder(\'' + name + '\', \'' + hash + '\', \'' + inventory + '\');"><b>Deck Builder (w/ Inventory)</b></label>')[0]);
-        div.appendChild(document.createElement("br"));
-        div.appendChild(
-            $('<input>').attr('type', 'text').attr('value', hash).width(500)[0]
-        );
-        div.appendChild(document.createElement("br"));
-        div.appendChild(document.createElement("br"));
-        div.appendChild(nameDiv);
-        div.appendChild(CARD_GUI.makeDeckHTML(deck));
-        div.appendChild(document.createElement("hr"));
-        cardSpace.appendChild(div);
+        return inventory;
     }
 
     BattleAPI = {
@@ -863,6 +896,15 @@ var DeckRetriever = (function () {
         resumeBattle: resumeBattle,
         playCard: playCard,
         forfeitBattle: forfeitBattle,
+    }
+
+    InventoryAPI = {
+        upgradeCard: upgradeCard,
+        fuseCards: fuseCards,
+        vaporizeUnits: vaporizeUnits,
+        buyStoreItem: buyStoreItem,
+        getInventoryFromDeckInfo: getInventoryFromDeckInfo,
+        getDeckFromDeckInfo: getDeckFromDeckInfo,
     }
 
     var publicInfo = {
