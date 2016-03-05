@@ -154,17 +154,6 @@ var drawDeck = function () {
     updateHash();
 };
 
-function getFromInventory(unit) {
-    for (var i = 0, len = unitsShown.length; i < len; i++) {
-        var unit_i = unitsShown[i];
-        if (areEqual(unit, unit_i)) {
-            unitsShown.splice(i, 1);
-            return unit_i;
-        }
-    }
-    return unit;
-}
-
 var drawCardList = function () {
 
     units = [];
@@ -177,10 +166,10 @@ var drawCardList = function () {
         for (var i = 0; i < inventory.length; i++) {
             addInventoryUnit(inventory[i]);
         }
-        deck.commander = getFromInventory(deck.commander);
+        deck.commander = removeFromInventory(deck.commander);
         for (var i = 0; i < deck.deck.length; i++) {
             var unit = deck.deck[i];
-            deck.deck[i] = getFromInventory(unit);
+            deck.deck[i] = removeFromInventory(unit);
         }
     } else {
         var onlyNew = false;
@@ -203,10 +192,12 @@ var drawCardList = function () {
     applyFilters();
     //doDrawCardList(unitsShown);
     if (inventory) {
+        /*
         deck.commander = removeFromInventory(deck.commander);
         for (var i = 0; i < deck.deck.length; i++) {
             deck.deck[i] = removeFromInventory(deck.deck[i]);
         }
+        */
         /*
         var unitsToHide = deck.deck.slice();
         unitsToHide.push(deck.commander);
