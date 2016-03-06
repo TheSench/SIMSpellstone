@@ -5,9 +5,14 @@ var BATTLE_PROCESSOR = (function () {
     var cachedHands;
     var cachedDraws;
 
+    var onReady;
     alert = function (message) {
         CARD_GUI.clearCardSpace();
         document.getElementById("content").innerHTML = '<div><font size="24">' + message + '</font></div>';
+        if (onReady) {
+            onReady();
+            onReady = false;
+        }
     }
 
     var trackPlays = _DEFINED("trackPlays");
@@ -42,8 +47,8 @@ var BATTLE_PROCESSOR = (function () {
             var nextTime = Date.now() + addTime;
             var dateObj = new Date(nextTime);
             alert(dateObj);
-
-            noCapTimer = setTimeout(module.fight, addTime);
+            onReady = module.fight;
+            noCapTimer = setTimeout(DeckRetriever.getUserAccount, addTime);
         } else if (battleType == "startCampaignBattle") {
             document.getElementById("battleType").value = "startBountyBattle";
             module.fight();
