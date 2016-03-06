@@ -1210,34 +1210,6 @@ var levelCosts = {
     5: [0, 5, 15, 30, 75, 150, 200]
 };
 
-function upgradeInventoriedCard(optionsDialog) {
-    var unit = optionsDialog.unit;
-    var original = unit.baseStats;
-
-    var fusions = ~~(unit.id / 10000) - original.fusion + 1;
-
-    var rarity = CARDS[unit.id].rarity;
-
-    var dust = 0;
-    var costs = levelCosts[rarity];
-    if (optionsDialog.fused) {
-        var confirmed = confirm("Fuse these cards?");
-        if (confirmed) {
-
-        }
-    } else {
-        for (var i = original.level; i < unit.level; i++) {
-            dust += costs[i];
-        }
-        if (dust > 0) {
-            var confirmed = confirm("This will cost " + dust + " dust!");
-            if (confirmed) {
-
-            }
-        }
-    }
-}
-
 var filterSet = function (button, set) {
     setHidden = {};
     if (button.classList.contains("selected")) {

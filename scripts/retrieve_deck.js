@@ -239,18 +239,20 @@ var DeckRetriever = (function () {
         }, 1);
     }
 
-    function upgradeCard(index) {
+    function upgradeCard(index, callback) {
         var params = {
             unit_index: index,
         }
 
         DisplayLoadingSplash();
         setTimeout(function () {
-            sendRequest('upgradeUnit', params);
+            sendRequest('upgradeUnit', params, function (response) {
+                checkResponse(response, callback);
+            });
         }, 1);
     }
 
-    function fuseCards(fusion, index1, index2) {
+    function fuseCards(fusion, index1, index2, callback) {
         var params = {
             fusion_id: fusion,
             components: [index1, index2]
@@ -258,7 +260,9 @@ var DeckRetriever = (function () {
 
         DisplayLoadingSplash();
         setTimeout(function () {
-            sendRequest('startFusion', params);
+            sendRequest('startFusion', params, function (response) {
+                checkResponse(response, callback);
+            });
         }, 1);
     }
 

@@ -44,3 +44,47 @@ function processVaporizeResults(response) {
     deck = InventoryAPI.getDeckFromDeckInfo(response.user_decks[1]);
     processInventory(response);
 }
+
+function upgradeInventoriedCard(optionsDialog) {
+    var unit = optionsDialog.unit;
+    var original = unit.baseStats;
+
+    var fusions = ~~(unit.id / 10000) - original.fusion + 1;
+
+    var rarity = CARDS[unit.id].rarity;
+
+    var dust = 0;
+    var costs = levelCosts[rarity];
+    if (optionsDialog.fused) {
+        var confirmed = confirm("Fuse these cards?");
+        if (confirmed) {
+
+        }
+    } else {
+        var count = 0;
+        for (var i = original.level; i < unit.level; i++) {
+            dust += costs[i];
+            count++;
+        }
+        if (dust > 0) {
+            var confirmed = confirm("This will cost " + dust + " dust!");
+            if (confirmed) {
+                var upgrades = [];
+                for (var i = 0; i < count; i++) {
+                    upgrades.push(unit.index);
+                }
+                doUpgrades(upgrades, 0);
+            }
+        }
+    }
+}
+
+function doUpgrades(upgrades, i) {
+    if (!i) i = 0;
+    var next = upgrades[i++];
+    if (next) {
+        InventoryAPI.upgradeCard(next, function () {
+            doUpgrades(upgrades, i);
+        });
+    }
+}
