@@ -953,6 +953,13 @@ var showCardOptions = function (htmlCard, index) {
         }
     }
 
+    if ($("#upgradeDiv").css('display') == "none" || $("#fusionDiv").css('display') == "none")
+    {
+        $("#upgradeDiv").add("#fusionDiv").toggleClass("split", false);
+    } else {
+        $("#upgradeDiv").add("#fusionDiv").toggleClass("split", true);
+    }
+
     if (showRunePicker(card)) {
         show = true;
     }
