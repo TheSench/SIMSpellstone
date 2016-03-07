@@ -68,7 +68,16 @@ var DeckRetriever = (function () {
     var sendMethod = jsonp;
     if (_DEFINED("ajax")) {
         sendMethod = ajax;
-        baseURL = "https://crossorigin.me/https://spellstone.synapse-games.com/api.php?";
+        if (_DEFINED("cors")) {
+            baseURL = "https://spellstone.synapse-games.com/api.php?";
+            jQuery.ajaxPrefilter(function (options) {
+                if (options.crossDomain && jQuery.support.cors) {
+                    options.url = 'https://cors-anywhere.herokuapp.com/' + options.url;
+                }
+            });
+        } else {
+            baseURL = "https://crossorigin.me/https://spellstone.synapse-games.com/api.php?";
+        }
     }
 
     function createCORSRequest(method, url) {
