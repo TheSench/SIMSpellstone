@@ -172,15 +172,20 @@
                         <img id="collapseFilters" src="res/misc/Minus.png" onclick="toggleCardDisplay(this);" />
                         <h1>Cards:</h1>
                     </td>
-                    <td style="min-width:70px;">
-                        <div id="pageNumber">Page </div>
+                    <td style="width:40%; min-width:2px;"></td>
+                    <td>
+                        Rows:
+                        <input type="number" name="rows" id="rows" min="1" step="1" max="9" value="3" class="ui-widget-content ui-corner-all" style="width:25px;" onchange="applyFilters(true, false);">
+                    </td>
+                    <td style="min-width:5px;"></td>
+                    <td>
+                        <img style="width:12px" src="res/misc/Arrow.png" onclick="pageUp();">
+                    </td>
+                    <td style="min-width:45px; text-align:center;">
+                        <div id="pageNumber"></div>
                     </td>
                     <td>
-                        <img id="collapseFilters" src="res/misc/upArrow.png" onclick="pageUp();">
-                        <img id="collapseFilters" src="res/misc/downArrow.png" onclick="pageDown();">
-                    </td>
-                    <td>Rows: 
-                        <input type="number" name="rows" id="rows" min="1" step="1" max="9" value="3" class="ui-widget-content ui-corner-all" style="width:25px;" onchange="applyFilters(true, false);">
+                        <img class="flip" style="width:12px" src="res/misc/Arrow.png" onclick="pageDown();">
                     </td>
                     <td id="filler" style="width:100%;"></td>
                     <td>
