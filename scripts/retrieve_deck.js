@@ -304,7 +304,79 @@ var DeckRetriever = (function () {
             resources.dust = user_data.salvage;
             energy.campaign = user_data.energy;
         }
+        handlePassiveMissions(response.passive_missions);
         battle_to_resume = response.battle_to_resume;
+    }
+
+    var itemValues = {
+        "14": 500,      // Aether Pack
+        "15": 500,      // Chaos Pack
+        "16": 500,      // Wyld Pack
+        "17": 400,      // Frog Pack
+        "18": 1000,      // Elemental Pack
+        "19": 1000,      // Angel Pack
+        "20": 1000,      // Undead Pack
+        "1011": 50,     // Gold Nugget
+        "1012": 150,    // Gold Bar
+        "2001": 150,    // Arcane Fragment
+    }
+    function handlePassiveMissions(passive_missions) {
+        var best;
+        for (var key in passive_missions) {
+            var mission = passive_missions[key];
+            // If we've already started one, don't try to start another
+            if (mission.start_time > 0) {
+                // Check if we've completed it
+                if (mission.end_time * 1000 < Date.now()) {
+                    completePassiveMission(key);
+                }
+                best = false;
+                return;
+            }
+
+            var reward = mission.reward;
+            if (reward.item) {
+                var value = itemValues[reward.item.id] || 150;
+                value *= reward.item.number;
+            } else if (reward.pack) {
+                value = itemValues[reward.pack];
+            } else {
+                value = 800;    // Arcane Ore?
+            }
+            value *= mission.duration;
+            value *= mission.chance;
+            if (!best || best.value < value) {
+                best = { id: key, value: value };
+            }
+        }
+
+        startPassiveMission(best.id);
+    }
+
+    function startPassiveMission(passive_mission_id) {
+        var params = {
+            passive_mission_id: passive_mission_id,
+        };
+
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('startPassiveMission', params, function (response) {
+                checkResponse(response);
+            });
+        }, 1);
+    }
+
+    function completePassiveMission(passive_mission_id) {
+        var params = {
+            passive_mission_id: passive_mission_id,
+        };
+
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('completePassiveMission', params, function (response) {
+                checkResponse(response, handlePassiveMissions);
+            });
+        }, 1);
     }
 
     function handleAutoUseItems() {

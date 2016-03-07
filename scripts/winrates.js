@@ -3,6 +3,7 @@
 var attackerKeys = [];
 var defenderKeys = [];
 var winrates = {};
+var avgPoints = {};
 
 var clearHash1 = true;
 var clearList1 = true;
@@ -11,6 +12,8 @@ var clearList2 = true;
 var suppressOutput = true;
 var extraCards = [];
 var evolutions = [];
+var comparisonMethod;
+var resultsMethod;
 
 function LoadGuildDecks() {
     DeckRetriever.retrieveGuildDecks(false);
@@ -57,6 +60,7 @@ function RunGuildSIMS() {
     attackerKeys = [];
     defenderKeys = [];
     winrates = {};
+    avgPoints = {};
 
     DeckRetriever.allDecks = {};
     for (var key in DeckRetriever.factionDecks) {
@@ -137,7 +141,7 @@ function nextEvolution(isFirst) {
             if (!best) {
                 best = attacker;
             } else {
-                if (getAverage(attacker) > getAverage(best)) best = attacker;
+                if (comparisonMethod(attacker) > comparisonMethod(best)) best = attacker;
             }
         }
         var attacker = DeckRetriever.allDecks[best];
@@ -152,6 +156,7 @@ function nextEvolution(isFirst) {
     attackerKeys = [];
     defenderKeys = [];
     winrates = {};
+    avgPoints = {};
 
     DeckRetriever.allDecks = {};
     for (var key in DeckRetriever.factionDecks) {
@@ -194,18 +199,54 @@ function nextEvolution(isFirst) {
     nextFight(0, -1, true);
 }
 
-function getAverage(attacker) {
-    
-    var avg = 0;
-    var count = 0;;
-    for (var defender in defenderKeys) {
-        defender = defenderKeys[defender];
-        var winrate = winrates[attacker][defender];
-        avg += winrate;
-        count++;
+var resultComparisons = (function () {
+    function getAverageWinrate(attacker) {
+        var avg = 0;
+        var count = 0;;
+        for (var defender in defenderKeys) {
+            defender = defenderKeys[defender];
+            var winrate = winrates[attacker][defender];
+            avg += winrate;
+            count++;
+        }
+        return avg / count;
     }
-    return avg / count;
-}
+    function getWinrate(attacker, defender) {
+        var winrate = winrates[attacker][defender];
+        return winrate.toFixed(1) + "%";
+    }
+
+    function getPoints (attacker, defender) {
+        var points = avgPoints[attacker][defender];
+        return points.toFixed(1);
+    }
+
+    function getAveragePoints(attacker) {
+        var avg = 0;
+        var count = 0;;
+        for (var defender in defenderKeys) {
+            defender = defenderKeys[defender];
+            var points = avgPoints[attacker][defender];
+            avg += points;
+            count++;
+        }
+        return avg / count;
+    }
+
+    function byWinrate() {
+        comparisonMethod = getAverageWinrate;
+        resultsMethod = getWinrate;
+    }
+    function byPoints() {
+        comparisonMethod = getAveragePoints;
+        resultsMethod = getPoints;
+    }
+
+    return {
+        byWinrate: byWinrate,
+        byPoints: byPoints
+    }
+})();
 
 function RunGuildSIMSs() {
 
@@ -215,6 +256,7 @@ function RunGuildSIMSs() {
     attackerKeys = [];
     defenderKeys = [];
     winrates = {};
+    avgPoints = {};
 
     delete (DeckRetriever.factionDecks['CustomAttackDeck']);
     delete (DeckRetriever.factionDecks['CustomDefenseDeck']);
@@ -307,6 +349,9 @@ function clearFields() {
 
 var paused = false;
 function nextFight(attackKey, defendKey, sortByWins) {
+    var setOptimizationCriteria = document.getElementById("optimizationCriteria").value
+    resultComparisons[setOptimizationCriteria]();
+
     if (paused) {
         setupResume(attackKey, defendKey, sortByWins);
         return;
@@ -315,22 +360,17 @@ function nextFight(attackKey, defendKey, sortByWins) {
     if (defendKey >= 0) {
         var attacker = attackerKeys[attackKey];
         var defender = defenderKeys[defendKey];
-        if (!winrates[attacker]) winrates[attacker] = {};
+        if (!winrates[attacker]) {
+            winrates[attacker] = {};
+            avgPoints[attacker] = {};
+        }
         winrates[attacker][defender] = (wins / games * 100);
+        avgPoints[attacker][defender] = (total_points / games);
     } else {
         var button = document.getElementById("pauseResume").style.display = "block";
     }
 
     defendKey++;
-    /*
-    if (attackerKeys[attackKey] == defenderKeys[defendKey]) {
-        var attacker = attackerKeys[attackKey];
-        var defender = defenderKeys[defendKey];
-        if (!winrates[attacker]) winrates[attacker] = {};
-        winrates[attacker][defender] = "-";
-        defendKey++;
-    }
-    */
     var defender = defenderKeys[defendKey];
     if (!defender) {
         defendKey = 0;
@@ -363,31 +403,33 @@ function nextFight(attackKey, defendKey, sortByWins) {
         var key = 'Original'
         var deck = DeckRetriever.allDecks[key];
         var winrate = winrates[key];
+        var points = avgPoints[key];
         evolutions.push({
             deck: deck,
             winrate: winrate,
+            avgPoints: points,
         });
     } else {
         // for final display, show all evolutions
         for (var i = 0; i < evolutions.length; i++) {
             var evolution = evolutions[i];
             var deck = evolution.deck;
-            var winrate = evolution.winrate;
             var attackerKey = (i > 0 ? "Evolution " + i : "Starting Deck");
             attackerKeys.push(attackerKey);
             DeckRetriever.allDecks[attackerKey] = deck;
-            winrates[attackerKey] = winrate;
+            winrates[attackerKey] = evolution.winrate;
+            avgPoints[attackerKey] = evolution.avgPoints;
         }
         if (sortByWins) {
             attackerKeys.sort(function (a, b) {
-                return getAverage(b) - getAverage(a);
+                return comparisonMethod(b) - comparisonMethod(a);
             });
         }
     }
 
     if (sortByWins) {
         attackerKeys.sort(function (a, b) {
-            return getAverage(b) - getAverage(a);
+            return comparisonMethod(b) - comparisonMethod(a);
         });
     }
 
@@ -427,10 +469,12 @@ function testTable() {
         var attacker = attackerKeys[attackKey];
         if (!attacker) break;
         winrates[attacker] = {};
+        avgPoints[attacker] = {};
         for (var defendKey = 0; ; defendKey++) {
             var defender = defenderKeys[defendKey];
             if (!defender) break;
             winrates[attacker][defender] = "100.00%";
+            avgPoints[attacker][defender] = "130.00";
         }
     }
     drawResults();
@@ -466,13 +510,13 @@ function drawResults() {
         row.appendChild(hash);
         for (var defender in defenderKeys) {
             defender = defenderKeys[defender];
-            var winrate = winrates[attacker][defender];
+            var results = resultsMethod(attacker, defender);
             var data = document.createElement("td");
-            data.innerHTML = winrate.toFixed(1) + "%";
+            data.innerHTML = results;
             row.appendChild(data);
         }
         var data = document.createElement("td");
-        data.innerHTML = getAverage(attacker).toFixed(1) + "%";
+        data.innerHTML = resultsMethod(attacker, defender);
         row.appendChild(data);
         table.appendChild(row);
     }
