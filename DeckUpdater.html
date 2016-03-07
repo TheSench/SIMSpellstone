@@ -22,7 +22,8 @@
     <script id="cards_gui" type="text/javascript" src="scripts/cards_gui.js"></script>
     <script id="deckbuilder" type="text/javascript" src="scripts/deckbuilder.js"></script>
     <script id="spoilers" type="text/javascript" src="scripts/data/spoilers.js"></script>
-    <script id="spoilers" type="text/javascript" src="scripts/retrieve_deck.js"></script>
+    <script id="retrieve_deck" type="text/javascript" src="scripts/retrieve_deck.js"></script>
+    <script id="inventoryManagement" type="text/javascript" src="scripts/inventoryManagement.js"></script>
 
 </head>
 <body onload="initDeckBuilder()" onresize="adjustHeight();">
@@ -191,6 +192,16 @@
                                 <br />
                                 <input type="checkbox" id="skillDetails" onclick="toggleSkillDetails(this);" class="ui-widget-content ui-corner-all" />
                                 Compact Skills
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div id="management" class="dropdown">
+                            <div><u>Management</u></div>
+                            <div id="dropdown" class="dropdown-content">
+                                <label class="button" onclick="buyGoldPack();"><b>Buy Gold</b></label>
+                                <br />
+                                <label class="button" onclick="vaporizeBulk();"><b>Vaporize Bulk</b></label>
                             </div>
                         </div>
                     </td>
