@@ -121,7 +121,6 @@ var BATTLE_PROCESSOR = (function () {
             var battleType = document.getElementById("battleType");
             var additionalParam = battleType.options[battleType.selectedIndex].getAttribute("data-param");
             battleType = battleType.value;
-            sortByPoints = (battleType == 'startGuildWarBattle' || battleType == 'startRaidBattle');
             if (battleType == "fightGuildMember" && _DEFINED("spam")) {
                 targetID = getTarget();
                 if (!isContinue) {
@@ -278,6 +277,7 @@ var BATTLE_PROCESSOR = (function () {
     }
 
     function startBattle(data) {
+        sortByPoints = (battleType == 'startGuildWarBattle' || battleType == 'startRaidBattle');
         lastWinrate = -2;
         suppressOutput = true;
         SIMULATOR.setupField = function (field) { copyField(field, false); };
