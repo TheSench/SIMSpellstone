@@ -51,7 +51,6 @@ var DeckRetriever = (function () {
 
     function getRequestParams(messageType, additionalParams) {
         var request = { message: messageType };
-        if (!baseRequest.user_id) baseRequest = requestFields
         request = $.extend(request, baseRequest);
         if (additionalParams) request = $.extend(request, additionalParams);
 
@@ -68,7 +67,7 @@ var DeckRetriever = (function () {
     var makingAPICall = false;
     var sendMethod = jsonp;
     if (_DEFINED("ajax")) {
-        var sendMethod = ajax;
+        sendMethod = ajax;
         baseURL = "https://crossorigin.me/https://spellstone.synapse-games.com/api.php?";
     }
 
@@ -116,7 +115,7 @@ var DeckRetriever = (function () {
         makingAPICall = true;
         lastAPICall = now;
         if (!baseRequest.user_id) {
-            throw "Missing user id";
+            params.test = true;
         }
         var params = getRequestParams(messageType, params);
         var url = baseURL + params;
