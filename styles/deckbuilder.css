@@ -105,10 +105,10 @@ input[type="button"].attack-filter {
         transition: max-height 0.15s ease-out;
     }
 
-#filters fieldset {
+fieldset {
     display: inline;
-    padding: 2px;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     min-height: 32px;
     vertical-align: top;
 }
@@ -194,4 +194,10 @@ input[type="button"].attack-filter {
     transform: scaleX(-1);
     filter: FlipH;
     -ms-filter: "FlipH";
+}
+
+#advancedFilters,
+#unitOptions,
+#inventoryOptions {
+    padding: 0px;
 }

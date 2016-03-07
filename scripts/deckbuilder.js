@@ -69,9 +69,10 @@ var adjustHeight = function () {
 var setupPopups = function () {
     advancedFilters = $("#advancedFilters").dialog({
         autoOpen: false,
-        width: 100,
+        width: 150,
         minHeight: 20,
         modal: true,
+        resizable: false,
         buttons: {
             OK: function () {
                 filterAdvanced(advancedFilters.skill);
@@ -87,6 +88,7 @@ var setupPopups = function () {
         width: 250,
         minHeight: 20,
         modal: true,
+        resizable: false,
         buttons: {
             OK: function () {
                 //modifyCard(optionsDialog);
@@ -103,6 +105,7 @@ var setupPopups = function () {
         width: 250,
         minHeight: 20,
         modal: true,
+        resizable: false,
         buttons: {
             OK: function () {
                 upgradeInventoriedCard(inventoryOptionsDialog);
