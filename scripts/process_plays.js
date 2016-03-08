@@ -277,6 +277,7 @@ var BATTLE_PROCESSOR = (function () {
     }
 
     function startBattle(data) {
+        var battleType = document.getElementById("battleType").value;
         sortByPoints = (battleType == 'startGuildWarBattle' || battleType == 'startRaidBattle');
         lastWinrate = -2;
         suppressOutput = true;
