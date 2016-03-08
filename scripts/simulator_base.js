@@ -1712,14 +1712,6 @@ if (simulator_thread) (function () {
                 battlegrounds = value;
             }
         },
-        battlegrounds: {
-            get: function() { 
-                return battlegrounds;
-            }, 
-            set: function(value) {
-                battlegrounds = value;
-            }
-        },
         simulation_turns: {
             get: function() { 
                 return simulation_turns;
