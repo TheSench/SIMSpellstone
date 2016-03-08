@@ -1728,6 +1728,7 @@ var factions = {
         'Undead',
         'Void',
         'Dragon',
+        'Avian',
     ],
     IDs: {
         Factionless: 0,
@@ -1739,6 +1740,7 @@ var factions = {
         Angel: 6,
         Undead: 7,
         Void: 8,
-        Dragon: 9
+        Dragon: 9,
+        Avian: 10,
     }
 };
