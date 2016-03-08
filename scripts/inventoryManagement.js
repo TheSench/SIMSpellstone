@@ -58,7 +58,7 @@ function upgradeInventoriedCard(optionsDialog) {
     if (optionsDialog.fused) {
         var confirmed = confirm("Fuse these cards?");
         if (confirmed) {
-
+            doFusion(optionsDialog.unit, optionsDialog.fused);
         }
     } else {
         var count = 0;
@@ -87,4 +87,11 @@ function doUpgrades(upgrades, i) {
             doUpgrades(upgrades, i);
         });
     }
+}
+
+function doFusion(unit1, unit2) {
+    var fusion = unit1.id;
+    var index1 = unit1.index;
+    var index2 = unit2.index;
+    InventoryAPI.fuseCards(fusion, index1, index2, processVaporizeResults);
 }

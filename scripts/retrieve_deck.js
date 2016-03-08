@@ -263,7 +263,7 @@ var DeckRetriever = (function () {
     function fuseCards(fusion, index1, index2, callback) {
         var params = {
             fusion_id: fusion,
-            components: [index1, index2]
+            components: "[" + [index1, index2].join() + "]"
         }
 
         DisplayLoadingSplash();
@@ -973,7 +973,6 @@ var DeckRetriever = (function () {
         var hash = hash_encode(deck);
         var inventory = getInventoryFromDeckInfo(data);
         var inventoryHash = hash_encode(inventory);
-
 
         var nameDiv = createDiv("float-left", "Inventory");
         nameDiv.style.fontSize = "xx-large";
