@@ -346,6 +346,7 @@ var DeckRetriever = (function () {
             energy.campaign = user_data.energy;
         }
         handlePassiveMissions(response.passive_missions);
+        handleAchievements(response.user_achievements);
         battle_to_resume = response.battle_to_resume;
     }
 
@@ -416,6 +417,28 @@ var DeckRetriever = (function () {
         setTimeout(function () {
             sendRequest('completePassiveMission', params, function (response) {
                 checkResponse(response, handlePassiveMissions);
+            });
+        }, 1);
+    }
+
+    function handleAchievements(achievements) {
+        for (var key in achievements) {
+            var achievement = achievements[key];
+            if (achievement.status) {
+                completeAchievement(key);
+            }
+        }
+    }
+
+    function completeAchievement(achievement_id) {
+        var params = {
+            achievement_id: achievement_id,
+        };
+
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('completeAchievement', params, function (response) {
+                checkResponse(response);
             });
         }, 1);
     }
