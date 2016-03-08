@@ -42,6 +42,7 @@ var CARD_GUI = {};
     }
 
     function draw_card_list(list, compactSkills, onclick, onrightclick, skip, end) {
+        skip = skip || 0;
         var cardSpace = document.getElementById("cardSpace");
         cardSpace.innerHTML = '';
         var cards = createDiv("float-left");
@@ -49,13 +50,13 @@ var CARD_GUI = {};
         var lastUnit;
         var multiplier;
         var uniqueCard = 0;
-        for (var i = 0, len = list.length; i < len; i++) {
+        for (var i = 0, len = list.length; i < len && (!end || uniqueCard < end); i++) {
             var listEntry = list[i];
             var unit = get_card_by_id(listEntry);
             if (areEqual(unit, lastUnit)) {
                 multiplier++;
             } else {
-                if (!end || (uniqueCard >= skip && uniqueCard < end)) {
+                if ((uniqueCard >= skip)) {
                     if (multiplier > 1) {
                         var multDiv = createDiv("multiplier", "x" + multiplier);
                         var multIcon = createImg("res/cardAssets/multiplier.png", "multiplier");
