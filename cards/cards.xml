@@ -125,6 +125,7 @@
     <rarity>1</rarity>
     <skill id="protect" x="1" y="1" />
     <type>1</type>
+    <sub_type>10</sub_type>
     <set>1000</set>
     <upgrade>
       <level>2</level>
@@ -420,6 +421,7 @@
     <rarity>2</rarity>
     <skill id="armored" x="1" />
     <type>1</type>
+    <sub_type>10</sub_type>
     <set>1000</set>
     <upgrade>
       <level>2</level>
@@ -7416,6 +7418,7 @@
     <skill id="strike" x="2" />
     <skill id="jam" c="7" />
     <type>1</type>
+    <sub_type>10</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
@@ -7463,6 +7466,7 @@
     <skill id="strike" x="4" />
     <skill id="jam" c="5" />
     <type>1</type>
+    <sub_type>10</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
@@ -7502,6 +7506,7 @@
     <skill id="strike" x="5" />
     <skill id="jam" c="5" />
     <type>1</type>
+    <sub_type>10</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
@@ -9124,6 +9129,7 @@
     <skill id="legion" x="1" y="1" />
     <rarity>3</rarity>
     <type>1</type>
+    <sub_type>10</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
@@ -9164,6 +9170,7 @@
     <skill id="legion" x="2" y="1" />
     <rarity>3</rarity>
     <type>1</type>
+    <sub_type>10</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
@@ -9201,6 +9208,7 @@
     <skill id="legion" x="2" y="1" />
     <rarity>3</rarity>
     <type>1</type>
+    <sub_type>10</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
@@ -25281,6 +25289,7 @@
     <rarity>1</rarity>
     <skill id="protect" x="1" y="1" />
     <type>1</type>
+    <sub_type>10</sub_type>
     <set>1000</set>
     <upgrade>
       <level>2</level>
@@ -25305,6 +25314,7 @@
     <rarity>1</rarity>
     <skill id="protect" x="2" y="1" />
     <type>1</type>
+    <sub_type>10</sub_type>
     <set>1000</set>
     <upgrade>
       <level>2</level>
@@ -25886,6 +25896,7 @@
     <skill id="armored" x="2" />
     <skill id="flurry" c="5" />
     <type>1</type>
+    <sub_type>10</sub_type>
     <set>1000</set>
     <upgrade>
       <level>2</level>
@@ -25915,6 +25926,7 @@
     <skill id="armored" x="3" />
     <skill id="flurry" c="5" />
     <type>1</type>
+    <sub_type>10</sub_type>
     <set>1000</set>
     <upgrade>
       <level>2</level>
