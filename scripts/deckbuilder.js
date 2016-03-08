@@ -1,5 +1,7 @@
 ﻿"use strict";
 
+// TODO: Add function for re-checking filters
+
 var fromInventory = false;
 var deck = [];
 deck.commander = elariaCaptain;
@@ -467,13 +469,14 @@ function removeFromInventory(unit) {
 }
 
 var removeFromDeck = function (htmlCard, index) {
+    var unit;
     if (htmlCard.classList.contains('commander')) {
+        unit = deck.commander;
         deck.commander = elariaCaptain;
     } else {
-        deck.deck.splice(index, 1);
+        unit = deck.deck.splice(index, 1)[0];
     }
     if (fromInventory) {
-        var unit = getUnitFromCard(htmlCard);
         unitsShown.push(unit);
         redrawCardList(true);
         /*
@@ -1151,17 +1154,12 @@ var modifyInventoriedCard = function (optionsDialog) {
         fusion--;
         document.getElementById("invFusion").value = fusion;
     } else if (fusion > unit.baseStats.fusion) {
-        var thisKey = makeUnitKey(unit);
         var best;
         var index;
         for (var i = 0; i < unitsShown.length; i++) {
             var inventoryUnit = unitsShown[i];
-            if (thisKey) {
-                var newKey = makeUnitKey(inventoryUnit);
-                if (newKey == thisKey) {
-                    thisKey = false;
-                    continue;
-                }
+            if (inventoryUnit.index == unit.index) {
+                continue;
             }
             if (unit.id == inventoryUnit.id && unit.level == inventoryUnit.level) {
                 best = inventoryUnit;
