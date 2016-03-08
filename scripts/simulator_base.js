@@ -887,14 +887,17 @@ if (simulator_thread) (function () {
         }
 
         // Load enemy deck
+        smartAI = true;
         if (getdeck2) {
             cache_cpu_deck = hash_decode(getdeck2);
         } else if (getcardlist2) {
             cache_cpu_deck = load_deck_from_cardlist(getcardlist2);
         } else if (getmission) {
             cache_cpu_deck = load_deck_mission(getmission);
+            smartAI = false;    // PvE decks do not use "Smart AI"
         } else if (getraid) {
             cache_cpu_deck = load_deck_raid(getraid, raidlevel);
+            smartAI = false;    // PvE decks do not use "Smart AI"
         } else {
             cache_cpu_deck = load_deck_from_cardlist();
         }
