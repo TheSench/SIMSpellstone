@@ -347,6 +347,7 @@ var DeckRetriever = (function () {
         }
         handlePassiveMissions(response.passive_missions);
         handleAchievements(response.user_achievements);
+        handleEvents(response.active_events);
         battle_to_resume = response.battle_to_resume;
     }
 
@@ -424,7 +425,7 @@ var DeckRetriever = (function () {
     function handleAchievements(achievements) {
         for (var key in achievements) {
             var achievement = achievements[key];
-            if (achievement.status) {
+            if (achievement.status > 0) {
                 completeAchievement(key);
             }
         }
@@ -438,6 +439,31 @@ var DeckRetriever = (function () {
         DisplayLoadingSplash();
         setTimeout(function () {
             sendRequest('completeAchievement', params, function (response) {
+                checkResponse(response);
+            });
+        }, 1);
+    }
+
+    function handleEvents(events) {
+        for (var key in events) {
+            var event = events[key];
+            if (event.has_claimed !== undefined && !event.has_claimed) {
+                var claimTime = (event.tracking_end_time + event.claim_delay * 60) * 1000;
+                if (claimTime < Date.now()) {
+                    claimEventRewards(key);
+                }
+            }
+        }
+    }
+
+    function claimEventRewards(event_id) {
+        var params = {
+            event_id: event_id,
+        };
+
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('claimEventRewards', params, function (response) {
                 checkResponse(response);
             });
         }, 1);
