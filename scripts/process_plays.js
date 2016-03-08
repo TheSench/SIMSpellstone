@@ -291,8 +291,9 @@ var BATTLE_PROCESSOR = (function () {
                 checkBest(true);
             } else {
                 checkBest(false);
-                drawField();
             }
+
+            drawField();
         }
         document.getElementById('ui').style.display = 'none';
         var deck_player = { deck: [] };
@@ -346,9 +347,7 @@ var BATTLE_PROCESSOR = (function () {
         catch (err) {
         }
 
-        if (!_DEFINED("auto")) {
-            drawField(1);
-        }
+        drawField(1);
 
         deck_player = hash_encode(deck_player);
         deck_cpu = hash_encode(deck_cpu);
@@ -452,9 +451,9 @@ var BATTLE_PROCESSOR = (function () {
             for (var phase in turnInfo) {
                 processTurnPhase(phase, p, turnInfo[phase]);
             }
-            if (!_DEFINED("auto")) {
-                drawField(lastTurn);
-            }
+            
+            drawField(lastTurn);
+
             i++;
             setTimeout(processTurnsAsync, 1, i, lastTurn, data);
         } else {
@@ -470,9 +469,8 @@ var BATTLE_PROCESSOR = (function () {
     }
 
     function battleFinished(lastTurn, surrender, battle_data) {
-        if (!_DEFINED("auto")) {
-            drawField(lastTurn, true);
-        }
+        drawField(lastTurn, true);
+
         //document.getElementById('ui').style.display = 'block';
         SIM_CONTROLLER.end_sims_callback = null;
 
@@ -1133,12 +1131,16 @@ var BATTLE_PROCESSOR = (function () {
     }
 
     function drawField(turn, matchEnded) {
+        if (_DEFINED("nodraw")) {
+            return;
+        }
+
         CARD_GUI.clearCardSpace();
         var copy_field = {};
         copyField(copy_field, true);
         if (matchEnded) {
             CARD_GUI.draw_cards(copy_field, null, pickCard, turn);
-        } else if (!_DEFINED("nodraw")) {
+        } else {
             cachedHands.player.choice = choice;
             CARD_GUI.draw_cards(copy_field, cachedHands.player, pickCard, turn);
             if (cachedHands.player.length > 1) {
