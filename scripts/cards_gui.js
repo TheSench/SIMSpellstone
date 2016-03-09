@@ -1,6 +1,8 @@
 ﻿"use strict";
 var CARD_GUI = {};
-(function (){
+(function () {
+    var assetsRoot = '';
+
     function clearCardSpace() {
         var cardSpace = document.getElementById("cardSpace");
         cardSpace.innerHTML = '';
@@ -59,7 +61,7 @@ var CARD_GUI = {};
                 if ((uniqueCard >= skip)) {
                     if (multiplier > 1) {
                         var multDiv = createDiv("multiplier", "x" + multiplier);
-                        var multIcon = createImg("res/cardAssets/multiplier.png", "multiplier");
+                        var multIcon = createImg(getAssetPath("cardAssets") + "multiplier.png", "multiplier");
                         htmlCard.appendChild(multIcon);
                         htmlCard.appendChild(multDiv);
                     }
@@ -76,7 +78,7 @@ var CARD_GUI = {};
         }
         if (multiplier > 1) {
             var multDiv = createDiv("multiplier", "x" + multiplier);
-            var multIcon = createImg("res/cardAssets/multiplier.png", "multiplier");
+            var multIcon = createImg(getAssetPath("cardAssets") + "multiplier.png", "multiplier");
             htmlCard.appendChild(multIcon);
             htmlCard.appendChild(multDiv);
         }
@@ -200,16 +202,16 @@ var CARD_GUI = {};
             } else {
                 var htmlAttack = createDiv("card-attack", card.attack.toString());
             }
-            htmlCard.appendChild(createImg("res/cardAssets/Attack.png", "attack"));
+            htmlCard.appendChild(createImg(getAssetPath("cardAssets") + "Attack.png", "attack"));
             htmlCard.appendChild(htmlAttack);
             if (onField) {
                 if (card.timer) {
                     htmlCard.appendChild(createDiv("delay", card.timer));
-                    htmlCard.appendChild(createImg("res/cardAssets/Timer.png", "timer"));
+                    htmlCard.appendChild(createImg(getAssetPath("cardAssets") + "Timer.png", "timer"));
                 }
             } else {
                 htmlCard.appendChild(createDiv("delay", card.cost));
-                htmlCard.appendChild(createImg("res/cardAssets/Timer.png", "timer"));
+                htmlCard.appendChild(createImg(getAssetPath("cardAssets") + "Timer.png", "timer"));
             }
         }
         if (onField) {
@@ -220,7 +222,7 @@ var CARD_GUI = {};
             var htmlHealth = createDiv("card-health", card.health.toString());
             if (boosts.health) htmlHealth.classList.add("increased");
         }
-        htmlCard.appendChild(createImg("res/cardAssets/Health.png", "health"));
+        htmlCard.appendChild(createImg(getAssetPath("cardAssets") + "Health.png", "health"));
         htmlCard.appendChild(htmlHealth);
         var divSkills = createDiv("card-skills");
         var skillsShort = createDiv("card-skills-short");
@@ -262,17 +264,17 @@ var CARD_GUI = {};
             htmlCard.appendChild(htmlSubfaction);
         }
         if (card.rarity > 0) {
-            var htmlLevel = createImg('res/cardAssets/' + "Level_" + card.rarity + "_" + card.level + ".png");
+            var htmlLevel = createImg(getAssetPath("cardAssets") + "Level_" + card.rarity + "_" + card.level + ".png");
             htmlLevel.className = "level";
             if (card.id > 9999) {
                 var fusion = ((card.id.toString()[0] == "1") ? "Dualfuse" : "Quadfuse");
-                fusion = createImg('res/cardAssets/' + fusion + ".png");
+                fusion = createImg(getAssetPath("cardAssets") + fusion + ".png");
                 fusion.className = "fusion";
                 htmlCard.appendChild(fusion);
             }
             htmlCard.appendChild(htmlLevel);
         } else if (card.maxLevel > 1) {
-            var htmlLevel = createImg('res/cardAssets/' + card.maxLevel + "_" + card.level + ".png");
+            var htmlLevel = createImg(getAssetPath("cardAssets") + card.maxLevel + "_" + card.level + ".png");
             htmlLevel.className = "level";
             htmlCard.appendChild(htmlLevel);
         }
@@ -355,7 +357,7 @@ var CARD_GUI = {};
     }
 
     function getSkillIcon(skillName) {
-        var src = 'res/skills/';
+        var src = getAssetPath("skills");
         var iconName = skillName.charAt(0).toUpperCase() + skillName.slice(1) + '.png';
         switch (skillName) {
             case 'armored':
@@ -481,12 +483,16 @@ var CARD_GUI = {};
 
     function getSetIcon(set) {
         var setName = setNames[set];
-        return createImg('res/cardAssets/' + setName + '.png');
+        return createImg(getAssetPath('cardAssets') + setName + '.png');
     }
 
     function getFactionIcon(factionID) {
         var factionName = factions.names[factionID];
-        return createImg('res/factions/' + factionName + '.png');
+        return createImg(getAssetPath('factions') + factionName + '.png');
+    }
+
+    function getAssetPath(subpath) {
+        return assetsRoot + 'res/' + subpath + '/';
     }
 
     var setNames = {
@@ -504,6 +510,17 @@ var CARD_GUI = {};
     CARD_GUI.makeDeckHTML = makeDeckHTML;
     CARD_GUI.draw_card_list = draw_card_list;
     CARD_GUI.draw_cards = draw_cards;
+    
+    Object.defineProperties(CARD_GUI, {
+        assetsRoot: {
+            get: function() { 
+                return assetsRoot;
+            }, 
+            set: function(value) {
+                assetsRoot = value;
+            }
+        }
+    });
 })();
 
 function createImg(src, className) {
