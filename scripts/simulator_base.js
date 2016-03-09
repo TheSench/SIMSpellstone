@@ -1497,13 +1497,13 @@ if (simulator_thread) (function () {
 
         if (damage > 0) {
             // Leech
-            // - Must have done some damage to an assault unit
+            // - Must have dealt damage
             // - Cannot leech more than damage dealt
             // - Cannot leech more health than damage sustained
             // - Leecher must not be already dead
             // - Leecher must not be at full health
             // - Increases attack too during Invigorate battleground effect
-            if (current_assault.leech && target.isAssault() && current_assault.isAlive() && current_assault.isDamaged()) {
+            if (current_assault.leech && current_assault.isAlive() && current_assault.isDamaged()) {
 
                 var leech_health = current_assault.leech;
                 leech_health += getEnhancement(current_assault, 'leech');
