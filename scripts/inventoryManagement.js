@@ -30,7 +30,7 @@ function vaporizeBulk() {
     var unitsToVaporize = [];
     for (var i = 0; i < units.length; i++) {
         var unit = units[i];
-        if (CARDS[unit.id].rarity <= 2 & unit.level == 1) {
+        if (!is_commander(unit.id) && CARDS[unit.id].rarity <= 2 && unit.level == 1) {
             unitsToVaporize.push(unit.index);
         }
     }
