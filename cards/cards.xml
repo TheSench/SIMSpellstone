@@ -555,6 +555,7 @@
     <skill id="armored" x="1" />
     <skill id="counter" x="1" />
     <type>1</type>
+    <sub_type>10</sub_type>
     <set>1000</set>
     <upgrade>
       <level>2</level>
@@ -4666,12 +4667,12 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>16</health>
+      <health>17</health>
     </upgrade>
     <upgrade>
       <level>3</level>
       <attack>6</attack>
-      <health>17</health>
+      <health>18</health>
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -4686,7 +4687,7 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="armored" x="2" />
+      <skill id="armored" x="3" />
       <skill id="legion" x="2" y="5" />
       <skill id="legion" x="2" y="1" />
     </upgrade>
@@ -4700,8 +4701,8 @@
     <asset_bundle>18</asset_bundle>
     <cost>3</cost>
     <attack>6</attack>
-    <health>19</health>
-    <skill id="armored" x="2" />
+    <health>20</health>
+    <skill id="armored" x="3" />
     <skill id="legion" x="2" y="5" />
     <skill id="legion" x="2" y="1" />
     <rarity>4</rarity>
@@ -4710,28 +4711,31 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>20</health>
-    </upgrade>
-    <upgrade>
-      <level>3</level>
       <health>21</health>
     </upgrade>
     <upgrade>
-      <level>4</level>
-      <attack>7</attack>
+      <level>3</level>
       <health>22</health>
-    </upgrade>
-    <upgrade>
-      <level>5</level>
-      <skill id="armored" x="3" />
+      <skill id="armored" x="4" />
       <skill id="legion" x="2" y="5" />
       <skill id="legion" x="2" y="1" />
     </upgrade>
     <upgrade>
-      <level>6</level>
-      <skill id="armored" x="3" />
+      <level>4</level>
+      <attack>7</attack>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="4" />
       <skill id="legion" x="3" y="5" />
       <skill id="legion" x="2" y="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="4" />
+      <skill id="legion" x="3" y="5" />
+      <skill id="legion" x="3" y="1" />
     </upgrade>
   </unit>
   <unit>
@@ -4743,17 +4747,17 @@
     <asset_bundle>18</asset_bundle>
     <cost>3</cost>
     <attack>8</attack>
-    <health>22</health>
-    <skill id="armored" x="3" />
+    <health>23</health>
+    <skill id="armored" x="4" />
     <skill id="legion" x="3" y="5" />
-    <skill id="legion" x="2" y="1" />
+    <skill id="legion" x="3" y="1" />
     <rarity>4</rarity>
     <type>1</type>
     <sub_type>5</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>23</health>
+      <health>24</health>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -4761,19 +4765,17 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="armored" x="4" />
-      <skill id="legion" x="3" y="5" />
-      <skill id="legion" x="2" y="1" />
+      <health>27</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="armored" x="4" />
+      <skill id="armored" x="5" />
       <skill id="legion" x="3" y="5" />
       <skill id="legion" x="3" y="1" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="armored" x="4" />
+      <skill id="armored" x="5" />
       <skill id="legion" x="4" y="5" />
       <skill id="legion" x="3" y="1" />
     </upgrade>
@@ -8920,6 +8922,7 @@
       <skill id="rally" x="3" />
       <skill id="flurry" c="6" />
     </upgrade>
+    <desc>Application for Avian classification denied. Maybe in a few million years.</desc>
   </unit>
   <unit>
     <id>15014</id>
@@ -21197,6 +21200,7 @@
     <skill id="protect" x="2" />
     <skill id="pierce" x="2" />
     <type>3</type>
+    <sub_type>10</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
@@ -21234,6 +21238,7 @@
     <skill id="protect" x="2" />
     <skill id="pierce" x="3" />
     <type>3</type>
+    <sub_type>10</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
@@ -21274,6 +21279,7 @@
     <skill id="protect" x="3" />
     <skill id="pierce" x="4" />
     <type>3</type>
+    <sub_type>10</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
@@ -21313,6 +21319,7 @@
     <skill id="rally" x="2" y="3" />
     <skill id="protect" x="1" y="3" />
     <type>3</type>
+    <sub_type>10</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
@@ -21346,6 +21353,7 @@
     <skill id="rally" x="2" y="3" />
     <skill id="protect" x="2" y="3" />
     <type>3</type>
+    <sub_type>10</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
@@ -21380,6 +21388,7 @@
     <skill id="rally" x="3" y="3" />
     <skill id="protect" x="3" y="3" />
     <type>3</type>
+    <sub_type>10</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
@@ -26167,6 +26176,7 @@
     <skill id="counter" x="2" />
     <skill id="flurry" c="4" />
     <type>1</type>
+    <sub_type>10</sub_type>
     <set>1000</set>
     <upgrade>
       <level>2</level>
@@ -26202,6 +26212,7 @@
     <skill id="counter" x="3" />
     <skill id="flurry" c="4" />
     <type>1</type>
+    <sub_type>10</sub_type>
     <set>1000</set>
     <upgrade>
       <level>2</level>
@@ -33093,6 +33104,95 @@
       <skill id="protect" all="1" x="4" />
     </upgrade>
   </unit>
+  <!-- Elemental story commanders  -->
+  <unit>
+    <id>287</id>
+    <card_type>1</card_type>
+    <name>Crab Striker</name>
+    <portrait>lavacrab</portrait>
+    <attack>0</attack>
+    <health>38</health>
+    <rarity>3</rarity>
+    <skill id="enhance" s="pierce" x="2" />
+    <skill id="enfeeble" x="2" />
+    <skill id="strike" x="1" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>42</health>
+      <skill id="enhance" s="pierce" x="3" />
+      <skill id="enfeeble" x="2" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>47</health>
+      <skill id="enhance" s="pierce" x="3" />
+      <skill id="enfeeble" x="3" />
+      <skill id="strike" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>53</health>
+      <skill id="enhance" s="pierce" x="3" />
+      <skill id="enfeeble" x="4" />
+      <skill id="strike" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>60</health>
+      <skill id="enhance" s="pierce" x="2" all="1" />
+      <skill id="enfeeble" x="5" />
+      <skill id="strike" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>288</id>
+    <card_type>1</card_type>
+    <name>Fireback Hill</name>
+    <portrait>frogemperor</portrait>
+    <attack>0</attack>
+    <health>40</health>
+    <rarity>4</rarity>
+    <skill id="enhance" s="strike" x="2" />
+    <skill id="heal" x="2" />
+    <skill id="protect" x="2" y="5" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>45</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>51</health>
+      <skill id="enhance" s="strike" x="2" />
+      <skill id="heal" x="3" />
+      <skill id="protect" x="2" y="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>58</health>
+      <skill id="enhance" s="strike" x="3" />
+      <skill id="heal" x="3" />
+      <skill id="protect" x="3" y="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>66</health>
+      <skill id="enhance" s="strike" x="3" />
+      <skill id="heal" x="3" />
+      <skill id="protect" x="4" y="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>75</health>
+      <skill id="enhance" s="strike" x="2" all="1" />
+      <skill id="heal" x="3" all="1" />
+      <skill id="protect" x="5" y="5" />
+    </upgrade>
+  </unit>
   <!-- START AETHER Default Cards -->
   <!-- 
 	
@@ -33770,12 +33870,12 @@
     <image></image>
     <icon>filter_dragon_32</icon>
   </unitType>
-  <!-- <unitType>
-		<id>10</id>
-		<name>Avian</name>
-		<image></image>
-		<icon>filter_avian_32</icon>
-	</unitType> -->
+  <unitType>
+    <id>10</id>
+    <name>Avian</name>
+    <image></image>
+    <icon>filter_avian_32</icon>
+  </unitType>
   <!-- CARD SETS -->
   <cardSet>
     <id>1000</id>
