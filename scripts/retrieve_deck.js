@@ -345,9 +345,9 @@ var DeckRetriever = (function () {
             resources.dust = user_data.salvage;
             energy.campaign = user_data.energy;
         }
-        handlePassiveMissions(response.passive_missions);
-        handleAchievements(response.user_achievements);
-        handleEvents(response.active_events);
+        handlePassiveMissions(response);
+        handleAchievements(response);
+        handleEvents(response);
         battle_to_resume = response.battle_to_resume;
     }
 
@@ -363,7 +363,8 @@ var DeckRetriever = (function () {
         "1012": 150,    // Gold Bar
         "2001": 150,    // Arcane Fragment
     }
-    function handlePassiveMissions(passive_missions) {
+    function handlePassiveMissions(response) {
+        var passive_missions = response.passive_missions;
         var best;
         for (var key in passive_missions) {
             var mission = passive_missions[key];
@@ -422,7 +423,8 @@ var DeckRetriever = (function () {
         }, 1);
     }
 
-    function handleAchievements(achievements) {
+    function handleAchievements(response) {
+        var achievements = response.user_achievements;
         for (var key in achievements) {
             var achievement = achievements[key];
             if (achievement.status > 0) {
@@ -444,7 +446,8 @@ var DeckRetriever = (function () {
         }, 1);
     }
 
-    function handleEvents(events) {
+    function handleEvents(response) {
+        var events = response.active_events;
         for (var key in events) {
             var event = events[key];
             if (event.has_claimed !== undefined && !event.has_claimed) {
