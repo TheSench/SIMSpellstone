@@ -212,13 +212,21 @@ var resultComparisons = (function () {
         return avg / count;
     }
     function getWinrate(attacker, defender) {
-        var winrate = winrates[attacker][defender];
-        return winrate.toFixed(1) + "%";
+        var winrate = winrates[attacker];
+        if (winrate) winrate = winrate[defender];
+        if (winrate !== undefined) {
+            return winrate.toFixed(1) + "%";
+        }
+        return '-';
     }
 
     function getPoints (attacker, defender) {
         var points = avgPoints[attacker][defender];
-        return points.toFixed(1);
+        if (points) points = points[defender];
+        if (points !== undefined) {
+            return points.toFixed(1);
+        }
+        return '-';
     }
 
     function getAveragePoints(attacker) {
