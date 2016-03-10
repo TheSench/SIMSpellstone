@@ -51,6 +51,7 @@ var BATTLE_PROCESSOR = (function () {
             var dateObj = new Date(nextTime);
             alert(dateObj);
             onReady = module.fight;
+            clearTimeout(noCapTimer);
             noCapTimer = setTimeout(DeckRetriever.getUserAccount, addTime);
         } else if (battleType == "startCampaignBattle") {
             document.getElementById("battleType").value = "startBountyBattle";
@@ -111,6 +112,7 @@ var BATTLE_PROCESSOR = (function () {
     var lastID = 0;
     var continues = 0;
     module.fight = function (isContinue) {
+        onReady = false;
         if (noCapTimer != null) {
             clearTimeout(noCapTimer);
             noCapTimer = null;
