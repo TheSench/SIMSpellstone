@@ -428,11 +428,6 @@ function nextFight(attackKey, defendKey, sortByWins) {
             winrates[attackerKey] = evolution.winrate;
             avgPoints[attackerKey] = evolution.avgPoints;
         }
-        if (sortByWins) {
-            attackerKeys.sort(function (a, b) {
-                return comparisonMethod(b) - comparisonMethod(a);
-            });
-        }
     }
 
     if (sortByWins) {
@@ -499,16 +494,16 @@ function drawResults() {
     var hash = document.createElement("th");
     hash.innerHTML = 'Deck Hash';
     header.appendChild(hash);
-    for (var defender in defenderKeys) {
+    for (var i = 0; i < defenderKeys.length; i++) {
         var name = document.createElement("th");
-        name.innerHTML = defenderKeys[defender];
+        name.innerHTML = defenderKeys[i];
         header.appendChild(name);
     }
     var name = document.createElement("th");
     name.innerHTML = "AVERAGE";
     header.appendChild(name);
-    for (var attacker in attackerKeys) {
-        attacker = attackerKeys[attacker];
+    for (var i = 0; i < attackerKeys.length; i++) {
+        var attacker = attackerKeys[i];
         var row = document.createElement("tr");
         var name = document.createElement("th");
         name.innerHTML = attacker;
@@ -524,7 +519,7 @@ function drawResults() {
             row.appendChild(data);
         }
         var data = document.createElement("td");
-        data.innerHTML = resultsMethod(attacker, defender);
+        data.innerHTML = comparisonMethod(attacker).toFixed(1)+"%";
         row.appendChild(data);
         table.appendChild(row);
     }
