@@ -7277,6 +7277,128 @@
       <attack>6</attack>
     </upgrade>
   </unit>
+  <unit>
+    <id>2031</id>
+    <card_type>2</card_type>
+    <name>Dryad</name>
+    <picture>Shrine_Wood_Nymph_A</picture>
+    <asset_bundle>50</asset_bundle>
+    <attack>4</attack>
+    <health>12</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="1" />
+    <skill id="heal" x="2" />
+    <skill id="leech" x="2" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>13</health>
+      <skill id="armored" x="2" />
+      <skill id="heal" x="2" />
+      <skill id="leech" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>14</health>
+      <skill id="armored" x="2" />
+      <skill id="heal" x="2" />
+      <skill id="leech" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="2" />
+      <skill id="heal" x="3" />
+      <skill id="leech" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>5</attack>
+      <skill id="armored" x="2" />
+      <skill id="heal" x="3" />
+      <skill id="leech" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12031</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Forest Dryad</name>
+    <picture>Shrine_Wood_Nymph_A</picture>
+    <asset_bundle>50</asset_bundle>
+    <attack>5</attack>
+    <health>15</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="2" />
+    <skill id="heal" x="3" />
+    <skill id="leech" x="4" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="2" />
+      <skill id="heal" x="3" />
+      <skill id="leech" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>17</health>
+      <skill id="armored" x="3" />
+      <skill id="heal" x="3" />
+      <skill id="leech" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>18</health>
+      <attack>6</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22031</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Anima Dryad</name>
+    <picture>Shrine_Wood_Nymph_B</picture>
+    <asset_bundle>50</asset_bundle>
+    <attack>6</attack>
+    <health>19</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="3" />
+    <skill id="heal" x="3" />
+    <skill id="leech" x="5" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="3" />
+      <skill id="heal" x="3" />
+      <skill id="leech" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="3" />
+      <skill id="heal" x="4" />
+      <skill id="leech" x="6" />
+    </upgrade>
+  </unit>
   <!-- END SET 2000 - Reward -->
   <!-- START SET 3000 - Premium -->
   <!-- 5000 - 7999 -->
@@ -12502,6 +12624,117 @@
       <skill id="armored" x="4" />
       <skill id="strike" x="3" />
       <skill id="burn" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5044</id>
+    <card_type>2</card_type>
+    <name>Telepathic Magi</name>
+    <picture>Telepathic_Mage_A</picture>
+    <asset_bundle>50</asset_bundle>
+    <attack>3</attack>
+    <health>8</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="protect" x="2" y="1" />
+    <skill id="weaken" x="1" />
+    <skill id="flurry" c="5" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="protect" x="2" y="1" />
+      <skill id="weaken" x="2" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="protect" x="2" y="1" />
+      <skill id="weaken" x="2" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>4</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15044</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Clairvoyant Magi</name>
+    <picture>Telepathic_Mage_A</picture>
+    <asset_bundle>50</asset_bundle>
+    <attack>4</attack>
+    <health>10</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="protect" x="2" y="1" />
+    <skill id="weaken" x="2" />
+    <skill id="flurry" c="4" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="protect" x="2" y="1" />
+      <skill id="weaken" x="3" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="protect" x="3" y="1" />
+      <skill id="weaken" x="3" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25044</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Ascended Magi</name>
+    <picture>Telepathic_Mage_B</picture>
+    <asset_bundle>50</asset_bundle>
+    <attack>4</attack>
+    <health>13</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="protect" x="3" y="1" />
+    <skill id="weaken" x="3" />
+    <skill id="flurry" c="4" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="protect" x="3" y="1" />
+      <skill id="weaken" x="3" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>5</attack>
     </upgrade>
   </unit>
   <!-- Chaos Premium Begin -->
@@ -17769,6 +18002,111 @@
       <skill id="weaken" x="3" all="1" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6044</id>
+    <card_type>2</card_type>
+    <name>Firewalker</name>
+    <picture>Fire_Walker_A</picture>
+    <asset_bundle>50</asset_bundle>
+    <attack>3</attack>
+    <health>10</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="fervor" x="1" y="2" />
+    <skill id="burn" x="1" />
+    <type>2</type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="fervor" x="1" y="2" />
+      <skill id="burn" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="fervor" x="2" y="2" />
+      <skill id="burn" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16044</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Firetreader</name>
+    <picture>Fire_Walker_A</picture>
+    <asset_bundle>50</asset_bundle>
+    <attack>4</attack>
+    <health>12</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="fervor" x="2" y="2" />
+    <skill id="burn" x="2" />
+    <type>2</type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="fervor" x="3" y="2" />
+      <skill id="burn" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="1" />
+      <skill id="fervor" x="3" y="2" />
+      <skill id="burn" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26044</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Firestomper</name>
+    <picture>Fire_Walker_B</picture>
+    <asset_bundle>50</asset_bundle>
+    <attack>4</attack>
+    <health>15</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="fervor" x="3" y="2" />
+    <skill id="burn" x="2" />
+    <type>2</type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="1" />
+      <skill id="fervor" x="3" y="2" />
+      <skill id="burn" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="1" />
+      <skill id="fervor" x="4" y="2" />
+      <skill id="burn" x="3" />
+    </upgrade>
+  </unit>
   <!-- Wyld Premium Begin -->
   <unit>
     <id>7000</id>
@@ -22905,6 +23243,139 @@
       <skill id="rally" x="2" all="1" y="4" />
       <skill id="enfeeble" x="3" />
       <skill id="berserk" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7044</id>
+    <card_type>2</card_type>
+    <name>River Elemental</name>
+    <picture>River_Elemental_A</picture>
+    <asset_bundle>50</asset_bundle>
+    <attack>5</attack>
+    <health>18</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="1" all="1" y="5" />
+    <skill id="jam" c="6" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="rally" x="1" all="1" y="5" />
+      <skill id="jam" c="6" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="rally" x="2" all="1" y="5" />
+      <skill id="jam" c="6" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17044</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>River Monstrosity</name>
+    <picture>River_Elemental_A</picture>
+    <asset_bundle>50</asset_bundle>
+    <attack>6</attack>
+    <health>21</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="2" all="1" y="5" />
+    <skill id="jam" c="6" />
+    <skill id="berserk" x="2" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="rally" x="2" all="1" y="5" />
+      <skill id="jam" c="5" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>23</health>
+      <skill id="rally" x="2" all="1" y="5" />
+      <skill id="jam" c="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>24</health>
+      <skill id="rally" x="3" all="1" y="5" />
+      <skill id="jam" c="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27044</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Lord of the River</name>
+    <picture>River_Elemental_B</picture>
+    <asset_bundle>50</asset_bundle>
+    <attack>7</attack>
+    <health>25</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="3" all="1" y="5" />
+    <skill id="jam" c="4" />
+    <skill id="berserk" x="2" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="rally" x="3" all="1" y="5" />
+      <skill id="jam" c="3" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>28</health>
+      <skill id="rally" x="4" all="1" y="5" />
+      <skill id="jam" c="3" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>29</health>
+      <skill id="rally" x="4" all="1" y="5" />
+      <skill id="jam" c="3" />
+      <skill id="berserk" x="3" />
     </upgrade>
   </unit>
   <!-- END SET 3000 - Premium -->

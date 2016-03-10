@@ -13337,6 +13337,242 @@ var CARDS = {
       },
     }
   },
+  "2031": {
+    "id": "2031",
+    "name": "Dryad",
+    "picture": "Shrine_Wood_Nymph_A",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "5",
+    "attack": 4,
+    "health": 12,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "heal",
+        "x": 2,
+      },
+      {
+        "id": "leech",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 13,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+        ],
+      },
+      "3": {
+        "health": 14,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "attack": 5,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "12031": {
+    "id": "12031",
+    "name": "Forest Dryad",
+    "picture": "Shrine_Wood_Nymph_A",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "5",
+    "attack": 5,
+    "health": 15,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "heal",
+        "x": 3,
+      },
+      {
+        "id": "leech",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 16,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+        ],
+      },
+      "4": {
+        "health": 17,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+        ],
+      },
+      "5": {
+        "attack": 6,
+        "health": 18,
+        "skill": [],
+      },
+    }
+  },
+  "22031": {
+    "id": "22031",
+    "name": "Anima Dryad",
+    "picture": "Shrine_Wood_Nymph_B",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "5",
+    "attack": 6,
+    "health": 19,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 3,
+      },
+      {
+        "id": "heal",
+        "x": 3,
+      },
+      {
+        "id": "leech",
+        "x": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 20,
+        "skill": [],
+      },
+      "3": {
+        "health": 21,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 6,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "heal",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 6,
+          },
+        ],
+      },
+    }
+  },
   "5000": {
     "id": "5000",
     "name": "Azure Sphinx",
@@ -23108,6 +23344,217 @@ var CARDS = {
       },
     }
   },
+  "5044": {
+    "id": "5044",
+    "name": "Telepathic Magi",
+    "picture": "Telepathic_Mage_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "10",
+    "attack": 3,
+    "health": 8,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 2,
+        "y": "1",
+        "z": 1,
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+      },
+      {
+        "id": "flurry",
+        "c": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 9,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 5,
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "5": {
+        "attack": 4,
+        "skill": [],
+      },
+    }
+  },
+  "15044": {
+    "id": "15044",
+    "name": "Clairvoyant Magi",
+    "picture": "Telepathic_Mage_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "10",
+    "attack": 4,
+    "health": 10,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 2,
+        "y": "1",
+        "z": 1,
+      },
+      {
+        "id": "weaken",
+        "x": 2,
+      },
+      {
+        "id": "flurry",
+        "c": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 11,
+        "skill": [],
+      },
+      "3": {
+        "health": 12,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+    }
+  },
+  "25044": {
+    "id": "25044",
+    "name": "Ascended Magi",
+    "picture": "Telepathic_Mage_B",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "10",
+    "attack": 4,
+    "health": 13,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 3,
+        "y": "1",
+        "z": 1,
+      },
+      {
+        "id": "weaken",
+        "x": 3,
+      },
+      {
+        "id": "flurry",
+        "c": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "health": 15,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+      "5": {
+        "attack": 5,
+        "skill": [],
+      },
+    }
+  },
   "6000": {
     "id": "6000",
     "name": "Furnace Mech",
@@ -32719,6 +33166,208 @@ var CARDS = {
             "id": "weaken",
             "x": 3,
             "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "6044": {
+    "id": "6044",
+    "name": "Firewalker",
+    "picture": "Fire_Walker_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "attack": 3,
+    "health": 10,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 1,
+        "y": "2",
+        "z": 2,
+      },
+      {
+        "id": "burn",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 11,
+        "skill": [],
+      },
+      "3": {
+        "attack": 4,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "16044": {
+    "id": "16044",
+    "name": "Firetreader",
+    "picture": "Fire_Walker_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "attack": 4,
+    "health": 12,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "2",
+        "z": 2,
+      },
+      {
+        "id": "burn",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 13,
+        "skill": [],
+      },
+      "3": {
+        "health": 14,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "26044": {
+    "id": "26044",
+    "name": "Firestomper",
+    "picture": "Fire_Walker_B",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "attack": 4,
+    "health": 15,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "fervor",
+        "x": 3,
+        "y": "2",
+        "z": 2,
+      },
+      {
+        "id": "burn",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 16,
+        "skill": [],
+      },
+      "3": {
+        "attack": 5,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "fervor",
+            "x": 4,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "burn",
+            "x": 3,
           },
         ],
       },
@@ -42827,6 +43476,286 @@ var CARDS = {
           {
             "id": "berserk",
             "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "7044": {
+    "id": "7044",
+    "name": "River Elemental",
+    "picture": "River_Elemental_A",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "5",
+    "attack": 5,
+    "health": 18,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 1,
+        "y": "5",
+        "z": 5,
+        "all": "1",
+      },
+      {
+        "id": "jam",
+        "c": 6,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 19,
+        "skill": [],
+      },
+      "3": {
+        "health": 20,
+        "skill": [],
+      },
+      "4": {
+        "attack": 6,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "5",
+            "z": 5,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 6,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "5",
+            "z": 5,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 6,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "17044": {
+    "id": "17044",
+    "name": "River Monstrosity",
+    "picture": "River_Elemental_A",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "5",
+    "attack": 6,
+    "health": 21,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "5",
+        "z": 5,
+        "all": "1",
+      },
+      {
+        "id": "jam",
+        "c": 6,
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 22,
+        "skill": [],
+      },
+      "3": {
+        "attack": 7,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "5",
+            "z": 5,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "health": 23,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "5",
+            "z": 5,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "health": 24,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "5",
+            "z": 5,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "27044": {
+    "id": "27044",
+    "name": "Lord of the River",
+    "picture": "River_Elemental_B",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "5",
+    "attack": 7,
+    "health": 25,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 3,
+        "y": "5",
+        "z": 5,
+        "all": "1",
+      },
+      {
+        "id": "jam",
+        "c": 4,
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 26,
+        "skill": [],
+      },
+      "3": {
+        "health": 27,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "5",
+            "z": 5,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "health": 28,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "5",
+            "z": 5,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "health": 29,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "5",
+            "z": 5,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
           },
         ],
       },
@@ -62529,47 +63458,8 @@ var CARDS = {
       },
     }
   },
-  "9994": {
-    "id": "9994",
-    "name": "New 1 (S)",
-    "picture": "New1_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19994": {
-    "id": "19994",
-    "name": "New 1 (D)",
-    "picture": "New1_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29994": {
-    "id": "29994",
-    "name": "New 1 (Q)",
-    "picture": "New1_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9995": {
-    "id": "9995",
+  "9997": {
+    "id": "9997",
     "name": "New 2 (S)",
     "picture": "New2_A",
     "rarity": "0",
@@ -62581,8 +63471,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19995": {
-    "id": "19995",
+  "19997": {
+    "id": "19997",
     "name": "New 2 (D)",
     "picture": "New2_A",
     "rarity": "0",
@@ -62594,88 +63484,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29995": {
-    "id": "29995",
-    "name": "New 2 (Q)",
-    "picture": "New2_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9996": {
-    "id": "9996",
-    "name": "New 3 (S)",
-    "picture": "New3_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19996": {
-    "id": "19996",
-    "name": "New 3 (D)",
-    "picture": "New3_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29996": {
-    "id": "29996",
-    "name": "New 3 (Q)",
-    "picture": "New3_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9997": {
-    "id": "9997",
-    "name": "New 4 (S)",
-    "picture": "New4_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19997": {
-    "id": "19997",
-    "name": "New 4 (D)",
-    "picture": "New4_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
   "29997": {
     "id": "29997",
-    "name": "New 4 (Q)",
-    "picture": "New4_B",
+    "name": "New 2 (Q)",
+    "picture": "New2_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -68769,6 +69581,7 @@ var FUSIONS = {
   "12028" : "22028",
   "12029" : "22029",
   "12030" : "22030",
+  "12031" : "22031",
   "1300" : "11300",
   "1301" : "11301",
   "1302" : "11302",
@@ -68841,6 +69654,7 @@ var FUSIONS = {
   "15041" : "25041",
   "15042" : "25042",
   "15043" : "25043",
+  "15044" : "25044",
   "1600" : "11600",
   "16000" : "26000",
   "16001" : "26001",
@@ -68890,6 +69704,7 @@ var FUSIONS = {
   "16041" : "26041",
   "16042" : "26042",
   "16043" : "26043",
+  "16044" : "26044",
   "1605" : "11605",
   "1606" : "11606",
   "1607" : "11607",
@@ -68956,6 +69771,7 @@ var FUSIONS = {
   "17040" : "27040",
   "17041" : "27041",
   "17042" : "27042",
+  "17044" : "27044",
   "18000" : "28000",
   "18001" : "28001",
   "18002" : "28002",
@@ -68994,6 +69810,7 @@ var FUSIONS = {
   "2028" : "12028",
   "2029" : "12029",
   "2030" : "12030",
+  "2031" : "12031",
   "5000" : "15000",
   "5001" : "15001",
   "5002" : "15002",
@@ -69038,6 +69855,7 @@ var FUSIONS = {
   "5041" : "15041",
   "5042" : "15042",
   "5043" : "15043",
+  "5044" : "15044",
   "6000" : "16000",
   "6001" : "16001",
   "6002" : "16002",
@@ -69082,6 +69900,7 @@ var FUSIONS = {
   "6041" : "16041",
   "6042" : "16042",
   "6043" : "16043",
+  "6044" : "16044",
   "7000" : "17000",
   "7001" : "17001",
   "7002" : "17002",
@@ -69125,6 +69944,7 @@ var FUSIONS = {
   "7040" : "17040",
   "7041" : "17041",
   "7042" : "17042",
+  "7044" : "17044",
   "8000" : "18000",
   "8001" : "18001",
   "8002" : "18002",
