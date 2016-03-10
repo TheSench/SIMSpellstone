@@ -55,6 +55,7 @@ function upgradeInventoriedCard(optionsDialog) {
 
     var dust = 0;
     var costs = levelCosts[rarity];
+    embedRune(optionsDialog);
     if (optionsDialog.fused) {
         var confirmed = confirm("Fuse these cards?");
         if (confirmed) {
@@ -94,4 +95,19 @@ function doFusion(unit1, unit2) {
     var index1 = unit1.index;
     var index2 = unit2.index;
     InventoryAPI.fuseCards(fusion, index1, index2, processVaporizeResults);
+}
+
+function embedRune(optionsDialog) {
+    var newRune = optionsDialog.unit.runes;
+    var oldRune = optionsDialog.unit.baseStats.runes;
+    if (newRune.length) {
+        oldRune = (oldRune.length ? oldRune[0].id : 0);
+        newRune = newRune[0].id;
+        if (newRune != oldRune) {
+            var confirmed = confirm("Embed this rune?");
+            if (confirmed) {
+                InventoryAPI.equipRune(optionsDialog.unit.index, newRune, processVaporizeResults);
+            }
+        }
+    }
 }

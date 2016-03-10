@@ -274,6 +274,21 @@ var DeckRetriever = (function () {
         }, 1);
     }
 
+    function equipRune(unit_index, runeID, callback) {
+        var params = {
+            unit_index: unit_index,
+            item_id: runeID,
+            slot: "1"
+        }
+
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('equipRune', params, function (response) {
+                checkResponse(response, callback);
+            });
+        }, 1);
+    }
+
     function vaporizeUnits(units, callback) {
         var params = {
             units: units
@@ -777,6 +792,15 @@ var DeckRetriever = (function () {
         }, 1);
     }
 
+    function getBattleReports() {
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('getBattleReports', null, function (response) {
+                checkResponse(response, alert);
+            });
+        }, 1);
+    }
+
     function playCard(card_index, skip) {
         var params = {
             battle_id: 0,
@@ -1029,6 +1053,7 @@ var DeckRetriever = (function () {
         fightGuildMember: fightGuildMember,
         startRaidBattle: startRaidBattle,
         resumeBattle: resumeBattle,
+        getBattleReports: getBattleReports,
         playCard: playCard,
         forfeitBattle: forfeitBattle,
     }
@@ -1036,6 +1061,7 @@ var DeckRetriever = (function () {
     InventoryAPI = {
         upgradeCard: upgradeCard,
         fuseCards: fuseCards,
+        equipRune: equipRune,
         vaporizeUnits: vaporizeUnits,
         buyStoreItem: buyStoreItem,
         getInventoryFromDeckInfo: getInventoryFromDeckInfo,
