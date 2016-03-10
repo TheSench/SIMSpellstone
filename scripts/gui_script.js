@@ -226,8 +226,8 @@ window.onload = function () {
     } else {
         // Load current battlegrounds
         var bgCheckBoxes = document.getElementsByName("battleground");
-        bgCheckBoxes[4].checked = true;
         bgCheckBoxes[5].checked = true;
+        bgCheckBoxes[6].checked = true;
     }
 
     if (_GET('sims')) {
