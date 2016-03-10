@@ -1013,11 +1013,12 @@ var showInventoryOptions = function (htmlCard, index) {
         unit.baseStats = {
             fusion: fusion,
             level: unit.level,
+            runes: unit.runes
         }
     } else {
         unit.baseStats = {
             fusion: 1,
-            level: unit.level,
+            level: unit.level
         }
     }
 
