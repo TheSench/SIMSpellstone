@@ -762,8 +762,6 @@ function debug_dump_decks() {
     echo += hash_encode(debug_cpu_deck);
     echo += '" onclick="this.select()" size="100">';
     echo += '<br>';
-    echo += '<u>Please note that Raid and Quest simulations randomize the enemy deck for each battle. Only one example enemy deck hash is generated.</u><br>';
-    echo += '<br>';
     echo += '<i>Card List:</i>';
     echo += '<br>';
     echo += '<input type="text" value="';
