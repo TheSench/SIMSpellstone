@@ -281,7 +281,7 @@ var BATTLE_PROCESSOR = (function () {
 
     function startBattle(data) {
         var battleType = document.getElementById("battleType").value;
-        sortByPoints = (battleType == 'startGuildWarBattle' || battleType == 'startRaidBattle');
+        sortByPoints = (battleType == 'startGuildWarBattle' || battleType == 'startRaidBattle' || battleType == 'startClashBattle');
         lastWinrate = -2;
         suppressOutput = true;
         SIMULATOR.setupField = function (field) { copyField(field, false); };
