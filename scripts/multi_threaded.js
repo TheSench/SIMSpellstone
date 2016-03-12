@@ -307,6 +307,18 @@ if (use_workers) (function () {
         if (SIM_CONTROLLER.end_sims_callback) SIM_CONTROLLER.end_sims_callback();
     }
 
+    SIM_CONTROLLER.resetsim = function () {
+        SIM_CONTROLLER.stopsim();
+        for (var i = 0; i < max_workers; i++) {
+            if (!workers[i]) {
+                workers[i].terminate();
+                workers[i] = null;
+            }
+        }
+        SIM_CONTROLLER.startsim();
+    }
+
+
     // Initialize simulation loop - runs once per simulation session
     SIM_CONTROLLER.startsim = function (autostart) {
         for (var i = 0; i < max_workers; i++) {
