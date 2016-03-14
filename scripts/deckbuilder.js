@@ -253,6 +253,7 @@ function doDrawCardList(cardList, resetPage) {
         }
         CARD_GUI.draw_card_list(cardList, detailedSkills, addToDeck, contextMenu, start, start + cards);
     } else {
+        page = 0;
         CARD_GUI.draw_card_list(cardList, detailedSkills, addToDeck, contextMenu);
     }
     document.getElementById("pageNumber").innerHTML = "Page " + (page + 1) + "/" + pages;

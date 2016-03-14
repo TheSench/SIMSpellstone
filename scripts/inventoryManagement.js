@@ -1,7 +1,68 @@
 ﻿"use strict";
 
+var initDialog;
+
+$(document).ready(function () {
+    initDialog = $("#initDialog").dialog({
+        autoOpen: false,
+        width: 250,
+        minHeight: 20,
+        modal: true,
+        resizable: false,
+        buttons: {
+            OK: function () {
+                DeckRetriever.getFieldsFromRequest(document.getElementById("jsonResponse").value);
+                InventoryAPI.loadPlayerInfo(getDeckAndInventory);
+                initDialog.dialog("close");
+            },
+            Cancel: function () {
+                initDialog.dialog("close");
+            }
+        },
+    });
+});
+
+function showInitDialog() {
+    initDialog.dialog("open");
+    initDialog.dialog("option", "position", { my: "center", at: "center", of: window });;
+}
+
 function buyGoldPack() {
     InventoryAPI.buyStoreItem("1000", "2", "3", processInventory);
+}
+
+function updateResources() {
+    var resources = InventoryAPI.resources;
+    document.getElementById("buyGoldPack").innerHTML = "Buy Gold Pack (" + resources.gold + " gold)";
+    document.getElementById("vaporizeBulk").innerHTML = "Vaporize Bulk (" + resources.dust + " dust)";
+}
+
+function getCurrentDeck(response) {
+    var activeDeck = response.user_decks[response.user_data.active_deck];
+    deck = InventoryAPI.getDeckFromDeckInfo(activeDeck);
+    drawDeck();
+}
+
+function createRareRune() {
+    InventoryAPI.createRune("1", showNewRune);
+}
+
+function createEpicRune() {
+    InventoryAPI.createRune("2", showNewRune);
+}
+
+function showNewRune(response) {
+    var new_items = response.new_items;
+    if (new_items) {
+        var new_runes = [];
+        for (var i = 0; i < new_items.length; i++) {
+            var rune = RUNES[new_items[i].id];
+            new_runes.push(rune.desc);
+        }
+        alert(new_runes.join(", \r\n"));
+    } else {
+        alert("Not enough components.");
+    }
 }
 
 function processInventory(response) {
@@ -36,12 +97,13 @@ function vaporizeBulk() {
     }
     if (unitsToVaporize.length > 0) {
         unitsToVaporize = "[" + unitsToVaporize.join() + "]";
-        InventoryAPI.vaporizeUnits(unitsToVaporize, processVaporizeResults);
+        InventoryAPI.vaporizeUnits(unitsToVaporize, getDeckAndInventory);
     }
 }
 
-function processVaporizeResults(response) {
-    deck = InventoryAPI.getDeckFromDeckInfo(response.user_decks[1]);
+function getDeckAndInventory(response) {
+    updateResources();
+    getCurrentDeck(response);
     processInventory(response);
 }
 
@@ -94,7 +156,7 @@ function doFusion(unit1, unit2) {
     var fusion = unit1.id;
     var index1 = unit1.index;
     var index2 = unit2.index;
-    InventoryAPI.fuseCards(fusion, index1, index2, processVaporizeResults);
+    InventoryAPI.fuseCards(fusion, index1, index2, getDeckAndInventory);
 }
 
 function embedRune(optionsDialog) {
@@ -106,7 +168,7 @@ function embedRune(optionsDialog) {
         if (newRune != oldRune) {
             var confirmed = confirm("Embed this rune?");
             if (confirmed) {
-                InventoryAPI.equipRune(optionsDialog.unit.index, newRune, processVaporizeResults);
+                InventoryAPI.equipRune(optionsDialog.unit.index, newRune, getDeckAndInventory);
             }
         }
     }

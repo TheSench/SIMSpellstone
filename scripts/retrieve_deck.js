@@ -1,6 +1,7 @@
 ﻿"use strict";
 
 var BattleAPI;
+var GuildAPI;
 var InventoryAPI;
 var HandleJSONPResponse;
 
@@ -216,7 +217,7 @@ var DeckRetriever = (function () {
 
     function checkResponse(response, callback, failureCallback) {
         if (response.result || response.result === undefined) {
-            if(callback) callback(response);
+            if (callback) callback(response);
         } else {
             if (failureCallback) {
                 failureCallback(response);
@@ -269,6 +270,19 @@ var DeckRetriever = (function () {
         DisplayLoadingSplash();
         setTimeout(function () {
             sendRequest('startFusion', params, function (response) {
+                checkResponse(response, callback);
+            });
+        }, 1);
+    }
+
+    function createRune(runeID, callback) {
+        var params = {
+            rune_recipe_id: runeID,
+        }
+
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('createRune', params, function (response) {
                 checkResponse(response, callback);
             });
         }, 1);
@@ -534,6 +548,18 @@ var DeckRetriever = (function () {
         }, 1);
     }
 
+    function loadPlayerInfo(callback) {
+        CARD_GUI.clearDeckSpace();
+
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('init', null, function (response) {
+                processInitResponse(response);
+                callback(response);
+            });
+        }, 1);
+    }
+
     var resources = {
         gold: 0,
         shards: 0,
@@ -637,14 +663,13 @@ var DeckRetriever = (function () {
     }
 
     function setWarEnergy(response) {
-         var warData = response.guild_war_event_data;
-         var matchStart = warData.match_start_time*1000;
-         if(matchStart < Date.now())
-         {
-             energy.war = warData.num_attacks;
-         } else {
-             energy.war = 0;
-         }
+        var warData = response.guild_war_event_data;
+        var matchStart = warData.match_start_time * 1000;
+        if (matchStart < Date.now()) {
+            energy.war = warData.num_attacks;
+        } else {
+            energy.war = 0;
+        }
     }
 
     function setWarEnergyAndFight(response) {
@@ -994,7 +1019,7 @@ var DeckRetriever = (function () {
         var name = data.user_data.name;
         var user_id = data.user_data.user_id;
         var cardSpace = document.getElementById("deck");
-        var deck = getDeckFromDeckInfo(data.user_decks[1]);
+        var deck = getDeckFromDeckInfo(data.user_decks[data.user_data.active_deck]);
         var div = doDrawDeck(deck, user_id, name);
         cardSpace.appendChild(div);
         var hash = hash_encode(deck);
@@ -1045,6 +1070,47 @@ var DeckRetriever = (function () {
         return inventory;
     }
 
+    function leaveGuild(callback) {
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('leaveFaction', null, function (response) {
+                checkResponse(response, callback);
+            });
+        }, 1);
+    }
+
+    function joinGuild(guildID, callback) {
+        var params = {
+            faction_id: guildID
+        };
+
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('joinFaction', params, function (response) {
+                checkResponse(response, callback);
+            });
+        }, 1);
+    }
+
+    var invitations = {};
+    function checkInvites(callback) {
+        DisplayLoadingSplash();
+        setTimeout(function () {
+            sendRequest('updateFaction', null, function (response) {
+                checkResponse(response, processInvitations);
+            });
+        }, 1);
+    }
+
+    function processInvitations(response) {
+        var invitations = {};
+        var faction_invites = response.faction_invites;
+        for (var key in response.faction_invites) {
+            invitations[key] = faction_invites[key].name;
+        }
+        alert(JSON.stringify(invitations));
+    }
+
     BattleAPI = {
         startCampaignBattle: startCampaignBattle,
         startBountyBattle: startBountyBattle,
@@ -1056,17 +1122,27 @@ var DeckRetriever = (function () {
         getBattleReports: getBattleReports,
         playCard: playCard,
         forfeitBattle: forfeitBattle,
-    }
+    };
 
     InventoryAPI = {
+        loadPlayerInfo: loadPlayerInfo,
         upgradeCard: upgradeCard,
         fuseCards: fuseCards,
         equipRune: equipRune,
+        createRune: createRune,
         vaporizeUnits: vaporizeUnits,
         buyStoreItem: buyStoreItem,
         getInventoryFromDeckInfo: getInventoryFromDeckInfo,
         getDeckFromDeckInfo: getDeckFromDeckInfo,
-    }
+
+        resources: resources,
+    };
+
+    GuildAPI = {
+        leaveGuild: leaveGuild,
+        joinGuild: joinGuild,
+        checkInvites: checkInvites,
+    };
 
     var publicInfo = {
         createCORSRequest: createCORSRequest,

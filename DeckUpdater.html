@@ -205,9 +205,11 @@
                         <div id="management" class="dropdown">
                             <div><u>Management</u></div>
                             <div id="dropdown" class="dropdown-content">
-                                <label class="button" onclick="buyGoldPack();"><b>Buy Gold</b></label>
+                                <label class="button" onclick="showInitDialog();"><b>Initialize</b></label>
                                 <br />
-                                <label class="button" onclick="vaporizeBulk();"><b>Vaporize Bulk</b></label>
+                                <label id="buyGoldPack" class="button" onclick="buyGoldPack();"><b>Buy Gold Pack</b></label>
+                                <br />
+                                <label id="vaporizeBulk" class="button" onclick="vaporizeBulk();"><b>Vaporize Bulk</b></label>
                             </div>
                         </div>
                     </td>
@@ -340,6 +342,17 @@
                     <select name="runeChoices" id="invRuneChoices" class="ui-widget-content ui-corner-all">
                         <option value=""></option>
                     </select>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <div id="initDialog" class="dialog-form">
+        <form>
+            <fieldset>
+                <div>
+                    <label for="jsonResponse">JSON</label>
+                    <input id="jsonResponse" type="text" name="jsonResponse" class="ui-widget-content ui-corner-all">
                 </div>
             </fieldset>
         </form>
