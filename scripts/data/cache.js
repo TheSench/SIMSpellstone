@@ -13573,6 +13573,215 @@ var CARDS = {
       },
     }
   },
+  "2032": {
+    "id": "2032",
+    "name": "Brimstone",
+    "picture": "Brimestone_Monster_A",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "5",
+    "attack": 5,
+    "health": 10,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 1,
+      },
+      {
+        "id": "burn",
+        "x": 1,
+      },
+      {
+        "id": "pierce",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 11,
+        "skill": [],
+      },
+      "3": {
+        "health": 12,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 1,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+          {
+            "id": "pierce",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "attack": 6,
+        "skill": [],
+      },
+      "5": {
+        "health": 13,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 2,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+          {
+            "id": "pierce",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "12032": {
+    "id": "12032",
+    "name": "Brimstone Gorger",
+    "picture": "Brimestone_Monster_A",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "5",
+    "attack": 6,
+    "health": 14,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 2,
+      },
+      {
+        "id": "burn",
+        "x": 1,
+      },
+      {
+        "id": "pierce",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 15,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 2,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "attack": 7,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 2,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "22032": {
+    "id": "22032",
+    "name": "Brimstone Spewer",
+    "picture": "Brimestone_Monster_B",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "5",
+    "attack": 7,
+    "health": 16,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 2,
+      },
+      {
+        "id": "burn",
+        "x": 2,
+      },
+      {
+        "id": "pierce",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 2,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+        ],
+      },
+      "3": {
+        "health": 17,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 3,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "attack": 8,
+        "skill": [],
+      },
+    }
+  },
   "5000": {
     "id": "5000",
     "name": "Azure Sphinx",
@@ -23552,6 +23761,316 @@ var CARDS = {
       "5": {
         "attack": 5,
         "skill": [],
+      },
+    }
+  },
+  "5045": {
+    "id": "5045",
+    "name": "Echo Elemental",
+    "picture": "Sound_Elemental_A",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "5",
+    "attack": 4,
+    "health": 16,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "5",
+        "z": 5,
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "y": "5",
+        "z": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 17,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "y": "5",
+            "z": 5,
+          },
+        ],
+      },
+      "4": {
+        "health": 19,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "y": "5",
+            "z": 5,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "y": "5",
+            "z": 5,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "15045": {
+    "id": "15045",
+    "name": "Echo Essence",
+    "picture": "Sound_Elemental_A",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "5",
+    "attack": 4,
+    "health": 20,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 4,
+        "y": "5",
+        "z": 5,
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "y": "5",
+        "z": 5,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 21,
+        "skill": [],
+      },
+      "3": {
+        "attack": 5,
+        "health": 22,
+        "skill": [],
+      },
+      "4": {
+        "health": 23,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "y": "5",
+            "z": 5,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 5,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "y": "5",
+            "z": 5,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "health": 24,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 5,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "5",
+            "z": 5,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "25045": {
+    "id": "25045",
+    "name": "Echo Incarnate",
+    "picture": "Sound_Elemental_B",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "5",
+    "attack": 5,
+    "health": 25,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 5,
+        "y": "5",
+        "z": 5,
+      },
+      {
+        "id": "protect",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "protect",
+        "x": 2,
+        "y": "5",
+        "z": 5,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 26,
+        "skill": [],
+      },
+      "3": {
+        "health": 27,
+        "skill": [],
+      },
+      "4": {
+        "attack": 6,
+        "health": 28,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 6,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "5",
+            "z": 5,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 6,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "5",
+            "z": 5,
+            "all": "1",
+          },
+        ],
       },
     }
   },
@@ -33620,6 +34139,255 @@ var CARDS = {
           },
           {
             "id": "burn",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "6045": {
+    "id": "6045",
+    "name": "Darkflame",
+    "picture": "Dark_Fire_Elemental_A",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "5",
+    "attack": 4,
+    "health": 11,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "strike",
+        "x": 1,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 12,
+        "skill": [],
+      },
+      "3": {
+        "health": 13,
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "health": 14,
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "attack": 5,
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "16045": {
+    "id": "16045",
+    "name": "Duskflame",
+    "picture": "Dark_Fire_Elemental_A",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "5",
+    "attack": 5,
+    "health": 15,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 2,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "strike",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 16,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 17,
+        "skill": [],
+      },
+      "5": {
+        "attack": 6,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 3,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "26045": {
+    "id": "26045",
+    "name": "Shadowflame",
+    "picture": "Dark_Fire_Elemental_B",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "5",
+    "attack": 6,
+    "health": 18,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 3,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "strike",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 19,
+        "skill": [],
+      },
+      "3": {
+        "attack": 7,
+        "skill": [],
+      },
+      "4": {
+        "health": 21,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 4,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 4,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "strike",
             "x": 3,
           },
         ],
@@ -44009,6 +44777,210 @@ var CARDS = {
           {
             "id": "berserk",
             "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "7045": {
+    "id": "7045",
+    "name": "Sakura",
+    "picture": "Sakura_Petal_Elemental_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "5",
+    "attack": 4,
+    "health": 10,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "5",
+        "z": 5,
+      },
+      {
+        "id": "heal",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 11,
+        "skill": [],
+      },
+      "3": {
+        "health": 12,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "17045": {
+    "id": "17045",
+    "name": "Sakura Bloom",
+    "picture": "Sakura_Petal_Elemental_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "5",
+    "attack": 4,
+    "health": 13,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "rally",
+        "x": 3,
+        "y": "5",
+        "z": 5,
+      },
+      {
+        "id": "heal",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 15,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "heal",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "attack": 5,
+        "skill": [],
+      },
+    }
+  },
+  "27045": {
+    "id": "27045",
+    "name": "Sakura Blossom",
+    "picture": "Sakura_Petal_Elemental_B",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "5",
+    "attack": 5,
+    "health": 15,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "rally",
+        "x": 4,
+        "y": "5",
+        "z": 5,
+      },
+      {
+        "id": "heal",
+        "x": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 16,
+        "skill": [],
+      },
+      "3": {
+        "attack": 6,
+        "skill": [],
+      },
+      "4": {
+        "health": 17,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "rally",
+            "x": 5,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "heal",
+            "x": 5,
           },
         ],
       },
@@ -63711,8 +64683,8 @@ var CARDS = {
       },
     }
   },
-  "9988": {
-    "id": "9988",
+  "9991": {
+    "id": "9991",
     "name": "New 10 (S)",
     "picture": "New10_A",
     "rarity": "0",
@@ -63724,8 +64696,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19988": {
-    "id": "19988",
+  "19991": {
+    "id": "19991",
     "name": "New 10 (D)",
     "picture": "New10_A",
     "rarity": "0",
@@ -63737,8 +64709,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29988": {
-    "id": "29988",
+  "29991": {
+    "id": "29991",
     "name": "New 10 (Q)",
     "picture": "New10_B",
     "rarity": "0",
@@ -63750,8 +64722,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9989": {
-    "id": "9989",
+  "9992": {
+    "id": "9992",
     "name": "New 12 (S)",
     "picture": "New12_A",
     "rarity": "0",
@@ -63763,8 +64735,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19989": {
-    "id": "19989",
+  "19992": {
+    "id": "19992",
     "name": "New 12 (D)",
     "picture": "New12_A",
     "rarity": "0",
@@ -63776,8 +64748,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29989": {
-    "id": "29989",
+  "29992": {
+    "id": "29992",
     "name": "New 12 (Q)",
     "picture": "New12_B",
     "rarity": "0",
@@ -63789,47 +64761,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9990": {
-    "id": "9990",
-    "name": "New 13 (S)",
-    "picture": "New13_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19990": {
-    "id": "19990",
-    "name": "New 13 (D)",
-    "picture": "New13_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29990": {
-    "id": "29990",
-    "name": "New 13 (Q)",
-    "picture": "New13_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9991": {
-    "id": "9991",
+  "9993": {
+    "id": "9993",
     "name": "New 1 (S)",
     "picture": "New1_A",
     "rarity": "0",
@@ -63841,8 +64774,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19991": {
-    "id": "19991",
+  "19993": {
+    "id": "19993",
     "name": "New 1 (D)",
     "picture": "New1_A",
     "rarity": "0",
@@ -63854,8 +64787,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29991": {
-    "id": "29991",
+  "29993": {
+    "id": "29993",
     "name": "New 1 (Q)",
     "picture": "New1_B",
     "rarity": "0",
@@ -63867,8 +64800,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9992": {
-    "id": "9992",
+  "9994": {
+    "id": "9994",
     "name": "New 2 (S)",
     "picture": "New2_A",
     "rarity": "0",
@@ -63880,8 +64813,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19992": {
-    "id": "19992",
+  "19994": {
+    "id": "19994",
     "name": "New 2 (D)",
     "picture": "New2_A",
     "rarity": "0",
@@ -63893,8 +64826,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29992": {
-    "id": "29992",
+  "29994": {
+    "id": "29994",
     "name": "New 2 (Q)",
     "picture": "New2_B",
     "rarity": "0",
@@ -63906,47 +64839,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9993": {
-    "id": "9993",
-    "name": "New 3 (S)",
-    "picture": "New3_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19993": {
-    "id": "19993",
-    "name": "New 3 (D)",
-    "picture": "New3_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29993": {
-    "id": "29993",
-    "name": "New 3 (Q)",
-    "picture": "New3_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9994": {
-    "id": "9994",
+  "9995": {
+    "id": "9995",
     "name": "New 4 (S)",
     "picture": "New4_A",
     "rarity": "0",
@@ -63958,8 +64852,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19994": {
-    "id": "19994",
+  "19995": {
+    "id": "19995",
     "name": "New 4 (D)",
     "picture": "New4_A",
     "rarity": "0",
@@ -63971,49 +64865,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29994": {
-    "id": "29994",
-    "name": "New 4 (Q)",
-    "picture": "New4_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9995": {
-    "id": "9995",
-    "name": "New 5 (S)",
-    "picture": "New5_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19995": {
-    "id": "19995",
-    "name": "New 5 (D)",
-    "picture": "New5_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
   "29995": {
     "id": "29995",
-    "name": "New 5 (Q)",
-    "picture": "New5_B",
+    "name": "New 4 (Q)",
+    "picture": "New4_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -70186,6 +71041,7 @@ var FUSIONS = {
   "12029" : "22029",
   "12030" : "22030",
   "12031" : "22031",
+  "12032" : "22032",
   "1300" : "11300",
   "1301" : "11301",
   "1302" : "11302",
@@ -70259,6 +71115,7 @@ var FUSIONS = {
   "15042" : "25042",
   "15043" : "25043",
   "15044" : "25044",
+  "15045" : "25045",
   "15048" : "25048",
   "1600" : "11600",
   "16000" : "26000",
@@ -70310,6 +71167,7 @@ var FUSIONS = {
   "16042" : "26042",
   "16043" : "26043",
   "16044" : "26044",
+  "16045" : "26045",
   "1605" : "11605",
   "1606" : "11606",
   "1607" : "11607",
@@ -70377,6 +71235,7 @@ var FUSIONS = {
   "17041" : "27041",
   "17042" : "27042",
   "17044" : "27044",
+  "17045" : "27045",
   "18000" : "28000",
   "18001" : "28001",
   "18002" : "28002",
@@ -70416,6 +71275,7 @@ var FUSIONS = {
   "2029" : "12029",
   "2030" : "12030",
   "2031" : "12031",
+  "2032" : "12032",
   "5000" : "15000",
   "5001" : "15001",
   "5002" : "15002",
@@ -70461,6 +71321,7 @@ var FUSIONS = {
   "5042" : "15042",
   "5043" : "15043",
   "5044" : "15044",
+  "5045" : "15045",
   "5048" : "15048",
   "6000" : "16000",
   "6001" : "16001",
@@ -70507,6 +71368,7 @@ var FUSIONS = {
   "6042" : "16042",
   "6043" : "16043",
   "6044" : "16044",
+  "6045" : "16045",
   "7000" : "17000",
   "7001" : "17001",
   "7002" : "17002",
@@ -70551,6 +71413,7 @@ var FUSIONS = {
   "7041" : "17041",
   "7042" : "17042",
   "7044" : "17044",
+  "7045" : "17045",
   "8000" : "18000",
   "8001" : "18001",
   "8002" : "18002",

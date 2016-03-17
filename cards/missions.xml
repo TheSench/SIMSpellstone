@@ -4106,6 +4106,16 @@
     <arena_x>250</arena_x>
     <arena_y>150</arena_y>
   </location>
+  <!-- 	<location>
+		<id>107</id>
+		<name>Golden Crown Village</name>
+		<mapBG>EventMap_010</mapBG>
+		<combatBG>CombatBGEvent010</combatBG>
+		<asset_bundle>44</asset_bundle>
+		<req>-1</req>
+		<arena_x>250</arena_x>
+		<arena_y>150</arena_y>
+	</location> -->
   <!-- Previous ab for center of the void : <asset_bundle>44</asset_bundle> -->
   <!-- Event Portals BEGIN -->
   <!-- <portal>
