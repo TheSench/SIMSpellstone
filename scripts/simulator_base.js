@@ -1163,14 +1163,11 @@ if (simulator_thread) (function () {
 
         // Play card in hand with most upgrade points
         var best = [];
-        var bestRank = -1;
+        var bestRank = 0;
         for (var i = 0; i < hand.length; i++) {
             var card = hand[i];
             var rank = getCardRanking(card);
-            if (bestRank < 0) {
-                bestRank = rank;
-                best.push(i);
-            } else if (rank == bestRank) {
+            if (rank == bestRank) {
                 best.push(i);
             } else if (rank > bestRank) {
                 bestRank = rank;
