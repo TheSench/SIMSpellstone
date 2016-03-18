@@ -43,6 +43,20 @@ var CARD_GUI = {};
         return deckHTML;
     }
 
+    function makeCardListHTML(deck, onclick, onrightclick) {
+        var listHTML = createDiv("float-left");
+        for (var i = 0, len = deck.deck.length; i < len; i++) {
+            var deckEntry = deck.deck[i];
+            var unit = get_card_by_id(deckEntry);
+            var htmlCard = create_card_html(unit, false, false, onclick, onrightclick, i);
+            if (deckEntry.index !== undefined) {
+                htmlCard.setAttribute("data-index", deckEntry.index);
+            }
+            listHTML.appendChild(htmlCard);
+        }
+        return listHTML;
+    }
+
     function draw_card_list(list, compactSkills, onclick, onrightclick, skip, end) {
         skip = skip || 0;
         var cardSpace = document.getElementById("cardSpace");
@@ -52,7 +66,7 @@ var CARD_GUI = {};
         var lastUnit;
         var multiplier;
         var uniqueCard = 0;
-        for (var i = 0, len = list.length; i < len && (!end || uniqueCard < end); i++) {
+        for (var i = 0, len = list.length; i < len && (!end || uniqueCard < end) ; i++) {
             var listEntry = list[i];
             var unit = get_card_by_id(listEntry);
             if (areEqual(unit, lastUnit)) {
@@ -508,15 +522,16 @@ var CARD_GUI = {};
     CARD_GUI.clearDeckSpace = clearDeckSpace;
     CARD_GUI.draw_deck = draw_deck;
     CARD_GUI.makeDeckHTML = makeDeckHTML;
+    CARD_GUI.makeCardListHTML = makeCardListHTML;
     CARD_GUI.draw_card_list = draw_card_list;
     CARD_GUI.draw_cards = draw_cards;
-    
+
     Object.defineProperties(CARD_GUI, {
         assetsRoot: {
-            get: function() { 
+            get: function () {
                 return assetsRoot;
-            }, 
-            set: function(value) {
+            },
+            set: function (value) {
                 assetsRoot = value;
             }
         }
