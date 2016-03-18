@@ -1044,6 +1044,7 @@ if (simulator_thread) (function () {
             if (deck_p_deck.length == 1) {
                 // Play first card in hand
                 card_picked = 0;
+                play_card(deck_p_deck[card_picked], p);
             } else if (user_controlled && p == 'player') {
                 card_picked = chooseCardUserManually(p, deck_p_deck, deck_p_ordered, turn, redraw);
             } else if (deck_p_ordered) {

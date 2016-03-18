@@ -645,6 +645,220 @@ function copy_skill(original_skill) {
 
 //Debug functions
 
+// Dump deck contents
+function debug_dump_decks() {
+    //	if (!debug) return;
+
+    echo += '<br><hr><br>';
+    echo += '<b>Deck Hash:</b>';
+    echo += '<br>';
+    echo += '<input type="text" value="';
+    echo += hash_encode(cache_player_deck);
+    echo += '" onclick="this.select()" size="100">';
+    echo += '<br><br>';
+    echo += '<b>Card List:</b>';
+    echo += '<br>';
+    echo += '<input type="text" value="';
+    echo += generate_card_list(cache_player_deck);
+    echo += '" onclick="this.select()" size="100">';
+    echo += '<br><br>';
+    var current_card = get_card_by_id(cache_player_deck.commander, true);
+    current_card.owner = 'player';
+    current_card.health_left = current_card.health;
+    echo += debug_name(current_card) + debug_skills(current_card) + '<br>';
+
+    debug_dump_cards(cache_player_deck, 'player');
+
+    var debug_cpu_deck;
+    if (cache_cpu_deck) {
+        debug_cpu_deck = cache_cpu_deck;
+    }
+
+    echo += '<br>';
+    echo += '<br>';
+    echo += '<i>Deck Hash:</i>';
+    echo += '<br>';
+    echo += '<input type="text" value="';
+    echo += hash_encode(debug_cpu_deck);
+    echo += '" onclick="this.select()" size="100">';
+    echo += '<br>';
+    echo += '<i>Card List:</i>';
+    echo += '<br>';
+    echo += '<input type="text" value="';
+    echo += generate_card_list(debug_cpu_deck);
+    echo += '" onclick="this.select()" size="100">';
+    echo += '<br>';
+    echo += '<u>Please note that Raid and Quest simulations randomize the enemy deck for each battle. Only one example enemy deck hash is generated.</u><br>';
+    echo += '<br>';
+    var current_card = get_card_by_id(debug_cpu_deck.commander, true);
+    current_card.owner = 'cpu';
+    current_card.health_left = current_card.health;
+    echo += debug_name(current_card) + debug_skills(current_card) + '<br>';
+    debug_dump_cards(debug_cpu_deck, 'cpu');
+    echo += '<br><hr><br>';
+}
+
+function debug_dump_cards(deck, player) {
+    for (var key in deck.deck) {
+        // Get cardID
+        var unit_info = deck.deck[key];
+        // Setup card for printing
+        var current_card = get_card_by_id(unit_info, true);
+        current_card.owner = player;
+        current_card.key = undefined;
+        current_card.health_left = current_card.health;
+        current_card.timer = current_card.cost;
+        // Echo card info
+        echo += debug_name(current_card) + debug_skills(current_card);
+        if (current_card.type) echo += ' <u>' + factions.names[current_card.type] + '</u>';
+        if (current_card.sub_type) echo += ' <u>' + factions.names[current_card.sub_type] + '</u>';
+        echo += '<br>';
+    }
+}
+
+// Dump field contents
+function debug_dump_field(field) {
+    if (!debug) return;
+
+    echo += '<font color="#666666">';
+
+    var players = ['player', 'cpu'];
+
+    for (var player_key = 0, p_len = players.length; player_key < p_len; player_key++) {
+        var player_val = players[player_key];
+        echo += '<br>';
+        echo += player_val + '\'s assaults:<br>';
+        var field_x_units = field[player_val].assaults;
+        for (var card_key = 0, unit_len = field_x_units.length; card_key < unit_len; card_key++) {
+            var current_card = field_x_units[card_key];
+            echo += debug_name(current_card);
+            echo += '(' + key + ')';
+            echo += '<br>';
+        }
+        if (!field[player_val].assaults.length) echo += 'None<br>';
+    }
+    echo += '</font>';
+    echo += '<br>';
+}
+
+// Output formatted name of card
+function debug_name(card, hideStats) {
+    if (card.owner == 'cpu') {
+        var tag = 'i';
+    } else {
+        var tag = 'b';
+    }
+    var output = '<' + tag + '>';
+    output += card.name;
+    if (card.runes.length) output += "*";
+    if (card.maxLevel > 1) output += '{' + card.level + '/' + card.maxLevel + '}';
+    if (card.key !== undefined) output += ' (' + card.key + ')';
+    output += '</' + tag + '>';
+    if (!hideStats) {
+        output += '<u>';
+        if (card.isCommander()) {
+            output += ' [';
+            if (card.health_left !== undefined) output += debug_fraction(card.health_left);
+            else output += card.health;
+            output += ' HP]';
+        } else if (card.isAssault()) {
+            output += ' [';
+            var atk = parseInt(card.attack) + parseInt(card.attack_rally) + parseInt(card.attack_berserk) - parseInt(card.attack_weaken);
+            if (isNaN(atk) || atk == undefined) atk = card.attack;
+            output += atk;
+            output += '/';
+            if (card.health_left !== undefined) output += debug_fraction(card.health_left);
+            else output += card.health;
+            output += '/';
+            if (card.timer !== undefined) output += card.timer;
+            else output += card.cost;
+            output += ']';
+        }
+        output += '</u>';
+    }
+
+    return output;
+}
+
+function debug_fraction(value) {
+    if (value > Math.floor(value)) {
+        value = value.toFixed(1);
+    }
+    return value;
+}
+
+// Dump whatever card or array
+function dump(card) {
+    echo += '<pre>';
+    print_r(card);
+    echo += '</pre>';
+}
+
+//Returns written card list built from deck array
+function generate_card_list(deck) {
+
+    var cardlist = [];
+    var copies = [];
+    var priorities = [];
+
+    var commander = get_card_by_id(deck.commander);
+    cardlist.push(commander.name + "(" + commander.level + ")");
+    copies.push(1);
+    priorities.push(0);
+    var lastidx = 0;
+    for (var key in deck.deck) {
+        var unit = deck.deck[key];
+        var card = get_card_by_id(unit);
+
+        if (!card) continue;
+
+        var card_name = card.name + "(" + card.level + ")";
+        if (card.runes.length) card_name += "*";
+
+        if (cardlist[lastidx] == card_name) {
+            copies[lastidx]++;
+        } else {
+            cardlist.push(card_name);
+            copies.push(1);
+            priorities.push(unit.priority);
+            lastidx++;
+        }
+    }
+
+    for (var i = copies.length - 1; i >= 0; i--) {
+        var numCopies = copies[i];
+        var priority = priorities[i];
+        if (numCopies > 1) {
+            cardlist[i] += "x" + numCopies;
+        }
+        if (priority > 0) {
+            cardlist[i] += "=" + priority;
+        }
+    }
+
+    cardlist = cardlist.join("; ");
+
+    return cardlist;
+}
+
+function generate_play_list(cards) {
+    var cardlist = [];
+    for (var i = 0; i < cards.length; i++) {
+        var unit = cards[i];
+        var card = get_card_by_id(unit);
+
+        if (!card) continue;
+        var o = (i % 2 == 0 ? 'b' : 'i');
+        var card_name = "<" + o + ">" + card.name + "(" + card.level + ")";
+        if (card.runes.length) card_name += "*";
+        card_name += "</" + o + ">";
+
+        cardlist.push(card_name);
+    }
+
+    return "<td>" + cardlist.join("</td><td>") + "</td>";
+}
+
 //return skills in readable format
 function debug_skills(card) {
     var skillText = [];
