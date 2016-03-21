@@ -2022,6 +2022,14 @@
     <resource card_id="17042" number="2" />
   </fusion_recipe>
   <fusion_recipe>
+    <card_id>17043</card_id>
+    <resource card_id="7043" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27043</card_id>
+    <resource card_id="17043" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
     <card_id>17044</card_id>
     <resource card_id="7044" number="2" />
   </fusion_recipe>

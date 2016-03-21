@@ -44502,6 +44502,287 @@ var CARDS = {
       },
     }
   },
+  "7043": {
+    "id": "7043",
+    "name": "Anima",
+    "picture": "Life_Elemental_A",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "5",
+    "attack": 4,
+    "health": 10,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 1,
+      },
+      {
+        "id": "heal",
+        "x": 1,
+        "y": "3",
+        "z": 3,
+      },
+      {
+        "id": "heal",
+        "x": 1,
+        "y": "5",
+        "z": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 11,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 1,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "heal",
+            "x": 1,
+            "y": "5",
+            "z": 5,
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 2,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "heal",
+            "x": 1,
+            "y": "5",
+            "z": 5,
+          },
+        ],
+      },
+      "5": {
+        "health": 13,
+        "skill": [],
+      },
+      "6": {
+        "health": 14,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 2,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "heal",
+            "x": 1,
+            "y": "5",
+            "z": 5,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "17043": {
+    "id": "17043",
+    "name": "Anima, the Seeker",
+    "picture": "Life_Elemental_A",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "5",
+    "attack": 4,
+    "health": 15,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 2,
+      },
+      {
+        "id": "heal",
+        "x": 3,
+        "y": "3",
+        "z": 3,
+      },
+      {
+        "id": "heal",
+        "x": 1,
+        "y": "5",
+        "z": 5,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 16,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 3,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "heal",
+            "x": 1,
+            "y": "5",
+            "z": 5,
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "health": 17,
+        "skill": [],
+      },
+      "5": {
+        "attack": 5,
+        "health": 18,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 3,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "y": "5",
+            "z": 5,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "27043": {
+    "id": "27043",
+    "name": "Anima, the Last",
+    "picture": "Life_Elemental_B",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "5",
+    "attack": 5,
+    "health": 19,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 3,
+      },
+      {
+        "id": "heal",
+        "x": 3,
+        "y": "3",
+        "z": 3,
+      },
+      {
+        "id": "heal",
+        "x": 2,
+        "y": "5",
+        "z": 5,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 20,
+        "skill": [],
+      },
+      "3": {
+        "health": 21,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 3,
+          },
+          {
+            "id": "heal",
+            "x": 4,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "y": "5",
+            "z": 5,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 4,
+          },
+          {
+            "id": "heal",
+            "x": 4,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "y": "5",
+            "z": 5,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "attack": 6,
+        "health": 22,
+        "skill": [],
+      },
+    }
+  },
   "7044": {
     "id": "7044",
     "name": "River Elemental",
@@ -64683,8 +64964,8 @@ var CARDS = {
       },
     }
   },
-  "9991": {
-    "id": "9991",
+  "9992": {
+    "id": "9992",
     "name": "New 10 (S)",
     "picture": "New10_A",
     "rarity": "0",
@@ -64696,8 +64977,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19991": {
-    "id": "19991",
+  "19992": {
+    "id": "19992",
     "name": "New 10 (D)",
     "picture": "New10_A",
     "rarity": "0",
@@ -64709,8 +64990,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29991": {
-    "id": "29991",
+  "29992": {
+    "id": "29992",
     "name": "New 10 (Q)",
     "picture": "New10_B",
     "rarity": "0",
@@ -64722,8 +65003,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9992": {
-    "id": "9992",
+  "9993": {
+    "id": "9993",
     "name": "New 12 (S)",
     "picture": "New12_A",
     "rarity": "0",
@@ -64735,8 +65016,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19992": {
-    "id": "19992",
+  "19993": {
+    "id": "19993",
     "name": "New 12 (D)",
     "picture": "New12_A",
     "rarity": "0",
@@ -64748,49 +65029,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29992": {
-    "id": "29992",
-    "name": "New 12 (Q)",
-    "picture": "New12_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9993": {
-    "id": "9993",
-    "name": "New 1 (S)",
-    "picture": "New1_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19993": {
-    "id": "19993",
-    "name": "New 1 (D)",
-    "picture": "New1_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
   "29993": {
     "id": "29993",
-    "name": "New 1 (Q)",
-    "picture": "New1_B",
+    "name": "New 12 (Q)",
+    "picture": "New12_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -71234,6 +71476,7 @@ var FUSIONS = {
   "17040" : "27040",
   "17041" : "27041",
   "17042" : "27042",
+  "17043" : "27043",
   "17044" : "27044",
   "17045" : "27045",
   "18000" : "28000",
@@ -71412,6 +71655,7 @@ var FUSIONS = {
   "7040" : "17040",
   "7041" : "17041",
   "7042" : "17042",
+  "7043" : "17043",
   "7044" : "17044",
   "7045" : "17045",
   "8000" : "18000",
