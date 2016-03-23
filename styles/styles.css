@@ -1,56 +1,68 @@
 body {
-	min-height: 400px;
+    min-height: 400px;
 }
+
 body, table, tr, td, input, select, option {
-	font-family: Arial, sans-serif;
-	font-size: 12px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
 }
+
 i {
-	text-decoration: none;
-	font-style:normal;
-	color: #ff0000;
-	font-weight: bold;
+    text-decoration: none;
+    font-style: normal;
+    color: #ff0000;
+    font-weight: bold;
 }
+
 b {
-	text-decoration: none;
-	font-style:normal;
-	color: #0000ff;
-	font-weight: bold;
+    text-decoration: none;
+    font-style: normal;
+    color: #0000ff;
+    font-weight: bold;
 }
+
+select[disabled] {
+    background-color: rgb(235, 235, 228);
+}
+
 a {
-	text-decoration: underline;
-	font-style:normal;
-	color: #0000ff;
+    text-decoration: underline;
+    font-style: normal;
+    color: #0000ff;
 }
+
 u {
-	text-decoration: none;
-	font-style:normal;
-	color: #dddddd;
-	font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    color: #dddddd;
+    font-weight: normal;
 }
+
 form div {
-	float: left;
-	width: 250px;
-	margin-right: 10px;
-	text-align: right;
+    float: left;
+    width: 250px;
+    margin-right: 10px;
+    text-align: right;
 }
+
 input {
-	float: left;
-	text-align: left;
+    float: left;
+    text-align: left;
 }
+
 br {
-	clear: both;
+    clear: both;
 }
 
 .button {
-  text-decoration: none;
-  background-color: #EEEEEE;
-  color: #333333;
-  padding: 2px 6px 2px 6px;
-  border-top: 1px solid #CCCCCC;
-  border-right: 1px solid #333333;
-  border-bottom: 1px solid #333333;
-  border-left: 1px solid #CCCCCC;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
 }
 
 .header {
