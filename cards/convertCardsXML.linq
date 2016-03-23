@@ -309,6 +309,21 @@ battleground[] battlegrounds = new battleground[] {
 		},
 	},
 	new battleground {
+		Name = "Poisonbolt",
+		ID = "108",
+		Effects = new evolve_skill[] {
+			new evolve_skill() {
+				id = "strike",
+				s = "poisonstrike",
+			},
+			new evolve_skill() {
+				id = "strike",
+				s = "poisonstrike",
+				all = "1",
+			},
+		},
+	},
+	new battleground {
 		Name = "Nethergore's Reckoning",
 		ID = "504",
 		enemy_only = "1",

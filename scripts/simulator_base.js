@@ -327,7 +327,10 @@ if (simulator_thread) (function () {
         // - Can be evaded
         // - Must calculate enfeeble/protect
         // - Can be enhanced
-        strike: function (src_card, skill) {
+        poisonstrike: function (src_card, skill, poison) {
+            activationSkills.strike(src_card, skill, true);
+        },
+        strike: function (src_card, skill, poison) {
 
             var faction = skill['y'];
 
@@ -398,10 +401,17 @@ if (simulator_thread) (function () {
                     strike_damage -= protect;
                 }
 
+                var poisonDamage = 0;
                 if (strike_damage < 0) {
                     strike_damage = 0;
                 } else {
                     do_damage(target, strike_damage);
+                    if (poison && target.isAlive()) {
+                        if (strike > target['poisoned']) {
+                            poisonDamage = strike;
+                            target['poisoned'] = poisonDamage;
+                        }
+                    }
                 }
                 if (debug) {
                     echo += '<u>(Strike: +' + strike;
@@ -410,6 +420,7 @@ if (simulator_thread) (function () {
                     if (protect) echo += ' Barrier: -' + protect;
                     echo += ') = ' + strike_damage + ' damage</u><br>';
                     echo += debug_name(src_card) + ' bolts ' + debug_name(target) + ' for ' + strike_damage + ' damage';
+                    if (poisonDamage) echo += ' and inflicts poison(' + poisonDamage + ') on it';
                     echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
                 }
                 if (shatter) {
@@ -545,7 +556,7 @@ if (simulator_thread) (function () {
                     do_damage(target, frost_damage);
                 }
                 if (debug) {
-                    echo += '<u>(Strike: +' + frost;
+                    echo += '<u>(Frostbreath: +' + frost;
                     if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
                     if (enhanced) echo += ' Enhance: +' + enhanced;
                     if (protect) echo += ' Barrier: -' + protect;

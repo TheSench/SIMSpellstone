@@ -71779,6 +71779,23 @@ var BATTLEGROUNDS = [
     }
   },
   {
+    "name": "Poisonbolt",
+    "id": "108",
+    "effect": {
+      "evolve_skill": [
+        {
+          "id": "strike",
+          "s": "poisonstrike",
+        },
+        {
+          "id": "strike",
+          "s": "poisonstrike",
+          "all": "1",
+        },
+      ]
+    }
+  },
+  {
     "name": "Nethergore's Reckoning",
     "id": "504",
     "enemy_only": "1",

@@ -380,6 +380,9 @@ var CARD_GUI = {};
             case 'strike':
                 iconName = 'Bolt.png';
                 break;
+            case 'poisonstrike':
+                iconName = 'Poisonbolt.png';
+                break;
             case 'burn':
                 iconName = 'Scorch.png';
                 break;
