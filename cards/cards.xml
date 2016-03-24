@@ -12986,6 +12986,122 @@
     </upgrade>
   </unit>
   <unit>
+    <id>5046</id>
+    <card_type>2</card_type>
+    <name>Dawn</name>
+    <picture>Dawn_Elemental_A</picture>
+    <asset_bundle>50</asset_bundle>
+    <attack>3</attack>
+    <health>11</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="2" />
+    <skill id="heal" x="2" y="5" />
+    <skill id="legion" x="1" y="5" />
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counter" x="2" />
+      <skill id="heal" x="3" y="5" />
+      <skill id="legion" x="1" y="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>4</attack>
+      <skill id="counter" x="2" />
+      <skill id="heal" x="3" y="5" />
+      <skill id="legion" x="2" y="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15046</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Dawnset</name>
+    <picture>Dawn_Elemental_A</picture>
+    <asset_bundle>50</asset_bundle>
+    <attack>4</attack>
+    <health>14</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="2" />
+    <skill id="heal" x="3" y="5" />
+    <skill id="legion" x="2" y="5" />
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>15</health>
+      <skill id="counter" x="3" />
+      <skill id="heal" x="3" y="5" />
+      <skill id="legion" x="2" y="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="3" />
+      <skill id="heal" x="4" y="5" />
+      <skill id="legion" x="3" y="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25046</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Dawnrise</name>
+    <picture>Dawn_Elemental_B</picture>
+    <asset_bundle>50</asset_bundle>
+    <attack>4</attack>
+    <health>18</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="3" />
+    <skill id="heal" x="4" y="5" />
+    <skill id="legion" x="3" y="5" />
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>5</attack>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counter" x="4" />
+      <skill id="heal" x="4" y="5" />
+      <skill id="legion" x="3" y="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="4" />
+      <skill id="heal" x="5" y="5" />
+      <skill id="legion" x="4" y="5" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>5048</id>
     <card_type>2</card_type>
     <name>Highborn Rose</name>
@@ -18615,6 +18731,110 @@
       <skill id="strike" x="3" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6046</id>
+    <card_type>2</card_type>
+    <name>Celerity</name>
+    <picture>Swiftness_Elemental_A</picture>
+    <asset_bundle>50</asset_bundle>
+    <attack>1</attack>
+    <health>4</health>
+    <cost>0</cost>
+    <rarity>3</rarity>
+    <skill id="fervor" x="1" y="5" />
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>5</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="pierce" x="1" />
+      <skill id="fervor" x="1" y="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>2</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="pierce" x="1" />
+      <skill id="fervor" x="2" y="5" />
+    </upgrade>
+    <desc>"It means to be very fast, look it up!" - Defensive Researcher</desc>
+  </unit>
+  <unit>
+    <id>16046</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Celerity Force</name>
+    <picture>Swiftness_Elemental_A</picture>
+    <asset_bundle>50</asset_bundle>
+    <attack>2</attack>
+    <health>5</health>
+    <cost>0</cost>
+    <rarity>3</rarity>
+    <skill id="pierce" x="2" />
+    <skill id="fervor" x="2" y="5" />
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>6</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="pierce" x="3" />
+      <skill id="fervor" x="2" y="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>7</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>3</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26046</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Celerity Burst</name>
+    <picture>Swiftness_Elemental_B</picture>
+    <asset_bundle>50</asset_bundle>
+    <attack>3</attack>
+    <health>7</health>
+    <cost>0</cost>
+    <rarity>3</rarity>
+    <skill id="pierce" x="3" />
+    <skill id="fervor" x="2" y="5" />
+    <skill id="berserk" x="1" />
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>8</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="pierce" x="4" />
+      <skill id="fervor" x="2" y="5" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+  </unit>
   <!-- Wyld Premium Begin -->
   <unit>
     <id>7000</id>
@@ -24124,6 +24344,134 @@
       <skill id="evade" x="1" />
       <skill id="rally" x="5" y="5" />
       <skill id="heal" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7046</id>
+    <card_type>2</card_type>
+    <name>Brambleblight</name>
+    <picture>Root_Elemental_A</picture>
+    <asset_bundle>50</asset_bundle>
+    <attack>5</attack>
+    <health>18</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="1" />
+    <skill id="leech" x="3" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="1" />
+      <skill id="leech" x="4" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>21</health>
+      <skill id="armored" x="2" />
+      <skill id="leech" x="4" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17046</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Nettleblight</name>
+    <picture>Root_Elemental_A</picture>
+    <asset_bundle>50</asset_bundle>
+    <attack>6</attack>
+    <health>22</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="2" />
+    <skill id="leech" x="4" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="2" />
+      <skill id="leech" x="5" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>24</health>
+      <skill id="armored" x="2" />
+      <skill id="leech" x="5" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>7</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27046</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Briarblight</name>
+    <picture>Root_Elemental_B</picture>
+    <asset_bundle>50</asset_bundle>
+    <attack>7</attack>
+    <health>25</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="2" />
+    <skill id="leech" x="6" />
+    <skill id="berserk" x="2" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>26</health>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>28</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="3" />
+      <skill id="leech" x="6" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="3" />
+      <skill id="leech" x="7" />
+      <skill id="berserk" x="3" />
     </upgrade>
   </unit>
   <!-- END SET 3000 - Premium -->
@@ -34977,6 +35325,20 @@
     <hidden>1</hidden>
   </skillType>
   <skillType>
+    <id>imbue</id>
+    <order>1</order>
+    <icon>imbue</icon>
+    <name>Imbue</name>
+    <upkeep>1</upkeep>
+    <!-- This skill occurs before all other actions -->
+    <attributes x="1" y="1" all="1" c="1" s="1" />
+    <desc>Grants a random allied creature with a skill</desc>
+    <desc_all>Grants all allied creatures with a skill</desc_all>
+    <desc_faction>Grants a random allied {y} creature with a skill</desc_faction>
+    <desc_all_faction>Grants all allied {y} creatures with a skill</desc_all_faction>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
     <id>valor</id>
     <order>500</order>
     <icon>valor</icon>
@@ -35029,7 +35391,7 @@
   </skillType>
   <skillType>
     <id>poisonstrike</id>
-    <order>100</order>
+    <order>101</order>
     <icon>arcane_shot</icon>
     <name>Poison Strike</name>
     <desc>Deals damage to a random enemy creature...and poison</desc>
@@ -35037,7 +35399,7 @@
     <desc_faction>Deals damage to a random enemy {y} creature...and poison</desc_faction>
     <desc_all_faction>Deals damage to all enemy {y} creatures...and poison</desc_all_faction>
     <attributes x="1" y="0" all="1" c="0" s="0" />
-    <balance_points>1</balance_points>
+    <balance_points>6</balance_points>
     <hidden>1</hidden>
   </skillType>
   <skillType>

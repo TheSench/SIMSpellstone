@@ -16,6 +16,10 @@ if (!String.prototype.format) {
     };
 }
 
+function parseInt(value) {
+    return value >> 0;
+}
+
 // GET variables
 function _GET(variable) {
     var query = window.location.search.substring(1);

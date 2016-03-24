@@ -3960,6 +3960,28 @@
     </deck>
   </mission>
   <!-- END Side Missions -->
+  <!-- START Hero Upgrade Missions -->
+  <mission>
+    <id>1512</id>
+    <name>Elyse Test Campaign</name>
+    <energy>1</energy>
+    <desc>Test</desc>
+    <commander id="1" />
+    <commander_req>7</commander_req>
+    <deck>
+      <card id="1000" />
+      <card id="1000" />
+      <card id="1000" />
+      <card id="1000" />
+      <card id="1000" />
+      <card id="1000" />
+      <card id="1000" />
+      <card id="1000" />
+      <card id="1000" />
+      <card id="1000" />
+    </deck>
+  </mission>
+  <!-- END Hero Upgrade Missions -->
   <!-- Rival Mission Nodes START -->
   <!-- Starts at 2001 -->
   <rival>
@@ -4115,8 +4137,7 @@
 		<req>-1</req>
 		<arena_x>250</arena_x>
 		<arena_y>150</arena_y>
-	</location>
-	 -->
+	</location> -->
   <!-- Previous ab for center of the void : <asset_bundle>44</asset_bundle> -->
   <!-- Event Portals BEGIN -->
   <!-- <portal>

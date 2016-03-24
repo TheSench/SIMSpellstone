@@ -24074,6 +24074,252 @@ var CARDS = {
       },
     }
   },
+  "5046": {
+    "id": "5046",
+    "name": "Dawn",
+    "picture": "Dawn_Elemental_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "5",
+    "attack": 3,
+    "health": 11,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 2,
+      },
+      {
+        "id": "heal",
+        "x": 2,
+        "y": "5",
+        "z": 5,
+      },
+      {
+        "id": "legion",
+        "x": 1,
+        "y": "5",
+        "z": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 12,
+        "skill": [],
+      },
+      "3": {
+        "health": 13,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 2,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "legion",
+            "x": 1,
+            "y": "5",
+            "z": 5,
+          },
+        ],
+      },
+      "5": {
+        "attack": 4,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 2,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "5",
+            "z": 5,
+          },
+        ],
+      },
+    }
+  },
+  "15046": {
+    "id": "15046",
+    "name": "Dawnset",
+    "picture": "Dawn_Elemental_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "5",
+    "attack": 4,
+    "health": 14,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 2,
+      },
+      {
+        "id": "heal",
+        "x": 3,
+        "y": "5",
+        "z": 5,
+      },
+      {
+        "id": "legion",
+        "x": 2,
+        "y": "5",
+        "z": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 15,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 3,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "5",
+            "z": 5,
+          },
+        ],
+      },
+      "3": {
+        "health": 16,
+        "skill": [],
+      },
+      "4": {
+        "health": 17,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 3,
+          },
+          {
+            "id": "heal",
+            "x": 4,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "legion",
+            "x": 3,
+            "y": "5",
+            "z": 5,
+          },
+        ],
+      },
+    }
+  },
+  "25046": {
+    "id": "25046",
+    "name": "Dawnrise",
+    "picture": "Dawn_Elemental_B",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "5",
+    "attack": 4,
+    "health": 18,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 3,
+      },
+      {
+        "id": "heal",
+        "x": 4,
+        "y": "5",
+        "z": 5,
+      },
+      {
+        "id": "legion",
+        "x": 3,
+        "y": "5",
+        "z": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 19,
+        "skill": [],
+      },
+      "3": {
+        "attack": 5,
+        "health": 20,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 4,
+          },
+          {
+            "id": "heal",
+            "x": 4,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "legion",
+            "x": 3,
+            "y": "5",
+            "z": 5,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 4,
+          },
+          {
+            "id": "heal",
+            "x": 5,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "legion",
+            "x": 4,
+            "y": "5",
+            "z": 5,
+          },
+        ],
+      },
+    }
+  },
   "5048": {
     "id": "5048",
     "name": "Highborn Rose",
@@ -34389,6 +34635,179 @@ var CARDS = {
           {
             "id": "strike",
             "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "6046": {
+    "id": "6046",
+    "name": "Celerity",
+    "picture": "Swiftness_Elemental_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "5",
+    "attack": 1,
+    "health": 4,
+    "cost": 0,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 1,
+        "y": "5",
+        "z": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 5,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "pierce",
+            "x": 1,
+          },
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "5",
+            "z": 5,
+          },
+        ],
+      },
+      "4": {
+        "attack": 2,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "pierce",
+            "x": 1,
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "5",
+            "z": 5,
+          },
+        ],
+      },
+    }
+  },
+  "16046": {
+    "id": "16046",
+    "name": "Celerity Force",
+    "picture": "Swiftness_Elemental_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "5",
+    "attack": 2,
+    "health": 5,
+    "cost": 0,
+    "skill": [
+      {
+        "id": "pierce",
+        "x": 2,
+      },
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "5",
+        "z": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 6,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "5",
+            "z": 5,
+          },
+        ],
+      },
+      "4": {
+        "health": 7,
+        "skill": [],
+      },
+      "5": {
+        "attack": 3,
+        "skill": [],
+      },
+    }
+  },
+  "26046": {
+    "id": "26046",
+    "name": "Celerity Burst",
+    "picture": "Swiftness_Elemental_B",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "5",
+    "attack": 3,
+    "health": 7,
+    "cost": 0,
+    "skill": [
+      {
+        "id": "pierce",
+        "x": 3,
+      },
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "5",
+        "z": 5,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 8,
+        "skill": [],
+      },
+      "3": {
+        "health": 9,
+        "skill": [],
+      },
+      "4": {
+        "health": 10,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
           },
         ],
       },
@@ -45262,6 +45681,228 @@ var CARDS = {
           {
             "id": "heal",
             "x": 5,
+          },
+        ],
+      },
+    }
+  },
+  "7046": {
+    "id": "7046",
+    "name": "Brambleblight",
+    "picture": "Root_Elemental_A",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "5",
+    "attack": 5,
+    "health": 18,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "leech",
+        "x": 3,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 19,
+        "skill": [],
+      },
+      "3": {
+        "health": 20,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "5": {
+        "attack": 6,
+        "skill": [],
+      },
+      "6": {
+        "health": 21,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "17046": {
+    "id": "17046",
+    "name": "Nettleblight",
+    "picture": "Root_Elemental_A",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "5",
+    "attack": 6,
+    "health": 22,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "leech",
+        "x": 4,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 23,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "4": {
+        "health": 24,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "health": 25,
+        "skill": [],
+      },
+      "6": {
+        "attack": 7,
+        "skill": [],
+      },
+    }
+  },
+  "27046": {
+    "id": "27046",
+    "name": "Briarblight",
+    "picture": "Root_Elemental_B",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "5",
+    "attack": 7,
+    "health": 25,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "leech",
+        "x": 6,
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 8,
+        "health": 26,
+        "skill": [],
+      },
+      "3": {
+        "health": 27,
+        "skill": [],
+      },
+      "4": {
+        "health": 28,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 6,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 7,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
           },
         ],
       },
@@ -64964,8 +65605,8 @@ var CARDS = {
       },
     }
   },
-  "9992": {
-    "id": "9992",
+  "9995": {
+    "id": "9995",
     "name": "New 10 (S)",
     "picture": "New10_A",
     "rarity": "0",
@@ -64977,8 +65618,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19992": {
-    "id": "19992",
+  "19995": {
+    "id": "19995",
     "name": "New 10 (D)",
     "picture": "New10_A",
     "rarity": "0",
@@ -64990,8 +65631,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29992": {
-    "id": "29992",
+  "29995": {
+    "id": "29995",
     "name": "New 10 (Q)",
     "picture": "New10_B",
     "rarity": "0",
@@ -65003,8 +65644,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9993": {
-    "id": "9993",
+  "9996": {
+    "id": "9996",
     "name": "New 12 (S)",
     "picture": "New12_A",
     "rarity": "0",
@@ -65016,8 +65657,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19993": {
-    "id": "19993",
+  "19996": {
+    "id": "19996",
     "name": "New 12 (D)",
     "picture": "New12_A",
     "rarity": "0",
@@ -65029,8 +65670,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29993": {
-    "id": "29993",
+  "29996": {
+    "id": "29996",
     "name": "New 12 (Q)",
     "picture": "New12_B",
     "rarity": "0",
@@ -65042,86 +65683,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9994": {
-    "id": "9994",
-    "name": "New 2 (S)",
-    "picture": "New2_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19994": {
-    "id": "19994",
-    "name": "New 2 (D)",
-    "picture": "New2_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29994": {
-    "id": "29994",
-    "name": "New 2 (Q)",
-    "picture": "New2_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9995": {
-    "id": "9995",
-    "name": "New 4 (S)",
-    "picture": "New4_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19995": {
-    "id": "19995",
-    "name": "New 4 (D)",
-    "picture": "New4_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29995": {
-    "id": "29995",
-    "name": "New 4 (Q)",
-    "picture": "New4_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9996": {
-    "id": "9996",
+  "9997": {
+    "id": "9997",
     "name": "New 6 (S)",
     "picture": "New6_A",
     "rarity": "0",
@@ -65133,8 +65696,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19996": {
-    "id": "19996",
+  "19997": {
+    "id": "19997",
     "name": "New 6 (D)",
     "picture": "New6_A",
     "rarity": "0",
@@ -65146,49 +65709,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29996": {
-    "id": "29996",
-    "name": "New 6 (Q)",
-    "picture": "New6_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9997": {
-    "id": "9997",
-    "name": "New 7 (S)",
-    "picture": "New7_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19997": {
-    "id": "19997",
-    "name": "New 7 (D)",
-    "picture": "New7_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
   "29997": {
     "id": "29997",
-    "name": "New 7 (Q)",
-    "picture": "New7_B",
+    "name": "New 6 (Q)",
+    "picture": "New6_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -66977,6 +67501,45 @@ var MISSIONS = {
       },
       {
         "id": "6024"
+      },
+    ]
+  },
+  "1512": {
+    "id": "1512",
+    "name": "Elyse Test Campaign",
+    "commander": {
+        "id": "1"
+},
+    "deck": [
+      {
+        "id": "1000"
+      },
+      {
+        "id": "1000"
+      },
+      {
+        "id": "1000"
+      },
+      {
+        "id": "1000"
+      },
+      {
+        "id": "1000"
+      },
+      {
+        "id": "1000"
+      },
+      {
+        "id": "1000"
+      },
+      {
+        "id": "1000"
+      },
+      {
+        "id": "1000"
+      },
+      {
+        "id": "1000"
       },
     ]
   },
@@ -71358,6 +71921,8 @@ var FUSIONS = {
   "15043" : "25043",
   "15044" : "25044",
   "15045" : "25045",
+  "15046" : "25046",
+  "15047" : "25047",
   "15048" : "25048",
   "1600" : "11600",
   "16000" : "26000",
@@ -71410,6 +71975,7 @@ var FUSIONS = {
   "16043" : "26043",
   "16044" : "26044",
   "16045" : "26045",
+  "16046" : "26046",
   "1605" : "11605",
   "1606" : "11606",
   "1607" : "11607",
@@ -71479,6 +72045,7 @@ var FUSIONS = {
   "17043" : "27043",
   "17044" : "27044",
   "17045" : "27045",
+  "17046" : "27046",
   "18000" : "28000",
   "18001" : "28001",
   "18002" : "28002",
@@ -71565,6 +72132,8 @@ var FUSIONS = {
   "5043" : "15043",
   "5044" : "15044",
   "5045" : "15045",
+  "5046" : "15046",
+  "5047" : "15047",
   "5048" : "15048",
   "6000" : "16000",
   "6001" : "16001",
@@ -71612,6 +72181,7 @@ var FUSIONS = {
   "6043" : "16043",
   "6044" : "16044",
   "6045" : "16045",
+  "6046" : "16046",
   "7000" : "17000",
   "7001" : "17001",
   "7002" : "17002",
@@ -71658,6 +72228,7 @@ var FUSIONS = {
   "7043" : "17043",
   "7044" : "17044",
   "7045" : "17045",
+  "7046" : "17046",
   "8000" : "18000",
   "8001" : "18001",
   "8002" : "18002",
