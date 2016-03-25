@@ -450,7 +450,7 @@ var addToDeck = function (htmlCard) {
     if (is_commander(unit.id)) {
         deck.commander = unit;
     } else {
-        if (deck.deck.length == 15) return;
+        if (deck.deck.length == 15 && !_DEFINED("unlimited")) return;
         deck.deck.push(unit);
     }
     sortDeck(deck);
