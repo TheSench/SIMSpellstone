@@ -309,17 +309,14 @@ battleground[] battlegrounds = new battleground[] {
 		},
 	},
 	new battleground {
-		Name = "Poisonbolt",
+		Name = "Frogvolution",
 		ID = "108",
-		Effects = new evolve_skill[] {
-			new evolve_skill() {
-				id = "strike",
-				s = "poisonstrike",
-			},
-			new evolve_skill() {
-				id = "strike",
-				s = "poisonstrike",
-				all = "1",
+		Effects = new add_skill[] {
+			new add_skill() {
+				id = "poisonstrike",
+				mult = "0.5",
+				Base = "attack",
+				y = ((int)FactionIDs.Frog).ToString(),
 			},
 		},
 	},
