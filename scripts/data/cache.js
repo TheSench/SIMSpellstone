@@ -72350,18 +72350,16 @@ var BATTLEGROUNDS = [
     }
   },
   {
-    "name": "Poisonbolt",
+    "name": "Frogvolution",
     "id": "108",
     "effect": {
-      "evolve_skill": [
+      "add_skill": [
         {
-          "id": "strike",
-          "s": "poisonstrike",
-        },
-        {
-          "id": "strike",
-          "s": "poisonstrike",
-          "all": "1",
+          "id": "poisonstrike",
+          "mult": 0.5,
+          "base": "attack",
+          "y": "4",
+          "z": 4,
         },
       ]
     }
