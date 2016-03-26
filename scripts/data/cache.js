@@ -24573,6 +24573,197 @@ var CARDS = {
       },
     }
   },
+  "5049": {
+    "id": "5049",
+    "name": "Joryl",
+    "picture": "Marble_Golem_A",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "5",
+    "attack": 10,
+    "health": 24,
+    "cost": 4,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "counter",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 25,
+        "skill": [],
+      },
+      "3": {
+        "attack": 11,
+        "health": 26,
+        "skill": [],
+      },
+      "4": {
+        "health": 27,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "counter",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "health": 28,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "counter",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "15049": {
+    "id": "15049",
+    "name": "Joryl of Marble",
+    "picture": "Marble_Golem_A",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "5",
+    "attack": 12,
+    "health": 29,
+    "cost": 4,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 3,
+      },
+      {
+        "id": "counter",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 30,
+        "skill": [],
+      },
+      "3": {
+        "health": 31,
+        "skill": [],
+      },
+      "4": {
+        "health": 32,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "counter",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "attack": 13,
+        "health": 33,
+        "skill": [],
+      },
+      "6": {
+        "health": 34,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "counter",
+            "x": 5,
+          },
+        ],
+      },
+    }
+  },
+  "25049": {
+    "id": "25049",
+    "name": "Joryl of Onyx Marble",
+    "picture": "Marble_Golem_B",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "5",
+    "attack": 14,
+    "health": 35,
+    "cost": 4,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 4,
+      },
+      {
+        "id": "counter",
+        "x": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 36,
+        "skill": [],
+      },
+      "3": {
+        "attack": 15,
+        "health": 37,
+        "skill": [],
+      },
+      "4": {
+        "health": 38,
+        "skill": [],
+      },
+      "5": {
+        "health": 39,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 5,
+          },
+          {
+            "id": "counter",
+            "x": 5,
+          },
+        ],
+      },
+      "6": {
+        "health": 40,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 5,
+          },
+          {
+            "id": "counter",
+            "x": 6,
+          },
+        ],
+      },
+    }
+  },
   "6000": {
     "id": "6000",
     "name": "Furnace Mech",
@@ -64100,7 +64291,7 @@ var CARDS = {
   "277": {
     "id": "277",
     "name": "Royal Engineer",
-    "picture": "portrait_royalengineer",
+    "picture": "NotFound",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -65605,8 +65796,8 @@ var CARDS = {
       },
     }
   },
-  "9995": {
-    "id": "9995",
+  "9996": {
+    "id": "9996",
     "name": "New 10 (S)",
     "picture": "New10_A",
     "rarity": "0",
@@ -65618,8 +65809,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19995": {
-    "id": "19995",
+  "19996": {
+    "id": "19996",
     "name": "New 10 (D)",
     "picture": "New10_A",
     "rarity": "0",
@@ -65631,49 +65822,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29995": {
-    "id": "29995",
-    "name": "New 10 (Q)",
-    "picture": "New10_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9996": {
-    "id": "9996",
-    "name": "New 12 (S)",
-    "picture": "New12_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19996": {
-    "id": "19996",
-    "name": "New 12 (D)",
-    "picture": "New12_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
   "29996": {
     "id": "29996",
-    "name": "New 12 (Q)",
-    "picture": "New12_B",
+    "name": "New 10 (Q)",
+    "picture": "New10_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -71924,6 +72076,7 @@ var FUSIONS = {
   "15046" : "25046",
   "15047" : "25047",
   "15048" : "25048",
+  "15049" : "25049",
   "1600" : "11600",
   "16000" : "26000",
   "16001" : "26001",
@@ -72135,6 +72288,7 @@ var FUSIONS = {
   "5046" : "15046",
   "5047" : "15047",
   "5048" : "15048",
+  "5049" : "15049",
   "6000" : "16000",
   "6001" : "16001",
   "6002" : "16002",
@@ -72350,16 +72504,18 @@ var BATTLEGROUNDS = [
     }
   },
   {
-    "name": "Frogvolution",
+    "name": "Poisonbolt",
     "id": "108",
     "effect": {
-      "add_skill": [
+      "evolve_skill": [
         {
-          "id": "poisonstrike",
-          "mult": 0.5,
-          "base": "attack",
-          "y": "4",
-          "z": 4,
+          "id": "strike",
+          "s": "poisonstrike",
+        },
+        {
+          "id": "strike",
+          "s": "poisonstrike",
+          "all": "1",
         },
       ]
     }

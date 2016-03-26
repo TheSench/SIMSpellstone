@@ -4,9 +4,11 @@
   <Namespace>System.Drawing.Imaging</Namespace>
 </Query>
 
+string basePath = Path.GetDirectoryName(Util.CurrentQueryPath);
+
 void Main()
 {
-	var path = Path.Combine(Path.GetDirectoryName(Util.CurrentQueryPath), @"..\res\cardImages\");
+	var path = Path.Combine(basePath, @"..\res\cardImages\");
 	var files = new DirectoryInfo(path).GetFiles().OrderBy(file => file.CreationTime);
 	var imageFileNames = new List<string>();
 	var portraitFileNames = new List<string>();
@@ -108,7 +110,8 @@ void Main()
 		sheetIndex++;
 	}
 
-	var cssFile = new FileInfo(@"C:\Users\jsen\Documents\Visual Studio 2013\Projects\SIMSpellstone\styles\spritesheet.css");
+	var stylesheetPath = Path.Combine(basePath, @"..\styles\spritesheet.css");
+	var cssFile = new FileInfo(stylesheetPath);
 	using (var writer = cssFile.CreateText())
 	{
 		writer.Write(css.ToString());
