@@ -72504,21 +72504,19 @@ var BATTLEGROUNDS = [
     }
   },
   {
-    "name": "Poisonbolt",
-    "id": "108",
-    "effect": {
-      "evolve_skill": [
-        {
-          "id": "strike",
-          "s": "poisonstrike",
-        },
-        {
-          "id": "strike",
-          "s": "poisonstrike",
-          "all": "1",
-        },
-      ]
-    }
+      "name": "Frogvolution",
+      "id": "108",
+      "effect": {
+          "add_skill": [
+            {
+                "id": "poisonstrike",
+                "mult": 0.5,
+                "base": "attack",
+                "y": "4",
+                "z": 4,
+            },
+          ]
+      }
   },
   {
     "name": "Nethergore's Reckoning",
