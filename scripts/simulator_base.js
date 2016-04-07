@@ -1,7 +1,7 @@
 "use strict";
 
 var SIMULATOR = {};
-if (simulator_thread) (function () {
+(function () {
 
     //50% proc function
     function roll_proc() {

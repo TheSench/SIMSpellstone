@@ -253,7 +253,4 @@ var SIM_CONTROLLER;
     SIM_CONTROLLER.debug_end = debug_end;
 })();
 
-var use_workers = false;
-var one_worker = true;
-var simulator_thread = true;
 var battle_sim = true;

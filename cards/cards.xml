@@ -5366,12 +5366,10 @@
   <unit>
     <id>2013</id>
     <card_type>2</card_type>
-    <name>Armored Toad</name>
+    <name>Stoneclad Toad</name>
     <picture>Armored_Rock_Frog_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1920729600</hidden_until_time>
-    <!-- Tue, 12 Nov 2030 16:00:00 GMT -->
-    <attack>7</attack>
+    <attack>8</attack>
     <health>15</health>
     <cost>3</cost>
     <rarity>4</rarity>
@@ -5382,7 +5380,7 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>16</health>
+      <health>17</health>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -5391,7 +5389,7 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>18</health>
+      <health>19</health>
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -5400,7 +5398,7 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <attack>8</attack>
+      <attack>9</attack>
     </upgrade>
   </unit>
   <unit>
@@ -5410,10 +5408,8 @@
     <name>Ironclad Toad</name>
     <picture>Armored_Rock_Frog_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1920729600</hidden_until_time>
-    <!-- Tue, 12 Nov 2030 16:00:00 GMT -->
-    <attack>9</attack>
-    <health>18</health>
+    <attack>10</attack>
+    <health>20</health>
     <cost>3</cost>
     <rarity>4</rarity>
     <skill id="armored" x="2" />
@@ -5423,7 +5419,7 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>19</health>
+      <health>21</health>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -5432,7 +5428,7 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>21</health>
+      <health>23</health>
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -5451,10 +5447,8 @@
     <name>Steelplated Toad</name>
     <picture>Armored_Rock_Frog_B</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1920729600</hidden_until_time>
-    <!-- Tue, 12 Nov 2030 16:00:00 GMT -->
-    <attack>10</attack>
-    <health>22</health>
+    <attack>11</attack>
+    <health>24</health>
     <cost>3</cost>
     <rarity>4</rarity>
     <skill id="armored" x="3" />
@@ -5464,7 +5458,7 @@
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <health>23</health>
+      <health>25</health>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -5473,7 +5467,7 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>24</health>
+      <health>26</health>
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -5482,7 +5476,7 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <attack>11</attack>
+      <attack>12</attack>
     </upgrade>
   </unit>
   <unit>

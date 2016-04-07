@@ -4133,16 +4133,16 @@
     <arena_x>250</arena_x>
     <arena_y>150</arena_y>
   </location>
-  <!--   	<location>
-		<id>107</id>
-		<name>Golden Crown Village</name>
-		<mapBG>EventMap_010</mapBG>
-		<combatBG>CombatBGEvent010</combatBG>
-		<asset_bundle>44</asset_bundle>
-		<req>-1</req>
-		<arena_x>250</arena_x>
-		<arena_y>150</arena_y>
-	</location>  -->
+  <location>
+    <id>107</id>
+    <name>Golden Crown Village</name>
+    <mapBG>EventMap_010</mapBG>
+    <asset_bundle>48</asset_bundle>
+    <combatBG>CombatBGEvent004</combatBG>
+    <req>-1</req>
+    <arena_x>250</arena_x>
+    <arena_y>150</arena_y>
+  </location>
   <location>
     <id>108</id>
     <name>Gloomy Land</name>

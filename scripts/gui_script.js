@@ -51,16 +51,21 @@ window.onload = function () {
     if (!ui) return 0;
 
     // Check if missions are found
-    if (MISSIONS) {
+    if (typeof(TITANS) !== "undefined") {
+        var missionData = TITANS;
+    } else {
+        var missionData = MISSIONS;
+    }
+    if (missionData) {
         // Mission drop down
         var select = document.getElementById('mission');
         var IDs = [];
-        for (var key in MISSIONS) {
+        for (var key in missionData) {
             IDs.push(key);
         }
         for (var i = 0; i < IDs.length; i++) {
             var key = IDs[i];
-            var mission = MISSIONS[key];
+            var mission = missionData[key];
             var option = document.createElement('option');
             option.appendChild(document.createTextNode(mission.name));
             option.value = mission.id;
@@ -72,17 +77,19 @@ window.onload = function () {
     if (RAIDS) {
         // Mission drop down
         var select = document.getElementById('raid');
-        var IDs = [];
-        for (var key in RAIDS) {
-            IDs.push(key);
-        }
-        for (var i = 0; i < IDs.length; i++) {
-            var key = IDs[i];
-            var raid = RAIDS[key];
-            var option = document.createElement('option');
-            option.appendChild(document.createTextNode(raid.name));
-            option.value = raid.id;
-            select.appendChild(option);
+        if (select) {
+            var IDs = [];
+            for (var key in RAIDS) {
+                IDs.push(key);
+            }
+            for (var i = 0; i < IDs.length; i++) {
+                var key = IDs[i];
+                var raid = RAIDS[key];
+                var option = document.createElement('option');
+                option.appendChild(document.createTextNode(raid.name));
+                option.value = raid.id;
+                select.appendChild(option);
+            }
         }
     }
 
@@ -105,13 +112,15 @@ window.onload = function () {
         }
     }
     var select = document.getElementById('tower_type');
-    var towerTypes = ["Castle Tower", "Cannon Tower"];
-    for (var i = 0; i < towerTypes.length; i++) {
-        var towerType = towerTypes[i];
-        var option = document.createElement('option');
-        option.appendChild(document.createTextNode(towerType));
-        option.value = i;
-        select.appendChild(option);
+    if (select) {
+        var towerTypes = ["Castle Tower", "Cannon Tower"];
+        for (var i = 0; i < towerTypes.length; i++) {
+            var towerType = towerTypes[i];
+            var option = document.createElement('option');
+            option.appendChild(document.createTextNode(towerType));
+            option.value = i;
+            select.appendChild(option);
+        }
     }
     
     var button = document.getElementById("generate_link");
@@ -281,26 +290,8 @@ window.onload = function () {
 
     var version_label = document.getElementById('version_label');
     if (battle_sim) { }
-    else if (use_workers) {
-        version_label.innerHTML += " " + text_version;
-        // Initialize workers
-        var param_maxworkers = _GET('maxworkers');
-        if (param_maxworkers) {
-            max_workers = parseInt(param_maxworkers);
-        }
-
-        if (max_workers == 1) version_label.innerHTML += " - Single core";
-        else if (max_workers == 2) version_label.innerHTML += " - Dual-core";
-        else if (max_workers == 4) version_label.innerHTML += " - Quad-core";
-        else if (max_workers == 6) version_label.innerHTML += " - Hexa-core";
-        else if (max_workers == 8) version_label.innerHTML += " - Octo-core";
-        else version_label.innerHTML += " - Multi-core";
-    } else {
+    else {
         version_label.innerHTML += " " + text_version + " - Single-Threaded";
-        if (!one_worker) {
-            var version_label2 = document.getElementById('version_label2');
-            version_label2.innerHTML += "(Multi-core not supported by your browser)";
-        }
     }
 
     if (_DEFINED('autostart')) {
@@ -627,11 +618,19 @@ function generate_link(autostart, autolink) {
 
     var getdeck = document.getElementById('deck').value;
     var getcardlist = document.getElementById('cardlist').value;
-    var getdeck2 = document.getElementById('deck2').value;
-    var getcardlist2 = document.getElementById('cardlist2').value;
-    var getmission = document.getElementById('mission').value;
-    var getraid = document.getElementById('raid').value;
-    var raidlevel = document.getElementById('raid_level').value;
+    if (document.getElementById('deck2')) {
+        var getdeck2 = document.getElementById('deck2').value;
+        var getcardlist2 = document.getElementById('cardlist2').value;
+        var getmission = document.getElementById('mission').value;
+        var getraid = document.getElementById('raid').value;
+        var raidlevel = document.getElementById('raid_level').value;
+    } else {
+        var getdeck2 = null;
+        var getcardlist2 = null;
+        var getmission = document.getElementById('mission').value;
+        var getraid = null;
+        var raidlevel = null;
+    }
 
     // Load player deck
     if (getdeck) {
@@ -672,7 +671,7 @@ function generate_link(autostart, autolink) {
     }
 
     d = document.getElementById('siege');
-    if (d.checked) {
+    if (d && d.checked) {
         parameters.push('siege');
         d = document.getElementById('tower_level');
         parameters.push('tower_level=' + d.value);
@@ -697,22 +696,22 @@ function generate_link(autostart, autolink) {
     }
 
     d = document.getElementById('ordered2');
-    if (d.checked) {
+    if (d && d.checked) {
         parameters.push('ordered2');
     }
 
     d = document.getElementById('exactorder2');
-    if (d.checked) {
+    if (d && d.checked) {
         parameters.push('exactorder2');
     }
 
     d = document.getElementById('mission');
-    if (d.value) {
+    if (d && d.value) {
         parameters.push('mission=' + d.value);
     }
 
     d = document.getElementById('raid');
-    if (d.value) {
+    if (d && d.value) {
         parameters.push('raid=' + d.value);
     }
 
@@ -765,10 +764,6 @@ function generate_link(autostart, autolink) {
 
     if (autolink) {
         parameters.push('autolink');
-    }
-
-    if (use_workers && max_workers) {
-        parameters.push('maxworkers=' + max_workers);
     }
     if (parameters.length > 0) {
         return url_base + '?' + parameters.join('&');

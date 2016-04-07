@@ -9811,14 +9811,14 @@ var CARDS = {
   },
   "2013": {
     "id": "2013",
-    "name": "Armored Toad",
+    "name": "Stoneclad Toad",
     "picture": "Armored_Rock_Frog_A",
     "rarity": "4",
     "set": "2000",
     "card_type": "2",
     "type": "3",
     "sub_type": "4",
-    "attack": 7,
+    "attack": 8,
     "health": 15,
     "cost": 3,
     "skill": [
@@ -9833,7 +9833,7 @@ var CARDS = {
     ],
     "upgrades": {
       "2": {
-        "health": 16,
+        "health": 17,
         "skill": [],
       },
       "3": {
@@ -9849,7 +9849,7 @@ var CARDS = {
         ],
       },
       "4": {
-        "health": 18,
+        "health": 19,
         "skill": [],
       },
       "5": {
@@ -9865,7 +9865,7 @@ var CARDS = {
         ],
       },
       "6": {
-        "attack": 8,
+        "attack": 9,
         "skill": [],
       },
     }
@@ -9879,8 +9879,8 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": "4",
-    "attack": 9,
-    "health": 18,
+    "attack": 10,
+    "health": 20,
     "cost": 3,
     "skill": [
       {
@@ -9894,7 +9894,7 @@ var CARDS = {
     ],
     "upgrades": {
       "2": {
-        "health": 19,
+        "health": 21,
         "skill": [],
       },
       "3": {
@@ -9910,7 +9910,7 @@ var CARDS = {
         ],
       },
       "4": {
-        "health": 21,
+        "health": 23,
         "skill": [],
       },
       "5": {
@@ -9940,8 +9940,8 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": "4",
-    "attack": 10,
-    "health": 22,
+    "attack": 11,
+    "health": 24,
     "cost": 3,
     "skill": [
       {
@@ -9955,7 +9955,7 @@ var CARDS = {
     ],
     "upgrades": {
       "2": {
-        "health": 23,
+        "health": 25,
         "skill": [],
       },
       "3": {
@@ -9971,7 +9971,7 @@ var CARDS = {
         ],
       },
       "4": {
-        "health": 24,
+        "health": 26,
         "skill": [],
       },
       "5": {
@@ -9987,7 +9987,7 @@ var CARDS = {
         ],
       },
       "6": {
-        "attack": 11,
+        "attack": 12,
         "skill": [],
       },
     }
@@ -66920,7 +66920,7 @@ var CARDS = {
   "288": {
     "id": "288",
     "name": "Targetback Hill",
-    "picture": "NotFound",
+    "picture": "portrait_groundelemental",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
