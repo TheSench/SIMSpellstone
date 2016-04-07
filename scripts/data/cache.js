@@ -74496,7 +74496,7 @@ var BATTLEGROUNDS = [
     }
   },
   {
-    "name": "Frogvolution",
+    "name": "Poisontongue",
     "id": "108",
     "effect": {
       "add_skill": [

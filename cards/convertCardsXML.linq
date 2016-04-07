@@ -309,7 +309,7 @@ battleground[] battlegrounds = new battleground[] {
 		},
 	},
 	new battleground {
-		Name = "Frogvolution",
+		Name = "Poisontongue",
 		ID = "108",
 		Effects = new add_skill[] {
 			new add_skill() {

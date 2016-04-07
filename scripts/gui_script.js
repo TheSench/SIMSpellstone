@@ -1,5 +1,7 @@
 "use strict";
 
+var deckPopupDialog;
+
 window.onerror = function (message, url, linenumber) {
     if (linenumber == 0) {
         var msg = "<br><br><i>Error Message:</i><br><br>" +
@@ -132,10 +134,20 @@ window.onload = function () {
     var button = document.getElementById("display_history");
     if (button) button.onclick = display_history;
 
+    var chkDebug = document.getElementById("debug");
+    chkDebug.onclick = function (event) {
+        var enabled = event.srcElement.checked;
+        var radios = document.getElementsByName("debugMode");
+        for (var i = 0; i < radios.length; i++) {
+            var radio = radios[i];
+            radio.disabled = !enabled;
+        }
+    };
     var radios = document.getElementsByName("debugMode");
     for (var i = 0; i < radios.length; i++) {
         var radio = radios[i];
         radio.onclick = toggleRadio;
+        radio.disabled = !chkDebug.checked;
     }
 
     if (_GET('deck1')) {
@@ -306,6 +318,23 @@ window.onload = function () {
             script.src = "scripts/unit_test_runner.js";
             body.appendChild(script);
         };
+    }
+
+    if (document.getElementById("missionDeckDialog")) {
+        deckPopupDialog = $("#missionDeckDialog").dialog({
+            autoOpen: false,
+            minWidth: 500,
+            minHeight: 20,
+            modal: true,
+            resizable: false,
+            draggable: false,
+            buttons: {
+                Close: function () {
+                    deckPopupDialog.dialog("close");
+                }
+            },
+            open: function (event, ui) { $(".ui-dialog-titlebar-close", ui.dialog | ui).hide(); }
+        });
     }
 }
 
@@ -825,6 +854,20 @@ function load_deck_builder(player) {
     var name = (player == 'player' ? 'Player Deck' : 'Enemy Deck');
     var deckHashField = (player ? document.getElementById(player == 'player' ? 'deck' : 'deck2') : null);
     open_deck_builder(name, hash, null, deckHashField);
+}
+
+function open_mission_deck_builder() {
+    var mission = TITANS[document.getElementById("mission").value];
+    if (mission) {
+        var missionDeck = hash_decode(mission.hash);
+
+        document.getElementById("deck_label").innerHTML = mission.name;
+        document.getElementById("deck_display").innerHTML = CARD_GUI.makeDeckHTML(missionDeck).outerHTML;
+        document.getElementById("deck_hash").value = mission.hash;
+
+        deckPopupDialog.dialog("open");
+        deckPopupDialog.dialog("option", "position", { my: "center", at: "center", of: window });
+    }
 }
 
 function open_deck_builder(name, hash, inventory, deckHashField) {
