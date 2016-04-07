@@ -9879,7 +9879,7 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": "4",
-    "attack": 10,
+    "attack": 9,
     "health": 20,
     "cost": 3,
     "skill": [
@@ -15231,7 +15231,7 @@ var CARDS = {
     "name": "Arms Enforcer",
     "picture": "Chariot_A",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "1",
     "attack": 2,
@@ -15279,7 +15279,7 @@ var CARDS = {
     "name": "Arms Gladiator",
     "picture": "Chariot_B",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "1",
     "attack": 3,
@@ -15323,7 +15323,7 @@ var CARDS = {
     "name": "Arms Champion",
     "picture": "Chariot_C",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "1",
     "attack": 4,
@@ -15367,7 +15367,7 @@ var CARDS = {
     "name": "Arcane Scroll",
     "picture": "Floating_Word_A",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "1",
     "attack": 4,
@@ -15409,7 +15409,7 @@ var CARDS = {
     "name": "Ancient Scroll",
     "picture": "Floating_Word_B",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "1",
     "attack": 5,
@@ -15457,7 +15457,7 @@ var CARDS = {
     "name": "Ancient Manuscript",
     "picture": "Floating_Word_C",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "1",
     "attack": 5,
@@ -16364,7 +16364,7 @@ var CARDS = {
     "name": "Static Drake",
     "picture": "Static_Drake_A",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "1",
     "sub_type": "9",
@@ -16410,7 +16410,7 @@ var CARDS = {
     "name": "Lightning Drake",
     "picture": "Static_Drake_A",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "1",
     "sub_type": "9",
@@ -16455,7 +16455,7 @@ var CARDS = {
     "name": "Thunder Drake",
     "picture": "Static_Drake_B",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "1",
     "sub_type": "9",
@@ -17438,7 +17438,7 @@ var CARDS = {
     "name": "Steam Tempest",
     "picture": "Steam_Elemental_A",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "1",
     "sub_type": "5",
@@ -17479,7 +17479,7 @@ var CARDS = {
     "name": "Piping Tempest",
     "picture": "Steam_Elemental_A",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "1",
     "sub_type": "5",
@@ -17533,7 +17533,7 @@ var CARDS = {
     "name": "Scalding Tempest",
     "picture": "Steam_Elemental_B",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "1",
     "sub_type": "5",
@@ -18494,7 +18494,7 @@ var CARDS = {
     "name": "Webfoot Raider",
     "picture": "Bombardier_Frog_A",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "1",
     "sub_type": "4",
@@ -18543,7 +18543,7 @@ var CARDS = {
     "name": "Webfoot Bombardier",
     "picture": "Bombardier_Frog_A",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "1",
     "sub_type": "4",
@@ -18588,7 +18588,7 @@ var CARDS = {
     "name": "Webfoot Marauder",
     "picture": "Bombardier_Frog_B",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "1",
     "sub_type": "4",
@@ -24995,6 +24995,183 @@ var CARDS = {
       },
     }
   },
+  "5050": {
+    "id": "5050",
+    "name": "Cloud Spear",
+    "picture": "NotFound",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "4",
+    "attack": 3,
+    "health": 7,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 1,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 8,
+        "skill": [],
+      },
+      "3": {
+        "health": 9,
+        "skill": [],
+      },
+      "4": {
+        "health": 10,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 1,
+          },
+          {
+            "id": "legion",
+            "x": 1,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "15050": {
+    "id": "15050",
+    "name": "Soaring Spear",
+    "picture": "NotFound",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "4",
+    "attack": 3,
+    "health": 11,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 1,
+      },
+      {
+        "id": "legion",
+        "x": 1,
+        "y": "4",
+        "z": 4,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 12,
+        "skill": [],
+      },
+      "3": {
+        "attack": 4,
+        "skill": [],
+      },
+      "4": {
+        "health": 13,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 2,
+          },
+          {
+            "id": "legion",
+            "x": 1,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "25050": {
+    "id": "25050",
+    "name": "Lightning Spear",
+    "picture": "NotFound",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "4",
+    "attack": 4,
+    "health": 14,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 2,
+      },
+      {
+        "id": "legion",
+        "x": 1,
+        "y": "4",
+        "z": 4,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 15,
+        "skill": [],
+      },
+      "3": {
+        "attack": 5,
+        "skill": [],
+      },
+      "4": {
+        "health": 16,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 2,
+          },
+          {
+            "id": "legion",
+            "x": 1,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
   "6000": {
     "id": "6000",
     "name": "Furnace Mech",
@@ -26360,7 +26537,7 @@ var CARDS = {
     "name": "Chaos Golem",
     "picture": "Chaos_Golem_A",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "2",
     "attack": 3,
@@ -26415,7 +26592,7 @@ var CARDS = {
     "name": "Discord Golem",
     "picture": "Chaos_Golem_B",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "2",
     "attack": 3,
@@ -26452,7 +26629,7 @@ var CARDS = {
     "name": "Anarchy Golem",
     "picture": "Chaos_Golem_C",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "2",
     "attack": 5,
@@ -26507,7 +26684,7 @@ var CARDS = {
     "name": "Goblin Crew",
     "picture": "Goblin_Gang_A",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "2",
     "attack": 3,
@@ -26553,7 +26730,7 @@ var CARDS = {
     "name": "Goblin Band",
     "picture": "Goblin_Gang_B",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "2",
     "attack": 4,
@@ -26605,7 +26782,7 @@ var CARDS = {
     "name": "Goblin Gang",
     "picture": "Goblin_Gang_C",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "2",
     "attack": 5,
@@ -27582,7 +27759,7 @@ var CARDS = {
     "name": "Ember Drake",
     "picture": "Ember_Drake_A",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "2",
     "sub_type": "9",
@@ -27637,7 +27814,7 @@ var CARDS = {
     "name": "Burning Drake",
     "picture": "Ember_Drake_A",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "2",
     "sub_type": "9",
@@ -27690,7 +27867,7 @@ var CARDS = {
     "name": "Scorching Drake",
     "picture": "Ember_Drake_B",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "2",
     "sub_type": "9",
@@ -28678,7 +28855,7 @@ var CARDS = {
     "name": "Tar Pit Stalker",
     "picture": "Tar_Elemental_A",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "2",
     "sub_type": "5",
@@ -28727,7 +28904,7 @@ var CARDS = {
     "name": "Tar Pit Shambler",
     "picture": "Tar_Elemental_A",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "2",
     "sub_type": "5",
@@ -28776,7 +28953,7 @@ var CARDS = {
     "name": "Tar Pit Swallower",
     "picture": "Tar_Elemental_B",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "2",
     "sub_type": "5",
@@ -29753,7 +29930,7 @@ var CARDS = {
     "name": "Illusion Caster",
     "picture": "Hypnofrog_A",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "2",
     "sub_type": "4",
@@ -29807,7 +29984,7 @@ var CARDS = {
     "name": "Delusion Caster",
     "picture": "Hypnofrog_A",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "2",
     "sub_type": "4",
@@ -29860,7 +30037,7 @@ var CARDS = {
     "name": "Hypno Caster",
     "picture": "Hypnofrog_B",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "2",
     "sub_type": "4",
@@ -35476,6 +35653,210 @@ var CARDS = {
       },
     }
   },
+  "6049": {
+    "id": "6049",
+    "name": "Goblin Explosioneer",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "attack": 4,
+    "health": 11,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "strike",
+        "x": 2,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+      },
+      {
+        "id": "flurry",
+        "c": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 5,
+          },
+        ],
+      },
+      "3": {
+        "health": 12,
+        "skill": [],
+      },
+      "4": {
+        "health": 13,
+        "skill": [],
+      },
+      "5": {
+        "health": 14,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "strike",
+            "x": 3,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 5,
+          },
+        ],
+      },
+    }
+  },
+  "16049": {
+    "id": "16049",
+    "name": "Crazed Explosioneer",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "attack": 4,
+    "health": 15,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "strike",
+        "x": 3,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+      },
+      {
+        "id": "flurry",
+        "c": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 5,
+        "skill": [],
+      },
+      "3": {
+        "health": 16,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "strike",
+            "x": 3,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "5": {
+        "health": 17,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "strike",
+            "x": 4,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+    }
+  },
+  "26049": {
+    "id": "26049",
+    "name": "Unhinged Explosioneer",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "attack": 5,
+    "health": 18,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "strike",
+        "x": 4,
+      },
+      {
+        "id": "strike",
+        "x": 2,
+      },
+      {
+        "id": "flurry",
+        "c": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 19,
+        "skill": [],
+      },
+      "3": {
+        "health": 20,
+        "skill": [],
+      },
+      "4": {
+        "attack": 6,
+        "skill": [],
+      },
+      "5": {
+        "health": 21,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "strike",
+            "x": 5,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+    }
+  },
   "7000": {
     "id": "7000",
     "name": "Treant King",
@@ -37007,7 +37388,7 @@ var CARDS = {
     "name": "Treant Sapling",
     "picture": "Treant_Sapling_A",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "3",
     "attack": 1,
@@ -37061,7 +37442,7 @@ var CARDS = {
     "name": "Treepalm Sapling",
     "picture": "Treant_Sapling_B",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "3",
     "attack": 2,
@@ -37105,7 +37486,7 @@ var CARDS = {
     "name": "Treefist Sapling",
     "picture": "Treant_Sapling_C",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "3",
     "attack": 3,
@@ -37149,7 +37530,7 @@ var CARDS = {
     "name": "Water Serpent",
     "picture": "Water_Serpent_A",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "3",
     "attack": 1,
@@ -37198,7 +37579,7 @@ var CARDS = {
     "name": "Lake Serpent",
     "picture": "Water_Serpent_B",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "3",
     "attack": 2,
@@ -37242,7 +37623,7 @@ var CARDS = {
     "name": "Sea Serpent",
     "picture": "Water_Serpent_C",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "3",
     "attack": 2,
@@ -38302,7 +38683,7 @@ var CARDS = {
     "name": "Life Drake",
     "picture": "Life_Drake_A",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "3",
     "sub_type": "9",
@@ -38364,7 +38745,7 @@ var CARDS = {
     "name": "LifeLink Drake",
     "picture": "Life_Drake_A",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "3",
     "sub_type": "9",
@@ -38423,7 +38804,7 @@ var CARDS = {
     "name": "LifeBlood Drake",
     "picture": "Life_Drake_B",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "3",
     "sub_type": "9",
@@ -39585,7 +39966,7 @@ var CARDS = {
     "name": "Coral Elemental",
     "picture": "Coral_Elemental_A",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "3",
     "sub_type": "5",
@@ -39624,7 +40005,7 @@ var CARDS = {
     "name": "Coral Ambusher",
     "picture": "Coral_Elemental_A",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "3",
     "sub_type": "5",
@@ -39683,7 +40064,7 @@ var CARDS = {
     "name": "Coral Lurker",
     "picture": "Coral_Elemental_B",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "3",
     "sub_type": "5",
@@ -40741,7 +41122,7 @@ var CARDS = {
     "name": "Beetle Tamer",
     "picture": "Beetle_Frog_A",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "3",
     "sub_type": "4",
@@ -40776,7 +41157,7 @@ var CARDS = {
     "name": "Beetle Breaker",
     "picture": "Beetle_Frog_A",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "3",
     "sub_type": "4",
@@ -40831,7 +41212,7 @@ var CARDS = {
     "name": "Beetle Enchanter",
     "picture": "Beetle_Frog_B",
     "rarity": "2",
-    "set": "3000",
+    "set": "2000",
     "card_type": "2",
     "type": "3",
     "sub_type": "4",
@@ -47075,6 +47456,256 @@ var CARDS = {
           {
             "id": "leech",
             "x": 8,
+          },
+        ],
+      },
+    }
+  },
+  "7050": {
+    "id": "7050",
+    "name": "Krieg, Northern Sword",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "4",
+    "attack": 3,
+    "health": 10,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 1,
+        "y": "4",
+        "z": 4,
+        "all": "1",
+      },
+      {
+        "id": "pierce",
+        "x": 1,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 11,
+        "skill": [],
+      },
+      "3": {
+        "health": 12,
+        "skill": [],
+      },
+      "4": {
+        "health": 13,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "4",
+            "z": 4,
+            "all": "1",
+          },
+          {
+            "id": "pierce",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "6": {
+        "attack": 4,
+        "health": 14,
+        "skill": [],
+      },
+    }
+  },
+  "17050": {
+    "id": "17050",
+    "name": "Krieg, the Redeemed",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "4",
+    "attack": 4,
+    "health": 15,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 1,
+        "y": "4",
+        "z": 4,
+        "all": "1",
+      },
+      {
+        "id": "pierce",
+        "x": 2,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 16,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "4",
+            "z": 4,
+            "all": "1",
+          },
+          {
+            "id": "pierce",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "4",
+            "z": 4,
+            "all": "1",
+          },
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "4": {
+        "health": 17,
+        "skill": [],
+      },
+      "5": {
+        "attack": 5,
+        "skill": [],
+      },
+      "6": {
+        "health": 18,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "4",
+            "z": 4,
+            "all": "1",
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "27050": {
+    "id": "27050",
+    "name": "Krieg, Umberwulve Slayer",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "4",
+    "attack": 5,
+    "health": 19,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "4",
+        "z": 4,
+        "all": "1",
+      },
+      {
+        "id": "pierce",
+        "x": 4,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 20,
+        "skill": [],
+      },
+      "3": {
+        "attack": 6,
+        "health": 21,
+        "skill": [],
+      },
+      "4": {
+        "health": 22,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "4",
+            "z": 4,
+            "all": "1",
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "4",
+            "z": 4,
+            "all": "1",
+          },
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
           },
         ],
       },
@@ -67032,6 +67663,666 @@ var CARDS = {
       },
     }
   },
+  "289": {
+    "id": "289",
+    "name": "Treetop Stalker",
+    "picture": "portrait_skybeast",
+    "rarity": "3",
+    "set": "9999",
+    "card_type": "1",
+    "type": "2",
+    "health": 30,
+    "skill": [
+      {
+        "id": "enhance",
+        "x": 1,
+        "s": "leech",
+      },
+      {
+        "id": "strike",
+        "x": 2,
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 35,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "leech",
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+          },
+        ],
+      },
+      "3": {
+        "health": 41,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 2,
+            "s": "leech",
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "health": 48,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 3,
+            "s": "leech",
+          },
+          {
+            "id": "strike",
+            "x": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "health": 56,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 3,
+            "s": "leech",
+          },
+          {
+            "id": "strike",
+            "x": 5,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "290": {
+    "id": "290",
+    "name": "Rebellious Frog Scout",
+    "picture": "portrait_frogscout",
+    "rarity": "3",
+    "set": "9999",
+    "card_type": "1",
+    "type": "3",
+    "health": 33,
+    "skill": [
+      {
+        "id": "enhance",
+        "x": 2,
+        "s": "armored",
+      },
+      {
+        "id": "enhance",
+        "x": 1,
+        "s": "fervor",
+      },
+      {
+        "id": "enhance",
+        "x": 2,
+        "s": "pierce",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 38,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 2,
+            "s": "armored",
+          },
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "fervor",
+          },
+          {
+            "id": "enhance",
+            "x": 3,
+            "s": "pierce",
+          },
+        ],
+      },
+      "3": {
+        "health": 44,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 3,
+            "s": "armored",
+          },
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "fervor",
+          },
+          {
+            "id": "enhance",
+            "x": 3,
+            "s": "pierce",
+          },
+        ],
+      },
+      "4": {
+        "health": 51,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 3,
+            "s": "armored",
+          },
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "fervor",
+          },
+          {
+            "id": "enhance",
+            "x": 4,
+            "s": "pierce",
+          },
+        ],
+      },
+      "5": {
+        "health": 59,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 3,
+            "s": "armored",
+          },
+          {
+            "id": "enhance",
+            "x": 2,
+            "s": "fervor",
+          },
+          {
+            "id": "enhance",
+            "x": 4,
+            "s": "pierce",
+          },
+        ],
+      },
+    }
+  },
+  "291": {
+    "id": "291",
+    "name": "Feral Bird",
+    "picture": "portrait_frogemperor",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "3",
+    "health": 36,
+    "skill": [
+      {
+        "id": "enhance",
+        "x": 1,
+        "s": "evade",
+      },
+      {
+        "id": "heal",
+        "x": 2,
+      },
+      {
+        "id": "protect",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 41,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "evade",
+          },
+          {
+            "id": "heal",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+          },
+        ],
+      },
+      "3": {
+        "health": 47,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "evade",
+          },
+          {
+            "id": "heal",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 55,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "evade",
+          },
+          {
+            "id": "heal",
+            "x": 3,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "health": 64,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "evade",
+          },
+          {
+            "id": "heal",
+            "x": 3,
+          },
+          {
+            "id": "protect",
+            "x": 4,
+          },
+        ],
+      },
+      "6": {
+        "health": 74,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "evade",
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 3,
+          },
+          {
+            "id": "protect",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "292": {
+    "id": "292",
+    "name": "Goldtop Hunter",
+    "picture": "portrait_canopyhunter",
+    "rarity": "3",
+    "set": "9999",
+    "card_type": "1",
+    "type": "3",
+    "health": 31,
+    "skill": [
+      {
+        "id": "enhance",
+        "x": 1,
+        "s": "berserk",
+      },
+      {
+        "id": "enfeeble",
+        "x": 2,
+      },
+      {
+        "id": "jam",
+        "c": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 36,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "berserk",
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+      "3": {
+        "health": 42,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "berserk",
+          },
+          {
+            "id": "enfeeble",
+            "x": 3,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+      "4": {
+        "health": 49,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "berserk",
+          },
+          {
+            "id": "enfeeble",
+            "x": 4,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+        ],
+      },
+      "5": {
+        "health": 59,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 2,
+            "s": "berserk",
+          },
+          {
+            "id": "enfeeble",
+            "x": 4,
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+        ],
+      },
+    }
+  },
+  "293": {
+    "id": "293",
+    "name": "Fireback Dragon",
+    "picture": "portrait_moltendragon",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "2",
+    "health": 35,
+    "skill": [
+      {
+        "id": "enhance",
+        "x": 1,
+        "s": "legion",
+      },
+      {
+        "id": "counter",
+        "x": 1,
+      },
+      {
+        "id": "strike",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 39,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "burn",
+          },
+          {
+            "id": "counter",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+        ],
+      },
+      "3": {
+        "health": 44,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "burn",
+          },
+          {
+            "id": "counter",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 50,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "burn",
+          },
+          {
+            "id": "counter",
+            "x": 3,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "health": 57,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 2,
+            "s": "burn",
+          },
+          {
+            "id": "counter",
+            "x": 3,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "health": 65,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 2,
+            "s": "burn",
+          },
+          {
+            "id": "counter",
+            "x": 3,
+          },
+          {
+            "id": "strike",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "294": {
+    "id": "294",
+    "name": "Avian Soldiers",
+    "picture": "portrait_frogemperor",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "1",
+    "health": 37,
+    "skill": [
+      {
+        "id": "enhance",
+        "x": 1,
+        "s": "legion",
+      },
+      {
+        "id": "rally",
+        "x": 2,
+      },
+      {
+        "id": "jam",
+        "c": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 42,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "legion",
+          },
+          {
+            "id": "rally",
+            "x": 2,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+        ],
+      },
+      "3": {
+        "health": 48,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "legion",
+          },
+          {
+            "id": "rally",
+            "x": 3,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+        ],
+      },
+      "4": {
+        "health": 55,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "legion",
+          },
+          {
+            "id": "rally",
+            "x": 3,
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+        ],
+      },
+      "5": {
+        "health": 63,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 2,
+            "s": "legion",
+          },
+          {
+            "id": "rally",
+            "x": 3,
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+        ],
+      },
+      "6": {
+        "health": 71,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 2,
+            "s": "legion",
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+        ],
+      },
+    }
+  },
   "295": {
     "id": "295",
     "name": "Thing In The Lake",
@@ -69631,45 +70922,6 @@ var MISSIONS = {
       },
       {
         "id": "6024"
-      },
-    ]
-  },
-  "1512": {
-    "id": "1512",
-    "name": "Elyse Test Campaign",
-    "commander": {
-        "id": "1"
-},
-    "deck": [
-      {
-        "id": "1000"
-      },
-      {
-        "id": "1000"
-      },
-      {
-        "id": "1000"
-      },
-      {
-        "id": "1000"
-      },
-      {
-        "id": "1000"
-      },
-      {
-        "id": "1000"
-      },
-      {
-        "id": "1000"
-      },
-      {
-        "id": "1000"
-      },
-      {
-        "id": "1000"
-      },
-      {
-        "id": "1000"
       },
     ]
   },
@@ -74055,6 +75307,7 @@ var FUSIONS = {
   "15047" : "25047",
   "15048" : "25048",
   "15049" : "25049",
+  "15050" : "25050",
   "1600" : "11600",
   "16000" : "26000",
   "16001" : "26001",
@@ -74108,6 +75361,8 @@ var FUSIONS = {
   "16045" : "26045",
   "16046" : "26046",
   "16047" : "26047",
+  "16048" : "26048",
+  "16049" : "26049",
   "1605" : "11605",
   "1606" : "11606",
   "1607" : "11607",
@@ -74180,6 +75435,8 @@ var FUSIONS = {
   "17046" : "27046",
   "17047" : "27047",
   "17048" : "27048",
+  "17049" : "27049",
+  "17050" : "27050",
   "18000" : "28000",
   "18001" : "28001",
   "18002" : "28002",
@@ -74274,6 +75531,7 @@ var FUSIONS = {
   "5047" : "15047",
   "5048" : "15048",
   "5049" : "15049",
+  "5050" : "15050",
   "6000" : "16000",
   "6001" : "16001",
   "6002" : "16002",
@@ -74322,6 +75580,8 @@ var FUSIONS = {
   "6045" : "16045",
   "6046" : "16046",
   "6047" : "16047",
+  "6048" : "16048",
+  "6049" : "16049",
   "7000" : "17000",
   "7001" : "17001",
   "7002" : "17002",
@@ -74371,6 +75631,8 @@ var FUSIONS = {
   "7046" : "17046",
   "7047" : "17047",
   "7048" : "17048",
+  "7049" : "17049",
+  "7050" : "17050",
   "8000" : "18000",
   "8001" : "18001",
   "8002" : "18002",
