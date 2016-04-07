@@ -92,7 +92,6 @@ var SIM_CONTROLLER;
             }
             getbattleground = getbattleground.join();
         }
-        surge = document.getElementById('surge').checked;
 
         // Set up battleground effects, if any
         var battlegrounds = {

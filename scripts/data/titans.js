@@ -2,7 +2,7 @@
     "1500": {
         "id": "1500",
         "name": "The Earth Trembles...",
-        "hash": "b9Fb9Fb9Fb9Gb9Gb9GptqptmptmpthpthptaptZptZptg"
+        "hash": "GD!b9Fb9Fb9Fb9Gb9Gb9GptqptmptmpthpthptaptZptZptg"
     },
     "1501": {
         "id": "1501",

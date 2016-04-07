@@ -695,7 +695,7 @@ function generate_link(autostart, autolink) {
     }
 
     d = document.getElementById('surge');
-    if (d.checked) {
+    if (d && d.checked) {
         parameters.push('surge');
     }
 
