@@ -19319,6 +19319,140 @@
     </upgrade>
   </unit>
   <unit>
+    <id>6048</id>
+    <card_type>2</card_type>
+    <name>Bulwraag</name>
+    <picture>Dino_Frog_A</picture>
+    <asset_bundle>53</asset_bundle>
+    <attack>3</attack>
+    <health>28</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="legion" x="1" />
+    <skill id="strike" x="1" all="1" />
+    <skill id="leech" x="2" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>30</health>
+      <skill id="legion" x="1" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="leech" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>32</health>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="legion" x="1" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="leech" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16048</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Bulwraag Angered</name>
+    <picture>Dino_Frog_A</picture>
+    <asset_bundle>53</asset_bundle>
+    <attack>4</attack>
+    <health>33</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="legion" x="2" />
+    <skill id="strike" x="2" all="1" />
+    <skill id="leech" x="3" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>34</health>
+      <skill id="legion" x="2" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="leech" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>35</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>36</health>
+      <skill id="legion" x="3" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="leech" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>37</health>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="legion" x="3" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="leech" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26048</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Bulwraag the Hungry</name>
+    <picture>Dino_Frog_B</picture>
+    <asset_bundle>53</asset_bundle>
+    <attack>5</attack>
+    <health>38</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="legion" x="3" />
+    <skill id="strike" x="3" all="1" />
+    <skill id="leech" x="5" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>39</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>40</health>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>41</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>42</health>
+      <skill id="legion" x="3" />
+      <skill id="strike" x="4" all="1" />
+      <skill id="leech" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="legion" x="4" />
+      <skill id="strike" x="4" all="1" />
+      <skill id="leech" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>6049</id>
     <card_type>2</card_type>
     <name>Goblin Explosioneer</name>

@@ -3966,6 +3966,1241 @@
   </mission>
   <!-- END Side Missions -->
   <!-- START Hero Upgrade Missions -->
+  <!-- Elyse -->
+  <mission>
+    <id>1512</id>
+    <name>The Road Traveled</name>
+    <player_commander>7</player_commander>
+    <!--  <commander_req>7</commander_req> -->
+    <energy>8</energy>
+    <desc>Elyse has learned a lot since her arrival in Arcantica. She sits reading her latest book when she hears a knock on the door...</desc>
+    <commander id="224" />
+    <!-- Consumed Undead-->
+    <deck>
+      <card id="5022" name="Webfoot Raider" />
+      <card id="5022" />
+      <card id="5022" />
+      <card id="7007" name="Water Serpent" />
+      <card id="7007" />
+      <card id="1315" name="Nix Elemental" />
+      <card id="1315" />
+      <card id="7045" name="Sakura" />
+      <card id="1010" mastery_level="2" name="Lightning Elemental" />
+      <card id="7021" mastery_level="2" name="Shadow Elemental" />
+      <card id="1317" mastery_level="3" name="Fire Imp" />
+      <card id="6015" mastery_level="4" name="Acidic Sludge" />
+      <card id="2005" mastery_level="5" name="Sailing Drake" />
+      <card id="6002" mastery_level="6" name="Spirit of Madness" />
+      <card id="5013" mastery_level="7" name="Radiance" />
+    </deck>
+    <speech>
+      <line>
+        <commander>groc</commander>
+        <enemy>0</enemy>
+        <text>Hey, Aria mentioned you just picked up a book on the elements. I wanted to see if-</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Yes! I just got this new book about Elemental Entanglement! It's really interesting, I think there might some useful stuff in here about The Void and-</text>
+      </line>
+      <line>
+        <commander>groc</commander>
+        <enemy>0</enemy>
+        <text>Elyse! Trust me, I know all about it. Why don't we go out and see it in action?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>1513</id>
+    <name>Field Observation</name>
+    <player_commander>7</player_commander>
+    <!-- <commander_req>7</commander_req> -->
+    <energy>8</energy>
+    <desc>Groc takes Elyse out near The Celestial Vaults. Elementals of all kinds can be seen wandering the landscape. Elyse is frantically trying to identify them with her books.</desc>
+    <commander id="203" />
+    <!-- Luminis Angel-->
+    <deck>
+      <card id="7017" name="Coral Elemental" />
+      <card id="7017" />
+      <card id="1312" name="Scythe Demon" />
+      <card id="1312" />
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="6017" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="1318" mastery_level="2" name="Smelted Lava Slug" />
+      <card id="2020" mastery_level="2" name="Tidetaken Fighter" />
+      <card id="1315" mastery_level="3" name="Nix Elemental" />
+      <card id="2009" mastery_level="4" name="Sapling" />
+      <card id="2012" mastery_level="5" name="Frogling Swarm" />
+      <card id="6013" mastery_level="6" name="Rust Goliath" />
+      <card id="6032" mastery_level="7" name="Mumohotep" />
+    </deck>
+  </mission>
+  <mission>
+    <id>1514</id>
+    <name>Real Time Training</name>
+    <player_commander>7</player_commander>
+    <!-- <commander_req>7</commander_req> -->
+    <energy>8</energy>
+    <desc>Groc moves Elyse's books aside. He asks her to focus on how the Elementals are interacting with each other.</desc>
+    <commander id="210" />
+    <!-- Lava Crab Gang-->
+    <deck>
+      <card id="1616" name="Werewarg" />
+      <card id="1616" />
+      <card id="1012" name="Cloud Sylph" />
+      <card id="1012" />
+      <card id="1012" />
+      <card id="1610" name="Ranger" />
+      <card id="2000" name="Wasteland Nomad" />
+      <card id="6020" name="Croak Piercer" />
+      <card id="7011" mastery_level="2" name="Wolf Girl" />
+      <card id="1617" mastery_level="3" name="Water Elemental" />
+      <card id="1628" mastery_level="4" name="Garganotos" />
+      <card id="1625" mastery_level="5" name="Ferocious Clawkin" />
+      <card id="7009" mastery_level="6" name="Rhino Beast" />
+      <card id="7040" mastery_level="7" name="Warden of the Leaf" />
+    </deck>
+    <speech>
+      <line>
+        <commander>groc</commander>
+        <enemy>0</enemy>
+        <text>Concentrate on present Elyse. You've read those books enough times to know what to 	expect anyhow.</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Yes, but I haven't read about that specific species! It could have significantly different 	properties than its genus!</text>
+      </line>
+      <line>
+        <commander>groc</commander>
+        <enemy>0</enemy>
+        <text>Trust what you know. No point in fretting the details unless you have to.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>1515</id>
+    <name>Action and Reaction</name>
+    <player_commander>7</player_commander>
+    <!--  <commander_req>7</commander_req> -->
+    <energy>8</energy>
+    <desc>Elyse sets her books aside. She closely watches the Elementals as they intermingle. One by one she correctly guesses how the results of their entanglement.</desc>
+    <commander id="226" />
+    <!-- Lost Lava Crab-->
+    <deck>
+      <card id="1314" name="Skeletal Hound" />
+      <card id="1314" />
+      <card id="1319" name="Wraith" />
+      <card id="1319" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="1630" name="Giant Squid" />
+      <card id="7004" name="Ice Golem" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="1313" mastery_level="2" name="Lavafrog" />
+      <card id="7020" mastery_level="2" name="Trapper Frog" />
+      <card id="1319" mastery_level="3" name="Wraith" />
+      <card id="2020" mastery_level="4" name="Tidetaken Fighter" />
+      <card id="1629" mastery_level="5" name="Rock Titan" />
+      <card id="1342" mastery_level="6" name="Ronin" />
+      <card id="6041" mastery_level="7" name="Reaper" />
+    </deck>
+  </mission>
+  <mission>
+    <id>1516</id>
+    <name>Quite Confidence</name>
+    <player_commander>7</player_commander>
+    <!-- <commander_req>7</commander_req> -->
+    <energy>8</energy>
+    <desc>Elyse smiles as she realizes all of her studying has finally paid off. For the first time she feels a great confidence in her abilities.</desc>
+    <commander id="236" />
+    <!-- Aerie Guardian -->
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5006" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1011" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1030" name="Paladin" />
+      <card id="5021" name="Tower Spirit" />
+      <card id="5004" name="Lightning Lord" />
+      <card id="1025" mastery_level="2" name="Lightbound Archer" />
+      <card id="1018" mastery_level="3" name="Armored Eagle" />
+      <card id="1026" mastery_level="4" name="Glass Colossus" />
+      <card id="2002" mastery_level="5" name="Lantern Guardian" />
+      <card id="5001" mastery_level="6" name="Aven Skypiercer" />
+      <card id="5009" mastery_level="7" name="Royal Guardian" />
+    </deck>
+  </mission>
+  <mission>
+    <id>1517</id>
+    <name>Golden Rule</name>
+    <player_commander>7</player_commander>
+    <!--  <commander_req>7</commander_req> -->
+    <energy>8</energy>
+    <desc>A Golden Elemental appears on the horizon. It makes its way towards the hillside where a Wind Elemental awaits. A frown overtakes Groc and Elyes' face.</desc>
+    <commander id="257" />
+    <!-- Golden Lava Lord  -->
+    <deck>
+      <card id="1312" name="Scythe Demon" />
+      <card id="1312" />
+      <card id="1017" name="Judgment" />
+      <card id="1017" />
+      <card id="5005" name="Storm Giant" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="6005" name="Gloomkin" />
+      <card id="2001" name="Dunetooth Demon" />
+      <card id="6016" mastery_level="2" name="Skeletal Giant" />
+      <card id="5006" mastery_level="3" name="Arms Enforcer" />
+      <card id="2012" mastery_level="4" name="Frogling Swarm" />
+      <card id="6035" mastery_level="5" name="Demos" />
+      <card id="1343" mastery_level="6" name="Firehorn" />
+      <card id="6028" mastery_level="7" name="Brahmet" />
+    </deck>
+    <speech>
+      <line>
+        <commander>groc</commander>
+        <enemy>0</enemy>
+        <text>Uhh, do you see that Gold Elemental heading toward the Wind Elemental...</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>I don't need a book to know how disastrous this will be. Maybe we should head out.</text>
+      </line>
+      <line>
+        <commander>groc</commander>
+        <enemy>0</enemy>
+        <text>Nonsense, the more disastrous the situation the more there is to learn!</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Oda -->
+  <mission>
+    <id>1518</id>
+    <name>Ocean View</name>
+    <player_commander>1</player_commander>
+    <!-- <commander_req>1</commander_req> -->
+    <energy>8</energy>
+    <desc>Oda stands on the shoreline looking at the ocean. His palms start to sweat as he thinks about the shipwreck he survived many years ago.</desc>
+    <commander id="224" />
+    <!-- Consumed Undead -->
+    <deck>
+      <card id="1317" name="Fire Imp" />
+      <card id="1317" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="6022" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" />
+      <card id="1014" />
+      <card id="1325" name="Chaos Storm" />
+      <card id="1317" mastery_level="2" name="Fire Imp" />
+      <card id="6038" mastery_level="2" name="Hemlock" />
+      <card id="1014" mastery_level="3" name="Cherub" />
+      <card id="1031" mastery_level="4" name="Noble Champion" />
+      <card id="5005" mastery_level="5" name="Storm Giant" />
+      <card id="5043" mastery_level="6" name="Empyrean" />
+      <card id="5034" mastery_level="7" name="Skyward Guardian" />
+    </deck>
+  </mission>
+  <mission>
+    <id>1519</id>
+    <name>Concerned Citizen</name>
+    <player_commander>1</player_commander>
+    <!--  <commander_req>1</commander_req> -->
+    <energy>8</energy>
+    <desc>Rayne notices Oda nervously standing on the shoreline. Concerned, she approaches.</desc>
+    <commander id="223" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" />
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5006" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="6006" />
+      <card id="2021" name="Snowstep Ranger" />
+      <card id="6010" name="Cliffpass Defender" />
+      <card id="7006" mastery_level="2" name="Treant Sapling" />
+      <card id="5025" mastery_level="2" name="Steelskin Dragon" />
+      <card id="1314" mastery_level="3" name="Skeletal Hound" />
+      <card id="5028" mastery_level="4" name="Winter Blacksmith" />
+      <card id="2004" mastery_level="5" name="Lavatail Dragon" />
+      <card id="5009" mastery_level="6" name="Royal Guardian" />
+      <card id="6045" mastery_level="7" name="Darkflame" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>Hey, you alright?</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Oh, ahh. Well the water makes me nervous, that’s all.</text>
+      </line>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>Oh really?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>1520</id>
+    <name>Exposure Therapy</name>
+    <player_commander>1</player_commander>
+    <!--  <commander_req>1</commander_req> -->
+    <energy>8</energy>
+    <desc>Rayne takes Oda closer to the shore. Tiny fish swim up to their feet as they look across the water. She encourages him to dip a toe in.</desc>
+    <commander id="200" />
+    <deck>
+      <card id="1615" name="Rune Panther" />
+      <card id="1615" />
+      <card id="1312" name="Scythe Demon" />
+      <card id="1312" />
+      <card id="1617" name="Water Elemental" />
+      <card id="1617" />
+      <card id="2031" name="Dryad" />
+      <card id="7015" name="Bog Aberration" />
+      <card id="5015" mastery_level="2" name="Gravity Swell" />
+      <card id="7017" mastery_level="3" name="Coral Elemental" />
+      <card id="2009" mastery_level="4" name="Sapling" />
+      <card id="2023" mastery_level="5" name="Grizzly Terror" />
+      <card id="7046" mastery_level="6" name="Brambleblight" />
+      <card id="7044" mastery_level="7" name="River Elemental" />
+    </deck>
+  </mission>
+  <mission>
+    <id>1521</id>
+    <name>Finding Strength</name>
+    <player_commander>1</player_commander>
+    <!-- <commander_req>1</commander_req> -->
+    <energy>8</energy>
+    <desc>Oda inches closer to the water. Now drenched in sweat, he looks back at Rayne. She smiles reassuringly.</desc>
+    <commander id="225" />
+    <deck>
+      <card id="6007" name="Goblin Crew" />
+      <card id="6007" />
+      <card id="6007" />
+      <card id="1618" name="Frog Scout" />
+      <card id="1618" />
+      <card id="1329" name="Shadow Assassin" />
+      <card id="2030" name="Ebon Duelist" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="1012" mastery_level="2" name="Cloud Sylph" />
+      <card id="1628" mastery_level="2" name="Garganotos" />
+      <card id="1616" mastery_level="3" name="Werewarg" />
+      <card id="2032" mastery_level="4" name="Brimstone" />
+      <card id="6020" mastery_level="5" name="Croak Piercer" />
+      <card id="7018" mastery_level="6" name="Frog Emperor" />
+      <card id="2013" mastery_level="7" name="Armored Toad" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Ok,ok, I'll dip one toe in.</text>
+      </line>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>Maybe a foot?</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Don't test yo- ARE YOU PUSHING ME ?! WHY!!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>1522</id>
+    <name>Dark Betrayal</name>
+    <player_commander>1</player_commander>
+    <!-- <commander_req>1</commander_req> -->
+    <energy>8</energy>
+    <desc>Oda sits waist deep in the ocean, he starts to panic. Rayne reminds him to focus on his surroundings!</desc>
+    <commander id="265" />
+    <deck>
+      <card id="1315" name="Nix Elemental" />
+      <card id="1315" />
+      <card id="1315" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="1613" />
+      <card id="1329" name="Shadow Assassin" />
+      <card id="1329" name="Shadow Assassin" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="2024" mastery_level="2" name="Dusk Noble" />
+      <card id="1613" mastery_level="3" name="Acidic Spider" />
+      <card id="6034" mastery_level="4" name="Bone Viper" />
+      <card id="2012" mastery_level="5" name="Frogling Swarm" />
+      <card id="6039" mastery_level="6" name="Auroch" />
+      <card id="6037" mastery_level="7" name="Keeper of Souls" />
+    </deck>
+  </mission>
+  <mission>
+    <id>1523</id>
+    <name>Scent in the Water</name>
+    <player_commander>1</player_commander>
+    <!-- <commander_req>1</commander_req> -->
+    <energy>8</energy>
+    <desc>Oda stands up quickly. He looks angrily at Rayne and then quickly begins to check his surroundings.</desc>
+    <commander id="268" />
+    <deck>
+      <card id="1019" name="Oracle" />
+      <card id="1019" />
+      <card id="1017" name="Judgment" />
+      <card id="1017" />
+      <card id="5035" name="Vapor Guard" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="6044" name="Firewalker" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="5021" name="Tower Spirit" />
+      <card id="5012" name="Static Drake" />
+      <card id="2032" name="Brimstone" />
+      <card id="6035" name="Demos" />
+      <card id="2015" mastery_level="6" name="Pumpking" />
+      <card id="5000" mastery_level="7" name="Azure Sphinx" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>It's not water that frightens me, it the serpent that took down my boat! He has been hunting me ever since.</text>
+      </line>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>Huh...a serpent you say. Is it an undead serpent by chance? Maybe 40 feet tall? </text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Don't tell me...</text>
+      </line>
+      <line>
+        <commander>undeadsnake</commander>
+        <enemy>1</enemy>
+        <text>Finally I found you! I have been waiting for your scent Oda...</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Aria -->
+  <mission>
+    <id>1524</id>
+    <name>What Ails</name>
+    <player_commander>4</player_commander>
+    <!-- <commander_req>4</commander_req> -->
+    <energy>8</energy>
+    <desc>Aria stands in front of a mirror. The veins on her arms have begun to glow a faint purple. She worries that the infection she suffered from the void has resurfaced.</desc>
+    <commander id="223" />
+    <deck>
+      <card id="1015" name="Windfrog" />
+      <card id="1015" />
+      <card id="1015" />
+      <card id="1616" name="Werewarg" />
+      <card id="1616" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" />
+      <card id="7016" name="Webfist Shaman" />
+      <card id="1015" mastery_level="2" name="Windfrog" />
+      <card id="2011" mastery_level="2" name="Poliworg" />
+      <card id="1619" mastery_level="3" name="Earth Elemental" />
+      <card id="7020" mastery_level="4" name="Trapper Frog" />
+      <card id="7038" mastery_level="5" name="Sol King" />
+      <card id="7027" mastery_level="6" name="Kitsune" />
+      <card id="5018" mastery_level="7" name="Grand Knight Frog" />
+    </deck>
+  </mission>
+  <mission>
+    <id>1525</id>
+    <name>Showing Symptoms</name>
+    <player_commander>4</player_commander>
+    <!-- <commander_req>4</commander_req> -->
+    <energy>8</energy>
+    <desc>Tarian notices the marks on her arms as she passes by him on the air ship. He has these symptoms before.</desc>
+    <commander id="200" />
+    <deck>
+      <card id="5017" name="Steam Tempest" />
+      <card id="5017" />
+      <card id="5017" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1011" />
+      <card id="7007" name="Water Serpent" />
+      <card id="6015" name="Acidic Sludge" />
+      <card id="7021" name="Shadow Elemental" />
+      <card id="5017" mastery_level="2" name="Steam Tempest" />
+      <card id="7005" mastery_level="2" name="Tsunamari" />
+      <card id="1014" mastery_level="3" name="Cherub" />
+      <card id="7045" mastery_level="4" name="Sakura" />
+      <card id="7021" mastery_level="5" name="Shadow Elemental" />
+      <card id="6043" mastery_level="6" name="Sandstorm" />
+      <card id="2022" mastery_level="7" name="Avalanche Equine" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>Aria, your arm! Are you feeling ok? You are showing signs of a void sickness.</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Oh...uh yes. I'm fine. My arm hurts a bit but the infection doesn't seem to be spreading.</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>Come with me, I picked up something from when I was in the Center of The Void that 	may help you.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>1526</id>
+    <name>Salt Side Laboratory</name>
+    <player_commander>4</player_commander>
+    <!--  <commander_req>4</commander_req> -->
+    <energy>8</energy>
+    <desc>Tarian takes Aria to a small building on the outskirts of The Salt Wastes. Its filled to the brim with lab equipment. Seems to be one of Malchior's laboratories.</desc>
+    <commander id="210" />
+    <deck>
+      <card id="6012" name="Ember Drake" />
+      <card id="6012" />
+      <card id="6012" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="1017" name="Judgment" />
+      <card id="1017" />
+      <card id="2003" name="Dragon Tamer" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="5024" mastery_level="2" name="Cloudtop Dragon" />
+      <card id="1615" mastery_level="3" name="Rune Panther" />
+      <card id="1628" mastery_level="4" name="Garganotos" />
+      <card id="6025" mastery_level="5" name="Dragon Keeper" />
+      <card id="6024" mastery_level="6" name="Bane Dragon" />
+      <card id="5039" mastery_level="7" name="Ethereal Knight" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Malchior lets you have access to his laboratory?</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>We have been working together since coming back from the Center of The Void. The scientist there was engineering a flower to help with the outbreak.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>1527</id>
+    <name>Flower for the Lady</name>
+    <player_commander>4</player_commander>
+    <!-- <commander_req>4</commander_req> -->
+    <energy>8</energy>
+    <desc>Tarian takes one of the Black Flowers from the lab. He begins to grind and distill the herb into a potion that may cure Aria of The Void infection for good.</desc>
+    <commander id="205" />
+    <deck>
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1311" />
+      <card id="1311" />
+      <card id="1019" name="Oracle" />
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1632" name="Shadow Rider" />
+      <card id="2025" name="Blight Knight" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="1012" mastery_level="2" name="Cloud Sylph" />
+      <card id="1028" mastery_level="2" name="Heroic Frog" />
+      <card id="1314" mastery_level="3" name="Skeletal Hound" />
+      <card id="6029" mastery_level="4" name="Spinehead Stalker" />
+      <card id="7005" mastery_level="5" name="Tsunamari" />
+      <card id="7033" mastery_level="6" name="Treebond Skull" />
+      <card id="5031" mastery_level="7" name="Frostlance Valkyrie" />
+    </deck>
+  </mission>
+  <mission>
+    <id>1528</id>
+    <name>Building Burdens</name>
+    <player_commander>4</player_commander>
+    <!-- <commander_req>4</commander_req> -->
+    <energy>8</energy>
+    <desc>The potion needs a few hours to settle. Tarian looks up at Aria who is beginning to look nervous. He offers what comfort he can as they wait.</desc>
+    <commander id="232" />
+    <deck>
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="1318" />
+      <card id="7006" name="Treant Sapling" />
+      <card id="7006" />
+      <card id="5017" name="Steam Tempest" />
+      <card id="2027" name="Halo Mage" />
+      <card id="2029" name="Sly Critters" />
+      <card id="5040" name="Winged Trumpeter" />
+      <card id="7041" mastery_level="2" name="Feral Angel" />
+      <card id="5007" mastery_level="3" name="Arcane Scroll" />
+      <card id="2032" mastery_level="4" name="Brimstone" />
+      <card id="6038" mastery_level="5" name="Hemlock" />
+      <card id="2028" mastery_level="6" name="Infinity" />
+      <card id="5019" mastery_level="7" name="Vivid Aurora" />
+    </deck>
+  </mission>
+  <mission>
+    <id>1529</id>
+    <name>Bottoms Up</name>
+    <player_commander>4</player_commander>
+    <!-- <commander_req>4</commander_req> -->
+    <energy>8</energy>
+    <desc>The potion is now block and opaque. Tarian serves it in a cup and hands it to Aria.</desc>
+    <commander id="252" />
+    <deck>
+      <card id="7022" name="Beetle Tamer" />
+      <card id="7022" />
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="6017" />
+      <card id="2012" name="Frogling Swarm" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="6046" name="Celerity" />
+      <card id="5046" name="Dawn" />
+      <card id="1032" mastery_level="2" name="Lunar Elemental" />
+      <card id="6022" mastery_level="3" name="Illusion Caster" />
+      <card id="6042" mastery_level="4" name="Shadow of Thunder" />
+      <card id="1043" mastery_level="5" name="Lilypad Bard" />
+      <card id="6018" mastery_level="6" name="Underwater Lasher" />
+      <card id="5049" mastery_level="7" name="Joryl" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>So...you are sure this will get rid of the infection?  How safe is this?</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>We have it tested on mice and none of them died...so you'll probably be fine! Though they did appear to suffer from mild hallucinations.</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Oh lords, well here goes nothing I guess.</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Decim -->
+  <mission>
+    <id>1530</id>
+    <name>Making Amends</name>
+    <player_commander>5</player_commander>
+    <!-- <commander_req>5</commander_req> -->
+    <energy>10</energy>
+    <desc>Decim sit on the outskirts Luminis. Luminis has banished him for setting fire to a few stores when he didn't have control over his powers.  He has returned with Groc to make amends.</desc>
+    <commander id="208" />
+    <deck>
+      <card id="7006" name="Treant Sapling" />
+      <card id="7006" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="6006" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="1613" />
+      <card id="1613" />
+      <card id="2019" name="Chalistomper" />
+      <card id="1314" mastery_level="2" name="Skeletal Hound" />
+      <card id="7034" mastery_level="2" name="Spore Elk" />
+      <card id="7006" mastery_level="3" name="Treant Sapling" />
+      <card id="2031" mastery_level="4" name="Dryad" />
+      <card id="7011" mastery_level="5" name="Wolf Girl" />
+      <card id="7027" mastery_level="6" name="Kitsune" />
+      <card id="7043" mastery_level="7" name="Anima" />
+    </deck>
+    <speech>
+      <line>
+        <commander>groc</commander>
+        <enemy>0</enemy>
+        <text>Are you ready? I told Samael we would be arriving soon.</text>
+      </line>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>I..I am nervous. How could they ever forgive me for the damage I have done?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>1531</id>
+    <name>Onward</name>
+    <player_commander>5</player_commander>
+    <!-- <commander_req>5</commander_req> -->
+    <energy>10</energy>
+    <desc>Decim takes a deep breath. He does not want to make the wrong impression by being late with their meeting with Samael.</desc>
+    <commander id="290" />
+    <deck>
+      <card id="1312" name="Scythe Demon" />
+      <card id="1312" />
+      <card id="1312" />
+      <card id="5007" name="Arcane Scroll" />
+      <card id="5007" />
+      <card id="5007" />
+      <card id="6021" name="Marsh Ogre" />
+      <card id="5041" name="Skylance Raiders" />
+      <card id="6007" mastery_level="2" name="Goblin Crew" />
+      <card id="5044" mastery_level="2" name="Telepathic Magi" />
+      <card id="1019" mastery_level="3" name="Oracle" />
+      <card id="6021" mastery_level="4" name="Marsh Ogre" />
+      <card id="1329" mastery_level="5" name="Shadow Assassin" />
+      <card id="6030" mastery_level="6" name="Noveria Yeti" />
+      <card id="5047" mastery_level="7" name="Sky Fisher" />
+    </deck>
+  </mission>
+  <mission>
+    <id>1532</id>
+    <name>In the Shadows</name>
+    <player_commander>5</player_commander>
+    <!-- <commander_req>5</commander_req> -->
+    <energy>10</energy>
+    <desc>Decim and Groc use the side streets and alleyways to make their way to Samael's palace. They manage to make their way without bringing too much attention to themselves.</desc>
+    <commander id="227" />
+    <deck>
+      <card id="1619" name="Earth Elemental" />
+      <card id="1619" />
+      <card id="1015" name="Windfrog" />
+      <card id="1015" />
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5006" />
+      <card id="2009" name="Sapling" />
+      <card id="7016" name="Webfist Shaman" />
+      <card id="2023" mastery_level="2" name="Grizzly Terror" />
+      <card id="1015" mastery_level="3" name="Windfrog" />
+      <card id="2014" mastery_level="4" name="Tadpole Warmage" />
+      <card id="6046" mastery_level="5" name="Celerity" />
+      <card id="5018" mastery_level="6" name="Grand Knight Frog" />
+      <card id="6013" mastery_level="7" name="Rust Goliath" />
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>Decim I understand you want to make amends to my people, but to be frank, they are afraid of you...</text>
+      </line>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>I understand, but let me prove myself to the people! Is there anything I can do for your city?!</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>Hmm, well there may be something. There is a crazed old sorceress on the outskirts of the city. She has been causing trouble for some of the farmers.  If you deal with her it may help you.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>1533</id>
+    <name>To the Sorceress</name>
+    <player_commander>5</player_commander>
+    <!-- <commander_req>5</commander_req> -->
+    <energy>10</energy>
+    <desc>Decim takes a deep breath. He and Groc sneak off to the outskirts of Luminis. They look for signs of the sorceress.</desc>
+    <commander id="267" />
+    <deck>
+      <card id="5012" name="Static Drake" />
+      <card id="5012" />
+      <card id="5012" />
+      <card id="1315" name="Nix Elemental" />
+      <card id="1315" />
+      <card id="2005" name="Sailing Drake" />
+      <card id="2005" name="Sailing Drake" />
+      <card id="5024" name="Cloudtop Dragon" />
+      <card id="1017" mastery_level="2" name="Judgment" />
+      <card id="6015" mastery_level="2" name="Acidic Sludge" />
+      <card id="1019" mastery_level="3" name="Oracle" />
+      <card id="7045" mastery_level="4" name="Sakura" />
+      <card id="5025" mastery_level="5" name="Steelskin Dragon" />
+      <card id="7008" mastery_level="6" name="Rock Dragon" />
+      <card id="6047" mastery_level="7" name="Wither" />
+    </deck>
+  </mission>
+  <mission>
+    <id>1534</id>
+    <name>Cave Dwelling</name>
+    <player_commander>5</player_commander>
+    <!-- <commander_req>5</commander_req> -->
+    <energy>10</energy>
+    <desc>They stand on the hills outside of Luminis looking for signs of the sorceress. Groc spots a cave not too far off. Seems like it's the best bet to finding this sorceress.</desc>
+    <commander id="293" />
+    <deck>
+      <card id="1315" name="Nix Elemental" />
+      <card id="1315" />
+      <card id="1315" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="1613" />
+      <card id="1613" />
+      <card id="2027" name="Halo Mage" />
+      <card id="2025" name="Blight Knight" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="2024" mastery_level="2" name="Dusk Noble" />
+      <card id="1014" mastery_level="3" name="Cherub" />
+      <card id="5040" mastery_level="4" name="Winged Trumpeter" />
+      <card id="2020" mastery_level="5" name="Tidetaken Fighter" />
+      <card id="6019" mastery_level="6" name="Canopy Horror" />
+      <card id="5031" mastery_level="7" name="Frostlance Valkyrie" />
+    </deck>
+  </mission>
+  <mission>
+    <id>1535</id>
+    <name>Outsider to Outsider</name>
+    <player_commander>5</player_commander>
+    <!-- <commander_req>5</commander_req> -->
+    <energy>10</energy>
+    <desc>They cautiously enter the cave. Groc calls out to any occupants in the cave. No response. As they continue to explore they see a faint light ahead of them...</desc>
+    <commander id="271" />
+    <deck>
+      <card id="6022" name="Illusion Caster" />
+      <card id="6022" />
+      <card id="5017" name="Steam Tempest" />
+      <card id="5017" />
+      <card id="6036" name="Cursed Ogre" />
+      <card id="6034" name="Bone Viper" />
+      <card id="5020" name="Frost Frog" />
+      <card id="5005" mastery_level="2" name="Storm Giant" />
+      <card id="6022" mastery_level="3" name="Illusion Caster" />
+      <card id="2023" mastery_level="4" name="Grizzly Terror" />
+      <card id="1343" mastery_level="5" name="Firehorn" />
+      <card id="7044" mastery_level="6" name="River Elemental" />
+      <card id="6009" mastery_level="7" name="Siphon Dragon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>Hello?</text>
+      </line>
+      <line>
+        <commander>madscientist</commander>
+        <enemy>1</enemy>
+        <text>Ahh, more Luminis guards barging into my home...</text>
+      </line>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>We didn't mean to trespass, we just want to tal-</text>
+      </line>
+      <line>
+        <commander>madscientist</commander>
+        <enemy>1</enemy>
+        <text>SILENCE. I will not be taken away from my home!</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Yuriel -->
+  <mission>
+    <id>1536</id>
+    <name>Bookworm</name>
+    <player_commander>2</player_commander>
+    <!--  <commander_req>2</commander_req> -->
+    <energy>10</energy>
+    <desc>Yuriel wanders the markets of Luminis. He makes his way to his favorite vendor, a rare book seller.</desc>
+    <commander id="246" />
+    <deck>
+      <card id="1014" name="Cherub" />
+      <card id="1014" />
+      <card id="1014" />
+      <card id="5017" name="Steam Tempest" />
+      <card id="5017" />
+      <card id="5017" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="2023" name="Grizzly Terror" />
+      <card id="5017" mastery_level="2" name="Steam Tempest" />
+      <card id="6046" mastery_level="2" name="Celerity" />
+      <card id="1014" mastery_level="3" name="Cherub" />
+      <card id="2029" mastery_level="4" name="Sly Critters" />
+      <card id="2009" mastery_level="5" name="Sapling" />
+      <card id="6035" mastery_level="6" name="Demos" />
+      <card id="6024" mastery_level="7" name="Bane Dragon" />
+    </deck>
+  </mission>
+  <mission>
+    <id>1537</id>
+    <name>Dark Presence</name>
+    <player_commander>2</player_commander>
+    <!--  <commander_req>2</commander_req> -->
+    <energy>10</energy>
+    <desc>As Yuriel browses the vendor's wares he notices an unusual patron in the shop, a large goblin with a glowing fist. He suspects he is a follower of Chaos magic...</desc>
+    <commander id="238" />
+    <deck>
+      <card id="1017" name="Judgment" />
+      <card id="1017" />
+      <card id="1015" name="Windfrog" />
+      <card id="1015" />
+      <card id="1015" />
+      <card id="1019" name="Oracle" />
+      <card id="1019" />
+      <card id="5020" name="Frost Frog" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="1017" mastery_level="2" name="Judgment" />
+      <card id="1028" mastery_level="2" name="Heroic Frog" />
+      <card id="5012" mastery_level="3" name="Static Drake" />
+      <card id="7004" mastery_level="4" name="Ice Golem" />
+      <card id="7029" mastery_level="5" name="Owl Griffin" />
+      <card id="7028" mastery_level="6" name="Frozen Tide" />
+      <card id="1043" mastery_level="7" name="Lilypad Bard" />
+    </deck>
+    <speech>
+      <line>
+        <commander>orchero</commander>
+        <enemy>1</enemy>
+        <text>See someth'en funny owl?</text>
+      </line>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>Your hand...you  are a follower of Chaos magic. Do you know where your are Goblin?	We do not take kind to the dark arts here.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>1538</id>
+    <name>Tattle Tale</name>
+    <player_commander>2</player_commander>
+    <!-- <commander_req>2</commander_req> -->
+    <energy>10</energy>
+    <desc>Yuriel turns to inform the guards of the intruder. Before he can leave the goblin blocks his path...</desc>
+    <commander id="227" />
+    <deck>
+      <card id="7017" name="Coral Elemental" />
+      <card id="7017" />
+      <card id="1617" name="Water Elemental" />
+      <card id="1315" name="Nix Elemental" />
+      <card id="1315" />
+      <card id="1315" />
+      <card id="5046" name="Dawn" />
+      <card id="6021" name="Marsh Ogre" />
+      <card id="5033" mastery_level="2" name="Lost Soul" />
+      <card id="1315" mastery_level="3" name="Nix Elemental" />
+      <card id="7021" mastery_level="4" name="Shadow Elemental" />
+      <card id="2032" mastery_level="5" name="Brimstone" />
+      <card id="5048" mastery_level="6" name="Highborn Rose" />
+      <card id="6013" mastery_level="7" name="Rust Goliath" />
+    </deck>
+    <speech>
+      <line>
+        <commander>orchero</commander>
+        <enemy>1</enemy>
+        <text>Woah there, no need to get the guard involved here. I have no problem with the Aether, 	we just came for supplies.</text>
+      </line>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>Out of my way goblin. You are not welcome in this city.</text>
+      </line>
+      <line>
+        <commander>orchero</commander>
+        <enemy>1</enemy>
+        <text>Why don't we settle our differences with a little game?  Unless you are afraid of being trick by a wicked Chaos user?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>1539</id>
+    <name>Smooth Introduction</name>
+    <player_commander>2</player_commander>
+    <!-- <commander_req>2</commander_req> -->
+    <energy>10</energy>
+    <desc>The Goblin introduces himself as Orgoth. He leads Yuriel to an open table in the middle of the market. He lays down a deck of cards and some chips.</desc>
+    <commander id="266" />
+    <deck>
+      <card id="7012" name="Life Drake" />
+      <card id="7012" />
+      <card id="1614" name="Druid" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="7017" />
+      <card id="7045" name="Sakura" />
+      <card id="7021" name="Shadow Elemental" />
+      <card id="7034" name="Spore Elk" />
+      <card id="1617" mastery_level="2" name="Water Elemental" />
+      <card id="7005" mastery_level="2" name="Tsunamari" />
+      <card id="5007" mastery_level="3" name="Arcane Scroll" />
+      <card id="7035" mastery_level="4" name="Carrion Tiger" />
+      <card id="1329" mastery_level="5" name="Shadow Assassin" />
+      <card id="1641" mastery_level="6" name="Rhythm of the Wyld" />
+      <card id="6047" mastery_level="7" name="Wither" />
+    </deck>
+  </mission>
+  <mission>
+    <id>1540</id>
+    <name>Territory Control</name>
+    <player_commander>2</player_commander>
+    <!-- <commander_req>2</commander_req> -->
+    <energy>10</energy>
+    <desc>Orgoth suggests they play a well known card game in Luminis. He promises to leave should Yuriel be able to defeat him.</desc>
+    <commander id="243" />
+    <deck>
+      <card id="1012" name="Cloud Sylph" />
+      <card id="1012" />
+      <card id="1012" />
+      <card id="1618" name="Frog Scout" />
+      <card id="1618" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="7024" name="Woolmane Dragon " />
+      <card id="2020" mastery_level="2" name="Tidetaken Fighter" />
+      <card id="1616" mastery_level="3" name="Werewarg" />
+      <card id="5035" mastery_level="4" name="Vapor Guard" />
+      <card id="5020" mastery_level="5" name="Frost Frog" />
+      <card id="5034" mastery_level="6" name="Skyward Guardian" />
+      <card id="7018" mastery_level="7" name="Frog Emperor" />
+    </deck>
+  </mission>
+  <mission>
+    <id>1541</id>
+    <name>Winning Hand</name>
+    <player_commander>2</player_commander>
+    <!-- <commander_req>2</commander_req> -->
+    <energy>10</energy>
+    <desc>As they play Orgoth shares tales of his adventures in the Salt Wastes. They swap a few stories when Yuriel finds himself with the winning hand of the game.</desc>
+    <commander id="264" />
+    <!-- Vapor Hunters -->
+    <deck>
+      <card id="1618" name="Frog Scout" />
+      <card id="1618" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1311" />
+      <card id="2019" name="Chalistomper" />
+      <card id="2020" name="Tidetaken Fighter" />
+      <card id="1332" name="Vampiric Emira" />
+      <card id="7035" name="Carrion Tiger" />
+      <card id="1331" mastery_level="2" name="Fallen Soldiers" />
+      <card id="5022" mastery_level="3" name="Webfoot Raider" />
+      <card id="7020" mastery_level="4" name="Trapper Frog" />
+      <card id="7023" mastery_level="5" name="Zolmosh the Fist" />
+      <card id="6028" mastery_level="6" name="Brahmet" />
+      <card id="6045" mastery_level="7" name="Darkflame" />
+    </deck>
+    <speech>
+      <line>
+        <commander>winteradventurers</commander>
+        <enemy>1</enemy>
+        <text>Yuriel, ahh...you are keeping some rather interesting company this evening. Has he overstayed his welcome?</text>
+      </line>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>Oh, we were just playing a game to see if he could get some supplies. It appears he has bested me this game. He is free to roam the markets.</text>
+      </line>
+      <line>
+        <commander>winteradventurers</commander>
+        <enemy>1</enemy>
+        <text>Surely you do not intend to let this beast walk around the markets? We can just escort hi-</text>
+      </line>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>I said let him go!</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Ursurio -->
+  <mission>
+    <id>1542</id>
+    <name>Guard Duty</name>
+    <player_commander>8</player_commander>
+    <!-- <commander_req>8</commander_req> -->
+    <energy>10</energy>
+    <desc>Ursurio sits at his command post on the outskirts of The Void. He sits, watching the horizon for any sign of danger.</desc>
+    <commander id="211" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6007" />
+      <card id="1017" name="Judgment" />
+      <card id="1017" />
+      <card id="1017" />
+      <card id="5011" name="Sky Whale" />
+      <card id="5012" mastery_level="2" name="Static Drake" />
+      <card id="1025" mastery_level="2" name="Lightbound Archer" />
+      <card id="1018" mastery_level="3" name="Armored Eagle" />
+      <card id="6005" mastery_level="4" name="Gloomkin" />
+      <card id="6016" mastery_level="5" name="Skeletal Giant" />
+      <card id="6032" mastery_level="6" name="Mumohotep" />
+      <card id="6039" mastery_level="7" name="Auroch" />
+    </deck>
+  </mission>
+  <mission>
+    <id>1543</id>
+    <name>Idle Hands</name>
+    <player_commander>8</player_commander>
+    <!-- <commander_req>8</commander_req> -->
+    <energy>10</energy>
+    <desc>A retired soldier enters his post. Ursurio is happy to see a familiar face. He invites Ol'Cedric in for a drink.</desc>
+    <commander id="206" />
+    <deck>
+      <card id="1313" name="Lavafrog" />
+      <card id="1313" />
+      <card id="1010" name="Lightning Elemental" />
+      <card id="1010" />
+      <card id="1010" />
+      <card id="1312" name="Scythe Demon" />
+      <card id="5030" name="Loxphas Mage" />
+      <card id="5046" name="Dawn" />
+      <card id="5022" mastery_level="2" name="Webfoot Raider" />
+      <card id="2032" mastery_level="2" name="Brimstone" />
+      <card id="1317" mastery_level="3" name="Fire Imp" />
+      <card id="5005" mastery_level="4" name="Storm Giant" />
+      <card id="5030" mastery_level="5" name="Loxphas Mage" />
+      <card id="2028" mastery_level="6" name="Infinity" />
+      <card id="6040" mastery_level="7" name="Scorching Cutlass" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Always nice to have you drop by Cedric. What's the occasion?</text>
+      </line>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>A small group of ghouls has been spotted a mile out. Nothing the foot soldiers couldn't handle, but I thought we could have some fun.</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>You are my kind or frog Cedric. Why don't we make it a competition?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>1544</id>
+    <name>Enemy Spotted</name>
+    <player_commander>8</player_commander>
+    <!-- <commander_req>8</commander_req> -->
+    <energy>10</energy>
+    <desc>Ursurio and Cedric head to the location of the ghouls. They spot them just behind some brush on the horizon.</desc>
+    <commander id="277" />
+    <deck>
+      <card id="1315" name="Nix Elemental" />
+      <card id="1315" />
+      <card id="1315" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="1613" />
+      <card id="1613" />
+      <card id="1631" name="Venom Dragon" />
+      <card id="7038" name="Sol King" />
+      <card id="7047" mastery_level="2" name="Shaman of the Wild" />
+      <card id="1315" mastery_level="3" name="Nix Elemental" />
+      <card id="7004" mastery_level="4" name="Ice Golem" />
+      <card id="1629" mastery_level="5" name="Rock Titan" />
+      <card id="7039" mastery_level="6" name="Winged Giant" />
+      <card id="7048" mastery_level="7" name="Bogskull Widow" />
+    </deck>
+  </mission>
+  <mission>
+    <id>1545</id>
+    <name>Minced Meat</name>
+    <player_commander>8</player_commander>
+    <!-- <commander_req>8</commander_req> -->
+    <energy>10</energy>
+    <desc>Ursurio and Cedric easily sneak up behind the ghouls. They make quick work of them as more waves approach.</desc>
+    <commander id="289" />
+    <deck>
+      <card id="6012" name="Ember Drake" />
+      <card id="6012" />
+      <card id="1317" name="Fire Imp" />
+      <card id="1317" />
+      <card id="1313" name="Lavafrog" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="1325" name="Chaos Storm" />
+      <card id="6031" name="Iceblood Assassin" />
+      <card id="2000" mastery_level="2" name="Wasteland Nomad" />
+      <card id="6011" mastery_level="2" name="Bomb Spirit" />
+      <card id="7006" mastery_level="3" name="Treant Sapling" />
+      <card id="6042" mastery_level="4" name="Shadow of Thunder" />
+      <card id="6038" mastery_level="5" name="Hemlock" />
+      <card id="6041" mastery_level="6" name="Reaper" />
+      <card id="6001" mastery_level="7" name="Orobas" />
+    </deck>
+  </mission>
+  <mission>
+    <id>1546</id>
+    <name>Pangs of War</name>
+    <player_commander>8</player_commander>
+    <!--  <commander_req>8</commander_req> -->
+    <energy>10</energy>
+    <desc>The ghouls were easily dealt with. Ursurio takes a breather when he hears a loud grumbling sound.</desc>
+    <commander id="268" />
+    <deck>
+      <card id="7007" name="Water Serpent" />
+      <card id="7007" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="1613" />
+      <card id="1614" name="Druid" />
+      <card id="1626" name="Tusker" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="7035" name="Carrion Tiger" />
+      <card id="1015" mastery_level="2" name="Windfrog" />
+      <card id="1629" mastery_level="2" name="Rock Titan" />
+      <card id="5012" mastery_level="3" name="Static Drake" />
+      <card id="1329" mastery_level="4" name="Shadow Assassin" />
+      <card id="7005" mastery_level="5" name="Tsunamari" />
+      <card id="7040" mastery_level="6" name="Warden of the Leaf" />
+      <card id="5013" mastery_level="7" name="Radiance" />
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>What on earth was that noise?</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Oh..err that was my stomach. Dealing with all those ghouls has worked up my appetite. </text>
+      </line>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>Well I think I won our little competition. Though I think I know a game you might be able to stand a chance in...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>1547</id>
+    <name>Iron Stomach</name>
+    <player_commander>8</player_commander>
+    <!-- <commander_req>8</commander_req> -->
+    <energy>10</energy>
+    <desc>Cedric takes Ursurio to the camp's kitchen. They are right in time for dinner!</desc>
+    <commander id="268" />
+    <deck>
+      <card id="1012" name="Cloud Sylph" />
+      <card id="1012" />
+      <card id="1617" name="Water Elemental" />
+      <card id="1617" />
+      <card id="1032" name="Lunar Elemental" />
+      <card id="5041" name="Skylance Raiders" />
+      <card id="5046" name="Dawn" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="2010" mastery_level="2" name="Silver Wind" />
+      <card id="1012" mastery_level="3" name="Cloud Sylph" />
+      <card id="5028" mastery_level="4" name="Winter Blacksmith" />
+      <card id="2007" mastery_level="5" name="Platinum Golem" />
+      <card id="5018" mastery_level="5" name="Grand Knight Frog" />
+      <card id="7013" mastery_level="6" name="Gold Elemental" />
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>Just in time for dinner. Think you can best me in an eating contest Ursurio?</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Oh Cedric, you have to learn to pick your battles wisely!</text>
+      </line>
+    </speech>
+  </mission>
   <!-- END Hero Upgrade Missions -->
   <!-- Rival Mission Nodes START -->
   <!-- Starts at 2001 -->
