@@ -70,8 +70,8 @@
   </feature_lock>
   <feature_lock>
     <id>mythic</id>
-    <mission_req>11</mission_req>
-    <!-- -1 -->
+    <mission_req>-1</mission_req>
+    <!-- 11 -->
   </feature_lock>
   <feature_lock>
     <id>blackmarket</id>
@@ -80,7 +80,7 @@
   </feature_lock>
   <feature_lock>
     <id>heroupgrades</id>
-    <mission_req>-1</mission_req>
+    <mission_req>11</mission_req>
     <!-- -1 -->
   </feature_lock>
   <!-- MISSIONS BEGIN -->
@@ -3973,7 +3973,7 @@
     <player_commander>7</player_commander>
     <!--  <commander_req>7</commander_req> -->
     <energy>8</energy>
-    <desc>Elyse has learned a lot since her arrival in Arcantica. She sits reading her latest book when she hears a knock on the door...</desc>
+    <desc>Elyse has learned a lot since her arrival in Arcantica. She sits reading her latest book when she hears a knock on the door... (Elyse will automatically be appointed)</desc>
     <commander id="224" />
     <!-- Consumed Undead-->
     <deck>
@@ -4017,7 +4017,7 @@
     <player_commander>7</player_commander>
     <!-- <commander_req>7</commander_req> -->
     <energy>8</energy>
-    <desc>Groc takes Elyse out near The Celestial Vaults. Elementals of all kinds can be seen wandering the landscape. Elyse is frantically trying to identify them with her books.</desc>
+    <desc>Groc takes Elyse out near The Celestial Vaults. Elementals of all kinds can be seen wandering the landscape. Elyse is frantically trying to identify them with her books. (Elyse will automatically be appointed)</desc>
     <commander id="203" />
     <!-- Luminis Angel-->
     <deck>
@@ -4044,7 +4044,7 @@
     <player_commander>7</player_commander>
     <!-- <commander_req>7</commander_req> -->
     <energy>8</energy>
-    <desc>Groc moves Elyse's books aside. He asks her to focus on how the Elementals are interacting with each other.</desc>
+    <desc>Groc moves Elyse's books aside. He asks her to focus on how the Elementals are interacting with each other. (Elyse will automatically be appointed)</desc>
     <commander id="210" />
     <!-- Lava Crab Gang-->
     <deck>
@@ -4087,7 +4087,7 @@
     <player_commander>7</player_commander>
     <!--  <commander_req>7</commander_req> -->
     <energy>8</energy>
-    <desc>Elyse sets her books aside. She closely watches the Elementals as they intermingle. One by one she correctly guesses how the results of their entanglement.</desc>
+    <desc>Elyse sets her books aside. She closely watches the Elementals as they intermingle. One by one she correctly guesses how the results of their entanglement. (Elyse will automatically be appointed)</desc>
     <commander id="226" />
     <!-- Lost Lava Crab-->
     <deck>
@@ -4114,9 +4114,9 @@
     <player_commander>7</player_commander>
     <!-- <commander_req>7</commander_req> -->
     <energy>8</energy>
-    <desc>Elyse smiles as she realizes all of her studying has finally paid off. For the first time she feels a great confidence in her abilities.</desc>
-    <commander id="236" />
-    <!-- Aerie Guardian -->
+    <desc>Elyse smiles as she realizes all of her studying has finally paid off. For the first time she feels a great confidence in her abilities. (Elyse will automatically be appointed)</desc>
+    <commander id="238" />
+    <!-- Lantern Guardian -->
     <deck>
       <card id="5006" name="Arms Enforcer" />
       <card id="5006" />
@@ -4140,9 +4140,9 @@
     <player_commander>7</player_commander>
     <!--  <commander_req>7</commander_req> -->
     <energy>8</energy>
-    <desc>A Golden Elemental appears on the horizon. It makes its way towards the hillside where a Wind Elemental awaits. A frown overtakes Groc and Elyes' face.</desc>
-    <commander id="257" />
-    <!-- Golden Lava Lord  -->
+    <desc>A Golden Elemental appears on the horizon. It makes its way towards the hillside where a Wind Elemental awaits. A frown overtakes Groc and Elyes' face. (Elyse will automatically be appointed)</desc>
+    <commander id="243" />
+    <!-- Windstorm Avatar  -->
     <deck>
       <card id="1312" name="Scythe Demon" />
       <card id="1312" />
@@ -4184,7 +4184,7 @@
     <player_commander>1</player_commander>
     <!-- <commander_req>1</commander_req> -->
     <energy>8</energy>
-    <desc>Oda stands on the shoreline looking at the ocean. His palms start to sweat as he thinks about the shipwreck he survived many years ago.</desc>
+    <desc>Oda stands on the shoreline looking at the ocean. His palms start to sweat as he thinks about the shipwreck he survived many years ago. (Oda will automatically be appointed)</desc>
     <commander id="224" />
     <!-- Consumed Undead -->
     <deck>
@@ -4211,7 +4211,7 @@
     <player_commander>1</player_commander>
     <!--  <commander_req>1</commander_req> -->
     <energy>8</energy>
-    <desc>Rayne notices Oda nervously standing on the shoreline. Concerned, she approaches.</desc>
+    <desc>Rayne notices Oda nervously standing on the shoreline. Concerned, she approaches. (Oda will automatically be appointed)</desc>
     <commander id="223" />
     <deck>
       <card id="1018" name="Armored Eagle" />
@@ -4254,7 +4254,7 @@
     <player_commander>1</player_commander>
     <!--  <commander_req>1</commander_req> -->
     <energy>8</energy>
-    <desc>Rayne takes Oda closer to the shore. Tiny fish swim up to their feet as they look across the water. She encourages him to dip a toe in.</desc>
+    <desc>Rayne takes Oda closer to the shore. Tiny fish swim up to their feet as they look across the water. She encourages him to dip a toe in. (Oda will automatically be appointed)</desc>
     <commander id="200" />
     <deck>
       <card id="1615" name="Rune Panther" />
@@ -4279,7 +4279,7 @@
     <player_commander>1</player_commander>
     <!-- <commander_req>1</commander_req> -->
     <energy>8</energy>
-    <desc>Oda inches closer to the water. Now drenched in sweat, he looks back at Rayne. She smiles reassuringly.</desc>
+    <desc>Oda inches closer to the water. Now drenched in sweat, he looks back at Rayne. She smiles reassuringly. (Oda will automatically be appointed)</desc>
     <commander id="225" />
     <deck>
       <card id="6007" name="Goblin Crew" />
@@ -4322,7 +4322,7 @@
     <player_commander>1</player_commander>
     <!-- <commander_req>1</commander_req> -->
     <energy>8</energy>
-    <desc>Oda sits waist deep in the ocean, he starts to panic. Rayne reminds him to focus on his surroundings!</desc>
+    <desc>Oda sits waist deep in the ocean, he starts to panic. Rayne reminds him to focus on his surroundings! (Oda will automatically be appointed)</desc>
     <commander id="265" />
     <deck>
       <card id="1315" name="Nix Elemental" />
@@ -4347,7 +4347,7 @@
     <player_commander>1</player_commander>
     <!-- <commander_req>1</commander_req> -->
     <energy>8</energy>
-    <desc>Oda stands up quickly. He looks angrily at Rayne and then quickly begins to check his surroundings.</desc>
+    <desc>Oda stands up quickly. He looks angrily at Rayne and then quickly begins to check his surroundings. (Oda will automatically be appointed)</desc>
     <commander id="268" />
     <deck>
       <card id="1019" name="Oracle" />
@@ -4395,7 +4395,7 @@
     <player_commander>4</player_commander>
     <!-- <commander_req>4</commander_req> -->
     <energy>8</energy>
-    <desc>Aria stands in front of a mirror. The veins on her arms have begun to glow a faint purple. She worries that the infection she suffered from the void has resurfaced.</desc>
+    <desc>Aria stands in front of a mirror. The veins on her arms have begun to glow a faint purple. She worries that the infection she suffered from the void has resurfaced. (Aria will automatically be appointed)</desc>
     <commander id="223" />
     <deck>
       <card id="1015" name="Windfrog" />
@@ -4421,7 +4421,7 @@
     <player_commander>4</player_commander>
     <!-- <commander_req>4</commander_req> -->
     <energy>8</energy>
-    <desc>Tarian notices the marks on her arms as she passes by him on the air ship. He has these symptoms before.</desc>
+    <desc>Tarian notices the marks on her arms as she passes by him on the air ship. He has these symptoms before. (Aria will automatically be appointed)</desc>
     <commander id="200" />
     <deck>
       <card id="5017" name="Steam Tempest" />
@@ -4464,7 +4464,7 @@
     <player_commander>4</player_commander>
     <!--  <commander_req>4</commander_req> -->
     <energy>8</energy>
-    <desc>Tarian takes Aria to a small building on the outskirts of The Salt Wastes. Its filled to the brim with lab equipment. Seems to be one of Malchior's laboratories.</desc>
+    <desc>Tarian takes Aria to a small building on the outskirts of The Salt Wastes. Its filled to the brim with lab equipment. Seems to be one of Malchior's laboratories. (Aria will automatically be appointed)</desc>
     <commander id="210" />
     <deck>
       <card id="6012" name="Ember Drake" />
@@ -4501,7 +4501,7 @@
     <player_commander>4</player_commander>
     <!-- <commander_req>4</commander_req> -->
     <energy>8</energy>
-    <desc>Tarian takes one of the Black Flowers from the lab. He begins to grind and distill the herb into a potion that may cure Aria of The Void infection for good.</desc>
+    <desc>Tarian takes one of the Black Flowers from the lab. He begins to grind and distill the herb into a potion that may cure Aria of The Void infection for good. (Aria will automatically be appointed)</desc>
     <commander id="205" />
     <deck>
       <card id="1311" name="Molten Skeleton" />
@@ -4527,8 +4527,8 @@
     <player_commander>4</player_commander>
     <!-- <commander_req>4</commander_req> -->
     <energy>8</energy>
-    <desc>The potion needs a few hours to settle. Tarian looks up at Aria who is beginning to look nervous. He offers what comfort he can as they wait.</desc>
-    <commander id="232" />
+    <desc>The potion needs a few hours to settle. Tarian looks up at Aria who is beginning to look nervous. He offers what comfort he can as they wait. (Aria will automatically be appointed)</desc>
+    <commander id="299" />
     <deck>
       <card id="1318" name="Smelted Lava Slug" />
       <card id="1318" />
@@ -4552,7 +4552,7 @@
     <player_commander>4</player_commander>
     <!-- <commander_req>4</commander_req> -->
     <energy>8</energy>
-    <desc>The potion is now block and opaque. Tarian serves it in a cup and hands it to Aria.</desc>
+    <desc>The potion is now block and opaque. Tarian serves it in a cup and hands it to Aria. (Aria will automatically be appointed)</desc>
     <commander id="252" />
     <deck>
       <card id="7022" name="Beetle Tamer" />
@@ -4595,7 +4595,7 @@
     <player_commander>5</player_commander>
     <!-- <commander_req>5</commander_req> -->
     <energy>10</energy>
-    <desc>Decim sit on the outskirts Luminis. Luminis has banished him for setting fire to a few stores when he didn't have control over his powers.  He has returned with Groc to make amends.</desc>
+    <desc>Decim sit on the outskirts Luminis. Luminis has banished him for setting fire to a few stores when he didn't have control over his powers.  He has returned with Groc to make amends. (Decim will automatically be appointed)</desc>
     <commander id="208" />
     <deck>
       <card id="7006" name="Treant Sapling" />
@@ -4633,7 +4633,7 @@
     <player_commander>5</player_commander>
     <!-- <commander_req>5</commander_req> -->
     <energy>10</energy>
-    <desc>Decim takes a deep breath. He does not want to make the wrong impression by being late with their meeting with Samael.</desc>
+    <desc>Decim takes a deep breath. He does not want to make the wrong impression by being late with their meeting with Samael. (Decim will automatically be appointed)</desc>
     <commander id="290" />
     <deck>
       <card id="1312" name="Scythe Demon" />
@@ -4659,7 +4659,7 @@
     <player_commander>5</player_commander>
     <!-- <commander_req>5</commander_req> -->
     <energy>10</energy>
-    <desc>Decim and Groc use the side streets and alleyways to make their way to Samael's palace. They manage to make their way without bringing too much attention to themselves.</desc>
+    <desc>Decim and Groc use the side streets and alleyways to make their way to Samael's palace. They manage to make their way without bringing too much attention to themselves. (Decim will automatically be appointed)</desc>
     <commander id="227" />
     <deck>
       <card id="1619" name="Earth Elemental" />
@@ -4701,7 +4701,7 @@
     <player_commander>5</player_commander>
     <!-- <commander_req>5</commander_req> -->
     <energy>10</energy>
-    <desc>Decim takes a deep breath. He and Groc sneak off to the outskirts of Luminis. They look for signs of the sorceress.</desc>
+    <desc>Decim takes a deep breath. He and Groc sneak off to the outskirts of Luminis. They look for signs of the sorceress. (Decim will automatically be appointed)</desc>
     <commander id="267" />
     <deck>
       <card id="5012" name="Static Drake" />
@@ -4727,7 +4727,7 @@
     <player_commander>5</player_commander>
     <!-- <commander_req>5</commander_req> -->
     <energy>10</energy>
-    <desc>They stand on the hills outside of Luminis looking for signs of the sorceress. Groc spots a cave not too far off. Seems like it's the best bet to finding this sorceress.</desc>
+    <desc>They stand on the hills outside of Luminis looking for signs of the sorceress. Groc spots a cave not too far off. Seems like it's the best bet to finding this sorceress. (Decim will automatically be appointed)</desc>
     <commander id="293" />
     <deck>
       <card id="1315" name="Nix Elemental" />
@@ -4753,7 +4753,7 @@
     <player_commander>5</player_commander>
     <!-- <commander_req>5</commander_req> -->
     <energy>10</energy>
-    <desc>They cautiously enter the cave. Groc calls out to any occupants in the cave. No response. As they continue to explore they see a faint light ahead of them...</desc>
+    <desc>They cautiously enter the cave. Groc calls out to any occupants in the cave. No response. As they continue to explore they see a faint light ahead of them... (Decim will automatically be appointed)</desc>
     <commander id="271" />
     <deck>
       <card id="6022" name="Illusion Caster" />
@@ -4800,7 +4800,7 @@
     <player_commander>2</player_commander>
     <!--  <commander_req>2</commander_req> -->
     <energy>10</energy>
-    <desc>Yuriel wanders the markets of Luminis. He makes his way to his favorite vendor, a rare book seller.</desc>
+    <desc>Yuriel wanders the markets of Luminis. He makes his way to his favorite vendor, a rare book seller. (Yuriel will automatically be appointed)</desc>
     <commander id="246" />
     <deck>
       <card id="1014" name="Cherub" />
@@ -4826,7 +4826,7 @@
     <player_commander>2</player_commander>
     <!--  <commander_req>2</commander_req> -->
     <energy>10</energy>
-    <desc>As Yuriel browses the vendor's wares he notices an unusual patron in the shop, a large goblin with a glowing fist. He suspects he is a follower of Chaos magic...</desc>
+    <desc>As Yuriel browses the vendor's wares he notices an unusual patron in the shop, a large goblin with a glowing fist. He suspects he is a follower of Chaos magic... (Yuriel will automatically be appointed)</desc>
     <commander id="238" />
     <deck>
       <card id="1017" name="Judgment" />
@@ -4865,7 +4865,7 @@
     <player_commander>2</player_commander>
     <!-- <commander_req>2</commander_req> -->
     <energy>10</energy>
-    <desc>Yuriel turns to inform the guards of the intruder. Before he can leave the goblin blocks his path...</desc>
+    <desc>Yuriel turns to inform the guards of the intruder. Before he can leave the goblin blocks his path... (Yuriel will automatically be appointed)</desc>
     <commander id="227" />
     <deck>
       <card id="7017" name="Coral Elemental" />
@@ -4907,7 +4907,7 @@
     <player_commander>2</player_commander>
     <!-- <commander_req>2</commander_req> -->
     <energy>10</energy>
-    <desc>The Goblin introduces himself as Orgoth. He leads Yuriel to an open table in the middle of the market. He lays down a deck of cards and some chips.</desc>
+    <desc>The Goblin introduces himself as Orgoth. He leads Yuriel to an open table in the middle of the market. He lays down a deck of cards and some chips. (Yuriel will automatically be appointed)</desc>
     <commander id="266" />
     <deck>
       <card id="7012" name="Life Drake" />
@@ -4933,7 +4933,7 @@
     <player_commander>2</player_commander>
     <!-- <commander_req>2</commander_req> -->
     <energy>10</energy>
-    <desc>Orgoth suggests they play a well known card game in Luminis. He promises to leave should Yuriel be able to defeat him.</desc>
+    <desc>Orgoth suggests they play a well known card game in Luminis. He promises to leave should Yuriel be able to defeat him. (Yuriel will automatically be appointed)</desc>
     <commander id="243" />
     <deck>
       <card id="1012" name="Cloud Sylph" />
@@ -4958,7 +4958,7 @@
     <player_commander>2</player_commander>
     <!-- <commander_req>2</commander_req> -->
     <energy>10</energy>
-    <desc>As they play Orgoth shares tales of his adventures in the Salt Wastes. They swap a few stories when Yuriel finds himself with the winning hand of the game.</desc>
+    <desc>As they play Orgoth shares tales of his adventures in the Salt Wastes. They swap a few stories when Yuriel finds himself with the winning hand of the game. (Yuriel will automatically be appointed)</desc>
     <commander id="264" />
     <!-- Vapor Hunters -->
     <deck>
@@ -5007,7 +5007,7 @@
     <player_commander>8</player_commander>
     <!-- <commander_req>8</commander_req> -->
     <energy>10</energy>
-    <desc>Ursurio sits at his command post on the outskirts of The Void. He sits, watching the horizon for any sign of danger.</desc>
+    <desc>Ursurio sits at his command post on the outskirts of The Void. He sits, watching the horizon for any sign of danger. (Ursurio will automatically be appointed)</desc>
     <commander id="211" />
     <deck>
       <card id="1018" name="Armored Eagle" />
@@ -5033,7 +5033,7 @@
     <player_commander>8</player_commander>
     <!-- <commander_req>8</commander_req> -->
     <energy>10</energy>
-    <desc>A retired soldier enters his post. Ursurio is happy to see a familiar face. He invites Ol'Cedric in for a drink.</desc>
+    <desc>A retired soldier enters his post. Ursurio is happy to see a familiar face. He invites Ol'Cedric in for a drink. (Ursurio will automatically be appointed)</desc>
     <commander id="206" />
     <deck>
       <card id="1313" name="Lavafrog" />
@@ -5076,7 +5076,7 @@
     <player_commander>8</player_commander>
     <!-- <commander_req>8</commander_req> -->
     <energy>10</energy>
-    <desc>Ursurio and Cedric head to the location of the ghouls. They spot them just behind some brush on the horizon.</desc>
+    <desc>Ursurio and Cedric head to the location of the ghouls. They spot them just behind some brush on the horizon. (Ursurio will automatically be appointed)</desc>
     <commander id="277" />
     <deck>
       <card id="1315" name="Nix Elemental" />
@@ -5101,7 +5101,7 @@
     <player_commander>8</player_commander>
     <!-- <commander_req>8</commander_req> -->
     <energy>10</energy>
-    <desc>Ursurio and Cedric easily sneak up behind the ghouls. They make quick work of them as more waves approach.</desc>
+    <desc>Ursurio and Cedric easily sneak up behind the ghouls. They make quick work of them as more waves approach. (Ursurio will automatically be appointed)</desc>
     <commander id="289" />
     <deck>
       <card id="6012" name="Ember Drake" />
@@ -5127,8 +5127,8 @@
     <player_commander>8</player_commander>
     <!--  <commander_req>8</commander_req> -->
     <energy>10</energy>
-    <desc>The ghouls were easily dealt with. Ursurio takes a breather when he hears a loud grumbling sound.</desc>
-    <commander id="268" />
+    <desc>The ghouls were easily dealt with. Ursurio takes a breather when he hears a loud grumbling sound. (Ursurio will automatically be appointed)</desc>
+    <commander id="275" />
     <deck>
       <card id="7007" name="Water Serpent" />
       <card id="7007" />
@@ -5170,7 +5170,7 @@
     <player_commander>8</player_commander>
     <!-- <commander_req>8</commander_req> -->
     <energy>10</energy>
-    <desc>Cedric takes Ursurio to the camp's kitchen. They are right in time for dinner!</desc>
+    <desc>Cedric takes Ursurio to the camp's kitchen. They are right in time for dinner! (Ursurio will automatically be appointed)</desc>
     <commander id="268" />
     <deck>
       <card id="1012" name="Cloud Sylph" />
@@ -5278,6 +5278,16 @@
     <arena_x>250</arena_x>
     <arena_y>150</arena_y>
   </location>
+  <!-- <location>
+		<id>6</id>
+		<name>Seastone Citadel</name>
+		<mapBG>map6</mapBG>
+		<combatBG>CombatBGSeaStone</combatBG>
+		<asset_bundle>52</asset_bundle>
+		<req>30</req>
+		<arena_x>250</arena_x>
+		<arena_y>150</arena_y>
+	</location> -->
   <location>
     <id>100</id>
     <name>Salt Wastes</name>

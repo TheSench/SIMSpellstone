@@ -7508,6 +7508,120 @@
       <attack>8</attack>
     </upgrade>
   </unit>
+  <unit>
+    <id>2034</id>
+    <card_type>2</card_type>
+    <name>Leap Frog Duo</name>
+    <picture>Leap_Frog_Duo_A</picture>
+    <asset_bundle>53</asset_bundle>
+    <attack>4</attack>
+    <health>15</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="rally" x="2" y="3" />
+    <skill id="rally" x="2" y="4" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>19</health>
+      <skill id="rally" x="2" y="3" />
+      <skill id="rally" x="3" y="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12034</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>High Jump Duo</name>
+    <picture>Leap_Frog_Duo_A</picture>
+    <asset_bundle>53</asset_bundle>
+    <attack>5</attack>
+    <health>19</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="rally" x="2" y="3" />
+    <skill id="rally" x="3" y="4" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>20</health>
+      <skill id="rally" x="3" y="3" />
+      <skill id="rally" x="3" y="4" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>22</health>
+      <skill id="rally" x="3" y="3" />
+      <skill id="rally" x="4" y="4" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>24</health>
+      <attack>6</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22034</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Bash Fist Duo</name>
+    <picture>Leap_Frog_Duo_B</picture>
+    <asset_bundle>53</asset_bundle>
+    <attack>7</attack>
+    <health>24</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="rally" x="3" y="3" />
+    <skill id="rally" x="4" y="4" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="rally" x="4" y="3" />
+      <skill id="rally" x="4" y="4" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>26</health>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="rally" x="4" y="3" />
+      <skill id="rally" x="4" y="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
   <!-- END SET 2000 - Reward -->
   <!-- START SET 3000 - Premium -->
   <!-- 5000 - 7999 -->
@@ -13588,6 +13702,116 @@
       <skill id="strike" x="2" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5053</id>
+    <card_type>2</card_type>
+    <name>Anura Witch</name>
+    <picture>Frog_Mage_A</picture>
+    <asset_bundle>53</asset_bundle>
+    <attack>4</attack>
+    <health>10</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="strike" x="1" />
+    <skill id="frost" x="1" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="strike" x="2" />
+      <skill id="frost" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="strike" x="2" />
+      <skill id="frost" x="1" />
+      <skill id="jam" c="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15053</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Anura Sorceress</name>
+    <picture>Frog_Mage_A</picture>
+    <asset_bundle>53</asset_bundle>
+    <attack>5</attack>
+    <health>12</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="strike" x="2" />
+    <skill id="frost" x="1" />
+    <skill id="jam" c="5" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>15</health>
+      <skill id="strike" x="3" />
+      <skill id="frost" x="1" />
+      <skill id="jam" c="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25053</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Anuramancer</name>
+    <picture>Frog_Mage_B</picture>
+    <asset_bundle>53</asset_bundle>
+    <attack>6</attack>
+    <health>16</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="strike" x="3" />
+    <skill id="frost" x="1" />
+    <skill id="jam" c="5" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="strike" x="3" />
+      <skill id="frost" x="1" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="strike" x="4" />
+      <skill id="frost" x="2" />
+      <skill id="jam" c="4" />
+    </upgrade>
+  </unit>
   <!-- Chaos Premium Begin -->
   <unit>
     <id>6000</id>
@@ -19570,6 +19794,125 @@
       <skill id="strike" x="5" />
       <skill id="strike" x="3" />
       <skill id="flurry" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6052</id>
+    <card_type>2</card_type>
+    <name>Fuming Beast</name>
+    <picture>Fuming_Horror_A</picture>
+    <asset_bundle>53</asset_bundle>
+    <attack>3</attack>
+    <health>8</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="poison" x="1" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="burn" x="1" />
+      <skill id="poison" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="burn" x="1" />
+      <skill id="poison" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16052</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Fuming Ghoul</name>
+    <picture>Fuming_Horror_A</picture>
+    <asset_bundle>53</asset_bundle>
+    <attack>4</attack>
+    <health>11</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="burn" x="1" />
+    <skill id="poison" x="2" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="burn" x="1" />
+      <skill id="poison" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="1" />
+      <skill id="burn" x="1" />
+      <skill id="poison" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26052</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Fuming Horror</name>
+    <picture>Fuming_Horror_B</picture>
+    <asset_bundle>53</asset_bundle>
+    <attack>5</attack>
+    <health>14</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="burn" x="1" />
+    <skill id="poison" x="3" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="1" />
+      <skill id="burn" x="2" />
+      <skill id="poison" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="1" />
+      <skill id="burn" x="2" />
+      <skill id="poison" x="4" />
     </upgrade>
   </unit>
   <!-- Wyld Premium Begin -->
@@ -25589,6 +25932,116 @@
       <skill id="rally" x="3" all="1" y="4" />
       <skill id="pierce" x="5" />
       <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7051</id>
+    <card_type>2</card_type>
+    <name>Stinglash Rider</name>
+    <picture>Big_And_Little_A</picture>
+    <asset_bundle>53</asset_bundle>
+    <attack>2</attack>
+    <health>10</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="poison" x="2" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>3</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="poison" x="3" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="poison" x="3" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17051</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Stingtail Rider</name>
+    <picture>Big_And_Little_A</picture>
+    <asset_bundle>53</asset_bundle>
+    <attack>3</attack>
+    <health>12</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="1" />
+    <skill id="poison" x="3" />
+    <skill id="berserk" x="2" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="1" />
+      <skill id="poison" x="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="1" />
+      <skill id="poison" x="4" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27051</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Stingblade Rider</name>
+    <picture>Big_And_Little_B</picture>
+    <asset_bundle>53</asset_bundle>
+    <attack>3</attack>
+    <health>16</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="1" />
+    <skill id="poison" x="4" />
+    <skill id="berserk" x="3" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="1" />
+      <skill id="poison" x="5" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="2" />
+      <skill id="poison" x="5" />
+      <skill id="berserk" x="4" />
     </upgrade>
   </unit>
   <!-- END SET 3000 - Premium -->
@@ -36342,7 +36795,7 @@
     <id>291</id>
     <card_type>1</card_type>
     <name>Feral Bird</name>
-    <portrait>frogemperor</portrait>
+    <portrait>feralbird</portrait>
     <attack>0</attack>
     <health>36</health>
     <rarity>4</rarity>
@@ -36482,7 +36935,7 @@
     <id>294</id>
     <card_type>1</card_type>
     <name>Avian Soldiers</name>
-    <portrait>frogemperor</portrait>
+    <portrait>aviansoldier</portrait>
     <attack>0</attack>
     <health>37</health>
     <rarity>4</rarity>
@@ -37185,10 +37638,10 @@
     <upkeep>1</upkeep>
     <!-- This skill occurs before all other actions -->
     <attributes x="1" y="1" all="1" c="1" s="1" />
-    <desc>Grants a random allied creature with a skill</desc>
-    <desc_all>Grants all allied creatures with a skill</desc_all>
-    <desc_faction>Grants a random allied {y} creature with a skill</desc_faction>
-    <desc_all_faction>Grants all allied {y} creatures with a skill</desc_all_faction>
+    <desc>Grants a random allied creature a skill until the start of your next turn</desc>
+    <desc_all>Grants all allied creatures a skill until the start of your next turn</desc_all>
+    <desc_faction>Grants a random allied {y} creature a skill until the start of your next turn</desc_faction>
+    <desc_all_faction>Grants all allied {y} creatures a skill until the start of your next turn</desc_all_faction>
     <hidden>1</hidden>
   </skillType>
   <skillType>
