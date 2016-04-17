@@ -25806,6 +25806,134 @@
     </upgrade>
   </unit>
   <unit>
+    <id>7049</id>
+    <card_type>2</card_type>
+    <name>Boundtoad</name>
+    <picture>Steam_Roller_A</picture>
+    <asset_bundle>53</asset_bundle>
+    <attack>4</attack>
+    <health>14</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="1" />
+    <skill id="jam" c="6" />
+    <skill id="leech" x="3" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="1" />
+      <skill id="jam" c="5" />
+      <skill id="leech" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="1" />
+      <skill id="jam" c="5" />
+      <skill id="leech" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>5</attack>
+      <skill id="armored" x="2" />
+      <skill id="jam" c="5" />
+      <skill id="leech" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17049</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Unboundtoad</name>
+    <picture>Steam_Roller_A</picture>
+    <asset_bundle>53</asset_bundle>
+    <attack>5</attack>
+    <health>17</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="2" />
+    <skill id="jam" c="5" />
+    <skill id="leech" x="4" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+      <skill id="armored" x="2" />
+      <skill id="jam" c="4" />
+      <skill id="leech" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="3" />
+      <skill id="jam" c="4" />
+      <skill id="leech" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27049</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Reboundtoad</name>
+    <picture>Steam_Roller_B</picture>
+    <asset_bundle>53</asset_bundle>
+    <attack>6</attack>
+    <health>20</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="3" />
+    <skill id="jam" c="3" />
+    <skill id="leech" x="5" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>21</health>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="4" />
+      <skill id="jam" c="3" />
+      <skill id="leech" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>7050</id>
     <card_type>2</card_type>
     <name>Krieg, Northern Sword</name>
@@ -37369,8 +37497,22 @@
     <name>Attack</name>
   </skillType>
   <skillType>
-    <id>enhance</id>
+    <id>imbue</id>
     <order>1</order>
+    <icon>imbue</icon>
+    <name>Imbue</name>
+    <upkeep>1</upkeep>
+    <!-- This skill occurs before all other actions -->
+    <attributes x="1" y="1" all="1" c="1" s="1" />
+    <desc>Grants a random allied creature a skill until the start of your next turn</desc>
+    <desc_all>Grants all allied creatures a skill until the start of your next turn</desc_all>
+    <desc_faction>Grants a random allied {y} creature a skill until the start of your next turn</desc_faction>
+    <desc_all_faction>Grants all allied {y} creatures a skill until the start of your next turn</desc_all_faction>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>enhance</id>
+    <order>2</order>
     <icon>enhance</icon>
     <name>Enhance</name>
     <upkeep>1</upkeep>
@@ -37380,6 +37522,7 @@
     <desc_all>Increase effect of skill on all allied creatures</desc_all>
     <desc_faction>Increase effect of skill on a random allied {y} creature</desc_faction>
     <desc_all_faction>Increase effect of skill on all allied {y} creatures</desc_all_faction>
+    <hidden>1</hidden>
   </skillType>
   <!-- Defensive -->
   <skillType>
@@ -37392,8 +37535,18 @@
     <balance_points>5</balance_points>
   </skillType>
   <skillType>
-    <id>armored</id>
+    <id>taunt</id>
     <order>20</order>
+    <icon>taunt</icon>
+    <name>Taunt</name>
+    <desc>Attack damage dealt to adjacent creatures is dealt to this creature instead.</desc>
+    <attributes x="1" y="1" all="0" c="0" s="0" />
+    <balance_points>1</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>armored</id>
+    <order>30</order>
     <icon>shield</icon>
     <name>Armor</name>
     <desc>Prevents damage taken by attacks</desc>
@@ -37402,17 +37555,38 @@
   </skillType>
   <skillType>
     <id>counter</id>
-    <order>30</order>
+    <order>40</order>
     <icon>vengeance</icon>
     <name>Vengeance</name>
     <desc>When damaged by an attack, deal damage to attacker</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <balance_points>3</balance_points>
   </skillType>
+  <skillType>
+    <id>corrosive</id>
+    <order>50</order>
+    <icon>corrosive</icon>
+    <name>Corrosive</name>
+    <desc>Creatures attacking this gain Corrosion, lowering Attack. This effect stacks. Wears off if not reapplied for a turn.</desc>
+    <attributes x="1" y="1" all="0" c="0" s="0" />
+    <balance_points>1</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <!-- Triggered -->
+  <skillType>
+    <id>valor</id>
+    <order>60</order>
+    <icon>valor</icon>
+    <name>Valor</name>
+    <desc>First time this activates, gains Attack permanently if opposing card has more Attack.</desc>
+    <attributes x="1" y="1" all="0" c="0" s="0" />
+    <balance_points>1</balance_points>
+    <hidden>1</hidden>
+  </skillType>
   <!-- Activation -->
   <skillType>
     <id>rally</id>
-    <order>40</order>
+    <order>70</order>
     <icon>empower</icon>
     <name>Empower</name>
     <upkeep>1</upkeep>
@@ -37427,7 +37601,7 @@
   </skillType>
   <skillType>
     <id>heal</id>
-    <order>50</order>
+    <order>80</order>
     <icon>heal</icon>
     <name>Heal</name>
     <desc>Heals a random allied creature</desc>
@@ -37439,7 +37613,7 @@
   </skillType>
   <skillType>
     <id>protect</id>
-    <order>60</order>
+    <order>90</order>
     <icon>mystic_barrier</icon>
     <name>Barrier</name>
     <desc>Reduces the next Damage dealt to a random allied creature</desc>
@@ -37452,7 +37626,7 @@
   </skillType>
   <skillType>
     <id>legion</id>
-    <order>70</order>
+    <order>100</order>
     <icon>legion</icon>
     <name>Legion</name>
     <upkeep>1</upkeep>
@@ -37465,7 +37639,7 @@
   </skillType>
   <skillType>
     <id>fervor</id>
-    <order>80</order>
+    <order>110</order>
     <icon>fervor</icon>
     <name>Fervor</name>
     <upkeep>1</upkeep>
@@ -37478,7 +37652,7 @@
   </skillType>
   <skillType>
     <id>enfeeble</id>
-    <order>90</order>
+    <order>120</order>
     <icon>hex</icon>
     <name>Hex</name>
     <desc>Increase Damage dealt to a random enemy creature</desc>
@@ -37489,7 +37663,7 @@
   </skillType>
   <skillType>
     <id>strike</id>
-    <order>100</order>
+    <order>130</order>
     <icon>arcane_shot</icon>
     <name>Bolt</name>
     <desc>Deals damage to a random enemy creature</desc>
@@ -37501,7 +37675,7 @@
   </skillType>
   <skillType>
     <id>frost</id>
-    <order>110</order>
+    <order>140</order>
     <icon>frostbreath</icon>
     <name>Frostbreath</name>
     <desc>Deals damage in a cone to up to three creatures in front of it.</desc>
@@ -37512,7 +37686,7 @@
   </skillType>
   <skillType>
     <id>burn</id>
-    <order>120</order>
+    <order>150</order>
     <icon>burn</icon>
     <name>Scorch</name>
     <desc>Deals stacking damage to the enemy across from this creature at end of turn. Wears off if not reapplied for a turn.</desc>
@@ -37523,7 +37697,7 @@
   </skillType>
   <skillType>
     <id>jam</id>
-    <order>130</order>
+    <order>160</order>
     <icon>freeze</icon>
     <name>Freeze</name>
     <desc>Random enemy creature doesn't attack or activate abilities on its next turn. Activates every {c} turns.</desc>
@@ -37534,7 +37708,7 @@
   </skillType>
   <skillType>
     <id>weaken</id>
-    <order>140</order>
+    <order>170</order>
     <icon>hinder</icon>
     <name>Weaken</name>
     <desc>Reduces Attack of a random enemy creature</desc>
@@ -37547,7 +37721,7 @@
   <!-- Modifiers -->
   <skillType>
     <id>pierce</id>
-    <order>150</order>
+    <order>180</order>
     <icon>puncture</icon>
     <name>Pierce</name>
     <desc>Reduces the effect of enemy Armor and Barriers</desc>
@@ -37556,8 +37730,29 @@
   </skillType>
   <!-- Damage -->
   <skillType>
+    <id>silence</id>
+    <order>190</order>
+    <icon>silence</icon>
+    <name>Silence</name>
+    <desc>Removes all skills from damaged enemy creature for one turn.</desc>
+    <attributes x="1" y="1" all="0" c="1" s="0" />
+    <balance_points>1</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>nullify</id>
+    <order>200</order>
+    <icon>nullify</icon>
+    <name>Nullify</name>
+    <desc>Nullifies enemy creatures damaged by this card. Nullified units avoid their own friendly skills.</desc>
+    <attributes x="1" y="1" all="0" c="0" s="0" />
+    <status_flag>nullified</status_flag>
+    <balance_points>1</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
     <id>poison</id>
-    <order>160</order>
+    <order>210</order>
     <icon>corrupt</icon>
     <name>Poison</name>
     <desc>Poisons enemies damaged by this card, dealing additional damage at the end of turn</desc>
@@ -37567,7 +37762,7 @@
   </skillType>
   <skillType>
     <id>leech</id>
-    <order>170</order>
+    <order>220</order>
     <icon>siphon</icon>
     <name>Siphon</name>
     <desc>Heals this card as it deals Attack damage</desc>
@@ -37576,7 +37771,7 @@
   </skillType>
   <skillType>
     <id>berserk</id>
-    <order>180</order>
+    <order>230</order>
     <icon>berserk</icon>
     <name>Berserk</name>
     <desc>When this creature deals attack damage, Attack is permanently increased</desc>
@@ -37586,7 +37781,7 @@
   <!-- Dualstrike -->
   <skillType>
     <id>flurry</id>
-    <order>190</order>
+    <order>240</order>
     <icon>swiftness</icon>
     <name>Dualstrike</name>
     <desc>Activates twice in one turn. Activates every {c} turns.</desc>
@@ -37594,9 +37789,10 @@
     <attributes x="0" y="0" all="0" c="1" s="0" />
     <balance_points>10</balance_points>
   </skillType>
+  <!-- Special -->
   <skillType>
     <id>protect_ice</id>
-    <order>50</order>
+    <order>500</order>
     <icon>mystic_barrier</icon>
     <name>Iceshatter Barrier</name>
     <desc>Reduces the next Damage dealt to a random allied creature</desc>
@@ -37628,71 +37824,6 @@
     <attributes x="1" y="1" all="0" c="0" s="0" />
     <status_flag>resurrected</status_flag>
     <balance_points>8</balance_points>
-    <hidden>1</hidden>
-  </skillType>
-  <skillType>
-    <id>imbue</id>
-    <order>1</order>
-    <icon>imbue</icon>
-    <name>Imbue</name>
-    <upkeep>1</upkeep>
-    <!-- This skill occurs before all other actions -->
-    <attributes x="1" y="1" all="1" c="1" s="1" />
-    <desc>Grants a random allied creature a skill until the start of your next turn</desc>
-    <desc_all>Grants all allied creatures a skill until the start of your next turn</desc_all>
-    <desc_faction>Grants a random allied {y} creature a skill until the start of your next turn</desc_faction>
-    <desc_all_faction>Grants all allied {y} creatures a skill until the start of your next turn</desc_all_faction>
-    <hidden>1</hidden>
-  </skillType>
-  <skillType>
-    <id>valor</id>
-    <order>500</order>
-    <icon>valor</icon>
-    <name>Valor</name>
-    <desc>Valor.</desc>
-    <attributes x="1" y="1" all="0" c="0" s="0" />
-    <balance_points>1</balance_points>
-    <hidden>1</hidden>
-  </skillType>
-  <skillType>
-    <id>nullify</id>
-    <order>500</order>
-    <icon>nullify</icon>
-    <name>Nullify</name>
-    <desc>Nullify.</desc>
-    <attributes x="1" y="1" all="0" c="0" s="0" />
-    <status_flag>nullified</status_flag>
-    <balance_points>1</balance_points>
-    <hidden>1</hidden>
-  </skillType>
-  <skillType>
-    <id>corrosive</id>
-    <order>500</order>
-    <icon>corrosive</icon>
-    <name>Corrosive</name>
-    <desc>Corrosive.</desc>
-    <attributes x="1" y="1" all="0" c="0" s="0" />
-    <balance_points>1</balance_points>
-    <hidden>1</hidden>
-  </skillType>
-  <skillType>
-    <id>silence</id>
-    <order>500</order>
-    <icon>silence</icon>
-    <name>Silence</name>
-    <desc>Silence.</desc>
-    <attributes x="1" y="1" all="0" c="1" s="0" />
-    <balance_points>1</balance_points>
-    <hidden>1</hidden>
-  </skillType>
-  <skillType>
-    <id>taunt</id>
-    <order>500</order>
-    <icon>taunt</icon>
-    <name>Taunt</name>
-    <desc>Taunt.</desc>
-    <attributes x="1" y="1" all="0" c="0" s="0" />
-    <balance_points>1</balance_points>
     <hidden>1</hidden>
   </skillType>
   <skillType>

@@ -48316,6 +48316,228 @@ var CARDS = {
       },
     }
   },
+  "7049": {
+    "id": "7049",
+    "name": "Boundtoad",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "4",
+    "attack": 4,
+    "health": 14,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "jam",
+        "c": 6,
+      },
+      {
+        "id": "leech",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+      "3": {
+        "health": 15,
+        "skill": [],
+      },
+      "4": {
+        "health": 16,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+        ],
+      },
+      "6": {
+        "attack": 5,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "17049": {
+    "id": "17049",
+    "name": "Unboundtoad",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "4",
+    "attack": 5,
+    "health": 17,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "jam",
+        "c": 5,
+      },
+      {
+        "id": "leech",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 18,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+        ],
+      },
+      "3": {
+        "attack": 6,
+        "skill": [],
+      },
+      "4": {
+        "health": 19,
+        "skill": [],
+      },
+      "5": {
+        "health": 20,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+        ],
+      },
+    }
+  },
+  "27049": {
+    "id": "27049",
+    "name": "Reboundtoad",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "4",
+    "attack": 6,
+    "health": 20,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 3,
+      },
+      {
+        "id": "jam",
+        "c": 3,
+      },
+      {
+        "id": "leech",
+        "x": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 7,
+        "skill": [],
+      },
+      "3": {
+        "attack": 8,
+        "health": 21,
+        "skill": [],
+      },
+      "4": {
+        "health": 22,
+        "skill": [],
+      },
+      "5": {
+        "health": 23,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+          {
+            "id": "leech",
+            "x": 6,
+          },
+        ],
+      },
+    }
+  },
   "7050": {
     "id": "7050",
     "name": "Krieg, Northern Sword",
@@ -69842,8 +70064,86 @@ var CARDS = {
       },
     }
   },
-  "9993": {
-    "id": "9993",
+  "9990": {
+    "id": "9990",
+    "name": "New 10 (S)",
+    "picture": "New10_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": 0,
+    "health": 1,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19990": {
+    "id": "19990",
+    "name": "New 10 (D)",
+    "picture": "New10_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": 0,
+    "health": 1,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {}
+  },
+  "29990": {
+    "id": "29990",
+    "name": "New 10 (Q)",
+    "picture": "New10_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": 0,
+    "health": 1,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9991": {
+    "id": "9991",
+    "name": "New 11 (S)",
+    "picture": "New11_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": 0,
+    "health": 1,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19991": {
+    "id": "19991",
+    "name": "New 11 (D)",
+    "picture": "New11_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": 0,
+    "health": 1,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {}
+  },
+  "29991": {
+    "id": "29991",
+    "name": "New 11 (Q)",
+    "picture": "New11_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": 0,
+    "health": 1,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9992": {
+    "id": "9992",
     "name": "New 12 (S)",
     "picture": "New12_A",
     "rarity": "0",
@@ -69855,8 +70155,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19993": {
-    "id": "19993",
+  "19992": {
+    "id": "19992",
     "name": "New 12 (D)",
     "picture": "New12_A",
     "rarity": "0",
@@ -69868,8 +70168,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29993": {
-    "id": "29993",
+  "29992": {
+    "id": "29992",
     "name": "New 12 (Q)",
     "picture": "New12_B",
     "rarity": "0",
@@ -69881,8 +70181,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9994": {
-    "id": "9994",
+  "9993": {
+    "id": "9993",
     "name": "New 1 (S)",
     "picture": "New1_A",
     "rarity": "0",
@@ -69894,8 +70194,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19994": {
-    "id": "19994",
+  "19993": {
+    "id": "19993",
     "name": "New 1 (D)",
     "picture": "New1_A",
     "rarity": "0",
@@ -69907,8 +70207,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29994": {
-    "id": "29994",
+  "29993": {
+    "id": "29993",
     "name": "New 1 (Q)",
     "picture": "New1_B",
     "rarity": "0",
@@ -69920,8 +70220,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9995": {
-    "id": "9995",
+  "9994": {
+    "id": "9994",
     "name": "New 2 (S)",
     "picture": "New2_A",
     "rarity": "0",
@@ -69933,8 +70233,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19995": {
-    "id": "19995",
+  "19994": {
+    "id": "19994",
     "name": "New 2 (D)",
     "picture": "New2_A",
     "rarity": "0",
@@ -69946,8 +70246,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29995": {
-    "id": "29995",
+  "29994": {
+    "id": "29994",
     "name": "New 2 (Q)",
     "picture": "New2_B",
     "rarity": "0",
@@ -69959,8 +70259,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9996": {
-    "id": "9996",
+  "9995": {
+    "id": "9995",
     "name": "New 3 (S)",
     "picture": "New3_A",
     "rarity": "0",
@@ -69972,8 +70272,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19996": {
-    "id": "19996",
+  "19995": {
+    "id": "19995",
     "name": "New 3 (D)",
     "picture": "New3_A",
     "rarity": "0",
@@ -69985,8 +70285,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29996": {
-    "id": "29996",
+  "29995": {
+    "id": "29995",
     "name": "New 3 (Q)",
     "picture": "New3_B",
     "rarity": "0",
@@ -69998,8 +70298,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9997": {
-    "id": "9997",
+  "9996": {
+    "id": "9996",
     "name": "New 4 (S)",
     "picture": "New4_A",
     "rarity": "0",
@@ -70011,8 +70311,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19997": {
-    "id": "19997",
+  "19996": {
+    "id": "19996",
     "name": "New 4 (D)",
     "picture": "New4_A",
     "rarity": "0",
@@ -70024,8 +70324,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29997": {
-    "id": "29997",
+  "29996": {
+    "id": "29996",
     "name": "New 4 (Q)",
     "picture": "New4_B",
     "rarity": "0",
@@ -70037,8 +70337,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9998": {
-    "id": "9998",
+  "9997": {
+    "id": "9997",
     "name": "New 5 (S)",
     "picture": "New5_A",
     "rarity": "0",
@@ -70050,8 +70350,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19998": {
-    "id": "19998",
+  "19997": {
+    "id": "19997",
     "name": "New 5 (D)",
     "picture": "New5_A",
     "rarity": "0",
@@ -70063,10 +70363,49 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29998": {
-    "id": "29998",
+  "29997": {
+    "id": "29997",
     "name": "New 5 (Q)",
     "picture": "New5_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": 0,
+    "health": 1,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9998": {
+    "id": "9998",
+    "name": "New 6 (S)",
+    "picture": "New6_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": 0,
+    "health": 1,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19998": {
+    "id": "19998",
+    "name": "New 6 (D)",
+    "picture": "New6_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": 0,
+    "health": 1,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {}
+  },
+  "29998": {
+    "id": "29998",
+    "name": "New 6 (Q)",
+    "picture": "New6_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
