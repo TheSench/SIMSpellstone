@@ -70064,86 +70064,8 @@ var CARDS = {
       },
     }
   },
-  "9991": {
-    "id": "9991",
-    "name": "New 10 (S)",
-    "picture": "New10_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19991": {
-    "id": "19991",
-    "name": "New 10 (D)",
-    "picture": "New10_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29991": {
-    "id": "29991",
-    "name": "New 10 (Q)",
-    "picture": "New10_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9992": {
-    "id": "9992",
-    "name": "New 11 (S)",
-    "picture": "New11_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19992": {
-    "id": "19992",
-    "name": "New 11 (D)",
-    "picture": "New11_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29992": {
-    "id": "29992",
-    "name": "New 11 (Q)",
-    "picture": "New11_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9993": {
-    "id": "9993",
+  "9995": {
+    "id": "9995",
     "name": "New 12 (S)",
     "picture": "New12_A",
     "rarity": "0",
@@ -70155,8 +70077,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19993": {
-    "id": "19993",
+  "19995": {
+    "id": "19995",
     "name": "New 12 (D)",
     "picture": "New12_A",
     "rarity": "0",
@@ -70168,8 +70090,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29993": {
-    "id": "29993",
+  "29995": {
+    "id": "29995",
     "name": "New 12 (Q)",
     "picture": "New12_B",
     "rarity": "0",
@@ -70181,8 +70103,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9994": {
-    "id": "9994",
+  "9996": {
+    "id": "9996",
     "name": "New 1 (S)",
     "picture": "New1_A",
     "rarity": "0",
@@ -70194,8 +70116,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19994": {
-    "id": "19994",
+  "19996": {
+    "id": "19996",
     "name": "New 1 (D)",
     "picture": "New1_A",
     "rarity": "0",
@@ -70207,8 +70129,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29994": {
-    "id": "29994",
+  "29996": {
+    "id": "29996",
     "name": "New 1 (Q)",
     "picture": "New1_B",
     "rarity": "0",
@@ -70220,47 +70142,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9995": {
-    "id": "9995",
-    "name": "New 2 (S)",
-    "picture": "New2_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19995": {
-    "id": "19995",
-    "name": "New 2 (D)",
-    "picture": "New2_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29995": {
-    "id": "29995",
-    "name": "New 2 (Q)",
-    "picture": "New2_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9996": {
-    "id": "9996",
+  "9997": {
+    "id": "9997",
     "name": "New 3 (S)",
     "picture": "New3_A",
     "rarity": "0",
@@ -70272,8 +70155,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19996": {
-    "id": "19996",
+  "19997": {
+    "id": "19997",
     "name": "New 3 (D)",
     "picture": "New3_A",
     "rarity": "0",
@@ -70285,8 +70168,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29996": {
-    "id": "29996",
+  "29997": {
+    "id": "29997",
     "name": "New 3 (Q)",
     "picture": "New3_B",
     "rarity": "0",
@@ -70298,8 +70181,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9997": {
-    "id": "9997",
+  "9998": {
+    "id": "9998",
     "name": "New 5 (S)",
     "picture": "New5_A",
     "rarity": "0",
@@ -70311,8 +70194,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19997": {
-    "id": "19997",
+  "19998": {
+    "id": "19998",
     "name": "New 5 (D)",
     "picture": "New5_A",
     "rarity": "0",
@@ -70324,49 +70207,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29997": {
-    "id": "29997",
-    "name": "New 5 (Q)",
-    "picture": "New5_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9998": {
-    "id": "9998",
-    "name": "New 6 (S)",
-    "picture": "New6_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19998": {
-    "id": "19998",
-    "name": "New 6 (D)",
-    "picture": "New6_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": 0,
-    "health": 1,
-    "cost": 0,
-    "skill": [],
-    "upgrades": {}
-  },
   "29998": {
     "id": "29998",
-    "name": "New 6 (Q)",
-    "picture": "New6_B",
+    "name": "New 5 (Q)",
+    "picture": "New5_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
