@@ -131,7 +131,12 @@ var SIMULATOR = {};
 
     function doEmpower(source_card) {
 
-        var dualStrike = source_card.flurry && !source_card.flurry.countdown && source_card.hasAttack();
+        var dualStrike = (source_card.flurry && !source_card.flurry.countdown);
+        if (dualStrike && !source_card.hasAttack()) {
+            // Make sure that this unit does not use dualstrike if it is empowered later this turn
+            source_card.flurry.countdown++
+            dualStrike = false;
+        }
         if (debug && dualStrike) {
             // Let main attack loop deal with resetting timer
             echo += debug_name(source_card) + ' activates dualstrike<br>';
