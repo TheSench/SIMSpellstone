@@ -471,18 +471,6 @@ function gettable() {
     table3 += '</td>';
     table3 += '</tr>';
 
-    // Average points
-    table3 += '<tr>';
-    table3 += '<td>';
-    table3 += 'Avg. Points';
-    table3 += '</td>';
-    table3 += '<td>';
-    // Calculate Average length of battle
-    var avg_points = (total_points / games).toFixed(3);
-    table3 += avg_points;
-    table3 += '</td>';
-    table3 += '</tr>';
-
     table3 += '</table>';
 
     var full_table = '<table cellspacing=0 cellpadding=0 border=0><tr><td>' + table + '</td><td>&nbsp;</td><td>' + table3 + '</td></tr></table>';
@@ -513,27 +501,6 @@ function gettable() {
     }
 
     return full_table;
-}
-
-function getOrderStatsTable() {
-
-    if (!trackStats) return '';
-
-    var winrateKeys = [];
-    cardStats = {
-        keys: []
-    };
-    for (var key in orders) {
-        var stats = orders[key];
-        stats.winrate = (stats.wins / stats.games);
-        CalculatePlayStats(key, cardStats)
-    }
-    var statsTable = '<br><table cellspacing=0 cellpadding=5 style="border: 1px solid #000000;">';
-    var lastColumn = 0;
-    statsTable += getStatsRows(cardStats);
-    statsTable += '</table>';
-
-    return statsTable;
 }
 
 function sortByAvgPoints(stats, keys) {
@@ -1019,7 +986,6 @@ var getexactorder2 = false;
 var getmission = false;
 var getraid = false;
 var raidlevel = 0;
-var trackStats = false;
 var getbattleground = 0;
 var getsiege = 0;
 var tower_level = 0;
@@ -1041,7 +1007,6 @@ var time_end = 0;	// TODO: Use this
 var surge = false;
 var battleground = [];
 var total_turns = 0;
-var total_points = 0;
 var cache_player_deck;
 var cache_cpu_deck;
 var cache_player_deck_cards;

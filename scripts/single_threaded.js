@@ -53,7 +53,6 @@ var SIM_CONTROLLER;
 
         card_cache = {};    // clear card cache to avoid memory bloat when simulating different decks
         total_turns = 0;
-        total_points = 0;
         time_start = new Date();
         time_stop = 0;
         echo = '';
@@ -240,7 +239,7 @@ var SIM_CONTROLLER;
             var simpersec = games / elapse;
             simpersec = simpersec.toFixed(1);
 
-            outp(echo + '<br><strong>Simulations complete.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>' + gettable() + getOrderStatsTable());
+            outp(echo + '<br><strong>Simulations complete.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>' + gettable());
 
             // Show interface
             document.getElementById('ui').style.display = 'block';
@@ -340,12 +339,8 @@ var SIM_CONTROLLER;
         }
         games++;
 
-        var points = SIMULATOR.CalculatePoints();
-        if (trackStats) SIMULATOR.updateStats(result, points);
-
         // Increment total turn count
         total_turns += SIMULATOR.simulation_turns;
-        total_points += points;
 
         if (debug) {
             if (loss_debug) {
