@@ -207,37 +207,44 @@ var CARD_GUI = {};
         var divName = createDiv("card-name", cardName);
         htmlCard.appendChild(divName);
         if (!card.isCommander()) {
-            if (onField) {
-                if (!card.isUnjammed()) htmlCard.classList.add("frozen");
-                var htmlAttack = createDiv("card-attack", card.adjustedAttack().toString());
-                if (card.adjustedAttack() > card.attack) htmlAttack.classList.add("increased");
-                else if (card.adjustedAttack() < card.attack) htmlAttack.classList.add("decreased");
-                else if (boosts.attack) htmlAttack.classList.add("increased");
-            } else {
-                var htmlAttack = createDiv("card-attack", card.attack.toString());
+            if (card.attack >= 0) {
+                if (onField) {
+                    if (!card.isUnjammed()) htmlCard.classList.add("frozen");
+                    var htmlAttack = createDiv("card-attack", card.adjustedAttack().toString());
+                    if (card.adjustedAttack() > card.attack) htmlAttack.classList.add("increased");
+                    else if (card.adjustedAttack() < card.attack) htmlAttack.classList.add("decreased");
+                    else if (boosts.attack) htmlAttack.classList.add("increased");
+                } else {
+                    var htmlAttack = createDiv("card-attack", card.attack.toString());
+                }
+                htmlCard.appendChild(createImg(getAssetPath("cardAssets") + "Attack.png", "attack"));
+                htmlCard.appendChild(htmlAttack);
             }
-            htmlCard.appendChild(createImg(getAssetPath("cardAssets") + "Attack.png", "attack"));
-            htmlCard.appendChild(htmlAttack);
-            if (onField) {
-                if (card.timer) {
-                    htmlCard.appendChild(createDiv("delay", card.timer));
+            
+            if (card.cost >= 0) {
+                if (onField) {
+                    if (card.timer) {
+                        htmlCard.appendChild(createDiv("delay", card.timer));
+                        htmlCard.appendChild(createImg(getAssetPath("cardAssets") + "Timer.png", "timer"));
+                    }
+                } else {
+                    htmlCard.appendChild(createDiv("delay", card.cost));
                     htmlCard.appendChild(createImg(getAssetPath("cardAssets") + "Timer.png", "timer"));
                 }
-            } else {
-                htmlCard.appendChild(createDiv("delay", card.cost));
-                htmlCard.appendChild(createImg(getAssetPath("cardAssets") + "Timer.png", "timer"));
             }
         }
-        if (onField) {
-            var htmlHealth = createDiv("card-health", card.health_left.toString());
-            if (card.health_left < card.health) htmlHealth.classList.add("decreased");
-            else if (boosts.health) htmlHealth.classList.add("increased");
-        } else {
-            var htmlHealth = createDiv("card-health", card.health.toString());
-            if (boosts.health) htmlHealth.classList.add("increased");
+        if (card.health >= 0) {
+            if (onField) {
+                var htmlHealth = createDiv("card-health", card.health_left.toString());
+                if (card.health_left < card.health) htmlHealth.classList.add("decreased");
+                else if (boosts.health) htmlHealth.classList.add("increased");
+            } else {
+                var htmlHealth = createDiv("card-health", card.health.toString());
+                if (boosts.health) htmlHealth.classList.add("increased");
+            }
+            htmlCard.appendChild(createImg(getAssetPath("cardAssets") + "Health.png", "health"));
+            htmlCard.appendChild(htmlHealth);
         }
-        htmlCard.appendChild(createImg(getAssetPath("cardAssets") + "Health.png", "health"));
-        htmlCard.appendChild(htmlHealth);
         var divSkills = createDiv("card-skills");
         var skillsShort = createDiv("card-skills-short");
         getPassiveSkills(divSkills, skillsShort, card, onField, boosts);

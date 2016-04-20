@@ -1,7 +1,7 @@
 "use strict";
 
 var SIMULATOR = {};
-(function () {
+if (simulator_thread) (function () {
 
     //50% proc function
     function roll_proc() {
@@ -14,8 +14,9 @@ var SIMULATOR = {};
 
         // Store plays
         //if (trackStats && p == 'player' && plays.length == 0) {
-        if (trackStats && plays.length < 3) {
-            plays.push(makeUnitInfo(card.id, card.level, card.runes));
+        if (!quiet && trackStats && plays.length < 3) {
+            plays.push(card.uid);
+            //plays.push(makeUnitInfo(card.id, card.level, card.runes));
         }
 
         // Not a valid card
@@ -23,12 +24,13 @@ var SIMULATOR = {};
 
         var newKey = field_p_assaults.length;
         initializeCard(card, p, newKey);
+        card.played = true;
 
         field_p_assaults[newKey] = card;
 
         if (debug && !quiet) echo += debug_name(field[p].commander) + ' plays ' + debug_name(card) + '<br>';
     };
-    
+
     // Dead cards are removed from both fields. Cards on both fields all shift over to the left if there are any gaps.
     function remove_dead() {
         remove_dead_cards('player');
@@ -123,17 +125,15 @@ var SIMULATOR = {};
         var field_p_assaults = field_p.assaults;
         for (var unit_key = 0, unit_len = field_p_assaults.length; unit_key < unit_len; unit_key++) {
             var current_unit = field_p_assaults[unit_key];
-            if (current_unit.empowerSkills.length && current_unit.isActive()) {
+            if (current_unit.empowerSkills.length && current_unit.isActive() && current_unit.isUnjammed()) {
                 doEmpower(current_unit);
             }
         }
     };
 
     function doEmpower(source_card) {
-
         var dualStrike = (source_card.flurry && !source_card.flurry.countdown);
         if (dualStrike && !source_card.hasAttack()) {
-            // Make sure that this unit does not use dualstrike if it is empowered later this turn
             source_card.flurry.countdown++
             dualStrike = false;
         }
@@ -869,21 +869,24 @@ var SIMULATOR = {};
             shuffle(deck.cpu.deck);
         }
 
-        setupField(field);
+        setupField(field, deck);
 
         if (getsiege) {
-            var tower = makeUnitInfo(601 + parseInt(tower_type), parseInt(tower_level) - 1);
+            var towerID = 601 + parseInt(tower_type);
+            var tower = makeUnitInfo(towerID, parseInt(tower_level) - 1);
             var towerCard = get_card_apply_battlegrounds(tower);
+            towerCard.uid = towerID;
+            if (field.uids) field.uids[towerID] = towerCard;
             play_card(towerCard, 'cpu', true);
         }
 
         return performTurns(0);
     };
-    
+
     function setupDecks() {
         doSetupDecks();
     }
-    
+
     function doSetupDecks() {
         // Cache decks where possible
         // Load player deck
@@ -894,7 +897,7 @@ var SIMULATOR = {};
         } else {
             cache_player_deck = load_deck_from_cardlist();
         }
-        cache_player_deck_cards = getDeckCards(cache_player_deck);
+        cache_player_deck_cards = getDeckCards(cache_player_deck, 'player');
 
         totalDeckHealth = 0;
         totalDeckHealth += cache_player_deck_cards.commander.health;
@@ -906,7 +909,6 @@ var SIMULATOR = {};
         smartAI = true;
         if (getdeck2) {
             cache_cpu_deck = hash_decode(getdeck2);
-            if (getmission) smartAI = false;
         } else if (getcardlist2) {
             cache_cpu_deck = load_deck_from_cardlist(getcardlist2);
         } else if (getmission) {
@@ -918,7 +920,7 @@ var SIMULATOR = {};
         } else {
             cache_cpu_deck = load_deck_from_cardlist();
         }
-        cache_cpu_deck_cards = getDeckCards(cache_cpu_deck);
+        cache_cpu_deck_cards = getDeckCards(cache_cpu_deck, 'cpu');
 
         totalCpuDeckHealth = 0;
         totalCpuDeckHealth += cache_cpu_deck_cards.commander.health;
@@ -947,8 +949,12 @@ var SIMULATOR = {};
 
     function performTurns(turn) {
         var done = performTurnsInner(turn);
-        if (done && user_controlled) {
-            SIM_CONTROLLER.debug_end();
+        if (done) {
+            if (user_controlled) {
+                SIM_CONTROLLER.debug_end();
+            } else if (choose_card_callback) {
+                SIM_CONTROLLER.continue();
+            }
         }
         return done;
     }
@@ -1062,6 +1068,8 @@ var SIMULATOR = {};
                 // Play first card in hand
                 card_picked = 0;
                 play_card(deck_p_deck[card_picked], p);
+            } else if (choose_card_callback && p == 'player') {
+                card_picked = chooseCardSpecial(p, deck_p_deck, deck_p_ordered, turn, redraw);
             } else if (user_controlled && p == 'player') {
                 card_picked = chooseCardUserManually(p, deck_p_deck, deck_p_ordered, turn, redraw);
             } else if (deck_p_ordered) {
@@ -1116,7 +1124,22 @@ var SIMULATOR = {};
         }
     }
 
-    function chooseCardOrdered(p, shuffledDeck, orderedDeck, redraw) {
+    function chooseCardSpecial(p, shuffledDeck, orderedDeck, turn, redraw) {
+        if (redraw && choose_card_callback) {
+            // Prepare 3-card hand
+            choice = undefined;
+            var hand = shuffledDeck.slice(0, 3);
+            choose_card_callback(field, deck, hand, performTurns, turn);
+            return -1;
+        } else {
+            var card_picked = choice;
+            if (!card_picked) card_picked = 0;
+            play_card(shuffledDeck[card_picked], p);
+            return card_picked;
+        }
+    }
+
+    function chooseCardOrdered(p, shuffledDeck, orderedDeck, turn, redraw) {
         // Prepare 3-card hand
         var hand = shuffledDeck.slice(0, 3);
 
@@ -1165,7 +1188,7 @@ var SIMULATOR = {};
         return -1;
     }
 
-    function chooseCardRandomly(p, shuffledDeck, orderedDeck, redraw) {
+    function chooseCardRandomly(p, shuffledDeck, orderedDeck, turn, redraw) {
         // Prepare 3-card hand
         var hand = shuffledDeck.slice(0, 3);
 
@@ -1174,7 +1197,7 @@ var SIMULATOR = {};
         return card_picked;
     }
 
-    function chooseCardByPoints(p, shuffledDeck, orderedDeck, redraw) {
+    function chooseCardByPoints(p, shuffledDeck, orderedDeck, turn, redraw) {
         // Prepare 3-card hand
         var hand = shuffledDeck.slice(0, 3);
 
@@ -1338,7 +1361,7 @@ var SIMULATOR = {};
         var dualStrike = unit.flurry;
         if (dualStrike && dualStrike.countdown) dualStrike.countdown--;
     }
-    
+
     function doSkillCountDowns(skills) {
         for (var i = 0, len = skills.length; i < len; i++) {
             var skill = skills[i];
@@ -1602,7 +1625,8 @@ var SIMULATOR = {};
     };
 
     function updateStats(result, points) {
-        var hash = hash_encode({ commander: cache_player_deck.commander, deck: plays }, false);
+        //var hash = hash_encode({ /*commander: cache_player_deck.commander,*/ deck: plays }, false);
+        var hash = plays.join();
         var order_stats = orders[hash];
         if (!order_stats) {
             order_stats = {
@@ -1626,35 +1650,40 @@ var SIMULATOR = {};
         }
         order_stats.points += points;
     };
-    
+
     function CalculatePoints() {
         var uids = field.uids;
+        damage_taken = 0;
+        damage_dealt = 0;
         if (uids) {
             for (var i in uids) {
-                var assault = uids[i];
-                if (assault.owner == 'player') {
-                    damage_taken += (assault.health - assault.health_left);
-                } else {
-                    damage_dealt += (assault.health - assault.health_left);
+                var unit = uids[i];
+                if (unit.played) {
+                    if (unit.owner == 'player') {
+                        damage_taken += (unit.health - unit.health_left);
+                    } else {
+                        damage_dealt += (unit.health - unit.health_left);
+                    }
                 }
             }
+        } else {
+            var assaults = field.player.assaults;
+            for (var i = 0, len = assaults.length; i < len; i++) {
+                var assault = assaults[i];
+                if (uids && uids[assault.uid]) continue;    // Already counted this card
+                damage_taken += (assault.health - assault.health_left);
+            }
+            var assaults = field.cpu.assaults;
+            for (var i = 0, len = assaults.length; i < len; i++) {
+                var assault = assaults[i];
+                if (uids && uids[assault.uid]) continue;    // Already counted this card
+                damage_dealt += (assault.health - assault.health_left);
+            }
+            var commander = field.cpu.commander;
+            damage_dealt += (commander.health - commander.health_left);
+            var commander = field.player.commander;
+            damage_taken += (commander.health - commander.health_left);
         }
-        var assaults = field.player.assaults;
-        for (var i = 0, len = assaults.length; i < len; i++) {
-            var assault = assaults[i];
-            if (uids && uids[assault.uid]) continue;    // Already counted this card
-            damage_taken += (assault.health - assault.health_left);
-        }
-        var assaults = field.cpu.assaults;
-        for (var i = 0, len = assaults.length; i < len; i++) {
-            var assault = assaults[i];
-            if (uids && uids[assault.uid]) continue;    // Already counted this card
-            damage_dealt += (assault.health - assault.health_left);
-        }
-        var commander = field.cpu.commander;
-        damage_dealt += (commander.health - commander.health_left);
-        var commander = field.player.commander;
-        damage_taken += (commander.health - commander.health_left);
         if (getraid) {
             if (field.cpu.commander.isAlive()) {
                 var points = Math.floor((damage_dealt / totalCpuDeckHealth) / 0.02);
@@ -1662,8 +1691,26 @@ var SIMULATOR = {};
             } else {
                 var points = 200 - Math.floor((damage_taken / totalDeckHealth) / 0.02);
             }
+        } else if (getclash) {
+            if (field.cpu.commander.isAlive()) {
+                var percent = damage_dealt / totalCpuDeckHealth;
+                if (percent >= 0.40) {
+                    var points = 2;
+                } else if (percent >= 0.15) {
+                    var points = 1;
+                } else {
+                    var points = 0;
+                }
+            } else {
+                var points = 3;
+            }
         } else {
-            var points = (field.cpu.commander.isAlive() ? 25 : 130) - Math.floor((damage_taken / totalDeckHealth) / 0.05);
+            if (field.cpu.commander.isAlive()) {
+                var points = Math.floor((damage_dealt / totalCpuDeckHealth) / 0.05);
+                points = Math.max(5, points);
+            } else {
+                var points = 130 - Math.floor((damage_taken / totalDeckHealth) / 0.05);
+            }
         }
         return points;
     }
@@ -1680,6 +1727,7 @@ var SIMULATOR = {};
     var plays = [];
     var totalDeckHealth = 0;
     var totalCpuDeckHealth = 0;
+    var choose_card_callback = null;
 
     // public functions
     SIMULATOR.simulate = simulate;
@@ -1687,84 +1735,92 @@ var SIMULATOR = {};
     SIMULATOR.CalculatePoints = CalculatePoints;
     // public variables
     Object.defineProperties(SIMULATOR, {
-        setupDecks: { 
-            get: function() { 
-                return setupDecks; 
-            }, 
-            set: function(value) {
+        setupDecks: {
+            get: function () {
+                return setupDecks;
+            },
+            set: function (value) {
                 setupDecks = value;
             }
         },
-        setupField: { 
-            get: function() { 
-                return setupField; 
-            }, 
-            set: function(value) {
+        setupField: {
+            get: function () {
+                return setupField;
+            },
+            set: function (value) {
                 setupField = value;
             }
         },
-        deck: { 
-            get: function() { 
-                return deck; 
-            }, 
-            set: function(value) {
+        deck: {
+            get: function () {
+                return deck;
+            },
+            set: function (value) {
                 deck = value;
             }
         },
         field: {
-            get: function() { 
+            get: function () {
                 return field;
-            }, 
-            set: function(value) {
+            },
+            set: function (value) {
                 field = value;
             }
         },
         battlegrounds: {
-            get: function() { 
+            get: function () {
                 return battlegrounds;
-            }, 
-            set: function(value) {
+            },
+            set: function (value) {
                 battlegrounds = value;
             }
         },
         simulation_turns: {
-            get: function() { 
+            get: function () {
                 return simulation_turns;
-            }, 
-            set: function(value) {
+            },
+            set: function (value) {
                 simulation_turns = value;
             }
         },
         simulating: {
-            get: function() { 
+            get: function () {
                 return simulating;
-            }, 
-            set: function(value) {
+            },
+            set: function (value) {
                 simulating = value;
             }
         },
         totalDeckHealth: {
-            get: function() { 
+            get: function () {
                 return totalDeckHealth;
-            }, 
-            set: function(value) {
+            },
+            set: function (value) {
                 totalDeckHealth = value;
             }
         },
         totalCpuDeckHealth: {
-            get: function() { 
+            get: function () {
                 return totalCpuDeckHealth;
-            }, 
-            set: function(value) {
+            },
+            set: function (value) {
                 totalCpuDeckHealth = value;
             }
         },
         user_controlled: {
-            get: function() { 
+            get: function () {
                 return user_controlled;
-            }, 
-            set: function(value) {
+            },
+            set: function (value) {
                 user_controlled = value;
+            }
+        },
+        choose_card_callback: {
+            get: function () {
+                return choose_card_callback;
+            },
+            set: function (value) {
+                choose_card_callback = value;
             }
         }
     });

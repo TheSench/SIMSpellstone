@@ -183,8 +183,12 @@ var drawCardList = function () {
             toggleDeckDisplay(document.getElementById("collapseFilters"));
         }
         for (var id in allCards) {
-            if (id < 10000 && (!onlyNew || spoilers[id])) {
-                addUnit(allCards[id]);
+            if (id < 10000) {
+                if (!onlyNew) {
+                    addUnit(allCards[id]);
+                } else if (spoilers[id]) {
+                    addUnit(allCards[id], spoilers);
+                }
             }
         }
     }
@@ -353,12 +357,15 @@ var addInventoryUnit = function (unit) {
     unitsShown.push(unit);
 }
 
-var addUnit = function (unit) {
+var addUnit = function (unit, spoilers) {
     var id = unit.id;
     var maxlevel = 1;
     if (unit.upgrades) for (var maxlevel in unit.upgrades) { }
     addUnitLevels(id, maxlevel);
-    if (id > 999 && allCards["1" + id]) {
+    if (spoilers) {
+        if (spoilers["1" + id]) addUnitLevels("1" + id, maxlevel);
+        if (spoilers["2" + id]) addUnitLevels("2" + id, maxlevel);
+    } else if (id > 999 && allCards["1" + id]) {
         addUnitLevels("1" + id, maxlevel);
         addUnitLevels("2" + id, maxlevel);
     }
