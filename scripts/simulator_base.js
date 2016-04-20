@@ -1080,7 +1080,7 @@ var SIMULATOR = {};
         return true;
     };
 
-    function chooseCardUserManually(p, shuffledDeck, orderedDeck, redraw) {
+    function chooseCardUserManually(p, shuffledDeck, orderedDeck, turn, redraw) {
         // Prepare 3-card hand
         var hand = shuffledDeck.slice(0, 3);
         var cardsInHand = [];
@@ -1107,7 +1107,7 @@ var SIMULATOR = {};
         }
     }
 
-    function chooseCardOrdered(p, shuffledDeck, orderedDeck, redraw) {
+    function chooseCardOrdered(p, shuffledDeck, orderedDeck, turn, redraw) {
         // Prepare 3-card hand
         var hand = shuffledDeck.slice(0, 3);
 
@@ -1156,7 +1156,7 @@ var SIMULATOR = {};
         return -1;
     }
 
-    function chooseCardRandomly(p, shuffledDeck, orderedDeck, redraw) {
+    function chooseCardRandomly(p, shuffledDeck, orderedDeck, turn, redraw) {
         // Prepare 3-card hand
         var hand = shuffledDeck.slice(0, 3);
 
