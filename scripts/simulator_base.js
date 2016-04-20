@@ -898,6 +898,7 @@ var SIMULATOR = {};
         smartAI = true;
         if (getdeck2) {
             cache_cpu_deck = hash_decode(getdeck2);
+            if (getmission) smartAI = false;
         } else if (getcardlist2) {
             cache_cpu_deck = load_deck_from_cardlist(getcardlist2);
         } else if (getmission) {
