@@ -94,18 +94,18 @@ void Main()
 			var unit = new unit()
 			{
 				id = idPrefixes[i] + unitID.ToString(),
-				name = "New " + imageNumber + " (" + nameSuffixes[i] + ")",
+				name = "",//"New " + imageNumber + " (" + nameSuffixes[i] + ")",
 				picture = imageName + "_" + imageSuffixes[i],
 				rarity = "0",
 				card_type = "2",
 				type = "0",
-				attack = "0",
-				health = "1",
-				cost = "0",
+				attack = "-1",
+				health = "-1",
+				cost = "-1",
 			};
 			units.Add(unit);
 			// Only add these to spoilers if there are other new units - don't want to overwrite spoilers with just new art
-			if (newUnits.Count > 0)
+			if (newUnits.Count > 0 && i != 1)
 			{
 				newUnits.Add(unit.id);
 			}
