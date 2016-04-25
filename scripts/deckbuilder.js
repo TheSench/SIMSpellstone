@@ -1351,12 +1351,12 @@ var hasSkillAdvanced = function (unit, skillInfo) {
     for (var i = 0, len = skills.length; i < len; i++) {
         var skill = skills[i];
         if (skillInfo.id == skill.id) {
-            if (skillInfo.x && (skill.x < skillInfo.x.min || skill.x > skillInfo.x.max)) return false;
-            if (skillInfo.c && (skill.c < skillInfo.c.min || skill.c > skillInfo.c.max)) return false;
-            if (skillInfo.y == -1 && skill.y) return false;
-            if (skillInfo.y > 0 && skill.y != skillInfo.y) return false;
-            if (skillInfo.s && skill.s != skillInfo.s) return false;
-            if (skillInfo.all > -1 && (skill.all || "0") != skillInfo.all) return false;
+            if (skillInfo.x && (skill.x < skillInfo.x.min || skill.x > skillInfo.x.max)) continue;
+            if (skillInfo.c && (skill.c < skillInfo.c.min || skill.c > skillInfo.c.max)) continue;
+            if (skillInfo.y == -1 && skill.y) continue;
+            if (skillInfo.y > 0 && skill.y != skillInfo.y) continue;
+            if (skillInfo.s && skill.s != skillInfo.s) continue;
+            if (skillInfo.all > -1 && (skill.all || "0") != skillInfo.all) continue;
             return true;
         }
     }
