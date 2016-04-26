@@ -71691,7 +71691,7 @@ var MISSIONS = {
     "name": "City of Light",
     "commander": {
         "id": "2"
-},
+    },
     "deck": [
       {
         "id": "1003"
@@ -71733,7 +71733,7 @@ var MISSIONS = {
     "name": "Audience",
     "commander": {
         "id": "2"
-},
+    },
     "deck": [
       {
         "id": "1002"
@@ -71775,7 +71775,7 @@ var MISSIONS = {
     "commander": {
         "id": "2",
         "level": "2"
-},
+    },
     "deck": [
       {
         "id": "1002"
@@ -71814,7 +71814,7 @@ var MISSIONS = {
     "name": "Rebuke",
     "commander": {
         "id": "3"
-},
+    },
     "deck": [
       {
         "id": "1002",
@@ -71857,7 +71857,7 @@ var MISSIONS = {
     "name": "One Small Step",
     "commander": {
         "id": "216"
-},
+    },
     "deck": [
       {
         "id": "1600"
@@ -71905,7 +71905,7 @@ var MISSIONS = {
     "commander": {
         "id": "2",
         "level": "2"
-},
+    },
     "deck": [
       {
         "id": "1004"
@@ -71944,7 +71944,7 @@ var MISSIONS = {
     "name": "Open Fields",
     "commander": {
         "id": "218"
-},
+    },
     "deck": [
       {
         "id": "1602",
@@ -71986,7 +71986,7 @@ var MISSIONS = {
     "name": "Sickness Spreading",
     "commander": {
         "id": "218"
-},
+    },
     "deck": [
       {
         "id": "1602",
@@ -72030,7 +72030,7 @@ var MISSIONS = {
     "commander": {
         "id": "2",
         "level": "2"
-},
+    },
     "deck": [
       {
         "id": "1602",
@@ -72070,7 +72070,7 @@ var MISSIONS = {
     "name": "Guardian's Training",
     "commander": {
         "id": "217"
-},
+    },
     "deck": [
       {
         "id": "1000"
@@ -72117,7 +72117,7 @@ var MISSIONS = {
     "commander": {
         "id": "203",
         "level": "3"
-},
+    },
     "deck": [
       {
         "id": "1602"
@@ -72157,7 +72157,7 @@ var MISSIONS = {
     "commander": {
         "id": "203",
         "level": "2"
-},
+    },
     "deck": [
       {
         "id": "1602"
@@ -72199,7 +72199,7 @@ var MISSIONS = {
     "commander": {
         "id": "218",
         "level": "2"
-},
+    },
     "deck": [
       {
         "id": "1602"
@@ -72238,7 +72238,7 @@ var MISSIONS = {
     "name": "Lightning and Brimstone",
     "commander": {
         "id": "219"
-},
+    },
     "deck": [
       {
         "id": "1303",
@@ -72284,7 +72284,7 @@ var MISSIONS = {
     "name": "Undead Emerge",
     "commander": {
         "id": "200"
-},
+    },
     "deck": [
       {
         "id": "1300"
@@ -72332,7 +72332,7 @@ var MISSIONS = {
     "name": "Unfamiliar Lands",
     "commander": {
         "id": "210"
-},
+    },
     "deck": [
       {
         "id": "1306"
@@ -72371,7 +72371,7 @@ var MISSIONS = {
     "name": "Lava Crab Gang",
     "commander": {
         "id": "210"
-},
+    },
     "deck": [
       {
         "id": "1306"
@@ -72410,7 +72410,7 @@ var MISSIONS = {
     "name": "Rocks and Lava",
     "commander": {
         "id": "210"
-},
+    },
     "deck": [
       {
         "id": "1306"
@@ -72450,7 +72450,7 @@ var MISSIONS = {
     "name": "Titans of Fire",
     "commander": {
         "id": "206"
-},
+    },
     "deck": [
       {
         "id": "1301"
@@ -72492,7 +72492,7 @@ var MISSIONS = {
     "commander": {
         "id": "200",
         "level": "1"
-},
+    },
     "deck": [
       {
         "id": "1300"
@@ -72537,7 +72537,7 @@ var MISSIONS = {
     "name": "Chaotic... Evil?",
     "commander": {
         "id": "210"
-},
+    },
     "deck": [
       {
         "id": "1302"
@@ -72577,7 +72577,7 @@ var MISSIONS = {
     "commander": {
         "id": "210",
         "level": "2"
-},
+    },
     "deck": [
       {
         "id": "1306"
@@ -72616,7 +72616,7 @@ var MISSIONS = {
     "name": "Troubling Travels",
     "commander": {
         "id": "231"
-},
+    },
     "deck": [
       {
         "id": "1306"
@@ -72656,7 +72656,7 @@ var MISSIONS = {
     "commander": {
         "id": "231",
         "level": "2"
-},
+    },
     "deck": [
       {
         "id": "1302"
@@ -72695,7 +72695,7 @@ var MISSIONS = {
     "name": "The Earth Trembles...",
     "commander": {
         "id": "254"
-},
+    },
     "deck": [
       {
         "id": "8005"
@@ -72749,7 +72749,7 @@ var MISSIONS = {
     "name": "The Land Shatters...",
     "commander": {
         "id": "254"
-},
+    },
     "deck": [
       {
         "id": "8005"
@@ -72803,7 +72803,7 @@ var MISSIONS = {
     "name": "Rising from the Depths...",
     "commander": {
         "id": "254"
-},
+    },
     "deck": [
       {
         "id": "8005"
@@ -72857,7 +72857,7 @@ var MISSIONS = {
     "name": "Atlas, the Ancient",
     "commander": {
         "id": "254"
-},
+    },
     "deck": [
       {
         "id": "8005"
@@ -72911,7 +72911,7 @@ var MISSIONS = {
     "name": "The Wind Stirs...",
     "commander": {
         "id": "255"
-},
+    },
     "deck": [
       {
         "id": "8007"
@@ -72965,7 +72965,7 @@ var MISSIONS = {
     "name": "The Clouds Part...",
     "commander": {
         "id": "255"
-},
+    },
     "deck": [
       {
         "id": "8007"
@@ -73022,7 +73022,7 @@ var MISSIONS = {
     "name": "The Air Chills...",
     "commander": {
         "id": "255"
-},
+    },
     "deck": [
       {
         "id": "8007"
@@ -73079,7 +73079,7 @@ var MISSIONS = {
     "name": "Solaron, The Origin",
     "commander": {
         "id": "255"
-},
+    },
     "deck": [
       {
         "id": "8007"
@@ -73133,7 +73133,7 @@ var MISSIONS = {
     "name": "The Heat Rises...",
     "commander": {
         "id": "256"
-},
+    },
     "deck": [
       {
         "id": "8009"
@@ -73184,7 +73184,7 @@ var MISSIONS = {
     "name": "The Lava Flows...",
     "commander": {
         "id": "256"
-},
+    },
     "deck": [
       {
         "id": "8009"
@@ -73239,7 +73239,7 @@ var MISSIONS = {
     "commander": {
         "id": "5",
         "level": "2"
-},
+    },
     "deck": [
       {
         "id": "1302"
@@ -73278,7 +73278,7 @@ var MISSIONS = {
     "name": "The Volcano Erupts...",
     "commander": {
         "id": "256"
-},
+    },
     "deck": [
       {
         "id": "8009"
@@ -73332,7 +73332,7 @@ var MISSIONS = {
     "name": "Vulcanos",
     "commander": {
         "id": "256"
-},
+    },
     "deck": [
       {
         "id": "8009"
@@ -73393,7 +73393,7 @@ var MISSIONS = {
     "name": "The Road Traveled",
     "commander": {
         "id": "224"
-},
+    },
     "deck": [
       {
         "id": "5022"
@@ -73454,7 +73454,7 @@ var MISSIONS = {
     "name": "Field Observation",
     "commander": {
         "id": "203"
-},
+    },
     "deck": [
       {
         "id": "7017"
@@ -73515,7 +73515,7 @@ var MISSIONS = {
     "name": "Real Time Training",
     "commander": {
         "id": "210"
-},
+    },
     "deck": [
       {
         "id": "1616"
@@ -73572,7 +73572,7 @@ var MISSIONS = {
     "name": "Action and Reaction",
     "commander": {
         "id": "226"
-},
+    },
     "deck": [
       {
         "id": "1314"
@@ -73630,10 +73630,10 @@ var MISSIONS = {
   },
   "1516": {
     "id": "1516",
-    "name": "Quite Confidence",
+    "name": "Golden Rule",
     "commander": {
         "id": "238"
-},
+    },
     "deck": [
       {
         "id": "5006"
@@ -73687,10 +73687,10 @@ var MISSIONS = {
   },
   "1517": {
     "id": "1517",
-    "name": "Golden Rule",
+    "name": "Quite Confidence",
     "commander": {
         "id": "243"
-},
+    },
     "deck": [
       {
         "id": "1312"
@@ -73747,7 +73747,7 @@ var MISSIONS = {
     "name": "Ocean View",
     "commander": {
         "id": "224"
-},
+    },
     "deck": [
       {
         "id": "1317"
@@ -73808,7 +73808,7 @@ var MISSIONS = {
     "name": "Concerned Citizen",
     "commander": {
         "id": "223"
-},
+    },
     "deck": [
       {
         "id": "1018"
@@ -73870,7 +73870,7 @@ var MISSIONS = {
     "commander": {
         "id": "5",
         "level": "2"
-},
+    },
     "deck": [
       {
         "id": "1302"
@@ -73909,7 +73909,7 @@ var MISSIONS = {
     "name": "Exposure Therapy",
     "commander": {
         "id": "200"
-},
+    },
     "deck": [
       {
         "id": "1615"
@@ -73966,7 +73966,7 @@ var MISSIONS = {
     "name": "Finding Strength",
     "commander": {
         "id": "225"
-},
+    },
     "deck": [
       {
         "id": "6007"
@@ -74027,7 +74027,7 @@ var MISSIONS = {
     "name": "Dark Betrayal",
     "commander": {
         "id": "265"
-},
+    },
     "deck": [
       {
         "id": "1315"
@@ -74084,7 +74084,7 @@ var MISSIONS = {
     "name": "Scent in the Water",
     "commander": {
         "id": "268"
-},
+    },
     "deck": [
       {
         "id": "1019"
@@ -74137,7 +74137,7 @@ var MISSIONS = {
     "name": "What Ails",
     "commander": {
         "id": "223"
-},
+    },
     "deck": [
       {
         "id": "1015"
@@ -74198,7 +74198,7 @@ var MISSIONS = {
     "name": "Showing Symptoms",
     "commander": {
         "id": "200"
-},
+    },
     "deck": [
       {
         "id": "5017"
@@ -74259,7 +74259,7 @@ var MISSIONS = {
     "name": "Salt Side Laboratory",
     "commander": {
         "id": "210"
-},
+    },
     "deck": [
       {
         "id": "6012"
@@ -74316,7 +74316,7 @@ var MISSIONS = {
     "name": "Flower for the Lady",
     "commander": {
         "id": "205"
-},
+    },
     "deck": [
       {
         "id": "1311"
@@ -74377,7 +74377,7 @@ var MISSIONS = {
     "name": "Building Burdens",
     "commander": {
         "id": "299"
-},
+    },
     "deck": [
       {
         "id": "1318"
@@ -74434,7 +74434,7 @@ var MISSIONS = {
     "name": "Bottoms Up",
     "commander": {
         "id": "252"
-},
+    },
     "deck": [
       {
         "id": "7022"
@@ -74492,7 +74492,7 @@ var MISSIONS = {
     "commander": {
         "id": "206",
         "level": "2"
-},
+    },
     "deck": [
       {
         "id": "1306"
@@ -74531,7 +74531,7 @@ var MISSIONS = {
     "name": "Making Amends",
     "commander": {
         "id": "208"
-},
+    },
     "deck": [
       {
         "id": "7006"
@@ -74592,7 +74592,7 @@ var MISSIONS = {
     "name": "Onward",
     "commander": {
         "id": "290"
-},
+    },
     "deck": [
       {
         "id": "1312"
@@ -74653,7 +74653,7 @@ var MISSIONS = {
     "name": "In the Shadows",
     "commander": {
         "id": "227"
-},
+    },
     "deck": [
       {
         "id": "1619"
@@ -74710,7 +74710,7 @@ var MISSIONS = {
     "name": "To the Sorceress",
     "commander": {
         "id": "267"
-},
+    },
     "deck": [
       {
         "id": "5012"
@@ -74771,7 +74771,7 @@ var MISSIONS = {
     "name": "Cave Dwelling",
     "commander": {
         "id": "293"
-},
+    },
     "deck": [
       {
         "id": "1315"
@@ -74831,7 +74831,7 @@ var MISSIONS = {
     "name": "Outsider to Outsider",
     "commander": {
         "id": "271"
-},
+    },
     "deck": [
       {
         "id": "6022"
@@ -74885,7 +74885,7 @@ var MISSIONS = {
     "name": "Bookworm",
     "commander": {
         "id": "246"
-},
+    },
     "deck": [
       {
         "id": "1014"
@@ -74946,7 +74946,7 @@ var MISSIONS = {
     "name": "Dark Presence",
     "commander": {
         "id": "238"
-},
+    },
     "deck": [
       {
         "id": "1017"
@@ -75010,7 +75010,7 @@ var MISSIONS = {
     "name": "Tattle Tale",
     "commander": {
         "id": "227"
-},
+    },
     "deck": [
       {
         "id": "7017"
@@ -75067,7 +75067,7 @@ var MISSIONS = {
     "name": "Smooth Introduction",
     "commander": {
         "id": "266"
-},
+    },
     "deck": [
       {
         "id": "7012"
@@ -75128,7 +75128,7 @@ var MISSIONS = {
     "name": "Lord of the Undead",
     "commander": {
         "id": "207"
-},
+    },
     "deck": [
       {
         "id": "1329",
@@ -75157,7 +75157,7 @@ var MISSIONS = {
     "name": "Territory Control",
     "commander": {
         "id": "243"
-},
+    },
     "deck": [
       {
         "id": "1012"
@@ -75214,7 +75214,7 @@ var MISSIONS = {
     "name": "Winning Hand",
     "commander": {
         "id": "264"
-},
+    },
     "deck": [
       {
         "id": "1618"
@@ -75271,7 +75271,7 @@ var MISSIONS = {
     "name": "Guard Duty",
     "commander": {
         "id": "211"
-},
+    },
     "deck": [
       {
         "id": "1018"
@@ -75332,7 +75332,7 @@ var MISSIONS = {
     "name": "Idle Hands",
     "commander": {
         "id": "206"
-},
+    },
     "deck": [
       {
         "id": "1313"
@@ -75393,7 +75393,7 @@ var MISSIONS = {
     "name": "Enemy Spotted",
     "commander": {
         "id": "277"
-},
+    },
     "deck": [
       {
         "id": "1315"
@@ -75450,7 +75450,7 @@ var MISSIONS = {
     "name": "Minced Meat",
     "commander": {
         "id": "289"
-},
+    },
     "deck": [
       {
         "id": "6012"
@@ -75511,7 +75511,7 @@ var MISSIONS = {
     "name": "Pangs of War",
     "commander": {
         "id": "275"
-},
+    },
     "deck": [
       {
         "id": "7007"
@@ -75572,7 +75572,7 @@ var MISSIONS = {
     "name": "Iron Stomach",
     "commander": {
         "id": "268"
-},
+    },
     "deck": [
       {
         "id": "1012"
@@ -75629,7 +75629,7 @@ var MISSIONS = {
     "name": "Path to The Void",
     "commander": {
         "id": "231"
-},
+    },
     "deck": [
       {
         "id": "1302"
@@ -75669,7 +75669,7 @@ var MISSIONS = {
     "commander": {
         "id": "231",
         "level": "2"
-},
+    },
     "deck": [
       {
         "id": "1307"
@@ -75709,7 +75709,7 @@ var MISSIONS = {
     "commander": {
         "id": "206",
         "level": "2"
-},
+    },
     "deck": [
       {
         "id": "1305"
@@ -75748,7 +75748,7 @@ var MISSIONS = {
     "name": "Fire Twins",
     "commander": {
         "id": "222"
-},
+    },
     "deck": [
       {
         "id": "1302"
@@ -75788,7 +75788,7 @@ var MISSIONS = {
     "commander": {
         "id": "206",
         "level": "2"
-},
+    },
     "deck": [
       {
         "id": "1311"
@@ -75827,7 +75827,7 @@ var MISSIONS = {
     "name": "Kicking the Nest",
     "commander": {
         "id": "211"
-},
+    },
     "deck": [
       {
         "id": "1313"
@@ -75866,7 +75866,7 @@ var MISSIONS = {
     "name": "Purging",
     "commander": {
         "id": "211"
-},
+    },
     "deck": [
       {
         "id": "1311"
@@ -75905,7 +75905,7 @@ var MISSIONS = {
     "name": "Wraith's Den",
     "commander": {
         "id": "211"
-},
+    },
     "deck": [
       {
         "id": "1319"
@@ -75945,7 +75945,7 @@ var MISSIONS = {
     "name": "Pre-emptive Strike",
     "commander": {
         "id": "208"
-},
+    },
     "deck": [
       {
         "id": "1319"
@@ -75986,7 +75986,7 @@ var MISSIONS = {
     "name": "The Second Wave",
     "commander": {
         "id": "208"
-},
+    },
     "deck": [
       {
         "id": "1306"
@@ -76025,7 +76025,7 @@ var MISSIONS = {
     "name": "Clash",
     "commander": {
         "id": "208"
-},
+    },
     "deck": [
       {
         "id": "1010"
@@ -76064,7 +76064,7 @@ var MISSIONS = {
     "name": "The Void's Champion",
     "commander": {
         "id": "209"
-},
+    },
     "deck": [
       {
         "id": "1312"
@@ -76103,7 +76103,7 @@ var MISSIONS = {
     "name": "Caverns of Crossing",
     "commander": {
         "id": "212"
-},
+    },
     "deck": [
       {
         "id": "1011"
@@ -76143,7 +76143,7 @@ var MISSIONS = {
     "name": "Depths of the World",
     "commander": {
         "id": "212"
-},
+    },
     "deck": [
       {
         "id": "1311"
@@ -76182,7 +76182,7 @@ var MISSIONS = {
     "name": "Deep Tremors",
     "commander": {
         "id": "212"
-},
+    },
     "deck": [
       {
         "id": "1613"
@@ -76221,7 +76221,7 @@ var MISSIONS = {
     "name": "Mr. Bear, Tear Down This Wall",
     "commander": {
         "id": "212"
-},
+    },
     "deck": [
       {
         "id": "1313"
@@ -76260,7 +76260,7 @@ var MISSIONS = {
     "name": "The Ridge",
     "commander": {
         "id": "220"
-},
+    },
     "deck": [
       {
         "id": "1012"
@@ -76300,7 +76300,7 @@ var MISSIONS = {
     "name": "From the Pits",
     "commander": {
         "id": "220"
-},
+    },
     "deck": [
       {
         "id": "1610"
@@ -76339,7 +76339,7 @@ var MISSIONS = {
     "name": "A Strange Man",
     "commander": {
         "id": "220"
-},
+    },
     "deck": [
       {
         "id": "1610"
@@ -76378,7 +76378,7 @@ var MISSIONS = {
     "name": "Malchior, Grand Excavator",
     "commander": {
         "id": "213"
-},
+    },
     "deck": [
       {
         "id": "1010"
@@ -76417,7 +76417,7 @@ var MISSIONS = {
     "name": "Armored Up!",
     "commander": {
         "id": "217"
-},
+    },
     "deck": [
       {
         "id": "1001"
@@ -76464,7 +76464,7 @@ var MISSIONS = {
     "commander": {
         "id": "220",
         "level": "2"
-},
+    },
     "deck": [
       {
         "id": "1010"
@@ -76505,7 +76505,7 @@ var MISSIONS = {
     "commander": {
         "id": "220",
         "level": "2"
-},
+    },
     "deck": [
       {
         "id": "1311"
@@ -76544,7 +76544,7 @@ var MISSIONS = {
     "name": "Rumble Tumble",
     "commander": {
         "id": "220"
-},
+    },
     "deck": [
       {
         "id": "1311"
@@ -76583,7 +76583,7 @@ var MISSIONS = {
     "name": "Source of the Tremors",
     "commander": {
         "id": "214"
-},
+    },
     "deck": [
       {
         "id": "1311"
@@ -76622,7 +76622,7 @@ var MISSIONS = {
     "name": "The Buried Cache",
     "commander": {
         "id": "217"
-},
+    },
     "deck": [
       {
         "id": "1001"
@@ -76672,7 +76672,7 @@ var MISSIONS = {
     "commander": {
         "id": "210",
         "level": "2"
-},
+    },
     "deck": [
       {
         "id": "1318"
@@ -76712,7 +76712,7 @@ var MISSIONS = {
     "commander": {
         "id": "210",
         "level": "2"
-},
+    },
     "deck": [
       {
         "id": "1311"
@@ -76752,7 +76752,7 @@ var MISSIONS = {
     "commander": {
         "id": "210",
         "level": "3"
-},
+    },
     "deck": [
       {
         "id": "1018"
@@ -76792,7 +76792,7 @@ var MISSIONS = {
     "commander": {
         "id": "210",
         "level": "3"
-},
+    },
     "deck": [
       {
         "id": "1311"
@@ -76831,7 +76831,7 @@ var MISSIONS = {
     "name": "Scourge",
     "commander": {
         "id": "200"
-},
+    },
     "deck": [
       {
         "id": "1300"
@@ -76879,7 +76879,7 @@ var MISSIONS = {
     "name": "Aether Raid",
     "commander": {
         "id": "221"
-},
+    },
     "deck": [
       {
         "id": "1014"
@@ -76918,7 +76918,7 @@ var MISSIONS = {
     "name": "Falling Feathers",
     "commander": {
         "id": "221"
-},
+    },
     "deck": [
       {
         "id": "1010"
@@ -76958,7 +76958,7 @@ var MISSIONS = {
     "commander": {
         "id": "2",
         "level": "3"
-},
+    },
     "deck": [
       {
         "id": "1017"
@@ -76998,7 +76998,7 @@ var MISSIONS = {
     "commander": {
         "id": "2",
         "level": "3"
-},
+    },
     "deck": [
       {
         "id": "1019"
@@ -77034,7 +77034,7 @@ var MISSIONS = {
     "name": "Savior",
     "commander": {
         "id": "200"
-},
+    },
     "deck": [
       {
         "id": "1300"
@@ -77082,7 +77082,7 @@ var MISSIONS = {
     "commander": {
         "id": "3",
         "level": "2"
-},
+    },
     "deck": [
       {
         "id": "1011"
@@ -77122,7 +77122,7 @@ var MISSIONS = {
     "commander": {
         "id": "3",
         "level": "4"
-},
+    },
     "deck": [
       {
         "id": "1017"
@@ -77159,7 +77159,7 @@ var MISSIONS = {
     "commander": {
         "id": "3",
         "level": "6"
-},
+    },
     "deck": [
       {
         "id": "1011"
@@ -77198,7 +77198,7 @@ var MISSIONS = {
     "name": "The Void",
     "commander": {
         "id": "215"
-},
+    },
     "deck": [
       {
         "id": "1315",
@@ -77239,7 +77239,7 @@ var MISSIONS = {
     "name": "Call From the Emperor ",
     "commander": {
         "id": "280"
-},
+    },
     "deck": [
       {
         "id": "1616"
@@ -77290,7 +77290,7 @@ var MISSIONS = {
     "name": "To the Swamps",
     "commander": {
         "id": "281"
-},
+    },
     "deck": [
       {
         "id": "7006"
@@ -77341,7 +77341,7 @@ var MISSIONS = {
     "name": "Thick Goop",
     "commander": {
         "id": "247"
-},
+    },
     "deck": [
       {
         "id": "5012"
@@ -77392,7 +77392,7 @@ var MISSIONS = {
     "name": "Royal Company",
     "commander": {
         "id": "282"
-},
+    },
     "deck": [
       {
         "id": "7012"
@@ -77443,7 +77443,7 @@ var MISSIONS = {
     "name": "Cloudy Waters",
     "commander": {
         "id": "280"
-},
+    },
     "deck": [
       {
         "id": "1618"
@@ -77494,7 +77494,7 @@ var MISSIONS = {
     "name": "Fog of War",
     "commander": {
         "id": "281"
-},
+    },
     "deck": [
       {
         "id": "6017"
@@ -77545,7 +77545,7 @@ var MISSIONS = {
     "name": "Marks of the Void",
     "commander": {
         "id": "283"
-},
+    },
     "deck": [
       {
         "id": "6017"
@@ -77596,7 +77596,7 @@ var MISSIONS = {
     "name": "Bad Fur Day",
     "commander": {
         "id": "284"
-},
+    },
     "deck": [
       {
         "id": "1613"
@@ -77647,7 +77647,7 @@ var MISSIONS = {
     "name": "Rough Roads",
     "commander": {
         "id": "247"
-},
+    },
     "deck": [
       {
         "id": "6007"
@@ -77698,7 +77698,7 @@ var MISSIONS = {
     "name": "Rabid Wylds",
     "commander": {
         "id": "282"
-},
+    },
     "deck": [
       {
         "id": "7007"
@@ -77749,7 +77749,7 @@ var MISSIONS = {
     "name": "Seeping Toxins",
     "commander": {
         "id": "283"
-},
+    },
     "deck": [
       {
         "id": "7022"
@@ -77800,7 +77800,7 @@ var MISSIONS = {
     "name": "Plod On",
     "commander": {
         "id": "284"
-},
+    },
     "deck": [
       {
         "id": "1613"
@@ -77851,7 +77851,7 @@ var MISSIONS = {
     "name": "Unfamiliar Footsteps",
     "commander": {
         "id": "280"
-},
+    },
     "deck": [
       {
         "id": "7006"
@@ -77902,7 +77902,7 @@ var MISSIONS = {
     "name": "A Step in the Right Direction",
     "commander": {
         "id": "281"
-},
+    },
     "deck": [
       {
         "id": "6006"
@@ -77953,7 +77953,7 @@ var MISSIONS = {
     "name": "Glowing Prints",
     "commander": {
         "id": "247"
-},
+    },
     "deck": [
       {
         "id": "1615"
@@ -78004,7 +78004,7 @@ var MISSIONS = {
     "name": "Big Step, Small Step",
     "commander": {
         "id": "284"
-},
+    },
     "deck": [
       {
         "id": "1315"
@@ -78055,7 +78055,7 @@ var MISSIONS = {
     "name": "A Broken Home",
     "commander": {
         "id": "280"
-},
+    },
     "deck": [
       {
         "id": "6022"
@@ -78106,7 +78106,7 @@ var MISSIONS = {
     "name": "Filthy Pests",
     "commander": {
         "id": "281"
-},
+    },
     "deck": [
       {
         "id": "1015"
@@ -78157,7 +78157,7 @@ var MISSIONS = {
     "name": "Beyond the Bush",
     "commander": {
         "id": "282"
-},
+    },
     "deck": [
       {
         "id": "1018"
@@ -78208,7 +78208,7 @@ var MISSIONS = {
     "name": "Don't Wake the Babies",
     "commander": {
         "id": "285"
-},
+    },
     "deck": [
       {
         "id": "1616"
@@ -78259,7 +78259,7 @@ var MISSIONS = {
     "name": "Cries of the Young",
     "commander": {
         "id": "247"
-},
+    },
     "deck": [
       {
         "id": "5012"
@@ -78310,7 +78310,7 @@ var MISSIONS = {
     "name": "What Hunger Brings",
     "commander": {
         "id": "283"
-},
+    },
     "deck": [
       {
         "id": "1614"
@@ -78361,7 +78361,7 @@ var MISSIONS = {
     "name": "Last Leg",
     "commander": {
         "id": "285"
-},
+    },
     "deck": [
       {
         "id": "1313"
@@ -78412,7 +78412,7 @@ var MISSIONS = {
     "name": "Corrupter's Wrath",
     "commander": {
         "id": "286"
-},
+    },
     "deck": [
       {
         "id": "6022"
@@ -78463,7 +78463,7 @@ var MISSIONS = {
     "name": "Protecting the Tools",
     "commander": {
         "id": "200"
-},
+    },
     "deck": [
       {
         "id": "1300"
@@ -78499,6 +78499,210 @@ var MISSIONS = {
       {
         "id": "1314",
         "mastery_level": "3"
+      },
+    ]
+  },
+  "311": {
+    "id": "311",
+    "name": "From the Muck",
+    "commander": {
+        "id": "298"
+    },
+    "deck": [
+      {
+        "id": "1315"
+      },
+      {
+        "id": "1315"
+      },
+      {
+        "id": "1613"
+      },
+      {
+        "id": "1613"
+      },
+      {
+        "id": "2019"
+      },
+      {
+        "id": "7020"
+      },
+      {
+        "id": "7034"
+      },
+      {
+        "id": "7016"
+      },
+      {
+        "id": "6011"
+      },
+      {
+        "id": "6042"
+      },
+      {
+        "id": "5050",
+        "mastery_level": "4"
+      },
+      {
+        "id": "5019",
+        "mastery_level": "6"
+      },
+      {
+        "id": "7043",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "312": {
+    "id": "312",
+    "name": "Lingering Trails",
+    "commander": {
+        "id": "299"
+    },
+    "deck": [
+      {
+        "id": "1014"
+      },
+      {
+        "id": "1014"
+      },
+      {
+        "id": "1014"
+      },
+      {
+        "id": "1311"
+      },
+      {
+        "id": "2025"
+      },
+      {
+        "id": "2027"
+      },
+      {
+        "id": "6004"
+      },
+      {
+        "id": "1328"
+      },
+      {
+        "id": "5010"
+      },
+      {
+        "id": "2030"
+      },
+      {
+        "id": "1630",
+        "mastery_level": "4"
+      },
+      {
+        "id": "5031",
+        "mastery_level": "6"
+      },
+      {
+        "id": "5029",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "313": {
+    "id": "313",
+    "name": "Thorough Exam",
+    "commander": {
+        "id": "300"
+    },
+    "deck": [
+      {
+        "id": "1018"
+      },
+      {
+        "id": "1018"
+      },
+      {
+        "id": "5006"
+      },
+      {
+        "id": "5006"
+      },
+      {
+        "id": "2032"
+      },
+      {
+        "id": "6021"
+      },
+      {
+        "id": "6016"
+      },
+      {
+        "id": "7047"
+      },
+      {
+        "id": "2031"
+      },
+      {
+        "id": "7038"
+      },
+      {
+        "id": "1331",
+        "mastery_level": "4"
+      },
+      {
+        "id": "6028",
+        "mastery_level": "6"
+      },
+      {
+        "id": "5049",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "314": {
+    "id": "314",
+    "name": "Long Way from Home",
+    "commander": {
+        "id": "298"
+    },
+    "deck": [
+      {
+        "id": "5006"
+      },
+      {
+        "id": "5006"
+      },
+      {
+        "id": "1318"
+      },
+      {
+        "id": "5035"
+      },
+      {
+        "id": "6044"
+      },
+      {
+        "id": "7005"
+      },
+      {
+        "id": "7045"
+      },
+      {
+        "id": "6010"
+      },
+      {
+        "id": "7015"
+      },
+      {
+        "id": "2002"
+      },
+      {
+        "id": "6026",
+        "mastery_level": "4"
+      },
+      {
+        "id": "7009",
+        "mastery_level": "6"
+      },
+      {
+        "id": "5042",
+        "mastery_level": "7"
       },
     ]
   },
@@ -78507,7 +78711,7 @@ var MISSIONS = {
     "name": "Collateral Damage",
     "commander": {
         "id": "200"
-},
+    },
     "deck": [
       {
         "id": "1300"
@@ -78548,12 +78752,216 @@ var MISSIONS = {
       },
     ]
   },
+  "321": {
+    "id": "321",
+    "name": "It Takes Two",
+    "commander": {
+        "id": "299"
+    },
+    "deck": [
+      {
+        "id": "6017"
+      },
+      {
+        "id": "6017"
+      },
+      {
+        "id": "1012"
+      },
+      {
+        "id": "1615"
+      },
+      {
+        "id": "2009"
+      },
+      {
+        "id": "6046"
+      },
+      {
+        "id": "2019"
+      },
+      {
+        "id": "7035"
+      },
+      {
+        "id": "7015"
+      },
+      {
+        "id": "1630"
+      },
+      {
+        "id": "7004",
+        "mastery_level": "5"
+      },
+      {
+        "id": "5001",
+        "mastery_level": "6"
+      },
+      {
+        "id": "7013",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "322": {
+    "id": "322",
+    "name": "Precautionary Measures",
+    "commander": {
+        "id": "298"
+    },
+    "deck": [
+      {
+        "id": "7012"
+      },
+      {
+        "id": "7012"
+      },
+      {
+        "id": "6006"
+      },
+      {
+        "id": "2003"
+      },
+      {
+        "id": "5024"
+      },
+      {
+        "id": "1325"
+      },
+      {
+        "id": "2023"
+      },
+      {
+        "id": "5025"
+      },
+      {
+        "id": "5004"
+      },
+      {
+        "id": "5010"
+      },
+      {
+        "id": "5023",
+        "mastery_level": "4"
+      },
+      {
+        "id": "6043",
+        "mastery_level": "6"
+      },
+      {
+        "id": "7008",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "323": {
+    "id": "323",
+    "name": "Leap of Faith",
+    "commander": {
+        "id": "300"
+    },
+    "deck": [
+      {
+        "id": "1315"
+      },
+      {
+        "id": "7006"
+      },
+      {
+        "id": "7006"
+      },
+      {
+        "id": "5033"
+      },
+      {
+        "id": "1331"
+      },
+      {
+        "id": "1331"
+      },
+      {
+        "id": "1632"
+      },
+      {
+        "id": "2000"
+      },
+      {
+        "id": "1330"
+      },
+      {
+        "id": "1325"
+      },
+      {
+        "id": "6009",
+        "mastery_level": "4"
+      },
+      {
+        "id": "5037",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6035",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "324": {
+    "id": "324",
+    "name": "Beach View",
+    "commander": {
+        "id": "301"
+    },
+    "deck": [
+      {
+        "id": "1313"
+      },
+      {
+        "id": "1017"
+      },
+      {
+        "id": "1017"
+      },
+      {
+        "id": "1028"
+      },
+      {
+        "id": "7011"
+      },
+      {
+        "id": "1627"
+      },
+      {
+        "id": "5030"
+      },
+      {
+        "id": "5005"
+      },
+      {
+        "id": "1027"
+      },
+      {
+        "id": "1327"
+      },
+      {
+        "id": "5034",
+        "mastery_level": "4"
+      },
+      {
+        "id": "6019",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6033",
+        "mastery_level": "7"
+      },
+    ]
+  },
   "33": {
     "id": "33",
     "name": "Shattering",
     "commander": {
         "id": "223"
-},
+    },
     "deck": [
       {
         "id": "1000"
@@ -78593,12 +79001,216 @@ var MISSIONS = {
       },
     ]
   },
+  "331": {
+    "id": "331",
+    "name": "Rocky Road",
+    "commander": {
+        "id": "299"
+    },
+    "deck": [
+      {
+        "id": "1010"
+      },
+      {
+        "id": "1313"
+      },
+      {
+        "id": "6029"
+      },
+      {
+        "id": "2024"
+      },
+      {
+        "id": "1330"
+      },
+      {
+        "id": "6029"
+      },
+      {
+        "id": "1331"
+      },
+      {
+        "id": "1025"
+      },
+      {
+        "id": "2005"
+      },
+      {
+        "id": "2020"
+      },
+      {
+        "id": "2028",
+        "mastery_level": "4"
+      },
+      {
+        "id": "5043",
+        "mastery_level": "6"
+      },
+      {
+        "id": "7036",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "332": {
+    "id": "332",
+    "name": "The Hidden Citadel ",
+    "commander": {
+        "id": "298"
+    },
+    "deck": [
+      {
+        "id": "1012"
+      },
+      {
+        "id": "1012"
+      },
+      {
+        "id": "1615"
+      },
+      {
+        "id": "1030"
+      },
+      {
+        "id": "7034"
+      },
+      {
+        "id": "2031"
+      },
+      {
+        "id": "1625"
+      },
+      {
+        "id": "5035"
+      },
+      {
+        "id": "5015"
+      },
+      {
+        "id": "1028"
+      },
+      {
+        "id": "1642",
+        "mastery_level": "4"
+      },
+      {
+        "id": "7002",
+        "mastery_level": "6"
+      },
+      {
+        "id": "5002",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "333": {
+    "id": "333",
+    "name": "Locked Away",
+    "commander": {
+        "id": "300"
+    },
+    "deck": [
+      {
+        "id": "1015"
+      },
+      {
+        "id": "1017"
+      },
+      {
+        "id": "1328"
+      },
+      {
+        "id": "1328"
+      },
+      {
+        "id": "1627"
+      },
+      {
+        "id": "5005"
+      },
+      {
+        "id": "1026"
+      },
+      {
+        "id": "7029"
+      },
+      {
+        "id": "5020"
+      },
+      {
+        "id": "1630"
+      },
+      {
+        "id": "7032",
+        "mastery_level": "4"
+      },
+      {
+        "id": "6014",
+        "mastery_level": "6"
+      },
+      {
+        "id": "1043",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "334": {
+    "id": "334",
+    "name": "Pop and Unlock",
+    "commander": {
+        "id": "301"
+    },
+    "deck": [
+      {
+        "id": "1019"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "7021"
+      },
+      {
+        "id": "7045"
+      },
+      {
+        "id": "5044"
+      },
+      {
+        "id": "5021"
+      },
+      {
+        "id": "6015"
+      },
+      {
+        "id": "7005"
+      },
+      {
+        "id": "5028"
+      },
+      {
+        "id": "5030"
+      },
+      {
+        "id": "6047",
+        "mastery_level": "4"
+      },
+      {
+        "id": "6039",
+        "mastery_level": "6"
+      },
+      {
+        "id": "5045",
+        "mastery_level": "7"
+      },
+    ]
+  },
   "34": {
     "id": "34",
     "name": "Missing Cache?!",
     "commander": {
         "id": "223"
-},
+    },
     "deck": [
       {
         "id": "1000"
@@ -78638,12 +79250,621 @@ var MISSIONS = {
       },
     ]
   },
+  "341": {
+    "id": "341",
+    "name": "Sleeping on the Job",
+    "commander": {
+        "id": "299"
+    },
+    "deck": [
+      {
+        "id": "1617"
+      },
+      {
+        "id": "7012"
+      },
+      {
+        "id": "1014"
+      },
+      {
+        "id": "7024"
+      },
+      {
+        "id": "2001"
+      },
+      {
+        "id": "5016"
+      },
+      {
+        "id": "2019"
+      },
+      {
+        "id": "6016"
+      },
+      {
+        "id": "5011"
+      },
+      {
+        "id": "1030"
+      },
+      {
+        "id": "6032",
+        "mastery_level": "4"
+      },
+      {
+        "id": "6041",
+        "mastery_level": "6"
+      },
+      {
+        "id": "5042",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "342": {
+    "id": "342",
+    "name": "Up and At'Em",
+    "commander": {
+        "id": "302"
+    },
+    "deck": [
+      {
+        "id": "1314"
+      },
+      {
+        "id": "1313"
+      },
+      {
+        "id": "7038"
+      },
+      {
+        "id": "7047"
+      },
+      {
+        "id": "2014"
+      },
+      {
+        "id": "2011"
+      },
+      {
+        "id": "1627"
+      },
+      {
+        "id": "1328"
+      },
+      {
+        "id": "7034"
+      },
+      {
+        "id": "7011"
+      },
+      {
+        "id": "7042",
+        "mastery_level": "4"
+      },
+      {
+        "id": "7039",
+        "mastery_level": "6"
+      },
+      {
+        "id": "7001",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "343": {
+    "id": "343",
+    "name": "Sign of a Friend",
+    "commander": {
+        "id": "298"
+    },
+    "deck": [
+      {
+        "id": "5012"
+      },
+      {
+        "id": "1019"
+      },
+      {
+        "id": "6034"
+      },
+      {
+        "id": "7041"
+      },
+      {
+        "id": "1327"
+      },
+      {
+        "id": "2030"
+      },
+      {
+        "id": "1629"
+      },
+      {
+        "id": "2005"
+      },
+      {
+        "id": "5028"
+      },
+      {
+        "id": "2023"
+      },
+      {
+        "id": "7023",
+        "mastery_level": "4"
+      },
+      {
+        "id": "7046",
+        "mastery_level": "6"
+      },
+      {
+        "id": "7037",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "344": {
+    "id": "344",
+    "name": "Hidden Treasures ",
+    "commander": {
+        "id": "301"
+    },
+    "deck": [
+      {
+        "id": "1014"
+      },
+      {
+        "id": "2027"
+      },
+      {
+        "id": "2027"
+      },
+      {
+        "id": "2025"
+      },
+      {
+        "id": "6042"
+      },
+      {
+        "id": "5040"
+      },
+      {
+        "id": "1028"
+      },
+      {
+        "id": "5015"
+      },
+      {
+        "id": "7005"
+      },
+      {
+        "id": "7041"
+      },
+      {
+        "id": "5001",
+        "mastery_level": "4"
+      },
+      {
+        "id": "5031",
+        "mastery_level": "6"
+      },
+      {
+        "id": "5032",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "351": {
+    "id": "351",
+    "name": "Hesitations of the Holy",
+    "commander": {
+        "id": "301"
+    },
+    "deck": [
+      {
+        "id": "1312"
+      },
+      {
+        "id": "6007"
+      },
+      {
+        "id": "6034"
+      },
+      {
+        "id": "2023"
+      },
+      {
+        "id": "1628"
+      },
+      {
+        "id": "6005"
+      },
+      {
+        "id": "1332"
+      },
+      {
+        "id": "6029"
+      },
+      {
+        "id": "2024"
+      },
+      {
+        "id": "6036"
+      },
+      {
+        "id": "6037",
+        "mastery_level": "4"
+      },
+      {
+        "id": "2013",
+        "mastery_level": "6"
+      },
+      {
+        "id": "7033",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "352": {
+    "id": "352",
+    "name": "Sickness Abound",
+    "commander": {
+        "id": "299"
+    },
+    "deck": [
+      {
+        "id": "6007"
+      },
+      {
+        "id": "6007"
+      },
+      {
+        "id": "5046"
+      },
+      {
+        "id": "1032"
+      },
+      {
+        "id": "1331"
+      },
+      {
+        "id": "2012"
+      },
+      {
+        "id": "6046"
+      },
+      {
+        "id": "6031"
+      },
+      {
+        "id": "2032"
+      },
+      {
+        "id": "1325"
+      },
+      {
+        "id": "5048"
+      },
+      {
+        "id": "6049"
+      },
+      {
+        "id": "5009"
+      },
+    ]
+  },
+  "353": {
+    "id": "353",
+    "name": "One with the Force",
+    "commander": {
+        "id": "300"
+    },
+    "deck": [
+      {
+        "id": "7012"
+      },
+      {
+        "id": "7012"
+      },
+      {
+        "id": "6025"
+      },
+      {
+        "id": "6044"
+      },
+      {
+        "id": "7010"
+      },
+      {
+        "id": "5024"
+      },
+      {
+        "id": "2031"
+      },
+      {
+        "id": "1030"
+      },
+      {
+        "id": "2002"
+      },
+      {
+        "id": "2003"
+      },
+      {
+        "id": "7039",
+        "mastery_level": "4"
+      },
+      {
+        "id": "6024",
+        "mastery_level": "6"
+      },
+      {
+        "id": "5000",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "354": {
+    "id": "354",
+    "name": "The Test Begins",
+    "commander": {
+        "id": "301"
+    },
+    "deck": [
+      {
+        "id": "1613"
+      },
+      {
+        "id": "1628"
+      },
+      {
+        "id": "6016"
+      },
+      {
+        "id": "2001"
+      },
+      {
+        "id": "6038"
+      },
+      {
+        "id": "1027"
+      },
+      {
+        "id": "2021"
+      },
+      {
+        "id": "1030"
+      },
+      {
+        "id": "7004"
+      },
+      {
+        "id": "1631"
+      },
+      {
+        "id": "7048",
+        "mastery_level": "4"
+      },
+      {
+        "id": "5049",
+        "mastery_level": "6"
+      },
+      {
+        "id": "1343",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "361": {
+    "id": "361",
+    "name": "Circle of Troubles",
+    "commander": {
+        "id": "261"
+    },
+    "deck": [
+      {
+        "id": "5022"
+      },
+      {
+        "id": "5022"
+      },
+      {
+        "id": "6011"
+      },
+      {
+        "id": "1326"
+      },
+      {
+        "id": "1629"
+      },
+      {
+        "id": "2021"
+      },
+      {
+        "id": "5028"
+      },
+      {
+        "id": "1632"
+      },
+      {
+        "id": "6029"
+      },
+      {
+        "id": "5035"
+      },
+      {
+        "id": "5047",
+        "mastery_level": "4"
+      },
+      {
+        "id": "5027",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6027",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "362": {
+    "id": "362",
+    "name": "First Wave",
+    "commander": {
+        "id": "266"
+    },
+    "deck": [
+      {
+        "id": "1616"
+      },
+      {
+        "id": "5046"
+      },
+      {
+        "id": "2010"
+      },
+      {
+        "id": "7034"
+      },
+      {
+        "id": "2008"
+      },
+      {
+        "id": "6042"
+      },
+      {
+        "id": "1625"
+      },
+      {
+        "id": "7045"
+      },
+      {
+        "id": "7021"
+      },
+      {
+        "id": "7029"
+      },
+      {
+        "id": "5045",
+        "mastery_level": "4"
+      },
+      {
+        "id": "5043",
+        "mastery_level": "6"
+      },
+      {
+        "id": "7027",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "363": {
+    "id": "363",
+    "name": "Front Line Worries",
+    "commander": {
+        "id": "214"
+    },
+    "deck": [
+      {
+        "id": "6012"
+      },
+      {
+        "id": "1031"
+      },
+      {
+        "id": "1025"
+      },
+      {
+        "id": "6005"
+      },
+      {
+        "id": "2032"
+      },
+      {
+        "id": "6020"
+      },
+      {
+        "id": "1327"
+      },
+      {
+        "id": "1030"
+      },
+      {
+        "id": "5028"
+      },
+      {
+        "id": "5040"
+      },
+      {
+        "id": "5031",
+        "mastery_level": "4"
+      },
+      {
+        "id": "6045",
+        "mastery_level": "6"
+      },
+      {
+        "id": "5002",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "364": {
+    "id": "364",
+    "name": "Final Round ",
+    "commander": {
+        "id": "303"
+    },
+    "deck": [
+      {
+        "id": "1613"
+      },
+      {
+        "id": "2020"
+      },
+      {
+        "id": "6042"
+      },
+      {
+        "id": "2020"
+      },
+      {
+        "id": "7011"
+      },
+      {
+        "id": "2004"
+      },
+      {
+        "id": "6010"
+      },
+      {
+        "id": "6044"
+      },
+      {
+        "id": "6024"
+      },
+      {
+        "id": "7008"
+      },
+      {
+        "id": "6030",
+        "mastery_level": "4"
+      },
+      {
+        "id": "5029",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6035",
+        "mastery_level": "7"
+      },
+    ]
+  },
   "41": {
     "id": "41",
     "name": "Push Them Back",
     "commander": {
         "id": "224"
-},
+    },
     "deck": [
       {
         "id": "1300",
@@ -78685,7 +79906,7 @@ var MISSIONS = {
     "name": "Bottleneck",
     "commander": {
         "id": "224"
-},
+    },
     "deck": [
       {
         "id": "1300",
@@ -78732,7 +79953,7 @@ var MISSIONS = {
     "name": "The Bridge",
     "commander": {
         "id": "224"
-},
+    },
     "deck": [
       {
         "id": "1300",
@@ -78778,7 +79999,7 @@ var MISSIONS = {
     "name": "The Necromancer",
     "commander": {
         "id": "4"
-},
+    },
     "deck": [
       {
         "id": "1300"
@@ -78822,7 +80043,7 @@ var MISSIONS = {
     "name": "Into the Woods!",
     "commander": {
         "id": "201"
-},
+    },
     "deck": [
       {
         "id": "1600",
@@ -78866,7 +80087,7 @@ var MISSIONS = {
     "name": "The Wyldwood",
     "commander": {
         "id": "201"
-},
+    },
     "deck": [
       {
         "id": "1601",
@@ -78910,7 +80131,7 @@ var MISSIONS = {
     "name": "Thick Bramble",
     "commander": {
         "id": "201"
-},
+    },
     "deck": [
       {
         "id": "1601",
@@ -78952,7 +80173,7 @@ var MISSIONS = {
     "name": "Nature's Heart",
     "commander": {
         "id": "201"
-},
+    },
     "deck": [
       {
         "id": "1601",
@@ -78996,7 +80217,7 @@ var MISSIONS = {
     "name": "Wind in the Woods",
     "commander": {
         "id": "201"
-},
+    },
     "deck": [
       {
         "id": "1000",
@@ -79042,7 +80263,7 @@ var MISSIONS = {
     "name": "Branching Paths",
     "commander": {
         "id": "201"
-},
+    },
     "deck": [
       {
         "id": "1000",
@@ -79090,7 +80311,7 @@ var MISSIONS = {
     "commander": {
         "id": "200",
         "level": "2"
-},
+    },
     "deck": [
       {
         "id": "1600",
@@ -79134,7 +80355,7 @@ var MISSIONS = {
     "name": "The Hollow",
     "commander": {
         "id": "219"
-},
+    },
     "deck": [
       {
         "id": "1300",
@@ -79177,7 +80398,7 @@ var MISSIONS = {
     "name": "Woodland Departure",
     "commander": {
         "id": "203"
-},
+    },
     "deck": [
       {
         "id": "1600",
@@ -79220,7 +80441,7 @@ var MISSIONS = {
     "name": "Land of Light",
     "commander": {
         "id": "203"
-},
+    },
     "deck": [
       {
         "id": "1602"
@@ -79262,7 +80483,7 @@ var MISSIONS = {
     "name": "Hunted",
     "commander": {
         "id": "203"
-},
+    },
     "deck": [
       {
         "id": "1607"
@@ -79306,7 +80527,7 @@ var MISSIONS = {
     "name": "Prey Upon",
     "commander": {
         "id": "203"
-},
+    },
     "deck": [
       {
         "id": "1602"
@@ -79350,7 +80571,7 @@ var MISSIONS = {
     "name": "Ghosts...?",
     "commander": {
         "id": "204"
-},
+    },
     "deck": [
       {
         "id": "1001",
@@ -79391,7 +80612,7 @@ var MISSIONS = {
     "name": "Soul Wisp Swarm",
     "commander": {
         "id": "204"
-},
+    },
     "deck": [
       {
         "id": "1006"
@@ -79430,7 +80651,7 @@ var MISSIONS = {
     "name": "Fight or Flight",
     "commander": {
         "id": "204"
-},
+    },
     "deck": [
       {
         "id": "1000",
@@ -79472,7 +80693,7 @@ var MISSIONS = {
     "name": "Trespassing",
     "commander": {
         "id": "2"
-},
+    },
     "deck": [
       {
         "id": "1001",
@@ -79515,7 +80736,7 @@ var MISSIONS = {
     "name": "Finding a Crossing",
     "commander": {
         "id": "205"
-},
+    },
     "deck": [
       {
         "id": "1601"
@@ -79554,7 +80775,7 @@ var MISSIONS = {
     "name": "Mage's Decree",
     "commander": {
         "id": "205"
-},
+    },
     "deck": [
       {
         "id": "1603",
@@ -79596,7 +80817,7 @@ var MISSIONS = {
     "name": "Water Under the Bridge",
     "commander": {
         "id": "205"
-},
+    },
     "deck": [
       {
         "id": "1603"
@@ -79637,7 +80858,7 @@ var MISSIONS = {
     "name": "Wrath of the River",
     "commander": {
         "id": "205"
-},
+    },
     "deck": [
       {
         "id": "1603",
@@ -79819,8 +81040,8 @@ var FUSIONS = {
   "12030" : "22030",
   "12031" : "22031",
   "12032" : "22032",
-  "12033" : "2203",
-  "12034" : "2034",
+  "12033" : "22203",
+  "12034" : "22034",
   "1300" : "11300",
   "1301" : "11301",
   "1302" : "11302",

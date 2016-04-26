@@ -3674,727 +3674,686 @@
   </mission>
   <!-- END The Dawnglow Missions -->
   <!-- START Seaside Temple -->
-  <!-- <mission>
-	  <id>311</id>
-	  <name>From the Muck</name>
-	  <energy>8</energy>
-	  <desc>Groc and Ursurio come back to the airship covered in muck. Both look exhausted from their time in Dawnglow Swamp. Groc musters up the strength to report their findings.</desc>
-	  <commander id="298"/>
-	  <deck>
-	    <card id="1315" name="Nix Elemental"/>
-	    <card id="1315"/>
-	    <card id="1613" name="Acidic Spider"/>
-	    <card id="1613"/>
-	    <card id="2019" name="Chalistomper"/>
-	    <card id="7020" name="Trapper Frog"/>
-	    <card id="7034" name="Spore Elk"/>
-	    <card id="7016" name="Webfist Shaman"/>
-	    <card id="6011" name="Bomb Spirit"/>
-	    <card id="6042" name="Shadow of Thunder"/>
-	    <card id="5050" mastery_level="4" name="Cloud Spear"/>
-	    <card id="5019" mastery_level="6" name="Vivid Aurora"/>
-	    <card id="7043" mastery_level="7" name="Anima"/>
-	  </deck>
-	  <speech>
-	    <line>
-	      <commander>groc</commander>
-	      <enemy>0</enemy>
-	      <text>The Void is still spreading. It seems creatures that have escaped from the rifts are able to spread their contagion.</text>
-	    </line>
-	    <line>
-	      <commander>elyse</commander>
-	      <enemy>0</enemy>
-	      <text>That's what you found at Dawnglow?  How is the village doing?</text>
-	    </line>
-	    <line>
-	      <commander>groc</commander>
-	      <enemy>0</enemy>
-	      <text>Dawnglow is doing better since the creatures have been taken care of. However,  many of the frogs are suffering from infection and fevers from the sickness.</text>
-	    </line>
-	  </speech>
-	</mission>
-	
-	<mission>
-	  <id>312</id>
-	  <name>Lingering Trails</name>
-	  <energy>8</energy>
-	  <desc>Elyse can't stop thinking about the symptoms Groc reported earlier. She can't quite place why, but they seem familiar to her. Elyse grabs a book and begins to research. </desc>
-	  <commander id="299"/>
-	  <deck>
-	    <card id="1014" name="Cherub"/>
-	    <card id="1014"/>
-	    <card id="1014"/>
-	    <card id="1311" name="Molten Skeleton"/>
-	    <card id="2025" name="Blight Knight"/>
-	    <card id="2027" name="Halo Mage"/>
-	    <card id="6004" name="Branding Construct"/>
-	    <card id="1328" name="Poison Bullfrog"/>
-	    <card id="5010" name="Concealed Dragon"/>
-	    <card id="2030" name="Ebon Duelist"/>
-	    <card id="1630" mastery_level="4" name="Giant Squid"/>
-	    <card id="5031" mastery_level="6" name="Frostlance Valkyrie"/>
-	    <card id="5029" mastery_level="7" name="Snowback Dragon"/>
-	  </deck>
-	</mission>
-	
-	
-	<mission>
-	  <id>313</id>
-	  <name>Thorough Exam </name>
-	  <energy>8</energy>
-	  <desc>Elyse has been in her room for days. As she steps out for food, Oda peers inside her room. He is taken aback with the amount of research hung on the walls and scattered around the floor. His eye catches something familiar...</desc>
-	  <commander id="300"/>
-	  <deck>
-	    <card id="1018" name="Armored Eagle"/>
-	    <card id="1018"/>
-	    <card id="5006" name="Arms Enforcer"/>
-	    <card id="5006"/>
-	    <card id="2032" name="Brimstone"/>
-	    <card id="6021" name="Marsh Ogre"/>
-	    <card id="6016" name="Skeletal Giant"/>
-	    <card id="7047" name="Shaman of the Wild"/>
-	    <card id="2031" name="Dryad"/>
-	    <card id="7038" name="Sol King"/>
-	    <card id="1331" mastery_level="4" name="Fallen Soldiers"/>
-	    <card id="6028" mastery_level="6" name="Brahmet"/>
-	    <card id="5049" mastery_level="7" name="Joryl"/>
-	  </deck>
-	  <speech>
-	    <line>
-	      <commander>templeguardian</commander>
-	      <enemy>0</enemy>
-	      <text>What on earth happened to your room?</text>
-	    </line>
-	    <line>
-	      <commander>elyse</commander>
-	      <enemy>0</enemy>
-	      <text>...Well, I can't stop thinking about symptoms that Groc reported. I swear I have read about it before. Something about an artifact that counteracts it...</text>
-	    </line>
-	    <line>
-	      <commander>templeguardian</commander>
-	      <enemy>0</enemy>
-	      <text>Hold on, what is the picture of the Citadel? This looks like it's part of my monastery...</text>
-	    </line>
-	  </speech>
-	</mission>
-	
-	 
-	<mission>
-	  <id>314</id>
-	  <name>Long Way from Home</name>
-	  <energy>8</energy>
-	  <desc>Oda tells Elyse what he knows about the Citadel. He is in disbelief that his Order may have already made its way to Arcantica.</desc>
-	  <commander id="298"/>
-	  <deck>
-	    <card id="5006" name="Arms Enforcer"/>
-	    <card id="5006"/>
-	    <card id="1318" name="Smelted Lava Slug"/>
-	    <card id="5035" name="Vapor Guard"/>
-	    <card id="6044" name="Firewalker"/>
-	    <card id="7005" name="Tsunamari"/>
-	    <card id="7045" name="Sakura"/>
-	    <card id="6010" name="Cliffpass Defender"/>
-	    <card id="7015" name="Bog Aberration"/>
-	    <card id="2002" name="Lantern Guardian"/>
-	    <card id="6026" mastery_level="4" name="Smokefang"/>
-	    <card id="7009" mastery_level="6" name="Rhino Beast"/>
-	    <card id="5042" mastery_level="7" name="Tinkerer"/>
-	  </deck>
-	</mission>
-	
-	
-	<mission>
-	  <id>321</id>
-	  <name>It Takes Two </name>
-	  <energy>8</energy>
-	  <desc>Now that Oda has been able to provide more information about the nature of the Citadel, Elyse thinks she may be able to find its location. She is soon back to the books, and this time Oda is joining her.</desc>
-	  <commander id="299"/>
-	  <deck>
-	    <card id="6017" name="Tar Pit Stalker"/>
-	    <card id="6017"/>
-	    <card id="1012" name="Cloud Sylph"/>
-	    <card id="1615" name="Rune Panther"/>
-	    <card id="2009" name="Sapling"/>
-	    <card id="6046" name="Celerity"/>
-	    <card id="2019" name="Chalistomper"/>
-	    <card id="7035" name="Carrion Tiger"/>
-	    <card id="7015" name="Bog Aberration"/>
-	    <card id="1630" name="Giant Squid"/>
-	    <card id="7004" mastery_level="5" name="Ice Golem"/>
-	    <card id="5001" mastery_level="6" name="Aven Skypiercer"/>
-	    <card id="7013" mastery_level="7" name="Gold Elemental"/>
-	  </deck>
-	</mission>
-	
-	
-	<mission>
-	  <id>322</id>
-	  <name>Precautionary Measures </name>
-	  <energy>8</energy>
-	  <desc>Elyse and Oda spend hours putting together clues to the Citadel's location. Elyse sits, staring at a picture of the Citadel when an epiphany occurs. </desc>
-	  <commander id="298"/>
-	  <deck>
-	    <card id="7012" name="Life Drake"/>
-	    <card id="7012"/>
-	    <card id="6006" name="Chaos Golem"/>
-	    <card id="2003" name="Dragon Tamer"/>
-	    <card id="5024" name="Cloudtop Dragon"/>
-	    <card id="1325" name="Chaos Storm"/>
-	    <card id="2023" name="Grizzly Terror"/>
-	    <card id="5025" name="Steelskin Dragon"/>
-	    <card id="5004" name="Lightning Lord"/>
-	    <card id="5010" name="Concealed Dragon"/>
-	    <card id="5023" mastery_level="4" name="Nightfall Dragon"/>
-	    <card id="6043" mastery_level="6" name="Sandstorm"/>
-	    <card id="7008" mastery_level="7" name="Rock Dragon"/>
-	  </deck>
-	  <speech>
-	    <line>
-	      <commander>elyse</commander>
-	      <enemy>0</enemy>
-	      <text> I..I think this citadel is a safeguard should The Void ever get out of hand.</text>
-	    </line>
-	    <line>
-	      <commander>templeguardian</commander>
-	      <enemy>0</enemy>
-	      <text>You think it holds an artifact that protects against the sickness of The Void? This type of magic sounds of my order... but in Arcantica?</text>
-	    </line>
-	    <line>
-	      <commander>elyse</commander>
-	      <enemy>0</enemy>
-	      <text> I am certain it is here. If it is truly a safe guard against The Void it might be along the east coast. That is the furthest point from The Center of The Void.</text>
-	    </line>
-	  </speech>
-	</mission>
-	
-	
-	<mission>
-	  <id>323</id>
-	  <name>Leap of Faith </name>
-	  <energy>8</energy>
-	  <desc>Elyse turns the ship towards the east coast. It's a few days untill they reach the other side of Arcantica. Oda spends his time in meditation. He ponders how his Order could have made it to Arcantica without him knowing.</desc>
-	  <commander id="300"/>
-	  <deck>
-	    <card id="1315" name="Nix Elemental"/>
-	    <card id="7006" name="Treant Sapling"/>
-	    <card id="7006"/>
-	    <card id="5033" name="Lost Soul"/>
-	    <card id="1331" name="Fallen Soldiers"/>
-	    <card id="1331" name="Fallen Soldiers"/>
-	    <card id="1632" name="Shadow Rider"/>
-	    <card id="2000" name="Wasteland Nomad"/>
-	    <card id="1330" name="Devouring Locusts"/>
-	    <card id="1325" name="Chaos Storm"/>
-	    <card id="6009" mastery_level="4" name="Siphon Dragon"/>
-	    <card id="5037" mastery_level="6" name="Dauntless Baneblade"/>
-	    <card id="6035" mastery_level="7" name="Demos"/>
-	  </deck>
-	</mission>
-	
-	
-	<mission>
-	  <id>324</id>
-	  <name>Beach View</name>
-	  <energy>8</energy>
-	  <desc>Oda and Elyse make it to the coast. The rocky terrain stretches for miles. They spend hours sweeping the coast when Oda spots something familiar.</desc>
-	  <commander id="301"/>
-	  <deck>
-	    <card id="1313" name="Lavafrog"/>
-	    <card id="1017" name="Judgment"/>
-	    <card id="1017"/>
-	    <card id="1028" name="Heroic Frog"/>
-	    <card id="7011" name="Wolf Girl"/>
-	    <card id="1627" name="Sage of Croaks"/>
-	    <card id="5030" name="Loxphas Mage"/>
-	    <card id="5005" name="Storm Giant"/>
-	    <card id="1027" name="Griffin Knight"/>
-	    <card id="1327" name="Fallen Angel"/>
-	    <card id="5034" mastery_level="4" name="Skyward Guardian"/>
-	    <card id="6019" mastery_level="6" name="Canopy Horror"/>
-	    <card id="6033" mastery_level="7" name="Firebeard"/>
-	  </deck>
-	  <speech>
-	    <line>
-	      <commander>elyse</commander>
-	      <enemy>0</enemy>
-	      <text>We have been searching the coast for hours... nothing...</text>
-	    </line>
-	    <line>
-	      <commander>templeguardian</commander>
-	      <enemy>0</enemy>
-	      <text>Wait... behind that outcropping, hidden in the stone!</text>
-	    </line>
-	    <line>
-	      <commander>templeguardian</commander>
-	      <enemy>0</enemy>
-	      <text>I can't believe it, a citadel from my order. But it looks... ancient. This was here before I arrived...</text>
-	    </line>
-	  </speech>
-	</mission>
-	
-	
-	<mission>
-	  <id>331</id>
-	  <name>Rocky Road</name>
-	  <energy>8</energy>
-	  <desc>Elyse sets the airship down by a safe spot right outside the Citadel. The path forward is rocky and dangerous. They will have to be careful as they traverse.</desc>
-	  <commander id="299"/>
-	  <deck>
-	    <card id="1010" name="Lightning Elemental"/>
-	    <card id="1313" name="Lavafrog"/>
-	    <card id="6029" name="Spinehead Stalker"/>
-	    <card id="2024" name="Dusk Noble"/>
-	    <card id="1330" name="Devouring Locusts"/>
-	    <card id="6029" name="Spinehead Stalker"/>
-	    <card id="1331" name="Fallen Soldiers"/>
-	    <card id="1025" name="Lightbound Archer"/>
-	    <card id="2005" name="Sailing Drake"/>
-	    <card id="2020" name="Tidetaken Fighter"/>
-	    <card id="2028" mastery_level="4" name="Infinity"/>
-	    <card id="5043" mastery_level="6" name="Empyrean"/>
-	    <card id="7036" mastery_level="7" name="Deepwood Corpse"/>
-	  </deck>
-	</mission>
-	
-	
-	<mission>
-	  <id>332</id>
-	  <name>The Hidden Citadel </name>
-	  <energy>8</energy>
-	  <desc>The area around the Citadel is wild. Outside of the Citadel the environment looks completely untouched. It's clear that whatever this Citadel holds, it is not meant to be found by others.</desc>
-	  <commander id="298"/>
-	  <deck>
-	    <card id="1012" name="Cloud Sylph"/>
-	    <card id="1012"/>
-	    <card id="1615" name="Rune Panther"/>
-	    <card id="1030" name="Paladin"/>
-	    <card id="7034" name="Spore Elk"/>
-	    <card id="2031" name="Dryad"/>
-	    <card id="1625" name="Ferocious Clawkin"/>
-	    <card id="5035" name="Vapor Guard"/>
-	    <card id="5015" name="Gravity Swell"/>
-	    <card id="1028" name="Heroic Frog"/>
-	    <card id="1642" mastery_level="4" name="Icestone Beast"/>
-	    <card id="7002" mastery_level="6" name="Cerberus"/>
-	    <card id="5002" mastery_level="7" name="Twilight Mirror"/>
-	  </deck>
-	</mission>
-	
-	
-	<mission>
-	  <id>333</id>
-	  <name>Locked Away</name>
-	  <energy>8</energy>
-	  <desc>Elyse and Oda make their way to the Citadel's front door. Elyse tries to open it, but it's locked. The door doesn't seem to have a obvious lock on it...</desc>
-	  <commander id="300"/>
-	  <deck>
-	    <card id="1015" name="Windfrog"/>
-	    <card id="1017" name="Judgment"/>
-	    <card id="1328" name="Poison Bullfrog"/>
-		<card id="1328" name="Poison Bullfrog"/>
-	    <card id="1627" name="Sage of Croaks"/>
-	    <card id="5005" name="Storm Giant"/>
-	    <card id="1026" name="Glass Colossus"/>
-	    <card id="7029" name="Owl Griffin"/>
-	    <card id="5020" name="Frost Frog"/>
-	    <card id="1630" name="Giant Squid"/>
-	    <card id="7032" mastery_level="4" name="Nidhogg"/>
-	    <card id="6014" mastery_level="6" name="Armored Ogre"/>
-	    <card id="1043" mastery_level="7" name="Lilypad Bard"/>
-	  </deck>
-	  <speech>
-	    <line>
-	      <commander>templeguardian</commander>
-	      <enemy>0</enemy>
-	      <text>Ahh, this citadel must truly be old. We have not locked our doors with magic like this in a long time. It requires a simple dance to open.</text>
-	    </line>
-	    <line>
-	      <commander>elyse</commander>
-	      <enemy>0</enemy>
-	      <text>Huh, I have never seen a door unlocked with a dance. Why did you stop using it?</text>
-	    </line>
-	    <line>
-	      <commander>templeguardian</commander>
-	      <enemy>0</enemy>
-	      <text>It didn't prove to be the most effective...the drinking enthusiasts of my country had a way of figuring out the dance...</text>
-	    </line>
-	  </speech>
-	</mission>
-	
-	
-	
-	<mission>
-	  <id>334</id>
-	  <name>Pop and Unlock</name>
-	  <energy>8</energy>
-	  <desc>Oda stands directly in front of the door. He begins to preform a quick ritual, waving his hand and muttering words under his breath. The door makes a clicking noise and begins to slide open with the heavy sound of rock against rock.</desc>
-	  <commander id="301"/>
-	  <deck>
-	    <card id="1019" name="Oracle"/>
-	    <card id="7007" name="Water Serpent"/>
-	    <card id="7021" name="Shadow Elemental"/>
-	    <card id="7045" name="Sakura"/>
-	    <card id="5044" name="Telepathic Magi"/>
-	    <card id="5021" name="Tower Spirit"/>
-	    <card id="6015" name="Acidic Sludge"/>
-	    <card id="7005" name="Tsunamari"/>
-	    <card id="5028" name="Winter Blacksmith"/>
-	    <card id="5030" name="Loxphas Mage"/>
-	    <card id="6047" mastery_level="4" name="Wither"/>
-	    <card id="6039" mastery_level="6" name="Auroch"/>
-	    <card id="5045" mastery_level="7" name="Echo Elemental"/>
-	  </deck>
-	</mission>
-	
-	
-	<mission>
-	  <id>341</id>
-	  <name>Sleeping on the Job</name>
-	  <energy>8</energy>
-	  <desc>Oda and Elyse enter the Citadel. It's dark, only lit by natural light. There is a main entrance hall and giant doors in the back. A single monk can be seen sleeping in the center of the hall.</desc>
-	  <commander id="299"/>
-	  <deck>
-	    <card id="1617" name="Water Elemental"/>
-	    <card id="7012" name="Life Drake"/>
-	    <card id="1014" name="Cherub"/>
-	    <card id="7024" name="Woolmane Dragon "/>
-	    <card id="2001" name="Dunetooth Demon"/>
-	    <card id="5016" name="Fowl Swarm"/>
-	    <card id="2019" name="Chalistomper"/>
-	    <card id="6016" name="Skeletal Giant"/>
-	    <card id="5011" name="Sky Whale"/>
-	    <card id="1030" name="Paladin"/>
-	    <card id="6032" mastery_level="4" name="Mumohotep"/>
-	    <card id="6041" mastery_level="6" name="Reaper"/>
-	    <card id="5042" mastery_level="7" name="Tinkerer"/>
-	  </deck>
-	</mission>
-	
-	 
-	<mission>
-	  <id>342</id>
-	  <name>Up and At'Em</name>
-	  <energy>8</energy>
-	  <desc>The monk is awakened by their arrival. Startled, he sits up quickly and grabs his staff. Magic swirls around him...</desc>
-	  <commander id="302"/>
-	  <deck>
-	    <card id="1314" name="Skeletal Hound"/>
-	    <card id="1313" name="Lavafrog"/>
-	    <card id="7038" name="Sol King"/>
-	    <card id="7047" name="Shaman of the Wild"/>
-	    <card id="2014" name="Tadpole Warmage"/>
-	    <card id="2011" name="Poliworg"/>
-	    <card id="1627" name="Sage of Croaks"/>
-	    <card id="1328" name="Poison Bullfrog"/>
-	    <card id="7034" name="Spore Elk"/>
-	    <card id="7011" name="Wolf Girl"/>
-	    <card id="7042" mastery_level="4" name="Scurvy Hopper"/>
-	    <card id="7039" mastery_level="6" name="Winged Giant"/>
-	    <card id="7001" mastery_level="7" name="Hekaton"/>
-	  </deck>
-	  <speech>
-	    <line>
-	      <commander>wolf</commander>
-	      <enemy>0</enemy>
-	      <text>H-huh, what-wh-who enters the First Order's citadel?!</text>
-	    </line>
-	  </speech>
-	</mission>
-	
-	<mission>
-	  <id>343</id>
-	  <name>Sign of a Friend</name>
-	  <energy>8</energy>
-	  <desc>The monk recognizes the beads around Oda's neck. They are common in their Order. His face turns red as he quickly lays down his staff, bowing in apology. Elyse can start to see a resemblence between the two.</desc>
-	  <commander id="298"/>
-	  <deck>
-	    <card id="5012" name="Static Drake"/>
-	    <card id="1019" name="Oracle"/>
-	    <card id="6034" name="Bone Viper"/>
-	    <card id="7041" name="Feral Angel"/>
-	    <card id="1327" name="Fallen Angel"/>
-	    <card id="2030" name="Ebon Duelist"/>
-	    <card id="1629" name="Rock Titan"/>
-	    <card id="2005" name="Sailing Drake"/>
-	    <card id="5028" name="Winter Blacksmith"/>
-	    <card id="2023" name="Grizzly Terror"/>
-	    <card id="7023" mastery_level="4" name="Zolmosh the Fist"/>
-	    <card id="7046" mastery_level="6" name="Brambleblight"/>
-	    <card id="7037" mastery_level="7" name="Bane"/>
-	  </deck>
-	  <speech>
-	    <line>
-	      <commander>wolf</commander>
-	      <enemy>0</enemy>
-	      <text>Oh, please forgive my offense in attcking! I did not see the beads of the First Order that you wear around your neck.</text>
-	    </line>
-	    <line>
-	      <commander>wolf</commander>
-	      <enemy>0</enemy>
-	      <text>What brings you and your ally out to Seastone Citadel?</text>
-	    </line>
-	    <line>
-	      <commander>elyse</commander>
-	      <enemy>0</enemy>
-	      <text>We came seeking an artifact...</text>
-	    </line>
-	  </speech>
-	</mission>
-	
-	<mission>
-	  <id>344</id>
-	  <name>Hidden Treasures </name>
-	  <energy>8</energy>
-	  <desc>The monk looks surprised they know of the artifact. Even within the order it was a secret item.</desc>
-	  <commander id="301"/>
-	  <deck>
-	    <card id="1014" name="Cherub"/>
-	    <card id="2027" name="Halo Mage"/>
-		<card id="2027" name="Halo Mage"/>
-	    <card id="2025" name="Blight Knight"/>
-	    <card id="6042" name="Shadow of Thunder"/>
-	    <card id="5040" name="Winged Trumpeter"/>
-	    <card id="1028" name="Heroic Frog"/>
-	    <card id="5015" name="Gravity Swell"/>
-	    <card id="7005" name="Tsunamari"/>
-	    <card id="7041" name="Feral Angel"/>
-	    <card id="5001" mastery_level="4" name="Aven Skypiercer"/>
-	    <card id="5031" mastery_level="6" name="Frostlance Valkyrie"/>
-	    <card id="5032" mastery_level="7" name="Hail Hurler"/>
-	  </deck>
-	</mission>
-	
-	
-	<mission>
-	  <id>351</id>
-	  <name>Hesitations of the Holy</name>
-	  <energy>8</energy>
-	  <desc>The monk looks nervous. He is becoming suspicious as to the nature of the questions being asked. He keeps his staff firmly in hand.</desc>
-	  <commander id="301"/>
-	  <deck>
-	    <card id="1312" name="Scythe Demon"/>
-	    <card id="6007" name="Goblin Crew"/>
-	    <card id="6034" name="Bone Viper"/>
-	    <card id="2023" name="Grizzly Terror"/>
-	    <card id="1628" name="Garganotos"/>
-	    <card id="6005" name="Gloomkin"/>
-	    <card id="1332" name="Vampiric Emira"/>
-	    <card id="6029" name="Spinehead Stalker"/>
-	    <card id="2024" name="Dusk Noble"/>
-	    <card id="6036" name="Cursed Ogre"/>
-	    <card id="6037" mastery_level="4" name="Keeper of Souls"/>
-	    <card id="2013" mastery_level="6" name="Stoneclad Toad"/>
-	    <card id="7033" mastery_level="7" name="Treebond Skull"/>
-	  </deck>
-	  <speech>
-	    <line>
-	      <commander>wolf</commander>
-	      <enemy>0</enemy>
-	      <text>You seem to know a lot about a secret artifact within our Order... why have you come for it?</text>
-	    </line>
-	    <line>
-	      <commander>templeguardian</commander>
-	      <enemy>0</enemy>
-	      <text>The Void is spreading, brother. We will need it to keep us in our fight to stop The Void.</text>
-	    </line>
-	  </speech>
-	</mission>
-	
-	
-	<mission>
-	  <id>352</id>
-	  <name>Sickness Abound</name>
-	  <energy>8</energy>
-	  <desc>The monk is taken aback. He had no idea The Void has gotten so bad. The Order will not allow him to give the artifact to anyone who is not a Keeper...he looks at Oda and smiles.</desc>
-	  <commander id="299"/>
-	  <deck>
-	    <card id="6007" name="Goblin Crew"/>
-	    <card id="6007"/>
-	    <card id="5046" name="Dawn"/>
-	    <card id="1032" name="Lunar Elemental"/>
-	    <card id="1331" name="Fallen Soldiers"/>
-	    <card id="2012" name="Frogling Swarm"/>
-	    <card id="6046" name="Celerity"/>
-	    <card id="6031" name="Iceblood Assassin"/>
-	    <card id="2032" name="Brimstone"/>
-	    <card id="1325" name="Chaos Storm"/>
-	    <card id="5048" name="Highborn Rose"/>
-	    <card id="6049" name="Goblin Explosioneer"/>
-	    <card id="5009" name="Royal Guardian"/>
-	  </deck>
-	</mission>
-	
-	
-	<mission>
-	  <id>353</id>
-	  <name>One with the Force</name>
-	  <energy>8</energy>
-	  <desc>The monk takes a moment to asses Oda's aura. He can tell Oda is a powerful wielder of magical abilities.</desc>
-	  <commander id="300"/>
-	  <deck>
-	    <card id="7012" name="Life Drake"/>
-	    <card id="7012"/>
-	    <card id="6025" name="Dragon Keeper"/>
-	    <card id="6044" name="Firewalker"/>
-	    <card id="7010" name="Honeycomb Dragon"/>
-	    <card id="5024" name="Cloudtop Dragon"/>
-	    <card id="2031" name="Dryad"/>
-	    <card id="1030" name="Paladin"/>
-	    <card id="2002" name="Lantern Guardian"/>
-	    <card id="2003" name="Dragon Tamer"/>
-	    <card id="7039" mastery_level="4" name="Winged Giant"/>
-	    <card id="6024" mastery_level="6" name="Bane Dragon"/>
-	    <card id="5000" mastery_level="7" name="Azure Sphinx"/>
-	  </deck>
-	  <speech>
-	    <line>
-	      <commander>wolf</commander>
-	      <enemy>0</enemy>
-	      <text>This is unsettling news. Oda, as I'm sure you know, the Order will now allow me to give an artifact like this to anyone. They have to be a keeper.</text>
-	    </line>
-	    <line>
-	      <commander>templeguardian</commander>
-	      <enemy>0</enemy>
-	      <text>I feared as much... we must leave with the artifact. I.. I am willing to undergo the ritual to become the keeper.</text>
-	    </line>
-	    <line>
-	      <commander>wolf</commander>
-	      <enemy>0</enemy>
-	      <text>Very well, let us begin.</text>
-	    </line>
-	  </speech>
-	</mission>
-	
-	<mission>
-	  <id>354</id>
-	  <name>The Test Begins</name>
-	  <energy>8</energy>
-	  <desc>Oda agrees to become a keeper for the artifact. The monk nods and begins to draw a circle around him. The circle begins to glow...</desc>
-	  <commander id="301"/>
-	  <deck>
-	    <card id="1613" name="Acidic Spider"/>
-	    <card id="1628" name="Garganotos"/>
-	    <card id="6016" name="Skeletal Giant"/>
-	    <card id="2001" name="Dunetooth Demon"/>
-	    <card id="6038" name="Hemlock"/>
-	    <card id="1027" name="Griffin Knight"/>
-	    <card id="2021" name="Snowstep Ranger"/>
-	    <card id="1030" name="Paladin"/>
-	    <card id="7004" name="Ice Golem"/>
-	    <card id="1631" name="Venom Dragon"/>
-	    <card id="7048" mastery_level="4" name="Bogskull Widow"/>
-	    <card id="5049" mastery_level="6" name="Joryl"/>
-	    <card id="1343" mastery_level="7" name="Firehorn"/>
-	  </deck>
-	</mission>
-	
-	<mission>
-	  <id>361</id>
-	  <name>Circle of Troubles</name>
-	  <energy>12</energy>
-	  <desc>Oda stands in the center of the circle, ready for whatever beasts are about to appear. The edges of the circle begin to widen. Hands rise from the edges.</desc>
-	  <commander id="261"/>
-	  <deck>
-	    <card id="5022" name="Webfoot Raider"/>
-	    <card id="5022"/>
-	    <card id="6011" name="Bomb Spirit"/>
-	    <card id="1326" name="Titan of Fire"/>
-	    <card id="1629" name="Rock Titan"/>
-	    <card id="2021" name="Snowstep Ranger"/>
-	    <card id="5028" name="Winter Blacksmith"/>
-	    <card id="1632" name="Shadow Rider"/>
-	    <card id="6029" name="Spinehead Stalker"/>
-	    <card id="5035" name="Vapor Guard"/>
-	    <card id="5047" mastery_level="4" name="Sky Fisher"/>
-	    <card id="5027" mastery_level="6" name="Northern War-kin"/>
-	    <card id="6027" mastery_level="7" name="Frigela, the Dread"/>
-	  </deck>
-	  <speech>
-	    <line>
-	      <commander>wolf</commander>
-	      <enemy>0</enemy>
-	      <text>Prepare yourself Oda. You will have to face waves of the undead in order to complete the ritual.</text>
-	    </line>
-	  </speech>
-	</mission>
-	
-	<mission>
-	  <id>362</id>
-	  <name>First Wave</name>
-	  <energy>12</energy>
-	  <desc>Oda easily deals with the first wave of enemies. More creatures begin to emerge from the circle. </desc>
-	  <commander id="266"/>
-	  <deck>
-	    <card id="1616" name="Werewarg"/>
-	    <card id="5046" name="Dawn"/>
-	    <card id="2010" name="Silver Wind"/>
-	    <card id="7034" name="Spore Elk"/>
-	    <card id="2008" name="Shadow of Ash"/>
-	    <card id="6042" name="Shadow of Thunder"/>
-	    <card id="1625" name="Ferocious Clawkin"/>
-	    <card id="7045" name="Sakura"/>
-	    <card id="7021" name="Shadow Elemental"/>
-	    <card id="7029" name="Owl Griffin"/>
-	    <card id="5045" mastery_level="4" name="Echo Elemental"/>
-	    <card id="5043" mastery_level="6" name="Empyrean"/>
-	    <card id="7027" mastery_level="7" name="Kitsune"/>
-	  </deck>
-	</mission>
-	
-	
-	<mission>
-	  <id>363</id>
-	  <name>Front Line Worries</name>
-	  <energy>12</energy>
-	  <desc>Another wave rises from the circle. Elyse starts to look worried that Oda must defeat these creatures alone. She glances at the monk who gives a reassuring glance.</desc>
-	  <commander id="214"/>
-	  <deck>
-	    <card id="6012" name="Ember Drake"/>
-	    <card id="1031" name="Noble Champion"/>
-	    <card id="1025" name="Lightbound Archer"/>
-	    <card id="6005" name="Gloomkin"/>
-	    <card id="2032" name="Brimstone"/>
-	    <card id="6020" name="Croak Piercer"/>
-	    <card id="1327" name="Fallen Angel"/>
-	    <card id="1030" name="Paladin"/>
-	    <card id="5028" name="Winter Blacksmith"/>
-	    <card id="5040" name="Winged Trumpeter"/>
-	    <card id="5031" mastery_level="4" name="Frostlance Valkyrie"/>
-	    <card id="6045" mastery_level="6" name="Darkflame"/>
-	    <card id="5002" mastery_level="7" name="Twilight Mirror"/>
-	  </deck>
-	</mission>
-	
-	
-	<mission>
-	  <id>364</id>
-	  <name>Final Round </name>
-	  <energy>12</energy>
-	  <desc>Oda is starting sweat as he defeats another wave enemies. As he wipes his brow the ground begins to shake...</desc>
-	  <commander id="303"/>
-	  <deck>
-	    <card id="1613" name="Acidic Spider"/>
-	    <card id="2020" name="Tidetaken Fighter"/>
-	    <card id="6042" name="Shadow of Thunder"/>
-	    <card id="2020" name="Tidetaken Fighter"/>
-	    <card id="7011" name="Wolf Girl"/>
-	    <card id="2004" name="Lavatail Dragon"/>
-	    <card id="6010" name="Cliffpass Defender"/>
-	    <card id="6044" name="Firewalker"/>
-	    <card id="6024" name="Bane Dragon"/>
-	    <card id="7008" name="Rock Dragon"/>
-	    <card id="6030" mastery_level="4" name="Noveria Yeti"/>
-	    <card id="5029" mastery_level="6" name="Snowback Dragon"/>
-	    <card id="6035" mastery_level="7" name="Demos"/>
-	  </deck>
-	  <speech>
-	    <line>
-	      <commander>wolf</commander>
-	      <enemy>0</enemy>
-	      <text>Well done boy! Now, deal with the last unborn and the artifact is yours! </text>
-	    </line>
-	  </speech>
-	</mission> -->
+  <mission>
+    <id>311</id>
+    <name>From the Muck</name>
+    <energy>8</energy>
+    <desc>Groc and Ursurio come back to the airship covered in muck. Both look exhausted from their time in Dawnglow Swamp. Groc musters up the strength to report their findings.</desc>
+    <commander id="298" />
+    <deck>
+      <card id="1315" name="Nix Elemental" />
+      <card id="1315" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="1613" />
+      <card id="2019" name="Chalistomper" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="7034" name="Spore Elk" />
+      <card id="7016" name="Webfist Shaman" />
+      <card id="6011" name="Bomb Spirit" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="5050" mastery_level="4" name="Cloud Spear" />
+      <card id="5019" mastery_level="6" name="Vivid Aurora" />
+      <card id="7043" mastery_level="7" name="Anima" />
+    </deck>
+    <speech>
+      <line>
+        <commander>groc</commander>
+        <enemy>0</enemy>
+        <text>The Void is still spreading. It seems creatures that have escaped from the rifts are able to spread their contagion.</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>That's what you found at Dawnglow?  How is the village doing?</text>
+      </line>
+      <line>
+        <commander>groc</commander>
+        <enemy>0</enemy>
+        <text>Dawnglow is doing better since the creatures have been taken care of. However,  many of the frogs are suffering from infection and fevers from the sickness.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>312</id>
+    <name>Lingering Trails</name>
+    <energy>8</energy>
+    <desc>Elyse can't stop thinking about the symptoms Groc reported earlier. She can't quite place why, but they seem familiar to her. Elyse grabs a book and begins to research.</desc>
+    <commander id="299" />
+    <deck>
+      <card id="1014" name="Cherub" />
+      <card id="1014" />
+      <card id="1014" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="2025" name="Blight Knight" />
+      <card id="2027" name="Halo Mage" />
+      <card id="6004" name="Branding Construct" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="5010" name="Concealed Dragon" />
+      <card id="2030" name="Ebon Duelist" />
+      <card id="1630" mastery_level="4" name="Giant Squid" />
+      <card id="5031" mastery_level="6" name="Frostlance Valkyrie" />
+      <card id="5029" mastery_level="7" name="Snowback Dragon" />
+    </deck>
+  </mission>
+  <mission>
+    <id>313</id>
+    <name>Thorough Exam</name>
+    <energy>8</energy>
+    <desc>Elyse has been in her room for days. As she steps out for food, Oda peers inside her room. He is taken aback with the amount of research hung on the walls and scattered around the floor. His eye catches something familiar...</desc>
+    <commander id="300" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" />
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5006" />
+      <card id="2032" name="Brimstone" />
+      <card id="6021" name="Marsh Ogre" />
+      <card id="6016" name="Skeletal Giant" />
+      <card id="7047" name="Shaman of the Wild" />
+      <card id="2031" name="Dryad" />
+      <card id="7038" name="Sol King" />
+      <card id="1331" mastery_level="4" name="Fallen Soldiers" />
+      <card id="6028" mastery_level="6" name="Brahmet" />
+      <card id="5049" mastery_level="7" name="Joryl" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>What on earth happened to your room?</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>...Well, I can't stop thinking about the symptoms that Groc reported. I swear I have read about it before. Something about an artifact that counteracts it...</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Hold on, what is the picture of the Citadel? This looks like it's part of my monastery...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>314</id>
+    <name>Long Way from Home</name>
+    <energy>8</energy>
+    <desc>Oda tells Elyse what he knows about the Citadel. He is in disbelief that his Order may have already made its way to Arcantica.</desc>
+    <commander id="298" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5006" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="5035" name="Vapor Guard" />
+      <card id="6044" name="Firewalker" />
+      <card id="7005" name="Tsunamari" />
+      <card id="7045" name="Sakura" />
+      <card id="6010" name="Cliffpass Defender" />
+      <card id="7015" name="Bog Aberration" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="6026" mastery_level="4" name="Smokefang" />
+      <card id="7009" mastery_level="6" name="Rhino Beast" />
+      <card id="5042" mastery_level="7" name="Tinkerer" />
+    </deck>
+  </mission>
+  <mission>
+    <id>321</id>
+    <name>It Takes Two</name>
+    <energy>8</energy>
+    <desc>Now that Oda has been able to provide more information about the nature of the Citadel, Elyse thinks she may be able to find its location. She is soon back to the books, and this time Oda is joining her.</desc>
+    <commander id="299" />
+    <deck>
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="6017" />
+      <card id="1012" name="Cloud Sylph" />
+      <card id="1615" name="Rune Panther" />
+      <card id="2009" name="Sapling" />
+      <card id="6046" name="Celerity" />
+      <card id="2019" name="Chalistomper" />
+      <card id="7035" name="Carrion Tiger" />
+      <card id="7015" name="Bog Aberration" />
+      <card id="1630" name="Giant Squid" />
+      <card id="7004" mastery_level="5" name="Ice Golem" />
+      <card id="5001" mastery_level="6" name="Aven Skypiercer" />
+      <card id="7013" mastery_level="7" name="Gold Elemental" />
+    </deck>
+  </mission>
+  <mission>
+    <id>322</id>
+    <name>Precautionary Measures</name>
+    <energy>8</energy>
+    <desc>Elyse and Oda spend hours putting together clues to the Citadel's location. Elyse sits, staring at a picture of the Citadel, when an epiphany occurs.</desc>
+    <commander id="298" />
+    <deck>
+      <card id="7012" name="Life Drake" />
+      <card id="7012" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="2003" name="Dragon Tamer" />
+      <card id="5024" name="Cloudtop Dragon" />
+      <card id="1325" name="Chaos Storm" />
+      <card id="2023" name="Grizzly Terror" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="5004" name="Lightning Lord" />
+      <card id="5010" name="Concealed Dragon" />
+      <card id="5023" mastery_level="4" name="Nightfall Dragon" />
+      <card id="6043" mastery_level="6" name="Sandstorm" />
+      <card id="7008" mastery_level="7" name="Rock Dragon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>I... I think this Citadel is a safeguard, should The Void ever get out of hand.</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>You think it holds an artifact that protects against the sickness of The Void? This type of magic sounds like my Order... but in Arcantica?</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>I am certain it is here. If it is truly a safeguard against The Void, the Citadel might be along the east coast. That is the furthest point from The Center of The Void.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>323</id>
+    <name>Leap of Faith</name>
+    <energy>8</energy>
+    <desc>Elyse turns the ship towards the east coast. It's a few days untill they reach the other side of Arcantica. Oda spends his time in meditation. He ponders how his Order could have made it to Arcantica without him knowing.</desc>
+    <commander id="300" />
+    <deck>
+      <card id="1315" name="Nix Elemental" />
+      <card id="7006" name="Treant Sapling" />
+      <card id="7006" />
+      <card id="5033" name="Lost Soul" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="1632" name="Shadow Rider" />
+      <card id="2000" name="Wasteland Nomad" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="1325" name="Chaos Storm" />
+      <card id="6009" mastery_level="4" name="Siphon Dragon" />
+      <card id="5037" mastery_level="6" name="Dauntless Baneblade" />
+      <card id="6035" mastery_level="7" name="Demos" />
+    </deck>
+  </mission>
+  <mission>
+    <id>324</id>
+    <name>Beach View</name>
+    <energy>8</energy>
+    <desc>Oda and Elyse make it to the coast. The rocky terrain stretches for miles. They spend hours sweeping the coast, until Oda spots something familiar.</desc>
+    <commander id="301" />
+    <deck>
+      <card id="1313" name="Lavafrog" />
+      <card id="1017" name="Judgment" />
+      <card id="1017" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="7011" name="Wolf Girl" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="5030" name="Loxphas Mage" />
+      <card id="5005" name="Storm Giant" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="1327" name="Fallen Angel" />
+      <card id="5034" mastery_level="4" name="Skyward Guardian" />
+      <card id="6019" mastery_level="6" name="Canopy Horror" />
+      <card id="6033" mastery_level="7" name="Firebeard" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>We have been searching the coast for hours... nothing...</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Wait... behind that outcropping, hidden in the stone!</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>I can't believe it... a Citadel from my Order. It looks ancient. This was here before I arrived...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>331</id>
+    <name>Rocky Road</name>
+    <energy>8</energy>
+    <desc>Elyse sets the airship down by a safe spot right outside the Citadel. The path forward is rocky and dangerous. They will have to be careful as they traverse.</desc>
+    <commander id="299" />
+    <deck>
+      <card id="1010" name="Lightning Elemental" />
+      <card id="1313" name="Lavafrog" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="2024" name="Dusk Noble" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="2005" name="Sailing Drake" />
+      <card id="2020" name="Tidetaken Fighter" />
+      <card id="2028" mastery_level="4" name="Infinity" />
+      <card id="5043" mastery_level="6" name="Empyrean" />
+      <card id="7036" mastery_level="7" name="Deepwood Corpse" />
+    </deck>
+  </mission>
+  <mission>
+    <id>332</id>
+    <name>The Hidden Citadel </name>
+    <energy>8</energy>
+    <desc>The area around the Citadel is wild. Outside of the Citadel the environment looks completely untouched. It's clear that whatever this Citadel holds, it is not meant to be found by others.</desc>
+    <commander id="298" />
+    <deck>
+      <card id="1012" name="Cloud Sylph" />
+      <card id="1012" />
+      <card id="1615" name="Rune Panther" />
+      <card id="1030" name="Paladin" />
+      <card id="7034" name="Spore Elk" />
+      <card id="2031" name="Dryad" />
+      <card id="1625" name="Ferocious Clawkin" />
+      <card id="5035" name="Vapor Guard" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="1642" mastery_level="4" name="Icestone Beast" />
+      <card id="7002" mastery_level="6" name="Cerberus" />
+      <card id="5002" mastery_level="7" name="Twilight Mirror" />
+    </deck>
+  </mission>
+  <mission>
+    <id>333</id>
+    <name>Locked Away</name>
+    <energy>8</energy>
+    <desc>Elyse and Oda make their way to the Citadel's front door. Elyse tries to open it, but it's locked. The door doesn't seem to have an obvious lock on it...</desc>
+    <commander id="300" />
+    <deck>
+      <card id="1015" name="Windfrog" />
+      <card id="1017" name="Judgment" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="5005" name="Storm Giant" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="7029" name="Owl Griffin" />
+      <card id="5020" name="Frost Frog" />
+      <card id="1630" name="Giant Squid" />
+      <card id="7032" mastery_level="4" name="Nidhogg" />
+      <card id="6014" mastery_level="6" name="Armored Ogre" />
+      <card id="1043" mastery_level="7" name="Lilypad Bard" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Ahh, this citadel must truly be old. We have not locked our doors with magic like this in a long time. It requires a simple dance to open.</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Huh, I have never seen a door unlocked with a dance. Why did you stop using it?</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>It didn't prove to be the most effective...the drinking enthusiasts of my country had a way of figuring out the dance...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>334</id>
+    <name>Pop and Unlock</name>
+    <energy>8</energy>
+    <desc>Oda stands directly in front of the door. He begins to perform a quick ritual, waving his hand and muttering words under his breath. The door makes a clicking noise and begins to slide open, with the heavy sound of rock against rock.</desc>
+    <commander id="301" />
+    <deck>
+      <card id="1019" name="Oracle" />
+      <card id="7007" name="Water Serpent" />
+      <card id="7021" name="Shadow Elemental" />
+      <card id="7045" name="Sakura" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="5021" name="Tower Spirit" />
+      <card id="6015" name="Acidic Sludge" />
+      <card id="7005" name="Tsunamari" />
+      <card id="5028" name="Winter Blacksmith" />
+      <card id="5030" name="Loxphas Mage" />
+      <card id="6047" mastery_level="4" name="Wither" />
+      <card id="6039" mastery_level="6" name="Auroch" />
+      <card id="5045" mastery_level="7" name="Echo Elemental" />
+    </deck>
+  </mission>
+  <mission>
+    <id>341</id>
+    <name>Sleeping on the Job</name>
+    <energy>8</energy>
+    <desc>Oda and Elyse enter the Citadel. It's dark, only lit by natural light. There is a main entrance hall and giant doors in the back. A single monk can be seen sleeping in the center of the hall.</desc>
+    <commander id="299" />
+    <deck>
+      <card id="1617" name="Water Elemental" />
+      <card id="7012" name="Life Drake" />
+      <card id="1014" name="Cherub" />
+      <card id="7024" name="Woolmane Dragon " />
+      <card id="2001" name="Dunetooth Demon" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="2019" name="Chalistomper" />
+      <card id="6016" name="Skeletal Giant" />
+      <card id="5011" name="Sky Whale" />
+      <card id="1030" name="Paladin" />
+      <card id="6032" mastery_level="4" name="Mumohotep" />
+      <card id="6041" mastery_level="6" name="Reaper" />
+      <card id="5042" mastery_level="7" name="Tinkerer" />
+    </deck>
+  </mission>
+  <mission>
+    <id>342</id>
+    <name>Up and At'Em</name>
+    <energy>8</energy>
+    <desc>The monk is awakened by their arrival. Startled, he sits up quickly and grabs his staff. Magic swirls around him...</desc>
+    <commander id="302" />
+    <deck>
+      <card id="1314" name="Skeletal Hound" />
+      <card id="1313" name="Lavafrog" />
+      <card id="7038" name="Sol King" />
+      <card id="7047" name="Shaman of the Wild" />
+      <card id="2014" name="Tadpole Warmage" />
+      <card id="2011" name="Poliworg" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="7034" name="Spore Elk" />
+      <card id="7011" name="Wolf Girl" />
+      <card id="7042" mastery_level="4" name="Scurvy Hopper" />
+      <card id="7039" mastery_level="6" name="Winged Giant" />
+      <card id="7001" mastery_level="7" name="Hekaton" />
+    </deck>
+    <speech>
+      <line>
+        <commander>oldmonk</commander>
+        <enemy>0</enemy>
+        <text>H-huh, what-wh-who enters the First Order's Citadel?!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>343</id>
+    <name>Sign of a Friend</name>
+    <energy>8</energy>
+    <desc>The monk recognizes the beads around Oda's neck. They are common in their Order. His face turns red as he quickly lays down his staff, bowing in apology. Elyse can start to see a resemblence between the two.</desc>
+    <commander id="298" />
+    <deck>
+      <card id="5012" name="Static Drake" />
+      <card id="1019" name="Oracle" />
+      <card id="6034" name="Bone Viper" />
+      <card id="7041" name="Feral Angel" />
+      <card id="1327" name="Fallen Angel" />
+      <card id="2030" name="Ebon Duelist" />
+      <card id="1629" name="Rock Titan" />
+      <card id="2005" name="Sailing Drake" />
+      <card id="5028" name="Winter Blacksmith" />
+      <card id="2023" name="Grizzly Terror" />
+      <card id="7023" mastery_level="4" name="Zolmosh the Fist" />
+      <card id="7046" mastery_level="6" name="Brambleblight" />
+      <card id="7037" mastery_level="7" name="Bane" />
+    </deck>
+    <speech>
+      <line>
+        <commander>oldmonk</commander>
+        <enemy>0</enemy>
+        <text>Oh, please forgive me for attacking! I did not see the beads of the First Order that you wear around your neck.</text>
+      </line>
+      <line>
+        <commander>oldmonk</commander>
+        <enemy>0</enemy>
+        <text>What brings you and your ally out to Seastone Citadel?</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>We came seeking an artifact...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>344</id>
+    <name>Hidden Treasures </name>
+    <energy>8</energy>
+    <desc>The monk looks surprised they know of the artifact. Even within the Order, it was a secret item.</desc>
+    <commander id="301" />
+    <deck>
+      <card id="1014" name="Cherub" />
+      <card id="2027" name="Halo Mage" />
+      <card id="2027" name="Halo Mage" />
+      <card id="2025" name="Blight Knight" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="5040" name="Winged Trumpeter" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="7005" name="Tsunamari" />
+      <card id="7041" name="Feral Angel" />
+      <card id="5001" mastery_level="4" name="Aven Skypiercer" />
+      <card id="5031" mastery_level="6" name="Frostlance Valkyrie" />
+      <card id="5032" mastery_level="7" name="Hail Hurler" />
+    </deck>
+  </mission>
+  <mission>
+    <id>351</id>
+    <name>Hesitations of the Holy</name>
+    <energy>8</energy>
+    <desc>The monk looks nervous. He is becoming suspicious as to the nature of the questions being asked. He keeps his staff firmly in hand.</desc>
+    <commander id="301" />
+    <deck>
+      <card id="1312" name="Scythe Demon" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6034" name="Bone Viper" />
+      <card id="2023" name="Grizzly Terror" />
+      <card id="1628" name="Garganotos" />
+      <card id="6005" name="Gloomkin" />
+      <card id="1332" name="Vampiric Emira" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="2024" name="Dusk Noble" />
+      <card id="6036" name="Cursed Ogre" />
+      <card id="6037" mastery_level="4" name="Keeper of Souls" />
+      <card id="2013" mastery_level="6" name="Stoneclad Toad" />
+      <card id="7033" mastery_level="7" name="Treebond Skull" />
+    </deck>
+    <speech>
+      <line>
+        <commander>oldmonk</commander>
+        <enemy>0</enemy>
+        <text>You seem to know a lot about a secret artifact within our Order... why have you come for it?</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>The Void is spreading, brother. We will need it in our fight to stop it.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>352</id>
+    <name>Sickness Abound</name>
+    <energy>8</energy>
+    <desc>The monk is taken aback. He had no idea The Void has gotten so bad. The Order will not allow him to give the artifact to anyone who is not a Keeper... he looks at Oda and smiles.</desc>
+    <commander id="299" />
+    <deck>
+      <card id="6007" name="Goblin Crew" />
+      <card id="6007" />
+      <card id="5046" name="Dawn" />
+      <card id="1032" name="Lunar Elemental" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="2012" name="Frogling Swarm" />
+      <card id="6046" name="Celerity" />
+      <card id="6031" name="Iceblood Assassin" />
+      <card id="2032" name="Brimstone" />
+      <card id="1325" name="Chaos Storm" />
+      <card id="5048" name="Highborn Rose" />
+      <card id="6049" name="Goblin Explosioneer" />
+      <card id="5009" name="Royal Guardian" />
+    </deck>
+  </mission>
+  <mission>
+    <id>353</id>
+    <name>One with the Force</name>
+    <energy>8</energy>
+    <desc>The monk takes a moment to asses Oda's aura. He can tell Oda is a powerful wielder of magical abilities.</desc>
+    <commander id="300" />
+    <deck>
+      <card id="7012" name="Life Drake" />
+      <card id="7012" />
+      <card id="6025" name="Dragon Keeper" />
+      <card id="6044" name="Firewalker" />
+      <card id="7010" name="Honeycomb Dragon" />
+      <card id="5024" name="Cloudtop Dragon" />
+      <card id="2031" name="Dryad" />
+      <card id="1030" name="Paladin" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="2003" name="Dragon Tamer" />
+      <card id="7039" mastery_level="4" name="Winged Giant" />
+      <card id="6024" mastery_level="6" name="Bane Dragon" />
+      <card id="5000" mastery_level="7" name="Azure Sphinx" />
+    </deck>
+    <speech>
+      <line>
+        <commander>oldmonk</commander>
+        <enemy>0</enemy>
+        <text>This is unsettling news. Oda, as I'm sure you know, the Order will not allow me to give an artifact like this to anyone. They have to be a Keeper.</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>I feared as much... we must leave with the artifact. I.. I am willing to undergo the ritual to become the Keeper.</text>
+      </line>
+      <line>
+        <commander>oldmonk</commander>
+        <enemy>0</enemy>
+        <text>Very well, let us begin.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>354</id>
+    <name>The Test Begins</name>
+    <energy>8</energy>
+    <desc>Oda agrees to become a Keeper for the artifact. The monk nods and begins to draw a circle around him. The circle begins to glow...</desc>
+    <commander id="301" />
+    <deck>
+      <card id="1613" name="Acidic Spider" />
+      <card id="1628" name="Garganotos" />
+      <card id="6016" name="Skeletal Giant" />
+      <card id="2001" name="Dunetooth Demon" />
+      <card id="6038" name="Hemlock" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="2021" name="Snowstep Ranger" />
+      <card id="1030" name="Paladin" />
+      <card id="7004" name="Ice Golem" />
+      <card id="1631" name="Venom Dragon" />
+      <card id="7048" mastery_level="4" name="Bogskull Widow" />
+      <card id="5049" mastery_level="6" name="Joryl" />
+      <card id="1343" mastery_level="7" name="Firehorn" />
+    </deck>
+  </mission>
+  <mission>
+    <id>361</id>
+    <name>Circle of Troubles</name>
+    <energy>12</energy>
+    <desc>Oda stands in the center of the circle, ready for whatever beasts are about to appear. The edges of the circle begin to widen. Hands rise from the edges.</desc>
+    <commander id="261" />
+    <deck>
+      <card id="5022" name="Webfoot Raider" />
+      <card id="5022" />
+      <card id="6011" name="Bomb Spirit" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="1629" name="Rock Titan" />
+      <card id="2021" name="Snowstep Ranger" />
+      <card id="5028" name="Winter Blacksmith" />
+      <card id="1632" name="Shadow Rider" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="5035" name="Vapor Guard" />
+      <card id="5047" mastery_level="4" name="Sky Fisher" />
+      <card id="5027" mastery_level="6" name="Northern War-kin" />
+      <card id="6027" mastery_level="7" name="Frigela, the Dread" />
+    </deck>
+    <speech>
+      <line>
+        <commander>oldmonk</commander>
+        <enemy>0</enemy>
+        <text>Prepare yourself Oda. You will have to face waves of the undead in order to complete the ritual.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>362</id>
+    <name>First Wave</name>
+    <energy>12</energy>
+    <desc>Oda easily deals with the first wave of enemies. More creatures begin to emerge from the circle. </desc>
+    <commander id="266" />
+    <deck>
+      <card id="1616" name="Werewarg" />
+      <card id="5046" name="Dawn" />
+      <card id="2010" name="Silver Wind" />
+      <card id="7034" name="Spore Elk" />
+      <card id="2008" name="Shadow of Ash" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="1625" name="Ferocious Clawkin" />
+      <card id="7045" name="Sakura" />
+      <card id="7021" name="Shadow Elemental" />
+      <card id="7029" name="Owl Griffin" />
+      <card id="5045" mastery_level="4" name="Echo Elemental" />
+      <card id="5043" mastery_level="6" name="Empyrean" />
+      <card id="7027" mastery_level="7" name="Kitsune" />
+    </deck>
+  </mission>
+  <mission>
+    <id>363</id>
+    <name>Front Line Worries</name>
+    <energy>12</energy>
+    <desc>Another wave rises from the circle. Elyse starts to look worried that Oda must defeat these creatures alone. She glances at the monk who gives a reassuring glance.</desc>
+    <commander id="214" />
+    <deck>
+      <card id="6012" name="Ember Drake" />
+      <card id="1031" name="Noble Champion" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="6005" name="Gloomkin" />
+      <card id="2032" name="Brimstone" />
+      <card id="6020" name="Croak Piercer" />
+      <card id="1327" name="Fallen Angel" />
+      <card id="1030" name="Paladin" />
+      <card id="5028" name="Winter Blacksmith" />
+      <card id="5040" name="Winged Trumpeter" />
+      <card id="5031" mastery_level="4" name="Frostlance Valkyrie" />
+      <card id="6045" mastery_level="6" name="Darkflame" />
+      <card id="5002" mastery_level="7" name="Twilight Mirror" />
+    </deck>
+  </mission>
+  <mission>
+    <id>364</id>
+    <name>Final Round </name>
+    <energy>12</energy>
+    <desc>Oda is starting to sweat as he defeats another wave enemies. As he wipes his brow, the ground begins to shake...</desc>
+    <commander id="303" />
+    <deck>
+      <card id="1613" name="Acidic Spider" />
+      <card id="2020" name="Tidetaken Fighter" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="2020" name="Tidetaken Fighter" />
+      <card id="7011" name="Wolf Girl" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="6010" name="Cliffpass Defender" />
+      <card id="6044" name="Firewalker" />
+      <card id="6024" name="Bane Dragon" />
+      <card id="7008" name="Rock Dragon" />
+      <card id="6030" mastery_level="4" name="Noveria Yeti" />
+      <card id="5029" mastery_level="6" name="Snowback Dragon" />
+      <card id="6035" mastery_level="7" name="Demos" />
+    </deck>
+    <speech>
+      <line>
+        <commander>oldmonk</commander>
+        <enemy>0</enemy>
+        <text>Well done, boy! Now, deal with the last undead and the artifact is yours!</text>
+      </line>
+    </speech>
+  </mission>
   <!-- END Seaside Temple -->
   <!-- START Side Missions -->
   <mission>
@@ -4833,11 +4792,11 @@
   </mission>
   <mission>
     <id>1516</id>
-    <name>Quite Confidence</name>
+    <name>Golden Rule</name>
     <player_commander>7</player_commander>
     <!-- <commander_req>7</commander_req> -->
     <energy>8</energy>
-    <desc>Elyse smiles as she realizes all of her studying has finally paid off. For the first time she feels a great confidence in her abilities. (Elyse will automatically be appointed)</desc>
+    <desc>A Golden Elemental appears on the horizon. It makes its way towards the hillside where a Wind Elemental awaits. A frown overtakes Groc and Elyes' face. (Elyse will automatically be appointed)</desc>
     <commander id="238" />
     <!-- Lantern Guardian -->
     <deck>
@@ -4856,14 +4815,31 @@
       <card id="5001" mastery_level="6" name="Aven Skypiercer" />
       <card id="5009" mastery_level="7" name="Royal Guardian" />
     </deck>
+    <speech>
+      <line>
+        <commander>groc</commander>
+        <enemy>0</enemy>
+        <text>Uhh, do you see that Gold Elemental heading toward the Wind Elemental...</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>I don't need a book to know how disastrous this will be. Maybe we should head out.</text>
+      </line>
+      <line>
+        <commander>groc</commander>
+        <enemy>0</enemy>
+        <text>Nonsense, the more disastrous the situation the more there is to learn! Think you can take care of the Wind Elemental by yourself?</text>
+      </line>
+    </speech>
   </mission>
   <mission>
     <id>1517</id>
-    <name>Golden Rule</name>
+    <name>Quite Confidence</name>
     <player_commander>7</player_commander>
     <!--  <commander_req>7</commander_req> -->
     <energy>8</energy>
-    <desc>A Golden Elemental appears on the horizon. It makes its way towards the hillside where a Wind Elemental awaits. A frown overtakes Groc and Elyes' face. (Elyse will automatically be appointed)</desc>
+    <desc>Elyse smiles as she realizes all of her studying is finally paying off. As she heads towards the elemental she feels a great confidence in her abilities. (Elyse will automatically be appointed)</desc>
     <commander id="243" />
     <!-- Windstorm Avatar  -->
     <deck>
@@ -4882,23 +4858,6 @@
       <card id="1343" mastery_level="6" name="Firehorn" />
       <card id="6028" mastery_level="7" name="Brahmet" />
     </deck>
-    <speech>
-      <line>
-        <commander>groc</commander>
-        <enemy>0</enemy>
-        <text>Uhh, do you see that Gold Elemental heading toward the Wind Elemental...</text>
-      </line>
-      <line>
-        <commander>elyse</commander>
-        <enemy>0</enemy>
-        <text>I don't need a book to know how disastrous this will be. Maybe we should head out.</text>
-      </line>
-      <line>
-        <commander>groc</commander>
-        <enemy>0</enemy>
-        <text>Nonsense, the more disastrous the situation the more there is to learn!</text>
-      </line>
-    </speech>
   </mission>
   <!-- Oda -->
   <mission>
@@ -5097,7 +5056,7 @@
       <line>
         <commander>elementalhero</commander>
         <enemy>0</enemy>
-        <text>Huh...a serpent you say. Is it an undead serpent by chance? Maybe 40 feet tall? </text>
+        <text>Huh...a serpent you say. Is it an undead serpent by chance? Maybe 40 feet tall?</text>
       </line>
       <line>
         <commander>templeguardian</commander>
@@ -5144,7 +5103,7 @@
     <player_commander>4</player_commander>
     <!-- <commander_req>4</commander_req> -->
     <energy>8</energy>
-    <desc>Tarian notices the marks on her arms as she passes by him on the air ship. He has these symptoms before. (Aria will automatically be appointed)</desc>
+    <desc>Tarian notices the marks on her arms as she passes by him on the air ship. He has seen these symptoms before. (Aria will automatically be appointed)</desc>
     <commander id="200" />
     <deck>
       <card id="5017" name="Steam Tempest" />
@@ -5172,12 +5131,12 @@
       <line>
         <commander>necromancer</commander>
         <enemy>0</enemy>
-        <text>Oh...uh yes. I'm fine. My arm hurts a bit but the infection doesn't seem to be spreading.</text>
+        <text>Oh... uh yes. I'm fine. My arm hurts a bit but the infection doesn't seem to be spreading.</text>
       </line>
       <line>
         <commander>lichking</commander>
         <enemy>0</enemy>
-        <text>Come with me, I picked up something from when I was in the Center of The Void that 	may help you.</text>
+        <text>Hmm, I picked up something from when I was in the Center of The Void that may help you.</text>
       </line>
     </speech>
   </mission>
@@ -5187,7 +5146,7 @@
     <player_commander>4</player_commander>
     <!--  <commander_req>4</commander_req> -->
     <energy>8</energy>
-    <desc>Tarian takes Aria to a small building on the outskirts of The Salt Wastes. Its filled to the brim with lab equipment. Seems to be one of Malchior's laboratories. (Aria will automatically be appointed)</desc>
+    <desc>Tarian tells Aria of a small building on the outskirts of The Salt Wastes. Its filled to the brim with lab equipment. Seems to be one of Malchior's laboratories. (Aria will automatically be appointed)</desc>
     <commander id="210" />
     <deck>
       <card id="6012" name="Ember Drake" />
@@ -5209,12 +5168,12 @@
       <line>
         <commander>necromancer</commander>
         <enemy>0</enemy>
-        <text>Malchior lets you have access to his laboratory?</text>
+        <text>Malchior laboratory is so messy! Alright, Ronaldo lets look for this Black Flower that Tarian mentioned.</text>
       </line>
       <line>
-        <commander>lichking</commander>
+        <commander>skeletonwarrior</commander>
         <enemy>0</enemy>
-        <text>We have been working together since coming back from the Center of The Void. The scientist there was engineering a flower to help with the outbreak.</text>
+        <text>Grrrraable!</text>
       </line>
     </speech>
   </mission>
@@ -5224,7 +5183,7 @@
     <player_commander>4</player_commander>
     <!-- <commander_req>4</commander_req> -->
     <energy>8</energy>
-    <desc>Tarian takes one of the Black Flowers from the lab. He begins to grind and distill the herb into a potion that may cure Aria of The Void infection for good. (Aria will automatically be appointed)</desc>
+    <desc>Aria finds one of the Black Flowers in the back of the lab. She begins to grind and distill the herb into a potion that may The Void infection for good. (Aria will automatically be appointed)</desc>
     <commander id="205" />
     <deck>
       <card id="1311" name="Molten Skeleton" />
@@ -5250,7 +5209,7 @@
     <player_commander>4</player_commander>
     <!-- <commander_req>4</commander_req> -->
     <energy>8</energy>
-    <desc>The potion needs a few hours to settle. Tarian looks up at Aria who is beginning to look nervous. He offers what comfort he can as they wait. (Aria will automatically be appointed)</desc>
+    <desc>The potion needs a few hours to settle. Ronaldo looks at Aria who is beginning to look nervous. He offers what comfort he can as they wait. (Aria will automatically be appointed)</desc>
     <commander id="299" />
     <deck>
       <card id="1318" name="Smelted Lava Slug" />
@@ -5275,7 +5234,7 @@
     <player_commander>4</player_commander>
     <!-- <commander_req>4</commander_req> -->
     <energy>8</energy>
-    <desc>The potion is now block and opaque. Tarian serves it in a cup and hands it to Aria. (Aria will automatically be appointed)</desc>
+    <desc>The potion is now black and opaque. Aria serves it in a cup and pinches her nose. (Aria will automatically be appointed)</desc>
     <commander id="252" />
     <deck>
       <card id="7022" name="Beetle Tamer" />
@@ -5297,17 +5256,17 @@
       <line>
         <commander>necromancer</commander>
         <enemy>0</enemy>
-        <text>So...you are sure this will get rid of the infection?  How safe is this?</text>
+        <text>Well, Tarian said this will get rid of the infection. I wonder how safe this is...</text>
       </line>
       <line>
-        <commander>lichking</commander>
+        <commander>skeletonwarrior</commander>
         <enemy>0</enemy>
-        <text>We have it tested on mice and none of them died...so you'll probably be fine! Though they did appear to suffer from mild hallucinations.</text>
+        <text>Grrberler...?</text>
       </line>
       <line>
         <commander>necromancer</commander>
         <enemy>0</enemy>
-        <text>Oh lords, well here goes nothing I guess.</text>
+        <text>Blah! That tastes awful! Uh oh... I think I'm starting to hallucinate.</text>
       </line>
     </speech>
   </mission>
@@ -6001,7 +5960,7 @@
     <arena_x>250</arena_x>
     <arena_y>150</arena_y>
   </location>
-  <!-- <location>
+  <!-- 	<location>
 		<id>6</id>
 		<name>Seastone Citadel</name>
 		<mapBG>Map_Seaside</mapBG>
@@ -6097,6 +6056,16 @@
     <mapBG>EventMap_AprilFools_001</mapBG>
     <combatBG>CombatBGAprilFools_001</combatBG>
     <asset_bundle>52</asset_bundle>
+    <req>-1</req>
+    <arena_x>250</arena_x>
+    <arena_y>150</arena_y>
+  </location>
+  <location>
+    <id>109</id>
+    <name>Red Feather Valley</name>
+    <mapBG>EventMap_011</mapBG>
+    <asset_bundle>48</asset_bundle>
+    <combatBG>CombatBGEvent004</combatBG>
     <req>-1</req>
     <arena_x>250</arena_x>
     <arena_y>150</arena_y>

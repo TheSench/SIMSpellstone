@@ -165,7 +165,7 @@ void Main()
 			writer.WriteLine("    \"name\": \"" + mission.name + "\",");
 			writer.WriteLine("    \"commander\": {");
 			writer.WriteLine(mission.commander.ToString());
-			writer.WriteLine("},");
+			writer.WriteLine("    },");
 			writer.WriteLine("    \"deck\": [");
 			foreach (var card in mission.deck)
 			{
