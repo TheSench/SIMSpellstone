@@ -1015,13 +1015,16 @@ var SIMULATOR = {};
 
         if (turn % 2) {
             var p = first_player;
+            var o = second_player;
         } else {
             var p = second_player;
+            var o = first_player;
         }
 
         if (debug) echo += '<u>Turn ' + turn + ' begins for ' + debug_name(field[p]['commander']) + '</u><br>';
 
         var field_p_assaults = field[p]['assaults'];
+        var field_o_assaults = field[o]['assaults'];
         // Count down timer on your field
         // Remove from your field: Enfeeble, Protect
         for (var key = 0, len = field_p_assaults.length; key < len; key++) {
@@ -1030,6 +1033,22 @@ var SIMULATOR = {};
             if (current_assault.timer > 0) {
                 current_assault.timer--;
                 if (debug) echo += debug_name(current_assault) + ' reduces its timer<br>';
+            }
+
+            // Check valor
+            if (current_assault.hasValor() && current_assault.isActive() && current_assault.isUnjammed()) {
+                var enemy = field_o_assaults[key];
+                if (debug) echo += debug_name(current_assault) + ' activates valor';
+                if (!enemy) {
+                    if (debug) echo += ' but there is no opposing enemy.<br/>'
+                } else if (current_assault.adjustedAttack() < enemy.adjustedAttack()) {
+                    current_assault.attack_valor = current_assault.valor;
+                    if (debug) echo += ', boosting its attack by ' + current_assault.valor + '<br/>';
+                } else {
+                    if (debug) echo += ' but enemy is not strong enough.<br/>'
+                }
+                // Once valor is checked, it will not be checked again
+                current_assault.valor_triggered = true;
             }
 
             current_assault.enfeebled = 0;

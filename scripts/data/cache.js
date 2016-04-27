@@ -81602,6 +81602,21 @@ var BATTLEGROUNDS = [
     }
   },
   {
+    "name": "Airborne Mastery",
+    "id": "109",
+    "effect": {
+      "add_skill": [
+        {
+          "id": "valor",
+          "mult": 1,
+          "base": "attack",
+          "y": "10",
+          "z": 10,
+        },
+      ]
+    }
+  },
+  {
     "name": "Nethergore's Reckoning",
     "id": "504",
     "enemy_only": "1",

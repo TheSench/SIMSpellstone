@@ -83,6 +83,8 @@ function initializeCard(card, p, newKey) {
     card.attack_rally = 0;
     card.attack_weaken = 0;
     card.attack_berserk = 0;
+    card.attack_valor = 0;
+    card.valor_triggered = false;
     card.poisoned = 0;
     card.scorched = 0;
     card.enfeebled = 0;
@@ -143,6 +145,7 @@ function cloneCard(original) {
     copy.leech = original.leech;
     copy.pierce = original.pierce;
     copy.poison = original.poison;
+    copy.valor = original.valor;
     if (original.flurry) {
         copy.skillTimers = [];
         copy.flurry = { id: original.flurry.id, c: original.flurry.c };
@@ -250,6 +253,8 @@ var MakeAssault = (function () {
         timer: 0,
         attack_rally: 0,
         attack_berserk: 0,
+        attack_valor: 0,
+        valor_triggered: false,
         attack_weaken: 0,
         key: undefined,
         // Passives
@@ -260,6 +265,7 @@ var MakeAssault = (function () {
         leech: 0,
         pierce: 0,
         poison: 0,
+        valor: 0,
         // Statuses
         poisoned: 0,
         scorched: 0,
@@ -316,6 +322,11 @@ var MakeAssault = (function () {
             return !(this.jammed);
         },
 
+        // Has un-triggered valor
+        hasValor: function () {
+            return (this.valor && !this.valor_triggered);
+        },
+
         // Has at least one Enhanceable Activation Skill
         // - strike, protect, enfeeble, rally, repair, supply, siege, heal, weaken (unless they have on play/death/attacked/kill)
         hasSkill: function (s, all) {
@@ -327,10 +338,11 @@ var MakeAssault = (function () {
                 case 'burn':
                 case 'counter':
                 case 'evade':
+                case 'flurry':
                 case 'leech':
                 case 'pierce':
                 case 'poison':
-                case 'flurry':
+                case 'valor':
                     return this[s];
                     break;
                 // Early Activation skills
@@ -370,7 +382,7 @@ var MakeAssault = (function () {
         },
 
         adjustedAttack: function () {
-            return (this.attack + this.attack_rally + this.attack_berserk - this.attack_weaken);
+            return (this.attack + this.attack_rally + this.attack_berserk + this.attack_valor - this.attack_weaken);
         },
 
         permanentAttack: function () {
@@ -436,6 +448,7 @@ var boostSkill = function (card, boost) {
         case 'leech':
         case 'pierce':
         case 'poison':
+        case 'valor':
             card[skillID] += parseInt(boost.x);
             return;
         case 'flurry':
@@ -584,6 +597,7 @@ function setSkill_2(new_card, skill) {
         case 'leech':
         case 'pierce':
         case 'poison':
+        case 'valor':
             new_card[skill.id] = (new_card[skill.id]|0) + skill.x;
             break;
         case 'flurry':
@@ -767,7 +781,7 @@ function debug_name(card, hideStats) {
             output += ' HP]';
         } else if (card.isAssault()) {
             output += ' [';
-            var atk = parseInt(card.attack) + parseInt(card.attack_rally) + parseInt(card.attack_berserk) - parseInt(card.attack_weaken);
+            var atk = card.adjustedAttack();
             if (isNaN(atk) || atk == undefined) atk = card.attack;
             output += atk;
             output += '/';
@@ -900,6 +914,7 @@ function debug_passive_skills(card, skillText) {
 }
 
 function debug_triggered_skills(card, skillText) {
+    debugNonActivatedSkill(card, "valor", skillText);
     debugNonActivatedSkill(card, "pierce", skillText);
     debugNonActivatedSkill(card, "burn", skillText);
     debugNonActivatedSkill(card, "poison", skillText);
