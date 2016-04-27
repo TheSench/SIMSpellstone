@@ -14099,7 +14099,7 @@ var CARDS = {
   "2035": {
     "id": "2035",
     "name": "Mysterious Egg",
-    "picture": "NotFound",
+    "picture": "Common_Dragon_A",
     "rarity": "1",
     "set": "2000",
     "card_type": "2",
@@ -14123,7 +14123,7 @@ var CARDS = {
   "2036": {
     "id": "2036",
     "name": "Narix, Dragon Whelp",
-    "picture": "NotFound",
+    "picture": "Rare_Dragon_A",
     "rarity": "2",
     "set": "2000",
     "card_type": "2",
@@ -14162,7 +14162,7 @@ var CARDS = {
   "2037": {
     "id": "2037",
     "name": "Narix, the Defiant",
-    "picture": "NotFound",
+    "picture": "Epic_Dragon_B",
     "rarity": "3",
     "set": "2000",
     "card_type": "2",
@@ -14211,7 +14211,7 @@ var CARDS = {
   "2038": {
     "id": "2038",
     "name": "Narix, the Tyrant",
-    "picture": "NotFound",
+    "picture": "Legendary_Dragon_B",
     "rarity": "4",
     "set": "2000",
     "card_type": "2",
@@ -14297,7 +14297,7 @@ var CARDS = {
   "2039": {
     "id": "2039",
     "name": "Narix, Dragonlord",
-    "picture": "NotFound",
+    "picture": "mythicDragon_A",
     "rarity": "5",
     "set": "2000",
     "card_type": "2",
@@ -63437,7 +63437,7 @@ var CARDS = {
   "13": {
     "id": "13",
     "name": "Oda the Aegis",
-    "picture": "NotFound",
+    "picture": "portrait_odaupgrade",
     "rarity": "4",
     "set": "7000",
     "card_type": "1",
@@ -63541,7 +63541,7 @@ var CARDS = {
   "14": {
     "id": "14",
     "name": "Yuriel the Manashifter",
-    "picture": "NotFound",
+    "picture": "portrait_yurielupgrade",
     "rarity": "4",
     "set": "7000",
     "card_type": "1",
@@ -63625,7 +63625,7 @@ var CARDS = {
   "15": {
     "id": "15",
     "name": "Aria the Nightwielder",
-    "picture": "NotFound",
+    "picture": "portrait_ariaupgrade",
     "rarity": "4",
     "set": "7000",
     "card_type": "1",
@@ -63705,7 +63705,7 @@ var CARDS = {
   "16": {
     "id": "16",
     "name": "Decim the Pyrokinetic",
-    "picture": "NotFound",
+    "picture": "portrait_decimupgrade",
     "rarity": "4",
     "set": "7000",
     "card_type": "1",
@@ -63783,7 +63783,7 @@ var CARDS = {
   "17": {
     "id": "17",
     "name": "Elyse the Truestriker",
-    "picture": "NotFound",
+    "picture": "portrait_elyseupgrade",
     "rarity": "4",
     "set": "7000",
     "card_type": "1",
@@ -63888,7 +63888,7 @@ var CARDS = {
   "18": {
     "id": "18",
     "name": "General Ursurio",
-    "picture": "NotFound",
+    "picture": "portrait_ursurioupgrade",
     "rarity": "4",
     "set": "7000",
     "card_type": "1",
@@ -72004,7 +72004,7 @@ var CARDS = {
   "302": {
     "id": "302",
     "name": "First Order Monk",
-    "picture": "NotFound",
+    "picture": "portrait_oldmonk",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -72112,7 +72112,7 @@ var CARDS = {
   "303": {
     "id": "303",
     "name": "Sealed First Order Demon",
-    "picture": "NotFound",
+    "picture": "portrait_octopusmonster",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
