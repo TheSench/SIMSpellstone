@@ -189,7 +189,7 @@ var CARD_GUI = {};
         }
         htmlCard.setAttribute("data-runeids", runeIDs.join(","));
 
-        var picture = CARDS[card.id].picture;
+        var picture = loadCard(card.id).picture;
         if (picture) {
             var icon = document.createElement("i");
             if (picture.indexOf("portrait_") == 0) {
@@ -220,7 +220,7 @@ var CARD_GUI = {};
                 htmlCard.appendChild(createImg(getAssetPath("cardAssets") + "Attack.png", "attack"));
                 htmlCard.appendChild(htmlAttack);
             }
-            
+
             if (card.cost >= 0) {
                 if (onField) {
                     if (card.timer) {
@@ -367,8 +367,8 @@ var CARD_GUI = {};
             htmlSkill.classList.add("increased");
         }
         if (skill.all) htmlSkill.innerHTML += (" All ");
-        if (skill.s) htmlSkill.appendChild(getSkillIcon(skill.s));
         if (skill.y) htmlSkill.appendChild(getFactionIcon(skill.y));
+        if (skill.s) htmlSkill.appendChild(getSkillIcon(skill.s));
         if (skill.x) htmlSkill.innerHTML += (" " + skill.x + " ");
         if (skill.c) {
             htmlSkill.innerHTML += (skill.c);
@@ -422,6 +422,9 @@ var CARD_GUI = {};
                 break;
             case 'rally':
                 iconName = 'Empower.png';
+                break;
+            default:
+                iconName = (skillName.charAt(0).toUpperCase() + skillName.slice(1)) + ".png";
                 break;
         }
         src += iconName;

@@ -85,12 +85,14 @@ function initializeCard(card, p, newKey) {
     card.attack_berserk = 0;
     card.attack_valor = 0;
     card.valor_triggered = false;
+    card.nullified = 0;
     card.poisoned = 0;
     card.scorched = 0;
     card.enfeebled = 0;
     card.protected = 0;
     card.barrier_ice = 0;
     card.enhanced = 0;
+    card.removeImbue();
     card.jammed = false;
     card.key = newKey;
     if (!card.reusableSkills) card.resetTimers();
@@ -143,6 +145,7 @@ function cloneCard(original) {
     copy.counter = original.counter;
     copy.evade = original.evade;
     copy.leech = original.leech;
+    copy.nullify = original.nullify;
     copy.pierce = original.pierce;
     copy.poison = original.poison;
     copy.valor = original.valor;
@@ -263,15 +266,18 @@ var MakeAssault = (function () {
         counter: 0,
         evade: 0,
         leech: 0,
+        nullify: 0,
         pierce: 0,
         poison: 0,
         valor: 0,
         // Statuses
+        nullified: 0,
         poisoned: 0,
         scorched: 0,
         enfeebled: 0,
         protected: 0,
         enhanced: 0,
+        imbued: 0,
         jammed: false,
 
         //Card ID is ...
@@ -327,6 +333,79 @@ var MakeAssault = (function () {
             return (this.valor && !this.valor_triggered);
         },
 
+        imbue: function (skill) {
+            if (!this.imbued) {
+                this.imbued = {
+                    skills: -1,
+                    empowerSkills: -1
+                };
+            }
+            var imbued = this.imbued;
+
+            var skills;
+            var imbueSkills;
+            var skillID = skill.id;
+            switch (skillID) {
+                // Passives
+                case 'armored':
+                case 'berserk':
+                case 'burn':
+                case 'counter':
+                case 'evade':
+                case 'leech':
+                case 'nullify':
+                case 'pierce':
+                case 'poison':
+                case 'valor':
+                    this[skillID] += parseInt(skill.x);
+                    this.imbued[skillID] = skill.x;
+                    return;
+                case 'flurry':
+                    return;
+                    // Early Activation skills
+                case 'fervor':
+                case 'rally':
+                case 'legion':
+                    skills = this.empowerSkills;
+                    imbueSkills = 'empowerSkills';
+                    break;
+                    // Activation skills (can occur twice on a card)
+                case 'enfeeble':
+                case 'enhance':
+                case 'frost':
+                case 'heal':
+                case 'imbue':
+                case 'jam':
+                case 'protect':
+                case 'protect_ice':
+                case 'strike':
+                case 'weaken':
+                default:
+                    skills = this.skill;
+                    imbueSkills = 'skill';
+                    break;
+            }
+
+            // Mark the first added skill index
+            if (imbued[imbueSkills] < 0) imbued[imbueSkills] = skills.length;
+            skills.push(skill);
+        },
+
+        removeImbue: function () {
+            var imbue = this.imbued;
+            if (imbue) {
+                for (var key in imbue) {
+                    var imbuement = imbue[key];
+                    if (key == "skill" || key == "empowerSkills") {
+                        this[key] = this[key].slice(0, imbuement);
+                    } else {
+                        this[key] -= imbuement;
+                    }
+                }
+                this.imbued = 0;
+            }
+        },
+
         // Has at least one Enhanceable Activation Skill
         // - strike, protect, enfeeble, rally, repair, supply, siege, heal, weaken (unless they have on play/death/attacked/kill)
         hasSkill: function (s, all) {
@@ -340,22 +419,24 @@ var MakeAssault = (function () {
                 case 'evade':
                 case 'flurry':
                 case 'leech':
+                case 'nullify':
                 case 'pierce':
                 case 'poison':
                 case 'valor':
                     return this[s];
                     break;
-                // Early Activation skills
+                    // Early Activation skills
                 case 'rally':
                 case 'legion':
                 case 'fervor':
                     target_skills = this.empowerSkills;
                     break;
-                // Activation skills
+                    // Activation skills
                 case 'enfeeble':
                 case 'enhance':
                 case 'frost':
                 case 'heal':
+                case 'imbue':
                 case 'jam':
                 case 'protect':
                 case 'protect_ice':
@@ -446,6 +527,7 @@ var boostSkill = function (card, boost) {
         case 'counter':
         case 'evade':
         case 'leech':
+        case 'nullify':
         case 'pierce':
         case 'poison':
         case 'valor':
@@ -454,7 +536,7 @@ var boostSkill = function (card, boost) {
         case 'flurry':
             card[skillID].c -= parseInt(boost.c);
             return;
-        // Early Activation skills
+            // Early Activation skills
         case 'fervor':
         case 'rally':
         case 'legion':
@@ -465,6 +547,7 @@ var boostSkill = function (card, boost) {
         case 'enhance':
         case 'frost':
         case 'heal':
+        case 'imbue':
         case 'jam':
         case 'protect':
         case 'protect_ice':
@@ -595,31 +678,33 @@ function setSkill_2(new_card, skill) {
         case 'counter':
         case 'evade':
         case 'leech':
+        case 'nullify':
         case 'pierce':
         case 'poison':
         case 'valor':
-            new_card[skill.id] = (new_card[skill.id]|0) + skill.x;
+            new_card[skill.id] = (new_card[skill.id] | 0) + skill.x;
             break;
         case 'flurry':
             new_card[skill.id] = skill;
             break;
-        // Empower Skills
+            // Empower Skills
         case 'fervor':
         case 'rally':
         case 'legion':
             new_card.empowerSkills.push(skill);
             break;
-        // Activation skills (can occur twice on a card)
+            // Activation skills (can occur twice on a card)
         case 'enfeeble':
         case 'enhance':
         case 'frost':
         case 'heal':
+        case 'imbue':
         case 'jam':
         case 'protect':
         case 'protect_ice':
         case 'strike':
         case 'weaken':
-        // All other skills
+            // All other skills
         default:
             new_card.skill.push(skill);
             break;
@@ -914,19 +999,20 @@ function debug_passive_skills(card, skillText) {
 }
 
 function debug_triggered_skills(card, skillText) {
-    debugNonActivatedSkill(card, "valor", skillText);
+    debugNonActivatedSkill(card, "valor", skillText); // TODO: Correct ordering
     debugNonActivatedSkill(card, "pierce", skillText);
     debugNonActivatedSkill(card, "burn", skillText);
     debugNonActivatedSkill(card, "poison", skillText);
     debugNonActivatedSkill(card, "leech", skillText);
     debugNonActivatedSkill(card, "berserk", skillText);
+    debugNonActivatedSkill(card, "nullify", skillText);
 }
 
 function debugNonActivatedSkill(card, skillName, skillText) {
     var value = card[skillName];
     if (value) {
         skillText.push(convertName(skillName) + ' ' + value);
-    } 
+    }
 }
 
 function convertName(oldName) {
@@ -1221,7 +1307,7 @@ function hash_decode(hash) {
         runes = [];
         var runesHash = hash.substr(hash.indexOf(runeDelimiter) + 1);
         for (var i = 0, len = runesHash.length; i < len; i += 2) {
-            runes.push(base64_to_runeID(runesHash.substring(i, i+2)));
+            runes.push(base64_to_runeID(runesHash.substring(i, i + 2)));
         }
         hash = hash.substr(0, hash.indexOf(runeDelimiter));
     }
@@ -1243,7 +1329,7 @@ function hash_decode(hash) {
             if (unitidx > 0 && indexes) unitInfo.index = base64ToNumber(indexes[unitidx - 1]); // Skip commander
 
             if (unitInfo) {
-                if (CARDS[unitInfo.id]) {
+                if (loadCard(unitInfo.id)) {
                     // Repeat previous card multiple times
                     if (!current_deck.commander && is_commander(unitInfo.id)) {
                         current_deck.commander = unitInfo;
@@ -1511,8 +1597,7 @@ function getUpgradePoints(level, pointsPer) {
     return points;
 }
 
-function getPresetUnit(unitInfo, level, maxLevel)
-{
+function getPresetUnit(unitInfo, level, maxLevel) {
     if (unitInfo.mastery_level && level < parseInt(unitInfo.mastery_level)) return null;
     if (unitInfo.remove_mastery_level && level >= parseInt(unitInfo.remove_mastery_level)) return null;
 
@@ -1525,14 +1610,14 @@ function getPresetUnit(unitInfo, level, maxLevel)
             cardID = fuseCard(cardID, "2");
         }
     } else if (level > 1 && is_commander(cardID)) {
-        unitLevel = Math.min(level, parseInt(CARDS[cardID].rarity) + 2);
+        unitLevel = Math.min(level, parseInt(loadCard(cardID).rarity) + 2);
     }
 
     return makeUnitInfo(cardID, unitLevel);
 }
 
 function upgradeCard(unitInfo) {
-    var maxLevel = (parseInt(CARDS[unitInfo.id].rarity) + 2);
+    var maxLevel = (parseInt(loadCard(unitInfo.id).rarity) + 2);
     if (unitInfo.level == maxLevel) {
         if (canFuse(unitInfo.id)) {
             unitInfo.id = fuseCard(unitInfo.id);
@@ -1575,7 +1660,7 @@ var get_card_apply_battlegrounds = function (id) {
 }
 
 function get_skills(id, level) {
-    var card = CARDS[id];
+    var card = loadCard(id);
     var skills = card.skill;
     if (level > 1) {
         var upgrade;
@@ -1601,10 +1686,11 @@ function get_card_by_id(unit, skillModifiers) {
         return cached;
     }
 
-    var current_card = CARDS[unit.id];
+    var current_card = loadCard(unit.id);
 
     // Not a valid card
     if (!current_card) {
+        console.log(unit.id + " not found");
         current_card = {};
         current_card.id = undefined;
         current_card.name = undefined;
@@ -1631,7 +1717,7 @@ function get_card_by_id(unit, skillModifiers) {
 
 function get_slim_card_by_id(unit, getDetails) {
 
-    var current_card = CARDS[unit.id];
+    var current_card = loadCard(unit.id);
     var new_card = {};
     if (current_card.card_type == "1") {
         new_card.isCommander = function () { return true; };
@@ -1694,9 +1780,18 @@ function GetMaxLevel(original_card) {
     return original_card.maxLevel;
 }
 
+function loadCard(id) {
+    var card = CARDS[id];
+    if (!card) {
+        CARD_UPDATER.updateCards();
+        card = CARDS[id];
+    }
+    return card;
+}
+
 // Output card name
 function get_card_name_by_id(id) {
-    var card = CARDS[id];
+    var card = loadCard(id);
     if (!card) return 0;
     else if (card.set == 5002) return card.name + '*';
     else return card.name;
@@ -1705,7 +1800,7 @@ function get_card_name_by_id(id) {
 
 //Card ID is ...
 function is_commander(id) {
-    var card = CARDS[id];
+    var card = loadCard(id);
     return (card && card.card_type == '1');
 }
 
@@ -1722,8 +1817,20 @@ function makeUnitInfo(id, level, runes) {
 var elariaCaptain = makeUnitInfo(202, 1);
 var card_cache = {};
 
+function getRarity(rarity) {
+    return rarityStrings[rarity];
+}
 
 // Global arrays
+var rarityStrings = [
+    "None",
+    "Common",
+    "Rare",
+    "Epic",
+    "Legendary",
+    "Mythic"
+];
+
 var factions = {
     names: [
         'Factionless',

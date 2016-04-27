@@ -199,6 +199,13 @@ var SIMULATOR = {};
             for (var key = 0, len = targets.length; key < len; key++) {
                 var target = field_p_assaults[targets[key]];
 
+                // Check Nullify
+                if (target.nullified) {
+                    target.nullified--;
+                    if (debug) echo += debug_name(src_card) + ' protects ' + debug_name(target) + ' but it is nullified!<br>';
+                    continue;
+                }
+
                 target.protected += protect;
                 if (ice) {
                     target.barrier_ice += protect;
@@ -250,6 +257,14 @@ var SIMULATOR = {};
 
             for (var key = 0, len = targets.length; key < len; key++) {
                 var target = field_p_assaults[targets[key]];
+
+                // Check Nullify
+                if (target.nullified) {
+                    target.nullified--;
+                    if (debug) echo += debug_name(src_card) + ' enhances ' + debug_name(target) + ' but it is nullified!<br>';
+                    continue;
+                }
+
                 var enhancements = target.enhanced;
                 if (!enhancements) {
                     enhancements = {};
@@ -257,6 +272,65 @@ var SIMULATOR = {};
                 }
                 enhancements[s] = (enhancements[s] || 0) + x;
                 if (debug) echo += debug_name(src_card) + ' enhances ' + s + ' of ' + debug_name(target, false) + ' by ' + x + '<br>';
+            }
+        },
+
+        // Enhance
+        // - Can target specific faction
+        // - Targets allied, units
+        // - Target must be active this turn (for activation skills only)
+        // - Target must not be frozen (for activation skills only)
+        // - Target must have specific "enhanceable skill" ("all" versions aren't counted)
+        imbue: function (src_card, skill) {
+
+            var faction = skill['y'];
+
+            var p = get_p(src_card);
+            var o = get_o(src_card);
+
+            var x = skill['x'];
+            var c = skill['c'];
+            var s = skill['s'];
+            var all = skill['all'];
+
+            var field_p_assaults = field[p]['assaults'];
+            var require_active_turn = (s != 'counter' && s != 'armored' && s != 'evade');
+            var targets = [];
+            for (var key = 0, len = field_p_assaults.length; key < len; key++) {
+                var target = field_p_assaults[key];
+                if (!target.isUnjammed()) continue;
+                if (!target.isInFaction(faction)) continue;
+                if (require_active_turn && !target.isActive()) continue;
+
+                targets.push(key);
+            }
+
+            // No Targets
+            if (!targets.length) return;
+
+            var skill = {
+                id: s,
+                c: c,
+                x: x
+            }
+
+            // Check All
+            if (!all) {
+                targets = choose_random_target(targets);
+            }
+
+            for (var key = 0, len = targets.length; key < len; key++) {
+                var target = field_p_assaults[targets[key]];
+
+                // Check Nullify
+                if (target.nullified) {
+                    target.nullified--;
+                    if (debug) echo += debug_name(src_card) + ' enhances ' + debug_name(target) + ' but it is nullified!<br>';
+                    continue;
+                }
+
+                target.imbue(skill);
+                if (debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target, false) + ' with ' + debug_skill(skill) + '<br>';
             }
         },
 
@@ -302,6 +376,13 @@ var SIMULATOR = {};
 
             for (var key = 0, len = targets.length; key < len; key++) {
                 var target = field_p_assaults[targets[key]];
+
+                // Check Nullify
+                if (target.nullified) {
+                    target.nullified--;
+                    if (debug) echo += debug_name(src_card) + ' heals ' + debug_name(target) + ' but it is nullified!<br>';
+                    continue;
+                }
 
                 var heal_amt = heal;
                 if (!heal_amt) {
@@ -730,6 +811,13 @@ var SIMULATOR = {};
 
                 var target = field_p_assaults[targets[key]];
 
+                // Check Nullify
+                if (target.nullified) {
+                    target.nullified--;
+                    if (debug) echo += debug_name(src_card) + ' empowers ' + debug_name(target) + ' but it is nullified!<br>';
+                    continue;
+                }
+
                 var rally_amt = rally;
                 if (!rally_amt) {
                     var mult = skill.mult;
@@ -767,6 +855,14 @@ var SIMULATOR = {};
                 // Check left
                 var target = field_p_assaults[target_key];
                 if (target && target.isActive() && target.isInFaction(faction)) {
+
+                    // Check Nullify
+                    if (target.nullified) {
+                        target.nullified--;
+                        if (debug) echo += debug_name(src_card) + ' activates legion and empowers ' + debug_name(target) + ' but it is nullified!<br>';
+                        continue;
+                    }
+
                     target.attack_rally += rally;
                     if (debug) {
                         if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
@@ -806,10 +902,17 @@ var SIMULATOR = {};
             }
 
             if (fervorAmount) {
-                src_card['attack_rally'] += fervorAmount;
-                if (debug) {
-                    if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
-                    echo += debug_name(src_card) + ' activates fervor for ' + fervorAmount + '<br>';
+                // Check Nullify
+                if (src_card.nullified) {
+                    // TODO: Check if this can be nullified
+                    src_card.nullified--;
+                    if (debug) echo += debug_name(src_card) + ' activates fervor but it is nullified!<br>';
+                } else {
+                    src_card['attack_rally'] += fervorAmount;
+                    if (debug) {
+                        if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
+                        echo += debug_name(src_card) + ' activates fervor for ' + fervorAmount + '<br>';
+                    }
                 }
             }
         },
@@ -1054,7 +1157,8 @@ var SIMULATOR = {};
             current_assault.enfeebled = 0;
             current_assault.protected = 0;
             current_assault.barrier_ice = 0;
-            current_assault.enhanced = 0;;
+            current_assault.enhanced = 0;
+            current_assault.removeImbue();
         }
     }
 
@@ -1328,7 +1432,7 @@ var SIMULATOR = {};
 
         field_p_assaults = field_p['assaults'];
 
-        // Remove from your field: Chaos, Jam, Enfeeble, Rally, Weaken, Enhance
+        // Remove from your field: Chaos, Jam, Enfeeble, Rally, Weaken, Enhance, Nullify
         for (var key = 0, len = field_p_assaults.length; key < len; key++) {
             var current_assault = field_p_assaults[key];
 
@@ -1336,6 +1440,7 @@ var SIMULATOR = {};
             current_assault.enfeebled = 0;
             current_assault.attack_rally = 0;
             current_assault.attack_weaken = 0;
+            current_assault.nullified = 0;
         }
 
         //debug_dump_field(field);
@@ -1407,8 +1512,9 @@ var SIMULATOR = {};
 
         if (debug) {
             echo += '<u>(Attack: +' + current_assault.attack;
-            if (current_assault.attack_rally) echo += ' Rally: +' + current_assault.attack_rally;
             if (current_assault.attack_berserk) echo += ' Berserk: +' + current_assault.attack_berserk;
+            if (current_assault.attack_valor) echo += ' Valor: +' + current_assault.attack_valor;
+            if (current_assault.attack_rally) echo += ' Rally: +' + current_assault.attack_rally;
             if (current_assault.attack_weaken) echo += ' Weaken: -' + current_assault.attack_weaken;
             if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
         }
@@ -1594,19 +1700,30 @@ var SIMULATOR = {};
 
         // -- CHECK STATUS INFLICTION --
 
-        // Scorch
-        // - Attacker must not have died to Vengeance
-        // - Target must be an assault
-        if (target.isAssault() && current_assault.burn && target.isAlive() && current_assault.isAlive()) {
-            var scorch = current_assault.burn;
-            scorch += getEnhancement(current_assault, 'burn');
-            if (!target['scorched']) {
-                target['scorched'] = { 'amount': scorch, 'timer': 2 };
-            } else {
-                target['scorched']['amount'] += scorch;
-                target['scorched']['timer'] = 2;
+        if (target.isAssault() && target.isAlive() && current_assault.isAlive()) {
+            // Scorch
+            // - Attacker must not have died to Vengeance
+            // - Target must be an assault
+            if (current_assault.burn) {
+                var scorch = current_assault.burn;
+                scorch += getEnhancement(current_assault, 'burn');
+                if (!target['scorched']) {
+                    target['scorched'] = { 'amount': scorch, 'timer': 2 };
+                } else {
+                    target['scorched']['amount'] += scorch;
+                    target['scorched']['timer'] = 2;
+                }
+                if (debug) echo += debug_name(current_assault) + ' inflicts scorch(' + scorch + ') on ' + debug_name(target) + '<br>';
             }
-            if (debug) echo += debug_name(current_assault) + ' inflicts scorch(' + scorch + ') on ' + debug_name(target) + '<br>';
+            // Nullify
+            // - Attacker must not have died to Vengeance
+            // - Target must be an assault
+            if (current_assault.nullify) {
+                var nullify = current_assault.nullify;
+                nullify += getEnhancement(current_assault, 'nullify');
+                target.nullified += nullify;
+                if (debug) echo += debug_name(current_assault) + ' inflicts nullify(' + nullify + ') on ' + debug_name(target) + '<br>';
+            }
         }
 
         // -- END OF STATUS INFLICTION --
