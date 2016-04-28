@@ -205,6 +205,8 @@ var CARD_GUI = {};
         htmlCard.classList.add(factions.names[card.type].toLowerCase());
         var cardName = (card.uid !== undefined ? "(" + card.uid + ") " : "") + card.name;
         var divName = createDiv("card-name", cardName);
+        var divID = createDiv("card-id", "(" + card.id + ")");
+        divName.appendChild(divID);
         htmlCard.appendChild(divName);
         if (!card.isCommander()) {
             if (card.attack >= 0) {

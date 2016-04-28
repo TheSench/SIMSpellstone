@@ -141,6 +141,14 @@ img[src='Error.src'] {
         background-color: #FFF;
     }
 
+.card-id {
+    display:none;
+}
+
+.card-name:hover .card-id {
+    display:block;
+}
+
 .card-attack,
 .card-health,
 .delay,
