@@ -13872,6 +13872,36 @@ var CARDS = {
       },
     }
   },
+  "12033": {
+      "id": "12033",
+      "name": "Arcblaze Dragon (D)",
+      "picture": "Promo_Dragon_A",
+      "rarity": "3",
+      "set": "2000",
+      "card_type": "2",
+      "type": "2",
+      "sub_type": "9",
+      "attack": -1,
+      "health": -1,
+      "cost": -1,
+      "skill": [],
+      "upgrades": {}
+  },
+  "22033": {
+      "id": "22033",
+      "name": "Arcblaze Dragon (Q)",
+      "picture": "Promo_Dragon_B",
+      "rarity": "3",
+      "set": "2000",
+      "card_type": "2",
+      "type": "2",
+      "sub_type": "9",
+      "attack": -1,
+      "health": -1,
+      "cost": -1,
+      "skill": [],
+      "upgrades": {}
+  },
   "2034": {
     "id": "2034",
     "name": "Leap Frog Duo",
