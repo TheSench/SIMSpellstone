@@ -874,50 +874,61 @@ var showAdvancedFilters = function (skill) {
         case 'counter':
         case 'burn':
         case 'frost':
+        case 'nullify':
         case 'pierce':
         case 'poison':
         case 'leech':
         case 'berserk':
             $("div#amount").show();
             break;
-            // x="1" y="1" all="0" c="0" s="0"
+        // x="1" y="1" all="0" c="0" s="0"
+        case 'corrosive':
         case 'legion':
         case 'fervor':
         case 'reanimate':
         case 'resurrect':
+        case 'taunt':
+        case 'valor':
             $("div#amount").show();
             $("div#faction").show();
             break;
-            // x="1" y="1" all="1" c="0" s="0"
+        // x="1" y="1" all="1" c="0" s="0"
         case 'rally':
         case 'heal':
         case 'protect':
         case 'protect_ice':
             $("div#amount").show();
-            $("label[for=all]").show();
             $("div#faction").show();
+            $("label[for=all]").show();
             break;
-            // x="1" y="0" all="1" c="0" s="0"
+        // x="1" y="0" all="1" c="0" s="0"
         case 'enfeeble':
         case 'strike':
         case 'weaken':
             $("div#amount").show();
             $("label[for=all]").show();
             break;
-            // x="1" y="1" all="1" c="1" s="1"
+        // x="1" y="1" all="1" c="1" s="1"
+        case 'imbue':
         case 'enhance':
             $("div#amount").show();
-            $("label[for=all]").show();
             $("div#faction").show();
+            $("label[for=all]").show();
+            $("div#timer").show();
             $("div#skill").show();
+            break;
+        // x="1" y="1" all="0" c="1" s="0"
+        case 'silence':
+            $("div#amount").show();
+            $("div#faction").show();
             $("div#timer").show();
             break;
-            // x="0" y="0" all="1" c="1" s="0"
+        // x="0" y="0" all="1" c="1" s="0"
         case 'jam':
             $("label[for=all]").show();
             $("div#timer").show();
             break;
-            // x="0" y="0" all="0" c="1" s="0"
+         // x="0" y="0" all="0" c="1" s="0"
         case 'flurry':
             $("div#timer").show();
             break;

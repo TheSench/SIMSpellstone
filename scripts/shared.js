@@ -82,6 +82,7 @@ function initializeCard(card, p, newKey) {
     // Setup status effects
     card.attack_rally = 0;
     card.attack_weaken = 0;
+    card.attack_corroded = 0;
     card.attack_berserk = 0;
     card.attack_valor = 0;
     card.valor_triggered = false;
@@ -94,6 +95,7 @@ function initializeCard(card, p, newKey) {
     card.enhanced = 0;
     card.removeImbue();
     card.jammed = false;
+    card.silenced = false;
     card.key = newKey;
     if (!card.reusableSkills) card.resetTimers();
 }
@@ -142,6 +144,7 @@ function cloneCard(original) {
     copy.armored = original.armored;
     copy.berserk = original.berserk;
     copy.burn = original.burn;
+    copy.corrosive = original.corrosive;
     copy.counter = original.counter;
     copy.evade = original.evade;
     copy.leech = original.leech;
@@ -259,10 +262,12 @@ var MakeAssault = (function () {
         attack_valor: 0,
         valor_triggered: false,
         attack_weaken: 0,
+        attack_corroded: 0,
         key: undefined,
         // Passives
         armored: 0,
         burn: 0,
+        corrosive: 0,
         counter: 0,
         evade: 0,
         leech: 0,
@@ -279,6 +284,7 @@ var MakeAssault = (function () {
         enhanced: 0,
         imbued: 0,
         jammed: false,
+        silenced: false,
 
         //Card ID is ...
         isCommander: function () {
@@ -328,6 +334,11 @@ var MakeAssault = (function () {
             return !(this.jammed);
         },
 
+        // Unsilenced
+        isUnsilenced: function () {
+            return !(this.silenced);
+        },
+
         // Has un-triggered valor
         hasValor: function () {
             return (this.valor && !this.valor_triggered);
@@ -350,6 +361,7 @@ var MakeAssault = (function () {
                 case 'armored':
                 case 'berserk':
                 case 'burn':
+                case 'corrosive':
                 case 'counter':
                 case 'evade':
                 case 'leech':
@@ -415,6 +427,7 @@ var MakeAssault = (function () {
                 case 'armored':
                 case 'berserk':
                 case 'burn':
+                case 'corrosive':
                 case 'counter':
                 case 'evade':
                 case 'flurry':
@@ -463,7 +476,7 @@ var MakeAssault = (function () {
         },
 
         adjustedAttack: function () {
-            return (this.attack + this.attack_rally + this.attack_berserk + this.attack_valor - this.attack_weaken);
+            return (this.attack + this.attack_rally + this.attack_berserk + this.attack_valor - this.attack_weaken - this.attack_corroded);
         },
 
         permanentAttack: function () {
@@ -524,6 +537,7 @@ var boostSkill = function (card, boost) {
         case 'armored':
         case 'berserk':
         case 'burn':
+        case 'corrosive':
         case 'counter':
         case 'evade':
         case 'leech':
@@ -675,6 +689,7 @@ function setSkill_2(new_card, skill) {
         case 'armored':
         case 'berserk':
         case 'burn':
+        case 'corrosive':
         case 'counter':
         case 'evade':
         case 'leech':
@@ -994,8 +1009,10 @@ function debug_skill(skill) {
 
 function debug_passive_skills(card, skillText) {
     debugNonActivatedSkill(card, "evade", skillText);
+    debugNonActivatedSkill(card, "taunt", skillText);
     debugNonActivatedSkill(card, "armored", skillText);
     debugNonActivatedSkill(card, "counter", skillText);
+    debugNonActivatedSkill(card, "corrosive", skillText);
 }
 
 function debug_triggered_skills(card, skillText) {

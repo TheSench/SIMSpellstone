@@ -329,11 +329,14 @@ var CARD_GUI = {};
 
     function getPassiveSkills(divSkills, skillsShort, card, onField, boosts) {
         getNonActivatedSkill(divSkills, skillsShort, onField, card, "evade", boosts);
+        getNonActivatedSkill(divSkills, skillsShort, onField, card, "taunt", boosts);
         getNonActivatedSkill(divSkills, skillsShort, onField, card, "armored", boosts);
         getNonActivatedSkill(divSkills, skillsShort, onField, card, "counter", boosts);
+        getNonActivatedSkill(divSkills, skillsShort, onField, card, "corrosive", boosts);
     }
 
     function getTriggeredSkills(divSkills, skillsShort, card, onField, boosts) {
+        getNonActivatedSkill(divSkills, skillsShort, onField, card, "valor", boosts);
         getNonActivatedSkill(divSkills, skillsShort, onField, card, "pierce", boosts);
         getNonActivatedSkill(divSkills, skillsShort, onField, card, "burn", boosts);
         getNonActivatedSkill(divSkills, skillsShort, onField, card, "poison", boosts);
@@ -400,9 +403,6 @@ var CARD_GUI = {};
                 break;
             case 'enfeeble':
                 iconName = 'Hex.png';
-                break;
-            case 'enhance':
-                iconName = 'Enhance.png';
                 break;
             case 'jam':
                 iconName = 'Freeze.png';
