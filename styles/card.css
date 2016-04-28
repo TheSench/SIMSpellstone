@@ -16,7 +16,7 @@
     left: 0px;
     width: 12px;
     margin: 1px 1px;
-    border-radius: 10px;
+    border-radius: 25%;
     box-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
@@ -28,6 +28,15 @@
     margin: 1px 1px;
     border-radius: 10px;
     box-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.card:hover .set {
+    width: 21px;
+}
+
+.card:hover .subfaction {
+    left: 25px;
+    width: 21px;
 }
 
 .level {
@@ -142,11 +151,11 @@ img[src='Error.src'] {
     }
 
 .card-id {
-    display:none;
+    display: none;
 }
 
 .card-name:hover .card-id {
-    display:block;
+    display: block;
 }
 
 .card-attack,
