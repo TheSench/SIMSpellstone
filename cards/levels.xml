@@ -359,19 +359,23 @@
 		<id>35</id>
 		<xp>320000</xp>
 	</level>
-	'<level>
+	<level>
 		<id>36</id>
 		<xp>390000</xp>
-	</level><level>
+	</level>
+	<level>
 		<id>37</id>
 		<xp>470000</xp>
-	</level><level>
+	</level>
+	<level>
 		<id>38</id>
 		<xp>560000</xp>
-	</level><level>
+	</level>
+	<level>
 		<id>39</id>
 		<xp>660000</xp>
-	</level><level>
+	</level>
+	<level>
 		<id>40</id>
 		<xp>770000</xp>
 	</level>
