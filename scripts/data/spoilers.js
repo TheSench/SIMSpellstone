@@ -49,6 +49,10 @@ spoilers[6007] = true;
 spoilers[16007] = true;
 spoilers[26007] = true;
 
+spoilers[6008] = true;
+spoilers[16008] = true;
+spoilers[26008] = true;
+
 spoilers[3000] = true;
 spoilers[13000] = true;
 spoilers[23000] = true;
