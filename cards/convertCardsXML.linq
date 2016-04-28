@@ -216,7 +216,11 @@ public enum FactionIDs
 	Angel = 6,
 	Undead = 7,
 	Void = 8,
-	Dragon = 9
+	Dragon = 9,
+	Avian = 10,
+	Goblin = 11,
+	Seafolk = 12,
+	Insect = 13,
 }
 
 battleground[] battlegrounds = new battleground[] {
@@ -317,6 +321,18 @@ battleground[] battlegrounds = new battleground[] {
 				mult = "0.5",
 				Base = "attack",
 				y = ((int)FactionIDs.Frog).ToString(),
+			},
+		},
+	},
+	new battleground {
+		Name = "Airborne Mastery",
+		ID = "109",
+		Effects = new add_skill[] {
+			new add_skill() {
+				id = "valor",
+				mult = "1",
+				Base = "attack",
+				y = ((int)FactionIDs.Avian).ToString(),
 			},
 		},
 	},

@@ -13938,6 +13938,135 @@
     </upgrade>
   </unit>
   <unit>
+    <id>5051</id>
+    <card_type>2</card_type>
+    <name>Amphibious Digger</name>
+    <picture>Shinning_Explorer_A</picture>
+    <asset_bundle>53</asset_bundle>
+    <attack>5</attack>
+    <health>10</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="1" y="4" />
+    <skill id="nullify" x="1" />
+    <skill id="leech" x="3" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>13</health>
+      <skill id="rally" x="2" y="4" />
+      <skill id="nullify" x="1" />
+      <skill id="leech" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="rally" x="2" y="4" />
+      <skill id="nullify" x="1" />
+      <skill id="leech" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>6</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15051</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Amphibious Explorer</name>
+    <picture>Shinning_Explorer_A</picture>
+    <asset_bundle>53</asset_bundle>
+    <attack>6</attack>
+    <health>15</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="2" y="4" />
+    <skill id="nullify" x="1" />
+    <skill id="leech" x="4" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="rally" x="2" y="4" />
+      <skill id="nullify" x="2" />
+      <skill id="leech" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="rally" x="2" y="4" />
+      <skill id="nullify" x="2" />
+      <skill id="leech" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="rally" x="3" y="4" />
+      <skill id="nullify" x="2" />
+      <skill id="leech" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25051</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Amphibious Spleunker</name>
+    <picture>Shinning_Explorer_B</picture>
+    <asset_bundle>53</asset_bundle>
+    <attack>7</attack>
+    <health>18</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="4" y="4" />
+    <skill id="nullify" x="2" />
+    <skill id="leech" x="6" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>7</attack>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="rally" x="5" y="4" />
+      <skill id="nullify" x="2" />
+      <skill id="leech" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="rally" x="5" y="4" />
+      <skill id="nullify" x="3" />
+      <skill id="leech" x="7" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>5052</id>
     <card_type>2</card_type>
     <name>Paradise Avian</name>
@@ -20299,6 +20428,116 @@
       <skill id="strike" x="5" />
       <skill id="strike" x="3" />
       <skill id="flurry" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6050</id>
+    <card_type>2</card_type>
+    <name>Wortwog</name>
+    <picture>Frog_Executioner_A</picture>
+    <asset_bundle>53</asset_bundle>
+    <attack>3</attack>
+    <health>11</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="1" />
+    <skill id="nullify" x="1" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="2" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16050</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Wortwog Grinder</name>
+    <picture>Frog_Executioner_A</picture>
+    <asset_bundle>53</asset_bundle>
+    <attack>4</attack>
+    <health>15</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="2" />
+    <skill id="nullify" x="1" />
+    <skill id="berserk" x="1" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>17</health>
+      <skill id="counter" x="2" />
+      <skill id="nullify" x="2" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="3" />
+      <skill id="nullify" x="2" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26050</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Wortwog Torturer</name>
+    <picture>Frog_Executioner_B</picture>
+    <asset_bundle>53</asset_bundle>
+    <attack>6</attack>
+    <health>18</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="3" />
+    <skill id="nullify" x="2" />
+    <skill id="berserk" x="1" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counter" x="4" />
+      <skill id="nullify" x="2" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="4" />
+      <skill id="nullify" x="2" />
+      <skill id="berserk" x="2" />
     </upgrade>
   </unit>
   <unit>
@@ -26941,6 +27180,121 @@
       <skill id="armored" x="5" />
       <skill id="leech" x="6" />
       <skill id="berserk" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7053</id>
+    <card_type>2</card_type>
+    <name>Bee Eater</name>
+    <picture>Insect_Death_Bringer_A</picture>
+    <asset_bundle>53</asset_bundle>
+    <attack>3</attack>
+    <health>16</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="enfeeble" x="1" />
+    <skill id="pierce" x="3" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>19</health>
+      <skill id="enfeeble" x="1" />
+      <skill id="pierce" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>20</health>
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="pierce" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17053</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Hive Eater</name>
+    <picture>Insect_Death_Bringer_A</picture>
+    <asset_bundle>53</asset_bundle>
+    <attack>4</attack>
+    <health>21</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="enfeeble" x="1" all="1" />
+    <skill id="pierce" x="4" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="evade" x="1" />
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="pierce" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>22</health>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="1" />
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="pierce" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27053</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Stungtongue Eater</name>
+    <picture>Insect_Death_Bringer_B</picture>
+    <asset_bundle>53</asset_bundle>
+    <attack>5</attack>
+    <health>24</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="enfeeble" x="2" all="1" />
+    <skill id="pierce" x="5" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="1" />
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="pierce" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>27</health>
+      <skill id="evade" x="2" />
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="pierce" x="6" />
     </upgrade>
   </unit>
   <!-- END SET 3000 - Premium -->
@@ -38271,7 +38625,7 @@
     <skill id="enhance" s="heal" x="1" />
     <skill id="protect" x="2" />
     <rarity>3</rarity>
-    <type>3</type>
+    <type>1</type>
     <set>9999</set>
     <upgrade>
       <level>2</level>
@@ -38288,14 +38642,14 @@
     <upgrade>
       <level>4</level>
       <health>47</health>
-      <skill id="imbue" s="evade" x="1" />
+      <skill id="weaken" x="3" />
       <skill id="enhance" s="heal" x="4" />
       <skill id="protect" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>54</health>
-      <skill id="imbue" s="evade" x="1" />
+      <skill id="weaken" x="4" />
       <skill id="enhance" s="heal" x="1" all="1" />
       <skill id="protect" x="4" />
     </upgrade>
