@@ -266,6 +266,7 @@ var MakeAssault = (function () {
         key: undefined,
         // Passives
         armored: 0,
+        berserk: 0,
         burn: 0,
         corrosive: 0,
         counter: 0,
