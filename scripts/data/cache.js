@@ -73148,6 +73148,38 @@ var CARDS = {
       },
     }
   },
+  "9984": {
+      "id": "9984",
+      "name": "Obyto",
+      "picture": "Obyto",
+      "rarity": "5",
+      "card_type": "14",
+      "type": "0",
+      "attack": -1,
+      "health": -1,
+      "cost": -1,
+      "skill": [],
+      "upgrades": {
+          "2": {
+              "skill": [],
+          },
+          "3": {
+              "skill": [],
+          },
+          "4": {
+              "skill": [],
+          },
+          "5": {
+              "skill": [],
+          },
+          "6": {
+              "skill": [],
+          },
+          "7": {
+              "skill": [],
+          }
+      }
+  },
   "9988": {
     "id": "9988",
     "name": "",

@@ -105,6 +105,7 @@ spoilers[27026] = true;
 spoilers[7048] = true;
 spoilers[17048] = true;
 spoilers[27048] = true;
+spoilers[9984] = true;
 spoilers[9985] = true;
 spoilers[29985] = true;
 spoilers[9986] = true;

@@ -339,6 +339,8 @@ var CARD_GUI = {};
         getNonActivatedSkill(divSkills, skillsShort, onField, card, "valor", boosts);
         getNonActivatedSkill(divSkills, skillsShort, onField, card, "pierce", boosts);
         getNonActivatedSkill(divSkills, skillsShort, onField, card, "burn", boosts);
+        getNonActivatedSkill(divSkills, skillsShort, onField, card, "silence", boosts);
+        getNonActivatedSkill(divSkills, skillsShort, onField, card, "nullify", boosts);
         getNonActivatedSkill(divSkills, skillsShort, onField, card, "poison", boosts);
         getNonActivatedSkill(divSkills, skillsShort, onField, card, "leech", boosts);
         getNonActivatedSkill(divSkills, skillsShort, onField, card, "berserk", boosts);
