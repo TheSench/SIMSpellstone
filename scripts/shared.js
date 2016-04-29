@@ -347,10 +347,7 @@ var MakeAssault = (function () {
 
         imbue: function (skill) {
             if (!this.imbued) {
-                this.imbued = {
-                    skills: -1,
-                    empowerSkills: -1
-                };
+                this.imbued = {};
             }
             var imbued = this.imbued;
 
