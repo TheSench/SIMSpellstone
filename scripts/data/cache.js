@@ -73151,10 +73151,12 @@ var CARDS = {
   "9984": {
       "id": "9984",
       "name": "Obyto",
+      "set": "9999",
       "picture": "Obyto",
       "rarity": "5",
-      "card_type": "14",
+      "card_type": "2",
       "type": "0",
+      "sub_type": "14",
       "attack": -1,
       "health": -1,
       "cost": -1,
