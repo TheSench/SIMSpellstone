@@ -855,14 +855,6 @@ var SIMULATOR = {};
                 // Check left
                 var target = field_p_assaults[target_key];
                 if (target && target.isActive() && target.isInFaction(faction)) {
-
-                    // Check Nullify
-                    if (target.nullified) {
-                        target.nullified--;
-                        if (debug) echo += debug_name(src_card) + ' activates legion and empowers ' + debug_name(target) + ' but it is nullified!<br>';
-                        continue;
-                    }
-
                     target.attack_rally += rally;
                     if (debug) {
                         if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
@@ -902,17 +894,10 @@ var SIMULATOR = {};
             }
 
             if (fervorAmount) {
-                // Check Nullify
-                if (src_card.nullified) {
-                    // TODO: Check if this can be nullified
-                    src_card.nullified--;
-                    if (debug) echo += debug_name(src_card) + ' activates fervor but it is nullified!<br>';
-                } else {
-                    src_card['attack_rally'] += fervorAmount;
-                    if (debug) {
-                        if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
-                        echo += debug_name(src_card) + ' activates fervor for ' + fervorAmount + '<br>';
-                    }
+                src_card['attack_rally'] += fervorAmount;
+                if (debug) {
+                    if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
+                    echo += debug_name(src_card) + ' activates fervor for ' + fervorAmount + '<br>';
                 }
             }
         },
