@@ -25948,7 +25948,7 @@ var CARDS = {
   },
   "25051": {
     "id": "25051",
-    "name": "Amphibious Spleunker",
+    "name": "Amphibious Spelunker",
     "picture": "Shinning_Explorer_B",
     "rarity": "4",
     "set": "3000",
@@ -26685,6 +26685,250 @@ var CARDS = {
             "id": "strike",
             "x": 1,
             "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "5055": {
+    "id": "5055",
+    "name": "Galewing",
+    "picture": "Wind_Puffer_A",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "10",
+    "attack": 4,
+    "health": 12,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "frost",
+        "x": 1,
+      },
+      {
+        "id": "weaken",
+        "x": 2,
+      },
+      {
+        "id": "weaken",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 13,
+        "skill": [],
+      },
+      "3": {
+        "health": 14,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "frost",
+            "x": 1,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "frost",
+            "x": 1,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "15055": {
+    "id": "15055",
+    "name": "Galewing Blast",
+    "picture": "Wind_Puffer_A",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "10",
+    "attack": 4,
+    "health": 15,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "frost",
+        "x": 2,
+      },
+      {
+        "id": "weaken",
+        "x": 3,
+      },
+      {
+        "id": "weaken",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 16,
+        "skill": [],
+      },
+      "3": {
+        "health": 17,
+        "skill": [],
+      },
+      "4": {
+        "health": 18,
+        "skill": [
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "weaken",
+            "x": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "weaken",
+            "x": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 4,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "frost",
+            "x": 3,
+          },
+          {
+            "id": "weaken",
+            "x": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "25055": {
+    "id": "25055",
+    "name": "Galewing Tempest",
+    "picture": "Wind_Puffer_B",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "10",
+    "attack": 4,
+    "health": 19,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "frost",
+        "x": 3,
+      },
+      {
+        "id": "weaken",
+        "x": 4,
+      },
+      {
+        "id": "weaken",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 20,
+        "skill": [],
+      },
+      "3": {
+        "health": 21,
+        "skill": [],
+      },
+      "4": {
+        "health": 22,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "frost",
+            "x": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 4,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "frost",
+            "x": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 5,
+          },
+          {
+            "id": "weaken",
+            "x": 5,
           },
         ],
       },
@@ -73148,83 +73392,10 @@ var CARDS = {
       },
     }
   },
-  "9984": {
-      "id": "9984",
-      "name": "Obyto",
-      "set": "9999",
-      "picture": "Obyto",
-      "rarity": "5",
-      "card_type": "2",
-      "type": "0",
-      "sub_type": "14",
-      "attack": -1,
-      "health": -1,
-      "cost": -1,
-      "skill": [],
-      "upgrades": {
-          "2": {
-              "skill": [],
-          },
-          "3": {
-              "skill": [],
-          },
-          "4": {
-              "skill": [],
-          },
-          "5": {
-              "skill": [],
-          },
-          "6": {
-              "skill": [],
-          },
-          "7": {
-              "skill": [],
-          }
-      }
-  },
-  "9988": {
-    "id": "9988",
-    "name": "",
-    "picture": "New11_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19988": {
-    "id": "19988",
-    "name": "",
-    "picture": "New11_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29988": {
-    "id": "29988",
-    "name": "",
-    "picture": "New11_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
   "9989": {
     "id": "9989",
     "name": "",
-    "picture": "New12_A",
+    "picture": "New11_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73237,7 +73408,7 @@ var CARDS = {
   "19989": {
     "id": "19989",
     "name": "",
-    "picture": "New12_A",
+    "picture": "New11_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73250,7 +73421,7 @@ var CARDS = {
   "29989": {
     "id": "29989",
     "name": "",
-    "picture": "New12_B",
+    "picture": "New11_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73263,7 +73434,7 @@ var CARDS = {
   "9990": {
     "id": "9990",
     "name": "",
-    "picture": "New13_A",
+    "picture": "New12_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73276,7 +73447,7 @@ var CARDS = {
   "19990": {
     "id": "19990",
     "name": "",
-    "picture": "New13_A",
+    "picture": "New12_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73289,7 +73460,7 @@ var CARDS = {
   "29990": {
     "id": "29990",
     "name": "",
-    "picture": "New13_B",
+    "picture": "New12_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73302,7 +73473,7 @@ var CARDS = {
   "9991": {
     "id": "9991",
     "name": "",
-    "picture": "New14_A",
+    "picture": "New13_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73315,7 +73486,7 @@ var CARDS = {
   "19991": {
     "id": "19991",
     "name": "",
-    "picture": "New14_A",
+    "picture": "New13_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73328,7 +73499,7 @@ var CARDS = {
   "29991": {
     "id": "29991",
     "name": "",
-    "picture": "New14_B",
+    "picture": "New13_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73341,7 +73512,7 @@ var CARDS = {
   "9992": {
     "id": "9992",
     "name": "",
-    "picture": "New15_A",
+    "picture": "New14_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73354,7 +73525,7 @@ var CARDS = {
   "19992": {
     "id": "19992",
     "name": "",
-    "picture": "New15_A",
+    "picture": "New14_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73367,7 +73538,7 @@ var CARDS = {
   "29992": {
     "id": "29992",
     "name": "",
-    "picture": "New15_B",
+    "picture": "New14_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73380,7 +73551,7 @@ var CARDS = {
   "9993": {
     "id": "9993",
     "name": "",
-    "picture": "New16_A",
+    "picture": "New15_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73393,7 +73564,7 @@ var CARDS = {
   "19993": {
     "id": "19993",
     "name": "",
-    "picture": "New16_A",
+    "picture": "New15_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73406,7 +73577,7 @@ var CARDS = {
   "29993": {
     "id": "29993",
     "name": "",
-    "picture": "New16_B",
+    "picture": "New15_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73419,7 +73590,7 @@ var CARDS = {
   "9994": {
     "id": "9994",
     "name": "",
-    "picture": "New4_A",
+    "picture": "New16_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73432,7 +73603,7 @@ var CARDS = {
   "19994": {
     "id": "19994",
     "name": "",
-    "picture": "New4_A",
+    "picture": "New16_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73445,7 +73616,7 @@ var CARDS = {
   "29994": {
     "id": "29994",
     "name": "",
-    "picture": "New4_B",
+    "picture": "New16_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -83090,6 +83261,7 @@ var FUSIONS = {
   "15052" : "25052",
   "15053" : "25053",
   "15054" : "25054",
+  "15055" : "25055",
   "1600" : "11600",
   "16000" : "26000",
   "16001" : "26001",
@@ -83325,6 +83497,7 @@ var FUSIONS = {
   "5052" : "15052",
   "5053" : "15053",
   "5054" : "15054",
+  "5055" : "15055",
   "6000" : "16000",
   "6001" : "16001",
   "6002" : "16002",
