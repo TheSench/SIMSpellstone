@@ -7857,6 +7857,129 @@
       <skill id="flurry" c="3" />
     </upgrade>
   </unit>
+  <unit>
+    <id>2043</id>
+    <card_type>2</card_type>
+    <name>Eos</name>
+    <picture>Crystal_Light_Bird_A</picture>
+    <asset_bundle>56</asset_bundle>
+    <attack>3</attack>
+    <health>9</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="heal" x="1" />
+    <skill id="strike" x="1" all="1" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="heal" x="1" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="burn" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="heal" x="1" all="1" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="burn" x="1" />
+    </upgrade>
+    <desc>The creature appeared after the battle of Llarym. The soldiers named it to honor the great hero Eos, whom had lead them to victory.</desc>
+  </unit>
+  <unit>
+    <id>12043</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Eos Raybringer</name>
+    <picture>Crystal_Light_Bird_A</picture>
+    <asset_bundle>56</asset_bundle>
+    <attack>4</attack>
+    <health>12</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="heal" x="1" all="1" />
+    <skill id="strike" x="1" all="1" />
+    <skill id="burn" x="1" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="heal" x="1" all="1" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="burn" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="heal" x="1" all="1" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="burn" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22043</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Eos Dawnbringer</name>
+    <picture>Crystal_Light_Bird_B</picture>
+    <asset_bundle>56</asset_bundle>
+    <attack>5</attack>
+    <health>15</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="heal" x="1" all="1" />
+    <skill id="strike" x="2" all="1" />
+    <skill id="burn" x="2" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="heal" x="1" all="1" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="burn" x="3" />
+    </upgrade>
+  </unit>
   <!-- END SET 2000 - Reward -->
   <!-- START SET 3000 - Premium -->
   <!-- 5000 - 7999 -->
@@ -14027,7 +14150,7 @@
     <id>25051</id>
     <card_type>2</card_type>
     <fusion_level>2</fusion_level>
-    <name>Amphibious Spleunker</name>
+    <name>Amphibious Spelunker</name>
     <picture>Shinning_Explorer_B</picture>
     <asset_bundle>53</asset_bundle>
     <attack>7</attack>
@@ -14425,6 +14548,142 @@
       <skill id="heal" x="5" y="4" />
       <skill id="strike" x="5" />
       <skill id="strike" x="1" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5055</id>
+    <card_type>2</card_type>
+    <name>Galewing</name>
+    <picture>Wind_Puffer_A</picture>
+    <asset_bundle>56</asset_bundle>
+    <hidden_until_time>1462208400</hidden_until_time>
+    <!-- Mon, 02 May 2016 17:00:00 GMT -->
+    <attack>4</attack>
+    <health>12</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="frost" x="1" />
+    <skill id="weaken" x="2" />
+    <skill id="weaken" x="2" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="frost" x="1" />
+      <skill id="weaken" x="2" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="frost" x="1" />
+      <skill id="weaken" x="3" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="frost" x="2" />
+      <skill id="weaken" x="3" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15055</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Galewing Blast</name>
+    <picture>Wind_Puffer_A</picture>
+    <asset_bundle>56</asset_bundle>
+    <hidden_until_time>1462208400</hidden_until_time>
+    <!-- Mon, 02 May 2016 17:00:00 GMT -->
+    <attack>4</attack>
+    <health>15</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="frost" x="2" />
+    <skill id="weaken" x="3" />
+    <skill id="weaken" x="3" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+      <skill id="frost" x="2" />
+      <skill id="weaken" x="4" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="frost" x="2" />
+      <skill id="weaken" x="4" />
+      <skill id="weaken" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="frost" x="3" />
+      <skill id="weaken" x="4" />
+      <skill id="weaken" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25055</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Galewing Tempest</name>
+    <picture>Wind_Puffer_B</picture>
+    <asset_bundle>56</asset_bundle>
+    <hidden_until_time>1462208400</hidden_until_time>
+    <!-- Mon, 02 May 2016 17:00:00 GMT -->
+    <attack>4</attack>
+    <health>19</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="frost" x="3" />
+    <skill id="weaken" x="4" />
+    <skill id="weaken" x="4" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="frost" x="4" />
+      <skill id="weaken" x="4" />
+      <skill id="weaken" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="frost" x="4" />
+      <skill id="weaken" x="5" />
+      <skill id="weaken" x="5" />
     </upgrade>
   </unit>
   <!-- Chaos Premium Begin -->

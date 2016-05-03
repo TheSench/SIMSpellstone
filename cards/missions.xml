@@ -6101,8 +6101,8 @@
   <location>
     <id>109</id>
     <name>Red Feather Valley</name>
-    <mapBG>EventMap_011</mapBG>
-    <asset_bundle>48</asset_bundle>
+    <mapBG>Map_RedFeatherValley</mapBG>
+    <asset_bundle>54</asset_bundle>
     <combatBG>CombatBGEvent004</combatBG>
     <req>-1</req>
     <arena_x>250</arena_x>

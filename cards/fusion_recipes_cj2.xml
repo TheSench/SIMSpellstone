@@ -936,6 +936,35 @@
     <card_id>22034</card_id>
     <resource card_id="12034" number="2" />
   </fusion_recipe>
+  <!-- TEST FUSION DO NOT PUSH 
+	<fusion_recipe>
+		<card_id>2036</card_id>
+		<resource card_id="2035" number="1"/>
+		<resource item_id="2515" number="10"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>2037</card_id>
+		<resource card_id="2036" number="1"/>
+		<resource item_id="2515" number="50"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>2038</card_id>
+		<resource card_id="2037" number="1"/>
+		<resource item_id="2515" number="250"/>
+	</fusion_recipe>
+	<fusion_recipe>
+		<card_id>2039</card_id>
+		<resource card_id="2038" number="1"/>
+		<resource item_id="2515" number="1000"/>
+	</fusion_recipe>-->
+  <fusion_recipe>
+    <card_id>12043</card_id>
+    <resource card_id="2043" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22043</card_id>
+    <resource card_id="12043" number="2" />
+  </fusion_recipe>
   <!-- END SET 2000 - Reward -->
   <!-- START SET 3000 - Premium -->
   <!-- AETHER PREMIUM SET BEGIN -->
@@ -1378,6 +1407,14 @@
   <fusion_recipe>
     <card_id>25054</card_id>
     <resource card_id="15054" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15055</card_id>
+    <resource card_id="5055" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25055</card_id>
+    <resource card_id="15055" number="2" />
   </fusion_recipe>
   <!-- CHAOS PREMIUM SET BEGIN -->
   <fusion_recipe>
