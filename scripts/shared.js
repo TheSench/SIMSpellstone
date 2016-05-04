@@ -20,6 +20,15 @@ function parseInt(value) {
     return value >> 0;
 }
 
+var curry = function (uncurried) {
+    var parameters = Array.prototype.slice.call(arguments, 1);
+    return function () {
+        return uncurried.apply(this, parameters.concat(
+          Array.prototype.slice.call(arguments, 0)
+        ));
+    };
+};
+
 // GET variables
 function _GET(variable) {
     var query = window.location.search.substring(1);
@@ -56,11 +65,12 @@ function time_elapsed() {
 
 // Time elapsed for one batch
 function batch_time_elapsed(time_started) {
-    var t = new Date().getTime();
     if (!time_started) time_started = time_start_batch;
-    var v = (t - time_started) / 1000;
-    v = v.toFixed(3);
-    return v;
+    return timeSince(time_started);
+}
+
+function timeSince(start) {
+    return ((Date.now() - start) / 1000).toFixed(3);
 }
 
 function shuffle(this_array) {
@@ -107,16 +117,16 @@ function copy_deck(original_deck) {
     return new_deck;
 }
 
-function getDeckCards(original_deck) {
-    var new_deck = {};
-    new_deck.commander = get_card_apply_battlegrounds(original_deck.commander);
-    new_deck.deck = [];
-    var list = original_deck.deck;
-    for (var i = 0, len = list.length; i < len; i++) {
-        new_deck.deck.push(get_card_apply_battlegrounds(list[i]));
+    function getDeckCards(original_deck) {
+        var new_deck = {};
+        new_deck.commander = get_card_apply_battlegrounds(original_deck.commander);
+        new_deck.deck = [];
+        var list = original_deck.deck;
+        for (var i = 0, len = list.length; i < len; i++) {
+            new_deck.deck.push(get_card_apply_battlegrounds(list[i]));
+        }
+        return new_deck;
     }
-    return new_deck;
-}
 
 function copy_card_list(original_card_list) {
     var new_card_list = [];
@@ -171,6 +181,7 @@ function cloneCard(original) {
     return copy;
 }
 
+var CardPrototype;
 var MakeAssault = (function () {
     var Card = function (original_card, unit_level, skillModifiers) {
         this.id = original_card.id;
@@ -451,6 +462,7 @@ var MakeAssault = (function () {
                 case 'jam':
                 case 'protect':
                 case 'protect_ice':
+                case 'silence':
                 case 'strike':
                 case 'weaken':
                 default:
@@ -499,6 +511,8 @@ var MakeAssault = (function () {
             addRunes(this, runes);
         },
     }
+
+    CardPrototype = Card.prototype;
 
     return (function (original_card, unit_level, skillModifiers) {
         if (!unit_level) unit_level = 1;
@@ -715,6 +729,7 @@ function setSkill_2(new_card, skill) {
         case 'jam':
         case 'protect':
         case 'protect_ice':
+        case 'silence':
         case 'strike':
         case 'weaken':
             // All other skills
@@ -1092,7 +1107,8 @@ function base64triplet_to_unitInfo(triplet) {
     return makeUnitInfo(id, level);
 }
 
-function unitInfo_to_base64triplet(unit_info) {
+var maxRuneID = 300;    // Used to determine how to hash runeIDs
+function unitInfo_to_base64(unit_info) {
 
     var baseID = parseInt(unit_info.id);
     var level = (parseInt(unit_info.level) - 1);
@@ -1105,20 +1121,74 @@ function unitInfo_to_base64triplet(unit_info) {
         baseID %= 10000;
     }
 
-    var char1 = base64chars[(Math.floor(baseID / 4096) * 3 + fusion) * 7 + level];
-    baseID %= 4096;
+    var runeID = 0;
+    if (unit_info.runes.length) {
+        runeID = parseInt(unit_info.runes[0].id);
+        runeID %= 5000; // Runes IDs are all in the range of 5001 - 5500
+    }
 
-    var char2 = base64chars[Math.floor(baseID / 64)];
-    var char3 = base64chars[baseID % 64];
+    var priority = (unit_info.priority || 0);
 
-    return char1 + char2 + char3;
+    var dec = baseID;
+    dec = dec * 3 + fusion;
+    dec = dec * 7 + level;
+    dec = dec * maxRuneID + runeID;
+    dec = dec * 15 + priority;
+
+    return decimal_to_base64(dec);
 }
 
-function runeID_to_base64(runeID) {
-    runeID = runeID_to_decimal(runeID);
-    var dec1 = runeID % 64;
-    var dec2 = (runeID - dec1) / 64;
-    return (base64chars[dec1] + base64chars[dec2]);
+function base64_to_unitInfo(base64) {
+
+    var dec = base64_to_decimal(base64);
+
+    var priority = dec % 15;
+    dec = (dec - priority) / 15;
+    var runeID = dec % maxRuneID;
+    dec = (dec - runeID) / maxRuneID;
+    var level = dec % 7;
+    dec = (dec - level++) / 7;
+    var fusion = dec % 3;
+    dec = (dec - fusion) / 3;
+    var unitID = dec;
+
+    if (towers[unitID]) {
+        level = level * 3 + fusion;
+    } else if (fusion > 0) {
+        unitID = Number(fusion + '' + unitID);
+    }
+
+    var unit_info = makeUnitInfo(unitID, level);
+    if (runeID > 0) {
+        unit_info.runes.push({
+            id: runeID + 5000
+        });
+    }
+    unit_info.priority = priority;
+
+    return unit_info;
+}
+
+function decimal_to_base64(dec) {
+    var base64 = '';
+    //while (dec > 0) {
+    for (var i = 0; i < 5; i++) {
+        var part = dec % 64;
+        base64 += base64chars[part];// + base64;
+        dec = (dec - part) / 64;
+    }
+    return base64;
+}
+
+function base64_to_decimal(base64) {
+    var dec = 0;
+    var orig = dec;
+    for (var i = base64.length - 1; i >= 0; i--) {
+        dec *= 64;
+        var part = base64chars.indexOf(base64[i]);
+        dec += part;
+    }
+    return dec;
 }
 
 function runeID_to_decimal(runeID) {
@@ -1146,51 +1216,10 @@ function decimal_to_runeID(decimal) {
     return runeID;
 }
 
-function unitInfo_to_decimal(unit_info) {
-
-    var unitID = parseInt(unit_info.id);            // Max 30000
-    var level = (parseInt(unit_info.level) - 1);    // Max 7
-    var runeID = 0;                                 // Max 1000
-    if (unit_info.runes.length) {
-        runeID = runeID_to_decimal(parseInt(unit_info.runes[0].id) % 5000);
-    }
-    // Shift values and then add them to get decimal total
-    var decimal = runeID;
-    decimal = decimal * 7 + level;
-    decimal = decimal * 30000 + unitID;
-    return decimal;
-}
-
-function decimal_to_unitInfo(decimal) {
-
-    var unitID = decimal % 30000;
-    decimal = (decimal - unitID) / 30000;
-    var level = decimal % 7;
-    var runeID = decimal_to_runeID((decimal - level) / 7);
-    var unit_info = makeUnitInfo(unitID, level);
-    if (runeID > 0) {
-        unit_info.runes.push({ id: runeID });
-    }
-
-    return unit_info;
-}
-
 function numberToBase64(decimal) {
     var char1 = base64chars[Math.floor(decimal / 64)];
     var char2 = base64chars[decimal % 64];
     return char1 + char2;
-}
-
-function numberToBase64Unlimited(decimal) {
-    var base64 = '';
-    var done = false
-    while (!done) {
-        if (dec == 0) done = true;
-        var dec = decimal % 64;
-        base64 += base64chars[dec];
-        decimal = (decimal - dec) / 64;
-    }
-    return base64;
 }
 
 function base64ToNumber(base64) {
@@ -1215,18 +1244,16 @@ function decode_multiplier(encoded) {
     return dec1 + dec2;
 }
 
-
 //Returns hash built from deck array
-function hash_encode(deck, combineMultiples) {
+function hash_encode(deck) {
 
     var current_hash = [];
     var has_priorities = false;
     var has_indexes = false;
-    var has_runes = false;
     var indexes = [];
 
     if (deck.commander) {
-        current_hash.push(unitInfo_to_base64triplet(deck.commander));
+        current_hash.push(unitInfo_to_base64(deck.commander));
     }
     var copies = [1];
     var lastIndex = 0;
@@ -1239,11 +1266,8 @@ function hash_encode(deck, combineMultiples) {
             indexes.push(numberToBase64(current_card.index));
             has_indexes = true;
         }
-        if (current_card.runes.length) {
-            has_runes = true;
-        }
-        var triplet = unitInfo_to_base64triplet(current_card);
-        if (combineMultiples && (triplet == current_hash[lastIndex])) {
+        var triplet = unitInfo_to_base64(current_card);
+        if (triplet == current_hash[lastIndex]) {
             copies[lastIndex]++;
         } else {
             current_hash.push(triplet);
@@ -1270,20 +1294,6 @@ function hash_encode(deck, combineMultiples) {
         current_hash.push(indexes);
     }
 
-    if (has_runes) {
-        var runes = runeDelimiter;
-        for (var k in deck.deck) {
-            var current_runes = deck.deck[k].runes;
-            var runeID = 0;                                 // Max 1000
-            if (current_runes.length) {
-                runeID = parseInt(current_runes[0].id);
-            }
-            runeID = runeID_to_base64(runeID);
-            runes += runeID;
-        }
-        current_hash.push(runes);
-    }
-
     for (var i = 0; i < copies.length; i++) {
         var num = copies[i];
         if (num > 1) {
@@ -1296,24 +1306,83 @@ function hash_encode(deck, combineMultiples) {
 }
 
 function areEqual(unitInfo1, unitInfo2) {
-    if ((!unitInfo1) != (!unitInfo2)) return false;
-    if (!unitInfo1) return true;
-    if (unitInfo1.id != unitInfo2.id) return false;
-    if (unitInfo1.level != unitInfo2.level) return false;
-    if (unitInfo1.runes.length != unitInfo2.runes.length) return false;
-    for (var i = 0; i < unitInfo1.runes.length; i++) {
-        var runeID1 = unitInfo1.runes[i].id;
-        var runeID2 = unitInfo2.runes[i].id;
-        if (runeID1 != runeID2) return false;
-    }
-    return true;
+    if ((!unitInfo1) != (!unitInfo2)) return false; // Silly null-check
+    var hash1 = unitInfo_to_base64(unitInfo1);
+    var hash2 = unitInfo_to_base64(unitInfo2);
+    return (hash1 == hash2);
 }
 
 //Returns deck array built from hash
 function hash_decode(hash) {
+    if (_DEFINED("legacy_hash")) {
+        return hash_decode_old(hash);
+    } else if (hash.indexOf(runeDelimiter) > 0) {
+        return hash_decode_old(hash);
+    } else if (hash.indexOf(priorityDelimiter) > 0) {
+        return hash_decode_old(hash);
+    } else if ((hash.length % 5 != 0) && (hash.indexOf(indexDelimiter) < 0)) {
+        return hash_decode_old(hash);
+    } else {
+        return hash_decode_new(hash);
+    }
+}
 
-    var current_deck = {};
-    current_deck.deck = [];
+function hash_decode_new(hash) {
+
+    var current_deck = { deck: [] };
+    var unitInfo;
+    var indexes;
+    var entryLength = 5;
+    if (hash.indexOf(indexDelimiter) > 0) {
+        // Ignore indices for now
+        indexes = hash.substr(hash.indexOf(indexDelimiter) + 1).match(/.{1,2}/g);
+        hash = hash.substr(0, hash.indexOf(indexDelimiter));
+    }
+    var unitidx = 0;
+    for (var i = 0; i < hash.length; i += entryLength) {
+        if (multiplierChars.indexOf(hash[i]) == -1) {
+            // Make sure we have valid characters
+            unitInfo = base64_to_unitInfo(hash.substr(i, entryLength));
+            if (unitidx > 0 && indexes) unitInfo.index = base64ToNumber(indexes[unitidx - 1]); // Skip commander
+
+            if (unitInfo) {
+                if (loadCard(unitInfo.id)) {
+                    // Repeat previous card multiple times
+                    if (!current_deck.commander && is_commander(unitInfo.id)) {
+                        current_deck.commander = unitInfo;
+                        unitidx++;
+                        // Add to deck
+                    } else {
+                        current_deck.deck.push(unitInfo);
+                        unitidx++;
+                    }
+                }
+            }
+        } else {
+            var multiplier = decode_multiplier(hash.substr(i, 2)) + 1;
+            for (var n = 0; n < multiplier; n++) {
+                var duplicate = makeUnitInfo(unitInfo.id, unitInfo.level, unitInfo.runes);
+                if (indexes) {
+                    duplicate.index = base64ToNumber(indexes[unitidx - 1]); // Skip commander
+                }
+                current_deck.deck.push(duplicate);
+                unitidx++;
+            }
+            i -= (entryLength - 2); // Offset i so that the += unitLength in the loop sets it to the correct next index
+        }
+    }
+
+    // Default commander to Elaria Captain if none found
+    if (!current_deck.commander) {
+        current_deck.commander = elariaCaptain;
+    }
+
+    return current_deck;
+}
+
+function hash_decode_old(hash) {
+
+    var current_deck = { deck: [] };
     var unitInfo;
     var priorities;
     var runes;
