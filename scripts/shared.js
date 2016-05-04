@@ -1321,6 +1321,11 @@ function hash_decode(hash) {
     } else if (hash.indexOf(priorityDelimiter) > 0) {
         return hash_decode_old(hash);
     } else if ((hash.length % 5 != 0) && (hash.indexOf(indexDelimiter) < 0)) {
+        for (var i = 0; i < multiplierChars.length; i++) {
+            if (hash.indexOf(multiplierChars[i]) > 0) {
+                return hash_decode_new(hash);
+            }
+        }
         return hash_decode_old(hash);
     } else {
         return hash_decode_new(hash);
