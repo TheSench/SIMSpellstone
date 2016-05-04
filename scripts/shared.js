@@ -1267,7 +1267,8 @@ function hash_encode(deck) {
             has_indexes = true;
         }
         var triplet = unitInfo_to_base64(current_card);
-        if (triplet == current_hash[lastIndex]) {
+        // Short-circuit encoding of multiples for now
+        if (false && triplet == current_hash[lastIndex]) {
             copies[lastIndex]++;
         } else {
             current_hash.push(triplet);
