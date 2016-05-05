@@ -14383,12 +14383,239 @@ var CARDS = {
       },
     }
   },
+  "2040": {
+    "id": "2040",
+    "name": "Owlmancer",
+    "picture": "Avian_Mage_A",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "10",
+    "attack": 4,
+    "health": 12,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 3,
+        "y": "10",
+        "z": 10,
+      },
+      {
+        "id": "strike",
+        "x": 3,
+      },
+      {
+        "id": "nullify",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 13,
+        "skill": [],
+      },
+      "3": {
+        "attack": 5,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "10",
+            "z": 10,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+          {
+            "id": "nullify",
+            "x": 1,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "10",
+            "z": 10,
+          },
+          {
+            "id": "strike",
+            "x": 4,
+          },
+          {
+            "id": "nullify",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "12040": {
+    "id": "12040",
+    "name": "Ardent Owlmancer",
+    "picture": "Avian_Mage_A",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "10",
+    "attack": 5,
+    "health": 14,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 4,
+        "y": "10",
+        "z": 10,
+      },
+      {
+        "id": "strike",
+        "x": 4,
+      },
+      {
+        "id": "nullify",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 15,
+        "skill": [],
+      },
+      "3": {
+        "health": 16,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "10",
+            "z": 10,
+          },
+          {
+            "id": "strike",
+            "x": 5,
+          },
+          {
+            "id": "nullify",
+            "x": 1,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "10",
+            "z": 10,
+          },
+          {
+            "id": "strike",
+            "x": 5,
+          },
+          {
+            "id": "nullify",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "22040": {
+    "id": "22040",
+    "name": "Devout Owlmancer",
+    "picture": "Avian_Mage_B",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "10",
+    "attack": 5,
+    "health": 17,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 4,
+        "y": "10",
+        "z": 10,
+      },
+      {
+        "id": "strike",
+        "x": 5,
+      },
+      {
+        "id": "nullify",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 18,
+        "skill": [],
+      },
+      "3": {
+        "attack": 6,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 5,
+            "y": "10",
+            "z": 10,
+          },
+          {
+            "id": "strike",
+            "x": 5,
+          },
+          {
+            "id": "nullify",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "attack": 6,
+        "health": 19,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 5,
+            "y": "10",
+            "z": 10,
+          },
+          {
+            "id": "strike",
+            "x": 6,
+          },
+          {
+            "id": "nullify",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
   "2043": {
     "id": "2043",
     "name": "Eos",
     "picture": "Crystal_Light_Bird_A",
     "rarity": "4",
-    "set": "4000",
+    "set": "2000",
     "card_type": "2",
     "type": "1",
     "sub_type": "10",
@@ -14461,7 +14688,7 @@ var CARDS = {
     "name": "Eos Raybringer",
     "picture": "Crystal_Light_Bird_A",
     "rarity": "4",
-    "set": "4000",
+    "set": "2000",
     "card_type": "2",
     "type": "1",
     "sub_type": "10",
@@ -14540,7 +14767,7 @@ var CARDS = {
     "name": "Eos Dawnbringer",
     "picture": "Crystal_Light_Bird_B",
     "rarity": "4",
-    "set": "4000",
+    "set": "2000",
     "card_type": "2",
     "type": "1",
     "sub_type": "10",
@@ -27151,6 +27378,280 @@ var CARDS = {
       },
     }
   },
+  "5057": {
+    "id": "5057",
+    "name": "Skystriker",
+    "picture": "Avian_General_A",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "10",
+    "attack": 3,
+    "health": 12,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 1,
+        "y": "10",
+        "z": 10,
+        "all": "1",
+      },
+      {
+        "id": "legion",
+        "x": 1,
+        "y": "10",
+        "z": 10,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 13,
+        "skill": [],
+      },
+      "3": {
+        "health": 15,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "10",
+            "z": 10,
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "10",
+            "z": 10,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "10",
+            "z": 10,
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "10",
+            "z": 10,
+          },
+        ],
+      },
+      "6": {
+        "health": 16,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "10",
+            "z": 10,
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "10",
+            "z": 10,
+          },
+        ],
+      },
+    }
+  },
+  "15057": {
+    "id": "15057",
+    "name": "Great Skystriker",
+    "picture": "Avian_General_A",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "10",
+    "attack": 4,
+    "health": 16,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "10",
+        "z": 10,
+        "all": "1",
+      },
+      {
+        "id": "legion",
+        "x": 2,
+        "y": "10",
+        "z": 10,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 17,
+        "skill": [],
+      },
+      "3": {
+        "health": 18,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "10",
+            "z": 10,
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "10",
+            "z": 10,
+          },
+        ],
+      },
+      "5": {
+        "health": 19,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "10",
+            "z": 10,
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 3,
+            "y": "10",
+            "z": 10,
+          },
+        ],
+      },
+    }
+  },
+  "25057": {
+    "id": "25057",
+    "name": "Imperial Skystriker",
+    "picture": "Avian_General_B",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "10",
+    "attack": 4,
+    "health": 20,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "10",
+        "z": 10,
+        "all": "1",
+      },
+      {
+        "id": "legion",
+        "x": 3,
+        "y": "10",
+        "z": 10,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 21,
+        "skill": [],
+      },
+      "3": {
+        "attack": 5,
+        "skill": [],
+      },
+      "4": {
+        "health": 22,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "10",
+            "z": 10,
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 3,
+            "y": "10",
+            "z": 10,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "10",
+            "z": 10,
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 4,
+            "y": "10",
+            "z": 10,
+          },
+        ],
+      },
+    }
+  },
   "6000": {
     "id": "6000",
     "name": "Furnace Mech",
@@ -38679,6 +39180,182 @@ var CARDS = {
           {
             "id": "poison",
             "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "6054": {
+    "id": "6054",
+    "name": "Shadowcrafter",
+    "picture": "Magpie_Rogue_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "10",
+    "attack": 4,
+    "health": 8,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "nullify",
+        "x": 1,
+      },
+      {
+        "id": "flurry",
+        "c": 7,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "nullify",
+            "x": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 6,
+          },
+        ],
+      },
+      "3": {
+        "health": 9,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "nullify",
+            "x": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 6,
+          },
+        ],
+      },
+      "5": {
+        "attack": 5,
+        "health": 10,
+        "skill": [],
+      },
+    }
+  },
+  "16054": {
+    "id": "16054",
+    "name": "Shadowslicer",
+    "picture": "Magpie_Rogue_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "10",
+    "attack": 5,
+    "health": 10,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "nullify",
+        "x": 1,
+      },
+      {
+        "id": "flurry",
+        "c": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 11,
+        "skill": [],
+      },
+      "3": {
+        "health": 12,
+        "skill": [],
+      },
+      "4": {
+        "attack": 6,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "nullify",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 5,
+          },
+        ],
+      },
+    }
+  },
+  "26054": {
+    "id": "26054",
+    "name": "Shadowdagger",
+    "picture": "Magpie_Rogue_B",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "10",
+    "attack": 6,
+    "health": 13,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "nullify",
+        "x": 2,
+      },
+      {
+        "id": "flurry",
+        "c": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "attack": 7,
+        "skill": [],
+      },
+      "4": {
+        "health": 15,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "nullify",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
           },
         ],
       },
@@ -51424,6 +52101,246 @@ var CARDS = {
           {
             "id": "pierce",
             "x": 6,
+          },
+        ],
+      },
+    }
+  },
+  "7055": {
+    "id": "7055",
+    "name": "Valley Strider",
+    "picture": "Grass_Feather_Avian_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "10",
+    "attack": 4,
+    "health": 19,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "10",
+        "z": 10,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 20,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "10",
+            "z": 10,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "10",
+            "z": 10,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "5": {
+        "health": 21,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "10",
+            "z": 10,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "17055": {
+    "id": "17055",
+    "name": "Lowland Strider",
+    "picture": "Grass_Feather_Avian_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "10",
+    "attack": 5,
+    "health": 22,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "fervor",
+        "x": 3,
+        "y": "10",
+        "z": 10,
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "fervor",
+            "x": 4,
+            "y": "10",
+            "z": 10,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "3": {
+        "health": 23,
+        "skill": [],
+      },
+      "4": {
+        "health": 24,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "fervor",
+            "x": 4,
+            "y": "10",
+            "z": 10,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "27055": {
+    "id": "27055",
+    "name": "Frenzied Strider",
+    "picture": "Grass_Feather_Avian_B",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "10",
+    "attack": 5,
+    "health": 25,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "fervor",
+        "x": 4,
+        "y": "10",
+        "z": 10,
+      },
+      {
+        "id": "berserk",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 6,
+        "skill": [],
+      },
+      "3": {
+        "health": 26,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "fervor",
+            "x": 4,
+            "y": "10",
+            "z": 10,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "fervor",
+            "x": 5,
+            "y": "10",
+            "z": 10,
+          },
+          {
+            "id": "berserk",
+            "x": 4,
           },
         ],
       },
@@ -73318,6 +74235,418 @@ var CARDS = {
       },
     }
   },
+  "304": {
+    "id": "304",
+    "name": "Skyward Beast",
+    "picture": "portrait_feralbird",
+    "rarity": "3",
+    "set": "9999",
+    "card_type": "1",
+    "type": "2",
+    "health": 29,
+    "skill": [
+      {
+        "id": "imbue",
+        "x": 2,
+        "s": "evade",
+      },
+      {
+        "id": "counter",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 33,
+        "skill": [],
+      },
+      "3": {
+        "health": 38,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 2,
+            "s": "evade",
+          },
+          {
+            "id": "counter",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "health": 44,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 2,
+            "s": "evade",
+          },
+          {
+            "id": "counter",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "health": 51,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 2,
+            "s": "evade",
+          },
+          {
+            "id": "counter",
+            "x": 3,
+          },
+          {
+            "id": "heal",
+            "x": 5,
+          },
+        ],
+      },
+    }
+  },
+  "305": {
+    "id": "305",
+    "name": "Red Feather Hippogriff",
+    "picture": "portrait_avianlion",
+    "rarity": "3",
+    "set": "9999",
+    "card_type": "1",
+    "type": "2",
+    "health": 32,
+    "skill": [
+      {
+        "id": "strike",
+        "x": 2,
+      },
+      {
+        "id": "imbue",
+        "x": 2,
+        "s": "poison",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 36,
+        "skill": [],
+      },
+      "3": {
+        "health": 41,
+        "skill": [
+          {
+            "id": "strike",
+            "x": 3,
+          },
+          {
+            "id": "imbue",
+            "x": 2,
+            "s": "poison",
+          },
+        ],
+      },
+      "4": {
+        "health": 47,
+        "skill": [
+          {
+            "id": "strike",
+            "x": 3,
+          },
+          {
+            "id": "imbue",
+            "x": 3,
+            "s": "poison",
+          },
+        ],
+      },
+      "5": {
+        "health": 54,
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+          {
+            "id": "imbue",
+            "x": 3,
+            "s": "poison",
+          },
+        ],
+      },
+    }
+  },
+  "306": {
+    "id": "306",
+    "name": "Lost Angel",
+    "picture": "portrait_angelknight",
+    "rarity": "3",
+    "set": "9999",
+    "card_type": "1",
+    "type": "1",
+    "health": 30,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 1,
+      },
+      {
+        "id": "protect",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 34,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+          },
+        ],
+      },
+      "3": {
+        "health": 39,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 45,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 1,
+            "s": "armored",
+          },
+          {
+            "id": "heal",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "health": 52,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 2,
+            "s": "armored",
+          },
+          {
+            "id": "heal",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "307": {
+    "id": "307",
+    "name": "Red Feather Soldier",
+    "picture": "portrait_aviansoldier2",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "2",
+    "health": 30,
+    "skill": [
+      {
+        "id": "imbue",
+        "x": 2,
+        "y": "3",
+        "z": 3,
+        "s": "armored",
+      },
+      {
+        "id": "weaken",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 34,
+        "skill": [],
+      },
+      "3": {
+        "health": 39,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+            "s": "armored",
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 45,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+            "s": "armored",
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "health": 52,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+            "s": "armored",
+          },
+          {
+            "id": "weaken",
+            "x": 4,
+          },
+        ],
+      },
+      "6": {
+        "health": 60,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+            "s": "armored",
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "308": {
+    "id": "308",
+    "name": "Red Feather Magistrate",
+    "picture": "portrait_frogemperor",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "3",
+    "health": 34,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 2,
+      },
+      {
+        "id": "imbue",
+        "x": 1,
+        "s": "berserk",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 38,
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 2,
+          },
+          {
+            "id": "imbue",
+            "x": 2,
+            "s": "berserk",
+          },
+        ],
+      },
+      "3": {
+        "health": 43,
+        "skill": [],
+      },
+      "4": {
+        "health": 49,
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 3,
+          },
+          {
+            "id": "imbue",
+            "x": 2,
+            "s": "berserk",
+          },
+        ],
+      },
+      "5": {
+        "health": 56,
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 4,
+          },
+          {
+            "id": "imbue",
+            "x": 2,
+            "s": "berserk",
+          },
+        ],
+      },
+      "6": {
+        "health": 64,
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 4,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+          },
+          {
+            "id": "imbue",
+            "x": 2,
+            "s": "berserk",
+          },
+        ],
+      },
+    }
+  },
   "500": {
     "id": "500",
     "name": "Arcane Dustling",
@@ -73609,166 +74938,10 @@ var CARDS = {
       },
     }
   },
-  "9984": {
-    "id": "9984",
-    "name": "",
-    "picture": "New10_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19984": {
-    "id": "19984",
-    "name": "",
-    "picture": "New10_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29984": {
-    "id": "29984",
-    "name": "",
-    "picture": "New10_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9985": {
-    "id": "9985",
-    "name": "",
-    "picture": "New11_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19985": {
-    "id": "19985",
-    "name": "",
-    "picture": "New11_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29985": {
-    "id": "29985",
-    "name": "",
-    "picture": "New11_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9986": {
-    "id": "9986",
-    "name": "",
-    "picture": "New12_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19986": {
-    "id": "19986",
-    "name": "",
-    "picture": "New12_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29986": {
-    "id": "29986",
-    "name": "",
-    "picture": "New12_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9987": {
-    "id": "9987",
-    "name": "",
-    "picture": "New13_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19987": {
-    "id": "19987",
-    "name": "",
-    "picture": "New13_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29987": {
-    "id": "29987",
-    "name": "",
-    "picture": "New13_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
   "9988": {
     "id": "9988",
     "name": "",
-    "picture": "New14_A",
+    "picture": "New10_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73781,7 +74954,7 @@ var CARDS = {
   "19988": {
     "id": "19988",
     "name": "",
-    "picture": "New14_A",
+    "picture": "New10_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73794,7 +74967,7 @@ var CARDS = {
   "29988": {
     "id": "29988",
     "name": "",
-    "picture": "New14_B",
+    "picture": "New10_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73807,7 +74980,7 @@ var CARDS = {
   "9989": {
     "id": "9989",
     "name": "",
-    "picture": "New15_A",
+    "picture": "New11_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73820,7 +74993,7 @@ var CARDS = {
   "19989": {
     "id": "19989",
     "name": "",
-    "picture": "New15_A",
+    "picture": "New11_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73833,7 +75006,7 @@ var CARDS = {
   "29989": {
     "id": "29989",
     "name": "",
-    "picture": "New15_B",
+    "picture": "New11_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73846,7 +75019,7 @@ var CARDS = {
   "9990": {
     "id": "9990",
     "name": "",
-    "picture": "New16_A",
+    "picture": "New12_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73859,7 +75032,7 @@ var CARDS = {
   "19990": {
     "id": "19990",
     "name": "",
-    "picture": "New16_A",
+    "picture": "New12_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73872,7 +75045,7 @@ var CARDS = {
   "29990": {
     "id": "29990",
     "name": "",
-    "picture": "New16_B",
+    "picture": "New12_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73885,7 +75058,7 @@ var CARDS = {
   "9991": {
     "id": "9991",
     "name": "",
-    "picture": "New1_A",
+    "picture": "New13_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73898,7 +75071,7 @@ var CARDS = {
   "19991": {
     "id": "19991",
     "name": "",
-    "picture": "New1_A",
+    "picture": "New13_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73911,7 +75084,7 @@ var CARDS = {
   "29991": {
     "id": "29991",
     "name": "",
-    "picture": "New1_B",
+    "picture": "New13_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73924,7 +75097,7 @@ var CARDS = {
   "9992": {
     "id": "9992",
     "name": "",
-    "picture": "New2_A",
+    "picture": "New14_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73937,7 +75110,7 @@ var CARDS = {
   "19992": {
     "id": "19992",
     "name": "",
-    "picture": "New2_A",
+    "picture": "New14_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73950,7 +75123,7 @@ var CARDS = {
   "29992": {
     "id": "29992",
     "name": "",
-    "picture": "New2_B",
+    "picture": "New14_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73963,7 +75136,7 @@ var CARDS = {
   "9993": {
     "id": "9993",
     "name": "",
-    "picture": "New3_A",
+    "picture": "New15_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73976,7 +75149,7 @@ var CARDS = {
   "19993": {
     "id": "19993",
     "name": "",
-    "picture": "New3_A",
+    "picture": "New15_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -73989,7 +75162,7 @@ var CARDS = {
   "29993": {
     "id": "29993",
     "name": "",
-    "picture": "New3_B",
+    "picture": "New15_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -74002,7 +75175,7 @@ var CARDS = {
   "9994": {
     "id": "9994",
     "name": "",
-    "picture": "New4_A",
+    "picture": "New16_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -74015,7 +75188,7 @@ var CARDS = {
   "19994": {
     "id": "19994",
     "name": "",
-    "picture": "New4_A",
+    "picture": "New16_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -74028,7 +75201,7 @@ var CARDS = {
   "29994": {
     "id": "29994",
     "name": "",
-    "picture": "New4_B",
+    "picture": "New16_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -74041,7 +75214,7 @@ var CARDS = {
   "9995": {
     "id": "9995",
     "name": "",
-    "picture": "New5_A",
+    "picture": "New1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -74054,7 +75227,7 @@ var CARDS = {
   "19995": {
     "id": "19995",
     "name": "",
-    "picture": "New5_A",
+    "picture": "New1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -74067,7 +75240,7 @@ var CARDS = {
   "29995": {
     "id": "29995",
     "name": "",
-    "picture": "New5_B",
+    "picture": "New1_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -74080,7 +75253,7 @@ var CARDS = {
   "9996": {
     "id": "9996",
     "name": "",
-    "picture": "New6_A",
+    "picture": "New2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -74093,7 +75266,7 @@ var CARDS = {
   "19996": {
     "id": "19996",
     "name": "",
-    "picture": "New6_A",
+    "picture": "New2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -74106,7 +75279,7 @@ var CARDS = {
   "29996": {
     "id": "29996",
     "name": "",
-    "picture": "New6_B",
+    "picture": "New2_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -74119,7 +75292,7 @@ var CARDS = {
   "9997": {
     "id": "9997",
     "name": "",
-    "picture": "New7_A",
+    "picture": "New3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -74132,7 +75305,7 @@ var CARDS = {
   "19997": {
     "id": "19997",
     "name": "",
-    "picture": "New7_A",
+    "picture": "New3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -74145,7 +75318,7 @@ var CARDS = {
   "29997": {
     "id": "29997",
     "name": "",
-    "picture": "New7_B",
+    "picture": "New3_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -74158,7 +75331,7 @@ var CARDS = {
   "9998": {
     "id": "9998",
     "name": "",
-    "picture": "New8_A",
+    "picture": "New4_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -74171,7 +75344,7 @@ var CARDS = {
   "19998": {
     "id": "19998",
     "name": "",
-    "picture": "New8_A",
+    "picture": "New4_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -74184,7 +75357,7 @@ var CARDS = {
   "29998": {
     "id": "29998",
     "name": "",
-    "picture": "New8_B",
+    "picture": "New4_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -74197,7 +75370,7 @@ var CARDS = {
   "9999": {
     "id": "9999",
     "name": "",
-    "picture": "New9_A",
+    "picture": "New8_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -74210,7 +75383,7 @@ var CARDS = {
   "19999": {
     "id": "19999",
     "name": "",
-    "picture": "New9_A",
+    "picture": "New8_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -74223,7 +75396,7 @@ var CARDS = {
   "29999": {
     "id": "29999",
     "name": "",
-    "picture": "New9_B",
+    "picture": "New8_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -83590,6 +84763,7 @@ var FUSIONS = {
   "12031" : "22031",
   "12032" : "22032",
   "12034" : "22034",
+  "12040" : "22040",
   "12043" : "22043",
   "1300" : "11300",
   "1301" : "11301",
@@ -83675,6 +84849,7 @@ var FUSIONS = {
   "15053" : "25053",
   "15054" : "25054",
   "15055" : "25055",
+  "15057" : "25057",
   "1600" : "11600",
   "16000" : "26000",
   "16001" : "26001",
@@ -83734,6 +84909,7 @@ var FUSIONS = {
   "16050" : "26050",
   "16051" : "26051",
   "16052" : "26052",
+  "16054" : "26054",
   "1606" : "11606",
   "1607" : "11607",
   "1610" : "11610",
@@ -83810,6 +84986,7 @@ var FUSIONS = {
   "17051" : "27051",
   "17052" : "27052",
   "17053" : "27053",
+  "17055" : "27055",
   "18000" : "28000",
   "18001" : "28001",
   "18002" : "28002",
@@ -83855,6 +85032,7 @@ var FUSIONS = {
   "2031" : "12031",
   "2032" : "12032",
   "2034" : "12034",
+  "2040" : "12040",
   "2043" : "12043",
   "5000" : "15000",
   "5001" : "15001",
@@ -83912,6 +85090,7 @@ var FUSIONS = {
   "5053" : "15053",
   "5054" : "15054",
   "5055" : "15055",
+  "5057" : "15057",
   "6000" : "16000",
   "6001" : "16001",
   "6002" : "16002",
@@ -83965,6 +85144,7 @@ var FUSIONS = {
   "6050" : "16050",
   "6051" : "16051",
   "6052" : "16052",
+  "6054" : "16054",
   "7000" : "17000",
   "7001" : "17001",
   "7002" : "17002",
@@ -84019,6 +85199,7 @@ var FUSIONS = {
   "7051" : "17051",
   "7052" : "17052",
   "7053" : "17053",
+  "7055" : "17055",
   "8000" : "18000",
   "8001" : "18001",
   "8002" : "18002",
