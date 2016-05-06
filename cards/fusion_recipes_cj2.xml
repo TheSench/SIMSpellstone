@@ -958,6 +958,22 @@
 		<resource item_id="2515" number="1000"/>
 	</fusion_recipe>-->
   <fusion_recipe>
+    <card_id>12040</card_id>
+    <resource card_id="2040" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22040</card_id>
+    <resource card_id="12040" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12042</card_id>
+    <resource card_id="2042" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22042</card_id>
+    <resource card_id="12042" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
     <card_id>12043</card_id>
     <resource card_id="2043" number="2" />
   </fusion_recipe>
@@ -1416,6 +1432,14 @@
     <card_id>25055</card_id>
     <resource card_id="15055" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15057</card_id>
+    <resource card_id="5057" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25057</card_id>
+    <resource card_id="15057" number="2" />
+  </fusion_recipe>
   <!-- CHAOS PREMIUM SET BEGIN -->
   <fusion_recipe>
     <card_id>16000</card_id>
@@ -1840,6 +1864,22 @@
   <fusion_recipe>
     <card_id>26052</card_id>
     <resource card_id="16052" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16053</card_id>
+    <resource card_id="6053" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26053</card_id>
+    <resource card_id="16053" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16054</card_id>
+    <resource card_id="6054" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26054</card_id>
+    <resource card_id="16054" number="2" />
   </fusion_recipe>
   <!-- WYLD PREMIUM SET BEGIN -->
   <fusion_recipe>
@@ -2273,6 +2313,14 @@
   <fusion_recipe>
     <card_id>27053</card_id>
     <resource card_id="17053" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17055</card_id>
+    <resource card_id="7055" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27055</card_id>
+    <resource card_id="17055" number="2" />
   </fusion_recipe>
   <!-- END SET 3000 - Premium -->
   <!-- START SET 8000 - Story Element Assaults -->

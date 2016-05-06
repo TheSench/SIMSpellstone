@@ -6103,7 +6103,7 @@
     <name>Red Feather Valley</name>
     <mapBG>Map_RedFeatherValley</mapBG>
     <asset_bundle>54</asset_bundle>
-    <combatBG>CombatBGEvent004</combatBG>
+    <combatBG>CombatBGRedFeatherValley</combatBG>
     <req>-1</req>
     <arena_x>250</arena_x>
     <arena_y>150</arena_y>
