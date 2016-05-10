@@ -1,0 +1,3550 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- ACHIEVEMENT TYPES:
+		1: Buy a Store Item
+			req: <store_item>X</store_item>		// store item id
+		2: Complete Campaign
+			req: <campaign>X</campaign>			// campaign id
+				optional:  <level>X</level>		// campaign level (default 1)
+			or:  <total_mastery>X</total_mastery>	// number of mastery stars
+			or: <campaign_map>X</campaign_map>	// location_id
+				with: <level>X</level>			// all campaigns on given map at level X
+		3: Upgrade a Card
+			req: <upgrade_level>X</upgrade_level>	// upgrade card level
+			or: <upgrade_id>X</upgrade_id>		// upgrade card id
+		4: PvP
+			req: <pvp_wins>X</pvp_wins>			// num won
+		5: Guild
+			req: <join_guild>1</join_guild>
+		6: Heroes
+			req: <unlock_hero>X</unlock_hero>	// card id
+			or: <hero_rarity>X</hero_rarity>    // hero rarity
+		7: Fusion
+			req: <fuse_level>X</fuse_level>		// fusion card level
+			or: <fuse_id>X</fuse_id>			// fusion card id
+		8: Salvage
+			req: <total_sp>X</total_sp>			// total amount of SP gained
+		9: Currency
+			req: <total_currency>X</total_currency>	// amount of gold gained in lifetime
+		10: Kongregate
+			req: <kong_login>1</kong_login>
+		11: Edit Deck
+			req: <edit_deck>1</edit_deck>
+		12: Meta/Legendary Quest
+			req: <sub_achievement>1</sub_achievement>
+		13: Runes
+			req: <sub_achievement>1</sub_achievement>
+		
+		VALID ACHIEVEMENT REQS:
+			<achievement_req>		(-1 is hidden)
+			<achievement_collected_req>
+			<mission_req>
+			<level_req> 
+			<pvp_rank_req>
+			
+		NAVIGATE:
+			1 = Main Screen
+			2 = Quests
+			3 = Store
+			4 = PvP
+			
+		REWARDS:
+			<reward>
+				<item id='2001' number='333' />
+			</reward>
+			
+		ORDER:
+			  1-89 	= FTUE + System Introductions. Highest priority
+			 90-99	= Main Campaign
+			101-199 = Events
+			201-299 = Upgrades
+			301-399	= Tome of Heroes
+			401-499 = -Empty-
+			501-599 = Bounties
+			601-699 = Campaign & Map Mastery
+			701-799 = Vaporizer
+			801-899 = Runes
+			
+			
+		EVENT ACHIEVEMENTS: Start at ID 3001
+	-->
+  <!-- 100: Store Quests START -->
+  <achievement>
+    <id>101</id>
+    <type>1</type>
+    <order>10</order>
+    <name>Goblin's Wares</name>
+    <icon>gold_bar</icon>
+    <desc>Purchase your first Basic Pack from the store.</desc>
+    <mission_req>13</mission_req>
+    <req>
+      <store_item id="1" number="1" />
+    </req>
+    <reward>
+      <gold>30</gold>
+    </reward>
+    <speech>
+      <line>
+        <navigate>1</navigate>
+        <wait>1</wait>
+      </line>
+      <line>
+        <commander>goblinmerchant</commander>
+        <enemy>1</enemy>
+        <text>Nice airship! Where can I set myself up?</text>
+      </line>
+      <line>
+        <commander>raven</commander>
+        <text>Who is this smelly goblin?</text>
+      </line>
+      <line>
+        <commander>goblinmerchant</commander>
+        <enemy>1</enemy>
+        <text>Don't be like that. Come! I have something to show you!</text>
+      </line>
+      <line>
+        <navigate>3</navigate>
+        <wait>1</wait>
+      </line>
+    </speech>
+    <!-- 
+		<speech_complete>
+			<line>
+				<commander>raven</commander>
+				<text>Great job! Once you are done you can return to your Adventure!</text>
+			</line>
+		</speech_complete>
+		 -->
+  </achievement>
+  <achievement>
+    <id>102</id>
+    <type>1</type>
+    <order>10</order>
+    <name>Regular Customer</name>
+    <icon>gold_bar</icon>
+    <desc>Purchase three Basic Packs from the store.</desc>
+    <achievement_req>200</achievement_req>
+    <req>
+      <store_item id="1" number="3" />
+    </req>
+    <reward>
+      <gold>30</gold>
+    </reward>
+  </achievement>
+  <!-- END Store Quests -->
+  <!-- 200: Campaign Quests START -->
+  <achievement>
+    <id>220</id>
+    <type>2</type>
+    <order>5</order>
+    <name>Prologue</name>
+    <desc>Complete your training with the Raven!</desc>
+    <req>
+      <mission>12</mission>
+    </req>
+    <reward>
+      <gold>30</gold>
+    </reward>
+  </achievement>
+  <!-- <achievement>
+		<id>240</id>
+		<type>2</type>
+		<order>101</order>
+		<name>TEST PROLOGUE</name>
+		<desc>Complete your training with the Raven!</desc>
+		<req>
+			<mission>11</mission>
+		</req>
+		<reward>
+			<gold>30</gold>
+		</reward>
+	</achievement> -->
+  <achievement>
+    <id>200</id>
+    <type>2</type>
+    <order>5</order>
+    <name>Bury the Dead</name>
+    <desc>Complete 'The Elaria Expedition' campaign.</desc>
+    <achievement_collected_req>220</achievement_collected_req>
+    <req>
+      <campaign>1</campaign>
+    </req>
+    <reward>
+      <gold>30</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>217</id>
+    <type>2</type>
+    <order>91</order>
+    <name>Field Training</name>
+    <desc>Complete the 'Rise of the Dead' campaign.</desc>
+    <achievement_req>200</achievement_req>
+    <req>
+      <campaign>2</campaign>
+    </req>
+    <reward>
+      <sp>15</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>218</id>
+    <type>2</type>
+    <order>91</order>
+    <name>Source of Corruption</name>
+    <desc>Complete 'The Good, the Bad and the Fiery' campaign.</desc>
+    <achievement_req>217</achievement_req>
+    <req>
+      <campaign>3</campaign>
+    </req>
+    <reward>
+      <gold>50</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>201</id>
+    <type>2</type>
+    <order>91</order>
+    <name>Necromancer's Fall</name>
+    <icon>gem_LG</icon>
+    <desc>Complete the 'Source of Chaos' campaign.</desc>
+    <achievement_req>218</achievement_req>
+    <req>
+      <campaign>4</campaign>
+    </req>
+    <reward>
+      <sp>20</sp>
+    </reward>
+    <speech_complete>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>Uggghhhh, where am I?</text>
+      </line>
+      <line>
+        <commander>ranger</commander>
+        <text>It appears that this young Chaos mage was under some kind of mind control.</text>
+      </line>
+      <line>
+        <commander>ranger</commander>
+        <text>She seems to have gotten her wits, but the undead are now roaming without purpose and I am wounded. Choose a new hero to help lead your party.</text>
+      </line>
+    </speech_complete>
+  </achievement>
+  <achievement>
+    <id>219</id>
+    <type>2</type>
+    <order>91</order>
+    <name>Heart of the Woods</name>
+    <desc>Complete the 'Wyldwood Depths' campaign.</desc>
+    <achievement_req>201</achievement_req>
+    <req>
+      <campaign>5</campaign>
+    </req>
+    <reward>
+      <gold>50</gold>
+    </reward>
+    <speech_complete>
+      <line>
+        <commander>bountyhunter</commander>
+        <enemy>1</enemy>
+        <text>Thanks for the help! I was on my way to deliver these bounties when I came across those beasts.</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <text>Bounties? What kind of bounties are out here in this frontier wilderness?</text>
+      </line>
+      <line>
+        <commander>bountyhunter</commander>
+        <enemy>1</enemy>
+        <text>There are many who do not follow a noble path, my friend. They raid where others would help.</text>
+      </line>
+      <line>
+        <commander>explorergirl</commander>
+        <text>Is there anything we can do to help? It sounds like this is a serious problem.</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <text>Not to mention lucrative. Just look at those rewards...</text>
+      </line>
+      <line>
+        <commander>bountyhunter</commander>
+        <enemy>1</enemy>
+        <text>Here, if you can handle these I can make sure more follow. Consider it a token of gratitude from a fellow adventurer.</text>
+      </line>
+      <line>
+        <navigate>1</navigate>
+      </line>
+    </speech_complete>
+  </achievement>
+  <achievement>
+    <id>202</id>
+    <type>2</type>
+    <order>91</order>
+    <name>Hero of Elaria</name>
+    <desc>Complete the 'Chaos Contagion' campaign.</desc>
+    <achievement_req>219</achievement_req>
+    <req>
+      <campaign>6</campaign>
+    </req>
+    <reward>
+      <pack>11</pack>
+    </reward>
+    <speech_complete>
+      <line>
+        <commander>explorergirl</commander>
+        <text>Grab the edge of the cache. Here we go. One... Two... LIFT!</text>
+      </line>
+      <line>
+        <commander>lightwisp</commander>
+        <enemy>1</enemy>
+        <text>WHOOOoooooOOOO!!! Who are you? Where am I?!</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <text>That doesn't look like a Heart of Blue Fire.</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <text>It's not, it's just an Aether creature.</text>
+      </line>
+      <line>
+        <commander>explorergirl</commander>
+        <text>C-c-commander Ursurio!? When did you get here?</text>
+      </line>
+    </speech_complete>
+    <!-- <speech_complete>
+			<line>
+				<commander>ranger</commander>
+				<text>These Chaos minions had'a foul taint to 'em. We need to travel to Luminis an' warn the Aether mages of this.</text>
+			</line>
+			<line>
+				<commander>ranger</commander>
+				<text>Elyse, go with our adventurer to Luminis. Oda and Aria, I will need you two to travel even further. I wish I coul-</text>
+			</line>
+			<line>
+				<commander>bearcommander</commander>
+				<text>I will travel to the Aether land with these two.</text>
+			</line>
+			<line>
+				<commander>ranger</commander>
+				<text>C-c-commander Ursurio!? I will make th' preparations right away!</text>
+			</line>
+		</speech_complete>-->
+  </achievement>
+  <achievement>
+    <id>221</id>
+    <type>2</type>
+    <order>91</order>
+    <name>Spirits of Blue Fire</name>
+    <desc>Complete 'The Glowing Grove' campaign.</desc>
+    <achievement_req>202</achievement_req>
+    <req>
+      <campaign>8</campaign>
+      <campaign_map>2</campaign_map>
+    </req>
+    <reward>
+      <sp>20</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>203</id>
+    <type>2</type>
+    <order>91</order>
+    <name>Hero of Ascendancy</name>
+    <desc>Complete 'The City of Luminis' campaign.</desc>
+    <achievement_req>221</achievement_req>
+    <req>
+      <campaign>10</campaign>
+      <campaign_map>2</campaign_map>
+    </req>
+    <reward>
+      <gold>50</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>204</id>
+    <type>2</type>
+    <order>91</order>
+    <name>Hero of Luminis</name>
+    <desc>Complete the 'Castle on the Rocks' campaign.</desc>
+    <achievement_req>203</achievement_req>
+    <req>
+      <campaign>12</campaign>
+      <campaign_map>2</campaign_map>
+    </req>
+    <reward>
+      <pack>11</pack>
+    </reward>
+    <speech_complete>
+      <line>
+        <commander>explorergirl</commander>
+        <text>I am going to travel back to Elaria to report this to the expedition. That general re-appearing has me worried.</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <text>I agree. I will continue to travel with our friend to Karthos, maybe Aria has found more answers.</text>
+      </line>
+    </speech_complete>
+  </achievement>
+  <achievement>
+    <id>205</id>
+    <type>2</type>
+    <order>91</order>
+    <name>Hero of Shadow</name>
+    <desc>Complete the 'Karthos, Lair of Chaos' campaign.</desc>
+    <achievement_req>204</achievement_req>
+    <req>
+      <campaign>15</campaign>
+      <campaign_map>3</campaign_map>
+    </req>
+    <reward>
+      <gold>50</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>206</id>
+    <type>2</type>
+    <order>91</order>
+    <name>Hero of Karthos</name>
+    <desc>Complete the 'Void's Ambush' campaign.</desc>
+    <achievement_req>205</achievement_req>
+    <req>
+      <campaign>18</campaign>
+      <campaign_map>3</campaign_map>
+    </req>
+    <reward>
+      <pack>11</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>207</id>
+    <type>2</type>
+    <order>91</order>
+    <name>Hero of Tremors</name>
+    <desc>Complete the 'Eater of Rock' campaign.</desc>
+    <achievement_req>206</achievement_req>
+    <req>
+      <campaign>21</campaign>
+      <campaign_map>4</campaign_map>
+    </req>
+    <reward>
+      <gold>100</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>208</id>
+    <type>2</type>
+    <name>Hero of The Void</name>
+    <desc>Complete 'The Void Core' campaign.</desc>
+    <order>91</order>
+    <achievement_req>207</achievement_req>
+    <req>
+      <campaign>24</campaign>
+      <campaign_map>4</campaign_map>
+    </req>
+    <reward>
+      <pack>12</pack>
+      <item id="2500" number="1" />
+    </reward>
+    <speech_complete>
+      <line>
+        <commander>void</commander>
+        <enemy>1</enemy>
+        <text>NOOOOOOOOOOOOO!!!</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <text>It exploded! I've never seen anything that terrifying!</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <text>I don't want to see anything that terrifying ever again.</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <text>I have a distinct feeling that this was not the last we've seen of the void. This appeared to be but a mere avatar.</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <text>You're saying we might have to fight them again?</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <text>I am saying that is a very real possibility.</text>
+      </line>
+    </speech_complete>
+  </achievement>
+  <achievement>
+    <id>226</id>
+    <type>2</type>
+    <order>91</order>
+    <name>Welcome to the Swamp</name>
+    <desc>Complete the 'Swamp Lands' campaign.</desc>
+    <achievement_req>208</achievement_req>
+    <req>
+      <campaign>25</campaign>
+      <campaign_map>5</campaign_map>
+    </req>
+    <reward>
+      <gold>200</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>227</id>
+    <type>2</type>
+    <order>91</order>
+    <name>Hero of Dawnglow</name>
+    <desc>Complete the 'Big Mama' campaign.</desc>
+    <achievement_req>226</achievement_req>
+    <req>
+      <campaign>30</campaign>
+      <campaign_map>5</campaign_map>
+    </req>
+    <reward>
+      <pack>12</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>231</id>
+    <type>2</type>
+    <order>91</order>
+    <name>Seastone Explorer</name>
+    <desc>Complete the 'Tales from the Swamp' campaign.</desc>
+    <achievement_req>227</achievement_req>
+    <req>
+      <campaign>31</campaign>
+      <campaign_map>6</campaign_map>
+    </req>
+    <reward>
+      <item id="2515" number="10" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>232</id>
+    <type>2</type>
+    <order>91</order>
+    <name>Hero of Seastone</name>
+    <desc>Complete the 'Trial by Fire' campaign.</desc>
+    <achievement_req>231</achievement_req>
+    <req>
+      <campaign>36</campaign>
+      <campaign_map>6</campaign_map>
+    </req>
+    <reward>
+      <pack>12</pack>
+    </reward>
+  </achievement>
+  <!-- Mastery Quests -->
+  <achievement>
+    <id>209</id>
+    <type>2</type>
+    <name>Conqueror of Elaria</name>
+    <desc>Complete Mastery Level 4 on all Elaria Campaigns.</desc>
+    <order>600</order>
+    <achievement_req>202</achievement_req>
+    <req>
+      <campaign_map>1</campaign_map>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>50</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>210</id>
+    <type>2</type>
+    <name>Vanquisher of Elaria</name>
+    <desc>Complete Mastery Level 7 on all Elaria Campaigns.</desc>
+    <order>601</order>
+    <achievement_req>209</achievement_req>
+    <req>
+      <campaign_map>1</campaign_map>
+      <level>7</level>
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>211</id>
+    <type>2</type>
+    <name>Conqueror of Luminis</name>
+    <desc>Complete Mastery Level 4 on all Luminis Campaigns.</desc>
+    <order>605</order>
+    <achievement_req>204</achievement_req>
+    <req>
+      <campaign_map>2</campaign_map>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>50</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>212</id>
+    <type>2</type>
+    <name>Vanquisher of Luminis</name>
+    <desc>Complete Mastery Level 7 on all Luminis Campaigns.</desc>
+    <order>606</order>
+    <achievement_req>211</achievement_req>
+    <req>
+      <campaign_map>2</campaign_map>
+      <level>7</level>
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>213</id>
+    <type>2</type>
+    <name>Conqueror of Karthos</name>
+    <desc>Complete Mastery Level 4 on all Karthos Campaigns.</desc>
+    <order>610</order>
+    <achievement_req>206</achievement_req>
+    <req>
+      <campaign_map>3</campaign_map>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>50</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>214</id>
+    <type>2</type>
+    <name>Vanquisher of Karthos</name>
+    <desc>Complete Mastery Level 7 on all Karthos Campaigns.</desc>
+    <order>611</order>
+    <achievement_req>213</achievement_req>
+    <req>
+      <campaign_map>3</campaign_map>
+      <level>7</level>
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>222</id>
+    <type>2</type>
+    <name>Runecraft Lockbox</name>
+    <desc>Complete Mastery Level 2 on all The Void Campaigns.</desc>
+    <order>615</order>
+    <achievement_req>208</achievement_req>
+    <req>
+      <campaign_map>4</campaign_map>
+      <level>2</level>
+    </req>
+    <reward>
+      <item id="511" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>215</id>
+    <type>2</type>
+    <name>Conqueror of The Void</name>
+    <desc>Complete Mastery Level 4 on all The Void Campaigns.</desc>
+    <order>616</order>
+    <achievement_req>222</achievement_req>
+    <req>
+      <campaign_map>4</campaign_map>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>50</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>216</id>
+    <type>2</type>
+    <name>Vanquisher of The Void</name>
+    <desc>Complete Mastery Level 7 on all The Void Campaigns.</desc>
+    <order>617</order>
+    <achievement_req>215</achievement_req>
+    <req>
+      <campaign_map>4</campaign_map>
+      <level>7</level>
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>230</id>
+    <type>2</type>
+    <order>92</order>
+    <icon>book_home</icon>
+    <name>Dawnglow Companions</name>
+    <desc>Complete Mastery Level 2 on all Dawnglow Campaigns. Unlocks three new Legendary Heroes!</desc>
+    <achievement_req>208</achievement_req>
+    <req>
+      <campaign_map>5</campaign_map>
+      <level>2</level>
+    </req>
+    <reward>
+      <sp>30</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>228</id>
+    <type>2</type>
+    <name>Conqueror of Dawnglow</name>
+    <desc>Complete Mastery Level 4 on all Dawnglow Campaigns.</desc>
+    <order>621</order>
+    <achievement_req>230</achievement_req>
+    <req>
+      <campaign_map>5</campaign_map>
+      <level>4</level>
+    </req>
+    <reward>
+      <sp>50</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>229</id>
+    <type>2</type>
+    <name>Vanquisher of Dawnglow</name>
+    <desc>Complete Mastery Level 7 on all Dawnglow Campaigns.</desc>
+    <order>622</order>
+    <achievement_req>228</achievement_req>
+    <req>
+      <campaign_map>5</campaign_map>
+      <level>7</level>
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>233</id>
+    <type>2</type>
+    <name>Conqueror of Seastone</name>
+    <desc>Complete Mastery Level 4 on all Seastone Campaigns.</desc>
+    <order>621</order>
+    <achievement_req>232</achievement_req>
+    <req>
+      <campaign_map>6</campaign_map>
+      <level>4</level>
+    </req>
+    <reward>
+      <item id="2515" number="20" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>234</id>
+    <type>2</type>
+    <name>Vanquisher of Seastone</name>
+    <desc>Complete Mastery Level 7 on all Seastone Campaigns.</desc>
+    <order>622</order>
+    <achievement_req>233</achievement_req>
+    <req>
+      <campaign_map>6</campaign_map>
+      <level>7</level>
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <!-- Mythic Campaigns Unlocks -->
+  <achievement>
+    <id>223</id>
+    <type>2</type>
+    <icon>green_boss_gem</icon>
+    <icon_bundle>15</icon_bundle>
+    <name>The Ground Quakes...</name>
+    <desc>Complete the 'The Ground Quakes...' Campaign.</desc>
+    <order>623</order>
+    <achievement_req>208</achievement_req>
+    <req>
+      <campaign>3000</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="2503" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>224</id>
+    <type>2</type>
+    <icon>blue_boss_gem</icon>
+    <icon_bundle>15</icon_bundle>
+    <name>The Wind Stirs...</name>
+    <desc>Complete the 'The Wind Stirs...' Campaign.</desc>
+    <order>624</order>
+    <achievement_req>208</achievement_req>
+    <req>
+      <campaign>3001</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="2504" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>225</id>
+    <type>2</type>
+    <icon>red_boss_gem</icon>
+    <icon_bundle>15</icon_bundle>
+    <name>The Heat Rises...</name>
+    <desc>Complete the 'The Heat Rises...' Campaign.</desc>
+    <order>625</order>
+    <achievement_req>208</achievement_req>
+    <req>
+      <campaign>3002</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="2505" number="1" />
+    </reward>
+  </achievement>
+  <!-- Mastery Star Quests: 251-270 -->
+  <achievement>
+    <id>251</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector</name>
+    <desc>Collect a total of 50 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>206</achievement_req>
+    <req>
+      <mastery_stars>50</mastery_stars>
+    </req>
+    <reward>
+      <pack>11</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>252</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector II</name>
+    <desc>Collect a total of 100 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>251</achievement_req>
+    <req>
+      <mastery_stars>100</mastery_stars>
+    </req>
+    <reward>
+      <sp>100</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>253</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector III</name>
+    <desc>Collect a total of 150 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>252</achievement_req>
+    <req>
+      <mastery_stars>150</mastery_stars>
+    </req>
+    <reward>
+      <item id="2508" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>254</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector IV</name>
+    <desc>Collect a total of 200 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>253</achievement_req>
+    <req>
+      <mastery_stars>200</mastery_stars>
+    </req>
+    <reward>
+      <pack>12</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>255</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector V</name>
+    <desc>Collect a total of 250 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>254</achievement_req>
+    <req>
+      <mastery_stars>250</mastery_stars>
+    </req>
+    <reward>
+      <gold>5000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>256</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector VI</name>
+    <desc>Collect a total of 300 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>255</achievement_req>
+    <req>
+      <mastery_stars>300</mastery_stars>
+    </req>
+    <reward>
+      <pack>12</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>257</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector VII</name>
+    <desc>Collect a total of 350 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>256</achievement_req>
+    <req>
+      <mastery_stars>350</mastery_stars>
+    </req>
+    <reward>
+      <item id="4011" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>258</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector VIII</name>
+    <desc>Collect a total of 400 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>257</achievement_req>
+    <req>
+      <mastery_stars>400</mastery_stars>
+    </req>
+    <reward>
+      <pack>12</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>259</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector IX</name>
+    <desc>Collect a total of 500 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>258</achievement_req>
+    <req>
+      <mastery_stars>500</mastery_stars>
+    </req>
+    <reward>
+      <sp>500</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>260</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector X</name>
+    <desc>Collect a total of 600 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>259</achievement_req>
+    <req>
+      <mastery_stars>600</mastery_stars>
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>261</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector XI</name>
+    <desc>Collect a total of 700 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>260</achievement_req>
+    <req>
+      <mastery_stars>700</mastery_stars>
+    </req>
+    <reward>
+      <item id="4012" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>262</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector XII</name>
+    <desc>Collect a total of 800 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>261</achievement_req>
+    <req>
+      <mastery_stars>800</mastery_stars>
+    </req>
+    <reward>
+      <pack>12</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>263</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector XIII</name>
+    <desc>Collect a total of 900 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>262</achievement_req>
+    <req>
+      <mastery_stars>900</mastery_stars>
+    </req>
+    <reward>
+      <item id="4012" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>264</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector XIV</name>
+    <desc>Collect a total of 1000 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>263</achievement_req>
+    <req>
+      <mastery_stars>1000</mastery_stars>
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <!-- Daily Quests -->
+  <!-- 
+	<achievement> 
+		<id>xxx</id>
+		<type>2</type>
+		<name>Guardian of Elaria</name>
+		<desc>Complete 10 Missions in Elaria.</desc>
+		<order>600</order>
+		<duration>86400</duration>
+		<req>
+			<campaign_map>1</campaign_map>
+		</req>
+		<reward>
+			<gold>50</gold>
+		</reward>
+	</achievement>
+	
+	<achievement>
+		<id>xxx</id>
+		<type>2</type>
+		<name>Guardian of Luminis</name>
+		<desc>Complete 10 Missions in Luminis.</desc>
+		<order>600</order>
+		<achievement_req>202</achievement_req>
+		<duration>86400</duration>
+		<req>
+			<campaign_map>2</campaign_map>
+		</req>
+		<reward>
+			<gold>50</gold>
+		</reward>
+	</achievement>
+	
+	<achievement>
+		<id>xxx</id>
+		<type>2</type>
+		<name>Guardian of Karthos</name>
+		<desc>Complete 10 Missions in Karthos.</desc>
+		<order>600</order>
+		<achievement_req>204</achievement_req>
+		<duration>86400</duration>
+		<req>
+			<campaign_map>3</campaign_map>
+		</req>
+		<reward>
+			<gold>50</gold>
+		</reward>
+	</achievement>
+	
+	<achievement>
+		<id>xxx</id>
+		<type>2</type>
+		<name>Guardian of The Void</name>
+		<desc>Complete 10 Missions in The Void.</desc>
+		<order>600</order>
+		<achievement_req>206</achievement_req>
+		<duration>86400</duration>
+		<req>
+			<campaign_map>4</campaign_map>
+		</req>
+		<reward>
+			<gold>50</gold>
+		</reward>
+	</achievement> -->
+  <!-- END Campaign Quests -->
+  <!-- 300: Upgrade Quests START -->
+  <achievement>
+    <id>301</id>
+    <type>3</type>
+    <order>15</order>
+    <name>Rise to Power</name>
+    <desc>Upgrade a card.</desc>
+    <achievement_req>217</achievement_req>
+    <mission_req>24</mission_req>
+    <req>
+      <upgrade_num>1</upgrade_num>
+    </req>
+    <reward>
+      <sp>15</sp>
+    </reward>
+    <speech>
+      <line>
+        <commander>raven</commander>
+        <text>SQUAK! Come back to the Airship soon and check out this new Arcane Dust!</text>
+        <icon>upgrade_home</icon>
+      </line>
+      <line>
+        <commander>raven</commander>
+        <text>You can use it to upgrade your cards and make them even stronger!</text>
+        <icon>upgrade_home</icon>
+      </line>
+    </speech>
+  </achievement>
+  <achievement>
+    <id>302</id>
+    <type>3</type>
+    <order>16</order>
+    <name>Reinforcements</name>
+    <desc>Upgrade cards 5 times.</desc>
+    <achievement_req>301</achievement_req>
+    <req>
+      <upgrade_num>5</upgrade_num>
+    </req>
+    <reward>
+      <sp>30</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>303</id>
+    <type>3</type>
+    <order>210</order>
+    <name>Mass Reinforcements</name>
+    <desc>Upgrade cards 10 times.</desc>
+    <achievement_req>302</achievement_req>
+    <req>
+      <upgrade_num>10</upgrade_num>
+    </req>
+    <reward>
+      <sp>20</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>304</id>
+    <type>3</type>
+    <order>210</order>
+    <name>Grand Reinforcements</name>
+    <desc>Upgrade cards 20 times.</desc>
+    <achievement_req>303</achievement_req>
+    <req>
+      <upgrade_num>20</upgrade_num>
+    </req>
+    <reward>
+      <sp>20</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>305</id>
+    <type>3</type>
+    <order>210</order>
+    <name>Overwhelming Reinforcements</name>
+    <desc>Upgrade cards 30 times.</desc>
+    <achievement_req>304</achievement_req>
+    <req>
+      <upgrade_num>30</upgrade_num>
+    </req>
+    <reward>
+      <sp>20</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>306</id>
+    <type>3</type>
+    <order>210</order>
+    <name>Dominant Forces</name>
+    <desc>Upgrade cards 100 times.</desc>
+    <achievement_req>305</achievement_req>
+    <req>
+      <upgrade_num>100</upgrade_num>
+    </req>
+    <reward>
+      <wb>60</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>307</id>
+    <type>3</type>
+    <order>210</order>
+    <name>Heroic Forces</name>
+    <desc>Upgrade cards 200 times.</desc>
+    <achievement_req>306</achievement_req>
+    <req>
+      <upgrade_num>200</upgrade_num>
+    </req>
+    <reward>
+      <sp>75</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>308</id>
+    <type>3</type>
+    <order>210</order>
+    <name>Mythical Forces</name>
+    <desc>Upgrade cards 500 times.</desc>
+    <achievement_req>307</achievement_req>
+    <req>
+      <upgrade_num>500</upgrade_num>
+    </req>
+    <reward>
+      <pack>12</pack>
+    </reward>
+  </achievement>
+  <!-- END Upgrade Quests -->
+  <!-- 400: PvP Quests START -->
+  <achievement>
+    <id>401</id>
+    <type>4</type>
+    <order>45</order>
+    <name>Bounty Hunter</name>
+    <desc>Collect 3 Bounties.</desc>
+    <mission_req>54</mission_req>
+    <req>
+      <pvp_wins>3</pvp_wins>
+    </req>
+    <reward>
+      <gold>50</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>402</id>
+    <type>4</type>
+    <order>500</order>
+    <name>Bounty Hunter II</name>
+    <desc>Collect 10 Bounties.</desc>
+    <achievement_req>401</achievement_req>
+    <req>
+      <pvp_wins>10</pvp_wins>
+    </req>
+    <reward>
+      <sp>30</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>403</id>
+    <type>4</type>
+    <order>501</order>
+    <name>Bounty Hunter III</name>
+    <desc>Collect 25 Bounties.</desc>
+    <achievement_req>402</achievement_req>
+    <req>
+      <pvp_wins>25</pvp_wins>
+    </req>
+    <reward>
+      <gold>100</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>404</id>
+    <type>4</type>
+    <order>502</order>
+    <name>Bounty Hunter IV</name>
+    <desc>Collect 50 Bounties.</desc>
+    <achievement_req>403</achievement_req>
+    <req>
+      <pvp_wins>50</pvp_wins>
+    </req>
+    <reward>
+      <sp>30</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>405</id>
+    <type>4</type>
+    <order>503</order>
+    <name>Bounty Hunter V</name>
+    <desc>Collect 100 Bounties.</desc>
+    <achievement_req>404</achievement_req>
+    <req>
+      <pvp_wins>100</pvp_wins>
+    </req>
+    <reward>
+      <gold>250</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>406</id>
+    <type>4</type>
+    <order>504</order>
+    <name>Bounty Hunter VI</name>
+    <desc>Collect 200 Bounties.</desc>
+    <achievement_req>405</achievement_req>
+    <req>
+      <pvp_wins>200</pvp_wins>
+    </req>
+    <reward>
+      <sp>40</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>407</id>
+    <type>4</type>
+    <order>505</order>
+    <name>Bounty Hunter VII</name>
+    <desc>Collect 500 Bounties.</desc>
+    <achievement_req>406</achievement_req>
+    <req>
+      <pvp_wins>500</pvp_wins>
+    </req>
+    <reward>
+      <gold>500</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>408</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter VIII</name>
+    <desc>Collect 1,000 Bounties.</desc>
+    <achievement_req>407</achievement_req>
+    <req>
+      <pvp_wins>1000</pvp_wins>
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>409</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter IX</name>
+    <desc>Collect 1,500 Bounties.</desc>
+    <achievement_req>408</achievement_req>
+    <req>
+      <pvp_wins>1500</pvp_wins>
+    </req>
+    <reward>
+      <gold>4000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>410</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter X</name>
+    <desc>Collect 2,000 Bounties.</desc>
+    <achievement_req>409</achievement_req>
+    <req>
+      <pvp_wins>2000</pvp_wins>
+    </req>
+    <reward>
+      <sp>100</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>411</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XI</name>
+    <desc>Collect 2,500 Bounties.</desc>
+    <achievement_req>410</achievement_req>
+    <req>
+      <pvp_wins>2500</pvp_wins>
+    </req>
+    <reward>
+      <wb>60</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>412</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XII</name>
+    <desc>Collect 3,000 Bounties.</desc>
+    <achievement_req>411</achievement_req>
+    <req>
+      <pvp_wins>3000</pvp_wins>
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>413</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XIII</name>
+    <desc>Collect 3,500 Bounties.</desc>
+    <achievement_req>412</achievement_req>
+    <req>
+      <pvp_wins>3500</pvp_wins>
+    </req>
+    <reward>
+      <pack>12</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>414</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XIV</name>
+    <desc>Collect 4,000 Bounties.</desc>
+    <achievement_req>413</achievement_req>
+    <req>
+      <pvp_wins>4000</pvp_wins>
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>415</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XV</name>
+    <desc>Collect 4,500 Bounties.</desc>
+    <achievement_req>414</achievement_req>
+    <req>
+      <pvp_wins>4500</pvp_wins>
+    </req>
+    <reward>
+      <sp>500</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>416</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XVI</name>
+    <desc>Collect 5,000 Bounties.</desc>
+    <achievement_req>415</achievement_req>
+    <req>
+      <pvp_wins>5000</pvp_wins>
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <!-- Daily Quests -->
+  <!-- <achievement>
+		<id>409</id>
+		<type>4</type>
+		<order>500</order>
+		<name>Daily Hunter</name>
+		<desc>Collect 5 Bounties.</desc>
+		<duration>86400</duration>
+		<req>
+			<pvp_wins>5</pvp_wins>
+		</req>
+		<reward>
+			<gold>50</gold>
+		</reward>
+	</achievement>
+	
+	<achievement>
+		<id>410</id>
+		<type>4</type>
+		<order>500</order>
+		<name>Daily Roundup</name>
+		<desc>Collect 10 Bounties.</desc>
+		<duration>86400</duration>
+		<req>
+			<pvp_wins>10</pvp_wins>
+		</req>
+		<reward>
+			<gold>50</gold>
+		</reward>
+	</achievement> -->
+  <!-- END PvP Quests -->
+  <!-- 500: Guild Quests START -->
+  <achievement>
+    <id>501</id>
+    <type>5</type>
+    <order>50</order>
+    <name>Finding a Team</name>
+    <desc>Join a guild.</desc>
+    <level_req>3</level_req>
+    <icon>book_home</icon>
+    <req>
+      <join_guild>1</join_guild>
+    </req>
+    <reward>
+      <wb>40</wb>
+    </reward>
+  </achievement>
+  <!-- END Guild Quests -->
+  <!-- 600: Hero Quests START -->
+  <achievement>
+    <id>602</id>
+    <type>6</type>
+    <order>300</order>
+    <name>Epic Hero</name>
+    <desc>Unlock an Epic Hero from the Hall of Heroes.</desc>
+    <achievement_req>219</achievement_req>
+    <req>
+      <hero_rarity>3</hero_rarity>
+    </req>
+    <reward>
+      <gold>100</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>603</id>
+    <type>6</type>
+    <order>301</order>
+    <name>Legendary Hero</name>
+    <desc>Unlock a Legendary Hero from the Hall of Heroes.</desc>
+    <achievement_req>602</achievement_req>
+    <req>
+      <hero_rarity>4</hero_rarity>
+    </req>
+    <reward>
+      <gold>100</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>611</id>
+    <type>6</type>
+    <order>302</order>
+    <name>Ascended Heroes!</name>
+    <desc>Upgrade a Rare or Epic Hero from the Hall of Heroes to a Legendary Hero.</desc>
+    <achievement_req>602</achievement_req>
+    <pvp_rank_req>10</pvp_rank_req>
+    <req>
+      <upgrade_hero>1</upgrade_hero>
+    </req>
+    <reward>
+      <pack>12</pack>
+    </reward>
+  </achievement>
+  <!-- END Hero Quests -->
+  <!-- 700: Fusion Quests START -->
+  <achievement>
+    <id>701</id>
+    <type>7</type>
+    <order>55</order>
+    <name>Fusion Adept</name>
+    <desc>Create a Duo Fusion.</desc>
+    <achievement_req>302</achievement_req>
+    <level_req>5</level_req>
+    <req>
+      <fuse_level>1</fuse_level>
+    </req>
+    <reward>
+      <gold>30</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>702</id>
+    <type>7</type>
+    <order>350</order>
+    <name>Fusion Master</name>
+    <desc>Create a Quad Fusion.</desc>
+    <achievement_req>701</achievement_req>
+    <req>
+      <fuse_level>2</fuse_level>
+    </req>
+    <reward>
+      <gold>80</gold>
+    </reward>
+  </achievement>
+  <!-- END Fusion Quests -->
+  <!-- 800: Salvage Quests START -->
+  <achievement>
+    <id>801</id>
+    <type>8</type>
+    <name>Vaporizer</name>
+    <order>40</order>
+    <desc>Vaporize a card.</desc>
+    <achievement_collected_req>1101</achievement_collected_req>
+    <req>
+      <total_sp>1</total_sp>
+    </req>
+    <reward>
+      <sp>15</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>802</id>
+    <type>8</type>
+    <order>700</order>
+    <name>Vaporizer II</name>
+    <desc>Collect a total of 50 Arcane Dust from Vaporized cards.</desc>
+    <achievement_req>801</achievement_req>
+    <req>
+      <total_sp>50</total_sp>
+    </req>
+    <reward>
+      <gold>50</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>803</id>
+    <type>8</type>
+    <order>701</order>
+    <name>Vaporizer III</name>
+    <desc>Collect a total of 100 Arcane Dust from Vaporized cards.</desc>
+    <achievement_req>802</achievement_req>
+    <req>
+      <total_sp>100</total_sp>
+    </req>
+    <reward>
+      <gold>100</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>804</id>
+    <type>8</type>
+    <order>702</order>
+    <name>Vaporizer IV</name>
+    <desc>Collect a total of 500 Arcane Dust from Vaporized cards.</desc>
+    <achievement_req>803</achievement_req>
+    <req>
+      <total_sp>500</total_sp>
+    </req>
+    <reward>
+      <gold>200</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>805</id>
+    <type>8</type>
+    <order>703</order>
+    <name>Vaporizer V</name>
+    <desc>Collect a total of 2000 Arcane Dust from Vaporized cards.</desc>
+    <achievement_req>804</achievement_req>
+    <req>
+      <total_sp>2000</total_sp>
+    </req>
+    <reward>
+      <gold>500</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>806</id>
+    <type>8</type>
+    <order>703</order>
+    <name>Vaporizer VI</name>
+    <desc>Collect a total of 10,000 Arcane Dust from Vaporized cards.</desc>
+    <achievement_req>805</achievement_req>
+    <req>
+      <total_sp>10000</total_sp>
+    </req>
+    <reward>
+      <wb>60</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>807</id>
+    <type>8</type>
+    <order>703</order>
+    <name>Vaporizer VII</name>
+    <desc>Collect a total of 15,000 Arcane Dust from Vaporized cards.</desc>
+    <achievement_req>806</achievement_req>
+    <req>
+      <total_sp>15000</total_sp>
+    </req>
+    <reward>
+      <pack>12</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>808</id>
+    <type>8</type>
+    <order>703</order>
+    <name>Vaporizer VIII</name>
+    <desc>Collect a total of 20,000 Arcane Dust from Vaporized cards.</desc>
+    <achievement_req>807</achievement_req>
+    <req>
+      <total_sp>20000</total_sp>
+    </req>
+    <reward>
+      <pack>12</pack>
+    </reward>
+  </achievement>
+  <!-- END Salvage Quests -->
+  <!-- 900: Currency Quests START -->
+  <!--<achievement>
+		<id>901</id>
+		<type>9</type>
+		<order>720</order>
+		<name>Treasury</name>
+		<desc>Collect 10,000 Lifetime Gold.</desc>
+		<level_req>8</level_req>
+		<req>
+			<total_currency>10000</total_currency>
+		</req>
+		<reward>
+			<sp>20</sp>
+		</reward>
+	</achievement>
+	
+	<achievement>
+		<id>902</id>
+		<type>9</type>
+		<order>721</order>
+		<name>Treasury II</name>
+		<desc>Collect 25,000 Lifetime Gold.</desc>
+		<achievement_req>901</achievement_req>
+		<req>
+			<total_currency>25000</total_currency>
+		</req>
+		<reward>
+			<sp>40</sp>
+		</reward>
+	</achievement>
+	
+	<achievement>
+		<id>903</id>
+		<type>9</type>
+		<order>722</order>
+		<name>Treasury III</name>
+		<desc>Collect 50,000 Lifetime Gold.</desc>
+		<achievement_req>902</achievement_req>
+		<req>
+			<total_currency>50000</total_currency>
+		</req>
+		<reward>
+			<sp>60</sp>
+		</reward>
+	</achievement>
+	
+	<achievement>
+		<id>904</id>
+		<type>9</type>
+		<order>723</order>
+		<name>Treasury IV</name>
+		<desc>Collect 100,000 Lifetime Gold.</desc>
+		<achievement_req>903</achievement_req>
+		<req>
+			<total_currency>100000</total_currency>
+		</req>
+		<reward>
+			<pack>1000</pack>
+		</reward>
+	</achievement>-->
+  <!-- END Currency Quests  -->
+  <!-- 1000: Kongregate Quests START -->
+  <achievement>
+    <id>1001</id>
+    <type>10</type>
+    <order>25</order>
+    <name>Kongregate for Victory!</name>
+    <desc>Log into Kongregate.</desc>
+    <achievement_req>801</achievement_req>
+    <req>
+      <kong_login>1</kong_login>
+    </req>
+    <reward>
+      <wb>25</wb>
+    </reward>
+  </achievement>
+  <!-- END Kongregate Quests  -->
+  <!-- 1100: Deck Quests START -->
+  <achievement>
+    <id>1101</id>
+    <type>11</type>
+    <order>35</order>
+    <name>Deck Forging</name>
+    <desc>Edit your deck by swapping in a new card!</desc>
+    <cards_req>16</cards_req>
+    <req>
+      <edit_deck>1</edit_deck>
+    </req>
+    <reward>
+      <gold>30</gold>
+    </reward>
+  </achievement>
+  <!-- END Deck Quests  -->
+  <!-- 1300: Runes Quests START -->
+  <achievement>
+    <id>1301</id>
+    <type>13</type>
+    <order>60</order>
+    <name>Rare Rune Crafting</name>
+    <!-- <icon>rune_empty_rare</icon>
+		<icon_bundle>34</icon_bundle> -->
+    <desc>Successfully craft a Rare Rune.</desc>
+    <achievement_req>208</achievement_req>
+    <req>
+      <craft_rune rarity="2" num="1" />
+    </req>
+    <reward>
+      <sp>30</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1302</id>
+    <type>13</type>
+    <order>801</order>
+    <name>Rare Runes II</name>
+    <icon>rune_empty_rare</icon>
+    <icon_bundle>34</icon_bundle>
+    <desc>Successfully craft 5 Rare Runes.</desc>
+    <achievement_req>1301</achievement_req>
+    <req>
+      <craft_rune rarity="2" num="5" />
+    </req>
+    <reward>
+      <gold>500</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1303</id>
+    <type>13</type>
+    <order>801</order>
+    <name>Rare Runes III</name>
+    <desc>Successfully craft 10 Rare Runes.</desc>
+    <achievement_req>1302</achievement_req>
+    <req>
+      <craft_rune rarity="2" num="10" />
+    </req>
+    <reward>
+      <item id="4011" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1304</id>
+    <type>13</type>
+    <order>801</order>
+    <name>Rare Runes IV</name>
+    <desc>Successfully craft 20 Rare Runes.</desc>
+    <achievement_req>1303</achievement_req>
+    <req>
+      <craft_rune rarity="2" num="20" />
+    </req>
+    <reward>
+      <sp>45</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1305</id>
+    <type>13</type>
+    <order>801</order>
+    <name>Rare Runes V</name>
+    <desc>Successfully craft 40 Rare Runes.</desc>
+    <achievement_req>1304</achievement_req>
+    <req>
+      <craft_rune rarity="2" num="40" />
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1306</id>
+    <type>13</type>
+    <order>801</order>
+    <name>Rare Runes VI</name>
+    <desc>Successfully craft 60 Rare Runes.</desc>
+    <achievement_req>1305</achievement_req>
+    <req>
+      <craft_rune rarity="2" num="60" />
+    </req>
+    <reward>
+      <pack>12</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1307</id>
+    <type>13</type>
+    <order>801</order>
+    <name>Rare Runes VII</name>
+    <desc>Successfully craft 80 Rare Runes.</desc>
+    <achievement_req>1306</achievement_req>
+    <req>
+      <craft_rune rarity="2" num="80" />
+    </req>
+    <reward>
+      <sp>60</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1308</id>
+    <type>13</type>
+    <order>801</order>
+    <name>Rare Runes VIII</name>
+    <desc>Successfully craft 100 Rare Runes.</desc>
+    <achievement_req>1307</achievement_req>
+    <req>
+      <craft_rune rarity="2" num="100" />
+    </req>
+    <reward>
+      <pack>12</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1321</id>
+    <type>13</type>
+    <order>60</order>
+    <icon>rune_empty_epic</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Epic Rune Crafting</name>
+    <desc>Successfully craft an Epic Rune.</desc>
+    <achievement_req>1301</achievement_req>
+    <req>
+      <craft_rune rarity="3" num="1" />
+    </req>
+    <reward>
+      <gold>1000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1322</id>
+    <type>13</type>
+    <order>802</order>
+    <icon>rune_empty_epic</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Epic Runes II</name>
+    <desc>Successfully craft 5 Epic Runes.</desc>
+    <achievement_req>1321</achievement_req>
+    <req>
+      <craft_rune rarity="3" num="5" />
+    </req>
+    <reward>
+      <sp>45</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1323</id>
+    <type>13</type>
+    <order>802</order>
+    <icon>rune_empty_epic</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Epic Runes III</name>
+    <desc>Successfully craft 10 Epic Runes.</desc>
+    <achievement_req>1322</achievement_req>
+    <req>
+      <craft_rune rarity="3" num="10" />
+    </req>
+    <reward>
+      <item id="4012" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1324</id>
+    <type>13</type>
+    <order>802</order>
+    <icon>rune_empty_epic</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Epic Runes IV</name>
+    <desc>Successfully craft 20 Epic Runes.</desc>
+    <achievement_req>1323</achievement_req>
+    <req>
+      <craft_rune rarity="3" num="20" />
+    </req>
+    <reward>
+      <sp>100</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1325</id>
+    <type>13</type>
+    <order>802</order>
+    <icon>rune_empty_epic</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Epic Runes V</name>
+    <desc>Successfully craft 40 Epic Runes.</desc>
+    <achievement_req>1324</achievement_req>
+    <req>
+      <craft_rune rarity="3" num="40" />
+    </req>
+    <reward>
+      <gold>5000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1326</id>
+    <type>13</type>
+    <order>802</order>
+    <icon>rune_empty_epic</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Epic Runes VI</name>
+    <desc>Successfully craft 60 Epic Runes.</desc>
+    <achievement_req>1325</achievement_req>
+    <req>
+      <craft_rune rarity="3" num="60" />
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1327</id>
+    <type>13</type>
+    <order>802</order>
+    <icon>rune_empty_epic</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Epic Runes VII</name>
+    <desc>Successfully craft 80 Epic Runes.</desc>
+    <achievement_req>1326</achievement_req>
+    <req>
+      <craft_rune rarity="3" num="80" />
+    </req>
+    <reward>
+      <sp>200</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1328</id>
+    <type>13</type>
+    <order>802</order>
+    <icon>rune_empty_epic</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Epic Runes VIII</name>
+    <desc>Successfully craft 100 Epic Runes.</desc>
+    <achievement_req>1327</achievement_req>
+    <req>
+      <craft_rune rarity="3" num="100" />
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <!-- END Runes Quests  -->
+  <!-- 3001+: Event Quests START -->
+  <!-- Event 2 Dragons -->
+  <achievement>
+    <id>3001</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Dragon Tamer's Plea</name>
+    <desc>Complete 'Tarragon Quakes' campaign.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1003</campaign>
+    </req>
+    <reward>
+      <item id="3005" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3002</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Dragon Tamer's Trust</name>
+    <desc>Complete 'Tarragon Quakes' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3001</achievement_req>
+    <req>
+      <campaign>1003</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <item id="3005" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3003</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Ice Dragon's Realm</name>
+    <desc>Complete the 'Ice Dragon's Realm' campaign.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1007</campaign>
+    </req>
+    <reward>
+      <item id="3001" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3004</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Ice Dragon's Mastery</name>
+    <desc>Complete the 'Ice Dragon's Realm' campaign on Mastery Level 5.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3003</achievement_req>
+    <req>
+      <campaign>1007</campaign>
+      <level>5</level>
+    </req>
+    <reward>
+      <item id="3001" number="1" />
+    </reward>
+  </achievement>
+  <!-- Event 3 Elementals -->
+  <achievement>
+    <id>3005</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Vault Ancient</name>
+    <desc>Complete 'The Strong Stone' campaign.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1008</campaign>
+    </req>
+    <reward>
+      <sp>15</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3006</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Celestial Depths</name>
+    <desc>Complete the 'Celestial Depths' campaign.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1011</campaign>
+    </req>
+    <reward>
+      <item id="3007" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3007</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Celestial Depths Mastery</name>
+    <desc>Complete the 'Celestial Depths' campaign on Mastery Level 5.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3006</achievement_req>
+    <req>
+      <campaign>1011</campaign>
+      <level>5</level>
+    </req>
+    <reward>
+      <item id="3007" number="1" />
+    </reward>
+  </achievement>
+  <!-- Frog Event -->
+  <achievement>
+    <id>3008</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Frog Empire</name>
+    <desc>Complete the 'Into the Marshes' campaign.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1013</campaign>
+    </req>
+    <reward>
+      <item id="1003" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3009</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Frog Empire</name>
+    <desc>Complete the 'Into the Marshes' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3008</achievement_req>
+    <req>
+      <campaign>1013</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <pack>12</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3010</id>
+    <type>2</type>
+    <order>101</order>
+    <name>High Grace</name>
+    <desc>Complete the 'High Grace' campaign.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3008</achievement_req>
+    <req>
+      <campaign>1014</campaign>
+    </req>
+    <reward>
+      <pack>17</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3011</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Collecting the Lost</name>
+    <desc>Complete the 'Tadpole Collection' campaign.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3010</achievement_req>
+    <req>
+      <campaign>1015</campaign>
+    </req>
+    <reward>
+      <pack>17</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3012</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Frog Emperor's Trust</name>
+    <desc>Complete the 'Search and Rescue' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3011</achievement_req>
+    <req>
+      <campaign>1016</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <item id="3010" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3013</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Frog Emperor's Favor</name>
+    <desc>Complete the 'Search and Rescue' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3012</achievement_req>
+    <req>
+      <campaign>1016</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="3010" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3014</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Emperor's Decision</name>
+    <desc>Complete the 'To The Throne' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3010</achievement_req>
+    <req>
+      <campaign>1017</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <item id="3011" number="40" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3015</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Destroying the Stone</name>
+    <desc>Complete the 'To The Throne' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3014</achievement_req>
+    <req>
+      <campaign>1017</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="3011" number="80" />
+    </reward>
+  </achievement>
+  <!-- Event 2 Dragons -->
+  <achievement>
+    <id>3016</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Dragon Tamer's Plea</name>
+    <desc>Complete the 'Tarragon Quakes' campaign.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1018</campaign>
+    </req>
+    <reward>
+      <item id="3005" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3017</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Dragon Tamer's Trust</name>
+    <desc>Complete the 'Tarragon Quakes' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3016</achievement_req>
+    <req>
+      <campaign>1018</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <item id="3013" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3018</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Decim's Deceit</name>
+    <desc>Complete the 'Decim's Deceit' campaign.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1019</campaign>
+    </req>
+    <reward>
+      <gold>500</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3019</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Ice Dragon's Realm</name>
+    <desc>Complete the 'Ice Dragon's Realm' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1022</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <item id="3001" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3020</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Ice Dragon's Mastery</name>
+    <desc>Complete the 'Ice Dragon's Realm' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3019</achievement_req>
+    <req>
+      <campaign>1022</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <item id="3014" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3021</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Scorched Lands</name>
+    <desc>Complete the 'Scorched Lands' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1020</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3022</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Scorched Lands Mastery</name>
+    <desc>Complete the 'Scorched Lands' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3021</achievement_req>
+    <req>
+      <campaign>1020</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3023</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Dragon's Aerie</name>
+    <desc>Complete the 'Dragon's Aerie' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1021</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3024</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Dragon's Aerie Mastery</name>
+    <desc>Complete the 'Dragon's Aerie' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3023</achievement_req>
+    <req>
+      <campaign>1021</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3025</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Molten Eruption</name>
+    <desc>Complete the 'Molten Eruption' campaign.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1023</campaign>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <!-- Event 6 Winter -->
+  <achievement>
+    <id>3026</id>
+    <type>2</type>
+    <order>101</order>
+    <name>To Frigore</name>
+    <desc>Complete the 'To Frigore!' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1024</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3027</id>
+    <type>2</type>
+    <order>101</order>
+    <name>To Frigore Mastery</name>
+    <desc>Complete the 'To Frigore!' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3026</achievement_req>
+    <req>
+      <campaign>1024</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3028</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Vapor Collection</name>
+    <desc>Complete the 'Vapor Collection' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1025</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3029</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Vapor Collection Mastery</name>
+    <desc>Complete the 'Vapor Collection' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3028</achievement_req>
+    <req>
+      <campaign>1025</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3030</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Vapor Hunters</name>
+    <desc>Complete the 'Vapor Hunters' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1026</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3031</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Vapor Hunters Mastery</name>
+    <desc>Complete the 'Vapor Hunters' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3030</achievement_req>
+    <req>
+      <campaign>1026</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3032</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Descent into Madness</name>
+    <desc>Complete the 'Descent into Madness' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1027</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3033</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Descent into Madness Mastery</name>
+    <desc>Complete the 'Descent into Madness' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3032</achievement_req>
+    <req>
+      <campaign>1027</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3034</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Flashing Lights</name>
+    <desc>Complete the 'Flashing Lights' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1028</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3035</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Flashing Lights Mastery</name>
+    <desc>Complete the 'Flashing Lights' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3034</achievement_req>
+    <req>
+      <campaign>1028</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3036</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Playing With Vapor</name>
+    <desc>Complete the 'Playing With Vapor' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1029</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3037</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Playing With Vapor Mastery</name>
+    <desc>Complete the 'Playing With Vapor' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3036</achievement_req>
+    <req>
+      <campaign>1029</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- START Event 7 -->
+  <achievement>
+    <id>3038</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Center of the Void</name>
+    <desc>Complete the 'Center of the Void' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1030</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <item id="3019" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3039</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Center of the Void Mastery</name>
+    <desc>Complete the 'Center of the Void' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3038</achievement_req>
+    <req>
+      <campaign>1030</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3040</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Trial by Purple Fire</name>
+    <desc>Complete the 'Trial by Purple Fire' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1031</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3041</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Trial by Purple Fire Mastery</name>
+    <desc>Complete the 'Trial by Purple Fire' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3040</achievement_req>
+    <req>
+      <campaign>1031</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3042</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Climate Change</name>
+    <desc>Complete the 'Climate Change' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1032</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <item id="3020" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3043</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Climate Change Mastery</name>
+    <desc>Complete the 'Climate Change' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3042</achievement_req>
+    <req>
+      <campaign>1032</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3044</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Infection of The Void</name>
+    <desc>Complete the 'Infection of The Void' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1033</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <item id="3018" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3045</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Infection of The Void Mastery</name>
+    <desc>Complete the 'Infection of The Void' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3044</achievement_req>
+    <req>
+      <campaign>1033</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3046</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Lost Laboratory</name>
+    <desc>Complete the 'Lost Laboratory' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1034</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3047</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Lost Laboratory Mastery</name>
+    <desc>Complete the 'Lost Laboratory' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3046</achievement_req>
+    <req>
+      <campaign>1034</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3048</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Lay Down Your Burdens</name>
+    <desc>Complete the 'Lay Down Your Burdens' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1035</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <item id="3017" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3049</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Lay Down Your Burdens Mastery</name>
+    <desc>Complete the 'Lay Down Your Burdens' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3048</achievement_req>
+    <req>
+      <campaign>1035</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- END Event 7 -->
+  <!-- START Event 8 -->
+  <achievement>
+    <id>3050</id>
+    <type>2</type>
+    <order>101</order>
+    <name>To Skyhaven</name>
+    <desc>Complete the 'To Skyhaven' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1036</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3051</id>
+    <type>2</type>
+    <order>101</order>
+    <name>To Skyhaven Mastery</name>
+    <desc>Complete the 'To Skyhaven' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3050</achievement_req>
+    <req>
+      <campaign>1036</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3052</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Finding Your Way</name>
+    <desc>Complete the 'Finding Your Way' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1037</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3053</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Finding Your Way Mastery</name>
+    <desc>Complete the 'Finding Your Way' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3052</achievement_req>
+    <req>
+      <campaign>1037</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3054</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Home Sweet Home</name>
+    <desc>Complete the 'Home Sweet Home' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1038</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3055</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Home Sweet Home Mastery</name>
+    <desc>Complete the 'Home Sweet Home' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3054</achievement_req>
+    <req>
+      <campaign>1038</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3056</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Old Mistakes</name>
+    <desc>Complete the 'Old Mistakes' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1039</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3057</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Old Mistakes Mastery</name>
+    <desc>Complete the 'Old Mistakes' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3056</achievement_req>
+    <req>
+      <campaign>1039</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3058</id>
+    <type>2</type>
+    <order>101</order>
+    <name>To Court</name>
+    <desc>Complete the 'To Court' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1040</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3059</id>
+    <type>2</type>
+    <order>101</order>
+    <name>To Court Mastery</name>
+    <desc>Complete the 'To Court' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3058</achievement_req>
+    <req>
+      <campaign>1040</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3060</id>
+    <type>2</type>
+    <order>101</order>
+    <name>History Repeats</name>
+    <desc>Complete the 'History Repeats' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1041</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3061</id>
+    <type>2</type>
+    <order>101</order>
+    <name>History Repeats Mastery</name>
+    <desc>Complete the 'History Repeats' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3060</achievement_req>
+    <req>
+      <campaign>1041</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- END Event 8 -->
+  <!-- START Event 9 -->
+  <achievement>
+    <id>3062</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Scorched Villages</name>
+    <desc>Complete the 'Scorched Villages' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1042</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3063</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Scorched Villages Mastery</name>
+    <desc>Complete the 'Scorched Villages' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3062</achievement_req>
+    <req>
+      <campaign>1042</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3064</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Back to the Vaults</name>
+    <desc>Complete the 'Back to the Vaults' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1043</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3065</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Back to the Vaults Mastery</name>
+    <desc>Complete the 'Back to the Vaults' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3064</achievement_req>
+    <req>
+      <campaign>1043</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3066</id>
+    <type>2</type>
+    <order>101</order>
+    <name>To Water Island</name>
+    <desc>Complete the 'To Water Island' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1044</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3067</id>
+    <type>2</type>
+    <order>101</order>
+    <name>To Water Island Mastery</name>
+    <desc>Complete the 'To Water Island' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3066</achievement_req>
+    <req>
+      <campaign>1044</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3068</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Zen Gardens</name>
+    <desc>Complete the 'Zen Gardens' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1045</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3069</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Zen Gardens Mastery</name>
+    <desc>Complete the 'Zen Gardens' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3068</achievement_req>
+    <req>
+      <campaign>1045</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3070</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Quick Thinking</name>
+    <desc>Complete the 'Quick Thinking' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1046</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3071</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Quick Thinking Mastery</name>
+    <desc>Complete the 'Quick Thinking' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3070</achievement_req>
+    <req>
+      <campaign>1046</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3072</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Final Round</name>
+    <desc>Complete the 'Final Round' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1047</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3073</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Final Round Mastery</name>
+    <desc>Complete the 'Final Round' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3072</achievement_req>
+    <req>
+      <campaign>1047</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- END Event 9 -->
+  <!--  Event 10 Achievements -->
+  <achievement>
+    <id>3074</id>
+    <type>2</type>
+    <order>101</order>
+    <name>New Horizons</name>
+    <desc>Complete the 'New Horizons' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1048</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3075</id>
+    <type>2</type>
+    <order>101</order>
+    <name>New Horizons Mastery</name>
+    <desc>Complete the 'New Horizons' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3074</achievement_req>
+    <req>
+      <campaign>1048</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3076</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Saying Goodbye</name>
+    <desc>Complete the 'Saying Goodbye' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1049</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3077</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Saying Goodbye Mastery</name>
+    <desc>Complete the 'Saying Goodbye' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3076</achievement_req>
+    <req>
+      <campaign>1049</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3078</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Golden Crown Banquet</name>
+    <desc>Complete the 'Golden Crown Banquet' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1050</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3079</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Golden Crown Banquet Mastery</name>
+    <desc>Complete the 'Golden Crown Banquet' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3078</achievement_req>
+    <req>
+      <campaign>1050</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3080</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Surprise from Above</name>
+    <desc>Complete the 'Surprise from Above' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1051</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3081</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Surprise from Above Mastery</name>
+    <desc>Complete the 'Surprise from Above' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3080</achievement_req>
+    <req>
+      <campaign>1051</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3082</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Chase</name>
+    <desc>Complete the 'The Chase' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1052</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3083</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Chase Mastery</name>
+    <desc>Complete the 'The Chase' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3082</achievement_req>
+    <req>
+      <campaign>1052</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3084</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Defensive Maneuvers</name>
+    <desc>Complete the 'Defensive Maneuvers' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1053</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3085</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Defensive Maneuvers Mastery</name>
+    <desc>Complete the 'Defensive Maneuvers' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3084</achievement_req>
+    <req>
+      <campaign>1053</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3086</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Side Dish</name>
+    <desc>Complete the 'Side Dish' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1057</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3087</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Side Dish Mastery</name>
+    <desc>Complete the 'Side Dish' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3086</achievement_req>
+    <req>
+      <campaign>1057</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <!--  End Event 10 Achievements -->
+  <!-- START Event 11 Achievements -->
+  <achievement>
+    <id>3088</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Avian Hideaway</name>
+    <desc>Complete the 'Avian Hideaway' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1058</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3089</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Avian Hideaway Mastery</name>
+    <desc>Complete the 'Avian Hideaway' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3088</achievement_req>
+    <req>
+      <campaign>1058</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3090</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Unwavered</name>
+    <desc>Complete the 'Unwavered' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1059</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3091</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Unwavered Mastery</name>
+    <desc>Complete the 'Unwavered' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3090</achievement_req>
+    <req>
+      <campaign>1059</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3092</id>
+    <type>2</type>
+    <order>101</order>
+    <name>To Red Feather Valley</name>
+    <desc>Complete the 'To Red Feather Valley' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1060</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3093</id>
+    <type>2</type>
+    <order>101</order>
+    <name>To Red Feather Valley Mastery</name>
+    <desc>Complete the 'To Red Feather Valley' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3092</achievement_req>
+    <req>
+      <campaign>1060</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3094</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Into the City</name>
+    <desc>Complete the 'Into the City' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1061</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3095</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Into the City Mastery</name>
+    <desc>Complete the 'Into the City' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3094</achievement_req>
+    <req>
+      <campaign>1061</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3096</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Through the Alleyway</name>
+    <desc>Complete the 'Through the Alleyway' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1062</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3097</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Through the Alleyway Mastery</name>
+    <desc>Complete the 'Through the Alleyway' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3096</achievement_req>
+    <req>
+      <campaign>1062</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3098</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Frobert and the Magistrate</name>
+    <desc>Complete the 'Through the Alleyway' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1063</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3099</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Frobert and the Magistrate Mastery</name>
+    <desc>Complete the 'Frobert and the Magistrate' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3098</achievement_req>
+    <req>
+      <campaign>1063</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- END Event 11 Achievements -->
+  <!-- END Event Quests  -->
+</root>

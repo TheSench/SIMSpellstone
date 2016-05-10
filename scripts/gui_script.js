@@ -53,21 +53,60 @@ window.onload = function () {
     if (!ui) return 0;
 
     // Check if missions are found
-    if (typeof(TITANS) !== "undefined") {
-        var missionData = TITANS;
-    } else {
-        var missionData = MISSIONS;
+    if (CAMPAIGNS) {
+        // Mission drop down
+        var select = document.getElementById('campaign');
+        if (select) {
+            var IDs = [];
+            for (var key in CAMPAIGNS) {
+                IDs.push(key);
+            }
+            IDs.sort(function (a, b) {
+                a = CAMPAIGNS[a], b = CAMPAIGNS[b];
+                var locationA = Number(a.location_id) || 99999;
+                var locationB = Number(b.location_id) || 99999;
+                var compare = locationA - locationB;
+                if (compare) return compare;
+                return Number(a.id) - Number(b.id);
+            })
+            var lastCampaign = null;
+            for (var i = 0; i < IDs.length; i++) {
+                var key = IDs[i];
+                var campaign = CAMPAIGNS[key];
+                var location_id = campaign.location_id;
+                var lastLocation = (lastCampaign && lastCampaign.location_id);
+                if (location_id != lastLocation) {
+                    var location = LOCATIONS[location_id];
+                    var option = document.createElement('option');
+                    option.appendChild(document.createTextNode(location.name));
+                    option.className = "location";
+                    option.disabled = true;
+                    select.appendChild(option);
+                }
+                var option = document.createElement('option');
+                option.appendChild(document.createTextNode(campaign.name));
+                option.value = campaign.id;
+                if (campaign.side_mission) {
+                    option.className = (campaign.location_id == 0 ? "heroUpgrade" : "mythic");
+                }
+                select.appendChild(option);
+                lastCampaign = campaign;
+            }
+        }
     }
-    if (missionData) {
+
+    // Check if missions are found
+    if (MISSIONS) {
         // Mission drop down
         var select = document.getElementById('mission');
         var IDs = [];
-        for (var key in missionData) {
-            IDs.push(key);
+        for (var key in MISSIONS) {
+            IDs.push(Number(key));
         }
+        IDs.sort();
         for (var i = 0; i < IDs.length; i++) {
             var key = IDs[i];
-            var mission = missionData[key];
+            var mission = MISSIONS[key];
             var option = document.createElement('option');
             option.appendChild(document.createTextNode(mission.name));
             option.value = mission.id;
@@ -124,7 +163,7 @@ window.onload = function () {
             select.appendChild(option);
         }
     }
-    
+
     var button = document.getElementById("generate_link");
     if (button) button.onclick = display_generated_link;
 
@@ -227,14 +266,81 @@ window.onload = function () {
         d.checked = true;
     }
 
-    if (_GET('mission')) {
-        var d = document.getElementById('mission');
-        d.value = _GET('mission');
+    var onCampaignSelected = function () {
+        var missionDropdown = document.getElementById('mission');
+        var missions = (CAMPAIGNS[this.value] && CAMPAIGNS[this.value].missions);
+        if (missions) {
+            missionDropdown.disabled = false;
+            missionDropdown.value = "";
+            for (var i = 0; i < missionDropdown.options.length; i++) {
+                var option = missionDropdown.options[i];
+                var hide = ((option.value > 0) && !missions.includes(option.value));
+                option.disabled = hide;
+                option.hidden = hide;
+            }
+        } else {
+            missionDropdown.value = "";
+            missionDropdown.disabled = true;
+        }
+        missionDropdown.dispatchEvent(new Event("change"));
+    };
+
+    var onMissionOrRaidSelected = function () {
+        var enemyHash = document.getElementById('deck2');
+        var enemyList = document.getElementById('cardlist2');
+        var campaignDropdown = document.getElementById('campaign');
+        var raidDropdown = document.getElementById('raid');
+        if (this.value) {
+            if (enemyHash.value) enemyHash.previousvalue = enemyHash.value;
+            enemyHash.value = '';
+            enemyHash.disabled = true;
+            if (enemyList.value) enemyList.previousvalue = enemyList.value;
+            enemyList.value = '';
+            enemyList.disabled = true;
+            if (this != campaignDropdown) campaignDropdown.disabled = true;
+            if (this != raidDropdown) raidDropdown.disabled = true;
+        } else {
+            if (enemyHash.previousvalue) enemyHash.value = enemyHash.previousvalue;
+            enemyHash.disabled = false;
+            if (enemyList.previousvalue) enemyList.value = enemyList.previousvalue;
+            enemyList.disabled = false;
+            campaignDropdown.disabled = false;
+            raidDropdown.disabled = false;
+        }
+    };
+
+    var campaignID = _GET('campaign');
+    var missionID = _GET('mission');
+    var raidID = _GET('raid');
+
+    var dropdown = document.getElementById('campaign');
+    dropdown.addEventListener("change", selectionChanged);
+    dropdown.addEventListener("change", onCampaignSelected);
+    dropdown.addEventListener("change", onMissionOrRaidSelected);
+    if (campaignID) {
+        dropdown.value = _GET('campaign');
+    } else if (missionID) {
+        for (var id in CAMPAIGNS) {
+            if (CAMPAIGNS[id].missions.includes(missionID)) {
+                dropdown.value = id;
+            }
+        }
+    }
+    dropdown.dispatchEvent(new Event("change"));
+
+    var dropdown = document.getElementById('mission');
+    dropdown.addEventListener("change", selectionChanged);
+    if (missionID) {
+        dropdown.value = missionID;
+        dropdown.dispatchEvent(new Event("change"));
     }
 
-    if (_GET('raid')) {
-        var d = document.getElementById('raid');
-        d.value = _GET('raid');
+    var dropdown = document.getElementById('raid');
+    dropdown.addEventListener("change", selectionChanged);
+    dropdown.addEventListener("change", onMissionOrRaidSelected);
+    if (raidID && !(campaignID || missionID)) {
+        dropdown.value = raidID;
+        dropdown.dispatchEvent(new Event("change"));
     }
 
     if (_DEFINED('battleground')) {
@@ -247,8 +353,8 @@ window.onload = function () {
     } else {
         // Load current battlegrounds
         var bgCheckBoxes = document.getElementsByName("battleground");
-        bgCheckBoxes[6].checked = true;
         bgCheckBoxes[7].checked = true;
+        bgCheckBoxes[8].checked = true;
     }
 
     if (_GET('sims')) {
@@ -370,6 +476,11 @@ function toggle_u() {
         style.appendChild(rules);
     }
     if (append === true) head.appendChild(style);
+}
+
+function selectionChanged() {
+    var isDefault = this.options[this.selectedIndex].attributes.default;
+    this.className = (isDefault ? "grey" : "black");
 }
 
 // Modify HTML to output simulation results
@@ -503,103 +614,6 @@ function gettable() {
     return full_table;
 }
 
-function sortByAvgPoints(stats, keys) {
-    keys.sort(function (a, b) {
-        var statsA = stats[a];
-        var statsB = stats[b];
-        var compare = statsB.avgPoints - statsA.avgPoints;
-        if (compare != 0) return compare;
-        compare = statsA.games - statsB.games;
-        if (compare != 0) return compare;
-        if (a < b) return -1;
-        if (a > b) return 1;
-        return 0;
-    });
-}
-
-function getStatsRows(stats) {
-    var aryHTML = [];
-    addChildRows(stats, stats.keys, aryHTML, true);
-    return '<tr>' + aryHTML.join('</tr><tr>') + '</tr>';
-}
-
-function addChildRows(stats, keys, aryHTML, isPlayer) {
-    sortByAvgPoints(stats, keys);
-    for (var i = 0; i < keys.length; i++) {
-        var stat = stats[keys[i]];
-        addRowData(stats, stat, aryHTML, isPlayer);
-    }
-}
-
-function addRowData(stats, stat, aryHTML, isPlayer) {
-    var aryChildren = [];
-    addChildRows(stats, stat.children, aryChildren, !isPlayer);
-
-    var rowSpan = Math.max(aryChildren.length, 1);
-
-    var matches = (stat.wins + "/" + stat.games);
-    htmlEntry += makeTD(rowSpan, matches, isPlayer);
-
-    var winrate = (stat.winrate * 100).toFixed(2) + '%';
-    var htmlEntry = makeTD(rowSpan, winrate, isPlayer);
-
-    htmlEntry += makeTD(rowSpan, stat.avgPoints.toFixed(2), isPlayer);
-
-    htmlEntry += makeTD(rowSpan, stat.card, isPlayer);
-    if (aryChildren.length) {
-        htmlEntry += aryChildren[0];
-    }
-
-    aryHTML.push(htmlEntry);
-    for (var i = 1; i < aryChildren.length; i++) {
-        aryHTML.push(aryChildren[i]);
-    }
-}
-
-function makeTD(rowSpan, contents, isPlayer) {
-    var formatStart = '<' + (isPlayer ? 'i' : 'b') + '>';
-    var formatEnd = formatStart.replace('<', '</');
-    var td = '<td rowSpan=' + rowSpan + '" style="border: 1px solid #000000;">' + formatStart  + contents + formatEnd + '</td>';
-    return td;
-}
-
-function CalculatePlayStats(hash, cardStats) {
-    var cards = hash_decode(hash).deck;
-    var stats = orders[hash];
-    var parentKey = null;
-    for (var i = 0; i < cards.length; i++) {
-        var play = { deck: cards.slice(0, i+1) };
-        var playKey = hash_encode(play);
-        var playStats = cardStats[playKey];
-        if (!playStats) {
-            var card = get_card_by_id(cards[i]);
-            var card_name = card.name + "(" + card.level + ")";
-            if (card.runes.length) card_name += "*";
-            playStats = {
-                card: card_name,
-                wins: 0,
-                games: 0,
-                points: 0,
-                children: []
-            };
-            cardStats[playKey] = playStats;
-            if (parentKey) {
-                if (!_DEFINED("succinct")) {
-                    cardStats[parentKey].children.push(playKey);
-                }
-            } else {
-                cardStats.keys.push(playKey);
-            }
-        }
-        playStats.wins += stats.wins;
-        playStats.games += stats.games;
-        playStats.points += stats.points;
-        playStats.winrate = (playStats.wins / playStats.games);
-        playStats.avgPoints = (playStats.points / playStats.games);
-        parentKey = playKey;
-    }
-}
-
 // Generate a link from current settings and input
 function generate_link(autostart, autolink) {
 
@@ -617,12 +631,14 @@ function generate_link(autostart, autolink) {
     if (document.getElementById('deck2')) {
         var getdeck2 = document.getElementById('deck2').value;
         var getcardlist2 = document.getElementById('cardlist2').value;
+        var getcampaign = document.getElementById('campaign').value;
         var getmission = document.getElementById('mission').value;
         var getraid = document.getElementById('raid').value;
         var raidlevel = document.getElementById('raid_level').value;
     } else {
         var getdeck2 = null;
         var getcardlist2 = null;
+        var getcampaign = null;
         var getmission = document.getElementById('mission').value;
         var getraid = null;
         var raidlevel = null;
@@ -699,6 +715,11 @@ function generate_link(autostart, autolink) {
     d = document.getElementById('exactorder2');
     if (d && d.checked) {
         parameters.push('exactorder2');
+    }
+
+    d = document.getElementById('campaign');
+    if (d && d.value) {
+        parameters.push('campaign=' + d.value);
     }
 
     d = document.getElementById('mission');

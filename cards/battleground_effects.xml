@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+		[DO NOT USE ID=1 through 100!]
+		Use IDs 101+
+	-->
+  <!--
+	displayEffect example setup 
+	<skill id='displayEffect' trigger='onSkill' s='strike' >
+		<actor_effect>
+			<prefab>void_aura</prefab>
+			<duration>3</duration>
+			<delay>2</delay>
+		</actor_effect>
+		<projectile_effect>
+			<prefab>PoisonProjectile</prefab>
+			<delay>.5</delay>
+			<duration>.5</duration>
+			<sound>scrape</sound>
+			<offset>2</offset>    	0=Center, 1=Health, 2=Attack, 3=skills
+		</projectile_effect>
+		<target_effect>
+			<prefab>corrosion</prefab>
+			<delay>1</delay>
+			<duration>1</duration>
+			<shake>true</shake>
+		</target_effect>
+	</skill>
+ 	-->
+  <!-- 101-500: World Event BGE -->
+  <battleground>
+    <id>101</id>
+    <name>Age of Dragons</name>
+    <desc>All Dragons are bestowed with extraordinary vitality, causing them to be Healed each turn by 20%.</desc>
+    <web_picture>filter_dragon_64.png</web_picture>
+    <effect>
+      <skill id="heal" mult=".2" all="1" y="9" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>102</id>
+    <name>World Awakening</name>
+    <desc>All Elementals are Empowered from the mana rich land, raising their Attack by 2 each turn.</desc>
+    <web_picture>filter_elementals_64.png</web_picture>
+    <effect>
+      <skill id="rally" x="2" all="1" y="5" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>103</id>
+    <name>Rise of the Frogs</name>
+    <desc>All Frogs gain the Protection of the Guardian Stone, reducing damage taken by 2.</desc>
+    <web_picture>filter_frog_64.png</web_picture>
+    <effect>
+      <skill id="protect" x="2" all="1" y="4" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>104</id>
+    <name>Iceshatter Barrier</name>
+    <desc>When Barrier is broken, deals damage to the creature across from it or the enemy Hero equal to the Barrier value.</desc>
+    <web_picture>filter_iceshatter_64.png</web_picture>
+    <effect>
+      <evolve_skill id="protect" s="protect_ice" />
+      <evolve_skill id="protect" s="protect_ice" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>105</id>
+    <name>Devouring Hunger</name>
+    <desc>The Undead are invigorated with an unquenchable hunger, giving them Berserk which increases their base attack by 20% after dealing damage.</desc>
+    <web_picture>filter_undead_64.png</web_picture>
+    <effect>
+      <add_skill id="berserk" mult=".2" base="attack" y="7" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>106</id>
+    <name>Angelic Legion</name>
+    <desc>Angels have risen to fight, giving their adjacent allies Legion based on their rarity.</desc>
+    <web_picture>filter_angel_64.png</web_picture>
+    <effect>
+      <add_skill id="legion" mult="1" base="rarity" y="6" />
+      <skill id="displayEffect" trigger="onSkill" y="6" s="legion">
+        <projectile_effect>
+          <prefab>Legion_Projectile</prefab>
+          <delay>0</delay>
+          <duration>.5</duration>
+          <translation>.5</translation>
+          <offset>2</offset>
+        </projectile_effect>
+        <target_effect>
+          <prefab>Legion_Angel_Target</prefab>
+          <delay>.5</delay>
+          <duration>1</duration>
+          <shake>true</shake>
+        </target_effect>
+      </skill>
+    </effect>
+  </battleground>
+  <battleground>
+    <id>107</id>
+    <name>Elemental Surge</name>
+    <desc>Seismic shifts have given Elementals incredible power! Elementals have their Attack increased by 50% of their base, rounded up!</desc>
+    <web_picture>filter_elementals_64.png</web_picture>
+    <icon>filter_elementals_64</icon>
+    <effect>
+      <card_type>99</card_type>
+      <skill id="rally" mult=".5" all="1" y="5" />
+      <!-- mult is based on attack -->
+      <skill id="displayEffect" trigger="onSkill" y="99" s="rally">
+        <target_effect>
+          <prefab>Empower_Target_Elemental</prefab>
+          <delay>.5</delay>
+          <duration>1</duration>
+          <shake>true</shake>
+        </target_effect>
+      </skill>
+    </effect>
+  </battleground>
+  <battleground>
+    <id>108</id>
+    <name>Poisonbolt Evolution</name>
+    <desc>Frogs have evolved to have Poisonbolt! They deal bolt damage and leave poison with their tongue, equal to 50% of their base attack!</desc>
+    <web_picture>filter_frog_64.png</web_picture>
+    <icon>filter_frog_64</icon>
+    <effect>
+      <add_skill id="poisonstrike" mult=".5" base="attack" y="4" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>109</id>
+    <name>Airborne Mastery</name>
+    <desc>The first time Avians activate, they permanently double their base Attack if the opposing card has more Attack.</desc>
+    <icon>filter_avian_64.png</icon>
+    <effect>
+      <add_skill id="valor" mult="1" base="attack" y="10" />
+    </effect>
+  </battleground>
+  <!-- 501-1000: Specialty BGE -->
+  <battleground>
+    <id>501</id>
+    <name>Castle Siege</name>
+    <desc>All enemies start with a Castle Tower card.</desc>
+    <web_picture>filter_tower_64.png</web_picture>
+    <icon>filter_tower_64</icon>
+    <effect>
+      <starting_card id="601" level="1" pvp_rank="2" />
+      <starting_card id="601" level="2" pvp_rank="3" />
+      <starting_card id="601" level="3" pvp_rank="4" />
+      <starting_card id="601" level="4" pvp_rank="5" />
+      <starting_card id="601" level="5" pvp_rank="6" />
+      <starting_card id="601" level="6" pvp_rank="7" />
+      <starting_card id="601" level="7" pvp_rank="8" />
+      <starting_card id="601" level="8" pvp_rank="9" />
+      <starting_card id="601" level="9" pvp_rank="10" />
+      <starting_card id="601" level="10" pvp_rank="11" />
+      <starting_card id="601" level="11" pvp_rank="12" />
+      <starting_card id="601" level="12" pvp_rank="13" />
+      <starting_card id="601" level="13" pvp_rank="14" />
+      <starting_card id="601" level="14" pvp_rank="15" />
+      <starting_card id="601" level="15" pvp_rank="16" />
+      <starting_card id="601" level="16" pvp_rank="17" />
+      <starting_card id="601" level="17" pvp_rank="18" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>502</id>
+    <name>Cannon Siege</name>
+    <desc>All enemies start with a Cannon Tower card.</desc>
+    <web_picture>filter_tower_64.png</web_picture>
+    <icon>filter_tower_64</icon>
+    <effect>
+      <starting_card id="602" level="1" pvp_rank="2" />
+      <starting_card id="602" level="2" pvp_rank="3" />
+      <starting_card id="602" level="3" pvp_rank="4" />
+      <starting_card id="602" level="4" pvp_rank="5" />
+      <starting_card id="602" level="5" pvp_rank="6" />
+      <starting_card id="602" level="6" pvp_rank="7" />
+      <starting_card id="602" level="7" pvp_rank="8" />
+      <starting_card id="602" level="8" pvp_rank="9" />
+      <starting_card id="602" level="9" pvp_rank="10" />
+      <starting_card id="602" level="10" pvp_rank="11" />
+      <starting_card id="602" level="11" pvp_rank="12" />
+      <starting_card id="602" level="12" pvp_rank="13" />
+      <starting_card id="602" level="13" pvp_rank="14" />
+      <starting_card id="602" level="14" pvp_rank="15" />
+      <starting_card id="602" level="15" pvp_rank="16" />
+      <starting_card id="602" level="16" pvp_rank="17" />
+      <starting_card id="602" level="17" pvp_rank="18" />
+    </effect>
+  </battleground>
+  <!-- <battleground>
+		<id>502</id>
+		<name>Scaling</name>
+		<desc>Scale cards.</desc>
+		<web_picture>filter_tower_64.png</web_picture>
+		<starting_level>1</starting_level>
+		<effect>
+			<enhance level='1' value='0.1' />
+			<enhance level='2' value='0.2' />
+			<enhance level='3' value='0.3' />
+			<enhance level='4' value='0.4' />
+			<enhance level='5' value='0.5' />
+		</effect>
+	</battleground> -->
+  <battleground>
+    <id>503</id>
+    <name>Frostbite's Aura</name>
+    <desc>Frostbite Heals and Empowers all of his allies, increasing in strength as he levels up.</desc>
+    <web_picture>filter_frostbite_64.png</web_picture>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>41</starting_level>
+    <!-- Starting Raid Level -->
+    <effect>
+      <skill id="heal" x=".8" all="1" />
+      <skill id="rally" x=".4" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>504</id>
+    <name>Nethergore's Reckoning</name>
+    <desc>Nethergore Heals and Empowers all of his allies, increasing in strength as he levels up.</desc>
+    <web_picture>undead_raid_badge_64.png</web_picture>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>26</starting_level>
+    <!-- Starting Raid Level -->
+    <effect>
+      <skill id="heal" x=".8" all="1" />
+      <skill id="rally" x=".4" all="1" />
+    </effect>
+  </battleground>
+  <!-- 1001+: Personal BGE -->
+  <battleground>
+    <id>10001</id>
+    <name>Personal Frog Buff</name>
+    <desc>All ally Frogs gain the Protection of the Watcher, reducing damage taken by 2.</desc>
+    <web_picture>filter_frog_64.png</web_picture>
+    <effect>
+      <skill id="protect" x="2" all="1" y="4" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>10002</id>
+    <name>Personal Enhance Armor</name>
+    <desc>All ally creatures have their armor enhanced by 1.</desc>
+    <web_picture>filter_elementals_64.png</web_picture>
+    <effect>
+      <skill id="enhance" s="armored" x="1" all="1" />
+    </effect>
+  </battleground>
+</root>

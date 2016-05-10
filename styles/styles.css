@@ -25,10 +25,34 @@ select[disabled] {
     background-color: rgb(235, 235, 228);
 }
 
-a {
-    text-decoration: underline;
-    font-style: normal;
-    color: #0000ff;
+select option[default] {
+    color: #888;
+}
+
+.black {
+    color: #001;
+}
+
+.grey {
+    color: #888;
+}
+
+select option:not([default]) {
+    color: #000;
+}
+
+option.location:disabled {
+    color: black;
+    background-color: grey;
+    font-weight: bold;
+}
+
+select option.mythic {
+    color: darkorange;
+}
+
+select option.heroUpgrade {
+    color: purple;
 }
 
 u {

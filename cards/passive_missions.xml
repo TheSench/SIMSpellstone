@@ -1,0 +1,1206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+	<passive_mission>
+		<id>							ID
+		<min_level>						Lowest level a player can see this
+		<max_level>						Highest level a player can see this
+		<name>							Mission Name
+		<description>					Description
+		<duration>						How long the mission takes to complete in minutes
+		<decay_time>					How long the mission stays in the player's "inventory" in minutes
+		<difficulty>					How hard the mission is. This will be compared to the player's level to determine a probability of success
+		<reward>						Rewards on success. Same format as achievements.xml
+	</passive_mission>
+	 -->
+  <passive_mission>
+    <id>1001</id>
+    <min_level>4</min_level>
+    <max_level>10</max_level>
+    <name>Night Souls</name>
+    <portrait>templeguardian</portrait>
+    <description>A nearby village needs help preventing Soul Wisps from wandering into their homes at night. Help Oda relocate them away from the villagers.</description>
+    <duration>180</duration>
+    <decay>480</decay>
+    <difficulty>4</difficulty>
+    <reward>
+      <item id="1011" number="1" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1002</id>
+    <min_level>5</min_level>
+    <max_level>15</max_level>
+    <name>Monk Ransom</name>
+    <portrait>templeguardian</portrait>
+    <description>There have been reports of bandits taking monks hostage in a nearby cave. Help Oda investigate the cavern!</description>
+    <duration>1080</duration>
+    <decay>480</decay>
+    <difficulty>12</difficulty>
+    <reward>
+      <pack>14</pack>
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1003</id>
+    <min_level>7</min_level>
+    <max_level>17</max_level>
+    <name>Missing Tome</name>
+    <portrait>owlmystic</portrait>
+    <description>Yuriel has lost his most valuable incantation book! Help him search the library so he may continue his studies.</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>15</difficulty>
+    <reward>
+      <card id="510" level="1" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1004</id>
+    <min_level>10</min_level>
+    <max_level>20</max_level>
+    <name>Test Dummy</name>
+    <portrait>owlmystic</portrait>
+    <description>Yuriel is working on an improved spell for enhancing armor. He's asking someone to aid him with testing...</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>18</difficulty>
+    <reward>
+      <pack>14</pack>
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1005</id>
+    <min_level>10</min_level>
+    <max_level>20</max_level>
+    <name>The Glowing Lake</name>
+    <portrait>seraph</portrait>
+    <description>Samael's people have sighted a strange creature swimming in the nearby lake. Help investigate the disturbance.</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>18</difficulty>
+    <reward>
+      <item id="1012" number="1" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1006</id>
+    <min_level>15</min_level>
+    <max_level>25</max_level>
+    <name>Aether Assassins</name>
+    <portrait>seraph</portrait>
+    <description>There have been rumors of an assassin attending Samael's upcoming ball. Help secure his palace by providing extra security.</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>24</difficulty>
+    <reward>
+      <pack>14</pack>
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1007</id>
+    <min_level>4</min_level>
+    <max_level>10</max_level>
+    <name>Black Magic Market</name>
+    <portrait>necromancer</portrait>
+    <description>A source has reported rare dark magic artifacts in the black markets of Luminis. Aria may have use for these...</description>
+    <duration>180</duration>
+    <decay>480</decay>
+    <difficulty>4</difficulty>
+    <reward>
+      <item id="1011" number="1" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1008</id>
+    <min_level>5</min_level>
+    <max_level>15</max_level>
+    <name>No Questions</name>
+    <portrait>necromancer</portrait>
+    <description>Aria is asking for 7 Beetle Toes, 1 bag of Bat Guano, and 5 Bloodroot leaves. She said not to ask questions...</description>
+    <duration>1080</duration>
+    <decay>480</decay>
+    <difficulty>12</difficulty>
+    <reward>
+      <pack>15</pack>
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1009</id>
+    <min_level>7</min_level>
+    <max_level>17</max_level>
+    <name>The Best Wool</name>
+    <portrait>flamebender</portrait>
+    <description>Decim burned through another sweatshirt and needs a new one, but only will wear the premium wool found Elaria.</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>15</difficulty>
+    <reward>
+      <card id="510" level="1" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1010</id>
+    <min_level>10</min_level>
+    <max_level>20</max_level>
+    <name>Playing with Matches</name>
+    <portrait>flamebender</portrait>
+    <description>A small village outside Karthos has 'mysteriously' caught fire. Help subdue the flames!</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>18</difficulty>
+    <reward>
+      <pack>15</pack>
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1011</id>
+    <min_level>10</min_level>
+    <max_level>20</max_level>
+    <name>Titan Rampage</name>
+    <portrait>lichking</portrait>
+    <description>A Fire Titan has escaped and is rampaging through a near by market. The town is in need of our support!</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>18</difficulty>
+    <reward>
+      <item id="1012" number="1" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1012</id>
+    <min_level>15</min_level>
+    <max_level>25</max_level>
+    <name>In a Pinch</name>
+    <portrait>lichking</portrait>
+    <description>Tarian has requested aid to help contain a swarm of lava crabs. They have been pinching everything in sight!</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>24</difficulty>
+    <reward>
+      <pack>15</pack>
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1013</id>
+    <min_level>4</min_level>
+    <max_level>10</max_level>
+    <name>Lost in Translation</name>
+    <portrait>elyse</portrait>
+    <description>Elyse has discovered an ancient text about the history of Elaria! Helping her translate may provide clues to our journey.</description>
+    <duration>180</duration>
+    <decay>480</decay>
+    <difficulty>4</difficulty>
+    <reward>
+      <item id="1011" number="1" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1014</id>
+    <min_level>5</min_level>
+    <max_level>15</max_level>
+    <name>Woodland Medicine</name>
+    <portrait>elyse</portrait>
+    <description>Elyse has found a rare herb that can be used for pain relief. Help her gather these herbs in the Northern Woods.</description>
+    <duration>1080</duration>
+    <decay>480</decay>
+    <difficulty>12</difficulty>
+    <reward>
+      <pack>16</pack>
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1015</id>
+    <min_level>7</min_level>
+    <max_level>17</max_level>
+    <name>Salmon Shipment</name>
+    <portrait>bearcommander</portrait>
+    <description>Ursurio wants you to collect a shipment of salmon from the rivers of Luminis. The denizens of the river might not enjoy the idea as much.</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>15</difficulty>
+    <reward>
+      <card id="510" level="1" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1016</id>
+    <min_level>10</min_level>
+    <max_level>20</max_level>
+    <name>"Scientific" Collection</name>
+    <portrait>bearcommander</portrait>
+    <description>Rumors have spread about a new type of tasty fish in the oceans south of the continent. Collect some for... scientific reasons.</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>18</difficulty>
+    <reward>
+      <pack>16</pack>
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1017</id>
+    <min_level>10</min_level>
+    <max_level>20</max_level>
+    <name>A Heavy Storm</name>
+    <portrait>groc</portrait>
+    <description>A heavy storm passed through the woods near the ocean. Help clear the fallen trees and flooding.</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>18</difficulty>
+    <reward>
+      <item id="1012" number="1" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1018</id>
+    <min_level>15</min_level>
+    <max_level>25</max_level>
+    <name>Burning Grove</name>
+    <portrait>groc</portrait>
+    <description>Undead have invaded the deep forests and disturbed the natural elements. Remove them and restore balance to the grove.</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>24</difficulty>
+    <reward>
+      <pack>16</pack>
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1019</id>
+    <min_level>4</min_level>
+    <max_level>10</max_level>
+    <name>Elaria Dig Site</name>
+    <portrait>ranger</portrait>
+    <description>The Elaria Expedition needs an escort for their researchers. Help them travel to the new dig site.</description>
+    <duration>240</duration>
+    <decay>480</decay>
+    <difficulty>5</difficulty>
+    <reward>
+      <item id="1011" number="1" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1020</id>
+    <min_level>5</min_level>
+    <max_level>15</max_level>
+    <name>Words of Wisdom</name>
+    <portrait>ranger</portrait>
+    <description>A friend has suggested the Elaria Captain pick up a book to read. Travel to Luminis and find a copy of 'Language and Grammar: A Beginner's Guide'</description>
+    <duration>1080</duration>
+    <decay>480</decay>
+    <difficulty>13</difficulty>
+    <reward>
+      <pack>19</pack>
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1021</id>
+    <min_level>13</min_level>
+    <max_level>23</max_level>
+    <name>Care Package</name>
+    <portrait>grandexcavator</portrait>
+    <description>Malchior appears to be feeling home sick. He requested you to send him some "Lomalife lite", two cups of "Perpestrulatum" and a "bag of chestnuts".</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>19</difficulty>
+    <reward>
+      <pack>19</pack>
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1022</id>
+    <min_level>17</min_level>
+    <max_level>30</max_level>
+    <name>Spell Rush</name>
+    <portrait>grandexcavator</portrait>
+    <description>Malchior suspects the mountains to the west of Karthos to be rich with Spellstones. Be the first to find them! </description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>26</difficulty>
+    <reward>
+      <pack>18</pack>
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1023</id>
+    <min_level>4</min_level>
+    <max_level>10</max_level>
+    <name>Lost in the Woods</name>
+    <portrait>wolf</portrait>
+    <description>A child has gone missing near the Southern Woods. Witnesses last spotted him near a known wolf den.</description>
+    <duration>540</duration>
+    <decay>480</decay>
+    <difficulty>8</difficulty>
+    <reward>
+      <item id="1011" number="1" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1024</id>
+    <min_level>4</min_level>
+    <max_level>10</max_level>
+    <name>Crop Rotation</name>
+    <portrait>wolf</portrait>
+    <description>Farms have been having trouble keeping the woodland beasts out of their stock. Help clear the woods of creatures!</description>
+    <duration>540</duration>
+    <decay>480</decay>
+    <difficulty>7</difficulty>
+    <reward>
+      <item id="1002" number="1" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1025</id>
+    <min_level>3</min_level>
+    <max_level>13</max_level>
+    <name>Briar Wing</name>
+    <portrait>angelknight</portrait>
+    <description>An Angelic Knight has gotten her wings caught in the briar patch. She needs our help to escape.</description>
+    <duration>540</duration>
+    <decay>480</decay>
+    <difficulty>9</difficulty>
+    <reward>
+      <pack>19</pack>
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1026</id>
+    <min_level>5</min_level>
+    <max_level>15</max_level>
+    <name>Wing Beats</name>
+    <portrait>angelknight</portrait>
+    <description>The Aether angels have started battling void minions on the edge of The Void. Lend them aid!</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>13</difficulty>
+    <reward>
+      <pack>19</pack>
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1027</id>
+    <min_level>4</min_level>
+    <max_level>10</max_level>
+    <name>Grubs Potion</name>
+    <portrait>raven</portrait>
+    <description>Raven says we need grubs to help Elyse with a very important potion. Help him search in the near by swamp!</description>
+    <duration>540</duration>
+    <decay>480</decay>
+    <difficulty>8</difficulty>
+    <reward>
+      <item id="1011" number="1" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1028</id>
+    <min_level>10</min_level>
+    <max_level>20</max_level>
+    <name>Airship Repairs</name>
+    <portrait>raven</portrait>
+    <description>Your airship's engine is on its last leg. Travel to the city and collect the parts needed to repair it.</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>19</difficulty>
+    <reward>
+      <item id="2001" number="8" />
+    </reward>
+    <passive_mission>
+      <id>1029</id>
+      <min_level>12</min_level>
+      <max_level>22</max_level>
+      <name>Borrowing</name>
+      <portrait>goblinmerchant</portrait>
+      <description>The goblin found some abandoned valuables in a near by home! He needs help gaining entrance to the house. </description>
+      <duration>1380</duration>
+      <decay>480</decay>
+      <difficulty>21</difficulty>
+      <reward>
+        <item id="1012" number="2" />
+      </reward>
+    </passive_mission>
+  </passive_mission>
+  <passive_mission>
+    <id>1030</id>
+    <min_level>6</min_level>
+    <max_level>16</max_level>
+    <name>Little Thief</name>
+    <portrait>goblinmerchant</portrait>
+    <description>A small Soul Wisp has been sneaking in and stealing the Goblin's goods. Set up a trap and catch the creature.</description>
+    <duration>1080</duration>
+    <decay>480</decay>
+    <difficulty>14</difficulty>
+    <reward>
+      <item id="1012" number="1" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1031</id>
+    <min_level>15</min_level>
+    <max_level>25</max_level>
+    <name>Thou Shall Not Pass</name>
+    <portrait>balrog</portrait>
+    <description>Tarian needs a brave adventurer to defeat the Orobas that has been blocking a nearby bridge. It has been attacking travelers who attempt to cross.</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>25</difficulty>
+    <reward>
+      <card id="510" level="1" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1032</id>
+    <min_level>20</min_level>
+    <max_level>30</max_level>
+    <name>Stomach Pains</name>
+    <portrait>balrog</portrait>
+    <description>The Balrog has taken residence outside Karthos. This wouldn't be a problem normally, but it drank the lava lake and is passing especially potent gas.</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>27</difficulty>
+    <reward>
+      <item id="1012" number="2" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1033</id>
+    <min_level>4</min_level>
+    <max_level>10</max_level>
+    <name>Ocean Cries</name>
+    <portrait>mermaid</portrait>
+    <description>A sailor reported hearing the cries of a small girl coming from the ocean. He hasn't returned from his investigation yet...</description>
+    <duration>540</duration>
+    <decay>480</decay>
+    <difficulty>6</difficulty>
+    <reward>
+      <item id="1011" number="1" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1034</id>
+    <min_level>8</min_level>
+    <max_level>18</max_level>
+    <name>Rise of the Water</name>
+    <portrait>mermaid</portrait>
+    <description>Mermaids have been seen placing spells on the frogs of the Luminis rivers. They started attacking the villagers, help stop them!</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>17</difficulty>
+    <reward>
+      <pack>17</pack>
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1035</id>
+    <min_level>3</min_level>
+    <max_level>13</max_level>
+    <name>Baron Bad</name>
+    <portrait>invisibleassassin</portrait>
+    <description>An evil baron has been imprisoning the innocent. Sneak into his estates and free them without getting caught.</description>
+    <duration>720</duration>
+    <decay>480</decay>
+    <difficulty>9</difficulty>
+    <reward>
+      <item id="1011" number="2" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1036</id>
+    <min_level>7</min_level>
+    <max_level>17</max_level>
+    <name>Noble Assignment</name>
+    <portrait>invisibleassassin</portrait>
+    <description>An assassination attempt has been made on a Luminis noble. They are looking to hire additional nightly guards.</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>17</difficulty>
+    <reward>
+      <pack>20</pack>
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1037</id>
+    <min_level>11</min_level>
+    <max_level>21</max_level>
+    <name>Elaria Under Siege</name>
+    <portrait>voidminions</portrait>
+    <description>Void Minions have appeared in the woods around the Elaria Expedition. Help the Elaria Captain defeat the monsters before they harm the researchers!</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>20</difficulty>
+    <reward>
+      <card id="510" level="1" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1038</id>
+    <min_level>13</min_level>
+    <max_level>23</max_level>
+    <name>Luminis Under Siege</name>
+    <portrait>voidminions</portrait>
+    <description>The city of Luminis is under attack from Void Minions. Defeat them before they hurt the civilians!</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>22</difficulty>
+    <reward>
+      <item id="1012" number="1" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1039</id>
+    <min_level>4</min_level>
+    <max_level>10</max_level>
+    <name>Spirit Unrest</name>
+    <portrait>wraithden</portrait>
+    <description>A wraith has been seen during Aria's spell incantations. Perhaps it is someone from her past? Help her reach out to the spirit.</description>
+    <duration>540</duration>
+    <decay>480</decay>
+    <difficulty>7</difficulty>
+    <reward>
+      <item id="2001" number="4" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1040</id>
+    <min_level>14</min_level>
+    <max_level>24</max_level>
+    <name>Graveyard Uprising</name>
+    <portrait>wraithden</portrait>
+    <description>Wraiths have been heard from the graveyards near the Void. Help Aria with an incantation that can put them to rest peacefully.</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>23</difficulty>
+    <reward>
+      <item id="1012" number="2" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1041</id>
+    <min_level>18</min_level>
+    <max_level>30</max_level>
+    <name>Darkness Liberates</name>
+    <portrait>void</portrait>
+    <description>The Monstrosity has arose from The Void once more. Defeat it and make sure it does not rise again!</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>29</difficulty>
+    <reward>
+      <card id="510" level="1" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1042</id>
+    <min_level>22</min_level>
+    <max_level>32</max_level>
+    <name>Dark Influence</name>
+    <portrait>void</portrait>
+    <description>The Void Monstrosity is spreading its influence across the continent. Bring it down and restore balance to the region</description>
+    <duration>2820</duration>
+    <decay>480</decay>
+    <difficulty>32</difficulty>
+    <reward>
+      <item id="2001" number="12" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1043</id>
+    <min_level>19</min_level>
+    <max_level>30</max_level>
+    <name>Attack of Titan</name>
+    <portrait>firetitan</portrait>
+    <description>A Fire Titan has broken into the inner city of Luminis. Defeat it before it destroys everything!</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>30</difficulty>
+    <reward>
+      <item id="1011" number="5" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1044</id>
+    <min_level>17</min_level>
+    <max_level>27</max_level>
+    <name>Army of Chaos</name>
+    <portrait>firetitan</portrait>
+    <description>A Fire Titan has gathered an army of undead near the forests of Luminis. Defeat it and disperse the army before it turns its attention on the Expedition.</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>28</difficulty>
+    <reward>
+      <item id="1012" number="2" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1045</id>
+    <min_level>11</min_level>
+    <max_level>21</max_level>
+    <name>Tyrant Unleashed</name>
+    <portrait>maniacgeneral</portrait>
+    <description>The maniac general that attacked Elaria is on the loose again, terrorizing a port city on the oceans near Luminis.</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>21</difficulty>
+    <reward>
+      <card id="510" level="1" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1046</id>
+    <min_level>15</min_level>
+    <max_level>25</max_level>
+    <name>Salt Ruins</name>
+    <portrait>maniacgeneral</portrait>
+    <description>A disturbance has been reported in the Salt Wastes. A strange man has been breaking into ruins in search of something. Find out what they are after.</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>25</difficulty>
+    <reward>
+      <pack>18</pack>
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1047</id>
+    <min_level>3</min_level>
+    <max_level>13</max_level>
+    <name>Band of Brushes</name>
+    <portrait>skeletonwarrior</portrait>
+    <description>A band of skeletons has made off with some brushes used to uncover buried treasures in Elaria. Track them down!</description>
+    <duration>720</duration>
+    <decay>480</decay>
+    <difficulty>11</difficulty>
+    <reward>
+      <pack>20</pack>
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1048</id>
+    <min_level>4</min_level>
+    <max_level>14</max_level>
+    <name>Bone Meal</name>
+    <portrait>skeletonwarrior</portrait>
+    <description>A rogue skeleton stole the main course of a banquet feast in a nearby town. We're not sure what he will do with it, but bring it back!</description>
+    <duration>1080</duration>
+    <decay>480</decay>
+    <difficulty>14</difficulty>
+    <reward>
+      <card id="510" level="1" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1049</id>
+    <min_level>17</min_level>
+    <max_level>27</max_level>
+    <name>Tremors in the Center</name>
+    <portrait>tremorwurm</portrait>
+    <description>The Tremor Wurm has exploded directly in the center of a town hall on the edge of The Void. Defeat it before it eats everything in sight!</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>26</difficulty>
+    <reward>
+      <pack>20</pack>
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1050</id>
+    <min_level>23</min_level>
+    <max_level>33</max_level>
+    <name>One Big Tremor</name>
+    <portrait>tremorwurm</portrait>
+    <description>A great Tremor Wurm twice the size of the one you fought in The Void has appeared in the wilderness. Defeat it before it's too late!</description>
+    <duration>2160</duration>
+    <decay>480</decay>
+    <difficulty>31</difficulty>
+    <reward>
+      <pack>18</pack>
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1051</id>
+    <min_level>1</min_level>
+    <max_level>5</max_level>
+    <name>Homesick</name>
+    <portrait>elyse</portrait>
+    <description>Elyse is requesting special packaging so she can send a gift to her family back home. We should be able to pick up the packaging in any nearby village.</description>
+    <duration>180</duration>
+    <decay>480</decay>
+    <difficulty>2</difficulty>
+    <reward>
+      <item id="1001" number="1" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1052</id>
+    <min_level>1</min_level>
+    <max_level>5</max_level>
+    <name>Fresh Meat</name>
+    <portrait>ranger</portrait>
+    <description>Another wave of new adventurers has landed in Arcantica and have already stumbled into the undead. Help the Ranger guide the new recruits!</description>
+    <duration>180</duration>
+    <decay>480</decay>
+    <difficulty>3</difficulty>
+    <reward>
+      <item id="1001" number="1" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1053</id>
+    <min_level>1</min_level>
+    <max_level>6</max_level>
+    <name>Fish Out of Water</name>
+    <portrait>templeguardian</portrait>
+    <description>Since his ship wreck Oda has developed a fear of the sea. Perhaps a surprise boat trip will help him overcome his fears!</description>
+    <duration>180</duration>
+    <decay>480</decay>
+    <difficulty>3</difficulty>
+    <reward>
+      <item id="1011" number="1" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1054</id>
+    <min_level>1</min_level>
+    <max_level>6</max_level>
+    <name>Rogue Skeleton</name>
+    <portrait>skeletonwarrior</portrait>
+    <description>A lone skeleton has wandered into the Elaria Expedition. Find where it's hiding and take it out before it hurts someone!</description>
+    <duration>240</duration>
+    <decay>480</decay>
+    <difficulty>4</difficulty>
+    <reward>
+      <item id="2001" number="2" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1055</id>
+    <min_level>1</min_level>
+    <max_level>7</max_level>
+    <name>Lost Shipment</name>
+    <portrait>goblinmerchant</portrait>
+    <description>The goblin lost one of his crates of Spellstones when the undead attacked! If you help him find it, he will let you keep one.</description>
+    <duration>240</duration>
+    <decay>480</decay>
+    <difficulty>5</difficulty>
+    <reward>
+      <pack>17</pack>
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1056</id>
+    <min_level>23</min_level>
+    <max_level>33</max_level>
+    <name>Babysitting</name>
+    <portrait>dragontamer</portrait>
+    <description>Dragon Tamer has asked you to watch her baby dragons while she patches up her armor. Flame retardant clothing is advised.</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>30</difficulty>
+    <reward>
+      <pack>16</pack>
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1057</id>
+    <min_level>32</min_level>
+    <max_level>40</max_level>
+    <name>Under the Weather</name>
+    <portrait>dragontamer</portrait>
+    <description>One of  Dragon Tamer's dragons is sick. She needs 1 cup molten lava, 1 large rabbit, and 5 obsidian flowers to nurse him back to health.</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>37</difficulty>
+    <reward>
+      <item id="2001" number="4" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1058</id>
+    <min_level>29</min_level>
+    <max_level>39</max_level>
+    <name>Race To The Finish</name>
+    <portrait>dragontamer</portrait>
+    <description>Dragon Tamer wants to race! She has offered you her storm dragon to compete with. Beat her in a race around the Celestial Vault!</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>35</difficulty>
+    <reward>
+      <item id="1012" number="1" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1059</id>
+    <min_level>24</min_level>
+    <max_level>34</max_level>
+    <name>The Midas Touch</name>
+    <portrait>goldelemental</portrait>
+    <description>A citizen of Luminis has trapped a Gold Incarnate in an effort to gain its riches. It's a danger to the city; safely free it before it escapes!</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>31</difficulty>
+    <reward>
+      <pack>16</pack>
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1060</id>
+    <min_level>33</min_level>
+    <max_level>40</max_level>
+    <name>Gold Drops</name>
+    <portrait>goldelemental</portrait>
+    <description>You have found a wandering Gold Incarnate in the Celestial Vault. It has left steaming piles of riches in its wake. Carefully collect the gold it left behind!</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>37</difficulty>
+    <reward>
+      <item id="2001" number="2" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1061</id>
+    <min_level>30</min_level>
+    <max_level>40</max_level>
+    <name>Gold Rush</name>
+    <portrait>goldelemental</portrait>
+    <description>A Gold Incarnate has escaped from the Celestial Vault and is terrorizing Elaria. Stop the elemental before it causes any harm!</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>38</difficulty>
+    <reward>
+      <item id="1012" number="1" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1062</id>
+    <min_level>25</min_level>
+    <max_level>35</max_level>
+    <name>Doctor on Call</name>
+    <portrait>icedragon</portrait>
+    <description>A sick Ice Dragon has been spotted in The Void. It seems confused and delirious. Dragon Tamer says 10 pounds of snow, 200 mint leaves, and 7 frost flowers will help bring it back to its senses.</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>32</difficulty>
+    <reward>
+      <pack>14</pack>
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1063</id>
+    <min_level>34</min_level>
+    <max_level>40</max_level>
+    <name>The Winter Festival</name>
+    <portrait>icedragon</portrait>
+    <description>Luminis is having a winter festival, but the lack of snow has ruined the festivities. Wrangle an Ice Dragon to help bring snow to the festival!</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>40</difficulty>
+    <reward>
+      <item id="2001" number="2" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1064</id>
+    <min_level>31</min_level>
+    <max_level>40</max_level>
+    <name>Some Like it A Mild Temperature</name>
+    <portrait>icedragon</portrait>
+    <description>You hear rumors that a great treasure lies within a cave in Karthos. However, it's too hot for you to safely enter. Lure an Ice Dragon to the caves to help cool it down!</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>36</difficulty>
+    <reward>
+      <item id="1012" number="1" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1065</id>
+    <min_level>26</min_level>
+    <max_level>36</max_level>
+    <name>Wind and Fire</name>
+    <portrait>lanternguardian</portrait>
+    <description>A Cyclone Elemental has gotten a little too friendly with a Smoldering Elemental. The results could be disastrous. Help the Lantern Guardian separate the two safely.</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>31</difficulty>
+    <reward>
+      <pack>14</pack>
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1066</id>
+    <min_level>35</min_level>
+    <max_level>40</max_level>
+    <name>Words with Fiends</name>
+    <portrait>lanternguardian</portrait>
+    <description>The Lantern Guardian is having trouble fending off intruders from the Celestial Vault. You have a book that may help him: 'Using Our Words to Find Conflict Resolution'.</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>38</difficulty>
+    <reward>
+      <pack>15</pack>
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1067</id>
+    <min_level>23</min_level>
+    <max_level>33</max_level>
+    <name>Lost Light</name>
+    <portrait>lanternguardian</portrait>
+    <description>The Lantern Guardian has lost his lantern! He is too embarrassed to ask, but he needs your help finding it.</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>30</difficulty>
+    <reward>
+      <item id="2001" number="3" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1068</id>
+    <min_level>27</min_level>
+    <max_level>37</max_level>
+    <name>Unwelcome Houseguest</name>
+    <portrait>moltendragon</portrait>
+    <description>A Lavatail Dragon has made its home on top of the airship. He's burning holes in the exterior! Safely relocate the dragon before he does anymore damage.</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>34</difficulty>
+    <reward>
+      <pack>15</pack>
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1069</id>
+    <min_level>24</min_level>
+    <max_level>34</max_level>
+    <name>Good Boy</name>
+    <portrait>moltendragon</portrait>
+    <description>A Lavatail Dragon has become fond of you and has started following you on your adventures. He plays a bit rough; train him before he burns a hole in your armor!</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>31</difficulty>
+    <reward>
+      <item id="2001" number="4" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1070</id>
+    <min_level>30</min_level>
+    <max_level>40</max_level>
+    <name>Frozen Graves</name>
+    <portrait>moltendragon</portrait>
+    <description>An Ice Golem froze a fellow adventurer’s airship solid. Lure a Lavatail Dragon to the scene to help you rescue its crew!</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>37</difficulty>
+    <reward>
+      <item id="1012" number="1" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1071</id>
+    <min_level>28</min_level>
+    <max_level>38</max_level>
+    <name>Harsh Winds</name>
+    <portrait>windstormelemental</portrait>
+    <description>A Windstorm Elemental is heading towards the void. It may inadvertently spread the void corruption! Divert its course before it's too late.</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>34</difficulty>
+    <reward>
+      <pack>14</pack>
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1072</id>
+    <min_level>25</min_level>
+    <max_level>35</max_level>
+    <name>Bad Hair Day</name>
+    <portrait>windstormelemental</portrait>
+    <description>Luminis's famed 'Best Hairdo' competition is in danger of being ruined by nearby Windstorm Elementals. Divert them from the competition before they mess up any dos!</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>32</difficulty>
+    <reward>
+      <item id="2001" number="3" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1073</id>
+    <min_level>32</min_level>
+    <max_level>40</max_level>
+    <name>Troubled Landings</name>
+    <portrait>windstormelemental</portrait>
+    <description>A Windstorm Elemental is traveling under a fleet of airships trying to land on Arcantica. Lure them away from the airships so they can land safely!</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>36</difficulty>
+    <reward>
+      <item id="2001" number="4" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1074</id>
+    <min_level>29</min_level>
+    <max_level>39</max_level>
+    <name>Singing Lessons</name>
+    <portrait>groc</portrait>
+    <description>The Thunder Elementals have become unusually aggressive. Groc knows an ancient melody that will help soothe them.</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>37</difficulty>
+    <reward>
+      <pack>16</pack>
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1075</id>
+    <min_level>26</min_level>
+    <max_level>36</max_level>
+    <name>Dark Skies</name>
+    <portrait>groc</portrait>
+    <description>A crew of Aether bandits have started an assault on the Celestial Vault. Help Groc defend the elementals.</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>34</difficulty>
+    <reward>
+      <item id="1012" number="1" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1076</id>
+    <min_level>33</min_level>
+    <max_level>40</max_level>
+    <name>Thorn in My Side</name>
+    <portrait>groc</portrait>
+    <description>Groc has had a stick stuck in his shoulder for a few millennia. Help him remove it!</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>39</difficulty>
+    <reward>
+      <item id="2001" number="4" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1077</id>
+    <min_level>30</min_level>
+    <max_level>40</max_level>
+    <name>Dinner Party</name>
+    <portrait>lichking</portrait>
+    <description>Tarian is trying to teach the undead some manners. Help him throw a dinner party and teach the undead to chew with their mouth closed.</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>35</difficulty>
+    <reward>
+      <item id="2001" number="4" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1078</id>
+    <min_level>27</min_level>
+    <max_level>37</max_level>
+    <name>A Small Gesture</name>
+    <portrait>lichking</portrait>
+    <description>Tarian would like to get a gift for Aria. Help him gather a dozen black roses and a box of chocolate covered roaches.</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>35</difficulty>
+    <reward>
+      <item id="2001" number="4" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1079</id>
+    <min_level>34</min_level>
+    <max_level>40</max_level>
+    <name>Sharpened Steel</name>
+    <portrait>lichking</portrait>
+    <description>Tarian's axe is getting a bit dull. Take it to the local blacksmith to get it sharpened!</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>38</difficulty>
+    <reward>
+      <pack>20</pack>
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1080</id>
+    <min_level>31</min_level>
+    <max_level>40</max_level>
+    <name>Expected Results</name>
+    <portrait>seraph</portrait>
+    <description>There is a flying competition in Luminis. Samael would be disgraced if he lost to a commoner. Help him train!</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>36</difficulty>
+    <reward>
+      <pack>15</pack>
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1081</id>
+    <min_level>28</min_level>
+    <max_level>38</max_level>
+    <name>Training Camp</name>
+    <portrait>seraph</portrait>
+    <description>Samael's dueling skills have gotten a little dull. A few rounds of sparring would be a great help to him.</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>35</difficulty>
+    <reward>
+      <item id="1012" number="1" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1082</id>
+    <min_level>34</min_level>
+    <max_level>40</max_level>
+    <name>Aetherial Gaffe</name>
+    <portrait>seraph</portrait>
+    <description>Embarrassing rumors about Samael have been spreading across Luminis. Samael is adamant that they are false. Help him dispel the rumors by finding out who started them.</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>37</difficulty>
+    <reward>
+      <item id="1012" number="1" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1083</id>
+    <min_level>18</min_level>
+    <max_level>28</max_level>
+    <name>Stuck in the Gears</name>
+    <portrait>royalengineer</portrait>
+    <description>Some debris in the engines has left an Aether ship derelict on the shores of the Seastone Citadel. They request aid. Find out what got lodged in the gears!</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>26</difficulty>
+    <reward>
+      <item id="2515" number="2" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1084</id>
+    <min_level>25</min_level>
+    <max_level>35</max_level>
+    <name>Sweeping the Floors</name>
+    <portrait>oldmonk</portrait>
+    <description>The monk of the First Order has requested aid in cleaning the Seastone Citadel. Oda begrudgingly accepted and is looking for help to make the job faster.</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>33</difficulty>
+    <reward>
+      <item id="2515" number="2" />
+    </reward>
+  </passive_mission>
+  <passive_mission>
+    <id>1085</id>
+    <min_level>34</min_level>
+    <max_level>40</max_level>
+    <name>Birds of a Feather</name>
+    <portrait>aviansoldier2</portrait>
+    <description>A band of Avians have been thieving travelers' possessions near the Seastone Citadel. Track them down and return the stolen items they have obtained.</description>
+    <duration>1380</duration>
+    <decay>480</decay>
+    <difficulty>39</difficulty>
+    <reward>
+      <item id="2515" number="3" />
+    </reward>
+  </passive_mission>
+</root>
