@@ -1121,22 +1121,22 @@ var SIMULATOR = {};
             if (current_assault.timer > 0) {
                 current_assault.timer--;
                 if (debug) echo += debug_name(current_assault) + ' reduces its timer<br>';
-            }
 
-            // Check valor
-            if (current_assault.hasValor() && current_assault.isActive() && current_assault.isUnjammed()) {
-                var enemy = field_o_assaults[key];
-                if (debug) echo += debug_name(current_assault) + ' activates valor';
-                if (!enemy) {
-                    if (debug) echo += ' but there is no opposing enemy.<br/>'
-                } else if (current_assault.adjustedAttack() < enemy.adjustedAttack()) {
-                    current_assault.attack_valor = current_assault.valor;
-                    if (debug) echo += ', boosting its attack by ' + current_assault.valor + '<br/>';
-                } else {
-                    if (debug) echo += ' but enemy is not strong enough.<br/>'
+                // Check valor
+                if (current_assault.valor && current_assault.isActive()) {
+                    var enemy = field_o_assaults[i];
+                    if (enemy && current_assault.adjustedAttack() < enemy.adjustedAttack()) {
+                        current_assault.attack_valor = current_assault.valor;
+                        if (debug) echo += debug_name(current_assault) + ' activates valor, boosting its attack by ' + current_assault.valor + '<br/>';
+                    } else if (debug) {
+                        echo += debug_name(current_assault) + ' activates valor but ';
+                        if (!enemy) {
+                            echo += 'there is no opposing enemy.<br/>'
+                        } else {
+                            echo += 'enemy is not strong enough.<br/>'
+                        }
+                    }
                 }
-                // Once valor is checked, it will not be checked again
-                current_assault.valor_triggered = true;
             }
 
             current_assault.enfeebled = 0;
