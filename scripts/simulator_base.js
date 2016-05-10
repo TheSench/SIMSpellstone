@@ -1115,8 +1115,8 @@ var SIMULATOR = {};
         var field_o_assaults = field[o]['assaults'];
         // Count down timer on your field
         // Remove from your field: Enfeeble, Protect
-        for (var key = 0, len = field_p_assaults.length; key < len; key++) {
-            var current_assault = field_p_assaults[key];
+        for (var i = 0, len = field_p_assaults.length; i < len; i++) {
+            var current_assault = field_p_assaults[i];
 
             if (current_assault.timer > 0) {
                 current_assault.timer--;

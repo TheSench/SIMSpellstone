@@ -102,10 +102,14 @@ var SIM_CONTROLLER;
             for (i = 0; i < selected.length; i++) {
                 var id = selected[i];
                 var battleground = BATTLEGROUNDS[id];
-                if (battleground.effect.skill) {
-                    battlegrounds.onTurn.push(MakeBattleground(battleground.name, battleground.effect.skill));
-                } else if (battleground.effect.evolve_skill || battleground.effect.add_skill) {
-                    battlegrounds.onCreate.push(MakeSkillModifier(battleground.name, battleground.effect));
+                for (var j = 0; j < battleground.effect.length; j++) {
+                    var effect = battleground.effect[j];
+                    var effect_type = effect.effect_type;
+                    if (effect_type === "skill") {
+                        battlegrounds.onTurn.push(MakeBattleground(battleground.name, effect));
+                    } else if (effect_type === "evolve_skill" || effect_type === "add_skill") {
+                        battlegrounds.onCreate.push(MakeSkillModifier(battleground.name, effect));
+                    }
                 }
             }
         }
