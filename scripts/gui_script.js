@@ -94,19 +94,25 @@ window.onload = function () {
             }
         }
     }
-
+    
     // Check if missions are found
-    if (MISSIONS) {
+    if (typeof(TITANS) !== "undefined") {
+        var missionData = TITANS;
+    } else {
+        var missionData = MISSIONS;
+    }
+    // Check if missions are found
+    if (missionData) {
         // Mission drop down
         var select = document.getElementById('mission');
         var IDs = [];
-        for (var key in MISSIONS) {
+        for (var key in missionData) {
             IDs.push(Number(key));
         }
         IDs.sort();
         for (var i = 0; i < IDs.length; i++) {
             var key = IDs[i];
-            var mission = MISSIONS[key];
+            var mission = missionData[key];
             var option = document.createElement('option');
             option.appendChild(document.createTextNode(mission.name));
             option.value = mission.id;
@@ -314,33 +320,39 @@ window.onload = function () {
     var raidID = _GET('raid');
 
     var dropdown = document.getElementById('campaign');
-    dropdown.addEventListener("change", selectionChanged);
-    dropdown.addEventListener("change", onCampaignSelected);
-    dropdown.addEventListener("change", onMissionOrRaidSelected);
-    if (campaignID) {
-        dropdown.value = _GET('campaign');
-    } else if (missionID) {
-        for (var id in CAMPAIGNS) {
-            if (CAMPAIGNS[id].missions.includes(missionID)) {
-                dropdown.value = id;
+    if (dropdown) {
+        dropdown.addEventListener("change", selectionChanged);
+        dropdown.addEventListener("change", onCampaignSelected);
+        dropdown.addEventListener("change", onMissionOrRaidSelected);
+        if (campaignID) {
+            dropdown.value = _GET('campaign');
+        } else if (missionID) {
+            for (var id in CAMPAIGNS) {
+                if (CAMPAIGNS[id].missions.includes(missionID)) {
+                    dropdown.value = id;
+                }
             }
         }
+        dropdown.dispatchEvent(new Event("change"));
     }
-    dropdown.dispatchEvent(new Event("change"));
 
     var dropdown = document.getElementById('mission');
-    dropdown.addEventListener("change", selectionChanged);
-    if (missionID) {
-        dropdown.value = missionID;
-        dropdown.dispatchEvent(new Event("change"));
+    if (dropdown) {
+        dropdown.addEventListener("change", selectionChanged);
+        if (missionID) {
+            dropdown.value = missionID;
+            dropdown.dispatchEvent(new Event("change"));
+        }
     }
 
     var dropdown = document.getElementById('raid');
-    dropdown.addEventListener("change", selectionChanged);
-    dropdown.addEventListener("change", onMissionOrRaidSelected);
-    if (raidID && !(campaignID || missionID)) {
-        dropdown.value = raidID;
-        dropdown.dispatchEvent(new Event("change"));
+    if (dropdown) {
+        dropdown.addEventListener("change", selectionChanged);
+        dropdown.addEventListener("change", onMissionOrRaidSelected);
+        if (raidID && !(campaignID || missionID)) {
+            dropdown.value = raidID;
+            dropdown.dispatchEvent(new Event("change"));
+        }
     }
 
     if (_DEFINED('battleground')) {

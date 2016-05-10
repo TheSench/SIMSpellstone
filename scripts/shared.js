@@ -182,43 +182,7 @@ function cloneCard(original) {
 }
 
 var CardPrototype;
-var MakeAssault = (function () {
-    var Card = function (original_card, unit_level, skillModifiers) {
-        this.id = original_card.id;
-        this.name = original_card.name;
-        this.attack = original_card.attack;
-        this.health = original_card.health;
-        this.maxLevel = GetMaxLevel(original_card);
-        this.level = ((unit_level > this.maxLevel) ? this.maxLevel : unit_level);
-        this.cost = original_card.cost;
-        this.rarity = original_card.rarity;
-        this.card_type = original_card.card_type;
-        this.type = original_card.type;
-        this.sub_type = original_card.sub_type;
-        this.set = original_card.set;
-        var original_skills = original_card.skill;
-        if (this.level > 1) {
-            var upgrade;
-            for (var key in original_card.upgrades) {
-                upgrade = original_card.upgrades[key];
-                // Upgrade levels only contain attack/health/delay if they changed at that level.
-                if (upgrade.cost !== undefined) this.cost = upgrade.cost;
-                if (upgrade.health !== undefined) this.health = upgrade.health;
-                if (upgrade.attack !== undefined) this.attack = upgrade.attack;
-                if (upgrade.skill.length > 0) original_skills = upgrade.skill;
-                if (key == this.level) break;
-            }
-        }
-
-        if (skillModifiers) {
-            original_skills = original_skills.slice();
-            modifySkills(this, original_skills, skillModifiers);
-        }
-        copy_skills_2(this, original_skills);
-
-        return this;
-    }
-
+var makeUnit = (function () {
     function modifySkills(new_card, original_skills, skillModifiers) {
         new_card.highlighted = [];
         for (var i = 0; i < skillModifiers.length; i++) {
@@ -264,16 +228,10 @@ var MakeAssault = (function () {
         }
     }
 
-    Card.prototype = {
+    CardPrototype = {
         p: null,
         health_left: 0,
         timer: 0,
-        attack_rally: 0,
-        attack_berserk: 0,
-        attack_valor: 0,
-        valor_triggered: false,
-        attack_weaken: 0,
-        attack_corroded: 0,
         key: undefined,
         // Passives
         armored: 0,
@@ -287,6 +245,13 @@ var MakeAssault = (function () {
         pierce: 0,
         poison: 0,
         valor: 0,
+        // Attack Modifiers
+        attack_berserk: 0,
+        attack_valor: 0,
+        attack_rally: 0,
+        attack_weaken: 0,
+        attack_corroded: 0,
+        // Other Statuses
         // Statuses
         nullified: 0,
         poisoned: 0,
@@ -297,6 +262,107 @@ var MakeAssault = (function () {
         imbued: 0,
         jammed: false,
         silenced: false,
+
+        initialize: function (position) {
+            this.health_left = this.health;
+            if (!this.isCommander()) {
+                this.timer = this.cost;
+                // Setup status effects
+                this.attack_rally = 0;
+                this.attack_weaken = 0;
+                this.attack_corroded = 0;
+                this.attack_berserk = 0;
+                this.attack_valor = 0;
+                this.nullified = 0;
+                this.poisoned = 0;
+                this.scorched = 0;
+                this.enfeebled = 0;
+                this.protected = 0;
+                this.barrier_ice = 0;
+                this.enhanced = 0;
+                this.removeImbue();
+                this.jammed = false;
+                this.silenced = false;
+                this.played = false;
+            }
+            if (!this.reusableSkills) this.resetTimers();
+        },
+
+        // Handle timer and status effects that wear off at start of turn
+        upkeep: function () {
+
+            if (this.timer > 0) {
+                this.timer--;
+                if (debug) echo += debug_name(this) + ' reduces its timer<br>';
+
+                // Check valor
+                if (this.valor && this.isActive()) {
+                    var enemy = field_o_assaults[i];
+                    if (enemy && this.adjustedAttack() < enemy.adjustedAttack()) {
+                        this.attack_valor = this.valor;
+                        if (debug) echo += debug_name(this) + ' activates valor, boosting its attack by ' + this.valor + '<br/>';
+                    } else if (debug) {
+                        echo += debug_name(this) + ' activates valor but ';
+                        if (!enemy) {
+                            echo += 'there is no opposing enemy.<br/>'
+                        } else {
+                            echo += 'enemy is not strong enough.<br/>'
+                        }
+                    }
+                }
+            }
+
+            this.enfeebled = 0;
+            this.protected = 0;
+            this.barrier_ice = 0;
+            this.enhanced = 0;
+            this.removeImbue();
+        },
+
+        // Handle status effects that trigger/wear off at end of turn
+        endTurn: function () {
+            this.attack_rally = 0;
+            this.attack_weaken = 0;
+            this.nullified = 0;
+            this.silenced = false;
+            this.jammed = false;
+
+            var poison = this.poisoned;
+            if (poison) {
+                do_damage(this, poison);
+                if (debug) {
+                    echo += debug_name(this) + ' takes ' + amount + ' poison damage';
+                    echo += (!this.isAlive() ? ' and it dies' : '') + '<br>';
+                }
+            }
+
+            var scorch = this.scorched;
+            if (scorch) {
+                amount = scorch.amount;
+                do_damage(this, amount);
+                if (scorch.timer > 1) {
+                    scorch.timer--;
+                } else {
+                    this.scorched = 0;
+                }
+                if (debug) {
+                    echo += debug_name(this) + ' takes ' + amount + ' scorch damage';
+                    if (!this.isAlive()) echo += ' and it dies';
+                    else if (!this.scorched) echo += ' and scorch wears off';
+                    echo += '<br>';
+                }
+            }
+        },
+
+        countdownSkillTimers: function () {
+            var timers = this.skillTimers;
+            for (var i = 0, len = timers.length; i < len; i++) {
+                var skill = timers[i];
+                if (skill.countdown) {
+                    skill.countdown--;
+                }
+            }
+        },
 
         //Card ID is ...
         isCommander: function () {
@@ -349,11 +415,6 @@ var MakeAssault = (function () {
         // Unsilenced
         isUnsilenced: function () {
             return !(this.silenced);
-        },
-
-        // Has un-triggered valor
-        hasValor: function () {
-            return (this.valor && !this.valor_triggered);
         },
 
         imbue: function (skill) {
@@ -512,12 +573,44 @@ var MakeAssault = (function () {
         },
     }
 
-    CardPrototype = Card.prototype;
-
     return (function (original_card, unit_level, skillModifiers) {
         if (!unit_level) unit_level = 1;
-        return new Card(original_card, unit_level, skillModifiers);
-    })
+        var card = Object.create(CardPrototype);
+
+        card.id = original_card.id;
+        card.name = original_card.name;
+        card.attack = original_card.attack;
+        card.health = original_card.health;
+        card.maxLevel = GetMaxLevel(original_card);
+        card.level = ((unit_level > card.maxLevel) ? card.maxLevel : unit_level);
+        card.cost = original_card.cost;
+        card.rarity = original_card.rarity;
+        card.card_type = original_card.card_type;
+        card.type = original_card.type;
+        card.sub_type = original_card.sub_type;
+        card.set = original_card.set;
+        var original_skills = original_card.skill;
+        if (card.level > 1) {
+            var upgrade;
+            for (var key in original_card.upgrades) {
+                upgrade = original_card.upgrades[key];
+                // Upgrade levels only contain attack/health/delay if they changed at that level.
+                if (upgrade.cost !== undefined) card.cost = upgrade.cost;
+                if (upgrade.health !== undefined) card.health = upgrade.health;
+                if (upgrade.attack !== undefined) card.attack = upgrade.attack;
+                if (upgrade.skill.length > 0) original_skills = upgrade.skill;
+                if (key == card.level) break;
+            }
+        }
+
+        if (skillModifiers) {
+            original_skills = original_skills.slice();
+            modifySkills(card, original_skills, skillModifiers);
+        }
+        copy_skills_2(card, original_skills);
+
+        return card;
+    });
 }());
 
 var addRunes = function (card, runes) {
@@ -617,14 +710,15 @@ var canUseRune = function (card, runeID) {
 }
 
 var MakeSkillModifier = (function () {
-    var Modifier = function (name, effects) {
+    var Modifier = function (name, effect) {
         this.name = name;
-        if (effects.add_skill) {
+        var effect_type = effect.effect_type;
+        if (effect_type === "add_skill") {
             this.modifierType = "add";
-            this.effects = effects.add_skill;
-        } else if (effects.evolve_skill) {
+            this.effects = [effect];
+        } else if (effect_type === "evolve_skill") {
             this.modifierType = "evolve";
-            this.effects = effects.evolve_skill;
+            this.effects = [effect];
         }
     }
 
@@ -636,7 +730,7 @@ var MakeSkillModifier = (function () {
 var MakeBattleground = (function () {
     var Battleground = function (name, original_skills, mult) {
         this.name = name;
-        copy_skills_2(this, original_skills, mult);
+        copy_skills_2(this, [original_skills], mult);
     }
 
     Battleground.prototype = {
@@ -1792,7 +1886,7 @@ function get_card_by_id(unit, skillModifiers) {
         if (!current_card.skill) {
             current_card.skill = [];
         }
-        var cached = MakeAssault(current_card, unit.level, skillModifiers);
+        var cached = makeUnit(current_card, unit.level, skillModifiers);
         if (unit.runes) {
             cached.addRunes(unit.runes);
         } else {
@@ -1883,12 +1977,9 @@ function loadCard(id) {
 function get_card_name_by_id(id) {
     var card = loadCard(id);
     if (!card) return 0;
-    else if (card.set == 5002) return card.name + '*';
     else return card.name;
 }
 
-
-//Card ID is ...
 function is_commander(id) {
     var card = loadCard(id);
     return (card && card.card_type == '1');
