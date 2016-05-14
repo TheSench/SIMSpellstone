@@ -27731,6 +27731,246 @@ var CARDS = {
       },
     }
   },
+  "5056": {
+    "id": "5056",
+    "name": "Kaliri the Foremost",
+    "picture": "Avian_Highborn_A",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "10",
+    "attack": 3,
+    "health": 12,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "10",
+        "z": 10,
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 13,
+        "skill": [],
+      },
+      "3": {
+        "health": 14,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "10",
+            "z": 10,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "attack": 4,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "10",
+            "z": 10,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "flurry",
+            "c": 6,
+          },
+        ],
+      },
+    }
+  },
+  "15056": {
+    "id": "15056",
+    "name": "Kaliri the Champion",
+    "picture": "Avian_Highborn_A",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "10",
+    "attack": 4,
+    "health": 16,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 3,
+        "y": "10",
+        "z": 10,
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "flurry",
+        "c": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "10",
+            "z": 10,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "flurry",
+            "c": 5,
+          },
+        ],
+      },
+      "3": {
+        "health": 17,
+        "skill": [],
+      },
+      "4": {
+        "health": 18,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "10",
+            "z": 10,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "5": {
+        "health": 19,
+        "skill": [],
+      },
+      "6": {
+        "attack": 5,
+        "skill": [],
+      },
+    }
+  },
+  "25056": {
+    "id": "25056",
+    "name": "Kaliri the Paramount",
+    "picture": "Avian_Highborn_B",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "10",
+    "attack": 5,
+    "health": 20,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 3,
+        "y": "10",
+        "z": 10,
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "flurry",
+        "c": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 21,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "10",
+            "z": 10,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+      "4": {
+        "attack": 6,
+        "health": 22,
+        "skill": [],
+      },
+      "5": {
+        "health": 23,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "10",
+            "z": 10,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+    }
+  },
   "5057": {
     "id": "5057",
     "name": "Skystriker",
@@ -76230,49 +76470,10 @@ var CARDS = {
       },
     }
   },
-  "9992": {
-    "id": "9992",
-    "name": "",
-    "picture": "New10_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19992": {
-    "id": "19992",
-    "name": "",
-    "picture": "New10_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29992": {
-    "id": "29992",
-    "name": "",
-    "picture": "New10_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
   "9993": {
     "id": "9993",
     "name": "",
-    "picture": "New16_A",
+    "picture": "New10_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -76285,7 +76486,7 @@ var CARDS = {
   "19993": {
     "id": "19993",
     "name": "",
-    "picture": "New16_A",
+    "picture": "New10_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -76298,7 +76499,7 @@ var CARDS = {
   "29993": {
     "id": "29993",
     "name": "",
-    "picture": "New16_B",
+    "picture": "New10_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -76311,7 +76512,7 @@ var CARDS = {
   "9994": {
     "id": "9994",
     "name": "",
-    "picture": "New2_A",
+    "picture": "New16_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -76324,7 +76525,7 @@ var CARDS = {
   "19994": {
     "id": "19994",
     "name": "",
-    "picture": "New2_A",
+    "picture": "New16_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -76337,7 +76538,7 @@ var CARDS = {
   "29994": {
     "id": "29994",
     "name": "",
-    "picture": "New2_B",
+    "picture": "New16_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -76350,7 +76551,7 @@ var CARDS = {
   "9995": {
     "id": "9995",
     "name": "",
-    "picture": "New3_A",
+    "picture": "New2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -76363,7 +76564,7 @@ var CARDS = {
   "19995": {
     "id": "19995",
     "name": "",
-    "picture": "New3_A",
+    "picture": "New2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -76376,7 +76577,7 @@ var CARDS = {
   "29995": {
     "id": "29995",
     "name": "",
-    "picture": "New3_B",
+    "picture": "New2_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -76389,7 +76590,7 @@ var CARDS = {
   "9996": {
     "id": "9996",
     "name": "",
-    "picture": "New4_A",
+    "picture": "New3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -76402,7 +76603,7 @@ var CARDS = {
   "19996": {
     "id": "19996",
     "name": "",
-    "picture": "New4_A",
+    "picture": "New3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -76415,7 +76616,7 @@ var CARDS = {
   "29996": {
     "id": "29996",
     "name": "",
-    "picture": "New4_B",
+    "picture": "New3_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -76428,7 +76629,7 @@ var CARDS = {
   "9997": {
     "id": "9997",
     "name": "",
-    "picture": "New5_A",
+    "picture": "New4_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -76441,7 +76642,7 @@ var CARDS = {
   "19997": {
     "id": "19997",
     "name": "",
-    "picture": "New5_A",
+    "picture": "New4_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -76454,7 +76655,7 @@ var CARDS = {
   "29997": {
     "id": "29997",
     "name": "",
-    "picture": "New5_B",
+    "picture": "New4_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -76467,7 +76668,7 @@ var CARDS = {
   "9998": {
     "id": "9998",
     "name": "",
-    "picture": "New6_A",
+    "picture": "New5_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -76480,7 +76681,7 @@ var CARDS = {
   "19998": {
     "id": "19998",
     "name": "",
-    "picture": "New6_A",
+    "picture": "New5_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -76493,7 +76694,7 @@ var CARDS = {
   "29998": {
     "id": "29998",
     "name": "",
-    "picture": "New6_B",
+    "picture": "New5_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -76506,7 +76707,7 @@ var CARDS = {
   "9999": {
     "id": "9999",
     "name": "",
-    "picture": "New8_A",
+    "picture": "New6_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -76519,7 +76720,7 @@ var CARDS = {
   "19999": {
     "id": "19999",
     "name": "",
-    "picture": "New8_A",
+    "picture": "New6_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -76532,7 +76733,7 @@ var CARDS = {
   "29999": {
     "id": "29999",
     "name": "",
-    "picture": "New8_B",
+    "picture": "New6_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -100735,6 +100936,7 @@ var FUSIONS = {
   "15053" : "25053",
   "15054" : "25054",
   "15055" : "25055",
+  "15056" : "25056",
   "15057" : "25057",
   "15058" : "25058",
   "1600" : "11600",
@@ -100982,6 +101184,7 @@ var FUSIONS = {
   "5053" : "15053",
   "5054" : "15054",
   "5055" : "15055",
+  "5056" : "15056",
   "5057" : "15057",
   "5058" : "15058",
   "6000" : "16000",

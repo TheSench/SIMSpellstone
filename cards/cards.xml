@@ -15025,6 +15025,137 @@
     </upgrade>
   </unit>
   <unit>
+    <id>5056</id>
+    <card_type>2</card_type>
+    <name>Kaliri the Foremost</name>
+    <picture>Avian_Highborn_A</picture>
+    <asset_bundle>56</asset_bundle>
+    <hidden_until_time>1463418000</hidden_until_time>
+    <!-- Mon, 16 May 2016 17:00:00 GMT -->
+    <attack>3</attack>
+    <health>12</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="2" y="10" />
+    <skill id="weaken" x="1" all="1" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="rally" x="3" y="10" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="rally" x="3" y="10" />
+      <skill id="weaken" x="1" all="1" />
+      <skill id="flurry" c="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15056</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Kaliri the Champion</name>
+    <picture>Avian_Highborn_A</picture>
+    <asset_bundle>56</asset_bundle>
+    <hidden_until_time>1463418000</hidden_until_time>
+    <!-- Mon, 16 May 2016 17:00:00 GMT -->
+    <attack>4</attack>
+    <health>16</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="3" y="10" />
+    <skill id="weaken" x="1" all="1" />
+    <skill id="flurry" c="6" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="rally" x="3" y="10" />
+      <skill id="weaken" x="1" all="1" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+      <skill id="rally" x="3" y="10" />
+      <skill id="weaken" x="1" all="1" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>5</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25056</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Kaliri the Paramount</name>
+    <picture>Avian_Highborn_B</picture>
+    <asset_bundle>56</asset_bundle>
+    <hidden_until_time>1463418000</hidden_until_time>
+    <!-- Mon, 16 May 2016 17:00:00 GMT -->
+    <attack>5</attack>
+    <health>20</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="3" y="10" />
+    <skill id="weaken" x="1" all="1" />
+    <skill id="flurry" c="4" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="rally" x="3" y="10" />
+      <skill id="weaken" x="1" all="1" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>22</health>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="rally" x="4" y="10" />
+      <skill id="weaken" x="2" all="1" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>5057</id>
     <card_type>2</card_type>
     <name>Skystriker</name>
