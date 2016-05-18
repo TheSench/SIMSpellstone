@@ -426,12 +426,12 @@
 .sprite-Mystical_Fox_Spirit_A{ background-position: -0px -120px; background-image: url('../res/cardImages/SpriteSheet5.jpg');}
 .sprite-Mystical_Fox_Spirit_B{ background-position: -84px -120px; background-image: url('../res/cardImages/SpriteSheet5.jpg');}
 .sprite-mythicDragon_A{ background-position: -168px -120px; background-image: url('../res/cardImages/SpriteSheet5.jpg');}
-.sprite-New11_A{ background-position: -252px -120px; background-image: url('../res/cardImages/SpriteSheet5.jpg');}
-.sprite-New11_B{ background-position: -336px -120px; background-image: url('../res/cardImages/SpriteSheet5.jpg');}
-.sprite-New12_A{ background-position: -420px -120px; background-image: url('../res/cardImages/SpriteSheet5.jpg');}
-.sprite-New12_B{ background-position: -504px -120px; background-image: url('../res/cardImages/SpriteSheet5.jpg');}
-.sprite-New13_A{ background-position: -588px -120px; background-image: url('../res/cardImages/SpriteSheet5.jpg');}
-.sprite-New13_B{ background-position: -672px -120px; background-image: url('../res/cardImages/SpriteSheet5.jpg');}
+.sprite-Owl_Knight_B{ background-position: -252px -120px; background-image: url('../res/cardImages/SpriteSheet5.jpg');}
+.sprite-Owl_Knight_A{ background-position: -336px -120px; background-image: url('../res/cardImages/SpriteSheet5.jpg');}
+.sprite-Pheonix_A{ background-position: -420px -120px; background-image: url('../res/cardImages/SpriteSheet5.jpg');}
+.sprite-Pheonix_B{ background-position: -504px -120px; background-image: url('../res/cardImages/SpriteSheet5.jpg');}
+.sprite-Speed_Runner_A{ background-position: -588px -120px; background-image: url('../res/cardImages/SpriteSheet5.jpg');}
+.sprite-Speed_Runner_B{ background-position: -672px -120px; background-image: url('../res/cardImages/SpriteSheet5.jpg');}
 .sprite-New5_A{ background-position: -756px -120px; background-image: url('../res/cardImages/SpriteSheet5.jpg');}
 .sprite-Avian_Devourer_B{ background-position: -0px -240px; background-image: url('../res/cardImages/SpriteSheet5.jpg');}
 .sprite-New5_B{ background-position: -84px -240px; background-image: url('../res/cardImages/SpriteSheet5.jpg');}
@@ -447,8 +447,8 @@
 .sprite-Magpie_Rogue_B{ background-position: -84px -360px; background-image: url('../res/cardImages/SpriteSheet5.jpg');}
 .sprite-Avian_Mage_A{ background-position: -168px -360px; background-image: url('../res/cardImages/SpriteSheet5.jpg');}
 .sprite-Avian_Mage_B{ background-position: -252px -360px; background-image: url('../res/cardImages/SpriteSheet5.jpg');}
-.sprite-New8_A{ background-position: -336px -360px; background-image: url('../res/cardImages/SpriteSheet5.jpg');}
-.sprite-New8_B{ background-position: -420px -360px; background-image: url('../res/cardImages/SpriteSheet5.jpg');}
+.sprite-Avian_Highborn_A{ background-position: -336px -360px; background-image: url('../res/cardImages/SpriteSheet5.jpg');}
+.sprite-Avian_Highborn_B{ background-position: -420px -360px; background-image: url('../res/cardImages/SpriteSheet5.jpg');}
 .sprite-Grass_Feather_Avian_A{ background-position: -504px -360px; background-image: url('../res/cardImages/SpriteSheet5.jpg');}
 .sprite-Grass_Feather_Avian_B{ background-position: -588px -360px; background-image: url('../res/cardImages/SpriteSheet5.jpg');}
 .sprite-Night_Dragon_A{ background-position: -672px -360px; background-image: url('../res/cardImages/SpriteSheet5.jpg');}
@@ -735,6 +735,7 @@
 .sprite-New6_B{ background-position: -756px -120px; background-image: url('../res/cardImages/SpriteSheet8.jpg');}
 .sprite-New6_A{ background-position: -0px -240px; background-image: url('../res/cardImages/SpriteSheet8.jpg');}
 .sprite-Avian_Devourer_A{ background-position: -84px -240px; background-image: url('../res/cardImages/SpriteSheet8.jpg');}
+.sprite-New11_A{ background-position: -168px -240px; background-image: url('../res/cardImages/SpriteSheet8.jpg');}
 .portrait-portrait_aetherguardian{ background-position: -0px -0px; background-image: url('../res/cardImages/PortraitSheet1.jpg');}
 .portrait-portrait_angelknight{ background-position: -84px -0px; background-image: url('../res/cardImages/PortraitSheet1.jpg');}
 .portrait-portrait_angelqueen{ background-position: -168px -0px; background-image: url('../res/cardImages/PortraitSheet1.jpg');}
