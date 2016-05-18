@@ -76470,10 +76470,49 @@ var CARDS = {
       },
     }
   },
+  "9992": {
+    "id": "9992",
+    "name": "",
+    "picture": "New10_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19992": {
+    "id": "19992",
+    "name": "",
+    "picture": "New10_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "29992": {
+    "id": "29992",
+    "name": "",
+    "picture": "New10_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
   "9993": {
     "id": "9993",
     "name": "",
-    "picture": "New10_A",
+    "picture": "New11_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -76486,7 +76525,7 @@ var CARDS = {
   "19993": {
     "id": "19993",
     "name": "",
-    "picture": "New10_A",
+    "picture": "New11_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -76499,7 +76538,7 @@ var CARDS = {
   "29993": {
     "id": "29993",
     "name": "",
-    "picture": "New10_B",
+    "picture": "New11_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
