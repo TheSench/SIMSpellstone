@@ -745,37 +745,35 @@ var showAdvancedFilters = function (skill) {
 
     switch (skill) {
         // x="1" y="0" all="0" c="0" s="0"
-        case 'evade':
         case 'armored':
-        case 'counter':
+        case 'berserk':
         case 'burn':
+        case 'counter':
+        case 'evade':
         case 'frost':
+        case 'leech':
         case 'nullify':
         case 'pierce':
         case 'poison':
-        case 'leech':
-        case 'berserk':
+        case 'valor':
             $("div#amount").show();
             break;
-        // x="1" y="1" all="0" c="0" s="0"
-        case 'corrosive':
-        case 'legion':
+            // x="1" y="1" all="0" c="0" s="0"
         case 'fervor':
+        case 'legion':
         case 'reanimate':
         case 'resurrect':
-        case 'taunt':
-        case 'valor':
             $("div#amount").show();
             $("div#faction").show();
             break;
             // x="1" y="1" all="1" c="0" s="0"
-        case 'rally':
         case 'heal':
         case 'protect':
         case 'protect_ice':
+        case 'rally':
             $("div#amount").show();
-            $("div#faction").show();
             $("label[for=all]").show();
+            $("div#faction").show();
             break;
             // x="1" y="0" all="1" c="0" s="0"
         case 'enfeeble':
@@ -785,18 +783,12 @@ var showAdvancedFilters = function (skill) {
             $("label[for=all]").show();
             break;
             // x="1" y="1" all="1" c="1" s="1"
-        case 'imbue':
         case 'enhance':
+        case 'imbue':
             $("div#amount").show();
-            $("div#faction").show();
             $("label[for=all]").show();
-            $("div#timer").show();
-            $("div#skill").show();
-            break;
-            // x="1" y="1" all="0" c="1" s="0"
-        case 'silence':
-            $("div#amount").show();
             $("div#faction").show();
+            $("div#skill").show();
             $("div#timer").show();
             break;
             // x="0" y="0" all="1" c="1" s="0"

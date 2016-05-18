@@ -423,8 +423,7 @@ var makeUnit = (function () {
             }
             var imbued = this.imbued;
 
-            var skills;
-            var imbueSkills;
+            var imbueSkillsKey;
             var skillID = skill.id;
             switch (skillID) {
                 // Passives
@@ -448,8 +447,7 @@ var makeUnit = (function () {
                 case 'fervor':
                 case 'rally':
                 case 'legion':
-                    skills = this.empowerSkills;
-                    imbueSkills = 'empowerSkills';
+                    imbueSkillsKey = 'empowerSkills';
                     break;
                     // Activation skills (can occur twice on a card)
                 case 'enfeeble':
@@ -463,14 +461,17 @@ var makeUnit = (function () {
                 case 'strike':
                 case 'weaken':
                 default:
-                    skills = this.skill;
-                    imbueSkills = 'skill';
+                    imbueSkillsKey = 'skill';
                     break;
             }
 
             // Mark the first added skill index
-            if (imbued[imbueSkills] < 0) imbued[imbueSkills] = skills.length;
-            skills.push(skill);
+            if (imbued[imbueSkillsKey] === undefined) {
+                var original = this[imbueSkillsKey];
+                imbued[imbueSkillsKey] = original.length;
+                this[imbueSkillsKey] = original.slice();
+            }
+            this[imbueSkillsKey].push(skill);
         },
 
         removeImbue: function () {
