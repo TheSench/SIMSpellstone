@@ -499,9 +499,17 @@ var filterFaction = function (button, faction) {
     applyFilters();
 }
 
+var nameDebouncer = null;
 var filterName = function (field) {
-    nameHidden = {};
     var filter = field.value.toLowerCase();
+    if (nameDebouncer !== null) {
+        clearTimeout(nameDebouncer);
+    }
+    nameDebouncer = setTimeout(filterNameInner, 250, filter);
+}
+
+function filterNameInner(filter) {
+    nameHidden = {};
     if (filter) {
         for (var i = 0, len = units.length; i < len; i++) {
             var unit = units[i];
