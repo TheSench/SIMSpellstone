@@ -28492,6 +28492,234 @@ var CARDS = {
       },
     }
   },
+  "5059": {
+    "id": "5059",
+    "name": "Bemola",
+    "picture": "Ice_Bird_A",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "10",
+    "attack": 1,
+    "health": 10,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "frost",
+        "x": 1,
+      },
+      {
+        "id": "frost",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 11,
+        "skill": [],
+      },
+      "3": {
+        "health": 12,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 1,
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+        ],
+      },
+      "4": {
+        "health": 13,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 2,
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+        ],
+      },
+      "6": {
+        "attack": 2,
+        "skill": [],
+      },
+    }
+  },
+  "15059": {
+    "id": "15059",
+    "name": "Bemola the Wind",
+    "picture": "Ice_Bird_A",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "10",
+    "attack": 2,
+    "health": 15,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 2,
+      },
+      {
+        "id": "frost",
+        "x": 1,
+      },
+      {
+        "id": "frost",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 2,
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+        ],
+      },
+      "3": {
+        "health": 16,
+        "skill": [],
+      },
+      "4": {
+        "health": 17,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 3,
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 3,
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "25059": {
+    "id": "25059",
+    "name": "Bemola the Frost",
+    "picture": "Ice_Bird_B",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "10",
+    "attack": 2,
+    "health": 18,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 3,
+      },
+      {
+        "id": "frost",
+        "x": 2,
+      },
+      {
+        "id": "frost",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 19,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 4,
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "health": 20,
+        "skill": [],
+      },
+      "5": {
+        "health": 21,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 4,
+          },
+          {
+            "id": "frost",
+            "x": 3,
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
   "6000": {
     "id": "6000",
     "name": "Furnace Mech",
@@ -40653,6 +40881,222 @@ var CARDS = {
           {
             "id": "burn",
             "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "6056": {
+    "id": "6056",
+    "name": "Potoo",
+    "picture": "Potoo_Hypnotist_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "10",
+    "attack": 3,
+    "health": 11,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 2,
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "nullify",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 12,
+        "skill": [],
+      },
+      "3": {
+        "health": 13,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 3,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "nullify",
+            "x": 1,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "nullify",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "16056": {
+    "id": "16056",
+    "name": "Potoo Hypnotist",
+    "picture": "Potoo_Hypnotist_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "10",
+    "attack": 4,
+    "health": 14,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 4,
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "nullify",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 15,
+        "skill": [],
+      },
+      "3": {
+        "health": 16,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 5,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "nullify",
+            "x": 1,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 5,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "nullify",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "26056": {
+    "id": "26056",
+    "name": "Potoo Mindwarper",
+    "picture": "Potoo_Hypnotist_B",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "10",
+    "attack": 4,
+    "health": 18,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 5,
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "nullify",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 5,
+        "skill": [],
+      },
+      "3": {
+        "health": 19,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 6,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "nullify",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 6,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "nullify",
+            "x": 2,
           },
         ],
       },
@@ -53878,6 +54322,231 @@ var CARDS = {
       },
     }
   },
+  "7057": {
+    "id": "7057",
+    "name": "Bill Crasher",
+    "picture": "Big_Bill_Bird_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "10",
+    "attack": 3,
+    "health": 8,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "fervor",
+        "x": 1,
+        "y": "10",
+        "z": 10,
+      },
+      {
+        "id": "pierce",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 9,
+        "skill": [],
+      },
+      "3": {
+        "health": 10,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "10",
+            "z": 10,
+          },
+          {
+            "id": "pierce",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "10",
+            "z": 10,
+          },
+          {
+            "id": "pierce",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "17057": {
+    "id": "17057",
+    "name": "Bill Smasher",
+    "picture": "Big_Bill_Bird_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "10",
+    "attack": 4,
+    "health": 11,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "10",
+        "z": 10,
+      },
+      {
+        "id": "pierce",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 12,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "10",
+            "z": 10,
+          },
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 13,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "10",
+            "z": 10,
+          },
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "27057": {
+    "id": "27057",
+    "name": "Bill Basher",
+    "picture": "Big_Bill_Bird_B",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "10",
+    "attack": 4,
+    "health": 14,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "10",
+        "z": 10,
+      },
+      {
+        "id": "pierce",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 5,
+        "skill": [],
+      },
+      "3": {
+        "health": 15,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "10",
+            "z": 10,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "10",
+            "z": 10,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
   "8000": {
     "id": "8000",
     "name": "Frostbite Giant",
@@ -59106,6 +59775,1382 @@ var CARDS = {
           {
             "id": "berserk",
             "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "8020": {
+    "id": "8020",
+    "name": "Fortune's Scallywag",
+    "picture": "Magpie_Rogue_A",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "10",
+    "attack": 4,
+    "health": 9,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "legion",
+        "x": 1,
+      },
+      {
+        "id": "pierce",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 10,
+        "skill": [],
+      },
+      "3": {
+        "attack": 5,
+        "health": 11,
+        "skill": [],
+      },
+      "4": {
+        "health": 12,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "legion",
+            "x": 1,
+          },
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+        ],
+      },
+      "5": {
+        "health": 13,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "legion",
+            "x": 2,
+          },
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+        ],
+      },
+    }
+  },
+  "18020": {
+    "id": "18020",
+    "name": "Fortune's Scallywag",
+    "picture": "Magpie_Rogue_A",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "10",
+    "attack": 6,
+    "health": 14,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 2,
+      },
+      {
+        "id": "legion",
+        "x": 2,
+      },
+      {
+        "id": "pierce",
+        "x": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 15,
+        "skill": [],
+      },
+      "3": {
+        "health": 16,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "legion",
+            "x": 2,
+          },
+          {
+            "id": "pierce",
+            "x": 6,
+          },
+        ],
+      },
+      "4": {
+        "health": 17,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "legion",
+            "x": 3,
+          },
+          {
+            "id": "pierce",
+            "x": 6,
+          },
+        ],
+      },
+      "5": {
+        "health": 18,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "legion",
+            "x": 3,
+          },
+          {
+            "id": "pierce",
+            "x": 6,
+          },
+        ],
+      },
+      "6": {
+        "attack": 7,
+        "skill": [],
+      },
+    }
+  },
+  "28020": {
+    "id": "28020",
+    "name": "Fortune's Scallywag",
+    "picture": "Magpie_Rogue_A",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "10",
+    "attack": 7,
+    "health": 19,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 3,
+      },
+      {
+        "id": "legion",
+        "x": 3,
+      },
+      {
+        "id": "pierce",
+        "x": 7,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 20,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "legion",
+            "x": 4,
+          },
+          {
+            "id": "pierce",
+            "x": 7,
+          },
+        ],
+      },
+      "3": {
+        "health": 21,
+        "skill": [],
+      },
+      "4": {
+        "attack": 8,
+        "health": 22,
+        "skill": [],
+      },
+      "5": {
+        "health": 24,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 4,
+          },
+          {
+            "id": "legion",
+            "x": 5,
+          },
+          {
+            "id": "pierce",
+            "x": 7,
+          },
+        ],
+      },
+      "6": {
+        "health": 26,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 5,
+          },
+          {
+            "id": "legion",
+            "x": 6,
+          },
+          {
+            "id": "pierce",
+            "x": 8,
+          },
+        ],
+      },
+    }
+  },
+  "8021": {
+    "id": "8021",
+    "name": "Fortune's Captain",
+    "picture": "Lost_Captain_A",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "7",
+    "attack": 3,
+    "health": 13,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "legion",
+        "x": 1,
+      },
+      {
+        "id": "burn",
+        "x": 2,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "health": 15,
+        "skill": [
+          {
+            "id": "legion",
+            "x": 2,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "4": {
+        "health": 17,
+        "skill": [
+          {
+            "id": "legion",
+            "x": 2,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "5": {
+        "attack": 4,
+        "health": 18,
+        "skill": [],
+      },
+      "6": {
+        "health": 19,
+        "skill": [
+          {
+            "id": "legion",
+            "x": 3,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "18021": {
+    "id": "18021",
+    "name": "Fortune's Captain",
+    "picture": "Lost_Captain_A",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "7",
+    "attack": 4,
+    "health": 21,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "legion",
+        "x": 3,
+      },
+      {
+        "id": "burn",
+        "x": 3,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 22,
+        "skill": [
+          {
+            "id": "legion",
+            "x": 3,
+          },
+          {
+            "id": "burn",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "3": {
+        "health": 23,
+        "skill": [
+          {
+            "id": "legion",
+            "x": 3,
+          },
+          {
+            "id": "burn",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "health": 25,
+        "skill": [
+          {
+            "id": "legion",
+            "x": 4,
+          },
+          {
+            "id": "burn",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "attack": 5,
+        "health": 26,
+        "skill": [],
+      },
+      "6": {
+        "health": 27,
+        "skill": [
+          {
+            "id": "legion",
+            "x": 4,
+          },
+          {
+            "id": "burn",
+            "x": 5,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "28021": {
+    "id": "28021",
+    "name": "Fortune's Captain",
+    "picture": "Lost_Captain_A",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "7",
+    "attack": 5,
+    "health": 29,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "legion",
+        "x": 4,
+      },
+      {
+        "id": "burn",
+        "x": 5,
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 30,
+        "skill": [
+          {
+            "id": "legion",
+            "x": 5,
+          },
+          {
+            "id": "burn",
+            "x": 5,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "3": {
+        "attack": 6,
+        "health": 31,
+        "skill": [],
+      },
+      "4": {
+        "health": 33,
+        "skill": [
+          {
+            "id": "legion",
+            "x": 5,
+          },
+          {
+            "id": "burn",
+            "x": 6,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "health": 36,
+        "skill": [
+          {
+            "id": "legion",
+            "x": 6,
+          },
+          {
+            "id": "burn",
+            "x": 6,
+          },
+          {
+            "id": "berserk",
+            "x": 4,
+          },
+        ],
+      },
+      "6": {
+        "health": 39,
+        "skill": [
+          {
+            "id": "legion",
+            "x": 7,
+          },
+          {
+            "id": "burn",
+            "x": 7,
+          },
+          {
+            "id": "berserk",
+            "x": 5,
+          },
+        ],
+      },
+    }
+  },
+  "8022": {
+    "id": "8022",
+    "name": "Fortune's Mateys",
+    "picture": "Swiftlance_Raiders_B",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "2",
+    "attack": 2,
+    "health": 6,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "legion",
+        "x": 1,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 7,
+        "skill": [],
+      },
+      "3": {
+        "health": 8,
+        "skill": [],
+      },
+      "4": {
+        "health": 9,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+          },
+        ],
+      },
+      "5": {
+        "health": 10,
+        "skill": [],
+      },
+      "6": {
+        "attack": 3,
+        "health": 11,
+        "skill": [],
+      },
+    }
+  },
+  "18022": {
+    "id": "18022",
+    "name": "Fortune's Mateys",
+    "picture": "Swiftlance_Raiders_B",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "2",
+    "attack": 3,
+    "health": 12,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "legion",
+        "x": 2,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 13,
+        "skill": [],
+      },
+      "3": {
+        "health": 14,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+          },
+        ],
+      },
+      "4": {
+        "health": 15,
+        "skill": [],
+      },
+      "5": {
+        "health": 16,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 3,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "28022": {
+    "id": "28022",
+    "name": "Fortune's Mateys",
+    "picture": "Swiftlance_Raiders_B",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "2",
+    "attack": 3,
+    "health": 17,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "legion",
+        "x": 3,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 4,
+        "health": 18,
+        "skill": [],
+      },
+      "3": {
+        "health": 19,
+        "skill": [],
+      },
+      "4": {
+        "health": 20,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 3,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "attack": 5,
+        "health": 21,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 4,
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 4,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "8023": {
+    "id": "8023",
+    "name": "Fortune's Swabbies",
+    "picture": "Frog_Pirates_B",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "4",
+    "attack": 3,
+    "health": 9,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "legion",
+        "x": 1,
+      },
+      {
+        "id": "enfeeble",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "poison",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 10,
+        "skill": [],
+      },
+      "3": {
+        "health": 11,
+        "skill": [
+          {
+            "id": "legion",
+            "x": 1,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "attack": 4,
+        "health": 12,
+        "skill": [],
+      },
+      "5": {
+        "health": 13,
+        "skill": [],
+      },
+      "6": {
+        "health": 14,
+        "skill": [
+          {
+            "id": "legion",
+            "x": 1,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "18023": {
+    "id": "18023",
+    "name": "Fortune's Swabbies",
+    "picture": "Frog_Pirates_B",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "4",
+    "attack": 4,
+    "health": 15,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "legion",
+        "x": 2,
+      },
+      {
+        "id": "enfeeble",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "poison",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 16,
+        "skill": [],
+      },
+      "3": {
+        "health": 17,
+        "skill": [
+          {
+            "id": "legion",
+            "x": 2,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 4,
+          },
+        ],
+      },
+      "4": {
+        "attack": 5,
+        "health": 18,
+        "skill": [],
+      },
+      "5": {
+        "health": 19,
+        "skill": [
+          {
+            "id": "legion",
+            "x": 2,
+          },
+          {
+            "id": "enfeeble",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 4,
+          },
+        ],
+      },
+      "6": {
+        "health": 20,
+        "skill": [],
+      },
+    }
+  },
+  "28023": {
+    "id": "28023",
+    "name": "Fortune's Swabbies",
+    "picture": "Frog_Pirates_B",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "4",
+    "attack": 5,
+    "health": 21,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "legion",
+        "x": 3,
+      },
+      {
+        "id": "enfeeble",
+        "x": 3,
+        "all": "1",
+      },
+      {
+        "id": "poison",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 22,
+        "skill": [
+          {
+            "id": "legion",
+            "x": 3,
+          },
+          {
+            "id": "enfeeble",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 5,
+          },
+        ],
+      },
+      "3": {
+        "health": 23,
+        "skill": [],
+      },
+      "4": {
+        "attack": 6,
+        "health": 24,
+        "skill": [],
+      },
+      "5": {
+        "health": 25,
+        "skill": [
+          {
+            "id": "legion",
+            "x": 4,
+          },
+          {
+            "id": "enfeeble",
+            "x": 4,
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 6,
+          },
+        ],
+      },
+      "6": {
+        "attack": 7,
+        "health": 28,
+        "skill": [
+          {
+            "id": "legion",
+            "x": 5,
+          },
+          {
+            "id": "enfeeble",
+            "x": 5,
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 7,
+          },
+        ],
+      },
+    }
+  },
+  "8024": {
+    "id": "8024",
+    "name": "Fortune's Boatswain",
+    "picture": "Goblin_Explosioneer_B",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "11",
+    "attack": 3,
+    "health": 18,
+    "cost": 4,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 2,
+      },
+      {
+        "id": "legion",
+        "x": 1,
+      },
+      {
+        "id": "strike",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 19,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 3,
+          },
+          {
+            "id": "legion",
+            "x": 1,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+        ],
+      },
+      "3": {
+        "health": 21,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 3,
+          },
+          {
+            "id": "legion",
+            "x": 1,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 23,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 3,
+          },
+          {
+            "id": "legion",
+            "x": 1,
+          },
+          {
+            "id": "strike",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "health": 25,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 3,
+          },
+          {
+            "id": "legion",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 4,
+          },
+        ],
+      },
+      "6": {
+        "health": 27,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 4,
+          },
+          {
+            "id": "legion",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "18024": {
+    "id": "18024",
+    "name": "Fortune's Boatswain",
+    "picture": "Goblin_Explosioneer_B",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "11",
+    "attack": 3,
+    "health": 29,
+    "cost": 4,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 4,
+      },
+      {
+        "id": "legion",
+        "x": 2,
+      },
+      {
+        "id": "strike",
+        "x": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 31,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 5,
+          },
+          {
+            "id": "legion",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 5,
+          },
+        ],
+      },
+      "3": {
+        "health": 33,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 5,
+          },
+          {
+            "id": "legion",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 6,
+          },
+        ],
+      },
+      "4": {
+        "health": 34,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 5,
+          },
+          {
+            "id": "legion",
+            "x": 3,
+          },
+          {
+            "id": "strike",
+            "x": 6,
+          },
+        ],
+      },
+      "5": {
+        "health": 36,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 5,
+          },
+          {
+            "id": "legion",
+            "x": 3,
+          },
+          {
+            "id": "strike",
+            "x": 7,
+          },
+        ],
+      },
+      "6": {
+        "health": 38,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 6,
+          },
+          {
+            "id": "legion",
+            "x": 3,
+          },
+          {
+            "id": "strike",
+            "x": 7,
+          },
+        ],
+      },
+    }
+  },
+  "28024": {
+    "id": "28024",
+    "name": "Fortune's Boatswain",
+    "picture": "Goblin_Explosioneer_B",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "11",
+    "attack": 3,
+    "health": 43,
+    "cost": 4,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 6,
+      },
+      {
+        "id": "legion",
+        "x": 3,
+      },
+      {
+        "id": "strike",
+        "x": 8,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 46,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 6,
+          },
+          {
+            "id": "legion",
+            "x": 4,
+          },
+          {
+            "id": "strike",
+            "x": 8,
+          },
+        ],
+      },
+      "3": {
+        "health": 49,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 7,
+          },
+          {
+            "id": "legion",
+            "x": 4,
+          },
+          {
+            "id": "strike",
+            "x": 8,
+          },
+        ],
+      },
+      "4": {
+        "health": 52,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 7,
+          },
+          {
+            "id": "legion",
+            "x": 5,
+          },
+          {
+            "id": "strike",
+            "x": 9,
+          },
+        ],
+      },
+      "5": {
+        "health": 54,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 8,
+          },
+          {
+            "id": "legion",
+            "x": 6,
+          },
+          {
+            "id": "strike",
+            "x": 9,
+          },
+        ],
+      },
+      "6": {
+        "health": 58,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 9,
+          },
+          {
+            "id": "legion",
+            "x": 7,
+          },
+          {
+            "id": "strike",
+            "x": 10,
           },
         ],
       },
@@ -76179,6 +78224,143 @@ var CARDS = {
       },
     }
   },
+  "309": {
+    "id": "309",
+    "name": "Fortune's Favor",
+    "picture": "NotFound",
+    "rarity": "5",
+    "set": "7000",
+    "card_type": "1",
+    "type": "2",
+    "health": 30,
+    "cost": ,
+    "skill": [
+      {
+        "id": "enhance",
+        "x": 1,
+        "s": "legion",
+      },
+      {
+        "id": "strike",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 37,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "legion",
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+        ],
+      },
+      "3": {
+        "health": 45,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "legion",
+          },
+          {
+            "id": "strike",
+            "x": 4,
+          },
+          {
+            "id": "imbue",
+            "c": 4,
+            "s": "flurry",
+          },
+        ],
+      },
+      "4": {
+        "health": 52,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "legion",
+            "all": "1",
+          },
+          {
+            "id": "strike",
+            "x": 5,
+          },
+          {
+            "id": "imbue",
+            "c": 4,
+            "s": "flurry",
+          },
+        ],
+      },
+      "5": {
+        "health": 60,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "legion",
+            "all": "1",
+          },
+          {
+            "id": "strike",
+            "x": 5,
+          },
+          {
+            "id": "imbue",
+            "c": 3,
+            "s": "flurry",
+          },
+        ],
+      },
+      "6": {
+        "health": 67,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 2,
+            "s": "legion",
+            "all": "1",
+          },
+          {
+            "id": "strike",
+            "x": 6,
+          },
+          {
+            "id": "imbue",
+            "c": 3,
+            "s": "flurry",
+          },
+        ],
+      },
+      "7": {
+        "health": 75,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 3,
+            "s": "legion",
+            "all": "1",
+          },
+          {
+            "id": "strike",
+            "x": 7,
+          },
+          {
+            "id": "imbue",
+            "c": 2,
+            "s": "flurry",
+          },
+        ],
+      },
+    }
+  },
   "500": {
     "id": "500",
     "name": "Arcane Dustling",
@@ -76470,127 +78652,10 @@ var CARDS = {
       },
     }
   },
-  "9992": {
-    "id": "9992",
-    "name": "",
-    "picture": "New10_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19992": {
-    "id": "19992",
-    "name": "",
-    "picture": "New10_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29992": {
-    "id": "29992",
-    "name": "",
-    "picture": "New10_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9993": {
-    "id": "9993",
-    "name": "",
-    "picture": "New11_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19993": {
-    "id": "19993",
-    "name": "",
-    "picture": "New11_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29993": {
-    "id": "29993",
-    "name": "",
-    "picture": "New11_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9994": {
-    "id": "9994",
-    "name": "",
-    "picture": "New16_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19994": {
-    "id": "19994",
-    "name": "",
-    "picture": "New16_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29994": {
-    "id": "29994",
-    "name": "",
-    "picture": "New16_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
   "9995": {
     "id": "9995",
     "name": "",
-    "picture": "New2_A",
+    "picture": "New10_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -76603,7 +78668,7 @@ var CARDS = {
   "19995": {
     "id": "19995",
     "name": "",
-    "picture": "New2_A",
+    "picture": "New10_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -76616,7 +78681,7 @@ var CARDS = {
   "29995": {
     "id": "29995",
     "name": "",
-    "picture": "New2_B",
+    "picture": "New10_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -76629,7 +78694,7 @@ var CARDS = {
   "9996": {
     "id": "9996",
     "name": "",
-    "picture": "New3_A",
+    "picture": "New11_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -76642,7 +78707,7 @@ var CARDS = {
   "19996": {
     "id": "19996",
     "name": "",
-    "picture": "New3_A",
+    "picture": "New11_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -76655,7 +78720,7 @@ var CARDS = {
   "29996": {
     "id": "29996",
     "name": "",
-    "picture": "New3_B",
+    "picture": "New11_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -76668,7 +78733,7 @@ var CARDS = {
   "9997": {
     "id": "9997",
     "name": "",
-    "picture": "New4_A",
+    "picture": "New3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -76681,7 +78746,7 @@ var CARDS = {
   "19997": {
     "id": "19997",
     "name": "",
-    "picture": "New4_A",
+    "picture": "New3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -76694,7 +78759,7 @@ var CARDS = {
   "29997": {
     "id": "29997",
     "name": "",
-    "picture": "New4_B",
+    "picture": "New3_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -76707,7 +78772,7 @@ var CARDS = {
   "9998": {
     "id": "9998",
     "name": "",
-    "picture": "New5_A",
+    "picture": "New4_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -76720,7 +78785,7 @@ var CARDS = {
   "19998": {
     "id": "19998",
     "name": "",
-    "picture": "New5_A",
+    "picture": "New4_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -76733,7 +78798,7 @@ var CARDS = {
   "29998": {
     "id": "29998",
     "name": "",
-    "picture": "New5_B",
+    "picture": "New4_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -100978,6 +103043,7 @@ var FUSIONS = {
   "15056" : "25056",
   "15057" : "25057",
   "15058" : "25058",
+  "15059" : "25059",
   "1600" : "11600",
   "16000" : "26000",
   "16001" : "26001",
@@ -101040,6 +103106,7 @@ var FUSIONS = {
   "16053" : "26053",
   "16054" : "26054",
   "16055" : "26055",
+  "16056" : "26056",
   "1606" : "11606",
   "1607" : "11607",
   "1610" : "11610",
@@ -101118,6 +103185,7 @@ var FUSIONS = {
   "17053" : "27053",
   "17055" : "27055",
   "17056" : "27056",
+  "17057" : "27057",
   "18000" : "28000",
   "18001" : "28001",
   "18002" : "28002",
@@ -101132,6 +103200,11 @@ var FUSIONS = {
   "18017" : "28017",
   "18018" : "28018",
   "18019" : "28019",
+  "18020" : "28020",
+  "18021" : "28021",
+  "18022" : "28022",
+  "18023" : "28023",
+  "18024" : "28024",
   "2000" : "12000",
   "2001" : "12001",
   "2002" : "12002",
@@ -101226,6 +103299,7 @@ var FUSIONS = {
   "5056" : "15056",
   "5057" : "15057",
   "5058" : "15058",
+  "5059" : "15059",
   "6000" : "16000",
   "6001" : "16001",
   "6002" : "16002",
@@ -101282,6 +103356,7 @@ var FUSIONS = {
   "6053" : "16053",
   "6054" : "16054",
   "6055" : "16055",
+  "6056" : "16056",
   "7000" : "17000",
   "7001" : "17001",
   "7002" : "17002",
@@ -101338,6 +103413,7 @@ var FUSIONS = {
   "7053" : "17053",
   "7055" : "17055",
   "7056" : "17056",
+  "7057" : "17057",
   "8000" : "18000",
   "8001" : "18001",
   "8002" : "18002",
@@ -101351,7 +103427,12 @@ var FUSIONS = {
   "8016" : "18016",
   "8017" : "18017",
   "8018" : "18018",
-  "8019" : "18019"
+  "8019" : "18019",
+  "8020" : "18020",
+  "8021" : "18021",
+  "8022" : "18022",
+  "8023" : "18023",
+  "8024" : "18024"
 };
 var ACHIEVEMENTS = [];
 var BATTLEGROUNDS = [
