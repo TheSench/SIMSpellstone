@@ -7,7 +7,7 @@
     "1501": {
         "id": "1501",
         "name": "The Land Shatters...",
-        "hash": "GDcmpbBkeAWLUEIcnUEIcn4Ifcn4IfcnQkpen0oAfn0oAfno~zgno~zgn4RQinsQ0FtsQ0FtQVLGtQVLGt"
+        "hash": "cmpbBkeAWLUEIcnUEIcn4Ifcn4IfcnQkpen0oAfn0oAfno~zgno~zgn4RQinsQ0FtsQ0FtQVLGtQVLGt"
     },
     "1502": {
         "id": "1502",
@@ -37,7 +37,7 @@
     "1507": {
         "id": "1507",
         "name": "Solaron, The Origin",
-        "hash": "GDArAcBYQ!3FMD2TLMD2TLQ~qNcQ~qNcEWePcEWePc4sRRcsDFTcsDFTcYRKUcYRKUcYRKUc0ZiGtYe5Gt"
+        "hash": "ArAcBYQ!3FMD2TLMD2TLQ~qNcQ~qNcEWePcEWePc4sRRcsDFTcsDFTcYRKUcYRKUcYRKUc0ZiGtYe5Gt"
     },
     "1508": {
         "id": "1508",
