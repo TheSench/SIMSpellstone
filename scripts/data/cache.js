@@ -78233,7 +78233,7 @@ var CARDS = {
     "card_type": "1",
     "type": "2",
     "health": 30,
-    "cost": ,
+    "cost": 0,
     "skill": [
       {
         "id": "enhance",
