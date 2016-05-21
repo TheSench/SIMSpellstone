@@ -246,8 +246,8 @@
     <starting_level>26</starting_level>
     <!-- Starting Raid Level -->
     <effect>
-      <skill id="heal" x=".8" all="1" />
-      <skill id="rally" x=".4" all="1" />
+      <skill id="heal" x="1.1" all="1" />
+      <skill id="rally" x=".6" all="1" />
     </effect>
   </battleground>
   <!-- 1001+: Personal BGE -->
