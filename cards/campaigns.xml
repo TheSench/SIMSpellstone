@@ -2588,6 +2588,169 @@
     <find_item id="3033" drop_per_energy=".24" />
   </campaign>
   <!-- END Avian campaigns event 11 -->
+  <!-- START Dragon campaigns event 12 -->
+  <campaign>
+    <id>1064</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Lakeside</name>
+    <icon id="Mothers_Fire_01" bundle="17" />
+    <location_id>101</location_id>
+    <x>325</x>
+    <y>134</y>
+    <combatBG>CombatBGWyvernsWay</combatBG>
+    <missions>
+      <mission_id>5241</mission_id>
+      <mission_id>5242</mission_id>
+      <mission_id>5243</mission_id>
+      <mission_id>5244</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1318" />
+      <card level="3" id="1318" />
+      <card level="4" id="2041" />
+      <card level="5" id="1619" />
+      <card level="6" id="1619" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3034" drop_per_energy=".20" />
+  </campaign>
+  <campaign>
+    <id>1065</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Nasty Neighbours</name>
+    <icon id="Mothers_Fire_01" bundle="17" />
+    <location_id>101</location_id>
+    <x>119</x>
+    <y>181</y>
+    <combatBG>CombatBGWyvernsWay</combatBG>
+    <missions>
+      <mission_id>5245</mission_id>
+      <mission_id>5246</mission_id>
+      <mission_id>5247</mission_id>
+      <mission_id>5248</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1318" />
+      <card level="3" id="1318" />
+      <item level="4" id="3035" />
+      <card level="5" id="1619" />
+      <card level="6" id="1619" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3034" drop_per_energy=".21" />
+  </campaign>
+  <campaign>
+    <id>1066</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Lost Lambs</name>
+    <icon id="Mothers_Fire_01" bundle="17" />
+    <location_id>101</location_id>
+    <x>85</x>
+    <y>294</y>
+    <combatBG>CombatBGWyvernsWay</combatBG>
+    <missions>
+      <mission_id>5249</mission_id>
+      <mission_id>5250</mission_id>
+      <mission_id>5251</mission_id>
+      <mission_id>5252</mission_id>
+      <mission_id>5253</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1318" />
+      <card level="3" id="1318" />
+      <item level="4" id="3036" />
+      <card level="5" id="1619" />
+      <card level="6" id="1619" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3034" drop_per_energy=".22" />
+  </campaign>
+  <campaign>
+    <id>1067</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Worst Fears</name>
+    <icon id="Mothers_Fire_01" bundle="17" />
+    <location_id>101</location_id>
+    <x>253</x>
+    <y>252</y>
+    <combatBG>CombatBGWyvernsWay</combatBG>
+    <missions>
+      <mission_id>5254</mission_id>
+      <mission_id>5255</mission_id>
+      <mission_id>5256</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1318" />
+      <card level="3" id="1318" />
+      <card level="4" id="2041" />
+      <card level="5" id="1619" />
+      <card level="6" id="1619" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3034" drop_per_energy=".23" />
+  </campaign>
+  <campaign>
+    <id>1068</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Goblins Afoot</name>
+    <icon id="Mothers_Fire_01" bundle="17" />
+    <location_id>101</location_id>
+    <x>414</x>
+    <y>258</y>
+    <combatBG>CombatBGWyvernsWay</combatBG>
+    <missions>
+      <mission_id>5257</mission_id>
+      <mission_id>5258</mission_id>
+      <mission_id>5259</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1318" />
+      <card level="3" id="1318" />
+      <item level="4" id="3037" />
+      <card level="5" id="1619" />
+      <card level="6" id="1619" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3034" drop_per_energy=".24" />
+  </campaign>
+  <campaign>
+    <id>1069</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Sinister Intentions</name>
+    <icon id="Mothers_Fire_01" bundle="17" />
+    <location_id>101</location_id>
+    <x>706</x>
+    <y>210</y>
+    <combatBG>CombatBGWyvernsWay</combatBG>
+    <missions>
+      <mission_id>5260</mission_id>
+      <mission_id>5261</mission_id>
+      <mission_id>5262</mission_id>
+      <mission_id>5263</mission_id>
+      <mission_id>5264</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1318" />
+      <card level="3" id="1318" />
+      <card level="4" id="2041" />
+      <card level="5" id="1619" />
+      <card level="6" id="1619" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3034" drop_per_energy=".25" />
+  </campaign>
   <!-- START Mythic Campaigns -->
   <campaign>
     <id>3000</id>

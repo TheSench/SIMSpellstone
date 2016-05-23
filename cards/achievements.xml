@@ -3546,5 +3546,192 @@
     </reward>
   </achievement>
   <!-- END Event 11 Achievements -->
+  <!-- START Event 12 Achievements -->
+  <achievement>
+    <id>3100</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Lakeside</name>
+    <desc>Complete the 'Lakeside' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1064</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3101</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Lakeside Mastery</name>
+    <desc>Complete the 'Lakeside' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3098</achievement_req>
+    <req>
+      <campaign>1064</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3102</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Nasty Neighbours</name>
+    <desc>Complete the 'Nasty Neighbours' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1065</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3103</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Nasty Neighbours Mastery</name>
+    <desc>Complete the 'Nasty Neighbours' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3098</achievement_req>
+    <req>
+      <campaign>1065</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3104</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Lost Lambs</name>
+    <desc>Complete the 'Lost Lambs' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1066</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3105</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Lost Lambs Mastery</name>
+    <desc>Complete the 'Lost Lambs' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3098</achievement_req>
+    <req>
+      <campaign>1066</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3106</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Worst Fears</name>
+    <desc>Complete the 'Worst Fears' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1067</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3107</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Worst Fears Mastery</name>
+    <desc>Complete the 'Worst Fears' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3098</achievement_req>
+    <req>
+      <campaign>1067</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3108</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Goblins Afoot</name>
+    <desc>Complete the 'Goblins Afoot' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1068</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3109</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Goblins Afoot Mastery</name>
+    <desc>Complete the 'Goblins Afoot' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3098</achievement_req>
+    <req>
+      <campaign>1068</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3110</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Sinister Intentions</name>
+    <desc>Complete the 'Sinister Intentions' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1069</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3111</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Sinister Intentions Mastery</name>
+    <desc>Complete the 'Sinister Intentions' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3098</achievement_req>
+    <req>
+      <campaign>1069</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
 </root>

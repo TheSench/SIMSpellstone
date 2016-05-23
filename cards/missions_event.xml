@@ -6966,4 +6966,761 @@
       </line>
     </speech>
   </mission>
+  <!-- START Dragon Missions event 12 -->
+  <mission>
+    <id>5241</id>
+    <name>Toe Jam</name>
+    <energy>8</energy>
+    <desc>Fiona the Dragon Tamer wants to give one of her wyverns a bath at the lake in Tarragon Peak. However, the beast only wants to play with the other monsters. She chases it around with a wet rag.</desc>
+    <commander id="315" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" />
+      <card id="1018" />
+      <card id="7055" name="Valley Strider" />
+      <card id="1012" name="Cloud Sylph" />
+      <card id="1012" />
+      <card id="1017" name="Judgment" />
+      <card id="1017" />
+      <card id="1616" mastery_level="2" name="Werewarg" />
+      <card id="7038" mastery_level="2" name="Sol King" />
+      <card id="1614" mastery_level="3" name="Druid" />
+      <card id="2023" mastery_level="4" name="Grizzly Terror" />
+      <card id="2041" mastery_level="5" name="Sharpwing" />
+      <card id="6053" mastery_level="6" name="Squire Gorger" />
+      <card id="5031" mastery_level="7" name="Frostlance Valkyrie" />
+    </deck>
+    <speech>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>I told you to stop rolling around in the mud! Hey, listen to me! Leave that monster alone!</text>
+      </line>
+      <line>
+        <commander>moltendragon</commander>
+        <enemy>0</enemy>
+        <text>Hermph...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5242</id>
+    <name>Scamp Trap</name>
+    <energy>8</energy>
+    <desc>The wyvern pauses for a moment, letting Fiona scrub its scales. As soon as another monster runs by, the wyvern gives chase. Its tail splashes in the mud, coating its scales in grime. All of Fiona's hard work has already been undone. She sighs.</desc>
+    <commander id="314" />
+    <deck>
+      <card id="7017" name="Coral Elemental" />
+      <card id="7017" />
+      <card id="7017" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1311" />
+      <card id="7012" name="Life Drake" />
+      <card id="7012" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="1617" mastery_level="2" name="Water Elemental" />
+      <card id="2008" mastery_level="2" name="Shadow of Ash" />
+      <card id="6017" mastery_level="3" name="Tar Pit Stalker" />
+      <card id="5053" mastery_level="4" name="Anura Witch" />
+      <card id="7045" mastery_level="5" name="Sakura" />
+      <card id="2043" mastery_level="6" name="Eos" />
+      <card id="7043" mastery_level="7" name="Anima" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5243</id>
+    <name>Call of the Wyld</name>
+    <energy>8</energy>
+    <desc>A loud roar echoes throughout Tarragon Peaks. Fiona looks up to see a giant dragon circling the volcano.</desc>
+    <commander id="313" />
+    <deck>
+      <card id="7007" name="Water Serpent" />
+      <card id="7007" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="6006" />
+      <card id="7006" name="Treant Sapling" />
+      <card id="7006" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="7035" name="Carrion Tiger" />
+      <card id="1313" mastery_level="2" name="Lavafrog" />
+      <card id="7045" mastery_level="2" name="Sakura" />
+      <card id="1613" mastery_level="3" name="Acidic Spider" />
+      <card id="2020" mastery_level="4" name="Tidetaken Fighter" />
+      <card id="7035" mastery_level="5" name="Carrion Tiger" />
+      <card id="7048" mastery_level="6" name="Bogskull Widow" />
+      <card id="5055" mastery_level="7" name="Galewing" />
+    </deck>
+    <speech>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Woah, what was that?! Look, a wild dragon! Wait, it looks familiar...</text>
+      </line>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Isn't that the pretty greenback dragon you always have your eye on?</text>
+      </line>
+      <line>
+        <commander>moltendragon</commander>
+        <enemy>0</enemy>
+        <text> ...Raowr...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5244</id>
+    <name>Worrywart</name>
+    <energy>8</energy>
+    <desc>Fiona remembers seeing this wild dragon in the past. However, the dragon normally keeps to itself. What is it doing here? Has it come to see her wyvern?</desc>
+    <commander id="262" />
+    <deck>
+      <card id="1615" name="Rune Panther" />
+      <card id="1615" />
+      <card id="1012" name="Cloud Sylph" />
+      <card id="1012" />
+      <card id="7022" name="Beetle Tamer" />
+      <card id="7022" />
+      <card id="5020" name="Frost Frog" />
+      <card id="7053" name="Bee Eater" />
+      <card id="7007" mastery_level="2" name="Water Serpent" />
+      <card id="7020" mastery_level="2" name="Trapper Frog" />
+      <card id="1012" mastery_level="3" name="Cloud Sylph" />
+      <card id="2014" mastery_level="4" name="Tadpole Warmage" />
+      <card id="5011" mastery_level="5" name="Sky Whale" />
+      <card id="7052" mastery_level="6" name="Toad the Ravenous" />
+      <card id="7039" mastery_level="7" name="Winged Giant" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5245</id>
+    <name>The Storm Brewing</name>
+    <energy>8</energy>
+    <desc>The wild dragon continues to roar and beat its wings quickly. It swoops down, breathing fire dangerously close to her. Fiona grabs her belongings. She doesn't know why it's so upset, but she wants to avoid agitating it further.</desc>
+    <commander id="314" />
+    <deck>
+      <card id="1315" name="Nix Elemental" />
+      <card id="1315" />
+      <card id="1315" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="1613" />
+      <card id="1312" name="Scythe Demon" />
+      <card id="1312" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="1315" mastery_level="2" name="Nix Elemental" />
+      <card id="1630" mastery_level="2" name="Giant Squid" />
+      <card id="5006" mastery_level="3" name="Arms Enforcer" />
+      <card id="2031" mastery_level="4" name="Dryad" />
+      <card id="2023" mastery_level="5" name="Grizzly Terror" />
+      <card id="7049" mastery_level="6" name="Boundtoad" />
+      <card id="6052" mastery_level="7" name="Fuming Beast" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5246</id>
+    <name>Suspect Spotted</name>
+    <energy>8</energy>
+    <desc>The wild dragon circles around, coming after Fiona and her wyvern again!</desc>
+    <commander id="315" />
+    <deck>
+      <card id="1617" name="Water Elemental" />
+      <card id="1617" />
+      <card id="1617" />
+      <card id="7051" name="Stinglash Rider" />
+      <card id="6034" name="Bone Viper" />
+      <card id="1015" name="Windfrog" />
+      <card id="1015" />
+      <card id="1319" name="Wraith" />
+      <card id="7012" mastery_level="2" name="Life Drake" />
+      <card id="2019" mastery_level="2" name="Chalistomper" />
+      <card id="1317" mastery_level="3" name="Fire Imp" />
+      <card id="7038" mastery_level="4" name="Sol King" />
+      <card id="7035" mastery_level="5" name="Carrion Tiger" />
+      <card id="7052" mastery_level="6" name="Toad the Ravenous" />
+      <card id="6018" mastery_level="7" name="Underwater Lasher" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5247</id>
+    <name>Stop and Drop</name>
+    <energy>8</energy>
+    <desc>With a thud, the dragon lands right in front of Fiona and her wyvern. The wild dragon snarls, puffing out smoke from its nostrils. Fiona grabs her wyvern friend and rushes for cover.</desc>
+    <commander id="310" />
+    <deck>
+      <card id="1010" name="Lightning Elemental" />
+      <card id="1010" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="5022" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6007" />
+      <card id="6038" name="Hemlock" />
+      <card id="6021" name="Marsh Ogre" />
+      <card id="1313" mastery_level="2" name="Lavafrog" />
+      <card id="6051" mastery_level="2" name="Treeblade Thief" />
+      <card id="6012" mastery_level="3" name="Ember Drake" />
+      <card id="6050" mastery_level="4" name="Wortwog" />
+      <card id="2032" mastery_level="5" name="Brimstone" />
+      <card id="6045" mastery_level="6" name="Darkflame" />
+      <card id="6049" mastery_level="7" name="Goblin Explosioneer" />
+    </deck>
+    <speech>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Yikes, is that your girlfriend or something? She looks really angry! Maybe you should apologize-</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>GRAAOOOOOWWWW!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5248</id>
+    <name>Stronger Than You</name>
+    <energy>8</energy>
+    <desc>Fiona tries to dodge the beast's attack. Her own wyvern lunges at the wild dragon, refusing to let it hurt its master.</desc>
+    <commander id="310" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5006" />
+      <card id="5006" />
+      <card id="1619" name="Earth Elemental" />
+      <card id="1619" />
+      <card id="2025" name="Blight Knight" />
+      <card id="2027" name="Halo Mage" />
+      <card id="2030" name="Ebon Duelist" />
+      <card id="1014" mastery_level="2" name="Cherub" />
+      <card id="1010" mastery_level="2" name="Lightning Elemental" />
+      <card id="5028" mastery_level="3" name="Winter Blacksmith" />
+      <card id="1314" mastery_level="4" name="Skeletal Hound" />
+      <card id="2027" mastery_level="5" name="Halo Mage" />
+      <card id="1042" mastery_level="6" name="Archgeneral" />
+      <card id="5055" mastery_level="7" name="Galewing" />
+    </deck>
+    <speech>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Hey, we can talk this out... right?</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>...</text>
+      </line>
+      <line>
+        <commander>moltendragon</commander>
+        <enemy>0</enemy>
+        <text>... *snorts fire*</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5249</id>
+    <name>Scent in the Wrong Direction</name>
+    <energy>8</energy>
+    <desc>The wild dragon stumbles back. Fiona and the wyvern are stronger than it expected. Growling, it backs away, before fleeing back into the sky.</desc>
+    <commander id="313" />
+    <deck>
+      <card id="1312" name="Scythe Demon" />
+      <card id="1312" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="6022" />
+      <card id="7007" name="Water Serpent" />
+      <card id="7007" />
+      <card id="7007" />
+      <card id="6050" name="Wortwog" />
+      <card id="1313" mastery_level="2" name="Lavafrog" />
+      <card id="6054" mastery_level="3" name="Shadowcrafter" />
+      <card id="1018" mastery_level="4" name="Armored Eagle" />
+      <card id="1627" mastery_level="5" name="Sage of Croaks" />
+      <card id="2022" mastery_level="6" name="Avalanche Equine" />
+      <card id="5051" mastery_level="7" name="Amphibious Digger" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5250</id>
+    <name>Homeward Bound</name>
+    <energy>8</energy>
+    <desc>Fiona is bewildered by the encounter. Why would the dragon attack them so suddenly? She calms her own wyvern down before heading back to the dragon sanctuary, Wyvern's Way.</desc>
+    <commander id="262" />
+    <deck>
+      <card id="5041" name="Skylance Raiders" />
+      <card id="5040" name="Winged Trumpeter" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="1318" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="6022" />
+      <card id="1010" mastery_level="2" name="Lightning Elemental" />
+      <card id="2025" mastery_level="3" name="Blight Knight" />
+      <card id="1010" mastery_level="4" name="Lightning Elemental" />
+      <card id="1031" mastery_level="5" name="Noble Champion" />
+      <card id="5052" mastery_level="6" name="Paradise Avian" />
+      <card id="1343" mastery_level="7" name="Firehorn" />
+    </deck>
+    <speech>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>That dragon is normally docile... why would it attack now?</text>
+      </line>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Something isn't right. We should get back to Wyvern's Way.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5251</id>
+    <name>Bleak Suspicions</name>
+    <energy>8</energy>
+    <desc>Behind them, the wild dragon still roars mournfully. Fiona urges her wyvern to fly faster.</desc>
+    <commander id="315" />
+    <deck>
+      <card id="1312" name="Scythe Demon" />
+      <card id="1312" />
+      <card id="1312" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6007" />
+      <card id="6007" />
+      <card id="2033" name="Arcblaze Dragon" />
+      <card id="2024" name="Dusk Noble" />
+      <card id="6006" mastery_level="2" name="Chaos Golem" />
+      <card id="6034" mastery_level="3" name="Bone Viper" />
+      <card id="6012" mastery_level="4" name="Ember Drake" />
+      <card id="5033" mastery_level="5" name="Lost Soul" />
+      <card id="6041" mastery_level="6" name="Reaper" />
+      <card id="7033" mastery_level="7" name="Treebond Skull" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5252</id>
+    <name>Smoke and Embers</name>
+    <energy>8</energy>
+    <desc>Fiona spots a campfire with smouldering ashes. Someone has been here recently. Wild monsters approach...</desc>
+    <commander id="262" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" />
+      <card id="1018" />
+      <card id="7006" name="Treant Sapling" />
+      <card id="7006" />
+      <card id="7053" name="Bee Eater" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="7055" name="Valley Strider" />
+      <card id="1330" mastery_level="2" name="Devouring Locusts" />
+      <card id="5058" mastery_level="3" name="Crescent Moon Owl" />
+      <card id="1018" mastery_level="4" name="Armored Eagle" />
+      <card id="7055" mastery_level="5" name="Valley Strider" />
+      <card id="5001" mastery_level="6" name="Aven Skypiercer" />
+      <card id="7056" mastery_level="7" name="Trailblazer" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5253</id>
+    <name>Wrong Neighborhood</name>
+    <energy>8</energy>
+    <desc>Fiona looks around the camp. Not many travelers come so far into Tarragon Peak. There are no further clues who was here or what they were doing. Fiona kicks some dirt on the embers, before continuing to Wyvern's Way.</desc>
+    <commander id="314" />
+    <deck>
+      <card id="5012" name="Static Drake" />
+      <card id="5012" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6007" />
+      <card id="6007" />
+      <card id="5053" name="Anura Witch" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="6011" name="Bomb Spirit" />
+      <card id="1331" mastery_level="2" name="Fallen Soldiers" />
+      <card id="2020" mastery_level="2" name="Tidetaken Fighter" />
+      <card id="5010" mastery_level="3" name="Concealed Dragon" />
+      <card id="1017" mastery_level="4" name="Judgment" />
+      <card id="5021" mastery_level="5" name="Tower Spirit" />
+      <card id="6030" mastery_level="6" name="Noveria Yeti" />
+      <card id="1342" mastery_level="7" name="Ronin" />
+    </deck>
+    <speech>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Hmm, what is a camp doing set up this far into Tarragon Peak?</text>
+      </line>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Well, we are almost at the dragon sanctuary. Lets go.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5254</id>
+    <name>Home Invasion</name>
+    <energy>8</energy>
+    <desc>Fiona's heart sinks as she reaches the front gate of Wyverns Way. Someone has broken into her dragon sanctuary. A feat not many would be foolish enough to try. She enters the sanctuary with caution.</desc>
+    <commander id="315" />
+    <deck>
+      <card id="1014" name="Cherub" />
+      <card id="1014" />
+      <card id="1014" />
+      <card id="1319" name="Wraith" />
+      <card id="1319" />
+      <card id="1319" />
+      <card id="7051" name="Stinglash Rider" />
+      <card id="7041" name="Feral Angel" />
+      <card id="5017" mastery_level="2" name="Steam Tempest" />
+      <card id="7011" mastery_level="3" name="Wolf Girl" />
+      <card id="7006" mastery_level="4" name="Treant Sapling" />
+      <card id="7038" mastery_level="5" name="Sol King" />
+      <card id="5034" mastery_level="6" name="Skyward Guardian" />
+      <card id="6033" mastery_level="7" name="Firebeard" />
+    </deck>
+    <speech>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Finally back. We can get you a proper ba-</text>
+      </line>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Someone broke down the gate! Who would break into a dragon sanctuary?</text>
+      </line>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Keep close buddy, they are either incredibly stupid or incredibly tough.</text>
+      </line>
+      <line>
+        <commander>moltendragon</commander>
+        <enemy>0</enemy>
+        <text>Grrr...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5255</id>
+    <name>Eerie Silence</name>
+    <energy>8</energy>
+    <desc>Fiona and her wyvern continue deeper into the sanctuary. All of the normal inhabitants are gone; the place has become like a ghost town. She hopes that everyone is safe.</desc>
+    <commander id="314" />
+    <deck>
+      <card id="1015" name="Windfrog" />
+      <card id="1015" />
+      <card id="1017" name="Judgment" />
+      <card id="1017" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="1318" />
+      <card id="6044" name="Firewalker" />
+      <card id="7024" name="Woolmane Dragon " />
+      <card id="7016" mastery_level="2" name="Webfist Shaman" />
+      <card id="2034" mastery_level="3" name="Leap Frog Duo" />
+      <card id="1015" mastery_level="4" name="Windfrog" />
+      <card id="2032" mastery_level="5" name="Brimstone" />
+      <card id="7050" mastery_level="6" name="Krieg, Northern Sword" />
+      <card id="2015" mastery_level="7" name="Pumpking" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5256</id>
+    <name>Trouble at Home</name>
+    <energy>8</energy>
+    <desc>A loud screech can be heard on the other side of the grounds. Fiona immediately hops on the wyvern's back. They jet toward whatever has broken into their sanctuary.</desc>
+    <commander id="313" />
+    <deck>
+      <card id="1011" name="Archive Keeper" />
+      <card id="1011" />
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1317" name="Fire Imp" />
+      <card id="1317" />
+      <card id="1629" name="Rock Titan" />
+      <card id="7005" name="Tsunamari" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="2031" mastery_level="2" name="Dryad" />
+      <card id="2008" mastery_level="2" name="Shadow of Ash" />
+      <card id="7045" mastery_level="3" name="Sakura" />
+      <card id="1018" mastery_level="4" name="Armored Eagle" />
+      <card id="2005" mastery_level="5" name="Sailing Drake" />
+      <card id="2022" mastery_level="6" name="Avalanche Equine" />
+      <card id="7013" mastery_level="7" name="Gold Elemental" />
+    </deck>
+    <speech>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>This is getting spooky. I still haven't seen a dragon or anyone else for that matter...</text>
+      </line>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>What was shriek?! Someone could be in trouble!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5257</id>
+    <name>Red Alert</name>
+    <energy>8</energy>
+    <desc>When they get closer, Fiona can see a grounded airship. The sanctuary's dragons have surrounded the foreign vessel.</desc>
+    <commander id="262" />
+    <deck>
+      <card id="5012" name="Static Drake" />
+      <card id="5012" />
+      <card id="1312" name="Scythe Demon" />
+      <card id="1312" />
+      <card id="1312" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="6021" name="Marsh Ogre" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="6006" mastery_level="2" name="Chaos Golem" />
+      <card id="6025" mastery_level="3" name="Dragon Keeper" />
+      <card id="6007" mastery_level="4" name="Goblin Crew" />
+      <card id="5010" mastery_level="5" name="Concealed Dragon" />
+      <card id="6023" mastery_level="6" name="Broodmother" />
+      <card id="5029" mastery_level="7" name="Snowback Dragon" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5258</id>
+    <name>Goblin Intruders</name>
+    <energy>8</energy>
+    <desc>Goblins pour from the airship's bridge. What could goblins want from a sanctuary full of dragons?</desc>
+    <commander id="311" />
+    <deck>
+      <card id="1019" name="Oracle" />
+      <card id="1019" />
+      <card id="1617" name="Water Elemental" />
+      <card id="1617" />
+      <card id="7006" name="Treant Sapling" />
+      <card id="7015" name="Bog Aberration" />
+      <card id="1030" name="Paladin" />
+      <card id="6046" name="Celerity" />
+      <card id="2019" mastery_level="2" name="Chalistomper" />
+      <card id="6004" mastery_level="3" name="Branding Construct" />
+      <card id="6017" mastery_level="4" name="Tar Pit Stalker" />
+      <card id="2010" mastery_level="5" name="Silver Wind" />
+      <card id="5049" mastery_level="6" name="Joryl" />
+      <card id="5042" mastery_level="7" name="Tinkerer" />
+    </deck>
+    <speech>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Goblins? Are they trying to raid us with an airship? I can't even imagine how this strategy meeting went for them.</text>
+      </line>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>"Why yes, Slarbox! Let us raid a dragon home! Surely they will not eat us despite being of superior size and strength!" "Well met Kogkar, well met!"</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Arrogant human! We will see who will be bowing down to dragons soon!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5259</id>
+    <name>Flanked</name>
+    <energy>8</energy>
+    <desc>The airship is now the center of a full-on assault by Fiona and her dragons. Fiona is pleased to see they have done little damage. However, something catches her eye...</desc>
+    <commander id="313" />
+    <deck>
+      <card id="1315" name="Nix Elemental" />
+      <card id="1315" />
+      <card id="5007" name="Arcane Scroll" />
+      <card id="5007" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="2001" name="Dunetooth Demon" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="1332" name="Vampiric Emira" />
+      <card id="5033" mastery_level="2" name="Lost Soul" />
+      <card id="6016" mastery_level="2" name="Skeletal Giant" />
+      <card id="6044" mastery_level="3" name="Firewalker" />
+      <card id="1311" mastery_level="4" name="Molten Skeleton" />
+      <card id="2020" mastery_level="5" name="Tidetaken Fighter" />
+      <card id="7019" mastery_level="6" name="Lady of the Swamp" />
+      <card id="6035" mastery_level="7" name="Demos" />
+    </deck>
+    <speech>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Wait- What does that mean? You really think my dragons will bow to you?</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Kekekekekekek!</text>
+      </line>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Oh fire lords, the airship is a distraction! Look, there are more of them by the nesting grounds!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5260</id>
+    <name>Making Omelettes</name>
+    <energy>8</energy>
+    <desc>Fiona rushes towards the dragon nests. Goblins are haphazardly taking eggs from the nests and rolling them onto their ship.</desc>
+    <commander id="311" />
+    <deck>
+      <card id="1615" name="Rune Panther" />
+      <card id="1615" />
+      <card id="1012" name="Cloud Sylph" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="6022" />
+      <card id="5020" name="Frost Frog" />
+      <card id="2034" name="Leap Frog Duo" />
+      <card id="5050" name="Cloud Spear" />
+      <card id="7007" mastery_level="2" name="Water Serpent" />
+      <card id="1025" mastery_level="3" name="Lightbound Archer" />
+      <card id="1615" mastery_level="4" name="Rune Panther" />
+      <card id="1028" mastery_level="5" name="Heroic Frog" />
+      <card id="7042" mastery_level="6" name="Scurvy Hopper" />
+      <card id="6032" mastery_level="7" name="Mumohotep" />
+    </deck>
+    <speech>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Filthy stealers! Those eggs do NOT belong to you!</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Ack! The gig's up, SCRAMBLE!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5261</id>
+    <name>Motherly Instincts</name>
+    <energy>8</energy>
+    <desc>Fiona spots more goblins loading dragon eggs into crates. Without hesitation, she rushes them with her wyvern.</desc>
+    <commander id="311" />
+    <deck>
+      <card id="1314" name="Skeletal Hound" />
+      <card id="1314" />
+      <card id="1314" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="1613" />
+      <card id="7034" name="Spore Elk" />
+      <card id="6038" name="Hemlock" />
+      <card id="5053" name="Anura Witch" />
+      <card id="1315" mastery_level="2" name="Nix Elemental" />
+      <card id="7053" mastery_level="3" name="Bee Eater" />
+      <card id="1613" mastery_level="4" name="Acidic Spider" />
+      <card id="2020" mastery_level="5" name="Tidetaken Fighter" />
+      <card id="6037" mastery_level="6" name="Keeper of Souls" />
+      <card id="5034" mastery_level="7" name="Skyward Guardian" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5262</id>
+    <name>Ring Leader</name>
+    <energy>8</energy>
+    <desc>A well-dressed goblin steps casually out of the airship. A wicked smile grows on his face. He tells his men that they should properly greet their new friends.</desc>
+    <commander id="312" />
+    <deck>
+      <card id="5017" name="Steam Tempest" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="5012" name="Static Drake" />
+      <card id="5012" />
+      <card id="5021" name="Tower Spirit" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="2001" name="Dunetooth Demon" />
+      <card id="6054" mastery_level="2" name="Shadowcrafter" />
+      <card id="7024" mastery_level="3" name="Woolmane Dragon " />
+      <card id="1015" mastery_level="4" name="Windfrog" />
+      <card id="6005" mastery_level="5" name="Gloomkin" />
+      <card id="5031" mastery_level="6" name="Frostlance Valkyrie" />
+      <card id="6043" mastery_level="7" name="Sandstorm" />
+    </deck>
+    <speech>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>If you want to keep all of your fingers, you best put those eggs down!</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Well hello there, puddin'! You must be the keeper of this fine establishment!</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>I know you must be concerned about these here fine eggs, but I promise it is for a good cause. Maybe you would let it slide for a little compensation?</text>
+      </line>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Oh 'puddin', you will be lucky to leave here with all of your appendages.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5263</id>
+    <name>Call of the Dragon</name>
+    <energy>8</energy>
+    <desc>Fiona is disgusted with the offer. Her brow furrows and her eyes begin to glow. She lets out a mighty shout that can be heard across the sanctuary, a call her dragons are familiar with. Dragons from the temple gather at the sound of her call.</desc>
+    <commander id="311" />
+    <deck>
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="6017" />
+      <card id="1010" name="Lightning Elemental" />
+      <card id="1010" />
+      <card id="2005" name="Sailing Drake" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="2041" name="Sharpwing" />
+      <card id="6046" name="Celerity" />
+      <card id="2040" mastery_level="2" name="Owlmancer" />
+      <card id="6031" mastery_level="2" name="Iceblood Assassin" />
+      <card id="2009" mastery_level="3" name="Sapling" />
+      <card id="2032" mastery_level="4" name="Brimstone" />
+      <card id="6036" mastery_level="5" name="Cursed Ogre" />
+      <card id="1343" mastery_level="6" name="Firehorn" />
+      <card id="6045" mastery_level="7" name="Darkflame" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5264</id>
+    <name>Nope!</name>
+    <energy>8</energy>
+    <desc>The goblins' eyes widen as dozens of angry dragons descend upon them. The goblins panic, abandoning the eggs they were rolling, and hurrying back to their ship.</desc>
+    <commander id="312" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" />
+      <card id="1317" name="Fire Imp" />
+      <card id="1317" />
+      <card id="2040" name="Owlmancer" />
+      <card id="6050" name="Wortwog" />
+      <card id="6054" name="Shadowcrafter" />
+      <card id="6036" name="Cursed Ogre" />
+      <card id="2040" mastery_level="2" name="Owlmancer" />
+      <card id="6020" mastery_level="2" name="Croak Piercer" />
+      <card id="7030" mastery_level="3" name="Arctic Ambusher" />
+      <card id="2042" mastery_level="4" name="Carrion Hunter" />
+      <card id="6014" mastery_level="5" name="Armored Siegefist" />
+      <card id="6055" mastery_level="6" name="Phoenix" />
+      <card id="5047" mastery_level="7" name="Sky Fisher" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Oh spit and spattle! She's callin' the whole bloody dragon army on us, boys! Just grab what you can and leave!</text>
+      </line>
+    </speech>
+  </mission>
 </root>
