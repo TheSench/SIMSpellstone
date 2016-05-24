@@ -147,7 +147,7 @@ window.onload = function () {
         var select = document.getElementById('battleground');
         for (var key in BATTLEGROUNDS) {
             var battleground = BATTLEGROUNDS[key];
-            if (battleground.enemy_only) continue;
+            if (battleground.hidden) continue;
             var checkbox = document.createElement('input');
             checkbox.type = "checkbox";
             checkbox.name = "battleground";

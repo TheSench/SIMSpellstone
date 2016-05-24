@@ -114,6 +114,7 @@ var SIM_CONTROLLER;
             }
         }
 
+
         SIMULATOR.battlegrounds = battlegrounds;
 
         // Hide interface

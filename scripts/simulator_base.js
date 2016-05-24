@@ -124,6 +124,10 @@ var SIMULATOR = {};
     };
 
     function doEmpower(source_card) {
+        var skills = source_card.empowerSkills;
+        var len = skills.length;
+        if (len == 0) return;
+
         var dualStrike = (source_card.flurry && !source_card.flurry.countdown);
         if (dualStrike && !source_card.hasAttack()) {
             source_card.flurry.countdown++
@@ -134,8 +138,7 @@ var SIMULATOR = {};
             echo += debug_name(source_card) + ' activates dualstrike<br>';
         }
 
-        var skills = source_card.empowerSkills;
-        for (var i = 0, len = skills.length; i < len; i++) {
+        for (var i = 0; i < len; i++) {
             var skill = skills[i];
             if (skill.c) {
                 if (skill.countdown) {
@@ -248,7 +251,11 @@ var SIMULATOR = {};
             }
 
             // No Targets
-            if (!targets.length) return;
+            if (!targets.length) {
+                // No targets - retry next turn
+                if (skill.c) skill.countdown = 0;
+                return;
+            }
 
             // Check All
             if (!all) {
@@ -306,11 +313,14 @@ var SIMULATOR = {};
             }
 
             // No Targets
-            if (!targets.length) return;
+            if (!targets.length) {
+                // No targets - retry next turn
+                if (skill.c) skill.countdown = 0;
+                return;
+            }
 
             var skill = {
                 id: s,
-                c: c,
                 x: x
             }
 
@@ -536,7 +546,7 @@ var SIMULATOR = {};
             // No Targets
             if (!targets.length) {
                 // No targets - retry next turn
-                skill.countdown = 0;
+                if (skill.c) skill.countdown = 0;
                 return;
             }
 

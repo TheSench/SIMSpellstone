@@ -262,8 +262,8 @@
             ]
         }
     },
-    "24001": {
-        "id": "24001",
+    "24003": {
+        "id": "24003",
         "name": "Fortune's Favor Raid",
         "bge": "505",
         "commander": {
@@ -272,51 +272,186 @@
         "deck": {
             "card": [
               {
-                  "id": "8020"
-              },
-              {
-                  "id": "8020"
-              },
-              {
                   "id": "8021"
               },
               {
-                  "id": "8021"
+                  "id": "1331",
+                  "remove_mastery_level": "23"
               },
               {
-                  "id": "8021"
+                  "id": "1010",
+                  "remove_mastery_level": "11"
               },
               {
-                  "id": "8021"
+                  "id": "1010",
+                  "remove_mastery_level": "10"
               },
               {
-                  "id": "8022"
+                  "id": "1313",
+                  "remove_mastery_level": "11"
               },
               {
-                  "id": "8022"
+                  "id": "1313",
+                  "remove_mastery_level": "10"
               },
               {
-                  "id": "8022"
+                  "id": "6012",
+                  "remove_mastery_level": "11"
               },
               {
-                  "id": "8023"
+                  "id": "1318",
+                  "remove_mastery_level": "9"
               },
               {
-                  "id": "8023"
+                  "id": "1018",
+                  "remove_mastery_level": "8"
               },
               {
-                  "id": "8023"
+                  "id": "1018",
+                  "remove_mastery_level": "5"
               },
               {
-                  "id": "8024"
+                  "id": "2012",
+                  "mastery_level": "3",
+                  "remove_mastery_level": "22"
               },
               {
-                  "id": "8024"
+                  "id": "1010",
+                  "mastery_level": "4",
+                  "remove_mastery_level": "10"
               },
               {
-                  "id": "8024"
+                  "id": "6054",
+                  "mastery_level": "5",
+                  "remove_mastery_level": "21"
               },
+              {
+                  "id": "2042",
+                  "mastery_level": "6",
+                  "remove_mastery_level": "20"
+              },
+              {
+                  "id": "6050",
+                  "mastery_level": "7",
+                  "remove_mastery_level": "19"
+              },
+              {
+                  "id": "1313",
+                  "mastery_level": "8",
+                  "remove_mastery_level": "9"
+              },
+              {
+                  "id": "6012",
+                  "mastery_level": "8",
+                  "remove_mastery_level": "9"
+              },
+              {
+                  "id": "2042",
+                  "mastery_level": "9",
+                  "remove_mastery_level": "16"
+              },
+              {
+                  "id": "6051",
+                  "mastery_level": "9",
+                  "remove_mastery_level": "17"
+              },
+              {
+                  "id": "5058",
+                  "mastery_level": "9",
+                  "remove_mastery_level": "15"
+              },
+              {
+                  "id": "8020",
+                  "mastery_level": "10"
+              },
+              {
+                  "id": "6050",
+                  "mastery_level": "10",
+                  "remove_mastery_level": "14"
+              },
+              {
+                  "id": "6048",
+                  "mastery_level": "10",
+                  "remove_mastery_level": "13"
+              },
+              {
+                  "id": "6051",
+                  "mastery_level": "11",
+                  "remove_mastery_level": "12"
+              },
+              {
+                  "id": "8020",
+                  "mastery_level": "11"
+              },
+              {
+                  "id": "8023",
+                  "mastery_level": "11"
+              },
+              {
+                  "id": "6048",
+                  "mastery_level": "12",
+                  "remove_mastery_level": "25"
+              },
+              {
+                  "id": "6035",
+                  "mastery_level": "13",
+                  "remove_mastery_level": "24"
+              },
+              {
+                  "id": "6049",
+                  "mastery_level": "14",
+                  "remove_mastery_level": "19"
+              },
+              {
+                  "id": "1331",
+                  "mastery_level": "15",
+                  "remove_mastery_level": "18"
+              },
+              {
+                  "id": "8024",
+                  "mastery_level": "16"
+              },
+              {
+                  "id": "8021",
+                  "mastery_level": "17"
+              },
+              {
+                  "id": "8022",
+                  "mastery_level": "18"
+              },
+              {
+                  "id": "8020",
+                  "mastery_level": "19"
+              },
+              {
+                  "id": "8021",
+                  "mastery_level": "19"
+              },
+              {
+                  "id": "8023",
+                  "mastery_level": "20"
+              },
+              {
+                  "id": "8020",
+                  "mastery_level": "21"
+              },
+              {
+                  "id": "8023",
+                  "mastery_level": "22"
+              },
+              {
+                  "id": "8024",
+                  "mastery_level": "23"
+              },
+              {
+                  "id": "8024",
+                  "mastery_level": "24"
+              },
+              {
+                  "id": "8022",
+                  "mastery_level": "25"
+              }
             ]
-        },
-    },
+        }
+    }
 }

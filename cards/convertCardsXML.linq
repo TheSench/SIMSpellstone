@@ -252,10 +252,11 @@ void Main()
 			var stringReader = new StringReader(bgeXML.ToString());
 			var bge = (battleground)bgeDeserializer.Deserialize(stringReader);
 			// World Event BGEs
-			if (Int32.Parse(bge.id) <= 500)
+			if (Int32.Parse(bge.id) > 500)
 			{
-				battlegrounds.Add(bge);
+				bge.hidden = "true";
 			}
+			battlegrounds.Add(bge);
 		}
 		writer.WriteLine("var BATTLEGROUNDS = [");
 		for (int i = 0; i < battlegrounds.Count; i++)
@@ -315,6 +316,7 @@ public class battleground
 	public string enemy_only { get; set; }
 	public string scale_with_level { get; set; }
 	public string starting_level { get; set; }
+	public string hidden { get; set; }
 
 	public override string ToString()
 	{
@@ -325,6 +327,7 @@ public class battleground
 		if (enemy_only != null) sb.Append(tabs).Append("\"enemy_only\": \"").Append(enemy_only).Append("\",\r\n");
 		if (scale_with_level != null) sb.Append(tabs).Append("\"scale_with_level\": \"").Append(scale_with_level).Append("\",\r\n");
 		if (starting_level != null) sb.Append(tabs).Append("\"starting_level\": \"").Append(starting_level).Append("\",\r\n");
+		if (hidden != null) sb.Append(tabs).Append("\"hidden\": \"").Append(hidden).Append("\",\r\n");
 		sb.Append(tabs).Append("\"effect\": [\r\n");
 		//sb.Append(tabs2).Append("\"" + effect.GetType().Name.Replace("[]", "") + "\": [\r\n");
 		AppendEffect(sb);

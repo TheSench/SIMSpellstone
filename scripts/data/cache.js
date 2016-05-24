@@ -105196,4 +105196,113 @@ var BATTLEGROUNDS = [
       },
     ]
   },
+  {
+    "name": "Castle Siege",
+    "id": "501",
+    "hidden": "true",
+    "effect": [
+    ]
+  },
+  {
+    "name": "Cannon Siege",
+    "id": "502",
+    "hidden": "true",
+    "effect": [
+    ]
+  },
+  {
+    "name": "Frostbite's Aura",
+    "id": "503",
+    "enemy_only": "1",
+    "scale_with_level": "1",
+    "starting_level": "41",
+    "hidden": "true",
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "heal",
+        "x": .8,
+        "all": "1",
+      },
+      {
+        "effect_type": "skill",
+        "id": "rally",
+        "x": .4,
+        "all": "1",
+      },
+    ]
+  },
+  {
+    "name": "Nethergore's Reckoning",
+    "id": "504",
+    "enemy_only": "1",
+    "scale_with_level": "1",
+    "starting_level": "26",
+    "hidden": "true",
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "heal",
+        "x": .8,
+        "all": "1",
+      },
+      {
+        "effect_type": "skill",
+        "id": "rally",
+        "x": .4,
+        "all": "1",
+      },
+    ]
+  },
+  {
+    "name": "Fortune's Favoring",
+    "id": "505",
+    "enemy_only": "1",
+    "scale_with_level": "1",
+    "starting_level": "26",
+    "hidden": "true",
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "heal",
+        "x": 1.1,
+        "all": "1",
+      },
+      {
+        "effect_type": "skill",
+        "id": "rally",
+        "x": .6,
+        "all": "1",
+      },
+    ]
+  },
+  {
+    "name": "Personal Frog Buff",
+    "id": "10001",
+    "hidden": "true",
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "protect",
+        "x": 2,
+        "y": "4",
+        "z": 4,
+        "all": "1",
+      },
+    ]
+  },
+  {
+    "name": "Personal Enhance Armor",
+    "id": "10002",
+    "hidden": "true",
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "enhance",
+        "x": 1,
+        "s": "armored",
+        "all": "1",
+      },
+    ]
+  },
 ];

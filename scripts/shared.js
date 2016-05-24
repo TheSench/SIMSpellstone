@@ -442,6 +442,10 @@ var makeUnit = (function () {
                     this.imbued[skillID] = skill.x;
                     return;
                 case 'flurry':
+                    if (!this.flurry) {
+                        this.flurry = skill;
+                        this.imbued.flurry = true;
+                    }
                     return;
                     // Early Activation skills
                 case 'fervor':
