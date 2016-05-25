@@ -1302,3 +1302,26 @@ function setDeckName(name) {
     var lbl = document.getElementById("version_label");
     lbl.innerHTML += " " + name;
 }
+
+function getHashFromHTML(card) {
+    var htmlDeck = card.item.parent().children();
+    var newDeck = {
+        commander: elariaCaptain,
+        deck: []
+    }
+    for (var i = 0; i < htmlDeck.length; i++) {
+        var htmlCard = htmlDeck[i];
+        if (htmlCard.classList.contains("blank")) continue;
+
+        var unit = getUnitFromCard(htmlCard);
+        if (is_commander(unit.id)) {
+            newDeck.commander = unit;
+        } else {
+            newDeck.deck.push(unit);
+        }
+    }
+    deck = newDeck;
+
+    CARD_GUI.draw_deck(deck, removeFromDeck, showCardOptions);
+    updateHash();
+}
