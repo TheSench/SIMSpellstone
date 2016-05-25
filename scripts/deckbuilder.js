@@ -126,7 +126,6 @@ var drawDeck = function () {
     if (hash) {
         deck = hash_decode(hash);
     }
-    sortDeck(deck);
 
     var name = _GET('name');
     if (name) {
@@ -320,14 +319,11 @@ var hash_changed = function (hash) {
     }
     if (typeof simulatorDeckHashField !== 'undefined') simulatorDeckHashField.value = hash;
     deck = hash_decode(hash);
-    sortDeck(deck);
 
     CARD_GUI.draw_deck(deck, removeFromDeck, showCardOptions);
 }
 
-var sortDeck = function (deck) {
-    if (_DEFINED("nosort")) return;
-
+var sortDeck = function () {
     deck.deck.sort(function (unitA, unitB) {
         var cardA = get_card_by_id(unitA);
         var cardB = get_card_by_id(unitB);
@@ -343,6 +339,8 @@ var sortDeck = function (deck) {
         compare = (unitA.runes.length ? unitA.runes[0].id : 0) - (unitB.runes.length ? unitB.runes[0].id : 0);
         return compare;
     });
+    CARD_GUI.draw_deck(deck, removeFromDeck, showCardOptions);
+    updateHash();
 }
 
 var addToDeck = function (htmlCard) {
@@ -353,7 +351,6 @@ var addToDeck = function (htmlCard) {
         if (deck.deck.length == 15 && !_DEFINED("unlimited")) return;
         deck.deck.push(unit);
     }
-    sortDeck(deck);
     CARD_GUI.draw_deck(deck, removeFromDeck, showCardOptions);
     updateHash();
 };

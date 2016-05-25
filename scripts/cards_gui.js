@@ -30,7 +30,7 @@ var CARD_GUI = {};
         for (var i = 0, len = deck.deck.length; i < len; i++) {
             var deckEntry = deck.deck[i];
             var unit = get_card_by_id(deckEntry);
-            var htmlCard = create_card_html(unit, false, false, onclick, onrightclick, i);
+            var htmlCard = create_card_html(unit, false, false, onclick, onrightclick, i, true);
             if (deckEntry.index !== undefined) {
                 htmlCard.setAttribute("data-index", deckEntry.index);
             }
@@ -161,8 +161,17 @@ var CARD_GUI = {};
         return cards;
     }
 
-    function create_card_html(card, compactSkills, onField, onclick, onrightclick, state) {
+    function create_card_html(card, compactSkills, onField, onclick, onrightclick, state, draggable) {
         var htmlCard = createDiv("card");
+        if (draggable) {
+            htmlCard.setAttribute("draggable", "true");
+            htmlCard.ondragstart = drag;
+            htmlCard.ondragend = dragCancel;
+            htmlCard.ondragover = allowDrop;
+            htmlCard.ondrop = drop;
+            htmlCard.id = "deck_" + state;
+            htmlCard.setAttribute("data-index", state);
+        }
         // Add ID to card
         htmlCard.setAttribute("data-id", card.id);
         // Add level to card
@@ -319,7 +328,7 @@ var CARD_GUI = {};
     }
 
     function getSkillsHtml(divSkills, skillsShort, skills, onField) {
-        for (var i in skills) {
+        for (var i = 0; i < skills.length; i++) {
             var skill = skills[i];
             divSkills.appendChild(getSkillHtml(skill, onField));
             divSkills.appendChild(document.createElement('br'));
@@ -451,6 +460,10 @@ var CARD_GUI = {};
             debuffs.push(status);
         }
         */
+        if (card.nullified) {
+            var status = createStatus("nullify", card.nullified);
+            debuffs.push(status);
+        }
         if (card.poisoned) {
             var status = createStatus("poison", card.poisoned);
             debuffs.push(status);
@@ -567,4 +580,56 @@ function createDiv(className, value) {
     if (className) div.className = className;
     if (value !== undefined) div.innerHTML = value;
     return div;
+}
+
+function createSpan(className, value) {
+    var div = document.createElement("span");
+    if (className) div.className = className;
+    if (value !== undefined) div.innerHTML = value;
+    return div;
+}
+
+// TODO: Move these to an appropriate location
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    var target = getTargetCard(ev.target);
+    target.classList.add("dragging");
+    ev.dataTransfer.setData("text", target.getAttribute("data-index"));
+    ev.dataTransfer.setDragImage(target, 42, 60);
+    document.getElementById("hash").disabled = true;
+}
+
+function dragCancel(ev) {
+    var target = getTargetCard(ev.target);
+    target.classList.remove("dragging");
+    document.getElementById("hash").disabled = false;
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var index = ev.dataTransfer.getData("text");
+    var target = getTargetCard(ev.target);
+    if (target) {
+        ev.dataTransfer.setData("text", targetIndex);
+        if (index == targetIndex) return;
+        var targetIndex = target.getAttribute("data-index");
+        var unit = deck.deck.splice(index, 1)[0];
+        deck.deck.splice(targetIndex, 0, unit);
+
+        ev.dataTransfer.setData("text", targetIndex);
+
+        CARD_GUI.draw_deck(deck, removeFromDeck, showCardOptions);
+        updateHash();
+    }
+    document.getElementById("hash").disabled = false;
+}
+
+function getTargetCard(target) {
+    while (target && !target.classList.contains("card")) {
+        target = target.parentElement;
+    }
+    return target;
 }
