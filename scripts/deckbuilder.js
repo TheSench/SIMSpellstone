@@ -52,6 +52,7 @@ var initDeckBuilder = function () {
     cs.mouseenter(enterInventory);
     cs.mouseleave(leaveInventory);
     window.onwheel = changePage;
+    window.oncontextmenu = hideContext;
 
     setTimeout(function () {
         drawAllCards();
