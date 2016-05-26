@@ -3569,7 +3569,7 @@
     <name>Lakeside Mastery</name>
     <desc>Complete the 'Lakeside' campaign on Mastery Level 7.</desc>
     <event_only>1</event_only>
-    <achievement_req>3098</achievement_req>
+    <achievement_req>3100</achievement_req>
     <req>
       <campaign>1064</campaign>
       <level>7</level>
@@ -3600,7 +3600,7 @@
     <name>Nasty Neighbours Mastery</name>
     <desc>Complete the 'Nasty Neighbours' campaign on Mastery Level 7.</desc>
     <event_only>1</event_only>
-    <achievement_req>3098</achievement_req>
+    <achievement_req>3102</achievement_req>
     <req>
       <campaign>1065</campaign>
       <level>7</level>
@@ -3631,7 +3631,7 @@
     <name>Lost Lambs Mastery</name>
     <desc>Complete the 'Lost Lambs' campaign on Mastery Level 7.</desc>
     <event_only>1</event_only>
-    <achievement_req>3098</achievement_req>
+    <achievement_req>3104</achievement_req>
     <req>
       <campaign>1066</campaign>
       <level>7</level>
@@ -3662,7 +3662,7 @@
     <name>Worst Fears Mastery</name>
     <desc>Complete the 'Worst Fears' campaign on Mastery Level 7.</desc>
     <event_only>1</event_only>
-    <achievement_req>3098</achievement_req>
+    <achievement_req>3106</achievement_req>
     <req>
       <campaign>1067</campaign>
       <level>7</level>
@@ -3693,7 +3693,7 @@
     <name>Goblins Afoot Mastery</name>
     <desc>Complete the 'Goblins Afoot' campaign on Mastery Level 7.</desc>
     <event_only>1</event_only>
-    <achievement_req>3098</achievement_req>
+    <achievement_req>3108</achievement_req>
     <req>
       <campaign>1068</campaign>
       <level>7</level>
@@ -3724,7 +3724,7 @@
     <name>Sinister Intentions Mastery</name>
     <desc>Complete the 'Sinister Intentions' campaign on Mastery Level 7.</desc>
     <event_only>1</event_only>
-    <achievement_req>3098</achievement_req>
+    <achievement_req>3110</achievement_req>
     <req>
       <campaign>1069</campaign>
       <level>7</level>

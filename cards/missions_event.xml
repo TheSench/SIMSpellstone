@@ -6950,7 +6950,7 @@
         <text>Frobert! Are you ok?!</text>
       </line>
       <line>
-        <commander>elyse</commander>
+        <commander>avianmagistrate</commander>
         <enemy>1</enemy>
         <text>Cedric... you are here quicker than I expected. It's okay, we have not hurt the boy.</text>
       </line>
@@ -6960,7 +6960,7 @@
         <text>Why have you taken him?!</text>
       </line>
       <line>
-        <commander>elyse</commander>
+        <commander>avianmagistrate</commander>
         <enemy>1</enemy>
         <text>Golden Crown has made grave transgressions against us. Your mayor... she has been hunting our patrolmen...</text>
       </line>
@@ -7271,7 +7271,7 @@
       <line>
         <commander>dragontamer</commander>
         <enemy>0</enemy>
-        <text>Something isn't right. We should get back to Wyvern's Way.</text>
+        <text>Something isn't right. We should get back to Wyverns' Way.</text>
       </line>
     </speech>
   </mission>
@@ -7361,7 +7361,7 @@
     <id>5254</id>
     <name>Home Invasion</name>
     <energy>8</energy>
-    <desc>Fiona's heart sinks as she reaches the front gate of Wyverns Way. Someone has broken into her dragon sanctuary. A feat not many would be foolish enough to try. She enters the sanctuary with caution.</desc>
+    <desc>Fiona's heart sinks as she reaches the front gate of Wyverns' Way. Someone has broken into her dragon sanctuary. A feat not many would be foolish enough to try. She enters the sanctuary with caution.</desc>
     <commander id="315" />
     <deck>
       <card id="1014" name="Cherub" />
@@ -7457,7 +7457,7 @@
       <line>
         <commander>dragontamer</commander>
         <enemy>0</enemy>
-        <text>What was shriek?! Someone could be in trouble!</text>
+        <text>What was that shriek?! Someone could be in trouble!</text>
       </line>
     </speech>
   </mission>
@@ -7515,7 +7515,7 @@
       <line>
         <commander>dragontamer</commander>
         <enemy>0</enemy>
-        <text>"Why yes, Slarbox! Let us raid a dragon home! Surely they will not eat us despite being of superior size and strength!" "Well met Kogkar, well met!"</text>
+        <text>'Why yes, Slarbox! Let us raid a dragon home! Surely they will not eat us despite being of superior size and strength!' 'Well met Kogkar, well met!'</text>
       </line>
       <line>
         <commander>elyse</commander>

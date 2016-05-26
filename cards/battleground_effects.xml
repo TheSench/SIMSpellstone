@@ -33,6 +33,7 @@
     <name>Age of Dragons</name>
     <desc>All Dragons are bestowed with extraordinary vitality, causing them to be Healed each turn by 20%.</desc>
     <web_picture>filter_dragon_64.png</web_picture>
+    <icon>filter_dragon_64</icon>
     <effect>
       <skill id="heal" mult=".2" all="1" y="9" />
     </effect>
@@ -42,6 +43,7 @@
     <name>World Awakening</name>
     <desc>All Elementals are Empowered from the mana rich land, raising their Attack by 2 each turn.</desc>
     <web_picture>filter_elementals_64.png</web_picture>
+    <icon>filter_elementals_64</icon>
     <effect>
       <skill id="rally" x="2" all="1" y="5" />
     </effect>
@@ -51,6 +53,7 @@
     <name>Rise of the Frogs</name>
     <desc>All Frogs gain the Protection of the Guardian Stone, reducing damage taken by 2.</desc>
     <web_picture>filter_frog_64.png</web_picture>
+    <icon>filter_frog_64</icon>
     <effect>
       <skill id="protect" x="2" all="1" y="4" />
     </effect>
@@ -60,6 +63,7 @@
     <name>Iceshatter Barrier</name>
     <desc>When Barrier is broken, deals damage to the creature across from it or the enemy Hero equal to the Barrier value.</desc>
     <web_picture>filter_iceshatter_64.png</web_picture>
+    <icon>filter_iceshatter_64</icon>
     <effect>
       <evolve_skill id="protect" s="protect_ice" />
       <evolve_skill id="protect" s="protect_ice" all="1" />
@@ -70,6 +74,7 @@
     <name>Devouring Hunger</name>
     <desc>The Undead are invigorated with an unquenchable hunger, giving them Berserk which increases their base attack by 20% after dealing damage.</desc>
     <web_picture>filter_undead_64.png</web_picture>
+    <icon>filter_undead_64</icon>
     <effect>
       <add_skill id="berserk" mult=".2" base="attack" y="7" />
     </effect>
@@ -79,6 +84,7 @@
     <name>Angelic Legion</name>
     <desc>Angels have risen to fight, giving their adjacent allies Legion based on their rarity.</desc>
     <web_picture>filter_angel_64.png</web_picture>
+    <icon>filter_angel_64</icon>
     <effect>
       <add_skill id="legion" mult="1" base="rarity" y="6" />
       <skill id="displayEffect" trigger="onSkill" y="6" s="legion">

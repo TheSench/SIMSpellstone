@@ -2594,11 +2594,11 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>Lakeside</name>
-    <icon id="Mothers_Fire_01" bundle="17" />
+    <icon id="Mothers_Fire_01" bundle="16" />
     <location_id>101</location_id>
     <x>325</x>
     <y>134</y>
-    <combatBG>CombatBGWyvernsWay</combatBG>
+    <combatBG>CombatBGEvent002</combatBG>
     <missions>
       <mission_id>5241</mission_id>
       <mission_id>5242</mission_id>
@@ -2621,11 +2621,11 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>Nasty Neighbours</name>
-    <icon id="Mothers_Fire_01" bundle="17" />
+    <icon id="spiked_egg" bundle="17" />
     <location_id>101</location_id>
     <x>119</x>
     <y>181</y>
-    <combatBG>CombatBGWyvernsWay</combatBG>
+    <combatBG>CombatBGEvent002</combatBG>
     <missions>
       <mission_id>5245</mission_id>
       <mission_id>5246</mission_id>
@@ -2648,11 +2648,11 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>Lost Lambs</name>
-    <icon id="Mothers_Fire_01" bundle="17" />
+    <icon id="icey_egg" bundle="17" />
     <location_id>101</location_id>
     <x>85</x>
     <y>294</y>
-    <combatBG>CombatBGWyvernsWay</combatBG>
+    <combatBG>CombatBGEvent002</combatBG>
     <missions>
       <mission_id>5249</mission_id>
       <mission_id>5250</mission_id>
@@ -2676,11 +2676,11 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>Worst Fears</name>
-    <icon id="Mothers_Fire_01" bundle="17" />
+    <icon id="Mothers_Fire_01" bundle="16" />
     <location_id>101</location_id>
     <x>253</x>
     <y>252</y>
-    <combatBG>CombatBGWyvernsWay</combatBG>
+    <combatBG>CombatBGEvent002</combatBG>
     <missions>
       <mission_id>5254</mission_id>
       <mission_id>5255</mission_id>
@@ -2702,11 +2702,11 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>Goblins Afoot</name>
-    <icon id="Mothers_Fire_01" bundle="17" />
+    <icon id="furry_egg" bundle="17" />
     <location_id>101</location_id>
     <x>414</x>
     <y>258</y>
-    <combatBG>CombatBGWyvernsWay</combatBG>
+    <combatBG>CombatBGEvent002</combatBG>
     <missions>
       <mission_id>5257</mission_id>
       <mission_id>5258</mission_id>
@@ -2728,11 +2728,11 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>Sinister Intentions</name>
-    <icon id="Mothers_Fire_01" bundle="17" />
+    <icon id="Mothers_Fire_01" bundle="16" />
     <location_id>101</location_id>
     <x>706</x>
     <y>210</y>
-    <combatBG>CombatBGWyvernsWay</combatBG>
+    <combatBG>CombatBGEvent002</combatBG>
     <missions>
       <mission_id>5260</mission_id>
       <mission_id>5261</mission_id>

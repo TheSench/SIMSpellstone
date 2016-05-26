@@ -15541,6 +15541,119 @@
       <skill id="frost" x="2" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5060</id>
+    <card_type>2</card_type>
+    <name>Quack Apprentice</name>
+    <picture>Avian_Scientist_A</picture>
+    <asset_bundle>56</asset_bundle>
+    <hidden_until_time></hidden_until_time>
+    <attack>4</attack>
+    <health>10</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="burn" x="1" />
+    <skill id="jam" c="7" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="burn" x="1" />
+      <skill id="jam" c="7" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>12</health>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="burn" x="2" />
+      <skill id="jam" c="6" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15060</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Quack Researcher</name>
+    <picture>Avian_Scientist_A</picture>
+    <asset_bundle>56</asset_bundle>
+    <hidden_until_time></hidden_until_time>
+    <attack>5</attack>
+    <health>13</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="burn" x="2" />
+    <skill id="jam" c="5" />
+    <skill id="nullify" x="1" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="burn" x="2" />
+      <skill id="jam" c="5" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>6</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25060</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Quack Arcanist</name>
+    <picture>Avian_Scientist_B</picture>
+    <asset_bundle>56</asset_bundle>
+    <hidden_until_time></hidden_until_time>
+    <attack>6</attack>
+    <health>17</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="burn" x="2" />
+    <skill id="jam" c="4" />
+    <skill id="nullify" x="2" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>19</health>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="burn" x="3" />
+      <skill id="jam" c="4" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+  </unit>
   <!-- Chaos Premium Begin -->
   <unit>
     <id>6000</id>
@@ -22378,6 +22491,144 @@
       <skill id="enfeeble" x="6" />
       <skill id="weaken" x="2" all="1" />
       <skill id="nullify" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6057</id>
+    <card_type>2</card_type>
+    <name>Beammite</name>
+    <picture>Laser_Insect_A</picture>
+    <asset_bundle>56</asset_bundle>
+    <hidden_until_time></hidden_until_time>
+    <attack>3</attack>
+    <health>11</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="burn" x="2" />
+    <skill id="berserk" x="2" />
+    <type>2</type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>13</health>
+      <skill id="burn" x="2" />
+      <skill id="pierce" x="1" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="burn" x="2" />
+      <skill id="pierce" x="2" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>14</health>
+      <skill id="burn" x="2" />
+      <skill id="pierce" x="3" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>4</attack>
+      <skill id="burn" x="3" />
+      <skill id="pierce" x="3" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16057</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Beambug</name>
+    <picture>Laser_Insect_A</picture>
+    <asset_bundle>56</asset_bundle>
+    <hidden_until_time></hidden_until_time>
+    <attack>4</attack>
+    <health>15</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="burn" x="3" />
+    <skill id="pierce" x="3" />
+    <skill id="berserk" x="2" />
+    <type>2</type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="burn" x="3" />
+      <skill id="pierce" x="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>5</attack>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="burn" x="4" />
+      <skill id="pierce" x="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26057</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Beambeetle</name>
+    <picture>Laser_Insect_B</picture>
+    <asset_bundle>56</asset_bundle>
+    <hidden_until_time></hidden_until_time>
+    <attack>5</attack>
+    <health>20</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="burn" x="4" />
+    <skill id="pierce" x="4" />
+    <skill id="berserk" x="2" />
+    <type>2</type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="burn" x="4" />
+      <skill id="pierce" x="5" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="burn" x="4" />
+      <skill id="pierce" x="5" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>23</health>
+      <skill id="burn" x="5" />
+      <skill id="pierce" x="5" />
+      <skill id="berserk" x="3" />
     </upgrade>
   </unit>
   <!-- Wyld Premium Begin -->
@@ -29404,6 +29655,136 @@
       <skill id="armored" x="2" />
       <skill id="fervor" x="3" y="10" />
       <skill id="pierce" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7058</id>
+    <card_type>2</card_type>
+    <name>Steppe Stalker</name>
+    <picture>Avian_Monstrosity_A</picture>
+    <asset_bundle>56</asset_bundle>
+    <hidden_until_time></hidden_until_time>
+    <attack>4</attack>
+    <health>16</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="rally" x="1" all="1" y="10" />
+    <skill id="leech" x="4" />
+    <type>3</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>19</health>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="1" />
+      <skill id="rally" x="2" all="1" y="10" />
+      <skill id="leech" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17058</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Steppe Hunter</name>
+    <picture>Avian_Monstrosity_A</picture>
+    <asset_bundle>56</asset_bundle>
+    <hidden_until_time></hidden_until_time>
+    <attack>5</attack>
+    <health>21</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="rally" x="2" all="1" y="10" />
+    <skill id="leech" x="5" />
+    <type>3</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>23</health>
+      <skill id="evade" x="2" />
+      <skill id="rally" x="2" all="1" y="10" />
+      <skill id="leech" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="2" />
+      <skill id="rally" x="3" all="1" y="10" />
+      <skill id="leech" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27058</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Steppe Predator</name>
+    <picture>Avian_Monstrosity_B</picture>
+    <asset_bundle>56</asset_bundle>
+    <hidden_until_time></hidden_until_time>
+    <attack>6</attack>
+    <health>25</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="rally" x="3" all="1" y="10" />
+    <skill id="leech" x="6" />
+    <type>3</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>26</health>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>28</health>
+      <skill id="evade" x="3" />
+      <skill id="rally" x="3" all="1" y="10" />
+      <skill id="leech" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="3" />
+      <skill id="rally" x="4" all="1" y="10" />
+      <skill id="leech" x="7" />
     </upgrade>
   </unit>
   <!-- END SET 3000 - Premium -->
@@ -41860,7 +42241,7 @@
     <id>308</id>
     <card_type>1</card_type>
     <name>Red Feather Magistrate</name>
-    <portrait>frogemperor</portrait>
+    <portrait>avianmagistrate</portrait>
     <attack>0</attack>
     <health>34</health>
     <skill id="enfeeble" x="2" />
