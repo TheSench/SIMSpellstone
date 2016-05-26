@@ -78,8 +78,12 @@ var SIM_CONTROLLER;
         getordered = document.getElementById('ordered').checked;
         getexactorder = document.getElementById('exactorder').checked;
         getmission = document.getElementById('mission').value;
-        getdeck2 = TITANS[getmission];
-        if (getdeck2) getdeck2 = getdeck2.hash;
+        getraid = document.getElementById('raid').value;
+        if (getmission) {
+            getdeck2 = TITANS[getmission].hash;
+        } else if (getraid) {
+            getdeck2 = hash_encode(load_deck_raid(getraid, raidlevel));
+        }
         if (BATTLEGROUNDS) {
             getbattleground = [];
             var bgCheckBoxes = document.getElementsByName("battleground");
@@ -113,7 +117,42 @@ var SIM_CONTROLLER;
                 }
             }
         }
+        if (getraid) {
+            var bge_id = RAIDS[getraid].bge;
+            if (bge_id) {
+                var battleground;
+                for (var i = 0; i < BATTLEGROUNDS.length; i++) {
+                    var battleground = BATTLEGROUNDS[i];
+                    if (battleground.id == bge_id) {
+                        break;
+                    } else {
+                        battleground = null;
+                    }
+                }
+                if (battleground && raidlevel >= battleground.starting_level) {
+                    var enemy_only = battleground.enemy_only;
 
+                    for (var j = 0; j < battleground.effect.length; j++) {
+                        var effect = battleground.effect[j];
+                        var effect_type = effect.effect_type;
+                        if (effect_type === "skill") {
+                            if (battleground.scale_with_level) {
+                                var mult = battleground.scale_with_level * (raidlevel - battleground.starting_level + 1);
+                            } else {
+                                var mult = 1;
+                            }
+                            var bge = MakeBattleground(battleground.name, effect, mult);
+                            bge.enemy_only = enemy_only;
+                            battlegrounds.onTurn.push(bge);
+                        } else if (effect_type === "evolve_skill" || effect_type === "add_skill") {
+                            var bge = MakeSkillModifier(battleground.name, effect);
+                            bge.enemy_only = enemy_only;
+                            battlegrounds.onCreate.push(bge);
+                        }
+                    }
+                }
+            }
+        }
 
         SIMULATOR.battlegrounds = battlegrounds;
 

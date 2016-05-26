@@ -1,2 +1,2 @@
-var text_version = 'v1.2';
+var text_version = 'v2.0';
 var battle_sim = false;

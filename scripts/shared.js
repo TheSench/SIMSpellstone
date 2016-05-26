@@ -1,9 +1,5 @@
 "use strict";
 
-Array.prototype.push = function (data) {
-    this[this.length] = data;
-};
-
 if (!String.prototype.format) {
     String.prototype.format = function () {
         var args = arguments;
