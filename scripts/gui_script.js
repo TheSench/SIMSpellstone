@@ -379,7 +379,6 @@ function gettable() {
 		'<br>';
         if (debug) return links;
     }
-
     // Win/Loss ratio
     var table = '';
     table += '<table cellspacing=0 cellpadding=5 style="border: 1px solid #000000;">';
@@ -391,10 +390,9 @@ function gettable() {
     table += wins;
     table += '</td>';
     table += '<td>';
-    var temp = wins / games * 100;
-    temp = temp.toFixed(1);
-    var winrate = temp;
-    table += temp;
+    var winPercent = wins / games;
+    var winrate = (winPercent * 100).toFixed(2);
+    table += winrate;
     table += '%</td>';
     table += '</tr>';
     table += '<tr style="background-color: #eee;">';
@@ -405,8 +403,8 @@ function gettable() {
     table += losses;
     table += '</td>';
     table += '<td style="background-color: #eee;">';
-    temp = losses / games * 100;
-    temp = temp.toFixed(1);
+    var temp = losses / games * 100;
+    temp = temp.toFixed(2);
     table += temp;
     table += '%</td>';
     table += '</tr>';
@@ -419,8 +417,21 @@ function gettable() {
     table += '</td>';
     table += '<td>';
     temp = draws / games * 100;
-    temp = temp.toFixed(1);
+    temp = temp.toFixed(2);
     table += temp;
+    table += '%</td>';
+    table += '</tr>';
+    var stdDev = winrateDev(wins, games);
+    table += '<tr>';
+    table += '<td>';
+    table += '+/-';
+    table += '</td>';
+    table += '<td>';
+    table += stdDev.toFixed(0);
+    table += '</td>';
+    table += '<td>';
+    stdDev = (stdDev / games * 100).toFixed(2);
+    table += stdDev;
     table += '%</td>';
     table += '</tr>';
     table += '<tr style="background-color: #000; color: #fff;">';
@@ -476,10 +487,19 @@ function gettable() {
             current_deck = hash_encode(deck.player);
         }
 
-        battle_history += winrate + '% &nbsp; &nbsp; ' + current_deck + '<br>';
+        battle_history += winrate + '% (+/- ' + stdDev + '%) &nbsp; &nbsp; ' + current_deck + '<br>';
     }
 
     return full_table;
+}
+
+function winrateDev(wins, games) {
+    if (games <= 1) return 1;
+
+    var p = wins / games;
+    var N = games;
+    var dev = Math.sqrt(N * p * (1 - p));
+    return dev;
 }
 
 // Generate a link from current settings and input
