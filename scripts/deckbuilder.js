@@ -132,8 +132,11 @@ var drawDeck = function () {
     if (name) {
         setDeckName(name);
     }
+    doDrawDeck();
+}
 
-    CARD_GUI.draw_deck(deck, removeFromDeck, showCardOptions);
+function doDrawDeck() {
+    CARD_GUI.draw_deck(deck, removeFromDeck, showCardOptions, highlight);
     updateHash();
 };
 
@@ -321,7 +324,7 @@ var hash_changed = function (hash) {
     if (typeof simulatorDeckHashField !== 'undefined') simulatorDeckHashField.value = hash;
     deck = hash_decode(hash);
 
-    CARD_GUI.draw_deck(deck, removeFromDeck, showCardOptions);
+    doDrawDeck();
 }
 
 var sortDeck = function () {
@@ -340,8 +343,7 @@ var sortDeck = function () {
         compare = (unitA.runes.length ? unitA.runes[0].id : 0) - (unitB.runes.length ? unitB.runes[0].id : 0);
         return compare;
     });
-    CARD_GUI.draw_deck(deck, removeFromDeck, showCardOptions);
-    updateHash();
+    doDrawDeckck();
 }
 
 var addToDeck = function (htmlCard) {
@@ -352,8 +354,7 @@ var addToDeck = function (htmlCard) {
         if (deck.deck.length == 15 && !_DEFINED("unlimited")) return;
         deck.deck.push(unit);
     }
-    CARD_GUI.draw_deck(deck, removeFromDeck, showCardOptions);
-    updateHash();
+    doDrawDeck();
 };
 
 var removeFromDeck = function (htmlCard, index) {
@@ -364,13 +365,36 @@ var removeFromDeck = function (htmlCard, index) {
     } else {
         unit = deck.deck.splice(index, 1)[0];
     }
-    CARD_GUI.draw_deck(deck, removeFromDeck, showCardOptions);
-    updateHash();
+    doDrawDeck();
 };
+
+var highlight = function (htmlCard, index) {
+    if (index === undefined) {
+        index = 0;
+    } else {
+        index++;
+    }
+    highlighted = index;
+    updateHighlights();
+}
+
+var highlighted = -1;
+function updateHighlights() {
+    var deckHash = document.getElementById("hash").value;
+    
+    var start = highlighted * 5;
+    var end = start + 5;
+    var highlightedHash = deckHash.substring(0, start) + '<span>' + deckHash.substring(start, end) + '</span>' + deckHash.substring(end);
+    
+    document.getElementById('hash_highlighter').innerHTML = highlightedHash;
+}
 
 var updateHash = function () {
     var deckHash = hash_encode(deck);
     document.getElementById("hash").value = deckHash;
+
+    updateHighlights();
+
     if (typeof simulatorDeckHashField !== 'undefined') simulatorDeckHashField.value = deckHash;
 }
 
@@ -938,9 +962,10 @@ var modifyCard = function (optionsDialog) {
         unit.id = parseInt(unitID);
     }
 
-    CARD_GUI.draw_deck(deck, removeFromDeck, showCardOptions);
-    updateHash();
+    doDrawDeck();
 }
+
+
 
 var resetCard = function (optionsDialog) {
     var index = optionsDialog.index;
@@ -949,8 +974,7 @@ var resetCard = function (optionsDialog) {
     } else {
         deck.commander = optionsDialog.originalUnit;
     }
-    CARD_GUI.draw_deck(deck, removeFromDeck, showCardOptions);
-    updateHash();
+    doDrawDeck();
 }
 
 var filterSet = function (button, set) {
@@ -1322,6 +1346,5 @@ function getHashFromHTML(card) {
     }
     deck = newDeck;
 
-    CARD_GUI.draw_deck(deck, removeFromDeck, showCardOptions);
-    updateHash();
+    doDrawDeck();
 }

@@ -13,13 +13,13 @@ var CARD_GUI = {};
         cardSpace.innerHTML = '';
     }
 
-    function draw_deck(deck, onclick, onrightclick) {
+    function draw_deck(deck, onclick, onrightclick, onmouseover) {
         var cardSpace = document.getElementById("deck");
         cardSpace.innerHTML = '';
-        cardSpace.appendChild(makeDeckHTML(deck, onclick, onrightclick));
+        cardSpace.appendChild(makeDeckHTML(deck, onclick, onrightclick, onmouseover));
     }
 
-    function makeDeckHTML(deck, onclick, onrightclick) {
+    function makeDeckHTML(deck, onclick, onrightclick, onmouseover) {
         var deckHTML = createDiv("float-left");
         $(deckHTML).sortable({
             items: '.card:not(.commander)',
@@ -28,7 +28,7 @@ var CARD_GUI = {};
             }
         });
         var commander = get_card_by_id(deck.commander);
-        var htmlCard = create_card_html(commander, false, false, onclick, onrightclick);
+        var htmlCard = create_card_html(commander, false, false, onclick, onrightclick, onmouseover);
         if (deck.commander.index !== undefined) {
             htmlCard.setAttribute("data-index", deck.commander.index);
         }
@@ -36,7 +36,7 @@ var CARD_GUI = {};
         for (var i = 0, len = deck.deck.length; i < len; i++) {
             var deckEntry = deck.deck[i];
             var unit = get_card_by_id(deckEntry);
-            var htmlCard = create_card_html(unit, false, false, onclick, onrightclick, i);
+            var htmlCard = create_card_html(unit, false, false, onclick, onrightclick, onmouseover, i);
             if (deckEntry.index !== undefined) {
                 htmlCard.setAttribute("data-index", deckEntry.index);
             }
@@ -54,7 +54,7 @@ var CARD_GUI = {};
         for (var i = 0, len = deck.deck.length; i < len; i++) {
             var deckEntry = deck.deck[i];
             var unit = get_card_by_id(deckEntry);
-            var htmlCard = create_card_html(unit, false, false, onclick, onrightclick, i);
+            var htmlCard = create_card_html(unit, false, false, onclick, onrightclick, null, i);
             if (deckEntry.index !== undefined) {
                 htmlCard.setAttribute("data-index", deckEntry.index);
             }
@@ -86,7 +86,7 @@ var CARD_GUI = {};
                         htmlCard.appendChild(multDiv);
                     }
                     multiplier = 1;
-                    htmlCard = create_card_html(unit, compactSkills, false, onclick, onrightclick, i);
+                    htmlCard = create_card_html(unit, compactSkills, false, onclick, onrightclick, null, i);
                     if (listEntry.index !== undefined) {
                         htmlCard.setAttribute("data-index", listEntry.index);
                     }
@@ -167,7 +167,7 @@ var CARD_GUI = {};
         return cards;
     }
 
-    function create_card_html(card, compactSkills, onField, onclick, onrightclick, state) {
+    function create_card_html(card, compactSkills, onField, onclick, onrightclick, onmouseover, state) {
         var htmlCard = createDiv("card");
         // Add ID to card
         htmlCard.setAttribute("data-id", card.id);
@@ -318,6 +318,13 @@ var CARD_GUI = {};
             htmlCard.oncontextmenu = (function (inner) {
                 return function () {
                     return onrightclick(htmlCard, state);
+                };
+            })(htmlCard, state);
+        }
+        if(onmouseover) {
+            htmlCard.onmouseover = (function (inner) {
+                return function () {
+                    return onmouseover(htmlCard, state);
                 };
             })(htmlCard, state);
         }

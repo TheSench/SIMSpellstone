@@ -207,3 +207,26 @@ fieldset {
 #inventoryOptions {
     padding: 0px;
 }
+
+.highlighter, .highlighted {
+    width: 90%;
+    font-size: 10pt;
+    font-family: 'verdana';
+}
+
+.highlighter {
+    position: absolute;
+    padding: 1px;
+    margin-left: 1px;
+    color: white;
+}
+
+.highlighter span {
+    background: gold;
+    color: gold;
+}
+
+.highlighted {
+    position: relative;
+    background-color: transparent;
+}
