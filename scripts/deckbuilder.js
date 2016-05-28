@@ -44,6 +44,10 @@ var initDeckBuilder = function () {
     setupPopups();
     adjustHeight();
 
+    document.getElementById("hash").onkeydown = function (e) {
+        e.stopPropagation();
+    }
+
     $("body").addClass("loading");
 
     $(window).resize(onResize);
@@ -314,6 +318,7 @@ var addUnitLevels = function (id, maxlevel) {
     }
 }
 
+var disableTracking = false;
 var hash_changed = function (hash) {
 
     if (hash) {
@@ -321,6 +326,7 @@ var hash_changed = function (hash) {
     } else {
         hash = document.getElementById("hash").value;
     }
+
     if (typeof simulatorDeckHashField !== 'undefined') simulatorDeckHashField.value = hash;
     deck = hash_decode(hash);
 
@@ -395,7 +401,60 @@ var updateHash = function () {
 
     updateHighlights();
 
+    addChange(deckHash);
+
     if (typeof simulatorDeckHashField !== 'undefined') simulatorDeckHashField.value = deckHash;
+}
+
+var changeTracking = [];
+var currentChange = -1;
+function addChange(hash) {
+    if (disableTracking) {
+        disableTracking = false;
+    } else {
+        currentChange++;
+        changeTracking[currentChange] = hash;
+        changeTracking.length = currentChange + 1;
+        if (currentChange > 100) {
+            currentChange--;
+            changeTracking.splice(0, 1);
+        }
+    }
+}
+
+function KeyPress(e) {
+    var evtobj = window.event ? event : e
+    if (evtobj.ctrlKey) {
+        if (evtobj.keyCode == 90) {
+            undo();
+        } else if (evtobj.keyCode == 89) {
+            redo();
+        }
+    }
+}
+
+document.onkeydown = KeyPress;
+
+function undo() {
+    if (currentChange > 0) {
+        disableTracking = true
+        currentChange--;
+        var hash = changeTracking[currentChange];
+        document.getElementById("hash").value = hash;
+        deck = hash_decode(hash);
+        doDrawDeck();
+    }
+}
+
+function redo() {
+    if (currentChange < changeTracking.length - 1) {
+        disableTracking = true;
+        currentChange++;
+        var hash = changeTracking[currentChange];
+        document.getElementById("hash").value = hash;
+        deck = hash_decode(hash);
+        doDrawDeck();
+    }
 }
 
 var filterAdvanced = function (skill) {
