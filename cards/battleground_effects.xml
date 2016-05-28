@@ -244,8 +244,8 @@
     <id>505</id>
     <name>Fortune's Favoring</name>
     <desc>Fortune's Favor Heals and Empowers all of its allies, increasing in strength as it levels up.</desc>
-    <web_picture>undead_raid_badge_64.png</web_picture>
-    <!-- needs art -->
+    <icon>pirate_raid_badge_64</icon>
+    <icon_bundle>61</icon_bundle>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->

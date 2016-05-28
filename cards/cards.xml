@@ -22631,6 +22631,132 @@
       <skill id="berserk" x="3" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6058</id>
+    <card_type>2</card_type>
+    <name>Tarragon Cuttail</name>
+    <picture>Scythe_Tail_Dragon_A</picture>
+    <asset_bundle>63</asset_bundle>
+    <hidden_until_time>1464627600</hidden_until_time>
+    <attack>4</attack>
+    <health>14</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="fervor" x="1" y="9" />
+    <skill id="enfeeble" x="1" />
+    <skill id="berserk" x="1" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="fervor" x="2" y="9" />
+      <skill id="enfeeble" x="1" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="fervor" x="2" y="9" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16058</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Tarragon Carvetail</name>
+    <picture>Scythe_Tail_Dragon_A</picture>
+    <asset_bundle>63</asset_bundle>
+    <hidden_until_time>1464627600</hidden_until_time>
+    <attack>5</attack>
+    <health>17</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="fervor" x="2" y="9" />
+    <skill id="enfeeble" x="1" all="1" />
+    <skill id="berserk" x="2" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="fervor" x="3" y="9" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26058</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Tarragon Cleavetail</name>
+    <picture>Scythe_Tail_Dragon_B</picture>
+    <asset_bundle>63</asset_bundle>
+    <hidden_until_time>1464627600</hidden_until_time>
+    <attack>6</attack>
+    <health>21</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="fervor" x="3" y="9" />
+    <skill id="enfeeble" x="1" all="1" />
+    <skill id="berserk" x="2" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="fervor" x="3" y="9" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="fervor" x="3" y="9" />
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
   <!-- Wyld Premium Begin -->
   <unit>
     <id>7000</id>
@@ -42285,9 +42411,7 @@
     <id>309</id>
     <card_type>1</card_type>
     <name>Fortune's Favor</name>
-    <picture></picture>
-    <asset_bundle></asset_bundle>
-    <hidden_until_time></hidden_until_time>
+    <portrait>raid_003_portrait</portrait>
     <attack>0</attack>
     <health>30</health>
     <rarity>5</rarity>

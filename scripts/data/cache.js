@@ -41539,6 +41539,235 @@ var CARDS = {
       },
     }
   },
+  "6058": {
+    "id": "6058",
+    "name": "Tarragon Cuttail",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "9",
+    "attack": 4,
+    "health": 14,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 1,
+        "y": "9",
+        "z": 9,
+      },
+      {
+        "id": "enfeeble",
+        "x": 1,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 15,
+        "skill": [],
+      },
+      "3": {
+        "health": 16,
+        "skill": [],
+      },
+      "4": {
+        "attack": 5,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "16058": {
+    "id": "16058",
+    "name": "Tarragon Carvetail",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "9",
+    "attack": 5,
+    "health": 17,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "9",
+        "z": 9,
+      },
+      {
+        "id": "enfeeble",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 18,
+        "skill": [],
+      },
+      "3": {
+        "health": 19,
+        "skill": [],
+      },
+      "4": {
+        "attack": 6,
+        "skill": [],
+      },
+      "5": {
+        "health": 20,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "26058": {
+    "id": "26058",
+    "name": "Tarragon Cleavetail",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "9",
+    "attack": 6,
+    "health": 21,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 3,
+        "y": "9",
+        "z": 9,
+      },
+      {
+        "id": "enfeeble",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 22,
+        "skill": [],
+      },
+      "3": {
+        "health": 23,
+        "skill": [],
+      },
+      "4": {
+        "attack": 7,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
   "7000": {
     "id": "7000",
     "name": "Treant King",
@@ -105279,6 +105508,7 @@ var FUSIONS = {
   "16055" : "26055",
   "16056" : "26056",
   "16057" : "26057",
+  "16058" : "26058",
   "1606" : "11606",
   "1607" : "11607",
   "1610" : "11610",
@@ -105537,6 +105767,7 @@ var FUSIONS = {
   "6055" : "16055",
   "6056" : "16056",
   "6057" : "16057",
+  "6058" : "16058",
   "7000" : "17000",
   "7001" : "17001",
   "7002" : "17002",
