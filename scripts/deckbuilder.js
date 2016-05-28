@@ -44,9 +44,7 @@ var initDeckBuilder = function () {
     setupPopups();
     adjustHeight();
 
-    document.getElementById("hash").onkeydown = function (e) {
-        e.stopPropagation();
-    }
+    stopPropagation("hash");
 
     $("body").addClass("loading");
 
@@ -72,6 +70,15 @@ var adjustHeight = function () {
 }
 
 var setupPopups = function () {
+
+
+    stopPropagation("advancedFilters");
+    stopPropagation("unitOptions");
+    var inputs = document.getElementsByTagName("input");
+    for (var i = 0; i < inputs.length; i++) {
+
+    }
+
     advancedFilters = $("#advancedFilters").dialog({
         autoOpen: false,
         width: 150,
@@ -96,12 +103,15 @@ var setupPopups = function () {
         resizable: false,
         buttons: {
             OK: function () {
-                //modifyCard(optionsDialog);
+                disableTracking = false;
+                modifyCard(optionsDialog);
                 optionsDialog.dialog("close");
+                disableTracking = false;
             },
             Cancel: function () {
                 resetCard(optionsDialog);
                 optionsDialog.dialog("close");
+                disableTracking = false;
             }
         },
     });
@@ -409,9 +419,7 @@ var updateHash = function () {
 var changeTracking = [];
 var currentChange = -1;
 function addChange(hash) {
-    if (disableTracking) {
-        disableTracking = false;
-    } else {
+    if (!disableTracking) {
         currentChange++;
         changeTracking[currentChange] = hash;
         changeTracking.length = currentChange + 1;
@@ -435,6 +443,12 @@ function KeyPress(e) {
 
 document.onkeydown = KeyPress;
 
+function stopPropagation(id) {
+    document.getElementById(id).onkeydown = function (e) {
+        e.stopPropagation();
+    }
+}
+
 function undo() {
     if (currentChange > 0) {
         disableTracking = true
@@ -443,6 +457,7 @@ function undo() {
         document.getElementById("hash").value = hash;
         deck = hash_decode(hash);
         doDrawDeck();
+        disableTracking = false;
     }
 }
 
@@ -454,6 +469,7 @@ function redo() {
         document.getElementById("hash").value = hash;
         deck = hash_decode(hash);
         doDrawDeck();
+        disableTracking = false;
     }
 }
 
@@ -936,6 +952,7 @@ var showCardOptions = function (htmlCard, index) {
     }
 
     if (show) {
+        disableTracking = true;
         optionsDialog.dialog("open");
         optionsDialog.dialog("option", "position", { my: "left", at: "right", of: htmlCard });;
         optionsDialog.unit = unit;
