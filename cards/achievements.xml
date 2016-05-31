@@ -3519,7 +3519,7 @@
     <type>2</type>
     <order>101</order>
     <name>Frobert and the Magistrate</name>
-    <desc>Complete the 'Through the Alleyway' campaign on Mastery Level 4.</desc>
+    <desc>Complete the 'Frobert and the Magistrate' campaign on Mastery Level 4.</desc>
     <event_only>1</event_only>
     <req>
       <campaign>1063</campaign>
