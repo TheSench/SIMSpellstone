@@ -766,8 +766,8 @@
 .sprite-Spirit_Dragon_B{ background-position: -0px -600px; background-image: url('../res/cardImages/SpriteSheet8.jpg');}
 .sprite-Spear_Face_Pug_Dragon_A{ background-position: -84px -600px; background-image: url('../res/cardImages/SpriteSheet8.jpg');}
 .sprite-Spear_Face_Pug_Dragon_B{ background-position: -168px -600px; background-image: url('../res/cardImages/SpriteSheet8.jpg');}
-.sprite-New4_A{ background-position: -252px -600px; background-image: url('../res/cardImages/SpriteSheet8.jpg');}
-.sprite-New4_B{ background-position: -336px -600px; background-image: url('../res/cardImages/SpriteSheet8.jpg');}
+.sprite-Spike_Blade_Dragon_A{ background-position: -252px -600px; background-image: url('../res/cardImages/SpriteSheet8.jpg');}
+.sprite-Spike_Blade_Dragon_B{ background-position: -336px -600px; background-image: url('../res/cardImages/SpriteSheet8.jpg');}
 .sprite-New5_A{ background-position: -420px -600px; background-image: url('../res/cardImages/SpriteSheet8.jpg');}
 .sprite-New5_B{ background-position: -504px -600px; background-image: url('../res/cardImages/SpriteSheet8.jpg');}
 .sprite-New6_A{ background-position: -588px -600px; background-image: url('../res/cardImages/SpriteSheet8.jpg');}
@@ -862,3 +862,8 @@
 .portrait-portrait_new_dragon7{ background-position: -336px -800px; background-image: url('../res/cardImages/PortraitSheet1.jpg');}
 .portrait-portrait_new_dragon8{ background-position: -420px -800px; background-image: url('../res/cardImages/PortraitSheet1.jpg');}
 .portrait-portrait_raid_003_portrait{ background-position: -504px -800px; background-image: url('../res/cardImages/PortraitSheet1.jpg');}
+.portrait-portrait_nethergore{ background-position: -588px -800px; background-image: url('../res/cardImages/PortraitSheet1.jpg');}
+.portrait-portrait_lightwisp{ background-position: -672px -800px; background-image: url('../res/cardImages/PortraitSheet1.jpg');}
+.portrait-portrait_greenbackdragon{ background-position: -756px -800px; background-image: url('../res/cardImages/PortraitSheet1.jpg');}
+.portrait-portrait_goblinringleader{ background-position: -0px -900px; background-image: url('../res/cardImages/PortraitSheet1.jpg');}
+.portrait-portrait_goblinfootmen{ background-position: -84px -900px; background-image: url('../res/cardImages/PortraitSheet1.jpg');}
