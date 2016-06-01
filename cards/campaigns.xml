@@ -2594,10 +2594,10 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>Lakeside</name>
-    <icon id="Mothers_Fire_01" bundle="16" />
+    <icon id="purple_fire" bundle="17" />
     <location_id>101</location_id>
-    <x>325</x>
-    <y>134</y>
+    <x>128</x>
+    <y>166</y>
     <combatBG>CombatBGEvent002</combatBG>
     <missions>
       <mission_id>5241</mission_id>
@@ -2607,11 +2607,11 @@
     </missions>
     <rewards>
       <card level="1" id="510" />
-      <card level="2" id="1318" />
-      <card level="3" id="1318" />
-      <card level="4" id="2041" />
-      <card level="5" id="1619" />
-      <card level="6" id="1619" />
+      <card level="2" id="1313" />
+      <card level="3" id="1313" />
+      <item level="4" id="3038" />
+      <card level="5" id="1314" />
+      <card level="6" id="1314" />
       <card level="7" id="512" />
     </rewards>
     <find_item id="3034" drop_per_energy=".20" />
@@ -2623,8 +2623,8 @@
     <name>Nasty Neighbours</name>
     <icon id="spiked_egg" bundle="17" />
     <location_id>101</location_id>
-    <x>119</x>
-    <y>181</y>
+    <x>325</x>
+    <y>134</y>
     <combatBG>CombatBGEvent002</combatBG>
     <missions>
       <mission_id>5245</mission_id>
@@ -2634,11 +2634,11 @@
     </missions>
     <rewards>
       <card level="1" id="510" />
-      <card level="2" id="1318" />
-      <card level="3" id="1318" />
+      <card level="2" id="1314" />
+      <card level="3" id="1314" />
       <item level="4" id="3035" />
-      <card level="5" id="1619" />
-      <card level="6" id="1619" />
+      <card level="5" id="1313" />
+      <card level="6" id="1313" />
       <card level="7" id="512" />
     </rewards>
     <find_item id="3034" drop_per_energy=".21" />
@@ -2662,11 +2662,11 @@
     </missions>
     <rewards>
       <card level="1" id="510" />
-      <card level="2" id="1318" />
-      <card level="3" id="1318" />
+      <card level="2" id="1317" />
+      <card level="3" id="1317" />
       <item level="4" id="3036" />
-      <card level="5" id="1619" />
-      <card level="6" id="1619" />
+      <card level="5" id="1315" />
+      <card level="6" id="1315" />
       <card level="7" id="512" />
     </rewards>
     <find_item id="3034" drop_per_energy=".22" />
@@ -2676,10 +2676,10 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>Worst Fears</name>
-    <icon id="Mothers_Fire_01" bundle="16" />
+    <icon id="purple_fire" bundle="17" />
     <location_id>101</location_id>
-    <x>253</x>
-    <y>252</y>
+    <x>414</x>
+    <y>258</y>
     <combatBG>CombatBGEvent002</combatBG>
     <missions>
       <mission_id>5254</mission_id>
@@ -2688,11 +2688,11 @@
     </missions>
     <rewards>
       <card level="1" id="510" />
-      <card level="2" id="1318" />
-      <card level="3" id="1318" />
-      <card level="4" id="2041" />
-      <card level="5" id="1619" />
-      <card level="6" id="1619" />
+      <card level="2" id="1315" />
+      <card level="3" id="1315" />
+      <item level="4" id="3038" />
+      <card level="5" id="1317" />
+      <card level="6" id="1317" />
       <card level="7" id="512" />
     </rewards>
     <find_item id="3034" drop_per_energy=".23" />
@@ -2704,8 +2704,8 @@
     <name>Goblins Afoot</name>
     <icon id="furry_egg" bundle="17" />
     <location_id>101</location_id>
-    <x>414</x>
-    <y>258</y>
+    <x>612</x>
+    <y>244</y>
     <combatBG>CombatBGEvent002</combatBG>
     <missions>
       <mission_id>5257</mission_id>
@@ -2717,8 +2717,8 @@
       <card level="2" id="1318" />
       <card level="3" id="1318" />
       <item level="4" id="3037" />
-      <card level="5" id="1619" />
-      <card level="6" id="1619" />
+      <card level="5" id="1319" />
+      <card level="6" id="1319" />
       <card level="7" id="512" />
     </rewards>
     <find_item id="3034" drop_per_energy=".24" />
@@ -2728,10 +2728,10 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>Sinister Intentions</name>
-    <icon id="Mothers_Fire_01" bundle="16" />
+    <icon id="mothers_fire_100" bundle="58" />
     <location_id>101</location_id>
-    <x>706</x>
-    <y>210</y>
+    <x>721</x>
+    <y>201</y>
     <combatBG>CombatBGEvent002</combatBG>
     <missions>
       <mission_id>5260</mission_id>
@@ -2742,11 +2742,36 @@
     </missions>
     <rewards>
       <card level="1" id="510" />
-      <card level="2" id="1318" />
-      <card level="3" id="1318" />
+      <card level="2" id="1319" />
+      <card level="3" id="1319" />
       <card level="4" id="2041" />
-      <card level="5" id="1619" />
-      <card level="6" id="1619" />
+      <card level="5" id="1318" />
+      <card level="6" id="1318" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3034" drop_per_energy=".25" />
+  </campaign>
+  <campaign>
+    <!-- stub -->
+    <id>1070</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>High Flying</name>
+    <icon id="purple_fire" bundle="17" />
+    <location_id>101</location_id>
+    <x>236</x>
+    <y>264</y>
+    <combatBG>CombatBGEvent002</combatBG>
+    <missions>
+      <mission_id>5265</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1312" />
+      <card level="3" id="1312" />
+      <item level="4" id="3038" />
+      <card level="5" id="1017" />
+      <card level="6" id="1017" />
       <card level="7" id="512" />
     </rewards>
     <find_item id="3034" drop_per_energy=".25" />

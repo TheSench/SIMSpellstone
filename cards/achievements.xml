@@ -3733,5 +3733,36 @@
       <gold>800</gold>
     </reward>
   </achievement>
+  <achievement>
+    <id>3112</id>
+    <type>2</type>
+    <order>101</order>
+    <name>High Flying</name>
+    <desc>Complete the 'High Flying' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1070</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3113</id>
+    <type>2</type>
+    <order>101</order>
+    <name>High Flying Mastery</name>
+    <desc>Complete the 'High Flying' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3112</achievement_req>
+    <req>
+      <campaign>1070</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
 </root>

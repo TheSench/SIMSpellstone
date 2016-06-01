@@ -7170,8 +7170,8 @@
         <text>Yikes, is that your girlfriend or something? She looks really angry! Maybe you should apologize-</text>
       </line>
       <line>
-        <commander>elyse</commander>
-        <enemy>0</enemy>
+        <commander>greenbackdragon</commander>
+        <enemy>1</enemy>
         <text>GRAAOOOOOWWWW!</text>
       </line>
     </speech>
@@ -7206,8 +7206,8 @@
         <text>Hey, we can talk this out... right?</text>
       </line>
       <line>
-        <commander>elyse</commander>
-        <enemy>0</enemy>
+        <commander>greenbackdragon</commander>
+        <enemy>1</enemy>
         <text>...</text>
       </line>
       <line>
@@ -7518,8 +7518,8 @@
         <text>'Why yes, Slarbox! Let us raid a dragon home! Surely they will not eat us despite being of superior size and strength!' 'Well met Kogkar, well met!'</text>
       </line>
       <line>
-        <commander>elyse</commander>
-        <enemy>0</enemy>
+        <commander>goblinfootmen</commander>
+        <enemy>1</enemy>
         <text>Arrogant human! We will see who will be bowing down to dragons soon!</text>
       </line>
     </speech>
@@ -7554,8 +7554,8 @@
         <text>Wait- What does that mean? You really think my dragons will bow to you?</text>
       </line>
       <line>
-        <commander>elyse</commander>
-        <enemy>0</enemy>
+        <commander>goblinfootmen</commander>
+        <enemy>1</enemy>
         <text>Kekekekekekek!</text>
       </line>
       <line>
@@ -7594,8 +7594,8 @@
         <text>Filthy stealers! Those eggs do NOT belong to you!</text>
       </line>
       <line>
-        <commander>elyse</commander>
-        <enemy>0</enemy>
+        <commander>goblinfootmen</commander>
+        <enemy>1</enemy>
         <text>Ack! The gig's up, SCRAMBLE!</text>
       </line>
     </speech>
@@ -7652,13 +7652,13 @@
         <text>If you want to keep all of your fingers, you best put those eggs down!</text>
       </line>
       <line>
-        <commander>elyse</commander>
-        <enemy>0</enemy>
+        <commander>goblinringleader</commander>
+        <enemy>1</enemy>
         <text>Well hello there, puddin'! You must be the keeper of this fine establishment!</text>
       </line>
       <line>
-        <commander>elyse</commander>
-        <enemy>0</enemy>
+        <commander>goblinringleader</commander>
+        <enemy>1</enemy>
         <text>I know you must be concerned about these here fine eggs, but I promise it is for a good cause. Maybe you would let it slide for a little compensation?</text>
       </line>
       <line>
@@ -7717,10 +7717,20 @@
     </deck>
     <speech>
       <line>
-        <commander>elyse</commander>
-        <enemy>0</enemy>
+        <commander>goblinringleader</commander>
+        <enemy>1</enemy>
         <text>Oh spit and spattle! She's callin' the whole bloody dragon army on us, boys! Just grab what you can and leave!</text>
       </line>
     </speech>
+  </mission>
+  <mission>
+    <id>5265</id>
+    <name>Nervous Flier</name>
+    <energy>8</energy>
+    <desc>The tension in the air is thick as they fly back. Fiona can't help but to think about what could have upset the greenback dragon. The flight to Wyverns' Way seems exceptionally long as she weighs her thoughts.</desc>
+    <commander id="1" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+    </deck>
   </mission>
 </root>
