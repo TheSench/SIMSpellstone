@@ -224,7 +224,7 @@ window.onload = function () {
     } else {
         // Load current battlegrounds
         var bgCheckBoxes = document.getElementsByName("battleground");
-        bgCheckBoxes[7].checked = true;
+        bgCheckBoxes[0].checked = true;
         bgCheckBoxes[8].checked = true;
     }
 
