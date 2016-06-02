@@ -990,20 +990,28 @@
     <resource card_id="12043" number="2" />
   </fusion_recipe>
   <fusion_recipe>
-    <card_id>12047</card_id>
-    <resource card_id="2047" number="2" />
-  </fusion_recipe>
-  <fusion_recipe>
-    <card_id>22047</card_id>
-    <resource card_id="12047" number="2" />
-  </fusion_recipe>
-  <fusion_recipe>
     <card_id>12044</card_id>
     <resource card_id="2044" number="2" />
   </fusion_recipe>
   <fusion_recipe>
     <card_id>22044</card_id>
     <resource card_id="12044" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12045</card_id>
+    <resource card_id="2045" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22045</card_id>
+    <resource card_id="12045" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12047</card_id>
+    <resource card_id="2047" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22047</card_id>
+    <resource card_id="12047" number="2" />
   </fusion_recipe>
   <!-- END SET 2000 - Reward -->
   <!-- START SET 3000 - Premium -->

@@ -15474,6 +15474,182 @@ var CARDS = {
       },
     }
   },
+  "2045": {
+    "id": "2045",
+    "name": "Chillbeard Giant",
+    "picture": "Hairy_Chest_Ice_Dragon_A",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "9",
+    "attack": 3,
+    "health": 15,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "frost",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 17,
+        "skill": [],
+      },
+      "3": {
+        "attack": 4,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "jam",
+            "c": 6,
+          },
+        ],
+      },
+    }
+  },
+  "12045": {
+    "id": "12045",
+    "name": "Chillbeard Monster",
+    "picture": "Hairy_Chest_Ice_Dragon_A",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "9",
+    "attack": 4,
+    "health": 18,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "frost",
+        "x": 2,
+      },
+      {
+        "id": "jam",
+        "c": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 20,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+      "4": {
+        "health": 21,
+        "skill": [],
+      },
+      "5": {
+        "attack": 5,
+        "skill": [],
+      },
+    }
+  },
+  "22045": {
+    "id": "22045",
+    "name": "Chillbeard Beast",
+    "picture": "Hairy_Chest_Ice_Dragon_B",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "9",
+    "attack": 5,
+    "health": 22,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "frost",
+        "x": 2,
+      },
+      {
+        "id": "jam",
+        "c": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 23,
+        "skill": [],
+      },
+      "3": {
+        "attack": 6,
+        "health": 24,
+        "skill": [],
+      },
+      "4": {
+        "health": 25,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "frost",
+            "x": 3,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+        ],
+      },
+    }
+  },
   "2047": {
     "id": "2047",
     "name": "Conjured Dragon",
@@ -56658,6 +56834,213 @@ var CARDS = {
       },
     }
   },
+  "7060": {
+    "id": "7060",
+    "name": "Shenami",
+    "picture": "Shenami_A",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "9",
+    "attack": 3,
+    "health": 12,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 2,
+      },
+      {
+        "id": "heal",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 3,
+          },
+          {
+            "id": "heal",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "3": {
+        "health": 13,
+        "skill": [],
+      },
+      "4": {
+        "attack": 4,
+        "skill": [],
+      },
+      "5": {
+        "health": 14,
+        "skill": [],
+      },
+      "6": {
+        "health": 15,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 4,
+          },
+          {
+            "id": "heal",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "17060": {
+    "id": "17060",
+    "name": "Shenami the Divine",
+    "picture": "Shenami_A",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "9",
+    "attack": 5,
+    "health": 15,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 4,
+      },
+      {
+        "id": "heal",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 16,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 4,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "3": {
+        "health": 17,
+        "skill": [],
+      },
+      "4": {
+        "health": 18,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 5,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "attack": 6,
+        "skill": [],
+      },
+      "6": {
+        "health": 19,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 6,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "27060": {
+    "id": "27060",
+    "name": "Shenami the Eternal",
+    "picture": "Shenami_B",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "9",
+    "attack": 6,
+    "health": 20,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 6,
+      },
+      {
+        "id": "heal",
+        "x": 2,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 7,
+        "health": 21,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 7,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "attack": 8,
+        "health": 22,
+        "skill": [],
+      },
+      "5": {
+        "health": 23,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 8,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
   "8000": {
     "id": "8000",
     "name": "Frostbite Giant",
@@ -81240,88 +81623,10 @@ var CARDS = {
       },
     }
   },
-  "9985": {
-    "id": "9985",
-    "name": "",
-    "picture": "New10_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19985": {
-    "id": "19985",
-    "name": "",
-    "picture": "New10_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29985": {
-    "id": "29985",
-    "name": "",
-    "picture": "New10_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9986": {
-    "id": "9986",
-    "name": "",
-    "picture": "New11_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19986": {
-    "id": "19986",
-    "name": "",
-    "picture": "New11_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29986": {
-    "id": "29986",
-    "name": "",
-    "picture": "New11_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
   "9987": {
     "id": "9987",
     "name": "",
-    "picture": "New12_A",
+    "picture": "New10_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81334,7 +81639,7 @@ var CARDS = {
   "19987": {
     "id": "19987",
     "name": "",
-    "picture": "New12_A",
+    "picture": "New10_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81347,7 +81652,7 @@ var CARDS = {
   "29987": {
     "id": "29987",
     "name": "",
-    "picture": "New12_B",
+    "picture": "New10_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81360,7 +81665,7 @@ var CARDS = {
   "9988": {
     "id": "9988",
     "name": "",
-    "picture": "New13_A",
+    "picture": "New11_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81373,7 +81678,7 @@ var CARDS = {
   "19988": {
     "id": "19988",
     "name": "",
-    "picture": "New13_A",
+    "picture": "New11_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81386,7 +81691,7 @@ var CARDS = {
   "29988": {
     "id": "29988",
     "name": "",
-    "picture": "New13_B",
+    "picture": "New11_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81399,7 +81704,7 @@ var CARDS = {
   "9989": {
     "id": "9989",
     "name": "",
-    "picture": "New14_A",
+    "picture": "New12_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81412,7 +81717,7 @@ var CARDS = {
   "19989": {
     "id": "19989",
     "name": "",
-    "picture": "New14_A",
+    "picture": "New12_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81425,7 +81730,7 @@ var CARDS = {
   "29989": {
     "id": "29989",
     "name": "",
-    "picture": "New14_B",
+    "picture": "New12_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81438,7 +81743,7 @@ var CARDS = {
   "9990": {
     "id": "9990",
     "name": "",
-    "picture": "New15_A",
+    "picture": "New13_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81451,7 +81756,7 @@ var CARDS = {
   "19990": {
     "id": "19990",
     "name": "",
-    "picture": "New15_A",
+    "picture": "New13_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81464,7 +81769,7 @@ var CARDS = {
   "29990": {
     "id": "29990",
     "name": "",
-    "picture": "New15_B",
+    "picture": "New13_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81477,7 +81782,7 @@ var CARDS = {
   "9991": {
     "id": "9991",
     "name": "",
-    "picture": "New16_A",
+    "picture": "New15_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81490,7 +81795,7 @@ var CARDS = {
   "19991": {
     "id": "19991",
     "name": "",
-    "picture": "New16_A",
+    "picture": "New15_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81503,7 +81808,7 @@ var CARDS = {
   "29991": {
     "id": "29991",
     "name": "",
-    "picture": "New16_B",
+    "picture": "New15_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81516,7 +81821,7 @@ var CARDS = {
   "9992": {
     "id": "9992",
     "name": "",
-    "picture": "New17_A",
+    "picture": "New16_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81529,7 +81834,7 @@ var CARDS = {
   "19992": {
     "id": "19992",
     "name": "",
-    "picture": "New17_A",
+    "picture": "New16_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81542,7 +81847,7 @@ var CARDS = {
   "29992": {
     "id": "29992",
     "name": "",
-    "picture": "New17_B",
+    "picture": "New16_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -107416,6 +107721,7 @@ var FUSIONS = {
   "12042" : "22042",
   "12043" : "22043",
   "12044" : "22044",
+  "12045" : "22045",
   "12047" : "22047",
   "1300" : "11300",
   "1301" : "11301",
@@ -107714,6 +108020,7 @@ var FUSIONS = {
   "2042" : "12042",
   "2043" : "12043",
   "2044" : "12044",
+  "2045" : "12045",
   "2047" : "12047",
   "5000" : "15000",
   "5001" : "15001",
