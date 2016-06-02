@@ -29481,7 +29481,7 @@ var CARDS = {
   "5062": {
     "id": "5062",
     "name": "Cliffhanger Wyrm",
-    "picture": "NotFound",
+    "picture": "Spike_Blade_Dragon_A",
     "rarity": "3",
     "set": "3000",
     "card_type": "2",
@@ -29552,7 +29552,7 @@ var CARDS = {
   "15062": {
     "id": "15062",
     "name": "Cliffrider Wyrm",
-    "picture": "NotFound",
+    "picture": "Spike_Blade_Dragon_A",
     "rarity": "3",
     "set": "3000",
     "card_type": "2",
@@ -29609,7 +29609,7 @@ var CARDS = {
   "25062": {
     "id": "25062",
     "name": "Cliffgazer Wyrm",
-    "picture": "NotFound",
+    "picture": "Spike_Blade_Dragon_B",
     "rarity": "3",
     "set": "3000",
     "card_type": "2",
@@ -71853,7 +71853,7 @@ var CARDS = {
   "204": {
     "id": "204",
     "name": "Will O' Wisp",
-    "picture": "NotFound",
+    "picture": "portrait_lightwisp",
     "rarity": "2",
     "set": "9999",
     "card_type": "1",
@@ -72904,7 +72904,7 @@ var CARDS = {
   "221": {
     "id": "221",
     "name": "Alpha Wisp",
-    "picture": "NotFound",
+    "picture": "portrait_lightwisp",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -76077,7 +76077,7 @@ var CARDS = {
   "261": {
     "id": "261",
     "name": "Coldspirit Wisp",
-    "picture": "NotFound",
+    "picture": "portrait_lightwisp",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -77528,7 +77528,7 @@ var CARDS = {
   "279": {
     "id": "279",
     "name": "Nethergore",
-    "picture": "NotFound",
+    "picture": "portrait_nethergore",
     "rarity": "5",
     "set": "9999",
     "card_type": "1",
@@ -80478,7 +80478,7 @@ var CARDS = {
   "310": {
     "id": "310",
     "name": "Ivytail Dragon",
-    "picture": "NotFound",
+    "picture": "portrait_greenbackdragon",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -80561,7 +80561,7 @@ var CARDS = {
   "311": {
     "id": "311",
     "name": "Goblin Footgang",
-    "picture": "NotFound",
+    "picture": "portrait_goblinfootmen",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -80630,7 +80630,7 @@ var CARDS = {
   "312": {
     "id": "312",
     "name": "Goblin Ringleader",
-    "picture": "NotFound",
+    "picture": "portrait_goblinringleader",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -81240,49 +81240,10 @@ var CARDS = {
       },
     }
   },
-  "9984": {
-    "id": "9984",
-    "name": "",
-    "picture": "New10_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19984": {
-    "id": "19984",
-    "name": "",
-    "picture": "New10_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29984": {
-    "id": "29984",
-    "name": "",
-    "picture": "New10_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
   "9985": {
     "id": "9985",
     "name": "",
-    "picture": "New11_A",
+    "picture": "New10_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81295,7 +81256,7 @@ var CARDS = {
   "19985": {
     "id": "19985",
     "name": "",
-    "picture": "New11_A",
+    "picture": "New10_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81308,7 +81269,7 @@ var CARDS = {
   "29985": {
     "id": "29985",
     "name": "",
-    "picture": "New11_B",
+    "picture": "New10_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81321,7 +81282,7 @@ var CARDS = {
   "9986": {
     "id": "9986",
     "name": "",
-    "picture": "New12_A",
+    "picture": "New11_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81334,7 +81295,7 @@ var CARDS = {
   "19986": {
     "id": "19986",
     "name": "",
-    "picture": "New12_A",
+    "picture": "New11_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81347,7 +81308,7 @@ var CARDS = {
   "29986": {
     "id": "29986",
     "name": "",
-    "picture": "New12_B",
+    "picture": "New11_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81360,7 +81321,7 @@ var CARDS = {
   "9987": {
     "id": "9987",
     "name": "",
-    "picture": "New13_A",
+    "picture": "New12_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81373,7 +81334,7 @@ var CARDS = {
   "19987": {
     "id": "19987",
     "name": "",
-    "picture": "New13_A",
+    "picture": "New12_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81386,7 +81347,7 @@ var CARDS = {
   "29987": {
     "id": "29987",
     "name": "",
-    "picture": "New13_B",
+    "picture": "New12_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81399,7 +81360,7 @@ var CARDS = {
   "9988": {
     "id": "9988",
     "name": "",
-    "picture": "New14_A",
+    "picture": "New13_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81412,7 +81373,7 @@ var CARDS = {
   "19988": {
     "id": "19988",
     "name": "",
-    "picture": "New14_A",
+    "picture": "New13_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81425,7 +81386,7 @@ var CARDS = {
   "29988": {
     "id": "29988",
     "name": "",
-    "picture": "New14_B",
+    "picture": "New13_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81438,7 +81399,7 @@ var CARDS = {
   "9989": {
     "id": "9989",
     "name": "",
-    "picture": "New15_A",
+    "picture": "New14_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81451,7 +81412,7 @@ var CARDS = {
   "19989": {
     "id": "19989",
     "name": "",
-    "picture": "New15_A",
+    "picture": "New14_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81464,7 +81425,7 @@ var CARDS = {
   "29989": {
     "id": "29989",
     "name": "",
-    "picture": "New15_B",
+    "picture": "New14_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81477,7 +81438,7 @@ var CARDS = {
   "9990": {
     "id": "9990",
     "name": "",
-    "picture": "New16_A",
+    "picture": "New15_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81490,7 +81451,7 @@ var CARDS = {
   "19990": {
     "id": "19990",
     "name": "",
-    "picture": "New16_A",
+    "picture": "New15_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81503,7 +81464,7 @@ var CARDS = {
   "29990": {
     "id": "29990",
     "name": "",
-    "picture": "New16_B",
+    "picture": "New15_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81516,7 +81477,7 @@ var CARDS = {
   "9991": {
     "id": "9991",
     "name": "",
-    "picture": "New17_A",
+    "picture": "New16_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81529,7 +81490,7 @@ var CARDS = {
   "19991": {
     "id": "19991",
     "name": "",
-    "picture": "New17_A",
+    "picture": "New16_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81542,7 +81503,7 @@ var CARDS = {
   "29991": {
     "id": "29991",
     "name": "",
-    "picture": "New17_B",
+    "picture": "New16_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81555,7 +81516,7 @@ var CARDS = {
   "9992": {
     "id": "9992",
     "name": "",
-    "picture": "New18_A",
+    "picture": "New17_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81568,7 +81529,7 @@ var CARDS = {
   "19992": {
     "id": "19992",
     "name": "",
-    "picture": "New18_A",
+    "picture": "New17_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81581,7 +81542,7 @@ var CARDS = {
   "29992": {
     "id": "29992",
     "name": "",
-    "picture": "New18_B",
+    "picture": "New17_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81594,7 +81555,7 @@ var CARDS = {
   "9993": {
     "id": "9993",
     "name": "",
-    "picture": "New19_A",
+    "picture": "New18_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81607,7 +81568,7 @@ var CARDS = {
   "19993": {
     "id": "19993",
     "name": "",
-    "picture": "New19_A",
+    "picture": "New18_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81620,7 +81581,7 @@ var CARDS = {
   "29993": {
     "id": "29993",
     "name": "",
-    "picture": "New19_B",
+    "picture": "New18_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81633,7 +81594,7 @@ var CARDS = {
   "9994": {
     "id": "9994",
     "name": "",
-    "picture": "New1_A",
+    "picture": "New19_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81646,7 +81607,7 @@ var CARDS = {
   "19994": {
     "id": "19994",
     "name": "",
-    "picture": "New1_A",
+    "picture": "New19_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81659,7 +81620,7 @@ var CARDS = {
   "29994": {
     "id": "29994",
     "name": "",
-    "picture": "New1_B",
+    "picture": "New19_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81672,7 +81633,7 @@ var CARDS = {
   "9995": {
     "id": "9995",
     "name": "",
-    "picture": "New4_A",
+    "picture": "New1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81685,7 +81646,7 @@ var CARDS = {
   "19995": {
     "id": "19995",
     "name": "",
-    "picture": "New4_A",
+    "picture": "New1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -81698,7 +81659,7 @@ var CARDS = {
   "29995": {
     "id": "29995",
     "name": "",
-    "picture": "New4_B",
+    "picture": "New1_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
