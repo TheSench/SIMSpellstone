@@ -8,12 +8,17 @@
     <link rel="stylesheet" type="text/css" href="styles/loading.css">
     <link rel="stylesheet" type="text/css" href="styles/spritesheet.css">
     <link rel="stylesheet" href="Content/themes/base/smoothness.css">
+    <link rel="stylesheet" href="lib/chartist/chartist.min.css">
+    <link rel="stylesheet" href="lib/chartist/chartist-plugin-tooltip.css">
     <link rel="icon" type="image/png" href="res/deck_2-16x16.png">
 
-    <script src="scripts/lib/jquery-2.2.1.min.js"></script>
-    <script src="scripts/lib/jquery-ui-1.11.4.min.js"></script>
+    <script src="lib/jquery-2.2.1.min.js"></script>
+    <script src="lib/jquery-ui-1.11.4.min.js"></script>
+    <script language="javascript" type="text/javascript" src="lib/chartist/chartist.min.js"></script>
+    <script language="javascript" type="text/javascript" src="lib/chartist/chartist-plugin-legend.js"></script>
+    <script language="javascript" type="text/javascript" src="lib/chartist/chartist-plugin-tooltip.min.js"></script>
 
-    <script src="scripts/lib/angular.min.js"></script>
+    <script src="lib/angular.min.js"></script>
 
     <!-- This script contains the cached data for cards, missions, quests, raids,
         and battlegrounds -->
@@ -29,40 +34,46 @@
 </head>
 <body onload="initDeckBuilder()" onresize="adjustHeight();">
     <div id="deckBuilderContainer">
-        <div class="collapser">
-            <table>
-                <tr>
-                    <td>
-                        <img id="collapseFilters" src="res/misc/Minus.png" onclick="toggleDeckDisplay(this);" />
-                        <h1 id="version_label">Deck:</h1>
-                    </td>
-                </tr>
-            </table>
+        <div class="accordion">
+            <h3 id="version_label">Deck:</h3>
+            <div id="deckContainer" class="collapsible">
+                <br />
+                <span id="deck"></span>
+                <br />
+                <div><b>Deck Hash:</b></div>
+                <div>
+                    <div class="highlighter" id="hash_highlighter"></div>
+                    <input class="highlighted" id="hash" type="text" value="" size="100" onchange="hash_changed();">
+                </div><br />
+                <br />
+                <input id="resetDeck" type="button" value="Reset" onclick="hash_changed('ADK')" />
+                <input id="sortDeck" type="button" value="Sort" onclick="sortDeck()" />
+            </div>
         </div>
-        <div id="deckContainer" class="collapsible">
-            <br />
-            <span id="deck"></span>
-            <br />
-            <div><b>Deck Hash:</b></div>
-            <div class="highlighter" id="hash_highlighter"></div>
-            <input class="highlighted" id="hash" type="text" value="" size="100" onchange="hash_changed();"><br />
-            <br />
-            <input id="resetDeck" type="button" value="Reset" onclick="hash_changed('ADK')" />
-            <input id="sortDeck" type="button" value="Sort" onclick="sortDeck()" />
+        <div class="accordion start-closed">
+            <h3>Deck Stats:</h3>
+            <div id="deckGraphs">
+                <div class="chartContainer">
+                    <!--<header><h4>Attack/Health</h4></header>-->
+                    <div class="ct-chart" id="statChart"></div>
+                </div>
+                <div class="chartContainer">
+                    <header><h4>Delay</h4></header>
+                    <div class="ct-chart" id="delayChart"></div>
+                </div>
+                <div class="chartContainer">
+                    <header><h4>Faction</h4></header>
+                    <div class="ct-chart" id="factionChart"></div>
+                </div>
+                <div class="chartContainer">
+                    <header><h4>Subfaction</h4></header>
+                    <div class="ct-chart" id="subfactionChart"></div>
+                </div>
+            </div>
         </div>
-        <hr />
-        <div class="collapser">
-            <table>
-                <tr>
-                    <td>
-                        <img id="collapseFilters" src="res/misc/Minus.png" onclick="toggleFilterDisplay(this);" />
-                        <h1>Filters:</h1>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div id="filters" class="collapsible">
-            <div>
+        <div class="accordion">
+            <h3>Filters:</h3>
+            <div id="filters">
                 <fieldset>
                     <span>Card Type:</span>
                     <input type="button" value="Commander" onclick="filterType(this, '1')" />
@@ -177,65 +188,63 @@
                 <br />
             </div>
         </div>
-        <hr />
-        <div class="collapser">
-            <table>
-                <tr>
-                    <td>
-                        <img id="collapseFilters" src="res/misc/Minus.png" onclick="toggleCardDisplay(this);" />
-                        <h1>Cards:</h1>
-                    </td>
-                    <td style="width:40%; min-width:2px;"></td>
-                    <td>
-                        Rows:
-                        <input type="number" name="rows" id="rows" min="1" step="1" max="9" value="3" class="ui-widget-content ui-corner-all" style="width:25px;" onchange="applyFilters(true, false);">
-                    </td>
-                    <td style="min-width:5px;"></td>
-                    <td>
-                        <img style="width:12px" src="res/misc/Arrow.png" onclick="pageUp();">
-                    </td>
-                    <td style="min-width:45px; text-align:center;">
-                        <div id="pageNumber"></div>
-                    </td>
-                    <td>
-                        <img class="flip" style="width:12px" src="res/misc/Arrow.png" onclick="pageDown();">
-                    </td>
-                    <td style="width:100%;"></td>
-                    <td>
-                        <div id="advancedMenu" class="dropdown">
-                            <div><u>Advanced Options</u></div>
-                            <div id="dropdown" class="dropdown-content">
-                                <input type="checkbox" onclick="toggleUpgrades(this);" class="ui-widget-content ui-corner-all" />
-                                All Upgrade Levels
-                                <br />
-                                <input type="checkbox" id="skillDetails" onclick="toggleSkillDetails(this);" class="ui-widget-content ui-corner-all" />
-                                Compact Skills
+        <div class="accordion">
+            <h3>Cards:</h3>
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            Rows:
+                            <input type="number" name="rows" id="rows" min="1" step="1" max="9" value="3" class="ui-widget-content ui-corner-all" style="width:25px;" onchange="applyFilters(true, false);">
+                        </td>
+                        <td style="min-width:5px;"></td>
+                        <td>
+                            <img style="width:12px" src="res/misc/Arrow.png" onclick="pageUp();">
+                        </td>
+                        <td style="min-width:45px; text-align:center;">
+                            <div id="pageNumber"></div>
+                        </td>
+                        <td>
+                            <img class="flip" style="width:12px" src="res/misc/Arrow.png" onclick="pageDown();">
+                        </td>
+                        <td style="width:100%;"></td>
+                        <td>
+                            <div id="advancedMenu" class="dropdown">
+                                <div><u>Advanced Options</u></div>
+                                <div id="dropdown" class="dropdown-content">
+                                    <input type="checkbox" onclick="toggleUpgrades(this);" class="ui-widget-content ui-corner-all" />
+                                    All Upgrade Levels
+                                    <br />
+                                    <input type="checkbox" id="skillDetails" onclick="toggleSkillDetails(this);" class="ui-widget-content ui-corner-all" />
+                                    Compact Skills
+                                </div>
                             </div>
-                        </div>
-                    </td>
-                    <td style="min-width:10px;"></td>
-                    <td>
-                        Sort By:
-                        <select name="sortField" id="sortField" class="ui-widget-content ui-corner-all" onchange="sortAndDraw(this);">
-                            <option value="id">ID</option>
-                            <option value="type">Faction</option>
-                            <option value="sub_type">Sub-Faction</option>
-                            <option value="rarity">Rarity</option>
-                            <option value="attack">Attack</option>
-                            <option value="health">Health</option>
-                            <option value="cost">Delay</option>
-                        </select>
-                    </td>
-                </tr>
-            </table>
+                        </td>
+                        <td style="min-width:10px;"></td>
+                        <td>
+                            Sort By:
+                            <select name="sortField" id="sortField" class="ui-widget-content ui-corner-all" onchange="sortAndDraw(this);">
+                                <option value="id">ID</option>
+                                <option value="type">Faction</option>
+                                <option value="sub_type">Sub-Faction</option>
+                                <option value="rarity">Rarity</option>
+                                <option value="attack">Attack</option>
+                                <option value="health">Health</option>
+                                <option value="cost">Delay</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <hr />
+                <div id="cardSpace" class="collapsible"></div>
+            </div>
         </div>
-        <div id="cardSpace" class="collapsible"></div>
     </div>
 
     <div id="advancedFilters" class="dialog-form">
         <form>
             <fieldset>
-                <div id="amount" >
+                <div id="amount">
                     <label for="amount">Amount</label>
                     <input type="number" name="amount" id="amount-min" min="1" step="1" class="ui-widget-content ui-corner-all">
                     -

@@ -1,27 +1,242 @@
 ﻿div {
-  -webkit-user-select: none;  /* Chrome all / Safari all */
-  -moz-user-select: none;     /* Firefox all */
-  -ms-user-select: none;      /* IE 10+ */
+    -webkit-user-select: none; /* Chrome all / Safari all */
+    -moz-user-select: none; /* Firefox all */
+    -ms-user-select: none; /* IE 10+ */
 }
 
-h1,
-.collapser {
-    background-color: lightgray;
-    width: 100%;
+.accordion div.ui-accordion-content {
+    padding: 0;
 }
 
-    .collapser img {
-        vertical-align: middle;
+.ui-accordion-header.ui-state-active {
+    background: #e6e6e6 url("../Content/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png") 50% 50% repeat-x;
+}
+
+.ui-accordion .ui-accordion-header {
+    font-weight: bold;
+}
+
+.chartContainer {
+    display: inline-block;
+    border: 1px solid black;
+}
+
+    .ct-chart .ct-bar {
+        stroke-width: 20px;
     }
 
-    .collapser h1 {
-        vertical-align: middle;
-        display: inline-block;
-        margin: 0px;
+.ct-chart {
+    padding: 10px;
+    position: relative;
+}
+
+.ct-series-Factionless {
+    fill: #86797d;
+}
+
+.ct-series-Aether {
+    fill: steelblue;
+}
+    .ct-legend .ct-series-Aether:before {
+        border-color: steelblue;
+        background-color: steelblue;
     }
 
-    .collapser td {
+.ct-series-Chaos {
+    fill: maroon;
+}
+    .ct-legend .ct-series-Chaos:before {
+        border-color: maroon;
+        background-color: maroon;
+    }
+
+.ct-series-Wyld {
+    fill: darkolivegreen;
+}
+    .ct-legend .ct-series-Wyld:before {
+        border-color: darkolivegreen;
+        background-color: darkolivegreen;
+    }
+
+.ct-series-Void {
+    fill: purple;
+}
+    .ct-legend .ct-series-Void:before {
+        border-color: purple;
+        background-color: purple;
+    }
+
+.ct-series-Frog {
+    fill: #59922b;
+}
+
+.ct-series-Elemental {
+    fill: #8e4718;
+}
+
+.ct-series-Angel {
+    fill: #c3bdab;
+}
+
+.ct-series-Undead {
+    fill: #451717;
+}
+
+.ct-series-Dragon {
+    fill: #bd1d00;
+}
+
+.ct-series-Avian {
+    fill: #6b0392;
+}
+
+.ct-series-Goblin {
+    fill: #b2c326;
+}
+
+.ct-series-Seafolk {
+    fill: #61c2e2;
+}
+
+.ct-series-Insect {
+    fill: #d17905;
+}
+
+.ct-series-Ant {
+    fill: #d17905;
+}
+
+.ct-series-attack {
+    stroke: #590579;
+}
+    .ct-legend .ct-series-attack:before {
+        border-color: #590579;
+        background-color: #590579;
+    }
+.ct-series-health {
+    stroke: #a9263a;
+}
+    .ct-legend .ct-series-health:before {
+        border-color: #a9263a;
+        background-color: #a9263a;
+    }
+
+.ct-legend {
+    position: relative;
+    z-index: 10;
+    list-style: none;
+}
+.ct-legend.ct-legend-inside {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+    .ct-legend li {
+        position: relative;
+        padding-left: 23px;
+        margin-bottom: 3px;
+        cursor: pointer;
+    }
+
+        .ct-legend li:before {
+            width: 12px;
+            height: 12px;
+            position: absolute;
+            left: 0;
+            content: '';
+            border: 3px solid transparent;
+            border-radius: 2px;
+        }
+
+    .ct-legend .ct-series-Factionless:before {
+        border-color: #86797d;
+        background-color: #86797d;
+    }
+    .ct-legend .ct-series-Frog:before {
+        border-color: #59922b;
+        background-color: #59922b;
+    }
+    .ct-legend .ct-series-Elemental:before {
+        border-color: #8e4718;
+        background-color: #8e4718;
+    }
+    .ct-legend .ct-series-Angel:before {
+        border-color: #c3bdab;
+        background-color: #c3bdab;
+    }
+    .ct-legend .ct-series-Undead:before {
+        border-color: #451717;
+        background-color: #451717;
+    }
+    .ct-legend .ct-series-Dragon:before {
+        border-color: #bd1d00;
+        background-color: #bd1d00;
+    }
+    .ct-legend .ct-series-Avian:before {
+        border-color: #6b0392;
+        background-color: #6b0392;
+    }
+    .ct-legend .ct-series-Goblin:before {
+        border-color: #b2c326;
+        background-color: #b2c326;
+    }
+    .ct-legend .ct-series-Seafolk:before {
+        border-color: #61c2e2;
+        background-color: #61c2e2;
+    }
+    .ct-legend .ct-series-Insect:before {
+        border-color: #d17905;
+        background-color: #d17905;
+    }
+    .ct-legend .ct-series-Ant:before {
+        border-color: #d17905;
+        background-color: #d17905;
+    }
+    .ct-legend li.inactive:before {
+        background: transparent;
+    }
+
+#factionChart {
+    padding-bottom: 40px;
+}
+
+.ct-chart-pie .ct-label {
+    fill: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+    #factionChart .ct-label.ct-horizontal {
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
         white-space: nowrap;
+        transform: rotate(-75deg);
+        transform-origin: 100% 0;
+        text-align: right;
+        max-height: 1.5em;
+        min-width: 100px;
+        max-width: 100px;
+    }
+
+    /* Factionless */
+    #factionChart .ct-series-a .ct-bar {
+        stroke: grey;
+    }
+    /* Aether */
+    #factionChart .ct-series-b .ct-bar {
+        stroke: steelblue;
+    }
+    /* Chaos */
+    #factionChart .ct-series-c .ct-bar {
+        stroke: maroon;
+    }
+    /* Wyld */
+    #factionChart .ct-series-d .ct-bar {
+        stroke: darkolivegreen;
+    }
+    /* Void */
+    #factionChart .ct-series-e .ct-bar {
+        stroke: purple;
     }
 
 .selected {
@@ -98,19 +313,6 @@ input[type="button"].attack-filter {
     background-size: cover;
 }
 
-.collapsible {
-    height: auto;
-    transition: max-height 0.25s ease-in;
-    max-height: 80%;
-    overflow: auto;
-}
-
-    .collapsible.collapsed {
-        overflow: hidden;
-        max-height: 0px;
-        transition: max-height 0.15s ease-out;
-    }
-
 fieldset {
     display: inline;
     padding: 0px;
@@ -154,10 +356,10 @@ fieldset {
         width: 100%;
     }
 
-        .dialog-form div.split {
-            width: 50%;
-            float: left;
-        }
+    .dialog-form div.split {
+        width: 50%;
+        float: left;
+    }
 
     .dialog-form #upgrade {
         width: initial,;
@@ -208,10 +410,18 @@ fieldset {
     padding: 0px;
 }
 
+.accordion td {
+    white-space: nowrap;
+}
+
+#placeholder {
+    width: 400px;
+    min-height: 400px;
+}
+
 .highlighter, .highlighted {
-    width: 90%;
-    font-size: 10pt;
-    font-family: 'verdana';
+    /*width: 90%;*/
+    font-family: 'Verdana';
 }
 
 .highlighter {
@@ -221,10 +431,10 @@ fieldset {
     color: white;
 }
 
-.highlighter span {
-    background: gold;
-    color: gold;
-}
+    .highlighter span {
+        background: gold;
+        color: gold;
+    }
 
 .highlighted {
     position: relative;

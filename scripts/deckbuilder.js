@@ -40,6 +40,32 @@ var advancedFilters;
 var optionsDialog;
 var form;
 
+(function ($) {
+    // http://stackoverflow.com/a/26254025/1438242
+    $.fn.detectFont = function () {
+        var fontfamily = $(this).css('font-family');
+        var fonts = fontfamily.split(',');
+        if (fonts.length == 1) {
+            return fonts[0];
+        }
+
+        var element = $(this);
+        var detectedFont = null;
+        fonts.forEach(function (font) {
+            var clone = $('<span>wwwwwwwwwwwwwwwlllllllliiiiii</span>').css({ 'font-family': fontfamily, 'font-size': '70px', 'display': 'inline', 'visibility': 'hidden' }).appendTo('body');
+            var dummy = $('<span>wwwwwwwwwwwwwwwlllllllliiiiii</span>').css({ 'font-family': font, 'font-size': '70px', 'display': 'inline', 'visibility': 'hidden' }).appendTo('body');
+            //console.log(clone, dummy, fonts, font, clone.width(), dummy.width());
+            if (clone.width() == dummy.width()) {
+                detectedFont = font;
+            }
+            clone.remove();
+            dummy.remove();
+        });
+
+        return detectedFont;
+    }
+}(jQuery));
+
 var initDeckBuilder = function () {
     setupPopups();
     adjustHeight();
@@ -70,10 +96,17 @@ var adjustHeight = function () {
 }
 
 var setupPopups = function () {
-
-
+    
     stopPropagation("advancedFilters");
     stopPropagation("unitOptions");
+
+    $(".accordion").accordion({
+        collapsible: true,
+        heightStyle: "content",
+    });
+    
+    $(".start-closed").accordion('option', 'active', false);
+
     var inputs = document.getElementsByTagName("input");
     for (var i = 0; i < inputs.length; i++) {
 
@@ -162,7 +195,7 @@ var drawCardList = function () {
     var onlyNew = false;
     if (_DEFINED('spoilers')) {
         onlyNew = true;
-        toggleDeckDisplay(document.getElementById("collapseFilters"));
+        //toggleDeckDisplay(document.getElementById("collapseFilters"));
     }
     for (var id in allCards) {
         if (id < 10000) {
@@ -414,6 +447,120 @@ var updateHash = function () {
     addChange(deckHash);
 
     if (typeof simulatorDeckHashField !== 'undefined') simulatorDeckHashField.value = deckHash;
+
+    updateGraphs();
+}
+
+var updateGraphs = function () {
+
+    var delays = [0, 0, 0, 0, 0];
+    var attackStats = [];
+    var healthStats = [];
+    var types = {};
+    var sub_types = {};
+    for (var i = 0; i < deck.deck.length; i++) {
+        var unit = deck.deck[i];
+        var card = get_card_by_id(unit);
+        delays[card.cost]++;
+        types[card.type] = (types[card.type] || 0) + 1;
+        attackStats.push(Number(card.attack));
+        healthStats.push(Number(card.health));
+        var sub_type = (card.sub_type || 0);
+        sub_types[sub_type] = (sub_types[sub_type] || 0) + 1;
+    }
+    var numericSort = function (a, b) { return a - b };
+    attackStats.sort(numericSort);
+    healthStats.sort(numericSort);
+
+    var options = {
+        width: 300,
+        height: 200,
+        axisY: {
+            onlyInteger: true
+        },
+        plugins: [
+            Chartist.plugins.legend(),
+            Chartist.plugins.tooltip()
+        ],
+        series: {
+            'Attack': {
+                lineSmooth: Chartist.Interpolation.simple()
+            },
+            'Health': {
+                lineSmooth: Chartist.Interpolation.simple()
+            }
+        }
+    };
+
+    new Chartist.Line('#statChart', {
+        series: [
+            { name: 'Attack', className: 'ct-series-attack', data: attackStats },
+            { name: 'Health', className: 'ct-series-health', data: healthStats }
+        ]
+    }, options);
+
+    var options = {
+        width: 300,
+        height: 200,
+        axisY: {
+            onlyInteger: true
+        },
+        distributeSeries: true
+    };
+    var data = { labels: ['0', '1', '2', '3', '4'], series: delays };
+    new Chartist.Bar('#delayChart', data, options);
+    /*
+    var labels = [];
+    var data = [];
+    for(var key in types) {
+        labels.push(factions.names[key])
+        data.push(types[key]);
+    }
+    var data = { labels: labels, series: data };
+    new Chartist.Bar('#factionChart', data, options).on('draw', function (ctx) {
+        if (ctx.type === 'label') {
+            // adjust label position for rotation
+            const dX = ctx.width / 2 + (100 - ctx.width)
+            ctx.element.attr({ x: ctx.element.attr('x') - dX })
+        }
+    });
+    */
+    var options = {
+        width: 450,
+        height: 200,
+        labelInterpolationFnc: function (label, i) {
+            return data.series[i].value;
+        },
+        plugins: [
+            Chartist.plugins.legend()
+        ]
+    };
+
+    var labels = [];
+    var data = [];
+    for (var key in types) {
+        var factionName = factions.names[key];
+        labels.push(factionName);
+        data.push({
+            value: types[key],
+            className: "ct-series-" + factionName
+        });
+    }
+    var data = { labels: labels, series: data };
+    new Chartist.Pie('#factionChart', data, options);
+
+    var labels = [];
+    var data = [];
+    for (var key in sub_types) {
+        var factionName = factions.names[key];
+        labels.push(factionName);
+        data.push({
+            value: sub_types[key],
+            className: "ct-series-" + factionName
+        });
+    }
+    var data = { labels: labels, series: data };
+    new Chartist.Pie('#subfactionChart', data, options);
 }
 
 var changeTracking = [];
@@ -1267,7 +1414,7 @@ var toggleUpgrades = function (checkbox) {
         applyFilters(false);
     }, 1);
 }
-
+/*
 var toggleDeckDisplay = function (img) {
     var deckContainer = document.getElementById("deckContainer");
     if (deckContainer.classList.contains("collapsed")) {
@@ -1300,7 +1447,7 @@ var toggleCardDisplay = function (img) {
         img.src = "res/misc/Plus.png";
     }
 }
-
+*/
 function sortAndDraw(select) {
     doSort(select);
     applyFilters();

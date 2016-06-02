@@ -108311,13 +108311,6 @@ var BATTLEGROUNDS = [
         "y": "6",
         "z": 6,
       },
-      {
-        "effect_type": "skill",
-        "id": "displayEffect",
-        "y": "6",
-        "z": 6,
-        "s": "legion",
-      },
     ]
   },
   {
@@ -108331,13 +108324,6 @@ var BATTLEGROUNDS = [
         "y": "5",
         "z": 5,
         "all": "1",
-      },
-      {
-        "effect_type": "skill",
-        "id": "displayEffect",
-        "y": "99",
-        "z": 99,
-        "s": "rally",
       },
     ]
   },

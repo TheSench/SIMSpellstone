@@ -341,8 +341,9 @@ public class battleground
 	{
 		for (int i = 0; i < effect.Length; i++)
 		{
-			sb.Append(tabs2).Append("{\r\n");
 			var effect_i = effect[i];
+			if(effect_i.skip) continue;
+			sb.Append(tabs2).Append("{\r\n");
 			AppendEntryString(sb, "effect_type", effect_i.GetType().Name, tabs3);
 			if (effect_i is skill)
 			{
@@ -633,6 +634,18 @@ public partial class skill : battlegroundEffect
 	private string allField;
 	private string multField;
 
+	public override bool skip
+	{
+		get
+		{
+			if (id == "displayEffect")
+			{
+				return true;
+			}
+			return false;
+		}
+	}
+
 	/// <remarks/>
 	[System.Xml.Serialization.XmlAttributeAttribute()]
 	public string id
@@ -694,6 +707,7 @@ public partial class skill : battlegroundEffect
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
 public partial class battlegroundEffect
 {
+	public virtual bool skip { get { return false;} }
 }
 
 /// <remarks/>
