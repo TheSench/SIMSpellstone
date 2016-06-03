@@ -5,41 +5,6 @@ var SIM_CONTROLLER;
 (function () {
     SIM_CONTROLLER = {};
 
-    /*
-    var uids = {};
-    SIMULATOR.setupField = (function () {
-        var setupField = SIMULATOR.setupField;
-
-        return function (field, deck) {
-            setupField(field, deck);
-
-            uids = {};
-            var commander = field.player.commander;
-            commander.uid = -1;
-            uids[-1] = commander;
-            var cards = deck.player.deck;
-            for (var i = 0, len = cards.length; i < len; i++) {
-                var card = cards[i];
-                var uid = i + 1;
-                card.uid = uid;
-                uids[uid] = card;
-            }
-
-            var commander = field.cpu.commander;
-            commander.uid = -2;
-            uids[-2] = commander;
-            var cards = deck.cpu.deck;
-            for (var i = 0, len = cards.length; i < len; i++) {
-                var card = cards[i];
-                var uid = i + 101;
-                card.uid = uid;
-                uids[uid] = card;
-            }
-            field.uids = uids;
-        };
-    })();
-    */
-
     // Initialize simulation loop - runs once per simulation session
     SIM_CONTROLLER.startsim = function (autostart) {
         orders = {};
@@ -48,8 +13,6 @@ var SIM_CONTROLLER;
             window.location.href = generate_link(1, 1);
             return false;
         }
-
-        CARD_GUI.clearCardSpace();
 
         card_cache = {};    // clear card cache to avoid memory bloat when simulating different decks
         total_turns = 0;
@@ -188,9 +151,6 @@ var SIM_CONTROLLER;
         if (current_timeout) clearTimeout(current_timeout);
 
         outp(echo + '<strong>Simulations interrupted.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>' + gettable());
-        if (SIMULATOR.user_controlled) {
-            CARD_GUI.draw_cards(SIMULATOR.field);
-        }
         // Show interface
         document.getElementById('ui').style.display = 'block';
 
@@ -216,7 +176,6 @@ var SIM_CONTROLLER;
         } else {
             outp(echo + '<br><h1>LOSS</h1><br>' + gettable());
         }
-        CARD_GUI.draw_cards(SIMULATOR.field);
 
         // Show interface
         document.getElementById('ui').style.display = 'block';

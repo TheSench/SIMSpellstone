@@ -187,14 +187,16 @@ window.onload = function () {
     var missionID = _GET('mission');
     var raidID = _GET('raid');
 
+    var uiScope = angular.element('#ui').scope();
+
     var dropdown = document.getElementById('campaign');
     if (dropdown) {
         if (campaignID) {
-            dropdown.value = _GET('campaign');
+            uiScope.selections.campaign = _GET('campaign');
         } else if (missionID) {
             for (var id in CAMPAIGNS) {
                 if (CAMPAIGNS[id].missions.includes(missionID)) {
-                    dropdown.value = id;
+                    uiScope.selections.campaign = id;
                 }
             }
         }
@@ -203,16 +205,17 @@ window.onload = function () {
     var dropdown = document.getElementById('mission');
     if (dropdown) {
         if (missionID) {
-            dropdown.value = missionID;
+            uiScope.selections.mission = missionID;
         }
     }
 
     var dropdown = document.getElementById('raid');
     if (dropdown) {
         if (raidID && !(campaignID || missionID)) {
-            dropdown.value = raidID;
+            uiScope.selections.raid = raidID;
         }
     }
+    uiScope.$apply();
 
     if (_DEFINED('battleground')) {
         var bgIndexes = _GET('battleground');

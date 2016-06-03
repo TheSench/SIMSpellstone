@@ -1,6 +1,24 @@
 (function (angular) {
     'use strict';
 
+    var getMissionsInCampaign = function (missions, campaignID, campaigns) {
+        var filteredMissions = [];
+        var campaign = { missions: [] };
+        campaigns = campaigns || [];
+        for (var i = 0; i < campaigns.length; i++) {
+            if (campaigns[i].id == campaignID) {
+                campaign = campaigns[i];
+                break;
+            }
+        }
+        var campaignMissions = campaign.missions;
+        for (var key in missions) {
+            if (campaignMissions.indexOf(key) >= 0) {
+                filteredMissions.push(missions[key]);
+            }
+        }
+        return filteredMissions;
+    };
 
     angular.module('core', []);
     angular.module('core')
@@ -29,24 +47,7 @@
             };
         })
         .filter('inCampaign', function () {
-            return function (missions, campaignID, campaigns) {
-                var filteredMissions = [];
-                var campaign = { missions: [] };
-                campaigns = campaigns || [];
-                for (var i = 0; i < campaigns.length; i++) {
-                    if (campaigns[i].id == campaignID) {
-                        campaign = campaigns[i];
-                        break;
-                    }
-                }
-                var campaignMissions = campaign.missions;
-                for (var key in missions) {
-                    if (campaignMissions.indexOf(key) >= 0) {
-                        filteredMissions.push(missions[key]);
-                    }
-                }
-               return filteredMissions;
-            };
+            return getMissionsInCampaign;
         });
 
     angular.module('simulatorApp', ['core'])
@@ -117,7 +118,20 @@
         };
 
         $scope.$watch("selections.campaign", function (newValue, oldValue) {
-            $scope.selections.mission = '';
+            var campaignID = newValue;
+            if (!campaignID) {
+                $scope.selections.mission = '';
+            } else {
+                var missions = getMissionsInCampaign($scope.missions, campaignID, $scope.campaigns);
+                var selectedMission = $scope.selections.mission;
+                for (var i = 0; i < missions.length; i++) {
+                    var mission = missions[i];
+                    if (selectedMission == mission.id) {
+                        return;
+                    }
+                }
+                $scope.selections.mission = '';
+            }
         });
 
         function toArray(object) {
