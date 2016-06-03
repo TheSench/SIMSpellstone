@@ -1211,7 +1211,8 @@ var modifyCard = function (optionsDialog) {
         if (fusion >= 0) unitID = fusion + unitID;
         unit.id = parseInt(unitID);
     }
-
+    var card = get_card_by_id(unit);
+    showRunePicker(card);
     doDrawDeck();
 }
 
