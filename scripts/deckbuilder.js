@@ -76,9 +76,6 @@ var initDeckBuilder = function () {
 
     $(window).resize(onResize);
 
-    var cs = $("#cardSpace");
-    cs.mouseenter(enterInventory);
-    cs.mouseleave(leaveInventory);
     window.onwheel = changePage;
     window.oncontextmenu = hideContext;
 
@@ -297,26 +294,25 @@ function adjustTable(filler) {
     }
 }
 
-var overInventory = false;
-function enterInventory() {
-    overInventory = true;
-}
-
-function leaveInventory() {
-    overInventory = false;
-}
-
 function changePage(event) {
-    if (overInventory) {
+    if (overInventory(event)) {
         if (event.deltaY < 0) {
             pageUp();
-            return false;
         } else if (event.deltaY > 0) {
             pageDown();
-            return false;
         }
+        event.preventDefault();
     }
-    return true;
+}
+
+function overInventory(event) {
+    var element = event.srcElement;
+    while (element != null) {
+        if (element.id === "cardSpace") {
+            return true;
+        }
+        element = element.parentElement;
+    }
 }
 
 function pageUp() {
