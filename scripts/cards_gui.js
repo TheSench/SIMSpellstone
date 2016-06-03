@@ -20,12 +20,8 @@ var CARD_GUI = {};
 
     function makeDeckHTML(deck, onclick, onrightclick, onmouseover) {
         var deckHTML = createDiv("float-left");
-        $(deckHTML).sortable({
-            items: '.card:not(.commander)',
-            update: function (event, ui) {
-                getHashFromHTML(ui);
-            }
-        });
+        deckHTML.id = "sortable-deck";
+
         var commander = get_card_by_id(deck.commander);
         var htmlCard = create_card_html(commander, false, false, onclick, onrightclick, onmouseover);
         if (deck.commander.index !== undefined) {
@@ -45,6 +41,34 @@ var CARD_GUI = {};
             var htmlCard = createDiv("card blank");
             deckHTML.appendChild(htmlCard);
         }
+
+        var dhtml = $(deckHTML).sortable({
+            items: '.card:not(.commander)',
+            update: function (event, ui) {
+                getHashFromHTML(ui);
+            },
+            tolerance: "intersect",
+            helper: function (event, ui) {
+                this.origIndex = ui.index();
+                return (event.ctrlKey ? ui.clone() : ui);
+            },
+            start: function (event, ui) {
+                $(ui.item).show();
+            },
+            beforeStop: function (event, ui) {
+                if (ui.item[0] != ui.helper[0]) {
+                    var newIndex = ui.item.index();
+                    var cloneIndex = this.origIndex;
+                    var insertFn = 'insertBefore';
+                    if (newIndex < this.origIndex) {
+                        insertFn = 'insertAfter';
+                        cloneIndex++;
+                    }
+                    ui.item.clone()[insertFn]($(this).children()[cloneIndex]);
+                }
+            }
+        });
+
         return deckHTML;
     }
 
@@ -319,7 +343,7 @@ var CARD_GUI = {};
                 };
             })(htmlCard, state);
         }
-        if(onmouseover) {
+        if (onmouseover) {
             htmlCard.onmouseover = (function (inner) {
                 return function () {
                     return onmouseover(htmlCard, state);
