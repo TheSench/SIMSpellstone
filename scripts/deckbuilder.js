@@ -453,6 +453,7 @@ var updateGraphs = function () {
     var delays = [0, 0, 0, 0, 0];
     var attackStats = [];
     var healthStats = [];
+    var delayStats = [];
     var types = {};
     var sub_types = {};
     for (var i = 0; i < deck.deck.length; i++) {
@@ -462,12 +463,14 @@ var updateGraphs = function () {
         types[card.type] = (types[card.type] || 0) + 1;
         attackStats.push(Number(card.attack));
         healthStats.push(Number(card.health));
+        delayStats.push(Number(card.cost));
         var sub_type = (card.sub_type || 0);
         sub_types[sub_type] = (sub_types[sub_type] || 0) + 1;
     }
     var numericSort = function (a, b) { return a - b };
     attackStats.sort(numericSort);
     healthStats.sort(numericSort);
+    delayStats.sort(numericSort);
 
     function sum(total, num) {
         return total + num;
@@ -477,7 +480,7 @@ var updateGraphs = function () {
     }
     var avgAttack = average(attackStats);
     var avgHealth = average(healthStats);
-    var avgDelay = average(delays);
+    var avgDelay = average(delayStats);
     
     var options = {
         width: 300,
@@ -495,6 +498,9 @@ var updateGraphs = function () {
             },
             'Health': {
                 lineSmooth: Chartist.Interpolation.simple()
+            },
+            'Delay': {
+                lineSmooth: Chartist.Interpolation.simple()
             }
         }
     };
@@ -502,7 +508,8 @@ var updateGraphs = function () {
     new Chartist.Line('#statChart', {
         series: [
             { name: 'Attack', className: 'ct-series-attack', data: attackStats },
-            { name: 'Health', className: 'ct-series-health', data: healthStats }
+            { name: 'Health', className: 'ct-series-health', data: healthStats },
+            { name: 'Delay', className: 'ct-series-delay', data: delayStats }
         ]
     }, options);
 
@@ -542,22 +549,6 @@ var updateGraphs = function () {
         }
     });
 
-    /*
-    var labels = [];
-    var data = [];
-    for(var key in types) {
-        labels.push(factions.names[key])
-        data.push(types[key]);
-    }
-    var data = { labels: labels, series: data };
-    new Chartist.Bar('#factionChart', data, options).on('draw', function (ctx) {
-        if (ctx.type === 'label') {
-            // adjust label position for rotation
-            const dX = ctx.width / 2 + (100 - ctx.width)
-            ctx.element.attr({ x: ctx.element.attr('x') - dX })
-        }
-    });
-    */
     var options = {
         width: 450,
         height: 200,
@@ -582,18 +573,21 @@ var updateGraphs = function () {
     var data = { labels: labels, series: data };
     new Chartist.Pie('#factionChart', data, options);
 
+    options.labelInterpolationFnc = function (label, i) {
+        return data2.series[i].value;
+    };
     var labels = [];
-    var data = [];
+    var data2 = [];
     for (var key in sub_types) {
         var factionName = factions.names[key];
         labels.push(factionName);
-        data.push({
+        data2.push({
             value: sub_types[key],
             className: "ct-series-" + factionName
         });
     }
-    var data = { labels: labels, series: data };
-    new Chartist.Pie('#subfactionChart', data, options);
+    var data2 = { labels: labels, series: data2 };
+    new Chartist.Pie('#subfactionChart', data2, options);
 }
 
 var changeTracking = [];

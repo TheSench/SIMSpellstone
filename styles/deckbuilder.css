@@ -136,7 +136,11 @@
         border-color: #a9263a;
         background-color: #a9263a;
     }
-
+    
+    .ct-legend .ct-series-delay:before {
+        border-color: steelblue;
+        background-color: steelblue;
+    }
 .ct-legend {
     position: relative;
     z-index: 10;
