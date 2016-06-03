@@ -246,6 +246,15 @@ function doDrawCardList(cardList, resetPage) {
         CARD_GUI.draw_card_list(cardList, detailedSkills, addToDeck, hideContext);
     }
     document.getElementById("pageNumber").innerHTML = "Page " + (page + 1) + "/" + pages;
+    var $cardSpace = $("#cardSpace");
+    var cards = $cardSpace.find(".card");
+    if (cards.length) {
+        var card = cards[0];
+        var $card = $(card);
+        var minHeight = (card.offsetHeight + parseInt($card.css('marginTop')) + parseInt($card.css('marginBottom'))) * parseInt(rows);
+        $cardSpace.css('min-height', minHeight +'px');
+
+    }
 }
 
 var resizing = false;
