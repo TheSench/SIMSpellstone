@@ -15,8 +15,7 @@ var CARD_GUI = {};
 
     function draw_deck(deck, onclick, onrightclick, onmouseover) {
         var cardSpace = document.getElementById("deck");
-        cardSpace.innerHTML = '';
-        cardSpace.appendChild(makeDeckHTML(deck, onclick, onrightclick, onmouseover));
+        $(cardSpace).html(makeDeckHTML(deck, onclick, onrightclick, onmouseover));
     }
 
     function makeDeckHTML(deck, onclick, onrightclick, onmouseover) {
@@ -65,8 +64,6 @@ var CARD_GUI = {};
 
     function draw_card_list(list, compactSkills, onclick, onrightclick, skip, end) {
         skip = skip || 0;
-        var cardSpace = document.getElementById("cardSpace");
-        cardSpace.innerHTML = '';
         var cards = createDiv("float-left");
         var htmlCard;
         var lastUnit;
@@ -102,7 +99,8 @@ var CARD_GUI = {};
             htmlCard.appendChild(multIcon);
             htmlCard.appendChild(multDiv);
         }
-        cardSpace.appendChild(cards);
+        var cardSpace = document.getElementById("cardSpace");
+        $(cardSpace).html(cards);
     }
 
     function draw_cards(field, drawableHand, callback, turn) {
