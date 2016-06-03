@@ -389,7 +389,7 @@ var sortDeck = function () {
         compare = (unitA.runes.length ? unitA.runes[0].id : 0) - (unitB.runes.length ? unitB.runes[0].id : 0);
         return compare;
     });
-    doDrawDeckck();
+    doDrawDeck();
 }
 
 var addToDeck = function (htmlCard) {
@@ -469,6 +469,16 @@ var updateGraphs = function () {
     attackStats.sort(numericSort);
     healthStats.sort(numericSort);
 
+    function sum(total, num) {
+        return total + num;
+    }
+    function average(ary) {
+        return (ary.length ? (ary.reduce(sum) / ary.length).toFixed(0) : 0);
+    }
+    var avgAttack = average(attackStats);
+    var avgHealth = average(healthStats);
+    var avgDelay = average(delays);
+    
     var options = {
         width: 300,
         height: 200,
@@ -506,6 +516,32 @@ var updateGraphs = function () {
     };
     var data = { labels: ['0', '1', '2', '3', '4'], series: delays };
     new Chartist.Bar('#delayChart', data, options);
+
+    var data = { labels: ['Attack', 'Health', 'Delay'], series: [
+            { value: avgAttack, className: 'ct-series-attack' },
+            { value: avgHealth, className: 'ct-series-health' },
+            { value: avgDelay, className: 'ct-series-delay' }
+    ]};
+    new Chartist.Bar('#averagesChart', data, options).on('draw', function(data) {
+        var barHorizontalCenter, barVerticalCenter, label, value;
+        if (data.type === "bar") {
+            barHorizontalCenter = data.x1 + (data.element.width() * .5);
+            barVerticalCenter = data.y1 + (data.element.height() * -1) - 10;
+            value = data.element.attr('ct:value');
+            if (value !== '0') {
+                label = new Chartist.Svg('text');
+                label.text(value);
+                label.addClass("ct-barlabel");
+                label.attr({
+                    x: barHorizontalCenter,
+                    y: barVerticalCenter,
+                    'text-anchor': 'middle'
+                });
+                return data.group.append(label);
+            }
+        }
+    });
+
     /*
     var labels = [];
     var data = [];

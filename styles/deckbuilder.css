@@ -21,6 +21,14 @@
     border: 1px solid black;
 }
 
+.ct-barlabel {
+    font-size:16px;
+}
+
+.ct-series-a .ct-barlabel {
+   font-size:20px;
+}
+
     .ct-chart .ct-bar {
         stroke-width: 20px;
     }
@@ -116,6 +124,14 @@
 .ct-series-health {
     stroke: #a9263a;
 }
+.ct-series-delay {
+    stroke: steelblue;
+}
+
+.ct-barlabel {
+    stroke: black;
+}
+
     .ct-legend .ct-series-health:before {
         border-color: #a9263a;
         background-color: #a9263a;
@@ -196,6 +212,9 @@
         background: transparent;
     }
 
+    svg {
+        overflow: visible;
+    }
 #factionChart {
     padding-bottom: 40px;
 }
