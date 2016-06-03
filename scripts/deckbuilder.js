@@ -364,11 +364,8 @@ var addUnitLevels = function (id, maxlevel) {
 var disableTracking = false;
 var hash_changed = function (hash) {
 
-    if (hash) {
-        document.getElementById("hash").value = hash;
-    } else {
-        hash = document.getElementById("hash").value;
-    }
+    hash = (hash || document.getElementById("hash").value.trim());
+    document.getElementById("hash").value = hash;
 
     if (typeof simulatorDeckHashField !== 'undefined') simulatorDeckHashField.value = hash;
     deck = hash_decode(hash);
