@@ -346,6 +346,7 @@ fieldset {
 
 .dialog-form {
     padding: 0;
+    display: none;
 }
 
     .dialog-form label {
@@ -462,4 +463,8 @@ fieldset {
 .highlighted {
     position: relative;
     background-color: transparent;
+}
+
+#cardSpace {
+    margin-bottom: 50px;
 }

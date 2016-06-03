@@ -105,7 +105,7 @@ var setupPopups = function () {
         heightStyle: "content",
     });
     
-    $(".start-closed").accordion('option', 'active', false);
+    $(".start-closed").accordion('option', 'active', false).show();
 
     var inputs = document.getElementsByTagName("input");
     for (var i = 0; i < inputs.length; i++) {
