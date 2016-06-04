@@ -79,6 +79,16 @@ var initDeckBuilder = function () {
     window.onwheel = changePage;
     window.oncontextmenu = hideContext;
 
+    $('#nameFilter').keypress(function (event) {
+        if (event.which == 13) {
+            if (unitsFiltered.length == 1) {
+                deck.deck.push(unitsFiltered[0]);
+                doDrawDeck();
+            }
+            event.preventDefault();
+        }
+    });
+
     setTimeout(function () {
         drawAllCards();
         $("body").removeClass("loading");
