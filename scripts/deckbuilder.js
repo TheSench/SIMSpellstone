@@ -2,6 +2,7 @@
 
 // TODO: Add function for re-checking filters
 
+var fromInventory = false;
 var deck = [];
 deck.commander = elariaCaptain;
 deck.deck = [];
@@ -201,26 +202,41 @@ var drawCardList = function () {
 
     units = [];
     unitsShown = [];
-
-    var onlyNew = false;
-    if (_DEFINED('spoilers')) {
-        onlyNew = true;
-        //toggleDeckDisplay(document.getElementById("collapseFilters"));
-    }
-    for (var id in allCards) {
-        if (id < 10000) {
-            if (!onlyNew) {
-                addUnit(allCards[id]);
-            } else if (spoilers[id]) {
-                addUnit(allCards[id], spoilers);
+    var inventory = _GET('inventory');
+    if (inventory) {
+        fromInventory = true;
+        inventory = hash_decode(inventory);
+        var commander = inventory.commander;
+        inventory = inventory.deck;
+        if (commander && !areEqual(commander, elariaCaptain)) {
+            addInventoryUnit(commander);
+        }
+        for (var i = 0; i < inventory.length; i++) {
+            addInventoryUnit(inventory[i]);
+        }
+        deck.commander = removeFromInventory(deck.commander);
+        for (var i = 0; i < deck.deck.length; i++) {
+            var unit = deck.deck[i];
+            deck.deck[i] = removeFromInventory(unit);
+        }
+    } else {
+        var onlyNew = false;
+        if (_DEFINED('spoilers')) {
+            onlyNew = true;
+            //toggleDeckDisplay(document.getElementById("collapseFilters"));
+        }
+        for (var id in allCards) {
+            if (id < 10000) {
+                if (!onlyNew) {
+                    addUnit(allCards[id]);
+                } else if (spoilers[id]) {
+                    addUnit(allCards[id], spoilers);
+                }
             }
         }
     }
 
-    var sortField = document.getElementById("sortField");
-    if (sortField.value != "id") {
-        sortCards(sortField);
-    }
+    sortCards(document.getElementById("sortField"));
 
     applyFilters();
 }
@@ -357,6 +373,11 @@ function redrawCardList(keepPaging) {
     applyFilters(keepPaging);
 }
 
+var addInventoryUnit = function (unit) {
+    units.push(unit);
+    unitsShown.push(unit);
+}
+
 var addUnit = function (unit, spoilers) {
     var id = unit.id;
     var maxlevel = 1;
@@ -422,16 +443,38 @@ var addUnitToDeck = function (unit) {
         if (deck.deck.length == 15 && !_DEFINED("unlimited")) return;
         deck.deck.push(unit);
     }
+
+    if (fromInventory) {
+        removeFromInventory(unit);
+        redrawCardList(true);
+    }
+
     doDrawDeck();
 };
+
+function removeFromInventory(unit) {
+    for (var i = 0; i < unitsShown.length; i++) {
+        var unit_i = unitsShown[i];
+        if (areEqual(unit, unit_i)) {
+            var removed = unitsShown.splice(i, 1);
+            return removed[0];
+        }
+    }
+    return unit;
+}
 
 var removeFromDeck = function (htmlCard, index) {
     var unit;
     if (htmlCard.classList.contains('commander')) {
         unit = deck.commander;
+        if (areEqual(unit, elariaCaptain)) return;
         deck.commander = elariaCaptain;
     } else {
         unit = deck.deck.splice(index, 1)[0];
+    }
+    if (fromInventory) {
+        unitsShown.push(unit);
+        redrawCardList(true);
     }
     doDrawDeck();
 };
