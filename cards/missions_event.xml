@@ -7244,7 +7244,7 @@
     <id>5250</id>
     <name>Homeward Bound</name>
     <energy>8</energy>
-    <desc>Fiona is bewildered by the encounter. Why would the dragon attack them so suddenly? She calms her own wyvern down before heading back to the dragon sanctuary, Wyvern's Way.</desc>
+    <desc>Fiona is bewildered by the encounter. Why would the dragon attack them so suddenly? She calms her own wyvern down before heading back to the dragon sanctuary, Wyverns' Way.</desc>
     <commander id="262" />
     <deck>
       <card id="5041" name="Skylance Raiders" />
@@ -7325,7 +7325,7 @@
     <id>5253</id>
     <name>Wrong Neighborhood</name>
     <energy>8</energy>
-    <desc>Fiona looks around the camp. Not many travelers come so far into Tarragon Peak. There are no further clues who was here or what they were doing. Fiona kicks some dirt on the embers, before continuing to Wyvern's Way.</desc>
+    <desc>Fiona looks around the camp. Not many travelers come so far into Tarragon Peak. There are no further clues who was here or what they were doing. Fiona kicks some dirt on the embers, before continuing to Wyverns' Way.</desc>
     <commander id="314" />
     <deck>
       <card id="5012" name="Static Drake" />
@@ -7353,7 +7353,7 @@
       <line>
         <commander>dragontamer</commander>
         <enemy>0</enemy>
-        <text>Well, we are almost at the dragon sanctuary. Lets go.</text>
+        <text>Well, we are almost at the dragon sanctuary. Let's go.</text>
       </line>
     </speech>
   </mission>
@@ -7728,9 +7728,23 @@
     <name>Nervous Flier</name>
     <energy>8</energy>
     <desc>The tension in the air is thick as they fly back. Fiona can't help but to think about what could have upset the greenback dragon. The flight to Wyverns' Way seems exceptionally long as she weighs her thoughts.</desc>
-    <commander id="1" />
+    <commander id="226" />
     <deck>
-      <card id="1018" name="Armored Eagle" />
+      <card id="8025" name="Explosive Crab" />
+      <card id="8025" />
+      <card id="8025" />
+      <card id="1317" name="Fire Imp" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1311" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6012" />
+      <card id="1325" mastery_level="2" name="Chaos Storm" />
+      <card id="6010" mastery_level="2" name="Cliffpass Defender" />
+      <card id="8025" mastery_level="3" name="Explosive Crab" />
+      <card id="6026" mastery_level="4" name="Smokefang" />
+      <card id="8025" mastery_level="5" name="Explosive Crab" />
+      <card id="8025" mastery_level="6" name="Explosive Crab" />
+      <card id="6024" mastery_level="7" name="Bane Dragon" />
     </deck>
   </mission>
 </root>

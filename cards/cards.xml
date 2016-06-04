@@ -8562,6 +8562,119 @@
     </upgrade>
   </unit>
   <unit>
+    <id>2046</id>
+    <card_type>2</card_type>
+    <name>Leaping Dragon</name>
+    <picture>Floppy_Ear_Dragon_A</picture>
+    <asset_bundle>63</asset_bundle>
+    <attack>2</attack>
+    <health>7</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="enfeeble" x="1" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>8</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>3</attack>
+      <skill id="armored" x="1" />
+      <skill id="enfeeble" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>10</health>
+      <skill id="armored" x="1" />
+      <skill id="enfeeble" x="1" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12046</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Bounding Dragon</name>
+    <picture>Floppy_Ear_Dragon_A</picture>
+    <asset_bundle>63</asset_bundle>
+    <attack>3</attack>
+    <health>11</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="1" />
+    <skill id="enfeeble" x="1" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="1" />
+      <skill id="enfeeble" x="2" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>13</health>
+      <skill id="armored" x="1" />
+      <skill id="enfeeble" x="3" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22046</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Pouncing Dragon</name>
+    <picture>Floppy_Ear_Dragon_B</picture>
+    <asset_bundle>63</asset_bundle>
+    <attack>4</attack>
+    <health>14</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="1" />
+    <skill id="enfeeble" x="3" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="2" />
+      <skill id="enfeeble" x="3" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="2" />
+      <skill id="enfeeble" x="3" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>2047</id>
     <card_type>2</card_type>
     <name>Conjured Dragon</name>
@@ -16148,6 +16261,136 @@
       <skill id="flurry" c="3" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5063</id>
+    <card_type>2</card_type>
+    <name>Runic Dragon</name>
+    <picture>Rune_Dragon_A</picture>
+    <asset_bundle>63</asset_bundle>
+    <hidden_until_time>1465491600</hidden_until_time>
+    <!-- Thu, 09 Jun 2016 17:00:00 GMT -->
+    <attack>4</attack>
+    <health>11</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="legion" x="1" y="9" />
+    <skill id="strike" x="1" />
+    <skill id="nullify" x="1" />
+    <type>1</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="legion" x="1" y="9" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>14</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15063</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Runeworn Dragon</name>
+    <picture>Rune_Dragon_A</picture>
+    <asset_bundle>63</asset_bundle>
+    <hidden_until_time>1465491600</hidden_until_time>
+    <!-- Thu, 09 Jun 2016 17:00:00 GMT -->
+    <attack>5</attack>
+    <health>15</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="legion" x="1" y="9" />
+    <skill id="strike" x="1" all="1" />
+    <skill id="nullify" x="1" />
+    <type>1</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="legion" x="2" y="9" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>17</health>
+      <skill id="legion" x="2" y="9" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>18</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25063</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Runeglow Dragon</name>
+    <picture>Rune_Dragon_B</picture>
+    <asset_bundle>63</asset_bundle>
+    <hidden_until_time>1465491600</hidden_until_time>
+    <!-- Thu, 09 Jun 2016 17:00:00 GMT -->
+    <attack>6</attack>
+    <health>19</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="legion" x="2" y="9" />
+    <skill id="strike" x="1" all="1" />
+    <skill id="nullify" x="2" />
+    <type>1</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="legion" x="3" y="9" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="legion" x="3" y="9" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="nullify" x="3" />
+    </upgrade>
+  </unit>
   <!-- Chaos Premium Begin -->
   <unit>
     <id>6000</id>
@@ -23379,6 +23622,128 @@
       <skill id="poison" x="5" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6061</id>
+    <card_type>2</card_type>
+    <name>Decagon</name>
+    <picture>Centipede_Dragon_A</picture>
+    <asset_bundle>63</asset_bundle>
+    <hidden_until_time>1465491600</hidden_until_time>
+    <!-- Thu, 09 Jun 2016 17:00:00 GMT -->
+    <attack>4</attack>
+    <health>13</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="burn" x="1" />
+    <skill id="weaken" x="1" all="1" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>15</health>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>17</health>
+      <skill id="evade" x="1" />
+      <skill id="burn" x="2" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16061</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Centigon</name>
+    <picture>Centipede_Dragon_A</picture>
+    <asset_bundle>63</asset_bundle>
+    <hidden_until_time>1465491600</hidden_until_time>
+    <!-- Thu, 09 Jun 2016 17:00:00 GMT -->
+    <attack>6</attack>
+    <health>17</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="burn" x="2" />
+    <skill id="weaken" x="1" all="1" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+      <skill id="evade" x="1" />
+      <skill id="burn" x="2" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>20</health>
+      <skill id="evade" x="1" />
+      <skill id="burn" x="3" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>7</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26061</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Milligon</name>
+    <picture>Centipede_Dragon_B</picture>
+    <asset_bundle>63</asset_bundle>
+    <hidden_until_time>1465491600</hidden_until_time>
+    <!-- Thu, 09 Jun 2016 17:00:00 GMT -->
+    <attack>8</attack>
+    <health>21</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="burn" x="3" />
+    <skill id="weaken" x="2" all="1" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>23</health>
+      <skill id="evade" x="2" />
+      <skill id="burn" x="3" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="2" />
+      <skill id="burn" x="4" />
+      <skill id="weaken" x="3" all="1" />
+    </upgrade>
+  </unit>
   <!-- Wyld Premium Begin -->
   <unit>
     <id>7000</id>
@@ -30533,6 +30898,149 @@
     </upgrade>
   </unit>
   <unit>
+    <id>7059</id>
+    <card_type>2</card_type>
+    <name>Knotborn Dragon</name>
+    <picture>Wood_Dragon_A</picture>
+    <asset_bundle>63</asset_bundle>
+    <hidden_until_time>1465232400</hidden_until_time>
+    <!-- Mon, 06 Jun 2016 17:00:00 GMT -->
+    <attack>4</attack>
+    <health>19</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="1" all="1" y="3" />
+    <skill id="protect" x="1" all="1" />
+    <skill id="leech" x="3" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>21</health>
+      <skill id="rally" x="1" all="1" y="3" />
+      <skill id="protect" x="1" all="1" />
+      <skill id="leech" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>5</attack>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="rally" x="2" all="1" y="3" />
+      <skill id="protect" x="2" all="1" />
+      <skill id="leech" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17059</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Knotheir Dragon</name>
+    <picture>Wood_Dragon_A</picture>
+    <asset_bundle>63</asset_bundle>
+    <hidden_until_time>1465232400</hidden_until_time>
+    <!-- Mon, 06 Jun 2016 17:00:00 GMT -->
+    <attack>5</attack>
+    <health>24</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="2" all="1" y="3" />
+    <skill id="protect" x="2" all="1" />
+    <skill id="leech" x="4" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+      <skill id="rally" x="2" all="1" y="3" />
+      <skill id="protect" x="2" all="1" />
+      <skill id="leech" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>6</attack>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>28</health>
+      <skill id="rally" x="2" all="1" y="3" />
+      <skill id="protect" x="2" all="1" />
+      <skill id="leech" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="rally" x="3" all="1" y="3" />
+      <skill id="protect" x="3" all="1" />
+      <skill id="leech" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27059</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Knotsage Dragon</name>
+    <picture>Wood_Dragon_B</picture>
+    <asset_bundle>63</asset_bundle>
+    <hidden_until_time>1465232400</hidden_until_time>
+    <!-- Mon, 06 Jun 2016 17:00:00 GMT -->
+    <attack>7</attack>
+    <health>28</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="3" all="1" y="3" />
+    <skill id="protect" x="3" all="1" />
+    <skill id="leech" x="6" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>29</health>
+      <skill id="rally" x="3" all="1" y="3" />
+      <skill id="protect" x="3" all="1" />
+      <skill id="leech" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>30</health>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>32</health>
+      <skill id="rally" x="4" all="1" y="3" />
+      <skill id="protect" x="3" all="1" />
+      <skill id="leech" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="rally" x="4" all="1" y="3" />
+      <skill id="protect" x="4" all="1" />
+      <skill id="leech" x="8" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>7060</id>
     <card_type>2</card_type>
     <name>Shenami</name>
@@ -30663,6 +31171,140 @@
       <skill id="heal" x="3" all="1" />
     </upgrade>
     <desc>"Your wish is granted."</desc>
+  </unit>
+  <unit>
+    <id>7061</id>
+    <card_type>2</card_type>
+    <name>Thickskin Dragon</name>
+    <picture>Frenzied_Rock_Dragon_A</picture>
+    <asset_bundle>63</asset_bundle>
+    <hidden_until_time>1465491600</hidden_until_time>
+    <!-- Thu, 09 Jun 2016 17:00:00 GMT -->
+    <attack>6</attack>
+    <health>22</health>
+    <cost>4</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="2" />
+    <skill id="fervor" x="1" y="3" />
+    <skill id="enfeeble" x="1" all="1" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>24</health>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>25</health>
+      <skill id="armored" x="3" />
+      <skill id="fervor" x="1" y="3" />
+      <skill id="enfeeble" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>26</health>
+      <skill id="armored" x="3" />
+      <skill id="fervor" x="1" y="3" />
+      <skill id="enfeeble" x="2" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17061</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Stoneskin Dragon</name>
+    <picture>Frenzied_Rock_Dragon_A</picture>
+    <asset_bundle>63</asset_bundle>
+    <hidden_until_time>1465491600</hidden_until_time>
+    <!-- Thu, 09 Jun 2016 17:00:00 GMT -->
+    <attack>8</attack>
+    <health>27</health>
+    <cost>4</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="3" />
+    <skill id="fervor" x="1" y="3" />
+    <skill id="enfeeble" x="2" all="1" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>28</health>
+      <skill id="armored" x="3" />
+      <skill id="fervor" x="2" y="3" />
+      <skill id="enfeeble" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>29</health>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>30</health>
+      <skill id="armored" x="4" />
+      <skill id="fervor" x="2" y="3" />
+      <skill id="enfeeble" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>31</health>
+      <skill id="armored" x="4" />
+      <skill id="fervor" x="2" y="3" />
+      <skill id="enfeeble" x="3" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27061</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Cragskin Dragon</name>
+    <picture>Frenzied_Rock_Dragon_B</picture>
+    <asset_bundle>63</asset_bundle>
+    <hidden_until_time>1465491600</hidden_until_time>
+    <!-- Thu, 09 Jun 2016 17:00:00 GMT -->
+    <attack>10</attack>
+    <health>32</health>
+    <cost>4</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="4" />
+    <skill id="fervor" x="2" y="3" />
+    <skill id="enfeeble" x="3" all="1" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>33</health>
+      <attack>11</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>34</health>
+      <skill id="armored" x="5" />
+      <skill id="fervor" x="2" y="3" />
+      <skill id="enfeeble" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>35</health>
+      <skill id="armored" x="5" />
+      <skill id="fervor" x="3" y="3" />
+      <skill id="enfeeble" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>37</health>
+      <skill id="armored" x="5" />
+      <skill id="fervor" x="3" y="3" />
+      <skill id="enfeeble" x="4" all="1" />
+    </upgrade>
   </unit>
   <!-- END SET 3000 - Premium -->
   <!-- START SET 8000 - Story Element Assaults -->
@@ -33979,6 +34621,71 @@
       <skill id="counter" x="9" />
       <skill id="legion" x="7" />
       <skill id="strike" x="10" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8025</id>
+    <card_type>2</card_type>
+    <name>Explosive Crab</name>
+    <picture>Lava_Crab_A</picture>
+    <attack>0</attack>
+    <health>1</health>
+    <cost>4</cost>
+    <rarity>1</rarity>
+    <skill id="counter" x="30" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>2</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>3</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>18025</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Explosion Crab</name>
+    <picture>Lava_Crab_B</picture>
+    <attack>0</attack>
+    <health>3</health>
+    <cost>4</cost>
+    <rarity>1</rarity>
+    <skill id="counter" x="40" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>4</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>5</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>28025</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Exploding Crab</name>
+    <picture>Lava_Crab_C</picture>
+    <attack>0</attack>
+    <health>5</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="50" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>6</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>7</health>
     </upgrade>
   </unit>
   <!-- END SET 8000 - Story Element Assaults -->
