@@ -20,7 +20,6 @@ var CARD_GUI = {};
 
     function makeDeckHTML(deck, onclick, onrightclick, onmouseover) {
         var deckHTML = createDiv("float-left");
-        deckHTML.id = "sortable-deck";
 
         var commander = get_card_by_id(deck.commander);
         var htmlCard = create_card_html(commander, false, false, onclick, onrightclick, onmouseover);
@@ -44,7 +43,7 @@ var CARD_GUI = {};
 
         var dhtml = $(deckHTML).sortable({
             items: '.card:not(.commander)',
-            update: function (event, ui) {
+            stop: function (event, ui) {
                 getHashFromHTML(ui);
             },
             tolerance: "intersect",
