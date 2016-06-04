@@ -40,6 +40,8 @@ var advancedFilters;
 var optionsDialog;
 var form;
 
+var $nameFilter;
+
 (function ($) {
     // http://stackoverflow.com/a/26254025/1438242
     $.fn.detectFont = function () {
@@ -79,14 +81,15 @@ var initDeckBuilder = function () {
     window.onwheel = changePage;
     window.oncontextmenu = hideContext;
 
-    $('#nameFilter').keypress(function (event) {
+    $nameFilter = $('#nameFilter').keypress(function (event) {
         if (event.which == 13) {
             if (unitsFiltered.length == 1) {
-                deck.deck.push(unitsFiltered[0]);
-                doDrawDeck();
+                addUnitToDeck(unitsFiltered[0]);
             }
             event.preventDefault();
         }
+    }).autocomplete({
+        source: []
     });
 
     setTimeout(function () {
@@ -409,6 +412,10 @@ var sortDeck = function () {
 
 var addToDeck = function (htmlCard) {
     var unit = getUnitFromCard(htmlCard);
+    addUnitToDeck(unit);
+}
+
+var addUnitToDeck = function (unit) {
     if (is_commander(unit.id)) {
         deck.commander = unit;
     } else {
@@ -1336,17 +1343,26 @@ var applyFilters_old = function () {
 
 var applyFilters = function (keepPage, skipDraw) {
     unitsFiltered = [];
+    var names = [];
+    var addedNames = {};
     for (var i = 0, len = unitsShown.length; i < len; i++) {
-        var card = unitsShown[i];
-        var unit = makeUnitKey(card);
-        if (skillHidden[unit] || factionHidden[unit] || subfactionHidden[unit]
-             || attackHidden[unit] || healthHidden[unit] || delayHidden[unit]
-             || typeHidden[unit] || fusionHidden[unit] || setHidden[unit]
-             || nameHidden[unit] || rarityHidden[unit] || skillHiddenAdv[unit]) {
+        var unit = unitsShown[i];
+        var key = makeUnitKey(unit);
+        if (skillHidden[key] || factionHidden[key] || subfactionHidden[key]
+             || attackHidden[key] || healthHidden[key] || delayHidden[key]
+             || typeHidden[key] || fusionHidden[key] || setHidden[key]
+             || nameHidden[key] || rarityHidden[key] || skillHiddenAdv[key]) {
         } else {
-            unitsFiltered.push(card);
+            unitsFiltered.push(unit);
+            var card = get_card_by_id(unit);
+            if (!addedNames[card.name]) {
+                names.push(card.name);
+                addedNames[card.name] = true;
+            }
         }
     }
+    $nameFilter.autocomplete("option", { source: names });
+
     if (!skipDraw) {
         doDrawCardList(unitsFiltered, !keepPage);
     }

@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" href="res/deck_2-16x16.png">
 
     <script src="lib/jquery-2.2.1.min.js"></script>
-    <script src="lib/jquery-ui-1.11.4.min.js"></script>
+    <script src="lib/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
     <script language="javascript" type="text/javascript" src="lib/chartist/chartist.min.js"></script>
     <script language="javascript" type="text/javascript" src="lib/chartist/chartist-plugin-legend.js"></script>
     <script language="javascript" type="text/javascript" src="lib/chartist/chartist-plugin-tooltip.min.js"></script>
@@ -185,8 +185,11 @@
                     <input class="delay-filter" type="button" value="4" onclick="filterDelay(this, 4)" />
                 </fieldset>
                 <div style="white-space:nowrap; margin: 5px 0px;">
-                    <strong>Name Filter:</strong><br />
-                    <input id="nameFilter" type="text" value="" size="100" onkeyup="filterName(this);">
+
+                    <div class="ui-widget">
+                        <label for="nameFilter"><strong>Name Filter:</strong></label><br/>
+                        <input id="nameFilter" type="text" value="" size="100" onkeyup="filterName(this);">
+                    </div>
                 </div>
                 <input type="button" value="Clear All" onclick="clearFilters()" />
                 <br />
@@ -217,10 +220,14 @@
                                 <div><u>Advanced Options</u></div>
                                 <div id="dropdown" class="dropdown-content">
                                     <input type="checkbox" onclick="toggleUpgrades(this);" class="ui-widget-content ui-corner-all" />
-                                    All Upgrade Levels
+                                    <span>All Upgrade Levels</span>
                                     <br />
+
                                     <input type="checkbox" id="skillDetails" onclick="toggleSkillDetails(this);" class="ui-widget-content ui-corner-all" />
-                                    Compact Skills
+                                    <span>Compact Skills</span>
+                                    <br />
+
+                                    <label class="button" onclick="showInitDialog();"><b>Set Inventory</b></label>
                                 </div>
                             </div>
                         </td>
