@@ -38,7 +38,10 @@ var CARD_GUI = {};
                 var $this = $(this);
                 console.log($this.index());
                 if (event.ctrlKey) {
+                    var unit = deck.deck[$this.index()];
                     $this.clone().insertAfter($(deckHTML).children()[$this.index()]);
+                    deck.deck.splice(origPos, 0, makeUnitInfo(unit.id, unit.level, unit.runes || []));
+                    updateHash();
                 }
             });
             deckHTML.appendChild(htmlCard);
