@@ -34,6 +34,13 @@ var CARD_GUI = {};
             if (deckEntry.index !== undefined) {
                 htmlCard.setAttribute("data-index", deckEntry.index);
             }
+            $(htmlCard).mousedown(function (event) {
+                var $this = $(this);
+                console.log($this.index());
+                if (event.ctrlKey) {
+                    $this.clone().insertAfter($(deckHTML).children()[$this.index()]);
+                }
+            });
             deckHTML.appendChild(htmlCard);
         }
         for (; i < 15; i++) {
@@ -42,17 +49,44 @@ var CARD_GUI = {};
         }
 
         var dhtml = $(deckHTML).sortable({
-            items: '.card:not(.commander)',
+            items: '.card:not(.commander):not(.blank)',
             stop: function (event, ui) {
                 getHashFromHTML(ui);
             },
-            tolerance: "intersect",
+            tolerance: "intersect",/*
             helper: function (event, ui) {
-                this.origIndex = ui.index();
                 return (event.ctrlKey ? ui.clone() : ui);
             },
             start: function (event, ui) {
+                var lastPos = ui.placeholder.index() - 1;
+                ui.item.data('last_pos', lastPos);
+                var origPos = ui.item.index() - 1;
+                console.log("Start:" + origPos);
+                console.log("(" + origPos + "," + lastPos + "," + lastPos + ")");
+                if (event.ctrlKey) {
+                    ui.item.clone().insertBefore($(this).children()[ui.item.index()]);
+                    $(this).sortable("refresh").sortable("refreshPositions");
+                    var unit = deck.deck[origPos];
+                    deck.deck.splice(origPos, 0, makeUnitInfo(unit.id, unit.level, unit.runes || []));
+                    updateHash();
+                    updateHighlights();
+                }
                 $(ui.item).show();
+            },
+            change: function (event, ui) {
+                var origPos = ui.item.index();
+                var lastPos = ui.item.data('last_pos');
+                var newPos = ui.placeholder.index();
+                if (origPos < newPos) newPos--;
+                ui.item.data('last_pos', newPos);
+                console.log("(" + origPos + "," + lastPos + "," + newPos + ")");
+
+                newPos--;
+                lastPos--;
+                var array = deck.deck;
+                array[newPos] = array.splice(lastPos, 1, array[newPos])[0];
+                updateHash();
+                updateHighlights();
             },
             beforeStop: function (event, ui) {
                 if (ui.item[0] != ui.helper[0]) {
@@ -66,6 +100,7 @@ var CARD_GUI = {};
                     ui.item.clone()[insertFn]($(this).children()[cloneIndex]);
                 }
             }
+            */
         });
 
         return deckHTML;
