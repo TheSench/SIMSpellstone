@@ -43,32 +43,6 @@ var form;
 
 var $nameFilter;
 
-(function ($) {
-    // http://stackoverflow.com/a/26254025/1438242
-    $.fn.detectFont = function () {
-        var fontfamily = $(this).css('font-family');
-        var fonts = fontfamily.split(',');
-        if (fonts.length == 1) {
-            return fonts[0];
-        }
-
-        var element = $(this);
-        var detectedFont = null;
-        fonts.forEach(function (font) {
-            var clone = $('<span>wwwwwwwwwwwwwwwlllllllliiiiii</span>').css({ 'font-family': fontfamily, 'font-size': '70px', 'display': 'inline', 'visibility': 'hidden' }).appendTo('body');
-            var dummy = $('<span>wwwwwwwwwwwwwwwlllllllliiiiii</span>').css({ 'font-family': font, 'font-size': '70px', 'display': 'inline', 'visibility': 'hidden' }).appendTo('body');
-            //console.log(clone, dummy, fonts, font, clone.width(), dummy.width());
-            if (clone.width() == dummy.width()) {
-                detectedFont = font;
-            }
-            clone.remove();
-            dummy.remove();
-        });
-
-        return detectedFont;
-    }
-}(jQuery));
-
 var initDeckBuilder = function () {
     setupPopups();
     adjustHeight();
@@ -195,29 +169,39 @@ var drawDeck = function () {
 
 function doDrawDeck() {
     var $cardSpace = CARD_GUI.draw_deck(deck);//removeFromDeck, showCardOptions, highlight);
-    var $htmlCards = $cardSpace.find(".card")
+    var $htmlCards = $cardSpace.find(".card:not(.blank)")
     addEventHandlers($htmlCards);
     updateHash();
 };
 
 function addEventHandlers($htmlCards) {
     $htmlCards
+        .mousedown(duplicate)
         .click(deckOnClick)
         .contextmenu(showCardOptions)
         .mouseover(highlight);
 }
 
-function deckOnClick(event) {
+function duplicate(event) {
     if (event.ctrlKey) {
         var $this = $(this);
-        var index = $this.index() - 1;
-        var unit = deck.deck[index];
+        var emptySpaces = $this.parent().find(".blank");
+        if (!emptySpaces.length) {
+            return;
+        }
+        emptySpaces.first().remove();
+        var index = $this.index();
+        var unit = deck.deck[index-1];
         var clone = $this.clone();
         addEventHandlers(clone);
         clone.insertAfter($this.parent().children()[index]);
         deck.deck.splice(index, 0, makeUnitInfo(unit.id, unit.level, unit.runes || []));
         updateHash();
-    } else {
+    }
+}
+
+function deckOnClick(event) {
+    if (!event.ctrlKey) {
         removeFromDeck(event);
     }
 }
@@ -514,13 +498,16 @@ var highlight = function (event) {
 
 var highlighted = -1;
 function updateHighlights() {
-    var deckHash = document.getElementById("hash").value;
+    var hash_highlighted = document.getElementById("hash");
+    var deckHash = hash_highlighted.value;
     
     var start = highlighted * 5;
     var end = start + 5;
     var highlightedHash = deckHash.substring(0, start) + '<span>' + deckHash.substring(start, end) + '</span>' + deckHash.substring(end);
     
-    document.getElementById('hash_highlighter').innerHTML = highlightedHash;
+    var hash_highlighter = document.getElementById('hash_highlighter');
+    hash_highlighter.innerHTML = highlightedHash;
+    $(hash_highlighter).width($(hash_highlighted).width())
 }
 
 var updateHash = function () {

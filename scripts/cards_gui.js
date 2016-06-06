@@ -13,102 +13,6 @@ var CARD_GUI = {};
         cardSpace.innerHTML = '';
     }
 
-    function draw_deck_old(deck, onclick, onrightclick, onmouseover) {
-        var cardSpace = document.getElementById("deck");
-        $(cardSpace).html(makeDeckHTML_old(deck, onclick, onrightclick, onmouseover));
-    }
-
-    function makeDeckHTML_old(deck, onclick, onrightclick, onmouseover) {
-        var deckHTML = createDiv("float-left");
-
-        var commander = get_card_by_id(deck.commander);
-        var htmlCard = create_card_html(commander, false, false, onclick, onrightclick, onmouseover);
-        if (deck.commander.index !== undefined) {
-            htmlCard.setAttribute("data-index", deck.commander.index);
-        }
-        deckHTML.appendChild(htmlCard);
-        for (var i = 0, len = deck.deck.length; i < len; i++) {
-            var deckEntry = deck.deck[i];
-            var unit = get_card_by_id(deckEntry);
-            var htmlCard = create_card_html(unit, false, false, onclick, onrightclick, onmouseover, i);
-            if (deckEntry.index !== undefined) {
-                htmlCard.setAttribute("data-index", deckEntry.index);
-            }
-            $(htmlCard).mousedown(function (event) {
-                var $this = $(this);
-                console.log($this.index());
-                if (event.ctrlKey) {
-                    var unit = deck.deck[$this.index()];
-                    $this.clone().insertAfter($(deckHTML).children()[$this.index()]);
-                    deck.deck.splice(origPos, 0, makeUnitInfo(unit.id, unit.level, unit.runes || []));
-                    updateHash();
-                }
-            });
-            deckHTML.appendChild(htmlCard);
-        }
-        for (; i < 15; i++) {
-            var htmlCard = createDiv("card blank");
-            deckHTML.appendChild(htmlCard);
-        }
-
-        var dhtml = $(deckHTML).sortable({
-            items: '.card:not(.commander):not(.blank)',
-            stop: function (event, ui) {
-                getHashFromHTML(ui);
-            },
-            tolerance: "intersect",/*
-            helper: function (event, ui) {
-                return (event.ctrlKey ? ui.clone() : ui);
-            },
-            start: function (event, ui) {
-                var lastPos = ui.placeholder.index() - 1;
-                ui.item.data('last_pos', lastPos);
-                var origPos = ui.item.index() - 1;
-                console.log("Start:" + origPos);
-                console.log("(" + origPos + "," + lastPos + "," + lastPos + ")");
-                if (event.ctrlKey) {
-                    ui.item.clone().insertBefore($(this).children()[ui.item.index()]);
-                    $(this).sortable("refresh").sortable("refreshPositions");
-                    var unit = deck.deck[origPos];
-                    deck.deck.splice(origPos, 0, makeUnitInfo(unit.id, unit.level, unit.runes || []));
-                    updateHash();
-                    updateHighlights();
-                }
-                $(ui.item).show();
-            },
-            change: function (event, ui) {
-                var origPos = ui.item.index();
-                var lastPos = ui.item.data('last_pos');
-                var newPos = ui.placeholder.index();
-                if (origPos < newPos) newPos--;
-                ui.item.data('last_pos', newPos);
-                console.log("(" + origPos + "," + lastPos + "," + newPos + ")");
-
-                newPos--;
-                lastPos--;
-                var array = deck.deck;
-                array[newPos] = array.splice(lastPos, 1, array[newPos])[0];
-                updateHash();
-                updateHighlights();
-            },
-            beforeStop: function (event, ui) {
-                if (ui.item[0] != ui.helper[0]) {
-                    var newIndex = ui.item.index();
-                    var cloneIndex = this.origIndex;
-                    var insertFn = 'insertBefore';
-                    if (newIndex < this.origIndex) {
-                        insertFn = 'insertAfter';
-                        cloneIndex++;
-                    }
-                    ui.item.clone()[insertFn]($(this).children()[cloneIndex]);
-                }
-            }
-            */
-        });
-
-        return deckHTML;
-    }
-
     function draw_deck(deck) {
         var $cardSpace = $("#deck");
         $cardSpace.html(makeDeckHTML(deck));
@@ -143,41 +47,25 @@ var CARD_GUI = {};
             stop: function (event, ui) {
                 getHashFromHTML(ui);
             },
-            tolerance: "intersect",/*
-            helper: function (event, ui) {
-                return (event.ctrlKey ? ui.clone() : ui);
-            },*/
+            tolerance: "intersect",
             start: function (event, ui) {
+
                 var lastPos = ui.placeholder.index() - 1;
                 ui.item.data('last_pos', lastPos);
-                var origPos = ui.item.index() - 1;
-                console.log("Start:" + origPos);
-                console.log("(" + origPos + "," + lastPos + "," + lastPos + ")");
-                if (event.ctrlKey) {
-                    ui.item.clone().insertBefore($(this).children()[ui.item.index()]);
-                    $(this).sortable("refresh").sortable("refreshPositions");
-                    var unit = deck.deck[origPos];
-                    deck.deck.splice(origPos, 0, makeUnitInfo(unit.id, unit.level, unit.runes || []));
-                    updateHash();
-                    highlighted = ui.placeholder.index();
-                    updateHighlights();
-                }
                 $(ui.item).show();
             },
             change: function (event, ui) {
                 var origPos = ui.item.index();
-                var lastPos = ui.item.data('last_pos');
+                var lastPos = ui.item.data('last_pos') - 1;
                 var newPos = ui.placeholder.index();
                 if (origPos < newPos) newPos--;
+                highlighted = newPos;
                 ui.item.data('last_pos', newPos);
-                console.log("(" + origPos + "," + lastPos + "," + newPos + ")");
-
                 newPos--;
-                lastPos--;
+
                 var array = deck.deck;
                 array[newPos] = array.splice(lastPos, 1, array[newPos])[0];
                 updateHash();
-                highlighted = ui.placeholder.index();
                 updateHighlights();
             }
         });

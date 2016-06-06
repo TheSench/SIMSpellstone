@@ -431,7 +431,7 @@ fieldset {
 #advancedFilters,
 #unitOptions,
 #inventoryOptions {
-    padding: 0px;
+    padding: 0;
 }
 
 .accordion td {
@@ -453,6 +453,7 @@ fieldset {
     padding: 1px;
     margin-left: 1px;
     color: white;
+    overflow:hidden;
 }
 
     .highlighter span {
