@@ -194,9 +194,33 @@ var drawDeck = function () {
 }
 
 function doDrawDeck() {
-    CARD_GUI.draw_deck(deck, removeFromDeck, showCardOptions, highlight);
+    var $cardSpace = CARD_GUI.draw_deck(deck);//removeFromDeck, showCardOptions, highlight);
+    var $htmlCards = $cardSpace.find(".card")
+    addEventHandlers($htmlCards);
     updateHash();
 };
+
+function addEventHandlers($htmlCards) {
+    $htmlCards
+        .click(deckOnClick)
+        .contextmenu(showCardOptions)
+        .mouseover(highlight);
+}
+
+function deckOnClick(event) {
+    if (event.ctrlKey) {
+        var $this = $(this);
+        var index = $this.index() - 1;
+        var unit = deck.deck[index];
+        var clone = $this.clone();
+        addEventHandlers(clone);
+        clone.insertAfter($this.parent().children()[index]);
+        deck.deck.splice(index, 0, makeUnitInfo(unit.id, unit.level, unit.runes || []));
+        updateHash();
+    } else {
+        removeFromDeck(event);
+    }
+}
 
 var drawCardList = function () {
 
@@ -463,13 +487,17 @@ function removeFromInventory(unit) {
     return unit;
 }
 
-var removeFromDeck = function (htmlCard, index) {
+var removeFromDeck = function (event) {
+    if (event.ctrlKey) {
+        return;
+    }
     var unit;
-    if (htmlCard.classList.contains('commander')) {
+    if (index == 0) {
         unit = deck.commander;
         if (areEqual(unit, elariaCaptain)) return;
         deck.commander = elariaCaptain;
     } else {
+        var index = $(event.delegateTarget).index() - 1;
         unit = deck.deck.splice(index, 1)[0];
     }
     if (fromInventory) {
@@ -479,13 +507,8 @@ var removeFromDeck = function (htmlCard, index) {
     doDrawDeck();
 };
 
-var highlight = function (htmlCard, index) {
-    if (index === undefined) {
-        index = 0;
-    } else {
-        index++;
-    }
-    highlighted = index;
+var highlight = function (event) {
+    highlighted = $(event.delegateTarget).index();
     updateHighlights();
 }
 
@@ -1144,12 +1167,14 @@ var showAdvancedFilters = function (skill) {
     return false;
 }
 
-var showCardOptions = function (htmlCard, index) {
+var showCardOptions = function (event) {
     var show = false;
-    if (index != undefined) {
-        var unit = deck.deck[index];
-    } else {
+    var htmlCard = event.delegateTarget;
+    var index = $(htmlCard).index() - 1;
+    if (index < 0) {
         var unit = deck.commander;
+    } else {
+        var unit = deck.deck[index];
     }
     optionsDialog.index = index;
     var card = get_card_by_id(unit);
@@ -1281,14 +1306,12 @@ var modifyCard = function (optionsDialog) {
     doDrawDeck();
 }
 
-
-
 var resetCard = function (optionsDialog) {
     var index = optionsDialog.index;
-    if (index !== undefined) {
-        deck.deck[index] = optionsDialog.originalUnit;
-    } else {
+    if (index < 0) {
         deck.commander = optionsDialog.originalUnit;
+    } else {
+        deck.deck[index] = optionsDialog.originalUnit;
     }
     doDrawDeck();
 }
