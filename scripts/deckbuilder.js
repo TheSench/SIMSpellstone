@@ -1526,40 +1526,7 @@ var toggleUpgrades = function (checkbox) {
         applyFilters(false);
     }, 1);
 }
-/*
-var toggleDeckDisplay = function (img) {
-    var deckContainer = document.getElementById("deckContainer");
-    if (deckContainer.classList.contains("collapsed")) {
-        deckContainer.classList.remove("collapsed");
-        img.src = "res/misc/Minus.png";
-    } else {
-        deckContainer.classList.add("collapsed");
-        img.src = "res/misc/Plus.png";
-    }
-}
 
-var toggleFilterDisplay = function (img) {
-    var filters = document.getElementById("filters");
-    if (filters.classList.contains("collapsed")) {
-        filters.classList.remove("collapsed");
-        img.src = "res/misc/Minus.png";
-    } else {
-        filters.classList.add("collapsed");
-        img.src = "res/misc/Plus.png";
-    }
-}
-
-var toggleCardDisplay = function (img) {
-    var cardSpace = document.getElementById("cardSpace");
-    if (cardSpace.classList.contains("collapsed")) {
-        cardSpace.classList.remove("collapsed");
-        img.src = "res/misc/Minus.png";
-    } else {
-        cardSpace.classList.add("collapsed");
-        img.src = "res/misc/Plus.png";
-    }
-}
-*/
 function sortAndDraw(select) {
     doSort(select);
     applyFilters();
@@ -1567,12 +1534,11 @@ function sortAndDraw(select) {
 
 var sortCards = function (select) {
     doSort(select);
-    //doDrawCardList(unitsShown);
 }
 
 function doSort(select) {
     var sortField = select.value;
-    unitsShown.sort(/* = quicksort(unitsShown, */function (unitA, unitB) {
+    unitsShown.sort(function (unitA, unitB) {
         // Always sort by commander/unit first
         var comparison = is_commander(unitB.id) - is_commander(unitA.id);
         if (comparison != 0) return comparison;
@@ -1590,6 +1556,7 @@ function doSort(select) {
     });
 }
 
+// TODO: Remove recursion (causes stack overflow in JavaScript)
 function quicksort(arr, comparator) {
     //if array is empty
     if (arr.length === 0) {
