@@ -44,15 +44,14 @@ var CARD_GUI = {};
 
         var dhtml = $(deckHTML).sortable({
             items: '.card:not(.commander):not(.blank)',
-            stop: function (event, ui) {
-                getHashFromHTML(ui);
-            },
             tolerance: "intersect",
+            helper: function(event, ui) {
+                return ui.clone();
+            },
             start: function (event, ui) {
-
                 var lastPos = ui.placeholder.index() - 1;
                 ui.item.data('last_pos', lastPos);
-                $(ui.item).show();
+                $(ui.item).hide();
             },
             change: function (event, ui) {
                 var origPos = ui.item.index();

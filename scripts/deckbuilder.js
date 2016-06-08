@@ -177,6 +177,7 @@ function doDrawDeck() {
 function addEventHandlers($htmlCards) {
     $htmlCards
         .mousedown(duplicate)
+        //.mouseup(duplicate)
         .click(deckOnClick)
         .contextmenu(showCardOptions)
         .mouseover(highlight);
@@ -194,7 +195,7 @@ function duplicate(event) {
         var unit = deck.deck[index-1];
         var clone = $this.clone();
         addEventHandlers(clone);
-        clone.insertAfter($this.parent().children()[index]);
+        clone.insertBefore($this.parent().children()[index]);
         deck.deck.splice(index, 0, makeUnitInfo(unit.id, unit.level, unit.runes || []));
         updateHash();
     }
@@ -290,7 +291,6 @@ function doDrawCardList(cardList, resetPage) {
         var $card = $(card);
         var minHeight = (card.offsetHeight + parseInt($card.css('marginTop')) + parseInt($card.css('marginBottom'))) * parseInt(rows);
         $cardSpace.css('min-height', minHeight +'px');
-
     }
 }
 
@@ -1378,22 +1378,6 @@ var filterRarity = function (button, rarity) {
     applyFilters();
 }
 
-var applyFilters_old = function () {
-    var cards = document.getElementById("cardSpace").getElementsByClassName("card");
-    for (var i = 0, len = cards.length; i < len; i++) {
-        var card = cards[i];
-        var unit = makeUnitKey(getUnitFromCard(card));
-        if (skillHidden[unit] || factionHidden[unit] || subfactionHidden[unit]
-             || attackHidden[unit] || healthHidden[unit] || delayHidden[unit]
-             || typeHidden[unit] || fusionHidden[unit] || setHidden[unit]
-             || nameHidden[unit] || rarityHidden[unit] || skillHiddenAdv[unit]) {
-            card.style.display = "none";
-        } else {
-            card.style.display = "";
-        }
-    }
-}
-
 var applyFilters = function (keepPage, skipDraw) {
     unitsFiltered = [];
     var names = [];
@@ -1660,26 +1644,4 @@ var skillStyle = document.createElement('style');
 function setDeckName(name) {
     var lbl = document.getElementById("version_label");
     lbl.innerHTML += " " + name;
-}
-
-function getHashFromHTML(card) {
-    var htmlDeck = card.item.parent().children();
-    var newDeck = {
-        commander: elariaCaptain,
-        deck: []
-    }
-    for (var i = 0; i < htmlDeck.length; i++) {
-        var htmlCard = htmlDeck[i];
-        if (htmlCard.classList.contains("blank")) continue;
-
-        var unit = getUnitFromCard(htmlCard);
-        if (is_commander(unit.id)) {
-            newDeck.commander = unit;
-        } else {
-            newDeck.deck.push(unit);
-        }
-    }
-    deck = newDeck;
-
-    doDrawDeck();
 }
