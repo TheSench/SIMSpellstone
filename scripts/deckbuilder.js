@@ -42,6 +42,8 @@ var optionsDialog;
 var form;
 
 var $nameFilter;
+var $deck;
+var $cardSpace;
 
 var initDeckBuilder = function () {
     setupPopups();
@@ -59,12 +61,41 @@ var initDeckBuilder = function () {
     $nameFilter = $('#nameFilter').keypress(function (event) {
         if (event.which == 13) {
             if (unitsFiltered.length == 1) {
-                addUnitToDeck(unitsFiltered[0]);
+                addUnitToDeck(unitsFiltered[0], $cardSpace.children()[0]);
             }
             event.preventDefault();
         }
     }).autocomplete({
         source: []
+    });
+
+
+
+    var dhtml = $("#deck").sortable({
+        items: '.card:not(.commander):not(.blank)',
+        tolerance: "intersect",
+        helper: function (event, ui) {
+            return ui.clone();
+        },
+        start: function (event, ui) {
+            var lastPos = ui.placeholder.index() - 1;
+            ui.item.data('last_pos', lastPos);
+            $(ui.item).hide();
+        },
+        change: function (event, ui) {
+            var origPos = ui.item.index();
+            var lastPos = ui.item.data('last_pos') - 1;
+            var newPos = ui.placeholder.index();
+            if (origPos < newPos) newPos--;
+            highlighted = newPos;
+            ui.item.data('last_pos', newPos);
+            newPos--;
+
+            var array = deck.deck;
+            array[newPos] = array.splice(lastPos, 1, array[newPos])[0];
+            updateHash();
+            updateHighlights();
+        }
     });
 
     setTimeout(function () {
@@ -168,8 +199,8 @@ var drawDeck = function () {
 }
 
 function doDrawDeck() {
-    var $cardSpace = CARD_GUI.draw_deck(deck);//removeFromDeck, showCardOptions, highlight);
-    var $htmlCards = $cardSpace.find(".card:not(.blank)")
+    $deck = CARD_GUI.draw_deck(deck);
+    var $htmlCards = $deck.find(".card:not(.blank)")
     addEventHandlers($htmlCards);
     updateHash();
 };
@@ -251,6 +282,7 @@ var drawCardList = function () {
 }
 
 var page = 0;
+var pages = 0;
 function doDrawCardList(cardList, resetPage) {
 
     var detailedSkills = document.getElementById("skillDetails").checked;
@@ -271,7 +303,7 @@ function doDrawCardList(cardList, resetPage) {
         if (!areEqual(unit, lastUnit)) unique++;
         lastUnit = unit;
     }
-    var pages = Math.ceil(unique / cards);
+    pages = Math.max(Math.ceil(unique / cards), 1);
     if (pages > 1) {
         var start = cards * page;
         if (page >= pages) {
@@ -284,7 +316,7 @@ function doDrawCardList(cardList, resetPage) {
         CARD_GUI.draw_card_list(cardList, detailedSkills, addToDeck, hideContext);
     }
     document.getElementById("pageNumber").innerHTML = "Page " + (page + 1) + "/" + pages;
-    var $cardSpace = $("#cardSpace");
+    $cardSpace = $("#cardSpace");
     var cards = $cardSpace.find(".card");
     if (cards.length) {
         var card = cards[0];
@@ -294,19 +326,9 @@ function doDrawCardList(cardList, resetPage) {
     }
 }
 
-var resizing = false;
-function onResize() {
-    /*
-    if (!resizing) {
-        resizing = true;
-        var fillers = $("#filler");
-        for (var i = 0; i < fillers.length; i++) {
-            adjustTable(fillers[i]);
-        }
-        resizing = false;
-    }
-    */
-}
+var onResize = (function () {
+    redrawCardList(true);
+}).debounce(50);
 
 function adjustTable(filler) {
     var currentRow = filler.parentElement;
@@ -365,18 +387,21 @@ function pageUp() {
     page--;
     if (page < 0) {
         page = 0;
-    }
-    else {
+    } else {
         redrawCardList(true);
     }
 }
 
 function pageDown() {
     page++;
-    redrawCardList(true);
+    if (page >= pages) {
+        page--;
+    } else {
+        redrawCardList(true);
+    }
 }
 
-function redrawCardList(keepPaging) {
+var redrawCardList = function (keepPaging) {
     sortCards(document.getElementById("sortField"));
     applyFilters(keepPaging);
 }
@@ -411,11 +436,25 @@ var addUnitLevels = function (id, maxlevel) {
 var disableTracking = false;
 var hash_changed = function (hash) {
 
+    if (fromInventory) {
+        if (!areEqual(deck.commander, elariaCaptain)) unitsShown.push(deck.commander);
+        unitsShown.push.apply(unitsShown, deck.deck);
+        redrawCardList(true);
+    }
+
     hash = (hash || document.getElementById("hash").value.trim());
     document.getElementById("hash").value = hash;
 
     if (typeof simulatorDeckHashField !== 'undefined') simulatorDeckHashField.value = hash;
     deck = hash_decode(hash);
+
+    if (fromInventory) {
+        if (!areEqual(deck.commander, elariaCaptain)) removeFromInventory(deck.commander);
+        for (var i = 0; i < deck.deck.length; i++) {
+            removeFromInventory(deck.deck[i]);
+        }
+        applyFilters();
+    }
 
     doDrawDeck();
 }
@@ -441,23 +480,46 @@ var sortDeck = function () {
 
 var addToDeck = function (htmlCard) {
     var unit = getUnitFromCard(htmlCard);
-    addUnitToDeck(unit);
+    addUnitToDeck(unit, htmlCard);
 }
 
-var addUnitToDeck = function (unit) {
+var addUnitToDeck = function (unit, htmlCard) {
+    var $htmlCard = $(htmlCard).clone().find(".multiplier").remove().end();
+    addEventHandlers($htmlCard);
+
+    var $deck = $("#deck");
+
     if (is_commander(unit.id)) {
         deck.commander = unit;
+        $deck.find(".card").first().replaceWith($htmlCard);
     } else {
         if (deck.deck.length == 15 && !_DEFINED("unlimited")) return;
         deck.deck.push(unit);
+        var emptySpaces = $deck.find(".blank");
+        if (emptySpaces.length) {
+            emptySpaces.first().replaceWith($htmlCard);
+        } else {
+            $deck.append($htmlCard)
+        }
     }
 
     if (fromInventory) {
         removeFromInventory(unit);
-        redrawCardList(true);
+        $htmlCard = $(htmlCard);
+        var $mult = $htmlCard.find("div.multiplier");
+        if ($mult.length > 0) {
+            var count = Number($mult.attr("data-count")) - 1;
+            if (count > 1) {
+                $mult.attr("data-count", count);
+                $mult.html("x" + count);
+            } else {
+                $htmlCard.find(".multiplier").remove();
+            }
+        } else {
+            $htmlCard.remove();
+        }
     }
-
-    doDrawDeck();
+    updateHash();
 };
 
 function removeFromInventory(unit) {
@@ -472,23 +534,30 @@ function removeFromInventory(unit) {
 }
 
 var removeFromDeck = function (event) {
-    if (event.ctrlKey) {
-        return;
-    }
     var unit;
+    var $htmlCard = $(event.delegateTarget)
+    var index = $htmlCard.index();
     if (index == 0) {
         unit = deck.commander;
         if (areEqual(unit, elariaCaptain)) return;
         deck.commander = elariaCaptain;
+        var card = get_card_by_id(elariaCaptain);
+        $htmlCard.replaceWith(CARD_GUI.create_card_html(card));
     } else {
-        var index = $(event.delegateTarget).index() - 1;
-        unit = deck.deck.splice(index, 1)[0];
+        unit = deck.deck.splice(index - 1, 1)[0];
+        $htmlCard.remove();
+        if (deck.deck.length < 15) {
+            $deck.append("<div class='card blank'></div>");
+        }
     }
+
+
     if (fromInventory) {
         unitsShown.push(unit);
         redrawCardList(true);
     }
-    doDrawDeck();
+    
+    updateHash();
 };
 
 var highlight = function (event) {
@@ -819,7 +888,7 @@ var filterSkill = function (button, skill) {
         }
     }
     applyFilters();
-}
+};
 
 var filterFaction = function (button, faction) {
     factionHidden = {};
@@ -843,18 +912,10 @@ var filterFaction = function (button, faction) {
         }
     }
     applyFilters();
-}
+};
 
-var nameDebouncer = null;
-var filterName = function (field) {
+var filterName = (function (field) {
     var filter = field.value.toLowerCase();
-    if (nameDebouncer !== null) {
-        clearTimeout(nameDebouncer);
-    }
-    nameDebouncer = setTimeout(filterNameInner, 250, filter);
-}
-
-function filterNameInner(filter) {
     nameHidden = {};
     if (filter) {
         for (var i = 0, len = units.length; i < len; i++) {
@@ -866,7 +927,7 @@ function filterNameInner(filter) {
         }
     }
     applyFilters();
-}
+}).throttle(250);
 
 var filterSubfaction = function (button, faction) {
     subfactionHidden = {};
@@ -1290,17 +1351,22 @@ var modifyCard = function (optionsDialog) {
     }
     var card = get_card_by_id(unit);
     showRunePicker(card);
-    doDrawDeck();
+    setCard(optionsDialog.index, unit);
 }
 
 var resetCard = function (optionsDialog) {
-    var index = optionsDialog.index;
+    setCard(optionsDialog.index, optionsDialog.originalUnit);
+}
+
+var setCard = function (index, unit) {
     if (index < 0) {
-        deck.commander = optionsDialog.originalUnit;
+        deck.commander = unit;
     } else {
-        deck.deck[index] = optionsDialog.originalUnit;
+        deck.deck[index] = unit;
     }
-    doDrawDeck();
+    var htmlCard = CARD_GUI.create_card_html(get_card_by_id(unit), false, false);
+    addEventHandlers($(htmlCard));
+    $deck.find(".card").eq(index + 1).replaceWith(htmlCard);
 }
 
 var filterSet = function (button, set) {
@@ -1493,17 +1559,12 @@ var isInRange = function (unit, field, min, max) {
 }
 
 var toggleSkillDetails = function () {
-    //doDrawCardList(unitsShown);
     applyFilters(true);
 }
 
 var toggleUpgrades = function (checkbox) {
     showUpgrades = checkbox.checked;
-    /*
-    CARD_GUI.clearCardSpace();
-
     $("body").addClass("loading");
-    */
     setTimeout(function () {
         drawCardList();
         $("body").removeClass("loading");

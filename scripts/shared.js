@@ -25,6 +25,46 @@ var curry = function (uncurried) {
     };
 };
 
+
+/* Inspired by https://davidwalsh.name/javascript-debounce-function */
+Function.prototype.debounce = function (wait) {
+    var func = this;
+    var timeout;
+    return function () {
+        var context = this, args = arguments;
+        var later = function () {
+            timeout = null;
+            func.apply(context, args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+};
+Function.prototype.throttle = (function () {
+
+    var _emptyFunc = function () { };
+
+    return function (wait) {
+        var func = this;
+        var timeout;
+        var fired = false;
+        return function () {
+            var context = this, args = arguments;
+            if (timeout) {
+                fired = false;
+            } else {
+                func.apply(context, args);
+                fired = true;
+                var later = function () {
+                    timeout = null;
+                    func.apply(context, args);
+                };
+                timeout = setTimeout(later, 250);
+            }
+        };
+    };
+}());
+
 // GET variables
 function _GET(variable) {
     var query = window.location.search.substring(1);
@@ -1410,25 +1450,6 @@ function areEqual(unitInfo1, unitInfo2) {
 
 //Returns deck array built from hash
 function hash_decode(hash) {
-    if (_DEFINED("legacy_hash")) {
-        return hash_decode_old(hash);
-    } else if (hash.indexOf(runeDelimiter) > 0) {
-        return hash_decode_old(hash);
-    } else if (hash.indexOf(priorityDelimiter) > 0) {
-        return hash_decode_old(hash);
-    } else if ((hash.length % 5 != 0) && (hash.indexOf(indexDelimiter) < 0)) {
-        for (var i = 0; i < multiplierChars.length; i++) {
-            if (hash.indexOf(multiplierChars[i]) > 0) {
-                return hash_decode_new(hash);
-            }
-        }
-        return hash_decode_old(hash);
-    } else {
-        return hash_decode_new(hash);
-    }
-}
-
-function hash_decode_new(hash) {
 
     var current_deck = { deck: [] };
     var unitInfo;
@@ -1470,82 +1491,6 @@ function hash_decode_new(hash) {
                 unitidx++;
             }
             i -= (entryLength - 2); // Offset i so that the += unitLength in the loop sets it to the correct next index
-        }
-    }
-
-    // Default commander to Elaria Captain if none found
-    if (!current_deck.commander) {
-        current_deck.commander = elariaCaptain;
-    }
-
-    return current_deck;
-}
-
-function hash_decode_old(hash) {
-
-    var current_deck = { deck: [] };
-    var unitInfo;
-    var priorities;
-    var runes;
-    var indexes;
-    if (hash.indexOf(runeDelimiter) > 0) {
-        runes = [];
-        var runesHash = hash.substr(hash.indexOf(runeDelimiter) + 1);
-        for (var i = 0, len = runesHash.length; i < len; i += 2) {
-            runes.push(base64_to_runeID(runesHash.substring(i, i + 2)));
-        }
-        hash = hash.substr(0, hash.indexOf(runeDelimiter));
-    }
-    if (hash.indexOf(indexDelimiter) > 0) {
-        // Ignore priorities for now
-        indexes = hash.substr(hash.indexOf(indexDelimiter) + 1).match(/.{1,2}/g);
-        hash = hash.substr(0, hash.indexOf(indexDelimiter));
-    }
-    if (hash.indexOf(priorityDelimiter) > 0) {
-        priorities = hash.substr(hash.indexOf(priorityDelimiter) + 1);
-        hash = hash.substr(0, hash.indexOf(priorityDelimiter));
-    }
-    var unitidx = 0;
-    for (var i = 0; i < hash.length; i += 3) {
-        if (multiplierChars.indexOf(hash[i]) == -1) {
-            // Make sure we have valid characters
-            unitInfo = base64triplet_to_unitInfo(hash.substr(i, 3));
-            if (priorities) unitInfo.priority = priorities[unitidx];
-            if (unitidx > 0 && indexes) unitInfo.index = base64ToNumber(indexes[unitidx - 1]); // Skip commander
-
-            if (unitInfo) {
-                if (loadCard(unitInfo.id)) {
-                    // Repeat previous card multiple times
-                    if (!current_deck.commander && is_commander(unitInfo.id)) {
-                        current_deck.commander = unitInfo;
-                        unitidx++;
-                        // Add to deck
-                    } else {
-                        current_deck.deck.push(unitInfo);
-                        unitidx++;
-                    }
-                }
-            }
-        } else {
-            var multiplier = decode_multiplier(hash.substr(i, 2)) + 1;
-            for (var n = 0; n < multiplier; n++) {
-                var duplicate = makeUnitInfo(unitInfo.id, unitInfo.level);
-                if (indexes) {
-                    duplicate.index = base64ToNumber(indexes[unitidx - 1]); // Skip commander
-                }
-                current_deck.deck.push(duplicate);
-                unitidx++;
-            }
-            i -= 1; // Offset i so that the += 3 in the loop sets it to the correct next index
-        }
-    }
-
-    if (runes) {
-        for (var i = 0, len = runes.length; i < len; i++) {
-            var runeID = runes[i];
-            if (runeID) {
-                current_deck.deck[i].runes = [{ id: runeID }];
-            }
         }
     }
 

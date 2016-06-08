@@ -737,11 +737,19 @@ function load_deck_builder(player) {
 
 function open_mission_deck_builder() {
     var mission = TITANS[document.getElementById("mission").value];
+    if (!mission) {
+        var raidID = document.getElementById("raid").value;
+        var raidlevel = document.getElementById("raid_level").value;
+        mission = {
+            name: RAIDS[raidID].name,
+            hash: hash_encode(load_deck_raid(raidID, raidlevel))
+        }
+    }
     if (mission) {
         var missionDeck = hash_decode(mission.hash);
 
         document.getElementById("deck_label").innerHTML = mission.name;
-        document.getElementById("deck_display").innerHTML = CARD_GUI.makeDeckHTML(missionDeck).outerHTML;
+        $("#deck_display").children().remove().end().append(CARD_GUI.makeDeckHTML(missionDeck));
         document.getElementById("deck_hash").value = mission.hash;
 
         deckPopupDialog.dialog("open");

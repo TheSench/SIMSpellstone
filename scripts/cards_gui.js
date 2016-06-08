@@ -14,62 +14,25 @@ var CARD_GUI = {};
     }
 
     function draw_deck(deck) {
-        var $cardSpace = $("#deck");
-        $cardSpace.html(makeDeckHTML(deck));
-        return $cardSpace;
+        var $deck = $("#deck");
+        $deck.children().remove();
+        $deck.append(makeDeckHTML(deck));
+        return $deck;
     }
 
     function makeDeckHTML(deck) {
-        var deckHTML = createDiv("float-left");
-
+        var cards = [];
         var commander = get_card_by_id(deck.commander);
-        var htmlCard = create_card_html(commander, false, false);
-        if (deck.commander.index !== undefined) {
-            htmlCard.setAttribute("data-index", deck.commander.index);
-        }
-        deckHTML.appendChild(htmlCard);
+        cards.push(create_card_html(commander, false, false));
         for (var i = 0, len = deck.deck.length; i < len; i++) {
             var deckEntry = deck.deck[i];
             var unit = get_card_by_id(deckEntry);
-            var htmlCard = create_card_html(unit, false, false);
-            if (deckEntry.index !== undefined) {
-                htmlCard.setAttribute("data-index", deckEntry.index);
-            }
-            deckHTML.appendChild(htmlCard);
+            cards.push(create_card_html(unit, false, false));
         }
         for (; i < 15; i++) {
-            var htmlCard = createDiv("card blank");
-            deckHTML.appendChild(htmlCard);
+            cards.push(createDiv("card blank"));
         }
-
-        var dhtml = $(deckHTML).sortable({
-            items: '.card:not(.commander):not(.blank)',
-            tolerance: "intersect",
-            helper: function(event, ui) {
-                return ui.clone();
-            },
-            start: function (event, ui) {
-                var lastPos = ui.placeholder.index() - 1;
-                ui.item.data('last_pos', lastPos);
-                $(ui.item).hide();
-            },
-            change: function (event, ui) {
-                var origPos = ui.item.index();
-                var lastPos = ui.item.data('last_pos') - 1;
-                var newPos = ui.placeholder.index();
-                if (origPos < newPos) newPos--;
-                highlighted = newPos;
-                ui.item.data('last_pos', newPos);
-                newPos--;
-
-                var array = deck.deck;
-                array[newPos] = array.splice(lastPos, 1, array[newPos])[0];
-                updateHash();
-                updateHighlights();
-            }
-        });
-
-        return deckHTML;
+        return cards;
     }
 
     function makeCardListHTML(deck, onclick, onrightclick) {
@@ -88,11 +51,11 @@ var CARD_GUI = {};
 
     function draw_card_list(list, compactSkills, onclick, onrightclick, skip, end) {
         skip = skip || 0;
-        var cards = createDiv("float-left");
         var htmlCard;
         var lastUnit;
         var multiplier;
         var uniqueCard = 0;
+        var cards = [];
         for (var i = 0, len = list.length; i < len && (!end || uniqueCard < end) ; i++) {
             var listEntry = list[i];
             var unit = get_card_by_id(listEntry);
@@ -102,6 +65,7 @@ var CARD_GUI = {};
                 if ((uniqueCard >= skip)) {
                     if (multiplier > 1) {
                         var multDiv = createDiv("multiplier", "x" + multiplier);
+                        multDiv.setAttribute("data-count", multiplier);
                         var multIcon = createImg(getAssetPath("cardAssets") + "multiplier.png", "multiplier");
                         htmlCard.appendChild(multIcon);
                         htmlCard.appendChild(multDiv);
@@ -111,7 +75,7 @@ var CARD_GUI = {};
                     if (listEntry.index !== undefined) {
                         htmlCard.setAttribute("data-index", listEntry.index);
                     }
-                    cards.appendChild(htmlCard);
+                    cards.push(htmlCard);
                 }
                 lastUnit = unit;
                 uniqueCard++;
@@ -119,35 +83,32 @@ var CARD_GUI = {};
         }
         if (multiplier > 1) {
             var multDiv = createDiv("multiplier", "x" + multiplier);
+            multDiv.setAttribute("data-count", multiplier);
             var multIcon = createImg(getAssetPath("cardAssets") + "multiplier.png", "multiplier");
             htmlCard.appendChild(multIcon);
             htmlCard.appendChild(multDiv);
         }
-        var cardSpace = document.getElementById("cardSpace");
-        $(cardSpace).html(cards);
+        var $cardSpace = $("#cardSpace");
+        $cardSpace.children().remove();
+        $cardSpace.append(cards);
     }
 
     function draw_cards(field, drawableHand, callback, turn) {
         if (!drawableHand) drawableHand = [];
-        var cardSpace = document.getElementById("cardSpace");
-        cardSpace.innerHTML = '';
+        var newChildren = [];
         if (turn) {
             var htmlTurnCounter = document.createElement("h1");
             htmlTurnCounter.innerHTML = "Turn: " + turn
-            cardSpace.appendChild(htmlTurnCounter);
+            newChildren.push(htmlTurnCounter);
         }
-        draw_fields(field);
-        cardSpace.appendChild(draw_hand(drawableHand, callback, turn));
-        cardSpace.appendChild(document.createElement('br'));
-        cardSpace.appendChild(document.createElement('br'));
-    }
 
-    function draw_fields(field) {
-        var cardSpace = document.getElementById("cardSpace");
-        var divField = createDiv("field");
-        divField.appendChild(draw_field(field.cpu));
-        divField.appendChild(draw_field(field.player));
-        cardSpace.appendChild(divField);
+        newChildren.push(draw_field(field.cpu));
+        newChildren.push(draw_field(field.player));
+        newChildren.push(draw_hand(drawableHand, callback, turn));
+        newChildren.push(document.createElement('br'));
+        newChildren.push(document.createElement('br'));
+
+        $("#cardSpace").children().remove().end().append(newChildren);
     }
 
     function draw_field(field) {
@@ -577,6 +538,7 @@ var CARD_GUI = {};
     CARD_GUI.clearCardSpace = clearCardSpace;
     CARD_GUI.clearDeckSpace = clearDeckSpace;
     CARD_GUI.draw_deck = draw_deck;
+    CARD_GUI.create_card_html = create_card_html;
     CARD_GUI.makeDeckHTML = makeDeckHTML;
     CARD_GUI.makeCardListHTML = makeCardListHTML;
     CARD_GUI.draw_card_list = draw_card_list;
