@@ -91,14 +91,6 @@ if(function(type) {
         storageAPI.onUpdate();
     };
 
-    storageAPI.getSavedDecks = function (name) {
-        var names = [];
-        for (var key in storageAPI.savedDecks) {
-            names.push(key);
-        }
-        return names;
-    };
-
     storageAPI.initialize();
 }());
 

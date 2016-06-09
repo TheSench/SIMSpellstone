@@ -1720,6 +1720,16 @@ function setDeckName(name) {
 
 
 function saveDeck() {
+    var hash = $("#hash").val();
+    $("#saveDeckName").val("");
+    var savedDecks = storageAPI.savedDecks;
+    for (var name in savedDecks) {
+        var existing = savedDecks[name];
+        if (hash == existing) {
+            $("#saveDeckName").val(name);
+            break;
+        }
+    }
     saveDeckDialog.dialog("open");
     saveDeckDialog.dialog("option", "position", { my: "center", at: "center", of: window });
 }
