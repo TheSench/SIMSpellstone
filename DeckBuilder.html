@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="deckStorageApp">
 <head profile="http://www.w3.org/2005/10/profile">
     <meta charset="UTF-8">
     <title id="title_tag">DeckBuilder</title>
@@ -30,6 +30,7 @@
     <script id="common_variables" type="text/javascript" src="scripts/common.js"></script>
     <script id="gui_script" type="text/javascript" src="scripts/cards_gui.js"></script>
     <script id="deckbuilder" type="text/javascript" src="scripts/deckbuilder.js"></script>
+    <script id="deckstorage" type="text/javascript" src="scripts/localstorage.js"></script>
     <script id="spoilers" type="text/javascript" src="scripts/data/spoilers.js"></script>
 
 </head>
@@ -49,6 +50,8 @@
                 <br />
                 <input id="resetDeck" type="button" value="Reset" onclick="hash_changed('oZ0IB')" />
                 <input id="sortDeck" type="button" value="Sort" onclick="sortDeck()" />
+                <input id="saveDeck" type="button" value="Save" onclick="saveDeck()" />
+                <input id="loadDeck" type="button" value="Load" onclick="loadDeck()" />
             </div>
         </div>
         <div class="accordion start-closed" style="display:none;">
@@ -188,7 +191,7 @@
                 <div style="white-space:nowrap; margin: 5px 0px;">
 
                     <div class="ui-widget">
-                        <label for="nameFilter"><strong>Name Filter:</strong></label><br/>
+                        <label for="nameFilter"><strong>Name Filter:</strong></label><br />
                         <input id="nameFilter" type="text" value="" size="100" onkeyup="filterName(this);">
                     </div>
                 </div>
@@ -350,6 +353,18 @@
                 </div>
             </fieldset>
         </form>
+    </div>
+
+    <div id="saveDeckDialog" title="Save Deck">
+        <label for="saveDeckName"><strong>Name:</strong></label><br />
+        <input id="saveDeckName" type="text" value="" style="width:95%;" />
+    </div>
+
+    <div id="loadDeckDialog" title="Load Deck" ng-controller="DeckStorageCtrl">
+        <label for="loadDeckName"><strong>Deck:</strong></label><br />
+        <select name="loadDeckName" id="loadDeckName" class="ui-widget-content ui-corner-all" style="width:100%;">
+            <option ng-repeat="(key, value) in savedDecks" value="{{key}}">{{key}}</option>
+        </select>
     </div>
 
     <div class="modal"><span>Loading...</span></div>

@@ -39,6 +39,8 @@ var unitsShown = [];
 var unitsFiltered = [];
 var advancedFilters;
 var optionsDialog;
+var saveDeckDialog;
+var loadDeckDialog;
 var form;
 
 var $nameFilter;
@@ -177,6 +179,48 @@ var setupPopups = function () {
         var new_html = '<div style="display:inline; position:relative; overflow:visible;">' + orig_html + toolTip + '</div>';
         imageButton.outerHTML = new_html;
     }
+    
+    saveDeckDialog = $("#saveDeckDialog").dialog({
+        autoOpen: false,
+        /*
+        width: 250,
+        minHeight: 20,
+        */
+        modal: true,
+        resizable: false,
+        buttons: {
+            OK: function () {
+                var name = $("#saveDeckName").val();
+                var hash = $("#hash").val();
+                storageAPI.saveDeck(name, hash);
+                saveDeckDialog.dialog("close");
+            },
+            Cancel: function () {
+                saveDeckDialog.dialog("close");
+            }
+        },
+    });
+
+    loadDeckDialog = $("#loadDeckDialog").dialog({
+        autoOpen: false,
+        /*
+        width: 250,
+        minHeight: 20,
+        */
+        modal: true,
+        resizable: false,
+        buttons: {
+            OK: function () {
+                var deckName = $("#loadDeckName").val();
+                var newDeck = storageAPI.loadDeck(deckName);
+                hash_changed(newDeck);
+                loadDeckDialog.dialog("close");
+            },
+            Cancel: function () {
+                loadDeckDialog.dialog("close");
+            }
+        },
+    });
 }
 
 var drawAllCards = function () {
@@ -1672,4 +1716,16 @@ var skillStyle = document.createElement('style');
 function setDeckName(name) {
     var lbl = document.getElementById("version_label");
     lbl.innerHTML += " " + name;
+}
+
+
+function saveDeck() {
+    saveDeckDialog.dialog("open");
+    saveDeckDialog.dialog("option", "position", { my: "center", at: "center", of: window });
+}
+
+function loadDeck() {
+    var decks = storageAPI.getSavedDecks;
+    loadDeckDialog.dialog("open");
+    loadDeckDialog.dialog("option", "position", { my: "center", at: "center", of: window });
 }
