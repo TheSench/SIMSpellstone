@@ -189,7 +189,7 @@ var setupPopups = function () {
         modal: true,
         resizable: false,
         buttons: {
-            OK: function () {
+            Save: function () {
                 var name = $("#saveDeckName").val();
                 var hash = $("#hash").val();
                 storageAPI.saveDeck(name, hash);
@@ -210,7 +210,7 @@ var setupPopups = function () {
         modal: true,
         resizable: false,
         buttons: {
-            OK: function () {
+            Load: function () {
                 var deckName = $("#loadDeckName").val();
                 var newDeck = storageAPI.loadDeck(deckName);
                 hash_changed(newDeck);
