@@ -158,6 +158,7 @@ var setupPopups = function () {
             OK: function () {
                 disableTracking = false;
                 modifyCard(optionsDialog);
+                updateHash();
                 optionsDialog.dialog("close");
                 disableTracking = false;
             },
@@ -1420,10 +1421,14 @@ var modifyCard = function (optionsDialog) {
     var card = get_card_by_id(unit);
     showRunePicker(card);
     setCard(optionsDialog.index, unit);
+    var deckHash = hash_encode(deck);
+    document.getElementById("hash").value = deckHash;
 }
 
 var resetCard = function (optionsDialog) {
     setCard(optionsDialog.index, optionsDialog.originalUnit);
+    var deckHash = hash_encode(deck);
+    document.getElementById("hash").value = deckHash;
 }
 
 var setCard = function (index, unit) {
