@@ -1764,7 +1764,7 @@ function saveDeck() {
 
 function loadDeck() {
     var decks = storageAPI.getSavedDecks;
-    $('label[for="loadDeckName"]').text('<strong>Deck:</strong>');
+    $('label[for="loadDeckName"]').html('<strong>Deck:</strong>');
     loadDeckDialog.dialog("open");
     loadDeckDialog.dialog("option", "position", { my: "center", at: "center", of: window });
 
@@ -1773,7 +1773,7 @@ function loadDeck() {
 
 function loadInventory() {
     var decks = storageAPI.getSavedDecks;
-    $('label[for="loadDeckName"]').text('<strong>Inventory:</strong>');
+    $('label[for="loadDeckName"]').html('<strong>Inventory:</strong>');
     loadDeckDialog.dialog("open");
     loadDeckDialog.dialog("option", "position", { my: "center", at: "center", of: window });
 
