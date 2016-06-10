@@ -958,6 +958,15 @@ var SIMULATOR = {};
         } else {
             shuffle(deck.cpu.deck);
         }
+        
+    
+        if (getordered) {
+            deck.player.ordered = getDeckCards(deck.player).deck;
+        }
+        if (getordered2) {
+            deck.cpu.ordered = getDeckCards(deck.cpu).deck;
+        }
+
 
         setupField(field);
 
@@ -1162,7 +1171,8 @@ var SIMULATOR = {};
         var deck_p = deck[p];
         var deck_p_deck = deck_p.deck;
         var deck_p_ordered = deck_p['ordered'];
-
+        var isOrdered = (p == 'player' ? getordered : getordered2);
+        
         // Deck not empty yet
         if (deck_p_deck[0]) {
 
@@ -1174,7 +1184,7 @@ var SIMULATOR = {};
                 play_card(deck_p_deck[card_picked], p);
             } else if (user_controlled && p == 'player') {
                 card_picked = chooseCardUserManually(p, deck_p_deck, deck_p_ordered, turn, redraw);
-            } else if (deck_p_ordered) {
+            } else if (isOrdered) {
                 card_picked = chooseCardOrdered(p, deck_p_deck, deck_p_ordered, turn, redraw);
             } else {
                 // Play random card in hand
@@ -1245,7 +1255,7 @@ var SIMULATOR = {};
                 var b_priority = cardInHand.priority;
 
                 // If this is the exact card at this spot
-                if (desiredCard == cardInHand) {
+                if (areEqual(desiredCard, cardInHand)) {
                     played = true;
                     break;
                 }
