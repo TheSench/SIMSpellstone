@@ -83,8 +83,7 @@ $(function () {
     }
 
     if (_DEFINED('siege')) {
-        var d = document.getElementById('siege');
-        d.checked = true;
+        $('#siege').click();
     }
 
     if (_GET('tower_level')) {

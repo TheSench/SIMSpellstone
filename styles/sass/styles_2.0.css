@@ -95,6 +95,7 @@ body {
   border: 1px solid #311709;
 }
 
+input[disabled],
 select[disabled] {
   color: #3b96c4;
   background-color: #c6e0ee;

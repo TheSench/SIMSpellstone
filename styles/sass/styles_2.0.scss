@@ -222,6 +222,7 @@ body {
     }
 }
 
+input[disabled],
 select[disabled] {
     //background-color: rgb(235, 235, 228);
     color: $secondary-color;

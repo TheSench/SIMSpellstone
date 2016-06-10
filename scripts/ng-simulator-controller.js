@@ -59,6 +59,7 @@
         $scope.missions = $window.TITANS;
         $scope.raids = $window.RAIDS;
         $scope.battlegrounds = $window.BATTLEGROUNDS;
+        $scope.tower = false;
 
         $scope.debugMode = false;
 
