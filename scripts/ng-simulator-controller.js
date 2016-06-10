@@ -112,7 +112,18 @@
         };
 
         $scope.getCampaignClass = function (campaign) {
-            if (campaign.side_mission) {
+            if (!campaign) {
+                var selected = $scope.selections.campaign;
+                for (var i = 0, len = $scope.campaigns.length; i < len; i++) {
+                    var campaign_i = $scope.campaigns[i];
+                    if (campaign_i.id == selected) {
+                        campaign = campaign_i;
+                    }
+                }
+            }
+            if(!campaign) {
+                return "grey";
+            } else if (campaign.side_mission) {
                 return (campaign.location_id == 0 ? "heroUpgrade" : "mythic");
             } else if (campaign.isLocation) {
                 return "location";
