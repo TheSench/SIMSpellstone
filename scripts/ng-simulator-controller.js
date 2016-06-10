@@ -6,7 +6,8 @@
         var campaign = { missions: [] };
         campaigns = campaigns || [];
         for (var i = 0; i < campaigns.length; i++) {
-            if (campaigns[i].id == campaignID) {
+            var campaign_i = campaigns[i];
+            if (!campaign_i.isLocation && campaign_i.id == campaignID) {
                 campaign = campaigns[i];
                 break;
             }
