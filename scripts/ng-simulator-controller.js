@@ -52,8 +52,8 @@
         });
 
     angular.module('simulatorApp', ['core'])
-        .controller('SimulatorCtrl', ['$scope', '$window', SimulatorCtrl]);
-
+        .controller('SimulatorCtrl', ['$scope', '$window', SimulatorCtrl])
+        .controller('DeckStorageCtrl', ['$scope', '$window', DeckStorageCtrl]);
     function SimulatorCtrl($scope, $window) {
         $scope.campaigns = [];
         $scope.missions = $window.TITANS;
@@ -172,4 +172,5 @@
         $scope.$watch("debugMode", function (newValue, oldValue) {
         });
     }
+    
 }(angular));

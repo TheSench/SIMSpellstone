@@ -1,5 +1,7 @@
 ﻿'use strict';
 
+var loadDeckDialog;
+
 $(function () {
     $("#deck").change(function () {
         deckChanged("attack_deck", hash_decode(this.value));
@@ -47,8 +49,44 @@ $(function () {
     });
 
 
+    loadDeckDialog = $("#loadDeckDialog").dialog({
+        autoOpen: false,
+        /*
+        width: 250,
+        minHeight: 20,
+        */
+        modal: true,
+        resizable: false,
+        buttons: {
+            Load: function () {
+                var name = $("#loadDeckName").val();
+                var newHash = storageAPI.loadDeck(name);
+                onDeckLoaded(newHash, loadDeckDialog.hashField);
+                loadDeckDialog.dialog("close");
+            },
+            Cancel: function () {
+                loadDeckDialog.dialog("close");
+            }
+        },
+    });
+
     deckChanged("attack_deck", hash_decode(''));
     deckChanged("defend_deck", hash_decode(''));
 
+    // Disable this as we now draw the full deck
     debug_dump_decks = function () { };
 });
+
+
+function loadDeck(hashField) {
+    var decks = storageAPI.getSavedDecks;
+    $('label[for="loadDeckName"]').html('<strong>Deck:</strong>');
+    loadDeckDialog.dialog("open");
+    loadDeckDialog.dialog("option", "position", { my: "center", at: "center", of: window });
+
+    loadDeckDialog.hashField = hashField;
+}
+
+function onDeckLoaded(newHash, hashField) {
+    $(hashField).val(newHash).change();
+}

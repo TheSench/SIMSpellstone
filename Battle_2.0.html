@@ -13,6 +13,7 @@
     <script src="lib/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 
     <script src="lib/angular.min.js"></script>
+    <script id="deckstorage" type="text/javascript" src="scripts/localstorage.js"></script>
     <script type="text/javascript" src="scripts/ng-simulator-controller.js"></script>
 
     <!-- This script contains the cached data for cards, missions, quests, raids,
@@ -67,6 +68,7 @@
                     <h2>Attacker</h2>
                     <div>
                         <div id="attack_deck" class="float-left"></div>
+                        <input type="button" onclick="loadDeck('#deck');" value="Load" />
                         <input type="button" onclick="load_deck_builder('player');" value="Edit" />
                         <div class="accordion">
                             <h6>Advanced Settings</h6>
@@ -85,6 +87,7 @@
                     <h2>Defender</h2>
                     <div>
                         <div id="defend_deck" class="float-left"></div>
+                        <input type="button" onclick="loadDeck('#deck2');" value="Load" />
                         <input type="button" onclick="load_deck_builder('cpu');" value="Edit" />
                         <div class="accordion">
                             <h6>PvE Decks</h6>
@@ -162,5 +165,12 @@
     <div id="cardSpace" class="flaot-left"></div>
     <br />
     <span id="stop" style="display: none;"><input type="button" value="Stop Sim(s)" onclick="SIM_CONTROLLER.stopsim()"><br />TIP: Switching browser tabs may cause your simulation to pause!</span>
+
+    <div id="loadDeckDialog" title="Load Deck" ng-controller="DeckStorageCtrl">
+        <label for="loadDeckName"><strong>Deck:</strong></label><br />
+        <select name="loadDeckName" id="loadDeckName" class="ui-widget-content ui-corner-all" style="width:100%;">
+            <option ng-repeat="key in keys(savedDecks) | orderBy:'toString()'" value="{{key}}">{{key}}</option>
+        </select>
+    </div>
 </body>
 </html>

@@ -1,18 +1,18 @@
 ﻿var storageAPI = {};
 
+function DeckStorageCtrl($scope, $window) {
+    $scope.savedDecks = $window.storageAPI.savedDecks;
+
+    $scope.keys = function (obj) {
+        return (obj ? Object.keys(obj) : []);
+    };
+}
+
 (function (angular) {
     'use strict';
 
     angular.module('deckStorageApp', [])
         .controller('DeckStorageCtrl', ['$scope', '$window', DeckStorageCtrl]);
-
-    function DeckStorageCtrl($scope, $window) {
-        $scope.savedDecks = $window.storageAPI.savedDecks;
-
-        $scope.keys = function (obj) {
-            return (obj ? Object.keys(obj) : []);
-        };
-    }
 
 }(angular));
 

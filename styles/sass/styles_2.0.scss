@@ -126,6 +126,7 @@ $secondary-white-white: harmonious-mix($secondary-white, white);
 $secondary-black: harmonious-mix($secondary-color, black);
 $secondary-tint: harmonious-mix($secondary-color, $secondary-white);
 
+.ui-dialog-titlebar,
 .primary-color {
     background-color: $primary-color;
 }
@@ -336,6 +337,7 @@ input[type=button] {
 .ui-icon-triangle-1-s {
     background-position: -64px -16px;
 }
+.ui-icon-closethick { background-position: -96px -128px; }
 
 h2 .ui-icon {
     -moz-transform: scale(1.5);
@@ -365,4 +367,41 @@ h2 .ui-icon {
         color: #0000ff;
         font-weight: bold;
     }
+}
+.ui-dialog .ui-dialog-titlebar {
+	padding: .4em 1em;
+	position: relative;
+}
+.ui-widget-header {
+	border: 1px solid $primary-neutral;
+	background: $primary-neutral url("images/ui-bg_highlight-soft_75_cccccc_1x100.png") 50% 50% repeat-x;
+	color: #222222;
+	font-weight: bold;
+}
+.ui-widget-content {
+	border: 1px solid $primary-neutral;
+	background: #ffffff url("images/ui-bg_flat_75_ffffff_40x100.png") 50% 50% repeat-x;
+	color: #222222;
+}
+.ui-dialog .ui-dialog-titlebar-close {
+	position: absolute;
+	right: .3em;
+	top: 50%;
+	width: 20px;
+	margin: -10px 0 0 0;
+	padding: 1px;
+	height: 20px;
+}
+.ui-button-icon-only .ui-icon {
+	position: absolute;
+	top: 50%;
+	margin-top: -8px;
+	left: 50%;
+	margin-left: -8px;
+}
+.ui-button-icon-only .ui-button-text,
+.ui-button-icons-only .ui-button-text {
+    display: block;
+	padding: .4em;
+	text-indent: -9999999px;
 }
