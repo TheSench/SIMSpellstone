@@ -6,6 +6,8 @@ var fromInventory = false;
 var deck = [];
 deck.commander = elariaCaptain;
 deck.deck = [];
+var inventory;
+var inventoryMode = _DEFINED("unlimited");
 
 // Filters
 var attackHidden = {};
@@ -114,7 +116,7 @@ var adjustHeight = function () {
 }
 
 var setupPopups = function () {
-    
+
     stopPropagation("advancedFilters");
     stopPropagation("unitOptions");
 
@@ -122,7 +124,7 @@ var setupPopups = function () {
         collapsible: true,
         heightStyle: "content",
     });
-    
+
     $(".start-closed").accordion('option', 'active', false).show();
 
     var inputs = document.getElementsByTagName("input");
@@ -179,7 +181,7 @@ var setupPopups = function () {
         var new_html = '<div style="display:inline; position:relative; overflow:visible;">' + orig_html + toolTip + '</div>';
         imageButton.outerHTML = new_html;
     }
-    
+
     saveDeckDialog = $("#saveDeckDialog").dialog({
         autoOpen: false,
         /*
@@ -211,9 +213,9 @@ var setupPopups = function () {
         resizable: false,
         buttons: {
             Load: function () {
-                var deckName = $("#loadDeckName").val();
-                var newDeck = storageAPI.loadDeck(deckName);
-                hash_changed(newDeck);
+                var name = $("#loadDeckName").val();
+                var newHash = storageAPI.loadDeck(name);
+                loadDeckDialog.onloaded(newHash);
                 loadDeckDialog.dialog("close");
             },
             Cancel: function () {
@@ -224,15 +226,16 @@ var setupPopups = function () {
 }
 
 var drawAllCards = function () {
-    drawDeck();
+    var inventory = _GET('inventory');
     drawCardList();
+    drawDeck();
 }
 
 var drawDeck = function () {
 
     var hash = _GET('hash');
     if (hash) {
-        deck = hash_decode(hash);
+        hash_changed(hash);
     }
 
     var name = _GET('name');
@@ -267,7 +270,7 @@ function duplicate(event) {
         }
         emptySpaces.first().remove();
         var index = $this.index();
-        var unit = deck.deck[index-1];
+        var unit = deck.deck[index - 1];
         var clone = $this.clone();
         addEventHandlers(clone);
         clone.insertBefore($this.parent().children()[index]);
@@ -286,7 +289,6 @@ var drawCardList = function () {
 
     units = [];
     unitsShown = [];
-    var inventory = _GET('inventory');
     if (inventory) {
         fromInventory = true;
         inventory = hash_decode(inventory);
@@ -366,7 +368,7 @@ function doDrawCardList(cardList, resetPage) {
         var card = cards[0];
         var $card = $(card);
         var minHeight = (card.offsetHeight + parseInt($card.css('marginTop')) + parseInt($card.css('marginBottom'))) * parseInt(rows);
-        $cardSpace.css('min-height', minHeight +'px');
+        $cardSpace.css('min-height', minHeight + 'px');
     }
 }
 
@@ -537,7 +539,7 @@ var addUnitToDeck = function (unit, htmlCard) {
         deck.commander = unit;
         $deck.find(".card").first().replaceWith($htmlCard);
     } else {
-        if (deck.deck.length == 15 && !_DEFINED("unlimited")) return;
+        if (deck.deck.length == 15 && !inventoryMode) return;
         deck.deck.push(unit);
         var emptySpaces = $deck.find(".blank");
         if (emptySpaces.length) {
@@ -600,7 +602,7 @@ var removeFromDeck = function (event) {
         unitsShown.push(unit);
         redrawCardList(true);
     }
-    
+
     updateHash();
 };
 
@@ -613,11 +615,11 @@ var highlighted = -1;
 function updateHighlights() {
     var hash_highlighted = document.getElementById("hash");
     var deckHash = hash_highlighted.value;
-    
+
     var start = highlighted * 5;
     var end = start + 5;
     var highlightedHash = deckHash.substring(0, start) + '<span>' + deckHash.substring(start, end) + '</span>' + deckHash.substring(end);
-    
+
     var hash_highlighter = document.getElementById('hash_highlighter');
     hash_highlighter.innerHTML = highlightedHash;
     $(hash_highlighter).width($(hash_highlighted).width())
@@ -669,7 +671,7 @@ var updateGraphs = function () {
     var avgAttack = average(attackStats);
     var avgHealth = average(healthStats);
     var avgDelay = average(delayStats);
-    
+
     var options = {
         width: 300,
         height: 200,
@@ -712,12 +714,14 @@ var updateGraphs = function () {
     var data = { labels: ['0', '1', '2', '3', '4'], series: delays };
     new Chartist.Bar('#delayChart', data, options);
 
-    var data = { labels: ['Attack', 'Health', 'Delay'], series: [
-            { value: avgAttack, className: 'ct-series-attack' },
-            { value: avgHealth, className: 'ct-series-health' },
-            { value: avgDelay, className: 'ct-series-delay' }
-    ]};
-    new Chartist.Bar('#averagesChart', data, options).on('draw', function(data) {
+    var data = {
+        labels: ['Attack', 'Health', 'Delay'], series: [
+                { value: avgAttack, className: 'ct-series-attack' },
+                { value: avgHealth, className: 'ct-series-health' },
+                { value: avgDelay, className: 'ct-series-delay' }
+        ]
+    };
+    new Chartist.Bar('#averagesChart', data, options).on('draw', function (data) {
         var barHorizontalCenter, barVerticalCenter, label, value;
         if (data.type === "bar") {
             barHorizontalCenter = data.x1 + (data.element.width() * .5);
@@ -1738,4 +1742,32 @@ function loadDeck() {
     var decks = storageAPI.getSavedDecks;
     loadDeckDialog.dialog("open");
     loadDeckDialog.dialog("option", "position", { my: "center", at: "center", of: window });
+
+    loadDeckDialog.onloaded = hash_changed;
+}
+
+function loadInventory() {
+    var decks = storageAPI.getSavedDecks;
+    loadDeckDialog.dialog("open");
+    loadDeckDialog.dialog("option", "position", { my: "center", at: "center", of: window });
+
+    loadDeckDialog.onloaded = setInventory;
+}
+
+function setInventory(hash) {
+    inventory = hash;
+    drawCardList();
+}
+
+function toggleInventoryMode() {
+    inventoryMode = !inventoryMode;
+    if (inventoryMode) {
+        $("#inventoryMode").val("Switch to Deck Builder");
+        $deck.find(".card.blank").remove();
+    } else {
+        $("#inventoryMode").val("Switch to Inventory Builder");
+        for (var i = $deck.find(".card").length; i < 16; i++) {
+            $deck.append("<div class='card blank'></div>");
+        }
+    }
 }

@@ -52,6 +52,7 @@
                 <input id="sortDeck" type="button" value="Sort" onclick="sortDeck()" />
                 <input id="saveDeck" type="button" value="Save" onclick="saveDeck()" />
                 <input id="loadDeck" type="button" value="Load" onclick="loadDeck()" />
+                <input id="inventoryMode" type="button" value="Switch to Inventory Builder" onclick="toggleInventoryMode()" />
             </div>
         </div>
         <div class="accordion start-closed" style="display:none;">
@@ -231,7 +232,7 @@
                                     <span>Compact Skills</span>
                                     <br />
 
-                                    <label class="button" onclick="showInitDialog();"><b>Set Inventory</b></label>
+                                    <label class="button" onclick="loadInventory();"><b>Set Inventory</b></label>
                                 </div>
                             </div>
                         </td>
