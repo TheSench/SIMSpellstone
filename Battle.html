@@ -65,7 +65,7 @@
             <div>&nbsp;</div><font color="#666"><strong>Card list example:</strong> Urs(5), Matriarch(5), Fire Devil(4), Smelted Skeleton(4)x2, Outrunner(4)x3</font><br>
             <br>
             <div><i>Campaign (7*):</i></div>
-            <select id="campaign" ng-model="selections.campaign" ng-class="{grey:!selections.campaign}" ng-disabled="selections.raid !== ''">
+            <select id="campaign" ng-model="selections.campaign" ng-class="{grey:selections.campaign !== ''}" ng-disabled="selections.raid !== ''">
                 <option default value="" class=" grey">
                     Select a Campaign...
                 </option>
@@ -90,7 +90,11 @@
             <div>Surge Mode:</div><input type="checkbox" id="surge"><br>
             <br>
             <div><i>Battleground:</i></div>
-            <div id="battleground" style="overflow: auto; width: 200px; height: 80px; border: 1px solid #336699; padding-left: 5px; text-align: left; "></div>
+            <div id="battleground" style="overflow: auto; width: 200px; height: 80px; border: 1px solid #336699; padding-left: 5px; text-align: left; ">
+                <input ng-repeat-start="BGE in selectableBattlegrounds()" type="checkbox" name="battleground" id="battleground_{{BGE.id}}" value="{{BGE.id}}">
+                <label for="battleground_{{BGE.id}}">{{BGE.name}}</label>
+                <br ng-repeat-end />
+            </div>
             <br>
             <br>
             <hr>

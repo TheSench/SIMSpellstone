@@ -47,39 +47,10 @@ window.onerror = function (message, url, linenumber) {
 }
 
 // When Page Loads...
-window.onload = function () {
+$(function () {
 
     var ui = document.getElementById('ui');
     if (!ui) return 0;
-    
-    // Check if battlegrounds are found
-    if (BATTLEGROUNDS) {
-        // Battleground drop down
-        var select = document.getElementById('battleground');
-        for (var key in BATTLEGROUNDS) {
-            var battleground = BATTLEGROUNDS[key];
-            if (battleground.hidden) continue;
-            var checkbox = document.createElement('input');
-            checkbox.type = "checkbox";
-            checkbox.name = "battleground";
-            checkbox.id = "battleground_" + battleground.id;
-            checkbox.value = battleground.id;
-            select.appendChild(checkbox);
-            select.appendChild(document.createTextNode(battleground.name));
-            select.appendChild(document.createElement('br'));
-        }
-    }
-    var select = document.getElementById('tower_type');
-    if (select) {
-        var towerTypes = ["Castle Tower", "Cannon Tower"];
-        for (var i = 0; i < towerTypes.length; i++) {
-            var towerType = towerTypes[i];
-            var option = document.createElement('option');
-            option.appendChild(document.createTextNode(towerType));
-            option.value = i;
-            select.appendChild(option);
-        }
-    }
 
     var button = document.getElementById("generate_link");
     if (button) button.onclick = display_generated_link;
@@ -90,40 +61,20 @@ window.onload = function () {
     var button = document.getElementById("display_history");
     if (button) button.onclick = display_history;
 
-    var chkDebug = document.getElementById("debug");
-    chkDebug.onclick = function (event) {
-        var enabled = event.srcElement.checked;
-        var radios = document.getElementsByName("debugMode");
-        for (var i = 0; i < radios.length; i++) {
-            var radio = radios[i];
-            radio.disabled = !enabled;
-        }
-    };
-    var radios = document.getElementsByName("debugMode");
-    for (var i = 0; i < radios.length; i++) {
-        var radio = radios[i];
-        radio.onclick = toggleRadio;
-        radio.disabled = !chkDebug.checked;
-    }
-
     if (_GET('deck1')) {
-        var d = document.getElementById('deck');
-        d.value = _GET('deck1');
+        $('#deck').val(_GET('deck1')).change();
     }
 
     if (_GET('deck2')) {
-        var d = document.getElementById('deck2');
-        d.value = _GET('deck2');
+        $('#deck2').val(_GET('deck2')).change();
     }
 
     if (_GET('list1')) {
-        var d = document.getElementById('cardlist');
-        d.value = _GET('list1');
+        $('#cardlist').val(_GET('list1')).change();
     }
 
     if (_GET('list2')) {
-        var d = document.getElementById('cardlist2');
-        d.value = _GET('list2');
+        $('#cardlist2').val(_GET('list2')).change();
     }
 
     if (_DEFINED('surge')) {
@@ -188,7 +139,10 @@ window.onload = function () {
     var raidID = _GET('raid');
 
     var uiScope = angular.element('#ui').scope();
-
+    if(campaignID) $('#campaign').val(campaignID).change();
+    if (missionID) $('#mission').val(missionID).change();
+    if (raidID) $('#raid').val(raidID).change();
+    /*
     var dropdown = document.getElementById('campaign');
     if (dropdown) {
         if (campaignID) {
@@ -216,7 +170,7 @@ window.onload = function () {
         }
     }
     uiScope.$apply();
-
+    */
     if (_DEFINED('battleground')) {
         var bgIndexes = _GET('battleground');
         var bgCheckBoxes = document.getElementsByName("battleground");
@@ -313,7 +267,7 @@ window.onload = function () {
             open: function (event, ui) { $(".ui-dialog-titlebar-close", ui.dialog | ui).hide(); }
         });
     }
-}
+});
 
 var style;
 var u_black = false;
@@ -347,11 +301,6 @@ function toggle_u() {
         style.appendChild(rules);
     }
     if (append === true) head.appendChild(style);
-}
-
-function selectionChanged() {
-    var isDefault = this.options[this.selectedIndex].attributes.default;
-    this.className = (isDefault ? "grey" : "black");
 }
 
 // Modify HTML to output simulation results
@@ -478,7 +427,8 @@ function gettable() {
         var current_deck = '';
         var deck = [];
         var deck1Hash = document.getElementById('deck').value;
-        var deck1List = document.getElementById('cardlist').value;
+        var deck1List = $('#cardlist').val();
+        if(deck1List) deck1List = deck1List.value;
 
         // Load player deck
         if (deck1Hash) {
@@ -518,10 +468,10 @@ function generate_link(autostart, autolink) {
     }
 
     var getdeck = document.getElementById('deck').value;
-    var getcardlist = document.getElementById('cardlist').value;
+    var getcardlist = $('#cardlist').val();
     if (document.getElementById('deck2')) {
         var getdeck2 = document.getElementById('deck2').value;
-        var getcardlist2 = document.getElementById('cardlist2').value;
+        var getcardlist2 = $('#cardlist2').val();
         var getcampaign = document.getElementById('campaign').value;
         var getmission = document.getElementById('mission').value;
         var getraid = document.getElementById('raid').value;
@@ -681,12 +631,12 @@ function generate_link(autostart, autolink) {
 }
 
 function load_deck_builder_for_field(fieldID) {
-    var field = document.getElementById(fieldID);
+    var field = $("#"+fieldID);
     var deck = {
         commander: elariaCaptain,
         deck: [],
     };
-    var hash = field.value;
+    var hash = field.val();
     if (!hash) {
         hash = hash_encode({
             commander: elariaCaptain,
@@ -698,17 +648,17 @@ function load_deck_builder_for_field(fieldID) {
 
 function load_deck_builder(player) {
     if (player == 'player') {
-        var getdeck = document.getElementById('deck').value;
-        var getcardlist = document.getElementById('cardlist').value;
+        var getdeck = $('#deck').val();
+        var getcardlist = $('#cardlist').val()
         var getmission;
         var getraid;
         var raidlevel;
     } else {
-        var getdeck = document.getElementById('deck2').value;
-        var getcardlist = document.getElementById('cardlist2').value;
-        var getmission = document.getElementById('mission').value;
-        var getraid = document.getElementById('raid').value;
-        var raidlevel = document.getElementById('raid_level').value;
+        var getdeck = $('#deck2').val();
+        var getcardlist = $('#cardlist2').val();
+        var getmission = $('#mission').val();
+        var getraid = $('#raid').val();
+        var raidlevel = $('#raid_level').val();
     }
 
     // Load player deck
@@ -731,26 +681,36 @@ function load_deck_builder(player) {
     }
 
     var name = (player == 'player' ? 'Player Deck' : 'Enemy Deck');
-    var deckHashField = (player ? document.getElementById(player == 'player' ? 'deck' : 'deck2') : null);
+    var deckHashField = (player ? $("#" + (player == 'player' ? 'deck' : 'deck2')) : null);
     open_deck_builder(name, hash, null, deckHashField);
 }
 
 function open_mission_deck_builder() {
-    var mission = TITANS[document.getElementById("mission").value];
+    var mission = TITANS[$("#mission").val()];
     if (!mission) {
-        var raidID = document.getElementById("raid").value;
-        var raidlevel = document.getElementById("raid_level").value;
-        mission = {
-            name: RAIDS[raidID].name,
-            hash: hash_encode(load_deck_raid(raidID, raidlevel))
+        var raidID = $("#raid").val();
+        if (raidID) {
+            var raidlevel = $("#raid_level").val();
+            mission = {
+                name: RAIDS[raidID].name,
+                hash: hash_encode(load_deck_raid(raidID, raidlevel))
+            }
         }
     }
     if (mission) {
         var missionDeck = hash_decode(mission.hash);
 
-        document.getElementById("deck_label").innerHTML = mission.name;
+        $("#deck_label").text(mission.name);
         $("#deck_display").children().remove().end().append(CARD_GUI.makeDeckHTML(missionDeck));
-        document.getElementById("deck_hash").value = mission.hash;
+        $("#deck_hash").val(mission.hash);
+        $("#hash_container").show();
+
+        deckPopupDialog.dialog("open");
+        deckPopupDialog.dialog("option", "position", { my: "center", at: "center", of: window });
+    } else {
+        $("#deck_label").text("No mission or raid selected!");
+        $("#deck_display").children().remove();
+        $("#hash_container").hide();
 
         deckPopupDialog.dialog("open");
         deckPopupDialog.dialog("option", "position", { my: "center", at: "center", of: window });
@@ -758,7 +718,7 @@ function open_mission_deck_builder() {
 }
 
 function open_deck_builder(name, hash, inventory, deckHashField) {
-    var url = (inventory ? "DeckUpdater.html" : "DeckBuilder.html");
+    var url = "DeckBuilder.html";
     var parameters = ["nosort"];
     if (hash) {
         parameters.push("hash=" + hash);
@@ -777,8 +737,6 @@ function open_deck_builder(name, hash, inventory, deckHashField) {
         url += '?' + parameters.join('&');
     }
 
-    var baseRequest = (typeof DeckRetriever !== 'undefined' ? DeckRetriever.baseRequest : null);
-
     var width = Math.min(screen.width, 1000);
     var height = Math.min(screen.height, 700);
     var left = Number((screen.width - width) / 2);
@@ -788,15 +746,12 @@ function open_deck_builder(name, hash, inventory, deckHashField) {
     var win = window.open(url, '', windowFeatures);
     win.moveTo(left, top);
     // Push values to window once it has loaded
-    $(win).load((function (name, deckHashField, baseRequest) {
+    $(win).load((function (name, deckHashField) {
         return function () {
             // Tie deck-builder back to the hash field in the simulator.
-            if (deckHashField) win.simulatorDeckHashField = deckHashField;
-            // Link deckbuilder to base request data.
-            if (inventory) win.DeckRetriever.copyRequest(baseRequest);
+            if (deckHashField) win.updateSimulator = function (hash) { deckHashField.val(hash).change() };
         }
-    })(name, deckHashField, baseRequest));
-    var breakpoint = true;
+    })(name, deckHashField));
 }
 
 function display_generated_link() {
@@ -841,33 +796,6 @@ function display_history() {
 function scroll_to_end() {
     // Scroll to bottom of page
     window.scrollTo(0, document.body.scrollHeight);
-}
-
-function toggleRadio(event) {
-    var radio = event.srcElement;
-    var value = eval(radio.id);
-    if (radio.checked == value) {
-        radio.checked = false;
-        eval(radio.id + "=false;");
-    } else {
-        switch (radio.id) {
-            case "mass_debug":
-                mass_debug = true;
-                loss_debug = false;
-                win_debug = false;
-                break;
-            case "loss_debug":
-                mass_debug = false;
-                loss_debug = true;
-                win_debug = false;
-                break;
-            case "win_debug":
-                mass_debug = false;
-                loss_debug = false;;
-                win_debug = true;
-                break;
-        }
-    }
 }
 
 function dumpPlay(unit, i) {

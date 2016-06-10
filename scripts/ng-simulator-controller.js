@@ -57,6 +57,9 @@
         $scope.campaigns = [];
         $scope.missions = $window.TITANS;
         $scope.raids = $window.RAIDS;
+        $scope.battlegrounds = $window.BATTLEGROUNDS;
+
+        $scope.debugMode = false;
 
         $scope.selections = {
             campaign: '',
@@ -113,7 +116,7 @@
             } else if (campaign.isLocation) {
                 return "location";
             } else {
-                return "";
+                return "black";
             }
         };
 
@@ -141,5 +144,19 @@
             }
             return ary;
         }
+
+        $scope.towerTypes = ["Castle Tower", "Cannon Tower"];
+        
+        $scope.selectableBattlegrounds = function () {
+            var selectable = [];
+            for(var i = 0, len = $scope.battlegrounds.length; i < len; i++) {
+                var BGE = $scope.battlegrounds[i];
+                if(!BGE.hidden) selectable.push(BGE);
+            }
+            return selectable;
+        }
+
+        $scope.$watch("debugMode", function (newValue, oldValue) {
+        });
     }
 }(angular));

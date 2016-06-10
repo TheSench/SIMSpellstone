@@ -1,0 +1,34 @@
+select[disabled] {
+    background-color: rgb(235, 235, 228);
+}
+
+.black {
+    color: #001;
+}
+
+.grey {
+    color: #888;
+}
+
+option.location:disabled {
+    color: black;
+    background-color: grey;
+    font-weight: bold;
+}
+
+select option.mythic {
+    color: darkorange;
+}
+
+select option.heroUpgrade {
+    color: purple;
+}
+
+thead tr {
+    background-color: black;
+    color: white;
+}
+
+tr:nth-child(odd).alternating {
+    background-color: lightgrey;
+}

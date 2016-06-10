@@ -246,7 +246,7 @@ var drawDeck = function () {
 }
 
 function doDrawDeck() {
-    $deck = CARD_GUI.draw_deck(deck);
+    $deck = CARD_GUI.draw_deck(deck, inventoryMode);
     var $htmlCards = $deck.find(".card:not(.blank)")
     addEventHandlers($htmlCards);
     updateHash();
@@ -479,6 +479,14 @@ var addUnitLevels = function (id, maxlevel) {
     }
 }
 
+var resetDeck = function () {
+    if (inventoryMode) {
+        hash_changed('');
+    } else {
+        hash_changed('oZ0IB');
+    }
+}
+
 var disableTracking = false;
 var hash_changed = function (hash) {
 
@@ -487,12 +495,14 @@ var hash_changed = function (hash) {
         unitsShown.push.apply(unitsShown, deck.deck);
         redrawCardList(true);
     }
-
-    hash = (hash || document.getElementById("hash").value.trim());
+    if(hash === undefined) hash = document.getElementById("hash").value.trim();
     document.getElementById("hash").value = hash;
 
-    if (typeof simulatorDeckHashField !== 'undefined') simulatorDeckHashField.value = hash;
+    updateSimulator(hash);
+
     deck = hash_decode(hash);
+
+    if (!hash) deck.commander = null;
 
     if (fromInventory) {
         if (!areEqual(deck.commander, elariaCaptain)) removeFromInventory(deck.commander);
@@ -535,11 +545,14 @@ var addUnitToDeck = function (unit, htmlCard) {
 
     var $deck = $("#deck");
 
-    if (is_commander(unit.id)) {
+    if (inventoryMode) {
+        deck.deck.push(unit);
+        $deck.append($htmlCard)
+    } else if (is_commander(unit.id)) {
         deck.commander = unit;
         $deck.find(".card").first().replaceWith($htmlCard);
     } else {
-        if (deck.deck.length == 15 && !inventoryMode) return;
+        if (deck.deck.length == 15) return;
         deck.deck.push(unit);
         var emptySpaces = $deck.find(".blank");
         if (emptySpaces.length) {
@@ -583,7 +596,10 @@ var removeFromDeck = function (event) {
     var unit;
     var $htmlCard = $(event.delegateTarget)
     var index = $htmlCard.index();
-    if (index == 0) {
+    if (inventoryMode) {
+        unit = deck.deck.splice(index - 1, 1)[0];
+        $htmlCard.remove();
+    } else if (index == 0) {
         unit = deck.commander;
         if (areEqual(unit, elariaCaptain)) return;
         deck.commander = elariaCaptain;
@@ -633,9 +649,13 @@ var updateHash = function () {
 
     addChange(deckHash);
 
-    if (typeof simulatorDeckHashField !== 'undefined') simulatorDeckHashField.value = deckHash;
+    updateSimulator(deckHash);
 
     updateGraphs();
+}
+
+var updateSimulator = function (deckHash) {
+    // Placeholder function - set by Simulator
 }
 
 var updateGraphs = function () {
@@ -1721,7 +1741,6 @@ function setDeckName(name) {
     var lbl = document.getElementById("version_label");
     lbl.innerHTML += " " + name;
 }
-
 
 function saveDeck() {
     var hash = $("#hash").val();

@@ -13,14 +13,14 @@ var CARD_GUI = {};
         cardSpace.innerHTML = '';
     }
 
-    function draw_deck(deck) {
+    function draw_deck(deck, noblanks) {
         var $deck = $("#deck");
         $deck.children().remove();
-        $deck.append(makeDeckHTML(deck));
+        $deck.append(makeDeckHTML(deck, noblanks));
         return $deck;
     }
 
-    function makeDeckHTML(deck) {
+    function makeDeckHTML(deck, noblanks) {
         var cards = [];
         var commander = get_card_by_id(deck.commander);
         cards.push(create_card_html(commander, false, false));
@@ -29,7 +29,7 @@ var CARD_GUI = {};
             var unit = get_card_by_id(deckEntry);
             cards.push(create_card_html(unit, false, false));
         }
-        for (; i < 15; i++) {
+        if (!noblanks) for (; i < 15; i++) {
             cards.push(createDiv("card blank"));
         }
         return cards;

@@ -1913,7 +1913,7 @@ function GetMaxLevel(original_card) {
 function loadCard(id) {
     var card = CARDS[id];
     if (!card) {
-        CARD_UPDATER.updateCards();
+        DATA_UPDATER.updateCards();
         card = CARDS[id];
     }
     return card;
