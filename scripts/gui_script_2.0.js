@@ -1,4 +1,6 @@
-﻿$(function () {
+﻿'use strict';
+
+$(function () {
     $("#deck").change(function () {
         deckChanged("attack_deck", hash_decode(this.value));
     });
@@ -47,4 +49,6 @@
 
     deckChanged("attack_deck", hash_decode(''));
     deckChanged("defend_deck", hash_decode(''));
+
+    debug_dump_decks = function () { };
 });

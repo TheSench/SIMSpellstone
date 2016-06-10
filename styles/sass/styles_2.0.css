@@ -218,4 +218,18 @@ h2 .ui-icon {
   background-color: #c6e0ee;
 }
 
+#content i {
+  text-decoration: none;
+  font-style: normal;
+  color: #ff0000;
+  font-weight: bold;
+}
+
+#content b {
+  text-decoration: none;
+  font-style: normal;
+  color: #0000ff;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=styles_2.0.css.map */

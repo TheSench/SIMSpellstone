@@ -24,23 +24,20 @@ var SIM_CONTROLLER;
         games = 0;
         sims_left = 1;
         SIMULATOR.user_controlled = true;
-        debug = document.getElementById('debug').checked;
-        var d = document.getElementById('auto_mode');
-        if (d) {
-            auto_mode = d.checked;
-        }
-        getdeck = document.getElementById('deck').value;
-        getcardlist = document.getElementById('cardlist').value;
-        getdeck2 = document.getElementById('deck2').value;
-        getcardlist2 = document.getElementById('cardlist2').value;
-        getordered2 = document.getElementById('ordered2').checked;
-        getexactorder2 = document.getElementById('exactorder2').checked;
-        getmission = document.getElementById('mission').value;
-        getraid = document.getElementById('raid').value;
-        raidlevel = document.getElementById('raid_level').value;
-        getsiege = document.getElementById('siege').checked;
-        tower_level = document.getElementById('tower_level').value;
-        tower_type = document.getElementById('tower_type').value;
+        debug = $('#debug').is(':checked');
+        auto_mode = $('#auto_mode').is(':checked');
+        getdeck = $('#deck').val();
+        getcardlist = $('#cardlist').val();
+        getdeck2 = $('#deck2').val();
+        getcardlist2 = $('#cardlist2').val();
+        getordered2 = $('#ordered2').is(':checked');
+        getexactorder2 = $('#exactorder2').is(':checked');
+        getmission = $('#mission').val();
+        getraid = $('#raid').val();
+        raidlevel = $('#raid_level').val();
+        getsiege = $('#siege').is(':checked');
+        tower_level = $('#tower_level').val();
+        tower_type = $('#tower_type').val();
         if (BATTLEGROUNDS) {
             getbattleground = [];
             var bgCheckBoxes = document.getElementsByName("battleground");
@@ -52,7 +49,7 @@ var SIM_CONTROLLER;
             }
             getbattleground = getbattleground.join();
         }
-        surge = document.getElementById('surge').checked;
+        surge = $('#surge').is(':checked');
 
         // Set up battleground effects, if any
         var battlegrounds = {

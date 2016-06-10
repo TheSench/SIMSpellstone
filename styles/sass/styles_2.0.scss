@@ -180,7 +180,7 @@ h1, h2, h3, h4, h5, h6 {
 div.section {
     border: 2px solid $primary-black;
     border-radius: 10px 10px 0 0;
-        padding-bottom: 2px;
+    padding-bottom: 2px;
 
     h1, h2, h3, h4, h5, h6 {
         color: $primary-black;
@@ -346,4 +346,21 @@ h2 .ui-icon {
 .label {
     font-weight: bold;
     background-color: $secondary-tint;
+}
+
+
+#content {
+    i {
+        text-decoration: none;
+        font-style: normal;
+        color: #ff0000;
+        font-weight: bold;
+    }
+
+    b {
+        text-decoration: none;
+        font-style: normal;
+        color: #0000ff;
+        font-weight: bold;
+    }
 }
