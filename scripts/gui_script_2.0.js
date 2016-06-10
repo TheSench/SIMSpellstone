@@ -1,7 +1,7 @@
 ﻿$(function () {
     $("#deck").change(function () {
         deckChanged("attack_deck", hash_decode(this.value));
-    }).change();
+    });
 
     $("#deck2").change(function () {
         deckChanged("defend_deck", hash_decode(this.value));
@@ -45,4 +45,7 @@
         deckChanged("defend_deck", newDeck);
     });
 
+
+    deckChanged("attack_deck", hash_decode(''));
+    deckChanged("defend_deck", hash_decode(''));
 });
