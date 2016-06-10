@@ -72,7 +72,7 @@
                 <div>
                     <input type="button" onclick="load_deck_builder('player');" value="Edit" />
                     <div class="accordion">
-                        <span>Advanced Settings&nbsp;</span>
+                        <h6>Advanced Settings</h6>
                         <div id="deckContainer" class="collapsible">
                             <div><label for="deck">Deck Hash:</label></div>
                             <input id="deck" type="text" value="" size="100"><br />
@@ -89,10 +89,8 @@
                 </div>
                 <input type="button" onclick="load_deck_builder('cpu');" value="Edit" />
                 <div class="accordion">
-                    <span>Advanced Settings&nbsp;</span>
+                    <h6>PvE Decks</h6>
                     <div>
-                        <div><i>Enemy Deck Hash:</i></div><input type="text" id="deck2" value="" size="100"><br />
-                        <font color="#666"><strong>Hash example:</strong> w98CAI5kfnIkDbHwI5YHwI5YHcBkHJcBkHJcBkHJ</font><br />
                         <div><span class="label">Campaign (7*):</span></div>
                         <select id="campaign" ng-model="selections.campaign" ng-class="getCampaignClass()" ng-disabled="selections.raid !== ''">
                             <option default value="" class=" grey">
@@ -112,7 +110,11 @@
                             <option ng-repeat="raid in raids" value="{{raid.id}}" class="black">{{raid.name}}</option>
                         </select>
                         <input style="float:initial;" type="NUMBER" id="raid_level" min="25" max="40" step="1" value="25" size="6">
-                        <br/>
+                    </div>
+                    <h6>Advanced Settings</h6>
+                    <div>
+                        <div><i>Enemy Deck Hash:</i></div><input type="text" id="deck2" value="" size="100"><br />
+                        <font color="#666"><strong>Hash example:</strong> w98CAI5kfnIkDbHwI5YHwI5YHcBkHJcBkHJcBkHJ</font><br />
                         <input type="checkbox" id="ordered2"><label for="ordered2">Ordered</label>
                         <input type="checkbox" id="exactorder2"><label for="exactorder2">Don't Shuffle</label>
                     </div>

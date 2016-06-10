@@ -81,6 +81,7 @@ body {
   position: relative;
 }
 
+.accordion h6.ui-accordion-header,
 .accordion span.ui-accordion-header {
   color: #311709;
   border-color: #c6e0ee;

@@ -206,7 +206,8 @@ body {
     .ui-accordion-header {
         position: relative;
     }
-
+    
+    h6.ui-accordion-header,
     span.ui-accordion-header {
         color: $primary-black;
         border-color: $secondary-tint;
