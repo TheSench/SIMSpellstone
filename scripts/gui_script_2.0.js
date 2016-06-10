@@ -12,7 +12,6 @@
         $deck.children().remove();
         $deck.append(CARD_GUI.makeDeckHTML(newDeck));
     }
-
     $(".accordion").accordion({
         collapsible: true,
         active: false,

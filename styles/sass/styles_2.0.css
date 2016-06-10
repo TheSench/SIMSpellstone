@@ -1,0 +1,221 @@
+﻿/* 
+ * Practical Color Theory for People Who Code
+ * http://tallys.github.io/color-theory/?imm_mid=0e31ae&cmp=em-web-na-na-newsltr_20160427
+ */
+.primary-color {
+  background-color: #d66329;
+}
+
+.primary-neutral {
+  background-color: #c06a3f;
+}
+
+.primary-black {
+  background-color: #311709;
+}
+
+.primary-white {
+  background-color: #f6dbce;
+}
+
+.primary-tint {
+  background-color: #efbfa8;
+}
+
+.secondary-color {
+  background-color: #3b96c4;
+}
+
+.secondary-neutral {
+  background-color: #4d90b2;
+}
+
+.secondary-black {
+  background-color: #09181f;
+}
+
+.secondary-white {
+  background-color: #e0eef6;
+}
+
+.secondary-tint {
+  background-color: #c6e0ee;
+}
+
+.circle {
+  color: black;
+  border: 1px solid black;
+  min-width: 12px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 10px;
+  margin: 0;
+}
+
+div.section {
+  border: 2px solid #311709;
+  border-radius: 10px 10px 0 0;
+  padding-bottom: 2px;
+}
+
+div.section h1, div.section h2, div.section h3, div.section h4, div.section h5, div.section h6 {
+  color: #311709;
+  background-color: #c06a3f;
+  border-radius: 10px 10px 0 0;
+  border-bottom: 2px solid #311709;
+}
+
+select, input {
+  color: #3b96c4;
+  background-color: #fafcfe;
+}
+
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #4d90b2;
+  background-color: white;
+}
+
+.accordion .ui-accordion-header {
+  position: relative;
+}
+
+.accordion span.ui-accordion-header {
+  color: #311709;
+  border-color: #c6e0ee;
+  background-color: #e0eef6;
+  border-style: outset;
+  border-radius: 5px 5px 0 0;
+  margin: 0;
+}
+
+.accordion > div {
+  border: 1px solid #311709;
+}
+
+select[disabled] {
+  color: #3b96c4;
+  background-color: #c6e0ee;
+}
+
+.black {
+  color: #4d90b2;
+}
+
+.grey {
+  color: #c6e0ee;
+}
+
+option.location:disabled {
+  color: #09181f;
+  background-color: #c6e0ee;
+  font-weight: bold;
+}
+
+select.mythic,
+option.mythic {
+  color: darkorange;
+}
+
+select.heroUpgrade,
+option.heroUpgrade {
+  color: purple;
+}
+
+thead tr {
+  background-color: black;
+  color: white;
+}
+
+tr.alternating:nth-child(odd) {
+  background-color: lightgrey;
+}
+
+#version_label {
+  background-color: #09181f;
+}
+
+input[type=button] {
+  border-color: #c6e0ee;
+  background-color: #e0eef6;
+  border-radius: 5px;
+  border-width: 3px;
+  padding: 5px 10px;
+  margin: 5px 0;
+}
+
+/* states and images */
+.ui-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.ui-icon,
+.ui-widget-content .ui-icon {
+  background-image: url("../../Content/themes/base/images/ui-icons_222222_256x240.png");
+}
+
+.ui-widget-header .ui-icon {
+  background-image: url("../../Content/themes/base/images/ui-icons_222222_256x240.png");
+}
+
+.ui-state-default .ui-icon {
+  background-image: url("../../Content/themes/base/images/ui-icons_888888_256x240.png");
+}
+
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon {
+  background-image: url("../../Content/themes/base/images/ui-icons_454545_256x240.png");
+}
+
+.ui-state-active .ui-icon {
+  background-image: url("../../Content/themes/base/images/ui-icons_454545_256x240.png");
+}
+
+.ui-state-highlight .ui-icon {
+  background-image: url("../../Content/themes/base/images/ui-icons_2e83ff_256x240.png");
+}
+
+.ui-state-error .ui-icon,
+.ui-state-error-text .ui-icon {
+  background-image: url("../../Content/themes/base/images/ui-icons_cd0a0a_256x240.png");
+}
+
+.ui-accordion .ui-accordion-icons {
+  padding-left: 2.2em;
+}
+
+.ui-accordion .ui-accordion-icons .ui-accordion-icons {
+  padding-left: 2.2em;
+}
+
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+  position: absolute;
+  left: .5em;
+  top: 50%;
+  margin-top: -8px;
+}
+
+.ui-icon-triangle-1-e {
+  background-position: -32px -16px;
+}
+
+.ui-icon-triangle-1-s {
+  background-position: -64px -16px;
+}
+
+h2 .ui-icon {
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.label {
+  font-weight: bold;
+  background-color: #c6e0ee;
+}
+
+/*# sourceMappingURL=styles_2.0.css.map */

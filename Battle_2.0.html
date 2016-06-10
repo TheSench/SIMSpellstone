@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="styles/card.css">
     <link rel="stylesheet" type="text/css" href="styles/spritesheet.css">
     <link rel="icon" type="image/png" href="res/favicon-16x16.png">
+    <!--<link rel="stylesheet" href="Content/themes/base/smoothness.css">-->
 
     <script src="lib/jquery-2.2.1.min.js"></script>
     <script src="lib/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
@@ -62,27 +63,31 @@
         <form>
             <hr />
             <div class="section">
-                <h2>Attacker</h2>
-                <div id="attack_deck" class="float-left"></div>
+                <div class="accordion">
+                    <h2>Attacker</h2>
+                    <div>
+                        <div id="attack_deck" class="float-left"></div>
+                    </div>
+                </div>
                 <div>
                     <input type="button" onclick="load_deck_builder('player');" value="Edit" />
-                </div>
-                <div class="accordion">
-                    <!--<a href="#">Advanced Settings</a>-->
-                    <!--<label for="deckContainer" class="">Advanced Settings</label>-->
-                    <input type="button" value="Advanced Settings" />
-                    <div id="deckContainer" class="collapsible">
-                        <div><b>Deck Hash:</b></div><input id="deck" type="text" value="" size="100"><br />
-                        <div><font color="#666"><strong>Hash example:</strong> w98CAI5kfnIkDbHwI5YHwI5YHcBkHJcBkHJcBkHJ</font></div>
+                    <div class="accordion">
+                        <span>Advanced Settings&nbsp;</span>
+                        <div id="deckContainer" class="collapsible">
+                            <div><label for="deck">Deck Hash:</label></div>
+                            <input id="deck" type="text" value="" size="100"><br />
+                            <div><font color="#666"><strong>Hash example:</strong> w98CAI5kfnIkDbHwI5YHwI5YHcBkHJcBkHJcBkHJ</font></div>
+                        </div>
                     </div>
                 </div>
             </div>
             <hr>
             <div class="section">
-                <h2>Defender</h2>
-                <!--<input type="button" value="Edit" />-->
-                <div id="defend_deck" class="float-left"></div><br />
-                <div><i>Campaign (7*):</i></div>
+                <div class="accordion">
+                    <h2>Defender</h2>
+                    <div id="defend_deck" class="float-left"></div>
+                </div>
+                <div><span class="label">Campaign (7*):</span></div>
                 <select id="campaign" ng-model="selections.campaign" ng-class="getCampaignClass()" ng-disabled="selections.raid !== ''">
                     <option default value="" class=" grey">
                         Select a Campaign...
@@ -94,8 +99,8 @@
                     <option ng-repeat="mission in missions | inCampaign:selections.campaign:campaigns" value="{{mission.id}}" class="black">{{mission.name}}</option>
                 </select>
                 <input style="float:initial; display:none;" type="NUMBER" id="mission_level" min="1" max="7" step="1" value="7" size="6" disabled="disabled">
-                <br/>
-                <div><i>Raid:</i></div>
+                <br />
+                <div><span class="label">Raid:</span></div>
                 <select id="raid" ng-model="selections.raid" ng-class="{grey:selections.raid === ''}" ng-disabled="selections.campaign !== ''">
                     <option default value="" class="grey">Select a Raid...</option>
                     <option ng-repeat="raid in raids" value="{{raid.id}}" class="black">{{raid.name}}</option>
@@ -114,28 +119,30 @@
                 -->
             </div>
             <hr>
-            <div class="section">
+            <div class="section accordion">
                 <h2>Battle Settings</h2>
-                <!--
-                <div>Castle Siege:</div><input type="checkbox" id="siege"><input type="NUMBER" id="tower_level" min="1" max="18" step="1" value="10" size="6">
-                <select id="tower_type">
-                    <option ng-repeat="type in towerTypes" value="{{$index}}">{{type}}</option>
-                </select>
-                <br/>
-                <div>Surge Mode:</div><input type="checkbox" id="surge"><br/>
-                <br/>
-                -->
-                <div><i>Battleground:</i></div>
-                <div id="battleground" style="overflow: auto; width: 200px; height: 80px; border: 1px solid #336699; padding-left: 5px; text-align: left; ">
-                    <input ng-repeat-start="BGE in selectableBattlegrounds()" type="checkbox" name="battleground" id="battleground_{{BGE.id}}" value="{{BGE.id}}">
-                    <label for="battleground_{{BGE.id}}">{{BGE.name}}</label>
-                    <br ng-repeat-end />
+                <div>
+                    <!--
+                    <div>Castle Siege:</div><input type="checkbox" id="siege"><input type="NUMBER" id="tower_level" min="1" max="18" step="1" value="10" size="6">
+                    <select id="tower_type">
+                        <option ng-repeat="type in towerTypes" value="{{$index}}">{{type}}</option>
+                    </select>
+                    <br/>
+                    <div>Surge Mode:</div><input type="checkbox" id="surge"><br/>
+                    <br/>
+                    -->
+                    <div><span class="label">Battleground:</span></div>
+                    <div id="battleground" style="overflow: auto; width: 200px; height: 80px; border: 1px solid #336699; padding-left: 5px; text-align: left; ">
+                        <input ng-repeat-start="BGE in selectableBattlegrounds()" type="checkbox" name="battleground" id="battleground_{{BGE.id}}" value="{{BGE.id}}">
+                        <label for="battleground_{{BGE.id}}">{{BGE.name}}</label>
+                        <br ng-repeat-end />
+                    </div>
                 </div>
             </div>
             <hr>
-            <div>
-                <div class="accordion">
-                    <label for="debugContainer" class="">Debug Settings</label>
+            <div class="section accordion">
+                <h2>Debug Settings</h2>
+                <div>
                     <div id="debugContainer" class="collapsible">
                         <input type="checkbox" id="debug"><label for="debug">Debug Mode</label><br />
                         <input type="checkbox" id="auto_mode"><label for="auto_mode">Auto Mode</label><br />
@@ -147,11 +154,11 @@
             <input type="button" id="generate_link" value="Generate Link" style="text-align: center; font-weight: normal;">
         </form>
     </div>
-    <br/>
+    <br />
     <span id="content"></span>
-    <br/>
+    <br />
     <div id="cardSpace" class="flaot-left"></div>
-    <br/>
-    <span id="stop" style="display: none;"><input type="button" value="Stop Sim(s)" onclick="SIM_CONTROLLER.stopsim()"><br/>TIP: Switching browser tabs may cause your simulation to pause!</span>
+    <br />
+    <span id="stop" style="display: none;"><input type="button" value="Stop Sim(s)" onclick="SIM_CONTROLLER.stopsim()"><br />TIP: Switching browser tabs may cause your simulation to pause!</span>
 </body>
 </html>
