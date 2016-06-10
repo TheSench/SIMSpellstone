@@ -67,16 +67,14 @@
                     <h2>Attacker</h2>
                     <div>
                         <div id="attack_deck" class="float-left"></div>
-                    </div>
-                </div>
-                <div>
-                    <input type="button" onclick="load_deck_builder('player');" value="Edit" />
-                    <div class="accordion">
-                        <h6>Advanced Settings</h6>
-                        <div id="deckContainer" class="collapsible">
-                            <div><label for="deck">Deck Hash:</label></div>
-                            <input id="deck" type="text" value="" size="100"><br />
-                            <div><font color="#666"><strong>Hash example:</strong> w98CAI5kfnIkDbHwI5YHwI5YHcBkHJcBkHJcBkHJ</font></div>
+                        <input type="button" onclick="load_deck_builder('player');" value="Edit" />
+                        <div class="accordion">
+                            <h6>Advanced Settings</h6>
+                            <div id="deckContainer" class="collapsible">
+                                <div><label for="deck">Deck Hash:</label></div>
+                                <input id="deck" type="text" value="" size="100"><br />
+                                <div><font color="#666"><strong>Hash example:</strong> w98CAI5kfnIkDbHwI5YHwI5YHcBkHJcBkHJcBkHJ</font></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -85,38 +83,40 @@
             <div class="section">
                 <div class="accordion">
                     <h2>Defender</h2>
-                    <div id="defend_deck" class="float-left"></div>
-                </div>
-                <input type="button" onclick="load_deck_builder('cpu');" value="Edit" />
-                <div class="accordion">
-                    <h6>PvE Decks</h6>
                     <div>
-                        <div><span class="label">Campaign (7*):</span></div>
-                        <select id="campaign" ng-model="selections.campaign" ng-class="getCampaignClass()" ng-disabled="selections.raid !== ''">
-                            <option default value="" class=" grey">
-                                Select a Campaign...
-                            </option>
-                            <option ng-repeat="campaign in campaigns" value="{{campaign.id}}" ng-class="getCampaignClass(campaign)" ng-disabled="{{campaign.isLocation}}">{{campaign.name}}</option>
-                        </select>
-                        <select id="mission" ng-model="selections.mission" ng-class="{grey:selections.mission === ''}" ng-disabled="selections.campaign === ''">
-                            <option default value="" class="grey">Select a Mission...</option>
-                            <option ng-repeat="mission in missions | inCampaign:selections.campaign:campaigns" value="{{mission.id}}" class="black">{{mission.name}}</option>
-                        </select>
-                        <input style="float:initial; display:none;" type="NUMBER" id="mission_level" min="1" max="7" step="1" value="7" size="6" disabled="disabled">
-                        <br />
-                        <div><span class="label">Raid:</span></div>
-                        <select id="raid" ng-model="selections.raid" ng-class="{grey:selections.raid === ''}" ng-disabled="selections.campaign !== ''">
-                            <option default value="" class="grey">Select a Raid...</option>
-                            <option ng-repeat="raid in raids" value="{{raid.id}}" class="black">{{raid.name}}</option>
-                        </select>
-                        <input style="float:initial;" type="NUMBER" id="raid_level" min="25" max="40" step="1" value="25" size="6">
-                    </div>
-                    <h6>Advanced Settings</h6>
-                    <div>
-                        <div><i>Enemy Deck Hash:</i></div><input type="text" id="deck2" value="" size="100"><br />
-                        <font color="#666"><strong>Hash example:</strong> w98CAI5kfnIkDbHwI5YHwI5YHcBkHJcBkHJcBkHJ</font><br />
-                        <input type="checkbox" id="ordered2"><label for="ordered2">Ordered</label>
-                        <input type="checkbox" id="exactorder2"><label for="exactorder2">Don't Shuffle</label>
+                        <div id="defend_deck" class="float-left"></div>
+                        <input type="button" onclick="load_deck_builder('cpu');" value="Edit" />
+                        <div class="accordion">
+                            <h6>PvE Decks</h6>
+                            <div>
+                                <div><span class="label">Campaign (7*):</span></div>
+                                <select id="campaign" ng-model="selections.campaign" ng-class="getCampaignClass()" ng-disabled="selections.raid !== ''">
+                                    <option default value="" class=" grey">
+                                        Select a Campaign...
+                                    </option>
+                                    <option ng-repeat="campaign in campaigns" value="{{campaign.id}}" ng-class="getCampaignClass(campaign)" ng-disabled="{{campaign.isLocation}}">{{campaign.name}}</option>
+                                </select>
+                                <select id="mission" ng-model="selections.mission" ng-class="{grey:selections.mission === ''}" ng-disabled="selections.campaign === ''">
+                                    <option default value="" class="grey">Select a Mission...</option>
+                                    <option ng-repeat="mission in missions | inCampaign:selections.campaign:campaigns" value="{{mission.id}}" class="black">{{mission.name}}</option>
+                                </select>
+                                <input style="float:initial; display:none;" type="NUMBER" id="mission_level" min="1" max="7" step="1" value="7" size="6" disabled="disabled">
+                                <br />
+                                <div><span class="label">Raid:</span></div>
+                                <select id="raid" ng-model="selections.raid" ng-class="{grey:selections.raid === ''}" ng-disabled="selections.campaign !== ''">
+                                    <option default value="" class="grey">Select a Raid...</option>
+                                    <option ng-repeat="raid in raids" value="{{raid.id}}" class="black">{{raid.name}}</option>
+                                </select>
+                                <input style="float:initial;" type="NUMBER" id="raid_level" min="25" max="40" step="1" value="25" size="6">
+                            </div>
+                            <h6>Advanced Settings</h6>
+                            <div>
+                                <div><i>Enemy Deck Hash:</i></div><input type="text" id="deck2" value="" size="100"><br />
+                                <font color="#666"><strong>Hash example:</strong> w98CAI5kfnIkDbHwI5YHwI5YHcBkHJcBkHJcBkHJ</font><br />
+                                <input type="checkbox" id="ordered2"><label for="ordered2">Ordered</label>
+                                <input type="checkbox" id="exactorder2"><label for="exactorder2">Don't Shuffle</label>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -124,7 +124,7 @@
             <div class="section accordion">
                 <h2>Battle Settings</h2>
                 <div>
-                    <input type="checkbox" id="siege" ng-model="tower"><label for="siege">Tower</label><br/>
+                    <input type="checkbox" id="siege" ng-model="tower"><label for="siege">Tower</label><br />
                     <input type="NUMBER" id="tower_level" min="1" max="18" step="1" value="10" size="6" ng-disabled="!tower">
                     <select id="tower_type" ng-disabled="!tower">
                         <option ng-repeat="type in towerTypes" value="{{$index}}">{{type}}</option>
