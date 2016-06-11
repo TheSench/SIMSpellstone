@@ -6841,7 +6841,7 @@ var CARDS = {
   },
   "21643": {
     "id": "21643",
-    "name": "Lightning Leaper ",
+    "name": "Lightning Leaper",
     "picture": "Swift_Frog_B",
     "rarity": "4",
     "set": "1000",
@@ -29852,6 +29852,190 @@ var CARDS = {
       },
     }
   },
+  "5061": {
+    "id": "5061",
+    "name": "Thunderfist Rex",
+    "picture": "Legendary_Lightning_Fist_Dragon_A",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "9",
+    "attack": 4,
+    "health": 13,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "strike",
+        "x": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "health": 15,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "strike",
+            "x": 6,
+          },
+        ],
+      },
+      "5": {
+        "attack": 5,
+        "skill": [],
+      },
+      "6": {
+        "health": 16,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 6,
+          },
+        ],
+      },
+    }
+  },
+  "15061": {
+    "id": "15061",
+    "name": "Flashfist Rex",
+    "picture": "Legendary_Lightning_Fist_Dragon_A",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "9",
+    "attack": 5,
+    "health": 16,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "strike",
+        "x": 7,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 17,
+        "skill": [],
+      },
+      "3": {
+        "health": 18,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 8,
+          },
+        ],
+      },
+      "5": {
+        "health": 19,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "strike",
+            "x": 8,
+          },
+        ],
+      },
+    }
+  },
+  "25061": {
+    "id": "25061",
+    "name": "Boltfist Rex",
+    "picture": "Legendary_Lightning_Fist_Dragon_B",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "9",
+    "attack": 5,
+    "health": 20,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 3,
+      },
+      {
+        "id": "strike",
+        "x": 8,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "strike",
+            "x": 9,
+          },
+        ],
+      },
+      "3": {
+        "health": 21,
+        "skill": [],
+      },
+      "4": {
+        "attack": 6,
+        "skill": [],
+      },
+      "5": {
+        "health": 22,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "strike",
+            "x": 10,
+          },
+        ],
+      },
+    }
+  },
   "5062": {
     "id": "5062",
     "name": "Cliffhanger Wyrm",
@@ -38830,7 +39014,7 @@ var CARDS = {
   },
   "16039": {
     "id": "16039",
-    "name": "Auroch the Infernal ",
+    "name": "Auroch the Infernal",
     "picture": "Flying_Behemoth_A",
     "rarity": "4",
     "set": "4000",
@@ -49260,7 +49444,7 @@ var CARDS = {
   },
   "7024": {
     "id": "7024",
-    "name": "Woolmane Dragon ",
+    "name": "Woolmane Dragon",
     "picture": "Wooly_Dragon_A",
     "rarity": "3",
     "set": "3000",
@@ -64921,7 +65105,7 @@ var CARDS = {
     "id": "28025",
     "name": "Exploding Crab",
     "picture": "Lava_Crab_C",
-    "rarity": "4",
+    "rarity": "1",
     "set": "9999",
     "card_type": "2",
     "type": "2",
@@ -74914,7 +75098,7 @@ var CARDS = {
     "rarity": "2",
     "set": "9999",
     "card_type": "1",
-    "type": "3",
+    "type": "2",
     "health": 12,
     "skill": [
       {
@@ -82914,49 +83098,10 @@ var CARDS = {
       },
     }
   },
-  "9992": {
-    "id": "9992",
-    "name": "",
-    "picture": "New13_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19992": {
-    "id": "19992",
-    "name": "",
-    "picture": "New13_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29992": {
-    "id": "29992",
-    "name": "",
-    "picture": "New13_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
   "9993": {
     "id": "9993",
     "name": "",
-    "picture": "New15_A",
+    "picture": "New13_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -82969,7 +83114,7 @@ var CARDS = {
   "19993": {
     "id": "19993",
     "name": "",
-    "picture": "New15_A",
+    "picture": "New13_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -82982,7 +83127,7 @@ var CARDS = {
   "29993": {
     "id": "29993",
     "name": "",
-    "picture": "New15_B",
+    "picture": "New13_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -82995,7 +83140,7 @@ var CARDS = {
   "9994": {
     "id": "9994",
     "name": "",
-    "picture": "New16_A",
+    "picture": "New15_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -83008,7 +83153,7 @@ var CARDS = {
   "19994": {
     "id": "19994",
     "name": "",
-    "picture": "New16_A",
+    "picture": "New15_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -83021,7 +83166,7 @@ var CARDS = {
   "29994": {
     "id": "29994",
     "name": "",
-    "picture": "New16_B",
+    "picture": "New15_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -83034,7 +83179,7 @@ var CARDS = {
   "9995": {
     "id": "9995",
     "name": "",
-    "picture": "New18_A",
+    "picture": "New16_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -83047,7 +83192,7 @@ var CARDS = {
   "19995": {
     "id": "19995",
     "name": "",
-    "picture": "New18_A",
+    "picture": "New16_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -83060,7 +83205,7 @@ var CARDS = {
   "29995": {
     "id": "29995",
     "name": "",
-    "picture": "New18_B",
+    "picture": "New16_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -83073,7 +83218,7 @@ var CARDS = {
   "9996": {
     "id": "9996",
     "name": "",
-    "picture": "New19_A",
+    "picture": "New18_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -83086,7 +83231,7 @@ var CARDS = {
   "19996": {
     "id": "19996",
     "name": "",
-    "picture": "New19_A",
+    "picture": "New18_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -83099,7 +83244,7 @@ var CARDS = {
   "29996": {
     "id": "29996",
     "name": "",
-    "picture": "New19_B",
+    "picture": "New18_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -83112,7 +83257,7 @@ var CARDS = {
   "9997": {
     "id": "9997",
     "name": "",
-    "picture": "New6_A",
+    "picture": "New19_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -83125,7 +83270,7 @@ var CARDS = {
   "19997": {
     "id": "19997",
     "name": "",
-    "picture": "New6_A",
+    "picture": "New19_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -83138,7 +83283,7 @@ var CARDS = {
   "29997": {
     "id": "29997",
     "name": "",
-    "picture": "New6_B",
+    "picture": "New19_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -108958,6 +109103,7 @@ var FUSIONS = {
   "15058" : "25058",
   "15059" : "25059",
   "15060" : "25060",
+  "15061" : "25061",
   "15062" : "25062",
   "15063" : "25063",
   "1600" : "11600",
@@ -109235,6 +109381,7 @@ var FUSIONS = {
   "5058" : "15058",
   "5059" : "15059",
   "5060" : "15060",
+  "5061" : "15061",
   "5062" : "15062",
   "5063" : "15063",
   "6000" : "16000",

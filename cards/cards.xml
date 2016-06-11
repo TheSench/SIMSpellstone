@@ -3845,7 +3845,7 @@
     <id>21643</id>
     <card_type>2</card_type>
     <fusion_level>2</fusion_level>
-    <name>Lightning Leaper </name>
+    <name>Lightning Leaper</name>
     <!-- Swift Leaper -->
     <picture>Swift_Frog_B</picture>
     <asset_bundle>38</asset_bundle>
@@ -16144,6 +16144,129 @@
     </upgrade>
   </unit>
   <unit>
+    <id>5061</id>
+    <card_type>2</card_type>
+    <name>Thunderfist Rex</name>
+    <picture>Legendary_Lightning_Fist_Dragon_A</picture>
+    <asset_bundle>63</asset_bundle>
+    <hidden_until_time>1465837200</hidden_until_time>
+    <!-- Mon, 13 Jun 2016 17:00:00 GMT -->
+    <attack>4</attack>
+    <health>13</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="1" />
+    <skill id="strike" x="5" />
+    <type>1</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="1" />
+      <skill id="strike" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>16</health>
+      <skill id="armored" x="2" />
+      <skill id="strike" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15061</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Flashfist Rex</name>
+    <picture>Legendary_Lightning_Fist_Dragon_A</picture>
+    <asset_bundle>63</asset_bundle>
+    <hidden_until_time>1465837200</hidden_until_time>
+    <!-- Mon, 13 Jun 2016 17:00:00 GMT -->
+    <attack>5</attack>
+    <health>16</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="2" />
+    <skill id="strike" x="7" />
+    <type>1</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="2" />
+      <skill id="strike" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="3" />
+      <skill id="strike" x="8" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25061</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Boltfist Rex</name>
+    <picture>Legendary_Lightning_Fist_Dragon_B</picture>
+    <asset_bundle>63</asset_bundle>
+    <hidden_until_time>1465837200</hidden_until_time>
+    <!-- Mon, 13 Jun 2016 17:00:00 GMT -->
+    <attack>5</attack>
+    <health>20</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="3" />
+    <skill id="strike" x="8" />
+    <type>1</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="3" />
+      <skill id="strike" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="4" />
+      <skill id="strike" x="10" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>5062</id>
     <card_type>2</card_type>
     <name>Cliffhanger Wyrm</name>
@@ -21063,7 +21186,7 @@
     <id>16039</id>
     <card_type>2</card_type>
     <fusion_level>1</fusion_level>
-    <name>Auroch the Infernal </name>
+    <name>Auroch the Infernal</name>
     <picture>Flying_Behemoth_A</picture>
     <asset_bundle>47</asset_bundle>
     <attack>5</attack>
@@ -26558,7 +26681,7 @@
   <unit>
     <id>7024</id>
     <card_type>2</card_type>
-    <name>Woolmane Dragon </name>
+    <name>Woolmane Dragon</name>
     <picture>Wooly_Dragon_A</picture>
     <asset_bundle>33</asset_bundle>
     <hidden_until_time>1449162000</hidden_until_time>
@@ -34650,6 +34773,7 @@
     <fusion_level>1</fusion_level>
     <name>Explosion Crab</name>
     <picture>Lava_Crab_B</picture>
+    <asset_bundle>8</asset_bundle>
     <attack>0</attack>
     <health>3</health>
     <cost>4</cost>
@@ -34672,10 +34796,11 @@
     <fusion_level>2</fusion_level>
     <name>Exploding Crab</name>
     <picture>Lava_Crab_C</picture>
+    <asset_bundle>8</asset_bundle>
     <attack>0</attack>
     <health>5</health>
     <cost>4</cost>
-    <rarity>4</rarity>
+    <rarity>1</rarity>
     <skill id="counter" x="50" />
     <type>2</type>
     <set>9999</set>
@@ -40562,7 +40687,7 @@
     <health>12</health>
     <rarity>2</rarity>
     <skill id="enfeeble" x="1" />
-    <type>3</type>
+    <type>2</type>
     <set>9999</set>
     <upgrade>
       <level>2</level>
@@ -40727,7 +40852,7 @@
     <card_type>1</card_type>
     <name>Frenzied Dragon</name>
     <portrait>moltendragon</portrait>
-    <desc>The dragons of Tarragon Peak have gone into a frenzy after a series of earthquakes around the mountain. </desc>
+    <desc>The dragons of Tarragon Peak have gone into a frenzy after a series of earthquakes around the mountain.</desc>
     <attack>0</attack>
     <health>18</health>
     <rarity>3</rarity>
