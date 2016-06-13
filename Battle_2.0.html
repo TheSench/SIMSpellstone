@@ -3,8 +3,8 @@
 <head profile="http://www.w3.org/2005/10/profile">
     <meta charset="UTF-8">
     <title id="title_tag">SimSpellstone - The Spellstone Simulator that runs from your browser!</title>
-    <link rel="stylesheet" type="text/css" href="styles/sass/styles_2.0.css" media="screen">
     <link rel="stylesheet" type="text/css" href="styles/card.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="styles/sass/themes/light.css">
     <link rel="stylesheet" type="text/css" href="styles/spritesheet.css">
     <link rel="icon" type="image/png" href="res/favicon-16x16.png">
     <!--<link rel="stylesheet" href="Content/themes/base/smoothness.css">-->
@@ -47,18 +47,19 @@
 </head>
 <body>
     <h1 id="version_label">SimSpellstone</h1>
+    <input id="toggleTheme" type="button" onclick="toggleTheme()" value="Dark Mode" />
     <!--
-    <div class="circle primary-color">Primary</div>
-    <div class="circle primary-neutral">Primary-Neutral</div>
-    <div class="circle primary-white">Primary-White</div>
-    <div class="circle primary-tint">Primary-Tint</div>
     <div class="circle primary-black">Primary-Black</div>
+    <div class="circle primary-neutral">Primary-Neutral</div>
+    <div class="circle primary-color">Primary</div>
+    <div class="circle primary-tint">Primary-Tint</div>
+    <div class="circle primary-white">Primary-White</div>
     <br/>
-    <div class="circle secondary-color">Secondary</div>
-    <div class="circle secondary-neutral">Secondary-Neutral</div>
-    <div class="circle secondary-white">Secondary-White</div>
-    <div class="circle secondary-tint">Secondary-Tint</div>
     <div class="circle secondary-black">Secondary-Black</div>
+    <div class="circle secondary-neutral">Secondary-Neutral</div>
+    <div class="circle secondary-color">Secondary</div>
+    <div class="circle secondary-tint">Secondary-Tint</div>
+    <div class="circle secondary-white">Secondary-White</div>
     -->
     <div id="ui" ng-controller="SimulatorCtrl" ng-init="campaignSections()">
         <form>

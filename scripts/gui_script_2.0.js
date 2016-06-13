@@ -90,3 +90,15 @@ function loadDeck(hashField) {
 function onDeckLoaded(newHash, hashField) {
     $(hashField).val(newHash).change();
 }
+
+var dark = false;
+function toggleTheme() {
+    if (dark) {
+        $("#theme").attr("href", "styles/sass/themes/light.css")
+        $("#toggleTheme").val("Dark Theme");
+    } else {
+        $("#theme").attr("href", "styles/sass/themes/dark.css")
+        $("#toggleTheme").val("Light Theme");
+    }
+    dark = !dark;
+}

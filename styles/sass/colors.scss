@@ -1,0 +1,127 @@
+﻿$font-stack: Helvetica, sans-serif;
+
+/* 
+ * Practical Color Theory for People Who Code
+ * http://tallys.github.io/color-theory/?imm_mid=0e31ae&cmp=em-web-na-na-newsltr_20160427
+ */
+
+// Pick starting hue
+$hue: 20;
+
+// Color wheel applied
+$red: hsl(355, 100%, 50%);
+$orange: hsl(20, 100%, 50%);
+$yellow: hsl(60, 100%, 50%);
+$green: hsl(120, 100%, 50%);
+$cyan: hsl(180, 100%, 50%);
+$blue: hsl(240, 100%, 50%);
+$violet: hsl(300, 100%, 50%);
+
+// Pick a starting color to mix with and select a hue between 0-360 (check the color wheel!)
+$first-color: hsl($hue, 100%, 50%);
+//$first-color: gray;
+
+// Find the hue 180 degrees away on the color wheel
+$second-color: complement($first-color);
+
+// Check if the color is a cool color
+@function is-cool-color($color) {
+    @return hue($color) < 300 and hue($color) > 120;
+}
+
+// Check if the color is high value or low value
+@function is-high-key-value($color) {
+    @return hue($color) > 30 and hue($color) < 140;
+}
+
+//Establish a relationship (similar lighting conditions) between colors.
+@function harmonious-mix($mix, $base) {
+    @if (is-cool-color($mix)) {
+        @if is-high-key-value($base) {
+            @return mix($mix, $base, 11%);
+        }
+        @else {
+            @return mix($mix, $base, 16%);
+        }
+    }
+    @else {
+        @if is-high-key-value($base) {
+            @return mix($mix, $base, 13%);
+        }
+        @else {
+            @return mix($mix, $base, 23%);
+        }
+    }
+}
+
+// Create neutral colors
+@function mix-neutral($color) {
+    @if (is-highest-key-value($color)) {
+        @if is-high-key-value(complement($color)) {
+            @return mix(complement($color), $color, 19%);
+        }
+        @else {
+            @return mix(complement($color), $color, 13%);
+        }
+    }
+    @else if (is-high-key-value($color)) {
+        @if is-high-key-value(complement($color)) {
+            @return mix(complement($color), $color, 31%);
+        }
+        @else {
+            @return mix(complement($color), $color, 23%);
+        }
+    }
+    @else {
+        @if is-highest-key-value(complement($color)) {
+            @return mix(complement($color), $color, 31%);
+        }
+
+        @if is-high-key-value(complement($color)) {
+            @return mix(complement($color), $color, 26%);
+        }
+        @else {
+            @return mix(complement($color), $color, 23%);
+        }
+    }
+}
+
+// Pick contrasting color
+@function pick-contrast($color) {
+    @if is-high-key-value($color) {
+        @if lightness($color) < 30% {
+            @return lighten(complement($color), 86);
+        }
+        @else if lightness($color) > 70% {
+            @return darken(complement($color), 68);
+        }
+        @else {
+            @return darken(complement($color), 53);
+        }
+    }
+    @else {
+        @if lightness($color) < 30% {
+            @return lighten(complement($color), 86);
+        }
+        @else if lightness($color) > 70% {
+            @return darken(complement($color), 68);
+        }
+        @else {
+            @return lighten(complement($color), 53);
+        }
+    }
+}
+
+$primary-color: harmonious-mix($second-color, $first-color);
+$secondary-color: harmonious-mix($first-color, $second-color);
+
+$primary-neutral: mix-neutral($primary-color);
+$primary-white: harmonious-mix($primary-color, white);
+$primary-black: harmonious-mix($primary-color, black);
+$primary-tint: harmonious-mix($primary-color, $primary-white);
+
+$secondary-neutral: mix-neutral($secondary-color);
+$secondary-white: harmonious-mix($secondary-color, white);
+$secondary-white-white: harmonious-mix($secondary-white, white);
+$secondary-black: harmonious-mix($secondary-color, black);
+$secondary-tint: harmonious-mix($secondary-color, $secondary-white);

@@ -1,0 +1,26 @@
+﻿@charset 'UTF-8';
+
+/*
+$temp: $primary-neutral;
+$primary-neutral: $primary-tint;
+$primary-tint: $temp;
+
+$temp: $primary-black;
+$primary-black: $primary-white;
+$primary-white: $temp;
+*/
+
+@import '../colors.scss';
+
+$temp: $secondary-neutral;
+$secondary-neutral: $secondary-tint;
+$secondary-tint: $temp;
+
+$secondary-white-white: $secondary-black;
+
+$temp: $secondary-black;
+$secondary-black: $secondary-white;
+$secondary-white: $temp;
+
+ 
+@import '../styles_2.0.scss';

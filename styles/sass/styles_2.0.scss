@@ -1,130 +1,4 @@
-$font-stack: Helvetica, sans-serif;
-
-/* 
- * Practical Color Theory for People Who Code
- * http://tallys.github.io/color-theory/?imm_mid=0e31ae&cmp=em-web-na-na-newsltr_20160427
- */
-
-// Pick starting hue
-$hue: 20;
-
-// Color wheel applied
-$red: hsl(355, 100%, 50%);
-$orange: hsl(20, 100%, 50%);
-$yellow: hsl(60, 100%, 50%);
-$green: hsl(120, 100%, 50%);
-$cyan: hsl(180, 100%, 50%);
-$blue: hsl(240, 100%, 50%);
-$violet: hsl(300, 100%, 50%);
-
-// Pick a starting color to mix with and select a hue between 0-360 (check the color wheel!)
-$first-color: hsl($hue, 100%, 50%);
-//$first-color: gray;
-
-// Find the hue 180 degrees away on the color wheel
-$second-color: complement($first-color);
-
-// Check if the color is a cool color
-@function is-cool-color($color) {
-    @return hue($color) < 300 and hue($color) > 120;
-}
-
-// Check if the color is high value or low value
-@function is-high-key-value($color) {
-    @return hue($color) > 30 and hue($color) < 140;
-}
-
-//Establish a relationship (similar lighting conditions) between colors.
-@function harmonious-mix($mix, $base) {
-    @if (is-cool-color($mix)) {
-        @if is-high-key-value($base) {
-            @return mix($mix, $base, 11%);
-        }
-        @else {
-            @return mix($mix, $base, 16%);
-        }
-    }
-    @else {
-        @if is-high-key-value($base) {
-            @return mix($mix, $base, 13%);
-        }
-        @else {
-            @return mix($mix, $base, 23%);
-        }
-    }
-}
-
-// Create neutral colors
-@function mix-neutral($color) {
-    @if (is-highest-key-value($color)) {
-        @if is-high-key-value(complement($color)) {
-            @return mix(complement($color), $color, 19%);
-        }
-        @else {
-            @return mix(complement($color), $color, 13%);
-        }
-    }
-    @else if (is-high-key-value($color)) {
-        @if is-high-key-value(complement($color)) {
-            @return mix(complement($color), $color, 31%);
-        }
-        @else {
-            @return mix(complement($color), $color, 23%);
-        }
-    }
-    @else {
-        @if is-highest-key-value(complement($color)) {
-            @return mix(complement($color), $color, 31%);
-        }
-
-        @if is-high-key-value(complement($color)) {
-            @return mix(complement($color), $color, 26%);
-        }
-        @else {
-            @return mix(complement($color), $color, 23%);
-        }
-    }
-}
-
-// Pick contrasting color
-@function pick-contrast($color) {
-    @if is-high-key-value($color) {
-        @if lightness($color) < 30% {
-            @return lighten(complement($color), 86);
-        }
-        @else if lightness($color) > 70% {
-            @return darken(complement($color), 68);
-        }
-        @else {
-            @return darken(complement($color), 53);
-        }
-    }
-    @else {
-        @if lightness($color) < 30% {
-            @return lighten(complement($color), 86);
-        }
-        @else if lightness($color) > 70% {
-            @return darken(complement($color), 68);
-        }
-        @else {
-            @return lighten(complement($color), 53);
-        }
-    }
-}
-
-$primary-color: harmonious-mix($second-color, $first-color);
-$secondary-color: harmonious-mix($first-color, $second-color);
-
-$primary-neutral: mix-neutral($primary-color);
-$primary-white: harmonious-mix($primary-color, white);
-$primary-black: harmonious-mix($primary-color, black);
-$primary-tint: harmonious-mix($primary-color, $primary-white);
-
-$secondary-neutral: mix-neutral($secondary-color);
-$secondary-white: harmonious-mix($secondary-color, white);
-$secondary-white-white: harmonious-mix($secondary-white, white);
-$secondary-black: harmonious-mix($secondary-color, black);
-$secondary-tint: harmonious-mix($secondary-color, $secondary-white);
+﻿@charset 'UTF-8';
 
 .ui-dialog-titlebar,
 .primary-color {
@@ -199,7 +73,7 @@ select, input {
 body {
     font: 100% $font-stack;
     color: $secondary-neutral;
-    background-color: white;
+    background-color: $secondary-white;
 }
 
 
@@ -207,10 +81,10 @@ body {
     .ui-accordion-header {
         position: relative;
     }
-    
+
     h6.ui-accordion-header,
     span.ui-accordion-header {
-        color: $primary-black;
+        color: $secondary-black;
         border-color: $secondary-tint;
         background-color: $secondary-white;
         border-style: outset;
@@ -266,7 +140,7 @@ tr.alternating:nth-child(odd) {
 }
 
 #version_label {
-    background-color: $secondary-black;
+    //background-color: $secondary-black;
 }
 
 input[type=button] {
@@ -285,34 +159,30 @@ input[type=button] {
 }
 
 .ui-icon,
-.ui-widget-content .ui-icon {
-    background-image: url("../../Content/themes/base/images/ui-icons_222222_256x240.png");
-}
-
-.ui-widget-header .ui-icon {
-    background-image: url("../../Content/themes/base/images/ui-icons_222222_256x240.png");
+.ui-dialog-content .ui-icon {
+    background-image: url("../../../Content/themes/base/images/ui-icons_222222_256x240.png");
 }
 
 .ui-state-default .ui-icon {
-    background-image: url("../../Content/themes/base/images/ui-icons_888888_256x240.png");
+    background-image: url("../../../Content/themes/base/images/ui-icons_888888_256x240.png");
 }
 
 .ui-state-hover .ui-icon,
 .ui-state-focus .ui-icon {
-    background-image: url("../../Content/themes/base/images/ui-icons_454545_256x240.png");
+    background-image: url("../../../Content/themes/base/images/ui-icons_454545_256x240.png");
 }
 
 .ui-state-active .ui-icon {
-    background-image: url("../../Content/themes/base/images/ui-icons_454545_256x240.png");
+    background-image: url("../../../Content/themes/base/images/ui-icons_454545_256x240.png");
 }
 
 .ui-state-highlight .ui-icon {
-    background-image: url("../../Content/themes/base/images/ui-icons_2e83ff_256x240.png");
+    background-image: url("../../../Content/themes/base/images/ui-icons_2e83ff_256x240.png");
 }
 
 .ui-state-error .ui-icon,
 .ui-state-error-text .ui-icon {
-    background-image: url("../../Content/themes/base/images/ui-icons_cd0a0a_256x240.png");
+    background-image: url("../../../Content/themes/base/images/ui-icons_cd0a0a_256x240.png");
 }
 
 .ui-accordion .ui-accordion-icons {
@@ -337,7 +207,10 @@ input[type=button] {
 .ui-icon-triangle-1-s {
     background-position: -64px -16px;
 }
-.ui-icon-closethick { background-position: -96px -128px; }
+
+.ui-icon-closethick {
+    background-position: -96px -128px;
+}
 
 h2 .ui-icon {
     -moz-transform: scale(1.5);
@@ -368,40 +241,58 @@ h2 .ui-icon {
         font-weight: bold;
     }
 }
+
 .ui-dialog .ui-dialog-titlebar {
-	padding: .4em 1em;
-	position: relative;
+    padding: .4em 1em;
+    position: relative;
 }
-.ui-widget-header {
-	border: 1px solid $primary-neutral;
-	background: $primary-neutral url("images/ui-bg_highlight-soft_75_cccccc_1x100.png") 50% 50% repeat-x;
-	color: #222222;
-	font-weight: bold;
+
+.ui-dialog-header {
+    border: 1px solid $primary-neutral;
+    background: $primary-neutral url("../../../Content/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png") 50% 50% repeat-x;
+    color: #222222;
+    font-weight: bold;
+
+    .ui-icon {
+        background-image: url("../../../Content/themes/base/images/ui-icons_222222_256x240.png");
+    }
 }
-.ui-widget-content {
-	border: 1px solid $primary-neutral;
-	background: #ffffff url("images/ui-bg_flat_75_ffffff_40x100.png") 50% 50% repeat-x;
-	color: #222222;
+
+.ui-dialog-content {
+    border: 1px solid $primary-neutral;
+    background: $primary-white url("../../../Content/themes/base/images/ui-bg_flat_75_ffffff_40x100.png") 50% 50% repeat-x;
+    color: #222222;
+
+    .ui-icon {
+        background-image: url("../../../Content/themes/base/images/ui-icons_222222_256x240.png");
+    }
 }
+
 .ui-dialog .ui-dialog-titlebar-close {
-	position: absolute;
-	right: .3em;
-	top: 50%;
-	width: 20px;
-	margin: -10px 0 0 0;
-	padding: 1px;
-	height: 20px;
+    position: absolute;
+    right: .3em;
+    top: 50%;
+    width: 20px;
+    margin: -10px 0 0 0;
+    padding: 1px;
+    height: 20px;
 }
+
 .ui-button-icon-only .ui-icon {
-	position: absolute;
-	top: 50%;
-	margin-top: -8px;
-	left: 50%;
-	margin-left: -8px;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    left: 50%;
+    margin-left: -8px;
 }
+
 .ui-button-icon-only .ui-button-text,
 .ui-button-icons-only .ui-button-text {
     display: block;
-	padding: .4em;
-	text-indent: -9999999px;
+    padding: .4em;
+    text-indent: -9999999px;
+}
+
+.card {
+    border-color: $secondary-black;
 }

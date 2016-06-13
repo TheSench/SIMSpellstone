@@ -75,7 +75,7 @@ select, input {
 body {
   font: 100% Helvetica, sans-serif;
   color: #4d90b2;
-  background-color: white;
+  background-color: #e0eef6;
 }
 
 .accordion .ui-accordion-header {
@@ -84,7 +84,7 @@ body {
 
 .accordion h6.ui-accordion-header,
 .accordion span.ui-accordion-header {
-  color: #311709;
+  color: #09181f;
   border-color: #c6e0ee;
   background-color: #e0eef6;
   border-style: outset;
@@ -152,15 +152,6 @@ input[type=button] {
 .ui-icon {
   width: 16px;
   height: 16px;
-}
-
-.ui-icon,
-.ui-widget-content .ui-icon {
-  background-image: url("../../Content/themes/base/images/ui-icons_222222_256x240.png");
-}
-
-.ui-widget-header .ui-icon {
-  background-image: url("../../Content/themes/base/images/ui-icons_222222_256x240.png");
 }
 
 .ui-state-default .ui-icon {
@@ -244,17 +235,25 @@ h2 .ui-icon {
   position: relative;
 }
 
-.ui-widget-header {
+.ui-dialog-header {
   border: 1px solid #c06a3f;
   background: #c06a3f url("images/ui-bg_highlight-soft_75_cccccc_1x100.png") 50% 50% repeat-x;
   color: #222222;
   font-weight: bold;
 }
 
-.ui-widget-content {
+.ui-dialog-header .ui-icon {
+  background-image: url("../../Content/themes/base/images/ui-icons_222222_256x240.png");
+}
+
+.ui-dialog-content {
   border: 1px solid #c06a3f;
-  background: #ffffff url("images/ui-bg_flat_75_ffffff_40x100.png") 50% 50% repeat-x;
+  background: #f6dbce url("images/ui-bg_flat_75_ffffff_40x100.png") 50% 50% repeat-x;
   color: #222222;
+}
+
+.ui-dialog-content .ui-icon {
+  background-image: url("../../Content/themes/base/images/ui-icons_222222_256x240.png");
 }
 
 .ui-dialog .ui-dialog-titlebar-close {
