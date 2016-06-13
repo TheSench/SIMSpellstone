@@ -1513,6 +1513,14 @@
     <resource card_id="15060" number="2" />
   </fusion_recipe>
   <fusion_recipe>
+    <card_id>15061</card_id>
+    <resource card_id="5061" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25061</card_id>
+    <resource card_id="15061" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
     <card_id>15062</card_id>
     <resource card_id="5062" number="2" />
   </fusion_recipe>
