@@ -60,6 +60,7 @@
         $scope.raids = $window.RAIDS;
         $scope.battlegrounds = $window.BATTLEGROUNDS;
         $scope.tower = false;
+        $scope.auto = false;
 
         $scope.debugMode = false;
 

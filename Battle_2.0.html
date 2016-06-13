@@ -112,12 +112,12 @@
                                 </select>
                                 <input style="float:initial;" type="NUMBER" id="raid_level" min="25" max="40" step="1" value="25" size="6">
                             </div>
+                        </div>
+                        <div class="accordion">
                             <h6>Advanced Settings</h6>
                             <div>
                                 <div><i>Enemy Deck Hash:</i></div><input type="text" id="deck2" value="" size="100"><br />
                                 <font color="#666"><strong>Hash example:</strong> w98CAI5kfnIkDbHwI5YHwI5YHcBkHJcBkHJcBkHJ</font><br />
-                                <input type="checkbox" id="ordered2"><label for="ordered2">Ordered</label>
-                                <input type="checkbox" id="exactorder2"><label for="exactorder2">Don't Shuffle</label>
                             </div>
                         </div>
                     </div>
@@ -134,13 +134,28 @@
                     </select>
                     <br />
                     <br />
-                    <input type="checkbox" id="surge"><label for="surge">Defender First</label><br />
-                    <br />
                     <div><span class="label">Battleground:</span></div>
                     <div id="battleground" style="overflow: auto; width: 200px; height: 80px; border: 1px solid #336699; padding-left: 5px; text-align: left; ">
                         <input ng-repeat-start="BGE in selectableBattlegrounds()" type="checkbox" name="battleground" id="battleground_{{BGE.id}}" value="{{BGE.id}}">
                         <label for="battleground_{{BGE.id}}">{{BGE.name}}</label>
                         <br ng-repeat-end />
+                    </div>
+                    <div class="accordion">
+                        <h6>Advanced Settings</h6>
+                        <div>
+                            <h6>Attacker</h6>
+                            <div id="attackerAdvanced" class="collapsible">
+                                <input type="checkbox" ng-model="auto" id="auto_mode"><label for="auto_mode">Auto Mode</label><br />
+                                <input type="checkbox" ng-disabled="!auto" id="ordered"><label for="ordered" ng-class="{grey:!auto}">Ordered</label><br />
+                                <input type="checkbox" ng-disabled="!auto" id="exactorder"><label for="exactorder" ng-class="{grey:!auto}">Don't Shuffle</label><br />
+                            </div>
+                            <h6>Defender</h6>
+                            <div id="attackerAdvanced" class="collapsible">
+                                <input type="checkbox" id="ordered2"><label for="ordered2">Ordered</label><br />
+                                <input type="checkbox" id="exactorder2"><label for="exactorder2">Don't Shuffle</label><br />
+                                <input type="checkbox" id="surge"><label for="surge">Defender First</label><br />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -150,7 +165,6 @@
                 <div>
                     <div id="debugContainer" class="collapsible">
                         <input type="checkbox" id="debug"><label for="debug">Debug Mode</label><br />
-                        <input type="checkbox" id="auto_mode"><label for="auto_mode">Auto Mode</label><br />
                     </div>
                 </div>
             </div>
