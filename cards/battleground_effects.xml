@@ -36,6 +36,23 @@
     <icon>filter_dragon_64</icon>
     <effect>
       <skill id="heal" mult=".2" all="1" y="9" />
+      <!-- <skill id='displayEffect' trigger='onSkill' y='99' s='heal' >
+				<projectile_effect>
+					<prefab>dragonHealProjectile</prefab>
+					<bundle_id>62</bundle_id>
+					<delay>0</delay>
+					<duration>.5</duration>
+					<translation>.5</translation>
+					<offset>2</offset>
+				</projectile_effect>
+				<target_effect>
+					<prefab>dragonHealTarget</prefab>
+					<bundle_id>62</bundle_id>
+					<delay>.5</delay>
+					<duration>1</duration>
+					<shake>true</shake>
+				</target_effect>
+			</skill> -->
     </effect>
   </battleground>
   <battleground>

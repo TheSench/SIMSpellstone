@@ -30453,6 +30453,261 @@ var CARDS = {
       },
     }
   },
+  "5064": {
+    "id": "5064",
+    "name": "Anshar",
+    "picture": "Airship_Stalker_A",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "9",
+    "attack": 5,
+    "health": 18,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "rally",
+        "x": 3,
+        "y": "9",
+        "z": 9,
+      },
+      {
+        "id": "burn",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 19,
+        "skill": [],
+      },
+      "3": {
+        "health": 20,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "health": 21,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "attack": 6,
+        "skill": [],
+      },
+      "6": {
+        "health": 22,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "15064": {
+    "id": "15064",
+    "name": "Anshar, the Airbane",
+    "picture": "Airship_Stalker_A",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "9",
+    "attack": 6,
+    "health": 23,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "rally",
+        "x": 4,
+        "y": "9",
+        "z": 9,
+      },
+      {
+        "id": "burn",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 24,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 25,
+        "skill": [],
+      },
+      "5": {
+        "attack": 7,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 5,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "25064": {
+    "id": "25064",
+    "name": "Anshar, the Skybane",
+    "picture": "Airship_Stalker_B",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "9",
+    "attack": 7,
+    "health": 26,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 3,
+      },
+      {
+        "id": "rally",
+        "x": 5,
+        "y": "9",
+        "z": 9,
+      },
+      {
+        "id": "burn",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 27,
+        "skill": [],
+      },
+      "3": {
+        "health": 29,
+        "skill": [],
+      },
+      "4": {
+        "attack": 8,
+        "health": 30,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "rally",
+            "x": 5,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "rally",
+            "x": 6,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "burn",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
   "6000": {
     "id": "6000",
     "name": "Furnace Mech",
@@ -43742,6 +43997,241 @@ var CARDS = {
             "id": "weaken",
             "x": 3,
             "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "6062": {
+    "id": "6062",
+    "name": "Abzu",
+    "picture": "Ship_Destroyer_A",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "9",
+    "attack": 4,
+    "health": 12,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 1,
+        "y": "9",
+        "z": 9,
+      },
+      {
+        "id": "weaken",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 13,
+        "skill": [],
+      },
+      "3": {
+        "attack": 5,
+        "skill": [],
+      },
+      "4": {
+        "health": 14,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "16062": {
+    "id": "16062",
+    "name": "Abzu, the Wavebane",
+    "picture": "Ship_Destroyer_A",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "9",
+    "attack": 5,
+    "health": 15,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "9",
+        "z": 9,
+      },
+      {
+        "id": "weaken",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 6,
+        "skill": [],
+      },
+      "3": {
+        "health": 17,
+        "skill": [],
+      },
+      "4": {
+        "health": 18,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "weaken",
+            "x": 4,
+          },
+        ],
+      },
+      "6": {
+        "attack": 7,
+        "skill": [],
+      },
+    }
+  },
+  "26062": {
+    "id": "26062",
+    "name": "Abzu, the Seabane",
+    "picture": "Ship_Destroyer_B",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "9",
+    "attack": 8,
+    "health": 18,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "9",
+        "z": 9,
+      },
+      {
+        "id": "weaken",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 19,
+        "skill": [],
+      },
+      "3": {
+        "health": 21,
+        "skill": [],
+      },
+      "4": {
+        "attack": 9,
+        "health": 22,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "weaken",
+            "x": 4,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "weaken",
+            "x": 5,
           },
         ],
       },
@@ -58427,6 +58917,217 @@ var CARDS = {
             "id": "enfeeble",
             "x": 4,
             "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "7062": {
+    "id": "7062",
+    "name": "Brine Bellower",
+    "picture": "Epic_Water_Steed_Dragon_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "9",
+    "attack": 4,
+    "health": 17,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "3": {
+        "health": 18,
+        "skill": [],
+      },
+      "4": {
+        "health": 19,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "attack": 5,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "jam",
+            "c": 7,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "17062": {
+    "id": "17062",
+    "name": "Brine Crasher",
+    "picture": "Epic_Water_Steed_Dragon_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "9",
+    "attack": 5,
+    "health": 19,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "jam",
+        "c": 6,
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 20,
+        "skill": [],
+      },
+      "3": {
+        "health": 21,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "jam",
+            "c": 6,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "attack": 6,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "27062": {
+    "id": "27062",
+    "name": "Brine Devourer",
+    "picture": "Epic_Water_Steed_Dragon_B",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "9",
+    "attack": 6,
+    "health": 22,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 3,
+      },
+      {
+        "id": "jam",
+        "c": 5,
+      },
+      {
+        "id": "berserk",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+      "3": {
+        "attack": 7,
+        "health": 23,
+        "skill": [],
+      },
+      "4": {
+        "health": 24,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 4,
           },
         ],
       },
@@ -83098,127 +83799,10 @@ var CARDS = {
       },
     }
   },
-  "9993": {
-    "id": "9993",
-    "name": "",
-    "picture": "New13_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19993": {
-    "id": "19993",
-    "name": "",
-    "picture": "New13_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29993": {
-    "id": "29993",
-    "name": "",
-    "picture": "New13_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9994": {
-    "id": "9994",
-    "name": "",
-    "picture": "New15_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19994": {
-    "id": "19994",
-    "name": "",
-    "picture": "New15_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29994": {
-    "id": "29994",
-    "name": "",
-    "picture": "New15_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9995": {
-    "id": "9995",
-    "name": "",
-    "picture": "New16_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19995": {
-    "id": "19995",
-    "name": "",
-    "picture": "New16_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29995": {
-    "id": "29995",
-    "name": "",
-    "picture": "New16_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
   "9996": {
     "id": "9996",
     "name": "",
-    "picture": "New18_A",
+    "picture": "New15_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -83231,7 +83815,7 @@ var CARDS = {
   "19996": {
     "id": "19996",
     "name": "",
-    "picture": "New18_A",
+    "picture": "New15_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -83244,7 +83828,7 @@ var CARDS = {
   "29996": {
     "id": "29996",
     "name": "",
-    "picture": "New18_B",
+    "picture": "New15_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -83257,7 +83841,7 @@ var CARDS = {
   "9997": {
     "id": "9997",
     "name": "",
-    "picture": "New19_A",
+    "picture": "New18_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -83270,7 +83854,7 @@ var CARDS = {
   "19997": {
     "id": "19997",
     "name": "",
-    "picture": "New19_A",
+    "picture": "New18_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -83283,7 +83867,7 @@ var CARDS = {
   "29997": {
     "id": "29997",
     "name": "",
-    "picture": "New19_B",
+    "picture": "New18_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -83296,7 +83880,7 @@ var CARDS = {
   "9998": {
     "id": "9998",
     "name": "",
-    "picture": "New8_A",
+    "picture": "New19_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -83309,7 +83893,7 @@ var CARDS = {
   "19998": {
     "id": "19998",
     "name": "",
-    "picture": "New8_A",
+    "picture": "New19_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -83322,7 +83906,7 @@ var CARDS = {
   "29998": {
     "id": "29998",
     "name": "",
-    "picture": "New8_B",
+    "picture": "New19_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -83335,7 +83919,7 @@ var CARDS = {
   "9999": {
     "id": "9999",
     "name": "",
-    "picture": "New9_A",
+    "picture": "New1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -83348,7 +83932,7 @@ var CARDS = {
   "19999": {
     "id": "19999",
     "name": "",
-    "picture": "New9_A",
+    "picture": "New1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -83361,7 +83945,7 @@ var CARDS = {
   "29999": {
     "id": "29999",
     "name": "",
-    "picture": "New9_B",
+    "picture": "New1_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -84254,6 +84838,13 @@ var CAMPAIGNS = {
     "location_id": "6",
     "side_mission": "",
     "missions": ["361","362","363","364"]
+  },
+  "4000": {
+    "id": "4000",
+    "name": "Arena Test 1",
+    "location_id": "6",
+    "side_mission": "",
+    "missions": ["11"]
   },
 };
 var MISSIONS = {
@@ -109106,6 +109697,7 @@ var FUSIONS = {
   "15061" : "25061",
   "15062" : "25062",
   "15063" : "25063",
+  "15064" : "25064",
   "1600" : "11600",
   "16000" : "26000",
   "16001" : "26001",
@@ -109174,6 +109766,7 @@ var FUSIONS = {
   "1606" : "11606",
   "16060" : "26060",
   "16061" : "26061",
+  "16062" : "26062",
   "1607" : "11607",
   "1610" : "11610",
   "1613" : "11613",
@@ -109257,6 +109850,7 @@ var FUSIONS = {
   "17059" : "27059",
   "17060" : "27060",
   "17061" : "27061",
+  "17062" : "27062",
   "18000" : "28000",
   "18001" : "28001",
   "18002" : "28002",
@@ -109384,6 +109978,7 @@ var FUSIONS = {
   "5061" : "15061",
   "5062" : "15062",
   "5063" : "15063",
+  "5064" : "15064",
   "6000" : "16000",
   "6001" : "16001",
   "6002" : "16002",
@@ -109445,6 +110040,7 @@ var FUSIONS = {
   "6058" : "16058",
   "6060" : "16060",
   "6061" : "16061",
+  "6062" : "16062",
   "7000" : "17000",
   "7001" : "17001",
   "7002" : "17002",
@@ -109507,6 +110103,7 @@ var FUSIONS = {
   "7059" : "17059",
   "7060" : "17060",
   "7061" : "17061",
+  "7062" : "17062",
   "8000" : "18000",
   "8001" : "18001",
   "8002" : "18002",
