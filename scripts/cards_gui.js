@@ -50,6 +50,23 @@ var CARD_GUI = {};
     }
 
     function draw_card_list(list, compactSkills, onclick, onrightclick, skip, end) {
+        var cards = make_card_list(list, compactSkills, onclick, onrightclick, skip, end);
+        var $cardSpace = $("#cardSpace");
+        $cardSpace.children().remove();
+        $cardSpace.append(cards);
+        return $cardSpace;
+    }
+
+
+    function draw_inventory(list) {
+        var cards = make_card_list(list);
+        var $cardSpace = $("#deck");
+        $cardSpace.children().remove();
+        $cardSpace.append(cards);
+        return $cardSpace;
+    }
+
+    function make_card_list(list, compactSkills, onclick, onrightclick, skip, end) {
         skip = skip || 0;
         var htmlCard;
         var lastUnit;
@@ -88,9 +105,7 @@ var CARD_GUI = {};
             htmlCard.appendChild(multIcon);
             htmlCard.appendChild(multDiv);
         }
-        var $cardSpace = $("#cardSpace");
-        $cardSpace.children().remove();
-        $cardSpace.append(cards);
+        return cards;
     }
 
     function draw_cards(field, drawableHand, callback, turn) {
@@ -543,6 +558,7 @@ var CARD_GUI = {};
     CARD_GUI.makeCardListHTML = makeCardListHTML;
     CARD_GUI.draw_card_list = draw_card_list;
     CARD_GUI.draw_cards = draw_cards;
+    CARD_GUI.draw_inventory = draw_inventory;
 
     Object.defineProperties(CARD_GUI, {
         assetsRoot: {

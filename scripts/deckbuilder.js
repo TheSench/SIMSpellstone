@@ -73,8 +73,6 @@ var initDeckBuilder = function () {
         source: []
     });
 
-
-
     var dhtml = $("#deck").sortable({
         items: '.card:not(.commander):not(.blank)',
         tolerance: "intersect",
@@ -247,7 +245,11 @@ var drawDeck = function () {
 }
 
 function doDrawDeck() {
-    $deck = CARD_GUI.draw_deck(deck, inventoryMode);
+    if (inventoryMode) {
+        $deck = CARD_GUI.draw_inventory(deck.deck);
+    } else {
+        $deck = CARD_GUI.draw_deck(deck, inventoryMode);
+    }
     var $htmlCards = $deck.find(".card:not(.blank)")
     addEventHandlers($htmlCards);
     updateHash();
@@ -548,7 +550,10 @@ var addUnitToDeck = function (unit, htmlCard) {
 
     if (inventoryMode) {
         deck.deck.push(unit);
+        /*
         $deck.append($htmlCard)
+        */
+        doDrawDeck();
     } else if (is_commander(unit.id)) {
         deck.commander = unit;
         $deck.find(".card").first().replaceWith($htmlCard);
@@ -598,8 +603,27 @@ var removeFromDeck = function (event) {
     var $htmlCard = $(event.delegateTarget)
     var index = $htmlCard.index();
     if (inventoryMode) {
-        unit = deck.deck.splice(index - 1, 1)[0];
+        var inventory = deck.deck;
+        var invIndex = 0;
+        var i = 0;
+        var lastUnit;
+        for (var len = inventory.length; i < len; i++) {
+            var unit = inventory[i];
+            if (lastUnit) {
+                if (!areEqual(unit, lastUnit)) {
+                    invIndex++;
+                }
+            }
+            if (invIndex == index) {
+                break;
+            }
+            lastUnit = unit;
+        }
+        unit = deck.deck.splice(i, 1)[0];
+        /*
         $htmlCard.remove();
+        */
+        doDrawDeck();
     } else if (index == 0) {
         unit = deck.commander;
         if (areEqual(unit, elariaCaptain)) return;
@@ -1790,10 +1814,14 @@ function toggleInventoryMode() {
     if (inventoryMode) {
         $("#inventoryMode").val("Switch to Deck Builder");
         $deck.find(".card.blank").remove();
+        $deck.sortable("disable");
+        doDrawDeck();
     } else {
         $("#inventoryMode").val("Switch to Inventory Builder");
         for (var i = $deck.find(".card").length; i < 16; i++) {
             $deck.append("<div class='card blank'></div>");
         }
+        $deck.sortable("enable");
+        doDrawDeck();
     }
 }

@@ -452,7 +452,8 @@ fieldset {
     position: absolute;
     padding: 1px;
     margin-left: 1px;
-    color: white;
+    /*color: white;*/
+    color:transparent;
     overflow:hidden;
 }
 

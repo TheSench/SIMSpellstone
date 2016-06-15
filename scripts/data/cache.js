@@ -83919,7 +83919,7 @@ var CARDS = {
   "9999": {
     "id": "9999",
     "name": "",
-    "picture": "New1_A",
+    "picture": "New6_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -83932,7 +83932,7 @@ var CARDS = {
   "19999": {
     "id": "19999",
     "name": "",
-    "picture": "New1_A",
+    "picture": "New6_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -83945,7 +83945,7 @@ var CARDS = {
   "29999": {
     "id": "29999",
     "name": "",
-    "picture": "New1_B",
+    "picture": "New6_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -84838,13 +84838,6 @@ var CAMPAIGNS = {
     "location_id": "6",
     "side_mission": "",
     "missions": ["361","362","363","364"]
-  },
-  "4000": {
-    "id": "4000",
-    "name": "Arena Test 1",
-    "location_id": "6",
-    "side_mission": "",
-    "missions": ["11"]
   },
 };
 var MISSIONS = {
