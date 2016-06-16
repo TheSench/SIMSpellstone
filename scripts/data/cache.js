@@ -2,6 +2,7 @@ var CARDS = {
   "1000": {
     "id": "1000",
     "name": "Pegasus",
+    "desc": "\"Majestic Hooved Beast, Sky Galloper, Long Faced Bird\" - Rejected names from the historical text 'Mythical Nomenclature'.",
     "picture": "Pegasus_A",
     "rarity": "1",
     "set": "1000",
@@ -25,6 +26,7 @@ var CARDS = {
   "1001": {
     "id": "1001",
     "name": "Angelic Knight",
+    "desc": "The fighting prowess of an angel is not questioned by many. At least not for long.",
     "picture": "Angel_Knight_A",
     "rarity": "1",
     "set": "1000",
@@ -54,6 +56,7 @@ var CARDS = {
   "1002": {
     "id": "1002",
     "name": "Windstorm Elemental",
+    "desc": "\"Woosh woosh woosh woosh\" - Ancient Windstorm Elemental saying.",
     "picture": "Cloud_Elemental_A",
     "rarity": "1",
     "set": "1000",
@@ -82,6 +85,7 @@ var CARDS = {
   "1003": {
     "id": "1003",
     "name": "Kestrel",
+    "desc": "Kestrels are the favored form of guard for noble Aether mages.",
     "picture": "Kestral_A",
     "rarity": "1",
     "set": "1000",
@@ -113,6 +117,7 @@ var CARDS = {
   "1004": {
     "id": "1004",
     "name": "Wind Sprite",
+    "desc": "Manifestations of the wind itself, these creatures buffet their enemies with strong gusts and laughter.",
     "picture": "Wind_Spirit_A",
     "rarity": "1",
     "set": "1000",
@@ -145,6 +150,7 @@ var CARDS = {
   "1005": {
     "id": "1005",
     "name": "Angelic Brawler",
+    "desc": "\"Fight me in singular combat, bro!\"",
     "picture": "Warrior_Angel_A",
     "rarity": "1",
     "set": "1000",
@@ -179,6 +185,7 @@ var CARDS = {
   "1006": {
     "id": "1006",
     "name": "Soul Wisp",
+    "desc": "\"WoooOOOoooOOOooo\"",
     "picture": "Light_Wisp_A",
     "rarity": "1",
     "set": "1000",
@@ -211,6 +218,7 @@ var CARDS = {
   "1007": {
     "id": "1007",
     "name": "Fox Trickster",
+    "desc": "Foxes often specialize in small magic or illusions, confusing their opponents so they can escape.",
     "picture": "Fox_Trickster_A",
     "rarity": "1",
     "set": "1000",
@@ -248,6 +256,7 @@ var CARDS = {
   "1010": {
     "id": "1010",
     "name": "Lightning Elemental",
+    "desc": "Lightning strikes where it pleases.",
     "picture": "Lightning_Elemental_A",
     "rarity": "2",
     "set": "1000",
@@ -289,6 +298,7 @@ var CARDS = {
   "1011": {
     "id": "1011",
     "name": "Archive Keeper",
+    "desc": "Those looking for their secrets can find them under archive \"P\" for pain.",
     "picture": "Living_Heiroglyphic_A",
     "rarity": "2",
     "set": "1000",
@@ -343,6 +353,7 @@ var CARDS = {
   "1012": {
     "id": "1012",
     "name": "Cloud Sylph",
+    "desc": "\"Ooooh! Fluffy!\" - Last Words of Bilmior the Adventurer",
     "picture": "Sylph_A",
     "rarity": "2",
     "set": "1000",
@@ -395,6 +406,7 @@ var CARDS = {
   "1014": {
     "id": "1014",
     "name": "Cherub",
+    "desc": "Shot through the heart, and you're to blame.",
     "picture": "Cherub_A",
     "rarity": "2",
     "set": "1000",
@@ -433,6 +445,7 @@ var CARDS = {
   "1015": {
     "id": "1015",
     "name": "Windfrog",
+    "desc": "\"It's impossible to attack them when they keep knocking us off our feet!\" - Frustrated Soldier",
     "picture": "Wind_Frog_A",
     "rarity": "2",
     "set": "1000",
@@ -559,6 +572,7 @@ var CARDS = {
   "1018": {
     "id": "1018",
     "name": "Armored Eagle",
+    "desc": "\"Jarad, is that bird wearing a suit of armor?\" - Unsuspecting Castle Guard",
     "picture": "Armored_Eagle_A",
     "rarity": "2",
     "set": "1000",
@@ -606,6 +620,7 @@ var CARDS = {
   "1019": {
     "id": "1019",
     "name": "Oracle",
+    "desc": "Aether Oracles channel the strength of storms to protect their allies.",
     "picture": "Devote_Oracle_A",
     "rarity": "2",
     "set": "1000",
@@ -723,6 +738,7 @@ var CARDS = {
   "1026": {
     "id": "1026",
     "name": "Glass Colossus",
+    "desc": "The army thought that because he was made of glass, he would shatter easily... right up until arrows deflected off him.",
     "picture": "Glass_Colossuss_A",
     "rarity": "3",
     "set": "1000",
@@ -857,6 +873,7 @@ var CARDS = {
   "1028": {
     "id": "1028",
     "name": "Heroic Frog",
+    "desc": "\"He's not the frog we deserve, but he is the frog we need.\" - Samael, Leader of Aether",
     "picture": "Frog_Hero_A",
     "rarity": "3",
     "set": "1000",
@@ -2428,6 +2445,7 @@ var CARDS = {
   "1300": {
     "id": "1300",
     "name": "Skeleton Warrior",
+    "desc": "\"They may not have brains, but they have... well, not much.\" - Aria, Necromancer",
     "picture": "Skeleton_Warrior_A",
     "rarity": "1",
     "set": "1000",
@@ -2452,6 +2470,7 @@ var CARDS = {
   "1301": {
     "id": "1301",
     "name": "Flame Spirit",
+    "desc": "\"Help! Help! I'm on fire! ...Oh wait.\"",
     "picture": "Flame_Spirit_A",
     "rarity": "1",
     "set": "1000",
@@ -2480,6 +2499,7 @@ var CARDS = {
   "1302": {
     "id": "1302",
     "name": "Phase Imp",
+    "desc": "Bending the lines between realities, the Phase Imp can poison you before you even know it exists.",
     "picture": "Phase_Imp_A",
     "rarity": "1",
     "set": "1000",
@@ -2508,6 +2528,7 @@ var CARDS = {
   "1303": {
     "id": "1303",
     "name": "Undead Brute",
+    "desc": "\"They may not have brains, but they have... well, at least this one is big. That's a start.\" - Aria, Necromancer",
     "picture": "Undead_Brute_A",
     "rarity": "1",
     "set": "1000",
@@ -2536,6 +2557,7 @@ var CARDS = {
   "1304": {
     "id": "1304",
     "name": "Goblin Rogue",
+    "desc": "Quick and nimble, they can cut your purse and your stomach before you know they are there.",
     "picture": "Goblin_Rogue_A",
     "rarity": "1",
     "set": "1000",
@@ -2569,6 +2591,7 @@ var CARDS = {
   "1305": {
     "id": "1305",
     "name": "Smoldering Elemental",
+    "desc": "\"I thought you said I had to CROSS the lava, not FIGHT the lava!\" - Bilmior the Adventurer",
     "picture": "Molten_Flame_A",
     "rarity": "1",
     "set": "1000",
@@ -2602,6 +2625,7 @@ var CARDS = {
   "1306": {
     "id": "1306",
     "name": "Lava Crab",
+    "desc": "*snap* *snap*",
     "picture": "Lava_Crab_A",
     "rarity": "1",
     "set": "1000",
@@ -2634,6 +2658,7 @@ var CARDS = {
   "1307": {
     "id": "1307",
     "name": "Horned Rakken",
+    "desc": "\"It's not their speed or their weakening poison you need to look out for, it's their knives!\" - Desert Nomad",
     "picture": "Horned_Lizard_A",
     "rarity": "1",
     "set": "1000",
@@ -2769,6 +2794,7 @@ var CARDS = {
   "1313": {
     "id": "1313",
     "name": "Lavafrog",
+    "desc": "\"I once stepped on one, dang near melted my entire boot!\" - Valjhor, Traveling Merchant",
     "picture": "Hellfrog_A",
     "rarity": "2",
     "set": "1000",
@@ -2923,6 +2949,7 @@ var CARDS = {
   "1317": {
     "id": "1317",
     "name": "Fire Imp",
+    "desc": "Fire Imp tongue is considered by many to be the spiciest food ingredient in the known world. Some days even they cannot handle it.",
     "picture": "Fire_Imp_A",
     "rarity": "2",
     "set": "1000",
@@ -2954,6 +2981,7 @@ var CARDS = {
   "1318": {
     "id": "1318",
     "name": "Smelted Lava Slug",
+    "desc": "\"Move! Get out of the way! It's going to trample you! ...Eventually.\" - Wyld Ranger",
     "picture": "Lava_Slug_A",
     "rarity": "2",
     "set": "1000",
@@ -3184,6 +3212,7 @@ var CARDS = {
   "1327": {
     "id": "1327",
     "name": "Fallen Angel",
+    "desc": "\"Only those that have truly flown can know what it means to fall.\"",
     "picture": "Fallen_Angel_A",
     "rarity": "3",
     "set": "1000",
@@ -3378,6 +3407,7 @@ var CARDS = {
   "1330": {
     "id": "1330",
     "name": "Devouring Locusts",
+    "desc": "\"A thirty foot skeleton or a dragon? I can fight those. This? I cannot even hope to slow this.\" - Eos, Hero of Llarym",
     "picture": "Plague_of_Fire_Locusts_A",
     "rarity": "3",
     "set": "1000",
@@ -4497,6 +4527,7 @@ var CARDS = {
   "1600": {
     "id": "1600",
     "name": "Woodland Fairy",
+    "desc": "Mischievous by nature, they appear before you can even spot them, and are gone just as fast.",
     "picture": "Fairy_A",
     "rarity": "1",
     "set": "1000",
@@ -4520,6 +4551,7 @@ var CARDS = {
   "1601": {
     "id": "1601",
     "name": "Moss Golem",
+    "desc": "\"Beware when sitting on a boulder in the Wyldwood, it may not enjoy your choice of seat.\" -Tellum, Novice Adventurer",
     "picture": "Moss_Golem_A",
     "rarity": "1",
     "set": "1000",
@@ -4547,6 +4579,7 @@ var CARDS = {
   "1602": {
     "id": "1602",
     "name": "Dire Wolf",
+    "desc": "\"Have ya ever gotten between a wolf and her pups? No? I wouldn't suggest it.\" - Wyld Ranger",
     "picture": "Dire_Wolf_A",
     "rarity": "1",
     "set": "1000",
@@ -4580,6 +4613,7 @@ var CARDS = {
   "1603": {
     "id": "1603",
     "name": "Mermaid Mage",
+    "desc": "Some myths claim that the origin of all healing magic came first from the seas, carried by the hands of mermaids.",
     "picture": "Mermaid_Mage_A",
     "rarity": "1",
     "set": "1000",
@@ -4613,6 +4647,7 @@ var CARDS = {
   "1604": {
     "id": "1604",
     "name": "Toad Warrior",
+    "desc": "\"They say he doesn't talk much, but I disagree. I've seen him do a lot of talking with that sword.\" - Frans, Elaria Bartender",
     "picture": "Frog_Warrior_A",
     "rarity": "1",
     "set": "1000",
@@ -4642,6 +4677,7 @@ var CARDS = {
   "1605": {
     "id": "1605",
     "name": "Flying Squirrel",
+    "desc": "\"Mark my words, that squirrel is smarter than it looks!\" - Valjhor, moments after his magical trinkets were stolen.",
     "picture": "Air_Nymph_A",
     "rarity": "1",
     "set": "1000",
@@ -4672,6 +4708,7 @@ var CARDS = {
   "1606": {
     "id": "1606",
     "name": "Angler Fish",
+    "desc": "Their prey is lured in with their hypnotic lantern. The last thing they see is the large mouth before everything goes dark.",
     "picture": "Angler_Fish_A",
     "rarity": "1",
     "set": "1000",
@@ -4705,6 +4742,7 @@ var CARDS = {
   "1607": {
     "id": "1607",
     "name": "Turtle Tamer",
+    "desc": "Slow and steady... crushes its enemies underfoot.",
     "picture": "Turtle_Tamer_A",
     "rarity": "1",
     "set": "1000",
@@ -4731,6 +4769,7 @@ var CARDS = {
   "1610": {
     "id": "1610",
     "name": "Ranger",
+    "desc": "Protectors of Elaria, they tread the woodland as their second home.",
     "picture": "Ranger_A",
     "rarity": "2",
     "set": "1000",
@@ -4773,6 +4812,7 @@ var CARDS = {
   "1613": {
     "id": "1613",
     "name": "Acidic Spider",
+    "desc": "\"Their poison can bring a full grown Tusker to its knees\" - Elyse, Ranger",
     "picture": "Giant_Spider_A",
     "rarity": "2",
     "set": "1000",
@@ -4827,6 +4867,7 @@ var CARDS = {
   "1614": {
     "id": "1614",
     "name": "Druid",
+    "desc": "\"No one is allowed to touch these bunnies.\"",
     "picture": "Druid_A",
     "rarity": "2",
     "set": "1000",
@@ -4887,6 +4928,7 @@ var CARDS = {
   "1615": {
     "id": "1615",
     "name": "Rune Panther",
+    "desc": "When angered, they pull the energy of the earth around them to glow with awesome power.",
     "picture": "Rune_Panther_A",
     "rarity": "2",
     "set": "1000",
@@ -5116,6 +5158,7 @@ var CARDS = {
   "1618": {
     "id": "1618",
     "name": "Frog Scout",
+    "desc": "\"Their scouts are invaluable, but we need to stop letting them name the new settlements. I can't take another Flytopia.\" - Expedition Researcher",
     "picture": "Frog_Scout_A",
     "rarity": "2",
     "set": "1000",
@@ -5151,6 +5194,7 @@ var CARDS = {
   "1619": {
     "id": "1619",
     "name": "Earth Elemental",
+    "desc": "\"Sticks and stones can break my bones... No, that's the end of the rhyme.\" - Frans, Elaria Bartender",
     "picture": "Earth_Elemental_A",
     "rarity": "2",
     "set": "1000",
@@ -5943,6 +5987,7 @@ var CARDS = {
   "1629": {
     "id": "1629",
     "name": "Rock Titan",
+    "desc": "Who watches the horse watcher?",
     "picture": "Rock_Titan_A",
     "rarity": "3",
     "set": "1000",
@@ -14099,6 +14144,7 @@ var CARDS = {
   "2035": {
     "id": "2035",
     "name": "Mysterious Egg",
+    "desc": "A mysterious egg we picked up during our travels. No one knows where it came from, but it begins to move when near Embersouls.",
     "picture": "Common_Dragon_A",
     "rarity": "1",
     "set": "2000",
@@ -14123,6 +14169,7 @@ var CARDS = {
   "2036": {
     "id": "2036",
     "name": "Narix, Dragon Whelp",
+    "desc": "The egg has hatched into a newborn dragon! He's got an appetite for Embersouls.",
     "picture": "Rare_Dragon_A",
     "rarity": "2",
     "set": "2000",
@@ -14162,6 +14209,7 @@ var CARDS = {
   "2037": {
     "id": "2037",
     "name": "Narix, the Defiant",
+    "desc": "Narix has grown in size, and he's becoming harder to control. He still follows your orders, but he's getting more intelligent every day.",
     "picture": "Epic_Dragon_B",
     "rarity": "3",
     "set": "2000",
@@ -14966,6 +15014,7 @@ var CARDS = {
   "2043": {
     "id": "2043",
     "name": "Eos",
+    "desc": "The creature appeared after the battle of Llarym. The soldiers named it to honor the great hero Eos, whom had lead them to victory.",
     "picture": "Crystal_Light_Bird_A",
     "rarity": "4",
     "set": "2000",
@@ -15477,6 +15526,7 @@ var CARDS = {
   "2045": {
     "id": "2045",
     "name": "Chillbeard Giant",
+    "desc": "\"Did that dragon just ask you to please chill out?\" - Concerned Adventurer",
     "picture": "Hairy_Chest_Ice_Dragon_A",
     "rarity": "3",
     "set": "2000",
@@ -17578,6 +17628,7 @@ var CARDS = {
   "5006": {
     "id": "5006",
     "name": "Arms Enforcer",
+    "desc": "Champion of the people, master of all armaments.",
     "picture": "Chariot_A",
     "rarity": "2",
     "set": "2000",
@@ -17714,6 +17765,7 @@ var CARDS = {
   "5007": {
     "id": "5007",
     "name": "Arcane Scroll",
+    "desc": "\"Brushing your finger along the wrong rune can unleash its stored magic to disastrous effects.\" - Last Lesson of Magi Neyaroi",
     "picture": "Floating_Word_A",
     "rarity": "2",
     "set": "2000",
@@ -19120,6 +19172,7 @@ var CARDS = {
   "5014": {
     "id": "5014",
     "name": "Winged Raptor",
+    "desc": "Application for Avian classification denied. Maybe in a few million years.",
     "picture": "Raptor_Bird_A",
     "rarity": "4",
     "set": "3000",
@@ -29446,6 +29499,7 @@ var CARDS = {
   "5059": {
     "id": "5059",
     "name": "Bemola",
+    "desc": "\"Winter is coming.\"",
     "picture": "Ice_Bird_A",
     "rarity": "4",
     "set": "3000",
@@ -32218,6 +32272,7 @@ var CARDS = {
   "6007": {
     "id": "6007",
     "name": "Goblin Crew",
+    "desc": "\"What they lack in intelligence, they make up for in numbers.\" - Decim, the Firebringer",
     "picture": "Goblin_Gang_A",
     "rarity": "2",
     "set": "2000",
@@ -40794,6 +40849,7 @@ var CARDS = {
   "6046": {
     "id": "6046",
     "name": "Celerity",
+    "desc": "\"It means to be very fast, look it up!\" - Defensive Researcher",
     "picture": "Swiftness_Elemental_A",
     "rarity": "3",
     "set": "3000",
@@ -42477,6 +42533,7 @@ var CARDS = {
   "6054": {
     "id": "6054",
     "name": "Shadowcrafter",
+    "desc": "\"Never trust a magpie.\" - Kor'ladesh, Minos Poisonmancer",
     "picture": "Magpie_Rogue_A",
     "rarity": "3",
     "set": "3000",
@@ -42653,6 +42710,7 @@ var CARDS = {
   "6055": {
     "id": "6055",
     "name": "Phoenix",
+    "desc": "Born once in a thousand years, the Phoenix can never truely die.",
     "picture": "Pheonix_A",
     "rarity": "4",
     "set": "3000",
@@ -45772,6 +45830,7 @@ var CARDS = {
   "7006": {
     "id": "7006",
     "name": "Treant Sapling",
+    "desc": "One touch can pull the life force right out of you.",
     "picture": "Treant_Sapling_A",
     "rarity": "2",
     "set": "2000",
@@ -45914,6 +45973,7 @@ var CARDS = {
   "7007": {
     "id": "7007",
     "name": "Water Serpent",
+    "desc": "\"He looks so happy!\" \"Of course he does. He just found lunch!\" - Boloros Sailors",
     "picture": "Water_Serpent_A",
     "rarity": "2",
     "set": "2000",
@@ -56778,6 +56838,7 @@ var CARDS = {
   "7053": {
     "id": "7053",
     "name": "Bee Eater",
+    "desc": "Originally classified by its distinctive swollen tongue, it was soon discovered the the swollen tongue was actually a result of its diet.",
     "picture": "Insect_Death_Bringer_A",
     "rarity": "3",
     "set": "3000",
@@ -57453,6 +57514,7 @@ var CARDS = {
   "7056": {
     "id": "7056",
     "name": "Trailblazer",
+    "desc": "Its only natural predator is the wily witted coyote.",
     "picture": "Speed_Runner_A",
     "rarity": "4",
     "set": "3000",
@@ -58443,6 +58505,7 @@ var CARDS = {
   "7060": {
     "id": "7060",
     "name": "Shenami",
+    "desc": "\"What is your wish?\"",
     "picture": "Shenami_A",
     "rarity": "4",
     "set": "3000",
@@ -58508,6 +58571,7 @@ var CARDS = {
   "17060": {
     "id": "17060",
     "name": "Shenami the Divine",
+    "desc": "\"That is beyond my power.\"",
     "picture": "Shenami_A",
     "rarity": "4",
     "set": "3000",
@@ -58584,6 +58648,7 @@ var CARDS = {
   "27060": {
     "id": "27060",
     "name": "Shenami the Eternal",
+    "desc": "\"Your wish is granted.\"",
     "picture": "Shenami_B",
     "rarity": "4",
     "set": "3000",
@@ -63967,6 +64032,7 @@ var CARDS = {
   "8017": {
     "id": "8017",
     "name": "Doomsday",
+    "desc": "Hey. Hey you.",
     "picture": "Monster_A",
     "rarity": "4",
     "set": "9999",
@@ -64007,6 +64073,7 @@ var CARDS = {
   "18017": {
     "id": "18017",
     "name": "No Really, Doomsday",
+    "desc": "Hey over here.",
     "picture": "Monster_B",
     "rarity": "4",
     "set": "9999",
@@ -64061,6 +64128,7 @@ var CARDS = {
   "28017": {
     "id": "28017",
     "name": "I Mean It, Doomsday!",
+    "desc": "HEY!!!",
     "picture": "Monster_B",
     "rarity": "4",
     "set": "9999",
@@ -65833,6 +65901,7 @@ var CARDS = {
   "11000": {
     "id": "11000",
     "name": "Stormcloud Pegasus",
+    "desc": "\"Some say they grow to harness the energy of the sky. And some say they just eat a storm cloud and turn dark.\" - Magi Neyaroi",
     "picture": "Pegasus_B",
     "rarity": "1",
     "set": "1000",
@@ -65856,6 +65925,7 @@ var CARDS = {
   "21000": {
     "id": "21000",
     "name": "Astral Pegasus",
+    "desc": "\"Why are we losing to a horse with wings!? And why is it GLOWING?!?\" - Bilmior the Adventurer",
     "picture": "Pegasus_C",
     "rarity": "1",
     "set": "1000",
@@ -65885,6 +65955,7 @@ var CARDS = {
   "11001": {
     "id": "11001",
     "name": "Sky Knight",
+    "desc": "\"Are you from heaven? Because the fall might kill you.\"",
     "picture": "Angel_Knight_B",
     "rarity": "1",
     "set": "1000",
@@ -65918,6 +65989,7 @@ var CARDS = {
   "21001": {
     "id": "21001",
     "name": "Luminous Knight",
+    "desc": "The extra lighting helps to prevent mid air collisions with other angels in the dark of night.",
     "picture": "Angel_Knight_C",
     "rarity": "1",
     "set": "1000",
@@ -66029,6 +66101,7 @@ var CARDS = {
   "11003": {
     "id": "11003",
     "name": "Purified Kestrel",
+    "desc": "\"The gathering energy of the Aether can purify even the most violent of creatures.\" - Yuriel, Owl Mystic",
     "picture": "Kestral_B",
     "rarity": "1",
     "set": "1000",
@@ -66066,6 +66139,7 @@ var CARDS = {
   "21003": {
     "id": "21003",
     "name": "Spirit Kestrel",
+    "desc": "Having gathered the natural energy of Aether lands, the Kestrel transcends its physical form.",
     "picture": "Kestral_C",
     "rarity": "1",
     "set": "1000",
@@ -66107,6 +66181,7 @@ var CARDS = {
   "11004": {
     "id": "11004",
     "name": "Wind Spirit",
+    "desc": "\"...and there she was, in the center of the forest alone, sweet as the wind and sharp as a blade.\" - Ballad of Vularias IX",
     "picture": "Wind_Spirit_B",
     "rarity": "1",
     "set": "1000",
@@ -66135,6 +66210,7 @@ var CARDS = {
   "21004": {
     "id": "21004",
     "name": "Wind Soul",
+    "desc": "\"Without warning nor word, the soul of the wind fell upon us like a hammer to the forge.\" - Ballad of Vularias IX",
     "picture": "Wind_Spirit_C",
     "rarity": "1",
     "set": "1000",
@@ -66241,6 +66317,7 @@ var CARDS = {
   "11006": {
     "id": "11006",
     "name": "Irate Soul Wisp",
+    "desc": "\"No really, we're ghosts!\"",
     "picture": "Light_Wisp_B",
     "rarity": "1",
     "set": "1000",
@@ -66273,6 +66350,7 @@ var CARDS = {
   "21006": {
     "id": "21006",
     "name": "Enraged Soul Wisp",
+    "desc": "\"And you thought my COUSIN was mean?\"",
     "picture": "Light_Wisp_C",
     "rarity": "1",
     "set": "1000",
@@ -66301,6 +66379,7 @@ var CARDS = {
   "11007": {
     "id": "11007",
     "name": "Fox Charmer",
+    "desc": "Soothing the mind and the body.",
     "picture": "Fox_Trickster_B",
     "rarity": "1",
     "set": "1000",
@@ -66385,6 +66464,7 @@ var CARDS = {
   "11010": {
     "id": "11010",
     "name": "Thunder Elemental",
+    "desc": "Every ship on the sea is a perfectly fine lightning rod.",
     "picture": "Lightning_Elemental_B",
     "rarity": "2",
     "set": "1000",
@@ -66418,6 +66498,7 @@ var CARDS = {
   "21010": {
     "id": "21010",
     "name": "Bolt Elemental",
+    "desc": "The path of least resistance is you.",
     "picture": "Lightning_Elemental_C",
     "rarity": "2",
     "set": "1000",
@@ -66652,6 +66733,7 @@ var CARDS = {
   "11014": {
     "id": "11014",
     "name": "Veteran Cherub",
+    "desc": "Many battles won, many hearts conquered.",
     "picture": "Cherub_B",
     "rarity": "2",
     "set": "1000",
@@ -66689,6 +66771,7 @@ var CARDS = {
   "21014": {
     "id": "21014",
     "name": "Wartorn Cherub",
+    "desc": "War... war never changes.",
     "picture": "Cherub_C_02",
     "rarity": "2",
     "set": "1000",
@@ -72807,6 +72890,7 @@ var CARDS = {
   "1": {
     "id": "1",
     "name": "Oda the Guardian",
+    "desc": "Oda was born in a far away land, shipwrecked, and raised on a remote island temple. He's ventured in search of spellstones as a pilgrimage for his order and honor.",
     "picture": "portrait_templeguardian",
     "rarity": "2",
     "set": "7000",
@@ -72846,6 +72930,7 @@ var CARDS = {
   "2": {
     "id": "2",
     "name": "Yuriel the Owl Mystic",
+    "desc": "The Grand Library of the Aether has been curated by the Owl Mystics for hundreds of years. Their knowledge is accumulated in Yuriel through their ancestral bloodline.",
     "picture": "portrait_owlmystic",
     "rarity": "3",
     "set": "7000",
@@ -72913,6 +72998,7 @@ var CARDS = {
   "3": {
     "id": "3",
     "name": "Samael",
+    "desc": "Samael is the powerful and stoic leader of the Aether faction of magic. Don't ask him about the difference between bird wings and angel wings.",
     "picture": "portrait_seraph",
     "rarity": "4",
     "set": "7000",
@@ -73004,6 +73090,7 @@ var CARDS = {
   "4": {
     "id": "4",
     "name": "Aria the Necromancer",
+    "desc": "Aria is a powerful necromancer who aligns herself with Chaos magic. She likes long walks by moonlight and 'making' new friends.",
     "picture": "portrait_necromancer",
     "rarity": "2",
     "set": "7000",
@@ -73043,6 +73130,7 @@ var CARDS = {
   "5": {
     "id": "5",
     "name": "Decim the Firebringer",
+    "desc": "Decim has always had an affinity for fire magic, even before being exiled from his village after it mysteriously burned down. An accident with a stolen spellstone imbued him with powerful abilities while also taking most of his sanity.",
     "picture": "portrait_flamebender",
     "rarity": "3",
     "set": "7000",
@@ -73118,6 +73206,7 @@ var CARDS = {
   "6": {
     "id": "6",
     "name": "Tarian the Lich Lord",
+    "desc": "Wrapped in the cold winds of death, Tarian sits upon his throne as the center of the Chaos. Well respected, and well feared. He's a skeleton afterall.",
     "picture": "portrait_lichking",
     "rarity": "4",
     "set": "7000",
@@ -73210,6 +73299,7 @@ var CARDS = {
   "7": {
     "id": "7",
     "name": "Elyse the Ranger",
+    "desc": "Elyse lived a simple life on the edge of civilization until adulthood, giving her a burning spirit for adventure and the tools to track it.",
     "picture": "portrait_elyse",
     "rarity": "2",
     "set": "7000",
@@ -73245,6 +73335,7 @@ var CARDS = {
   "8": {
     "id": "8",
     "name": "Commander Ursurio",
+    "desc": "Ursurio is a respected representative of the Wyld despite his often aloof attitude and outlook. And hunger cravings.",
     "picture": "portrait_bearcommander",
     "rarity": "3",
     "set": "7000",
@@ -73318,6 +73409,7 @@ var CARDS = {
   "9": {
     "id": "9",
     "name": "Groc the Hammer",
+    "desc": "An ancient being of living stone, Groc wanders the wilderness in search of wisdom. You don't want to be between him and a hard place.",
     "picture": "portrait_groc",
     "rarity": "4",
     "set": "7000",
@@ -73400,6 +73492,7 @@ var CARDS = {
   "10": {
     "id": "10",
     "name": "Rayne the Wavecrasher",
+    "desc": "A master of water and wind magic, Rayne is the prime guardian of water life on Arcantica. She really knows how to rain on a parade.",
     "picture": "portrait_elementalhero",
     "rarity": "4",
     "set": "7000",
@@ -73495,6 +73588,7 @@ var CARDS = {
   "11": {
     "id": "11",
     "name": "Orgoth the Hex Fist",
+    "desc": "A respected leader of the Salt Waste tribes, Orgoth gained strange magical powers once buried deep in the Wastes. If he tries to give you a handshake you should probably decline.",
     "picture": "portrait_orchero",
     "rarity": "4",
     "set": "7000",
@@ -73595,6 +73689,7 @@ var CARDS = {
   "12": {
     "id": "12",
     "name": "Ol' Cedric",
+    "desc": "Cedric is the former First Sword of the Emperor, High Commander of Dawnglow. Since retirement he spends much of his time training younger generations, advising the emperor, and catching flies for recreation.",
     "picture": "portrait_froghero",
     "rarity": "4",
     "set": "7000",
@@ -73714,6 +73809,7 @@ var CARDS = {
   "13": {
     "id": "13",
     "name": "Oda the Aegis",
+    "desc": "Oda has taken his place as the Keeper of Seastone Temple's artifact, transcending his abilities. Unfortunately the upgrades don't come with a new outfit.",
     "picture": "portrait_odaupgrade",
     "rarity": "4",
     "set": "7000",
@@ -73818,6 +73914,7 @@ var CARDS = {
   "14": {
     "id": "14",
     "name": "Yuriel the Manashifter",
+    "desc": "The true potential of the ancestral bloodline of Owl Mystics has been realized in Yuriel. After years of study, he has stumbled upon the secrets of Manashifting. He's also collected a lot of late fines.",
     "picture": "portrait_yurielupgrade",
     "rarity": "4",
     "set": "7000",
@@ -73902,6 +73999,7 @@ var CARDS = {
   "15": {
     "id": "15",
     "name": "Aria the Nightwielder",
+    "desc": "Aria's close call with The Void pushed her to the brink of her abilities. She learned new powers, and intends to use them to make new friends.",
     "picture": "portrait_ariaupgrade",
     "rarity": "4",
     "set": "7000",
@@ -73982,6 +74080,7 @@ var CARDS = {
   "16": {
     "id": "16",
     "name": "Decim the Pyrokinetic",
+    "desc": "Decim's training and close contact with dragons has taught him new heights to his abilities. Which shouldn't be a surprise as he's always enjoyed finding new ways to burn things.",
     "picture": "portrait_decimupgrade",
     "rarity": "4",
     "set": "7000",
@@ -74060,6 +74159,7 @@ var CARDS = {
   "17": {
     "id": "17",
     "name": "Elyse the Truestriker",
+    "desc": "Elyse has embraced the magic of the Wyld, becoming one with the world around her. She even sometimes leaves her books at home.",
     "picture": "portrait_elyseupgrade",
     "rarity": "4",
     "set": "7000",
@@ -74165,6 +74265,7 @@ var CARDS = {
   "18": {
     "id": "18",
     "name": "General Ursurio",
+    "desc": "After countless years of dedicated laziness and a sloth-like attitude, Ursurio has gotten the promotion he barely wanted. If only it came with free sides.",
     "picture": "portrait_ursurioupgrade",
     "rarity": "4",
     "set": "7000",
@@ -74261,6 +74362,7 @@ var CARDS = {
   "200": {
     "id": "200",
     "name": "Undead Horde",
+    "desc": "A horde of risen creatures and skeletons, mindlessly attacking anything within reach.",
     "picture": "portrait_skeletonwarrior",
     "rarity": "2",
     "set": "9999",
@@ -74296,6 +74398,7 @@ var CARDS = {
   "201": {
     "id": "201",
     "name": "Wyld Wolf",
+    "desc": "The Wyldwood does not take kindly to strangers, and its creatures vigorously defend its borders.",
     "picture": "portrait_wolf",
     "rarity": "2",
     "set": "9999",
@@ -74335,6 +74438,7 @@ var CARDS = {
   "202": {
     "id": "202",
     "name": "Elaria Captain",
+    "desc": "The Elaria Captain is the first line of defense for the researchers of the Elaria encampment. Part of his responsibilities is taking new arrivals and training them.",
     "picture": "portrait_ranger",
     "rarity": "0",
     "set": "9999",
@@ -74347,6 +74451,7 @@ var CARDS = {
   "203": {
     "id": "203",
     "name": "Luminis Angel",
+    "desc": "A native of Luminis and a natural defender of the realm.",
     "picture": "portrait_angelknight",
     "rarity": "2",
     "set": "9999",
@@ -74412,6 +74517,7 @@ var CARDS = {
   "204": {
     "id": "204",
     "name": "Will O' Wisp",
+    "desc": "Manifestations of the raw energy of the world around them.",
     "picture": "portrait_lightwisp",
     "rarity": "2",
     "set": "9999",
@@ -74476,6 +74582,7 @@ var CARDS = {
   "205": {
     "id": "205",
     "name": "Mermaid Augurer",
+    "desc": "The rivers of Luminis run deeper than they appear, housing many of the sea's dangers.",
     "picture": "portrait_mermaid",
     "rarity": "2",
     "set": "9999",
@@ -74524,6 +74631,7 @@ var CARDS = {
   "206": {
     "id": "206",
     "name": "Grim Titan",
+    "desc": "A flood of demons and monsters, centered around a large titan at their head.",
     "picture": "portrait_firetitan",
     "rarity": "3",
     "set": "9999",
@@ -74582,6 +74690,7 @@ var CARDS = {
   "207": {
     "id": "207",
     "name": "Void Assassin",
+    "desc": "\"They came right through the walls.\" - Marr, Blacksmith",
     "picture": "portrait_invisibleassassin",
     "rarity": "3",
     "set": "9999",
@@ -74623,6 +74732,7 @@ var CARDS = {
   "208": {
     "id": "208",
     "name": "Void Minions",
+    "desc": "Primal forces of the void, manifested as the nightmares of the living.",
     "picture": "portrait_voidminions",
     "rarity": "3",
     "set": "9999",
@@ -74680,6 +74790,7 @@ var CARDS = {
   "209": {
     "id": "209",
     "name": "Orobas of the Void",
+    "desc": "\"The Orobas is possibly the most frightening creature in all of Karthos. Or at least the biggest.\" - Magi Neyaroi",
     "picture": "portrait_balrog",
     "rarity": "4",
     "set": "9999",
@@ -74754,6 +74865,7 @@ var CARDS = {
   "210": {
     "id": "210",
     "name": "Lava Crab Gang",
+    "desc": "Don't make them crabby.",
     "picture": "portrait_lavacrab",
     "rarity": "2",
     "set": "9999",
@@ -74824,6 +74936,7 @@ var CARDS = {
   "211": {
     "id": "211",
     "name": "Wraith Den",
+    "desc": "In the untamed wasteland of Karthos, wraiths tend to congregate and create dangerous dens that lure other powerful beasts.",
     "picture": "portrait_wraithden",
     "rarity": "3",
     "set": "9999",
@@ -74888,6 +75001,7 @@ var CARDS = {
   "212": {
     "id": "212",
     "name": "Caverns of Crossing",
+    "desc": "The dangerous and only path to The Void.",
     "picture": "portrait_cavernsofcrossings",
     "rarity": "3",
     "set": "9999",
@@ -74946,6 +75060,7 @@ var CARDS = {
   "213": {
     "id": "213",
     "name": "Grand Hermit Malchior",
+    "desc": "The father of spellstone research, he is the greatest mind in his field. Even with some of it missing.",
     "picture": "portrait_grandexcavator",
     "rarity": "4",
     "set": "9999",
@@ -75042,6 +75157,7 @@ var CARDS = {
   "214": {
     "id": "214",
     "name": "Tremor Wurm",
+    "desc": "The wurm breaks out of the ground suddenly, spraying rock in all directions as it belows a sound like a thousand trumpets.",
     "picture": "portrait_tremorwurm",
     "rarity": "4",
     "set": "9999",
@@ -75110,6 +75226,7 @@ var CARDS = {
   "215": {
     "id": "215",
     "name": "Void Abomination",
+    "desc": "The ground shatters to reveal a huge anomoly made of shadows and smoke. Eyes peer out at the adventurers below as its massive form swings and crushes stone.",
     "picture": "portrait_void",
     "rarity": "4",
     "set": "9999",
@@ -75205,6 +75322,7 @@ var CARDS = {
   "216": {
     "id": "216",
     "name": "Trainee Elyse",
+    "desc": "Elyse is a new adventurer like yourself. She's training with the Captain, though she seems more than eager to be out on her own.",
     "picture": "portrait_elyse",
     "rarity": "2",
     "set": "9999",
@@ -75230,6 +75348,7 @@ var CARDS = {
   "217": {
     "id": "217",
     "name": "Trainee Oda",
+    "desc": "Oda is a new adventurer like yourself. He trains alongside you, but seems very reserved and quiet.",
     "picture": "portrait_templeguardian",
     "rarity": "2",
     "set": "9999",
@@ -75255,6 +75374,7 @@ var CARDS = {
   "218": {
     "id": "218",
     "name": "Tainted Wolf",
+    "desc": "A long wolf lurks throughout the woods. Its movements unnatural, the look in its eyes dangerous.",
     "picture": "portrait_wolf",
     "rarity": "2",
     "set": "9999",
@@ -75310,6 +75430,7 @@ var CARDS = {
   "219": {
     "id": "219",
     "name": "Maniac General",
+    "desc": "A former leader of a Chaos faction, his mind has been tainted by some foul magic that causes him to act dangerously against the other factions and his own.",
     "picture": "portrait_maniacgeneral",
     "rarity": "3",
     "set": "9999",
@@ -75386,6 +75507,7 @@ var CARDS = {
   "220": {
     "id": "220",
     "name": "Voidlings",
+    "desc": "Incarnations of the Void itself, manifested into small servents of mayhem.",
     "picture": "portrait_voidminions",
     "rarity": "3",
     "set": "9999",
@@ -75463,6 +75585,7 @@ var CARDS = {
   "221": {
     "id": "221",
     "name": "Alpha Wisp",
+    "desc": "And you thought my COUSIN was mean?",
     "picture": "portrait_lightwisp",
     "rarity": "3",
     "set": "9999",
@@ -75550,6 +75673,7 @@ var CARDS = {
   "222": {
     "id": "222",
     "name": "Titan Twins",
+    "desc": "A pair of unusually large fire titan twins, Jar and Mar.",
     "picture": "portrait_firetitan",
     "rarity": "4",
     "set": "9999",
@@ -75610,6 +75734,7 @@ var CARDS = {
   "223": {
     "id": "223",
     "name": "Escaped Angel",
+    "desc": "An Aether creature freed when the undead ravaged the researchers' camp in Elaria.",
     "picture": "portrait_angelknight",
     "rarity": "2",
     "set": "9999",
@@ -75641,6 +75766,7 @@ var CARDS = {
   "224": {
     "id": "224",
     "name": "Consumed Undead",
+    "desc": "These undead move with purpose and in unity. They are not like the shambling undead that wander the camp.",
     "picture": "portrait_skeletonwarrior",
     "rarity": "2",
     "set": "9999",
@@ -75672,6 +75798,7 @@ var CARDS = {
   "231": {
     "id": "231",
     "name": "Skeletal Army",
+    "desc": "An army of undead warriors, their glowing eyes shine in the night and their blades drag on the ground.",
     "picture": "portrait_skeletonwarrior",
     "rarity": "3",
     "set": "9999",
@@ -75734,6 +75861,7 @@ var CARDS = {
   "225": {
     "id": "225",
     "name": "Wasteland Wolf Pack",
+    "desc": "In the wastes, no one can hear you howl.",
     "picture": "portrait_wolf",
     "rarity": "2",
     "set": "9999",
@@ -75795,6 +75923,7 @@ var CARDS = {
   "226": {
     "id": "226",
     "name": "Lost Lava Crab",
+    "desc": "You idley wonder how this little crab got here, right before it snips your finger.",
     "picture": "portrait_lavacrab",
     "rarity": "2",
     "set": "9999",
@@ -75835,6 +75964,7 @@ var CARDS = {
   "227": {
     "id": "227",
     "name": "Wasteland Wraiths",
+    "desc": "The shadows of night cloak that which lurks in the wastes.",
     "picture": "portrait_wraithden",
     "rarity": "3",
     "set": "9999",
@@ -75915,6 +76045,7 @@ var CARDS = {
   "228": {
     "id": "228",
     "name": "Voidlings",
+    "desc": "Creatures of pure corruption. They rise from the ground like shadows given life.",
     "picture": "portrait_voidminions",
     "rarity": "3",
     "set": "9999",
@@ -75975,6 +76106,7 @@ var CARDS = {
   "229": {
     "id": "229",
     "name": "Skeleton Familiar",
+    "desc": "Aria's favorite skeleton companion and possibly only friend. His name is Little Tarian.",
     "picture": "portrait_skeletonwarrior",
     "rarity": "3",
     "set": "9999",
@@ -76037,6 +76169,7 @@ var CARDS = {
   "230": {
     "id": "230",
     "name": "Aria, Void Consumed",
+    "desc": "Aria has fallen to the corruption of the Void.",
     "picture": "portrait_necromancer",
     "rarity": "3",
     "set": "9999",
@@ -76102,6 +76235,7 @@ var CARDS = {
   "232": {
     "id": "232",
     "name": "Frenzied Dragon",
+    "desc": "The dragons of Tarragon Peak have gone into a frenzy after a series of earthquakes around the mountain.",
     "picture": "portrait_moltendragon",
     "rarity": "3",
     "set": "9999",
@@ -76173,6 +76307,7 @@ var CARDS = {
   "233": {
     "id": "233",
     "name": "Orobas, Raging Beast",
+    "desc": "An ancient beast that lives deep in the earth. Rarely seen above ground. Considered extremely dangerous by most adventurers.",
     "picture": "portrait_balrog",
     "rarity": "4",
     "set": "9999",
@@ -76248,6 +76383,7 @@ var CARDS = {
   "234": {
     "id": "234",
     "name": "Decim, Flame Incarnate",
+    "desc": "",
     "picture": "portrait_flamebender",
     "rarity": "3",
     "set": "9999",
@@ -81775,6 +81911,7 @@ var CARDS = {
   "295": {
     "id": "295",
     "name": "Thing In The Lake",
+    "desc": "Well, at least if this is the end I don't need to file my taxes.",
     "picture": "portrait_aprilmonser",
     "rarity": "4",
     "set": "9999",
@@ -81808,6 +81945,7 @@ var CARDS = {
   "296": {
     "id": "296",
     "name": "The Maddest Bomber",
+    "desc": "Bombs are actually a very delicate art. At least, as delicate as massive explosions can be.",
     "picture": "portrait_aprilbomber",
     "rarity": "4",
     "set": "9999",
@@ -81889,6 +82027,7 @@ var CARDS = {
   "297": {
     "id": "297",
     "name": "Chicken Enthusiast",
+    "desc": "\"BAWK BAWK BAWK\"",
     "picture": "portrait_aprilchicken",
     "rarity": "4",
     "set": "9999",
@@ -83511,6 +83650,7 @@ var CARDS = {
   "500": {
     "id": "500",
     "name": "Arcane Dustling",
+    "desc": "A manifestation of pure arcane powers. The Dustling only appears when a gap of power occurs in the shifting realities.",
     "picture": "Dust_Mite",
     "rarity": "0",
     "set": "9999",
@@ -83525,6 +83665,7 @@ var CARDS = {
   "501": {
     "id": "501",
     "name": "Arcane Ore",
+    "desc": "The combination of Arcane Fragments. It has little combat use, but is a great source of resources.",
     "picture": "Arcane_Ore",
     "rarity": "3",
     "set": "9999",
@@ -83539,6 +83680,7 @@ var CARDS = {
   "502": {
     "id": "502",
     "name": "Arcane Pumpkin",
+    "desc": "A special fruit that blooms only in fall throughout Arcantica. Said to be an incredible source of Arcane Dust.",
     "picture": "Arcane_Pumpkin_C",
     "rarity": "2",
     "set": "9999",
@@ -83566,6 +83708,7 @@ var CARDS = {
   "510": {
     "id": "510",
     "name": "Arcane Chunk",
+    "desc": "A small chunk of Spellstone material, broken from a larger Spellstone. It has little combat use, but can be Vaporized for resources.",
     "picture": "Arcane_Ore",
     "rarity": "2",
     "set": "9999",
@@ -83580,6 +83723,7 @@ var CARDS = {
   "511": {
     "id": "511",
     "name": "Arcane Ore",
+    "desc": "A deposit of Spellstone ore with no creature inside. It has little combat use, but can be Vaporized for resources.",
     "picture": "Arcane_Ore",
     "rarity": "3",
     "set": "9999",
@@ -83594,6 +83738,7 @@ var CARDS = {
   "512": {
     "id": "512",
     "name": "Arcane Deposit",
+    "desc": "A massive deposit of Spellstone ore. It has little combat use, but can be Vaporized for resources.",
     "picture": "Arcane_Ore",
     "rarity": "4",
     "set": "9999",
@@ -83608,6 +83753,7 @@ var CARDS = {
   "601": {
     "id": "601",
     "name": "Castle Tower",
+    "desc": "These structures are built by adventurers to protect their camps as they travel Arcantica.",
     "picture": "Enemy_Tower_A",
     "rarity": "0",
     "set": "9999",
@@ -83691,6 +83837,7 @@ var CARDS = {
   "602": {
     "id": "602",
     "name": "Cannon Tower",
+    "desc": "\"You know what's better than a tower? A tower with a CANNON!\" - Jarad, Castle Guard",
     "picture": "Enemy_Tower_A",
     "rarity": "0",
     "set": "9999",

@@ -18,6 +18,8 @@
 .card-details .card-art {
   display: block;
   margin: auto;
+  max-height: 330px;
+  max-width: 231px;
 }
 
 .card-details .bottom-center {
@@ -58,6 +60,15 @@
   font-size: 20px;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.card-details .card-stats .description {
+  float: left;
+  margin-top: 10px;
+  color: black;
+  font-size: 15px;
+  font-style: italic;
+  text-shadow: none;
 }
 
 .card-details .card-stats .mythic {

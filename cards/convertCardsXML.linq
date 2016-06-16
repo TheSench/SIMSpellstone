@@ -385,6 +385,7 @@ public partial class unit
 		sb.Append("  \"").Append(id).Append("\": {\r\n");
 		AppendEntryString(sb, "id", id, unitTabs);
 		AppendEntryString(sb, "name", name, unitTabs);
+		AppendEntryString(sb, "desc", desc, unitTabs);
 		AppendEntryString(sb, "picture", picture, unitTabs);
 		AppendEntryString(sb, "rarity", rarity, unitTabs);
 		AppendEntryString(sb, "set", set, unitTabs);
@@ -438,6 +439,7 @@ public partial class unit
 	private string idField;
 	private string card_typeField;
 	private string nameField;
+	private string descField;
 	private string pictureField;
 	private string portraitField;
 	private string asset_prefabField;
@@ -471,6 +473,13 @@ public partial class unit
 	{
 		get { return this.nameField; }
 		set { this.nameField = value; }
+	}
+
+	/// <remarks/>
+	public string desc
+	{
+		get { return this.descField; }
+		set { this.descField = value.Replace("\"", "\\\""); }
 	}
 
 	/// <remarks/>
