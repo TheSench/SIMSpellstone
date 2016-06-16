@@ -159,7 +159,7 @@
             return ary;
         }
 
-        $scope.towerTypes = ["Castle Tower", "Cannon Tower"];
+        $scope.towerTypes = ["Castle Tower", "Cannon Tower", "Tree of Life"];
         
         $scope.selectableBattlegrounds = function () {
             var selectable = [];
