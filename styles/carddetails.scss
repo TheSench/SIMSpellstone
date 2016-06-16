@@ -1,0 +1,73 @@
+.card-details {
+    display: block;
+    width: 475px;
+    border: 1px solid black;
+    overflow: auto;
+
+    .stat-icon {
+        height: 32px;
+    }
+
+    .detail-panel {
+        float: left;
+        width: 50%;
+    }
+
+    .card-art {
+        display: block;
+        margin: auto;
+    }
+    .base-stats {
+        float: right;
+        width:90%;
+    }
+    .skill-list {
+        float:left;
+        width: 100%;
+    }
+
+    .center {
+        display: flex;
+
+        &.vertically {
+            align-items: center;
+        }
+
+        &.horizontally {
+            justify-content: center;
+        }
+    }
+
+    .card-stats {
+        div {
+            font-size: 20px;
+            color: white;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        }
+
+        .mythic {
+            color: orangered;
+        }
+
+        .legendary {
+            color: fuchsia;
+        }
+
+        .epic {
+            color: cornflowerblue;
+        }
+
+        .rare {
+            color: forestgreen;
+        }
+
+        .common {
+            color: gray;
+        }
+
+        span {
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+    }
+}

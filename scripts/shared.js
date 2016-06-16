@@ -1919,6 +1919,38 @@ function loadCard(id) {
     return card;
 }
 
+function getCardInfo(unit)
+{
+    var id = unit.id;
+    var level = unit.level;
+
+    var original = CARDS[id];
+    if (!original)
+    {
+        DATA_UPDATER.updateCards();
+        original = CARDS[id];
+    }
+
+    var card = Object.assign({}, original);
+    if (level > 1)
+    {
+        if (level > 1)
+        {
+            for (var key in original.upgrades)
+            {
+                var upgrade = original.upgrades[key];
+                if (upgrade.cost !== undefined) card.cost = upgrade.cost;
+                if (upgrade.health !== undefined) card.health = upgrade.health;
+                if (upgrade.attack !== undefined) card.attack = upgrade.attack;
+                if (upgrade.skill.length > 0) card.skill = upgrade.skill;
+                if (key == card.level) break;
+            }
+        }
+    }
+    card.level = level;
+    return card;
+}
+
 // Output card name
 function get_card_name_by_id(id) {
     var card = loadCard(id);

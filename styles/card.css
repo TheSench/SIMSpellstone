@@ -1,8 +1,8 @@
 ﻿.card {
     border: 1px solid black;
     border-radius: 4px;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     overflow: hidden;
     font-size: 10px;
     position: relative;
@@ -12,7 +12,7 @@
     background-color: dimgray;
     position: absolute;
     top: 12px;
-    left: 0px;
+    left: 0;
     width: 12px;
     margin: 1px 1px;
     border-radius: 25%;
@@ -40,7 +40,7 @@
 
 .level {
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     left: 50%;
     margin: 1px -8px;
     width: 16px;
@@ -48,8 +48,8 @@
 
 .commander .level {
     left: auto;
-    right: 0px;
-    margin: 1px 0px;
+    right: 0;
+    margin: 1px 0;
 }
 
 .commander .portrait {
@@ -59,13 +59,15 @@
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     box-shadow: -2px 0 black, 0 5px black, 1px 0 black, 0 -1px black;
 }
 
 .fusion {
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     left: 50%;
     margin: 1px -14px;
     width: 28px;
@@ -74,7 +76,7 @@
 .faction {
     position: absolute;
     min-height: 10px;
-    bottom: 0px;
+    bottom: 0;
     width: 100%;
     z-index: 0;
     border-top: solid;
@@ -133,12 +135,16 @@ img[src='Error.src'] {
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     width: 100%;
 }
 
     .card-name:hover {
         overflow: inherit;
+        -ms-text-overflow: inherit;
+        -o-text-overflow: inherit;
         text-overflow: inherit;
         white-space: inherit;
         z-index: 100;
@@ -191,19 +197,21 @@ img[src='Error.src'] {
     box-shadow: none;
     -ms-transform: rotate(-11deg); /* IE 9 */
     -webkit-transform: rotate(-11deg); /* Chrome, Safari, Opera */
+    -moz-transform: rotate(-11deg);
+    -o-transform: rotate(-11deg);
     transform: rotate(-11deg);
 }
 
 .card .attack {
     position: absolute;
     z-index: 98;
-    left: 0px;
+    left: 0;
     width: 20px;
-    bottom: 0px;
+    bottom: 0;
 }
 
 .card.commander .health {
-    left: 0px;
+    left: 0;
 }
 
 .card-health {
@@ -211,13 +219,15 @@ img[src='Error.src'] {
     bottom: 6px;
     -ms-transform: rotate(7deg); /* IE 9 */
     -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    -moz-transform: rotate(7deg);
+    -o-transform: rotate(7deg);
     transform: rotate(7deg);
 }
 
 .card .health {
     position: absolute;
     z-index: 98;
-    right: 0px;
+    right: 0;
     width: 20px;
     bottom: 2px;
 }
@@ -243,8 +253,8 @@ img[src='Error.src'] {
 .card .timer {
     position: absolute;
     z-index: 98;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
     left: auto;
     width: 20px;
 }
@@ -267,11 +277,11 @@ img[src='Error.src'] {
 
 .card-skills-short {
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     width: 100%;
     height: 40px;
     text-align: center;
-    background-image: linear-gradient( 0deg, rgba(0,0,0,0.9), rgba(0,0,0,0.8) 80%, rgba(0,0,0,0.7) 85%, rgba(0,0,0,0.0));
+    background-image: linear-gradient( 0, rgba(0,0,0,0.9), rgba(0,0,0,0.8) 80%, rgba(0,0,0,0.7) 85%, rgba(0,0,0,0.0));
 }
 
     .card-skills-short img {
@@ -284,11 +294,11 @@ img[src='Error.src'] {
     width: 100%;
     box-sizing: border-box;
     height: auto;
-    bottom: 0px;
+    bottom: 0;
     padding: 10px 20px 22px 13px;
-    left: 0px;
+    left: 0;
     text-align: left;
-    background-image: linear-gradient( 0deg, rgba(0,0,0,0.9), rgba(0,0,0,0.8) 80%, rgba(0,0,0,0.7) 85%, rgba(0,0,0,0.0));
+    background-image: linear-gradient( 0, rgba(0,0,0,0.9), rgba(0,0,0,0.8) 80%, rgba(0,0,0,0.7) 85%, rgba(0,0,0,0.0));
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     white-space: nowrap;
@@ -367,15 +377,19 @@ img[src='Error.src'] {
 }
 
 .left {
-    -ms-transform: rotate(-7deg) translate(0px, 5px); /* IE 9 */
-    -webkit-transform: rotate(-7deg) translate(0px, 5px); /* Chrome, Safari, Opera */
-    transform: rotate(-7deg) translate(0px, 5px);
+    -ms-transform: rotate(-7deg) translate(0, 5px); /* IE 9 */
+    -webkit-transform: rotate(-7deg) translate(0, 5px); /* Chrome, Safari, Opera */
+    -moz-transform: rotate(-7deg) translate(0, 5px);
+    -o-transform: rotate(-7deg) translate(0, 5px);
+    transform: rotate(-7deg) translate(0, 5px);
 }
 
 .right {
-    -ms-transform: rotate(7deg) translate(0px, 5px); /* IE 9 */
-    -webkit-transform: rotate(7deg) translate(0px, 5px); /* Chrome, Safari, Opera */
-    transform: rotate(7deg) translate(0px, 5px);
+    -ms-transform: rotate(7deg) translate(0, 5px); /* IE 9 */
+    -webkit-transform: rotate(7deg) translate(0, 5px); /* Chrome, Safari, Opera */
+    -moz-transform: rotate(7deg) translate(0, 5px);
+    -o-transform: rotate(7deg) translate(0, 5px);
+    transform: rotate(7deg) translate(0, 5px);
 }
 
 .hand .card {
