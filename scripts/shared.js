@@ -1965,8 +1965,8 @@ function is_commander(id) {
 
 function makeUnitInfo(id, level, runes) {
     var unit = {
-        id: id,
-        level: level,
+        id: Number(id),
+        level: Number(level),
         runes: []
     };
     if (runes) unit.runes = runes;

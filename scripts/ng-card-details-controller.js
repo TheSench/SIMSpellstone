@@ -4,8 +4,11 @@
 
     var CardDetailsCtrl = function ($scope, $window)
     {
-        $scope.unit = $window.makeUnitInfo(1340, 6);
-        $scope.card = $window.getCardInfo($scope.unit);
+        if ($scope.id && $scope.level)
+        {
+            $scope.unit = $window.makeUnitInfo($scope.id, $scope.level),
+            $scope.card = $window.getCardInfo($scope.unit);
+        }
 
         $scope.getCardImage = function ()
         {
@@ -98,7 +101,10 @@
         .directive('myCard', function ()
         {
             return {
-                scope: {},
+                scope: {
+                    id: "@unitId", 
+                    level: "@unitLevel",
+                },
                 restrict: 'A',
                 replace: true,
                 templateUrl: 'templates/card-template.html',
