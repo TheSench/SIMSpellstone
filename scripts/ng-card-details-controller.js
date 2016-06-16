@@ -9,6 +9,7 @@
             $scope.unit = $window.makeUnitInfo($scope.id, $scope.level),
             $scope.card = $window.getCardInfo($scope.unit);
         }
+        
 
         $scope.getCardImage = function ()
         {
@@ -24,6 +25,22 @@
         {
             var card = $scope.card;
             return "res/cardAssets/" + "Level_" + card.rarity + "_" + card.level + ".png";
+        }
+
+        var getFusion = $scope.getFusion = function ()
+        {
+            var id = Number($scope.id);
+            return (Math.floor(id / 10000) + 1);
+        }
+
+        $scope.isFused = function () {
+            return (getFusion() > 1);
+        }
+
+        $scope.getFusionIcon = function ()
+        {
+            var fusion = (getFusion() === 2 ? "Dualfuse" : "Quadfuse");
+            return ("res/cardAssets/" + fusion + ".png");
         }
 
         $scope.getSkillIcon = function (skillName)
@@ -86,12 +103,13 @@
 
         $scope.fuse = function ()
         {
-            var unit = $scope.unit;
-            if (unit.id < 20000)
+            $scope.id = Number($scope.id);
+            if ($scope.id < 20000)
             {
-                unit.id += 10000;
+                $scope.id += 10000;
             }
-            $scope.card = $window.getCardInfo(unit);
+            $scope.unit.id = $scope.id;
+            $scope.card = $window.getCardInfo($scope.unit);
 
         }
     };

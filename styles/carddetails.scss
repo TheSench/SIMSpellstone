@@ -11,18 +11,33 @@
     .detail-panel {
         float: left;
         width: 50%;
+        position: relative;
     }
 
     .card-art {
         display: block;
         margin: auto;
     }
+
+    .bottom-center {
+        position: absolute;
+        bottom: 0;
+        margin-left: -16px;
+        left: 50%;
+    }
+
+    .icon-fusion {
+        height: 32px;
+        margin-left: -34px;
+    }
+
     .base-stats {
         float: right;
-        width:90%;
+        width: 90%;
     }
+
     .skill-list {
-        float:left;
+        float: left;
         width: 100%;
     }
 

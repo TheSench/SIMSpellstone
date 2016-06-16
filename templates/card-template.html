@@ -1,6 +1,8 @@
 <div class="card-details">
     <div id="cardArt" class="detail-panel">
         <img class="card-art" src="{{getCardImage()}}" />
+        <img class="bottom-center icon-fusion" src="{{getFusionIcon()}}" ng-if="isFused()" />
+        <img class="bottom-center" src="{{getRarityIcon()}}" />
     </div>
     <div id="cardStats" class="detail-panel card-stats">
         <div>{{card.name}}</div>

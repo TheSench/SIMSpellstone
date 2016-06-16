@@ -12,11 +12,24 @@
 .card-details .detail-panel {
   float: left;
   width: 50%;
+  position: relative;
 }
 
 .card-details .card-art {
   display: block;
   margin: auto;
+}
+
+.card-details .bottom-center {
+  position: absolute;
+  bottom: 0;
+  margin-left: -16px;
+  left: 50%;
+}
+
+.card-details .icon-fusion {
+  height: 32px;
+  margin-left: -34px;
 }
 
 .card-details .base-stats {
