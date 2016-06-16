@@ -1216,7 +1216,8 @@ var indexDelimiter = '-';
 var priorityDelimiter = '|';
 var towers = {
     601: true,
-    602: true
+    602: true,
+    603: true
 };
 
 function base64triplet_to_unitInfo(triplet) {

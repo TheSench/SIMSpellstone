@@ -36,23 +36,6 @@
     <icon>filter_dragon_64</icon>
     <effect>
       <skill id="heal" mult=".2" all="1" y="9" />
-      <!-- <skill id='displayEffect' trigger='onSkill' y='99' s='heal' >
-				<projectile_effect>
-					<prefab>dragonHealProjectile</prefab>
-					<bundle_id>62</bundle_id>
-					<delay>0</delay>
-					<duration>.5</duration>
-					<translation>.5</translation>
-					<offset>2</offset>
-				</projectile_effect>
-				<target_effect>
-					<prefab>dragonHealTarget</prefab>
-					<bundle_id>62</bundle_id>
-					<delay>.5</delay>
-					<duration>1</duration>
-					<shake>true</shake>
-				</target_effect>
-			</skill> -->
     </effect>
   </battleground>
   <battleground>
@@ -271,6 +254,33 @@
     <effect>
       <skill id="heal" x="1.1" all="1" />
       <skill id="rally" x=".6" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>506</id>
+    <name>Tree of Life</name>
+    <desc>All enemies start with a Tree of Life card.</desc>
+    <web_picture>filter_tower_64.png</web_picture>
+    <icon>tree_of_life_64</icon>
+    <icon_bundle>31</icon_bundle>
+    <effect>
+      <starting_card id="603" level="1" pvp_rank="2" />
+      <starting_card id="603" level="2" pvp_rank="3" />
+      <starting_card id="603" level="3" pvp_rank="4" />
+      <starting_card id="603" level="4" pvp_rank="5" />
+      <starting_card id="603" level="5" pvp_rank="6" />
+      <starting_card id="603" level="6" pvp_rank="7" />
+      <starting_card id="603" level="7" pvp_rank="8" />
+      <starting_card id="603" level="8" pvp_rank="9" />
+      <starting_card id="603" level="9" pvp_rank="10" />
+      <starting_card id="603" level="10" pvp_rank="11" />
+      <starting_card id="603" level="11" pvp_rank="12" />
+      <starting_card id="603" level="12" pvp_rank="13" />
+      <starting_card id="603" level="13" pvp_rank="14" />
+      <starting_card id="603" level="14" pvp_rank="15" />
+      <starting_card id="603" level="15" pvp_rank="16" />
+      <starting_card id="603" level="16" pvp_rank="17" />
+      <starting_card id="603" level="17" pvp_rank="18" />
     </effect>
   </battleground>
   <!-- 1001+: Personal BGE -->

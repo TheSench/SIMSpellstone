@@ -1027,7 +1027,7 @@
     <max_level>40</max_level>
     <name>Troubled Landings</name>
     <portrait>windstormelemental</portrait>
-    <description>A Windstorm Elemental is traveling under a fleet of airships trying to land on Arcantica. Lure them away from the airships so they can land safely!</description>
+    <description>A Windstorm Elemental is traveling under a fleet of airships, trying to land on Arcantica. Lure the elemental away from the airships so they can land safely! </description>
     <duration>1380</duration>
     <decay>480</decay>
     <difficulty>36</difficulty>

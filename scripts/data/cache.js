@@ -83946,6 +83946,151 @@ var CARDS = {
       },
     }
   },
+  "603": {
+    "id": "603",
+    "name": "Tree of Life",
+    "desc": "\"I don't know what's in that tree, but I do sure feel better!\" - Jarad, Castle Guard",
+    "picture": "NotFound",
+    "rarity": "0",
+    "set": "9999",
+    "card_type": "2",
+    "type": "3",
+    "attack": 0,
+    "health": 1,
+    "cost": 4,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 2,
+        "skill": [],
+      },
+      "3": {
+        "health": 3,
+        "skill": [],
+      },
+      "4": {
+        "health": 4,
+        "skill": [],
+      },
+      "5": {
+        "health": 5,
+        "cost": 3,
+        "skill": [],
+      },
+      "6": {
+        "health": 6,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 1,
+          },
+          {
+            "id": "heal",
+            "x": 1,
+          },
+        ],
+      },
+      "7": {
+        "health": 7,
+        "skill": [],
+      },
+      "8": {
+        "health": 8,
+        "skill": [],
+      },
+      "9": {
+        "health": 9,
+        "skill": [],
+      },
+      "10": {
+        "health": 10,
+        "cost": 2,
+        "skill": [],
+      },
+      "11": {
+        "health": 11,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 2,
+          },
+          {
+            "id": "heal",
+            "x": 1,
+          },
+        ],
+      },
+      "12": {
+        "health": 12,
+        "skill": [],
+      },
+      "13": {
+        "health": 13,
+        "cost": 1,
+        "skill": [],
+      },
+      "14": {
+        "health": 14,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 2,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+          },
+        ],
+      },
+      "15": {
+        "health": 15,
+        "skill": [],
+      },
+      "16": {
+        "health": 16,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 2,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+          },
+          {
+            "id": "heal",
+            "x": 1,
+          },
+        ],
+      },
+      "17": {
+        "health": 17,
+        "skill": [],
+      },
+      "18": {
+        "health": 18,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 2,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
   "9996": {
     "id": "9996",
     "name": "",
@@ -84985,6 +85130,13 @@ var CAMPAIGNS = {
     "location_id": "6",
     "side_mission": "",
     "missions": ["361","362","363","364"]
+  },
+  "4000": {
+    "id": "4000",
+    "name": "Arena Test 1",
+    "location_id": "6",
+    "side_mission": "",
+    "missions": ["5001"]
   },
 };
 var MISSIONS = {
@@ -110474,6 +110626,13 @@ var BATTLEGROUNDS = [
         "x": .6,
         "all": "1",
       },
+    ]
+  },
+  {
+    "name": "Tree of Life",
+    "id": "506",
+    "hidden": "true",
+    "effect": [
     ]
   },
   {

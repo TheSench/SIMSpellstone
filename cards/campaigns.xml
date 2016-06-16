@@ -3051,5 +3051,29 @@
   </campaign>
   <!-- END Hero Upgrade Campaigns -->
   <!-- Arena Campaigns -->
+  <campaign>
+    <id>4000</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Arena Test 1</name>
+    <icon id="purple_fire" bundle="17" />
+    <location_id>6</location_id>
+    <x>236</x>
+    <y>264</y>
+    <combatBG>CombatBGEvent002</combatBG>
+    <missions>
+      <mission_id>5001</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1312" />
+      <card level="3" id="1312" />
+      <item level="4" id="3038" />
+      <card level="5" id="1017" />
+      <card level="6" id="1017" />
+      <card level="7" id="512" />
+    </rewards>
+    <!-- <find_item id='3034' drop_per_energy='.25' /> -->
+  </campaign>
   <!-- END Arena Campaigns -->
 </root>
