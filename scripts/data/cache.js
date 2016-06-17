@@ -83950,7 +83950,7 @@ var CARDS = {
     "id": "603",
     "name": "Tree of Life",
     "desc": "\"I don't know what's in that tree, but I do sure feel better!\" - Jarad, Castle Guard",
-    "picture": "NotFound",
+    "picture": "Tree_of_Life_A",
     "rarity": "0",
     "set": "9999",
     "card_type": "2",
