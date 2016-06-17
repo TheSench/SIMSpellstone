@@ -143,7 +143,9 @@ tr.alternating:nth-child(odd) {
     //background-color: $secondary-black;
 }
 
+button,
 input[type=button] {
+    color: $secondary-neutral;
     border-color: $secondary-tint;
     background-color: $secondary-white;
     border-radius: 5px;
@@ -156,10 +158,6 @@ input[type=button] {
 .ui-icon {
     width: 16px;
     height: 16px;
-}
-
-.ui-icon,
-.ui-dialog-content .ui-icon {
     background-image: url("../../../Content/themes/base/images/ui-icons_222222_256x240.png");
 }
 
@@ -185,19 +183,22 @@ input[type=button] {
     background-image: url("../../../Content/themes/base/images/ui-icons_cd0a0a_256x240.png");
 }
 
-.ui-accordion .ui-accordion-icons {
-    padding-left: 2.2em;
-}
+.ui-accordion {
 
-.ui-accordion .ui-accordion-icons .ui-accordion-icons {
-    padding-left: 2.2em;
-}
+    .ui-accordion-icons {
+        padding-left: 2.2em;
 
-.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
-    position: absolute;
-    left: .5em;
-    top: 50%;
-    margin-top: -8px;
+        .ui-accordion-icons {
+            padding-left: 2.2em;
+        }
+    }
+
+    .ui-accordion-header .ui-accordion-header-icon {
+        position: absolute;
+        left: .5em;
+        top: 50%;
+        margin-top: -8px;
+    }
 }
 
 .ui-icon-triangle-1-e {
@@ -242,55 +243,71 @@ h2 .ui-icon {
     }
 }
 
-.ui-dialog .ui-dialog-titlebar {
-    padding: .4em 1em;
-    position: relative;
-}
+.ui-dialog {
+    border: 1px solid $secondary-neutral;
 
-.ui-dialog-header {
-    border: 1px solid $primary-neutral;
-    background: $primary-neutral url("../../../Content/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png") 50% 50% repeat-x;
-    color: #222222;
-    font-weight: bold;
-
-    .ui-icon {
-        background-image: url("../../../Content/themes/base/images/ui-icons_222222_256x240.png");
+    .ui-dialog-title {
+        color: $primary-black;
+        font-weight: bold;
     }
-}
 
-.ui-dialog-content {
-    border: 1px solid $primary-neutral;
-    background: $primary-white url("../../../Content/themes/base/images/ui-bg_flat_75_ffffff_40x100.png") 50% 50% repeat-x;
-    color: #222222;
-
-    .ui-icon {
-        background-image: url("../../../Content/themes/base/images/ui-icons_222222_256x240.png");
+    .ui-dialog-titlebar {
+        padding: .4em 1em;
+        position: relative;
     }
-}
 
-.ui-dialog .ui-dialog-titlebar-close {
-    position: absolute;
-    right: .3em;
-    top: 50%;
-    width: 20px;
-    margin: -10px 0 0 0;
-    padding: 1px;
-    height: 20px;
-}
+    .ui-dialog-titlebar-close {
+        position: absolute;
+        right: .3em;
+        top: 50%;
+        width: 20px;
+        margin: -10px 0 0 0;
+        padding: 1px;
+        height: 20px;
+    }
 
-.ui-button-icon-only .ui-icon {
-    position: absolute;
-    top: 50%;
-    margin-top: -8px;
-    left: 50%;
-    margin-left: -8px;
-}
+    .ui-dialog-header {
+        border: 1px solid $primary-neutral;
+        background: $primary-neutral url("../../../Content/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png") 50% 50% repeat-x;
+        color: #222222;
+        font-weight: bold;
 
-.ui-button-icon-only .ui-button-text,
-.ui-button-icons-only .ui-button-text {
-    display: block;
-    padding: .4em;
-    text-indent: -9999999px;
+        .ui-icon {
+            background-image: url("../../../Content/themes/base/images/ui-icons_222222_256x240.png");
+        }
+    }
+
+    .ui-dialog-content {
+        //background: $secondary-white url("../../../Content/themes/base/images/ui-bg_flat_75_ffffff_40x100.png") 50% 50% repeat-x;
+        background-color: $secondary-white;
+        color: $secondary-black;
+
+        .ui-icon {
+            background-image: url("../../../Content/themes/base/images/ui-icons_222222_256x240.png");
+        }
+    }
+
+    .ui-dialog-buttonset {
+        background-color: $secondary-white;
+    }
+
+    .ui-button-icon-only,
+    .ui-button-icons-only {
+        .ui-icon {
+            position: absolute;
+            top: 50%;
+            margin-top: -8px;
+            left: 50%;
+            margin-left: -8px;
+        }
+
+        .ui-button-text,
+        .ui-button-text {
+            display: block;
+            padding: .4em;
+            text-indent: -9999999px;
+        }
+    }
 }
 
 .card {
