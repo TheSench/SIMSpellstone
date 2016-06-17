@@ -19,7 +19,7 @@ $violet: hsl(300, 100%, 50%);
 
 // Pick a starting color to mix with and select a hue between 0-360 (check the color wheel!)
 $first-color: hsl($hue, 100%, 50%);
-//$first-color: gray;
+$first-color: gray;
 
 // Find the hue 180 degrees away on the color wheel
 $second-color: complement($first-color);

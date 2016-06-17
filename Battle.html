@@ -86,7 +86,13 @@
             <br>
             <div>Ordered Enemy Deck:</div><input type="checkbox" id="ordered2">
             <div><u>Don't Shuffle Deck:</u></div><input type="checkbox" id="exactorder2"><br>
-            <div>Castle Siege:</div><input type="checkbox" id="siege"><input type="NUMBER" id="tower_level" min="1" max="18" step="1" value="10" size="6"><select id="tower_type"></select><br>
+            <div>Castle Siege:</div>
+            <input type="checkbox" id="siege" ng-model="tower">
+            <input type="NUMBER" id="tower_level" min="1" max="18" step="1" value="10" size="6">
+            <select id="tower_type" ng-disabled="!tower">
+                <option ng-repeat="type in towerTypes" value="{{$index}}">{{type}}</option>
+            </select>
+            <br>
             <div>Surge Mode:</div><input type="checkbox" id="surge"><br>
             <br>
             <div><i>Battleground:</i></div>
