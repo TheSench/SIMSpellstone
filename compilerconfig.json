@@ -1,0 +1,14 @@
+﻿[
+  {
+    "outputFile": "styles/sass/colors.css",
+    "inputFile": "styles/sass/colors.scss"
+  },
+  {
+    "outputFile": "styles/sass/themes/dark.css",
+    "inputFile": "styles/sass/themes/dark.scss"
+  },
+  {
+    "outputFile": "styles/sass/themes/light.css",
+    "inputFile": "styles/sass/themes/light.scss"
+  }
+]
