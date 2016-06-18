@@ -36,6 +36,10 @@
   left: 50%;
 }
 
+#detailedView.ui-dialog-content {
+    padding: 0;
+}
+
 .card-details .placeholder-fusion {
   min-width: 68px;
   min-height: 32px;

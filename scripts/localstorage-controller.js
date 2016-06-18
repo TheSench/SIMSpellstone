@@ -3,27 +3,16 @@
 (function (angular) {
     'use strict';
 
-    var module;
-    try
-    {
-        module = angular.module('simulatorApp');
-    }
-    catch(err)
-    {
-        module = angular.module('deckStorageApp', []);
-    }
-    module
-        .controller('DeckStorageCtrl', ['$scope', '$window', DeckStorageCtrl]);
-
-    function DeckStorageCtrl($scope, $window)
-    {
+    var DeckStorageCtrl = function ($scope, $window) {
         $scope.savedDecks = $window.storageAPI.savedDecks;
 
-        $scope.keys = function (obj)
-        {
+        $scope.keys = function (obj) {
             return (obj ? Object.keys(obj) : []);
         };
-    }
+    };
+
+    angular.module('simulatorApp', [])
+        .controller('DeckStorageCtrl', ['$scope', '$window', DeckStorageCtrl]);
 
 }(angular));
 

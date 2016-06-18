@@ -1,9 +1,10 @@
 ﻿<!DOCTYPE html>
-<html lang="en" ng-app="deckStorageApp">
+<html lang="en" ng-app="simulatorApp">
 <head profile="http://www.w3.org/2005/10/profile">
     <meta charset="UTF-8">
     <title id="title_tag">DeckBuilder</title>
     <link rel="stylesheet" type="text/css" href="styles/card.css">
+    <link rel="stylesheet" type="text/css" href="styles/carddetails.css">
     <link rel="stylesheet" type="text/css" href="styles/deckbuilder.css">
     <link rel="stylesheet" type="text/css" href="styles/loading.css">
     <link rel="stylesheet" type="text/css" href="styles/spritesheet.css">
@@ -30,7 +31,8 @@
     <script id="common_variables" type="text/javascript" src="scripts/common.js"></script>
     <script id="gui_script" type="text/javascript" src="scripts/cards_gui.js"></script>
     <script id="deckbuilder" type="text/javascript" src="scripts/deckbuilder.js"></script>
-    <script id="deckstorage" type="text/javascript" src="scripts/localstorage.js"></script>
+    <script id="deckstorage" type="text/javascript" src="scripts/localstorage-controller.js"></script>
+    <script src="scripts/ng-card-details-controller.js"></script>
     <script id="spoilers" type="text/javascript" src="scripts/data/spoilers.js"></script>
 
 </head>
@@ -110,7 +112,7 @@
                     <input type="image" id="berserk" name="skill" title="Berserk" src="res/skills/Berserk.png" onclick="filterSkill(this, 'berserk')" oncontextmenu="return showAdvancedFilters('berserk')" />
                     <input type="image" id="strike" name="skill" title="Bolt" src="res/skills/Bolt.png" onclick="filterSkill(this, 'strike')" oncontextmenu="return showAdvancedFilters('strike')" />
                     <input type="image" id="poisonstrike" name="skill" title="Poisonbolt" src="res/skills/Poisonbolt.png" onclick="filterSkill(this, 'poisonstrike')" oncontextmenu="return showAdvancedFilters('poisonstrike')" />
-                    <input type="image" id="leech" name="skill" title="Corrosive" src="res/skills/Corrosive.png" onclick="filterSkill(this, 'corrosive')" oncontextmenu="    return showAdvancedFilters('corrosive')" />
+                    <input type="image" id="leech" name="skill" title="Corrosive" src="res/skills/Corrosive.png" onclick="filterSkill(this, 'corrosive')" oncontextmenu=" return showAdvancedFilters('corrosive')" />
                     <input type="image" id="flurry" name="skill" title="Dualstrike" src="res/skills/Dualstrike.png" onclick="filterSkill(this, 'flurry')" oncontextmenu="return showAdvancedFilters('flurry')" />
                     <input type="image" id="rally" name="skill" title="Empower" src="res/skills/Empower.png" onclick="filterSkill(this, 'rally')" oncontextmenu="return showAdvancedFilters('rally')" />
                     <input type="image" id="enhance" name="skill" title="Enhance" src="res/skills/Enhance.png" onclick="filterSkill(this, 'enhance')" oncontextmenu="return showAdvancedFilters('enhance')" />
@@ -122,7 +124,7 @@
                     <input type="image" id="imbue" name="skill" title="Imbue" src="res/skills/Imbue.png" onclick="filterSkill(this, 'imbue')" oncontextmenu="return showAdvancedFilters('imbue')" />
                     <input type="image" id="evade" name="skill" title="Invisibile" src="res/skills/Invisibility.png" onclick="filterSkill(this, 'evade')" oncontextmenu="return showAdvancedFilters('evade')" />
                     <input type="image" id="legion" name="skill" title="Legion" src="res/skills/Legion.png" onclick="filterSkill(this, 'legion')" oncontextmenu="return showAdvancedFilters('legion')" />
-                    <input type="image" id="nullify" name="skill" title="Nullify" src="res/skills/Nullify.png" onclick="filterSkill(this, 'nullify')" oncontextmenu="    return showAdvancedFilters('nullify')" />
+                    <input type="image" id="nullify" name="skill" title="Nullify" src="res/skills/Nullify.png" onclick="filterSkill(this, 'nullify')" oncontextmenu=" return showAdvancedFilters('nullify')" />
                     <input type="image" id="pierce" name="skill" title="Pierce" src="res/skills/Pierce.png" onclick="filterSkill(this, 'pierce')" oncontextmenu="return showAdvancedFilters('pierce')" />
                     <input type="image" id="poison" name="skill" title="Poison" src="res/skills/Poison.png" onclick="filterSkill(this, 'poison')" oncontextmenu="return showAdvancedFilters('poison')" />
                     <input type="image" id="burn" name="skill" title="Scorch" src="res/skills/Scorch.png" onclick="filterSkill(this, 'burn')" oncontextmenu="return showAdvancedFilters('burn')" />
@@ -369,5 +371,9 @@
     </div>
 
     <div class="modal"><span>Loading...</span></div>
+
+    <div id="detailedView" ng-controller="CardDetailsCtrl">
+        <div card-details unit-id="1000" unit-level="1"></div>
+    </div>
 </body>
 </html>

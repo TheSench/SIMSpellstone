@@ -10,11 +10,12 @@
             $scope.card = $window.getCardInfo($scope.unit);
         }
 
-        $scope.setUnit = function (id, level) {
-            $scope.id = id;
-            $scope.level = level;
+        $scope.setUnit = function (unit) {
+            $scope.id = unit.id;
+            $scope.level = unit.level;
             $scope.unit = $window.makeUnitInfo($scope.id, $scope.level),
             $scope.card = $window.getCardInfo($scope.unit);
+            return this;
         }
 
         $scope.getCardImage = function ()

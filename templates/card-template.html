@@ -9,7 +9,7 @@
         <div class="{{rarity|lowercase}} center vertically">
             <span>{{getRarityString()}}</span>
             <span>{{getFaction(card.type)}}</span>
-            <span ng-if="card.sub_type">{{getFaction(card.sub_type)}}</span>
+            <span ng-if="card.sub_type != 0">{{getFaction(card.sub_type)}}</span>
         </div>
         <div class="center vertically horizontally">
             <div class="center vertically horizontally">

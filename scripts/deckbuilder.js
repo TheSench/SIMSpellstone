@@ -43,6 +43,7 @@ var advancedFilters;
 var optionsDialog;
 var saveDeckDialog;
 var loadDeckDialog;
+var detailsDialog;
 var form;
 
 var $nameFilter;
@@ -222,6 +223,17 @@ var setupPopups = function () {
             }
         },
     });
+
+    detailsDialog = $("#detailedView").dialog({
+        minWidth: 480,
+        minHeight: 330,
+        padding: 0,
+        autoOpen: false,
+        modal: true,
+        resizable: false,
+        buttons: {
+        },
+    });
 }
 
 var drawAllCards = function () {
@@ -262,6 +274,23 @@ function addEventHandlers($htmlCards) {
         .click(deckOnClick)
         .contextmenu(showCardOptions)
         .mouseover(highlight);
+}
+
+function addDetailHandler($htmlCards) {
+    $htmlCards.contextmenu(showDetails);
+}
+
+var showDetails = function (event) {
+    var show = false;
+    var htmlCard = event.delegateTarget;
+    var unit = getUnitFromCard(htmlCard);
+
+    cardDetailScope.setUnit(unit).$apply();
+
+    detailsDialog.dialog("open");
+    detailsDialog.dialog("option", "position", { my: "center", at: "center", of: window });
+
+    detailsDialog.onloaded = setInventory;
 }
 
 function duplicate(event) {
@@ -366,13 +395,14 @@ function doDrawCardList(cardList, resetPage) {
     }
     document.getElementById("pageNumber").innerHTML = "Page " + (page + 1) + "/" + pages;
     $cardSpace = $("#cardSpace");
-    var cards = $cardSpace.find(".card");
-    if (cards.length) {
-        var card = cards[0];
+    var $cards = $cardSpace.find(".card");
+    if ($cards.length) {
+        var card = $cards[0];
         var $card = $(card);
         var minHeight = (card.offsetHeight + parseInt($card.css('marginTop')) + parseInt($card.css('marginBottom'))) * parseInt(rows);
         $cardSpace.css('min-height', minHeight + 'px');
     }
+    addDetailHandler($cards);
 }
 
 var onResize = (function () {
