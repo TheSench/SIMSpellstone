@@ -33,6 +33,11 @@
             return (Math.floor(id / 10000) + 1);
         }
 
+        $scope.keyPress = function (keyEvent)
+        {
+            console.log(keyEvent);
+        }
+
         $scope.isFused = function () {
             return (getFusion() > 1);
         }
@@ -101,7 +106,18 @@
             return $window.factions.names[factionID];
         }
 
-        $scope.fuse = function ()
+        $scope.decrementFusion = function ()
+        {
+            $scope.id = Number($scope.id);
+            if ($scope.id > 10000)
+            {
+                $scope.id -= 10000;
+            }
+            $scope.unit.id = $scope.id;
+            $scope.card = $window.getCardInfo($scope.unit);
+        }
+
+        $scope.incrementFusion = function ()
         {
             $scope.id = Number($scope.id);
             if ($scope.id < 20000)
@@ -110,13 +126,34 @@
             }
             $scope.unit.id = $scope.id;
             $scope.card = $window.getCardInfo($scope.unit);
+        }
 
+        $scope.decrementLevel = function ()
+        {
+            $scope.level = Number($scope.level);
+            if ($scope.level > 1)
+            {
+                $scope.level--;
+            }
+            $scope.unit.level = $scope.level;
+            $scope.card = $window.getCardInfo($scope.unit);
+        }
+
+        $scope.incrementLevel = function ()
+        {
+            $scope.level = Number($scope.level);
+            if ($scope.level < $scope.card.maxLevel)
+            {
+                $scope.level++;
+            }
+            $scope.unit.level = $scope.level;
+            $scope.card = $window.getCardInfo($scope.unit);
         }
     };
 
-    angular.module('cardDetailsApp', [])
+    angular.module('simulatorApp')
         .controller('CardDetailsCtrl', ['$scope', '$window', CardDetailsCtrl])
-        .directive('myCard', function ()
+        .directive('cardDetails', function ()
         {
             return {
                 scope: {

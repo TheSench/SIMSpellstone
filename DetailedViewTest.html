@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" ng-app="cardDetailsApp">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="simulatorApp">
 <head>
     <title></title>
     <link rel="stylesheet" type="text/css" href="styles/card.css">
@@ -21,13 +21,14 @@
 
     <!--<script type='text/ng-template' id='card-template.html' src="templates/card-template.html"></script>-->
 
+    <script src="scripts/ng-simulator-controller.js"></script>
     <script src="scripts/ng-card-details-controller.js"></script>
 </head>
 <body>
     <div ng-controller="CardDetailsCtrl">
-        <div my-card unit-id="1340" unit-level="1"></div>
-        <div my-card unit-id="1027" unit-level="5"></div>
-        <div my-card unit-id="1001" unit-level="3"></div>
+        <div card-details unit-id="6059" unit-level="6"></div>
+        <div card-details unit-id="16059" unit-level="6"></div>
+        <div card-details unit-id="26059" unit-level="6"></div>
     </div>
 </body>
 </html>

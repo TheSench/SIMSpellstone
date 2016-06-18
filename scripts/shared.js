@@ -1949,6 +1949,7 @@ function getCardInfo(unit)
         }
     }
     card.level = level;
+    card.maxLevel = GetMaxLevel(original);
     return card;
 }
 

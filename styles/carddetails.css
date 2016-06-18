@@ -29,6 +29,18 @@
   left: 50%;
 }
 
+.card-details .icon-center {
+  position: absolute;
+  margin: -16px -16px;
+  left: 50%;
+  left: 50%;
+}
+
+.card-details .placeholder-fusion {
+  min-width: 68px;
+  min-height: 32px;
+}
+
 .card-details .icon-fusion {
   height: 32px;
   margin-left: -34px;
@@ -57,7 +69,7 @@
 }
 
 .card-details .card-stats div {
-  font-size: 20px;
+  font-size: 18px;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -94,6 +106,10 @@
 .card-details .card-stats span {
   margin-left: 2px;
   margin-right: 2px;
+}
+
+.anchor {
+  position: relative;
 }
 
 /*# sourceMappingURL=carddetails.css.map */
