@@ -10,14 +10,20 @@
             return (obj ? Object.keys(obj) : []);
         };
     };
+    var module;
+    try {
+        module = angular.module('simulatorApp');
+    }
+    catch (loadError) {
+        module = angular.module('simulatorApp', []);
+    }
 
-    angular.module('simulatorApp', [])
-        .controller('DeckStorageCtrl', ['$scope', '$window', DeckStorageCtrl]);
+    module.controller('DeckStorageCtrl', ['$scope', '$window', DeckStorageCtrl]);
 
 }(angular));
 
 // Set up StorageAPI based on feature availability
-if(function(type) {
+if (function (type) {
     // LocalStorage Suppotr Check : https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API
     try {
         var storage = window[type],
@@ -25,9 +31,9 @@ if(function(type) {
         storage.setItem(x, x);
         storage.removeItem(x);
         return true;
-    } catch(e) {
+} catch (e) {
         return false;
-    }
+}
 }('localStorage')) {
     (function () {
         var SaveFields = {
@@ -69,7 +75,7 @@ if(function(type) {
     var SaveFields = {
         decks: "SavedDecks"
     }
-    
+
     storageAPI.saveDeck = function (name, hash) {
         storageAPI.savedDecks[name] = hash;
         storageAPI.onUpdate();
