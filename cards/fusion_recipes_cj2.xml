@@ -2018,6 +2018,14 @@
     <resource card_id="16058" number="2" />
   </fusion_recipe>
   <fusion_recipe>
+    <card_id>16059</card_id>
+    <resource card_id="6059" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26059</card_id>
+    <resource card_id="16059" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
     <card_id>16060</card_id>
     <resource card_id="6060" number="2" />
   </fusion_recipe>

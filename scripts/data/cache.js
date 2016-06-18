@@ -43633,6 +43633,234 @@ var CARDS = {
       },
     }
   },
+  "6059": {
+    "id": "6059",
+    "name": "Violetfire Igniter",
+    "picture": "Purple_Fire_Dragon_A",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "9",
+    "attack": 4,
+    "health": 18,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "strike",
+        "x": 1,
+      },
+      {
+        "id": "burn",
+        "x": 1,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 19,
+        "skill": [],
+      },
+      "3": {
+        "health": 20,
+        "skill": [],
+      },
+      "4": {
+        "attack": 5,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "strike",
+            "x": 1,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "6": {
+        "health": 21,
+        "skill": [
+          {
+            "id": "strike",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "16059": {
+    "id": "16059",
+    "name": "Violetfire Erupter",
+    "picture": "Purple_Fire_Dragon_A",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "9",
+    "attack": 5,
+    "health": 22,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "strike",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "burn",
+        "x": 2,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 24,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "health": 25,
+        "skill": [],
+      },
+      "6": {
+        "attack": 6,
+        "skill": [],
+      },
+    }
+  },
+  "26059": {
+    "id": "26059",
+    "name": "Violetfire Besieger",
+    "picture": "Purple_Fire_Dragon_B",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "9",
+    "attack": 7,
+    "health": 27,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "strike",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "burn",
+        "x": 2,
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 28,
+        "skill": [],
+      },
+      "3": {
+        "attack": 8,
+        "health": 29,
+        "skill": [],
+      },
+      "4": {
+        "health": 30,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "strike",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
   "6060": {
     "id": "6060",
     "name": "Pudgytusk",
@@ -84091,49 +84319,10 @@ var CARDS = {
       },
     }
   },
-  "9996": {
-    "id": "9996",
-    "name": "",
-    "picture": "New15_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19996": {
-    "id": "19996",
-    "name": "",
-    "picture": "New15_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29996": {
-    "id": "29996",
-    "name": "",
-    "picture": "New15_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
   "9997": {
     "id": "9997",
     "name": "",
-    "picture": "New18_A",
+    "picture": "New15_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -84146,7 +84335,7 @@ var CARDS = {
   "19997": {
     "id": "19997",
     "name": "",
-    "picture": "New18_A",
+    "picture": "New15_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -84159,7 +84348,7 @@ var CARDS = {
   "29997": {
     "id": "29997",
     "name": "",
-    "picture": "New18_B",
+    "picture": "New15_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -84172,7 +84361,7 @@ var CARDS = {
   "9998": {
     "id": "9998",
     "name": "",
-    "picture": "New19_A",
+    "picture": "New18_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -84185,7 +84374,7 @@ var CARDS = {
   "19998": {
     "id": "19998",
     "name": "",
-    "picture": "New19_A",
+    "picture": "New18_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -84198,7 +84387,7 @@ var CARDS = {
   "29998": {
     "id": "29998",
     "name": "",
-    "picture": "New19_B",
+    "picture": "New18_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -84211,7 +84400,7 @@ var CARDS = {
   "9999": {
     "id": "9999",
     "name": "",
-    "picture": "New6_A",
+    "picture": "New19_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -84224,7 +84413,7 @@ var CARDS = {
   "19999": {
     "id": "19999",
     "name": "",
-    "picture": "New6_A",
+    "picture": "New19_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -84237,7 +84426,7 @@ var CARDS = {
   "29999": {
     "id": "29999",
     "name": "",
-    "picture": "New6_B",
+    "picture": "New19_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -85130,13 +85319,6 @@ var CAMPAIGNS = {
     "location_id": "6",
     "side_mission": "",
     "missions": ["361","362","363","364"]
-  },
-  "4000": {
-    "id": "4000",
-    "name": "Arena Test 1",
-    "location_id": "6",
-    "side_mission": "",
-    "missions": ["5001"]
   },
 };
 var MISSIONS = {
@@ -110055,6 +110237,7 @@ var FUSIONS = {
   "16056" : "26056",
   "16057" : "26057",
   "16058" : "26058",
+  "16059" : "26059",
   "1606" : "11606",
   "16060" : "26060",
   "16061" : "26061",
@@ -110330,6 +110513,7 @@ var FUSIONS = {
   "6056" : "16056",
   "6057" : "16057",
   "6058" : "16058",
+  "6059" : "16059",
   "6060" : "16060",
   "6061" : "16061",
   "6062" : "16062",
