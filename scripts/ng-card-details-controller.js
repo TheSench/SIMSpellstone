@@ -4,12 +4,18 @@
 
     var CardDetailsCtrl = function ($scope, $window)
     {
-        if ($scope.id && $scope.level)
-        {
+        $window.cardDetailScope = $scope;
+        if ($scope.id && $scope.level) {
             $scope.unit = $window.makeUnitInfo($scope.id, $scope.level),
             $scope.card = $window.getCardInfo($scope.unit);
         }
-        
+
+        $scope.setUnit = function (id, level) {
+            $scope.id = id;
+            $scope.level = level;
+            $scope.unit = $window.makeUnitInfo($scope.id, $scope.level),
+            $scope.card = $window.getCardInfo($scope.unit);
+        }
 
         $scope.getCardImage = function ()
         {
@@ -33,9 +39,28 @@
             return (Math.floor(id / 10000) + 1);
         }
 
-        $scope.keyPress = function (keyEvent)
+        $scope.keyPress = function (event)
         {
-            console.log(keyEvent);
+            var fn;
+            switch (event.which) {
+                case 37:
+                    fn = 'decrementLevel';
+                    break;
+                case 38:
+                    fn = 'incrementFusion';
+                    break;
+                case 39:
+                    fn = 'incrementLevel';
+                    break;
+                case 40:
+                    fn = 'decrementFusion';
+                    break;
+            }
+            if (fn) {
+                $scope[fn]();
+                event.preventDefault();
+                event.stopPropagation();
+            }
         }
 
         $scope.isFused = function () {
@@ -171,6 +196,9 @@
             {
                 return (!!input) ? input.charAt(0).toUpperCase() + input.substr(1).toLowerCase() : '';
             }
+        }).filter('convertName', function ()
+        {
+            return window.convertName;
         });
 
 }(angular));

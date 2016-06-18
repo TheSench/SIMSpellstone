@@ -1,4 +1,4 @@
-<div class="card-details" ng-keyup="keyPress($event)">
+<div class="card-details" tabindex="0" ng-keydown="keyPress($event)">
     <div id="cardArt" class="detail-panel">
         <img class="card-art" src="{{getCardImage()}}" />
         <img class="bottom-center icon-fusion" src="{{getFusionIcon()}}" ng-if="isFused()" />
@@ -41,10 +41,10 @@
         </div>
         <div ng-repeat="skill in card.skill" class="skill-list">
             <img src="{{getSkillIcon(skill.id)}}" />
-            <span>{{skill.id|capitalize}}</span>
+            <span>{{skill.id|convertName|capitalize}}</span>
             <span ng-if="skill.all == 1">All</span>
             <span ng-if="skill.y > 0">{{getFaction(skill.y)}}</span>
-            <span ng-if="skill.s">{{skill.s}}</span>
+            <span ng-if="skill.s">{{skill.s|convertName|capitalize}}</span>
             <span ng-if="skill.x > 0">{{skill.x}}</span>
             <span ng-if="skill.c">Every {{skill.c}}</span>
         </div>
