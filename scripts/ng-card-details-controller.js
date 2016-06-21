@@ -204,6 +204,20 @@
             return src;
         }
 
+        var setNames = {
+            1000: "Basic",
+            7000: "Basic",
+            2000: "Reward",
+            3000: "Premium",
+            4000: "BoxOnly",
+            9999: "StoryElements"
+        }
+        $scope.getSetIcon = function ()
+        {
+            var setName = setNames[$scope.card.set];
+            return ('res/cardAssets/' + setName + '.png');
+        }
+
         $scope.getFaction = function (factionID)
         {
             return $window.factions.names[factionID];

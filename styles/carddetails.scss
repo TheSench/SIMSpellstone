@@ -16,6 +16,7 @@
         float: left;
         width: 50%;
         position: relative;
+        min-height: 330px;
     }
 
     .card-art {
@@ -23,7 +24,6 @@
         margin: auto;
         min-height: 330px;
         max-height: 330px;
-        max-width: 231px;
     }
 
     .bottom-center {
@@ -31,6 +31,12 @@
         bottom: 0;
         margin-left: -16px;
         left: 50%;
+    }
+
+    .bottom-right {
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
 
     .icon-center {
