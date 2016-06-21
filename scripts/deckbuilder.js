@@ -897,26 +897,44 @@ function stopPropagation(id) {
 
 function undo() {
     if (currentChange > 0) {
+        var $hash = $(document.getElementById("hash"));
+        $hash.on("focus", preventFocus);
+
         disableTracking = true
+
         currentChange--;
         var hash = changeTracking[currentChange];
-        document.getElementById("hash").value = hash;
+        $hash.val(hash);
         deck = hash_decode(hash);
         doDrawDeck();
+
+        $hash.off("focus");
         disableTracking = false;
     }
 }
 
 function redo() {
     if (currentChange < changeTracking.length - 1) {
+        var $hash = $(document.getElementById("hash"));
+        $hash.on("focus", preventFocus);
+
         disableTracking = true;
+
         currentChange++;
         var hash = changeTracking[currentChange];
-        document.getElementById("hash").value = hash;
+        $hash.val(hash);
         deck = hash_decode(hash);
         doDrawDeck();
+    
+        $hash.off("focus");
         disableTracking = false;
     }
+}
+
+var preventFocus = function (event)
+{
+    $(this).blur();
+    event.stopPropagation();
 }
 
 var filterAdvanced = function (skill) {
