@@ -1,3 +1,7 @@
+#detailedView {
+    padding: 0;
+}
+
 .card-details {
     display: block;
     width: 475px;
@@ -17,6 +21,7 @@
     .card-art {
         display: block;
         margin: auto;
+        min-height: 330px;
         max-height: 330px;
         max-width: 231px;
     }
@@ -32,12 +37,15 @@
         position: absolute;
         margin: -16px -16px;
         left: 50%;
-        left: 50%;
     }
 
     .placeholder-fusion {
         min-width: 68px;
         min-height: 32px;
+    }
+
+    .rarity {
+        height: 32px;
     }
 
     .icon-fusion {

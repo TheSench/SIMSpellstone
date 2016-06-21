@@ -1,27 +1,27 @@
 <div class="card-details" tabindex="0" ng-keydown="keyPress($event)">
     <div id="cardArt" class="detail-panel">
-        <img class="card-art" src="{{getCardImage()}}" />
+        <img class="card-art" src="{{imageSrc}}" />
         <img class="bottom-center icon-fusion" src="{{getFusionIcon()}}" ng-if="isFused()" />
-        <img class="bottom-center" src="{{getRarityIcon()}}" />
+        <img class="bottom-center rarity" src="{{getRarityIcon()}}" ng-if="showRarity()" />
     </div>
     <div id="cardStats" class="detail-panel card-stats">
         <div>{{card.name}}</div>
         <div class="{{rarity|lowercase}} center vertically">
-            <span>{{getRarityString()}}</span>
+            <span ng-if="showRarity()">{{getRarityString()}}</span>
             <span>{{getFaction(card.type)}}</span>
             <span ng-if="card.sub_type != 0">{{getFaction(card.sub_type)}}</span>
         </div>
         <div class="center vertically horizontally">
             <div class="center vertically horizontally">
-                <span ng-click="decrementFusion()" class="ui-icon ui-icon-arrowthickstop-1-w"></span>
-                <span ng-click="decrementLevel()" class="ui-icon ui-icon-circle-triangle-w"></span>
+                <span ng-click="decrementFusion()" ng-if="fusable()" class="ui-icon ui-icon-arrowthickstop-1-w"></span>
+                <span ng-click="decrementLevel()" ng-if="hasLevels()" class="ui-icon ui-icon-circle-triangle-w"></span>
                 <div class="anchor center vertically">
                     <div class="placeholder-fusion" ng-if="!isFused()"></div>
                     <img class="stat-icon" src="{{getFusionIcon()}}" ng-if="isFused()" />
-                    <img class="bottom-center" src="{{getRarityIcon()}}" />
+                    <img class="bottom-center rarity" src="{{getRarityIcon()}}" ng-if="showRarity()" />
                 </div>
-                <span ng-click="incrementLevel()" class="ui-icon ui-icon-circle-triangle-e"></span>
-                <span ng-click="incrementFusion()" class="ui-icon ui-icon-arrowthickstop-1-e"></span>
+                <span ng-click="incrementLevel()" ng-if="hasLevels()" class="ui-icon ui-icon-circle-triangle-e"></span>
+                <span ng-click="incrementFusion()" ng-if="fusable()" class="ui-icon ui-icon-arrowthickstop-1-e"></span>
             </div>
             <br />
         </div>

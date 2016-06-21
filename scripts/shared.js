@@ -1192,6 +1192,8 @@ function convertName(oldName) {
             return "invisibility";
         case "flurry":
             return "dualstrike";
+        case "frost":
+            return "frostbreath";
         case "jam":
             return "freeze";
         case "leech":
@@ -1944,7 +1946,7 @@ function getCardInfo(unit)
                 if (upgrade.health !== undefined) card.health = upgrade.health;
                 if (upgrade.attack !== undefined) card.attack = upgrade.attack;
                 if (upgrade.skill.length > 0) card.skill = upgrade.skill;
-                if (key == card.level) break;
+                if (key == level) break;
             }
         }
     }

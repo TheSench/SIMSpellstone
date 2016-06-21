@@ -5,12 +5,14 @@
     var CardDetailsCtrl = function ($scope, $window)
     {
         $window.cardDetailScope = $scope;
-        if ($scope.id && $scope.level) {
+        if ($scope.id && $scope.level)
+        {
             $scope.unit = $window.makeUnitInfo($scope.id, $scope.level),
             $scope.card = $window.getCardInfo($scope.unit);
         }
 
-        $scope.setUnit = function (unit) {
+        $scope.setUnit = function (unit)
+        {
             $scope.id = unit.id;
             $scope.level = unit.level;
             $scope.unit = $window.makeUnitInfo($scope.id, $scope.level),
@@ -20,19 +22,91 @@
 
         $scope.getCardImage = function ()
         {
-            return "res/cardImagesLarge/" + loadCard($scope.card.id).picture + ".jpg";;
+            var image = new Image();
+            image.src = "res/cardImagesLarge/" + loadCard($scope.card.id).picture + ".jpg";
+
+            image.onerror = function ()
+            {
+                if (this.naturalHeight != 330)
+                {
+                    this.src = th.replace('ImagesLarge', 'Images');
+                    this.onload = null;
+                }
+                $modal.find('img').attr('src', this.src);
+            }
+
+            return "res/cardImagesLarge/" + loadCard($scope.card.id).picture + ".jpg";
         }
+
+        var image;
+        $scope.imageSrc = "res/cardImagesLarge/NotFound.jpg"
+        $scope.$watch('card.id', function (newValue, oldValue)
+        {
+            if (newValue)
+            {
+                var extension = ".jpg";
+                if (is_commander(newValue))
+                {
+                    extension = ".png";
+                }
+                image = new Image();
+                image.onerror = function ()
+                {
+                    this.onerror = null;
+                    this.src = this.src.replace('ImagesLarge', 'Images');
+                };
+                image.onload = function ()
+                {
+                    this.onerror = null;
+                    this.onload = null;
+                    $scope.imageSrc = image.src;
+                    $scope.$apply();
+                }
+                image.src = "res/cardImagesLarge/" + loadCard(newValue).picture + extension;
+            }
+            else
+            {
+                $scope.imageSrc = "res/cardImagesLarge/NotFound.jpg"
+            }
+        });
 
         $scope.getRarityString = function ()
         {
             return $window.rarityStrings[$scope.card.rarity];
         }
 
+        $scope.showRarity = function ()
+        {
+            var card = $scope.card;
+            if (card.rarity > 0) {
+                return true;
+            } else if (card.maxLevel > 1) {
+                return true;
+            } else {
+                return false;
+            }
+        }
         $scope.getRarityIcon = function ()
         {
             var card = $scope.card;
-            return "res/cardAssets/" + "Level_" + card.rarity + "_" + card.level + ".png";
+            if (card.rarity > 0)
+            {
+                return "res/cardAssets/Level_" + card.rarity + "_" + card.level + ".png";
+            } else if (card.maxLevel > 1)
+            {
+                return "res/cardAssets/" + card.maxLevel + "_" + card.level + ".png";
+            }
         }
+
+        $scope.fusable = function ()
+        {
+            return $window.FUSIONS[$scope.id];
+        };
+
+        $scope.hasLevels = function ()
+        {
+            return ($scope.card.maxLevel > 1);
+        };
 
         var getFusion = $scope.getFusion = function ()
         {
@@ -43,7 +117,8 @@
         $scope.keyPress = function (event)
         {
             var fn;
-            switch (event.which) {
+            switch (event.which)
+            {
                 case 37:
                     fn = 'decrementLevel';
                     break;
@@ -57,14 +132,16 @@
                     fn = 'decrementFusion';
                     break;
             }
-            if (fn) {
+            if (fn)
+            {
                 $scope[fn]();
                 event.preventDefault();
                 event.stopPropagation();
             }
         }
 
-        $scope.isFused = function () {
+        $scope.isFused = function ()
+        {
             return (getFusion() > 1);
         }
 
@@ -183,7 +260,7 @@
         {
             return {
                 scope: {
-                    id: "@unitId", 
+                    id: "@unitId",
                     level: "@unitLevel",
                 },
                 restrict: 'A',
@@ -195,7 +272,20 @@
         {
             return function (input)
             {
-                return (!!input) ? input.charAt(0).toUpperCase() + input.substr(1).toLowerCase() : '';
+                if (!!input)
+                {
+                    var parts = input.split(' ');
+                    for (var i = 0; i < parts.length; i++)
+                    {
+                        var part = parts[i];
+                        parts[i] = part.charAt(0).toUpperCase() + part.substr(1);
+                    }
+                    return parts.join(" ");
+                }
+                else
+                {
+                    return ''
+                };
             }
         }).filter('convertName', function ()
         {
