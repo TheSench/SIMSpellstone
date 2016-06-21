@@ -5,8 +5,8 @@
         <img class="bottom-center rarity" src="{{getRarityIcon()}}" ng-if="showRarity()" />
     </div>
     <div id="cardStats" class="detail-panel card-stats">
-        <div>{{card.name}}</div>
-        <div class="{{rarity|lowercase}} center vertically">
+        <div class="fs18">{{card.name}}</div>
+        <div class="{{rarity|lowercase}} center vertically fs18">
             <span ng-if="showRarity()">{{getRarityString()}}</span>
             <span>{{getFaction(card.type)}}</span>
             <span ng-if="card.sub_type != 0">{{getFaction(card.sub_type)}}</span>
@@ -26,7 +26,7 @@
             <br />
         </div>
         <div id="baseStats" class="base-stats">
-            <div>
+            <div ng-if="card.attack !== undefined">
                 <img src="res/cardAssets/Attack3.png" class="stat-icon" />
                 <span>Attack: {{card.attack}}</span>
             </div>
@@ -34,7 +34,7 @@
                 <img src="res/cardAssets/Health.png" class="stat-icon" />
                 <span>Health: {{card.health}}</span>
             </div>
-            <div>
+            <div ng-if="card.cost !== undefined">
                 <img src="res/cardAssets/Timer.png" class="stat-icon" />
                 <span>Delay: {{card.cost}}</span>
             </div>

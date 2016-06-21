@@ -394,9 +394,11 @@ fieldset {
     margin: 5px 5px 0px 0px;
 }
 
+/*
 .ui-draggable .ui-dialog-titlebar {
     display: none;
 }
+*/
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
