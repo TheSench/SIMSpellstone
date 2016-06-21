@@ -262,9 +262,9 @@ var drawDeck = function () {
 }
 
 function doDrawDeck() {
-    if (inventoryMode) {
+    /*if (inventoryMode) {
         $deck = CARD_GUI.draw_inventory(deck.deck);
-    } else {
+    } else */{
         $deck = CARD_GUI.draw_deck(deck, inventoryMode);
     }
     var $htmlCards = $deck.find(".card:not(.blank)")
@@ -301,11 +301,15 @@ var showDetails = function (event) {
 function duplicate(event) {
     if (event.ctrlKey) {
         var $this = $(this);
-        var emptySpaces = $this.parent().find(".blank");
-        if (!emptySpaces.length) {
-            return;
+        if (!inventoryMode)
+        {
+            var emptySpaces = $this.parent().find(".blank");
+            if (!emptySpaces.length)
+            {
+                return;
+            }
+            emptySpaces.first().remove();
         }
-        emptySpaces.first().remove();
         var index = $this.index();
         var unit = deck.deck[index - 1];
         var clone = $this.clone();
@@ -518,9 +522,9 @@ var addUnitLevels = function (id, maxlevel) {
 }
 
 var resetDeck = function () {
-    if (inventoryMode) {
+    /*if (inventoryMode) {
         hash_changed('');
-    } else {
+    } else */{
         hash_changed('oZ0IB');
     }
 }
@@ -582,14 +586,12 @@ var addUnitToDeck = function (unit, htmlCard) {
     addEventHandlers($htmlCard);
 
     var $deck = $("#deck");
-
+    /*
     if (inventoryMode) {
         deck.deck.push(unit);
-        /*
-        $deck.append($htmlCard)
-        */
+        //$deck.append($htmlCard);
         doDrawDeck();
-    } else if (is_commander(unit.id)) {
+    } else*/ if (is_commander(unit.id)) {
         deck.commander = unit;
         $deck.find(".card").first().replaceWith($htmlCard);
     } else {
@@ -637,7 +639,7 @@ var removeFromDeck = function (event) {
     var unit;
     var $htmlCard = $(event.delegateTarget)
     var index = $htmlCard.index();
-    if (inventoryMode) {
+    /*if (inventoryMode) {
         var inventory = deck.deck;
         var invIndex = 0;
         var i = 0;
@@ -655,11 +657,9 @@ var removeFromDeck = function (event) {
             lastUnit = unit;
         }
         unit = deck.deck.splice(i, 1)[0];
-        /*
-        $htmlCard.remove();
-        */
+        //$htmlCard.remove();
         doDrawDeck();
-    } else if (index == 0) {
+    } else*/ if (index == 0) {
         unit = deck.commander;
         if (areEqual(unit, elariaCaptain)) return;
         deck.commander = elariaCaptain;
