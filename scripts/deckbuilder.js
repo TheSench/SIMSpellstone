@@ -231,8 +231,13 @@ var setupPopups = function () {
         autoOpen: false,
         modal: true,
         resizable: false,
-        buttons: {
-        },
+        open: function ()
+        {
+            jQuery('.ui-widget-overlay').bind('click', function ()
+            {
+                jQuery('#detailedView').dialog('close');
+            })
+        }
     });
 }
 
