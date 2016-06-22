@@ -47,7 +47,7 @@
                 <div><b>Deck Hash:</b></div>
                 <div>
                     <div class="highlighter" id="hash_highlighter"></div>
-                    <input class="highlighted" id="hash" type="text" value="" size="100" onchange="hash_changed();">
+                    <input class="highlighted" id="hash" type="text" value="" size="100" onchange="hash_changed();" onpaste="hash_changed.debounce(100)();" />
                 </div><br />
                 <br />
                 <input id="resetDeck" type="button" value="Reset" onclick="resetDeck()" />
