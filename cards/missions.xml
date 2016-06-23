@@ -85,8 +85,8 @@
   </feature_lock>
   <feature_lock>
     <id>vip_system</id>
-    <mission_req>-1</mission_req>
-    <!-- 11 -->
+    <mission_req>64</mission_req>
+    <!-- 64 -->
   </feature_lock>
   <!-- MISSIONS BEGIN -->
   <!-- Elaria Missions BEGIN -->
@@ -6109,6 +6109,16 @@
     <mapBG>Map_RedFeatherValley</mapBG>
     <asset_bundle>54</asset_bundle>
     <combatBG>CombatBGRedFeatherValley</combatBG>
+    <req>-1</req>
+    <arena_x>250</arena_x>
+    <arena_y>150</arena_y>
+  </location>
+  <location>
+    <id>110</id>
+    <name>Beetleton Bunker</name>
+    <mapBG>Map_BeetletonBunker</mapBG>
+    <asset_bundle>54</asset_bundle>
+    <combatBG>CombatBGBeetletonBunker</combatBG>
     <req>-1</req>
     <arena_x>250</arena_x>
     <arena_y>150</arena_y>

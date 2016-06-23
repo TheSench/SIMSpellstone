@@ -143,6 +143,15 @@
       <add_skill id="valor" mult="1" base="attack" y="10" />
     </effect>
   </battleground>
+  <battleground>
+    <id>110</id>
+    <name>Insect BGE</name>
+    <desc>Insect holder</desc>
+    <icon>filter_avian_64.png</icon>
+    <effect>
+      <add_skill id="valor" mult="1" base="attack" y="10" />
+    </effect>
+  </battleground>
   <!-- 501-1000: Specialty BGE -->
   <battleground>
     <id>501</id>

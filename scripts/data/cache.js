@@ -16181,6 +16181,217 @@ var CARDS = {
       },
     }
   },
+  "2048": {
+    "id": "2048",
+    "name": "Sandmite",
+    "picture": "NotFound",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "13",
+    "attack": 2,
+    "health": 8,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "pierce",
+        "x": 1,
+      },
+      {
+        "id": "leech",
+        "x": 2,
+      },
+      {
+        "id": "flurry",
+        "c": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "pierce",
+            "x": 1,
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 5,
+          },
+        ],
+      },
+      "3": {
+        "health": 9,
+        "skill": [],
+      },
+      "4": {
+        "health": 10,
+        "skill": [
+          {
+            "id": "pierce",
+            "x": 2,
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 5,
+          },
+        ],
+      },
+      "5": {
+        "attack": 3,
+        "skill": [],
+      },
+    }
+  },
+  "12048": {
+    "id": "12048",
+    "name": "Sandspeck",
+    "picture": "NotFound",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "13",
+    "attack": 3,
+    "health": 10,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "pierce",
+        "x": 2,
+      },
+      {
+        "id": "leech",
+        "x": 2,
+      },
+      {
+        "id": "flurry",
+        "c": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 11,
+        "skill": [
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "4": {
+        "health": 12,
+        "skill": [],
+      },
+      "5": {
+        "attack": 4,
+        "health": 13,
+        "skill": [],
+      },
+    }
+  },
+  "22048": {
+    "id": "22048",
+    "name": "Sandroach",
+    "picture": "NotFound",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "13",
+    "attack": 4,
+    "health": 13,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "pierce",
+        "x": 3,
+      },
+      {
+        "id": "leech",
+        "x": 3,
+      },
+      {
+        "id": "flurry",
+        "c": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+      "3": {
+        "attack": 5,
+        "health": 14,
+        "skill": [],
+      },
+      "4": {
+        "health": 15,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+    }
+  },
   "5000": {
     "id": "5000",
     "name": "Azure Sphinx",
@@ -30762,6 +30973,491 @@ var CARDS = {
       },
     }
   },
+  "5065": {
+    "id": "5065",
+    "name": "Hive Guard",
+    "desc": "The members of a colony charged with its defense have often evolved precisely for that task.",
+    "picture": "Hive_Guard_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "13",
+    "attack": 4,
+    "health": 11,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 1,
+        "y": "13",
+        "z": 13,
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "y": "1",
+        "z": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 12,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 1,
+            "y": "13",
+            "z": 13,
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 6,
+          },
+        ],
+      },
+      "4": {
+        "attack": 5,
+        "health": 13,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 2,
+            "y": "13",
+            "z": 13,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 6,
+          },
+        ],
+      },
+    }
+  },
+  "15065": {
+    "id": "15065",
+    "name": "Hive Defender",
+    "picture": "Hive_Guard_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "13",
+    "attack": 5,
+    "health": 13,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 2,
+        "y": "13",
+        "z": 13,
+      },
+      {
+        "id": "protect",
+        "x": 3,
+        "y": "1",
+        "z": 1,
+      },
+      {
+        "id": "flurry",
+        "c": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "attack": 6,
+        "health": 15,
+        "skill": [],
+      },
+      "4": {
+        "health": 16,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 3,
+            "y": "13",
+            "z": 13,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 5,
+          },
+        ],
+      },
+    }
+  },
+  "25065": {
+    "id": "25065",
+    "name": "Hive Sentry",
+    "picture": "Hive_Guard_B",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "13",
+    "attack": 6,
+    "health": 16,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 3,
+        "y": "13",
+        "z": 13,
+      },
+      {
+        "id": "protect",
+        "x": 4,
+        "y": "1",
+        "z": 1,
+      },
+      {
+        "id": "flurry",
+        "c": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 17,
+        "skill": [],
+      },
+      "3": {
+        "attack": 7,
+        "health": 18,
+        "skill": [],
+      },
+      "4": {
+        "health": 19,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 4,
+            "y": "13",
+            "z": 13,
+          },
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "1",
+            "z": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+    }
+  },
+  "5070": {
+    "id": "5070",
+    "name": "Hornslicer",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "13",
+    "attack": 4,
+    "health": 17,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "rally",
+        "x": 3,
+        "y": "13",
+        "z": 13,
+      },
+      {
+        "id": "nullify",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 18,
+        "skill": [],
+      },
+      "3": {
+        "health": 19,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "13",
+            "z": 13,
+          },
+          {
+            "id": "nullify",
+            "x": 1,
+          },
+        ],
+      },
+      "4": {
+        "attack": 5,
+        "health": 20,
+        "skill": [],
+      },
+      "5": {
+        "health": 21,
+        "skill": [],
+      },
+      "6": {
+        "health": 22,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "13",
+            "z": 13,
+          },
+          {
+            "id": "nullify",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "15070": {
+    "id": "15070",
+    "name": "Horncutter",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "13",
+    "attack": 5,
+    "health": 23,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 3,
+      },
+      {
+        "id": "rally",
+        "x": 4,
+        "y": "13",
+        "z": 13,
+      },
+      {
+        "id": "nullify",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 5,
+            "y": "13",
+            "z": 13,
+          },
+          {
+            "id": "nullify",
+            "x": 2,
+          },
+        ],
+      },
+      "3": {
+        "health": 24,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 6,
+            "y": "13",
+            "z": 13,
+          },
+          {
+            "id": "nullify",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "attack": 6,
+        "health": 25,
+        "skill": [],
+      },
+      "5": {
+        "health": 26,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "rally",
+            "x": 6,
+            "y": "13",
+            "z": 13,
+          },
+          {
+            "id": "nullify",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "health": 27,
+        "skill": [],
+      },
+    }
+  },
+  "25070": {
+    "id": "25070",
+    "name": "Hornsaber",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "13",
+    "attack": 6,
+    "health": 28,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 4,
+      },
+      {
+        "id": "rally",
+        "x": 6,
+        "y": "13",
+        "z": 13,
+      },
+      {
+        "id": "nullify",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 29,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "rally",
+            "x": 7,
+            "y": "13",
+            "z": 13,
+          },
+          {
+            "id": "nullify",
+            "x": 3,
+          },
+        ],
+      },
+      "3": {
+        "health": 30,
+        "skill": [],
+      },
+      "4": {
+        "attack": 7,
+        "health": 31,
+        "skill": [],
+      },
+      "5": {
+        "health": 32,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 5,
+          },
+          {
+            "id": "rally",
+            "x": 7,
+            "y": "13",
+            "z": 13,
+          },
+          {
+            "id": "nullify",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 5,
+          },
+          {
+            "id": "rally",
+            "x": 8,
+            "y": "13",
+            "z": 13,
+          },
+          {
+            "id": "nullify",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
   "6000": {
     "id": "6000",
     "name": "Furnace Mech",
@@ -44518,6 +45214,223 @@ var CARDS = {
           {
             "id": "weaken",
             "x": 5,
+          },
+        ],
+      },
+    }
+  },
+  "6063": {
+    "id": "6063",
+    "name": "Firetail Dragon",
+    "desc": "\"Often found roaming the great plains of Nuramatha, it is hypothesized that they are the reason for the lack of forests in the area.\" - Researcher's Notes",
+    "picture": "Fire_Tip_Dragon_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "9",
+    "attack": 3,
+    "health": 7,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 1,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 8,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 1,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+        ],
+      },
+      "5": {
+        "attack": 4,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "16063": {
+    "id": "16063",
+    "name": "Flametail Dragon",
+    "picture": "Fire_Tip_Dragon_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "9",
+    "attack": 4,
+    "health": 9,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 2,
+      },
+      {
+        "id": "strike",
+        "x": 2,
+      },
+      {
+        "id": "burn",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 3,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+        ],
+      },
+      "3": {
+        "health": 10,
+        "skill": [],
+      },
+      "4": {
+        "health": 11,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 3,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "26063": {
+    "id": "26063",
+    "name": "Blazetail Dragon",
+    "picture": "Fire_Tip_Dragon_B",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "9",
+    "attack": 4,
+    "health": 12,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 3,
+      },
+      {
+        "id": "strike",
+        "x": 3,
+      },
+      {
+        "id": "burn",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 5,
+        "skill": [],
+      },
+      "3": {
+        "health": 13,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 4,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 4,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+          {
+            "id": "burn",
+            "x": 2,
           },
         ],
       },
@@ -59421,6 +60334,265 @@ var CARDS = {
           {
             "id": "berserk",
             "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "7063": {
+    "id": "7063",
+    "name": "Poisac Crawler",
+    "picture": "Poison_Sac_Back_Bug_A",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "13",
+    "attack": 4,
+    "health": 18,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "poison",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 19,
+        "skill": [],
+      },
+      "3": {
+        "health": 20,
+        "skill": [],
+      },
+      "4": {
+        "attack": 5,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "health": 21,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "17063": {
+    "id": "17063",
+    "name": "Poisac Lurker",
+    "picture": "Poison_Sac_Back_Bug_A",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "13",
+    "attack": 5,
+    "health": 22,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "poison",
+        "x": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 6,
+        "skill": [],
+      },
+      "3": {
+        "health": 23,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 5,
+          },
+        ],
+      },
+      "4": {
+        "health": 24,
+        "skill": [],
+      },
+      "5": {
+        "health": 25,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 6,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 6,
+          },
+        ],
+      },
+    }
+  },
+  "27063": {
+    "id": "27063",
+    "name": "Poisac Prime",
+    "picture": "Poison_Sac_Back_Bug_B",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "13",
+    "attack": 7,
+    "health": 25,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 3,
+      },
+      {
+        "id": "protect",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "poison",
+        "x": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 26,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 7,
+          },
+        ],
+      },
+      "3": {
+        "health": 27,
+        "skill": [],
+      },
+      "4": {
+        "attack": 8,
+        "health": 28,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 7,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 8,
           },
         ],
       },
@@ -84319,123 +85491,6 @@ var CARDS = {
       },
     }
   },
-  "9997": {
-    "id": "9997",
-    "name": "",
-    "picture": "New15_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19997": {
-    "id": "19997",
-    "name": "",
-    "picture": "New15_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29997": {
-    "id": "29997",
-    "name": "",
-    "picture": "New15_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9998": {
-    "id": "9998",
-    "name": "",
-    "picture": "New18_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19998": {
-    "id": "19998",
-    "name": "",
-    "picture": "New18_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29998": {
-    "id": "29998",
-    "name": "",
-    "picture": "New18_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9999": {
-    "id": "9999",
-    "name": "",
-    "picture": "New19_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19999": {
-    "id": "19999",
-    "name": "",
-    "picture": "New19_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29999": {
-    "id": "29999",
-    "name": "",
-    "picture": "New19_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
 };
 var LOCATIONS = {
   "1": {
@@ -84481,6 +85536,10 @@ var LOCATIONS = {
   "109": {
     "id": "109",
     "name": "Red Feather Valley",
+  },
+  "110": {
+    "id": "110",
+    "name": "Beetleton Bunker",
   },
   "2": {
     "id": "2",
@@ -110079,6 +111138,7 @@ var FUSIONS = {
   "12045" : "22045",
   "12046" : "22046",
   "12047" : "22047",
+  "12048" : "22048",
   "1300" : "11300",
   "1301" : "11301",
   "1302" : "11302",
@@ -110172,6 +111232,8 @@ var FUSIONS = {
   "15062" : "25062",
   "15063" : "25063",
   "15064" : "25064",
+  "15065" : "25065",
+  "15070" : "25070",
   "1600" : "11600",
   "16000" : "26000",
   "16001" : "26001",
@@ -110242,6 +111304,7 @@ var FUSIONS = {
   "16060" : "26060",
   "16061" : "26061",
   "16062" : "26062",
+  "16063" : "26063",
   "1607" : "11607",
   "1610" : "11610",
   "1613" : "11613",
@@ -110326,6 +111389,7 @@ var FUSIONS = {
   "17060" : "27060",
   "17061" : "27061",
   "17062" : "27062",
+  "17063" : "27063",
   "18000" : "28000",
   "18001" : "28001",
   "18002" : "28002",
@@ -110389,6 +111453,7 @@ var FUSIONS = {
   "2045" : "12045",
   "2046" : "12046",
   "2047" : "12047",
+  "2048" : "12048",
   "5000" : "15000",
   "5001" : "15001",
   "5002" : "15002",
@@ -110454,6 +111519,8 @@ var FUSIONS = {
   "5062" : "15062",
   "5063" : "15063",
   "5064" : "15064",
+  "5065" : "15065",
+  "5070" : "15070",
   "6000" : "16000",
   "6001" : "16001",
   "6002" : "16002",
@@ -110517,6 +111584,7 @@ var FUSIONS = {
   "6060" : "16060",
   "6061" : "16061",
   "6062" : "16062",
+  "6063" : "16063",
   "7000" : "17000",
   "7001" : "17001",
   "7002" : "17002",
@@ -110580,6 +111648,7 @@ var FUSIONS = {
   "7060" : "17060",
   "7061" : "17061",
   "7062" : "17062",
+  "7063" : "17063",
   "8000" : "18000",
   "8001" : "18001",
   "8002" : "18002",
@@ -110721,6 +111790,20 @@ var BATTLEGROUNDS = [
   {
     "name": "Airborne Mastery",
     "id": "109",
+    "effect": [
+      {
+        "effect_type": "add_skill",
+        "id": "valor",
+        "mult": 1,
+        "base": "attack",
+        "y": "10",
+        "z": 10,
+      },
+    ]
+  },
+  {
+    "name": "Insect BGE",
+    "id": "110",
     "effect": [
       {
         "effect_type": "add_skill",
