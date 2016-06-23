@@ -6,7 +6,20 @@
     overflow: hidden;
     font-size: 10px;
     position: relative;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none; /* IE 10+ */
 }
+
+    .card:hover .set {
+        width: 21px;
+    }
+
+    .card:hover .subfaction {
+        left: 25px;
+        width: 21px;
+    }
 
 .set {
     background-color: dimgray;
@@ -27,15 +40,6 @@
     margin: 1px 1px;
     border-radius: 10px;
     box-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-}
-
-.card:hover .set {
-    width: 21px;
-}
-
-.card:hover .subfaction {
-    left: 25px;
-    width: 21px;
 }
 
 .level {

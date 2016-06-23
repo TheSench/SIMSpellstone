@@ -1,7 +1,8 @@
 ﻿div {
-    -webkit-user-select: none; /* Chrome all / Safari all */
-    -moz-user-select: none; /* Firefox all */
-    -ms-user-select: none; /* IE 10+ */
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none; /* IE 10+ */
 }
 
 .accordion div.ui-accordion-content {
@@ -9,7 +10,7 @@
 }
 
 .ui-accordion-header.ui-state-active {
-    background: #e6e6e6 url("../Content/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png") 50% 50% repeat-x;
+    background: #e6e6e6 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAGQCAYAAABvWArbAAAANUlEQVQ4je3LMQoAIBADwb38/6t5wFXaWAiCtUiaYZvF9hBACOFbuntVVe11B0CSjjeE8BwThQIJ8dhEl0YAAAAASUVORK5CYII=') /*../Content/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png*/ 50% 50% repeat-x;
 }
 
 .ui-accordion .ui-accordion-header {
@@ -23,6 +24,7 @@
 
 .ct-barlabel {
     font-size:16px;
+    stroke: black;
 }
 
 .ct-series-a .ct-barlabel {
@@ -126,10 +128,6 @@
 }
 .ct-series-delay {
     stroke: steelblue;
-}
-
-.ct-barlabel {
-    stroke: black;
 }
 
     .ct-legend .ct-series-health:before {

@@ -3,11 +3,15 @@
 var loadDeckDialog;
 
 $(function () {
-    $("#deck").change(function () {
+    $("#deck").change(function ()
+    {
+        this.value = this.value.trim();
         deckChanged("attack_deck", hash_decode(this.value));
     });
 
-    $("#deck2").change(function () {
+    $("#deck2").change(function ()
+    {
+        this.value = this.value.trim();
         deckChanged("defend_deck", hash_decode(this.value));
     });
 
@@ -48,7 +52,6 @@ $(function () {
         deckChanged("defend_deck", newDeck);
     });
 
-
     loadDeckDialog = $("#loadDeckDialog").dialog({
         autoOpen: false,
         /*
@@ -75,8 +78,40 @@ $(function () {
 
     // Disable this as we now draw the full deck
     debug_dump_decks = function () { };
+
+    setDeckSortable("#attack_deck", '#deck');
+    setDeckSortable("#defend_deck", '#deck2');
 });
 
+function setDeckSortable(deckField, associatedHashField)
+{
+    $(deckField).sortable({
+        items: '.card:not(.commander):not(.blank)',
+        tolerance: "intersect",
+        helper: function (event, ui)
+        {
+            return ui.clone();
+        },
+        start: function (event, ui)
+        {
+            var origPos = ui.placeholder.index() - 1;
+            ui.item.data('origPos', origPos);
+            $(ui.item).hide();
+        },
+        stop: function (event, ui)
+        {
+            var origPos = ui.item.data('origPos') - 1;
+            var newPos = ui.item.index() - 1;
+            
+            var hashField = $(associatedHashField);
+            var deck = hash_decode(hashField.val());
+            var array = deck.deck;
+            array.splice(newPos, 0, array.splice(origPos, 1)[0]);
+            var hash = hash_encode(deck);
+            hashField.val(hash);
+        }
+    });
+}
 
 function loadDeck(hashField) {
     var decks = storageAPI.getSavedDecks;
@@ -87,7 +122,8 @@ function loadDeck(hashField) {
     loadDeckDialog.hashField = hashField;
 }
 
-function onDeckLoaded(newHash, hashField) {
+function onDeckLoaded(newHash, hashField)
+{
     $(hashField).val(newHash).change();
 }
 
