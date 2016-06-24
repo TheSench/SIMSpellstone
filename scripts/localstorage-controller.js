@@ -83,7 +83,6 @@ if (function (type) {
 
     storageAPI.loadDeck = function (name) {
         return storageAPI.savedDecks[name];
-        storageAPI.onUpdate();
     };
 
     storageAPI.deleteDeck = function (name) {

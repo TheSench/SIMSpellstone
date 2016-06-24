@@ -1189,10 +1189,13 @@ var SIMULATOR = {};
             } else {
                 // Play random card in hand
                 var hand = deck_p_deck.slice(0, 3);
-                if (p == 'player' || !smartAI) {
+                if (p == 'player') {
                     card_picked = chooseCardRandomly(p, deck_p_deck, deck_p_ordered, turn, redraw);
-                } else {
+                } else if (smartAI) {
                     card_picked = chooseCardByPoints(p, deck_p_deck, deck_p_ordered, turn, redraw);
+                } else {
+                    // AI picks first card
+                    card_picked = 0;
                 }
             }
 
@@ -1298,20 +1301,17 @@ var SIMULATOR = {};
         // Prepare 3-card hand
         var hand = shuffledDeck.slice(0, 3);
 
-        // Play card in hand with most upgrade points
-        var best = [];
+        // Play card in hand with most upgrade points (first card is picked in the case of ties)
+        card_picked = -1;
         var bestRank = 0;
         for (var i = 0; i < hand.length; i++) {
             var card = hand[i];
             var rank = getCardRanking(card);
-            if (rank == bestRank) {
-                best.push(i);
-            } else if (rank > bestRank) {
+            if (rank > bestRank) {
                 bestRank = rank;
-                best = [i];
+                card_picked = i;
             }
         }
-        var card_picked = (best[~~(Math.random() * best.length)]);
         play_card(shuffledDeck[card_picked], p);
         return card_picked;
     }

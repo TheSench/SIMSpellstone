@@ -145,11 +145,11 @@
   </battleground>
   <battleground>
     <id>110</id>
-    <name>Insect BGE</name>
-    <desc>Insect holder</desc>
-    <icon>filter_avian_64.png</icon>
+    <name>Hardened Carapace</name>
+    <desc>Insects gain a hardened carapace, gaining Armored value equal to 10% of their base Health, rounded up.</desc>
+    <icon>filter_insect_64.png</icon>
     <effect>
-      <add_skill id="valor" mult="1" base="attack" y="10" />
+      <add_skill id="armored" mult="0.1" base="health" y="13" />
     </effect>
   </battleground>
   <!-- 501-1000: Specialty BGE -->
