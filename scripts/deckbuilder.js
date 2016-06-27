@@ -50,7 +50,8 @@ var $nameFilter;
 var $deck;
 var $cardSpace;
 
-var initDeckBuilder = function () {
+var initDeckBuilder = function ()
+{
     setupPopups();
     adjustHeight();
 
@@ -63,9 +64,12 @@ var initDeckBuilder = function () {
     window.onwheel = changePage;
     window.oncontextmenu = hideContext;
 
-    $nameFilter = $('#nameFilter').keypress(function (event) {
-        if (event.which == 13) {
-            if (unitsFiltered.length == 1) {
+    $nameFilter = $('#nameFilter').keypress(function (event)
+    {
+        if (event.which == 13)
+        {
+            if (unitsFiltered.length == 1)
+            {
                 addUnitToDeck(unitsFiltered[0], $cardSpace.children()[0]);
             }
             event.preventDefault();
@@ -77,15 +81,18 @@ var initDeckBuilder = function () {
     var dhtml = $("#deck").sortable({
         items: '.card:not(.commander):not(.blank)',
         tolerance: "intersect",
-        helper: function (event, ui) {
+        helper: function (event, ui)
+        {
             return ui.clone();
         },
-        start: function (event, ui) {
+        start: function (event, ui)
+        {
             var lastPos = ui.placeholder.index() - 1;
             ui.item.data('last_pos', lastPos);
             $(ui.item).hide();
         },
-        change: function (event, ui) {
+        change: function (event, ui)
+        {
             var origPos = ui.item.index();
             var lastPos = ui.item.data('last_pos') - 1;
             var newPos = ui.placeholder.index();
@@ -101,20 +108,23 @@ var initDeckBuilder = function () {
         }
     });
 
-    setTimeout(function () {
+    setTimeout(function ()
+    {
         drawAllCards();
         $("body").removeClass("loading");
     }, 1);
 }
 
-var adjustHeight = function () {
+var adjustHeight = function ()
+{
     var deckBuilderContainer = $("#deckBuilderContainer");
     var height = $(window).height();
     deckBuilderContainer.css('height', height);
     deckBuilderContainer.css('max-height', height);
 }
 
-var setupPopups = function () {
+var setupPopups = function ()
+{
 
     stopPropagation("advancedFilters");
     stopPropagation("unitOptions");
@@ -127,7 +137,8 @@ var setupPopups = function () {
     $(".start-closed").accordion('option', 'active', false).show();
 
     var inputs = document.getElementsByTagName("input");
-    for (var i = 0; i < inputs.length; i++) {
+    for (var i = 0; i < inputs.length; i++)
+    {
 
     }
 
@@ -138,11 +149,13 @@ var setupPopups = function () {
         modal: true,
         resizable: false,
         buttons: {
-            OK: function () {
+            OK: function ()
+            {
                 filterAdvanced(advancedFilters.skill);
                 advancedFilters.dialog("close");
             },
-            Cancel: function () {
+            Cancel: function ()
+            {
                 advancedFilters.dialog("close");
             }
         },
@@ -154,26 +167,30 @@ var setupPopups = function () {
         modal: true,
         resizable: false,
         buttons: {
-            OK: function () {
+            OK: function ()
+            {
                 disableTracking = false;
                 modifyCard(optionsDialog);
                 updateHash();
                 optionsDialog.dialog("close");
                 disableTracking = false;
             },
-            Cancel: function () {
+            Cancel: function ()
+            {
                 resetCard(optionsDialog);
                 optionsDialog.dialog("close");
                 disableTracking = false;
             }
         },
     });
-    $("#unitOptions").bind("change", function () {
+    $("#unitOptions").bind("change", function ()
+    {
         modifyCard(optionsDialog);
     });
 
     var imageButtons = $('input[type="image"]');
-    for (var i = 0; i < imageButtons.length; i++) {
+    for (var i = 0; i < imageButtons.length; i++)
+    {
         var imageButton = imageButtons[i];
         var toolTip = '<div class="tooltip">' + imageButton.getAttribute("title") + '</div>';
         imageButton.removeAttribute("title");
@@ -191,13 +208,15 @@ var setupPopups = function () {
         modal: true,
         resizable: false,
         buttons: {
-            Save: function () {
+            Save: function ()
+            {
                 var name = $("#saveDeckName").val();
                 var hash = $("#hash").val();
                 storageAPI.saveDeck(name, hash);
                 saveDeckDialog.dialog("close");
             },
-            Cancel: function () {
+            Cancel: function ()
+            {
                 saveDeckDialog.dialog("close");
             }
         },
@@ -212,13 +231,15 @@ var setupPopups = function () {
         modal: true,
         resizable: false,
         buttons: {
-            Load: function () {
+            Load: function ()
+            {
                 var name = $("#loadDeckName").val();
                 var newHash = storageAPI.loadDeck(name);
                 loadDeckDialog.onloaded(newHash);
                 loadDeckDialog.dialog("close");
             },
-            Cancel: function () {
+            Cancel: function ()
+            {
                 loadDeckDialog.dialog("close");
             }
         },
@@ -241,30 +262,36 @@ var setupPopups = function () {
     });
 }
 
-var drawAllCards = function () {
+var drawAllCards = function ()
+{
     var inventory = _GET('inventory');
     drawCardList();
     drawDeck();
 }
 
-var drawDeck = function () {
+var drawDeck = function ()
+{
 
     var hash = _GET('hash');
-    if (hash) {
+    if (hash)
+    {
         hash_changed(hash);
     }
 
     var name = _GET('name');
-    if (name) {
+    if (name)
+    {
         setDeckName(name);
     }
     doDrawDeck();
 }
 
-function doDrawDeck() {
+function doDrawDeck()
+{
     /*if (inventoryMode) {
         $deck = CARD_GUI.draw_inventory(deck.deck);
-    } else */{
+    } else */
+{
         $deck = CARD_GUI.draw_deck(deck, inventoryMode);
     }
     var $htmlCards = $deck.find(".card:not(.blank)")
@@ -272,7 +299,8 @@ function doDrawDeck() {
     updateHash();
 };
 
-function addEventHandlers($htmlCards) {
+function addEventHandlers($htmlCards)
+{
     $htmlCards
         .mousedown(duplicate)
         //.mouseup(duplicate)
@@ -281,11 +309,13 @@ function addEventHandlers($htmlCards) {
         .mouseover(highlight);
 }
 
-function addDetailHandler($htmlCards) {
+function addDetailHandler($htmlCards)
+{
     $htmlCards.contextmenu(showDetails);
 }
 
-var showDetails = function (event) {
+var showDetails = function (event)
+{
     var show = false;
     var htmlCard = event.delegateTarget;
     var unit = getUnitFromCard(htmlCard);
@@ -298,8 +328,10 @@ var showDetails = function (event) {
     detailsDialog.onloaded = setInventory;
 }
 
-function duplicate(event) {
-    if (event.ctrlKey) {
+function duplicate(event)
+{
+    if (event.ctrlKey)
+    {
         var $this = $(this);
         if (!inventoryMode)
         {
@@ -320,43 +352,56 @@ function duplicate(event) {
     }
 }
 
-function deckOnClick(event) {
-    if (!event.ctrlKey) {
+function deckOnClick(event)
+{
+    if (!event.ctrlKey)
+    {
         removeFromDeck(event);
     }
 }
 
-var drawCardList = function () {
+var drawCardList = function ()
+{
 
     units = [];
     unitsShown = [];
-    if (inventory) {
+    if (inventory)
+    {
         fromInventory = true;
         inventory = hash_decode(inventory);
         var commander = inventory.commander;
         inventory = inventory.deck;
-        if (commander && !areEqual(commander, elariaCaptain)) {
+        if (commander && !areEqual(commander, elariaCaptain))
+        {
             addInventoryUnit(commander);
         }
-        for (var i = 0; i < inventory.length; i++) {
+        for (var i = 0; i < inventory.length; i++)
+        {
             addInventoryUnit(inventory[i]);
         }
         deck.commander = removeFromInventory(deck.commander);
-        for (var i = 0; i < deck.deck.length; i++) {
+        for (var i = 0; i < deck.deck.length; i++)
+        {
             var unit = deck.deck[i];
             deck.deck[i] = removeFromInventory(unit);
         }
-    } else {
+    } else
+    {
         var onlyNew = false;
-        if (_DEFINED('spoilers')) {
+        if (_DEFINED('spoilers'))
+        {
             onlyNew = true;
             //toggleDeckDisplay(document.getElementById("collapseFilters"));
         }
-        for (var id in allCards) {
-            if (id < 10000) {
-                if (!onlyNew) {
+        for (var id in allCards)
+        {
+            if (id < 10000)
+            {
+                if (!onlyNew)
+                {
                     addUnit(allCards[id]);
-                } else if (spoilers[id]) {
+                } else if (spoilers[id])
+                {
                     addUnit(allCards[id], spoilers);
                 }
             }
@@ -370,12 +415,14 @@ var drawCardList = function () {
 
 var page = 0;
 var pages = 0;
-function doDrawCardList(cardList, resetPage) {
+function doDrawCardList(cardList, resetPage)
+{
 
     var detailedSkills = document.getElementById("skillDetails").checked;
     var cardspace = document.getElementById("cardSpace");
 
-    if (resetPage) {
+    if (resetPage)
+    {
         page = 0;
     }
 
@@ -385,27 +432,32 @@ function doDrawCardList(cardList, resetPage) {
     cards *= rows;
     var lastUnit = null;
     var unique = 0;
-    for (var i = 0, len = cardList.length; i < len; i++) {
+    for (var i = 0, len = cardList.length; i < len; i++)
+    {
         var unit = cardList[i];
         if (!areEqual(unit, lastUnit)) unique++;
         lastUnit = unit;
     }
     pages = Math.max(Math.ceil(unique / cards), 1);
-    if (pages > 1) {
+    if (pages > 1)
+    {
         var start = cards * page;
-        if (page >= pages) {
+        if (page >= pages)
+        {
             page = pages - 1;
             start = cards * page;
         }
         CARD_GUI.draw_card_list(cardList, detailedSkills, addToDeck, hideContext, start, start + cards);
-    } else {
+    } else
+    {
         page = 0;
         CARD_GUI.draw_card_list(cardList, detailedSkills, addToDeck, hideContext);
     }
     document.getElementById("pageNumber").innerHTML = "Page " + (page + 1) + "/" + pages;
     $cardSpace = $("#cardSpace");
     var $cards = $cardSpace.find(".card");
-    if ($cards.length) {
+    if ($cards.length)
+    {
         var card = $cards[0];
         var $card = $(card);
         var minHeight = (card.offsetHeight + parseInt($card.css('marginTop')) + parseInt($card.css('marginBottom'))) * parseInt(rows);
@@ -414,34 +466,45 @@ function doDrawCardList(cardList, resetPage) {
     addDetailHandler($cards);
 }
 
-var onResize = (function () {
+var onResize = (function ()
+{
     redrawCardList(true);
 }).debounce(50);
 
-function adjustTable(filler) {
+function adjustTable(filler)
+{
     var currentRow = filler.parentElement;
     var table = currentRow.parentElement;
-    if (filler.offsetWidth <= 2) {
-        if (table.childElementCount == 1) {
+    if (filler.offsetWidth <= 2)
+    {
+        if (table.childElementCount == 1)
+        {
             var siblings = [];
             var sibling = filler.nextElementSibling;
-            while (sibling) {
+            while (sibling)
+            {
                 siblings.push(sibling);
                 sibling = sibling.nextElementSibling
             }
-            if (siblings.length) {
+            if (siblings.length)
+            {
                 var tr = document.createElement("tr");
-                for (var i = 0; i < siblings.length; i++) {
+                for (var i = 0; i < siblings.length; i++)
+                {
                     tr.appendChild(siblings[i]);
                 }
                 table.appendChild(tr);
             }
         }
-    } else {
-        if (table.childElementCount > 1) {
+    } else
+    {
+        if (table.childElementCount > 1)
+        {
             var tr = currentRow.nextElementSibling;
-            if (tr) {
-                for (var i = 0; i < tr.childNodes.length; i++) {
+            if (tr)
+            {
+                for (var i = 0; i < tr.childNodes.length; i++)
+                {
                     currentRow.appendChild(tr.childNodes[i]);
                 }
                 table.removeChild(tr);
@@ -450,94 +513,118 @@ function adjustTable(filler) {
     }
 }
 
-function changePage(event) {
-    if (overInventory(event)) {
-        if (event.deltaY < 0) {
+function changePage(event)
+{
+    if (overInventory(event))
+    {
+        if (event.deltaY < 0)
+        {
             pageUp();
-        } else if (event.deltaY > 0) {
+        } else if (event.deltaY > 0)
+        {
             pageDown();
         }
         event.preventDefault();
     }
 }
 
-function overInventory(event) {
+function overInventory(event)
+{
     var element = event.srcElement;
-    while (element != null) {
-        if (element.id === "cardSpace") {
+    while (element != null)
+    {
+        if (element.id === "cardSpace")
+        {
             return true;
         }
         element = element.parentElement;
     }
 }
 
-function pageUp() {
+function pageUp()
+{
     page--;
-    if (page < 0) {
+    if (page < 0)
+    {
         page = 0;
-    } else {
+    } else
+    {
         redrawCardList(true);
     }
 }
 
-function pageDown() {
+function pageDown()
+{
     page++;
-    if (page >= pages) {
+    if (page >= pages)
+    {
         page--;
-    } else {
+    } else
+    {
         redrawCardList(true);
     }
 }
 
-var redrawCardList = function (keepPaging) {
+var redrawCardList = function (keepPaging)
+{
     sortCards(document.getElementById("sortField"));
     applyFilters(keepPaging);
 }
 
-var addInventoryUnit = function (unit) {
+var addInventoryUnit = function (unit)
+{
     units.push(unit);
     unitsShown.push(unit);
 }
 
-var addUnit = function (unit, spoilers) {
+var addUnit = function (unit, spoilers)
+{
     var id = unit.id;
     var maxlevel = 1;
     if (unit.upgrades) for (var maxlevel in unit.upgrades) { }
     addUnitLevels(id, maxlevel);
-    if (spoilers) {
+    if (spoilers)
+    {
         if (spoilers["1" + id]) addUnitLevels("1" + id, maxlevel);
         if (spoilers["2" + id]) addUnitLevels("2" + id, maxlevel);
-    } else if (id > 999 && allCards["1" + id]) {
+    } else if (id > 999 && allCards["1" + id])
+    {
         addUnitLevels("1" + id, maxlevel);
         addUnitLevels("2" + id, maxlevel);
     }
 }
 
-var addUnitLevels = function (id, maxlevel) {
-    for (var level = 1; level <= maxlevel; level++) {
+var addUnitLevels = function (id, maxlevel)
+{
+    for (var level = 1; level <= maxlevel; level++)
+    {
         var unit = makeUnitInfo(id, level);
         units.push(unit);
         if (showUpgrades || level == maxlevel) unitsShown.push(unit);
     }
 }
 
-var resetDeck = function () {
+var resetDeck = function ()
+{
     /*if (inventoryMode) {
         hash_changed('');
-    } else */{
+    } else */
+{
         hash_changed('oZ0IB');
     }
 }
 
 var disableTracking = false;
-var hash_changed = function (hash) {
+var hash_changed = function (hash)
+{
 
-    if (fromInventory) {
+    if (fromInventory)
+    {
         if (!areEqual(deck.commander, elariaCaptain)) unitsShown.push(deck.commander);
         unitsShown.push.apply(unitsShown, deck.deck);
         redrawCardList(true);
     }
-    if(hash === undefined) hash = document.getElementById("hash").value.trim();
+    if (hash === undefined) hash = document.getElementById("hash").value.trim();
     document.getElementById("hash").value = hash;
 
     updateSimulator(hash);
@@ -546,9 +633,11 @@ var hash_changed = function (hash) {
 
     if (!hash) deck.commander = null;
 
-    if (fromInventory) {
+    if (fromInventory)
+    {
         if (!areEqual(deck.commander, elariaCaptain)) removeFromInventory(deck.commander);
-        for (var i = 0; i < deck.deck.length; i++) {
+        for (var i = 0; i < deck.deck.length; i++)
+        {
             removeFromInventory(deck.deck[i]);
         }
         applyFilters();
@@ -557,8 +646,10 @@ var hash_changed = function (hash) {
     doDrawDeck();
 }
 
-var sortDeck = function () {
-    deck.deck.sort(function (unitA, unitB) {
+var sortDeck = function ()
+{
+    deck.deck.sort(function (unitA, unitB)
+    {
         var cardA = get_card_by_id(unitA);
         var cardB = get_card_by_id(unitB);
         var compare;
@@ -576,12 +667,14 @@ var sortDeck = function () {
     doDrawDeck();
 }
 
-var addToDeck = function (htmlCard) {
+var addToDeck = function (htmlCard)
+{
     var unit = getUnitFromCard(htmlCard);
     addUnitToDeck(unit, htmlCard);
 }
 
-var addUnitToDeck = function (unit, htmlCard) {
+var addUnitToDeck = function (unit, htmlCard)
+{
     var $htmlCard = $(htmlCard).clone().find(".multiplier").remove().end();
     addEventHandlers($htmlCard);
 
@@ -591,43 +684,55 @@ var addUnitToDeck = function (unit, htmlCard) {
         deck.deck.push(unit);
         //$deck.append($htmlCard);
         doDrawDeck();
-    } else*/ if (is_commander(unit.id)) {
+    } else*/ if (is_commander(unit.id))
+    {
         deck.commander = unit;
         $deck.find(".card").first().replaceWith($htmlCard);
-    } else {
+    } else
+    {
         if (deck.deck.length == 15) return;
         deck.deck.push(unit);
         var emptySpaces = $deck.find(".blank");
-        if (emptySpaces.length) {
+        if (emptySpaces.length)
+        {
             emptySpaces.first().replaceWith($htmlCard);
-        } else {
+        } else
+        {
             $deck.append($htmlCard)
         }
     }
 
-    if (fromInventory) {
+    if (fromInventory)
+    {
         removeFromInventory(unit);
         $htmlCard = $(htmlCard);
         var $mult = $htmlCard.find("div.multiplier");
-        if ($mult.length > 0) {
+        if ($mult.length > 0)
+        {
             var count = Number($mult.attr("data-count")) - 1;
-            if (count > 1) {
+            if (count > 1)
+            {
                 $mult.attr("data-count", count);
                 $mult.html("x" + count);
-            } else {
+            } else
+            {
                 $htmlCard.find(".multiplier").remove();
             }
-        } else {
+        } else
+        {
             $htmlCard.remove();
         }
     }
     updateHash();
 };
 
-function removeFromInventory(unit) {
-    for (var i = 0; i < unitsShown.length; i++) {
+function removeFromInventory(unit)
+{
+    for (var i = 0; i < unitsShown.length; i++)
+    {
         var unit_i = unitsShown[i];
-        if (areEqual(unit, unit_i)) {
+        if (areEqual(unit, unit_i))
+        {
             var removed = unitsShown.splice(i, 1);
             return removed[0];
         }
@@ -635,7 +740,8 @@ function removeFromInventory(unit) {
     return unit;
 }
 
-var removeFromDeck = function (event) {
+var removeFromDeck = function (event)
+{
     var unit;
     var $htmlCard = $(event.delegateTarget)
     var index = $htmlCard.index();
@@ -659,22 +765,26 @@ var removeFromDeck = function (event) {
         unit = deck.deck.splice(i, 1)[0];
         //$htmlCard.remove();
         doDrawDeck();
-    } else*/ if (index == 0) {
+    } else*/ if (index == 0)
+    {
         unit = deck.commander;
         if (areEqual(unit, elariaCaptain)) return;
         deck.commander = elariaCaptain;
         var card = get_card_by_id(elariaCaptain);
         $htmlCard.replaceWith(CARD_GUI.create_card_html(card));
-    } else {
+    } else
+    {
         unit = deck.deck.splice(index - 1, 1)[0];
         $htmlCard.remove();
-        if (deck.deck.length < 15) {
+        if (deck.deck.length < 15)
+        {
             $deck.append("<div class='card blank'></div>");
         }
     }
 
 
-    if (fromInventory) {
+    if (fromInventory)
+    {
         unitsShown.push(unit);
         redrawCardList(true);
     }
@@ -682,13 +792,15 @@ var removeFromDeck = function (event) {
     updateHash();
 };
 
-var highlight = function (event) {
+var highlight = function (event)
+{
     highlighted = $(event.delegateTarget).index();
     updateHighlights();
 }
 
 var highlighted = -1;
-function updateHighlights() {
+function updateHighlights()
+{
     var hash_highlighted = document.getElementById("hash");
     var deckHash = hash_highlighted.value;
 
@@ -701,7 +813,8 @@ function updateHighlights() {
     $(hash_highlighter).width($(hash_highlighted).width())
 }
 
-var updateHash = function () {
+var updateHash = function ()
+{
     var deckHash = hash_encode(deck);
     document.getElementById("hash").value = deckHash;
 
@@ -714,11 +827,13 @@ var updateHash = function () {
     updateGraphs();
 }
 
-var updateSimulator = function (deckHash) {
+var updateSimulator = function (deckHash)
+{
     // Placeholder function - set by Simulator
 }
 
-var updateGraphs = function () {
+var updateGraphs = function ()
+{
 
     var delays = [0, 0, 0, 0, 0];
     var attackStats = [];
@@ -726,7 +841,8 @@ var updateGraphs = function () {
     var delayStats = [];
     var types = {};
     var sub_types = {};
-    for (var i = 0; i < deck.deck.length; i++) {
+    for (var i = 0; i < deck.deck.length; i++)
+    {
         var unit = deck.deck[i];
         var card = get_card_by_id(unit);
         delays[card.cost]++;
@@ -742,10 +858,12 @@ var updateGraphs = function () {
     healthStats.sort(numericSort);
     delayStats.sort(numericSort);
 
-    function sum(total, num) {
+    function sum(total, num)
+    {
         return total + num;
     }
-    function average(ary) {
+    function average(ary)
+    {
         return (ary.length ? (ary.reduce(sum) / ary.length).toFixed(0) : 0);
     }
     var avgAttack = average(attackStats);
@@ -801,13 +919,16 @@ var updateGraphs = function () {
                 { value: avgDelay, className: 'ct-series-delay' }
         ]
     };
-    new Chartist.Bar('#averagesChart', data, options).on('draw', function (data) {
+    new Chartist.Bar('#averagesChart', data, options).on('draw', function (data)
+    {
         var barHorizontalCenter, barVerticalCenter, label, value;
-        if (data.type === "bar") {
+        if (data.type === "bar")
+        {
             barHorizontalCenter = data.x1 + (data.element.width() * .5);
             barVerticalCenter = data.y1 + (data.element.height() * -1) - 10;
             value = data.element.attr('ct:value');
-            if (value !== '0') {
+            if (value !== '0')
+            {
                 label = new Chartist.Svg('text');
                 label.text(value);
                 label.addClass("ct-barlabel");
@@ -824,7 +945,8 @@ var updateGraphs = function () {
     var options = {
         width: 450,
         height: 200,
-        labelInterpolationFnc: function (label, i) {
+        labelInterpolationFnc: function (label, i)
+        {
             return data.series[i].value;
         },
         plugins: [
@@ -834,7 +956,8 @@ var updateGraphs = function () {
 
     var labels = [];
     var data = [];
-    for (var key in types) {
+    for (var key in types)
+    {
         var factionName = factions.names[key];
         labels.push(factionName);
         data.push({
@@ -845,12 +968,14 @@ var updateGraphs = function () {
     var data = { labels: labels, series: data };
     new Chartist.Pie('#factionChart', data, options);
 
-    options.labelInterpolationFnc = function (label, i) {
+    options.labelInterpolationFnc = function (label, i)
+    {
         return data2.series[i].value;
     };
     var labels = [];
     var data2 = [];
-    for (var key in sub_types) {
+    for (var key in sub_types)
+    {
         var factionName = factions.names[key];
         labels.push(factionName);
         data2.push({
@@ -864,24 +989,31 @@ var updateGraphs = function () {
 
 var changeTracking = [];
 var currentChange = -1;
-function addChange(hash) {
-    if (!disableTracking) {
+function addChange(hash)
+{
+    if (!disableTracking)
+    {
         currentChange++;
         changeTracking[currentChange] = hash;
         changeTracking.length = currentChange + 1;
-        if (currentChange > 100) {
+        if (currentChange > 100)
+        {
             currentChange--;
             changeTracking.splice(0, 1);
         }
     }
 }
 
-function KeyPress(e) {
+function KeyPress(e)
+{
     var evtobj = window.event ? event : e
-    if (evtobj.ctrlKey) {
-        if (evtobj.keyCode == 90) {
+    if (evtobj.ctrlKey)
+    {
+        if (evtobj.keyCode == 90)
+        {
             undo();
-        } else if (evtobj.keyCode == 89) {
+        } else if (evtobj.keyCode == 89)
+        {
             redo();
         }
     }
@@ -889,14 +1021,18 @@ function KeyPress(e) {
 
 document.onkeydown = KeyPress;
 
-function stopPropagation(id) {
-    document.getElementById(id).onkeydown = function (e) {
+function stopPropagation(id)
+{
+    document.getElementById(id).onkeydown = function (e)
+    {
         e.stopPropagation();
     }
 }
 
-function undo() {
-    if (currentChange > 0) {
+function undo()
+{
+    if (currentChange > 0)
+    {
         var $hash = $(document.getElementById("hash"));
         $hash.on("focus", preventFocus);
 
@@ -913,8 +1049,10 @@ function undo() {
     }
 }
 
-function redo() {
-    if (currentChange < changeTracking.length - 1) {
+function redo()
+{
+    if (currentChange < changeTracking.length - 1)
+    {
         var $hash = $(document.getElementById("hash"));
         $hash.on("focus", preventFocus);
 
@@ -925,7 +1063,7 @@ function redo() {
         $hash.val(hash);
         deck = hash_decode(hash);
         doDrawDeck();
-    
+
         $hash.off("focus");
         disableTracking = false;
     }
@@ -937,7 +1075,8 @@ var preventFocus = function (event)
     event.stopPropagation();
 }
 
-var filterAdvanced = function (skill) {
+var filterAdvanced = function (skill)
+{
 
     var info = {
         id: skill,
@@ -948,37 +1087,45 @@ var filterAdvanced = function (skill) {
         all: undefined,
     }
 
-    for (var i = 0; i < skillFiltersAdv.length; i++) {
-        if (skillFiltersAdv[i].id == skill) {
+    for (var i = 0; i < skillFiltersAdv.length; i++)
+    {
+        if (skillFiltersAdv[i].id == skill)
+        {
             skillFiltersAdv.splice(i, 1);
             break;
         }
     }
 
-    if ($("div#amount")[0].style.display != "none") {
+    if ($("div#amount")[0].style.display != "none")
+    {
         var min = parseInt($("#amount-min")[0].value);
         var max = parseInt($("#amount-max")[0].value);
         if (isNaN(min)) min = 0;
         if (isNaN(max)) max = 99;
         info.x = { min: min, max: max };
     }
-    if ($("div#timer")[0].style.display != "none") {
+    if ($("div#timer")[0].style.display != "none")
+    {
         var min = parseInt($("#timer-min")[0].value);
         var max = parseInt($("#timer-max")[0].value);
         if (isNaN(min)) min = 0;
         if (isNaN(max)) max = 99;
         info.c = { min: min, max: max };
     }
-    if ($("div#faction")[0].style.display != "none") {
+    if ($("div#faction")[0].style.display != "none")
+    {
         var faction = $("select#faction")[0].value;
         info.y = (faction == "Generic") ? -1 : factions.IDs[faction];
     }
-    if ($("div#skill")[0].style.display != "none") {
-        if ($("select#skill")[0].value.length > 0) {
+    if ($("div#skill")[0].style.display != "none")
+    {
+        if ($("select#skill")[0].value.length > 0)
+        {
             info.s = $("select#skill")[0].value;
         }
     }
-    if ($("label[for=all]")[0].style.display != "none") {
+    if ($("label[for=all]")[0].style.display != "none")
+    {
         info.all = $("select#all")[0].value;
     }
 
@@ -988,46 +1135,60 @@ var filterAdvanced = function (skill) {
     checkAdvancedFilters();
 }
 
-var checkAdvancedFilters = function () {
+var checkAdvancedFilters = function ()
+{
     skillHiddenAdv = {};
 
-    for (var i = 0; i < units.length; i++) {
+    for (var i = 0; i < units.length; i++)
+    {
         var unit = units[i];
-        for (var s = 0; s < skillFiltersAdv.length; s++) {
-            if (!hasSkillAdvanced(unit, skillFiltersAdv[s])) {
+        for (var s = 0; s < skillFiltersAdv.length; s++)
+        {
+            if (!hasSkillAdvanced(unit, skillFiltersAdv[s]))
+            {
                 skillHiddenAdv[makeUnitKey(unit)] = true;
             }
         }
     }
-    for (var key in skillFiltersAdv) {
+    for (var key in skillFiltersAdv)
+    {
         var info = skillFiltersAdv[key];
     }
     applyFilters();
 }
 
-var filterSkill = function (button, skill) {
+var filterSkill = function (button, skill)
+{
     skillHidden = {};
-    if (button.classList.contains("selected")) {
+    if (button.classList.contains("selected"))
+    {
         button.classList.remove("selected");
         skillFilters.splice(skillFilters.indexOf(skill), 1);
-    } else if (button.classList.contains("selected-advanced")) {
+    } else if (button.classList.contains("selected-advanced"))
+    {
         button.classList.remove("selected-advanced");
-        for (var i = 0; i < skillFiltersAdv.length; i++) {
-            if (skillFiltersAdv[i].id == skill) {
+        for (var i = 0; i < skillFiltersAdv.length; i++)
+        {
+            if (skillFiltersAdv[i].id == skill)
+            {
                 skillFiltersAdv.splice(i, 1);
                 break;
             }
         }
         checkAdvancedFilters();
         return;
-    } else {
+    } else
+    {
         button.classList.add("selected");
         skillFilters.push(skill);
     }
-    for (var i = 0; i < units.length; i++) {
+    for (var i = 0; i < units.length; i++)
+    {
         var unit = units[i];
-        for (var s = 0; s < skillFilters.length; s++) {
-            if (!hasSkill(unit, skillFilters[s])) {
+        for (var s = 0; s < skillFilters.length; s++)
+        {
+            if (!hasSkill(unit, skillFilters[s]))
+            {
                 skillHidden[makeUnitKey(unit)] = true;
                 break;
             }
@@ -1036,38 +1197,49 @@ var filterSkill = function (button, skill) {
     applyFilters();
 };
 
-var filterFaction = function (button, faction) {
+var filterFaction = function (button, faction)
+{
     factionHidden = {};
-    if (button.classList.contains("selected")) {
+    if (button.classList.contains("selected"))
+    {
         button.classList.remove("selected");
         button.checked = false;
-    } else {
+    } else
+    {
         button.classList.add("selected");
-        for (var i = 0, len = units.length; i < len; i++) {
+        for (var i = 0, len = units.length; i < len; i++)
+        {
             var unit = units[i];
-            if (!isInFaction(unit, faction)) {
+            if (!isInFaction(unit, faction))
+            {
                 factionHidden[makeUnitKey(unit)] = true;
             }
         }
     }
     var filters = document.getElementsByName("faction");
-    for (var i = 0; i < filters.length; i++) {
+    for (var i = 0; i < filters.length; i++)
+    {
         var filter = filters[i];
-        if (filter != button) {
+        if (filter != button)
+        {
             filter.classList.remove("selected");
         }
     }
     applyFilters();
 };
 
-var filterName = (function (field) {
+var filterName = (function (field)
+{
     var filter = field.value.toLowerCase();
     nameHidden = {};
-    if (filter) {
-        for (var i = 0, len = units.length; i < len; i++) {
+    if (filter)
+    {
+        for (var i = 0, len = units.length; i < len; i++)
+        {
             var unit = units[i];
             var card = get_slim_card_by_id(unit, true);
-            if (card.name.toLowerCase().indexOf(filter) == -1) {
+            if (card.name.toLowerCase().indexOf(filter) == -1)
+            {
                 nameHidden[makeUnitKey(unit)] = true;
             }
         }
@@ -1075,52 +1247,68 @@ var filterName = (function (field) {
     applyFilters();
 }).throttle(250);
 
-var filterSubfaction = function (button, faction) {
+var filterSubfaction = function (button, faction)
+{
     subfactionHidden = {};
-    if (button.classList.contains("selected")) {
+    if (button.classList.contains("selected"))
+    {
         button.classList.remove("selected");
         button.checked = false;
-    } else {
+    } else
+    {
         button.classList.add("selected");
-        for (var i = 0, len = units.length; i < len; i++) {
+        for (var i = 0, len = units.length; i < len; i++)
+        {
             var unit = units[i];
-            if (!isInSubfaction(unit, faction)) {
+            if (!isInSubfaction(unit, faction))
+            {
                 subfactionHidden[makeUnitKey(unit)] = true;
             }
         }
     }
     var filters = document.getElementsByName("subfaction");
-    for (var i = 0; i < filters.length; i++) {
+    for (var i = 0; i < filters.length; i++)
+    {
         var filter = filters[i];
-        if (filter != button) {
+        if (filter != button)
+        {
             filter.classList.remove("selected");
         }
     }
     applyFilters();
 }
 
-var filterAttack = function (button, min, max) {
+var filterAttack = function (button, min, max)
+{
     attackHidden = {};
-    if (button.classList.contains("selected")) {
+    if (button.classList.contains("selected"))
+    {
         button.classList.remove("selected");
         button.checked = false;
-        for (var i = 0; i < attackRanges.length; i++) {
-            if (attackRanges[i][0] == min) {
+        for (var i = 0; i < attackRanges.length; i++)
+        {
+            if (attackRanges[i][0] == min)
+            {
                 attackRanges.splice(i, 1);
                 break;
             }
         }
-    } else {
+    } else
+    {
         button.classList.add("selected");
         attackRanges.push([min, max]);
     }
-    if (attackRanges.length > 0) {
-        for (var i = 0, len = units.length; i < len; i++) {
+    if (attackRanges.length > 0)
+    {
+        for (var i = 0, len = units.length; i < len; i++)
+        {
             var unit = units[i];
             var hide = true;
-            for (var j = 0; j < attackRanges.length; j++) {
+            for (var j = 0; j < attackRanges.length; j++)
+            {
                 var range = attackRanges[j];
-                if (isInRange(unit, "attack", range[0], range[1])) {
+                if (isInRange(unit, "attack", range[0], range[1]))
+                {
                     hide = false;
                     break;
                 }
@@ -1131,28 +1319,37 @@ var filterAttack = function (button, min, max) {
     applyFilters();
 }
 
-var filterHealth = function (button, min, max) {
+var filterHealth = function (button, min, max)
+{
     healthHidden = {};
-    if (button.classList.contains("selected")) {
+    if (button.classList.contains("selected"))
+    {
         button.classList.remove("selected");
         button.checked = false;
-        for (var i = 0; i < healthRanges.length; i++) {
-            if (healthRanges[i][0] == min) {
+        for (var i = 0; i < healthRanges.length; i++)
+        {
+            if (healthRanges[i][0] == min)
+            {
                 healthRanges.splice(i, 1);
                 break;
             }
         }
-    } else {
+    } else
+    {
         button.classList.add("selected");
         healthRanges.push([min, max]);
     }
-    if (healthRanges.length > 0) {
-        for (var i = 0, len = units.length; i < len; i++) {
+    if (healthRanges.length > 0)
+    {
+        for (var i = 0, len = units.length; i < len; i++)
+        {
             var unit = units[i];
             var hide = true;
-            for (var j = 0; j < healthRanges.length; j++) {
+            for (var j = 0; j < healthRanges.length; j++)
+            {
                 var range = healthRanges[j];
-                if (isInRange(unit, "health", range[0], range[1])) {
+                if (isInRange(unit, "health", range[0], range[1]))
+                {
                     hide = false;
                     break;
                 }
@@ -1163,28 +1360,37 @@ var filterHealth = function (button, min, max) {
     applyFilters();
 }
 
-var filterDelay = function (button, delay) {
+var filterDelay = function (button, delay)
+{
     delayHidden = {};
-    if (button.classList.contains("selected")) {
+    if (button.classList.contains("selected"))
+    {
         button.classList.remove("selected");
         button.checked = false;
-        for (var i = 0; i < delayRanges.length; i++) {
-            if (delayRanges[i] == delay) {
+        for (var i = 0; i < delayRanges.length; i++)
+        {
+            if (delayRanges[i] == delay)
+            {
                 delayRanges.splice(i, 1);
                 break;
             }
         }
-    } else {
+    } else
+    {
         button.classList.add("selected");
         delayRanges.push(delay);
     }
-    if (delayRanges.length > 0) {
-        for (var i = 0, len = units.length; i < len; i++) {
+    if (delayRanges.length > 0)
+    {
+        for (var i = 0, len = units.length; i < len; i++)
+        {
             var unit = units[i];
             var hide = true;
-            for (var j = 0; j < delayRanges.length; j++) {
+            for (var j = 0; j < delayRanges.length; j++)
+            {
                 var delay = delayRanges[j];
-                if (isInRange(unit, "cost", delay, delay)) {
+                if (isInRange(unit, "cost", delay, delay))
+                {
                     hide = false;
                     break;
                 }
@@ -1195,28 +1401,37 @@ var filterDelay = function (button, delay) {
     applyFilters();
 }
 
-var filterType = function (button, type) {
+var filterType = function (button, type)
+{
     typeHidden = {};
-    if (button.classList.contains("selected")) {
+    if (button.classList.contains("selected"))
+    {
         button.classList.remove("selected");
         button.checked = false;
-        for (var i = 0; i < typeFilters.length; i++) {
-            if (typeFilters[i] == type) {
+        for (var i = 0; i < typeFilters.length; i++)
+        {
+            if (typeFilters[i] == type)
+            {
                 typeFilters.splice(i, 1);
                 break;
             }
         }
-    } else {
+    } else
+    {
         button.classList.add("selected");
         typeFilters.push(type);
     }
-    if (typeFilters.length > 0) {
-        for (var i = 0, len = units.length; i < len; i++) {
+    if (typeFilters.length > 0)
+    {
+        for (var i = 0, len = units.length; i < len; i++)
+        {
             var unit = units[i];
             var hide = true;
-            for (var j = 0; j < typeFilters.length; j++) {
+            for (var j = 0; j < typeFilters.length; j++)
+            {
                 var type = typeFilters[j];
-                if (isInRange(unit, "card_type", type, type)) {
+                if (isInRange(unit, "card_type", type, type))
+                {
                     hide = false;
                     break;
                 }
@@ -1227,29 +1442,38 @@ var filterType = function (button, type) {
     applyFilters();
 }
 
-var filterFusion = function (button, fusion) {
+var filterFusion = function (button, fusion)
+{
     fusionHidden = {};
-    if (button.classList.contains("selected")) {
+    if (button.classList.contains("selected"))
+    {
         button.classList.remove("selected");
         button.checked = false;
-        for (var i = 0; i < fusionFilters.length; i++) {
-            if (fusionFilters[i] == fusion) {
+        for (var i = 0; i < fusionFilters.length; i++)
+        {
+            if (fusionFilters[i] == fusion)
+            {
                 fusionFilters.splice(i, 1);
                 break;
             }
         }
-    } else {
+    } else
+    {
         button.classList.add("selected");
         fusionFilters.push(fusion);
     }
-    if (fusionFilters.length > 0) {
-        for (var i = 0, len = units.length; i < len; i++) {
+    if (fusionFilters.length > 0)
+    {
+        for (var i = 0, len = units.length; i < len; i++)
+        {
             var unit = units[i];
             var id = unit.id.toString();
             var fusion = (id.length > 4 ? id[0] : '');
             var hide = true;
-            for (var j = 0; j < fusionFilters.length; j++) {
-                if (fusion == fusionFilters[j]) {
+            for (var j = 0; j < fusionFilters.length; j++)
+            {
+                if (fusion == fusionFilters[j])
+                {
                     hide = false;
                     break;
                 }
@@ -1260,7 +1484,8 @@ var filterFusion = function (button, fusion) {
     applyFilters();
 }
 
-var showAdvancedFilters = function (skill) {
+var showAdvancedFilters = function (skill)
+{
 
     $("label[for=all]").hide();
     $("div#amount").hide();
@@ -1275,18 +1500,23 @@ var showAdvancedFilters = function (skill) {
     $("select#faction")[0].value = '';
     $("select#skill")[0].value = '';
     $("select#all")[0].value = -1;
-    for (var i = 0; i < skillFiltersAdv.length; i++) {
+    for (var i = 0; i < skillFiltersAdv.length; i++)
+    {
         var skillInfo = skillFiltersAdv[i];
-        if (skillInfo.id == skill) {
-            if (skillInfo.x) {
+        if (skillInfo.id == skill)
+        {
+            if (skillInfo.x)
+            {
                 $("#amount-min")[0].value = skillInfo.x.min;
                 $("#amount-max")[0].value = skillInfo.x.max;
             }
-            if (skillInfo.c) {
+            if (skillInfo.c)
+            {
                 $("#timer-min")[0].value = skillInfo.c.min;
                 $("#timer-max")[0].value = skillInfo.c.max;
             }
-            if (skillInfo.y) {
+            if (skillInfo.y)
+            {
                 if (skillInfo.y == -1)
                     $("select#faction")[0].value = "Generic";
             }
@@ -1296,7 +1526,8 @@ var showAdvancedFilters = function (skill) {
         }
     }
 
-    switch (skill) {
+    switch (skill)
+    {
         // x="1" y="0" all="0" c="0" s="0"
         case 'armored':
         case 'berserk':
@@ -1361,13 +1592,16 @@ var showAdvancedFilters = function (skill) {
     return false;
 }
 
-var showCardOptions = function (event) {
+var showCardOptions = function (event)
+{
     var show = false;
     var htmlCard = event.delegateTarget;
     var index = $(htmlCard).index() - 1;
-    if (index < 0) {
+    if (index < 0)
+    {
         var unit = deck.commander;
-    } else {
+    } else
+    {
         var unit = deck.deck[index];
     }
     optionsDialog.index = index;
@@ -1377,7 +1611,8 @@ var showCardOptions = function (event) {
     var upgradeLevel = document.getElementById("upgrade");
     upgradeLevel.max = card.maxLevel;
     upgradeLevel.value = card.level;
-    if (card.maxLevel > 1) {
+    if (card.maxLevel > 1)
+    {
         $("#upgradeDiv").show();
         show = true;
     }
@@ -1385,31 +1620,38 @@ var showCardOptions = function (event) {
     var fusionField = document.getElementById("fusion");
     fusionField.value = 0;
     $("#fusionDiv").hide();
-    if (!card.isCommander()) {
+    if (!card.isCommander())
+    {
         var fusion = 1;
         var baseID = card.id.toString();
-        if (baseID.length > 4) {
+        if (baseID.length > 4)
+        {
             var fusion = parseInt(baseID[0]) + 1;
             var baseID = baseID.substring(1);
         }
-        if (FUSIONS[baseID]) {
+        if (FUSIONS[baseID])
+        {
             fusionField.value = fusion;
             $("#fusionDiv").show();
             show = true;
         }
     }
 
-    if ($("#upgradeDiv").css('display') == "none" || $("#fusionDiv").css('display') == "none") {
+    if ($("#upgradeDiv").css('display') == "none" || $("#fusionDiv").css('display') == "none")
+    {
         $("#upgradeDiv").add("#fusionDiv").toggleClass("split", false);
-    } else {
+    } else
+    {
         $("#upgradeDiv").add("#fusionDiv").toggleClass("split", true);
     }
 
-    if (showRunePicker(card)) {
+    if (showRunePicker(card))
+    {
         show = true;
     }
 
-    if (show) {
+    if (show)
+    {
         disableTracking = true;
         optionsDialog.dialog("open");
         optionsDialog.dialog("option", "position", { my: "left", at: "right", of: htmlCard });;
@@ -1420,11 +1662,13 @@ var showCardOptions = function (event) {
     return false;
 }
 
-function hideContext() {
+function hideContext()
+{
     return false;
 }
 
-var showRunePicker = function (card) {
+var showRunePicker = function (card)
+{
     var select = document.getElementById("runeChoices");
     select.innerHTML = '<option value=""></option>';
     var showUnreleased = document.getElementById("showUnreleased").checked;
@@ -1433,15 +1677,19 @@ var showRunePicker = function (card) {
 
 
     $("#runeChoicesDiv").hide();
-    if (card.rarity >= 3 && !card.isCommander()) {
-        for (var key in RUNES) {
+    if (card.rarity >= 3 && !card.isCommander())
+    {
+        for (var key in RUNES)
+        {
             var rune = RUNES[key];
-            if (canUseRune(card, rune.id)) {
+            if (canUseRune(card, rune.id))
+            {
                 var option = document.createElement('option');
                 option.appendChild(document.createTextNode(rune.desc));
                 option.value = rune.id;
                 select.appendChild(option);
-                if (rune.rarity > 3) {
+                if (rune.rarity > 3)
+                {
                     optionsDialog.hiddenOptions.push(option);
                     option.hidden = !showUnreleased;
                     option.disabled = !showUnreleased;
@@ -1449,46 +1697,59 @@ var showRunePicker = function (card) {
             }
         }
 
-        if (card.runes.length) {
+        if (card.runes.length)
+        {
             document.getElementById("runeChoices").value = card.runes[0].id;
-        } else {
+        } else
+        {
             document.getElementById("runeChoices").value = '';
         }
-        if (select.childNodes.length > 0) {
+        if (select.childNodes.length > 0)
+        {
             $("#runeChoicesDiv").show();
             return true;
-        } else {
+        } else
+        {
             return false;
         }
-    } else {
+    } else
+    {
         return false;
     }
 }
 
-var toggleUnreleasedRunes = function (checkbox) {
+var toggleUnreleasedRunes = function (checkbox)
+{
     var runesToToggle = optionsDialog.hiddenOptions;
-    for (var i = 0, len = runesToToggle.length; i < len; i++) {
+    for (var i = 0, len = runesToToggle.length; i < len; i++)
+    {
         runesToToggle[i].hidden = !checkbox.checked;
         runesToToggle[i].disabled = !checkbox.checked;
     }
 }
 
-var modifyCard = function (optionsDialog) {
+var modifyCard = function (optionsDialog)
+{
     var unit = optionsDialog.unit;
-    if (unit !== undefined) {
+    if (unit !== undefined)
+    {
         var runeID = document.getElementById("runeChoices").value;
-        if (runeID) {
+        if (runeID)
+        {
             unit.runes = [{ id: runeID }];
-        } else {
+        } else
+        {
             unit.runes = [];
         }
-    } else {
+    } else
+    {
         var unit = deck.commander;
     }
 
     unit.level = document.getElementById("upgrade").value;
     var fusion = document.getElementById("fusion").value;
-    if (fusion) {
+    if (fusion)
+    {
         fusion = (fusion - 1).toString();
         var unitID = unit.id.toString();
         if (unitID.length > 4) unitID = unitID.substring(1);
@@ -1502,16 +1763,20 @@ var modifyCard = function (optionsDialog) {
     document.getElementById("hash").value = deckHash;
 }
 
-var resetCard = function (optionsDialog) {
+var resetCard = function (optionsDialog)
+{
     setCard(optionsDialog.index, optionsDialog.originalUnit);
     var deckHash = hash_encode(deck);
     document.getElementById("hash").value = deckHash;
 }
 
-var setCard = function (index, unit) {
-    if (index < 0) {
+var setCard = function (index, unit)
+{
+    if (index < 0)
+    {
         deck.commander = unit;
-    } else {
+    } else
+    {
         deck.deck[index] = unit;
     }
     var htmlCard = CARD_GUI.create_card_html(get_card_by_id(unit), false, false);
@@ -1519,39 +1784,52 @@ var setCard = function (index, unit) {
     $deck.find(".card").eq(index + 1).replaceWith(htmlCard);
 }
 
-var filterSet = function (button, set) {
+var filterSet = function (button, set)
+{
     setHidden = {};
-    if (button.classList.contains("selected")) {
+    if (button.classList.contains("selected"))
+    {
         button.classList.remove("selected");
         button.checked = false;
-        for (var i = 0; i < setFilters.length; i++) {
-            if (setFilters[i] == set) {
+        for (var i = 0; i < setFilters.length; i++)
+        {
+            if (setFilters[i] == set)
+            {
                 setFilters.splice(i, 1);
                 break;
             }
         }
-        if (set == "1000") {
-            for (var i = 0; i < setFilters.length; i++) {
-                if (setFilters[i] == "7000") {
+        if (set == "1000")
+        {
+            for (var i = 0; i < setFilters.length; i++)
+            {
+                if (setFilters[i] == "7000")
+                {
                     setFilters.splice(i, 1);
                     break;
                 }
             }
         }
-    } else {
+    } else
+    {
         button.classList.add("selected");
         setFilters.push(set);
-        if (set == "1000") {
+        if (set == "1000")
+        {
             setFilters.push("7000");
         }
     }
-    if (setFilters.length > 0) {
-        for (var i = 0, len = units.length; i < len; i++) {
+    if (setFilters.length > 0)
+    {
+        for (var i = 0, len = units.length; i < len; i++)
+        {
             var unit = units[i];
             var hide = true;
-            for (var j = 0; j < setFilters.length; j++) {
+            for (var j = 0; j < setFilters.length; j++)
+            {
                 var set = setFilters[j];
-                if (isInRange(unit, "set", set, set)) {
+                if (isInRange(unit, "set", set, set))
+                {
                     hide = false;
                     break;
                 }
@@ -1562,28 +1840,37 @@ var filterSet = function (button, set) {
     applyFilters();
 }
 
-var filterRarity = function (button, rarity) {
+var filterRarity = function (button, rarity)
+{
     rarityHidden = {};
-    if (button.classList.contains("selected")) {
+    if (button.classList.contains("selected"))
+    {
         button.classList.remove("selected");
         button.checked = false;
-        for (var i = 0; i < rarityFilters.length; i++) {
-            if (rarityFilters[i] == rarity) {
+        for (var i = 0; i < rarityFilters.length; i++)
+        {
+            if (rarityFilters[i] == rarity)
+            {
                 rarityFilters.splice(i, 1);
                 break;
             }
         }
-    } else {
+    } else
+    {
         button.classList.add("selected");
         rarityFilters.push(rarity);
     }
-    if (rarityFilters.length > 0) {
-        for (var i = 0, len = units.length; i < len; i++) {
+    if (rarityFilters.length > 0)
+    {
+        for (var i = 0, len = units.length; i < len; i++)
+        {
             var unit = units[i];
             var hide = true;
-            for (var j = 0; j < rarityFilters.length; j++) {
+            for (var j = 0; j < rarityFilters.length; j++)
+            {
                 var rarity = rarityFilters[j];
-                if (isInRange(unit, "rarity", rarity, rarity)) {
+                if (isInRange(unit, "rarity", rarity, rarity))
+                {
                     hide = false;
                     break;
                 }
@@ -1594,21 +1881,26 @@ var filterRarity = function (button, rarity) {
     applyFilters();
 }
 
-var applyFilters = function (keepPage, skipDraw) {
+var applyFilters = function (keepPage, skipDraw)
+{
     unitsFiltered = [];
     var names = [];
     var addedNames = {};
-    for (var i = 0, len = unitsShown.length; i < len; i++) {
+    for (var i = 0, len = unitsShown.length; i < len; i++)
+    {
         var unit = unitsShown[i];
         var key = makeUnitKey(unit);
         if (skillHidden[key] || factionHidden[key] || subfactionHidden[key]
              || attackHidden[key] || healthHidden[key] || delayHidden[key]
              || typeHidden[key] || fusionHidden[key] || setHidden[key]
-             || nameHidden[key] || rarityHidden[key] || skillHiddenAdv[key]) {
-        } else {
+             || nameHidden[key] || rarityHidden[key] || skillHiddenAdv[key])
+        {
+        } else
+        {
             unitsFiltered.push(unit);
             var card = get_card_by_id(unit);
-            if (!addedNames[card.name]) {
+            if (!addedNames[card.name])
+            {
                 names.push(card.name);
                 addedNames[card.name] = true;
             }
@@ -1616,26 +1908,32 @@ var applyFilters = function (keepPage, skipDraw) {
     }
     $nameFilter.autocomplete("option", { source: names });
 
-    if (!skipDraw) {
+    if (!skipDraw)
+    {
         doDrawCardList(unitsFiltered, !keepPage);
     }
 }
 
-var hasSkill = function (unit, skill) {
+var hasSkill = function (unit, skill)
+{
     var card = get_slim_card_by_id(unit, true);
     var skills = card.skill;
-    for (var i = 0, len = skills.length; i < len; i++) {
+    for (var i = 0, len = skills.length; i < len; i++)
+    {
         if (skill == skills[i].id) return true;
     }
     return false;
 }
 
-var hasSkillAdvanced = function (unit, skillInfo) {
+var hasSkillAdvanced = function (unit, skillInfo)
+{
     var card = get_slim_card_by_id(unit, true);
     var skills = card.skill;
-    for (var i = 0, len = skills.length; i < len; i++) {
+    for (var i = 0, len = skills.length; i < len; i++)
+    {
         var skill = skills[i];
-        if (skillInfo.id == skill.id) {
+        if (skillInfo.id == skill.id)
+        {
             if (skillInfo.x && (skill.x < skillInfo.x.min || skill.x > skillInfo.x.max)) continue;
             if (skillInfo.c && (skill.c < skillInfo.c.min || skill.c > skillInfo.c.max)) continue;
             if (skillInfo.y == -1 && skill.y) continue;
@@ -1648,7 +1946,8 @@ var hasSkillAdvanced = function (unit, skillInfo) {
     return false;
 }
 
-var clearFilters = function () {
+var clearFilters = function ()
+{
     attackHidden = {};
     attackRanges = [];
 
@@ -1687,19 +1986,22 @@ var clearFilters = function () {
     applyFilters();
 }
 
-var isInFaction = function (unit, faction) {
+var isInFaction = function (unit, faction)
+{
     var factionID = factions.IDs[faction];
     var card = get_slim_card_by_id(unit, true);
     return (card.type == factionID);
 }
 
-var isInSubfaction = function (unit, faction) {
+var isInSubfaction = function (unit, faction)
+{
     var factionID = factions.IDs[faction];
     var card = get_slim_card_by_id(unit, true);
     return (card.sub_type == factionID);
 }
 
-var isInRange = function (unit, field, min, max) {
+var isInRange = function (unit, field, min, max)
+{
     var card = get_slim_card_by_id(unit, true);
     var value = card[field];
     if (value === undefined) return false;
@@ -1708,39 +2010,48 @@ var isInRange = function (unit, field, min, max) {
     return true;
 }
 
-var toggleSkillDetails = function () {
+var toggleSkillDetails = function ()
+{
     applyFilters(true);
 }
 
-var toggleUpgrades = function (checkbox) {
+var toggleUpgrades = function (checkbox)
+{
     showUpgrades = checkbox.checked;
     $("body").addClass("loading");
-    setTimeout(function () {
+    setTimeout(function ()
+    {
         drawCardList();
         $("body").removeClass("loading");
         applyFilters(false);
     }, 1);
 }
 
-function sortAndDraw(select) {
+function sortAndDraw(select)
+{
     doSort(select);
     applyFilters();
 }
 
-var sortCards = function (select) {
+var sortCards = function (select)
+{
     doSort(select);
 }
 
-function doSort(select) {
+function doSort(select)
+{
     var sortField = select.value;
-    unitsShown.sort(function (unitA, unitB) {
+    unitsShown.sort(function (unitA, unitB)
+    {
         // Always sort by commander/unit first
         var comparison = is_commander(unitB.id) - is_commander(unitA.id);
         if (comparison != 0) return comparison;
 
-        if (sortField == "id") {
+        if (sortField == "id")
+        {
             return compareByID(unitA, unitB);
-        } else {
+        } else
+        {
             var cardA = get_card_by_id(unitA);
             var cardB = get_card_by_id(unitB);
             comparison = (cardA[sortField] || 0) - (cardB[sortField] || 0);
@@ -1752,26 +2063,32 @@ function doSort(select) {
 }
 
 // TODO: Remove recursion (causes stack overflow in JavaScript)
-function quicksort(arr, comparator) {
+function quicksort(arr, comparator)
+{
     //if array is empty
-    if (arr.length === 0) {
+    if (arr.length === 0)
+    {
         return [];
     }
     var left = [];
     var right = [];
     var pivot = arr[0];
     //go through each element in array
-    for (var i = 1; i < arr.length; i++) {
-        if (comparator(arr[i], pivot) < 0) {
+    for (var i = 1; i < arr.length; i++)
+    {
+        if (comparator(arr[i], pivot) < 0)
+        {
             left.push(arr[i]);
-        } else {
+        } else
+        {
             right.push(arr[i]);
         }
     }
     return quicksort(left, comparator).concat(pivot, quicksort(right, comparator));
 }
 
-var compareByID = function (unitA, unitB) {
+var compareByID = function (unitA, unitB)
+{
     var unitIDA = unitA.id;
     var unitIDB = unitB.id;
     var keyA = (unitIDA % 10000) + "." + ~~(unitIDA / 10000) + unitA.level;
@@ -1781,32 +2098,38 @@ var compareByID = function (unitA, unitB) {
     return sortByRunes(unitA, unitB);
 }
 
-function sortByRunes(unitA, unitB) {
+function sortByRunes(unitA, unitB)
+{
     var comparison = unitA.runes.length - unitB.runes.length;
     if (comparison != 0) return comparison;
     if (!unitA.runes.length) return 0;
     return unitA.runes[0].id - unitB.runes[0].id;
 }
 
-var makeUnitKey = function (unit) {
+var makeUnitKey = function (unit)
+{
     return unit.id + "_" + unit.level;
 }
 
-var getUnitFromCard = function (htmlCard) {
+var getUnitFromCard = function (htmlCard)
+{
     var unit = {
         id: htmlCard.attributes.getNamedItem("data-id").value,
         level: htmlCard.attributes.getNamedItem("data-level").value,
     };
     var runeIDs = htmlCard.attributes.getNamedItem("data-runeids").value.split(",");
     var runes = [];
-    for (var i = 0, len = runeIDs.length; i < len; i++) {
+    for (var i = 0, len = runeIDs.length; i < len; i++)
+    {
         var runeID = runeIDs[i];
-        if (runeID > 0) {
+        if (runeID > 0)
+        {
             runes.push({ id: runeID });
         }
     }
     var index = htmlCard.attributes.getNamedItem("data-index");
-    if (index) {
+    if (index)
+    {
         unit.index = index.value;
     }
     unit.runes = runes;
@@ -1814,23 +2137,28 @@ var getUnitFromCard = function (htmlCard) {
 }
 
 var skillStyle = document.createElement('style');
-(function () {
+(function ()
+{
     skillStyle.type = 'text/css';
     document.getElementsByTagName('head')[0].appendChild(skillStyle);
 })();
 
-function setDeckName(name) {
+function setDeckName(name)
+{
     var lbl = document.getElementById("version_label");
     lbl.innerHTML += " " + name;
 }
 
-function saveDeck() {
+function saveDeck()
+{
     var hash = $("#hash").val();
     $("#saveDeckName").val("");
     var savedDecks = storageAPI.savedDecks;
-    for (var name in savedDecks) {
+    for (var name in savedDecks)
+    {
         var existing = savedDecks[name];
-        if (hash == existing) {
+        if (hash == existing)
+        {
             $("#saveDeckName").val(name);
             break;
         }
@@ -1839,7 +2167,8 @@ function saveDeck() {
     saveDeckDialog.dialog("option", "position", { my: "center", at: "center", of: window });
 }
 
-function loadDeck() {
+function loadDeck()
+{
     var decks = storageAPI.getSavedDecks;
     $('label[for="loadDeckName"]').html('<strong>Deck:</strong>');
     loadDeckDialog.dialog("open");
@@ -1848,7 +2177,8 @@ function loadDeck() {
     loadDeckDialog.onloaded = hash_changed;
 }
 
-function loadInventory() {
+function loadInventory()
+{
     var decks = storageAPI.getSavedDecks;
     $('label[for="loadDeckName"]').html('<strong>Inventory:</strong>');
     loadDeckDialog.dialog("open");
@@ -1857,21 +2187,26 @@ function loadInventory() {
     loadDeckDialog.onloaded = setInventory;
 }
 
-function setInventory(hash) {
+function setInventory(hash)
+{
     inventory = hash;
     drawCardList();
 }
 
-function toggleInventoryMode() {
+function toggleInventoryMode()
+{
     inventoryMode = !inventoryMode;
-    if (inventoryMode) {
+    if (inventoryMode)
+    {
         $("#inventoryMode").val("Switch to Deck Builder");
         $deck.find(".card.blank").remove();
         $deck.sortable("disable");
         doDrawDeck();
-    } else {
+    } else
+    {
         $("#inventoryMode").val("Switch to Inventory Builder");
-        for (var i = $deck.find(".card").length; i < 16; i++) {
+        for (var i = $deck.find(".card").length; i < 16; i++)
+        {
             $deck.append("<div class='card blank'></div>");
         }
         $deck.sortable("enable");
