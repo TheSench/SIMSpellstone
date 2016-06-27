@@ -1196,6 +1196,7 @@ var SIMULATOR = {};
                 } else {
                     // AI picks first card
                     card_picked = 0;
+                    play_card(deck_p_deck[card_picked], p);
                 }
             }
 
