@@ -273,7 +273,7 @@
             var fused = nextFusion(Number($scope.id));
             if (fused)
             {
-                var max = ($scope.level === $scope.card.maxLevel);
+                var max = ($scope.level == $scope.card.maxLevel);
                 $scope.id = fused;
                 $scope.unit.id = $scope.id;
                 $scope.card = $window.getCardInfo($scope.unit);
