@@ -1,8 +1,8 @@
 <div class="card-details" tabindex="0" ng-keydown="keyPress($event)">
     <div id="cardArt" class="detail-panel">
-        <img class="card-art" src="{{imageSrc}}" />
-        <img class="bottom-center icon-fusion" src="{{getFusionIcon()}}" ng-if="isFused()" />
-        <img class="bottom-center rarity" src="{{getRarityIcon()}}" ng-if="showRarity()" />
+        <img class="card-art" ng-src="{{imageSrc}}" />
+        <img class="bottom-center icon-fusion" ng-src="{{getFusionIcon()}}" ng-if="isFused()" />
+        <img class="bottom-center rarity" ng-src="{{getRarityIcon()}}" ng-if="showRarity()" />
     </div>
     <div id="cardStats" class="detail-panel card-stats">
         <div class="fs18">{{card.name}}</div>
@@ -17,8 +17,8 @@
                 <span ng-click="decrementLevel()" ng-disabled="!previousLevel()" class="ui-icon ui-icon-circle-triangle-w"></span>
                 <div class="anchor center vertically">
                     <div class="placeholder-fusion" ng-if="!isFused()"></div>
-                    <img class="stat-icon" src="{{getFusionIcon()}}" ng-if="isFused()" />
-                    <img class="bottom-center rarity" src="{{getRarityIcon()}}" ng-if="showRarity()" />
+                    <img class="stat-icon" ng-src="{{getFusionIcon()}}" ng-if="isFused()" />
+                    <img class="bottom-center rarity" ng-src="{{getRarityIcon()}}" ng-if="showRarity()" />
                 </div>
                 <span ng-click="incrementLevel()" ng-disabled="!nextLevel()" class="ui-icon ui-icon-circle-triangle-e"></span>
                 <span ng-click="incrementFusion()" ng-disabled="!nextFusion()" class="ui-icon ui-icon-arrowthickstop-1-e"></span>
@@ -40,7 +40,7 @@
             </div>
         </div>
         <div ng-repeat="skill in card.skill" class="skill-list">
-            <img src="{{getSkillIcon(skill.id)}}" />
+            <img ng-src="{{getSkillIcon(skill.id)}}" />
             <span>{{skill.id|convertName|capitalize}}</span>
             <span ng-if="skill.all == 1">All</span>
             <span ng-if="skill.y > 0">{{getFaction(skill.y)}}</span>
@@ -55,7 +55,7 @@
             <span>{{fusionText()}}</span>
         </div>
         <div class="bottom-right">
-            <img src="{{getSetIcon()}}" />
+            <img ng-src="{{getSetIcon()}}" />
         </div>
     </div>
 </div>
