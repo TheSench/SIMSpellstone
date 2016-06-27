@@ -1303,7 +1303,7 @@ var SIMULATOR = {};
         var hand = shuffledDeck.slice(0, 3);
 
         // Play card in hand with most upgrade points (first card is picked in the case of ties)
-        card_picked = -1;
+        var card_picked = -1;
         var bestRank = 0;
         for (var i = 0; i < hand.length; i++) {
             var card = hand[i];
