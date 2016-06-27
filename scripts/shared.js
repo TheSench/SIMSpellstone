@@ -675,14 +675,8 @@ var addRunes = function (card, runes) {
     }
 };
 
-// Temporary fix due to incorrect rune ID assumptions
-var tempRuneMappings = {
-    5191: 5186,
-    5192: 5187,
-}
 var getRune = function (rune_id)
 {
-    if (tempRuneMappings[rune_id]) rune_id = tempRuneMappings[rune_id];
     return RUNES[rune_id];
 }
 
