@@ -132,6 +132,16 @@
             return (Math.floor(id / 10000) + 1);
         }
 
+        $scope.fusionText = function ()
+        {
+            var fusion = getFusion();
+            return {
+                1: '',
+                2: 'Dual',
+                3: 'Quad'
+            }[fusion]
+        }
+
         $scope.keyPress = function (event)
         {
             var fn;
