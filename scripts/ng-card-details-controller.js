@@ -98,14 +98,32 @@
             }
         }
 
-        $scope.fusable = function ()
+        var previousFusion = $scope.previousFusion = function ()
+        {
+            var fusions = $window.FUSIONS;
+            for (var key in fusions)
+            {
+                if (fusions[key] == $scope.id)
+                {
+                    return key;
+                }
+            }
+            return false;
+        }
+
+        var nextFusion = $scope.nextFusion = function ()
         {
             return $window.FUSIONS[$scope.id];
         };
 
-        $scope.hasLevels = function ()
+        $scope.previousLevel = function ()
         {
-            return ($scope.card.maxLevel > 1);
+            return ($scope.card.level > 1);
+        };
+
+        $scope.nextLevel = function ()
+        {
+            return ($scope.card.level < $scope.card.maxLevel);
         };
 
         var getFusion = $scope.getFusion = function ()
@@ -225,24 +243,37 @@
 
         $scope.decrementFusion = function ()
         {
-            $scope.id = Number($scope.id);
-            if ($scope.id > 10000)
+            var fused = previousFusion(Number($scope.id));
+            if (fused)
             {
-                $scope.id -= 10000;
+                $scope.id = fused;
+                $scope.unit.id = $scope.id;
+                $scope.card = $window.getCardInfo($scope.unit);
+                if ($scope.level > $scope.card.maxLevel)
+                {
+                    $scope.level = $scope.card.maxLevel;
+                    $scope.unit.level = $scope.level;
+                    $scope.card = $window.getCardInfo($scope.unit);
+                }
             }
-            $scope.unit.id = $scope.id;
-            $scope.card = $window.getCardInfo($scope.unit);
         }
 
         $scope.incrementFusion = function ()
         {
-            $scope.id = Number($scope.id);
-            if ($scope.id < 20000)
+            var fused = nextFusion(Number($scope.id));
+            if (fused)
             {
-                $scope.id += 10000;
+                var max = ($scope.level === $scope.card.maxLevel);
+                $scope.id = fused;
+                $scope.unit.id = $scope.id;
+                $scope.card = $window.getCardInfo($scope.unit);
+                if (max && $scope.level < $scope.card.maxLevel)
+                {
+                    $scope.level = $scope.card.maxLevel;
+                    $scope.unit.level = $scope.level;
+                    $scope.card = $window.getCardInfo($scope.unit);
+                }
             }
-            $scope.unit.id = $scope.id;
-            $scope.card = $window.getCardInfo($scope.unit);
         }
 
         $scope.decrementLevel = function ()

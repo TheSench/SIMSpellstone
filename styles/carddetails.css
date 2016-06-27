@@ -46,6 +46,11 @@
   left: 50%;
 }
 
+.card-details .placeholder-arrow {
+  min-width: 16px;
+  min-height: 16px;
+}
+
 .card-details .placeholder-fusion {
   min-width: 68px;
   min-height: 32px;
@@ -124,6 +129,10 @@
 .card-details .card-stats span {
   margin-left: 2px;
   margin-right: 2px;
+}
+
+.card-details .card-stats .ui-icon[disabled] {
+  background-image: url("../Content/themes/base/images/ui-icons_888888_256x240.png");
 }
 
 .anchor {

@@ -45,6 +45,11 @@
         left: 50%;
     }
 
+    .placeholder-arrow {
+        min-width: 16px;
+        min-height: 16px;
+    }
+
     .placeholder-fusion {
         min-width: 68px;
         min-height: 32px;
@@ -124,6 +129,10 @@
         span {
             margin-left: 2px;
             margin-right: 2px;
+        }
+
+        .ui-icon[disabled] {
+            background-image: url("../Content/themes/base/images/ui-icons_888888_256x240.png");
         }
     }
 }
