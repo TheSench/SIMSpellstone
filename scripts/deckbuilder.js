@@ -159,6 +159,13 @@ var setupPopups = function ()
                 advancedFilters.dialog("close");
             }
         },
+        open: function ()
+        {
+            jQuery('.ui-widget-overlay').bind('click', function ()
+            {
+                advancedFilters.dialog('close');
+            })
+        },
     });
     optionsDialog = $("#unitOptions").dialog({
         autoOpen: false,
@@ -182,8 +189,14 @@ var setupPopups = function ()
                 disableTracking = false;
             }
         },
-    });
-    $("#unitOptions").bind("change", function ()
+        open: function ()
+        {
+            jQuery('.ui-widget-overlay').bind('click', function ()
+            {
+                optionsDialog.dialog('close');
+            })
+        },
+    }).bind("change", function ()
     {
         modifyCard(optionsDialog);
     });
@@ -220,6 +233,13 @@ var setupPopups = function ()
                 saveDeckDialog.dialog("close");
             }
         },
+        open: function ()
+        {
+            jQuery('.ui-widget-overlay').bind('click', function ()
+            {
+                saveDeckDialog.dialog('close');
+            })
+        },
     });
 
     loadDeckDialog = $("#loadDeckDialog").dialog({
@@ -243,6 +263,13 @@ var setupPopups = function ()
                 loadDeckDialog.dialog("close");
             }
         },
+        open: function ()
+        {
+            jQuery('.ui-widget-overlay').bind('click', function ()
+            {
+                loadDeckDialog.dialog('close');
+            })
+        },
     });
 
     detailsDialog = $("#detailedView").dialog({
@@ -256,9 +283,9 @@ var setupPopups = function ()
         {
             jQuery('.ui-widget-overlay').bind('click', function ()
             {
-                jQuery('#detailedView').dialog('close');
+                detailsDialog.dialog('close');
             })
-        }
+        },
     });
 }
 
@@ -291,7 +318,7 @@ function doDrawDeck()
     /*if (inventoryMode) {
         $deck = CARD_GUI.draw_inventory(deck.deck);
     } else */
-{
+    {
         $deck = CARD_GUI.draw_deck(deck, inventoryMode);
     }
     var $htmlCards = $deck.find(".card:not(.blank)")
@@ -322,8 +349,8 @@ var showDetails = function (event)
 
     cardDetailScope.setUnit(unit).$apply();
 
-    detailsDialog.dialog("open");
     detailsDialog.dialog("option", "position", { my: "center", at: "center", of: window });
+    detailsDialog.dialog("open");
 
     detailsDialog.onloaded = setInventory;
 }
@@ -609,7 +636,7 @@ var resetDeck = function ()
     /*if (inventoryMode) {
         hash_changed('');
     } else */
-{
+    {
         hash_changed('oZ0IB');
     }
 }
@@ -1653,8 +1680,8 @@ var showCardOptions = function (event)
     if (show)
     {
         disableTracking = true;
-        optionsDialog.dialog("open");
         optionsDialog.dialog("option", "position", { my: "left", at: "right", of: htmlCard });;
+        optionsDialog.dialog("open");
         optionsDialog.unit = unit;
         optionsDialog.originalUnit = $.extend({}, unit);
     }
@@ -2163,16 +2190,16 @@ function saveDeck()
             break;
         }
     }
-    saveDeckDialog.dialog("open");
     saveDeckDialog.dialog("option", "position", { my: "center", at: "center", of: window });
+    saveDeckDialog.dialog("open");
 }
 
 function loadDeck()
 {
     var decks = storageAPI.getSavedDecks;
     $('label[for="loadDeckName"]').html('<strong>Deck:</strong>');
-    loadDeckDialog.dialog("open");
     loadDeckDialog.dialog("option", "position", { my: "center", at: "center", of: window });
+    loadDeckDialog.dialog("open");
 
     loadDeckDialog.onloaded = hash_changed;
 }
@@ -2181,8 +2208,8 @@ function loadInventory()
 {
     var decks = storageAPI.getSavedDecks;
     $('label[for="loadDeckName"]').html('<strong>Inventory:</strong>');
-    loadDeckDialog.dialog("open");
     loadDeckDialog.dialog("option", "position", { my: "center", at: "center", of: window });
+    loadDeckDialog.dialog("open");
 
     loadDeckDialog.onloaded = setInventory;
 }
