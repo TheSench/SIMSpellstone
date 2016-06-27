@@ -47,7 +47,7 @@
 </head>
 <body>
     <h1 id="version_label">SimSpellstone</h1>
-    <input id="toggleTheme" type="button" onclick="toggleTheme()" value="Dark Mode" />
+    <input id="toggleTheme" type="button" onclick="toggleTheme()" value="Dark Theme" />
     <!--
     <div class="circle primary-black">Primary-Black</div>
     <div class="circle primary-neutral">Primary-Neutral</div>
@@ -64,98 +64,97 @@
     <div id="ui" ng-controller="SimulatorCtrl" ng-init="campaignSections()">
         <form>
             <hr />
-            <div class="section">
-                <div class="accordion">
-                    <h2>Attacker</h2>
-                    <div>
-                        <div id="attack_deck" class="float-left"></div>
-                        <input type="button" onclick="loadDeck('#deck');" value="Load" />
-                        <input type="button" onclick="load_deck_builder('player');" value="Edit" />
-                        <div class="accordion">
-                            <h6>Advanced Settings</h6>
-                            <div id="deckContainer" class="collapsible">
-                                <div><label for="deck">Deck Hash:</label></div>
-                                <input id="deck" type="text" value="" size="100"><br />
-                                <div><font color="#666"><strong>Hash example:</strong> w98CAI5kfnIkDbHwI5YHwI5YHcBkHJcBkHJcBkHJ</font></div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="section accordion start-open">
+                <h2>Attacker</h2>
+                <div>
+                    <div id="attack_deck" class="float-left"></div>
                 </div>
             </div>
             <hr>
-            <div class="section">
-                <div class="accordion">
-                    <h2>Defender</h2>
-                    <div>
-                        <div id="defend_deck" class="float-left"></div>
-                        <input type="button" onclick="loadDeck('#deck2');" value="Load" />
-                        <input type="button" onclick="load_deck_builder('cpu');" value="Edit" />
-                        <div class="accordion">
-                            <h6>PvE Decks</h6>
-                            <div>
-                                <div><span class="label">Campaign (7*):</span></div>
-                                <select id="campaign" ng-model="selections.campaign" ng-class="getCampaignClass()" ng-disabled="selections.raid !== ''">
-                                    <option default value="" class=" grey">
-                                        Select a Campaign...
-                                    </option>
-                                    <option ng-repeat="campaign in campaigns" value="{{campaign.id}}" ng-class="getCampaignClass(campaign)" ng-disabled="{{campaign.isLocation}}">{{campaign.name}}</option>
-                                </select>
-                                <select id="mission" ng-model="selections.mission" ng-class="{grey:selections.mission === ''}" ng-disabled="selections.campaign === ''">
-                                    <option default value="" class="grey">Select a Mission...</option>
-                                    <option ng-repeat="mission in missions | inCampaign:selections.campaign:campaigns" value="{{mission.id}}" class="black">{{mission.name}}</option>
-                                </select>
-                                <input style="float:initial; display:none;" type="NUMBER" id="mission_level" min="1" max="7" step="1" value="7" size="6" disabled="disabled">
-                                <br />
-                                <div><span class="label">Raid:</span></div>
-                                <select id="raid" ng-model="selections.raid" ng-class="{grey:selections.raid === ''}" ng-disabled="selections.campaign !== ''">
-                                    <option default value="" class="grey">Select a Raid...</option>
-                                    <option ng-repeat="raid in raids" value="{{raid.id}}" class="black">{{raid.name}}</option>
-                                </select>
-                                <input style="float:initial;" type="NUMBER" id="raid_level" min="25" max="40" step="1" value="25" size="6">
-                            </div>
-                        </div>
-                        <div class="accordion">
-                            <h6>Advanced Settings</h6>
-                            <div>
-                                <div><i>Enemy Deck Hash:</i></div><input type="text" id="deck2" value="" size="100"><br />
-                                <font color="#666"><strong>Hash example:</strong> w98CAI5kfnIkDbHwI5YHwI5YHcBkHJcBkHJcBkHJ</font><br />
-                            </div>
-                        </div>
-                    </div>
+            <div class="section accordion start-open">
+                <h2>Defender</h2>
+                <div>
+                    <div id="defend_deck" class="float-left"></div>
                 </div>
             </div>
             <hr>
             <div class="section accordion">
-                <h2>Battle Settings</h2>
+                <h2>Setup</h2>
                 <div>
-                    <input type="checkbox" id="siege" ng-model="tower"><label for="siege">Tower</label><br />
-                    <input type="NUMBER" id="tower_level" min="1" max="18" step="1" value="10" size="6" ng-disabled="!tower">
-                    <select id="tower_type" ng-disabled="!tower">
-                        <option ng-repeat="type in towerTypes" value="{{$index}}">{{type}}</option>
-                    </select>
-                    <br />
-                    <br />
-                    <div><span class="label">Battleground:</span></div>
-                    <div id="battleground" style="overflow: auto; width: 200px; height: 80px; border: 1px solid #336699; padding-left: 5px; text-align: left; ">
-                        <input ng-repeat-start="BGE in selectableBattlegrounds()" type="checkbox" name="battleground" id="battleground_{{BGE.id}}" value="{{BGE.id}}">
-                        <label for="battleground_{{BGE.id}}">{{BGE.name}}</label>
-                        <br ng-repeat-end />
-                    </div>
-                    <br />
                     <div class="accordion">
-                        <h6>Advanced Settings</h6>
+                        <h3>Attacker</h3>
                         <div>
-                            <h6>Attacker</h6>
-                            <div id="attackerAdvanced" class="collapsible">
-                                <input type="checkbox" ng-model="auto" id="auto_mode"><label for="auto_mode">Auto Mode</label><br />
-                                <input type="checkbox" ng-disabled="!auto" id="ordered"><label for="ordered" ng-class="{grey:!auto}">Ordered</label><br />
-                                <input type="checkbox" ng-disabled="!auto" id="exactorder"><label for="exactorder" ng-class="{grey:!auto}">Don't Shuffle</label><br />
+                            <input type="button" onclick="loadDeck('#deck');" value="Load" />
+                            <input type="button" onclick="load_deck_builder('player');" value="Edit" />
+                            <div class="accordion">
+                                <h6>Advanced Settings</h6>
+                                <div id="deckContainer" class="collapsible">
+                                    <div><label for="deck">Deck Hash:</label></div>
+                                    <input id="deck" type="text" value="" size="100"><br />
+                                    <div><font color="#666"><strong>Hash example:</strong> w98CAI5kfnIkDbHwI5YHwI5YHcBkHJcBkHJcBkHJ</font></div>
+                                    <input type="checkbox" ng-model="auto" id="auto_mode"><label for="auto_mode">Auto Mode</label><br />
+                                    <input type="checkbox" ng-disabled="!auto" id="ordered"><label for="ordered" ng-class="{grey:!auto}">Ordered</label><br />
+                                    <input type="checkbox" ng-disabled="!auto" id="exactorder"><label for="exactorder" ng-class="{grey:!auto}">Don't Shuffle</label><br />
+                                </div>
                             </div>
-                            <h6>Defender</h6>
-                            <div id="attackerAdvanced" class="collapsible">
-                                <input type="checkbox" id="ordered2"><label for="ordered2">Ordered</label><br />
-                                <input type="checkbox" id="exactorder2"><label for="exactorder2">Don't Shuffle</label><br />
-                                <input type="checkbox" id="surge"><label for="surge">Defender First</label><br />
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <h3>Defender</h3>
+                        <div>
+                            <input type="button" onclick="loadDeck('#deck2');" value="Load" />
+                            <input type="button" onclick="load_deck_builder('cpu');" value="Edit" />
+                            <div class="accordion">
+                                <h6>PvE Decks</h6>
+                                <div>
+                                    <div><span class="label">Campaign (7*):</span></div>
+                                    <select id="campaign" ng-model="selections.campaign" ng-class="getCampaignClass()" ng-disabled="selections.raid !== ''">
+                                        <option default value="" class=" grey">
+                                            Select a Campaign...
+                                        </option>
+                                        <option ng-repeat="campaign in campaigns" value="{{campaign.id}}" ng-class="getCampaignClass(campaign)" ng-disabled="{{campaign.isLocation}}">{{campaign.name}}</option>
+                                    </select>
+                                    <select id="mission" ng-model="selections.mission" ng-class="{grey:selections.mission === ''}" ng-disabled="selections.campaign === ''">
+                                        <option default value="" class="grey">Select a Mission...</option>
+                                        <option ng-repeat="mission in missions | inCampaign:selections.campaign:campaigns" value="{{mission.id}}" class="black">{{mission.name}}</option>
+                                    </select>
+                                    <input style="float:initial; display:none;" type="NUMBER" id="mission_level" min="1" max="7" step="1" value="7" size="6" disabled="disabled">
+                                    <br />
+                                    <div><span class="label">Raid:</span></div>
+                                    <select id="raid" ng-model="selections.raid" ng-class="{grey:selections.raid === ''}" ng-disabled="selections.campaign !== ''">
+                                        <option default value="" class="grey">Select a Raid...</option>
+                                        <option ng-repeat="raid in raids" value="{{raid.id}}" class="black">{{raid.name}}</option>
+                                    </select>
+                                    <input style="float:initial;" type="NUMBER" id="raid_level" min="25" max="40" step="1" value="25" size="6">
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <h6>Advanced Settings</h6>
+                                <div>
+                                    <div><i>Enemy Deck Hash:</i></div><input type="text" id="deck2" value="" size="100"><br />
+                                    <font color="#666"><strong>Hash example:</strong> w98CAI5kfnIkDbHwI5YHwI5YHcBkHJcBkHJcBkHJ</font><br />
+                                    <input type="checkbox" id="ordered2"><label for="ordered2">Ordered</label><br />
+                                    <input type="checkbox" id="exactorder2"><label for="exactorder2">Don't Shuffle</label><br />
+                                    <input type="checkbox" id="surge"><label for="surge">Defender First</label><br />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <h3>Battlefield</h3>
+                        <div>
+                            <input type="checkbox" id="siege" ng-model="tower"><label for="siege">Tower</label><br />
+                            <input type="NUMBER" id="tower_level" min="1" max="18" step="1" value="10" size="6" ng-disabled="!tower">
+                            <select id="tower_type" ng-disabled="!tower">
+                                <option ng-repeat="type in towerTypes" value="{{$index}}">{{type}}</option>
+                            </select>
+                            <br />
+                            <br />
+                            <div><span class="label">Battleground:</span></div>
+                            <div id="battleground" style="overflow: auto; width: 200px; height: 80px; border: 1px solid #336699; padding-left: 5px; text-align: left; ">
+                                <input ng-repeat-start="BGE in selectableBattlegrounds()" type="checkbox" name="battleground" id="battleground_{{BGE.id}}" value="{{BGE.id}}">
+                                <label for="battleground_{{BGE.id}}">{{BGE.name}}</label>
+                                <br ng-repeat-end />
                             </div>
                         </div>
                     </div>

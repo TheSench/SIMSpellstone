@@ -20,11 +20,11 @@ $(function () {
         $deck.children().remove();
         $deck.append(CARD_GUI.makeDeckHTML(newDeck));
     }
-    $(".accordion").accordion({
+    var accordions = $(".accordion").accordion({
         collapsible: true,
         active: false,
         heightStyle: "content",
-    });
+    }).filter(".start-open").accordion('option', 'active' , 0);
 
     $("#raid").change(function () {
         var newDeck;
