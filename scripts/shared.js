@@ -658,7 +658,7 @@ var addRunes = function (card, runes) {
     if (!card.runes) card.runes = [];
     for (var i = 0, len = runes.length; i < len; i++) {
         var runeID = runes[i].id;
-        var statBoost = RUNES[runeID].stat_boost;
+        var statBoost = getRune(runeID).stat_boost;
         card.runes.push({
             id: runeID,
             stat_boost: statBoost,
@@ -674,6 +674,17 @@ var addRunes = function (card, runes) {
         }
     }
 };
+
+// Temporary fix due to incorrect rune ID assumptions
+var tempRuneMappings = {
+    5191: 5186,
+    5192: 5187,
+}
+var getRune = function (rune_id)
+{
+    if (tempRuneMappings[rune_id]) rune_id = tempRuneMappings[rune_id];
+    return RUNES[rune_id];
+}
 
 var boostSkill = function (card, boost) {
     var skills;
@@ -738,7 +749,7 @@ var boostSkill = function (card, boost) {
 };
 
 var canUseRune = function (card, runeID) {
-    var rune = RUNES[runeID];
+    var rune = getRune(runeID);
 
     var statBoost = rune.stat_boost;
     for (var key in statBoost) {

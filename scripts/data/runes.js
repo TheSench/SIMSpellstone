@@ -957,6 +957,3 @@ var RUNES = {
         "category": 3
     }
 }
-// Temporary fix due to incorrect rune ID assumptions
-RUNES["5191"] = RUNES["5186"];
-RUNES["5192"] = RUNES["5187"];
