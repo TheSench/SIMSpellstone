@@ -1304,7 +1304,7 @@ var SIMULATOR = {};
 
         // Play card in hand with most upgrade points (first card is picked in the case of ties)
         var card_picked = -1;
-        var bestRank = 0;
+        var bestRank = -1;
         for (var i = 0; i < hand.length; i++) {
             var card = hand[i];
             var rank = getCardRanking(card);
