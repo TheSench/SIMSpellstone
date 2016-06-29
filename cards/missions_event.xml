@@ -7747,4 +7747,726 @@
       <card id="6024" mastery_level="7" name="Bane Dragon" />
     </deck>
   </mission>
+  <mission>
+    <id>5266</id>
+    <name>In Need of Assistance</name>
+    <energy>11</energy>
+    <desc>Dilbert is in a daze. Moments ago an explosion engulfed his hometown, Beetleton Bunker. Fires are now running rampant throughout the town. In desperation, he goes looking for help.</desc>
+    <commander id="304" />
+    <deck>
+      <card id="1314" name="Skeletal Hound" />
+      <card id="1314" />
+      <card id="1314" />
+      <card id="7006" name="Treant Sapling" />
+      <card id="7006" />
+      <card id="7006" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="7061" name="Thickskin Dragon" />
+      <card id="1619" mastery_level="2" name="Earth Elemental" />
+      <card id="7047" mastery_level="2" name="Shaman of the Wild" />
+      <card id="1313" mastery_level="3" name="Lavafrog" />
+      <card id="6056" mastery_level="4" name="Potoo" />
+      <card id="7038" mastery_level="5" name="Sol King" />
+      <card id="6043" mastery_level="6" name="Sandstorm" />
+      <card id="7052" mastery_level="7" name="Toad the Ravenous" />
+    </deck>
+    <speech>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>Oh gods, oh gods, oh gods! Everything is on fire! Who would do this?!</text>
+      </line>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>I need to find help... Oh praise be, I think that's an airship on the horizon!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5267</id>
+    <name>Hope on the Horizon</name>
+    <energy>11</energy>
+    <desc>Dilbert makes it out of the entrance of Beeltleton Bunker. He searches frantically for anyone who may be able to help him. In the distance he spots an airship...</desc>
+    <commander id="317" />
+    <deck>
+      <card id="1010" name="Lightning Elemental" />
+      <card id="1010" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" />
+      <card id="1018" />
+      <card id="1018" />
+      <card id="7055" name="Valley Strider" />
+      <card id="1312" mastery_level="2" name="Scythe Demon" />
+      <card id="2046" mastery_level="2" name="Leaping Dragon" />
+      <card id="6012" mastery_level="3" name="Ember Drake" />
+      <card id="2040" mastery_level="4" name="Owlmancer" />
+      <card id="5058" mastery_level="5" name="Crescent Moon Owl" />
+      <card id="7058" mastery_level="6" name="Steppe Stalker" />
+      <card id="6055" mastery_level="7" name="Phoenix" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5268</id>
+    <name>First Contact</name>
+    <energy>11</energy>
+    <desc>Dilbert quickly approaches the airship. Through the cockpit window he spots a powerful magic user and woman who appears to be made of the ocean itself. Both parties look bewildered at one another.</desc>
+    <commander id="316" />
+    <deck>
+      <card id="1315" name="Nix Elemental" />
+      <card id="1315" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="1613" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="7017" />
+      <card id="2045" name="Chillbeard Giant" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="1613" mastery_level="2" name="Acidic Spider" />
+      <card id="5053" mastery_level="2" name="Anura Witch" />
+      <card id="1617" mastery_level="3" name="Water Elemental" />
+      <card id="2020" mastery_level="4" name="Tidetaken Fighter" />
+      <card id="7021" mastery_level="5" name="Shadow Elemental" />
+      <card id="5059" mastery_level="6" name="Bemola" />
+      <card id="5032" mastery_level="7" name="Hail Hurler" />
+    </deck>
+    <speech>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>Thank the gods I found someone! Please, you have to help us!</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Ahh, looks like we have a visitor. I'm glad we didn't squish him on our windshield. Can you understand what he's saying?</text>
+      </line>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>Not a word....</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5269</id>
+    <name>Shelter for the Wounded</name>
+    <energy>11</energy>
+    <desc>Rayne can see the distress in the young bug's face. Behind him billows black smoke. She opens the airship door, signaling for him to come inside.</desc>
+    <commander id="317" />
+    <deck>
+      <card id="1319" name="Wraith" />
+      <card id="1319" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="6006" />
+      <card id="7006" name="Treant Sapling" />
+      <card id="7006" />
+      <card id="7006" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="7006" mastery_level="2" name="Treant Sapling" />
+      <card id="1331" mastery_level="2" name="Fallen Soldiers" />
+      <card id="1315" mastery_level="3" name="Nix Elemental" />
+      <card id="2012" mastery_level="4" name="Frogling Swarm" />
+      <card id="1332" mastery_level="5" name="Vampiric Emira" />
+      <card id="6035" mastery_level="6" name="Demos" />
+      <card id="5037" mastery_level="7" name="Dauntless Baneblade" />
+    </deck>
+    <speech>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>Please help! I am from Beetle Bunker, but someone has set our town on fire! It must be fate that I have found you.</text>
+      </line>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>Considering some of my other companions, you might be right. Show us the way. We will do what we can.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5270</id>
+    <name>To the Inferno</name>
+    <energy>11</energy>
+    <desc>Dilbert leads the airship to the entrance of Beetleton Bunker. Aria and Rayne are overcome with the smoke billowing out of the entrance. They make their descent with caution.</desc>
+    <commander id="304" />
+    <deck>
+      <card id="1017" name="Judgment" />
+      <card id="1017" />
+      <card id="5012" name="Static Drake" />
+      <card id="5012" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6007" />
+      <card id="5030" name="Loxphas Mage" />
+      <card id="5028" name="Winter Blacksmith" />
+      <card id="1614" mastery_level="2" name="Druid" />
+      <card id="7024" mastery_level="2" name="Woolmane Dragon" />
+      <card id="6007" mastery_level="3" name="Goblin Crew" />
+      <card id="6054" mastery_level="4" name="Shadowcrafter" />
+      <card id="6011" mastery_level="5" name="Bomb Spirit" />
+      <card id="5031" mastery_level="6" name="Frostlance Valkyrie" />
+      <card id="5047" mastery_level="7" name="Sky Fisher" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5271</id>
+    <name>Teamwork</name>
+    <energy>11</energy>
+    <desc>Beetleton is ablaze and the citizens are panicking. Immediately Rayne and Aria move to help. Rayne extinguishes the fire, while Aria helps the citizens reach safety.</desc>
+    <commander id="316" />
+    <deck>
+      <card id="1014" name="Cherub" />
+      <card id="1014" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="6022" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="1613" />
+      <card id="5060" name="Quack Apprentice" />
+      <card id="5053" name="Anura Witch" />
+      <card id="1011" mastery_level="2" name="Archive Keeper" />
+      <card id="1328" mastery_level="2" name="Poison Bullfrog" />
+      <card id="1613" mastery_level="3" name="Acidic Spider" />
+      <card id="5015" mastery_level="4" name="Gravity Swell" />
+      <card id="5041" mastery_level="5" name="Skylance Raiders" />
+      <card id="5027" mastery_level="6" name="Northern War-kin" />
+      <card id="5018" mastery_level="7" name="Grand Knight Frog" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>I think I can make quick work of this fire! How are the civilians?</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Panicked! I'm working on getting these stragglers out of their hives!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5272</id>
+    <name>Fire Extinguisher</name>
+    <energy>13</energy>
+    <desc>Rayne's form ripples as she focuses her elemental powers. Her water douses the burning hives, extinguishing the flames.</desc>
+    <commander id="319" />
+    <deck>
+      <card id="1015" name="Windfrog" />
+      <card id="1015" />
+      <card id="1616" name="Werewarg" />
+      <card id="1616" />
+      <card id="1618" name="Frog Scout" />
+      <card id="1618" />
+      <card id="1618" />
+      <card id="7016" name="Webfist Shaman" />
+      <card id="1617" mastery_level="2" name="Water Elemental" />
+      <card id="6020" mastery_level="2" name="Croak Piercer" />
+      <card id="5006" mastery_level="3" name="Arms Enforcer" />
+      <card id="6051" mastery_level="4" name="Treeblade Thief" />
+      <card id="7053" mastery_level="5" name="Bee Eater" />
+      <card id="7018" mastery_level="6" name="Frog Emperor" />
+      <card id="6060" mastery_level="7" name="Pudgytusk" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5273</id>
+    <name>Calm after the Storm</name>
+    <energy>13</energy>
+    <desc>Smoke now fills Beetleton as the fire dies down. The citizens are able to safely make it out of their homes. The town comes together to thank Rayne and Aria for their help.</desc>
+    <commander id="317" />
+    <deck>
+      <card id="6006" name="Chaos Golem" />
+      <card id="1319" name="Wraith" />
+      <card id="1319" />
+      <card id="1313" name="Lavafrog" />
+      <card id="1313" />
+      <card id="1313" />
+      <card id="5062" name="Cliffhanger Wyrm" />
+      <card id="5053" name="Anura Witch" />
+      <card id="1613" mastery_level="2" name="Acidic Spider" />
+      <card id="1028" mastery_level="2" name="Heroic Frog" />
+      <card id="7006" mastery_level="3" name="Treant Sapling" />
+      <card id="2045" mastery_level="4" name="Chillbeard Giant" />
+      <card id="5060" mastery_level="5" name="Quack Apprentice" />
+      <card id="5059" mastery_level="6" name="Bemola" />
+      <card id="7049" mastery_level="7" name="Boundtoad" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5274</id>
+    <name>Damage Done</name>
+    <energy>13</energy>
+    <desc>Dilbert sighs as he stares at the damage that has been done to his city. He turns to Rayne and Aria with a mixed look of sorrow and relief.</desc>
+    <commander id="319" />
+    <deck>
+      <card id="7057" name="Bill Crasher" />
+      <card id="7055" name="Valley Strider" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" />
+      <card id="1312" name="Scythe Demon" />
+      <card id="1312" />
+      <card id="1319" name="Wraith" />
+      <card id="1319" />
+      <card id="1613" mastery_level="2" name="Acidic Spider" />
+      <card id="7055" mastery_level="3" name="Valley Strider" />
+      <card id="1018" mastery_level="4" name="Armored Eagle" />
+      <card id="2023" mastery_level="5" name="Grizzly Terror" />
+      <card id="7058" mastery_level="6" name="Steppe Stalker" />
+      <card id="6060" mastery_level="7" name="Pudgytusk" />
+    </deck>
+    <speech>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>I can't thank you two enough for helping our city. I have built so much of this city myself. It's a sad sight to see how much damage was done. But at least it is still standing.</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Do you know how the fire started?</text>
+      </line>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>There have been reports of bombs dropping in from the entrance. But we have not been able to confirm...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5275</id>
+    <name>Surprise Party</name>
+    <energy>13</energy>
+    <desc>Rayne and Aria halt their conversation as a gasp is heard from the crowd. Citizens begin to flee as ropes are dropped down from the entrance of Beetleton Bunker.</desc>
+    <commander id="321" />
+    <deck>
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="1318" />
+      <card id="5007" name="Arcane Scroll" />
+      <card id="5007" />
+      <card id="7006" name="Treant Sapling" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="6061" name="Decagon" />
+      <card id="2031" name="Dryad" />
+      <card id="1311" mastery_level="2" name="Molten Skeleton" />
+      <card id="6015" mastery_level="3" name="Acidic Sludge" />
+      <card id="5017" mastery_level="4" name="Steam Tempest" />
+      <card id="1325" mastery_level="5" name="Chaos Storm" />
+      <card id="7046" mastery_level="6" name="Brambleblight" />
+      <card id="6040" mastery_level="7" name="Scorching Cutlass" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>I think those reports might be right! Goblins are dropping in from the entrance!</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>1</enemy>
+        <text>Kekekekeke!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5276</id>
+    <name>Bombardiers Ahoy</name>
+    <energy>13</energy>
+    <desc>After the first wave of goblins, a second group flies overhead on the backs of young dragons! From the sky, they drop their goblin bombs over the city!</desc>
+    <commander id="318" />
+    <deck>
+      <card id="6025" name="Dragon Keeper" />
+      <card id="6025" />
+      <card id="2033" name="Arcblaze Dragon" />
+      <card id="2046" name="Leaping Dragon" />
+      <card id="1313" name="Lavafrog" />
+      <card id="1313" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6012" />
+      <card id="6061" mastery_level="2" name="Decagon" />
+      <card id="1613" mastery_level="2" name="Acidic Spider" />
+      <card id="5025" mastery_level="3" name="Steelskin Dragon" />
+      <card id="6006" mastery_level="4" name="Chaos Golem" />
+      <card id="2044" mastery_level="5" name="Quillhide Dragon" />
+      <card id="6057" mastery_level="6" name="Beammite" />
+      <card id="6058" mastery_level="7" name="Tarragon Cuttail" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5277</id>
+    <name>Citizen Defense</name>
+    <energy>11</energy>
+    <desc>The citizens flee, panicked as their homes are destroyed again. The militia of Beetleton Bunker take flight against the dragon-riding goblins. Rayne and Aria focus on protecting the citizens!</desc>
+    <commander id="320" />
+    <deck>
+      <card id="7035" name="Carrion Tiger" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="7022" name="Beetle Tamer" />
+      <card id="7022" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6012" />
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5006" />
+      <card id="2019" mastery_level="2" name="Chalistomper" />
+      <card id="2012" mastery_level="3" name="Frogling Swarm" />
+      <card id="6022" mastery_level="4" name="Illusion Caster" />
+      <card id="7061" mastery_level="5" name="Thickskin Dragon" />
+      <card id="2022" mastery_level="6" name="Avalanche Equine" />
+      <card id="6033" mastery_level="7" name="Firebeard" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5278</id>
+    <name>Goblin Behind the Curtain</name>
+    <energy>11</energy>
+    <desc>Ground troops have swarmed the area. Aria feels overwhelmed and ducks around a hive to get a better grip on her surroundings. She sees a particularly well dressed goblin hanging back from the battle on a dragon.</desc>
+    <commander id="321" />
+    <deck>
+      <card id="1617" name="Water Elemental" />
+      <card id="1617" />
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5006" />
+      <card id="1017" name="Judgment" />
+      <card id="1017" />
+      <card id="7021" name="Shadow Elemental" />
+      <card id="2009" name="Sapling" />
+      <card id="7034" mastery_level="2" name="Spore Elk" />
+      <card id="6031" mastery_level="3" name="Iceblood Assassin" />
+      <card id="6006" mastery_level="4" name="Chaos Golem" />
+      <card id="7020" mastery_level="5" name="Trapper Frog" />
+      <card id="7059" mastery_level="6" name="Knotborn Dragon" />
+      <card id="7060" mastery_level="7" name="Shenami" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5279</id>
+    <name>Search and Destroy</name>
+    <energy>11</energy>
+    <desc>The ringleader flies above the battle rallying and directing his troops. Aria can overhear him yelling his orders.</desc>
+    <commander id="318" />
+    <deck>
+      <card id="1019" name="Oracle" />
+      <card id="1019" />
+      <card id="5012" name="Static Drake" />
+      <card id="5012" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="5035" name="Vapor Guard" />
+      <card id="5021" name="Tower Spirit" />
+      <card id="1017" mastery_level="2" name="Judgment" />
+      <card id="5060" mastery_level="3" name="Quack Apprentice" />
+      <card id="1619" mastery_level="4" name="Earth Elemental" />
+      <card id="6061" mastery_level="5" name="Decagon" />
+      <card id="5031" mastery_level="6" name="Frostlance Valkyrie" />
+      <card id="5019" mastery_level="7" name="Vivid Aurora" />
+    </deck>
+    <speech>
+      <line>
+        <commander>oda</commander>
+        <enemy>0</enemy>
+        <text>Hurry and find that artifact, boys! Their backup has already arrived!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5280</id>
+    <name>On the Hunt</name>
+    <energy>11</energy>
+    <desc>The ground goblin troops storm into the citizens' homes. They search wildly for the artifact, but pay little attention to the fleeing bugs. Dilbert guards his home, while goblins approach...</desc>
+    <commander id="321" />
+    <deck>
+      <card id="1012" name="Cloud Sylph" />
+      <card id="1012" />
+      <card id="1012" />
+      <card id="1017" name="Judgment" />
+      <card id="1017" />
+      <card id="2009" name="Sapling" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="7015" name="Bog Aberration" />
+      <card id="7021" mastery_level="2" name="Shadow Elemental" />
+      <card id="7047" mastery_level="3" name="Shaman of the Wild" />
+      <card id="1614" mastery_level="4" name="Druid" />
+      <card id="7004" mastery_level="5" name="Ice Golem" />
+      <card id="6041" mastery_level="6" name="Reaper" />
+      <card id="7044" mastery_level="7" name="River Elemental" />
+    </deck>
+    <speech>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>Get back! I don't want to hurt you, but I will NOT let you enter my home!</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>1</enemy>
+        <text>Heh, you really think you can stop all of us? Get'em, boys!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5281</id>
+    <name>Bunch of Bullies</name>
+    <energy>11</energy>
+    <desc>The goblins run right over Dilbert! He resists while he can, but he can only fend off so many before they pile on top of him.</desc>
+    <commander id="318" />
+    <deck>
+      <card id="1315" name="Nix Elemental" />
+      <card id="1315" />
+      <card id="1315" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" />
+      <card id="6050" name="Wortwog" />
+      <card id="2027" name="Halo Mage" />
+      <card id="2027" name="Halo Mage" />
+      <card id="6061" mastery_level="2" name="Decagon" />
+      <card id="6056" mastery_level="2" name="Potoo" />
+      <card id="2032" mastery_level="3" name="Brimstone" />
+      <card id="1613" mastery_level="4" name="Acidic Spider" />
+      <card id="7038" mastery_level="5" name="Sol King" />
+      <card id="5043" mastery_level="6" name="Empyrean" />
+      <card id="1042" mastery_level="7" name="Archgeneral" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5282</id>
+    <name>To the Rescue</name>
+    <energy>11</energy>
+    <desc>Aria and Rayne see that Dilbert is in trouble. With the amount of goblins swarming him Aria suspects the artifact is in his home. They rush to his aid!</desc>
+    <commander id="319" />
+    <deck>
+      <card id="5016" name="Fowl Swarm" />
+      <card id="5041" name="Skylance Raiders" />
+      <card id="7006" name="Treant Sapling" />
+      <card id="7006" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" />
+      <card id="6034" name="Bone Viper" />
+      <card id="2023" name="Grizzly Terror" />
+      <card id="2029" mastery_level="2" name="Sly Critters" />
+      <card id="1014" mastery_level="2" name="Cherub" />
+      <card id="5040" mastery_level="3" name="Winged Trumpeter" />
+      <card id="1014" mastery_level="4" name="Cherub" />
+      <card id="6038" mastery_level="5" name="Hemlock" />
+      <card id="5018" mastery_level="6" name="Grand Knight Frog" />
+      <card id="6039" mastery_level="7" name="Auroch" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>They are attacking Dilbert! We need to help him!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5283</id>
+    <name>Power Down</name>
+    <energy>9</energy>
+    <desc>Aria and Rayne have to aim their attacks carefully, to avoid hurting Dilbert in the fray. The scene has turned into a good old fashioned brawl.</desc>
+    <commander id="320" />
+    <deck>
+      <card id="1332" name="Vampiric Emira" />
+      <card id="7055" name="Valley Strider" />
+      <card id="6044" name="Firewalker" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6012" />
+      <card id="6012" />
+      <card id="2030" mastery_level="2" name="Ebon Duelist" />
+      <card id="7057" mastery_level="3" name="Bill Crasher" />
+      <card id="1319" mastery_level="4" name="Wraith" />
+      <card id="6054" mastery_level="5" name="Shadowcrafter" />
+      <card id="5047" mastery_level="6" name="Sky Fisher" />
+      <card id="6028" mastery_level="7" name="Brahmet" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5284</id>
+    <name>Sneaky Sneaks</name>
+    <energy>9</energy>
+    <desc>The goblins have mainly been subdued. But where has Dilbert gone? In the chaos he has gone missing! Aria and Rayne rush into Dilbert's house.</desc>
+    <commander id="320" />
+    <deck>
+      <card id="2009" name="Sapling" />
+      <card id="2008" name="Shadow of Ash" />
+      <card id="6051" name="Treeblade Thief" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="7017" />
+      <card id="5007" name="Arcane Scroll" />
+      <card id="5007" />
+      <card id="5007" />
+      <card id="6046" mastery_level="2" name="Celerity" />
+      <card id="7024" mastery_level="3" name="Woolmane Dragon" />
+      <card id="6022" mastery_level="4" name="Illusion Caster" />
+      <card id="1032" mastery_level="5" name="Lunar Elemental" />
+      <card id="7013" mastery_level="6" name="Gold Elemental" />
+      <card id="1342" mastery_level="7" name="Ronin" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5285</id>
+    <name>Artifact Located</name>
+    <energy>9</energy>
+    <desc>More goblins are inside Dilbert's house! One is holding a giant hammer, crafted from what looks to be a spellstone. The goblin's grin fades as he sees the two standing in front of him.</desc>
+    <commander id="319" />
+    <deck>
+      <card id="7051" name="Stinglash Rider" />
+      <card id="2045" name="Chillbeard Giant" />
+      <card id="7053" name="Bee Eater" />
+      <card id="6034" name="Bone Viper" />
+      <card id="1610" name="Ranger" />
+      <card id="1610" />
+      <card id="1315" name="Nix Elemental" />
+      <card id="1315" />
+      <card id="1613" mastery_level="2" name="Acidic Spider" />
+      <card id="2023" mastery_level="3" name="Grizzly Terror" />
+      <card id="1312" mastery_level="4" name="Scythe Demon" />
+      <card id="6015" mastery_level="5" name="Acidic Sludge" />
+      <card id="6057" mastery_level="6" name="Beammite" />
+      <card id="6060" mastery_level="7" name="Pudgytusk" />
+    </deck>
+    <speech>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>Gah, some of them made it inside!</text>
+      </line>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>No, they found the hammer! We mustn't let them take it!</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>This must be why they attacked...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5286</id>
+    <name>Pass Off</name>
+    <energy>9</energy>
+    <desc>The goblins flee the house with the stolen hammer. The ringleader waits atop his dragon, smiling as he sees the hammer emerge from the house. Before Aria and Rayne can catch up, the goblins throw the artifact to their boss.</desc>
+    <commander id="321" />
+    <deck>
+      <card id="1313" name="Lavafrog" />
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="6011" name="Bomb Spirit" />
+      <card id="2046" name="Leaping Dragon" />
+      <card id="2046" name="Leaping Dragon" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="7017" />
+      <card id="1325" name="Chaos Storm" />
+      <card id="7021" mastery_level="2" name="Shadow Elemental" />
+      <card id="5053" mastery_level="2" name="Anura Witch" />
+      <card id="6056" mastery_level="3" name="Potoo" />
+      <card id="1010" mastery_level="4" name="Lightning Elemental" />
+      <card id="7021" mastery_level="5" name="Shadow Elemental" />
+      <card id="5013" mastery_level="6" name="Radiance" />
+      <card id="6053" mastery_level="7" name="Squire Gorger" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5287</id>
+    <name>Victorious Retreat</name>
+    <energy>13</energy>
+    <desc>The ringleader cackles gleefully with the hammer in his possession. Giving a loud whistle, he waves for his men to retreat.</desc>
+    <commander id="322" />
+    <deck>
+      <card id="5062" name="Cliffhanger Wyrm" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="6031" name="Iceblood Assassin" />
+      <card id="1315" name="Nix Elemental" />
+      <card id="1315" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="1613" />
+      <card id="1613" />
+      <card id="2031" mastery_level="2" name="Dryad" />
+      <card id="2024" mastery_level="2" name="Dusk Noble" />
+      <card id="5053" mastery_level="3" name="Anura Witch" />
+      <card id="1318" mastery_level="4" name="Smelted Lava Slug" />
+      <card id="1330" mastery_level="5" name="Devouring Locusts" />
+      <card id="6033" mastery_level="6" name="Firebeard" />
+      <card id="5059" mastery_level="7" name="Bemola" />
+    </deck>
+    <speech>
+      <line>
+        <commander>oda</commander>
+        <enemy>1</enemy>
+        <text>Well done, boys! Let's get out of here before anyone tries to spoil our victory.</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>You destroyed a whole town for a hammer, and you think we are just going to let you get away?</text>
+      </line>
+      <line>
+        <commander>oda</commander>
+        <enemy>1</enemy>
+        <text>Oh puddin', you wouldn't be the first to try. </text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5288</id>
+    <name>Not So Fast</name>
+    <energy>13</energy>
+    <desc>The ringleader begins to fly off with the hammer.  Aria and Rayne prepare to stop him, but are ambushed by the remaining foot soldiers.</desc>
+    <commander id="320" />
+    <deck>
+      <card id="6025" name="Dragon Keeper" />
+      <card id="2044" name="Quillhide Dragon" />
+      <card id="7061" name="Thickskin Dragon" />
+      <card id="2003" name="Dragon Tamer" />
+      <card id="1610" name="Ranger" />
+      <card id="1610" />
+      <card id="1610" />
+      <card id="7012" name="Life Drake" />
+      <card id="7047" mastery_level="2" name="Shaman of the Wild" />
+      <card id="5025" mastery_level="2" name="Steelskin Dragon" />
+      <card id="7061" mastery_level="3" name="Thickskin Dragon" />
+      <card id="7035" mastery_level="4" name="Carrion Tiger" />
+      <card id="2031" mastery_level="5" name="Dryad" />
+      <card id="7048" mastery_level="6" name="Bogskull Widow" />
+      <card id="6058" mastery_level="7" name="Tarragon Cuttail" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5289</id>
+    <name>Puddin Pops</name>
+    <energy>13</energy>
+    <desc>Aria, furious that anyone dares call her 'puddin', prepares to attack. Her eyes glow as the begins to summon the undead to aid her.</desc>
+    <commander id="322" />
+    <deck>
+      <card id="1012" name="Cloud Sylph" />
+      <card id="1012" />
+      <card id="7007" name="Water Serpent" />
+      <card id="7007" />
+      <card id="2032" name="Brimstone" />
+      <card id="2033" name="Arcblaze Dragon" />
+      <card id="7004" name="Ice Golem" />
+      <card id="2045" name="Chillbeard Giant" />
+      <card id="2004" mastery_level="2" name="Lavatail Dragon" />
+      <card id="1631" mastery_level="2" name="Venom Dragon" />
+      <card id="6042" mastery_level="3" name="Shadow of Thunder" />
+      <card id="8018" mastery_level="4" name="Doom Tentacle" />
+      <card id="6057" mastery_level="5" name="Beammite" />
+      <card id="5061" mastery_level="6" name="Thunderfist Rex" />
+      <card id="7039" mastery_level="7" name="Winged Giant" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text> Did  he just call me 'puddin' ?! That's it, I'm going to bury this little scamp!</text>
+      </line>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>Be careful! We mustn't harm the hammer!</text>
+      </line>
+    </speech>
+  </mission>
 </root>

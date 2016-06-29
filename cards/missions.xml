@@ -6116,9 +6116,9 @@
   <location>
     <id>110</id>
     <name>Beetleton Bunker</name>
-    <mapBG>Map_BeetletonBunker</mapBG>
-    <asset_bundle>54</asset_bundle>
-    <combatBG>CombatBGBeetletonBunker</combatBG>
+    <mapBG>Map_Beetleton_Bunker</mapBG>
+    <asset_bundle>66</asset_bundle>
+    <combatBG>CombatBGVoid</combatBG>
     <req>-1</req>
     <arena_x>250</arena_x>
     <arena_y>150</arena_y>

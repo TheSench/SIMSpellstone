@@ -2776,6 +2776,169 @@
     </rewards>
     <find_item id="3034" drop_per_energy=".25" />
   </campaign>
+  <!-- START Event 13 Insects -->
+  <campaign>
+    <id>1071</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>SOS</name>
+    <icon id="honey_comb" bundle="58" />
+    <location_id>110</location_id>
+    <x>280</x>
+    <y>214</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5266</mission_id>
+      <mission_id>5267</mission_id>
+      <mission_id>5268</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1318" />
+      <card level="3" id="1318" />
+      <item level="4" id="3040" />
+      <card level="5" id="6017" />
+      <card level="6" id="6017" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3041" drop_per_energy=".2" />
+  </campaign>
+  <campaign>
+    <id>1072</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>To Beetleton Bunker</name>
+    <icon id="larvae" bundle="58" />
+    <location_id>110</location_id>
+    <x>460</x>
+    <y>189</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5269</mission_id>
+      <mission_id>5270</mission_id>
+      <mission_id>5271</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="6017" />
+      <card level="3" id="6017" />
+      <item level="1" id="3039" />
+      <card level="5" id="1318" />
+      <card level="6" id="1318" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3041" drop_per_energy=".21" />
+  </campaign>
+  <campaign>
+    <id>1073</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Town on Fire</name>
+    <icon id="honey_jar" bundle="58" />
+    <location_id>110</location_id>
+    <x>686</x>
+    <y>172</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5272</mission_id>
+      <mission_id>5273</mission_id>
+      <mission_id>5274</mission_id>
+      <mission_id>5275</mission_id>
+      <mission_id>5276</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="6022" />
+      <card level="3" id="6022" />
+      <card level="4" id="2049" />
+      <card level="5" id="6006" />
+      <card level="6" id="6006" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3041" drop_per_energy=".22" />
+  </campaign>
+  <campaign>
+    <id>1074</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Goblin Incoming</name>
+    <icon id="honey_jar" bundle="58" />
+    <location_id>110</location_id>
+    <x>810</x>
+    <y>286</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5277</mission_id>
+      <mission_id>5278</mission_id>
+      <mission_id>5279</mission_id>
+      <mission_id>5280</mission_id>
+      <mission_id>5281</mission_id>
+      <mission_id>5282</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="6006" />
+      <card level="3" id="6006" />
+      <card level="1" id="2050" />
+      <card level="5" id="6022" />
+      <card level="6" id="6022" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3041" drop_per_energy=".24" />
+  </campaign>
+  <campaign>
+    <id>1075</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>The Artifact</name>
+    <icon id="honey_jar" bundle="58" />
+    <location_id>110</location_id>
+    <x>644</x>
+    <y>342</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5283</mission_id>
+      <mission_id>5284</mission_id>
+      <mission_id>5285</mission_id>
+      <mission_id>5286</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1613" />
+      <card level="3" id="1613" />
+      <card level="4" id="511" />
+      <card level="5" id="1610" />
+      <card level="6" id="1610" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3041" drop_per_energy=".23" />
+  </campaign>
+  <campaign>
+    <id>1076</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Up, Up and Away</name>
+    <icon id="honey_jar" bundle="58" />
+    <location_id>110</location_id>
+    <x>537</x>
+    <y>409</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5287</mission_id>
+      <mission_id>5288</mission_id>
+      <mission_id>5289</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1610" />
+      <card level="3" id="1610" />
+      <card level="4" id="1330" />
+      <card level="5" id="1613" />
+      <card level="6" id="1613" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3041" drop_per_energy=".25" />
+  </campaign>
   <!-- START Mythic Campaigns -->
   <campaign>
     <id>3000</id>

@@ -45,6 +45,13 @@ void Main()
 	var noImage = new List<string>();
 	var notFound = new Dictionary<string, string>();
 
+
+	var unusedImages = new DirectoryInfo(Path.Combine(path, @"..\res\cardImages"))
+		.GetFiles("*.jpg")
+		.Select(imageFile => imageFile.Name)
+		.Where(name => name.IndexOf("SpriteSheet") < 0 && name.IndexOf("PortraitSheet") < 0 && name.IndexOf("NotFound") < 0)
+		.ToDictionary(name => name.Replace(".jpg", ""), name => name);
+
 	var unitNodes = doc.Descendants("unit");
 	foreach (var unitXML in unitNodes)
 	{
@@ -80,44 +87,58 @@ void Main()
 		{
 			noImage.Add(unit.name + "(NO IMAGE)");
 		}
+		if (unusedImages.ContainsKey(unit.picture))
+		{
+			unusedImages.Remove(unit.picture);
+		}
 	}
 
 	notFound.Dump("Missing these");
 
 	// Add placeholder units for unused images
-	var unusedImages = new DirectoryInfo(Path.Combine(path, @"..\res\cardImages"))
+	/*var unusedImages = new DirectoryInfo(Path.Combine(path, @"..\res\cardImages"))
 		.GetFiles("New*A.jpg")
-		.Select(imageFile => imageFile.Name);
+		.Select(imageFile => imageFile.Name);*/
 	var idPrefixes = new[] { "", "1", "2" };
-	var imageSuffixes = new[] { "A", "A", "B" };
+	var suffixMap = new Dictionary<char, int> { { 'A', 0 }, { 'B', 1 }, { 'C', 2} };
 	var nameSuffixes = new[] { "S", "D", "Q" };
-	var unitID = 10000 - unusedImages.Count();
+	var unitID = 9999;
 	foreach (var image in unusedImages)
 	{
-		var imageName = image.Split('_')[0];
-		var imageNumber = imageName.Replace("New", "");
-		for (var i = 0; i < 3; i++)
+		var key = image.Key;
+		if (key[0] != key.ToUpper()[0])
 		{
-			var unit = new unit()
-			{
-				id = idPrefixes[i] + unitID.ToString(),
-				name = "",//"New " + imageNumber + " (" + nameSuffixes[i] + ")",
-				picture = imageName + "_" + imageSuffixes[i],
-				rarity = "0",
-				card_type = "2",
-				type = "0",
-				attack = "-1",
-				health = "-1",
-				cost = "-1",
-			};
-			units.Add(unit);
-			// Only add these to spoilers if there are other new units - don't want to overwrite spoilers with just new art
-			if (newUnits.Count > 0 && i != 1)
-			{
-				newUnits.Add(unit.id);
-			}
+			key.Dump();
+			continue;
 		}
-		unitID++;
+		var split = key.LastIndexOf('_');
+		if (split < 0)
+		{
+			key.Dump(); 
+			continue;
+		}
+		var imageName = key.Substring(0, split);
+		var suffix = image.Key[split+1];
+		var fusion = suffixMap[suffix];
+		var unit = new unit()
+		{
+			id = idPrefixes[fusion] + unitID.ToString(),
+			name = "",
+			picture = key,
+			rarity = "0",
+			card_type = "2",
+			type = "0",
+			attack = "-1",
+			health = "-1",
+			cost = "-1",
+		};
+		units.Add(unit);
+		// Only add these to spoilers if there are other new units - don't want to overwrite spoilers with just new art
+		if (newUnits.Count > 0 && fusion != 1)
+		{
+			newUnits.Add(unit.id);
+		}
+		unitID--;
 	}
 
 	if (newUnits.Count > 0)

@@ -85898,8 +85898,60 @@ var CARDS = {
       },
     }
   },
-  "9984": {
-    "id": "9984",
+  "9999": {
+    "id": "9999",
+    "name": "",
+    "picture": "Aria_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9998": {
+    "id": "9998",
+    "name": "",
+    "picture": "Elyse_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9997": {
+    "id": "9997",
+    "name": "",
+    "picture": "General_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "29996": {
+    "id": "29996",
+    "name": "",
+    "picture": "Monster_C",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9995": {
+    "id": "9995",
     "name": "",
     "picture": "New10_A",
     "rarity": "0",
@@ -85911,21 +85963,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19984": {
-    "id": "19984",
-    "name": "",
-    "picture": "New10_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29984": {
-    "id": "29984",
+  "19994": {
+    "id": "19994",
     "name": "",
     "picture": "New10_B",
     "rarity": "0",
@@ -85937,8 +85976,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9985": {
-    "id": "9985",
+  "9993": {
+    "id": "9993",
     "name": "",
     "picture": "New12_A",
     "rarity": "0",
@@ -85950,21 +85989,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19985": {
-    "id": "19985",
-    "name": "",
-    "picture": "New12_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29985": {
-    "id": "29985",
+  "19992": {
+    "id": "19992",
     "name": "",
     "picture": "New12_B",
     "rarity": "0",
@@ -85976,8 +86002,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9986": {
-    "id": "9986",
+  "9991": {
+    "id": "9991",
     "name": "",
     "picture": "New14_A",
     "rarity": "0",
@@ -85989,21 +86015,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19986": {
-    "id": "19986",
-    "name": "",
-    "picture": "New14_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29986": {
-    "id": "29986",
+  "19990": {
+    "id": "19990",
     "name": "",
     "picture": "New14_B",
     "rarity": "0",
@@ -86015,47 +86028,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9987": {
-    "id": "9987",
-    "name": "",
-    "picture": "New15_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19987": {
-    "id": "19987",
-    "name": "",
-    "picture": "New15_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29987": {
-    "id": "29987",
-    "name": "",
-    "picture": "New15_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9988": {
-    "id": "9988",
+  "9989": {
+    "id": "9989",
     "name": "",
     "picture": "New17_A",
     "rarity": "0",
@@ -86070,19 +86044,6 @@ var CARDS = {
   "19988": {
     "id": "19988",
     "name": "",
-    "picture": "New17_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29988": {
-    "id": "29988",
-    "name": "",
     "picture": "New17_B",
     "rarity": "0",
     "card_type": "2",
@@ -86093,86 +86054,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9989": {
-    "id": "9989",
-    "name": "",
-    "picture": "New18_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19989": {
-    "id": "19989",
-    "name": "",
-    "picture": "New18_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29989": {
-    "id": "29989",
-    "name": "",
-    "picture": "New18_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9990": {
-    "id": "9990",
-    "name": "",
-    "picture": "New19_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19990": {
-    "id": "19990",
-    "name": "",
-    "picture": "New19_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29990": {
-    "id": "29990",
-    "name": "",
-    "picture": "New19_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9991": {
-    "id": "9991",
+  "9987": {
+    "id": "9987",
     "name": "",
     "picture": "New1_A",
     "rarity": "0",
@@ -86184,21 +86067,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19991": {
-    "id": "19991",
-    "name": "",
-    "picture": "New1_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29991": {
-    "id": "29991",
+  "19986": {
+    "id": "19986",
     "name": "",
     "picture": "New1_B",
     "rarity": "0",
@@ -86210,8 +86080,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9992": {
-    "id": "9992",
+  "9985": {
+    "id": "9985",
     "name": "",
     "picture": "New2_A",
     "rarity": "0",
@@ -86223,21 +86093,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19992": {
-    "id": "19992",
-    "name": "",
-    "picture": "New2_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29992": {
-    "id": "29992",
+  "19984": {
+    "id": "19984",
     "name": "",
     "picture": "New2_B",
     "rarity": "0",
@@ -86249,8 +86106,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9993": {
-    "id": "9993",
+  "9983": {
+    "id": "9983",
     "name": "",
     "picture": "New3_A",
     "rarity": "0",
@@ -86262,21 +86119,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19993": {
-    "id": "19993",
-    "name": "",
-    "picture": "New3_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29993": {
-    "id": "29993",
+  "19982": {
+    "id": "19982",
     "name": "",
     "picture": "New3_B",
     "rarity": "0",
@@ -86288,8 +86132,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9994": {
-    "id": "9994",
+  "9981": {
+    "id": "9981",
     "name": "",
     "picture": "New4_A",
     "rarity": "0",
@@ -86301,21 +86145,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19994": {
-    "id": "19994",
-    "name": "",
-    "picture": "New4_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29994": {
-    "id": "29994",
+  "19980": {
+    "id": "19980",
     "name": "",
     "picture": "New4_B",
     "rarity": "0",
@@ -86327,8 +86158,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9995": {
-    "id": "9995",
+  "9979": {
+    "id": "9979",
     "name": "",
     "picture": "New5_A",
     "rarity": "0",
@@ -86340,21 +86171,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19995": {
-    "id": "19995",
-    "name": "",
-    "picture": "New5_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29995": {
-    "id": "29995",
+  "19978": {
+    "id": "19978",
     "name": "",
     "picture": "New5_B",
     "rarity": "0",
@@ -86366,8 +86184,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9996": {
-    "id": "9996",
+  "9977": {
+    "id": "9977",
     "name": "",
     "picture": "New6_A",
     "rarity": "0",
@@ -86379,21 +86197,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19996": {
-    "id": "19996",
-    "name": "",
-    "picture": "New6_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29996": {
-    "id": "29996",
+  "19976": {
+    "id": "19976",
     "name": "",
     "picture": "New6_B",
     "rarity": "0",
@@ -86405,8 +86210,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9997": {
-    "id": "9997",
+  "9975": {
+    "id": "9975",
     "name": "",
     "picture": "New7_A",
     "rarity": "0",
@@ -86418,21 +86223,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19997": {
-    "id": "19997",
-    "name": "",
-    "picture": "New7_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29997": {
-    "id": "29997",
+  "19974": {
+    "id": "19974",
     "name": "",
     "picture": "New7_B",
     "rarity": "0",
@@ -86444,8 +86236,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9998": {
-    "id": "9998",
+  "9973": {
+    "id": "9973",
     "name": "",
     "picture": "New8_A",
     "rarity": "0",
@@ -86457,21 +86249,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19998": {
-    "id": "19998",
-    "name": "",
-    "picture": "New8_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29998": {
-    "id": "29998",
+  "19972": {
+    "id": "19972",
     "name": "",
     "picture": "New8_B",
     "rarity": "0",
@@ -86483,8 +86262,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9999": {
-    "id": "9999",
+  "9971": {
+    "id": "9971",
     "name": "",
     "picture": "New9_A",
     "rarity": "0",
@@ -86496,23 +86275,192 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19999": {
-    "id": "19999",
-    "name": "",
-    "picture": "New9_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29999": {
-    "id": "29999",
+  "19970": {
+    "id": "19970",
     "name": "",
     "picture": "New9_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9969": {
+    "id": "9969",
+    "name": "",
+    "picture": "Oda_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19968": {
+    "id": "19968",
+    "name": "",
+    "picture": "Oda_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "29967": {
+    "id": "29967",
+    "name": "",
+    "picture": "Oda_C",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19966": {
+    "id": "19966",
+    "name": "",
+    "picture": "Promo_Dragon_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9965": {
+    "id": "9965",
+    "name": "",
+    "picture": "Seraph_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19964": {
+    "id": "19964",
+    "name": "",
+    "picture": "Seraph_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9963": {
+    "id": "9963",
+    "name": "",
+    "picture": "Tarian_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9962": {
+    "id": "9962",
+    "name": "",
+    "picture": "Tremor_Wurm_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9961": {
+    "id": "9961",
+    "name": "",
+    "picture": "Unused1_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9960": {
+    "id": "9960",
+    "name": "",
+    "picture": "Unused2_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9959": {
+    "id": "9959",
+    "name": "",
+    "picture": "Unused3_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9958": {
+    "id": "9958",
+    "name": "",
+    "picture": "Ursurio_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9957": {
+    "id": "9957",
+    "name": "",
+    "picture": "Void_Abomination_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9956": {
+    "id": "9956",
+    "name": "",
+    "picture": "Yuriel_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -87185,6 +87133,48 @@ var CAMPAIGNS = {
     "location_id": "109",
     "side_mission": "",
     "missions": ["5238","5239","5240"]
+  },
+  "1071": {
+    "id": "1071",
+    "name": "SOS",
+    "location_id": "110",
+    "side_mission": "",
+    "missions": ["5266","5267","5268"]
+  },
+  "1072": {
+    "id": "1072",
+    "name": "To Beetleton Bunker",
+    "location_id": "110",
+    "side_mission": "",
+    "missions": ["5269","5270","5271"]
+  },
+  "1073": {
+    "id": "1073",
+    "name": "Town on Fire",
+    "location_id": "110",
+    "side_mission": "",
+    "missions": ["5272","5273","5274","5275","5276"]
+  },
+  "1074": {
+    "id": "1074",
+    "name": "Goblin Incoming",
+    "location_id": "110",
+    "side_mission": "",
+    "missions": ["5277","5278","5279","5280","5281","5282"]
+  },
+  "1075": {
+    "id": "1075",
+    "name": "The Artifact",
+    "location_id": "110",
+    "side_mission": "",
+    "missions": ["5283","5284","5285","5286"]
+  },
+  "1076": {
+    "id": "1076",
+    "name": "Up, Up and Away",
+    "location_id": "110",
+    "side_mission": "",
+    "missions": ["5287","5288","5289"]
   },
   "10": {
     "id": "10",
@@ -111242,6 +111232,1437 @@ var MISSIONS = {
       },
       {
         "id": "6024",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5266": {
+    "id": "5266",
+    "name": "In Need of Assistance",
+    "commander": {
+        "id": "304"
+    },
+    "deck": [
+      {
+        "id": "1314"
+      },
+      {
+        "id": "1314"
+      },
+      {
+        "id": "1314"
+      },
+      {
+        "id": "7006"
+      },
+      {
+        "id": "7006"
+      },
+      {
+        "id": "7006"
+      },
+      {
+        "id": "1613"
+      },
+      {
+        "id": "7061"
+      },
+      {
+        "id": "1619",
+        "mastery_level": "2"
+      },
+      {
+        "id": "7047",
+        "mastery_level": "2"
+      },
+      {
+        "id": "1313",
+        "mastery_level": "3"
+      },
+      {
+        "id": "6056",
+        "mastery_level": "4"
+      },
+      {
+        "id": "7038",
+        "mastery_level": "5"
+      },
+      {
+        "id": "6043",
+        "mastery_level": "6"
+      },
+      {
+        "id": "7052",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5267": {
+    "id": "5267",
+    "name": "Hope on the Horizon",
+    "commander": {
+        "id": "317"
+    },
+    "deck": [
+      {
+        "id": "1010"
+      },
+      {
+        "id": "1010"
+      },
+      {
+        "id": "5022"
+      },
+      {
+        "id": "1018"
+      },
+      {
+        "id": "1018"
+      },
+      {
+        "id": "1018"
+      },
+      {
+        "id": "1018"
+      },
+      {
+        "id": "7055"
+      },
+      {
+        "id": "1312",
+        "mastery_level": "2"
+      },
+      {
+        "id": "2046",
+        "mastery_level": "2"
+      },
+      {
+        "id": "6012",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2040",
+        "mastery_level": "4"
+      },
+      {
+        "id": "5058",
+        "mastery_level": "5"
+      },
+      {
+        "id": "7058",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6055",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5268": {
+    "id": "5268",
+    "name": "First Contact",
+    "commander": {
+        "id": "316"
+    },
+    "deck": [
+      {
+        "id": "1315"
+      },
+      {
+        "id": "1315"
+      },
+      {
+        "id": "1613"
+      },
+      {
+        "id": "1613"
+      },
+      {
+        "id": "7017"
+      },
+      {
+        "id": "7017"
+      },
+      {
+        "id": "2045"
+      },
+      {
+        "id": "6042"
+      },
+      {
+        "id": "1613",
+        "mastery_level": "2"
+      },
+      {
+        "id": "5053",
+        "mastery_level": "2"
+      },
+      {
+        "id": "1617",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2020",
+        "mastery_level": "4"
+      },
+      {
+        "id": "7021",
+        "mastery_level": "5"
+      },
+      {
+        "id": "5059",
+        "mastery_level": "6"
+      },
+      {
+        "id": "5032",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5269": {
+    "id": "5269",
+    "name": "Shelter for the Wounded",
+    "commander": {
+        "id": "317"
+    },
+    "deck": [
+      {
+        "id": "1319"
+      },
+      {
+        "id": "1319"
+      },
+      {
+        "id": "6006"
+      },
+      {
+        "id": "6006"
+      },
+      {
+        "id": "7006"
+      },
+      {
+        "id": "7006"
+      },
+      {
+        "id": "7006"
+      },
+      {
+        "id": "1331"
+      },
+      {
+        "id": "7006",
+        "mastery_level": "2"
+      },
+      {
+        "id": "1331",
+        "mastery_level": "2"
+      },
+      {
+        "id": "1315",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2012",
+        "mastery_level": "4"
+      },
+      {
+        "id": "1332",
+        "mastery_level": "5"
+      },
+      {
+        "id": "6035",
+        "mastery_level": "6"
+      },
+      {
+        "id": "5037",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5270": {
+    "id": "5270",
+    "name": "To the Inferno",
+    "commander": {
+        "id": "304"
+    },
+    "deck": [
+      {
+        "id": "1017"
+      },
+      {
+        "id": "1017"
+      },
+      {
+        "id": "5012"
+      },
+      {
+        "id": "5012"
+      },
+      {
+        "id": "6007"
+      },
+      {
+        "id": "6007"
+      },
+      {
+        "id": "5030"
+      },
+      {
+        "id": "5028"
+      },
+      {
+        "id": "1614",
+        "mastery_level": "2"
+      },
+      {
+        "id": "7024",
+        "mastery_level": "2"
+      },
+      {
+        "id": "6007",
+        "mastery_level": "3"
+      },
+      {
+        "id": "6054",
+        "mastery_level": "4"
+      },
+      {
+        "id": "6011",
+        "mastery_level": "5"
+      },
+      {
+        "id": "5031",
+        "mastery_level": "6"
+      },
+      {
+        "id": "5047",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5271": {
+    "id": "5271",
+    "name": "Teamwork",
+    "commander": {
+        "id": "316"
+    },
+    "deck": [
+      {
+        "id": "1014"
+      },
+      {
+        "id": "1014"
+      },
+      {
+        "id": "6022"
+      },
+      {
+        "id": "6022"
+      },
+      {
+        "id": "1613"
+      },
+      {
+        "id": "1613"
+      },
+      {
+        "id": "5060"
+      },
+      {
+        "id": "5053"
+      },
+      {
+        "id": "1011",
+        "mastery_level": "2"
+      },
+      {
+        "id": "1328",
+        "mastery_level": "2"
+      },
+      {
+        "id": "1613",
+        "mastery_level": "3"
+      },
+      {
+        "id": "5015",
+        "mastery_level": "4"
+      },
+      {
+        "id": "5041",
+        "mastery_level": "5"
+      },
+      {
+        "id": "5027",
+        "mastery_level": "6"
+      },
+      {
+        "id": "5018",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5272": {
+    "id": "5272",
+    "name": "Fire Extinguisher",
+    "commander": {
+        "id": "319"
+    },
+    "deck": [
+      {
+        "id": "1015"
+      },
+      {
+        "id": "1015"
+      },
+      {
+        "id": "1616"
+      },
+      {
+        "id": "1616"
+      },
+      {
+        "id": "1618"
+      },
+      {
+        "id": "1618"
+      },
+      {
+        "id": "1618"
+      },
+      {
+        "id": "7016"
+      },
+      {
+        "id": "1617",
+        "mastery_level": "2"
+      },
+      {
+        "id": "6020",
+        "mastery_level": "2"
+      },
+      {
+        "id": "5006",
+        "mastery_level": "3"
+      },
+      {
+        "id": "6051",
+        "mastery_level": "4"
+      },
+      {
+        "id": "7053",
+        "mastery_level": "5"
+      },
+      {
+        "id": "7018",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6060",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5273": {
+    "id": "5273",
+    "name": "Calm after the Storm",
+    "commander": {
+        "id": "317"
+    },
+    "deck": [
+      {
+        "id": "6006"
+      },
+      {
+        "id": "1319"
+      },
+      {
+        "id": "1319"
+      },
+      {
+        "id": "1313"
+      },
+      {
+        "id": "1313"
+      },
+      {
+        "id": "1313"
+      },
+      {
+        "id": "5062"
+      },
+      {
+        "id": "5053"
+      },
+      {
+        "id": "1613",
+        "mastery_level": "2"
+      },
+      {
+        "id": "1028",
+        "mastery_level": "2"
+      },
+      {
+        "id": "7006",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2045",
+        "mastery_level": "4"
+      },
+      {
+        "id": "5060",
+        "mastery_level": "5"
+      },
+      {
+        "id": "5059",
+        "mastery_level": "6"
+      },
+      {
+        "id": "7049",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5274": {
+    "id": "5274",
+    "name": "Damage Done",
+    "commander": {
+        "id": "319"
+    },
+    "deck": [
+      {
+        "id": "7057"
+      },
+      {
+        "id": "7055"
+      },
+      {
+        "id": "1018"
+      },
+      {
+        "id": "1018"
+      },
+      {
+        "id": "1312"
+      },
+      {
+        "id": "1312"
+      },
+      {
+        "id": "1319"
+      },
+      {
+        "id": "1319"
+      },
+      {
+        "id": "1613",
+        "mastery_level": "2"
+      },
+      {
+        "id": "7055",
+        "mastery_level": "3"
+      },
+      {
+        "id": "1018",
+        "mastery_level": "4"
+      },
+      {
+        "id": "2023",
+        "mastery_level": "5"
+      },
+      {
+        "id": "7058",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6060",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5275": {
+    "id": "5275",
+    "name": "Surprise Party",
+    "commander": {
+        "id": "321"
+    },
+    "deck": [
+      {
+        "id": "1318"
+      },
+      {
+        "id": "1318"
+      },
+      {
+        "id": "5007"
+      },
+      {
+        "id": "5007"
+      },
+      {
+        "id": "7006"
+      },
+      {
+        "id": "2042"
+      },
+      {
+        "id": "6061"
+      },
+      {
+        "id": "2031"
+      },
+      {
+        "id": "1311",
+        "mastery_level": "2"
+      },
+      {
+        "id": "6015",
+        "mastery_level": "3"
+      },
+      {
+        "id": "5017",
+        "mastery_level": "4"
+      },
+      {
+        "id": "1325",
+        "mastery_level": "5"
+      },
+      {
+        "id": "7046",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6040",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5276": {
+    "id": "5276",
+    "name": "Bombardiers Ahoy",
+    "commander": {
+        "id": "318"
+    },
+    "deck": [
+      {
+        "id": "6025"
+      },
+      {
+        "id": "6025"
+      },
+      {
+        "id": "2033"
+      },
+      {
+        "id": "2046"
+      },
+      {
+        "id": "1313"
+      },
+      {
+        "id": "1313"
+      },
+      {
+        "id": "1314"
+      },
+      {
+        "id": "6012"
+      },
+      {
+        "id": "6012"
+      },
+      {
+        "id": "6061",
+        "mastery_level": "2"
+      },
+      {
+        "id": "1613",
+        "mastery_level": "2"
+      },
+      {
+        "id": "5025",
+        "mastery_level": "3"
+      },
+      {
+        "id": "6006",
+        "mastery_level": "4"
+      },
+      {
+        "id": "2044",
+        "mastery_level": "5"
+      },
+      {
+        "id": "6057",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6058",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5277": {
+    "id": "5277",
+    "name": "Citizen Defense",
+    "commander": {
+        "id": "320"
+    },
+    "deck": [
+      {
+        "id": "7035"
+      },
+      {
+        "id": "7020"
+      },
+      {
+        "id": "7022"
+      },
+      {
+        "id": "7022"
+      },
+      {
+        "id": "6012"
+      },
+      {
+        "id": "6012"
+      },
+      {
+        "id": "5006"
+      },
+      {
+        "id": "5006"
+      },
+      {
+        "id": "2019",
+        "mastery_level": "2"
+      },
+      {
+        "id": "2012",
+        "mastery_level": "3"
+      },
+      {
+        "id": "6022",
+        "mastery_level": "4"
+      },
+      {
+        "id": "7061",
+        "mastery_level": "5"
+      },
+      {
+        "id": "2022",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6033",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5278": {
+    "id": "5278",
+    "name": "Goblin Behind the Curtain",
+    "commander": {
+        "id": "321"
+    },
+    "deck": [
+      {
+        "id": "1617"
+      },
+      {
+        "id": "1617"
+      },
+      {
+        "id": "5006"
+      },
+      {
+        "id": "5006"
+      },
+      {
+        "id": "1017"
+      },
+      {
+        "id": "1017"
+      },
+      {
+        "id": "7021"
+      },
+      {
+        "id": "2009"
+      },
+      {
+        "id": "7034",
+        "mastery_level": "2"
+      },
+      {
+        "id": "6031",
+        "mastery_level": "3"
+      },
+      {
+        "id": "6006",
+        "mastery_level": "4"
+      },
+      {
+        "id": "7020",
+        "mastery_level": "5"
+      },
+      {
+        "id": "7059",
+        "mastery_level": "6"
+      },
+      {
+        "id": "7060",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5279": {
+    "id": "5279",
+    "name": "Search and Destroy",
+    "commander": {
+        "id": "318"
+    },
+    "deck": [
+      {
+        "id": "1019"
+      },
+      {
+        "id": "1019"
+      },
+      {
+        "id": "5012"
+      },
+      {
+        "id": "5012"
+      },
+      {
+        "id": "1018"
+      },
+      {
+        "id": "2004"
+      },
+      {
+        "id": "5035"
+      },
+      {
+        "id": "5021"
+      },
+      {
+        "id": "1017",
+        "mastery_level": "2"
+      },
+      {
+        "id": "5060",
+        "mastery_level": "3"
+      },
+      {
+        "id": "1619",
+        "mastery_level": "4"
+      },
+      {
+        "id": "6061",
+        "mastery_level": "5"
+      },
+      {
+        "id": "5031",
+        "mastery_level": "6"
+      },
+      {
+        "id": "5019",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5280": {
+    "id": "5280",
+    "name": "On the Hunt",
+    "commander": {
+        "id": "321"
+    },
+    "deck": [
+      {
+        "id": "1012"
+      },
+      {
+        "id": "1012"
+      },
+      {
+        "id": "1012"
+      },
+      {
+        "id": "1017"
+      },
+      {
+        "id": "1017"
+      },
+      {
+        "id": "2009"
+      },
+      {
+        "id": "2042"
+      },
+      {
+        "id": "7015"
+      },
+      {
+        "id": "7021",
+        "mastery_level": "2"
+      },
+      {
+        "id": "7047",
+        "mastery_level": "3"
+      },
+      {
+        "id": "1614",
+        "mastery_level": "4"
+      },
+      {
+        "id": "7004",
+        "mastery_level": "5"
+      },
+      {
+        "id": "6041",
+        "mastery_level": "6"
+      },
+      {
+        "id": "7044",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5281": {
+    "id": "5281",
+    "name": "Bunch of Bullies",
+    "commander": {
+        "id": "318"
+    },
+    "deck": [
+      {
+        "id": "1315"
+      },
+      {
+        "id": "1315"
+      },
+      {
+        "id": "1315"
+      },
+      {
+        "id": "1014"
+      },
+      {
+        "id": "1014"
+      },
+      {
+        "id": "6050"
+      },
+      {
+        "id": "2027"
+      },
+      {
+        "id": "2027"
+      },
+      {
+        "id": "6061",
+        "mastery_level": "2"
+      },
+      {
+        "id": "6056",
+        "mastery_level": "2"
+      },
+      {
+        "id": "2032",
+        "mastery_level": "3"
+      },
+      {
+        "id": "1613",
+        "mastery_level": "4"
+      },
+      {
+        "id": "7038",
+        "mastery_level": "5"
+      },
+      {
+        "id": "5043",
+        "mastery_level": "6"
+      },
+      {
+        "id": "1042",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5282": {
+    "id": "5282",
+    "name": "To the Rescue",
+    "commander": {
+        "id": "319"
+    },
+    "deck": [
+      {
+        "id": "5016"
+      },
+      {
+        "id": "5041"
+      },
+      {
+        "id": "7006"
+      },
+      {
+        "id": "7006"
+      },
+      {
+        "id": "1018"
+      },
+      {
+        "id": "1018"
+      },
+      {
+        "id": "6034"
+      },
+      {
+        "id": "2023"
+      },
+      {
+        "id": "2029",
+        "mastery_level": "2"
+      },
+      {
+        "id": "1014",
+        "mastery_level": "2"
+      },
+      {
+        "id": "5040",
+        "mastery_level": "3"
+      },
+      {
+        "id": "1014",
+        "mastery_level": "4"
+      },
+      {
+        "id": "6038",
+        "mastery_level": "5"
+      },
+      {
+        "id": "5018",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6039",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5283": {
+    "id": "5283",
+    "name": "Power Down",
+    "commander": {
+        "id": "320"
+    },
+    "deck": [
+      {
+        "id": "1332"
+      },
+      {
+        "id": "7055"
+      },
+      {
+        "id": "6044"
+      },
+      {
+        "id": "1018"
+      },
+      {
+        "id": "1018"
+      },
+      {
+        "id": "6012"
+      },
+      {
+        "id": "6012"
+      },
+      {
+        "id": "6012"
+      },
+      {
+        "id": "2030",
+        "mastery_level": "2"
+      },
+      {
+        "id": "7057",
+        "mastery_level": "3"
+      },
+      {
+        "id": "1319",
+        "mastery_level": "4"
+      },
+      {
+        "id": "6054",
+        "mastery_level": "5"
+      },
+      {
+        "id": "5047",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6028",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5284": {
+    "id": "5284",
+    "name": "Sneaky Sneaks",
+    "commander": {
+        "id": "320"
+    },
+    "deck": [
+      {
+        "id": "2009"
+      },
+      {
+        "id": "2008"
+      },
+      {
+        "id": "6051"
+      },
+      {
+        "id": "7017"
+      },
+      {
+        "id": "7017"
+      },
+      {
+        "id": "5007"
+      },
+      {
+        "id": "5007"
+      },
+      {
+        "id": "5007"
+      },
+      {
+        "id": "6046",
+        "mastery_level": "2"
+      },
+      {
+        "id": "7024",
+        "mastery_level": "3"
+      },
+      {
+        "id": "6022",
+        "mastery_level": "4"
+      },
+      {
+        "id": "1032",
+        "mastery_level": "5"
+      },
+      {
+        "id": "7013",
+        "mastery_level": "6"
+      },
+      {
+        "id": "1342",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5285": {
+    "id": "5285",
+    "name": "Artifact Located",
+    "commander": {
+        "id": "319"
+    },
+    "deck": [
+      {
+        "id": "7051"
+      },
+      {
+        "id": "2045"
+      },
+      {
+        "id": "7053"
+      },
+      {
+        "id": "6034"
+      },
+      {
+        "id": "1610"
+      },
+      {
+        "id": "1610"
+      },
+      {
+        "id": "1315"
+      },
+      {
+        "id": "1315"
+      },
+      {
+        "id": "1613",
+        "mastery_level": "2"
+      },
+      {
+        "id": "2023",
+        "mastery_level": "3"
+      },
+      {
+        "id": "1312",
+        "mastery_level": "4"
+      },
+      {
+        "id": "6015",
+        "mastery_level": "5"
+      },
+      {
+        "id": "6057",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6060",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5286": {
+    "id": "5286",
+    "name": "Pass Off",
+    "commander": {
+        "id": "321"
+    },
+    "deck": [
+      {
+        "id": "1313"
+      },
+      {
+        "id": "6017"
+      },
+      {
+        "id": "6011"
+      },
+      {
+        "id": "2046"
+      },
+      {
+        "id": "2046"
+      },
+      {
+        "id": "7017"
+      },
+      {
+        "id": "7017"
+      },
+      {
+        "id": "1325"
+      },
+      {
+        "id": "7021",
+        "mastery_level": "2"
+      },
+      {
+        "id": "5053",
+        "mastery_level": "2"
+      },
+      {
+        "id": "6056",
+        "mastery_level": "3"
+      },
+      {
+        "id": "1010",
+        "mastery_level": "4"
+      },
+      {
+        "id": "7021",
+        "mastery_level": "5"
+      },
+      {
+        "id": "5013",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6053",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5287": {
+    "id": "5287",
+    "name": "Victorious Retreat",
+    "commander": {
+        "id": "322"
+    },
+    "deck": [
+      {
+        "id": "5062"
+      },
+      {
+        "id": "6042"
+      },
+      {
+        "id": "6031"
+      },
+      {
+        "id": "1315"
+      },
+      {
+        "id": "1315"
+      },
+      {
+        "id": "1613"
+      },
+      {
+        "id": "1613"
+      },
+      {
+        "id": "1613"
+      },
+      {
+        "id": "2031",
+        "mastery_level": "2"
+      },
+      {
+        "id": "2024",
+        "mastery_level": "2"
+      },
+      {
+        "id": "5053",
+        "mastery_level": "3"
+      },
+      {
+        "id": "1318",
+        "mastery_level": "4"
+      },
+      {
+        "id": "1330",
+        "mastery_level": "5"
+      },
+      {
+        "id": "6033",
+        "mastery_level": "6"
+      },
+      {
+        "id": "5059",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5288": {
+    "id": "5288",
+    "name": "Not So Fast",
+    "commander": {
+        "id": "320"
+    },
+    "deck": [
+      {
+        "id": "6025"
+      },
+      {
+        "id": "2044"
+      },
+      {
+        "id": "7061"
+      },
+      {
+        "id": "2003"
+      },
+      {
+        "id": "1610"
+      },
+      {
+        "id": "1610"
+      },
+      {
+        "id": "1610"
+      },
+      {
+        "id": "7012"
+      },
+      {
+        "id": "7047",
+        "mastery_level": "2"
+      },
+      {
+        "id": "5025",
+        "mastery_level": "2"
+      },
+      {
+        "id": "7061",
+        "mastery_level": "3"
+      },
+      {
+        "id": "7035",
+        "mastery_level": "4"
+      },
+      {
+        "id": "2031",
+        "mastery_level": "5"
+      },
+      {
+        "id": "7048",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6058",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5289": {
+    "id": "5289",
+    "name": "Puddin Pops",
+    "commander": {
+        "id": "322"
+    },
+    "deck": [
+      {
+        "id": "1012"
+      },
+      {
+        "id": "1012"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "2032"
+      },
+      {
+        "id": "2033"
+      },
+      {
+        "id": "7004"
+      },
+      {
+        "id": "2045"
+      },
+      {
+        "id": "2004",
+        "mastery_level": "2"
+      },
+      {
+        "id": "1631",
+        "mastery_level": "2"
+      },
+      {
+        "id": "6042",
+        "mastery_level": "3"
+      },
+      {
+        "id": "8018",
+        "mastery_level": "4"
+      },
+      {
+        "id": "6057",
+        "mastery_level": "5"
+      },
+      {
+        "id": "5061",
+        "mastery_level": "6"
+      },
+      {
+        "id": "7039",
         "mastery_level": "7"
       },
     ]
