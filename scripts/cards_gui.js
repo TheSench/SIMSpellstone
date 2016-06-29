@@ -57,7 +57,7 @@ var CARD_GUI = {};
         return $cardSpace;
     }
 
-
+    
     function draw_inventory(list) {
         var cards = make_card_list(list);
         var $cardSpace = $("#deck");
@@ -65,7 +65,18 @@ var CARD_GUI = {};
         $cardSpace.append(cards);
         return $cardSpace;
     }
-
+    
+    function draw_inventory(deck)
+    {
+        var cards = make_card_list(deck.deck);
+        var $cardSpace = $("#deck");
+        $cardSpace.children().remove();
+        $cardSpace.append(make_card_list([deck.commander]));
+        //$deck.find(".card").hide();
+        $cardSpace.append(cards);
+        return $cardSpace;
+    }
+    
     function make_card_list(list, compactSkills, onclick, onrightclick, skip, end) {
         skip = skip || 0;
         var htmlCard;
@@ -178,7 +189,7 @@ var CARD_GUI = {};
         for (var i = 0, len = runes.length; i < len; i++) {
             var runeID = runes[i].id;
             runeIDs.push(runes[i].id);
-            var rune = RUNES[runeID];
+            var rune = getRune(runeID);
             for (var key in rune.stat_boost) {
                 if (key == "skill") {
                     key = rune.stat_boost.skill.id;
@@ -254,8 +265,8 @@ var CARD_GUI = {};
         var divSkills = createDiv("card-skills");
         var skillsShort = createDiv("card-skills-short");
         getPassiveSkills(divSkills, skillsShort, card, onField, boosts);
-        if (card.empowerSkills) getSkillsHtml(divSkills, skillsShort, card.empowerSkills, onField);
-        getSkillsHtml(divSkills, skillsShort, card.skill, onField);
+        if (card.empowerSkills) getSkillsHtml(card, divSkills, skillsShort, card.empowerSkills, onField);
+        getSkillsHtml(card, divSkills, skillsShort, card.skill, onField);
         getTriggeredSkills(divSkills, skillsShort, card, onField, boosts);
         var skillsDetail = divSkills.cloneNode(true);
         skillsDetail.className = "card-skills-detailed";
@@ -329,10 +340,10 @@ var CARD_GUI = {};
         return htmlCard;
     }
 
-    function getSkillsHtml(divSkills, skillsShort, skills, onField) {
+    function getSkillsHtml(card, divSkills, skillsShort, skills, onField) {
         for (var i = 0; i < skills.length; i++) {
             var skill = skills[i];
-            divSkills.appendChild(getSkillHtml(skill, onField));
+            divSkills.appendChild(getSkillHtml(card, skill, onField));
             divSkills.appendChild(document.createElement('br'));
             skillsShort.appendChild(getSkillIcon(skill.id));
         }
@@ -357,7 +368,7 @@ var CARD_GUI = {};
         getNonActivatedSkill(divSkills, skillsShort, onField, card, "berserk", boosts);
         var flurry = card.flurry;
         if (flurry) {
-            divSkills.appendChild(getSkillHtml(flurry, onField));
+            divSkills.appendChild(getSkillHtml(card, flurry, onField));
             divSkills.appendChild(document.createElement('br'));
             skillsShort.appendChild(getSkillIcon(flurry.id));
         }
@@ -371,23 +382,25 @@ var CARD_GUI = {};
                 x: value,
                 boosted: boosts[skillName]
             };
-            divSkills.appendChild(getSkillHtml(skill, onField));
+            divSkills.appendChild(getSkillHtml(card, skill, onField));
             divSkills.appendChild(document.createElement('br'));
             skillsShort.appendChild(getSkillIcon(skill.id));
         }
     }
 
-    function getSkillHtml(skill, onField) {
+    function getSkillHtml(card, skill, onField) {
         var htmlSkill = document.createElement("span");
         htmlSkill.className = "skill";
         htmlSkill.appendChild(getSkillIcon(skill.id));
-        if (skill.boosted) {
+        var enhancement = getEnhancement(card, skill.id);
+        if (skill.boosted || enhancement) {
             htmlSkill.classList.add("increased");
         }
         if (skill.all) htmlSkill.innerHTML += (" All ");
         if (skill.y) htmlSkill.appendChild(getFactionIcon(skill.y));
         if (skill.s) htmlSkill.appendChild(getSkillIcon(skill.s));
-        if (skill.x) htmlSkill.innerHTML += (" " + skill.x + " ");
+        var x = (skill.x | 0) + enhancement;
+        if (x) htmlSkill.innerHTML += (" " + x + " ");
         if (skill.c) {
             htmlSkill.innerHTML += (skill.c);
             if (onField) htmlSkill.innerHTML += " (" + (skill.countdown ? skill.countdown : "0") + ")";

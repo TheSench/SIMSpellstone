@@ -654,6 +654,13 @@ var makeUnit = (function () {
     });
 }());
 
+
+var getEnhancement = function (card, s)
+{
+    var enhancements = card.enhanced;
+    return (enhancements ? (enhancements[s] || 0) : 0);
+};
+
 var addRunes = function (card, runes) {
     if (!card.runes) card.runes = [];
     for (var i = 0, len = runes.length; i < len; i++) {

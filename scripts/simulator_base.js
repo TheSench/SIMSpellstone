@@ -89,12 +89,8 @@ var SIMULATOR = {};
         }
     };
 
-    function getEnhancement(card, s) {
-        var enhancements = card.enhanced;
-        return (enhancements ? (enhancements[s] || 0) : 0);
-    };
 
-    function iceshatter(src_card) {
+     function iceshatter(src_card) {
         // Bug 27391 - If Barrier is partially reduced before being completely depleted, Iceshatter still deals full damage
         var amount = src_card.barrier_ice;
         //if (amount > src_card.barrier_ice) amount = src_card.barrier_ice;
