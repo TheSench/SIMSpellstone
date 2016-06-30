@@ -5,27 +5,28 @@
 		Use IDs 101+
 	-->
   <!--
-	displayEffect example setup 
-	<skill id='displayEffect' trigger='onSkill' s='strike' >
-		<actor_effect>
-			<prefab>void_aura</prefab>
-			<duration>3</duration>
-			<delay>2</delay>
-		</actor_effect>
-		<projectile_effect>
-			<prefab>PoisonProjectile</prefab>
-			<delay>.5</delay>
-			<duration>.5</duration>
-			<sound>scrape</sound>
-			<offset>2</offset>    	0=Center, 1=Health, 2=Attack, 3=skills
-		</projectile_effect>
-		<target_effect>
-			<prefab>corrosion</prefab>
-			<delay>1</delay>
-			<duration>1</duration>
-			<shake>true</shake>
-		</target_effect>
-	</skill>
+		displayEffect example setup 
+		
+		<skill id='displayEffect' trigger='onSkill' s='strike' >
+			<actor_effect>
+				<prefab>void_aura</prefab>
+				<duration>3</duration>
+				<delay>2</delay>
+			</actor_effect>
+			<projectile_effect>
+				<prefab>PoisonProjectile</prefab>
+				<delay>.5</delay>
+				<duration>.5</duration>
+				<sound>scrape</sound>
+				<offset>2</offset>    	0=Center, 1=Health, 2=Attack, 3=skills
+			</projectile_effect>
+			<target_effect>
+				<prefab>corrosion</prefab>
+				<delay>1</delay>
+				<duration>1</duration>
+				<shake>true</shake>
+			</target_effect>
+		</skill>
  	-->
   <!-- 101-500: World Event BGE -->
   <battleground>
@@ -150,6 +151,14 @@
     <icon>filter_insect_64.png</icon>
     <effect>
       <add_skill id="armored" mult="0.1" base="health" y="13" />
+      <skill id="displayEffect" trigger="onSkill" y="13" s="armored">
+        <actor_effect>
+          <prefab>insect_armor</prefab>
+          <bundle_id>64</bundle_id>
+          <duration>1</duration>
+          <delay>0</delay>
+        </actor_effect>
+      </skill>
     </effect>
   </battleground>
   <!-- 501-1000: Specialty BGE -->

@@ -7788,23 +7788,23 @@
     <name>Hope on the Horizon</name>
     <energy>11</energy>
     <desc>Dilbert makes it out of the entrance of Beeltleton Bunker. He searches frantically for anyone who may be able to help him. In the distance he spots an airship...</desc>
-    <commander id="317" />
+    <commander id="304" />
     <deck>
-      <card id="1010" name="Lightning Elemental" />
-      <card id="1010" />
-      <card id="5022" name="Webfoot Raider" />
-      <card id="1018" name="Armored Eagle" />
-      <card id="1018" />
-      <card id="1018" />
-      <card id="1018" />
-      <card id="7055" name="Valley Strider" />
-      <card id="1312" mastery_level="2" name="Scythe Demon" />
-      <card id="2046" mastery_level="2" name="Leaping Dragon" />
-      <card id="6012" mastery_level="3" name="Ember Drake" />
-      <card id="2040" mastery_level="4" name="Owlmancer" />
-      <card id="5058" mastery_level="5" name="Crescent Moon Owl" />
-      <card id="7058" mastery_level="6" name="Steppe Stalker" />
-      <card id="6055" mastery_level="7" name="Phoenix" />
+      <card id="1017" name="Judgment" />
+      <card id="1017" />
+      <card id="5012" name="Static Drake" />
+      <card id="5012" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6007" />
+      <card id="5030" name="Loxphas Mage" />
+      <card id="5028" name="Winter Blacksmith" />
+      <card id="1614" mastery_level="2" name="Druid" />
+      <card id="7024" mastery_level="2" name="Woolmane Dragon" />
+      <card id="6007" mastery_level="3" name="Goblin Crew" />
+      <card id="6054" mastery_level="4" name="Shadowcrafter" />
+      <card id="6011" mastery_level="5" name="Bomb Spirit" />
+      <card id="5031" mastery_level="6" name="Frostlance Valkyrie" />
+      <card id="5047" mastery_level="7" name="Sky Fisher" />
     </deck>
   </mission>
   <mission>
@@ -7875,12 +7875,12 @@
       <line>
         <commander>architectbug</commander>
         <enemy>0</enemy>
-        <text>Please help! I am from Beetle Bunker, but someone has set our town on fire! It must be fate that I have found you.</text>
+        <text>Please help! I am from Beetleton Bunker, but someone has set our town on fire! It must be fate that I have found you.</text>
       </line>
       <line>
         <commander>elementalhero</commander>
         <enemy>0</enemy>
-        <text>Considering some of my other companions, you might be right. Show us the way. We will do what we can.</text>
+        <text>Considering some of my other companions, I am not surprised by fires any longer. Show us the way. We will do what we can. </text>
       </line>
     </speech>
   </mission>
@@ -7889,23 +7889,23 @@
     <name>To the Inferno</name>
     <energy>11</energy>
     <desc>Dilbert leads the airship to the entrance of Beetleton Bunker. Aria and Rayne are overcome with the smoke billowing out of the entrance. They make their descent with caution.</desc>
-    <commander id="304" />
+    <commander id="317" />
     <deck>
-      <card id="1017" name="Judgment" />
-      <card id="1017" />
-      <card id="5012" name="Static Drake" />
-      <card id="5012" />
-      <card id="6007" name="Goblin Crew" />
-      <card id="6007" />
-      <card id="5030" name="Loxphas Mage" />
-      <card id="5028" name="Winter Blacksmith" />
-      <card id="1614" mastery_level="2" name="Druid" />
-      <card id="7024" mastery_level="2" name="Woolmane Dragon" />
-      <card id="6007" mastery_level="3" name="Goblin Crew" />
-      <card id="6054" mastery_level="4" name="Shadowcrafter" />
-      <card id="6011" mastery_level="5" name="Bomb Spirit" />
-      <card id="5031" mastery_level="6" name="Frostlance Valkyrie" />
-      <card id="5047" mastery_level="7" name="Sky Fisher" />
+      <card id="1010" name="Lightning Elemental" />
+      <card id="1010" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" />
+      <card id="1018" />
+      <card id="1018" />
+      <card id="7055" name="Valley Strider" />
+      <card id="1312" mastery_level="2" name="Scythe Demon" />
+      <card id="2046" mastery_level="2" name="Leaping Dragon" />
+      <card id="6012" mastery_level="3" name="Ember Drake" />
+      <card id="2040" mastery_level="4" name="Owlmancer" />
+      <card id="5058" mastery_level="5" name="Crescent Moon Owl" />
+      <card id="7058" mastery_level="6" name="Steppe Stalker" />
+      <card id="6055" mastery_level="7" name="Phoenix" />
     </deck>
   </mission>
   <mission>
@@ -7913,7 +7913,7 @@
     <name>Teamwork</name>
     <energy>11</energy>
     <desc>Beetleton is ablaze and the citizens are panicking. Immediately Rayne and Aria move to help. Rayne extinguishes the fire, while Aria helps the citizens reach safety.</desc>
-    <commander id="316" />
+    <commander id="314" />
     <deck>
       <card id="1014" name="Cherub" />
       <card id="1014" />
@@ -7935,12 +7935,12 @@
       <line>
         <commander>elementalhero</commander>
         <enemy>0</enemy>
-        <text>I think I can make quick work of this fire! How are the civilians?</text>
+        <text>I think I can make quick work of this fire! Aria, how are the civilians?</text>
       </line>
       <line>
         <commander>necromancer</commander>
         <enemy>0</enemy>
-        <text>Panicked! I'm working on getting these stragglers out of their hives!</text>
+        <text>Panicked, dismayed, confused, and generally annoying. I'm working on getting these stragglers out of their hives, but they are being stubborn.</text>
       </line>
     </speech>
   </mission>
@@ -8018,12 +8018,12 @@
       <line>
         <commander>architectbug</commander>
         <enemy>0</enemy>
-        <text>I can't thank you two enough for helping our city. I have built so much of this city myself. It's a sad sight to see how much damage was done. But at least it is still standing.</text>
+        <text>I can't thank you two enough for helping! I have built so much of this city myself. It's a sad sight to see how much damage was done. But at least it is still standing.</text>
       </line>
       <line>
         <commander>necromancer</commander>
         <enemy>0</enemy>
-        <text>Do you know how the fire started?</text>
+        <text>Do you know what caused the fires in the first place?</text>
       </line>
       <line>
         <commander>architectbug</commander>
@@ -8058,7 +8058,7 @@
       <line>
         <commander>necromancer</commander>
         <enemy>0</enemy>
-        <text>I think those reports might be right! Goblins are dropping in from the entrance!</text>
+        <text>Based on the goblins dropping in from the entrance above, I am going to file those reports under "confirmed".</text>
       </line>
       <line>
         <commander>elyse</commander>
@@ -8096,7 +8096,7 @@
     <id>5277</id>
     <name>Citizen Defense</name>
     <energy>11</energy>
-    <desc>The citizens flee, panicked as their homes are destroyed again. The militia of Beetleton Bunker take flight against the dragon-riding goblins. Rayne and Aria focus on protecting the citizens!</desc>
+    <desc>The citizens flee, panicked as their homes are destroyed again. The militia of Beetleton Bunker take flight against the dragon-riding goblins. Rayne and Aria focus on protecting the citizens, much to Aria's dismay.</desc>
     <commander id="320" />
     <deck>
       <card id="7035" name="Carrion Tiger" />
@@ -8114,6 +8114,23 @@
       <card id="2022" mastery_level="6" name="Avalanche Equine" />
       <card id="6033" mastery_level="7" name="Firebeard" />
     </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>No matter what I do it seems like I always end up helping people. I need new friends.</text>
+      </line>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>1</enemy>
+        <text>I've seen you talk to that skeleton of yours, I think you have plenty of friends.</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Leave Ronaldo out of this!</text>
+      </line>
+    </speech>
   </mission>
   <mission>
     <id>5278</id>
@@ -8231,7 +8248,7 @@
     <id>5282</id>
     <name>To the Rescue</name>
     <energy>11</energy>
-    <desc>Aria and Rayne see that Dilbert is in trouble. With the amount of goblins swarming him Aria suspects the artifact is in his home. They rush to his aid!</desc>
+    <desc>Rayne see that Dilbert is in trouble. With the amount of goblins swarming him Aria suspects the artifact is in his home. They rush to his aid!</desc>
     <commander id="319" />
     <deck>
       <card id="5016" name="Fowl Swarm" />
@@ -8340,7 +8357,7 @@
       <line>
         <commander>necromancer</commander>
         <enemy>0</enemy>
-        <text>This must be why they attacked...</text>
+        <text>If you have mystical hammers made with magic powers, you should probably tell us that earlier. It's no wonder they attacked!</text>
       </line>
     </speech>
   </mission>
@@ -8400,7 +8417,7 @@
       <line>
         <commander>necromancer</commander>
         <enemy>0</enemy>
-        <text>You destroyed a whole town for a hammer, and you think we are just going to let you get away?</text>
+        <text>You destroyed a whole town for a hammer, messed up my weekend plans, and you think we are just going to let you get away?</text>
       </line>
       <line>
         <commander>oda</commander>
@@ -8460,12 +8477,17 @@
       <line>
         <commander>necromancer</commander>
         <enemy>0</enemy>
-        <text> Did  he just call me 'puddin' ?! That's it, I'm going to bury this little scamp!</text>
+        <text> Did... did he just call me 'puddin' ?! That's it. Everyone burns!!!</text>
       </line>
       <line>
         <commander>architectbug</commander>
         <enemy>0</enemy>
         <text>Be careful! We mustn't harm the hammer!</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Forget the hammer! I'm taking this goblin DOWN!</text>
       </line>
     </speech>
   </mission>
