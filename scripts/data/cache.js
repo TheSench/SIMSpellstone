@@ -16602,7 +16602,7 @@ var CARDS = {
   "2051": {
     "id": "2051",
     "name": "Dune Hopper",
-    "picture": "NotFound",
+    "picture": "Legendary_Savanna_Crusher_A",
     "rarity": "4",
     "set": "2000",
     "card_type": "2",
@@ -16677,7 +16677,7 @@ var CARDS = {
   "12051": {
     "id": "12051",
     "name": "Dune Leaper",
-    "picture": "NotFound",
+    "picture": "Legendary_Savanna_Crusher_A",
     "rarity": "4",
     "set": "2000",
     "card_type": "2",
@@ -16752,7 +16752,7 @@ var CARDS = {
   "22051": {
     "id": "22051",
     "name": "Dune Slammer",
-    "picture": "NotFound",
+    "picture": "Legendary_Savanna_Crusher_B",
     "rarity": "4",
     "set": "2000",
     "card_type": "2",
@@ -87688,7 +87688,7 @@ var CARDS = {
   "9971": {
     "id": "9971",
     "name": "",
-    "picture": "Savanna_Crusher_A",
+    "picture": "Seraph_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -87701,7 +87701,7 @@ var CARDS = {
   "19970": {
     "id": "19970",
     "name": "",
-    "picture": "Savanna_Crusher_B",
+    "picture": "Seraph_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -87714,7 +87714,7 @@ var CARDS = {
   "9969": {
     "id": "9969",
     "name": "",
-    "picture": "Seraph_A",
+    "picture": "Tarian_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -87724,10 +87724,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19968": {
-    "id": "19968",
+  "9968": {
+    "id": "9968",
     "name": "",
-    "picture": "Seraph_B",
+    "picture": "Tremor_Wurm_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -87740,7 +87740,7 @@ var CARDS = {
   "9967": {
     "id": "9967",
     "name": "",
-    "picture": "Tarian_A",
+    "picture": "Unused1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -87753,7 +87753,7 @@ var CARDS = {
   "9966": {
     "id": "9966",
     "name": "",
-    "picture": "Tremor_Wurm_A",
+    "picture": "Unused2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -87766,7 +87766,7 @@ var CARDS = {
   "9965": {
     "id": "9965",
     "name": "",
-    "picture": "Unused1_A",
+    "picture": "Unused3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -87779,7 +87779,7 @@ var CARDS = {
   "9964": {
     "id": "9964",
     "name": "",
-    "picture": "Unused2_A",
+    "picture": "Ursurio_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -87792,7 +87792,7 @@ var CARDS = {
   "9963": {
     "id": "9963",
     "name": "",
-    "picture": "Unused3_A",
+    "picture": "Void_Abomination_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -87804,32 +87804,6 @@ var CARDS = {
   },
   "9962": {
     "id": "9962",
-    "name": "",
-    "picture": "Ursurio_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9961": {
-    "id": "9961",
-    "name": "",
-    "picture": "Void_Abomination_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9960": {
-    "id": "9960",
     "name": "",
     "picture": "Yuriel_A",
     "rarity": "0",
@@ -115130,6 +115104,7 @@ var FUSIONS = {
   "16060" : "26060",
   "16061" : "26061",
   "16062" : "26062",
+  "16063" : "26063",
   "16064" : "26064",
   "16066" : "26066",
   "1607" : "11607",
@@ -115415,6 +115390,7 @@ var FUSIONS = {
   "6060" : "16060",
   "6061" : "16061",
   "6062" : "16062",
+  "6063" : "16063",
   "6064" : "16064",
   "6066" : "16066",
   "7000" : "17000",
