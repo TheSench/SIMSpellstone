@@ -1577,20 +1577,20 @@
     <resource card_id="15065" number="2" />
   </fusion_recipe>
   <fusion_recipe>
-    <card_id>15070</card_id>
-    <resource card_id="5070" number="2" />
-  </fusion_recipe>
-  <fusion_recipe>
-    <card_id>25070</card_id>
-    <resource card_id="15070" number="2" />
-  </fusion_recipe>
-  <fusion_recipe>
     <card_id>15066</card_id>
     <resource card_id="5066" number="2" />
   </fusion_recipe>
   <fusion_recipe>
     <card_id>25066</card_id>
     <resource card_id="15066" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15070</card_id>
+    <resource card_id="5070" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25070</card_id>
+    <resource card_id="15070" number="2" />
   </fusion_recipe>
   <!-- CHAOS PREMIUM SET BEGIN -->
   <fusion_recipe>

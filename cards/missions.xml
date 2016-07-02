@@ -4200,7 +4200,7 @@
     <id>353</id>
     <name>One with the Force</name>
     <energy>8</energy>
-    <desc>The monk takes a moment to asses Oda's aura. He can tell Oda is a powerful wielder of magical abilities.</desc>
+    <desc>The monk takes a moment to assess Oda's aura. He can tell Oda is a powerful wielder of magical abilities.</desc>
     <commander id="300" />
     <deck>
       <card id="7012" name="Life Drake" />

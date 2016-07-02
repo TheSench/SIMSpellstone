@@ -8248,7 +8248,7 @@
     <id>5282</id>
     <name>To the Rescue</name>
     <energy>11</energy>
-    <desc>Rayne see that Dilbert is in trouble. With the amount of goblins swarming him Aria suspects the artifact is in his home. They rush to his aid!</desc>
+    <desc>Rayne see that Dilbert is in trouble. With the amount of goblins swarming him, Aria suspects the artifact is in his home. They rush to his aid!</desc>
     <commander id="319" />
     <deck>
       <card id="5016" name="Fowl Swarm" />
