@@ -29,10 +29,10 @@
     <script id="shared_functions" type="text/javascript" src="scripts/shared.js"></script>
     <script id="updateCards" type="text/javascript" src="scripts/updateCards.js"></script>
     <script id="common_variables" type="text/javascript" src="scripts/common.js"></script>
-    <script id="gui_script" type="text/javascript" src="scripts/cards_gui.js"></script>
+    <script id="cards_gui" type="text/javascript" src="scripts/cards_gui.js"></script>
     <script id="deckbuilder" type="text/javascript" src="scripts/deckbuilder.js"></script>
     <script id="deckstorage" type="text/javascript" src="scripts/localstorage-controller.js"></script>
-    <script src="scripts/ng-card-details-controller.js"></script>
+    <script id="angular_controller" src="scripts/ng-card-details-controller.js"></script>
     <script id="spoilers" type="text/javascript" src="scripts/data/spoilers.js"></script>
 
 </head>
@@ -48,8 +48,8 @@
                 <div>
                     <div class="highlighter" id="hash_highlighter"></div>
                     <input class="highlighted" id="hash" type="text" value="" size="100" onchange="hash_changed();" onpaste="hash_changed.debounce(100)();" />
-                </div><br />
-                <br />
+                </div>
+                <div style="margin:10px 0 10px 0"><a id="link" href="#"></a>&nbsp;</div>
                 <input id="resetDeck" type="button" value="Reset" onclick="resetDeck()" />
                 <input id="sortDeck" type="button" value="Sort" onclick="sortDeck()" />
                 <input id="saveDeck" type="button" value="Save" onclick="saveDeck()" />

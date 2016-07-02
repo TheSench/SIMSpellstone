@@ -7,7 +7,7 @@ var deck = [];
 deck.commander = elariaCaptain;
 deck.deck = [];
 var inventory;
-var inventoryMode = _DEFINED("unlimited");
+var inventoryMode = false;
 
 // Filters
 var attackHidden = {};
@@ -107,12 +107,20 @@ var initDeckBuilder = function ()
             updateHighlights();
         }
     });
+    
+    inventory = _GET('inventory');
 
     setTimeout(function ()
     {
         drawAllCards();
         $("body").removeClass("loading");
     }, 1);
+
+    if (_DEFINED("unlimited"))
+    {
+        $deck = $("#deck");
+        toggleInventoryMode();
+    }
 }
 
 var adjustHeight = function ()
@@ -291,7 +299,6 @@ var setupPopups = function ()
 
 var drawAllCards = function ()
 {
-    var inventory = _GET('inventory');
     drawCardList();
     drawDeck();
 }
@@ -644,7 +651,6 @@ var resetDeck = function ()
 var disableTracking = false;
 var hash_changed = function (hash)
 {
-
     if (fromInventory)
     {
         if (!areEqual(deck.commander, elariaCaptain)) unitsShown.push(deck.commander);
@@ -652,7 +658,7 @@ var hash_changed = function (hash)
         redrawCardList(true);
     }
     if (hash === undefined) hash = document.getElementById("hash").value.trim();
-    document.getElementById("hash").value = hash;
+    setHash(hash);
 
     updateSimulator(hash);
 
@@ -671,6 +677,13 @@ var hash_changed = function (hash)
     }
 
     doDrawDeck();
+
+    generateLink();
+}
+
+var setHash = function (hash) {
+    $("#hash").val(hash);
+    generateLink();
 }
 
 var sortDeck = function ()
@@ -843,7 +856,7 @@ function updateHighlights()
 var updateHash = function ()
 {
     var deckHash = hash_encode(deck);
-    document.getElementById("hash").value = deckHash;
+    setHash(deckHash);
 
     updateHighlights();
 
@@ -1067,7 +1080,7 @@ function undo()
 
         currentChange--;
         var hash = changeTracking[currentChange];
-        $hash.val(hash);
+        setHash(hash);
         deck = hash_decode(hash);
         doDrawDeck();
 
@@ -1087,7 +1100,7 @@ function redo()
 
         currentChange++;
         var hash = changeTracking[currentChange];
-        $hash.val(hash);
+        setHash(hash);
         deck = hash_decode(hash);
         doDrawDeck();
 
@@ -1786,15 +1799,13 @@ var modifyCard = function (optionsDialog)
     var card = get_card_by_id(unit);
     showRunePicker(card);
     setCard(optionsDialog.index, unit);
-    var deckHash = hash_encode(deck);
-    document.getElementById("hash").value = deckHash;
+    setHash(hash_encode(deck));
 }
 
 var resetCard = function (optionsDialog)
 {
     setCard(optionsDialog.index, optionsDialog.originalUnit);
-    var deckHash = hash_encode(deck);
-    document.getElementById("hash").value = deckHash;
+    setHash(hash_encode(deck));
 }
 
 var setCard = function (index, unit)
@@ -2218,6 +2229,7 @@ function setInventory(hash)
 {
     inventory = hash;
     drawCardList();
+    generateLink();
 }
 
 function toggleInventoryMode()
@@ -2239,4 +2251,38 @@ function toggleInventoryMode()
         $deck.sortable("enable");
         doDrawDeck();
     }
+    generateLink();
+}
+
+function generateLink()
+{
+    var params = [];
+    var name = _GET('name');
+    var hash = $("#hash").val();
+    if (name)
+    {
+        params.push("name=" + name);
+    }
+    if (hash)
+    {
+        params.push("hash=" + hash);
+    }
+    if (inventory)
+    {
+        params.push("inventory=" + inventory);
+    }
+    if (inventoryMode)
+    {
+        params.push("unlimited");
+    }
+    if (_DEFINED("spoilers"))
+    {
+        params.push("spoilers");
+    }
+    var link = "http://thesench.github.io/SIMSpellstone/DeckBuilder.html";
+    if (params.length)
+    {
+        link += "?" + params.join("&");
+    }
+    $("#link").attr("href", link).text(link);
 }
