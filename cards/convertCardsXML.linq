@@ -34,6 +34,7 @@ void Main()
 	Normalize("missions_event.xml", downloadFiles);
 	Normalize("passive_missions.xml", downloadFiles);
 
+	
 	g_unitIDs = new HashSet<string>();
 	xmlFile = Path.Combine(path, "cards.xml");
 	doc = XDocument.Load(xmlFile);
@@ -45,6 +46,17 @@ void Main()
 	var noImage = new List<string>();
 	var notFound = new Dictionary<string, string>();
 
+	var missionsXML = XDocument.Load(Path.Combine(path, "missions.xml")).Descendants("mission")
+	.Union(XDocument.Load(Path.Combine(path, "missions_event.xml")).Descendants("mission"));
+	var missionPortraits = missionsXML.SelectMany(node => node.Descendants("commander")).ToLookup(node => node.Value).Where(l => l.Key.Length > 0).Select(l => l.Key);
+	foreach (var portrait in missionPortraits)
+	{
+		var imageFile = Path.Combine(path, @"..\res\cardImages\", "portrait_" + portrait + ".png");
+		if (!File.Exists(imageFile))
+		{
+			notFound.Add("portrait_" + portrait, "???");
+		}
+	}
 
 	var unusedImages = new DirectoryInfo(Path.Combine(path, @"..\res\cardImages"))
 		.GetFiles("*.jpg")
@@ -174,9 +186,7 @@ void Main()
 	}).OrderBy(campaign => campaign.location_id).ThenBy(campaign => campaign.id);
 
 	// Get Missions
-	var missions = XDocument.Load(Path.Combine(path, "missions.xml")).Descendants("mission")
-	.Union(XDocument.Load(Path.Combine(path, "missions_event.xml")).Descendants("mission"))
-	.Select(node => new mission()
+	var missions = missionsXML.Select(node => new mission()
 	{
 		id = node.Element("id").Value,
 		name = node.Element("name").Value,
