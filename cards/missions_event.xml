@@ -7970,7 +7970,7 @@
   </mission>
   <mission>
     <id>5273</id>
-    <name>Calm after the Storm</name>
+    <name>Calm After the Storm</name>
     <energy>13</energy>
     <desc>Smoke now fills Beetleton as the fire dies down. The citizens are able to safely make it out of their homes. The town comes together to thank Rayne and Aria for their help.</desc>
     <commander id="317" />
@@ -8061,7 +8061,7 @@
         <text>Based on the goblins dropping in from the entrance above, I am going to file those reports under "confirmed".</text>
       </line>
       <line>
-        <commander>elyse</commander>
+        <commander>goblinraider</commander>
         <enemy>1</enemy>
         <text>Kekekekeke!</text>
       </line>

@@ -8931,6 +8931,110 @@
     </upgrade>
   </unit>
   <unit>
+    <id>2049</id>
+    <card_type>2</card_type>
+    <name>Contrapede</name>
+    <picture>Bug_Of_Fire_and_Ice_A</picture>
+    <asset_bundle>65</asset_bundle>
+    <hidden_until_time>1467306000</hidden_until_time>
+    <attack>1</attack>
+    <health>9</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="burn" x="1" />
+    <type>1</type>
+    <sub_type>13</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>2</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="frost" x="1" />
+      <skill id="burn" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12049</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Dualipede</name>
+    <picture>Bug_Of_Fire_and_Ice_A</picture>
+    <asset_bundle>65</asset_bundle>
+    <hidden_until_time>1467306000</hidden_until_time>
+    <attack>2</attack>
+    <health>13</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="frost" x="1" />
+    <skill id="burn" x="1" />
+    <type>1</type>
+    <sub_type>13</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="frost" x="1" />
+      <skill id="burn" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>3</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>15</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22049</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Duplicipede</name>
+    <picture>Bug_Of_Fire_and_Ice_B</picture>
+    <asset_bundle>65</asset_bundle>
+    <hidden_until_time>1467306000</hidden_until_time>
+    <attack>3</attack>
+    <health>16</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="frost" x="1" />
+    <skill id="burn" x="2" />
+    <type>1</type>
+    <sub_type>13</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="frost" x="2" />
+      <skill id="burn" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="frost" x="2" />
+      <skill id="burn" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>2050</id>
     <card_type>2</card_type>
     <name>Slithering Pincer</name>
@@ -17420,6 +17524,127 @@
       <skill id="flurry" c="2" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5067</id>
+    <card_type>2</card_type>
+    <name>Squito Roamer</name>
+    <picture>Stinger_Fist_A</picture>
+    <asset_bundle>65</asset_bundle>
+    <hidden_until_time>1467910800</hidden_until_time>
+    <attack>4</attack>
+    <health>12</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="1" />
+    <skill id="strike" x="2" />
+    <skill id="weaken" x="2" />
+    <type>1</type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="counter" x="1" />
+      <skill id="strike" x="3" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>14</health>
+      <skill id="counter" x="2" />
+      <skill id="strike" x="3" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15067</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Squito Bandit</name>
+    <picture>Stinger_Fist_A</picture>
+    <asset_bundle>65</asset_bundle>
+    <hidden_until_time>1467910800</hidden_until_time>
+    <attack>5</attack>
+    <health>15</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="2" />
+    <skill id="strike" x="3" />
+    <skill id="weaken" x="2" />
+    <type>1</type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="counter" x="2" />
+      <skill id="strike" x="4" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>6</attack>
+      <skill id="counter" x="2" />
+      <skill id="strike" x="4" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="3" />
+      <skill id="strike" x="4" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25067</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Bansquito</name>
+    <picture>Stinger_Fist_B</picture>
+    <asset_bundle>65</asset_bundle>
+    <hidden_until_time>1467910800</hidden_until_time>
+    <attack>6</attack>
+    <health>16</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="3" />
+    <skill id="strike" x="5" />
+    <skill id="weaken" x="3" />
+    <type>1</type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counter" x="4" />
+      <skill id="strike" x="5" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="4" />
+      <skill id="strike" x="6" />
+      <skill id="weaken" x="4" />
+    </upgrade>
+  </unit>
   <!-- Chaos Premium Begin -->
   <unit>
     <id>6000</id>
@@ -25406,6 +25631,140 @@
       <skill id="leech" x="4" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6067</id>
+    <card_type>2</card_type>
+    <name>Gurgitater</name>
+    <picture>Legendary_Acid_Spitter_A</picture>
+    <asset_bundle>65</asset_bundle>
+    <hidden_until_time>1467910800</hidden_until_time>
+    <attack>3</attack>
+    <health>14</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="legion" x="1" y="9" />
+    <skill id="poison" x="3" />
+    <skill id="leech" x="2" />
+    <type>2</type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="legion" x="1" y="9" />
+      <skill id="poison" x="3" />
+      <skill id="leech" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>4</attack>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="legion" x="1" y="9" />
+      <skill id="poison" x="4" />
+      <skill id="leech" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16067</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Gurgitater Grub</name>
+    <picture>Legendary_Acid_Spitter_A</picture>
+    <asset_bundle>65</asset_bundle>
+    <hidden_until_time>1467910800</hidden_until_time>
+    <attack>4</attack>
+    <health>18</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="legion" x="1" y="9" />
+    <skill id="poison" x="4" />
+    <skill id="leech" x="3" />
+    <type>2</type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+      <skill id="legion" x="2" y="9" />
+      <skill id="poison" x="4" />
+      <skill id="leech" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="legion" x="2" y="9" />
+      <skill id="poison" x="4" />
+      <skill id="leech" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>21</health>
+      <skill id="legion" x="2" y="9" />
+      <skill id="poison" x="5" />
+      <skill id="leech" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26067</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Gurgitater Grublord</name>
+    <picture>Legendary_Acid_Spitter_B</picture>
+    <asset_bundle>65</asset_bundle>
+    <hidden_until_time>1467910800</hidden_until_time>
+    <attack>5</attack>
+    <health>21</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="legion" x="2" y="9" />
+    <skill id="poison" x="5" />
+    <skill id="leech" x="5" />
+    <type>2</type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>23</health>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="legion" x="3" y="9" />
+      <skill id="poison" x="5" />
+      <skill id="leech" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="legion" x="3" y="9" />
+      <skill id="poison" x="6" />
+      <skill id="leech" x="6" />
+    </upgrade>
+  </unit>
   <!-- Wyld Premium Begin -->
   <unit>
     <id>7000</id>
@@ -33346,6 +33705,113 @@
       <skill id="heal" x="2" all="1" />
       <skill id="heal" x="5" y="13" />
       <skill id="poison" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7065</id>
+    <card_type>2</card_type>
+    <name>Disturbed Swarm</name>
+    <picture>Angry_Hive_A</picture>
+    <asset_bundle>65</asset_bundle>
+    <hidden_until_time>1467910800</hidden_until_time>
+    <attack>1</attack>
+    <health>3</health>
+    <cost>0</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <type>3</type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>4</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>5</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="1" />
+      <skill id="poison" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>6</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17065</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Agitated Swarm</name>
+    <picture>Angry_Hive_A</picture>
+    <asset_bundle>65</asset_bundle>
+    <hidden_until_time>1467910800</hidden_until_time>
+    <attack>1</attack>
+    <health>6</health>
+    <cost>0</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="poison" x="2" />
+    <type>3</type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>7</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>8</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="1" />
+      <skill id="poison" x="2" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27065</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Furious Swarm</name>
+    <picture>Angry_Hive_B</picture>
+    <asset_bundle>65</asset_bundle>
+    <hidden_until_time>1467910800</hidden_until_time>
+    <attack>1</attack>
+    <health>9</health>
+    <cost>0</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="poison" x="3" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>2</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>12</health>
+      <skill id="evade" x="1" />
+      <skill id="poison" x="4" />
+      <skill id="berserk" x="1" />
     </upgrade>
   </unit>
   <!-- END SET 3000 - Premium -->
@@ -46345,8 +46811,8 @@
   <unit>
     <id>319</id>
     <card_type>1</card_type>
-    <name>Rabid Bug</name>
-    <portrait>frogemperor</portrait>
+    <name>Rabid Jumper</name>
+    <portrait>feralbug</portrait>
     <attack>0</attack>
     <health>27</health>
     <skill id="weaken" x="2" />
@@ -46384,7 +46850,7 @@
   <unit>
     <id>320</id>
     <card_type>1</card_type>
-    <name>Looting Footmen</name>
+    <name>Cackling Henchmen</name>
     <portrait>goblinfootmen</portrait>
     <attack>0</attack>
     <health>30</health>
@@ -46423,8 +46889,8 @@
   <unit>
     <id>321</id>
     <card_type>1</card_type>
-    <name>Cackling Henchmen</name>
-    <portrait>frogemperor</portrait>
+    <name>Looting Footmen</name>
+    <portrait>goblinraider</portrait>
     <attack>0</attack>
     <health>34</health>
     <skill id="rally" x="2" />

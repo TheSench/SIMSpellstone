@@ -136,7 +136,7 @@
         {
             var fusion = getFusion();
             return {
-                1: '',
+                1: 'Single',
                 2: 'Dual',
                 3: 'Quad'
             }[fusion]
@@ -243,7 +243,8 @@
         $scope.getSetIcon = function ()
         {
             var setName = setNames[$scope.card.set];
-            return ('res/cardAssets/' + setName + '.png');
+            if (!setName) setName = setNames[9999];
+            return ('res/cardAssets/' + setName + '_64x64.png');
         }
 
         $scope.getFaction = function (factionID)

@@ -1,6 +1,8 @@
 <div class="card-details" tabindex="0" ng-keydown="keyPress($event)" ng-cloak>
     <div id="cardArt" class="detail-panel">
-        <img class="card-art" ng-src="{{imageSrc}}" />
+        <div class="art-holder">
+            <img class="card-art" ng-src="{{imageSrc}}" />
+        </div>
         <img class="bottom-center icon-fusion" ng-src="{{getFusionIcon()}}" ng-if="isFused()" />
         <img class="bottom-center rarity" ng-src="{{getRarityIcon()}}" ng-if="showRarity()" />
     </div>
@@ -52,7 +54,7 @@
             <span>{{card.desc}}</span>
         </div>
         <div class="bottom-center">
-            <span>{{fusionText()}}</span>
+            <span class="b">{{fusionText()}}</span>
         </div>
         <div class="bottom-right">
             <img ng-src="{{getSetIcon()}}" />

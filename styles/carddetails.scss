@@ -8,6 +8,10 @@
     border: 1px solid black;
     overflow: auto;
 
+    .b {
+        font-weight: bold;
+    }
+
     .stat-icon {
         height: 32px;
     }
@@ -16,14 +20,29 @@
         float: left;
         width: 50%;
         position: relative;
-        min-height: 330px;
+        min-height: 365px;
+        border: 1px solid black;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .art-holder {
+        display: block;
+        height: 330px;
+        width: 231px;
+        position: relative;
+        border: 1px solid black;
+        -moz-box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
     }
 
     .card-art {
-        display: block;
-        margin: auto;
-        min-height: 330px;
         max-height: 330px;
+        max-width: 100%;
+        position: absolute;
+        bottom: 0;
     }
 
     .bottom-center {
@@ -98,7 +117,7 @@
         }
 
         .description {
-            float:left;
+            float: left;
             margin-top: 10px;
             color: black;
             font-size: 15px;
