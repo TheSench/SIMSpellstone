@@ -25642,7 +25642,7 @@
     <health>14</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="legion" x="1" y="9" />
+    <skill id="legion" x="1" y="13" />
     <skill id="poison" x="3" />
     <skill id="leech" x="2" />
     <type>2</type>
@@ -25658,7 +25658,7 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="legion" x="1" y="9" />
+      <skill id="legion" x="1" y="13" />
       <skill id="poison" x="3" />
       <skill id="leech" x="3" />
     </upgrade>
@@ -25669,7 +25669,7 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="legion" x="1" y="9" />
+      <skill id="legion" x="1" y="13" />
       <skill id="poison" x="4" />
       <skill id="leech" x="3" />
     </upgrade>
@@ -25686,7 +25686,7 @@
     <health>18</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="legion" x="1" y="9" />
+    <skill id="legion" x="1" y="13" />
     <skill id="poison" x="4" />
     <skill id="leech" x="3" />
     <type>2</type>
@@ -25695,13 +25695,13 @@
     <upgrade>
       <level>2</level>
       <health>19</health>
-      <skill id="legion" x="2" y="9" />
+      <skill id="legion" x="2" y="13" />
       <skill id="poison" x="4" />
       <skill id="leech" x="3" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="legion" x="2" y="9" />
+      <skill id="legion" x="2" y="13" />
       <skill id="poison" x="4" />
       <skill id="leech" x="4" />
     </upgrade>
@@ -25716,7 +25716,7 @@
     <upgrade>
       <level>6</level>
       <health>21</health>
-      <skill id="legion" x="2" y="9" />
+      <skill id="legion" x="2" y="13" />
       <skill id="poison" x="5" />
       <skill id="leech" x="4" />
     </upgrade>
@@ -25733,7 +25733,7 @@
     <health>21</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="legion" x="2" y="9" />
+    <skill id="legion" x="2" y="13" />
     <skill id="poison" x="5" />
     <skill id="leech" x="5" />
     <type>2</type>
@@ -25754,13 +25754,13 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="legion" x="3" y="9" />
+      <skill id="legion" x="3" y="13" />
       <skill id="poison" x="5" />
       <skill id="leech" x="5" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="legion" x="3" y="9" />
+      <skill id="legion" x="3" y="13" />
       <skill id="poison" x="6" />
       <skill id="leech" x="6" />
     </upgrade>

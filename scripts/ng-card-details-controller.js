@@ -70,6 +70,18 @@
             }
         });
 
+        $scope.isCommander = function () {
+            return $window.is_commander($scope.id);
+        };
+
+        $scope.commanderClass = function () {
+            if ($scope.isCommander()) {
+                return "commander " + $scope.getFaction($scope.card.type).toLowerCase();
+            } else {
+                return '';
+            }
+        }
+
         $scope.getRarityString = function ()
         {
             return $window.rarityStrings[$scope.card.rarity];

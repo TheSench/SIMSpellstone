@@ -36,6 +36,27 @@
         -moz-box-sizing: content-box;
         -webkit-box-sizing: content-box;
         box-sizing: content-box;
+
+        &.commander {
+            background-image: url('../res/cardAssets/Commander_BG_Question.png');
+            background-size:cover;
+
+            &.aether{
+                background-image: url('../res/cardAssets/Commander_BG_Aether.png');
+            }
+
+            &.chaos{
+                background-image: url('../res/cardAssets/Commander_BG_Chaos.png');
+            }
+
+            &.wyld{
+                background-image: url('../res/cardAssets/Commander_BG_Wyld.png');
+            }
+
+            &.void{
+                background-image: url('../res/cardAssets/Commander_BG_Void.png');
+            }
+        }
     }
 
     .card-art {

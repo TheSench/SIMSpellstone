@@ -1,6 +1,6 @@
 <div class="card-details" tabindex="0" ng-keydown="keyPress($event)" ng-cloak>
     <div id="cardArt" class="detail-panel">
-        <div class="art-holder">
+        <div class="art-holder ng-class:commanderClass();">
             <img class="card-art" ng-src="{{imageSrc}}" />
         </div>
         <img class="bottom-center icon-fusion" ng-src="{{getFusionIcon()}}" ng-if="isFused()" />
@@ -28,7 +28,7 @@
             <br />
         </div>
         <div id="baseStats" class="base-stats">
-            <div ng-if="card.attack !== undefined">
+            <div ng-if="!isCommander()">
                 <img src="res/cardAssets/Attack3.png" class="stat-icon" />
                 <span>Attack: {{card.attack}}</span>
             </div>
@@ -36,7 +36,7 @@
                 <img src="res/cardAssets/Health.png" class="stat-icon" />
                 <span>Health: {{card.health}}</span>
             </div>
-            <div ng-if="card.cost !== undefined">
+            <div ng-if="!isCommander()">
                 <img src="res/cardAssets/Timer.png" class="stat-icon" />
                 <span>Delay: {{card.cost}}</span>
             </div>
