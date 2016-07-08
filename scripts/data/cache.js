@@ -47262,6 +47262,231 @@ var CARDS = {
       },
     }
   },
+  "6065": {
+    "id": "6065",
+    "name": "Torchsnout",
+    "picture": "Fire_Face_Bug_A",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "13",
+    "attack": 1,
+    "health": 7,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "strike",
+        "x": 1,
+      },
+      {
+        "id": "burn",
+        "x": 1,
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 8,
+        "skill": [],
+      },
+      "3": {
+        "health": 9,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "strike",
+            "x": 1,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+          },
+        ],
+      },
+      "5": {
+        "health": 10,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "strike",
+            "x": 1,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "16065": {
+    "id": "16065",
+    "name": "Flameface",
+    "picture": "Fire_Face_Bug_A",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "13",
+    "attack": 1,
+    "health": 10,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "strike",
+        "x": 1,
+      },
+      {
+        "id": "burn",
+        "x": 3,
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "3": {
+        "attack": 2,
+        "skill": [],
+      },
+      "4": {
+        "health": 11,
+        "skill": [],
+      },
+      "5": {
+        "health": 12,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "burn",
+            "x": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "26065": {
+    "id": "26065",
+    "name": "Infernose",
+    "picture": "Fire_Face_Bug_B",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "13",
+    "attack": 2,
+    "health": 13,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "strike",
+        "x": 2,
+      },
+      {
+        "id": "burn",
+        "x": 4,
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "attack": 3,
+        "skill": [],
+      },
+      "4": {
+        "health": 15,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "strike",
+            "x": 3,
+          },
+          {
+            "id": "burn",
+            "x": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "strike",
+            "x": 3,
+          },
+          {
+            "id": "burn",
+            "x": 5,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
   "7000": {
     "id": "7000",
     "name": "Treant King",
@@ -88558,7 +88783,7 @@ var CARDS = {
   "9985": {
     "id": "9985",
     "name": "",
-    "picture": "New9_A",
+    "picture": "Oda_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -88571,7 +88796,7 @@ var CARDS = {
   "19984": {
     "id": "19984",
     "name": "",
-    "picture": "New9_B",
+    "picture": "Oda_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -88581,10 +88806,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9983": {
-    "id": "9983",
+  "29983": {
+    "id": "29983",
     "name": "",
-    "picture": "Oda_A",
+    "picture": "Oda_C",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -88597,7 +88822,7 @@ var CARDS = {
   "19982": {
     "id": "19982",
     "name": "",
-    "picture": "Oda_B",
+    "picture": "Promo_Dragon_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -88607,10 +88832,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29981": {
-    "id": "29981",
+  "9981": {
+    "id": "9981",
     "name": "",
-    "picture": "Oda_C",
+    "picture": "Seraph_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -88623,7 +88848,7 @@ var CARDS = {
   "19980": {
     "id": "19980",
     "name": "",
-    "picture": "Promo_Dragon_B",
+    "picture": "Seraph_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -88636,7 +88861,7 @@ var CARDS = {
   "9979": {
     "id": "9979",
     "name": "",
-    "picture": "Seraph_A",
+    "picture": "Tarian_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -88646,10 +88871,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19978": {
-    "id": "19978",
+  "9978": {
+    "id": "9978",
     "name": "",
-    "picture": "Seraph_B",
+    "picture": "Tremor_Wurm_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -88662,7 +88887,7 @@ var CARDS = {
   "9977": {
     "id": "9977",
     "name": "",
-    "picture": "Tarian_A",
+    "picture": "Unused1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -88675,7 +88900,7 @@ var CARDS = {
   "9976": {
     "id": "9976",
     "name": "",
-    "picture": "Tremor_Wurm_A",
+    "picture": "Unused2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -88688,7 +88913,7 @@ var CARDS = {
   "9975": {
     "id": "9975",
     "name": "",
-    "picture": "Unused1_A",
+    "picture": "Unused3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -88701,7 +88926,7 @@ var CARDS = {
   "9974": {
     "id": "9974",
     "name": "",
-    "picture": "Unused2_A",
+    "picture": "Ursurio_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -88714,7 +88939,7 @@ var CARDS = {
   "9973": {
     "id": "9973",
     "name": "",
-    "picture": "Unused3_A",
+    "picture": "Void_Abomination_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -88726,32 +88951,6 @@ var CARDS = {
   },
   "9972": {
     "id": "9972",
-    "name": "",
-    "picture": "Ursurio_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9971": {
-    "id": "9971",
-    "name": "",
-    "picture": "Void_Abomination_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9970": {
-    "id": "9970",
     "name": "",
     "picture": "Yuriel_A",
     "rarity": "0",
@@ -116056,6 +116255,7 @@ var FUSIONS = {
   "16062" : "26062",
   "16063" : "26063",
   "16064" : "26064",
+  "16065" : "26065",
   "16066" : "26066",
   "16067" : "26067",
   "1607" : "11607",
@@ -116346,6 +116546,7 @@ var FUSIONS = {
   "6062" : "16062",
   "6063" : "16063",
   "6064" : "16064",
+  "6065" : "16065",
   "6066" : "16066",
   "6067" : "16067",
   "7000" : "17000",

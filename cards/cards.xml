@@ -25765,6 +25765,134 @@
       <skill id="leech" x="6" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6065</id>
+    <card_type>2</card_type>
+    <name>Torchsnout</name>
+    <picture>Fire_Face_Bug_A</picture>
+    <asset_bundle>65</asset_bundle>
+    <hidden_until_time>1468256400</hidden_until_time>
+    <attack>1</attack>
+    <health>7</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="strike" x="1" />
+    <skill id="burn" x="1" />
+    <skill id="weaken" x="1" />
+    <type>2</type>
+    <sub_type>13</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>8</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="strike" x="1" />
+      <skill id="burn" x="2" />
+      <skill id="weaken" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="strike" x="1" />
+      <skill id="burn" x="3" />
+      <skill id="weaken" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16065</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Flameface</name>
+    <picture>Fire_Face_Bug_A</picture>
+    <asset_bundle>65</asset_bundle>
+    <hidden_until_time>1468256400</hidden_until_time>
+    <attack>1</attack>
+    <health>10</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="strike" x="1" />
+    <skill id="burn" x="3" />
+    <skill id="weaken" x="1" all="1" />
+    <type>2</type>
+    <sub_type>13</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="strike" x="2" />
+      <skill id="burn" x="3" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>2</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="strike" x="2" />
+      <skill id="burn" x="4" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26065</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Infernose</name>
+    <picture>Fire_Face_Bug_B</picture>
+    <asset_bundle>65</asset_bundle>
+    <hidden_until_time>1468256400</hidden_until_time>
+    <attack>2</attack>
+    <health>13</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="strike" x="2" />
+    <skill id="burn" x="4" />
+    <skill id="weaken" x="1" all="1" />
+    <type>2</type>
+    <sub_type>13</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>3</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="strike" x="3" />
+      <skill id="burn" x="4" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="strike" x="3" />
+      <skill id="burn" x="5" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+  </unit>
   <!-- Wyld Premium Begin -->
   <unit>
     <id>7000</id>
