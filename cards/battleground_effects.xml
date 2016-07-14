@@ -301,6 +301,18 @@
       <starting_card id="603" level="17" pvp_rank="18" />
     </effect>
   </battleground>
+  <battleground>
+    <id>507</id>
+    <name>Trap Cards</name>
+    <desc>All enemies start with a Tree of Life card.</desc>
+    <web_picture>filter_tower_64.png</web_picture>
+    <icon>tree_of_life_64</icon>
+    <icon_bundle>31</icon_bundle>
+    <effect>
+      <trap_card id="603" level="1" num="30" />
+      <skill id="strike" x="1" all="1" />
+    </effect>
+  </battleground>
   <!-- 1001+: Personal BGE -->
   <battleground>
     <id>10001</id>

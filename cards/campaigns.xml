@@ -2939,6 +2939,168 @@
     </rewards>
     <find_item id="3041" drop_per_energy=".25" />
   </campaign>
+  <!-- Event 14 Angels -->
+  <campaign>
+    <id>1077</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Rumor Mill</name>
+    <icon id="honey_jar" bundle="58" />
+    <location_id>106</location_id>
+    <x>245</x>
+    <y>468</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>5290</mission_id>
+      <mission_id>5291</mission_id>
+      <mission_id>5292</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1014" />
+      <card level="3" id="1014" />
+      <card level="4" id="511" />
+      <card level="5" id="1019" />
+      <card level="6" id="1019" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3042" drop_per_energy=".20" />
+  </campaign>
+  <campaign>
+    <id>1078</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Territory Control</name>
+    <icon id="honey_jar" bundle="58" />
+    <location_id>106</location_id>
+    <x>403</x>
+    <y>408</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>5293</mission_id>
+      <mission_id>5294</mission_id>
+      <mission_id>5295</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1019" />
+      <card level="3" id="1019" />
+      <card level="4" id="2052" />
+      <card level="5" id="1014" />
+      <card level="6" id="1014" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3042" drop_per_energy=".20" />
+  </campaign>
+  <campaign>
+    <id>1079</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Redemption</name>
+    <icon id="honey_jar" bundle="58" />
+    <location_id>106</location_id>
+    <x>554</x>
+    <y>328</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>5296</mission_id>
+      <mission_id>5297</mission_id>
+      <mission_id>5298</mission_id>
+      <mission_id>5299</mission_id>
+      <mission_id>5300</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1017" />
+      <card level="3" id="1017" />
+      <card level="4" id="2053" />
+      <card level="5" id="1018" />
+      <card level="6" id="1018" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3042" drop_per_energy=".22" />
+  </campaign>
+  <campaign>
+    <id>1080</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Groundwork</name>
+    <icon id="honey_jar" bundle="58" />
+    <location_id>106</location_id>
+    <x>699</x>
+    <y>216</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>5301</mission_id>
+      <mission_id>5302</mission_id>
+      <mission_id>5303</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1018" />
+      <card level="3" id="1018" />
+      <card level="4" id="511" />
+      <card level="5" id="1017" />
+      <card level="6" id="1017" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3041" drop_per_energy=".23" />
+  </campaign>
+  <campaign>
+    <id>1081</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>What was Sown</name>
+    <icon id="honey_jar" bundle="58" />
+    <location_id>106</location_id>
+    <x>493</x>
+    <y>195</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>5304</mission_id>
+      <mission_id>5305</mission_id>
+      <mission_id>5306</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1015" />
+      <card level="3" id="1015" />
+      <card level="4" id="2054" />
+      <card level="5" id="1012" />
+      <card level="6" id="1012" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3042" drop_per_energy=".23" />
+  </campaign>
+  <campaign>
+    <id>1082</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Plan of Attack</name>
+    <icon id="honey_jar" bundle="58" />
+    <location_id>106</location_id>
+    <x>290</x>
+    <y>183</y>
+    <combatBG>CombatBGEvent008</combatBG>
+    <missions>
+      <mission_id>5307</mission_id>
+      <mission_id>5308</mission_id>
+      <mission_id>5309</mission_id>
+      <mission_id>5310</mission_id>
+      <mission_id>5311</mission_id>
+      <mission_id>5312</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1012" />
+      <card level="3" id="1012" />
+      <card level="4" id="1031" />
+      <card level="5" id="1015" />
+      <card level="6" id="1015" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3042" drop_per_energy=".25" />
+  </campaign>
   <!-- START Mythic Campaigns -->
   <campaign>
     <id>3000</id>

@@ -17645,6 +17645,131 @@
       <skill id="weaken" x="4" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5068</id>
+    <card_type>2</card_type>
+    <name>Aht-Aht Carrier</name>
+    <picture>Longleg_Mountain_Nomad_A</picture>
+    <asset_bundle>65</asset_bundle>
+    <hidden_until_time>1468515600</hidden_until_time>
+    <attack>2</attack>
+    <health>9</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="1" y="13" />
+    <skill id="weaken" x="1" />
+    <type>1</type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="rally" x="2" y="13" />
+      <skill id="weaken" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="rally" x="2" y="13" />
+      <skill id="frost" x="1" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15068</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Aht-Aht Transporter</name>
+    <picture>Longleg_Mountain_Nomad_A</picture>
+    <asset_bundle>65</asset_bundle>
+    <hidden_until_time>1468515600</hidden_until_time>
+    <attack>2</attack>
+    <health>13</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="2" y="13" />
+    <skill id="frost" x="1" />
+    <skill id="weaken" x="2" />
+    <type>1</type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>3</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>15</health>
+      <skill id="rally" x="3" y="13" />
+      <skill id="frost" x="1" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="rally" x="3" y="13" />
+      <skill id="frost" x="1" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25068</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Aht-Aht Trekker</name>
+    <picture>Longleg_Mountain_Nomad_B</picture>
+    <asset_bundle>65</asset_bundle>
+    <hidden_until_time>1468515600</hidden_until_time>
+    <attack>3</attack>
+    <health>16</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="4" y="13" />
+    <skill id="frost" x="1" />
+    <skill id="weaken" x="3" />
+    <type>1</type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="rally" x="5" y="13" />
+      <skill id="frost" x="1" />
+      <skill id="weaken" x="4" />
+    </upgrade>
+  </unit>
   <!-- Chaos Premium Begin -->
   <unit>
     <id>6000</id>
@@ -25512,6 +25637,134 @@
     </upgrade>
   </unit>
   <unit>
+    <id>6065</id>
+    <card_type>2</card_type>
+    <name>Torchsnout</name>
+    <picture>Fire_Face_Bug_A</picture>
+    <asset_bundle>65</asset_bundle>
+    <hidden_until_time>1468256400</hidden_until_time>
+    <attack>1</attack>
+    <health>7</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="strike" x="1" />
+    <skill id="burn" x="1" />
+    <skill id="weaken" x="1" />
+    <type>2</type>
+    <sub_type>13</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>8</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="strike" x="1" />
+      <skill id="burn" x="2" />
+      <skill id="weaken" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="strike" x="1" />
+      <skill id="burn" x="3" />
+      <skill id="weaken" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16065</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Flameface</name>
+    <picture>Fire_Face_Bug_A</picture>
+    <asset_bundle>65</asset_bundle>
+    <hidden_until_time>1468256400</hidden_until_time>
+    <attack>1</attack>
+    <health>10</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="strike" x="1" />
+    <skill id="burn" x="3" />
+    <skill id="weaken" x="1" all="1" />
+    <type>2</type>
+    <sub_type>13</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="strike" x="2" />
+      <skill id="burn" x="3" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>2</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="strike" x="2" />
+      <skill id="burn" x="4" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26065</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Infernose</name>
+    <picture>Fire_Face_Bug_B</picture>
+    <asset_bundle>65</asset_bundle>
+    <hidden_until_time>1468256400</hidden_until_time>
+    <attack>2</attack>
+    <health>13</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="strike" x="2" />
+    <skill id="burn" x="4" />
+    <skill id="weaken" x="1" all="1" />
+    <type>2</type>
+    <sub_type>13</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>3</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="strike" x="3" />
+      <skill id="burn" x="4" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="strike" x="3" />
+      <skill id="burn" x="5" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>6066</id>
     <card_type>2</card_type>
     <name>Psychic Beetle</name>
@@ -25766,131 +26019,144 @@
     </upgrade>
   </unit>
   <unit>
-    <id>6065</id>
+    <id>6068</id>
     <card_type>2</card_type>
-    <name>Torchsnout</name>
-    <picture>Fire_Face_Bug_A</picture>
+    <name>Night Larva</name>
+    <picture>Face_Eatter_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1468256400</hidden_until_time>
-    <attack>1</attack>
-    <health>7</health>
-    <cost>1</cost>
+    <hidden_until_time>1468515600</hidden_until_time>
+    <attack>4</attack>
+    <health>16</health>
+    <cost>3</cost>
     <rarity>4</rarity>
-    <skill id="strike" x="1" />
-    <skill id="burn" x="1" />
-    <skill id="weaken" x="1" />
+    <skill id="enfeeble" x="1" all="1" />
+    <skill id="strike" x="2" />
+    <skill id="berserk" x="1" />
     <type>2</type>
     <sub_type>13</sub_type>
-    <set>4000</set>
+    <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>8</health>
+      <health>17</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>9</health>
+      <health>18</health>
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="strike" x="3" />
+      <skill id="berserk" x="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="strike" x="1" />
-      <skill id="burn" x="2" />
-      <skill id="weaken" x="1" />
+      <health>19</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>10</health>
+      <health>20</health>
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="strike" x="3" />
+      <skill id="berserk" x="2" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="strike" x="1" />
-      <skill id="burn" x="3" />
-      <skill id="weaken" x="1" />
+      <health>21</health>
     </upgrade>
   </unit>
   <unit>
-    <id>16065</id>
+    <id>16068</id>
     <card_type>2</card_type>
     <fusion_level>1</fusion_level>
-    <name>Flameface</name>
-    <picture>Fire_Face_Bug_A</picture>
+    <name>Cradle Larva</name>
+    <picture>Face_Eatter_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1468256400</hidden_until_time>
-    <attack>1</attack>
-    <health>10</health>
-    <cost>1</cost>
+    <hidden_until_time>1468515600</hidden_until_time>
+    <attack>4</attack>
+    <health>22</health>
+    <cost>3</cost>
     <rarity>4</rarity>
-    <skill id="strike" x="1" />
-    <skill id="burn" x="3" />
-    <skill id="weaken" x="1" all="1" />
+    <skill id="enfeeble" x="1" all="1" />
+    <skill id="strike" x="3" />
+    <skill id="berserk" x="2" />
     <type>2</type>
     <sub_type>13</sub_type>
-    <set>4000</set>
+    <set>3000</set>
     <upgrade>
       <level>2</level>
-      <skill id="strike" x="2" />
-      <skill id="burn" x="3" />
-      <skill id="weaken" x="1" all="1" />
+      <health>23</health>
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="strike" x="3" />
+      <skill id="berserk" x="2" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>2</attack>
+      <health>24</health>
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="strike" x="4" />
+      <skill id="berserk" x="2" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>11</health>
+      <health>25</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>12</health>
+      <health>26</health>
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="strike" x="4" />
+      <skill id="berserk" x="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="strike" x="2" />
-      <skill id="burn" x="4" />
-      <skill id="weaken" x="1" all="1" />
+      <health>27</health>
+      <attack>5</attack>
     </upgrade>
   </unit>
   <unit>
-    <id>26065</id>
+    <id>26068</id>
     <card_type>2</card_type>
     <fusion_level>2</fusion_level>
-    <name>Infernose</name>
-    <picture>Fire_Face_Bug_B</picture>
+    <name>Swaddler Larva</name>
+    <picture>Face_Eatter_B</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1468256400</hidden_until_time>
-    <attack>2</attack>
-    <health>13</health>
-    <cost>1</cost>
+    <hidden_until_time>1468515600</hidden_until_time>
+    <attack>5</attack>
+    <health>28</health>
+    <cost>3</cost>
     <rarity>4</rarity>
-    <skill id="strike" x="2" />
-    <skill id="burn" x="4" />
-    <skill id="weaken" x="1" all="1" />
+    <skill id="enfeeble" x="2" all="1" />
+    <skill id="strike" x="4" />
+    <skill id="berserk" x="3" />
     <type>2</type>
     <sub_type>13</sub_type>
-    <set>4000</set>
+    <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>14</health>
+      <health>29</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>3</attack>
+      <health>30</health>
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="strike" x="4" />
+      <skill id="berserk" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>15</health>
+      <health>31</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="strike" x="3" />
-      <skill id="burn" x="4" />
-      <skill id="weaken" x="1" all="1" />
+      <health>32</health>
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="strike" x="5" />
+      <skill id="berserk" x="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="strike" x="3" />
-      <skill id="burn" x="5" />
-      <skill id="weaken" x="1" all="1" />
+      <health>33</health>
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="strike" x="5" />
+      <skill id="berserk" x="4" />
     </upgrade>
   </unit>
   <!-- Wyld Premium Begin -->
@@ -33940,6 +34206,121 @@
       <skill id="evade" x="1" />
       <skill id="poison" x="4" />
       <skill id="berserk" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7066</id>
+    <card_type>2</card_type>
+    <name>Aquine</name>
+    <picture>Sea_Horse_A</picture>
+    <asset_bundle>65</asset_bundle>
+    <hidden_until_time>1468515600</hidden_until_time>
+    <attack>5</attack>
+    <health>8</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="protect" x="2" y="3" />
+    <skill id="jam" c="6" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="evade" x="1" />
+      <skill id="protect" x="2" y="3" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>6</attack>
+      <skill id="evade" x="1" />
+      <skill id="protect" x="3" y="3" />
+      <skill id="jam" c="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17066</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Understeed</name>
+    <picture>Sea_Horse_A</picture>
+    <asset_bundle>65</asset_bundle>
+    <hidden_until_time>1468515600</hidden_until_time>
+    <attack>6</attack>
+    <health>10</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="protect" x="3" y="3" />
+    <skill id="jam" c="4" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>12</health>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="1" />
+      <skill id="protect" x="4" y="3" />
+      <skill id="jam" c="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27066</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Unicoral</name>
+    <picture>Sea_Horse_B</picture>
+    <asset_bundle>65</asset_bundle>
+    <hidden_until_time>1468515600</hidden_until_time>
+    <attack>7</attack>
+    <health>13</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="protect" x="4" y="3" />
+    <skill id="jam" c="3" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>14</health>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="2" />
+      <skill id="protect" x="5" y="3" />
+      <skill id="jam" c="3" />
     </upgrade>
   </unit>
   <!-- END SET 3000 - Premium -->

@@ -7747,6 +7747,7 @@
       <card id="6024" mastery_level="7" name="Bane Dragon" />
     </deck>
   </mission>
+  <!-- Event 13 Insects -->
   <mission>
     <id>5266</id>
     <name>In Need of Assistance</name>
@@ -8122,7 +8123,7 @@
       </line>
       <line>
         <commander>elementalhero</commander>
-        <enemy>1</enemy>
+        <enemy>0</enemy>
         <text>I've seen you talk to that skeleton of yours, I think you have plenty of friends.</text>
       </line>
       <line>
@@ -8179,8 +8180,8 @@
     </deck>
     <speech>
       <line>
-        <commander>oda</commander>
-        <enemy>0</enemy>
+        <commander>goblinringleader</commander>
+        <enemy>1</enemy>
         <text>Hurry and find that artifact, boys! Their backup has already arrived!</text>
       </line>
     </speech>
@@ -8214,9 +8215,9 @@
         <text>Get back! I don't want to hurt you, but I will NOT let you enter my home!</text>
       </line>
       <line>
-        <commander>elyse</commander>
+        <commander>goblinraider</commander>
         <enemy>1</enemy>
-        <text>Heh, you really think you can stop all of us? Get'em, boys!</text>
+        <text>Heh, you really think you can stop all of us? Get'em!</text>
       </line>
     </speech>
   </mission>
@@ -8488,6 +8489,715 @@
         <commander>necromancer</commander>
         <enemy>0</enemy>
         <text>Forget the hammer! I'm taking this goblin DOWN!</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Event 14 Angels -->
+  <mission>
+    <id>5290</id>
+    <name>Foreign Fires</name>
+    <energy>11</energy>
+    <desc>A High Knight of the Queen lands in Skyhaven. Her brow is firmly furrowed as she walks through the bustling markets, heading straight towards the capital's heart.</desc>
+    <commander id="304" />
+    <deck>
+      <card id="5022" name="Webfoot Raider" />
+      <card id="5022" />
+      <card id="5022" />
+      <card id="1010" name="Lightning Elemental" />
+      <card id="1010" />
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="6017" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="1312" mastery_level="2" name="Scythe Demon" />
+      <card id="2031" mastery_level="2" name="Dryad" />
+      <card id="6012" mastery_level="3" name="Ember Drake" />
+      <card id="2008" mastery_level="4" name="Shadow of Ash" />
+      <card id="7021" mastery_level="5" name="Shadow Elemental" />
+      <card id="7046" mastery_level="6" name="Brambleblight" />
+      <card id="6055" mastery_level="7" name="Phoenix" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5291</id>
+    <name>Reports from Afar</name>
+    <energy>11</energy>
+    <desc>The knight carries a thick scroll. Grasping it tightly, she argues with the guards in front of the Queen's quarters. She insists that she has vital information for the Queen.</desc>
+    <commander id="327" />
+    <deck>
+      <card id="1012" name="Cloud Sylph" />
+      <card id="1012" />
+      <card id="1012" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" />
+      <card id="1018" />
+      <card id="1312" name="Scythe Demon" />
+      <card id="2048" name="Sandmite" />
+      <card id="1318" mastery_level="2" name="Smelted Lava Slug" />
+      <card id="5028" mastery_level="2" name="Winter Blacksmith" />
+      <card id="1315" mastery_level="3" name="Nix Elemental" />
+      <card id="5041" mastery_level="4" name="Skylance Raiders" />
+      <card id="2042" mastery_level="5" name="Carrion Hunter" />
+      <card id="5042" mastery_level="6" name="Tinkerer" />
+      <card id="7052" mastery_level="7" name="Toad the Ravenous" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5292</id>
+    <name>Time Out</name>
+    <energy>11</energy>
+    <desc>The Queen sits at her desk, writing new legislation for the people of Skyhaven. When the door creaks open, the Queen puts down her pen. Noticing the Knight's pale face, the Queen gives her permission to speak.</desc>
+    <commander id="324" />
+    <deck>
+      <card id="1313" name="Lavafrog" />
+      <card id="1313" />
+      <card id="2045" name="Chillbeard Giant" />
+      <card id="5053" name="Anura Witch" />
+      <card id="1010" name="Lightning Elemental" />
+      <card id="1010" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6012" />
+      <card id="1616" mastery_level="2" name="Werewarg" />
+      <card id="6042" mastery_level="2" name="Shadow of Thunder" />
+      <card id="5022" mastery_level="3" name="Webfoot Raider" />
+      <card id="7062" mastery_level="4" name="Brine Bellower" />
+      <card id="7038" mastery_level="5" name="Sol King" />
+      <card id="5059" mastery_level="6" name="Bemola" />
+      <card id="5055" mastery_level="7" name="Galewing" />
+    </deck>
+    <speech>
+      <line>
+        <commander>angelknight</commander>
+        <enemy>0</enemy>
+        <text>Excuse me, my Queen. I don't mean to interrupt...</text>
+      </line>
+      <line>
+        <commander>angelqueen</commander>
+        <enemy>0</enemy>
+        <text>What is it? This had better be important.</text>
+      </line>
+      <line>
+        <commander>angelknight</commander>
+        <enemy>0</enemy>
+        <text>We just got a report about the goblins... they've attacked Beetleton Bunker!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5293</id>
+    <name>Tales from Tarragon</name>
+    <energy>11</energy>
+    <desc>The Queen sinks in her chair upon reading the attack's details in the scroll. The situation must be dire if the goblins found some way to tame dragons.</desc>
+    <commander id="273" />
+    <deck>
+      <card id="1315" name="Nix Elemental" />
+      <card id="1315" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="1613" />
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5006" />
+      <card id="5006" />
+      <card id="7051" name="Stinglash Rider" />
+      <card id="6006" mastery_level="2" name="Chaos Golem" />
+      <card id="2046" mastery_level="2" name="Leaping Dragon" />
+      <card id="7007" mastery_level="3" name="Water Serpent" />
+      <card id="2024" mastery_level="4" name="Dusk Noble" />
+      <card id="6050" mastery_level="5" name="Wortwog" />
+      <card id="6053" mastery_level="6" name="Squire Gorger" />
+      <card id="7054" mastery_level="7" name="The Thing Below" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5294</id>
+    <name>Power Rush</name>
+    <energy>11</energy>
+    <desc>Thanking the Knight, the Queen dismisses her. This is terrible news that requires a tactful response. The goblins have become powerful quickly, and have decided to wage war. She decides to consult her advisors the next day.</desc>
+    <commander id="304" />
+    <deck>
+      <card id="5017" name="Steam Tempest" />
+      <card id="5017" />
+      <card id="1619" name="Earth Elemental" />
+      <card id="1619" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6012" />
+      <card id="6056" name="Potoo" />
+      <card id="5060" name="Quack Apprentice" />
+      <card id="1018" mastery_level="2" name="Armored Eagle" />
+      <card id="6054" mastery_level="2" name="Shadowcrafter" />
+      <card id="5007" mastery_level="3" name="Arcane Scroll" />
+      <card id="2040" mastery_level="4" name="Owlmancer" />
+      <card id="6063" mastery_level="5" name="Firetail Dragon" />
+      <card id="6055" mastery_level="6" name="Phoenix" />
+      <card id="6060" mastery_level="7" name="Pudgytusk" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5295</id>
+    <name>Until Dawn</name>
+    <energy>11</energy>
+    <desc>The sun rises in Skyhaven. The Queen's officials and advisors have gathered at the war table.</desc>
+    <commander id="324" />
+    <deck>
+      <card id="1014" name="Cherub" />
+      <card id="1014" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6007" />
+      <card id="2027" name="Halo Mage" />
+      <card id="2029" name="Sly Critters" />
+      <card id="1018" mastery_level="2" name="Armored Eagle" />
+      <card id="2027" mastery_level="2" name="Halo Mage" />
+      <card id="1014" mastery_level="3" name="Cherub" />
+      <card id="2025" mastery_level="4" name="Blight Knight" />
+      <card id="6042" mastery_level="5" name="Shadow of Thunder" />
+      <card id="5031" mastery_level="6" name="Frostlance Valkyrie" />
+      <card id="5057" mastery_level="7" name="Skystriker" />
+    </deck>
+    <speech>
+      <line>
+        <commander>angelqueen</commander>
+        <enemy>0</enemy>
+        <text>I'd like to start by thanking the High Court for meeting on such short notice. What brings us together is grave news, indeed...</text>
+      </line>
+      <line>
+        <commander>angelqueen</commander>
+        <enemy>0</enemy>
+        <text>The goblin kingdom has become increasingly more aggressive. Already, they have attacked Tarragon and Beetleton Bunker.</text>
+      </line>
+      <line>
+        <commander>angelqueen</commander>
+        <enemy>0</enemy>
+        <text>We must come up with a plan to stop them! Yuriel, begin by gathering intelligence on their operations. Can you handle the task?</text>
+      </line>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>Yes, my Queen...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5296</id>
+    <name>Second Chance</name>
+    <energy>13</energy>
+    <desc>The Queen has seen the brilliance in Yuriel. She knows he is a valuable asset and has given him  a chance for a pardon for his actions with Samael. Yuriel must not fail her.</desc>
+    <commander id="326" />
+    <deck>
+      <card id="1011" name="Archive Keeper" />
+      <card id="1011" />
+      <card id="1011" />
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="6017" />
+      <card id="5017" name="Steam Tempest" />
+      <card id="5017" />
+      <card id="5046" name="Dawn" />
+      <card id="2010" mastery_level="2" name="Silver Wind" />
+      <card id="6022" mastery_level="3" name="Illusion Caster" />
+      <card id="7021" mastery_level="4" name="Shadow Elemental" />
+      <card id="7062" mastery_level="5" name="Brine Bellower" />
+      <card id="6047" mastery_level="6" name="Wither" />
+      <card id="6032" mastery_level="7" name="Mumohotep" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5297</id>
+    <name>Forecasting</name>
+    <energy>13</energy>
+    <desc>Yuriel gathers all the intelligence available about the goblin attacks. He knows they were after objects that would strengthen their kingdom, but what is their next move?</desc>
+    <commander id="273" />
+    <deck>
+      <card id="1317" name="Fire Imp" />
+      <card id="1317" />
+      <card id="1317" />
+      <card id="1319" name="Wraith" />
+      <card id="1319" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="1613" />
+      <card id="2023" name="Grizzly Terror" />
+      <card id="1314" mastery_level="2" name="Skeletal Hound" />
+      <card id="1632" mastery_level="3" name="Shadow Rider" />
+      <card id="5022" mastery_level="4" name="Webfoot Raider" />
+      <card id="1332" mastery_level="5" name="Vampiric Emira" />
+      <card id="6027" mastery_level="6" name="Frigela, the Dread" />
+      <card id="6037" mastery_level="7" name="Keeper of Souls" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5298</id>
+    <name>Shadow from Above</name>
+    <energy>13</energy>
+    <desc>Yuriel approaches the Queen. He is going to need backup if he is going to get one step ahead of the goblins' plan. He has a request for the Queen...</desc>
+    <commander id="304" />
+    <deck>
+      <card id="5012" name="Static Drake" />
+      <card id="5012" />
+      <card id="1610" name="Ranger" />
+      <card id="1610" />
+      <card id="1614" name="Druid" />
+      <card id="1614" />
+      <card id="6034" name="Bone Viper" />
+      <card id="7034" name="Spore Elk" />
+      <card id="1616" mastery_level="2" name="Werewarg" />
+      <card id="2034" mastery_level="3" name="Leap Frog Duo" />
+      <card id="1015" mastery_level="4" name="Windfrog" />
+      <card id="6038" mastery_level="5" name="Hemlock" />
+      <card id="7040" mastery_level="6" name="Warden of the Leaf" />
+      <card id="7063" mastery_level="7" name="Poisac Crawler" />
+    </deck>
+    <speech>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>My Queen, I have a plan to gather intelligence. However, I can not accomplish this on my own. I'll need a solider from the High Guard. Perhaps one of the sneaky variety?</text>
+      </line>
+      <line>
+        <commander>angelqueen</commander>
+        <enemy>0</enemy>
+        <text>I see. For a mission of this importance I'll send you one of our best.  I'll have Geoffrey meet you in your quarters as soon as possible.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5299</id>
+    <name>Through the Looking Glass</name>
+    <energy>13</energy>
+    <desc>Yuriel takes Geoffrey  to the north west edge of Skyhaven. He pulls out a looking glass and quickly flips through his book of spells. 'Ah, here it is.' he says, 'the spell of Eagle Sight should help us see what those goblins are up too.'</desc>
+    <commander id="327" />
+    <deck>
+      <card id="1011" name="Archive Keeper" />
+      <card id="1011" />
+      <card id="1319" name="Wraith" />
+      <card id="1319" />
+      <card id="1317" name="Fire Imp" />
+      <card id="1317" />
+      <card id="6031" name="Iceblood Assassin" />
+      <card id="2048" name="Sandmite" />
+      <card id="1313" mastery_level="2" name="Lavafrog" />
+      <card id="7041" mastery_level="3" name="Feral Angel" />
+      <card id="1014" mastery_level="4" name="Cherub" />
+      <card id="1630" mastery_level="5" name="Giant Squid" />
+      <card id="7048" mastery_level="6" name="Bogskull Widow" />
+      <card id="1343" mastery_level="7" name="Firehorn" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5300</id>
+    <name>Security Blanket</name>
+    <energy>13</energy>
+    <desc>Yuriel begins to flip through his spell book again as  Geoffrey evaluates his entry point.  'Now hold still', he says. 'The Ramda's Protectors spell will allow me to help if you encounter battle.</desc>
+    <commander id="325" />
+    <deck>
+      <card id="1012" name="Cloud Sylph" />
+      <card id="1012" />
+      <card id="1012" />
+      <card id="1618" name="Frog Scout" />
+      <card id="1618" />
+      <card id="5050" name="Cloud Spear" />
+      <card id="7035" name="Carrion Tiger" />
+      <card id="7061" name="Thickskin Dragon" />
+      <card id="6061" mastery_level="2" name="Decagon" />
+      <card id="1617" mastery_level="2" name="Water Elemental" />
+      <card id="5025" mastery_level="3" name="Steelskin Dragon" />
+      <card id="1618" mastery_level="4" name="Frog Scout" />
+      <card id="7030" mastery_level="5" name="Arctic Ambusher" />
+      <card id="7037" mastery_level="6" name="Bane" />
+      <card id="2047" mastery_level="7" name="Conjured Dragon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>Can you see a good entry point to the goblin kingdom?</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>The city looks different from the last time I saw it. Its security has been fortified, so it will be harder to sneak in. Outside the city, I can see some goblins working on the walls...</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>That will be the best place to start.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5301</id>
+    <name>Spy Watch</name>
+    <energy>11</energy>
+    <desc>Geoffrey leaves for his journey to the goblin kingdom. With the knowledge from the looking-glass spell, he heads towards the weakest point in their defenses.</desc>
+    <commander id="326" />
+    <deck>
+      <card id="7012" name="Life Drake" />
+      <card id="7012" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6012" />
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5006" />
+      <card id="2044" name="Quillhide Dragon" />
+      <card id="6050" name="Wortwog" />
+      <card id="2032" mastery_level="2" name="Brimstone" />
+      <card id="7053" mastery_level="3" name="Bee Eater" />
+      <card id="5012" mastery_level="4" name="Static Drake" />
+      <card id="5024" mastery_level="5" name="Cloudtop Dragon" />
+      <card id="6040" mastery_level="6" name="Scorching Cutlass" />
+      <card id="6023" mastery_level="7" name="Broodmother" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5302</id>
+    <name>Gift from Beetleton</name>
+    <energy>11</energy>
+    <desc>A troop of goblins circles the kingdom's perimeter. One of them has the Spellstone hammer from Bettleton Bunker. Geoffrey sneaks closer.</desc>
+    <commander id="304" />
+    <deck>
+      <card id="1319" name="Wraith" />
+      <card id="1319" />
+      <card id="1319" />
+      <card id="1615" name="Rune Panther" />
+      <card id="1615" />
+      <card id="1615" />
+      <card id="6036" name="Cursed Ogre" />
+      <card id="1332" name="Vampiric Emira" />
+      <card id="1614" mastery_level="2" name="Druid" />
+      <card id="6021" mastery_level="3" name="Marsh Ogre" />
+      <card id="1314" mastery_level="4" name="Skeletal Hound" />
+      <card id="7035" mastery_level="5" name="Carrion Tiger" />
+      <card id="6030" mastery_level="6" name="Noveria Yeti" />
+      <card id="7036" mastery_level="7" name="Deepwood Corpse" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>That hammer... it's a legendary artifact from Beetleton Bunker. The goblins stole it already?</text>
+      </line>
+      <line>
+        <commander>frogemperor</commander>
+        <enemy>1</enemy>
+        <text>Hey guys, there's a hole 'n the exterior o'er here. Why don' you give it a whack with that fancy hammer.</text>
+      </line>
+      <line>
+        <commander>goblinfootmen</commander>
+        <enemy>1</enemy>
+        <text>If you insist, Cap'n! But let's hurry back to the tower soon, it's too hot out here for this kinda work!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5303</id>
+    <name>Upkeep</name>
+    <energy>11</energy>
+    <desc>The goblins get to the edge of the perimeter. The goblin carrying the hammer takes out a schematic of the watch tower, laying it on the ground...</desc>
+    <commander id="325" />
+    <deck>
+      <card id="5012" name="Static Drake" />
+      <card id="5012" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1011" />
+      <card id="1011" />
+      <card id="7024" name="Woolmane Dragon" />
+      <card id="2020" name="Tidetaken Fighter" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="6029" mastery_level="2" name="Spinehead Stalker" />
+      <card id="6056" mastery_level="2" name="Potoo" />
+      <card id="5035" mastery_level="3" name="Vapor Guard" />
+      <card id="5012" mastery_level="4" name="Static Drake" />
+      <card id="6061" mastery_level="5" name="Decagon" />
+      <card id="7063" mastery_level="6" name="Poisac Crawler" />
+      <card id="7019" mastery_level="7" name="Lady of the Swamp" />
+    </deck>
+    <speech>
+      <line>
+        <commander>frogemperor</commander>
+        <enemy>1</enemy>
+        <text>This is the spot, boys. Boss wants the watch tower right here.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5304</id>
+    <name>Automated System</name>
+    <energy>11</energy>
+    <desc>The goblins swing the hammer at the schematic. Geoffrey watches the artifact's magic: a watch tower grows from the ground. With just a few swings of the hammer, a huge watchtower has been built.</desc>
+    <commander id="326" />
+    <deck>
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="5007" name="Arcane Scroll" />
+      <card id="5007" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="5022" />
+      <card id="5022" />
+      <card id="2011" name="Poliworg" />
+      <card id="2014" name="Tadpole Warmage" />
+      <card id="6051" mastery_level="2" name="Treeblade Thief" />
+      <card id="5050" mastery_level="3" name="Cloud Spear" />
+      <card id="1019" mastery_level="4" name="Oracle" />
+      <card id="5016" mastery_level="5" name="Fowl Swarm" />
+      <card id="5052" mastery_level="6" name="Paradise Avian" />
+      <card id="1043" mastery_level="7" name="Lilypad Bard" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5305</id>
+    <name>Break Time</name>
+    <energy>11</energy>
+    <desc>The goblins rejoice at the Spellstone hammer's power. Wiping their brows, they rest under the newly-formed tower.</desc>
+    <commander id="327" />
+    <deck>
+      <card id="1315" name="Nix Elemental" />
+      <card id="1315" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6007" />
+      <card id="6007" />
+      <card id="6054" name="Shadowcrafter" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="5060" mastery_level="2" name="Quack Apprentice" />
+      <card id="7006" mastery_level="2" name="Treant Sapling" />
+      <card id="2031" mastery_level="3" name="Dryad" />
+      <card id="1312" mastery_level="4" name="Scythe Demon" />
+      <card id="6042" mastery_level="5" name="Shadow of Thunder" />
+      <card id="6033" mastery_level="6" name="Firebeard" />
+      <card id="5055" mastery_level="7" name="Galewing" />
+    </deck>
+    <speech>
+      <line>
+        <commander>goblinfootmen</commander>
+        <enemy>1</enemy>
+        <text>I'm lovin' this hammer! It only took a few swings of it, and a whole watchtower grew up from the ground! Now we finally have somewhere to escape the heat.</text>
+      </line>
+      <line>
+        <commander>frogemperor</commander>
+        <enemy>1</enemy>
+        <text>If you think the heat here is bad, just wait 'til we get to the Salt Wastes. You'll be sweatin' bullets.</text>
+      </line>
+      <line>
+        <commander>goblinfootmen</commander>
+        <enemy>1</enemy>
+        <text>Eh, if we get far enough without gettin' chomped on by those darned dragons, first!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5306</id>
+    <name>Red Handed</name>
+    <energy>11</energy>
+    <desc>Geoffrey has gotten the information he needed. As he turns to leave, he bumps straight into a goblin!</desc>
+    <commander id="323" />
+    <deck>
+      <card id="1010" name="Lightning Elemental" />
+      <card id="1010" />
+      <card id="1010" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="6006" />
+      <card id="6056" name="Potoo" />
+      <card id="7062" name="Brine Bellower" />
+      <card id="2033" name="Arcblaze Dragon" />
+      <card id="6063" mastery_level="2" name="Firetail Dragon" />
+      <card id="7011" mastery_level="2" name="Wolf Girl" />
+      <card id="2046" mastery_level="3" name="Leaping Dragon" />
+      <card id="1319" mastery_level="4" name="Wraith" />
+      <card id="2005" mastery_level="5" name="Sailing Drake" />
+      <card id="6043" mastery_level="6" name="Sandstorm" />
+      <card id="6057" mastery_level="7" name="Beammite" />
+    </deck>
+    <speech>
+      <line>
+        <commander>aprilchicken</commander>
+        <enemy>1</enemy>
+        <text>Who the in the bloody fire pit are you?!</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Oh, ahh I'm  the new gardener. They needed someone to cut the real high branches.</text>
+      </line>
+      <line>
+        <commander>aprilchicken</commander>
+        <enemy>1</enemy>
+        <text>You don't say! I always thought there was a lot of landscaping potential around here! Hey guys! Have you meet the new gardener?</text>
+      </line>
+      <line>
+        <commander>frogemperor</commander>
+        <enemy>0</enemy>
+        <text>You idiot! He's not a gardener, he's a spy! Get 'em!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5307</id>
+    <name>Back Home</name>
+    <energy>11</energy>
+    <desc>Geoffrey managed to make his way back to Skyhaven. He quickly finds Yuriel and relays his findings.</desc>
+    <commander id="273" />
+    <deck>
+      <card id="1017" name="Judgment" />
+      <card id="1017" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" />
+      <card id="1312" name="Scythe Demon" />
+      <card id="1312" />
+      <card id="7057" name="Bill Crasher" />
+      <card id="6054" name="Shadowcrafter" />
+      <card id="7055" mastery_level="2" name="Valley Strider" />
+      <card id="2030" mastery_level="3" name="Ebon Duelist" />
+      <card id="5006" mastery_level="4" name="Arms Enforcer" />
+      <card id="5004" mastery_level="5" name="Lightning Lord" />
+      <card id="7058" mastery_level="6" name="Steppe Stalker" />
+      <card id="5056" mastery_level="7" name="Kaliri the Foremost" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5308</id>
+    <name>Bad News</name>
+    <energy>11</energy>
+    <desc>Yuriel is surprised to hear that the goblins intend to take the Salt Wastes. Even with the power of the hammer, the Salt Wastes are a difficult environment to inhabit.</desc>
+    <commander id="326" />
+    <deck>
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="1318" />
+      <card id="7007" name="Water Serpent" />
+      <card id="7007" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1311" />
+      <card id="5065" name="Hive Guard" />
+      <card id="2050" name="Slithering Pincer" />
+      <card id="5017" mastery_level="2" name="Steam Tempest" />
+      <card id="6066" mastery_level="3" name="Psychic Beetle" />
+      <card id="1615" mastery_level="4" name="Rune Panther" />
+      <card id="6044" mastery_level="5" name="Firewalker" />
+      <card id="7064" mastery_level="6" name="Willowfly" />
+      <card id="2051" mastery_level="7" name="Dune Hopper" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5309</id>
+    <name>Ancient History</name>
+    <energy>11</energy>
+    <desc>Yuriel has been searching through his books for hours. At last, he finds what he's been looking for. An ancient book about the history of the Salt Wastes. </desc>
+    <commander id="324" />
+    <deck>
+      <card id="1011" name="Archive Keeper" />
+      <card id="1011" />
+      <card id="1011" />
+      <card id="1313" name="Lavafrog" />
+      <card id="1313" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="5053" name="Anura Witch" />
+      <card id="2025" mastery_level="2" name="Blight Knight" />
+      <card id="7006" mastery_level="2" name="Treant Sapling" />
+      <card id="2020" mastery_level="3" name="Tidetaken Fighter" />
+      <card id="5022" mastery_level="4" name="Webfoot Raider" />
+      <card id="6056" mastery_level="5" name="Potoo" />
+      <card id="5029" mastery_level="6" name="Snowback Dragon" />
+      <card id="6045" mastery_level="7" name="Darkflame" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5310</id>
+    <name>Dragon Breeding Ground</name>
+    <energy>11</energy>
+    <desc>The book notes the unusual weather of the wastes. There are months where the sun does not set and temperature is scorching hot. Surely not a comfortable environment for Goblins, but perhaps dragons?</desc>
+    <commander id="327" />
+    <deck>
+      <card id="1012" name="Cloud Sylph" />
+      <card id="1012" />
+      <card id="1012" />
+      <card id="1019" name="Oracle" />
+      <card id="1019" />
+      <card id="7045" name="Sakura" />
+      <card id="2031" name="Dryad" />
+      <card id="6031" name="Iceblood Assassin" />
+      <card id="7015" mastery_level="2" name="Bog Aberration" />
+      <card id="2041" mastery_level="2" name="Sharpwing" />
+      <card id="2048" mastery_level="3" name="Sandmite" />
+      <card id="7006" mastery_level="4" name="Treant Sapling" />
+      <card id="2002" mastery_level="5" name="Lantern Guardian" />
+      <card id="5045" mastery_level="6" name="Echo Elemental" />
+      <card id="6013" mastery_level="7" name="Rust Goliath" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5311</id>
+    <name>Royal Report</name>
+    <energy>11</energy>
+    <desc>Yuriel is starting to see the goblins' plan. Even Skyhaven could be in danger if the goblins team up further with dragons. Yuriel rushes to report his findings to the Queen...</desc>
+    <commander id="273" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" />
+      <card id="1012" name="Cloud Sylph" />
+      <card id="1012" />
+      <card id="1628" name="Garganotos" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="7055" name="Valley Strider" />
+      <card id="6051" name="Treeblade Thief" />
+      <card id="5060" mastery_level="2" name="Quack Apprentice" />
+      <card id="6020" mastery_level="2" name="Croak Piercer" />
+      <card id="2024" mastery_level="3" name="Dusk Noble" />
+      <card id="8018" mastery_level="4" name="Doom Tentacle" />
+      <card id="7057" mastery_level="5" name="Bill Crasher" />
+      <card id="5001" mastery_level="6" name="Aven Skypiercer" />
+      <card id="6059" mastery_level="7" name="Violetfire Igniter" />
+    </deck>
+    <speech>
+      <line>
+        <commander>angelqueen</commander>
+        <enemy>0</enemy>
+        <text>Yuriel, you have returned quickly. What have you found?</text>
+      </line>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>The goblins are expanding their territory into the Salt Wastes. There, they plan to breed dragons. They're building an entire army!</text>
+      </line>
+      <line>
+        <commander>angelqueen</commander>
+        <enemy>0</enemy>
+        <text>Such a foolhardy plan. Yet if it works, the dragons could pose a serious threat to Skyhaven.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5312</id>
+    <name>Backup has Arrived</name>
+    <energy>11</energy>
+    <desc>The Queen eagerly awaits for Yuriel's report. She has her guard quickly usher him into her quarters.</desc>
+    <commander id="325" />
+    <deck>
+      <card id="1613" name="Acidic Spider" />
+      <card id="1613" />
+      <card id="7007" name="Water Serpent" />
+      <card id="7007" />
+      <card id="7061" name="Thickskin Dragon" />
+      <card id="2027" name="Halo Mage" />
+      <card id="2027" name="Halo Mage" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="7011" mastery_level="2" name="Wolf Girl" />
+      <card id="6042" mastery_level="2" name="Shadow of Thunder" />
+      <card id="1028" mastery_level="3" name="Heroic Frog" />
+      <card id="7016" mastery_level="4" name="Webfist Shaman" />
+      <card id="7042" mastery_level="5" name="Scurvy Hopper" />
+      <card id="5032" mastery_level="6" name="Hail Hurler" />
+      <card id="5008" mastery_level="7" name="Ice Dragon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>angelqueen</commander>
+        <enemy>0</enemy>
+        <text>Even so, the Wastes will be difficult terrain for our army. We shouldn't handle this threat alone.</text>
+      </line>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>Just what I was thinking, my Queen. I brought along an old friend of mine. He can help us through the Wastes.</text>
+      </line>
+      <line>
+        <commander>orchero</commander>
+        <enemy>0</enemy>
+        <text>Why hello there Queenie, the name's Hexfist!</text>
       </line>
     </speech>
   </mission>
