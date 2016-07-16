@@ -34323,6 +34323,261 @@
       <skill id="jam" c="3" />
     </upgrade>
   </unit>
+  <unit>
+    <id>7067</id>
+    <card_type>2</card_type>
+    <name>Mantis</name>
+    <picture>Snake_Bug_A</picture>
+    <asset_bundle>65</asset_bundle>
+    <attack>4</attack>
+    <health>7</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="1" />
+    <skill id="rally" x="1" />
+    <type>3</type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="1" />
+      <skill id="rally" x="1" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="1" />
+      <skill id="rally" x="2" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="2" />
+      <skill id="rally" x="3" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17067</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Creeping Mantis</name>
+    <picture>Snake_Bug_A</picture>
+    <asset_bundle>65</asset_bundle>
+    <attack>4</attack>
+    <health>13</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="2" />
+    <skill id="rally" x="3" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="2" />
+      <skill id="rally" x="4" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="2" />
+      <skill id="rally" x="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27067</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Shadow Mantis</name>
+    <picture>Snake_Bug_B</picture>
+    <asset_bundle>65</asset_bundle>
+    <attack>5</attack>
+    <health>16</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="2" />
+    <skill id="rally" x="4" />
+    <skill id="berserk" x="2" />
+    <type>3</type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="3" />
+      <skill id="rally" x="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="3" />
+      <skill id="rally" x="5" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7068</id>
+    <card_type>2</card_type>
+    <name>Eve Allurephid</name>
+    <picture>Leaf_Scorpion_A</picture>
+    <asset_bundle>65</asset_bundle>
+    <hidden_until_time>1468861200</hidden_until_time>
+    <attack>3</attack>
+    <health>12</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="leech" x="1" />
+    <skill id="enfeeble" x="1" />
+    <type>3</type>
+    <sub_type>13</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="1" />
+      <skill id="leech" x="1" />
+      <skill id="enfeeble" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="1" />
+      <skill id="leech" x="2" />
+      <skill id="enfeeble" x="1" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17068</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Evening Allurephid</name>
+    <picture>Leaf_Scorpion_A</picture>
+    <asset_bundle>65</asset_bundle>
+    <hidden_until_time>1468861200</hidden_until_time>
+    <attack>4</attack>
+    <health>17</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="leech" x="2" />
+    <skill id="enfeeble" x="1" all="1" />
+    <type>3</type>
+    <sub_type>13</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="2" />
+      <skill id="leech" x="2" />
+      <skill id="enfeeble" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="2" />
+      <skill id="leech" x="2" />
+      <skill id="enfeeble" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="2" />
+      <skill id="leech" x="3" />
+      <skill id="enfeeble" x="2" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27068</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Evenfall Allurephid</name>
+    <picture>Leaf_Scorpion_B</picture>
+    <asset_bundle>65</asset_bundle>
+    <hidden_until_time>1468861200</hidden_until_time>
+    <attack>5</attack>
+    <health>22</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="leech" x="3" />
+    <skill id="enfeeble" x="2" all="1" />
+    <type>3</type>
+    <sub_type>13</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="3" />
+      <skill id="leech" x="4" />
+      <skill id="enfeeble" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="3" />
+      <skill id="leech" x="5" />
+      <skill id="enfeeble" x="3" all="1" />
+    </upgrade>
+  </unit>
   <!-- END SET 3000 - Premium -->
   <!-- START SET 8000 - Story Element Assaults -->
   <unit>
@@ -47935,8 +48190,8 @@
     <icon>corrosive</icon>
     <name>Corrosive</name>
     <desc>Creatures attacking this gain Corrosion, lowering Attack. This effect stacks. Wears off if not reapplied for a turn.</desc>
-    <attributes x="1" y="1" all="0" c="0" s="0" />
-    <balance_points>1</balance_points>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <balance_points>4.5</balance_points>
     <hidden>1</hidden>
   </skillType>
   <!-- Triggered -->
@@ -47947,7 +48202,7 @@
     <name>Valor</name>
     <desc>First time this activates, gains Attack permanently if opposing card has more Attack.</desc>
     <attributes x="1" y="1" all="0" c="0" s="0" />
-    <balance_points>1</balance_points>
+    <balance_points>3</balance_points>
     <hidden>1</hidden>
   </skillType>
   <!-- Activation -->

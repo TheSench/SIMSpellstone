@@ -8497,7 +8497,7 @@
     <id>5290</id>
     <name>Foreign Fires</name>
     <energy>11</energy>
-    <desc>A High Knight of the Queen lands in Skyhaven. Her brow is firmly furrowed as she walks through the bustling markets, heading straight towards the capital's heart.</desc>
+    <desc>Yuriel has landed in Skyhaven. His brow is firmly furrowed as he walks through the bustling markets, heading straight towards the capital's heart. He knows the Goblins are a growing threat. If he is to ensure the safety of Luminis, he will need outside help.</desc>
     <commander id="304" />
     <deck>
       <card id="5022" name="Webfoot Raider" />
@@ -8521,7 +8521,7 @@
     <id>5291</id>
     <name>Reports from Afar</name>
     <energy>11</energy>
-    <desc>The knight carries a thick scroll. Grasping it tightly, she argues with the guards in front of the Queen's quarters. She insists that she has vital information for the Queen.</desc>
+    <desc>Yuriel carries a thick scroll. Grasping it tightly, he argues with the guards in front of the Queen's quarters. He insists that he has vital information for the Queen.</desc>
     <commander id="327" />
     <deck>
       <card id="1012" name="Cloud Sylph" />
@@ -8545,7 +8545,7 @@
     <id>5292</id>
     <name>Time Out</name>
     <energy>11</energy>
-    <desc>The Queen sits at her desk, writing new legislation for the people of Skyhaven. When the door creaks open, the Queen puts down her pen. Noticing the Knight's pale face, the Queen gives her permission to speak.</desc>
+    <desc>The Queen sits at her desk, writing new legislation for the people of Skyhaven. When the door creaks open, the Queen's brow perks. Noticing Yuriel's concerned face, the Queen gives him permission to speak.</desc>
     <commander id="324" />
     <deck>
       <card id="1313" name="Lavafrog" />
@@ -8566,7 +8566,7 @@
     </deck>
     <speech>
       <line>
-        <commander>angelknight</commander>
+        <commander>owlmystic</commander>
         <enemy>0</enemy>
         <text>Excuse me, my Queen. I don't mean to interrupt...</text>
       </line>
@@ -8576,9 +8576,9 @@
         <text>What is it? This had better be important.</text>
       </line>
       <line>
-        <commander>angelknight</commander>
+        <commander>owlmystic</commander>
         <enemy>0</enemy>
-        <text>We just got a report about the goblins... they've attacked Beetleton Bunker!</text>
+        <text>I come with grave news about the goblins... they've attacked Beetleton Bunker!</text>
       </line>
     </speech>
   </mission>
@@ -8610,7 +8610,7 @@
     <id>5294</id>
     <name>Power Rush</name>
     <energy>11</energy>
-    <desc>Thanking the Knight, the Queen dismisses her. This is terrible news that requires a tactful response. The goblins have become powerful quickly, and have decided to wage war. She decides to consult her advisors the next day.</desc>
+    <desc>Thanking Yuriel, the Queen dismisses him. This is terrible news that requires a tactful response. The goblins have become powerful quickly, and have decided to wage war. She decides to consult her advisors the next day.</desc>
     <commander id="304" />
     <deck>
       <card id="5017" name="Steam Tempest" />
