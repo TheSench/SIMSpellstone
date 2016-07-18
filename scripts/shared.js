@@ -1752,7 +1752,7 @@ function getPresetUnit(unitInfo, level, maxLevel) {
     if (level >= maxLevel) {
         unitLevel = 7;
         if (canFuse(cardID)) {
-            cardID = fuseCard(cardID, 3);
+            cardID = fuseCard(cardID);
         }
     } else if (level > 1 && is_commander(cardID)) {
         unitLevel = Math.min(level, parseInt(loadCard(cardID).rarity) + 2);
@@ -1765,7 +1765,7 @@ function upgradeCard(unitInfo) {
     var maxLevel = (parseInt(loadCard(unitInfo.id).rarity) + 2);
     if (unitInfo.level == maxLevel) {
         if (canFuse(unitInfo.id)) {
-            unitInfo.id = fuseCard(unitInfo.id);
+            unitInfo.id = fuseCard(unitInfo.id, 1);
             unitInfo.level = 1;
         } else {
             return false;
@@ -1789,13 +1789,17 @@ function canFuse(cardID) {
 
 function fuseCard(cardID, fusion) {
     if (DoNotFuse.indexOf(cardID) == -1) {
-        if (!fusion) {
-            return doFuseCard(cardID);
+        // Fuse X number of times
+        if (fusion) {
+            for (var i = 0; i < fusion; i++) {
+                cardID = doFuseCard(cardID);
+            }
+
+        // Max fusion
         } else {
-            var current = getFusion(cardID);
-            while (current < fusion) {
+            while(true) {
                 var fused = doFuseCard(cardID);
-                if (fused == cardID) {
+                if (cardID === fused) {
                     break;
                 }
                 cardID = fused;
