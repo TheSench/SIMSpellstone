@@ -1752,7 +1752,7 @@ function getPresetUnit(unitInfo, level, maxLevel) {
     if (level >= maxLevel) {
         unitLevel = 7;
         if (canFuse(cardID)) {
-            cardID = fuseCard(cardID, "2");
+            cardID = fuseCard(cardID, 3);
         }
     } else if (level > 1 && is_commander(cardID)) {
         unitLevel = Math.min(level, parseInt(loadCard(cardID).rarity) + 2);
@@ -1789,14 +1789,50 @@ function canFuse(cardID) {
 
 function fuseCard(cardID, fusion) {
     if (DoNotFuse.indexOf(cardID) == -1) {
-        if (!fusion) fusion = (cardID.length > 4 ? "2" : "1");
-        if (cardID.length > 4) {
-            cardID = fusion + cardID.substring(1);
+        if (!fusion) {
+            return doFuseCard(cardID);
         } else {
-            cardID = fusion + cardID;
+            var current = getFusion(cardID);
+            while (current < fusion) {
+                var fused = doFuseCard(cardID);
+                if (fused == cardID) {
+                    break;
+                }
+                cardID = fused;
+            }
         }
     }
     return cardID;
+}
+
+function doFuseCard(cardID) {
+    var fused = FUSIONS[cardID];
+    if (fused) {
+        return fused;
+    } else {
+        return cardID;
+    }
+}
+
+var reverseFusions;
+function getFusion(cardID) {
+    var fusion = 0,
+        base;
+
+    if (!reverseFusions) getReverseFusions();
+
+    do {
+        base = reverseFusions[cardID];
+        fusion++;
+    } while (base);
+    return fusion;
+}
+
+function getReverseFusions() {
+    reverseFusions = {};
+    for (var key in FUSIONS) {
+        reverseFusions[FUSIONS[key]] = key;
+    }
 }
 
 // Output card array
