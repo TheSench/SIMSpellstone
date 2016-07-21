@@ -2945,7 +2945,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>Rumor Mill</name>
-    <icon id="honey_jar" bundle="58" />
+    <icon id="angel_feather100" bundle="58" />
     <location_id>106</location_id>
     <x>245</x>
     <y>468</y>
@@ -2971,7 +2971,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>Territory Control</name>
-    <icon id="honey_jar" bundle="58" />
+    <icon id="angel_feather100" bundle="58" />
     <location_id>106</location_id>
     <x>403</x>
     <y>408</y>
@@ -2997,7 +2997,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>Redemption</name>
-    <icon id="honey_jar" bundle="58" />
+    <icon id="angel_feather100" bundle="58" />
     <location_id>106</location_id>
     <x>554</x>
     <y>328</y>
@@ -3025,7 +3025,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>Groundwork</name>
-    <icon id="honey_jar" bundle="58" />
+    <icon id="angel_feather100" bundle="58" />
     <location_id>106</location_id>
     <x>699</x>
     <y>216</y>
@@ -3051,7 +3051,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>What was Sown</name>
-    <icon id="honey_jar" bundle="58" />
+    <icon id="angel_feather100" bundle="58" />
     <location_id>106</location_id>
     <x>493</x>
     <y>195</y>
@@ -3077,7 +3077,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>Plan of Attack</name>
-    <icon id="honey_jar" bundle="58" />
+    <icon id="angel_feather100" bundle="58" />
     <location_id>106</location_id>
     <x>290</x>
     <y>183</y>

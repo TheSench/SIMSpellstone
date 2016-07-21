@@ -3951,5 +3951,192 @@
       <gold>800</gold>
     </reward>
   </achievement>
+  <!-- Event 14 Angels -->
+  <achievement>
+    <id>3126</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Rumor Mill</name>
+    <desc>Complete the 'Rumor Mill' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1077</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3127</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Rumor Mill Mastery</name>
+    <desc>Complete the 'Rumor Mill' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3126</achievement_req>
+    <req>
+      <campaign>1077</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3128</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Territory Control</name>
+    <desc>Complete the 'Territory Control' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1078</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3129</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Territory Control Mastery</name>
+    <desc>Complete the 'Territory Control' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3128</achievement_req>
+    <req>
+      <campaign>1078</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3130</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Redemption</name>
+    <desc>Complete the 'Redemption' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1079</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3131</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Redemption Mastery</name>
+    <desc>Complete the 'Redemption' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3130</achievement_req>
+    <req>
+      <campaign>1079</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3132</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Groundwork</name>
+    <desc>Complete the 'Groundwork' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1080</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3133</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Groundwork Mastery</name>
+    <desc>Complete the 'Groundwork' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3132</achievement_req>
+    <req>
+      <campaign>1080</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3134</id>
+    <type>2</type>
+    <order>101</order>
+    <name>What was Sown</name>
+    <desc>Complete the 'What was Sown' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1081</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3135</id>
+    <type>2</type>
+    <order>101</order>
+    <name>What was Sown Mastery</name>
+    <desc>Complete the 'What was Sown' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3134</achievement_req>
+    <req>
+      <campaign>1081</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3136</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Plan of Attack</name>
+    <desc>Complete the 'Plan of Attack' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1082</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3137</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Plan of Attack Mastery</name>
+    <desc>Complete the 'Plan of Attack' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3136</achievement_req>
+    <req>
+      <campaign>1082</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
 </root>

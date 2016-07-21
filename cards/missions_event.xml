@@ -8249,7 +8249,7 @@
     <id>5282</id>
     <name>To the Rescue</name>
     <energy>11</energy>
-    <desc>Rayne see that Dilbert is in trouble. With the amount of goblins swarming him, Aria suspects the artifact is in his home. They rush to his aid!</desc>
+    <desc>Rayne sees that Dilbert is in trouble. With the amount of goblins swarming him, Aria suspects the artifact is in his home. They rush to his aid!</desc>
     <commander id="319" />
     <deck>
       <card id="5016" name="Fowl Swarm" />
@@ -8411,7 +8411,7 @@
     </deck>
     <speech>
       <line>
-        <commander>oda</commander>
+        <commander>dragonridingringleader</commander>
         <enemy>1</enemy>
         <text>Well done, boys! Let's get out of here before anyone tries to spoil our victory.</text>
       </line>
@@ -8421,7 +8421,7 @@
         <text>You destroyed a whole town for a hammer, messed up my weekend plans, and you think we are just going to let you get away?</text>
       </line>
       <line>
-        <commander>oda</commander>
+        <commander>dragonridingringleader</commander>
         <enemy>1</enemy>
         <text>Oh puddin', you wouldn't be the first to try. </text>
       </line>
@@ -8469,7 +8469,7 @@
       <card id="2004" mastery_level="2" name="Lavatail Dragon" />
       <card id="1631" mastery_level="2" name="Venom Dragon" />
       <card id="6042" mastery_level="3" name="Shadow of Thunder" />
-      <card id="8018" mastery_level="4" name="Doom Tentacle" />
+      <card id="7004" mastery_level="4" name="Ice Golem" />
       <card id="6057" mastery_level="5" name="Beammite" />
       <card id="5061" mastery_level="6" name="Thunderfist Rex" />
       <card id="7039" mastery_level="7" name="Winged Giant" />
@@ -8497,7 +8497,7 @@
     <id>5290</id>
     <name>Foreign Fires</name>
     <energy>11</energy>
-    <desc>Yuriel has landed in Skyhaven. His brow is firmly furrowed as he walks through the bustling markets, heading straight towards the capital's heart. He knows the Goblins are a growing threat. If he is to ensure the safety of Luminis, he will need outside help.</desc>
+    <desc>Yuriel has landed in Skyhaven. He walks through the bustling markets, heading straight towards the capital's heart. He knows the Goblins are a growing threat. If he is to ensure the safety of Luminis, he will need outside help.</desc>
     <commander id="304" />
     <deck>
       <card id="5022" name="Webfoot Raider" />
@@ -9137,7 +9137,7 @@
       <card id="5060" mastery_level="2" name="Quack Apprentice" />
       <card id="6020" mastery_level="2" name="Croak Piercer" />
       <card id="2024" mastery_level="3" name="Dusk Noble" />
-      <card id="8018" mastery_level="4" name="Doom Tentacle" />
+      <card id="6051" mastery_level="4" name="Treeblade Thief" />
       <card id="7057" mastery_level="5" name="Bill Crasher" />
       <card id="5001" mastery_level="6" name="Aven Skypiercer" />
       <card id="6059" mastery_level="7" name="Violetfire Igniter" />
