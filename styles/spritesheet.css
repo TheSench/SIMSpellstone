@@ -831,6 +831,8 @@
 .sprite-Snake_Bug_B{ background-position: -420px -120px; background-image: url('../res/cardImages/SpriteSheet9.jpg');}
 .sprite-Stone_Forger_Angel_B{ background-position: -504px -120px; background-image: url('../res/cardImages/SpriteSheet9.jpg');}
 .sprite-Stone_Forger_Angel_A{ background-position: -588px -120px; background-image: url('../res/cardImages/SpriteSheet9.jpg');}
+.sprite-Blind_Justice_A{ background-position: -672px -120px; background-image: url('../res/cardImages/SpriteSheet9.jpg');}
+.sprite-Blind_Justice_B{ background-position: -756px -120px; background-image: url('../res/cardImages/SpriteSheet9.jpg');}
 .portrait-portrait_aetherguardian{ background-position: -0px -0px; background-image: url('../res/cardImages/PortraitSheet1.jpg');}
 .portrait-portrait_angelknight{ background-position: -84px -0px; background-image: url('../res/cardImages/PortraitSheet1.jpg');}
 .portrait-portrait_angelqueen{ background-position: -168px -0px; background-image: url('../res/cardImages/PortraitSheet1.jpg');}

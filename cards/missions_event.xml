@@ -8455,7 +8455,7 @@
     <id>5289</id>
     <name>Puddin Pops</name>
     <energy>13</energy>
-    <desc>Aria, furious that anyone dares call her 'puddin', prepares to attack. Her eyes glow as the begins to summon the undead to aid her.</desc>
+    <desc>Aria, furious that anyone dares call her 'puddin', prepares to attack. Her eyes glow as she begins to summon the undead to aid her.</desc>
     <commander id="322" />
     <deck>
       <card id="1012" name="Cloud Sylph" />
@@ -8545,7 +8545,7 @@
     <id>5292</id>
     <name>Time Out</name>
     <energy>11</energy>
-    <desc>The Queen sits at her desk, writing new legislation for the people of Skyhaven. When the door creaks open, the Queen's brow perks. Noticing Yuriel's concerned face, the Queen gives him permission to speak.</desc>
+    <desc>The Queen sits at her desk, writing new legislation for the people of Skyhaven. When the door creaks open, the Queen's brow furrows. Noticing Yuriel's concerned face, the Queen gives him permission to speak.</desc>
     <commander id="324" />
     <deck>
       <card id="1313" name="Lavafrog" />
@@ -8748,12 +8748,17 @@
       <line>
         <commander>owlmystic</commander>
         <enemy>0</enemy>
-        <text>My Queen, I have a plan to gather intelligence. However, I can not accomplish this on my own. I'll need a solider from the High Guard. Perhaps one of the sneaky variety?</text>
+        <text>My Queen, I have a plan to gather intelligence. However, I can not accomplish this on my own.</text>
+      </line>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>I'll need a soldier from the High Guard. Perhaps one of the sneaky variety?</text>
       </line>
       <line>
         <commander>angelqueen</commander>
         <enemy>0</enemy>
-        <text>I see. For a mission of this importance I'll send you one of our best.  I'll have Geoffrey meet you in your quarters as soon as possible.</text>
+        <text>I see. For a mission of this importance, I'll send you one of our best. I'll have Geoffrey meet you in your quarters as soon as possible.</text>
       </line>
     </speech>
   </mission>
@@ -8761,7 +8766,7 @@
     <id>5299</id>
     <name>Through the Looking Glass</name>
     <energy>13</energy>
-    <desc>Yuriel takes Geoffrey  to the north west edge of Skyhaven. He pulls out a looking glass and quickly flips through his book of spells. 'Ah, here it is.' he says, 'the spell of Eagle Sight should help us see what those goblins are up too.'</desc>
+    <desc>Yuriel takes Geoffrey to the north west edge of Skyhaven. He pulls out a looking glass and quickly flips through his book of spells. 'Ah, here it is.' he says, 'the spell of Eagle Sight should help us see what those goblins are up to.'</desc>
     <commander id="327" />
     <deck>
       <card id="1011" name="Archive Keeper" />
@@ -8812,7 +8817,12 @@
       <line>
         <commander>elyse</commander>
         <enemy>0</enemy>
-        <text>The city looks different from the last time I saw it. Its security has been fortified, so it will be harder to sneak in. Outside the city, I can see some goblins working on the walls...</text>
+        <text>The city looks different from the last time I saw it. Its security has been fortified, so it will be harder to sneak in.</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Outside the city, I can see some goblins working on the walls...</text>
       </line>
       <line>
         <commander>elyse</commander>
@@ -8848,7 +8858,7 @@
     <id>5302</id>
     <name>Gift from Beetleton</name>
     <energy>11</energy>
-    <desc>A troop of goblins circles the kingdom's perimeter. One of them has the Spellstone hammer from Bettleton Bunker. Geoffrey sneaks closer.</desc>
+    <desc>A troop of goblins circles the kingdom's perimeter. One of them has the Spellstone hammer from Beetleton Bunker. Geoffrey sneaks closer.</desc>
     <commander id="304" />
     <deck>
       <card id="1319" name="Wraith" />
@@ -8919,7 +8929,7 @@
     <id>5304</id>
     <name>Automated System</name>
     <energy>11</energy>
-    <desc>The goblins swing the hammer at the schematic. Geoffrey watches the artifact's magic: a watch tower grows from the ground. With just a few swings of the hammer, a huge watchtower has been built.</desc>
+    <desc>The goblins swing the hammer at the schematic. Geoffrey watches the artifact's magic: a watchtower grows from the ground. With just a few swings of the hammer, a huge watchtower has been built.</desc>
     <commander id="326" />
     <deck>
       <card id="1318" name="Smelted Lava Slug" />
@@ -8965,7 +8975,12 @@
       <line>
         <commander>goblinfootmen</commander>
         <enemy>1</enemy>
-        <text>I'm lovin' this hammer! It only took a few swings of it, and a whole watchtower grew up from the ground! Now we finally have somewhere to escape the heat.</text>
+        <text>I'm lovin' this hammer! It only took a few swings of it, and a whole watchtower grew up from the ground!</text>
+      </line>
+      <line>
+        <commander>goblinfootmen</commander>
+        <enemy>1</enemy>
+        <text>Now we finally have somewhere to escape the heat.</text>
       </line>
       <line>
         <commander>frogemperor</commander>
@@ -8975,7 +8990,7 @@
       <line>
         <commander>goblinfootmen</commander>
         <enemy>1</enemy>
-        <text>Eh, if we get far enough without gettin' chomped on by those darned dragons, first!</text>
+        <text>Eh, that's if we get far enough without gettin' chomped on by those darned dragons, first!</text>
       </line>
     </speech>
   </mission>
@@ -9011,12 +9026,12 @@
       <line>
         <commander>elyse</commander>
         <enemy>0</enemy>
-        <text>Oh, ahh I'm  the new gardener. They needed someone to cut the real high branches.</text>
+        <text>Oh, ahh I'm the new gardener. They needed someone to cut the real high branches.</text>
       </line>
       <line>
         <commander>aprilchicken</commander>
         <enemy>1</enemy>
-        <text>You don't say! I always thought there was a lot of landscaping potential around here! Hey guys! Have you meet the new gardener?</text>
+        <text>You don't say! I always thought there was a lot of landscaping potential around here! Hey guys! Have you met the new gardener?</text>
       </line>
       <line>
         <commander>frogemperor</commander>
@@ -9099,7 +9114,7 @@
     <id>5310</id>
     <name>Dragon Breeding Ground</name>
     <energy>11</energy>
-    <desc>The book notes the unusual weather of the wastes. There are months where the sun does not set and temperature is scorching hot. Surely not a comfortable environment for Goblins, but perhaps dragons?</desc>
+    <desc>The book notes the unusual weather of the wastes. There are months where the sun does not set and temperature is scorching hot. Surely not a comfortable environment for goblins, but perhaps dragons?</desc>
     <commander id="327" />
     <deck>
       <card id="1012" name="Cloud Sylph" />

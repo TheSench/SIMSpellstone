@@ -304,13 +304,13 @@
   <battleground>
     <id>507</id>
     <name>Elemental Flash Storms</name>
-    <desc>Elementals have been causing unexpected storms! When you play an Elemental card, you shuffle a storm card into your deck! When you draw it, all of your opponent's get weakened!</desc>
+    <desc>When an Elemental card is played, a Storm card is shuffled into the opponet's deck. When a Storm card is drawn, all their creatures are weakened for that turn!</desc>
     <icon>filter_elementals_64</icon>
     <effect>
       <!--
 			target_deck: opponent OR self 
 			-->
-      <trap_card id="604" base="attack" mult="0.1" target_deck="self" y="5" />
+      <trap_card id="604" base="attack" mult="0.5" target_deck="opponent" y="5" />
       <skill id="displayEffect" trigger="onTrap">
         <actor_effect>
           <prefab>elementalStorm</prefab>
@@ -319,6 +319,14 @@
           <delay>.1</delay>
           <sound>card_drop</sound>
         </actor_effect>
+      </skill>
+      <skill id="displayEffect" trigger="onSkill" y="999" s="weakenself">
+        <target_effect>
+          <prefab>waveBlast</prefab>
+          <bundle_id>0</bundle_id>
+          <duration>1</duration>
+          <delay>0</delay>
+        </target_effect>
       </skill>
     </effect>
   </battleground>
