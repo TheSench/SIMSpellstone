@@ -718,6 +718,10 @@ var addUnitToDeck = function (unit, htmlCard)
     var $htmlCard = $(htmlCard).clone().find(".multiplier").remove().end();
     addEventHandlers($htmlCard);
 
+    if (!inventoryMode) {
+        unit = Object.assign({}, unit);
+    }
+
     var $deck = $("#deck");
     /*
     if (inventoryMode) {
@@ -730,7 +734,7 @@ var addUnitToDeck = function (unit, htmlCard)
         $deck.find(".card").first().replaceWith($htmlCard);
     } else
     {
-        if (deck.deck.length == 15) return;
+        if (!inventoryMode && deck.deck.length == 15) return;
         deck.deck.push(unit);
         var emptySpaces = $deck.find(".blank");
         if (emptySpaces.length)
