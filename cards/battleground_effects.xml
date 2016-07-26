@@ -87,7 +87,7 @@
     <web_picture>filter_angel_64.png</web_picture>
     <icon>filter_angel_64</icon>
     <effect>
-      <add_skill id="legion" mult="1" base="rarity" y="6" />
+      <add_skill id="legion" mult="0.5" base="attack" y="6" />
       <skill id="displayEffect" trigger="onSkill" y="6" s="legion">
         <projectile_effect>
           <prefab>Legion_Projectile</prefab>

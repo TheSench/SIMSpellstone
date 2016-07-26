@@ -17902,7 +17902,6 @@
     <health>8</health>
     <cost>1</cost>
     <rarity>4</rarity>
-    <skill id="armored" />
     <skill id="valor" x="1" />
     <skill id="nullify" x="1" />
     <type>1</type>
@@ -17918,7 +17917,6 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="armored" />
       <skill id="valor" x="2" />
       <skill id="nullify" x="1" />
     </upgrade>
@@ -48919,7 +48917,6 @@
     <desc>First time this activates, gains Attack permanently if opposing card has more Attack.</desc>
     <attributes x="1" y="1" all="0" c="0" s="0" />
     <balance_points>3</balance_points>
-    <hidden>1</hidden>
   </skillType>
   <!-- Activation -->
   <skillType>
