@@ -83,7 +83,7 @@
   <battleground>
     <id>106</id>
     <name>Angelic Legion</name>
-    <desc>Angels have risen to fight, giving their adjacent allies Legion based on their rarity.</desc>
+    <desc>Angels have risen to fight, gaining Legion equal to 50% of the their base Attack.</desc>
     <web_picture>filter_angel_64.png</web_picture>
     <icon>filter_angel_64</icon>
     <effect>
@@ -328,6 +328,16 @@
           <delay>0</delay>
         </target_effect>
       </skill>
+    </effect>
+  </battleground>
+  <battleground>
+    <id>508</id>
+    <name>The Thunderdome</name>
+    <desc>Bolt and Bolt All skills deal 50% more damage.</desc>
+    <icon>thunderbolt_64</icon>
+    <icon_bundle>31</icon_bundle>
+    <effect>
+      <skill id="enhance" s="strike" mult="0.5" all="1" />
     </effect>
   </battleground>
   <!-- 1001+: Personal BGE -->
