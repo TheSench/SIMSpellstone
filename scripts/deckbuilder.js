@@ -407,8 +407,9 @@ var drawCardList = function ()
         inventory = inventory.deck;
         if (commander && !areEqual(commander, elariaCaptain))
         {
-            addInventoryUnit(commander);
+            inventory.push(commander);
         }
+
         for (var i = 0; i < inventory.length; i++)
         {
             addInventoryUnit(inventory[i]);
@@ -2273,7 +2274,7 @@ function generateLink()
     }
     if (inventory)
     {
-        params.push("inventory=" + inventory);
+        params.push("inventory=" + hash_encode({ commander:elariaCaptain, deck: inventory }));
     }
     if (inventoryMode)
     {
