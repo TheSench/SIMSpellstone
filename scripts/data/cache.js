@@ -121609,8 +121609,8 @@ var FUSIONS = {
   "8025" : "18025"
 };
 var ACHIEVEMENTS = [];
-var BATTLEGROUNDS = [
-  {
+var BATTLEGROUNDS = {
+  "101": {
     "name": "Age of Dragons",
     "id": "101",
     "effect": [
@@ -121624,7 +121624,7 @@ var BATTLEGROUNDS = [
       },
     ]
   },
-  {
+  "102": {
     "name": "World Awakening",
     "id": "102",
     "effect": [
@@ -121638,7 +121638,7 @@ var BATTLEGROUNDS = [
       },
     ]
   },
-  {
+  "103": {
     "name": "Rise of the Frogs",
     "id": "103",
     "effect": [
@@ -121652,7 +121652,7 @@ var BATTLEGROUNDS = [
       },
     ]
   },
-  {
+  "104": {
     "name": "Iceshatter Barrier",
     "id": "104",
     "effect": [
@@ -121669,7 +121669,7 @@ var BATTLEGROUNDS = [
       },
     ]
   },
-  {
+  "105": {
     "name": "Devouring Hunger",
     "id": "105",
     "effect": [
@@ -121683,7 +121683,7 @@ var BATTLEGROUNDS = [
       },
     ]
   },
-  {
+  "106": {
     "name": "Angelic Legion",
     "id": "106",
     "effect": [
@@ -121697,7 +121697,7 @@ var BATTLEGROUNDS = [
       },
     ]
   },
-  {
+  "107": {
     "name": "Elemental Surge",
     "id": "107",
     "effect": [
@@ -121711,7 +121711,7 @@ var BATTLEGROUNDS = [
       },
     ]
   },
-  {
+  "108": {
     "name": "Poisonbolt Evolution",
     "id": "108",
     "effect": [
@@ -121725,7 +121725,7 @@ var BATTLEGROUNDS = [
       },
     ]
   },
-  {
+  "109": {
     "name": "Airborne Mastery",
     "id": "109",
     "effect": [
@@ -121739,7 +121739,7 @@ var BATTLEGROUNDS = [
       },
     ]
   },
-  {
+  "110": {
     "name": "Hardened Carapace",
     "id": "110",
     "effect": [
@@ -121753,27 +121753,27 @@ var BATTLEGROUNDS = [
       },
     ]
   },
-  {
+  "501": {
     "name": "Castle Siege",
     "id": "501",
-    "hidden": "true",
+    "hidden": true,
     "effect": [
     ]
   },
-  {
+  "502": {
     "name": "Cannon Siege",
     "id": "502",
-    "hidden": "true",
+    "hidden": true,
     "effect": [
     ]
   },
-  {
+  "503": {
     "name": "Frostbite's Aura",
     "id": "503",
     "enemy_only": "1",
     "scale_with_level": "1",
     "starting_level": "41",
-    "hidden": "true",
+    "hidden": true,
     "effect": [
       {
         "effect_type": "skill",
@@ -121789,13 +121789,13 @@ var BATTLEGROUNDS = [
       },
     ]
   },
-  {
+  "504": {
     "name": "Nethergore's Reckoning",
     "id": "504",
     "enemy_only": "1",
     "scale_with_level": "1",
     "starting_level": "26",
-    "hidden": "true",
+    "hidden": true,
     "effect": [
       {
         "effect_type": "skill",
@@ -121811,13 +121811,13 @@ var BATTLEGROUNDS = [
       },
     ]
   },
-  {
+  "505": {
     "name": "Fortune's Favoring",
     "id": "505",
     "enemy_only": "1",
     "scale_with_level": "1",
     "starting_level": "26",
-    "hidden": "true",
+    "hidden": true,
     "effect": [
       {
         "effect_type": "skill",
@@ -121833,24 +121833,24 @@ var BATTLEGROUNDS = [
       },
     ]
   },
-  {
+  "506": {
     "name": "Tree of Life",
     "id": "506",
-    "hidden": "true",
+    "hidden": true,
     "effect": [
     ]
   },
-  {
+  "507": {
     "name": "Elemental Flash Storms",
     "id": "507",
-    "hidden": "true",
+    "hidden": true,
     "effect": [
     ]
   },
-  {
+  "508": {
     "name": "The Thunderdome",
     "id": "508",
-    "hidden": "true",
+    "hidden": false,
     "effect": [
       {
         "effect_type": "skill",
@@ -121861,10 +121861,10 @@ var BATTLEGROUNDS = [
       },
     ]
   },
-  {
+  "10001": {
     "name": "Personal Frog Buff",
     "id": "10001",
-    "hidden": "true",
+    "hidden": true,
     "effect": [
       {
         "effect_type": "skill",
@@ -121876,10 +121876,10 @@ var BATTLEGROUNDS = [
       },
     ]
   },
-  {
+  "10002": {
     "name": "Personal Enhance Armor",
     "id": "10002",
-    "hidden": "true",
+    "hidden": true,
     "effect": [
       {
         "effect_type": "skill",
@@ -121890,4 +121890,4 @@ var BATTLEGROUNDS = [
       },
     ]
   },
-];
+};

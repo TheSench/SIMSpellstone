@@ -162,10 +162,11 @@
         
         $scope.selectableBattlegrounds = function () {
             var selectable = [];
-            for(var i = 0, len = $scope.battlegrounds.length; i < len; i++) {
-                var BGE = $scope.battlegrounds[i];
+            for(var id in $scope.battlegrounds) {
+                var BGE = $scope.battlegrounds[id];
                 if(!BGE.hidden) selectable.push(BGE);
             }
+            selectable.sort(function (a, b) { return a.id - b.id; });
             return selectable;
         }
 

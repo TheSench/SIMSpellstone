@@ -289,13 +289,13 @@ void Main()
 			}
 			battlegrounds.Add(bge);
 		}
-		writer.WriteLine("var BATTLEGROUNDS = [");
+		writer.WriteLine("var BATTLEGROUNDS = {");
 		for (int i = 0; i < battlegrounds.Count; i++)
 		{
 			var battleground = battlegrounds[i];
 			writer.Write(battleground.ToString());
 		}
-		writer.WriteLine("];");
+		writer.WriteLine("};");
 	}
 }
 
@@ -352,13 +352,13 @@ public class battleground
 	public override string ToString()
 	{
 		StringBuilder sb = new StringBuilder();
-		sb.Append("  {\r\n");
+		sb.Append("  \"" + id + "\": {\r\n");
 		sb.Append(tabs).Append("\"name\": \"").Append(name).Append("\",\r\n");
 		sb.Append(tabs).Append("\"id\": \"").Append(id).Append("\",\r\n");
 		if (enemy_only != null) sb.Append(tabs).Append("\"enemy_only\": \"").Append(enemy_only).Append("\",\r\n");
 		if (scale_with_level != null) sb.Append(tabs).Append("\"scale_with_level\": \"").Append(scale_with_level).Append("\",\r\n");
 		if (starting_level != null) sb.Append(tabs).Append("\"starting_level\": \"").Append(starting_level).Append("\",\r\n");
-		if (hidden != null) sb.Append(tabs).Append("\"hidden\": \"").Append(hidden).Append("\",\r\n");
+		if (hidden != null) sb.Append(tabs).Append("\"hidden\": ").Append(hidden).Append(",\r\n");
 		sb.Append(tabs).Append("\"effect\": [\r\n");
 		//sb.Append(tabs2).Append("\"" + effect.GetType().Name.Replace("[]", "") + "\": [\r\n");
 		AppendEffect(sb);

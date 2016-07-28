@@ -53,7 +53,7 @@ var SIM_CONTROLLER;
             for (var i = 0; i < bgCheckBoxes.length; i++) {
                 var checkbox = bgCheckBoxes[i];
                 if (checkbox && checkbox.checked) {
-                    getbattleground.push(i);
+                    getbattleground.push(checkbox.value);
                 }
             }
             getbattleground = getbattleground.join();

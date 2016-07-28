@@ -1285,7 +1285,7 @@ function unitInfo_to_base64(unit_info) {
     dec = dec * maxRuneID + runeID;
     dec = dec * 15 + priority;
 
-    return decimal_to_base64(dec);
+    return decimal_to_base64(dec, 5);
 }
 
 function base64_to_unitInfo(base64) {
@@ -1319,10 +1319,10 @@ function base64_to_unitInfo(base64) {
     return unit_info;
 }
 
-function decimal_to_base64(dec) {
+function decimal_to_base64(dec, len) {
     var base64 = '';
     //while (dec > 0) {
-    for (var i = 0; i < 5; i++) {
+    for (var i = 0; i < len; i++) {
         var part = dec % 64;
         base64 += base64chars[part];// + base64;
         dec = (dec - part) / 64;

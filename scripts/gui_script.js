@@ -38,6 +38,7 @@ window.onerror = function (message, url, linenumber) {
     if (getmission) err_msg += "Mission ID: " + getmission + "\n";
     if (getraid) err_msg += "Raid ID: " + getraid + "\n";
     if (getbattleground) err_msg += "Battleground ID: " + getbattleground + "\n";
+    if (getbges) err_msg += "Battleground ID: " + getbges + "\n";
     if (games) err_msg += "Sims run so far: " + games + "\n";
 
     outp("<br><br><i>Error Message:</i><br><textarea cols=50 rows=6 onclick=\"this.select()\"><blockquote>" + err_msg + "</blockquote></textarea>" + echo);
@@ -176,6 +177,12 @@ $(function () {
         for (var i = 0; i < bgIndexes.length; i++) {
             var d = bgCheckBoxes[bgIndexes[i]];
             d.checked = true;
+        }
+    } else if (_DEFINED('bges')) {
+        var bges = _GET('bges');
+        for (var i = 0; i < bges.length; i += 2) {
+            var bge = base64_to_decimal(bges.substring(i, i + 2));
+            $("#battleground_" + bge).prop('checked', true);
         }
     } else {
         // Load current battlegrounds
@@ -572,6 +579,7 @@ function generate_link(autostart, autolink) {
         parameters.push('raid=' + d.value);
     }
 
+    /*
     var battlegrounds = '';
     var bgCheckBoxes = document.getElementsByName("battleground");
     for (var i = 0; i < bgCheckBoxes.length; i++) {
@@ -579,6 +587,16 @@ function generate_link(autostart, autolink) {
         if (d.checked) battlegrounds += i;
     }
     parameters.push('battleground=' + battlegrounds);
+    */
+
+    var bges = '';
+    var bgCheckBoxes = document.getElementsByName("battleground");
+    for (var i = 0; i < bgCheckBoxes.length; i++) {
+        d = bgCheckBoxes[i];
+        if (d.checked) bges += decimal_to_base64(d.value, 2);
+    }
+    parameters.push('bges=' + bges);
+    
 
     d = document.getElementById('sims');
     if (d && d.value) {
@@ -834,6 +852,7 @@ var getmission = false;
 var getraid = false;
 var raidlevel = 0;
 var getbattleground = 0;
+var getbges = 0;
 var getsiege = 0;
 var tower_level = 0;
 var tower_type = 0;
