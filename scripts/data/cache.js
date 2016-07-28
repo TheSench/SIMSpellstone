@@ -121850,7 +121850,7 @@ var BATTLEGROUNDS = {
   "508": {
     "name": "The Thunderdome",
     "id": "508",
-    "hidden": false,
+    "hidden": true,
     "effect": [
       {
         "effect_type": "skill",
