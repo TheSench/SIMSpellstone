@@ -121770,7 +121770,7 @@ var BATTLEGROUNDS = {
   "503": {
     "name": "Frostbite's Aura",
     "id": "503",
-    "enemy_only": "1",
+    "enemy_only": true,
     "scale_with_level": "1",
     "starting_level": "41",
     "hidden": true,
@@ -121792,7 +121792,7 @@ var BATTLEGROUNDS = {
   "504": {
     "name": "Nethergore's Reckoning",
     "id": "504",
-    "enemy_only": "1",
+    "enemy_only": true,
     "scale_with_level": "1",
     "starting_level": "26",
     "hidden": true,
@@ -121814,7 +121814,7 @@ var BATTLEGROUNDS = {
   "505": {
     "name": "Fortune's Favoring",
     "id": "505",
-    "enemy_only": "1",
+    "enemy_only": true,
     "scale_with_level": "1",
     "starting_level": "26",
     "hidden": true,
@@ -121850,7 +121850,6 @@ var BATTLEGROUNDS = {
   "508": {
     "name": "The Thunderdome",
     "id": "508",
-    "hidden": false,
     "effect": [
       {
         "effect_type": "skill",

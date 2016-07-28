@@ -285,7 +285,22 @@ void Main()
 			// World Event BGEs
 			if (Int32.Parse(bge.id) > 500)
 			{
-				bge.hidden = "true";
+				if (bge.enemy_only)
+				{
+					bge.hidden = true;
+				}
+				else if (bge.effect.Where(effect => effect.id != "displayEffect").Count() == 0)
+				{
+					bge.hidden = true;
+				}
+				else if (Int32.Parse(bge.id) > 1000)
+				{
+					bge.hidden = true;
+				}
+				else
+				{
+					bge.hidden = false;
+				}
 			}
 			battlegrounds.Add(bge);
 		}
@@ -344,10 +359,30 @@ public class battleground
 	public battlegroundEffect[] effect { get; set; }
 	public string id { get; set; }
 	public string desc { get; set; }
-	public string enemy_only { get; set; }
+	
+	[XmlIgnore]
+	public bool enemy_only { get; set; }
+	/// <summary>Get a value purely for serialization purposes</summary>
+	[XmlElement("enemy_only")]
+	public string enemy_onlySerialize
+	{
+		get { return this.enemy_only ? "1" : "0"; }
+		set
+		{
+			if (value != null)
+			{
+				this.enemy_only = XmlConvert.ToBoolean(value);
+			}
+			else
+			{
+				this.enemy_only = false;
+			}
+		}
+	}
+
 	public string scale_with_level { get; set; }
 	public string starting_level { get; set; }
-	public string hidden { get; set; }
+	public bool hidden { get; set; }
 
 	public override string ToString()
 	{
@@ -355,10 +390,10 @@ public class battleground
 		sb.Append("  \"" + id + "\": {\r\n");
 		sb.Append(tabs).Append("\"name\": \"").Append(name).Append("\",\r\n");
 		sb.Append(tabs).Append("\"id\": \"").Append(id).Append("\",\r\n");
-		if (enemy_only != null) sb.Append(tabs).Append("\"enemy_only\": \"").Append(enemy_only).Append("\",\r\n");
+		if (enemy_only) sb.Append(tabs).Append("\"enemy_only\": ").Append(enemy_only.ToString().ToLower()).Append(",\r\n");
 		if (scale_with_level != null) sb.Append(tabs).Append("\"scale_with_level\": \"").Append(scale_with_level).Append("\",\r\n");
 		if (starting_level != null) sb.Append(tabs).Append("\"starting_level\": \"").Append(starting_level).Append("\",\r\n");
-		if (hidden != null) sb.Append(tabs).Append("\"hidden\": ").Append(hidden).Append(",\r\n");
+		if (hidden) sb.Append(tabs).Append("\"hidden\": ").Append(hidden.ToString().ToLower()).Append(",\r\n");
 		sb.Append(tabs).Append("\"effect\": [\r\n");
 		//sb.Append(tabs2).Append("\"" + effect.GetType().Name.Replace("[]", "") + "\": [\r\n");
 		AppendEffect(sb);
@@ -666,7 +701,6 @@ public partial class unitUpgrade
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
 public partial class skill : battlegroundEffect
 {
-	private string idField;
 	private string xField;
 	private string yField;
 	private string cField;
@@ -684,14 +718,6 @@ public partial class skill : battlegroundEffect
 			}
 			return false;
 		}
-	}
-
-	/// <remarks/>
-	[System.Xml.Serialization.XmlAttributeAttribute()]
-	public string id
-	{
-		get { return this.idField; }
-		set { this.idField = value; }
 	}
 
 	/// <remarks/>
@@ -747,16 +773,9 @@ public partial class skill : battlegroundEffect
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
 public partial class battlegroundEffect
 {
-	public virtual bool skip { get { return false;} }
-}
-
-/// <remarks/>
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-public partial class evolve_skill : battlegroundEffect
-{
 	private string idField;
-	private string sField;
-	private string allField;
+	
+	public virtual bool skip { get { return false; } }
 
 	/// <remarks/>
 	[System.Xml.Serialization.XmlAttributeAttribute()]
@@ -765,6 +784,14 @@ public partial class evolve_skill : battlegroundEffect
 		get { return this.idField; }
 		set { this.idField = value; }
 	}
+}
+
+/// <remarks/>
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+public partial class evolve_skill : battlegroundEffect
+{
+	private string sField;
+	private string allField;
 
 	/// <remarks/>
 	[System.Xml.Serialization.XmlAttributeAttribute()]
@@ -787,7 +814,6 @@ public partial class evolve_skill : battlegroundEffect
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
 public partial class add_skill : battlegroundEffect
 {
-	private string idField;
 	private string xField;
 	private string yField;
 	private string cField;
@@ -795,14 +821,6 @@ public partial class add_skill : battlegroundEffect
 	private string allField;
 	private string multField;
 	private string baseField;
-
-	/// <remarks/>
-	[System.Xml.Serialization.XmlAttributeAttribute()]
-	public string id
-	{
-		get { return this.idField; }
-		set { this.idField = value; }
-	}
 
 	/// <remarks/>
 	[System.Xml.Serialization.XmlAttributeAttribute()]

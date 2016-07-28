@@ -449,8 +449,11 @@ var SIMULATOR = {};
             }
 
             var enhanced = getEnhancement(src_card, skill.id);
-            if (enhanced < 0) {
-                enhanced = Math.ceil(strike * -enhanced);
+            if (enhanced) {
+                if (enhanced < 0) {
+                    enhanced = Math.ceil(strike * -enhanced);
+                }
+                strike += enhanced;
             }
 
             for (var key = 0, len = targets.length; key < len; key++) {
@@ -473,9 +476,6 @@ var SIMULATOR = {};
 
                 if (enfeeble) {
                     strike_damage += enfeeble;
-                }
-                if (enhanced) {
-                    strike_damage += enhanced;
                 }
                 var shatter = false;
                 if (protect) {

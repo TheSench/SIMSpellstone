@@ -38,7 +38,6 @@ window.onerror = function (message, url, linenumber) {
     if (getmission) err_msg += "Mission ID: " + getmission + "\n";
     if (getraid) err_msg += "Raid ID: " + getraid + "\n";
     if (getbattleground) err_msg += "Battleground ID: " + getbattleground + "\n";
-    if (getbges) err_msg += "Battleground ID: " + getbges + "\n";
     if (games) err_msg += "Sims run so far: " + games + "\n";
 
     outp("<br><br><i>Error Message:</i><br><textarea cols=50 rows=6 onclick=\"this.select()\"><blockquote>" + err_msg + "</blockquote></textarea>" + echo);
@@ -187,7 +186,7 @@ $(function () {
     } else {
         // Load current battlegrounds
         var bgCheckBoxes = document.getElementsByName("battleground");
-        bgCheckBoxes[0].checked = true;
+        bgCheckBoxes[5].checked = true;
         bgCheckBoxes[9].checked = true;
     }
 
@@ -579,16 +578,6 @@ function generate_link(autostart, autolink) {
         parameters.push('raid=' + d.value);
     }
 
-    /*
-    var battlegrounds = '';
-    var bgCheckBoxes = document.getElementsByName("battleground");
-    for (var i = 0; i < bgCheckBoxes.length; i++) {
-        d = bgCheckBoxes[i];
-        if (d.checked) battlegrounds += i;
-    }
-    parameters.push('battleground=' + battlegrounds);
-    */
-
     var bges = '';
     var bgCheckBoxes = document.getElementsByName("battleground");
     for (var i = 0; i < bgCheckBoxes.length; i++) {
@@ -852,7 +841,6 @@ var getmission = false;
 var getraid = false;
 var raidlevel = 0;
 var getbattleground = 0;
-var getbges = 0;
 var getsiege = 0;
 var tower_level = 0;
 var tower_type = 0;
