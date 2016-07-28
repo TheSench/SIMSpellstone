@@ -221,7 +221,7 @@ var SIMULATOR = {};
         // - Targets allied, units
         // - Target must be active this turn (for activation skills only)
         // - Target must not be frozen (for activation skills only)
-        // - Target must have specific "enhanceable skill" ("all" versions aren't counted)
+        // - Target must have specific "enhanceable skill"
         enhance: function (src_card, skill) {
 
             var faction = skill['y'];
@@ -231,6 +231,7 @@ var SIMULATOR = {};
 
             var x = skill['x'];
             var s = skill['s'];
+            var mult = skill['mult'];
             var all = skill['all'];
 
             var field_p_assaults = field[p]['assaults'];
@@ -241,7 +242,7 @@ var SIMULATOR = {};
                 if (!target.isUnjammed()) continue;
                 if (!target.isInFaction(faction)) continue;
                 if (require_active_turn && !target.isActive()) continue;
-                if (target.hasSkill(s, 0)) {
+                if (target.hasSkill(s, 0) || target.hasSkill(s, 1)) {
                     targets.push(key);
                 }
             }
@@ -273,8 +274,14 @@ var SIMULATOR = {};
                     enhancements = {};
                     target.enhanced = enhancements;
                 }
-                enhancements[s] = (enhancements[s] || 0) + x;
-                if (debug) echo += debug_name(src_card) + ' enhances ' + s + ' of ' + debug_name(target, false) + ' by ' + x + '<br>';
+                if (x > 0) {
+                    enhancements[s] = (enhancements[s] || 0) + x;
+                    if (debug) echo += debug_name(src_card) + ' enhances ' + s + ' of ' + debug_name(target, false) + ' by ' + x + '<br>';
+                } else if (mult > 0) {
+                    // temporarily use negatives for multiplier
+                    enhancements[s] = -mult;
+                    if (debug) echo += debug_name(src_card) + ' enhances ' + s + ' of ' + debug_name(target, false) + ' by ' + (mult*100) + '%<br>';
+                }
             }
         },
 
@@ -416,15 +423,13 @@ var SIMULATOR = {};
         },
         strike: function (src_card, skill, poison) {
 
-            var faction = skill['y'];
-
             var o = get_o(src_card);
 
-            var strike = skill['x'];
+            var strike = skill.x
+            var faction = skill.y;
+            var all = skill.all;
 
-            var all = skill['all'];
-
-            var field_x_assaults = field[o]['assaults'];
+            var field_x_assaults = field[o].assaults;
 
             var targets = [];
             for (var key = 0, len = field_x_assaults.length; key < len; key++) {
@@ -439,28 +444,26 @@ var SIMULATOR = {};
             if (!targets.length) return;
 
             // Check All
-            if (all) {
-                var enhanced = 0;
-            } else {
+            if (!all) {
                 targets = choose_random_target(targets);
-                var enhanced = getEnhancement(src_card, skill.id);
-                if (enhanced) {
-                    strike += enhanced;
-                }
+            }
+
+            var enhanced = getEnhancement(src_card, skill.id);
+            if (enhanced < 0) {
+                enhanced = Math.ceil(strike * -enhanced);
             }
 
             for (var key = 0, len = targets.length; key < len; key++) {
                 var target = field_x_assaults[targets[key]];
 
                 // Check Evade
-                if (target['invisible']) {
-                    target['invisible']--;
+                if (target.invisible) {
+                    target.invisible--;
                     if (debug) echo += debug_name(src_card) + ' bolts ' + debug_name(target) + ' but it is invisible!<br>';
                     continue;
                 }
 
                 var strike_damage = strike;
-
 
                 // Check Protect/Enfeeble
                 var enfeeble = 0;
