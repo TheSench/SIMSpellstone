@@ -631,9 +631,8 @@ var addUnit = function (unit, spoilers)
 
 var addUnitLevels = function (id, maxlevel)
 {
-    for (var level = 1; level <= maxlevel; level++)
-    {
-        if (allCards[id]) {
+    if (allCards[id]) {
+        for (var level = 1; level <= maxlevel; level++) {
             var unit = makeUnitInfo(id, level);
             units.push(unit);
             if (showUpgrades || level == maxlevel) unitsShown.push(unit);
