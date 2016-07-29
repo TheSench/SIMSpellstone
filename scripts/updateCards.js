@@ -29,7 +29,7 @@ var DATA_UPDATER = (function () {
                 lastUpdate = now;
 
                 var url = makeYql("cards.xml");
-                $.getJSON(yql, onCardsRetrieved);
+                $.getJSON(url, onCardsRetrieved);
             }
         }
     }());

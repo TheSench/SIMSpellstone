@@ -107,14 +107,22 @@ void Main()
 
 	notFound.Dump("Missing these");
 
+	// Get Fusions
+	xmlFile = Path.Combine(path, "fusion_recipes_cj2.xml");
+	doc = XDocument.Load(xmlFile);
+	var fusions = doc.Descendants("fusion_recipe").Select(node => new fusionRecipe()
+	{
+		fusedCardID = node.Element("card_id").Value,
+		baseCardID = node.Element("resource").Attribute("card_id").Value,
+	});
+
 	// Add placeholder units for unused images
-	/*var unusedImages = new DirectoryInfo(Path.Combine(path, @"..\res\cardImages"))
-		.GetFiles("New*A.jpg")
-		.Select(imageFile => imageFile.Name);*/
 	var idPrefixes = new[] { "", "1", "2" };
 	var suffixMap = new Dictionary<char, int> { { 'A', 0 }, { 'B', 1 }, { 'C', 2} };
 	var nameSuffixes = new[] { "S", "D", "Q" };
-	var unitID = 9999;
+	var unitID = 10000;
+	var unusedIDHash = new System.Collections.Generic.Dictionary<string, string>();
+	var newFusions = new List<fusionRecipe>();
 	foreach (var image in unusedImages)
 	{
 		var key = image.Key;
@@ -130,12 +138,31 @@ void Main()
 			continue;
 		}
 		var imageName = key.Substring(0, split);
-		var suffix = image.Key[split+1];
+		var suffix = image.Key[split + 1];
 		var fusion = suffixMap[suffix];
+		
+		string fullID;
+		if (unusedIDHash.ContainsKey(imageName))
+		{
+			fullID = idPrefixes[fusion] + unitID.ToString();
+			newFusions.Add(new fusionRecipe()
+			{
+				baseCardID = unusedIDHash[imageName],
+				fusedCardID = fullID
+			});
+			unusedIDHash[imageName] = fullID;
+		}
+		else
+		{
+			unitID--;
+			fullID = idPrefixes[fusion] + unitID.ToString();
+			unusedIDHash[imageName] = fullID;
+		}
+		
 		var unit = new unit()
 		{
-			id = idPrefixes[fusion] + unitID.ToString(),
-			name = "",
+			id = fullID,
+			name = (imageName.IndexOf("New") == 0 ? "New Art" : "Unused Art"),
 			picture = key,
 			rarity = "0",
 			card_type = "2",
@@ -146,11 +173,14 @@ void Main()
 		};
 		units.Add(unit);
 		// Only add these to spoilers if there are other new units - don't want to overwrite spoilers with just new art
-		if (newUnits.Count > 0 && fusion != 1)
+		if (newUnits.Count > 0)
 		{
 			newUnits.Add(unit.id);
 		}
-		unitID--;
+	}
+	if (newFusions.Count > 0)
+	{
+		fusions = fusions.Union(newFusions);
 	}
 
 	if (newUnits.Count > 0)
@@ -203,15 +233,6 @@ void Main()
 			remove_mastery_level = (string)card.Attribute("remove_mastery_level"),
 		}).ToArray()
 	}).OrderBy(mission => mission.id);
-	
-	// Get Fusions
-	xmlFile = Path.Combine(path, "fusion_recipes_cj2.xml");
-	doc = XDocument.Load(xmlFile);
-	var fusions = doc.Descendants("fusion_recipe").Select(node => new fusionRecipe()
-	{
-		fusedCardID = node.Element("card_id").Value,
-		baseCardID = node.Element("resource").Attribute("card_id").Value,
-	}).OrderBy(f => f.baseCardID);
 
 	var file = new FileInfo(Path.Combine(path, "../scripts/data", "cache.js"));
 	using (var writer = file.CreateText())
@@ -268,7 +289,7 @@ void Main()
 		writer.WriteLine("};");
 
 		writer.WriteLine("var FUSIONS = {");
-		writer.WriteLine(String.Join(",\r\n", fusions.Select(f => f.ToString())));
+		writer.WriteLine(String.Join(",\r\n", fusions.OrderBy(f => f.baseCardID).Select(f => f.ToString())));
 		writer.WriteLine("};");
 
 		writer.WriteLine("var ACHIEVEMENTS = [];");
