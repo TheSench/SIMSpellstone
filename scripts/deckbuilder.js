@@ -622,7 +622,7 @@ var addUnit = function (unit, spoilers)
     {
         if (spoilers["1" + id]) addUnitLevels("1" + id, maxlevel);
         if (spoilers["2" + id]) addUnitLevels("2" + id, maxlevel);
-    } else if (id > 999 && allCards["1" + id])
+    } else if (id > 999)
     {
         addUnitLevels("1" + id, maxlevel);
         addUnitLevels("2" + id, maxlevel);
@@ -633,9 +633,11 @@ var addUnitLevels = function (id, maxlevel)
 {
     for (var level = 1; level <= maxlevel; level++)
     {
-        var unit = makeUnitInfo(id, level);
-        units.push(unit);
-        if (showUpgrades || level == maxlevel) unitsShown.push(unit);
+        if (allCards[id]) {
+            var unit = makeUnitInfo(id, level);
+            units.push(unit);
+            if (showUpgrades || level == maxlevel) unitsShown.push(unit);
+        }
     }
 }
 
