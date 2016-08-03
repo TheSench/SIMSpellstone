@@ -868,13 +868,12 @@ var SIMULATOR = {};
                     if (target.nullified) {
                         target.nullified--;
                         if (debug) echo += debug_name(src_card) + ' activates legion and empowers ' + debug_name(target) + ' but it is nullified!<br>';
-                        continue;
-                    }
-
-                    target.attack_rally += rally;
-                    if (debug) {
-                        if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
-                        echo += debug_name(src_card) + ' activates legion and empowers ' + debug_name(target) + ' by ' + rally + '<br>';
+                    } else {
+                        target.attack_rally += rally;
+                        if (debug) {
+                            if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
+                            echo += debug_name(src_card) + ' activates legion and empowers ' + debug_name(target) + ' by ' + rally + '<br>';
+                        }
                     }
                 }
                 target_key += 2;
