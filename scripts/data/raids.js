@@ -193,7 +193,7 @@
     },
     "1505": {
         "id": "1505",
-        "name": "Frostbite Raid",
+        "name": "Frostbite Raid (Old)",
         "commander": {
             "id": "253"
         },
