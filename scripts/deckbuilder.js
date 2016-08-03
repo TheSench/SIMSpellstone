@@ -1280,13 +1280,22 @@ var filterName = (function (field)
     nameHidden = {};
     if (filter)
     {
-        for (var i = 0, len = units.length; i < len; i++)
-        {
-            var unit = units[i];
-            var card = get_slim_card_by_id(unit, true);
-            if (card.name.toLowerCase().indexOf(filter) == -1)
-            {
-                nameHidden[makeUnitKey(unit)] = true;
+        if (filter.indexOf("[") === 0) {
+            var filterID = filter.replace("[", "").replace("]", "");
+            for (var i = 0, len = units.length; i < len; i++) {
+                var unit = units[i];
+                var unit_id = unit.id;
+                if (unit_id.toString().indexOf(filterID) !== 0) {
+                    nameHidden[makeUnitKey(unit)] = true;
+                }
+            }
+        } else {
+            for (var i = 0, len = units.length; i < len; i++) {
+                var unit = units[i];
+                var card = get_slim_card_by_id(unit, true);
+                if (card.name.toLowerCase().indexOf(filter) == -1) {
+                    nameHidden[makeUnitKey(unit)] = true;
+                }
             }
         }
     }
