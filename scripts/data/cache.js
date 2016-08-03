@@ -33493,6 +33493,221 @@ var CARDS = {
       },
     }
   },
+  "5072": {
+    "id": "5072",
+    "name": "Blind Seer",
+    "picture": "NotFound",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "6",
+    "attack": 2,
+    "health": 12,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "legion",
+        "x": 1,
+        "y": "6",
+        "z": 6,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+      },
+      {
+        "id": "weaken",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 13,
+        "skill": [],
+      },
+      "3": {
+        "health": 14,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 1,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "health": 15,
+        "skill": [],
+      },
+    }
+  },
+  "15072": {
+    "id": "15072",
+    "name": "Blind Sage",
+    "picture": "NotFound",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "6",
+    "attack": 3,
+    "health": 16,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "legion",
+        "x": 1,
+        "y": "6",
+        "z": 6,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+      },
+      {
+        "id": "weaken",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+        ],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "health": 17,
+        "skill": [],
+      },
+    }
+  },
+  "25072": {
+    "id": "25072",
+    "name": "Blind Enlightened",
+    "picture": "NotFound",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "6",
+    "attack": 3,
+    "health": 18,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "legion",
+        "x": 2,
+        "y": "6",
+        "z": 6,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "weaken",
+        "x": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 19,
+        "skill": [],
+      },
+      "3": {
+        "attack": 4,
+        "skill": [],
+      },
+      "4": {
+        "health": 20,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 3,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 6,
+          },
+        ],
+      },
+    }
+  },
   "5075": {
     "id": "5075",
     "name": "Arith",
@@ -33725,6 +33940,275 @@ var CARDS = {
           {
             "id": "nullify",
             "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "5078": {
+    "id": "5078",
+    "name": "Asariel",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "6",
+    "attack": 5,
+    "health": 12,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "strike",
+        "x": 2,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 7,
+          },
+        ],
+      },
+      "4": {
+        "health": 15,
+        "skill": [
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 7,
+          },
+        ],
+      },
+      "5": {
+        "health": 16,
+        "skill": [
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 6,
+          },
+        ],
+      },
+      "6": {
+        "attack": 6,
+        "skill": [
+          {
+            "id": "strike",
+            "x": 3,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 6,
+          },
+        ],
+      },
+    }
+  },
+  "15078": {
+    "id": "15078",
+    "name": "Asariel the Arbalest",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "6",
+    "attack": 6,
+    "health": 17,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "strike",
+        "x": 3,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "jam",
+        "c": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "strike",
+            "x": 3,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+      "3": {
+        "health": 18,
+        "skill": [],
+      },
+      "4": {
+        "health": 19,
+        "skill": [
+          {
+            "id": "strike",
+            "x": 4,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+      "5": {
+        "health": 21,
+        "skill": [],
+      },
+      "6": {
+        "attack": 7,
+        "skill": [
+          {
+            "id": "strike",
+            "x": 4,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+    }
+  },
+  "25078": {
+    "id": "25078",
+    "name": "Asariel the Wrath Engine",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "6",
+    "attack": 7,
+    "health": 22,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "strike",
+        "x": 4,
+      },
+      {
+        "id": "strike",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "jam",
+        "c": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 23,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "strike",
+            "x": 5,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 24,
+        "skill": [],
+      },
+      "5": {
+        "attack": 8,
+        "health": 25,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "strike",
+            "x": 5,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 3,
           },
         ],
       },
@@ -49332,6 +49816,208 @@ var CARDS = {
           {
             "id": "nullify",
             "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "6071": {
+    "id": "6071",
+    "name": "Masked Heraid",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "6",
+    "attack": 4,
+    "health": 13,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "enfeeble",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "leech",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "health": 15,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "attack": 5,
+        "skill": [],
+      },
+      "6": {
+        "health": 16,
+        "skill": [],
+      },
+    }
+  },
+  "16071": {
+    "id": "16071",
+    "name": "Veiled Heraid",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "6",
+    "attack": 5,
+    "health": 17,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "enfeeble",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "leech",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 18,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+        ],
+      },
+      "4": {
+        "health": 19,
+        "skill": [],
+      },
+      "5": {
+        "attack": 6,
+        "skill": [],
+      },
+      "6": {
+        "health": 20,
+        "skill": [],
+      },
+    }
+  },
+  "26071": {
+    "id": "26071",
+    "name": "Revealed Heraid",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "6",
+    "attack": 6,
+    "health": 21,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "enfeeble",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "leech",
+        "x": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 22,
+        "skill": [],
+      },
+      "3": {
+        "attack": 7,
+        "skill": [],
+      },
+      "4": {
+        "health": 23,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "enfeeble",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 6,
           },
         ],
       },
@@ -65997,6 +66683,258 @@ var CARDS = {
           {
             "id": "berserk",
             "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "7071": {
+    "id": "7071",
+    "name": "Paradise Enforcer",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "6",
+    "attack": 5,
+    "health": 17,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "y": "3",
+        "z": 3,
+        "all": "1",
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 18,
+        "skill": [],
+      },
+      "3": {
+        "health": 19,
+        "skill": [],
+      },
+      "4": {
+        "attack": 6,
+        "health": 20,
+        "skill": [],
+      },
+      "5": {
+        "health": 21,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "17071": {
+    "id": "17071",
+    "name": "Paradise Defender",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "6",
+    "attack": 6,
+    "health": 22,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "protect",
+        "x": 2,
+        "y": "3",
+        "z": 3,
+        "all": "1",
+      },
+      {
+        "id": "berserk",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 7,
+        "health": 23,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 24,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "health": 25,
+        "skill": [],
+      },
+      "6": {
+        "health": 26,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+          {
+            "id": "berserk",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "27071": {
+    "id": "27071",
+    "name": "Paradise Savior",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "6",
+    "attack": 8,
+    "health": 26,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "protect",
+        "x": 3,
+        "y": "3",
+        "z": 3,
+        "all": "1",
+      },
+      {
+        "id": "berserk",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 9,
+        "health": 27,
+        "skill": [],
+      },
+      "3": {
+        "health": 28,
+        "skill": [],
+      },
+      "4": {
+        "health": 29,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+          {
+            "id": "berserk",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "health": 30,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "3",
+            "z": 3,
+            "all": "1",
+          },
+          {
+            "id": "berserk",
+            "x": 5,
           },
         ],
       },
@@ -121370,7 +122308,9 @@ var FUSIONS = {
   "15069" : "25069",
   "15070" : "25070",
   "15071" : "25071",
+  "15072" : "25072",
   "15075" : "25075",
+  "15078" : "25078",
   "1600" : "11600",
   "16000" : "26000",
   "16001" : "26001",
@@ -121450,6 +122390,7 @@ var FUSIONS = {
   "16069" : "26069",
   "1607" : "11607",
   "16070" : "26070",
+  "16071" : "26071",
   "1610" : "11610",
   "1613" : "11613",
   "1614" : "11614",
@@ -121541,6 +122482,7 @@ var FUSIONS = {
   "17068" : "27068",
   "17069" : "27069",
   "17070" : "27070",
+  "17071" : "27071",
   "17074" : "27074",
   "18000" : "28000",
   "18001" : "28001",
@@ -121683,7 +122625,9 @@ var FUSIONS = {
   "5069" : "15069",
   "5070" : "15070",
   "5071" : "15071",
+  "5072" : "15072",
   "5075" : "15075",
+  "5078" : "15078",
   "6000" : "16000",
   "6001" : "16001",
   "6002" : "16002",
@@ -121755,6 +122699,7 @@ var FUSIONS = {
   "6068" : "16068",
   "6069" : "16069",
   "6070" : "16070",
+  "6071" : "16071",
   "7000" : "17000",
   "7001" : "17001",
   "7002" : "17002",
@@ -121826,6 +122771,7 @@ var FUSIONS = {
   "7068" : "17068",
   "7069" : "17069",
   "7070" : "17070",
+  "7071" : "17071",
   "7074" : "17074",
   "8000" : "18000",
   "8001" : "18001",

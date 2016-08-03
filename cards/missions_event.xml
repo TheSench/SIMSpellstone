@@ -8758,7 +8758,7 @@
       <line>
         <commander>angelqueen</commander>
         <enemy>0</enemy>
-        <text>I see. For a mission of this importance, I'll send you one of our best. I'll have Geoffrey meet you in your quarters as soon as possible.</text>
+        <text>I see. For a mission of this importance, I'll send you one of our best. I'll have Geoffrey meet you as soon as possible.</text>
       </line>
     </speech>
   </mission>
@@ -8766,7 +8766,7 @@
     <id>5299</id>
     <name>Through the Looking Glass</name>
     <energy>13</energy>
-    <desc>Yuriel takes Geoffrey to the north west edge of Skyhaven. He pulls out a looking glass and quickly flips through his book of spells. 'Ah, here it is.' he says, 'the spell of Eagle Sight should help us see what those goblins are up to.'</desc>
+    <desc>Yuriel meets with the Queen's spy, Geoffrey. They will need to gather more intelligence on the goblins before infiltrating...</desc>
     <commander id="327" />
     <deck>
       <card id="1011" name="Archive Keeper" />
@@ -8784,12 +8784,19 @@
       <card id="7048" mastery_level="6" name="Bogskull Widow" />
       <card id="1343" mastery_level="7" name="Firehorn" />
     </deck>
+    <speech>
+      <line>
+        <commander>owlmystic</commander>
+        <enemy>0</enemy>
+        <text>Ah, here it is. The spell of Eagle Sight should help us see what those goblins are up to.</text>
+      </line>
+    </speech>
   </mission>
   <mission>
     <id>5300</id>
     <name>Security Blanket</name>
     <energy>13</energy>
-    <desc>Yuriel begins to flip through his spell book again as  Geoffrey evaluates his entry point.  'Now hold still', he says. 'The Ramda's Protectors spell will allow me to help if you encounter battle.</desc>
+    <desc>Yuriel prepares the spell, while Geoffery waits impatiently...</desc>
     <commander id="325" />
     <deck>
       <card id="1012" name="Cloud Sylph" />
