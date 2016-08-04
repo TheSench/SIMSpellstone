@@ -17226,6 +17226,282 @@ var CARDS = {
       },
     }
   },
+  "2055": {
+    "id": "2055",
+    "name": "Wrath",
+    "picture": "Angel_Muscle_Monster_A",
+    "rarity": "4",
+    "set": "2000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "6",
+    "attack": 4,
+    "health": 9,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 1,
+        "y": "6",
+        "z": 6,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 10,
+        "skill": [],
+      },
+      "3": {
+        "health": 11,
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "pierce",
+            "x": 1,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "pierce",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "pierce",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "pierce",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "12055": {
+    "id": "12055",
+    "name": "Wrath, Fury Incarnate",
+    "picture": "Angel_Muscle_Monster_A",
+    "rarity": "4",
+    "set": "2000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "6",
+    "attack": 5,
+    "health": 11,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "6",
+        "z": 6,
+      },
+      {
+        "id": "pierce",
+        "x": 2,
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "3": {
+        "health": 12,
+        "skill": [],
+      },
+      "4": {
+        "health": 13,
+        "skill": [],
+      },
+      "5": {
+        "health": 14,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "22055": {
+    "id": "22055",
+    "name": "Wrath, Worldrender",
+    "picture": "Angel_Muscle_Monster_B",
+    "rarity": "4",
+    "set": "2000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "6",
+    "attack": 5,
+    "health": 15,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "6",
+        "z": 6,
+      },
+      {
+        "id": "pierce",
+        "x": 4,
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 16,
+        "skill": [],
+      },
+      "3": {
+        "health": 17,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
   "5000": {
     "id": "5000",
     "name": "Azure Sphinx",
@@ -66690,7 +66966,7 @@ var CARDS = {
   },
   "7071": {
     "id": "7071",
-    "name": "Paradise Enforcer",
+    "name": "Gorilleus",
     "picture": "Guardian_Angel_Gorilla_A",
     "rarity": "4",
     "set": "3000",
@@ -66758,7 +67034,7 @@ var CARDS = {
   },
   "17071": {
     "id": "17071",
-    "name": "Paradise Defender",
+    "name": "King Gorilleus",
     "picture": "Guardian_Angel_Gorilla_A",
     "rarity": "4",
     "set": "3000",
@@ -66858,7 +67134,7 @@ var CARDS = {
   },
   "27071": {
     "id": "27071",
-    "name": "Paradise Savior",
+    "name": "Emperor Gorilleus",
     "picture": "Guardian_Angel_Gorilla_B",
     "rarity": "4",
     "set": "3000",
@@ -93365,7 +93641,7 @@ var CARDS = {
   "9993": {
     "id": "9993",
     "name": "New Art",
-    "picture": "New8_A",
+    "picture": "New2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93378,7 +93654,7 @@ var CARDS = {
   "19993": {
     "id": "19993",
     "name": "New Art",
-    "picture": "New8_B",
+    "picture": "New2_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93390,8 +93666,8 @@ var CARDS = {
   },
   "9992": {
     "id": "9992",
-    "name": "Unused Art",
-    "picture": "Oda_A",
+    "name": "New Art",
+    "picture": "New3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93403,8 +93679,8 @@ var CARDS = {
   },
   "19992": {
     "id": "19992",
-    "name": "Unused Art",
-    "picture": "Oda_B",
+    "name": "New Art",
+    "picture": "New3_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93414,10 +93690,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29992": {
-    "id": "29992",
-    "name": "Unused Art",
-    "picture": "Oda_C",
+  "9991": {
+    "id": "9991",
+    "name": "New Art",
+    "picture": "New4_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93429,8 +93705,8 @@ var CARDS = {
   },
   "19991": {
     "id": "19991",
-    "name": "Unused Art",
-    "picture": "Promo_Dragon_B",
+    "name": "New Art",
+    "picture": "New4_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93442,8 +93718,8 @@ var CARDS = {
   },
   "9990": {
     "id": "9990",
-    "name": "Unused Art",
-    "picture": "Seraph_A",
+    "name": "New Art",
+    "picture": "New5_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93455,8 +93731,8 @@ var CARDS = {
   },
   "19990": {
     "id": "19990",
-    "name": "Unused Art",
-    "picture": "Seraph_B",
+    "name": "New Art",
+    "picture": "New5_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93468,8 +93744,21 @@ var CARDS = {
   },
   "9989": {
     "id": "9989",
-    "name": "Unused Art",
-    "picture": "Tarian_A",
+    "name": "New Art",
+    "picture": "New6_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19989": {
+    "id": "19989",
+    "name": "New Art",
+    "picture": "New6_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93481,8 +93770,21 @@ var CARDS = {
   },
   "9988": {
     "id": "9988",
-    "name": "Unused Art",
-    "picture": "Tremor_Wurm_A",
+    "name": "New Art",
+    "picture": "New8_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19988": {
+    "id": "19988",
+    "name": "New Art",
+    "picture": "New8_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93495,7 +93797,7 @@ var CARDS = {
   "9987": {
     "id": "9987",
     "name": "Unused Art",
-    "picture": "Unused1_A",
+    "picture": "Oda_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93505,10 +93807,36 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9986": {
-    "id": "9986",
+  "19987": {
+    "id": "19987",
     "name": "Unused Art",
-    "picture": "Unused2_A",
+    "picture": "Oda_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "29987": {
+    "id": "29987",
+    "name": "Unused Art",
+    "picture": "Oda_C",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19986": {
+    "id": "19986",
+    "name": "Unused Art",
+    "picture": "Promo_Dragon_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93521,7 +93849,20 @@ var CARDS = {
   "9985": {
     "id": "9985",
     "name": "Unused Art",
-    "picture": "Unused3_A",
+    "picture": "Seraph_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19985": {
+    "id": "19985",
+    "name": "Unused Art",
+    "picture": "Seraph_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93534,7 +93875,7 @@ var CARDS = {
   "9984": {
     "id": "9984",
     "name": "Unused Art",
-    "picture": "Ursurio_A",
+    "picture": "Tarian_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93547,7 +93888,7 @@ var CARDS = {
   "9983": {
     "id": "9983",
     "name": "Unused Art",
-    "picture": "Void_Abomination_A",
+    "picture": "Tremor_Wurm_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93559,6 +93900,71 @@ var CARDS = {
   },
   "9982": {
     "id": "9982",
+    "name": "Unused Art",
+    "picture": "Unused1_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9981": {
+    "id": "9981",
+    "name": "Unused Art",
+    "picture": "Unused2_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9980": {
+    "id": "9980",
+    "name": "Unused Art",
+    "picture": "Unused3_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9979": {
+    "id": "9979",
+    "name": "Unused Art",
+    "picture": "Ursurio_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9978": {
+    "id": "9978",
+    "name": "Unused Art",
+    "picture": "Void_Abomination_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9977": {
+    "id": "9977",
     "name": "Unused Art",
     "picture": "Yuriel_A",
     "rarity": "0",
@@ -122104,6 +122510,7 @@ var FUSIONS = {
   "12050" : "22050",
   "12051" : "22051",
   "12052" : "22052",
+  "12055" : "22055",
   "1300" : "11300",
   "1301" : "11301",
   "1302" : "11302",
@@ -122400,7 +122807,7 @@ var FUSIONS = {
   "18023" : "28023",
   "18024" : "28024",
   "18025" : "28025",
-  "19992" : "29992",
+  "19987" : "29987",
   "2000" : "12000",
   "2001" : "12001",
   "2002" : "12002",
@@ -122449,6 +122856,7 @@ var FUSIONS = {
   "2050" : "12050",
   "2051" : "12051",
   "2052" : "12052",
+  "2055" : "12055",
   "5000" : "15000",
   "5001" : "15001",
   "5002" : "15002",
@@ -122689,7 +123097,12 @@ var FUSIONS = {
   "8023" : "18023",
   "8024" : "18024",
   "8025" : "18025",
+  "9985" : "19985",
+  "9987" : "19987",
+  "9988" : "19988",
+  "9989" : "19989",
   "9990" : "19990",
+  "9991" : "19991",
   "9992" : "19992",
   "9993" : "19993",
   "9994" : "19994",
@@ -122859,7 +123272,7 @@ var BATTLEGROUNDS = {
     "id": "503",
     "enemy_only": true,
     "scale_with_level": "1",
-    "starting_level": "41",
+    "starting_level": "26",
     "hidden": true,
     "effect": [
       {
