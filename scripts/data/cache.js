@@ -92615,7 +92615,7 @@ var CARDS = {
   "323": {
     "id": "323",
     "name": "Goblin Captain",
-    "picture": "portrait_frogemperor",
+    "picture": "portrait_goblin_captain",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",

@@ -49511,7 +49511,7 @@
     <id>323</id>
     <card_type>1</card_type>
     <name>Goblin Captain</name>
-    <portrait>frogemperor</portrait>
+    <portrait>Portrait_Goblin_Captain</portrait>
     <attack>0</attack>
     <health>32</health>
     <skill id="rally" x="1" />

@@ -8758,7 +8758,7 @@
       <line>
         <commander>angelqueen</commander>
         <enemy>0</enemy>
-        <text>I see. For a mission of this importance, I'll send you one of our best. I'll have Geoffrey meet you as soon as possible.</text>
+        <text>I see. For a mission of this importance, I'll send you one of our best. I'll have Freya meet you as soon as possible.</text>
       </line>
     </speech>
   </mission>
@@ -8766,7 +8766,7 @@
     <id>5299</id>
     <name>Through the Looking Glass</name>
     <energy>13</energy>
-    <desc>Yuriel meets with the Queen's spy, Geoffrey. They will need to gather more intelligence on the goblins before infiltrating...</desc>
+    <desc>Yuriel meets with the Queen's spy, Freya. They will need to gather more intelligence on the goblins before infiltrating...</desc>
     <commander id="327" />
     <deck>
       <card id="1011" name="Archive Keeper" />
@@ -8786,6 +8786,16 @@
     </deck>
     <speech>
       <line>
+        <commander>Portrait_Spy_Angel</commander>
+        <enemy>0</enemy>
+        <text>Ah, you must be Yuriel. I don't mean to keep you from your books,  the Queen has sent me to aid you with the goblins.</text>
+      </line>
+      <line>
+        <commander>Portrait_Spy_Angel</commander>
+        <enemy>0</enemy>
+        <text>Um...hello?</text>
+      </line>
+      <line>
         <commander>owlmystic</commander>
         <enemy>0</enemy>
         <text>Ah, here it is. The spell of Eagle Sight should help us see what those goblins are up to.</text>
@@ -8796,7 +8806,7 @@
     <id>5300</id>
     <name>Security Blanket</name>
     <energy>13</energy>
-    <desc>Yuriel prepares the spell, while Geoffery waits impatiently...</desc>
+    <desc>Yuriel prepares the spell, while Freya waits impatiently...</desc>
     <commander id="325" />
     <deck>
       <card id="1012" name="Cloud Sylph" />
@@ -8822,17 +8832,17 @@
         <text>Can you see a good entry point to the goblin kingdom?</text>
       </line>
       <line>
-        <commander>elyse</commander>
+        <commander>Portrait_Spy_Angel</commander>
         <enemy>0</enemy>
         <text>The city looks different from the last time I saw it. Its security has been fortified, so it will be harder to sneak in.</text>
       </line>
       <line>
-        <commander>elyse</commander>
+        <commander>Portrait_Spy_Angel</commander>
         <enemy>0</enemy>
         <text>Outside the city, I can see some goblins working on the walls...</text>
       </line>
       <line>
-        <commander>elyse</commander>
+        <commander>Portrait_Spy_Angel</commander>
         <enemy>0</enemy>
         <text>That will be the best place to start.</text>
       </line>
@@ -8842,7 +8852,7 @@
     <id>5301</id>
     <name>Spy Watch</name>
     <energy>11</energy>
-    <desc>Geoffrey leaves for his journey to the goblin kingdom. With the knowledge from the looking-glass spell, he heads towards the weakest point in their defenses.</desc>
+    <desc>Freya leaves for his journey to the goblin kingdom. With the knowledge from the looking-glass spell, he heads towards the weakest point in their defenses.</desc>
     <commander id="326" />
     <deck>
       <card id="7012" name="Life Drake" />
@@ -8865,7 +8875,7 @@
     <id>5302</id>
     <name>Gift from Beetleton</name>
     <energy>11</energy>
-    <desc>A troop of goblins circles the kingdom's perimeter. One of them has the Spellstone hammer from Beetleton Bunker. Geoffrey sneaks closer.</desc>
+    <desc>A troop of goblins circles the kingdom's perimeter. One of them has the Spellstone hammer from Beetleton Bunker. Freya sneaks closer.</desc>
     <commander id="304" />
     <deck>
       <card id="1319" name="Wraith" />
@@ -8885,12 +8895,12 @@
     </deck>
     <speech>
       <line>
-        <commander>elyse</commander>
+        <commander>Portrait_Spy_Angel</commander>
         <enemy>0</enemy>
         <text>That hammer... it's a legendary artifact from Beetleton Bunker. The goblins stole it already?</text>
       </line>
       <line>
-        <commander>frogemperor</commander>
+        <commander>Portrait_Goblin_Captain</commander>
         <enemy>1</enemy>
         <text>Hey guys, there's a hole 'n the exterior o'er here. Why don' you give it a whack with that fancy hammer.</text>
       </line>
@@ -8926,7 +8936,7 @@
     </deck>
     <speech>
       <line>
-        <commander>frogemperor</commander>
+        <commander>Portrait_Goblin_Captain</commander>
         <enemy>1</enemy>
         <text>This is the spot, boys. Boss wants the watch tower right here.</text>
       </line>
@@ -8936,7 +8946,7 @@
     <id>5304</id>
     <name>Automated System</name>
     <energy>11</energy>
-    <desc>The goblins swing the hammer at the schematic. Geoffrey watches the artifact's magic: a watchtower grows from the ground. With just a few swings of the hammer, a huge watchtower has been built.</desc>
+    <desc>The goblins swing the hammer at the schematic. Freya watches the artifact's magic: a watchtower grows from the ground. With just a few swings of the hammer, a huge watchtower has been built.</desc>
     <commander id="326" />
     <deck>
       <card id="1318" name="Smelted Lava Slug" />
@@ -8990,7 +9000,7 @@
         <text>Now we finally have somewhere to escape the heat.</text>
       </line>
       <line>
-        <commander>frogemperor</commander>
+        <commander>Portrait_Goblin_Captain</commander>
         <enemy>1</enemy>
         <text>If you think the heat here is bad, just wait 'til we get to the Salt Wastes. You'll be sweatin' bullets.</text>
       </line>
@@ -9005,7 +9015,7 @@
     <id>5306</id>
     <name>Red Handed</name>
     <energy>11</energy>
-    <desc>Geoffrey has gotten the information he needed. As he turns to leave, he bumps straight into a goblin!</desc>
+    <desc>Freya has gotten the information he needed. As he turns to leave, he bumps straight into a goblin!</desc>
     <commander id="323" />
     <deck>
       <card id="1010" name="Lightning Elemental" />
@@ -9026,22 +9036,22 @@
     </deck>
     <speech>
       <line>
-        <commander>aprilchicken</commander>
+        <commander>Portrait_Potty_Goblin</commander>
         <enemy>1</enemy>
         <text>Who the in the bloody fire pit are you?!</text>
       </line>
       <line>
-        <commander>elyse</commander>
+        <commander>Portrait_Spy_Angel</commander>
         <enemy>0</enemy>
         <text>Oh, ahh I'm the new gardener. They needed someone to cut the real high branches.</text>
       </line>
       <line>
-        <commander>aprilchicken</commander>
+        <commander>Portrait_Potty_Goblin</commander>
         <enemy>1</enemy>
         <text>You don't say! I always thought there was a lot of landscaping potential around here! Hey guys! Have you met the new gardener?</text>
       </line>
       <line>
-        <commander>frogemperor</commander>
+        <commander>Portrait_Goblin_Captain</commander>
         <enemy>0</enemy>
         <text>You idiot! He's not a gardener, he's a spy! Get 'em!</text>
       </line>
@@ -9051,7 +9061,7 @@
     <id>5307</id>
     <name>Back Home</name>
     <energy>11</energy>
-    <desc>Geoffrey managed to make his way back to Skyhaven. He quickly finds Yuriel and relays his findings.</desc>
+    <desc>Freya managed to make his way back to Skyhaven. He quickly finds Yuriel and relays his findings.</desc>
     <commander id="273" />
     <deck>
       <card id="1017" name="Judgment" />

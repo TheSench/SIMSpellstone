@@ -232,7 +232,8 @@
     <id>503</id>
     <name>Frostbite's Aura</name>
     <desc>Frostbite Heals and Empowers all of his allies, increasing in strength as he levels up.</desc>
-    <web_picture>filter_frostbite_64.png</web_picture>
+    <icon>filter_frostbite_64</icon>
+    <icon_bundle>26</icon_bundle>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
