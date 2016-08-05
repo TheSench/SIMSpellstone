@@ -50299,6 +50299,253 @@ var CARDS = {
       },
     }
   },
+  "6074": {
+    "id": "6074",
+    "name": "Deific Channeler",
+    "picture": "Uncanny_Valley_Woman_A",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "6",
+    "attack": 2,
+    "health": 8,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "legion",
+        "x": 1,
+        "y": "6",
+        "z": 6,
+      },
+      {
+        "id": "fervor",
+        "x": 1,
+        "y": "6",
+        "z": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 9,
+        "skill": [],
+      },
+      "3": {
+        "attack": 3,
+        "skill": [],
+      },
+      "4": {
+        "health": 10,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 1,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "6",
+            "z": 6,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 1,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "16074": {
+    "id": "16074",
+    "name": "Divinity Channeler",
+    "picture": "Uncanny_Valley_Woman_A",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "6",
+    "attack": 3,
+    "health": 11,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "legion",
+        "x": 1,
+        "y": "6",
+        "z": 6,
+      },
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "6",
+        "z": 6,
+      },
+      {
+        "id": "burn",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 1,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+        ],
+      },
+      "3": {
+        "health": 12,
+        "skill": [],
+      },
+      "4": {
+        "health": 13,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "attack": 4,
+        "skill": [],
+      },
+    }
+  },
+  "26074": {
+    "id": "26074",
+    "name": "Celestial Channeler",
+    "picture": "Uncanny_Valley_Woman_B",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "6",
+    "attack": 4,
+    "health": 14,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "legion",
+        "x": 2,
+        "y": "6",
+        "z": 6,
+      },
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "6",
+        "z": 6,
+      },
+      {
+        "id": "burn",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 15,
+        "skill": [],
+      },
+      "3": {
+        "health": 16,
+        "skill": [],
+      },
+      "4": {
+        "attack": 5,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
   "7000": {
     "id": "7000",
     "name": "Treant King",
@@ -93745,7 +93992,7 @@ var CARDS = {
   "9989": {
     "id": "9989",
     "name": "New Art",
-    "picture": "New6_A",
+    "picture": "New8_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93758,7 +94005,7 @@ var CARDS = {
   "19989": {
     "id": "19989",
     "name": "New Art",
-    "picture": "New6_B",
+    "picture": "New8_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93770,8 +94017,8 @@ var CARDS = {
   },
   "9988": {
     "id": "9988",
-    "name": "New Art",
-    "picture": "New8_A",
+    "name": "Unused Art",
+    "picture": "Oda_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93783,8 +94030,8 @@ var CARDS = {
   },
   "19988": {
     "id": "19988",
-    "name": "New Art",
-    "picture": "New8_B",
+    "name": "Unused Art",
+    "picture": "Oda_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93794,10 +94041,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9987": {
-    "id": "9987",
+  "29988": {
+    "id": "29988",
     "name": "Unused Art",
-    "picture": "Oda_A",
+    "picture": "Oda_C",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93810,7 +94057,7 @@ var CARDS = {
   "19987": {
     "id": "19987",
     "name": "Unused Art",
-    "picture": "Oda_B",
+    "picture": "Promo_Dragon_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93820,10 +94067,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29987": {
-    "id": "29987",
+  "9986": {
+    "id": "9986",
     "name": "Unused Art",
-    "picture": "Oda_C",
+    "picture": "Seraph_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93836,7 +94083,7 @@ var CARDS = {
   "19986": {
     "id": "19986",
     "name": "Unused Art",
-    "picture": "Promo_Dragon_B",
+    "picture": "Seraph_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93849,20 +94096,7 @@ var CARDS = {
   "9985": {
     "id": "9985",
     "name": "Unused Art",
-    "picture": "Seraph_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19985": {
-    "id": "19985",
-    "name": "Unused Art",
-    "picture": "Seraph_B",
+    "picture": "Tarian_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93875,7 +94109,7 @@ var CARDS = {
   "9984": {
     "id": "9984",
     "name": "Unused Art",
-    "picture": "Tarian_A",
+    "picture": "Tremor_Wurm_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93888,7 +94122,7 @@ var CARDS = {
   "9983": {
     "id": "9983",
     "name": "Unused Art",
-    "picture": "Tremor_Wurm_A",
+    "picture": "Unused1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93901,7 +94135,7 @@ var CARDS = {
   "9982": {
     "id": "9982",
     "name": "Unused Art",
-    "picture": "Unused1_A",
+    "picture": "Unused2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93914,7 +94148,7 @@ var CARDS = {
   "9981": {
     "id": "9981",
     "name": "Unused Art",
-    "picture": "Unused2_A",
+    "picture": "Unused3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93927,7 +94161,7 @@ var CARDS = {
   "9980": {
     "id": "9980",
     "name": "Unused Art",
-    "picture": "Unused3_A",
+    "picture": "Ursurio_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93940,7 +94174,7 @@ var CARDS = {
   "9979": {
     "id": "9979",
     "name": "Unused Art",
-    "picture": "Ursurio_A",
+    "picture": "Void_Abomination_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93952,19 +94186,6 @@ var CARDS = {
   },
   "9978": {
     "id": "9978",
-    "name": "Unused Art",
-    "picture": "Void_Abomination_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9977": {
-    "id": "9977",
     "name": "Unused Art",
     "picture": "Yuriel_A",
     "rarity": "0",
@@ -122694,6 +122915,7 @@ var FUSIONS = {
   "1607" : "11607",
   "16070" : "26070",
   "16071" : "26071",
+  "16074" : "26074",
   "1610" : "11610",
   "1613" : "11613",
   "1614" : "11614",
@@ -122807,7 +123029,7 @@ var FUSIONS = {
   "18023" : "28023",
   "18024" : "28024",
   "18025" : "28025",
-  "19987" : "29987",
+  "19988" : "29988",
   "2000" : "12000",
   "2001" : "12001",
   "2002" : "12002",
@@ -123004,6 +123226,7 @@ var FUSIONS = {
   "6069" : "16069",
   "6070" : "16070",
   "6071" : "16071",
+  "6074" : "16074",
   "7000" : "17000",
   "7001" : "17001",
   "7002" : "17002",
@@ -123097,8 +123320,7 @@ var FUSIONS = {
   "8023" : "18023",
   "8024" : "18024",
   "8025" : "18025",
-  "9985" : "19985",
-  "9987" : "19987",
+  "9986" : "19986",
   "9988" : "19988",
   "9989" : "19989",
   "9990" : "19990",
