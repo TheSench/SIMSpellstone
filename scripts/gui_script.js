@@ -378,17 +378,20 @@ function gettable() {
     table += temp;
     table += '%</td>';
     table += '</tr>';
-    var stdDev = winrateDev(wins, games);
+    //var stdDev = winrateDev(wins, games);
+    var mErr = marginOfError(wins, games);
     table += '<tr>';
     table += '<td>';
     table += '+/-';
     table += '</td>';
     table += '<td>';
-    table += stdDev.toFixed(0);
+    //table += stdDev.toFixed(0);
+    table += (mErr * games).toFixed(0);
     table += '</td>';
     table += '<td>';
-    stdDev = (stdDev / games * 100).toFixed(2);
-    table += stdDev;
+    //stdDev = (stdDev / games * 100).toFixed(2);
+    mErr = mErr.toFixed(2);
+    table += mErr;
     table += '%</td>';
     table += '</tr>';
     table += '<tr style="background-color: #000; color: #fff;">';
@@ -445,7 +448,8 @@ function gettable() {
             current_deck = hash_encode(deck.player);
         }
 
-        battle_history += winrate + '% (+/- ' + stdDev + '%) &nbsp; &nbsp; ' + current_deck + '<br>';
+        //battle_history += winrate + '% (+/- ' + stdDev + '%) &nbsp; &nbsp; ' + current_deck + '<br>';
+        battle_history += winrate + '% (+/- ' + mErr + '%) &nbsp; &nbsp; ' + current_deck + '<br>';
     }
 
     return full_table;
@@ -458,6 +462,17 @@ function winrateDev(wins, games) {
     var N = games;
     var dev = Math.sqrt(N * p * (1 - p));
     return dev;
+}
+
+// http://onlinestatbook.com/2/estimation/proportion_ci.html
+function marginOfError(wins, games) {
+    if (games <= 1) return 1;
+
+    var p = wins / games;
+    var N = games;
+    var stdErr = Math.sqrt((p * (1 - p)) / N);
+    var Z95 = 1.96;
+    return ((stdErr * Z95)+0.5/N)*100;
 }
 
 // Generate a link from current settings and input
