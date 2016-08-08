@@ -390,6 +390,7 @@ function gettable() {
     table += '</td>';
     table += '<td>';
     //stdDev = (stdDev / games * 100).toFixed(2);
+    //table += stdDev;
     mErr = mErr.toFixed(2);
     table += mErr;
     table += '%</td>';
