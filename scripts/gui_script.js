@@ -95,7 +95,12 @@ $(function () {
 
     if (_GET('tower_type')) {
         var d = document.getElementById('tower_type');
-        d.value = _GET('tower_type');
+        var tower_type = _GET('tower_type');
+        if (tower_type < 3) {
+            var options = $("#tower_type").children();
+            tower_type = options[tower_type].value;
+        }
+        d.value = tower_type;
     }
 
     if (_DEFINED('tournament')) {
