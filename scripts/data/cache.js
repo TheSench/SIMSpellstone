@@ -744,6 +744,7 @@ var CARDS = {
     "set": "1000",
     "card_type": "2",
     "type": "1",
+    "sub_type": "5",
     "attack": 4,
     "health": 10,
     "cost": 3,
@@ -2631,6 +2632,7 @@ var CARDS = {
     "set": "1000",
     "card_type": "2",
     "type": "2",
+    "sub_type": "12",
     "attack": 3,
     "health": 4,
     "cost": 2,
@@ -5896,6 +5898,7 @@ var CARDS = {
     "set": "1000",
     "card_type": "2",
     "type": "3",
+    "sub_type": "11",
     "attack": 3,
     "health": 8,
     "cost": 2,
@@ -17226,6 +17229,224 @@ var CARDS = {
       },
     }
   },
+  "2054": {
+    "id": "2054",
+    "name": "Pack Runner",
+    "picture": "Pack_Leader_Angel_Angel_A",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "6",
+    "attack": 4,
+    "health": 10,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "fervor",
+        "x": 1,
+        "y": "6",
+        "z": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 11,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "6",
+            "z": 6,
+          },
+        ],
+      },
+      "4": {
+        "health": 13,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "12054": {
+    "id": "12054",
+    "name": "Pack Leader",
+    "picture": "Pack_Leader_Angel_Angel_A",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "6",
+    "attack": 5,
+    "health": 13,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "fervor",
+        "x": 1,
+        "y": "6",
+        "z": 6,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "health": 15,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "22054": {
+    "id": "22054",
+    "name": "Pack Alpha",
+    "picture": "Pack_Leader_Angel_Angel_B",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "6",
+    "attack": 5,
+    "health": 16,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "6",
+        "z": 6,
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 6,
+        "skill": [],
+      },
+      "3": {
+        "health": 17,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "health": 18,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "6",
+            "z": 6,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
   "2055": {
     "id": "2055",
     "name": "Wrath",
@@ -17510,6 +17731,7 @@ var CARDS = {
     "set": "3000",
     "card_type": "2",
     "type": "1",
+    "sub_type": "10",
     "attack": 3,
     "health": 12,
     "cost": 3,
@@ -17594,6 +17816,7 @@ var CARDS = {
     "set": "3000",
     "card_type": "2",
     "type": "1",
+    "sub_type": "10",
     "attack": 4,
     "health": 18,
     "cost": 3,
@@ -17666,6 +17889,7 @@ var CARDS = {
     "set": "3000",
     "card_type": "2",
     "type": "1",
+    "sub_type": "10",
     "attack": 5,
     "health": 22,
     "cost": 3,
@@ -36888,6 +37112,7 @@ var CARDS = {
     "set": "3000",
     "card_type": "2",
     "type": "2",
+    "sub_type": "7",
     "attack": 0,
     "health": 7,
     "cost": 1,
@@ -36952,6 +37177,7 @@ var CARDS = {
     "set": "3000",
     "card_type": "2",
     "type": "2",
+    "sub_type": "7",
     "attack": 0,
     "health": 9,
     "cost": 1,
@@ -37020,6 +37246,7 @@ var CARDS = {
     "set": "3000",
     "card_type": "2",
     "type": "2",
+    "sub_type": "7",
     "attack": 0,
     "health": 12,
     "cost": 1,
@@ -39036,6 +39263,7 @@ var CARDS = {
     "set": "3000",
     "card_type": "2",
     "type": "2",
+    "sub_type": "11",
     "attack": 7,
     "health": 16,
     "cost": 4,
@@ -39112,6 +39340,7 @@ var CARDS = {
     "set": "3000",
     "card_type": "2",
     "type": "2",
+    "sub_type": "11",
     "attack": 8,
     "health": 21,
     "cost": 4,
@@ -39186,6 +39415,7 @@ var CARDS = {
     "set": "3000",
     "card_type": "2",
     "type": "2",
+    "sub_type": "11",
     "attack": 8,
     "health": 25,
     "cost": 4,
@@ -40355,6 +40585,7 @@ var CARDS = {
     "set": "3000",
     "card_type": "2",
     "type": "2",
+    "sub_type": "7",
     "attack": 4,
     "health": 9,
     "cost": 2,
@@ -40415,6 +40646,7 @@ var CARDS = {
     "set": "3000",
     "card_type": "2",
     "type": "2",
+    "sub_type": "7",
     "attack": 5,
     "health": 13,
     "cost": 2,
@@ -40475,6 +40707,7 @@ var CARDS = {
     "set": "3000",
     "card_type": "2",
     "type": "2",
+    "sub_type": "7",
     "attack": 6,
     "health": 16,
     "cost": 2,
@@ -55967,6 +56200,7 @@ var CARDS = {
     "set": "4000",
     "card_type": "2",
     "type": "3",
+    "sub_type": "12",
     "attack": 4,
     "health": 13,
     "cost": 2,
@@ -56067,6 +56301,7 @@ var CARDS = {
     "set": "4000",
     "card_type": "2",
     "type": "3",
+    "sub_type": "12",
     "attack": 4,
     "health": 17,
     "cost": 2,
@@ -56151,6 +56386,7 @@ var CARDS = {
     "set": "4000",
     "card_type": "2",
     "type": "3",
+    "sub_type": "12",
     "attack": 5,
     "health": 21,
     "cost": 2,
@@ -75887,6 +76123,7 @@ var CARDS = {
     "set": "1000",
     "card_type": "2",
     "type": "1",
+    "sub_type": "5",
     "attack": 6,
     "health": 15,
     "cost": 3,
@@ -75945,6 +76182,7 @@ var CARDS = {
     "set": "1000",
     "card_type": "2",
     "type": "1",
+    "sub_type": "5",
     "attack": 8,
     "health": 18,
     "cost": 3,
@@ -77030,6 +77268,7 @@ var CARDS = {
     "set": "1000",
     "card_type": "2",
     "type": "2",
+    "sub_type": "12",
     "attack": 4,
     "health": 5,
     "cost": 2,
@@ -77070,6 +77309,7 @@ var CARDS = {
     "set": "1000",
     "card_type": "2",
     "type": "2",
+    "sub_type": "12",
     "attack": 5,
     "health": 6,
     "cost": 2,
@@ -80846,6 +81086,7 @@ var CARDS = {
     "set": "1000",
     "card_type": "2",
     "type": "3",
+    "sub_type": "11",
     "attack": 5,
     "health": 11,
     "cost": 2,
@@ -80926,6 +81167,7 @@ var CARDS = {
     "set": "1000",
     "card_type": "2",
     "type": "3",
+    "sub_type": "11",
     "attack": 5,
     "health": 13,
     "cost": 2,
@@ -93781,6 +94023,138 @@ var CARDS = {
       },
     }
   },
+  "605": {
+    "id": "605",
+    "name": "Fortified Tower",
+    "desc": "\"I've never seen'a more fortified tower in the middle of a grass field.\" - Jarad, Castle Guard",
+    "picture": "Tree_of_Life_A",
+    "rarity": "0",
+    "set": "9999",
+    "card_type": "2",
+    "type": "1",
+    "attack": 0,
+    "health": 1,
+    "cost": 4,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 2,
+        "skill": [],
+      },
+      "3": {
+        "health": 3,
+        "skill": [],
+      },
+      "4": {
+        "health": 4,
+        "skill": [],
+      },
+      "5": {
+        "health": 5,
+        "cost": 3,
+        "skill": [],
+      },
+      "6": {
+        "health": 6,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+        ],
+      },
+      "7": {
+        "health": 7,
+        "skill": [],
+      },
+      "8": {
+        "health": 8,
+        "skill": [],
+      },
+      "9": {
+        "health": 9,
+        "skill": [],
+      },
+      "10": {
+        "health": 10,
+        "cost": 2,
+        "skill": [],
+      },
+      "11": {
+        "health": 11,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+        ],
+      },
+      "12": {
+        "health": 12,
+        "skill": [],
+      },
+      "13": {
+        "health": 13,
+        "cost": 1,
+        "skill": [],
+      },
+    }
+  },
+  "606": {
+    "id": "606",
+    "name": "Fortified Horror",
+    "desc": "\"THE TOWER IS MOUNTING A COUNTER OFFENSE!\" - Jarad, Castle Guard",
+    "picture": "Moss_Golem_A",
+    "rarity": "0",
+    "set": "9999",
+    "card_type": "2",
+    "type": "1",
+    "attack": 2,
+    "health": 14,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 3,
+        "health": 15,
+        "skill": [],
+      },
+      "3": {
+        "attack": 4,
+        "health": 16,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+        ],
+      },
+      "4": {
+        "attack": 5,
+        "health": 17,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "armored",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
   "9999": {
     "id": "9999",
     "name": "Unused Art",
@@ -93807,8 +94181,21 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9997": {
-    "id": "9997",
+  "19997": {
+    "id": "19997",
+    "name": "Unused Art",
+    "picture": "Frost_Bite_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9996": {
+    "id": "9996",
     "name": "Unused Art",
     "picture": "General_A",
     "rarity": "0",
@@ -93820,36 +94207,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29996": {
-    "id": "29996",
+  "29995": {
+    "id": "29995",
     "name": "Unused Art",
     "picture": "Monster_C",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9995": {
-    "id": "9995",
-    "name": "New Art",
-    "picture": "New10_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19995": {
-    "id": "19995",
-    "name": "New Art",
-    "picture": "New10_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93888,7 +94249,7 @@ var CARDS = {
   "9993": {
     "id": "9993",
     "name": "New Art",
-    "picture": "New12_A",
+    "picture": "New1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93901,7 +94262,7 @@ var CARDS = {
   "19993": {
     "id": "19993",
     "name": "New Art",
-    "picture": "New12_B",
+    "picture": "New1_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93914,7 +94275,7 @@ var CARDS = {
   "9992": {
     "id": "9992",
     "name": "New Art",
-    "picture": "New14_A",
+    "picture": "New2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93927,7 +94288,7 @@ var CARDS = {
   "19992": {
     "id": "19992",
     "name": "New Art",
-    "picture": "New14_B",
+    "picture": "New2_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93940,7 +94301,7 @@ var CARDS = {
   "9991": {
     "id": "9991",
     "name": "New Art",
-    "picture": "New15_A",
+    "picture": "New3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93953,7 +94314,7 @@ var CARDS = {
   "19991": {
     "id": "19991",
     "name": "New Art",
-    "picture": "New15_B",
+    "picture": "New3_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -93965,292 +94326,6 @@ var CARDS = {
   },
   "9990": {
     "id": "9990",
-    "name": "New Art",
-    "picture": "New17_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19990": {
-    "id": "19990",
-    "name": "New Art",
-    "picture": "New17_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9989": {
-    "id": "9989",
-    "name": "New Art",
-    "picture": "New18_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19989": {
-    "id": "19989",
-    "name": "New Art",
-    "picture": "New18_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9988": {
-    "id": "9988",
-    "name": "New Art",
-    "picture": "New19_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19988": {
-    "id": "19988",
-    "name": "New Art",
-    "picture": "New19_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9987": {
-    "id": "9987",
-    "name": "New Art",
-    "picture": "New1_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19987": {
-    "id": "19987",
-    "name": "New Art",
-    "picture": "New1_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9986": {
-    "id": "9986",
-    "name": "New Art",
-    "picture": "New2_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19986": {
-    "id": "19986",
-    "name": "New Art",
-    "picture": "New2_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9985": {
-    "id": "9985",
-    "name": "New Art",
-    "picture": "New3_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19985": {
-    "id": "19985",
-    "name": "New Art",
-    "picture": "New3_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9984": {
-    "id": "9984",
-    "name": "New Art",
-    "picture": "New4_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19984": {
-    "id": "19984",
-    "name": "New Art",
-    "picture": "New4_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9983": {
-    "id": "9983",
-    "name": "New Art",
-    "picture": "New5_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19983": {
-    "id": "19983",
-    "name": "New Art",
-    "picture": "New5_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9982": {
-    "id": "9982",
-    "name": "New Art",
-    "picture": "New6_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19982": {
-    "id": "19982",
-    "name": "New Art",
-    "picture": "New6_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9981": {
-    "id": "9981",
-    "name": "New Art",
-    "picture": "New8_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19981": {
-    "id": "19981",
-    "name": "New Art",
-    "picture": "New8_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9980": {
-    "id": "9980",
-    "name": "New Art",
-    "picture": "New9_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19980": {
-    "id": "19980",
-    "name": "New Art",
-    "picture": "New9_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9979": {
-    "id": "9979",
     "name": "Unused Art",
     "picture": "Oda_A",
     "rarity": "0",
@@ -94262,8 +94337,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19979": {
-    "id": "19979",
+  "19990": {
+    "id": "19990",
     "name": "Unused Art",
     "picture": "Oda_B",
     "rarity": "0",
@@ -94275,8 +94350,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29979": {
-    "id": "29979",
+  "29990": {
+    "id": "29990",
     "name": "Unused Art",
     "picture": "Oda_C",
     "rarity": "0",
@@ -94288,8 +94363,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19978": {
-    "id": "19978",
+  "19989": {
+    "id": "19989",
     "name": "Unused Art",
     "picture": "Promo_Dragon_B",
     "rarity": "0",
@@ -94301,8 +94376,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9977": {
-    "id": "9977",
+  "9988": {
+    "id": "9988",
     "name": "Unused Art",
     "picture": "Seraph_A",
     "rarity": "0",
@@ -94314,8 +94389,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19977": {
-    "id": "19977",
+  "19988": {
+    "id": "19988",
     "name": "Unused Art",
     "picture": "Seraph_B",
     "rarity": "0",
@@ -94327,8 +94402,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9976": {
-    "id": "9976",
+  "9987": {
+    "id": "9987",
     "name": "Unused Art",
     "picture": "Tarian_A",
     "rarity": "0",
@@ -94340,8 +94415,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9975": {
-    "id": "9975",
+  "9986": {
+    "id": "9986",
     "name": "Unused Art",
     "picture": "Tremor_Wurm_A",
     "rarity": "0",
@@ -94353,8 +94428,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9974": {
-    "id": "9974",
+  "9985": {
+    "id": "9985",
     "name": "Unused Art",
     "picture": "Unused1_A",
     "rarity": "0",
@@ -94366,8 +94441,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9973": {
-    "id": "9973",
+  "9984": {
+    "id": "9984",
     "name": "Unused Art",
     "picture": "Unused2_A",
     "rarity": "0",
@@ -94379,8 +94454,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9972": {
-    "id": "9972",
+  "9983": {
+    "id": "9983",
     "name": "Unused Art",
     "picture": "Unused3_A",
     "rarity": "0",
@@ -94392,8 +94467,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9971": {
-    "id": "9971",
+  "9982": {
+    "id": "9982",
     "name": "Unused Art",
     "picture": "Ursurio_A",
     "rarity": "0",
@@ -94405,8 +94480,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9970": {
-    "id": "9970",
+  "9981": {
+    "id": "9981",
     "name": "Unused Art",
     "picture": "Void_Abomination_A",
     "rarity": "0",
@@ -94418,8 +94493,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9969": {
-    "id": "9969",
+  "9980": {
+    "id": "9980",
     "name": "Unused Art",
     "picture": "Yuriel_A",
     "rarity": "0",
@@ -122965,6 +123040,7 @@ var FUSIONS = {
   "12050" : "22050",
   "12051" : "22051",
   "12052" : "22052",
+  "12054" : "22054",
   "12055" : "22055",
   "1300" : "11300",
   "1301" : "11301",
@@ -123263,7 +123339,7 @@ var FUSIONS = {
   "18023" : "28023",
   "18024" : "28024",
   "18025" : "28025",
-  "19979" : "29979",
+  "19990" : "29990",
   "2000" : "12000",
   "2001" : "12001",
   "2002" : "12002",
@@ -123312,6 +123388,7 @@ var FUSIONS = {
   "2050" : "12050",
   "2051" : "12051",
   "2052" : "12052",
+  "2054" : "12054",
   "2055" : "12055",
   "5000" : "15000",
   "5001" : "15001",
@@ -123554,24 +123631,12 @@ var FUSIONS = {
   "8023" : "18023",
   "8024" : "18024",
   "8025" : "18025",
-  "9977" : "19977",
-  "9979" : "19979",
-  "9980" : "19980",
-  "9981" : "19981",
-  "9982" : "19982",
-  "9983" : "19983",
-  "9984" : "19984",
-  "9985" : "19985",
-  "9986" : "19986",
-  "9987" : "19987",
   "9988" : "19988",
-  "9989" : "19989",
   "9990" : "19990",
   "9991" : "19991",
   "9992" : "19992",
   "9993" : "19993",
-  "9994" : "19994",
-  "9995" : "19995"
+  "9994" : "19994"
 };
 var ACHIEVEMENTS = [];
 var BATTLEGROUNDS = {
@@ -123823,6 +123888,13 @@ var BATTLEGROUNDS = {
         "s": "strike",
         "all": "1",
       },
+    ]
+  },
+  "509": {
+    "name": "Fortified Tower",
+    "id": "509",
+    "hidden": true,
+    "effect": [
     ]
   },
   "10001": {
