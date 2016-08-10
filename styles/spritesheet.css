@@ -839,8 +839,8 @@
 .sprite-Guardian_Angel_Gorilla_A{ background-position: -252px -240px; background-image: url('../res/cardImages/SpriteSheet9.jpg');}
 .sprite-Cannon_Angel_A{ background-position: -336px -240px; background-image: url('../res/cardImages/SpriteSheet9.jpg');}
 .sprite-Guardian_Angel_Gorilla_B{ background-position: -420px -240px; background-image: url('../res/cardImages/SpriteSheet9.jpg');}
-.sprite-New8_B{ background-position: -504px -240px; background-image: url('../res/cardImages/SpriteSheet9.jpg');}
-.sprite-New8_A{ background-position: -588px -240px; background-image: url('../res/cardImages/SpriteSheet9.jpg');}
+.sprite-Pack_Leader_Angel_Angel_B{ background-position: -504px -240px; background-image: url('../res/cardImages/SpriteSheet9.jpg');}
+.sprite-Pack_Leader_Angel_Angel_A{ background-position: -588px -240px; background-image: url('../res/cardImages/SpriteSheet9.jpg');}
 .sprite-Cannon_Angel_B{ background-position: -672px -240px; background-image: url('../res/cardImages/SpriteSheet9.jpg');}
 .sprite-Masked_Seductress_A{ background-position: -756px -240px; background-image: url('../res/cardImages/SpriteSheet9.jpg');}
 .sprite-Masked_Seductress_B{ background-position: -0px -360px; background-image: url('../res/cardImages/SpriteSheet9.jpg');}
@@ -960,3 +960,5 @@
 .portrait-portrait_Portrait_Goblin_Captain{ background-position: -168px -900px; background-image: url('../res/cardImages/PortraitSheet1.jpg');}
 .portrait-portrait_Portrait_Potty_Goblin{ background-position: -252px -900px; background-image: url('../res/cardImages/PortraitSheet1.jpg');}
 .portrait-portrait_drakeanddrake{ background-position: -336px -900px; background-image: url('../res/cardImages/PortraitSheet1.jpg');}
+.portrait-portrait_new1{ background-position: -420px -900px; background-image: url('../res/cardImages/PortraitSheet1.jpg');}
+.portrait-portrait_new2{ background-position: -504px -900px; background-image: url('../res/cardImages/PortraitSheet1.jpg');}

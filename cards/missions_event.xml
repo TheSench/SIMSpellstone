@@ -8852,7 +8852,7 @@
     <id>5301</id>
     <name>Spy Watch</name>
     <energy>11</energy>
-    <desc>Freya leaves for his journey to the goblin kingdom. With the knowledge from the looking-glass spell, he heads towards the weakest point in their defenses.</desc>
+    <desc>Freya leaves for her journey to the goblin kingdom. With the knowledge from the looking-glass spell, she heads towards the weakest point in their defenses.</desc>
     <commander id="326" />
     <deck>
       <card id="7012" name="Life Drake" />
@@ -9015,7 +9015,7 @@
     <id>5306</id>
     <name>Red Handed</name>
     <energy>11</energy>
-    <desc>Freya has gotten the information he needed. As he turns to leave, he bumps straight into a goblin!</desc>
+    <desc>Freya has gotten the information she needed. As she turns to leave, she bumps straight into a goblin!</desc>
     <commander id="323" />
     <deck>
       <card id="1010" name="Lightning Elemental" />
@@ -9052,8 +9052,8 @@
       </line>
       <line>
         <commander>Portrait_Goblin_Captain</commander>
-        <enemy>0</enemy>
-        <text>You idiot! He's not a gardener, he's a spy! Get 'em!</text>
+        <enemy>1</enemy>
+        <text>You idiot! She's not a gardener, she's a spy! Get 'em!</text>
       </line>
     </speech>
   </mission>
@@ -9061,7 +9061,7 @@
     <id>5307</id>
     <name>Back Home</name>
     <energy>11</energy>
-    <desc>Freya managed to make his way back to Skyhaven. He quickly finds Yuriel and relays his findings.</desc>
+    <desc>Freya managed to make her way back to Skyhaven. She quickly finds Yuriel and relays her findings.</desc>
     <commander id="273" />
     <deck>
       <card id="1017" name="Judgment" />

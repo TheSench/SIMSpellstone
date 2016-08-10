@@ -3044,7 +3044,7 @@
       <card level="6" id="1017" />
       <card level="7" id="512" />
     </rewards>
-    <find_item id="3041" drop_per_energy=".23" />
+    <find_item id="3042" drop_per_energy=".23" />
   </campaign>
   <campaign>
     <id>1081</id>

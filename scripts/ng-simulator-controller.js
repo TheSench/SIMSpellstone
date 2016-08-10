@@ -58,6 +58,7 @@
         $scope.missions = $window.TITANS;
         $scope.raids = $window.RAIDS;
         $scope.battlegrounds = $window.BATTLEGROUNDS;
+
         $scope.tower = false;
         $scope.auto = false;
 
@@ -168,6 +169,16 @@
             }
             selectable.sort(function (a, b) { return a.id - b.id; });
             return selectable;
+        }
+
+        $scope.towerTypes = function () {
+            var towerTypes = [];
+            for (var id in $scope.battlegrounds) {
+                var BGE = $scope.battlegrounds[id];
+                if (BGE.isTower) towerTypes.push(BGE);
+            }
+            towerTypes.sort(function (a, b) { return a.id - b.id; });
+            return towerTypes;
         }
 
         $scope.$watch("debugMode", function (newValue, oldValue) {

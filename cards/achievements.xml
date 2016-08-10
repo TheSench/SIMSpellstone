@@ -1010,6 +1010,51 @@
       <pack>13</pack>
     </reward>
   </achievement>
+  <achievement>
+    <id>265</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector XV</name>
+    <desc>Collect a total of 1100 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>264</achievement_req>
+    <req>
+      <mastery_stars>1100</mastery_stars>
+    </req>
+    <reward>
+      <item id="4012" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>266</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector XVI</name>
+    <desc>Collect a total of 1200 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>265</achievement_req>
+    <req>
+      <mastery_stars>1200</mastery_stars>
+    </req>
+    <reward>
+      <wb>100</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>267</id>
+    <type>2</type>
+    <icon>star_LG</icon>
+    <name>Star Collector XVII</name>
+    <desc>Collect a total of 1300 Mastery Stars</desc>
+    <order>520</order>
+    <achievement_req>266</achievement_req>
+    <req>
+      <mastery_stars>1300</mastery_stars>
+    </req>
+    <reward>
+      <sp>500</sp>
+    </reward>
+  </achievement>
   <!-- Daily Quests -->
   <!-- 
 	<achievement> 
@@ -1425,6 +1470,90 @@
     </req>
     <reward>
       <pack>13</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>417</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XVII</name>
+    <desc>Collect 5,500 Bounties.</desc>
+    <achievement_req>416</achievement_req>
+    <req>
+      <pvp_wins>5500</pvp_wins>
+    </req>
+    <reward>
+      <item id="4001" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>418</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XVIII</name>
+    <desc>Collect 6,000 Bounties.</desc>
+    <achievement_req>417</achievement_req>
+    <req>
+      <pvp_wins>6000</pvp_wins>
+    </req>
+    <reward>
+      <wb>100</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>419</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XIX</name>
+    <desc>Collect 6,500 Bounties.</desc>
+    <achievement_req>418</achievement_req>
+    <req>
+      <pvp_wins>6500</pvp_wins>
+    </req>
+    <reward>
+      <item id="4012" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>420</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XX</name>
+    <desc>Collect 7,000 Bounties.</desc>
+    <achievement_req>419</achievement_req>
+    <req>
+      <pvp_wins>7000</pvp_wins>
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>421</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XXI</name>
+    <desc>Collect 7,500 Bounties.</desc>
+    <achievement_req>420</achievement_req>
+    <req>
+      <pvp_wins>7500</pvp_wins>
+    </req>
+    <reward>
+      <sp>500</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>422</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XXII</name>
+    <desc>Collect 8,000 Bounties.</desc>
+    <achievement_req>421</achievement_req>
+    <req>
+      <pvp_wins>8000</pvp_wins>
+    </req>
+    <reward>
+      <wb>100</wb>
     </reward>
   </achievement>
   <!-- Daily Quests -->

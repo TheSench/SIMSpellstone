@@ -95,9 +95,7 @@ $(function () {
 
     if (_GET('tower_type')) {
         var d = document.getElementById('tower_type');
-        var tower_type = _GET('tower_type');
-        tower_type = Math.min(Math.max(tower_type, 0), 15);
-        d.value = tower_type;
+        d.value = _GET('tower_type');
     }
 
     if (_DEFINED('tournament')) {

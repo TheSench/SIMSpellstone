@@ -341,6 +341,32 @@
       <skill id="enhance" s="strike" mult="0.5" all="1" />
     </effect>
   </battleground>
+  <battleground>
+    <id>509</id>
+    <name>Fortified Tower</name>
+    <desc>All enemies start with a Fortified Tower card. The tower evolves with the strongest opponents!</desc>
+    <web_picture>filter_tower_64.png</web_picture>
+    <icon>filter_tower_64</icon>
+    <effect>
+      <starting_card id="605" level="1" pvp_rank="2" />
+      <starting_card id="605" level="2" pvp_rank="3" />
+      <starting_card id="605" level="3" pvp_rank="4" />
+      <starting_card id="605" level="4" pvp_rank="5" />
+      <starting_card id="605" level="5" pvp_rank="6" />
+      <starting_card id="605" level="6" pvp_rank="7" />
+      <starting_card id="605" level="7" pvp_rank="8" />
+      <starting_card id="605" level="8" pvp_rank="9" />
+      <starting_card id="605" level="9" pvp_rank="10" />
+      <starting_card id="605" level="10" pvp_rank="11" />
+      <starting_card id="605" level="11" pvp_rank="12" />
+      <starting_card id="605" level="12" pvp_rank="13" />
+      <starting_card id="605" level="13" pvp_rank="14" />
+      <starting_card id="606" level="1" pvp_rank="15" />
+      <starting_card id="606" level="2" pvp_rank="16" />
+      <starting_card id="606" level="3" pvp_rank="17" />
+      <starting_card id="606" level="4" pvp_rank="18" />
+    </effect>
+  </battleground>
   <!-- 1001+: Personal BGE -->
   <battleground>
     <id>10001</id>
