@@ -165,7 +165,7 @@
             var selectable = [];
             for(var id in $scope.battlegrounds) {
                 var BGE = $scope.battlegrounds[id];
-                if(!BGE.hidden) selectable.push(BGE);
+                if(!(BGE.hidden || BGE.isTower)) selectable.push(BGE);
             }
             selectable.sort(function (a, b) { return a.id - b.id; });
             return selectable;
