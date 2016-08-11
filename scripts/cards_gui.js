@@ -176,6 +176,26 @@ var CARD_GUI = {};
         return cards;
     }
 
+    function createItemHTML(name, quantity) {
+        var htmlCard = createDiv("card");
+
+        var icon = document.createElement("i");
+        icon.className = 'sprite sprite-Item';
+        htmlCard.appendChild(icon);
+        var divName = createDiv("card-name", name);
+        htmlCard.appendChild(divName);
+        htmlCard.classList.add('factionless');
+        htmlCard.appendChild(createDiv("faction"));
+        if (quantity > 1) {
+            var multDiv = createDiv("multiplier", "x" + quantity);
+            multDiv.setAttribute("data-count", quantity);
+            var multIcon = createImg(getAssetPath("cardAssets") + "multiplier.png", "multiplier");
+            htmlCard.appendChild(multIcon);
+            htmlCard.appendChild(multDiv);
+        }
+        return htmlCard;
+    }
+
     function create_card_html(card, compactSkills, onField, onclick, onrightclick, onmouseover, state) {
         var htmlCard = createDiv("card");
         // Add ID to card
@@ -573,6 +593,7 @@ var CARD_GUI = {};
     CARD_GUI.draw_card_list = draw_card_list;
     CARD_GUI.draw_cards = draw_cards;
     CARD_GUI.draw_inventory = draw_inventory;
+    CARD_GUI.createItemHTML = createItemHTML;
 
     Object.defineProperties(CARD_GUI, {
         assetsRoot: {
