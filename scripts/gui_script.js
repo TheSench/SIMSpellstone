@@ -3,17 +3,17 @@
 var deckPopupDialog;
 
 window.onerror = function (message, url, linenumber) {
-    if (linenumber == 0) {
-        var msg = "<br><br><i>Error Message:</i><br><br>" +
-			"<i>It appears you're having trouble loading SimSpellstone. " +
-			"Thanks.</i><br><br>";
-        if (outp) {
-            outp(msg);
-        } else {
-            document.write(msg);
-        }
-        return 1;
-    }
+    // if (linenumber == 0) {
+    //     var msg = "<br><br><i>Error Message:</i><br><br>" +
+	// 		"<i>It appears you're having trouble loading SimSpellstone. " +
+	// 		"Thanks.</i><br><br>";
+    //     if (outp) {
+    //         outp(msg);
+    //     } else {
+    //         document.write(msg);
+    //     }
+    //     return 1;
+    // }
     var err_msg = "JavaScript error:\n " + message + "\n on line " + linenumber + "\n for " + url;
     var short_msg = err_msg;
 
