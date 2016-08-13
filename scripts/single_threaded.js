@@ -5,6 +5,12 @@ var SIM_CONTROLLER;
 (function () {
     SIM_CONTROLLER = {};
 
+    var inventaire = hash_decode("QXvAAAumrBoVXrBI8QkCwvsCConnCCgfiCCQPYCCIHTCCIlMjCYyvqBIilqBAagqB4RbqBwJWqBoBRqBg5LqBA0LkCQBbiCwkoSBgUeSBQEUSBI8OSBA0JSB");
+    var original_hash = "QXvAAgzoDCYrjDCYrjDCYrjDCQjeDCA0JSBYMZSBYMZSBocjSBwkoSBA~NCCwEfCCoZqiCQZIkCw5ckC";
+    var step = 0;
+    var best = original_hash;
+    var best_value = 0;
+
     // Initialize simulation loop - runs once per simulation session
     SIM_CONTROLLER.startsim = function (autostart) {
         orders = {};
@@ -36,11 +42,12 @@ var SIM_CONTROLLER;
         loss_debug = document.getElementById('loss_debug').checked;
         win_debug = document.getElementById('win_debug').checked;
         if ((loss_debug || win_debug) && mass_debug) mass_debug = false;
+
         getdeck = document.getElementById('deck').value;
         getcardlist = document.getElementById('cardlist').value;
         getordered = document.getElementById('ordered').checked;
         getexactorder = document.getElementById('exactorder').checked;
-        getmission = document.getElementById('mission').value;
+        getmission = "1500"; // document.getElementById('mission').value;
         getraid = document.getElementById('raid').value;
         if (getmission) {
             getdeck2 = TITANS[getmission].hash;
@@ -125,6 +132,30 @@ var SIM_CONTROLLER;
         // Display stop button
         document.getElementById('stop').style.display = 'block';
 
+        step = -1;
+        tryNewCard();
+        return false;
+    }
+
+
+    function tryNewCard(){
+        sims_left = 50000;
+        if (step >= 0) {
+            var originalDeck = hash_decode(original_hash);
+            var deckLength = originalDeck.deck.length;
+            var cardToTry = ~~(step / deckLength);
+            var deckCardToReplace = step % deckLength;
+            var progression = document.getElementById('progression');
+            progression.innerHTML = '<strong>Etape ' + step + '/' + (originalDeck.deck.length * inventaire.deck.length) + '</strong> == <strong>Best:</strong>' + best + ' (' + best_value + ')';
+
+            if (cardToTry >= inventaire.deck.length) {
+                return;
+            }
+            originalDeck.deck[deckCardToReplace] = inventaire.deck[cardToTry];
+            getdeck = hash_encode(originalDeck);
+        }
+        step++;
+        
         SIMULATOR.setupDecks();
 
         max_turns = 50;
@@ -136,8 +167,6 @@ var SIM_CONTROLLER;
         outp('<strong>Initializing simulations...</strong>');
 
         current_timeout = setTimeout(run_sims, 1);
-
-        return false;
     }
 
     // Interrupt simulations
@@ -250,8 +279,15 @@ var SIM_CONTROLLER;
             // Hide stop button
             document.getElementById('stop').style.display = 'none';
 
-            scroll_to_end();
+           // scroll_to_end();
             if (SIM_CONTROLLER.end_sims_callback) SIM_CONTROLLER.end_sims_callback();
+
+            if (wins > best_value){
+                best_value = wins;
+                best = getdeck;
+            }
+
+            setTimeout(tryDeck, 100);
         }
     }
 

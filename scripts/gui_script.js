@@ -820,7 +820,7 @@ function display_history() {
 
 function scroll_to_end() {
     // Scroll to bottom of page
-    window.scrollTo(0, document.body.scrollHeight);
+   // window.scrollTo(0, document.body.scrollHeight);
 }
 
 function dumpPlay(unit, i) {
