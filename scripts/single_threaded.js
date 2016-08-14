@@ -43,7 +43,7 @@ var SIM_CONTROLLER;
         getexactorder = document.getElementById('exactorder').checked;
         getmission = document.getElementById('mission').value || "1503";
         getraid = document.getElementById('raid').value;
-        inventaire = hash_decode(document.getElementById('inventory'.value) || "QXvAAAumrBoVXrBI8QkCwvsCConnCCgfiCCQPYCCIHTCCIlMjCYyvqBIilqBAagqB4RbqBwJWqBoBRqBg5LqBA0LkCwkoSBgUeSBQEUSBI8OSBA0JSBQjeDC");
+        inventaire = hash_decode(document.getElementById('inventory').value || "QXvAAAumrBoVXrBI8QkCwvsCConnCCgfiCCQPYCCIHTCCIlMjCYyvqBIilqBAagqB4RbqBwJWqBoBRqBg5LqBA0LkCwkoSBgUeSBQEUSBI8OSBA0JSBQjeDC");
         if (getmission) {
             getdeck2 = TITANS[getmission].hash;
         } else if (getraid) {
