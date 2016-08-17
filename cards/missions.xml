@@ -90,7 +90,7 @@
   </feature_lock>
   <feature_lock>
     <id>guildlivepvp</id>
-    <mission_req>64</mission_req>
+    <mission_req>-1</mission_req>
     <!-- 64 -->
   </feature_lock>
   <!-- MISSIONS BEGIN -->

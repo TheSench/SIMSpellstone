@@ -17229,6 +17229,209 @@ var CARDS = {
       },
     }
   },
+  "2053": {
+    "id": "2053",
+    "name": "Rocket Rider",
+    "picture": "Bomb_Rider_Goblin_A",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "11",
+    "attack": 3,
+    "health": 8,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "strike",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 9,
+        "skill": [],
+      },
+      "3": {
+        "health": 10,
+        "skill": [],
+      },
+      "4": {
+        "health": 11,
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "attack": 4,
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "12053": {
+    "id": "12053",
+    "name": "Rocket Racer",
+    "picture": "Bomb_Rider_Goblin_A",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "11",
+    "attack": 4,
+    "health": 12,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 1,
+        "y": "2",
+        "z": 2,
+      },
+      {
+        "id": "strike",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 13,
+        "skill": [],
+      },
+      "3": {
+        "health": 14,
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "strike",
+            "x": 4,
+          },
+        ],
+      },
+      "4": {
+        "health": 15,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "strike",
+            "x": 4,
+          },
+          {
+            "id": "nullify",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "22053": {
+    "id": "22053",
+    "name": "Rocket Jockey",
+    "picture": "Bomb_Rider_Goblin_B",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "11",
+    "attack": 4,
+    "health": 16,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "2",
+        "z": 2,
+      },
+      {
+        "id": "strike",
+        "x": 4,
+      },
+      {
+        "id": "nullify",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 17,
+        "skill": [],
+      },
+      "3": {
+        "attack": 5,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "strike",
+            "x": 5,
+          },
+          {
+            "id": "nullify",
+            "x": 1,
+          },
+        ],
+      },
+      "5": {
+        "health": 18,
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "strike",
+            "x": 5,
+          },
+          {
+            "id": "nullify",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
   "2054": {
     "id": "2054",
     "name": "Pack Runner",
@@ -94511,6 +94714,97 @@ var CARDS = {
       },
     }
   },
+  "328": {
+    "id": "328",
+    "name": "Plateau Monster",
+    "picture": "portrait_necromancer",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "2",
+    "health": 33,
+    "skill": [
+      {
+        "id": "weaken",
+        "x": 2,
+      },
+      {
+        "id": "imbue",
+        "x": 1,
+        "s": "armored",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 35,
+        "skill": [],
+      },
+      "3": {
+        "health": 40,
+        "skill": [
+          {
+            "id": "weaken",
+            "x": 2,
+          },
+          {
+            "id": "imbue",
+            "x": 2,
+            "s": "armored",
+          },
+        ],
+      },
+      "4": {
+        "health": 45,
+        "skill": [
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+          {
+            "id": "imbue",
+            "x": 2,
+            "s": "armored",
+          },
+        ],
+      },
+      "5": {
+        "health": 51,
+        "skill": [
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+          },
+          {
+            "id": "imbue",
+            "x": 2,
+            "s": "armored",
+          },
+        ],
+      },
+      "6": {
+        "health": 60,
+        "skill": [
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+          },
+          {
+            "id": "imbue",
+            "x": 2,
+            "s": "armored",
+          },
+        ],
+      },
+    }
+  },
   "500": {
     "id": "500",
     "name": "Arcane Dustling",
@@ -95155,7 +95449,7 @@ var CARDS = {
   "9994": {
     "id": "9994",
     "name": "New Art",
-    "picture": "New1_A",
+    "picture": "New2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -95168,7 +95462,7 @@ var CARDS = {
   "19994": {
     "id": "19994",
     "name": "New Art",
-    "picture": "New1_B",
+    "picture": "New2_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -95181,7 +95475,7 @@ var CARDS = {
   "9993": {
     "id": "9993",
     "name": "New Art",
-    "picture": "New2_A",
+    "picture": "New3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -95194,7 +95488,7 @@ var CARDS = {
   "19993": {
     "id": "19993",
     "name": "New Art",
-    "picture": "New2_B",
+    "picture": "New3_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -95207,7 +95501,7 @@ var CARDS = {
   "9992": {
     "id": "9992",
     "name": "New Art",
-    "picture": "New3_A",
+    "picture": "New4_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -95220,7 +95514,7 @@ var CARDS = {
   "19992": {
     "id": "19992",
     "name": "New Art",
-    "picture": "New3_B",
+    "picture": "New4_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -95233,7 +95527,7 @@ var CARDS = {
   "9991": {
     "id": "9991",
     "name": "New Art",
-    "picture": "New4_A",
+    "picture": "New5_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -95246,7 +95540,7 @@ var CARDS = {
   "19991": {
     "id": "19991",
     "name": "New Art",
-    "picture": "New4_B",
+    "picture": "New5_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -95259,7 +95553,7 @@ var CARDS = {
   "9990": {
     "id": "9990",
     "name": "New Art",
-    "picture": "New5_A",
+    "picture": "New6_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -95272,7 +95566,7 @@ var CARDS = {
   "19990": {
     "id": "19990",
     "name": "New Art",
-    "picture": "New5_B",
+    "picture": "New6_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -95285,7 +95579,7 @@ var CARDS = {
   "9989": {
     "id": "9989",
     "name": "New Art",
-    "picture": "New6_A",
+    "picture": "New7_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -95298,7 +95592,7 @@ var CARDS = {
   "19989": {
     "id": "19989",
     "name": "New Art",
-    "picture": "New6_B",
+    "picture": "New7_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -95311,7 +95605,7 @@ var CARDS = {
   "9988": {
     "id": "9988",
     "name": "New Art",
-    "picture": "New7_A",
+    "picture": "New8_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -95324,7 +95618,7 @@ var CARDS = {
   "19988": {
     "id": "19988",
     "name": "New Art",
-    "picture": "New7_B",
+    "picture": "New8_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -95337,7 +95631,7 @@ var CARDS = {
   "9987": {
     "id": "9987",
     "name": "New Art",
-    "picture": "New8_A",
+    "picture": "New9_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -95350,7 +95644,7 @@ var CARDS = {
   "19987": {
     "id": "19987",
     "name": "New Art",
-    "picture": "New8_B",
+    "picture": "New9_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -95362,8 +95656,8 @@ var CARDS = {
   },
   "9986": {
     "id": "9986",
-    "name": "New Art",
-    "picture": "New9_A",
+    "name": "Unused Art",
+    "picture": "Oda_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -95375,8 +95669,8 @@ var CARDS = {
   },
   "19986": {
     "id": "19986",
-    "name": "New Art",
-    "picture": "New9_B",
+    "name": "Unused Art",
+    "picture": "Oda_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -95386,10 +95680,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9985": {
-    "id": "9985",
+  "29986": {
+    "id": "29986",
     "name": "Unused Art",
-    "picture": "Oda_A",
+    "picture": "Oda_C",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -95402,7 +95696,7 @@ var CARDS = {
   "19985": {
     "id": "19985",
     "name": "Unused Art",
-    "picture": "Oda_B",
+    "picture": "Promo_Dragon_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -95412,10 +95706,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29985": {
-    "id": "29985",
+  "9984": {
+    "id": "9984",
     "name": "Unused Art",
-    "picture": "Oda_C",
+    "picture": "Seraph_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -95428,7 +95722,7 @@ var CARDS = {
   "19984": {
     "id": "19984",
     "name": "Unused Art",
-    "picture": "Promo_Dragon_B",
+    "picture": "Seraph_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -95441,20 +95735,7 @@ var CARDS = {
   "9983": {
     "id": "9983",
     "name": "Unused Art",
-    "picture": "Seraph_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19983": {
-    "id": "19983",
-    "name": "Unused Art",
-    "picture": "Seraph_B",
+    "picture": "Tarian_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -95467,7 +95748,7 @@ var CARDS = {
   "9982": {
     "id": "9982",
     "name": "Unused Art",
-    "picture": "Tarian_A",
+    "picture": "Tremor_Wurm_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -95480,7 +95761,7 @@ var CARDS = {
   "9981": {
     "id": "9981",
     "name": "Unused Art",
-    "picture": "Tremor_Wurm_A",
+    "picture": "Unused1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -95493,7 +95774,7 @@ var CARDS = {
   "9980": {
     "id": "9980",
     "name": "Unused Art",
-    "picture": "Unused1_A",
+    "picture": "Unused2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -95506,7 +95787,7 @@ var CARDS = {
   "9979": {
     "id": "9979",
     "name": "Unused Art",
-    "picture": "Unused2_A",
+    "picture": "Unused3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -95519,7 +95800,7 @@ var CARDS = {
   "9978": {
     "id": "9978",
     "name": "Unused Art",
-    "picture": "Unused3_A",
+    "picture": "Ursurio_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -95532,7 +95813,7 @@ var CARDS = {
   "9977": {
     "id": "9977",
     "name": "Unused Art",
-    "picture": "Ursurio_A",
+    "picture": "Void_Abomination_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -95544,19 +95825,6 @@ var CARDS = {
   },
   "9976": {
     "id": "9976",
-    "name": "Unused Art",
-    "picture": "Void_Abomination_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9975": {
-    "id": "9975",
     "name": "Unused Art",
     "picture": "Yuriel_A",
     "rarity": "0",

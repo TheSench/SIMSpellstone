@@ -9416,6 +9416,120 @@
     </upgrade>
   </unit>
   <unit>
+    <id>2053</id>
+    <card_type>2</card_type>
+    <name>Rocket Rider</name>
+    <picture>Bomb_Rider_Goblin_A</picture>
+    <asset_bundle>68</asset_bundle>
+    <hidden_until_time></hidden_until_time>
+    <attack>3</attack>
+    <health>8</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="strike" x="2" />
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>11</health>
+      <skill id="fervor" x="1" y="2" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>4</attack>
+      <skill id="fervor" x="1" y="2" />
+      <skill id="strike" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12053</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Rocket Racer</name>
+    <picture>Bomb_Rider_Goblin_A</picture>
+    <asset_bundle>68</asset_bundle>
+    <hidden_until_time></hidden_until_time>
+    <attack>4</attack>
+    <health>12</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="fervor" x="1" y="2" />
+    <skill id="strike" x="3" />
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>14</health>
+      <skill id="fervor" x="1" y="2" />
+      <skill id="strike" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="fervor" x="2" y="2" />
+      <skill id="strike" x="4" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22053</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Rocket Jockey</name>
+    <picture>Bomb_Rider_Goblin_B</picture>
+    <asset_bundle>68</asset_bundle>
+    <hidden_until_time></hidden_until_time>
+    <attack>4</attack>
+    <health>16</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="fervor" x="2" y="2" />
+    <skill id="strike" x="4" />
+    <skill id="nullify" x="1" />
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="fervor" x="2" y="2" />
+      <skill id="strike" x="5" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>18</health>
+      <skill id="fervor" x="3" y="2" />
+      <skill id="strike" x="5" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>2054</id>
     <card_type>2</card_type>
     <name>Pack Runner</name>
@@ -50476,6 +50590,49 @@
       <skill id="protect" x="3" />
       <skill id="jam" c="3" />
       <skill id="enhance" s="leech" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>328</id>
+    <card_type>1</card_type>
+    <name>Plateau Monster</name>
+    <portrait>necromancer</portrait>
+    <attack>0</attack>
+    <health>33</health>
+    <skill id="weaken" x="2" />
+    <skill id="imbue" s="armored" x="1" />
+    <rarity>4</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>35</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>40</health>
+      <skill id="weaken" x="2" />
+      <skill id="imbue" s="armored" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>45</health>
+      <skill id="weaken" x="3" />
+      <skill id="imbue" s="armored" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>51</health>
+      <skill id="weaken" x="3" />
+      <skill id="enfeeble" x="1" />
+      <skill id="imbue" s="armored" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>60</health>
+      <skill id="weaken" x="3" />
+      <skill id="enfeeble" x="2" />
+      <skill id="imbue" s="armored" x="2" />
     </upgrade>
   </unit>
   <!-- END Fortune's Favor -->
