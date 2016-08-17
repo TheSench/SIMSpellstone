@@ -1526,7 +1526,7 @@ function hash_decode(hash, isLegacy) {
                         current_deck.deck.push(unitInfo);
                         unitidx++;
                     }
-                } else {
+                } else if(!isLegacy) {
                     return hash_decode(hash, true);
                 }
             }
