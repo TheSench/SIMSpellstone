@@ -10,6 +10,8 @@ var SIM_CONTROLLER;
     var step = 0;
     var best = original_hash;
     var best_value = 0;
+    var cardBest= {};
+    var cardBestValue = {};
     var orderDeckMode = true;
 
     // Initialize simulation loop - runs once per simulation session
@@ -141,6 +143,7 @@ var SIM_CONTROLLER;
 
     var targetPosition = 0;
     var lastDeckHash = original_hash;
+    var currentCardName;
 
 // Coût pour faire un double: 3*(5+15+30+75) = 375
 // Coût pour faire un simple légendaire : 5+15+30+75+150 = 275
@@ -171,7 +174,12 @@ var SIM_CONTROLLER;
                 else {
                     targetPosition--;
                 }
-               progression.innerHTML = '<strong>Etape ' + step + '/' + (originalDeck.deck.length - 1) + " target=" + targetPosition + '</strong> == <strong>Best:</strong>' + best + ' (' + best_value + ' dernier=' + wins + ')';
+                var log = '<strong>Etape ' + step + '/' + (originalDeck.deck.length - 1) + " target=" + targetPosition + '</strong> == <strong>Best:</strong>' + best + ' (' + best_value + ' dernier=' + wins + ') <table>';
+               for (var cardName in cardBest) {
+                   log += '<tr><td>' + cardName + '</td><td>' + cardBest[cardName] + '</td><td>' + cardBestValue[cardName] + '</td></tr>';
+               }
+               log += '</table>'
+               progression.innerHTML = log;
                  var cards = originalDeck.deck.splice(step, 1);
                 originalDeck.deck.splice(targetPosition, 0, cards[0]);
                 getdeck = hash_encode(originalDeck);
@@ -179,11 +187,18 @@ var SIM_CONTROLLER;
             else{
                 var cardToTry = ~~(step / deckLength);
                 var deckCardToReplace = step % deckLength;
-                progression.innerHTML = '<strong>Etape ' + step + '/' + (originalDeck.deck.length * inventaire.deck.length) + '</strong> == <strong>Best:</strong>' + best + ' (' + best_value + ')';
-
+                var log = '<strong>Etape ' + step + '/' + (originalDeck.deck.length * inventaire.deck.length) + '</strong> == <strong>Best:</strong>' + best + ' (' + best_value + ')';
+                log += '<table>';
+                for (var cardName in cardBest) {
+                   log += '<tr><td>' + CARDS[cardName].name + '</td><td>' + cardBest[cardName] + '</td><td>' + cardBestValue[cardName] + '</td></tr>';
+               }
+               log += '</table>'
+                progression.innerHTML = log;
+               
                 if (cardToTry >= inventaire.deck.length) {
                     return;
                 }
+                currentCardName = inventaire.deck[cardToTry].id;
                 originalDeck.deck[deckCardToReplace] = inventaire.deck[cardToTry];
                 getdeck = hash_encode(originalDeck);
                 step++;
@@ -324,6 +339,11 @@ var SIM_CONTROLLER;
             if (wins > best_value){
                 best_value = wins;
                 best = getdeck;
+            }
+
+            if (currentCardName && (!cardBestValue[currentCardName] || wins > cardBestValue[currentCardName])){
+                cardBestValue[currentCardName] = wins;
+                cardBest[currentCardName] = getdeck;
             }
 
             setTimeout(tryNewCard, 100);
