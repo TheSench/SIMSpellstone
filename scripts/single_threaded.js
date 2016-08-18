@@ -21,27 +21,30 @@ var SIM_CONTROLLER;
         echo = '';
         games = 0;
         run_sims_batch = 0;
-        sims_left = document.getElementById('sims').value;
-        if (!sims_left) sims_left = 1;
-        var d = document.getElementById('user_controlled');
-        if (d) {
-            SIMULATOR.user_controlled = d.checked;
-        }
-        debug = document.getElementById('debug').checked;
-        var d = document.getElementById('auto_mode');
-        if (d) {
-            auto_mode = d.checked;
-        }
-        mass_debug = document.getElementById('mass_debug').checked;
-        loss_debug = document.getElementById('loss_debug').checked;
-        win_debug = document.getElementById('win_debug').checked;
-        if ((loss_debug || win_debug) && mass_debug) mass_debug = false;
-        getdeck = document.getElementById('deck').value;
-        getcardlist = document.getElementById('cardlist').value;
-        getordered = document.getElementById('ordered').checked;
-        getexactorder = document.getElementById('exactorder').checked;
-        getmission = document.getElementById('mission').value;
-        getraid = document.getElementById('raid').value;
+        sims_left = $('#sims').val() || 1;
+
+        SIMULATOR.user_controlled = $('#user_controlled').is(':checked');
+
+        debug = $('#debug').is(':checked');
+        mass_debug = $('#mass_debug').is(':checked');
+        loss_debug = $('#loss_debug').is(':checked');
+        win_debug = $('#win_debug').is(':checked');
+
+        auto_mode = $('#auto_mode').is(':checked');
+        getdeck = $('#deck').val();
+        getcardlist = $('#cardlist').val();
+        getordered2 = $('#ordered').is(':checked');
+        getexactorder2 = $('#exactorder').is(':checked');
+        getdeck2 = $('#deck2').val();
+        getcardlist2 = $('#cardlist2').val();
+        getordered2 = $('#ordered2').is(':checked');
+        getexactorder2 = $('#exactorder2').is(':checked');
+        getmission = $('#mission').val();
+        getraid = $('#raid').val();
+        raidlevel = $('#raid_level').val();
+        getsiege = $('#siege').is(':checked');
+        tower_level = $('#tower_level').val();
+        tower_type = $('#tower_type').val();
         if (getmission) {
             getdeck2 = TITANS[getmission].hash;
         } else if (getraid) {
@@ -185,6 +188,9 @@ var SIM_CONTROLLER;
             msg = '<br><h1>LOSS</h1><br>';
         }
         //outp(echo + msg + gettable());
+        if (echo) {
+            outp(echo);
+        }
         setSimStatus(msg);
 
         // Show interface
