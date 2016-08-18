@@ -7,7 +7,7 @@ var SIM_CONTROLLER;
 
     // Initialize simulation loop - runs once per simulation session
     SIM_CONTROLLER.startsim = function (autostart) {
-        document.getElementById('ui').style.display = 'none';
+        toggleUI(false);
 
         if (_DEFINED('autolink') && !autostart) {
             window.location.href = generate_link(1, 1);
@@ -111,7 +111,7 @@ var SIM_CONTROLLER;
         SIMULATOR.battlegrounds = battlegrounds;
 
         // Hide interface
-        document.getElementById('ui').style.display = 'none';
+        toggleUI(false);
 
         // Display stop button
         document.getElementById('stop').style.display = 'block';
@@ -183,12 +183,11 @@ var SIM_CONTROLLER;
     }
 
     function draw_match_end() {
-        document.getElementById('ui').style.display = 'block';
 
         CARD_GUI.draw_cards(SIMULATOR.field);   // Draw battlefield with no hand
 
         // Show interface
-        document.getElementById('ui').style.display = 'block';
+        toggleUI(true);
 
         // Hide stop button
         document.getElementById('stop').style.display = 'none';

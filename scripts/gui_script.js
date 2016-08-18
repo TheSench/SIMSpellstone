@@ -311,6 +311,15 @@ function toggle_u() {
     if (append === true) head.appendChild(style);
 }
 
+function toggleUI(display) {
+    var uiStyle = document.getElementById('ui').style;
+    if (display) {
+        uiStyle.display = 'block';
+    } else {
+        uiStyle.display = 'none';
+    }
+}
+
 // Modify HTML to output simulation results
 function outp(text) {
     var c = document.getElementById('content');
@@ -485,7 +494,7 @@ function generate_link(autostart, autolink) {
     var d = 0;
     var deck = [];
 
-    var url_base = document.URL
+    var url_base = document.URL;
     var index_of_query = url_base.indexOf('?');
     if (index_of_query > 0) {
         url_base = url_base.substring(0, index_of_query)

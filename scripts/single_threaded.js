@@ -120,7 +120,7 @@ var SIM_CONTROLLER;
         SIMULATOR.battlegrounds = battlegrounds;
 
         // Hide interface
-        document.getElementById('ui').style.display = 'none';
+        toggleUI(false);
 
         // Display stop button
         document.getElementById('stop').style.display = 'block';
@@ -152,7 +152,7 @@ var SIM_CONTROLLER;
 
         outp(echo + '<strong>Simulations interrupted.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>' + gettable());
         // Show interface
-        document.getElementById('ui').style.display = 'block';
+        toggleUI(true);
 
         // Hide stop button
         document.getElementById('stop').style.display = 'none';
@@ -178,7 +178,7 @@ var SIM_CONTROLLER;
         }
 
         // Show interface
-        document.getElementById('ui').style.display = 'block';
+        toggleUI(true);
 
         // Hide stop button
         document.getElementById('stop').style.display = 'none';
@@ -245,7 +245,7 @@ var SIM_CONTROLLER;
             outp(echo + '<br><strong>Simulations complete.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>' + gettable());
 
             // Show interface
-            document.getElementById('ui').style.display = 'block';
+            toggleUI(true);
 
             // Hide stop button
             document.getElementById('stop').style.display = 'none';
