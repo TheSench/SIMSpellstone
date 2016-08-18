@@ -1235,6 +1235,7 @@ var SIMULATOR = {};
             drawableHand.push(card);
         }
         if (redraw) {
+            hideTable();
             outp(echo);
             CARD_GUI.draw_cards(field, drawableHand, performTurns, turn);
             scroll_to_end();

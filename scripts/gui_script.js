@@ -349,6 +349,7 @@ function gettable() {
         if (debug) return links;
     }
     // Win/Loss ratio
+    /*
     var table = '';
     table += '<table cellspacing=0 cellpadding=5 style="border: 1px solid #000000;">';
     table += '<tr>';
@@ -359,8 +360,12 @@ function gettable() {
     table += wins;
     table += '</td>';
     table += '<td>';
+    */
     var winPercent = wins / games;
-    var winrate = (winPercent * 100).toFixed(2);
+    var winrate = (winPercent * 100).toFixed(2) + "%";
+    $("#wins").html(wins);
+    $("#winrate").html(winrate);
+    /*
     table += winrate;
     table += '%</td>';
     table += '</tr>';
@@ -372,9 +377,13 @@ function gettable() {
     table += losses;
     table += '</td>';
     table += '<td style="background-color: #eee;">';
-    var temp = losses / games * 100;
-    temp = temp.toFixed(2);
-    table += temp;
+    */
+    var lossrate = losses / games * 100;
+    lossrate = lossrate.toFixed(2) + "%";
+    $("#losses").html(losses);
+    $("#lossrate").html(lossrate);
+    /*
+    table += lossrate;
     table += '%</td>';
     table += '</tr>';
     table += '<tr>';
@@ -385,19 +394,28 @@ function gettable() {
     table += draws;
     table += '</td>';
     table += '<td>';
-    temp = draws / games * 100;
-    temp = temp.toFixed(2);
-    table += temp;
+    */
+    var drawrate = draws / games * 100;
+    drawrate = drawrate.toFixed(2) + "%";
+    $("#draws").html(draws);
+    $("#drawrate").html(drawrate);
+    /*
+    table += drawrate;
     table += '%</td>';
     table += '</tr>';
-    //var stdDev = winrateDev(wins, games);
-    var mErr = marginOfError(wins, games);
     table += '<tr>';
     table += '<td>';
     table += '+/-';
     table += '</td>';
     table += '<td>';
+    */
+    //var stdDev = winrateDev(wins, games);
     //table += stdDev.toFixed(0);
+    var mErr = marginOfError(wins, games);
+    $("#marginGames").html((mErr * games).toFixed(0));
+    mErr = mErr.toFixed(2) + "%";
+    $("#marginPercent").html(mErr);
+    /*
     table += (mErr * games).toFixed(0);
     table += '</td>';
     table += '<td>';
@@ -419,7 +437,13 @@ function gettable() {
     table += '%</td>';
     table += '</tr>';
     table += '</table>';
+    */
+    var totalSims = games + sims_left;
+    var percentComplete = (games * 100 / totalSims).toFixed("2") + "%";
+    $(".battleCount").html(games);
+    $("#percentComplete").html(percentComplete);
 
+    /*
     var table3 = '<table cellspacing=0 cellpadding=5 style="border: 1px solid #000000;">';
 
     // Average length of battle
@@ -428,8 +452,11 @@ function gettable() {
     table3 += 'Avg. Battle Length';
     table3 += '</td>';
     table3 += '<td>';
+    */
     // Calculate Average length of battle
     var avg_length = (total_turns / games).toFixed(3);
+    $("#avgLength").html(avg_length);
+    /*
     table3 += avg_length;
     table3 += '</td>';
     table3 += '</tr>';
@@ -437,8 +464,10 @@ function gettable() {
     table3 += '</table>';
 
     var full_table = '<table cellspacing=0 cellpadding=0 border=0><tr><td>' + table + '</td><td>&nbsp;</td><td>' + table3 + '</td></tr></table>';
-
+    */
+    $("#winrateTable").show();
     // Final output
+    var full_table = "";
     if (sims_left == 0) {
         // Add generated links to final output
         full_table += links;
@@ -462,10 +491,31 @@ function gettable() {
         }
 
         //battle_history += winrate + '% (+/- ' + stdDev + '%) &nbsp; &nbsp; ' + current_deck + '<br>';
-        battle_history += winrate + '% (+/- ' + mErr + '%) &nbsp; &nbsp; ' + current_deck + '<br>';
+        battle_history += winrate + ' (+/- ' + mErr + ') &nbsp; &nbsp; ' + current_deck + '<br>';
     }
 
     return full_table;
+}
+
+function hideTable() {
+    $("#winrateTable").hide();
+}
+
+function setSimStatus(simStatusMsg, elapse, simsPerSec) {
+    $("#simStatusMsg").html(simStatusMsg);
+    if (elapse && simsPerSec) {
+        var totalSims = games + sims_left;
+        var percentComplete = (games * 100 / totalSims).toFixed("2") + "%";
+        var progress = ('(' + games + '/' + totalSims + ') ' + percentComplete);
+        $("#progress").html(progress);
+        $("#speed").show();
+        $("#elapsed").html(elapse);
+        $("#simsPerSec").html(simsPerSec);
+    } else {
+        $("#progress").html("");
+        $("#speed").hide();
+    }
+    $("#simulationStatus").show();
 }
 
 function winrateDev(wins, games) {
@@ -810,14 +860,10 @@ function clear_history() {
 }
 
 function display_history() {
-    var h = battle_history;
-    if (h == '') {
-        h = 'No history available.';
-    }
     outp('' +
 	'<br>' +
 	'<hr>' +
-	h +
+	(battle_history || 'No history available.') +
 	'<hr>' +
 	'<br>' +
 	'<br>' +
