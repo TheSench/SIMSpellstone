@@ -161,6 +161,8 @@ var SIM_CONTROLLER;
 
         // Hide stop button
         document.getElementById('stop').style.display = 'none';
+
+        if(SIM_CONTROLLER.stop_sims_callback) SIM_CONTROLLER.stop_sims_callback()
     }
 
     // Loops through all simulations
@@ -409,5 +411,6 @@ var SIM_CONTROLLER;
     var run_sims_count = 0;
     var run_sims_batch = 0;
     SIM_CONTROLLER.end_sims_callback = false;
+    SIM_CONTROLLER.stop_sims_callback = false;
     SIM_CONTROLLER.debug_end = debug_end;
 })();
