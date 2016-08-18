@@ -1,6 +1,6 @@
 "use strict";
 
-if (!String.prototype.format) {
+if (typeof String.prototype.format !== 'function') {
     String.prototype.format = function () {
         var args = arguments;
         return this.replace(/{(\d+)}/g, function (match, number) {
@@ -9,6 +9,28 @@ if (!String.prototype.format) {
               : match
             ;
         });
+    };
+}
+
+if (typeof Object.assign !== 'function') {
+    Object.assign = function (target) {
+        'use strict';
+        if (target == null) {
+            throw new TypeError('Cannot convert undefined or null to object');
+        }
+
+        target = Object(target);
+        for (var index = 1; index < arguments.length; index++) {
+            var source = arguments[index];
+            if (source != null) {
+                for (var key in source) {
+                    if (Object.prototype.hasOwnProperty.call(source, key)) {
+                        target[key] = source[key];
+                    }
+                }
+            }
+        }
+        return target;
     };
 }
 
@@ -753,6 +775,11 @@ var canUseRune = function (card, runeID) {
     var rune = getRune(runeID);
 
     var statBoost = rune.stat_boost;
+    if (rune.faction_req) {
+        if (!card.isInFaction(rune.faction_req)) {
+            return false;
+        }
+    }
     for (var key in statBoost) {
         if (key == "skill") {
             var skill = statBoost[key]
@@ -1256,8 +1283,9 @@ function base64triplet_to_unitInfo(triplet) {
     }
     return makeUnitInfo(id, level);
 }
-
-var maxRuneID = 300;    // Used to determine how to hash runeIDs
+// Used to determine how to hash runeIDs
+var maxRuneID = 1000;
+var legacyMaxRuneID = 300;
 function unitInfo_to_base64(unit_info) {
 
     var baseID = parseInt(unit_info.id);
@@ -1283,19 +1311,23 @@ function unitInfo_to_base64(unit_info) {
     dec = dec * 3 + fusion;
     dec = dec * 7 + level;
     dec = dec * maxRuneID + runeID;
-    dec = dec * 15 + priority;
 
     return decimal_to_base64(dec, 5);
 }
 
-function base64_to_unitInfo(base64) {
+function base64_to_unitInfo(base64, legacy) {
 
     var dec = base64_to_decimal(base64);
 
-    var priority = dec % 15;
-    dec = (dec - priority) / 15;
-    var runeID = dec % maxRuneID;
-    dec = (dec - runeID) / maxRuneID;
+    if (legacy) {
+        var priority = dec % 15;
+        dec = (dec - priority) / 15;
+        var runeID = dec % legacyMaxRuneID;
+        dec = (dec - runeID) / legacyMaxRuneID;
+    } else {
+        var runeID = dec % maxRuneID;
+        dec = (dec - runeID) / maxRuneID;
+    }
     var level = dec % 7;
     dec = (dec - level++) / 7;
     var fusion = dec % 3;
@@ -1464,7 +1496,7 @@ function areEqual(unitInfo1, unitInfo2) {
 }
 
 //Returns deck array built from hash
-function hash_decode(hash) {
+function hash_decode(hash, isLegacy) {
 
     var current_deck = { deck: [] };
     var unitInfo;
@@ -1479,7 +1511,8 @@ function hash_decode(hash) {
     for (var i = 0; i < hash.length; i += entryLength) {
         if (multiplierChars.indexOf(hash[i]) == -1) {
             // Make sure we have valid characters
-            unitInfo = base64_to_unitInfo(hash.substr(i, entryLength));
+            var unitHash = hash.substr(i, entryLength);
+            unitInfo = base64_to_unitInfo(unitHash, isLegacy);
             if (unitidx > 0 && indexes) unitInfo.index = base64ToNumber(indexes[unitidx - 1]); // Skip commander
 
             if (unitInfo) {
@@ -1493,6 +1526,8 @@ function hash_decode(hash) {
                         current_deck.deck.push(unitInfo);
                         unitidx++;
                     }
+                } else if(!isLegacy) {
+                    return hash_decode(hash, true);
                 }
             }
         } else {
@@ -1967,10 +2002,6 @@ function GetMaxLevel(original_card) {
 
 function loadCard(id) {
     var card = CARDS[id];
-    if (!card) {
-        DATA_UPDATER.updateCards();
-        card = CARDS[id];
-    }
     return card;
 }
 
@@ -1980,11 +2011,6 @@ function getCardInfo(unit)
     var level = unit.level;
 
     var original = CARDS[id];
-    if (!original)
-    {
-        DATA_UPDATER.updateCards();
-        original = CARDS[id];
-    }
 
     var card = Object.assign({}, original);
     if (level > 1)

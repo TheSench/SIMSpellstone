@@ -96,7 +96,10 @@ $(function () {
     if (_GET('tower_type')) {
         var d = document.getElementById('tower_type');
         var tower_type = _GET('tower_type');
-        tower_type = Math.min(Math.max(tower_type, 0), 15);
+        if (tower_type < 3) {
+            var options = $("#tower_type").children();
+            tower_type = options[tower_type].value;
+        }
         d.value = tower_type;
     }
 

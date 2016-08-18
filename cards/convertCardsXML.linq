@@ -234,7 +234,7 @@ void Main()
 		}).ToArray()
 	}).OrderBy(mission => mission.id);
 
-	var file = new FileInfo(Path.Combine(path, "../scripts/data", "cache.js"));
+	var file = new FileInfo(Path.Combine(path, "../scripts/data", "cards.js"));
 	using (var writer = file.CreateText())
 	{
 		writer.Write("var CARDS = {\r\n");
@@ -243,7 +243,11 @@ void Main()
 			writer.Write(unit.ToString());
 		}
 		writer.Write("};\r\n");
+	}
 
+	file = new FileInfo(Path.Combine(path, "../scripts/data", "campaign.js"));
+	using (var writer = file.CreateText())
+	{
 		writer.Write("var LOCATIONS = {\r\n");
 		foreach (var location in locations)
 		{
@@ -266,7 +270,7 @@ void Main()
 			writer.WriteLine("  },");
 		}
 		writer.Write("};\r\n");
-		
+
 		writer.WriteLine("var MISSIONS = {");
 		foreach (var mission in missions)
 		{
@@ -287,13 +291,17 @@ void Main()
 			writer.WriteLine("  },");
 		}
 		writer.WriteLine("};");
-
+	}
+	file = new FileInfo(Path.Combine(path, "../scripts/data", "fusions.js"));
+	using (var writer = file.CreateText())
+	{
 		writer.WriteLine("var FUSIONS = {");
 		writer.WriteLine(String.Join(",\r\n", fusions.OrderBy(f => f.baseCardID).Select(f => f.ToString())));
 		writer.WriteLine("};");
-
-		writer.WriteLine("var ACHIEVEMENTS = [];");
-
+	}
+	file = new FileInfo(Path.Combine(path, "../scripts/data", "bges.js"));
+	using (var writer = file.CreateText())
+	{
 		xmlFile = Path.Combine(path, "battleground_effects.xml");
 		doc = XDocument.Load(xmlFile);
 
@@ -377,6 +385,7 @@ public class battleground
 	[XmlArrayItem(Type = typeof(add_skill), ElementName = "add_skill")]
 	[XmlArrayItem(Type = typeof(evolve_skill), ElementName = "evolve_skill")]
 	[XmlArrayItem(Type = typeof(skill), ElementName = "skill")]
+	[XmlArrayItem(Type = typeof(starting_card), ElementName = "starting_card")]
 	public battlegroundEffect[] effect { get; set; }
 	public string id { get; set; }
 	public string desc { get; set; }
@@ -404,6 +413,13 @@ public class battleground
 	public string scale_with_level { get; set; }
 	public string starting_level { get; set; }
 	public bool hidden { get; set; }
+	public bool isTower
+	{
+		get
+		{
+			return effect.Where(e => e is starting_card).Count() > 0;
+		}
+	}
 
 	public override string ToString()
 	{
@@ -415,36 +431,57 @@ public class battleground
 		if (scale_with_level != null) sb.Append(tabs).Append("\"scale_with_level\": \"").Append(scale_with_level).Append("\",\r\n");
 		if (starting_level != null) sb.Append(tabs).Append("\"starting_level\": \"").Append(starting_level).Append("\",\r\n");
 		if (hidden) sb.Append(tabs).Append("\"hidden\": ").Append(hidden.ToString().ToLower()).Append(",\r\n");
-		sb.Append(tabs).Append("\"effect\": [\r\n");
-		//sb.Append(tabs2).Append("\"" + effect.GetType().Name.Replace("[]", "") + "\": [\r\n");
+		if (isTower) sb.Append(tabs).Append("\"isTower\": ").Append(isTower.ToString().ToLower()).Append(",\r\n");
 		AppendEffect(sb);
-		//sb.Append(tabs2).Append("]\r\n");
-		sb.Append(tabs).Append("]\r\n");
 		sb.Append("  },\r\n");
 		return sb.ToString();
 	}
 
 	private void AppendEffect(StringBuilder sb)
 	{
+		var closeTag = "]";
+		var wroteSkills = false;
 		for (int i = 0; i < effect.Length; i++)
 		{
 			var effect_i = effect[i];
-			if(effect_i.skip) continue;
-			sb.Append(tabs2).Append("{\r\n");
-			AppendEntryString(sb, "effect_type", effect_i.GetType().Name, tabs3);
-			if (effect_i is skill)
+			if (effect_i.skip) continue;
+			if (effect_i is starting_card)
 			{
-				AppendSkill(sb, (skill)effect_i, tabs3, false);
+				if (!wroteSkills)
+				{
+					wroteSkills = true;
+					sb.Append(tabs).Append("\"effect\": {\r\n");
+					closeTag = "}";
+				}
+				AppendTowerLevel(sb, (starting_card)effect_i, tabs3);
 			}
-			else if (effect_i is evolve_skill)
+			else
 			{
-				AppendEvolve(sb, (evolve_skill)effect_i, tabs3);
+				if (!wroteSkills)
+				{
+					wroteSkills = true;
+					sb.Append(tabs).Append("\"effect\": [\r\n");
+				}
+				sb.Append(tabs2).Append("{\r\n");
+				AppendEntryString(sb, "effect_type", effect_i.GetType().Name, tabs3);
+				if (effect_i is skill)
+				{
+					AppendSkill(sb, (skill)effect_i, tabs3, false);
+				}
+				else if (effect_i is evolve_skill)
+				{
+					AppendEvolve(sb, (evolve_skill)effect_i, tabs3);
+				}
+				else if (effect_i is add_skill)
+				{
+					AppendAddSkill(sb, (add_skill)effect_i, tabs3);
+				}
+				sb.Append(tabs2).Append("},\r\n");
 			}
-			else if (effect_i is add_skill)
-			{
-				AppendAddSkill(sb, (add_skill)effect_i, tabs3);
-			}
-			sb.Append(tabs2).Append("},\r\n");
+		}
+		if (wroteSkills)
+		{
+			sb.Append(tabs).Append(closeTag + "\r\n");
 		}
 	}
 }
@@ -900,6 +937,30 @@ public partial class add_skill : battlegroundEffect
 	}
 }
 
+/// <remarks/>
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+public partial class starting_card : battlegroundEffect
+{
+	private string levelField;
+	private string rankField;
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string level
+	{
+		get { return this.levelField; }
+		set { this.levelField = value; }
+	}
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string pvp_rank
+	{
+		get { return this.rankField; }
+		set { this.rankField = value; }
+	}
+}
+
 public partial class campaign
 {
 	public string id { get; set; }
@@ -1036,6 +1097,16 @@ private static void AppendAddSkill(StringBuilder sb, add_skill skill, string tab
 	AppendEntryString(sb, "s", skill.s, tabs);
 	AppendEntryString(sb, "all", skill.all, tabs);
 }
+
+private static void AppendTowerLevel(StringBuilder sb, starting_card info, string tabs)
+{
+	sb.Append(tabs).Append("\"").Append(info.pvp_rank).Append("\"").Append(": ").Append("{\r\n");
+	var tabs2 = tabs + "\t";
+	AppendEntry(sb, "id", info.id, tabs2);
+	AppendEntry(sb, "level", info.level, tabs2);
+	sb.Append(tabs).Append("},\r\n");
+}
+
 
 private static void Normalize(string fileName, bool downloadFiles)
 {

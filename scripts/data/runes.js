@@ -955,8 +955,21 @@ var RUNES = {
             }
         },
         "category": 3
+    },
+    "5501": {
+        "id": "5501",
+        "name": "Angelic Rune of Health",
+        "type": "3",
+        "set": "2",
+        "rarity": "3",
+        "faction_req": "6",
+        "icon": "rune_health_epic",
+        "bundle": "34",
+        "desc": "Health +8. May only be embedded on Angels. May not be crafted.",
+        "usable": "0",
+        "stat_boost": {
+            "health": "8"
+        },
+        "category": 3
     }
-}
-// Temporary fix due to incorrect rune ID assumptions
-RUNES["5191"] = RUNES["5186"];
-RUNES["5192"] = RUNES["5187"];
+};

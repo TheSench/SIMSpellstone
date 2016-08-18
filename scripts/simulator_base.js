@@ -976,9 +976,13 @@ var SIMULATOR = {};
         setupField(field);
 
         if (getsiege) {
-            var tower = makeUnitInfo(601 + parseInt(tower_type), parseInt(tower_level) - 1);
-            var towerCard = get_card_apply_battlegrounds(tower);
-            play_card(towerCard, 'cpu', true);
+            var towerBGE = BATTLEGROUNDS[tower_type];
+            var tower = towerBGE.effect[tower_level];
+            if (tower) {
+                tower = makeUnitInfo(tower.id, tower.level);
+                var towerCard = get_card_apply_battlegrounds(tower);
+                play_card(towerCard, (surge ? 'player' : 'cpu'), true);
+            }
         }
 
         return performTurns(0);

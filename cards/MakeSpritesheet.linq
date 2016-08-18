@@ -9,6 +9,7 @@ string basePath = Path.GetDirectoryName(Util.CurrentQueryPath);
 void Main()
 {
 	var path = Path.Combine(basePath, @"..\res\cardImages\");
+	var spritePath = Path.Combine(basePath, @"..\res\sprites\");
 	var files = new DirectoryInfo(path).GetFiles().OrderBy(file => file.CreationTime);
 	var imageFileNames = new List<string>();
 	var portraitFileNames = new List<string>();
@@ -57,7 +58,7 @@ void Main()
 		if (images % dimensions > 0) height++;
 		if (height > dimensions) height = dimensions;
 		var sheetName = "SpriteSheet" + sheetIndex + ".jpg";
-		var backgroundImage = "background-image: url('../res/cardImages/" + sheetName + "');";
+		var backgroundImage = "background-image: url('../res/sprites/" + sheetName + "');";
 		using (var spriteSheet = new Bitmap(84 * dimensions, 120 * height))
 		{
 			var end = Math.Min(dimensions * dimensions, images - offset);
@@ -72,7 +73,7 @@ void Main()
 				css.AppendLine(".sprite-" + imageName + "{ background-position: -" + x + "px -" + y + "px; " + backgroundImage + "}");
 				AddImage(fileName, spriteSheet, x, y);
 			}
-			spriteSheet.Save(Path.Combine(path, sheetName), ImageFormat.Png);
+			spriteSheet.Save(Path.Combine(spritePath, sheetName), ImageFormat.Png);
 			offset += i;
 		}
 		sheetIndex++;
@@ -89,7 +90,7 @@ void Main()
 		if (images % dimensions > 0) height++;
 		if (height > dimensions) height = dimensions;
 		var sheetName = "PortraitSheet" + sheetIndex + ".jpg";
-		var backgroundImage = "background-image: url('../res/cardImages/" + sheetName + "');";
+		var backgroundImage = "background-image: url('../res/sprites/" + sheetName + "');";
 		using (var spriteSheet = new Bitmap(84 * dimensions, 100 * height))
 		{
 			var end = Math.Min(dimensions * dimensions, images - offset);
@@ -104,7 +105,7 @@ void Main()
 				css.AppendLine(".portrait-" + imageName + "{ background-position: -" + x + "px -" + y + "px; " + backgroundImage + "}");
 				AddPortrait(fileName, spriteSheet, x, y);
 			}
-			spriteSheet.Save(Path.Combine(path, sheetName), ImageFormat.Png);
+			spriteSheet.Save(Path.Combine(spritePath, sheetName), ImageFormat.Png);
 			offset += i;
 		}
 		sheetIndex++;
