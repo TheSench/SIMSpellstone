@@ -21,27 +21,30 @@ var SIM_CONTROLLER;
         echo = '';
         games = 0;
         run_sims_batch = 0;
-        sims_left = document.getElementById('sims').value;
-        if (!sims_left) sims_left = 1;
-        var d = document.getElementById('user_controlled');
-        if (d) {
-            SIMULATOR.user_controlled = d.checked;
-        }
-        debug = document.getElementById('debug').checked;
-        var d = document.getElementById('auto_mode');
-        if (d) {
-            auto_mode = d.checked;
-        }
-        mass_debug = document.getElementById('mass_debug').checked;
-        loss_debug = document.getElementById('loss_debug').checked;
-        win_debug = document.getElementById('win_debug').checked;
-        if ((loss_debug || win_debug) && mass_debug) mass_debug = false;
-        getdeck = document.getElementById('deck').value;
-        getcardlist = document.getElementById('cardlist').value;
-        getordered = document.getElementById('ordered').checked;
-        getexactorder = document.getElementById('exactorder').checked;
-        getmission = document.getElementById('mission').value;
-        getraid = document.getElementById('raid').value;
+        sims_left = $('#sims').val() || 1;
+
+        SIMULATOR.user_controlled = $('#user_controlled').is(':checked');
+
+        debug = $('#debug').is(':checked');
+        mass_debug = $('#mass_debug').is(':checked');
+        loss_debug = $('#loss_debug').is(':checked');
+        win_debug = $('#win_debug').is(':checked');
+
+        auto_mode = $('#auto_mode').is(':checked');
+        getdeck = $('#deck').val();
+        getcardlist = $('#cardlist').val();
+        getordered2 = $('#ordered').is(':checked');
+        getexactorder2 = $('#exactorder').is(':checked');
+        getdeck2 = $('#deck2').val();
+        getcardlist2 = $('#cardlist2').val();
+        getordered2 = $('#ordered2').is(':checked');
+        getexactorder2 = $('#exactorder2').is(':checked');
+        getmission = $('#mission').val();
+        getraid = $('#raid').val();
+        raidlevel = $('#raid_level').val();
+        getsiege = $('#siege').is(':checked');
+        tower_level = $('#tower_level').val();
+        tower_type = $('#tower_type').val();
         if (getmission) {
             getdeck2 = TITANS[getmission].hash;
         } else if (getraid) {
@@ -120,7 +123,7 @@ var SIM_CONTROLLER;
         SIMULATOR.battlegrounds = battlegrounds;
 
         // Hide interface
-        document.getElementById('ui').style.display = 'none';
+        toggleUI(false);
 
         // Display stop button
         document.getElementById('stop').style.display = 'block';
@@ -133,7 +136,10 @@ var SIM_CONTROLLER;
         losses = 0;
         draws = 0;
 
-        outp('<strong>Initializing simulations...</strong>');
+        //outp('<strong>Initializing simulations...</strong>');
+        outp(""); // Clear display
+        hideTable();
+        setSimStatus("Initializing simulations...");
 
         current_timeout = setTimeout(run_sims, 1);
 
@@ -150,12 +156,16 @@ var SIM_CONTROLLER;
         // Stop the recursion
         if (current_timeout) clearTimeout(current_timeout);
 
-        outp(echo + '<strong>Simulations interrupted.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>' + gettable());
+        //outp(echo + '<strong>Simulations interrupted.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>' + gettable());
+        setSimStatus("Simulations interrupted.", elapse, simpersec);
+        gettable();
         // Show interface
-        document.getElementById('ui').style.display = 'block';
+        toggleUI(true);
 
         // Hide stop button
         document.getElementById('stop').style.display = 'none';
+
+        if(SIM_CONTROLLER.stop_sims_callback) SIM_CONTROLLER.stop_sims_callback()
     }
 
     // Loops through all simulations
@@ -169,16 +179,22 @@ var SIM_CONTROLLER;
 
         time_stop = new Date();
 
+        var msg;
         if (result == 'draw') {
-            outp(echo + '<br><h1>DRAW</h1><br>' + gettable());
+            msg = '<br><h1>DRAW</h1><br>';
         } else if (result) {
-            outp(echo + '<br><h1>WIN</h1><br>' + gettable());
+            msg = '<br><h1>WIN</h1><br>';
         } else {
-            outp(echo + '<br><h1>LOSS</h1><br>' + gettable());
+            msg = '<br><h1>LOSS</h1><br>';
         }
+        //outp(echo + msg + gettable());
+        if (echo) {
+            outp(echo);
+        }
+        setSimStatus(msg);
 
         // Show interface
-        document.getElementById('ui').style.display = 'block';
+        toggleUI(true);
 
         // Hide stop button
         document.getElementById('stop').style.display = 'none';
@@ -214,7 +230,9 @@ var SIM_CONTROLLER;
                         simpersecbatch = run_sims_batch / batch_elapse;
                     }
 
-                    outp(echo + '<strong>Running simulations...</strong> (' + games + '/' + (games + sims_left) + ') ' + temp + '%<br>' + elapse + ' seconds<br>' + simpersecbatch.toFixed(1) + ' simulations per second<br>' + gettable());
+                    //outp(echo + '<strong>Running simulations...</strong> (' + games + '/' + (games + sims_left) + ') ' + temp + '%<br>' + elapse + ' seconds<br>' + simpersecbatch.toFixed(1) + ' simulations per second<br>' + gettable());
+                    setSimStatus("Running simulations...", elapse, simpersecbatch.toFixed(1));
+                    gettable();
                 }
                 run_sims_batch = 1;
                 if (simpersecbatch > run_sims_batch) // If we can run more at one time, then let's try to
@@ -242,10 +260,13 @@ var SIM_CONTROLLER;
             var simpersec = games / elapse;
             simpersec = simpersec.toFixed(1);
 
-            outp(echo + '<br><strong>Simulations complete.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>' + gettable());
+            //outp(echo + '<br><strong>Simulations complete.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>' + gettable());
+
+            setSimStatus("Simulations complete.", elapse, simpersec);
+            gettable();
 
             // Show interface
-            document.getElementById('ui').style.display = 'block';
+            toggleUI(true);
 
             // Hide stop button
             document.getElementById('stop').style.display = 'none';
@@ -396,5 +417,6 @@ var SIM_CONTROLLER;
     var run_sims_count = 0;
     var run_sims_batch = 0;
     SIM_CONTROLLER.end_sims_callback = false;
+    SIM_CONTROLLER.stop_sims_callback = false;
     SIM_CONTROLLER.debug_end = debug_end;
 })();

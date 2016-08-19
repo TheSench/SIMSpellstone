@@ -9469,7 +9469,7 @@
     <name>Behind Enemy Lines</name>
     <energy>11</energy>
     <desc>The goblins agree to let Orgoth through the fortress gates. He is amazed at the fort's details, especially since it had been constructed so quickly. The guards usher him quickly to the King.</desc>
-    <commander id="311" />
+    <commander id="320" />
     <deck>
       <card id="6017" name="Tar Pit Stalker" />
       <card id="6017" />
@@ -9852,7 +9852,7 @@
     <name>Around the Bend</name>
     <energy>13</energy>
     <desc>The army begins to round the last bend of the valley. A welcoming party sits waiting for their arrival. </desc>
-    <commander id="291" />
+    <commander id="329" />
     <deck>
       <card id="6007" name="Goblin Crew" />
       <card id="6007" />
@@ -9918,7 +9918,7 @@
       <line>
         <commander>elyse</commander>
         <enemy>1</enemy>
-        <text>But perhapes, if you ask real nice, I can confiscate your dragons and let you go on your way. </text>
+        <text>But perhaps, if you ask real nice, I can confiscate your dragons and let you go on your way. </text>
       </line>
       <line>
         <commander>dragontamer</commander>
@@ -9932,7 +9932,7 @@
     <name>Rain from Above</name>
     <energy>13</energy>
     <desc>Angels and Ground Elementals emerge from the cracks in the valley. Barrages of arrows and rocks fall on the Goblin forces. </desc>
-    <commander id="4" />
+    <commander id="321" />
     <deck>
       <card id="1018" name="Armored Eagle" />
       <card id="1018" />
@@ -9956,8 +9956,8 @@
         <text>Ah, not bad puddin, teamin' up with the angels like this. Hah! Let's see what they can do against my dragons. </text>
       </line>
       <line>
-        <commander>elyse</commander>
-        <enemy>1</enemy>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
         <text>Well lucky for you I am just full of surprises today! Dilbert! Unleash the catapults! </text>
       </line>
       <line>
@@ -9971,7 +9971,7 @@
     <id>5335</id>
     <name>Off Guard</name>
     <energy>13</energy>
-    <desc>Reks swoops his dragon through the valley. In a fluster, he grabs his war horn and and signals to his army. It's time for an all out attack!</desc>
+    <desc>Reks swoops his dragon through the valley. In a fluster, he grabs his war horn and signals to his army. It's time for an all out attack!</desc>
     <commander id="323" />
     <deck>
       <card id="5012" name="Static Drake" />
@@ -9995,7 +9995,7 @@
     <name>Last Stand</name>
     <energy>13</energy>
     <desc>Reks, now furious with the turn of events, charges at the tamer. He will not  give up on the expansion of the goblin empire so easily! </desc>
-    <commander id="4" />
+    <commander id="329" />
     <deck>
       <card id="5012" name="Static Drake" />
       <card id="5012" />

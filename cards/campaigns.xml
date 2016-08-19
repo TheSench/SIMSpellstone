@@ -3193,7 +3193,7 @@
     <name>Reks and the Tamer</name>
     <icon id="angel_feather100" bundle="58" />
     <location_id>100</location_id>
-    <x>860</x>
+    <x>760</x>
     <y>300</y>
     <combatBG>CombatBGVoid</combatBG>
     <missions>

@@ -28081,7 +28081,7 @@ var MISSIONS = {
     "id": "5320",
     "name": "Behind Enemy Lines",
     "commander": {
-        "id": "311"
+        "id": "320"
     },
     "deck": [
       {
@@ -28769,7 +28769,7 @@ var MISSIONS = {
     "id": "5332",
     "name": "Around the Bend",
     "commander": {
-        "id": "291"
+        "id": "329"
     },
     "deck": [
       {
@@ -28883,7 +28883,7 @@ var MISSIONS = {
     "id": "5334",
     "name": "Rain from Above",
     "commander": {
-        "id": "4"
+        "id": "321"
     },
     "deck": [
       {
@@ -28997,7 +28997,7 @@ var MISSIONS = {
     "id": "5336",
     "name": "Last Stand",
     "commander": {
-        "id": "4"
+        "id": "329"
     },
     "deck": [
       {
