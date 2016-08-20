@@ -17929,7 +17929,7 @@ var CARDS = {
   "2056": {
     "id": "2056",
     "name": "Drainor",
-    "picture": "NotFound",
+    "picture": "Whirl_Pool_Elemental_A",
     "rarity": "3",
     "set": "2000",
     "card_type": "2",
@@ -17997,7 +17997,7 @@ var CARDS = {
   "12056": {
     "id": "12056",
     "name": "Drainor Whirlpool",
-    "picture": "NotFound",
+    "picture": "Whirl_Pool_Elemental_A",
     "rarity": "3",
     "set": "2000",
     "card_type": "2",
@@ -18068,7 +18068,7 @@ var CARDS = {
   "22056": {
     "id": "22056",
     "name": "Drainor Monsoon",
-    "picture": "NotFound",
+    "picture": "Whirl_Pool_Elemental_B",
     "rarity": "3",
     "set": "2000",
     "card_type": "2",
@@ -18125,7 +18125,7 @@ var CARDS = {
   "2057": {
     "id": "2057",
     "name": "Twister",
-    "picture": "NotFound",
+    "picture": "Sand_Warrior_Elemental_A",
     "rarity": "3",
     "set": "2000",
     "card_type": "2",
@@ -18183,7 +18183,7 @@ var CARDS = {
   "12057": {
     "id": "12057",
     "name": "Rising Twister",
-    "picture": "NotFound",
+    "picture": "Sand_Warrior_Elemental_A",
     "rarity": "3",
     "set": "2000",
     "card_type": "2",
@@ -18259,7 +18259,7 @@ var CARDS = {
   "22057": {
     "id": "22057",
     "name": "Ascending Twister",
-    "picture": "NotFound",
+    "picture": "Sand_Warrior_Elemental_B",
     "rarity": "3",
     "set": "2000",
     "card_type": "2",
@@ -18320,7 +18320,7 @@ var CARDS = {
   "2058": {
     "id": "2058",
     "name": "Bismuth Bully",
-    "picture": "NotFound",
+    "picture": "Bismuth_Beast_Elemental_A",
     "rarity": "3",
     "set": "2000",
     "card_type": "2",
@@ -18387,7 +18387,7 @@ var CARDS = {
   "12058": {
     "id": "12058",
     "name": "Bismuth Brute",
-    "picture": "NotFound",
+    "picture": "Bismuth_Beast_Elemental_A",
     "rarity": "3",
     "set": "2000",
     "card_type": "2",
@@ -18445,7 +18445,7 @@ var CARDS = {
   "22058": {
     "id": "22058",
     "name": "Bismuth Beast",
-    "picture": "NotFound",
+    "picture": "Bismuth_Beast_Elemental_B",
     "rarity": "3",
     "set": "2000",
     "card_type": "2",
@@ -35916,7 +35916,7 @@ var CARDS = {
     "id": "5077",
     "name": "Everspark Ace",
     "desc": "When Everspark enters the battlefield it tends to shock the opposition.",
-    "picture": "NotFound",
+    "picture": "Lightning_Angel_A",
     "rarity": "4",
     "set": "4000",
     "card_type": "2",
@@ -35993,7 +35993,7 @@ var CARDS = {
   "15077": {
     "id": "15077",
     "name": "Everbolt Ace",
-    "picture": "NotFound",
+    "picture": "Lightning_Angel_A",
     "rarity": "4",
     "set": "4000",
     "card_type": "2",
@@ -36067,7 +36067,7 @@ var CARDS = {
   "25077": {
     "id": "25077",
     "name": "Everstorm Ace",
-    "picture": "NotFound",
+    "picture": "Lightning_Angel_B",
     "rarity": "4",
     "set": "4000",
     "card_type": "2",
@@ -52910,7 +52910,7 @@ var CARDS = {
   "6079": {
     "id": "6079",
     "name": "Heinous Smoggler",
-    "picture": "NotFound",
+    "picture": "Volcanic_Ash_Elemental_A",
     "rarity": "4",
     "set": "4000",
     "card_type": "2",
@@ -52974,7 +52974,7 @@ var CARDS = {
   "16079": {
     "id": "16079",
     "name": "Nefarious Smoggler",
-    "picture": "NotFound",
+    "picture": "Volcanic_Ash_Elemental_A",
     "rarity": "4",
     "set": "4000",
     "card_type": "2",
@@ -53064,7 +53064,7 @@ var CARDS = {
   "26079": {
     "id": "26079",
     "name": "Erupting Smoggler",
-    "picture": "NotFound",
+    "picture": "Volcanic_Ash_Elemental_B",
     "rarity": "4",
     "set": "4000",
     "card_type": "2",
@@ -97283,7 +97283,7 @@ var CARDS = {
   "9993": {
     "id": "9993",
     "name": "New Art",
-    "picture": "New6_A",
+    "picture": "New9_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -97296,7 +97296,7 @@ var CARDS = {
   "19993": {
     "id": "19993",
     "name": "New Art",
-    "picture": "New6_B",
+    "picture": "New9_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -97308,8 +97308,8 @@ var CARDS = {
   },
   "9992": {
     "id": "9992",
-    "name": "New Art",
-    "picture": "New7_A",
+    "name": "Unused Art",
+    "picture": "Oda_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -97321,8 +97321,8 @@ var CARDS = {
   },
   "19992": {
     "id": "19992",
-    "name": "New Art",
-    "picture": "New7_B",
+    "name": "Unused Art",
+    "picture": "Oda_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -97332,10 +97332,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9991": {
-    "id": "9991",
-    "name": "New Art",
-    "picture": "New8_A",
+  "29992": {
+    "id": "29992",
+    "name": "Unused Art",
+    "picture": "Oda_C",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -97347,8 +97347,8 @@ var CARDS = {
   },
   "19991": {
     "id": "19991",
-    "name": "New Art",
-    "picture": "New8_B",
+    "name": "Unused Art",
+    "picture": "Promo_Dragon_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -97360,8 +97360,8 @@ var CARDS = {
   },
   "9990": {
     "id": "9990",
-    "name": "New Art",
-    "picture": "New9_A",
+    "name": "Unused Art",
+    "picture": "Seraph_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -97373,8 +97373,8 @@ var CARDS = {
   },
   "19990": {
     "id": "19990",
-    "name": "New Art",
-    "picture": "New9_B",
+    "name": "Unused Art",
+    "picture": "Seraph_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -97387,7 +97387,7 @@ var CARDS = {
   "9989": {
     "id": "9989",
     "name": "Unused Art",
-    "picture": "Oda_A",
+    "picture": "Tarian_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -97397,36 +97397,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19989": {
-    "id": "19989",
+  "9988": {
+    "id": "9988",
     "name": "Unused Art",
-    "picture": "Oda_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29989": {
-    "id": "29989",
-    "name": "Unused Art",
-    "picture": "Oda_C",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19988": {
-    "id": "19988",
-    "name": "Unused Art",
-    "picture": "Promo_Dragon_B",
+    "picture": "Tremor_Wurm_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -97439,20 +97413,7 @@ var CARDS = {
   "9987": {
     "id": "9987",
     "name": "Unused Art",
-    "picture": "Seraph_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19987": {
-    "id": "19987",
-    "name": "Unused Art",
-    "picture": "Seraph_B",
+    "picture": "Unused1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -97465,7 +97426,7 @@ var CARDS = {
   "9986": {
     "id": "9986",
     "name": "Unused Art",
-    "picture": "Tarian_A",
+    "picture": "Unused2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -97478,7 +97439,7 @@ var CARDS = {
   "9985": {
     "id": "9985",
     "name": "Unused Art",
-    "picture": "Tremor_Wurm_A",
+    "picture": "Unused3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -97491,7 +97452,7 @@ var CARDS = {
   "9984": {
     "id": "9984",
     "name": "Unused Art",
-    "picture": "Unused1_A",
+    "picture": "Ursurio_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -97504,7 +97465,7 @@ var CARDS = {
   "9983": {
     "id": "9983",
     "name": "Unused Art",
-    "picture": "Unused2_A",
+    "picture": "Void_Abomination_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -97516,45 +97477,6 @@ var CARDS = {
   },
   "9982": {
     "id": "9982",
-    "name": "Unused Art",
-    "picture": "Unused3_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9981": {
-    "id": "9981",
-    "name": "Unused Art",
-    "picture": "Ursurio_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9980": {
-    "id": "9980",
-    "name": "Unused Art",
-    "picture": "Void_Abomination_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9979": {
-    "id": "9979",
     "name": "Unused Art",
     "picture": "Yuriel_A",
     "rarity": "0",

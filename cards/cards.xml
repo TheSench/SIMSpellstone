@@ -9784,7 +9784,7 @@
     <name>Drainor</name>
     <picture>Whirl_Pool_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1471885200</hidden_until_time>
+    <hidden_until_time>1470157200</hidden_until_time>
     <attack>5</attack>
     <health>15</health>
     <cost>3</cost>
@@ -9824,7 +9824,7 @@
     <name>Drainor Whirlpool</name>
     <picture>Whirl_Pool_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1471885200</hidden_until_time>
+    <hidden_until_time>1470157200</hidden_until_time>
     <attack>6</attack>
     <health>20</health>
     <cost>3</cost>
@@ -9865,7 +9865,7 @@
     <name>Drainor Monsoon</name>
     <picture>Whirl_Pool_Elemental_B</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1471885200</hidden_until_time>
+    <hidden_until_time>1470157200</hidden_until_time>
     <attack>7</attack>
     <health>23</health>
     <cost>3</cost>
@@ -9901,7 +9901,7 @@
     <name>Twister</name>
     <picture>Sand_Warrior_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1471885200</hidden_until_time>
+    <hidden_until_time>1470157200</hidden_until_time>
     <attack>3</attack>
     <health>8</health>
     <cost>1</cost>
@@ -9937,7 +9937,7 @@
     <name>Rising Twister</name>
     <picture>Sand_Warrior_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1471885200</hidden_until_time>
+    <hidden_until_time>1470157200</hidden_until_time>
     <attack>4</attack>
     <health>10</health>
     <cost>1</cost>
@@ -9977,7 +9977,7 @@
     <name>Ascending Twister</name>
     <picture>Sand_Warrior_Elemental_B</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1471885200</hidden_until_time>
+    <hidden_until_time>1470157200</hidden_until_time>
     <attack>5</attack>
     <health>12</health>
     <cost>1</cost>
@@ -10013,7 +10013,7 @@
     <name>Bismuth Bully</name>
     <picture>Bismuth_Beast_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1471885200</hidden_until_time>
+    <hidden_until_time>1470157200</hidden_until_time>
     <attack>4</attack>
     <health>10</health>
     <cost>2</cost>
@@ -10050,7 +10050,7 @@
     <name>Bismuth Brute</name>
     <picture>Bismuth_Beast_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1471885200</hidden_until_time>
+    <hidden_until_time>1470157200</hidden_until_time>
     <attack>5</attack>
     <health>13</health>
     <cost>2</cost>
@@ -19361,7 +19361,6 @@
     <name>Sorath, the Valkyrie</name>
     <picture>Ice_Head_Angel_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1471280400</hidden_until_time>
     <attack>4</attack>
     <health>19</health>
     <cost>3</cost>
@@ -19408,7 +19407,6 @@
     <name>Sorath, the Champion</name>
     <picture>Ice_Head_Angel_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1471280400</hidden_until_time>
     <attack>4</attack>
     <health>24</health>
     <cost>3</cost>
@@ -19452,7 +19450,6 @@
     <name>Sorath, the Frostedge</name>
     <picture>Ice_Head_Angel_B</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1471280400</hidden_until_time>
     <attack>4</attack>
     <health>29</health>
     <cost>3</cost>
@@ -19496,7 +19493,7 @@
     <name>Everspark Ace</name>
     <picture>Lightning_Angel_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1471712400</hidden_until_time>
+    <hidden_until_time>1470157200</hidden_until_time>
     <attack>1</attack>
     <health>10</health>
     <cost>1</cost>
@@ -19540,7 +19537,7 @@
     <name>Everbolt Ace</name>
     <picture>Lightning_Angel_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1471712400</hidden_until_time>
+    <hidden_until_time>1470157200</hidden_until_time>
     <attack>1</attack>
     <health>13</health>
     <cost>1</cost>
@@ -19583,7 +19580,7 @@
     <name>Everstorm Ace</name>
     <picture>Lightning_Angel_B</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1471712400</hidden_until_time>
+    <hidden_until_time>1470157200</hidden_until_time>
     <attack>2</attack>
     <health>16</health>
     <cost>1</cost>
@@ -28889,7 +28886,7 @@
     <name>Heinous Smoggler</name>
     <picture>Volcanic_Ash_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1471885200</hidden_until_time>
+    <hidden_until_time>1470157200</hidden_until_time>
     <attack>3</attack>
     <health>12</health>
     <cost>2</cost>
@@ -28931,7 +28928,7 @@
     <name>Nefarious Smoggler</name>
     <picture>Volcanic_Ash_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1471885200</hidden_until_time>
+    <hidden_until_time>1470157200</hidden_until_time>
     <attack>4</attack>
     <health>17</health>
     <cost>2</cost>
@@ -28977,7 +28974,7 @@
     <name>Erupting Smoggler</name>
     <picture>Volcanic_Ash_Elemental_B</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1471885200</hidden_until_time>
+    <hidden_until_time>1470157200</hidden_until_time>
     <attack>4</attack>
     <health>21</health>
     <cost>2</cost>
