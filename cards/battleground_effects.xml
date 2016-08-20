@@ -367,6 +367,22 @@
       <starting_card id="606" level="4" pvp_rank="18" />
     </effect>
   </battleground>
+  <battleground>
+    <id>510</id>
+    <name>Dungeon Boost</name>
+    <desc>Dungeon Boost Heals and Empowers all of his allies, increasing in strength as he levels up.</desc>
+    <icon>filter_frostbite_64</icon>
+    <icon_bundle>26</icon_bundle>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>50</starting_level>
+    <!-- Starting Raid Level -->
+    <effect>
+      <skill id="heal" x="1.1" all="1" />
+      <skill id="rally" x=".6" all="1" />
+    </effect>
+  </battleground>
   <!-- 1001+: Personal BGE -->
   <battleground>
     <id>10001</id>

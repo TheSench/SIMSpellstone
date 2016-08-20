@@ -28235,7 +28235,7 @@ var MISSIONS = {
         "mastery_level": "4"
       },
       {
-        "id": "8018",
+        "id": "6070",
         "mastery_level": "5"
       },
       {

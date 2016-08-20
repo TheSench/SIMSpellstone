@@ -526,6 +526,28 @@ var BATTLEGROUNDS = {
         },
     }
   },
+  "510": {
+    "name": "Dungeon Boost",
+    "id": "510",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "50",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "heal",
+        "x": 1.1,
+        "all": "1",
+      },
+      {
+        "effect_type": "skill",
+        "id": "rally",
+        "x": .6,
+        "all": "1",
+      },
+    ]
+  },
   "10001": {
     "name": "Personal Frog Buff",
     "id": "10001",

@@ -9567,7 +9567,7 @@
       <card id="7012" mastery_level="2" name="Life Drake" />
       <card id="7053" mastery_level="3" name="Bee Eater" />
       <card id="5012" mastery_level="4" name="Static Drake" />
-      <card id="8018" mastery_level="5" name="Doom Tentacle" />
+      <card id="6070" mastery_level="5" name="Petrifier" />
       <card id="5061" mastery_level="6" name="Thunderfist Rex" />
       <card id="6047" mastery_level="7" name="Wither" />
     </deck>
@@ -9717,7 +9717,7 @@
   <mission>
     <id>5328</id>
     <name>Grounding Reality</name>
-    <energy>12</energy>
+    <energy>11</energy>
     <desc>Rayne can see the ground elemental pondering her warning. She decides to explain further about the events of Beetleton Bunker.</desc>
     <commander id="328" />
     <deck>
@@ -9752,7 +9752,7 @@
   <mission>
     <id>5329</id>
     <name>Through the Valley</name>
-    <energy>13</energy>
+    <energy>10</energy>
     <desc>Reks has assembled his army. They lay low on their way to Tarragon Peak, moving  towards the valley Orgoth has advised. </desc>
     <commander id="311" />
     <deck>
@@ -9792,7 +9792,7 @@
   <mission>
     <id>5330</id>
     <name>Safe from Danger</name>
-    <energy>13</energy>
+    <energy>10</energy>
     <desc>The valley proves to be a safe route of passage. Most of the monsters that lurk the Salt Wastes avoid the valley path.</desc>
     <commander id="328" />
     <deck>
@@ -9815,7 +9815,7 @@
   <mission>
     <id>5331</id>
     <name>Sun Burned</name>
-    <energy>13</energy>
+    <energy>10</energy>
     <desc>The day has drawn on. This route is considerably longer than the original plan. Reks's troops grow tired in the sun.</desc>
     <commander id="291" />
     <deck>
@@ -9850,7 +9850,7 @@
   <mission>
     <id>5332</id>
     <name>Around the Bend</name>
-    <energy>13</energy>
+    <energy>10</energy>
     <desc>The army begins to round the last bend of the valley. A welcoming party sits waiting for their arrival. </desc>
     <commander id="329" />
     <deck>
@@ -9890,7 +9890,7 @@
   <mission>
     <id>5333</id>
     <name>Saved from Disgrace</name>
-    <energy>13</energy>
+    <energy>10</energy>
     <desc>Fiona looks up in surprise when dragons descend from the clouds. Reks sneers at Fiona; as if he'd be so easily fooled!</desc>
     <commander id="323" />
     <deck>
@@ -9930,7 +9930,7 @@
   <mission>
     <id>5334</id>
     <name>Rain from Above</name>
-    <energy>13</energy>
+    <energy>10</energy>
     <desc>Angels and Ground Elementals emerge from the cracks in the valley. Barrages of arrows and rocks fall on the Goblin forces. </desc>
     <commander id="321" />
     <deck>
@@ -9970,7 +9970,7 @@
   <mission>
     <id>5335</id>
     <name>Off Guard</name>
-    <energy>13</energy>
+    <energy>10</energy>
     <desc>Reks swoops his dragon through the valley. In a fluster, he grabs his war horn and signals to his army. It's time for an all out attack!</desc>
     <commander id="323" />
     <deck>
@@ -9993,7 +9993,7 @@
   <mission>
     <id>5336</id>
     <name>Last Stand</name>
-    <energy>13</energy>
+    <energy>10</energy>
     <desc>Reks, now furious with the turn of events, charges at the tamer. He will not  give up on the expansion of the goblin empire so easily! </desc>
     <commander id="329" />
     <deck>

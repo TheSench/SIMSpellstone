@@ -3106,10 +3106,10 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>Salt Waste Empire</name>
-    <icon id="angel_feather100" bundle="58" />
+    <icon id="iron_nugget100" bundle="58" />
     <location_id>100</location_id>
-    <x>290</x>
-    <y>183</y>
+    <x>145</x>
+    <y>230</y>
     <combatBG>CombatBGVoid</combatBG>
     <missions>
       <mission_id>5313</mission_id>
@@ -3134,10 +3134,10 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>Backup Plan</name>
-    <icon id="angel_feather100" bundle="58" />
+    <icon id="iron_nugget100" bundle="58" />
     <location_id>100</location_id>
-    <x>400</x>
-    <y>300</y>
+    <x>260</x>
+    <y>400</y>
     <combatBG>CombatBGVoid</combatBG>
     <missions>
       <mission_id>5318</mission_id>
@@ -3163,9 +3163,9 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>Ground Inspection</name>
-    <icon id="angel_feather100" bundle="58" />
+    <icon id="iron_nugget100" bundle="58" />
     <location_id>100</location_id>
-    <x>660</x>
+    <x>600</x>
     <y>200</y>
     <combatBG>CombatBGVoid</combatBG>
     <missions>
@@ -3191,7 +3191,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>Reks and the Tamer</name>
-    <icon id="angel_feather100" bundle="58" />
+    <icon id="iron_nugget100" bundle="58" />
     <location_id>100</location_id>
     <x>760</x>
     <y>300</y>

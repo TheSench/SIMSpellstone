@@ -4351,7 +4351,7 @@
     <name>Ground Inspection</name>
     <desc>Complete the ‘Ground Inspection' campaign on Mastery Level 7.</desc>
     <event_only>1</event_only>
-    <achievement_req>3141</achievement_req>
+    <achievement_req>3142</achievement_req>
     <req>
       <campaign>1085</campaign>
       <level>7</level>
