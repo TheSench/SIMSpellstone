@@ -150,7 +150,7 @@ var SIM_CONTROLLER;
         losses = 0;
         draws = 0;
 
-        outp('<strong>Initializing simulations...</strong>');
+        setSimStatus("Initializing simulations...");
 
         current_timeout = setTimeout(run_sims);
 
@@ -171,13 +171,18 @@ var SIM_CONTROLLER;
 
         var result = processSimResult();
 
+        var msg;
         if (result == 'draw') {
-            outp(echo + '<br><h1>DRAW</h1><br>');
+            msg = '<br><h1>DRAW</h1><br>';
         } else if (result) {
-            outp(echo + '<br><h1>WIN</h1><br>');
+            msg = '<br><h1>WIN</h1><br>';
         } else {
-            outp(echo + '<br><h1>LOSS</h1><br>');
+            msg = '<br><h1>LOSS</h1><br>';
         }
+        if (echo) {
+            outp(echo);
+        }
+        setSimStatus(msg);
 
         draw_match_end();
     }

@@ -348,123 +348,36 @@ function gettable() {
 		'<br>';
         if (debug) return links;
     }
-    // Win/Loss ratio
-    /*
-    var table = '';
-    table += '<table cellspacing=0 cellpadding=5 style="border: 1px solid #000000;">';
-    table += '<tr>';
-    table += '<td>';
-    table += 'Wins';
-    table += '</td>';
-    table += '<td>';
-    table += wins;
-    table += '</td>';
-    table += '<td>';
-    */
+    // Win/Loss ratios
     var winPercent = wins / games;
     var winrate = (winPercent * 100).toFixed(2) + "%";
     $("#wins").html(wins);
     $("#winrate").html(winrate);
-    /*
-    table += winrate;
-    table += '%</td>';
-    table += '</tr>';
-    table += '<tr style="background-color: #eee;">';
-    table += '<td style="background-color: #eee;">';
-    table += 'Losses';
-    table += '</td>';
-    table += '<td style="background-color: #eee;">';
-    table += losses;
-    table += '</td>';
-    table += '<td style="background-color: #eee;">';
-    */
+
     var lossrate = losses / games * 100;
     lossrate = lossrate.toFixed(2) + "%";
     $("#losses").html(losses);
     $("#lossrate").html(lossrate);
-    /*
-    table += lossrate;
-    table += '%</td>';
-    table += '</tr>';
-    table += '<tr>';
-    table += '<td>';
-    table += 'Draws';
-    table += '</td>';
-    table += '<td>';
-    table += draws;
-    table += '</td>';
-    table += '<td>';
-    */
+
     var drawrate = draws / games * 100;
     drawrate = drawrate.toFixed(2) + "%";
     $("#draws").html(draws);
     $("#drawrate").html(drawrate);
-    /*
-    table += drawrate;
-    table += '%</td>';
-    table += '</tr>';
-    table += '<tr>';
-    table += '<td>';
-    table += '+/-';
-    table += '</td>';
-    table += '<td>';
-    */
-    //var stdDev = winrateDev(wins, games);
-    //table += stdDev.toFixed(0);
+
     var mErr = marginOfError(wins, games);
     $("#marginGames").html((mErr * games).toFixed(0));
     mErr = mErr.toFixed(2) + "%";
     $("#marginPercent").html(mErr);
-    /*
-    table += (mErr * games).toFixed(0);
-    table += '</td>';
-    table += '<td>';
-    //stdDev = (stdDev / games * 100).toFixed(2);
-    //table += stdDev;
-    mErr = mErr.toFixed(2);
-    table += mErr;
-    table += '%</td>';
-    table += '</tr>';
-    table += '<tr style="background-color: #000; color: #fff;">';
-    table += '<td style="background-color: #000; color: #fff;">';
-    table += 'Battles';
-    table += '</td>';
-    table += '<td style="background-color: #000; color: #fff;">';
-    table += games;
-    table += '</td>';
-    table += '<td style="background-color: #000; color: #fff;">';
-    table += '100.0';
-    table += '%</td>';
-    table += '</tr>';
-    table += '</table>';
-    */
+
     var totalSims = games + sims_left;
     var percentComplete = (games * 100 / totalSims).toFixed("2") + "%";
     $(".battleCount").html(games);
     $("#percentComplete").html(percentComplete);
 
-    /*
-    var table3 = '<table cellspacing=0 cellpadding=5 style="border: 1px solid #000000;">';
-
-    // Average length of battle
-    table3 += '<tr>';
-    table3 += '<td>';
-    table3 += 'Avg. Battle Length';
-    table3 += '</td>';
-    table3 += '<td>';
-    */
     // Calculate Average length of battle
     var avg_length = (total_turns / games).toFixed(3);
     $("#avgLength").html(avg_length);
-    /*
-    table3 += avg_length;
-    table3 += '</td>';
-    table3 += '</tr>';
 
-    table3 += '</table>';
-
-    var full_table = '<table cellspacing=0 cellpadding=0 border=0><tr><td>' + table + '</td><td>&nbsp;</td><td>' + table3 + '</td></tr></table>';
-    */
     $("#winrateTable").show();
     // Final output
     var full_table = "";

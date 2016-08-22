@@ -136,7 +136,6 @@ var SIM_CONTROLLER;
         losses = 0;
         draws = 0;
 
-        //outp('<strong>Initializing simulations...</strong>');
         outp(""); // Clear display
         hideTable();
         setSimStatus("Initializing simulations...");
@@ -156,7 +155,6 @@ var SIM_CONTROLLER;
         // Stop the recursion
         if (current_timeout) clearTimeout(current_timeout);
 
-        //outp(echo + '<strong>Simulations interrupted.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>' + gettable());
         setSimStatus("Simulations interrupted.", elapse, simpersec);
         gettable();
         // Show interface
@@ -187,7 +185,6 @@ var SIM_CONTROLLER;
         } else {
             msg = '<br><h1>LOSS</h1><br>';
         }
-        //outp(echo + msg + gettable());
         if (echo) {
             outp(echo);
         }
@@ -230,7 +227,6 @@ var SIM_CONTROLLER;
                         simpersecbatch = run_sims_batch / batch_elapse;
                     }
 
-                    //outp(echo + '<strong>Running simulations...</strong> (' + games + '/' + (games + sims_left) + ') ' + temp + '%<br>' + elapse + ' seconds<br>' + simpersecbatch.toFixed(1) + ' simulations per second<br>' + gettable());
                     setSimStatus("Running simulations...", elapse, simpersecbatch.toFixed(1));
                     gettable();
                 }
@@ -259,8 +255,6 @@ var SIM_CONTROLLER;
             var elapse = time_elapsed();
             var simpersec = games / elapse;
             simpersec = simpersec.toFixed(1);
-
-            //outp(echo + '<br><strong>Simulations complete.</strong><br>' + elapse + ' seconds (' + simpersec + ' simulations per second)<br>' + gettable());
 
             setSimStatus("Simulations complete.", elapse, simpersec);
             gettable();
