@@ -142,6 +142,20 @@ var BATTLEGROUNDS = {
       },
     ]
   },
+  "111": {
+    "name": "Counter Burn",
+    "id": "111",
+    "effect": [
+      {
+        "effect_type": "add_skill",
+        "id": "counterburn",
+        "mult": 0.1,
+        "base": "health",
+        "y": "5",
+        "z": 5,
+      },
+    ]
+  },
   "501": {
     "name": "Castle Siege",
     "id": "501",

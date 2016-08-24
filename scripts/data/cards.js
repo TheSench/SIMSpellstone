@@ -29538,6 +29538,7 @@ var CARDS = {
   "5049": {
     "id": "5049",
     "name": "Joryl",
+    "desc": "The boy Amiri always had an affinity for magic involving stone, even at a very young age.",
     "picture": "Marble_Golem_A",
     "rarity": "4",
     "set": "4000",
@@ -29601,6 +29602,7 @@ var CARDS = {
   "15049": {
     "id": "15049",
     "name": "Joryl of Marble",
+    "desc": "The marble that Amiri used to awaken Joryl was the very bedrock of his home.",
     "picture": "Marble_Golem_A",
     "rarity": "4",
     "set": "4000",
@@ -29665,6 +29667,7 @@ var CARDS = {
   "25049": {
     "id": "25049",
     "name": "Joryl of Onyx Marble",
+    "desc": "Joryl followed Amiri, defending their land from invaders and becoming a living legend.",
     "picture": "Marble_Golem_B",
     "rarity": "4",
     "set": "4000",
@@ -30390,6 +30393,7 @@ var CARDS = {
   "5053": {
     "id": "5053",
     "name": "Anura Witch",
+    "desc": "\"Owl's wing, bat's fur, a touch of baboon blood and... TOAD?!\"",
     "picture": "Frog_Mage_A",
     "rarity": "3",
     "set": "3000",
@@ -35223,6 +35227,7 @@ var CARDS = {
   "5074": {
     "id": "5074",
     "name": "Godfried the Hunter",
+    "desc": "\"And in the face of the beast Godfried sang the song of his death, proudly and with a smile on his face.\" - the Tales of Luminis",
     "picture": "Beast_Slayer_Angel_A",
     "rarity": "4",
     "set": "3000",
@@ -47563,6 +47568,7 @@ var CARDS = {
   "6051": {
     "id": "6051",
     "name": "Treeblade Thief",
+    "desc": "\"In the shade or in the glade, there is always a blade.\" - Treeblade Saying",
     "picture": "Camouflaged_Assassin_A",
     "rarity": "3",
     "set": "3000",
@@ -70343,6 +70349,7 @@ var CARDS = {
   "7073": {
     "id": "7073",
     "name": "Heralded Slugger",
+    "desc": "\"There are rumors of an angel who abandoned his oaths after a disaster crashed his ship in the depths of a forest.\" - Overheard in a Tavern",
     "picture": "Skyhaven_Traitor_A",
     "rarity": "3",
     "set": "3000",

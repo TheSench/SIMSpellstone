@@ -16004,6 +16004,7 @@
       <skill id="armored" x="3" />
       <skill id="counter" x="4" />
     </upgrade>
+    <desc>The boy Amiri always had an affinity for magic involving stone, even at a very young age.</desc>
   </unit>
   <unit>
     <id>15049</id>
@@ -16048,6 +16049,7 @@
       <skill id="armored" x="4" />
       <skill id="counter" x="5" />
     </upgrade>
+    <desc>The marble that Amiri used to awaken Joryl was the very bedrock of his home.</desc>
   </unit>
   <unit>
     <id>25049</id>
@@ -16092,6 +16094,7 @@
       <skill id="armored" x="5" />
       <skill id="counter" x="6" />
     </upgrade>
+    <desc>Joryl followed Amiri, defending their land from invaders and becoming a living legend.</desc>
   </unit>
   <unit>
     <id>5050</id>
@@ -16487,6 +16490,7 @@
       <skill id="frost" x="1" />
       <skill id="jam" c="6" />
     </upgrade>
+    <desc>"Owl's wing, bat's fur, a touch of baboon blood and... TOAD?!"</desc>
   </unit>
   <unit>
     <id>15053</id>
@@ -19136,6 +19140,7 @@
       <skill id="burn" x="1" />
       <skill id="flurry" c="6" />
     </upgrade>
+    <desc>"And in the face of the beast Godfried sang the song of his death, proudly and with a smile on his face." - the Tales of Luminis</desc>
   </unit>
   <unit>
     <id>15074</id>
@@ -25914,6 +25919,7 @@
       <level>5</level>
       <attack>5</attack>
     </upgrade>
+    <desc>"In the shade or in the glade, there is always a blade." - Treeblade Saying</desc>
   </unit>
   <unit>
     <id>16051</id>
@@ -37980,6 +37986,7 @@
       <skill id="enfeeble" x="1" />
       <skill id="enfeeble" x="1" />
     </upgrade>
+    <desc>"There are rumors of an angel who abandoned his oaths after a disaster crashed his ship in the depths of a forest." - Overheard in a Tavern</desc>
   </unit>
   <unit>
     <id>17073</id>
@@ -52489,6 +52496,17 @@
     <attributes x="1" y="0" all="1" c="0" s="0" />
     <balance_points>1.5</balance_points>
     <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>counterburn</id>
+    <order>150</order>
+    <icon>burn</icon>
+    <name>Vengence Scorch</name>
+    <desc>Deals stacking damage to the enemy across from this creature at end of turn. Wears off if not reapplied for a turn.</desc>
+    <status_flag>burn</status_flag>
+    <status_flag>burn_cooldown</status_flag>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <balance_points>4</balance_points>
   </skillType>
   <skillType>
     <id>displayEffect</id>
