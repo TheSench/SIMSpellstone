@@ -235,7 +235,7 @@ var SIMULATOR = {};
             var all = skill['all'];
 
             var field_p_assaults = field[p]['assaults'];
-            var require_active_turn = (s != 'counter' && s != 'armored' && s != 'evade');
+            var require_active_turn = (s != 'counter' && s != 'counterburn' && s != 'armored' && s != 'evade');
             var targets = [];
             for (var key = 0, len = field_p_assaults.length; key < len; key++) {
                 var target = field_p_assaults[key];
@@ -304,7 +304,7 @@ var SIMULATOR = {};
             var all = skill['all'];
 
             var field_p_assaults = field[p]['assaults'];
-            var require_active_turn = (s != 'counter' && s != 'armored' && s != 'evade');
+            var require_active_turn = (s != 'counter' && s != 'counterburn' && s != 'armored' && s != 'evade');
             var targets = [];
             for (var key = 0, len = field_p_assaults.length; key < len; key++) {
                 var target = field_p_assaults[key];
@@ -1700,6 +1700,21 @@ var SIMULATOR = {};
                     echo += debug_name(current_assault) + ' takes ' + counter_damage + ' vengeance damage';
                     echo += (!current_assault.isAlive() ? ' and it dies' : '') + '<br>';
                 }
+            }
+
+            // Counterburn
+            // - Target must have received some amount of damage
+            // - Attacker must not be already dead
+            if (target.counterburn) {
+                var scorch = target.counterburn || 0;
+                scorch += getEnhancement(target, 'counterburn');
+                if (!current_assault.scorched) {
+                    current_assault.scorched = { 'amount': scorch, 'timer': 2 };
+                } else {
+                    current_assault.scorched.amount += scorch;
+                    current_assault.scorched.timer = 2;
+                }
+                if (debug) echo += debug_name(target) + ' inflicts counterburn(' + scorch + ') on ' + debug_name(current_assault) + '<br>';
             }
 
             // Berserk

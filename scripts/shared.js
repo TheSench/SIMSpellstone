@@ -214,6 +214,7 @@ function cloneCard(original) {
     copy.burn = original.burn;
     copy.corrosive = original.corrosive;
     copy.counter = original.counter;
+    copy.counterburn = original.counterburn;
     copy.evade = original.evade;
     copy.leech = original.leech;
     copy.nullify = original.nullify;
@@ -297,6 +298,7 @@ var makeUnit = (function () {
         burn: 0,
         corrosive: 0,
         counter: 0,
+        counterburn: 0,
         evade: 0,
         leech: 0,
         nullify: 0,
@@ -490,6 +492,7 @@ var makeUnit = (function () {
                 case 'burn':
                 case 'corrosive':
                 case 'counter':
+                case 'counterburn':
                 case 'evade':
                 case 'leech':
                 case 'nullify':
@@ -562,6 +565,7 @@ var makeUnit = (function () {
                 case 'burn':
                 case 'corrosive':
                 case 'counter':
+                case 'counterburn':
                 case 'evade':
                 case 'flurry':
                 case 'leech':
@@ -719,6 +723,7 @@ var boostSkill = function (card, boost) {
         case 'burn':
         case 'corrosive':
         case 'counter':
+        case 'counterburn':
         case 'evade':
         case 'leech':
         case 'nullify':
@@ -877,6 +882,7 @@ function setSkill_2(new_card, skill) {
         case 'burn':
         case 'corrosive':
         case 'counter':
+        case 'counterburn':
         case 'evade':
         case 'leech':
         case 'nullify':
@@ -1199,6 +1205,7 @@ function debug_passive_skills(card, skillText) {
     debugNonActivatedSkill(card, "taunt", skillText);
     debugNonActivatedSkill(card, "armored", skillText);
     debugNonActivatedSkill(card, "counter", skillText);
+    debugNonActivatedSkill(card, "counterburn", skillText);
     debugNonActivatedSkill(card, "corrosive", skillText);
 }
 
