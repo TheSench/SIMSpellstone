@@ -256,6 +256,9 @@ var SIM_CONTROLLER;
             var simpersec = games / elapse;
             simpersec = simpersec.toFixed(1);
 
+            if (echo) {
+                outp(echo);
+            }
             setSimStatus("Simulations complete.", elapse, simpersec);
             gettable();
 
