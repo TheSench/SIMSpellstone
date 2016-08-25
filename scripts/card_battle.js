@@ -30,6 +30,8 @@ var SIM_CONTROLLER;
         getcardlist = $('#cardlist').val();
         getdeck2 = $('#deck2').val();
         getcardlist2 = $('#cardlist2').val();
+        getordered = $('#ordered').is(':checked');
+        getexactorder = $('#exactorder').is(':checked');
         getordered2 = $('#ordered2').is(':checked');
         getexactorder2 = $('#exactorder2').is(':checked');
         getmission = $('#mission').val();
