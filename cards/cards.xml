@@ -9784,7 +9784,7 @@
     <name>Drainor</name>
     <picture>Whirl_Pool_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1471885200</hidden_until_time>
+    <hidden_until_time>1470157200</hidden_until_time>
     <attack>5</attack>
     <health>15</health>
     <cost>3</cost>
@@ -9824,7 +9824,7 @@
     <name>Drainor Whirlpool</name>
     <picture>Whirl_Pool_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1471885200</hidden_until_time>
+    <hidden_until_time>1470157200</hidden_until_time>
     <attack>6</attack>
     <health>20</health>
     <cost>3</cost>
@@ -9865,7 +9865,7 @@
     <name>Drainor Monsoon</name>
     <picture>Whirl_Pool_Elemental_B</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1471885200</hidden_until_time>
+    <hidden_until_time>1470157200</hidden_until_time>
     <attack>7</attack>
     <health>23</health>
     <cost>3</cost>
@@ -9901,7 +9901,7 @@
     <name>Twister</name>
     <picture>Sand_Warrior_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1471885200</hidden_until_time>
+    <hidden_until_time>1470157200</hidden_until_time>
     <attack>3</attack>
     <health>8</health>
     <cost>1</cost>
@@ -9937,7 +9937,7 @@
     <name>Rising Twister</name>
     <picture>Sand_Warrior_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1471885200</hidden_until_time>
+    <hidden_until_time>1470157200</hidden_until_time>
     <attack>4</attack>
     <health>10</health>
     <cost>1</cost>
@@ -9977,7 +9977,7 @@
     <name>Ascending Twister</name>
     <picture>Sand_Warrior_Elemental_B</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1471885200</hidden_until_time>
+    <hidden_until_time>1470157200</hidden_until_time>
     <attack>5</attack>
     <health>12</health>
     <cost>1</cost>
@@ -10013,7 +10013,7 @@
     <name>Bismuth Bully</name>
     <picture>Bismuth_Beast_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1471885200</hidden_until_time>
+    <hidden_until_time>1470157200</hidden_until_time>
     <attack>4</attack>
     <health>10</health>
     <cost>2</cost>
@@ -10050,7 +10050,7 @@
     <name>Bismuth Brute</name>
     <picture>Bismuth_Beast_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1471885200</hidden_until_time>
+    <hidden_until_time>1470157200</hidden_until_time>
     <attack>5</attack>
     <health>13</health>
     <cost>2</cost>
@@ -19366,7 +19366,6 @@
     <name>Sorath, the Valkyrie</name>
     <picture>Ice_Head_Angel_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1471280400</hidden_until_time>
     <attack>4</attack>
     <health>19</health>
     <cost>3</cost>
@@ -19413,7 +19412,6 @@
     <name>Sorath, the Champion</name>
     <picture>Ice_Head_Angel_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1471280400</hidden_until_time>
     <attack>4</attack>
     <health>24</health>
     <cost>3</cost>
@@ -19457,7 +19455,6 @@
     <name>Sorath, the Frostedge</name>
     <picture>Ice_Head_Angel_B</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1471280400</hidden_until_time>
     <attack>4</attack>
     <health>29</health>
     <cost>3</cost>
@@ -19501,7 +19498,7 @@
     <name>Everspark Ace</name>
     <picture>Lightning_Angel_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1471712400</hidden_until_time>
+    <hidden_until_time>1470157200</hidden_until_time>
     <attack>1</attack>
     <health>10</health>
     <cost>1</cost>
@@ -19545,7 +19542,7 @@
     <name>Everbolt Ace</name>
     <picture>Lightning_Angel_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1471712400</hidden_until_time>
+    <hidden_until_time>1470157200</hidden_until_time>
     <attack>1</attack>
     <health>13</health>
     <cost>1</cost>
@@ -19588,7 +19585,7 @@
     <name>Everstorm Ace</name>
     <picture>Lightning_Angel_B</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1471712400</hidden_until_time>
+    <hidden_until_time>1470157200</hidden_until_time>
     <attack>2</attack>
     <health>16</health>
     <cost>1</cost>
@@ -19761,6 +19758,144 @@
       <skill id="strike" x="5" />
       <skill id="strike" x="3" all="1" />
       <skill id="jam" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5079</id>
+    <card_type>2</card_type>
+    <name>Cyclopnid</name>
+    <picture>Steel_Elemental_A</picture>
+    <asset_bundle>70</asset_bundle>
+    <hidden_until_time>1472058000</hidden_until_time>
+    <attack>4</attack>
+    <health>15</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="2" />
+    <skill id="rally" x="1" all="1" y="1" />
+    <skill id="strike" x="2" />
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+      <skill id="armored" x="2" />
+      <skill id="rally" x="1" all="1" y="1" />
+      <skill id="strike" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="3" />
+      <skill id="rally" x="1" all="1" y="1" />
+      <skill id="strike" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15079</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Cyclopnid Alloyborn</name>
+    <picture>Steel_Elemental_A</picture>
+    <asset_bundle>70</asset_bundle>
+    <hidden_until_time>1472058000</hidden_until_time>
+    <attack>5</attack>
+    <health>20</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="3" />
+    <skill id="rally" x="2" all="1" y="1" />
+    <skill id="strike" x="3" />
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>21</health>
+      <skill id="armored" x="3" />
+      <skill id="rally" x="2" all="1" y="1" />
+      <skill id="strike" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="4" />
+      <skill id="rally" x="2" all="1" y="1" />
+      <skill id="strike" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25079</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Cyclopnid Oreborn</name>
+    <picture>Steel_Elemental_B</picture>
+    <asset_bundle>70</asset_bundle>
+    <hidden_until_time>1472058000</hidden_until_time>
+    <attack>6</attack>
+    <health>25</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="4" />
+    <skill id="rally" x="3" all="1" y="1" />
+    <skill id="strike" x="4" />
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>26</health>
+      <skill id="armored" x="4" />
+      <skill id="rally" x="3" all="1" y="1" />
+      <skill id="strike" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>27</health>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>28</health>
+      <skill id="armored" x="5" />
+      <skill id="rally" x="3" all="1" y="1" />
+      <skill id="strike" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="5" />
+      <skill id="rally" x="3" all="1" y="1" />
+      <skill id="strike" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="5" />
+      <skill id="rally" x="4" all="1" y="1" />
+      <skill id="strike" x="6" />
     </upgrade>
   </unit>
   <!-- Chaos Premium Begin -->
@@ -28890,12 +29025,131 @@
     </upgrade>
   </unit>
   <unit>
+    <id>6075</id>
+    <card_type>2</card_type>
+    <name>Consuming Mireling</name>
+    <picture>Mud_Slinger_A</picture>
+    <asset_bundle>70</asset_bundle>
+    <hidden_until_time>1472058000</hidden_until_time>
+    <attack>5</attack>
+    <health>9</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="1" />
+    <skill id="weaken" x="2" />
+    <skill id="poison" x="2" />
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>12</health>
+      <skill id="counter" x="2" />
+      <skill id="weaken" x="2" />
+      <skill id="poison" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="2" />
+      <skill id="weaken" x="3" />
+      <skill id="poison" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16075</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Engrossing Mireling</name>
+    <picture>Mud_Slinger_A</picture>
+    <asset_bundle>70</asset_bundle>
+    <hidden_until_time>1472058000</hidden_until_time>
+    <attack>6</attack>
+    <health>12</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="2" />
+    <skill id="weaken" x="3" />
+    <skill id="poison" x="3" />
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>14</health>
+      <skill id="counter" x="3" />
+      <skill id="weaken" x="3" />
+      <skill id="poison" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="3" />
+      <skill id="weaken" x="4" />
+      <skill id="poison" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26075</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Heaving Mire</name>
+    <picture>Mud_Slinger_B</picture>
+    <asset_bundle>70</asset_bundle>
+    <hidden_until_time>1472058000</hidden_until_time>
+    <attack>6</attack>
+    <health>16</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="3" />
+    <skill id="weaken" x="4" />
+    <skill id="poison" x="4" />
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>7</attack>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counter" x="4" />
+      <skill id="weaken" x="4" />
+      <skill id="poison" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="4" />
+      <skill id="weaken" x="5" />
+      <skill id="poison" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>6079</id>
     <card_type>2</card_type>
     <name>Heinous Smoggler</name>
     <picture>Volcanic_Ash_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1471885200</hidden_until_time>
+    <hidden_until_time>1470157200</hidden_until_time>
     <attack>3</attack>
     <health>12</health>
     <cost>2</cost>
@@ -28937,7 +29191,7 @@
     <name>Nefarious Smoggler</name>
     <picture>Volcanic_Ash_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1471885200</hidden_until_time>
+    <hidden_until_time>1470157200</hidden_until_time>
     <attack>4</attack>
     <health>17</health>
     <cost>2</cost>
@@ -28983,7 +29237,7 @@
     <name>Erupting Smoggler</name>
     <picture>Volcanic_Ash_Elemental_B</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1471885200</hidden_until_time>
+    <hidden_until_time>1470157200</hidden_until_time>
     <attack>4</attack>
     <health>21</health>
     <cost>2</cost>
@@ -38199,6 +38453,129 @@
       <skill id="evade" x="2" />
       <skill id="valor" x="5" />
       <skill id="heal" x="5" y="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7075</id>
+    <card_type>2</card_type>
+    <name>Diamode</name>
+    <picture>Geode_Elemental_A</picture>
+    <asset_bundle>70</asset_bundle>
+    <hidden_until_time>1472058000</hidden_until_time>
+    <attack>3</attack>
+    <health>11</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="1" />
+    <skill id="protect" x="2" y="5" />
+    <skill id="jam" c="7" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="1" />
+      <skill id="protect" x="2" y="5" />
+      <skill id="jam" c="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>12</health>
+      <skill id="armored" x="1" />
+      <skill id="protect" x="3" y="5" />
+      <skill id="jam" c="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>4</attack>
+      <health>14</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17075</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Diamode Crystalizer</name>
+    <picture>Geode_Elemental_A</picture>
+    <asset_bundle>70</asset_bundle>
+    <hidden_until_time>1472058000</hidden_until_time>
+    <attack>4</attack>
+    <health>14</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="1" />
+    <skill id="protect" x="3" y="5" />
+    <skill id="jam" c="5" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>15</health>
+      <skill id="armored" x="2" />
+      <skill id="protect" x="3" y="5" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>17</health>
+      <skill id="armored" x="2" />
+      <skill id="protect" x="4" y="5" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>5</attack>
+      <health>18</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27075</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Diamode Illuminated</name>
+    <picture>Geode_Elemental_B</picture>
+    <asset_bundle>70</asset_bundle>
+    <hidden_until_time>1472058000</hidden_until_time>
+    <attack>5</attack>
+    <health>18</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="2" />
+    <skill id="protect" x="4" y="5" />
+    <skill id="jam" c="4" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+      <skill id="armored" x="2" />
+      <skill id="protect" x="5" y="5" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>6</attack>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="3" />
+      <skill id="protect" x="6" y="5" />
+      <skill id="jam" c="4" />
     </upgrade>
   </unit>
   <!-- END SET 3000 - Premium -->
@@ -52507,6 +52884,7 @@
     <status_flag>burn_cooldown</status_flag>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <balance_points>4</balance_points>
+    <hidden>1</hidden>
   </skillType>
   <skillType>
     <id>displayEffect</id>

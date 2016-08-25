@@ -163,20 +163,21 @@
   </battleground>
   <battleground>
     <id>111</id>
-    <name>Counter Burn</name>
-    <!-- <desc>When an Elemental is damaged by an attack, is deals Scorch damage to the attacker equal to 50% of the Elemental's base Attack.</desc> -->
-    <desc>When an Elemental is damaged by an attack, is deals Scorch damage to the attacker equal to 10% of the Elemental's base Health.</desc>
+    <name>Searing Essence</name>
+    <!-- <desc>When an Elemental is damaged by an attack, it deals Scorch damage to the attacker equal to 50% of the Elemental's base Attack.</desc> -->
+    <desc>When an Elemental is damaged by an attack, it deals Scorch damage to the attacker equal to 10% of the Elemental's base Health.</desc>
     <icon>filter_elementals_64</icon>
     <effect>
       <add_skill id="counterburn" mult="0.1" base="health" y="5" />
       <skill id="displayEffect" trigger="onSkill" s="counterburn">
-        <actor_effect>
-          <prefab>Empower_Target_Elemental</prefab>
-          <!-- <bundle_id></bundle_id> -->
+        <target_effect>
+          <prefab>FireVengence_Reverse</prefab>
+          <prefab_enemy>FireVengence</prefab_enemy>
+          <bundle_id>69</bundle_id>
           <delay>.5</delay>
-          <duration>1</duration>
+          <duration>1.5</duration>
           <shake>true</shake>
-        </actor_effect>
+        </target_effect>
       </skill>
     </effect>
   </battleground>

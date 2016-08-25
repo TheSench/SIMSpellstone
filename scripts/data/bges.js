@@ -143,7 +143,7 @@ var BATTLEGROUNDS = {
     ]
   },
   "111": {
-    "name": "Counter Burn",
+    "name": "Searing Essence",
     "id": "111",
     "effect": [
       {

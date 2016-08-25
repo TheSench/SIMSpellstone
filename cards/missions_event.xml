@@ -9257,8 +9257,8 @@
     </deck>
     <speech>
       <line>
-        <commander>elyse</commander>
-        <enemy>0</enemy>
+        <commander>Portrait_King_Goblin</commander>
+        <enemy>1</enemy>
         <text>Well done boys! This place don't look too shabby! Tonight we shall celebrate the goblins' claim of the Salt Wastes!</text>
       </line>
     </speech>
@@ -9287,23 +9287,23 @@
     </deck>
     <speech>
       <line>
-        <commander>elyse</commander>
-        <enemy>0</enemy>
+        <commander>Portrait_King_Goblin</commander>
+        <enemy>1</enemy>
         <text>Dormic, my dearest general, may I have a word with you? </text>
       </line>
       <line>
-        <commander>templeguardian</commander>
-        <enemy>0</enemy>
+        <commander>Portrait_Goblin_Captain</commander>
+        <enemy>1</enemy>
         <text>Of course, my King.</text>
       </line>
       <line>
-        <commander>elyse</commander>
-        <enemy>0</enemy>
+        <commander>Portrait_King_Goblin</commander>
+        <enemy>1</enemy>
         <text>We need to talk about our next step. A peasant or two might be upset that we squashed their village to build this fine fortress.</text>
       </line>
       <line>
-        <commander>elyse</commander>
-        <enemy>0</enemy>
+        <commander>Portrait_King_Goblin</commander>
+        <enemy>1</enemy>
         <text>They're just jealous of our toys! Dispose of 'em before they think of stealin' our dragons.</text>
       </line>
     </speech>
@@ -9378,17 +9378,17 @@
     </deck>
     <speech>
       <line>
-        <commander>elyse</commander>
-        <enemy>0</enemy>
+        <commander>Portrait_King_Goblin</commander>
+        <enemy>1</enemy>
         <text>Now, before we depart. Servant, I need you to take this Hammer and keep it in the vault.</text>
       </line>
       <line>
-        <commander>elyse</commander>
-        <enemy>0</enemy>
+        <commander>Portrait_King_Goblin</commander>
+        <enemy>1</enemy>
         <text>If you so much as get a scratch on it, it will be your head, ya understand?</text>
       </line>
       <line>
-        <commander>templeguardian</commander>
+        <commander>Portrait_Undercover_Angel_Spy</commander>
         <enemy>0</enemy>
         <text>Yes, my King.</text>
       </line>
@@ -9493,7 +9493,7 @@
         <text>King Reks! A pleasure t' finally meet ya.</text>
       </line>
       <line>
-        <commander>elyse</commander>
+        <commander>Portrait_King_Goblin</commander>
         <enemy>1</enemy>
         <text> Guards! Why have you let this orc buffoon into the fortress?! Get him outta here! </text>
       </line>
@@ -9539,7 +9539,7 @@
       </line>
       <line>
         <commander>dragontamer</commander>
-        <enemy>1</enemy>
+        <enemy>0</enemy>
         <text>We've already gathered a small army. Where would we find more forces?</text>
       </line>
       <line>
@@ -9778,12 +9778,12 @@
         <text>This path has good protection, Reks. It should cover your army into the north. </text>
       </line>
       <line>
-        <commander>elyse</commander>
+        <commander>Portrait_King_Goblin</commander>
         <enemy>1</enemy>
         <text>Very well, 'neighbor'... but let me warn you:  if there is anything funny on this route you won't make it back to your tribe.</text>
       </line>
       <line>
-        <commander>orchero</commander>
+        <commander>Portrait_King_Goblin</commander>
         <enemy>1</enemy>
         <text>GUARD! Put the orc under close watch. </text>
       </line>
@@ -9836,7 +9836,7 @@
     </deck>
     <speech>
       <line>
-        <commander>elyse</commander>
+        <commander>Portrait_King_Goblin</commander>
         <enemy>1</enemy>
         <text>How much longer 'til we reach Tarragon Peak?! The sun is starting to wear down my men.</text>
       </line>
@@ -9876,7 +9876,7 @@
         <text>Well well, come back for another visit old friend? I wish you had given me more warning!</text>
       </line>
       <line>
-        <commander>elyse</commander>
+        <commander>Portrait_King_Goblin</commander>
         <enemy>1</enemy>
         <text>Typical orc treachery! Why'd I even listen to you?! </text>
       </line>
@@ -9911,12 +9911,12 @@
     </deck>
     <speech>
       <line>
-        <commander>elyse</commander>
+        <commander>Portrait_King_Goblin</commander>
         <enemy>1</enemy>
         <text>You know what they say. Never travel without a backup dragon guard. Sorry tamer, you have been outmatched this time. </text>
       </line>
       <line>
-        <commander>elyse</commander>
+        <commander>Portrait_King_Goblin</commander>
         <enemy>1</enemy>
         <text>But perhaps, if you ask real nice, I can confiscate your dragons and let you go on your way. </text>
       </line>
@@ -9951,7 +9951,7 @@
     </deck>
     <speech>
       <line>
-        <commander>elyse</commander>
+        <commander>Portrait_King_Goblin</commander>
         <enemy>1</enemy>
         <text>Ah, not bad puddin, teamin' up with the angels like this. Hah! Let's see what they can do against my dragons. </text>
       </line>
@@ -10014,12 +10014,12 @@
     </deck>
     <speech>
       <line>
-        <commander>elyse</commander>
+        <commander>Portrait_King_Goblin</commander>
         <enemy>1</enemy>
         <text>HE HAS THE HAMMER?! How on EARTH did he get THE HAMMER! </text>
       </line>
       <line>
-        <commander>templeguardian</commander>
+        <commander>Portrait_Undercover_Angel_Spy</commander>
         <enemy>1</enemy>
         <text>Must haven gotten lost in that big ol' vault of yours.</text>
       </line>

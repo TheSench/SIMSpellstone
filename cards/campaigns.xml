@@ -3120,11 +3120,11 @@
     </missions>
     <rewards>
       <card level="1" id="510" />
-      <card level="2" id="1012" />
-      <card level="3" id="1012" />
-      <card level="4" id="1031" />
-      <card level="5" id="1015" />
-      <card level="6" id="1015" />
+      <card level="2" id="6017" />
+      <card level="3" id="6017" />
+      <card level="4" id="2056" />
+      <card level="5" id="1012" />
+      <card level="6" id="1012" />
       <card level="7" id="512" />
     </rewards>
     <find_item id="3043" drop_per_energy=".25" />
@@ -3136,8 +3136,8 @@
     <name>Backup Plan</name>
     <icon id="iron_nugget100" bundle="58" />
     <location_id>100</location_id>
-    <x>260</x>
-    <y>400</y>
+    <x>445</x>
+    <y>300</y>
     <combatBG>CombatBGVoid</combatBG>
     <missions>
       <mission_id>5318</mission_id>
@@ -3149,8 +3149,8 @@
     </missions>
     <rewards>
       <card level="1" id="510" />
-      <card level="2" id="1315" />
-      <card level="3" id="1315" />
+      <card level="2" id="5017" />
+      <card level="3" id="5017" />
       <card level="4" id="2057" />
       <card level="5" id="6017" />
       <card level="6" id="6017" />
@@ -3177,11 +3177,11 @@
     </missions>
     <rewards>
       <card level="1" id="510" />
-      <card level="2" id="1315" />
-      <card level="3" id="1315" />
-      <card level="4" id="2057" />
-      <card level="5" id="6017" />
-      <card level="6" id="6017" />
+      <card level="2" id="1012" />
+      <card level="3" id="1012" />
+      <card level="4" id="2058" />
+      <card level="5" id="7017" />
+      <card level="6" id="7017" />
       <card level="7" id="512" />
     </rewards>
     <find_item id="3043" drop_per_energy=".25" />
@@ -3208,11 +3208,11 @@
     </missions>
     <rewards>
       <card level="1" id="510" />
-      <card level="2" id="1315" />
-      <card level="3" id="1315" />
-      <card level="4" id="2057" />
-      <card level="5" id="6017" />
-      <card level="6" id="6017" />
+      <card level="2" id="5017" />
+      <card level="3" id="5017" />
+      <card level="4" id="2031" />
+      <card level="5" id="7017" />
+      <card level="6" id="7017" />
       <card level="7" id="512" />
     </rewards>
     <find_item id="3043" drop_per_energy=".25" />
