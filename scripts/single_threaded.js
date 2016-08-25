@@ -130,8 +130,6 @@ var SIM_CONTROLLER;
 
         SIMULATOR.setupDecks();
 
-        max_turns = 50;
-
         wins = 0;
         losses = 0;
         draws = 0;

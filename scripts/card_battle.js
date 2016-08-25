@@ -127,8 +127,6 @@ var SIM_CONTROLLER;
         }
         cache_player_deck_cards = getDeckCards(cache_player_deck);
 
-        max_turns = 50;
-
         // Load enemy deck
         smartAI = true;
         if (getdeck2) {
