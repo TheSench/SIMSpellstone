@@ -183,7 +183,7 @@ var CARD_GUI = {};
         background.className = 'sprite sprite-Item';
         htmlCard.appendChild(background);
         if (image) {
-            image = createImg(getAssetPath("items") + image);
+            image = createImg(getAssetPath("items") + image + ".png");
             image.className = 'item-image';
             htmlCard.appendChild(image);
         }
