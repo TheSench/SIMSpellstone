@@ -142,6 +142,20 @@ var BATTLEGROUNDS = {
       },
     ]
   },
+  "111": {
+    "name": "Counter Burn",
+    "id": "111",
+    "effect": [
+      {
+        "effect_type": "add_skill",
+        "id": "counterburn",
+        "mult": 0.1,
+        "base": "health",
+        "y": "5",
+        "z": 5,
+      },
+    ]
+  },
   "501": {
     "name": "Castle Siege",
     "id": "501",
@@ -525,6 +539,28 @@ var BATTLEGROUNDS = {
         	"level": 4,
         },
     }
+  },
+  "510": {
+    "name": "Dungeon Boost",
+    "id": "510",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "50",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "heal",
+        "x": 1.1,
+        "all": "1",
+      },
+      {
+        "effect_type": "skill",
+        "id": "rally",
+        "x": .6,
+        "all": "1",
+      },
+    ]
   },
   "10001": {
     "name": "Personal Frog Buff",

@@ -161,6 +161,25 @@
       </skill>
     </effect>
   </battleground>
+  <battleground>
+    <id>111</id>
+    <name>Counter Burn</name>
+    <!-- <desc>When an Elemental is damaged by an attack, is deals Scorch damage to the attacker equal to 50% of the Elemental's base Attack.</desc> -->
+    <desc>When an Elemental is damaged by an attack, is deals Scorch damage to the attacker equal to 10% of the Elemental's base Health.</desc>
+    <icon>filter_elementals_64</icon>
+    <effect>
+      <add_skill id="counterburn" mult="0.1" base="health" y="5" />
+      <skill id="displayEffect" trigger="onSkill" s="counterburn">
+        <actor_effect>
+          <prefab>Empower_Target_Elemental</prefab>
+          <!-- <bundle_id></bundle_id> -->
+          <delay>.5</delay>
+          <duration>1</duration>
+          <shake>true</shake>
+        </actor_effect>
+      </skill>
+    </effect>
+  </battleground>
   <!-- 501-1000: Specialty BGE -->
   <battleground>
     <id>501</id>
@@ -365,6 +384,22 @@
       <starting_card id="606" level="2" pvp_rank="16" />
       <starting_card id="606" level="3" pvp_rank="17" />
       <starting_card id="606" level="4" pvp_rank="18" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>510</id>
+    <name>Dungeon Boost</name>
+    <desc>Dungeon Boost Heals and Empowers all of his allies, increasing in strength as he levels up.</desc>
+    <icon>filter_frostbite_64</icon>
+    <icon_bundle>26</icon_bundle>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>50</starting_level>
+    <!-- Starting Raid Level -->
+    <effect>
+      <skill id="heal" x="1.1" all="1" />
+      <skill id="rally" x=".6" all="1" />
     </effect>
   </battleground>
   <!-- 1001+: Personal BGE -->

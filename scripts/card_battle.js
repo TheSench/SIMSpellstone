@@ -7,7 +7,7 @@ var SIM_CONTROLLER;
 
     // Initialize simulation loop - runs once per simulation session
     SIM_CONTROLLER.startsim = function (autostart) {
-        document.getElementById('ui').style.display = 'none';
+        toggleUI(false);
 
         if (_DEFINED('autolink') && !autostart) {
             window.location.href = generate_link(1, 1);
@@ -111,7 +111,7 @@ var SIM_CONTROLLER;
         SIMULATOR.battlegrounds = battlegrounds;
 
         // Hide interface
-        document.getElementById('ui').style.display = 'none';
+        toggleUI(false);
 
         // Display stop button
         document.getElementById('stop').style.display = 'block';
@@ -150,7 +150,7 @@ var SIM_CONTROLLER;
         losses = 0;
         draws = 0;
 
-        outp('<strong>Initializing simulations...</strong>');
+        setSimStatus("Initializing simulations...");
 
         current_timeout = setTimeout(run_sims);
 
@@ -171,24 +171,28 @@ var SIM_CONTROLLER;
 
         var result = processSimResult();
 
+        var msg;
         if (result == 'draw') {
-            outp(echo + '<br><h1>DRAW</h1><br>');
+            msg = '<br><h1>DRAW</h1><br>';
         } else if (result) {
-            outp(echo + '<br><h1>WIN</h1><br>');
+            msg = '<br><h1>WIN</h1><br>';
         } else {
-            outp(echo + '<br><h1>LOSS</h1><br>');
+            msg = '<br><h1>LOSS</h1><br>';
         }
+        if (echo) {
+            outp(echo);
+        }
+        setSimStatus(msg);
 
         draw_match_end();
     }
 
     function draw_match_end() {
-        document.getElementById('ui').style.display = 'block';
 
         CARD_GUI.draw_cards(SIMULATOR.field);   // Draw battlefield with no hand
 
         // Show interface
-        document.getElementById('ui').style.display = 'block';
+        toggleUI(true);
 
         // Hide stop button
         document.getElementById('stop').style.display = 'none';

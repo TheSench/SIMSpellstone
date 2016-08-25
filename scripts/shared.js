@@ -1,6 +1,6 @@
 "use strict";
 
-if (!String.prototype.format) {
+if (typeof String.prototype.format !== 'function') {
     String.prototype.format = function () {
         var args = arguments;
         return this.replace(/{(\d+)}/g, function (match, number) {
@@ -9,6 +9,28 @@ if (!String.prototype.format) {
               : match
             ;
         });
+    };
+}
+
+if (typeof Object.assign !== 'function') {
+    Object.assign = function (target) {
+        'use strict';
+        if (target == null) {
+            throw new TypeError('Cannot convert undefined or null to object');
+        }
+
+        target = Object(target);
+        for (var index = 1; index < arguments.length; index++) {
+            var source = arguments[index];
+            if (source != null) {
+                for (var key in source) {
+                    if (Object.prototype.hasOwnProperty.call(source, key)) {
+                        target[key] = source[key];
+                    }
+                }
+            }
+        }
+        return target;
     };
 }
 
@@ -192,6 +214,7 @@ function cloneCard(original) {
     copy.burn = original.burn;
     copy.corrosive = original.corrosive;
     copy.counter = original.counter;
+    copy.counterburn = original.counterburn;
     copy.evade = original.evade;
     copy.leech = original.leech;
     copy.nullify = original.nullify;
@@ -275,6 +298,7 @@ var makeUnit = (function () {
         burn: 0,
         corrosive: 0,
         counter: 0,
+        counterburn: 0,
         evade: 0,
         leech: 0,
         nullify: 0,
@@ -468,6 +492,7 @@ var makeUnit = (function () {
                 case 'burn':
                 case 'corrosive':
                 case 'counter':
+                case 'counterburn':
                 case 'evade':
                 case 'leech':
                 case 'nullify':
@@ -540,6 +565,7 @@ var makeUnit = (function () {
                 case 'burn':
                 case 'corrosive':
                 case 'counter':
+                case 'counterburn':
                 case 'evade':
                 case 'flurry':
                 case 'leech':
@@ -697,6 +723,7 @@ var boostSkill = function (card, boost) {
         case 'burn':
         case 'corrosive':
         case 'counter':
+        case 'counterburn':
         case 'evade':
         case 'leech':
         case 'nullify':
@@ -855,6 +882,7 @@ function setSkill_2(new_card, skill) {
         case 'burn':
         case 'corrosive':
         case 'counter':
+        case 'counterburn':
         case 'evade':
         case 'leech':
         case 'nullify':
@@ -1177,6 +1205,7 @@ function debug_passive_skills(card, skillText) {
     debugNonActivatedSkill(card, "taunt", skillText);
     debugNonActivatedSkill(card, "armored", skillText);
     debugNonActivatedSkill(card, "counter", skillText);
+    debugNonActivatedSkill(card, "counterburn", skillText);
     debugNonActivatedSkill(card, "corrosive", skillText);
 }
 
@@ -1504,7 +1533,7 @@ function hash_decode(hash, isLegacy) {
                         current_deck.deck.push(unitInfo);
                         unitidx++;
                     }
-                } else {
+                } else if(!isLegacy) {
                     return hash_decode(hash, true);
                 }
             }

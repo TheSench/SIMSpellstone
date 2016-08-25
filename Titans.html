@@ -154,6 +154,40 @@
     </div>
     <br>
     <span id="content"></span>
+    <div id="simulationStatus" style="display:none">
+        <strong id="simStatusMsg"></strong> <span id="progress"></span>
+        <div id="speed">
+            <span id="elapsed"></span> seconds<br />
+            <span id="simsPerSec"></span> simulations per second<br>
+        </div>
+    </div>
+    <div id="winrateTable" style="display:none;">
+        <table cellspacing="0" cellpadding="0" border="0">
+            <tbody>
+                <tr>
+                    <td>
+                        <table cellspacing="0" cellpadding="5" style="border: 1px solid #000000;">
+                            <tbody>
+                                <tr><td>Wins</td><td id="wins"></td><td id="winrate"></td></tr>
+                                <tr style="background-color: #eee;"><td>Losses</td><td id="losses"></td><td id="lossrate"></td></tr>
+                                <tr><td>Draws</td><td id="draws"></td><td id="drawrate"></td></tr>
+                                <tr style="background-color: #eee;"><td>+/-</td><td id="marginGames">1105</td><td id="marginPercent">0.00%</td></tr>
+                                <tr style="background-color: #000; color: #fff;"><td>Battles</td><td class="battleCount">843817</td><td id="percentComplete"></td></tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <table cellspacing="0" cellpadding="5" style="border: 1px solid #000000;">
+                            <tbody>
+                                <tr><td>Avg. Battle Length</td><td id="avgLength"></td></tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
     <br>
     <span id="cardSpace"></span>
     <br>

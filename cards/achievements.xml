@@ -4267,5 +4267,129 @@
       <gold>800</gold>
     </reward>
   </achievement>
+  <achievement>
+    <id>3138</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Salt Waste Empire</name>
+    <desc>Complete the 'Salt Waste Empire' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1083</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3139</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Salt Waste Empire</name>
+    <desc>Complete the 'Salt Waste Empire' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3138</achievement_req>
+    <req>
+      <campaign>1083</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3140</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Backup Plan</name>
+    <desc>Complete the 'Backup Plan' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1084</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3141</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Backup Plan</name>
+    <desc>Complete the ‘Backup Plan' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3140</achievement_req>
+    <req>
+      <campaign>1084</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3142</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Ground Inspection</name>
+    <desc>Complete the 'Ground Inspection' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1085</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3143</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Ground Inspection</name>
+    <desc>Complete the ‘Ground Inspection' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3142</achievement_req>
+    <req>
+      <campaign>1085</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3144</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Reks and the Tamer</name>
+    <desc>Complete the 'Reks and the Tamer' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1086</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3145</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Reks and the Tamer</name>
+    <desc>Complete the ‘Reks and the Tamer' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3144</achievement_req>
+    <req>
+      <campaign>1086</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
 </root>

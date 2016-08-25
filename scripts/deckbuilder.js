@@ -2050,7 +2050,7 @@ var isInSubfaction = function (unit, faction)
 {
     var factionID = factions.IDs[faction];
     var card = get_slim_card_by_id(unit, true);
-    return (card.sub_type == factionID);
+    return ((card.sub_type || 0) == factionID);
 }
 
 var isInRange = function (unit, field, min, max)

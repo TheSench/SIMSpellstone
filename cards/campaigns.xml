@@ -3094,12 +3094,128 @@
       <card level="1" id="510" />
       <card level="2" id="1012" />
       <card level="3" id="1012" />
-      <card level="4" id="1031" />
+      <card level="4" id="2053" />
       <card level="5" id="1015" />
       <card level="6" id="1015" />
       <card level="7" id="512" />
     </rewards>
     <find_item id="3042" drop_per_energy=".25" />
+  </campaign>
+  <campaign>
+    <id>1083</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Salt Waste Empire</name>
+    <icon id="iron_nugget100" bundle="58" />
+    <location_id>100</location_id>
+    <x>145</x>
+    <y>230</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5313</mission_id>
+      <mission_id>5314</mission_id>
+      <mission_id>5315</mission_id>
+      <mission_id>5316</mission_id>
+      <mission_id>5317</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1012" />
+      <card level="3" id="1012" />
+      <card level="4" id="1031" />
+      <card level="5" id="1015" />
+      <card level="6" id="1015" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3043" drop_per_energy=".25" />
+  </campaign>
+  <campaign>
+    <id>1084</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Backup Plan</name>
+    <icon id="iron_nugget100" bundle="58" />
+    <location_id>100</location_id>
+    <x>260</x>
+    <y>400</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5318</mission_id>
+      <mission_id>5319</mission_id>
+      <mission_id>5320</mission_id>
+      <mission_id>5321</mission_id>
+      <mission_id>5322</mission_id>
+      <mission_id>5323</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1315" />
+      <card level="3" id="1315" />
+      <card level="4" id="2057" />
+      <card level="5" id="6017" />
+      <card level="6" id="6017" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3043" drop_per_energy=".25" />
+  </campaign>
+  <campaign>
+    <id>1085</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Ground Inspection</name>
+    <icon id="iron_nugget100" bundle="58" />
+    <location_id>100</location_id>
+    <x>600</x>
+    <y>200</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5324</mission_id>
+      <mission_id>5325</mission_id>
+      <mission_id>5326</mission_id>
+      <mission_id>5327</mission_id>
+      <mission_id>5328</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1315" />
+      <card level="3" id="1315" />
+      <card level="4" id="2057" />
+      <card level="5" id="6017" />
+      <card level="6" id="6017" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3043" drop_per_energy=".25" />
+  </campaign>
+  <campaign>
+    <id>1086</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Reks and the Tamer</name>
+    <icon id="iron_nugget100" bundle="58" />
+    <location_id>100</location_id>
+    <x>760</x>
+    <y>300</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5329</mission_id>
+      <mission_id>5330</mission_id>
+      <mission_id>5331</mission_id>
+      <mission_id>5332</mission_id>
+      <mission_id>5333</mission_id>
+      <mission_id>5334</mission_id>
+      <mission_id>5335</mission_id>
+      <mission_id>5336</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1315" />
+      <card level="3" id="1315" />
+      <card level="4" id="2057" />
+      <card level="5" id="6017" />
+      <card level="6" id="6017" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3043" drop_per_energy=".25" />
   </campaign>
   <!-- START Mythic Campaigns -->
   <campaign>
