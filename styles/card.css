@@ -465,3 +465,10 @@ img[src='Error.src'] {
     background-color: cyan;
     z-index: 1000;
 }
+
+.item-image {
+    position: absolute;
+    width: 48px;
+    left: 18px;
+    top: 34px
+}

@@ -184,8 +184,8 @@ var CARD_GUI = {};
         htmlCard.appendChild(background);
         if (image) {
             image = createImg(getAssetPath("items") + image);
-            icon.className = 'sprite sprite-Item';
-            htmlCard.appendChild(icon);
+            image.className = 'item-image';
+            htmlCard.appendChild(image);
         }
         var divName = createDiv("card-name", name);
         htmlCard.appendChild(divName);
