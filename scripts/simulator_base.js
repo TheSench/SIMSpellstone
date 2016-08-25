@@ -963,15 +963,6 @@ var SIMULATOR = {};
         } else {
             shuffle(deck.cpu.deck);
         }
-        
-    
-        if (getordered) {
-            deck.player.ordered = getDeckCards(deck.player).deck;
-        }
-        if (getordered2) {
-            deck.cpu.ordered = getDeckCards(deck.cpu).deck;
-        }
-
 
         setupField(field);
 
@@ -1194,7 +1185,13 @@ var SIMULATOR = {};
             } else if (user_controlled && p == 'player') {
                 card_picked = chooseCardUserManually(p, deck_p_deck, deck_p_ordered, turn, redraw);
             } else if (isOrdered) {
-                card_picked = chooseCardOrdered(p, deck_p_deck, deck_p_ordered, turn, redraw);
+                // If deck isn't shuffled, just play the first card
+                if (typeof deck_p_ordered === "undefined") {
+                    card_picked = 0;
+                    play_card(deck_p_deck[card_picked], p);
+                } else {
+                    card_picked = chooseCardOrdered(p, deck_p_deck, deck_p_ordered, turn, redraw);
+                }
             } else {
                 // Play random card in hand
                 var hand = deck_p_deck.slice(0, 3);
