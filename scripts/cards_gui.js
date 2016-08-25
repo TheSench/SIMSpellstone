@@ -176,12 +176,17 @@ var CARD_GUI = {};
         return cards;
     }
 
-    function createItemHTML(name, quantity) {
+    function createItemHTML(name, quantity, image) {
         var htmlCard = createDiv("card");
 
-        var icon = document.createElement("i");
-        icon.className = 'sprite sprite-Item';
-        htmlCard.appendChild(icon);
+        var background = document.createElement("i");
+        background.className = 'sprite sprite-Item';
+        htmlCard.appendChild(background);
+        if (image) {
+            image = createImg(getAssetPath("items") + image);
+            icon.className = 'sprite sprite-Item';
+            htmlCard.appendChild(icon);
+        }
         var divName = createDiv("card-name", name);
         htmlCard.appendChild(divName);
         htmlCard.classList.add('factionless');
