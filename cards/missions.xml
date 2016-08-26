@@ -48,6 +48,10 @@
     <mission_req>244</mission_req>
     <!-- 244 -->
   </feature_lock>
+  <!-- <feature_lock>
+		<id>passivemissions</id>
+		<mission_req>-1</mission_req> 
+	</feature_lock> -->
   <feature_lock>
     <id>combatspeed</id>
     <mission_req>44</mission_req>

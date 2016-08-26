@@ -33,7 +33,6 @@ void Main()
 	Normalize("missions.xml", downloadFiles);
 	Normalize("missions_event.xml", downloadFiles);
 	Normalize("passive_missions.xml", downloadFiles);
-
 	
 	g_unitIDs = new HashSet<string>();
 	xmlFile = Path.Combine(path, "cards.xml");

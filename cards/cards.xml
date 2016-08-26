@@ -5141,7 +5141,6 @@
     <name>Poliworg</name>
     <picture>Poliworg_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
     <attack>5</attack>
     <health>12</health>
@@ -5185,7 +5184,6 @@
     <name>Poliworg Blitz</name>
     <picture>Poliworg_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
     <attack>5</attack>
     <health>17</health>
@@ -5225,7 +5223,6 @@
     <name>Poliworg Barrage</name>
     <picture>Poliworg_B</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
     <attack>6</attack>
     <health>20</health>
@@ -5264,7 +5261,6 @@
     <name>Frogling Swarm</name>
     <picture>Frogling_Swarm_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1446134400</hidden_until_time>
     <!-- Thu, 29 Oct 2015 16:00:00 GMT -->
     <attack>2</attack>
     <health>8</health>
@@ -5305,7 +5301,6 @@
     <name>Frogling Mob</name>
     <picture>Frogling_Swarm_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1446134400</hidden_until_time>
     <!-- Thu, 29 Oct 2015 16:00:00 GMT -->
     <attack>3</attack>
     <health>13</health>
@@ -5343,7 +5338,6 @@
     <name>Frogling Army</name>
     <picture>Frogling_Swarm_B</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1446134400</hidden_until_time>
     <!-- Thu, 29 Oct 2015 16:00:00 GMT -->
     <attack>4</attack>
     <health>16</health>
@@ -5496,7 +5490,6 @@
     <name>Tadpole Warmage</name>
     <picture>Tadpole_Warmage_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1446739200</hidden_until_time>
     <!-- Thu, 05 Nov 2015 16:00:00 GMT -->
     <attack>3</attack>
     <health>7</health>
@@ -5531,7 +5524,6 @@
     <name>Froglet Warmage</name>
     <picture>Tadpole_Warmage_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1446739200</hidden_until_time>
     <!-- Thu, 05 Nov 2015 16:00:00 GMT -->
     <attack>4</attack>
     <health>10</health>
@@ -5571,7 +5563,6 @@
     <name>Frog Warmage</name>
     <picture>Tadpole_Warmage_B</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1446739200</hidden_until_time>
     <!-- Thu, 05 Nov 2015 16:00:00 GMT -->
     <attack>4</attack>
     <health>13</health>
@@ -6341,7 +6332,6 @@
     <name>Grizzly Terror</name>
     <picture>Undead_Bear_A</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1452790800</hidden_until_time>
     <!-- Thu, 14 Jan 2016 17:00:00 GMT -->
     <attack>3</attack>
     <health>13</health>
@@ -6382,7 +6372,6 @@
     <name>Grizzly Tear</name>
     <picture>Undead_Bear_A</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1452790800</hidden_until_time>
     <!-- Thu, 14 Jan 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>16</health>
@@ -6425,7 +6414,6 @@
     <name>Grizzly Despair</name>
     <picture>Undead_Bear_B</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1452790800</hidden_until_time>
     <!-- Thu, 14 Jan 2016 17:00:00 GMT -->
     <attack>5</attack>
     <health>19</health>
@@ -6576,7 +6564,6 @@
     <name>Blight Knight</name>
     <picture>Void_Infected_Knight_A</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1454000400</hidden_until_time>
     <!-- Thu, 28 Jan 2016 17:00:00 GMT -->
     <attack>2</attack>
     <health>7</health>
@@ -6611,7 +6598,6 @@
     <name>Infected Knight</name>
     <picture>Void_Infected_Knight_A</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1454000400</hidden_until_time>
     <!-- Thu, 28 Jan 2016 17:00:00 GMT -->
     <attack>3</attack>
     <health>9</health>
@@ -6649,7 +6635,6 @@
     <name>Void Knight</name>
     <picture>Void_Infected_Knight_B</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1454000400</hidden_until_time>
     <!-- Thu, 28 Jan 2016 17:00:00 GMT -->
     <attack>3</attack>
     <health>13</health>
@@ -6686,7 +6671,6 @@
     <name>Lazarus</name>
     <picture>Undead_King_A</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1452790800</hidden_until_time>
     <!-- Thu, 14 Jan 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>15</health>
@@ -6734,7 +6718,6 @@
     <name>Lazarus, Harbinger</name>
     <picture>Undead_King_A</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1452790800</hidden_until_time>
     <!-- Thu, 14 Jan 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>19</health>
@@ -6780,7 +6763,6 @@
     <name>Lazarus, Betrayer</name>
     <picture>Undead_King_B</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1452790800</hidden_until_time>
     <!-- Thu, 14 Jan 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>23</health>
@@ -7172,7 +7154,6 @@
     <name>Ebon Duelist</name>
     <picture>Fencing_Angel_A</picture>
     <asset_bundle>47</asset_bundle>
-    <hidden_until_time>1455814800</hidden_until_time>
     <!-- Thu, 18 Feb 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>11</health>
@@ -7209,7 +7190,6 @@
     <name>Ebonox Duelist</name>
     <picture>Fencing_Angel_A</picture>
     <asset_bundle>47</asset_bundle>
-    <hidden_until_time>1455814800</hidden_until_time>
     <!-- Thu, 18 Feb 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>14</health>
@@ -7249,7 +7229,6 @@
     <name>Ebonfire Duelist</name>
     <picture>Fencing_Angel_B</picture>
     <asset_bundle>47</asset_bundle>
-    <hidden_until_time>1455814800</hidden_until_time>
     <!-- Thu, 18 Feb 2016 17:00:00 GMT -->
     <attack>5</attack>
     <health>16</health>
@@ -7525,7 +7504,6 @@
     <name>Arcblaze Dragon</name>
     <picture>Promo_Dragon_A</picture>
     <asset_bundle>53</asset_bundle>
-    <hidden_until_time>1461344400</hidden_until_time>
     <!-- Fri, 22 Apr 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>13</health>
@@ -7981,7 +7959,6 @@
     <name>Sharpwing</name>
     <picture>Sharp_Wing_A</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1463072400</hidden_until_time>
     <!-- Thu, 12 May 2016 17:00:00 GMT -->
     <attack>2</attack>
     <health>8</health>
@@ -8018,7 +7995,6 @@
     <name>Bladewing</name>
     <picture>Sharp_Wing_A</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1463072400</hidden_until_time>
     <!-- Thu, 12 May 2016 17:00:00 GMT -->
     <attack>3</attack>
     <health>11</health>
@@ -8054,7 +8030,6 @@
     <name>Razorwing</name>
     <picture>Sharp_Wing_B</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1463072400</hidden_until_time>
     <!-- Thu, 12 May 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>14</health>
@@ -8092,7 +8067,6 @@
     <name>Carrion Hunter</name>
     <picture>Vulture_Pack_A</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1463677200</hidden_until_time>
     <!-- Thu, 19 May 2016 17:00:00 GMT -->
     <attack>3</attack>
     <health>16</health>
@@ -8128,7 +8102,6 @@
     <name>Carrion Feeder</name>
     <picture>Vulture_Pack_A</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1463677200</hidden_until_time>
     <!-- Thu, 19 May 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>20</health>
@@ -8167,7 +8140,6 @@
     <name>Carrion Pack</name>
     <picture>Vulture_Pack_B</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1463677200</hidden_until_time>
     <!-- Thu, 19 May 2016 17:00:00 GMT -->
     <attack>5</attack>
     <health>23</health>
@@ -8819,7 +8791,6 @@
     <name>Sandmite</name>
     <picture>Desert_Sprinter_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467306000</hidden_until_time>
     <attack>3</attack>
     <health>8</health>
     <cost>1</cost>
@@ -8859,7 +8830,6 @@
     <name>Sandspeck</name>
     <picture>Desert_Sprinter_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467306000</hidden_until_time>
     <attack>4</attack>
     <health>10</health>
     <cost>1</cost>
@@ -8900,7 +8870,6 @@
     <name>Sandroach</name>
     <picture>Desert_Sprinter_B</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467306000</hidden_until_time>
     <attack>5</attack>
     <health>13</health>
     <cost>1</cost>
@@ -8939,7 +8908,6 @@
     <name>Contrapede</name>
     <picture>Bug_Of_Fire_and_Ice_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467306000</hidden_until_time>
     <attack>1</attack>
     <health>9</health>
     <cost>1</cost>
@@ -8973,7 +8941,6 @@
     <name>Dualipede</name>
     <picture>Bug_Of_Fire_and_Ice_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467306000</hidden_until_time>
     <attack>2</attack>
     <health>13</health>
     <cost>1</cost>
@@ -9008,7 +8975,6 @@
     <name>Duplicipede</name>
     <picture>Bug_Of_Fire_and_Ice_B</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467306000</hidden_until_time>
     <attack>3</attack>
     <health>16</health>
     <cost>1</cost>
@@ -9043,7 +9009,6 @@
     <name>Slithering Pincer</name>
     <picture>Monkey_Bug_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467306000</hidden_until_time>
     <attack>2</attack>
     <health>12</health>
     <cost>2</cost>
@@ -9082,7 +9047,6 @@
     <name>Swaying Pincer</name>
     <picture>Monkey_Bug_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467306000</hidden_until_time>
     <attack>3</attack>
     <health>16</health>
     <cost>2</cost>
@@ -9120,7 +9084,6 @@
     <name>Pendulum Pincer</name>
     <picture>Monkey_Bug_B</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467306000</hidden_until_time>
     <attack>4</attack>
     <health>20</health>
     <cost>2</cost>
@@ -9159,7 +9122,6 @@
     <name>Dune Hopper</name>
     <picture>Legendary_Savanna_Crusher_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467306000</hidden_until_time>
     <attack>6</attack>
     <health>16</health>
     <cost>3</cost>
@@ -9204,7 +9166,6 @@
     <name>Dune Leaper</name>
     <picture>Legendary_Savanna_Crusher_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467306000</hidden_until_time>
     <attack>7</attack>
     <health>21</health>
     <cost>3</cost>
@@ -9249,7 +9210,6 @@
     <name>Dune Slammer</name>
     <picture>Legendary_Savanna_Crusher_B</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467306000</hidden_until_time>
     <attack>8</attack>
     <health>25</health>
     <cost>3</cost>
@@ -9291,7 +9251,6 @@
     <name>Protector of Skyhaven</name>
     <picture>Protective_Angel_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1469725200</hidden_until_time>
     <attack>4</attack>
     <health>14</health>
     <cost>3</cost>
@@ -9337,7 +9296,6 @@
     <name>Shield of Skyhaven</name>
     <picture>Protective_Angel_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1469725200</hidden_until_time>
     <attack>4</attack>
     <health>18</health>
     <cost>3</cost>
@@ -9382,7 +9340,6 @@
     <name>Aegis of Skyhaven</name>
     <picture>Protective_Angel_B</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1469725200</hidden_until_time>
     <attack>5</attack>
     <health>23</health>
     <cost>3</cost>
@@ -9784,7 +9741,6 @@
     <name>Drainor</name>
     <picture>Whirl_Pool_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1470157200</hidden_until_time>
     <attack>5</attack>
     <health>15</health>
     <cost>3</cost>
@@ -9824,7 +9780,6 @@
     <name>Drainor Whirlpool</name>
     <picture>Whirl_Pool_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1470157200</hidden_until_time>
     <attack>6</attack>
     <health>20</health>
     <cost>3</cost>
@@ -9865,7 +9820,6 @@
     <name>Drainor Monsoon</name>
     <picture>Whirl_Pool_Elemental_B</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1470157200</hidden_until_time>
     <attack>7</attack>
     <health>23</health>
     <cost>3</cost>
@@ -9901,7 +9855,6 @@
     <name>Twister</name>
     <picture>Sand_Warrior_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1470157200</hidden_until_time>
     <attack>3</attack>
     <health>8</health>
     <cost>1</cost>
@@ -9937,7 +9890,6 @@
     <name>Rising Twister</name>
     <picture>Sand_Warrior_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1470157200</hidden_until_time>
     <attack>4</attack>
     <health>10</health>
     <cost>1</cost>
@@ -9977,7 +9929,6 @@
     <name>Ascending Twister</name>
     <picture>Sand_Warrior_Elemental_B</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1470157200</hidden_until_time>
     <attack>5</attack>
     <health>12</health>
     <cost>1</cost>
@@ -10013,7 +9964,6 @@
     <name>Bismuth Bully</name>
     <picture>Bismuth_Beast_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1470157200</hidden_until_time>
     <attack>4</attack>
     <health>10</health>
     <cost>2</cost>
@@ -10050,7 +10000,6 @@
     <name>Bismuth Brute</name>
     <picture>Bismuth_Beast_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1470157200</hidden_until_time>
     <attack>5</attack>
     <health>13</health>
     <cost>2</cost>
@@ -10086,7 +10035,6 @@
     <name>Bismuth Beast</name>
     <picture>Bismuth_Beast_Elemental_B</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1472144400</hidden_until_time>
     <attack>6</attack>
     <health>17</health>
     <cost>2</cost>
@@ -12176,7 +12124,6 @@
     <name>Grand Knight Frog</name>
     <picture>High_Knight_Frog_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
     <attack>3</attack>
     <health>7</health>
@@ -12216,7 +12163,6 @@
     <name>High Knight Frog</name>
     <picture>High_Knight_Frog_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
     <attack>5</attack>
     <health>10</health>
@@ -12257,7 +12203,6 @@
     <name>Supreme Knight Frog</name>
     <picture>High_Knight_Frog_B</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
     <attack>6</attack>
     <health>13</health>
@@ -12298,7 +12243,6 @@
     <name>Vivid Aurora</name>
     <picture>Great_Aurora_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1446739200</hidden_until_time>
     <!-- Thu, 05 Nov 2015 16:00:00 GMT -->
     <attack>4</attack>
     <health>10</health>
@@ -12344,7 +12288,6 @@
     <name>Brilliant Aurora</name>
     <picture>Great_Aurora_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1446739200</hidden_until_time>
     <!-- Thu, 05 Nov 2015 16:00:00 GMT -->
     <attack>4</attack>
     <health>13</health>
@@ -12388,7 +12331,6 @@
     <name>Blazing Aurora</name>
     <picture>Great_Aurora_B</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1446739200</hidden_until_time>
     <!-- Thu, 05 Nov 2015 16:00:00 GMT -->
     <attack>5</attack>
     <health>16</health>
@@ -12433,7 +12375,6 @@
     <name>Frost Frog</name>
     <picture>Frozen_Frog_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
     <attack>5</attack>
     <health>13</health>
@@ -12473,7 +12414,6 @@
     <name>Frozen Frog</name>
     <picture>Frozen_Frog_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
     <attack>7</attack>
     <health>15</health>
@@ -12511,7 +12451,6 @@
     <name>Arctic Frog</name>
     <picture>Frozen_Frog_B</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
     <attack>8</attack>
     <health>19</health>
@@ -12550,7 +12489,6 @@
     <name>Tower Spirit</name>
     <picture>Tower_Spirit_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1447344000</hidden_until_time>
     <!-- Thu, 12 Nov 2015 16:00:00 GMT -->
     <attack>4</attack>
     <health>9</health>
@@ -12592,7 +12530,6 @@
     <name>Spire Spirit</name>
     <picture>Tower_Spirit_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1447344000</hidden_until_time>
     <!-- Thu, 12 Nov 2015 16:00:00 GMT -->
     <attack>4</attack>
     <health>11</health>
@@ -12631,7 +12568,6 @@
     <fusion_level>2</fusion_level>
     <name>Citadel Spirit</name>
     <picture>Tower_Spirit_B</picture>
-    <hidden_until_time>1447344000</hidden_until_time>
     <!-- Thu, 12 Nov 2015 16:00:00 GMT -->
     <asset_bundle>28</asset_bundle>
     <attack>4</attack>
@@ -12671,7 +12607,6 @@
     <name>Webfoot Raider</name>
     <picture>Bombardier_Frog_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
     <attack>1</attack>
     <health>6</health>
@@ -12703,7 +12638,6 @@
     <name>Webfoot Bombardier</name>
     <picture>Bombardier_Frog_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
     <attack>1</attack>
     <health>9</health>
@@ -12735,7 +12669,6 @@
     <name>Webfoot Marauder</name>
     <picture>Bombardier_Frog_B</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
     <attack>2</attack>
     <health>10</health>
@@ -12768,7 +12701,6 @@
     <name>Nightfall Dragon</name>
     <picture>Night_Dragon_A</picture>
     <asset_bundle>33</asset_bundle>
-    <hidden_until_time>1449162000</hidden_until_time>
     <!-- Thu, 03 Dec 2015 17:00:00 GMT -->
     <attack>4</attack>
     <health>12</health>
@@ -12814,7 +12746,6 @@
     <name>Nighttide Dragon</name>
     <picture>Night_Dragon_A</picture>
     <asset_bundle>33</asset_bundle>
-    <hidden_until_time>1449162000</hidden_until_time>
     <!-- Thu, 03 Dec 2015 17:00:00 GMT -->
     <attack>5</attack>
     <health>15</health>
@@ -12858,7 +12789,6 @@
     <name>Twilight Dragon</name>
     <picture>Night_Dragon_B</picture>
     <asset_bundle>33</asset_bundle>
-    <hidden_until_time>1449162000</hidden_until_time>
     <!-- Thu, 03 Dec 2015 17:00:00 GMT -->
     <attack>5</attack>
     <health>20</health>
@@ -12900,7 +12830,6 @@
     <card_type>2</card_type>
     <name>Cloudtop Dragon</name>
     <picture>Sky_Dragon_A</picture>
-    <hidden_until_time>1449766800</hidden_until_time>
     <!-- Thu, 10 Dec 2015 17:00:00 GMT -->
     <asset_bundle>33</asset_bundle>
     <attack>5</attack>
@@ -12942,7 +12871,6 @@
     <card_type>2</card_type>
     <fusion_level>1</fusion_level>
     <name>Billowtop Dragon</name>
-    <hidden_until_time>1449766800</hidden_until_time>
     <!-- Thu, 10 Dec 2015 17:00:00 GMT -->
     <picture>Sky_Dragon_A</picture>
     <asset_bundle>33</asset_bundle>
@@ -12980,7 +12908,6 @@
     <card_type>2</card_type>
     <fusion_level>2</fusion_level>
     <name>Skytop Dragon</name>
-    <hidden_until_time>1449766800</hidden_until_time>
     <!-- Thu, 10 Dec 2015 17:00:00 GMT -->
     <picture>Sky_Dragon_B</picture>
     <asset_bundle>33</asset_bundle>
@@ -13982,7 +13909,6 @@
     <name>Lost Soul</name>
     <picture>Lost_Soul_A</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1452790800</hidden_until_time>
     <!-- Thu, 14 Jan 2016 17:00:00 GMT -->
     <attack>3</attack>
     <health>7</health>
@@ -14020,7 +13946,6 @@
     <name>Wandering Soul</name>
     <picture>Lost_Soul_A</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1452790800</hidden_until_time>
     <!-- Thu, 14 Jan 2016 17:00:00 GMT -->
     <attack>3</attack>
     <health>10</health>
@@ -14060,7 +13985,6 @@
     <name>Dread Soul</name>
     <picture>Lost_Soul_B</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1452790800</hidden_until_time>
     <!-- Thu, 14 Jan 2016 17:00:00 GMT -->
     <attack>3</attack>
     <health>13</health>
@@ -14228,7 +14152,6 @@
     <name>Vapor Guard</name>
     <picture>Vapor_Ghost_A</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1454000400</hidden_until_time>
     <!-- Thu, 28 Jan 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>10</health>
@@ -14266,7 +14189,6 @@
     <name>Vapor Defender</name>
     <picture>Vapor_Ghost_A</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1454000400</hidden_until_time>
     <!-- Thu, 28 Jan 2016 17:00:00 GMT -->
     <attack>5</attack>
     <health>13</health>
@@ -14308,7 +14230,6 @@
     <name>Vapor Warden</name>
     <picture>Vapor_Ghost_B</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1454000400</hidden_until_time>
     <!-- Thu, 28 Jan 2016 17:00:00 GMT -->
     <attack>6</attack>
     <health>17</health>
@@ -14597,7 +14518,6 @@
     <name>Celestial Monarch</name>
     <picture>Angel_Queen_A</picture>
     <asset_bundle>47</asset_bundle>
-    <hidden_until_time>1454950800</hidden_until_time>
     <!-- Mon, 08 Feb 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>18</health>
@@ -14644,7 +14564,6 @@
     <name>Celestial Empress</name>
     <picture>Angel_Queen_A</picture>
     <asset_bundle>47</asset_bundle>
-    <hidden_until_time>1454950800</hidden_until_time>
     <!-- Mon, 08 Feb 2016 17:00:00 GMT -->
     <attack>5</attack>
     <health>21</health>
@@ -14690,7 +14609,6 @@
     <name>Celestial Queen</name>
     <picture>Angel_Queen_B</picture>
     <asset_bundle>47</asset_bundle>
-    <hidden_until_time>1454950800</hidden_until_time>
     <!-- Mon, 08 Feb 2016 17:00:00 GMT -->
     <attack>5</attack>
     <health>25</health>
@@ -14864,7 +14782,6 @@
     <name>Winged Trumpeter</name>
     <picture>Angel_Trumpetier_A</picture>
     <asset_bundle>47</asset_bundle>
-    <hidden_until_time>1455814800</hidden_until_time>
     <!-- Thu, 18 Feb 2016 17:00:00 GMT -->
     <attack>3</attack>
     <health>15</health>
@@ -14902,7 +14819,6 @@
     <name>Celestial Trumpeter</name>
     <picture>Angel_Trumpetier_A</picture>
     <asset_bundle>47</asset_bundle>
-    <hidden_until_time>1455814800</hidden_until_time>
     <!-- Thu, 18 Feb 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>18</health>
@@ -14944,7 +14860,6 @@
     <name>Divine Trumpeter</name>
     <picture>Angel_Trumpetier_B</picture>
     <asset_bundle>47</asset_bundle>
-    <hidden_until_time>1455814800</hidden_until_time>
     <!-- Thu, 18 Feb 2016 17:00:00 GMT -->
     <attack>5</attack>
     <health>22</health>
@@ -15222,7 +15137,6 @@
     <name>Empyrean</name>
     <picture>Firewing_Warrior_A</picture>
     <asset_bundle>47</asset_bundle>
-    <hidden_until_time>1457024400</hidden_until_time>
     <!-- Thu, 03 Mar 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>7</health>
@@ -15265,7 +15179,6 @@
     <name>Empyrean Flame</name>
     <picture>Firewing_Warrior_A</picture>
     <asset_bundle>47</asset_bundle>
-    <hidden_until_time>1457024400</hidden_until_time>
     <!-- Thu, 03 Mar 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>10</health>
@@ -15309,7 +15222,6 @@
     <name>Empyrean Fire</name>
     <picture>Firewing_Warrior_B</picture>
     <asset_bundle>47</asset_bundle>
-    <hidden_until_time>1457024400</hidden_until_time>
     <!-- Thu, 03 Mar 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>14</health>
@@ -15969,7 +15881,6 @@
     <name>Joryl</name>
     <picture>Marble_Golem_A</picture>
     <asset_bundle>50</asset_bundle>
-    <hidden_until_time>1459184400</hidden_until_time>
     <!-- Mon, 28 Mar 2016 17:00:00 GMT -->
     <attack>10</attack>
     <health>24</health>
@@ -16013,7 +15924,6 @@
     <name>Joryl of Marble</name>
     <picture>Marble_Golem_A</picture>
     <asset_bundle>50</asset_bundle>
-    <hidden_until_time>1459184400</hidden_until_time>
     <!-- Mon, 28 Mar 2016 17:00:00 GMT -->
     <attack>12</attack>
     <health>29</health>
@@ -16058,7 +15968,6 @@
     <name>Joryl of Onyx Marble</name>
     <picture>Marble_Golem_B</picture>
     <asset_bundle>50</asset_bundle>
-    <hidden_until_time>1459184400</hidden_until_time>
     <!-- Mon, 28 Mar 2016 17:00:00 GMT -->
     <attack>14</attack>
     <health>35</health>
@@ -16699,7 +16608,6 @@
     <name>Galewing</name>
     <picture>Wind_Puffer_A</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1462208400</hidden_until_time>
     <!-- Mon, 02 May 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>12</health>
@@ -16745,7 +16653,6 @@
     <name>Galewing Blast</name>
     <picture>Wind_Puffer_A</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1462208400</hidden_until_time>
     <!-- Mon, 02 May 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>15</health>
@@ -16792,7 +16699,6 @@
     <name>Galewing Tempest</name>
     <picture>Wind_Puffer_B</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1462208400</hidden_until_time>
     <!-- Mon, 02 May 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>19</health>
@@ -16835,7 +16741,6 @@
     <name>Kaliri the Foremost</name>
     <picture>Avian_Highborn_A</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1463418000</hidden_until_time>
     <!-- Mon, 16 May 2016 17:00:00 GMT -->
     <attack>3</attack>
     <health>12</health>
@@ -16877,7 +16782,6 @@
     <name>Kaliri the Champion</name>
     <picture>Avian_Highborn_A</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1463418000</hidden_until_time>
     <!-- Mon, 16 May 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>16</health>
@@ -16922,7 +16826,6 @@
     <name>Kaliri the Paramount</name>
     <picture>Avian_Highborn_B</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1463418000</hidden_until_time>
     <!-- Mon, 16 May 2016 17:00:00 GMT -->
     <attack>5</attack>
     <health>20</health>
@@ -17092,7 +16995,6 @@
     <name>Crescent Moon Owl</name>
     <picture>Owl_Knight_A</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1463072400</hidden_until_time>
     <attack>4</attack>
     <health>15</health>
     <cost>3</cost>
@@ -17135,7 +17037,6 @@
     <name>Crescent Moon Guard</name>
     <picture>Owl_Knight_A</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1463072400</hidden_until_time>
     <attack>4</attack>
     <health>18</health>
     <cost>3</cost>
@@ -17177,7 +17078,6 @@
     <name>Crescent Moon Sentry</name>
     <picture>Owl_Knight_B</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1463072400</hidden_until_time>
     <attack>5</attack>
     <health>22</health>
     <cost>3</cost>
@@ -17218,7 +17118,6 @@
     <name>Bemola</name>
     <picture>Ice_Bird_A</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1463677200</hidden_until_time>
     <!-- Thu, 19 May 2016 17:00:00 GMT -->
     <attack>1</attack>
     <health>10</health>
@@ -17263,7 +17162,6 @@
     <name>Bemola the Wind</name>
     <picture>Ice_Bird_A</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1463677200</hidden_until_time>
     <!-- Thu, 19 May 2016 17:00:00 GMT -->
     <attack>2</attack>
     <health>15</health>
@@ -17309,7 +17207,6 @@
     <name>Bemola the Frost</name>
     <picture>Ice_Bird_B</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1463677200</hidden_until_time>
     <!-- Thu, 19 May 2016 17:00:00 GMT -->
     <attack>2</attack>
     <health>18</health>
@@ -17462,7 +17359,6 @@
     <name>Thunderfist Rex</name>
     <picture>Legendary_Lightning_Fist_Dragon_A</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1465837200</hidden_until_time>
     <!-- Mon, 13 Jun 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>13</health>
@@ -17504,7 +17400,6 @@
     <name>Flashfist Rex</name>
     <picture>Legendary_Lightning_Fist_Dragon_A</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1465837200</hidden_until_time>
     <!-- Mon, 13 Jun 2016 17:00:00 GMT -->
     <attack>5</attack>
     <health>16</health>
@@ -17545,7 +17440,6 @@
     <name>Boltfist Rex</name>
     <picture>Legendary_Lightning_Fist_Dragon_B</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1465837200</hidden_until_time>
     <!-- Mon, 13 Jun 2016 17:00:00 GMT -->
     <attack>5</attack>
     <health>20</health>
@@ -17585,7 +17479,6 @@
     <name>Cliffhanger Wyrm</name>
     <picture>Spike_Blade_Dragon_A</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1464879600</hidden_until_time>
     <!-- Thu, 02 Jun 2016 15:00:00 GMT -->
     <attack>4</attack>
     <health>13</health>
@@ -17627,7 +17520,6 @@
     <name>Cliffrider Wyrm</name>
     <picture>Spike_Blade_Dragon_A</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1464879600</hidden_until_time>
     <!-- Thu, 02 Jun 2016 15:00:00 GMT -->
     <attack>5</attack>
     <health>18</health>
@@ -17665,7 +17557,6 @@
     <name>Cliffgazer Wyrm</name>
     <picture>Spike_Blade_Dragon_B</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1464879600</hidden_until_time>
     <!-- Thu, 02 Jun 2016 15:00:00 GMT -->
     <attack>6</attack>
     <health>22</health>
@@ -17703,7 +17594,6 @@
     <name>Runic Dragon</name>
     <picture>Rune_Dragon_A</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1465491600</hidden_until_time>
     <!-- Thu, 09 Jun 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>11</health>
@@ -17745,7 +17635,6 @@
     <name>Runeworn Dragon</name>
     <picture>Rune_Dragon_A</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1465491600</hidden_until_time>
     <!-- Thu, 09 Jun 2016 17:00:00 GMT -->
     <attack>5</attack>
     <health>15</health>
@@ -17790,7 +17679,6 @@
     <name>Runeglow Dragon</name>
     <picture>Rune_Dragon_B</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1465491600</hidden_until_time>
     <!-- Thu, 09 Jun 2016 17:00:00 GMT -->
     <attack>6</attack>
     <health>19</health>
@@ -17833,7 +17721,6 @@
     <name>Anshar</name>
     <picture>Airship_Stalker_A</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1466096400</hidden_until_time>
     <attack>5</attack>
     <health>18</health>
     <cost>3</cost>
@@ -17881,7 +17768,6 @@
     <name>Anshar, the Airbane</name>
     <picture>Airship_Stalker_A</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1466096400</hidden_until_time>
     <attack>6</attack>
     <health>23</health>
     <cost>3</cost>
@@ -17924,7 +17810,6 @@
     <name>Anshar, the Skybane</name>
     <picture>Airship_Stalker_B</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1466096400</hidden_until_time>
     <attack>7</attack>
     <health>26</health>
     <cost>3</cost>
@@ -17967,7 +17852,6 @@
     <name>Hive Guard</name>
     <picture>Hive_Guard_A</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1466701200</hidden_until_time>
     <attack>4</attack>
     <health>11</health>
     <cost>2</cost>
@@ -18007,7 +17891,6 @@
     <name>Hive Defender</name>
     <picture>Hive_Guard_A</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1466701200</hidden_until_time>
     <attack>5</attack>
     <health>13</health>
     <cost>2</cost>
@@ -18045,7 +17928,6 @@
     <name>Hive Sentry</name>
     <picture>Hive_Guard_B</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1466701200</hidden_until_time>
     <attack>6</attack>
     <health>16</health>
     <cost>2</cost>
@@ -18082,7 +17964,6 @@
     <name>Hornslicer</name>
     <picture>Horn_Head_Warrior_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467046800</hidden_until_time>
     <attack>4</attack>
     <health>17</health>
     <cost>3</cost>
@@ -18128,7 +18009,6 @@
     <name>Horncutter</name>
     <picture>Horn_Head_Warrior_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467046800</hidden_until_time>
     <attack>5</attack>
     <health>23</health>
     <cost>3</cost>
@@ -18176,7 +18056,6 @@
     <name>Hornsaber</name>
     <picture>Horn_Head_Warrior_B</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467046800</hidden_until_time>
     <attack>6</attack>
     <health>28</health>
     <cost>3</cost>
@@ -18223,7 +18102,6 @@
     <name>Scarab Beast</name>
     <picture>MultiWeapon_Fat_Stack_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467306000</hidden_until_time>
     <attack>5</attack>
     <health>22</health>
     <cost>4</cost>
@@ -18275,7 +18153,6 @@
     <name>Scarab Brute</name>
     <picture>MultiWeapon_Fat_Stack_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467306000</hidden_until_time>
     <attack>6</attack>
     <health>28</health>
     <cost>4</cost>
@@ -18323,7 +18200,6 @@
     <name>Scarab Barbarian</name>
     <picture>MultiWeapon_Fat_Stack_B</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467306000</hidden_until_time>
     <attack>8</attack>
     <health>35</health>
     <cost>4</cost>
@@ -18371,7 +18247,6 @@
     <name>Squito Roamer</name>
     <picture>Stinger_Fist_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467910800</hidden_until_time>
     <attack>4</attack>
     <health>12</health>
     <cost>2</cost>
@@ -18411,7 +18286,6 @@
     <name>Squito Bandit</name>
     <picture>Stinger_Fist_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467910800</hidden_until_time>
     <attack>5</attack>
     <health>15</health>
     <cost>2</cost>
@@ -18453,7 +18327,6 @@
     <name>Bansquito</name>
     <picture>Stinger_Fist_B</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467910800</hidden_until_time>
     <attack>6</attack>
     <health>16</health>
     <cost>2</cost>
@@ -18492,7 +18365,6 @@
     <name>Aht-Aht Carrier</name>
     <picture>Longleg_Mountain_Nomad_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1468515600</hidden_until_time>
     <attack>2</attack>
     <health>9</health>
     <cost>1</cost>
@@ -18533,7 +18405,6 @@
     <name>Aht-Aht Transporter</name>
     <picture>Longleg_Mountain_Nomad_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1468515600</hidden_until_time>
     <attack>2</attack>
     <health>13</health>
     <cost>1</cost>
@@ -18577,7 +18448,6 @@
     <name>Aht-Aht Trekker</name>
     <picture>Longleg_Mountain_Nomad_B</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1468515600</hidden_until_time>
     <attack>3</attack>
     <health>16</health>
     <cost>1</cost>
@@ -18617,7 +18487,6 @@
     <name>Heralidae</name>
     <picture>Mysterious_Wing_Cloak_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1469120400</hidden_until_time>
     <attack>0</attack>
     <health>17</health>
     <cost>3</cost>
@@ -18658,7 +18527,6 @@
     <name>Heralidae Aegis</name>
     <picture>Mysterious_Wing_Cloak_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1469120400</hidden_until_time>
     <attack>0</attack>
     <health>22</health>
     <cost>3</cost>
@@ -18699,7 +18567,6 @@
     <name>Heralidae Bastion</name>
     <picture>Mysterious_Wing_Cloak_B</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1469120400</hidden_until_time>
     <attack>0</attack>
     <health>27</health>
     <cost>3</cost>
@@ -18738,7 +18605,6 @@
     <name>Stoic Watcher</name>
     <picture>Void_Conqueror_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1469725200</hidden_until_time>
     <attack>2</attack>
     <health>19</health>
     <cost>3</cost>
@@ -18783,7 +18649,6 @@
     <name>Stoic Onlooker</name>
     <picture>Void_Conqueror_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1469725200</hidden_until_time>
     <attack>3</attack>
     <health>23</health>
     <cost>3</cost>
@@ -18826,7 +18691,6 @@
     <name>Fray the Stoic</name>
     <picture>Void_Conqueror_B</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1469725200</hidden_until_time>
     <attack>4</attack>
     <health>28</health>
     <cost>3</cost>
@@ -18873,7 +18737,6 @@
     <name>Blind Seer</name>
     <picture>Feather_Eyes_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1470330000</hidden_until_time>
     <attack>2</attack>
     <health>12</health>
     <cost>2</cost>
@@ -18910,7 +18773,6 @@
     <name>Blind Sage</name>
     <picture>Feather_Eyes_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1470330000</hidden_until_time>
     <attack>3</attack>
     <health>16</health>
     <cost>2</cost>
@@ -18951,7 +18813,6 @@
     <name>Blind Enlightened</name>
     <picture>Feather_Eyes_B</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1470330000</hidden_until_time>
     <attack>3</attack>
     <health>18</health>
     <cost>2</cost>
@@ -18987,7 +18848,6 @@
     <name>Shell Invader</name>
     <picture>Crustacean_Hell_Bringer_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1470934800</hidden_until_time>
     <attack>3</attack>
     <health>16</health>
     <cost>3</cost>
@@ -19027,7 +18887,6 @@
     <name>Shell Emerger</name>
     <picture>Crustacean_Hell_Bringer_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1470934800</hidden_until_time>
     <attack>4</attack>
     <health>20</health>
     <cost>3</cost>
@@ -19067,7 +18926,6 @@
     <name>Shell Buckler</name>
     <picture>Crustacean_Hell_Bringer_B</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1470934800</hidden_until_time>
     <attack>4</attack>
     <health>24</health>
     <cost>3</cost>
@@ -19106,7 +18964,6 @@
     <name>Godfried the Hunter</name>
     <picture>Beast_Slayer_Angel_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1471539600</hidden_until_time>
     <attack>4</attack>
     <health>14</health>
     <cost>2</cost>
@@ -19149,7 +19006,6 @@
     <name>Godfried the Slayer</name>
     <picture>Beast_Slayer_Angel_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1471539600</hidden_until_time>
     <attack>4</attack>
     <health>18</health>
     <cost>2</cost>
@@ -19192,7 +19048,6 @@
     <name>Godfried Goldfyre</name>
     <picture>Beast_Slayer_Angel_B</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1471539600</hidden_until_time>
     <attack>5</attack>
     <health>22</health>
     <cost>2</cost>
@@ -19234,7 +19089,6 @@
     <name>Arith</name>
     <picture>Blind_Justice_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1469466000</hidden_until_time>
     <attack>4</attack>
     <health>8</health>
     <cost>1</cost>
@@ -19276,7 +19130,6 @@
     <name>Arith the Justicar</name>
     <picture>Blind_Justice_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1469466000</hidden_until_time>
     <attack>5</attack>
     <health>12</health>
     <cost>1</cost>
@@ -19321,7 +19174,6 @@
     <name>Arith, Grand Justicar</name>
     <picture>Blind_Justice_B</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1469466000</hidden_until_time>
     <attack>6</attack>
     <health>14</health>
     <cost>1</cost>
@@ -19498,7 +19350,6 @@
     <name>Everspark Ace</name>
     <picture>Lightning_Angel_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1470157200</hidden_until_time>
     <attack>1</attack>
     <health>10</health>
     <cost>1</cost>
@@ -19542,7 +19393,6 @@
     <name>Everbolt Ace</name>
     <picture>Lightning_Angel_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1470157200</hidden_until_time>
     <attack>1</attack>
     <health>13</health>
     <cost>1</cost>
@@ -19585,7 +19435,6 @@
     <name>Everstorm Ace</name>
     <picture>Lightning_Angel_B</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1470157200</hidden_until_time>
     <attack>2</attack>
     <health>16</health>
     <cost>1</cost>
@@ -19627,7 +19476,6 @@
     <name>Asariel</name>
     <picture>Cannon_Angel_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1470243600</hidden_until_time>
     <attack>5</attack>
     <health>12</health>
     <cost>2</cost>
@@ -19676,7 +19524,6 @@
     <name>Asariel the Arbalest</name>
     <picture>Cannon_Angel_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1470243600</hidden_until_time>
     <attack>6</attack>
     <health>17</health>
     <cost>2</cost>
@@ -19723,7 +19570,6 @@
     <name>Asariel the Wrath Engine</name>
     <picture>Cannon_Angel_B</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1470243600</hidden_until_time>
     <attack>7</attack>
     <health>22</health>
     <cost>2</cost>
@@ -19766,7 +19612,6 @@
     <name>Cyclopnid</name>
     <picture>Steel_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1472058000</hidden_until_time>
     <attack>4</attack>
     <health>15</health>
     <cost>3</cost>
@@ -19811,7 +19656,6 @@
     <name>Cyclopnid Alloyborn</name>
     <picture>Steel_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1472058000</hidden_until_time>
     <attack>5</attack>
     <health>20</health>
     <cost>3</cost>
@@ -19855,7 +19699,6 @@
     <name>Cyclopnid Oreborn</name>
     <picture>Steel_Elemental_B</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1472058000</hidden_until_time>
     <attack>6</attack>
     <health>25</health>
     <cost>3</cost>
@@ -21978,7 +21821,6 @@
     <name>Underwater Lasher</name>
     <picture>Legendary_Chaos_Frog_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
     <attack>3</attack>
     <health>12</health>
@@ -22022,7 +21864,6 @@
     <name>Underwater Wallop</name>
     <picture>Legendary_Chaos_Frog_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
     <attack>4</attack>
     <health>17</health>
@@ -22066,7 +21907,6 @@
     <name>Underwater Clobberer</name>
     <picture>Legendary_Chaos_Frog_B</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
     <attack>5</attack>
     <health>21</health>
@@ -22109,7 +21949,6 @@
     <name>Canopy Horror</name>
     <picture>Canopy_Horror_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1446134400</hidden_until_time>
     <!-- Thu, 29 Oct 2015 16:00:00 GMT -->
     <attack>5</attack>
     <health>8</health>
@@ -22154,7 +21993,6 @@
     <name>Canopy Chiller</name>
     <picture>Canopy_Horror_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1446134400</hidden_until_time>
     <!-- Thu, 29 Oct 2015 16:00:00 GMT -->
     <attack>5</attack>
     <health>12</health>
@@ -22199,7 +22037,6 @@
     <name>Canopy Terror</name>
     <picture>Canopy_Horror_B</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1446134400</hidden_until_time>
     <!-- Thu, 29 Oct 2015 16:00:00 GMT -->
     <attack>5</attack>
     <health>15</health>
@@ -22241,7 +22078,6 @@
     <name>Croak Piercer</name>
     <picture>Spike_Frog_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
     <attack>5</attack>
     <health>9</health>
@@ -22281,7 +22117,6 @@
     <name>Croak Lancer</name>
     <picture>Spike_Frog_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
     <attack>6</attack>
     <health>11</health>
@@ -22321,7 +22156,6 @@
     <name>Croak Impaler</name>
     <picture>Spike_Frog_B</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
     <attack>7</attack>
     <health>13</health>
@@ -22360,7 +22194,6 @@
     <name>Marsh Ogre</name>
     <picture>Marsh_Ogre_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1446739200</hidden_until_time>
     <!-- Thu, 05 Nov 2015 16:00:00 GMT -->
     <attack>7</attack>
     <health>16</health>
@@ -22402,7 +22235,6 @@
     <name>Mire Ogre</name>
     <picture>Marsh_Ogre_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1446739200</hidden_until_time>
     <!-- Thu, 05 Nov 2015 16:00:00 GMT -->
     <attack>8</attack>
     <health>21</health>
@@ -22442,7 +22274,6 @@
     <name>Swamp Ogre</name>
     <picture>Marsh_Ogre_B</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1446739200</hidden_until_time>
     <!-- Thu, 05 Nov 2015 16:00:00 GMT -->
     <attack>8</attack>
     <health>25</health>
@@ -22483,7 +22314,6 @@
     <name>Illusion Caster</name>
     <picture>Hypnofrog_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
     <attack>1</attack>
     <health>7</health>
@@ -22517,7 +22347,6 @@
     <name>Delusion Caster</name>
     <picture>Hypnofrog_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
     <attack>2</attack>
     <health>10</health>
@@ -22550,7 +22379,6 @@
     <name>Hypno Caster</name>
     <picture>Hypnofrog_B</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
     <attack>2</attack>
     <health>14</health>
@@ -22942,7 +22770,6 @@
     <id>6026</id>
     <card_type>2</card_type>
     <name>Smokefang</name>
-    <hidden_until_time>1449766800</hidden_until_time>
     <!-- Thu, 10 Dec 2015 17:00:00 GMT -->
     <picture>Smoke_Dragon_A</picture>
     <asset_bundle>33</asset_bundle>
@@ -22986,7 +22813,6 @@
     <card_type>2</card_type>
     <fusion_level>1</fusion_level>
     <name>Sootfang</name>
-    <hidden_until_time>1449766800</hidden_until_time>
     <!-- Thu, 10 Dec 2015 17:00:00 GMT -->
     <picture>Smoke_Dragon_A</picture>
     <asset_bundle>33</asset_bundle>
@@ -23032,7 +22858,6 @@
     <card_type>2</card_type>
     <fusion_level>2</fusion_level>
     <name>Crimsonfang</name>
-    <hidden_until_time>1449766800</hidden_until_time>
     <!-- Thu, 10 Dec 2015 17:00:00 GMT -->
     <picture>Smoke_Dragon_B</picture>
     <asset_bundle>33</asset_bundle>
@@ -23663,7 +23488,6 @@
     <name>Mumohotep</name>
     <picture>Giant_Mummy_A</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1452531600</hidden_until_time>
     <!-- Mon, 11 Jan 2016 17:00:00 GMT -->
     <attack>5</attack>
     <health>16</health>
@@ -23710,7 +23534,6 @@
     <name>Lord Mumohotep</name>
     <picture>Giant_Mummy_A</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1452531600</hidden_until_time>
     <!-- Mon, 11 Jan 2016 17:00:00 GMT -->
     <attack>6</attack>
     <health>20</health>
@@ -23755,7 +23578,6 @@
     <name>King Mumohotep</name>
     <picture>Giant_Mummy_B</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1452531600</hidden_until_time>
     <!-- Mon, 11 Jan 2016 17:00:00 GMT -->
     <attack>6</attack>
     <health>24</health>
@@ -23799,7 +23621,6 @@
     <name>Firebeard</name>
     <picture>Lost_Captain_A</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1452790800</hidden_until_time>
     <!-- Thu, 14 Jan 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>10</health>
@@ -23841,7 +23662,6 @@
     <name>Pirate Firebeard</name>
     <picture>Lost_Captain_A</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1452790800</hidden_until_time>
     <!-- Thu, 14 Jan 2016 17:00:00 GMT -->
     <attack>5</attack>
     <health>14</health>
@@ -23885,7 +23705,6 @@
     <name>Captain Firebeard</name>
     <picture>Lost_Captain_B</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1452790800</hidden_until_time>
     <!-- Thu, 14 Jan 2016 17:00:00 GMT -->
     <attack>5</attack>
     <health>18</health>
@@ -24044,7 +23863,6 @@
     <name>Demos</name>
     <picture>Devil_Vanguard_A</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1454000400</hidden_until_time>
     <!-- Thu, 28 Jan 2016 17:00:00 GMT -->
     <attack>3</attack>
     <health>13</health>
@@ -24088,7 +23906,6 @@
     <name>Demos, Vanguard</name>
     <picture>Devil_Vanguard_A</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1454000400</hidden_until_time>
     <!-- Thu, 28 Jan 2016 17:00:00 GMT -->
     <attack>3</attack>
     <health>17</health>
@@ -24132,7 +23949,6 @@
     <name>Demos, Wrathhammer</name>
     <picture>Devil_Vanguard_B</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1454000400</hidden_until_time>
     <!-- Thu, 28 Jan 2016 17:00:00 GMT -->
     <attack>3</attack>
     <health>22</health>
@@ -24287,7 +24103,6 @@
     <name>Keeper of Souls</name>
     <picture>Keeper_Of_The_Dead_A</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1454346000</hidden_until_time>
     <!-- Mon, 01 Feb 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>21</health>
@@ -24336,7 +24151,6 @@
     <name>Keeper of the Lost</name>
     <picture>Keeper_Of_The_Dead_A</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1454346000</hidden_until_time>
     <!-- Mon, 01 Feb 2016 17:00:00 GMT -->
     <attack>6</attack>
     <health>26</health>
@@ -24386,7 +24200,6 @@
     <name>Keeper of the Dead</name>
     <picture>Keeper_Of_The_Dead_B</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1454346000</hidden_until_time>
     <!-- Mon, 01 Feb 2016 17:00:00 GMT -->
     <attack>7</attack>
     <health>31</health>
@@ -24666,7 +24479,6 @@
     <name>Scorching Cutlass</name>
     <picture>Fire_Sword_Angel_A</picture>
     <asset_bundle>47</asset_bundle>
-    <hidden_until_time>1455814800</hidden_until_time>
     <!-- Thu, 18 Feb 2016 17:00:00 GMT -->
     <attack>3</attack>
     <health>7</health>
@@ -24708,7 +24520,6 @@
     <name>Blazing Cutlass</name>
     <picture>Fire_Sword_Angel_A</picture>
     <asset_bundle>47</asset_bundle>
-    <hidden_until_time>1455814800</hidden_until_time>
     <!-- Thu, 18 Feb 2016 17:00:00 GMT -->
     <attack>5</attack>
     <health>10</health>
@@ -24750,7 +24561,6 @@
     <name>Devouring Cutlass</name>
     <picture>Fire_Sword_Angel_B</picture>
     <asset_bundle>47</asset_bundle>
-    <hidden_until_time>1455814800</hidden_until_time>
     <!-- Thu, 18 Feb 2016 17:00:00 GMT -->
     <attack>6</attack>
     <health>14</health>
@@ -24924,7 +24734,6 @@
     <name>Shadow of Thunder</name>
     <picture>Storm_Shadow_A</picture>
     <asset_bundle>47</asset_bundle>
-    <hidden_until_time>1457024400</hidden_until_time>
     <!-- Thu, 03 Mar 2016 17:00:00 GMT -->
     <attack>0</attack>
     <health>20</health>
@@ -24967,7 +24776,6 @@
     <name>Shadow of Lightning</name>
     <picture>Storm_Shadow_A</picture>
     <asset_bundle>47</asset_bundle>
-    <hidden_until_time>1457024400</hidden_until_time>
     <!-- Thu, 03 Mar 2016 17:00:00 GMT -->
     <attack>1</attack>
     <health>25</health>
@@ -25013,7 +24821,6 @@
     <name>Shadow of Storms</name>
     <picture>Storm_Shadow_B</picture>
     <asset_bundle>47</asset_bundle>
-    <hidden_until_time>1457024400</hidden_until_time>
     <!-- Thu, 03 Mar 2016 17:00:00 GMT -->
     <attack>2</attack>
     <health>31</health>
@@ -25058,7 +24865,6 @@
     <name>Sandstorm</name>
     <picture>Sandstorm_Elemental_A</picture>
     <asset_bundle>50</asset_bundle>
-    <hidden_until_time>1457370000</hidden_until_time>
     <!-- Mon, 07 Mar 2016 17:00:00 GMT -->
     <attack>5</attack>
     <health>17</health>
@@ -25104,7 +24910,6 @@
     <name>Sandsurge</name>
     <picture>Sandstorm_Elemental_A</picture>
     <asset_bundle>50</asset_bundle>
-    <hidden_until_time>1457370000</hidden_until_time>
     <!-- Mon, 07 Mar 2016 17:00:00 GMT -->
     <attack>6</attack>
     <health>21</health>
@@ -25148,7 +24953,6 @@
     <name>Sandsunder</name>
     <picture>Sandstorm_Elemental_B</picture>
     <asset_bundle>50</asset_bundle>
-    <hidden_until_time>1457370000</hidden_until_time>
     <!-- Mon, 07 Mar 2016 17:00:00 GMT -->
     <attack>7</attack>
     <health>25</health>
@@ -26259,7 +26063,6 @@
     <name>Squire Gorger</name>
     <picture>Avian_Devourer_A</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1462813200</hidden_until_time>
     <!-- Mon, 09 May 2016 17:00:00 GMT -->
     <attack>3</attack>
     <health>20</health>
@@ -26306,7 +26109,6 @@
     <name>Guard Gorger</name>
     <picture>Avian_Devourer_A</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1462813200</hidden_until_time>
     <!-- Mon, 09 May 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>23</health>
@@ -26350,7 +26152,6 @@
     <name>Knight Gorger</name>
     <picture>Avian_Devourer_B</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1462813200</hidden_until_time>
     <!-- Mon, 09 May 2016 17:00:00 GMT -->
     <attack>5</attack>
     <health>28</health>
@@ -26503,7 +26304,6 @@
     <name>Phoenix</name>
     <picture>Pheonix_A</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1463072400</hidden_until_time>
     <!-- Thu, 12 May 2016 17:00:00 GMT -->
     <attack>3</attack>
     <health>11</health>
@@ -26547,7 +26347,6 @@
     <name>Phoenix Departed</name>
     <picture>Pheonix_A</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1463072400</hidden_until_time>
     <!-- Thu, 12 May 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>14</health>
@@ -26589,7 +26388,6 @@
     <name>Phoenix Reborn</name>
     <picture>Pheonix_B</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1463072400</hidden_until_time>
     <!-- Thu, 12 May 2016 17:00:00 GMT -->
     <attack>5</attack>
     <health>18</health>
@@ -26634,7 +26432,6 @@
     <name>Potoo</name>
     <picture>Potoo_Hypnotist_A</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1463677200</hidden_until_time>
     <!-- Thu, 19 May 2016 17:00:00 GMT -->
     <attack>3</attack>
     <health>11</health>
@@ -26674,7 +26471,6 @@
     <name>Potoo Hypnotist</name>
     <picture>Potoo_Hypnotist_A</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1463677200</hidden_until_time>
     <!-- Thu, 19 May 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>14</health>
@@ -26714,7 +26510,6 @@
     <name>Potoo Mindwarper</name>
     <picture>Potoo_Hypnotist_B</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1463677200</hidden_until_time>
     <!-- Thu, 19 May 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>18</health>
@@ -26888,7 +26683,6 @@
     <name>Tarragon Cuttail</name>
     <picture>Scythe_Tail_Dragon_A</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1464627600</hidden_until_time>
     <attack>4</attack>
     <health>14</health>
     <cost>2</cost>
@@ -26931,7 +26725,6 @@
     <name>Tarragon Carvetail</name>
     <picture>Scythe_Tail_Dragon_A</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1464627600</hidden_until_time>
     <attack>5</attack>
     <health>17</health>
     <cost>2</cost>
@@ -26972,7 +26765,6 @@
     <name>Tarragon Cleavetail</name>
     <picture>Scythe_Tail_Dragon_B</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1464627600</hidden_until_time>
     <attack>6</attack>
     <health>21</health>
     <cost>2</cost>
@@ -27014,7 +26806,6 @@
     <name>Violetfire Igniter</name>
     <picture>Purple_Fire_Dragon_A</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1466442000</hidden_until_time>
     <attack>4</attack>
     <health>18</health>
     <cost>3</cost>
@@ -27058,7 +26849,6 @@
     <name>Violetfire Erupter</name>
     <picture>Purple_Fire_Dragon_A</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1466442000</hidden_until_time>
     <attack>5</attack>
     <health>22</health>
     <cost>3</cost>
@@ -27101,7 +26891,6 @@
     <name>Violetfire Besieger</name>
     <picture>Purple_Fire_Dragon_B</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1466442000</hidden_until_time>
     <attack>7</attack>
     <health>27</health>
     <cost>3</cost>
@@ -27144,7 +26933,6 @@
     <name>Pudgytusk</name>
     <picture>Spear_Face_Pug_Dragon_A</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1464879600</hidden_until_time>
     <!-- Thu, 02 Jun 2016 15:00:00 GMT -->
     <attack>2</attack>
     <health>8</health>
@@ -27188,7 +26976,6 @@
     <name>Slobbering Pudgytusk</name>
     <picture>Spear_Face_Pug_Dragon_A</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1464879600</hidden_until_time>
     <!-- Thu, 02 Jun 2016 15:00:00 GMT -->
     <attack>3</attack>
     <health>11</health>
@@ -27232,7 +27019,6 @@
     <name>Incensed Pudgytusk</name>
     <picture>Spear_Face_Pug_Dragon_B</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1464879600</hidden_until_time>
     <!-- Thu, 02 Jun 2016 15:00:00 GMT -->
     <attack>5</attack>
     <health>13</health>
@@ -27275,7 +27061,6 @@
     <name>Decagon</name>
     <picture>Centipede_Dragon_A</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1465491600</hidden_until_time>
     <!-- Thu, 09 Jun 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>13</health>
@@ -27315,7 +27100,6 @@
     <name>Centigon</name>
     <picture>Centipede_Dragon_A</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1465491600</hidden_until_time>
     <!-- Thu, 09 Jun 2016 17:00:00 GMT -->
     <attack>6</attack>
     <health>17</health>
@@ -27357,7 +27141,6 @@
     <name>Milligon</name>
     <picture>Centipede_Dragon_B</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1465491600</hidden_until_time>
     <!-- Thu, 09 Jun 2016 17:00:00 GMT -->
     <attack>8</attack>
     <health>21</health>
@@ -27397,7 +27180,6 @@
     <name>Abzu</name>
     <picture>Ship_Destroyer_A</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1466096400</hidden_until_time>
     <attack>4</attack>
     <health>12</health>
     <cost>2</cost>
@@ -27442,7 +27224,6 @@
     <name>Abzu, the Wavebane</name>
     <picture>Ship_Destroyer_A</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1466096400</hidden_until_time>
     <attack>5</attack>
     <health>15</health>
     <cost>2</cost>
@@ -27483,7 +27264,6 @@
     <name>Abzu, the Seabane</name>
     <picture>Ship_Destroyer_B</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1466096400</hidden_until_time>
     <attack>8</attack>
     <health>18</health>
     <cost>2</cost>
@@ -27526,7 +27306,6 @@
     <name>Firetail Dragon</name>
     <picture>Fire_Tip_Dragon_A</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1466701200</hidden_until_time>
     <attack>3</attack>
     <health>7</health>
     <cost>1</cost>
@@ -27568,7 +27347,6 @@
     <name>Flametail Dragon</name>
     <picture>Fire_Tip_Dragon_A</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1466701200</hidden_until_time>
     <attack>4</attack>
     <health>9</health>
     <cost>1</cost>
@@ -27607,7 +27385,6 @@
     <name>Blazetail Dragon</name>
     <picture>Fire_Tip_Dragon_B</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1466701200</hidden_until_time>
     <attack>4</attack>
     <health>12</health>
     <cost>1</cost>
@@ -27645,7 +27422,6 @@
     <name>Dreaded Shock</name>
     <picture>Fat_Fist_Brute_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467648000</hidden_until_time>
     <attack>5</attack>
     <health>18</health>
     <cost>3</cost>
@@ -27691,7 +27467,6 @@
     <name>Dreaded Tremor</name>
     <picture>Fat_Fist_Brute_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467648000</hidden_until_time>
     <attack>5</attack>
     <health>24</health>
     <cost>3</cost>
@@ -27737,7 +27512,6 @@
     <name>Dreaded Quake</name>
     <picture>Fat_Fist_Brute_B</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467648000</hidden_until_time>
     <attack>6</attack>
     <health>28</health>
     <cost>3</cost>
@@ -27780,7 +27554,6 @@
     <name>Torchsnout</name>
     <picture>Fire_Face_Bug_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1468256400</hidden_until_time>
     <attack>1</attack>
     <health>7</health>
     <cost>1</cost>
@@ -27823,7 +27596,6 @@
     <name>Flameface</name>
     <picture>Fire_Face_Bug_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1468256400</hidden_until_time>
     <attack>1</attack>
     <health>10</health>
     <cost>1</cost>
@@ -27866,7 +27638,6 @@
     <name>Infernose</name>
     <picture>Fire_Face_Bug_B</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1468256400</hidden_until_time>
     <attack>2</attack>
     <health>13</health>
     <cost>1</cost>
@@ -27908,7 +27679,6 @@
     <name>Psychic Beetle</name>
     <picture>Telekinetic_Bug_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467306000</hidden_until_time>
     <attack>4</attack>
     <health>13</health>
     <cost>2</cost>
@@ -27948,7 +27718,6 @@
     <name>Psycho Beetle</name>
     <picture>Telekinetic_Bug_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467306000</hidden_until_time>
     <attack>5</attack>
     <health>17</health>
     <cost>2</cost>
@@ -27990,7 +27759,6 @@
     <name>Psychosis Beetle</name>
     <picture>Telekinetic_Bug_B</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467306000</hidden_until_time>
     <attack>5</attack>
     <health>21</health>
     <cost>2</cost>
@@ -28028,7 +27796,6 @@
     <name>Gurgitater</name>
     <picture>Legendary_Acid_Spitter_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467910800</hidden_until_time>
     <attack>3</attack>
     <health>14</health>
     <cost>2</cost>
@@ -28072,7 +27839,6 @@
     <name>Gurgitater Grub</name>
     <picture>Legendary_Acid_Spitter_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467910800</hidden_until_time>
     <attack>4</attack>
     <health>18</health>
     <cost>2</cost>
@@ -28119,7 +27885,6 @@
     <name>Gurgitater Grublord</name>
     <picture>Legendary_Acid_Spitter_B</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467910800</hidden_until_time>
     <attack>5</attack>
     <health>21</health>
     <cost>2</cost>
@@ -28162,7 +27927,6 @@
     <name>Night Larva</name>
     <picture>Face_Eatter_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1468515600</hidden_until_time>
     <attack>4</attack>
     <health>16</health>
     <cost>3</cost>
@@ -28207,7 +27971,6 @@
     <name>Cradle Larva</name>
     <picture>Face_Eatter_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1468515600</hidden_until_time>
     <attack>4</attack>
     <health>22</health>
     <cost>3</cost>
@@ -28256,7 +28019,6 @@
     <name>Swaddler Larva</name>
     <picture>Face_Eatter_B</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1468515600</hidden_until_time>
     <attack>5</attack>
     <health>28</health>
     <cost>3</cost>
@@ -28303,7 +28065,6 @@
     <name>Arachnolite</name>
     <picture>Protective_Spider_Hybrid_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1469120400</hidden_until_time>
     <attack>5</attack>
     <health>12</health>
     <cost>2</cost>
@@ -28343,7 +28104,6 @@
     <name>Arachnoss</name>
     <picture>Protective_Spider_Hybrid_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1469120400</hidden_until_time>
     <attack>6</attack>
     <health>15</health>
     <cost>2</cost>
@@ -28380,7 +28140,6 @@
     <name>Arachnolos</name>
     <picture>Protective_Spider_Hybrid_B</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1469120400</hidden_until_time>
     <attack>7</attack>
     <health>18</health>
     <cost>2</cost>
@@ -28419,7 +28178,6 @@
     <name>Petrifier</name>
     <picture>Claw_Hand_Demon_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1469725200</hidden_until_time>
     <attack>4</attack>
     <health>7</health>
     <cost>1</cost>
@@ -28457,7 +28215,6 @@
     <name>Graceful Petrifier</name>
     <picture>Claw_Hand_Demon_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1469725200</hidden_until_time>
     <attack>6</attack>
     <health>10</health>
     <cost>1</cost>
@@ -28495,7 +28252,6 @@
     <name>Enraged Petrifier</name>
     <picture>Claw_Hand_Demon_B</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1469725200</hidden_until_time>
     <attack>7</attack>
     <health>14</health>
     <cost>1</cost>
@@ -28534,7 +28290,6 @@
     <name>Masked Heraid</name>
     <picture>Masked_Seductress_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1470330000</hidden_until_time>
     <attack>4</attack>
     <health>13</health>
     <cost>2</cost>
@@ -28575,7 +28330,6 @@
     <name>Veiled Heraid</name>
     <picture>Masked_Seductress_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1470330000</hidden_until_time>
     <attack>5</attack>
     <health>17</health>
     <cost>2</cost>
@@ -28616,7 +28370,6 @@
     <name>Revealed Heraid</name>
     <picture>Masked_Seductress_B</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1470330000</hidden_until_time>
     <attack>6</attack>
     <health>21</health>
     <cost>2</cost>
@@ -28658,7 +28411,6 @@
     <name>Bone Wielder</name>
     <picture>Boomerang_Goblin_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1470934800</hidden_until_time>
     <attack>2</attack>
     <health>6</health>
     <cost>1</cost>
@@ -28694,7 +28446,6 @@
     <name>Bone Thrower</name>
     <picture>Boomerang_Goblin_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1470934800</hidden_until_time>
     <attack>2</attack>
     <health>9</health>
     <cost>1</cost>
@@ -28731,7 +28482,6 @@
     <name>Bone Specialist</name>
     <picture>Boomerang_Goblin_B</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1470934800</hidden_until_time>
     <attack>3</attack>
     <health>12</health>
     <cost>1</cost>
@@ -28768,7 +28518,6 @@
     <name>Obsidian</name>
     <picture>Legendary_Midnight_Demon_Angel_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1471539600</hidden_until_time>
     <attack>7</attack>
     <health>20</health>
     <cost>3</cost>
@@ -28813,7 +28562,6 @@
     <name>Obsidian Awakened</name>
     <picture>Legendary_Midnight_Demon_Angel_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1471539600</hidden_until_time>
     <attack>8</attack>
     <health>25</health>
     <cost>3</cost>
@@ -28859,7 +28607,6 @@
     <name>Obsidian, Death's Wing</name>
     <picture>Legendary_Midnight_Demon_Angel_B</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1471539600</hidden_until_time>
     <attack>9</attack>
     <health>30</health>
     <cost>3</cost>
@@ -28904,7 +28651,6 @@
     <name>Deific Channeler</name>
     <picture>Uncanny_Valley_Woman_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1470675600</hidden_until_time>
     <attack>2</attack>
     <health>8</health>
     <cost>1</cost>
@@ -28945,7 +28691,6 @@
     <name>Divinity Channeler</name>
     <picture>Uncanny_Valley_Woman_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1470675600</hidden_until_time>
     <attack>3</attack>
     <health>11</health>
     <cost>1</cost>
@@ -28988,7 +28733,6 @@
     <name>Celestial Channeler</name>
     <picture>Uncanny_Valley_Woman_B</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1470675600</hidden_until_time>
     <attack>4</attack>
     <health>14</health>
     <cost>1</cost>
@@ -29030,7 +28774,6 @@
     <name>Consuming Mireling</name>
     <picture>Mud_Slinger_A</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1472058000</hidden_until_time>
     <attack>5</attack>
     <health>9</health>
     <cost>2</cost>
@@ -29070,7 +28813,6 @@
     <name>Engrossing Mireling</name>
     <picture>Mud_Slinger_A</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1472058000</hidden_until_time>
     <attack>6</attack>
     <health>12</health>
     <cost>2</cost>
@@ -29110,7 +28852,6 @@
     <name>Heaving Mire</name>
     <picture>Mud_Slinger_B</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1472058000</hidden_until_time>
     <attack>6</attack>
     <health>16</health>
     <cost>2</cost>
@@ -29149,7 +28890,6 @@
     <name>Heinous Smoggler</name>
     <picture>Volcanic_Ash_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1470157200</hidden_until_time>
     <attack>3</attack>
     <health>12</health>
     <cost>2</cost>
@@ -29191,7 +28931,6 @@
     <name>Nefarious Smoggler</name>
     <picture>Volcanic_Ash_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1470157200</hidden_until_time>
     <attack>4</attack>
     <health>17</health>
     <cost>2</cost>
@@ -29237,7 +28976,6 @@
     <name>Erupting Smoggler</name>
     <picture>Volcanic_Ash_Elemental_B</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1470157200</hidden_until_time>
     <attack>4</attack>
     <health>21</health>
     <cost>2</cost>
@@ -31371,7 +31109,6 @@
     <name>Frog Emperor</name>
     <picture>Emperor_Frog_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
     <attack>4</attack>
     <health>8</health>
@@ -31417,7 +31154,6 @@
     <name>Grand Frog Emperor</name>
     <picture>Emperor_Frog_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
     <attack>5</attack>
     <health>11</health>
@@ -31459,7 +31195,6 @@
     <name>Supreme Frog Emperor</name>
     <picture>Emperor_Frog_B</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
     <attack>6</attack>
     <health>15</health>
@@ -31505,7 +31240,6 @@
     <name>Lady of the Swamp</name>
     <picture>Lady_of_the_Swamp_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1447344000</hidden_until_time>
     <!-- Thu, 12 Nov 2015 16:00:00 GMT -->
     <attack>4</attack>
     <health>11</health>
@@ -31546,7 +31280,6 @@
     <name>Duchess of the Swamp</name>
     <picture>Lady_of_the_Swamp_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1447344000</hidden_until_time>
     <!-- Thu, 12 Nov 2015 16:00:00 GMT -->
     <attack>5</attack>
     <health>14</health>
@@ -31591,7 +31324,6 @@
     <name>Queen of the Swamp</name>
     <picture>Lady_of_the_Swamp_B</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1447344000</hidden_until_time>
     <!-- Thu, 12 Nov 2015 16:00:00 GMT -->
     <attack>5</attack>
     <health>17</health>
@@ -31633,7 +31365,6 @@
     <name>Trapper Frog</name>
     <picture>Huntress_Frog_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
     <attack>4</attack>
     <health>11</health>
@@ -31676,7 +31407,6 @@
     <name>Stalker Frog</name>
     <picture>Huntress_Frog_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
     <attack>5</attack>
     <health>14</health>
@@ -31716,7 +31446,6 @@
     <name>Huntress Frog</name>
     <picture>Huntress_Frog_B</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
     <attack>6</attack>
     <health>17</health>
@@ -31755,7 +31484,6 @@
     <name>Shadow Elemental</name>
     <picture>Shadow_Elemental_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1446134400</hidden_until_time>
     <!-- Thu, 29 Oct 2015 16:00:00 GMT -->
     <attack>4</attack>
     <health>11</health>
@@ -31795,7 +31523,6 @@
     <name>Gloom Elemental</name>
     <picture>Shadow_Elemental_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1446134400</hidden_until_time>
     <!-- Thu, 29 Oct 2015 16:00:00 GMT -->
     <attack>5</attack>
     <health>14</health>
@@ -31833,7 +31560,6 @@
     <name>Darkness Elemental</name>
     <picture>Shadow_Elemental_B</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1446134400</hidden_until_time>
     <!-- Thu, 29 Oct 2015 16:00:00 GMT -->
     <attack>6</attack>
     <health>17</health>
@@ -31872,7 +31598,6 @@
     <name>Beetle Tamer</name>
     <picture>Beetle_Frog_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
     <attack>2</attack>
     <health>8</health>
@@ -31902,7 +31627,6 @@
     <name>Beetle Breaker</name>
     <picture>Beetle_Frog_A</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
     <attack>3</attack>
     <health>11</health>
@@ -31934,7 +31658,6 @@
     <name>Beetle Enchanter</name>
     <picture>Beetle_Frog_B</picture>
     <asset_bundle>28</asset_bundle>
-    <hidden_until_time>1445529600</hidden_until_time>
     <!-- Thu, 22 Oct 2015 16:00:00 GMT -->
     <attack>3</attack>
     <health>13</health>
@@ -32094,7 +31817,6 @@
     <name>Woolmane Dragon</name>
     <picture>Wooly_Dragon_A</picture>
     <asset_bundle>33</asset_bundle>
-    <hidden_until_time>1449162000</hidden_until_time>
     <!-- Thu, 03 Dec 2015 17:00:00 GMT -->
     <attack>7</attack>
     <health>15</health>
@@ -32136,7 +31858,6 @@
     <name>Finemane Dragon</name>
     <picture>Wooly_Dragon_A</picture>
     <asset_bundle>33</asset_bundle>
-    <hidden_until_time>1449162000</hidden_until_time>
     <!-- Thu, 03 Dec 2015 17:00:00 GMT -->
     <attack>7</attack>
     <health>19</health>
@@ -32177,7 +31898,6 @@
     <name>Grandmane Dragon</name>
     <picture>Wooly_Dragon_B</picture>
     <asset_bundle>33</asset_bundle>
-    <hidden_until_time>1449162000</hidden_until_time>
     <!-- Thu, 03 Dec 2015 17:00:00 GMT -->
     <attack>8</attack>
     <health>23</health>
@@ -33184,7 +32904,6 @@
     <name>Treebond Skull</name>
     <picture>Treebound_Skeleton_A</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1452790800</hidden_until_time>
     <!-- Thu, 14 Jan 2016 17:00:00 GMT -->
     <attack>5</attack>
     <health>19</health>
@@ -33230,7 +32949,6 @@
     <name>Woodbond Skull</name>
     <picture>Treebound_Skeleton_A</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1452790800</hidden_until_time>
     <!-- Thu, 14 Jan 2016 17:00:00 GMT -->
     <attack>5</attack>
     <health>24</health>
@@ -33274,7 +32992,6 @@
     <name>Copsebond Skull</name>
     <picture>Treebound_Skeleton_B</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1452790800</hidden_until_time>
     <!-- Thu, 14 Jan 2016 17:00:00 GMT -->
     <attack>6</attack>
     <health>29</health>
@@ -33441,7 +33158,6 @@
     <name>Carrion Tiger</name>
     <picture>Undead_Tiger_A</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1454000400</hidden_until_time>
     <!-- Thu, 28 Jan 2016 17:00:00 GMT -->
     <attack>2</attack>
     <health>7</health>
@@ -33477,7 +33193,6 @@
     <name>Carrion Slasher</name>
     <picture>Undead_Tiger_A</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1454000400</hidden_until_time>
     <!-- Thu, 28 Jan 2016 17:00:00 GMT -->
     <attack>2</attack>
     <health>10</health>
@@ -33515,7 +33230,6 @@
     <name>Carrion King</name>
     <picture>Undead_Tiger_B</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1454000400</hidden_until_time>
     <!-- Thu, 28 Jan 2016 17:00:00 GMT -->
     <attack>2</attack>
     <health>13</health>
@@ -33679,7 +33393,6 @@
     <name>Bane</name>
     <picture>Undead_Hornedbeast_A</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1453741200</hidden_until_time>
     <attack>4</attack>
     <health>12</health>
     <cost>2</cost>
@@ -33724,7 +33437,6 @@
     <name>Vicious Bane</name>
     <picture>Undead_Hornedbeast_A</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1453741200</hidden_until_time>
     <attack>5</attack>
     <health>15</health>
     <cost>2</cost>
@@ -33767,7 +33479,6 @@
     <name>Noxious Bane</name>
     <picture>Undead_Hornedbeast_B</picture>
     <asset_bundle>43</asset_bundle>
-    <hidden_until_time>1453741200</hidden_until_time>
     <attack>6</attack>
     <health>18</health>
     <cost>2</cost>
@@ -33924,7 +33635,6 @@
     <name>Winged Giant</name>
     <picture>Gentle_Giant_A</picture>
     <asset_bundle>47</asset_bundle>
-    <hidden_until_time>1456160400</hidden_until_time>
     <!-- Mon, 22 Feb 2016 17:00:00 GMT -->
     <attack>5</attack>
     <health>22</health>
@@ -33967,7 +33677,6 @@
     <name>Winged Brute</name>
     <picture>Gentle_Giant_A</picture>
     <asset_bundle>47</asset_bundle>
-    <hidden_until_time>1456160400</hidden_until_time>
     <!-- Mon, 22 Feb 2016 17:00:00 GMT -->
     <attack>6</attack>
     <health>28</health>
@@ -34017,7 +33726,6 @@
     <name>Winged Colossus</name>
     <picture>Gentle_Giant_B</picture>
     <asset_bundle>47</asset_bundle>
-    <hidden_until_time>1456160400</hidden_until_time>
     <!-- Mon, 22 Feb 2016 17:00:00 GMT -->
     <attack>7</attack>
     <health>34</health>
@@ -34065,7 +33773,6 @@
     <name>Warden of the Leaf</name>
     <picture>Forest_Guardian_A</picture>
     <asset_bundle>47</asset_bundle>
-    <hidden_until_time>1455814800</hidden_until_time>
     <!-- Thu, 18 Feb 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>11</health>
@@ -34106,7 +33813,6 @@
     <name>Warden of the Grove</name>
     <picture>Forest_Guardian_A</picture>
     <asset_bundle>47</asset_bundle>
-    <hidden_until_time>1455814800</hidden_until_time>
     <!-- Thu, 18 Feb 2016 17:00:00 GMT -->
     <attack>5</attack>
     <health>15</health>
@@ -34152,7 +33858,6 @@
     <name>Warden of the Forest</name>
     <picture>Forest_Guardian_B</picture>
     <asset_bundle>47</asset_bundle>
-    <hidden_until_time>1455814800</hidden_until_time>
     <!-- Thu, 18 Feb 2016 17:00:00 GMT -->
     <attack>5</attack>
     <health>18</health>
@@ -34308,7 +34013,6 @@
     <name>Scurvy Hopper</name>
     <picture>Frog_Pirates_A</picture>
     <asset_bundle>47</asset_bundle>
-    <hidden_until_time>1457024400</hidden_until_time>
     <!-- Thu, 03 Mar 2016 17:00:00 GMT -->
     <attack>3</attack>
     <health>6</health>
@@ -34349,7 +34053,6 @@
     <name>Scurvy Jumper</name>
     <picture>Frog_Pirates_A</picture>
     <asset_bundle>47</asset_bundle>
-    <hidden_until_time>1457024400</hidden_until_time>
     <!-- Thu, 03 Mar 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>10</health>
@@ -34393,7 +34096,6 @@
     <name>Scurvy Leaper</name>
     <picture>Frog_Pirates_B</picture>
     <asset_bundle>47</asset_bundle>
-    <hidden_until_time>1457024400</hidden_until_time>
     <!-- Thu, 03 Mar 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>14</health>
@@ -35809,7 +35511,6 @@
     <name>The Thing Below</name>
     <picture>Sea_Leviathan_A</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1464022800</hidden_until_time>
     <!-- Mon, 23 May 2016 17:00:00 GMT -->
     <attack>3</attack>
     <health>12</health>
@@ -35855,7 +35556,6 @@
     <name>The Thing Beneath</name>
     <picture>Sea_Leviathan_A</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1464022800</hidden_until_time>
     <!-- Mon, 23 May 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>15</health>
@@ -35901,7 +35601,6 @@
     <name>The Maelstrom</name>
     <picture>Sea_Leviathan_B</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1464022800</hidden_until_time>
     <!-- Mon, 23 May 2016 17:00:00 GMT -->
     <attack>5</attack>
     <health>19</health>
@@ -36061,7 +35760,6 @@
     <name>Trailblazer</name>
     <picture>Speed_Runner_A</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1463072400</hidden_until_time>
     <!-- Thu, 12 May 2016 17:00:00 GMT -->
     <attack>2</attack>
     <health>7</health>
@@ -36103,7 +35801,6 @@
     <name>Rapid Trailblazer</name>
     <picture>Speed_Runner_A</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1463072400</hidden_until_time>
     <!-- Thu, 12 May 2016 17:00:00 GMT -->
     <attack>3</attack>
     <health>10</health>
@@ -36147,7 +35844,6 @@
     <name>Hasty Trailblazer</name>
     <picture>Speed_Runner_B</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1463072400</hidden_until_time>
     <!-- Thu, 12 May 2016 17:00:00 GMT -->
     <attack>3</attack>
     <health>13</health>
@@ -36190,7 +35886,6 @@
     <name>Bill Crasher</name>
     <picture>Big_Bill_Bird_A</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1463677200</hidden_until_time>
     <!-- Thu, 19 May 2016 17:00:00 GMT -->
     <attack>3</attack>
     <health>8</health>
@@ -36230,7 +35925,6 @@
     <name>Bill Smasher</name>
     <picture>Big_Bill_Bird_A</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1463677200</hidden_until_time>
     <!-- Thu, 19 May 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>11</health>
@@ -36270,7 +35964,6 @@
     <name>Bill Basher</name>
     <picture>Big_Bill_Bird_B</picture>
     <asset_bundle>56</asset_bundle>
-    <hidden_until_time>1463677200</hidden_until_time>
     <!-- Thu, 19 May 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>14</health>
@@ -36436,7 +36129,6 @@
     <name>Knotborn Dragon</name>
     <picture>Wood_Dragon_A</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1465232400</hidden_until_time>
     <!-- Mon, 06 Jun 2016 17:00:00 GMT -->
     <attack>4</attack>
     <health>19</health>
@@ -36482,7 +36174,6 @@
     <name>Knotheir Dragon</name>
     <picture>Wood_Dragon_A</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1465232400</hidden_until_time>
     <!-- Mon, 06 Jun 2016 17:00:00 GMT -->
     <attack>5</attack>
     <health>24</health>
@@ -36531,7 +36222,6 @@
     <name>Knotsage Dragon</name>
     <picture>Wood_Dragon_B</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1465232400</hidden_until_time>
     <!-- Mon, 06 Jun 2016 17:00:00 GMT -->
     <attack>7</attack>
     <health>28</health>
@@ -36579,7 +36269,6 @@
     <name>Shenami</name>
     <picture>Shenami_A</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1464879600</hidden_until_time>
     <!-- Thu, 02 Jun 2016 15:00:00 GMT -->
     <attack>3</attack>
     <health>12</health>
@@ -36622,7 +36311,6 @@
     <name>Shenami the Divine</name>
     <picture>Shenami_A</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1464879600</hidden_until_time>
     <!-- Thu, 02 Jun 2016 15:00:00 GMT -->
     <attack>5</attack>
     <health>15</health>
@@ -36668,7 +36356,6 @@
     <name>Shenami the Eternal</name>
     <picture>Shenami_B</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1464879600</hidden_until_time>
     <!-- Thu, 02 Jun 2016 15:00:00 GMT -->
     <attack>6</attack>
     <health>20</health>
@@ -36711,7 +36398,6 @@
     <name>Thickskin Dragon</name>
     <picture>Frenzied_Rock_Dragon_A</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1465491600</hidden_until_time>
     <!-- Thu, 09 Jun 2016 17:00:00 GMT -->
     <attack>6</attack>
     <health>22</health>
@@ -36754,7 +36440,6 @@
     <name>Stoneskin Dragon</name>
     <picture>Frenzied_Rock_Dragon_A</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1465491600</hidden_until_time>
     <!-- Thu, 09 Jun 2016 17:00:00 GMT -->
     <attack>8</attack>
     <health>27</health>
@@ -36800,7 +36485,6 @@
     <name>Cragskin Dragon</name>
     <picture>Frenzied_Rock_Dragon_B</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1465491600</hidden_until_time>
     <!-- Thu, 09 Jun 2016 17:00:00 GMT -->
     <attack>10</attack>
     <health>32</health>
@@ -36845,7 +36529,6 @@
     <name>Brine Bellower</name>
     <picture>Epic_Water_Steed_Dragon_A</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1466096400</hidden_until_time>
     <attack>4</attack>
     <health>17</health>
     <cost>3</cost>
@@ -36885,7 +36568,6 @@
     <name>Brine Crasher</name>
     <picture>Epic_Water_Steed_Dragon_A</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1466096400</hidden_until_time>
     <attack>5</attack>
     <health>19</health>
     <cost>3</cost>
@@ -36925,7 +36607,6 @@
     <name>Brine Devourer</name>
     <picture>Epic_Water_Steed_Dragon_B</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1466096400</hidden_until_time>
     <attack>6</attack>
     <health>22</health>
     <cost>3</cost>
@@ -36964,7 +36645,6 @@
     <name>Poisac Crawler</name>
     <picture>Poison_Sac_Back_Bug_A</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1466701200</hidden_until_time>
     <attack>4</attack>
     <health>18</health>
     <cost>3</cost>
@@ -37008,7 +36688,6 @@
     <name>Poisac Lurker</name>
     <picture>Poison_Sac_Back_Bug_A</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1466701200</hidden_until_time>
     <attack>5</attack>
     <health>22</health>
     <cost>3</cost>
@@ -37055,7 +36734,6 @@
     <name>Poisac Prime</name>
     <picture>Poison_Sac_Back_Bug_B</picture>
     <asset_bundle>63</asset_bundle>
-    <hidden_until_time>1466701200</hidden_until_time>
     <attack>7</attack>
     <health>25</health>
     <cost>3</cost>
@@ -37101,7 +36779,6 @@
     <name>Willowfly</name>
     <picture>Heal_Wing_Butterfly_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467306000</hidden_until_time>
     <attack>4</attack>
     <health>7</health>
     <cost>1</cost>
@@ -37142,7 +36819,6 @@
     <name>Golden Willowfly</name>
     <picture>Heal_Wing_Butterfly_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467306000</hidden_until_time>
     <attack>5</attack>
     <health>11</health>
     <cost>1</cost>
@@ -37183,7 +36859,6 @@
     <name>Opalescent Willowfly</name>
     <picture>Heal_Wing_Butterfly_B</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467306000</hidden_until_time>
     <attack>6</attack>
     <health>15</health>
     <cost>1</cost>
@@ -37225,7 +36900,6 @@
     <name>Disturbed Swarm</name>
     <picture>Angry_Hive_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467910800</hidden_until_time>
     <attack>1</attack>
     <health>3</health>
     <cost>0</cost>
@@ -37259,7 +36933,6 @@
     <name>Agitated Swarm</name>
     <picture>Angry_Hive_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467910800</hidden_until_time>
     <attack>1</attack>
     <health>6</health>
     <cost>0</cost>
@@ -37295,7 +36968,6 @@
     <name>Furious Swarm</name>
     <picture>Angry_Hive_B</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1467910800</hidden_until_time>
     <attack>1</attack>
     <health>9</health>
     <cost>0</cost>
@@ -37332,7 +37004,6 @@
     <name>Aquine</name>
     <picture>Sea_Horse_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1468515600</hidden_until_time>
     <attack>5</attack>
     <health>8</health>
     <cost>2</cost>
@@ -37372,7 +37043,6 @@
     <name>Understeed</name>
     <picture>Sea_Horse_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1468515600</hidden_until_time>
     <attack>6</attack>
     <health>10</health>
     <cost>2</cost>
@@ -37410,7 +37080,6 @@
     <name>Unicoral</name>
     <picture>Sea_Horse_B</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1468515600</hidden_until_time>
     <attack>7</attack>
     <health>13</health>
     <cost>2</cost>
@@ -37573,7 +37242,6 @@
     <name>Eve Allurephid</name>
     <picture>Leaf_Scorpion_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1468861200</hidden_until_time>
     <attack>3</attack>
     <health>12</health>
     <cost>2</cost>
@@ -37615,7 +37283,6 @@
     <name>Evening Allurephid</name>
     <picture>Leaf_Scorpion_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1468861200</hidden_until_time>
     <attack>4</attack>
     <health>17</health>
     <cost>2</cost>
@@ -37660,7 +37327,6 @@
     <name>Evenfall Allurephid</name>
     <picture>Leaf_Scorpion_B</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1468861200</hidden_until_time>
     <attack>5</attack>
     <health>22</health>
     <cost>2</cost>
@@ -37702,7 +37368,6 @@
     <name>Stoneblade Seraphim</name>
     <picture>Stone_Forger_Angel_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1469120400</hidden_until_time>
     <attack>4</attack>
     <health>11</health>
     <cost>2</cost>
@@ -37746,7 +37411,6 @@
     <name>Stoneblade Defender</name>
     <picture>Stone_Forger_Angel_A</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1469120400</hidden_until_time>
     <attack>5</attack>
     <health>16</health>
     <cost>2</cost>
@@ -37789,7 +37453,6 @@
     <name>Stoneblade Archangel</name>
     <picture>Stone_Forger_Angel_B</picture>
     <asset_bundle>65</asset_bundle>
-    <hidden_until_time>1469120400</hidden_until_time>
     <attack>6</attack>
     <health>21</health>
     <cost>2</cost>
@@ -37832,7 +37495,6 @@
     <name>Laughing Menace</name>
     <picture>Flying_Hyena_Pack_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1469725200</hidden_until_time>
     <attack>5</attack>
     <health>8</health>
     <cost>2</cost>
@@ -37870,7 +37532,6 @@
     <name>Cackling Menace</name>
     <picture>Flying_Hyena_Pack_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1469725200</hidden_until_time>
     <attack>7</attack>
     <health>11</health>
     <cost>2</cost>
@@ -37910,7 +37571,6 @@
     <name>Howling Menace</name>
     <picture>Flying_Hyena_Pack_B</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1469725200</hidden_until_time>
     <attack>9</attack>
     <health>13</health>
     <cost>2</cost>
@@ -37949,7 +37609,6 @@
     <name>Gorilleus</name>
     <picture>Guardian_Angel_Gorilla_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1470330000</hidden_until_time>
     <attack>5</attack>
     <health>17</health>
     <cost>3</cost>
@@ -37991,7 +37650,6 @@
     <name>King Gorilleus</name>
     <picture>Guardian_Angel_Gorilla_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1470330000</hidden_until_time>
     <attack>6</attack>
     <health>22</health>
     <cost>3</cost>
@@ -38039,7 +37697,6 @@
     <name>Emperor Gorilleus</name>
     <picture>Guardian_Angel_Gorilla_B</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1470330000</hidden_until_time>
     <attack>8</attack>
     <health>26</health>
     <cost>3</cost>
@@ -38083,7 +37740,6 @@
     <name>Murabi</name>
     <picture>King_Lion_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1470934800</hidden_until_time>
     <attack>2</attack>
     <health>14</health>
     <cost>2</cost>
@@ -38124,7 +37780,6 @@
     <name>Reign of Murabi</name>
     <picture>King_Lion_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1470934800</hidden_until_time>
     <attack>2</attack>
     <health>18</health>
     <cost>2</cost>
@@ -38167,7 +37822,6 @@
     <name>Pride of Murabi</name>
     <picture>King_Lion_B</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1470934800</hidden_until_time>
     <attack>2</attack>
     <health>22</health>
     <cost>2</cost>
@@ -38211,7 +37865,6 @@
     <name>Heralded Slugger</name>
     <picture>Skyhaven_Traitor_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1471539600</hidden_until_time>
     <attack>3</attack>
     <health>6</health>
     <cost>1</cost>
@@ -38249,7 +37902,6 @@
     <name>Heralded Slicer</name>
     <picture>Skyhaven_Traitor_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1471539600</hidden_until_time>
     <attack>4</attack>
     <health>10</health>
     <cost>1</cost>
@@ -38290,7 +37942,6 @@
     <name>Heralded Ripper</name>
     <picture>Skyhaven_Traitor_B</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1471539600</hidden_until_time>
     <attack>5</attack>
     <health>14</health>
     <cost>1</cost>
@@ -38330,7 +37981,6 @@
     <name>Sijou</name>
     <picture>Leaf_Skin_Fox_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1470070800</hidden_until_time>
     <attack>4</attack>
     <health>9</health>
     <cost>1</cost>
@@ -38374,7 +38024,6 @@
     <name>Sijou, Earth's Spirit</name>
     <picture>Leaf_Skin_Fox_A</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1470070800</hidden_until_time>
     <attack>6</attack>
     <health>12</health>
     <cost>1</cost>
@@ -38417,7 +38066,6 @@
     <name>Sijou, Sun Embraced</name>
     <picture>Leaf_Skin_Fox_B</picture>
     <asset_bundle>68</asset_bundle>
-    <hidden_until_time>1470070800</hidden_until_time>
     <attack>6</attack>
     <health>16</health>
     <cost>1</cost>
@@ -38461,7 +38109,6 @@
     <name>Diamode</name>
     <picture>Geode_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1472058000</hidden_until_time>
     <attack>3</attack>
     <health>11</health>
     <cost>2</cost>
@@ -38502,7 +38149,6 @@
     <name>Diamode Crystalizer</name>
     <picture>Geode_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1472058000</hidden_until_time>
     <attack>4</attack>
     <health>14</health>
     <cost>2</cost>
@@ -38544,7 +38190,6 @@
     <name>Diamode Illuminated</name>
     <picture>Geode_Elemental_B</picture>
     <asset_bundle>70</asset_bundle>
-    <hidden_until_time>1472058000</hidden_until_time>
     <attack>5</attack>
     <health>18</health>
     <cost>2</cost>
@@ -38576,6 +38221,136 @@
       <skill id="armored" x="3" />
       <skill id="protect" x="6" y="5" />
       <skill id="jam" c="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7079</id>
+    <card_type>2</card_type>
+    <name>Carina</name>
+    <picture>Star_Elemental_A</picture>
+    <asset_bundle>70</asset_bundle>
+    <attack>3</attack>
+    <health>14</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="4" />
+    <skill id="heal" x="1" all="1" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>4</attack>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="1" />
+      <skill id="valor" x="4" />
+      <skill id="heal" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="1" />
+      <skill id="valor" x="5" />
+      <skill id="heal" x="1" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17079</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Nebula Carina</name>
+    <picture>Star_Elemental_A</picture>
+    <asset_bundle>70</asset_bundle>
+    <attack>5</attack>
+    <health>18</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="valor" x="5" />
+    <skill id="heal" x="1" all="1" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="1" />
+      <skill id="valor" x="6" />
+      <skill id="heal" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="2" />
+      <skill id="valor" x="6" />
+      <skill id="heal" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>5</attack>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="2" />
+      <skill id="valor" x="6" />
+      <skill id="heal" x="2" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27079</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Supernova Carina</name>
+    <picture>Star_Elemental_B</picture>
+    <asset_bundle>70</asset_bundle>
+    <attack>5</attack>
+    <health>21</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="valor" x="6" />
+    <skill id="heal" x="2" all="1" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="2" />
+      <skill id="valor" x="7" />
+      <skill id="heal" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="2" />
+      <skill id="valor" x="8" />
+      <skill id="heal" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="2" />
+      <skill id="valor" x="8" />
+      <skill id="heal" x="3" all="1" />
     </upgrade>
   </unit>
   <!-- END SET 3000 - Premium -->
