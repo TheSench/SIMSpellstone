@@ -177,7 +177,7 @@ var CARD_GUI = {};
     }
 
     function createItemHTML(name, quantity, image) {
-        var htmlCard = createDiv("card");
+        var htmlCard = createDiv("card item");
 
         var background = document.createElement("i");
         background.className = 'sprite sprite-Item';

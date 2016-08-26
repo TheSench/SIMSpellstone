@@ -187,11 +187,19 @@ img[src='Error.src'] {
     width: initial;
 }
 
+.item.card .multiplier {
+    top: 82%;
+}
+
 .card img.multiplier {
     width: 30px;
     height: 18px;
     right: -2px;
     top: 48%;
+}
+
+.item.card img.multiplier {
+    top: 80%;
 }
 
 .card-attack {
