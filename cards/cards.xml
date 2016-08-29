@@ -38227,7 +38227,7 @@
     <id>7079</id>
     <card_type>2</card_type>
     <name>Carina</name>
-    <picture>Star_Elemental_A</picture>
+    <picture>Star_Elemental_Beast_A</picture>
     <asset_bundle>70</asset_bundle>
     <attack>3</attack>
     <health>14</health>
@@ -38269,7 +38269,7 @@
     <card_type>2</card_type>
     <fusion_level>1</fusion_level>
     <name>Nebula Carina</name>
-    <picture>Star_Elemental_A</picture>
+    <picture>Star_Elemental_Beast_A</picture>
     <asset_bundle>70</asset_bundle>
     <attack>5</attack>
     <health>18</health>
@@ -38314,7 +38314,7 @@
     <card_type>2</card_type>
     <fusion_level>2</fusion_level>
     <name>Supernova Carina</name>
-    <picture>Star_Elemental_B</picture>
+    <picture>Star_Elemental_Beast_B</picture>
     <asset_bundle>70</asset_bundle>
     <attack>5</attack>
     <health>21</health>

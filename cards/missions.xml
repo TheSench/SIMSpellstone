@@ -97,6 +97,11 @@
     <mission_req>11</mission_req>
     <!-- 11 -->
   </feature_lock>
+  <feature_lock>
+    <id>dailybonus</id>
+    <mission_req>-1</mission_req>
+    <!-- 21 -->
+  </feature_lock>
   <!-- MISSIONS BEGIN -->
   <!-- Elaria Missions BEGIN -->
   <mission>
