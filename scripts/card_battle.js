@@ -196,8 +196,6 @@ var SIM_CONTROLLER;
 
         // Hide stop button
         document.getElementById('stop').style.display = 'none';
-
-        scroll_to_end();
     }
 
     function run_sims() {

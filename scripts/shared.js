@@ -959,7 +959,7 @@ function copy_skill(original_skill) {
 // Dump deck contents
 function debug_dump_decks() {
     //	if (!debug) return;
-
+    /*
     echo += '<br><hr><br>';
     echo += '<b>Deck Hash:</b>';
     echo += '<br>';
@@ -973,6 +973,9 @@ function debug_dump_decks() {
     echo += generate_card_list(cache_player_deck);
     echo += '" onclick="this.select()" size="100">';
     echo += '<br><br>';
+    */
+    echo += '<br>';
+    echo += '<h1>Attacker</h1>';
     var current_card = get_card_by_id(cache_player_deck.commander, true);
     current_card.owner = 'player';
     current_card.health_left = current_card.health;
@@ -986,7 +989,8 @@ function debug_dump_decks() {
     }
 
     echo += '<br>';
-    echo += '<br>';
+    echo += '<h1>Defender</h1>';
+    /*
     echo += '<i>Deck Hash:</i>';
     echo += '<br>';
     echo += '<input type="text" value="';
@@ -1001,6 +1005,7 @@ function debug_dump_decks() {
     echo += '<br>';
     echo += '<u>Please note that Raid and Quest simulations randomize the enemy deck for each battle. Only one example enemy deck hash is generated.</u><br>';
     echo += '<br>';
+    */
     var current_card = get_card_by_id(debug_cpu_deck.commander, true);
     current_card.owner = 'cpu';
     current_card.health_left = current_card.health;

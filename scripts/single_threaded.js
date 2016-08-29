@@ -195,10 +195,6 @@ var SIM_CONTROLLER;
 
         // Hide stop button
         document.getElementById('stop').style.display = 'none';
-
-        if (SIMULATOR.user_controlled) {
-            scroll_to_end();
-        }
     }
 
     function run_sims() {
@@ -268,7 +264,6 @@ var SIM_CONTROLLER;
             // Hide stop button
             document.getElementById('stop').style.display = 'none';
 
-            scroll_to_end();
             if (SIM_CONTROLLER.end_sims_callback) SIM_CONTROLLER.end_sims_callback();
         }
     }
