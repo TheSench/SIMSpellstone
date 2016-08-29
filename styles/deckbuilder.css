@@ -470,3 +470,9 @@ fieldset {
 #cardSpace {
     margin-bottom: 50px;
 }
+
+.ui-autocomplete {
+    max-width: 300px;
+    max-height: 150px;
+    overflow-y: auto;
+}
