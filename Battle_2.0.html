@@ -66,20 +66,6 @@
     <div id="ui" ng-controller="SimulatorCtrl" ng-init="campaignSections()">
         <form>
             <hr />
-            <div class="section accordion start-open">
-                <h2>Attacker</h2>
-                <div>
-                    <div id="attack_deck" class="float-left"></div>
-                </div>
-            </div>
-            <hr>
-            <div class="section accordion start-open">
-                <h2>Defender</h2>
-                <div>
-                    <div id="defend_deck" class="float-left"></div>
-                </div>
-            </div>
-            <hr>
             <div class="section accordion">
                 <h2>Setup</h2>
                 <div>
@@ -162,7 +148,7 @@
                     </div>
                 </div>
             </div>
-            <hr>
+            <hr />
             <div class="section accordion">
                 <h2>Debug Settings</h2>
                 <div>
@@ -171,7 +157,26 @@
                     </div>
                 </div>
             </div>
-            <hr>
+            <hr />
+            <div class="section accordion start-open">
+                <h2>View Decks</h2>
+                <div class="tableRow">
+                    <div class="deckView">
+                        <h3>Attacker</h3>
+                        <div>
+                            <div id="attack_deck" class="float-left"></div>
+                        </div>
+                    </div>
+                    <div class="deckSpacer"></div>
+                    <div class="deckView">
+                        <h3>Defender</h3>
+                        <div>
+                            <div id="defend_deck" class="float-left"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr />
             <input id="btn_simulate" type="button" value="Battle!" style="text-align: center; font-weight: bold;">
             <input type="button" id="generate_link" value="Generate Link" style="text-align: center; font-weight: normal;">
         </form>

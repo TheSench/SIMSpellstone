@@ -58,6 +58,7 @@ div.section {
   border: 2px solid #1d1d1d;
   border-radius: 10px 10px 0 0;
   padding-bottom: 2px;
+  max-width: 555px;
 }
 
 div.section h1, div.section h2, div.section h3, div.section h4, div.section h5, div.section h6 {
@@ -297,6 +298,24 @@ h2 .ui-icon {
 
 .card {
   border-color: #1d1d1d;
+}
+
+.tableRow {
+  display: table-row;
+}
+
+.deckView {
+  zoom: .75;
+  min-width: 365px;
+  max-width: 365px;
+  display: table-cell;
+  vertical-align: top;
+  border: 1px solid black;
+}
+
+.deckSpacer {
+  min-width: 5px;
+  display: table-cell;
 }
 
 /*# sourceMappingURL=light.css.map */
