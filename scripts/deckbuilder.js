@@ -52,6 +52,8 @@ var $cardSpace;
 
 var initDeckBuilder = function ()
 {
+    $("#header").load("templates/header.html");
+
     setupPopups();
     adjustHeight();
 

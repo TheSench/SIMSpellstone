@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title id="title_tag">SimSpellstone - The Spellstone Simulator that runs from your browser!</title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="styles/sass/header.css">
     <link rel="stylesheet" type="text/css" href="styles/card.css">
     <link rel="stylesheet" type="text/css" href="styles/spritesheet.css">
     <link rel="stylesheet" href="Content/themes/base/smoothness.css">
@@ -73,10 +74,9 @@
 
 </head>
 <body>
+    <header id="header"></header>
     <input type="button" onclick="toggle_u()" value="Toggle Gray Text" />
     <br>
-    <h1 id="version_label">SimSpellstone</h1>
-    <h4 id="version_label2"></h4>
     <div id="remaining" style="display:none"></div>
     <br>
     <div id="ui" ng-controller="SimulatorCtrl" ng-init="titans();">

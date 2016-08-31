@@ -79,6 +79,9 @@ body {
 
 
 .accordion {
+    display: table;
+    width:100%;
+
     .ui-accordion-header {
         position: relative;
     }
@@ -319,12 +322,21 @@ h2 .ui-icon {
     display: table-row;
 }
 
-.deckView {
-    zoom: .75;
-    max-width: 365px;
+.cell {
     display: table-cell;
     vertical-align: top;
     border: 1px solid black;
+}
+
+.pane {
+    @extend .cell;
+    width: 49%;
+}
+
+.deckView {
+    @extend .cell;
+    max-width: 365px;
+    zoom: .75;
 }
 
 .deckSpacer {

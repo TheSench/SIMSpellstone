@@ -49,6 +49,8 @@ window.onerror = function (message, url, linenumber) {
 // When Page Loads...
 $(function () {
 
+    $("#header").load("templates/header.html");
+
     var ui = document.getElementById('ui');
     if (!ui) return 0;
 
@@ -144,35 +146,7 @@ $(function () {
     if(campaignID) $('#campaign').val(campaignID).change();
     if (missionID) $('#mission').val(missionID).change();
     if (raidID) $('#raid').val(raidID).change();
-    /*
-    var dropdown = document.getElementById('campaign');
-    if (dropdown) {
-        if (campaignID) {
-            uiScope.selections.campaign = _GET('campaign');
-        } else if (missionID) {
-            for (var id in CAMPAIGNS) {
-                if (CAMPAIGNS[id].missions.includes(missionID)) {
-                    uiScope.selections.campaign = id;
-                }
-            }
-        }
-    }
 
-    var dropdown = document.getElementById('mission');
-    if (dropdown) {
-        if (missionID) {
-            uiScope.selections.mission = missionID;
-        }
-    }
-
-    var dropdown = document.getElementById('raid');
-    if (dropdown) {
-        if (raidID && !(campaignID || missionID)) {
-            uiScope.selections.raid = raidID;
-        }
-    }
-    uiScope.$apply();
-    */
     if (_DEFINED('battleground')) {
         var bgIndexes = _GET('battleground');
         var bgCheckBoxes = document.getElementsByName("battleground");
@@ -241,9 +215,6 @@ $(function () {
     }
 
     document.title = "SimSpellstone " + text_version + " - The Spellstone Simulator that runs from your browser!";
-
-    var version_label = document.getElementById('version_label');
-    version_label.innerHTML += " " + text_version;
 
     if (_DEFINED('autostart')) {
         SIM_CONTROLLER.startsim(1);
