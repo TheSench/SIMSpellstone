@@ -562,6 +562,19 @@ var BATTLEGROUNDS = {
       },
     ]
   },
+  "511": {
+    "name": "Runic Sanctuary",
+    "id": "511",
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "enhance",
+        "mult": 0.5,
+        "s": "barrier",
+        "all": "1",
+      },
+    ]
+  },
   "10001": {
     "name": "Personal Frog Buff",
     "id": "10001",

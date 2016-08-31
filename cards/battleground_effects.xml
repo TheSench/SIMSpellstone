@@ -403,6 +403,16 @@
       <skill id="rally" x=".6" all="1" />
     </effect>
   </battleground>
+  <battleground>
+    <id>511</id>
+    <name>Runic Sanctuary</name>
+    <desc>Barrier and Barrier All skills are 50% more effective.</desc>
+    <icon>thunderbolt_64</icon>
+    <icon_bundle>31</icon_bundle>
+    <effect>
+      <skill id="enhance" s="barrier" mult="0.5" all="1" />
+    </effect>
+  </battleground>
   <!-- 1001+: Personal BGE -->
   <battleground>
     <id>10001</id>
