@@ -3,9 +3,8 @@
  * http://tallys.github.io/color-theory/?imm_mid=0e31ae&cmp=em-web-na-na-newsltr_20160427
  */
 body {
-  margin: 0;
-  padding: 0;
-}
+  margin: 5px;
+  padding: 0; }
 
 #header {
   background-color: gray;
@@ -13,50 +12,30 @@ body {
   font-family: Arial, sans-serif;
   font-size: 1em;
   display: table;
-  width: 100%;
-}
-
-#header nav {
-  display: table-row;
-}
-
-#header ul {
-  padding: 0 20px;
-}
-
-#header input {
-  background-color: gray;
-}
-
-#header li {
-  display: table-cell;
-  white-space: nowrap;
-  margin: 0 15px;
-  padding-right: 20px
-}
-
-#header li.fill {
-  width: 100%;
-}
-
-#header li.li-header {
-  padding-right: 20px;
-}
-
-#header h1, #header li, #header a {
-  color: #1d1d1d;
-}
-
-#header nav a {
-  /*
+  width: 100%; }
+  #header nav {
+    display: table-row; }
+  #header ul {
+    padding: 0 10px; }
+  #header input {
+    background-color: gray; }
+  #header li {
+    display: table-cell;
+    white-space: nowrap;
+    margin: 0 15px; }
+    #header li.fill {
+      width: 100%; }
+    #header li.li-header {
+      padding-right: 20px; }
+  #header h1, #header li, #header a {
+    color: #1d1d1d; }
+  #header nav a {
+    /*
         text-align: right;
         font-weight: 400;
         letter-spacing: 0;
         vertical-align: middle;
         */
-  padding: 5px 5px;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/*# sourceMappingURL=header.css.map */
+    padding: 5px 5px;
+    text-decoration: none;
+    cursor: pointer; }
