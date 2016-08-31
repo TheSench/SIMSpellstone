@@ -21,7 +21,7 @@ body {
 }
 
 #header ul {
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 #header input {
@@ -32,6 +32,7 @@ body {
   display: table-cell;
   white-space: nowrap;
   margin: 0 15px;
+  padding-right: 20px
 }
 
 #header li.fill {
