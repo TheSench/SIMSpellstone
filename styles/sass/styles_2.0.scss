@@ -80,7 +80,7 @@ body {
 
 .accordion {
     display: table;
-    width:100%;
+    width: 100%;
 
     .ui-accordion-header {
         position: relative;
@@ -341,4 +341,8 @@ h2 .ui-icon {
 .deckSpacer {
     min-width: 5px;
     display: table-cell;
+}
+
+tbody tr:nth-child(2n) {
+    background-color: $secondary-tint;
 }
