@@ -202,6 +202,7 @@ function showUI() {
 }
 
 function hideUI() {
+    $(".accordion").accordion('option', 'active', null);
     // Hide interface
     toggleUI(false);
     // Display stop button
