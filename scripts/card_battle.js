@@ -9,11 +9,6 @@ var SIM_CONTROLLER;
     SIM_CONTROLLER.startsim = function (autostart) {
         toggleUI(false);
 
-        if (_DEFINED('autolink') && !autostart) {
-            window.location.href = generate_link(1, 1);
-            return false;
-        }
-
         CARD_GUI.clearCardSpace();
         card_cache = {};
 

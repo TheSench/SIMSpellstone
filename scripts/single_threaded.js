@@ -1,19 +1,9 @@
 "use strict";
 
-var SIM_CONTROLLER;
-
 (function () {
-    SIM_CONTROLLER = {};
 
     // Initialize simulation loop - runs once per simulation session
-    SIM_CONTROLLER.startsim = function (autostart) {
-        orders = {};
-
-        if (_DEFINED('autolink') && !autostart) {
-            window.location.href = generate_link(1, 1);
-            return false;
-        }
-
+    SIM_CONTROLLER.startsim = function () {
         card_cache = {};    // clear card cache to avoid memory bloat when simulating different decks
         total_turns = 0;
         time_start = new Date();
@@ -45,84 +35,22 @@ var SIM_CONTROLLER;
         getraid = $('#raid').val();
         raidlevel = $('#raid_level').val();
         getsiege = $('#siege').is(':checked');
+        surge = $('#surge').is(':checked');
         tower_level = $('#tower_level').val();
         tower_type = $('#tower_type').val();
-        if (getmission) {
-            getdeck2 = TITANS[getmission].hash;
-        } else if (getraid) {
-            getdeck2 = hash_encode(load_deck_raid(getraid, raidlevel));
+        if (!getdeck2) {
+            if (getmission) {
+                getdeck2 = TITANS[getmission].hash;
+            } else if (getraid) {
+                getdeck2 = hash_encode(load_deck_raid(getraid, raidlevel));
+            }
         }
         if (BATTLEGROUNDS) {
-            getbattleground = [];
-            var bgCheckBoxes = document.getElementsByName("battleground");
-            for (var i = 0; i < bgCheckBoxes.length; i++) {
-                var checkbox = bgCheckBoxes[i];
-                if (checkbox && checkbox.checked) {
-                    getbattleground.push(checkbox.value);
-                }
-            }
-            getbattleground = getbattleground.join();
+            getbattleground = getSelectedBattlegrounds();
         }
 
         // Set up battleground effects, if any
-        var battlegrounds = {
-            onCreate: [],
-            onTurn: [],
-        };
-        if (getbattleground) {
-            var selected = getbattleground.split(",");
-            for (i = 0; i < selected.length; i++) {
-                var id = selected[i];
-                var battleground = BATTLEGROUNDS[id];
-                for (var j = 0; j < battleground.effect.length; j++) {
-                    var effect = battleground.effect[j];
-                    var effect_type = effect.effect_type;
-                    if (effect_type === "skill") {
-                        battlegrounds.onTurn.push(MakeBattleground(battleground.name, effect));
-                    } else if (effect_type === "evolve_skill" || effect_type === "add_skill") {
-                        battlegrounds.onCreate.push(MakeSkillModifier(battleground.name, effect));
-                    }
-                }
-            }
-        }
-        if (getraid) {
-            var bge_id = RAIDS[getraid].bge;
-            if (bge_id) {
-                var battleground;
-                for (var i = 0; i < BATTLEGROUNDS.length; i++) {
-                    var battleground = BATTLEGROUNDS[i];
-                    if (battleground.id == bge_id) {
-                        break;
-                    } else {
-                        battleground = null;
-                    }
-                }
-                if (battleground && raidlevel >= battleground.starting_level) {
-                    var enemy_only = battleground.enemy_only;
-
-                    for (var j = 0; j < battleground.effect.length; j++) {
-                        var effect = battleground.effect[j];
-                        var effect_type = effect.effect_type;
-                        if (effect_type === "skill") {
-                            if (battleground.scale_with_level) {
-                                var mult = battleground.scale_with_level * (raidlevel - battleground.starting_level + 1);
-                            } else {
-                                var mult = 1;
-                            }
-                            var bge = MakeBattleground(battleground.name, effect, mult);
-                            bge.enemy_only = enemy_only;
-                            battlegrounds.onTurn.push(bge);
-                        } else if (effect_type === "evolve_skill" || effect_type === "add_skill") {
-                            var bge = MakeSkillModifier(battleground.name, effect);
-                            bge.enemy_only = enemy_only;
-                            battlegrounds.onCreate.push(bge);
-                        }
-                    }
-                }
-            }
-        }
-
-        SIMULATOR.battlegrounds = battlegrounds;
+        SIMULATOR.battlegrounds = getBattlegrounds(getbattleground, getraid);
 
         // Hide interface
         toggleUI(false);
@@ -150,51 +78,21 @@ var SIM_CONTROLLER;
         time_stop = new Date();
         var elapse = time_elapsed();
         var simpersec = games / elapse;
-        simpersec = simpersec.toFixed(1);
+        simpersec = simpersec.toFixed(2);
 
         // Stop the recursion
         if (current_timeout) clearTimeout(current_timeout);
 
         setSimStatus("Simulations interrupted.", elapse, simpersec);
-        gettable();
-        // Show interface
-        toggleUI(true);
-
-        // Hide stop button
-        document.getElementById('stop').style.display = 'none';
-
-        if(SIM_CONTROLLER.stop_sims_callback) SIM_CONTROLLER.stop_sims_callback()
-    }
-
-    // Loops through all simulations
-    // - keeps track of number of simulations and outputs status
-    function debug_end() {
-        if (SIMULATOR.simulating) {
-            return;
-        }
-
-        var result = processSimResult();
-
-        time_stop = new Date();
-
-        var msg;
-        if (result == 'draw') {
-            msg = '<br><h1>DRAW</h1><br>';
-        } else if (result) {
-            msg = '<br><h1>WIN</h1><br>';
-        } else {
-            msg = '<br><h1>LOSS</h1><br>';
-        }
-        if (echo) {
-            outp(echo);
-        }
-        setSimStatus(msg);
+        showWinrate();
 
         // Show interface
         toggleUI(true);
 
         // Hide stop button
         document.getElementById('stop').style.display = 'none';
+
+        if (SIM_CONTROLLER.stop_sims_callback) SIM_CONTROLLER.stop_sims_callback()
     }
 
     function run_sims() {
@@ -212,7 +110,7 @@ var SIM_CONTROLLER;
                 if (run_sims_batch > 0) { // Use run_sims_batch == 0 to imply a fresh set of simulations
                     run_sims_count = 0;
                     var temp = games / (games + sims_left) * 100;
-                    temp = temp.toFixed(1);
+                    temp = temp.toFixed(2);
 
                     var elapse = time_elapsed();
 
@@ -224,7 +122,7 @@ var SIM_CONTROLLER;
                     }
 
                     setSimStatus("Running simulations...", elapse, simpersecbatch.toFixed(1));
-                    gettable();
+                    showWinrate();
                 }
                 run_sims_batch = 1;
                 if (simpersecbatch > run_sims_batch) // If we can run more at one time, then let's try to
@@ -250,13 +148,13 @@ var SIM_CONTROLLER;
 
             var elapse = time_elapsed();
             var simpersec = games / elapse;
-            simpersec = simpersec.toFixed(1);
-
+            simpersec = simpersec.toFixed(2);
+            
             if (echo) {
                 outp(echo);
             }
             setSimStatus("Simulations complete.", elapse, simpersec);
-            gettable();
+            showWinrate();
 
             // Show interface
             toggleUI(true);
@@ -408,7 +306,4 @@ var SIM_CONTROLLER;
     // Global variables used by single-threaded simulator
     var run_sims_count = 0;
     var run_sims_batch = 0;
-    SIM_CONTROLLER.end_sims_callback = false;
-    SIM_CONTROLLER.stop_sims_callback = false;
-    SIM_CONTROLLER.debug_end = debug_end;
 })();

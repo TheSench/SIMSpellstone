@@ -51,20 +51,9 @@
     -->
     <script id="simulator_base" type="text/javascript" src="scripts/simulator_base.js"></script>
 
-    <!-- The following two scripts are the functions/variables needed by the main
-    thread for the two types of simulators.  The following functions must be
-    defined in each of these:
-    * startsim(autostart)
-    * stopsim()
-    * run_sim()
-    -->
-    <!-- For the single-threaded simulator, the simulator_base script is loaded
-    into the GUI script.  In addition, the following functions are also defined
-    here so that the GUI thread can run simulations:
-    * run_sims()
-    -->
-    <script id="single_threaded_simulator" type="text/javascript" src="scripts/single_threaded.js"></script>
-
+    <script src="scripts/sim_controller.js"></script>
+    <script src="scripts/determine.js"></script>
+    
     <!-- This script handles the base GUI functionality (getting user input and displaying simulation). -->
     <script id="gui_script_2.0" type="text/javascript" src="scripts/gui_script_2.0.js"></script>
     <script id="gui_script" type="text/javascript" src="scripts/gui_script.js"></script>
@@ -203,7 +192,6 @@
                             <div id="attack_deck" class="float-left"></div>
                         </div>
                     </div>
-                    <div class="deckSpacer"></div>
                     <div class="deckView">
                         <h3>Defender</h3>
                         <div>
@@ -213,7 +201,7 @@
                 </div>
             </div>
             <hr />
-            <label for="sims">Number of Simulations: </label><input type="text" id="sims" value="10000" size="10"><br>
+            <label for="sims">Number of Simulations: </label><input type="text" id="sims"><br>
             <input id="btn_simulate" type="button" value="Simulate" style="text-align: center; font-weight: bold;">
             <input type="button" id="generate_link" value="Generate Link" style="text-align: center; font-weight: normal;">
         </form>
