@@ -2,17 +2,50 @@
 
 var SIM_CONTROLLER = (function () {
 
+    function getConfiguration() {
+        sims_left = $('#sims').val() || 1;
+
+        debug = $('#debug').is(':checked');
+        mass_debug = $('#mass_debug').is(':checked');
+        loss_debug = $('#loss_debug').is(':checked');
+        win_debug = $('#win_debug').is(':checked');
+
+        auto_mode = $('#auto_mode').is(':checked');
+        getdeck = $('#deck1').val();
+        getordered = $('#ordered').is(':checked');
+        getexactorder = $('#exactorder').is(':checked');
+        getordered2 = $('#ordered2').is(':checked');
+        getexactorder2 = $('#exactorder2').is(':checked');
+        getdeck2 = $('#deck2').val();
+        getordered2 = $('#ordered2').is(':checked');
+        getexactorder2 = $('#exactorder2').is(':checked');
+        getmission = $('#mission').val();
+        getraid = $('#raid').val();
+        raidlevel = $('#raid_level').val();
+        getsiege = $('#siege').is(':checked');
+        surge = $('#surge').is(':checked');
+        tower_level = $('#tower_level').val();
+        tower_type = $('#tower_type').val();
+        if (!getdeck2) {
+            if (getmission) {
+                getdeck2 = MISSIONS[getmission].hash;
+            } else if (getraid) {
+                getdeck2 = hash_encode(load_deck_raid(getraid, raidlevel));
+            }
+        }
+        if (BATTLEGROUNDS) {
+            getbattleground = getSelectedBattlegrounds();
+        }
+    }
+
     // Loops through all simulations
     // - keeps track of number of simulations and outputs status
-    function debug_end() {
-        if (SIMULATOR.simulating) {
-            return;
-        }
+    function debug_end(result) {
+
+        var result = SIM_CONTROLLER.processSimResult();
 
         sims_left = 0;
         time_stop = new Date();
-
-        var result = processSimResult();
 
         var msg;
         if (result == 'draw') {
@@ -27,25 +60,13 @@ var SIM_CONTROLLER = (function () {
         }
         setSimStatus(msg);
 
-        draw_match_end();
+        showUI();
 
         if (SIM_CONTROLLER.end_sims_callback) SIM_CONTROLLER.end_sims_callback();
     }
 
-    function draw_match_end() {
-
-        if (SIMULATOR.user_controlled) {
-            CARD_GUI.draw_cards(SIMULATOR.field);   // Draw battlefield with no hand
-        }
-
-        // Show interface
-        toggleUI(true);
-
-        // Hide stop button
-        document.getElementById('stop').style.display = 'none';
-    }
-
     return {
+        getConfiguration: getConfiguration,
         debug_end: debug_end,
 
         end_sims_callback: null,

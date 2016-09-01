@@ -6,57 +6,18 @@
     SIM_CONTROLLER.startsim = function () {
         card_cache = {};    // clear card cache to avoid memory bloat when simulating different decks
         total_turns = 0;
-        time_start = new Date();
+        time_start = Date.now();
         time_stop = 0;
         echo = '';
         games = 0;
         run_sims_batch = 0;
-        sims_left = $('#sims').val() || 1;
 
-        SIMULATOR.user_controlled = $('#user_controlled').is(':checked');
-
-        debug = $('#debug').is(':checked');
-        mass_debug = $('#mass_debug').is(':checked');
-        loss_debug = $('#loss_debug').is(':checked');
-        win_debug = $('#win_debug').is(':checked');
-
-        auto_mode = $('#auto_mode').is(':checked');
-        getdeck = $('#deck').val();
-        getcardlist = $('#cardlist').val();
-        getordered = $('#ordered').is(':checked');
-        getexactorder = $('#exactorder').is(':checked');
-        getordered2 = $('#ordered2').is(':checked');
-        getexactorder2 = $('#exactorder2').is(':checked');
-        getdeck2 = $('#deck2').val();
-        getcardlist2 = $('#cardlist2').val();
-        getordered2 = $('#ordered2').is(':checked');
-        getexactorder2 = $('#exactorder2').is(':checked');
-        getmission = $('#mission').val();
-        getraid = $('#raid').val();
-        raidlevel = $('#raid_level').val();
-        getsiege = $('#siege').is(':checked');
-        surge = $('#surge').is(':checked');
-        tower_level = $('#tower_level').val();
-        tower_type = $('#tower_type').val();
-        if (!getdeck2) {
-            if (getmission) {
-                getdeck2 = TITANS[getmission].hash;
-            } else if (getraid) {
-                getdeck2 = hash_encode(load_deck_raid(getraid, raidlevel));
-            }
-        }
-        if (BATTLEGROUNDS) {
-            getbattleground = getSelectedBattlegrounds();
-        }
+        SIM_CONTROLLER.getConfiguration();
 
         // Set up battleground effects, if any
         SIMULATOR.battlegrounds = getBattlegrounds(getbattleground, getraid);
 
-        // Hide interface
-        toggleUI(false);
-
-        // Display stop button
-        document.getElementById('stop').style.display = 'block';
+        hideUI();
 
         SIMULATOR.setupDecks();
 
@@ -65,10 +26,14 @@
         draws = 0;
 
         outp(""); // Clear display
-        hideTable();
-        setSimStatus("Initializing simulations...");
+        if (!SIMULATOR.user_controlled) {
+            hideTable();
+            setSimStatus("Initializing simulations...");
+        } else {
+            setSimStatus("");
+        }
 
-        current_timeout = setTimeout(run_sims, 1);
+        current_timeout = setTimeout(run_sims);
 
         return false;
     }
@@ -82,15 +47,11 @@
 
         // Stop the recursion
         if (current_timeout) clearTimeout(current_timeout);
-
-        setSimStatus("Simulations interrupted.", elapse, simpersec);
-        showWinrate();
-
-        // Show interface
-        toggleUI(true);
-
-        // Hide stop button
-        document.getElementById('stop').style.display = 'none';
+        if (!SIMULATOR.user_controlled) {
+            setSimStatus("Simulations interrupted.", elapse, simpersec);
+            showWinrate();
+        }
+        showUI();
 
         if (SIM_CONTROLLER.stop_sims_callback) SIM_CONTROLLER.stop_sims_callback()
     }
@@ -101,8 +62,9 @@
             run_sim(true);
             debug_end();
         } else if (SIMULATOR.user_controlled) {
-            run_sim(true);
-            debug_end();
+            if (run_sim(true)) {
+                debug_end();
+            }
         } else if (sims_left > 0) {
             // Interval output - speeds up simulations
             if (run_sims_count >= run_sims_batch) {
@@ -140,7 +102,6 @@
                     run_sim();
                 }
             }
-
         } else {
             run_sims_count = 0;
             run_sims_batch = 0;
@@ -149,18 +110,14 @@
             var elapse = time_elapsed();
             var simpersec = games / elapse;
             simpersec = simpersec.toFixed(2);
-            
+
             if (echo) {
                 outp(echo);
             }
             setSimStatus("Simulations complete.", elapse, simpersec);
             showWinrate();
 
-            // Show interface
-            toggleUI(true);
-
-            // Hide stop button
-            document.getElementById('stop').style.display = 'none';
+            showUI();
 
             if (SIM_CONTROLLER.end_sims_callback) SIM_CONTROLLER.end_sims_callback();
         }
@@ -169,63 +126,11 @@
     // Initializes a single simulation - runs once before each individual simulation
     // - needs to reset the decks and fields before each simulation
     function run_sim(skipResults) {
-        doSetup();
         if (!SIMULATOR.simulate()) return false;
-        if (!skipResults) processSimResult();
+        if (!skipResults) SIM_CONTROLLER.processSimResult();
     }
 
-    function doSetup() {
-
-        SIMULATOR.simulation_turns = 0;
-
-        // Reset battleground effect
-        battleground = '';
-
-        // Set up empty decks
-        var deck = {
-            cpu: {
-                deck: []
-            },
-            player: {
-                deck: []
-            }
-        }
-        SIMULATOR.deck = deck;
-
-        // Set up empty field
-        var field = {
-            cpu: {
-                assaults: []
-            },
-            player: {
-                assaults: []
-            }
-        };
-        SIMULATOR.field = field;
-
-        // Load player deck
-        if (cache_player_deck_cards) {
-            deck['player'] = copy_deck(cache_player_deck_cards);
-        }
-
-        // Load enemy deck
-        if (cache_cpu_deck_cards) {
-            deck['cpu'] = copy_deck(cache_cpu_deck_cards);
-        }
-
-        // Set up deck order priority reference
-        if (getordered && !getexactorder) deck.player.ordered = copy_card_list(deck.player.deck);
-        if (getordered2 && !getexactorder2) deck.cpu.ordered = copy_card_list(deck.cpu.deck);
-
-        // Output decks for first simulation
-        if (debug && (loss_debug || win_debug)) {
-        } else if (suppressOutput) {
-        } else if (echo == '') {
-            debug_dump_decks();
-        }
-    }
-
-    function processSimResult() {
+    SIM_CONTROLLER.processSimResult = function () {
 
         var result;
         if (!SIMULATOR.field.player.commander.isAlive()) {

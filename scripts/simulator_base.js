@@ -971,12 +971,55 @@ var SIMULATOR = {};
         }
     };
 
+    function initializeBattle() {
+
+        SIMULATOR.simulation_turns = 0;
+        
+        // Set up empty decks
+        var deck = {
+            cpu: {
+                deck: []
+            },
+            player: {
+                deck: []
+            }
+        }
+        SIMULATOR.deck = deck;
+
+        // Set up empty field
+        var field = {
+            cpu: {
+                assaults: []
+            },
+            player: {
+                assaults: []
+            }
+        };
+        SIMULATOR.field = field;
+
+        // Load player deck
+        if (cache_player_deck_cards) {
+            deck['player'] = copy_deck(cache_player_deck_cards);
+        }
+
+        // Load enemy deck
+        if (cache_cpu_deck_cards) {
+            deck['cpu'] = copy_deck(cache_cpu_deck_cards);
+        }
+
+        // Set up deck order priority reference
+        if (getordered && !getexactorder) deck.player.ordered = copy_card_list(deck.player.deck);
+        if (getordered2 && !getexactorder2) deck.cpu.ordered = copy_card_list(deck.cpu.deck);
+    }
+
     // Simulate one game
     function simulate() {
         simulating = true;
         damage_taken = 0;
         damage_dealt = 0;
         plays = [];
+
+        initializeBattle();
 
         // Shuffle decks
         if (getexactorder) {
@@ -1010,10 +1053,6 @@ var SIMULATOR = {};
     };
 
     function setupDecks() {
-        doSetupDecks();
-    }
-
-    function doSetupDecks() {
         // Cache decks where possible
         // Load player deck
         if (getdeck) {
@@ -1024,12 +1063,6 @@ var SIMULATOR = {};
             cache_player_deck = load_deck_from_cardlist();
         }
         cache_player_deck_cards = getDeckCards(cache_player_deck);
-
-        totalDeckHealth = 0;
-        totalDeckHealth += cache_player_deck_cards.commander.health;
-        for (var i = 0; i < cache_player_deck_cards.deck.length; i++) {
-            totalDeckHealth += cache_player_deck_cards.deck[i].health;
-        }
 
         // Load enemy deck
         smartAI = true;
@@ -1048,12 +1081,6 @@ var SIMULATOR = {};
             cache_cpu_deck = load_deck_from_cardlist();
         }
         cache_cpu_deck_cards = getDeckCards(cache_cpu_deck);
-
-        totalCpuDeckHealth = 0;
-        totalCpuDeckHealth += cache_cpu_deck_cards.commander.health;
-        for (var i = 0; i < cache_cpu_deck_cards.deck.length; i++) {
-            totalCpuDeckHealth += cache_cpu_deck_cards.deck[i].health;
-        }
     }
 
     function setupField(field) {

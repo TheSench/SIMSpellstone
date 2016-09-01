@@ -63,12 +63,12 @@ $(function () {
     var button = document.getElementById("display_history");
     if (button) button.onclick = display_history;
 
-    $('#deck').val(_GET('deck1')).change();
+    $('#deck1').val(_GET('deck1')).change();
     $('#deck2').val(_GET('deck2')).change();
 
     $('#surge').attr("checked", _DEFINED("surge"));
     $('#siege').attr("checked", _DEFINED("siege"));
-    var tower_level = Math.min(Math.max(_GET('tower_level'), 0), 18);
+    var tower_level = Math.min(Math.max(_GET('tower_level') || 18, 0), 18);
     $('#tower_level').val(tower_level);
 
     var tower_type = (_GET('tower_type') || 0);
@@ -194,6 +194,20 @@ function toggleUI(display) {
     }
 }
 
+function showUI() {
+    // Show interface
+    toggleUI(true);
+    // Hide stop button
+    document.getElementById('stop').style.display = 'none';
+}
+
+function hideUI() {
+    // Hide interface
+    toggleUI(false);
+    // Display stop button
+    document.getElementById('stop').style.display = 'block';
+}
+
 function getSelectedBattlegrounds() {
     var getbattleground = [];
     var bgCheckBoxes = document.getElementsByName("battleground");
@@ -274,7 +288,7 @@ function showWinrate() {
 
         var current_deck = '';
         var deck = [];
-        var deck1Hash = document.getElementById('deck').value;
+        var deck1Hash = document.getElementById('deck1').value;
         var deck1List = $('#cardlist').val();
         if(deck1List) deck1List = deck1List.value;
 
@@ -349,7 +363,7 @@ function generate_link(autostart) {
     }
 
     var parameters = [];
-    addValueParam(parameters, "deck1", "deck");
+    addValueParam(parameters, "deck1");
     addValueParam(parameters, "deck2");
 
     addValueParam(parameters, "campaign");
@@ -434,14 +448,12 @@ function load_deck_builder_for_field(fieldID) {
 
 function load_deck_builder(player) {
     if (player == 'player') {
-        var getdeck = $('#deck').val();
-        var getcardlist = $('#cardlist').val()
+        var getdeck = $('#deck1').val();
         var getmission;
         var getraid;
         var raidlevel;
     } else {
         var getdeck = $('#deck2').val();
-        var getcardlist = $('#cardlist2').val();
         var getmission = $('#mission').val();
         var getraid = $('#raid').val();
         var raidlevel = $('#raid_level').val();
@@ -454,8 +466,6 @@ function load_deck_builder(player) {
     };
     if (getdeck) {
         deck = hash_decode(getdeck);
-    } else if (getcardlist) {
-        deck = load_deck_from_cardlist(getcardlist);
     } else if (getmission) {
         deck = load_deck_mission(getmission);
     } else if (getraid) {
@@ -467,7 +477,7 @@ function load_deck_builder(player) {
     }
 
     var name = (player == 'player' ? 'Player Deck' : 'Enemy Deck');
-    var deckHashField = (player ? $("#" + (player == 'player' ? 'deck' : 'deck2')) : null);
+    var deckHashField = (player ? $("#" + (player == 'player' ? 'deck1' : 'deck2')) : null);
     open_deck_builder(name, hash, null, deckHashField);
 }
 

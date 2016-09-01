@@ -4,8 +4,7 @@ var CARD_GUI = {};
     var assetsRoot = '';
 
     function clearCardSpace() {
-        var cardSpace = document.getElementById("cardSpace");
-        cardSpace.innerHTML = '';
+        var cardSpace = $("#cardSpace").empty();
     }
 
     function clearDeckSpace() {
@@ -52,7 +51,7 @@ var CARD_GUI = {};
     function draw_card_list(list, compactSkills, onclick, onrightclick, skip, end) {
         var cards = make_card_list(list, compactSkills, onclick, onrightclick, skip, end);
         var $cardSpace = $("#cardSpace");
-        $cardSpace.children().remove();
+        $cardSpace.empty();
         $cardSpace.append(cards);
         return $cardSpace;
     }

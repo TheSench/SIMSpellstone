@@ -3,7 +3,7 @@
 var loadDeckDialog;
 
 $(function () {
-    $("#deck").change(function ()
+    $("#deck1").change(function ()
     {
         this.value = this.value.trim();
         deckChanged("attack_deck", hash_decode(this.value));
@@ -79,7 +79,7 @@ $(function () {
     // Disable this as we now draw the full deck
     debug_dump_decks = function () { };
 
-    setDeckSortable("#attack_deck", '#deck');
+    setDeckSortable("#attack_deck", '#deck1');
     setDeckSortable("#defend_deck", '#deck2');
 });
 
