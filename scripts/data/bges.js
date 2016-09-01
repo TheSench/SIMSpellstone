@@ -570,7 +570,7 @@ var BATTLEGROUNDS = {
         "effect_type": "skill",
         "id": "enhance",
         "mult": 0.5,
-        "s": "barrier",
+        "s": "protect",
         "all": "1",
       },
     ]

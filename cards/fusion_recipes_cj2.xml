@@ -1752,6 +1752,22 @@
     <card_id>25079</card_id>
     <resource card_id="15079" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15080</card_id>
+    <resource card_id="5080" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25080</card_id>
+    <resource card_id="15080" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15081</card_id>
+    <resource card_id="5081" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25081</card_id>
+    <resource card_id="15081" number="2" />
+  </fusion_recipe>
   <!-- CHAOS PREMIUM SET BEGIN -->
   <fusion_recipe>
     <card_id>16000</card_id>
@@ -2362,12 +2378,36 @@
     <resource card_id="16075" number="2" />
   </fusion_recipe>
   <fusion_recipe>
+    <card_id>16076</card_id>
+    <resource card_id="6076" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26076</card_id>
+    <resource card_id="16076" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16077</card_id>
+    <resource card_id="6077" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26077</card_id>
+    <resource card_id="16077" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
     <card_id>16079</card_id>
     <resource card_id="6079" number="2" />
   </fusion_recipe>
   <fusion_recipe>
     <card_id>26079</card_id>
     <resource card_id="16079" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16080</card_id>
+    <resource card_id="6080" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26080</card_id>
+    <resource card_id="16080" number="2" />
   </fusion_recipe>
   <!-- WYLD PREMIUM SET BEGIN -->
   <fusion_recipe>
@@ -2977,6 +3017,22 @@
   <fusion_recipe>
     <card_id>27075</card_id>
     <resource card_id="17075" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17076</card_id>
+    <resource card_id="7076" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27076</card_id>
+    <resource card_id="17076" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17077</card_id>
+    <resource card_id="7077" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27077</card_id>
+    <resource card_id="17077" number="2" />
   </fusion_recipe>
   <fusion_recipe>
     <card_id>17079</card_id>

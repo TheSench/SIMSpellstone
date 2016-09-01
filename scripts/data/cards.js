@@ -36696,6 +36696,456 @@ var CARDS = {
       },
     }
   },
+  "5080": {
+    "id": "5080",
+    "name": "Djinnflame Brawler",
+    "picture": "Blue_Flame_Fighter_Elemental_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "5",
+    "attack": 7,
+    "health": 5,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "valor",
+        "x": 1,
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "y": "5",
+        "z": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 6,
+        "skill": [],
+      },
+      "3": {
+        "health": 7,
+        "skill": [
+          {
+            "id": "valor",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "y": "5",
+            "z": 5,
+          },
+        ],
+      },
+      "4": {
+        "health": 8,
+        "skill": [
+          {
+            "id": "valor",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "5",
+            "z": 5,
+          },
+        ],
+      },
+      "5": {
+        "health": 9,
+        "skill": [
+          {
+            "id": "valor",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "15080": {
+    "id": "15080",
+    "name": "Djinnflame Fighter",
+    "picture": "Blue_Flame_Fighter_Elemental_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "5",
+    "attack": 7,
+    "health": 10,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "valor",
+        "x": 3,
+      },
+      {
+        "id": "protect",
+        "x": 2,
+        "y": "5",
+        "z": 5,
+      },
+      {
+        "id": "burn",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 11,
+        "skill": [
+          {
+            "id": "valor",
+            "x": 3,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+        ],
+      },
+      "3": {
+        "health": 12,
+        "skill": [
+          {
+            "id": "valor",
+            "x": 4,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+        ],
+      },
+      "4": {
+        "health": 13,
+        "skill": [],
+      },
+      "5": {
+        "health": 14,
+        "skill": [
+          {
+            "id": "valor",
+            "x": 4,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "25080": {
+    "id": "25080",
+    "name": "Djinnflame Master",
+    "picture": "Blue_Flame_Fighter_Elemental_B",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "5",
+    "attack": 7,
+    "health": 15,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "valor",
+        "x": 4,
+      },
+      {
+        "id": "protect",
+        "x": 4,
+        "y": "5",
+        "z": 5,
+      },
+      {
+        "id": "burn",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 16,
+        "skill": [
+          {
+            "id": "valor",
+            "x": 5,
+          },
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+        ],
+      },
+      "3": {
+        "health": 17,
+        "skill": [
+          {
+            "id": "valor",
+            "x": 6,
+          },
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "health": 18,
+        "skill": [
+          {
+            "id": "valor",
+            "x": 6,
+          },
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "health": 19,
+        "skill": [
+          {
+            "id": "valor",
+            "x": 6,
+          },
+          {
+            "id": "protect",
+            "x": 5,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "5081": {
+    "id": "5081",
+    "name": "Brahzee",
+    "picture": "Giant_Cloud_Sheep_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "5",
+    "attack": 1,
+    "health": 6,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "jam",
+        "c": 7,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "frost",
+            "x": 1,
+          },
+          {
+            "id": "jam",
+            "c": 7,
+          },
+        ],
+      },
+      "3": {
+        "health": 7,
+        "skill": [],
+      },
+      "4": {
+        "health": 8,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+          {
+            "id": "jam",
+            "c": 6,
+          },
+        ],
+      },
+    }
+  },
+  "15081": {
+    "id": "15081",
+    "name": "Cumulus Brahzee",
+    "picture": "Giant_Cloud_Sheep_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "5",
+    "attack": 1,
+    "health": 9,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "frost",
+        "x": 1,
+      },
+      {
+        "id": "jam",
+        "c": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 2,
+        "skill": [],
+      },
+      "3": {
+        "health": 10,
+        "skill": [],
+      },
+      "4": {
+        "health": 11,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+    }
+  },
+  "25081": {
+    "id": "25081",
+    "name": "Nimbus Brahzee",
+    "picture": "Giant_Cloud_Sheep_B",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": "5",
+    "attack": 2,
+    "health": 12,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "frost",
+        "x": 2,
+      },
+      {
+        "id": "jam",
+        "c": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 13,
+        "skill": [],
+      },
+      "3": {
+        "attack": 3,
+        "skill": [],
+      },
+      "4": {
+        "health": 14,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+        ],
+      },
+    }
+  },
   "6000": {
     "id": "6000",
     "name": "Furnace Mech",
@@ -53405,6 +53855,476 @@ var CARDS = {
       },
     }
   },
+  "6076": {
+    "id": "6076",
+    "name": "Magmatic Bang",
+    "picture": "Eruption_Elemental_A",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "5",
+    "attack": 3,
+    "health": 13,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "burn",
+        "x": 1,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+      {
+        "id": "flurry",
+        "c": 9,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "burn",
+            "x": 1,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 8,
+          },
+        ],
+      },
+      "3": {
+        "health": 14,
+        "skill": [
+          {
+            "id": "burn",
+            "x": 1,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 7,
+          },
+        ],
+      },
+      "4": {
+        "health": 15,
+        "skill": [
+          {
+            "id": "burn",
+            "x": 1,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 6,
+          },
+        ],
+      },
+      "5": {
+        "health": 16,
+        "skill": [],
+      },
+      "6": {
+        "health": 17,
+        "skill": [
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 6,
+          },
+        ],
+      },
+    }
+  },
+  "16076": {
+    "id": "16076",
+    "name": "Magmatic Burst",
+    "picture": "Eruption_Elemental_A",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "5",
+    "attack": 3,
+    "health": 18,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "burn",
+        "x": 2,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+      {
+        "id": "flurry",
+        "c": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 19,
+        "skill": [],
+      },
+      "3": {
+        "attack": 4,
+        "health": 20,
+        "skill": [],
+      },
+      "4": {
+        "health": 21,
+        "skill": [
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 5,
+          },
+        ],
+      },
+      "5": {
+        "health": 23,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+    }
+  },
+  "26076": {
+    "id": "26076",
+    "name": "Magmatic Blast",
+    "picture": "Eruption_Elemental_B",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "5",
+    "attack": 4,
+    "health": 24,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "burn",
+        "x": 3,
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+      {
+        "id": "flurry",
+        "c": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "burn",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+      "3": {
+        "health": 26,
+        "skill": [],
+      },
+      "4": {
+        "health": 27,
+        "skill": [
+          {
+            "id": "burn",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 2,
+          },
+        ],
+      },
+      "5": {
+        "attack": 5,
+        "health": 28,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "burn",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+          {
+            "id": "flurry",
+            "c": 2,
+          },
+        ],
+      },
+    }
+  },
+  "6077": {
+    "id": "6077",
+    "name": "Lizinx",
+    "picture": "Enigma_Elemental_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "5",
+    "attack": 6,
+    "health": 12,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "leech",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 13,
+        "skill": [],
+      },
+      "3": {
+        "attack": 7,
+        "health": 14,
+        "skill": [],
+      },
+      "4": {
+        "health": 15,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "16077": {
+    "id": "16077",
+    "name": "Lizinx Scribe",
+    "picture": "Enigma_Elemental_A",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "5",
+    "attack": 8,
+    "health": 16,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "weaken",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "leech",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 17,
+        "skill": [],
+      },
+      "3": {
+        "health": 18,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+        ],
+      },
+      "4": {
+        "health": 19,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "attack": 9,
+        "skill": [],
+      },
+    }
+  },
+  "26077": {
+    "id": "26077",
+    "name": "Lizinx Solutionist",
+    "picture": "Enigma_Elemental_B",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "5",
+    "attack": 9,
+    "health": 20,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "weaken",
+        "x": 3,
+        "all": "1",
+      },
+      {
+        "id": "leech",
+        "x": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 10,
+        "health": 21,
+        "skill": [],
+      },
+      "3": {
+        "health": 22,
+        "skill": [],
+      },
+      "4": {
+        "health": 23,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "weaken",
+            "x": 4,
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 6,
+          },
+        ],
+      },
+    }
+  },
   "6079": {
     "id": "6079",
     "name": "Heinous Smoggler",
@@ -53631,6 +54551,261 @@ var CARDS = {
           {
             "id": "burn",
             "x": 5,
+          },
+        ],
+      },
+    }
+  },
+  "6080": {
+    "id": "6080",
+    "name": "Steelpent",
+    "picture": "Titanium_Snake_A",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "5",
+    "attack": 4,
+    "health": 16,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 1,
+        "y": "5",
+        "z": 5,
+      },
+      {
+        "id": "poison",
+        "x": 3,
+      },
+      {
+        "id": "flurry",
+        "c": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "poison",
+            "x": 3,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "3": {
+        "health": 17,
+        "skill": [],
+      },
+      "4": {
+        "health": 18,
+        "skill": [],
+      },
+      "5": {
+        "health": 19,
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "poison",
+            "x": 4,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "6": {
+        "health": 20,
+        "skill": [],
+      },
+    }
+  },
+  "16080": {
+    "id": "16080",
+    "name": "Forged Steelpent",
+    "picture": "Titanium_Snake_A",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "5",
+    "attack": 4,
+    "health": 21,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 1,
+        "y": "5",
+        "z": 5,
+      },
+      {
+        "id": "poison",
+        "x": 4,
+      },
+      {
+        "id": "flurry",
+        "c": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 5,
+        "health": 22,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "poison",
+            "x": 4,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "poison",
+            "x": 5,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "poison",
+            "x": 5,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+      "6": {
+        "health": 23,
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "poison",
+            "x": 6,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+    }
+  },
+  "26080": {
+    "id": "26080",
+    "name": "Refined Steelpent",
+    "picture": "Titanium_Snake_B",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "5",
+    "attack": 5,
+    "health": 24,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "5",
+        "z": 5,
+      },
+      {
+        "id": "poison",
+        "x": 6,
+      },
+      {
+        "id": "flurry",
+        "c": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 25,
+        "skill": [],
+      },
+      "3": {
+        "attack": 6,
+        "health": 26,
+        "skill": [],
+      },
+      "4": {
+        "health": 27,
+        "skill": [],
+      },
+      "5": {
+        "health": 28,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "poison",
+            "x": 7,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
           },
         ],
       },
@@ -71521,6 +72696,543 @@ var CARDS = {
           {
             "id": "jam",
             "c": 4,
+          },
+        ],
+      },
+    }
+  },
+  "7076": {
+    "id": "7076",
+    "name": "Avalanche Fiend",
+    "picture": "Snow_Tiger_Elemental_A",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "5",
+    "attack": 3,
+    "health": 9,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "jam",
+        "c": 9,
+      },
+      {
+        "id": "pierce",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "jam",
+            "c": 8,
+          },
+          {
+            "id": "pierce",
+            "x": 1,
+          },
+        ],
+      },
+      "3": {
+        "health": 10,
+        "skill": [
+          {
+            "id": "jam",
+            "c": 7,
+          },
+          {
+            "id": "pierce",
+            "x": 1,
+          },
+        ],
+      },
+      "4": {
+        "health": 11,
+        "skill": [
+          {
+            "id": "jam",
+            "c": 7,
+          },
+          {
+            "id": "pierce",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "health": 12,
+        "skill": [],
+      },
+      "6": {
+        "attack": 4,
+        "health": 13,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 7,
+          },
+          {
+            "id": "pierce",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "17076": {
+    "id": "17076",
+    "name": "Avalanche Monster",
+    "picture": "Snow_Tiger_Elemental_A",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "5",
+    "attack": 4,
+    "health": 13,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "jam",
+        "c": 6,
+      },
+      {
+        "id": "pierce",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 6,
+          },
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+        ],
+      },
+      "3": {
+        "health": 14,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 16,
+        "skill": [],
+      },
+      "5": {
+        "attack": 5,
+        "health": 17,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "27076": {
+    "id": "27076",
+    "name": "Avalanche Behemoth",
+    "picture": "Snow_Tiger_Elemental_B",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "5",
+    "attack": 5,
+    "health": 17,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "jam",
+        "c": 4,
+      },
+      {
+        "id": "pierce",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 18,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+        ],
+      },
+      "3": {
+        "health": 19,
+        "skill": [],
+      },
+      "4": {
+        "health": 20,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+        ],
+      },
+      "5": {
+        "attack": 6,
+        "health": 21,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+          {
+            "id": "pierce",
+            "x": 6,
+          },
+        ],
+      },
+    }
+  },
+  "7077": {
+    "id": "7077",
+    "name": "Crystallum",
+    "picture": "Crystal_Elemental_A",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "5",
+    "attack": 6,
+    "health": 7,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "heal",
+        "x": 1,
+        "y": "5",
+        "z": 5,
+      },
+      {
+        "id": "pierce",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 8,
+        "skill": [],
+      },
+      "3": {
+        "health": 9,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "pierce",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "attack": 7,
+        "health": 10,
+        "skill": [],
+      },
+    }
+  },
+  "17077": {
+    "id": "17077",
+    "name": "Crystallum Awoken",
+    "picture": "Crystal_Elemental_A",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "5",
+    "attack": 7,
+    "health": 11,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "heal",
+        "x": 2,
+        "y": "5",
+        "z": 5,
+      },
+      {
+        "id": "pierce",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+        ],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 12,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "attack": 8,
+        "skill": [],
+      },
+      "6": {
+        "health": 13,
+        "skill": [],
+      },
+    }
+  },
+  "27077": {
+    "id": "27077",
+    "name": "Crystallum Roused",
+    "picture": "Crystal_Elemental_B",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "5",
+    "attack": 8,
+    "health": 13,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "heal",
+        "x": 4,
+        "y": "5",
+        "z": 5,
+      },
+      {
+        "id": "pierce",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "heal",
+            "x": 4,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+        ],
+      },
+      "3": {
+        "attack": 9,
+        "skill": [],
+      },
+      "4": {
+        "health": 15,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "heal",
+            "x": 4,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "heal",
+            "x": 5,
+            "y": "5",
+            "z": 5,
+          },
+          {
+            "id": "pierce",
+            "x": 6,
           },
         ],
       },
@@ -98240,7 +99952,7 @@ var CARDS = {
   "9994": {
     "id": "9994",
     "name": "New Art",
-    "picture": "New10_A",
+    "picture": "New2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -98253,7 +99965,7 @@ var CARDS = {
   "19994": {
     "id": "19994",
     "name": "New Art",
-    "picture": "New10_B",
+    "picture": "New2_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -98266,7 +99978,7 @@ var CARDS = {
   "9993": {
     "id": "9993",
     "name": "New Art",
-    "picture": "New1_A",
+    "picture": "New4_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -98279,7 +99991,7 @@ var CARDS = {
   "19993": {
     "id": "19993",
     "name": "New Art",
-    "picture": "New1_B",
+    "picture": "New4_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -98292,7 +100004,7 @@ var CARDS = {
   "9992": {
     "id": "9992",
     "name": "New Art",
-    "picture": "New2_A",
+    "picture": "New7_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -98305,7 +100017,7 @@ var CARDS = {
   "19992": {
     "id": "19992",
     "name": "New Art",
-    "picture": "New2_B",
+    "picture": "New7_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -98318,7 +100030,7 @@ var CARDS = {
   "9991": {
     "id": "9991",
     "name": "New Art",
-    "picture": "New3_A",
+    "picture": "New9_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -98331,7 +100043,7 @@ var CARDS = {
   "19991": {
     "id": "19991",
     "name": "New Art",
-    "picture": "New3_B",
+    "picture": "New9_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -98343,8 +100055,8 @@ var CARDS = {
   },
   "9990": {
     "id": "9990",
-    "name": "New Art",
-    "picture": "New4_A",
+    "name": "Unused Art",
+    "picture": "Oda_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -98356,8 +100068,8 @@ var CARDS = {
   },
   "19990": {
     "id": "19990",
-    "name": "New Art",
-    "picture": "New4_B",
+    "name": "Unused Art",
+    "picture": "Oda_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -98367,10 +100079,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9989": {
-    "id": "9989",
-    "name": "New Art",
-    "picture": "New5_A",
+  "29990": {
+    "id": "29990",
+    "name": "Unused Art",
+    "picture": "Oda_C",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -98382,8 +100094,8 @@ var CARDS = {
   },
   "19989": {
     "id": "19989",
-    "name": "New Art",
-    "picture": "New5_B",
+    "name": "Unused Art",
+    "picture": "Promo_Dragon_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -98395,8 +100107,8 @@ var CARDS = {
   },
   "9988": {
     "id": "9988",
-    "name": "New Art",
-    "picture": "New6_A",
+    "name": "Unused Art",
+    "picture": "Seraph_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -98408,8 +100120,8 @@ var CARDS = {
   },
   "19988": {
     "id": "19988",
-    "name": "New Art",
-    "picture": "New6_B",
+    "name": "Unused Art",
+    "picture": "Seraph_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -98421,21 +100133,8 @@ var CARDS = {
   },
   "9987": {
     "id": "9987",
-    "name": "New Art",
-    "picture": "New7_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19987": {
-    "id": "19987",
-    "name": "New Art",
-    "picture": "New7_B",
+    "name": "Unused Art",
+    "picture": "Tarian_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -98447,21 +100146,8 @@ var CARDS = {
   },
   "9986": {
     "id": "9986",
-    "name": "New Art",
-    "picture": "New8_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19986": {
-    "id": "19986",
-    "name": "New Art",
-    "picture": "New8_B",
+    "name": "Unused Art",
+    "picture": "Tremor_Wurm_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -98473,21 +100159,8 @@ var CARDS = {
   },
   "9985": {
     "id": "9985",
-    "name": "New Art",
-    "picture": "New9_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19985": {
-    "id": "19985",
-    "name": "New Art",
-    "picture": "New9_B",
+    "name": "Unused Art",
+    "picture": "Unused1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -98500,7 +100173,7 @@ var CARDS = {
   "9984": {
     "id": "9984",
     "name": "Unused Art",
-    "picture": "Oda_A",
+    "picture": "Unused2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -98510,36 +100183,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19984": {
-    "id": "19984",
+  "9983": {
+    "id": "9983",
     "name": "Unused Art",
-    "picture": "Oda_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29984": {
-    "id": "29984",
-    "name": "Unused Art",
-    "picture": "Oda_C",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19983": {
-    "id": "19983",
-    "name": "Unused Art",
-    "picture": "Promo_Dragon_B",
+    "picture": "Unused3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -98552,20 +100199,7 @@ var CARDS = {
   "9982": {
     "id": "9982",
     "name": "Unused Art",
-    "picture": "Seraph_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19982": {
-    "id": "19982",
-    "name": "Unused Art",
-    "picture": "Seraph_B",
+    "picture": "Ursurio_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -98578,7 +100212,7 @@ var CARDS = {
   "9981": {
     "id": "9981",
     "name": "Unused Art",
-    "picture": "Tarian_A",
+    "picture": "Void_Abomination_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -98590,84 +100224,6 @@ var CARDS = {
   },
   "9980": {
     "id": "9980",
-    "name": "Unused Art",
-    "picture": "Tremor_Wurm_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9979": {
-    "id": "9979",
-    "name": "Unused Art",
-    "picture": "Unused1_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9978": {
-    "id": "9978",
-    "name": "Unused Art",
-    "picture": "Unused2_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9977": {
-    "id": "9977",
-    "name": "Unused Art",
-    "picture": "Unused3_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9976": {
-    "id": "9976",
-    "name": "Unused Art",
-    "picture": "Ursurio_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9975": {
-    "id": "9975",
-    "name": "Unused Art",
-    "picture": "Void_Abomination_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9974": {
-    "id": "9974",
     "name": "Unused Art",
     "picture": "Yuriel_A",
     "rarity": "0",

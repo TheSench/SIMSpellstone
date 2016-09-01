@@ -391,8 +391,8 @@
     <id>510</id>
     <name>Dungeon Boost</name>
     <desc>Dungeon Boost Heals and Empowers all of his allies, increasing in strength as he levels up.</desc>
-    <icon>filter_frostbite_64</icon>
-    <icon_bundle>26</icon_bundle>
+    <icon>dungeon_001_bge_64</icon>
+    <icon_bundle>71</icon_bundle>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
@@ -407,10 +407,10 @@
     <id>511</id>
     <name>Runic Sanctuary</name>
     <desc>Barrier and Barrier All skills are 50% more effective.</desc>
-    <icon>thunderbolt_64</icon>
-    <icon_bundle>31</icon_bundle>
+    <icon>Barrier_BGE_64</icon>
+    <icon_bundle>69</icon_bundle>
     <effect>
-      <skill id="enhance" s="barrier" mult="0.5" all="1" />
+      <skill id="enhance" s="protect" mult="0.5" all="1" />
     </effect>
   </battleground>
   <!-- 1001+: Personal BGE -->
