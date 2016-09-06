@@ -54558,7 +54558,7 @@ var CARDS = {
   },
   "6080": {
     "id": "6080",
-    "name": "Steelpent",
+    "name": "Titanirous",
     "picture": "Titanium_Snake_A",
     "rarity": "4",
     "set": "4000",
@@ -54638,7 +54638,7 @@ var CARDS = {
   },
   "16080": {
     "id": "16080",
-    "name": "Forged Steelpent",
+    "name": "Forged Titanirous",
     "picture": "Titanium_Snake_A",
     "rarity": "4",
     "set": "4000",
@@ -54747,7 +54747,7 @@ var CARDS = {
   },
   "26080": {
     "id": "26080",
-    "name": "Refined Steelpent",
+    "name": "Refined Titanirous",
     "picture": "Titanium_Snake_B",
     "rarity": "4",
     "set": "4000",

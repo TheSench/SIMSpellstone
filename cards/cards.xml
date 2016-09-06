@@ -29780,7 +29780,7 @@
   <unit>
     <id>6080</id>
     <card_type>2</card_type>
-    <name>Steelpent</name>
+    <name>Titanirous</name>
     <picture>Titanium_Snake_A</picture>
     <asset_bundle>70</asset_bundle>
     <hidden_until_time>1473094800</hidden_until_time>
@@ -29824,7 +29824,7 @@
     <id>16080</id>
     <card_type>2</card_type>
     <fusion_level>1</fusion_level>
-    <name>Forged Steelpent</name>
+    <name>Forged Titanirous</name>
     <picture>Titanium_Snake_A</picture>
     <asset_bundle>70</asset_bundle>
     <hidden_until_time>1473094800</hidden_until_time>
@@ -29873,7 +29873,7 @@
     <id>26080</id>
     <card_type>2</card_type>
     <fusion_level>2</fusion_level>
-    <name>Refined Steelpent</name>
+    <name>Refined Titanirous</name>
     <picture>Titanium_Snake_B</picture>
     <asset_bundle>70</asset_bundle>
     <hidden_until_time>1473094800</hidden_until_time>
