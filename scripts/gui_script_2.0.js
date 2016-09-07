@@ -26,11 +26,12 @@ $(function () {
         heightStyle: "content",
     }).filter(".start-open").accordion('option', 'active' , 0);
 
-    $("#raid").change(function () {
+    $("#raid, #raid_level").change(function () {
         var newDeck;
-        if (this.value) {
+        var selectedRaid = $("#raid").val();
+        if (selectedRaid) {
             var raidlevel = document.getElementById('raid_level').value;
-            newDeck = load_deck_raid(this.value, raidlevel);
+            newDeck = load_deck_raid(selectedRaid, raidlevel);
         } else {
             newDeck = hash_decode('');
         }
