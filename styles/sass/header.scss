@@ -19,6 +19,7 @@ body {
 
     ul {
         padding: 0 10px;
+        margin: 0;
     }
 
     input {
@@ -28,6 +29,7 @@ body {
     li {
         display: table-cell;
         white-space: nowrap;
+        padding: 20px 0;
 
         &.fill {
             width: 100%;
@@ -37,10 +39,15 @@ body {
         }
 
         margin: 0 15px;
+
+        &.current-page {
+            background-color: $primary-tint;
+        }
     }
 
     h1, li, a {
         color: $primary-black;
+        vertical-align: middle;
     }
 
     nav a {

@@ -144,10 +144,12 @@
                             </div>
                             <div>
                                 <h6>Battleground Effects</h6>
-                                <div id="battleground" style="overflow: auto; width: 200px; height: 80px; border: 1px solid #336699; padding-left: 5px; text-align: left; ">
-                                    <input ng-repeat-start="BGE in selectableBattlegrounds()" type="checkbox" name="battleground" id="battleground_{{BGE.id}}" value="{{BGE.id}}">
-                                    <label for="battleground_{{BGE.id}}">{{BGE.name}}</label>
-                                    <br ng-repeat-end />
+                                <div style="position: relative; width: 200px; height: 213px; overflow-y: scroll;">
+                                    <div id="battleground" style="position: absolute; width: 100%;">
+                                        <input ng-repeat-start="BGE in selectableBattlegrounds()" type="checkbox" name="battleground" id="battleground_{{BGE.id}}" value="{{BGE.id}}">
+                                        <label for="battleground_{{BGE.id}}">{{BGE.name}}</label>
+                                        <br ng-repeat-end />
+                                    </div>
                                 </div>
                             </div>
                         </div>

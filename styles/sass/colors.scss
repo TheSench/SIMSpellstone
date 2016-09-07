@@ -1,5 +1,7 @@
 ﻿$font-stack: Helvetica, sans-serif;
 
+$greyscale: true !default;
+
 /* 
  * Practical Color Theory for People Who Code
  * http://tallys.github.io/color-theory/?imm_mid=0e31ae&cmp=em-web-na-na-newsltr_20160427
@@ -19,7 +21,10 @@ $violet: hsl(300, 100%, 50%);
 
 // Pick a starting color to mix with and select a hue between 0-360 (check the color wheel!)
 $first-color: hsl($hue, 100%, 50%);
-$first-color: gray;
+
+@if($greyscale) {
+    $first-color: gray;
+}
 
 // Find the hue 180 degrees away on the color wheel
 $second-color: complement($first-color);
