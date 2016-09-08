@@ -2685,7 +2685,7 @@ var MISSIONS = {
       },
       {
         "id": "6003",
-        "remove_mastery_level": "6"
+       // "remove_mastery_level": "6"
       },
       {
         "id": "6002"
