@@ -20066,6 +20066,7 @@
       <skill id="frost" x="1" />
       <skill id="jam" c="6" />
     </upgrade>
+    <desc>"... an' that cloud looks like a... long legged... sheep... thing... Hey, is it looking at us?" - Klepplo Goblin Trader</desc>
   </unit>
   <unit>
     <id>15081</id>
@@ -29530,7 +29531,7 @@
   <unit>
     <id>6077</id>
     <card_type>2</card_type>
-    <name>Lizinx</name>
+    <name>Enigma</name>
     <picture>Enigma_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
     <hidden_until_time>1473354000</hidden_until_time>
@@ -29538,7 +29539,6 @@
     <health>12</health>
     <cost>3</cost>
     <rarity>3</rarity>
-    <skill id="evade" x="1" />
     <skill id="weaken" x="1" all="1" />
     <skill id="leech" x="2" />
     <type>2</type>
@@ -29547,6 +29547,9 @@
     <upgrade>
       <level>2</level>
       <health>13</health>
+      <skill id="evade" x="1" />
+      <skill id="weaken" x="1" all="1" />
+      <skill id="leech" x="2" />
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -29563,12 +29566,13 @@
       <skill id="weaken" x="2" all="1" />
       <skill id="leech" x="3" />
     </upgrade>
+    <desc>Enigma have been known to challenge adventurers with complex puzzles with the prize being their very life.</desc>
   </unit>
   <unit>
     <id>16077</id>
     <card_type>2</card_type>
     <fusion_level>1</fusion_level>
-    <name>Lizinx Scribe</name>
+    <name>Enigma Scribe</name>
     <picture>Enigma_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
     <hidden_until_time>1473354000</hidden_until_time>
@@ -29609,7 +29613,7 @@
     <id>26077</id>
     <card_type>2</card_type>
     <fusion_level>2</fusion_level>
-    <name>Lizinx Solutionist</name>
+    <name>Enigma Solutionist</name>
     <picture>Enigma_Elemental_B</picture>
     <asset_bundle>70</asset_bundle>
     <hidden_until_time>1473354000</hidden_until_time>
@@ -39622,6 +39626,137 @@
       <skill id="evade" x="2" />
       <skill id="valor" x="8" />
       <skill id="heal" x="3" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7080</id>
+    <card_type>2</card_type>
+    <name>Spornacle</name>
+    <picture>Fungus_Elemental_A</picture>
+    <asset_bundle>70</asset_bundle>
+    <hidden_until_time>1473699600</hidden_until_time>
+    <attack>3</attack>
+    <health>9</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="enfeeble" x="1" />
+    <skill id="poison" x="1" />
+    <skill id="leech" x="1" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="enfeeble" x="1" />
+      <skill id="poison" x="2" />
+      <skill id="leech" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="enfeeble" x="1" />
+      <skill id="poison" x="2" />
+      <skill id="leech" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>12</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17080</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Spornacle Latcher</name>
+    <picture>Fungus_Elemental_A</picture>
+    <asset_bundle>70</asset_bundle>
+    <hidden_until_time>1473699600</hidden_until_time>
+    <attack>4</attack>
+    <health>13</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="enfeeble" x="1" />
+    <skill id="poison" x="2" />
+    <skill id="leech" x="2" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="enfeeble" x="1" />
+      <skill id="poison" x="3" />
+      <skill id="leech" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="enfeeble" x="1" />
+      <skill id="poison" x="3" />
+      <skill id="leech" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="enfeeble" x="1" />
+      <skill id="poison" x="4" />
+      <skill id="leech" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>15</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27080</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Spornacle Fumer</name>
+    <picture>Fungus_Elemental_B</picture>
+    <asset_bundle>70</asset_bundle>
+    <hidden_until_time>1473699600</hidden_until_time>
+    <attack>4</attack>
+    <health>15</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="enfeeble" x="1" />
+    <skill id="poison" x="4" />
+    <skill id="leech" x="4" />
+    <type>3</type>
+    <sub_type>5</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="enfeeble" x="1" />
+      <skill id="poison" x="4" />
+      <skill id="leech" x="5" />
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="poison" x="5" />
+      <skill id="leech" x="5" />
     </upgrade>
   </unit>
   <!-- END SET 3000 - Premium -->
@@ -53005,7 +53140,7 @@
     <id>328</id>
     <card_type>1</card_type>
     <name>Plateau Monster</name>
-    <portrait>necromancer</portrait>
+    <portrait>oasismonster</portrait>
     <attack>0</attack>
     <health>33</health>
     <skill id="weaken" x="2" />
@@ -53048,7 +53183,7 @@
     <id>329</id>
     <card_type>1</card_type>
     <name>Reks</name>
-    <portrait>necromancer</portrait>
+    <portrait>Portrait_King_Goblin</portrait>
     <attack>0</attack>
     <health>40</health>
     <skill id="heal" x="1" />
@@ -53088,6 +53223,94 @@
       <skill id="heal" x="2" />
       <skill id="rally" x="2" />
       <skill id="imbue" x="3" s="poison" />
+    </upgrade>
+  </unit>
+  <!-- Event 16 -->
+  <unit>
+    <id>330</id>
+    <card_type>1</card_type>
+    <name>Undead Brute Boss</name>
+    <portrait>necromancer</portrait>
+    <attack>0</attack>
+    <health>32</health>
+    <skill id="jam" c="4" />
+    <skill id="weaken" x="1" />
+    <rarity>4</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>37</health>
+      <skill id="enfeeble" all="1" />
+      <skill id="jam" c="4" />
+      <skill id="weaken" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>42</health>
+      <skill id="enfeeble" all="1" />
+      <skill id="jam" c="4" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>47</health>
+      <skill id="enfeeble" all="1" />
+      <skill id="jam" c="4" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>52</health>
+      <skill id="enfeeble" all="1" />
+      <skill id="jam" c="4" />
+      <skill id="weaken" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>58</health>
+      <skill id="enfeeble" all="1" />
+      <skill id="jam" c="4" />
+      <skill id="weaken" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>331</id>
+    <card_type>1</card_type>
+    <name>Void Infected General</name>
+    <portrait>maniacgeneral</portrait>
+    <attack>0</attack>
+    <health>28</health>
+    <skill id="enhance" x="1" s="strike" />
+    <skill id="strike" x="1" />
+    <skill id="weaken" x="1" all="1" />
+    <rarity>3</rarity>
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>33</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>39</health>
+      <skill id="enhance" x="1" s="strike" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>44</health>
+      <skill id="enhance" x="1" s="strike" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>50</health>
+      <skill id="enhance" x="2" s="strike" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="weaken" x="2" all="1" />
     </upgrade>
   </unit>
   <!-- END Fortune's Favor -->

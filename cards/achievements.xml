@@ -4391,5 +4391,129 @@
       <gold>800</gold>
     </reward>
   </achievement>
+  <achievement>
+    <id>3146</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Light of the Wisps</name>
+    <desc>Complete the 'Light of the Wisps' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1087</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3147</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Light of the Wisps</name>
+    <desc>Complete the ‘Light of the Wisps' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3146</achievement_req>
+    <req>
+      <campaign>1087</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3148</id>
+    <type>2</type>
+    <order>101</order>
+    <name>A Difference of Opinion</name>
+    <desc>Complete the 'A Difference of Opinion' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1088</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3149</id>
+    <type>2</type>
+    <order>101</order>
+    <name>A Difference of Opinion</name>
+    <desc>Complete the ‘A Difference of Opinion' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3148</achievement_req>
+    <req>
+      <campaign>1088</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3150</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Influence of The Void</name>
+    <desc>Complete the 'Influence of The Void' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1089</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3151</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Influence of The Void</name>
+    <desc>Complete the ‘Influence of The Void' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3150</achievement_req>
+    <req>
+      <campaign>1089</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3152</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Redemption</name>
+    <desc>Complete the 'Redemption' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1090</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3153</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Redemption</name>
+    <desc>Complete the ‘Redemption' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3152</achievement_req>
+    <req>
+      <campaign>1090</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
 </root>

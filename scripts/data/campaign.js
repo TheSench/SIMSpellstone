@@ -535,6 +535,34 @@ var CAMPAIGNS = {
     "side_mission": "",
     "missions": ["5127","5128"]
   },
+  "1087": {
+    "id": "1087",
+    "name": "Light of the Wisps",
+    "location_id": "105",
+    "side_mission": "",
+    "missions": ["5337","5338","5339","5340","5341"]
+  },
+  "1088": {
+    "id": "1088",
+    "name": "A Difference of Opinion",
+    "location_id": "105",
+    "side_mission": "",
+    "missions": ["5342","5343","5344","5345","5346","5347"]
+  },
+  "1089": {
+    "id": "1089",
+    "name": "Influence of The Void",
+    "location_id": "105",
+    "side_mission": "",
+    "missions": ["5348","5349","5350","5351","5352"]
+  },
+  "1090": {
+    "id": "1090",
+    "name": "Redemption",
+    "location_id": "105",
+    "side_mission": "",
+    "missions": ["5353","5354","5355","5356","5357","5358","5359","5360"]
+  },
   "1036": {
     "id": "1036",
     "name": "To Skyhaven",
@@ -2685,7 +2713,7 @@ var MISSIONS = {
       },
       {
         "id": "6003",
-       // "remove_mastery_level": "6"
+        "remove_mastery_level": "6"
       },
       {
         "id": "6002"
@@ -29046,6 +29074,1374 @@ var MISSIONS = {
       },
       {
         "id": "7060",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5337": {
+    "id": "5337",
+    "name": "Starlight, Starbright",
+    "commander": {
+        "id": "267"
+    },
+    "deck": [
+      {
+        "id": "1010"
+      },
+      {
+        "id": "1010"
+      },
+      {
+        "id": "1311"
+      },
+      {
+        "id": "1311"
+      },
+      {
+        "id": "1331"
+      },
+      {
+        "id": "2020"
+      },
+      {
+        "id": "6034"
+      },
+      {
+        "id": "1330"
+      },
+      {
+        "id": "1328",
+        "mastery_level": "2"
+      },
+      {
+        "id": "2002",
+        "mastery_level": "3"
+      },
+      {
+        "id": "1332",
+        "mastery_level": "4"
+      },
+      {
+        "id": "1632",
+        "mastery_level": "5"
+      },
+      {
+        "id": "6047",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6003",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5338": {
+    "id": "5338",
+    "name": "Strength in Numbers",
+    "commander": {
+        "id": "261"
+    },
+    "deck": [
+      {
+        "id": "1011"
+      },
+      {
+        "id": "1011"
+      },
+      {
+        "id": "1314"
+      },
+      {
+        "id": "1314"
+      },
+      {
+        "id": "2023"
+      },
+      {
+        "id": "6011"
+      },
+      {
+        "id": "2025"
+      },
+      {
+        "id": "2012"
+      },
+      {
+        "id": "1332",
+        "mastery_level": "2"
+      },
+      {
+        "id": "1632",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2008",
+        "mastery_level": "4"
+      },
+      {
+        "id": "2042",
+        "mastery_level": "5"
+      },
+      {
+        "id": "5045",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6032",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5339": {
+    "id": "5339",
+    "name": "Undead Assault",
+    "commander": {
+        "id": "265"
+    },
+    "deck": [
+      {
+        "id": "1315"
+      },
+      {
+        "id": "1315"
+      },
+      {
+        "id": "1319"
+      },
+      {
+        "id": "1319"
+      },
+      {
+        "id": "1331"
+      },
+      {
+        "id": "6011"
+      },
+      {
+        "id": "5033"
+      },
+      {
+        "id": "2032"
+      },
+      {
+        "id": "1332",
+        "mastery_level": "2"
+      },
+      {
+        "id": "2020",
+        "mastery_level": "3"
+      },
+      {
+        "id": "5035",
+        "mastery_level": "4"
+      },
+      {
+        "id": "2056",
+        "mastery_level": "5"
+      },
+      {
+        "id": "7028",
+        "mastery_level": "6"
+      },
+      {
+        "id": "5037",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5340": {
+    "id": "5340",
+    "name": "Hate of the Light",
+    "commander": {
+        "id": "265"
+    },
+    "deck": [
+      {
+        "id": "1613"
+      },
+      {
+        "id": "1613"
+      },
+      {
+        "id": "1319"
+      },
+      {
+        "id": "1319"
+      },
+      {
+        "id": "1331"
+      },
+      {
+        "id": "6016"
+      },
+      {
+        "id": "5021"
+      },
+      {
+        "id": "2019"
+      },
+      {
+        "id": "2042",
+        "mastery_level": "2"
+      },
+      {
+        "id": "7034",
+        "mastery_level": "3"
+      },
+      {
+        "id": "5035",
+        "mastery_level": "4"
+      },
+      {
+        "id": "2057",
+        "mastery_level": "5"
+      },
+      {
+        "id": "6076",
+        "mastery_level": "6"
+      },
+      {
+        "id": "7033",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5341": {
+    "id": "5341",
+    "name": "Residence of the Haunted",
+    "commander": {
+        "id": "261"
+    },
+    "deck": [
+      {
+        "id": "1317"
+      },
+      {
+        "id": "1317"
+      },
+      {
+        "id": "1311"
+      },
+      {
+        "id": "1311"
+      },
+      {
+        "id": "1331"
+      },
+      {
+        "id": "6016"
+      },
+      {
+        "id": "6031"
+      },
+      {
+        "id": "2020"
+      },
+      {
+        "id": "5015",
+        "mastery_level": "2"
+      },
+      {
+        "id": "5033",
+        "mastery_level": "3"
+      },
+      {
+        "id": "5035",
+        "mastery_level": "4"
+      },
+      {
+        "id": "5053",
+        "mastery_level": "5"
+      },
+      {
+        "id": "5013",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6027",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5342": {
+    "id": "5342",
+    "name": "Wrong Enemy",
+    "commander": {
+        "id": "264"
+    },
+    "deck": [
+      {
+        "id": "1017"
+      },
+      {
+        "id": "1017"
+      },
+      {
+        "id": "5006"
+      },
+      {
+        "id": "5006"
+      },
+      {
+        "id": "1030"
+      },
+      {
+        "id": "1029"
+      },
+      {
+        "id": "5080"
+      },
+      {
+        "id": "7045"
+      },
+      {
+        "id": "1032",
+        "mastery_level": "2"
+      },
+      {
+        "id": "2054",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2030",
+        "mastery_level": "4"
+      },
+      {
+        "id": "5041",
+        "mastery_level": "5"
+      },
+      {
+        "id": "5001",
+        "mastery_level": "6"
+      },
+      {
+        "id": "2022",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5343": {
+    "id": "5343",
+    "name": "Tarian's Offer",
+    "commander": {
+        "id": "264"
+    },
+    "deck": [
+      {
+        "id": "1019"
+      },
+      {
+        "id": "1019"
+      },
+      {
+        "id": "6022"
+      },
+      {
+        "id": "6022"
+      },
+      {
+        "id": "2040"
+      },
+      {
+        "id": "2058"
+      },
+      {
+        "id": "6075"
+      },
+      {
+        "id": "6046"
+      },
+      {
+        "id": "1326",
+        "mastery_level": "2"
+      },
+      {
+        "id": "1026",
+        "mastery_level": "3"
+      },
+      {
+        "id": "1329",
+        "mastery_level": "4"
+      },
+      {
+        "id": "5030",
+        "mastery_level": "5"
+      },
+      {
+        "id": "6001",
+        "mastery_level": "6"
+      },
+      {
+        "id": "7071",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5344": {
+    "id": "5344",
+    "name": "Malchior's Offer",
+    "commander": {
+        "id": "271"
+    },
+    "deck": [
+      {
+        "id": "1610"
+      },
+      {
+        "id": "1610"
+      },
+      {
+        "id": "5022"
+      },
+      {
+        "id": "5022"
+      },
+      {
+        "id": "2000"
+      },
+      {
+        "id": "2027"
+      },
+      {
+        "id": "7075"
+      },
+      {
+        "id": "1327"
+      },
+      {
+        "id": "2024",
+        "mastery_level": "2"
+      },
+      {
+        "id": "2021",
+        "mastery_level": "3"
+      },
+      {
+        "id": "1629",
+        "mastery_level": "4"
+      },
+      {
+        "id": "5020",
+        "mastery_level": "5"
+      },
+      {
+        "id": "5074",
+        "mastery_level": "6"
+      },
+      {
+        "id": "5019",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5345": {
+    "id": "5345",
+    "name": "The Fallen Aether Leader",
+    "commander": {
+        "id": "269"
+    },
+    "deck": [
+      {
+        "id": "6017"
+      },
+      {
+        "id": "6017"
+      },
+      {
+        "id": "1315"
+      },
+      {
+        "id": "1315"
+      },
+      {
+        "id": "6034"
+      },
+      {
+        "id": "6036"
+      },
+      {
+        "id": "7015"
+      },
+      {
+        "id": "1325"
+      },
+      {
+        "id": "2020",
+        "mastery_level": "2"
+      },
+      {
+        "id": "6031",
+        "mastery_level": "3"
+      },
+      {
+        "id": "1332",
+        "mastery_level": "4"
+      },
+      {
+        "id": "6034",
+        "mastery_level": "5"
+      },
+      {
+        "id": "1642",
+        "mastery_level": "6"
+      },
+      {
+        "id": "2007",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5346": {
+    "id": "5346",
+    "name": "Single Purpose",
+    "commander": {
+        "id": "236"
+    },
+    "deck": [
+      {
+        "id": "1014"
+      },
+      {
+        "id": "1014"
+      },
+      {
+        "id": "1315"
+      },
+      {
+        "id": "1315"
+      },
+      {
+        "id": "1025"
+      },
+      {
+        "id": "1027"
+      },
+      {
+        "id": "2009"
+      },
+      {
+        "id": "1026"
+      },
+      {
+        "id": "5040",
+        "mastery_level": "2"
+      },
+      {
+        "id": "7041",
+        "mastery_level": "3"
+      },
+      {
+        "id": "5028",
+        "mastery_level": "4"
+      },
+      {
+        "id": "2031",
+        "mastery_level": "5"
+      },
+      {
+        "id": "1042",
+        "mastery_level": "6"
+      },
+      {
+        "id": "1041",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5347": {
+    "id": "5347",
+    "name": "Dangerous Power",
+    "commander": {
+        "id": "264"
+    },
+    "deck": [
+      {
+        "id": "1017"
+      },
+      {
+        "id": "1017"
+      },
+      {
+        "id": "1319"
+      },
+      {
+        "id": "1319"
+      },
+      {
+        "id": "1025"
+      },
+      {
+        "id": "2002"
+      },
+      {
+        "id": "2057"
+      },
+      {
+        "id": "1026"
+      },
+      {
+        "id": "2027",
+        "mastery_level": "2"
+      },
+      {
+        "id": "6015",
+        "mastery_level": "3"
+      },
+      {
+        "id": "5005",
+        "mastery_level": "4"
+      },
+      {
+        "id": "5046",
+        "mastery_level": "5"
+      },
+      {
+        "id": "5043",
+        "mastery_level": "6"
+      },
+      {
+        "id": "5002",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5348": {
+    "id": "5348",
+    "name": "High Stakes",
+    "commander": {
+        "id": "269"
+    },
+    "deck": [
+      {
+        "id": "5017"
+      },
+      {
+        "id": "5017"
+      },
+      {
+        "id": "1311"
+      },
+      {
+        "id": "1311"
+      },
+      {
+        "id": "6029"
+      },
+      {
+        "id": "5065"
+      },
+      {
+        "id": "6011"
+      },
+      {
+        "id": "5021"
+      },
+      {
+        "id": "6031",
+        "mastery_level": "2"
+      },
+      {
+        "id": "1325",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2023",
+        "mastery_level": "4"
+      },
+      {
+        "id": "5080",
+        "mastery_level": "5"
+      },
+      {
+        "id": "1342",
+        "mastery_level": "6"
+      },
+      {
+        "id": "5034",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5349": {
+    "id": "5349",
+    "name": "Fight Your Way Through",
+    "commander": {
+        "id": "270"
+    },
+    "deck": [
+      {
+        "id": "1314"
+      },
+      {
+        "id": "1314"
+      },
+      {
+        "id": "1311"
+      },
+      {
+        "id": "1311"
+      },
+      {
+        "id": "7035"
+      },
+      {
+        "id": "5033"
+      },
+      {
+        "id": "7034"
+      },
+      {
+        "id": "2020"
+      },
+      {
+        "id": "2023",
+        "mastery_level": "2"
+      },
+      {
+        "id": "6042",
+        "mastery_level": "3"
+      },
+      {
+        "id": "1632",
+        "mastery_level": "4"
+      },
+      {
+        "id": "7021",
+        "mastery_level": "5"
+      },
+      {
+        "id": "7036",
+        "mastery_level": "6"
+      },
+      {
+        "id": "1341",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5350": {
+    "id": "5350",
+    "name": "A Familiar Face",
+    "commander": {
+        "id": "331"
+    },
+    "deck": [
+      {
+        "id": "5007"
+      },
+      {
+        "id": "5007"
+      },
+      {
+        "id": "1314"
+      },
+      {
+        "id": "1314"
+      },
+      {
+        "id": "5033"
+      },
+      {
+        "id": "6004"
+      },
+      {
+        "id": "6050"
+      },
+      {
+        "id": "2020"
+      },
+      {
+        "id": "6031",
+        "mastery_level": "2"
+      },
+      {
+        "id": "2009",
+        "mastery_level": "3"
+      },
+      {
+        "id": "6044",
+        "mastery_level": "4"
+      },
+      {
+        "id": "7021",
+        "mastery_level": "5"
+      },
+      {
+        "id": "6035",
+        "mastery_level": "6"
+      },
+      {
+        "id": "2015",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5351": {
+    "id": "5351",
+    "name": "General Garrick",
+    "commander": {
+        "id": "269"
+    },
+    "deck": [
+      {
+        "id": "1318"
+      },
+      {
+        "id": "1318"
+      },
+      {
+        "id": "1319"
+      },
+      {
+        "id": "1319"
+      },
+      {
+        "id": "6011"
+      },
+      {
+        "id": "5053"
+      },
+      {
+        "id": "6075"
+      },
+      {
+        "id": "6016"
+      },
+      {
+        "id": "6031",
+        "mastery_level": "2"
+      },
+      {
+        "id": "2032",
+        "mastery_level": "3"
+      },
+      {
+        "id": "6029",
+        "mastery_level": "4"
+      },
+      {
+        "id": "2008",
+        "mastery_level": "5"
+      },
+      {
+        "id": "1343",
+        "mastery_level": "6"
+      },
+      {
+        "id": "5009",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5352": {
+    "id": "5352",
+    "name": "Lost Sanity",
+    "commander": {
+        "id": "331"
+    },
+    "deck": [
+      {
+        "id": "1012"
+      },
+      {
+        "id": "1012"
+      },
+      {
+        "id": "1314"
+      },
+      {
+        "id": "1314"
+      },
+      {
+        "id": "6016"
+      },
+      {
+        "id": "5065"
+      },
+      {
+        "id": "6051"
+      },
+      {
+        "id": "6029"
+      },
+      {
+        "id": "6031",
+        "mastery_level": "2"
+      },
+      {
+        "id": "1032",
+        "mastery_level": "3"
+      },
+      {
+        "id": "5021",
+        "mastery_level": "4"
+      },
+      {
+        "id": "6046",
+        "mastery_level": "5"
+      },
+      {
+        "id": "5061",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6002",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5353": {
+    "id": "5353",
+    "name": "Found Sanity",
+    "commander": {
+        "id": "219"
+    },
+    "deck": [
+      {
+        "id": "1319"
+      },
+      {
+        "id": "1319"
+      },
+      {
+        "id": "1311"
+      },
+      {
+        "id": "1311"
+      },
+      {
+        "id": "1329"
+      },
+      {
+        "id": "6038"
+      },
+      {
+        "id": "6029"
+      },
+      {
+        "id": "5021"
+      },
+      {
+        "id": "1331",
+        "mastery_level": "2"
+      },
+      {
+        "id": "1327",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2049",
+        "mastery_level": "4"
+      },
+      {
+        "id": "6020",
+        "mastery_level": "5"
+      },
+      {
+        "id": "6037",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6019",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5354": {
+    "id": "5354",
+    "name": "Reformed Resolve",
+    "commander": {
+        "id": "269"
+    },
+    "deck": [
+      {
+        "id": "1313"
+      },
+      {
+        "id": "1313"
+      },
+      {
+        "id": "1318"
+      },
+      {
+        "id": "1318"
+      },
+      {
+        "id": "1326"
+      },
+      {
+        "id": "6031"
+      },
+      {
+        "id": "6061"
+      },
+      {
+        "id": "5021"
+      },
+      {
+        "id": "1331",
+        "mastery_level": "2"
+      },
+      {
+        "id": "2024",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2032",
+        "mastery_level": "4"
+      },
+      {
+        "id": "6066",
+        "mastery_level": "5"
+      },
+      {
+        "id": "6008",
+        "mastery_level": "6"
+      },
+      {
+        "id": "2026",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5355": {
+    "id": "5355",
+    "name": "The Void Spellstone",
+    "commander": {
+        "id": "269"
+    },
+    "deck": [
+      {
+        "id": "5017"
+      },
+      {
+        "id": "5017"
+      },
+      {
+        "id": "1313"
+      },
+      {
+        "id": "1313"
+      },
+      {
+        "id": "1632"
+      },
+      {
+        "id": "6075"
+      },
+      {
+        "id": "6011"
+      },
+      {
+        "id": "6036"
+      },
+      {
+        "id": "1626",
+        "mastery_level": "2"
+      },
+      {
+        "id": "2019",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2032",
+        "mastery_level": "4"
+      },
+      {
+        "id": "7021",
+        "mastery_level": "5"
+      },
+      {
+        "id": "6047",
+        "mastery_level": "6"
+      },
+      {
+        "id": "7037",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5356": {
+    "id": "5356",
+    "name": "Not One More Step",
+    "commander": {
+        "id": "236"
+    },
+    "deck": [
+      {
+        "id": "1614"
+      },
+      {
+        "id": "1614"
+      },
+      {
+        "id": "1014"
+      },
+      {
+        "id": "1014"
+      },
+      {
+        "id": "1025"
+      },
+      {
+        "id": "6069"
+      },
+      {
+        "id": "2029"
+      },
+      {
+        "id": "1031"
+      },
+      {
+        "id": "5072",
+        "mastery_level": "2"
+      },
+      {
+        "id": "5044",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2027",
+        "mastery_level": "4"
+      },
+      {
+        "id": "7021",
+        "mastery_level": "5"
+      },
+      {
+        "id": "5071",
+        "mastery_level": "6"
+      },
+      {
+        "id": "5079",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5357": {
+    "id": "5357",
+    "name": "A Matter of Trust",
+    "commander": {
+        "id": "277"
+    },
+    "deck": [
+      {
+        "id": "1315"
+      },
+      {
+        "id": "1315"
+      },
+      {
+        "id": "1014"
+      },
+      {
+        "id": "1014"
+      },
+      {
+        "id": "1025"
+      },
+      {
+        "id": "6056"
+      },
+      {
+        "id": "2029"
+      },
+      {
+        "id": "1030"
+      },
+      {
+        "id": "7041",
+        "mastery_level": "2"
+      },
+      {
+        "id": "7038",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2027",
+        "mastery_level": "4"
+      },
+      {
+        "id": "7004",
+        "mastery_level": "5"
+      },
+      {
+        "id": "6041",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6045",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5358": {
+    "id": "5358",
+    "name": "Judgement",
+    "commander": {
+        "id": "3"
+    },
+    "deck": [
+      {
+        "id": "1018"
+      },
+      {
+        "id": "1018"
+      },
+      {
+        "id": "1014"
+      },
+      {
+        "id": "1014"
+      },
+      {
+        "id": "1327"
+      },
+      {
+        "id": "7047"
+      },
+      {
+        "id": "5072"
+      },
+      {
+        "id": "1030"
+      },
+      {
+        "id": "7041",
+        "mastery_level": "2"
+      },
+      {
+        "id": "2054",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2021",
+        "mastery_level": "4"
+      },
+      {
+        "id": "7029",
+        "mastery_level": "5"
+      },
+      {
+        "id": "6071",
+        "mastery_level": "6"
+      },
+      {
+        "id": "5048",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5359": {
+    "id": "5359",
+    "name": "Chain Reaction",
+    "commander": {
+        "id": "3"
+    },
+    "deck": [
+      {
+        "id": "1311"
+      },
+      {
+        "id": "1311"
+      },
+      {
+        "id": "1317"
+      },
+      {
+        "id": "1317"
+      },
+      {
+        "id": "2058"
+      },
+      {
+        "id": "7047"
+      },
+      {
+        "id": "1331"
+      },
+      {
+        "id": "5035"
+      },
+      {
+        "id": "7075",
+        "mastery_level": "2"
+      },
+      {
+        "id": "1029",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2001",
+        "mastery_level": "4"
+      },
+      {
+        "id": "6029",
+        "mastery_level": "5"
+      },
+      {
+        "id": "1342",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6013",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5360": {
+    "id": "5360",
+    "name": "Hero's Sacrifice",
+    "commander": {
+        "id": "330"
+    },
+    "deck": [
+      {
+        "id": "1319"
+      },
+      {
+        "id": "1319"
+      },
+      {
+        "id": "1312"
+      },
+      {
+        "id": "1312"
+      },
+      {
+        "id": "1331"
+      },
+      {
+        "id": "1331"
+      },
+      {
+        "id": "1331"
+      },
+      {
+        "id": "2020"
+      },
+      {
+        "id": "6031",
+        "mastery_level": "2"
+      },
+      {
+        "id": "6031",
+        "mastery_level": "2"
+      },
+      {
+        "id": "6016",
+        "mastery_level": "4"
+      },
+      {
+        "id": "6011",
+        "mastery_level": "5"
+      },
+      {
+        "id": "6027",
+        "mastery_level": "6"
+      },
+      {
+        "id": "2026",
         "mastery_level": "7"
       },
     ]

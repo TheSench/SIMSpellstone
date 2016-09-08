@@ -19,7 +19,7 @@
         docHead.append('<script src="scripts/multi_threaded.js"></script>');
         docHead.append('<script id="worker_script" type="text/worker" src="scripts/worker.js"></script>');
     } else {
-        docHead.append('<script src="scripts/single_threaded.js"></script>');
         docHead.append('<script src="scripts/simulator_base.js"></script>');
+        docHead.append('<script src="scripts/single_threaded.js"></script>');
     }
 })();

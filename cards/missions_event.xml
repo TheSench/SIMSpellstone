@@ -9233,6 +9233,7 @@
       </line>
     </speech>
   </mission>
+  <!-- Event 15 Elemental -->
   <mission>
     <id>5313</id>
     <name>Long Live the King</name>
@@ -9637,7 +9638,7 @@
     <id>5325</id>
     <name>Friends in Low Places</name>
     <energy>11</energy>
-    <desc>Rayne examines the ground. She remembers hearing of a tribe of ground elementals that has made home in the Salt Wastes. If she can find them, they might lend their power against the goblins.</desc>
+    <desc>Rayne examines the ground. She remembers hearing of a tribe of ground elementals that has made the Salt Wastes their home. If she can find them, they might lend their power against the goblins.</desc>
     <commander id="291" />
     <deck>
       <card id="5017" name="Steam Tempest" />
@@ -9680,7 +9681,7 @@
     </deck>
     <speech>
       <line>
-        <commander>elyse</commander>
+        <commander>groundelemental2</commander>
         <enemy>0</enemy>
         <text>Who gives Milton head scratches! </text>
       </line>
@@ -9738,12 +9739,12 @@
     </deck>
     <speech>
       <line>
-        <commander>elyse</commander>
+        <commander>groundelemental2</commander>
         <enemy>0</enemy>
         <text>Goblins you say?  Ehh, those creatures make for messy neighbors. Big smelly piles of garbage everywhere.</text>
       </line>
       <line>
-        <commander>elyse</commander>
+        <commander>groundelemental2</commander>
         <enemy>0</enemy>
         <text>Milton cannot risk living so close to such smells. I will see what my tribe can do for you...</text>
       </line>
@@ -9881,7 +9882,7 @@
         <text>Typical orc treachery! Why'd I even listen to you?! </text>
       </line>
       <line>
-        <commander>elyse</commander>
+        <commander>Portrait_King_Goblin</commander>
         <enemy>1</enemy>
         <text>GUARD! Call in the air troops! </text>
       </line>
@@ -10032,6 +10033,805 @@
         <commander>Portrait_King_Goblin</commander>
         <enemy>1</enemy>
         <text>Whaaaat?! You're no goblin! I've been tricked!</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Event 16 -->
+  <mission>
+    <id>5337</id>
+    <name>Starlight, Starbright</name>
+    <energy>11</energy>
+    <desc>Malchior and Tarian return to the strange building that mysteriously appeared near The Void. Malchior waves a glass bottle around frantically, trying to capture as many Will-O-Wisps as he can.</desc>
+    <commander id="267" />
+    <deck>
+      <card id="1010" name="Lightning Elemental" />
+      <card id="1010" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1311" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="2020" name="Tidetaken Fighter" />
+      <card id="6034" name="Bone Viper" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="1328" mastery_level="2" name="Poison Bullfrog" />
+      <card id="2002" mastery_level="3" name="Lantern Guardian" />
+      <card id="1332" mastery_level="4" name="Vampiric Emira" />
+      <card id="1632" mastery_level="5" name="Shadow Rider" />
+      <card id="6047" mastery_level="6" name="Wither" />
+      <card id="6003" mastery_level="7" name="Black Knight" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Bright wight, bright light, be contained by my glass prison's might!</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>...</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>Yes, do continue. I'll fend off the monsters while you play hopscotch.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5338</id>
+    <name>Strength in Numbers</name>
+    <energy>11</energy>
+    <desc>Tarian continues to fight the monsters while Malchior concentrates on his research. The wisps melt together into Malchior's bottle, seeming to form a single mass.</desc>
+    <commander id="261" />
+    <deck>
+      <card id="1011" name="Archive Keeper" />
+      <card id="1011" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="1314" />
+      <card id="2023" name="Grizzly Terror" />
+      <card id="6011" name="Bomb Spirit" />
+      <card id="2025" name="Blight Knight" />
+      <card id="2012" name="Frogling Swarm" />
+      <card id="1332" mastery_level="2" name="Vampiric Emira" />
+      <card id="1632" mastery_level="3" name="Shadow Rider" />
+      <card id="2008" mastery_level="4" name="Shadow of Ash" />
+      <card id="2042" mastery_level="5" name="Carrion Hunter" />
+      <card id="5045" mastery_level="6" name="Echo Elemental" />
+      <card id="6032" mastery_level="7" name="Mumohotep" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text> Isn't this exciting? These little bugger flames actually seem to repel the energies of The Void. If we find their source, we might learn something to combat The Void's power.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5339</id>
+    <name>Undead Assault</name>
+    <energy>11</energy>
+    <desc>Undead roam the area, preying on unsuspecting travelers. Tarian fights them off while Malchior collects Will-O-Wisps.</desc>
+    <commander id="265" />
+    <deck>
+      <card id="1315" name="Nix Elemental" />
+      <card id="1315" />
+      <card id="1319" name="Wraith" />
+      <card id="1319" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="6011" name="Bomb Spirit" />
+      <card id="5033" name="Lost Soul" />
+      <card id="2032" name="Brimstone" />
+      <card id="1332" mastery_level="2" name="Vampiric Emira" />
+      <card id="2020" mastery_level="3" name="Tidetaken Fighter" />
+      <card id="5035" mastery_level="4" name="Vapor Guard" />
+      <card id="2056" mastery_level="5" name="Drainor" />
+      <card id="7028" mastery_level="6" name="Frozen Tide" />
+      <card id="5037" mastery_level="7" name="Dauntless Baneblade" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5340</id>
+    <name>Hate of the Light</name>
+    <energy>11</energy>
+    <desc>The monsters are attracted to the light, trying desperately to reach Malchior and his bottle of wisps.</desc>
+    <commander id="265" />
+    <deck>
+      <card id="1613" name="Acidic Spider" />
+      <card id="1613" />
+      <card id="1319" name="Wraith" />
+      <card id="1319" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="6016" name="Skeletal Giant" />
+      <card id="5021" name="Tower Spirit" />
+      <card id="2019" name="Chalistomper" />
+      <card id="2042" mastery_level="2" name="Carrion Hunter" />
+      <card id="7034" mastery_level="3" name="Spore Elk" />
+      <card id="5035" mastery_level="4" name="Vapor Guard" />
+      <card id="2057" mastery_level="5" name="Twister" />
+      <card id="6076" mastery_level="6" name="Magmatic Bang" />
+      <card id="7033" mastery_level="7" name="Treebond Skull" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5341</id>
+    <name>Residence of the Haunted</name>
+    <energy>11</energy>
+    <desc>The two follow the trail to the mysterious building. They pass rows of gravestones on the path. Light shines from inside the building's windows.</desc>
+    <commander id="261" />
+    <deck>
+      <card id="1317" name="Fire Imp" />
+      <card id="1317" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1311" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="6016" name="Skeletal Giant" />
+      <card id="6031" name="Iceblood Assassin" />
+      <card id="2020" name="Tidetaken Fighter" />
+      <card id="5015" mastery_level="2" name="Gravity Swell" />
+      <card id="5033" mastery_level="3" name="Lost Soul" />
+      <card id="5035" mastery_level="4" name="Vapor Guard" />
+      <card id="5053" mastery_level="5" name="Anura Witch" />
+      <card id="5013" mastery_level="6" name="Radiance" />
+      <card id="6027" mastery_level="7" name="Frigela, the Dread" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text> Look at how the light converges on that shack. Fascinating. Closer, Tarian! We must get closer!</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>Yes, yes.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5342</id>
+    <name>Wrong Enemy</name>
+    <energy>11</energy>
+    <desc>Malchior and Tarian find that another group has already reached the shack's entrance. They are wearing clothes and cloaks like adventurers.</desc>
+    <commander id="264" />
+    <deck>
+      <card id="1017" name="Judgment" />
+      <card id="1017" />
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5006" />
+      <card id="1030" name="Paladin" />
+      <card id="1029" name="Elementalist" />
+      <card id="5080" name="Djinnflame Brawler" />
+      <card id="7045" name="Sakura" />
+      <card id="1032" mastery_level="2" name="Lunar Elemental" />
+      <card id="2054" mastery_level="3" name="Pack Runner" />
+      <card id="2030" mastery_level="4" name="Ebon Duelist" />
+      <card id="5041" mastery_level="5" name="Skylance Raiders" />
+      <card id="5001" mastery_level="6" name="Aven Skypiercer" />
+      <card id="2022" mastery_level="7" name="Avalanche Equine" />
+    </deck>
+    <speech>
+      <line>
+        <commander>winteradventurers</commander>
+        <enemy>1</enemy>
+        <text>Blast... more Undead! Don't let 'em get through!</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>Don't stare. It's rude.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5343</id>
+    <name>Tarian's Offer</name>
+    <energy>11</energy>
+    <desc>The adventurers are panicked by Tarian's appearance. Tarian tries to reason with the adventurers.</desc>
+    <commander id="264" />
+    <deck>
+      <card id="1019" name="Oracle" />
+      <card id="1019" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="6022" />
+      <card id="2040" name="Owlmancer" />
+      <card id="2058" name="Bismuth Bully" />
+      <card id="6075" name="Consuming Mireling" />
+      <card id="6046" name="Celerity" />
+      <card id="1326" mastery_level="2" name="Titan of Fire" />
+      <card id="1026" mastery_level="3" name="Glass Colossus" />
+      <card id="1329" mastery_level="4" name="Shadow Assassin" />
+      <card id="5030" mastery_level="5" name="Loxphas Mage" />
+      <card id="6001" mastery_level="6" name="Orobas" />
+      <card id="7071" mastery_level="7" name="Gorilleus" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>Stand down or face our wrath.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5344</id>
+    <name>Malchior's Offer</name>
+    <energy>11</energy>
+    <desc>Tarian's threat has only worked the adventurers into a greater frenzy. Malchior tries to reason with the adventurers on his friend's behalf.</desc>
+    <commander id="271" />
+    <deck>
+      <card id="1610" name="Ranger" />
+      <card id="1610" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="5022" />
+      <card id="2000" name="Wasteland Nomad" />
+      <card id="2027" name="Halo Mage" />
+      <card id="7075" name="Diamode" />
+      <card id="1327" name="Fallen Angel" />
+      <card id="2024" mastery_level="2" name="Dusk Noble" />
+      <card id="2021" mastery_level="3" name="Snowstep Ranger" />
+      <card id="1629" mastery_level="4" name="Rock Titan" />
+      <card id="5020" mastery_level="5" name="Frost Frog" />
+      <card id="5074" mastery_level="6" name="Godfried the Hunter" />
+      <card id="5019" mastery_level="7" name="Vivid Aurora" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Stand aside, Tarian, I'll handle negotiations.</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>CEASE YOUR STRUGGLES OR PERISH IN FIRE!</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Oh dear. They still appear to desire the fight.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5345</id>
+    <name>The Fallen Aether Leader</name>
+    <energy>11</energy>
+    <desc>The adventurers have been defeated, when a familiar face intervenes...</desc>
+    <commander id="269" />
+    <deck>
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="6017" />
+      <card id="1315" name="Nix Elemental" />
+      <card id="1315" />
+      <card id="6034" name="Bone Viper" />
+      <card id="6036" name="Cursed Ogre" />
+      <card id="7015" name="Bog Aberration" />
+      <card id="1325" name="Chaos Storm" />
+      <card id="2020" mastery_level="2" name="Tidetaken Fighter" />
+      <card id="6031" mastery_level="3" name="Iceblood Assassin" />
+      <card id="1332" mastery_level="4" name="Vampiric Emira" />
+      <card id="6034" mastery_level="5" name="Bone Viper" />
+      <card id="1642" mastery_level="6" name="Icestone Beast" />
+      <card id="2007" mastery_level="7" name="Platinum Golem" />
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>1</enemy>
+        <text>ENOUGH!</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>Samael? What are you doing here?!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5346</id>
+    <name>Single Purpose</name>
+    <energy>11</energy>
+    <desc>Samael explains that he had originally hired the adventurers. He also explains his true purpose for coming out to such a desolate area.</desc>
+    <commander id="236" />
+    <deck>
+      <card id="1014" name="Cherub" />
+      <card id="1014" />
+      <card id="1315" name="Nix Elemental" />
+      <card id="1315" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="2009" name="Sapling" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="5040" mastery_level="2" name="Winged Trumpeter" />
+      <card id="7041" mastery_level="3" name="Feral Angel" />
+      <card id="5028" mastery_level="4" name="Winter Blacksmith" />
+      <card id="2031" mastery_level="5" name="Dryad" />
+      <card id="1042" mastery_level="6" name="Archgeneral" />
+      <card id="1041" mastery_level="7" name="Avenging Angel" />
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>1</enemy>
+        <text>This place reeks of The Void. I shall dismantle its power before some fool seeks to harness it.</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>1</enemy>
+        <text>Now... what is your purpose here?</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>We're here to harness the power of The Void!</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>Malchior!! </text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5347</id>
+    <name>Dangerous Power</name>
+    <energy>11</energy>
+    <desc>Samael is furious that Malchior and Tarian are researching ways to use The Void.</desc>
+    <commander id="264" />
+    <deck>
+      <card id="1017" name="Judgment" />
+      <card id="1017" />
+      <card id="1319" name="Wraith" />
+      <card id="1319" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="2057" name="Twister" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="2027" mastery_level="2" name="Halo Mage" />
+      <card id="6015" mastery_level="3" name="Acidic Sludge" />
+      <card id="5005" mastery_level="4" name="Storm Giant" />
+      <card id="5046" mastery_level="5" name="Dawn" />
+      <card id="5043" mastery_level="6" name="Empyrean" />
+      <card id="5002" mastery_level="7" name="Twilight Mirror" />
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>1</enemy>
+        <text>I would expect no less idiocy from agents of Chaos.</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>1</enemy>
+        <text>Men, eliminate these fools! I shall find the source where The Void's power emanates, and destroy it myself!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5348</id>
+    <name>High Stakes</name>
+    <energy>11</energy>
+    <desc>After dispatching Samael's guard, Malchior and Tarian enter the shack. They must search quickly if they are to find the source of The Void's power before Samael.</desc>
+    <commander id="269" />
+    <deck>
+      <card id="5017" name="Steam Tempest" />
+      <card id="5017" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1311" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="5065" name="Hive Guard" />
+      <card id="6011" name="Bomb Spirit" />
+      <card id="5021" name="Tower Spirit" />
+      <card id="6031" mastery_level="2" name="Iceblood Assassin" />
+      <card id="1325" mastery_level="3" name="Chaos Storm" />
+      <card id="2023" mastery_level="4" name="Grizzly Terror" />
+      <card id="5080" mastery_level="5" name="Djinnflame Brawler" />
+      <card id="1342" mastery_level="6" name="Ronin" />
+      <card id="5034" mastery_level="7" name="Skyward Guardian" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5349</id>
+    <name>Fight Your Way Through</name>
+    <energy>11</energy>
+    <desc>The inside of the building is filled with Undead. Malchior and Tarian must fight their way through.</desc>
+    <commander id="270" />
+    <deck>
+      <card id="1314" name="Skeletal Hound" />
+      <card id="1314" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1311" />
+      <card id="7035" name="Carrion Tiger" />
+      <card id="5033" name="Lost Soul" />
+      <card id="7034" name="Spore Elk" />
+      <card id="2020" name="Tidetaken Fighter" />
+      <card id="2023" mastery_level="2" name="Grizzly Terror" />
+      <card id="6042" mastery_level="3" name="Shadow of Thunder" />
+      <card id="1632" mastery_level="4" name="Shadow Rider" />
+      <card id="7021" mastery_level="5" name="Shadow Elemental" />
+      <card id="7036" mastery_level="6" name="Deepwood Corpse" />
+      <card id="1341" mastery_level="7" name="Blood Demon" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5350</id>
+    <name>A Familiar Face</name>
+    <energy>11</energy>
+    <desc>Malchior spots a gigantic Spellstone, laced with black magic. Before they can get closer, Malchior and Tarian encounter another unexpected guest...</desc>
+    <commander id="331" />
+    <deck>
+      <card id="5007" name="Arcane Scroll" />
+      <card id="5007" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="1314" />
+      <card id="5033" name="Lost Soul" />
+      <card id="6004" name="Branding Construct" />
+      <card id="6050" name="Wortwog" />
+      <card id="2020" name="Tidetaken Fighter" />
+      <card id="6031" mastery_level="2" name="Iceblood Assassin" />
+      <card id="2009" mastery_level="3" name="Sapling" />
+      <card id="6044" mastery_level="4" name="Firewalker" />
+      <card id="7021" mastery_level="5" name="Shadow Elemental" />
+      <card id="6035" mastery_level="6" name="Demos" />
+      <card id="2015" mastery_level="7" name="Pumpking" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Over here! This is no ordinary Spellstone. Look at those odd tendrils of magic around it - it must be the medium for The Void's power. </text>
+      </line>
+      <line>
+        <commander>maniacgeneral</commander>
+        <enemy>1</enemy>
+        <text>Well well well... What do we have here, MORE foolish adventurers?!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5351</id>
+    <name>General Garrick</name>
+    <energy>11</energy>
+    <desc>Tarian recognizes their assailant as one of his own men. The other had disappeared some time ago. Yet the man doesn't seem to recognize Tarian...</desc>
+    <commander id="269" />
+    <deck>
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="1318" />
+      <card id="1319" name="Wraith" />
+      <card id="1319" />
+      <card id="6011" name="Bomb Spirit" />
+      <card id="5053" name="Anura Witch" />
+      <card id="6075" name="Consuming Mireling" />
+      <card id="6016" name="Skeletal Giant" />
+      <card id="6031" mastery_level="2" name="Iceblood Assassin" />
+      <card id="2032" mastery_level="3" name="Brimstone" />
+      <card id="6029" mastery_level="4" name="Spinehead Stalker" />
+      <card id="2008" mastery_level="5" name="Shadow of Ash" />
+      <card id="1343" mastery_level="6" name="Firehorn" />
+      <card id="5009" mastery_level="7" name="Royal Guardian" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>General Garrick?! I thought you were dead!</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>You know the man?</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>When The Void first appeared, I sent him to investigate. I haven't seen him in months.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5352</id>
+    <name>Lost Sanity</name>
+    <energy>11</energy>
+    <desc>The Chaos general fights recklessly, with Undead joining his struggle against Tarian and Malchior.</desc>
+    <commander id="331" />
+    <deck>
+      <card id="1012" name="Cloud Sylph" />
+      <card id="1012" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="1314" />
+      <card id="6016" name="Skeletal Giant" />
+      <card id="5065" name="Hive Guard" />
+      <card id="6051" name="Treeblade Thief" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="6031" mastery_level="2" name="Iceblood Assassin" />
+      <card id="1032" mastery_level="3" name="Lunar Elemental" />
+      <card id="5021" mastery_level="4" name="Tower Spirit" />
+      <card id="6046" mastery_level="5" name="Celerity" />
+      <card id="5061" mastery_level="6" name="Thunderfist Rex" />
+      <card id="6002" mastery_level="7" name="Spirit of Madness" />
+    </deck>
+    <speech>
+      <line>
+        <commander>maniacgeneral</commander>
+        <enemy>1</enemy>
+        <text>You have no idea what you're dealing with!</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Look at how the Void Spellstone's power reaches towards him... He's being possessed!</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>Not for long...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5353</id>
+    <name>Found Sanity</name>
+    <energy>11</energy>
+    <desc>Malchior sprinkles the Will-O-Wisps' essence upon the Chaos general. </desc>
+    <commander id="219" />
+    <deck>
+      <card id="1319" name="Wraith" />
+      <card id="1319" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1311" />
+      <card id="1329" name="Shadow Assassin" />
+      <card id="6038" name="Hemlock" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="5021" name="Tower Spirit" />
+      <card id="1331" mastery_level="2" name="Fallen Soldiers" />
+      <card id="1327" mastery_level="3" name="Fallen Angel" />
+      <card id="2049" mastery_level="4" name="Contrapede" />
+      <card id="6020" mastery_level="5" name="Croak Piercer" />
+      <card id="6037" mastery_level="6" name="Keeper of Souls" />
+      <card id="6019" mastery_level="7" name="Canopy Horror" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>What...? Where am I?</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>You've done it. He's returning to his senses.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5354</id>
+    <name>Reformed Resolve</name>
+    <energy>11</energy>
+    <desc>General Garrick joins Tarian and Malchior, pledging to stop The Void once more.</desc>
+    <commander id="269" />
+    <deck>
+      <card id="1313" name="Lavafrog" />
+      <card id="1313" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="1318" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="6031" name="Iceblood Assassin" />
+      <card id="6061" name="Decagon" />
+      <card id="5021" name="Tower Spirit" />
+      <card id="1331" mastery_level="2" name="Fallen Soldiers" />
+      <card id="2024" mastery_level="3" name="Dusk Noble" />
+      <card id="2032" mastery_level="4" name="Brimstone" />
+      <card id="6066" mastery_level="5" name="Psychic Beetle" />
+      <card id="6008" mastery_level="6" name="Thousand Arm Demon" />
+      <card id="2026" mastery_level="7" name="Lazarus" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>I'm so sorry, Lord Tarian. What can I do to make this up to you?</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>Rise up and prepare to fight against The Void once more.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5355</id>
+    <name>The Void Spellstone</name>
+    <energy>11</energy>
+    <desc>With General Garrick's sanity returned, the group returns its attention to the odd Spellstone. There must be some kind of secret for them to unlock!</desc>
+    <commander id="269" />
+    <deck>
+      <card id="5017" name="Steam Tempest" />
+      <card id="5017" />
+      <card id="1313" name="Lavafrog" />
+      <card id="1313" />
+      <card id="1632" name="Shadow Rider" />
+      <card id="6075" name="Consuming Mireling" />
+      <card id="6011" name="Bomb Spirit" />
+      <card id="6036" name="Cursed Ogre" />
+      <card id="1626" mastery_level="2" name="Tusker" />
+      <card id="2019" mastery_level="3" name="Chalistomper" />
+      <card id="2032" mastery_level="4" name="Brimstone" />
+      <card id="7021" mastery_level="5" name="Shadow Elemental" />
+      <card id="6047" mastery_level="6" name="Wither" />
+      <card id="7037" mastery_level="7" name="Bane" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5356</id>
+    <name>Not One More Step</name>
+    <energy>11</energy>
+    <desc>Before the group can study the Spellstone further, Samael interrupts!</desc>
+    <commander id="236" />
+    <deck>
+      <card id="1614" name="Druid" />
+      <card id="1614" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="6069" name="Arachnolite" />
+      <card id="2029" name="Sly Critters" />
+      <card id="1031" name="Noble Champion" />
+      <card id="5072" mastery_level="2" name="Blind Seer" />
+      <card id="5044" mastery_level="3" name="Telepathic Magi" />
+      <card id="2027" mastery_level="4" name="Halo Mage" />
+      <card id="7021" mastery_level="5" name="Shadow Elemental" />
+      <card id="5071" mastery_level="6" name="Stoic Watcher" />
+      <card id="5079" mastery_level="7" name="Cyclopnid" />
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>1</enemy>
+        <text>Stand aside, all of you! That Spellstone is made of pure evil.</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Not one step closer, sir. Lord Tarian needs space to observe the stone.</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>1</enemy>
+        <text>You... I remember you, you're possessed by The Void!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5357</id>
+    <name>A Matter of Trust</name>
+    <energy>11</energy>
+    <desc>Tarian and Malchior trust that General Garrick has returned to his senses. However, Samael fears that the presence of The Void might spread.</desc>
+    <commander id="277" />
+    <deck>
+      <card id="1315" name="Nix Elemental" />
+      <card id="1315" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="6056" name="Potoo" />
+      <card id="2029" name="Sly Critters" />
+      <card id="1030" name="Paladin" />
+      <card id="7041" mastery_level="2" name="Feral Angel" />
+      <card id="7038" mastery_level="3" name="Sol King" />
+      <card id="2027" mastery_level="4" name="Halo Mage" />
+      <card id="7004" mastery_level="5" name="Ice Golem" />
+      <card id="6041" mastery_level="6" name="Reaper" />
+      <card id="6045" mastery_level="7" name="Darkflame" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5358</id>
+    <name>Judgement</name>
+    <energy>11</energy>
+    <desc>General Garrick worries he is vulnerable to The Void's influence.</desc>
+    <commander id="3" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" />
+      <card id="1327" name="Fallen Angel" />
+      <card id="7047" name="Shaman of the Wild" />
+      <card id="5072" name="Blind Seer" />
+      <card id="1030" name="Paladin" />
+      <card id="7041" mastery_level="2" name="Feral Angel" />
+      <card id="2054" mastery_level="3" name="Pack Runner" />
+      <card id="2021" mastery_level="4" name="Snowstep Ranger" />
+      <card id="7029" mastery_level="5" name="Owl Griffin" />
+      <card id="6071" mastery_level="6" name="Masked Heraid" />
+      <card id="5048" mastery_level="7" name="Highborn Rose" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Lord Samael is right. The Void could still be inside my mind. Let me take responsibility.</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>We did not save you just so you could die!</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>1</enemy>
+        <text>I will destroy him and The Void's power source!!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5359</id>
+    <name>Chain Reaction</name>
+    <energy>11</energy>
+    <desc>Samael's power is great. He unleashes an attack so powerful that it ruptures the Void Spellstone in a great burst of light!</desc>
+    <commander id="3" />
+    <deck>
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1311" />
+      <card id="1317" name="Fire Imp" />
+      <card id="1317" />
+      <card id="2058" name="Bismuth Bully" />
+      <card id="7047" name="Shaman of the Wild" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="5035" name="Vapor Guard" />
+      <card id="7075" mastery_level="2" name="Diamode" />
+      <card id="1029" mastery_level="3" name="Elementalist" />
+      <card id="2001" mastery_level="4" name="Dunetooth Demon" />
+      <card id="6029" mastery_level="5" name="Spinehead Stalker" />
+      <card id="1342" mastery_level="6" name="Ronin" />
+      <card id="6013" mastery_level="7" name="Rust Goliath" />
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>1</enemy>
+        <text>It is done. I have clipped the influence of The Void in this region.</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>No, a chain reaction has started! Everyone, watch out!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5360</id>
+    <name>Hero's Sacrifice</name>
+    <energy>11</energy>
+    <desc>The Spellstone breaks to reveal a creature of horrible might. It slams Samael aside with one sweep of its claws, before turning against the group...</desc>
+    <commander id="330" />
+    <deck>
+      <card id="1319" name="Wraith" />
+      <card id="1319" />
+      <card id="1312" name="Scythe Demon" />
+      <card id="1312" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="1331" />
+      <card id="1331" />
+      <card id="2020" name="Tidetaken Fighter" />
+      <card id="6031" mastery_level="2" name="Iceblood Assassin" />
+      <card id="6031" mastery_level="2" />
+      <card id="6016" mastery_level="4" name="Skeletal Giant" />
+      <card id="6011" mastery_level="5" name="Bomb Spirit" />
+      <card id="6027" mastery_level="6" name="Frigela, the Dread" />
+      <card id="2026" mastery_level="7" name="Lazarus" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>UWRAAAAARGH!</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Lord Tarian, please take the Aether leader and your friend to safety. I will stay behind and fight this foe.</text>
       </line>
     </speech>
   </mission>

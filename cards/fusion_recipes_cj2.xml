@@ -3042,6 +3042,22 @@
     <card_id>27079</card_id>
     <resource card_id="17079" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17080</card_id>
+    <resource card_id="7080" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27080</card_id>
+    <resource card_id="17080" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17081</card_id>
+    <resource card_id="7081" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27081</card_id>
+    <resource card_id="17081" number="2" />
+  </fusion_recipe>
   <!-- END SET 3000 - Premium -->
   <!-- START SET 8000 - Story Element Assaults -->
   <fusion_recipe>

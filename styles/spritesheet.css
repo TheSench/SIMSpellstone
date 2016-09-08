@@ -917,6 +917,20 @@
 .sprite-Star_Elemental_Beast_A{ background-position: -84px -0px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
 .sprite-Blue_Flame_Fighter_Elemental_B{ background-position: -168px -0px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
 .sprite-Blue_Flame_Fighter_Elemental_A{ background-position: -252px -0px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
+.sprite-New3_A{ background-position: -336px -0px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
+.sprite-New10_A{ background-position: -420px -0px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
+.sprite-New1_B{ background-position: -504px -0px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
+.sprite-New1_A{ background-position: -588px -0px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
+.sprite-New11_B{ background-position: -672px -0px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
+.sprite-New3_B{ background-position: -756px -0px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
+.sprite-New5_B{ background-position: -0px -120px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
+.sprite-New11_A{ background-position: -84px -120px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
+.sprite-New5_A{ background-position: -168px -120px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
+.sprite-New10_B{ background-position: -252px -120px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
+.sprite-New8_A{ background-position: -336px -120px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
+.sprite-New8_B{ background-position: -420px -120px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
+.sprite-New6_A{ background-position: -504px -120px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
+.sprite-New6_B{ background-position: -588px -120px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
 .portrait-portrait_aetherguardian{ background-position: -0px -0px; background-image: url('../res/sprites/PortraitSheet1.jpg');}
 .portrait-portrait_angelknight{ background-position: -84px -0px; background-image: url('../res/sprites/PortraitSheet1.jpg');}
 .portrait-portrait_angelqueen{ background-position: -168px -0px; background-image: url('../res/sprites/PortraitSheet1.jpg');}
@@ -1016,3 +1030,6 @@
 .portrait-portrait_new2{ background-position: -504px -900px; background-image: url('../res/sprites/PortraitSheet1.jpg');}
 .portrait-portrait_Portrait_King_Goblin{ background-position: -588px -900px; background-image: url('../res/sprites/PortraitSheet1.jpg');}
 .portrait-portrait_Portrait_Undercover_Angel_Spy{ background-position: -672px -900px; background-image: url('../res/sprites/PortraitSheet1.jpg');}
+.portrait-portrait_oasismonster{ background-position: -756px -900px; background-image: url('../res/sprites/PortraitSheet1.jpg');}
+.portrait-portrait_groundelemental2{ background-position: -0px -0px; background-image: url('../res/sprites/PortraitSheet2.jpg');}
+.portrait-portrait_king_goblin{ background-position: -84px -0px; background-image: url('../res/sprites/PortraitSheet2.jpg');}

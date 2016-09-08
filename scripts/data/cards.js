@@ -36978,6 +36978,7 @@ var CARDS = {
   "5081": {
     "id": "5081",
     "name": "Brahzee",
+    "desc": "\"... an' that cloud looks like a... long legged... sheep... thing... Hey, is it looking at us?\" - Klepplo Goblin Trader",
     "picture": "Giant_Cloud_Sheep_A",
     "rarity": "3",
     "set": "3000",
@@ -54119,7 +54120,8 @@ var CARDS = {
   },
   "6077": {
     "id": "6077",
-    "name": "Lizinx",
+    "name": "Enigma",
+    "desc": "Enigma have been known to challenge adventurers with complex puzzles with the prize being their very life.",
     "picture": "Enigma_Elemental_A",
     "rarity": "3",
     "set": "3000",
@@ -54130,10 +54132,6 @@ var CARDS = {
     "health": 12,
     "cost": 3,
     "skill": [
-      {
-        "id": "evade",
-        "x": 1,
-      },
       {
         "id": "weaken",
         "x": 1,
@@ -54147,7 +54145,21 @@ var CARDS = {
     "upgrades": {
       "2": {
         "health": 13,
-        "skill": [],
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+        ],
       },
       "3": {
         "attack": 7,
@@ -54179,7 +54191,7 @@ var CARDS = {
   },
   "16077": {
     "id": "16077",
-    "name": "Lizinx Scribe",
+    "name": "Enigma Scribe",
     "picture": "Enigma_Elemental_A",
     "rarity": "3",
     "set": "3000",
@@ -54253,7 +54265,7 @@ var CARDS = {
   },
   "26077": {
     "id": "26077",
-    "name": "Lizinx Solutionist",
+    "name": "Enigma Solutionist",
     "picture": "Enigma_Elemental_B",
     "rarity": "3",
     "set": "3000",
@@ -73485,6 +73497,239 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "7080": {
+    "id": "7080",
+    "name": "Spornacle",
+    "picture": "Fungus_Elemental_A",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "5",
+    "attack": 3,
+    "health": 9,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 1,
+      },
+      {
+        "id": "poison",
+        "x": 1,
+      },
+      {
+        "id": "leech",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 10,
+        "skill": [],
+      },
+      "3": {
+        "health": 11,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+          },
+          {
+            "id": "poison",
+            "x": 2,
+          },
+          {
+            "id": "leech",
+            "x": 1,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+          },
+          {
+            "id": "poison",
+            "x": 2,
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "health": 12,
+        "skill": [],
+      },
+    }
+  },
+  "17080": {
+    "id": "17080",
+    "name": "Spornacle Latcher",
+    "picture": "Fungus_Elemental_A",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "5",
+    "attack": 4,
+    "health": 13,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 1,
+      },
+      {
+        "id": "poison",
+        "x": 2,
+      },
+      {
+        "id": "leech",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+          },
+          {
+            "id": "poison",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+        ],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+          },
+          {
+            "id": "poison",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 14,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+          },
+          {
+            "id": "poison",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "health": 15,
+        "skill": [],
+      },
+    }
+  },
+  "27080": {
+    "id": "27080",
+    "name": "Spornacle Fumer",
+    "picture": "Fungus_Elemental_B",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "5",
+    "attack": 4,
+    "health": 15,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 1,
+      },
+      {
+        "id": "poison",
+        "x": 4,
+      },
+      {
+        "id": "leech",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 16,
+        "skill": [],
+      },
+      "3": {
+        "health": 17,
+        "skill": [],
+      },
+      "4": {
+        "attack": 5,
+        "skill": [],
+      },
+      "5": {
+        "health": 18,
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+          },
+          {
+            "id": "poison",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 5,
+          },
+          {
+            "id": "leech",
+            "x": 5,
           },
         ],
       },
@@ -99118,7 +99363,7 @@ var CARDS = {
   "328": {
     "id": "328",
     "name": "Plateau Monster",
-    "picture": "portrait_necromancer",
+    "picture": "portrait_oasismonster",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -99209,7 +99454,7 @@ var CARDS = {
   "329": {
     "id": "329",
     "name": "Reks",
-    "picture": "portrait_necromancer",
+    "picture": "portrait_king_goblin",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -99303,6 +99548,205 @@ var CARDS = {
             "id": "imbue",
             "x": 3,
             "s": "poison",
+          },
+        ],
+      },
+    }
+  },
+  "330": {
+    "id": "330",
+    "name": "Undead Brute Boss",
+    "picture": "portrait_necromancer",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "2",
+    "health": 32,
+    "skill": [
+      {
+        "id": "jam",
+        "c": 4,
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 37,
+        "skill": [
+          {
+            "id": "enfeeble",
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+          },
+        ],
+      },
+      "3": {
+        "health": 42,
+        "skill": [
+          {
+            "id": "enfeeble",
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "health": 47,
+        "skill": [
+          {
+            "id": "enfeeble",
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "health": 52,
+        "skill": [
+          {
+            "id": "enfeeble",
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 4,
+          },
+        ],
+      },
+      "6": {
+        "health": 58,
+        "skill": [
+          {
+            "id": "enfeeble",
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 5,
+          },
+        ],
+      },
+    }
+  },
+  "331": {
+    "id": "331",
+    "name": "Void Infected General",
+    "picture": "portrait_maniacgeneral",
+    "rarity": "3",
+    "set": "9999",
+    "card_type": "1",
+    "type": "3",
+    "health": 28,
+    "skill": [
+      {
+        "id": "enhance",
+        "x": 1,
+        "s": "strike",
+      },
+      {
+        "id": "strike",
+        "x": 1,
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 33,
+        "skill": [],
+      },
+      "3": {
+        "health": 39,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "strike",
+          },
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "health": 44,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "strike",
+          },
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 50,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 2,
+            "s": "strike",
+          },
+          {
+            "id": "strike",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
           },
         ],
       },
@@ -99952,7 +100396,7 @@ var CARDS = {
   "9994": {
     "id": "9994",
     "name": "New Art",
-    "picture": "New2_A",
+    "picture": "New10_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -99965,7 +100409,7 @@ var CARDS = {
   "19994": {
     "id": "19994",
     "name": "New Art",
-    "picture": "New2_B",
+    "picture": "New10_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -99978,7 +100422,7 @@ var CARDS = {
   "9993": {
     "id": "9993",
     "name": "New Art",
-    "picture": "New4_A",
+    "picture": "New11_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -99991,7 +100435,7 @@ var CARDS = {
   "19993": {
     "id": "19993",
     "name": "New Art",
-    "picture": "New4_B",
+    "picture": "New11_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -100004,7 +100448,7 @@ var CARDS = {
   "9992": {
     "id": "9992",
     "name": "New Art",
-    "picture": "New7_A",
+    "picture": "New1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -100017,7 +100461,7 @@ var CARDS = {
   "19992": {
     "id": "19992",
     "name": "New Art",
-    "picture": "New7_B",
+    "picture": "New1_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -100030,7 +100474,7 @@ var CARDS = {
   "9991": {
     "id": "9991",
     "name": "New Art",
-    "picture": "New9_A",
+    "picture": "New2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -100043,7 +100487,7 @@ var CARDS = {
   "19991": {
     "id": "19991",
     "name": "New Art",
-    "picture": "New9_B",
+    "picture": "New2_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -100055,8 +100499,8 @@ var CARDS = {
   },
   "9990": {
     "id": "9990",
-    "name": "Unused Art",
-    "picture": "Oda_A",
+    "name": "New Art",
+    "picture": "New3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -100068,8 +100512,8 @@ var CARDS = {
   },
   "19990": {
     "id": "19990",
-    "name": "Unused Art",
-    "picture": "Oda_B",
+    "name": "New Art",
+    "picture": "New3_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -100079,10 +100523,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29990": {
-    "id": "29990",
-    "name": "Unused Art",
-    "picture": "Oda_C",
+  "9989": {
+    "id": "9989",
+    "name": "New Art",
+    "picture": "New4_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -100094,8 +100538,8 @@ var CARDS = {
   },
   "19989": {
     "id": "19989",
-    "name": "Unused Art",
-    "picture": "Promo_Dragon_B",
+    "name": "New Art",
+    "picture": "New4_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -100107,8 +100551,8 @@ var CARDS = {
   },
   "9988": {
     "id": "9988",
-    "name": "Unused Art",
-    "picture": "Seraph_A",
+    "name": "New Art",
+    "picture": "New5_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -100120,8 +100564,8 @@ var CARDS = {
   },
   "19988": {
     "id": "19988",
-    "name": "Unused Art",
-    "picture": "Seraph_B",
+    "name": "New Art",
+    "picture": "New5_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -100133,8 +100577,21 @@ var CARDS = {
   },
   "9987": {
     "id": "9987",
-    "name": "Unused Art",
-    "picture": "Tarian_A",
+    "name": "New Art",
+    "picture": "New6_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19987": {
+    "id": "19987",
+    "name": "New Art",
+    "picture": "New6_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -100146,8 +100603,21 @@ var CARDS = {
   },
   "9986": {
     "id": "9986",
-    "name": "Unused Art",
-    "picture": "Tremor_Wurm_A",
+    "name": "New Art",
+    "picture": "New8_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19986": {
+    "id": "19986",
+    "name": "New Art",
+    "picture": "New8_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -100159,8 +100629,21 @@ var CARDS = {
   },
   "9985": {
     "id": "9985",
-    "name": "Unused Art",
-    "picture": "Unused1_A",
+    "name": "New Art",
+    "picture": "New9_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19985": {
+    "id": "19985",
+    "name": "New Art",
+    "picture": "New9_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -100173,7 +100656,7 @@ var CARDS = {
   "9984": {
     "id": "9984",
     "name": "Unused Art",
-    "picture": "Unused2_A",
+    "picture": "Oda_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -100183,10 +100666,36 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9983": {
-    "id": "9983",
+  "19984": {
+    "id": "19984",
     "name": "Unused Art",
-    "picture": "Unused3_A",
+    "picture": "Oda_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "29984": {
+    "id": "29984",
+    "name": "Unused Art",
+    "picture": "Oda_C",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19983": {
+    "id": "19983",
+    "name": "Unused Art",
+    "picture": "Promo_Dragon_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -100199,7 +100708,20 @@ var CARDS = {
   "9982": {
     "id": "9982",
     "name": "Unused Art",
-    "picture": "Ursurio_A",
+    "picture": "Seraph_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19982": {
+    "id": "19982",
+    "name": "Unused Art",
+    "picture": "Seraph_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -100212,7 +100734,7 @@ var CARDS = {
   "9981": {
     "id": "9981",
     "name": "Unused Art",
-    "picture": "Void_Abomination_A",
+    "picture": "Tarian_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -100224,6 +100746,84 @@ var CARDS = {
   },
   "9980": {
     "id": "9980",
+    "name": "Unused Art",
+    "picture": "Tremor_Wurm_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9979": {
+    "id": "9979",
+    "name": "Unused Art",
+    "picture": "Unused1_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9978": {
+    "id": "9978",
+    "name": "Unused Art",
+    "picture": "Unused2_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9977": {
+    "id": "9977",
+    "name": "Unused Art",
+    "picture": "Unused3_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9976": {
+    "id": "9976",
+    "name": "Unused Art",
+    "picture": "Ursurio_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9975": {
+    "id": "9975",
+    "name": "Unused Art",
+    "picture": "Void_Abomination_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9974": {
+    "id": "9974",
     "name": "Unused Art",
     "picture": "Yuriel_A",
     "rarity": "0",

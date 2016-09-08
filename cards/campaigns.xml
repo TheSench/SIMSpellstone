@@ -3101,6 +3101,7 @@
     </rewards>
     <find_item id="3042" drop_per_energy=".25" />
   </campaign>
+  <!-- Event 15 Elementals -->
   <campaign>
     <id>1083</id>
     <hidden>1</hidden>
@@ -3216,6 +3217,123 @@
       <card level="7" id="512" />
     </rewards>
     <find_item id="3043" drop_per_energy=".25" />
+  </campaign>
+  <!-- Event 16 -->
+  <campaign>
+    <id>1087</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Light of the Wisps</name>
+    <icon id="iron_nugget100" bundle="58" />
+    <location_id>105</location_id>
+    <x>100</x>
+    <y>100</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5337</mission_id>
+      <mission_id>5338</mission_id>
+      <mission_id>5339</mission_id>
+      <mission_id>5340</mission_id>
+      <mission_id>5341</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="5017" />
+      <card level="3" id="5017" />
+      <card level="4" id="2031" />
+      <card level="5" id="7017" />
+      <card level="6" id="7017" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3044" drop_per_energy=".25" />
+  </campaign>
+  <campaign>
+    <id>1088</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>A Difference of Opinion</name>
+    <icon id="iron_nugget100" bundle="58" />
+    <location_id>105</location_id>
+    <x>200</x>
+    <y>100</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5342</mission_id>
+      <mission_id>5343</mission_id>
+      <mission_id>5344</mission_id>
+      <mission_id>5345</mission_id>
+      <mission_id>5346</mission_id>
+      <mission_id>5347</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="5017" />
+      <card level="3" id="5017" />
+      <card level="4" id="2031" />
+      <card level="5" id="7017" />
+      <card level="6" id="7017" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3044" drop_per_energy=".25" />
+  </campaign>
+  <campaign>
+    <id>1089</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Influence of The Void</name>
+    <icon id="iron_nugget100" bundle="58" />
+    <location_id>105</location_id>
+    <x>300</x>
+    <y>100</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5348</mission_id>
+      <mission_id>5349</mission_id>
+      <mission_id>5350</mission_id>
+      <mission_id>5351</mission_id>
+      <mission_id>5352</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="5017" />
+      <card level="3" id="5017" />
+      <card level="4" id="2031" />
+      <card level="5" id="7017" />
+      <card level="6" id="7017" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3044" drop_per_energy=".25" />
+  </campaign>
+  <campaign>
+    <id>1090</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Redemption</name>
+    <icon id="iron_nugget100" bundle="58" />
+    <location_id>105</location_id>
+    <x>400</x>
+    <y>100</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5353</mission_id>
+      <mission_id>5354</mission_id>
+      <mission_id>5355</mission_id>
+      <mission_id>5356</mission_id>
+      <mission_id>5357</mission_id>
+      <mission_id>5358</mission_id>
+      <mission_id>5359</mission_id>
+      <mission_id>5360</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="5017" />
+      <card level="3" id="5017" />
+      <card level="4" id="2031" />
+      <card level="5" id="7017" />
+      <card level="6" id="7017" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3044" drop_per_energy=".25" />
   </campaign>
   <!-- START Mythic Campaigns -->
   <campaign>
