@@ -2705,15 +2705,13 @@ var MISSIONS = {
         "id": "2015"
       },
       {
-        "id": "6014",
-        "remove_mastery_level": "6"
+        "id": "6014"
       },
       {
         "id": "6013"
       },
       {
-        "id": "6003",
-        "remove_mastery_level": "6"
+        "id": "6003"
       },
       {
         "id": "6002"

@@ -48,10 +48,11 @@
     <mission_req>244</mission_req>
     <!-- 244 -->
   </feature_lock>
-  <!-- <feature_lock>
-		<id>passivemissions</id>
-		<mission_req>-1</mission_req> 
-	</feature_lock> -->
+  <feature_lock>
+    <id>passivemissions</id>
+    <mission_req>-1</mission_req>
+    <!-- 11 -->
+  </feature_lock>
   <feature_lock>
     <id>combatspeed</id>
     <mission_req>44</mission_req>
@@ -99,7 +100,7 @@
   </feature_lock>
   <feature_lock>
     <id>dailybonus</id>
-    <mission_req>-1</mission_req>
+    <mission_req>21</mission_req>
     <!-- 21 -->
   </feature_lock>
   <!-- MISSIONS BEGIN -->
@@ -4656,9 +4657,9 @@
       <card id="8010" mastery_level="6" />
       <card id="1340" name="Blazekin Dragon" />
       <card id="2015" name="Pumpking" />
-      <card id="6014" name="Armored Ogre" remove_mastery_level="6" />
+      <card id="6014" name="Armored Ogre" />
       <card id="6013" name="Rust Goliath" />
-      <card id="6003" name="Black Knight" remove_mastery_level="6" />
+      <card id="6003" name="Black Knight" />
       <card id="6002" name="Spirit of Madness" />
       <card id="2006" name="Zhulong" />
       <card id="6019" name="Canopy Horror" />
