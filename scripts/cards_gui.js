@@ -90,13 +90,7 @@ var CARD_GUI = {};
                 multiplier++;
             } else {
                 if ((uniqueCard >= skip)) {
-                    if (multiplier > 1) {
-                        var multDiv = createDiv("multiplier", "x" + multiplier);
-                        multDiv.setAttribute("data-count", multiplier);
-                        var multIcon = createImg(getAssetPath("cardAssets") + "multiplier.png", "multiplier");
-                        htmlCard.appendChild(multIcon);
-                        htmlCard.appendChild(multDiv);
-                    }
+                    addMult(htmlCard, multiplier);
                     multiplier = 1;
                     htmlCard = create_card_html(unit, compactSkills, false, onclick, onrightclick, null, i);
                     if (listEntry.index !== undefined) {
@@ -108,13 +102,7 @@ var CARD_GUI = {};
                 uniqueCard++;
             }
         }
-        if (multiplier > 1) {
-            var multDiv = createDiv("multiplier", "x" + multiplier);
-            multDiv.setAttribute("data-count", multiplier);
-            var multIcon = createImg(getAssetPath("cardAssets") + "multiplier.png", "multiplier");
-            htmlCard.appendChild(multIcon);
-            htmlCard.appendChild(multDiv);
-        }
+        addMult(htmlCard, multiplier);
         return cards;
     }
 
@@ -175,6 +163,16 @@ var CARD_GUI = {};
         return cards;
     }
 
+    function addMult(htmlCard, multiplier) {
+        if (multiplier > 1) {
+            var multDiv = createDiv("multiplier", "x" + multiplier);
+            multDiv.setAttribute("data-count", multiplier);
+            var multIcon = createImg(getAssetPath("cardAssets") + "multiplier.png", "multiplier");
+            htmlCard.appendChild(multIcon);
+            htmlCard.appendChild(multDiv);
+        }
+    }
+
     function createItemHTML(name, quantity, image) {
         var htmlCard = createDiv("card item");
 
@@ -190,13 +188,7 @@ var CARD_GUI = {};
         htmlCard.appendChild(divName);
         htmlCard.classList.add('factionless');
         htmlCard.appendChild(createDiv("faction"));
-        if (quantity > 1) {
-            var multDiv = createDiv("multiplier", "x" + quantity);
-            multDiv.setAttribute("data-count", quantity);
-            var multIcon = createImg(getAssetPath("cardAssets") + "multiplier.png", "multiplier");
-            htmlCard.appendChild(multIcon);
-            htmlCard.appendChild(multDiv);
-        }
+        addMult(htmlCard, quantity);
         return htmlCard;
     }
 
@@ -599,6 +591,7 @@ var CARD_GUI = {};
     CARD_GUI.draw_cards = draw_cards;
     CARD_GUI.draw_inventory = draw_inventory;
     CARD_GUI.createItemHTML = createItemHTML;
+    CARD_GUI.addMult = addMult;
 
     Object.defineProperties(CARD_GUI, {
         assetsRoot: {
