@@ -197,7 +197,6 @@
 
     function advancedFilter() {
         $("#fervor").contextmenu();
-        $('input').blur();
     }
 
     function setAdvancedFilter() {
@@ -206,6 +205,7 @@
 
     function saveAdvancedFilters() {
         advancedFilters.dialog('option', 'buttons')["OK"].apply(advancedFilters);
+        resetFocus();
     }
 
     function closeAdvancedFilters() {
@@ -214,12 +214,10 @@
 
     function setNameFilter() {
         $("#nameFilter").val("hide").trigger(jQuery.Event("keyup"));
-        $('input').blur();
     }
 
     function clearNameFilter() {
         $("#nameFilter").val("").trigger(jQuery.Event("keyup"));
-        $('input').blur();
     }
 
     function clearFilters() {
@@ -236,13 +234,13 @@
 
     function editCard() {
         $("#deck .card").eq(1).contextmenu();
-        $('input').blur();
+        resetFocus();
     }
 
     function makeCardEdits() {
         $("#fusion").val(3);
         $("#runeChoices").val("5102").change();
-        $('input').blur();
+        resetFocus();
     }
 
     function closeEditUnit() {
@@ -251,6 +249,10 @@
 
     function clearHash() {
         $("#hash").val("QpLQA").change();
+    }
+
+    function resetFocus() {
+        $(".ui-dialog-buttonset .ui-button:visible").first().focus();
     }
 
     return tutorialParts;
