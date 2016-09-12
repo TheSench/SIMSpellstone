@@ -63,7 +63,8 @@
        },
        {
            ui: "#loadDeck",
-           msg: 'If you have any saved decks, you can use this button to quickly load one of them into the DeckBuilder.'
+           msg: 'If you have any saved decks, you can use this button to quickly load one of them into the DeckBuilder.',
+           actions: [hideCollection, showDeck]
        },
        {
            ui: "#collection-container",
@@ -79,7 +80,7 @@
            ui: "#detailedView",
            dialog: true,
            msg: 'Right-clicking on a card will display a detailed view of the card.',
-           actions: [showDetails]
+           actions: [showDetails, hideFilters]
        },
        {
            ui: "#filter-container",
