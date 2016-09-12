@@ -197,10 +197,12 @@
 
     function advancedFilter() {
         $("#fervor").contextmenu();
+        resetFocus();
     }
 
     function setAdvancedFilter() {
         $("#amount-min").val(4);
+        resetFocus();
     }
 
     function saveAdvancedFilters() {
