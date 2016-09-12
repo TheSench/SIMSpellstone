@@ -37,7 +37,8 @@
        },
        {
            ui: "#deck .card:eq(1)",
-           msg: 'Changes will made will be shown on the card, but will not be saved until you hit "OK".'
+           msg: 'Changes will made will be shown on the card, but will not be saved until you hit "OK".',
+           actions: [editCard, makeCardEdits]
        },
        {
            ui: "#deckContainer",
@@ -112,7 +113,7 @@
            ui: "#advancedFilters",
            dialog: true,
            msg: 'Here you can specify specific Skill values to filter by.  Different skills have different advanced filters available.',
-           actions: [setAdvancedFilter]
+           actions: [filter, advancedFilter, setAdvancedFilter]
        },
        {
            ui: "#fervor",
