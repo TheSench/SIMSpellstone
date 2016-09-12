@@ -39635,7 +39635,7 @@
     <picture>Fungus_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
     <hidden_until_time>1473699600</hidden_until_time>
-    <attack>3</attack>
+    <attack>4</attack>
     <health>9</health>
     <cost>1</cost>
     <rarity>4</rarity>
@@ -39678,7 +39678,7 @@
     <picture>Fungus_Elemental_A</picture>
     <asset_bundle>70</asset_bundle>
     <hidden_until_time>1473699600</hidden_until_time>
-    <attack>4</attack>
+    <attack>5</attack>
     <health>13</health>
     <cost>1</cost>
     <rarity>4</rarity>
@@ -39723,7 +39723,7 @@
     <picture>Fungus_Elemental_B</picture>
     <asset_bundle>70</asset_bundle>
     <hidden_until_time>1473699600</hidden_until_time>
-    <attack>4</attack>
+    <attack>5</attack>
     <health>15</health>
     <cost>1</cost>
     <rarity>4</rarity>
@@ -39743,7 +39743,7 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>5</attack>
+      <attack>6</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -53284,8 +53284,8 @@
     <skill id="enhance" x="1" s="strike" />
     <skill id="strike" x="1" />
     <skill id="weaken" x="1" all="1" />
-    <rarity>3</rarity>
-    <type>3</type>
+    <rarity>4</rarity>
+    <type>2</type>
     <set>9999</set>
     <upgrade>
       <level>2</level>

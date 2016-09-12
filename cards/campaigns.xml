@@ -3226,8 +3226,8 @@
     <name>Light of the Wisps</name>
     <icon id="iron_nugget100" bundle="58" />
     <location_id>105</location_id>
-    <x>100</x>
-    <y>100</y>
+    <x>204</x>
+    <y>167</y>
     <combatBG>CombatBGVoid</combatBG>
     <missions>
       <mission_id>5337</mission_id>
@@ -3254,8 +3254,8 @@
     <name>A Difference of Opinion</name>
     <icon id="iron_nugget100" bundle="58" />
     <location_id>105</location_id>
-    <x>200</x>
-    <y>100</y>
+    <x>417</x>
+    <y>200</y>
     <combatBG>CombatBGVoid</combatBG>
     <missions>
       <mission_id>5342</mission_id>
@@ -3283,8 +3283,8 @@
     <name>Influence of The Void</name>
     <icon id="iron_nugget100" bundle="58" />
     <location_id>105</location_id>
-    <x>300</x>
-    <y>100</y>
+    <x>708</x>
+    <y>309</y>
     <combatBG>CombatBGVoid</combatBG>
     <missions>
       <mission_id>5348</mission_id>
@@ -3311,8 +3311,8 @@
     <name>Redemption</name>
     <icon id="iron_nugget100" bundle="58" />
     <location_id>105</location_id>
-    <x>400</x>
-    <y>100</y>
+    <x>479</x>
+    <y>406</y>
     <combatBG>CombatBGVoid</combatBG>
     <missions>
       <mission_id>5353</mission_id>

@@ -10103,7 +10103,12 @@
       <line>
         <commander>grandexcavator</commander>
         <enemy>0</enemy>
-        <text> Isn't this exciting? These little bugger flames actually seem to repel the energies of The Void. If we find their source, we might learn something to combat The Void's power.</text>
+        <text>Isn't this exciting? These little bugger flames actually seem to repel the energies of The Void.</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>If we find their source, we might learn something to combat The Void's power.</text>
       </line>
     </speech>
   </mission>
@@ -10574,7 +10579,7 @@
     <name>Found Sanity</name>
     <energy>11</energy>
     <desc>Malchior sprinkles the Will-O-Wisps' essence upon the Chaos general. </desc>
-    <commander id="219" />
+    <commander id="265" />
     <deck>
       <card id="1319" name="Wraith" />
       <card id="1319" />

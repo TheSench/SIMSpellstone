@@ -4411,7 +4411,7 @@
     <type>2</type>
     <order>101</order>
     <name>Light of the Wisps</name>
-    <desc>Complete the ‘Light of the Wisps' campaign on Mastery Level 7.</desc>
+    <desc>Complete the 'Light of the Wisps' campaign on Mastery Level 7.</desc>
     <event_only>1</event_only>
     <achievement_req>3146</achievement_req>
     <req>
@@ -4442,7 +4442,7 @@
     <type>2</type>
     <order>101</order>
     <name>A Difference of Opinion</name>
-    <desc>Complete the ‘A Difference of Opinion' campaign on Mastery Level 7.</desc>
+    <desc>Complete the 'A Difference of Opinion' campaign on Mastery Level 7.</desc>
     <event_only>1</event_only>
     <achievement_req>3148</achievement_req>
     <req>
@@ -4473,7 +4473,7 @@
     <type>2</type>
     <order>101</order>
     <name>Influence of The Void</name>
-    <desc>Complete the ‘Influence of The Void' campaign on Mastery Level 7.</desc>
+    <desc>Complete the 'Influence of The Void' campaign on Mastery Level 7.</desc>
     <event_only>1</event_only>
     <achievement_req>3150</achievement_req>
     <req>
@@ -4504,7 +4504,7 @@
     <type>2</type>
     <order>101</order>
     <name>Redemption</name>
-    <desc>Complete the ‘Redemption' campaign on Mastery Level 7.</desc>
+    <desc>Complete the 'Redemption' campaign on Mastery Level 7.</desc>
     <event_only>1</event_only>
     <achievement_req>3152</achievement_req>
     <req>
