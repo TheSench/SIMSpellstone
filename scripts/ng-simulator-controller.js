@@ -101,7 +101,7 @@
                     var location = $window.LOCATIONS[location_id];
                     var option = document.createElement('option');
                     campaignList.push({
-                        id: location.id,
+                        id: "loc-" + location.id,
                         name: location.name,
                         isLocation: true
                     });

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="Content/themes/base/smoothness.css">
     <link rel="stylesheet" href="lib/chartist/chartist.min.css">
     <link rel="stylesheet" href="lib/chartist/chartist-plugin-tooltip.css">
+    <link rel="stylesheet" type="text/css" href="styles/sass/tutorial.css">
     <link rel="icon" type="image/png" href="res/deck_2-16x16.png">
 
     <script src="lib/jquery-2.2.1.min.js"></script>
@@ -36,21 +37,26 @@
     <script src="scripts/ng-card-details-controller.js"></script>
     <script type="text/javascript" src="scripts/data/spoilers.js"></script>
 
+    <script src="scripts/tutorial/deckbuilder-tutorial.js"></script>
+    <script src="scripts/sim-tutorial.js"></script>
+
 </head>
 <body onload="initDeckBuilder()" onresize="adjustHeight();">
     <header id="header"></header>
     <div style="margin:auto">
         <div id="deckBuilderContainer">
-            <div class="accordion">
+            <div id="deck-container" class="accordion">
                 <h3 id="version_label">Deck:</h3>
                 <div id="deckContainer" class="collapsible">
                     <br />
                     <div id="deck" class="float-left"></div>
                     <br />
-                    <div><b>Deck Hash:</b></div>
-                    <div>
-                        <div class="highlighter" id="hash_highlighter"></div>
-                        <input class="highlighted" id="hash" type="text" value="" size="100" onchange="hash_changed();" onpaste="hash_changed.debounce(100)();" />
+                    <div id="hash-container">
+                        <div><b>Deck Hash:</b></div>
+                        <div>
+                            <div class="highlighter" id="hash_highlighter"></div>
+                            <input class="highlighted" id="hash" type="text" value="" size="100" onchange="hash_changed();" onpaste="hash_changed.debounce(100)();" />
+                        </div>
                     </div>
                     <div style="margin:10px 0 10px 0"><a id="link" href="#"></a>&nbsp;</div>
                     <input id="resetDeck" type="button" value="Reset" onclick="resetDeck()" />
@@ -85,7 +91,7 @@
                     </div>
                 </div>
             </div>
-            <div class="accordion">
+            <div id="filter-container" class="accordion">
                 <h3>Filters:</h3>
                 <div id="filters">
                     <fieldset>
@@ -196,18 +202,17 @@
                         <input class="delay-filter" type="button" value="3" onclick="filterDelay(this, 3)" />
                         <input class="delay-filter" type="button" value="4" onclick="filterDelay(this, 4)" />
                     </fieldset>
-                    <div style="white-space:nowrap; margin: 5px 0;">
-
+                    <div id="name-container" style="white-space:nowrap; margin: 5px 0;">
                         <div class="ui-widget">
                             <label for="nameFilter"><strong>Name Filter:</strong></label><br />
                             <input id="nameFilter" type="text" value="" size="100" onkeyup="filterName(this);">
                         </div>
                     </div>
-                    <input type="button" value="Clear All" onclick="clearFilters()" />
+                    <input type="button" id="clear-filters" value="Clear All" onclick="clearFilters()" />
                     <br />
                 </div>
             </div>
-            <div class="accordion">
+            <div id="collection-container" class="accordion">
                 <h3>Cards:</h3>
                 <div>
                     <table>

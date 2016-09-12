@@ -332,4 +332,8 @@ tbody tr:nth-child(2n) {
   background-color: #cbcbcb;
 }
 
+.inline {
+  display: inline;
+}
+
 /*# sourceMappingURL=light.css.map */

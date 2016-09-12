@@ -1335,28 +1335,6 @@ var towers = {
     603: true
 };
 
-function base64triplet_to_unitInfo(triplet) {
-
-    if (triplet.length != 3) return false;
-
-    var dec1 = base64chars.indexOf(triplet[0]);
-    var level = (dec1 % 7) + 1;
-    dec1 = Math.floor(dec1 / 7);
-    var fusion = (dec1 % 3) * 10000;
-    dec1 = Math.floor(dec1 / 3) * 4096;
-
-    var dec2 = base64chars.indexOf(triplet[1]) * 64;
-    var dec3 = base64chars.indexOf(triplet[2]);
-    var baseID = dec1 + dec2 + dec3;
-    if (towers[baseID]) {
-        var id = baseID;
-        var level = level + fusion * 3;
-        fusion = 1;
-    } else {
-        var id = (fusion + baseID);
-    }
-    return makeUnitInfo(id, level);
-}
 // Used to determine how to hash runeIDs
 var maxRuneID = 1000;
 var legacyMaxRuneID = 300;
@@ -2134,6 +2112,15 @@ var card_cache = {};
 
 function getRarity(rarity) {
     return rarityStrings[rarity];
+}
+
+function getCurrentPage() {
+    var currentPage = window.location.href;
+    var pageEnd = currentPage.indexOf(".html");
+    currentPage = currentPage.substring(0, pageEnd);
+    var pageStart = currentPage.lastIndexOf("/") + 1;
+    currentPage = currentPage.substring(pageStart).toLowerCase();
+    return currentPage;
 }
 
 // Global arrays

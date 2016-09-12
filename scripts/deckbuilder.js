@@ -52,7 +52,11 @@ var $cardSpace;
 
 var initDeckBuilder = function ()
 {
-    $("#header").load("templates/header.html");
+    $("#header").load("templates/header.html", function () {
+        if (typeof showTutorial !== "undefined") {
+            $("#help").click(showTutorial);
+        }
+    });
 
     setupPopups();
     adjustHeight();

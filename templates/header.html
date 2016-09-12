@@ -6,6 +6,7 @@
         <li id="battle"><a href="Battle.html">Practice</a></li>
         <li id="titans"><a href="Titans.html">Simulator</a></li>
         <li id="deckbuilder"><a href="DeckBuilder.html">Deck Builder</a></li>
+        <li id="help"><a href="javascript:void(0)">Help</a></li>
         <li class="fill"></li>
         <li>
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -19,11 +20,6 @@
 </nav>
 <script>
     (function () {
-        var currentPage = window.location.href;
-        var pageEnd = currentPage.indexOf(".html");
-        currentPage = currentPage.substring(0, pageEnd);
-        var pageStart = currentPage.lastIndexOf("/") + 1;
-        currentPage = currentPage.substring(pageStart).toLowerCase();
-        $("#" + currentPage).addClass("current-page");
+        $("#" + getCurrentPage()).addClass("current-page");
     }());
 </script>

@@ -49,7 +49,11 @@ window.onerror = function (message, url, linenumber) {
 // When Page Loads...
 $(function () {
 
-    $("#header").load("templates/header.html");
+    $("#header").load("templates/header.html", function () {
+        if (typeof showTutorial !== "undefined") {
+            $("#help").click(showTutorial);
+        }
+    });
 
     var ui = document.getElementById('ui');
     if (!ui) return 0;
