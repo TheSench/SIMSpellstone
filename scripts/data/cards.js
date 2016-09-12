@@ -73511,7 +73511,7 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": "5",
-    "attack": 3,
+    "attack": 4,
     "health": 9,
     "cost": 1,
     "skill": [
@@ -73584,7 +73584,7 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": "5",
-    "attack": 4,
+    "attack": 5,
     "health": 13,
     "cost": 1,
     "skill": [
@@ -73669,7 +73669,7 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": "5",
-    "attack": 4,
+    "attack": 5,
     "health": 15,
     "cost": 1,
     "skill": [
@@ -73696,7 +73696,7 @@ var CARDS = {
         "skill": [],
       },
       "4": {
-        "attack": 5,
+        "attack": 6,
         "skill": [],
       },
       "5": {
@@ -99664,10 +99664,10 @@ var CARDS = {
     "id": "331",
     "name": "Void Infected General",
     "picture": "portrait_maniacgeneral",
-    "rarity": "3",
+    "rarity": "4",
     "set": "9999",
     "card_type": "1",
-    "type": "3",
+    "type": "2",
     "health": 28,
     "skill": [
       {

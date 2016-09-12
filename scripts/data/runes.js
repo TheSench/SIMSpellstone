@@ -971,5 +971,37 @@ var RUNES = {
             "health": "8"
         },
         "category": 3
+    },
+    "5502": {
+        "id": "5502",
+        "name": "Elemental Rune of Health",
+        "type": "3",
+        "set": "2",
+        "rarity": "3",
+        "faction_req": "5",
+        "icon": "rune_health_epic",
+        "bundle": "34",
+        "desc": "Health +8. May only be embedded on Elementals. May not be crafted.",
+        "usable": "0",
+        "stat_boost": {
+            "health": "8"
+        },
+        "category": 3
+    },
+    "5503": {
+        "id": "5503",
+        "name": "Undead Rune of Health",
+        "type": "3",
+        "set": "2",
+        "rarity": "3",
+        "faction_req": "7",
+        "icon": "rune_health_epic",
+        "bundle": "34",
+        "desc": "Health +8. May only be embedded on Undead. May not be crafted.",
+        "usable": "0",
+        "stat_boost": {
+            "health": "8"
+        },
+        "category": 3
     }
 };
