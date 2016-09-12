@@ -43,8 +43,8 @@ if (function (type) {
         storageAPI.initialize = function () {
             SaveFields.tutorial = "Tutorial-" + getCurrentPage();
 
-            loadField("savedDecks", SaveFields.decks, {});
-            loadField("shouldShowTutorial", SaveFields.tutorial, true);
+            loadField("savedDecks", SaveFields.decks, {}, true);
+            loadField("shouldShowTutorial", SaveFields.tutorial);
 
             var cachedOnUpdate = storageAPI.onUpdateDecks;
             storageAPI.onUpdateDecks = function () {
@@ -64,14 +64,14 @@ if (function (type) {
             var value = localStorage.getItem(storageName);
             if (value) {
                 try {
-                    storageAPI[fieldName] = JSON.parse(value);
+                    value = JSON.parse(value);
                 } catch (e) {
-                    storageAPI[fieldName] = defaultValue;
+                    value = defaultValue;
                 }
             } else {
-                storageAPI[fieldName] = defaultValue;
+                value = defaultValue;
             }
-
+            storageAPI[fieldName] = value;
         }
     }());
 } else {
@@ -87,7 +87,7 @@ if (function (type) {
     }());
 }
 
-$(document).ready(function () {
+(function () {
     var SaveFields = {
         decks: "SavedDecks"
     }
@@ -128,4 +128,4 @@ $(document).ready(function () {
     storageAPI.initialize();
 
     var $loadDialogScope;
-});
+}());
