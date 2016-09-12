@@ -197,6 +197,7 @@
 
     function advancedFilter() {
         $("#fervor").contextmenu();
+        $('input').blur();
     }
 
     function setAdvancedFilter() {
@@ -213,10 +214,12 @@
 
     function setNameFilter() {
         $("#nameFilter").val("hide").trigger(jQuery.Event("keyup"));
+        $('input').blur();
     }
 
     function clearNameFilter() {
         $("#nameFilter").val("").trigger(jQuery.Event("keyup"));
+        $('input').blur();
     }
 
     function clearFilters() {
@@ -233,11 +236,13 @@
 
     function editCard() {
         $("#deck .card").eq(1).contextmenu();
+        $('input').blur();
     }
 
     function makeCardEdits() {
         $("#fusion").val(3);
         $("#runeChoices").val("5102").change();
+        $('input').blur();
     }
 
     function closeEditUnit() {
