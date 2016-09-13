@@ -20,8 +20,28 @@
        },
        {
            ui: "#deckContainer",
+           msg: 'Left-click on a card to remove it from your deck.',
+           actions: [removeCard]
+       },
+       {
+           ui: "#deckContainer",
+           msg: 'Left-click on the commander will remove it and replace it with "Elaria Captain".',
+           actions: [removeCommander]
+       },
+       {
+           ui: "#deckContainer",
+           msg: 'Pressing Ctrl-Z will undo the last change made to your deck.  (Ctrl-Y can be used to "redo" a change as well).',
+           actions: [removeCard]
+       },
+       {
+           ui: "#deckContainer",
+           msg: 'Holding Ctrl and left-clicking on a card will add a copy of it to your deck.',
+           actions: [setHash]
+       },
+       {
+           ui: "#deckContainer",
            msg: 'You can drag-and-drop units in your deck to rearrange them (currently PC-only).',
-           actions: [moveCard]
+           actions: [closeEditUnit, moveCard]
        },
        {
            ui: "#unitOptions",
@@ -43,7 +63,7 @@
        {
            ui: "#deckContainer",
            msg: 'Clicking "Cancel" will revert the unit back to its original stats.',
-           actions: [closeEditUnit]
+           actions: [closeEditUnit, moveCard]
        },
        {
            ui: "#link",
@@ -133,6 +153,11 @@
        {
            ui: "#name-container",
            msg: 'For instance, typing "hide" will filter down to just "Spikehide Dragon" and "Spearhide Dragon".',
+           actions: [setNameFilter]
+       },
+       {
+           ui: "#name-container",
+           msg: 'Tip: If the collection is filtered down to a single card, pressing "Enter" while in the Name Filter will add that card to your deck.',
            actions: [setNameFilter]
        },
        {
@@ -227,11 +252,19 @@
     }
 
     function setHash() {
-        $("#hash").val("g~pAAglFpBQwrxIQWkpBglFpB4jrBC4jrBC4jrBC").change();
+        updateHash("g~pAAQwrxIQWkpBglFpBglFpB4jrBC4jrBC4jrBC");
+    }
+
+    function removeCard() {
+        updateHash("g~pAAQwrxIglFpBQWkpBglFpB4jrBC4jrBC4jrBC");
+    }
+
+    function removeCommander() {
+        updateHash("QpLQAQwrxIQWkpBglFpB4jrBC4jrBC4jrBC");
     }
 
     function moveCard() {
-        $("#hash").val("g~pAAQwrxIglFpBQWkpBglFpB4jrBC4jrBC4jrBC").change();
+        updateHash("g~pAAQwrxIglFpBQWkpBglFpB4jrBC4jrBC4jrBC");
     }
 
     function editCard() {
@@ -250,11 +283,15 @@
     }
 
     function clearHash() {
-        $("#hash").val("QpLQA").change();
+        updateHash("QpLQA");
     }
 
     function resetFocus() {
         $(".ui-dialog-buttonset .ui-button:visible").first().focus();
+    }
+
+    function updateHash(hash) {
+        $("#hash").val(hash).change();
     }
 
     return tutorialParts;
