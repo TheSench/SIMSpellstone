@@ -1927,8 +1927,13 @@ function getReverseFusions() {
 }
 
 // Output card array
-var get_card_apply_battlegrounds = function (id) {
-    return get_card_by_id(id, SIMULATOR.battlegrounds.onCreate);
+var get_card_apply_battlegrounds = function (id, battlegrounds) {
+    battlegrounds = battlegrounds || SIMULATOR.battlegrounds;
+    return get_card_by_id(id, battlegrounds.onCreate);
+}
+
+var get_card_apply_battlegrounds_inner = function (id, battlegrounds) {
+    return get_card_by_id(id, battlegrounds.onCreate);
 }
 
 function get_skills(id, level) {
