@@ -115,8 +115,10 @@ var CARD_GUI = {};
             newChildren.push(htmlTurnCounter);
         }
 
-        newChildren.push(draw_field(field.cpu));
-        newChildren.push(draw_field(field.player));
+        var divField = createDiv("field");
+        divField.appendChild(draw_field(field.cpu));
+        divField.appendChild(draw_field(field.player));
+        newChildren.push(divField);
         newChildren.push(draw_hand(drawableHand, callback, turn));
         newChildren.push(document.createElement('br'));
         newChildren.push(document.createElement('br'));
