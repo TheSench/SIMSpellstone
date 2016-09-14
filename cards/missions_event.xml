@@ -10163,7 +10163,7 @@
     <name>Residence of the Haunted</name>
     <energy>11</energy>
     <desc>The two follow the trail to the mysterious building. They pass rows of gravestones on the path. Light shines from inside the building's windows.</desc>
-    <commander id="261" />
+    <commander id="268" />
     <deck>
       <card id="1317" name="Fire Imp" />
       <card id="1317" />

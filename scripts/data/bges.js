@@ -65,7 +65,7 @@ var BATTLEGROUNDS = {
       {
         "effect_type": "add_skill",
         "id": "berserk",
-        "mult": .2,
+        "mult": .3,
         "base": "attack",
         "y": "7",
         "z": 7,

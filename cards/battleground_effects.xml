@@ -73,11 +73,11 @@
   <battleground>
     <id>105</id>
     <name>Devouring Hunger</name>
-    <desc>The Undead are invigorated with an unquenchable hunger, giving them Berserk which increases their base attack by 20% after dealing damage.</desc>
+    <desc>The Undead are invigorated with an unquenchable hunger, giving them Berserk which increases their base attack by 30% after dealing damage.</desc>
     <web_picture>filter_undead_64.png</web_picture>
     <icon>filter_undead_64</icon>
     <effect>
-      <add_skill id="berserk" mult=".2" base="attack" y="7" />
+      <add_skill id="berserk" mult=".3" base="attack" y="7" />
     </effect>
   </battleground>
   <battleground>

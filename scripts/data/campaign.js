@@ -29308,7 +29308,7 @@ var MISSIONS = {
     "id": "5341",
     "name": "Residence of the Haunted",
     "commander": {
-        "id": "261"
+        "id": "268"
     },
     "deck": [
       {

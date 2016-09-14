@@ -38096,7 +38096,7 @@
     <skill id="rally" x="1" />
     <type>3</type>
     <sub_type>13</sub_type>
-    <set>3000</set>
+    <set>4000</set>
     <upgrade>
       <level>2</level>
       <skill id="armored" x="1" />
@@ -38140,7 +38140,7 @@
     <skill id="berserk" x="1" />
     <type>3</type>
     <sub_type>13</sub_type>
-    <set>3000</set>
+    <set>4000</set>
     <upgrade>
       <level>2</level>
       <attack>5</attack>
@@ -38182,7 +38182,7 @@
     <skill id="berserk" x="2" />
     <type>3</type>
     <sub_type>13</sub_type>
-    <set>3000</set>
+    <set>4000</set>
     <upgrade>
       <level>2</level>
       <health>17</health>
@@ -53284,7 +53284,7 @@
     <skill id="enhance" x="1" s="strike" />
     <skill id="strike" x="1" />
     <skill id="weaken" x="1" all="1" />
-    <rarity>4</rarity>
+    <rarity>3</rarity>
     <type>2</type>
     <set>9999</set>
     <upgrade>
