@@ -54,6 +54,10 @@ $(function () {
             $("#help").click(showTutorial);
         }
     });
+    $.holdReady(true);
+    $("#footer").load("templates/footer.html", function () {
+        $.holdReady(false);
+    });
 
     var ui = document.getElementById('ui');
     if (!ui) return 0;

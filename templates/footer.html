@@ -1,0 +1,13 @@
+﻿<script>
+    // iubenda relies on the windows.onload event handler, but the DOM may already be loaded before the time this template is loaded and run.
+    // Reroute the iubenda call to window.addEventListener to jQuerys $(document).ready(), which we have control over.
+    var origAttach = window.addEventListener;
+    window.addEventListener = function (ignore, callback) { $(document).ready(callback) };
+</script>
+<a href="//www.iubenda.com/privacy-policy/7910998" class="iubenda-black iubenda-embed" title="Privacy Policy">Privacy Policy</a>
+<script type="text/javascript">(function (w, d) { var loader = function () { var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "//cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s, tag); }; if (w.addEventListener) { w.addEventListener("load", loader, false); } else if (w.attachEvent) { w.attachEvent("onload", loader); } else { w.onload = loader; } })(window, document);</script>
+<script>
+    // After the iubenda event handler is attached, revert window.addEventListener
+    window.addEventListener = origAttach;
+    delete origAttach;
+</script>

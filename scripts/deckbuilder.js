@@ -57,9 +57,12 @@ var initDeckBuilder = function ()
             $("#help").click(showTutorial);
         }
     });
+    $.holdReady(true);
+    $("#footer").load("templates/footer.html", function () {
+        $.holdReady(false);
+    });
 
     setupPopups();
-    adjustHeight();
 
     stopPropagation("hash");
 
@@ -127,14 +130,6 @@ var initDeckBuilder = function ()
         $deck = $("#deck");
         toggleInventoryMode();
     }
-}
-
-var adjustHeight = function ()
-{
-    var deckBuilderContainer = $("#deckBuilderContainer");
-    var height = $(window).height();
-    deckBuilderContainer.css('height', height);
-    deckBuilderContainer.css('max-height', height);
 }
 
 var setupPopups = function ()

@@ -7,7 +7,21 @@ body {
   padding: 0;
 }
 
-#header {
+footer {
+  background-color: gray;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  display: table;
+  width: 100%;
+  /*
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    */
+  padding: 10px 0;
+}
+
+header {
   background-color: gray;
   margin-bottom: 10px;
   font-family: Arial, sans-serif;
@@ -16,44 +30,44 @@ body {
   width: 100%;
 }
 
-#header nav {
+header nav {
   display: table-row;
 }
 
-#header ul {
+header ul {
   padding: 0 10px;
   margin: 0;
 }
 
-#header input {
+header input {
   background-color: gray;
 }
 
-#header li {
+header li {
   display: table-cell;
   white-space: nowrap;
   padding: 20px 0;
   margin: 0 15px;
 }
 
-#header li.fill {
+header li.fill {
   width: 100%;
 }
 
-#header li.li-header {
+header li.li-header {
   padding-right: 20px;
 }
 
-#header li.current-page {
+header li.current-page {
   background-color: #cbcbcb;
 }
 
-#header h1, #header li, #header a {
+header h1, header li, header a {
   color: #1d1d1d;
   vertical-align: middle;
 }
 
-#header nav a {
+header nav a {
   /*
         text-align: right;
         font-weight: 400;
