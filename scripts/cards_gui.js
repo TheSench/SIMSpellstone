@@ -151,6 +151,7 @@ var CARD_GUI = {};
             }
             if (i === 0) htmlCard.classList.add("left");
             else if (i === 2) htmlCard.classList.add("right");
+            else if (i > 2) htmlCard.classList.add("inactive");
             var cardidx = i;
             if (callback) {
                 htmlCard.addEventListener("click", (function (inner) {
