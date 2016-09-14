@@ -593,6 +593,7 @@ var CARD_GUI = {};
     CARD_GUI.draw_card_list = draw_card_list;
     CARD_GUI.draw_cards = draw_cards;
     CARD_GUI.draw_inventory = draw_inventory;
+    CARD_GUI.draw_hand = draw_hand;
     CARD_GUI.createItemHTML = createItemHTML;
     CARD_GUI.addMult = addMult;
 
