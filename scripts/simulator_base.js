@@ -3,11 +3,6 @@
 var SIMULATOR = {};
 (function () {
 
-    //50% proc function
-    function roll_proc() {
-        return Math.round(Math.random() * 1) == 1;
-    };
-
     // Play card
     function play_card(card, p, quiet) {
         var field_p_assaults = field[p]['assaults'];
