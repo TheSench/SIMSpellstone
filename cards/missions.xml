@@ -1,6 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- Feature Locking Based on Mission Completion -->
+  <!-- CORE FEATURES -->
+  <feature_lock>
+    <id>edit</id>
+    <mission_req>11</mission_req>
+    <!-- starts unlocked (effectively) -->
+    <!-- <cards_req>16</cards_req> -->
+    <!-- 16+ cards owned -->
+  </feature_lock>
   <feature_lock>
     <id>store</id>
     <mission_req>13</mission_req>
@@ -17,6 +25,16 @@
     <!-- 24 -->
   </feature_lock>
   <feature_lock>
+    <id>guilds</id>
+    <mission_req>24</mission_req>
+    <!-- 24 -->
+  </feature_lock>
+  <feature_lock>
+    <id>dailybonus</id>
+    <mission_req>21</mission_req>
+    <!-- 21 -->
+  </feature_lock>
+  <feature_lock>
     <id>pvp</id>
     <mission_req>54</mission_req>
     <!-- 54 -->
@@ -27,11 +45,9 @@
     <!-- 44 -->
   </feature_lock>
   <feature_lock>
-    <id>edit</id>
-    <mission_req>11</mission_req>
-    <!-- starts unlocked (effectively) -->
-    <!-- <cards_req>16</cards_req> -->
-    <!-- 16+ cards owned -->
+    <id>vip_system</id>
+    <mission_req>64</mission_req>
+    <!-- 64 -->
   </feature_lock>
   <feature_lock>
     <id>salvage</id>
@@ -48,30 +64,11 @@
     <mission_req>244</mission_req>
     <!-- 244 -->
   </feature_lock>
+  <!-- NON CORE FEATURES -->
   <feature_lock>
-    <id>passivemissions</id>
-    <mission_req>-1</mission_req>
+    <id>guildlivepvp</id>
+    <mission_req>11</mission_req>
     <!-- 11 -->
-  </feature_lock>
-  <feature_lock>
-    <id>combatspeed</id>
-    <mission_req>44</mission_req>
-    <!-- 44 -->
-  </feature_lock>
-  <feature_lock>
-    <id>skip</id>
-    <mission_req>64</mission_req>
-    <!-- 64 -->
-  </feature_lock>
-  <feature_lock>
-    <id>autoplay</id>
-    <mission_req>104</mission_req>
-    <!-- 104 -->
-  </feature_lock>
-  <feature_lock>
-    <id>guilds</id>
-    <mission_req>24</mission_req>
-    <!-- 24 -->
   </feature_lock>
   <feature_lock>
     <id>mythic</id>
@@ -88,20 +85,33 @@
     <mission_req>11</mission_req>
     <!-- 11 -->
   </feature_lock>
+  <!-- COMBAT OPTIONS -->
   <feature_lock>
-    <id>vip_system</id>
+    <id>combatspeed</id>
+    <mission_req>44</mission_req>
+    <!-- 44 -->
+  </feature_lock>
+  <feature_lock>
+    <id>skip</id>
     <mission_req>64</mission_req>
     <!-- 64 -->
   </feature_lock>
   <feature_lock>
-    <id>guildlivepvp</id>
-    <mission_req>11</mission_req>
+    <id>autoplay</id>
+    <mission_req>104</mission_req>
+    <!-- 104 -->
+  </feature_lock>
+  <!-- DISABLED FEATURES -->
+  <feature_lock>
+    <id>pointchest</id>
+    <!-- Star Chest for Arena -->
+    <mission_req>-1</mission_req>
     <!-- 11 -->
   </feature_lock>
   <feature_lock>
-    <id>dailybonus</id>
-    <mission_req>21</mission_req>
-    <!-- 21 -->
+    <id>passivemissions</id>
+    <mission_req>-1</mission_req>
+    <!-- -1 -->
   </feature_lock>
   <!-- MISSIONS BEGIN -->
   <!-- Elaria Missions BEGIN -->
