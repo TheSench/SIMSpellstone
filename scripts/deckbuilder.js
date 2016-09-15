@@ -52,15 +52,19 @@ var $cardSpace;
 
 var initDeckBuilder = function ()
 {
-    $("#header").load("templates/header.html", function () {
-        if (typeof showTutorial !== "undefined") {
-            $("#help").click(showTutorial);
-        }
-    });
-    $.holdReady(true);
-    $("#footer").load("templates/footer.html", function () {
-        $.holdReady(false);
-    });
+    if (!_DEFINED("fromSim")) {
+        $("#header").load("templates/header.html", function () {
+            $("#header").show();
+            if (typeof showTutorial !== "undefined") {
+                $("#help").click(showTutorial);
+            }
+        });
+        $.holdReady(true);
+        $("#footer").load("templates/footer.html", function () {
+            $("#footer").show();
+            $.holdReady(false);
+        });
+    }
 
     setupPopups();
 

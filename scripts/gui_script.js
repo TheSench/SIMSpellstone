@@ -523,7 +523,6 @@ function open_mission_deck_builder() {
 }
 
 function open_deck_builder(name, hash, inventory, deckHashField) {
-    var url = "DeckBuilder.html";
     var parameters = ["nosort"];
     if (hash) {
         parameters.push("hash=" + hash);
@@ -538,9 +537,9 @@ function open_deck_builder(name, hash, inventory, deckHashField) {
     if (_DEFINED("ajax")) {
         parameters.push("ajax");
     }
-    if (parameters.length > 0) {
-        url += '?' + parameters.join('&');
-    }
+    parameters.push("fromSim");
+
+    var url = "DeckBuilder.html?" + parameters.join('&');
 
     var width = Math.min(screen.width, 1000);
     var height = Math.min(screen.height, 700);
