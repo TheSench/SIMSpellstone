@@ -451,6 +451,12 @@ img[src='Error.src'] {
     filter: blur(1px) grayscale(70%); /* Chrome, Safari, Opera */
 }
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .inactive i {
+        box-shadow: inset 0 0 0 42px rgba(0,0,0,0.75);
+    }
+}
+
 .frozen:before {
     position: absolute;
     content: "";

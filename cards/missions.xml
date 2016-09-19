@@ -10,6 +10,11 @@
     <!-- 16+ cards owned -->
   </feature_lock>
   <feature_lock>
+    <id>quest</id>
+    <mission_req>12</mission_req>
+    <!-- 12 -->
+  </feature_lock>
+  <feature_lock>
     <id>store</id>
     <mission_req>13</mission_req>
     <!-- 13 -->
@@ -50,19 +55,19 @@
     <!-- 64 -->
   </feature_lock>
   <feature_lock>
+    <id>runes</id>
+    <mission_req>244</mission_req>
+    <!-- 244 -->
+  </feature_lock>
+  <feature_lock>
     <id>salvage</id>
     <achievement_req>1101</achievement_req>
     <!-- player has edited deck -->
   </feature_lock>
   <feature_lock>
-    <id>quest</id>
-    <mission_req>12</mission_req>
-    <!-- 12 -->
-  </feature_lock>
-  <feature_lock>
-    <id>runes</id>
-    <mission_req>244</mission_req>
-    <!-- 244 -->
+    <id>livepvp</id>
+    <achievement_req>451</achievement_req>
+    <!-- player has reached bounty rank 5 deck -->
   </feature_lock>
   <!-- NON CORE FEATURES -->
   <feature_lock>

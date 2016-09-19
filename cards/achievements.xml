@@ -1556,6 +1556,23 @@
       <wb>100</wb>
     </reward>
   </achievement>
+  <!-- 451+ Bounty Rank Achievements -->
+  <!-- <achievement>
+		<id>451</id>
+		<type>4</type>
+		<order>45</order>
+		<name>Arena Battles</name>
+		<desc>Reach Bounty Rank 5 to unlock Live Arena Battles!</desc>
+		<icon>ArenaIcon</icon>
+		<icon_bundle>31</icon_bundle>
+		<mission_req>54</mission_req>
+		<req>
+			<pvp_rank>5</pvp_rank>
+		</req>
+		<reward>
+			<gold>300</gold>
+		</reward>
+	</achievement> -->
   <!-- Daily Quests -->
   <!-- <achievement>
 		<id>409</id>

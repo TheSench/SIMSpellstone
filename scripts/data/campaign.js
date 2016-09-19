@@ -29348,7 +29348,7 @@ var MISSIONS = {
         "mastery_level": "4"
       },
       {
-        "id": "5053",
+        "id": "21630",
         "mastery_level": "5"
       },
       {
@@ -29356,7 +29356,7 @@ var MISSIONS = {
         "mastery_level": "6"
       },
       {
-        "id": "6027",
+        "id": "21341",
         "mastery_level": "7"
       },
     ]
