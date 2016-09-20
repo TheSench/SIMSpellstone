@@ -737,26 +737,26 @@ var addUnitToDeck = function (unit, htmlCard)
         doDrawDeck();
     } else*/ if (is_commander(unit.id))
     {
+
+        if (areEqual(deck.commander, unit)) return;
         deck.commander = unit;
-        $deck.find(".card").first().replaceWith($htmlCard);
+        replaceCard($deck.find(".card").first(), $htmlCard);
     } else
     {
         if (!inventoryMode && deck.deck.length == 15) return;
         deck.deck.push(unit);
         var emptySpaces = $deck.find(".blank");
-        if (emptySpaces.length)
-        {
-            emptySpaces.first().replaceWith($htmlCard);
-        } else
-        {
+        if (emptySpaces.length) {
+            replaceCard(emptySpaces.first(), $htmlCard);
+        } else {
             $deck.append($htmlCard)
         }
     }
-
+    
+    $htmlCard = $(htmlCard);
     if (fromInventory)
     {
         removeFromInventory(unit);
-        $htmlCard = $(htmlCard);
         var $mult = $htmlCard.find("div.multiplier");
         if ($mult.length > 0)
         {
@@ -773,9 +773,18 @@ var addUnitToDeck = function (unit, htmlCard)
         {
             $htmlCard.remove();
         }
+    } else {
+        $htmlCard.hide().fadeIn(100);
     }
     updateHash();
 };
+
+function replaceCard(oldCard, newCard) {
+    $(oldCard).replaceWith(newCard);
+    var speed =  (oldCard.hasClass("blank") ? 1000 : 600);
+    newCard.children().hide().fadeIn(speed).promise();
+}
+
 
 function removeFromInventory(unit)
 {
@@ -822,13 +831,14 @@ var removeFromDeck = function (event)
         if (areEqual(unit, elariaCaptain)) return;
         deck.commander = elariaCaptain;
         var card = get_card_by_id(elariaCaptain);
-        $htmlCard.replaceWith(CARD_GUI.create_card_html(card));
-    } else
-    {
+        //$htmlCard.replaceWith(CARD_GUI.create_card_html(card));
+        var captain = $(CARD_GUI.create_card_html(card));
+        replaceCard($htmlCard, captain);
+    } else {
         unit = deck.deck.splice(index - 1, 1)[0];
+        
         $htmlCard.remove();
-        if (deck.deck.length < 15)
-        {
+        if (deck.deck.length < 15) {
             $deck.append("<div class='card blank'></div>");
         }
     }
