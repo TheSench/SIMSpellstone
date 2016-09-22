@@ -49,6 +49,16 @@ window.onerror = function (message, url, linenumber) {
 // When Page Loads...
 $(function () {
 
+    $("#header").load("templates/header.html", function () {
+        if (typeof showTutorial !== "undefined") {
+            $("#help").click(showTutorial);
+        }
+    });
+    $.holdReady(true);
+    $("#footer").load("templates/footer.html", function () {
+        $.holdReady(false);
+    });
+
     var ui = document.getElementById('ui');
     if (!ui) return 0;
 
@@ -61,127 +71,42 @@ $(function () {
     var button = document.getElementById("display_history");
     if (button) button.onclick = display_history;
 
-    if (_GET('deck1')) {
-        $('#deck').val(_GET('deck1')).change();
-    }
+    $('#deck1').val(_GET('deck1')).change();
+    $('#deck2').val(_GET('deck2')).change();
 
-    if (_GET('deck2')) {
-        $('#deck2').val(_GET('deck2')).change();
-    }
+    $('#surge').attr("checked", _DEFINED("surge"));
+    $('#siege').attr("checked", _DEFINED("siege"));
+    var tower_level = Math.min(Math.max(_GET('tower_level') || 18, 0), 18);
+    $('#tower_level').val(tower_level);
 
-    if (_GET('list1')) {
-        $('#cardlist').val(_GET('list1')).change();
+    var tower_type = (_GET('tower_type') || 0);
+    if (tower_type < 3) {
+        // Handle legacy tower_type
+        var options = $("#tower_type").children();
+        tower_type = options[tower_type].value;
     }
+    $("#tower_type").val(tower_type);
 
-    if (_GET('list2')) {
-        $('#cardlist2').val(_GET('list2')).change();
-    }
+    $('#auto_mode').attr("checked", _DEFINED("auto_mode"));
+    $('#ordered').attr("checked", _DEFINED("ordered"));
+    $('#exactorder').attr("checked", _DEFINED("exactorder"));
 
-    if (_DEFINED('surge')) {
-        var d = document.getElementById('surge');
-        d.checked = true;
-    }
-
-    if (_DEFINED('siege')) {
-        $('#siege').click();
-    }
-
-    if (_GET('tower_level')) {
-        var d = document.getElementById('tower_level');
-        var tower_level = _GET('tower_level');
-        tower_level = Math.min(Math.max(tower_level, 0), 18);
-        d.value = tower_level;
-    }
-
-    if (_GET('tower_type')) {
-        var d = document.getElementById('tower_type');
-        var tower_type = _GET('tower_type');
-        if (tower_type < 3) {
-            var options = $("#tower_type").children();
-            tower_type = options[tower_type].value;
-        }
-        d.value = tower_type;
-    }
-
-    if (_DEFINED('tournament')) {
-        var d = document.getElementById('tournament');
-        d.checked = true;
-    }
-
-    if (_DEFINED('ordered')) {
-        var d = document.getElementById('ordered');
-        if (d) {
-            d.checked = true;
-        }
-    }
-
+    $('#ordered2').attr("checked", _DEFINED("ordered2"));
+    $('#exactorder2').attr("checked", _DEFINED("exactorder2"));
     if (_DEFINED("randomAI")) {
         smartAI = false;
-    }
-
-    if (_DEFINED('exactorder')) {
-        var d = document.getElementById('exactorder');
-        if (d) {
-            d.checked = true;
-        }
-    }
-
-    if (_DEFINED('ordered2')) {
-        var d = document.getElementById('ordered2');
-        d.checked = true;
-    }
-
-    if (_DEFINED('exactorder2')) {
-        var d = document.getElementById('exactorder2');
-        d.checked = true;
     }
 
     var campaignID = _GET('campaign');
     var missionID = _GET('mission');
     var raidID = _GET('raid');
-
-    var uiScope = angular.element('#ui').scope();
-    if(campaignID) $('#campaign').val(campaignID).change();
+    if (campaignID) $('#campaign').val(campaignID).change();
     if (missionID) $('#mission').val(missionID).change();
     if (raidID) $('#raid').val(raidID).change();
-    /*
-    var dropdown = document.getElementById('campaign');
-    if (dropdown) {
-        if (campaignID) {
-            uiScope.selections.campaign = _GET('campaign');
-        } else if (missionID) {
-            for (var id in CAMPAIGNS) {
-                if (CAMPAIGNS[id].missions.includes(missionID)) {
-                    uiScope.selections.campaign = id;
-                }
-            }
-        }
-    }
 
-    var dropdown = document.getElementById('mission');
-    if (dropdown) {
-        if (missionID) {
-            uiScope.selections.mission = missionID;
-        }
-    }
-
-    var dropdown = document.getElementById('raid');
-    if (dropdown) {
-        if (raidID && !(campaignID || missionID)) {
-            uiScope.selections.raid = raidID;
-        }
-    }
-    uiScope.$apply();
-    */
-    if (_DEFINED('battleground')) {
-        var bgIndexes = _GET('battleground');
-        var bgCheckBoxes = document.getElementsByName("battleground");
-        for (var i = 0; i < bgIndexes.length; i++) {
-            var d = bgCheckBoxes[bgIndexes[i]];
-            d.checked = true;
-        }
-    } else if (_DEFINED('bges')) {
-        var bges = _GET('bges');
+    var bges = _GET('bges');
+    if (bges) {
+        // Each BGE is a 2-character ID in Base64
         for (var i = 0; i < bges.length; i += 2) {
             var bge = base64_to_decimal(bges.substring(i, i + 2));
             $("#battleground_" + bge).prop('checked', true);
@@ -189,61 +114,20 @@ $(function () {
     } else {
         // Load current battlegrounds
         var bgCheckBoxes = document.getElementsByName("battleground");
-        bgCheckBoxes[5].checked = true;
-        bgCheckBoxes[9].checked = true;
-    }
+        for (var i = 0; i < current_bges.length; i++) {
 
-    if (_GET('sims')) {
-        var d = document.getElementById('sims');
-        if (d) {
-            d.value = _GET('sims');
+            bgCheckBoxes[current_bges[i]].checked = true;
         }
     }
 
-    if (_DEFINED('debug')) {
-        var d = document.getElementById('debug');
-        d.checked = true;
-    }
+    $('#sims').val(_GET('sims') || 10000);
 
-    if (_DEFINED('auto_mode')) {
-        var d = document.getElementById('auto_mode');
-        if (d) {
-            d.checked = true;
-        }
-    }
-
-    if (_DEFINED('mass_debug')) {
-        var d = document.getElementById('mass_debug');
-        if (d) {
-            d.checked = true;
-        }
-    }
-
-    if (_DEFINED('loss_debug')) {
-        var d = document.getElementById('loss_debug');
-        if (d) {
-            d.checked = true;
-        }
-    }
-
-    if (_DEFINED('win_debug')) {
-        var d = document.getElementById('win_debug');
-        if (d) {
-            d.checked = true;
-        }
-    }
-
-    if (_DEFINED('user_controlled')) {
-        var d = document.getElementById('user_controlled');
-        if (d) {
-            d.checked = true;
-        }
-    }
-
+    $('#debug').attr("checked", _DEFINED("debug"));
+    $('#mass_debug').attr("checked", _DEFINED("mass_debug"));
+    $('#loss_debug').attr("checked", _DEFINED("loss_debug"));
+    $('#win_debug').attr("checked", _DEFINED("win_debug"));
+    
     document.title = "SimSpellstone " + text_version + " - The Spellstone Simulator that runs from your browser!";
-
-    var version_label = document.getElementById('version_label');
-    version_label.innerHTML += " " + text_version;
 
     if (_DEFINED('autostart')) {
         SIM_CONTROLLER.startsim(1);
@@ -280,8 +164,9 @@ $(function () {
 var style;
 var u_black = false;
 function toggle_u() {
+    var append = false;
     if (typeof style == 'undefined') {
-        var append = true;
+        append = true;
         style = document.createElement('style');
     } else {
         while (style.hasChildNodes()) {
@@ -312,23 +197,48 @@ function toggle_u() {
 }
 
 function toggleUI(display) {
-    var uiStyle = document.getElementById('ui').style;
     if (display) {
-        uiStyle.display = 'block';
+        $("#ui").show();
     } else {
-        uiStyle.display = 'none';
+        $("#ui").hide();
     }
+}
+
+function showUI() {
+    // Show interface
+    toggleUI(true);
+    // Hide stop button
+    document.getElementById('stop').style.display = 'none';
+}
+
+function hideUI() {
+    $(".accordion").accordion('option', 'active', null);
+    // Hide interface
+    toggleUI(false);
+    // Display stop button
+    document.getElementById('stop').style.display = 'block';
+}
+
+function getSelectedBattlegrounds() {
+    var getbattleground = [];
+    var bgCheckBoxes = document.getElementsByName("battleground");
+    for (var i = 0; i < bgCheckBoxes.length; i++) {
+        var checkbox = bgCheckBoxes[i];
+        if (checkbox && checkbox.checked) {
+            getbattleground.push(checkbox.value);
+        }
+    }
+    getbattleground = getbattleground.join();
+    return getbattleground;
 }
 
 // Modify HTML to output simulation results
 function outp(text) {
-    var c = document.getElementById('content');
-    if (!c) return 0;
-    c.innerHTML = text;
+    $("#content").html(text);
 }
 
 // Return table of simulation results
-function gettable() {
+function showWinrate() {
 
     if (suppressOutput) {
     } else if (debug || sims_left == 0) {
@@ -389,7 +299,7 @@ function gettable() {
 
         var current_deck = '';
         var deck = [];
-        var deck1Hash = document.getElementById('deck').value;
+        var deck1Hash = document.getElementById('deck1').value;
         var deck1List = $('#cardlist').val();
         if(deck1List) deck1List = deck1List.value;
 
@@ -452,7 +362,7 @@ function marginOfError(wins, games) {
 }
 
 // Generate a link from current settings and input
-function generate_link(autostart, autolink) {
+function generate_link(autostart) {
 
     var d = 0;
     var deck = [];
@@ -463,111 +373,26 @@ function generate_link(autostart, autolink) {
         url_base = url_base.substring(0, index_of_query)
     }
 
-    var getdeck = document.getElementById('deck').value;
-    var getcardlist = $('#cardlist').val();
-    if (document.getElementById('deck2')) {
-        var getdeck2 = document.getElementById('deck2').value;
-        var getcardlist2 = $('#cardlist2').val();
-        var getcampaign = document.getElementById('campaign').value;
-        var getmission = document.getElementById('mission').value;
-        var getraid = document.getElementById('raid').value;
-        var raidlevel = document.getElementById('raid_level').value;
-    } else {
-        var getdeck2 = null;
-        var getcardlist2 = null;
-        var getcampaign = null;
-        var getmission = document.getElementById('mission').value;
-        var getraid = null;
-        var raidlevel = null;
-    }
-
-    // Load player deck
-    if (getdeck) {
-        deck.player = hash_decode(getdeck);
-    } else if (getcardlist) {
-        deck.player = load_deck_from_cardlist(getcardlist);
-    }
-
-    // Load enemy deck
-    if (getdeck2) {
-        deck.cpu = hash_decode(getdeck2);
-    } else if (getcardlist2) {
-        deck.cpu = load_deck_from_cardlist(getcardlist2);
-    } else if (getmission) {
-        deck.cpu = 0;
-    } else if (getraid) {
-        deck.cpu = 0;
-    }
-
     var parameters = [];
-    if (deck.player) {
-        d = hash_encode(deck.player);
-        if (d) {
-            parameters.push('deck1=' + d);
-        }
+    addValueParam(parameters, "deck1");
+    addValueParam(parameters, "deck2");
+
+    addValueParam(parameters, "campaign");
+    addValueParam(parameters, "mission");
+    addValueParam(parameters, "raid");
+
+    addBoolParam(parameters, "surge");
+
+    if (addBoolParam(parameters, "siege")) {
+        addValueParam(parameters, "tower_level");
+        addValueParam(parameters, "tower_type");
     }
 
-    if (deck.cpu) {
-        d = hash_encode(deck.cpu);
-        if (d) {
-            parameters.push('deck2=' + d);
-        }
-    }
-
-    d = document.getElementById('surge');
-    if (d && d.checked) {
-        parameters.push('surge');
-    }
-
-    d = document.getElementById('siege');
-    if (d && d.checked) {
-        parameters.push('siege');
-        d = document.getElementById('tower_level');
-        parameters.push('tower_level=' + d.value);
-        d = document.getElementById('tower_type');
-        parameters.push('tower_type=' + d.value);
-    }
-
-    /*
-	d = document.getElementById('tournament');
-	if (d.checked) {
-	    parameters.push('tournament=1&');
-	}
-    */
-    d = document.getElementById('ordered');
-    if (d && d.checked) {
-        parameters.push('ordered');
-    }
-
-    d = document.getElementById('exactorder');
-    if (d && d.checked) {
-        parameters.push('exactorder');
-    }
-
-    d = document.getElementById('ordered2');
-    if (d && d.checked) {
-        parameters.push('ordered2');
-    }
-
-    d = document.getElementById('exactorder2');
-    if (d && d.checked) {
-        parameters.push('exactorder2');
-    }
-
-    d = document.getElementById('campaign');
-    if (d && d.value) {
-        parameters.push('campaign=' + d.value);
-    }
-
-    d = document.getElementById('mission');
-    if (d && d.value) {
-        parameters.push('mission=' + d.value);
-    }
-
-    d = document.getElementById('raid');
-    if (d && d.value) {
-        parameters.push('raid=' + d.value);
-    }
+    addBoolParam(parameters, "auto_mode");
+    addBoolParam(parameters, "ordered");
+    addBoolParam(parameters, "exactorder");
+    addBoolParam(parameters, "exactorder");
+    addBoolParam(parameters, "exactorder2");
 
     var bges = '';
     var bgCheckBoxes = document.getElementsByName("battleground");
@@ -578,52 +403,41 @@ function generate_link(autostart, autolink) {
     parameters.push('bges=' + bges);
     
 
-    d = document.getElementById('sims');
-    if (d && d.value) {
-        parameters.push('sims=' + d.value);
-    }
+    addValueParam(parameters, "sims");
 
-    d = document.getElementById('user_controlled');
-    if (d && d.checked) {
-        parameters.push('user_controlled');
-    }
-
-    d = document.getElementById('debug');
-    if (d.checked) {
-        parameters.push('debug');
-    }
-
-    d = document.getElementById('auto_mode');
-    if (d && d.checked) {
-        parameters.push('auto_mode');
-    }
-
-    d = document.getElementById('mass_debug');
-    if (d && d.checked) {
-        parameters.push('mass_debug');
-    }
-
-    d = document.getElementById('loss_debug');
-    if (d && d.checked) {
-        parameters.push('loss_debug');
-    }
-
-    d = document.getElementById('win_debug');
-    if (d && d.checked) {
-        parameters.push('win_debug');
-    }
+    addBoolParam(parameters, "debug");
+    addBoolParam(parameters, "mass_debug");
+    addBoolParam(parameters, "loss_debug");
+    addBoolParam(parameters, "win_debug");
 
     if (autostart) {
         parameters.push('autostart');
     }
 
-    if (autolink) {
-        parameters.push('autolink');
-    }
     if (parameters.length > 0) {
         return url_base + '?' + parameters.join('&');
     } else {
         return url_base;
+    }
+}
+
+function addValueParam(params, paramName, fieldName) {
+    var value = $("#" + (fieldName || paramName)).val();
+    if (value) {
+        params.push(paramName + "=" + value);
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function addBoolParam(params, paramName) {
+    var checked = $("#" + paramName).is(":checked");
+    if (checked) {
+        params.push(paramName);
+        return true;
+    } else {
+        return false;
     }
 }
 
@@ -645,14 +459,12 @@ function load_deck_builder_for_field(fieldID) {
 
 function load_deck_builder(player) {
     if (player == 'player') {
-        var getdeck = $('#deck').val();
-        var getcardlist = $('#cardlist').val()
+        var getdeck = $('#deck1').val();
         var getmission;
         var getraid;
         var raidlevel;
     } else {
         var getdeck = $('#deck2').val();
-        var getcardlist = $('#cardlist2').val();
         var getmission = $('#mission').val();
         var getraid = $('#raid').val();
         var raidlevel = $('#raid_level').val();
@@ -665,8 +477,6 @@ function load_deck_builder(player) {
     };
     if (getdeck) {
         deck = hash_decode(getdeck);
-    } else if (getcardlist) {
-        deck = load_deck_from_cardlist(getcardlist);
     } else if (getmission) {
         deck = load_deck_mission(getmission);
     } else if (getraid) {
@@ -678,7 +488,7 @@ function load_deck_builder(player) {
     }
 
     var name = (player == 'player' ? 'Player Deck' : 'Enemy Deck');
-    var deckHashField = (player ? $("#" + (player == 'player' ? 'deck' : 'deck2')) : null);
+    var deckHashField = (player ? $("#" + (player == 'player' ? 'deck1' : 'deck2')) : null);
     open_deck_builder(name, hash, null, deckHashField);
 }
 
@@ -715,7 +525,6 @@ function open_mission_deck_builder() {
 }
 
 function open_deck_builder(name, hash, inventory, deckHashField) {
-    var url = "DeckBuilder.html";
     var parameters = ["nosort"];
     if (hash) {
         parameters.push("hash=" + hash);
@@ -730,9 +539,9 @@ function open_deck_builder(name, hash, inventory, deckHashField) {
     if (_DEFINED("ajax")) {
         parameters.push("ajax");
     }
-    if (parameters.length > 0) {
-        url += '?' + parameters.join('&');
-    }
+    parameters.push("fromSim");
+
+    var url = "DeckBuilder.html?" + parameters.join('&');
 
     var width = Math.min(screen.width, 1000);
     var height = Math.min(screen.height, 700);
@@ -786,20 +595,6 @@ function display_history() {
 	'');
 }
 
-function scroll_to_end() {
-    // Scroll to bottom of page
-   // window.scrollTo(0, document.body.scrollHeight);
-}
-
-function dumpPlay(unit, i) {
-    var card = get_card_by_id(unit);
-    var o = (i % 2 == 0 ? 'b' : 'i');
-    var card_name = "<" + o + ">" + card.name + "(" + card.level + ")";
-    if (card.runes.length) card_name += "*";
-    card_name += "</" + o + ">";
-    return card_name;
-}
-
 function supports_html5_storage() {
     try {
         return 'localStorage' in window && window['localStorage'] !== null;
@@ -810,7 +605,7 @@ function supports_html5_storage() {
 
 // Initialize global variables
 var battle_history = '';
-var max_turns = 50;
+var max_turns = 100;
 var debug = false;
 var mass_debug = false;
 var loss_debug = false;

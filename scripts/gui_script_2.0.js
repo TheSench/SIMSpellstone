@@ -3,7 +3,7 @@
 var loadDeckDialog;
 
 $(function () {
-    $("#deck").change(function ()
+    $("#deck1").change(function ()
     {
         this.value = this.value.trim();
         deckChanged("attack_deck", hash_decode(this.value));
@@ -26,13 +26,20 @@ $(function () {
         heightStyle: "content",
     }).filter(".start-open").accordion('option', 'active' , 0);
 
-    $("#raid").change(function () {
+    $("#raid, #raid_level").change(function () {
         var newDeck;
-        if (this.value) {
-            var raidlevel = document.getElementById('raid_level').value;
-            newDeck = load_deck_raid(this.value, raidlevel);
+        var selectedRaid = $("#raid").val();
+        var raidlevel = $('#raid_level');
+        if (selectedRaid) {
+            newDeck = load_deck_raid(selectedRaid, raidlevel.val());
+            if (RAIDS[selectedRaid].type === "dungeon") {
+                raidlevel.attr("max", 150);
+            } else {
+                raidlevel.attr("max", 40);
+            }
         } else {
             newDeck = hash_decode('');
+            raidlevel.attr("max", 40);
         }
         deckChanged("defend_deck", newDeck);
     });
@@ -79,7 +86,7 @@ $(function () {
     // Disable this as we now draw the full deck
     debug_dump_decks = function () { };
 
-    setDeckSortable("#attack_deck", '#deck');
+    setDeckSortable("#attack_deck", '#deck1');
     setDeckSortable("#defend_deck", '#deck2');
 });
 

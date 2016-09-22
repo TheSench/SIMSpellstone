@@ -1,0 +1,82 @@
+﻿/* 
+ * Practical Color Theory for People Who Code
+ * http://tallys.github.io/color-theory/?imm_mid=0e31ae&cmp=em-web-na-na-newsltr_20160427
+ */
+body {
+  margin: 5px;
+  padding: 0;
+}
+
+footer {
+  background-color: gray;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  display: table;
+  width: 100%;
+  /*
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    */
+  padding: 10px 0;
+}
+
+header {
+  background-color: gray;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  display: table;
+  width: 100%;
+}
+
+header nav {
+  display: table-row;
+}
+
+header ul {
+  padding: 0 10px;
+  margin: 0;
+}
+
+header input {
+  background-color: gray;
+}
+
+header li {
+  display: table-cell;
+  white-space: nowrap;
+  padding: 20px 0;
+  margin: 0 15px;
+}
+
+header li.fill {
+  width: 100%;
+}
+
+header li.li-header {
+  padding-right: 20px;
+}
+
+header li.current-page {
+  background-color: #cbcbcb;
+}
+
+header h1, header li, header a {
+  color: #1d1d1d;
+  vertical-align: middle;
+}
+
+header nav a {
+  /*
+        text-align: right;
+        font-weight: 400;
+        letter-spacing: 0;
+        vertical-align: middle;
+        */
+  padding: 5px 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=header.css.map */

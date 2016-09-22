@@ -31,16 +31,16 @@
                 for (var i = 0, len = campaigns.length; i < len; i++) {
                     var campaign = campaigns[i];
                     var missionsInCampaign = campaign.missions;
-                    var isTitan = true;
+                    var inCampaign = true;
 
                     for (var j = 0; j < missionsInCampaign.length; j++) {
                         var mission = missionsInCampaign[j];
                         if (!missions[mission]) {
-                            isTitan = false;
+                            inCampaign = false;
                             break;
                         }
                     }
-                    if (isTitan) {
+                    if (inCampaign) {
                         newCampaigns.push(campaign);
                     }
                 }
@@ -101,7 +101,7 @@
                     var location = $window.LOCATIONS[location_id];
                     var option = document.createElement('option');
                     campaignList.push({
-                        id: location.id,
+                        id: "loc-" + location.id,
                         name: location.name,
                         isLocation: true
                     });

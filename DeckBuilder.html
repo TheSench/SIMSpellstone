@@ -8,9 +8,11 @@
     <link rel="stylesheet" type="text/css" href="styles/deckbuilder.css">
     <link rel="stylesheet" type="text/css" href="styles/loading.css">
     <link rel="stylesheet" type="text/css" href="styles/spritesheet.css">
+    <link rel="stylesheet" type="text/css" href="styles/sass/header.css">
     <link rel="stylesheet" href="Content/themes/base/smoothness.css">
     <link rel="stylesheet" href="lib/chartist/chartist.min.css">
     <link rel="stylesheet" href="lib/chartist/chartist-plugin-tooltip.css">
+    <link rel="stylesheet" type="text/css" href="styles/sass/tutorial.css">
     <link rel="icon" type="image/png" href="res/deck_2-16x16.png">
 
     <script src="lib/jquery-2.2.1.min.js"></script>
@@ -24,358 +26,365 @@
 
     <!-- This script contains the cached data for cards, missions, quests, raids,
         and battlegrounds -->
-    <script id="cards_script" type="text/javascript" src="scripts/data/cards.js"></script>
-    <script id="cards_script" type="text/javascript" src="scripts/data/fusions.js"></script>
-    <script id="runes_script" type="text/javascript" src="scripts/data/runes.js"></script>
-    <script id="shared_functions" type="text/javascript" src="scripts/shared.js"></script>
-    <script id="common_variables" type="text/javascript" src="scripts/common.js"></script>
-    <script id="cards_gui" type="text/javascript" src="scripts/cards_gui.js"></script>
-    <script id="deckbuilder" type="text/javascript" src="scripts/deckbuilder.js"></script>
-    <script id="deckstorage" type="text/javascript" src="scripts/localstorage-controller.js"></script>
-    <script id="angular_controller" src="scripts/ng-card-details-controller.js"></script>
-    <script id="spoilers" type="text/javascript" src="scripts/data/spoilers.js"></script>
+    <script type="text/javascript" src="scripts/data/cards.js"></script>
+    <script type="text/javascript" src="scripts/data/fusions.js"></script>
+    <script type="text/javascript" src="scripts/data/runes.js"></script>
+    <script type="text/javascript" src="scripts/shared.js"></script>
+    <script type="text/javascript" src="scripts/common.js"></script>
+    <script type="text/javascript" src="scripts/cards_gui.js"></script>
+    <script type="text/javascript" src="scripts/deckbuilder.js"></script>
+    <script type="text/javascript" src="scripts/localstorage-controller.js"></script>
+    <script src="scripts/ng-card-details-controller.js"></script>
+    <script type="text/javascript" src="scripts/data/spoilers.js"></script>
 
+    <script src="scripts/tutorial/deckbuilder-tutorial.js"></script>
+    <script src="scripts/sim-tutorial.js"></script>
 </head>
 <body onload="initDeckBuilder()" onresize="adjustHeight();">
-    <div id="deckBuilderContainer">
-        <div class="accordion">
-            <h3 id="version_label">Deck:</h3>
-            <div id="deckContainer" class="collapsible">
-                <br />
-                <div id="deck" class="float-left"></div>
-                <br />
-                <div><b>Deck Hash:</b></div>
-                <div>
-                    <div class="highlighter" id="hash_highlighter"></div>
-                    <input class="highlighted" id="hash" type="text" value="" size="100" onchange="hash_changed();" onpaste="hash_changed.debounce(100)();" />
-                </div>
-                <div style="margin:10px 0 10px 0"><a id="link" href="#"></a>&nbsp;</div>
-                <input id="resetDeck" type="button" value="Reset" onclick="resetDeck()" />
-                <input id="sortDeck" type="button" value="Sort" onclick="sortDeck()" />
-                <input id="saveDeck" type="button" value="Save" onclick="saveDeck()" />
-                <input id="loadDeck" type="button" value="Load" onclick="loadDeck()" />
-                <input id="inventoryMode" type="button" value="Switch to Inventory Builder" onclick="toggleInventoryMode()" />
-            </div>
-        </div>
-        <div class="accordion start-closed" style="display:none;">
-            <h3>Deck Stats:</h3>
-            <div id="deckGraphs">
-                <div class="chartContainer">
-                    <!--<header><h4>Attack/Health</h4></header>-->
-                    <div class="ct-chart" id="statChart"></div>
-                </div>
-                <div class="chartContainer">
-                    <header><h4>Average Stats</h4></header>-
-                    <div class="ct-chart" id="averagesChart"></div>
-                </div>
-                <div class="chartContainer">
-                    <header><h4>Delay Curve</h4></header>
-                    <div class="ct-chart" id="delayChart"></div>
-                </div>
-                <div class="chartContainer">
-                    <header><h4>Faction</h4></header>
-                    <div class="ct-chart" id="factionChart"></div>
-                </div>
-                <div class="chartContainer">
-                    <header><h4>Subfaction</h4></header>
-                    <div class="ct-chart" id="subfactionChart"></div>
+    <header style="display:none" id="header"></header>
+    <div style="margin:auto">
+        <div id="deckBuilderContainer">
+            <div id="deck-container" class="accordion">
+                <h3 id="version_label">Deck:</h3>
+                <div id="deckContainer" class="collapsible">
+                    <br />
+                    <div id="deck" class="float-left"></div>
+                    <br />
+                    <div id="hash-container">
+                        <div><b>Deck Hash:</b></div>
+                        <div>
+                            <div class="highlighter" id="hash_highlighter"></div>
+                            <input class="highlighted" id="hash" type="text" value="" size="100" onchange="hash_changed();" onpaste="hash_changed.debounce(100)();" />
+                        </div>
+                    </div>
+                    <div style="margin:10px 0 10px 0"><a id="link" href="#"></a>&nbsp;</div>
+                    <input id="resetDeck" type="button" value="Reset" onclick="resetDeck()" />
+                    <input id="sortDeck" type="button" value="Sort" onclick="sortDeck()" />
+                    <input id="saveDeck" type="button" value="Save" onclick="saveDeck()" />
+                    <input id="loadDeck" type="button" value="Load" onclick="loadDeck()" />
+                    <input id="inventoryMode" type="button" value="Switch to Inventory Builder" onclick="toggleInventoryMode()" />
                 </div>
             </div>
-        </div>
-        <div class="accordion">
-            <h3>Filters:</h3>
-            <div id="filters">
-                <fieldset>
-                    <span>Card Type:</span>
-                    <input type="button" value="Commander" onclick="filterType(this, '1')" />
-                    <input type="button" value="Unit" onclick="filterType(this, '2')" />
-                </fieldset>
-                <fieldset>
-                    <span>Fusion:</span>
-                    <input type="image" title="Single Fused" name="skill" src="res/cardAssets/Singlefuse.png" onclick="filterFusion(this, '')" />
-                    <input type="image" title="Dual Fused" name="skill" src="res/cardAssets/Dualfuse.png" onclick="filterFusion(this, '1')" />
-                    <input type="image" title="Quad Fused" name="skill" src="res/cardAssets/Quadfuse.png" onclick="filterFusion(this, '2')" />
-                </fieldset>
-                <fieldset>
-                    <span>Set:</span>
-                    <input type="image" name="skill" title="Basic Set" src="res/cardAssets/Basic.png" onclick="filterSet(this, '1000')" />
-                    <input type="image" name="skill" title="Reward Set" src="res/cardAssets/Reward.png" onclick="filterSet(this, '2000')" />
-                    <input type="image" name="skill" title="Premium Set" src="res/cardAssets/Premium.png" onclick="filterSet(this, '3000')" />
-                    <input type="image" name="skill" title="Chance Boxes" src="res/cardAssets/BoxOnly.png" onclick="filterSet(this, '4000')" />
-                    <input type="image" name="skill" title="Story Elements" src="res/cardAssets/StoryElements.png" onclick="filterSet(this, '9999')" />
-                </fieldset>
-                <fieldset>
-                    <span>Skills:</span>
-                    <input type="image" id="armored" name="skill" title="Armor" src="res/skills/Armor.png" onclick="filterSkill(this, 'armored')" oncontextmenu="return showAdvancedFilters('armored')" />
-                    <input type="image" id="protect" name="skill" title="Barrier" src="res/skills/Barrier.png" onclick="filterSkill(this, 'protect')" oncontextmenu="return showAdvancedFilters('protect')" />
-                    <input type="image" id="protect_ice" name="skill" title="Iceshatter Barrier" src="res/skills/Iceshatter.png" onclick="filterSkill(this, 'protect_ice')" oncontextmenu="return showAdvancedFilters('protect_ice')" />
-                    <input type="image" id="berserk" name="skill" title="Berserk" src="res/skills/Berserk.png" onclick="filterSkill(this, 'berserk')" oncontextmenu="return showAdvancedFilters('berserk')" />
-                    <input type="image" id="strike" name="skill" title="Bolt" src="res/skills/Bolt.png" onclick="filterSkill(this, 'strike')" oncontextmenu="return showAdvancedFilters('strike')" />
-                    <input type="image" id="leech" name="skill" title="Corrosive" src="res/skills/Corrosive.png" onclick="filterSkill(this, 'corrosive')" oncontextmenu=" return showAdvancedFilters('corrosive')" />
-                    <input type="image" id="counterburn" name="skill" title="Counterburn" src="res/skills/Counterburn.png" onclick="filterSkill(this, 'counterburn')" oncontextmenu="return showAdvancedFilters('counterburn')" />
-                    <input type="image" id="flurry" name="skill" title="Dualstrike" src="res/skills/Dualstrike.png" onclick="filterSkill(this, 'flurry')" oncontextmenu="return showAdvancedFilters('flurry')" />
-                    <input type="image" id="rally" name="skill" title="Empower" src="res/skills/Empower.png" onclick="filterSkill(this, 'rally')" oncontextmenu="return showAdvancedFilters('rally')" />
-                    <input type="image" id="enhance" name="skill" title="Enhance" src="res/skills/Enhance.png" onclick="filterSkill(this, 'enhance')" oncontextmenu="return showAdvancedFilters('enhance')" />
-                    <input type="image" id="fervor" name="skill" title="Fervor" src="res/skills/Fervor.png" onclick="filterSkill(this, 'fervor')" oncontextmenu="return showAdvancedFilters('fervor')" />
-                    <input type="image" id="jam" name="skill" title="Freeze" src="res/skills/Freeze.png" onclick="filterSkill(this, 'jam')" oncontextmenu="return showAdvancedFilters('jam')" />
-                    <input type="image" id="frost" name="skill" title="Frostbreath" src="res/skills/Frost.png" onclick="filterSkill(this, 'frost')" oncontextmenu="return showAdvancedFilters('frost')" />
-                    <input type="image" id="heal" name="skill" title="Heal" src="res/skills/Heal.png" onclick="filterSkill(this, 'heal')" oncontextmenu="return showAdvancedFilters('heal')" />
-                    <input type="image" id="enfeeble" name="skill" title="Hex" src="res/skills/Hex.png" onclick="filterSkill(this, 'enfeeble')" oncontextmenu="return showAdvancedFilters('enfeeble')" />
-                    <input type="image" id="imbue" name="skill" title="Imbue" src="res/skills/Imbue.png" onclick="filterSkill(this, 'imbue')" oncontextmenu="return showAdvancedFilters('imbue')" />
-                    <input type="image" id="evade" name="skill" title="Invisibile" src="res/skills/Invisibility.png" onclick="filterSkill(this, 'evade')" oncontextmenu="return showAdvancedFilters('evade')" />
-                    <input type="image" id="legion" name="skill" title="Legion" src="res/skills/Legion.png" onclick="filterSkill(this, 'legion')" oncontextmenu="return showAdvancedFilters('legion')" />
-                    <input type="image" id="nullify" name="skill" title="Nullify" src="res/skills/Nullify.png" onclick="filterSkill(this, 'nullify')" oncontextmenu=" return showAdvancedFilters('nullify')" />
-                    <input type="image" id="pierce" name="skill" title="Pierce" src="res/skills/Pierce.png" onclick="filterSkill(this, 'pierce')" oncontextmenu="return showAdvancedFilters('pierce')" />
-                    <input type="image" id="poison" name="skill" title="Poison" src="res/skills/Poison.png" onclick="filterSkill(this, 'poison')" oncontextmenu="return showAdvancedFilters('poison')" />
-                    <input type="image" id="poisonstrike" name="skill" title="Poisonbolt" src="res/skills/Poisonbolt.png" onclick="filterSkill(this, 'poisonstrike')" oncontextmenu="return showAdvancedFilters('poisonstrike')" />
-                    <input type="image" id="burn" name="skill" title="Scorch" src="res/skills/Scorch.png" onclick="filterSkill(this, 'burn')" oncontextmenu="return showAdvancedFilters('burn')" />
-                    <input type="image" id="leech" name="skill" title="Silence" src="res/skills/Silence.png" onclick="filterSkill(this, 'silence')" oncontextmenu="return showAdvancedFilters('silence')" />
-                    <input type="image" id="leech" name="skill" title="Siphon" src="res/skills/Siphon.png" onclick="filterSkill(this, 'leech')" oncontextmenu="return showAdvancedFilters('leech')" />
-                    <input type="image" id="leech" name="skill" title="Taunt" src="res/skills/Taunt.png" onclick="filterSkill(this, 'taunt')" oncontextmenu="return showAdvancedFilters('taunt')" />
-                    <input type="image" id="counter" name="skill" title="Vengeance" src="res/skills/Vengeance.png" onclick="filterSkill(this, 'counter')" oncontextmenu="return showAdvancedFilters('counter')" />
-                    <input type="image" id="weaken" name="skill" title="Weaken" src="res/skills/Weaken.png" onclick="filterSkill(this, 'weaken')" oncontextmenu="return showAdvancedFilters('weaken')" />
-                    <input type="image" id="valor" name="skill" title="Valor" src="res/skills/Valor.png" onclick="filterSkill(this, 'valor')" oncontextmenu="return showAdvancedFilters('valor')" />
-                </fieldset>
-                <fieldset>
-                    <span>Faction:</span>
-                    <input type="image" name="faction" title="Aether" src="res/factions/Aether.png" onclick="filterFaction(this, 'Aether')" />
-                    <input type="image" name="faction" title="Chaos" src="res/factions/Chaos.png" onclick="filterFaction(this, 'Chaos')" />
-                    <input type="image" name="faction" title="Wyld" src="res/factions/Wyld.png" onclick="filterFaction(this, 'Wyld')" />
-                    <input type="image" name="faction" title="Void" src="res/factions/Void.png" onclick="filterFaction(this, 'Void')" />
-                    <input type="image" name="faction" title="Factionless" src="res/factions/Factionless.png" onclick="filterFaction(this, 'Factionless')" />
-                </fieldset>
-                <fieldset>
-                    <span>Subfaction:</span>
-                    <input type="image" name="subfaction" title="Angel" src="res/factions/Angel.png" onclick="filterSubfaction(this, 'Angel')" />
-                    <input type="image" name="subfaction" title="Avian" src="res/factions/Avian.png" onclick="filterSubfaction(this, 'Avian')" />
-                    <input type="image" name="subfaction" title="Dragon" src="res/factions/Dragon.png" onclick="filterSubfaction(this, 'Dragon')" />
-                    <input type="image" name="subfaction" title="Elemental" src="res/factions/Elemental.png" onclick="filterSubfaction(this, 'Elemental')" />
-                    <input type="image" name="subfaction" title="Frog" src="res/factions/Frog.png" onclick="filterSubfaction(this, 'Frog')" />
-                    <input type="image" name="subfaction" title="Undead" src="res/factions/Undead.png" onclick="filterSubfaction(this, 'Undead')" />
-                    <input type="image" name="subfaction" title="Goblin" src="res/factions/Goblin.png" onclick="filterSubfaction(this, 'Goblin')" />
-                    <input type="image" name="subfaction" title="Seafolk" src="res/factions/Seafolk.png" onclick="filterSubfaction(this, 'Seafolk')" />
-                    <input type="image" name="subfaction" title="Insect" src="res/factions/Insect.png" onclick="filterSubfaction(this, 'Insect')" />
-                    <input type="image" name="subfaction" title="None" src="res/factions/Factionless.png" onclick="filterSubfaction(this, 'Factionless')" />
-                </fieldset>
-                <fieldset>
-                    <span>Rarity:</span>
-                    <input type="image" name="rarity" title="Common" src="res/cardAssets/Level_1_3.png" onclick="filterRarity(this, 1)" />
-                    <input type="image" name="rarity" title="Rare" src="res/cardAssets/Level_2_4.png" onclick="filterRarity(this, 2)" />
-                    <input type="image" name="rarity" title="Epic" src="res/cardAssets/Level_3_5.png" onclick="filterRarity(this, 3)" />
-                    <input type="image" name="rarity" title="Legendary" src="res/cardAssets/Level_4_6.png" onclick="filterRarity(this, 4)" />
-                    <input type="image" name="rarity" title="Mythic" src="res/cardAssets/Level_5_7.png" onclick="filterRarity(this, 5)" />
-                </fieldset>
-                <fieldset>
-                    <span>Attack:</span>
-                    <input class="attack-filter" type="button" value="0" onclick="filterAttack(this, 0, 0)" />
-                    <input class="attack-filter" type="button" value="1-2" onclick="filterAttack(this, 1, 2)" />
-                    <input class="attack-filter" type="button" value="3-4" onclick="filterAttack(this, 3, 4)" />
-                    <input class="attack-filter" type="button" value="5-6" onclick="filterAttack(this, 5, 6)" />
-                    <input class="attack-filter" type="button" value="7-8" onclick="filterAttack(this, 7, 8)" />
-                    <input class="attack-filter" type="button" value="9-10" onclick="filterAttack(this, 9, 10)" />
-                    <input class="attack-filter" type="button" value="11+" onclick="filterAttack(this, 11, -1)" />
-                </fieldset>
-                <fieldset>
-                    <span>Health:</span>
-                    <input class="health-filter" type="button" value="1-5" onclick="filterHealth(this, 1, 5)" />
-                    <input class="health-filter" type="button" value="6-10" onclick="filterHealth(this, 6, 10)" />
-                    <input class="health-filter" type="button" value="11-15" onclick="filterHealth(this, 11, 15)" />
-                    <input class="health-filter" type="button" value="16-20" onclick="filterHealth(this, 16, 20)" />
-                    <input class="health-filter" type="button" value="21-25" onclick="filterHealth(this, 21, 25)" />
-                    <input class="health-filter" type="button" value="26-30" onclick="filterHealth(this, 26, 30)" />
-                    <input class="health-filter" type="button" value="31+" onclick="filterHealth(this, 31, -1)" />
-                </fieldset>
-                <fieldset>
-                    <span>Delay:</span>
-                    <input class="delay-filter" type="button" value="0" onclick="filterDelay(this, 0)" />
-                    <input class="delay-filter" type="button" value="1" onclick="filterDelay(this, 1)" />
-                    <input class="delay-filter" type="button" value="2" onclick="filterDelay(this, 2)" />
-                    <input class="delay-filter" type="button" value="3" onclick="filterDelay(this, 3)" />
-                    <input class="delay-filter" type="button" value="4" onclick="filterDelay(this, 4)" />
-                </fieldset>
-                <div style="white-space:nowrap; margin: 5px 0px;">
-
-                    <div class="ui-widget">
-                        <label for="nameFilter"><strong>Name Filter:</strong></label><br />
-                        <input id="nameFilter" type="text" value="" size="100" onkeyup="filterName(this);">
+            <div class="accordion start-closed" style="display:none;">
+                <h3>Deck Stats:</h3>
+                <div id="deckGraphs">
+                    <div class="chartContainer">
+                        <!--<header><h4>Attack/Health</h4></header>-->
+                        <div class="ct-chart" id="statChart"></div>
+                    </div>
+                    <div class="chartContainer">
+                        <header><h4>Average Stats</h4></header>-
+                        <div class="ct-chart" id="averagesChart"></div>
+                    </div>
+                    <div class="chartContainer">
+                        <header><h4>Delay Curve</h4></header>
+                        <div class="ct-chart" id="delayChart"></div>
+                    </div>
+                    <div class="chartContainer">
+                        <header><h4>Faction</h4></header>
+                        <div class="ct-chart" id="factionChart"></div>
+                    </div>
+                    <div class="chartContainer">
+                        <header><h4>Subfaction</h4></header>
+                        <div class="ct-chart" id="subfactionChart"></div>
                     </div>
                 </div>
-                <input type="button" value="Clear All" onclick="clearFilters()" />
-                <br />
             </div>
-        </div>
-        <div class="accordion">
-            <h3>Cards:</h3>
-            <div>
-                <table>
-                    <tr>
-                        <td>
-                            Rows:
-                            <input type="number" name="rows" id="rows" min="1" step="1" max="9" value="3" class="ui-widget-content ui-corner-all" style="width:25px;" onchange="applyFilters(true, false);">
-                        </td>
-                        <td style="min-width:5px;"></td>
-                        <td>
-                            <img style="width:12px" src="res/misc/Arrow.png" onclick="pageUp();">
-                        </td>
-                        <td style="min-width:45px; text-align:center;">
-                            <div id="pageNumber"></div>
-                        </td>
-                        <td>
-                            <img class="flip" style="width:12px" src="res/misc/Arrow.png" onclick="pageDown();">
-                        </td>
-                        <td style="width:100%;"></td>
-                        <td>
-                            <div id="advancedMenu" class="dropdown">
-                                <div><u>Advanced Options</u></div>
-                                <div id="dropdown" class="dropdown-content">
-                                    <input type="checkbox" onclick="toggleUpgrades(this);" class="ui-widget-content ui-corner-all" />
-                                    <span>All Upgrade Levels</span>
-                                    <br />
+            <div id="filter-container" class="accordion">
+                <h3>Filters:</h3>
+                <div id="filters">
+                    <fieldset>
+                        <span>Card Type:</span>
+                        <input type="button" value="Commander" onclick="filterType(this, '1')" />
+                        <input type="button" value="Unit" onclick="filterType(this, '2')" />
+                    </fieldset>
+                    <fieldset>
+                        <span>Fusion:</span>
+                        <input type="image" title="Single Fused" name="skill" src="res/cardAssets/Singlefuse.png" onclick="filterFusion(this, '')" />
+                        <input type="image" title="Dual Fused" name="skill" src="res/cardAssets/Dualfuse.png" onclick="filterFusion(this, '1')" />
+                        <input type="image" title="Quad Fused" name="skill" src="res/cardAssets/Quadfuse.png" onclick="filterFusion(this, '2')" />
+                    </fieldset>
+                    <fieldset>
+                        <span>Set:</span>
+                        <input type="image" name="skill" title="Basic Set" src="res/cardAssets/Basic.png" onclick="filterSet(this, '1000')" />
+                        <input type="image" name="skill" title="Reward Set" src="res/cardAssets/Reward.png" onclick="filterSet(this, '2000')" />
+                        <input type="image" name="skill" title="Premium Set" src="res/cardAssets/Premium.png" onclick="filterSet(this, '3000')" />
+                        <input type="image" name="skill" title="Chance Boxes" src="res/cardAssets/BoxOnly.png" onclick="filterSet(this, '4000')" />
+                        <input type="image" name="skill" title="Story Elements" src="res/cardAssets/StoryElements.png" onclick="filterSet(this, '9999')" />
+                    </fieldset>
+                    <fieldset>
+                        <span>Skills:</span>
+                        <input type="image" id="armored" name="skill" title="Armor" src="res/skills/Armor.png" onclick="filterSkill(this, 'armored')" oncontextmenu="return showAdvancedFilters('armored')" />
+                        <input type="image" id="protect" name="skill" title="Barrier" src="res/skills/Barrier.png" onclick="filterSkill(this, 'protect')" oncontextmenu="return showAdvancedFilters('protect')" />
+                        <input type="image" id="protect_ice" name="skill" title="Iceshatter Barrier" src="res/skills/Iceshatter.png" onclick="filterSkill(this, 'protect_ice')" oncontextmenu="return showAdvancedFilters('protect_ice')" />
+                        <input type="image" id="berserk" name="skill" title="Berserk" src="res/skills/Berserk.png" onclick="filterSkill(this, 'berserk')" oncontextmenu="return showAdvancedFilters('berserk')" />
+                        <input type="image" id="strike" name="skill" title="Bolt" src="res/skills/Bolt.png" onclick="filterSkill(this, 'strike')" oncontextmenu="return showAdvancedFilters('strike')" />
+                        <input type="image" id="leech" name="skill" title="Corrosive" src="res/skills/Corrosive.png" onclick="filterSkill(this, 'corrosive')" oncontextmenu=" return showAdvancedFilters('corrosive')" />
+                        <input type="image" id="counterburn" name="skill" title="Counterburn" src="res/skills/Counterburn.png" onclick="filterSkill(this, 'counterburn')" oncontextmenu="return showAdvancedFilters('counterburn')" />
+                        <input type="image" id="flurry" name="skill" title="Dualstrike" src="res/skills/Dualstrike.png" onclick="filterSkill(this, 'flurry')" oncontextmenu="return showAdvancedFilters('flurry')" />
+                        <input type="image" id="rally" name="skill" title="Empower" src="res/skills/Empower.png" onclick="filterSkill(this, 'rally')" oncontextmenu="return showAdvancedFilters('rally')" />
+                        <input type="image" id="enhance" name="skill" title="Enhance" src="res/skills/Enhance.png" onclick="filterSkill(this, 'enhance')" oncontextmenu="return showAdvancedFilters('enhance')" />
+                        <input type="image" id="fervor" name="skill" title="Fervor" src="res/skills/Fervor.png" onclick="filterSkill(this, 'fervor')" oncontextmenu="return showAdvancedFilters('fervor')" />
+                        <input type="image" id="jam" name="skill" title="Freeze" src="res/skills/Freeze.png" onclick="filterSkill(this, 'jam')" oncontextmenu="return showAdvancedFilters('jam')" />
+                        <input type="image" id="frost" name="skill" title="Frostbreath" src="res/skills/Frost.png" onclick="filterSkill(this, 'frost')" oncontextmenu="return showAdvancedFilters('frost')" />
+                        <input type="image" id="heal" name="skill" title="Heal" src="res/skills/Heal.png" onclick="filterSkill(this, 'heal')" oncontextmenu="return showAdvancedFilters('heal')" />
+                        <input type="image" id="enfeeble" name="skill" title="Hex" src="res/skills/Hex.png" onclick="filterSkill(this, 'enfeeble')" oncontextmenu="return showAdvancedFilters('enfeeble')" />
+                        <input type="image" id="imbue" name="skill" title="Imbue" src="res/skills/Imbue.png" onclick="filterSkill(this, 'imbue')" oncontextmenu="return showAdvancedFilters('imbue')" />
+                        <input type="image" id="evade" name="skill" title="Invisibile" src="res/skills/Invisibility.png" onclick="filterSkill(this, 'evade')" oncontextmenu="return showAdvancedFilters('evade')" />
+                        <input type="image" id="legion" name="skill" title="Legion" src="res/skills/Legion.png" onclick="filterSkill(this, 'legion')" oncontextmenu="return showAdvancedFilters('legion')" />
+                        <input type="image" id="nullify" name="skill" title="Nullify" src="res/skills/Nullify.png" onclick="filterSkill(this, 'nullify')" oncontextmenu=" return showAdvancedFilters('nullify')" />
+                        <input type="image" id="pierce" name="skill" title="Pierce" src="res/skills/Pierce.png" onclick="filterSkill(this, 'pierce')" oncontextmenu="return showAdvancedFilters('pierce')" />
+                        <input type="image" id="poison" name="skill" title="Poison" src="res/skills/Poison.png" onclick="filterSkill(this, 'poison')" oncontextmenu="return showAdvancedFilters('poison')" />
+                        <input type="image" id="poisonstrike" name="skill" title="Poisonbolt" src="res/skills/Poisonbolt.png" onclick="filterSkill(this, 'poisonstrike')" oncontextmenu="return showAdvancedFilters('poisonstrike')" />
+                        <input type="image" id="burn" name="skill" title="Scorch" src="res/skills/Scorch.png" onclick="filterSkill(this, 'burn')" oncontextmenu="return showAdvancedFilters('burn')" />
+                        <input type="image" id="leech" name="skill" title="Silence" src="res/skills/Silence.png" onclick="filterSkill(this, 'silence')" oncontextmenu="return showAdvancedFilters('silence')" />
+                        <input type="image" id="leech" name="skill" title="Siphon" src="res/skills/Siphon.png" onclick="filterSkill(this, 'leech')" oncontextmenu="return showAdvancedFilters('leech')" />
+                        <input type="image" id="leech" name="skill" title="Taunt" src="res/skills/Taunt.png" onclick="filterSkill(this, 'taunt')" oncontextmenu="return showAdvancedFilters('taunt')" />
+                        <input type="image" id="counter" name="skill" title="Vengeance" src="res/skills/Vengeance.png" onclick="filterSkill(this, 'counter')" oncontextmenu="return showAdvancedFilters('counter')" />
+                        <input type="image" id="weaken" name="skill" title="Weaken" src="res/skills/Weaken.png" onclick="filterSkill(this, 'weaken')" oncontextmenu="return showAdvancedFilters('weaken')" />
+                        <input type="image" id="valor" name="skill" title="Valor" src="res/skills/Valor.png" onclick="filterSkill(this, 'valor')" oncontextmenu="return showAdvancedFilters('valor')" />
+                    </fieldset>
+                    <fieldset>
+                        <span>Faction:</span>
+                        <input type="image" name="faction" title="Aether" src="res/factions/Aether.png" onclick="filterFaction(this, 'Aether')" />
+                        <input type="image" name="faction" title="Chaos" src="res/factions/Chaos.png" onclick="filterFaction(this, 'Chaos')" />
+                        <input type="image" name="faction" title="Wyld" src="res/factions/Wyld.png" onclick="filterFaction(this, 'Wyld')" />
+                        <input type="image" name="faction" title="Void" src="res/factions/Void.png" onclick="filterFaction(this, 'Void')" />
+                        <input type="image" name="faction" title="Factionless" src="res/factions/Factionless.png" onclick="filterFaction(this, 'Factionless')" />
+                    </fieldset>
+                    <fieldset>
+                        <span>Subfaction:</span>
+                        <input type="image" name="subfaction" title="Angel" src="res/factions/Angel.png" onclick="filterSubfaction(this, 'Angel')" />
+                        <input type="image" name="subfaction" title="Avian" src="res/factions/Avian.png" onclick="filterSubfaction(this, 'Avian')" />
+                        <input type="image" name="subfaction" title="Dragon" src="res/factions/Dragon.png" onclick="filterSubfaction(this, 'Dragon')" />
+                        <input type="image" name="subfaction" title="Elemental" src="res/factions/Elemental.png" onclick="filterSubfaction(this, 'Elemental')" />
+                        <input type="image" name="subfaction" title="Frog" src="res/factions/Frog.png" onclick="filterSubfaction(this, 'Frog')" />
+                        <input type="image" name="subfaction" title="Undead" src="res/factions/Undead.png" onclick="filterSubfaction(this, 'Undead')" />
+                        <input type="image" name="subfaction" title="Goblin" src="res/factions/Goblin.png" onclick="filterSubfaction(this, 'Goblin')" />
+                        <input type="image" name="subfaction" title="Seafolk" src="res/factions/Seafolk.png" onclick="filterSubfaction(this, 'Seafolk')" />
+                        <input type="image" name="subfaction" title="Insect" src="res/factions/Insect.png" onclick="filterSubfaction(this, 'Insect')" />
+                        <input type="image" name="subfaction" title="None" src="res/factions/Factionless.png" onclick="filterSubfaction(this, 'Factionless')" />
+                    </fieldset>
+                    <fieldset>
+                        <span>Rarity:</span>
+                        <input type="image" name="rarity" title="Common" src="res/cardAssets/Level_1_3.png" onclick="filterRarity(this, 1)" />
+                        <input type="image" name="rarity" title="Rare" src="res/cardAssets/Level_2_4.png" onclick="filterRarity(this, 2)" />
+                        <input type="image" name="rarity" title="Epic" src="res/cardAssets/Level_3_5.png" onclick="filterRarity(this, 3)" />
+                        <input type="image" name="rarity" title="Legendary" src="res/cardAssets/Level_4_6.png" onclick="filterRarity(this, 4)" />
+                        <input type="image" name="rarity" title="Mythic" src="res/cardAssets/Level_5_7.png" onclick="filterRarity(this, 5)" />
+                    </fieldset>
+                    <fieldset>
+                        <span>Attack:</span>
+                        <input class="attack-filter" type="button" value="0" onclick="filterAttack(this, 0, 0)" />
+                        <input class="attack-filter" type="button" value="1-2" onclick="filterAttack(this, 1, 2)" />
+                        <input class="attack-filter" type="button" value="3-4" onclick="filterAttack(this, 3, 4)" />
+                        <input class="attack-filter" type="button" value="5-6" onclick="filterAttack(this, 5, 6)" />
+                        <input class="attack-filter" type="button" value="7-8" onclick="filterAttack(this, 7, 8)" />
+                        <input class="attack-filter" type="button" value="9-10" onclick="filterAttack(this, 9, 10)" />
+                        <input class="attack-filter" type="button" value="11+" onclick="filterAttack(this, 11, -1)" />
+                    </fieldset>
+                    <fieldset>
+                        <span>Health:</span>
+                        <input class="health-filter" type="button" value="1-5" onclick="filterHealth(this, 1, 5)" />
+                        <input class="health-filter" type="button" value="6-10" onclick="filterHealth(this, 6, 10)" />
+                        <input class="health-filter" type="button" value="11-15" onclick="filterHealth(this, 11, 15)" />
+                        <input class="health-filter" type="button" value="16-20" onclick="filterHealth(this, 16, 20)" />
+                        <input class="health-filter" type="button" value="21-25" onclick="filterHealth(this, 21, 25)" />
+                        <input class="health-filter" type="button" value="26-30" onclick="filterHealth(this, 26, 30)" />
+                        <input class="health-filter" type="button" value="31+" onclick="filterHealth(this, 31, -1)" />
+                    </fieldset>
+                    <fieldset>
+                        <span>Delay:</span>
+                        <input class="delay-filter" type="button" value="0" onclick="filterDelay(this, 0)" />
+                        <input class="delay-filter" type="button" value="1" onclick="filterDelay(this, 1)" />
+                        <input class="delay-filter" type="button" value="2" onclick="filterDelay(this, 2)" />
+                        <input class="delay-filter" type="button" value="3" onclick="filterDelay(this, 3)" />
+                        <input class="delay-filter" type="button" value="4" onclick="filterDelay(this, 4)" />
+                    </fieldset>
+                    <div id="name-container" style="white-space:nowrap; margin: 5px 0;">
+                        <div class="ui-widget">
+                            <label for="nameFilter"><strong>Name Filter:</strong></label><br />
+                            <input id="nameFilter" type="text" value="" size="100" onkeyup="filterName(this);">
+                        </div>
+                    </div>
+                    <input type="button" id="clear-filters" value="Clear All" onclick="clearFilters()" />
+                    <br />
+                </div>
+            </div>
+            <div id="collection-container" class="accordion">
+                <h3>Cards:</h3>
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                Rows:
+                                <input type="number" name="rows" id="rows" min="1" step="1" max="9" value="3" class="ui-widget-content ui-corner-all" style="width:25px;" onchange="applyFilters(true, false);">
+                            </td>
+                            <td style="min-width:5px;"></td>
+                            <td>
+                                <img style="width:12px" src="res/misc/Arrow.png" onclick="pageUp();">
+                            </td>
+                            <td style="min-width:45px; text-align:center;">
+                                <div id="pageNumber"></div>
+                            </td>
+                            <td>
+                                <img class="flip" style="width:12px" src="res/misc/Arrow.png" onclick="pageDown();">
+                            </td>
+                            <td style="width:100%;"></td>
+                            <td>
+                                <div id="advancedMenu" class="dropdown">
+                                    <div><u>Advanced Options</u></div>
+                                    <div id="dropdown" class="dropdown-content">
+                                        <input type="checkbox" onclick="toggleUpgrades(this);" class="ui-widget-content ui-corner-all" />
+                                        <span>All Upgrade Levels</span>
+                                        <br />
 
-                                    <input type="checkbox" id="skillDetails" onclick="toggleSkillDetails(this);" class="ui-widget-content ui-corner-all" />
-                                    <span>Compact Skills</span>
-                                    <br />
+                                        <input type="checkbox" id="skillDetails" onclick="toggleSkillDetails(this);" class="ui-widget-content ui-corner-all" />
+                                        <span>Compact Skills</span>
+                                        <br />
 
-                                    <label class="button" onclick="loadInventory();"><b>Set Inventory</b></label>
+                                        <label class="button" onclick="loadInventory();"><b>Set Inventory</b></label>
+                                    </div>
                                 </div>
-                            </div>
-                        </td>
-                        <td style="min-width:10px;"></td>
-                        <td>
-                            Sort By:
-                            <select name="sortField" id="sortField" class="ui-widget-content ui-corner-all" onchange="sortAndDraw(this);">
-                                <option value="id">ID</option>
-                                <option value="type">Faction</option>
-                                <option value="sub_type">Sub-Faction</option>
-                                <option value="rarity">Rarity</option>
-                                <option value="attack">Attack</option>
-                                <option value="health">Health</option>
-                                <option value="cost">Delay</option>
-                            </select>
-                        </td>
-                    </tr>
-                </table>
-                <hr />
-                <div id="cardSpace" class="collapsible float-left"></div>
+                            </td>
+                            <td style="min-width:10px;"></td>
+                            <td>
+                                Sort By:
+                                <select name="sortField" id="sortField" class="ui-widget-content ui-corner-all" onchange="sortAndDraw(this);">
+                                    <option value="id">ID</option>
+                                    <option value="type">Faction</option>
+                                    <option value="sub_type">Sub-Faction</option>
+                                    <option value="rarity">Rarity</option>
+                                    <option value="attack">Attack</option>
+                                    <option value="health">Health</option>
+                                    <option value="cost">Delay</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <hr />
+                    <div id="cardSpace" class="collapsible float-left"></div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div id="advancedFilters" class="dialog-form">
-        <form>
-            <fieldset>
-                <div id="amount">
-                    <label for="amount">Amount</label>
-                    <input type="number" name="amount" id="amount-min" min="1" step="1" class="ui-widget-content ui-corner-all">
-                    -
-                    <input type="number" name="amount" id="amount-max" min="1" step="1" class="ui-widget-content ui-corner-all">
-                </div>
+        <div id="advancedFilters" class="dialog-form">
+            <form>
+                <fieldset>
+                    <div id="amount">
+                        <label for="amount">Amount</label>
+                        <input type="number" name="amount" id="amount-min" min="1" step="1" class="ui-widget-content ui-corner-all">
+                        -
+                        <input type="number" name="amount" id="amount-max" min="1" step="1" class="ui-widget-content ui-corner-all">
+                    </div>
 
-                <div id="timer">
-                    <label for="timer">Timer</label>
-                    <input type="number" name="timer" id="timer-min" min="1" step="1" class="ui-widget-content ui-corner-all" />
-                    -
-                    <input type="number" name="timer" id="timer-max" min="1" step="1" class="ui-widget-content ui-corner-all" />
-                </div>
+                    <div id="timer">
+                        <label for="timer">Timer</label>
+                        <input type="number" name="timer" id="timer-min" min="1" step="1" class="ui-widget-content ui-corner-all" />
+                        -
+                        <input type="number" name="timer" id="timer-max" min="1" step="1" class="ui-widget-content ui-corner-all" />
+                    </div>
 
-                <div id="faction">
-                    <label for="faction">Faction</label>
-                    <select name="faction" id="faction" class="ui-widget-content ui-corner-all">
-                        <option value=""></option>
-                        <option value="Generic">Generic</option>
-                        <option value="Aether">Aether</option>
-                        <option value="Chaos">Chaos</option>
-                        <option value="Wyld">Wyld</option>
-                        <option value="Angel">Angel</option>
-                        <option value="Avian">Avian</option>
-                        <option value="Dragon">Dragon</option>
-                        <option value="Elemental">Elemental</option>
-                        <option value="Frog">Frog</option>
-                        <option value="Undead">Undead</option>
-                    </select>
-                </div>
+                    <div id="faction">
+                        <label for="faction">Faction</label>
+                        <select name="faction" id="faction" class="ui-widget-content ui-corner-all">
+                            <option value=""></option>
+                            <option value="Generic">Generic</option>
+                            <option value="Aether">Aether</option>
+                            <option value="Chaos">Chaos</option>
+                            <option value="Wyld">Wyld</option>
+                            <option value="Angel">Angel</option>
+                            <option value="Avian">Avian</option>
+                            <option value="Dragon">Dragon</option>
+                            <option value="Elemental">Elemental</option>
+                            <option value="Frog">Frog</option>
+                            <option value="Undead">Undead</option>
+                        </select>
+                    </div>
 
-                <div id="skill">
-                    <label for="skill">Skill</label>
-                    <select name="skill" id="skill" class="ui-widget-content ui-corner-all">
-                        <option value=""></option>
-                        <option value="armored">Armor</option>
-                        <option value="protect">Barrier</option>
-                        <option value="berserk">Berserk</option>
-                        <option value="strike">Bolt</option>
-                        <option value="strike">Corrosive</option>
-                        <option value="rally">Empower</option>
-                        <option value="fervor">Fervor</option>
-                        <option value="frost">Frostbreath</option>
-                        <option value="heal">Heal</option>
-                        <option value="enfeeble">Hex</option>
-                        <option value="evade">Invisibility</option>
-                        <option value="legion">Legion</option>
-                        <option value="nullify">Nullify</option>
-                        <option value="pierce">Pierce</option>
-                        <option value="poison">Poison</option>
-                        <option value="burn">Scorch</option>
-                        <option value="leech">Siphon</option>
-                        <option value="strike">Taunt</option>
-                        <option value="counter">Vengeance</option>
-                        <option value="weaken">Weaken</option>
-                        <option value="valor">Valor</option>
-                    </select>
-                </div>
+                    <div id="skill">
+                        <label for="skill">Skill</label>
+                        <select name="skill" id="skill" class="ui-widget-content ui-corner-all">
+                            <option value=""></option>
+                            <option value="armored">Armor</option>
+                            <option value="protect">Barrier</option>
+                            <option value="berserk">Berserk</option>
+                            <option value="strike">Bolt</option>
+                            <option value="strike">Corrosive</option>
+                            <option value="rally">Empower</option>
+                            <option value="fervor">Fervor</option>
+                            <option value="frost">Frostbreath</option>
+                            <option value="heal">Heal</option>
+                            <option value="enfeeble">Hex</option>
+                            <option value="evade">Invisibility</option>
+                            <option value="legion">Legion</option>
+                            <option value="nullify">Nullify</option>
+                            <option value="pierce">Pierce</option>
+                            <option value="poison">Poison</option>
+                            <option value="burn">Scorch</option>
+                            <option value="leech">Siphon</option>
+                            <option value="strike">Taunt</option>
+                            <option value="counter">Vengeance</option>
+                            <option value="weaken">Weaken</option>
+                            <option value="valor">Valor</option>
+                        </select>
+                    </div>
 
-                <label for="all">
-                    <label for="all">Targetting</label>
-                    <select name="all" id="all" class="ui-widget-content ui-corner-all">
-                        <option value="-1"></option>
-                        <option value="0">Single</option>
-                        <option value="1">All</option>
-                    </select>
-                </label>
-            </fieldset>
-        </form>
-    </div>
-
-    <div id="unitOptions" class="dialog-form">
-        <form>
-            <fieldset>
-                <div id="fusionDiv" class="split">
-                    <label for="fusion" accesskey="F"><u>F</u>usion</label>
-                    <input type="number" name="fusion" id="fusion" min="1" max="3" step="1" class="ui-widget-content ui-corner-all">
-                </div>
-                <div id="upgradeDiv" class="split">
-                    <label for="upgrade" accesskey="L"><u>L</u>evel</label>
-                    <input type="number" name="upgrade" id="upgrade" min="1" step="1" class="ui-widget-content ui-corner-all">
-                </div>
-                <div id="runeChoicesDiv">
-                    <label for="runeChoices" accesskey="R"><u>R</u>une</label>
-                    <select name="runeChoices" id="runeChoices" class="ui-widget-content ui-corner-all">
-                        <option value=""></option>
-                    </select>
-                    <label style="float:left;">
-                        <input type="checkbox" id="showUnreleased" onclick="toggleUnreleasedRunes(this);" />
-                        Show Unreleased
+                    <label for="all">
+                        <label for="all">Targetting</label>
+                        <select name="all" id="all" class="ui-widget-content ui-corner-all">
+                            <option value="-1"></option>
+                            <option value="0">Single</option>
+                            <option value="1">All</option>
+                        </select>
                     </label>
-                </div>
-            </fieldset>
-        </form>
-    </div>
+                </fieldset>
+            </form>
+        </div>
 
-    <div id="saveDeckDialog" title="Save Deck">
-        <label for="saveDeckName"><strong>Name:</strong></label><br />
-        <input id="saveDeckName" type="text" value="" style="width:95%;" />
-    </div>
+        <div id="unitOptions" class="dialog-form">
+            <form>
+                <fieldset>
+                    <div id="fusionDiv" class="split">
+                        <label for="fusion" accesskey="F"><u>F</u>usion</label>
+                        <input type="number" name="fusion" id="fusion" min="1" max="3" step="1" class="ui-widget-content ui-corner-all">
+                    </div>
+                    <div id="upgradeDiv" class="split">
+                        <label for="upgrade" accesskey="L"><u>L</u>evel</label>
+                        <input type="number" name="upgrade" id="upgrade" min="1" step="1" class="ui-widget-content ui-corner-all">
+                    </div>
+                    <div id="runeChoicesDiv">
+                        <label for="runeChoices" accesskey="R"><u>R</u>une</label>
+                        <select name="runeChoices" id="runeChoices" class="ui-widget-content ui-corner-all">
+                            <option value=""></option>
+                        </select>
+                        <label style="float:left;">
+                            <input type="checkbox" id="showUnreleased" onclick="toggleUnreleasedRunes(this);" />
+                            Show Unreleased
+                        </label>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
 
-    <div id="loadDeckDialog" title="Load Deck" ng-controller="DeckStorageCtrl" class="primary-white">
-        <label for="loadDeckName"><strong>Deck:</strong></label><br />
-        <select name="loadDeckName" id="loadDeckName" class="ui-widget-content ui-corner-all" style="width:100%;">
-            <option ng-repeat="key in keys(savedDecks) | orderBy:'toString()'" value="{{key}}">{{key}}</option>
-        </select>
-    </div>
+        <div id="saveDeckDialog" title="Save Deck">
+            <label for="saveDeckName"><strong>Name:</strong></label><br />
+            <input id="saveDeckName" type="text" value="" style="width:95%;" />
+        </div>
 
-    <div class="modal"><span>Loading...</span></div>
+        <div id="loadDeckDialog" title="Load Deck" ng-controller="DeckStorageCtrl" class="primary-white">
+            <label for="loadDeckName"><strong>Deck:</strong></label><br />
+            <select name="loadDeckName" id="loadDeckName" class="ui-widget-content ui-corner-all" style="width:100%;">
+                <option ng-repeat="key in keys(savedDecks) | orderBy:'toString()'" value="{{key}}">{{key}}</option>
+            </select>
+        </div>
 
-    <div id="detailedView" ng-controller="CardDetailsCtrl">
-        <div card-details unit-id="1000" unit-level="1"></div>
+        <div class="modal"><span>Loading...</span></div>
+
+        <div id="detailedView" ng-controller="CardDetailsCtrl">
+            <div card-details unit-id="1000" unit-level="1"></div>
+        </div>
     </div>
+    <footer style="display:none" id="footer"></footer>
 </body>
 </html>

@@ -17,6 +17,16 @@
             $scope.level = unit.level;
             $scope.unit = $window.makeUnitInfo($scope.id, $scope.level),
             $scope.card = $window.getCardInfo($scope.unit);
+            $scope.releaseDate = (function () {
+                var hiddenUntil = $scope.card.hidden_until;
+                if (hiddenUntil) {
+                    hiddenUntil = new Date(Number(hiddenUntil));
+                    hiddenUntil = (hiddenUntil.getMonth() + 1) + "/" + hiddenUntil.getDate() + "/" + hiddenUntil.getFullYear();
+                } else {
+                    hiddenUntil = "";
+                }
+                return hiddenUntil;
+            }());
             return this;
         }
 

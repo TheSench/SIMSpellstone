@@ -1,0 +1,81 @@
+﻿@import 'colors.scss';
+
+body {
+    margin: 5px;
+    padding: 0;
+}
+
+
+footer {
+    background-color: $primary-neutral;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    display: table;
+    width: 100%;
+    /*
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    */
+    padding: 10px 0;
+}
+
+header {
+    background-color: $primary-neutral;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    display: table;
+    width: 100%;
+
+    nav {
+        display: table-row;
+    }
+
+    ul {
+        padding: 0 10px;
+        margin: 0;
+    }
+
+    input {
+        background-color: $primary-neutral;
+    }
+
+    li {
+        display: table-cell;
+        white-space: nowrap;
+        padding: 20px 0;
+
+        &.fill {
+            width: 100%;
+        }
+
+        &.li-header {
+            padding-right: 20px;
+        }
+
+        margin: 0 15px;
+
+        &.current-page {
+            background-color: $primary-tint;
+        }
+    }
+
+    h1, li, a {
+        color: $primary-black;
+        vertical-align: middle;
+    }
+
+    nav a {
+        //margin-left: 5px;
+        /*
+        text-align: right;
+        font-weight: 400;
+        letter-spacing: 0;
+        vertical-align: middle;
+        */
+        padding: 5px 5px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}

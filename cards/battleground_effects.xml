@@ -73,11 +73,11 @@
   <battleground>
     <id>105</id>
     <name>Devouring Hunger</name>
-    <desc>The Undead are invigorated with an unquenchable hunger, giving them Berserk which increases their base attack by 20% after dealing damage.</desc>
+    <desc>The Undead are invigorated with an unquenchable hunger, giving them Berserk which increases their base attack by 30% after dealing damage.</desc>
     <web_picture>filter_undead_64.png</web_picture>
     <icon>filter_undead_64</icon>
     <effect>
-      <add_skill id="berserk" mult=".2" base="attack" y="7" />
+      <add_skill id="berserk" mult=".3" base="attack" y="7" />
     </effect>
   </battleground>
   <battleground>
@@ -163,20 +163,21 @@
   </battleground>
   <battleground>
     <id>111</id>
-    <name>Counter Burn</name>
-    <!-- <desc>When an Elemental is damaged by an attack, is deals Scorch damage to the attacker equal to 50% of the Elemental's base Attack.</desc> -->
-    <desc>When an Elemental is damaged by an attack, is deals Scorch damage to the attacker equal to 10% of the Elemental's base Health.</desc>
+    <name>Searing Essence</name>
+    <!-- <desc>When an Elemental is damaged by an attack, it deals Scorch damage to the attacker equal to 50% of the Elemental's base Attack.</desc> -->
+    <desc>When an Elemental is damaged by an attack, it deals Scorch damage to the attacker equal to 10% of the Elemental's base Health.</desc>
     <icon>filter_elementals_64</icon>
     <effect>
       <add_skill id="counterburn" mult="0.1" base="health" y="5" />
       <skill id="displayEffect" trigger="onSkill" s="counterburn">
-        <actor_effect>
-          <prefab>Empower_Target_Elemental</prefab>
-          <!-- <bundle_id></bundle_id> -->
+        <target_effect>
+          <prefab>FireVengence_Reverse</prefab>
+          <prefab_enemy>FireVengence</prefab_enemy>
+          <bundle_id>69</bundle_id>
           <delay>.5</delay>
-          <duration>1</duration>
+          <duration>1.5</duration>
           <shake>true</shake>
-        </actor_effect>
+        </target_effect>
       </skill>
     </effect>
   </battleground>
@@ -388,18 +389,28 @@
   </battleground>
   <battleground>
     <id>510</id>
-    <name>Dungeon Boost</name>
-    <desc>Dungeon Boost Heals and Empowers all of his allies, increasing in strength as he levels up.</desc>
-    <icon>filter_frostbite_64</icon>
-    <icon_bundle>26</icon_bundle>
+    <name>Dungeon's Despair</name>
+    <desc>Dungeon's Despair Heals and Empowers all the enemy creatures, increasing in strength as the dungeon level increases.</desc>
+    <icon>dungeon_bge_128</icon>
+    <icon_bundle>71</icon_bundle>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
-    <starting_level>50</starting_level>
+    <starting_level>120</starting_level>
     <!-- Starting Raid Level -->
     <effect>
-      <skill id="heal" x="1.1" all="1" />
-      <skill id="rally" x=".6" all="1" />
+      <skill id="heal" x=".5" all="1" />
+      <skill id="rally" x=".5" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>511</id>
+    <name>Runic Sanctuary</name>
+    <desc>Barrier and Barrier All skills are 50% more effective.</desc>
+    <icon>Barrier_BGE_64</icon>
+    <icon_bundle>69</icon_bundle>
+    <effect>
+      <skill id="enhance" s="protect" mult="0.5" all="1" />
     </effect>
   </battleground>
   <!-- 1001+: Personal BGE -->

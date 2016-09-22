@@ -67,6 +67,7 @@ div.section {
   border: 2px solid #1d1d1d;
   border-radius: 10px 10px 0 0;
   padding-bottom: 2px;
+  max-width: 555px;
 }
 
 div.section h1, div.section h2, div.section h3, div.section h4, div.section h5, div.section h6 {
@@ -85,6 +86,11 @@ body {
   font: 100% Helvetica, sans-serif;
   color: #cbcbcb;
   background-color: #1d1d1d;
+}
+
+.accordion {
+  display: table;
+  width: 100%;
 }
 
 .accordion .ui-accordion-header {
@@ -306,6 +312,37 @@ h2 .ui-icon {
 
 .card {
   border-color: #e2e2e2;
+}
+
+.tableRow {
+  display: table-row;
+}
+
+.cell, .pane, .deckView {
+  display: table-cell;
+  vertical-align: top;
+  border: 1px solid black;
+}
+
+.pane {
+  width: 49%;
+}
+
+.deckView {
+  zoom: .75;
+}
+
+.deckSpacer {
+  min-width: 5px;
+  display: table-cell;
+}
+
+tbody tr:nth-child(2n) {
+  background-color: gray;
+}
+
+.inline {
+  display: inline;
 }
 
 /*# sourceMappingURL=dark.css.map */

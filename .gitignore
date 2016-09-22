@@ -157,3 +157,8 @@ $RECYCLE.BIN/
 
 # Saved decks file
 saved_decks.js
+/res/items/unnamed
+/res/skills/extracted
+/packages
+/tests
+/scripts/rewrite

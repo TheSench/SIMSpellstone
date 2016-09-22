@@ -1,6 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- Feature Locking Based on Mission Completion -->
+  <!-- CORE FEATURES -->
+  <feature_lock>
+    <id>edit</id>
+    <mission_req>11</mission_req>
+    <!-- starts unlocked (effectively) -->
+    <!-- <cards_req>16</cards_req> -->
+    <!-- 16+ cards owned -->
+  </feature_lock>
+  <feature_lock>
+    <id>quest</id>
+    <mission_req>12</mission_req>
+    <!-- 12 -->
+  </feature_lock>
   <feature_lock>
     <id>store</id>
     <mission_req>13</mission_req>
@@ -17,6 +30,16 @@
     <!-- 24 -->
   </feature_lock>
   <feature_lock>
+    <id>guilds</id>
+    <mission_req>24</mission_req>
+    <!-- 24 -->
+  </feature_lock>
+  <feature_lock>
+    <id>dailybonus</id>
+    <mission_req>21</mission_req>
+    <!-- 21 -->
+  </feature_lock>
+  <feature_lock>
     <id>pvp</id>
     <mission_req>54</mission_req>
     <!-- 54 -->
@@ -27,21 +50,9 @@
     <!-- 44 -->
   </feature_lock>
   <feature_lock>
-    <id>edit</id>
-    <mission_req>11</mission_req>
-    <!-- starts unlocked (effectively) -->
-    <!-- <cards_req>16</cards_req> -->
-    <!-- 16+ cards owned -->
-  </feature_lock>
-  <feature_lock>
-    <id>salvage</id>
-    <achievement_req>1101</achievement_req>
-    <!-- player has edited deck -->
-  </feature_lock>
-  <feature_lock>
-    <id>quest</id>
-    <mission_req>12</mission_req>
-    <!-- 12 -->
+    <id>vip_system</id>
+    <mission_req>64</mission_req>
+    <!-- 64 -->
   </feature_lock>
   <feature_lock>
     <id>runes</id>
@@ -49,24 +60,20 @@
     <!-- 244 -->
   </feature_lock>
   <feature_lock>
-    <id>combatspeed</id>
-    <mission_req>44</mission_req>
-    <!-- 44 -->
+    <id>salvage</id>
+    <achievement_req>1101</achievement_req>
+    <!-- player has edited deck -->
   </feature_lock>
   <feature_lock>
-    <id>skip</id>
-    <mission_req>64</mission_req>
-    <!-- 64 -->
+    <id>livepvp</id>
+    <achievement_req>451</achievement_req>
+    <!-- player has reached bounty rank 5 deck -->
   </feature_lock>
+  <!-- NON CORE FEATURES -->
   <feature_lock>
-    <id>autoplay</id>
-    <mission_req>104</mission_req>
-    <!-- 104 -->
-  </feature_lock>
-  <feature_lock>
-    <id>guilds</id>
-    <mission_req>24</mission_req>
-    <!-- 24 -->
+    <id>guildlivepvp</id>
+    <mission_req>11</mission_req>
+    <!-- 11 -->
   </feature_lock>
   <feature_lock>
     <id>mythic</id>
@@ -83,15 +90,33 @@
     <mission_req>11</mission_req>
     <!-- 11 -->
   </feature_lock>
+  <!-- COMBAT OPTIONS -->
   <feature_lock>
-    <id>vip_system</id>
+    <id>combatspeed</id>
+    <mission_req>44</mission_req>
+    <!-- 44 -->
+  </feature_lock>
+  <feature_lock>
+    <id>skip</id>
     <mission_req>64</mission_req>
     <!-- 64 -->
   </feature_lock>
   <feature_lock>
-    <id>guildlivepvp</id>
-    <mission_req>11</mission_req>
+    <id>autoplay</id>
+    <mission_req>104</mission_req>
+    <!-- 104 -->
+  </feature_lock>
+  <!-- DISABLED FEATURES -->
+  <feature_lock>
+    <id>pointchest</id>
+    <!-- Star Chest for Arena -->
+    <mission_req>-1</mission_req>
     <!-- 11 -->
+  </feature_lock>
+  <feature_lock>
+    <id>passivemissions</id>
+    <mission_req>-1</mission_req>
+    <!-- -1 -->
   </feature_lock>
   <!-- MISSIONS BEGIN -->
   <!-- Elaria Missions BEGIN -->
@@ -4647,9 +4672,9 @@
       <card id="8010" mastery_level="6" />
       <card id="1340" name="Blazekin Dragon" />
       <card id="2015" name="Pumpking" />
-      <card id="6014" name="Armored Ogre" remove_mastery_level="6" />
+      <card id="6014" name="Armored Ogre" />
       <card id="6013" name="Rust Goliath" />
-      <card id="6003" name="Black Knight" remove_mastery_level="6" />
+      <card id="6003" name="Black Knight" />
       <card id="6002" name="Spirit of Madness" />
       <card id="2006" name="Zhulong" />
       <card id="6019" name="Canopy Horror" />
@@ -4905,7 +4930,7 @@
       <line>
         <commander>templeguardian</commander>
         <enemy>0</enemy>
-        <text>Oh, ahh. Well large bodies of water makes me nervous, that’s all.</text>
+        <text>Oh, ahh. Well large bodies of water make me nervous, that's all.</text>
       </line>
       <line>
         <commander>elementalhero</commander>

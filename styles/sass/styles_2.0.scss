@@ -56,6 +56,7 @@ div.section {
     border: 2px solid $primary-black;
     border-radius: 10px 10px 0 0;
     padding-bottom: 2px;
+    max-width: 555px;
 
     h1, h2, h3, h4, h5, h6 {
         color: $primary-black;
@@ -78,6 +79,9 @@ body {
 
 
 .accordion {
+    display: table;
+    width: 100%;
+
     .ui-accordion-header {
         position: relative;
     }
@@ -312,4 +316,37 @@ h2 .ui-icon {
 
 .card {
     border-color: $secondary-black;
+}
+
+.tableRow {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+    vertical-align: top;
+    border: 1px solid black;
+}
+
+.pane {
+    @extend .cell;
+    width: 49%;
+}
+
+.deckView {
+    @extend .cell;
+    zoom: .75;
+}
+
+.deckSpacer {
+    min-width: 5px;
+    display: table-cell;
+}
+
+tbody tr:nth-child(2n) {
+    background-color: $secondary-tint;
+}
+
+.inline {
+    display: inline;
 }

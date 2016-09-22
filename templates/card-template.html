@@ -41,17 +41,22 @@
                 <span>Delay: {{card.cost}}</span>
             </div>
         </div>
-        <div ng-repeat="skill in card.skill" class="skill-list">
-            <img ng-src="{{getSkillIcon(skill.id)}}" />
-            <span>{{skill.id|convertName|capitalize}}</span>
-            <span ng-if="skill.all == 1">All</span>
-            <span ng-if="skill.y > 0">{{getFaction(skill.y)}}</span>
-            <span ng-if="skill.s">{{skill.s|convertName|capitalize}}</span>
-            <span ng-if="skill.x > 0">{{skill.x}}</span>
-            <span ng-if="skill.c">Every {{skill.c}}</span>
+        <div id="skills">
+            <div ng-repeat="skill in card.skill" class="skill-list">
+                <img ng-src="{{getSkillIcon(skill.id)}}" />
+                <span>{{skill.id|convertName|capitalize}}</span>
+                <span ng-if="skill.all == 1">All</span>
+                <span ng-if="skill.y > 0">{{getFaction(skill.y)}}</span>
+                <span ng-if="skill.s">{{skill.s|convertName|capitalize}}</span>
+                <span ng-if="skill.x > 0">{{skill.x}}</span>
+                <span ng-if="skill.c">Every {{skill.c}}</span>
+            </div>
         </div>
         <div class="description">
             <span>{{card.desc}}</span>
+        </div>
+        <div class="bottom-left">
+            <span class="b">{{releaseDate}}</span>
         </div>
         <div class="bottom-center">
             <span class="b">{{fusionText()}}</span>

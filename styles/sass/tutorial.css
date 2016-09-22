@@ -1,0 +1,58 @@
+﻿/* 
+ * Practical Color Theory for People Who Code
+ * http://tallys.github.io/color-theory/?imm_mid=0e31ae&cmp=em-web-na-na-newsltr_20160427
+ */
+.overlay {
+  font: 100% Helvetica, sans-serif;
+  color: gray;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  /* Stay in place */
+  z-index: 999;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  overflow-y: visible;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */ }
+  .overlay .overlay-fog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.75);
+    border-radius: 5px; }
+  .overlay .overlay-content {
+    position: relative;
+    top: 0;
+    padding: 10px 0;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center; }
+  .overlay a:hover, .overlay .overlay a:focus {
+    color: #f1f1f1; }
+  .overlay a.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: default; }
+  .overlay a.button {
+    color: gray;
+    border: outset #cacaca;
+    background-color: #e1e1e1;
+    border-radius: 5px;
+    border-width: 3px;
+    padding: 5px 10px;
+    margin: 5px 15px;
+    border-style: outset;
+    text-decoration: none; }
+  .overlay .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px; }

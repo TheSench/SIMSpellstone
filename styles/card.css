@@ -187,11 +187,19 @@ img[src='Error.src'] {
     width: initial;
 }
 
+.item.card .multiplier {
+    top: 82%;
+}
+
 .card img.multiplier {
     width: 30px;
     height: 18px;
     right: -2px;
     top: 48%;
+}
+
+.item.card img.multiplier {
+    top: 80%;
 }
 
 .card-attack {
@@ -296,6 +304,8 @@ img[src='Error.src'] {
 .card-skills-detailed {
     position: absolute;
     width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     height: auto;
     bottom: 0;
@@ -333,12 +343,6 @@ img[src='Error.src'] {
         z-index: 99;
         visibility: visible;
     }
-
-/*
-.card-statuses {
-    visibility: hidden;
-}
-*/
 
 .card-statuses img {
     width: 12px;
@@ -442,16 +446,15 @@ img[src='Error.src'] {
     margin-right: 5px;
 }
 
-.inactive:before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.75;
-    background-color: darkgrey;
-    z-index: 1;
+.inactive i {
+    -webkit-filter: blur(1px) grayscale(70%); /* Chrome, Safari, Opera */ /* Chrome, Safari, Opera */
+    filter: blur(1px) grayscale(70%); /* Chrome, Safari, Opera */
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .inactive i {
+        box-shadow: inset 0 0 0 42px rgba(0,0,0,0.75);
+    }
 }
 
 .frozen:before {
@@ -464,4 +467,11 @@ img[src='Error.src'] {
     opacity: 0.4;
     background-color: cyan;
     z-index: 1000;
+}
+
+.item-image {
+    position: absolute;
+    width: 48px;
+    left: 18px;
+    top: 34px;
 }

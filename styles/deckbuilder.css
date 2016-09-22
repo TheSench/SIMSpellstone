@@ -268,7 +268,7 @@
     background: darkblue;
 }
 
-input[type="image"] {
+#filters input[type="image"] {
     height: 21px;
     padding-left: 2px;
 }
@@ -469,4 +469,10 @@ fieldset {
 
 #cardSpace {
     margin-bottom: 50px;
+}
+
+.ui-autocomplete {
+    max-width: 300px;
+    max-height: 150px;
+    overflow-y: auto;
 }

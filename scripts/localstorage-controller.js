@@ -41,28 +41,44 @@ if (function (type) {
         }
 
         storageAPI.initialize = function () {
-            var saved = localStorage.getItem(SaveFields.decks);
-            if (saved) {
-                try {
-                    storageAPI.savedDecks = JSON.parse(saved);
-                } catch (e) {
-                    storageAPI.savedDecks = {};
-                }
-            } else {
-                storageAPI.savedDecks = {};
-            }
+            SaveFields.tutorial = "Tutorial-" + getCurrentPage();
 
-            var cachedOnUpdate = storageAPI.onUpdate;
-            storageAPI.onUpdate = function () {
+            loadField("savedDecks", SaveFields.decks, {}, true);
+            loadField("shouldShowTutorial", SaveFields.tutorial);
+
+            var cachedOnUpdate = storageAPI.onUpdateDecks;
+            storageAPI.onUpdateDecks = function () {
                 cachedOnUpdate();
                 localStorage.setItem(SaveFields.decks, JSON.stringify(storageAPI.savedDecks));
             };
+
+            var cachedSetShowTutorial = storageAPI.setShowTutorial;
+            storageAPI.setShowTutorial = function (value) {
+                cachedSetShowTutorial(value);
+                localStorage.setItem(SaveFields.tutorial, JSON.stringify(storageAPI.shouldShowTutorial));
+            };
         };
+
+        function loadField(fieldName, storageName, defaultValue) {
+
+            var value = localStorage.getItem(storageName);
+            if (value) {
+                try {
+                    value = JSON.parse(value);
+                } catch (e) {
+                    value = defaultValue;
+                }
+            } else {
+                value = defaultValue;
+            }
+            storageAPI[fieldName] = value;
+        }
     }());
 } else {
     (function () {
         storageAPI.initialize = function () {
             storageAPI.savedDecks = {};
+            storageAPI.shouldShowTutorial = true;
         };
 
         var notSupported = function (name, hash) {
@@ -78,7 +94,7 @@ if (function (type) {
 
     storageAPI.saveDeck = function (name, hash) {
         storageAPI.savedDecks[name] = hash;
-        storageAPI.onUpdate();
+        storageAPI.onUpdateDecks();
     };
 
     storageAPI.loadDeck = function (name) {
@@ -87,7 +103,7 @@ if (function (type) {
 
     storageAPI.deleteDeck = function (name) {
         delete storageAPI.savedDecks[name];
-        storageAPI.onUpdate();
+        storageAPI.onUpdateDecks();
     };
 
     storageAPI.clearDecks = function (name) {
@@ -95,15 +111,19 @@ if (function (type) {
         for (var name in savedDecks) {
             delete savedDecks[name];
         }
-        storageAPI.onUpdate();
+        storageAPI.onUpdateDecks();
     };
 
-    storageAPI.onUpdate = function () {
+    storageAPI.onUpdateDecks = function () {
         if (!$loadDialogScope) {
             $loadDialogScope = angular.element('#loadDeckDialog').scope();
         }
         $loadDialogScope.$apply();
     };
+
+    storageAPI.setShowTutorial = function (value) {
+        storageAPI.shouldShowTutorial = value;
+    }
 
     storageAPI.initialize();
 

@@ -65,7 +65,7 @@ var BATTLEGROUNDS = {
       {
         "effect_type": "add_skill",
         "id": "berserk",
-        "mult": .2,
+        "mult": .3,
         "base": "attack",
         "y": "7",
         "z": 7,
@@ -143,7 +143,7 @@ var BATTLEGROUNDS = {
     ]
   },
   "111": {
-    "name": "Counter Burn",
+    "name": "Searing Essence",
     "id": "111",
     "effect": [
       {
@@ -541,23 +541,36 @@ var BATTLEGROUNDS = {
     }
   },
   "510": {
-    "name": "Dungeon Boost",
+    "name": "Dungeon's Despair",
     "id": "510",
     "enemy_only": true,
     "scale_with_level": "1",
-    "starting_level": "50",
+    "starting_level": "120",
     "hidden": true,
     "effect": [
       {
         "effect_type": "skill",
         "id": "heal",
-        "x": 1.1,
+        "x": .5,
         "all": "1",
       },
       {
         "effect_type": "skill",
         "id": "rally",
-        "x": .6,
+        "x": .5,
+        "all": "1",
+      },
+    ]
+  },
+  "511": {
+    "name": "Runic Sanctuary",
+    "id": "511",
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "enhance",
+        "mult": 0.5,
+        "s": "protect",
         "all": "1",
       },
     ]
