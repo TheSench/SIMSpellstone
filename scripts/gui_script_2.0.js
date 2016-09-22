@@ -29,11 +29,17 @@ $(function () {
     $("#raid, #raid_level").change(function () {
         var newDeck;
         var selectedRaid = $("#raid").val();
+        var raidlevel = $('#raid_level');
         if (selectedRaid) {
-            var raidlevel = document.getElementById('raid_level').value;
-            newDeck = load_deck_raid(selectedRaid, raidlevel);
+            newDeck = load_deck_raid(selectedRaid, raidlevel.val());
+            if (RAIDS[selectedRaid].type === "dungeon") {
+                raidlevel.attr("max", 150);
+            } else {
+                raidlevel.attr("max", 40);
+            }
         } else {
             newDeck = hash_decode('');
+            raidlevel.attr("max", 40);
         }
         deckChanged("defend_deck", newDeck);
     });

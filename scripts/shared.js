@@ -639,7 +639,7 @@ var makeUnit = (function () {
         },
     }
 
-    return (function (original_card, unit_level, skillModifiers) {
+    return (function (original_card, unit_level, runes, skillModifiers) {
         if (!unit_level) unit_level = 1;
         var card = Object.create(CardPrototype);
 
@@ -669,14 +669,49 @@ var makeUnit = (function () {
             }
         }
 
+        original_skills = original_skills.slice();
+
+        if (runes) {
+            card.addRunes(runes);
+            addRunesToSkills(original_skills, runes);
+        } else {
+            card.runes = [];
+        }
+
+        // Apply BGEs
         if (skillModifiers) {
-            original_skills = original_skills.slice();
             modifySkills(card, original_skills, skillModifiers);
         }
+
         copy_skills_2(card, original_skills);
 
         return card;
     });
+
+    function addRunesToSkills(skills, runes) {
+        if (!runes) return;
+        for (let i = 0, len = runes.length; i < len; i++) {
+            let runeID = runes[i].id;
+            let statBoost = RUNES[runeID].stat_boost;
+            for (var key in statBoost) {
+                let boost = statBoost[key];
+                if (key == "skill") {
+                    let skillID = boost.id;
+                    for (let s = 0; s < skills.length; s++) {
+                        let skill = skills[s];
+                        if (skill.id == skillID && (skill.all || 0) == (boost.all || 0)) {
+                            skill = copy_skill(skill);
+                            if (boost.x) skill.x += parseInt(boost.x)
+                            if (boost.c) skill.c -= parseInt(boost.c);
+                            skill.boosted = true;
+                            skills[s] = skill;
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }());
 
 
@@ -699,7 +734,7 @@ var addRunes = function (card, runes) {
         for (var key in statBoost) {
             var boost = statBoost[key];
             if (key == "skill") {
-                boostSkill(card, boost)
+                //boostSkill(card, boost)
             } else {
                 card[key] += parseInt(boost);
             }
@@ -2028,12 +2063,8 @@ function get_card_by_id(unit, skillModifiers) {
         if (!current_card.skill) {
             current_card.skill = [];
         }
-        var cached = makeUnit(current_card, unit.level, skillModifiers);
-        if (unit.runes) {
-            cached.addRunes(unit.runes);
-        } else {
-            cached.runes = [];
-        }
+        var cached = makeUnit(current_card, unit.level, unit.runes, skillModifiers);
+
         card_cache[unitKey] = cached;
         cached = cloneCard(cached);
         if (unit.priority) cached.priority = unit.priority;

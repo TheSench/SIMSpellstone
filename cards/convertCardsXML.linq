@@ -651,7 +651,7 @@ public partial class unit
 		get { return this.hidden_untilField; }
 		set
 		{
-			if (value != null)
+			if (!String.IsNullOrEmpty(value))
 			{
 				this.hidden_untilField = value + "000";
 			}

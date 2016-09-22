@@ -1,6 +1,7 @@
 ﻿var RAIDS = {
     "24002": {
         "id": "24002",
+        "type": "raid",
         "name": "Nethergore Raid",
         "bge": "504",
         "commander": {
@@ -193,6 +194,7 @@
     },
     "1505": {
         "id": "1505",
+        "type": "raid",
         "name": "Frostbite Raid (Old)",
         "commander": {
             "id": "253"
@@ -264,6 +266,7 @@
     },
     "24003": {
         "id": "24003",
+        "type": "raid",
         "name": "Fortune's Favor Raid (Old)",
         "bge": "505",
         "commander": {
@@ -456,6 +459,7 @@
     },
     "24004": {
         "id": "24004",
+        "type": "raid",
         "name": "Frostbite Raid",
         "bge": "503",
         "commander": {
@@ -648,6 +652,7 @@
     },
     "24005": {
         "id": "24005",
+        "type": "raid",
         "name": "Fortune's Favor Raid",
         "bge": "505",
         "commander": {
@@ -840,6 +845,7 @@
     },
     "28001": {
         "id": "28001",
+        "type": "dungeon",
         "name": "Underhill Dungeon",
         "bge": "510",
         "commander": {

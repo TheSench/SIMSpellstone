@@ -126,9 +126,9 @@
                                         </div>
                                         <br />
                                         <div id="raid-container">
-                                            <div><span class="label">Raid:</span></div>
+                                            <div><span class="label">Raid/Dungeon:</span></div>
                                             <select id="raid" ng-model="selections.raid" ng-class="{grey:selections.raid === ''}" ng-disabled="selections.campaign !== ''">
-                                                <option default value="" class="grey">Select a Raid...</option>
+                                                <option default value="" class="grey">Select a Raid/Dungeon...</option>
                                                 <option ng-repeat="raid in raids" value="{{raid.id}}" class="black">{{raid.name}}</option>
                                             </select>
                                             <input style="float:initial;" type="NUMBER" id="raid_level" min="25" max="40" step="1" value="25" size="6">
