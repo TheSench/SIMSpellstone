@@ -551,13 +551,13 @@ var BATTLEGROUNDS = {
       {
         "effect_type": "skill",
         "id": "heal",
-        "x": 1.1,
+        "x": .1,
         "all": "1",
       },
       {
         "effect_type": "skill",
         "id": "rally",
-        "x": .6,
+        "x": .1,
         "all": "1",
       },
     ]

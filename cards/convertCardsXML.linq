@@ -33,7 +33,8 @@ void Main()
 	Normalize("missions.xml", downloadFiles);
 	Normalize("missions_event.xml", downloadFiles);
 	Normalize("passive_missions.xml", downloadFiles);
-	
+	Normalize("arena.xml", downloadFiles);
+
 	g_unitIDs = new HashSet<string>();
 	xmlFile = Path.Combine(path, "cards.xml");
 	doc = XDocument.Load(xmlFile);
@@ -510,6 +511,11 @@ public partial class unit
 		AppendEntryString(sb, "name", name, unitTabs);
 		AppendEntryString(sb, "desc", desc, unitTabs);
 		AppendEntryString(sb, "picture", picture, unitTabs);
+		if (id == "25083")
+		{
+			"Break".Dump();
+		}
+		AppendEntryString(sb, "hidden_until", hidden_until, unitTabs);
 		AppendEntryString(sb, "rarity", rarity, unitTabs);
 		AppendEntryString(sb, "set", set, unitTabs);
 		AppendEntryString(sb, "card_type", card_type, unitTabs);
@@ -567,6 +573,7 @@ public partial class unit
 	private string portraitField;
 	private string asset_prefabField;
 	private string asset_bundleField;
+	private string hidden_untilField;
 	private string attackField;
 	private string healthField;
 	private string costField;
@@ -640,6 +647,31 @@ public partial class unit
 	{
 		get { return this.asset_bundleField; }
 		set { this.asset_bundleField = value; }
+	}
+
+	/// <remarks/>
+	public string hidden_until
+	{
+		get { return this.hidden_untilField; }
+		set
+		{
+			if (value != null)
+			{
+				this.hidden_untilField = value + "000";
+			}
+		}
+	}
+	
+	public string hidden_until_time
+	{
+		get { return this.hidden_untilField; }
+		set
+		{
+			if (value != null)
+			{
+				this.hidden_untilField = value + "000";
+			}
+		}
 	}
 
 	/// <remarks/>

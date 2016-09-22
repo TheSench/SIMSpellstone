@@ -66,9 +66,8 @@
   </feature_lock>
   <feature_lock>
     <id>livepvp</id>
-    <mission_req>54</mission_req>
-    <!-- 54 -->
-    <!-- <achievement_req>451</achievement_req> player has reached bounty rank 5 deck -->
+    <achievement_req>451</achievement_req>
+    <!-- player has reached bounty rank 5 deck -->
   </feature_lock>
   <!-- NON CORE FEATURES -->
   <feature_lock>

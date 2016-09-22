@@ -391,7 +391,7 @@
     <id>510</id>
     <name>Dungeon Boost</name>
     <desc>Dungeon Boost Heals and Empowers all of his allies, increasing in strength as he levels up.</desc>
-    <icon>dungeon_001_bge_64</icon>
+    <icon>dungeon_bge_128</icon>
     <icon_bundle>71</icon_bundle>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
@@ -399,8 +399,8 @@
     <starting_level>50</starting_level>
     <!-- Starting Raid Level -->
     <effect>
-      <skill id="heal" x="1.1" all="1" />
-      <skill id="rally" x=".6" all="1" />
+      <skill id="heal" x=".1" all="1" />
+      <skill id="rally" x=".1" all="1" />
     </effect>
   </battleground>
   <battleground>
