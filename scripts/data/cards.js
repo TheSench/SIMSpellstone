@@ -18639,7 +18639,7 @@ var CARDS = {
           },
           {
             "id": "leech",
-            "x": 2,
+            "x": 3,
           },
         ],
       },
@@ -19087,6 +19087,270 @@ var CARDS = {
           {
             "id": "flurry",
             "c": 3,
+          },
+        ],
+      },
+    }
+  },
+  "2061": {
+    "id": "2061",
+    "name": "Reks, the Fallen",
+    "desc": "Reks fell in combat against Fiona and her dragons of Tarragon Peak.",
+    "picture": "Undead_Reks_A",
+    "hidden_until": "1474563600000",
+    "rarity": "4",
+    "set": "2000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "7",
+    "attack": 3,
+    "health": 12,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "legion",
+        "x": 1,
+        "y": "2",
+        "z": 2,
+      },
+      {
+        "id": "legion",
+        "x": 1,
+        "y": "7",
+        "z": 7,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 13,
+        "skill": [],
+      },
+      "3": {
+        "health": 14,
+        "skill": [],
+      },
+      "4": {
+        "health": 15,
+        "skill": [
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "legion",
+            "x": 1,
+            "y": "7",
+            "z": 7,
+          },
+        ],
+      },
+      "5": {
+        "attack": 4,
+        "health": 16,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "12061": {
+    "id": "12061",
+    "name": "Reks, the Fallen",
+    "picture": "Undead_Reks_A",
+    "hidden_until": "1474563600000",
+    "rarity": "4",
+    "set": "2000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "7",
+    "attack": 4,
+    "health": 17,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "legion",
+        "x": 2,
+        "y": "2",
+        "z": 2,
+      },
+      {
+        "id": "legion",
+        "x": 2,
+        "y": "7",
+        "z": 7,
+      },
+      {
+        "id": "enfeeble",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 18,
+        "skill": [],
+      },
+      "3": {
+        "health": 19,
+        "skill": [
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "health": 20,
+        "skill": [],
+      },
+      "5": {
+        "attack": 5,
+        "health": 21,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 3,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "22061": {
+    "id": "22061",
+    "name": "Reks, the Dragonslain",
+    "picture": "Undead_Reks_B",
+    "hidden_until": "1474563600000",
+    "rarity": "4",
+    "set": "2000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": "7",
+    "attack": 5,
+    "health": 21,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "legion",
+        "x": 3,
+        "y": "2",
+        "z": 2,
+      },
+      {
+        "id": "legion",
+        "x": 3,
+        "y": "7",
+        "z": 7,
+      },
+      {
+        "id": "enfeeble",
+        "x": 2,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 6,
+        "health": 22,
+        "skill": [],
+      },
+      "3": {
+        "health": 23,
+        "skill": [],
+      },
+      "4": {
+        "health": 24,
+        "skill": [
+          {
+            "id": "legion",
+            "x": 4,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "legion",
+            "x": 3,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 25,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 4,
+            "y": "2",
+            "z": 2,
+          },
+          {
+            "id": "legion",
+            "x": 4,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "enfeeble",
+            "x": 3,
+            "all": "1",
           },
         ],
       },
@@ -103220,6 +103484,7 @@ var CARDS = {
   "332": {
     "id": "332",
     "name": "Cavern Wisp",
+    "desc": "In the darkest depths the light can shine brightest.",
     "picture": "portrait_lightwisp",
     "rarity": "3",
     "set": "9999",
@@ -103311,6 +103576,7 @@ var CARDS = {
   "333": {
     "id": "333",
     "name": "Risen Warrior",
+    "desc": "A rattling can be heard in the darkness, bones and metal scrapping across the stone.",
     "picture": "portrait_skeletonwarrior",
     "rarity": "3",
     "set": "9999",
@@ -103390,6 +103656,7 @@ var CARDS = {
   "334": {
     "id": "334",
     "name": "Underhill Caverns",
+    "desc": "The darkest corners of the Underhill dungeons hide unfathomable dangers.",
     "picture": "portrait_cavernsofcrossings",
     "rarity": "3",
     "set": "9999",
@@ -103404,8 +103671,6 @@ var CARDS = {
       {
         "id": "imbue",
         "x": 1,
-        "y": "7",
-        "z": 7,
         "s": "evade",
       },
     ],
@@ -103424,8 +103689,6 @@ var CARDS = {
           {
             "id": "imbue",
             "x": 1,
-            "y": "7",
-            "z": 7,
             "s": "evade",
           },
         ],
@@ -103444,8 +103707,6 @@ var CARDS = {
           {
             "id": "imbue",
             "x": 2,
-            "y": "7",
-            "z": 7,
             "s": "evade",
           },
         ],
@@ -103464,8 +103725,6 @@ var CARDS = {
           {
             "id": "imbue",
             "x": 3,
-            "y": "7",
-            "z": 7,
             "s": "evade",
           },
         ],
@@ -103479,6 +103738,7 @@ var CARDS = {
   "335": {
     "id": "335",
     "name": "Ascetic Scientists",
+    "desc": "Withdrawing from society, these undead continue their scientific work even after their bodies have given up.",
     "picture": "portrait_undeadscientists",
     "rarity": "4",
     "set": "9999",
@@ -103605,6 +103865,7 @@ var CARDS = {
   "336": {
     "id": "336",
     "name": "Hornslice Fiend",
+    "desc": "\"The last thing the adventurers heard was the wooshing crack of its fire whip from the darkness.\" - Collection of Bardic Tales IV",
     "picture": "portrait_balrog",
     "rarity": "4",
     "set": "9999",
@@ -103740,6 +104001,7 @@ var CARDS = {
   "337": {
     "id": "337",
     "name": "Dark Dweller",
+    "desc": "\"No one understands what lurks in the furthest depths of the earth. Things beyond imagination.\" - Arcanists Scrolls of Prophecy",
     "picture": "portrait_octopusmonster",
     "rarity": "4",
     "set": "9999",
@@ -103750,8 +104012,6 @@ var CARDS = {
       {
         "id": "imbue",
         "x": 2,
-        "y": "7",
-        "z": 7,
         "s": "evade",
       },
       {
@@ -103772,8 +104032,6 @@ var CARDS = {
           {
             "id": "imbue",
             "x": 2,
-            "y": "7",
-            "z": 7,
             "s": "evade",
           },
           {
@@ -103794,8 +104052,6 @@ var CARDS = {
           {
             "id": "imbue",
             "x": 2,
-            "y": "7",
-            "z": 7,
             "s": "evade",
           },
           {
@@ -103816,8 +104072,6 @@ var CARDS = {
           {
             "id": "imbue",
             "x": 2,
-            "y": "7",
-            "z": 7,
             "s": "evade",
           },
           {
@@ -103838,8 +104092,6 @@ var CARDS = {
           {
             "id": "imbue",
             "x": 3,
-            "y": "7",
-            "z": 7,
             "s": "evade",
           },
           {
@@ -103860,8 +104112,6 @@ var CARDS = {
           {
             "id": "imbue",
             "x": 4,
-            "y": "7",
-            "z": 7,
             "s": "evade",
           },
           {
@@ -103881,6 +104131,7 @@ var CARDS = {
   "338": {
     "id": "338",
     "name": "Ruler of the Depths",
+    "desc": "\"In the farthest shadows of the Underhill lurks a beast over 2000 years old. It preys on death itself and fears nothing.\" - J.L. Montrello",
     "picture": "portrait_undeadsnake",
     "rarity": "5",
     "set": "9999",
@@ -103897,9 +104148,10 @@ var CARDS = {
       },
       {
         "id": "imbue",
+        "x": 4,
         "y": "7",
         "z": 7,
-        "s": "flurry",
+        "s": "berserk",
       },
       {
         "id": "jam",
@@ -103923,9 +104175,10 @@ var CARDS = {
           },
           {
             "id": "imbue",
+            "x": 5,
             "y": "7",
             "z": 7,
-            "s": "flurry",
+            "s": "berserk",
           },
           {
             "id": "jam",
@@ -103949,9 +104202,10 @@ var CARDS = {
           },
           {
             "id": "imbue",
+            "x": 6,
             "y": "7",
             "z": 7,
-            "s": "flurry",
+            "s": "berserk",
           },
           {
             "id": "jam",
@@ -103975,9 +104229,10 @@ var CARDS = {
           },
           {
             "id": "imbue",
+            "x": 7,
             "y": "7",
             "z": 7,
-            "s": "flurry",
+            "s": "berserk",
           },
           {
             "id": "jam",
@@ -103990,6 +104245,7 @@ var CARDS = {
   "339": {
     "id": "339",
     "name": "Marrowsworn the Tyrant",
+    "desc": "\"Marrowsworn was bound to the depths of the Underhill, forever kept from tormenting the living.\" - Tarian the Lich Lord",
     "picture": "portrait_nethergore",
     "rarity": "5",
     "set": "9999",
@@ -104907,7 +105163,7 @@ var CARDS = {
   "9988": {
     "id": "9988",
     "name": "New Art",
-    "picture": "New6_A",
+    "picture": "New7_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -104920,7 +105176,7 @@ var CARDS = {
   "19988": {
     "id": "19988",
     "name": "New Art",
-    "picture": "New6_B",
+    "picture": "New7_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -104932,8 +105188,8 @@ var CARDS = {
   },
   "9987": {
     "id": "9987",
-    "name": "New Art",
-    "picture": "New7_A",
+    "name": "Unused Art",
+    "picture": "Oda_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -104945,8 +105201,8 @@ var CARDS = {
   },
   "19987": {
     "id": "19987",
-    "name": "New Art",
-    "picture": "New7_B",
+    "name": "Unused Art",
+    "picture": "Oda_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -104956,10 +105212,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9986": {
-    "id": "9986",
+  "29987": {
+    "id": "29987",
     "name": "Unused Art",
-    "picture": "Oda_A",
+    "picture": "Oda_C",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -104972,7 +105228,7 @@ var CARDS = {
   "19986": {
     "id": "19986",
     "name": "Unused Art",
-    "picture": "Oda_B",
+    "picture": "Promo_Dragon_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -104982,10 +105238,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29986": {
-    "id": "29986",
+  "9985": {
+    "id": "9985",
     "name": "Unused Art",
-    "picture": "Oda_C",
+    "picture": "Seraph_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -104998,7 +105254,7 @@ var CARDS = {
   "19985": {
     "id": "19985",
     "name": "Unused Art",
-    "picture": "Promo_Dragon_B",
+    "picture": "Seraph_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -105011,20 +105267,7 @@ var CARDS = {
   "9984": {
     "id": "9984",
     "name": "Unused Art",
-    "picture": "Seraph_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19984": {
-    "id": "19984",
-    "name": "Unused Art",
-    "picture": "Seraph_B",
+    "picture": "Tarian_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -105037,7 +105280,7 @@ var CARDS = {
   "9983": {
     "id": "9983",
     "name": "Unused Art",
-    "picture": "Tarian_A",
+    "picture": "Tremor_Wurm_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -105050,7 +105293,7 @@ var CARDS = {
   "9982": {
     "id": "9982",
     "name": "Unused Art",
-    "picture": "Tremor_Wurm_A",
+    "picture": "Unused1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -105063,7 +105306,7 @@ var CARDS = {
   "9981": {
     "id": "9981",
     "name": "Unused Art",
-    "picture": "Unused1_A",
+    "picture": "Unused2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -105076,7 +105319,7 @@ var CARDS = {
   "9980": {
     "id": "9980",
     "name": "Unused Art",
-    "picture": "Unused2_A",
+    "picture": "Unused3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -105089,7 +105332,7 @@ var CARDS = {
   "9979": {
     "id": "9979",
     "name": "Unused Art",
-    "picture": "Unused3_A",
+    "picture": "Ursurio_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -105102,7 +105345,7 @@ var CARDS = {
   "9978": {
     "id": "9978",
     "name": "Unused Art",
-    "picture": "Ursurio_A",
+    "picture": "Void_Abomination_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -105114,19 +105357,6 @@ var CARDS = {
   },
   "9977": {
     "id": "9977",
-    "name": "Unused Art",
-    "picture": "Void_Abomination_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9976": {
-    "id": "9976",
     "name": "Unused Art",
     "picture": "Yuriel_A",
     "rarity": "0",

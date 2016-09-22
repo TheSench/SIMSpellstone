@@ -511,10 +511,6 @@ public partial class unit
 		AppendEntryString(sb, "name", name, unitTabs);
 		AppendEntryString(sb, "desc", desc, unitTabs);
 		AppendEntryString(sb, "picture", picture, unitTabs);
-		if (id == "25083")
-		{
-			"Break".Dump();
-		}
 		AppendEntryString(sb, "hidden_until", hidden_until, unitTabs);
 		AppendEntryString(sb, "rarity", rarity, unitTabs);
 		AppendEntryString(sb, "set", set, unitTabs);

@@ -10137,13 +10137,13 @@
       <level>2</level>
       <skill id="rally" x="1" y="7" />
       <skill id="heal" x="2" y="7" />
-      <skill id="leech" x="2" />
-    </upgrade>
+      <skill id="leech" x="2" />F
+		</upgrade>
     <upgrade>
       <level>3</level>
       <skill id="rally" x="1" y="7" />
       <skill id="heal" x="2" y="7" />
-      <skill id="leech" x="2" />
+      <skill id="leech" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -10361,6 +10361,139 @@
       <skill id="evade" x="3" />
       <skill id="legion" x="3" y="7" />
       <skill id="flurry" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2061</id>
+    <card_type>2</card_type>
+    <name>Reks, the Fallen</name>
+    <picture>Undead_Reks_A</picture>
+    <asset_bundle>72</asset_bundle>
+    <hidden_until_time>1474563600</hidden_until_time>
+    <attack>3</attack>
+    <health>12</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="legion" x="1" y="2" />
+    <skill id="legion" x="1" y="7" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="legion" x="2" y="2" />
+      <skill id="legion" x="1" y="7" />
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>4</attack>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="legion" x="2" y="2" />
+      <skill id="legion" x="2" y="7" />
+      <skill id="enfeeble" x="1" all="1" />
+    </upgrade>
+    <desc>Reks fell in combat against Fiona and her dragons of Tarragon Peak.</desc>
+  </unit>
+  <unit>
+    <id>12061</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Reks, the Fallen</name>
+    <picture>Undead_Reks_A</picture>
+    <asset_bundle>72</asset_bundle>
+    <hidden_until_time>1474563600</hidden_until_time>
+    <attack>4</attack>
+    <health>17</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="legion" x="2" y="2" />
+    <skill id="legion" x="2" y="7" />
+    <skill id="enfeeble" x="1" all="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>19</health>
+      <skill id="legion" x="2" y="2" />
+      <skill id="legion" x="2" y="7" />
+      <skill id="enfeeble" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>5</attack>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="legion" x="3" y="2" />
+      <skill id="legion" x="2" y="7" />
+      <skill id="enfeeble" x="2" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22061</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Reks, the Dragonslain</name>
+    <picture>Undead_Reks_B</picture>
+    <asset_bundle>72</asset_bundle>
+    <hidden_until_time>1474563600</hidden_until_time>
+    <attack>5</attack>
+    <health>21</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="legion" x="3" y="2" />
+    <skill id="legion" x="3" y="7" />
+    <skill id="enfeeble" x="2" all="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>22</health>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>24</health>
+      <skill id="legion" x="4" y="2" />
+      <skill id="legion" x="3" y="7" />
+      <skill id="enfeeble" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="legion" x="4" y="2" />
+      <skill id="legion" x="4" y="7" />
+      <skill id="enfeeble" x="3" all="1" />
     </upgrade>
   </unit>
   <!-- END SET 2000 - Reward -->
@@ -54884,6 +55017,7 @@
       <level>5</level>
       <health>29</health>
     </upgrade>
+    <desc>In the darkest depths the light can shine brightest.</desc>
   </unit>
   <unit>
     <id>333</id>
@@ -54919,6 +55053,7 @@
       <level>5</level>
       <health>28</health>
     </upgrade>
+    <desc>A rattling can be heard in the darkness, bones and metal scrapping across the stone.</desc>
   </unit>
   <unit>
     <id>334</id>
@@ -54928,7 +55063,7 @@
     <attack>0</attack>
     <health>15</health>
     <skill id="enfeeble" x="2" />
-    <skill id="imbue" s="evade" y="7" x="1" />
+    <skill id="imbue" s="evade" x="1" />
     <rarity>3</rarity>
     <type>3</type>
     <set>9999</set>
@@ -54937,26 +55072,27 @@
       <health>20</health>
       <skill id="enfeeble" x="2" />
       <skill id="enfeeble" x="1" />
-      <skill id="imbue" s="evade" y="7" x="1" />
+      <skill id="imbue" s="evade" x="1" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>24</health>
       <skill id="enfeeble" x="3" />
       <skill id="enfeeble" x="2" />
-      <skill id="imbue" s="evade" y="7" x="2" />
+      <skill id="imbue" s="evade" x="2" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>27</health>
       <skill id="enfeeble" x="3" />
       <skill id="enfeeble" x="3" />
-      <skill id="imbue" s="evade" y="7" x="3" />
+      <skill id="imbue" s="evade" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>30</health>
     </upgrade>
+    <desc>The darkest corners of the Underhill dungeons hide unfathomable dangers.</desc>
   </unit>
   <unit>
     <id>335</id>
@@ -55003,6 +55139,7 @@
       <skill id="imbue" s="nullify" y="7" x="3" />
       <skill id="heal" all="1" y="7" x="2" />
     </upgrade>
+    <desc>Withdrawing from society, these undead continue their scientific work even after their bodies have given up.</desc>
   </unit>
   <unit>
     <id>336</id>
@@ -55052,6 +55189,7 @@
       <skill id="imbue" s="burn" y="7" x="5" />
       <skill id="strike" all="1" x="3" />
     </upgrade>
+    <desc>"The last thing the adventurers heard was the wooshing crack of its fire whip from the darkness." - Collection of Bardic Tales IV</desc>
   </unit>
   <unit>
     <id>337</id>
@@ -55060,7 +55198,7 @@
     <portrait>octopusmonster</portrait>
     <attack>0</attack>
     <health>35</health>
-    <skill id="imbue" s="evade" y="7" x="2" />
+    <skill id="imbue" s="evade" x="2" />
     <skill id="weaken" all="1" x="3" c="4" />
     <skill id="enfeeble" x="2" />
     <rarity>4</rarity>
@@ -55069,38 +55207,39 @@
     <upgrade>
       <level>2</level>
       <health>40</health>
-      <skill id="imbue" s="evade" y="7" x="2" />
+      <skill id="imbue" s="evade" x="2" />
       <skill id="weaken" all="1" x="3" c="4" />
       <skill id="enfeeble" x="3" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>45</health>
-      <skill id="imbue" s="evade" y="7" x="2" />
+      <skill id="imbue" s="evade" x="2" />
       <skill id="weaken" all="1" x="4" c="4" />
       <skill id="enfeeble" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>50</health>
-      <skill id="imbue" s="evade" y="7" x="2" />
+      <skill id="imbue" s="evade" x="2" />
       <skill id="weaken" all="1" x="4" c="3" />
       <skill id="enfeeble" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>55</health>
-      <skill id="imbue" s="evade" y="7" x="3" />
+      <skill id="imbue" s="evade" x="3" />
       <skill id="weaken" all="1" x="5" c="3" />
       <skill id="enfeeble" x="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>60</health>
-      <skill id="imbue" s="evade" y="7" x="4" />
+      <skill id="imbue" s="evade" x="4" />
       <skill id="weaken" all="1" x="5" c="2" />
       <skill id="enfeeble" x="3" />
     </upgrade>
+    <desc>"No one understands what lurks in the furthest depths of the earth. Things beyond imagination." - Arcanists Scrolls of Prophecy</desc>
   </unit>
   <unit>
     <id>338</id>
@@ -55110,7 +55249,7 @@
     <attack>0</attack>
     <health>72</health>
     <skill id="heal" all="1" y="7" x="2" />
-    <skill id="imbue" s="flurry" y="7" />
+    <skill id="imbue" s="berserk" y="7" x="4" />
     <skill id="jam" c="5" />
     <rarity>5</rarity>
     <type>3</type>
@@ -55123,7 +55262,7 @@
       <level>3</level>
       <health>81</health>
       <skill id="heal" all="1" y="7" x="3" />
-      <skill id="imbue" s="flurry" y="7" />
+      <skill id="imbue" s="berserk" y="7" x="5" />
       <skill id="jam" c="4" />
     </upgrade>
     <upgrade>
@@ -55134,7 +55273,7 @@
       <level>5</level>
       <health>87</health>
       <skill id="heal" all="1" y="7" x="4" />
-      <skill id="imbue" s="flurry" y="7" />
+      <skill id="imbue" s="berserk" y="7" x="6" />
       <skill id="jam" c="4" />
     </upgrade>
     <upgrade>
@@ -55145,9 +55284,10 @@
       <level>7</level>
       <health>94</health>
       <skill id="heal" all="1" y="7" x="5" />
-      <skill id="imbue" s="flurry" y="7" />
+      <skill id="imbue" s="berserk" y="7" x="7" />
       <skill id="jam" c="3" />
     </upgrade>
+    <desc>"In the farthest shadows of the Underhill lurks a beast over 2000 years old. It preys on death itself and fears nothing." - J.L. Montrello</desc>
   </unit>
   <unit>
     <id>339</id>
@@ -55195,6 +55335,7 @@
       <skill id="rally" all="1" y="7" x="4" />
       <skill id="weaken" all="1" x="4" />
     </upgrade>
+    <desc>"Marrowsworn was bound to the depths of the Underhill, forever kept from tormenting the living." - Tarian the Lich Lord</desc>
   </unit>
   <!-- END Fortune's Favor -->
   <!-- START ARCANE DUSTLING -->

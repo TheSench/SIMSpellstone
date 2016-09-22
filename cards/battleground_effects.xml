@@ -389,18 +389,18 @@
   </battleground>
   <battleground>
     <id>510</id>
-    <name>Dungeon Boost</name>
-    <desc>Dungeon Boost Heals and Empowers all of his allies, increasing in strength as he levels up.</desc>
+    <name>Dungeon's Despair</name>
+    <desc>Dungeon's Despair Heals and Empowers all the enemy creatures, increasing in strength as the dungeon level increases.</desc>
     <icon>dungeon_bge_128</icon>
     <icon_bundle>71</icon_bundle>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
-    <starting_level>50</starting_level>
+    <starting_level>120</starting_level>
     <!-- Starting Raid Level -->
     <effect>
-      <skill id="heal" x=".1" all="1" />
-      <skill id="rally" x=".1" all="1" />
+      <skill id="heal" x=".5" all="1" />
+      <skill id="rally" x=".5" all="1" />
     </effect>
   </battleground>
   <battleground>

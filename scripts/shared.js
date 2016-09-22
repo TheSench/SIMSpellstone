@@ -1792,7 +1792,7 @@ function load_preset_deck(deckInfo, level, maxLevel) {
 
     var current_deck = [];
     current_deck.deck = [];
-    current_deck.commander = getPresetUnit(deckInfo.commander, level, maxLevel);   // Set commander to max level
+    current_deck.commander = getPresetUnit(getPresetCommander(deckInfo, level), level, maxLevel);   // Set commander to max level
     upgradePoints -= current_deck.commander.level - 1;
     var presetDeck = deckInfo.deck;
 
@@ -1820,6 +1820,25 @@ function load_preset_deck(deckInfo, level, maxLevel) {
     return current_deck;
 }
 
+function getPresetCommander(deckInfo, level) {
+    level = parseInt(level);
+    var commander = deckInfo.commander;
+    if (commander.card) {
+        var possibilities = [];
+        for (var i = 0; i < commander.card.length; i++) {
+            var card = commander.card[i];
+            var minLevel = parseInt(card.min_mastery_level) || 0;
+            var maxLevel = parseInt(card.max_mastery_level) || 999;
+            if (level >= minLevel && level <= maxLevel) {
+                possibilities.push(card);
+            }
+        }
+        var chosen = ~~(Math.random() * possibilities.length)
+        commander = possibilities[chosen];
+    }
+    return commander;
+}
+
 function getUpgradePoints(level, pointsPer) {
     var points = 0;
     for (var i = 2; i <= level; i++) {
@@ -1830,10 +1849,14 @@ function getUpgradePoints(level, pointsPer) {
 }
 
 function getPresetUnit(unitInfo, level, maxLevel) {
+    level = parseInt(level);
     if (unitInfo.mastery_level && level < parseInt(unitInfo.mastery_level)) return null;
     if (unitInfo.remove_mastery_level && level >= parseInt(unitInfo.remove_mastery_level)) return null;
 
     var cardID = unitInfo.id;
+    if (!cardID) {
+        cardID = getRandomCard(unitInfo);
+    }
     var unitLevel = (unitInfo.level || 1);
 
     if (level >= maxLevel) {
@@ -1846,6 +1869,32 @@ function getPresetUnit(unitInfo, level, maxLevel) {
     }
 
     return makeUnitInfo(cardID, unitLevel);
+}
+
+function getRandomCard(unitInfo) {
+    var possibilities = [];
+    for (var id in CARDS) {
+        var card = CARDS[id];
+        if (card.card_type == '1') {
+            continue;
+        }
+        if (unitInfo.max_rarity && Number(unitInfo.max_rarity) < Number(card.rarity) ||
+            unitInfo.min_rarity && Number(unitInfo.min_rarity) > Number(card.rarity)) {
+            continue;
+        }
+        if (unitInfo.type && !(unitInfo.type == card.type || unitInfo.type == card.sub_type)) {
+            continue;
+        }
+        if (unitInfo.set) {
+            var sets = unitInfo.set.split(",");
+            if (sets.indexOf(card.set) < 0) {
+                continue;
+            }
+        }
+        possibilities.push(id);
+    }
+    var chosen = ~~(Math.random() * possibilities.length)
+    return possibilities[chosen];
 }
 
 function upgradeCard(unitInfo) {

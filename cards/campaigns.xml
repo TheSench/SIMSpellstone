@@ -3224,7 +3224,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>Light of the Wisps</name>
-    <icon id="will_o_wisp100" bundle="42" />
+    <icon id="will_o_wisp100" bundle="58" />
     <location_id>105</location_id>
     <x>204</x>
     <y>167</y>

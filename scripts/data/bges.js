@@ -541,23 +541,23 @@ var BATTLEGROUNDS = {
     }
   },
   "510": {
-    "name": "Dungeon Boost",
+    "name": "Dungeon's Despair",
     "id": "510",
     "enemy_only": true,
     "scale_with_level": "1",
-    "starting_level": "50",
+    "starting_level": "120",
     "hidden": true,
     "effect": [
       {
         "effect_type": "skill",
         "id": "heal",
-        "x": .1,
+        "x": .5,
         "all": "1",
       },
       {
         "effect_type": "skill",
         "id": "rally",
-        "x": .1,
+        "x": .5,
         "all": "1",
       },
     ]
