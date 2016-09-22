@@ -114,8 +114,10 @@ $(function () {
     } else {
         // Load current battlegrounds
         var bgCheckBoxes = document.getElementsByName("battleground");
-        bgCheckBoxes[5].checked = true;
-        bgCheckBoxes[10].checked = true;
+        for (var i = 0; i < current_bges.length; i++) {
+
+            bgCheckBoxes[current_bges[i]].checked = true;
+        }
     }
 
     $('#sims').val(_GET('sims') || 10000);
