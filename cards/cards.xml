@@ -10122,7 +10122,7 @@
     <name>Matriarch's Call</name>
     <picture>Moonlight_Banshee_A</picture>
     <asset_bundle>72</asset_bundle>
-    <hidden_until_time>1475773200</hidden_until_time>
+    <hidden_until_time>1474563600</hidden_until_time>
     <attack>3</attack>
     <health>9</health>
     <cost>2</cost>
@@ -10164,7 +10164,7 @@
     <name>Matriarch's Intent</name>
     <picture>Moonlight_Banshee_A</picture>
     <asset_bundle>72</asset_bundle>
-    <hidden_until_time>1475773200</hidden_until_time>
+    <hidden_until_time>1474563600</hidden_until_time>
     <attack>3</attack>
     <health>14</health>
     <cost>2</cost>
@@ -10201,7 +10201,7 @@
     <name>Matriarch's Bidding</name>
     <picture>Moonlight_Banshee_B</picture>
     <asset_bundle>72</asset_bundle>
-    <hidden_until_time>1475773200</hidden_until_time>
+    <hidden_until_time>1474563600</hidden_until_time>
     <attack>4</attack>
     <health>19</health>
     <cost>2</cost>
@@ -10366,7 +10366,7 @@
   <unit>
     <id>2061</id>
     <card_type>2</card_type>
-    <name>Reks, the Fallen</name>
+    <name>Reks, the Forlorn</name>
     <picture>Undead_Reks_A</picture>
     <asset_bundle>72</asset_bundle>
     <hidden_until_time>1474563600</hidden_until_time>
@@ -41151,6 +41151,137 @@
     </upgrade>
     <desc>The umbra are rarely spotted, but their healing effects can be seen in the forest itself.</desc>
   </unit>
+  <unit>
+    <id>7086</id>
+    <card_type>2</card_type>
+    <name>Scavenger of Elaria</name>
+    <picture>Infested_Giant_Ant_A</picture>
+    <asset_bundle>72</asset_bundle>
+    <hidden_until_time>1474909200</hidden_until_time>
+    <attack>4</attack>
+    <health>8</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="1" />
+    <skill id="fervor" x="1" y="3" />
+    <skill id="leech" x="2" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="valor" x="2" />
+      <skill id="fervor" x="1" y="3" />
+      <skill id="leech" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="valor" x="2" />
+      <skill id="fervor" x="1" y="3" />
+      <skill id="leech" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>11</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17086</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Terror of Elaria</name>
+    <picture>Infested_Giant_Ant_A</picture>
+    <asset_bundle>72</asset_bundle>
+    <hidden_until_time>1474909200</hidden_until_time>
+    <attack>4</attack>
+    <health>12</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="2" />
+    <skill id="fervor" x="1" y="3" />
+    <skill id="leech" x="3" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="valor" x="3" />
+      <skill id="fervor" x="1" y="3" />
+      <skill id="leech" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>14</health>
+      <skill id="valor" x="3" />
+      <skill id="fervor" x="1" y="3" />
+      <skill id="leech" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="valor" x="4" />
+      <skill id="fervor" x="1" y="3" />
+      <skill id="leech" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27086</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Scourge of Elaria</name>
+    <picture>Infested_Giant_Ant_B</picture>
+    <asset_bundle>72</asset_bundle>
+    <hidden_until_time>1474909200</hidden_until_time>
+    <attack>4</attack>
+    <health>15</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="4" />
+    <skill id="fervor" x="1" y="3" />
+    <skill id="leech" x="5" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="valor" x="5" />
+      <skill id="fervor" x="1" y="3" />
+      <skill id="leech" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="valor" x="5" />
+      <skill id="fervor" x="2" y="3" />
+      <skill id="leech" x="6" />
+    </upgrade>
+  </unit>
   <!-- END SET 3000 - Premium -->
   <!-- START SET 8000 - Story Element Assaults -->
   <unit>
@@ -44798,6 +44929,64 @@
       <skill id="evade" x="4" />
       <skill id="rally" x="4" all="1" y="7" />
       <skill id="heal" x="5" all="1" y="7" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8031</id>
+    <card_type>2</card_type>
+    <name>Boneslither Maw</name>
+    <picture>Snake_Skeleton_B</picture>
+    <asset_bundle>43</asset_bundle>
+    <hidden_until_time></hidden_until_time>
+    <attack>6</attack>
+    <health>11</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="jam" c="6" />
+    <skill id="leech" x="6" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <attack>7</attack>
+      <health>13</health>
+      <skill id="jam" c="5" />
+      <skill id="leech" x="7" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>8</attack>
+      <health>15</health>
+      <skill id="jam" c="4" />
+      <skill id="leech" x="7" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>9</attack>
+      <health>17</health>
+      <skill id="jam" c="3" />
+      <skill id="leech" x="8" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>10</attack>
+      <health>22</health>
+      <skill id="jam" c="2" />
+      <skill id="leech" x="9" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>11</attack>
+      <health>26</health>
+      <skill id="jam" c="2" />
+      <skill id="leech" x="11" />
+      <skill id="berserk" x="4" />
     </upgrade>
   </unit>
   <!-- END SET 8000 - Story Element Assaults -->
@@ -55331,9 +55520,9 @@
     <upgrade>
       <level>7</level>
       <health>94</health>
-      <skill id="imbue" s="burn" all="1" y="7" x="3" />
+      <skill id="imbue" s="burn" all="1" y="7" x="4" />
       <skill id="rally" all="1" y="7" x="4" />
-      <skill id="weaken" all="1" x="4" />
+      <skill id="weaken" all="1" x="5" />
     </upgrade>
     <desc>"Marrowsworn was bound to the depths of the Underhill, forever kept from tormenting the living." - Tarian the Lich Lord</desc>
   </unit>

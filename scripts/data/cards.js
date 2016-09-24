@@ -18575,7 +18575,7 @@ var CARDS = {
     "id": "2059",
     "name": "Matriarch's Call",
     "picture": "Moonlight_Banshee_A",
-    "hidden_until": "1475773200000",
+    "hidden_until": "1474563600000",
     "rarity": "3",
     "set": "2000",
     "card_type": "2",
@@ -18674,7 +18674,7 @@ var CARDS = {
     "id": "12059",
     "name": "Matriarch's Intent",
     "picture": "Moonlight_Banshee_A",
-    "hidden_until": "1475773200000",
+    "hidden_until": "1474563600000",
     "rarity": "3",
     "set": "2000",
     "card_type": "2",
@@ -18741,7 +18741,7 @@ var CARDS = {
     "id": "22059",
     "name": "Matriarch's Bidding",
     "picture": "Moonlight_Banshee_B",
-    "hidden_until": "1475773200000",
+    "hidden_until": "1474563600000",
     "rarity": "3",
     "set": "2000",
     "card_type": "2",
@@ -19094,7 +19094,7 @@ var CARDS = {
   },
   "2061": {
     "id": "2061",
-    "name": "Reks, the Fallen",
+    "name": "Reks, the Forlorn",
     "desc": "Reks fell in combat against Fiona and her dragons of Tarragon Peak.",
     "picture": "Undead_Reks_A",
     "hidden_until": "1474563600000",
@@ -76791,6 +76791,261 @@ var CARDS = {
       },
     }
   },
+  "7086": {
+    "id": "7086",
+    "name": "Scavenger of Elaria",
+    "picture": "Infested_Giant_Ant_A",
+    "hidden_until": "1474909200000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "7",
+    "attack": 4,
+    "health": 8,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "valor",
+        "x": 1,
+      },
+      {
+        "id": "fervor",
+        "x": 1,
+        "y": "3",
+        "z": 3,
+      },
+      {
+        "id": "leech",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 9,
+        "skill": [],
+      },
+      "3": {
+        "health": 10,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "valor",
+            "x": 2,
+          },
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "valor",
+            "x": 2,
+          },
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "health": 11,
+        "skill": [],
+      },
+    }
+  },
+  "17086": {
+    "id": "17086",
+    "name": "Terror of Elaria",
+    "picture": "Infested_Giant_Ant_A",
+    "hidden_until": "1474909200000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "7",
+    "attack": 4,
+    "health": 12,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "valor",
+        "x": 2,
+      },
+      {
+        "id": "fervor",
+        "x": 1,
+        "y": "3",
+        "z": 3,
+      },
+      {
+        "id": "leech",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 13,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "valor",
+            "x": 3,
+          },
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 14,
+        "skill": [
+          {
+            "id": "valor",
+            "x": 3,
+          },
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "health": 15,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "valor",
+            "x": 4,
+          },
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "27086": {
+    "id": "27086",
+    "name": "Scourge of Elaria",
+    "picture": "Infested_Giant_Ant_B",
+    "hidden_until": "1474909200000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "7",
+    "attack": 4,
+    "health": 15,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "valor",
+        "x": 4,
+      },
+      {
+        "id": "fervor",
+        "x": 1,
+        "y": "3",
+        "z": 3,
+      },
+      {
+        "id": "leech",
+        "x": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 16,
+        "skill": [],
+      },
+      "3": {
+        "health": 17,
+        "skill": [],
+      },
+      "4": {
+        "health": 18,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "valor",
+            "x": 5,
+          },
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "valor",
+            "x": 5,
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "3",
+            "z": 3,
+          },
+          {
+            "id": "leech",
+            "x": 6,
+          },
+        ],
+      },
+    }
+  },
   "8000": {
     "id": "8000",
     "name": "Frostbite Giant",
@@ -84167,6 +84422,126 @@ var CARDS = {
             "y": "7",
             "z": 7,
             "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "8031": {
+    "id": "8031",
+    "name": "Boneslither Maw",
+    "picture": "Snake_Skeleton_B",
+    "hidden_until": "000",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": "7",
+    "attack": 6,
+    "health": 11,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "jam",
+        "c": 6,
+      },
+      {
+        "id": "leech",
+        "x": 6,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 7,
+        "health": 13,
+        "skill": [
+          {
+            "id": "jam",
+            "c": 5,
+          },
+          {
+            "id": "leech",
+            "x": 7,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "3": {
+        "attack": 8,
+        "health": 15,
+        "skill": [
+          {
+            "id": "jam",
+            "c": 4,
+          },
+          {
+            "id": "leech",
+            "x": 7,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "attack": 9,
+        "health": 17,
+        "skill": [
+          {
+            "id": "jam",
+            "c": 3,
+          },
+          {
+            "id": "leech",
+            "x": 8,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "attack": 10,
+        "health": 22,
+        "skill": [
+          {
+            "id": "jam",
+            "c": 2,
+          },
+          {
+            "id": "leech",
+            "x": 9,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "attack": 11,
+        "health": 26,
+        "skill": [
+          {
+            "id": "jam",
+            "c": 2,
+          },
+          {
+            "id": "leech",
+            "x": 11,
+          },
+          {
+            "id": "berserk",
+            "x": 4,
           },
         ],
       },
@@ -104341,7 +104716,7 @@ var CARDS = {
         "skill": [
           {
             "id": "imbue",
-            "x": 3,
+            "x": 4,
             "y": "7",
             "z": 7,
             "s": "burn",
@@ -104356,7 +104731,7 @@ var CARDS = {
           },
           {
             "id": "weaken",
-            "x": 4,
+            "x": 5,
             "all": "1",
           },
         ],
@@ -105162,8 +105537,8 @@ var CARDS = {
   },
   "9988": {
     "id": "9988",
-    "name": "New Art",
-    "picture": "New7_A",
+    "name": "Unused Art",
+    "picture": "Oda_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -105175,8 +105550,8 @@ var CARDS = {
   },
   "19988": {
     "id": "19988",
-    "name": "New Art",
-    "picture": "New7_B",
+    "name": "Unused Art",
+    "picture": "Oda_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -105186,10 +105561,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9987": {
-    "id": "9987",
+  "29988": {
+    "id": "29988",
     "name": "Unused Art",
-    "picture": "Oda_A",
+    "picture": "Oda_C",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -105202,7 +105577,7 @@ var CARDS = {
   "19987": {
     "id": "19987",
     "name": "Unused Art",
-    "picture": "Oda_B",
+    "picture": "Promo_Dragon_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -105212,10 +105587,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29987": {
-    "id": "29987",
+  "9986": {
+    "id": "9986",
     "name": "Unused Art",
-    "picture": "Oda_C",
+    "picture": "Seraph_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -105228,7 +105603,7 @@ var CARDS = {
   "19986": {
     "id": "19986",
     "name": "Unused Art",
-    "picture": "Promo_Dragon_B",
+    "picture": "Seraph_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -105241,20 +105616,7 @@ var CARDS = {
   "9985": {
     "id": "9985",
     "name": "Unused Art",
-    "picture": "Seraph_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19985": {
-    "id": "19985",
-    "name": "Unused Art",
-    "picture": "Seraph_B",
+    "picture": "Tarian_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -105267,7 +105629,7 @@ var CARDS = {
   "9984": {
     "id": "9984",
     "name": "Unused Art",
-    "picture": "Tarian_A",
+    "picture": "Tremor_Wurm_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -105280,7 +105642,7 @@ var CARDS = {
   "9983": {
     "id": "9983",
     "name": "Unused Art",
-    "picture": "Tremor_Wurm_A",
+    "picture": "Unused1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -105293,7 +105655,7 @@ var CARDS = {
   "9982": {
     "id": "9982",
     "name": "Unused Art",
-    "picture": "Unused1_A",
+    "picture": "Unused2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -105306,7 +105668,7 @@ var CARDS = {
   "9981": {
     "id": "9981",
     "name": "Unused Art",
-    "picture": "Unused2_A",
+    "picture": "Unused3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -105319,7 +105681,7 @@ var CARDS = {
   "9980": {
     "id": "9980",
     "name": "Unused Art",
-    "picture": "Unused3_A",
+    "picture": "Ursurio_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -105332,7 +105694,7 @@ var CARDS = {
   "9979": {
     "id": "9979",
     "name": "Unused Art",
-    "picture": "Ursurio_A",
+    "picture": "Void_Abomination_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -105344,19 +105706,6 @@ var CARDS = {
   },
   "9978": {
     "id": "9978",
-    "name": "Unused Art",
-    "picture": "Void_Abomination_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9977": {
-    "id": "9977",
     "name": "Unused Art",
     "picture": "Yuriel_A",
     "rarity": "0",
