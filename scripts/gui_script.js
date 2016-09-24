@@ -102,7 +102,10 @@ $(function () {
     var raidID = _GET('raid');
     if (campaignID) $('#campaign').val(campaignID).change();
     if (missionID) $('#mission').val(missionID).change();
-    if (raidID) $('#raid').val(raidID).change();
+    if (raidID) {
+        $('#raid').val(raidID).change();
+        $('#raid_level').val(_GET('raid_level') || 25);
+    }
 
     var bges = _GET('bges');
     if (bges) {
@@ -380,6 +383,7 @@ function generate_link(autostart) {
     addValueParam(parameters, "campaign");
     addValueParam(parameters, "mission");
     addValueParam(parameters, "raid");
+    addValueParam(parameters, "raid_level");
 
     addBoolParam(parameters, "surge");
 

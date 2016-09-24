@@ -855,7 +855,7 @@ var getBattlegrounds = function (getbattleground, getraid) {
     };
     if (getbattleground) {
         var selected = getbattleground.split(",");
-        for (i = 0; i < selected.length; i++) {
+        for (var i = 0; i < selected.length; i++) {
             var id = selected[i];
             var battleground = BATTLEGROUNDS[id];
             for (var j = 0; j < battleground.effect.length; j++) {
@@ -873,16 +873,8 @@ var getBattlegrounds = function (getbattleground, getraid) {
     if (getraid) {
         var bge_id = RAIDS[getraid].bge;
         if (bge_id) {
-            var battleground;
-            for (var i = 0; i < BATTLEGROUNDS.length; i++) {
-                var battleground = BATTLEGROUNDS[i];
-                if (battleground.id == bge_id) {
-                    break;
-                } else {
-                    battleground = null;
-                }
-            }
-            if (battleground && raidlevel >= battleground.starting_level) {
+            var battleground = BATTLEGROUNDS[bge_id];
+            if (battleground && Number(raidlevel) >= Number(battleground.starting_level)) {
                 var enemy_only = battleground.enemy_only;
 
                 for (var j = 0; j < battleground.effect.length; j++) {
@@ -1952,10 +1944,10 @@ function canFuse(cardID) {
         return false;
     } else if (is_commander(cardID)) {
         return false;
-    } else if (cardID.length > 4) {
-        return parseInt(cardID[0]) < 2;
+    } else if (FUSIONS[cardID]) {
+        return true;
     }
-    return true;
+    return false;
 }
 
 function fuseCard(cardID, fusion) {
