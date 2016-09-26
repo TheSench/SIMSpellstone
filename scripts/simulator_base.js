@@ -998,6 +998,10 @@ var SIMULATOR = {};
         }
 
         // Load enemy deck
+        if (getraid) {
+            cache_cpu_deck = load_deck_raid(getraid, raidlevel);
+            cache_cpu_deck_cards = getDeckCards(cache_cpu_deck);
+        }
         if (cache_cpu_deck_cards) {
             deck['cpu'] = copy_deck(cache_cpu_deck_cards);
         }

@@ -298,6 +298,11 @@ void Main()
 		writer.WriteLine("var FUSIONS = {");
 		writer.WriteLine(String.Join(",\r\n", fusions.OrderBy(f => f.baseCardID).Select(f => f.ToString())));
 		writer.WriteLine("};");
+		writer.WriteLine("var REVERSE_FUSIONS = {};");
+		writer.WriteLine("for(var id in FUSIONS) {");
+		writer.WriteLine("	var fusion = FUSIONS[id];");
+		writer.WriteLine("	REVERSE_FUSIONS[fusion] = id;");
+		writer.WriteLine("}");
 	}
 	file = new FileInfo(Path.Combine(path, "../scripts/data", "bges.js"));
 	using (var writer = file.CreateText())
@@ -516,7 +521,7 @@ public partial class unit
 		AppendEntryString(sb, "set", set, unitTabs);
 		AppendEntryString(sb, "card_type", card_type, unitTabs);
 		AppendEntryString(sb, "type", type, unitTabs);
-		AppendEntryString(sb, "sub_type", sub_type, unitTabs);
+		AppendEntryArray(sb, "sub_type", sub_type, unitTabs);
 		if (card_type != "1")
 		{
 			AppendEntry(sb, "attack", attack, unitTabs);
@@ -575,7 +580,7 @@ public partial class unit
 	private string costField;
 	private string rarityField;
 	private string typeField;
-	private string sub_typeField;
+	private string[] sub_typeField;
 	private string setField;
 	private skill[] skillsField;
 	private unitUpgrade[] upgradesField;
@@ -714,7 +719,8 @@ public partial class unit
 	}
 
 	/// <remarks/>
-	public string sub_type
+	[System.Xml.Serialization.XmlElementAttribute("sub_type")]
+	public string[] sub_type
 	{
 		get { return this.sub_typeField; }
 		set { this.sub_typeField = value; }
@@ -1055,8 +1061,18 @@ private static void AppendEntryString(StringBuilder sb, string name, string valu
 {
 	if (value != null)
 	{
-		sb.Append(tabs).Append("\"").Append(name).Append("\"").Append(": ").Append("\"").Append(value).Append("\",\r\n");
+		sb.Append(tabs).Append("\"").Append(name).Append("\": \"").Append(value).Append("\",\r\n");
 	}
+}
+
+private static void AppendEntryArray(StringBuilder sb, string name, string[] values, string tabs)
+{
+	sb.Append(tabs).Append("\"").Append(name).Append("\": [");
+	if (values != null && values.Length > 0)
+	{
+		sb.Append("\"").Append(String.Join("\",\"", values)).Append("\"");
+	}
+	sb.Append("],\r\n");
 }
 
 private static void AppendSkills(StringBuilder sb, skill[] skills, string tabs)

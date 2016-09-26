@@ -315,10 +315,15 @@ var CARD_GUI = {};
             htmlSet.className = "set";
             htmlCard.appendChild(htmlSet);
         }
-        if (card.sub_type) {
-            var htmlSubfaction = getFactionIcon(card.sub_type);
-            htmlSubfaction.className = "subfaction";
-            htmlCard.appendChild(htmlSubfaction);
+        var subFactions = card.sub_type;
+        if (subFactions.length) {
+            var subFactionsDiv = createDiv("subfaction");
+            for (var i = 0; i < subFactions.length; i++) {
+                var htmlSubfaction = getFactionIcon(subFactions[i]);
+                //htmlSubfaction.className = "subfaction";
+                subFactionsDiv.appendChild(htmlSubfaction);
+            }
+            htmlCard.appendChild(subFactionsDiv);
         }
         if (card.rarity > 0) {
             var htmlLevel = createImg(getAssetPath("cardAssets") + "Level_" + card.rarity + "_" + card.level + ".png");

@@ -60,10 +60,10 @@
 
         if (debug && !mass_debug && !loss_debug && !win_debug) {
             run_sim(true);
-            debug_end();
+            SIM_CONTROLLER.debug_end();
         } else if (SIMULATOR.user_controlled) {
             if (run_sim(true)) {
-                debug_end();
+                SIM_CONTROLLER.debug_end();
             }
         } else if (sims_left > 0) {
             // Interval output - speeds up simulations

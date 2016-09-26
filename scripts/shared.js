@@ -205,7 +205,7 @@ function cloneCard(original) {
     copy.rarity = original.rarity;
     copy.card_type = original.card_type;
     copy.type = original.type;
-    copy.sub_type = original.sub_type;
+    copy.sub_type = original.sub_type || [];
     copy.set = original.set;
     // Passives
     copy.armored = original.armored;
@@ -624,7 +624,7 @@ var makeUnit = (function () {
         isInFaction: function (faction) {
             if (faction === undefined) return 1;
             if (this.type == faction) return 1;
-            if (this.sub_type == faction) return 1;
+            if (this.sub_type.indexOf(faction.toString()) >= 0) return 1;
             return 0;
         },
 
@@ -653,7 +653,7 @@ var makeUnit = (function () {
         card.rarity = original_card.rarity;
         card.card_type = original_card.card_type;
         card.type = original_card.type;
-        card.sub_type = original_card.sub_type;
+        card.sub_type = original_card.sub_type || [];
         card.set = original_card.set;
         var original_skills = original_card.skill;
         if (card.level > 1) {
@@ -1116,7 +1116,12 @@ function debug_dump_cards(deck, player) {
         // Echo card info
         echo += debug_name(current_card) + debug_skills(current_card);
         if (current_card.type) echo += ' <u>' + factions.names[current_card.type] + '</u>';
-        if (current_card.sub_type) echo += ' <u>' + factions.names[current_card.sub_type] + '</u>';
+        var subFactions = current_card.sub_type;
+        if (subFactions.length) {
+            for (var i = 0; i < subFactions.length; i++) {
+                echo += ' <u>' + factions.names[subFactions[i]] + '</u>';
+            }
+        }
         echo += '<br>';
     }
 }
@@ -1901,6 +1906,7 @@ function getPresetUnit(unitInfo, level, maxLevel) {
 function getRandomCard(unitInfo) {
     var possibilities = [];
     for (var id in CARDS) {
+        if (REVERSE_FUSIONS[id]) continue;
         var card = CARDS[id];
         if (card.card_type == '1') {
             continue;
@@ -1909,7 +1915,7 @@ function getRandomCard(unitInfo) {
             unitInfo.min_rarity && Number(unitInfo.min_rarity) > Number(card.rarity)) {
             continue;
         }
-        if (unitInfo.type && !(unitInfo.type == card.type || unitInfo.type == card.sub_type)) {
+        if (unitInfo.type && !(unitInfo.type == card.type || card.sub_type.indexOf(unitInfo.type.toString()) >= 0)) {
             continue;
         }
         if (unitInfo.set) {
@@ -2082,7 +2088,7 @@ function get_slim_card_by_id(unit, getDetails) {
         new_card.card_type = undefined;
         new_card.set = undefined;
         new_card.type = undefined;
-        new_card.sub_type = undefined;
+        new_card.sub_type = [];
         new_card.level = undefined;
         new_card.maxLevel = undefined;
         if (getSkills) new_card.skill = [];
@@ -2102,7 +2108,7 @@ function get_slim_card_by_id(unit, getDetails) {
             new_card.set = current_card.set;
             new_card.card_type = current_card.card_type;
             new_card.type = current_card.type;
-            new_card.sub_type = current_card.sub_type;
+            new_card.sub_type = current_card.sub_type || [];
             new_card.skill = current_card.skill;
             if (new_card.level > 1) {
                 for (var key in current_card.upgrades) {

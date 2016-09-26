@@ -895,7 +895,6 @@ var updateSimulator = function (deckHash)
 
 var updateGraphs = function ()
 {
-
     var delays = [0, 0, 0, 0, 0];
     var attackStats = [];
     var healthStats = [];
@@ -911,8 +910,13 @@ var updateGraphs = function ()
         attackStats.push(Number(card.attack));
         healthStats.push(Number(card.health));
         delayStats.push(Number(card.cost));
-        var sub_type = (card.sub_type || 0);
-        sub_types[sub_type] = (sub_types[sub_type] || 0) + 1;
+
+        var subFactions = card.sub_type;
+        if (!subFactions.length) subFactions.push(0);
+        for (var i = 0; i < subFactions.length; i++) {
+            var subFaction = subFactions[i];
+            sub_types[subFaction] = (sub_types[subFaction] || 0) + 1;
+        }
     }
     var numericSort = function (a, b) { return a - b };
     attackStats.sort(numericSort);
@@ -2065,7 +2069,7 @@ var isInSubfaction = function (unit, faction)
 {
     var factionID = factions.IDs[faction];
     var card = get_slim_card_by_id(unit, true);
-    return ((card.sub_type || 0) == factionID);
+    return (card.sub_type.indexOf(faction.toString()) >= 0);
 }
 
 var isInRange = function (unit, field, min, max)

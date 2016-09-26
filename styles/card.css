@@ -18,6 +18,9 @@
 
     .card:hover .subfaction {
         left: 25px;
+    }
+
+    .card:hover .subfaction img {
         width: 21px;
     }
 
@@ -36,6 +39,9 @@
     position: absolute;
     top: 12px;
     left: 15px;
+}
+
+.subfaction img{
     width: 12px;
     margin: 1px 1px;
     border-radius: 10px;
