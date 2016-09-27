@@ -33,7 +33,10 @@ $(document).ready(function () {
         connect(c);
         var message = {
             type: 'requestFight',
-            data: $("#deck1").val()
+            data: {
+                hash: $("#deck1").val(),
+                bges: getBGEs()
+            }
         };
         c.send(JSON.stringify(message));
     }
@@ -89,7 +92,7 @@ $(document).ready(function () {
         }
     }
 
-    function fightRequested(c, enemyHash) {
+    function fightRequested(c, data) {
         var message;
 
         if (ready) {
@@ -97,7 +100,8 @@ $(document).ready(function () {
                 type: 'accepted',
                 data: $("#deck1").val()
             };
-            $("#deck2").val(enemyHash);
+            $("#deck2").val(data.hash);
+            setBGEs(data.bges);
             $("#surge").prop("checked", true);
             SIMULATOR.sendBattleUpdate = sendBattleUpdate;
             SIMULATOR.waiting = true;
@@ -240,6 +244,24 @@ $(document).ready(function () {
         }
         $("#surge").prop("checked", false);
         ready = false;
+    }
+
+    function getBGEs() {
+        var bges = '';
+        var bgCheckBoxes = document.getElementsByName("battleground");
+        for (var i = 0; i < bgCheckBoxes.length; i++) {
+            d = bgCheckBoxes[i];
+            if (d.checked) bges += decimal_to_base64(d.value, 2);
+        }
+        return bges;
+    }
+
+    function setBGEs(bges) {
+        $("#battleground input").prop("checked", false);
+        for (var i = 0; i < bges.length; i += 2) {
+            var bge = base64_to_decimal(bges.substring(i, i + 2));
+            $("#battleground_" + bge).prop('checked', true);
+        }
     }
 
     // Make sure things clean up properly.
