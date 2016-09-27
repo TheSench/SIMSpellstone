@@ -64,7 +64,8 @@ $(document).ready(function () {
             type: 'updateField',
             data: {
                 field: SIMULATOR.field,
-                turn: turn
+                turn: turn,
+                echo: echo
             }
         };
         activeConnection().send(JSON.stringify(message));
@@ -139,6 +140,7 @@ $(document).ready(function () {
         if (SIMULATOR.waiting) {
             var field = SIMULATOR.field = data.field;
             var turn = data.turn;
+            echo = data.echo;
 
             // Convert JSON cards to actual Units
             convert(field.player.commander);

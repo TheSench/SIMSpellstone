@@ -59,13 +59,13 @@
 
     function run_sims() {
 
-        if (debug && !mass_debug && !loss_debug && !win_debug) {
-            run_sim(true);
-            SIM_CONTROLLER.debug_end();
-        } else if (SIMULATOR.user_controlled) {
+        if (SIMULATOR.user_controlled) {
             if (run_sim(true)) {
                 SIM_CONTROLLER.debug_end();
             }
+        } else if (debug && !mass_debug && !loss_debug && !win_debug) {
+            run_sim(true);
+            SIM_CONTROLLER.debug_end();
         } else if (sims_left > 0) {
             // Interval output - speeds up simulations
             if (run_sims_count >= run_sims_batch) {
