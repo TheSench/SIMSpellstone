@@ -87,6 +87,7 @@ $(function () {
     $("#tower_type").val(tower_type);
 
     $('#auto_mode').prop("checked", _DEFINED("auto_mode"));
+    $('#tournament').prop("checked", _DEFINED("tournament"));
     $('#ordered').prop("checked", _DEFINED("ordered"));
     $('#exactorder').prop("checked", _DEFINED("exactorder"));
 
@@ -392,6 +393,7 @@ function generate_link(autostart) {
     }
 
     addBoolParam(parameters, "auto_mode");
+    addBoolParam(parameters, "tournament");
     addBoolParam(parameters, "ordered");
     addBoolParam(parameters, "exactorder");
     addBoolParam(parameters, "exactorder");
@@ -652,6 +654,7 @@ var cache_player_deck_cards;
 var cache_cpu_deck_cards;
 var choice = undefined;
 var auto_mode = false;
+var tournament = false;
 var suppressOutput = false;
 var orders = {};
 var cardStats = {};

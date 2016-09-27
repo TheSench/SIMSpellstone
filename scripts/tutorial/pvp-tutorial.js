@@ -10,7 +10,8 @@
        },
        {
            ui: "#btn_simulate",
-           msg: 'If you wish to be the defender, you\'re almost done.  Click "Ready" to start waiting for a battle request.'
+           msg: 'If you wish to be the defender, you\'re almost done.  Click "Ready" to start waiting for a battle request.',
+           actions: [clickReady, clickStop, hideSetup]
        },
        {
            ui: "#myPeerID",
@@ -19,7 +20,8 @@
        },
        {
            ui: "#btnStop",
-           msg: 'Click "Stop" at any time to stop waiting and edit your settings again.'
+           msg: 'Click "Stop" at any time to stop waiting and edit your settings again.',
+           actions: [clickReady, hideSetup]
        },
        {
            ui: "#battlefield-container",
@@ -27,8 +29,14 @@
            actions: [clickStop, showSetup]
        },
        {
+           ui: "#tournament-container",
+           msg: 'If you want the attacker\'s first card to not tick down right away, you can check this box.',
+           actions: [showSetup]
+       },
+       {
            ui: "#enemyPeerID",
-           msg: 'Then, paste your opponent\'s ID into the ID field.'
+           msg: 'Then, paste your opponent\'s ID into the ID field.',
+           actions: [hideSetup]
        },
        {
            ui: "#btn_simulate",
@@ -54,6 +62,10 @@
 
     function showSetup() {
         $("#setup-container").accordion('option', 'active', 0);
+    }
+
+    function hideSetup() {
+        $("#setup-container").accordion('option', 'active', null);
     }
 
     return tutorialParts;

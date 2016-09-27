@@ -91,6 +91,7 @@
                                 <div id="attacker-advanced">
                                     <h6>Advanced Settings</h6>
                                     <div id="deckContainer" class="collapsible">
+                                        <div id="tournament-container"><input type="checkbox" ng-model="tournament" id="tournament"><label for="tournament">Delay First Card</label></div>
                                         <div id="auto-container"><input type="checkbox" ng-model="auto" id="auto_mode"><label for="auto_mode">Auto Mode</label></div>
                                         <div id="ordered-container"><input type="checkbox" ng-disabled="!auto" id="ordered"><label for="ordered" ng-class="{grey:!auto}">Ordered</label></div>
                                         <div id="exactorder-container"><input type="checkbox" ng-disabled="!auto" id="exactorder"><label for="exactorder" ng-class="{grey:!auto}">Don't Shuffle</label></div>
@@ -162,7 +163,6 @@
                                 <select id="tower_type" ng-disabled="!tower">
                                     <option ng-repeat="type in towerTypes()" value="{{type.id}}">{{type.name}}</option>
                                 </select>
-                                <input type="checkbox" id="surge" style="display:none;">Defender First</label>
                             </div>
                             <div id="bge-container">
                                 <h6>Battleground Effects</h6>

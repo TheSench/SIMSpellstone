@@ -14,6 +14,7 @@ var SIM_CONTROLLER = (function () {
             auto_mode = $('#auto_mode').is(':checked');
             SIMULATOR.user_controlled = !auto_mode;
         }
+        tournament = $("#tournament").is(":checked");
         getdeck = $('#deck1').val();
         getordered = $('#ordered').is(':checked');
         getexactorder = $('#exactorder').is(':checked');

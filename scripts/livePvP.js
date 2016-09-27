@@ -36,7 +36,8 @@ $(document).ready(function () {
             type: 'requestFight',
             data: {
                 hash: $("#deck1").val(),
-                bges: getBGEs()
+                bges: getBGEs(),
+                tournament: $("#tournament").is(":checked")
             }
         };
         c.send(JSON.stringify(message));
@@ -105,6 +106,7 @@ $(document).ready(function () {
             $("#deck2").val(data.hash);
             setBGEs(data.bges);
             $("#surge").prop("checked", true);
+            $("#tournament").prop("checked", data.tournament);
             SIMULATOR.sendBattleUpdate = sendBattleUpdate;
             SIMULATOR.waiting = true;
             SIMULATOR.livePvP = true;
