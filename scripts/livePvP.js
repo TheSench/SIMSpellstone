@@ -30,14 +30,14 @@ $(document).ready(function () {
     });
 
     function sendConnection(c) {
-        $("#surge").prop("checked", false);
         connect(c);
         var message = {
             type: 'requestFight',
             data: {
                 hash: $("#deck1").val(),
                 bges: getBGEs(),
-                tournament: $("#tournament").is(":checked")
+                tournament: $("#tournament").is(":checked"),
+                surge: !$("#surge").is(":checked")
             }
         };
         c.send(JSON.stringify(message));
@@ -105,7 +105,7 @@ $(document).ready(function () {
             };
             $("#deck2").val(data.hash);
             setBGEs(data.bges);
-            $("#surge").prop("checked", true);
+            $("#surge").prop("checked", data.surge);
             $("#tournament").prop("checked", data.tournament);
             SIMULATOR.sendBattleUpdate = sendBattleUpdate;
             SIMULATOR.waiting = true;
@@ -247,7 +247,6 @@ $(document).ready(function () {
             delete peer.connections[connectedPeer];
             connectedPeer = null;
         }
-        $("#surge").prop("checked", false);
         ready = false;
     }
 
