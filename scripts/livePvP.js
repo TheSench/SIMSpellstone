@@ -26,6 +26,7 @@ $(document).ready(function () {
 
     peer.on('error', function (err) {
         console.log(err);
+        disconnect();
     });
 
     function sendConnection(c) {
