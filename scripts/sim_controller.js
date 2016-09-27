@@ -10,7 +10,10 @@ var SIM_CONTROLLER = (function () {
         loss_debug = $('#loss_debug').is(':checked');
         win_debug = $('#win_debug').is(':checked');
 
-        auto_mode = $('#auto_mode').is(':checked');
+        if ($('#auto_mode').length) {
+            auto_mode = $('#auto_mode').is(':checked');
+            SIMULATOR.user_controlled = !auto_mode;
+        }
         getdeck = $('#deck1').val();
         getordered = $('#ordered').is(':checked');
         getexactorder = $('#exactorder').is(':checked');

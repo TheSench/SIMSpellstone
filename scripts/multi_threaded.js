@@ -294,7 +294,7 @@
         if (BATTLEGROUNDS) {
             getbattleground = getSelectedBattlegrounds();
         }
-        surge = document.getElementById('surge').checked;
+        surge = $('#surge').is(':checked');
 
         // Cache decks where possible
         // Load player deck
@@ -307,17 +307,17 @@
         }
 
         // Load enemy deck
-        smartAI = !_DEFINED("randomAI");
+        pvpAI = !_DEFINED("randomAI");
         if (getdeck2) {
             cache_cpu_deck = hash_decode(getdeck2);
         } else if (getcardlist2) {
             cache_cpu_deck = load_deck_from_cardlist(getcardlist2);
         } else if (getmission) {
             cache_cpu_deck = load_deck_mission(getmission);
-            smartAI = false;    // PvE decks do not use "Smart AI"
+            pvpAI = false;    // PvE decks do not use "Smart AI"
         } else if (getraid) {
             cache_cpu_deck = load_deck_raid(getraid, raidlevel);
-            smartAI = false;    // PvE decks do not use "Smart AI"
+            pvpAI = false;    // PvE decks do not use "Smart AI"
         } else {
             cache_cpu_deck = load_deck_from_cardlist();
         }
@@ -339,7 +339,7 @@
         params['getsiege'] = getsiege;
         params['tower_level'] = tower_level;
         params['tower_type'] = tower_type;
-        params['smartAI'] = smartAI;
+        params['pvpAI'] = pvpAI;
         params['surge'] = surge;
         params['debug'] = debug;
         params['loss_debug'] = loss_debug;
@@ -437,17 +437,17 @@
         }
 
         // Load enemy deck
-        smartAI = !_DEFINED("randomAI");;
+        pvpAI = !_DEFINED("randomAI");;
         if (getdeck2) {
             cache_cpu_deck = hash_decode(getdeck2);
         } else if (getcardlist2) {
             cache_cpu_deck = load_deck_from_cardlist(getcardlist2);
         } else if (getmission) {
             cache_cpu_deck = load_deck_mission(getmission);
-            smartAI = false;    // PvE decks do not use "Smart AI"
+            pvpAI = false;    // PvE decks do not use "Smart AI"
         } else if (getraid) {
             cache_cpu_deck = load_deck_raid(getraid, raidlevel);
-            smartAI = false;    // PvE decks do not use "Smart AI"
+            pvpAI = false;    // PvE decks do not use "Smart AI"
         } else {
             cache_cpu_deck = load_deck_from_cardlist();
         }
@@ -472,7 +472,7 @@
         params['getsiege'] = getsiege;
         params['tower_level'] = tower_level;
         params['tower_type'] = tower_type;
-        params['smartAI'] = smartAI;
+        params['pvpAI'] = pvpAI;
         params['surge'] = surge;
         params['debug'] = debug;
         params['loss_debug'] = loss_debug;
@@ -523,7 +523,7 @@
         params['getsiege'] = getsiege;
         params['tower_level'] = tower_level;
         params['tower_type'] = tower_type;
-        params['smartAI'] = smartAI;
+        params['pvpAI'] = pvpAI;
         params['surge'] = surge;
         params['debug'] = debug;
         params['loss_debug'] = loss_debug;

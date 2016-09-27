@@ -8,7 +8,7 @@
         overlayHtml.replaceWith(function () {
             return $(this).contents();
         });
-        $("#tutorial-show").attr("checked", storageAPI.shouldShowTutorial).change(function (event) {
+        $("#tutorial-show").prop("checked", storageAPI.shouldShowTutorial).change(function (event) {
             storageAPI.setShowTutorial(this.checked);
         });
         $("#help").click(showTutorial);

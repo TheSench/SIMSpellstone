@@ -2,8 +2,6 @@
 
 (function () {
 
-    SIMULATOR.user_controlled = true;
-
     SIM_CONTROLLER.end_sims_callback = function () {
         hideUI();   // Cheap hack to keep Setup hidden
         draw_match_end();

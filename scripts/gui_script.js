@@ -65,17 +65,16 @@ $(function () {
     var button = document.getElementById("generate_link");
     if (button) button.onclick = display_generated_link;
 
-    var button = document.getElementById("btn_simulate");
-    if (button) button.onclick = SIM_CONTROLLER.startsim;
+    $("#btn_simulate").on("click", SIM_CONTROLLER.startsim);
+    $("#btnStop").on("click", SIM_CONTROLLER.stopsim);
 
-    var button = document.getElementById("display_history");
-    if (button) button.onclick = display_history;
+    $("#display_history").on("click", display_history);
 
     $('#deck1').val(_GET('deck1')).change();
     $('#deck2').val(_GET('deck2')).change();
 
-    $('#surge').attr("checked", _DEFINED("surge"));
-    $('#siege').attr("checked", _DEFINED("siege"));
+    $('#surge').prop("checked", _DEFINED("surge"));
+    $('#siege').prop("checked", _DEFINED("siege"));
     var tower_level = Math.min(Math.max(_GET('tower_level') || 18, 0), 18);
     $('#tower_level').val(tower_level);
 
@@ -87,14 +86,14 @@ $(function () {
     }
     $("#tower_type").val(tower_type);
 
-    $('#auto_mode').attr("checked", _DEFINED("auto_mode"));
-    $('#ordered').attr("checked", _DEFINED("ordered"));
-    $('#exactorder').attr("checked", _DEFINED("exactorder"));
+    $('#auto_mode').prop("checked", _DEFINED("auto_mode"));
+    $('#ordered').prop("checked", _DEFINED("ordered"));
+    $('#exactorder').prop("checked", _DEFINED("exactorder"));
 
-    $('#ordered2').attr("checked", _DEFINED("ordered2"));
-    $('#exactorder2').attr("checked", _DEFINED("exactorder2"));
+    $('#ordered2').prop("checked", _DEFINED("ordered2"));
+    $('#exactorder2').prop("checked", _DEFINED("exactorder2"));
     if (_DEFINED("randomAI")) {
-        smartAI = false;
+        pvpAI = false;
     }
 
     var campaignID = _GET('campaign');
@@ -125,10 +124,10 @@ $(function () {
 
     $('#sims').val(_GET('sims') || 10000);
 
-    $('#debug').attr("checked", _DEFINED("debug"));
-    $('#mass_debug').attr("checked", _DEFINED("mass_debug"));
-    $('#loss_debug').attr("checked", _DEFINED("loss_debug"));
-    $('#win_debug').attr("checked", _DEFINED("win_debug"));
+    $('#debug').prop("checked", _DEFINED("debug"));
+    $('#mass_debug').prop("checked", _DEFINED("mass_debug"));
+    $('#loss_debug').prop("checked", _DEFINED("loss_debug"));
+    $('#win_debug').prop("checked", _DEFINED("win_debug"));
     
     document.title = "SimSpellstone " + text_version + " - The Spellstone Simulator that runs from your browser!";
 
@@ -630,7 +629,7 @@ var getbattleground = 0;
 var getsiege = 0;
 var tower_level = 0;
 var tower_type = 0;
-var smartAI = true;
+var pvpAI = true;
 var echo = '';
 var wins = 0;
 var losses = 0;

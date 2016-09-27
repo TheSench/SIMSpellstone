@@ -44,6 +44,7 @@
         var elapse = time_elapsed();
         var simpersec = games / elapse;
         simpersec = simpersec.toFixed(2);
+        SIMULATOR.simulating = false;
 
         // Stop the recursion
         if (current_timeout) clearTimeout(current_timeout);

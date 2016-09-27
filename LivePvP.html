@@ -51,10 +51,15 @@
     <!-- SIMULATOR CODE ENDS HERE -->
     <script src="scripts/tutorial/simulator-tutorial.js"></script>
     <script src="scripts/sim-tutorial.js"></script>
+
+    <script src="http://cdn.peerjs.com/0.3/peer.js"></script>
+    <script src="scripts/livePvP.js"></script>
 </head>
 <body>
     <header id="header"></header>
     <input id="toggleTheme" type="button" onclick="toggleTheme()" value="Dark Theme" />
+    <label for="myPeeerID">My ID</label>
+    <input id="myPeerID" type="text" size="20" onclick="this.select();" readonly="readonly" />
     <!--
     <div class="circle primary-black">Primary-Black</div>
     <div class="circle primary-neutral">Primary-Neutral</div>
@@ -158,6 +163,7 @@
                                 <select id="tower_type" ng-disabled="!tower">
                                     <option ng-repeat="type in towerTypes()" value="{{type.id}}">{{type.name}}</option>
                                 </select>
+                                <input type="checkbox" id="surge" style="display:none;">Defender First</label>
                             </div>
                             <div id="bge-container">
                                 <h6>Battleground Effects</h6>
@@ -208,7 +214,9 @@
                 </div>
             </div>
             <hr />
-            <input id="btn_simulate" type="button" value="Battle!" style="text-align: center; font-weight: bold;">
+            <label for="enemyPeerID">My ID</label>
+            <input id="enemyPeerID" type="text" size="20" onclick="this.select();" />
+            <input id="btn_simulate" type="button" value="Ready!" style="text-align: center; font-weight: bold;">
             <input type="button" id="generate_link" value="Generate Link" style="text-align: center; font-weight: normal;">
         </form>
     </div>
@@ -221,7 +229,7 @@
         </div>
     </div>
     <div id="cardSpace" class="flaot-left"></div>
-    <span id="stop" style="display: none;"><input type="button" value="Restart" onclick="SIM_CONTROLLER.startsim()"><input id="btnStop" type="button" value="Stop"><br />TIP: Switching browser tabs may cause your simulation to pause!</span>
+    <span id="stop" style="display: none;"><input type="button" value="Restart" onclick="SIM_CONTROLLER.startsim()"><input id="btnStop" type="button" value="Stop"><br />Waiting for opponent</span>
     <br />
     <span id="content"></span>
 
