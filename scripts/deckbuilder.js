@@ -774,15 +774,15 @@ var addUnitToDeck = function (unit, htmlCard)
             $htmlCard.remove();
         }
     } else {
-        $htmlCard.hide().fadeIn(100);
+        $htmlCard.stop().hide().fadeIn(100);
     }
     updateHash();
 };
 
 function replaceCard(oldCard, newCard) {
+    var speed = (oldCard.hasClass("blank") ? 1000 : 600);
     $(oldCard).replaceWith(newCard);
-    var speed =  (oldCard.hasClass("blank") ? 1000 : 600);
-    newCard.children().hide().fadeIn(speed).promise();
+    newCard.children().stop().hide().fadeIn(speed).promise();
 }
 
 
@@ -913,8 +913,8 @@ var updateGraphs = function ()
 
         var subFactions = card.sub_type;
         if (!subFactions.length) subFactions.push(0);
-        for (var i = 0; i < subFactions.length; i++) {
-            var subFaction = subFactions[i];
+        for (var s = 0; s < subFactions.length; s++) {
+            var subFaction = subFactions[s];
             sub_types[subFaction] = (sub_types[subFaction] || 0) + 1;
         }
     }
@@ -2069,7 +2069,7 @@ var isInSubfaction = function (unit, faction)
 {
     var factionID = factions.IDs[faction];
     var card = get_slim_card_by_id(unit, true);
-    return (card.sub_type.indexOf(faction.toString()) >= 0);
+    return (card.sub_type.indexOf(factionID.toString()) >= 0);
 }
 
 var isInRange = function (unit, field, min, max)
