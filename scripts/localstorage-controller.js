@@ -44,7 +44,7 @@ if (function (type) {
             SaveFields.tutorial = "Tutorial-" + getCurrentPage();
 
             loadField("savedDecks", SaveFields.decks, {}, true);
-            loadField("shouldShowTutorial", SaveFields.tutorial);
+            loadField("shouldShowTutorial", SaveFields.tutorial, true);
 
             var cachedOnUpdate = storageAPI.onUpdateDecks;
             storageAPI.onUpdateDecks = function () {

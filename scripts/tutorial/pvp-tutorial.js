@@ -24,18 +24,36 @@
            actions: [clickReady, hideSetup]
        },
        {
-           ui: "#battlefield-container",
-           msg: 'If you want to be the attacker, set up the battlefield.',
+           msg: 'If you want to be the attacker, you are in charge of choosing the match type(s) and battleground effects.',
            actions: [clickStop, showSetup]
        },
        {
+           ui: "#first-player-advantage-container",
+           msg: 'This section lets you pick various options for dealing with "First-Player Advantage".',
+       },
+       {
+           ui: "#surge-container",
+           msg: 'This setting makes the defender go first.',
+       },
+       {
            ui: "#tournament-container",
-           msg: 'If you want the attacker\'s first card to not tick down right away, you can check this box.',
+           msg: 'This setting causes the attacker\'s first card to not tick down right away.',
+       },
+       {
+           ui: "#tower-container",
+           msg: 'These settings will provide the defender with the specified tower.'
+       },
+       {
+           ui: "#battlefield-container",
+           msg: 'Configure the desired battleground effects for the match here.'
+       },
+       {
+           msg: "When you configured have the desired match settings, it is time to start the match.",
            actions: [showSetup]
        },
        {
            ui: "#enemyPeerID",
-           msg: 'Then, paste your opponent\'s ID into the ID field.',
+           msg: 'Paste your opponent\'s ID into the ID field.',
            actions: [hideSetup]
        },
        {

@@ -91,7 +91,6 @@
                                 <div id="attacker-advanced">
                                     <h6>Advanced Settings</h6>
                                     <div id="deckContainer" class="collapsible">
-                                        <div id="tournament-container"><input type="checkbox" ng-model="tournament" id="tournament"><label for="tournament">Delay First Card</label></div>
                                         <div id="auto-container"><input type="checkbox" ng-model="auto" id="auto_mode"><label for="auto_mode">Auto Mode</label></div>
                                         <div id="ordered-container"><input type="checkbox" ng-disabled="!auto" id="ordered"><label for="ordered" ng-class="{grey:!auto}">Ordered</label></div>
                                         <div id="exactorder-container"><input type="checkbox" ng-disabled="!auto" id="exactorder"><label for="exactorder" ng-class="{grey:!auto}">Don't Shuffle</label></div>
@@ -99,7 +98,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="defender-container" class="pane">
+                        <div id="defender-container" style="display:none" class="pane">
                             <h3>Defender</h3>
                             <div>
                                 <div id="defender-hash-container">
@@ -145,27 +144,31 @@
                                     <div>
                                         <input type="checkbox" id="ordered2"><label for="ordered2">Ordered</label><br />
                                         <input type="checkbox" id="exactorder2"><label for="exactorder2">Don't Shuffle</label><br />
-                                        <div id="surge-container"><input type="checkbox" id="surge"><label for="surge">Defender First</label></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="pane" id="battlefield-container">
+                        <div class="pane" id="first-player-advantage-container">
                             <div>
-                                <h3>Battlefield</h3>
+                                <h3>Match Type</h3>
                             </div>
-                            <div id="tower-container">
-                                <h6>Tower</h6>
+                            <div id="surge-container"><input type="checkbox" id="surge"><label for="surge">Defender First</label></div>
+                            <div id="tournament-container"><input type="checkbox" ng-model="tournament" id="tournament"><label for="tournament">Delay First Card</label></div>
+                            <div id="tower-container" style="border-top:1px solid">
                                 <div id="siege-container">
                                     <input type="checkbox" id="siege" ng-model="tower"><label for="siege">Use Tower</label>
                                 </div>
-                                <input type="NUMBER" id="tower_level" min="1" max="18" step="1" value="10" size="6" ng-disabled="!tower">
+                                <input type="NUMBER" id="tower_level" min="1" max="18" step="1" value="10" ng-disabled="!tower" width="20px">
                                 <select id="tower_type" ng-disabled="!tower">
                                     <option ng-repeat="type in towerTypes()" value="{{type.id}}">{{type.name}}</option>
                                 </select>
                             </div>
+                        </div>
+                        <div class="pane" id="battlefield-container">
+                            <div>
+                                <h3>Battleground</h3>
+                            </div>
                             <div id="bge-container">
-                                <h6>Battleground Effects</h6>
                                 <div style="position: relative; width: 200px; height: 213px; overflow-y: scroll;">
                                     <div id="battleground" style="position: absolute; width: 100%;">
                                         <input ng-repeat-start="BGE in selectableBattlegrounds()" type="checkbox" name="battleground" id="battleground_{{BGE.id}}" value="{{BGE.id}}">
@@ -195,19 +198,12 @@
             </div>
             <hr />
             <div id="view-container" class="section accordion">
-                <h2>View Decks</h2>
+                <h2>View Deck</h2>
                 <div class="tableRow">
-                    <div class="deckView">
+                    <div>
                         <h3>Attacker</h3>
                         <div>
                             <div id="attack_deck" class="float-left"></div>
-                        </div>
-                    </div>
-                    <div class="deckSpacer"></div>
-                    <div class="deckView">
-                        <h3>Defender</h3>
-                        <div>
-                            <div id="defend_deck" class="float-left"></div>
                         </div>
                     </div>
                 </div>
