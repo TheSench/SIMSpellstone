@@ -149,7 +149,7 @@ $(document).ready(function () {
     function updateField(data) {
         if (SIMULATOR.waiting) {
             var field = SIMULATOR.field = data.field;
-            var turn = data.turn;
+            var turn = SIMULATOR.simulation_turns = data.turn;
             echo = data.echo;
             echo = echo.replace(/<b>/g, '<z>').replace(/<\/b>/g, '<\/z>');
             echo = echo.replace(/<i>/g, '<b>').replace(/<\/i>/g, '<\/b>');

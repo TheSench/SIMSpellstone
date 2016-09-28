@@ -243,6 +243,7 @@ function outp(text) {
 function outputTurns(turnData) {
     if (closeDiv) {
         turnData += "</div>";
+        closeDiv = false;
     }
     turnData = "<input id='show-turns' type='button' value='Show All' /> <div id='turn-container'>Turn: <select id='turn-picker'></select></div> <div>" + turnData + "</div>";
     outp(turnData);
@@ -252,10 +253,12 @@ function outputTurns(turnData) {
         var turn = i + 1;
         options.push("<option value='" + i + "'>" + turn + "</option>");
     }
+    var lastTurn = i - 1;
+    if (lastTurn && closeDiv) lastTurn--;
     $("#turn-picker").append(options).change(function (event) {
         var turn = event.target.selectedIndex;
         $(".turn-info").hide().eq(turn).show();
-    }).val(i-1).change();
+    }).val(lastTurn).change();
     var hidden = true;
     $("#show-turns").click(function () {
         hidden = !hidden;

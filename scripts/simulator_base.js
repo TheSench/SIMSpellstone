@@ -32,7 +32,7 @@ var SIMULATOR = {};
             var current_assault = units[key];
             // Starting at the first dead unit, start shifting.
             if (!current_assault.isAlive()) {
-                if (debug) echo += debug_name(current_assault) + ' is removed from field<br>';
+                if (debug) echo += debug_name(current_assault) + ' <strong>is removed from field</strong><br>';
                 if (current_assault.owner == 'player') damage_taken += current_assault.health;
                 else damage_dealt += current_assault.health;
                 var newkey = key;	// Store the new key value for the next alive unit
@@ -40,7 +40,7 @@ var SIMULATOR = {};
                     current_assault = units[key];
                     // If this unit is dead, don't update newkey, we still need to fill that slot
                     if (!current_assault.isAlive()) {
-                        if (debug) echo += debug_name(current_assault) + ' is removed from field<br>';
+                        if (debug) echo += debug_name(current_assault) + ' <strong>is removed from field</strong><br>';
                         if (current_assault.owner == 'player') damage_taken += current_assault.health;
                         else damage_dealt += current_assault.health;
                     }
@@ -1150,7 +1150,6 @@ var SIMULATOR = {};
             }
             if (!field.player.commander.isAlive() || !field.cpu.commander.isAlive()) {
                 simulating = false;
-                SIMULATOR.sendBattleUpdate(turn);
                 return true;
             }
         } else if (!surge && SIMULATOR.sendBattleUpdate) {
@@ -1173,6 +1172,7 @@ var SIMULATOR = {};
                 return false;
             } else if (!field.player.commander.isAlive() || !field.cpu.commander.isAlive()) {
                 simulating = false;
+                if (debug) echo += '<u>Turn ' + turn + ' ends</u><br><br></div>';
                 return true;
             }
         }
@@ -1189,11 +1189,10 @@ var SIMULATOR = {};
             var o = first_player;
         }
 
+        closeDiv = false;
         if (!choose_card(p, turn, drawCards)) {
-            closeDiv = true;
             return false;
         } else {
-            closeDiv = false;
             play_turn(p, o, field, turn);
             return true;
         }
@@ -1291,6 +1290,7 @@ var SIMULATOR = {};
     function waitForOpponent(p, shuffledDeck, orderedDeck, turn, drawCards) {
 
         SIMULATOR.waiting = true;
+        closeDiv = true;
 
         if (drawCards) {
             hideTable();
@@ -1306,6 +1306,7 @@ var SIMULATOR = {};
     function chooseCardUserManually(p, shuffledDeck, orderedDeck, turn, drawCards) {
         // Prepare 3-card hand
         var hand = shuffledDeck.slice(0, 3);
+        closeDiv = true;
         var cardsInHand = [];
         var drawableHand = [];
         for (var handIdx = 0, hand_len = hand.length; handIdx < hand_len; handIdx++) {
