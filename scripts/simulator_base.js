@@ -1055,7 +1055,7 @@ var SIMULATOR = {};
             if (tower) {
                 tower = makeUnitInfo(tower.id, tower.level);
                 var towerCard = get_card_apply_battlegrounds(tower);
-                play_card(towerCard, (surge ? 'player' : 'cpu'), true);
+                play_card(towerCard, 'cpu', true);
             }
         }
 
@@ -1111,13 +1111,19 @@ var SIMULATOR = {};
         if (!field_cpu_commander.reusableSkills) field_cpu_commander.resetTimers();
     }
 
+    SIMULATOR.pause = false;
     function performTurns(turn, drawCards) {
+        if (SIMULATOR.pause) {
+            SIMULATOR.pause = false;
+            return false;
+        }
         var done = performTurnsInner(turn, drawCards);
         if (done && user_controlled) {
             SIM_CONTROLLER.debug_end();
         }
         return done;
     }
+    SIMULATOR.performTurns = performTurns;
 
     function performTurnsInner(turn, drawCards) {
         // Set up players
@@ -1186,7 +1192,7 @@ var SIMULATOR = {};
         if (!choose_card(p, turn, drawCards)) {
             return false;
         } else {
-            play_turn(p, o, field);
+            play_turn(p, o, field, turn);
             return true;
         }
     }
@@ -1291,13 +1297,9 @@ var SIMULATOR = {};
             SIMULATOR.sendBattleUpdate(turn);
         }
 
-        SIMULATOR.onFieldUpdated = function (turn) {
-            turn = turn;
-            performTurns(turn, true);
-        }
-
         return -1;
     }
+    SIMULATOR.waitForOpponent = waitForOpponent;
 
     function chooseCardUserManually(p, shuffledDeck, orderedDeck, turn, drawCards) {
         // Prepare 3-card hand
@@ -1422,7 +1424,7 @@ var SIMULATOR = {};
         return ranking;
     }
 
-    function play_turn(p, o, field) {
+    function play_turn(p, o, field, turn) {
 
         var field_p = field[p];
         var field_p_commander = field_p['commander'];

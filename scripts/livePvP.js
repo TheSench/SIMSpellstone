@@ -7,6 +7,7 @@ $(document).ready(function () {
         // Set API key for cloud server (you don't need this if you're running your
         // own.
         key: '12gvgzijkheka9k9',
+
         // Set a logging function:
         logFunction: function () {
             var copy = Array.prototype.slice.call(arguments).join(' ');
@@ -15,6 +16,7 @@ $(document).ready(function () {
     });
     var connectedPeer = null;
     var ready = false;
+    var origSurge = false;
 
     // Show this peer's ID.
     peer.on('open', function (id) {
@@ -31,13 +33,16 @@ $(document).ready(function () {
 
     function sendConnection(c) {
         connect(c);
+        origSurge = $("#surge").is(":checked");
+        
+
         var message = {
             type: 'requestFight',
             data: {
                 hash: $("#deck1").val(),
                 bges: getBGEs(),
                 tournament: $("#tournament").is(":checked"),
-                surge: !$("#surge").is(":checked")
+                surge: !origSurge
             }
         };
         c.send(JSON.stringify(message));
@@ -105,10 +110,12 @@ $(document).ready(function () {
             };
             $("#deck2").val(data.hash);
             setBGEs(data.bges);
+            origSurge = $("#surge").prop("checked");
             $("#surge").prop("checked", data.surge);
             $("#tournament").prop("checked", data.tournament);
             SIMULATOR.sendBattleUpdate = sendBattleUpdate;
             SIMULATOR.waiting = true;
+            SIMULATOR.pause = true;//$("#surge").is(":checked");
             SIMULATOR.livePvP = true;
             SIM_CONTROLLER.startsim();
             SIM_CONTROLLER.end_sims_callback = endFight;
@@ -136,6 +143,7 @@ $(document).ready(function () {
         if (SIMULATOR.simulating) {
             SIM_CONTROLLER.stopsim();
         }
+        $("#surge").prop("checked", origSurge);
     }
 
     function updateField(data) {
@@ -143,6 +151,9 @@ $(document).ready(function () {
             var field = SIMULATOR.field = data.field;
             var turn = data.turn;
             echo = data.echo;
+            echo = echo.replace(/<b>/g, '<z>').replace(/<\/b>/g, '<\/z>');
+            echo = echo.replace(/<i>/g, '<b>').replace(/<\/i>/g, '<\/b>');
+            echo = echo.replace(/<z>/g, '<i>').replace(/<\/z>/g, '<\/i>');
 
             // Convert JSON cards to actual Units
             convert(field.player.commander);
@@ -164,12 +175,14 @@ $(document).ready(function () {
 
             CARD_GUI.draw_cards(field);
 
-            if(SIMULATOR.onFieldUpdated) SIMULATOR.onFieldUpdated(turn);
+            SIMULATOR.performTurns(turn, true);
         }
     }
 
     function convert(cardInfo) {
         cardInfo.__proto__ = CardPrototype;
+        // Swap ownership
+        cardInfo.owner = (cardInfo.owner === "player" ? "cpu" : "player");
     }
 
     function log(msg) { 
