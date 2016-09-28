@@ -1153,7 +1153,7 @@ var SIMULATOR = {};
                 SIMULATOR.sendBattleUpdate(turn);
                 return true;
             }
-        } else if(!surge && SIMULATOR.sendBattleUpdate) {
+        } else if (!surge && SIMULATOR.sendBattleUpdate) {
             SIMULATOR.sendBattleUpdate(turn);
         }
 
@@ -1190,8 +1190,10 @@ var SIMULATOR = {};
         }
 
         if (!choose_card(p, turn, drawCards)) {
+            closeDiv = true;
             return false;
         } else {
+            closeDiv = false;
             play_turn(p, o, field, turn);
             return true;
         }
@@ -1210,7 +1212,7 @@ var SIMULATOR = {};
             var o = first_player;
         }
 
-        if (debug) echo += '<u>Turn ' + turn + ' begins for ' + debug_name(field[p]['commander']) + '</u><br>';
+        if (debug) echo += '<div id="turn_"' + turn + ' class="turn-info"><hr/><br/><u>Turn ' + turn + ' begins for ' + debug_name(field[p]['commander']) + '</u><br>';
 
         var field_p_assaults = field[p]['assaults'];
         var field_o_assaults = field[o]['assaults'];
@@ -1256,12 +1258,12 @@ var SIMULATOR = {};
         var deck_p_deck = deck_p.deck;
         var deck_p_ordered = deck_p['ordered'];
         var isOrdered = (p == 'player' ? getordered : getordered2);
-        
-        // Deck not empty yet
+
         if (livePvP && p === 'cpu' && drawCards) {
             waitForOpponent(p, deck_p_deck, deck_p_ordered, turn, drawCards);
             return false;
         } else if (deck_p_deck[0]) {
+            // Deck not empty yet
             SIMULATOR.waiting = false;
             var card_picked = 0;
 
@@ -1292,7 +1294,7 @@ var SIMULATOR = {};
 
         if (drawCards) {
             hideTable();
-            outp(echo);
+            outputTurns(echo);
             CARD_GUI.draw_cards(field, null, performTurns, turn);
             SIMULATOR.sendBattleUpdate(turn);
         }
@@ -1315,11 +1317,12 @@ var SIMULATOR = {};
         }
         if (drawCards) {
             hideTable();
-            outp(echo);
+            outputTurns(echo);
             CARD_GUI.draw_cards(field, drawableHand, performTurns, turn);
         }
         if (choice === undefined) {
             return -1;
+            
         } else {
             var card_picked = choice;
             if (!card_picked) card_picked = 0;
@@ -1546,7 +1549,7 @@ var SIMULATOR = {};
         }
 
         //debug_dump_field(field);
-        if (debug) echo += '<u>Turn ' + turn + ' ends</u><br><br><hr><br>';
+        if (debug) echo += '<u>Turn ' + turn + ' ends</u><br><br></div>';
     };
 
     function doCountDowns(unit) {

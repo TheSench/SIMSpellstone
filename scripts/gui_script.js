@@ -240,6 +240,38 @@ function outp(text) {
     $("#content").html(text);
 }
 
+function outputTurns(turnData) {
+    if (closeDiv) {
+        turnData += "</div>";
+    }
+    turnData = "<input id='show-turns' type='button' value='Show All' /> <div id='turn-container'>Turn: <select id='turn-picker'></select></div> <div>" + turnData + "</div>";
+    outp(turnData);
+    var numTurns = $(".turn-info").hide().length;
+    var options = [];
+    for (var i = 0; i < numTurns; i++) {
+        var turn = i + 1;
+        options.push("<option value='" + i + "'>" + turn + "</option>");
+    }
+    $("#turn-picker").append(options).change(function (event) {
+        var turn = event.target.selectedIndex;
+        $(".turn-info").hide().eq(turn).show();
+    }).val(i-1).change();
+    var hidden = true;
+    $("#show-turns").click(function () {
+        hidden = !hidden;
+        if (hidden) {
+            var turn = $("#turn-picker").val();
+            $(".turn-info").hide().eq(turn).show();
+            $("#turn-container").show();
+            this.value = "Show All";
+        } else {
+            $(".turn-info").show();
+            $("#turn-container").hide();
+            this.value = "Show One";
+        }
+    });
+}
+
 // Return table of simulation results
 function showWinrate() {
 
@@ -633,6 +665,7 @@ var tower_level = 0;
 var tower_type = 0;
 var pvpAI = true;
 var echo = '';
+var closeDiv = false;
 var wins = 0;
 var losses = 0;
 var draws = 0;

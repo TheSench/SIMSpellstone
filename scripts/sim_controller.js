@@ -60,7 +60,7 @@ var SIM_CONTROLLER = (function () {
             msg = '<br><h1>LOSS</h1><br>';
         }
         if (echo) {
-            outp(echo);
+            outputTurns(echo);
         }
         setSimStatus(msg);
 
