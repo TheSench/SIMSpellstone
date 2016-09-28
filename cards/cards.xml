@@ -5751,7 +5751,7 @@
     <skill id="rally" x="3" all="1" />
     <skill id="heal" x="3" all="1" />
     <type>3</type>
-    <set>2000</set>
+    <set>5000</set>
     <upgrade>
       <level>2</level>
       <health>35</health>
@@ -5799,7 +5799,7 @@
     <skill id="legion" x="5" />
     <skill id="protect" all="1" x="3" />
     <type>1</type>
-    <set>2000</set>
+    <set>5000</set>
     <upgrade>
       <level>2</level>
       <skill id="armored" x="4" />
@@ -5852,7 +5852,7 @@
     <skill id="burn" x="3" />
     <skill id="strike" all="1" x="3" />
     <type>2</type>
-    <set>2000</set>
+    <set>5000</set>
     <upgrade>
       <level>2</level>
       <health>27</health>
@@ -7715,7 +7715,7 @@
     <rarity>2</rarity>
     <type>2</type>
     <sub_type>9</sub_type>
-    <set>2000</set>
+    <set>5000</set>
     <upgrade>
       <level>2</level>
       <health>12</health>
@@ -7747,7 +7747,7 @@
     <rarity>3</rarity>
     <type>2</type>
     <sub_type>9</sub_type>
-    <set>2000</set>
+    <set>5000</set>
     <upgrade>
       <level>2</level>
       <health>19</health>
@@ -7783,7 +7783,7 @@
     <rarity>4</rarity>
     <type>2</type>
     <sub_type>9</sub_type>
-    <set>2000</set>
+    <set>5000</set>
     <upgrade>
       <level>2</level>
       <health>22</health>
@@ -7828,7 +7828,7 @@
     <rarity>5</rarity>
     <type>2</type>
     <sub_type>9</sub_type>
-    <set>2000</set>
+    <set>5000</set>
     <upgrade>
       <level>2</level>
       <skill id="frost" x="2" />
@@ -56486,6 +56486,13 @@
     <visible>1</visible>
     <icon>set_icon_premium</icon>
     <picture>set_icon_premium</picture>
+  </cardSet>
+  <cardSet>
+    <id>5000</id>
+    <name>Mythic Reward</name>
+    <visible>1</visible>
+    <icon>set_icon_reward</icon>
+    <picture>set_icon_reward</picture>
   </cardSet>
   <cardSet>
     <id>7000</id>

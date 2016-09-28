@@ -134,6 +134,8 @@ var initDeckBuilder = function ()
         $deck = $("#deck");
         toggleInventoryMode();
     }
+
+    $("#graph-accordion").click(updateGraphs);
 }
 
 var setupPopups = function ()
@@ -895,6 +897,10 @@ var updateSimulator = function (deckHash)
 
 var updateGraphs = function ()
 {
+    var graphsContainer = $("#deckGraphs");
+    if (!graphsContainer.is(":visible")) {
+        return null;
+    }
     var delays = [0, 0, 0, 0, 0];
     var attackStats = [];
     var healthStats = [];

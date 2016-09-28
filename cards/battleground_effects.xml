@@ -416,20 +416,21 @@
   <!-- 1001+: Personal BGE -->
   <battleground>
     <id>10001</id>
+    <name>Primal Mending</name>
+    <desc>Your creatures get healed for 2 every turn in battle.</desc>
+    <icon>healTotem_BGE_64</icon>
+    <icon_bundle>73</icon_bundle>
+    <effect>
+      <skill id="heal" x="2" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>10002</id>
     <name>Personal Frog Buff</name>
     <desc>All ally Frogs gain the Protection of the Watcher, reducing damage taken by 2.</desc>
     <web_picture>filter_frog_64.png</web_picture>
     <effect>
       <skill id="protect" x="2" all="1" y="4" />
-    </effect>
-  </battleground>
-  <battleground>
-    <id>10002</id>
-    <name>Personal Enhance Armor</name>
-    <desc>All ally creatures have their armor enhanced by 1.</desc>
-    <web_picture>filter_elementals_64.png</web_picture>
-    <effect>
-      <skill id="enhance" s="armored" x="1" all="1" />
     </effect>
   </battleground>
 </root>
