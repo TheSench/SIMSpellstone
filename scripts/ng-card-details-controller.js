@@ -97,6 +97,15 @@
             return $window.rarityStrings[$scope.card.rarity];
         }
 
+        $scope.fontSize = function () {
+            var rarityString = $("#rarity-string").text();
+            var numChars = rarityString.length;
+            var fontSize = Math.ceil(71000 / (numChars * numChars));
+            return {
+                "font-size": fontSize + "px"
+            };
+        }
+
         $scope.showRarity = function ()
         {
             var card = $scope.card;
