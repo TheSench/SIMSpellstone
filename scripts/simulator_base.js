@@ -1441,7 +1441,8 @@ var SIMULATOR = {};
         // Activate battleground effects
         for (var i = 0; i < battlegrounds.onTurn.length; i++) {
             var battleground = battlegrounds.onTurn[i];
-            if (battleground.enemy_only && p != 'cpu') continue;
+            if (battleground.enemy_only && p !== 'cpu') continue;
+            if (battleground.self_only && p !== 'player') continue;
             battleground.owner = p;
             doEmpower(battleground);
             activation_skills(battleground);
@@ -1815,7 +1816,6 @@ var SIMULATOR = {};
 
             // Counterburn
             // - Target must have received some amount of damage
-            // - Attacker must not be already dead
             if (target.counterburn) {
                 var scorch = target.counterburn || 0;
                 var enhanced = getEnhancement(target, 'counterburn');

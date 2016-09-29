@@ -122,6 +122,22 @@ $(function () {
             bgCheckBoxes[current_bges[i]].checked = true;
         }
     }
+    var bges = _GET('selfbges');
+    if (bges) {
+        // Each BGE is a 2-character ID in Base64
+        for (var i = 0; i < bges.length; i += 2) {
+            var bge = base64_to_decimal(bges.substring(i, i + 2)) + 10000;
+            $("#self-battleground_" + bge).prop('checked', true);
+        }
+    }
+    var bges = _GET('enemybges');
+    if (bges) {
+        // Each BGE is a 2-character ID in Base64
+        for (var i = 0; i < bges.length; i += 2) {
+            var bge = base64_to_decimal(bges.substring(i, i + 2)) + 10000;
+            $("#enemy-battleground_" + bge).prop('checked', true);
+        }
+    }
 
     $('#sims').val(_GET('sims') || 10000);
 
@@ -222,9 +238,10 @@ function hideUI() {
     document.getElementById('stop').style.display = 'block';
 }
 
-function getSelectedBattlegrounds() {
+function getSelectedBattlegrounds(prefix) {
+    prefix = (prefix || "");
     var getbattleground = [];
-    var bgCheckBoxes = document.getElementsByName("battleground");
+    var bgCheckBoxes = document.getElementsByName(prefix + "battleground");
     for (var i = 0; i < bgCheckBoxes.length; i++) {
         var checkbox = bgCheckBoxes[i];
         if (checkbox && checkbox.checked) {
@@ -441,6 +458,22 @@ function generate_link(autostart) {
         if (d.checked) bges += decimal_to_base64(d.value, 2);
     }
     parameters.push('bges=' + bges);
+
+    var bges = '';
+    var bgCheckBoxes = document.getElementsByName("self-battleground");
+    for (var i = 0; i < bgCheckBoxes.length; i++) {
+        d = bgCheckBoxes[i];
+        if (d.checked) bges += decimal_to_base64(d.value - 10000, 2);
+    }
+    parameters.push('selfbges=' + bges);
+
+    var bges = '';
+    var bgCheckBoxes = document.getElementsByName("enemy-battleground");
+    for (var i = 0; i < bgCheckBoxes.length; i++) {
+        d = bgCheckBoxes[i];
+        if (d.checked) bges += decimal_to_base64(d.value - 10000, 2);
+    }
+    parameters.push('enemybges=' + bges);
     
 
     addValueParam(parameters, "sims");
@@ -662,7 +695,9 @@ var getexactorder2 = false;
 var getmission = false;
 var getraid = false;
 var raidlevel = 0;
-var getbattleground = 0;
+var getbattleground = '';
+var enemybges = '';
+var selfbges = '';
 var getsiege = 0;
 var tower_level = 0;
 var tower_type = 0;

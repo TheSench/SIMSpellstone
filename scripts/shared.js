@@ -846,29 +846,17 @@ var MakeSkillModifier = (function () {
     })
 }());
 
-var getBattlegrounds = function (getbattleground, getraid) {
+var getBattlegrounds = function (getbattleground, selfbges, enemybges, getraid) {
 
     // Set up battleground effects, if any
     var battlegrounds = {
         onCreate: [],
         onTurn: [],
     };
-    if (getbattleground) {
-        var selected = getbattleground.split(",");
-        for (var i = 0; i < selected.length; i++) {
-            var id = selected[i];
-            var battleground = BATTLEGROUNDS[id];
-            for (var j = 0; j < battleground.effect.length; j++) {
-                var effect = battleground.effect[j];
-                var effect_type = effect.effect_type;
-                if (effect_type === "skill") {
-                    battlegrounds.onTurn.push(MakeBattleground(battleground.name, effect));
-                } else if (effect_type === "evolve_skill" || effect_type === "add_skill") {
-                    battlegrounds.onCreate.push(MakeSkillModifier(battleground.name, effect));
-                }
-            }
-        }
-    }
+
+    addBgesFromList(battlegrounds, getbattleground);
+    addBgesFromList(battlegrounds, selfbges, 'player');
+    addBgesFromList(battlegrounds, enemybges, 'cpu');
 
     if (getraid) {
         var bge_id = RAIDS[getraid].bge;
@@ -899,6 +887,30 @@ var getBattlegrounds = function (getbattleground, getraid) {
         }
     }
     return battlegrounds;
+}
+
+function addBgesFromList(battlegrounds, getbattleground, player) {
+    if (!getbattleground) return null;
+    var selected = getbattleground.split(",");
+    for (var i = 0; i < selected.length; i++) {
+        var id = selected[i];
+        var battleground = BATTLEGROUNDS[id];
+        for (var j = 0; j < battleground.effect.length; j++) {
+            var effect = battleground.effect[j];
+            var effect_type = effect.effect_type;
+            if (effect_type === "skill") {
+                var bge = MakeBattleground(battleground.name, effect);
+                if (player === 'player') bge.self_only = true
+                if (player === 'cpu') bge.enemy_only = true
+                battlegrounds.onTurn.push(bge);
+            } else if (effect_type === "evolve_skill" || effect_type === "add_skill") {
+                var bge = MakeSkillModifier(battleground.name, effect);
+                if (player === 'player') bge.self_only = true
+                if (player === 'cpu') bge.enemy_only = true
+                battlegrounds.onCreate.push(bge);
+            }
+        }
+    }
 }
 
 var MakeBattleground = (function () {

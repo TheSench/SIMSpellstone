@@ -39,6 +39,8 @@ var SIM_CONTROLLER = (function () {
         }
         if (BATTLEGROUNDS) {
             getbattleground = getSelectedBattlegrounds();
+            selfbges = getSelectedBattlegrounds("self-");
+            enemybges = getSelectedBattlegrounds("enemy-");
         }
     }
 

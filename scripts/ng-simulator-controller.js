@@ -171,6 +171,16 @@
             return selectable;
         }
 
+        $scope.personalBattlegrounds = function () {
+            var selectable = [];
+            for (var id in $scope.battlegrounds) {
+                var BGE = $scope.battlegrounds[id];
+                if (Number(BGE.id) > 1000) selectable.push(BGE);
+            }
+            selectable.sort(function (a, b) { return a.id - b.id; });
+            return selectable;
+        }
+
         $scope.towerTypes = function () {
             var towerTypes = [];
             for (var id in $scope.battlegrounds) {
