@@ -125,7 +125,7 @@ var SIMULATOR = {};
             dualStrike = false;
         }
         if (debug && dualStrike) {
-            // Let main attack loop deal with resetting timer
+            // var main attack loop deal with resetting timer
             echo += debug_name(source_card) + ' activates dualstrike<br>';
         }
 

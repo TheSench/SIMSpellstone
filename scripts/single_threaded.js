@@ -88,12 +88,12 @@
                     showWinrate();
                 }
                 run_sims_batch = 1;
-                if (simpersecbatch > run_sims_batch) // If we can run more at one time, then let's try to
+                if (simpersecbatch > run_sims_batch) // If we can run more at one time, then var's try to
                     run_sims_batch = Math.ceil(simpersecbatch / 8);
                 if (run_sims_batch > sims_left) // Also limit by how many sims are left
                     run_sims_batch = sims_left;
 
-                // Batch messes up mass debug and loss debug! Let's disable batch!
+                // Batch messes up mass debug and loss debug! var's disable batch!
                 if (debug && mass_debug) run_sims_batch = 1;
                 if (debug && (loss_debug || win_debug)) run_sims_batch = 1;
 

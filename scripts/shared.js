@@ -690,15 +690,15 @@ var makeUnit = (function () {
 
     function addRunesToSkills(skills, runes) {
         if (!runes) return;
-        for (let i = 0, len = runes.length; i < len; i++) {
-            let runeID = runes[i].id;
-            let statBoost = RUNES[runeID].stat_boost;
+        for (var i = 0, len = runes.length; i < len; i++) {
+            var runeID = runes[i].id;
+            var statBoost = RUNES[runeID].stat_boost;
             for (var key in statBoost) {
-                let boost = statBoost[key];
+                var boost = statBoost[key];
                 if (key == "skill") {
-                    let skillID = boost.id;
-                    for (let s = 0; s < skills.length; s++) {
-                        let skill = skills[s];
+                    var skillID = boost.id;
+                    for (var s = 0; s < skills.length; s++) {
+                        var skill = skills[s];
                         if (skill.id == skillID && (skill.all || 0) == (boost.all || 0)) {
                             skill = copy_skill(skill);
                             if (boost.x) skill.x += parseInt(boost.x)
