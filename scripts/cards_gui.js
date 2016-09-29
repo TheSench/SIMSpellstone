@@ -586,6 +586,7 @@ var CARD_GUI = {};
         2000: "Reward",
         3000: "Premium",
         4000: "BoxOnly",
+        5000: "Level_5_7",
         9999: "StoryElements"
     }
 
