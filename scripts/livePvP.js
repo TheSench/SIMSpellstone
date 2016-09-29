@@ -8,6 +8,8 @@ $(document).ready(function () {
         // own.
         key: '12gvgzijkheka9k9',
 
+        debug: 3,
+
         // Set a logging function:
         logFunction: function () {
             var copy = Array.prototype.slice.call(arguments).join(' ');
@@ -17,6 +19,8 @@ $(document).ready(function () {
     var connectedPeer = null;
     var ready = false;
     var origSurge = false;
+
+    $("#debug").prop("checked", true);
 
     // Show this peer's ID.
     peer.on('open', function (id) {
@@ -193,7 +197,9 @@ $(document).ready(function () {
     // Connect to a peer
     $('#btn_simulate').off("click").on("click", setReady);
 
-    $("#enemyPeerID").on("change", function () {
+    $("#enemyPeerID").on("change", setStartButton).on("keyup", setStartButton.debounce(50));
+
+    function setStartButton() {
         var peerID = $("#enemyPeerID").val();
         if (peerID) {
             $('#btn_simulate').off("click")
@@ -204,7 +210,7 @@ $(document).ready(function () {
                 .on("click", setReady)
                 .val("Ready!");
         }
-    });
+    }
 
     function setReady() {
         hideUI();

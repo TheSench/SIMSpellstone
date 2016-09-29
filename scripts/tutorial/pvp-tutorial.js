@@ -2,10 +2,15 @@
     var tutorialParts = [
        {
            msg: "Welcome to SIM Spellstone!  This is a brief tutorial of how to use the Live PvP functions.",
+           actions: [showSetup, clearID]
        },
        {
-           ui: "#attacker-container",
-           msg: 'First, set up your deck.',
+           ui: "#attacker-hash-container",
+           msg: 'First, set up your deck.'
+       },
+       {
+           ui: "#self-battleground",
+           msg: 'Then add any personal BGEs (totems) you want to use.',
            actions: [showSetup]
        },
        {
@@ -49,12 +54,12 @@
        },
        {
            msg: "When you configured have the desired match settings, it is time to start the match.",
-           actions: [showSetup]
+           actions: [clearID, showSetup]
        },
        {
            ui: "#enemyPeerID",
            msg: 'Paste your opponent\'s ID into the ID field.',
-           actions: [hideSetup]
+           actions: [setID, hideSetup]
        },
        {
            ui: "#btn_simulate",
@@ -84,6 +89,16 @@
 
     function hideSetup() {
         $("#setup-container").accordion('option', 'active', null);
+    }
+
+    function clearID() {
+        $("#enemyPeerID").val("").change();
+    }
+
+    function setID() {
+        var peerID = $("#myPeerID").val();
+        peerID = peerID.split("").reverse().join("");
+        $("#enemyPeerID").val(peerID).change();
     }
 
     return tutorialParts;
