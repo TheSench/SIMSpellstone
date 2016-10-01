@@ -3252,7 +3252,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>A Difference of Opinion</name>
-    <icon id="iron_nugget100" bundle="58" />
+    <icon id="will_o_wisp100" bundle="58" />
     <location_id>105</location_id>
     <x>417</x>
     <y>200</y>
@@ -3281,7 +3281,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>Influence of The Void</name>
-    <icon id="iron_nugget100" bundle="58" />
+    <icon id="will_o_wisp100" bundle="58" />
     <location_id>105</location_id>
     <x>708</x>
     <y>309</y>
@@ -3309,7 +3309,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>Redemption</name>
-    <icon id="iron_nugget100" bundle="58" />
+    <icon id="will_o_wisp100" bundle="58" />
     <location_id>105</location_id>
     <x>479</x>
     <y>406</y>

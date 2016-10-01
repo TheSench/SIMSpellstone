@@ -65,17 +65,16 @@ $(function () {
     var button = document.getElementById("generate_link");
     if (button) button.onclick = display_generated_link;
 
-    var button = document.getElementById("btn_simulate");
-    if (button) button.onclick = SIM_CONTROLLER.startsim;
+    $("#btn_simulate").on("click", SIM_CONTROLLER.startsim);
+    $("#btnStop").on("click", SIM_CONTROLLER.stopsim);
 
-    var button = document.getElementById("display_history");
-    if (button) button.onclick = display_history;
+    $("#display_history").on("click", display_history);
 
     $('#deck1').val(_GET('deck1')).change();
     $('#deck2').val(_GET('deck2')).change();
 
-    $('#surge').attr("checked", _DEFINED("surge"));
-    $('#siege').attr("checked", _DEFINED("siege"));
+    $('#surge').prop("checked", _DEFINED("surge"));
+    $('#siege').prop("checked", _DEFINED("siege"));
     var tower_level = Math.min(Math.max(_GET('tower_level') || 18, 0), 18);
     $('#tower_level').val(tower_level);
 
@@ -87,14 +86,15 @@ $(function () {
     }
     $("#tower_type").val(tower_type);
 
-    $('#auto_mode').attr("checked", _DEFINED("auto_mode"));
-    $('#ordered').attr("checked", _DEFINED("ordered"));
-    $('#exactorder').attr("checked", _DEFINED("exactorder"));
+    $('#auto_mode').prop("checked", _DEFINED("auto_mode"));
+    $('#tournament').prop("checked", _DEFINED("tournament"));
+    $('#ordered').prop("checked", _DEFINED("ordered"));
+    $('#exactorder').prop("checked", _DEFINED("exactorder"));
 
-    $('#ordered2').attr("checked", _DEFINED("ordered2"));
-    $('#exactorder2').attr("checked", _DEFINED("exactorder2"));
+    $('#ordered2').prop("checked", _DEFINED("ordered2"));
+    $('#exactorder2').prop("checked", _DEFINED("exactorder2"));
     if (_DEFINED("randomAI")) {
-        smartAI = false;
+        pvpAI = false;
     }
 
     var campaignID = _GET('campaign');
@@ -102,7 +102,10 @@ $(function () {
     var raidID = _GET('raid');
     if (campaignID) $('#campaign').val(campaignID).change();
     if (missionID) $('#mission').val(missionID).change();
-    if (raidID) $('#raid').val(raidID).change();
+    if (raidID) {
+        $('#raid').val(raidID).change();
+        $('#raid_level').val(_GET('raid_level') || 25);
+    }
 
     var bges = _GET('bges');
     if (bges) {
@@ -119,13 +122,29 @@ $(function () {
             bgCheckBoxes[current_bges[i]].checked = true;
         }
     }
+    var bges = _GET('selfbges');
+    if (bges) {
+        // Each BGE is a 2-character ID in Base64
+        for (var i = 0; i < bges.length; i += 2) {
+            var bge = base64_to_decimal(bges.substring(i, i + 2)) + 10000;
+            $("#self-battleground_" + bge).prop('checked', true);
+        }
+    }
+    var bges = _GET('enemybges');
+    if (bges) {
+        // Each BGE is a 2-character ID in Base64
+        for (var i = 0; i < bges.length; i += 2) {
+            var bge = base64_to_decimal(bges.substring(i, i + 2)) + 10000;
+            $("#enemy-battleground_" + bge).prop('checked', true);
+        }
+    }
 
     $('#sims').val(_GET('sims') || 10000);
 
-    $('#debug').attr("checked", _DEFINED("debug"));
-    $('#mass_debug').attr("checked", _DEFINED("mass_debug"));
-    $('#loss_debug').attr("checked", _DEFINED("loss_debug"));
-    $('#win_debug').attr("checked", _DEFINED("win_debug"));
+    $('#debug').prop("checked", _DEFINED("debug"));
+    $('#mass_debug').prop("checked", _DEFINED("mass_debug"));
+    $('#loss_debug').prop("checked", _DEFINED("loss_debug"));
+    $('#win_debug').prop("checked", _DEFINED("win_debug"));
     
     document.title = "SimSpellstone " + text_version + " - The Spellstone Simulator that runs from your browser!";
 
@@ -219,9 +238,10 @@ function hideUI() {
     document.getElementById('stop').style.display = 'block';
 }
 
-function getSelectedBattlegrounds() {
+function getSelectedBattlegrounds(prefix) {
+    prefix = (prefix || "");
     var getbattleground = [];
-    var bgCheckBoxes = document.getElementsByName("battleground");
+    var bgCheckBoxes = document.getElementsByName(prefix + "battleground");
     for (var i = 0; i < bgCheckBoxes.length; i++) {
         var checkbox = bgCheckBoxes[i];
         if (checkbox && checkbox.checked) {
@@ -235,6 +255,41 @@ function getSelectedBattlegrounds() {
 // Modify HTML to output simulation results
 function outp(text) {
     $("#content").html(text);
+}
+
+function outputTurns(turnData) {
+    if (closeDiv) {
+        turnData += "</div>";
+        closeDiv = false;
+    }
+    turnData = "<input id='show-turns' type='button' value='Show All' /> <div id='turn-container'>Turn: <select id='turn-picker'></select></div> <div>" + turnData + "</div>";
+    outp(turnData);
+    var numTurns = $(".turn-info").hide().length;
+    var options = [];
+    for (var i = 0; i < numTurns; i++) {
+        var turn = i + 1;
+        options.push("<option value='" + i + "'>" + turn + "</option>");
+    }
+    var lastTurn = i - 1;
+    if (lastTurn && closeDiv) lastTurn--;
+    $("#turn-picker").append(options).change(function (event) {
+        var turn = event.target.selectedIndex;
+        $(".turn-info").hide().eq(turn).show();
+    }).val(lastTurn).change();
+    var hidden = true;
+    $("#show-turns").click(function () {
+        hidden = !hidden;
+        if (hidden) {
+            var turn = $("#turn-picker").val();
+            $(".turn-info").hide().eq(turn).show();
+            $("#turn-container").show();
+            this.value = "Show All";
+        } else {
+            $(".turn-info").show();
+            $("#turn-container").hide();
+            this.value = "Show One";
+        }
+    });
 }
 
 // Return table of simulation results
@@ -380,6 +435,7 @@ function generate_link(autostart) {
     addValueParam(parameters, "campaign");
     addValueParam(parameters, "mission");
     addValueParam(parameters, "raid");
+    addValueParam(parameters, "raid_level");
 
     addBoolParam(parameters, "surge");
 
@@ -389,6 +445,7 @@ function generate_link(autostart) {
     }
 
     addBoolParam(parameters, "auto_mode");
+    addBoolParam(parameters, "tournament");
     addBoolParam(parameters, "ordered");
     addBoolParam(parameters, "exactorder");
     addBoolParam(parameters, "exactorder");
@@ -401,6 +458,22 @@ function generate_link(autostart) {
         if (d.checked) bges += decimal_to_base64(d.value, 2);
     }
     parameters.push('bges=' + bges);
+
+    var bges = '';
+    var bgCheckBoxes = document.getElementsByName("self-battleground");
+    for (var i = 0; i < bgCheckBoxes.length; i++) {
+        d = bgCheckBoxes[i];
+        if (d.checked) bges += decimal_to_base64(d.value - 10000, 2);
+    }
+    parameters.push('selfbges=' + bges);
+
+    var bges = '';
+    var bgCheckBoxes = document.getElementsByName("enemy-battleground");
+    for (var i = 0; i < bgCheckBoxes.length; i++) {
+        d = bgCheckBoxes[i];
+        if (d.checked) bges += decimal_to_base64(d.value - 10000, 2);
+    }
+    parameters.push('enemybges=' + bges);
     
 
     addValueParam(parameters, "sims");
@@ -622,12 +695,15 @@ var getexactorder2 = false;
 var getmission = false;
 var getraid = false;
 var raidlevel = 0;
-var getbattleground = 0;
+var getbattleground = '';
+var enemybges = '';
+var selfbges = '';
 var getsiege = 0;
 var tower_level = 0;
 var tower_type = 0;
-var smartAI = true;
+var pvpAI = true;
 var echo = '';
+var closeDiv = false;
 var wins = 0;
 var losses = 0;
 var draws = 0;
@@ -649,6 +725,7 @@ var cache_player_deck_cards;
 var cache_cpu_deck_cards;
 var choice = undefined;
 var auto_mode = false;
+var tournament = false;
 var suppressOutput = false;
 var orders = {};
 var cardStats = {};

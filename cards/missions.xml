@@ -4804,7 +4804,7 @@
     <player_commander>7</player_commander>
     <!--  <commander_req>7</commander_req> -->
     <energy>8</energy>
-    <desc>Elyse sets her books aside. She closely watches the Elementals as they intermingle. One by one she correctly guesses how the results of their entanglement. (Elyse will automatically be appointed)</desc>
+    <desc>Elyse sets her books aside. She closely watches the Elementals as they mingle. One by one, Elyse guesses the origin of each elemental. (Elyse will automatically be appointed)</desc>
     <commander id="226" />
     <!-- Lost Lava Crab-->
     <deck>

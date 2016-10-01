@@ -170,10 +170,30 @@
                             </div>
                             <div id="bge-container">
                                 <h6>Battleground Effects</h6>
-                                <div style="position: relative; width: 200px; height: 213px; overflow-y: scroll;">
+                                <div style="position: relative; width: 200px; height: 103px; overflow-y: scroll;">
                                     <div id="battleground" style="position: absolute; width: 100%;">
                                         <input ng-repeat-start="BGE in selectableBattlegrounds()" type="checkbox" name="battleground" id="battleground_{{BGE.id}}" value="{{BGE.id}}">
                                         <label for="battleground_{{BGE.id}}">{{BGE.name}}</label>
+                                        <br ng-repeat-end />
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="attacker-bges">
+                                <h6>Personal Battlegrounds</h6>
+                                <div style="position: relative; width: 200px; height: 40px; overflow-y: scroll;">
+                                    <div id="self-battleground" style="position: absolute; width: 100%;">
+                                        <input ng-repeat-start="BGE in personalBattlegrounds()" type="checkbox" name="self-battleground" id="self-battleground_{{BGE.id}}" value="{{BGE.id}}">
+                                        <label for="self-battleground_{{BGE.id}}">{{BGE.name}}</label>
+                                        <br ng-repeat-end />
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="defender-bges">
+                                <h6>Enemy Battlegrounds</h6>
+                                <div style="position: relative; width: 200px; height: 40px; overflow-y: scroll;">
+                                    <div id="enemy-battleground" style="position: absolute; width: 100%;">
+                                        <input ng-repeat-start="BGE in personalBattlegrounds()" type="checkbox" name="enemy-battleground" id="enemy-battleground_{{BGE.id}}" value="{{BGE.id}}">
+                                        <label for="enemy-battleground_{{BGE.id}}">{{BGE.name}}</label>
                                         <br ng-repeat-end />
                                     </div>
                                 </div>
@@ -231,7 +251,7 @@
     <br />
     <div id="cardSpace" class="flaot-left"></div>
     <br />
-    <span id="stop" style="display: none;"><input type="button" value="Stop Sim(s)" onclick="SIM_CONTROLLER.stopsim()"><br />TIP: Switching browser tabs may cause your simulation to pause!</span>
+    <span id="stop" style="display: none;"><input id="btnStop" type="button" value="Stop Sim(s)" onclick="SIM_CONTROLLER.stopsim()"><br />TIP: Switching browser tabs may cause your simulation to pause!</span>
     <br />
     <div id="simulationStatus" style="display:none">
         <strong id="simStatusMsg"></strong> <span id="progress"></span>

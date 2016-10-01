@@ -32,7 +32,7 @@ var SIMULATOR = {};
             var current_assault = units[key];
             // Starting at the first dead unit, start shifting.
             if (!current_assault.isAlive()) {
-                if (debug) echo += debug_name(current_assault) + ' is removed from field<br>';
+                if (debug) echo += debug_name(current_assault) + ' <strong>is removed from field</strong><br>';
                 if (current_assault.owner == 'player') damage_taken += current_assault.health;
                 else damage_dealt += current_assault.health;
                 var newkey = key;	// Store the new key value for the next alive unit
@@ -40,7 +40,7 @@ var SIMULATOR = {};
                     current_assault = units[key];
                     // If this unit is dead, don't update newkey, we still need to fill that slot
                     if (!current_assault.isAlive()) {
-                        if (debug) echo += debug_name(current_assault) + ' is removed from field<br>';
+                        if (debug) echo += debug_name(current_assault) + ' <strong>is removed from field</strong><br>';
                         if (current_assault.owner == 'player') damage_taken += current_assault.health;
                         else damage_dealt += current_assault.health;
                     }
@@ -125,7 +125,7 @@ var SIMULATOR = {};
             dualStrike = false;
         }
         if (debug && dualStrike) {
-            // Let main attack loop deal with resetting timer
+            // var main attack loop deal with resetting timer
             echo += debug_name(source_card) + ' activates dualstrike<br>';
         }
 
@@ -979,6 +979,7 @@ var SIMULATOR = {};
                 deck: []
             }
         }
+
         SIMULATOR.deck = deck;
 
         // Set up empty field
@@ -998,6 +999,10 @@ var SIMULATOR = {};
         }
 
         // Load enemy deck
+        if (getraid) {
+            cache_cpu_deck = load_deck_raid(getraid, raidlevel);
+            cache_cpu_deck_cards = getDeckCards(cache_cpu_deck);
+        }
         if (cache_cpu_deck_cards) {
             deck['cpu'] = copy_deck(cache_cpu_deck_cards);
         }
@@ -1005,6 +1010,16 @@ var SIMULATOR = {};
         // Set up deck order priority reference
         if (getordered && !getexactorder) deck.player.ordered = copy_card_list(deck.player.deck);
         if (getordered2 && !getexactorder2) deck.cpu.ordered = copy_card_list(deck.cpu.deck);
+
+        deck.player.chooseCard = (user_controlled ? chooseCardUserManually  // User_controlled mode has the player choose a card manually
+                                 : getordered ? chooseCardOrdered           // Ordered mode tries to pick the card closest to the specified ordering
+                                 : chooseCardRandomly);                     // Player AI falls back on picking a random card
+
+        deck.cpu.chooseCard =   (/*livePvP ? waitForOpponent                  // If this is "Live PvP" - wait for opponent to choose a card
+                                : */getordered2 ? chooseCardOrdered           // Ordered mode tries to pick the card closest to the specified ordering
+                                : pvpAI ? chooseCardByPoints                // PvP defenders have a special algorithm for determining which card to play
+                                : getexactorder2 ? chooseCardRandomly       // If deck is not shuffled, but we're not playing "ordered mode", pick a random card from hand
+                                : chooseFirstCard);                         // If none of the other options are true, this is the standard PvE AI and it just picks the first card in hand
     }
 
     // Simulate one game
@@ -1040,7 +1055,7 @@ var SIMULATOR = {};
             if (tower) {
                 tower = makeUnitInfo(tower.id, tower.level);
                 var towerCard = get_card_apply_battlegrounds(tower);
-                play_card(towerCard, (surge ? 'player' : 'cpu'), true);
+                play_card(towerCard, 'cpu', true);
             }
         }
 
@@ -1060,18 +1075,18 @@ var SIMULATOR = {};
         cache_player_deck_cards = getDeckCards(cache_player_deck);
 
         // Load enemy deck
-        smartAI = true;
+        pvpAI = true;
         if (getdeck2) {
             cache_cpu_deck = hash_decode(getdeck2);
-            if (getmission) smartAI = false;
+            if (getmission) pvpAI = false;
         } else if (getcardlist2) {
             cache_cpu_deck = load_deck_from_cardlist(getcardlist2);
         } else if (getmission) {
             cache_cpu_deck = load_deck_mission(getmission);
-            smartAI = false;    // PvE decks do not use "Smart AI"
+            pvpAI = false;    // PvE decks do not use "Smart AI"
         } else if (getraid) {
             cache_cpu_deck = load_deck_raid(getraid, raidlevel);
-            smartAI = false;    // PvE decks do not use "Smart AI"
+            pvpAI = false;    // PvE decks do not use "Smart AI"
         } else {
             cache_cpu_deck = load_deck_from_cardlist();
         }
@@ -1096,15 +1111,21 @@ var SIMULATOR = {};
         if (!field_cpu_commander.reusableSkills) field_cpu_commander.resetTimers();
     }
 
-    function performTurns(turn) {
-        var done = performTurnsInner(turn);
+    SIMULATOR.pause = false;
+    function performTurns(turn, drawCards) {
+        if (SIMULATOR.pause) {
+            SIMULATOR.pause = false;
+            return false;
+        }
+        var done = performTurnsInner(turn, drawCards);
         if (done && user_controlled) {
             SIM_CONTROLLER.debug_end();
         }
         return done;
     }
+    SIMULATOR.performTurns = performTurns;
 
-    function performTurnsInner(turn) {
+    function performTurnsInner(turn, drawCards) {
         // Set up players
         var first_player, second_player;
         if (surge) {
@@ -1116,8 +1137,14 @@ var SIMULATOR = {};
         }
 
         if (turn > 0) {
+            if (livePvP) {
+                if (!field.player.commander.isAlive() || !field.cpu.commander.isAlive()) {
+                    simulating = false;
+                    return true;
+                }
+            }
             // Retry this turn - don't bother doing setup all over again
-            if (!performTurn(turn, field, first_player, second_player, false)) {
+            if (!performTurn(turn, field, first_player, second_player, drawCards)) {
                 // Try this turn again
                 return false;
             }
@@ -1125,6 +1152,8 @@ var SIMULATOR = {};
                 simulating = false;
                 return true;
             }
+        } else if (!surge && SIMULATOR.sendBattleUpdate) {
+            SIMULATOR.sendBattleUpdate(turn);
         }
 
         turn++;
@@ -1143,6 +1172,7 @@ var SIMULATOR = {};
                 return false;
             } else if (!field.player.commander.isAlive() || !field.cpu.commander.isAlive()) {
                 simulating = false;
+                if (debug) echo += '<u>Turn ' + turn + ' ends</u><br><br></div>';
                 return true;
             }
         }
@@ -1150,7 +1180,7 @@ var SIMULATOR = {};
         return true;
     }
 
-    function performTurn(turn, field, first_player, second_player, redraw) {
+    function performTurn(turn, field, first_player, second_player, drawCards) {
         if (turn % 2) {
             var p = first_player;
             var o = second_player;
@@ -1159,10 +1189,11 @@ var SIMULATOR = {};
             var o = first_player;
         }
 
-        if (!choose_card(p, turn, redraw)) {
+        closeDiv = false;
+        if (!choose_card(p, turn, drawCards)) {
             return false;
         } else {
-            play_turn(p, o, field);
+            play_turn(p, o, field, turn);
             return true;
         }
     }
@@ -1170,7 +1201,7 @@ var SIMULATOR = {};
     function setup_turn(turn, first_player, second_player, field) {
         simulation_turns = turn;
 
-        if (user_controlled) choice = (auto_mode ? 0 : undefined);
+        choice = undefined;
 
         if (turn % 2) {
             var p = first_player;
@@ -1180,7 +1211,7 @@ var SIMULATOR = {};
             var o = first_player;
         }
 
-        if (debug) echo += '<u>Turn ' + turn + ' begins for ' + debug_name(field[p]['commander']) + '</u><br>';
+        if (debug) echo += '<div id="turn_"' + turn + ' class="turn-info"><hr/><br/><u>Turn ' + turn + ' begins for ' + debug_name(field[p]['commander']) + '</u><br>';
 
         var field_p_assaults = field[p]['assaults'];
         var field_o_assaults = field[o]['assaults'];
@@ -1190,21 +1221,23 @@ var SIMULATOR = {};
             var current_assault = field_p_assaults[i];
 
             if (current_assault.timer > 0) {
-                current_assault.timer--;
-                if (debug) echo += debug_name(current_assault) + ' reduces its timer<br>';
+                if (turn !== 3 || !tournament) {
+                    current_assault.timer--;
+                    if (debug) echo += debug_name(current_assault) + ' reduces its timer<br>';
 
-                // Check valor
-                if (current_assault.valor && current_assault.isActive()) {
-                    var enemy = field_o_assaults[i];
-                    if (enemy && current_assault.adjustedAttack() < enemy.adjustedAttack()) {
-                        current_assault.attack_valor = current_assault.valor;
-                        if (debug) echo += debug_name(current_assault) + ' activates valor, boosting its attack by ' + current_assault.valor + '<br/>';
-                    } else if (debug) {
-                        echo += debug_name(current_assault) + ' activates valor but ';
-                        if (!enemy) {
-                            echo += 'there is no opposing enemy.<br/>'
-                        } else {
-                            echo += 'enemy is not strong enough.<br/>'
+                    // Check valor
+                    if (current_assault.valor && current_assault.isActive()) {
+                        var enemy = field_o_assaults[i];
+                        if (enemy && current_assault.adjustedAttack() < enemy.adjustedAttack()) {
+                            current_assault.attack_valor = current_assault.valor;
+                            if (debug) echo += debug_name(current_assault) + ' activates valor, boosting its attack by ' + current_assault.valor + '<br/>';
+                        } else if (debug) {
+                            echo += debug_name(current_assault) + ' activates valor but ';
+                            if (!enemy) {
+                                echo += 'there is no opposing enemy.<br/>'
+                            } else {
+                                echo += 'enemy is not strong enough.<br/>'
+                            }
                         }
                     }
                 }
@@ -1218,47 +1251,30 @@ var SIMULATOR = {};
         }
     }
 
-    function choose_card(p, turn, redraw) {
+    function choose_card(p, turn, drawCards) {
 
         var deck_p = deck[p];
         var deck_p_deck = deck_p.deck;
         var deck_p_ordered = deck_p['ordered'];
         var isOrdered = (p == 'player' ? getordered : getordered2);
-        
-        // Deck not empty yet
-        if (deck_p_deck[0]) {
 
+        if (livePvP && p === 'cpu' && drawCards) {
+            waitForOpponent(p, deck_p_deck, deck_p_ordered, turn, drawCards);
+            return false;
+        } else if (deck_p_deck[0]) {
+            // Deck not empty yet
+            SIMULATOR.waiting = false;
             var card_picked = 0;
 
             if (deck_p_deck.length == 1) {
-                // Play first card in hand
-                card_picked = 0;
-                play_card(deck_p_deck[card_picked], p);
-            } else if (user_controlled && p == 'player') {
-                card_picked = chooseCardUserManually(p, deck_p_deck, deck_p_ordered, turn, redraw);
-            } else if (isOrdered) {
-                // If deck isn't shuffled, just play the first card
-                if (typeof deck_p_ordered === "undefined") {
-                    card_picked = 0;
-                    play_card(deck_p_deck[card_picked], p);
-                } else {
-                    card_picked = chooseCardOrdered(p, deck_p_deck, deck_p_ordered, turn, redraw);
-                }
+                card_picked = chooseFirstCard(p, deck_p_deck, deck_p_ordered, turn, drawCards);
             } else {
-                // Play random card in hand
-                var hand = deck_p_deck.slice(0, 3);
-                if (p == 'player') {
-                    card_picked = chooseCardRandomly(p, deck_p_deck, deck_p_ordered, turn, redraw);
-                } else if (smartAI) {
-                    card_picked = chooseCardByPoints(p, deck_p_deck, deck_p_ordered, turn, redraw);
-                } else {
-                    // AI picks first card
-                    card_picked = 0;
-                    play_card(deck_p_deck[card_picked], p);
-                }
+                card_picked = deck_p.chooseCard(p, deck_p_deck, deck_p_ordered, turn, drawCards);
             }
 
             if (card_picked < 0) return false;
+
+            play_card(deck_p_deck[card_picked], p);
 
             // Remove from deck
             var key = card_picked;
@@ -1271,9 +1287,26 @@ var SIMULATOR = {};
         return true;
     };
 
-    function chooseCardUserManually(p, shuffledDeck, orderedDeck, turn, redraw) {
+    function waitForOpponent(p, shuffledDeck, orderedDeck, turn, drawCards) {
+
+        SIMULATOR.waiting = true;
+        closeDiv = true;
+
+        if (drawCards) {
+            hideTable();
+            outputTurns(echo);
+            CARD_GUI.draw_cards(field, null, performTurns, turn);
+            SIMULATOR.sendBattleUpdate(turn);
+        }
+
+        return -1;
+    }
+    SIMULATOR.waitForOpponent = waitForOpponent;
+
+    function chooseCardUserManually(p, shuffledDeck, orderedDeck, turn, drawCards) {
         // Prepare 3-card hand
         var hand = shuffledDeck.slice(0, 3);
+        closeDiv = true;
         var cardsInHand = [];
         var drawableHand = [];
         for (var handIdx = 0, hand_len = hand.length; handIdx < hand_len; handIdx++) {
@@ -1283,22 +1316,27 @@ var SIMULATOR = {};
             cardsInHand.push(text);
             drawableHand.push(card);
         }
-        if (redraw) {
+        if (drawCards) {
             hideTable();
-            outp(echo);
+            outputTurns(echo);
             CARD_GUI.draw_cards(field, drawableHand, performTurns, turn);
         }
         if (choice === undefined) {
             return -1;
+            
         } else {
             var card_picked = choice;
             if (!card_picked) card_picked = 0;
-            play_card(shuffledDeck[card_picked], p);
             return card_picked;
         }
     }
 
-    function chooseCardOrdered(p, shuffledDeck, orderedDeck, turn, redraw) {
+    function chooseCardOrdered(p, shuffledDeck, orderedDeck, turn, drawCards) {
+        // If deck isn't shuffled, just play the first card
+        if (typeof orderedDeck === "undefined") {
+            return 0;
+        }
+
         // Prepare 3-card hand
         var hand = shuffledDeck.slice(0, 3);
 
@@ -1340,23 +1378,21 @@ var SIMULATOR = {};
                     orderedDeck[orderIdx] = orderedDeck[orderIdx + 1];
                 }
                 orderedDeck.length = orderIdx;
-                play_card(cardInHand, p);
                 return handIdx;
             }
         }
         return -1;
     }
 
-    function chooseCardRandomly(p, shuffledDeck, orderedDeck, turn, redraw) {
+    function chooseCardRandomly(p, shuffledDeck, orderedDeck, turn, drawCards) {
         // Prepare 3-card hand
         var hand = shuffledDeck.slice(0, 3);
 
         var card_picked = (~~(Math.random() * hand.length));
-        play_card(shuffledDeck[card_picked], p);
         return card_picked;
     }
 
-    function chooseCardByPoints(p, shuffledDeck, orderedDeck, turn, redraw) {
+    function chooseCardByPoints(p, shuffledDeck, orderedDeck, turn, drawCards) {
         // Prepare 3-card hand
         var hand = shuffledDeck.slice(0, 3);
 
@@ -1371,8 +1407,11 @@ var SIMULATOR = {};
                 card_picked = i;
             }
         }
-        play_card(shuffledDeck[card_picked], p);
         return card_picked;
+    }
+
+    function chooseFirstCard(p, shuffledDeck, orderedDeck, turn, drawCards) {
+        return 0;
     }
 
     function getCardRanking(card) {
@@ -1389,7 +1428,7 @@ var SIMULATOR = {};
         return ranking;
     }
 
-    function play_turn(p, o, field) {
+    function play_turn(p, o, field, turn) {
 
         var field_p = field[p];
         var field_p_commander = field_p['commander'];
@@ -1402,7 +1441,8 @@ var SIMULATOR = {};
         // Activate battleground effects
         for (var i = 0; i < battlegrounds.onTurn.length; i++) {
             var battleground = battlegrounds.onTurn[i];
-            if (battleground.enemy_only && p != 'cpu') continue;
+            if (battleground.enemy_only && p !== 'cpu') continue;
+            if (battleground.self_only && p !== 'player') continue;
             battleground.owner = p;
             doEmpower(battleground);
             activation_skills(battleground);
@@ -1511,7 +1551,7 @@ var SIMULATOR = {};
         }
 
         //debug_dump_field(field);
-        if (debug) echo += '<u>Turn ' + turn + ' ends</u><br><br><hr><br>';
+        if (debug) echo += '<u>Turn ' + turn + ' ends</u><br><br></div>';
     };
 
     function doCountDowns(unit) {
@@ -1776,7 +1816,6 @@ var SIMULATOR = {};
 
             // Counterburn
             // - Target must have received some amount of damage
-            // - Attacker must not be already dead
             if (target.counterburn) {
                 var scorch = target.counterburn || 0;
                 var enhanced = getEnhancement(target, 'counterburn');
@@ -1856,12 +1895,13 @@ var SIMULATOR = {};
         // -- END OF STATUS INFLICTION --
     };
 
-    var deck = [];
-    var field = [];
+    var deck = {};
+    var field = {};
     var battlegrounds;
     var simulation_turns = 0;
     var simulating = false;
     var user_controlled = false;
+    var livePvP = false;
     var turn = 0;
     var damage_taken = 0;
     var damage_dealt = 0;
@@ -1952,6 +1992,14 @@ var SIMULATOR = {};
             set: function (value) {
                 user_controlled = value;
             }
-        }
+        },
+        livePvP: {
+            get: function () {
+                return livePvP;
+            },
+            set: function (value) {
+                livePvP = value;
+            }
+        },
     });
 })();

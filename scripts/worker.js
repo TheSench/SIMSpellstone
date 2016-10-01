@@ -80,7 +80,7 @@ function initializeSims(params) {
     getsiege = params['getsiege'];
     tower_level = params['tower_level'];
     tower_type = params['tower_type'];
-    smartAI = params['smartAI'];
+    pvpAI = params['pvpAI'];
     surge = params['surge'];
     debug = params['debug'];
     loss_debug = params['loss_debug'];
@@ -313,7 +313,7 @@ var getbattleground = 0;
 var getsiege = 0;
 var tower_level = 0;
 var tower_type = 0;
-var smartAI = true;
+var pvpAI = true;
 var battleground = [];
 var cache_player_deck = 0;
 var cache_cpu_deck = 0;

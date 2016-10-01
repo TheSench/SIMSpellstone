@@ -104,6 +104,8 @@
             getdeck = original_hash;
         }   
 
+        // Set up battleground effects, if any
+        SIMULATOR.battlegrounds = getBattlegrounds(getbattleground, getraid);
         
         SIMULATOR.setupDecks();
 
@@ -128,6 +130,7 @@
         var elapse = time_elapsed();
         var simpersec = games / elapse;
         simpersec = simpersec.toFixed(2);
+        SIMULATOR.simulating = false;
 
         // Stop the recursion
         if (current_timeout) clearTimeout(current_timeout);
@@ -142,13 +145,13 @@
 
     function run_sims() {
 
-        if (debug && !mass_debug && !loss_debug && !win_debug) {
-            run_sim(true);
-            debug_end();
-        } else if (SIMULATOR.user_controlled) {
+        if (SIMULATOR.user_controlled) {
             if (run_sim(true)) {
-                debug_end();
+                SIM_CONTROLLER.debug_end();
             }
+        } else if (debug && !mass_debug && !loss_debug && !win_debug) {
+            run_sim(true);
+            SIM_CONTROLLER.debug_end();
         } else if (sims_left > 0) {
             // Interval output - speeds up simulations
             if (run_sims_count >= run_sims_batch) {
@@ -171,12 +174,12 @@
                     showWinrate();
                 }
                 run_sims_batch = 1;
-                if (simpersecbatch > run_sims_batch) // If we can run more at one time, then let's try to
+                if (simpersecbatch > run_sims_batch) // If we can run more at one time, then var's try to
                     run_sims_batch = Math.ceil(simpersecbatch / 8);
                 if (run_sims_batch > sims_left) // Also limit by how many sims are left
                     run_sims_batch = sims_left;
 
-                // Batch messes up mass debug and loss debug! Let's disable batch!
+                // Batch messes up mass debug and loss debug! var's disable batch!
                 if (debug && mass_debug) run_sims_batch = 1;
                 if (debug && (loss_debug || win_debug)) run_sims_batch = 1;
 

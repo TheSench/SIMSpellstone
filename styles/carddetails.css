@@ -62,15 +62,9 @@
 
 .card-details .card-art {
   max-height: 330px;
-  max-width: 100%;
+  width: 100%;
   position: absolute;
   bottom: 0;
-}
-
-.card-details .bottom-left {
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 
 .card-details .bottom-center {

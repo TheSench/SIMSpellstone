@@ -134,6 +134,8 @@ var initDeckBuilder = function ()
         $deck = $("#deck");
         toggleInventoryMode();
     }
+
+    $("#graph-accordion").click(updateGraphs);
 }
 
 var setupPopups = function ()
@@ -774,15 +776,15 @@ var addUnitToDeck = function (unit, htmlCard)
             $htmlCard.remove();
         }
     } else {
-        $htmlCard.hide().fadeIn(100);
+        $htmlCard.stop().hide().fadeIn(100);
     }
     updateHash();
 };
 
 function replaceCard(oldCard, newCard) {
+    var speed = (oldCard.hasClass("blank") ? 1000 : 600);
     $(oldCard).replaceWith(newCard);
-    var speed =  (oldCard.hasClass("blank") ? 1000 : 600);
-    newCard.children().hide().fadeIn(speed).promise();
+    newCard.children().stop().hide().fadeIn(speed).promise();
 }
 
 
@@ -895,7 +897,10 @@ var updateSimulator = function (deckHash)
 
 var updateGraphs = function ()
 {
-
+    var graphsContainer = $("#deckGraphs");
+    if (!graphsContainer.is(":visible")) {
+        return null;
+    }
     var delays = [0, 0, 0, 0, 0];
     var attackStats = [];
     var healthStats = [];
@@ -911,8 +916,13 @@ var updateGraphs = function ()
         attackStats.push(Number(card.attack));
         healthStats.push(Number(card.health));
         delayStats.push(Number(card.cost));
-        var sub_type = (card.sub_type || 0);
-        sub_types[sub_type] = (sub_types[sub_type] || 0) + 1;
+
+        var subFactions = card.sub_type;
+        if (!subFactions.length) subFactions.push(0);
+        for (var s = 0; s < subFactions.length; s++) {
+            var subFaction = subFactions[s];
+            sub_types[subFaction] = (sub_types[subFaction] || 0) + 1;
+        }
     }
     var numericSort = function (a, b) { return a - b };
     attackStats.sort(numericSort);
@@ -2065,7 +2075,7 @@ var isInSubfaction = function (unit, faction)
 {
     var factionID = factions.IDs[faction];
     var card = get_slim_card_by_id(unit, true);
-    return ((card.sub_type || 0) == factionID);
+    return (card.sub_type.indexOf(factionID.toString()) >= 0);
 }
 
 var isInRange = function (unit, field, min, max)

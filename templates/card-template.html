@@ -1,5 +1,5 @@
-<div class="card-details" tabindex="0" ng-keydown="keyPress($event)" ng-cloak>
-    <div id="cardArt" class="detail-panel">
+<div class="card-details {{getFaction(card.type)|lowercase}}" tabindex="0" ng-keydown="keyPress($event)" ng-cloak>
+    <div id="cardArt" class="detail-panel faction">
         <div class="art-holder ng-class:commanderClass();">
             <img class="card-art" ng-src="{{imageSrc}}" />
         </div>
@@ -8,10 +8,10 @@
     </div>
     <div id="cardStats" class="detail-panel card-stats">
         <span class="fs18">{{card.name}}</span>
-        <div class="{{getRarityString()|lowercase}} center vertically fs18">
+        <div id="rarity-string" class="{{getRarityString()|lowercase}} center vertically fs18" ng-style="fontSize()">
             <span ng-if="showRarity()">{{getRarityString()}}</span>
             <span>{{getFaction(card.type)}}</span>
-            <span ng-if="card.sub_type != 0">{{getFaction(card.sub_type)}}</span>
+            <span ng-repeat="subFactionID in card.sub_type">{{getFaction(subFactionID)}}</span>
         </div>
         <div class="center vertically horizontally">
             <div class="center vertically horizontally">

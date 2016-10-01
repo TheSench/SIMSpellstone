@@ -205,7 +205,7 @@ function cloneCard(original) {
     copy.rarity = original.rarity;
     copy.card_type = original.card_type;
     copy.type = original.type;
-    copy.sub_type = original.sub_type;
+    copy.sub_type = original.sub_type || [];
     copy.set = original.set;
     // Passives
     copy.armored = original.armored;
@@ -624,7 +624,7 @@ var makeUnit = (function () {
         isInFaction: function (faction) {
             if (faction === undefined) return 1;
             if (this.type == faction) return 1;
-            if (this.sub_type == faction) return 1;
+            if (this.sub_type.indexOf(faction.toString()) >= 0) return 1;
             return 0;
         },
 
@@ -653,7 +653,7 @@ var makeUnit = (function () {
         card.rarity = original_card.rarity;
         card.card_type = original_card.card_type;
         card.type = original_card.type;
-        card.sub_type = original_card.sub_type;
+        card.sub_type = original_card.sub_type || [];
         card.set = original_card.set;
         var original_skills = original_card.skill;
         if (card.level > 1) {
@@ -690,15 +690,15 @@ var makeUnit = (function () {
 
     function addRunesToSkills(skills, runes) {
         if (!runes) return;
-        for (let i = 0, len = runes.length; i < len; i++) {
-            let runeID = runes[i].id;
-            let statBoost = RUNES[runeID].stat_boost;
+        for (var i = 0, len = runes.length; i < len; i++) {
+            var runeID = runes[i].id;
+            var statBoost = RUNES[runeID].stat_boost;
             for (var key in statBoost) {
-                let boost = statBoost[key];
+                var boost = statBoost[key];
                 if (key == "skill") {
-                    let skillID = boost.id;
-                    for (let s = 0; s < skills.length; s++) {
-                        let skill = skills[s];
+                    var skillID = boost.id;
+                    for (var s = 0; s < skills.length; s++) {
+                        var skill = skills[s];
                         if (skill.id == skillID && (skill.all || 0) == (boost.all || 0)) {
                             skill = copy_skill(skill);
                             if (boost.x) skill.x += parseInt(boost.x)
@@ -846,43 +846,23 @@ var MakeSkillModifier = (function () {
     })
 }());
 
-var getBattlegrounds = function (getbattleground, getraid) {
+var getBattlegrounds = function (getbattleground, selfbges, enemybges, getraid) {
 
     // Set up battleground effects, if any
     var battlegrounds = {
         onCreate: [],
         onTurn: [],
     };
-    if (getbattleground) {
-        var selected = getbattleground.split(",");
-        for (i = 0; i < selected.length; i++) {
-            var id = selected[i];
-            var battleground = BATTLEGROUNDS[id];
-            for (var j = 0; j < battleground.effect.length; j++) {
-                var effect = battleground.effect[j];
-                var effect_type = effect.effect_type;
-                if (effect_type === "skill") {
-                    battlegrounds.onTurn.push(MakeBattleground(battleground.name, effect));
-                } else if (effect_type === "evolve_skill" || effect_type === "add_skill") {
-                    battlegrounds.onCreate.push(MakeSkillModifier(battleground.name, effect));
-                }
-            }
-        }
-    }
+
+    addBgesFromList(battlegrounds, getbattleground);
+    addBgesFromList(battlegrounds, selfbges, 'player');
+    addBgesFromList(battlegrounds, enemybges, 'cpu');
 
     if (getraid) {
         var bge_id = RAIDS[getraid].bge;
         if (bge_id) {
-            var battleground;
-            for (var i = 0; i < BATTLEGROUNDS.length; i++) {
-                var battleground = BATTLEGROUNDS[i];
-                if (battleground.id == bge_id) {
-                    break;
-                } else {
-                    battleground = null;
-                }
-            }
-            if (battleground && raidlevel >= battleground.starting_level) {
+            var battleground = BATTLEGROUNDS[bge_id];
+            if (battleground && Number(raidlevel) >= Number(battleground.starting_level)) {
                 var enemy_only = battleground.enemy_only;
 
                 for (var j = 0; j < battleground.effect.length; j++) {
@@ -907,6 +887,30 @@ var getBattlegrounds = function (getbattleground, getraid) {
         }
     }
     return battlegrounds;
+}
+
+function addBgesFromList(battlegrounds, getbattleground, player) {
+    if (!getbattleground) return null;
+    var selected = getbattleground.split(",");
+    for (var i = 0; i < selected.length; i++) {
+        var id = selected[i];
+        var battleground = BATTLEGROUNDS[id];
+        for (var j = 0; j < battleground.effect.length; j++) {
+            var effect = battleground.effect[j];
+            var effect_type = effect.effect_type;
+            if (effect_type === "skill") {
+                var bge = MakeBattleground(battleground.name, effect);
+                if (player === 'player') bge.self_only = true
+                if (player === 'cpu') bge.enemy_only = true
+                battlegrounds.onTurn.push(bge);
+            } else if (effect_type === "evolve_skill" || effect_type === "add_skill") {
+                var bge = MakeSkillModifier(battleground.name, effect);
+                if (player === 'player') bge.self_only = true
+                if (player === 'cpu') bge.enemy_only = true
+                battlegrounds.onCreate.push(bge);
+            }
+        }
+    }
 }
 
 var MakeBattleground = (function () {
@@ -1124,7 +1128,12 @@ function debug_dump_cards(deck, player) {
         // Echo card info
         echo += debug_name(current_card) + debug_skills(current_card);
         if (current_card.type) echo += ' <u>' + factions.names[current_card.type] + '</u>';
-        if (current_card.sub_type) echo += ' <u>' + factions.names[current_card.sub_type] + '</u>';
+        var subFactions = current_card.sub_type;
+        if (subFactions.length) {
+            for (var i = 0; i < subFactions.length; i++) {
+                echo += ' <u>' + factions.names[subFactions[i]] + '</u>';
+            }
+        }
         echo += '<br>';
     }
 }
@@ -1909,6 +1918,7 @@ function getPresetUnit(unitInfo, level, maxLevel) {
 function getRandomCard(unitInfo) {
     var possibilities = [];
     for (var id in CARDS) {
+        if (REVERSE_FUSIONS[id]) continue;
         var card = CARDS[id];
         if (card.card_type == '1') {
             continue;
@@ -1917,7 +1927,7 @@ function getRandomCard(unitInfo) {
             unitInfo.min_rarity && Number(unitInfo.min_rarity) > Number(card.rarity)) {
             continue;
         }
-        if (unitInfo.type && !(unitInfo.type == card.type || unitInfo.type == card.sub_type)) {
+        if (unitInfo.type && !(unitInfo.type == card.type || card.sub_type.indexOf(unitInfo.type.toString()) >= 0)) {
             continue;
         }
         if (unitInfo.set) {
@@ -1952,10 +1962,10 @@ function canFuse(cardID) {
         return false;
     } else if (is_commander(cardID)) {
         return false;
-    } else if (cardID.length > 4) {
-        return parseInt(cardID[0]) < 2;
+    } else if (FUSIONS[cardID]) {
+        return true;
     }
-    return true;
+    return false;
 }
 
 function fuseCard(cardID, fusion) {
@@ -2090,7 +2100,7 @@ function get_slim_card_by_id(unit, getDetails) {
         new_card.card_type = undefined;
         new_card.set = undefined;
         new_card.type = undefined;
-        new_card.sub_type = undefined;
+        new_card.sub_type = [];
         new_card.level = undefined;
         new_card.maxLevel = undefined;
         if (getSkills) new_card.skill = [];
@@ -2110,7 +2120,7 @@ function get_slim_card_by_id(unit, getDetails) {
             new_card.set = current_card.set;
             new_card.card_type = current_card.card_type;
             new_card.type = current_card.type;
-            new_card.sub_type = current_card.sub_type;
+            new_card.sub_type = current_card.sub_type || [];
             new_card.skill = current_card.skill;
             if (new_card.level > 1) {
                 for (var key in current_card.upgrades) {

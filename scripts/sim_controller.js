@@ -10,7 +10,11 @@ var SIM_CONTROLLER = (function () {
         loss_debug = $('#loss_debug').is(':checked');
         win_debug = $('#win_debug').is(':checked');
 
-        auto_mode = $('#auto_mode').is(':checked');
+        if ($('#auto_mode').length) {
+            auto_mode = $('#auto_mode').is(':checked');
+            SIMULATOR.user_controlled = !auto_mode;
+        }
+        tournament = $("#tournament").is(":checked");
         getdeck = $('#deck1').val();
         getordered = $('#ordered').is(':checked');
         getexactorder = $('#exactorder').is(':checked');
@@ -35,6 +39,8 @@ var SIM_CONTROLLER = (function () {
         }
         if (BATTLEGROUNDS) {
             getbattleground = getSelectedBattlegrounds();
+            selfbges = getSelectedBattlegrounds("self-");
+            enemybges = getSelectedBattlegrounds("enemy-");
         }
     }
 
@@ -56,11 +62,13 @@ var SIM_CONTROLLER = (function () {
             msg = '<br><h1>LOSS</h1><br>';
         }
         if (echo) {
-            outp(echo);
+            outputTurns(echo);
         }
         setSimStatus(msg);
 
         showUI();
+
+        if(SIMULATOR.sendBattleUpdate) SIMULATOR.sendBattleUpdate(SIMULATOR.simulation_turns);
 
         if (SIM_CONTROLLER.end_sims_callback) SIM_CONTROLLER.end_sims_callback();
     }
