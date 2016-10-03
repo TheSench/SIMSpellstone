@@ -3267,11 +3267,11 @@
     </missions>
     <rewards>
       <card level="1" id="510" />
-      <card level="2" id="5017" />
-      <card level="3" id="5017" />
-      <card level="4" id="2031" />
-      <card level="5" id="7017" />
-      <card level="6" id="7017" />
+      <card level="2" id="1319" />
+      <card level="3" id="1319" />
+      <card level="4" id="2025" />
+      <card level="5" id="1314" />
+      <card level="6" id="1314" />
       <card level="7" id="512" />
     </rewards>
     <find_item id="3044" drop_per_energy=".25" />
@@ -3295,11 +3295,11 @@
     </missions>
     <rewards>
       <card level="1" id="510" />
-      <card level="2" id="5017" />
-      <card level="3" id="5017" />
-      <card level="4" id="2031" />
-      <card level="5" id="7017" />
-      <card level="6" id="7017" />
+      <card level="2" id="1311" />
+      <card level="3" id="1311" />
+      <card level="4" id="2060" />
+      <card level="5" id="1315" />
+      <card level="6" id="1315" />
       <card level="7" id="512" />
     </rewards>
     <find_item id="3044" drop_per_energy=".25" />
@@ -3326,11 +3326,11 @@
     </missions>
     <rewards>
       <card level="1" id="510" />
-      <card level="2" id="5017" />
-      <card level="3" id="5017" />
-      <card level="4" id="2031" />
-      <card level="5" id="7017" />
-      <card level="6" id="7017" />
+      <card level="2" id="1315" />
+      <card level="3" id="1315" />
+      <card level="4" id="2024" />
+      <card level="5" id="1311" />
+      <card level="6" id="1311" />
       <card level="7" id="512" />
     </rewards>
     <find_item id="3044" drop_per_energy=".25" />
