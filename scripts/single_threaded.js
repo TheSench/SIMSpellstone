@@ -7,6 +7,7 @@
     var step = 0;
     var best = original_hash;
     var best_value = 0;
+    var originalValue = 0;
     var cardBest= {};
     var cardBestValue = {};
     var orderDeckMode = true;
@@ -84,6 +85,7 @@
                 var deckCardToReplace = step % deckLength;
                 var log = '<strong>Etape ' + step + '/' + (originalDeck.deck.length * inventaire.deck.length) + '</strong> == <strong>Best:</strong>' + best + ' (' + best_value + ')';
                 log += '<table>';
+                log += '<tr><td>Original</td><td>' + original_hash + '</td><td>' + originalValue + '</td></tr>';
                 for (var cardName in cardBest) {
                    log += '<tr><td>' + CARDS[cardName].name + '</td><td>' + cardBest[cardName] + '</td><td>' + cardBestValue[cardName] + '</td></tr>';
                }
@@ -213,11 +215,16 @@
                 best = getdeck;
             }
 
-            if (currentCardName && (!cardBestValue[currentCardName] || wins > cardBestValue[currentCardName])){
-                cardBestValue[currentCardName] = wins;
-                cardBest[currentCardName] = getdeck;
+            if (currentCardName) {
+                if (!cardBestValue[currentCardName] || wins > cardBestValue[currentCardName]){
+                    cardBestValue[currentCardName] = wins;
+                    cardBest[currentCardName] = getdeck;
+                }
             }
-
+            else{
+                originalValue = wins;
+            }
+            
             setTimeout(tryNewCard, 100);
         }
     }
