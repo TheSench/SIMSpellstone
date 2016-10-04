@@ -39,10 +39,12 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_health_legendary",
         "bundle": "34",
-        "desc": "Health +8",
+        "desc": "Health +50%, rounded up.",
         "usable": "0",
         "stat_boost": {
-            "health": "8"
+            "health": {
+                "mult": "0.5"
+            }
         },
         "category": 3
     },
@@ -381,12 +383,12 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_empower_legendary",
         "bundle": "34",
-        "desc": "Empower +3",
+        "desc": "Empower +50%, rounded up.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "rally",
-                "x": "3"
+                "mult": "0.5"
             }
         },
         "category": 3
