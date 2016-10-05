@@ -20893,6 +20893,136 @@
       <skill id="jam" c="4" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5085</id>
+    <card_type>2</card_type>
+    <name>Haunting Heir</name>
+    <picture>Kimono_Ghost_A</picture>
+    <asset_bundle>72</asset_bundle>
+    <hidden_until_time>1475773200</hidden_until_time>
+    <attack>3</attack>
+    <health>12</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="strike" x="1" />
+    <skill id="frost" x="1" />
+    <skill id="flurry" c="7" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="strike" x="1" />
+      <skill id="frost" x="1" />
+      <skill id="flurry" c="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="strike" x="1" />
+      <skill id="frost" x="1" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15085</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Vindictive Heir</name>
+    <picture>Kimono_Ghost_A</picture>
+    <asset_bundle>72</asset_bundle>
+    <hidden_until_time>1475773200</hidden_until_time>
+    <attack>3</attack>
+    <health>16</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="strike" x="1" />
+    <skill id="frost" x="1" />
+    <skill id="flurry" c="5" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+      <skill id="strike" x="1" />
+      <skill id="frost" x="1" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="strike" x="1" all="1" />
+      <skill id="frost" x="1" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>19</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25085</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Avenging Heir</name>
+    <picture>Kimono_Ghost_B</picture>
+    <asset_bundle>72</asset_bundle>
+    <hidden_until_time>1475773200</hidden_until_time>
+    <attack>4</attack>
+    <health>20</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="strike" x="1" all="1" />
+    <skill id="frost" x="1" />
+    <skill id="flurry" c="4" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="strike" x="1" all="1" />
+      <skill id="frost" x="1" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>23</health>
+      <skill id="strike" x="1" all="1" />
+      <skill id="frost" x="2" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+  </unit>
   <!-- Chaos Premium Begin -->
   <unit>
     <id>6000</id>
@@ -31068,6 +31198,140 @@
     </upgrade>
   </unit>
   <unit>
+    <id>6083</id>
+    <card_type>2</card_type>
+    <name>Lockejaw</name>
+    <picture>Iron_Jaw_Skeleton_A</picture>
+    <asset_bundle>72</asset_bundle>
+    <hidden_until_time>1475773200</hidden_until_time>
+    <attack>4</attack>
+    <health>13</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="2" />
+    <skill id="strike" x="2" />
+    <skill id="leech" x="3" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>14</health>
+      <skill id="counter" x="3" />
+      <skill id="strike" x="2" />
+      <skill id="leech" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>15</health>
+      <skill id="counter" x="3" />
+      <skill id="strike" x="3" />
+      <skill id="leech" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>16</health>
+      <skill id="counter" x="3" />
+      <skill id="strike" x="3" />
+      <skill id="leech" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>17</health>
+      <attack>5</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16083</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Lockejaw Snapper</name>
+    <picture>Iron_Jaw_Skeleton_A</picture>
+    <asset_bundle>72</asset_bundle>
+    <hidden_until_time>1475773200</hidden_until_time>
+    <attack>5</attack>
+    <health>18</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="4" />
+    <skill id="strike" x="3" />
+    <skill id="leech" x="4" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+      <skill id="counter" x="4" />
+      <skill id="strike" x="4" />
+      <skill id="leech" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>20</health>
+      <skill id="counter" x="4" />
+      <skill id="strike" x="4" />
+      <skill id="leech" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>21</health>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>22</health>
+      <skill id="counter" x="5" />
+      <skill id="strike" x="4" />
+      <skill id="leech" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26083</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Lockejaw Trapper</name>
+    <picture>Iron_Jaw_Skeleton_B</picture>
+    <asset_bundle>72</asset_bundle>
+    <hidden_until_time>1475773200</hidden_until_time>
+    <attack>6</attack>
+    <health>23</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="5" />
+    <skill id="strike" x="5" />
+    <skill id="leech" x="5" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>24</health>
+      <skill id="counter" x="5" />
+      <skill id="strike" x="5" />
+      <skill id="leech" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>25</health>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>26</health>
+      <skill id="counter" x="6" />
+      <skill id="strike" x="5" />
+      <skill id="leech" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>27</health>
+      <skill id="counter" x="6" />
+      <skill id="strike" x="6" />
+      <skill id="leech" x="7" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>6085</id>
     <card_type>2</card_type>
     <name>Released Captives</name>
@@ -31082,7 +31346,7 @@
     <skill id="fervor" x="1" y="7" />
     <type>2</type>
     <sub_type>7</sub_type>
-    <set>3000</set>
+    <set>4000</set>
     <upgrade>
       <level>2</level>
       <health>13</health>
@@ -31126,7 +31390,7 @@
     <skill id="nullify" x="1" />
     <type>2</type>
     <sub_type>7</sub_type>
-    <set>3000</set>
+    <set>4000</set>
     <upgrade>
       <level>2</level>
       <health>17</health>
@@ -31170,7 +31434,7 @@
     <skill id="nullify" x="3" />
     <type>2</type>
     <sub_type>7</sub_type>
-    <set>3000</set>
+    <set>4000</set>
     <upgrade>
       <level>2</level>
       <health>22</health>
@@ -41671,6 +41935,129 @@
       <skill id="enfeeble" x="2" all="1" />
       <skill id="nullify" x="2" />
       <skill id="poison" x="8" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7084</id>
+    <card_type>2</card_type>
+    <name>Witchwood</name>
+    <picture>Haunted_Forest_A</picture>
+    <asset_bundle>72</asset_bundle>
+    <hidden_until_time>1475773200</hidden_until_time>
+    <attack>3</attack>
+    <health>15</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="protect" x="1" all="1" y="7" />
+    <skill id="enfeeble" x="1" all="1" />
+    <skill id="jam" c="6" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+      <skill id="protect" x="1" all="1" y="7" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>19</health>
+      <skill id="protect" x="2" all="1" y="7" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="jam" c="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17084</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Endless Witchwood</name>
+    <picture>Haunted_Forest_A</picture>
+    <asset_bundle>72</asset_bundle>
+    <hidden_until_time>1475773200</hidden_until_time>
+    <attack>3</attack>
+    <health>20</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="protect" x="2" all="1" y="7" />
+    <skill id="enfeeble" x="1" all="1" />
+    <skill id="jam" c="4" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>22</health>
+      <skill id="protect" x="2" all="1" y="7" />
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>23</health>
+      <skill id="protect" x="3" all="1" y="7" />
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>24</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27084</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Inescapable Witchwood</name>
+    <picture>Haunted_Forest_B</picture>
+    <asset_bundle>72</asset_bundle>
+    <hidden_until_time>1475773200</hidden_until_time>
+    <attack>3</attack>
+    <health>25</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="protect" x="3" all="1" y="7" />
+    <skill id="enfeeble" x="2" all="1" />
+    <skill id="jam" c="3" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>26</health>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>28</health>
+      <skill id="protect" x="4" all="1" y="7" />
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>29</health>
+      <skill id="protect" x="4" all="1" y="7" />
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="jam" c="3" />
     </upgrade>
   </unit>
   <unit>
@@ -55607,7 +55994,7 @@
     <id>330</id>
     <card_type>1</card_type>
     <name>Undead Brute Boss</name>
-    <portrait>necromancer</portrait>
+    <portrait>undeadbrute</portrait>
     <attack>0</attack>
     <health>32</health>
     <skill id="jam" c="4" />
@@ -55618,35 +56005,35 @@
     <upgrade>
       <level>2</level>
       <health>37</health>
-      <skill id="enfeeble" all="1" />
+      <skill id="enfeeble" x="1" all="1" />
       <skill id="jam" c="4" />
       <skill id="weaken" x="1" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>42</health>
-      <skill id="enfeeble" all="1" />
+      <skill id="enfeeble" x="1" all="1" />
       <skill id="jam" c="4" />
       <skill id="weaken" x="2" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>47</health>
-      <skill id="enfeeble" all="1" />
+      <skill id="enfeeble" x="1" all="1" />
       <skill id="jam" c="4" />
       <skill id="weaken" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>52</health>
-      <skill id="enfeeble" all="1" />
+      <skill id="enfeeble" x="1" all="1" />
       <skill id="jam" c="4" />
       <skill id="weaken" x="4" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>58</health>
-      <skill id="enfeeble" all="1" />
+      <skill id="enfeeble" x="1" all="1" />
       <skill id="jam" c="4" />
       <skill id="weaken" x="5" />
     </upgrade>

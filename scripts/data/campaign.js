@@ -30220,7 +30220,7 @@ var MISSIONS = {
     "id": "5357",
     "name": "A Matter of Trust",
     "commander": {
-        "id": "277"
+        "id": "263"
     },
     "deck": [
       {

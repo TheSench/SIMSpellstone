@@ -10598,7 +10598,7 @@
     </deck>
     <speech>
       <line>
-        <commander>elyse</commander>
+        <commander>maniacgeneralreformed</commander>
         <enemy>0</enemy>
         <text>What...? Where am I?</text>
       </line>
@@ -10633,7 +10633,7 @@
     </deck>
     <speech>
       <line>
-        <commander>elyse</commander>
+        <commander>maniacgeneralreformed</commander>
         <enemy>0</enemy>
         <text>I'm so sorry, Lord Tarian. What can I do to make this up to you?</text>
       </line>
@@ -10696,7 +10696,7 @@
         <text>Stand aside, all of you! That Spellstone is made of pure evil.</text>
       </line>
       <line>
-        <commander>elyse</commander>
+        <commander>maniacgeneralreformed</commander>
         <enemy>0</enemy>
         <text>Not one step closer, sir. Lord Tarian needs space to observe the stone.</text>
       </line>
@@ -10712,7 +10712,7 @@
     <name>A Matter of Trust</name>
     <energy>11</energy>
     <desc>Tarian and Malchior trust that General Garrick has returned to his senses. However, Samael fears that the presence of The Void might spread.</desc>
-    <commander id="277" />
+    <commander id="263" />
     <deck>
       <card id="1315" name="Nix Elemental" />
       <card id="1315" />
@@ -10754,7 +10754,7 @@
     </deck>
     <speech>
       <line>
-        <commander>elyse</commander>
+        <commander>maniacgeneralreformed</commander>
         <enemy>0</enemy>
         <text>Lord Samael is right. The Void could still be inside my mind. Let me take responsibility.</text>
       </line>
@@ -10829,12 +10829,12 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>undeadbrute</commander>
         <enemy>1</enemy>
         <text>UWRAAAAARGH!</text>
       </line>
       <line>
-        <commander>elyse</commander>
+        <commander>maniacgeneralreformed</commander>
         <enemy>0</enemy>
         <text>Lord Tarian, please take the Aether leader and your friend to safety. I will stay behind and fight this foe.</text>
       </line>
