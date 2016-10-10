@@ -923,10 +923,10 @@
 .sprite-Defeated_Dragon_B{ background-position: -588px -0px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
 .sprite-Torsoless_Warrior_A{ background-position: -672px -0px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
 .sprite-Torsoless_Warrior_B{ background-position: -756px -0px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
-.sprite-New1_A{ background-position: -0px -120px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
-.sprite-New3_A{ background-position: -84px -120px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
-.sprite-New1_B{ background-position: -168px -120px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
-.sprite-New3_B{ background-position: -252px -120px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
+.sprite-New3_A{ background-position: -0px -120px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
+.sprite-Undead_Angel_A{ background-position: -84px -120px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
+.sprite-New3_B{ background-position: -168px -120px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
+.sprite-Undead_Angel_B{ background-position: -252px -120px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
 .sprite-Haunted_Forest_A{ background-position: -336px -120px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
 .sprite-Kimono_Ghost_A{ background-position: -420px -120px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
 .sprite-Haunted_Forest_B{ background-position: -504px -120px; background-image: url('../res/sprites/SpriteSheet10.jpg');}

@@ -21023,6 +21023,147 @@
       <skill id="flurry" c="3" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5087</id>
+    <card_type>2</card_type>
+    <name>Apollyon</name>
+    <picture>Undead_Angel_A</picture>
+    <asset_bundle>72</asset_bundle>
+    <hidden_until_time>1476118800</hidden_until_time>
+    <attack>5</attack>
+    <health>18</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="1" />
+    <skill id="rally" x="1" all="1" y="7" />
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <sub_type>7</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="1" />
+      <skill id="rally" x="1" all="1" y="7" />
+      <skill id="flurry" c="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>19</health>
+      <skill id="armored" x="1" />
+      <skill id="rally" x="1" all="1" y="7" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="2" />
+      <skill id="rally" x="1" all="1" y="7" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <desc>Apollyon's sacrifice saved hundreds, but the full cost of his death was never understood until his return.</desc>
+  </unit>
+  <unit>
+    <id>15087</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Apollyon the Sinful</name>
+    <picture>Undead_Angel_A</picture>
+    <asset_bundle>72</asset_bundle>
+    <hidden_until_time>1476118800</hidden_until_time>
+    <attack>6</attack>
+    <health>23</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="2" />
+    <skill id="rally" x="1" all="1" y="7" />
+    <skill id="flurry" c="5" />
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <sub_type>7</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>25</health>
+      <skill id="armored" x="2" />
+      <skill id="rally" x="2" all="1" y="7" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="2" />
+      <skill id="rally" x="2" all="1" y="7" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>26</health>
+      <skill id="armored" x="3" />
+      <skill id="rally" x="2" all="1" y="7" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>27</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25087</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Apollyon the Ruin</name>
+    <picture>Undead_Angel_B</picture>
+    <asset_bundle>72</asset_bundle>
+    <hidden_until_time>1476118800</hidden_until_time>
+    <attack>6</attack>
+    <health>28</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="3" />
+    <skill id="rally" x="2" all="1" y="7" />
+    <skill id="flurry" c="3" />
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <sub_type>7</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>30</health>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>32</health>
+      <skill id="armored" x="4" />
+      <skill id="rally" x="2" all="1" y="7" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>33</health>
+      <skill id="armored" x="4" />
+      <skill id="rally" x="3" all="1" y="7" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+  </unit>
   <!-- Chaos Premium Begin -->
   <unit>
     <id>6000</id>
@@ -55989,7 +56130,7 @@
       <skill id="imbue" x="3" s="poison" />
     </upgrade>
   </unit>
-  <!-- Event 16 -->
+  <!-- Event 16 Undead -->
   <unit>
     <id>330</id>
     <card_type>1</card_type>
@@ -56434,6 +56575,97 @@
       <skill id="weaken" all="1" x="5" />
     </upgrade>
     <desc>"Marrowsworn was bound to the depths of the Underhill, forever kept from tormenting the living." - Tarian the Lich Lord</desc>
+  </unit>
+  <!-- Event 17 -->
+  <unit>
+    <id>340</id>
+    <card_type>1</card_type>
+    <name>Wind-Up Dragon</name>
+    <portrait>necromancer</portrait>
+    <attack>0</attack>
+    <health>35</health>
+    <skill id="protect" x="2" />
+    <skill id="weaken" x="1" all="1" />
+    <rarity>4</rarity>
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>40</health>
+      <skill id="imbue" x="1" s="pierce" />
+      <skill id="protect" x="2" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>45</health>
+      <skill id="imbue" x="1" s="pierce" />
+      <skill id="protect" x="2" all="1" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>47</health>
+      <skill id="imbue" x="2" s="pierce" />
+      <skill id="protect" x="2" all="1" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>52</health>
+      <skill id="imbue" x="3" s="pierce" />
+      <skill id="protect" x="2" all="1" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>57</health>
+      <skill id="imbue" x="5" s="pierce" />
+      <skill id="protect" x="2" all="1" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>341</id>
+    <card_type>1</card_type>
+    <name>Goblin Mechanic</name>
+    <portrait>necromancer</portrait>
+    <attack>0</attack>
+    <health>25</health>
+    <skill id="imbue" x="1" s="counter" />
+    <skill id="strike" x="1" />
+    <skill id="rally" x="1" />
+    <rarity>3</rarity>
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>30</health>
+      <skill id="imbue" x="2" s="counter" />
+      <skill id="strike" x="1" />
+      <skill id="rally" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>35</health>
+      <skill id="imbue" x="3" s="counter" />
+      <skill id="strike" x="1" />
+      <skill id="rally" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>44</health>
+      <skill id="imbue" x="3" s="counter" />
+      <skill id="strike" x="2" />
+      <skill id="rally" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>50</health>
+      <skill id="imbue" x="4" s="counter" />
+      <skill id="strike" x="2" />
+      <skill id="rally" x="2" all="1" />
+    </upgrade>
   </unit>
   <!-- END Fortune's Favor -->
   <!-- START ARCANE DUSTLING -->
@@ -56923,6 +57155,20 @@
     <desc_all>Grants all allied creatures a skill until the start of your next turn</desc_all>
     <desc_faction>Grants a random allied {y} creature a skill until the start of your next turn</desc_faction>
     <desc_all_faction>Grants all allied {y} creatures a skill until the start of your next turn</desc_all_faction>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>barrage</id>
+    <order>1</order>
+    <icon>arcane_shot</icon>
+    <name>barrage</name>
+    <upkeep>1</upkeep>
+    <!-- This skill occurs before all other actions -->
+    <attributes x="1" y="1" all="1" c="1" s="1" />
+    <desc>barrage</desc>
+    <desc_all>barrage</desc_all>
+    <desc_faction>barrage</desc_faction>
+    <desc_all_faction>barrage</desc_all_faction>
     <hidden>1</hidden>
   </skillType>
   <skillType>

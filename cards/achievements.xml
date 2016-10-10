@@ -4284,6 +4284,7 @@
       <gold>800</gold>
     </reward>
   </achievement>
+  <!-- Event 15 Elementals -->
   <achievement>
     <id>3138</id>
     <type>2</type>
@@ -4408,6 +4409,7 @@
       <gold>800</gold>
     </reward>
   </achievement>
+  <!-- Event 16 Undead -->
   <achievement>
     <id>3146</id>
     <type>2</type>
@@ -4526,6 +4528,131 @@
     <achievement_req>3152</achievement_req>
     <req>
       <campaign>1090</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- Event 17 -->
+  <achievement>
+    <id>3154</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Decim and the Goblins</name>
+    <desc>Complete the 'Decim and the Goblins' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1091</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3155</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Decim and the Goblins</name>
+    <desc>Complete the 'Decim and the Goblins' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3154</achievement_req>
+    <req>
+      <campaign>1091</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3156</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Dungeon Depths</name>
+    <desc>Complete the 'Dungeon Depths' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1092</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3157</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Dungeon Depths</name>
+    <desc>Complete the 'Dungeon Depths' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3156</achievement_req>
+    <req>
+      <campaign>1092</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3158</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Fugitive</name>
+    <desc>Complete the 'The Fugitive' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1093</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3159</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Fugitive</name>
+    <desc>Complete the 'The Fugitive' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3158</achievement_req>
+    <req>
+      <campaign>1093</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3160</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Common Enemy</name>
+    <desc>Complete the 'Common Enemy' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1094</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3161</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Common Enemy</name>
+    <desc>Complete the 'Common Enemy' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3159</achievement_req>
+    <req>
+      <campaign>1094</campaign>
       <level>7</level>
     </req>
     <reward>
