@@ -697,11 +697,14 @@ var makeUnit = (function () {
                 var boost = statBoost[key];
                 if (key == "skill") {
                     var skillID = boost.id;
+                    var amount = boost.x;
+                    var mult = boost.mult;
                     for (var s = 0; s < skills.length; s++) {
                         var skill = skills[s];
                         if (skill.id == skillID && (skill.all || 0) == (boost.all || 0)) {
                             skill = copy_skill(skill);
-                            if (boost.x) skill.x += parseInt(boost.x)
+                            if (!amount && mult) amount = Math.ceil(skill.x * mult);
+                            if (amount) skill.x += parseInt(amount);
                             if (boost.c) skill.c -= parseInt(boost.c);
                             skill.boosted = true;
                             skills[s] = skill;
@@ -734,80 +737,19 @@ var addRunes = function (card, runes) {
         for (var key in statBoost) {
             var boost = statBoost[key];
             if (key == "skill") {
-                //boostSkill(card, boost)
+                // Will be handled later
             } else {
+                if (isNaN(boost)) {
+                    boost = Math.ceil(card[key] * boost.mult);
+                }
                 card[key] += parseInt(boost);
             }
         }
     }
 };
 
-var getRune = function (rune_id)
-{
+var getRune = function (rune_id) {
     return RUNES[rune_id];
-}
-
-var boostSkill = function (card, boost) {
-    var skills;
-    var skillID = boost.id;
-    switch (skillID) {
-        // Passives
-        case 'armored':
-        case 'berserk':
-        case 'burn':
-        case 'corrosive':
-        case 'counter':
-        case 'counterburn':
-        case 'evade':
-        case 'leech':
-        case 'nullify':
-        case 'pierce':
-        case 'poison':
-        case 'valor':
-            card[skillID] += parseInt(boost.x);
-            return;
-        case 'flurry':
-            card[skillID].c -= parseInt(boost.c);
-            return;
-            // Early Activation skills
-        case 'fervor':
-        case 'rally':
-        case 'legion':
-            skills = card.empowerSkills;
-            break;
-            // Activation skills (can occur twice on a card)
-        case 'enfeeble':
-        case 'enhance':
-        case 'frost':
-        case 'heal':
-        case 'imbue':
-        case 'jam':
-        case 'protect':
-        case 'protect_ice':
-        case 'strike':
-        case 'weaken':
-        default:
-            skills = card.skill;;
-            break;
-    }
-
-    // Boost the first instance of this skill
-    var skillToBoost = -1;
-    for (var i = 0, len = skills.length; i < len; i++) {
-        var skill = skills[i];
-        if (skill.id == skillID && (skill.all || 0) == (boost.all || 0)) {
-            skillToBoost = i;
-            break;
-        }
-    }
-
-    if (skillToBoost >= 0) {
-        skill = copy_skill(skills[skillToBoost]);
-        if (boost.x) skill.x += parseInt(boost.x)
-        if (boost.c) skill.c -= parseInt(boost.c);
-        skill.boosted = true;
-        skills[skillToBoost] = skill;
-    }
 };
 
 var canUseRune = function (card, runeID) {

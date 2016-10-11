@@ -3218,7 +3218,7 @@
     </rewards>
     <find_item id="3043" drop_per_energy=".25" />
   </campaign>
-  <!-- Event 16 -->
+  <!-- Event 16 Undead -->
   <campaign>
     <id>1087</id>
     <hidden>1</hidden>
@@ -3267,11 +3267,11 @@
     </missions>
     <rewards>
       <card level="1" id="510" />
-      <card level="2" id="5017" />
-      <card level="3" id="5017" />
-      <card level="4" id="2031" />
-      <card level="5" id="7017" />
-      <card level="6" id="7017" />
+      <card level="2" id="1319" />
+      <card level="3" id="1319" />
+      <card level="4" id="2025" />
+      <card level="5" id="1314" />
+      <card level="6" id="1314" />
       <card level="7" id="512" />
     </rewards>
     <find_item id="3044" drop_per_energy=".25" />
@@ -3295,11 +3295,11 @@
     </missions>
     <rewards>
       <card level="1" id="510" />
-      <card level="2" id="5017" />
-      <card level="3" id="5017" />
-      <card level="4" id="2031" />
-      <card level="5" id="7017" />
-      <card level="6" id="7017" />
+      <card level="2" id="1311" />
+      <card level="3" id="1311" />
+      <card level="4" id="2060" />
+      <card level="5" id="1315" />
+      <card level="6" id="1315" />
       <card level="7" id="512" />
     </rewards>
     <find_item id="3044" drop_per_energy=".25" />
@@ -3326,14 +3326,131 @@
     </missions>
     <rewards>
       <card level="1" id="510" />
-      <card level="2" id="5017" />
-      <card level="3" id="5017" />
-      <card level="4" id="2031" />
-      <card level="5" id="7017" />
-      <card level="6" id="7017" />
+      <card level="2" id="1315" />
+      <card level="3" id="1315" />
+      <card level="4" id="2024" />
+      <card level="5" id="1311" />
+      <card level="6" id="1311" />
       <card level="7" id="512" />
     </rewards>
     <find_item id="3044" drop_per_energy=".25" />
+  </campaign>
+  <!-- Event 17 -->
+  <campaign>
+    <id>1091</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Decim and the Goblins</name>
+    <icon id="will_o_wisp100" bundle="58" />
+    <location_id>105</location_id>
+    <x>400</x>
+    <y>100</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5361</mission_id>
+      <mission_id>5362</mission_id>
+      <mission_id>5363</mission_id>
+      <mission_id>5364</mission_id>
+      <mission_id>5365</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1315" />
+      <card level="3" id="1315" />
+      <card level="4" id="2024" />
+      <card level="5" id="1311" />
+      <card level="6" id="1311" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3045" drop_per_energy=".25" />
+  </campaign>
+  <campaign>
+    <id>1092</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Dungeon Depths</name>
+    <icon id="will_o_wisp100" bundle="58" />
+    <location_id>105</location_id>
+    <x>500</x>
+    <y>100</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5366</mission_id>
+      <mission_id>5367</mission_id>
+      <mission_id>5368</mission_id>
+      <mission_id>5369</mission_id>
+      <mission_id>5370</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1315" />
+      <card level="3" id="1315" />
+      <card level="4" id="2024" />
+      <card level="5" id="1311" />
+      <card level="6" id="1311" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3045" drop_per_energy=".25" />
+  </campaign>
+  <campaign>
+    <id>1093</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>The Fugitive</name>
+    <icon id="will_o_wisp100" bundle="58" />
+    <location_id>105</location_id>
+    <x>600</x>
+    <y>100</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5371</mission_id>
+      <mission_id>5372</mission_id>
+      <mission_id>5373</mission_id>
+      <mission_id>5374</mission_id>
+      <mission_id>5375</mission_id>
+      <mission_id>5376</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1315" />
+      <card level="3" id="1315" />
+      <card level="4" id="2024" />
+      <card level="5" id="1311" />
+      <card level="6" id="1311" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3045" drop_per_energy=".25" />
+  </campaign>
+  <campaign>
+    <id>1094</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Common Enemy</name>
+    <icon id="will_o_wisp100" bundle="58" />
+    <location_id>105</location_id>
+    <x>700</x>
+    <y>100</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5377</mission_id>
+      <mission_id>5378</mission_id>
+      <mission_id>5379</mission_id>
+      <mission_id>5380</mission_id>
+      <mission_id>5381</mission_id>
+      <mission_id>5382</mission_id>
+      <mission_id>5383</mission_id>
+      <mission_id>5384</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1315" />
+      <card level="3" id="1315" />
+      <card level="4" id="2024" />
+      <card level="5" id="1311" />
+      <card level="6" id="1311" />
+      <card level="7" id="512" />
+    </rewards>
+    <find_item id="3045" drop_per_energy=".25" />
   </campaign>
   <!-- START Mythic Campaigns -->
   <campaign>

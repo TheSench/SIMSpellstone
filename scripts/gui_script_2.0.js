@@ -61,13 +61,17 @@ $(function () {
 
     loadDeckDialog = $("#loadDeckDialog").dialog({
         autoOpen: false,
+        minWidth: 320,
         /*
-        width: 250,
         minHeight: 20,
         */
         modal: true,
         resizable: false,
         buttons: {
+            Delete: function () {
+                var name = $("#loadDeckName").val();
+                var newHash = storageAPI.deleteDeck(name);
+            },
             Load: function () {
                 var name = $("#loadDeckName").val();
                 var newHash = storageAPI.loadDeck(name);
