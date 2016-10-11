@@ -39,11 +39,11 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_health_legendary",
         "bundle": "34",
-        "desc": "Health +50%, rounded up.",
+        "desc": "Health +30%, rounded up.",
         "usable": "0",
         "stat_boost": {
             "health": {
-                "mult": "0.5"
+                "mult": "0.3"
             }
         },
         "category": 3
@@ -56,12 +56,12 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_invisibility_legendary",
         "bundle": "34",
-        "desc": "Invisibility +1",
+        "desc": "Invisibility +50%, rounded up.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "evade",
-                "x": "1"
+                "mult": "0.5"
             }
         },
         "category": 3
@@ -110,12 +110,12 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_barrier_legendary",
         "bundle": "34",
-        "desc": "Barrier +4",
+        "desc": "Barrier +50%, rounded up.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "protect",
-                "x": "4"
+                "mult": "0.5"
             }
         },
         "category": 3
@@ -128,12 +128,12 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_barrier_all_legendary",
         "bundle": "34",
-        "desc": "Barrier All +1",
+        "desc": "Barrier All +50%, rounded up.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "protect",
-                "x": "1",
+                "mult": "0.5",
                 "all": "1"
             }
         },
@@ -183,12 +183,12 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_heal_legendary",
         "bundle": "34",
-        "desc": "Healing +5",
+        "desc": "Healing +50%, rounded up.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "heal",
-                "x": "5"
+                "mult": "0.5"
             }
         },
         "category": 3
@@ -220,12 +220,12 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_heal_all_legendary",
         "bundle": "34",
-        "desc": "Heal All +2",
+        "desc": "Heal All +50%, rounded up.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "heal",
-                "x": "2",
+                "mult": "0.5",
                 "all": "1"
             }
         },
@@ -275,12 +275,12 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_vengeance_legendary",
         "bundle": "34",
-        "desc": "Vengeance +3",
+        "desc": "Vengeance +50%, rounded up.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "counter",
-                "x": "3"
+                "mult": "0.5"
             }
         },
         "category": 3
@@ -329,12 +329,12 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_shield_legendary",
         "bundle": "34",
-        "desc": "Armored +3",
+        "desc": "Armored +50%, rounded up.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "armored",
-                "x": "3"
+                "mult": "0.5"
             }
         },
         "category": 3
@@ -401,12 +401,12 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_empower_all_legendary",
         "bundle": "34",
-        "desc": "Empower All +1",
+        "desc": "Empower All +50%, rounded up.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "rally",
-                "x": "1",
+                "mult": "0.5",
                 "all": "1"
             }
         },
@@ -438,12 +438,12 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_legion_legendary",
         "bundle": "34",
-        "desc": "Legion +2",
+        "desc": "Legion +50%, rounded up.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "legion",
-                "x": "2"
+                "mult": "0.5"
             }
         },
         "category": 3
@@ -474,12 +474,12 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_fervor_legendary",
         "bundle": "34",
-        "desc": "Fervor +2",
+        "desc": "Fervor +50%, rounded up.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "fervor",
-                "x": "2"
+                "mult": "0.5"
             }
         },
         "category": 3
@@ -528,12 +528,12 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_hex_legendary",
         "bundle": "34",
-        "desc": "Hex +4",
+        "desc": "Hex +50%, rounded up.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "enfeeble",
-                "x": "4"
+                "mult": "0.5"
             }
         },
         "category": 3
@@ -546,12 +546,12 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_hex_all_legendary",
         "bundle": "34",
-        "desc": "Hex All +1",
+        "desc": "Hex All +50%, rounded up.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "enfeeble",
-                "x": "1",
+                "mult": "0.5",
                 "all": "1"
             }
         },
@@ -601,12 +601,12 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_bolt_legendary",
         "bundle": "34",
-        "desc": "Bolt +4",
+        "desc": "Bolt +50%, rounded up.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "strike",
-                "x": "4"
+                "mult": "0.5"
             }
         },
         "category": 3
@@ -619,12 +619,12 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_bolt_all_legendary",
         "bundle": "34",
-        "desc": "Bolt All +1",
+        "desc": "Bolt All +50%, rounded up.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "strike",
-                "x": "1",
+                "mult": "0.5",
                 "all": "1"
             }
         },
@@ -656,12 +656,12 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_scorch_legendary",
         "bundle": "34",
-        "desc": "Scorch +2",
+        "desc": "Scorch +50%, rounded up.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "burn",
-                "x": "2"
+                "mult": "0.5"
             }
         },
         "category": 3
@@ -710,12 +710,12 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_weaken_legendary",
         "bundle": "34",
-        "desc": "Weaken +4",
+        "desc": "Weaken +50%, rounded up.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "weaken",
-                "x": "4"
+                "mult": "0.5"
             }
         },
         "category": 3
@@ -728,12 +728,12 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_weaken_all_legendary",
         "bundle": "34",
-        "desc": "Weaken All +1",
+        "desc": "Weaken All +50%, rounded up.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "weaken",
-                "x": "1",
+                "mult": "0.5",
                 "all": "1"
             }
         },
@@ -777,25 +777,6 @@ var RUNES = {
         },
         "category": 3
     },
-    "5163": {
-        "id": "5163",
-        "name": "Rune of Greater Piercing",
-        "type": "3",
-        "set": "1",
-        "rarity": "4",
-        "icon": "rune_pierce_legendary",
-        "bundle": "34",
-        "desc": "Pierce +3, Health +3",
-        "usable": "0",
-        "stat_boost": {
-            "skill": {
-                "id": "pierce",
-                "x": "3"
-            },
-            "health": "3"
-        },
-        "category": 3
-    },
     "5171": {
         "id": "5171",
         "name": "Rune of Poison",
@@ -822,12 +803,12 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_poison_legendary",
         "bundle": "34",
-        "desc": "Poison +2",
+        "desc": "Poison +50%, rounded up.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "poison",
-                "x": "2"
+                "mult": "0.5"
             }
         },
         "category": 3
@@ -876,12 +857,12 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_siphon_legendary",
         "bundle": "34",
-        "desc": "Siphon +4",
+        "desc": "Siphon +50%, rounded up.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "leech",
-                "x": "4"
+                "mult": "0.5"
             }
         },
         "category": 3
@@ -912,12 +893,12 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_berserk_legendary",
         "bundle": "34",
-        "desc": "Berserk +2",
+        "desc": "Berserk +50%, rounded up.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "berserk",
-                "x": "2"
+                "mult": "0.5"
             }
         },
         "category": 3
@@ -948,12 +929,12 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_frostbreath_legendary",
         "bundle": "34",
-        "desc": "Frostbreath +2",
+        "desc": "Frostbreath +50%, rounded up.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "frost",
-                "x": "2"
+                "mult": "0.5"
             }
         },
         "category": 3
