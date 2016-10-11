@@ -10,6 +10,9 @@ var SIM_CONTROLLER = (function () {
         loss_debug = $('#loss_debug').is(':checked');
         win_debug = $('#win_debug').is(':checked');
 
+        play_debug = $('#play_debug').is(':checked');
+        if (play_debug) debug = false;
+
         if ($('#auto_mode').length) {
             auto_mode = $('#auto_mode').is(':checked');
             SIMULATOR.user_controlled = !auto_mode;

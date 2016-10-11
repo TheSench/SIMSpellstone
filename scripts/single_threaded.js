@@ -63,7 +63,7 @@
             if (run_sim(true)) {
                 SIM_CONTROLLER.debug_end();
             }
-        } else if (debug && !mass_debug && !loss_debug && !win_debug) {
+        } else if ((debug ||play_debug) && !mass_debug && !loss_debug && !win_debug) {
             run_sim(true);
             SIM_CONTROLLER.debug_end();
         } else if (sims_left > 0) {
@@ -94,8 +94,7 @@
                     run_sims_batch = sims_left;
 
                 // Batch messes up mass debug and loss debug! var's disable batch!
-                if (debug && mass_debug) run_sims_batch = 1;
-                if (debug && (loss_debug || win_debug)) run_sims_batch = 1;
+                if ((debug || play_debug) && (mass_debug || loss_debug || win_debug)) run_sims_batch = 1;
 
                 time_start_batch = new Date();
                 current_timeout = setTimeout(run_sims, 1);
@@ -162,7 +161,7 @@
         // Increment total turn count
         total_turns += SIMULATOR.simulation_turns;
 
-        if (debug) {
+        if (debug || play_debug) {
             if (loss_debug) {
                 if (result == 'draw') {
                     echo = 'Draw found after ' + games + ' games. Displaying debug output... <br><br>' + echo;
@@ -202,9 +201,9 @@
                     echo += '<br><h1>LOSS</h1><br>';
                 }
             }
-        }
 
-        if (debug && mass_debug && sims_left) echo += '<br><hr>NEW BATTLE BEGINS<hr><br>';
+            if (mass_debug && sims_left) echo += '<br><hr>NEW BATTLE BEGINS<hr><br>';
+        }
 
         return result;
     }

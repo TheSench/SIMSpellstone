@@ -203,12 +203,32 @@
                 <div class="section accordion">
                     <h3>Debug Settings</h3>
                     <div>
-                        <div id="debugContainer" class="collapsible">
-                            <input type="checkbox" id="debug" ng-model="debugMode"><label for="debug">Debug Mode</label><br />
-                            <input type="radio" name="debugMode" checked ng-disabled="!debugMode"><label>Normal Debug Mode</label><br />
-                            <input type="radio" id="mass_debug" name="debugMode" ng-disabled="!debugMode"><label>Mass Debug Mode (causes slowdown)</label><br />
-                            <input type="radio" id="win_debug" name="debugMode" ng-disabled="!debugMode"><label>Debug Win Mode (output first win)</label><br />
-                            <input type="radio" id="loss_debug" name="debugMode" ng-disabled="!debugMode"><label>Debug Loss Mode (output first loss)</label>
+                        <div id="debugContainer" class="collapsible table">
+                            <div class="table-row">
+                                <div class="table-cell">
+                                    <input type="checkbox" class="table-cell" id="debug" ng-model="debugMode"><label for="debug">Debug Mode</label>
+                                </div>
+                                <div class="table-cell">
+                                    <input type="checkbox" class="table-cell" id="play_debug" ng-disabled="!debugMode"><label for="play_debug">Log Plays Only</label>
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="table-cell">
+                                    <input type="radio" name="debugMode" checked ng-disabled="!debugMode"><label>Normal Debug Mode</label>
+                                </div>
+                                <div class="table-cell">
+                                    <input type="radio" class="table-cell" id="mass_debug" name="debugMode" ng-disabled="!debugMode"><label>Mass Debug Mode (slow)</label>
+                                </div>
+                            </div>
+
+                            <div class="table-row">
+                                <div class="table-cell">
+                                    <input type="radio" class="table-cell" id="win_debug" name="debugMode" ng-disabled="!debugMode"><label>Debug Win Mode (first win)</label>
+                                </div>
+                                <div class="table-cell">
+                                    <input type="radio" class="table-cell" id="loss_debug" name="debugMode" ng-disabled="!debugMode"><label>Debug Loss Mode (first loss)</label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

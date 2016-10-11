@@ -62,6 +62,8 @@ $(function () {
     var ui = document.getElementById('ui');
     if (!ui) return 0;
 
+    var $scope = angular.element(document.getElementById('ui')).scope();
+
     var button = document.getElementById("generate_link");
     if (button) button.onclick = display_generated_link;
 
@@ -141,10 +143,11 @@ $(function () {
 
     $('#sims').val(_GET('sims') || 10000);
 
-    $('#debug').prop("checked", _DEFINED("debug"));
-    $('#mass_debug').prop("checked", _DEFINED("mass_debug"));
-    $('#loss_debug').prop("checked", _DEFINED("loss_debug"));
-    $('#win_debug').prop("checked", _DEFINED("win_debug"));
+    if (_DEFINED("debug")) $('#debug').click();
+    if (_DEFINED("mass_debug")) $('#mass_debug').click();
+    if (_DEFINED("loss_debug")) $('#loss_debug').click();
+    if (_DEFINED("win_debug")) $('#win_debug').click();
+    if (_DEFINED("play_debug")) $('#play_debug').click();
     
     document.title = "SimSpellstone " + text_version + " - The Spellstone Simulator that runs from your browser!";
 
@@ -482,7 +485,8 @@ function generate_link(autostart) {
     addBoolParam(parameters, "mass_debug");
     addBoolParam(parameters, "loss_debug");
     addBoolParam(parameters, "win_debug");
-
+    addBoolParam(parameters, "play_debug");
+    
     if (autostart) {
         parameters.push('autostart');
     }
@@ -683,7 +687,8 @@ var debug = false;
 var mass_debug = false;
 var loss_debug = false;
 var win_debug = false;
-var found_loss = false;
+var found_desired = false;
+var play_debug = false;
 var getdeck = '';
 var getdeck2 = '';
 var getcardlist = '';

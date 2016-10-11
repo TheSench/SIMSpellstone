@@ -15,7 +15,7 @@ var SIMULATOR = {};
 
         field_p_assaults[newKey] = card;
 
-        if (debug && !quiet) echo += debug_name(field[p].commander) + ' plays ' + debug_name(card) + '<br>';
+        if ((debug || play_debug) && !quiet) echo += debug_name(field[p].commander) + ' plays ' + debug_name(card) + '<br>';
     };
 
     // Dead cards are removed from both fields. Cards on both fields all shift over to the left if there are any gaps.
