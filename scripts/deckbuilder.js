@@ -151,6 +151,10 @@ var setupPopups = function ()
 
     $(".start-closed").accordion('option', 'active', false).show();
 
+    if (_DEFINED("spoilers")) {
+        $("#deck-container, #filter-container").accordion('option', 'active', false).show();
+    }
+
     var inputs = document.getElementsByTagName("input");
     for (var i = 0; i < inputs.length; i++)
     {
