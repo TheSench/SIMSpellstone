@@ -103,19 +103,19 @@ var SIMULATOR = {};
     };
 
     // Empower, Legion, and Fervor all activate at the beginning of the turn, after commander
-    function empower_skills(field_p) {
-        doEmpower(field_p.commander);
+    function doEarlyActivations(field_p) {
+        doEarlyActivationSkills(field_p.commander);
         var field_p_assaults = field_p.assaults;
         for (var unit_key = 0, unit_len = field_p_assaults.length; unit_key < unit_len; unit_key++) {
             var current_unit = field_p_assaults[unit_key];
-            if (current_unit.empowerSkills.length && current_unit.isActive() && current_unit.isUnjammed()) {
-                doEmpower(current_unit);
+            if (current_unit.earlyActivationSkills.length && current_unit.isActive() && current_unit.isUnjammed()) {
+                doEarlyActivationSkills(current_unit);
             }
         }
     };
 
-    function doEmpower(source_card) {
-        var skills = source_card.empowerSkills;
+    function doEarlyActivationSkills(source_card) {
+        var skills = source_card.earlyActivationSkills;
         var len = skills.length;
         if (len == 0) return;
 
@@ -139,9 +139,9 @@ var SIMULATOR = {};
                     skill.countdown = skill.c - 1;
                 }
             }
-            empowerSkills[skill.id](source_card, skill);
+            earlyActivationSkills[skill.id](source_card, skill);
             if (dualStrike) {
-                empowerSkills[skill.id](source_card, skill);
+                earlyActivationSkills[skill.id](source_card, skill);
             }
         }
     };
@@ -790,7 +790,7 @@ var SIMULATOR = {};
         },
     };
 
-    var empowerSkills = {
+    var earlyActivationSkills = {
         // Rally
         // - Can target specific faction
         // - Targets allied unjammed, active assaults
@@ -938,6 +938,101 @@ var SIMULATOR = {};
                 if (debug) {
                     if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
                     echo += debug_name(src_card) + ' activates fervor for ' + fervorAmount + '<br>';
+                }
+            }
+        },
+
+        // Barrage (Barrage X => X Bolt 1)
+        // - Can target specific faction
+        // - Targets enemy assaults
+        // - Can be evaded
+        // - Must calculate enfeeble/protect
+        // - Can be enhanced
+        barrage: function (src_card, skill) {
+
+            var o = get_o(src_card);
+
+            var barrages = skill.x
+            var faction = skill.y;
+            var all = skill.all;
+
+            var field_x_assaults = field[o].assaults;
+
+            var enhanced = getEnhancement(src_card, skill.id);
+            if (enhanced) {
+                if (enhanced < 0) {
+                    enhanced = Math.ceil(barrages * -enhanced);
+                }
+                barrages += enhanced;
+            }
+            for (var i = 0; i < barrages; i++) {
+                var targets = [];
+                for (var key = 0, len = field_x_assaults.length; key < len; key++) {
+                    var target = field_x_assaults[key];
+                    if (target.isAlive()
+                    && target.isInFaction(faction)) {
+                        targets.push(key);
+                    }
+                }
+
+                // No Targets
+                if (!targets.length) return;
+
+                // Check All
+                if (!all) {
+                    targets = choose_random_target(targets);
+                }
+
+                var strike = 1;
+                for (var key = 0, len = targets.length; key < len; key++) {
+                    var target = field_x_assaults[targets[key]];
+
+                    // Check Evade
+                    if (target.invisible) {
+                        target.invisible--;
+                        if (debug) echo += debug_name(src_card) + ' throws a bomb at ' + debug_name(target) + ' but it is invisible!<br>';
+                        continue;
+                    }
+
+                    var strike_damage = strike;
+
+                    // Check Protect/Enfeeble
+                    var enfeeble = 0;
+                    if (target['enfeebled']) enfeeble = target['enfeebled'];
+                    var protect = 0;
+                    if (target['protected']) protect = target['protected'];
+
+                    if (enfeeble) {
+                        strike_damage += enfeeble;
+                    }
+                    var shatter = false;
+                    if (protect) {
+                        if (strike_damage >= protect) {
+                            shatter = target.barrier_ice;
+                            target['protected'] = 0;
+                        } else {
+                            target['protected'] -= strike_damage;
+                        }
+                        strike_damage -= protect;
+                    }
+
+                    if (strike_damage < 0) {
+                        strike_damage = 0;
+                    } else {
+                        do_damage(target, strike_damage);
+                    }
+                    if (debug) {
+                        echo += '<u>(Barrage: +1';
+                        if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
+                        if (enhanced) echo += ' Enhance: +' + enhanced;
+                        if (protect) echo += ' Barrier: -' + protect;
+                        echo += ') = ' + strike_damage + ' damage</u><br>';
+                        echo += debug_name(src_card) + ' throws a bomb at ' + debug_name(target) + ' for ' + strike_damage + ' damage';
+                        echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
+                    }
+                    if (shatter) {
+                        iceshatter(target);
+                    }
                 }
             }
         },
@@ -1447,11 +1542,7 @@ var SIMULATOR = {};
             doEmpower(battleground);
             activation_skills(battleground);
         }
-
-        // Commander
-        // - all activation skills
-        activation_skills(field_p_commander);
-
+        
         // Reset invisibility count after enhance has had a chance to fire
         for (var key = 0, len = field_p_assaults.length; key < len; key++) {
             var current_assault = field_p_assaults[key];
@@ -1467,9 +1558,11 @@ var SIMULATOR = {};
             }
         }
 
-        // Units
-        // - empower skills
-        empower_skills(field_p);
+        doEarlyActivations(field_p);
+
+        // Commander
+        // - activation skills after units do early activation skills
+        activation_skills(field_p_commander);
 
         // Assaults
         for (var key = 0, len = field_p_assaults.length; key < len; key++) {
@@ -1556,7 +1649,7 @@ var SIMULATOR = {};
 
     function doCountDowns(unit) {
         doSkillCountDowns(unit.skill);
-        doSkillCountDowns(unit.empowerSkills);
+        doSkillCountDowns(unit.earlyActivationSkills);
 
         var dualStrike = unit.flurry;
         if (dualStrike && dualStrike.countdown) dualStrike.countdown--;

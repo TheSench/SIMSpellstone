@@ -2149,6 +2149,134 @@
       <pack>13</pack>
     </reward>
   </achievement>
+  <achievement>
+    <id>1341</id>
+    <type>13</type>
+    <order>60</order>
+    <icon>rune_empty_legendary</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Legendary Rune Crafting</name>
+    <desc>Successfully craft a Legendary Rune.</desc>
+    <achievement_req>1321</achievement_req>
+    <req>
+      <craft_rune rarity="4" num="1" />
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1342</id>
+    <type>13</type>
+    <order>803</order>
+    <icon>rune_empty_legendary</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Legendary Runes II</name>
+    <desc>Successfully craft 3 Legendary Runes.</desc>
+    <achievement_req>1341</achievement_req>
+    <req>
+      <craft_rune rarity="4" num="3" />
+    </req>
+    <reward>
+      <sp>100</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1343</id>
+    <type>13</type>
+    <order>803</order>
+    <icon>rune_empty_legendary</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Legendary Runes III</name>
+    <desc>Successfully craft 8 Legendary Runes.</desc>
+    <achievement_req>1342</achievement_req>
+    <req>
+      <craft_rune rarity="4" num="8" />
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1344</id>
+    <type>13</type>
+    <order>803</order>
+    <icon>rune_empty_legendary</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Legendary Runes IV</name>
+    <desc>Successfully craft 20 Legendary Runes.</desc>
+    <achievement_req>1343</achievement_req>
+    <req>
+      <craft_rune rarity="4" num="20" />
+    </req>
+    <reward>
+      <sp>200</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1345</id>
+    <type>13</type>
+    <order>803</order>
+    <icon>rune_empty_legendary</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Legendary Runes V</name>
+    <desc>Successfully craft 30 Legendary Runes.</desc>
+    <achievement_req>1344</achievement_req>
+    <req>
+      <craft_rune rarity="4" num="30" />
+    </req>
+    <reward>
+      <gold>10000</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1346</id>
+    <type>13</type>
+    <order>803</order>
+    <icon>rune_empty_legendary</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Legendary Runes VI</name>
+    <desc>Successfully craft 45 Legendary Runes.</desc>
+    <achievement_req>1345</achievement_req>
+    <req>
+      <craft_rune rarity="4" num="45" />
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1347</id>
+    <type>13</type>
+    <order>803</order>
+    <icon>rune_empty_legendary</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Legendary Runes VII</name>
+    <desc>Successfully craft 60 Legendary Runes.</desc>
+    <achievement_req>1346</achievement_req>
+    <req>
+      <craft_rune rarity="4" num="60" />
+    </req>
+    <reward>
+      <sp>300</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1348</id>
+    <type>13</type>
+    <order>803</order>
+    <icon>rune_empty_legendary</icon>
+    <icon_bundle>34</icon_bundle>
+    <name>Legendary Runes VIII</name>
+    <desc>Successfully craft 80 Legendary Runes.</desc>
+    <achievement_req>1347</achievement_req>
+    <req>
+      <craft_rune rarity="4" num="80" />
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
   <!-- END Runes Quests  -->
   <!-- 3001+: Event Quests START -->
   <!-- Event 2 Dragons -->

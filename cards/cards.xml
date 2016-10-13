@@ -57686,11 +57686,8 @@
     <name>barrage</name>
     <upkeep>1</upkeep>
     <!-- This skill occurs before all other actions -->
-    <attributes x="1" y="1" all="1" c="1" s="1" />
-    <desc>barrage</desc>
-    <desc_all>barrage</desc_all>
-    <desc_faction>barrage</desc_faction>
-    <desc_all_faction>barrage</desc_all_faction>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <desc>Deal damage to random enemy creatures</desc>
     <hidden>1</hidden>
   </skillType>
   <skillType>

@@ -156,6 +156,20 @@ var BATTLEGROUNDS = {
       },
     ]
   },
+  "112": {
+    "name": "Goblin Barrage",
+    "id": "112",
+    "effect": [
+      {
+        "effect_type": "add_skill",
+        "id": "barrage",
+        "mult": 1,
+        "base": "attack",
+        "y": "11",
+        "z": 11,
+      },
+    ]
+  },
   "501": {
     "name": "Castle Siege",
     "id": "501",

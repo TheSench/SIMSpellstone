@@ -284,7 +284,7 @@ var CARD_GUI = {};
         var divSkills = createDiv("card-skills");
         var skillsShort = createDiv("card-skills-short");
         getPassiveSkills(divSkills, skillsShort, card, onField, boosts);
-        if (card.empowerSkills) getSkillsHtml(card, divSkills, skillsShort, card.empowerSkills, onField);
+        if (card.earlyActivationSkills) getSkillsHtml(card, divSkills, skillsShort, card.earlyActivationSkills, onField);
         getSkillsHtml(card, divSkills, skillsShort, card.skill, onField);
         getTriggeredSkills(divSkills, skillsShort, card, onField, boosts);
         var skillsDetail = divSkills.cloneNode(true);
