@@ -15,7 +15,7 @@ var SIMULATOR = {};
 
         field_p_assaults[newKey] = card;
 
-        if (debug && !quiet) echo += debug_name(field[p].commander) + ' plays ' + debug_name(card) + '<br>';
+        if ((debug || play_debug) && !quiet) echo += debug_name(field[p].commander) + ' plays ' + debug_name(card) + '<br>';
     };
 
     // Dead cards are removed from both fields. Cards on both fields all shift over to the left if there are any gaps.
@@ -103,19 +103,18 @@ var SIMULATOR = {};
     };
 
     // Empower, Legion, and Fervor all activate at the beginning of the turn, after commander
-    function empower_skills(field_p) {
-        doEmpower(field_p.commander);
+    function doEarlyActivations(field_p) {
         var field_p_assaults = field_p.assaults;
         for (var unit_key = 0, unit_len = field_p_assaults.length; unit_key < unit_len; unit_key++) {
             var current_unit = field_p_assaults[unit_key];
-            if (current_unit.empowerSkills.length && current_unit.isActive() && current_unit.isUnjammed()) {
-                doEmpower(current_unit);
+            if (current_unit.earlyActivationSkills.length && current_unit.isActive() && current_unit.isUnjammed()) {
+                doEarlyActivationSkills(current_unit);
             }
         }
     };
 
-    function doEmpower(source_card) {
-        var skills = source_card.empowerSkills;
+    function doEarlyActivationSkills(source_card) {
+        var skills = source_card.earlyActivationSkills;
         var len = skills.length;
         if (len == 0) return;
 
@@ -139,9 +138,9 @@ var SIMULATOR = {};
                     skill.countdown = skill.c - 1;
                 }
             }
-            empowerSkills[skill.id](source_card, skill);
+            earlyActivationSkills[skill.id](source_card, skill);
             if (dualStrike) {
-                empowerSkills[skill.id](source_card, skill);
+                earlyActivationSkills[skill.id](source_card, skill);
             }
         }
     };
@@ -211,137 +210,6 @@ var SIMULATOR = {};
                     if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
                     echo += debug_name(src_card) + ' barriers ' + debug_name(target) + ' by ' + protect + '<br>';
                 }
-            }
-        },
-
-        // Enhance
-        // - Can target specific faction
-        // - Targets allied, units
-        // - Target must be active this turn (for activation skills only)
-        // - Target must not be frozen (for activation skills only)
-        // - Target must have specific "enhanceable skill"
-        enhance: function (src_card, skill) {
-
-            var faction = skill['y'];
-
-            var p = get_p(src_card);
-            var o = get_o(src_card);
-
-            var x = skill['x'];
-            var s = skill['s'];
-            var mult = skill['mult'];
-            var all = skill['all'];
-
-            var field_p_assaults = field[p]['assaults'];
-            var require_active_turn = (s != 'counter' && s != 'counterburn' && s != 'armored' && s != 'evade');
-            var targets = [];
-            for (var key = 0, len = field_p_assaults.length; key < len; key++) {
-                var target = field_p_assaults[key];
-                if (!target.isUnjammed()) continue;
-                if (!target.isInFaction(faction)) continue;
-                if (require_active_turn && !target.isActive()) continue;
-                if (target.hasSkill(s, 0) || target.hasSkill(s, 1)) {
-                    targets.push(key);
-                }
-            }
-
-            // No Targets
-            if (!targets.length) {
-                // No targets - retry next turn
-                if (skill.c) skill.countdown = 0;
-                return;
-            }
-
-            // Check All
-            if (!all) {
-                targets = choose_random_target(targets);
-            }
-
-            for (var key = 0, len = targets.length; key < len; key++) {
-                var target = field_p_assaults[targets[key]];
-
-                // Check Nullify
-                if (target.nullified) {
-                    target.nullified--;
-                    if (debug) echo += debug_name(src_card) + ' enhances ' + debug_name(target) + ' but it is nullified!<br>';
-                    continue;
-                }
-
-                var enhancements = target.enhanced;
-                if (!enhancements) {
-                    enhancements = {};
-                    target.enhanced = enhancements;
-                }
-                if (x > 0) {
-                    enhancements[s] = (enhancements[s] || 0) + x;
-                    if (debug) echo += debug_name(src_card) + ' enhances ' + s + ' of ' + debug_name(target, false) + ' by ' + x + '<br>';
-                } else if (mult > 0) {
-                    // temporarily use negatives for multiplier
-                    enhancements[s] = -mult;
-                    if (debug) echo += debug_name(src_card) + ' enhances ' + s + ' of ' + debug_name(target, false) + ' by ' + (mult*100) + '%<br>';
-                }
-            }
-        },
-
-        // Enhance
-        // - Can target specific faction
-        // - Targets allied, units
-        // - Target must be active this turn (for activation skills only)
-        // - Target must not be frozen (for activation skills only)
-        // - Target must have specific "enhanceable skill" ("all" versions aren't counted)
-        imbue: function (src_card, skill) {
-
-            var faction = skill['y'];
-
-            var p = get_p(src_card);
-            var o = get_o(src_card);
-
-            var x = skill['x'];
-            var c = skill['c'];
-            var s = skill['s'];
-            var all = skill['all'];
-
-            var field_p_assaults = field[p]['assaults'];
-            var require_active_turn = (s != 'counter' && s != 'counterburn' && s != 'armored' && s != 'evade');
-            var targets = [];
-            for (var key = 0, len = field_p_assaults.length; key < len; key++) {
-                var target = field_p_assaults[key];
-                if (!target.isUnjammed()) continue;
-                if (!target.isInFaction(faction)) continue;
-                if (require_active_turn && !target.isActive()) continue;
-
-                targets.push(key);
-            }
-
-            // No Targets
-            if (!targets.length) {
-                // No targets - retry next turn
-                if (skill.c) skill.countdown = 0;
-                return;
-            }
-
-            var skill = {
-                id: s,
-                x: x
-            }
-
-            // Check All
-            if (!all) {
-                targets = choose_random_target(targets);
-            }
-
-            for (var key = 0, len = targets.length; key < len; key++) {
-                var target = field_p_assaults[targets[key]];
-
-                // Check Nullify
-                if (target.nullified) {
-                    target.nullified--;
-                    if (debug) echo += debug_name(src_card) + ' enhances ' + debug_name(target) + ' but it is nullified!<br>';
-                    continue;
-                }
-
-                target.imbue(skill);
-                if (debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target, false) + ' with ' + debug_skill(skill) + '<br>';
             }
         },
 
@@ -790,7 +658,7 @@ var SIMULATOR = {};
         },
     };
 
-    var empowerSkills = {
+    var earlyActivationSkills = {
         // Rally
         // - Can target specific faction
         // - Targets allied unjammed, active assaults
@@ -939,6 +807,232 @@ var SIMULATOR = {};
                     if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
                     echo += debug_name(src_card) + ' activates fervor for ' + fervorAmount + '<br>';
                 }
+            }
+        },
+
+        // Barrage (Barrage X => X Bolt 1)
+        // - Can target specific faction
+        // - Targets enemy assaults
+        // - Can be evaded
+        // - Must calculate enfeeble/protect
+        // - Can be enhanced
+        barrage: function (src_card, skill) {
+
+            var o = get_o(src_card);
+
+            var barrages = skill.x
+            var faction = skill.y;
+            var all = skill.all;
+
+            var field_x_assaults = field[o].assaults;
+
+            var enhanced = getEnhancement(src_card, skill.id);
+            if (enhanced) {
+                if (enhanced < 0) {
+                    enhanced = Math.ceil(barrages * -enhanced);
+                }
+                barrages += enhanced;
+            }
+            for (var i = 0; i < barrages; i++) {
+                var targets = [];
+                for (var key = 0, len = field_x_assaults.length; key < len; key++) {
+                    var target = field_x_assaults[key];
+                    if (target.isAlive()
+                    && target.isInFaction(faction)) {
+                        targets.push(key);
+                    }
+                }
+
+                // No Targets
+                if (!targets.length) return;
+
+                // Check All
+                if (!all) {
+                    targets = choose_random_target(targets);
+                }
+
+                var strike = 1;
+                for (var key = 0, len = targets.length; key < len; key++) {
+                    var target = field_x_assaults[targets[key]];
+
+                    // Check Evade
+                    if (target.invisible) {
+                        target.invisible--;
+                        if (debug) echo += debug_name(src_card) + ' throws a bomb at ' + debug_name(target) + ' but it is invisible!<br>';
+                        continue;
+                    }
+
+                    var strike_damage = strike;
+
+                    // Check Protect/Enfeeble
+                    var enfeeble = 0;
+                    if (target['enfeebled']) enfeeble = target['enfeebled'];
+                    var protect = 0;
+                    if (target['protected']) protect = target['protected'];
+
+                    if (enfeeble) {
+                        strike_damage += enfeeble;
+                    }
+                    var shatter = false;
+                    if (protect) {
+                        if (strike_damage >= protect) {
+                            shatter = target.barrier_ice;
+                            target['protected'] = 0;
+                        } else {
+                            target['protected'] -= strike_damage;
+                        }
+                        strike_damage -= protect;
+                    }
+
+                    if (strike_damage < 0) {
+                        strike_damage = 0;
+                    } else {
+                        do_damage(target, strike_damage);
+                    }
+                    if (debug) {
+                        echo += '<u>(Barrage: +1';
+                        if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
+                        if (enhanced) echo += ' Enhance: +' + enhanced;
+                        if (protect) echo += ' Barrier: -' + protect;
+                        echo += ') = ' + strike_damage + ' damage</u><br>';
+                        echo += debug_name(src_card) + ' throws a bomb at ' + debug_name(target) + ' for ' + strike_damage + ' damage';
+                        echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
+                    }
+                    if (shatter) {
+                        iceshatter(target);
+                    }
+                }
+            }
+        },
+
+        // Enhance
+        // - Can target specific faction
+        // - Targets allied, units
+        // - Target must be active this turn (for activation skills only)
+        // - Target must not be frozen (for activation skills only)
+        // - Target must have specific "enhanceable skill"
+        enhance: function (src_card, skill) {
+
+            var faction = skill['y'];
+
+            var p = get_p(src_card);
+            var o = get_o(src_card);
+
+            var x = skill['x'];
+            var s = skill['s'];
+            var mult = skill['mult'];
+            var all = skill['all'];
+
+            var field_p_assaults = field[p]['assaults'];
+            var require_active_turn = (s != 'counter' && s != 'counterburn' && s != 'armored' && s != 'evade');
+            var targets = [];
+            for (var key = 0, len = field_p_assaults.length; key < len; key++) {
+                var target = field_p_assaults[key];
+                if (!target.isUnjammed()) continue;
+                if (!target.isInFaction(faction)) continue;
+                if (require_active_turn && !target.isActive()) continue;
+                if (target.hasSkill(s, 0) || target.hasSkill(s, 1)) {
+                    targets.push(key);
+                }
+            }
+
+            // No Targets
+            if (!targets.length) {
+                // No targets - retry next turn
+                if (skill.c) skill.countdown = 0;
+                return;
+            }
+
+            // Check All
+            if (!all) {
+                targets = choose_random_target(targets);
+            }
+
+            for (var key = 0, len = targets.length; key < len; key++) {
+                var target = field_p_assaults[targets[key]];
+
+                // Check Nullify
+                if (target.nullified) {
+                    target.nullified--;
+                    if (debug) echo += debug_name(src_card) + ' enhances ' + debug_name(target) + ' but it is nullified!<br>';
+                    continue;
+                }
+
+                var enhancements = target.enhanced;
+                if (!enhancements) {
+                    enhancements = {};
+                    target.enhanced = enhancements;
+                }
+                if (x > 0) {
+                    enhancements[s] = (enhancements[s] || 0) + x;
+                    if (debug) echo += debug_name(src_card) + ' enhances ' + s + ' of ' + debug_name(target, false) + ' by ' + x + '<br>';
+                } else if (mult > 0) {
+                    // temporarily use negatives for multiplier
+                    enhancements[s] = -mult;
+                    if (debug) echo += debug_name(src_card) + ' enhances ' + s + ' of ' + debug_name(target, false) + ' by ' + (mult * 100) + '%<br>';
+                }
+            }
+        },
+
+        // Enhance
+        // - Can target specific faction
+        // - Targets allied, units
+        // - Target must be active this turn (for activation skills only)
+        // - Target must not be frozen (for activation skills only)
+        // - Target must have specific "enhanceable skill" ("all" versions aren't counted)
+        imbue: function (src_card, skill) {
+
+            var faction = skill['y'];
+
+            var p = get_p(src_card);
+            var o = get_o(src_card);
+
+            var x = skill['x'];
+            var c = skill['c'];
+            var s = skill['s'];
+            var all = skill['all'];
+
+            var field_p_assaults = field[p]['assaults'];
+            var require_active_turn = (s != 'counter' && s != 'counterburn' && s != 'armored' && s != 'evade');
+            var targets = [];
+            for (var key = 0, len = field_p_assaults.length; key < len; key++) {
+                var target = field_p_assaults[key];
+                if (!target.isUnjammed()) continue;
+                if (!target.isInFaction(faction)) continue;
+                if (require_active_turn && !target.isActive()) continue;
+
+                targets.push(key);
+            }
+
+            // No Targets
+            if (!targets.length) {
+                // No targets - retry next turn
+                if (skill.c) skill.countdown = 0;
+                return;
+            }
+
+            var skill = {
+                id: s,
+                x: x
+            }
+
+            // Check All
+            if (!all) {
+                targets = choose_random_target(targets);
+            }
+
+            for (var key = 0, len = targets.length; key < len; key++) {
+                var target = field_p_assaults[targets[key]];
+
+                // Check Nullify
+                if (target.nullified) {
+                    target.nullified--;
+                    if (debug) echo += debug_name(src_card) + ' enhances ' + debug_name(target) + ' but it is nullified!<br>';
+                    continue;
+                }
+
+                target.imbue(skill);
+                if (debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target, false) + ' with ' + debug_skill(skill) + '<br>';
             }
         },
     };
@@ -1448,10 +1542,9 @@ var SIMULATOR = {};
             activation_skills(battleground);
         }
 
-        // Commander
-        // - all activation skills
-        activation_skills(field_p_commander);
-
+        // Do Commander Early Activation Skills
+        doEarlyActivationSkills(field_p.commander);
+        
         // Reset invisibility count after enhance has had a chance to fire
         for (var key = 0, len = field_p_assaults.length; key < len; key++) {
             var current_assault = field_p_assaults[key];
@@ -1467,9 +1560,12 @@ var SIMULATOR = {};
             }
         }
 
-        // Units
-        // - empower skills
-        empower_skills(field_p);
+        // Do Unit Early Activation Skills
+        doEarlyActivations(field_p);
+
+        // Commander
+        // - activation skills after units do early activation skills
+        activation_skills(field_p_commander);
 
         // Assaults
         for (var key = 0, len = field_p_assaults.length; key < len; key++) {
@@ -1556,7 +1652,7 @@ var SIMULATOR = {};
 
     function doCountDowns(unit) {
         doSkillCountDowns(unit.skill);
-        doSkillCountDowns(unit.empowerSkills);
+        doSkillCountDowns(unit.earlyActivationSkills);
 
         var dualStrike = unit.flurry;
         if (dualStrike && dualStrike.countdown) dualStrike.countdown--;

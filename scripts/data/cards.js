@@ -19155,7 +19155,7 @@ var CARDS = {
     "set": "2000",
     "card_type": "2",
     "type": "2",
-    "sub_type": ["7"],
+    "sub_type": ["7","11"],
     "attack": 3,
     "health": 12,
     "cost": 2,
@@ -19236,7 +19236,7 @@ var CARDS = {
     "set": "2000",
     "card_type": "2",
     "type": "2",
-    "sub_type": ["7"],
+    "sub_type": ["7","11"],
     "attack": 4,
     "health": 17,
     "cost": 2,
@@ -19327,7 +19327,7 @@ var CARDS = {
     "set": "2000",
     "card_type": "2",
     "type": "2",
-    "sub_type": ["7"],
+    "sub_type": ["7","11"],
     "attack": 5,
     "health": 21,
     "cost": 2,
@@ -39081,6 +39081,221 @@ var CARDS = {
       },
     }
   },
+  "5086": {
+    "id": "5086",
+    "name": "Spirit Blades",
+    "picture": "Haunted_Arsenal_A",
+    "hidden_until": "1476378000000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["7"],
+    "attack": 4,
+    "health": 16,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 2,
+      },
+      {
+        "id": "rally",
+        "x": 2,
+      },
+      {
+        "id": "flurry",
+        "c": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 2,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "3": {
+        "health": 17,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "4": {
+        "health": 18,
+        "skill": [],
+      },
+      "5": {
+        "attack": 5,
+        "health": 19,
+        "skill": [],
+      },
+    }
+  },
+  "15086": {
+    "id": "15086",
+    "name": "Possessed Blades",
+    "picture": "Haunted_Arsenal_A",
+    "hidden_until": "1476378000000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["7"],
+    "attack": 5,
+    "health": 19,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 3,
+      },
+      {
+        "id": "rally",
+        "x": 3,
+      },
+      {
+        "id": "flurry",
+        "c": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 20,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 4,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "3": {
+        "health": 21,
+        "skill": [],
+      },
+      "4": {
+        "attack": 6,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 4,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+      "5": {
+        "health": 22,
+        "skill": [],
+      },
+    }
+  },
+  "25086": {
+    "id": "25086",
+    "name": "Jester's Blades",
+    "picture": "Haunted_Arsenal_B",
+    "hidden_until": "1476378000000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["7"],
+    "attack": 6,
+    "health": 23,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 4,
+      },
+      {
+        "id": "rally",
+        "x": 4,
+      },
+      {
+        "id": "flurry",
+        "c": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 5,
+          },
+          {
+            "id": "rally",
+            "x": 4,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+      "3": {
+        "attack": 7,
+        "health": 24,
+        "skill": [],
+      },
+      "4": {
+        "health": 25,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 6,
+          },
+          {
+            "id": "rally",
+            "x": 5,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+    }
+  },
   "5087": {
     "id": "5087",
     "name": "Apollyon",
@@ -58162,6 +58377,224 @@ var CARDS = {
       },
     }
   },
+  "6084": {
+    "id": "6084",
+    "name": "Crypt Sentry",
+    "picture": "Skeleton_Dreadlord_A",
+    "hidden_until": "1476378000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["7"],
+    "attack": 2,
+    "health": 7,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "strike",
+        "x": 1,
+      },
+      {
+        "id": "flurry",
+        "c": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "strike",
+            "x": 1,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 6,
+          },
+        ],
+      },
+      "3": {
+        "health": 8,
+        "skill": [],
+      },
+      "4": {
+        "health": 9,
+        "skill": [],
+      },
+      "5": {
+        "health": 10,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "strike",
+            "x": 1,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 5,
+          },
+        ],
+      },
+    }
+  },
+  "16084": {
+    "id": "16084",
+    "name": "Crypt Watcher",
+    "picture": "Skeleton_Dreadlord_A",
+    "hidden_until": "1476378000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["7"],
+    "attack": 2,
+    "health": 11,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "strike",
+        "x": 1,
+      },
+      {
+        "id": "burn",
+        "x": 1,
+      },
+      {
+        "id": "flurry",
+        "c": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 3,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "4": {
+        "health": 12,
+        "skill": [],
+      },
+      "5": {
+        "health": 13,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+    }
+  },
+  "26084": {
+    "id": "26084",
+    "name": "Crypt Nemesis",
+    "picture": "Skeleton_Dreadlord_B",
+    "hidden_until": "1476378000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["7"],
+    "attack": 3,
+    "health": 14,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "strike",
+        "x": 2,
+      },
+      {
+        "id": "burn",
+        "x": 1,
+      },
+      {
+        "id": "flurry",
+        "c": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 15,
+        "skill": [],
+      },
+      "3": {
+        "attack": 4,
+        "skill": [],
+      },
+      "4": {
+        "health": 16,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "strike",
+            "x": 3,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+    }
+  },
   "6085": {
     "id": "6085",
     "name": "Released Captives",
@@ -58655,6 +59088,305 @@ var CARDS = {
           {
             "id": "berserk",
             "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "6091": {
+    "id": "6091",
+    "name": "Bone Sculptor",
+    "picture": "NotFound",
+    "hidden_until": "1476723600000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["11"],
+    "attack": 3,
+    "health": 13,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "7",
+        "z": 7,
+      },
+      {
+        "id": "enfeeble",
+        "x": 1,
+      },
+      {
+        "id": "poison",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "health": 15,
+        "skill": [],
+      },
+      "4": {
+        "health": 16,
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+          },
+          {
+            "id": "poison",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "attack": 4,
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "16091": {
+    "id": "16091",
+    "name": "Bone Crafter",
+    "picture": "NotFound",
+    "hidden_until": "1476723600000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["11"],
+    "attack": 4,
+    "health": 17,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 3,
+        "y": "7",
+        "z": 7,
+      },
+      {
+        "id": "enfeeble",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "poison",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 18,
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 4,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 3,
+          },
+        ],
+      },
+      "3": {
+        "health": 19,
+        "skill": [],
+      },
+      "4": {
+        "health": 20,
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 4,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "attack": 5,
+        "skill": [],
+      },
+      "6": {
+        "health": 21,
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 5,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "26091": {
+    "id": "26091",
+    "name": "Bone Contortionist",
+    "picture": "NotFound",
+    "hidden_until": "1476723600000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["11"],
+    "attack": 5,
+    "health": 22,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 5,
+        "y": "7",
+        "z": 7,
+      },
+      {
+        "id": "enfeeble",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "poison",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 23,
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 5,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 5,
+          },
+        ],
+      },
+      "3": {
+        "health": 24,
+        "skill": [],
+      },
+      "4": {
+        "attack": 6,
+        "health": 25,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 6,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 5,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 6,
+            "y": "7",
+            "z": 7,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 6,
           },
         ],
       },
@@ -78866,6 +79598,240 @@ var CARDS = {
           {
             "id": "jam",
             "c": 3,
+          },
+        ],
+      },
+    }
+  },
+  "7085": {
+    "id": "7085",
+    "name": "Moonlit Scavenger",
+    "picture": "Undead_Rat_Dog_A",
+    "hidden_until": "1476378000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["7"],
+    "attack": 1,
+    "health": 9,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 1,
+      },
+      {
+        "id": "poison",
+        "x": 1,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 10,
+        "skill": [],
+      },
+      "3": {
+        "health": 11,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 2,
+          },
+          {
+            "id": "poison",
+            "x": 1,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 2,
+          },
+          {
+            "id": "poison",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "6": {
+        "health": 12,
+        "skill": [],
+      },
+    }
+  },
+  "17085": {
+    "id": "17085",
+    "name": "Moonlit Hunter",
+    "picture": "Undead_Rat_Dog_A",
+    "hidden_until": "1476378000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["7"],
+    "attack": 2,
+    "health": 12,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 2,
+      },
+      {
+        "id": "poison",
+        "x": 2,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 13,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 2,
+          },
+          {
+            "id": "poison",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "health": 14,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 3,
+          },
+          {
+            "id": "poison",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 3,
+          },
+          {
+            "id": "poison",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "27085": {
+    "id": "27085",
+    "name": "Moonlit Pack",
+    "picture": "Undead_Rat_Dog_B",
+    "hidden_until": "1476378000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["7"],
+    "attack": 2,
+    "health": 15,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 3,
+      },
+      {
+        "id": "poison",
+        "x": 3,
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 16,
+        "skill": [],
+      },
+      "3": {
+        "attack": 3,
+        "skill": [],
+      },
+      "4": {
+        "health": 17,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 4,
+          },
+          {
+            "id": "poison",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 4,
+          },
+          {
+            "id": "poison",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
           },
         ],
       },
@@ -107944,8 +108910,8 @@ var CARDS = {
   },
   "9994": {
     "id": "9994",
-    "name": "New Art",
-    "picture": "New3_A",
+    "name": "Unused Art",
+    "picture": "Oda_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -107958,8 +108924,8 @@ var CARDS = {
   },
   "19994": {
     "id": "19994",
-    "name": "New Art",
-    "picture": "New3_B",
+    "name": "Unused Art",
+    "picture": "Oda_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -107970,10 +108936,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9993": {
-    "id": "9993",
-    "name": "New Art",
-    "picture": "New6_A",
+  "29994": {
+    "id": "29994",
+    "name": "Unused Art",
+    "picture": "Oda_C",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -107986,8 +108952,8 @@ var CARDS = {
   },
   "19993": {
     "id": "19993",
-    "name": "New Art",
-    "picture": "New6_B",
+    "name": "Unused Art",
+    "picture": "Promo_Dragon_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -108000,8 +108966,8 @@ var CARDS = {
   },
   "9992": {
     "id": "9992",
-    "name": "New Art",
-    "picture": "New7_A",
+    "name": "Unused Art",
+    "picture": "Seraph_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -108014,8 +108980,8 @@ var CARDS = {
   },
   "19992": {
     "id": "19992",
-    "name": "New Art",
-    "picture": "New7_B",
+    "name": "Unused Art",
+    "picture": "Seraph_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -108029,7 +108995,7 @@ var CARDS = {
   "9991": {
     "id": "9991",
     "name": "Unused Art",
-    "picture": "Oda_A",
+    "picture": "Tarian_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -108040,38 +109006,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19991": {
-    "id": "19991",
+  "9990": {
+    "id": "9990",
     "name": "Unused Art",
-    "picture": "Oda_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29991": {
-    "id": "29991",
-    "name": "Unused Art",
-    "picture": "Oda_C",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19990": {
-    "id": "19990",
-    "name": "Unused Art",
-    "picture": "Promo_Dragon_B",
+    "picture": "Tremor_Wurm_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -108085,21 +109023,7 @@ var CARDS = {
   "9989": {
     "id": "9989",
     "name": "Unused Art",
-    "picture": "Seraph_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19989": {
-    "id": "19989",
-    "name": "Unused Art",
-    "picture": "Seraph_B",
+    "picture": "Unused1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -108113,7 +109037,7 @@ var CARDS = {
   "9988": {
     "id": "9988",
     "name": "Unused Art",
-    "picture": "Tarian_A",
+    "picture": "Unused2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -108127,7 +109051,7 @@ var CARDS = {
   "9987": {
     "id": "9987",
     "name": "Unused Art",
-    "picture": "Tremor_Wurm_A",
+    "picture": "Unused3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -108141,7 +109065,7 @@ var CARDS = {
   "9986": {
     "id": "9986",
     "name": "Unused Art",
-    "picture": "Unused1_A",
+    "picture": "Ursurio_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -108155,7 +109079,7 @@ var CARDS = {
   "9985": {
     "id": "9985",
     "name": "Unused Art",
-    "picture": "Unused2_A",
+    "picture": "Void_Abomination_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -108168,48 +109092,6 @@ var CARDS = {
   },
   "9984": {
     "id": "9984",
-    "name": "Unused Art",
-    "picture": "Unused3_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9983": {
-    "id": "9983",
-    "name": "Unused Art",
-    "picture": "Ursurio_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9982": {
-    "id": "9982",
-    "name": "Unused Art",
-    "picture": "Void_Abomination_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9981": {
-    "id": "9981",
     "name": "Unused Art",
     "picture": "Yuriel_A",
     "rarity": "0",

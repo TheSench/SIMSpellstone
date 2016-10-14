@@ -151,6 +151,10 @@ var setupPopups = function ()
 
     $(".start-closed").accordion('option', 'active', false).show();
 
+    if (_DEFINED("spoilers")) {
+        $("#deck-container, #filter-container").accordion('option', 'active', false).show();
+    }
+
     var inputs = document.getElementsByTagName("input");
     for (var i = 0; i < inputs.length; i++)
     {
@@ -1756,7 +1760,7 @@ var showRunePicker = function (card)
 {
     var select = document.getElementById("runeChoices");
     select.innerHTML = '<option value=""></option>';
-    var showUnreleased = document.getElementById("showUnreleased").checked;
+    //var showUnreleased = document.getElementById("showUnreleased").checked;
 
     optionsDialog.hiddenOptions = [];
 
@@ -1773,12 +1777,14 @@ var showRunePicker = function (card)
                 option.appendChild(document.createTextNode(rune.desc));
                 option.value = rune.id;
                 select.appendChild(option);
+                /*
                 if (rune.rarity > 3)
                 {
                     optionsDialog.hiddenOptions.push(option);
                     option.hidden = !showUnreleased;
                     option.disabled = !showUnreleased;
                 }
+                */
             }
         }
 

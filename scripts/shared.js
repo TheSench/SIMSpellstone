@@ -229,9 +229,9 @@ function cloneCard(original) {
     copy.reusableSkills = original.reusableSkills;
     if (original.reusableSkills) {
         copy.skill = original.skill;
-        copy.empowerSkills = original.empowerSkills;
+        copy.earlyActivationSkills = original.earlyActivationSkills;
     } else {
-        copy_skills(copy, original.skill, original.empowerSkills);
+        copy_skills(copy, original.skill, original.earlyActivationSkills);
     }
     copy.highlighted = original.highlighted;
     copy.runes = original.runes;
@@ -507,18 +507,19 @@ var makeUnit = (function () {
                         this.imbued.flurry = true;
                     }
                     return;
-                    // Early Activation skills
+                // Early Activation skills
+                case 'imbue':
+                case 'enhance':
                 case 'fervor':
                 case 'rally':
                 case 'legion':
-                    imbueSkillsKey = 'empowerSkills';
+                case 'barrage':
+                    imbueSkillsKey = 'earlyActivationSkills';
                     break;
-                    // Activation skills (can occur twice on a card)
+                // Activation skills (can occur twice on a card)
                 case 'enfeeble':
-                case 'enhance':
                 case 'frost':
                 case 'heal':
-                case 'imbue':
                 case 'jam':
                 case 'protect':
                 case 'protect_ice':
@@ -543,7 +544,7 @@ var makeUnit = (function () {
             if (imbue) {
                 for (var key in imbue) {
                     var imbuement = imbue[key];
-                    if (key == "skill" || key == "empowerSkills") {
+                    if (key == "skill" || key == "earlyActivationSkills") {
                         this[key] = this[key].slice(0, imbuement);
                     } else {
                         this[key] -= imbuement;
@@ -574,18 +575,19 @@ var makeUnit = (function () {
                 case 'valor':
                     return this[s];
                     break;
-                    // Early Activation skills
+                // Early Activation skills
+                case 'imbue':
+                case 'enhance':
                 case 'rally':
                 case 'legion':
                 case 'fervor':
-                    target_skills = this.empowerSkills;
+                case 'barrage':
+                    target_skills = this.earlyActivationSkills;
                     break;
-                    // Activation skills
+                // Activation skills
                 case 'enfeeble':
-                case 'enhance':
                 case 'frost':
                 case 'heal':
-                case 'imbue':
                 case 'jam':
                 case 'protect':
                 case 'protect_ice':
@@ -893,7 +895,7 @@ var MakeBattleground = (function () {
 
 function copy_skills_2(new_card, original_skills, mult) {
     new_card.skill = [];
-    new_card.empowerSkills = [];
+    new_card.earlyActivationSkills = [];
     var skillTimers = [];
     var reusable = true;
     for (var key in original_skills) {
@@ -937,18 +939,19 @@ function setSkill_2(new_card, skill) {
         case 'flurry':
             new_card[skill.id] = skill;
             break;
-            // Empower Skills
+        // Early Activation Skills
+        case 'imbue':
+        case 'enhance':
         case 'fervor':
         case 'rally':
         case 'legion':
-            new_card.empowerSkills.push(skill);
+        case 'barrage':
+            new_card.earlyActivationSkills.push(skill);
             break;
             // Activation skills (can occur twice on a card)
         case 'enfeeble':
-        case 'enhance':
         case 'frost':
         case 'heal':
-        case 'imbue':
         case 'jam':
         case 'protect':
         case 'protect_ice':
@@ -962,13 +965,13 @@ function setSkill_2(new_card, skill) {
     }
 }
 
-function copy_skills(new_card, original_skills, original_empower_skills) {
+function copy_skills(new_card, original_skills, original_earlyActivation_Skills) {
     new_card.skill = [];
-    new_card.empowerSkills = [];
+    new_card.earlyActivationSkills = [];
     if (!new_card.skillTimers) new_card.skillTimers = [];
 
     copy_Skill_lists(new_card, new_card.skill, original_skills);
-    copy_Skill_lists(new_card, new_card.empowerSkills, original_empower_skills);
+    copy_Skill_lists(new_card, new_card.earlyActivationSkills, original_earlyActivation_Skills);
 }
 
 function copy_Skill_lists(new_card, new_skills, original_skills) {
@@ -1227,8 +1230,8 @@ function generate_play_list(cards) {
 function debug_skills(card) {
     var skillText = [];
 
-    for (var key in card.empowerSkills) {
-        skillText.push(debug_skill(card.empowerSkills[key]));
+    for (var key in card.earlyActivationSkills) {
+        skillText.push(debug_skill(card.earlyActivationSkills[key]));
     }
     for (var key in card.skill) {
         skillText.push(debug_skill(card.skill[key]));

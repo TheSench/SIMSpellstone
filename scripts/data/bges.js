@@ -156,6 +156,20 @@ var BATTLEGROUNDS = {
       },
     ]
   },
+  "112": {
+    "name": "Goblin Barrage",
+    "id": "112",
+    "effect": [
+      {
+        "effect_type": "add_skill",
+        "id": "barrage",
+        "mult": 1,
+        "base": "attack",
+        "y": "11",
+        "z": 11,
+      },
+    ]
+  },
   "501": {
     "name": "Castle Siege",
     "id": "501",
@@ -574,6 +588,81 @@ var BATTLEGROUNDS = {
         "all": "1",
       },
     ]
+  },
+  "512": {
+    "name": "Defender's Castle",
+    "id": "512",
+    "isTower": true,
+    "effect": {
+        "2": {
+        	"id": 601,
+        	"level": 1,
+        },
+        "3": {
+        	"id": 601,
+        	"level": 2,
+        },
+        "4": {
+        	"id": 601,
+        	"level": 3,
+        },
+        "5": {
+        	"id": 601,
+        	"level": 4,
+        },
+        "6": {
+        	"id": 601,
+        	"level": 5,
+        },
+        "7": {
+        	"id": 601,
+        	"level": 6,
+        },
+        "8": {
+        	"id": 601,
+        	"level": 7,
+        },
+        "9": {
+        	"id": 601,
+        	"level": 8,
+        },
+        "10": {
+        	"id": 601,
+        	"level": 9,
+        },
+        "11": {
+        	"id": 601,
+        	"level": 10,
+        },
+        "12": {
+        	"id": 601,
+        	"level": 11,
+        },
+        "13": {
+        	"id": 601,
+        	"level": 12,
+        },
+        "14": {
+        	"id": 601,
+        	"level": 13,
+        },
+        "15": {
+        	"id": 601,
+        	"level": 14,
+        },
+        "16": {
+        	"id": 601,
+        	"level": 15,
+        },
+        "17": {
+        	"id": 601,
+        	"level": 16,
+        },
+        "18": {
+        	"id": 601,
+        	"level": 17,
+        },
+    }
   },
   "10001": {
     "name": "Primal Mending",

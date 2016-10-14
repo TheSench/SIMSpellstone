@@ -181,6 +181,32 @@
       </skill>
     </effect>
   </battleground>
+  <battleground>
+    <id>112</id>
+    <name>Goblin Barrage</name>
+    <desc>Each Goblin throws a number of bombs equal to their base Attack at the start of each turn before other skills. Each bomb deals 1 damage.</desc>
+    <icon>filter_goblin_64</icon>
+    <effect>
+      <add_skill id="barrage" mult="1" base="attack" y="11" />
+      <skill id="displayEffect" trigger="onSkill" y="11" s="barrage">
+        <projectile_effect>
+          <prefab>goblinBombProjectile</prefab>
+          <bundle_id>75</bundle_id>
+          <delay>0</delay>
+          <duration>.75</duration>
+          <translation>.75</translation>
+          <offset>0</offset>
+        </projectile_effect>
+        <target_effect>
+          <prefab>goblinBombTarget</prefab>
+          <bundle_id>75</bundle_id>
+          <delay>.75</delay>
+          <duration>1.25</duration>
+          <shake>true</shake>
+        </target_effect>
+      </skill>
+    </effect>
+  </battleground>
   <!-- 501-1000: Specialty BGE -->
   <battleground>
     <id>501</id>
@@ -411,6 +437,32 @@
     <icon_bundle>69</icon_bundle>
     <effect>
       <skill id="enhance" s="protect" mult="0.5" all="1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>512</id>
+    <name>Defender's Castle</name>
+    <desc>Players who go second start with a Castle Tower card.</desc>
+    <web_picture>filter_tower_64.png</web_picture>
+    <icon>filter_tower_64</icon>
+    <effect>
+      <starting_card id="601" level="1" pvp_rank="2" />
+      <starting_card id="601" level="2" pvp_rank="3" />
+      <starting_card id="601" level="3" pvp_rank="4" />
+      <starting_card id="601" level="4" pvp_rank="5" />
+      <starting_card id="601" level="5" pvp_rank="6" />
+      <starting_card id="601" level="6" pvp_rank="7" />
+      <starting_card id="601" level="7" pvp_rank="8" />
+      <starting_card id="601" level="8" pvp_rank="9" />
+      <starting_card id="601" level="9" pvp_rank="10" />
+      <starting_card id="601" level="10" pvp_rank="11" />
+      <starting_card id="601" level="11" pvp_rank="12" />
+      <starting_card id="601" level="12" pvp_rank="13" />
+      <starting_card id="601" level="13" pvp_rank="14" />
+      <starting_card id="601" level="14" pvp_rank="15" />
+      <starting_card id="601" level="15" pvp_rank="16" />
+      <starting_card id="601" level="16" pvp_rank="17" />
+      <starting_card id="601" level="17" pvp_rank="18" />
     </effect>
   </battleground>
   <!-- 1001+: Personal BGE -->
