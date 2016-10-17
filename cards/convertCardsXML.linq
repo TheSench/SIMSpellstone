@@ -139,7 +139,7 @@ void Main()
 		}
 		var imageName = key.Substring(0, split);
 		var suffix = image.Key[split + 1];
-		var fusion = suffixMap[suffix];
+		int fusion = suffixMap[suffix];
 		
 		string fullID;
 		if (unusedIDHash.ContainsKey(imageName))

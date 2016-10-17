@@ -184,7 +184,7 @@
   <battleground>
     <id>112</id>
     <name>Goblin Barrage</name>
-    <desc>Each Goblin throws a number of bombs equal to their base Attack at the start of each turn before other skills. Each bomb deals 1 damage.</desc>
+    <desc>Each active Goblin throws a number of bombs equal to their base Attack at the start of each turn before other skills. Each bomb deals 1 damage.</desc>
     <icon>filter_goblin_64</icon>
     <effect>
       <add_skill id="barrage" mult="1" base="attack" y="11" />

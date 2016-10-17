@@ -32006,6 +32006,7 @@
     <skill id="enfeeble" x="1" />
     <skill id="poison" x="2" />
     <type>2</type>
+    <sub_type>7</sub_type>
     <sub_type>11</sub_type>
     <set>4000</set>
     <upgrade>
@@ -32053,6 +32054,7 @@
     <skill id="enfeeble" x="1" all="1" />
     <skill id="poison" x="3" />
     <type>2</type>
+    <sub_type>7</sub_type>
     <sub_type>11</sub_type>
     <set>4000</set>
     <upgrade>
@@ -32101,6 +32103,7 @@
     <skill id="enfeeble" x="1" all="1" />
     <skill id="poison" x="4" />
     <type>2</type>
+    <sub_type>7</sub_type>
     <sub_type>11</sub_type>
     <set>4000</set>
     <upgrade>
