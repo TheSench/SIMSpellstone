@@ -11014,7 +11014,7 @@
     <id>5366</id>
     <name>One Star Service</name>
     <energy>11</energy>
-    <desc>The guards have locked Decim away in (location);. Decim sits in a cell, the lone inhabitant of the dungeon, and mourns his fate.</desc>
+    <desc>The guards have locked Decim away in the Goblin Fortress. Decim sits in a cell, the lone inhabitant of the dungeon, and mourns his fate.</desc>
     <commander id="320" />
     <deck>
       <card id="6007" name="Goblin Crew" />
@@ -11196,7 +11196,7 @@
     <id>5372</id>
     <name>Relentless Guards</name>
     <energy>11</energy>
-    <desc>Decim has escaped the prison complex with his new friends, but still needs to find a way out of &lt;location&gt;. He looks around wildly for a place to escape, while fighting off the goblin guards...</desc>
+    <desc>Decim has escaped the prison complex with his new friends, but still needs to find a way out of the Goblin Fortress. He looks around wildly for a place to escape, while fighting off the goblin guards...</desc>
     <commander id="321" />
     <deck>
       <card id="6007" name="Goblin Crew" />
@@ -11314,7 +11314,7 @@
     <id>5376</id>
     <name>Final Push</name>
     <energy>11</energy>
-    <desc>Decim realizes that the mechanical dragonlings seem to be attracted by the sparkler's light! He waves the light around frantically, orchestrating the windup creatures to follow him.</desc>
+    <desc>Decim realizes that the mechanical dragonlings seem to be attracted by the sparkler's light! He waves the light around frantically, orchestrating the wind-up creatures to follow him.</desc>
     <commander id="323" />
     <deck>
       <card id="6007" name="Goblin Crew" />
@@ -11535,7 +11535,7 @@
     <id>5383</id>
     <name>Negotiations</name>
     <energy>11</energy>
-    <desc>With the rest of the Undead gone, the threat has vanished from (location). With the immediate threat gone, the goblin guards surround Decim...</desc>
+    <desc>With the rest of the Undead gone, the threat has vanished from the Goblin Fortress. With the immediate threat gone, the goblin guards surround Decim...</desc>
     <commander id="311" />
     <deck>
       <card id="1014" name="Cherub" />
@@ -11585,7 +11585,7 @@
       <line>
         <commander>Portrait_Goblin_Captain</commander>
         <enemy>1</enemy>
-        <text>Aye, you're welcome in (location) anytime, lad.</text>
+        <text>Aye, you're welcome in our fort anytime, lad.</text>
       </line>
       <line>
         <commander>flamebender</commander>

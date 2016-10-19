@@ -589,7 +589,14 @@ var CAMPAIGNS = {
     "name": "Common Enemy",
     "location_id": "105",
     "side_mission": "",
-    "missions": ["5377","5378","5379","5380","5381","5382","5383","5384"]
+    "missions": ["5377","5378","5379","5380"]
+  },
+  "1095": {
+    "id": "1095",
+    "name": "New Friends",
+    "location_id": "105",
+    "side_mission": "",
+    "missions": ["5381","5382","5383","5384"]
   },
   "1036": {
     "id": "1036",

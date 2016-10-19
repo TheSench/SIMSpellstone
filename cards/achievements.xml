@@ -4778,9 +4778,40 @@
     <name>Common Enemy</name>
     <desc>Complete the 'Common Enemy' campaign on Mastery Level 7.</desc>
     <event_only>1</event_only>
-    <achievement_req>3159</achievement_req>
+    <achievement_req>3160</achievement_req>
     <req>
       <campaign>1094</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3162</id>
+    <type>2</type>
+    <order>101</order>
+    <name>New Friends</name>
+    <desc>Complete the 'New Friends' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1095</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3163</id>
+    <type>2</type>
+    <order>101</order>
+    <name>New Friends</name>
+    <desc>Complete the 'New Friends' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3162</achievement_req>
+    <req>
+      <campaign>1095</campaign>
       <level>7</level>
     </req>
     <reward>
