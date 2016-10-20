@@ -10845,7 +10845,7 @@
     <id>5361</id>
     <name>Nomadic Travels</name>
     <energy>11</energy>
-    <desc>Decim has wandered across the lands, searching for a baby dragon of his own. During his travels, he comes across the Goblin Kingdom.</desc>
+    <desc>Decim has wandered across the lands, searching for a baby dragon of his own. During his travels, he comes across Goblin Rise Stronghold, in the Goblin Kingdom.</desc>
     <commander id="316" />
     <deck>
       <card id="6007" name="Goblin Crew" />
@@ -10928,7 +10928,7 @@
         <text>Are these... fireworks? Sweet, I love explosions!</text>
       </line>
       <line>
-        <commander>elyse</commander>
+        <commander>mechanicgoblin</commander>
         <enemy>1</enemy>
         <text>Oy, this's private property! Whaddya think yer doin'?</text>
       </line>
@@ -10959,7 +10959,7 @@
     </deck>
     <speech>
       <line>
-        <commander>elyse</commander>
+        <commander>mechanicgoblin</commander>
         <enemy>1</enemy>
         <text>Guards, guuuards! This man's trying to destroy my property!</text>
       </line>
@@ -11014,7 +11014,7 @@
     <id>5366</id>
     <name>One Star Service</name>
     <energy>11</energy>
-    <desc>The guards have locked Decim away in the Goblin Fortress. Decim sits in a cell, the lone inhabitant of the dungeon, and mourns his fate.</desc>
+    <desc>The guards have locked Decim away in the prison depths of Goblin Rise Stronghold. Decim sits in a cell, the lone inhabitant of the dungeon, and mourns his fate.</desc>
     <commander id="320" />
     <deck>
       <card id="6007" name="Goblin Crew" />
@@ -11116,7 +11116,7 @@
         <text>Is that... A baby dragon?! Hang on buddy, I'll get you out of there!</text>
       </line>
       <line>
-        <commander>elyse</commander>
+        <commander>windupdragons</commander>
         <enemy>1</enemy>
         <text>Ch-ch-ch!</text>
       </line>
@@ -11196,7 +11196,7 @@
     <id>5372</id>
     <name>Relentless Guards</name>
     <energy>11</energy>
-    <desc>Decim has escaped the prison complex with his new friends, but still needs to find a way out of the Goblin Fortress. He looks around wildly for a place to escape, while fighting off the goblin guards...</desc>
+    <desc>Decim has escaped the prison complex with his new friends, but still needs to find a way out of Goblin Rise Stronghold. He looks around wildly for a place to escape, while fighting off the goblin guards...</desc>
     <commander id="321" />
     <deck>
       <card id="6007" name="Goblin Crew" />
@@ -11239,7 +11239,7 @@
     </deck>
     <speech>
       <line>
-        <commander>elyse</commander>
+        <commander>mechanicgoblin</commander>
         <enemy>1</enemy>
         <text>You! What are you doing with my creations?!</text>
       </line>
@@ -11299,7 +11299,7 @@
     </deck>
     <speech>
       <line>
-        <commander>elyse</commander>
+        <commander>mechanicgoblin</commander>
         <enemy>1</enemy>
         <text>Those things were locked away because they're so dangerous, but I didn't have the heart to destroy them. Please, you must listen to me and return them.</text>
       </line>
@@ -11344,7 +11344,7 @@
     <id>5377</id>
     <name>Termite Double Dragons</name>
     <energy>11</energy>
-    <desc>The wind-up dragonlings run straight against the fort's wall, their metal jaws chomping through the wood. The guards are unable to stop Decim or the creations.</desc>
+    <desc>The wind-up dragonlings run straight against the stronghold's wall, their metal jaws chomping through the wood. The guards are unable to stop Decim or the creations.</desc>
     <commander id="340" />
     <deck>
       <card id="1011" name="Archive Keeper" />
@@ -11379,7 +11379,7 @@
     <id>5378</id>
     <name>Surprise Attack</name>
     <energy>11</energy>
-    <desc>Decim has a clear shot of running away, when he hears a cry of alarm behind him. Turning around, he sees a pack of Undead has wandered into the Goblin fort!</desc>
+    <desc>Decim has a clear shot of running away, when he hears a cry of alarm behind him. Turning around, he sees a pack of Undead has wandered into Goblin Rise Stronghold!</desc>
     <commander id="265" />
     <deck>
       <card id="1311" name="Molten Skeleton" />
@@ -11402,7 +11402,7 @@
     <id>5379</id>
     <name>A Mentor's Wisdom</name>
     <energy>11</energy>
-    <desc>Decim abandons his original escape plan, moving back to the fort. The goblins need his help! He remembers the teachings of his mentor, that he should help those in need and maintain a clear focus...</desc>
+    <desc>Decim abandons his original escape plan, moving back to the stronghold. The goblins need his help! He remembers the teachings of his mentor, that he should help those in need and maintain a clear focus...</desc>
     <commander id="268" />
     <deck>
       <card id="1311" name="Molten Skeleton" />
@@ -11422,7 +11422,7 @@
     </deck>
     <speech>
       <line>
-        <commander>elyse</commander>
+        <commander>mechanicgoblin</commander>
         <enemy>1</enemy>
         <text>Somebody, help!</text>
       </line>
@@ -11485,7 +11485,7 @@
     </deck>
     <speech>
       <line>
-        <commander>elyse</commander>
+        <commander>mechanicgoblin</commander>
         <enemy>1</enemy>
         <text>You came back... to save me?</text>
       </line>
@@ -11535,7 +11535,7 @@
     <id>5383</id>
     <name>Negotiations</name>
     <energy>11</energy>
-    <desc>With the rest of the Undead gone, the threat has vanished from the Goblin Fortress. With the immediate threat gone, the goblin guards surround Decim...</desc>
+    <desc>With the rest of the Undead gone, the threat has vanished from Goblin Rise Stronghold. With the immediate threat gone, the goblin guards surround Decim...</desc>
     <commander id="311" />
     <deck>
       <card id="1014" name="Cherub" />
@@ -11578,14 +11578,14 @@
     </deck>
     <speech>
       <line>
-        <commander>elyse</commander>
+        <commander>mechanicgoblin</commander>
         <enemy>1</enemy>
         <text>You saved me... saved all of us! I'm sorry, I misjudged you.</text>
       </line>
       <line>
         <commander>Portrait_Goblin_Captain</commander>
         <enemy>1</enemy>
-        <text>Aye, you're welcome in our fort anytime, lad.</text>
+        <text>Aye, you're welcome in our stronghold anytime, lad.</text>
       </line>
       <line>
         <commander>flamebender</commander>
@@ -11593,7 +11593,7 @@
         <text>Cool, but all I wanted was a baby dragon. Hey little guy, why don't you come with m-</text>
       </line>
       <line>
-        <commander>necromancer</commander>
+        <commander>mechanicdragon</commander>
         <enemy>1</enemy>
         <text>CHOMP</text>
       </line>

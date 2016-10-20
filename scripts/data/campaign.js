@@ -47,6 +47,10 @@ var LOCATIONS = {
     "id": "110",
     "name": "Beetleton Bunker",
   },
+  "111": {
+    "id": "111",
+    "name": "Goblin Rise Stronghold",
+  },
   "2": {
     "id": "2",
     "name": "Luminis",
@@ -563,41 +567,6 @@ var CAMPAIGNS = {
     "side_mission": "",
     "missions": ["5353","5354","5355","5356","5357","5358","5359","5360"]
   },
-  "1091": {
-    "id": "1091",
-    "name": "Decim and the Goblins",
-    "location_id": "105",
-    "side_mission": "",
-    "missions": ["5361","5362","5363","5364","5365"]
-  },
-  "1092": {
-    "id": "1092",
-    "name": "Dungeon Depths",
-    "location_id": "105",
-    "side_mission": "",
-    "missions": ["5366","5367","5368","5369","5370"]
-  },
-  "1093": {
-    "id": "1093",
-    "name": "The Fugitive",
-    "location_id": "105",
-    "side_mission": "",
-    "missions": ["5371","5372","5373","5374","5375","5376"]
-  },
-  "1094": {
-    "id": "1094",
-    "name": "Common Enemy",
-    "location_id": "105",
-    "side_mission": "",
-    "missions": ["5377","5378","5379","5380"]
-  },
-  "1095": {
-    "id": "1095",
-    "name": "New Friends",
-    "location_id": "105",
-    "side_mission": "",
-    "missions": ["5381","5382","5383","5384"]
-  },
   "1036": {
     "id": "1036",
     "name": "To Skyhaven",
@@ -835,6 +804,41 @@ var CAMPAIGNS = {
     "location_id": "110",
     "side_mission": "",
     "missions": ["5287","5288","5289"]
+  },
+  "1091": {
+    "id": "1091",
+    "name": "Decim and the Goblins",
+    "location_id": "111",
+    "side_mission": "",
+    "missions": ["5361","5362","5363","5364","5365"]
+  },
+  "1092": {
+    "id": "1092",
+    "name": "Dungeon Depths",
+    "location_id": "111",
+    "side_mission": "",
+    "missions": ["5366","5367","5368","5369","5370"]
+  },
+  "1093": {
+    "id": "1093",
+    "name": "The Fugitive",
+    "location_id": "111",
+    "side_mission": "",
+    "missions": ["5371","5372","5373","5374","5375","5376"]
+  },
+  "1094": {
+    "id": "1094",
+    "name": "Common Enemy",
+    "location_id": "111",
+    "side_mission": "",
+    "missions": ["5377","5378","5379","5380"]
+  },
+  "1095": {
+    "id": "1095",
+    "name": "New Friends",
+    "location_id": "111",
+    "side_mission": "",
+    "missions": ["5381","5382","5383","5384"]
   },
   "10": {
     "id": "10",

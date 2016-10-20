@@ -465,6 +465,16 @@
       <starting_card id="601" level="17" pvp_rank="18" />
     </effect>
   </battleground>
+  <battleground>
+    <id>513</id>
+    <name>Firestarter</name>
+    <desc>Scorch skills deal 50% more damage.</desc>
+    <icon>firestarter_64</icon>
+    <icon_bundle>75</icon_bundle>
+    <effect>
+      <skill id="enhance" s="burn" mult="0.5" all="1" />
+    </effect>
+  </battleground>
   <!-- 1001+: Personal BGE -->
   <battleground>
     <id>10001</id>

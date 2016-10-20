@@ -65,6 +65,11 @@
     <!-- player has edited deck -->
   </feature_lock>
   <feature_lock>
+    <id>crafting</id>
+    <mission_req>11</mission_req>
+    <!-- 244 -->
+  </feature_lock>
+  <feature_lock>
     <id>livepvp</id>
     <achievement_req>451</achievement_req>
     <!-- player has reached bounty rank 5 deck -->
@@ -6147,6 +6152,16 @@
     <id>110</id>
     <name>Beetleton Bunker</name>
     <mapBG>Map_Beetleton_Bunker</mapBG>
+    <asset_bundle>66</asset_bundle>
+    <combatBG>CombatBGVoid</combatBG>
+    <req>-1</req>
+    <arena_x>250</arena_x>
+    <arena_y>150</arena_y>
+  </location>
+  <location>
+    <id>111</id>
+    <name>Goblin Rise Stronghold</name>
+    <mapBG>Map_Goblin_Fortress</mapBG>
     <asset_bundle>66</asset_bundle>
     <combatBG>CombatBGVoid</combatBG>
     <req>-1</req>

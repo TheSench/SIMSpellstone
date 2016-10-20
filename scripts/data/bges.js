@@ -664,6 +664,19 @@ var BATTLEGROUNDS = {
         },
     }
   },
+  "513": {
+    "name": "Firestarter",
+    "id": "513",
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "enhance",
+        "mult": 0.5,
+        "s": "burn",
+        "all": "1",
+      },
+    ]
+  },
   "10001": {
     "name": "Primal Mending",
     "id": "10001",

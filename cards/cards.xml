@@ -9450,6 +9450,7 @@
       <skill id="fervor" x="1" y="2" />
       <skill id="strike" x="3" />
     </upgrade>
+    <desc>"This seemed like such a good idea before I got on the rocket..."</desc>
   </unit>
   <unit>
     <id>12053</id>
@@ -10502,7 +10503,7 @@
   <unit>
     <id>2062</id>
     <card_type>2</card_type>
-    <name></name>
+    <name>Deadeye Apprentice</name>
     <picture>Mad_Scientist_Goblin_A</picture>
     <asset_bundle>74</asset_bundle>
     <hidden_until_time>1476982800</hidden_until_time>
@@ -10512,7 +10513,7 @@
     <rarity>3</rarity>
     <skill id="burn" x="1" />
     <skill id="poison" x="1" />
-    <type>1</type>
+    <type>2</type>
     <sub_type>11</sub_type>
     <set>2000</set>
     <upgrade>
@@ -10532,12 +10533,13 @@
       <skill id="burn" x="1" />
       <skill id="poison" x="2" />
     </upgrade>
+    <desc>"A drop of moose blood and the eye of a pigeon makes the perfect creation..."</desc>
   </unit>
   <unit>
     <id>12062</id>
     <card_type>2</card_type>
     <fusion_level>1</fusion_level>
-    <name></name>
+    <name>Deadeye Journeyman</name>
     <picture>Mad_Scientist_Goblin_A</picture>
     <asset_bundle>74</asset_bundle>
     <hidden_until_time>1476982800</hidden_until_time>
@@ -10545,19 +10547,19 @@
     <health>14</health>
     <cost>2</cost>
     <rarity>3</rarity>
+    <skill id="evade" x="1" />
     <skill id="burn" x="1" />
     <skill id="poison" x="2" />
-    <type>1</type>
+    <type>2</type>
     <sub_type>11</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <skill id="burn" x="2" />
-      <skill id="poison" x="2" />
+      <health>15</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>15</health>
+      <health>16</health>
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -10565,14 +10567,16 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>16</health>
+      <skill id="evade" x="1" />
+      <skill id="burn" x="2" />
+      <skill id="poison" x="2" />
     </upgrade>
   </unit>
   <unit>
     <id>22062</id>
     <card_type>2</card_type>
     <fusion_level>2</fusion_level>
-    <name></name>
+    <name>Deadeye Alchemist</name>
     <picture>Mad_Scientist_Goblin_B</picture>
     <asset_bundle>74</asset_bundle>
     <hidden_until_time>1476982800</hidden_until_time>
@@ -10583,7 +10587,7 @@
     <skill id="evade" x="1" />
     <skill id="burn" x="2" />
     <skill id="poison" x="3" />
-    <type>1</type>
+    <type>2</type>
     <sub_type>11</sub_type>
     <set>2000</set>
     <upgrade>
@@ -10608,7 +10612,7 @@
   <unit>
     <id>2063</id>
     <card_type>2</card_type>
-    <name></name>
+    <name>Hob Fletcher</name>
     <picture>Ranger_Goblin_A</picture>
     <asset_bundle>74</asset_bundle>
     <hidden_until_time>1476982800</hidden_until_time>
@@ -10616,8 +10620,7 @@
     <health>8</health>
     <cost>1</cost>
     <rarity>3</rarity>
-    <skill id="burn" x="1" />
-    <skill id="poison" x="1" />
+    <skill id="pierce" x="1" />
     <skill id="berserk" x="1" />
     <type>3</type>
     <set>2000</set>
@@ -10627,24 +10630,28 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>10</health>
+      <skill id="pierce" x="1" />
+      <skill id="poison" x="1" />
+      <skill id="berserk" x="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="burn" x="1" />
-      <skill id="poison" x="2" />
-      <skill id="berserk" x="1" />
+      <health>10</health>
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>11</health>
+      <skill id="pierce" x="2" />
+      <skill id="poison" x="2" />
+      <skill id="berserk" x="1" />
     </upgrade>
+    <desc>"We were impressed with the way some goblins used tools to keep themselves safely from danger. Hopefully they can refrain from adding fire to archery as well." - Burned Researcher Notes</desc>
   </unit>
   <unit>
     <id>12063</id>
     <card_type>2</card_type>
     <fusion_level>1</fusion_level>
-    <name></name>
+    <name>Feral Fletcher</name>
     <picture>Ranger_Goblin_A</picture>
     <asset_bundle>74</asset_bundle>
     <hidden_until_time>1476982800</hidden_until_time>
@@ -10652,14 +10659,14 @@
     <health>11</health>
     <cost>1</cost>
     <rarity>3</rarity>
-    <skill id="burn" x="1" />
+    <skill id="pierce" x="2" />
     <skill id="poison" x="2" />
     <skill id="berserk" x="1" />
     <type>3</type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
-      <skill id="burn" x="2" />
+      <skill id="pierce" x="3" />
       <skill id="poison" x="2" />
       <skill id="berserk" x="1" />
     </upgrade>
@@ -10673,7 +10680,7 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="burn" x="2" />
+      <skill id="pierce" x="3" />
       <skill id="poison" x="3" />
       <skill id="berserk" x="1" />
     </upgrade>
@@ -10682,7 +10689,7 @@
     <id>22063</id>
     <card_type>2</card_type>
     <fusion_level>2</fusion_level>
-    <name></name>
+    <name>Savage Fletcher</name>
     <picture>Ranger_Goblin_B</picture>
     <asset_bundle>74</asset_bundle>
     <hidden_until_time>1476982800</hidden_until_time>
@@ -10690,7 +10697,7 @@
     <health>14</health>
     <cost>1</cost>
     <rarity>3</rarity>
-    <skill id="burn" x="2" />
+    <skill id="pierce" x="3" />
     <skill id="poison" x="3" />
     <skill id="berserk" x="1" />
     <type>3</type>
@@ -10702,16 +10709,19 @@
     <upgrade>
       <level>3</level>
       <health>15</health>
+      <skill id="pierce" x="4" />
+      <skill id="poison" x="3" />
+      <skill id="berserk" x="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="burn" x="2" />
+      <skill id="pierce" x="4" />
       <skill id="poison" x="3" />
       <skill id="berserk" x="2" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="burn" x="3" />
+      <skill id="pierce" x="5" />
       <skill id="poison" x="4" />
       <skill id="berserk" x="2" />
     </upgrade>
@@ -10844,7 +10854,7 @@
   <unit>
     <id>2065</id>
     <card_type>2</card_type>
-    <name>Pinpin, Dragon Tamer</name>
+    <name>Pinpin, Dragon Handler</name>
     <picture>Goblin_Riding_Dragon_A</picture>
     <asset_bundle>74</asset_bundle>
     <hidden_until_time>1476982800</hidden_until_time>
@@ -21767,6 +21777,137 @@
       <skill id="flurry" c="3" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5088</id>
+    <card_type>2</card_type>
+    <name>Betrayal</name>
+    <picture>Demon_Skull_Goblin_Angel_A</picture>
+    <asset_bundle>74</asset_bundle>
+    <hidden_until_time>1476982800</hidden_until_time>
+    <attack>4</attack>
+    <health>9</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="1" />
+    <skill id="nullify" x="1" />
+    <skill id="flurry" c="6" />
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="valor" x="1" />
+      <skill id="nullify" x="1" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="valor" x="2" />
+      <skill id="nullify" x="1" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="valor" x="2" />
+      <skill id="nullify" x="1" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15088</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Harsh Betrayal</name>
+    <picture>Demon_Skull_Goblin_Angel_A</picture>
+    <asset_bundle>74</asset_bundle>
+    <hidden_until_time>1476982800</hidden_until_time>
+    <attack>4</attack>
+    <health>12</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="2" />
+    <skill id="nullify" x="1" />
+    <skill id="flurry" c="4" />
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="valor" x="2" />
+      <skill id="nullify" x="2" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="valor" x="3" />
+      <skill id="nullify" x="2" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25088</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Fatal Betrayal</name>
+    <picture>Demon_Skull_Goblin_Angel_B</picture>
+    <asset_bundle>74</asset_bundle>
+    <hidden_until_time>1476982800</hidden_until_time>
+    <attack>5</attack>
+    <health>14</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="3" />
+    <skill id="nullify" x="2" />
+    <skill id="flurry" c="3" />
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="valor" x="4" />
+      <skill id="nullify" x="3" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+  </unit>
   <!-- Chaos Premium Begin -->
   <unit>
     <id>6000</id>
@@ -30555,6 +30696,7 @@
       <level>5</level>
       <health>8</health>
     </upgrade>
+    <desc>"The boomerangs work great, the problem is that the goblins can never stay still long enough for it to return." - Discarded Researcher Notes</desc>
   </unit>
   <unit>
     <id>16072</id>
@@ -32468,6 +32610,127 @@
       <skill id="evade" x="2" />
       <skill id="weaken" x="3" all="1" />
       <skill id="berserk" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6089</id>
+    <card_type>2</card_type>
+    <name>Fire Belcher</name>
+    <picture>Fire_Eating_Goblin_A</picture>
+    <asset_bundle>74</asset_bundle>
+    <hidden_until_time>1476982800</hidden_until_time>
+    <attack>3</attack>
+    <health>11</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="strike" x="1" />
+    <skill id="burn" x="1" />
+    <skill id="pierce" x="1" />
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>13</health>
+      <skill id="strike" x="1" />
+      <skill id="burn" x="2" />
+      <skill id="pierce" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="strike" x="1" />
+      <skill id="burn" x="2" />
+      <skill id="pierce" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16089</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Flame Belcher</name>
+    <picture>Fire_Eating_Goblin_A</picture>
+    <asset_bundle>74</asset_bundle>
+    <hidden_until_time>1476982800</hidden_until_time>
+    <attack>5</attack>
+    <health>14</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="strike" x="1" />
+    <skill id="burn" x="2" />
+    <skill id="pierce" x="2" />
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>16</health>
+      <skill id="strike" x="2" />
+      <skill id="burn" x="2" />
+      <skill id="pierce" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="strike" x="2" />
+      <skill id="burn" x="3" />
+      <skill id="pierce" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="strike" x="2" />
+      <skill id="burn" x="3" />
+      <skill id="pierce" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26089</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Hotheaded Belcher</name>
+    <picture>Fire_Eating_Goblin_B</picture>
+    <asset_bundle>74</asset_bundle>
+    <hidden_until_time>1476982800</hidden_until_time>
+    <attack>6</attack>
+    <health>17</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="strike" x="2" />
+    <skill id="burn" x="3" />
+    <skill id="pierce" x="3" />
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>7</attack>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="strike" x="2" />
+      <skill id="burn" x="4" />
+      <skill id="pierce" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="strike" x="3" />
+      <skill id="burn" x="4" />
+      <skill id="pierce" x="4" />
     </upgrade>
   </unit>
   <unit>
@@ -43334,6 +43597,112 @@
       <skill id="valor" x="5" />
       <skill id="fervor" x="2" y="3" />
       <skill id="leech" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7087</id>
+    <card_type>2</card_type>
+    <name>Goblites</name>
+    <picture>Mini_Goblin_The_Giant_A</picture>
+    <asset_bundle>74</asset_bundle>
+    <hidden_until_time>1476982800</hidden_until_time>
+    <attack>2</attack>
+    <health>7</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="rally" x="1" y="3" />
+    <type>3</type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="rally" x="1" all="1" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>8</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="rally" x="1" all="1" y="3" />
+      <skill id="jam" c="7" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17087</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Agitated Goblites</name>
+    <picture>Mini_Goblin_The_Giant_A</picture>
+    <asset_bundle>74</asset_bundle>
+    <hidden_until_time>1476982800</hidden_until_time>
+    <attack>3</attack>
+    <health>10</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="rally" x="1" all="1" y="3" />
+    <skill id="jam" c="7" />
+    <type>3</type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="rally" x="1" all="1" y="3" />
+      <skill id="jam" c="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="rally" x="1" all="1" y="3" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>4</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27087</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Fanatic Goblites</name>
+    <picture>Mini_Goblin_The_Giant_B</picture>
+    <asset_bundle>74</asset_bundle>
+    <hidden_until_time>1476982800</hidden_until_time>
+    <attack>4</attack>
+    <health>11</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="rally" x="1" all="1" y="3" />
+    <skill id="jam" c="5" />
+    <type>3</type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="1" />
+      <skill id="rally" x="2" all="1" y="3" />
+      <skill id="jam" c="5" />
     </upgrade>
   </unit>
   <!-- END SET 3000 - Premium -->
@@ -57584,8 +57953,8 @@
   <unit>
     <id>340</id>
     <card_type>1</card_type>
-    <name>Wind-Up Dragon</name>
-    <portrait>necromancer</portrait>
+    <name>Wind-Up Dragons</name>
+    <portrait>windupdragons</portrait>
     <attack>0</attack>
     <health>35</health>
     <skill id="protect" x="2" />
@@ -57633,7 +58002,7 @@
     <id>341</id>
     <card_type>1</card_type>
     <name>Goblin Mechanic</name>
-    <portrait>necromancer</portrait>
+    <portrait>mechanicgoblin</portrait>
     <attack>0</attack>
     <health>25</health>
     <skill id="imbue" x="1" s="counter" />
