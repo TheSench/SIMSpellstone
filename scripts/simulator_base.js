@@ -1538,7 +1538,7 @@ var SIMULATOR = {};
             if (battleground.enemy_only && p !== 'cpu') continue;
             if (battleground.self_only && p !== 'player') continue;
             battleground.owner = p;
-            doEmpower(battleground);
+            doEarlyActivationSkills(battleground);
             activation_skills(battleground);
         }
 
