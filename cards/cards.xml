@@ -10623,6 +10623,7 @@
     <skill id="pierce" x="1" />
     <skill id="berserk" x="1" />
     <type>3</type>
+    <sub_type>11</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
@@ -10663,6 +10664,7 @@
     <skill id="poison" x="2" />
     <skill id="berserk" x="1" />
     <type>3</type>
+    <sub_type>11</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
@@ -10701,6 +10703,7 @@
     <skill id="poison" x="3" />
     <skill id="berserk" x="1" />
     <type>3</type>
+    <sub_type>11</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
@@ -43703,6 +43706,154 @@
       <skill id="evade" x="1" />
       <skill id="rally" x="2" all="1" y="3" />
       <skill id="jam" c="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7091</id>
+    <card_type>2</card_type>
+    <name>Wave Plunderer</name>
+    <picture>Seafolk_Goblin_A</picture>
+    <asset_bundle>74</asset_bundle>
+    <hidden_until_time>1477328400</hidden_until_time>
+    <attack>7</attack>
+    <health>18</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="jam" c="6" />
+    <skill id="pierce" x="2" />
+    <type>3</type>
+    <sub_type>11</sub_type>
+    <sub_type>12</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="evade" x="1" />
+      <skill id="jam" c="5" />
+      <skill id="pierce" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>19</health>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>21</health>
+      <skill id="evade" x="1" />
+      <skill id="jam" c="5" />
+      <skill id="pierce" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>22</health>
+      <skill id="evade" x="1" />
+      <skill id="jam" c="4" />
+      <skill id="pierce" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17091</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Shore Plunderer</name>
+    <picture>Seafolk_Goblin_A</picture>
+    <asset_bundle>74</asset_bundle>
+    <hidden_until_time>1477328400</hidden_until_time>
+    <attack>9</attack>
+    <health>22</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="jam" c="4" />
+    <skill id="pierce" x="3" />
+    <type>3</type>
+    <sub_type>11</sub_type>
+    <sub_type>12</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>23</health>
+      <skill id="evade" x="2" />
+      <skill id="jam" c="4" />
+      <skill id="pierce" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>24</health>
+      <skill id="evade" x="2" />
+      <skill id="jam" c="4" />
+      <skill id="pierce" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>26</health>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>27</health>
+      <skill id="evade" x="2" />
+      <skill id="jam" c="3" />
+      <skill id="pierce" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27091</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Coast Plunderer</name>
+    <picture>Seafolk_Goblin_B</picture>
+    <asset_bundle>74</asset_bundle>
+    <hidden_until_time>1477328400</hidden_until_time>
+    <attack>10</attack>
+    <health>28</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="jam" c="3" />
+    <skill id="pierce" x="4" />
+    <type>3</type>
+    <sub_type>11</sub_type>
+    <sub_type>12</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>11</attack>
+      <skill id="evade" x="2" />
+      <skill id="jam" c="3" />
+      <skill id="pierce" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>29</health>
+      <attack>12</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>30</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>31</health>
+      <skill id="evade" x="2" />
+      <skill id="jam" c="3" />
+      <skill id="pierce" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>32</health>
+      <skill id="evade" x="3" />
+      <skill id="jam" c="2" />
+      <skill id="pierce" x="6" />
     </upgrade>
   </unit>
   <!-- END SET 3000 - Premium -->
