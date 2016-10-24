@@ -110,12 +110,12 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_barrier_legendary",
         "bundle": "34",
-        "desc": "Barrier +50%, rounded up.",
+        "desc": "Barrier +75%, rounded up.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "protect",
-                "mult": "0.5"
+                "mult": "0.75"
             }
         },
         "category": 3
@@ -183,12 +183,12 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_heal_legendary",
         "bundle": "34",
-        "desc": "Healing +50%, rounded up.",
+        "desc": "Healing +75%, rounded up.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "heal",
-                "mult": "0.5"
+                "mult": "0.75"
             }
         },
         "category": 3
@@ -710,12 +710,12 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_weaken_legendary",
         "bundle": "34",
-        "desc": "Weaken +50%, rounded up.",
+        "desc": "Weaken +75%, rounded up.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "weaken",
-                "mult": "0.5"
+                "mult": "0.75"
             }
         },
         "category": 3
@@ -857,12 +857,12 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_siphon_legendary",
         "bundle": "34",
-        "desc": "Siphon +50%, rounded up.",
+        "desc": "Siphon +75%, rounded up.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "leech",
-                "mult": "0.5"
+                "mult": "0.75"
             }
         },
         "category": 3
