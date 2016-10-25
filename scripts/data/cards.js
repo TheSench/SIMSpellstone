@@ -98778,7 +98778,7 @@ var CARDS = {
   "214": {
     "id": "214",
     "name": "Tremor Wurm",
-    "desc": "The wurm breaks out of the ground suddenly, spraying rock in all directions as it belows a sound like a thousand trumpets.",
+    "desc": "The wurm breaks out of the ground suddenly, spraying rock in all directions as it bellows a sound like a thousand trumpets.",
     "picture": "portrait_tremorwurm",
     "rarity": "4",
     "set": "9999",

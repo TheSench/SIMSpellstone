@@ -53010,7 +53010,7 @@
     <card_type>1</card_type>
     <name>Tremor Wurm</name>
     <portrait>tremorwurm</portrait>
-    <desc>The wurm breaks out of the ground suddenly, spraying rock in all directions as it belows a sound like a thousand trumpets.</desc>
+    <desc>The wurm breaks out of the ground suddenly, spraying rock in all directions as it bellows a sound like a thousand trumpets.</desc>
     <attack>0</attack>
     <health>23</health>
     <rarity>4</rarity>

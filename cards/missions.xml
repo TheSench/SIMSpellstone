@@ -66,7 +66,7 @@
   </feature_lock>
   <feature_lock>
     <id>crafting</id>
-    <mission_req>11</mission_req>
+    <mission_req>-1</mission_req>
     <!-- 244 -->
   </feature_lock>
   <feature_lock>
@@ -1820,7 +1820,7 @@
       </line>
       <line>
         <commander>necromancer</commander>
-        <text>Why are you sieging Karthos? Do you wish to upset Tarien?</text>
+        <text>Why are you sieging Karthos? Do you wish to upset Tarian?</text>
       </line>
       <line>
         <commander>flamebender</commander>
