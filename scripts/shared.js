@@ -1991,10 +1991,7 @@ function get_skills(id, level) {
 
 function get_card_by_id(unit, skillModifiers) {
 
-    var unitKey = unit.id + "-" + unit.level;
-    if (unit.runes.length) {
-        unitKey += "-" + unit.runes[0].id;
-    }
+    var unitKey = makeUnitKey(unit);
     var cached = card_cache[unitKey];
     if (cached) {
         cached = cloneCard(cached);
@@ -2143,6 +2140,14 @@ function get_card_name_by_id(id) {
 function is_commander(id) {
     var card = loadCard(id);
     return (card && card.card_type == '1');
+}
+
+var makeUnitKey = function (unit) {
+    var unitKey = unit.id + "_" + unit.level;
+    if (unit.runes && unit.runes.length) {
+        unitKey += "_" + unit.runes[0].id;
+    }
+    return unitKey;
 }
 
 function makeUnitInfo(id, level, runes) {
