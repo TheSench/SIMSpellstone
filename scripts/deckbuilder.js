@@ -2197,7 +2197,11 @@ function sortByRunes(unitA, unitB)
 
 var makeUnitKey = function (unit)
 {
-    return unit.id + "_" + unit.level;
+    var unitKey = unit.id + "_" + unit.level;
+    if (unit.runes && unit.runes.length) {
+        unitKey += "_" + unit.runes[0].id;
+    }
+    return unitKey;
 }
 
 var getUnitFromCard = function (htmlCard)

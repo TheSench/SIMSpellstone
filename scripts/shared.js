@@ -689,34 +689,6 @@ var makeUnit = (function () {
 
         return card;
     });
-
-    function addRunesToSkills(skills, runes) {
-        if (!runes) return;
-        for (var i = 0, len = runes.length; i < len; i++) {
-            var runeID = runes[i].id;
-            var statBoost = RUNES[runeID].stat_boost;
-            for (var key in statBoost) {
-                var boost = statBoost[key];
-                if (key == "skill") {
-                    var skillID = boost.id;
-                    var amount = boost.x;
-                    var mult = boost.mult;
-                    for (var s = 0; s < skills.length; s++) {
-                        var skill = skills[s];
-                        if (skill.id == skillID && (skill.all || 0) == (boost.all || 0)) {
-                            skill = copy_skill(skill);
-                            if (!amount && mult) amount = Math.ceil(skill.x * mult);
-                            if (amount) skill.x += parseInt(amount);
-                            if (boost.c) skill.c -= parseInt(boost.c);
-                            skill.boosted = true;
-                            skills[s] = skill;
-                            break;
-                        }
-                    }
-                }
-            }
-        }
-    }
 }());
 
 
@@ -749,6 +721,34 @@ var addRunes = function (card, runes) {
         }
     }
 };
+
+function addRunesToSkills(skills, runes) {
+    if (!runes) return;
+    for (var i = 0, len = runes.length; i < len; i++) {
+        var runeID = runes[i].id;
+        var statBoost = RUNES[runeID].stat_boost;
+        for (var key in statBoost) {
+            var boost = statBoost[key];
+            if (key == "skill") {
+                var skillID = boost.id;
+                var amount = boost.x;
+                var mult = boost.mult;
+                for (var s = 0; s < skills.length; s++) {
+                    var skill = skills[s];
+                    if (skill.id == skillID && (skill.all || 0) == (boost.all || 0)) {
+                        skill = copy_skill(skill);
+                        if (!amount && mult) amount = Math.ceil(skill.x * mult);
+                        if (amount) skill.x += parseInt(amount);
+                        if (boost.c) skill.c -= parseInt(boost.c);
+                        skill.boosted = true;
+                        skills[s] = skill;
+                        break;
+                    }
+                }
+            }
+        }
+    }
+}
 
 var getRune = function (rune_id) {
     return RUNES[rune_id];
@@ -2077,8 +2077,16 @@ function get_slim_card_by_id(unit, getDetails) {
                     if (key == new_card.level) break;
                 }
             }
+
+            var runes = unit.runes;
+            if (runes) {
+                new_card.skill = new_card.skill.slice();
+                addRunes(new_card, runes);
+                addRunesToSkills(new_card.skill, runes);
+            }
         }
     }
+
     return new_card;
 }
 
