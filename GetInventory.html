@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="scripts/shared.js"></script>
+    <script type="text/javascript">
+        function selectText(selectable) {
+            if (document.selection) {
+                var range = document.body.createTextRange();
+                range.moveToElementText(selectable);
+                range.select();
+            } else if (window.getSelection) {
+                var range = document.createRange();
+                range.selectNode(selectable);
+                window.getSelection().addRange(range);
+            }
+        }
+
+        function getHashFromJSON(text) {
+            var parsed = JSON.parse(text);
+            var user_units = (parsed.user_units || parsed);
+            var inv = { commander: elariaCaptain, deck: [] };
+            for (var uid in user_units) {
+                var user_unit = user_units[uid];
+                if (!user_unit.unit_id) break;
+                var unit = makeUnitInfo(user_unit.unit_id, user_unit.level);
+                for (var slot in user_unit.runes) {
+                    var rune = user_unit.runes[slot];
+                    unit.runes.push({ id: rune.item_id });
+                }
+                inv.deck.push(unit);
+            }
+            var hash = hash_encode(inv);
+
+            var converter = document.getElementById("converter");
+            converter.value = hash;
+            converter.select();
+        }
+
+        function getClipboard() {
+            document.getElementById("converter").focus();
+            if (document.execCommand('paste')) {
+                console.log(true);
+            }
+        }
+
+        window.addEventListener("load", function () {
+            document.getElementById("converter").addEventListener('paste', function (e) {
+                if (e.clipboardData) {
+                    e.preventDefault();
+                    getHashFromJSON(e.clipboardData.getData("Text"));
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="text" id="converter" style="width:100%;" value="Click this and paste JSON to convert"/>
+</body>
+</html>
