@@ -1314,12 +1314,14 @@ var filterName = (function (field)
     nameHidden = {};
     if (filter)
     {
-        if (filter.indexOf("[") === 0) {
-            var filterID = filter.replace("[", "").replace("]", "");
+        if (filter.startsWith("[") || filter.endsWith("]")) {
+            if (!filter.startsWith("[")) filter = ".*" + filter;
+            if (!filter.endsWith("]")) filter += ".*";
+            var idRegex = new RegExp("^" + filter.replace("[", "").replace("]", "") + "$");
             for (var i = 0, len = units.length; i < len; i++) {
                 var unit = units[i];
                 var unit_id = unit.id;
-                if (unit_id.toString().indexOf(filterID) !== 0) {
+                if (!idRegex.test(unit_id.toString())) {
                     nameHidden[makeUnitKey(unit)] = true;
                 }
             }
