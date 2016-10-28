@@ -11037,7 +11037,7 @@
       <line>
         <commander>flamebender</commander>
         <enemy>0</enemy>
-        <text>Only one piece of mouldy bread and a cup of water? They didn't even put a mint under my pillow! This is unacceptable!</text>
+        <text>Only one piece of moldy bread and a cup of water? They didn't even put a mint under my pillow! This is unacceptable!</text>
       </line>
     </speech>
   </mission>
@@ -11601,6 +11601,117 @@
         <commander>flamebender</commander>
         <enemy>0</enemy>
         <text>OWCH, OW, STOP!</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Halloween Event -->
+  <mission>
+    <id>5385</id>
+    <name>The Tale of Pumpking</name>
+    <energy>1</energy>
+    <desc>When Decim first arrives at Goblin Rise Stronghold, he tells the tragic tale of Pumpking, a king who only wanted to spread goodwill by giving children candy. However, he met a tragic end when his rivals played an unfair trick upon him.</desc>
+    <commander id="320" />
+    <deck>
+      <card id="1319" name="Wraith" />
+      <card id="1319" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="1613" />
+      <card id="1329" name="Shadow Assassin" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="1330" />
+      <card id="11331" name="Haunted Soldiers" />
+      <card id="1328" mastery_level="2" name="Poison Bullfrog" />
+      <card id="2024" mastery_level="3" name="Dusk Noble" />
+      <card id="1626" mastery_level="4" name="Tusker" />
+      <card id="1632" mastery_level="5" name="Shadow Rider" />
+      <card id="5082" mastery_level="6" name="Memory" />
+      <card id="6035" mastery_level="7" name="Demos" />
+    </deck>
+    <speech>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>...And whoever dares say Pumpking's name will meet with the King himself, who judges with either treats or tricks!</text>
+      </line>
+      <line>
+        <commander>goblinfootmen</commander>
+        <enemy>1</enemy>
+        <text>Aieee! So scary, so scary! We'll never speak his name!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5386</id>
+    <name>Pumpking's Appearance</name>
+    <energy>1</energy>
+    <desc>The goblin children depart from Decim. Decim laughs at the children's reaction to his story, until he notices that he's not alone...</desc>
+    <commander id="342" />
+    <deck>
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1311" />
+      <card id="1311" />
+      <card id="1311" />
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="6017" />
+      <card id="1332" name="Vampiric Emira" />
+      <card id="1628" name="Garganotos" />
+      <card id="2015" mastery_level="2" name="Pumpking" />
+      <card id="2015" mastery_level="3" name="Pumpking" />
+      <card id="2015" mastery_level="4" name="Pumpking" />
+      <card id="2015" mastery_level="5" name="Pumpking" />
+      <card id="2015" mastery_level="6" name="Pumpking" />
+      <card id="2015" mastery_level="7" name="Pumpking" />
+    </deck>
+    <speech>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>Haha, what a bunch of suckers! Who'd believe a stupid legend like THAT?</text>
+      </line>
+      <line>
+        <commander>pumpkingPortrait</commander>
+        <enemy>1</enemy>
+        <text>.....</text>
+      </line>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>Who... Who are you?! Stay back!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5387</id>
+    <name>More Treat Than Trick</name>
+    <energy>1</energy>
+    <desc>The strange apparition lays something by Decim's feet, before turning and fading into the night...</desc>
+    <commander id="342" />
+    <deck>
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1311" />
+      <card id="1315" name="Nix Elemental" />
+      <card id="1315" />
+      <card id="1632" name="Shadow Rider" />
+      <card id="2032" name="Brimstone" />
+      <card id="2032" />
+      <card id="1628" name="Garganotos" />
+      <card id="1326" mastery_level="2" name="Titan of Fire" />
+      <card id="5035" mastery_level="3" name="Vapor Guard" />
+      <card id="5021" mastery_level="4" name="Tower Spirit" />
+      <card id="2062" mastery_level="5" name="Deadeye Apprentice" />
+      <card id="2015" mastery_level="6" name="Pumpking" />
+      <card id="2015" mastery_level="7" name="Pumpking" />
+    </deck>
+    <speech>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>OH MAN!</text>
+      </line>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>...Wait, did he leave this pumpkin filled with candy? Sweet, what a cool guy!</text>
       </line>
     </speech>
   </mission>

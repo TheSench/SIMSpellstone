@@ -40924,6 +40924,239 @@ var CARDS = {
       },
     }
   },
+  "5092": {
+    "id": "5092",
+    "name": "Tundra Reaver",
+    "picture": "Tundra_Goblin_A",
+    "hidden_until": "1477933200000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["11"],
+    "attack": 4,
+    "health": 14,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "frost",
+        "x": 1,
+      },
+      {
+        "id": "jam",
+        "c": 7,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+          {
+            "id": "jam",
+            "c": 6,
+          },
+        ],
+      },
+      "3": {
+        "health": 15,
+        "skill": [],
+      },
+      "4": {
+        "health": 16,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+      "6": {
+        "health": 17,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+    }
+  },
+  "15092": {
+    "id": "15092",
+    "name": "Tundra Berserker",
+    "picture": "Tundra_Goblin_A",
+    "hidden_until": "1477933200000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["11"],
+    "attack": 4,
+    "health": 18,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "frost",
+        "x": 1,
+      },
+      {
+        "id": "jam",
+        "c": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 5,
+        "skill": [],
+      },
+      "3": {
+        "health": 19,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+        ],
+      },
+      "5": {
+        "health": 20,
+        "skill": [],
+      },
+      "6": {
+        "health": 21,
+        "skill": [],
+      },
+    }
+  },
+  "25092": {
+    "id": "25092",
+    "name": "Tundra Battlemaster",
+    "picture": "Tundra_Goblin_B",
+    "hidden_until": "1477933200000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["11"],
+    "attack": 5,
+    "health": 21,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 3,
+        "all": "1",
+      },
+      {
+        "id": "frost",
+        "x": 2,
+      },
+      {
+        "id": "jam",
+        "c": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 22,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+        ],
+      },
+      "3": {
+        "health": 23,
+        "skill": [],
+      },
+      "4": {
+        "attack": 6,
+        "skill": [],
+      },
+      "5": {
+        "health": 24,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 4,
+            "all": "1",
+          },
+          {
+            "id": "frost",
+            "x": 3,
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+        ],
+      },
+    }
+  },
   "6000": {
     "id": "6000",
     "name": "Furnace Mech",
@@ -110732,6 +110965,125 @@ var CARDS = {
       },
     }
   },
+  "342": {
+    "id": "342",
+    "name": "Treat Trickmaster",
+    "picture": "portrait_pumpkingportrait",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "2",
+    "sub_type": [],
+    "health": 50,
+    "skill": [
+      {
+        "id": "imbue",
+        "x": 1,
+        "s": "poison",
+      },
+      {
+        "id": "counter",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 53,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 1,
+            "s": "poison",
+          },
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "burn",
+          },
+          {
+            "id": "counter",
+            "x": 1,
+          },
+        ],
+      },
+      "3": {
+        "health": 56,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 1,
+            "s": "poison",
+          },
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "burn",
+          },
+          {
+            "id": "counter",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "health": 59,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 2,
+            "s": "poison",
+          },
+          {
+            "id": "enhance",
+            "x": 2,
+            "s": "burn",
+          },
+          {
+            "id": "counter",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "health": 62,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 2,
+            "s": "poison",
+          },
+          {
+            "id": "enhance",
+            "x": 2,
+            "s": "burn",
+          },
+          {
+            "id": "counter",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "health": 66,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 3,
+            "s": "poison",
+          },
+          {
+            "id": "enhance",
+            "x": 3,
+            "s": "burn",
+          },
+          {
+            "id": "counter",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
   "500": {
     "id": "500",
     "name": "Arcane Dustling",
@@ -110767,7 +111119,7 @@ var CARDS = {
   "502": {
     "id": "502",
     "name": "Arcane Pumpkin",
-    "desc": "A special fruit that blooms only in fall throughout Arcantica. Said to be an incredible source of Arcane Dust.",
+    "desc": "A special fruit that blooms only in fall throughout Arcantica. Not very flavorful, but a great source of Arcane Dust.",
     "picture": "Arcane_Pumpkin_C",
     "rarity": "2",
     "set": "9999",
@@ -110789,6 +111141,39 @@ var CARDS = {
       },
       "4": {
         "health": 6,
+        "skill": [],
+      },
+    }
+  },
+  "503": {
+    "id": "503",
+    "name": "Large Arcane Pumpkin",
+    "desc": "A special fruit that blooms only in fall throughout Arcantica. Not very flavorful, but a great source of Arcane Dust.",
+    "picture": "Arcane_Pumpkin_C",
+    "rarity": "3",
+    "set": "9999",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "attack": 0,
+    "health": 5,
+    "cost": 0,
+    "skill": [],
+    "upgrades": {
+      "2": {
+        "health": 6,
+        "skill": [],
+      },
+      "3": {
+        "health": 7,
+        "skill": [],
+      },
+      "4": {
+        "health": 8,
+        "skill": [],
+      },
+      "5": {
+        "health": 9,
         "skill": [],
       },
     }
@@ -111448,7 +111833,7 @@ var CARDS = {
   "9992": {
     "id": "9992",
     "name": "New Art",
-    "picture": "New5_A",
+    "picture": "New2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -111462,7 +111847,7 @@ var CARDS = {
   "19992": {
     "id": "19992",
     "name": "New Art",
-    "picture": "New5_B",
+    "picture": "New2_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -111476,7 +111861,7 @@ var CARDS = {
   "9991": {
     "id": "9991",
     "name": "New Art",
-    "picture": "New6_A",
+    "picture": "New3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -111490,7 +111875,7 @@ var CARDS = {
   "19991": {
     "id": "19991",
     "name": "New Art",
-    "picture": "New6_B",
+    "picture": "New3_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -111504,7 +111889,7 @@ var CARDS = {
   "9990": {
     "id": "9990",
     "name": "New Art",
-    "picture": "New7_A",
+    "picture": "New4_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -111518,7 +111903,7 @@ var CARDS = {
   "19990": {
     "id": "19990",
     "name": "New Art",
-    "picture": "New7_B",
+    "picture": "New4_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -111532,7 +111917,7 @@ var CARDS = {
   "9989": {
     "id": "9989",
     "name": "New Art",
-    "picture": "New8_A",
+    "picture": "New5_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -111546,7 +111931,7 @@ var CARDS = {
   "19989": {
     "id": "19989",
     "name": "New Art",
-    "picture": "New8_B",
+    "picture": "New5_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -111560,7 +111945,7 @@ var CARDS = {
   "9988": {
     "id": "9988",
     "name": "New Art",
-    "picture": "New9_A",
+    "picture": "New8_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -111574,7 +111959,7 @@ var CARDS = {
   "19988": {
     "id": "19988",
     "name": "New Art",
-    "picture": "New9_B",
+    "picture": "New8_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -111587,8 +111972,8 @@ var CARDS = {
   },
   "9987": {
     "id": "9987",
-    "name": "Unused Art",
-    "picture": "Oda_A",
+    "name": "New Art",
+    "picture": "New9_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -111601,8 +111986,8 @@ var CARDS = {
   },
   "19987": {
     "id": "19987",
-    "name": "Unused Art",
-    "picture": "Oda_B",
+    "name": "New Art",
+    "picture": "New9_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -111613,10 +111998,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29987": {
-    "id": "29987",
+  "9986": {
+    "id": "9986",
     "name": "Unused Art",
-    "picture": "Oda_C",
+    "picture": "Oda_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -111630,7 +112015,7 @@ var CARDS = {
   "19986": {
     "id": "19986",
     "name": "Unused Art",
-    "picture": "Promo_Dragon_B",
+    "picture": "Oda_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -111641,10 +112026,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9985": {
-    "id": "9985",
+  "29986": {
+    "id": "29986",
     "name": "Unused Art",
-    "picture": "Seraph_A",
+    "picture": "Oda_C",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -111658,7 +112043,7 @@ var CARDS = {
   "19985": {
     "id": "19985",
     "name": "Unused Art",
-    "picture": "Seraph_B",
+    "picture": "Promo_Dragon_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -111672,7 +112057,21 @@ var CARDS = {
   "9984": {
     "id": "9984",
     "name": "Unused Art",
-    "picture": "Tarian_A",
+    "picture": "Seraph_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19984": {
+    "id": "19984",
+    "name": "Unused Art",
+    "picture": "Seraph_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -111686,7 +112085,7 @@ var CARDS = {
   "9983": {
     "id": "9983",
     "name": "Unused Art",
-    "picture": "Tremor_Wurm_A",
+    "picture": "Tarian_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -111700,7 +112099,7 @@ var CARDS = {
   "9982": {
     "id": "9982",
     "name": "Unused Art",
-    "picture": "Unused1_A",
+    "picture": "Tremor_Wurm_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -111714,7 +112113,7 @@ var CARDS = {
   "9981": {
     "id": "9981",
     "name": "Unused Art",
-    "picture": "Unused2_A",
+    "picture": "Unused1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -111728,7 +112127,7 @@ var CARDS = {
   "9980": {
     "id": "9980",
     "name": "Unused Art",
-    "picture": "Unused3_A",
+    "picture": "Unused2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -111742,7 +112141,7 @@ var CARDS = {
   "9979": {
     "id": "9979",
     "name": "Unused Art",
-    "picture": "Ursurio_A",
+    "picture": "Unused3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -111756,7 +112155,7 @@ var CARDS = {
   "9978": {
     "id": "9978",
     "name": "Unused Art",
-    "picture": "Void_Abomination_A",
+    "picture": "Ursurio_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -111769,6 +112168,20 @@ var CARDS = {
   },
   "9977": {
     "id": "9977",
+    "name": "Unused Art",
+    "picture": "Void_Abomination_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9976": {
+    "id": "9976",
     "name": "Unused Art",
     "picture": "Yuriel_A",
     "rarity": "0",

@@ -840,6 +840,13 @@ var CAMPAIGNS = {
     "side_mission": "",
     "missions": ["5381","5382","5383","5384"]
   },
+  "1096": {
+    "id": "1096",
+    "name": "Trick or Treat",
+    "location_id": "111",
+    "side_mission": "",
+    "missions": ["5385","5386","5387"]
+  },
   "10": {
     "id": "10",
     "name": "The City of Luminis",
@@ -31853,6 +31860,177 @@ var MISSIONS = {
       },
       {
         "id": "5034",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5385": {
+    "id": "5385",
+    "name": "The Tale of Pumpking",
+    "commander": {
+        "id": "320"
+    },
+    "deck": [
+      {
+        "id": "1319"
+      },
+      {
+        "id": "1319"
+      },
+      {
+        "id": "1613"
+      },
+      {
+        "id": "1613"
+      },
+      {
+        "id": "1329"
+      },
+      {
+        "id": "1330"
+      },
+      {
+        "id": "1330"
+      },
+      {
+        "id": "11331"
+      },
+      {
+        "id": "1328",
+        "mastery_level": "2"
+      },
+      {
+        "id": "2024",
+        "mastery_level": "3"
+      },
+      {
+        "id": "1626",
+        "mastery_level": "4"
+      },
+      {
+        "id": "1632",
+        "mastery_level": "5"
+      },
+      {
+        "id": "5082",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6035",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5386": {
+    "id": "5386",
+    "name": "Pumpking's Appearance",
+    "commander": {
+        "id": "342"
+    },
+    "deck": [
+      {
+        "id": "1311"
+      },
+      {
+        "id": "1311"
+      },
+      {
+        "id": "1311"
+      },
+      {
+        "id": "1311"
+      },
+      {
+        "id": "6017"
+      },
+      {
+        "id": "6017"
+      },
+      {
+        "id": "1332"
+      },
+      {
+        "id": "1628"
+      },
+      {
+        "id": "2015",
+        "mastery_level": "2"
+      },
+      {
+        "id": "2015",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2015",
+        "mastery_level": "4"
+      },
+      {
+        "id": "2015",
+        "mastery_level": "5"
+      },
+      {
+        "id": "2015",
+        "mastery_level": "6"
+      },
+      {
+        "id": "2015",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5387": {
+    "id": "5387",
+    "name": "More Treat Than Trick",
+    "commander": {
+        "id": "342"
+    },
+    "deck": [
+      {
+        "id": "1311"
+      },
+      {
+        "id": "1311"
+      },
+      {
+        "id": "1315"
+      },
+      {
+        "id": "1315"
+      },
+      {
+        "id": "1632"
+      },
+      {
+        "id": "2032"
+      },
+      {
+        "id": "2032"
+      },
+      {
+        "id": "1628"
+      },
+      {
+        "id": "1326",
+        "mastery_level": "2"
+      },
+      {
+        "id": "5035",
+        "mastery_level": "3"
+      },
+      {
+        "id": "5021",
+        "mastery_level": "4"
+      },
+      {
+        "id": "2062",
+        "mastery_level": "5"
+      },
+      {
+        "id": "2015",
+        "mastery_level": "6"
+      },
+      {
+        "id": "2015",
         "mastery_level": "7"
       },
     ]
