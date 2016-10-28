@@ -178,9 +178,9 @@ var CARD_GUI = {};
 
     function addWeight(htmlCard, weight) {
         if (weight > 0) {
-            var weightDiv = createDiv("multiplier", (weight * 100).toFixed(2) + "%");
+            var weightDiv = createDiv("weight", (weight * 100).toFixed(2) + "%");
             weightDiv.setAttribute("data-count", weight);
-            var weightIcon = createImg(getAssetPath("cardAssets") + "multiplier.png", "multiplier");
+            var weightIcon = createImg(getAssetPath("cardAssets") + "multiplier.png", "weight");
             htmlCard.appendChild(weightIcon);
             htmlCard.appendChild(weightDiv);
         }
