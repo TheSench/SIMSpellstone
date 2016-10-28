@@ -176,6 +176,16 @@ var CARD_GUI = {};
         }
     }
 
+    function addWeight(htmlCard, weight) {
+        if (weight > 0) {
+            var weightDiv = createDiv("multiplier", (weight * 100).toFixed(2) + "%");
+            weightDiv.setAttribute("data-count", weight);
+            var weightIcon = createImg(getAssetPath("cardAssets") + "multiplier.png", "multiplier");
+            htmlCard.appendChild(weightIcon);
+            htmlCard.appendChild(weightDiv);
+        }
+    }
+
     function createItemHTML(name, quantity, image) {
         var htmlCard = createDiv("card item");
 

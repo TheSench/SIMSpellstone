@@ -208,6 +208,10 @@ img[src='Error.src'] {
     top: 80%;
 }
 
+.item.card img.weight {
+    top: 20%;
+}
+
 .card-attack {
     left: 4px;
     bottom: 7px;
