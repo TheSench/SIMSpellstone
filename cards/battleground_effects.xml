@@ -425,8 +425,8 @@
     <starting_level>120</starting_level>
     <!-- Starting Raid Level -->
     <effect>
-      <skill id="heal" x=".5" all="1" />
-      <skill id="rally" x=".5" all="1" />
+      <skill id="heal" x=".3" all="1" />
+      <skill id="rally" x=".3" all="1" />
     </effect>
   </battleground>
   <battleground>

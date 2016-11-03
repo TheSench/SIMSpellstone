@@ -11715,4 +11715,531 @@
       </line>
     </speech>
   </mission>
+  <!-- Event 18 -->
+  <mission>
+    <id>5388</id>
+    <name>Triumphant Return</name>
+    <energy>11</energy>
+    <desc>Decim has returned to Tarragon Peaks after his adventure in Goblin Rise Stronghold. For the first time, he was able to make friends with a dragon, and he can't wait to tell the residents of Tarragon Peaks.</desc>
+    <commander id="272" />
+    <deck>
+      <card id="1019" name="Oracle" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6012" />
+      <card id="1312" name="Scythe Demon" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="1631" name="Venom Dragon" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="2033" name="Arcblaze Dragon" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="2001" mastery_level="2" name="Dunetooth Demon" />
+      <card id="1325" mastery_level="3" name="Chaos Storm" />
+      <card id="5025" mastery_level="4" name="Steelskin Dragon" />
+      <card id="7075" mastery_level="5" name="Diamode" />
+      <card id="6008" mastery_level="6" name="Thousand Arm Demon" />
+      <card id="1040" mastery_level="7" name="Storm Dragon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>That dragon tamer said I'd never be able to care for my own dragon... HA!</text>
+      </line>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>I can't wait to tell her all about the dragon friends I made in the Goblin Kingdom!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5389</id>
+    <name>The Way of the Wyverns</name>
+    <energy>11</energy>
+    <desc>When Decim returns to Wyverns' Way, he finds that the sanctuary has been damaged. Parts of the building have crumbled, and there are suspicious scorch marks on the ground...</desc>
+    <commander id="314" />
+    <deck>
+      <card id="1012" name="Cloud Sylph" />
+      <card id="7012" name="Life Drake" />
+      <card id="7012" />
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="1032" name="Lunar Elemental" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="5010" name="Concealed Dragon" />
+      <card id="2032" name="Brimstone" />
+      <card id="5041" name="Skylance Raiders" />
+      <card id="1629" mastery_level="2" name="Rock Titan" />
+      <card id="2008" mastery_level="3" name="Shadow of Ash" />
+      <card id="5067" mastery_level="4" name="Squito Roamer" />
+      <card id="7021" mastery_level="5" name="Shadow Elemental" />
+      <card id="5079" mastery_level="6" name="Cyclopnid" />
+      <card id="1340" mastery_level="7" name="Blazekin Dragon" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5390</id>
+    <name>Silent Sanctuary</name>
+    <energy>11</energy>
+    <desc>Decim frantically looks for any signs of life. Just a few days ago, Wyverns' Way was a haven for dragons who had bonded with humans. Now, it is completely deserted.</desc>
+    <commander id="314" />
+    <deck>
+      <card id="1311" name="Molten Skeleton" />
+      <card id="5012" name="Static Drake" />
+      <card id="5012" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="2044" name="Quillhide Dragon" />
+      <card id="5004" name="Lightning Lord" />
+      <card id="2041" name="Sharpwing" />
+      <card id="5024" name="Cloudtop Dragon" />
+      <card id="1629" mastery_level="2" name="Rock Titan" />
+      <card id="2046" mastery_level="3" name="Leaping Dragon" />
+      <card id="6061" mastery_level="4" name="Decagon" />
+      <card id="6066" mastery_level="5" name="Psychic Beetle" />
+      <card id="5013" mastery_level="6" name="Radiance" />
+      <card id="1640" mastery_level="7" name="Life Dragon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>What happened, and why is everything destroyed? Where is everyone?! </text>
+      </line>
+      <line>
+        <commander>goblinraider</commander>
+        <enemy>1</enemy>
+        <text>Look, one of the guardians is still here! Get 'im!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5391</id>
+    <name>See No Evil</name>
+    <energy>11</energy>
+    <desc>Decim defends himself against the goblins, but doesn't understand why they would attack him in the first place. He tries to reason with them...</desc>
+    <commander id="311" />
+    <deck>
+      <card id="1010" name="Lightning Elemental" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6007" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="2019" name="Chalistomper" />
+      <card id="2063" name="Hob Fletcher" />
+      <card id="2031" name="Dryad" />
+      <card id="5062" name="Cliffhanger Wyrm" />
+      <card id="1625" mastery_level="2" name="Ferocious Clawkin" />
+      <card id="2045" mastery_level="3" name="Chillbeard Giant" />
+      <card id="6050" mastery_level="4" name="Wortwog" />
+      <card id="6089" mastery_level="5" name="Fire Belcher" />
+      <card id="5009" mastery_level="6" name="Royal Guardian" />
+      <card id="7088" mastery_level="7" name="Jubjub" />
+    </deck>
+    <speech>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>I'm not a sanctuary guardian! I'm just passing through!</text>
+      </line>
+      <line>
+        <commander>goblinraider</commander>
+        <enemy>1</enemy>
+        <text>Oy, so ya don't care what happens to the dragons? Pass on through, lad.</text>
+      </line>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>...What are you doing to the dragons?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5392</id>
+    <name>Freedom Fighter</name>
+    <energy>11</energy>
+    <desc>The goblins show Decim the remnants of cracked dragon eggs, and a line of fettered dragons. As the goblins explain their plan, Decim becomes filled with an unquenchable fury...</desc>
+    <commander id="311" />
+    <deck>
+      <card id="1313" name="Lavafrog" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6007" />
+      <card id="5012" name="Static Drake" />
+      <card id="1327" name="Fallen Angel" />
+      <card id="2064" name="Tome Sneak" />
+      <card id="5080" name="Djinnflame Brawler" />
+      <card id="2031" name="Dryad" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="7061" mastery_level="2" name="Thickskin Dragon" />
+      <card id="5062" mastery_level="3" name="Cliffhanger Wyrm" />
+      <card id="6034" mastery_level="4" name="Bone Viper" />
+      <card id="6089" mastery_level="5" name="Fire Belcher" />
+      <card id="7026" mastery_level="6" name="Frostjaw" />
+      <card id="6023" mastery_level="7" name="Broodmother" />
+    </deck>
+    <speech>
+      <line>
+        <commander>goblinraider</commander>
+        <enemy>1</enemy>
+        <text>These dragons belong to us, see. We'll train 'em up right and proper to serve us.</text>
+      </line>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>...You seriously think you can kidnap dragons and get away with it? I'll break all their chains... I'LL FREE ALL THE DRAGONS!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5393</id>
+    <name>Misplaced Suspicion</name>
+    <energy>11</energy>
+    <desc>The goblins disband, leaving Decim to free the dragons. However, the dragons have become more feral than what Decim anticipated...</desc>
+    <commander id="310" />
+    <deck>
+      <card id="1317" name="Fire Imp" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6012" />
+      <card id="1615" name="Rune Panther" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="5010" name="Concealed Dragon" />
+      <card id="5062" name="Cliffhanger Wyrm" />
+      <card id="2023" name="Grizzly Terror" />
+      <card id="5005" name="Storm Giant" />
+      <card id="5024" mastery_level="2" name="Cloudtop Dragon" />
+      <card id="5062" mastery_level="3" name="Cliffhanger Wyrm" />
+      <card id="5069" mastery_level="4" name="Heralidae" />
+      <card id="6044" mastery_level="5" name="Firewalker" />
+      <card id="6060" mastery_level="6" name="Pudgytusk" />
+      <card id="6058" mastery_level="7" name="Tarragon Cuttail" />
+    </deck>
+    <speech>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>Just a moment, guys. I'll get you out of here in no time.</text>
+      </line>
+      <line>
+        <commander>moltendragon</commander>
+        <enemy>1</enemy>
+        <text>Grrr.....</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5394</id>
+    <name>Feral Dragons</name>
+    <energy>11</energy>
+    <desc>Decim tries to remove the chains from the dragons, but they behave like wild beasts. Decim refuses to give up, even if the dragons don't understand that he wants to help them.</desc>
+    <commander id="311" />
+    <deck>
+      <card id="5007" name="Arcane Scroll" />
+      <card id="5012" name="Static Drake" />
+      <card id="5012" />
+      <card id="7012" name="Life Drake" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="5060" name="Quack Apprentice" />
+      <card id="2046" name="Leaping Dragon" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="2045" name="Chillbeard Giant" />
+      <card id="5024" mastery_level="2" name="Cloudtop Dragon" />
+      <card id="7010" mastery_level="3" name="Honeycomb Dragon" />
+      <card id="2005" mastery_level="4" name="Sailing Drake" />
+      <card id="6021" mastery_level="5" name="Marsh Ogre" />
+      <card id="5061" mastery_level="6" name="Thunderfist Rex" />
+      <card id="5061" mastery_level="7" name="Thunderfist Rex" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5395</id>
+    <name>The Wind Drake</name>
+    <energy>11</energy>
+    <desc>Decim tries to remove the chains from the dragons, but they behave like wild beasts. Decim refuses to give up, even if the dragons don't understand that he wants to help them.</desc>
+    <commander id="310" />
+    <deck>
+      <card id="1610" name="Ranger" />
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5006" />
+      <card id="7012" name="Life Drake" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="5053" name="Anura Witch" />
+      <card id="2046" name="Leaping Dragon" />
+      <card id="1631" name="Venom Dragon" />
+      <card id="2005" name="Sailing Drake" />
+      <card id="2046" mastery_level="2" name="Leaping Dragon" />
+      <card id="7010" mastery_level="3" name="Honeycomb Dragon" />
+      <card id="7024" mastery_level="4" name="Woolmane Dragon" />
+      <card id="5065" mastery_level="5" name="Hive Guard" />
+      <card id="6059" mastery_level="6" name="Violetfire Igniter" />
+      <card id="2006" mastery_level="7" name="Zhulong" />
+    </deck>
+    <speech>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>There ya go, dragon buddies! </text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>*whimper*</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5396</id>
+    <name>Dusty Scales</name>
+    <energy>11</energy>
+    <desc>Decim cautiously approaches the remaining young dragon. A light film of grime has covered its scales.</desc>
+    <commander id="4" />
+    <deck>
+      <card id="1014" name="Cherub" />
+      <card id="5012" name="Static Drake" />
+      <card id="5012" />
+      <card id="7006" name="Treant Sapling" />
+      <card id="1626" name="Tusker" />
+      <card id="5050" name="Cloud Spear" />
+      <card id="7024" name="Woolmane Dragon" />
+      <card id="1631" name="Venom Dragon" />
+      <card id="2019" name="Chalistomper" />
+      <card id="2046" mastery_level="2" name="Leaping Dragon" />
+      <card id="7061" mastery_level="3" name="Thickskin Dragon" />
+      <card id="1627" mastery_level="4" name="Sage of Croaks" />
+      <card id="7053" mastery_level="5" name="Bee Eater" />
+      <card id="6026" mastery_level="6" name="Smokefang" />
+      <card id="1040" mastery_level="7" name="Storm Dragon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>What's this chalky dust over your scales? Are ya doing okay, little dragon?</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5397</id>
+    <name>Pantomime</name>
+    <energy>11</energy>
+    <desc>The drake moves a few paces ahead, then pauses to look at Decim. It moves again a little farther, looking back again. Decim guesses it wants to be followed, and moves after it.</desc>
+    <commander id="4" />
+    <deck>
+      <card id="1315" name="Nix Elemental" />
+      <card id="7012" name="Life Drake" />
+      <card id="7012" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="1632" name="Shadow Rider" />
+      <card id="5024" name="Cloudtop Dragon" />
+      <card id="7010" name="Honeycomb Dragon" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="2014" name="Tadpole Warmage" />
+      <card id="2005" mastery_level="2" name="Sailing Drake" />
+      <card id="2002" mastery_level="3" name="Lantern Guardian" />
+      <card id="1031" mastery_level="4" name="Noble Champion" />
+      <card id="2029" mastery_level="5" name="Sly Critters" />
+      <card id="5063" mastery_level="6" name="Runic Dragon" />
+      <card id="1340" mastery_level="7" name="Blazekin Dragon" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5398</id>
+    <name>Dragon Fury</name>
+    <energy>11</energy>
+    <desc>The drake has taken Decim to a thin river, one of the few sources of water on Tarragon Peak. However the water level has fallen even further, a strange black grime coating the edges of the river bank.</desc>
+    <commander id="310" />
+    <deck>
+      <card id="1613" name="Acidic Spider" />
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="6017" />
+      <card id="1017" name="Judgment" />
+      <card id="6005" name="Gloomkin" />
+      <card id="2048" name="Sandmite" />
+      <card id="1631" name="Venom Dragon" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="5011" name="Sky Whale" />
+      <card id="2005" mastery_level="2" name="Sailing Drake" />
+      <card id="1628" mastery_level="3" name="Garganotos" />
+      <card id="2040" mastery_level="4" name="Owlmancer" />
+      <card id="2029" mastery_level="5" name="Sly Critters" />
+      <card id="2013" mastery_level="6" name="Stoneclad Toad" />
+      <card id="6009" mastery_level="7" name="Siphon Dragon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>This river is what you wanted to show me, dragon buddy?</text>
+      </line>
+      <line>
+        <commander>greenbackdragon</commander>
+        <enemy>1</enemy>
+        <text>RAAAWR!</text>
+      </line>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>Yikes, look out!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5399</id>
+    <name>Connect the Dots</name>
+    <energy>11</energy>
+    <desc>The greenback dragon flies away, leaving Decim and the wind drake alone at the riverbed. Decim investigates again...</desc>
+    <commander id="250" />
+    <deck>
+      <card id="1319" name="Wraith" />
+      <card id="5007" name="Arcane Scroll" />
+      <card id="5007" />
+      <card id="6012" name="Ember Drake" />
+      <card id="5084" name="Dotora Spirit" />
+      <card id="1329" name="Shadow Assassin" />
+      <card id="2033" name="Arcblaze Dragon" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="5069" name="Heralidae" />
+      <card id="2005" mastery_level="2" name="Sailing Drake" />
+      <card id="2009" mastery_level="3" name="Sapling" />
+      <card id="5067" mastery_level="4" name="Squito Roamer" />
+      <card id="6020" mastery_level="5" name="Croak Piercer" />
+      <card id="2006" mastery_level="6" name="Zhulong" />
+      <card id="5023" mastery_level="7" name="Nightfall Dragon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>This black grain by the river is gross. My hand burns just from touching it!</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>...Awoo...</text>
+      </line>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>Wait... is this the stuff stuck on your scales?!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5400</id>
+    <name>A Friend in Need</name>
+    <energy>11</energy>
+    <desc>Decim realizes that his new dragon friend must be in pain. Although he doesn't know how to help, Decim is determined to do so.</desc>
+    <commander id="214" />
+    <deck>
+      <card id="1313" name="Lavafrog" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="1318" />
+      <card id="7012" name="Life Drake" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="1632" name="Shadow Rider" />
+      <card id="6063" name="Firetail Dragon" />
+      <card id="2046" name="Leaping Dragon" />
+      <card id="5065" name="Hive Guard" />
+      <card id="6063" mastery_level="2" name="Firetail Dragon" />
+      <card id="2057" mastery_level="3" name="Twister" />
+      <card id="5024" mastery_level="4" name="Cloudtop Dragon" />
+      <card id="6016" mastery_level="5" name="Skeletal Giant" />
+      <card id="5064" mastery_level="6" name="Anshar" />
+      <card id="1040" mastery_level="7" name="Storm Dragon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>Ugh, we need water to clean off your scales, but this river's all mucked up.</text>
+      </line>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>C'mon buddy, if we follow it a bit further down, maybe the water will clear up.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5401</id>
+    <name>Mysterious Corruption</name>
+    <energy>11</energy>
+    <desc>Decim and his drake friend follow the river's path. The farther they get, the trickle of water slowly starts to increase. Decim can only hope the strange corruption disappears further down.</desc>
+    <commander id="285" />
+    <deck>
+      <card id="1614" name="Druid" />
+      <card id="5012" name="Static Drake" />
+      <card id="5012" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="1626" name="Tusker" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="1631" name="Venom Dragon" />
+      <card id="6010" name="Cliffpass Defender" />
+      <card id="6034" name="Bone Viper" />
+      <card id="2005" mastery_level="2" name="Sailing Drake" />
+      <card id="2049" mastery_level="3" name="Contrapede" />
+      <card id="5050" mastery_level="4" name="Cloud Spear" />
+      <card id="6015" mastery_level="5" name="Acidic Sludge" />
+      <card id="5052" mastery_level="6" name="Paradise Avian" />
+      <card id="6059" mastery_level="7" name="Violetfire Igniter" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5402</id>
+    <name>Spreading Corruption</name>
+    <energy>11</energy>
+    <desc>Monsters sometimes block the two's path. Decim notices that they also are covered in the strange grime. Whatever infected the river has also spread through the wildlife...</desc>
+    <commander id="285" />
+    <deck>
+      <card id="1312" name="Scythe Demon" />
+      <card id="5017" name="Steam Tempest" />
+      <card id="5017" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="1325" name="Chaos Storm" />
+      <card id="5010" name="Concealed Dragon" />
+      <card id="5062" name="Cliffhanger Wyrm" />
+      <card id="6011" name="Bomb Spirit" />
+      <card id="7062" mastery_level="2" name="Brine Bellower" />
+      <card id="2030" mastery_level="3" name="Ebon Duelist" />
+      <card id="5011" mastery_level="4" name="Sky Whale" />
+      <card id="6004" mastery_level="5" name="Branding Construct" />
+      <card id="5051" mastery_level="6" name="Amphibious Digger" />
+      <card id="7060" mastery_level="7" name="Shenami" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5403</id>
+    <name>Polluted Water</name>
+    <energy>11</energy>
+    <desc>Decim and the drake are not having much luck by following the river. In fact, Decim is starting to wonder if they chose the wrong direction...</desc>
+    <commander id="286" />
+    <deck>
+      <card id="1015" name="Windfrog" />
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="6017" />
+      <card id="1313" name="Lavafrog" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="1325" name="Chaos Storm" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="2046" name="Leaping Dragon" />
+      <card id="6011" name="Bomb Spirit" />
+      <card id="1631" mastery_level="2" name="Venom Dragon" />
+      <card id="2019" mastery_level="3" name="Chalistomper" />
+      <card id="2057" mastery_level="4" name="Twister" />
+      <card id="5073" mastery_level="5" name="Shell Invader" />
+      <card id="5036" mastery_level="6" name="Winter Tail" />
+      <card id="1640" mastery_level="7" name="Life Dragon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>Geez, is the water getting WORSE? This is absolutely disgusting!</text>
+      </line>
+    </speech>
+  </mission>
 </root>

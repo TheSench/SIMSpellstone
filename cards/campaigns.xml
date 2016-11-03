@@ -3502,6 +3502,146 @@
     </rewards>
     <find_item id="3045" drop_per_energy=".25" />
   </campaign>
+  <!-- Event 18 -->
+  <campaign>
+    <id>1097</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>The Price of Freedom</name>
+    <icon id="pumpkin" bundle="75" />
+    <location_id>101</location_id>
+    <x>120</x>
+    <y>300</y>
+    <combatBG>CombatBGEvent002</combatBG>
+    <missions>
+      <mission_id>5388</mission_id>
+      <mission_id>5389</mission_id>
+      <mission_id>5390</mission_id>
+      <mission_id>5391</mission_id>
+      <mission_id>5392</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="503" />
+      <card level="2" id="502" />
+      <card level="3" id="502" />
+      <card level="4" id="503" />
+      <card level="5" id="502" />
+      <card level="6" id="502" />
+      <card level="7" id="503" />
+    </rewards>
+    <find_item id="3046" drop_per_energy=".25" />
+  </campaign>
+  <campaign>
+    <id>1098</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Dragon Buddies</name>
+    <icon id="pumpkin" bundle="75" />
+    <location_id>101</location_id>
+    <x>120</x>
+    <y>300</y>
+    <combatBG>CombatBGEvent002</combatBG>
+    <missions>
+      <mission_id>5393</mission_id>
+      <mission_id>5394</mission_id>
+      <mission_id>5395</mission_id>
+      <mission_id>5396</mission_id>
+      <mission_id>5397</mission_id>
+      <mission_id>5398</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="503" />
+      <card level="2" id="502" />
+      <card level="3" id="502" />
+      <card level="4" id="503" />
+      <card level="5" id="502" />
+      <card level="6" id="502" />
+      <card level="7" id="503" />
+    </rewards>
+    <find_item id="3046" drop_per_energy=".25" />
+  </campaign>
+  <campaign>
+    <id>1099</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Cry of the Wild</name>
+    <icon id="pumpkin" bundle="75" />
+    <location_id>101</location_id>
+    <x>120</x>
+    <y>300</y>
+    <combatBG>CombatBGEvent002</combatBG>
+    <missions>
+      <mission_id>5399</mission_id>
+      <mission_id>5400</mission_id>
+      <mission_id>5401</mission_id>
+      <mission_id>5402</mission_id>
+      <mission_id>5403</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="503" />
+      <card level="2" id="502" />
+      <card level="3" id="502" />
+      <card level="4" id="503" />
+      <card level="5" id="502" />
+      <card level="6" id="502" />
+      <card level="7" id="503" />
+    </rewards>
+    <find_item id="3046" drop_per_energy=".25" />
+  </campaign>
+  <campaign>
+    <id>1100</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Relentless Kidnappers</name>
+    <icon id="pumpkin" bundle="75" />
+    <location_id>101</location_id>
+    <x>120</x>
+    <y>300</y>
+    <combatBG>CombatBGEvent002</combatBG>
+    <missions>
+      <mission_id>5404</mission_id>
+      <mission_id>5405</mission_id>
+      <mission_id>5406</mission_id>
+      <mission_id>5407</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="503" />
+      <card level="2" id="502" />
+      <card level="3" id="502" />
+      <card level="4" id="503" />
+      <card level="5" id="502" />
+      <card level="6" id="502" />
+      <card level="7" id="503" />
+    </rewards>
+    <find_item id="3046" drop_per_energy=".25" />
+  </campaign>
+  <campaign>
+    <id>1101</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Showdown</name>
+    <icon id="pumpkin" bundle="75" />
+    <location_id>101</location_id>
+    <x>120</x>
+    <y>300</y>
+    <combatBG>CombatBGEvent002</combatBG>
+    <missions>
+      <mission_id>5408</mission_id>
+      <mission_id>5409</mission_id>
+      <mission_id>5410</mission_id>
+      <mission_id>5411</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="503" />
+      <card level="2" id="502" />
+      <card level="3" id="502" />
+      <card level="4" id="503" />
+      <card level="5" id="502" />
+      <card level="6" id="502" />
+      <card level="7" id="503" />
+    </rewards>
+    <find_item id="3046" drop_per_energy=".25" />
+  </campaign>
   <!-- START Mythic Campaigns -->
   <campaign>
     <id>3000</id>

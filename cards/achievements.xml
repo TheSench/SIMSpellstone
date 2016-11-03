@@ -4662,7 +4662,7 @@
       <gold>800</gold>
     </reward>
   </achievement>
-  <!-- Event 17 -->
+  <!-- Event 17 Goblins -->
   <achievement>
     <id>3154</id>
     <type>2</type>
@@ -4843,6 +4843,162 @@
     <achievement_req>3164</achievement_req>
     <req>
       <campaign>1096</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- Event 18 -->
+  <achievement>
+    <id>3166</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Price of Freedom</name>
+    <desc>Complete the 'The Price of Freedom' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1097</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3167</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Price of Freedom</name>
+    <desc>Complete the 'The Price of Freedom' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3166</achievement_req>
+    <req>
+      <campaign>1097</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3168</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Dragon Buddies</name>
+    <desc>Complete the 'Dragon Buddies' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1098</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3169</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Dragon Buddies</name>
+    <desc>Complete the 'Dragon Buddies' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3168</achievement_req>
+    <req>
+      <campaign>1098</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3170</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Cry of the Wild</name>
+    <desc>Complete the 'Cry of the Wild' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1099</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3171</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Cry of the Wild</name>
+    <desc>Complete the 'Cry of the Wild' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3170</achievement_req>
+    <req>
+      <campaign>1099</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3172</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Relentless Kidnappers</name>
+    <desc>Complete the 'Relentless Kidnappers' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1100</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3173</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Relentless Kidnappers</name>
+    <desc>Complete the 'Relentless Kidnappers' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3172</achievement_req>
+    <req>
+      <campaign>1100</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3174</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Showdown</name>
+    <desc>Complete the 'Showdown' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1101</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3175</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Showdown</name>
+    <desc>Complete the 'Showdown' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3174</achievement_req>
+    <req>
+      <campaign>1101</campaign>
       <level>7</level>
     </req>
     <reward>
