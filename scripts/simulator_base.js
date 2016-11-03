@@ -1697,6 +1697,26 @@ var SIMULATOR = {};
                     current_assault['scorched'] = 0;
                 }
             }
+
+
+            // Corrosion
+            var corroded = current_assault.corroded;
+            if (corroded) {
+                corroded.timer--;
+                if (corroded.timer === 0) {
+                    current_assault.corroded = false;
+                    current_assault.attack_corroded = 0;
+                    if (debug) {
+                        echo += debug_name(current_assault) + ' recovers from corrosion<br>';
+                    }
+                } else {
+                    var corrosion = Math.min(current_assault.permanentAttack(), corroded.amount);
+                    current_assault.attack_corroded = corrosion
+                    if (debug) {
+                        echo += debug_name(current_assault) + ' loses ' + corrosion + ' attack to corrosion<br>';
+                    }
+                }
+            }
         }
     };
 
@@ -1719,6 +1739,7 @@ var SIMULATOR = {};
             if (current_assault.attack_valor) echo += ' Valor: +' + current_assault.attack_valor;
             if (current_assault.attack_rally) echo += ' Rally: +' + current_assault.attack_rally;
             if (current_assault.attack_weaken) echo += ' Weaken: -' + current_assault.attack_weaken;
+            if (current_assault.attack_corroded) echo += ' Corrosion: -' + current_assault.attack_corroded;
             if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
         }
 
@@ -1928,6 +1949,26 @@ var SIMULATOR = {};
                     current_assault.scorched.timer = 2;
                 }
                 if (debug) echo += debug_name(target) + ' inflicts counterburn(' + scorch + ') on ' + debug_name(current_assault) + '<br>';
+            }
+
+            // Corrosion
+            // - Target must have received some amount of damage
+            if (target.corrosive) {
+                var corrosion = target.corrosive || 0;
+                var enhanced = getEnhancement(target, 'corrosive');
+                if (enhanced) {
+                    if (enhanced < 0) {
+                        enhanced = Math.ceil(corrosion * -enhanced);
+                    }
+                    corrosion += enhanced;
+                }
+                if (!current_assault.corroded || current_assault.corroded.amount < corrosion) {
+                    current_assault.corroded = { amount: corrosion, timer: 2 };
+                    if (debug) echo += debug_name(target) + ' inflicts corrosion(' + corrosion + ') on ' + debug_name(current_assault) + '<br>';
+                } else {
+                    current_assault.corroded.timer = 2;
+                    if (debug) echo += debug_name(target) + ' renews corrosion(' + current_assault.corroded.amount + ') on ' + debug_name(current_assault) + '<br>';
+                }
             }
 
             // Berserk

@@ -156,6 +156,7 @@ function initializeCard(card, p, newKey) {
     card.nullified = 0;
     card.poisoned = 0;
     card.scorched = 0;
+    card.corroded = 0;
     card.enfeebled = 0;
     card.protected = 0;
     card.barrier_ice = 0;
@@ -310,11 +311,13 @@ var makeUnit = (function () {
         attack_rally: 0,
         attack_weaken: 0,
         attack_corroded: 0,
+        corrosion_timer: 0,
         // Other Statuses
         // Statuses
         nullified: 0,
         poisoned: 0,
         scorched: 0,
+        corroded: 0,
         enfeebled: 0,
         protected: 0,
         enhanced: 0,
@@ -330,11 +333,13 @@ var makeUnit = (function () {
                 this.attack_rally = 0;
                 this.attack_weaken = 0;
                 this.attack_corroded = 0;
+                this.corrosion_timer = 0;
                 this.attack_berserk = 0;
                 this.attack_valor = 0;
                 this.nullified = 0;
                 this.poisoned = 0;
                 this.scorched = 0;
+                this.corroded = 0;
                 this.enfeebled = 0;
                 this.protected = 0;
                 this.barrier_ice = 0;
@@ -409,6 +414,22 @@ var makeUnit = (function () {
                     if (!this.isAlive()) echo += ' and it dies';
                     else if (!this.scorched) echo += ' and scorch wears off';
                     echo += '<br>';
+                }
+            }
+
+            var corroded = this.corroded;
+            if (corroded) {
+                if (corroded.timer > 1) {
+                    scorch.timer--;
+                    var amount = Math.min(corroded.amount, this.permanentAttack());
+                    this.attack_corroded = amount
+                    echo += debug_name(this) + ' is corroded by ' + amount + '<br/>';
+                } else {
+                    this.corroded = 0;
+                    this.attack_corroded = 0;
+                    if (debug) {
+                        echo += 'corrosion on ' + debug_name(this) + ' wears off<br/>';
+                    }
                 }
             }
         },
@@ -619,7 +640,7 @@ var makeUnit = (function () {
         },
 
         permanentAttack: function () {
-            return (this.attack + this.attack_berserk);
+            return (this.attack + this.attack_berserk + this.attack_valor);
         },
 
         // Filters by faction
