@@ -1337,6 +1337,15 @@ var SIMULATOR = {};
                 }
             }
 
+            var corroded = current_assault.corroded;
+            if (corroded) {
+                var corrosion = Math.min(current_assault.adjustedAttack(), corroded.amount);
+                current_assault.attack_corroded = corrosion;
+                if (debug) {
+                    echo += debug_name(current_assault) + ' loses ' + corrosion + ' attack to corrosion<br>';
+                }
+            }
+
             current_assault.enfeebled = 0;
             current_assault.protected = 0;
             current_assault.barrier_ice = 0;
@@ -1643,6 +1652,7 @@ var SIMULATOR = {};
             current_assault.enfeebled = 0;
             current_assault.attack_rally = 0;
             current_assault.attack_weaken = 0;
+            current_assault.attack_corroded = 0;
             current_assault.nullified = 0;
         }
 
@@ -1705,15 +1715,8 @@ var SIMULATOR = {};
                 corroded.timer--;
                 if (corroded.timer === 0) {
                     current_assault.corroded = false;
-                    current_assault.attack_corroded = 0;
                     if (debug) {
                         echo += debug_name(current_assault) + ' recovers from corrosion<br>';
-                    }
-                } else {
-                    var corrosion = Math.min(current_assault.permanentAttack(), corroded.amount);
-                    current_assault.attack_corroded = corrosion
-                    if (debug) {
-                        echo += debug_name(current_assault) + ' loses ' + corrosion + ' attack to corrosion<br>';
                     }
                 }
             }
@@ -1962,13 +1965,13 @@ var SIMULATOR = {};
                     }
                     corrosion += enhanced;
                 }
-                if (!current_assault.corroded || current_assault.corroded.amount < corrosion) {
-                    current_assault.corroded = { amount: corrosion, timer: 2 };
-                    if (debug) echo += debug_name(target) + ' inflicts corrosion(' + corrosion + ') on ' + debug_name(current_assault) + '<br>';
-                } else {
+                if (current_assault.corroded) {
+                    current_assault.corroded.amount += corrosion;
                     current_assault.corroded.timer = 2;
-                    if (debug) echo += debug_name(target) + ' renews corrosion(' + current_assault.corroded.amount + ') on ' + debug_name(current_assault) + '<br>';
+                } else {
+                    current_assault.corroded = { amount: corrosion, timer: 2 };
                 }
+                if (debug) echo += debug_name(target) + ' inflicts corrosion(' + corrosion + ') on ' + debug_name(current_assault) + '<br>';
             }
 
             // Berserk
