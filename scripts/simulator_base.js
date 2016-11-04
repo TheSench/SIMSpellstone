@@ -1954,26 +1954,6 @@ var SIMULATOR = {};
                 if (debug) echo += debug_name(target) + ' inflicts counterburn(' + scorch + ') on ' + debug_name(current_assault) + '<br>';
             }
 
-            // Corrosion
-            // - Target must have received some amount of damage
-            if (target.corrosive) {
-                var corrosion = target.corrosive || 0;
-                var enhanced = getEnhancement(target, 'corrosive');
-                if (enhanced) {
-                    if (enhanced < 0) {
-                        enhanced = Math.ceil(corrosion * -enhanced);
-                    }
-                    corrosion += enhanced;
-                }
-                if (current_assault.corroded) {
-                    current_assault.corroded.amount += corrosion;
-                    current_assault.corroded.timer = 2;
-                } else {
-                    current_assault.corroded = { amount: corrosion, timer: 2 };
-                }
-                if (debug) echo += debug_name(target) + ' inflicts corrosion(' + corrosion + ') on ' + debug_name(current_assault) + '<br>';
-            }
-
             // Berserk
             // - Must have done some damage to an assault unit
             if (damage > 0 && current_assault.berserk && current_assault.isAlive()) {
@@ -1993,6 +1973,26 @@ var SIMULATOR = {};
         }
 
         // -- CHECK STATUS INFLICTION --
+
+        // Corrosion
+        // - Target must have received some amount of damage
+        if (target.corrosive) {
+            var corrosion = target.corrosive || 0;
+            var enhanced = getEnhancement(target, 'corrosive');
+            if (enhanced) {
+                if (enhanced < 0) {
+                    enhanced = Math.ceil(corrosion * -enhanced);
+                }
+                corrosion += enhanced;
+            }
+            if (current_assault.corroded) {
+                current_assault.corroded.amount += corrosion;
+                current_assault.corroded.timer = 2;
+            } else {
+                current_assault.corroded = { amount: corrosion, timer: 2 };
+            }
+            if (debug) echo += debug_name(target) + ' inflicts corrosion(' + corrosion + ') on ' + debug_name(current_assault) + '<br>';
+        }
 
         if (target.isAssault() && target.isAlive() && current_assault.isAlive()) {
             // Scorch
