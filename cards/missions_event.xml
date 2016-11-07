@@ -11720,7 +11720,7 @@
     <id>5388</id>
     <name>Triumphant Return</name>
     <energy>11</energy>
-    <desc>Decim has returned to Tarragon Peaks after his adventure in Goblin Rise Stronghold. For the first time, he was able to make friends with a dragon, and he can't wait to tell the residents of Tarragon Peaks.</desc>
+    <desc>Decim has returned to Tarragon Peak after his adventure in Goblin Rise Stronghold. For the first time, he was able to make friends with a dragon, and he can't wait to tell the residents of Tarragon Peak.</desc>
     <commander id="272" />
     <deck>
       <card id="1019" name="Oracle" />
@@ -11855,7 +11855,7 @@
   </mission>
   <mission>
     <id>5392</id>
-    <name>Freedom Fighter</name>
+    <name>Be Free</name>
     <energy>11</energy>
     <desc>The goblins show Decim the remnants of cracked dragon eggs, and a line of fettered dragons. As the goblins explain their plan, Decim becomes filled with an unquenchable fury...</desc>
     <commander id="311" />
@@ -12239,6 +12239,248 @@
         <commander>flamebender</commander>
         <enemy>0</enemy>
         <text>Geez, is the water getting WORSE? This is absolutely disgusting!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5404</id>
+    <name>Pursuers</name>
+    <energy>11</energy>
+    <desc>Decim and the drake have traveled far, but not all the goblins are content to leave the two in peace. Behind them, goblins have pursued fiercely...</desc>
+    <commander id="322" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6007" />
+      <card id="1610" name="Ranger" />
+      <card id="1628" name="Garganotos" />
+      <card id="7087" name="Goblites" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="1031" name="Noble Champion" />
+      <card id="5073" name="Shell Invader" />
+      <card id="1631" mastery_level="2" name="Venom Dragon" />
+      <card id="2012" mastery_level="3" name="Frogling Swarm" />
+      <card id="2054" mastery_level="4" name="Pack Runner" />
+      <card id="2053" mastery_level="5" name="Rocket Rider" />
+      <card id="7088" mastery_level="6" name="Jubjub" />
+      <card id="5023" mastery_level="7" name="Nightfall Dragon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>dragonridingringleader</commander>
+        <enemy>1</enemy>
+        <text>There's the lad that stole our dragons! Get 'em!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5405</id>
+    <name>Rematch</name>
+    <energy>11</energy>
+    <desc>An entire troop of goblins have caught up with Decim and the drake! But Decim will not let them take the drake back into captivity... </desc>
+    <commander id="323" />
+    <deck>
+      <card id="1615" name="Rune Panther" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6007" />
+      <card id="1019" name="Oracle" />
+      <card id="1628" name="Garganotos" />
+      <card id="2064" name="Tome Sneak" />
+      <card id="2046" name="Leaping Dragon" />
+      <card id="1031" name="Noble Champion" />
+      <card id="1030" name="Paladin" />
+      <card id="1628" mastery_level="2" name="Garganotos" />
+      <card id="1626" mastery_level="3" name="Tusker" />
+      <card id="2041" mastery_level="4" name="Sharpwing" />
+      <card id="2053" mastery_level="5" name="Rocket Rider" />
+      <card id="6014" mastery_level="6" name="Armored Siegefist" />
+      <card id="1340" mastery_level="7" name="Blazekin Dragon" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5406</id>
+    <name>A Friend to Protect</name>
+    <energy>11</energy>
+    <desc>Decim stands between the goblins and the sailing drake. Until one side loses, neither will back down...</desc>
+    <commander id="320" />
+    <deck>
+      <card id="1315" name="Nix Elemental" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6007" />
+      <card id="1317" name="Fire Imp" />
+      <card id="1628" name="Garganotos" />
+      <card id="5089" name="Gomblit" />
+      <card id="2033" name="Arcblaze Dragon" />
+      <card id="2005" name="Sailing Drake" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="2062" mastery_level="2" name="Deadeye Apprentice" />
+      <card id="1027" mastery_level="3" name="Griffin Knight" />
+      <card id="1329" mastery_level="4" name="Shadow Assassin" />
+      <card id="2063" mastery_level="5" name="Hob Fletcher" />
+      <card id="5090" mastery_level="6" name="Reks' Faithful" />
+      <card id="6058" mastery_level="7" name="Tarragon Cuttail" />
+    </deck>
+    <speech>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>Just get lost already! You're not taking him back!</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Grrr!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5407</id>
+    <name>Dragon Guard</name>
+    <energy>11</energy>
+    <desc>Despite being outnumbered, Decim and the drake fight valiantly against the goblins. They unleash a troop of dragons against them!</desc>
+    <commander id="318" />
+    <deck>
+      <card id="1312" name="Scythe Demon" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6007" />
+      <card id="6012" name="Ember Drake" />
+      <card id="2062" name="Deadeye Apprentice" />
+      <card id="6021" name="Marsh Ogre" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="2001" name="Dunetooth Demon" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="2062" mastery_level="2" name="Deadeye Apprentice" />
+      <card id="2020" mastery_level="3" name="Tidetaken Fighter" />
+      <card id="1028" mastery_level="4" name="Heroic Frog" />
+      <card id="1628" mastery_level="5" name="Garganotos" />
+      <card id="5029" mastery_level="6" name="Snowback Dragon" />
+      <card id="6024" mastery_level="7" name="Bane Dragon" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5408</id>
+    <name>Limited Strength</name>
+    <energy>11</energy>
+    <desc>Each time Decim defeats one of the goblins or dragons, another one seems to take its place. Decim and his ally are starting to get tired...</desc>
+    <commander id="323" />
+    <deck>
+      <card id="1017" name="Judgment" />
+      <card id="5012" name="Static Drake" />
+      <card id="5012" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="7087" name="Goblites" />
+      <card id="1628" name="Garganotos" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="1629" name="Rock Titan" />
+      <card id="1029" name="Elementalist" />
+      <card id="6072" mastery_level="2" name="Bone Wielder" />
+      <card id="2002" mastery_level="3" name="Lantern Guardian" />
+      <card id="1625" mastery_level="4" name="Ferocious Clawkin" />
+      <card id="6090" mastery_level="5" name="Crackshot" />
+      <card id="6049" mastery_level="6" name="Goblin Explosioneer" />
+      <card id="1640" mastery_level="7" name="Life Dragon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>...Awoo...</text>
+      </line>
+      <line>
+        <commander>Portrait_Goblin_Captain</commander>
+        <enemy>1</enemy>
+        <text>Yer lookin' a wee bit tired, lad. Jus' give up!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5409</id>
+    <name>Confronting Defeat</name>
+    <energy>11</energy>
+    <desc>It's becoming increasingly clear that Decim cannot fight off all the goblins by himself. He must prepare for the worst case scenario...</desc>
+    <commander id="321" />
+    <deck>
+      <card id="1313" name="Lavafrog" />
+      <card id="7012" name="Life Drake" />
+      <card id="7012" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6089" name="Fire Belcher" />
+      <card id="1628" name="Garganotos" />
+      <card id="7024" name="Woolmane Dragon" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="1632" name="Shadow Rider" />
+      <card id="1328" mastery_level="2" name="Poison Bullfrog" />
+      <card id="1630" mastery_level="3" name="Giant Squid" />
+      <card id="1329" mastery_level="4" name="Shadow Assassin" />
+      <card id="2064" mastery_level="5" name="Tome Sneak" />
+      <card id="6088" mastery_level="6" name="Doxum's Construct" />
+      <card id="2047" mastery_level="7" name="Conjured Dragon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>Buddy, I'm going to make one final push. Use that time to get away from here!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5410</id>
+    <name>But It Refused...</name>
+    <energy>11</energy>
+    <desc>Against Decim's wishes, the drake remains by his side. The goblins send one of their fiercest dragons against them...</desc>
+    <commander id="259" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6012" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="2064" name="Tome Sneak" />
+      <card id="1628" name="Garganotos" />
+      <card id="5062" name="Cliffhanger Wyrm" />
+      <card id="2030" name="Ebon Duelist" />
+      <card id="2024" name="Dusk Noble" />
+      <card id="5053" mastery_level="2" name="Anura Witch" />
+      <card id="1327" mastery_level="3" name="Fallen Angel" />
+      <card id="1330" mastery_level="4" name="Devouring Locusts" />
+      <card id="2062" mastery_level="5" name="Deadeye Apprentice" />
+      <card id="7088" mastery_level="6" name="Jubjub" />
+      <card id="6026" mastery_level="7" name="Smokefang" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5411</id>
+    <name>Savior or Destroyer?</name>
+    <energy>11</energy>
+    <desc>When all hope seems lost, the river swells up as if it has its own will. The waves wash over the battlefield, breaking up the combatants. Once the water recedes, a new figure stands before Decim...</desc>
+    <commander id="4" />
+    <deck>
+      <card id="1012" name="Cloud Sylph" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="5022" />
+      <card id="5017" name="Steam Tempest" />
+      <card id="7005" name="Tsunamari" />
+      <card id="1628" name="Garganotos" />
+      <card id="7062" name="Brine Bellower" />
+      <card id="2014" name="Tadpole Warmage" />
+      <card id="1630" name="Giant Squid" />
+      <card id="1028" mastery_level="2" name="Heroic Frog" />
+      <card id="7066" mastery_level="3" name="Aquine" />
+      <card id="2005" mastery_level="4" name="Sailing Drake" />
+      <card id="2062" mastery_level="5" name="Deadeye Apprentice" />
+      <card id="7003" mastery_level="6" name="Kraken" />
+      <card id="7054" mastery_level="7" name="The Thing Below" />
+    </deck>
+    <speech>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>WHOA! What was that?!</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>1</enemy>
+        <text>...</text>
       </line>
     </speech>
   </mission>

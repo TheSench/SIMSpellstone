@@ -33522,8 +33522,8 @@
     <asset_bundle>74</asset_bundle>
     <hidden_until_time>1478538000</hidden_until_time>
     <attack>1</attack>
-    <health>10</health>
-    <cost>1</cost>
+    <health>6</health>
+    <cost>0</cost>
     <rarity>4</rarity>
     <skill id="burn" x="1" />
     <skill id="pierce" x="2" />
@@ -33533,11 +33533,11 @@
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>11</health>
+      <health>7</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>12</health>
+      <health>8</health>
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -33547,7 +33547,7 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>13</health>
+      <health>9</health>
     </upgrade>
     <upgrade>
       <level>6</level>
@@ -33565,8 +33565,8 @@
     <asset_bundle>74</asset_bundle>
     <hidden_until_time>1478538000</hidden_until_time>
     <attack>1</attack>
-    <health>14</health>
-    <cost>1</cost>
+    <health>10</health>
+    <cost>0</cost>
     <rarity>4</rarity>
     <skill id="burn" x="1" />
     <skill id="pierce" x="3" />
@@ -33576,7 +33576,7 @@
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>15</health>
+      <health>11</health>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -33586,11 +33586,11 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>16</health>
+      <health>12</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>17</health>
+      <health>13</health>
     </upgrade>
     <upgrade>
       <level>6</level>
@@ -33608,8 +33608,8 @@
     <asset_bundle>74</asset_bundle>
     <hidden_until_time>1478538000</hidden_until_time>
     <attack>1</attack>
-    <health>17</health>
-    <cost>1</cost>
+    <health>13</health>
+    <cost>0</cost>
     <rarity>4</rarity>
     <skill id="burn" x="1" />
     <skill id="pierce" x="5" />
@@ -33619,15 +33619,15 @@
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>18</health>
+      <health>14</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>19</health>
+      <health>15</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>20</health>
+      <health>16</health>
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -48714,20 +48714,20 @@
       <level>4</level>
       <health>18</health>
       <skill id="fervor" x="3" y="5" />
-      <skill id="pierce" x="6" />
+      <skill id="pierce" x="5" />
       <skill id="berserk" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>19</health>
-      <skill id="fervor" x="4" y="5" />
+      <skill id="fervor" x="3" y="5" />
       <skill id="pierce" x="6" />
       <skill id="berserk" x="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>20</health>
-      <skill id="fervor" x="4" y="5" />
+      <skill id="fervor" x="3" y="5" />
       <skill id="pierce" x="6" />
       <skill id="berserk" x="4" />
     </upgrade>

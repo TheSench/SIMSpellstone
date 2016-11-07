@@ -61905,8 +61905,8 @@ var CARDS = {
     "type": "2",
     "sub_type": ["11"],
     "attack": 1,
-    "health": 10,
-    "cost": 1,
+    "health": 6,
+    "cost": 0,
     "skill": [
       {
         "id": "burn",
@@ -61923,11 +61923,11 @@ var CARDS = {
     ],
     "upgrades": {
       "2": {
-        "health": 11,
+        "health": 7,
         "skill": [],
       },
       "3": {
-        "health": 12,
+        "health": 8,
         "skill": [],
       },
       "4": {
@@ -61947,7 +61947,7 @@ var CARDS = {
         ],
       },
       "5": {
-        "health": 13,
+        "health": 9,
         "skill": [],
       },
       "6": {
@@ -61979,8 +61979,8 @@ var CARDS = {
     "type": "2",
     "sub_type": ["11"],
     "attack": 1,
-    "health": 14,
-    "cost": 1,
+    "health": 10,
+    "cost": 0,
     "skill": [
       {
         "id": "burn",
@@ -61997,7 +61997,7 @@ var CARDS = {
     ],
     "upgrades": {
       "2": {
-        "health": 15,
+        "health": 11,
         "skill": [],
       },
       "3": {
@@ -62017,11 +62017,11 @@ var CARDS = {
         ],
       },
       "4": {
-        "health": 16,
+        "health": 12,
         "skill": [],
       },
       "5": {
-        "health": 17,
+        "health": 13,
         "skill": [],
       },
       "6": {
@@ -62053,8 +62053,8 @@ var CARDS = {
     "type": "2",
     "sub_type": ["11"],
     "attack": 1,
-    "health": 17,
-    "cost": 1,
+    "health": 13,
+    "cost": 0,
     "skill": [
       {
         "id": "burn",
@@ -62071,15 +62071,15 @@ var CARDS = {
     ],
     "upgrades": {
       "2": {
-        "health": 18,
+        "health": 14,
         "skill": [],
       },
       "3": {
-        "health": 19,
+        "health": 15,
         "skill": [],
       },
       "4": {
-        "health": 20,
+        "health": 16,
         "skill": [],
       },
       "5": {
@@ -91563,7 +91563,7 @@ var CARDS = {
           },
           {
             "id": "pierce",
-            "x": 6,
+            "x": 5,
           },
           {
             "id": "berserk",
@@ -91576,7 +91576,7 @@ var CARDS = {
         "skill": [
           {
             "id": "fervor",
-            "x": 4,
+            "x": 3,
             "y": "5",
             "z": 5,
           },
@@ -91595,7 +91595,7 @@ var CARDS = {
         "skill": [
           {
             "id": "fervor",
-            "x": 4,
+            "x": 3,
             "y": "5",
             "z": 5,
           },
