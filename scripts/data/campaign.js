@@ -32194,7 +32194,7 @@ var MISSIONS = {
     "id": "5390",
     "name": "Silent Sanctuary",
     "commander": {
-        "id": "314"
+        "id": "321"
     },
     "deck": [
       {
@@ -32314,7 +32314,7 @@ var MISSIONS = {
     "id": "5392",
     "name": "Be Free",
     "commander": {
-        "id": "311"
+        "id": "321"
     },
     "deck": [
       {
@@ -32374,7 +32374,7 @@ var MISSIONS = {
     "id": "5393",
     "name": "Misplaced Suspicion",
     "commander": {
-        "id": "310"
+        "id": "272"
     },
     "deck": [
       {
@@ -32434,7 +32434,7 @@ var MISSIONS = {
     "id": "5394",
     "name": "Feral Dragons",
     "commander": {
-        "id": "311"
+        "id": "310"
     },
     "deck": [
       {
@@ -32494,7 +32494,7 @@ var MISSIONS = {
     "id": "5395",
     "name": "The Wind Drake",
     "commander": {
-        "id": "310"
+        "id": "351"
     },
     "deck": [
       {
@@ -32554,7 +32554,7 @@ var MISSIONS = {
     "id": "5396",
     "name": "Dusty Scales",
     "commander": {
-        "id": "4"
+        "id": "351"
     },
     "deck": [
       {
@@ -32614,7 +32614,7 @@ var MISSIONS = {
     "id": "5397",
     "name": "Pantomime",
     "commander": {
-        "id": "4"
+        "id": "242"
     },
     "deck": [
       {
@@ -33498,7 +33498,7 @@ var MISSIONS = {
     "id": "5411",
     "name": "Savior or Destroyer?",
     "commander": {
-        "id": "4"
+        "id": "352"
     },
     "deck": [
       {

@@ -11781,7 +11781,7 @@
     <name>Silent Sanctuary</name>
     <energy>11</energy>
     <desc>Decim frantically looks for any signs of life. Just a few days ago, Wyverns' Way was a haven for dragons who had bonded with humans. Now, it is completely deserted.</desc>
-    <commander id="314" />
+    <commander id="321" />
     <deck>
       <card id="1311" name="Molten Skeleton" />
       <card id="5012" name="Static Drake" />
@@ -11858,7 +11858,7 @@
     <name>Be Free</name>
     <energy>11</energy>
     <desc>The goblins show Decim the remnants of cracked dragon eggs, and a line of fettered dragons. As the goblins explain their plan, Decim becomes filled with an unquenchable fury...</desc>
-    <commander id="311" />
+    <commander id="321" />
     <deck>
       <card id="1313" name="Lavafrog" />
       <card id="6007" name="Goblin Crew" />
@@ -11894,7 +11894,7 @@
     <name>Misplaced Suspicion</name>
     <energy>11</energy>
     <desc>The goblins disband, leaving Decim to free the dragons. However, the dragons have become more feral than what Decim anticipated...</desc>
-    <commander id="310" />
+    <commander id="272" />
     <deck>
       <card id="1317" name="Fire Imp" />
       <card id="6012" name="Ember Drake" />
@@ -11930,7 +11930,7 @@
     <name>Feral Dragons</name>
     <energy>11</energy>
     <desc>Decim tries to remove the chains from the dragons, but they behave like wild beasts. Decim refuses to give up, even if the dragons don't understand that he wants to help them.</desc>
-    <commander id="311" />
+    <commander id="310" />
     <deck>
       <card id="5007" name="Arcane Scroll" />
       <card id="5012" name="Static Drake" />
@@ -11954,7 +11954,7 @@
     <name>The Wind Drake</name>
     <energy>11</energy>
     <desc>Decim tries to remove the chains from the dragons, but they behave like wild beasts. Decim refuses to give up, even if the dragons don't understand that he wants to help them.</desc>
-    <commander id="310" />
+    <commander id="351" />
     <deck>
       <card id="1610" name="Ranger" />
       <card id="5006" name="Arms Enforcer" />
@@ -11990,7 +11990,7 @@
     <name>Dusty Scales</name>
     <energy>11</energy>
     <desc>Decim cautiously approaches the remaining young dragon. A light film of grime has covered its scales.</desc>
-    <commander id="4" />
+    <commander id="351" />
     <deck>
       <card id="1014" name="Cherub" />
       <card id="5012" name="Static Drake" />
@@ -12026,7 +12026,7 @@
     <name>Pantomime</name>
     <energy>11</energy>
     <desc>The drake moves a few paces ahead, then pauses to look at Decim. It moves again a little farther, looking back again. Decim guesses it wants to be followed, and moves after it.</desc>
-    <commander id="4" />
+    <commander id="242" />
     <deck>
       <card id="1315" name="Nix Elemental" />
       <card id="7012" name="Life Drake" />
@@ -12049,7 +12049,7 @@
     <id>5398</id>
     <name>Dragon Fury</name>
     <energy>11</energy>
-    <desc>The drake has taken Decim to a thin river, one of the few sources of water on Tarragon Peak. However the water level has fallen even further, a strange black grime coating the edges of the river bank.</desc>
+    <desc>The drake has taken Decim to a thin river, one of the few sources of water on Tarragon Peak. However the water level has fallen even further, with a strange black grime coating the edges of the river bank.</desc>
     <commander id="310" />
     <deck>
       <card id="1613" name="Acidic Spider" />
@@ -12090,7 +12090,7 @@
     <id>5399</id>
     <name>Connect the Dots</name>
     <energy>11</energy>
-    <desc>The greenback dragon flies away, leaving Decim and the wind drake alone at the riverbed. Decim investigates again...</desc>
+    <desc>The feral dragon flies away, leaving Decim and the wind drake alone at the riverbed. Decim investigates again...</desc>
     <commander id="250" />
     <deck>
       <card id="1319" name="Wraith" />
@@ -12453,7 +12453,7 @@
     <name>Savior or Destroyer?</name>
     <energy>11</energy>
     <desc>When all hope seems lost, the river swells up as if it has its own will. The waves wash over the battlefield, breaking up the combatants. Once the water recedes, a new figure stands before Decim...</desc>
-    <commander id="4" />
+    <commander id="352" />
     <deck>
       <card id="1012" name="Cloud Sylph" />
       <card id="5022" name="Webfoot Raider" />

@@ -3508,7 +3508,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>The Price of Freedom</name>
-    <icon id="pumpkin" bundle="75" />
+    <icon id="smolderingEmber100" bundle="58" />
     <location_id>101</location_id>
     <x>128</x>
     <y>166</y>
@@ -3536,7 +3536,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>Dragon Buddies</name>
-    <icon id="pumpkin" bundle="75" />
+    <icon id="smolderingEmber100" bundle="58" />
     <location_id>101</location_id>
     <x>325</x>
     <y>134</y>
@@ -3565,7 +3565,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>Cry of the Wild</name>
-    <icon id="pumpkin" bundle="75" />
+    <icon id="smolderingEmber100" bundle="58" />
     <location_id>101</location_id>
     <x>85</x>
     <y>294</y>
@@ -3593,7 +3593,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>Relentless Kidnappers</name>
-    <icon id="pumpkin" bundle="75" />
+    <icon id="smolderingEmber100" bundle="58" />
     <location_id>101</location_id>
     <x>414</x>
     <y>258</y>
@@ -3620,7 +3620,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>Showdown</name>
-    <icon id="pumpkin" bundle="75" />
+    <icon id="smolderingEmber100" bundle="58" />
     <location_id>101</location_id>
     <x>612</x>
     <y>244</y>
