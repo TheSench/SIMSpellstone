@@ -6,7 +6,7 @@ var BATTLEGROUNDS = {
       {
         "effect_type": "skill",
         "id": "heal",
-        "mult": .2,
+        "mult": .25,
         "y": "9",
         "z": 9,
         "all": "1",

@@ -5,6 +5,7 @@ var RUNES = {
         "id": "5011",
         "name": "Rune of Minor Health",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "2",
         "icon": "rune_health_rare",
@@ -13,13 +14,13 @@ var RUNES = {
         "usable": "0",
         "stat_boost": {
             "health": "3"
-        },
-        "category": 3
+        }
     },
     "5012": {
         "id": "5012",
         "name": "Rune of Health",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "3",
         "icon": "rune_health_epic",
@@ -28,13 +29,13 @@ var RUNES = {
         "usable": "0",
         "stat_boost": {
             "health": "5"
-        },
-        "category": 3
+        }
     },
     "5013": {
         "id": "5013",
         "name": "Rune of Greater Health",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "4",
         "icon": "rune_health_legendary",
@@ -45,13 +46,13 @@ var RUNES = {
             "health": {
                 "mult": "0.3"
             }
-        },
-        "category": 3
+        }
     },
     "5021": {
         "id": "5021",
         "name": "Rune of Invisibility",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "4",
         "icon": "rune_invisibility_legendary",
@@ -63,13 +64,13 @@ var RUNES = {
                 "id": "evade",
                 "mult": "0.5"
             }
-        },
-        "category": 3
+        }
     },
     "5031": {
         "id": "5031",
         "name": "Rune of Minor Barrier",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "2",
         "icon": "rune_barrier_rare",
@@ -81,13 +82,13 @@ var RUNES = {
                 "id": "protect",
                 "x": "2"
             }
-        },
-        "category": 3
+        }
     },
     "5032": {
         "id": "5032",
         "name": "Rune of Barrier",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "3",
         "icon": "rune_barrier_epic",
@@ -99,13 +100,13 @@ var RUNES = {
                 "id": "protect",
                 "x": "3"
             }
-        },
-        "category": 3
+        }
     },
     "5033": {
         "id": "5033",
         "name": "Rune of Greater Barrier",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "4",
         "icon": "rune_barrier_legendary",
@@ -117,13 +118,13 @@ var RUNES = {
                 "id": "protect",
                 "mult": "0.75"
             }
-        },
-        "category": 3
+        }
     },
     "5034": {
         "id": "5034",
         "name": "Rune of Mass Barrier",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "4",
         "icon": "rune_barrier_all_legendary",
@@ -136,13 +137,13 @@ var RUNES = {
                 "mult": "0.5",
                 "all": "1"
             }
-        },
-        "category": 3
+        }
     },
     "5041": {
         "id": "5041",
         "name": "Rune of Minor Healing",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "2",
         "icon": "rune_heal_rare",
@@ -154,13 +155,13 @@ var RUNES = {
                 "id": "heal",
                 "x": "2"
             }
-        },
-        "category": 3
+        }
     },
     "5042": {
         "id": "5042",
         "name": "Rune of Healing",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "3",
         "icon": "rune_heal_epic",
@@ -172,13 +173,13 @@ var RUNES = {
                 "id": "heal",
                 "x": "3"
             }
-        },
-        "category": 3
+        }
     },
     "5043": {
         "id": "5043",
         "name": "Rune of Greater Healing",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "4",
         "icon": "rune_heal_legendary",
@@ -190,13 +191,13 @@ var RUNES = {
                 "id": "heal",
                 "mult": "0.75"
             }
-        },
-        "category": 3
+        }
     },
     "5044": {
         "id": "5044",
         "name": "Rune of Mass Healing",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "3",
         "icon": "rune_heal_all_epic",
@@ -209,13 +210,13 @@ var RUNES = {
                 "x": "1",
                 "all": "1"
             }
-        },
-        "category": 3
+        }
     },
     "5045": {
         "id": "5045",
         "name": "Rune of Greater Mass Healing",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "4",
         "icon": "rune_heal_all_legendary",
@@ -228,13 +229,13 @@ var RUNES = {
                 "mult": "0.5",
                 "all": "1"
             }
-        },
-        "category": 3
+        }
     },
     "5051": {
         "id": "5051",
         "name": "Rune of Minor Vengeance",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "2",
         "icon": "rune_vengeance_rare",
@@ -246,13 +247,13 @@ var RUNES = {
                 "id": "counter",
                 "x": "1"
             }
-        },
-        "category": 3
+        }
     },
     "5052": {
         "id": "5052",
         "name": "Rune of Vengeance",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "3",
         "icon": "rune_vengeance_epic",
@@ -264,13 +265,13 @@ var RUNES = {
                 "id": "counter",
                 "x": "2"
             }
-        },
-        "category": 3
+        }
     },
     "5053": {
         "id": "5053",
         "name": "Rune of Greater Vengeance",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "4",
         "icon": "rune_vengeance_legendary",
@@ -282,13 +283,13 @@ var RUNES = {
                 "id": "counter",
                 "mult": "0.5"
             }
-        },
-        "category": 3
+        }
     },
     "5061": {
         "id": "5061",
         "name": "Rune of Minor Armor",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "2",
         "icon": "rune_shield_rare",
@@ -300,13 +301,13 @@ var RUNES = {
                 "id": "armored",
                 "x": "1"
             }
-        },
-        "category": 3
+        }
     },
     "5062": {
         "id": "5062",
         "name": "Rune of Armor",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "3",
         "icon": "rune_shield_epic",
@@ -318,13 +319,13 @@ var RUNES = {
                 "id": "armored",
                 "x": "2"
             }
-        },
-        "category": 3
+        }
     },
     "5063": {
         "id": "5063",
         "name": "Rune of Greater Armor",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "4",
         "icon": "rune_shield_legendary",
@@ -336,13 +337,13 @@ var RUNES = {
                 "id": "armored",
                 "mult": "0.5"
             }
-        },
-        "category": 3
+        }
     },
     "5071": {
         "id": "5071",
         "name": "Rune of Minor Empower",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "2",
         "icon": "rune_empower_rare",
@@ -354,13 +355,13 @@ var RUNES = {
                 "id": "rally",
                 "x": "1"
             }
-        },
-        "category": 3
+        }
     },
     "5072": {
         "id": "5072",
         "name": "Rune of Empower",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "3",
         "icon": "rune_empower_epic",
@@ -372,13 +373,13 @@ var RUNES = {
                 "id": "rally",
                 "x": "2"
             }
-        },
-        "category": 3
+        }
     },
     "5073": {
         "id": "5073",
         "name": "Rune of Greater Empower",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "4",
         "icon": "rune_empower_legendary",
@@ -390,13 +391,13 @@ var RUNES = {
                 "id": "rally",
                 "mult": "0.5"
             }
-        },
-        "category": 3
+        }
     },
     "5074": {
         "id": "5074",
         "name": "Rune of Boundless Empower",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "4",
         "icon": "rune_empower_all_legendary",
@@ -409,13 +410,13 @@ var RUNES = {
                 "mult": "0.5",
                 "all": "1"
             }
-        },
-        "category": 3
+        }
     },
     "5081": {
         "id": "5081",
         "name": "Rune of Legion",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "3",
         "icon": "rune_legion_epic",
@@ -427,13 +428,13 @@ var RUNES = {
                 "id": "legion",
                 "x": "1"
             }
-        },
-        "category": 3
+        }
     },
     "5082": {
         "id": "5082",
         "name": "Rune of Greater Legion",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "4",
         "icon": "rune_legion_legendary",
@@ -445,13 +446,13 @@ var RUNES = {
                 "id": "legion",
                 "mult": "0.5"
             }
-        },
-        "category": 3
+        }
     },
     "5091": {
         "id": "5091",
         "name": "Rune of Fervor",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "3",
         "icon": "rune_fervor_epic",
@@ -463,13 +464,13 @@ var RUNES = {
                 "id": "fervor",
                 "x": "1"
             }
-        },
-        "category": 3
+        }
     },
     "5092": {
         "id": "5092",
         "name": "Rune of Greater Fervor",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "4",
         "icon": "rune_fervor_legendary",
@@ -481,13 +482,13 @@ var RUNES = {
                 "id": "fervor",
                 "mult": "0.5"
             }
-        },
-        "category": 3
+        }
     },
     "5101": {
         "id": "5101",
         "name": "Rune of Minor Hex",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "2",
         "icon": "rune_hex_rare",
@@ -499,13 +500,13 @@ var RUNES = {
                 "id": "enfeeble",
                 "x": "1"
             }
-        },
-        "category": 3
+        }
     },
     "5102": {
         "id": "5102",
         "name": "Rune of Hex",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "3",
         "icon": "rune_hex_epic",
@@ -517,13 +518,13 @@ var RUNES = {
                 "id": "enfeeble",
                 "x": "2"
             }
-        },
-        "category": 3
+        }
     },
     "5103": {
         "id": "5103",
         "name": "Rune of Greater Hex",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "4",
         "icon": "rune_hex_legendary",
@@ -535,13 +536,13 @@ var RUNES = {
                 "id": "enfeeble",
                 "mult": "0.5"
             }
-        },
-        "category": 3
+        }
     },
     "5104": {
         "id": "5104",
         "name": "Rune of Sweeping Hex",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "4",
         "icon": "rune_hex_all_legendary",
@@ -554,13 +555,13 @@ var RUNES = {
                 "mult": "0.5",
                 "all": "1"
             }
-        },
-        "category": 3
+        }
     },
     "5111": {
         "id": "5111",
         "name": "Rune of Minor Bolt",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "2",
         "icon": "rune_bolt_rare",
@@ -572,13 +573,13 @@ var RUNES = {
                 "id": "strike",
                 "x": "1"
             }
-        },
-        "category": 3
+        }
     },
     "5112": {
         "id": "5112",
         "name": "Rune of Bolt",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "3",
         "icon": "rune_bolt_epic",
@@ -590,13 +591,13 @@ var RUNES = {
                 "id": "strike",
                 "x": "2"
             }
-        },
-        "category": 3
+        }
     },
     "5113": {
         "id": "5113",
         "name": "Rune of Greater Bolt",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "4",
         "icon": "rune_bolt_legendary",
@@ -608,13 +609,13 @@ var RUNES = {
                 "id": "strike",
                 "mult": "0.5"
             }
-        },
-        "category": 3
+        }
     },
     "5114": {
         "id": "5114",
         "name": "Rune of Storming Bolt",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "4",
         "icon": "rune_bolt_all_legendary",
@@ -627,13 +628,13 @@ var RUNES = {
                 "mult": "0.5",
                 "all": "1"
             }
-        },
-        "category": 3
+        }
     },
     "5121": {
         "id": "5121",
         "name": "Rune of Scorch",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "3",
         "icon": "rune_scorch_epic",
@@ -645,13 +646,13 @@ var RUNES = {
                 "id": "burn",
                 "x": "1"
             }
-        },
-        "category": 3
+        }
     },
     "5122": {
         "id": "5122",
         "name": "Rune of Greater Scorch",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "4",
         "icon": "rune_scorch_legendary",
@@ -663,13 +664,13 @@ var RUNES = {
                 "id": "burn",
                 "mult": "0.5"
             }
-        },
-        "category": 3
+        }
     },
     "5151": {
         "id": "5151",
         "name": "Rune of Minor Weakening",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "2",
         "icon": "rune_weaken_rare",
@@ -681,13 +682,13 @@ var RUNES = {
                 "id": "weaken",
                 "x": "1"
             }
-        },
-        "category": 3
+        }
     },
     "5152": {
         "id": "5152",
         "name": "Rune of Weakening",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "3",
         "icon": "rune_weaken_epic",
@@ -699,13 +700,13 @@ var RUNES = {
                 "id": "weaken",
                 "x": "2"
             }
-        },
-        "category": 3
+        }
     },
     "5153": {
         "id": "5153",
         "name": "Rune of Greater Weakening",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "4",
         "icon": "rune_weaken_legendary",
@@ -717,13 +718,13 @@ var RUNES = {
                 "id": "weaken",
                 "mult": "0.75"
             }
-        },
-        "category": 3
+        }
     },
     "5154": {
         "id": "5154",
         "name": "Rune of Infectious Weakening",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "4",
         "icon": "rune_weaken_all_legendary",
@@ -736,13 +737,13 @@ var RUNES = {
                 "mult": "0.5",
                 "all": "1"
             }
-        },
-        "category": 3
+        }
     },
     "5161": {
         "id": "5161",
         "name": "Rune of Minor Piercing",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "2",
         "icon": "rune_pierce_rare",
@@ -755,13 +756,13 @@ var RUNES = {
                 "x": "1"
             },
             "health": "1"
-        },
-        "category": 3
+        }
     },
     "5162": {
         "id": "5162",
         "name": "Rune of Piercing",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "3",
         "icon": "rune_pierce_epic",
@@ -774,13 +775,13 @@ var RUNES = {
                 "x": "2"
             },
             "health": "2"
-        },
-        "category": 3
+        }
     },
     "5171": {
         "id": "5171",
         "name": "Rune of Poison",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "2",
         "icon": "rune_poison_rare",
@@ -792,13 +793,13 @@ var RUNES = {
                 "id": "poison",
                 "x": "1"
             }
-        },
-        "category": 3
+        }
     },
     "5172": {
         "id": "5172",
         "name": "Rune of Greater Poison",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "4",
         "icon": "rune_poison_legendary",
@@ -810,13 +811,13 @@ var RUNES = {
                 "id": "poison",
                 "mult": "0.5"
             }
-        },
-        "category": 3
+        }
     },
     "5181": {
         "id": "5181",
         "name": "Rune of Minor Siphoning",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "2",
         "icon": "rune_siphon_rare",
@@ -828,13 +829,13 @@ var RUNES = {
                 "id": "leech",
                 "x": "2"
             }
-        },
-        "category": 3
+        }
     },
     "5182": {
         "id": "5182",
         "name": "Rune of Siphoning",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "3",
         "icon": "rune_siphon_epic",
@@ -846,13 +847,13 @@ var RUNES = {
                 "id": "leech",
                 "x": "3"
             }
-        },
-        "category": 3
+        }
     },
     "5183": {
         "id": "5183",
         "name": "Rune of Greater Siphoning",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "4",
         "icon": "rune_siphon_legendary",
@@ -864,13 +865,13 @@ var RUNES = {
                 "id": "leech",
                 "mult": "0.75"
             }
-        },
-        "category": 3
+        }
     },
     "5184": {
         "id": "5184",
         "name": "Rune of Berserk",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "3",
         "icon": "rune_berserk_epic",
@@ -882,13 +883,13 @@ var RUNES = {
                 "id": "berserk",
                 "x": "1"
             }
-        },
-        "category": 3
+        }
     },
     "5185": {
         "id": "5185",
         "name": "Rune of Greater Berserk",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "4",
         "icon": "rune_berserk_legendary",
@@ -900,13 +901,13 @@ var RUNES = {
                 "id": "berserk",
                 "mult": "0.5"
             }
-        },
-        "category": 3
+        }
     },
     "5186": {
         "id": "5186",
         "name": "Rune of Frostbreath",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "3",
         "icon": "rune_frostbreath_epic",
@@ -918,13 +919,13 @@ var RUNES = {
                 "id": "frost",
                 "x": "1"
             }
-        },
-        "category": 3
+        }
     },
     "5187": {
         "id": "5187",
         "name": "Rune of Greater Frostbreath",
         "type": "3",
+        "category": "3",
         "set": "1",
         "rarity": "4",
         "icon": "rune_frostbreath_legendary",
@@ -936,13 +937,13 @@ var RUNES = {
                 "id": "frost",
                 "mult": "0.5"
             }
-        },
-        "category": 3
+        }
     },
     "5501": {
         "id": "5501",
         "name": "Angelic Rune of Health",
         "type": "3",
+        "category": "3",
         "set": "2",
         "rarity": "3",
         "faction_req": "6",
@@ -952,13 +953,13 @@ var RUNES = {
         "usable": "0",
         "stat_boost": {
             "health": "8"
-        },
-        "category": 3
+        }
     },
     "5502": {
         "id": "5502",
         "name": "Elemental Rune of Health",
         "type": "3",
+        "category": "3",
         "set": "2",
         "rarity": "3",
         "faction_req": "5",
@@ -968,13 +969,13 @@ var RUNES = {
         "usable": "0",
         "stat_boost": {
             "health": "8"
-        },
-        "category": 3
+        }
     },
     "5503": {
         "id": "5503",
         "name": "Undead Rune of Health",
         "type": "3",
+        "category": "3",
         "set": "2",
         "rarity": "3",
         "faction_req": "7",
@@ -984,7 +985,22 @@ var RUNES = {
         "usable": "0",
         "stat_boost": {
             "health": "8"
-        },
-        "category": 3
+        }
+    },
+    "5504": {
+        "id": "5504",
+        "name": "Goblin Rune of Health",
+        "type": "3",
+        "category": "3",
+        "set": "2",
+        "rarity": "3",
+        "faction_req": "11",
+        "icon": "rune_health_epic",
+        "bundle": "34",
+        "desc": "Health +8. May only be embedded on Goblins. May not be crafted.",
+        "usable": "0",
+        "stat_boost": {
+            "health": "8"
+        }
     }
 };

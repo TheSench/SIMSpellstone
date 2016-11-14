@@ -1912,6 +1912,14 @@
     <card_id>25092</card_id>
     <resource card_id="15092" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15097</card_id>
+    <resource card_id="5097" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25097</card_id>
+    <resource card_id="15097" number="2" />
+  </fusion_recipe>
   <!-- CHAOS PREMIUM SET BEGIN -->
   <fusion_recipe>
     <card_id>16000</card_id>
@@ -2656,6 +2664,14 @@
   <fusion_recipe>
     <card_id>26093</card_id>
     <resource card_id="16093" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16094</card_id>
+    <resource card_id="6094" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26094</card_id>
+    <resource card_id="16094" number="2" />
   </fusion_recipe>
   <!-- WYLD PREMIUM SET BEGIN -->
   <fusion_recipe>

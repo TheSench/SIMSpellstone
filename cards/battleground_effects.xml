@@ -32,11 +32,11 @@
   <battleground>
     <id>101</id>
     <name>Age of Dragons</name>
-    <desc>All Dragons are bestowed with extraordinary vitality, causing them to be Healed each turn by 20%.</desc>
+    <desc>All Dragons are bestowed with extraordinary vitality, causing them to be Healed each turn by 25%.</desc>
     <web_picture>filter_dragon_64.png</web_picture>
     <icon>filter_dragon_64</icon>
     <effect>
-      <skill id="heal" mult=".2" all="1" y="9" />
+      <skill id="heal" mult=".25" all="1" y="9" />
     </effect>
   </battleground>
   <battleground>
