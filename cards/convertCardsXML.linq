@@ -3,7 +3,7 @@
   <Namespace>System.Xml.Serialization</Namespace>
 </Query>
 
-static bool downloadFiles = true;
+static bool downloadFiles = false;
 
 static string path = Path.GetDirectoryName(Util.CurrentQueryPath);
 static string baseUrl = @"https://spellstone.synapse-games.com/assets";
@@ -668,7 +668,7 @@ public partial class unit
 		get { return this.hidden_untilField; }
 		set
 		{
-			if (value != null)
+			if (!String.IsNullOrEmpty(value))
 			{
 				this.hidden_untilField = value + "000";
 			}
@@ -1059,7 +1059,7 @@ private static void AppendEntry(StringBuilder sb, string name, string value, str
 
 private static void AppendEntryString(StringBuilder sb, string name, string value, string tabs)
 {
-	if (value != null)
+	if (!String.IsNullOrEmpty(value))
 	{
 		sb.Append(tabs).Append("\"").Append(name).Append("\": \"").Append(value).Append("\",\r\n");
 	}
