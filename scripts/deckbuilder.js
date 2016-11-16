@@ -115,7 +115,7 @@ var initDeckBuilder = function ()
             newPos--;
 
             var array = deck.deck;
-            array[newPos] = array.splice(lastPos, 1, array[newPos])[0];
+            array.splice(newPos, 0, array.splice(lastPos, 1)[0]);
             updateHash();
             updateHighlights();
         }
