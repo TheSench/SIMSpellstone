@@ -153,6 +153,7 @@ function initializeCard(card, p, newKey) {
     card.attack_berserk = 0;
     card.attack_valor = 0;
     card.valor_triggered = false;
+    card.dualstrike_triggered = false;
     card.nullified = 0;
     card.poisoned = 0;
     card.scorched = 0;
@@ -324,6 +325,8 @@ var makeUnit = (function () {
         imbued: 0,
         jammed: false,
         silenced: false,
+        valor_triggered: false,
+        dualstrike_triggered: false,
 
         initialize: function (position) {
             this.health_left = this.health;
@@ -348,6 +351,8 @@ var makeUnit = (function () {
                 this.jammed = false;
                 this.silenced = false;
                 this.played = false;
+                this.valor_triggered = false;
+                this.dualstrike_triggered = false;
             }
             if (!this.reusableSkills) this.resetTimers();
         },
@@ -390,6 +395,7 @@ var makeUnit = (function () {
             this.nullified = 0;
             this.silenced = false;
             this.jammed = false;
+            this.dualstrike_triggered = false;
 
             var poison = this.poisoned;
             if (poison) {
@@ -440,6 +446,13 @@ var makeUnit = (function () {
                 var skill = timers[i];
                 if (skill.countdown) {
                     skill.countdown--;
+                    if (debug) {
+                        if (skill.countdown) {
+                            echo += debug_name(this) + ' charges ' + convertName(skill.id) + ' (ready in ' + skill.countdown + ' turns)<br/>';
+                        } else {
+                            echo += debug_name(this) + ' readies ' + convertName(skill.id) + '<br/>';
+                        }
+                    }
                 }
             }
         },
