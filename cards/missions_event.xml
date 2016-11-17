@@ -11979,6 +11979,11 @@
         <text>There ya go, dragon buddies! </text>
       </line>
       <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>Oh hey, one of the dragons stayed behind, but he looks a little scared...</text>
+      </line>
+      <line>
         <commander>necromancer</commander>
         <enemy>1</enemy>
         <text>*whimper*</text>

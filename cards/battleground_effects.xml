@@ -350,7 +350,7 @@
   </battleground>
   <battleground>
     <id>507</id>
-    <name>Elemental Flash Storms</name>
+    <name>Flash Storms</name>
     <desc>When an Elemental card is played, a Storm card is shuffled into the opponet's deck. When a Storm card is drawn, all their creatures are weakened for that turn!</desc>
     <icon>filter_elementals_64</icon>
     <effect>

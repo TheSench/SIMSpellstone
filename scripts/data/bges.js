@@ -462,7 +462,7 @@ var BATTLEGROUNDS = {
     }
   },
   "507": {
-    "name": "Elemental Flash Storms",
+    "name": "Flash Storms",
     "id": "507",
     "hidden": true,
   },
