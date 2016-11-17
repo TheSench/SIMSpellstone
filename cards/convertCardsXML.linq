@@ -391,6 +391,7 @@ public class battleground
 	[XmlArrayItem(Type = typeof(evolve_skill), ElementName = "evolve_skill")]
 	[XmlArrayItem(Type = typeof(skill), ElementName = "skill")]
 	[XmlArrayItem(Type = typeof(starting_card), ElementName = "starting_card")]
+	[XmlArrayItem(Type = typeof(trap_card), ElementName = "trap_card")]
 	public battlegroundEffect[] effect { get; set; }
 	public string id { get; set; }
 	public string desc { get; set; }
@@ -480,6 +481,10 @@ public class battleground
 				else if (effect_i is add_skill)
 				{
 					AppendAddSkill(sb, (add_skill)effect_i, tabs3);
+				}
+				else if (effect_i is trap_card)
+				{
+					AppendTrap(sb, (trap_card)effect_i, tabs3);
 				}
 				sb.Append(tabs2).Append("},\r\n");
 			}
@@ -994,6 +999,48 @@ public partial class starting_card : battlegroundEffect
 	}
 }
 
+/// <remarks/>
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+public partial class trap_card : battlegroundEffect
+{
+	private string baseField;
+	private string multField;
+	private string target_deckField;
+	private string yField;
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string mult
+	{
+		get { return this.multField; }
+		set { this.multField = value; }
+	}
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute("base")]
+	public string Base
+	{
+		get { return this.baseField; }
+		set { this.baseField = value; }
+	}
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string target_deck
+	{
+		get { return this.target_deckField; }
+		set { this.target_deckField = value; }
+	}
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string y
+	{
+		get { return this.yField; }
+		set { this.yField = value; }
+	}
+}
+
 public partial class campaign
 {
 	public string id { get; set; }
@@ -1148,6 +1195,15 @@ private static void AppendTowerLevel(StringBuilder sb, starting_card info, strin
 	AppendEntry(sb, "id", info.id, tabs2);
 	AppendEntry(sb, "level", info.level, tabs2);
 	sb.Append(tabs).Append("},\r\n");
+}
+
+private static void AppendTrap(StringBuilder sb, trap_card info, string tabs)
+{
+	AppendEntry(sb, "id", info.id, tabs);
+	AppendEntryString(sb, "base", info.Base, tabs);
+	AppendEntry(sb, "mult", info.mult, tabs);
+	AppendEntryString(sb, "target_deck", info.target_deck, tabs);
+	AppendEntryString(sb, "y", info.y, tabs);
 }
 
 

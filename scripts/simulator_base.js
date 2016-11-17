@@ -13,9 +13,25 @@ var SIMULATOR = {};
         var newKey = field_p_assaults.length;
         initializeCard(card, p, newKey);
 
-        field_p_assaults[newKey] = card;
+        if (card.isAssault()) {
+            field_p_assaults[newKey] = card;
+        }
 
         if ((debug || play_debug) && !quiet) echo += debug_name(field[p].commander) + ' plays ' + debug_name(card) + '<br>';
+
+        if (card.isTrap()) {
+            doEarlyActivationSkills(card);
+            activation_skills(card);
+        } else {
+            // Activate trap battlegrounds
+            for (var i = 0; i < battlegrounds.onCardPlayed.length; i++) {
+                var battleground = battlegrounds.onCardPlayed[i];
+                if (battleground.enemy_only && p != 'cpu') continue;
+                battleground.owner = p;
+                var o = (p === 'player' ? 'cpu' : 'player');
+                battleground.onCardPlayed(card, deck[p].deck, deck[o].deck);
+            }
+        }
     };
 
     // Dead cards are removed from both fields. Cards on both fields all shift over to the left if there are any gaps.
@@ -631,12 +647,18 @@ var SIMULATOR = {};
         // - Targets active_next_turn, unjammed, enemy assaults with attack > 0
         // - Can be evaded
         // - Can be enhanced
-        weaken: function (src_card, skill) {
+        weakenself: function (src_card, skill) {
+            return activationSkills.weaken(src_card, skill, true);
+        },
+        weaken: function (src_card, skill, self) {
 
             var faction = skill['y'];
 
-            var p = get_p(src_card);
-            var o = get_o(src_card);
+            if (self) {
+                var o = get_p(src_card);
+            } else {
+                var o = get_o(src_card);
+            }
 
             var weaken = skill['x'];
 
@@ -1450,6 +1472,15 @@ var SIMULATOR = {};
             if (deck_p_deck.length == 1) {
                 card_picked = chooseFirstCard(p, deck_p_deck, deck_p_ordered, turn, drawCards);
             } else {
+                for (var i = 0; i < deck_p_deck.length; i++) {
+                    var card = deck_p_deck[i];
+                    if (card.isTrap()) {
+                        play_card(deck_p_deck[i], p);
+                        removeFromDeck(deck_p_deck, i);
+                        i--;
+                    }
+                    if (i === 2) break;
+                }
                 card_picked = deck_p.chooseCard(p, deck_p_deck, deck_p_ordered, turn, drawCards);
             }
 
@@ -1457,16 +1488,20 @@ var SIMULATOR = {};
 
             play_card(deck_p_deck[card_picked], p);
 
-            // Remove from deck
-            var key = card_picked;
-            var len = deck_p_deck.length - 1;
-            while (key < len) {
-                deck_p_deck[key] = deck_p_deck[++key];
-            }
-            deck_p_deck.length = key;
+            removeFromDeck(deck_p_deck, card_picked);
         }
         return true;
     };
+
+    function removeFromDeck(deck, index) {
+        var key = index;
+        var len = deck.length - 1;
+        while (key < len) {
+            deck[key] = deck[++key];
+        }
+        deck.length = key;
+
+    }
 
     function waitForOpponent(p, shuffledDeck, orderedDeck, turn, drawCards) {
 

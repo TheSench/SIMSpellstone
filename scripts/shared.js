@@ -463,7 +463,11 @@ var makeUnit = (function () {
         },
 
         isAssault: function () {
-            return (!this.isCommander());
+            return (this.card_type == "2");
+        },
+
+        isTrap: function () {
+            return (this.card_type == "3");
         },
 
         isBattleground: function () {
@@ -824,12 +828,48 @@ var MakeSkillModifier = (function () {
     })
 }());
 
+var MakeTrap = (function () {
+    var Trap = function (name, trap_card) {
+        this.name = name;
+        this.id = trap_card.id;
+        this.base = trap_card.base;
+        this.mult = trap_card.mult;
+        this.target_deck = trap_card.target_deck;
+        this.y = trap_card.y;
+    }
+
+    Trap.prototype = {
+        onCardPlayed: function (card, p_deck, o_deck) {
+            var deck = (this.target_deck === "opponent" ? o_deck : p_deck);
+            if (card.isInFaction(this.y)) {
+                // Create a trap card
+                var trapLevel = Math.ceil(card[this.base] * this.mult);
+                var trapInfo = makeUnitInfo(this.id, trapLevel);
+                var trap = get_card_by_id(trapInfo);
+
+                // Shuffle the trap into opponent's deck
+                var index = (~~(Math.random() * deck.length));
+                deck.splice(index, 0, trap);
+
+                if (debug) {
+                    echo += this.name + ' inserts ' + debug_name(trap) + ' into the opposing deck.<br/>';
+                }
+            }
+        }
+    };
+
+    return (function (name, effects) {
+        return new Trap(name, effects);
+    })
+}());
+
 var getBattlegrounds = function (getbattleground, selfbges, enemybges, getraid) {
 
     // Set up battleground effects, if any
     var battlegrounds = {
         onCreate: [],
         onTurn: [],
+        onCardPlayed: []
     };
 
     addBgesFromList(battlegrounds, getbattleground);
@@ -859,6 +899,10 @@ var getBattlegrounds = function (getbattleground, selfbges, enemybges, getraid) 
                         var bge = MakeSkillModifier(battleground.name, effect);
                         bge.enemy_only = enemy_only;
                         battlegrounds.onCreate.push(bge);
+                    } else if (effect_type === "trap_card") {
+                        var bge = MakeTrap(battleground.name, effect);
+                        bge.enemy_only = enemy_only;
+                        battlegrounds.onCardPlayed.push(bge);
                     }
                 }
             }
@@ -886,6 +930,11 @@ function addBgesFromList(battlegrounds, getbattleground, player) {
                 if (player === 'player') bge.self_only = true
                 if (player === 'cpu') bge.enemy_only = true
                 battlegrounds.onCreate.push(bge);
+            } else if (effect_type === "trap_card") {
+                var bge = MakeTrap(battleground.name, effect);
+                if (player === 'player') bge.self_only = true
+                if (player === 'cpu') bge.enemy_only = true
+                battlegrounds.onCardPlayed.push(bge);
             }
         }
     }
@@ -2174,6 +2223,16 @@ function get_card_name_by_id(id) {
 function is_commander(id) {
     var card = loadCard(id);
     return (card && card.card_type == '1');
+}
+
+function is_assault(id) {
+    var card = loadCard(id);
+    return (card && card.card_type == '2');
+}
+
+function is_trap(id) {
+    var card = loadCard(id);
+    return (card && card.card_type == '3');
 }
 
 var makeUnitKey = function (unit) {
