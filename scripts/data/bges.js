@@ -464,16 +464,7 @@ var BATTLEGROUNDS = {
   "507": {
     "name": "Flash Storms",
     "id": "507",
-    "effect": [
-      {
-        "effect_type": "trap_card",
-        "id": 604,
-        "base": "attack",
-        "mult": 0.5,
-        "target_deck": "opponent",
-        "y": "5",
-      },
-    ]
+    "hidden": true,
   },
   "508": {
     "name": "The Thunderdome",
