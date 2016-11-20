@@ -127,7 +127,7 @@ var SIMULATOR = {};
             // Check for Dualstrike
             var dualstrike = current_unit.flurry;
             if (dualstrike && dualstrike.countdown === 0) {
-                if (current_unit.hasAttack() && !current_unit.jammed) {
+                if (current_unit.isActive() && current_unit.hasAttack() && !current_unit.jammed) {
                     dualstrike.countdown = dualstrike.c;
                     current_unit.dualstrike_triggered = true;
                 }
