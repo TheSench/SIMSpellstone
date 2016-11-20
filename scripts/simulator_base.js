@@ -984,9 +984,9 @@ var SIMULATOR = {};
                         iceshatter(target);
                     }
                 }
-
-                return affected;
             }
+
+            return affected;
         },
 
         // Enhance
