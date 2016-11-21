@@ -1206,7 +1206,6 @@ private static void AppendTrap(StringBuilder sb, trap_card info, string tabs)
 	AppendEntryString(sb, "y", info.y, tabs);
 }
 
-
 private static void Normalize(string fileName, bool downloadFiles)
 {
 	string filepath = Path.Combine(path, fileName);
