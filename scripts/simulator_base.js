@@ -216,14 +216,14 @@ var SIMULATOR = {};
             for (var key = 0, len = targets.length; key < len; key++) {
                 var target = field_p_assaults[targets[key]];
 
-                affected++;
-
                 // Check Nullify
                 if (target.nullified) {
                     target.nullified--;
                     if (debug) echo += debug_name(src_card) + ' protects ' + debug_name(target) + ' but it is nullified!<br>';
                     continue;
                 }
+
+                affected++;
 
                 target.protected += protect;
                 if (ice) {
@@ -286,14 +286,14 @@ var SIMULATOR = {};
             for (var key = 0, len = targets.length; key < len; key++) {
                 var target = field_p_assaults[targets[key]];
 
-                affected++;
-
                 // Check Nullify
                 if (target.nullified) {
                     target.nullified--;
                     if (debug) echo += debug_name(src_card) + ' heals ' + debug_name(target) + ' but it is nullified!<br>';
                     continue;
                 }
+
+                affected++;
 
                 var heal_amt = heal;
                 if (!heal_amt) {
@@ -770,14 +770,14 @@ var SIMULATOR = {};
 
                 var target = field_p_assaults[targets[key]];
 
-                affected++;
-
                 // Check Nullify
                 if (target.nullified) {
                     target.nullified--;
                     if (debug) echo += debug_name(src_card) + ' empowers ' + debug_name(target) + ' but it is nullified!<br>';
                     continue;
                 }
+
+                affected++;
 
                 var rally_amt = rally;
                 if (!rally_amt) {
@@ -825,12 +825,12 @@ var SIMULATOR = {};
                 // Check left
                 var target = field_p_assaults[target_key];
                 if (target && target.isActive() && target.isInFaction(faction)) {
-                    affected++;
                     // Check Nullify
                     if (target.nullified) {
                         target.nullified--;
                         if (debug) echo += debug_name(src_card) + ' activates legion and empowers ' + debug_name(target) + ' but it is nullified!<br>';
                     } else {
+                        affected++;
                         target.attack_rally += rally;
                         if (debug) {
                             if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
@@ -1035,14 +1035,14 @@ var SIMULATOR = {};
             for (var key = 0, len = targets.length; key < len; key++) {
                 var target = field_p_assaults[targets[key]];
 
-                affected++;
-
                 // Check Nullify
                 if (target.nullified) {
                     target.nullified--;
                     if (debug) echo += debug_name(src_card) + ' enhances ' + debug_name(target) + ' but it is nullified!<br>';
                     continue;
                 }
+
+                affected++;
 
                 var enhancements = target.enhanced;
                 if (!enhancements) {
@@ -1112,14 +1112,14 @@ var SIMULATOR = {};
             for (var key = 0, len = targets.length; key < len; key++) {
                 var target = field_p_assaults[targets[key]];
 
-                affected++;
-
                 // Check Nullify
                 if (target.nullified) {
                     target.nullified--;
                     if (debug) echo += debug_name(src_card) + ' enhances ' + debug_name(target) + ' but it is nullified!<br>';
                     continue;
                 }
+
+                affected++;
 
                 target.imbue(skill);
                 if (debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target, false) + ' with ' + debug_skill(skill) + '<br>';
