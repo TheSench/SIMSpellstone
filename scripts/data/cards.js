@@ -86389,7 +86389,7 @@ var CARDS = {
       },
       {
         "id": "berserk",
-        "x": 23,
+        "x": 3,
       },
     ],
     "upgrades": {

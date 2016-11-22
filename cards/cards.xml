@@ -46319,7 +46319,7 @@
     <rarity>4</rarity>
     <skill id="armored" x="3" />
     <skill id="poison" x="3" />
-    <skill id="berserk" x="23" />
+    <skill id="berserk" x="3" />
     <type>3</type>
     <sub_type>9</sub_type>
     <set>4000</set>
