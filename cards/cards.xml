@@ -22890,6 +22890,141 @@
     </upgrade>
   </unit>
   <unit>
+    <id>5094</id>
+    <card_type>2</card_type>
+    <name>Luminesce Dragon</name>
+    <picture>Prism_Dragon_A</picture>
+    <asset_bundle>77</asset_bundle>
+    <hidden_until_time>1480006800</hidden_until_time>
+    <attack>4</attack>
+    <health>14</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="3" />
+    <skill id="protect" x="2" y="8" />
+    <skill id="jam" c="6" />
+    <type>1</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="valor" x="3" />
+      <skill id="protect" x="2" y="8" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>16</health>
+      <skill id="valor" x="4" />
+      <skill id="protect" x="2" y="8" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="valor" x="4" />
+      <skill id="protect" x="3" y="8" />
+      <skill id="jam" c="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15094</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Luminesce Serpentine</name>
+    <picture>Prism_Dragon_A</picture>
+    <asset_bundle>77</asset_bundle>
+    <hidden_until_time>1480006800</hidden_until_time>
+    <attack>4</attack>
+    <health>18</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="4" />
+    <skill id="protect" x="3" y="8" />
+    <skill id="jam" c="4" />
+    <type>1</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="valor" x="5" />
+      <skill id="protect" x="4" y="8" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>22</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25094</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Luminesce Scalelord</name>
+    <picture>Prism_Dragon_B</picture>
+    <asset_bundle>77</asset_bundle>
+    <hidden_until_time>1480006800</hidden_until_time>
+    <attack>4</attack>
+    <health>23</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="5" />
+    <skill id="protect" x="4" y="8" />
+    <skill id="jam" c="3" />
+    <type>1</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="valor" x="6" />
+      <skill id="protect" x="4" y="8" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="valor" x="6" />
+      <skill id="protect" x="5" y="8" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>24</health>
+      <skill id="valor" x="7" />
+      <skill id="protect" x="5" y="8" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>26</health>
+      <skill id="valor" x="7" />
+      <skill id="protect" x="6" y="8" />
+      <skill id="jam" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>5097</id>
     <card_type>2</card_type>
     <name>Sierra Dweller</name>
@@ -34769,6 +34904,128 @@
       <skill id="strike" x="3" all="1" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6096</id>
+    <card_type>2</card_type>
+    <name>Desert Slitherer</name>
+    <picture>Cobra_Dragon_A</picture>
+    <asset_bundle>77</asset_bundle>
+    <hidden_until_time>1480006800</hidden_until_time>
+    <attack>5</attack>
+    <health>12</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="enfeeble" x="2" />
+    <skill id="pierce" x="3" />
+    <skill id="poison" x="2" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>6</attack>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="enfeeble" x="3" />
+      <skill id="pierce" x="3" />
+      <skill id="poison" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="enfeeble" x="3" />
+      <skill id="pierce" x="4" />
+      <skill id="poison" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16096</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Desert Striker</name>
+    <picture>Cobra_Dragon_A</picture>
+    <asset_bundle>77</asset_bundle>
+    <hidden_until_time>1480006800</hidden_until_time>
+    <attack>7</attack>
+    <health>15</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="enfeeble" x="3" />
+    <skill id="pierce" x="4" />
+    <skill id="poison" x="3" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="enfeeble" x="4" />
+      <skill id="pierce" x="5" />
+      <skill id="poison" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>17</health>
+      <skill id="enfeeble" x="4" />
+      <skill id="pierce" x="5" />
+      <skill id="poison" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>8</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26096</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Desert King</name>
+    <picture>Cobra_Dragon_B</picture>
+    <asset_bundle>77</asset_bundle>
+    <hidden_until_time>1480006800</hidden_until_time>
+    <attack>8</attack>
+    <health>18</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="enfeeble" x="5" />
+    <skill id="pierce" x="5" />
+    <skill id="poison" x="4" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+      <skill id="enfeeble" x="5" />
+      <skill id="pierce" x="6" />
+      <skill id="poison" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>20</health>
+      <skill id="enfeeble" x="6" />
+      <skill id="pierce" x="6" />
+      <skill id="poison" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="enfeeble" x="6" />
+      <skill id="pierce" x="7" />
+      <skill id="poison" x="5" />
+    </upgrade>
+  </unit>
   <!-- Wyld Premium Begin -->
   <unit>
     <id>7000</id>
@@ -46261,6 +46518,124 @@
       <skill id="rally" x="3" all="1" y="9" />
       <skill id="pierce" x="6" />
       <skill id="leech" x="8" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7093</id>
+    <card_type>2</card_type>
+    <name>Larva Swarm</name>
+    <picture>Butterfly_Dragons_A</picture>
+    <asset_bundle>77</asset_bundle>
+    <hidden_until_time>1480006800</hidden_until_time>
+    <attack>4</attack>
+    <health>7</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="corrosive" x="1" />
+    <skill id="leech" x="2" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>8</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>5</attack>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="1" />
+      <skill id="corrosive" x="1" />
+      <skill id="leech" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17093</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Lepid Swarm</name>
+    <picture>Butterfly_Dragons_A</picture>
+    <asset_bundle>77</asset_bundle>
+    <hidden_until_time>1480006800</hidden_until_time>
+    <attack>5</attack>
+    <health>11</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="corrosive" x="1" />
+    <skill id="leech" x="3" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>12</health>
+      <skill id="evade" x="1" />
+      <skill id="corrosive" x="2" />
+      <skill id="leech" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>14</health>
+      <skill id="evade" x="1" />
+      <skill id="corrosive" x="2" />
+      <skill id="leech" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27093</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Pollin Swarm</name>
+    <picture>Butterfly_Dragons_B</picture>
+    <asset_bundle>77</asset_bundle>
+    <hidden_until_time>1480006800</hidden_until_time>
+    <attack>6</attack>
+    <health>15</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="corrosive" x="2" />
+    <skill id="leech" x="4" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>7</attack>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="2" />
+      <skill id="corrosive" x="2" />
+      <skill id="leech" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="2" />
+      <skill id="corrosive" x="3" />
+      <skill id="leech" x="5" />
     </upgrade>
   </unit>
   <unit>
@@ -61444,7 +61819,7 @@
     <id>351</id>
     <card_type>1</card_type>
     <name>Wind Drake</name>
-    <portrait>sailing_drake</portrait>
+    <portrait>Sailing_Drake</portrait>
     <attack>0</attack>
     <health>42</health>
     <skill id="rally" x="1" />
@@ -61485,7 +61860,7 @@
     <id>352</id>
     <card_type>1</card_type>
     <name>Brine Bringer</name>
-    <portrait>necromancer</portrait>
+    <portrait>kraken_portrait</portrait>
     <attack>0</attack>
     <health>42</health>
     <skill id="heal" x="1" />
@@ -61954,6 +62329,26 @@
       <level>5</level>
       <skill id="weakenself" all="1" x="5" />
     </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="weakenself" all="1" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <skill id="weakenself" all="1" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <skill id="weakenself" all="1" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <skill id="weakenself" all="1" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <skill id="weakenself" all="1" x="10" />
+    </upgrade>
   </unit>
   <unit>
     <id>605</id>
@@ -62134,8 +62529,7 @@
     <name>Corrosive</name>
     <desc>Creatures attacking this gain Corrosion, lowering Attack. This effect stacks. Wears off if not reapplied for a turn.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
-    <balance_points>4.5</balance_points>
-    <hidden>1</hidden>
+    <balance_points>4</balance_points>
   </skillType>
   <!-- Triggered -->
   <skillType>

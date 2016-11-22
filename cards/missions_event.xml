@@ -11953,7 +11953,7 @@
     <id>5395</id>
     <name>The Wind Drake</name>
     <energy>11</energy>
-    <desc>Decim tries to remove the chains from the dragons, but they behave like wild beasts. Decim refuses to give up, even if the dragons don't understand that he wants to help them.</desc>
+    <desc>At last Decim finishes removing the bindings. The dragons scatter the moment they're free. All have left... except one.</desc>
     <commander id="351" />
     <deck>
       <card id="1610" name="Ranger" />
@@ -11984,7 +11984,7 @@
         <text>Oh hey, one of the dragons stayed behind, but he looks a little scared...</text>
       </line>
       <line>
-        <commander>necromancer</commander>
+        <commander>Sailing_Drake</commander>
         <enemy>1</enemy>
         <text>*whimper*</text>
       </line>
@@ -12020,7 +12020,7 @@
         <text>What's this chalky dust over your scales? Are ya doing okay, little dragon?</text>
       </line>
       <line>
-        <commander>necromancer</commander>
+        <commander>Sailing_Drake</commander>
         <enemy>1</enemy>
         <text>...</text>
       </line>
@@ -12121,7 +12121,7 @@
         <text>This black grain by the river is gross. My hand burns just from touching it!</text>
       </line>
       <line>
-        <commander>necromancer</commander>
+        <commander>Sailing_Drake</commander>
         <enemy>0</enemy>
         <text>...Awoo...</text>
       </line>
@@ -12332,7 +12332,7 @@
         <text>Just get lost already! You're not taking him back!</text>
       </line>
       <line>
-        <commander>necromancer</commander>
+        <commander>Sailing_Drake</commander>
         <enemy>0</enemy>
         <text>Grrr!</text>
       </line>
@@ -12387,7 +12387,7 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>Sailing_Drake</commander>
         <enemy>0</enemy>
         <text>...Awoo...</text>
       </line>
@@ -12483,7 +12483,7 @@
         <text>WHOA! What was that?!</text>
       </line>
       <line>
-        <commander>elyse</commander>
+        <commander>kraken_portrait</commander>
         <enemy>1</enemy>
         <text>...</text>
       </line>
