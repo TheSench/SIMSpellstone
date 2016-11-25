@@ -9923,7 +9923,7 @@ var CARDS = {
     "sub_type": ["4"],
     "attack": 8,
     "health": 15,
-    "cost": 3,
+    "cost": 2,
     "skill": [
       {
         "id": "armored",
@@ -9984,7 +9984,7 @@ var CARDS = {
     "sub_type": ["4"],
     "attack": 9,
     "health": 20,
-    "cost": 3,
+    "cost": 2,
     "skill": [
       {
         "id": "armored",
@@ -9993,6 +9993,10 @@ var CARDS = {
       {
         "id": "pierce",
         "x": 3,
+      },
+      {
+        "id": "corrosive",
+        "x": 1,
       },
     ],
     "upgrades": {
@@ -10010,11 +10014,28 @@ var CARDS = {
             "id": "pierce",
             "x": 4,
           },
+          {
+            "id": "corrosive",
+            "x": 1,
+          },
         ],
       },
       "4": {
         "health": 23,
-        "skill": [],
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+          {
+            "id": "corrosive",
+            "x": 2,
+          },
+        ],
       },
       "5": {
         "skill": [
@@ -10026,11 +10047,28 @@ var CARDS = {
             "id": "pierce",
             "x": 4,
           },
+          {
+            "id": "corrosive",
+            "x": 2,
+          },
         ],
       },
       "6": {
         "attack": 10,
-        "skill": [],
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+          {
+            "id": "corrosive",
+            "x": 3,
+          },
+        ],
       },
     }
   },
@@ -10045,7 +10083,7 @@ var CARDS = {
     "sub_type": ["4"],
     "attack": 11,
     "health": 24,
-    "cost": 3,
+    "cost": 2,
     "skill": [
       {
         "id": "armored",
@@ -10054,6 +10092,10 @@ var CARDS = {
       {
         "id": "pierce",
         "x": 4,
+      },
+      {
+        "id": "corrosive",
+        "x": 3,
       },
     ],
     "upgrades": {
@@ -10071,6 +10113,10 @@ var CARDS = {
             "id": "pierce",
             "x": 5,
           },
+          {
+            "id": "corrosive",
+            "x": 3,
+          },
         ],
       },
       "4": {
@@ -10087,11 +10133,28 @@ var CARDS = {
             "id": "pierce",
             "x": 5,
           },
+          {
+            "id": "corrosive",
+            "x": 3,
+          },
         ],
       },
       "6": {
         "attack": 12,
-        "skill": [],
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+          {
+            "id": "corrosive",
+            "x": 4,
+          },
+        ],
       },
     }
   },
@@ -42509,8 +42572,8 @@ var CARDS = {
       {
         "id": "protect",
         "x": 2,
-        "y": "8",
-        "z": 8,
+        "y": "9",
+        "z": 9,
       },
       {
         "id": "jam",
@@ -42527,8 +42590,8 @@ var CARDS = {
           {
             "id": "protect",
             "x": 2,
-            "y": "8",
-            "z": 8,
+            "y": "9",
+            "z": 9,
           },
           {
             "id": "jam",
@@ -42550,8 +42613,8 @@ var CARDS = {
           {
             "id": "protect",
             "x": 2,
-            "y": "8",
-            "z": 8,
+            "y": "9",
+            "z": 9,
           },
           {
             "id": "jam",
@@ -42572,8 +42635,8 @@ var CARDS = {
           {
             "id": "protect",
             "x": 3,
-            "y": "8",
-            "z": 8,
+            "y": "9",
+            "z": 9,
           },
           {
             "id": "jam",
@@ -42604,8 +42667,8 @@ var CARDS = {
       {
         "id": "protect",
         "x": 3,
-        "y": "8",
-        "z": 8,
+        "y": "9",
+        "z": 9,
       },
       {
         "id": "jam",
@@ -42630,8 +42693,8 @@ var CARDS = {
           {
             "id": "protect",
             "x": 4,
-            "y": "8",
-            "z": 8,
+            "y": "9",
+            "z": 9,
           },
           {
             "id": "jam",
@@ -42670,8 +42733,8 @@ var CARDS = {
       {
         "id": "protect",
         "x": 4,
-        "y": "8",
-        "z": 8,
+        "y": "9",
+        "z": 9,
       },
       {
         "id": "jam",
@@ -42688,8 +42751,8 @@ var CARDS = {
           {
             "id": "protect",
             "x": 4,
-            "y": "8",
-            "z": 8,
+            "y": "9",
+            "z": 9,
           },
           {
             "id": "jam",
@@ -42706,8 +42769,8 @@ var CARDS = {
           {
             "id": "protect",
             "x": 5,
-            "y": "8",
-            "z": 8,
+            "y": "9",
+            "z": 9,
           },
           {
             "id": "jam",
@@ -42725,8 +42788,8 @@ var CARDS = {
           {
             "id": "protect",
             "x": 5,
-            "y": "8",
-            "z": 8,
+            "y": "9",
+            "z": 9,
           },
           {
             "id": "jam",
@@ -42748,8 +42811,8 @@ var CARDS = {
           {
             "id": "protect",
             "x": 6,
-            "y": "8",
-            "z": 8,
+            "y": "9",
+            "z": 9,
           },
           {
             "id": "jam",
@@ -42992,6 +43055,278 @@ var CARDS = {
           {
             "id": "flurry",
             "c": 3,
+          },
+        ],
+      },
+    }
+  },
+  "5098": {
+    "id": "5098",
+    "name": "Skybound United",
+    "picture": "Angels_and_Drakes_A",
+    "hidden_until": "1480352400000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["9","6"],
+    "attack": 4,
+    "health": 18,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "heal",
+        "x": 1,
+        "y": "8",
+        "z": 8,
+        "all": "1",
+      },
+      {
+        "id": "burn",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 19,
+        "skill": [],
+      },
+      "3": {
+        "attack": 5,
+        "health": 20,
+        "skill": [],
+      },
+      "4": {
+        "health": 21,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "heal",
+            "x": 1,
+            "y": "8",
+            "z": 8,
+            "all": "1",
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+        ],
+      },
+      "5": {
+        "health": 22,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "y": "8",
+            "z": 8,
+            "all": "1",
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "15098": {
+    "id": "15098",
+    "name": "Skybound Concord",
+    "picture": "Angels_and_Drakes_A",
+    "hidden_until": "1480352400000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["9","6"],
+    "attack": 6,
+    "health": 23,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 3,
+      },
+      {
+        "id": "heal",
+        "x": 2,
+        "y": "8",
+        "z": 8,
+        "all": "1",
+      },
+      {
+        "id": "burn",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 24,
+        "skill": [],
+      },
+      "3": {
+        "health": 25,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "y": "8",
+            "z": 8,
+            "all": "1",
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "attack": 7,
+        "health": 26,
+        "skill": [],
+      },
+      "5": {
+        "health": 27,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+            "y": "8",
+            "z": 8,
+            "all": "1",
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+            "y": "8",
+            "z": 8,
+            "all": "1",
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "25098": {
+    "id": "25098",
+    "name": "Skybound Alliance",
+    "picture": "Angels_and_Drakes_B",
+    "hidden_until": "1480352400000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["9","6"],
+    "attack": 7,
+    "health": 28,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 5,
+      },
+      {
+        "id": "heal",
+        "x": 3,
+        "y": "8",
+        "z": 8,
+        "all": "1",
+      },
+      {
+        "id": "burn",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 8,
+        "health": 29,
+        "skill": [],
+      },
+      "3": {
+        "health": 30,
+        "skill": [],
+      },
+      "4": {
+        "attack": 9,
+        "health": 31,
+        "skill": [],
+      },
+      "5": {
+        "health": 32,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 6,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+            "y": "8",
+            "z": 8,
+            "all": "1",
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 6,
+          },
+          {
+            "id": "heal",
+            "x": 4,
+            "y": "8",
+            "z": 8,
+            "all": "1",
+          },
+          {
+            "id": "burn",
+            "x": 4,
           },
         ],
       },
@@ -64632,6 +64967,233 @@ var CARDS = {
           {
             "id": "poison",
             "x": 5,
+          },
+        ],
+      },
+    }
+  },
+  "6100": {
+    "id": "6100",
+    "name": "Tiamat",
+    "picture": "Demon_Dragon_A",
+    "hidden_until": "1480093200000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["9","6"],
+    "attack": 4,
+    "health": 16,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "strike",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "frost",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 17,
+        "skill": [],
+      },
+      "3": {
+        "health": 18,
+        "skill": [],
+      },
+      "4": {
+        "health": 19,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "strike",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+        ],
+      },
+      "6": {
+        "health": 20,
+        "skill": [],
+      },
+    }
+  },
+  "16100": {
+    "id": "16100",
+    "name": "Tiamat, Despoiler",
+    "picture": "Demon_Dragon_A",
+    "hidden_until": "1480093200000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["9","6"],
+    "attack": 5,
+    "health": 20,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "strike",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "frost",
+        "x": 1,
+      },
+      {
+        "id": "burn",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+        ],
+      },
+      "3": {
+        "health": 21,
+        "skill": [],
+      },
+      "4": {
+        "health": 22,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "health": 23,
+        "skill": [],
+      },
+    }
+  },
+  "26100": {
+    "id": "26100",
+    "name": "Tiamat, Endbringer",
+    "picture": "NotFound",
+    "hidden_until": "1480093200000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["9","6"],
+    "attack": 5,
+    "health": 24,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "strike",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "frost",
+        "x": 1,
+      },
+      {
+        "id": "burn",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 6,
+        "skill": [],
+      },
+      "3": {
+        "health": 25,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "strike",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "strike",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "strike",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "burn",
+            "x": 3,
           },
         ],
       },
@@ -86790,8 +87352,8 @@ var CARDS = {
   },
   "7093": {
     "id": "7093",
-    "name": "Larva Swarm",
-    "picture": "Butterfly_Dragons_A",
+    "name": "Larva Drakes",
+    "picture": "Butterfly_Dragon_A",
     "hidden_until": "1480006800000",
     "rarity": "3",
     "set": "3000",
@@ -86849,8 +87411,8 @@ var CARDS = {
   },
   "17093": {
     "id": "17093",
-    "name": "Lepid Swarm",
-    "picture": "Butterfly_Dragons_A",
+    "name": "Lepid Drakes",
+    "picture": "Butterfly_Dragon_A",
     "hidden_until": "1480006800000",
     "rarity": "3",
     "set": "3000",
@@ -86921,8 +87483,8 @@ var CARDS = {
   },
   "27093": {
     "id": "27093",
-    "name": "Pollin Swarm",
-    "picture": "Butterfly_Dragons_B",
+    "name": "Pollen Drakes",
+    "picture": "Butterfly_Dragon_B",
     "hidden_until": "1480006800000",
     "rarity": "3",
     "set": "3000",
@@ -117977,7 +118539,7 @@ var CARDS = {
   "9994": {
     "id": "9994",
     "name": "New Art",
-    "picture": "New10_A",
+    "picture": "New2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -117991,7 +118553,7 @@ var CARDS = {
   "19994": {
     "id": "19994",
     "name": "New Art",
-    "picture": "New10_B",
+    "picture": "New2_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118005,7 +118567,7 @@ var CARDS = {
   "9993": {
     "id": "9993",
     "name": "New Art",
-    "picture": "New1_A",
+    "picture": "New3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118019,7 +118581,7 @@ var CARDS = {
   "19993": {
     "id": "19993",
     "name": "New Art",
-    "picture": "New1_B",
+    "picture": "New3_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118033,7 +118595,7 @@ var CARDS = {
   "9992": {
     "id": "9992",
     "name": "New Art",
-    "picture": "New2_A",
+    "picture": "New4_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118047,7 +118609,7 @@ var CARDS = {
   "19992": {
     "id": "19992",
     "name": "New Art",
-    "picture": "New2_B",
+    "picture": "New4_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118061,7 +118623,7 @@ var CARDS = {
   "9991": {
     "id": "9991",
     "name": "New Art",
-    "picture": "New3_A",
+    "picture": "New5_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118075,7 +118637,7 @@ var CARDS = {
   "19991": {
     "id": "19991",
     "name": "New Art",
-    "picture": "New3_B",
+    "picture": "New5_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118089,7 +118651,7 @@ var CARDS = {
   "9990": {
     "id": "9990",
     "name": "New Art",
-    "picture": "New4_A",
+    "picture": "New6_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118103,7 +118665,7 @@ var CARDS = {
   "19990": {
     "id": "19990",
     "name": "New Art",
-    "picture": "New4_B",
+    "picture": "New6_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118117,7 +118679,7 @@ var CARDS = {
   "9989": {
     "id": "9989",
     "name": "New Art",
-    "picture": "New5_A",
+    "picture": "New8_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118131,7 +118693,7 @@ var CARDS = {
   "19989": {
     "id": "19989",
     "name": "New Art",
-    "picture": "New5_B",
+    "picture": "New8_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118145,7 +118707,7 @@ var CARDS = {
   "9988": {
     "id": "9988",
     "name": "New Art",
-    "picture": "New6_A",
+    "picture": "New9_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118159,7 +118721,7 @@ var CARDS = {
   "19988": {
     "id": "19988",
     "name": "New Art",
-    "picture": "New6_B",
+    "picture": "New9_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118172,8 +118734,8 @@ var CARDS = {
   },
   "9987": {
     "id": "9987",
-    "name": "New Art",
-    "picture": "New8_A",
+    "name": "Unused Art",
+    "picture": "Oda_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118186,8 +118748,8 @@ var CARDS = {
   },
   "19987": {
     "id": "19987",
-    "name": "New Art",
-    "picture": "New8_B",
+    "name": "Unused Art",
+    "picture": "Oda_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118198,10 +118760,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9986": {
-    "id": "9986",
-    "name": "New Art",
-    "picture": "New9_A",
+  "29987": {
+    "id": "29987",
+    "name": "Unused Art",
+    "picture": "Oda_C",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118214,8 +118776,8 @@ var CARDS = {
   },
   "19986": {
     "id": "19986",
-    "name": "New Art",
-    "picture": "New9_B",
+    "name": "Unused Art",
+    "picture": "Promo_Dragon_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118229,7 +118791,7 @@ var CARDS = {
   "9985": {
     "id": "9985",
     "name": "Unused Art",
-    "picture": "Oda_A",
+    "picture": "Seraph_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118243,7 +118805,7 @@ var CARDS = {
   "19985": {
     "id": "19985",
     "name": "Unused Art",
-    "picture": "Oda_B",
+    "picture": "Seraph_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118254,24 +118816,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29985": {
-    "id": "29985",
+  "9984": {
+    "id": "9984",
     "name": "Unused Art",
-    "picture": "Oda_C",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19984": {
-    "id": "19984",
-    "name": "Unused Art",
-    "picture": "Promo_Dragon_B",
+    "picture": "Tarian_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118285,21 +118833,7 @@ var CARDS = {
   "9983": {
     "id": "9983",
     "name": "Unused Art",
-    "picture": "Seraph_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19983": {
-    "id": "19983",
-    "name": "Unused Art",
-    "picture": "Seraph_B",
+    "picture": "Tremor_Wurm_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118313,7 +118847,7 @@ var CARDS = {
   "9982": {
     "id": "9982",
     "name": "Unused Art",
-    "picture": "Tarian_A",
+    "picture": "Unused1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118327,7 +118861,7 @@ var CARDS = {
   "9981": {
     "id": "9981",
     "name": "Unused Art",
-    "picture": "Tremor_Wurm_A",
+    "picture": "Unused2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118341,7 +118875,7 @@ var CARDS = {
   "9980": {
     "id": "9980",
     "name": "Unused Art",
-    "picture": "Unused1_A",
+    "picture": "Unused3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118355,7 +118889,7 @@ var CARDS = {
   "9979": {
     "id": "9979",
     "name": "Unused Art",
-    "picture": "Unused2_A",
+    "picture": "Ursurio_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118369,7 +118903,7 @@ var CARDS = {
   "9978": {
     "id": "9978",
     "name": "Unused Art",
-    "picture": "Unused3_A",
+    "picture": "Void_Abomination_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118382,34 +118916,6 @@ var CARDS = {
   },
   "9977": {
     "id": "9977",
-    "name": "Unused Art",
-    "picture": "Ursurio_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9976": {
-    "id": "9976",
-    "name": "Unused Art",
-    "picture": "Void_Abomination_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9975": {
-    "id": "9975",
     "name": "Unused Art",
     "picture": "Yuriel_A",
     "rarity": "0",
