@@ -1474,10 +1474,9 @@ var SIMULATOR = {};
             } else {
                 for (var i = 0; i < deck_p_deck.length; i++) {
                     var card = deck_p_deck[i];
-                    if (card.isTrap()) {
-                        play_card(deck_p_deck[i], p);
-                        removeFromDeck(deck_p_deck, i);
-                        i--;
+                    if (card.trap) {
+                        play_card(card.trap, p);
+                        card.trap = false;
                     }
                     if (i === 2) break;
                 }

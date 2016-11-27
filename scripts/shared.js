@@ -842,17 +842,28 @@ var MakeTrap = (function () {
         onCardPlayed: function (card, p_deck, o_deck) {
             var deck = (this.target_deck === "opponent" ? o_deck : p_deck);
             if (card.isInFaction(this.y)) {
-                // Create a trap card
-                var trapLevel = Math.ceil(card[this.base] * this.mult);
-                var trapInfo = makeUnitInfo(this.id, trapLevel);
-                var trap = get_card_by_id(trapInfo);
 
-                // Shuffle the trap into opponent's deck
-                var index = (~~(Math.random() * deck.length));
-                deck.splice(index, 0, trap);
+                var targets = [];
+                for (var t = 0; t < deck.length; t++) {
+                    var card = deck[t];
+                    if (!card.trap) {
+                        targets.push(card);
+                    }
+                }
 
-                if (debug) {
-                    echo += this.name + ' inserts ' + debug_name(trap) + ' into the opposing deck.<br/>';
+                if (targets.length) {
+                    // Create a trap card
+                    var trapLevel = Math.ceil(card[this.base] * this.mult);
+                    var trapInfo = makeUnitInfo(this.id, trapLevel);
+                    var trap = get_card_by_id(trapInfo);
+
+                    // Shuffle the trap into opponent's deck
+                    var index = (~~(Math.random() * targets.length));
+                    targets[index].trap = trap;
+
+                    if (debug) {
+                        echo += this.name + ' inserts ' + debug_name(trap) + ' into the opposing deck.<br/>';
+                    }
                 }
             }
         }

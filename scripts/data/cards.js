@@ -118234,7 +118234,7 @@ var CARDS = {
   "604": {
     "id": "604",
     "name": "Elemental Storm",
-    "picture": "Tree_of_Life_A",
+    "picture": "NotFound",
     "rarity": "0",
     "set": "9999",
     "card_type": "3",
