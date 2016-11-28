@@ -43063,7 +43063,7 @@ var CARDS = {
   "5098": {
     "id": "5098",
     "name": "Skybound United",
-    "picture": "Angels_and_Drakes_A",
+    "picture": "NotFound",
     "hidden_until": "1480352400000",
     "rarity": "4",
     "set": "4000",
@@ -43081,8 +43081,8 @@ var CARDS = {
       {
         "id": "heal",
         "x": 1,
-        "y": "8",
-        "z": 8,
+        "y": "9",
+        "z": 9,
         "all": "1",
       },
       {
@@ -43110,8 +43110,8 @@ var CARDS = {
           {
             "id": "heal",
             "x": 1,
-            "y": "8",
-            "z": 8,
+            "y": "9",
+            "z": 9,
             "all": "1",
           },
           {
@@ -43133,8 +43133,8 @@ var CARDS = {
           {
             "id": "heal",
             "x": 2,
-            "y": "8",
-            "z": 8,
+            "y": "9",
+            "z": 9,
             "all": "1",
           },
           {
@@ -43148,7 +43148,7 @@ var CARDS = {
   "15098": {
     "id": "15098",
     "name": "Skybound Concord",
-    "picture": "Angels_and_Drakes_A",
+    "picture": "NotFound",
     "hidden_until": "1480352400000",
     "rarity": "4",
     "set": "4000",
@@ -43166,8 +43166,8 @@ var CARDS = {
       {
         "id": "heal",
         "x": 2,
-        "y": "8",
-        "z": 8,
+        "y": "9",
+        "z": 9,
         "all": "1",
       },
       {
@@ -43190,8 +43190,8 @@ var CARDS = {
           {
             "id": "heal",
             "x": 2,
-            "y": "8",
-            "z": 8,
+            "y": "9",
+            "z": 9,
             "all": "1",
           },
           {
@@ -43215,8 +43215,8 @@ var CARDS = {
           {
             "id": "heal",
             "x": 3,
-            "y": "8",
-            "z": 8,
+            "y": "9",
+            "z": 9,
             "all": "1",
           },
           {
@@ -43234,8 +43234,8 @@ var CARDS = {
           {
             "id": "heal",
             "x": 3,
-            "y": "8",
-            "z": 8,
+            "y": "9",
+            "z": 9,
             "all": "1",
           },
           {
@@ -43249,7 +43249,7 @@ var CARDS = {
   "25098": {
     "id": "25098",
     "name": "Skybound Alliance",
-    "picture": "Angels_and_Drakes_B",
+    "picture": "NotFound",
     "hidden_until": "1480352400000",
     "rarity": "4",
     "set": "4000",
@@ -43267,8 +43267,8 @@ var CARDS = {
       {
         "id": "heal",
         "x": 3,
-        "y": "8",
-        "z": 8,
+        "y": "9",
+        "z": 9,
         "all": "1",
       },
       {
@@ -43301,8 +43301,8 @@ var CARDS = {
           {
             "id": "heal",
             "x": 3,
-            "y": "8",
-            "z": 8,
+            "y": "9",
+            "z": 9,
             "all": "1",
           },
           {
@@ -43320,8 +43320,8 @@ var CARDS = {
           {
             "id": "heal",
             "x": 4,
-            "y": "8",
-            "z": 8,
+            "y": "9",
+            "z": 9,
             "all": "1",
           },
           {
@@ -118469,7 +118469,21 @@ var CARDS = {
   "9999": {
     "id": "9999",
     "name": "Unused Art",
-    "picture": "Aria_A",
+    "picture": "Angels_and_Drakes_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19999": {
+    "id": "19999",
+    "name": "Unused Art",
+    "picture": "Angels_and_Drakes_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118483,6 +118497,20 @@ var CARDS = {
   "9998": {
     "id": "9998",
     "name": "Unused Art",
+    "picture": "Aria_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9997": {
+    "id": "9997",
+    "name": "Unused Art",
     "picture": "Elyse_A",
     "rarity": "0",
     "card_type": "2",
@@ -118494,8 +118522,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19997": {
-    "id": "19997",
+  "19996": {
+    "id": "19996",
     "name": "Unused Art",
     "picture": "Frost_Bite_B",
     "rarity": "0",
@@ -118508,8 +118536,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9996": {
-    "id": "9996",
+  "9995": {
+    "id": "9995",
     "name": "Unused Art",
     "picture": "General_A",
     "rarity": "0",
@@ -118522,38 +118550,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29995": {
-    "id": "29995",
+  "29994": {
+    "id": "29994",
     "name": "Unused Art",
     "picture": "Monster_C",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9994": {
-    "id": "9994",
-    "name": "New Art",
-    "picture": "New2_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19994": {
-    "id": "19994",
-    "name": "New Art",
-    "picture": "New2_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118567,7 +118567,7 @@ var CARDS = {
   "9993": {
     "id": "9993",
     "name": "New Art",
-    "picture": "New3_A",
+    "picture": "New2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118581,7 +118581,7 @@ var CARDS = {
   "19993": {
     "id": "19993",
     "name": "New Art",
-    "picture": "New3_B",
+    "picture": "New2_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118595,7 +118595,7 @@ var CARDS = {
   "9992": {
     "id": "9992",
     "name": "New Art",
-    "picture": "New4_A",
+    "picture": "New3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118609,7 +118609,7 @@ var CARDS = {
   "19992": {
     "id": "19992",
     "name": "New Art",
-    "picture": "New4_B",
+    "picture": "New3_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118623,7 +118623,7 @@ var CARDS = {
   "9991": {
     "id": "9991",
     "name": "New Art",
-    "picture": "New5_A",
+    "picture": "New4_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118637,7 +118637,7 @@ var CARDS = {
   "19991": {
     "id": "19991",
     "name": "New Art",
-    "picture": "New5_B",
+    "picture": "New4_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118651,7 +118651,7 @@ var CARDS = {
   "9990": {
     "id": "9990",
     "name": "New Art",
-    "picture": "New6_A",
+    "picture": "New5_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118665,7 +118665,7 @@ var CARDS = {
   "19990": {
     "id": "19990",
     "name": "New Art",
-    "picture": "New6_B",
+    "picture": "New5_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118679,7 +118679,7 @@ var CARDS = {
   "9989": {
     "id": "9989",
     "name": "New Art",
-    "picture": "New7_A",
+    "picture": "New6_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118693,7 +118693,7 @@ var CARDS = {
   "19989": {
     "id": "19989",
     "name": "New Art",
-    "picture": "New7_B",
+    "picture": "New6_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118707,7 +118707,7 @@ var CARDS = {
   "9988": {
     "id": "9988",
     "name": "New Art",
-    "picture": "New8_A",
+    "picture": "New7_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118721,7 +118721,7 @@ var CARDS = {
   "19988": {
     "id": "19988",
     "name": "New Art",
-    "picture": "New8_B",
+    "picture": "New7_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118735,7 +118735,7 @@ var CARDS = {
   "9987": {
     "id": "9987",
     "name": "New Art",
-    "picture": "New9_A",
+    "picture": "New8_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118749,7 +118749,7 @@ var CARDS = {
   "19987": {
     "id": "19987",
     "name": "New Art",
-    "picture": "New9_B",
+    "picture": "New8_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118762,8 +118762,8 @@ var CARDS = {
   },
   "9986": {
     "id": "9986",
-    "name": "Unused Art",
-    "picture": "Oda_A",
+    "name": "New Art",
+    "picture": "New9_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118776,8 +118776,8 @@ var CARDS = {
   },
   "19986": {
     "id": "19986",
-    "name": "Unused Art",
-    "picture": "Oda_B",
+    "name": "New Art",
+    "picture": "New9_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118788,10 +118788,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29986": {
-    "id": "29986",
+  "9985": {
+    "id": "9985",
     "name": "Unused Art",
-    "picture": "Oda_C",
+    "picture": "Oda_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118805,7 +118805,7 @@ var CARDS = {
   "19985": {
     "id": "19985",
     "name": "Unused Art",
-    "picture": "Promo_Dragon_B",
+    "picture": "Oda_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118816,10 +118816,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9984": {
-    "id": "9984",
+  "29985": {
+    "id": "29985",
     "name": "Unused Art",
-    "picture": "Seraph_A",
+    "picture": "Oda_C",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118833,7 +118833,7 @@ var CARDS = {
   "19984": {
     "id": "19984",
     "name": "Unused Art",
-    "picture": "Seraph_B",
+    "picture": "Promo_Dragon_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118847,7 +118847,21 @@ var CARDS = {
   "9983": {
     "id": "9983",
     "name": "Unused Art",
-    "picture": "Tarian_A",
+    "picture": "Seraph_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19983": {
+    "id": "19983",
+    "name": "Unused Art",
+    "picture": "Seraph_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118861,7 +118875,7 @@ var CARDS = {
   "9982": {
     "id": "9982",
     "name": "Unused Art",
-    "picture": "Tremor_Wurm_A",
+    "picture": "Tarian_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118875,7 +118889,7 @@ var CARDS = {
   "9981": {
     "id": "9981",
     "name": "Unused Art",
-    "picture": "Unused1_A",
+    "picture": "Tremor_Wurm_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118889,7 +118903,7 @@ var CARDS = {
   "9980": {
     "id": "9980",
     "name": "Unused Art",
-    "picture": "Unused2_A",
+    "picture": "Unused1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118903,7 +118917,7 @@ var CARDS = {
   "9979": {
     "id": "9979",
     "name": "Unused Art",
-    "picture": "Unused3_A",
+    "picture": "Unused2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118917,7 +118931,7 @@ var CARDS = {
   "9978": {
     "id": "9978",
     "name": "Unused Art",
-    "picture": "Ursurio_A",
+    "picture": "Unused3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118931,7 +118945,7 @@ var CARDS = {
   "9977": {
     "id": "9977",
     "name": "Unused Art",
-    "picture": "Void_Abomination_A",
+    "picture": "Ursurio_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118944,6 +118958,20 @@ var CARDS = {
   },
   "9976": {
     "id": "9976",
+    "name": "Unused Art",
+    "picture": "Void_Abomination_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9975": {
+    "id": "9975",
     "name": "Unused Art",
     "picture": "Yuriel_A",
     "rarity": "0",
