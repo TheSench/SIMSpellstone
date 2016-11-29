@@ -177,8 +177,8 @@ var BATTLEGROUNDS = {
         {
             "effect_type": "add_skill",
             "id": "fury",
-            "mult": 1,
-            "base": "cost",
+            "mult": .1,
+            "base": "health",
             "y": "12",
             "z": 12,
         },
