@@ -120,8 +120,7 @@ $(function () {
         // Load current battlegrounds
         var bgCheckBoxes = document.getElementsByName("battleground");
         for (var i = 0; i < current_bges.length; i++) {
-
-            bgCheckBoxes[current_bges[i]].checked = true;
+            $("#battleground_" + current_bges[i]).prop('checked', true);
         }
     }
     var bges = _GET('selfbges');
