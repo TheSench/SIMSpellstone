@@ -389,6 +389,7 @@ var CARD_GUI = {};
         getNonActivatedSkill(divSkills, skillsShort, onField, card, "armored", boosts);
         getNonActivatedSkill(divSkills, skillsShort, onField, card, "counter", boosts);
         getNonActivatedSkill(divSkills, skillsShort, onField, card, "counterburn", boosts);
+        getNonActivatedSkill(divSkills, skillsShort, onField, card, "fury", boosts);
         getNonActivatedSkill(divSkills, skillsShort, onField, card, "corrosive", boosts);
     }
 

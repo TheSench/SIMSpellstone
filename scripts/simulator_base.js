@@ -2019,39 +2019,15 @@ var SIMULATOR = {};
             // - Attacker must not be already dead
             if (target.counter) {
 
-                var counter_damage = 0 + target.counter;
-                var enhanced = getEnhancement(target, 'counter');
-                if (enhanced) {
-                    if (enhanced < 0) {
-                        enhanced = Math.ceil(counter_damage * -enhanced);
+                var counterBase = 0 + target.counter;
+                var counterEnhancement = getEnhancement(target, 'counter');
+                if (counterEnhancement) {
+                    if (counterEnhancement < 0) {
+                        counterEnhancement = Math.ceil(counterBase * -counterEnhancement);
                     }
-                    counter_damage += enhanced;
                 }
 
-                // Protect
-                var protect = 0;
-                if (current_assault['protected']) protect = current_assault['protected'];
-                if (counter_damage >= protect) {
-                    current_assault['protected'] = 0;
-                    counter_damage -= protect;
-                } else {
-                    current_assault['protected'] -= counter_damage;
-                    counter_damage = 0;
-                }
-
-                if (debug) {
-                    echo += '<u>(Counter: +' + target.counter;
-                    if (enhanced) echo += ' Enhance: +' + enhanced;
-                    if (protect) echo += ' Barrier: -' + protect;
-                    echo += ') = ' + counter_damage + ' damage</u><br>';
-                }
-
-                do_damage(current_assault, counter_damage);
-
-                if (debug) {
-                    echo += debug_name(current_assault) + ' takes ' + counter_damage + ' vengeance damage';
-                    echo += (!current_assault.isAlive() ? ' and it dies' : '') + '<br>';
-                }
+                doCounterDamage(current_assault, 'Vengance', counterBase, counterEnhancement)
             }
 
             // Counterburn
@@ -2072,6 +2048,28 @@ var SIMULATOR = {};
                     current_assault.scorched.timer = 2;
                 }
                 if (debug) echo += debug_name(target) + ' inflicts counterburn(' + scorch + ') on ' + debug_name(current_assault) + '<br>';
+            }
+
+            // Fury
+            // - Target must have received some amount of damage
+            if (target.fury) {
+                var furyBase = target.fury;
+                var furyEnhancement = getEnhancement(target, 'counter');
+                if (furyEnhancement) {
+                    if (furyEnhancement < 0) {
+                        furyEnhancement = Math.ceil(furyBase * -furyEnhancement);
+                    }
+                }
+
+                if (target.isAlive()) {
+                    var fury = furyBase + furyEnhancement;
+                    target.attack_berserk += fury;
+                    if (debug) {
+                        echo += debug_name(target) + ' activates fury and gains ' + fury + ' attack<br>';
+                    }
+                }
+
+                doCounterDamage(current_assault, 'Fury', furyBase, furyEnhancement);
             }
 
             // Berserk
@@ -2154,6 +2152,35 @@ var SIMULATOR = {};
 
         // -- END OF STATUS INFLICTION --
     };
+
+    function doCounterDamage(attacker, counterType, counterBase, counterEnhancement) {
+
+        var counterDamage = counterBase + counterEnhancement;
+
+        // Protect
+        var protect = (attacker.protected || 0);
+        if (counterDamage >= protect) {
+            attacker.protected = 0;
+            counterDamage -= protect;
+        } else {
+            attacker.protected -= counterDamage;
+            counterDamage = 0;
+        }
+
+        if (debug) {
+            echo += '<u>(' + counterType + ': +' + counterBase;
+            if (counterEnhancement) echo += ' Enhance: +' + counterEnhancement;
+            if (protect) echo += ' Barrier: -' + protect;
+            echo += ') = ' + counterDamage + ' damage</u><br>';
+        }
+
+        do_damage(attacker, counterDamage);
+
+        if (debug) {
+            echo += debug_name(attacker) + ' takes ' + counterDamage + ' ' + counterType.toLowerCase() + ' damage';
+            echo += (!attacker.isAlive() ? ' and it dies' : '') + '<br>';
+        }
+    }
 
     var deck = {};
     var field = {};

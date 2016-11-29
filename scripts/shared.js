@@ -217,6 +217,7 @@ function cloneCard(original) {
     copy.counter = original.counter;
     copy.counterburn = original.counterburn;
     copy.evade = original.evade;
+    copy.fury = original.fury;
     copy.leech = original.leech;
     copy.nullify = original.nullify;
     copy.pierce = original.pierce;
@@ -301,6 +302,7 @@ var makeUnit = (function () {
         counter: 0,
         counterburn: 0,
         evade: 0,
+        fury: 0,
         leech: 0,
         nullify: 0,
         pierce: 0,
@@ -531,6 +533,7 @@ var makeUnit = (function () {
                 case 'counter':
                 case 'counterburn':
                 case 'evade':
+                case 'fury':
                 case 'leech':
                 case 'nullify':
                 case 'pierce':
@@ -605,6 +608,7 @@ var makeUnit = (function () {
                 case 'counter':
                 case 'counterburn':
                 case 'evade':
+                case 'fury':
                 case 'flurry':
                 case 'leech':
                 case 'nullify':
@@ -1023,6 +1027,7 @@ function setSkill_2(new_card, skill) {
         case 'counter':
         case 'counterburn':
         case 'evade':
+        case 'fury':
         case 'leech':
         case 'nullify':
         case 'pierce':
@@ -1357,6 +1362,7 @@ function debug_passive_skills(card, skillText) {
     debugNonActivatedSkill(card, "counter", skillText);
     debugNonActivatedSkill(card, "counterburn", skillText);
     debugNonActivatedSkill(card, "corrosive", skillText);
+    debugNonActivatedSkill(card, "fury", skillText);
 }
 
 function debug_triggered_skills(card, skillText) {
