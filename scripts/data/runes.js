@@ -1002,5 +1002,21 @@ var RUNES = {
         "stat_boost": {
             "health": "8"
         }
+    },
+    "5505": {
+        "id": "5505",
+        "name": "Dragon Rune of Health",
+        "type": "3",
+        "category": "3",
+        "set": "2",
+        "rarity": "3",
+        "faction_req": "9",
+        "icon": "rune_health_epic",
+        "bundle": "34",
+        "desc": "Health +8. May only be embedded on Dragons. May not be crafted.",
+        "usable": "0",
+        "stat_boost": {
+            "health": "8"
+        }
     }
 };
