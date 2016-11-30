@@ -2292,7 +2292,7 @@ function getCurrentPage() {
 
 // Global arrays
 var rarityStrings = [
-    "None",
+    "",
     "Common",
     "Rare",
     "Epic",

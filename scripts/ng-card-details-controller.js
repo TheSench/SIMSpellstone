@@ -280,7 +280,11 @@
 
         $scope.getFaction = function (factionID)
         {
-            return $window.factions.names[factionID];
+            var faction = $window.factions.names[factionID];
+            if (faction == "Tower") {
+                faction = "";
+            }
+            return faction;
         }
 
         $scope.decrementFusion = function ()
