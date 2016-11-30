@@ -329,9 +329,11 @@ var CARD_GUI = {};
         if (subFactions.length) {
             var subFactionsDiv = createDiv("subfaction");
             for (var i = 0; i < subFactions.length; i++) {
-                var htmlSubfaction = getFactionIcon(subFactions[i]);
-                //htmlSubfaction.className = "subfaction";
-                subFactionsDiv.appendChild(htmlSubfaction);
+                var subFactionID = subFactions[i];
+                if (subFactionID) {
+                    var htmlSubfaction = getFactionIcon(subFactionID);
+                    subFactionsDiv.appendChild(htmlSubfaction);
+                }
             }
             htmlCard.appendChild(subFactionsDiv);
         }
@@ -487,6 +489,9 @@ var CARD_GUI = {};
                 break;
             case 'rally':
                 iconName = 'Empower.png';
+                break;
+            case 'weakenself':
+                iconName = 'Weaken.png';
                 break;
             default:
                 iconName = (skillName.charAt(0).toUpperCase() + skillName.slice(1)) + ".png";

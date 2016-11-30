@@ -170,20 +170,6 @@ var BATTLEGROUNDS = {
       },
     ]
   },
-  "113": {
-      "name": "Maelstrom's Fury (test)",
-      "id": "113",
-      "effect": [
-        {
-            "effect_type": "add_skill",
-            "id": "fury",
-            "mult": .1,
-            "base": "health",
-            "y": "12",
-            "z": 12,
-        },
-      ]
-  },
   "501": {
     "name": "Castle Siege",
     "id": "501",

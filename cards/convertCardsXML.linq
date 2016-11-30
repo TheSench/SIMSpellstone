@@ -516,6 +516,17 @@ public partial class unit
 
 	public void AppendUnit(StringBuilder sb)
 	{
+		if (rarity == "0" && sub_type == null)
+		{
+			if (upgrades != null)
+			{
+				// Towers
+				if (card_type == "2")
+				{
+					sub_type = new string[] { "999" };
+				}
+			}
+		}
 		sb.Append("  \"").Append(id).Append("\": {\r\n");
 		AppendEntryString(sb, "id", id, unitTabs);
 		AppendEntryString(sb, "name", name, unitTabs);

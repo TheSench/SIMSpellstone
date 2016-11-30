@@ -1418,11 +1418,15 @@ var multiplierChars = "_*.'";
 var runeDelimiter = "/";
 var indexDelimiter = '-';
 var priorityDelimiter = '|';
-var towers = {
-    601: true,
-    602: true,
-    603: true
-};
+var towers = {};
+for(var id in CARDS) {
+    if(id < 10000) {
+        var card = CARDS[id];
+        if(card.sub_type.indexOf("999") >= 0) {
+            towers[id] = true;
+        }
+    }
+}
 
 // Used to determine how to hash runeIDs
 var maxRuneID = 1000;
@@ -2297,23 +2301,25 @@ var rarityStrings = [
 ];
 
 var factions = {
-    names: [
-        'Factionless',
-        'Aether',
-        'Chaos',
-        'Wyld',
-        'Frog',
-        'Elemental',
-        'Angel',
-        'Undead',
-        'Void',
-        'Dragon',
-        'Avian',
-        'Goblin',
-        'Seafolk',
-        'Insect',
-        'Ant',
-    ],
+    names: {
+        0: 'Factionless',
+        1: 'Aether',
+        2: 'Chaos',
+        3: 'Wyld',
+        4: 'Frog',
+        5: 'Elemental',
+        6: 'Angel',
+        7: 'Undead',
+        8: 'Void',
+        9: 'Dragon',
+        10: 'Avian',
+        11: 'Goblin',
+        12: 'Seafolk',
+        13: 'Insect',
+        14: 'Ant',
+
+        999: 'Tower'
+    },
     IDs: {
         Factionless: 0,
         Aether: 1,
@@ -2330,5 +2336,7 @@ var factions = {
         Seafolk: 12,
         Insect: 13,
         Ant: 14,
+
+        Tower: 999
     }
 };
