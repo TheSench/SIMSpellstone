@@ -1953,6 +1953,14 @@
     <resource card_id="15094" number="2" />
   </fusion_recipe>
   <fusion_recipe>
+    <card_id>15095</card_id>
+    <resource card_id="5095" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25095</card_id>
+    <resource card_id="15095" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
     <card_id>15097</card_id>
     <resource card_id="5097" number="2" />
   </fusion_recipe>
@@ -2738,6 +2746,22 @@
     <resource card_id="16096" number="2" />
   </fusion_recipe>
   <fusion_recipe>
+    <card_id>16097</card_id>
+    <resource card_id="6097" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26097</card_id>
+    <resource card_id="16097" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16099</card_id>
+    <resource card_id="6099" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26099</card_id>
+    <resource card_id="16099" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
     <card_id>16100</card_id>
     <resource card_id="6100" number="2" />
   </fusion_recipe>
@@ -3497,6 +3521,14 @@
   <fusion_recipe>
     <card_id>27093</card_id>
     <resource card_id="17093" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17094</card_id>
+    <resource card_id="7094" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27094</card_id>
+    <resource card_id="17094" number="2" />
   </fusion_recipe>
   <fusion_recipe>
     <card_id>17096</card_id>

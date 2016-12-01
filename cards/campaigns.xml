@@ -3642,6 +3642,33 @@
     </rewards>
     <find_item id="3046" drop_per_energy=".25" />
   </campaign>
+  <!-- Test Campaign -->
+  <campaign>
+    <id>1102</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Frog Test Campaign</name>
+    <icon id="gold_leaf" bundle="17" />
+    <location_id>107</location_id>
+    <x>279</x>
+    <y>226</y>
+    <combatBG>CombatBGEvent004</combatBG>
+    <missions>
+      <mission_id>5412</mission_id>
+      <mission_id>5413</mission_id>
+      <mission_id>5414</mission_id>
+      <mission_id>5415</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1618" />
+      <card level="3" id="1618" />
+      <card level="4" id="2014" />
+      <card level="5" id="1618" />
+      <card level="6" id="1618" />
+      <card level="7" id="512" />
+    </rewards>
+  </campaign>
   <!-- START Mythic Campaigns -->
   <campaign>
     <id>3000</id>

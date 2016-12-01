@@ -42822,6 +42822,264 @@ var CARDS = {
       },
     }
   },
+  "5095": {
+    "id": "5095",
+    "name": "Silurigon",
+    "picture": "Catfish_Dragon_A",
+    "hidden_until": "1480611600000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["9","12"],
+    "attack": 3,
+    "health": 7,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "valor",
+        "x": 2,
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "y": "9",
+        "z": 9,
+      },
+      {
+        "id": "legion",
+        "x": 1,
+        "y": "9",
+        "z": 9,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 8,
+        "skill": [],
+      },
+      "3": {
+        "health": 9,
+        "skill": [],
+      },
+      "4": {
+        "health": 10,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "valor",
+            "x": 3,
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "legion",
+            "x": 1,
+            "y": "9",
+            "z": 9,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "valor",
+            "x": 3,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "legion",
+            "x": 1,
+            "y": "9",
+            "z": 9,
+          },
+        ],
+      },
+    }
+  },
+  "15095": {
+    "id": "15095",
+    "name": "Shepherd Silurigon",
+    "picture": "Catfish_Dragon_A",
+    "hidden_until": "1480611600000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["9","12"],
+    "attack": 3,
+    "health": 11,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "valor",
+        "x": 3,
+      },
+      {
+        "id": "protect",
+        "x": 2,
+        "y": "9",
+        "z": 9,
+      },
+      {
+        "id": "legion",
+        "x": 1,
+        "y": "9",
+        "z": 9,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 12,
+        "skill": [],
+      },
+      "3": {
+        "health": 13,
+        "skill": [],
+      },
+      "4": {
+        "health": 14,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "valor",
+            "x": 4,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "legion",
+            "x": 1,
+            "y": "9",
+            "z": 9,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "valor",
+            "x": 4,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "legion",
+            "x": 1,
+            "y": "9",
+            "z": 9,
+          },
+        ],
+      },
+    }
+  },
+  "25095": {
+    "id": "25095",
+    "name": "Overseer Silurigon",
+    "picture": "Catfish_Dragon_B",
+    "hidden_until": "1480611600000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["9","12"],
+    "attack": 3,
+    "health": 15,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "valor",
+        "x": 4,
+      },
+      {
+        "id": "protect",
+        "x": 3,
+        "y": "9",
+        "z": 9,
+      },
+      {
+        "id": "legion",
+        "x": 1,
+        "y": "9",
+        "z": 9,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 16,
+        "skill": [],
+      },
+      "3": {
+        "health": 17,
+        "skill": [],
+      },
+      "4": {
+        "health": 18,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "valor",
+            "x": 5,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "legion",
+            "x": 1,
+            "y": "9",
+            "z": 9,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "valor",
+            "x": 5,
+          },
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "9",
+            "z": 9,
+          },
+        ],
+      },
+    }
+  },
   "5097": {
     "id": "5097",
     "name": "Sierra Dweller",
@@ -64967,6 +65225,430 @@ var CARDS = {
           {
             "id": "poison",
             "x": 5,
+          },
+        ],
+      },
+    }
+  },
+  "6097": {
+    "id": "6097",
+    "name": "Hoard Dragon",
+    "picture": "Treasure_Trove_Dragon_A",
+    "hidden_until": "1480611600000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["9"],
+    "attack": 2,
+    "health": 9,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "pierce",
+        "x": 2,
+      },
+      {
+        "id": "leech",
+        "x": 2,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 10,
+        "skill": [],
+      },
+      "3": {
+        "attack": 3,
+        "skill": [],
+      },
+      "4": {
+        "health": 11,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "pierce",
+            "x": 2,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "16097": {
+    "id": "16097",
+    "name": "Prize Dragon",
+    "picture": "Treasure_Trove_Dragon_A",
+    "hidden_until": "1480611600000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["9"],
+    "attack": 3,
+    "health": 12,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "pierce",
+        "x": 2,
+      },
+      {
+        "id": "leech",
+        "x": 3,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "attack": 4,
+        "health": 13,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "26097": {
+    "id": "26097",
+    "name": "Trove Dragon",
+    "picture": "Treasure_Trove_Dragon_B",
+    "hidden_until": "1480611600000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["9"],
+    "attack": 4,
+    "health": 14,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "pierce",
+        "x": 3,
+      },
+      {
+        "id": "leech",
+        "x": 4,
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 5,
+        "skill": [],
+      },
+      "3": {
+        "health": 15,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "6099": {
+    "id": "6099",
+    "name": "Opposing Forces",
+    "picture": "Yin_and_Yang_Dragons_A",
+    "hidden_until": "1480957200000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["9"],
+    "attack": 4,
+    "health": 14,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 2,
+      },
+      {
+        "id": "burn",
+        "x": 2,
+      },
+      {
+        "id": "flurry",
+        "c": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 2,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 5,
+          },
+        ],
+      },
+      "3": {
+        "health": 15,
+        "skill": [],
+      },
+      "4": {
+        "health": 16,
+        "skill": [],
+      },
+      "5": {
+        "health": 17,
+        "skill": [],
+      },
+      "6": {
+        "attack": 5,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 2,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+    }
+  },
+  "16099": {
+    "id": "16099",
+    "name": "Colliding Forces",
+    "picture": "Yin_and_Yang_Dragons_A",
+    "hidden_until": "1480957200000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["9"],
+    "attack": 5,
+    "health": 18,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 2,
+      },
+      {
+        "id": "burn",
+        "x": 2,
+      },
+      {
+        "id": "flurry",
+        "c": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 19,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 3,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "4": {
+        "health": 20,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 3,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "5": {
+        "health": 21,
+        "skill": [],
+      },
+      "6": {
+        "attack": 6,
+        "skill": [],
+      },
+    }
+  },
+  "26099": {
+    "id": "26099",
+    "name": "Clashing Forces",
+    "picture": "Yin_and_Yang_Dragons_B",
+    "hidden_until": "1480957200000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["9"],
+    "attack": 6,
+    "health": 21,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 3,
+      },
+      {
+        "id": "burn",
+        "x": 3,
+      },
+      {
+        "id": "flurry",
+        "c": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 7,
+        "health": 22,
+        "skill": [],
+      },
+      "3": {
+        "health": 23,
+        "skill": [],
+      },
+      "4": {
+        "health": 24,
+        "skill": [],
+      },
+      "5": {
+        "health": 25,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 4,
+          },
+          {
+            "id": "burn",
+            "x": 4,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
           },
         ],
       },
@@ -87552,6 +88234,257 @@ var CARDS = {
       },
     }
   },
+  "7094": {
+    "id": "7094",
+    "name": "Basilisk",
+    "picture": "Basilisk_Dragon_A",
+    "hidden_until": "1480611600000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["9"],
+    "attack": 5,
+    "health": 19,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 3,
+      },
+      {
+        "id": "enfeeble",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "jam",
+        "c": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 3,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+      "3": {
+        "attack": 6,
+        "health": 20,
+        "skill": [],
+      },
+      "4": {
+        "health": 21,
+        "skill": [],
+      },
+      "5": {
+        "health": 22,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 3,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+        ],
+      },
+      "6": {
+        "health": 23,
+        "skill": [],
+      },
+    }
+  },
+  "17094": {
+    "id": "17094",
+    "name": "Combative Basilisk",
+    "picture": "Basilisk_Dragon_A",
+    "hidden_until": "1480611600000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["9"],
+    "attack": 6,
+    "health": 24,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 3,
+      },
+      {
+        "id": "enfeeble",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "jam",
+        "c": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 7,
+        "health": 25,
+        "skill": [],
+      },
+      "3": {
+        "health": 26,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 4,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+        ],
+      },
+      "5": {
+        "health": 27,
+        "skill": [],
+      },
+      "6": {
+        "health": 28,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 4,
+          },
+          {
+            "id": "enfeeble",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+        ],
+      },
+    }
+  },
+  "27094": {
+    "id": "27094",
+    "name": "Petrifying Basilisk",
+    "picture": "Basilisk_Dragon_B",
+    "hidden_until": "1480611600000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["9"],
+    "attack": 8,
+    "health": 29,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 4,
+      },
+      {
+        "id": "enfeeble",
+        "x": 3,
+        "all": "1",
+      },
+      {
+        "id": "jam",
+        "c": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 4,
+          },
+          {
+            "id": "enfeeble",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 2,
+          },
+        ],
+      },
+      "3": {
+        "attack": 9,
+        "health": 30,
+        "skill": [],
+      },
+      "4": {
+        "health": 31,
+        "skill": [],
+      },
+      "5": {
+        "health": 32,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 5,
+          },
+          {
+            "id": "enfeeble",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 2,
+          },
+        ],
+      },
+      "6": {
+        "health": 33,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 5,
+          },
+          {
+            "id": "enfeeble",
+            "x": 4,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 2,
+          },
+        ],
+      },
+    }
+  },
   "7096": {
     "id": "7096",
     "name": "Vala, Sleeping Earth",
@@ -95929,6 +96862,764 @@ var CARDS = {
           {
             "id": "leech",
             "x": 7,
+          },
+        ],
+      },
+    }
+  },
+  "8038": {
+    "id": "8038",
+    "name": "Winter's Heart",
+    "picture": "Snowhidden_Dragon_B",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["9"],
+    "attack": 4,
+    "health": 18,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "frost",
+        "x": 2,
+      },
+      {
+        "id": "jam",
+        "c": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 19,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+        ],
+      },
+      "3": {
+        "health": 20,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+        ],
+      },
+      "4": {
+        "health": 21,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "frost",
+            "x": 3,
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+        ],
+      },
+      "5": {
+        "attack": 5,
+        "health": 22,
+        "skill": [],
+      },
+      "6": {
+        "health": 24,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "frost",
+            "x": 4,
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+        ],
+      },
+    }
+  },
+  "8039": {
+    "id": "8039",
+    "name": "Winter's Wings",
+    "picture": "Night_Dragon_B",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["9"],
+    "attack": 5,
+    "health": 22,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 3,
+        "y": "9",
+        "z": 9,
+      },
+      {
+        "id": "rally",
+        "x": 3,
+        "y": "9",
+        "z": 9,
+      },
+      {
+        "id": "nullify",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 24,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "nullify",
+            "x": 3,
+          },
+        ],
+      },
+      "3": {
+        "health": 26,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 5,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "nullify",
+            "x": 4,
+          },
+        ],
+      },
+      "4": {
+        "health": 28,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 5,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "rally",
+            "x": 5,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "nullify",
+            "x": 5,
+          },
+        ],
+      },
+      "5": {
+        "attack": 6,
+        "health": 30,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 6,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "rally",
+            "x": 5,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "nullify",
+            "x": 5,
+          },
+        ],
+      },
+      "6": {
+        "health": 32,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 6,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "rally",
+            "x": 6,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "nullify",
+            "x": 6,
+          },
+        ],
+      },
+    }
+  },
+  "8040": {
+    "id": "8040",
+    "name": "Winter's Bite",
+    "picture": "Fire_Tip_Dragon_B",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["9"],
+    "attack": 5,
+    "health": 13,
+    "cost": 0,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "pierce",
+        "x": 3,
+      },
+      {
+        "id": "flurry",
+        "c": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+      "3": {
+        "health": 15,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 16,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+          {
+            "id": "flurry",
+            "c": 2,
+          },
+        ],
+      },
+      "5": {
+        "attack": 6,
+        "health": 17,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+          {
+            "id": "flurry",
+            "c": 2,
+          },
+        ],
+      },
+      "6": {
+        "health": 18,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "pierce",
+            "x": 6,
+          },
+          {
+            "id": "flurry",
+            "c": 2,
+          },
+        ],
+      },
+    }
+  },
+  "8041": {
+    "id": "8041",
+    "name": "Winter's Thunder",
+    "picture": "Legendary_Lightning_Fist_Dragon_B",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["9"],
+    "attack": 5,
+    "health": 36,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 5,
+      },
+      {
+        "id": "strike",
+        "x": 3,
+        "all": "1",
+      },
+      {
+        "id": "burn",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 6,
+        "health": 38,
+        "skill": [],
+      },
+      "3": {
+        "health": 40,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 6,
+          },
+          {
+            "id": "strike",
+            "x": 4,
+            "all": "1",
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 42,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 6,
+          },
+          {
+            "id": "strike",
+            "x": 4,
+            "all": "1",
+          },
+          {
+            "id": "burn",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "attack": 7,
+        "health": 44,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 7,
+          },
+          {
+            "id": "strike",
+            "x": 4,
+            "all": "1",
+          },
+          {
+            "id": "burn",
+            "x": 4,
+          },
+        ],
+      },
+      "6": {
+        "health": 47,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 7,
+          },
+          {
+            "id": "strike",
+            "x": 5,
+            "all": "1",
+          },
+          {
+            "id": "burn",
+            "x": 5,
+          },
+        ],
+      },
+    }
+  },
+  "8042": {
+    "id": "8042",
+    "name": "Winter's Crusher",
+    "picture": "Epic_Water_Steed_Dragon_B",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["9"],
+    "attack": 4,
+    "health": 30,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 2,
+        "y": "9",
+        "z": 9,
+        "all": "1",
+      },
+      {
+        "id": "protect",
+        "x": 3,
+        "y": "9",
+        "z": 9,
+        "all": "1",
+      },
+      {
+        "id": "weaken",
+        "x": 3,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 32,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 3,
+            "y": "9",
+            "z": 9,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "9",
+            "z": 9,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "3": {
+        "health": 36,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 3,
+            "y": "9",
+            "z": 9,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "attack": 5,
+        "health": 40,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 3,
+            "y": "9",
+            "z": 9,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 4,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 44,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 4,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "health": 48,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 5,
+            "y": "9",
+            "z": 9,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 5,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "8043": {
+    "id": "8043",
+    "name": "Winter's Spirit",
+    "picture": "Spirit_Dragon_B",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["9"],
+    "attack": 3,
+    "health": 26,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "9",
+        "z": 9,
+        "all": "1",
+      },
+      {
+        "id": "legion",
+        "x": 3,
+        "y": "9",
+        "z": 9,
+      },
+      {
+        "id": "fervor",
+        "x": 3,
+        "y": "9",
+        "z": 9,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 27,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "9",
+            "z": 9,
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 3,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "9",
+            "z": 9,
+          },
+        ],
+      },
+      "3": {
+        "attack": 4,
+        "health": 29,
+        "skill": [],
+      },
+      "4": {
+        "health": 30,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 3,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "9",
+            "z": 9,
+          },
+        ],
+      },
+      "5": {
+        "health": 32,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "9",
+            "z": 9,
+          },
+        ],
+      },
+      "6": {
+        "health": 34,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+          },
+          {
+            "id": "fervor",
+            "x": 4,
+            "y": "9",
+            "z": 9,
           },
         ],
       },
@@ -117745,6 +119436,593 @@ var CARDS = {
       },
     }
   },
+  "353": {
+    "id": "353",
+    "name": "Mechanical Drakes",
+    "picture": "portrait_windupdragons",
+    "rarity": "3",
+    "set": "9999",
+    "card_type": "1",
+    "type": "1",
+    "sub_type": [],
+    "health": 14,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 1,
+      },
+      {
+        "id": "protect",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 17,
+        "skill": [],
+      },
+      "3": {
+        "health": 21,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 1,
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "health": 25,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 29,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "354": {
+    "id": "354",
+    "name": "Skyward Beast",
+    "picture": "portrait_skybeast",
+    "rarity": "3",
+    "set": "9999",
+    "card_type": "1",
+    "type": "3",
+    "sub_type": [],
+    "health": 15,
+    "skill": [
+      {
+        "id": "enhance",
+        "x": 1,
+        "s": "poison",
+      },
+      {
+        "id": "rally",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 18,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "poison",
+          },
+          {
+            "id": "rally",
+            "x": 2,
+          },
+        ],
+      },
+      "3": {
+        "health": 22,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 2,
+            "s": "poison",
+          },
+          {
+            "id": "rally",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "health": 26,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 2,
+            "s": "poison",
+          },
+          {
+            "id": "rally",
+            "x": 2,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+          },
+        ],
+      },
+      "5": {
+        "health": 30,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 2,
+            "s": "poison",
+          },
+          {
+            "id": "rally",
+            "x": 3,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "355": {
+    "id": "355",
+    "name": "Ice Dragon",
+    "picture": "portrait_icedragon",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "1",
+    "sub_type": [],
+    "health": 38,
+    "skill": [
+      {
+        "id": "weaken",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "jam",
+        "c": 5,
+      },
+      {
+        "id": "protect",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 40,
+        "skill": [],
+      },
+      "3": {
+        "health": 42,
+        "skill": [
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 44,
+        "skill": [],
+      },
+      "5": {
+        "health": 47,
+        "skill": [
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "health": 50,
+        "skill": [
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+          {
+            "id": "protect",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "356": {
+    "id": "356",
+    "name": "Molten Dragon",
+    "picture": "portrait_moltendragon",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "2",
+    "sub_type": [],
+    "health": 32,
+    "skill": [
+      {
+        "id": "imbue",
+        "x": 2,
+        "y": "9",
+        "z": 9,
+        "s": "burn",
+      },
+      {
+        "id": "counter",
+        "c": 3,
+      },
+      {
+        "id": "strike",
+        "x": 2,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 34,
+        "skill": [],
+      },
+      "3": {
+        "health": 36,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 3,
+            "y": "9",
+            "z": 9,
+            "s": "burn",
+          },
+          {
+            "id": "counter",
+            "c": 3,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "health": 38,
+        "skill": [],
+      },
+      "5": {
+        "health": 40,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 3,
+            "y": "9",
+            "z": 9,
+            "s": "burn",
+          },
+          {
+            "id": "counter",
+            "c": 3,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "health": 42,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+            "s": "burn",
+          },
+          {
+            "id": "counter",
+            "c": 4,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "357": {
+    "id": "357",
+    "name": "Frostbite, Winter's End",
+    "picture": "portrait_frostbite",
+    "rarity": "5",
+    "set": "9999",
+    "card_type": "1",
+    "type": "1",
+    "sub_type": [],
+    "health": 76,
+    "skill": [
+      {
+        "id": "imbue",
+        "x": 3,
+        "y": "9",
+        "z": 9,
+        "s": "frost",
+      },
+      {
+        "id": "protect",
+        "x": 4,
+        "y": "9",
+        "z": 9,
+        "all": "1",
+      },
+      {
+        "id": "jam",
+        "c": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 79,
+        "skill": [],
+      },
+      "3": {
+        "health": 83,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+            "s": "frost",
+          },
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 86,
+        "skill": [],
+      },
+      "5": {
+        "health": 89,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+            "s": "frost",
+          },
+          {
+            "id": "protect",
+            "x": 5,
+            "y": "9",
+            "z": 9,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+        ],
+      },
+      "6": {
+        "health": 92,
+        "skill": [],
+      },
+      "7": {
+        "health": 95,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 5,
+            "y": "9",
+            "z": 9,
+            "s": "frost",
+          },
+          {
+            "id": "protect",
+            "x": 5,
+            "y": "9",
+            "z": 9,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 2,
+          },
+        ],
+      },
+    }
+  },
+  "358": {
+    "id": "358",
+    "name": "Nojuma, the Mountainbane",
+    "picture": "portrait_greenbackdragon",
+    "rarity": "5",
+    "set": "9999",
+    "card_type": "1",
+    "type": "3",
+    "sub_type": [],
+    "health": 72,
+    "skill": [
+      {
+        "id": "imbue",
+        "x": 3,
+        "y": "9",
+        "z": 9,
+        "s": "berserk",
+      },
+      {
+        "id": "rally",
+        "x": 3,
+        "y": "9",
+        "z": 9,
+        "all": "1",
+      },
+      {
+        "id": "enfeeble",
+        "x": 2,
+        "c": 2,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 78,
+        "skill": [],
+      },
+      "3": {
+        "health": 82,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+            "s": "berserk",
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "9",
+            "z": 9,
+            "all": "1",
+          },
+          {
+            "id": "enfeeble",
+            "x": 3,
+            "c": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "health": 86,
+        "skill": [],
+      },
+      "5": {
+        "health": 90,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+            "s": "berserk",
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+            "all": "1",
+          },
+          {
+            "id": "enfeeble",
+            "x": 3,
+            "c": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "health": 94,
+        "skill": [],
+      },
+      "7": {
+        "health": 98,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 5,
+            "y": "9",
+            "z": 9,
+            "s": "berserk",
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "9",
+            "z": 9,
+            "all": "1",
+          },
+          {
+            "id": "enfeeble",
+            "x": 4,
+            "c": 2,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
   "500": {
     "id": "500",
     "name": "Arcane Dustling",
@@ -118539,7 +120817,7 @@ var CARDS = {
   "9994": {
     "id": "9994",
     "name": "New Art",
-    "picture": "New2_A",
+    "picture": "New5_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118553,7 +120831,7 @@ var CARDS = {
   "19994": {
     "id": "19994",
     "name": "New Art",
-    "picture": "New2_B",
+    "picture": "New5_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118567,7 +120845,7 @@ var CARDS = {
   "9993": {
     "id": "9993",
     "name": "New Art",
-    "picture": "New3_A",
+    "picture": "New6_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118581,7 +120859,7 @@ var CARDS = {
   "19993": {
     "id": "19993",
     "name": "New Art",
-    "picture": "New3_B",
+    "picture": "New6_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118595,7 +120873,7 @@ var CARDS = {
   "9992": {
     "id": "9992",
     "name": "New Art",
-    "picture": "New4_A",
+    "picture": "New9_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118609,7 +120887,7 @@ var CARDS = {
   "19992": {
     "id": "19992",
     "name": "New Art",
-    "picture": "New4_B",
+    "picture": "New9_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118622,8 +120900,8 @@ var CARDS = {
   },
   "9991": {
     "id": "9991",
-    "name": "New Art",
-    "picture": "New5_A",
+    "name": "Unused Art",
+    "picture": "Oda_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118636,8 +120914,8 @@ var CARDS = {
   },
   "19991": {
     "id": "19991",
-    "name": "New Art",
-    "picture": "New5_B",
+    "name": "Unused Art",
+    "picture": "Oda_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118648,10 +120926,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9990": {
-    "id": "9990",
-    "name": "New Art",
-    "picture": "New6_A",
+  "29991": {
+    "id": "29991",
+    "name": "Unused Art",
+    "picture": "Oda_C",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118664,8 +120942,8 @@ var CARDS = {
   },
   "19990": {
     "id": "19990",
-    "name": "New Art",
-    "picture": "New6_B",
+    "name": "Unused Art",
+    "picture": "Promo_Dragon_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118678,8 +120956,8 @@ var CARDS = {
   },
   "9989": {
     "id": "9989",
-    "name": "New Art",
-    "picture": "New7_A",
+    "name": "Unused Art",
+    "picture": "Seraph_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118692,8 +120970,8 @@ var CARDS = {
   },
   "19989": {
     "id": "19989",
-    "name": "New Art",
-    "picture": "New7_B",
+    "name": "Unused Art",
+    "picture": "Seraph_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118706,22 +120984,8 @@ var CARDS = {
   },
   "9988": {
     "id": "9988",
-    "name": "New Art",
-    "picture": "New8_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19988": {
-    "id": "19988",
-    "name": "New Art",
-    "picture": "New8_B",
+    "name": "Unused Art",
+    "picture": "Tarian_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118734,22 +120998,8 @@ var CARDS = {
   },
   "9987": {
     "id": "9987",
-    "name": "New Art",
-    "picture": "New9_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19987": {
-    "id": "19987",
-    "name": "New Art",
-    "picture": "New9_B",
+    "name": "Unused Art",
+    "picture": "Tremor_Wurm_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118763,7 +121013,7 @@ var CARDS = {
   "9986": {
     "id": "9986",
     "name": "Unused Art",
-    "picture": "Oda_A",
+    "picture": "Unused1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118774,38 +121024,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19986": {
-    "id": "19986",
+  "9985": {
+    "id": "9985",
     "name": "Unused Art",
-    "picture": "Oda_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29986": {
-    "id": "29986",
-    "name": "Unused Art",
-    "picture": "Oda_C",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19985": {
-    "id": "19985",
-    "name": "Unused Art",
-    "picture": "Promo_Dragon_B",
+    "picture": "Unused2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118819,21 +121041,7 @@ var CARDS = {
   "9984": {
     "id": "9984",
     "name": "Unused Art",
-    "picture": "Seraph_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19984": {
-    "id": "19984",
-    "name": "Unused Art",
-    "picture": "Seraph_B",
+    "picture": "Unused3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118847,7 +121055,7 @@ var CARDS = {
   "9983": {
     "id": "9983",
     "name": "Unused Art",
-    "picture": "Tarian_A",
+    "picture": "Ursurio_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118861,7 +121069,7 @@ var CARDS = {
   "9982": {
     "id": "9982",
     "name": "Unused Art",
-    "picture": "Tremor_Wurm_A",
+    "picture": "Void_Abomination_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -118874,76 +121082,6 @@ var CARDS = {
   },
   "9981": {
     "id": "9981",
-    "name": "Unused Art",
-    "picture": "Unused1_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9980": {
-    "id": "9980",
-    "name": "Unused Art",
-    "picture": "Unused2_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9979": {
-    "id": "9979",
-    "name": "Unused Art",
-    "picture": "Unused3_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9978": {
-    "id": "9978",
-    "name": "Unused Art",
-    "picture": "Ursurio_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9977": {
-    "id": "9977",
-    "name": "Unused Art",
-    "picture": "Void_Abomination_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9976": {
-    "id": "9976",
     "name": "Unused Art",
     "picture": "Yuriel_A",
     "rarity": "0",

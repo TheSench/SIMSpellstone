@@ -12489,4 +12489,352 @@
       </line>
     </speech>
   </mission>
+  <mission>
+    <id>5412</id>
+    <name>Love of a Mother</name>
+    <energy>9</energy>
+    <desc>Cedric and Ursurio leave the Avian territory, heading back to Golden Crown, to return Frobert to his home. The Mayor of Golden Crown is overjoyed to have her son back.</desc>
+    <commander id="249" />
+    <deck>
+      <card id="1015" name="Windfrog" />
+      <card id="1015" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="1613" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="1031" name="Noble Champion" />
+      <card id="2040" name="Owlmancer" />
+      <card id="2034" name="Leap Frog Duo" />
+      <card id="1026" mastery_level="2" name="Glass Colossus" />
+      <card id="1631" mastery_level="3" name="Venom Dragon" />
+      <card id="6020" mastery_level="4" name="Croak Piercer" />
+      <card id="1028" mastery_level="5" name="Heroic Frog" />
+      <card id="1640" mastery_level="6" name="Life Dragon" />
+      <card id="1043" mastery_level="7" name="Lilypad Bard" />
+    </deck>
+    <speech>
+      <line>
+        <commander>goldencrownmayor</commander>
+        <enemy>0</enemy>
+        <text>Oh Frobert, my son, you are unharmed!</text>
+      </line>
+      <line>
+        <commander>goldencrownmayor</commander>
+        <enemy>0</enemy>
+        <text>Cedric, you saved my child, just as I knew you would. No matter how far you travel, you will always be Golden Crown's hero.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5413</id>
+    <name>Second Celebration</name>
+    <energy>9</energy>
+    <desc>The frogs are prepared to hold a feast all over again, to celebrate the safe return of Frobert. However, Cedric insists that they must be on their way, despite Ursurio's temptation to stay.</desc>
+    <commander id="232" />
+    <deck>
+      <card id="1610" name="Ranger" />
+      <card id="1610" />
+      <card id="1313" name="Lavafrog" />
+      <card id="1313" />
+      <card id="1631" name="Venom Dragon" />
+      <card id="1628" name="Garganotos" />
+      <card id="2014" name="Tadpole Warmage" />
+      <card id="5060" name="Quack Apprentice" />
+      <card id="7016" name="Webfist Shaman" />
+      <card id="1328" mastery_level="2" name="Poison Bullfrog" />
+      <card id="1327" mastery_level="3" name="Fallen Angel" />
+      <card id="6051" mastery_level="4" name="Treeblade Thief" />
+      <card id="1028" mastery_level="5" name="Heroic Frog" />
+      <card id="1641" mastery_level="6" name="Rhythm of the Wyld" />
+      <card id="2013" mastery_level="7" name="Stoneclad Toad" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5414</id>
+    <name>Original Purpose</name>
+    <energy>9</energy>
+    <desc>Cedric reminds the Golden Crown leader their original mission for coming there. The citizens of Dawnglow watch tearfully as their hero prepares to leave on his journey.</desc>
+    <commander id="249" />
+    <deck>
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1311" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="6022" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="1329" name="Shadow Assassin" />
+      <card id="2005" name="Sailing Drake" />
+      <card id="5020" name="Frost Frog" />
+      <card id="2012" name="Frogling Swarm" />
+      <card id="2004" mastery_level="2" name="Lavatail Dragon" />
+      <card id="1326" mastery_level="3" name="Titan of Fire" />
+      <card id="7053" mastery_level="4" name="Bee Eater" />
+      <card id="1627" mastery_level="5" name="Sage of Croaks" />
+      <card id="1340" mastery_level="6" name="Blazekin Dragon" />
+      <card id="6048" mastery_level="7" name="Bulwraag" />
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>All in the line of duty, Mayor. Now, didn't you have a final mission for me?</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Does it involve more banquets?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5415</id>
+    <name>Secrets</name>
+    <energy>9</energy>
+    <desc>The Golden Crown Mayor bites her lip anxiously. She looks around secretively, as if making sure no one else will hear her words.</desc>
+    <commander id="290" />
+    <deck>
+      <card id="1012" name="Cloud Sylph" />
+      <card id="1012" />
+      <card id="1618" name="Frog Scout" />
+      <card id="1618" />
+      <card id="1625" name="Ferocious Clawkin" />
+      <card id="1626" name="Tusker" />
+      <card id="1628" name="Garganotos" />
+      <card id="2063" name="Hob Fletcher" />
+      <card id="5050" name="Cloud Spear" />
+      <card id="2044" mastery_level="2" name="Quillhide Dragon" />
+      <card id="1325" mastery_level="3" name="Chaos Storm" />
+      <card id="5053" mastery_level="4" name="Anura Witch" />
+      <card id="7051" mastery_level="5" name="Stinglash Rider" />
+      <card id="1342" mastery_level="6" name="Ronin" />
+      <card id="7050" mastery_level="7" name="Krieg, Northern Sword" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5416</id>
+    <name>Final Request</name>
+    <energy>9</energy>
+    <desc>When she has confirmed that only trusted ears will hear the information, the Mayor reveals her final mission to Cedric. Ursurio has promised to help as well, on the condition that Cedric will join their party on the airship.</desc>
+    <commander id="247" />
+    <deck>
+      <card id="1614" name="Druid" />
+      <card id="1614" />
+      <card id="1618" name="Frog Scout" />
+      <card id="1618" />
+      <card id="2060" name="Patchwork Experiment" />
+      <card id="2041" name="Sharpwing" />
+      <card id="5024" name="Cloudtop Dragon" />
+      <card id="2056" name="Drainor" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="2042" mastery_level="2" name="Carrion Hunter" />
+      <card id="1332" mastery_level="3" name="Vampiric Emira" />
+      <card id="7051" mastery_level="4" name="Stinglash Rider" />
+      <card id="1328" mastery_level="5" name="Poison Bullfrog" />
+      <card id="1343" mastery_level="6" name="Firehorn" />
+      <card id="7049" mastery_level="7" name="Boundtoad" />
+    </deck>
+    <speech>
+      <line>
+        <commander>goldencrownmayor</commander>
+        <enemy>0</enemy>
+        <text>Our neighbor settlement has reported unusual activity. They say other frogs are assaulting their comrades!</text>
+      </line>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>Leave it to us, ma'am. We'll look into it before I start my quest against The Void.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5417</id>
+    <name>On the Road</name>
+    <energy>9</energy>
+    <desc>Ursurio travels with Cedric to the settlement that the Golden Crown Mayor had described. The road there is peaceful, with only a stray monster or two.</desc>
+    <commander id="247" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" />
+      <card id="6012" name="Ember Drake" />
+      <card id="6012" />
+      <card id="2054" name="Pack Runner" />
+      <card id="2034" name="Leap Frog Duo" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="2056" name="Drainor" />
+      <card id="6010" name="Cliffpass Defender" />
+      <card id="5004" mastery_level="2" name="Lightning Lord" />
+      <card id="2011" mastery_level="3" name="Poliworg" />
+      <card id="6051" mastery_level="4" name="Treeblade Thief" />
+      <card id="5053" mastery_level="5" name="Anura Witch" />
+      <card id="2006" mastery_level="6" name="Zhulong" />
+      <card id="1643" mastery_level="7" name="Nimble Leaper" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5418</id>
+    <name>Frog Civil War</name>
+    <energy>9</energy>
+    <desc>When they reach the settlement, they can see immediate strife. Oddly-colored frogs assault other the residents. The assailants don't have the same look as the native Golden Crown frogs...</desc>
+    <commander id="290" />
+    <deck>
+      <card id="1618" name="Frog Scout" />
+      <card id="1618" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6007" />
+      <card id="2027" name="Halo Mage" />
+      <card id="2034" name="Leap Frog Duo" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="5020" name="Frost Frog" />
+      <card id="6010" name="Cliffpass Defender" />
+      <card id="5020" mastery_level="2" name="Frost Frog" />
+      <card id="2011" mastery_level="3" name="Poliworg" />
+      <card id="7051" mastery_level="4" name="Stinglash Rider" />
+      <card id="7020" mastery_level="5" name="Trapper Frog" />
+      <card id="1341" mastery_level="6" name="Blood Demon" />
+      <card id="7052" mastery_level="7" name="Toad the Ravenous" />
+    </deck>
+    <speech>
+      <line>
+        <commander>frogscout</commander>
+        <enemy>1</enemy>
+        <text> Foolish Goldie frogs! We'll show you how a Dawnglow fights!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5419</id>
+    <name>To the Rescue</name>
+    <energy>9</energy>
+    <desc>Cedric and Ursurio rush to save the fleeing frogs. The attackers are merciless, despite both sides being frogs.</desc>
+    <commander id="252" />
+    <deck>
+      <card id="1618" name="Frog Scout" />
+      <card id="1618" />
+      <card id="1618" name="Frog Scout" />
+      <card id="1618" />
+      <card id="2014" name="Tadpole Warmage" />
+      <card id="1628" name="Garganotos" />
+      <card id="5010" name="Concealed Dragon" />
+      <card id="2053" name="Rocket Rider" />
+      <card id="6096" name="Desert Slitherer" />
+      <card id="2031" mastery_level="2" name="Dryad" />
+      <card id="2011" mastery_level="3" name="Poliworg" />
+      <card id="6020" mastery_level="4" name="Croak Piercer" />
+      <card id="7053" mastery_level="5" name="Bee Eater" />
+      <card id="1643" mastery_level="6" name="Nimble Leaper" />
+      <card id="7042" mastery_level="7" name="Scurvy Hopper" />
+    </deck>
+    <speech>
+      <line>
+        <commander>frobert</commander>
+        <enemy>1</enemy>
+        <text>Heeeelp!</text>
+      </line>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>Don't worry, you're safe now. We won't let them hurt you.</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Or eat you!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5420</id>
+    <name>Dawnglow Frenzy</name>
+    <energy>9</energy>
+    <desc>Ursurio realizes that the attacking frogs are familiar. He tries to quell the enemies' desire to fight...</desc>
+    <commander id="290" />
+    <deck>
+      <card id="1618" name="Frog Scout" />
+      <card id="1618" />
+      <card id="1618" name="Frog Scout" />
+      <card id="1618" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="2049" name="Contrapede" />
+      <card id="6044" name="Firewalker" />
+      <card id="1631" name="Venom Dragon" />
+      <card id="2023" mastery_level="2" name="Grizzly Terror" />
+      <card id="2001" mastery_level="3" name="Dunetooth Demon" />
+      <card id="5053" mastery_level="4" name="Anura Witch" />
+      <card id="5053" mastery_level="5" name="Anura Witch" />
+      <card id="5001" mastery_level="6" name="Aven Skypiercer" />
+      <card id="2013" mastery_level="7" name="Stoneclad Toad" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>I have been to Dawnglow and know the frogs there are very kind. What's gotten into you?</text>
+      </line>
+      <line>
+        <commander>frogscout</commander>
+        <enemy>1</enemy>
+        <text>Destroy... destroy...!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5421</id>
+    <name>Mad Frogs</name>
+    <energy>9</energy>
+    <desc>The Dawnglow frogs claw at everything like madmen. Most Golden Crown frogs have hidden away in their homes. Cedric and Ursurio fight the enemies alone.</desc>
+    <commander id="290" />
+    <deck>
+      <card id="1618" name="Frog Scout" />
+      <card id="1618" />
+      <card id="1615" name="Rune Panther" />
+      <card id="1615" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="6038" name="Hemlock" />
+      <card id="2005" name="Sailing Drake" />
+      <card id="2000" mastery_level="2" name="Wasteland Nomad" />
+      <card id="2001" mastery_level="3" name="Dunetooth Demon" />
+      <card id="2034" mastery_level="4" name="Leap Frog Duo" />
+      <card id="7016" mastery_level="5" name="Webfist Shaman" />
+      <card id="1642" mastery_level="6" name="Icestone Beast" />
+      <card id="5051" mastery_level="7" name="Amphibious Digger" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5422</id>
+    <name>Unfamiliar Battleground</name>
+    <energy>9</energy>
+    <desc>Cedric is unfamiliar with how The Void's influence works, but Ursurio can spot the telltale signs. They will need to quell the angry frogs before they can focus on the corruption's source.</desc>
+    <commander id="215" />
+    <deck>
+      <card id="1618" name="Frog Scout" />
+      <card id="1618" />
+      <card id="1614" name="Druid" />
+      <card id="1614" />
+      <card id="1632" name="Shadow Rider" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="1329" name="Shadow Assassin" />
+      <card id="5081" name="Brahzee" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="1627" mastery_level="2" name="Sage of Croaks" />
+      <card id="2020" mastery_level="3" name="Tidetaken Fighter" />
+      <card id="7020" mastery_level="4" name="Trapper Frog" />
+      <card id="1028" mastery_level="5" name="Heroic Frog" />
+      <card id="2013" mastery_level="6" name="Stoneclad Toad" />
+      <card id="2013" mastery_level="7" name="Stoneclad Toad" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Do you see the dark energy around them, Cedric? This is more work of The Void.</text>
+      </line>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>This is my homeland. I won't allow this corruption any longer!</text>
+      </line>
+    </speech>
+  </mission>
 </root>
