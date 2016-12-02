@@ -51689,7 +51689,7 @@
     <rarity>4</rarity>
     <skill id="evade" x="1" />
     <skill id="pierce" x="3" />
-    <skill id="flurry" c="4" />
+    <skill id="burn" x="2" />
     <type>2</type>
     <sub_type>9</sub_type>
     <set>9999</set>
@@ -51698,21 +51698,21 @@
       <health>14</health>
       <skill id="evade" x="1" />
       <skill id="pierce" x="3" />
-      <skill id="flurry" c="3" />
+      <skill id="burn" x="2" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>15</health>
       <skill id="evade" x="2" />
       <skill id="pierce" x="4" />
-      <skill id="flurry" c="3" />
+      <skill id="burn" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>16</health>
       <skill id="evade" x="2" />
       <skill id="pierce" x="4" />
-      <skill id="flurry" c="2" />
+      <skill id="burn" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -51720,14 +51720,14 @@
       <attack>6</attack>
       <skill id="evade" x="2" />
       <skill id="pierce" x="5" />
-      <skill id="flurry" c="2" />
+      <skill id="burn" x="4" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>18</health>
       <skill id="evade" x="3" />
       <skill id="pierce" x="6" />
-      <skill id="flurry" c="2" />
+      <skill id="burn" x="4" />
     </upgrade>
   </unit>
   <unit>
@@ -63143,7 +63143,7 @@
     <attack>0</attack>
     <health>32</health>
     <skill id="imbue" s="burn" x="2" y="9" />
-    <skill id="counter" c="3" />
+    <skill id="counter" x="3" />
     <skill id="strike" x="2" all="1" />
     <rarity>4</rarity>
     <type>2</type>
@@ -63156,7 +63156,7 @@
       <level>3</level>
       <health>36</health>
       <skill id="imbue" s="burn" x="3" y="9" />
-      <skill id="counter" c="3" />
+      <skill id="counter" x="3" />
       <skill id="strike" x="2" all="1" />
     </upgrade>
     <upgrade>
@@ -63167,14 +63167,14 @@
       <level>5</level>
       <health>40</health>
       <skill id="imbue" s="burn" x="3" y="9" />
-      <skill id="counter" c="3" />
+      <skill id="counter" x="3" />
       <skill id="strike" x="3" all="1" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>42</health>
       <skill id="imbue" s="burn" x="4" y="9" />
-      <skill id="counter" c="4" />
+      <skill id="counter" x="4" />
       <skill id="strike" x="3" all="1" />
     </upgrade>
   </unit>
@@ -63185,8 +63185,8 @@
     <portrait>Portrait_Frostbite</portrait>
     <attack>0</attack>
     <health>76</health>
-    <skill id="imbue" s="frost" x="3" y="9" />
-    <skill id="protect" x="4" y="9" all="1" />
+    <skill id="imbue" s="frost" x="2" y="9" />
+    <skill id="protect" x="3" y="9" all="1" />
     <skill id="jam" c="3" />
     <rarity>5</rarity>
     <type>1</type>
@@ -63198,8 +63198,8 @@
     <upgrade>
       <level>3</level>
       <health>83</health>
-      <skill id="imbue" s="frost" x="4" y="9" />
-      <skill id="protect" x="4" y="9" all="1" />
+      <skill id="imbue" s="frost" x="3" y="9" />
+      <skill id="protect" x="3" y="9" all="1" />
       <skill id="jam" c="3" />
     </upgrade>
     <upgrade>
@@ -63209,8 +63209,8 @@
     <upgrade>
       <level>5</level>
       <health>89</health>
-      <skill id="imbue" s="frost" x="4" y="9" />
-      <skill id="protect" x="5" y="9" all="1" />
+      <skill id="imbue" s="frost" x="3" y="9" />
+      <skill id="protect" x="4" y="9" all="1" />
       <skill id="jam" c="3" />
     </upgrade>
     <upgrade>
@@ -63220,8 +63220,8 @@
     <upgrade>
       <level>7</level>
       <health>95</health>
-      <skill id="imbue" s="frost" x="5" y="9" />
-      <skill id="protect" x="5" y="9" all="1" />
+      <skill id="imbue" s="frost" x="4" y="9" />
+      <skill id="protect" x="4" y="9" all="1" />
       <skill id="jam" c="2" />
     </upgrade>
   </unit>
@@ -63233,7 +63233,7 @@
     <attack>0</attack>
     <health>72</health>
     <skill id="imbue" s="berserk" x="3" y="9" />
-    <skill id="rally" x="3" y="9" all="1" />
+    <skill id="rally" x="2" y="9" all="1" />
     <skill id="enfeeble" x="2" all="1" c="2" />
     <rarity>5</rarity>
     <type>3</type>
@@ -63246,7 +63246,7 @@
       <level>3</level>
       <health>82</health>
       <skill id="imbue" s="berserk" x="4" y="9" />
-      <skill id="rally" x="3" y="9" all="1" />
+      <skill id="rally" x="2" y="9" all="1" />
       <skill id="enfeeble" x="3" all="1" c="2" />
     </upgrade>
     <upgrade>
@@ -63257,7 +63257,7 @@
       <level>5</level>
       <health>90</health>
       <skill id="imbue" s="berserk" x="4" y="9" />
-      <skill id="rally" x="4" y="9" all="1" />
+      <skill id="rally" x="3" y="9" all="1" />
       <skill id="enfeeble" x="3" all="1" c="2" />
     </upgrade>
     <upgrade>
@@ -63268,8 +63268,8 @@
       <level>7</level>
       <health>98</health>
       <skill id="imbue" s="berserk" x="5" y="9" />
-      <skill id="rally" x="4" y="9" all="1" />
-      <skill id="enfeeble" x="4" all="1" c="2" />
+      <skill id="rally" x="3" y="9" all="1" />
+      <skill id="enfeeble" x="3" all="1" c="2" />
     </upgrade>
   </unit>
   <!-- END HEROES -->
@@ -64211,6 +64211,16 @@
     <desc>When damaged by an attack, deal damage to attacker and increase Attack permanently</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <balance_points>3</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>slow</id>
+    <order>500</order>
+    <icon>fury</icon>
+    <name>Slow</name>
+    <desc>Increases the creature's delay.</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <balance_points>10</balance_points>
     <hidden>1</hidden>
   </skillType>
   <skillType>

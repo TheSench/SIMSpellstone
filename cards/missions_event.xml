@@ -12837,4 +12837,414 @@
       </line>
     </speech>
   </mission>
+  <mission>
+    <id>5423</id>
+    <name>No Rest</name>
+    <energy>9</energy>
+    <desc>The frogs have slowed down their attacks, but Cedric and Ursurio are at a stalemate. They cannot kill innocent corrupted frogs, yet whenever one regains their consciousness, they simply resume their attacks.</desc>
+    <commander id="252" />
+    <deck>
+      <card id="1618" name="Frog Scout" />
+      <card id="1618" />
+      <card id="1313" name="Lavafrog" />
+      <card id="1313" />
+      <card id="1031" name="Noble Champion" />
+      <card id="5062" name="Cliffhanger Wyrm" />
+      <card id="1630" name="Giant Squid" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="6063" name="Firetail Dragon" />
+      <card id="2023" mastery_level="2" name="Grizzly Terror" />
+      <card id="2020" mastery_level="3" name="Tidetaken Fighter" />
+      <card id="2014" mastery_level="4" name="Tadpole Warmage" />
+      <card id="1028" mastery_level="5" name="Heroic Frog" />
+      <card id="1040" mastery_level="6" name="Storm Dragon" />
+      <card id="7050" mastery_level="7" name="Krieg, Northern Sword" />
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>This is endless!</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Let's look for the source of the corruption. If we stop that, they should be free from its influence.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5424</id>
+    <name>Previous Experience</name>
+    <energy>9</energy>
+    <desc>Ursurio tries to remember information from his time in Dawnglow. It could be key to solving their current dilemma.</desc>
+    <commander id="252" />
+    <deck>
+      <card id="1315" name="Nix Elemental" />
+      <card id="1315" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="1318" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="5050" name="Cloud Spear" />
+      <card id="1630" name="Giant Squid" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="6063" name="Firetail Dragon" />
+      <card id="2032" mastery_level="2" name="Brimstone" />
+      <card id="2046" mastery_level="3" name="Leaping Dragon" />
+      <card id="6050" mastery_level="4" name="Wortwog" />
+      <card id="1328" mastery_level="5" name="Poison Bullfrog" />
+      <card id="5029" mastery_level="6" name="Snowback Dragon" />
+      <card id="5051" mastery_level="7" name="Amphibious Digger" />
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>You said you were in Dawnglow. Did you learn anything there that might help us?</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Crayfish!</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>I mean... Yes, Groc and I found that the swamp water carried The Void's corruption.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5425</id>
+    <name>Water Corruption</name>
+    <energy>9</energy>
+    <desc>Ursurio and Cedric begin searching for sources of water. The swamplands of Dawnglow connect directly to Golden Crown, so the corruption could have traveled through the canals.</desc>
+    <commander id="257" />
+    <deck>
+      <card id="1613" name="Acidic Spider" />
+      <card id="1613" />
+      <card id="5012" name="Static Drake" />
+      <card id="5012" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="5046" name="Dawn" />
+      <card id="1630" name="Giant Squid" />
+      <card id="5080" name="Djinnflame Brawler" />
+      <card id="5024" name="Cloudtop Dragon" />
+      <card id="2032" mastery_level="2" name="Brimstone" />
+      <card id="2056" mastery_level="3" name="Drainor" />
+      <card id="5046" mastery_level="4" name="Dawn" />
+      <card id="2034" mastery_level="5" name="Leap Frog Duo" />
+      <card id="5061" mastery_level="6" name="Thunderfist Rex" />
+      <card id="6048" mastery_level="7" name="Bulwraag" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5426</id>
+    <name>From Dawn to Gold</name>
+    <energy>9</energy>
+    <desc>The two find the river that connects to Dawnglow. Black specks of The Void's energy float through the waters. The corruption has clearly spread from Dawnglow and into Golden Crown...</desc>
+    <commander id="313" />
+    <deck>
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1311" />
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="6017" />
+      <card id="1325" name="Chaos Storm" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="1630" name="Giant Squid" />
+      <card id="5073" name="Shell Invader" />
+      <card id="2066" name="Basalt Dragon" />
+      <card id="1631" mastery_level="2" name="Venom Dragon" />
+      <card id="5030" mastery_level="3" name="Loxphas Mage" />
+      <card id="2057" mastery_level="4" name="Twister" />
+      <card id="7051" mastery_level="5" name="Stinglash Rider" />
+      <card id="5034" mastery_level="6" name="Skyward Guardian" />
+      <card id="5054" mastery_level="7" name="Reckless Ballista" />
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>Surely the river wasn't always this polluted. It must be what's caused the Dawnglow frogs to go mad.</text>
+      </line>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>The same fate might await the Golden Crown frogs... We must act quickly!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5427</id>
+    <name>From the Depths</name>
+    <energy>9</energy>
+    <desc>As Cedric and Ursurio get closer to the waters, something emerges from its depths! It is coated in the same black grime that has polluted the river...</desc>
+    <commander id="352" />
+    <deck>
+      <card id="1015" name="Windfrog" />
+      <card id="1015" />
+      <card id="1619" name="Earth Elemental" />
+      <card id="1619" />
+      <card id="5011" name="Sky Whale" />
+      <card id="5020" name="Frost Frog" />
+      <card id="1630" name="Giant Squid" />
+      <card id="5073" name="Shell Invader" />
+      <card id="2067" name="Symbol of Elaria" />
+      <card id="7005" mastery_level="2" name="Tsunamari" />
+      <card id="5015" mastery_level="3" name="Gravity Swell" />
+      <card id="7015" mastery_level="4" name="Bog Aberration" />
+      <card id="1028" mastery_level="5" name="Heroic Frog" />
+      <card id="7054" mastery_level="6" name="The Thing Below" />
+      <card id="6052" mastery_level="7" name="Fuming Beast" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5428</id>
+    <name>Swamp Fiends</name>
+    <energy>9</energy>
+    <desc>Strange creatures emerge from the waters. Each one is covered in the black grime, glowing with dark energy from The Void...</desc>
+    <commander id="242" />
+    <deck>
+      <card id="1313" name="Lavafrog" />
+      <card id="1313" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="7017" />
+      <card id="2062" name="Deadeye Apprentice" />
+      <card id="5010" name="Concealed Dragon" />
+      <card id="1628" name="Garganotos" />
+      <card id="6031" name="Iceblood Assassin" />
+      <card id="6097" name="Hoard Dragon" />
+      <card id="7066" mastery_level="2" name="Aquine" />
+      <card id="5010" mastery_level="3" name="Concealed Dragon" />
+      <card id="7015" mastery_level="4" name="Bog Aberration" />
+      <card id="6020" mastery_level="5" name="Croak Piercer" />
+      <card id="7014" mastery_level="6" name="Genbu" />
+      <card id="2013" mastery_level="7" name="Stoneclad Toad" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5429</id>
+    <name>Mindless Aggression</name>
+    <energy>9</energy>
+    <desc>The creatures fight with a strange tenacity. They don't flinch even when hit, continuing forward with nearly an Undead-like mentality.</desc>
+    <commander id="247" />
+    <deck>
+      <card id="5022" name="Webfoot Raider" />
+      <card id="5022" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="7017" />
+      <card id="2060" name="Patchwork Experiment" />
+      <card id="5084" name="Dotora Spirit" />
+      <card id="5035" name="Vapor Guard" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="7062" name="Brine Bellower" />
+      <card id="1630" mastery_level="2" name="Giant Squid" />
+      <card id="2049" mastery_level="3" name="Contrapede" />
+      <card id="6015" mastery_level="4" name="Acidic Sludge" />
+      <card id="7053" mastery_level="5" name="Bee Eater" />
+      <card id="2051" mastery_level="6" name="Dune Hopper" />
+      <card id="5064" mastery_level="7" name="Anshar" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5430</id>
+    <name>Boiling Water</name>
+    <energy>9</energy>
+    <desc>With the monsters cleared out of the way, Cedric puts his hand into the river. It burns unnaturally, as if the water has somehow become like magma.</desc>
+    <commander id="352" />
+    <deck>
+      <card id="5022" name="Webfoot Raider" />
+      <card id="5022" />
+      <card id="7007" name="Water Serpent" />
+      <card id="7007" />
+      <card id="6034" name="Bone Viper" />
+      <card id="5041" name="Skylance Raiders" />
+      <card id="5020" name="Frost Frog" />
+      <card id="7021" name="Shadow Elemental" />
+      <card id="7062" name="Brine Bellower" />
+      <card id="1630" mastery_level="2" name="Giant Squid" />
+      <card id="2033" mastery_level="3" name="Arcblaze Dragon" />
+      <card id="1626" mastery_level="4" name="Tusker" />
+      <card id="5053" mastery_level="5" name="Anura Witch" />
+      <card id="2047" mastery_level="6" name="Conjured Dragon" />
+      <card id="6058" mastery_level="7" name="Tarragon Cuttail" />
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>Owch! Don't touch the black dust in the river, got it...</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>Let's follow the river further. We might be able to cut it off at its source.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5431</id>
+    <name>The Plan</name>
+    <energy>9</energy>
+    <desc>The river twists and turns, leading the two closer to the border of Dawnglow swamp. They find a particularly narrow spot of the river where the pollution seems to have bottlenecked.</desc>
+    <commander id="246" />
+    <deck>
+      <card id="5017" name="Steam Tempest" />
+      <card id="5017" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="6022" />
+      <card id="6021" name="Marsh Ogre" />
+      <card id="2066" name="Basalt Dragon" />
+      <card id="6054" name="Shadowcrafter" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="6010" name="Cliffpass Defender" />
+      <card id="6005" mastery_level="2" name="Gloomkin" />
+      <card id="5011" mastery_level="3" name="Sky Whale" />
+      <card id="2056" mastery_level="4" name="Drainor" />
+      <card id="5053" mastery_level="5" name="Anura Witch" />
+      <card id="2043" mastery_level="6" name="Eos" />
+      <card id="6024" mastery_level="7" name="Bane Dragon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>This place has the worst pollution. If we can do something with the river here, it should prevent the corruption from controlling the Dawnglow frogs.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5432</id>
+    <name>Resistance</name>
+    <energy>9</energy>
+    <desc>The river twists and turns, leading the two closer to the border of Dawnglow swamp. They find a particularly narrow spot of the river where the pollution seems to have bottlenecked.</desc>
+    <commander id="292" />
+    <deck>
+      <card id="1613" name="Acidic Spider" />
+      <card id="1613" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="6022" />
+      <card id="6015" name="Acidic Sludge" />
+      <card id="2066" name="Basalt Dragon" />
+      <card id="6011" name="Bomb Spirit" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="5093" name="Scaly Newborn" />
+      <card id="6016" mastery_level="2" name="Skeletal Giant" />
+      <card id="6036" mastery_level="3" name="Cursed Ogre" />
+      <card id="5025" mastery_level="4" name="Steelskin Dragon" />
+      <card id="1028" mastery_level="5" name="Heroic Frog" />
+      <card id="1640" mastery_level="6" name="Life Dragon" />
+      <card id="7049" mastery_level="7" name="Boundtoad" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>From the Dawnglow-Golden Crown divide, monsters pour out from the water. They can sense that Cedric and Ursurio have come to stop The Void...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5433</id>
+    <name>Futility</name>
+    <energy>9</energy>
+    <desc>The two continue their fight against the corrupted frogs. The flow of enemies continues...</desc>
+    <commander id="292" />
+    <deck>
+      <card id="1613" name="Acidic Spider" />
+      <card id="1613" />
+      <card id="1010" name="Lightning Elemental" />
+      <card id="1010" />
+      <card id="6011" name="Bomb Spirit" />
+      <card id="2048" name="Sandmite" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="6056" name="Potoo" />
+      <card id="7093" name="Larva Drakes" />
+      <card id="6042" mastery_level="2" name="Shadow of Thunder" />
+      <card id="6015" mastery_level="3" name="Acidic Sludge" />
+      <card id="5069" mastery_level="4" name="Heralidae" />
+      <card id="1328" mastery_level="5" name="Poison Bullfrog" />
+      <card id="5063" mastery_level="6" name="Runic Dragon" />
+      <card id="7052" mastery_level="7" name="Toad the Ravenous" />
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>There are so many of them! How will we cleanse The Void's corruption?</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>We can't.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5434</id>
+    <name>Second Thoughts</name>
+    <energy>9</energy>
+    <desc>Cedric might be a seasoned warrior, but he is still new against fighting The Void. Yet only magical items can completely cleanse The Void's corruption. Ursurio and Cedric possess no such artifacts.</desc>
+    <commander id="281" />
+    <deck>
+      <card id="1613" name="Acidic Spider" />
+      <card id="1613" />
+      <card id="1615" name="Rune Panther" />
+      <card id="1615" />
+      <card id="6010" name="Cliffpass Defender" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="6020" name="Croak Piercer" />
+      <card id="7061" name="Thickskin Dragon" />
+      <card id="7034" mastery_level="2" name="Spore Elk" />
+      <card id="5067" mastery_level="3" name="Squito Roamer" />
+      <card id="5067" mastery_level="4" name="Squito Roamer" />
+      <card id="1328" mastery_level="5" name="Poison Bullfrog" />
+      <card id="6019" mastery_level="6" name="Canopy Horror" />
+      <card id="7018" mastery_level="7" name="Frog Emperor" />
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>What do you mean, we can't cleanse the corruption?! Then why are we here?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5435</id>
+    <name>The Bear and the Boulder</name>
+    <energy>9</energy>
+    <desc>Ursurio lifts a boulder nearly twice his own size! With a great heave, he hurls it onto the divide between Dawnglow and Golden Crown!</desc>
+    <commander id="215" />
+    <deck>
+      <card id="1312" name="Scythe Demon" />
+      <card id="1312" />
+      <card id="1313" name="Lavafrog" />
+      <card id="1313" />
+      <card id="5089" name="Gomblit" />
+      <card id="2031" name="Dryad" />
+      <card id="1631" name="Venom Dragon" />
+      <card id="6020" name="Croak Piercer" />
+      <card id="7010" name="Honeycomb Dragon" />
+      <card id="7029" mastery_level="2" name="Owl Griffin" />
+      <card id="5065" mastery_level="3" name="Hive Guard" />
+      <card id="5025" mastery_level="4" name="Steelskin Dragon" />
+      <card id="1028" mastery_level="5" name="Heroic Frog" />
+      <card id="6052" mastery_level="6" name="Fuming Beast" />
+      <card id="7018" mastery_level="7" name="Frog Emperor" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>We will simply block off the river instead. Watch my back; I'll block it off with this giant boulder.</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>RAAAAWR!</text>
+      </line>
+    </speech>
+  </mission>
 </root>

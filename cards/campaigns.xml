@@ -3647,7 +3647,7 @@
     <id>1102</id>
     <hidden>1</hidden>
     <event_only>1</event_only>
-    <name>Frog Test Campaign</name>
+    <name>The Secret Mission</name>
     <icon id="gold_leaf" bundle="17" />
     <location_id>107</location_id>
     <x>279</x>
@@ -3658,6 +3658,114 @@
       <mission_id>5413</mission_id>
       <mission_id>5414</mission_id>
       <mission_id>5415</mission_id>
+      <mission_id>5416</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1618" />
+      <card level="3" id="1618" />
+      <card level="4" id="2014" />
+      <card level="5" id="1618" />
+      <card level="6" id="1618" />
+      <card level="7" id="512" />
+    </rewards>
+  </campaign>
+  <campaign>
+    <id>1103</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Gold Versus Dawn</name>
+    <icon id="gold_leaf" bundle="17" />
+    <location_id>107</location_id>
+    <x>456</x>
+    <y>202</y>
+    <combatBG>CombatBGEvent004</combatBG>
+    <missions>
+      <mission_id>5417</mission_id>
+      <mission_id>5418</mission_id>
+      <mission_id>5419</mission_id>
+      <mission_id>5420</mission_id>
+      <mission_id>5421</mission_id>
+      <mission_id>5422</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1618" />
+      <card level="3" id="1618" />
+      <card level="4" id="2014" />
+      <card level="5" id="1618" />
+      <card level="6" id="1618" />
+      <card level="7" id="512" />
+    </rewards>
+  </campaign>
+  <campaign>
+    <id>1104</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Tracking the Corruption</name>
+    <icon id="gold_leaf" bundle="17" />
+    <location_id>107</location_id>
+    <x>661</x>
+    <y>437</y>
+    <combatBG>CombatBGEvent004</combatBG>
+    <missions>
+      <mission_id>5423</mission_id>
+      <mission_id>5424</mission_id>
+      <mission_id>5425</mission_id>
+      <mission_id>5426</mission_id>
+      <mission_id>5427</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1618" />
+      <card level="3" id="1618" />
+      <card level="4" id="2014" />
+      <card level="5" id="1618" />
+      <card level="6" id="1618" />
+      <card level="7" id="512" />
+    </rewards>
+  </campaign>
+  <campaign>
+    <id>1105</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Corrupted Waters</name>
+    <icon id="gold_leaf" bundle="17" />
+    <location_id>107</location_id>
+    <x>355</x>
+    <y>446</y>
+    <combatBG>CombatBGEvent004</combatBG>
+    <missions>
+      <mission_id>5428</mission_id>
+      <mission_id>5429</mission_id>
+      <mission_id>5430</mission_id>
+      <mission_id>5431</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1618" />
+      <card level="3" id="1618" />
+      <card level="4" id="2014" />
+      <card level="5" id="1618" />
+      <card level="6" id="1618" />
+      <card level="7" id="512" />
+    </rewards>
+  </campaign>
+  <campaign>
+    <id>1106</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Alternate Plan</name>
+    <icon id="gold_leaf" bundle="17" />
+    <location_id>107</location_id>
+    <x>171</x>
+    <y>475</y>
+    <combatBG>CombatBGEvent004</combatBG>
+    <missions>
+      <mission_id>5428</mission_id>
+      <mission_id>5429</mission_id>
+      <mission_id>5430</mission_id>
+      <mission_id>5431</mission_id>
     </missions>
     <rewards>
       <card level="1" id="510" />

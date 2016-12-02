@@ -568,7 +568,7 @@ var BATTLEGROUNDS = {
     "id": "510",
     "enemy_only": true,
     "scale_with_level": "1",
-    "starting_level": "120",
+    "starting_level": "130",
     "hidden": true,
     "effect": [
       {

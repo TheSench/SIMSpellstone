@@ -2093,7 +2093,7 @@
                   "min_rarity": "4",
                   "max_rarity": "4",
                   "mastery_level": "80",
-                  "remove_mastery_level": "145",
+                  "remove_mastery_level": "135",
                   "type": "9",
                   "set": "1000,2000,3000"
               },
@@ -2101,7 +2101,7 @@
                   "min_rarity": "4",
                   "max_rarity": "4",
                   "mastery_level": "85",
-                  "remove_mastery_level": "145",
+                  "remove_mastery_level": "140",
                   "type": "9",
                   "set": "1000,2000,3000"
               },
@@ -2109,7 +2109,7 @@
                   "min_rarity": "4",
                   "max_rarity": "4",
                   "mastery_level": "90",
-                  "remove_mastery_level": "148",
+                  "remove_mastery_level": "140",
                   "type": "9",
                   "set": "1000,2000,3000"
               },
@@ -2117,7 +2117,7 @@
                   "min_rarity": "4",
                   "max_rarity": "4",
                   "mastery_level": "95",
-                  "remove_mastery_level": "148",
+                  "remove_mastery_level": "145",
                   "type": "9",
                   "set": "1000,2000,3000"
               },

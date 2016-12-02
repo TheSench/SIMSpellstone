@@ -422,7 +422,7 @@
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
-    <starting_level>120</starting_level>
+    <starting_level>130</starting_level>
     <!-- Starting Raid Level -->
     <effect>
       <skill id="heal" x=".2" all="1" />
