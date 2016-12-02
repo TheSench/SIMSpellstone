@@ -1004,6 +1004,7 @@ var SIMULATOR = {};
             var o = get_o(src_card);
 
             var x = skill.x;
+            var faction = skill.y;
             var s = skill.s;
             var mult = skill.mult;
             var all = skill.all;
