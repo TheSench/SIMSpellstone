@@ -124,22 +124,25 @@ var SIMULATOR = {};
         for (var unit_key = 0, unit_len = field_p_assaults.length; unit_key < unit_len; unit_key++) {
             var current_unit = field_p_assaults[unit_key];
 
-            // Check for Dualstrike
-            var dualstrike = current_unit.flurry;
-            if (dualstrike && dualstrike.countdown === 0) {
-                if (current_unit.isActive() && current_unit.hasAttack() && !current_unit.jammed) {
-                    dualstrike.countdown = dualstrike.c;
-                    current_unit.dualstrike_triggered = true;
-                }
-            }
+            if (current_unit.isActive() && current_unit.isUnjammed()) {
 
-            if (current_unit.earlyActivationSkills.length && current_unit.isActive() && current_unit.isUnjammed()) {
+                // Check for Dualstrike
+                var dualstrike = current_unit.flurry;
+                if (dualstrike && dualstrike.countdown === 0) {
+                    // Dual-strike does not activate if unit is frozen or has 0 attack
+                    if (current_unit.hasAttack()) {
+                        dualstrike.countdown = dualstrike.c;
+                        current_unit.dualstrike_triggered = true;
+                    }
+                }
+
                 doEarlyActivationSkills(current_unit);
             }
         }
     };
 
     function doEarlyActivationSkills(source_card) {
+
         var skills = source_card.earlyActivationSkills;
         var len = skills.length;
         if (len == 0) return;
@@ -1827,7 +1830,7 @@ var SIMULATOR = {};
                         echo += debug_name(current_assault) + ' recovers from corrosion<br>';
                     }
                 } else {
-                    var corrosion = Math.min(current_assault.adjustedAttack(), corroded.amount);
+                    var corrosion = Math.min(current_assault.permanentAttack(), corroded.amount);
                     current_assault.attack_corroded = corrosion;
                     if (debug) {
                         echo += debug_name(current_assault) + ' loses ' + corrosion + ' attack to corrosion<br>';

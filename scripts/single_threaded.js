@@ -125,8 +125,11 @@
 
     // Initializes a single simulation - runs once before each individual simulation
     // - needs to reset the decks and fields before each simulation
+    var seedtest = (_GET("seedtest") || 0);
     function run_sim(skipResults) {
-        //Math.seedrandom(3);
+        if (seedtest) {
+            Math.seedrandom(seedtest++);
+        }
         if (!SIMULATOR.simulate()) return false;
         if (!skipResults) SIM_CONTROLLER.processSimResult();
     }

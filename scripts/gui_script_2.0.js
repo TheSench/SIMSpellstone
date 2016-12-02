@@ -18,7 +18,9 @@ $(function () {
     function deckChanged(deckID, newDeck) {
         var $deck = $("#" + deckID);
         $deck.children().remove();
-        $deck.append(CARD_GUI.makeDeckHTML(newDeck));
+        if (!_DEFINED("seedtest")) {
+            $deck.append(CARD_GUI.makeDeckHTML(newDeck));
+        }
     }
     var accordions = $(".accordion").accordion({
         collapsible: true,
