@@ -710,9 +710,7 @@ var SIMULATOR = {};
 
                 affected++;
 
-                target.attack_weaken += weaken;
-                var maxWeaken = target.permanentAttack();
-                if (target.attack_weaken > maxWeaken) target.attack_weaken = maxWeaken;
+                target.attack_weaken += Math.min(weaken, target.adjustedAttack());
                 if (debug) {
                     if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
                     echo += debug_name(src_card) + ' weakens ' + debug_name(target) + ' by ' + weaken + '<br>';
@@ -1437,15 +1435,6 @@ var SIMULATOR = {};
                 }
             }
 
-            var corroded = current_assault.corroded;
-            if (corroded) {
-                var corrosion = Math.min(current_assault.adjustedAttack(), corroded.amount);
-                current_assault.attack_corroded = corrosion;
-                if (debug) {
-                    echo += debug_name(current_assault) + ' loses ' + corrosion + ' attack to corrosion<br>';
-                }
-            }
-
             current_assault.enfeebled = 0;
             current_assault.protected = 0;
             current_assault.barrier_ice = 0;
@@ -1744,25 +1733,14 @@ var SIMULATOR = {};
         }
         // End of Assaults
 
+        field_p_assaults = field_p['assaults'];
+
+        // Remove from your field: Chaos, Jam, Enfeeble, Rally, Weaken, Enhance, Nullify
+        // Process Scorch, Poison, and Corrosion
         processDOTs(field_p_assaults);
 
         // Dead cards are removed from both fields. Cards on both fields all shift over to the left if there are any gaps.
         remove_dead();
-
-        field_p_assaults = field_p['assaults'];
-
-        // Remove from your field: Chaos, Jam, Enfeeble, Rally, Weaken, Enhance, Nullify
-        for (var key = 0, len = field_p_assaults.length; key < len; key++) {
-            var current_assault = field_p_assaults[key];
-
-            current_assault.jammed = false;
-            current_assault.enfeebled = 0;
-            current_assault.attack_rally = 0;
-            current_assault.attack_weaken = 0;
-            current_assault.attack_corroded = 0;
-            current_assault.nullified = 0;
-            current_assault.dualstrike_triggered = false;
-        }
 
         //debug_dump_field(field);
         if (debug) echo += '<u>Turn ' + turn + ' ends</u><br><br></div>';
@@ -1803,9 +1781,16 @@ var SIMULATOR = {};
     }
 
     function processDOTs(field_p_assaults) {
-        // Poison/Scorch damage
+
         for (var key = 0, len = field_p_assaults.length; key < len; key++) {
             var current_assault = field_p_assaults[key];
+
+            current_assault.jammed = false;
+            current_assault.enfeebled = 0;
+            current_assault.attack_rally = 0;
+            current_assault.attack_weaken = 0;
+            current_assault.nullified = 0;
+            current_assault.dualstrike_triggered = false;
 
             var amount = current_assault['poisoned'];
             if (amount) {
@@ -1838,8 +1823,15 @@ var SIMULATOR = {};
                 corroded.timer--;
                 if (corroded.timer === 0) {
                     current_assault.corroded = false;
+                    current_assault.attack_corroded = 0;
                     if (debug) {
                         echo += debug_name(current_assault) + ' recovers from corrosion<br>';
+                    }
+                } else {
+                    var corrosion = Math.min(current_assault.adjustedAttack(), corroded.amount);
+                    current_assault.attack_corroded = corrosion;
+                    if (debug) {
+                        echo += debug_name(current_assault) + ' loses ' + corrosion + ' attack to corrosion<br>';
                     }
                 }
             }

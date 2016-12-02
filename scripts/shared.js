@@ -428,7 +428,7 @@ var makeUnit = (function () {
             var corroded = this.corroded;
             if (corroded) {
                 if (corroded.timer > 1) {
-                    scorch.timer--;
+                    corroded.timer--;
                     var amount = Math.min(corroded.amount, this.permanentAttack());
                     this.attack_corroded = amount
                     echo += debug_name(this) + ' is corroded by ' + amount + '<br/>';
