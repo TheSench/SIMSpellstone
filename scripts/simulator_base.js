@@ -1733,8 +1733,6 @@ var SIMULATOR = {};
         }
         // End of Assaults
 
-        field_p_assaults = field_p['assaults'];
-
         // Remove from your field: Chaos, Jam, Enfeeble, Rally, Weaken, Enhance, Nullify
         // Process Scorch, Poison, and Corrosion
         processDOTs(field_p_assaults);
