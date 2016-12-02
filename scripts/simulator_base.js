@@ -1819,7 +1819,8 @@ var SIMULATOR = {};
             var corroded = current_assault.corroded;
             if (corroded) {
                 corroded.timer--;
-                if (corroded.timer === 0) {
+                // TODO: Is this a bug in the game?
+                if (corroded.timer < 0) {
                     current_assault.corroded = false;
                     current_assault.attack_corroded = 0;
                     if (debug) {
