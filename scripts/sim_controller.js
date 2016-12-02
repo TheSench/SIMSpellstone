@@ -33,6 +33,7 @@ var SIM_CONTROLLER = (function () {
         surge = $('#surge').is(':checked');
         tower_level = $('#tower_level').val();
         tower_type = $('#tower_type').val();
+        /*
         if (!getdeck2) {
             if (getmission) {
                 getdeck2 = MISSIONS[getmission].hash;
@@ -40,6 +41,7 @@ var SIM_CONTROLLER = (function () {
                 getdeck2 = hash_encode(load_deck_raid(getraid, raidlevel));
             }
         }
+        */
         if (BATTLEGROUNDS) {
             getbattleground = getSelectedBattlegrounds();
             selfbges = getSelectedBattlegrounds("self-");

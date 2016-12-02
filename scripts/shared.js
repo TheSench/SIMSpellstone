@@ -1006,7 +1006,7 @@ function copy_skills_2(new_card, original_skills, mult) {
         } else if (mult) {
             var copySkill = copy_skill(newSkill);
             //copySkill.x = ~~(copySkill.x * mult);   // Floor the results
-            copySkill.x = (copySkill.x * mult);
+            copySkill.x = Math.ceil(copySkill.x * mult);
             setSkill_2(new_card, copySkill);
         } else {            // If skill has no timer, we can use the same instance
             setSkill_2(new_card, newSkill);
@@ -1885,7 +1885,12 @@ function load_preset_deck(deckInfo, level, maxLevel) {
 
     var current_deck = [];
     current_deck.deck = [];
-    current_deck.commander = getPresetUnit(getPresetCommander(deckInfo, level), level, maxLevel);   // Set commander to max level
+    var commanderInfo = getPresetCommander(deckInfo, level);
+    var commander = getPresetUnit(commanderInfo, level, maxLevel);   // Set commander to max level
+    if (commanderInfo.possibilities) {
+        commander.randomInfo = { possibilities: commanderInfo.possibilities, level: level, maxLevel: maxLevel };
+    }
+    current_deck.commander = commander;
     upgradePoints -= current_deck.commander.level - 1;
     var presetDeck = deckInfo.deck;
 
@@ -1913,6 +1918,30 @@ function load_preset_deck(deckInfo, level, maxLevel) {
     return current_deck;
 }
 
+function update_preset_deck(deck) {
+
+    var randomizationInfo = deck.commander.randomInfo;
+    if (randomizationInfo) {
+        let possibilities = randomizationInfo.possibilities;
+        let newCommander = ~~(Math.random() * possibilities.length);
+        let unit = getPresetUnit(possibilities[newCommander], randomizationInfo.level, randomizationInfo.maxLevel);
+        unit.randomInfo = randomizationInfo;
+        deck.commander = unit;
+    }
+
+    var cpu_cards = deck.deck;
+    for (let i = 0, len = cpu_cards.length; i < len; i++) {
+        let unit = cpu_cards[i];
+        var randomizationInfo = unit.randomInfo;
+        if (randomizationInfo) {
+            unit = getPresetUnit(randomizationInfo.unitInfo, randomizationInfo.level, randomizationInfo.maxLevel);
+            unit.randomInfo = randomizationInfo;
+            cpu_cards[i] = unit;
+        }
+    }
+    return getDeckCards(deck);
+}
+
 function getPresetCommander(deckInfo, level) {
     level = parseInt(level);
     var commander = deckInfo.commander;
@@ -1928,6 +1957,7 @@ function getPresetCommander(deckInfo, level) {
         }
         var chosen = ~~(Math.random() * possibilities.length)
         commander = possibilities[chosen];
+        commander.possibilities = possibilities;
     }
     return commander;
 }
@@ -1947,8 +1977,10 @@ function getPresetUnit(unitInfo, level, maxLevel) {
     if (unitInfo.remove_mastery_level && level >= parseInt(unitInfo.remove_mastery_level)) return null;
 
     var cardID = unitInfo.id;
+    var random = false;
     if (!cardID) {
         cardID = getRandomCard(unitInfo);
+        random = true;
     }
     var unitLevel = (unitInfo.level || 1);
 
@@ -1961,7 +1993,12 @@ function getPresetUnit(unitInfo, level, maxLevel) {
         unitLevel = Math.min(level, parseInt(loadCard(cardID).rarity) + 2);
     }
 
-    return makeUnitInfo(cardID, unitLevel);
+    var unit = makeUnitInfo(cardID, unitLevel);
+
+    if (random) {
+        unit.randomInfo = { unitInfo: unitInfo, level: level, maxLevel: maxLevel };
+    }
+    return unit;
 }
 
 function getRandomCard(unitInfo) {
