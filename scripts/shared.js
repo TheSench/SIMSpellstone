@@ -734,8 +734,7 @@ var makeUnit = (function () {
 }());
 
 
-var getEnhancement = function (card, s)
-{
+var getEnhancement = function (card, s) {
     var enhancements = card.enhanced;
     return (enhancements ? (enhancements[s] || 0) : 0);
 };

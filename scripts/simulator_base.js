@@ -100,8 +100,7 @@ var SIMULATOR = {};
         }
     };
 
-
-     function iceshatter(src_card) {
+    function iceshatter(src_card) {
         // Bug 27391 - If Barrier is partially reduced before being completely depleted, Iceshatter still deals full damage
         var amount = src_card.barrier_ice;
         //if (amount > src_card.barrier_ice) amount = src_card.barrier_ice;
@@ -129,7 +128,7 @@ var SIMULATOR = {};
                 // Check for Dualstrike
                 var dualstrike = current_unit.flurry;
                 if (dualstrike && dualstrike.countdown === 0) {
-                    // Dual-strike does not activate if unit is frozen or has 0 attack
+                    // Dual-strike does not activate if unit has 0 attack
                     if (current_unit.hasAttack()) {
                         dualstrike.countdown = dualstrike.c;
                         current_unit.dualstrike_triggered = true;
@@ -535,7 +534,6 @@ var SIMULATOR = {};
 
                 var frost_damage = frost;
 
-
                 // Check Protect/Enfeeble
                 var enfeeble = 0;
                 if (target['enfeebled']) enfeeble = target['enfeebled'];
@@ -629,6 +627,7 @@ var SIMULATOR = {};
 
             for (var key = 0, len = targets.length; key < len; key++) {
                 var target = field_x_assaults[targets[key]];
+
                 // Check Evade
                 if (target['invisible']) {
                     target['invisible']--;
@@ -943,6 +942,7 @@ var SIMULATOR = {};
                         if (debug) echo += debug_name(src_card) + ' throws a bomb at ' + debug_name(target) + ' but it is invisible!<br>';
                         continue;
                     }
+
                     affected++;
 
                     var strike_damage = strike;
@@ -1003,10 +1003,10 @@ var SIMULATOR = {};
             var p = get_p(src_card);
             var o = get_o(src_card);
 
-            var x = skill['x'];
-            var s = skill['s'];
-            var mult = skill['mult'];
-            var all = skill['all'];
+            var x = skill.x;
+            var s = skill.s;
+            var mult = skill.mult;
+            var all = skill.all;
 
             var field_p_assaults = field[p]['assaults'];
             var require_active_turn = (s != 'counter' && s != 'counterburn' && s != 'armored' && s != 'evade');
@@ -1713,7 +1713,7 @@ var SIMULATOR = {};
                 // Check attack
                 // - check rally and weaken
                 if (!current_assault.hasAttack()) {
-                    if (debug && current_assault['attack_weaken']) echo += debug_name(current_assault) + ' is weakened and cannot attack<br>';
+                    if (debug && current_assault.permanentAttack() > 0) echo += debug_name(current_assault) + ' is weakened and cannot attack<br>';
                     continue;
                 }
 
@@ -2071,7 +2071,7 @@ var SIMULATOR = {};
 
             // Berserk
             // - Must have done some damage to an assault unit
-            if (damage > 0 && current_assault.berserk && current_assault.isAlive()) {
+            if (current_assault.berserk && current_assault.isAlive()) {
 
                 var berserk = current_assault.berserk;
                 var enhanced = getEnhancement(target, 'berserk');
