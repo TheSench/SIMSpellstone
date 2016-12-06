@@ -656,6 +656,10 @@ var makeUnit = (function () {
             return (this.adjustedAttack() > 0);
         },
 
+        attackPlusBuffs: function () {
+            return (this.attack + this.attack_rally + this.attack_berserk + this.attack_valor);
+        },
+
         adjustedAttack: function () {
             return (this.attack + this.attack_rally + this.attack_berserk + this.attack_valor - this.attack_weaken - this.attack_corroded);
         },
