@@ -1186,11 +1186,10 @@ var SIMULATOR = {};
         }
 
         // Load enemy deck
-        if (getmission) {
+        if (getmission && missionlevel > 1 && missionlevel < 7) {
             cache_cpu_deck = load_deck_mission(getmission, missionlevel);
             cache_cpu_deck_cards = getDeckCards(cache_cpu_deck);
-        }
-        else if (getraid) {
+        } else if (getraid) {
             cache_cpu_deck = load_deck_raid(getraid, raidlevel);
             cache_cpu_deck_cards = getDeckCards(cache_cpu_deck);
         }

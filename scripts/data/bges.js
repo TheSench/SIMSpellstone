@@ -686,6 +686,11 @@ var BATTLEGROUNDS = {
       },
     ]
   },
+  "514": {
+    "name": "The Arena",
+    "id": "514",
+    "hidden": true,
+  },
   "10001": {
     "name": "Primal Mending",
     "id": "10001",
