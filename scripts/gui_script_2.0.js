@@ -34,7 +34,7 @@ $(function () {
         var raidlevel = $('#raid_level');
         if (selectedRaid) {
             newDeck = load_deck_raid(selectedRaid, raidlevel.val());
-            if (RAIDS[selectedRaid].type === "dungeon") {
+            if (RAIDS[selectedRaid].type === "Dungeon") {
                 raidlevel.attr("max", 150);
             } else {
                 raidlevel.attr("max", 40);
@@ -50,11 +50,12 @@ $(function () {
         $("#mission").change();
     });
 
-    $("#mission").change(function () {
+    $("#mission, #mission_level").change(function () {
         var newDeck;
-        if (this.value) {
-            var missionLevel = document.getElementById('mission_level').value;
-            newDeck = load_deck_mission(this.value, missionLevel);
+        var missionID = $('#mission').val();
+        if (missionID) {
+            var missionLevel = $('#mission_level').val();
+            newDeck = load_deck_mission(missionID, missionLevel);
         } else {
             newDeck = hash_decode('');
         }

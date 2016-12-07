@@ -4849,7 +4849,7 @@
       <gold>800</gold>
     </reward>
   </achievement>
-  <!-- Event 18 -->
+  <!-- Event 18 dragons -->
   <achievement>
     <id>3166</id>
     <type>2</type>
@@ -4999,6 +4999,162 @@
     <achievement_req>3174</achievement_req>
     <req>
       <campaign>1101</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- Event 19 -->
+  <achievement>
+    <id>3176</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Secret Mission</name>
+    <desc>Complete the 'The Secret Mission' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1102</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3177</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Secret Mission</name>
+    <desc>Complete the 'The Secret Mission' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3176</achievement_req>
+    <req>
+      <campaign>1102</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3178</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Gold Versus Dawn</name>
+    <desc>Complete the 'Gold Versus Dawn' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1103</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3179</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Gold Versus Dawn</name>
+    <desc>Complete the 'Gold Versus Dawn' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3178</achievement_req>
+    <req>
+      <campaign>1103</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3180</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Tracking the Corruption</name>
+    <desc>Complete the 'Tracking the Corruption' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1104</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3181</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Tracking the Corruption</name>
+    <desc>Complete the 'Tracking the Corruption' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3180</achievement_req>
+    <req>
+      <campaign>1104</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3182</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Corrupted Waters</name>
+    <desc>Complete the 'Corrupted Waters' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1105</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3183</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Corrupted Waters</name>
+    <desc>Complete the 'Corrupted Waters' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3182</achievement_req>
+    <req>
+      <campaign>1105</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3184</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Alternate Plan</name>
+    <desc>Complete the 'Alternate Plan' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1106</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3185</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Alternate Plan</name>
+    <desc>Complete the 'Alternate Plan' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3184</achievement_req>
+    <req>
+      <campaign>1106</campaign>
       <level>7</level>
     </req>
     <reward>

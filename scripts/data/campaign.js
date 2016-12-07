@@ -768,7 +768,7 @@ var CAMPAIGNS = {
     "name": "Alternate Plan",
     "location_id": "107",
     "side_mission": "",
-    "missions": ["5428","5429","5430","5431"]
+    "missions": ["5432","5433","5434","5435"]
   },
   "1054": {
     "id": "1054",
@@ -33593,7 +33593,7 @@ var MISSIONS = {
     "id": "5412",
     "name": "Love of a Mother",
     "commander": {
-        "id": "249"
+        "id": "292"
     },
     "deck": [
       {
@@ -33653,7 +33653,7 @@ var MISSIONS = {
     "id": "5413",
     "name": "Second Celebration",
     "commander": {
-        "id": "232"
+        "id": "316"
     },
     "deck": [
       {
@@ -33713,7 +33713,7 @@ var MISSIONS = {
     "id": "5414",
     "name": "Original Purpose",
     "commander": {
-        "id": "249"
+        "id": "319"
     },
     "deck": [
       {
@@ -33773,7 +33773,7 @@ var MISSIONS = {
     "id": "5415",
     "name": "Secrets",
     "commander": {
-        "id": "290"
+        "id": "327"
     },
     "deck": [
       {
@@ -34073,7 +34073,7 @@ var MISSIONS = {
     "id": "5420",
     "name": "Dawnglow Frenzy",
     "commander": {
-        "id": "290"
+        "id": "249"
     },
     "deck": [
       {
@@ -34193,7 +34193,7 @@ var MISSIONS = {
     "id": "5422",
     "name": "Unfamiliar Battleground",
     "commander": {
-        "id": "215"
+        "id": "228"
     },
     "deck": [
       {
@@ -34853,7 +34853,7 @@ var MISSIONS = {
     "id": "5433",
     "name": "Futility",
     "commander": {
-        "id": "292"
+        "id": "290"
     },
     "deck": [
       {
@@ -34913,7 +34913,7 @@ var MISSIONS = {
     "id": "5434",
     "name": "Second Thoughts",
     "commander": {
-        "id": "281"
+        "id": "290"
     },
     "deck": [
       {
@@ -34973,7 +34973,7 @@ var MISSIONS = {
     "id": "5435",
     "name": "The Bear and the Boulder",
     "commander": {
-        "id": "215"
+        "id": "220"
     },
     "deck": [
       {

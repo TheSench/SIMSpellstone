@@ -12494,7 +12494,7 @@
     <name>Love of a Mother</name>
     <energy>9</energy>
     <desc>Cedric and Ursurio leave the Avian territory, heading back to Golden Crown, to return Frobert to his home. The Mayor of Golden Crown is overjoyed to have her son back.</desc>
-    <commander id="249" />
+    <commander id="292" />
     <deck>
       <card id="1015" name="Windfrog" />
       <card id="1015" />
@@ -12530,7 +12530,7 @@
     <name>Second Celebration</name>
     <energy>9</energy>
     <desc>The frogs are prepared to hold a feast all over again, to celebrate the safe return of Frobert. However, Cedric insists that they must be on their way, despite Ursurio's temptation to stay.</desc>
-    <commander id="232" />
+    <commander id="316" />
     <deck>
       <card id="1610" name="Ranger" />
       <card id="1610" />
@@ -12554,7 +12554,7 @@
     <name>Original Purpose</name>
     <energy>9</energy>
     <desc>Cedric reminds the Golden Crown leader their original mission for coming there. The citizens of Dawnglow watch tearfully as their hero prepares to leave on his journey.</desc>
-    <commander id="249" />
+    <commander id="319" />
     <deck>
       <card id="1311" name="Molten Skeleton" />
       <card id="1311" />
@@ -12590,7 +12590,7 @@
     <name>Secrets</name>
     <energy>9</energy>
     <desc>The Golden Crown Mayor bites her lip anxiously. She looks around secretively, as if making sure no one else will hear her words.</desc>
-    <commander id="290" />
+    <commander id="327" />
     <deck>
       <card id="1012" name="Cloud Sylph" />
       <card id="1012" />
@@ -12696,7 +12696,7 @@
       <line>
         <commander>frogscout</commander>
         <enemy>1</enemy>
-        <text> Foolish Goldie frogs! We'll show you how a Dawnglow fights!</text>
+        <text>Foolish Goldie frogs! We'll show you how a Dawnglow fights!</text>
       </line>
     </speech>
   </mission>
@@ -12746,7 +12746,7 @@
     <name>Dawnglow Frenzy</name>
     <energy>9</energy>
     <desc>Ursurio realizes that the attacking frogs are familiar. He tries to quell the enemies' desire to fight...</desc>
-    <commander id="290" />
+    <commander id="249" />
     <deck>
       <card id="1618" name="Frog Scout" />
       <card id="1618" />
@@ -12806,7 +12806,7 @@
     <name>Unfamiliar Battleground</name>
     <energy>9</energy>
     <desc>Cedric is unfamiliar with how The Void's influence works, but Ursurio can spot the telltale signs. They will need to quell the angry frogs before they can focus on the corruption's source.</desc>
-    <commander id="215" />
+    <commander id="228" />
     <deck>
       <card id="1618" name="Frog Scout" />
       <card id="1618" />
@@ -13117,7 +13117,7 @@
     <id>5432</id>
     <name>Resistance</name>
     <energy>9</energy>
-    <desc>The river twists and turns, leading the two closer to the border of Dawnglow swamp. They find a particularly narrow spot of the river where the pollution seems to have bottlenecked.</desc>
+    <desc>From the Dawnglow-Golden Crown divide, monsters pour out from the water. They can sense that Cedric and Ursurio have come to stop The Void...</desc>
     <commander id="292" />
     <deck>
       <card id="1613" name="Acidic Spider" />
@@ -13136,20 +13136,13 @@
       <card id="1640" mastery_level="6" name="Life Dragon" />
       <card id="7049" mastery_level="7" name="Boundtoad" />
     </deck>
-    <speech>
-      <line>
-        <commander>bearcommander</commander>
-        <enemy>0</enemy>
-        <text>From the Dawnglow-Golden Crown divide, monsters pour out from the water. They can sense that Cedric and Ursurio have come to stop The Void...</text>
-      </line>
-    </speech>
   </mission>
   <mission>
     <id>5433</id>
     <name>Futility</name>
     <energy>9</energy>
     <desc>The two continue their fight against the corrupted frogs. The flow of enemies continues...</desc>
-    <commander id="292" />
+    <commander id="290" />
     <deck>
       <card id="1613" name="Acidic Spider" />
       <card id="1613" />
@@ -13185,7 +13178,7 @@
     <name>Second Thoughts</name>
     <energy>9</energy>
     <desc>Cedric might be a seasoned warrior, but he is still new against fighting The Void. Yet only magical items can completely cleanse The Void's corruption. Ursurio and Cedric possess no such artifacts.</desc>
-    <commander id="281" />
+    <commander id="290" />
     <deck>
       <card id="1613" name="Acidic Spider" />
       <card id="1613" />
@@ -13216,7 +13209,7 @@
     <name>The Bear and the Boulder</name>
     <energy>9</energy>
     <desc>Ursurio lifts a boulder nearly twice his own size! With a great heave, he hurls it onto the divide between Dawnglow and Golden Crown!</desc>
-    <commander id="215" />
+    <commander id="220" />
     <deck>
       <card id="1312" name="Scythe Demon" />
       <card id="1312" />

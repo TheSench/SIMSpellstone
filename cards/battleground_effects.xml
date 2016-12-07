@@ -475,6 +475,17 @@
       <skill id="enhance" s="burn" mult="0.5" all="1" />
     </effect>
   </battleground>
+  <battleground>
+    <id>514</id>
+    <name>The Arena</name>
+    <desc>In Arena Battles, the player who goes first has one additional Delay added to the first card they play in a battle.</desc>
+    <icon>filter_insect_64.png</icon>
+    <effect>
+      <on_play first_play="1" attacker="1">
+        <add_skill id="slow" x="1" />
+      </on_play>
+    </effect>
+  </battleground>
   <!-- 1001+: Personal BGE -->
   <battleground>
     <id>10001</id>

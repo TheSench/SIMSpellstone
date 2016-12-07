@@ -1,8 +1,9 @@
 ﻿var RAIDS = {
     "24002": {
         "id": "24002",
-        "type": "raid",
+        "type": "Raid",
         "name": "Nethergore Raid (Old)",
+        "upgradeLevels": "25",
         "bge": "504",
         "commander": {
             "id": "279"
@@ -194,8 +195,9 @@
     },
     "1505": {
         "id": "1505",
-        "type": "raid",
+        "type": "Raid",
         "name": "Frostbite Raid (Old)",
+        "upgradeLevels": "25",
         "commander": {
             "id": "253"
         },
@@ -266,8 +268,9 @@
     },
     "24003": {
         "id": "24003",
-        "type": "raid",
+        "type": "Raid",
         "name": "Fortune's Favor Raid (Old)",
+        "upgradeLevels": "25",
         "bge": "505",
         "commander": {
             "id": "309"
@@ -459,8 +462,9 @@
     },
     "24004": {
         "id": "24004",
-        "type": "raid",
+        "type": "Raid",
         "name": "Frostbite Raid",
+        "upgradeLevels": "25",
         "bge": "503",
         "commander": {
             "id": "253"
@@ -652,8 +656,9 @@
     },
     "24005": {
         "id": "24005",
-        "type": "raid",
+        "type": "Raid",
         "name": "Fortune's Favor Raid",
+        "upgradeLevels": "25",
         "bge": "505",
         "commander": {
             "id": "309"
@@ -845,7 +850,9 @@
     },
     "24006": {
         "id": "24006",
+        "type": "Raid",
         "name": "Nethergore Raid",
+        "upgradeLevels": "25",
         "bge": "504",
         "commander": {
             "id": "279"
@@ -1037,9 +1044,10 @@
     },
     "28001": {
         "id": "28001",
-        "type": "dungeon",
+        "type": "Dungeon",
         "name": "Underhill Dungeon",
         "bge": "510",
+        "upgradeLevels": "100",
         "commander": {
             "card": [
               {
@@ -1416,8 +1424,10 @@
     },
     "28002": {
         "id": "28002",
+        "type": "Dungeon",
         "name": "Sludge Depth Dungeon",
         "bge": "510",
+        "upgradeLevels": "100",
         "commander": {
             "card": [
               {
@@ -1809,8 +1819,10 @@
     },
     "28003": {
         "id": "28003",
+        "type": "Dungeon",
         "name": "Ice Tunnel Dungeon",
         "bge": "510",
+        "upgradeLevels": "100",
         "commander": {
             "card": [
               {

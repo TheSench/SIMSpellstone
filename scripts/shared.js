@@ -1860,53 +1860,58 @@ function clean_name_for_matching(name) {
 function load_deck_mission(id, level) {
     var missionInfo = MISSIONS[id];
     if (missionInfo) {
-        return load_preset_deck(missionInfo, level, 7);
+        return load_preset_deck(missionInfo, level, 6);
     } else {
         return 0;
     }
 }
 
-function load_deck_raid(id, level, maxLevel) {
-    if (!maxLevel) maxLevel = 25;
+function load_deck_dungeon(id, level) {
+    return load_deck_raid(id, level, 101)
+}
+
+function load_deck_raid(id, level, maxedAt) {
+    if (!maxedAt) maxedAt = 25;
     var raidInfo = RAIDS[id];
     if (raidInfo) {
         var newRaidInfo = {
             commander: raidInfo.commander,
             deck: raidInfo.deck.card
         }
-        return load_preset_deck(newRaidInfo, level, maxLevel);
+        return load_preset_deck(newRaidInfo, level, Number(raidInfo.upgradeLevels));
     } else {
         return 0;
     }
 }
 
 var DoNotFuse = ["8005", "8006", "8007", "8008", "8009", "8010"];
-function load_preset_deck(deckInfo, level, maxLevel) {
+function load_preset_deck(deckInfo, level, upgradeLevels) {
 
-    if (!level) level = maxLevel;
-    var upgradePoints = getUpgradePoints(level, 7);
+    var maxedAt = upgradeLevels + 1;
+    if (!level) level = maxedAt;
 
     var current_deck = [];
     current_deck.deck = [];
     var commanderInfo = getPresetCommander(deckInfo, level);
-    var commander = getPresetUnit(commanderInfo, level, maxLevel);   // Set commander to max level
+    var commander = getPresetUnit(commanderInfo, level, maxedAt);   // Set commander to max level
     if (commanderInfo.possibilities) {
-        commander.randomInfo = { possibilities: commanderInfo.possibilities, level: level, maxLevel: maxLevel };
+        commander.randomInfo = { possibilities: commanderInfo.possibilities, level: level, maxedAt: maxedAt };
     }
     current_deck.commander = commander;
-    upgradePoints -= current_deck.commander.level - 1;
     var presetDeck = deckInfo.deck;
 
     var deck = current_deck.deck;
     for (var current_key in presetDeck) {
         var unitInfo = presetDeck[current_key];
-        var unit = getPresetUnit(unitInfo, level, maxLevel);
+        var unit = getPresetUnit(unitInfo, level, maxedAt);
         if (unit) {
             deck.push(unit);
         }
     }
 
-    if (level > 1 && level < maxLevel) {
+    var maxUpgradePoints = getMaxUpgradePoints(deck);
+    var upgradePoints = getUpgradePoints(level, maxedAt, maxUpgradePoints);
+    if (level > 1 && level < maxedAt) {
         var canFuse = deck.slice();
         while (upgradePoints > 0 && canFuse.length > 0) {
             var index = Math.floor(Math.random() * canFuse.length);
@@ -1927,7 +1932,7 @@ function update_preset_deck(deck) {
     if (randomizationInfo) {
         let possibilities = randomizationInfo.possibilities;
         let newCommander = ~~(Math.random() * possibilities.length);
-        let unit = getPresetUnit(possibilities[newCommander], randomizationInfo.level, randomizationInfo.maxLevel);
+        let unit = getPresetUnit(possibilities[newCommander], randomizationInfo.level, randomizationInfo.maxedAt);
         unit.randomInfo = randomizationInfo;
         deck.commander = unit;
     }
@@ -1937,7 +1942,7 @@ function update_preset_deck(deck) {
         let unit = cpu_cards[i];
         var randomizationInfo = unit.randomInfo;
         if (randomizationInfo) {
-            unit = getPresetUnit(randomizationInfo.unitInfo, randomizationInfo.level, randomizationInfo.maxLevel);
+            unit = getPresetUnit(randomizationInfo.unitInfo, randomizationInfo.level, randomizationInfo.maxedAt);
             unit.randomInfo = randomizationInfo;
             cpu_cards[i] = unit;
         }
@@ -1953,8 +1958,8 @@ function getPresetCommander(deckInfo, level) {
         for (var i = 0; i < commander.card.length; i++) {
             var card = commander.card[i];
             var minLevel = parseInt(card.min_mastery_level) || 0;
-            var maxLevel = parseInt(card.max_mastery_level) || 999;
-            if (level >= minLevel && level <= maxLevel) {
+            var maxedAt = parseInt(card.max_mastery_level) || 999;
+            if (level >= minLevel && level <= maxedAt) {
                 possibilities.push(card);
             }
         }
@@ -1965,16 +1970,50 @@ function getPresetCommander(deckInfo, level) {
     return commander;
 }
 
-function getUpgradePoints(level, pointsPer) {
-    var points = 0;
-    for (var i = 2; i <= level; i++) {
-        if (i % 3 == 0) pointsPer++;
-        points += pointsPer;
+function getUpgradePoints(level, maxedAt, maxUpgradePoints) {
+    var percentComplete;
+    if (maxedAt == 7) {
+        percentComplete = (level - 1) / (maxedAt - 1);
+    } else {
+        percentComplete = (level / maxedAt);
     }
+    var points = Math.ceil(maxUpgradePoints * percentComplete);
     return points;
 }
 
-function getPresetUnit(unitInfo, level, maxLevel) {
+function getMaxUpgradePoints(deck) {
+    var maxUpgradePoints = 0;
+    for (var i = 0; i < deck.length; i++) {
+        var unit = deck[i];
+        var card = get_card_by_id(unit);
+        var maxFusions = getMaxFusions(card);
+        var maxLevel = card.maxLevel;
+        maxUpgradePoints += ((maxFusions + 1) * maxLevel - 1);
+    }
+    return maxUpgradePoints;
+}
+
+function getMaxFusions(unit) {
+    var id = baseFusion(unit);
+    var fusion = -1;
+    while (typeof id !== "undefined") {
+        fusion++;
+        id = FUSIONS[id];
+    }
+    return fusion;
+}
+
+function baseFusion(unit) {
+    var baseID = unit.id;
+    var id;
+    do {
+        id = baseID;
+        baseID = REVERSE_FUSIONS[id];
+    } while (typeof baseID !== "undefined")
+    return id;
+}
+
+function getPresetUnit(unitInfo, level, maxedAt) {
     level = parseInt(level);
     if (unitInfo.mastery_level && level < parseInt(unitInfo.mastery_level)) return null;
     if (unitInfo.remove_mastery_level && level >= parseInt(unitInfo.remove_mastery_level)) return null;
@@ -1987,7 +2026,7 @@ function getPresetUnit(unitInfo, level, maxLevel) {
     }
     var unitLevel = (unitInfo.level || 1);
 
-    if (level >= maxLevel) {
+    if (level >= maxedAt) {
         unitLevel = 7;
         if (canFuse(cardID)) {
             cardID = fuseCard(cardID);
@@ -1999,7 +2038,7 @@ function getPresetUnit(unitInfo, level, maxLevel) {
     var unit = makeUnitInfo(cardID, unitLevel);
 
     if (random) {
-        unit.randomInfo = { unitInfo: unitInfo, level: level, maxLevel: maxLevel };
+        unit.randomInfo = { unitInfo: unitInfo, level: level, maxedAt: maxedAt };
     }
     return unit;
 }
@@ -2064,7 +2103,6 @@ function fuseCard(cardID, fusion) {
             for (var i = 0; i < fusion; i++) {
                 cardID = doFuseCard(cardID);
             }
-
         // Max fusion
         } else {
             while(true) {

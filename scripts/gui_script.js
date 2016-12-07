@@ -103,10 +103,13 @@ $(function () {
     var missionID = _GET('mission');
     var raidID = _GET('raid');
     if (campaignID) $('#campaign').val(campaignID).change();
-    if (missionID) $('#mission').val(missionID).change();
+    if (missionID) {
+        $('#mission_level').val(_GET('mission_level') || 7);
+        $('#mission').val(missionID).change();
+    }
     if (raidID) {
-        $('#raid').val(raidID).change();
         $('#raid_level').val(_GET('raid_level') || 25);
+        $('#raid').val(raidID).change();
     }
 
     var bges = _GET('bges');
@@ -436,6 +439,7 @@ function generate_link(autostart) {
 
     addValueParam(parameters, "campaign");
     addValueParam(parameters, "mission");
+    addValueParam(parameters, "mission_level");
     addValueParam(parameters, "raid");
     addValueParam(parameters, "raid_level");
 
