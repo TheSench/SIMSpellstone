@@ -74,6 +74,7 @@ function initializeSims(params) {
     getexactorder = params['getexactorder'];
     getexactorder2 = params['getexactorder2'];
     getmission = params['getmission'];
+    missionlevel = params['missionlevel'];
     getraid = params['getraid'];
     getclash = params['getclash'];
     raidlevel = params['raidlevel'];

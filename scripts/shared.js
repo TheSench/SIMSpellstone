@@ -1866,10 +1866,6 @@ function load_deck_mission(id, level) {
     }
 }
 
-function load_deck_dungeon(id, level) {
-    return load_deck_raid(id, level, 101)
-}
-
 function load_deck_raid(id, level, maxedAt) {
     if (!maxedAt) maxedAt = 25;
     var raidInfo = RAIDS[id];

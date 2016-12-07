@@ -1186,12 +1186,13 @@ var SIMULATOR = {};
         }
 
         // Load enemy deck
-        if (getraid) {
-            cache_cpu_deck_cards = update_preset_deck(cache_cpu_deck);
-            /*
+        if (getmission) {
+            cache_cpu_deck = load_deck_mission(getmission, missionlevel);
+            cache_cpu_deck_cards = getDeckCards(cache_cpu_deck);
+        }
+        else if (getraid) {
             cache_cpu_deck = load_deck_raid(getraid, raidlevel);
             cache_cpu_deck_cards = getDeckCards(cache_cpu_deck);
-            */
         }
         if (cache_cpu_deck_cards) {
             deck['cpu'] = copy_deck(cache_cpu_deck_cards);
@@ -1272,7 +1273,7 @@ var SIMULATOR = {};
         } else if (getcardlist2) {
             cache_cpu_deck = load_deck_from_cardlist(getcardlist2);
         } else if (getmission) {
-            cache_cpu_deck = load_deck_mission(getmission);
+            cache_cpu_deck = load_deck_mission(getmission, missionlevel);
             pvpAI = false;    // PvE decks do not use "Smart AI"
         } else if (getraid) {
             cache_cpu_deck = load_deck_raid(getraid, raidlevel);
