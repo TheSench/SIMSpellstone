@@ -11382,8 +11382,8 @@
     <card_type>2</card_type>
     <name>Webfoot Surfer</name>
     <picture>Frog_Surfer_A</picture>
-    <asset_bundle>1481821200</asset_bundle>
-    <hidden_until_time>79</hidden_until_time>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1481821200</hidden_until_time>
     <attack>4</attack>
     <health>8</health>
     <cost>2</cost>
@@ -11424,8 +11424,8 @@
     <fusion_level>1</fusion_level>
     <name>Treetrunk Surfer</name>
     <picture>Frog_Surfer_A</picture>
-    <asset_bundle>1481821200</asset_bundle>
-    <hidden_until_time>79</hidden_until_time>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1481821200</hidden_until_time>
     <attack>5</attack>
     <health>13</health>
     <cost>2</cost>
@@ -11465,8 +11465,8 @@
     <fusion_level>2</fusion_level>
     <name>Sharktooth Surfer</name>
     <picture>Frog_Surfer_B</picture>
-    <asset_bundle>1481821200</asset_bundle>
-    <hidden_until_time>79</hidden_until_time>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1481821200</hidden_until_time>
     <attack>6</attack>
     <health>18</health>
     <cost>2</cost>
@@ -11508,16 +11508,17 @@
     <card_type>2</card_type>
     <name>Redclaw Tamer</name>
     <picture>Frog_Riding_Lobster_A</picture>
-    <asset_bundle>1481821200</asset_bundle>
-    <hidden_until_time>79</hidden_until_time>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1481821200</hidden_until_time>
     <attack>3</attack>
     <health>5</health>
     <cost>1</cost>
     <rarity>3</rarity>
     <skill id="burn" x="1" />
     <skill id="nullify" x="1" />
-    <type>3</type>
+    <type>2</type>
     <sub_type>4</sub_type>
+    <sub_type>12</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
@@ -11546,10 +11547,10 @@
     <id>12070</id>
     <card_type>2</card_type>
     <fusion_level>1</fusion_level>
-    <name>Redclaw Rider</name>
+    <name>Redclaw Traveler</name>
     <picture>Frog_Riding_Lobster_A</picture>
-    <asset_bundle>1481821200</asset_bundle>
-    <hidden_until_time>79</hidden_until_time>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1481821200</hidden_until_time>
     <attack>4</attack>
     <health>10</health>
     <cost>1</cost>
@@ -11557,8 +11558,9 @@
     <skill id="corrosive" x="1" />
     <skill id="burn" x="2" />
     <skill id="nullify" x="1" />
-    <type>3</type>
+    <type>2</type>
     <sub_type>4</sub_type>
+    <sub_type>12</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
@@ -11587,10 +11589,10 @@
     <id>22070</id>
     <card_type>2</card_type>
     <fusion_level>2</fusion_level>
-    <name>Redclaw Jockey</name>
+    <name>Redclaw Rider</name>
     <picture>Frog_Riding_Lobster_B</picture>
-    <asset_bundle>1481821200</asset_bundle>
-    <hidden_until_time>79</hidden_until_time>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1481821200</hidden_until_time>
     <attack>6</attack>
     <health>14</health>
     <cost>1</cost>
@@ -11598,8 +11600,9 @@
     <skill id="corrosive" x="2" />
     <skill id="burn" x="2" />
     <skill id="nullify" x="2" />
-    <type>3</type>
+    <type>2</type>
     <sub_type>4</sub_type>
+    <sub_type>12</sub_type>
     <set>2000</set>
     <upgrade>
       <level>2</level>
@@ -11629,8 +11632,8 @@
     <card_type>2</card_type>
     <name>Sproutfrog Rainwisher</name>
     <picture>Rainbringer_A</picture>
-    <asset_bundle>1481821200</asset_bundle>
-    <hidden_until_time>79</hidden_until_time>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1481821200</hidden_until_time>
     <attack>4</attack>
     <health>10</health>
     <cost>2</cost>
@@ -11677,8 +11680,8 @@
     <fusion_level>1</fusion_level>
     <name>Sproutfrog Rainbringer</name>
     <picture>Rainbringer_A</picture>
-    <asset_bundle>1481821200</asset_bundle>
-    <hidden_until_time>79</hidden_until_time>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1481821200</hidden_until_time>
     <attack>4</attack>
     <health>16</health>
     <cost>2</cost>
@@ -11725,8 +11728,8 @@
     <fusion_level>2</fusion_level>
     <name>Sproutfrog Stormchaser</name>
     <picture>Rainbringer_B</picture>
-    <asset_bundle>1481821200</asset_bundle>
-    <hidden_until_time>79</hidden_until_time>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1481821200</hidden_until_time>
     <attack>5</attack>
     <health>21</health>
     <cost>2</cost>
@@ -23956,8 +23959,8 @@
     <card_type>2</card_type>
     <name>Mother of Solars</name>
     <picture>Frog_Space_Mom_A</picture>
-    <asset_bundle>1481821200</asset_bundle>
-    <hidden_until_time>79</hidden_until_time>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1481821200</hidden_until_time>
     <attack>4</attack>
     <health>14</health>
     <cost>3</cost>
@@ -24004,8 +24007,8 @@
     <fusion_level>1</fusion_level>
     <name>Mother of Galaxies</name>
     <picture>Frog_Space_Mom_A</picture>
-    <asset_bundle>1481821200</asset_bundle>
-    <hidden_until_time>79</hidden_until_time>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1481821200</hidden_until_time>
     <attack>4</attack>
     <health>20</health>
     <cost>3</cost>
@@ -24052,8 +24055,8 @@
     <fusion_level>2</fusion_level>
     <name>Mother of the Universe</name>
     <picture>Frog_Space_Mom_B</picture>
-    <asset_bundle>1481821200</asset_bundle>
-    <hidden_until_time>79</hidden_until_time>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1481821200</hidden_until_time>
     <attack>4</attack>
     <health>26</health>
     <cost>3</cost>
