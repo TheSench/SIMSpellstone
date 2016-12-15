@@ -28,8 +28,8 @@ var DATA_UPDATER = (function () {
                     var id = getValue(units[i], "id");
                     if (!CARDS[id]) {
                         newCards[id] = true;
-                        CARDS[id] = getUnitFromXML(units[i]);
                     }
+                    CARDS[id] = getUnitFromXML(units[i]);
                 }
                 if (Object.keys(newCards).length > 0) {
                     spoilers = newCards;
@@ -48,7 +48,7 @@ var DATA_UPDATER = (function () {
         var unit = {
             id: getValue(node, "id"),
             name: getValue(node, "name"),
-            picture: "NotFound",
+            picture: getValue(node, "picture") || getValue(node, "portrait") || getValue(node, "asset_prefab") || "NotFound",
             rarity: getValue(node, "rarity"),
             set: getValue(node, "set"),
             card_type: getValue(node, "card_type"),
