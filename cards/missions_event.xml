@@ -13240,4 +13240,215 @@
       </line>
     </speech>
   </mission>
+  <mission>
+    <id>5436</id>
+    <name>Bah</name>
+    <energy>1</energy>
+    <desc>It's the time of year where everyone gives presents, sings songs, and wears silly red hats. Samael can't understand what enjoyment people get from the holiday.</desc>
+    <commander id="249" />
+    <deck>
+      <card id="26022" name="Hypno Caster" />
+      <card id="26022" name="Hypno Caster" />
+      <card id="1015" name="Windfrog" />
+      <card id="1015" name="Windfrog" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="1631" name="Venom Dragon" />
+      <card id="1327" name="Fallen Angel" />
+      <card id="2034" name="Leap Frog Duo" />
+      <card id="2052" mastery_level="2" name="Protector of Skyhaven" />
+      <card id="5053" mastery_level="3" name="Anura Witch" />
+      <card id="2044" mastery_level="4" name="Quillhide Dragon" />
+      <card id="5040" mastery_level="5" name="Winged Trumpeter" />
+      <card id="5043" mastery_level="6" name="Empyrean" />
+      <card id="7018" mastery_level="7" name="Frog Emperor" />
+    </deck>
+    <speech>
+      <line>
+        <commander>frogscout</commander>
+        <enemy>1</enemy>
+        <text>Jingle, jingle, deck the halls~</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>This incessant noise is giving me a headache.</text>
+      </line>
+      <line>
+        <commander>frogscout</commander>
+        <enemy>1</enemy>
+        <text>Hey angel wings! Where's your hat?</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>Bah! Away from me, merry fools!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5437</id>
+    <name>Ghost of the Past</name>
+    <energy>1</energy>
+    <desc>The celebrating frogs flee from the cranky angel. Samael sulks over the flippant attitude of the frogs, until a mysterious presence appears before him...</desc>
+    <commander id="351" />
+    <deck>
+      <card id="7012" name="Life Drake" />
+      <card id="6012" name="Ember Drake" />
+      <card id="7012" name="Life Drake" />
+      <card id="6012" name="Ember Drake" />
+      <card id="11632" name="Dark Rider" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="1631" name="Venom Dragon" />
+      <card id="1329" name="Shadow Assassin" />
+      <card id="2045" name="Chillbeard Giant" />
+      <card id="7038" mastery_level="2" name="Sol King" />
+      <card id="2005" mastery_level="3" name="Sailing Drake" />
+      <card id="2005" mastery_level="4" name="Sailing Drake" />
+      <card id="2005" mastery_level="5" name="Sailing Drake" />
+      <card id="1040" mastery_level="6" name="Storm Dragon" />
+      <card id="2006" mastery_level="7" name="Zhulong" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Sailing_Drake</commander>
+        <enemy>1</enemy>
+        <text>Samael...</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>Who - who's there?!</text>
+      </line>
+      <line>
+        <commander>Sailing_Drake</commander>
+        <enemy>1</enemy>
+        <text>I am a ghost of the past. And there is a lesson you must learn...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5438</id>
+    <name>Ghost of the Present</name>
+    <energy>1</energy>
+    <desc>The talking dragon vanishes, leaving Samael confused and alone. He's unsure what lesson he was supposed to have learned. While contemplating the Drake's appearance, a different figure appears...</desc>
+    <commander id="252" />
+    <deck>
+      <card id="5022" name="Webfoot Raider" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="1618" name="Frog Scout" />
+      <card id="1618" name="Frog Scout" />
+      <card id="1325" name="Chaos Storm" />
+      <card id="5020" name="Frost Frog" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="2014" name="Tadpole Warmage" />
+      <card id="7004" mastery_level="2" name="Ice Golem" />
+      <card id="5050" mastery_level="3" name="Cloud Spear" />
+      <card id="1028" mastery_level="4" name="Heroic Frog" />
+      <card id="1028" mastery_level="5" name="Heroic Frog" />
+      <card id="7018" mastery_level="6" name="Frog Emperor" />
+      <card id="7018" mastery_level="7" name="Frog Emperor" />
+    </deck>
+    <speech>
+      <line>
+        <commander>frogemperor</commander>
+        <enemy>1</enemy>
+        <text>Samael...</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>Another spirit? What is it this time?</text>
+      </line>
+      <line>
+        <commander>frogemperor</commander>
+        <enemy>1</enemy>
+        <text>I am a ghost of the present. And there is a lesson you must learn...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5439</id>
+    <name>Ghost of the Future</name>
+    <energy>1</energy>
+    <desc>The frog vanishes, leaving Samael alone again. He contemplates the meaning of the spirits' appearances. Then, another spirit appears...</desc>
+    <commander id="359" />
+    <deck>
+      <card id="7017" name="Coral Elemental" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="7007" name="Water Serpent" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1032" name="Lunar Elemental" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="2070" name="Redclaw Tamer" />
+      <card id="1630" name="Giant Squid" />
+      <card id="7005" mastery_level="2" name="Tsunamari" />
+      <card id="7066" mastery_level="3" name="Aquine" />
+      <card id="7005" mastery_level="4" name="Tsunamari" />
+      <card id="5073" mastery_level="5" name="Shell Invader" />
+      <card id="7023" mastery_level="6" name="Zolmosh the Fist" />
+      <card id="7023" mastery_level="7" name="Zolmosh the Fist" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>...</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>Ah! You... you are the ghost of the future, are you not?</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>Though I fear you the most of all spirits.. Show me. Show me what it is that I must learn.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5440</id>
+    <name>Lesson Learned</name>
+    <energy>1</energy>
+    <desc>The spirits have finished visiting Samael, leaving him with wisdom that he must decipher. But he understands that he has been given a second chance. He is determined not to waste it.</desc>
+    <commander id="249" />
+    <deck>
+      <card id="5022" name="Webfoot Raider" />
+      <card id="1015" name="Windfrog" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="1618" name="Frog Scout" />
+      <card id="2041" name="Sharpwing" />
+      <card id="5010" name="Concealed Dragon" />
+      <card id="2058" name="Bismuth Bully" />
+      <card id="2070" name="Redclaw Tamer" />
+      <card id="2066" name="Basalt Dragon" />
+      <card id="1030" mastery_level="2" name="Paladin" />
+      <card id="2062" mastery_level="3" name="Deadeye Apprentice" />
+      <card id="7005" mastery_level="4" name="Tsunamari" />
+      <card id="1032" mastery_level="5" name="Lunar Elemental" />
+      <card id="1043" mastery_level="6" name="Lilypad Bard" />
+      <card id="5051" mastery_level="7" name="Amphibious Digger" />
+    </deck>
+    <speech>
+      <line>
+        <commander>frogscout</commander>
+        <enemy>1</enemy>
+        <text>Jingle, jingle- Ahh! You!</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>Pardon me.... I... apologize for earlier. Might I join you in your song and dance?</text>
+      </line>
+      <line>
+        <commander>frogscout</commander>
+        <enemy>1</enemy>
+        <text>Oh! Yes, of course! Gladly!</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- End Christmas Event -->
 </root>

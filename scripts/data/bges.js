@@ -691,6 +691,27 @@ var BATTLEGROUNDS = {
     "id": "514",
     "hidden": true,
   },
+  "515": {
+    "name": "Golden Leaf Shelter",
+    "id": "515",
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "protect",
+        "mult": .25,
+        "y": "4",
+        "z": 4,
+        "all": "1",
+      },
+    ]
+  },
+  "516": {
+    "name": "Enemy Scaling BGE",
+    "id": "516",
+    "scale_with_level": "1",
+    "starting_level": "1",
+    "hidden": true,
+  },
   "10001": {
     "name": "Primal Mending",
     "id": "10001",

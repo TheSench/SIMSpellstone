@@ -152,3 +152,36 @@ function toggleTheme() {
     }
     dark = !dark;
 }
+
+var frames = [];
+var frameInterval = null;
+function drawField(field, hand, callback, turn, activeUnit) {
+    var newFrame = CARD_GUI.doDrawField(field, hand, callback, turn, activeUnit);
+    frames.push(newFrame);
+    if (!frameInterval) {
+        drawFrames();
+        frameInterval = setInterval(drawFrames, 500);
+    }
+}
+
+function clearFrames() {
+    frames = [];
+    clearInterval(frameInterval);
+    frameInterval = null;
+}
+
+var disabledInterval = false;
+function drawFrames() {
+    if (frames.length === 0) {
+        if (disabledInterval) {
+            clearInterval(frameInterval);
+            frameInterval = null;
+        } else {
+            disabledInterval = true;
+        }
+    } else {
+        var frame = frames.splice(0, 1)[0];
+        $("#cardSpace").children().remove().end().append(frame);
+        disabledInterval = false;
+    }
+}

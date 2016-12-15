@@ -12202,6 +12202,128 @@
     </upgrade>
   </unit>
   <unit>
+    <id>5099</id>
+    <card_type>2</card_type>
+    <name>Croak Dropper</name>
+    <picture>Hot_Air_Balloon_Frog_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1481821200</hidden_until_time>
+    <attack>3</attack>
+    <health>12</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="strike" x="1" />
+    <skill id="strike" x="1" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>14</health>
+      <skill id="strike" x="1" />
+      <skill id="strike" x="1" />
+      <skill id="strike" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="strike" x="2" />
+      <skill id="strike" x="2" />
+      <skill id="strike" x="1" />
+      <desc>"Everyone looks like ants from up here... now I'm hungry."</desc>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15099</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Croak Ace</name>
+    <picture>Hot_Air_Balloon_Frog_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1481821200</hidden_until_time>
+    <attack>3</attack>
+    <health>16</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="strike" x="2" />
+    <skill id="strike" x="2" />
+    <skill id="strike" x="1" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+      <skill id="strike" x="2" />
+      <skill id="strike" x="2" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>19</health>
+      <skill id="strike" x="3" />
+      <skill id="strike" x="2" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="strike" x="3" />
+      <skill id="strike" x="3" />
+      <skill id="strike" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25099</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Croak Bomber</name>
+    <picture>Hot_Air_Balloon_Frog_B</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1481821200</hidden_until_time>
+    <attack>3</attack>
+    <health>20</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="strike" x="3" />
+    <skill id="strike" x="3" />
+    <skill id="strike" x="3" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>4</attack>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="strike" x="4" />
+      <skill id="strike" x="3" />
+      <skill id="strike" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="strike" x="4" />
+      <skill id="strike" x="4" />
+      <skill id="strike" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>5103</id>
     <card_type>2</card_type>
     <name>Mother of Solars</name>

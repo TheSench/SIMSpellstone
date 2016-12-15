@@ -5161,5 +5161,36 @@
       <gold>800</gold>
     </reward>
   </achievement>
+  <achievement>
+    <id>3186</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Spirits of Time</name>
+    <desc>Complete the 'Spirits of Time' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1107</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3187</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Spirits of Time</name>
+    <desc>Complete the 'Spirits of Time' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3186</achievement_req>
+    <req>
+      <campaign>1107</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
 </root>

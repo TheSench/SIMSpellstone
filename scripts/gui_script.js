@@ -662,6 +662,7 @@ var loss_debug = false;
 var win_debug = false;
 var found_desired = false;
 var play_debug = false;
+var showAnimations = false;
 var getdeck = '';
 var getdeck2 = '';
 var getcardlist = '';

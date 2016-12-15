@@ -9,6 +9,7 @@ var SIM_CONTROLLER = (function () {
         mass_debug = $('#mass_debug').is(':checked');
         loss_debug = $('#loss_debug').is(':checked');
         win_debug = $('#win_debug').is(':checked');
+        showAnimations = $('#animations').is(':checked');
 
         play_debug = $('#play_debug').is(':checked');
         if (play_debug) debug = false;

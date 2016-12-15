@@ -106,35 +106,60 @@ var CARD_GUI = {};
         return cards;
     }
 
-    function draw_cards(field, drawableHand, callback, turn) {
+    function doDrawField(field, drawableHand, callback, turn, activeUnit) {
         if (!drawableHand) drawableHand = [];
-        var newChildren = [];
+        var fieldHTML = [];
         if (turn) {
             var htmlTurnCounter = document.createElement("h1");
             htmlTurnCounter.innerHTML = "Turn: " + turn
-            newChildren.push(htmlTurnCounter);
+            fieldHTML.push(htmlTurnCounter);
         }
 
         var divField = createDiv("field");
-        divField.appendChild(draw_field(field.cpu));
-        divField.appendChild(draw_field(field.player));
-        newChildren.push(divField);
-        newChildren.push(draw_hand(drawableHand, callback, turn));
-        newChildren.push(document.createElement('br'));
-        newChildren.push(document.createElement('br'));
-
-        $("#cardSpace").children().remove().end().append(newChildren);
+        var activeUnitOwner = null;
+        if (activeUnit) {
+            var activeUnitOwner = activeUnit.owner;
+            if (activeUnit.isCommander()) {
+                activeUnit = -1;
+            } else {
+                activeUnit = activeUnit.key;
+            }
+        }
+        if (activeUnitOwner === 'player') {
+            divField.appendChild(draw_field(field.cpu));
+            divField.appendChild(draw_field(field.player, activeUnit));
+        } else {
+            divField.appendChild(draw_field(field.cpu, activeUnit));
+            divField.appendChild(draw_field(field.player));
+        }
+        fieldHTML.push(divField);
+        fieldHTML.push(draw_hand(drawableHand, callback, turn));
+        fieldHTML.push(document.createElement('br'));
+        fieldHTML.push(document.createElement('br'));
+        return fieldHTML;
     }
 
-    function draw_field(field) {
+    function draw_cards(field, drawableHand, callback, turn) {
+        var fieldHTML = doDrawField(field, drawableHand, callback, turn);
+        $("#cardSpace").children().remove().end().append(fieldHTML);
+    }
+
+    function draw_field(field, activeUnit) {
         var cards = createDiv("float-left");
         var commander = field.commander;
-        cards.appendChild(create_card_html(commander, false, true));
+        var htmlCard = create_card_html(commander, false, true)
+        if (activeUnit === -1) {
+            highlightCard(htmlCard);
+        }
+        cards.appendChild(htmlCard);
         var units = field.assaults;
         if (units) for (var i = 0, len = units.length; i < len; i++) {
             var unit = units[i];
             var htmlCard = create_card_html(unit, false, true);
             if (unit.timer) htmlCard.classList.add("inactive");
+            if (activeUnit === i) {
+                highlightCard(htmlCard);
+            }
             cards.appendChild(htmlCard);
         }
         return cards;
@@ -146,9 +171,6 @@ var CARD_GUI = {};
             var unit = hand[i];
             if (!unit) continue;
             var htmlCard = create_card_html(unit, false);
-            if (hand.choice == i) {
-                htmlCard.style.outline = "5px solid LawnGreen";
-            }
             if (i === 0) htmlCard.classList.add("left");
             else if (i === 2) htmlCard.classList.add("right");
             else if (i > 2) htmlCard.classList.add("inactive");
@@ -164,6 +186,10 @@ var CARD_GUI = {};
             cards.appendChild(htmlCard);
         }
         return cards;
+    }
+
+    function highlightCard(htmlCard) {
+        htmlCard.style.outline = "5px solid LawnGreen";
     }
 
     function addMult(htmlCard, multiplier) {
@@ -508,10 +534,12 @@ var CARD_GUI = {};
             var status = createStatus("weaken", card.attack_weaken);
             debuffs.push(status);
         }
+        */
         if (card.enfeebled) {
             var status = createStatus("enfeeble", card.enfeebled);
             debuffs.push(status);
         }
+        /*
         if (card.jammed) {
             var status = createStatus("jam");
             debuffs.push(status);
@@ -614,6 +642,7 @@ var CARD_GUI = {};
     CARD_GUI.makeCardListHTML = makeCardListHTML;
     CARD_GUI.draw_card_list = draw_card_list;
     CARD_GUI.draw_cards = draw_cards;
+    CARD_GUI.doDrawField = doDrawField;
     CARD_GUI.draw_inventory = draw_inventory;
     CARD_GUI.draw_hand = draw_hand;
     CARD_GUI.createItemHTML = createItemHTML;

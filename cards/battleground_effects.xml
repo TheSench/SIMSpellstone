@@ -486,6 +486,30 @@
       </on_play>
     </effect>
   </battleground>
+  <battleground>
+    <id>515</id>
+    <name>Golden Leaf Shelter</name>
+    <desc>All Frogs gain Barrier each turn equal to 20% of their base Health.</desc>
+    <web_picture>filter_frog_64.png</web_picture>
+    <icon>Barrier_BGE_64</icon>
+    <icon_bundle>69</icon_bundle>
+    <effect>
+      <skill id="protect" mult=".25" all="1" y="4" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>516</id>
+    <name>Enemy Scaling BGE</name>
+    <desc>In Arena Battles, the player who goes first has one additional Delay added to the first card they play in a battle.</desc>
+    <icon>filter_insect_64.png</icon>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>1</starting_level>
+    <!-- Starting Mission Level -->
+    <effect>
+      <scale_attributes p=".1" />
+    </effect>
+  </battleground>
   <!-- 1001+: Personal BGE -->
   <battleground>
     <id>10001</id>
