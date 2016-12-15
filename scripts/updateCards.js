@@ -31,7 +31,7 @@ var DATA_UPDATER = (function () {
                     }
                     CARDS[id] = getUnitFromXML(units[i]);
                 }
-                if (Object.keys(newCards).length > 0) {
+                if (Object.keys(newCards).length > 0 && typeof spoilers !== "undefined") {
                     spoilers = newCards;
                 }
                 if (callback) callback();
