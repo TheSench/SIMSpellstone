@@ -21305,6 +21305,7 @@ var CARDS = {
         ],
       },
       "5": {
+        "health": 22,
         "skill": [
           {
             "id": "rally",
@@ -21490,7 +21491,6 @@ var CARDS = {
     ],
     "upgrades": {
       "2": {
-        "attack": 7,
         "health": 15,
         "skill": [],
       },
@@ -21499,7 +21499,6 @@ var CARDS = {
         "skill": [],
       },
       "4": {
-        "health": 17,
         "skill": [
           {
             "id": "corrosive",

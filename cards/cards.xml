@@ -11498,6 +11498,7 @@
     </upgrade>
     <upgrade>
       <level>5</level>
+      <health>22</health>
       <skill id="rally" x="7" y="4" />
       <skill id="pierce" x="3" />
       <skill id="leech" x="3" />
@@ -11607,7 +11608,6 @@
     <upgrade>
       <level>2</level>
       <health>15</health>
-      <attack>7</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -11615,7 +11615,6 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>17</health>
       <skill id="corrosive" x="3" />
       <skill id="burn" x="2" />
       <skill id="nullify" x="2" />

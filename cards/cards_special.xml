@@ -1,0 +1,575 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- ID's based on set and faction. -->
+  <!-- Commanders       - 1-899 -->
+  <!-- Player       - 1-199 -->
+  <!-- Story        - 200-499 -->
+  <!-- Special Cards    - 500-999 -->
+  <!-- Standard Set     - 1000-1999 -->
+  <!-- Aether       - 1000-1299 -->
+  <!-- Chaos        - 1300-1599 -->
+  <!-- Wyld         - 1600-1899 -->
+  <!-- Reward Set       - 2000-4999 -->
+  <!-- Premium Set      - 5000-7999 -->
+  <!-- Aether       - 5000-5999 -->
+  <!-- Chaos        - 6000-6999 -->
+  <!-- Wyld         - 7000-7999 -->
+  <!-- Enemy Set        - 8000-8999 -->
+  <!-- Fusion 1         - 1xxxx -->
+  <!-- Fusion 2         - 2xxxx -->
+  <!-- <give_full_salvage>1438977380</give_full_salvage>	 gives full salvage until this time -->
+  <!-- =================== -->
+  <!-- == SPECIAL CARDS == -->
+  <!-- =================== -->
+  <!-- START ARCANE DUSTLING -->
+  <unit>
+    <id>500</id>
+    <card_type>2</card_type>
+    <name>Arcane Dustling</name>
+    <picture>Dust_Mite</picture>
+    <asset_bundle>1</asset_bundle>
+    <attack>1</attack>
+    <health>1</health>
+    <cost>0</cost>
+    <type>0</type>
+    <rarity>0</rarity>
+    <set>9999</set>
+    <desc>A manifestation of pure arcane powers. The Dustling only appears when a gap of power occurs in the shifting realities.</desc>
+  </unit>
+  <!-- VAPORIZE CRATES -->
+  <unit>
+    <id>501</id>
+    <card_type>2</card_type>
+    <name>Arcane Ore</name>
+    <picture>Arcane_Ore</picture>
+    <asset_bundle>1</asset_bundle>
+    <attack>0</attack>
+    <health>1</health>
+    <cost>0</cost>
+    <type>0</type>
+    <rarity>3</rarity>
+    <set>9999</set>
+    <desc>The combination of Arcane Fragments. It has little combat use, but is a great source of resources.</desc>
+  </unit>
+  <unit>
+    <id>502</id>
+    <card_type>2</card_type>
+    <name>Arcane Pumpkin</name>
+    <picture>Arcane_Pumpkin_C</picture>
+    <asset_bundle>28</asset_bundle>
+    <attack>0</attack>
+    <health>3</health>
+    <cost>0</cost>
+    <type>0</type>
+    <rarity>2</rarity>
+    <set>9999</set>
+    <desc>A special fruit that blooms only in fall throughout Arcantica. Not very flavorful, but a great source of Arcane Dust.</desc>
+    <upgrade>
+      <level>2</level>
+      <health>4</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>5</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>6</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>503</id>
+    <card_type>2</card_type>
+    <name>Large Arcane Pumpkin</name>
+    <picture>Arcane_Pumpkin_C</picture>
+    <asset_bundle>28</asset_bundle>
+    <attack>0</attack>
+    <health>5</health>
+    <cost>0</cost>
+    <type>0</type>
+    <rarity>3</rarity>
+    <set>9999</set>
+    <desc>A special fruit that blooms only in fall throughout Arcantica. Not very flavorful, but a great source of Arcane Dust.</desc>
+    <upgrade>
+      <level>2</level>
+      <health>6</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>7</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>8</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>9</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>510</id>
+    <card_type>2</card_type>
+    <name>Arcane Chunk</name>
+    <picture>Arcane_Ore</picture>
+    <asset_bundle>1</asset_bundle>
+    <attack>0</attack>
+    <health>1</health>
+    <cost>0</cost>
+    <type>0</type>
+    <rarity>2</rarity>
+    <set>9999</set>
+    <desc>A small chunk of Spellstone material, broken from a larger Spellstone. It has little combat use, but can be Vaporized for resources.</desc>
+  </unit>
+  <unit>
+    <id>511</id>
+    <card_type>2</card_type>
+    <name>Arcane Ore</name>
+    <picture>Arcane_Ore</picture>
+    <asset_bundle>1</asset_bundle>
+    <attack>0</attack>
+    <health>1</health>
+    <cost>0</cost>
+    <type>0</type>
+    <rarity>3</rarity>
+    <set>9999</set>
+    <desc>A deposit of Spellstone ore with no creature inside. It has little combat use, but can be Vaporized for resources.</desc>
+  </unit>
+  <unit>
+    <id>512</id>
+    <card_type>2</card_type>
+    <name>Arcane Deposit</name>
+    <picture>Arcane_Ore</picture>
+    <asset_bundle>1</asset_bundle>
+    <attack>0</attack>
+    <health>1</health>
+    <cost>0</cost>
+    <type>0</type>
+    <rarity>4</rarity>
+    <set>9999</set>
+    <desc>A massive deposit of Spellstone ore. It has little combat use, but can be Vaporized for resources.</desc>
+  </unit>
+  <!-- =================== -->
+  <!-- === TOWER CARDS === -->
+  <!-- =================== -->
+  <unit>
+    <id>601</id>
+    <card_type>2</card_type>
+    <name>Castle Tower</name>
+    <picture>Enemy_Tower_A</picture>
+    <asset_bundle>1</asset_bundle>
+    <attack>0</attack>
+    <health>1</health>
+    <cost>0</cost>
+    <type>0</type>
+    <rarity>0</rarity>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>2</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>3</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>4</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>5</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>6</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>7</health>
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>8</health>
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>11</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>12</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>13</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>14</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>15</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>16</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>17</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>18</level>
+      <health>18</health>
+    </upgrade>
+    <desc>These structures are built by adventurers to protect their camps as they travel Arcantica.</desc>
+  </unit>
+  <unit>
+    <id>602</id>
+    <card_type>2</card_type>
+    <name>Cannon Tower</name>
+    <picture>Enemy_Tower_A</picture>
+    <asset_bundle>1</asset_bundle>
+    <attack>0</attack>
+    <health>1</health>
+    <cost>4</cost>
+    <type>0</type>
+    <skill id="strike" x="1" />
+    <rarity>0</rarity>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>2</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>3</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>4</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>5</health>
+      <cost>3</cost>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>6</health>
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>7</health>
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>8</health>
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <health>10</health>
+      <cost>2</cost>
+    </upgrade>
+    <upgrade>
+      <level>11</level>
+      <health>11</health>
+      <skill id="strike" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>12</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>13</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>14</level>
+      <health>14</health>
+      <cost>1</cost>
+    </upgrade>
+    <upgrade>
+      <level>15</level>
+      <health>15</health>
+      <skill id="strike" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>16</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>17</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>18</level>
+      <health>18</health>
+      <skill id="strike" x="5" />
+    </upgrade>
+    <desc>"You know what's better than a tower? A tower with a CANNON!" - Jarad, Castle Guard</desc>
+  </unit>
+  <unit>
+    <id>603</id>
+    <card_type>2</card_type>
+    <name>Tree of Life</name>
+    <picture>Tree_of_Life_A</picture>
+    <asset_bundle>1</asset_bundle>
+    <attack>0</attack>
+    <health>1</health>
+    <cost>4</cost>
+    <type>3</type>
+    <skill id="heal" x="1" />
+    <rarity>0</rarity>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>2</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>3</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>4</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>5</health>
+      <cost>3</cost>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>6</health>
+      <skill id="heal" x="1" />
+      <skill id="heal" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>7</health>
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>8</health>
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <health>10</health>
+      <cost>2</cost>
+    </upgrade>
+    <upgrade>
+      <level>11</level>
+      <health>11</health>
+      <skill id="heal" x="2" />
+      <skill id="heal" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>12</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>13</level>
+      <health>13</health>
+      <cost>1</cost>
+    </upgrade>
+    <upgrade>
+      <level>14</level>
+      <health>14</health>
+      <skill id="heal" x="2" />
+      <skill id="heal" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>15</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>16</level>
+      <health>16</health>
+      <skill id="heal" x="2" />
+      <skill id="heal" x="2" />
+      <skill id="heal" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>17</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>18</level>
+      <health>18</health>
+      <skill id="heal" x="2" />
+      <skill id="heal" x="2" />
+      <skill id="heal" x="2" />
+    </upgrade>
+    <desc>"I don't know what's in that tree, but I do sure feel better!" - Jarad, Castle Guard</desc>
+  </unit>
+  <unit>
+    <id>604</id>
+    <card_type>3</card_type>
+    <sub_type>999</sub_type>
+    <name>Elemental Storm</name>
+    <picture>BGE_Storm_A</picture>
+    <asset_bundle>1</asset_bundle>
+    <cost>0</cost>
+    <type>0</type>
+    <skill id="weakenself" all="1" x="1" />
+    <rarity>0</rarity>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="weakenself" all="1" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="weakenself" all="1" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="weakenself" all="1" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="weakenself" all="1" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="weakenself" all="1" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <skill id="weakenself" all="1" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <skill id="weakenself" all="1" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <skill id="weakenself" all="1" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <skill id="weakenself" all="1" x="10" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>605</id>
+    <card_type>2</card_type>
+    <name>Fortified Tower</name>
+    <picture>Fortified_Tower_A</picture>
+    <asset_bundle>1</asset_bundle>
+    <attack>0</attack>
+    <health>1</health>
+    <cost>4</cost>
+    <type>1</type>
+    <skill id="armored" x="1" />
+    <rarity>0</rarity>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>2</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>3</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>4</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>5</health>
+      <cost>3</cost>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>6</health>
+      <skill id="armored" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>7</health>
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <health>8</health>
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <health>10</health>
+      <cost>2</cost>
+    </upgrade>
+    <upgrade>
+      <level>11</level>
+      <health>11</health>
+      <skill id="armored" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>12</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>13</level>
+      <health>13</health>
+      <cost>1</cost>
+    </upgrade>
+    <desc>"I've never seen'a more fortified tower in the middle of a grass field." - Jarad, Castle Guard</desc>
+  </unit>
+  <unit>
+    <id>606</id>
+    <card_type>2</card_type>
+    <name>Fortified Horror</name>
+    <picture>Fortified_Tower_B</picture>
+    <asset_bundle>1</asset_bundle>
+    <attack>2</attack>
+    <health>14</health>
+    <cost>1</cost>
+    <type>1</type>
+    <skill id="armored" x="3" />
+    <rarity>0</rarity>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <attack>3</attack>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>4</attack>
+      <health>16</health>
+      <skill id="armored" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>5</attack>
+      <health>17</health>
+      <skill id="evade" x="1" />
+      <skill id="armored" x="4" />
+    </upgrade>
+    <desc>"THE TOWER IS MOUNTING A COUNTER OFFENSE!" - Jarad, Castle Guard</desc>
+  </unit>
+</root>

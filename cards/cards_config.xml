@@ -1,0 +1,599 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- ID's based on set and faction. -->
+  <!-- Commanders       - 1-899 -->
+  <!-- Player       - 1-199 -->
+  <!-- Story        - 200-499 -->
+  <!-- Special Cards    - 500-999 -->
+  <!-- Standard Set     - 1000-1999 -->
+  <!-- Aether       - 1000-1299 -->
+  <!-- Chaos        - 1300-1599 -->
+  <!-- Wyld         - 1600-1899 -->
+  <!-- Reward Set       - 2000-4999 -->
+  <!-- Premium Set      - 5000-7999 -->
+  <!-- Aether       - 5000-5999 -->
+  <!-- Chaos        - 6000-6999 -->
+  <!-- Wyld         - 7000-7999 -->
+  <!-- Enemy Set        - 8000-8999 -->
+  <!-- Fusion 1         - 1xxxx -->
+  <!-- Fusion 2         - 2xxxx -->
+  <!-- <give_full_salvage>1438977380</give_full_salvage>	 gives full salvage until this time -->
+  <!-- =================== -->
+  <!-- == STARTER PACKS == -->
+  <!-- =================== -->
+  <starter_pack>
+    <id>1</id>
+    <name>Aether</name>
+    <description>The Aether thrive on order and light.</description>
+    <commander_id>1</commander_id>
+    <card id="1007" />
+    <card id="1002" />
+    <card id="1018" />
+  </starter_pack>
+  <starter_pack>
+    <id>2</id>
+    <name>Chaos</name>
+    <description>Fire and brimstone power the Chaos faction and their undead allies.</description>
+    <commander_id>4</commander_id>
+    <card id="1301" />
+    <card id="1302" />
+    <card id="1313" />
+  </starter_pack>
+  <starter_pack>
+    <id>3</id>
+    <name>Wyld</name>
+    <description>The strength of earth and nature back the Wyldkin.</description>
+    <commander_id>7</commander_id>
+    <card id="1605" />
+    <card id="1607" />
+    <card id="1619" />
+  </starter_pack>
+  <!-- =================== -->
+  <!-- ====== SKILLS ===== -->
+  <!-- =================== -->
+  <skillType>
+    <id>0</id>
+    <name>Attack</name>
+  </skillType>
+  <skillType>
+    <id>imbue</id>
+    <order>1</order>
+    <icon>imbue</icon>
+    <name>Imbue</name>
+    <upkeep>1</upkeep>
+    <!-- This skill occurs before all other actions -->
+    <attributes x="1" y="1" all="1" c="1" s="1" />
+    <desc>Grants a random allied creature a skill until the start of your next turn</desc>
+    <desc_all>Grants all allied creatures a skill until the start of your next turn</desc_all>
+    <desc_faction>Grants a random allied {y} creature a skill until the start of your next turn</desc_faction>
+    <desc_all_faction>Grants all allied {y} creatures a skill until the start of your next turn</desc_all_faction>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>enhance</id>
+    <order>2</order>
+    <icon>enhance</icon>
+    <name>Enhance</name>
+    <upkeep>1</upkeep>
+    <!-- This skill occurs before all other actions -->
+    <attributes x="1" y="1" all="1" c="1" s="1" />
+    <desc>Increase effect of skill on a random allied creature</desc>
+    <desc_all>Increase effect of skill on all allied creatures</desc_all>
+    <desc_faction>Increase effect of skill on a random allied {y} creature</desc_faction>
+    <desc_all_faction>Increase effect of skill on all allied {y} creatures</desc_all_faction>
+    <hidden>1</hidden>
+  </skillType>
+  <!-- Defensive -->
+  <skillType>
+    <id>evade</id>
+    <order>10</order>
+    <icon>invisibility</icon>
+    <name>Invisibility</name>
+    <desc>Avoids enemy skills</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <balance_points>5</balance_points>
+  </skillType>
+  <skillType>
+    <id>taunt</id>
+    <order>20</order>
+    <icon>taunt</icon>
+    <name>Taunt</name>
+    <desc>Attack damage dealt to adjacent creatures is dealt to this creature instead.</desc>
+    <attributes x="1" y="1" all="0" c="0" s="0" />
+    <balance_points>1</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>armored</id>
+    <order>30</order>
+    <icon>shield</icon>
+    <name>Armor</name>
+    <desc>Prevents damage taken by attacks</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <balance_points>2</balance_points>
+  </skillType>
+  <skillType>
+    <id>counter</id>
+    <order>40</order>
+    <icon>vengeance</icon>
+    <name>Vengeance</name>
+    <desc>When damaged by an attack, deal damage to attacker</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <balance_points>3</balance_points>
+  </skillType>
+  <skillType>
+    <id>corrosive</id>
+    <order>50</order>
+    <icon>corrosive</icon>
+    <name>Corrosive</name>
+    <desc>Creatures attacking this gain Corrosion, lowering Attack. This effect stacks. Wears off if not reapplied for a turn.</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <balance_points>4</balance_points>
+  </skillType>
+  <!-- Triggered -->
+  <skillType>
+    <id>valor</id>
+    <order>60</order>
+    <icon>valor</icon>
+    <name>Valor</name>
+    <desc>First time this activates, gains Attack permanently if opposing card has more Attack.</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <balance_points>3</balance_points>
+  </skillType>
+  <!-- Activation -->
+  <skillType>
+    <id>rally</id>
+    <order>70</order>
+    <icon>empower</icon>
+    <name>Empower</name>
+    <upkeep>1</upkeep>
+    <!-- This skill occurs before all other actions -->
+    <desc>Boosts Attack of a random allied creature</desc>
+    <desc_all>Boosts Attack of all allied creatures</desc_all>
+    <desc_faction>Boosts Attack of a random allied {y} creature</desc_faction>
+    <desc_all_faction>Boosts Attack of all allied {y} creatures</desc_all_faction>
+    <status_flag>attack_boost</status_flag>
+    <attributes x="1" y="1" all="1" c="0" s="0" />
+    <balance_points>3</balance_points>
+  </skillType>
+  <skillType>
+    <id>heal</id>
+    <order>80</order>
+    <icon>heal</icon>
+    <name>Heal</name>
+    <desc>Heals a random allied creature</desc>
+    <desc_all>Heals all allied creatures</desc_all>
+    <desc_faction>Heals a random allied {y} creature</desc_faction>
+    <desc_all_faction>Heals all allied {y} creatures</desc_all_faction>
+    <attributes x="1" y="1" all="1" c="0" s="0" />
+    <balance_points>2</balance_points>
+  </skillType>
+  <skillType>
+    <id>protect</id>
+    <order>90</order>
+    <icon>mystic_barrier</icon>
+    <name>Barrier</name>
+    <desc>Reduces the next Damage dealt to a random allied creature</desc>
+    <desc_all>Reduces the next Damage dealt to all allied creatures</desc_all>
+    <desc_faction>Reduces the next Damage dealt to a random allied {y} creature</desc_faction>
+    <desc_all_faction>Reduces the next Damage dealt to all allied {y} creatures</desc_all_faction>
+    <status_flag>protect</status_flag>
+    <attributes x="1" y="1" all="1" c="0" s="0" />
+    <balance_points>2</balance_points>
+  </skillType>
+  <skillType>
+    <id>legion</id>
+    <order>100</order>
+    <icon>legion</icon>
+    <name>Legion</name>
+    <upkeep>1</upkeep>
+    <!-- This skill occurs before all other actions -->
+    <desc>Empowers allied creatures adjacent to this creature.</desc>
+    <desc_faction>Empowers allied {y} creatures adjacent to this creature.</desc_faction>
+    <status_flag>attack_boost</status_flag>
+    <attributes x="1" y="1" all="0" c="0" s="0" />
+    <balance_points>5</balance_points>
+  </skillType>
+  <skillType>
+    <id>fervor</id>
+    <order>110</order>
+    <icon>fervor</icon>
+    <name>Fervor</name>
+    <upkeep>1</upkeep>
+    <!-- This skill occurs before all other actions -->
+    <desc>Empowers this creature for each adjacent allied creature.</desc>
+    <desc_faction>Empowers this creature for each adjacent allied {y} creature.</desc_faction>
+    <status_flag>attack_boost</status_flag>
+    <attributes x="1" y="1" all="0" c="0" s="0" />
+    <balance_points>5</balance_points>
+  </skillType>
+  <skillType>
+    <id>enfeeble</id>
+    <order>120</order>
+    <icon>hex</icon>
+    <name>Hex</name>
+    <desc>Increase Damage dealt to a random enemy creature</desc>
+    <desc_all>Increase Damage dealt to all enemy creatures</desc_all>
+    <status_flag>enfeeble</status_flag>
+    <attributes x="1" y="0" all="1" c="0" s="0" />
+    <balance_points>3</balance_points>
+  </skillType>
+  <skillType>
+    <id>strike</id>
+    <order>130</order>
+    <icon>arcane_shot</icon>
+    <name>Bolt</name>
+    <desc>Deals damage to a random enemy creature</desc>
+    <desc_all>Deals damage to all enemy creatures</desc_all>
+    <desc_faction>Deals damage to a random enemy {y} creature</desc_faction>
+    <desc_all_faction>Deals damage to all enemy {y} creatures</desc_all_faction>
+    <attributes x="1" y="0" all="1" c="0" s="0" />
+    <balance_points>3</balance_points>
+  </skillType>
+  <skillType>
+    <id>frost</id>
+    <order>140</order>
+    <icon>frostbreath</icon>
+    <name>Frostbreath</name>
+    <desc>Deals damage in a cone to up to three creatures in front of it.</desc>
+    <status_flag>frost</status_flag>
+    <status_flag>frost_cooldown</status_flag>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <balance_points>8</balance_points>
+  </skillType>
+  <skillType>
+    <id>burn</id>
+    <order>150</order>
+    <icon>burn</icon>
+    <name>Scorch</name>
+    <desc>Deals stacking damage to the enemy across from this creature at end of turn. Wears off if not reapplied for a turn.</desc>
+    <status_flag>burn</status_flag>
+    <status_flag>burn_cooldown</status_flag>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <balance_points>4</balance_points>
+  </skillType>
+  <skillType>
+    <id>jam</id>
+    <order>160</order>
+    <icon>freeze</icon>
+    <name>Freeze</name>
+    <desc>Random enemy creature doesn't attack or activate abilities on its next turn. Activates every {c} turns.</desc>
+    <status_flag>jammed</status_flag>
+    <status_flag>jam_countdown</status_flag>
+    <attributes x="0" y="0" all="1" c="1" s="0" />
+    <balance_points>10</balance_points>
+  </skillType>
+  <skillType>
+    <id>weaken</id>
+    <order>170</order>
+    <icon>hinder</icon>
+    <name>Weaken</name>
+    <desc>Reduces Attack of a random enemy creature</desc>
+    <desc_all>Reduces the Attack of all enemy creatures</desc_all>
+    <desc_faction>Reduces the Attack of a random enemy {y} creature</desc_faction>
+    <desc_all_faction>Reduces the attack of all enemy {y} creatures</desc_all_faction>
+    <attributes x="1" y="0" all="1" c="0" s="0" />
+    <balance_points>1.5</balance_points>
+  </skillType>
+  <!-- Modifiers -->
+  <skillType>
+    <id>pierce</id>
+    <order>180</order>
+    <icon>puncture</icon>
+    <name>Pierce</name>
+    <desc>Reduces the effect of enemy Armor and Barriers</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <balance_points>1.5</balance_points>
+  </skillType>
+  <!-- Damage -->
+  <skillType>
+    <id>silence</id>
+    <order>190</order>
+    <icon>silence</icon>
+    <name>Silence</name>
+    <desc>Removes all skills from damaged enemy creature for one turn.</desc>
+    <attributes x="1" y="1" all="0" c="1" s="0" />
+    <balance_points>1</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>nullify</id>
+    <order>200</order>
+    <icon>nullify</icon>
+    <name>Nullify</name>
+    <desc>Nullifies enemy creatures damaged by this card. Nullified units avoid their own friendly skills.</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <status_flag>nullified</status_flag>
+    <balance_points>6</balance_points>
+  </skillType>
+  <skillType>
+    <id>poison</id>
+    <order>210</order>
+    <icon>corrupt</icon>
+    <name>Poison</name>
+    <desc>Poisons enemies damaged by this card, dealing additional damage at the end of turn</desc>
+    <status_flag>poison</status_flag>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <balance_points>3</balance_points>
+  </skillType>
+  <skillType>
+    <id>leech</id>
+    <order>220</order>
+    <icon>siphon</icon>
+    <name>Siphon</name>
+    <desc>Heals this card as it deals Attack damage</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <balance_points>1.5</balance_points>
+  </skillType>
+  <skillType>
+    <id>berserk</id>
+    <order>230</order>
+    <icon>berserk</icon>
+    <name>Berserk</name>
+    <desc>When this creature deals attack damage, Attack is permanently increased</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <balance_points>6</balance_points>
+  </skillType>
+  <!-- Dualstrike -->
+  <skillType>
+    <id>flurry</id>
+    <order>240</order>
+    <icon>swiftness</icon>
+    <name>Dualstrike</name>
+    <desc>Activates twice in one turn. Activates every {c} turns.</desc>
+    <status_flag>flurry_countdown</status_flag>
+    <attributes x="0" y="0" all="0" c="1" s="0" />
+    <balance_points>10</balance_points>
+  </skillType>
+  <!-- Special -->
+  <skillType>
+    <id>protect_ice</id>
+    <order>500</order>
+    <icon>mystic_barrier</icon>
+    <name>Iceshatter Barrier</name>
+    <desc>Reduces the next Damage dealt to a random allied creature</desc>
+    <desc_all>Reduces the next Damage dealt to all allied creatures</desc_all>
+    <desc_faction>Reduces the next Damage dealt to a random allied {y} creature</desc_faction>
+    <desc_all_faction>Reduces the next Damage dealt to all allied {y} creatures</desc_all_faction>
+    <status_flag>protect</status_flag>
+    <attributes x="1" y="1" all="1" c="0" s="0" />
+    <balance_points>3</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>reanimate</id>
+    <order>500</order>
+    <icon>frostbreath</icon>
+    <name>Reanimate</name>
+    <desc>Reanimates creatures when they die.</desc>
+    <attributes x="1" y="1" all="0" c="0" s="0" />
+    <status_flag>reanimated</status_flag>
+    <balance_points>8</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>resurrect</id>
+    <order>500</order>
+    <icon>frostbreath</icon>
+    <name>Resurrect</name>
+    <desc>Resurrects creatures when they die.</desc>
+    <attributes x="1" y="1" all="0" c="0" s="0" />
+    <status_flag>resurrected</status_flag>
+    <balance_points>8</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>poisonstrike</id>
+    <order>500</order>
+    <icon>arcane_shot</icon>
+    <name>Poisonbolt</name>
+    <desc>Deals damage to a random enemy creature...and poison</desc>
+    <desc_all>Deals damage to all enemy creatures...and poison</desc_all>
+    <desc_faction>Deals damage to a random enemy {y} creature...and poison</desc_faction>
+    <desc_all_faction>Deals damage to all enemy {y} creatures...and poison</desc_all_faction>
+    <attributes x="1" y="0" all="1" c="0" s="0" />
+    <balance_points>6</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>weakenself</id>
+    <order>500</order>
+    <icon>hinder</icon>
+    <name>Weaken</name>
+    <desc>Reduces Attack of a random allied creature</desc>
+    <desc_all>Reduces the Attack of all ally creatures</desc_all>
+    <desc_faction>Reduces the Attack of a random allied {y} creature</desc_faction>
+    <desc_all_faction>Reduces the attack of all ally {y} creatures</desc_all_faction>
+    <attributes x="1" y="0" all="1" c="0" s="0" />
+    <balance_points>1.5</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>counterburn</id>
+    <order>500</order>
+    <icon>burn</icon>
+    <name>Vengence Scorch</name>
+    <desc>Deals stacking damage to the enemy across from this creature at end of turn. Wears off if not reapplied for a turn.</desc>
+    <status_flag>burn</status_flag>
+    <status_flag>burn_cooldown</status_flag>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <balance_points>4</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>barrage</id>
+    <order>500</order>
+    <icon>arcane_shot</icon>
+    <name>barrage</name>
+    <upkeep>1</upkeep>
+    <!-- This skill occurs before all other actions -->
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <desc>Deal damage to random enemy creatures</desc>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>fury</id>
+    <order>1</order>
+    <icon>fury</icon>
+    <name>Maelstrom's Fury</name>
+    <desc>When damaged by an attack, deal damage to attacker and increase Attack permanently</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <balance_points>3</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>slow</id>
+    <order>500</order>
+    <icon>fury</icon>
+    <name>Slow</name>
+    <desc>Increases the creature's delay.</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <balance_points>10</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>displayEffect</id>
+    <order>0</order>
+    <upkeep>1</upkeep>
+    <!-- This skill occurs before all other actions -->
+    <hidden>1</hidden>
+  </skillType>
+  <!-- =================== -->
+  <!-- == CARD FACTIONS == -->
+  <!-- =================== -->
+  <unitType>
+    <id>0</id>
+    <name></name>
+    <icon></icon>
+    <hidden>1</hidden>
+  </unitType>
+  <unitType>
+    <id>1</id>
+    <name>Aether</name>
+    <icon>filter_aether_32</icon>
+  </unitType>
+  <unitType>
+    <id>2</id>
+    <name>Chaos</name>
+    <icon>filter_chaos_32</icon>
+  </unitType>
+  <unitType>
+    <id>3</id>
+    <name>Wyld</name>
+    <icon>filter_wyld_32</icon>
+  </unitType>
+  <unitType>
+    <id>4</id>
+    <name>Frog</name>
+    <icon>filter_frog_32</icon>
+  </unitType>
+  <unitType>
+    <id>5</id>
+    <name>Elemental</name>
+    <icon>filter_elementals_32</icon>
+  </unitType>
+  <unitType>
+    <id>6</id>
+    <name>Angel</name>
+    <icon>filter_angel_32</icon>
+  </unitType>
+  <unitType>
+    <id>7</id>
+    <name>Undead</name>
+    <image></image>
+    <icon>filter_undead_32</icon>
+  </unitType>
+  <unitType>
+    <id>8</id>
+    <name>Void</name>
+    <image>filter_void_32</image>
+    <hidden>1</hidden>
+  </unitType>
+  <unitType>
+    <id>9</id>
+    <name>Dragon</name>
+    <image></image>
+    <icon>filter_dragon_32</icon>
+  </unitType>
+  <unitType>
+    <id>10</id>
+    <name>Avian</name>
+    <image></image>
+    <icon>filter_avian_32</icon>
+  </unitType>
+  <unitType>
+    <id>11</id>
+    <name>Goblin</name>
+    <image></image>
+    <icon>filter_goblin_32</icon>
+  </unitType>
+  <unitType>
+    <id>12</id>
+    <name>Seafolk</name>
+    <image></image>
+    <icon>filter_seafolk_32</icon>
+  </unitType>
+  <unitType>
+    <id>13</id>
+    <name>Insect</name>
+    <image></image>
+    <icon>filter_insect_32</icon>
+  </unitType>
+  <!-- =================== -->
+  <!-- ==== CARD SETS ==== -->
+  <!-- =================== -->
+  <cardSet>
+    <id>1000</id>
+    <name>Standard</name>
+    <visible>1</visible>
+    <icon>set_icon_standard</icon>
+    <pack_name>Standard Pack</pack_name>
+    <pack_picture>GoldPack</pack_picture>
+    <picture>set_icon_standard</picture>
+  </cardSet>
+  <cardSet>
+    <id>2000</id>
+    <name>Reward</name>
+    <visible>1</visible>
+    <!-- <icon>set_icon_premium</icon>
+		<picture>set_icon_premium</picture> -->
+    <icon>set_icon_reward</icon>
+    <picture>set_icon_reward</picture>
+  </cardSet>
+  <cardSet>
+    <id>3000</id>
+    <name>Premium</name>
+    <visible>1</visible>
+    <icon>set_icon_premium</icon>
+    <picture>set_icon_premium</picture>
+  </cardSet>
+  <cardSet>
+    <id>4000</id>
+    <name>Chance</name>
+    <visible>1</visible>
+    <icon>set_icon_premium</icon>
+    <picture>set_icon_premium</picture>
+  </cardSet>
+  <cardSet>
+    <id>5000</id>
+    <name>Mythic Reward</name>
+    <visible>1</visible>
+    <icon>set_icon_reward</icon>
+    <picture>set_icon_reward</picture>
+  </cardSet>
+  <cardSet>
+    <id>7000</id>
+    <name>Commanders</name>
+    <visible>1</visible>
+  </cardSet>
+  <cardSet>
+    <id>8000</id>
+    <name>Fortress</name>
+    <visible>0</visible>
+  </cardSet>
+  <cardSet>
+    <id>9999</id>
+    <name>Story Elements</name>
+    <visible>0</visible>
+  </cardSet>
+</root>

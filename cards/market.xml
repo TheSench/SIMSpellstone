@@ -1,0 +1,2665 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--   1-100  for Market
+		 101-1000 for Bundle Packages
+		1001-3000 for Boxes & Chance Packs
+		3001-4000 for Special Market
+		4001-5000 for Emporium
+		5001-6000 for Shard Bundle Packages
+		6001-7000 for Reward Boxes
+
+		Rarity Colors
+			^c8E5F		Rare
+			^c0DFF		Epic
+			^cE7FF		Legendary
+			^cF90F		Mythic
+			^cCC1F		Items
+			^c	takes hex [RGBA]
+			^C	takes double hex [RRGGBBAA]
+			^g	takes two hex back to back to make gradient [RGBARGBA]
+			^G	takes two double hex back to back to make gradient [RRGGBBAARRGGBBAA]
+
+		<card_limit>1</card_limit>		Prevents this from being opened if it would exceed card cap.
+	 	
+	 	Market Items get NO BONUS to <priority>
+	 -->
+  <!-- Basic Pack -->
+  <store_item>
+    <id>1</id>
+    <name>Basic Pack</name>
+    <category>1</category>
+    <desc>Gives one random card from Standard Set.</desc>
+    <priority>20</priority>
+    <asset_prefab>basic_pack</asset_prefab>
+    <icon>icon_basic_crystal</icon>
+    <sc_cost>100</sc_cost>
+    <card_limit>1</card_limit>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
+    </cards>
+  </store_item>
+  <!-- Special Packs -->
+  <store_item>
+    <id>2</id>
+    <name>Blue Fire Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one random card from Standard Set guaranteed Rare or higher.</desc>
+    <priority>1</priority>
+    <asset_prefab>rare_pack</asset_prefab>
+    <icon>icon_green_crystal</icon>
+    <hc_cost>45</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" set="1000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3</id>
+    <name>Basic Pack x10</name>
+    <category>1</category>
+    <desc>Gives one random card from Standard Set. Ten times!</desc>
+    <priority>5</priority>
+    <asset_prefab>basic_pack</asset_prefab>
+    <icon>icon_basic_crystal</icon>
+    <sc_cost>1000</sc_cost>
+    <card_limit>1</card_limit>
+    <level_req>5</level_req>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>4</id>
+    <name>Reward Epic Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one random ^c0DFFEpic ^cFFFFcard from Reward Set.</desc>
+    <priority>15</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="3" set="2000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5</id>
+    <name>Dust Pack x10</name>
+    <category>1</category>
+    <dust_pack>1</dust_pack>
+    <vip_level_req>5</vip_level_req>
+    <desc>Gives ten random cards from Standard Set and automatically vaporizes all Common and Rare cards!</desc>
+    <priority>-1</priority>
+    <asset_prefab>dust_pack_crystal</asset_prefab>
+    <bundle>35</bundle>
+    <icon>icon_basic_crystal</icon>
+    <sc_cost>1000</sc_cost>
+    <card_limit>1</card_limit>
+    <level_req>5</level_req>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" num_pulls="10" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>6</id>
+    <name>Dust Pack x50</name>
+    <category>1</category>
+    <dust_pack>1</dust_pack>
+    <vip_level_req>9</vip_level_req>
+    <desc>Gives fifty random cards from Standard Set and automatically vaporizes all Common and Rare cards!</desc>
+    <priority>-2</priority>
+    <asset_prefab>dust_pack_crystal</asset_prefab>
+    <bundle>35</bundle>
+    <icon>icon_basic_crystal</icon>
+    <sc_cost>5000</sc_cost>
+    <card_limit>1</card_limit>
+    <level_req>5</level_req>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" num_pulls="50" />
+    </cards>
+  </store_item>
+  <!-- HC Packs -->
+  <store_item>
+    <id>11</id>
+    <name>Rare Pack</name>
+    <category>1</category>
+    <desc>Gives two cards from Standard Set with one guaranteed ^c8E5FRare ^cFFFFor higher.</desc>
+    <priority>15</priority>
+    <asset_prefab>rare_pack</asset_prefab>
+    <icon>icon_green_crystal</icon>
+    <hc_cost>45</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" set="1000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>12</id>
+    <name>Epic Pack</name>
+    <category>1</category>
+    <desc>Gives four cards from Standard Set with one guaranteed ^c0DFFEpic ^cFFFFor higher. Best chance at ^cE7FFLegendaries^cFFFF!</desc>
+    <priority>10</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>100</hc_cost>
+    <!-- <banner>1</banner>	 -->
+    <!-- has a lowpriority banner slot in the store -->
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" set="1000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>13</id>
+    <name>Legendary Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives four cards with one guaranteed ^cE7FFLegendary ^cFFFF!</desc>
+    <priority>1</priority>
+    <asset_prefab>legendary_crystal</asset_prefab>
+    <bundle>30</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>5000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" set="1000" />
+    </cards>
+  </store_item>
+  <!-- Faction Packs -->
+  <store_item>
+    <id>14</id>
+    <name>Aether Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one random Aether card.</desc>
+    <priority>1</priority>
+    <asset_prefab>basic_pack</asset_prefab>
+    <icon>icon_basic_crystal</icon>
+    <hc_cost>100</hc_cost>
+    <type>1</type>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" type="1" set="1000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>15</id>
+    <name>Chaos Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one random Chaos card.</desc>
+    <priority>1</priority>
+    <asset_prefab>basic_pack</asset_prefab>
+    <icon>icon_basic_crystal</icon>
+    <hc_cost>100</hc_cost>
+    <type>2</type>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" type="2" set="1000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>16</id>
+    <name>Wyld Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one random Wyld card.</desc>
+    <priority>1</priority>
+    <asset_prefab>basic_pack</asset_prefab>
+    <icon>icon_basic_crystal</icon>
+    <hc_cost>100</hc_cost>
+    <type>3</type>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" type="3" set="1000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>17</id>
+    <name>Frog Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one random Frog card.</desc>
+    <priority>1</priority>
+    <asset_prefab>basic_pack</asset_prefab>
+    <icon>icon_basic_crystal</icon>
+    <hc_cost>100</hc_cost>
+    <type>4</type>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" type="4" set="1000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>18</id>
+    <name>Elemental Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one random Elemental card.</desc>
+    <priority>1</priority>
+    <asset_prefab>basic_pack</asset_prefab>
+    <icon>icon_basic_crystal</icon>
+    <hc_cost>100</hc_cost>
+    <type>5</type>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" type="5" set="1000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>19</id>
+    <name>Angel Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one random Angel card.</desc>
+    <priority>1</priority>
+    <asset_prefab>basic_pack</asset_prefab>
+    <icon>icon_basic_crystal</icon>
+    <hc_cost>100</hc_cost>
+    <type>6</type>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" type="6" set="1000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>20</id>
+    <name>Undead Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one random Undead card.</desc>
+    <priority>1</priority>
+    <asset_prefab>basic_pack</asset_prefab>
+    <icon>icon_basic_crystal</icon>
+    <hc_cost>100</hc_cost>
+    <type>7</type>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" type="7" set="1000" />
+    </cards>
+  </store_item>
+  <!-- Unique Packs -->
+  <store_item>
+    <id>21</id>
+    <name>Dragon Rare Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two Dragon cards with both guaranteed Rare or higher.</desc>
+    <priority>1</priority>
+    <asset_prefab>rare_pack</asset_prefab>
+    <icon>icon_green_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="9" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="9" set="1000,3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>22</id>
+    <name>Elemental Rare Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two Elemental cards with both guaranteed Rare or higher.</desc>
+    <priority>1</priority>
+    <asset_prefab>rare_pack</asset_prefab>
+    <icon>icon_green_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="5" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="5" set="3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>23</id>
+    <name>Elemental Epic Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives three Elemental cards with one guaranteed Epic+ and two guaranteed Rares+ from Standard or Premium set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="5" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="1000,3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>24</id>
+    <name>Aether Faction Pack</name>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <desc>Gives three Aether cards from the Standard Set, all guaranteed Epics or higher.</desc>
+    <priority>300</priority>
+    <asset_prefab>aether_crystal</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <bundle>30</bundle>
+    <hc_cost>180</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="1" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="1" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="1" set="1000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>25</id>
+    <name>Chaos Faction Pack</name>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <desc>Gives three Chaos cards from the Standard Set, all guaranteed Epics or higher.</desc>
+    <priority>300</priority>
+    <asset_prefab>chaos_crystal</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <bundle>30</bundle>
+    <hc_cost>180</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="2" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="2" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="2" set="1000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>26</id>
+    <name>Wyld Faction Pack</name>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <desc>Gives three Wyld cards from the Standard Set, all guaranteed Epics or higher.</desc>
+    <priority>300</priority>
+    <asset_prefab>wyld_crystal</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <bundle>30</bundle>
+    <hc_cost>180</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="3" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="3" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="3" set="1000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>27</id>
+    <name>Frog Rare Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two Frog cards with both guaranteed Rare or higher.</desc>
+    <priority>1</priority>
+    <asset_prefab>rare_pack</asset_prefab>
+    <icon>icon_green_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="4" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="4" set="1000,3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>28</id>
+    <name>Legendary Dragonstone Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one guaranteed Legendary Dragon card and three additional Dragon cards guaranteed Epic or higher.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="9" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>29</id>
+    <name>Aether Double Epic Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives four Aether cards from the Standard Set, two guaranteed Epics or higher.</desc>
+    <priority>1</priority>
+    <asset_prefab>aether_crystal</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <bundle>30</bundle>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" type="1" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" type="1" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="1" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="1" set="1000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>30</id>
+    <!-- WRONG ASSET_PREFAB. FIX BEFORE RELEASE. -->
+    <name>Chaos Double Epic Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives four Chaos cards from the Standard Set, two guaranteed Epics or higher.</desc>
+    <priority>1</priority>
+    <asset_prefab>aether_crystal</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <bundle>30</bundle>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" type="2" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" type="2" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="2" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="2" set="1000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>31</id>
+    <name>Wyld Double Epic Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives four Wyld cards from the Standard Set, two guaranteed Epics or higher.</desc>
+    <priority>1</priority>
+    <asset_prefab>wyld_crystal</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <bundle>30</bundle>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" type="3" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" type="3" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="3" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="3" set="1000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>32</id>
+    <name>Triple Dragon Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives three Dragon cards guaranteed Epics or higher.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>33</id>
+    <name>Legendary Barrierstone Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one guaranteed Legendary Barrier card and three additional Barrier cards guaranteed Epic or higher and all from Premium Set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" skill_id="protect" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" skill_id="protect" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" skill_id="protect" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" skill_id="protect" set="3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>34</id>
+    <name>Barrier Rare Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two Barrier cards from Premium Set with both guaranteed Rare or higher.</desc>
+    <priority>1</priority>
+    <asset_prefab>rare_pack</asset_prefab>
+    <icon>icon_green_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" skill_id="protect" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" skill_id="protect" set="3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>35</id>
+    <name>Barrier Epic Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives four Barrier cards with two guaranteed Epics and two guaranteed Rares or higher.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" skill_id="protect" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" skill_id="protect" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" skill_id="protect" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" skill_id="protect" set="3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>36</id>
+    <name>Triple Barrier Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives three Barrier cards guaranteed Epics or higher.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" skill_id="protect" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" skill_id="protect" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" skill_id="protect" set="3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>37</id>
+    <name>Legendary Spellstone Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one guaranteed Legendary Standard card and three additional Standard cards guaranteed Epic or higher.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" set="1000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>38</id>
+    <name>Undead Rare Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two Undead cards with both guaranteed Rare or higher.</desc>
+    <priority>1</priority>
+    <asset_prefab>rare_pack</asset_prefab>
+    <icon>icon_green_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="7" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="7" set="1000,3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>39</id>
+    <name>Angel Rare Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two Angel cards with both guaranteed Rare or higher.</desc>
+    <priority>1</priority>
+    <asset_prefab>rare_pack</asset_prefab>
+    <icon>icon_green_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="6" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="6" set="1000,3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>40</id>
+    <name>Undead Event Reward Pack</name>
+    <category>0</category>
+    <desc>Gives one of the following cards: Blight Knight, Patchwork Experiment, Dusk Noble, Matriarch's Call.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <card_pack>
+      <pulls>1</pulls>
+      <card id="2025" level="1" weight=".3" />
+      <card id="2060" level="1" weight=".3" />
+      <card id="2024" level="1" weight=".3" />
+      <card id="2059" level="1" weight=".3" />
+    </card_pack>
+  </store_item>
+  <store_item>
+    <id>51</id>
+    <name>Pile of Gold Coins</name>
+    <category>2</category>
+    <desc>200 Gold!</desc>
+    <priority>5</priority>
+    <asset_prefab>gold_package_1</asset_prefab>
+    <prefab>crystal_explosion_gold</prefab>
+    <hc_cost>20</hc_cost>
+    <gold>200</gold>
+  </store_item>
+  <store_item>
+    <id>52</id>
+    <name>Pouch of Gold Coins</name>
+    <category>2</category>
+    <desc>500 Gold!</desc>
+    <priority>4</priority>
+    <asset_prefab>gold_package_2</asset_prefab>
+    <prefab>crystal_explosion_gold</prefab>
+    <hc_cost>50</hc_cost>
+    <gold>500</gold>
+  </store_item>
+  <store_item>
+    <id>53</id>
+    <name>Stack of Gold Bars</name>
+    <category>2</category>
+    <desc>2,500 Gold!</desc>
+    <priority>3</priority>
+    <asset_prefab>gold_package_3</asset_prefab>
+    <prefab>crystal_explosion_gold</prefab>
+    <hc_cost>150</hc_cost>
+    <gold>2500</gold>
+  </store_item>
+  <store_item>
+    <id>54</id>
+    <name>Treasure Trove of Gold</name>
+    <category>2</category>
+    <desc>10,000 Gold!</desc>
+    <priority>2</priority>
+    <asset_prefab>gold_package_4</asset_prefab>
+    <prefab>crystal_explosion_gold</prefab>
+    <hc_cost>500</hc_cost>
+    <gold>10000</gold>
+  </store_item>
+  <store_item>
+    <id>61</id>
+    <name>Bounty Bundle +3</name>
+    <mission_req>54</mission_req>
+    <category>2</category>
+    <desc>Automatically gain 3 new Bounty Targets!</desc>
+    <priority>10</priority>
+    <hc_cost>40</hc_cost>
+    <item id="1022" quantity="1" />
+    <asset_prefab>bounty_pack_1</asset_prefab>
+    <bundle>15</bundle>
+  </store_item>
+  <store_item>
+    <id>62</id>
+    <name>Bounty Bundle +10</name>
+    <mission_req>54</mission_req>
+    <category>2</category>
+    <desc>Automatically gain 10 new Bounty Targets!</desc>
+    <priority>9</priority>
+    <hc_cost>100</hc_cost>
+    <item id="1024" quantity="1" />
+    <asset_prefab>bounty_pack_3</asset_prefab>
+    <bundle>15</bundle>
+  </store_item>
+  <store_item>
+    <id>71</id>
+    <name>Raid Refill +20</name>
+    <mission_req>54</mission_req>
+    <category>2</category>
+    <desc>Use to gain +20 Raid attacks.</desc>
+    <priority>50</priority>
+    <hc_cost>100</hc_cost>
+    <item id="1035" quantity="1" />
+    <asset_prefab>raid_refill_box</asset_prefab>
+    <bundle>35</bundle>
+    <event_type_req>5</event_type_req>
+  </store_item>
+  <store_item>
+    <id>72</id>
+    <name>Dungeon Refill +20</name>
+    <mission_req>54</mission_req>
+    <category>2</category>
+    <desc>Use to gain +20 Dungeon attacks.</desc>
+    <priority>50</priority>
+    <hc_cost>100</hc_cost>
+    <item id="1045" quantity="1" />
+    <asset_prefab>dungeon_refill_box</asset_prefab>
+    <bundle>31</bundle>
+    <event_type_req>8</event_type_req>
+  </store_item>
+  <store_item>
+    <id>81</id>
+    <name>Runecrafter's Pouch</name>
+    <feature_lock_req>runes</feature_lock_req>
+    <category>2</category>
+    <desc>Contains various Runecrafting components, including a chance at Runeshells and even ^cE7FFLegendary Rune Slivers^cFFFF.</desc>
+    <priority>40</priority>
+    <hc_cost>20</hc_cost>
+    <asset_prefab>rune_bag</asset_prefab>
+    <bundle>15</bundle>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="4013" quantity="1" weight=".3" />
+      <item id="4012" quantity="1" weight=".5" />
+      <item id="4012" quantity="2" weight=".05" />
+      <item id="4011" quantity="1" weight="1" />
+      <item id="4011" quantity="2" weight=".1" />
+      <item id="4001" quantity="2" weight="1" />
+      <item id="4001" quantity="3" weight=".5" />
+      <item id="4001" quantity="4" weight=".4" />
+      <item id="4001" quantity="5" weight=".2" />
+      <item id="4001" quantity="10" weight=".1" />
+      <item id="2001" quantity="15" weight="1" />
+      <item id="2001" quantity="20" weight=".5" />
+      <item id="2001" quantity="25" weight=".3" />
+      <item id="2001" quantity="50" weight=".1" />
+      <item id="2501" quantity="40" weight="1" />
+      <item id="2501" quantity="50" weight=".5" />
+      <item id="2501" quantity="60" weight=".3" />
+      <item id="2501" quantity="80" weight=".1" />
+    </item_pack>
+  </store_item>
+  <store_item>
+    <id>82</id>
+    <name>Runecrafter's Chest</name>
+    <feature_lock_req>runes</feature_lock_req>
+    <category>2</category>
+    <desc>Contains 10x Runecrafter's Pouches, plus an additional guaranteed Rune.</desc>
+    <priority>39</priority>
+    <hc_cost>200</hc_cost>
+    <asset_prefab>rune_chest</asset_prefab>
+    <bundle>15</bundle>
+    <desc_list name="Runecrafter Pouch" icon="rune_component_bag_item" bundle="17" quantity="10" />
+    <desc_list name="Random Rare Rune" icon="rune_empty_rare" bundle="34" quantity="1" />
+    <item_pack>
+      <pulls>10</pulls>
+      <item id="4013" quantity="1" weight=".3" />
+      <item id="4012" quantity="1" weight=".5" />
+      <item id="4012" quantity="2" weight=".05" />
+      <item id="4011" quantity="1" weight="1" />
+      <item id="4011" quantity="2" weight=".1" />
+      <item id="4001" quantity="2" weight="1" />
+      <item id="4001" quantity="3" weight=".5" />
+      <item id="4001" quantity="4" weight=".4" />
+      <item id="4001" quantity="5" weight=".2" />
+      <item id="4001" quantity="10" weight=".1" />
+      <item id="2001" quantity="15" weight="1" />
+      <item id="2001" quantity="20" weight=".5" />
+      <item id="2001" quantity="25" weight=".3" />
+      <item id="2001" quantity="50" weight=".1" />
+      <item id="2501" quantity="40" weight="1" />
+      <item id="2501" quantity="50" weight=".5" />
+      <item id="2501" quantity="60" weight=".3" />
+      <item id="2501" quantity="80" weight=".1" />
+    </item_pack>
+    <random_rune number="1" min_rarity="2" max_rarity="4" set="1" />
+  </store_item>
+  <store_item>
+    <id>83</id>
+    <name>Random Rune</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Creates one random Rare+ Rune.</desc>
+    <priority>1</priority>
+    <hc_cost>1000</hc_cost>
+    <asset_prefab>rune_empty_rare</asset_prefab>
+    <icon>rune_empty_rare</icon>
+    <bundle>34</bundle>
+    <random_rune number="1" min_rarity="2" max_rarity="4" set="1" />
+  </store_item>
+  <store_item>
+    <id>84</id>
+    <name>Arena Item Basic Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Contains various items as a reward for Arenas.</desc>
+    <priority>1</priority>
+    <hc_cost>1000</hc_cost>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="2001" quantity="2" weight="1" />
+      <!-- Arcane Fragments -->
+      <item id="2501" quantity="4" weight="1" />
+      <!-- Blue Fire Soul -->
+      <item id="1012" quantity="2" weight="1" />
+      <!-- Gold Bar -->
+      <item id="1002" quantity="1" weight="1" />
+      <!-- Energy Refill +5 -->
+    </item_pack>
+  </store_item>
+  <store_item>
+    <id>85</id>
+    <name>Arena Item Rare Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Contains various items as a reward for Arenas.</desc>
+    <priority>1</priority>
+    <hc_cost>1000</hc_cost>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="4013" quantity="1" weight=".05" />
+      <!-- Legendary Rune Sliver -->
+      <item id="4012" quantity="1" weight=".1" />
+      <!-- Epic Runeshell -->
+      <item id="4011" quantity="1" weight=".2" />
+      <!-- Rare Runeshell -->
+      <item id="4001" quantity="2" weight="1" />
+      <!-- Inscription Dust -->
+      <item id="2001" quantity="4" weight="1" />
+      <!-- Arcane Fragments -->
+      <item id="2501" quantity="10" weight="1" />
+      <!-- Blue Fire Soul -->
+      <item id="1012" quantity="4" weight="1" />
+      <!-- Gold Bar -->
+      <item id="1004" quantity="1" weight="1" />
+      <!-- Energy Refill +20 -->
+    </item_pack>
+  </store_item>
+  <store_item>
+    <id>91</id>
+    <name>Inventory Expansion</name>
+    <category>2</category>
+    <desc>Increases your Card Inventory by 25.</desc>
+    <priority>38</priority>
+    <hc_cost>200</hc_cost>
+    <asset_prefab>card_box</asset_prefab>
+    <bundle>35</bundle>
+    <item id="2507" quantity="1" />
+    <limited_buy index="1" cost="50" />
+    <limited_buy index="2" cost="60" />
+    <limited_buy index="3" cost="70" />
+    <limited_buy index="4" cost="80" />
+  </store_item>
+  <store_item>
+    <id>92</id>
+    <name>Deck Slot Expansion</name>
+    <category>2</category>
+    <desc>Adds an extra Deck Slot.</desc>
+    <priority>37</priority>
+    <hc_cost>200</hc_cost>
+    <asset_prefab>deck_slots</asset_prefab>
+    <bundle>35</bundle>
+    <item id="2508" quantity="1" />
+    <limited_buy index="1" cost="200" />
+    <limited_buy index="2" cost="250" />
+    <limited_buy index="3" cost="300" />
+  </store_item>
+  <store_item>
+    <id>93</id>
+    <name>Mysterious Egg</name>
+    <category>2</category>
+    <desc>A mysterious egg our goblin merchant friend picked up during our travels. No one knows where it came from.</desc>
+    <show_desc>1</show_desc>
+    <priority>50</priority>
+    <sc_cost>500</sc_cost>
+    <asset_prefab>mythic_dragon_egg</asset_prefab>
+    <bundle>30</bundle>
+    <!-- <item id='2516' quantity='1' /> -->
+    <limited_buy index="1" sc_cost="500" />
+    <cards>
+      <card min_level="1" max_level="1" unit_id="2035" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>94</id>
+    <name>Embersoul Pouch</name>
+    <category>2</category>
+    <desc>Contains between 10 and 25 Embersouls!</desc>
+    <priority>45</priority>
+    <hc_cost>90</hc_cost>
+    <asset_prefab>embersoul_package_1</asset_prefab>
+    <bundle>30</bundle>
+    <card_restriction>2039</card_restriction>
+    <!-- Remove from store if player has this card -->
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="2515" quantity="10" weight=".25" />
+      <item id="2515" quantity="11" weight=".5" />
+      <item id="2515" quantity="12" weight=".75" />
+      <item id="2515" quantity="13" weight=".75" />
+      <item id="2515" quantity="14" weight=".8" />
+      <item id="2515" quantity="15" weight="1" />
+      <item id="2515" quantity="16" weight="1" />
+      <item id="2515" quantity="17" weight=".8" />
+      <item id="2515" quantity="18" weight=".7" />
+      <item id="2515" quantity="19" weight=".7" />
+      <item id="2515" quantity="20" weight=".4" />
+      <item id="2515" quantity="21" weight=".4" />
+      <item id="2515" quantity="22" weight=".2" />
+      <item id="2515" quantity="23" weight=".2" />
+      <item id="2515" quantity="24" weight=".1" />
+      <item id="2515" quantity="25" weight=".1" />
+    </item_pack>
+  </store_item>
+  <!-- =============================== -->
+  <!-- ======= SPECIAL MARKET ======== -->
+  <!-- =============================== -->
+  <store_item>
+    <id>3001</id>
+    <name>Epic Pack</name>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives four cards with one guaranteed Epic or higher. Best chance at Legendaries!</desc>
+    <asset_prefab>epic_sale_pack</asset_prefab>
+    <bundle>30</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>60</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" set="1000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3002</id>
+    <name>Aether Epic Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives three Aether cards from the Standard Set, one Epic and two Rares or higher!</desc>
+    <asset_prefab>aether_crystal</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <bundle>30</bundle>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="1" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="1" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="1" set="1000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3003</id>
+    <name>Chaos Epic Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives three Chaos cards from the Standard Set, one Epic and two Rares or higher!</desc>
+    <asset_prefab>chaos_crystal</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <bundle>30</bundle>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="2" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="2" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="2" set="1000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3004</id>
+    <name>Wyld Epic Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives three Wyld cards from the Standard Set, one Epic and two Rares or higher!</desc>
+    <asset_prefab>wyld_crystal</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <bundle>30</bundle>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="3" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="3" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="3" set="1000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3005</id>
+    <name>Triple Undead Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives three Undead cards guaranteed Epics or higher.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="1000,3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3006</id>
+    <name>Legendary Undeadstone Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one guaranteed Legendary Undead card and three additional Undead cards guaranteed Epic or higher.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="7" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3007</id>
+    <name>Legendary Angelstone Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one guaranteed Legendary Angel card and three additional Angel cards guaranteed Epic or higher.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="6" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3008</id>
+    <name>x10 Angel Epic Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives ten Epic Angel cards or higher.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="1000,3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3009</id>
+    <name>Angel Epic Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one Epic Angel card or higher!</desc>
+    <asset_prefab>angel_crystal_epic</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <bundle>46</bundle>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="6" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="6" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="1000,3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3010</id>
+    <name>Triple Angel Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives three Angel cards guaranteed Epics or higher.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="1000,3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3011</id>
+    <name>Triple Elemental Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives three Elemental cards guaranteed Epics or higher.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="1000,3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3012</id>
+    <name>Legendary Elementalstone Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one guaranteed Legendary Elemental card and three additional Elemental cards guaranteed Epic or higher.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="5" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3013</id>
+    <name>x10 Elemental Epic Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives ten Epic+ Elemental cards or higher from Standard or Premium set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="1000,3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3014</id>
+    <name>Triple Frog Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives three Frog cards guaranteed Epics or higher.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="1000,3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3015</id>
+    <name>Legendary Frogstone Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one guaranteed Legendary Frog card and three additional Frog cards guaranteed Epic or higher.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="4" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="1000,3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3016</id>
+    <name>Quadra Frog Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives four copies of one guaranteed Epic or higher Frog card.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="1000,3000" number="4" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3017</id>
+    <name>Avian Epic Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives three Avian cards from Standard or Premium set, two Rares+ and one Epic+!</desc>
+    <asset_prefab>event_011_crystal_epic</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <bundle>59</bundle>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="10" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="10" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="1000,3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3018</id>
+    <name>Quadra Avian Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives four copies of one guaranteed Epic or higher Avian card from Standard or Premium set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="1000,3000" number="4" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3019</id>
+    <name>Triple Avian Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives three Avian cards guaranteed Epics or higher.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="1000,3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3020</id>
+    <name>Legendary Avianstone Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one guaranteed Legendary Avian card and three additional Avian cards guaranteed Epic or higher.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="10" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="1000,3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3021</id>
+    <name>Avian Rare Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two Avian cards with both guaranteed Rare or higher.</desc>
+    <priority>1</priority>
+    <asset_prefab>rare_pack</asset_prefab>
+    <icon>icon_green_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="10" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="10" set="1000,3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3022</id>
+    <name>Rare Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two cards with both guaranteed ^c8E5FRare ^cFFFFor higher.</desc>
+    <priority>1</priority>
+    <asset_prefab>rare_pack</asset_prefab>
+    <icon>icon_green_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" set="1000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3023</id>
+    <name>Dragon Epic Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one Epic+ Dragon card and two Rare+ cards from Standard or Premium set!</desc>
+    <asset_prefab>event_011_crystal_epic</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <bundle>59</bundle>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="1000,3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3024</id>
+    <name>Quadra Dragon Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives four copies of one guaranteed Epic or higher Dragon card from Standard or Premium set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="1000,3000" number="4" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3025</id>
+    <name>Insect Rare Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two Rare+ Insect cards from Standard or Premium Set.</desc>
+    <priority>1</priority>
+    <asset_prefab>rare_pack</asset_prefab>
+    <icon>icon_green_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="13" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="13" set="1000,3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3026</id>
+    <name>Insect Epic Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one Epic+ Insect card and two Rare+ Insect cards from Standard or Premium set!</desc>
+    <asset_prefab>event_013_crystal_epic</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <bundle>64</bundle>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="13" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" type="13" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="1000,3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3027</id>
+    <name>Quadra Insect Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives four copies of one guaranteed Epic or higher Insect card from Premium set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="3000" number="4" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3028</id>
+    <name>Triple Insect Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives three Epic+ Insect cards from Standard or Premium Set.</desc>
+    <priority>1</priority>
+    <asset_prefab>event_013_crystal_epic</asset_prefab>
+    <bundle>64</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="1000,3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3029</id>
+    <name>Legendary Insectstone Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one guaranteed Legendary Insect card and three additional Epic+ Insect cards from Standard or Premium Set!</desc>
+    <priority>1</priority>
+    <asset_prefab>event_013_crystal_legendary</asset_prefab>
+    <bundle>64</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="13" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="1000,3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3030</id>
+    <name>Quadra Angel Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives four copies of one guaranteed Epic or higher Angel card from Premium set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" number="4" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3031</id>
+    <name>Quadra Elemental Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives four copies of one guaranteed Epic or higher Elemental card from Premium set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" number="4" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3032</id>
+    <name>Leveled Aether Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives three fully leveled Aether cards from the Standard or Premium Set, all guaranteed ^c0DFFEpics ^cFFFFor higher.</desc>
+    <asset_prefab>aether_crystal_epic</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <bundle>30</bundle>
+    <hc_cost>180</hc_cost>
+    <cards>
+      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="1" set="1000,3000" />
+      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="1" set="1000,3000" />
+      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="1" set="1000,3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3033</id>
+    <name>Leveled Chaos Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives three fully leveled Chaos cards from the Standard or Premium Set, all guaranteed ^c0DFFEpics ^cFFFFor higher.</desc>
+    <asset_prefab>chaos_crystal_epic</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <bundle>30</bundle>
+    <hc_cost>180</hc_cost>
+    <cards>
+      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="2" set="1000,3000" />
+      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="2" set="1000,3000" />
+      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="2" set="1000,3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3034</id>
+    <name>Leveled Wyld Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives three fully leveled Wyld cards from the Standard or Premium Set, all guaranteed ^c0DFFEpics ^cFFFFor higher.</desc>
+    <asset_prefab>wyld_crystal_epic</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <bundle>30</bundle>
+    <hc_cost>180</hc_cost>
+    <cards>
+      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="3" set="1000,3000" />
+      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="3" set="1000,3000" />
+      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="3" set="1000,3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3035</id>
+    <name>Quadra Undead Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives four copies of one guaranteed Epic or higher Undead card from Premium set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000" number="4" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3036</id>
+    <name>Quadra Goblin Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives four copies of one guaranteed Epic or higher Goblin card from Premium set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" number="4" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3037</id>
+    <name>Legendary Goblinstone Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one guaranteed Legendary Goblin card and three additional Goblin cards guaranteed Epic or higher.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="11" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3038</id>
+    <name>Goblin Epic Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one guaranteed Epic+ Goblin and two guaranteed Rares+ cards from Standard or Premium set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" set="1000,3000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3039</id>
+    <name>Rare Shard Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two Rare+ cards from Standard or Premium Set.</desc>
+    <priority>1</priority>
+    <asset_prefab>rare_pack</asset_prefab>
+    <icon>icon_green_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="2" max_rarity="4" set="1000,3000" />
+    </cards>
+  </store_item>
+  <!-- =============================== -->
+  <!-- ==== Emporium Market Items ==== -->
+  <!-- =============================== -->
+  <!-- 
+		<cycle_length>86400</cycle_length> 	cycle length in seconds. Keep same per pack or may f*** everything
+		<start_offset>0</start_offset> 		offset from UTC in seconds 
+	-->
+  <!-- Emporium Test 1
+	
+	<store_item>
+		<id>4001</id>
+		<name>Cycling Card (12h)</name>
+		<category>4</category>
+		<desc>An Epic or Legendary from Standard or Premium is chosen randomly for sale every 12 hours at 5:00 and 17:00! Gives a single copy of the displayed card. May be purchased multiple times, but the price increases each purchase!</desc>
+		<priority>1</priority>
+		<asset_prefab>epic_pack</asset_prefab>
+		<icon>icon_blue_crystal</icon>
+		<scale_prices>1</scale_prices>
+		<rarity3scaling purchase1='60' purchase2='100' purchase3='175' purchase4='300' scalar='150' />
+		<rarity4scaling purchase1='150' purchase2='250' purchase3='400' purchase4='600' scalar='200' />
+		<cycle_cards>1</cycle_cards>
+		<cycle_length>43200</cycle_length> 	cycle length in seconds. Keep same per pack or may f*** everything
+		<start_offset>18000</start_offset> 		offset from UTC in seconds
+		<cards>
+			<card min_level='1' max_level='1' min_rarity='3' max_rarity='4' set='1000,3000' number='4' />
+		</cards>
+	</store_item> -->
+  <store_item>
+    <id>4002</id>
+    <name>Cycling Item</name>
+    <category>4</category>
+    <vip_level_req>1</vip_level_req>
+    <desc>Gives the displayed item. May be purchased multiple times, but the price increases each purchase!</desc>
+    <preview_desc>Unlocks a random Item that can be purchased with gold and cycles every 24 hours! Requires VIP Level 1.</preview_desc>
+    <priority>20</priority>
+    <icon>icon_purple_crystal</icon>
+    <scale_prices>1</scale_prices>
+    <cost_type>2</cost_type>
+    <cycle_cards>1</cycle_cards>
+    <cycle_length>86400</cycle_length>
+    <start_offset>61200</start_offset>
+    <costed_items>
+      <item id="11" number="1" purchase1="800" purchase2="1000" purchase3="1400" purchase4="2000" purchase5="3000" scalar="1500" />
+      <!-- <item id='12' number='1' purchase1='8000' purchase2='16000' purchase3='32000' purchase4='64000' purchase5='96000' scalar='48000' />
+			<item id='1002' number='1' purchase1='100' purchase2='200' purchase3='400' purchase4='800' purchase5='1200' scalar='600' />
+			<item id='1003' number='1' purchase1='200' purchase2='400' purchase3='800' purchase4='1600' purchase5='2400' scalar='1200' />
+			<item id='1004' number='1' purchase1='400' purchase2='800' purchase3='1600' purchase4='2400' purchase5='3600' scalar='1800' /> -->
+      <item id="4001" number="1" purchase1="500" purchase2="1000" purchase3="2000" purchase4="3400" purchase5="5100" scalar="1600" />
+      <item id="2001" number="1" purchase1="150" purchase2="300" purchase3="600" purchase4="1000" purchase5="1500" scalar="800" />
+      <item id="2501" number="10" purchase1="300" purchase2="600" purchase3="1200" purchase4="1900" purchase5="2900" scalar="1500" />
+      <!-- <item id='1021' number='1' purchase1='300' purchase2='600' purchase3='1200' purchase4='1900' purchase5='2900' scalar='1500' /> -->
+      <item id="4011" number="1" purchase1="4000" purchase2="6000" purchase3="10000" purchase4="14000" purchase5="18000" scalar="4000" />
+      <item id="2515" number="1" purchase1="1000" purchase2="2000" purchase3="4000" purchase4="8000" purchase5="12000" scalar="6000" />
+    </costed_items>
+  </store_item>
+  <store_item>
+    <id>4003</id>
+    <name>Cycling Card</name>
+    <category>4</category>
+    <vip_level_req>5</vip_level_req>
+    <desc>Gives a single copy of the displayed card. May be purchased multiple times, but the price increases each purchase!</desc>
+    <preview_desc>Unlocks a random Epic or Legendary card that can be purchased with shards and cycles every 24 hours! Requires VIP Level 5.</preview_desc>
+    <priority>30</priority>
+    <icon>icon_blue_crystal</icon>
+    <scale_prices>1</scale_prices>
+    <tied_id>4005</tied_id>
+    <rarity3scaling purchase1="60" purchase2="100" purchase3="175" purchase4="300" scalar="150" />
+    <rarity4scaling purchase1="150" purchase2="250" purchase3="400" purchase4="600" scalar="200" />
+    <cycle_cards>1</cycle_cards>
+    <cycle_length>86400</cycle_length>
+    <!-- cycle length in seconds. Keep same per pack or may f*** everything -->
+    <start_offset>61200</start_offset>
+    <!-- offset from UTC in seconds -->
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" set="1000,3000" number="4" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>4004</id>
+    <name>Cycling Rune</name>
+    <category>4</category>
+    <vip_level_req>9</vip_level_req>
+    <desc>Gives a single copy of the displayed rune. May be purchased multiple times, but the price increases each purchase!</desc>
+    <preview_desc>Unlocks a random Rare or Epic rune that can be purchased with shards and cycles every 24 hours! Requires VIP Level 9.</preview_desc>
+    <priority>40</priority>
+    <icon>icon_purple_crystal</icon>
+    <scale_prices>1</scale_prices>
+    <rarity2scaling purchase1="100" purchase2="200" scalar="200" />
+    <rarity3scaling purchase1="300" purchase2="500" purchase3="800" scalar="400" />
+    <rarity4scaling purchase1="1000" purchase2="2000" purchase3="4000" scalar="4000" />
+    <cycle_cards>1</cycle_cards>
+    <cycle_length>86400</cycle_length>
+    <start_offset>61200</start_offset>
+    <items>
+      <item min_rarity="2" max_rarity="3" type="3" set="1" />
+    </items>
+  </store_item>
+  <store_item>
+    <id>4005</id>
+    <name>Cycling Card</name>
+    <category>4</category>
+    <vip_level_req>13</vip_level_req>
+    <desc>Gives a single copy of the displayed card. May be purchased multiple times, but the price increases each purchase!</desc>
+    <preview_desc>Unlocks a random Epic or Legendary card that can be purchased with shards and cycles every 24 hours! Requires VIP Level 13.</preview_desc>
+    <priority>50</priority>
+    <icon>icon_blue_crystal</icon>
+    <scale_prices>1</scale_prices>
+    <tied_id>4003</tied_id>
+    <rarity3scaling purchase1="60" purchase2="100" purchase3="175" purchase4="300" scalar="150" />
+    <rarity4scaling purchase1="150" purchase2="250" purchase3="400" purchase4="600" scalar="200" />
+    <cycle_cards>1</cycle_cards>
+    <cycle_length>86400</cycle_length>
+    <start_offset>61200</start_offset>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" set="1000,3000" number="4" />
+    </cards>
+  </store_item>
+  <!-- Emporium Test 2
+	
+	<store_item>
+		<id>4008</id>
+		<name>Cycling Card</name>
+		<category>4</category>
+		<desc>Gives a single copy of the displayed card. May be purchased multiple times, but the price increases each purchase!</desc>
+		<priority>30</priority>
+		<icon>icon_blue_crystal</icon>
+		<scale_prices>1</scale_prices>
+		<tied_id>4009</tied_id>
+		<rarity3scaling purchase1='60' purchase2='100' purchase3='175' purchase4='300' scalar='150' />
+		<rarity4scaling purchase1='150' purchase2='250' purchase3='400' purchase4='600' scalar='200' />
+		<cycle_cards>1</cycle_cards>
+		<cycle_length>86400</cycle_length> 	
+		<start_offset>61200</start_offset> 	
+		<cards>
+			<card min_level='1' max_level='1' min_rarity='3' max_rarity='4' set='1000,3000' number='4' />
+		</cards>
+	</store_item>
+	
+	<store_item>
+		<id>4009</id>
+		<name>Cycling Card</name>
+		<category>4</category>
+		<desc>Gives a single copy of the displayed card. May be purchased multiple times, but the price increases each purchase!</desc>
+		<priority>40</priority>
+		<icon>icon_blue_crystal</icon>
+		<scale_prices>1</scale_prices>
+		<tied_id>4008</tied_id>
+		<rarity3scaling purchase1='60' purchase2='100' purchase3='175' purchase4='300' scalar='150' />
+		<rarity4scaling purchase1='150' purchase2='250' purchase3='400' purchase4='600' scalar='200' />
+		<cycle_cards>1</cycle_cards>
+		<cycle_length>86400</cycle_length> 
+		<start_offset>61200</start_offset> 		
+		<cards>
+			<card min_level='1' max_level='1' min_rarity='3' max_rarity='4' set='1000,3000' number='4' />
+		</cards>
+	</store_item>
+
+	<store_item>
+		<id>4010</id>
+		<name>Cycling Rune</name>
+		<category>4</category>
+		<desc>Gives a single copy of the displayed rune. May be purchased multiple times, but the price increases each purchase!</desc>
+		<priority>50</priority>
+		<icon>icon_purple_crystal</icon>
+		<scale_prices>1</scale_prices>
+		<rarity2scaling purchase1='100' purchase2='200' scalar='200' />
+		<rarity3scaling purchase1='300' purchase2='500' purchase3='800' scalar='400' />
+		<rarity4scaling purchase1='1000' purchase2='2000' purchase3='4000' scalar='4000' />
+		<cycle_cards>1</cycle_cards>
+		<cycle_length>86400</cycle_length>
+		<start_offset>61200</start_offset>
+		<items>
+			<item min_rarity='2' max_rarity='3' type='3' />
+		</items>
+	</store_item> -->
+  <!-- =============================== -->
+  <!-- ==== Shard Bundle Packages ==== -->
+  <!-- =============================== -->
+  <store_item>
+    <id>5001</id>
+    <name>Energy Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Fifteen Energy Potion +20 for 100 Shards for a limited time only! May be purchased 5 times!</desc>
+    <asset_prefab>event_012_energyChest</asset_prefab>
+    <bundle>62</bundle>
+    <icon>energy_refill_20</icon>
+    <hc_cost>100</hc_cost>
+    <!-- Stuff to give -->
+    <item id="1004" quantity="15" />
+  </store_item>
+  <store_item>
+    <id>5002</id>
+    <name>Legendary Dragonstone Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Includes one Legendary Dragon card and three additional Epic or higher Dragon cards from Premium set! May be purchased three times!</desc>
+    <asset_prefab>event_012_crystal_legendary</asset_prefab>
+    <bundle>62</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>240</hc_cost>
+    <!-- Stuff to give -->
+    <pack>28</pack>
+    <sp>180</sp>
+    <gold>1000</gold>
+    <item id="1003" quantity="2" />
+  </store_item>
+  <store_item>
+    <id>5003</id>
+    <name>Dragon Epic Pack Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Includes 1500 gold, one Bounty Refill +5, one Energy Potion +20, and one Epic+ Dragon card and two Rare+ cards from Standard or Premium set! May be purchased three times!</desc>
+    <asset_prefab>event_012_crystal_epic_bundle</asset_prefab>
+    <bundle>62</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>100</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3023</pack>
+    <item id="1004" quantity="1" />
+    <!-- Energy Potion +20 -->
+    <item id="1023" quantity="1" />
+    <!-- Bounty Refill +5 -->
+    <gold>1500</gold>
+  </store_item>
+  <store_item>
+    <id>5004</id>
+    <name>Double Epic Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Includes two Standard Set ^c0DFFEpic Packs^cFFFF, 100 Arcane Dust, one Energy Potion +20, and 500 Gold! May be purchased five times!</desc>
+    <asset_prefab>epic_double_pack</asset_prefab>
+    <background_prefab>double_epic_banner</background_prefab>
+    <bundle>30</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>140</hc_cost>
+    <!-- Stuff to give -->
+    <item id="12" quantity="2" />
+    <item id="1004" quantity="1" />
+    <sp>100</sp>
+    <gold>500</gold>
+  </store_item>
+  <store_item>
+    <id>5005</id>
+    <name>Inscription Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>210</priority>
+    <desc>Includes 30 Inscription Powder, two Runecrafter's Pouch, and 1000 gold! May be purchased five times!</desc>
+    <asset_prefab>rune_bag</asset_prefab>
+    <bundle>15</bundle>
+    <!-- <icon>rune_component_bag_item</icon> -->
+    <hc_cost>90</hc_cost>
+    <!-- Stuff to give -->
+    <item id="4001" quantity="30" />
+    <item id="514" quantity="2" />
+    <gold>1000</gold>
+  </store_item>
+  <store_item>
+    <id>5006</id>
+    <name>Quadra Dragon Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives four copies of one Epic+ Dragon card from Standard or Premium set. Also includes two Bounty Refills +10, two Energy Potions +20, and one random Rare+ Rune. May only be purchased once.</desc>
+    <asset_prefab>event_012_crystal_epic4</asset_prefab>
+    <background_prefab>event_012_banner_epic4Pack</background_prefab>
+    <bundle>62</bundle>
+    <!-- <icon>rune_component_bag_item</icon> -->
+    <hc_cost>400</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3024</pack>
+    <item id="1024" quantity="2" />
+    <item id="1004" quantity="2" />
+    <item id="513" quantity="1" />
+  </store_item>
+  <store_item>
+    <id>5007</id>
+    <name>Aether Faction Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Includes 1500 gold, one Bounty Refill +5, one Energy Potion +20, and three Standard Aether cards, 1 Epic and 2 Rares or higher! May be purchased once.</desc>
+    <asset_prefab>aether_crystal</asset_prefab>
+    <bundle>30</bundle>
+    <!-- <icon>rune_component_bag_item</icon> -->
+    <hc_cost>100</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3002</pack>
+    <gold>1500</gold>
+    <item id="1023" quantity="1" />
+    <item id="1004" quantity="1" />
+  </store_item>
+  <store_item>
+    <id>5008</id>
+    <name>Chaos Faction Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Includes 1500 gold, one Bounty Refill +5, one Energy Potion +20, and three Standard Chaos cards, 1 Epic and 2 Rares or higher! May be purchased once.</desc>
+    <asset_prefab>chaos_crystal</asset_prefab>
+    <bundle>30</bundle>
+    <!-- <icon>rune_component_bag_item</icon> -->
+    <hc_cost>100</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3003</pack>
+    <gold>1500</gold>
+    <item id="1023" quantity="1" />
+    <item id="1004" quantity="1" />
+  </store_item>
+  <store_item>
+    <id>5009</id>
+    <name>Wyld Faction Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Includes 1500 gold, one Bounty Refill +5, one Energy Potion +20, and three Standard Wyld cards, 1 Epic and 2 Rares or higher! May be purchased once.</desc>
+    <asset_prefab>wyld_crystal</asset_prefab>
+    <bundle>30</bundle>
+    <!-- <icon>rune_component_bag_item</icon> -->
+    <hc_cost>100</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3004</pack>
+    <gold>1500</gold>
+    <item id="1023" quantity="1" />
+    <item id="1004" quantity="1" />
+  </store_item>
+  <store_item>
+    <id>5010</id>
+    <name>Dust Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Includes 220 Arcane Dust, 1000 Gold and three Energy Potion +5. May be purchased five times!</desc>
+    <asset_prefab>dust_package_4</asset_prefab>
+    <bundle>15</bundle>
+    <!-- <icon>rune_component_bag_item</icon> -->
+    <hc_cost>220</hc_cost>
+    <!-- Stuff to give -->
+    <sp>220</sp>
+    <gold>1000</gold>
+    <item id="1002" quantity="3" />
+  </store_item>
+  <store_item>
+    <id>5011</id>
+    <name>Insect Epic Pack Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Includes 1500 gold, one Bounty Refill +5, one Energy Potion +20, and one Epic+ Insect card and two Rare+ Insect cards from Standard or Premium set! May be purchased three times!</desc>
+    <asset_prefab>event_013_crystal_epic</asset_prefab>
+    <background_prefab>event_013_banner_epicPack</background_prefab>
+    <bundle>64</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>100</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3026</pack>
+    <item id="1004" quantity="1" />
+    <!-- Energy Potion +20 -->
+    <item id="1023" quantity="1" />
+    <!-- Bounty Refill +5 -->
+    <gold>1500</gold>
+  </store_item>
+  <store_item>
+    <id>5012</id>
+    <name>Quadra Insect Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives four copies of one Epic+ Insect card from Standard or Premium set. Also includes two Bounty Refills +10, two Energy Potions +20, and one random Rare+ Rune. May only be purchased once.</desc>
+    <asset_prefab>event_013_crystal_epic4</asset_prefab>
+    <background_prefab>event_013_banner_epic4Pack</background_prefab>
+    <bundle>64</bundle>
+    <!-- <icon>rune_component_bag_item</icon> -->
+    <hc_cost>400</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3027</pack>
+    <item id="1024" quantity="2" />
+    <item id="1004" quantity="2" />
+    <item id="513" quantity="1" />
+  </store_item>
+  <store_item>
+    <id>5013</id>
+    <name>Dust Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Includes 220 Arcane Dust, 1000 Gold and three Energy Potion +5. May be purchased five times!</desc>
+    <asset_prefab>dust_package_4</asset_prefab>
+    <bundle>15</bundle>
+    <!-- <icon>rune_component_bag_item</icon> -->
+    <hc_cost>220</hc_cost>
+    <!-- Stuff to give -->
+    <sp>220</sp>
+    <gold>1000</gold>
+    <item id="1002" quantity="3" />
+  </store_item>
+  <store_item>
+    <id>5014</id>
+    <name>Epic Runecrafter's Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Included one ^c0DFFEpic Runeshell^cFFFF, one Runecrafter's Chest, two Energy Potion +20, and 1500 gold! May be purchased three times!</desc>
+    <asset_prefab>rune_chest</asset_prefab>
+    <bundle>15</bundle>
+    <!-- <icon>rune_component_bag_item</icon> -->
+    <hc_cost>220</hc_cost>
+    <!-- Stuff to give -->
+    <gold>1500</gold>
+    <item id="4012" quantity="1" />
+    <item id="512" quantity="1" />
+    <item id="1004" quantity="2" />
+  </store_item>
+  <store_item>
+    <id>5015</id>
+    <name>Legendary Insectstone Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Includes one ^cE7FFLegendary ^cFFFFInsect card and three additional ^c0DFFEpic^cFFFF+ Insect cards from Standard or Premium set! May be purchased three times!</desc>
+    <asset_prefab>event_013_crystal_legendary</asset_prefab>
+    <background_prefab>event_013_banner_legenadaryPack</background_prefab>
+    <bundle>64</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3029</pack>
+    <sp>180</sp>
+    <gold>1000</gold>
+    <item id="1003" quantity="2" />
+  </store_item>
+  <store_item>
+    <id>5016</id>
+    <name>Chest of Bounty</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Includes five Bounty Refill +5 and 1500 gold! May be purchased 5 times!</desc>
+    <asset_prefab>bounty_pack_4</asset_prefab>
+    <bundle>15</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>90</hc_cost>
+    <!-- Stuff to give -->
+    <gold>1500</gold>
+    <item id="1023" quantity="5" />
+  </store_item>
+  <store_item>
+    <id>5017</id>
+    <name>Legendary Pack</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives four cards with one guaranteed ^cE7FFLegendary ^cFFFFfrom Standard Set. May be purchased twice.</desc>
+    <asset_prefab>legendary_crystal</asset_prefab>
+    <bundle>30</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>200</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <pack>13</pack>
+  </store_item>
+  <store_item>
+    <id>5018</id>
+    <name>Rune of Armor Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one ^c0DFFRune of Armor^cFFFF (Armor +2) and 1500 gold! May be purchased three times.</desc>
+    <asset_prefab>armored_rune_gold</asset_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>300</hc_cost>
+    <!-- <show_desc>1</show_desc> -->
+    <!-- Stuff to give -->
+    <gold>1500</gold>
+    <item id="5062" quantity="1" />
+  </store_item>
+  <store_item>
+    <id>5019</id>
+    <name>Frostlance Valkyrie Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFFrostlance Valkyrie^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>rune_bolt_epic</asset_prefab>
+		<bundle>34</bundle> -->
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="5031" display_card_id="5031" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5020</id>
+    <name>Raid Survival Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Includes three Raid Refill +20 items, an Epic Pack, and 2000 gold. May be purchased 5 times.</desc>
+    <asset_prefab>triple_raid_refill_box</asset_prefab>
+    <bundle>35</bundle>
+    <hc_cost>200</hc_cost>
+    <num_available>5</num_available>
+    <!-- Stuff to give -->
+    <pack>12</pack>
+    <gold>2000</gold>
+    <item id="1035" quantity="3" />
+  </store_item>
+  <store_item>
+    <id>5021</id>
+    <name>Legendary Angelstone Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Includes one ^cE7FFLegendary ^cFFFFAngel card and three additional ^c0DFFEpic^cFFFF+ Angel cards from Premium set! May be purchased three times!</desc>
+    <asset_prefab>angel_crystal_legendary</asset_prefab>
+    <background_prefab>event_008_store_banner</background_prefab>
+    <bundle>46</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3007</pack>
+    <sp>180</sp>
+    <gold>1000</gold>
+    <item id="1003" quantity="2" />
+  </store_item>
+  <store_item>
+    <id>5022</id>
+    <name>Angel Epic Pack Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Includes one Epic+ Angel card and two Rare+ Angel cards from Standard or Premium set! May be purchased three times!</desc>
+    <asset_prefab>angel_crystal_epic</asset_prefab>
+    <bundle>46</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>100</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3009</pack>
+    <item id="1004" quantity="1" />
+    <!-- Energy Potion +20 -->
+    <item id="1023" quantity="1" />
+    <!-- Bounty Refill +5 -->
+    <gold>1500</gold>
+  </store_item>
+  <store_item>
+    <id>5023</id>
+    <name>Quadra Angel Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives four copies of one Epic+ Angel card from Premium set. Also includes two Bounty Refills +10, two Energy Potions +20, and one random Rare+ Rune. May only be purchased once.</desc>
+    <asset_prefab>angel_crystal_epic4x</asset_prefab>
+    <background_prefab>event_014_banner_epic4x</background_prefab>
+    <bundle>67</bundle>
+    <!-- <icon>rune_component_bag_item</icon> -->
+    <hc_cost>400</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3030</pack>
+    <item id="1024" quantity="2" />
+    <item id="1004" quantity="2" />
+    <item id="513" quantity="1" />
+  </store_item>
+  <store_item>
+    <id>5024</id>
+    <name>Legendary Elementalstone Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Includes one ^cE7FFLegendary ^cFFFFElemental card and three additional ^c0DFFEpic^cFFFF+ Elemental cards from Premium set! May be purchased three times!</desc>
+    <asset_prefab>elemental_crystal_legendary</asset_prefab>
+    <background_prefab>event_009_banner_legendary_crystal</background_prefab>
+    <bundle>49</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3012</pack>
+    <sp>180</sp>
+    <gold>1000</gold>
+    <item id="1003" quantity="2" />
+  </store_item>
+  <store_item>
+    <id>5025</id>
+    <name>Brambleblight Bundle Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFBrambleblight^cFFFF, 75 Arcane Dust, 10 Inscription Powder and 1500 gold! May be purchased four times.</desc>
+    <asset_prefab>event_015_brambleblight</asset_prefab>
+    <bundle>69</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>300</hc_cost>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7046" display_card_id="7046" />
+    </cards>
+    <sp>75</sp>
+    <gold>1500</gold>
+    <item id="4001" quantity="10" />
+  </store_item>
+  <store_item>
+    <id>5026</id>
+    <name>Elemental Epic Pack Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Includes one ^c0DFFEpic^cFFFF+ Elemental card and two ^c8E5FRare^cFFFF+ Elemental cards from Standard or Premium set! May be purchased three times!</desc>
+    <asset_prefab>elemental_crystal_epic</asset_prefab>
+    <background_prefab>event_009_banner_epic_crystal</background_prefab>
+    <bundle>49</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>100</hc_cost>
+    <!-- Stuff to give -->
+    <pack>23</pack>
+    <item id="1004" quantity="1" />
+    <!-- Energy Potion +20 -->
+    <item id="1023" quantity="1" />
+    <!-- Bounty Refill +5 -->
+    <gold>1500</gold>
+  </store_item>
+  <store_item>
+    <id>5027</id>
+    <name>Quadra Elemental Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives four copies of one ^c0DFFEpic^cFFFF+ Elemental card from Premium set. Also includes two Bounty Refills +10, two Energy Potions +20, and one random Rare+ Rune. May only be purchased once.</desc>
+    <asset_prefab>elemental_crystal_epic4x</asset_prefab>
+    <background_prefab>event_015_banner_epic4x</background_prefab>
+    <bundle>69</bundle>
+    <!-- <icon>rune_component_bag_item</icon> -->
+    <hc_cost>400</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3031</pack>
+    <item id="1024" quantity="2" />
+    <item id="1004" quantity="2" />
+    <item id="513" quantity="1" />
+  </store_item>
+  <store_item>
+    <id>5028</id>
+    <name>Icestone Bundle Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFIcestone Beast^cFFFF, 75 Arcane Dust, 10 Inscription Powder and 1500 gold! May be purchased four times.</desc>
+    <asset_prefab>event_015_IceStoneBeast</asset_prefab>
+    <bundle>69</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>300</hc_cost>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="1642" display_card_id="1642" />
+    </cards>
+    <sp>75</sp>
+    <gold>1500</gold>
+    <item id="4001" quantity="10" />
+  </store_item>
+  <store_item>
+    <id>5029</id>
+    <name>Rune of Scorch Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^c0DFFRune of Scorch^cFFFF! May be purchased three times.</desc>
+    <!-- <asset_prefab>event_015_IceStoneBeast</asset_prefab>
+		<bundle>69</bundle> -->
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>240</hc_cost>
+    <!-- Stuff to give -->
+    <item id="5121" quantity="1" />
+  </store_item>
+  <store_item>
+    <id>5030</id>
+    <name>Darkflame Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFDarkflame^cFFFF! May be purchased four times.</desc>
+    <asset_prefab>event_015_darkflame</asset_prefab>
+    <bundle>69</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="6045" display_card_id="6045" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5031</id>
+    <name>Arcane Dust Chest</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Includes 300 Arcane Dust! May be purchased ten times!</desc>
+    <asset_prefab>dust_package_3</asset_prefab>
+    <bundle>15</bundle>
+    <!-- <icon>rune_component_bag_item</icon> -->
+    <hc_cost>250</hc_cost>
+    <!-- Stuff to give -->
+    <!-- <sp>300</sp> -->
+    <item id="4" quantity="300" />
+  </store_item>
+  <store_item>
+    <id>5032</id>
+    <name>Leveled Aether Pack</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Includes three fully leveled Aether cards from the Standard or Premium Set, all guaranteed ^c0DFFEpics ^cFFFFor higher! May be purchased 5 times!</desc>
+    <asset_prefab>aether_crystal_epic</asset_prefab>
+    <background_prefab>aether_epic_banner</background_prefab>
+    <bundle>30</bundle>
+    <show_desc>1</show_desc>
+    <!-- <icon>rune_component_bag_item</icon> -->
+    <hc_cost>180</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3032</pack>
+  </store_item>
+  <store_item>
+    <id>5033</id>
+    <name>Leveled Chaos Pack</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Includes three fully leveled Chaos cards from the Standard or Premium Set, all guaranteed ^c0DFFEpics ^cFFFFor higher! May be purchased 5 times!</desc>
+    <asset_prefab>chaos_crystal_epic</asset_prefab>
+    <background_prefab>chaos_epic_banner</background_prefab>
+    <bundle>30</bundle>
+    <show_desc>1</show_desc>
+    <!-- <icon>rune_component_bag_item</icon> -->
+    <hc_cost>180</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3033</pack>
+  </store_item>
+  <store_item>
+    <id>5034</id>
+    <name>Leveled Wyld Pack</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Includes three fully leveled Wyld cards from the Standard or Premium Set, all guaranteed ^c0DFFEpics ^cFFFFor higher! May be purchased 5 times!</desc>
+    <asset_prefab>wyld_crystal_epic</asset_prefab>
+    <background_prefab>wyld_epic_banner</background_prefab>
+    <bundle>30</bundle>
+    <show_desc>1</show_desc>
+    <!-- <icon>rune_component_bag_item</icon> -->
+    <hc_cost>180</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3034</pack>
+  </store_item>
+  <store_item>
+    <id>5035</id>
+    <name>Legendary Undeadstone Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Includes one ^cE7FFLegendary ^cFFFFUndead card and three additional ^c0DFFEpic^cFFFF+ Undead cards from Premium set! May be purchased three times!</desc>
+    <asset_prefab>undead_crystal_legendary</asset_prefab>
+    <bundle>42</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3006</pack>
+    <sp>180</sp>
+    <gold>1000</gold>
+    <item id="1003" quantity="2" />
+  </store_item>
+  <store_item>
+    <id>5036</id>
+    <name>Quadra Undead Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives four copies of one ^c0DFFEpic^cFFFF+ Undead card from Premium set. Also includes two Bounty Refills +10, two Energy Potions +20, and one random Rare+ Rune. May only be purchased once.</desc>
+    <asset_prefab>undead_crystal_epic4x</asset_prefab>
+    <background_prefab>event_016_banner_epic4x</background_prefab>
+    <bundle>73</bundle>
+    <!-- <icon>rune_component_bag_item</icon> -->
+    <hc_cost>400</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3035</pack>
+    <item id="1024" quantity="2" />
+    <item id="1004" quantity="2" />
+    <item id="513" quantity="1" />
+  </store_item>
+  <store_item>
+    <id>5037</id>
+    <name>Sack of Embersouls</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>210</priority>
+    <desc>Gives 40 ^cCC1FEmbersouls^cFFFF! May be purchased five times!</desc>
+    <asset_prefab>embersoulBag</asset_prefab>
+    <!-- <background_prefab>event_016_banner_epic4x</background_prefab> -->
+    <bundle>35</bundle>
+    <!-- <icon>rune_component_bag_item</icon> -->
+    <hc_cost>120</hc_cost>
+    <!-- Stuff to give -->
+    <item id="2515" quantity="40" />
+  </store_item>
+  <store_item>
+    <id>5038</id>
+    <name>Dust Satchel</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 80 Arcane Dust! May be purchased an unlimited number of times!</desc>
+    <asset_prefab>dust_package_2</asset_prefab>
+    <background_prefab>banner_epic</background_prefab>
+    <bundle>15</bundle>
+    <!-- <icon>rune_component_bag_item</icon> -->
+    <hc_cost>65</hc_cost>
+    <!-- Stuff to give -->
+    <item id="4" quantity="80" />
+  </store_item>
+  <store_item>
+    <id>5039</id>
+    <name>Firebeard Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFFirebeard^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="6033" display_card_id="6033" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5040</id>
+    <name>Quadra Goblin Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives four copies of one ^c0DFFEpic^cFFFF+ Goblin card from Premium set. Also includes two Bounty Refills +10, two Energy Potions +20, and one random Rare+ Rune. May only be purchased once.</desc>
+    <asset_prefab>event_017_crystal_epic4x</asset_prefab>
+    <background_prefab>event_017_banner_epic4x</background_prefab>
+    <bundle>75</bundle>
+    <!-- <icon>rune_component_bag_item</icon> -->
+    <hc_cost>400</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3036</pack>
+    <item id="1024" quantity="2" />
+    <item id="1004" quantity="2" />
+    <item id="513" quantity="1" />
+  </store_item>
+  <store_item>
+    <id>5041</id>
+    <name>Honor Risen Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFHonor Risen^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="5083" display_card_id="5083" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5042</id>
+    <name>Legendary Runecrafter's Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Includes one ^cE7FFLegendary Rune Sliver^cFFFF, one Runecrafter's Chest, 150 Arcane Dust, and 1500 gold! May be purchased three times!</desc>
+    <asset_prefab>rune_chest</asset_prefab>
+    <bundle>15</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>350</hc_cost>
+    <!-- Stuff to give -->
+    <item id="4013" quantity="1" />
+    <item id="512" quantity="1" />
+    <item id="4" quantity="150" />
+    <gold>1500</gold>
+  </store_item>
+  <store_item>
+    <id>5043</id>
+    <name>Legendary Goblinstone Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Includes one ^cE7FFLegendary ^cFFFFGoblin card and three additional ^c0DFFEpic^cFFFF+ Goblin cards from Premium set! May be purchased three times!</desc>
+    <asset_prefab>event_017_crystal_legendary</asset_prefab>
+    <background_prefab>event_017_banner_legendary_pack</background_prefab>
+    <bundle>75</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3037</pack>
+    <sp>180</sp>
+    <gold>1000</gold>
+    <item id="1003" quantity="2" />
+  </store_item>
+  <store_item>
+    <id>5044</id>
+    <name>Goblin Epic Pack Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Includes one ^c0DFFEpic^cFFFF+ Goblin card and two ^c8E5FRare^cFFFF+ cards from Standard or Premium set! May be purchased three times!</desc>
+    <asset_prefab>event_017_crystal_epic</asset_prefab>
+    <background_prefab>event_017_banner_epic_pack</background_prefab>
+    <bundle>75</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>60</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3038</pack>
+    <item id="1004" quantity="1" />
+    <!-- Energy Potion +20 -->
+    <item id="1023" quantity="1" />
+    <!-- Bounty Refill +5 -->
+    <gold>1500</gold>
+  </store_item>
+  <store_item>
+    <id>5045</id>
+    <name>Dungeon Survival Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Includes three Dungeon Refill +20 items, an Epic Pack, and 2000 gold. May be purchased 5 times.</desc>
+    <asset_prefab>dungeon_refill_box</asset_prefab>
+    <bundle>31</bundle>
+    <hc_cost>200</hc_cost>
+    <num_available>5</num_available>
+    <!-- Stuff to give -->
+    <pack>12</pack>
+    <gold>2000</gold>
+    <item id="1045" quantity="3" />
+  </store_item>
+  <store_item>
+    <id>5046</id>
+    <name>Fire Belcher Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^c0DFFFire Belcher^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>epic_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>80</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="6089" display_card_id="6089" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5047</id>
+    <name>Legendary Rune Sliver Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Includes one ^cE7FFLegendary Rune Sliver^cFFFF! May be purchased three times!</desc>
+    <asset_prefab>Legendary_rune_fragment</asset_prefab>
+    <bundle>35</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>140</hc_cost>
+    <!-- Stuff to give -->
+    <item id="4013" quantity="1" />
+  </store_item>
+  <store_item>
+    <id>5048</id>
+    <name>Woolmane Dragon Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^c0DFFWoolmane Dragon^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>epic_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>80</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7024" display_card_id="7024" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5049</id>
+    <name>Runic Dragon Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFRunic Dragon^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="5063" display_card_id="5063" />
+    </cards>
+  </store_item>
+</root>

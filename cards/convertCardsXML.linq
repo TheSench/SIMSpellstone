@@ -24,16 +24,29 @@ void Main()
 	HashSet<string> existingUnits = LoadUnits(doc);
 	HashSet<string> newUnits = new HashSet<string>();
 
+	Normalize("arena.xml", downloadFiles);
 	Normalize("achievements.xml", downloadFiles);
 	Normalize("battleground_effects.xml", downloadFiles);
 	Normalize("campaigns.xml", downloadFiles);
 	Normalize("cards.xml", downloadFiles);
+	Normalize("cards_config.xml", downloadFiles);
+	Normalize("cards_heroes.xml", downloadFiles);
+	Normalize("cards_premium_aether.xml", downloadFiles);
+	Normalize("cards_premium_chaos.xml", downloadFiles);
+	Normalize("cards_premium_wyld.xml", downloadFiles);
+	Normalize("cards_reward.xml", downloadFiles);
+	Normalize("cards_special.xml", downloadFiles);
+	Normalize("cards_standard.xml", downloadFiles);
+	Normalize("cards_story.xml", downloadFiles);
 	Normalize("fusion_recipes_cj2.xml", downloadFiles);
+	Normalize("guilds.xml", downloadFiles);
+	Normalize("guide.xml", downloadFiles);
 	Normalize("levels.xml", downloadFiles);
+	Normalize("market.xml", downloadFiles);
 	Normalize("missions.xml", downloadFiles);
 	Normalize("missions_event.xml", downloadFiles);
 	Normalize("passive_missions.xml", downloadFiles);
-	Normalize("arena.xml", downloadFiles);
+	Normalize("tutorial1.xml", downloadFiles);
 
 	g_unitIDs = new HashSet<string>();
 	xmlFile = Path.Combine(path, "cards.xml");

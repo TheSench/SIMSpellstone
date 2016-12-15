@@ -1,0 +1,7108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- ID's based on set and faction. -->
+  <!-- Commanders       - 1-499 -->
+  <!-- Player       - 1-199 -->
+  <!-- Story        - 200-499 -->
+  <!-- Special Cards    - 500-999 -->
+  <!-- Standard Set     - 1000-1999 -->
+  <!-- Aether       - 1000-1299 -->
+  <!-- Chaos        - 1300-1599 -->
+  <!-- Wyld         - 1600-1899 -->
+  <!-- Reward Set       - 2000-4999 -->
+  <!-- Premium Set      - 5000-7999 -->
+  <!-- Aether       - 5000-5999 -->
+  <!-- Chaos        - 6000-6999 -->
+  <!-- Wyld         - 7000-7999 -->
+  <!-- Enemy Set        - 8000-8999 -->
+  <!-- Fusion 1         - 1xxxx -->
+  <!-- Fusion 2         - 2xxxx -->
+  <!-- <give_full_salvage>1438977380</give_full_salvage>	 gives full salvage until this time -->
+  <!-- ======================= -->
+  <!-- == PLAYER COMMANDERS == -->
+  <!-- ======================= -->
+  <unit>
+    <id>1</id>
+    <card_type>1</card_type>
+    <name>Oda the Guardian</name>
+    <portrait>templeguardian</portrait>
+    <desc>Oda was born in a far away land, shipwrecked, and raised on a remote island temple. He's ventured in search of spellstones as a pilgrimage for his order and honor.</desc>
+    <attack>0</attack>
+    <health>8</health>
+    <skill id="protect" x="1" />
+    <rarity>2</rarity>
+    <type>1</type>
+    <set>7000</set>
+    <upgrade>
+      <level>2</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>16</health>
+      <skill id="counter" x="1" />
+      <skill id="protect" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2</id>
+    <card_type>1</card_type>
+    <name>Yuriel the Owl Mystic</name>
+    <portrait>owlmystic</portrait>
+    <desc>The Grand Library of the Aether has been curated by the Owl Mystics for hundreds of years. Their knowledge is accumulated in Yuriel through their ancestral bloodline.</desc>
+    <attack>0</attack>
+    <health>15</health>
+    <skill id="enhance" s="armored" x="1" />
+    <skill id="heal" x="1" y="1" />
+    <rarity>3</rarity>
+    <type>1</type>
+    <set>7000</set>
+    <upgrade>
+      <level>2</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>27</health>
+      <skill id="enhance" s="armored" x="1" />
+      <skill id="heal" x="1" all="1" y="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>33</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>39</health>
+      <skill id="enhance" s="armored" x="2" />
+      <skill id="heal" x="1" all="1" y="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>3</id>
+    <card_type>1</card_type>
+    <name>Samael</name>
+    <portrait>seraph</portrait>
+    <desc>Samael is the powerful and stoic leader of the Aether faction of magic. Don't ask him about the difference between bird wings and angel wings.</desc>
+    <attack>0</attack>
+    <health>22</health>
+    <skill id="enhance" s="armored" x="1" />
+    <skill id="weaken" x="1" />
+    <rarity>4</rarity>
+    <type>1</type>
+    <set>7000</set>
+    <upgrade>
+      <level>2</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>30</health>
+      <skill id="enhance" s="counter" x="1" />
+      <skill id="enhance" s="armored" x="1" />
+      <skill id="weaken" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>37</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>42</health>
+      <skill id="enhance" s="counter" x="1" />
+      <skill id="enhance" s="armored" all="1" x="1" />
+      <skill id="weaken" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>49</health>
+      <skill id="enhance" s="counter" x="1" />
+      <skill id="enhance" s="armored" all="1" x="1" />
+      <skill id="weaken" all="1" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>4</id>
+    <card_type>1</card_type>
+    <name>Aria the Necromancer</name>
+    <portrait>necromancer</portrait>
+    <desc>Aria is a powerful necromancer who aligns herself with Chaos magic. She likes long walks by moonlight and 'making' new friends.</desc>
+    <attack>0</attack>
+    <health>8</health>
+    <skill id="weaken" x="1" />
+    <rarity>2</rarity>
+    <type>2</type>
+    <set>7000</set>
+    <upgrade>
+      <level>2</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>15</health>
+      <skill id="enfeeble" x="1" />
+      <skill id="weaken" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5</id>
+    <card_type>1</card_type>
+    <name>Decim the Firebringer</name>
+    <portrait>flamebender</portrait>
+    <desc>Decim has always had an affinity for fire magic, even before being exiled from his village after it mysteriously burned down. An accident with a stolen spellstone imbued him with powerful abilities while also taking most of his sanity.</desc>
+    <attack>0</attack>
+    <health>16</health>
+    <skill id="enhance" s="counter" x="1" />
+    <skill id="strike" x="1" />
+    <rarity>3</rarity>
+    <type>2</type>
+    <set>7000</set>
+    <upgrade>
+      <level>2</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>26</health>
+      <skill id="enhance" s="counter" x="1" />
+      <skill id="strike" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>31</health>
+      <skill id="enhance" s="counter" all="1" x="1" />
+      <skill id="strike" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>37</health>
+      <skill id="enhance" s="counter" all="1" x="1" />
+      <skill id="strike" x="1" />
+      <skill id="strike" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6</id>
+    <card_type>1</card_type>
+    <name>Tarian the Lich Lord</name>
+    <portrait>lichking</portrait>
+    <desc>Wrapped in the cold winds of death, Tarian sits upon his throne as the center of the Chaos. Well respected, and well feared. He's a skeleton afterall.</desc>
+    <attack>0</attack>
+    <health>22</health>
+    <skill id="enhance" s="poison" x="1" />
+    <skill id="enhance" s="leech" x="1" />
+    <rarity>4</rarity>
+    <type>2</type>
+    <set>7000</set>
+    <upgrade>
+      <level>2</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>32</health>
+      <skill id="enhance" s="poison" x="1" />
+      <skill id="enhance" s="leech" x="1" />
+      <skill id="strike" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>38</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>43</health>
+      <skill id="enhance" s="poison" x="1" />
+      <skill id="enhance" s="leech" all="1" x="1" />
+      <skill id="strike" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>48</health>
+      <skill id="enhance" s="poison" x="1" />
+      <skill id="enhance" s="leech" all="1" x="1" />
+      <skill id="strike" all="1" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7</id>
+    <card_type>1</card_type>
+    <name>Elyse the Ranger</name>
+    <portrait>elyse</portrait>
+    <desc>Elyse lived a simple life on the edge of civilization until adulthood, giving her a burning spirit for adventure and the tools to track it.</desc>
+    <attack>0</attack>
+    <health>8</health>
+    <skill id="heal" x="1" />
+    <rarity>2</rarity>
+    <type>3</type>
+    <set>7000</set>
+    <upgrade>
+      <level>2</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>15</health>
+      <skill id="heal" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8</id>
+    <card_type>1</card_type>
+    <name>Commander Ursurio</name>
+    <portrait>bearcommander</portrait>
+    <desc>Ursurio is a respected representative of the Wyld despite his often aloof attitude and outlook. And hunger cravings.</desc>
+    <attack>0</attack>
+    <health>22</health>
+    <skill id="enhance" s="pierce" x="1" />
+    <skill id="rally" x="1" y="3" />
+    <rarity>3</rarity>
+    <type>3</type>
+    <set>7000</set>
+    <upgrade>
+      <level>2</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>32</health>
+      <skill id="enhance" s="pierce" x="1" />
+      <skill id="rally" x="1" y="3" />
+      <skill id="heal" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>37</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>42</health>
+      <skill id="enhance" s="pierce" x="1" />
+      <skill id="rally" x="2" y="3" />
+      <skill id="heal" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>9</id>
+    <card_type>1</card_type>
+    <name>Groc the Hammer</name>
+    <portrait>groc</portrait>
+    <desc>An ancient being of living stone, Groc wanders the wilderness in search of wisdom. You don't want to be between him and a hard place.</desc>
+    <attack>0</attack>
+    <health>25</health>
+    <skill id="protect" x="1" />
+    <skill id="rally" x="1" />
+    <rarity>4</rarity>
+    <type>3</type>
+    <set>7000</set>
+    <upgrade>
+      <level>2</level>
+      <health>30</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>35</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>41</health>
+      <skill id="protect" x="2" />
+      <skill id="rally" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>46</health>
+      <skill id="enhance" s="evade" all="1" x="1" />
+      <skill id="protect" x="2" />
+      <skill id="rally" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>53</health>
+      <skill id="enhance" s="evade" all="1" x="1" />
+      <skill id="protect" x="2" />
+      <skill id="rally" x="1" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>10</id>
+    <card_type>1</card_type>
+    <name>Rayne the Wavecrasher</name>
+    <portrait>elementalhero</portrait>
+    <desc>A master of water and wind magic, Rayne is the prime guardian of water life on Arcantica. She really knows how to rain on a parade.</desc>
+    <attack>0</attack>
+    <health>21</health>
+    <skill id="protect" y="5" x="1" />
+    <skill id="protect" x="1" />
+    <rarity>4</rarity>
+    <type>1</type>
+    <set>7000</set>
+    <upgrade>
+      <level>2</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>32</health>
+      <skill id="protect" y="5" x="2" />
+      <skill id="protect" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>38</health>
+      <skill id="protect" y="5" x="3" />
+      <skill id="protect" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>44</health>
+      <skill id="protect" y="5" x="3" />
+      <skill id="protect" all="1" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>50</health>
+      <skill id="enhance" s="frost" x="1" />
+      <skill id="protect" y="5" x="3" />
+      <skill id="protect" all="1" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>11</id>
+    <card_type>1</card_type>
+    <name>Orgoth the Hex Fist</name>
+    <portrait>orchero</portrait>
+    <desc>A respected leader of the Salt Waste tribes, Orgoth gained strange magical powers once buried deep in the Wastes. If he tries to give you a handshake you should probably decline.</desc>
+    <attack>0</attack>
+    <health>23</health>
+    <skill id="enhance" s="pierce" x="1" />
+    <skill id="enfeeble" x="1" />
+    <rarity>4</rarity>
+    <type>2</type>
+    <set>7000</set>
+    <upgrade>
+      <level>2</level>
+      <health>30</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>36</health>
+      <skill id="enhance" s="pierce" x="1" />
+      <skill id="enfeeble" x="1" />
+      <skill id="weaken" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>42</health>
+      <skill id="enhance" s="pierce" x="2" />
+      <skill id="enfeeble" x="1" />
+      <skill id="weaken" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>47</health>
+      <skill id="enhance" s="pierce" x="2" />
+      <skill id="enfeeble" x="1" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>53</health>
+      <skill id="enhance" s="pierce" x="2" />
+      <skill id="enfeeble" all="1" x="1" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12</id>
+    <card_type>1</card_type>
+    <name>Ol' Cedric</name>
+    <portrait>froghero</portrait>
+    <desc>Cedric is the former First Sword of the Emperor, High Commander of Dawnglow. Since retirement he spends much of his time training younger generations, advising the emperor, and catching flies for recreation.</desc>
+    <attack>0</attack>
+    <health>20</health>
+    <skill id="rally" y="4" x="1" />
+    <skill id="heal" y="4" x="1" />
+    <rarity>4</rarity>
+    <type>3</type>
+    <set>7000</set>
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>30</health>
+      <skill id="rally" y="4" x="2" />
+      <skill id="heal" y="4" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>35</health>
+      <skill id="rally" y="4" x="2" />
+      <skill id="heal" y="4" x="1" />
+      <skill id="protect" y="4" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>41</health>
+      <skill id="rally" y="4" x="2" />
+      <skill id="heal" all="1" y="4" x="1" />
+      <skill id="protect" y="4" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>47</health>
+      <skill id="rally" y="4" x="2" />
+      <skill id="heal" all="1" y="4" x="1" />
+      <skill id="protect" all="1" y="4" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>13</id>
+    <card_type>1</card_type>
+    <name>Oda the Aegis</name>
+    <portrait>odaupgrade</portrait>
+    <desc>Oda has taken his place as the Keeper of Seastone Temple's artifact, transcending his abilities. Unfortunately the upgrades don't come with a new outfit.</desc>
+    <attack>0</attack>
+    <health>31</health>
+    <skill id="imbue" s="counter" x="1" />
+    <skill id="protect" x="1" />
+    <rarity>4</rarity>
+    <type>1</type>
+    <set>7000</set>
+    <upgrade>
+      <level>2</level>
+      <health>35</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>39</health>
+      <skill id="imbue" s="counter" x="1" />
+      <skill id="enhance" s="counter" x="1" />
+      <skill id="protect" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>43</health>
+      <skill id="imbue" s="counter" x="1" />
+      <skill id="enhance" s="counter" x="2" />
+      <skill id="protect" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>46</health>
+      <skill id="imbue" s="counter" x="1" />
+      <skill id="enhance" s="counter" x="2" />
+      <skill id="protect" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>51</health>
+      <skill id="imbue" s="counter" all="1" x="1" />
+      <skill id="enhance" s="counter" x="3" />
+      <skill id="protect" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>14</id>
+    <card_type>1</card_type>
+    <name>Yuriel the Manashifter</name>
+    <portrait>yurielupgrade</portrait>
+    <desc>The true potential of the ancestral bloodline of Owl Mystics has been realized in Yuriel. After years of study, he has stumbled upon the secrets of Manashifting. He's also collected a lot of late fines.</desc>
+    <attack>0</attack>
+    <health>45</health>
+    <skill id="enhance" s="armored" x="2" />
+    <skill id="heal" all="1" y="1" x="1" />
+    <rarity>4</rarity>
+    <type>1</type>
+    <set>7000</set>
+    <upgrade>
+      <level>2</level>
+      <health>48</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="imbue" s="nullify" y="1" x="1" />
+      <skill id="enhance" s="armored" x="2" />
+      <skill id="heal" all="1" y="1" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>51</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>56</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="imbue" s="nullify" y="1" x="1" />
+      <skill id="enhance" s="armored" x="2" />
+      <skill id="heal" all="1" y="1" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15</id>
+    <card_type>1</card_type>
+    <name>Aria the Nightwielder</name>
+    <portrait>ariaupgrade</portrait>
+    <desc>Aria's close call with The Void pushed her to the brink of her abilities. She learned new powers, and intends to use them to make new friends.</desc>
+    <attack>0</attack>
+    <health>30</health>
+    <skill id="enfeeble" x="2" />
+    <skill id="weaken" x="1" />
+    <rarity>4</rarity>
+    <type>2</type>
+    <set>7000</set>
+    <upgrade>
+      <level>2</level>
+      <health>34</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>38</health>
+      <skill id="enfeeble" x="3" />
+      <skill id="weaken" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>42</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>46</health>
+      <skill id="imbue" s="berserk" x="1" />
+      <skill id="enfeeble" x="3" />
+      <skill id="weaken" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>50</health>
+      <skill id="imbue" s="berserk" x="1" />
+      <skill id="enfeeble" x="3" />
+      <skill id="weaken" all="1" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16</id>
+    <card_type>1</card_type>
+    <name>Decim the Pyrokinetic</name>
+    <portrait>decimupgrade</portrait>
+    <desc>Decim's training and close contact with dragons has taught him new heights to his abilities. Which shouldn't be a surprise as he's always enjoyed finding new ways to burn things.</desc>
+    <attack>0</attack>
+    <health>42</health>
+    <skill id="enhance" s="counter" all="1" x="1" />
+    <skill id="strike" x="2" />
+    <rarity>4</rarity>
+    <type>2</type>
+    <set>7000</set>
+    <upgrade>
+      <level>2</level>
+      <health>45</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>49</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="imbue" s="burn" y="2" x="1" />
+      <skill id="enhance" s="counter" all="1" x="1" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>52</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="imbue" s="burn" y="2" x="2" />
+      <skill id="enhance" s="counter" all="1" x="1" />
+      <skill id="strike" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17</id>
+    <card_type>1</card_type>
+    <name>Elyse the Truestriker</name>
+    <portrait>elyseupgrade</portrait>
+    <desc>Elyse has embraced the magic of the Wyld, becoming one with the world around her. She even sometimes leaves her books at home.</desc>
+    <attack>0</attack>
+    <health>29</health>
+    <skill id="imbue" s="poison" x="1" />
+    <skill id="heal" x="2" />
+    <rarity>4</rarity>
+    <type>3</type>
+    <set>7000</set>
+    <upgrade>
+      <level>2</level>
+      <health>34</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>38</health>
+      <skill id="imbue" s="poison" x="1" />
+      <skill id="enhance" s="poison" x="1" />
+      <skill id="heal" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>42</health>
+      <skill id="imbue" s="poison" x="1" />
+      <skill id="enhance" s="poison" x="1" />
+      <skill id="heal" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>45</health>
+      <skill id="imbue" s="poison" x="1" />
+      <skill id="enhance" s="poison" all="1" x="1" />
+      <skill id="heal" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>48</health>
+      <skill id="imbue" s="poison" x="2" />
+      <skill id="enhance" s="poison" all="1" x="1" />
+      <skill id="heal" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>18</id>
+    <card_type>1</card_type>
+    <name>General Ursurio</name>
+    <portrait>ursurioupgrade</portrait>
+    <desc>After countless years of dedicated laziness and a sloth-like attitude, Ursurio has gotten the promotion he barely wanted. If only it came with free sides.</desc>
+    <attack>0</attack>
+    <health>45</health>
+    <skill id="enhance" s="pierce" x="1" />
+    <skill id="rally" y="3" x="2" />
+    <skill id="heal" x="1" />
+    <rarity>4</rarity>
+    <type>3</type>
+    <set>7000</set>
+    <upgrade>
+      <level>2</level>
+      <health>48</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="enhance" s="pierce" x="2" />
+      <skill id="rally" y="3" x="2" />
+      <skill id="heal" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>52</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>54</health>
+      <skill id="enhance" s="pierce" x="2" />
+      <skill id="rally" y="3" x="2" />
+      <skill id="heal" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>57</health>
+      <skill id="enhance" s="pierce" x="2" />
+      <skill id="rally" y="3" x="3" />
+      <skill id="heal" x="2" />
+    </upgrade>
+  </unit>
+  <!-- ====================== -->
+  <!-- == STORY COMMANDERS == -->
+  <!-- ====================== -->
+  <unit>
+    <id>200</id>
+    <card_type>1</card_type>
+    <name>Undead Horde</name>
+    <portrait>skeletonwarrior</portrait>
+    <desc>A horde of risen creatures and skeletons, mindlessly attacking anything within reach.</desc>
+    <attack>0</attack>
+    <health>6</health>
+    <rarity>2</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>12</health>
+      <skill id="enfeeble" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>20</health>
+      <skill id="enfeeble" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>30</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>201</id>
+    <card_type>1</card_type>
+    <name>Wyld Wolf</name>
+    <portrait>wolf</portrait>
+    <desc>The Wyldwood does not take kindly to strangers, and its creatures vigorously defend its borders.</desc>
+    <attack>0</attack>
+    <health>9</health>
+    <rarity>2</rarity>
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <name>Mother Wolf</name>
+      <health>15</health>
+      <skill id="heal" x="1" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>22</health>
+      <skill id="heal" x="2" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>30</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>202</id>
+    <card_type>1</card_type>
+    <name>Elaria Captain</name>
+    <portrait>ranger</portrait>
+    <desc>The Elaria Captain is the first line of defense for the researchers of the Elaria encampment. Part of his responsibilities is taking new arrivals and training them.</desc>
+    <attack>0</attack>
+    <health>8</health>
+    <rarity>0</rarity>
+    <type>3</type>
+    <set>9999</set>
+  </unit>
+  <unit>
+    <id>203</id>
+    <card_type>1</card_type>
+    <name>Luminis Angel</name>
+    <portrait>angelknight</portrait>
+    <desc>A native of Luminis and a natural defender of the realm.</desc>
+    <attack>0</attack>
+    <health>11</health>
+    <skill id="protect" x="1" />
+    <rarity>2</rarity>
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+      <skill id="rally" x="1" />
+      <skill id="protect" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>24</health>
+      <skill id="rally" x="1" />
+      <skill id="protect" x="1" />
+      <skill id="protect" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>32</health>
+      <skill id="rally" x="1" />
+      <skill id="protect" x="2" />
+      <skill id="protect" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>204</id>
+    <card_type>1</card_type>
+    <name>Will O' Wisp</name>
+    <portrait>lightwisp</portrait>
+    <desc>Manifestations of the raw energy of the world around them.</desc>
+    <attack>0</attack>
+    <health>8</health>
+    <skill id="rally" x="1" y="1" />
+    <rarity>2</rarity>
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>15</health>
+      <skill id="rally" x="1" y="1" />
+      <skill id="rally" x="1" y="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>23</health>
+      <skill id="rally" x="1" y="1" />
+      <skill id="rally" x="1" y="1" />
+      <skill id="rally" x="1" y="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>33</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>205</id>
+    <card_type>1</card_type>
+    <name>Mermaid Augurer</name>
+    <portrait>mermaid</portrait>
+    <desc>The rivers of Luminis run deeper than they appear, housing many of the sea's dangers.</desc>
+    <attack>0</attack>
+    <health>12</health>
+    <skill id="heal" x="2" />
+    <rarity>2</rarity>
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+      <skill id="heal" x="2" />
+      <skill id="heal" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>24</health>
+      <skill id="heal" x="2" />
+      <skill id="heal" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>34</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>206</id>
+    <card_type>1</card_type>
+    <name>Grim Titan</name>
+    <portrait>firetitan</portrait>
+    <desc>A flood of demons and monsters, centered around a large titan at their head.</desc>
+    <attack>0</attack>
+    <health>17</health>
+    <skill id="weaken" x="3" />
+    <rarity>3</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>23</health>
+      <skill id="enhance" s="strike" x="1" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>32</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>38</health>
+      <skill id="enhance" s="strike" x="1" />
+      <skill id="enfeeble" x="2" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>44</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>207</id>
+    <card_type>1</card_type>
+    <name>Void Assassin</name>
+    <portrait>invisibleassassin</portrait>
+    <desc>"They came right through the walls." - Marr, Blacksmith</desc>
+    <attack>0</attack>
+    <health>16</health>
+    <rarity>3</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>30</health>
+      <skill id="enhance" s="evade" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>35</health>
+      <skill id="enhance" s="evade" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>40</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>208</id>
+    <card_type>1</card_type>
+    <name>Void Minions</name>
+    <portrait>voidminions</portrait>
+    <desc>Primal forces of the void, manifested as the nightmares of the living.</desc>
+    <attack>0</attack>
+    <health>20</health>
+    <skill id="rally" all="1" x="1" />
+    <rarity>3</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+      <skill id="rally" all="1" x="1" />
+      <skill id="weaken" all="1" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>30</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>35</health>
+      <skill id="rally" all="1" x="2" />
+      <skill id="weaken" all="1" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>40</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>209</id>
+    <card_type>1</card_type>
+    <name>Orobas of the Void</name>
+    <portrait>balrog</portrait>
+    <desc>"The Orobas is possibly the most frightening creature in all of Karthos. Or at least the biggest." - Magi Neyaroi</desc>
+    <attack>0</attack>
+    <health>25</health>
+    <skill id="strike" x="1" />
+    <rarity>4</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>30</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>35</health>
+      <skill id="strike" x="1" />
+      <skill id="strike" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>45</health>
+      <skill id="strike" x="1" />
+      <skill id="strike" x="1" />
+      <skill id="strike" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>50</health>
+      <skill id="strike" x="1" all="1" />
+      <skill id="strike" x="1" />
+      <skill id="strike" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>210</id>
+    <card_type>1</card_type>
+    <name>Lava Crab Gang</name>
+    <portrait>lavacrab</portrait>
+    <desc>Don't make them crabby.</desc>
+    <attack>0</attack>
+    <health>13</health>
+    <skill id="enhance" s="pierce" x="1" />
+    <rarity>2</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>22</health>
+      <skill id="enhance" s="burn" all="1" x="1" />
+      <skill id="enhance" s="pierce" all="1" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>30</health>
+      <skill id="enhance" s="burn" all="1" x="1" />
+      <skill id="enhance" s="pierce" all="1" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>38</health>
+      <skill id="enhance" s="burn" all="1" x="2" />
+      <skill id="enhance" s="pierce" all="1" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>211</id>
+    <card_type>1</card_type>
+    <name>Wraith Den</name>
+    <portrait>wraithden</portrait>
+    <desc>In the untamed wasteland of Karthos, wraiths tend to congregate and create dangerous dens that lure other powerful beasts.</desc>
+    <attack>0</attack>
+    <health>17</health>
+    <skill id="enhance" s="weaken" all="1" x="1" />
+    <skill id="enfeeble" x="1" />
+    <rarity>3</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>25</health>
+      <skill id="enhance" s="weaken" all="1" x="1" />
+      <skill id="enfeeble" all="1" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>30</health>
+      <skill id="enhance" s="weaken" all="1" x="2" />
+      <skill id="enfeeble" all="1" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>35</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>212</id>
+    <card_type>1</card_type>
+    <name>Caverns of Crossing</name>
+    <portrait>cavernsofcrossings</portrait>
+    <desc>The dangerous and only path to The Void.</desc>
+    <attack>0</attack>
+    <health>18</health>
+    <skill id="enfeeble" x="1" />
+    <skill id="weaken" x="1" />
+    <rarity>3</rarity>
+    <type>8</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>23</health>
+      <skill id="enfeeble" x="1" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>28</health>
+      <skill id="enfeeble" x="2" />
+      <skill id="weaken" all="1" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>33</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>38</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>213</id>
+    <card_type>1</card_type>
+    <name>Grand Hermit Malchior</name>
+    <portrait>grandexcavator</portrait>
+    <desc>The father of spellstone research, he is the greatest mind in his field. Even with some of it missing.</desc>
+    <attack>0</attack>
+    <health>23</health>
+    <skill id="enhance" s="armored" x="1" />
+    <skill id="enhance" s="rally" all="1" x="1" />
+    <rarity>4</rarity>
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>28</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>32</health>
+      <skill id="enhance" s="armored" all="1" x="1" />
+      <skill id="enhance" s="rally" all="1" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>37</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>42</health>
+      <skill id="enhance" s="armored" all="1" x="1" />
+      <skill id="enhance" s="heal" all="1" x="1" />
+      <skill id="enhance" s="rally" all="1" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>47</health>
+      <skill id="enhance" s="armored" all="1" x="2" />
+      <skill id="enhance" s="heal" all="1" x="1" />
+      <skill id="enhance" s="rally" all="1" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>214</id>
+    <card_type>1</card_type>
+    <name>Tremor Wurm</name>
+    <portrait>tremorwurm</portrait>
+    <desc>The wurm breaks out of the ground suddenly, spraying rock in all directions as it bellows a sound like a thousand trumpets.</desc>
+    <attack>0</attack>
+    <health>23</health>
+    <rarity>4</rarity>
+    <skill id="enhance" s="counter" x="1" />
+    <skill id="enfeeble" all="1" x="1" />
+    <type>8</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>28</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>32</health>
+      <skill id="enhance" s="counter" all="1" x="2" />
+      <skill id="enfeeble" all="1" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>37</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>42</health>
+      <skill id="enhance" s="counter" all="1" x="2" />
+      <skill id="enfeeble" all="1" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>47</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>215</id>
+    <card_type>1</card_type>
+    <name>Void Abomination</name>
+    <portrait>void</portrait>
+    <desc>The ground shatters to reveal a huge anomoly made of shadows and smoke. Eyes peer out at the adventurers below as its massive form swings and crushes stone.</desc>
+    <attack>0</attack>
+    <health>40</health>
+    <rarity>4</rarity>
+    <skill id="enfeeble" all="1" x="1" />
+    <skill id="strike" x="1" />
+    <type>8</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>45</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>50</health>
+      <skill id="enfeeble" all="1" x="2" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>55</health>
+      <skill id="counter" x="1" />
+      <skill id="enfeeble" all="1" x="2" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>60</health>
+      <skill id="counter" x="2" />
+      <skill id="enfeeble" all="1" x="2" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>65</health>
+      <skill id="counter" x="2" />
+      <skill id="enfeeble" all="1" x="3" />
+      <skill id="strike" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>216</id>
+    <card_type>1</card_type>
+    <name>Trainee Elyse</name>
+    <portrait>elyse</portrait>
+    <desc>Elyse is a new adventurer like yourself. She's training with the Captain, though she seems more than eager to be out on her own.</desc>
+    <attack>0</attack>
+    <health>2</health>
+    <rarity>2</rarity>
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>28</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>217</id>
+    <card_type>1</card_type>
+    <name>Trainee Oda</name>
+    <portrait>templeguardian</portrait>
+    <desc>Oda is a new adventurer like yourself. He trains alongside you, but seems very reserved and quiet.</desc>
+    <attack>0</attack>
+    <health>6</health>
+    <rarity>2</rarity>
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>32</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>218</id>
+    <card_type>1</card_type>
+    <name>Tainted Wolf</name>
+    <portrait>wolf</portrait>
+    <desc>A long wolf lurks throughout the woods. Its movements unnatural, the look in its eyes dangerous.</desc>
+    <attack>0</attack>
+    <health>11</health>
+    <skill id="enhance" s="pierce" x="1" />
+    <skill id="enfeeble" x="2" />
+    <rarity>2</rarity>
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>15</health>
+      <skill id="enhance" s="pierce" x="2" />
+      <skill id="enfeeble" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>19</health>
+      <skill id="enhance" s="pierce" x="3" />
+      <skill id="enfeeble" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>28</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>219</id>
+    <card_type>1</card_type>
+    <name>Maniac General</name>
+    <portrait>maniacgeneral</portrait>
+    <desc>A former leader of a Chaos faction, his mind has been tainted by some foul magic that causes him to act dangerously against the other factions and his own.</desc>
+    <attack>0</attack>
+    <health>11</health>
+    <skill id="enhance" s="strike" x="1" />
+    <rarity>3</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>15</health>
+      <skill id="enhance" s="strike" x="1" />
+      <skill id="weaken" all="1" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>22</health>
+      <skill id="enhance" s="strike" x="1" />
+      <skill id="strike" x="1" />
+      <skill id="weaken" all="1" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>35</health>
+      <skill id="enhance" s="strike" x="1" />
+      <skill id="strike" x="2" />
+      <skill id="weaken" all="1" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>220</id>
+    <card_type>1</card_type>
+    <name>Voidlings</name>
+    <portrait>voidminions</portrait>
+    <desc>Incarnations of the Void itself, manifested into small servents of mayhem.</desc>
+    <attack>0</attack>
+    <health>25</health>
+    <skill id="enfeeble" x="1" />
+    <skill id="enfeeble" x="1" />
+    <rarity>3</rarity>
+    <type>8</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>30</health>
+      <skill id="enfeeble" x="1" />
+      <skill id="enfeeble" x="1" />
+      <skill id="enfeeble" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>35</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>42</health>
+      <skill id="enfeeble" x="2" />
+      <skill id="enfeeble" x="1" />
+      <skill id="enfeeble" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>49</health>
+      <skill id="enfeeble" x="2" />
+      <skill id="enfeeble" x="2" />
+      <skill id="enfeeble" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>221</id>
+    <card_type>1</card_type>
+    <name>Alpha Wisp</name>
+    <portrait>lightwisp</portrait>
+    <desc>And you thought my COUSIN was mean?</desc>
+    <attack>0</attack>
+    <health>29</health>
+    <rarity>3</rarity>
+    <skill id="rally" x="2" y="1" />
+    <skill id="rally" x="1" y="1" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>32</health>
+      <skill id="rally" x="2" y="1" />
+      <skill id="rally" x="2" y="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>37</health>
+      <skill id="rally" x="3" y="1" />
+      <skill id="rally" x="2" y="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>42</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>47</health>
+      <skill id="rally" x="3" y="1" />
+      <skill id="rally" x="3" y="1" />
+      <skill id="rally" x="3" y="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>222</id>
+    <card_type>1</card_type>
+    <name>Titan Twins</name>
+    <portrait>firetitan</portrait>
+    <desc>A pair of unusually large fire titan twins, Jar and Mar.</desc>
+    <attack>0</attack>
+    <health>20</health>
+    <rarity>4</rarity>
+    <skill id="strike" x="1" />
+    <skill id="strike" x="1" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>28</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>35</health>
+      <skill id="strike" x="2" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>43</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>50</health>
+      <skill id="strike" x="3" />
+      <skill id="strike" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>55</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>223</id>
+    <card_type>1</card_type>
+    <name>Escaped Angel</name>
+    <portrait>angelknight</portrait>
+    <desc>An Aether creature freed when the undead ravaged the researchers' camp in Elaria.</desc>
+    <attack>0</attack>
+    <health>6</health>
+    <rarity>2</rarity>
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>22</health>
+      <skill id="enhance" s="armored" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>32</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>224</id>
+    <card_type>1</card_type>
+    <name>Consumed Undead</name>
+    <portrait>skeletonwarrior</portrait>
+    <desc>These undead move with purpose and in unity. They are not like the shambling undead that wander the camp.</desc>
+    <attack>0</attack>
+    <health>7</health>
+    <rarity>2</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>23</health>
+      <skill id="enhance" s="strike" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>34</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>231</id>
+    <card_type>1</card_type>
+    <name>Skeletal Army</name>
+    <portrait>skeletonwarrior</portrait>
+    <desc>An army of undead warriors, their glowing eyes shine in the night and their blades drag on the ground.</desc>
+    <attack>0</attack>
+    <health>17</health>
+    <skill id="weaken" all="1" x="1" />
+    <rarity>3</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>23</health>
+      <skill id="enhance" s="counter" x="3" />
+      <skill id="weaken" all="1" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>32</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>38</health>
+      <skill id="enhance" s="counter" x="3" />
+      <skill id="enfeeble" all="1" x="1" />
+      <skill id="weaken" all="1" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>44</health>
+    </upgrade>
+  </unit>
+  <!-- Event 1 Story Heroes -->
+  <unit>
+    <id>225</id>
+    <card_type>1</card_type>
+    <name>Wasteland Wolf Pack</name>
+    <portrait>wolf</portrait>
+    <desc>In the wastes, no one can hear you howl.</desc>
+    <attack>0</attack>
+    <health>12</health>
+    <rarity>2</rarity>
+    <skill id="enhance" s="pierce" x="1" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>20</health>
+      <skill id="rally" x="1" />
+      <skill id="enhance" s="pierce" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>31</health>
+      <skill id="rally" x="1" />
+      <skill id="enhance" s="pierce" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>42</health>
+      <skill id="rally" x="2" />
+      <skill id="enhance" s="pierce" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>226</id>
+    <card_type>1</card_type>
+    <name>Lost Lava Crab</name>
+    <portrait>lavacrab</portrait>
+    <desc>You idley wonder how this little crab got here, right before it snips your finger.</desc>
+    <attack>0</attack>
+    <health>12</health>
+    <rarity>2</rarity>
+    <skill id="enfeeble" x="1" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>31</health>
+      <skill id="enfeeble" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>42</health>
+      <skill id="enfeeble" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>227</id>
+    <card_type>1</card_type>
+    <name>Wasteland Wraiths</name>
+    <portrait>wraithden</portrait>
+    <desc>The shadows of night cloak that which lurks in the wastes.</desc>
+    <attack>0</attack>
+    <health>14</health>
+    <rarity>3</rarity>
+    <skill id="enhance" s="leech" x="1" />
+    <skill id="weaken" x="1" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>22</health>
+      <skill id="enhance" s="leech" x="2" />
+      <skill id="weaken" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>31</health>
+      <skill id="enhance" s="leech" x="2" />
+      <skill id="enfeeble" x="1" />
+      <skill id="weaken" all="1" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>41</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>49</health>
+      <skill id="enhance" s="leech" x="2" />
+      <skill id="enfeeble" all="1" x="1" />
+      <skill id="weaken" all="1" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>228</id>
+    <card_type>1</card_type>
+    <name>Voidlings</name>
+    <portrait>voidminions</portrait>
+    <desc>Creatures of pure corruption. They rise from the ground like shadows given life.</desc>
+    <attack>0</attack>
+    <health>18</health>
+    <rarity>3</rarity>
+    <skill id="enhance" s="evade" x="1" />
+    <skill id="strike" x="1" />
+    <type>8</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>32</health>
+      <skill id="enhance" s="evade" x="2" />
+      <skill id="strike" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>40</health>
+      <skill id="enhance" s="evade" x="2" />
+      <skill id="strike" all="1" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>48</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>229</id>
+    <card_type>1</card_type>
+    <name>Skeleton Familiar</name>
+    <portrait>skeletonwarrior</portrait>
+    <desc>Aria's favorite skeleton companion and possibly only friend. His name is Little Tarian.</desc>
+    <attack>0</attack>
+    <health>17</health>
+    <rarity>3</rarity>
+    <skill id="enhance" s="pierce" x="1" />
+    <skill id="enhance" s="weaken" x="1" />
+    <type>8</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>32</health>
+      <skill id="enhance" s="pierce" x="2" />
+      <skill id="enhance" s="weaken" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>40</health>
+      <skill id="enhance" s="pierce" x="2" />
+      <skill id="enhance" s="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>48</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>230</id>
+    <card_type>1</card_type>
+    <name>Aria, Void Consumed</name>
+    <portrait>necromancer</portrait>
+    <desc>Aria has fallen to the corruption of the Void.</desc>
+    <attack>0</attack>
+    <health>18</health>
+    <rarity>3</rarity>
+    <skill id="enfeeble" x="1" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>28</health>
+      <skill id="enfeeble" all="1" x="1" />
+      <skill id="weaken" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>34</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>41</health>
+      <skill id="enfeeble" all="1" x="1" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>48</health>
+      <skill id="enfeeble" all="1" x="1" />
+      <skill id="weaken" all="1" x="2" />
+    </upgrade>
+  </unit>
+  <!-- END Event 1 Heroes -->
+  <!-- Event 2 Heroes -->
+  <unit>
+    <id>232</id>
+    <card_type>1</card_type>
+    <name>Frenzied Dragon</name>
+    <portrait>moltendragon</portrait>
+    <desc>The dragons of Tarragon Peak have gone into a frenzy after a series of earthquakes around the mountain.</desc>
+    <attack>0</attack>
+    <health>18</health>
+    <rarity>3</rarity>
+    <skill id="enhance" s="burn" x="1" />
+    <skill id="counter" x="1" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>28</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>34</health>
+      <skill id="enhance" s="burn" x="1" />
+      <skill id="counter" x="1" />
+      <skill id="rally" x="1" y="9" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>41</health>
+      <skill id="enhance" s="burn" x="1" />
+      <skill id="counter" x="1" />
+      <skill id="rally" x="2" y="9" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>48</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>233</id>
+    <card_type>1</card_type>
+    <name>Orobas, Raging Beast</name>
+    <portrait>balrog</portrait>
+    <desc>An ancient beast that lives deep in the earth. Rarely seen above ground. Considered extremely dangerous by most adventurers.</desc>
+    <attack>0</attack>
+    <health>18</health>
+    <rarity>4</rarity>
+    <skill id="enhance" s="enfeeble" x="1" />
+    <skill id="enfeeble" x="1" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>28</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>34</health>
+      <skill id="enhance" s="enfeeble" x="2" />
+      <skill id="enfeeble" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>41</health>
+      <skill id="enhance" s="enfeeble" x="2" />
+      <skill id="enfeeble" all="1" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>48</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>48</health>
+      <skill id="enhance" s="enfeeble" x="2" />
+      <skill id="enfeeble" all="1" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>234</id>
+    <card_type>1</card_type>
+    <name>Decim, Flame Incarnate</name>
+    <portrait>flamebender</portrait>
+    <desc></desc>
+    <attack>0</attack>
+    <health>18</health>
+    <rarity>3</rarity>
+    <skill id="enfeeble" x="1" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>28</health>
+      <skill id="enfeeble" all="1" x="1" />
+      <skill id="weaken" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>34</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>41</health>
+      <skill id="enfeeble" all="1" x="1" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>48</health>
+      <skill id="enfeeble" all="1" x="1" />
+      <skill id="weaken" all="1" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>235</id>
+    <card_type>1</card_type>
+    <name>Obsidian Claw</name>
+    <portrait>lavacrab</portrait>
+    <attack>0</attack>
+    <health>17</health>
+    <rarity>3</rarity>
+    <skill id="enhance" s="strike" x="1" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>27</health>
+      <skill id="enhance" s="strike" x="1" />
+      <skill id="enfeeble" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>33</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>37</health>
+      <skill id="enhance" s="strike" x="1" />
+      <skill id="enfeeble" x="1" />
+      <skill id="enfeeble" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>236</id>
+    <card_type>1</card_type>
+    <name>Aerie Guardian</name>
+    <portrait>angelknight</portrait>
+    <attack>0</attack>
+    <health>19</health>
+    <rarity>3</rarity>
+    <skill id="enhance" s="armored" x="1" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>24</health>
+      <skill id="enhance" s="armored" x="1" />
+      <skill id="protect" x="1" y="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>35</health>
+      <skill id="enhance" s="armored" x="1" />
+      <skill id="protect" x="1" y="1" />
+      <skill id="protect" x="1" y="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>41</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>237</id>
+    <card_type>1</card_type>
+    <name>Kerlor, Ice Dragon</name>
+    <portrait>icedragon</portrait>
+    <attack>0</attack>
+    <health>24</health>
+    <rarity>4</rarity>
+    <skill id="rally" all="1" x="1" y="9" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>32</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>39</health>
+      <skill id="rally" all="1" x="1" y="9" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>46</health>
+      <skill id="rally" all="1" x="1" y="9" />
+      <skill id="jam" c="10" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>51</health>
+      <skill id="rally" all="1" x="1" y="9" />
+      <skill id="jam" c="8" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>57</health>
+      <skill id="rally" all="1" x="2" y="9" />
+      <skill id="jam" c="6" />
+    </upgrade>
+  </unit>
+  <!-- END Event 2 Heroes -->
+  <!-- Event 3 Heroes -->
+  <unit>
+    <id>238</id>
+    <card_type>1</card_type>
+    <name>Lantern Guardian</name>
+    <portrait>lanternguardian</portrait>
+    <attack>0</attack>
+    <health>19</health>
+    <rarity>3</rarity>
+    <skill id="enhance" s="armored" x="1" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>24</health>
+      <skill id="enhance" s="armored" x="1" />
+      <skill id="strike" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>29</health>
+      <skill id="enhance" s="armored" x="1" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>35</health>
+      <skill id="enhance" s="armored" x="1" />
+      <skill id="strike" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>41</health>
+      <skill id="enhance" s="armored" x="1" />
+      <skill id="protect" all="1" x="1" y="1" />
+      <skill id="strike" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>239</id>
+    <card_type>1</card_type>
+    <name>Groc, Vault Ancient</name>
+    <portrait>groc</portrait>
+    <attack>0</attack>
+    <health>24</health>
+    <rarity>4</rarity>
+    <skill id="rally" all="1" x="1" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>32</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>39</health>
+      <skill id="rally" all="1" x="1" />
+      <skill id="protect" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>46</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>51</health>
+      <skill id="rally" all="1" x="1" />
+      <skill id="protect" x="1" />
+      <skill id="protect" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>57</health>
+      <skill id="rally" all="1" x="2" />
+      <skill id="protect" x="2" />
+      <skill id="protect" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>240</id>
+    <card_type>1</card_type>
+    <name>Molten Crab</name>
+    <portrait>lavacrab</portrait>
+    <attack>0</attack>
+    <health>19</health>
+    <rarity>3</rarity>
+    <skill id="enhance" s="counter" x="1" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>29</health>
+      <skill id="enhance" s="counter" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>35</health>
+      <skill id="enhance" s="counter" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>41</health>
+      <skill id="enhance" s="counter" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>241</id>
+    <card_type>1</card_type>
+    <name>Gold Monstrosity</name>
+    <portrait>goldelemental</portrait>
+    <attack>0</attack>
+    <health>25</health>
+    <rarity>3</rarity>
+    <skill id="rally" x="1" all="1" y="5" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>30</health>
+      <skill id="rally" x="1" all="1" y="5" />
+      <skill id="enfeeble" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>35</health>
+      <skill id="rally" x="1" all="1" y="5" />
+      <skill id="enfeeble" x="1" />
+      <skill id="protect" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>40</health>
+      <skill id="rally" x="1" all="1" y="5" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="protect" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>45</health>
+      <skill id="rally" x="1" all="1" y="5" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="protect" x="2" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>242</id>
+    <card_type>1</card_type>
+    <name>Coral Hunter</name>
+    <portrait>carl</portrait>
+    <attack>0</attack>
+    <health>23</health>
+    <rarity>4</rarity>
+    <skill id="heal" all="1" x="1" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>31</health>
+      <skill id="enhance" s="armored" x="1" />
+      <skill id="heal" all="1" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>38</health>
+      <skill id="enhance" s="armored" x="1" />
+      <skill id="enhance" s="leech" x="2" />
+      <skill id="heal" all="1" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>45</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>50</health>
+      <skill id="enhance" s="armored" x="1" />
+      <skill id="enhance" s="leech" x="2" />
+      <skill id="heal" all="1" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>56</health>
+      <skill id="enhance" s="armored" x="1" />
+      <skill id="enhance" s="leech" x="2" />
+      <skill id="heal" all="1" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>243</id>
+    <card_type>1</card_type>
+    <name>Windstorm Avatar</name>
+    <portrait>windstormelemental</portrait>
+    <attack>0</attack>
+    <health>24</health>
+    <rarity>4</rarity>
+    <skill id="enfeeble" x="1" />
+    <skill id="weaken" all="1" x="1" c="3" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>32</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>39</health>
+      <skill id="enfeeble" x="2" />
+      <skill id="weaken" all="1" x="2" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>46</health>
+      <skill id="enfeeble" x="3" />
+      <skill id="weaken" all="1" x="3" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>51</health>
+      <skill id="enfeeble" x="3" />
+      <skill id="weaken" all="1" x="4" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>57</health>
+      <skill id="enfeeble" x="3" />
+      <skill id="weaken" all="1" x="6" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>244</id>
+    <card_type>1</card_type>
+    <name>Celestial Grotto</name>
+    <portrait>cavernsofcrossings</portrait>
+    <attack>0</attack>
+    <health>28</health>
+    <rarity>3</rarity>
+    <skill id="counter" x="1" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>32</health>
+      <skill id="enhance" s="evade" x="1" />
+      <skill id="counter" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>37</health>
+      <skill id="enhance" s="evade" x="1" />
+      <skill id="counter" x="1" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>43</health>
+      <skill id="enhance" s="evade" x="1" />
+      <skill id="counter" x="2" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>49</health>
+      <skill id="enhance" s="evade" x="1" all="1" />
+      <skill id="counter" x="3" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>245</id>
+    <card_type>1</card_type>
+    <name>Vault Titan</name>
+    <portrait>firetitan</portrait>
+    <attack>0</attack>
+    <health>22</health>
+    <rarity>4</rarity>
+    <skill id="strike" x="1" all="1" c="6" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>29</health>
+      <skill id="enhance" s="burn" x="1" />
+      <skill id="strike" x="1" all="1" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>37</health>
+      <skill id="enhance" s="burn" x="1" />
+      <skill id="strike" x="1" all="1" c="4" />
+      <skill id="strike" x="1" all="1" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>45</health>
+      <skill id="enhance" s="burn" x="1" />
+      <skill id="strike" x="1" all="1" c="3" />
+      <skill id="strike" x="1" all="1" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>50</health>
+      <skill id="enhance" s="burn" x="2" />
+      <skill id="strike" x="1" all="1" c="3" />
+      <skill id="strike" x="1" all="1" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>57</health>
+      <skill id="enhance" s="burn" x="3" />
+      <skill id="strike" x="1" all="1" c="3" />
+      <skill id="strike" x="1" all="1" c="3" />
+    </upgrade>
+  </unit>
+  <!-- END Event 3 Heroes -->
+  <!-- Event 4 Heroes -->
+  <unit>
+    <id>246</id>
+    <card_type>1</card_type>
+    <name>Darkwater Mermaid</name>
+    <portrait>mermaid</portrait>
+    <attack>0</attack>
+    <health>23</health>
+    <rarity>3</rarity>
+    <skill id="heal" x="2" />
+    <skill id="weaken" x="2" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>27</health>
+      <skill id="heal" x="2" />
+      <skill id="weaken" x="2" />
+      <skill id="enhance" s="weaken" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>32</health>
+      <skill id="heal" x="2" />
+      <skill id="weaken" x="3" />
+      <skill id="enhance" s="weaken" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>38</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>44</health>
+      <skill id="heal" x="3" />
+      <skill id="weaken" x="3" />
+      <skill id="enhance" s="weaken" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>247</id>
+    <card_type>1</card_type>
+    <name>Canopy Hunter</name>
+    <portrait>canopyhunter</portrait>
+    <attack>0</attack>
+    <health>30</health>
+    <rarity>4</rarity>
+    <skill id="jam" c="6" />
+    <skill id="enhance" s="pierce" x="2" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>34</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>38</health>
+      <skill id="jam" c="6" />
+      <skill id="enhance" s="pierce" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>42</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>46</health>
+      <skill id="jam" c="5" />
+      <skill id="enhance" s="pierce" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>50</health>
+      <skill id="jam" c="4" />
+      <skill id="enhance" s="pierce" x="4" />
+      <skill id="enhance" s="enfeeble" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>248</id>
+    <card_type>1</card_type>
+    <name>Swamp Swarm</name>
+    <portrait>cavernsofcrossings</portrait>
+    <attack>0</attack>
+    <health>26</health>
+    <rarity>3</rarity>
+    <skill id="strike" x="1" />
+    <skill id="strike" x="1" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>30</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>34</health>
+      <skill id="strike" x="1" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>38</health>
+      <skill id="strike" x="1" />
+      <skill id="strike" x="2" />
+      <skill id="enhance" s="evade" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>42</health>
+      <skill id="strike" x="2" />
+      <skill id="strike" x="2" />
+      <skill id="enhance" s="evade" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>249</id>
+    <card_type>1</card_type>
+    <name>Lone Frog Scout</name>
+    <portrait>frogscout</portrait>
+    <attack>0</attack>
+    <health>32</health>
+    <rarity>3</rarity>
+    <skill id="protect" x="1" />
+    <skill id="rally" x="2" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>36</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>40</health>
+      <skill id="protect" x="2" />
+      <skill id="rally" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>44</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>50</health>
+      <skill id="protect" x="3" />
+      <skill id="rally" x="2" />
+      <skill id="rally" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>250</id>
+    <card_type>1</card_type>
+    <name>Tainted Coral Elemental</name>
+    <portrait>carl</portrait>
+    <attack>0</attack>
+    <health>27</health>
+    <rarity>4</rarity>
+    <skill id="heal" x="1" />
+    <skill id="heal" x="1" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>35</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>39</health>
+      <skill id="heal" x="2" />
+      <skill id="heal" x="1" />
+      <skill id="weaken" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>44</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>47</health>
+      <skill id="heal" x="3" />
+      <skill id="heal" x="2" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>251</id>
+    <card_type>1</card_type>
+    <name>Guardian  Wurm</name>
+    <portrait>tremorwurm</portrait>
+    <attack>0</attack>
+    <health>32</health>
+    <rarity>4</rarity>
+    <skill id="protect" x="1" />
+    <skill id="protect" x="1" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>36</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>44</health>
+      <skill id="protect" x="2" />
+      <skill id="protect" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>50</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>57</health>
+      <skill id="protect" x="2" />
+      <skill id="protect" x="1" />
+      <skill id="protect" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>252</id>
+    <card_type>1</card_type>
+    <name>Berserk Emperor</name>
+    <portrait>frogemperor</portrait>
+    <attack>0</attack>
+    <health>35</health>
+    <rarity>4</rarity>
+    <skill id="protect" x="1" />
+    <skill id="protect" x="1" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>44</health>
+      <skill id="enhance" s="fervor" x="1" />
+      <skill id="protect" x="1" />
+      <skill id="protect" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>48</health>
+      <skill id="enhance" s="fervor" x="2" />
+      <skill id="protect" x="1" />
+      <skill id="protect" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>53</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>59</health>
+      <skill id="enhance" s="fervor" x="3" />
+      <skill id="protect" x="2" />
+      <skill id="protect" x="1" />
+    </upgrade>
+  </unit>
+  <!-- Raid Boss -->
+  <unit>
+    <id>253</id>
+    <card_type>1</card_type>
+    <name>Frostbite</name>
+    <portrait>Portrait_Frostbite</portrait>
+    <attack>0</attack>
+    <health>30</health>
+    <rarity>4</rarity>
+    <skill id="protect" x="1" all="1" />
+    <skill id="rally" x="1" all="1" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>40</health>
+      <skill id="protect" x="1" all="1" />
+      <skill id="rally" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>50</health>
+      <skill id="protect" x="1" all="1" />
+      <skill id="rally" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>60</health>
+      <skill id="protect" x="2" all="1" />
+      <skill id="rally" x="2" all="1" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>70</health>
+      <skill id="protect" x="2" all="1" />
+      <skill id="rally" x="3" all="1" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>80</health>
+      <skill id="protect" x="3" all="1" />
+      <skill id="rally" x="3" all="1" />
+      <skill id="jam" c="4" />
+    </upgrade>
+  </unit>
+  <!-- Titan Bosses -->
+  <unit>
+    <id>254</id>
+    <card_type>1</card_type>
+    <name>Atlas</name>
+    <portrait>wyldguardian</portrait>
+    <asset_bundle>27</asset_bundle>
+    <attack>0</attack>
+    <health>40</health>
+    <skill id="rally" all="1" x="2" y="3" />
+    <skill id="rally" x="2" y="3" />
+    <skill id="heal" all="1" x="2" y="3" />
+    <rarity>4</rarity>
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>46</health>
+      <skill id="rally" all="1" x="3" y="3" />
+      <skill id="rally" x="4" y="3" />
+      <skill id="heal" all="1" x="2" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>54</health>
+      <skill id="rally" all="1" x="3" y="3" />
+      <skill id="rally" x="5" y="3" />
+      <skill id="heal" all="1" x="3" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>63</health>
+      <skill id="rally" all="1" x="3" y="3" />
+      <skill id="rally" x="5" y="3" />
+      <skill id="heal" all="1" x="4" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>76</health>
+      <skill id="rally" all="1" x="4" y="3" />
+      <skill id="rally" x="5" y="3" />
+      <skill id="heal" all="1" x="4" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>88</health>
+      <skill id="rally" all="1" x="4" y="3" />
+      <skill id="rally" x="6" y="3" />
+      <skill id="heal" all="1" x="5" y="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>255</id>
+    <card_type>1</card_type>
+    <name>Solaron</name>
+    <portrait>aetherguardian</portrait>
+    <asset_bundle>27</asset_bundle>
+    <attack>0</attack>
+    <health>37</health>
+    <skill id="heal" x="1" all="1" y="1" />
+    <skill id="protect" x="1" all="1" y="1" />
+    <skill id="jam" c="8" />
+    <rarity>4</rarity>
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>48</health>
+      <skill id="heal" x="1" all="1" y="1" />
+      <skill id="protect" all="1" x="1" y="1" />
+      <skill id="jam" c="7" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>59</health>
+      <skill id="heal" x="2" all="1" y="1" />
+      <skill id="protect" all="1" x="1" y="1" />
+      <skill id="jam" c="7" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>70</health>
+      <skill id="heal" x="3" all="1" y="1" />
+      <skill id="protect" all="1" x="2" y="1" />
+      <skill id="jam" c="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>80</health>
+      <skill id="heal" x="4" all="1" y="1" />
+      <skill id="protect" all="1" x="2" y="1" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>89</health>
+      <skill id="heal" x="5" all="1" y="1" />
+      <skill id="protect" all="1" x="3" y="1" />
+      <skill id="jam" c="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>256</id>
+    <card_type>1</card_type>
+    <name>Vulcanos</name>
+    <portrait>chaosguardian</portrait>
+    <asset_bundle>27</asset_bundle>
+    <attack>0</attack>
+    <health>45</health>
+    <skill id="enfeeble" x="1" />
+    <skill id="strike" x="1" />
+    <skill id="strike" x="1" />
+    <rarity>4</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>53</health>
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="strike" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>62</health>
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="strike" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>73</health>
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>85</health>
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="strike" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>99</health>
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="strike" x="3" />
+    </upgrade>
+  </unit>
+  <!-- Event 5 Heroes -->
+  <unit>
+    <id>257</id>
+    <card_type>1</card_type>
+    <name>Golden Lava Lord</name>
+    <portrait>goldelemental</portrait>
+    <attack>0</attack>
+    <health>25</health>
+    <rarity>4</rarity>
+    <skill id="strike" x="1" all="1" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>30</health>
+      <skill id="strike" x="1" all="1" />
+      <skill id="enfeeble" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>35</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>40</health>
+      <skill id="strike" x="1" all="1" />
+      <skill id="enfeeble" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>45</health>
+      <skill id="strike" x="1" all="1" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>52</health>
+      <skill id="strike" x="2" all="1" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+  </unit>
+  <!-- END Event 5 Heroes -->
+  <!-- START Event 6 Heroes -->
+  <unit>
+    <id>258</id>
+    <card_type>1</card_type>
+    <name>Winterback Ape</name>
+    <portrait>wintercreature</portrait>
+    <attack>0</attack>
+    <health>26</health>
+    <rarity>3</rarity>
+    <skill id="counter" x="2" />
+    <skill id="heal" x="2" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>30</health>
+      <skill id="counter" x="2" />
+      <skill id="heal" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>35</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>41</health>
+      <skill id="counter" x="3" />
+      <skill id="heal" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>48</health>
+      <skill id="counter" x="3" />
+      <skill id="heal" x="4" />
+      <skill id="heal" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>259</id>
+    <card_type>1</card_type>
+    <name>Iceback Dragon</name>
+    <portrait>icedragon</portrait>
+    <attack>0</attack>
+    <health>43</health>
+    <rarity>4</rarity>
+    <skill id="enfeeble" x="3" />
+    <skill id="strike" x="2" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>47</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>51</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>57</health>
+      <skill id="enfeeble" x="3" />
+      <skill id="strike" x="2" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>64</health>
+      <skill id="enfeeble" x="3" />
+      <skill id="strike" x="3" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>69</health>
+      <skill id="enfeeble" x="4" />
+      <skill id="strike" x="4" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>260</id>
+    <card_type>1</card_type>
+    <name>Ice Abomination</name>
+    <portrait>winterbigbad</portrait>
+    <attack>0</attack>
+    <health>40</health>
+    <rarity>4</rarity>
+    <skill id="rally" x="2" y="9" />
+    <skill id="jam" c="6" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>47</health>
+      <skill id="rally" x="3" y="9" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>51</health>
+      <skill id="rally" x="4" y="9" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>57</health>
+      <skill id="rally" x="4" y="9" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>64</health>
+      <skill id="rally" x="4" y="9" />
+      <skill id="rally" x="3" y="9" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>69</health>
+      <skill id="rally" x="4" y="9" />
+      <skill id="rally" x="4" y="9" />
+      <skill id="jam" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>261</id>
+    <card_type>1</card_type>
+    <name>Coldspirit Wisp</name>
+    <portrait>lightwisp</portrait>
+    <attack>0</attack>
+    <health>25</health>
+    <rarity>3</rarity>
+    <skill id="protect" x="2" />
+    <skill id="rally" x="3" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>30</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>34</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>38</health>
+      <skill id="protect" x="3" />
+      <skill id="rally" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>45</health>
+      <skill id="protect" x="3" />
+      <skill id="protect" x="3" />
+      <skill id="rally" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>262</id>
+    <card_type>1</card_type>
+    <name>Frostwhip Storm</name>
+    <portrait>windstormelemental</portrait>
+    <attack>0</attack>
+    <health>30</health>
+    <rarity>3</rarity>
+    <skill id="rally" x="2" />
+    <skill id="weaken" x="2" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>34</health>
+      <skill id="rally" x="2" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>38</health>
+      <skill id="rally" x="2" />
+      <skill id="weaken" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>44</health>
+      <skill id="rally" x="3" />
+      <skill id="weaken" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>50</health>
+      <skill id="rally" x="4" />
+      <skill id="weaken" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>263</id>
+    <card_type>1</card_type>
+    <name>Snow Assassin</name>
+    <portrait>invisibleassassin</portrait>
+    <attack>0</attack>
+    <health>27</health>
+    <rarity>3</rarity>
+    <skill id="strike" x="2" />
+    <skill id="strike" x="2" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>35</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>40</health>
+      <skill id="strike" x="3" />
+      <skill id="strike" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>46</health>
+      <skill id="heal" x="2" />
+      <skill id="strike" x="3" />
+      <skill id="strike" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>53</health>
+      <skill id="heal" x="3" />
+      <skill id="strike" x="4" />
+      <skill id="strike" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>264</id>
+    <card_type>1</card_type>
+    <name>Vapor Hunters</name>
+    <portrait>winteradventurers</portrait>
+    <attack>0</attack>
+    <health>40</health>
+    <rarity>4</rarity>
+    <skill id="protect" x="3" />
+    <skill id="strike" x="2" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>44</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>48</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>53</health>
+      <skill id="protect" x="3" />
+      <skill id="strike" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>59</health>
+      <skill id="protect" x="4" />
+      <skill id="strike" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>65</health>
+      <skill id="protect" x="5" />
+      <skill id="strike" x="4" />
+      <skill id="strike" x="2" />
+    </upgrade>
+  </unit>
+  <!-- END Event 6 Heroes -->
+  <!-- START Event 7 Heroes -->
+  <unit>
+    <id>265</id>
+    <card_type>1</card_type>
+    <name>Void Warrior</name>
+    <portrait>skeletonwarrior</portrait>
+    <attack>0</attack>
+    <health>30</health>
+    <rarity>3</rarity>
+    <skill id="enhance" s="poison" x="1" />
+    <skill id="enhance" s="leech" x="2" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>34</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>39</health>
+      <skill id="enhance" s="poison" x="2" />
+      <skill id="enhance" s="leech" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>45</health>
+      <skill id="enhance" s="poison" x="2" />
+      <skill id="enhance" s="leech" x="3" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>52</health>
+      <skill id="enhance" s="poison" x="3" />
+      <skill id="enhance" s="leech" x="3" />
+      <skill id="weaken" all="1" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>266</id>
+    <card_type>1</card_type>
+    <name>Shade Gang</name>
+    <portrait>voidminions</portrait>
+    <attack>0</attack>
+    <health>27</health>
+    <rarity>3</rarity>
+    <skill id="strike" x="1" />
+    <skill id="strike" x="2" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>35</health>
+      <skill id="strike" x="2" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>40</health>
+      <skill id="enfeeble" x="1" />
+      <skill id="strike" x="2" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>46</health>
+      <skill id="enfeeble" all="1" x="1" />
+      <skill id="strike" x="2" />
+      <skill id="strike" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>267</id>
+    <card_type>1</card_type>
+    <name>Wandering Wraith</name>
+    <portrait>wraithden</portrait>
+    <attack>0</attack>
+    <health>29</health>
+    <rarity>3</rarity>
+    <skill id="protect" x="2" />
+    <skill id="jam" c="5" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>34</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>39</health>
+      <skill id="protect" x="3" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>45</health>
+      <skill id="protect" x="3" />
+      <skill id="jam" c="5" />
+      <skill id="enhance" s="evade" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>51</health>
+      <skill id="protect" x="3" />
+      <skill id="jam" c="5" />
+      <skill id="enhance" s="evade" all="1" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>268</id>
+    <card_type>1</card_type>
+    <name>Spine Coil</name>
+    <portrait>undeadsnake</portrait>
+    <attack>0</attack>
+    <health>32</health>
+    <rarity>4</rarity>
+    <skill id="rally" x="2" />
+    <skill id="protect" x="2" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>36</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>41</health>
+      <skill id="rally" x="3" />
+      <skill id="protect" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>47</health>
+      <skill id="rally" x="3" />
+      <skill id="protect" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>54</health>
+      <skill id="rally" x="4" />
+      <skill id="protect" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>62</health>
+      <skill id="rally" x="4" />
+      <skill id="protect" x="3" />
+      <skill id="protect" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>269</id>
+    <card_type>1</card_type>
+    <name>Arcane Turret</name>
+    <portrait>arcaneturret</portrait>
+    <attack>0</attack>
+    <health>34</health>
+    <rarity>4</rarity>
+    <skill id="strike" x="3" />
+    <skill id="jam" c="6" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>44</health>
+      <skill id="strike" x="3" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>49</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>55</health>
+      <skill id="strike" x="3" />
+      <skill id="jam" c="5" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>63</health>
+      <skill id="strike" all="1" x="2" />
+      <skill id="jam" c="5" />
+      <skill id="jam" c="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>270</id>
+    <card_type>1</card_type>
+    <name>Feral Scientists</name>
+    <portrait>undeadscientists</portrait>
+    <attack>0</attack>
+    <health>32</health>
+    <rarity>4</rarity>
+    <skill id="enhance" s="fervor" x="2" />
+    <skill id="counter" x="2" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>37</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>42</health>
+      <skill id="enhance" s="fervor" x="2" />
+      <skill id="counter" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>48</health>
+      <skill id="enhance" s="fervor" x="3" />
+      <skill id="counter" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>54</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>61</health>
+      <skill id="enhance" s="fervor" x="3" />
+      <skill id="enhance" s="legion" x="3" />
+      <skill id="counter" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>271</id>
+    <card_type>1</card_type>
+    <name>Dr. Oppenhinder</name>
+    <portrait>madscientist</portrait>
+    <attack>0</attack>
+    <health>40</health>
+    <rarity>4</rarity>
+    <skill id="enhance" s="berserk" x="1" />
+    <skill id="heal" x="3" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>44</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>49</health>
+      <skill id="enhance" s="berserk" x="1" />
+      <skill id="heal" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>55</health>
+      <skill id="enhance" s="berserk" x="2" />
+      <skill id="heal" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>62</health>
+      <skill id="enhance" s="berserk" x="2" />
+      <skill id="heal" all="1" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>70</health>
+      <skill id="enhance" s="berserk" all="1" x="1" />
+      <skill id="heal" all="1" x="2" />
+    </upgrade>
+  </unit>
+  <!-- END Event 7 Heroes -->
+  <!-- START Event 8 Heroes -->
+  <unit>
+    <id>272</id>
+    <card_type>1</card_type>
+    <name>Highfire Dragon</name>
+    <portrait>moltendragon</portrait>
+    <attack>0</attack>
+    <health>23</health>
+    <rarity>3</rarity>
+    <skill id="counter" x="1" />
+    <skill id="strike" x="1" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>27</health>
+      <skill id="counter" x="2" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>32</health>
+      <skill id="counter" x="2" />
+      <skill id="strike" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>38</health>
+      <skill id="counter" x="3" />
+      <skill id="strike" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>45</health>
+      <skill id="counter" x="3" />
+      <skill id="strike" x="3" />
+      <skill id="strike" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>273</id>
+    <card_type>1</card_type>
+    <name>Swooning Angel</name>
+    <portrait>angelknight</portrait>
+    <attack>0</attack>
+    <health>22</health>
+    <rarity>3</rarity>
+    <skill id="heal" x="2" />
+    <skill id="protect" x="1" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+      <skill id="heal" x="2" />
+      <skill id="protect" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>29</health>
+      <skill id="heal" x="3" />
+      <skill id="protect" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>34</health>
+      <skill id="heal" x="4" />
+      <skill id="protect" x="2" />
+      <skill id="protect" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>40</health>
+      <skill id="heal" x="4" />
+      <skill id="protect" x="3" />
+      <skill id="protect" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>274</id>
+    <card_type>1</card_type>
+    <name>Sleepy Mail Man</name>
+    <portrait>sleepymailman</portrait>
+    <attack>0</attack>
+    <health>26</health>
+    <rarity>3</rarity>
+    <skill id="rally" x="2" />
+    <skill id="jam" c="6" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>30</health>
+      <skill id="rally" x="3" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>35</health>
+      <skill id="rally" x="3" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>41</health>
+      <skill id="rally" all="1" x="1" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>47</health>
+      <skill id="rally" all="1" x="2" />
+      <skill id="jam" c="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>275</id>
+    <card_type>1</card_type>
+    <name>Icewind Dragon</name>
+    <portrait>icedragon</portrait>
+    <attack>0</attack>
+    <health>26</health>
+    <rarity>4</rarity>
+    <skill id="protect" x="1" />
+    <skill id="jam" c="6" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>30</health>
+      <skill id="protect" x="2" />
+      <skill id="jam" c="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>35</health>
+      <skill id="protect" x="3" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>41</health>
+      <skill id="protect" x="3" />
+      <skill id="strike" x="2" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>48</health>
+      <skill id="protect" x="3" />
+      <skill id="strike" x="3" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>56</health>
+      <skill id="protect" x="4" />
+      <skill id="strike" x="4" />
+      <skill id="jam" c="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>276</id>
+    <card_type>1</card_type>
+    <name>Sky Beast</name>
+    <portrait>skybeast</portrait>
+    <attack>0</attack>
+    <health>28</health>
+    <rarity>4</rarity>
+    <skill id="enhance" s="evade" x="2" />
+    <skill id="strike" x="2" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>33</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>39</health>
+      <skill id="enhance" s="evade" x="3" />
+      <skill id="strike" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>46</health>
+      <skill id="enhance" s="evade" x="3" />
+      <skill id="strike" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>54</health>
+      <skill id="enhance" s="evade" x="4" />
+      <skill id="rally" x="3" />
+      <skill id="strike" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>63</health>
+      <skill id="enhance" s="evade" x="5" />
+      <skill id="rally" x="4" />
+      <skill id="strike" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>277</id>
+    <card_type>1</card_type>
+    <name>Royal Engineer</name>
+    <portrait>royalengineer</portrait>
+    <attack>0</attack>
+    <health>21</health>
+    <rarity>3</rarity>
+    <skill id="enhance" s="armored" x="2" />
+    <skill id="heal" x="3" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>26</health>
+      <skill id="enhance" s="armored" x="3" />
+      <skill id="heal" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>32</health>
+      <skill id="enhance" s="armored" x="4" />
+      <skill id="heal" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>39</health>
+      <skill id="enhance" s="armored" x="5" />
+      <skill id="heal" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>47</health>
+      <skill id="enhance" s="armored" x="5" />
+      <skill id="heal" all="1" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>278</id>
+    <card_type>1</card_type>
+    <name>Skyhaven Queen</name>
+    <portrait>angelqueen</portrait>
+    <attack>0</attack>
+    <health>32</health>
+    <rarity>4</rarity>
+    <skill id="enhance" s="legion" x="2" />
+    <skill id="rally" x="2" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>37</health>
+      <skill id="enhance" s="legion" x="2" />
+      <skill id="rally" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>43</health>
+      <skill id="enhance" s="legion" x="2" />
+      <skill id="rally" x="4" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>50</health>
+      <skill id="enhance" s="legion" x="3" />
+      <skill id="rally" x="5" />
+      <skill id="strike" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>58</health>
+      <skill id="enhance" s="legion" x="3" />
+      <skill id="rally" x="6" />
+      <skill id="strike" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>67</health>
+      <skill id="enhance" s="legion" x="4" />
+      <skill id="rally" x="6" />
+      <skill id="strike" x="4" />
+    </upgrade>
+  </unit>
+  <!-- END Event 7 Heroes -->
+  <!-- START Nethergore Raid Boss -->
+  <unit>
+    <id>279</id>
+    <card_type>1</card_type>
+    <name>Nethergore</name>
+    <portrait>nethergore</portrait>
+    <asset_bundle>42</asset_bundle>
+    <attack>0</attack>
+    <health>30</health>
+    <rarity>5</rarity>
+    <skill id="enhance" x="1" s="berserk" />
+    <skill id="heal" x="2" all="1" y="7" />
+    <skill id="enfeeble" x="2" all="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>50</health>
+      <skill id="enhance" x="1" s="berserk" />
+      <skill id="heal" x="3" all="1" y="7" />
+      <skill id="enfeeble" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>60</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>70</health>
+      <skill id="enhance" x="2" s="berserk" />
+      <skill id="heal" x="3" all="1" y="7" />
+      <skill id="enfeeble" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>80</health>
+      <skill id="enhance" x="2" all="1" s="berserk" />
+      <skill id="heal" x="3" all="1" y="7" />
+      <skill id="enfeeble" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>90</health>
+      <skill id="enhance" x="3" all="1" s="berserk" />
+      <skill id="heal" x="4" all="1" y="7" />
+      <skill id="enfeeble" x="4" all="1" />
+    </upgrade>
+  </unit>
+  <!-- END Nethergore Raid Boss -->
+  <unit>
+    <id>280</id>
+    <card_type>1</card_type>
+    <name>Void Infected Mermaid</name>
+    <portrait>mermaid</portrait>
+    <attack>0</attack>
+    <health>26</health>
+    <rarity>3</rarity>
+    <skill id="heal" x="2" />
+    <skill id="weaken" x="3" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>30</health>
+      <skill id="heal" x="3" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>35</health>
+      <skill id="heal" x="3" />
+      <skill id="weaken" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>41</health>
+      <skill id="heal" x="3" />
+      <skill id="heal" x="2" />
+      <skill id="weaken" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>48</health>
+      <skill id="heal" all="1" x="2" />
+      <skill id="heal" x="3" />
+      <skill id="weaken" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>281</id>
+    <card_type>1</card_type>
+    <name>Dark Coral</name>
+    <portrait>carl</portrait>
+    <attack>0</attack>
+    <health>30</health>
+    <rarity>3</rarity>
+    <skill id="enhance" s="armored" x="2" />
+    <skill id="enhance" s="enfeeble" x="2" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>35</health>
+      <skill id="enhance" s="armored" x="2" />
+      <skill id="enhance" s="enfeeble" x="3" />
+      <skill id="weaken" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>41</health>
+      <skill id="enhance" s="armored" x="3" />
+      <skill id="enhance" s="enfeeble" x="3" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>48</health>
+      <skill id="enhance" s="armored" x="3" />
+      <skill id="enhance" s="enfeeble" x="4" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>57</health>
+      <skill id="enhance" s="armored" x="4" />
+      <skill id="enhance" s="enfeeble" x="4" />
+      <skill id="weaken" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>282</id>
+    <card_type>1</card_type>
+    <name>Swamp Wurm</name>
+    <portrait>tremorwurm</portrait>
+    <attack>0</attack>
+    <health>28</health>
+    <rarity>3</rarity>
+    <skill id="protect" x="2" />
+    <skill id="weaken" x="1" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>32</health>
+      <skill id="protect" x="2" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>37</health>
+      <skill id="protect" x="3" />
+      <skill id="protect" x="1" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>43</health>
+      <skill id="protect" x="3" />
+      <skill id="protect" x="3" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>50</health>
+      <skill id="protect" x="4" />
+      <skill id="protect" x="4" />
+      <skill id="weaken" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>283</id>
+    <card_type>1</card_type>
+    <name>Void Viper</name>
+    <portrait>undeadsnake</portrait>
+    <attack>0</attack>
+    <health>35</health>
+    <rarity>4</rarity>
+    <skill id="enhance" s="heal" x="1" />
+    <skill id="rally" x="1" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>40</health>
+      <skill id="enhance" s="heal" x="1" />
+      <skill id="rally" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>45</health>
+      <skill id="enhance" s="heal" x="1" />
+      <skill id="rally" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>51</health>
+      <skill id="enhance" s="heal" x="2" />
+      <skill id="rally" x="3" />
+      <skill id="rally" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>58</health>
+      <skill id="enhance" s="heal" x="2" />
+      <skill id="rally" x="3" />
+      <skill id="rally" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>66</health>
+      <skill id="enhance" s="heal" x="2" />
+      <skill id="rally" x="3" />
+      <skill id="rally" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>284</id>
+    <card_type>1</card_type>
+    <name>Creepy Crawlies</name>
+    <portrait>cavernsofcrossings</portrait>
+    <attack>0</attack>
+    <health>36</health>
+    <rarity>4</rarity>
+    <skill id="enhance" s="poison" x="2" />
+    <skill id="strike" x="2" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>41</health>
+      <skill id="enhance" s="poison" x="2" />
+      <skill id="strike" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>47</health>
+      <skill id="enhance" s="poison" x="2" />
+      <skill id="strike" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>52</health>
+      <skill id="enhance" s="poison" x="4" />
+      <skill id="strike" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>60</health>
+      <skill id="enhance" s="poison" x="4" />
+      <skill id="strike" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>68</health>
+      <skill id="enhance" s="poison" x="5" />
+      <skill id="strike" all="1" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>285</id>
+    <card_type>1</card_type>
+    <name>Corruptlings</name>
+    <portrait>dawnglowbabies</portrait>
+    <attack>0</attack>
+    <health>23</health>
+    <rarity>3</rarity>
+    <skill id="enhance" s="legion" x="1" />
+    <skill id="counter" x="3" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>28</health>
+      <skill id="enhance" s="legion" x="1" />
+      <skill id="counter" x="3" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>34</health>
+      <skill id="enhance" s="legion" x="2" />
+      <skill id="counter" x="3" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>41</health>
+      <skill id="enhance" s="legion" x="3" />
+      <skill id="counter" x="3" />
+      <skill id="weaken" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>49</health>
+      <skill id="enhance" s="legion" x="4" />
+      <skill id="counter" x="4" />
+      <skill id="weaken" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>286</id>
+    <card_type>1</card_type>
+    <name>Corruptrex</name>
+    <portrait>dawnglowmonster</portrait>
+    <attack>0</attack>
+    <health>35</health>
+    <rarity>4</rarity>
+    <skill id="enhance" s="berserk" x="1" />
+    <skill id="rally" x="1" />
+    <skill id="protect" x="2" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>40</health>
+      <skill id="enhance" s="berserk" x="1" />
+      <skill id="rally" x="1" />
+      <skill id="protect" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>46</health>
+      <skill id="enhance" s="berserk" x="2" />
+      <skill id="rally" x="2" />
+      <skill id="protect" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>53</health>
+      <skill id="enhance" s="berserk" x="3" />
+      <skill id="rally" x="3" />
+      <skill id="protect" all="1" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>61</health>
+      <skill id="enhance" s="berserk" x="3" />
+      <skill id="rally" x="4" />
+      <skill id="protect" all="1" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>70</health>
+      <skill id="enhance" s="berserk" x="4" />
+      <skill id="rally" x="5" />
+      <skill id="protect" all="1" x="4" />
+    </upgrade>
+  </unit>
+  <!-- Elemental story commanders  -->
+  <unit>
+    <id>287</id>
+    <card_type>1</card_type>
+    <name>Crab Striker</name>
+    <portrait>lavacrab</portrait>
+    <attack>0</attack>
+    <health>38</health>
+    <rarity>3</rarity>
+    <skill id="enhance" s="pierce" x="2" />
+    <skill id="enfeeble" x="2" />
+    <skill id="strike" x="1" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>42</health>
+      <skill id="enhance" s="pierce" x="3" />
+      <skill id="enfeeble" x="2" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>47</health>
+      <skill id="enhance" s="pierce" x="3" />
+      <skill id="enfeeble" x="3" />
+      <skill id="strike" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>53</health>
+      <skill id="enhance" s="pierce" x="3" />
+      <skill id="enfeeble" x="4" />
+      <skill id="strike" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>60</health>
+      <skill id="enhance" s="pierce" x="2" all="1" />
+      <skill id="enfeeble" x="5" />
+      <skill id="strike" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>288</id>
+    <card_type>1</card_type>
+    <name>Targetback Hill</name>
+    <portrait>groundelemental</portrait>
+    <attack>0</attack>
+    <health>40</health>
+    <rarity>4</rarity>
+    <skill id="enhance" s="strike" x="2" />
+    <skill id="heal" x="2" />
+    <skill id="protect" x="2" y="5" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>45</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>51</health>
+      <skill id="enhance" s="strike" x="2" />
+      <skill id="heal" x="3" />
+      <skill id="protect" x="2" y="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>58</health>
+      <skill id="enhance" s="strike" x="3" />
+      <skill id="heal" x="3" />
+      <skill id="protect" x="3" y="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>66</health>
+      <skill id="enhance" s="strike" x="3" />
+      <skill id="heal" x="3" />
+      <skill id="protect" x="4" y="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>75</health>
+      <skill id="enhance" s="strike" x="2" all="1" />
+      <skill id="heal" x="3" all="1" />
+      <skill id="protect" x="5" y="5" />
+    </upgrade>
+  </unit>
+  <!-- Frog Commanders -->
+  <unit>
+    <id>289</id>
+    <card_type>1</card_type>
+    <name>Treetop Stalker</name>
+    <portrait>skybeast</portrait>
+    <attack>0</attack>
+    <health>30</health>
+    <rarity>3</rarity>
+    <skill id="enhance" s="leech" x="1" />
+    <skill id="strike" x="2" />
+    <skill id="weaken" x="1" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>35</health>
+      <skill id="enhance" s="leech" x="1" />
+      <skill id="strike" x="2" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>41</health>
+      <skill id="enhance" s="leech" x="2" />
+      <skill id="strike" x="3" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>48</health>
+      <skill id="enhance" s="leech" x="3" />
+      <skill id="strike" x="4" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>56</health>
+      <skill id="enhance" s="leech" x="3" />
+      <skill id="strike" x="5" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>290</id>
+    <card_type>1</card_type>
+    <name>Rebellious Frog Scout</name>
+    <portrait>frogscout</portrait>
+    <attack>0</attack>
+    <health>33</health>
+    <rarity>3</rarity>
+    <skill id="enhance" s="armored" x="2" />
+    <skill id="enhance" s="fervor" x="1" />
+    <skill id="enhance" s="pierce" x="2" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>38</health>
+      <skill id="enhance" s="armored" x="2" />
+      <skill id="enhance" s="fervor" x="1" />
+      <skill id="enhance" s="pierce" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>44</health>
+      <skill id="enhance" s="armored" x="3" />
+      <skill id="enhance" s="fervor" x="1" />
+      <skill id="enhance" s="pierce" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>51</health>
+      <skill id="enhance" s="armored" x="3" />
+      <skill id="enhance" s="fervor" x="1" />
+      <skill id="enhance" s="pierce" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>59</health>
+      <skill id="enhance" s="armored" x="3" />
+      <skill id="enhance" s="fervor" x="2" />
+      <skill id="enhance" s="pierce" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>291</id>
+    <card_type>1</card_type>
+    <name>Feral Bird</name>
+    <portrait>feralbird</portrait>
+    <attack>0</attack>
+    <health>36</health>
+    <rarity>4</rarity>
+    <skill id="enhance" s="evade" x="1" />
+    <skill id="heal" x="2" />
+    <skill id="protect" x="1" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>41</health>
+      <skill id="enhance" s="evade" x="1" />
+      <skill id="heal" x="2" />
+      <skill id="protect" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>47</health>
+      <skill id="enhance" s="evade" x="1" />
+      <skill id="heal" x="2" />
+      <skill id="protect" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>55</health>
+      <skill id="enhance" s="evade" x="1" />
+      <skill id="heal" x="3" />
+      <skill id="protect" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>64</health>
+      <skill id="enhance" s="evade" x="1" />
+      <skill id="heal" x="3" />
+      <skill id="protect" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>74</health>
+      <skill id="enhance" s="evade" x="1" all="1" />
+      <skill id="heal" x="3" />
+      <skill id="protect" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>292</id>
+    <card_type>1</card_type>
+    <name>Goldtop Hunter</name>
+    <portrait>canopyhunter</portrait>
+    <attack>0</attack>
+    <health>31</health>
+    <rarity>3</rarity>
+    <skill id="enhance" s="berserk" x="1" />
+    <skill id="enfeeble" x="2" />
+    <skill id="jam" c="6" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>36</health>
+      <skill id="enhance" s="berserk" x="1" />
+      <skill id="enfeeble" x="2" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>42</health>
+      <skill id="enhance" s="berserk" x="1" />
+      <skill id="enfeeble" x="3" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>49</health>
+      <skill id="enhance" s="berserk" x="1" />
+      <skill id="enfeeble" x="4" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>59</health>
+      <skill id="enhance" s="berserk" x="2" />
+      <skill id="enfeeble" x="4" />
+      <skill id="jam" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>293</id>
+    <card_type>1</card_type>
+    <name>Fireback Dragon</name>
+    <portrait>moltendragon</portrait>
+    <attack>0</attack>
+    <health>35</health>
+    <rarity>4</rarity>
+    <skill id="enhance" s="legion" x="1" />
+    <skill id="counter" x="1" />
+    <skill id="strike" x="2" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>39</health>
+      <skill id="enhance" s="burn" x="1" />
+      <skill id="counter" x="2" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>44</health>
+      <skill id="enhance" s="burn" x="1" />
+      <skill id="counter" x="2" />
+      <skill id="strike" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>50</health>
+      <skill id="enhance" s="burn" x="1" />
+      <skill id="counter" x="3" />
+      <skill id="strike" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>57</health>
+      <skill id="enhance" s="burn" x="2" />
+      <skill id="counter" x="3" />
+      <skill id="strike" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>65</health>
+      <skill id="enhance" s="burn" x="2" />
+      <skill id="counter" x="3" />
+      <skill id="strike" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>294</id>
+    <card_type>1</card_type>
+    <name>Avian Soldiers</name>
+    <portrait>aviansoldier</portrait>
+    <attack>0</attack>
+    <health>37</health>
+    <rarity>4</rarity>
+    <skill id="enhance" s="legion" x="1" />
+    <skill id="rally" x="2" />
+    <skill id="jam" c="5" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>42</health>
+      <skill id="enhance" s="legion" x="1" />
+      <skill id="rally" x="2" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>48</health>
+      <skill id="enhance" s="legion" x="1" />
+      <skill id="rally" x="3" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>55</health>
+      <skill id="enhance" s="legion" x="1" />
+      <skill id="rally" x="3" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>63</health>
+      <skill id="enhance" s="legion" x="2" />
+      <skill id="rally" x="3" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>71</health>
+      <skill id="enhance" s="legion" x="2" />
+      <skill id="rally" x="2" all="1" />
+      <skill id="jam" c="3" />
+    </upgrade>
+  </unit>
+  <!-- April Fools Commanders -->
+  <unit>
+    <id>295</id>
+    <card_type>1</card_type>
+    <name>Thing In The Lake</name>
+    <portrait>aprilmonser</portrait>
+    <attack>0</attack>
+    <health>50</health>
+    <rarity>4</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>60</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>70</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>80</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>90</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>99</health>
+    </upgrade>
+    <desc>Well, at least if this is the end I don't need to file my taxes.</desc>
+  </unit>
+  <unit>
+    <id>296</id>
+    <card_type>1</card_type>
+    <name>The Maddest Bomber</name>
+    <portrait>aprilbomber</portrait>
+    <attack>0</attack>
+    <health>30</health>
+    <rarity>4</rarity>
+    <skill id="strike" x="1" />
+    <skill id="strike" x="1" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>35</health>
+      <skill id="strike" x="1" />
+      <skill id="strike" x="1" />
+      <skill id="strike" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>45</health>
+      <skill id="strike" x="2" />
+      <skill id="strike" x="1" />
+      <skill id="strike" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>50</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>55</health>
+      <skill id="strike" x="2" />
+      <skill id="strike" x="2" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <desc>Bombs are actually a very delicate art. At least, as delicate as massive explosions can be.</desc>
+  </unit>
+  <unit>
+    <id>297</id>
+    <card_type>1</card_type>
+    <name>Chicken Enthusiast</name>
+    <portrait>aprilchicken</portrait>
+    <attack>0</attack>
+    <health>22</health>
+    <rarity>4</rarity>
+    <skill id="heal" y="10" x="1" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>33</health>
+      <skill id="heal" y="10" all="1" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>39</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>44</health>
+      <skill id="heal" y="10" all="1" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>49</health>
+      <skill id="heal" y="10" all="1" x="3" />
+    </upgrade>
+    <desc>"BAWK BAWK BAWK"</desc>
+  </unit>
+  <!-- START Seastone Commanders-->
+  <unit>
+    <id>298</id>
+    <card_type>1</card_type>
+    <name>Seaside Windstorm</name>
+    <portrait>windstormelemental</portrait>
+    <attack>0</attack>
+    <health>32</health>
+    <skill id="enhance" s="heal" x="1" />
+    <skill id="protect" x="2" />
+    <rarity>3</rarity>
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>36</health>
+      <skill id="enhance" s="heal" x="2" />
+      <skill id="protect" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>41</health>
+      <skill id="enhance" s="heal" x="4" />
+      <skill id="protect" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>47</health>
+      <skill id="weaken" x="3" />
+      <skill id="enhance" s="heal" x="4" />
+      <skill id="protect" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>54</health>
+      <skill id="weaken" x="4" />
+      <skill id="enhance" s="heal" x="1" all="1" />
+      <skill id="protect" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>299</id>
+    <card_type>1</card_type>
+    <name>Beachscamp</name>
+    <portrait>skybeast</portrait>
+    <attack>0</attack>
+    <health>31</health>
+    <skill id="strike" x="1" />
+    <skill id="weaken" x="2" />
+    <rarity>3</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>35</health>
+      <skill id="strike" x="2" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>40</health>
+      <skill id="strike" x="2" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>46</health>
+      <skill id="strike" x="2" />
+      <skill id="weaken" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>53</health>
+      <skill id="strike" x="2" />
+      <skill id="strike" x="2" />
+      <skill id="weaken" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>300</id>
+    <card_type>1</card_type>
+    <name>Waterbomber Avian</name>
+    <portrait>feralbird</portrait>
+    <attack>0</attack>
+    <health>35</health>
+    <skill id="rally" x="2" />
+    <skill id="heal" x="2" />
+    <rarity>3</rarity>
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>39</health>
+      <skill id="rally" x="2" />
+      <skill id="heal" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>44</health>
+      <skill id="rally" x="2" />
+      <skill id="heal" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>50</health>
+      <skill id="rally" x="3" />
+      <skill id="heal" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>57</health>
+      <skill id="rally" x="1" />
+      <skill id="rally" x="3" />
+      <skill id="heal" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>301</id>
+    <card_type>1</card_type>
+    <name>Salty Fire Titan</name>
+    <portrait>firetitan</portrait>
+    <attack>0</attack>
+    <health>37</health>
+    <skill id="strike" x="2" />
+    <skill id="rally" x="1" />
+    <rarity>4</rarity>
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>41</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>46</health>
+      <skill id="strike" x="2" />
+      <skill id="rally" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>52</health>
+      <skill id="strike" x="2" />
+      <skill id="rally" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>59</health>
+      <skill id="strike" x="3" />
+      <skill id="rally" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>67</health>
+      <skill id="strike" x="3" />
+      <skill id="rally" x="3" />
+      <skill id="counter" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>302</id>
+    <card_type>1</card_type>
+    <name>First Order Monk</name>
+    <portrait>oldmonk</portrait>
+    <attack>0</attack>
+    <health>36</health>
+    <skill id="enhance" s="armored" x="2" />
+    <skill id="imbue" s="counter" x="1" />
+    <rarity>4</rarity>
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>40</health>
+      <skill id="enhance" s="armored" x="2" />
+      <skill id="imbue" s="counter" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>45</health>
+      <skill id="enhance" s="armored" x="3" />
+      <skill id="imbue" s="counter" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>51</health>
+      <skill id="enhance" s="armored" x="3" />
+      <skill id="imbue" s="counter" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>58</health>
+      <skill id="enhance" s="armored" x="3" />
+      <skill id="imbue" s="counter" x="3" />
+      <skill id="counter" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>66</health>
+      <skill id="enhance" s="armored" x="2" all="1" />
+      <skill id="imbue" s="counter" x="3" />
+      <skill id="counter" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>303</id>
+    <card_type>1</card_type>
+    <name>Sealed First Order Demon</name>
+    <portrait>octopusmonster</portrait>
+    <attack>0</attack>
+    <health>38</health>
+    <skill id="counter" x="1" />
+    <skill id="enfeeble" x="2" />
+    <rarity>4</rarity>
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>42</health>
+      <skill id="counter" x="2" />
+      <skill id="enfeeble" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>47</health>
+      <skill id="counter" x="2" />
+      <skill id="enfeeble" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>53</health>
+      <skill id="counter" x="2" />
+      <skill id="enfeeble" x="3" />
+      <skill id="imbue" s="frost" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>60</health>
+      <skill id="counter" x="2" />
+      <skill id="enfeeble" x="3" />
+      <skill id="imbue" s="frost" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>68</health>
+      <skill id="counter" x="2" />
+      <skill id="enfeeble" x="4" />
+      <skill id="imbue" s="frost" x="3" />
+    </upgrade>
+  </unit>
+  <!-- START AVIAN Commanders Event 11-->
+  <unit>
+    <id>304</id>
+    <card_type>1</card_type>
+    <name>Skyward Beast</name>
+    <portrait>feralbird</portrait>
+    <attack>0</attack>
+    <health>29</health>
+    <skill id="imbue" s="evade" x="2" />
+    <skill id="counter" x="1" />
+    <rarity>3</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>33</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>38</health>
+      <skill id="imbue" s="evade" x="2" />
+      <skill id="counter" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>44</health>
+      <skill id="imbue" s="evade" x="2" />
+      <skill id="counter" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>51</health>
+      <skill id="imbue" s="evade" x="2" />
+      <skill id="counter" x="3" />
+      <skill id="heal" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>305</id>
+    <card_type>1</card_type>
+    <name>Red Feather Hippogriff</name>
+    <portrait>avianlion</portrait>
+    <attack>0</attack>
+    <health>32</health>
+    <skill id="strike" x="2" />
+    <skill id="imbue" s="poison" x="2" />
+    <rarity>3</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>36</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>41</health>
+      <skill id="strike" x="3" />
+      <skill id="imbue" s="poison" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>47</health>
+      <skill id="strike" x="3" />
+      <skill id="imbue" s="poison" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>54</health>
+      <skill id="enfeeble" x="2" />
+      <skill id="strike" x="3" />
+      <skill id="imbue" s="poison" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>306</id>
+    <card_type>1</card_type>
+    <name>Lost Angel</name>
+    <portrait>angelknight</portrait>
+    <attack>0</attack>
+    <health>30</health>
+    <skill id="heal" x="1" />
+    <skill id="protect" x="2" />
+    <rarity>3</rarity>
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>34</health>
+      <skill id="heal" x="2" />
+      <skill id="protect" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>39</health>
+      <skill id="heal" x="2" />
+      <skill id="protect" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>45</health>
+      <skill id="imbue" s="armored" x="1" />
+      <skill id="heal" x="2" />
+      <skill id="protect" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>52</health>
+      <skill id="imbue" s="armored" x="2" />
+      <skill id="heal" x="2" />
+      <skill id="protect" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>307</id>
+    <card_type>1</card_type>
+    <name>Red Feather Soldier</name>
+    <portrait>aviansoldier2</portrait>
+    <attack>0</attack>
+    <health>30</health>
+    <skill id="imbue" s="armored" x="2" y="3" />
+    <skill id="weaken" x="2" />
+    <rarity>4</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>34</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>39</health>
+      <skill id="imbue" s="armored" x="2" y="3" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>45</health>
+      <skill id="imbue" s="armored" x="3" y="3" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>52</health>
+      <skill id="imbue" s="armored" x="3" y="3" />
+      <skill id="weaken" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>60</health>
+      <skill id="imbue" s="armored" x="2" y="3" all="1" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>308</id>
+    <card_type>1</card_type>
+    <name>Red Feather Magistrate</name>
+    <portrait>avianmagistrate</portrait>
+    <attack>0</attack>
+    <health>34</health>
+    <skill id="enfeeble" x="2" />
+    <skill id="imbue" s="berserk" x="1" />
+    <rarity>4</rarity>
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>38</health>
+      <skill id="enfeeble" x="2" />
+      <skill id="imbue" s="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>43</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>49</health>
+      <skill id="enfeeble" x="3" />
+      <skill id="imbue" s="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>56</health>
+      <skill id="enfeeble" x="4" />
+      <skill id="imbue" s="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>64</health>
+      <skill id="enfeeble" x="4" />
+      <skill id="enfeeble" x="2" />
+      <skill id="imbue" s="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <!-- END AVIAN Commanders-->
+  <!-- START Fortune's Favor Raid Commander -->
+  <unit>
+    <id>309</id>
+    <card_type>1</card_type>
+    <name>Fortune's Favor</name>
+    <portrait>raid_003_portrait</portrait>
+    <attack>0</attack>
+    <health>30</health>
+    <rarity>5</rarity>
+    <skill id="enhance" x="1" s="legion" />
+    <skill id="strike" x="2" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>37</health>
+      <skill id="enhance" x="1" s="legion" />
+      <skill id="strike" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>45</health>
+      <skill id="enhance" x="1" s="legion" />
+      <skill id="strike" x="4" />
+      <skill id="imbue" s="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>52</health>
+      <skill id="enhance" x="1" s="legion" all="1" />
+      <skill id="strike" x="5" />
+      <skill id="imbue" s="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>60</health>
+      <skill id="enhance" x="1" s="legion" all="1" />
+      <skill id="strike" x="5" />
+      <skill id="imbue" s="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>72</health>
+      <skill id="enhance" x="2" s="legion" all="1" />
+      <skill id="strike" x="6" />
+      <skill id="imbue" s="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>85</health>
+      <skill id="enhance" x="3" s="legion" all="1" />
+      <skill id="strike" x="7" />
+      <skill id="imbue" s="flurry" c="2" />
+    </upgrade>
+  </unit>
+  <!-- Dragon Event 12 Commanders -->
+  <unit>
+    <id>310</id>
+    <card_type>1</card_type>
+    <name>Ivytail Dragon</name>
+    <portrait>greenbackdragon</portrait>
+    <attack>0</attack>
+    <health>30</health>
+    <skill id="strike" x="2" />
+    <skill id="imbue" s="leech" x="1" />
+    <rarity>4</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>34</health>
+      <skill id="strike" x="2" />
+      <skill id="imbue" s="leech" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>39</health>
+      <skill id="strike" x="3" />
+      <skill id="imbue" s="leech" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>45</health>
+      <skill id="strike" x="3" />
+      <skill id="imbue" s="leech" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>52</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>60</health>
+      <skill id="strike" x="3" />
+      <skill id="imbue" s="leech" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>311</id>
+    <card_type>1</card_type>
+    <name>Goblin Footgang</name>
+    <portrait>goblinfootmen</portrait>
+    <attack>0</attack>
+    <health>25</health>
+    <skill id="counter" x="1" />
+    <skill id="imbue" s="poison" x="2" />
+    <rarity>3</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>34</health>
+      <skill id="counter" x="2" />
+      <skill id="imbue" s="poison" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>40</health>
+      <skill id="counter" x="2" />
+      <skill id="imbue" s="poison" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>47</health>
+      <skill id="counter" x="2" />
+      <skill id="imbue" s="poison" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>312</id>
+    <card_type>1</card_type>
+    <name>Goblin Ringleader</name>
+    <portrait>goblinringleader</portrait>
+    <attack>0</attack>
+    <health>32</health>
+    <skill id="strike" x="2" />
+    <skill id="imbue" s="nullify" x="1" />
+    <rarity>4</rarity>
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>36</health>
+      <skill id="strike" x="2" />
+      <skill id="imbue" s="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>41</health>
+      <skill id="heal" x="2" />
+      <skill id="strike" x="2" />
+      <skill id="imbue" s="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>47</health>
+      <skill id="heal" x="2" />
+      <skill id="strike" x="3" />
+      <skill id="imbue" s="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>54</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>62</health>
+      <skill id="heal" x="3" />
+      <skill id="strike" x="3" />
+      <skill id="imbue" s="nullify" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>313</id>
+    <card_type>1</card_type>
+    <name>High Flying Hippogriff</name>
+    <portrait>avianlion</portrait>
+    <attack>0</attack>
+    <health>32</health>
+    <skill id="enhance" s="evade" x="1" />
+    <skill id="strike" x="2" />
+    <rarity>4</rarity>
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>36</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>41</health>
+      <skill id="enhance" s="evade" x="1" />
+      <skill id="strike" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>47</health>
+      <skill id="enhance" s="evade" x="1" />
+      <skill id="strike" x="3" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>54</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>62</health>
+      <skill id="enhance" s="evade" x="2" />
+      <skill id="strike" x="3" />
+      <skill id="strike" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>314</id>
+    <card_type>1</card_type>
+    <name>Fireproof Snipper</name>
+    <portrait>lavacrab</portrait>
+    <attack>0</attack>
+    <health>26</health>
+    <skill id="enfeeble" x="2" />
+    <skill id="jam" c="5" />
+    <rarity>3</rarity>
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>30</health>
+      <skill id="enfeeble" x="3" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>35</health>
+      <skill id="enfeeble" x="3" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>41</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>48</health>
+      <skill id="rally" x="3" />
+      <skill id="enfeeble" x="3" />
+      <skill id="jam" c="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>315</id>
+    <card_type>1</card_type>
+    <name>Ravaging Canine</name>
+    <portrait>wolf</portrait>
+    <attack>0</attack>
+    <health>27</health>
+    <skill id="enfeeble" x="2" />
+    <skill id="enhance" s="berserk" x="1" />
+    <rarity>3</rarity>
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>31</health>
+      <skill id="enfeeble" x="3" />
+      <skill id="enhance" s="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>36</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>42</health>
+      <skill id="enfeeble" x="3" />
+      <skill id="enfeeble" x="1" />
+      <skill id="enhance" s="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>49</health>
+      <skill id="enfeeble" x="3" />
+      <skill id="enfeeble" x="1" />
+      <skill id="enhance" s="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <!-- Insects event 13 -->
+  <unit>
+    <id>316</id>
+    <card_type>1</card_type>
+    <name>Greenleaf Sky Beast</name>
+    <portrait>skybeast</portrait>
+    <attack>0</attack>
+    <health>31</health>
+    <skill id="weaken" x="3" />
+    <skill id="enhance" s="poison" x="1" />
+    <rarity>3</rarity>
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>35</health>
+      <skill id="weaken" x="3" />
+      <skill id="enhance" s="poison" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>40</health>
+      <skill id="weaken" x="3" />
+      <skill id="enhance" s="poison" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>46</health>
+      <skill id="jam" c="4" />
+      <skill id="weaken" x="3" />
+      <skill id="enhance" s="poison" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>53</health>
+      <skill id="jam" c="3" />
+      <skill id="weaken" x="4" />
+      <skill id="enhance" s="poison" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>317</id>
+    <card_type>1</card_type>
+    <name>Raging Hippogrif</name>
+    <portrait>avianlion</portrait>
+    <attack>0</attack>
+    <health>28</health>
+    <skill id="enfeeble" x="2" />
+    <skill id="imbue" s="burn" x="1" />
+    <rarity>3</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>32</health>
+      <skill id="enfeeble" x="2" />
+      <skill id="strike" x="1" />
+      <skill id="imbue" s="burn" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>37</health>
+      <skill id="enfeeble" x="2" />
+      <skill id="strike" x="2" />
+      <skill id="imbue" s="burn" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>43</health>
+      <skill id="enfeeble" x="3" />
+      <skill id="strike" x="2" />
+      <skill id="imbue" s="burn" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>50</health>
+      <skill id="enfeeble" x="3" />
+      <skill id="strike" x="3" />
+      <skill id="imbue" s="burn" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>318</id>
+    <card_type>1</card_type>
+    <name>Tamed Fire Dragon</name>
+    <portrait>moltendragon</portrait>
+    <attack>0</attack>
+    <health>36</health>
+    <skill id="strike" x="1" />
+    <skill id="enhance" s="burn" x="2" />
+    <rarity>4</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>40</health>
+      <skill id="strike" x="2" />
+      <skill id="enhance" s="burn" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>45</health>
+      <skill id="strike" x="2" />
+      <skill id="strike" x="1" />
+      <skill id="enhance" s="burn" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>51</health>
+      <skill id="strike" x="2" />
+      <skill id="strike" x="2" />
+      <skill id="enhance" s="burn" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>58</health>
+      <skill id="strike" x="3" />
+      <skill id="strike" x="2" />
+      <skill id="enhance" s="burn" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>66</health>
+      <skill id="strike" x="4" />
+      <skill id="strike" x="3" />
+      <skill id="enhance" s="burn" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>319</id>
+    <card_type>1</card_type>
+    <name>Rabid Jumper</name>
+    <portrait>feralbug</portrait>
+    <attack>0</attack>
+    <health>27</health>
+    <skill id="weaken" x="2" />
+    <skill id="imbue" s="poison" x="1" />
+    <rarity>3</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>31</health>
+      <skill id="weaken" x="2" />
+      <skill id="imbue" s="poison" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>36</health>
+      <skill id="weaken" x="3" />
+      <skill id="imbue" s="poison" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>42</health>
+      <skill id="weaken" x="3" />
+      <skill id="enhance" s="pierce" x="2" />
+      <skill id="imbue" s="poison" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>49</health>
+      <skill id="weaken" x="4" />
+      <skill id="enhance" s="pierce" x="2" />
+      <skill id="imbue" s="poison" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>320</id>
+    <card_type>1</card_type>
+    <name>Cackling Henchmen</name>
+    <portrait>goblinfootmen</portrait>
+    <attack>0</attack>
+    <health>30</health>
+    <skill id="enhance" s="fervor" x="1" />
+    <skill id="imbue" s="nullify" x="2" />
+    <rarity>3</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>34</health>
+      <skill id="enhance" s="fervor" x="1" />
+      <skill id="imbue" s="nullify" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>39</health>
+      <skill id="enhance" s="fervor" x="2" />
+      <skill id="imbue" s="nullify" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>45</health>
+      <skill id="counter" x="2" />
+      <skill id="enhance" s="fervor" x="2" />
+      <skill id="imbue" s="nullify" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>52</health>
+      <skill id="counter" x="3" />
+      <skill id="enhance" s="fervor" x="2" />
+      <skill id="imbue" s="nullify" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>321</id>
+    <card_type>1</card_type>
+    <name>Looting Footmen</name>
+    <portrait>goblinraider</portrait>
+    <attack>0</attack>
+    <health>34</health>
+    <skill id="rally" x="2" />
+    <skill id="protect" x="1" />
+    <rarity>4</rarity>
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>38</health>
+      <skill id="rally" x="2" />
+      <skill id="protect" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>43</health>
+      <skill id="rally" x="2" />
+      <skill id="protect" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>49</health>
+      <skill id="rally" x="2" />
+      <skill id="protect" x="3" />
+      <skill id="enhance" s="leech" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>56</health>
+      <skill id="rally" x="2" />
+      <skill id="protect" x="3" />
+      <skill id="enhance" s="leech" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>64</health>
+      <skill id="rally" x="3" />
+      <skill id="protect" x="3" />
+      <skill id="enhance" s="leech" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>322</id>
+    <card_type>1</card_type>
+    <name>Dragon Master</name>
+    <portrait>dragonridingringleader</portrait>
+    <attack>0</attack>
+    <health>36</health>
+    <skill id="strike" x="2" />
+    <skill id="imbue" s="burn" x="2" />
+    <rarity>4</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>40</health>
+      <skill id="strike" x="3" />
+      <skill id="imbue" s="burn" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>45</health>
+      <skill id="enfeeble" x="1" />
+      <skill id="strike" x="3" />
+      <skill id="imbue" s="burn" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>52</health>
+      <skill id="enfeeble" x="2" />
+      <skill id="strike" x="3" />
+      <skill id="imbue" s="burn" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>58</health>
+      <skill id="enfeeble" x="2" />
+      <skill id="strike" x="3" />
+      <skill id="imbue" s="burn" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>66</health>
+      <skill id="enfeeble" all="1" x="1" />
+      <skill id="strike" x="3" />
+      <skill id="imbue" s="burn" x="3" />
+    </upgrade>
+  </unit>
+  <!-- Angel Commander Event 14 -->
+  <unit>
+    <id>323</id>
+    <card_type>1</card_type>
+    <name>Goblin Captain</name>
+    <portrait>Portrait_Goblin_Captain</portrait>
+    <attack>0</attack>
+    <health>32</health>
+    <skill id="rally" x="1" />
+    <skill id="imbue" s="burn" x="1" />
+    <rarity>4</rarity>
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>36</health>
+      <skill id="rally" x="2" />
+      <skill id="imbue" s="burn" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>41</health>
+      <skill id="rally" x="3" />
+      <skill id="imbue" s="burn" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>47</health>
+      <skill id="rally" x="3" />
+      <skill id="imbue" s="burn" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>54</health>
+      <skill id="rally" x="4" />
+      <skill id="imbue" s="burn" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>62</health>
+      <skill id="rally" all="1" x="2" />
+      <skill id="imbue" s="burn" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>324</id>
+    <card_type>1</card_type>
+    <name>Thunderstrike Beast</name>
+    <portrait>skybeast</portrait>
+    <attack>0</attack>
+    <health>34</health>
+    <skill id="enfeeble" x="2" />
+    <skill id="enhance" s="frost" x="1" />
+    <rarity>4</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>38</health>
+      <skill id="enfeeble" x="3" />
+      <skill id="enhance" s="frost" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>43</health>
+      <skill id="enfeeble" x="3" />
+      <skill id="enfeeble" x="1" />
+      <skill id="enhance" s="frost" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>49</health>
+      <skill id="enfeeble" x="3" />
+      <skill id="enfeeble" x="1" />
+      <skill id="enhance" s="frost" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>56</health>
+      <skill id="enfeeble" x="3" />
+      <skill id="enfeeble" x="2" />
+      <skill id="enhance" s="frost" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>64</health>
+      <skill id="enfeeble" x="3" />
+      <skill id="enfeeble" x="2" />
+      <skill id="enhance" s="frost" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>325</id>
+    <card_type>1</card_type>
+    <name>Avian Explorer</name>
+    <portrait>aviansoldier2</portrait>
+    <attack>0</attack>
+    <health>33</health>
+    <skill id="counter" x="2" />
+    <skill id="imbue" s="berserk" x="1" />
+    <rarity>4</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>37</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>42</health>
+      <skill id="counter" x="2" />
+      <skill id="imbue" s="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>48</health>
+      <skill id="counter" x="3" />
+      <skill id="imbue" s="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>55</health>
+      <skill id="counter" x="3" />
+      <skill id="enfeeble" x="2" />
+      <skill id="imbue" s="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>63</health>
+      <skill id="counter" x="3" />
+      <skill id="enfeeble" x="3" />
+      <skill id="imbue" s="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>326</id>
+    <card_type>1</card_type>
+    <name>Dirt Digger</name>
+    <portrait>feralbug</portrait>
+    <attack>0</attack>
+    <health>28</health>
+    <skill id="strike" x="2" />
+    <skill id="strike" x="2" />
+    <rarity>3</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>33</health>
+      <skill id="strike" x="3" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>39</health>
+      <skill id="strike" x="3" />
+      <skill id="strike" x="2" />
+      <skill id="imbue" s="poison" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>48</health>
+      <skill id="strike" x="3" />
+      <skill id="strike" x="2" />
+      <skill id="imbue" s="poison" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>54</health>
+      <skill id="strike" x="3" />
+      <skill id="strike" x="3" />
+      <skill id="imbue" s="poison" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>327</id>
+    <card_type>1</card_type>
+    <name>Highwind Stalker</name>
+    <portrait>avianlion</portrait>
+    <attack>0</attack>
+    <health>28</health>
+    <skill id="protect" x="2" />
+    <skill id="enhance" s="leech" x="2" />
+    <rarity>3</rarity>
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>33</health>
+      <skill id="protect" x="2" />
+      <skill id="jam" c="5" />
+      <skill id="enhance" s="leech" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>39</health>
+      <skill id="protect" x="3" />
+      <skill id="jam" c="5" />
+      <skill id="enhance" s="leech" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>48</health>
+      <skill id="protect" x="3" />
+      <skill id="jam" c="4" />
+      <skill id="enhance" s="leech" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>54</health>
+      <skill id="protect" x="3" />
+      <skill id="jam" c="3" />
+      <skill id="enhance" s="leech" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>328</id>
+    <card_type>1</card_type>
+    <name>Plateau Monster</name>
+    <portrait>oasismonster</portrait>
+    <attack>0</attack>
+    <health>33</health>
+    <skill id="weaken" x="2" />
+    <skill id="imbue" s="armored" x="1" />
+    <rarity>4</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>35</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>40</health>
+      <skill id="weaken" x="2" />
+      <skill id="imbue" s="armored" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>45</health>
+      <skill id="weaken" x="3" />
+      <skill id="imbue" s="armored" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>51</health>
+      <skill id="weaken" x="3" />
+      <skill id="enfeeble" x="1" />
+      <skill id="imbue" s="armored" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>60</health>
+      <skill id="weaken" x="3" />
+      <skill id="enfeeble" x="2" />
+      <skill id="imbue" s="armored" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>329</id>
+    <card_type>1</card_type>
+    <name>Reks</name>
+    <portrait>Portrait_King_Goblin</portrait>
+    <attack>0</attack>
+    <health>40</health>
+    <skill id="heal" x="1" />
+    <skill id="rally" x="1" />
+    <rarity>4</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>45</health>
+      <skill id="heal" x="2" />
+      <skill id="rally" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>49</health>
+      <skill id="heal" x="2" />
+      <skill id="rally" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>53</health>
+      <skill id="heal" x="2" />
+      <skill id="rally" x="2" />
+      <skill id="imbue" x="1" s="poison" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>56</health>
+      <skill id="heal" x="2" />
+      <skill id="rally" x="2" />
+      <skill id="imbue" x="2" s="poison" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>60</health>
+      <skill id="heal" x="2" />
+      <skill id="rally" x="2" />
+      <skill id="imbue" x="3" s="poison" />
+    </upgrade>
+  </unit>
+  <!-- Event 16 Undead -->
+  <unit>
+    <id>330</id>
+    <card_type>1</card_type>
+    <name>Undead Brute Boss</name>
+    <portrait>undeadbrute</portrait>
+    <attack>0</attack>
+    <health>32</health>
+    <skill id="jam" c="4" />
+    <skill id="weaken" x="1" />
+    <rarity>4</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>37</health>
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="jam" c="4" />
+      <skill id="weaken" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>42</health>
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="jam" c="4" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>47</health>
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="jam" c="4" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>52</health>
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="jam" c="4" />
+      <skill id="weaken" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>58</health>
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="jam" c="4" />
+      <skill id="weaken" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>331</id>
+    <card_type>1</card_type>
+    <name>Void Infected General</name>
+    <portrait>maniacgeneral</portrait>
+    <attack>0</attack>
+    <health>28</health>
+    <skill id="enhance" x="1" s="strike" />
+    <skill id="strike" x="1" />
+    <skill id="weaken" x="1" all="1" />
+    <rarity>3</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>33</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>39</health>
+      <skill id="enhance" x="1" s="strike" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>44</health>
+      <skill id="enhance" x="1" s="strike" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>50</health>
+      <skill id="enhance" x="2" s="strike" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+  </unit>
+  <!-- Dungeon Commanders -->
+  <unit>
+    <id>332</id>
+    <card_type>1</card_type>
+    <name>Cavern Wisp</name>
+    <portrait>lightwisp</portrait>
+    <attack>0</attack>
+    <health>14</health>
+    <skill id="rally" x="1" />
+    <skill id="rally" y="7" x="1" />
+    <rarity>3</rarity>
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+      <skill id="rally" x="1" />
+      <skill id="rally" y="7" x="1" />
+      <skill id="heal" y="7" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>24</health>
+      <skill id="rally" x="1" />
+      <skill id="rally" y="7" x="2" />
+      <skill id="heal" y="7" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>27</health>
+      <skill id="rally" x="2" />
+      <skill id="rally" y="7" x="3" />
+      <skill id="heal" y="7" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>29</health>
+    </upgrade>
+    <desc>In the darkest depths the light can shine brightest.</desc>
+  </unit>
+  <unit>
+    <id>333</id>
+    <card_type>1</card_type>
+    <name>Risen Warrior</name>
+    <portrait>skeletonwarrior</portrait>
+    <attack>0</attack>
+    <health>16</health>
+    <skill id="weaken" x="1" />
+    <skill id="imbue" s="pierce" y="7" x="1" />
+    <rarity>3</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+      <skill id="weaken" x="2" />
+      <skill id="imbue" s="pierce" y="7" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>22</health>
+      <skill id="weaken" all="1" x="2" />
+      <skill id="imbue" s="pierce" y="7" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>26</health>
+      <skill id="weaken" all="1" x="3" />
+      <skill id="imbue" s="pierce" y="7" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>28</health>
+    </upgrade>
+    <desc>A rattling can be heard in the darkness, bones and metal scrapping across the stone.</desc>
+  </unit>
+  <unit>
+    <id>334</id>
+    <card_type>1</card_type>
+    <name>Underhill Caverns</name>
+    <portrait>cavernsofcrossings</portrait>
+    <attack>0</attack>
+    <health>15</health>
+    <skill id="enfeeble" x="2" />
+    <skill id="imbue" s="evade" x="1" />
+    <rarity>3</rarity>
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>20</health>
+      <skill id="enfeeble" x="2" />
+      <skill id="enfeeble" x="1" />
+      <skill id="imbue" s="evade" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>24</health>
+      <skill id="enfeeble" x="3" />
+      <skill id="enfeeble" x="2" />
+      <skill id="imbue" s="evade" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>27</health>
+      <skill id="enfeeble" x="3" />
+      <skill id="enfeeble" x="3" />
+      <skill id="imbue" s="evade" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>30</health>
+    </upgrade>
+    <desc>The darkest corners of the Underhill dungeons hide unfathomable dangers.</desc>
+  </unit>
+  <unit>
+    <id>335</id>
+    <card_type>1</card_type>
+    <name>Ascetic Scientists</name>
+    <portrait>undeadscientists</portrait>
+    <attack>0</attack>
+    <health>30</health>
+    <skill id="weaken" x="2" />
+    <skill id="imbue" s="nullify" y="7" x="1" />
+    <skill id="heal" y="7" x="2" />
+    <rarity>4</rarity>
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>34</health>
+      <skill id="weaken" x="3" />
+      <skill id="imbue" s="nullify" y="7" x="1" />
+      <skill id="heal" y="7" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>38</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>42</health>
+      <skill id="weaken" x="3" />
+      <skill id="imbue" s="nullify" y="7" x="2" />
+      <skill id="heal" y="7" all="1" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>46</health>
+      <skill id="weaken" x="4" />
+      <skill id="imbue" s="nullify" y="7" x="2" />
+      <skill id="heal" y="7" all="1" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>50</health>
+      <skill id="weaken" x="4" />
+      <skill id="imbue" s="nullify" y="7" x="3" />
+      <skill id="heal" all="1" y="7" x="2" />
+    </upgrade>
+    <desc>Withdrawing from society, these undead continue their scientific work even after their bodies have given up.</desc>
+  </unit>
+  <unit>
+    <id>336</id>
+    <card_type>1</card_type>
+    <name>Hornslice Fiend</name>
+    <portrait>balrog</portrait>
+    <attack>0</attack>
+    <health>27</health>
+    <skill id="counter" x="2" />
+    <skill id="imbue" s="burn" y="7" x="2" />
+    <skill id="strike" all="1" x="1" />
+    <rarity>4</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>30</health>
+      <skill id="counter" x="3" />
+      <skill id="imbue" s="burn" y="7" x="2" />
+      <skill id="strike" all="1" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>33</health>
+      <skill id="counter" x="3" />
+      <skill id="imbue" s="burn" y="7" x="3" />
+      <skill id="strike" all="1" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>36</health>
+      <skill id="counter" x="3" />
+      <skill id="imbue" s="burn" y="7" x="3" />
+      <skill id="strike" all="1" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>39</health>
+      <skill id="counter" x="4" />
+      <skill id="imbue" s="burn" y="7" x="4" />
+      <skill id="strike" all="1" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>42</health>
+      <skill id="counter" x="4" />
+      <skill id="imbue" s="burn" y="7" x="5" />
+      <skill id="strike" all="1" x="3" />
+    </upgrade>
+    <desc>"The last thing the adventurers heard was the wooshing crack of its fire whip from the darkness." - Collection of Bardic Tales IV</desc>
+  </unit>
+  <unit>
+    <id>337</id>
+    <card_type>1</card_type>
+    <name>Dark Dweller</name>
+    <portrait>octopusmonster</portrait>
+    <attack>0</attack>
+    <health>35</health>
+    <skill id="imbue" s="evade" x="2" />
+    <skill id="weaken" all="1" x="3" c="4" />
+    <skill id="enfeeble" x="2" />
+    <rarity>4</rarity>
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>40</health>
+      <skill id="imbue" s="evade" x="2" />
+      <skill id="weaken" all="1" x="3" c="4" />
+      <skill id="enfeeble" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>45</health>
+      <skill id="imbue" s="evade" x="2" />
+      <skill id="weaken" all="1" x="4" c="4" />
+      <skill id="enfeeble" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>50</health>
+      <skill id="imbue" s="evade" x="2" />
+      <skill id="weaken" all="1" x="4" c="3" />
+      <skill id="enfeeble" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>55</health>
+      <skill id="imbue" s="evade" x="3" />
+      <skill id="weaken" all="1" x="5" c="3" />
+      <skill id="enfeeble" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>60</health>
+      <skill id="imbue" s="evade" x="4" />
+      <skill id="weaken" all="1" x="5" c="2" />
+      <skill id="enfeeble" x="3" />
+    </upgrade>
+    <desc>"No one understands what lurks in the furthest depths of the earth. Things beyond imagination." - Arcanists Scrolls of Prophecy</desc>
+  </unit>
+  <unit>
+    <id>338</id>
+    <card_type>1</card_type>
+    <name>Ruler of the Depths</name>
+    <portrait>undeadsnake</portrait>
+    <attack>0</attack>
+    <health>72</health>
+    <skill id="heal" all="1" y="7" x="2" />
+    <skill id="imbue" s="berserk" y="7" x="4" />
+    <skill id="jam" c="5" />
+    <rarity>5</rarity>
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>79</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>81</health>
+      <skill id="heal" all="1" y="7" x="3" />
+      <skill id="imbue" s="berserk" y="7" x="5" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>84</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>87</health>
+      <skill id="heal" all="1" y="7" x="4" />
+      <skill id="imbue" s="berserk" y="7" x="6" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>90</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>94</health>
+      <skill id="heal" all="1" y="7" x="5" />
+      <skill id="imbue" s="berserk" y="7" x="7" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <desc>"In the farthest shadows of the Underhill lurks a beast over 2000 years old. It preys on death itself and fears nothing." - J.L. Montrello</desc>
+  </unit>
+  <unit>
+    <id>339</id>
+    <card_type>1</card_type>
+    <name>Marrowsworn the Tyrant</name>
+    <portrait>nethergore</portrait>
+    <attack>0</attack>
+    <health>76</health>
+    <skill id="imbue" s="burn" y="7" x="2" />
+    <skill id="rally" all="1" y="7" x="2" />
+    <skill id="weaken" all="1" x="2" />
+    <rarity>5</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>79</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>81</health>
+      <skill id="imbue" s="burn" all="1" y="7" x="2" />
+      <skill id="rally" all="1" y="7" x="3" />
+      <skill id="weaken" all="1" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>84</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>87</health>
+      <skill id="imbue" s="burn" all="1" y="7" x="2" />
+      <skill id="rally" all="1" y="7" x="4" />
+      <skill id="weaken" all="1" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>90</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>94</health>
+      <skill id="imbue" s="burn" all="1" y="7" x="4" />
+      <skill id="rally" all="1" y="7" x="4" />
+      <skill id="weaken" all="1" x="5" />
+    </upgrade>
+    <desc>"Marrowsworn was bound to the depths of the Underhill, forever kept from tormenting the living." - Tarian the Lich Lord</desc>
+  </unit>
+  <!-- Event 17 Goblins -->
+  <unit>
+    <id>340</id>
+    <card_type>1</card_type>
+    <name>Wind-Up Dragons</name>
+    <portrait>windupdragons</portrait>
+    <attack>0</attack>
+    <health>35</health>
+    <skill id="protect" x="2" />
+    <skill id="weaken" x="1" all="1" />
+    <rarity>4</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>40</health>
+      <skill id="imbue" x="1" s="pierce" />
+      <skill id="protect" x="2" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>45</health>
+      <skill id="imbue" x="1" s="pierce" />
+      <skill id="protect" x="2" all="1" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>47</health>
+      <skill id="imbue" x="2" s="pierce" />
+      <skill id="protect" x="2" all="1" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>52</health>
+      <skill id="imbue" x="3" s="pierce" />
+      <skill id="protect" x="2" all="1" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>57</health>
+      <skill id="imbue" x="5" s="pierce" />
+      <skill id="protect" x="2" all="1" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>341</id>
+    <card_type>1</card_type>
+    <name>Goblin Mechanic</name>
+    <portrait>mechanicgoblin</portrait>
+    <attack>0</attack>
+    <health>25</health>
+    <skill id="imbue" x="1" s="counter" />
+    <skill id="strike" x="1" />
+    <skill id="rally" x="1" />
+    <rarity>3</rarity>
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>30</health>
+      <skill id="imbue" x="2" s="counter" />
+      <skill id="strike" x="1" />
+      <skill id="rally" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>35</health>
+      <skill id="imbue" x="3" s="counter" />
+      <skill id="strike" x="1" />
+      <skill id="rally" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>44</health>
+      <skill id="imbue" x="3" s="counter" />
+      <skill id="strike" x="2" />
+      <skill id="rally" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>50</health>
+      <skill id="imbue" x="4" s="counter" />
+      <skill id="strike" x="2" />
+      <skill id="rally" x="2" all="1" />
+    </upgrade>
+  </unit>
+  <!-- Halloween event (event 17) -->
+  <unit>
+    <id>342</id>
+    <card_type>1</card_type>
+    <name>Treat Trickmaster</name>
+    <portrait>pumpkingPortrait</portrait>
+    <attack>0</attack>
+    <health>50</health>
+    <skill id="imbue" x="1" s="poison" />
+    <skill id="counter" x="1" />
+    <rarity>4</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>53</health>
+      <skill id="imbue" x="1" s="poison" />
+      <skill id="enhance" x="1" s="burn" />
+      <skill id="counter" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>56</health>
+      <skill id="imbue" x="1" s="poison" />
+      <skill id="enhance" x="1" s="burn" />
+      <skill id="counter" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>59</health>
+      <skill id="imbue" x="2" s="poison" />
+      <skill id="enhance" x="2" s="burn" />
+      <skill id="counter" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>62</health>
+      <skill id="imbue" x="2" s="poison" />
+      <skill id="enhance" x="2" s="burn" />
+      <skill id="counter" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>66</health>
+      <skill id="imbue" x="3" s="poison" />
+      <skill id="enhance" x="3" s="burn" />
+      <skill id="counter" x="4" />
+    </upgrade>
+  </unit>
+  <!-- Dungeon Commanders -->
+  <unit>
+    <id>343</id>
+    <card_type>1</card_type>
+    <name>Whirling Devil</name>
+    <portrait>windstormelemental</portrait>
+    <attack>0</attack>
+    <health>14</health>
+    <skill id="rally" x="1" />
+    <skill id="rally" y="5" x="1" />
+    <rarity>3</rarity>
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+      <skill id="rally" x="1" />
+      <skill id="rally" y="5" x="1" />
+      <skill id="weaken" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>24</health>
+      <skill id="rally" x="1" />
+      <skill id="rally" y="5" x="2" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>27</health>
+      <skill id="rally" x="2" />
+      <skill id="rally" y="5" x="3" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>29</health>
+    </upgrade>
+    <desc>A former servant of Solaron, the whirling devil was banished into the dungeon's depths.</desc>
+  </unit>
+  <unit>
+    <id>344</id>
+    <card_type>1</card_type>
+    <name>Magma Clipper</name>
+    <portrait>lavacrab</portrait>
+    <attack>0</attack>
+    <health>16</health>
+    <skill id="strike" x="1" />
+    <skill id="imbue" s="pierce" x="1" />
+    <rarity>3</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+      <skill id="strike" x="1" />
+      <skill id="strike" x="1" />
+      <skill id="imbue" s="pierce" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>22</health>
+      <skill id="strike" x="1" />
+      <skill id="strike" x="2" />
+      <skill id="imbue" s="pierce" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>26</health>
+      <skill id="strike" x="2" />
+      <skill id="strike" x="2" />
+      <skill id="imbue" s="pierce" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>28</health>
+    </upgrade>
+    <desc>When a Magma Clipper dies, its form dissolves into a puddle of lava.</desc>
+  </unit>
+  <unit>
+    <id>345</id>
+    <card_type>1</card_type>
+    <name>Coral Stinger</name>
+    <portrait>carl</portrait>
+    <attack>0</attack>
+    <health>15</health>
+    <skill id="enfeeble" x="2" />
+    <skill id="imbue" s="armored" y="5" x="1" />
+    <rarity>3</rarity>
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>20</health>
+      <skill id="enfeeble" x="2" />
+      <skill id="enfeeble" x="1" />
+      <skill id="imbue" s="armored" y="5" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>24</health>
+      <skill id="enfeeble" x="3" />
+      <skill id="enfeeble" x="2" />
+      <skill id="imbue" s="armored" y="5" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>27</health>
+      <skill id="enfeeble" x="3" />
+      <skill id="enfeeble" x="3" />
+      <skill id="imbue" s="armored" y="5" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>30</health>
+    </upgrade>
+    <desc>When exposed to the magical properties of a spellstone, some stalactites transform into beasts.</desc>
+  </unit>
+  <unit>
+    <id>346</id>
+    <card_type>1</card_type>
+    <name>Null Darkness</name>
+    <portrait>cavernsofcrossings</portrait>
+    <attack>0</attack>
+    <health>40</health>
+    <skill id="imbue" x="1" s="nullify" />
+    <skill id="heal" x="1" all="1" />
+    <skill id="weaken" x="2" />
+    <rarity>4</rarity>
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>42</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>44</health>
+      <skill id="imbue" x="1" s="nullify" />
+      <skill id="heal" x="1" all="1" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>46</health>
+      <skill id="imbue" x="2" s="nullify" />
+      <skill id="heal" x="1" all="1" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>48</health>
+      <skill id="imbue" x="2" s="nullify" />
+      <skill id="heal" x="2" all="1" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>50</health>
+      <skill id="imbue" x="3" s="nullify" />
+      <skill id="heal" x="2" all="1" />
+      <skill id="weaken" x="4" />
+    </upgrade>
+    <desc>Those who stare into the eyes of darkness feel their strength and spirit slowly ebb away.</desc>
+  </unit>
+  <unit>
+    <id>347</id>
+    <card_type>1</card_type>
+    <name>Deep Titan</name>
+    <portrait>firetitan</portrait>
+    <attack>0</attack>
+    <health>27</health>
+    <skill id="counter" x="2" />
+    <skill id="strike" all="1" x="1" />
+    <skill id="strike" x="1" />
+    <rarity>4</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>30</health>
+      <skill id="counter" x="3" />
+      <skill id="strike" all="1" x="1" />
+      <skill id="strike" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>33</health>
+      <skill id="counter" x="3" />
+      <skill id="strike" all="1" x="1" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>36</health>
+      <skill id="counter" x="3" />
+      <skill id="strike" all="1" x="2" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>39</health>
+      <skill id="counter" x="4" />
+      <skill id="strike" all="1" x="2" />
+      <skill id="strike" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>42</health>
+      <skill id="counter" x="4" />
+      <skill id="strike" all="1" x="3" />
+      <skill id="strike" x="3" />
+    </upgrade>
+    <desc>"A creature of the dungeon's darkness, it turns into stone when exposed to light." - Collection of Bardic Tales III</desc>
+  </unit>
+  <unit>
+    <id>348</id>
+    <card_type>1</card_type>
+    <name>Earthen Guardian</name>
+    <portrait>oasismonster</portrait>
+    <attack>0</attack>
+    <health>35</health>
+    <skill id="protect" all="1" x="3" c="4" />
+    <skill id="protect" x="2" />
+    <rarity>4</rarity>
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>40</health>
+      <skill id="protect" all="1" x="3" c="4" />
+      <skill id="protect" x="2" />
+      <skill id="enfeeble" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>45</health>
+      <skill id="protect" all="1" x="4" c="4" />
+      <skill id="protect" x="2" />
+      <skill id="enfeeble" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>50</health>
+      <skill id="protect" all="1" x="4" c="3" />
+      <skill id="protect" x="2" />
+      <skill id="enfeeble" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>55</health>
+      <skill id="protect" all="1" x="5" c="3" />
+      <skill id="protect" x="2" />
+      <skill id="enfeeble" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>60</health>
+      <skill id="protect" all="1" x="5" c="2" />
+      <skill id="protect" x="3" />
+      <skill id="enfeeble" x="3" />
+    </upgrade>
+    <desc>A manufactured construct that turned upon its own creator, the Earthen Guardian wanders the dungeon without purpose.</desc>
+  </unit>
+  <unit>
+    <id>349</id>
+    <card_type>1</card_type>
+    <name>World Light</name>
+    <portrait>lightwisp</portrait>
+    <attack>0</attack>
+    <health>70</health>
+    <skill id="imbue" x="2" y="5" s="frost" />
+    <skill id="rally" x="2" all="1" y="5" />
+    <skill id="jam" c="3" />
+    <rarity>5</rarity>
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>74</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>78</health>
+      <skill id="imbue" x="2" y="5" s="frost" />
+      <skill id="rally" x="2" all="1" y="5" />
+      <skill id="jam" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>82</health>
+      <skill id="imbue" x="2" y="5" s="frost" />
+      <skill id="rally" x="3" all="1" y="5" />
+      <skill id="jam" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>86</health>
+      <skill id="imbue" x="3" y="5" s="frost" />
+      <skill id="rally" x="4" all="1" y="5" />
+      <skill id="jam" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>90</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>95</health>
+      <skill id="imbue" x="4" y="5" s="frost" />
+      <skill id="rally" x="4" all="1" y="5" />
+      <skill id="jam" c="2" />
+    </upgrade>
+    <desc>Once revered as a deity, the World Light is nothing more than a powerful elemental that seeks the souls of adventurers.</desc>
+  </unit>
+  <unit>
+    <id>350</id>
+    <card_type>1</card_type>
+    <name>Gorvo, Mountain King</name>
+    <portrait>groundelemental2</portrait>
+    <attack>0</attack>
+    <health>72</health>
+    <skill id="imbue" x="1" y="5" all="1" s="berserk" />
+    <skill id="enfeeble" x="2" all="1" />
+    <skill id="weaken" x="2" all="1" />
+    <rarity>5</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>76</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>81</health>
+      <skill id="imbue" x="1" all="1" s="berserk" />
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="weaken" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>85</health>
+      <skill id="imbue" x="2" all="1" s="berserk" />
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="weaken" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>90</health>
+      <skill id="imbue" x="2" all="1" s="berserk" />
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="weaken" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>94</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>99</health>
+      <skill id="imbue" x="3" all="1" s="berserk" />
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="weaken" x="4" all="1" />
+    </upgrade>
+    <desc>Once, Gorvo ruled a kingdom of earth elementals beneath the earth's surface, but was lost in the sands of time.</desc>
+  </unit>
+  <!-- Event 18 -->
+  <unit>
+    <id>351</id>
+    <card_type>1</card_type>
+    <name>Wind Drake</name>
+    <portrait>Sailing_Drake</portrait>
+    <attack>0</attack>
+    <health>42</health>
+    <skill id="rally" x="1" />
+    <skill id="protect" x="1" />
+    <rarity>3</rarity>
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>45</health>
+      <skill id="rally" x="1" />
+      <skill id="protect" x="2" />
+      <skill id="strike" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>48</health>
+      <skill id="rally" x="2" />
+      <skill id="protect" x="2" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>51</health>
+      <skill id="rally" x="2" />
+      <skill id="protect" x="3" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>54</health>
+      <skill id="rally" x="3" />
+      <skill id="protect" x="4" />
+      <skill id="strike" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>352</id>
+    <card_type>1</card_type>
+    <name>Brine Bringer</name>
+    <portrait>kraken_portrait</portrait>
+    <attack>0</attack>
+    <health>42</health>
+    <skill id="heal" x="1" />
+    <skill id="jam" c="5" />
+    <rarity>4</rarity>
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>44</health>
+      <skill id="imbue" x="1" s="evade" />
+      <skill id="heal" x="1" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>46</health>
+      <skill id="imbue" x="1" s="evade" />
+      <skill id="heal" x="2" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>49</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>51</health>
+      <skill id="imbue" x="2" s="evade" />
+      <skill id="heal" x="3" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>58</health>
+      <skill id="imbue" x="3" s="evade" />
+      <skill id="heal" x="4" />
+      <skill id="jam" c="2" />
+    </upgrade>
+  </unit>
+  <!-- Dungeon Commanders -->
+  <unit>
+    <id>353</id>
+    <card_type>1</card_type>
+    <name>Mechanical Drakes</name>
+    <portrait>windupdragons</portrait>
+    <attack>0</attack>
+    <health>14</health>
+    <skill id="rally" x="1" />
+    <skill id="protect" x="1" />
+    <rarity>3</rarity>
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>21</health>
+      <skill id="rally" x="1" />
+      <skill id="protect" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>25</health>
+      <skill id="rally" x="1" all="1" />
+      <skill id="protect" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>29</health>
+      <skill id="rally" x="1" all="1" />
+      <skill id="protect" x="2" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>354</id>
+    <card_type>1</card_type>
+    <name>Skyward Beast</name>
+    <portrait>skybeast</portrait>
+    <attack>0</attack>
+    <health>15</health>
+    <skill id="enhance" s="poison" x="1" />
+    <skill id="rally" x="1" />
+    <rarity>3</rarity>
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+      <skill id="enhance" s="poison" x="1" />
+      <skill id="rally" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>22</health>
+      <skill id="enhance" s="poison" x="2" />
+      <skill id="rally" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>26</health>
+      <skill id="enhance" s="poison" x="2" />
+      <skill id="rally" x="2" />
+      <skill id="enfeeble" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>30</health>
+      <skill id="enhance" s="poison" x="2" />
+      <skill id="rally" x="3" />
+      <skill id="enfeeble" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>355</id>
+    <card_type>1</card_type>
+    <name>Ice Dragon</name>
+    <portrait>icedragon</portrait>
+    <attack>0</attack>
+    <health>38</health>
+    <skill id="weaken" x="1" all="1" />
+    <skill id="jam" c="5" />
+    <skill id="protect" x="3" />
+    <rarity>4</rarity>
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>42</health>
+      <skill id="weaken" x="2" all="1" />
+      <skill id="jam" c="5" />
+      <skill id="protect" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>44</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>47</health>
+      <skill id="weaken" x="2" all="1" />
+      <skill id="jam" c="4" />
+      <skill id="protect" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>50</health>
+      <skill id="weaken" x="2" all="1" />
+      <skill id="jam" c="4" />
+      <skill id="protect" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>356</id>
+    <card_type>1</card_type>
+    <name>Molten Dragon</name>
+    <portrait>moltendragon</portrait>
+    <attack>0</attack>
+    <health>32</health>
+    <skill id="imbue" s="burn" x="2" y="9" />
+    <skill id="counter" x="3" />
+    <skill id="strike" x="2" all="1" />
+    <rarity>4</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>34</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>36</health>
+      <skill id="imbue" s="burn" x="3" y="9" />
+      <skill id="counter" x="3" />
+      <skill id="strike" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>38</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>40</health>
+      <skill id="imbue" s="burn" x="3" y="9" />
+      <skill id="counter" x="3" />
+      <skill id="strike" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>42</health>
+      <skill id="imbue" s="burn" x="4" y="9" />
+      <skill id="counter" x="4" />
+      <skill id="strike" x="3" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>357</id>
+    <card_type>1</card_type>
+    <name>Frostbite, Winter's End</name>
+    <portrait>Portrait_Frostbite</portrait>
+    <attack>0</attack>
+    <health>76</health>
+    <skill id="imbue" s="frost" x="2" y="9" />
+    <skill id="protect" x="3" y="9" all="1" />
+    <skill id="jam" c="3" />
+    <rarity>5</rarity>
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>79</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>83</health>
+      <skill id="imbue" s="frost" x="3" y="9" />
+      <skill id="protect" x="3" y="9" all="1" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>86</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>89</health>
+      <skill id="imbue" s="frost" x="3" y="9" />
+      <skill id="protect" x="4" y="9" all="1" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>92</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>95</health>
+      <skill id="imbue" s="frost" x="4" y="9" />
+      <skill id="protect" x="4" y="9" all="1" />
+      <skill id="jam" c="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>358</id>
+    <card_type>1</card_type>
+    <name>Nojuma, the Mountainbane</name>
+    <portrait>greenbackdragon</portrait>
+    <attack>0</attack>
+    <health>72</health>
+    <skill id="imbue" s="berserk" x="3" y="9" />
+    <skill id="rally" x="2" y="9" all="1" />
+    <skill id="enfeeble" x="2" all="1" c="2" />
+    <rarity>5</rarity>
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>78</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>82</health>
+      <skill id="imbue" s="berserk" x="4" y="9" />
+      <skill id="rally" x="2" y="9" all="1" />
+      <skill id="enfeeble" x="3" all="1" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>86</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>90</health>
+      <skill id="imbue" s="berserk" x="4" y="9" />
+      <skill id="rally" x="3" y="9" all="1" />
+      <skill id="enfeeble" x="3" all="1" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>94</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>98</health>
+      <skill id="imbue" s="berserk" x="5" y="9" />
+      <skill id="rally" x="3" y="9" all="1" />
+      <skill id="enfeeble" x="3" all="1" c="2" />
+    </upgrade>
+  </unit>
+</root>
