@@ -45,10 +45,13 @@ var DATA_UPDATER = (function () {
     }
 
     function getUnitFromXML(node) {
+        var hidden_until = (getValue(node, "hidden_until") || getValue(node, "hidden_until_time"));
+        if (hidden_until) hidden_until += "000";
         var unit = {
             id: getValue(node, "id"),
             name: getValue(node, "name"),
             picture: getValue(node, "picture") || getValue(node, "portrait") || getValue(node, "asset_prefab") || "NotFound",
+            hidden_until: hidden_until,
             rarity: getValue(node, "rarity"),
             set: getValue(node, "set"),
             card_type: getValue(node, "card_type"),
