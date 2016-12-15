@@ -123,11 +123,12 @@ var initDeckBuilder = function ()
     
     inventory = _GET('inventory');
 
-    setTimeout(function ()
-    {
-        drawAllCards();
-        $("body").removeClass("loading");
-    }, 1);
+    if (_DEFINED("spoilers")) {
+        $("#loadingSplash").html("Checking for New Cards...");
+        setTimeout(DATA_UPDATER.updateCards, 1, loadCards);
+    } else {
+        setTimeout(loadCards, 1);
+    }
 
     if (_DEFINED("unlimited"))
     {
@@ -136,6 +137,12 @@ var initDeckBuilder = function ()
     }
 
     $("#graph-accordion").click(updateGraphs);
+}
+
+var loadCards = function () {
+    $("#loadingSplash").html("Loading...");
+    drawAllCards();
+    $("body").removeClass("loading");
 }
 
 var setupPopups = function ()
@@ -412,7 +419,6 @@ function deckOnClick(event)
 
 var drawCardList = function ()
 {
-
     units = [];
     unitsShown = [];
     if (inventory)
@@ -436,8 +442,7 @@ var drawCardList = function ()
             var unit = deck.deck[i];
             deck.deck[i] = removeFromInventory(unit);
         }
-    } else
-    {
+    } else {
         var onlyNew = false;
         if (_DEFINED('spoilers'))
         {

@@ -32,6 +32,7 @@
     <script type="text/javascript" src="scripts/shared.js"></script>
     <script type="text/javascript" src="scripts/common.js"></script>
     <script type="text/javascript" src="scripts/cards_gui.js"></script>
+    <script src="scripts/updateCards.js"></script>
     <script type="text/javascript" src="scripts/deckbuilder.js"></script>
     <script type="text/javascript" src="scripts/localstorage-controller.js"></script>
     <script src="scripts/ng-card-details-controller.js"></script>
@@ -271,8 +272,8 @@
                 </div>
             </div>
         </div>
-
-        <div id="advancedFilters" class="dialog-form">
+        <!-- Dialogs -->
+        <div id="advancedFilters" class="dialog-form" style="display:none;">
             <form>
                 <fieldset>
                     <div id="amount">
@@ -346,7 +347,7 @@
             </form>
         </div>
 
-        <div id="unitOptions" class="dialog-form">
+        <div id="unitOptions" class="dialog-form" style="display:none;">
             <form>
                 <fieldset>
                     <div id="fusionDiv" class="split">
@@ -363,31 +364,31 @@
                             <option value=""></option>
                         </select>
                         <!--
-                        <label style="float:left;">
-                            <input type="checkbox" id="showUnreleased" onclick="toggleUnreleasedRunes(this);" />
-                            Show Unreleased
-                        </label>
-                            -->
+                    <label style="float:left;">
+                        <input type="checkbox" id="showUnreleased" onclick="toggleUnreleasedRunes(this);" />
+                        Show Unreleased
+                    </label>
+                        -->
                     </div>
                 </fieldset>
             </form>
         </div>
 
-        <div id="saveDeckDialog" title="Save Deck">
+        <div id="saveDeckDialog" title="Save Deck" style="display:none;">
             <label for="saveDeckName"><strong>Name:</strong></label><br />
             <input id="saveDeckName" type="text" value="" style="width:95%;" />
         </div>
 
-        <div id="loadDeckDialog" title="Load Deck" ng-controller="DeckStorageCtrl" class="primary-white">
+        <div id="loadDeckDialog" title="Load Deck" ng-controller="DeckStorageCtrl" class="primary-white" style="display:none;">
             <label for="loadDeckName"><strong>Deck:</strong></label><br />
             <select name="loadDeckName" id="loadDeckName" class="ui-widget-content ui-corner-all" style="width:100%;">
                 <option ng-repeat="key in keys(savedDecks) | orderBy:'toString()'" value="{{key}}">{{key}}</option>
             </select>
         </div>
 
-        <div class="modal"><span>Loading...</span></div>
+        <div class="modal"><span id="loadingSplash">Loading...</span></div>
 
-        <div id="detailedView" ng-controller="CardDetailsCtrl">
+        <div id="detailedView" ng-controller="CardDetailsCtrl" style="display:none;">
             <div card-details unit-id="1000" unit-level="1"></div>
         </div>
     </div>
