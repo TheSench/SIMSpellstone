@@ -12393,6 +12393,129 @@
     </upgrade>
   </unit>
   <unit>
+    <id>6102</id>
+    <card_type>2</card_type>
+    <name>Ribbithold Guards</name>
+    <picture>Grinning_Weapon_Frog_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1482426000</hidden_until_time>
+    <attack>4</attack>
+    <health>16</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="strike" x="1" all="1" />
+    <skill id="nullify" x="1" />
+    <skill id="flurry" c="6" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="strike" x="1" all="1" />
+      <skill id="nullify" x="1" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>19</health>
+      <skill id="strike" x="1" all="1" />
+      <skill id="nullify" x="1" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16102</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Ribbithold Sentries</name>
+    <picture>Grinning_Weapon_Frog_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1482426000</hidden_until_time>
+    <attack>6</attack>
+    <health>20</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="strike" x="1" all="1" />
+    <skill id="nullify" x="1" />
+    <skill id="flurry" c="4" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>22</health>
+      <skill id="strike" x="2" all="1" />
+      <skill id="nullify" x="1" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>23</health>
+      <skill id="strike" x="2" all="1" />
+      <skill id="nullify" x="2" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>24</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26102</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Ribbithold Sentinels</name>
+    <picture>Grinning_Weapon_Frog_B</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1482426000</hidden_until_time>
+    <attack>7</attack>
+    <health>24</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="strike" x="2" all="1" />
+    <skill id="nullify" x="2" />
+    <skill id="flurry" c="3" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>27</health>
+      <skill id="strike" x="2" all="1" />
+      <skill id="nullify" x="3" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>28</health>
+      <skill id="strike" x="3" all="1" />
+      <skill id="nullify" x="3" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>6103</id>
     <card_type>2</card_type>
     <name>Ribbitaksu</name>

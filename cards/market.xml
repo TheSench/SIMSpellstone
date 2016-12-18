@@ -1190,7 +1190,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="1000,3000" number="4" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" number="4" />
     </cards>
   </store_item>
   <store_item>
@@ -2660,6 +2660,46 @@
     <!-- Stuff to give -->
     <cards>
       <card min_level="1" max_level="1" unit_id="5063" display_card_id="5063" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5050</id>
+    <name>Quadra Frog Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives four copies of one Epic+ Frog card from Premium set. Also includes two Bounty Refills +10, two Energy Potions +20, and one random Rare+ Rune. May only be purchased once.</desc>
+    <asset_prefab>frog_crystal_epicX4</asset_prefab>
+    <background_prefab>event_010_banner_epicX4</background_prefab>
+    <bundle>51</bundle>
+    <!-- <icon>rune_component_bag_item</icon> -->
+    <hc_cost>400</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3016</pack>
+    <item id="1024" quantity="2" />
+    <item id="1004" quantity="2" />
+    <item id="513" quantity="1" />
+  </store_item>
+  <store_item>
+    <id>5051</id>
+    <name>Basilisk Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFBasilisk^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7094" display_card_id="7094" />
     </cards>
   </store_item>
 </root>

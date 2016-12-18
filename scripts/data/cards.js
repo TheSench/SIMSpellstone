@@ -44763,6 +44763,282 @@ var CARDS = {
       },
     }
   },
+  "5100": {
+    "id": "5100",
+    "name": "Lifegiver Augur",
+    "picture": "Frog_Wizard_A",
+    "hidden_until": "1482426000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["4"],
+    "attack": 6,
+    "health": 11,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 2,
+        "y": "4",
+        "z": 4,
+      },
+      {
+        "id": "strike",
+        "x": 3,
+      },
+      {
+        "id": "weaken",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 12,
+        "skill": [],
+      },
+      "3": {
+        "attack": 7,
+        "health": 13,
+        "skill": [],
+      },
+      "4": {
+        "health": 14,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "strike",
+            "x": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "health": 15,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "strike",
+            "x": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "15100": {
+    "id": "15100",
+    "name": "Bestower Auger",
+    "picture": "Frog_Wizard_A",
+    "hidden_until": "1482426000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["4"],
+    "attack": 8,
+    "health": 16,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 3,
+        "y": "4",
+        "z": 4,
+      },
+      {
+        "id": "strike",
+        "x": 4,
+      },
+      {
+        "id": "weaken",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 17,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "strike",
+            "x": 5,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 18,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "strike",
+            "x": 5,
+          },
+          {
+            "id": "weaken",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "attack": 9,
+        "health": 19,
+        "skill": [],
+      },
+      "6": {
+        "health": 20,
+        "skill": [],
+      },
+    }
+  },
+  "25100": {
+    "id": "25100",
+    "name": "Genesis Auger",
+    "picture": "Frog_Wizard_B",
+    "hidden_until": "1482426000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["4"],
+    "attack": 9,
+    "health": 20,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 5,
+        "y": "4",
+        "z": 4,
+      },
+      {
+        "id": "strike",
+        "x": 6,
+      },
+      {
+        "id": "weaken",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 10,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 5,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "strike",
+            "x": 6,
+          },
+          {
+            "id": "weaken",
+            "x": 5,
+          },
+        ],
+      },
+      "3": {
+        "health": 21,
+        "skill": [],
+      },
+      "4": {
+        "attack": 11,
+        "health": 22,
+        "skill": [],
+      },
+      "5": {
+        "health": 23,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 6,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "strike",
+            "x": 6,
+          },
+          {
+            "id": "weaken",
+            "x": 5,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 6,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "strike",
+            "x": 7,
+          },
+          {
+            "id": "weaken",
+            "x": 6,
+          },
+        ],
+      },
+    }
+  },
   "5103": {
     "id": "5103",
     "name": "Mother of Solars",
@@ -67592,6 +67868,232 @@ var CARDS = {
           {
             "id": "burn",
             "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "6102": {
+    "id": "6102",
+    "name": "Ribbithold Guards",
+    "picture": "Grinning_Weapon_Frog_A",
+    "hidden_until": "1482426000000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["4"],
+    "attack": 4,
+    "health": 16,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "strike",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "nullify",
+        "x": 1,
+      },
+      {
+        "id": "flurry",
+        "c": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "strike",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "nullify",
+            "x": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 5,
+          },
+        ],
+      },
+      "3": {
+        "attack": 5,
+        "health": 17,
+        "skill": [],
+      },
+      "4": {
+        "health": 18,
+        "skill": [],
+      },
+      "5": {
+        "health": 19,
+        "skill": [
+          {
+            "id": "strike",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "nullify",
+            "x": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+    }
+  },
+  "16102": {
+    "id": "16102",
+    "name": "Ribbithold Sentries",
+    "picture": "Grinning_Weapon_Frog_A",
+    "hidden_until": "1482426000000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["4"],
+    "attack": 6,
+    "health": 20,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "strike",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "nullify",
+        "x": 1,
+      },
+      {
+        "id": "flurry",
+        "c": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 21,
+        "skill": [],
+      },
+      "3": {
+        "health": 22,
+        "skill": [
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "nullify",
+            "x": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "4": {
+        "health": 23,
+        "skill": [
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "nullify",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "5": {
+        "health": 24,
+        "skill": [],
+      },
+    }
+  },
+  "26102": {
+    "id": "26102",
+    "name": "Ribbithold Sentinels",
+    "picture": "Grinning_Weapon_Frog_B",
+    "hidden_until": "1482426000000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["4"],
+    "attack": 7,
+    "health": 24,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "strike",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "nullify",
+        "x": 2,
+      },
+      {
+        "id": "flurry",
+        "c": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 8,
+        "health": 25,
+        "skill": [],
+      },
+      "3": {
+        "health": 26,
+        "skill": [],
+      },
+      "4": {
+        "health": 27,
+        "skill": [
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "nullify",
+            "x": 3,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+      "5": {
+        "health": 28,
+        "skill": [
+          {
+            "id": "strike",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "nullify",
+            "x": 3,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
           },
         ],
       },
@@ -91109,6 +91611,457 @@ var CARDS = {
             "y": "3",
             "z": 3,
             "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "7098": {
+    "id": "7098",
+    "name": "Survivalist",
+    "picture": "Tribal_Spear_Frog_A",
+    "hidden_until": "1482426000000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["4"],
+    "attack": 4,
+    "health": 7,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "pierce",
+        "x": 2,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 8,
+        "skill": [],
+      },
+      "3": {
+        "health": 9,
+        "skill": [],
+      },
+      "4": {
+        "health": 10,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 1,
+          },
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "17098": {
+    "id": "17098",
+    "name": "Swamp Survivalist",
+    "picture": "Tribal_Spear_Frog_A",
+    "hidden_until": "1482426000000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["4"],
+    "attack": 5,
+    "health": 11,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 1,
+      },
+      {
+        "id": "pierce",
+        "x": 3,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 12,
+        "skill": [],
+      },
+      "3": {
+        "health": 13,
+        "skill": [],
+      },
+      "4": {
+        "health": 14,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 1,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "27098": {
+    "id": "27098",
+    "name": "Quagmire Survivalist",
+    "picture": "Tribal_Spear_Frog_B",
+    "hidden_until": "1482426000000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["4"],
+    "attack": 6,
+    "health": 15,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 1,
+      },
+      {
+        "id": "pierce",
+        "x": 4,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 16,
+        "skill": [],
+      },
+      "3": {
+        "health": 17,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 2,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 2,
+          },
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "7102": {
+    "id": "7102",
+    "name": "Croaker's Disciple",
+    "picture": "Egyptian_Frog_A",
+    "hidden_until": "1482166800000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["4"],
+    "attack": 2,
+    "health": 13,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 3,
+        "y": "4",
+        "z": 4,
+      },
+      {
+        "id": "heal",
+        "x": 1,
+        "y": "4",
+        "z": 4,
+        "all": "1",
+      },
+      {
+        "id": "fervor",
+        "x": 1,
+        "y": "4",
+        "z": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "health": 15,
+        "skill": [],
+      },
+      "4": {
+        "health": 16,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "heal",
+            "x": 1,
+            "y": "4",
+            "z": 4,
+            "all": "1",
+          },
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "4",
+            "z": 4,
+          },
+        ],
+      },
+      "5": {
+        "health": 17,
+        "skill": [],
+      },
+      "6": {
+        "health": 18,
+        "skill": [],
+      },
+    }
+  },
+  "17102": {
+    "id": "17102",
+    "name": "Croaker's Apostle",
+    "picture": "Egyptian_Frog_A",
+    "hidden_until": "1482166800000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["4"],
+    "attack": 2,
+    "health": 19,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 5,
+        "y": "4",
+        "z": 4,
+      },
+      {
+        "id": "heal",
+        "x": 1,
+        "y": "4",
+        "z": 4,
+        "all": "1",
+      },
+      {
+        "id": "fervor",
+        "x": 1,
+        "y": "4",
+        "z": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 20,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 5,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "y": "4",
+            "z": 4,
+            "all": "1",
+          },
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "4",
+            "z": 4,
+          },
+        ],
+      },
+      "4": {
+        "health": 21,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 5,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "y": "4",
+            "z": 4,
+            "all": "1",
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "4",
+            "z": 4,
+          },
+        ],
+      },
+      "5": {
+        "health": 22,
+        "skill": [],
+      },
+      "6": {
+        "health": 23,
+        "skill": [],
+      },
+    }
+  },
+  "27102": {
+    "id": "27102",
+    "name": "Croaker's Prophet",
+    "picture": "Egyptian_Frog_B",
+    "hidden_until": "1482166800000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["4"],
+    "attack": 2,
+    "health": 24,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 6,
+        "y": "4",
+        "z": 4,
+      },
+      {
+        "id": "heal",
+        "x": 2,
+        "y": "4",
+        "z": 4,
+        "all": "1",
+      },
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "4",
+        "z": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 25,
+        "skill": [],
+      },
+      "3": {
+        "health": 26,
+        "skill": [],
+      },
+      "4": {
+        "health": 27,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 7,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "y": "4",
+            "z": 4,
+            "all": "1",
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "4",
+            "z": 4,
+          },
+        ],
+      },
+      "5": {
+        "health": 28,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 7,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+            "y": "4",
+            "z": 4,
+            "all": "1",
+          },
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "4",
+            "z": 4,
           },
         ],
       },
@@ -123303,34 +124256,6 @@ var CARDS = {
   "9998": {
     "id": "9998",
     "name": "Unused Art",
-    "picture": "Egyptian_Frog_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19998": {
-    "id": "19998",
-    "name": "Unused Art",
-    "picture": "Egyptian_Frog_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9997": {
-    "id": "9997",
-    "name": "Unused Art",
     "picture": "Elyse_A",
     "rarity": "0",
     "card_type": "2",
@@ -123342,8 +124267,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19996": {
-    "id": "19996",
+  "19997": {
+    "id": "19997",
     "name": "Unused Art",
     "picture": "Frost_Bite_B",
     "rarity": "0",
@@ -123356,8 +124281,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9995": {
-    "id": "9995",
+  "9996": {
+    "id": "9996",
     "name": "Unused Art",
     "picture": "General_A",
     "rarity": "0",
@@ -123370,10 +124295,24 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
+  "29995": {
+    "id": "29995",
+    "name": "Unused Art",
+    "picture": "Monster_C",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
   "9994": {
     "id": "9994",
-    "name": "Unused Art",
-    "picture": "Grinning_Weapon_Frog_A",
+    "name": "New Art",
+    "picture": "New1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -123386,8 +124325,8 @@ var CARDS = {
   },
   "19994": {
     "id": "19994",
-    "name": "Unused Art",
-    "picture": "Grinning_Weapon_Frog_B",
+    "name": "New Art",
+    "picture": "New1_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -123398,10 +124337,24 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29993": {
-    "id": "29993",
-    "name": "Unused Art",
-    "picture": "Monster_C",
+  "9993": {
+    "id": "9993",
+    "name": "New Art",
+    "picture": "New2_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19993": {
+    "id": "19993",
+    "name": "New Art",
+    "picture": "New2_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -123415,7 +124368,7 @@ var CARDS = {
   "9992": {
     "id": "9992",
     "name": "New Art",
-    "picture": "New2_A",
+    "picture": "New7_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -123429,7 +124382,7 @@ var CARDS = {
   "19992": {
     "id": "19992",
     "name": "New Art",
-    "picture": "New2_B",
+    "picture": "New7_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -123442,8 +124395,8 @@ var CARDS = {
   },
   "9991": {
     "id": "9991",
-    "name": "New Art",
-    "picture": "New5_A",
+    "name": "Unused Art",
+    "picture": "Oda_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -123456,8 +124409,8 @@ var CARDS = {
   },
   "19991": {
     "id": "19991",
-    "name": "New Art",
-    "picture": "New5_B",
+    "name": "Unused Art",
+    "picture": "Oda_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -123468,10 +124421,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9990": {
-    "id": "9990",
-    "name": "New Art",
-    "picture": "New6_A",
+  "29991": {
+    "id": "29991",
+    "name": "Unused Art",
+    "picture": "Oda_C",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -123484,8 +124437,8 @@ var CARDS = {
   },
   "19990": {
     "id": "19990",
-    "name": "New Art",
-    "picture": "New6_B",
+    "name": "Unused Art",
+    "picture": "Promo_Dragon_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -123498,8 +124451,8 @@ var CARDS = {
   },
   "9989": {
     "id": "9989",
-    "name": "New Art",
-    "picture": "New7_A",
+    "name": "Unused Art",
+    "picture": "Seraph_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -123512,8 +124465,8 @@ var CARDS = {
   },
   "19989": {
     "id": "19989",
-    "name": "New Art",
-    "picture": "New7_B",
+    "name": "Unused Art",
+    "picture": "Seraph_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -123527,7 +124480,7 @@ var CARDS = {
   "9988": {
     "id": "9988",
     "name": "Unused Art",
-    "picture": "Oda_A",
+    "picture": "Tarian_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -123538,24 +124491,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19988": {
-    "id": "19988",
+  "9987": {
+    "id": "9987",
     "name": "Unused Art",
-    "picture": "Oda_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29988": {
-    "id": "29988",
-    "name": "Unused Art",
-    "picture": "Oda_C",
+    "picture": "Totem_Frogs_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -123569,7 +124508,7 @@ var CARDS = {
   "19987": {
     "id": "19987",
     "name": "Unused Art",
-    "picture": "Promo_Dragon_B",
+    "picture": "Totem_Frogs_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -123583,21 +124522,7 @@ var CARDS = {
   "9986": {
     "id": "9986",
     "name": "Unused Art",
-    "picture": "Seraph_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19986": {
-    "id": "19986",
-    "name": "Unused Art",
-    "picture": "Seraph_B",
+    "picture": "Tremor_Wurm_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -123611,7 +124536,7 @@ var CARDS = {
   "9985": {
     "id": "9985",
     "name": "Unused Art",
-    "picture": "Tarian_A",
+    "picture": "Unused1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -123625,21 +124550,7 @@ var CARDS = {
   "9984": {
     "id": "9984",
     "name": "Unused Art",
-    "picture": "Totem_Frogs_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19984": {
-    "id": "19984",
-    "name": "Unused Art",
-    "picture": "Totem_Frogs_B",
+    "picture": "Unused2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -123653,7 +124564,7 @@ var CARDS = {
   "9983": {
     "id": "9983",
     "name": "Unused Art",
-    "picture": "Tremor_Wurm_A",
+    "picture": "Unused3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -123667,21 +124578,7 @@ var CARDS = {
   "9982": {
     "id": "9982",
     "name": "Unused Art",
-    "picture": "Tribal_Spear_Frog_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19982": {
-    "id": "19982",
-    "name": "Unused Art",
-    "picture": "Tribal_Spear_Frog_B",
+    "picture": "Ursurio_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -123695,7 +124592,7 @@ var CARDS = {
   "9981": {
     "id": "9981",
     "name": "Unused Art",
-    "picture": "Unused1_A",
+    "picture": "Void_Abomination_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -123708,62 +124605,6 @@ var CARDS = {
   },
   "9980": {
     "id": "9980",
-    "name": "Unused Art",
-    "picture": "Unused2_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9979": {
-    "id": "9979",
-    "name": "Unused Art",
-    "picture": "Unused3_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9978": {
-    "id": "9978",
-    "name": "Unused Art",
-    "picture": "Ursurio_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9977": {
-    "id": "9977",
-    "name": "Unused Art",
-    "picture": "Void_Abomination_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9976": {
-    "id": "9976",
     "name": "Unused Art",
     "picture": "Yuriel_A",
     "rarity": "0",

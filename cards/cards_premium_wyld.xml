@@ -12152,4 +12152,244 @@
       <skill id="rally" x="4" all="1" y="3" />
     </upgrade>
   </unit>
+  <unit>
+    <id>7098</id>
+    <card_type>2</card_type>
+    <name>Survivalist</name>
+    <picture>Tribal_Spear_Frog_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1482426000</hidden_until_time>
+    <attack>4</attack>
+    <health>7</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="pierce" x="2" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>8</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="1" />
+      <skill id="pierce" x="3" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17098</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Swamp Survivalist</name>
+    <picture>Tribal_Spear_Frog_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1482426000</hidden_until_time>
+    <attack>5</attack>
+    <health>11</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="corrosive" x="1" />
+    <skill id="pierce" x="3" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="1" />
+      <skill id="pierce" x="4" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27098</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Quagmire Survivalist</name>
+    <picture>Tribal_Spear_Frog_B</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1482426000</hidden_until_time>
+    <attack>6</attack>
+    <health>15</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="corrosive" x="1" />
+    <skill id="pierce" x="4" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="corrosive" x="2" />
+      <skill id="pierce" x="4" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="2" />
+      <skill id="pierce" x="5" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7102</id>
+    <card_type>2</card_type>
+    <name>Croaker's Disciple</name>
+    <picture>Egyptian_Frog_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1482166800</hidden_until_time>
+    <attack>2</attack>
+    <health>13</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="3" y="4" />
+    <skill id="heal" x="1" all="1" y="4" />
+    <skill id="fervor" x="1" y="4" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>16</health>
+      <skill id="rally" x="4" y="4" />
+      <skill id="heal" x="1" all="1" y="4" />
+      <skill id="fervor" x="1" y="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>18</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17102</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Croaker's Apostle</name>
+    <picture>Egyptian_Frog_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1482166800</hidden_until_time>
+    <attack>2</attack>
+    <health>19</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="5" y="4" />
+    <skill id="heal" x="1" all="1" y="4" />
+    <skill id="fervor" x="1" y="4" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="rally" x="5" y="4" />
+      <skill id="heal" x="2" all="1" y="4" />
+      <skill id="fervor" x="1" y="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>21</health>
+      <skill id="rally" x="5" y="4" />
+      <skill id="heal" x="2" all="1" y="4" />
+      <skill id="fervor" x="2" y="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>23</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27102</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Croaker's Prophet</name>
+    <picture>Egyptian_Frog_B</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1482166800</hidden_until_time>
+    <attack>2</attack>
+    <health>24</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="6" y="4" />
+    <skill id="heal" x="2" all="1" y="4" />
+    <skill id="fervor" x="2" y="4" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>27</health>
+      <skill id="rally" x="7" y="4" />
+      <skill id="heal" x="2" all="1" y="4" />
+      <skill id="fervor" x="2" y="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>28</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="rally" x="7" y="4" />
+      <skill id="heal" x="3" all="1" y="4" />
+      <skill id="fervor" x="3" y="4" />
+    </upgrade>
+  </unit>
 </root>
