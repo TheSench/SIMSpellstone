@@ -120,7 +120,7 @@ var initDeckBuilder = function ()
             updateHighlights();
         }
     });
-    
+
     inventory = _GET('inventory');
 
     if (_DEFINED("spoilers")) {
@@ -720,7 +720,7 @@ var sortDeck = function ()
         if (compare) return compare;
         compare = (cardA.type - cardB.type);
         if (compare) return compare;
-        compare = compareByID(unitA, unitB);
+        compare = unitA.id - unitB.id;
         if (compare) return compare;
         compare = unitA.level - unitB.level;
         if (compare) return compare;
@@ -768,7 +768,7 @@ var addUnitToDeck = function (unit, htmlCard)
             $deck.append($htmlCard)
         }
     }
-    
+
     $htmlCard = $(htmlCard);
     if (fromInventory)
     {
@@ -852,7 +852,7 @@ var removeFromDeck = function (event)
         replaceCard($htmlCard, captain);
     } else {
         unit = deck.deck.splice(index - 1, 1)[0];
-        
+
         $htmlCard.remove();
         if (deck.deck.length < 15) {
             $deck.append("<div class='card blank'></div>");

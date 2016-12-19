@@ -80,7 +80,7 @@
                             <div>
                                 <div id="attacker-hash-container">
                                     <div><label for="deck1">Deck Hash:</label></div>
-                                    <input id="deck1" type="text" value=""><br />
+                                    <input id="deck1" type="text" value="" onfocus="$(this).select()"><br />
                                 </div>
                                 <input id="edit-player" type="button" onclick="load_deck_builder('player');" value="Edit" />
                                 <input id="load-player" type="button" onclick="loadDeck('#deck1');" value="Load" />
@@ -100,7 +100,7 @@
                                 <div id="defender-hash-container">
                                     <div>
                                         <div><label for="deck2">Enemy Deck Hash:</label></div>
-                                        <input type="text" id="deck2" value="">
+                                        <input type="text" id="deck2" value="" onfocus="$(this).select()">
                                     </div>
                                     <input id="edit-cpu" type="button" onclick="load_deck_builder('cpu');" value="Edit" />
                                     <input id="load-cpu" type="button" onclick="loadDeck('#deck2');" value="Load" />
@@ -230,7 +230,7 @@
                                     <input type="checkbox" class="table-cell" id="animations" name="animations"><label>Show Animations (Incomplete)</label>
                                 </div>
                                 <div class="table-cell">
-                                    
+
                                 </div>
                             </div>
                         </div>

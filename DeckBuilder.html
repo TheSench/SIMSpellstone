@@ -55,7 +55,7 @@
                         <div><b>Deck Hash:</b></div>
                         <div>
                             <div class="highlighter" id="hash_highlighter"></div>
-                            <input class="highlighted" id="hash" type="text" value="" size="100" onchange="hash_changed();" onpaste="hash_changed.debounce(100)();" />
+                            <input class="highlighted" id="hash" type="text" value="" size="100" onchange="hash_changed();" onpaste="hash_changed.debounce(100)();" onfocus="$(this).select()" />
                         </div>
                     </div>
                     <div style="margin:10px 0 10px 0"><a id="link" href="#"></a>&nbsp;</div>

@@ -233,7 +233,7 @@ var SIMULATOR = {};
                 }
 
                 affected++;
-                
+
                 var protect_amt = protect;
                 if (!protect_amt) {
                     var mult = skill.mult;
@@ -1162,7 +1162,7 @@ var SIMULATOR = {};
             if (skill.c && affected > 0) {
                 skill.countdown = skill.c;
             }
-            
+
             if (showAnimations) {
                 drawField(field, null, null, turn, src_card);
             }
@@ -1172,7 +1172,7 @@ var SIMULATOR = {};
     function initializeBattle() {
 
         SIMULATOR.simulation_turns = 0;
-        
+
         // Set up empty decks
         var deck = {
             cpu: {
@@ -1556,7 +1556,7 @@ var SIMULATOR = {};
         }
         if (choice === undefined) {
             return -1;
-            
+
         } else {
             var card_picked = choice;
             if (!card_picked) card_picked = 0;
@@ -1683,7 +1683,7 @@ var SIMULATOR = {};
 
         // Do Commander Early Activation Skills
         doEarlyActivationSkills(field_p.commander);
-        
+
         // Reset invisibility count after enhance has had a chance to fire
         for (var key = 0, len = field_p_assaults.length; key < len; key++) {
             var current_assault = field_p_assaults[key];
@@ -2173,7 +2173,7 @@ var SIMULATOR = {};
                 if (debug) echo += debug_name(current_assault) + ' inflicts nullify(' + nullify + ') on ' + debug_name(target) + '<br>';
             }
         }
-        
+
         if (showAnimations) {
             drawField(field, null, null, turn, current_assault);
         }
