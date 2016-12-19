@@ -11,7 +11,7 @@ var SIM_CONTROLLER = (function () {
         win_debug = $('#win_debug').is(':checked');
         showAnimations = $('#animations').is(':checked');
 
-        play_debug = $('#play_debug').is(':checked');
+        play_debug = debug && $('#play_debug').is(':checked');
         if (play_debug) debug = false;
 
         if ($('#auto_mode').length) {
