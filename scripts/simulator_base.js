@@ -2101,7 +2101,7 @@ var SIMULATOR = {};
             if (current_assault.berserk && current_assault.isAlive()) {
 
                 var berserk = current_assault.berserk;
-                var enhanced = getEnhancement(target, 'berserk');
+                var enhanced = getEnhancement(current_assault, 'berserk');
                 if (enhanced) {
                     if (enhanced < 0) {
                         enhanced = Math.ceil(berserk * -enhanced);
