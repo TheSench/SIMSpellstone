@@ -2,23 +2,113 @@
 
 (function () {
 
+    var inventaire;
+    var original_hash;
+    var step = 0;
+    var best = original_hash;
+    var best_value = 0;
+    var originalValue = 0;
+    var cardBest= {};
+    var cardBestValue = {};
+    var orderDeckMode = true;
+
     // Initialize simulation loop - runs once per simulation session
     SIM_CONTROLLER.startsim = function () {
+        time_start = Date.now();
+
+        SIM_CONTROLLER.getConfiguration();
+        inventaire = hash_decode(document.getElementById('inventory').value);
+
+        // Set up battleground effects, if any
+        SIMULATOR.battlegrounds = getBattlegrounds(getbattleground, getraid);
+// 9216 9227 9252 9241
+
+        hideUI();
+
+        step = -1;
+        best = original_hash = getdeck;
+        best_value = 0;
+        orderDeckMode = document.getElementById("sim_order").checked;
+        if (orderDeckMode) {
+            getordered = orderDeckMode;
+        }
+
+        tryNewCard();
+        return false;
+    }
+
+    var targetPosition = 0;
+    var lastDeckHash = original_hash;
+    var currentCardName;
+
+// Coût pour faire un double: 3*(5+15+30+75) = 375
+// Coût pour faire un simple légendaire : 5+15+30+75+150 = 275
+
+    function tryNewCard(){
+        var progression = document.getElementById('progression');
         card_cache = {};    // clear card cache to avoid memory bloat when simulating different decks
         total_turns = 0;
-        time_start = Date.now();
+        time_start = new Date();
         time_stop = 0;
         echo = '';
         games = 0;
         run_sims_batch = 0;
+        sims_left = document.getElementById('sims').value;
+        if (step >= 0) {
+            var originalDeck = hash_decode(original_hash);
+            var deckLength = originalDeck.deck.length;
+            if (orderDeckMode) {
+                if (targetPosition == 0) {
+                    step++;
+                    targetPosition = step - 1;
+                    original_hash = best;
 
-        SIM_CONTROLLER.getConfiguration();
+                    if (targetPosition == deckLength) {
+                        return;
+                    }
+                }
+                else {
+                    targetPosition--;
+                }
+                var log = '<strong>Etape ' + step + '/' + (originalDeck.deck.length - 1) + " target=" + targetPosition + '</strong> == <strong>Best:</strong>' + best + ' (' + best_value + ' dernier=' + wins + ') <table>';
+               for (var cardName in cardBest) {
+                   log += '<tr><td>' + cardName + '</td><td>' + cardBest[cardName] + '</td><td>' + cardBestValue[cardName] + '</td></tr>';
+               }
+               log += '</table>'
+               progression.innerHTML = log;
+                 var cards = originalDeck.deck.splice(step, 1);
+                originalDeck.deck.splice(targetPosition, 0, cards[0]);
+                getdeck = hash_encode(originalDeck);
+            }
+            else{
+                var cardToTry = ~~(step / deckLength);
+                var deckCardToReplace = step % deckLength;
+                var log = '<strong>Etape ' + step + '/' + (originalDeck.deck.length * inventaire.deck.length) + '</strong> == <strong>Best:</strong>' + best + ' (' + best_value + ')';
+                log += '<table>';
+                log += '<tr><td>Original</td><td>' + original_hash + '</td><td>' + originalValue + '</td></tr>';
+                for (var cardName in cardBest) {
+                   log += '<tr><td>' + CARDS[cardName].name + '</td><td>' + cardBest[cardName] + '</td><td>' + cardBestValue[cardName] + '</td></tr>';
+               }
+               log += '</table>'
+                progression.innerHTML = log;
+               
+                if (cardToTry >= inventaire.deck.length) {
+                    return;
+                }
+                currentCardName = inventaire.deck[cardToTry].id;
+                originalDeck.deck[deckCardToReplace] = inventaire.deck[cardToTry];
+                getdeck = hash_encode(originalDeck);
+                step++;
+            }
+        }
+        else{
+            step = 0;
+            getdeck = original_hash;
+        }   
 
         // Set up battleground effects, if any
-        SIMULATOR.battlegrounds = getBattlegrounds(getbattleground, selfbges, enemybges, getraid);
-
-        hideUI();
-
+        SIMULATOR.battlegrounds = getBattlegrounds(getbattleground, getraid);
+        
         SIMULATOR.setupDecks();
 
         wins = 0;
@@ -34,8 +124,6 @@
         }
 
         current_timeout = setTimeout(run_sims);
-
-        return false;
     }
 
     // Interrupt simulations
@@ -120,6 +208,23 @@
             showUI();
 
             if (SIM_CONTROLLER.end_sims_callback) SIM_CONTROLLER.end_sims_callback();
+
+            if (wins > best_value){
+                best_value = wins;
+                best = getdeck;
+            }
+
+            if (currentCardName) {
+                if (!cardBestValue[currentCardName] || wins > cardBestValue[currentCardName]){
+                    cardBestValue[currentCardName] = wins;
+                    cardBest[currentCardName] = getdeck;
+                }
+            }
+            else{
+                originalValue = wins;
+            }
+            
+            setTimeout(tryNewCard, 100);
         }
     }
 
