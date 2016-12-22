@@ -1042,6 +1042,200 @@
             ]
         }
     },
+    "24007": {
+        "id": "24007",
+        "type": "Raid",
+        "name": "Frostbite Raid",
+        "bge": "503",
+        "upgradeLevels": "24",
+        "commander": {
+            "id": "253"
+        },
+        "deck": {
+            "card": [
+              {
+                  "id": "8000"
+              },
+              {
+                  "id": "6031",
+                  "remove_mastery_level": "23"
+              },
+              {
+                  "id": "5012",
+                  "remove_mastery_level": "11"
+              },
+              {
+                  "id": "5012",
+                  "remove_mastery_level": "10"
+              },
+              {
+                  "id": "5022",
+                  "remove_mastery_level": "11"
+              },
+              {
+                  "id": "5022",
+                  "remove_mastery_level": "10"
+              },
+              {
+                  "id": "1617",
+                  "remove_mastery_level": "11"
+              },
+              {
+                  "id": "7017",
+                  "remove_mastery_level": "9"
+              },
+              {
+                  "id": "1617",
+                  "remove_mastery_level": "8"
+              },
+              {
+                  "id": "1617",
+                  "remove_mastery_level": "5"
+              },
+              {
+                  "id": "2045",
+                  "mastery_level": "3",
+                  "remove_mastery_level": "22"
+              },
+              {
+                  "id": "5012",
+                  "mastery_level": "4",
+                  "remove_mastery_level": "10"
+              },
+              {
+                  "id": "2049",
+                  "mastery_level": "5",
+                  "remove_mastery_level": "21"
+              },
+              {
+                  "id": "7004",
+                  "mastery_level": "6",
+                  "remove_mastery_level": "20"
+              },
+              {
+                  "id": "5028",
+                  "mastery_level": "7",
+                  "remove_mastery_level": "19"
+              },
+              {
+                  "id": "5022",
+                  "mastery_level": "8",
+                  "remove_mastery_level": "9"
+              },
+              {
+                  "id": "1617",
+                  "mastery_level": "8",
+                  "remove_mastery_level": "9"
+              },
+              {
+                  "id": "7004",
+                  "mastery_level": "9",
+                  "remove_mastery_level": "16"
+              },
+              {
+                  "id": "6042",
+                  "mastery_level": "9",
+                  "remove_mastery_level": "17"
+              },
+              {
+                  "id": "2020",
+                  "mastery_level": "9",
+                  "remove_mastery_level": "15"
+              },
+              {
+                  "id": "8002",
+                  "mastery_level": "10"
+              },
+              {
+                  "id": "5028",
+                  "mastery_level": "10",
+                  "remove_mastery_level": "14"
+              },
+              {
+                  "id": "5008",
+                  "mastery_level": "10",
+                  "remove_mastery_level": "13"
+              },
+              {
+                  "id": "6042",
+                  "mastery_level": "11",
+                  "remove_mastery_level": "12"
+              },
+              {
+                  "id": "8002",
+                  "mastery_level": "11"
+              },
+              {
+                  "id": "8003",
+                  "mastery_level": "11"
+              },
+              {
+                  "id": "5008",
+                  "mastery_level": "12",
+                  "remove_mastery_level": "25"
+              },
+              {
+                  "id": "7003",
+                  "mastery_level": "13",
+                  "remove_mastery_level": "24"
+              },
+              {
+                  "id": "5031",
+                  "mastery_level": "14",
+                  "remove_mastery_level": "19"
+              },
+              {
+                  "id": "6031",
+                  "mastery_level": "15",
+                  "remove_mastery_level": "18"
+              },
+              {
+                  "id": "8004",
+                  "mastery_level": "16"
+              },
+              {
+                  "id": "8000",
+                  "mastery_level": "17"
+              },
+              {
+                  "id": "8001",
+                  "mastery_level": "18"
+              },
+              {
+                  "id": "8002",
+                  "mastery_level": "19"
+              },
+              {
+                  "id": "8000",
+                  "mastery_level": "19"
+              },
+              {
+                  "id": "8003",
+                  "mastery_level": "20"
+              },
+              {
+                  "id": "8002",
+                  "mastery_level": "21"
+              },
+              {
+                  "id": "8003",
+                  "mastery_level": "22"
+              },
+              {
+                  "id": "8004",
+                  "mastery_level": "23"
+              },
+              {
+                  "id": "8004",
+                  "mastery_level": "24"
+              },
+              {
+                  "id": "8001",
+                  "mastery_level": "25"
+              }
+            ]
+        }
+    },
     "28001": {
         "id": "28001",
         "type": "Dungeon",

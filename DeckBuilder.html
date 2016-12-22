@@ -102,80 +102,80 @@
                     </fieldset>
                     <fieldset>
                         <span>Fusion:</span>
-                        <input type="image" title="Single Fused" name="skill" src="res/cardAssets/Singlefuse.png" onclick="filterFusion(this, '')" />
-                        <input type="image" title="Dual Fused" name="skill" src="res/cardAssets/Dualfuse.png" onclick="filterFusion(this, '1')" />
-                        <input type="image" title="Quad Fused" name="skill" src="res/cardAssets/Quadfuse.png" onclick="filterFusion(this, '2')" />
+                        <input type="image" title="Single Fused" name="fusion" src="res/cardAssets/Singlefuse.png" onclick="filterFusion(this, '')" />
+                        <input type="image" title="Dual Fused" name="fusion" src="res/cardAssets/Dualfuse.png" onclick="filterFusion(this, '1')" />
+                        <input type="image" title="Quad Fused" name="fusion" src="res/cardAssets/Quadfuse.png" onclick="filterFusion(this, '2')" />
                     </fieldset>
                     <fieldset>
                         <span>Set:</span>
-                        <input type="image" name="skill" title="Basic Set" src="res/cardAssets/Basic.png" onclick="filterSet(this, '1000')" />
-                        <input type="image" name="skill" title="Reward Set" src="res/cardAssets/Reward.png" onclick="filterSet(this, '2000')" />
-                        <input type="image" name="skill" title="Premium Set" src="res/cardAssets/Premium.png" onclick="filterSet(this, '3000')" />
-                        <input type="image" name="skill" title="Chance Set" src="res/cardAssets/BoxOnly.png" onclick="filterSet(this, '4000')" />
-                        <input type="image" name="skill" title="Mythic Reward Set" src="res/cardAssets/Level_5_7.png" onclick="filterSet(this, '5000')" />
-                        <input type="image" name="skill" title="Story Elements" src="res/cardAssets/StoryElements.png" onclick="filterSet(this, '9999')" />
+                        <input type="image" name="set" data-filter="1000" title="Basic Set" src="res/cardAssets/Basic.png" />
+                        <input type="image" name="set" data-filter="2000" title="Reward Set" src="res/cardAssets/Reward.png" />
+                        <input type="image" name="set" data-filter="3000" title="Premium Set" src="res/cardAssets/Premium.png" />
+                        <input type="image" name="set" data-filter="4000" title="Chance Set" src="res/cardAssets/BoxOnly.png" />
+                        <input type="image" name="set" data-filter="5000" title="Mythic Reward Set" src="res/cardAssets/Level_5_7.png" />
+                        <input type="image" name="set" data-filter="9999" title="Story Elements" src="res/cardAssets/StoryElements.png" />
                     </fieldset>
                     <fieldset>
                         <span>Skills:</span>
-                        <input type="image" id="armored" name="skill" title="Armor" src="res/skills/Armor.png" onclick="filterSkill(this, 'armored')" oncontextmenu="return showAdvancedFilters('armored')" />
-                        <input type="image" id="protect" name="skill" title="Barrier" src="res/skills/Barrier.png" onclick="filterSkill(this, 'protect')" oncontextmenu="return showAdvancedFilters('protect')" />
-                        <input type="image" id="protect_ice" name="skill" title="Iceshatter Barrier" src="res/skills/Iceshatter.png" onclick="filterSkill(this, 'protect_ice')" oncontextmenu="return showAdvancedFilters('protect_ice')" />
-                        <input type="image" id="berserk" name="skill" title="Berserk" src="res/skills/Berserk.png" onclick="filterSkill(this, 'berserk')" oncontextmenu="return showAdvancedFilters('berserk')" />
-                        <input type="image" id="strike" name="skill" title="Bolt" src="res/skills/Bolt.png" onclick="filterSkill(this, 'strike')" oncontextmenu="return showAdvancedFilters('strike')" />
-                        <input type="image" id="corrosive" name="skill" title="Corrosive" src="res/skills/Corrosive.png" onclick="filterSkill(this, 'corrosive')" oncontextmenu=" return showAdvancedFilters('corrosive')" />
-                        <input type="image" id="counterburn" name="skill" title="Counterburn" src="res/skills/Counterburn.png" onclick="filterSkill(this, 'counterburn')" oncontextmenu="return showAdvancedFilters('counterburn')" />
-                        <input type="image" id="flurry" name="skill" title="Dualstrike" src="res/skills/Dualstrike.png" onclick="filterSkill(this, 'flurry')" oncontextmenu="return showAdvancedFilters('flurry')" />
-                        <input type="image" id="rally" name="skill" title="Empower" src="res/skills/Empower.png" onclick="filterSkill(this, 'rally')" oncontextmenu="return showAdvancedFilters('rally')" />
-                        <input type="image" id="enhance" name="skill" title="Enhance" src="res/skills/Enhance.png" onclick="filterSkill(this, 'enhance')" oncontextmenu="return showAdvancedFilters('enhance')" />
-                        <input type="image" id="fervor" name="skill" title="Fervor" src="res/skills/Fervor.png" onclick="filterSkill(this, 'fervor')" oncontextmenu="return showAdvancedFilters('fervor')" />
-                        <input type="image" id="jam" name="skill" title="Freeze" src="res/skills/Freeze.png" onclick="filterSkill(this, 'jam')" oncontextmenu="return showAdvancedFilters('jam')" />
-                        <input type="image" id="frost" name="skill" title="Frostbreath" src="res/skills/Frost.png" onclick="filterSkill(this, 'frost')" oncontextmenu="return showAdvancedFilters('frost')" />
-                        <input type="image" id="heal" name="skill" title="Heal" src="res/skills/Heal.png" onclick="filterSkill(this, 'heal')" oncontextmenu="return showAdvancedFilters('heal')" />
-                        <input type="image" id="enfeeble" name="skill" title="Hex" src="res/skills/Hex.png" onclick="filterSkill(this, 'enfeeble')" oncontextmenu="return showAdvancedFilters('enfeeble')" />
-                        <input type="image" id="imbue" name="skill" title="Imbue" src="res/skills/Imbue.png" onclick="filterSkill(this, 'imbue')" oncontextmenu="return showAdvancedFilters('imbue')" />
-                        <input type="image" id="evade" name="skill" title="Invisibile" src="res/skills/Invisibility.png" onclick="filterSkill(this, 'evade')" oncontextmenu="return showAdvancedFilters('evade')" />
-                        <input type="image" id="legion" name="skill" title="Legion" src="res/skills/Legion.png" onclick="filterSkill(this, 'legion')" oncontextmenu="return showAdvancedFilters('legion')" />
-                        <input type="image" id="nullify" name="skill" title="Nullify" src="res/skills/Nullify.png" onclick="filterSkill(this, 'nullify')" oncontextmenu=" return showAdvancedFilters('nullify')" />
-                        <input type="image" id="pierce" name="skill" title="Pierce" src="res/skills/Pierce.png" onclick="filterSkill(this, 'pierce')" oncontextmenu="return showAdvancedFilters('pierce')" />
-                        <input type="image" id="poison" name="skill" title="Poison" src="res/skills/Poison.png" onclick="filterSkill(this, 'poison')" oncontextmenu="return showAdvancedFilters('poison')" />
-                        <input type="image" id="poisonstrike" name="skill" title="Poisonbolt" src="res/skills/Poisonbolt.png" onclick="filterSkill(this, 'poisonstrike')" oncontextmenu="return showAdvancedFilters('poisonstrike')" />
-                        <input type="image" id="burn" name="skill" title="Scorch" src="res/skills/Scorch.png" onclick="filterSkill(this, 'burn')" oncontextmenu="return showAdvancedFilters('burn')" />
-                        <input type="image" id="leech" name="skill" title="Silence" src="res/skills/Silence.png" onclick="filterSkill(this, 'silence')" oncontextmenu="return showAdvancedFilters('silence')" />
-                        <input type="image" id="leech" name="skill" title="Siphon" src="res/skills/Siphon.png" onclick="filterSkill(this, 'leech')" oncontextmenu="return showAdvancedFilters('leech')" />
-                        <input type="image" id="leech" name="skill" title="Taunt" src="res/skills/Taunt.png" onclick="filterSkill(this, 'taunt')" oncontextmenu="return showAdvancedFilters('taunt')" />
-                        <input type="image" id="counter" name="skill" title="Vengeance" src="res/skills/Vengeance.png" onclick="filterSkill(this, 'counter')" oncontextmenu="return showAdvancedFilters('counter')" />
-                        <input type="image" id="weaken" name="skill" title="Weaken" src="res/skills/Weaken.png" onclick="filterSkill(this, 'weaken')" oncontextmenu="return showAdvancedFilters('weaken')" />
-                        <input type="image" id="valor" name="skill" title="Valor" src="res/skills/Valor.png" onclick="filterSkill(this, 'valor')" oncontextmenu="return showAdvancedFilters('valor')" />
+                        <input type="image" data-filter="armored" name="skill" title="Armor" src="res/skills/Armor.png" oncontextmenu="return showAdvancedFilters('armored')" />
+                        <input type="image" data-filter="protect" name="skill" title="Barrier" src="res/skills/Barrier.png" oncontextmenu="return showAdvancedFilters('protect')" />
+                        <input type="image" data-filter="protect_ice" name="skill" title="Iceshatter Barrier" src="res/skills/Iceshatter.png" oncontextmenu="return showAdvancedFilters('protect_ice')" />
+                        <input type="image" data-filter="berserk" name="skill" title="Berserk" src="res/skills/Berserk.png" oncontextmenu="return showAdvancedFilters('berserk')" />
+                        <input type="image" data-filter="strike" name="skill" title="Bolt" src="res/skills/Bolt.png" oncontextmenu="return showAdvancedFilters('strike')" />
+                        <input type="image" data-filter="corrosive" name="skill" title="Corrosive" src="res/skills/Corrosive.png" oncontextmenu=" return showAdvancedFilters('corrosive')" />
+                        <input type="image" data-filter="counterburn" name="skill" title="Counterburn" src="res/skills/Counterburn.png" oncontextmenu="return showAdvancedFilters('counterburn')" />
+                        <input type="image" data-filter="flurry" name="skill" title="Dualstrike" src="res/skills/Dualstrike.png" oncontextmenu="return showAdvancedFilters('flurry')" />
+                        <input type="image" data-filter="rally" name="skill" title="Empower" src="res/skills/Empower.png" oncontextmenu="return showAdvancedFilters('rally')" />
+                        <input type="image" data-filter="enhance" name="skill" title="Enhance" src="res/skills/Enhance.png" oncontextmenu="return showAdvancedFilters('enhance')" />
+                        <input type="image" data-filter="fervor" name="skill" title="Fervor" src="res/skills/Fervor.png" oncontextmenu="return showAdvancedFilters('fervor')" />
+                        <input type="image" data-filter="jam" name="skill" title="Freeze" src="res/skills/Freeze.png" oncontextmenu="return showAdvancedFilters('jam')" />
+                        <input type="image" data-filter="frost" name="skill" title="Frostbreath" src="res/skills/Frost.png" oncontextmenu="return showAdvancedFilters('frost')" />
+                        <input type="image" data-filter="heal" name="skill" title="Heal" src="res/skills/Heal.png" oncontextmenu="return showAdvancedFilters('heal')" />
+                        <input type="image" data-filter="enfeeble" name="skill" title="Hex" src="res/skills/Hex.png" oncontextmenu="return showAdvancedFilters('enfeeble')" />
+                        <input type="image" data-filter="imbue" name="skill" title="Imbue" src="res/skills/Imbue.png" oncontextmenu="return showAdvancedFilters('imbue')" />
+                        <input type="image" data-filter="evade" name="skill" title="Invisibile" src="res/skills/Invisibility.png" oncontextmenu="return showAdvancedFilters('evade')" />
+                        <input type="image" data-filter="legion" name="skill" title="Legion" src="res/skills/Legion.png" oncontextmenu="return showAdvancedFilters('legion')" />
+                        <input type="image" data-filter="nullify" name="skill" title="Nullify" src="res/skills/Nullify.png" oncontextmenu=" return showAdvancedFilters('nullify')" />
+                        <input type="image" data-filter="pierce" name="skill" title="Pierce" src="res/skills/Pierce.png" oncontextmenu="return showAdvancedFilters('pierce')" />
+                        <input type="image" data-filter="poison" name="skill" title="Poison" src="res/skills/Poison.png" oncontextmenu="return showAdvancedFilters('poison')" />
+                        <input type="image" data-filter="poisonstrike" name="skill" title="Poisonbolt" src="res/skills/Poisonbolt.png" oncontextmenu="return showAdvancedFilters('poisonstrike')" />
+                        <input type="image" data-filter="burn" name="skill" title="Scorch" src="res/skills/Scorch.png" oncontextmenu="return showAdvancedFilters('burn')" />
+                        <input type="image" data-filter="silence" name="skill" title="Silence" src="res/skills/Silence.png" oncontextmenu="return showAdvancedFilters('silence')" />
+                        <input type="image" data-filter="leech" name="skill" title="Siphon" src="res/skills/Siphon.png" oncontextmenu="return showAdvancedFilters('leech')" />
+                        <input type="image" data-filter="taunt" name="skill" title="Taunt" src="res/skills/Taunt.png" oncontextmenu="return showAdvancedFilters('taunt')" />
+                        <input type="image" data-filter="counter" name="skill" title="Vengeance" src="res/skills/Vengeance.png" oncontextmenu="return showAdvancedFilters('counter')" />
+                        <input type="image" data-filter="weaken" name="skill" title="Weaken" src="res/skills/Weaken.png" oncontextmenu="return showAdvancedFilters('weaken')" />
+                        <input type="image" data-filter="valor" name="skill" title="Valor" src="res/skills/Valor.png" oncontextmenu="return showAdvancedFilters('valor')" />
                     </fieldset>
                     <fieldset>
                         <span>Faction:</span>
-                        <input type="image" name="faction" title="Aether" src="res/factions/Aether.png" onclick="filterFaction(this, 'Aether')" />
-                        <input type="image" name="faction" title="Chaos" src="res/factions/Chaos.png" onclick="filterFaction(this, 'Chaos')" />
-                        <input type="image" name="faction" title="Wyld" src="res/factions/Wyld.png" onclick="filterFaction(this, 'Wyld')" />
-                        <input type="image" name="faction" title="Void" src="res/factions/Void.png" onclick="filterFaction(this, 'Void')" />
-                        <input type="image" name="faction" title="Factionless" src="res/factions/Factionless.png" onclick="filterFaction(this, 'Factionless')" />
+                        <input type="image" name="faction" data-filter="Aether" title="Aether" src="res/factions/Aether.png" />
+                        <input type="image" name="faction" data-filter="Chaos" title="Chaos" src="res/factions/Chaos.png" />
+                        <input type="image" name="faction" data-filter="Wyld" title="Wyld" src="res/factions/Wyld.png" />
+                        <input type="image" name="faction" data-filter="Void" title="Void" src="res/factions/Void.png" />
+                        <input type="image" name="faction" data-filter="Factionless" title="Factionless" src="res/factions/Factionless.png" />
                     </fieldset>
                     <fieldset>
                         <span>Subfaction:</span>
-                        <input type="image" name="subfaction" title="Angel" src="res/factions/Angel.png" onclick="filterSubfaction(this, 'Angel')" />
-                        <input type="image" name="subfaction" title="Avian" src="res/factions/Avian.png" onclick="filterSubfaction(this, 'Avian')" />
-                        <input type="image" name="subfaction" title="Dragon" src="res/factions/Dragon.png" onclick="filterSubfaction(this, 'Dragon')" />
-                        <input type="image" name="subfaction" title="Elemental" src="res/factions/Elemental.png" onclick="filterSubfaction(this, 'Elemental')" />
-                        <input type="image" name="subfaction" title="Frog" src="res/factions/Frog.png" onclick="filterSubfaction(this, 'Frog')" />
-                        <input type="image" name="subfaction" title="Undead" src="res/factions/Undead.png" onclick="filterSubfaction(this, 'Undead')" />
-                        <input type="image" name="subfaction" title="Goblin" src="res/factions/Goblin.png" onclick="filterSubfaction(this, 'Goblin')" />
-                        <input type="image" name="subfaction" title="Seafolk" src="res/factions/Seafolk.png" onclick="filterSubfaction(this, 'Seafolk')" />
-                        <input type="image" name="subfaction" title="Insect" src="res/factions/Insect.png" onclick="filterSubfaction(this, 'Insect')" />
-                        <input type="image" name="subfaction" title="Towers/Traps" src="res/factions/Tower.png" onclick="filterSubfaction(this, 'Tower')" />
-                        <input type="image" name="subfaction" title="None" src="res/factions/Factionless.png" onclick="filterSubfaction(this, 'Factionless')" />
+                        <input type="image" name="subfaction" data-filter="Angel" title="Angel" src="res/factions/Angel.png" />
+                        <input type="image" name="subfaction" data-filter="Avian" title="Avian" src="res/factions/Avian.png" />
+                        <input type="image" name="subfaction" data-filter="Dragon" title="Dragon" src="res/factions/Dragon.png" />
+                        <input type="image" name="subfaction" data-filter="Elemental" title="Elemental" src="res/factions/Elemental.png" />
+                        <input type="image" name="subfaction" data-filter="Frog" title="Frog" src="res/factions/Frog.png" />
+                        <input type="image" name="subfaction" data-filter="Undead" title="Undead" src="res/factions/Undead.png" />
+                        <input type="image" name="subfaction" data-filter="Goblin" title="Goblin" src="res/factions/Goblin.png" />
+                        <input type="image" name="subfaction" data-filter="Seafolk" title="Seafolk" src="res/factions/Seafolk.png" />
+                        <input type="image" name="subfaction" data-filter="Insect" title="Insect" src="res/factions/Insect.png" />
+                        <input type="image" name="subfaction" data-filter="Towers/Trap" title="Towers/Traps" src="res/factions/Tower.png" />
+                        <input type="image" name="subfaction" data-filter="None" title="None" src="res/factions/Factionless.png" />
                     </fieldset>
                     <fieldset>
                         <span>Rarity:</span>
-                        <input type="image" name="rarity" title="Common" src="res/cardAssets/Level_1_3.png" onclick="filterRarity(this, 1)" />
-                        <input type="image" name="rarity" title="Rare" src="res/cardAssets/Level_2_4.png" onclick="filterRarity(this, 2)" />
-                        <input type="image" name="rarity" title="Epic" src="res/cardAssets/Level_3_5.png" onclick="filterRarity(this, 3)" />
-                        <input type="image" name="rarity" title="Legendary" src="res/cardAssets/Level_4_6.png" onclick="filterRarity(this, 4)" />
-                        <input type="image" name="rarity" title="Mythic" src="res/cardAssets/Level_5_7.png" onclick="filterRarity(this, 5)" />
+                        <input type="image" name="rarity" data-filter="1" title="Common" src="res/cardAssets/Level_1_3.png" />
+                        <input type="image" name="rarity" data-filter="2" title="Rare" src="res/cardAssets/Level_2_4.png" />
+                        <input type="image" name="rarity" data-filter="3" title="Epic" src="res/cardAssets/Level_3_5.png" />
+                        <input type="image" name="rarity" data-filter="4" title="Legendary" src="res/cardAssets/Level_4_6.png" />
+                        <input type="image" name="rarity" data-filter="5" title="Mythic" src="res/cardAssets/Level_5_7.png" />
                     </fieldset>
                     <fieldset>
                         <span>Attack:</span>
@@ -199,11 +199,11 @@
                     </fieldset>
                     <fieldset>
                         <span>Delay:</span>
-                        <input class="delay-filter" type="button" value="0" onclick="filterDelay(this, 0)" />
-                        <input class="delay-filter" type="button" value="1" onclick="filterDelay(this, 1)" />
-                        <input class="delay-filter" type="button" value="2" onclick="filterDelay(this, 2)" />
-                        <input class="delay-filter" type="button" value="3" onclick="filterDelay(this, 3)" />
-                        <input class="delay-filter" type="button" value="4" onclick="filterDelay(this, 4)" />
+                        <input name="delay" class="delay-filter" data-filter="0" type="button" value="0" />
+                        <input name="delay" class="delay-filter" data-filter="1" type="button" value="1" />
+                        <input name="delay" class="delay-filter" data-filter="2" type="button" value="2" />
+                        <input name="delay" class="delay-filter" data-filter="3" type="button" value="3" />
+                        <input name="delay" class="delay-filter" data-filter="4" type="button" value="4" />
                     </fieldset>
                     <div id="name-container" style="white-space:nowrap; margin: 5px 0;">
                         <div class="ui-widget">

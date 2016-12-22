@@ -12978,6 +12978,7 @@
       <skill id="heal" x="3" y="1" />
       <skill id="flurry" c="3" />
     </upgrade>
+    <desc>"Concealed dragons create their own clouds in which to hide." - Researcher Notes</desc>
   </unit>
   <unit>
     <id>15010</id>
@@ -13012,6 +13013,7 @@
       <skill id="heal" x="4" y="1" />
       <skill id="flurry" c="3" />
     </upgrade>
+    <desc>"If they can't see our sentries they can't defend against them!" - Yuriel, Owl Mystic</desc>
   </unit>
   <unit>
     <id>25010</id>
@@ -13048,6 +13050,7 @@
       <skill id="heal" x="5" y="1" />
       <skill id="flurry" c="2" />
     </upgrade>
+    <desc>"Wait. Where did they go?" - Yuriel, Owl Mystic</desc>
   </unit>
   <unit>
     <id>5011</id>
@@ -30405,6 +30408,7 @@
       <skill id="counter" x="2" />
       <skill id="nullify" x="1" />
     </upgrade>
+    <desc>"Why are ya' cryin'? It'll grow back."</desc>
   </unit>
   <unit>
     <id>16050</id>
@@ -36642,6 +36646,7 @@
       <level>6</level>
       <health>20</health>
     </upgrade>
+    <desc>"Born of Chaos and Aether, Tiamat was overwhelmed by its Chaotic nature and eventually turned on those it was to protect." - Ballad of Vularias IX</desc>
   </unit>
   <unit>
     <id>16100</id>
@@ -43183,6 +43188,7 @@
       <skill id="poison" x="3" />
       <skill id="berserk" x="2" />
     </upgrade>
+    <desc>"Whhyyyy!?!" - The Scorpion</desc>
   </unit>
   <unit>
     <id>17051</id>
@@ -60368,7 +60374,7 @@
     <id>249</id>
     <card_type>1</card_type>
     <name>Lone Frog Scout</name>
-    <portrait>frogscout</portrait>
+    <portrait>Frog_Scout_Color_Xmas</portrait>
     <attack>0</attack>
     <health>32</health>
     <rarity>3</rarity>

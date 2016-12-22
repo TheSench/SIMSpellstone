@@ -3642,7 +3642,7 @@
     </rewards>
     <find_item id="3046" drop_per_energy=".25" />
   </campaign>
-  <!-- Event 19 -->
+  <!-- Event 19 Frogs -->
   <campaign>
     <id>1102</id>
     <hidden>1</hidden>
@@ -3788,7 +3788,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>Spirits of Time</name>
-    <icon id="gold_leaf" bundle="17" />
+    <icon id="santaHat" bundle="41" />
     <location_id>107</location_id>
     <x>171</x>
     <y>475</y>
@@ -3810,6 +3810,65 @@
       <card level="7" id="512" />
     </rewards>
     <find_item id="3047" drop_per_energy=".25" />
+  </campaign>
+  <!-- Campaign Event 1 -->
+  <campaign>
+    <id>1108</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Weaken the Lady of the Sea</name>
+    <icon id="sparkler60" bundle="58" />
+    <location_id>112</location_id>
+    <x>171</x>
+    <y>475</y>
+    <combatBG>CombatBGEvent004</combatBG>
+    <missions>
+      <mission_id>5441</mission_id>
+      <mission_id>5442</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="510" />
+      <card level="3" id="510" />
+      <card level="4" id="2012" />
+      <card level="5" id="510" />
+      <card level="6" id="510" />
+      <card level="7" id="512" />
+    </rewards>
+  </campaign>
+  <campaign>
+    <id>1109</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>The Healer</name>
+    <icon id="sparkler60" bundle="58" />
+    <location_id>112</location_id>
+    <x>371</x>
+    <y>475</y>
+    <combatBG>CombatBGEvent004</combatBG>
+    <missions>
+      <mission_id>5443</mission_id>
+      <mission_id>5444</mission_id>
+      <mission_id>5445</mission_id>
+      <mission_id>5446</mission_id>
+      <mission_id>5447</mission_id>
+      <mission_id>5448</mission_id>
+      <mission_id>5449</mission_id>
+      <mission_id>5450</mission_id>
+      <mission_id>5451</mission_id>
+      <mission_id>5452</mission_id>
+      <mission_id>5453</mission_id>
+      <mission_id>5454</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="510" />
+      <card level="3" id="510" />
+      <card level="4" id="2012" />
+      <card level="5" id="510" />
+      <card level="6" id="510" />
+      <card level="7" id="512" />
+    </rewards>
   </campaign>
   <!-- START Mythic Titan Campaigns -->
   <campaign>

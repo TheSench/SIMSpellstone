@@ -23,17 +23,17 @@
 }
 
 .ct-barlabel {
-    font-size:16px;
+    font-size: 16px;
     stroke: black;
 }
 
 .ct-series-a .ct-barlabel {
-   font-size:20px;
+    font-size: 20px;
 }
 
-    .ct-chart .ct-bar {
-        stroke-width: 20px;
-    }
+.ct-chart .ct-bar {
+    stroke-width: 20px;
+}
 
 .ct-chart {
     padding: 10px;
@@ -47,34 +47,38 @@
 .ct-series-Aether {
     fill: steelblue;
 }
-    .ct-legend .ct-series-Aether:before {
-        border-color: steelblue;
-        background-color: steelblue;
-    }
+
+.ct-legend .ct-series-Aether:before {
+    border-color: steelblue;
+    background-color: steelblue;
+}
 
 .ct-series-Chaos {
     fill: maroon;
 }
-    .ct-legend .ct-series-Chaos:before {
-        border-color: maroon;
-        background-color: maroon;
-    }
+
+.ct-legend .ct-series-Chaos:before {
+    border-color: maroon;
+    background-color: maroon;
+}
 
 .ct-series-Wyld {
     fill: darkolivegreen;
 }
-    .ct-legend .ct-series-Wyld:before {
-        border-color: darkolivegreen;
-        background-color: darkolivegreen;
-    }
+
+.ct-legend .ct-series-Wyld:before {
+    border-color: darkolivegreen;
+    background-color: darkolivegreen;
+}
 
 .ct-series-Void {
     fill: purple;
 }
-    .ct-legend .ct-series-Void:before {
-        border-color: purple;
-        background-color: purple;
-    }
+
+.ct-legend .ct-series-Void:before {
+    border-color: purple;
+    background-color: purple;
+}
 
 .ct-series-Frog {
     fill: #59922b;
@@ -119,36 +123,42 @@
 .ct-series-attack {
     stroke: #590579;
 }
-    .ct-legend .ct-series-attack:before {
-        border-color: #590579;
-        background-color: #590579;
-    }
+
+.ct-legend .ct-series-attack:before {
+    border-color: #590579;
+    background-color: #590579;
+}
+
 .ct-series-health {
     stroke: #a9263a;
 }
+
 .ct-series-delay {
     stroke: steelblue;
 }
 
-    .ct-legend .ct-series-health:before {
-        border-color: #a9263a;
-        background-color: #a9263a;
-    }
-    
-    .ct-legend .ct-series-delay:before {
-        border-color: steelblue;
-        background-color: steelblue;
-    }
+.ct-legend .ct-series-health:before {
+    border-color: #a9263a;
+    background-color: #a9263a;
+}
+
+.ct-legend .ct-series-delay:before {
+    border-color: steelblue;
+    background-color: steelblue;
+}
+
 .ct-legend {
     position: relative;
     z-index: 10;
     list-style: none;
 }
-.ct-legend.ct-legend-inside {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
+
+    .ct-legend.ct-legend-inside {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
     .ct-legend li {
         position: relative;
         padding-left: 23px;
@@ -170,53 +180,65 @@
         border-color: #86797d;
         background-color: #86797d;
     }
+
     .ct-legend .ct-series-Frog:before {
         border-color: #59922b;
         background-color: #59922b;
     }
+
     .ct-legend .ct-series-Elemental:before {
         border-color: #8e4718;
         background-color: #8e4718;
     }
+
     .ct-legend .ct-series-Angel:before {
         border-color: #c3bdab;
         background-color: #c3bdab;
     }
+
     .ct-legend .ct-series-Undead:before {
         border-color: #451717;
         background-color: #451717;
     }
+
     .ct-legend .ct-series-Dragon:before {
         border-color: #bd1d00;
         background-color: #bd1d00;
     }
+
     .ct-legend .ct-series-Avian:before {
         border-color: #6b0392;
         background-color: #6b0392;
     }
+
     .ct-legend .ct-series-Goblin:before {
         border-color: #b2c326;
         background-color: #b2c326;
     }
+
     .ct-legend .ct-series-Seafolk:before {
         border-color: #61c2e2;
         background-color: #61c2e2;
     }
+
     .ct-legend .ct-series-Insect:before {
         border-color: #d17905;
         background-color: #d17905;
     }
+
     .ct-legend .ct-series-Ant:before {
         border-color: #d17905;
         background-color: #d17905;
     }
+
     .ct-legend li.inactive:before {
         background: transparent;
     }
 
-    svg {
-        overflow: visible;
-    }
+svg {
+    overflow: visible;
+}
+
 #factionChart {
     padding-bottom: 40px;
 }
@@ -226,46 +248,38 @@
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-    #factionChart .ct-label.ct-horizontal {
-        display: block;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        transform: rotate(-75deg);
-        transform-origin: 100% 0;
-        text-align: right;
-        max-height: 1.5em;
-        min-width: 100px;
-        max-width: 100px;
-    }
-
-    /* Factionless */
-    #factionChart .ct-series-a .ct-bar {
-        stroke: grey;
-    }
-    /* Aether */
-    #factionChart .ct-series-b .ct-bar {
-        stroke: steelblue;
-    }
-    /* Chaos */
-    #factionChart .ct-series-c .ct-bar {
-        stroke: maroon;
-    }
-    /* Wyld */
-    #factionChart .ct-series-d .ct-bar {
-        stroke: darkolivegreen;
-    }
-    /* Void */
-    #factionChart .ct-series-e .ct-bar {
-        stroke: purple;
-    }
-
-.selected {
-    background: grey;
+#factionChart .ct-label.ct-horizontal {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transform: rotate(-75deg);
+    transform-origin: 100% 0;
+    text-align: right;
+    max-height: 1.5em;
+    min-width: 100px;
+    max-width: 100px;
 }
 
-.selected-advanced {
-    background: darkblue;
+/* Factionless */
+#factionChart .ct-series-a .ct-bar {
+    stroke: grey;
+}
+/* Aether */
+#factionChart .ct-series-b .ct-bar {
+    stroke: steelblue;
+}
+/* Chaos */
+#factionChart .ct-series-c .ct-bar {
+    stroke: maroon;
+}
+/* Wyld */
+#factionChart .ct-series-d .ct-bar {
+    stroke: darkolivegreen;
+}
+/* Void */
+#factionChart .ct-series-e .ct-bar {
+    stroke: purple;
 }
 
 #filters input[type="image"] {
@@ -292,8 +306,25 @@ input[type="button"].delay-filter {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+
 input[type="button"].selected {
     background: grey;
+}
+
+input[type="button"].excluded {
+    background: maroon;
+}
+
+.selected {
+    background: grey;
+}
+
+.excluded {
+    background: maroon;
+}
+
+.selected-advanced {
+    background: darkblue;
 }
 
 .tooltip {
@@ -453,8 +484,8 @@ fieldset {
     padding: 1px;
     margin-left: 1px;
     /*color: white;*/
-    color:transparent;
-    overflow:hidden;
+    color: transparent;
+    overflow: hidden;
 }
 
     .highlighter span {

@@ -1226,6 +1226,7 @@
       <skill id="heal" x="3" y="1" />
       <skill id="flurry" c="3" />
     </upgrade>
+    <desc>"Concealed dragons create their own clouds in which to hide." - Researcher Notes</desc>
   </unit>
   <unit>
     <id>15010</id>
@@ -1260,6 +1261,7 @@
       <skill id="heal" x="4" y="1" />
       <skill id="flurry" c="3" />
     </upgrade>
+    <desc>"If they can't see our sentries they can't defend against them!" - Yuriel, Owl Mystic</desc>
   </unit>
   <unit>
     <id>25010</id>
@@ -1296,6 +1298,7 @@
       <skill id="heal" x="5" y="1" />
       <skill id="flurry" c="2" />
     </upgrade>
+    <desc>"Wait. Where did they go?" - Yuriel, Owl Mystic</desc>
   </unit>
   <unit>
     <id>5011</id>

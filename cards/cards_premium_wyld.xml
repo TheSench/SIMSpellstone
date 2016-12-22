@@ -6222,6 +6222,7 @@
       <skill id="poison" x="3" />
       <skill id="berserk" x="2" />
     </upgrade>
+    <desc>"Whhyyyy!?!" - The Scorpion</desc>
   </unit>
   <unit>
     <id>17051</id>

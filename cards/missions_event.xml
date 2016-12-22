@@ -13265,7 +13265,7 @@
     </deck>
     <speech>
       <line>
-        <commander>frogscout</commander>
+        <commander>Frog_Scout_Color_Xmas</commander>
         <enemy>1</enemy>
         <text>Jingle, jingle, deck the halls~</text>
       </line>
@@ -13275,7 +13275,7 @@
         <text>This incessant noise is giving me a headache.</text>
       </line>
       <line>
-        <commander>frogscout</commander>
+        <commander>Frog_Scout_Color_Xmas</commander>
         <enemy>1</enemy>
         <text>Hey angel wings! Where's your hat?</text>
       </line>
@@ -13434,21 +13434,433 @@
     </deck>
     <speech>
       <line>
-        <commander>frogscout</commander>
+        <commander>Frog_Scout_Color_Xmas</commander>
         <enemy>1</enemy>
         <text>Jingle, jingle- Ahh! You!</text>
       </line>
       <line>
-        <commander>seraph</commander>
+        <commander>Seraph_santa</commander>
         <enemy>0</enemy>
         <text>Pardon me.... I... apologize for earlier. Might I join you in your song and dance?</text>
       </line>
       <line>
-        <commander>frogscout</commander>
+        <commander>Frog_Scout_Color_Xmas</commander>
         <enemy>1</enemy>
         <text>Oh! Yes, of course! Gladly!</text>
       </line>
     </speech>
   </mission>
   <!-- End Christmas Event -->
+  <!-- Campaign Event Map 1 -->
+  <!-- Resource Node -->
+  <mission>
+    <id>5441</id>
+    <name>Thieving Heroes</name>
+    <energy>9</energy>
+    <desc>You've learned that the more [items] that the Seafolk raiders possess, the stronger their summoning will be for Lady Scylla. If you could steal some of their reserves, it would weaken the sea monster... (This mission drops higher quantities of [item].)</desc>
+    <commander id="352" />
+    <deck>
+      <card id="7007" name="Water Serpent" />
+      <card id="1313" name="Lavafrog" />
+      <card id="1010" name="Lightning Elemental" />
+      <card id="1015" name="Windfrog" />
+      <card id="1325" name="Chaos Storm" />
+      <card id="5053" name="Anura Witch" />
+      <card id="2069" name="Webfoot Surfer" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="7093" name="Larva Drakes" />
+      <card id="2014" mastery_level="2" name="Tadpole Warmage" />
+      <card id="5030" mastery_level="3" name="Loxphas Mage" />
+      <card id="6011" mastery_level="4" name="Bomb Spirit" />
+      <card id="2070" mastery_level="5" name="Redclaw Tamer" />
+      <card id="7003" mastery_level="6" name="Kraken" />
+      <card id="7054" mastery_level="7" name="The Thing Below" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5442</id>
+    <name>Against the Tide</name>
+    <energy>9</energy>
+    <desc>The [item] is a type of catalyst for the raiders' summoning. Every little bit you can take will weaken the revival of their Lady of the Sea. (This mission drops higher quantities of [item].)</desc>
+    <commander id="359" />
+    <deck>
+      <card id="5022" name="Webfoot Raider" />
+      <card id="1312" name="Scythe Demon" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="2067" name="Symbol of Elaria" />
+      <card id="5099" name="Croak Dropper" />
+      <card id="7004" name="Ice Golem" />
+      <card id="5073" name="Shell Invader" />
+      <card id="7078" name="Saprolite" />
+      <card id="5086" mastery_level="2" name="Spirit Blades" />
+      <card id="6050" mastery_level="3" name="Wortwog" />
+      <card id="6051" mastery_level="4" name="Treeblade Thief" />
+      <card id="2070" mastery_level="5" name="Redclaw Tamer" />
+      <card id="7003" mastery_level="6" name="Kraken" />
+      <card id="7023" mastery_level="7" name="Zolmosh the Fist" />
+    </deck>
+  </mission>
+  <!-- Campaign Event Weeks 1-2 -->
+  <mission>
+    <id>5443</id>
+    <name>To Become Stronger</name>
+    <energy>9</energy>
+    <desc>You have heard tales of a remarkable healer who hails from Golden Crown Village. Deciding to investigate, your journey to track the healer eventually leads you to Duskwillow. However, the entire area is being attacked by monsters that rise up from the sea...</desc>
+    <commander id="301" />
+    <deck>
+      <card id="5022" name="Webfoot Raider" />
+      <card id="1317" name="Fire Imp" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="5020" name="Frost Frog" />
+      <card id="5073" name="Shell Invader" />
+      <card id="2034" name="Leap Frog Duo" />
+      <card id="7066" name="Aquine" />
+      <card id="7073" name="Heralded Slugger" />
+      <card id="2053" mastery_level="2" name="Rocket Rider" />
+      <card id="5050" mastery_level="3" name="Cloud Spear" />
+      <card id="6051" mastery_level="4" name="Treeblade Thief" />
+      <card id="7005" mastery_level="5" name="Tsunamari" />
+      <card id="7054" mastery_level="6" name="The Thing Below" />
+      <card id="7003" mastery_level="7" name="Kraken" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5444</id>
+    <name>Seafolk Plunderers</name>
+    <energy>9</energy>
+    <desc>The merfolk ravage the town that lies next to a great bay. Citizens flee in panic. Gathering your team, you lead them against the raiders.</desc>
+    <commander id="359" />
+    <deck>
+      <card id="5022" name="Webfoot Raider" />
+      <card id="5017" name="Steam Tempest" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="6012" name="Ember Drake" />
+      <card id="5096" name="Enclave Dragon" />
+      <card id="5073" name="Shell Invader" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="7066" name="Aquine" />
+      <card id="7021" name="Shadow Elemental" />
+      <card id="7066" mastery_level="2" name="Aquine" />
+      <card id="7016" mastery_level="3" name="Webfist Shaman" />
+      <card id="6051" mastery_level="4" name="Treeblade Thief" />
+      <card id="7005" mastery_level="5" name="Tsunamari" />
+      <card id="7023" mastery_level="6" name="Zolmosh the Fist" />
+      <card id="7014" mastery_level="7" name="Genbu" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>I am the great Scylla's Servant! Bow down, or FACE MY FIST!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5445</id>
+    <name>Zolmosh the Fist</name>
+    <energy>9</energy>
+    <desc>Your forces face the greatest resistance from a merman named Zolmosh. It seems that he, too, has arrived in Duskwillow for a similar reason to your own...</desc>
+    <commander id="359" />
+    <deck>
+      <card id="5022" name="Webfoot Raider" />
+      <card id="1618" name="Frog Scout" />
+      <card id="7012" name="Life Drake" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6020" name="Croak Piercer" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="2069" name="Webfoot Surfer" />
+      <card id="7066" name="Aquine" />
+      <card id="7015" name="Bog Aberration" />
+      <card id="7066" mastery_level="2" name="Aquine" />
+      <card id="2069" mastery_level="3" name="Webfoot Surfer" />
+      <card id="6004" mastery_level="4" name="Branding Construct" />
+      <card id="7005" mastery_level="5" name="Tsunamari" />
+      <card id="7023" mastery_level="6" name="Zolmosh the Fist" />
+      <card id="7023" mastery_level="7" name="Zolmosh the Fist" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>Find her! Find the frog who dares defy Lady Scylla, the one with the healing touch; the one who contests The Void's magic!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5446</id>
+    <name>Hasty Retreat</name>
+    <energy>9</energy>
+    <desc>The seafolk are repelled by your band's fierce attacks. More and more fall. The remaining force retreats back to the bay, stragglers struggling to escape.</desc>
+    <commander id="328" />
+    <deck>
+      <card id="1616" name="Werewarg" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="1319" name="Wraith" />
+      <card id="6090" name="Crackshot" />
+      <card id="5060" name="Quack Apprentice" />
+      <card id="7047" name="Shaman of the Wild" />
+      <card id="7005" name="Tsunamari" />
+      <card id="7005" name="Tsunamari" />
+      <card id="7061" mastery_level="2" name="Thickskin Dragon" />
+      <card id="6050" mastery_level="3" name="Wortwog" />
+      <card id="5073" mastery_level="4" name="Shell Invader" />
+      <card id="1630" mastery_level="5" name="Giant Squid" />
+      <card id="7003" mastery_level="6" name="Kraken" />
+      <card id="7054" mastery_level="7" name="The Thing Below" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>Ugh... They are powerful. Men, retreat! Though we lost this battle, the war is far from over!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5447</id>
+    <name>Abandoned Residences</name>
+    <energy>9</energy>
+    <desc>With the seafolk pushed back, you can now resume your search for the legendary frog. Most of the town has been deserted during the attack...</desc>
+    <commander id="327" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="1610" name="Ranger" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="7041" name="Feral Angel" />
+      <card id="7005" name="Tsunamari" />
+      <card id="7066" name="Aquine" />
+      <card id="7053" mastery_level="2" name="Bee Eater" />
+      <card id="2069" mastery_level="3" name="Webfoot Surfer" />
+      <card id="5073" mastery_level="4" name="Shell Invader" />
+      <card id="2042" mastery_level="5" name="Carrion Hunter" />
+      <card id="1642" mastery_level="6" name="Icestone Beast" />
+      <card id="2071" mastery_level="7" name="Sproutfrog Rainwisher" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5448</id>
+    <name>The Frog Travelers</name>
+    <energy>9</energy>
+    <desc>After considerable searching, you see a small band of frogs. Recognizing their attire as those from Golden Crown, you approach and ask about their fabled healer.</desc>
+    <commander id="290" />
+    <deck>
+      <card id="1015" name="Windfrog" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="1015" name="Windfrog" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="6077" name="Enigma" />
+      <card id="5020" name="Frost Frog" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="2014" name="Tadpole Warmage" />
+      <card id="7053" mastery_level="2" name="Bee Eater" />
+      <card id="5053" mastery_level="3" name="Anura Witch" />
+      <card id="1328" mastery_level="4" name="Poison Bullfrog" />
+      <card id="1028" mastery_level="5" name="Heroic Frog" />
+      <card id="1043" mastery_level="6" name="Lilypad Bard" />
+      <card id="1043" mastery_level="7" name="Lilypad Bard" />
+    </deck>
+    <speech>
+      <line>
+        <commander>frogscout</commander>
+        <enemy>1</enemy>
+        <text>Rrribbit! What makes you think we can trust you? You think we'd just tell you where to find the healer?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5449</id>
+    <name>Hostile Allies</name>
+    <energy>9</energy>
+    <desc>The Golden Crown frogs refuse to trust you. Worse than that, they seem to think you're in league with the seafolk! Despite your attempts to talk with them, the frogs raise their weapons and attack!</desc>
+    <commander id="252" />
+    <deck>
+      <card id="1015" name="Windfrog" />
+      <card id="5007" name="Arcane Scroll" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="6069" name="Arachnolite" />
+      <card id="5004" name="Lightning Lord" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="6051" name="Treeblade Thief" />
+      <card id="6020" name="Croak Piercer" />
+      <card id="6031" mastery_level="2" name="Iceblood Assassin" />
+      <card id="5053" mastery_level="3" name="Anura Witch" />
+      <card id="1028" mastery_level="4" name="Heroic Frog" />
+      <card id="5053" mastery_level="5" name="Anura Witch" />
+      <card id="5054" mastery_level="6" name="Reckless Ballista" />
+      <card id="6048" mastery_level="7" name="Bulwraag" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5450</id>
+    <name>Strength to Prove</name>
+    <energy>9</energy>
+    <desc>The frogs are fierce. However, killing them certainly won't make them trust you. You try your best to defend yourself and prove your strength, while still trying to earn their trust and refrain from hurting them too badly.</desc>
+    <commander id="290" />
+    <deck>
+      <card id="1312" name="Scythe Demon" />
+      <card id="1614" name="Druid" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="6020" name="Croak Piercer" />
+      <card id="2067" name="Symbol of Elaria" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="2011" name="Poliworg" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="6011" mastery_level="2" name="Bomb Spirit" />
+      <card id="5099" mastery_level="3" name="Croak Dropper" />
+      <card id="6050" mastery_level="4" name="Wortwog" />
+      <card id="2014" mastery_level="5" name="Tadpole Warmage" />
+      <card id="5103" mastery_level="6" name="Mother of Solars" />
+      <card id="5051" mastery_level="7" name="Amphibious Digger" />
+    </deck>
+    <speech>
+      <line>
+        <commander>frogscout</commander>
+        <enemy>1</enemy>
+        <text>Mayor... forgive us. This one... they are very strong!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5451</id>
+    <name>Peacemaker</name>
+    <energy>9</energy>
+    <desc>All the frogs have fought their hardest, but none can defeat you. They lie panting upon the ground, waiting for you to decide their fate...</desc>
+    <commander id="289" />
+    <deck>
+      <card id="1014" name="Cherub" />
+      <card id="1610" name="Ranger" />
+      <card id="1618" name="Frog Scout" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="7051" name="Stinglash Rider" />
+      <card id="2048" name="Sandmite" />
+      <card id="5050" name="Cloud Spear" />
+      <card id="2011" name="Poliworg" />
+      <card id="6050" name="Wortwog" />
+      <card id="6054" mastery_level="2" name="Shadowcrafter" />
+      <card id="5099" mastery_level="3" name="Croak Dropper" />
+      <card id="5050" mastery_level="4" name="Cloud Spear" />
+      <card id="7020" mastery_level="5" name="Trapper Frog" />
+      <card id="6103" mastery_level="6" name="Ribbitaksu" />
+      <card id="2013" mastery_level="7" name="Stoneclad Toad" />
+    </deck>
+    <speech>
+      <line>
+        <commander>frogscout</commander>
+        <enemy>1</enemy>
+        <text>You are too strong... it is over.</text>
+      </line>
+      <line>
+        <commander>goldencrownmayor</commander>
+        <enemy>1</enemy>
+        <text>What is all this noise out here?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5452</id>
+    <name>Loyal Companions</name>
+    <energy>9</energy>
+    <desc>The frogs do their best to defend the frog woman who appeared from one of the houses. They seem particularly alarmed that she has shown herself to you.</desc>
+    <commander id="289" />
+    <deck>
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1015" name="Windfrog" />
+      <card id="1618" name="Frog Scout" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="7035" name="Carrion Tiger" />
+      <card id="1325" name="Chaos Storm" />
+      <card id="2034" name="Leap Frog Duo" />
+      <card id="6051" name="Treeblade Thief" />
+      <card id="6050" name="Wortwog" />
+      <card id="6005" mastery_level="2" name="Gloomkin" />
+      <card id="1328" mastery_level="3" name="Poison Bullfrog" />
+      <card id="1328" mastery_level="4" name="Poison Bullfrog" />
+      <card id="1028" mastery_level="5" name="Heroic Frog" />
+      <card id="7050" mastery_level="6" name="Krieg, Northern Sword" />
+      <card id="7049" mastery_level="7" name="Boundtoad" />
+    </deck>
+    <speech>
+      <line>
+        <commander>frogscout</commander>
+        <enemy>1</enemy>
+        <text>Mayor, no! Return inside. These people have come after you.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5453</id>
+    <name>The Golden Crown Hero</name>
+    <energy>9</energy>
+    <desc>The Golden Crown Mayor remembers how you saved her son. She knows that you and your group are heroes that have decided to fight against The Void. Telling the other frogs to stand down, the Golden Crown Mayor promises to listen to your purpose.</desc>
+    <commander id="249" />
+    <deck>
+      <card id="1015" name="Windfrog" />
+      <card id="1015" name="Windfrog" />
+      <card id="1618" name="Frog Scout" />
+      <card id="1618" name="Frog Scout" />
+      <card id="6096" name="Desert Slitherer" />
+      <card id="1625" name="Ferocious Clawkin" />
+      <card id="2069" name="Webfoot Surfer" />
+      <card id="5020" name="Frost Frog" />
+      <card id="6051" name="Treeblade Thief" />
+      <card id="5065" mastery_level="2" name="Hive Guard" />
+      <card id="1328" mastery_level="3" name="Poison Bullfrog" />
+      <card id="1328" mastery_level="4" name="Poison Bullfrog" />
+      <card id="2012" mastery_level="5" name="Frogling Swarm" />
+      <card id="7052" mastery_level="6" name="Toad the Ravenous" />
+      <card id="6018" mastery_level="7" name="Underwater Lasher" />
+    </deck>
+    <speech>
+      <line>
+        <commander>goldencrownmayor</commander>
+        <enemy>1</enemy>
+        <text>Nonsense. These people are great heroes of Golden Crown. Now what can I do to help?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5454</id>
+    <name>Recruiting the Healer</name>
+    <energy>9</energy>
+    <desc>You explain to the Golden Crown Mayor that you have heard about her amazing healing powers. It is said that she can cure even those who have been corrupted by The Void.</desc>
+    <commander id="276" />
+    <deck>
+      <card id="5022" name="Webfoot Raider" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1618" name="Frog Scout" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="7024" name="Woolmane Dragon" />
+      <card id="2001" name="Dunetooth Demon" />
+      <card id="7051" name="Stinglash Rider" />
+      <card id="6051" name="Treeblade Thief" />
+      <card id="6051" name="Treeblade Thief" />
+      <card id="5050" mastery_level="2" name="Cloud Spear" />
+      <card id="1328" mastery_level="3" name="Poison Bullfrog" />
+      <card id="2014" mastery_level="4" name="Tadpole Warmage" />
+      <card id="7005" mastery_level="5" name="Tsunamari" />
+      <card id="7054" mastery_level="6" name="The Thing Below" />
+      <card id="7042" mastery_level="7" name="Scurvy Hopper" />
+    </deck>
+    <speech>
+      <line>
+        <commander>goldencrownmayor</commander>
+        <enemy>1</enemy>
+        <text>We originally came here to help those afflicted by The Void's power. </text>
+      </line>
+      <line>
+        <commander>goldencrownmayor</commander>
+        <enemy>1</enemy>
+        <text>My duties will not allow me to join your adventure permanently. But I will do what I can, at least until we remove The Void's power from this area.</text>
+      </line>
+    </speech>
+  </mission>
 </root>

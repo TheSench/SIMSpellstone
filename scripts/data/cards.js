@@ -24052,6 +24052,7 @@ var CARDS = {
   "5010": {
     "id": "5010",
     "name": "Concealed Dragon",
+    "desc": "\"Concealed dragons create their own clouds in which to hide.\" - Researcher Notes",
     "picture": "Concealed_Dragon_A",
     "rarity": "3",
     "set": "3000",
@@ -24116,6 +24117,7 @@ var CARDS = {
   "15010": {
     "id": "15010",
     "name": "Lurking Dragon",
+    "desc": "\"If they can't see our sentries they can't defend against them!\" - Yuriel, Owl Mystic",
     "picture": "Concealed_Dragon_A",
     "rarity": "3",
     "set": "3000",
@@ -24169,6 +24171,7 @@ var CARDS = {
   "25010": {
     "id": "25010",
     "name": "Veiled Dragon",
+    "desc": "\"Wait. Where did they go?\" - Yuriel, Owl Mystic",
     "picture": "Concealed_Dragon_B",
     "rarity": "3",
     "set": "3000",
@@ -56409,6 +56412,7 @@ var CARDS = {
   "6050": {
     "id": "6050",
     "name": "Wortwog",
+    "desc": "\"Why are ya' cryin'? It'll grow back.\"",
     "picture": "Frog_Executioner_A",
     "rarity": "3",
     "set": "3000",
@@ -67649,6 +67653,7 @@ var CARDS = {
   "6100": {
     "id": "6100",
     "name": "Tiamat",
+    "desc": "\"Born of Chaos and Aether, Tiamat was overwhelmed by its Chaotic nature and eventually turned on those it was to protect.\" - Ballad of Vularias IX",
     "picture": "Demon_Dragon_A",
     "hidden_until": "1480093200000",
     "rarity": "4",
@@ -80484,6 +80489,7 @@ var CARDS = {
   "7051": {
     "id": "7051",
     "name": "Stinglash Rider",
+    "desc": "\"Whhyyyy!?!\" - The Scorpion",
     "picture": "Big_And_Little_A",
     "rarity": "3",
     "set": "3000",

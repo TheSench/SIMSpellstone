@@ -16,7 +16,9 @@ var healthHidden = {};
 var healthRanges = [];
 var delayHidden = {};
 var delayRanges = [];
+var delayExclusions = [];
 var skillFilters = [];
+var skillExclusions = [];
 var skillHidden = {};
 var skillFiltersAdv = [];
 var skillHiddenAdv = {};
@@ -27,6 +29,7 @@ var rarityHidden = {};
 var typeFilters = [];
 var typeHidden = {};
 var setFilters = [];
+var setExclusions = [];
 var setHidden = {};
 var fusionFilters = [];
 var fusionHidden = {};
@@ -122,6 +125,25 @@ var initDeckBuilder = function ()
     });
     
     inventory = _GET('inventory');
+
+    $("[name=rarity]").click(function (event) {
+        onClickFilter(event, filterRarity, event.altKey);
+    });
+    $("[name=faction]").click(function (event) {
+        onClickFilter(event, filterFaction, event.altKey);
+    });
+    $("[name=subfaction]").click(function (event) {
+        onClickFilter(event, filterSubfaction, event.altKey);
+    });
+    $("[name=delay]").click(function (event) {
+        onClickFilter(event, filterDelay, event.altKey);
+    });
+    $("[name=skill]").click(function (event) {
+        onClickFilter(event, filterSkill, event.altKey);
+    });
+    $("[name=set]").click(function (event) {
+        onClickFilter(event, filterSet, event.altKey);
+    });
 
     if (_DEFINED("spoilers")) {
         $("#loadingSplash").html("Checking for New Cards...");
@@ -1160,9 +1182,13 @@ var preventFocus = function (event)
     event.stopPropagation();
 }
 
-var filterAdvanced = function (skill)
-{
+var onClickFilter = function (event, filterFunction, altKey) {
+    var button = event.target;
+    var filter = button.getAttribute("data-filter");
+    filterFunction(button, filter, altKey);
+}
 
+var filterAdvanced = function (skill) {
     var info = {
         id: skill,
         x: undefined,
@@ -1214,8 +1240,21 @@ var filterAdvanced = function (skill)
         info.all = $("select#all")[0].value;
     }
 
-    $("input#" + skill)[0].classList.add("selected-advanced");
+    var classList = $("input[name=skill][data-filter=" + skill + "]")[0].classList;
+
+    classList.add("selected-advanced");
     skillFiltersAdv.push(info);
+
+    if (classList.contains("selected")) {
+        classList.remove("selected");
+        skillFilters.splice(skillFilters.indexOf(skill), 1);
+        checkBasicSkillFilters();
+    }
+    if (classList.contains("excluded")) {
+        classList.remove("excluded");
+        skillExclusions.splice(skillFilters.indexOf(skill), 1);
+        checkBasicSkillFilters();
+    }
 
     checkAdvancedFilters();
 }
@@ -1242,45 +1281,56 @@ var checkAdvancedFilters = function ()
     applyFilters();
 }
 
-var filterSkill = function (button, skill)
-{
-    skillHidden = {};
-    if (button.classList.contains("selected"))
-    {
+var filterSkill = function (button, skill, exclude) {
+    if (button.classList.contains("selected")) {
         button.classList.remove("selected");
         skillFilters.splice(skillFilters.indexOf(skill), 1);
-    } else if (button.classList.contains("selected-advanced"))
-    {
+    } else if (button.classList.contains("excluded")) {
+        button.classList.remove("excluded");
+        skillExclusions.splice(skillFilters.indexOf(skill), 1);
+    } else if (button.classList.contains("selected-advanced")) {
         button.classList.remove("selected-advanced");
-        for (var i = 0; i < skillFiltersAdv.length; i++)
-        {
-            if (skillFiltersAdv[i].id == skill)
-            {
+        for (var i = 0; i < skillFiltersAdv.length; i++) {
+            if (skillFiltersAdv[i].id == skill) {
                 skillFiltersAdv.splice(i, 1);
                 break;
             }
         }
         checkAdvancedFilters();
         return;
-    } else
-    {
+    } else if (exclude) {
+        button.classList.add("excluded");
+        skillExclusions.push(skill);
+    } else {
         button.classList.add("selected");
         skillFilters.push(skill);
     }
-    for (var i = 0; i < units.length; i++)
-    {
-        var unit = units[i];
-        for (var s = 0; s < skillFilters.length; s++)
-        {
-            if (!hasSkill(unit, skillFilters[s]))
-            {
-                skillHidden[makeUnitKey(unit)] = true;
-                break;
+
+    checkBasicSkillFilters();
+    
+    applyFilters();
+};
+
+function checkBasicSkillFilters() {
+    skillHidden = {};
+    if ((skillFilters.length + skillExclusions.length) > 0) {
+        for (var i = 0; i < units.length; i++) {
+            var unit = units[i];
+            for (var s = 0; s < skillFilters.length; s++) {
+                if (!hasSkill(unit, skillFilters[s])) {
+                    skillHidden[makeUnitKey(unit)] = true;
+                    break;
+                }
+            }
+            for (var s = 0; s < skillExclusions.length; s++) {
+                if (hasSkill(unit, skillExclusions[s])) {
+                    skillHidden[makeUnitKey(unit)] = true;
+                    break;
+                }
             }
         }
     }
-    applyFilters();
-};
+}
 
 var filterFaction = function (button, faction)
 {
@@ -1289,8 +1339,7 @@ var filterFaction = function (button, faction)
     {
         button.classList.remove("selected");
         button.checked = false;
-    } else
-    {
+    } else {
         button.classList.add("selected");
         for (var i = 0, len = units.length; i < len; i++)
         {
@@ -1456,7 +1505,7 @@ var filterHealth = function (button, min, max)
     applyFilters();
 }
 
-var filterDelay = function (button, delay)
+var filterDelay = function (button, delay, exclude)
 {
     delayHidden = {};
     if (button.classList.contains("selected"))
@@ -1471,10 +1520,37 @@ var filterDelay = function (button, delay)
                 break;
             }
         }
-    } else
-    {
-        button.classList.add("selected");
-        delayRanges.push(delay);
+    } else if (button.classList.contains("excluded")) {
+        button.classList.remove("excluded");
+        button.checked = false;
+        for (var i = 0; i < delayExclusions.length; i++) {
+            if (delayExclusions[i] == delay) {
+                delayExclusions.splice(i, 1);
+                break;
+            }
+        }
+    } else {
+        if (exclude) {
+            button.classList.add("excluded");
+            delayExclusions.push(delay);
+        } else {
+            button.classList.add("selected");
+            delayRanges.push(delay);
+        }
+    }
+    if (delayExclusions.length > 0) {
+        for (var i = 0, len = units.length; i < len; i++) {
+            var unit = units[i];
+            var hide = false;
+            for (var j = 0; j < delayExclusions.length; j++) {
+                var delay = delayExclusions[j];
+                if (isInRange(unit, "cost", delay, delay)) {
+                    hide = true;
+                    break;
+                }
+            }
+            if (hide) delayHidden[makeUnitKey(unit)] = true;
+        }
     }
     if (delayRanges.length > 0)
     {
@@ -1880,34 +1956,31 @@ var setCard = function (index, unit)
     $deck.find(".card").eq(index + 1).replaceWith(htmlCard);
 }
 
-var filterSet = function (button, set)
+var filterSet = function (button, set, exclude)
 {
     setHidden = {};
-    if (button.classList.contains("selected"))
-    {
+    if (button.classList.contains("selected")) {
         button.classList.remove("selected");
         button.checked = false;
-        for (var i = 0; i < setFilters.length; i++)
-        {
-            if (setFilters[i] == set)
-            {
-                setFilters.splice(i, 1);
-                break;
-            }
-        }
+        setFilters.splice(setFilters.indexOf(set), 1);
         if (set == "1000")
         {
-            for (var i = 0; i < setFilters.length; i++)
-            {
-                if (setFilters[i] == "7000")
-                {
-                    setFilters.splice(i, 1);
-                    break;
-                }
-            }
+            setFilters.splice(setFilters.indexOf("7000"), 1);
         }
-    } else
-    {
+    } else if (button.classList.contains("excluded")) {
+        button.classList.remove("excluded");
+        button.checked = false;
+        setExclusions.splice(setExclusions.indexOf(set), 1);
+        if (set == "1000") {
+            setExclusions.splice(setExclusions.indexOf("7000"), 1);
+        }
+    } else if (exclude) {
+        button.classList.add("excluded");
+        setExclusions.push(set);
+        if (set == "1000") {
+            setExclusions.push("7000");
+        }
+    } else {
         button.classList.add("selected");
         setFilters.push(set);
         if (set == "1000")
@@ -1915,22 +1988,33 @@ var filterSet = function (button, set)
             setFilters.push("7000");
         }
     }
-    if (setFilters.length > 0)
+
+    if ((setFilters.length + setExclusions.length) > 0)
     {
-        for (var i = 0, len = units.length; i < len; i++)
-        {
+        for (var i = 0, len = units.length; i < len; i++) {
             var unit = units[i];
-            var hide = true;
+
+            var show = (setFilters.length === 0);
             for (var j = 0; j < setFilters.length; j++)
             {
                 var set = setFilters[j];
                 if (isInRange(unit, "set", set, set))
                 {
-                    hide = false;
+                    show = true;
                     break;
                 }
             }
-            if (hide) setHidden[makeUnitKey(unit)] = true;
+            if(show) {
+                var hide = false;
+                for (var j = 0; j < setExclusions.length; j++) {
+                    var set = setExclusions[j];
+                    if (isInRange(unit, "set", set, set)) {
+                        hide = true;
+                        break;
+                    }
+                }
+            }
+            if (!show || hide) setHidden[makeUnitKey(unit)] = true;
         }
     }
     applyFilters();
@@ -2052,8 +2136,10 @@ var clearFilters = function ()
 
     delayHidden = {};
     delayRanges = [];
+    delayExclusions = [];
 
     skillFilters = [];
+    skillExclusions = [];
     skillHidden = {};
     skillFiltersAdv = [];
     skillHiddenAdv = {};
@@ -2068,6 +2154,7 @@ var clearFilters = function ()
     typeHidden = {};
 
     setFilters = [];
+    setExclusions = [];
     setHidden = {};
 
     fusionFilters = [];
@@ -2076,6 +2163,7 @@ var clearFilters = function ()
     nameHidden = {};
 
     $(".selected").removeClass("selected");
+    $(".excluded").removeClass("excluded");
     $(".selected-advanced").removeClass("selected-advanced");
     $("#nameFilter").val("");
 

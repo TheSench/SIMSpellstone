@@ -6064,6 +6064,7 @@
       <skill id="counter" x="2" />
       <skill id="nullify" x="1" />
     </upgrade>
+    <desc>"Why are ya' cryin'? It'll grow back."</desc>
   </unit>
   <unit>
     <id>16050</id>
@@ -12301,6 +12302,7 @@
       <level>6</level>
       <health>20</health>
     </upgrade>
+    <desc>"Born of Chaos and Aether, Tiamat was overwhelmed by its Chaotic nature and eventually turned on those it was to protect." - Ballad of Vularias IX</desc>
   </unit>
   <unit>
     <id>16100</id>
