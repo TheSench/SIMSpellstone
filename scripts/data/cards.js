@@ -44865,7 +44865,7 @@ var CARDS = {
   },
   "15100": {
     "id": "15100",
-    "name": "Bestower Auger",
+    "name": "Bestower Augur",
     "picture": "Frog_Wizard_A",
     "hidden_until": "1482426000000",
     "rarity": "4",
@@ -44947,7 +44947,7 @@ var CARDS = {
   },
   "25100": {
     "id": "25100",
-    "name": "Genesis Auger",
+    "name": "Genesis Augur",
     "picture": "Frog_Wizard_B",
     "hidden_until": "1482426000000",
     "rarity": "4",
@@ -68107,6 +68107,7 @@ var CARDS = {
   "6103": {
     "id": "6103",
     "name": "Ribbitaksu",
+    "desc": "\"Mushi no ken wo kurae!\"",
     "picture": "Ninja_Frog_A",
     "hidden_until": "1481821200000",
     "rarity": "4",
@@ -91804,6 +91805,288 @@ var CARDS = {
       },
     }
   },
+  "7101": {
+    "id": "7101",
+    "name": "Shriekers",
+    "picture": "NotFound",
+    "hidden_until": "1482771600000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["4","10"],
+    "attack": 4,
+    "health": 17,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 2,
+      },
+      {
+        "id": "enfeeble",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "pierce",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 18,
+        "skill": [],
+      },
+      "3": {
+        "attack": 5,
+        "health": 19,
+        "skill": [],
+      },
+      "4": {
+        "health": 20,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 2,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+        ],
+      },
+      "5": {
+        "health": 21,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 3,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+        ],
+      },
+      "6": {
+        "health": 22,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 3,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+        ],
+      },
+    }
+  },
+  "17101": {
+    "id": "17101",
+    "name": "Shrieker Bros",
+    "picture": "NotFound",
+    "hidden_until": "1482771600000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["4","10"],
+    "attack": 6,
+    "health": 23,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 3,
+      },
+      {
+        "id": "enfeeble",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "pierce",
+        "x": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 24,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 3,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "pierce",
+            "x": 6,
+          },
+        ],
+      },
+      "3": {
+        "attack": 7,
+        "health": 25,
+        "skill": [],
+      },
+      "4": {
+        "health": 26,
+        "skill": [],
+      },
+      "5": {
+        "health": 27,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 3,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "pierce",
+            "x": 7,
+          },
+        ],
+      },
+      "6": {
+        "health": 28,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 4,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "pierce",
+            "x": 7,
+          },
+        ],
+      },
+    }
+  },
+  "27101": {
+    "id": "27101",
+    "name": "Shrieker Rivals",
+    "picture": "NotFound",
+    "hidden_until": "1482771600000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["4","10"],
+    "attack": 7,
+    "health": 29,
+    "cost": 3,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 4,
+      },
+      {
+        "id": "enfeeble",
+        "x": 3,
+        "all": "1",
+      },
+      {
+        "id": "pierce",
+        "x": 7,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 8,
+        "health": 30,
+        "skill": [],
+      },
+      "3": {
+        "health": 31,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 4,
+          },
+          {
+            "id": "enfeeble",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "pierce",
+            "x": 8,
+          },
+        ],
+      },
+      "4": {
+        "attack": 9,
+        "health": 32,
+        "skill": [],
+      },
+      "5": {
+        "health": 33,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 5,
+          },
+          {
+            "id": "enfeeble",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "pierce",
+            "x": 8,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 5,
+          },
+          {
+            "id": "enfeeble",
+            "x": 4,
+            "all": "1",
+          },
+          {
+            "id": "pierce",
+            "x": 9,
+          },
+        ],
+      },
+    }
+  },
   "7102": {
     "id": "7102",
     "name": "Croaker's Disciple",
@@ -92068,6 +92351,186 @@ var CARDS = {
             "x": 3,
             "y": "4",
             "z": 4,
+          },
+        ],
+      },
+    }
+  },
+  "7103": {
+    "id": "7103",
+    "name": "Wavomancer",
+    "desc": "\"All the flexibility of the river, and all the rage of the sea.\" - Mermaid Mage",
+    "picture": "Water_Bender_Frog_A",
+    "hidden_until": "1482598800000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["4"],
+    "attack": 2,
+    "health": 8,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 9,
+        "skill": [],
+      },
+      "3": {
+        "health": 10,
+        "skill": [],
+      },
+      "4": {
+        "health": 11,
+        "skill": [],
+      },
+      "5": {
+        "attack": 3,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "17103": {
+    "id": "17103",
+    "name": "Floodomancer",
+    "desc": "\"Those who do not adapt, fall. Those who do not evolve, fail.\"",
+    "picture": "Water_Bender_Frog_A",
+    "hidden_until": "1482598800000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["4"],
+    "attack": 3,
+    "health": 12,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 13,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "health": 14,
+        "skill": [],
+      },
+      "5": {
+        "health": 15,
+        "skill": [],
+      },
+      "6": {
+        "health": 16,
+        "skill": [],
+      },
+    }
+  },
+  "27103": {
+    "id": "27103",
+    "name": "Hydromancer",
+    "picture": "Water_Bender_Frog_B",
+    "hidden_until": "1482598800000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["4"],
+    "attack": 3,
+    "health": 16,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "frost",
+        "x": 1,
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 4,
+        "skill": [],
+      },
+      "3": {
+        "health": 17,
+        "skill": [],
+      },
+      "4": {
+        "health": 18,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
           },
         ],
       },
@@ -124373,8 +124836,8 @@ var CARDS = {
   },
   "9992": {
     "id": "9992",
-    "name": "New Art",
-    "picture": "New7_A",
+    "name": "Unused Art",
+    "picture": "Oda_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -124387,8 +124850,8 @@ var CARDS = {
   },
   "19992": {
     "id": "19992",
-    "name": "New Art",
-    "picture": "New7_B",
+    "name": "Unused Art",
+    "picture": "Oda_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -124399,10 +124862,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9991": {
-    "id": "9991",
+  "29992": {
+    "id": "29992",
     "name": "Unused Art",
-    "picture": "Oda_A",
+    "picture": "Oda_C",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -124416,7 +124879,7 @@ var CARDS = {
   "19991": {
     "id": "19991",
     "name": "Unused Art",
-    "picture": "Oda_B",
+    "picture": "Promo_Dragon_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -124427,10 +124890,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29991": {
-    "id": "29991",
+  "9990": {
+    "id": "9990",
     "name": "Unused Art",
-    "picture": "Oda_C",
+    "picture": "Seraph_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -124444,7 +124907,7 @@ var CARDS = {
   "19990": {
     "id": "19990",
     "name": "Unused Art",
-    "picture": "Promo_Dragon_B",
+    "picture": "Seraph_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -124458,21 +124921,7 @@ var CARDS = {
   "9989": {
     "id": "9989",
     "name": "Unused Art",
-    "picture": "Seraph_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19989": {
-    "id": "19989",
-    "name": "Unused Art",
-    "picture": "Seraph_B",
+    "picture": "Tarian_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -124486,7 +124935,21 @@ var CARDS = {
   "9988": {
     "id": "9988",
     "name": "Unused Art",
-    "picture": "Tarian_A",
+    "picture": "Totem_Frogs_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19988": {
+    "id": "19988",
+    "name": "Unused Art",
+    "picture": "Totem_Frogs_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -124500,21 +124963,7 @@ var CARDS = {
   "9987": {
     "id": "9987",
     "name": "Unused Art",
-    "picture": "Totem_Frogs_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19987": {
-    "id": "19987",
-    "name": "Unused Art",
-    "picture": "Totem_Frogs_B",
+    "picture": "Tremor_Wurm_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -124528,7 +124977,7 @@ var CARDS = {
   "9986": {
     "id": "9986",
     "name": "Unused Art",
-    "picture": "Tremor_Wurm_A",
+    "picture": "Unused1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -124542,7 +124991,7 @@ var CARDS = {
   "9985": {
     "id": "9985",
     "name": "Unused Art",
-    "picture": "Unused1_A",
+    "picture": "Unused2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -124556,7 +125005,7 @@ var CARDS = {
   "9984": {
     "id": "9984",
     "name": "Unused Art",
-    "picture": "Unused2_A",
+    "picture": "Unused3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -124570,7 +125019,7 @@ var CARDS = {
   "9983": {
     "id": "9983",
     "name": "Unused Art",
-    "picture": "Unused3_A",
+    "picture": "Ursurio_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -124584,7 +125033,7 @@ var CARDS = {
   "9982": {
     "id": "9982",
     "name": "Unused Art",
-    "picture": "Ursurio_A",
+    "picture": "Void_Abomination_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -124597,20 +125046,6 @@ var CARDS = {
   },
   "9981": {
     "id": "9981",
-    "name": "Unused Art",
-    "picture": "Void_Abomination_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9980": {
-    "id": "9980",
     "name": "Unused Art",
     "picture": "Yuriel_A",
     "rarity": "0",

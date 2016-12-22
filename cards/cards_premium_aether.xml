@@ -12377,7 +12377,7 @@
     <id>15100</id>
     <card_type>2</card_type>
     <fusion_level>1</fusion_level>
-    <name>Bestower Auger</name>
+    <name>Bestower Augur</name>
     <picture>Frog_Wizard_A</picture>
     <asset_bundle>79</asset_bundle>
     <hidden_until_time>1482426000</hidden_until_time>
@@ -12422,7 +12422,7 @@
     <id>25100</id>
     <card_type>2</card_type>
     <fusion_level>2</fusion_level>
-    <name>Genesis Auger</name>
+    <name>Genesis Augur</name>
     <picture>Frog_Wizard_B</picture>
     <asset_bundle>79</asset_bundle>
     <hidden_until_time>1482426000</hidden_until_time>

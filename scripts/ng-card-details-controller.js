@@ -49,7 +49,7 @@
         }
 
         var image;
-        $scope.imageSrc = "res/cardImagesLarge/NotFound.jpg"
+        $scope.imageSrc = "res/cardImagesLarge/NotFound.jpg";
         $scope.$watch('card.id', function (newValue, oldValue)
         {
             if (newValue)
@@ -62,7 +62,10 @@
                 image = new Image();
                 image.onerror = function ()
                 {
-                    this.onerror = null;
+                    this.onerror = function () {
+                        this.onerror = null;
+                        this.src = "res/cardImagesLarge/NotFound.jpg";
+                    };
                     this.src = this.src.replace('ImagesLarge', 'Images');
                 };
                 image.onload = function ()

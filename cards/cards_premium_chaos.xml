@@ -12555,6 +12555,7 @@
       <level>6</level>
       <health>13</health>
     </upgrade>
+    <desc>"Mushi no ken wo kurae!"</desc>
   </unit>
   <unit>
     <id>16103</id>

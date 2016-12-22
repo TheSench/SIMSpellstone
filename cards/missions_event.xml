@@ -13863,4 +13863,406 @@
       </line>
     </speech>
   </mission>
+  <!-- Campaign Event weeks 3-4 -->
+  <mission>
+    <id>5455</id>
+    <name>The Boy and His Dragon</name>
+    <energy>9</energy>
+    <desc>With the Golden Crown Mayor now helping you, you follow the bay's shoreline. In the distance, you spot two figures that have washed up on the beach...</desc>
+    <commander id="299" />
+    <deck>
+      <card id="7017" name="Coral Elemental" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="7022" name="Beetle Tamer" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1625" name="Ferocious Clawkin" />
+      <card id="5073" name="Shell Invader" />
+      <card id="2014" name="Tadpole Warmage" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="2020" name="Tidetaken Fighter" />
+      <card id="2069" mastery_level="2" name="Webfoot Surfer" />
+      <card id="2060" mastery_level="3" name="Patchwork Experiment" />
+      <card id="5053" mastery_level="4" name="Anura Witch" />
+      <card id="7066" mastery_level="5" name="Aquine" />
+      <card id="7054" mastery_level="6" name="The Thing Below" />
+      <card id="7052" mastery_level="7" name="Toad the Ravenous" />
+    </deck>
+    <speech>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>Ugh... h-hey buddy, you okay?</text>
+      </line>
+      <line>
+        <commander>Sailing_Drake</commander>
+        <enemy>0</enemy>
+        <text>Awoo...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5456</id>
+    <name>Incoming Storm</name>
+    <energy>9</energy>
+    <desc>You recognize the human figure from your time in Karthos. It seems he's finally managed to tame a dragon. A strange figure rises from the water's waves, stalking towards the two. You hurry to get closer...</desc>
+    <commander id="301" />
+    <deck>
+      <card id="7006" name="Treant Sapling" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="7007" name="Water Serpent" />
+      <card id="7007" name="Water Serpent" />
+      <card id="2049" name="Contrapede" />
+      <card id="5073" name="Shell Invader" />
+      <card id="2031" name="Dryad" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="5011" mastery_level="2" name="Sky Whale" />
+      <card id="5035" mastery_level="3" name="Vapor Guard" />
+      <card id="5053" mastery_level="4" name="Anura Witch" />
+      <card id="7005" mastery_level="5" name="Tsunamari" />
+      <card id="7014" mastery_level="6" name="Genbu" />
+      <card id="7097" mastery_level="7" name="Caustic Toadbog" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5457</id>
+    <name>Seafolk Raider</name>
+    <energy>9</energy>
+    <desc>It's one of the Seafolk raiders! You run with all your might towards the two on the beach. Decim shivers and hugs the drake, protecting it with his body, as the waves begin to swell.</desc>
+    <commander id="352" />
+    <deck>
+      <card id="6022" name="Illusion Caster" />
+      <card id="7022" name="Beetle Tamer" />
+      <card id="7007" name="Water Serpent" />
+      <card id="7007" name="Water Serpent" />
+      <card id="2048" name="Sandmite" />
+      <card id="5073" name="Shell Invader" />
+      <card id="5069" name="Heralidae" />
+      <card id="2067" name="Symbol of Elaria" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="6031" mastery_level="2" name="Iceblood Assassin" />
+      <card id="2070" mastery_level="3" name="Redclaw Tamer" />
+      <card id="5053" mastery_level="4" name="Anura Witch" />
+      <card id="5073" mastery_level="5" name="Shell Invader" />
+      <card id="7054" mastery_level="6" name="The Thing Below" />
+      <card id="7042" mastery_level="7" name="Scurvy Hopper" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5458</id>
+    <name>The Guardian</name>
+    <energy>9</energy>
+    <desc>Despite your best efforts, it's impossible to reach Decim and his friend before the enemy. As the raider launches an attack, a new armored figure appears to protect the two!</desc>
+    <commander id="352" />
+    <deck>
+      <card id="5007" name="Arcane Scroll" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="7007" name="Water Serpent" />
+      <card id="7007" name="Water Serpent" />
+      <card id="2048" name="Sandmite" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="2067" name="Symbol of Elaria" />
+      <card id="7038" name="Sol King" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="5011" mastery_level="2" name="Sky Whale" />
+      <card id="5028" mastery_level="3" name="Winter Blacksmith" />
+      <card id="7066" mastery_level="4" name="Aquine" />
+      <card id="7066" mastery_level="5" name="Aquine" />
+      <card id="7014" mastery_level="6" name="Genbu" />
+      <card id="2013" mastery_level="7" name="Stoneclad Toad" />
+    </deck>
+    <speech>
+      <line>
+        <commander>kraken_portrait</commander>
+        <enemy>1</enemy>
+        <text>Wooosh!</text>
+      </line>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>Aaaaah!</text>
+      </line>
+      <line>
+        <commander>lanternguardian</commander>
+        <enemy>0</enemy>
+        <text> -raises lantern, deflecting the attack directed at Decim-</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5459</id>
+    <name>Tension</name>
+    <energy>9</energy>
+    <desc>You arrive, a little late, but still in time to check Decim and his friend. They look like they've taken quite the beating, but at least they're still alive.</desc>
+    <commander id="238" />
+    <deck>
+      <card id="1319" name="Wraith" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="7007" name="Water Serpent" />
+      <card id="7007" name="Water Serpent" />
+      <card id="2031" name="Dryad" />
+      <card id="7004" name="Ice Golem" />
+      <card id="7047" name="Shaman of the Wild" />
+      <card id="7073" name="Heralded Slugger" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="5044" mastery_level="2" name="Telepathic Magi" />
+      <card id="5020" mastery_level="3" name="Frost Frog" />
+      <card id="7066" mastery_level="4" name="Aquine" />
+      <card id="7066" mastery_level="5" name="Aquine" />
+      <card id="7014" mastery_level="6" name="Genbu" />
+      <card id="7049" mastery_level="7" name="Boundtoad" />
+    </deck>
+    <speech>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>Whoa, thanks. That was close.</text>
+      </line>
+      <line>
+        <commander>lanternguardian</commander>
+        <enemy>1</enemy>
+        <text>...</text>
+      </line>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>W... What? Why you staring, huh? What - keep that sword down!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5460</id>
+    <name>Former Ally</name>
+    <energy>9</energy>
+    <desc>The lantern guardian attacks! You intervene to protect Decim and the drake. The former ally has changed to foe quite quickly...</desc>
+    <commander id="238" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1616" name="Werewarg" />
+      <card id="7007" name="Water Serpent" />
+      <card id="7007" name="Water Serpent" />
+      <card id="2031" name="Dryad" />
+      <card id="5073" name="Shell Invader" />
+      <card id="7047" name="Shaman of the Wild" />
+      <card id="7061" name="Thickskin Dragon" />
+      <card id="7029" name="Owl Griffin" />
+      <card id="7066" mastery_level="2" name="Aquine" />
+      <card id="5011" mastery_level="3" name="Sky Whale" />
+      <card id="7066" mastery_level="4" name="Aquine" />
+      <card id="7005" mastery_level="5" name="Tsunamari" />
+      <card id="5066" mastery_level="6" name="Scarab Beast" />
+      <card id="7018" mastery_level="7" name="Frog Emperor" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5461</id>
+    <name>Dubious Intentions</name>
+    <energy>9</energy>
+    <desc>Decim is in no shape to fight. You must face this mysterious foe in his place, and keep everyone safe from the silent attacker. But what could he want?</desc>
+    <commander id="238" />
+    <deck>
+      <card id="1011" name="Archive Keeper" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="7007" name="Water Serpent" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="2045" name="Chillbeard Giant" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="7061" name="Thickskin Dragon" />
+      <card id="7024" name="Woolmane Dragon" />
+      <card id="7066" mastery_level="2" name="Aquine" />
+      <card id="5030" mastery_level="3" name="Loxphas Mage" />
+      <card id="7005" mastery_level="4" name="Tsunamari" />
+      <card id="1030" mastery_level="5" name="Paladin" />
+      <card id="2022" mastery_level="6" name="Avalanche Equine" />
+      <card id="5064" mastery_level="7" name="Anshar" />
+    </deck>
+    <speech>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>Ohh man. If you weren't here to help me, this guy woulda got me for sure.</text>
+      </line>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>Hey guy, what's the deal? You helped me out earlier just to laugh at me now?!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5462</id>
+    <name>The End of an Alliance</name>
+    <energy>9</energy>
+    <desc>You attempt to talk with the savior-turned-destroyer. Yet all he does is utter a single word...</desc>
+    <commander id="351" />
+    <deck>
+      <card id="1017" name="Judgment" />
+      <card id="1015" name="Windfrog" />
+      <card id="1015" name="Windfrog" />
+      <card id="7007" name="Water Serpent" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="2045" name="Chillbeard Giant" />
+      <card id="2005" name="Sailing Drake" />
+      <card id="7061" name="Thickskin Dragon" />
+      <card id="7070" name="Laughing Menace" />
+      <card id="7066" mastery_level="2" name="Aquine" />
+      <card id="5024" mastery_level="3" name="Cloudtop Dragon" />
+      <card id="7005" mastery_level="4" name="Tsunamari" />
+      <card id="5025" mastery_level="5" name="Steelskin Dragon" />
+      <card id="7008" mastery_level="6" name="Rock Dragon" />
+      <card id="5061" mastery_level="7" name="Thunderfist Rex" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lanternguardian</commander>
+        <enemy>1</enemy>
+        <text>Behind...</text>
+      </line>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>Behind... What?</text>
+      </line>
+      <line>
+        <commander>Sailing_Drake</commander>
+        <enemy>1</enemy>
+        <text>Grrr....</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5463</id>
+    <name>Heartbreak</name>
+    <energy>9</energy>
+    <desc>The drake that was with Decim has become completely feral. Foam runs from its mouth, claws scratching against Decim and anyone else it can reach.</desc>
+    <commander id="351" />
+    <deck>
+      <card id="1312" name="Scythe Demon" />
+      <card id="1015" name="Windfrog" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="7007" name="Water Serpent" />
+      <card id="2046" name="Leaping Dragon" />
+      <card id="7004" name="Ice Golem" />
+      <card id="2005" name="Sailing Drake" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="7062" name="Brine Bellower" />
+      <card id="5020" mastery_level="2" name="Frost Frog" />
+      <card id="5044" mastery_level="3" name="Telepathic Magi" />
+      <card id="7005" mastery_level="4" name="Tsunamari" />
+      <card id="7095" mastery_level="5" name="Talonsaur" />
+      <card id="7002" mastery_level="6" name="Cerberus" />
+      <card id="5018" mastery_level="7" name="Grand Knight Frog" />
+    </deck>
+    <speech>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>0</enemy>
+        <text>Buddy... please stop!</text>
+      </line>
+      <line>
+        <commander>Sailing_Drake</commander>
+        <enemy>1</enemy>
+        <text>Grrr....</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5464</id>
+    <name>Potential Solution</name>
+    <energy>9</energy>
+    <desc>At long last the wind drake has been subdued. It lies panting on the ground, foam still trickling from its mouth. Despite Decim's grievous injuries, he rises to his feet, prepared to help his friend no matter the cost...</desc>
+    <commander id="16" />
+    <deck>
+      <card id="1312" name="Scythe Demon" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="2032" name="Brimstone" />
+      <card id="2044" name="Quillhide Dragon" />
+      <card id="6063" name="Firetail Dragon" />
+      <card id="6102" name="Ribbithold Guards" />
+      <card id="6020" mastery_level="2" name="Croak Piercer" />
+      <card id="2044" mastery_level="3" name="Quillhide Dragon" />
+      <card id="2066" mastery_level="4" name="Basalt Dragon" />
+      <card id="2044" mastery_level="5" name="Quillhide Dragon" />
+      <card id="6095" mastery_level="6" name="Gearplate Dragon" />
+      <card id="6095" mastery_level="7" name="Gearplate Dragon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lanternguardian</commander>
+        <enemy>1</enemy>
+        <text>There is only one solution to those infected by The Void.</text>
+      </line>
+      <line>
+        <commander>flamebender</commander>
+        <enemy>1</enemy>
+        <text>No! I won't let you!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5465</id>
+    <name>True Peace</name>
+    <energy>9</energy>
+    <desc>You manage to convince Decim to stand down before he hurts himself further. Behind you, the Golden Crown Mayor pushes her way forward. She lays her healing hands upon the wind drake...</desc>
+    <commander id="340" />
+    <deck>
+      <card id="1610" name="Ranger" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="5017" name="Steam Tempest" />
+      <card id="2005" name="Sailing Drake" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="7066" name="Aquine" />
+      <card id="2057" name="Twister" />
+      <card id="6020" mastery_level="2" name="Croak Piercer" />
+      <card id="2070" mastery_level="3" name="Redclaw Tamer" />
+      <card id="2002" mastery_level="4" name="Lantern Guardian" />
+      <card id="5096" mastery_level="5" name="Enclave Dragon" />
+      <card id="6082" mastery_level="6" name="Rugarth, Fallen Bones" />
+      <card id="7054" mastery_level="7" name="The Thing Below" />
+    </deck>
+    <speech>
+      <line>
+        <commander>goldencrownmayor</commander>
+        <enemy>0</enemy>
+        <text>Now now, no need for such violence. Let me heal the dragon, and I'll make it right as rain.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5466</id>
+    <name>Recruiting the Guardian</name>
+    <energy>9</energy>
+    <desc>The drake is healed beneath the Mayor's touch. Decim also calms upon seeing his friend's health return. The Lantern Guardian approaches you...</desc>
+    <commander id="238" />
+    <deck>
+      <card id="6022" name="Illusion Caster" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="2031" name="Dryad" />
+      <card id="7038" name="Sol King" />
+      <card id="7066" name="Aquine" />
+      <card id="2067" name="Symbol of Elaria" />
+      <card id="5028" mastery_level="2" name="Winter Blacksmith" />
+      <card id="2040" mastery_level="3" name="Owlmancer" />
+      <card id="2002" mastery_level="4" name="Lantern Guardian" />
+      <card id="7084" mastery_level="5" name="Witchwood" />
+      <card id="5070" mastery_level="6" name="Hornslicer" />
+      <card id="8036" mastery_level="7" name="Crystal Blockade" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lanternguardian</commander>
+        <enemy>0</enemy>
+        <text>Truly amazing... never seen arcane arts that heal even Void-infected. Allow me to join your cause.</text>
+      </line>
+    </speech>
+  </mission>
 </root>

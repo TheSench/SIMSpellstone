@@ -6168,16 +6168,6 @@
     <arena_x>250</arena_x>
     <arena_y>150</arena_y>
   </location>
-  <location>
-    <id>112</id>
-    <name>Duskwillow</name>
-    <mapBG>Map_Duskwillow</mapBG>
-    <asset_bundle>81</asset_bundle>
-    <combatBG>CombatBGVoid</combatBG>
-    <req>-1</req>
-    <arena_x>250</arena_x>
-    <arena_y>150</arena_y>
-  </location>
   <!-- Previous ab for center of the void : <asset_bundle>44</asset_bundle> -->
   <!-- Event Portals BEGIN -->
   <!-- <portal>
