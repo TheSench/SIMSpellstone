@@ -662,7 +662,7 @@ public partial class unit
 		{
 			if (this.portraitField != null)
 			{
-				return "portrait_" + this.portraitField.ToLower().Replace("portrait_", "");
+				return "portrait_" + this.portraitField.ToLower().Replace("portrait_", "").Replace("_stanta", "");
 			}
 			else
 			{

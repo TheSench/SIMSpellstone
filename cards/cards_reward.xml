@@ -7805,8 +7805,8 @@
     <card_type>2</card_type>
     <name>Sproutfrog Rainwisher</name>
     <picture>Rainbringer_A</picture>
-    <asset_bundle>1481821200</asset_bundle>
-    <hidden_until_time>79</hidden_until_time>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1481821200</hidden_until_time>
     <attack>4</attack>
     <health>10</health>
     <cost>2</cost>
@@ -7853,8 +7853,8 @@
     <fusion_level>1</fusion_level>
     <name>Sproutfrog Rainbringer</name>
     <picture>Rainbringer_A</picture>
-    <asset_bundle>1481821200</asset_bundle>
-    <hidden_until_time>79</hidden_until_time>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1481821200</hidden_until_time>
     <attack>4</attack>
     <health>16</health>
     <cost>2</cost>
@@ -7901,8 +7901,8 @@
     <fusion_level>2</fusion_level>
     <name>Sproutfrog Stormchaser</name>
     <picture>Rainbringer_B</picture>
-    <asset_bundle>1481821200</asset_bundle>
-    <hidden_until_time>79</hidden_until_time>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1481821200</hidden_until_time>
     <attack>5</attack>
     <health>21</health>
     <cost>2</cost>
@@ -7942,5 +7942,114 @@
       <skill id="heal" x="4" all="1" y="4" />
       <skill id="strike" x="6" />
     </upgrade>
+  </unit>
+  <unit>
+    <id>2075</id>
+    <card_type>2</card_type>
+    <name>Arcane Snowman</name>
+    <picture>Arcane_Dust_Snowman_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1482512400</hidden_until_time>
+    <salvage_bonus>15</salvage_bonus>
+    <attack>0</attack>
+    <health>8</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="legion" y="7" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="legion" y="7" x="2" />
+    </upgrade>
+    <desc>He shows snow mercy.</desc>
+  </unit>
+  <unit>
+    <id>12075</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Arcane Snowmonster</name>
+    <picture>Arcane_Dust_Snowman_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1482512400</hidden_until_time>
+    <salvage_bonus>30</salvage_bonus>
+    <attack>0</attack>
+    <health>12</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="legion" y="7" x="2" />
+    <skill id="jam" c="6" />
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="legion" y="7" x="2" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="legion" y="7" x="3" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <desc>He gives snow ground.</desc>
+  </unit>
+  <unit>
+    <id>22075</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Arcane Snowmenace</name>
+    <picture>Arcane_Dust_Snowman_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1482512400</hidden_until_time>
+    <salvage_bonus>60</salvage_bonus>
+    <attack>0</attack>
+    <health>14</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="legion" y="7" x="3" />
+    <skill id="jam" c="4" />
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="legion" y="7" x="4" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="legion" y="7" x="5" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <desc>"He knows a lot about snow." - Jon Nothing</desc>
   </unit>
 </root>

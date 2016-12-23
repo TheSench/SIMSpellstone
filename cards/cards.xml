@@ -11769,6 +11769,115 @@
       <skill id="strike" x="6" />
     </upgrade>
   </unit>
+  <unit>
+    <id>2075</id>
+    <card_type>2</card_type>
+    <name>Arcane Snowman</name>
+    <picture>Arcane_Dust_Snowman_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1482512400</hidden_until_time>
+    <salvage_bonus>15</salvage_bonus>
+    <attack>0</attack>
+    <health>8</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="legion" y="7" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="legion" y="7" x="2" />
+    </upgrade>
+    <desc>He shows snow mercy.</desc>
+  </unit>
+  <unit>
+    <id>12075</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Arcane Snowmonster</name>
+    <picture>Arcane_Dust_Snowman_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1482512400</hidden_until_time>
+    <salvage_bonus>30</salvage_bonus>
+    <attack>0</attack>
+    <health>12</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="legion" y="7" x="2" />
+    <skill id="jam" c="6" />
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="legion" y="7" x="2" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="legion" y="7" x="3" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <desc>He gives snow ground.</desc>
+  </unit>
+  <unit>
+    <id>22075</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Arcane Snowmenace</name>
+    <picture>Arcane_Dust_Snowman_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1482512400</hidden_until_time>
+    <salvage_bonus>60</salvage_bonus>
+    <attack>0</attack>
+    <health>14</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="legion" y="7" x="3" />
+    <skill id="jam" c="4" />
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="legion" y="7" x="4" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="legion" y="7" x="5" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <desc>He's making a list, but he forgot to check it so he's killing everyone.</desc>
+  </unit>
   <!-- END SET 2000 - Reward -->
   <!-- START SET 3000 - Premium -->
   <!-- 5000 - 7999 -->
@@ -24216,6 +24325,134 @@
       <skill id="protect" x="6" y="4" />
       <skill id="strike" x="7" />
       <skill id="weaken" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5101</id>
+    <card_type>2</card_type>
+    <name>Sycophant</name>
+    <picture>Frog_Casanova_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1514566800</hidden_until_time>
+    <attack>3</attack>
+    <health>8</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="1" />
+    <skill id="protect" x="2" y="4" />
+    <skill id="legion" x="1" y="4" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="1" />
+      <skill id="protect" x="3" y="4" />
+      <skill id="legion" x="1" y="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>11</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15101</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Alluring Sycophant</name>
+    <picture>Frog_Casanova_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1514566800</hidden_until_time>
+    <attack>5</attack>
+    <health>11</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="1" />
+    <skill id="protect" x="3" y="4" />
+    <skill id="legion" x="1" y="4" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="2" />
+      <skill id="protect" x="3" y="4" />
+      <skill id="legion" x="1" y="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="2" />
+      <skill id="protect" x="4" y="4" />
+      <skill id="legion" x="1" y="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>13</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25101</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Adored Sycophant</name>
+    <picture>Frog_Casanova_B</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1514566800</hidden_until_time>
+    <attack>6</attack>
+    <health>14</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="2" />
+    <skill id="protect" x="4" y="4" />
+    <skill id="legion" x="1" y="4" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="3" />
+      <skill id="protect" x="4" y="4" />
+      <skill id="legion" x="1" y="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="3" />
+      <skill id="protect" x="5" y="4" />
+      <skill id="legion" x="1" y="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="3" />
+      <skill id="protect" x="5" y="4" />
+      <skill id="legion" x="2" y="4" />
     </upgrade>
   </unit>
   <unit>
@@ -36739,6 +36976,155 @@
     </upgrade>
   </unit>
   <unit>
+    <id>6101</id>
+    <card_type>2</card_type>
+    <name>Chasm Dowager</name>
+    <picture>Sewer_Frog_Monster_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1514566800</hidden_until_time>
+    <attack>7</attack>
+    <health>32</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="4" />
+    <skill id="nullify" x="2" />
+    <skill id="leech" x="5" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>33</health>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>34</health>
+      <skill id="corrosive" x="5" />
+      <skill id="nullify" x="2" />
+      <skill id="leech" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>35</health>
+      <skill id="corrosive" x="5" />
+      <skill id="nullify" x="2" />
+      <skill id="leech" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>36</health>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>37</health>
+      <skill id="corrosive" x="5" />
+      <skill id="nullify" x="3" />
+      <skill id="leech" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16101</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Subterrestrial Dowager</name>
+    <picture>Sewer_Frog_Monster_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1514566800</hidden_until_time>
+    <attack>9</attack>
+    <health>38</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="6" />
+    <skill id="nullify" x="3" />
+    <skill id="leech" x="6" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>39</health>
+      <skill id="corrosive" x="6" />
+      <skill id="nullify" x="3" />
+      <skill id="leech" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>40</health>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>41</health>
+      <skill id="corrosive" x="7" />
+      <skill id="nullify" x="3" />
+      <skill id="leech" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>42</health>
+      <attack>11</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>43</health>
+      <skill id="corrosive" x="7" />
+      <skill id="nullify" x="4" />
+      <skill id="leech" x="8" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26101</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Subterranean Dowager</name>
+    <picture>Sewer_Frog_Monster_B</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1514566800</hidden_until_time>
+    <attack>11</attack>
+    <health>44</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="8" />
+    <skill id="nullify" x="4" />
+    <skill id="leech" x="8" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>45</health>
+      <skill id="corrosive" x="8" />
+      <skill id="nullify" x="4" />
+      <skill id="leech" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>46</health>
+      <attack>12</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>47</health>
+      <attack>13</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>48</health>
+      <skill id="corrosive" x="8" />
+      <skill id="nullify" x="4" />
+      <skill id="leech" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>49</health>
+      <skill id="corrosive" x="9" />
+      <skill id="nullify" x="5" />
+      <skill id="leech" x="10" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>6102</id>
     <card_type>2</card_type>
     <name>Ribbithold Guards</name>
@@ -49232,6 +49618,136 @@
     </upgrade>
   </unit>
   <unit>
+    <id>7099</id>
+    <card_type>2</card_type>
+    <name>Toadplay</name>
+    <picture>Totem_Frogs_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1514566800</hidden_until_time>
+    <attack>3</attack>
+    <health>16</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="valor" x="4" />
+    <skill id="heal" x="5" y="4" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+      <skill id="valor" x="5" />
+      <skill id="heal" x="5" y="4" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>19</health>
+      <skill id="valor" x="5" />
+      <skill id="heal" x="6" y="4" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>4</attack>
+      <health>20</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17099</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Roughswamping</name>
+    <picture>Totem_Frogs_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1514566800</hidden_until_time>
+    <attack>4</attack>
+    <health>20</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="valor" x="6" />
+    <skill id="heal" x="6" y="4" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>21</health>
+      <skill id="valor" x="6" />
+      <skill id="heal" x="7" y="4" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>22</health>
+      <skill id="valor" x="6" />
+      <skill id="heal" x="7" y="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>23</health>
+      <skill id="valor" x="7" />
+      <skill id="heal" x="7" y="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>5</attack>
+      <health>24</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27099</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Toadal Hijinks</name>
+    <picture>Totem_Frogs_B</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1514566800</hidden_until_time>
+    <attack>5</attack>
+    <health>24</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="valor" x="7" />
+    <skill id="heal" x="8" y="4" />
+    <skill id="berserk" x="2" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+      <skill id="valor" x="8" />
+      <skill id="heal" x="8" y="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>26</health>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>27</health>
+      <skill id="valor" x="9" />
+      <skill id="heal" x="8" y="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="valor" x="9" />
+      <skill id="heal" x="9" y="4" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>7101</id>
     <card_type>2</card_type>
     <name>Shriekers</name>
@@ -58257,7 +58773,7 @@
     <id>1</id>
     <card_type>1</card_type>
     <name>Oda the Guardian</name>
-    <portrait>templeguardian</portrait>
+    <portrait>Temple_Guardian_santa</portrait>
     <desc>Oda was born in a far away land, shipwrecked, and raised on a remote island temple. He's ventured in search of spellstones as a pilgrimage for his order and honor.</desc>
     <attack>0</attack>
     <health>8</health>
@@ -58284,7 +58800,7 @@
     <id>2</id>
     <card_type>1</card_type>
     <name>Yuriel the Owl Mystic</name>
-    <portrait>owlmystic</portrait>
+    <portrait>Owl_Mystic_santa</portrait>
     <desc>The Grand Library of the Aether has been curated by the Owl Mystics for hundreds of years. Their knowledge is accumulated in Yuriel through their ancestral bloodline.</desc>
     <attack>0</attack>
     <health>15</health>
@@ -58318,7 +58834,7 @@
     <id>3</id>
     <card_type>1</card_type>
     <name>Samael</name>
-    <portrait>seraph</portrait>
+    <portrait>Seraph_santa</portrait>
     <desc>Samael is the powerful and stoic leader of the Aether faction of magic. Don't ask him about the difference between bird wings and angel wings.</desc>
     <attack>0</attack>
     <health>22</health>
@@ -58361,7 +58877,7 @@
     <id>4</id>
     <card_type>1</card_type>
     <name>Aria the Necromancer</name>
-    <portrait>necromancer</portrait>
+    <portrait>Necromancer_01_santa</portrait>
     <desc>Aria is a powerful necromancer who aligns herself with Chaos magic. She likes long walks by moonlight and 'making' new friends.</desc>
     <attack>0</attack>
     <health>8</health>
@@ -58388,7 +58904,7 @@
     <id>5</id>
     <card_type>1</card_type>
     <name>Decim the Firebringer</name>
-    <portrait>flamebender</portrait>
+    <portrait>epic_chaos3_santa</portrait>
     <desc>Decim has always had an affinity for fire magic, even before being exiled from his village after it mysteriously burned down. An accident with a stolen spellstone imbued him with powerful abilities while also taking most of his sanity.</desc>
     <attack>0</attack>
     <health>16</health>
@@ -58425,7 +58941,7 @@
     <id>6</id>
     <card_type>1</card_type>
     <name>Tarian the Lich Lord</name>
-    <portrait>lichking</portrait>
+    <portrait>Lich_King_santa</portrait>
     <desc>Wrapped in the cold winds of death, Tarian sits upon his throne as the center of the Chaos. Well respected, and well feared. He's a skeleton afterall.</desc>
     <attack>0</attack>
     <health>22</health>
@@ -58468,7 +58984,7 @@
     <id>7</id>
     <card_type>1</card_type>
     <name>Elyse the Ranger</name>
-    <portrait>elyse</portrait>
+    <portrait>Elyse_santa</portrait>
     <desc>Elyse lived a simple life on the edge of civilization until adulthood, giving her a burning spirit for adventure and the tools to track it.</desc>
     <attack>0</attack>
     <health>8</health>
@@ -58494,7 +59010,7 @@
     <id>8</id>
     <card_type>1</card_type>
     <name>Commander Ursurio</name>
-    <portrait>bearcommander</portrait>
+    <portrait>Bear_Commander_santa</portrait>
     <desc>Ursurio is a respected representative of the Wyld despite his often aloof attitude and outlook. And hunger cravings.</desc>
     <attack>0</attack>
     <health>22</health>
@@ -58530,7 +59046,7 @@
     <id>9</id>
     <card_type>1</card_type>
     <name>Groc the Hammer</name>
-    <portrait>groc</portrait>
+    <portrait>Legendary_Wyld_santa</portrait>
     <desc>An ancient being of living stone, Groc wanders the wilderness in search of wisdom. You don't want to be between him and a hard place.</desc>
     <attack>0</attack>
     <health>25</health>
@@ -58572,7 +59088,7 @@
     <id>10</id>
     <card_type>1</card_type>
     <name>Rayne the Wavecrasher</name>
-    <portrait>elementalhero</portrait>
+    <portrait>Aether_Elemental_Hero_santa</portrait>
     <desc>A master of water and wind magic, Rayne is the prime guardian of water life on Arcantica. She really knows how to rain on a parade.</desc>
     <attack>0</attack>
     <health>21</health>
@@ -58615,7 +59131,7 @@
     <id>11</id>
     <card_type>1</card_type>
     <name>Orgoth the Hex Fist</name>
-    <portrait>orchero</portrait>
+    <portrait>Portrait_Chaos_Orc_Hero_santa</portrait>
     <desc>A respected leader of the Salt Waste tribes, Orgoth gained strange magical powers once buried deep in the Wastes. If he tries to give you a handshake you should probably decline.</desc>
     <attack>0</attack>
     <health>23</health>
@@ -58661,7 +59177,7 @@
     <id>12</id>
     <card_type>1</card_type>
     <name>Ol' Cedric</name>
-    <portrait>froghero</portrait>
+    <portrait>Wyld_Frog_Hero_santa</portrait>
     <desc>Cedric is the former First Sword of the Emperor, High Commander of Dawnglow. Since retirement he spends much of his time training younger generations, advising the emperor, and catching flies for recreation.</desc>
     <attack>0</attack>
     <health>20</health>
@@ -58706,7 +59222,7 @@
     <id>13</id>
     <card_type>1</card_type>
     <name>Oda the Aegis</name>
-    <portrait>odaupgrade</portrait>
+    <portrait>Oda_Upgrade_santa</portrait>
     <desc>Oda has taken his place as the Keeper of Seastone Temple's artifact, transcending his abilities. Unfortunately the upgrades don't come with a new outfit.</desc>
     <attack>0</attack>
     <health>31</health>
@@ -58752,7 +59268,7 @@
     <id>14</id>
     <card_type>1</card_type>
     <name>Yuriel the Manashifter</name>
-    <portrait>yurielupgrade</portrait>
+    <portrait>Portrait_Yuriel_Upgrade_santa</portrait>
     <desc>The true potential of the ancestral bloodline of Owl Mystics has been realized in Yuriel. After years of study, he has stumbled upon the secrets of Manashifting. He's also collected a lot of late fines.</desc>
     <attack>0</attack>
     <health>45</health>
@@ -58790,7 +59306,7 @@
     <id>15</id>
     <card_type>1</card_type>
     <name>Aria the Nightwielder</name>
-    <portrait>ariaupgrade</portrait>
+    <portrait>Aria_Upgrade_santa</portrait>
     <desc>Aria's close call with The Void pushed her to the brink of her abilities. She learned new powers, and intends to use them to make new friends.</desc>
     <attack>0</attack>
     <health>30</health>
@@ -58832,7 +59348,7 @@
     <id>16</id>
     <card_type>1</card_type>
     <name>Decim the Pyrokinetic</name>
-    <portrait>decimupgrade</portrait>
+    <portrait>Portrait_Decim_Upgrade_santa</portrait>
     <desc>Decim's training and close contact with dragons has taught him new heights to his abilities. Which shouldn't be a surprise as he's always enjoyed finding new ways to burn things.</desc>
     <attack>0</attack>
     <health>42</health>
@@ -58870,7 +59386,7 @@
     <id>17</id>
     <card_type>1</card_type>
     <name>Elyse the Truestriker</name>
-    <portrait>elyseupgrade</portrait>
+    <portrait>Portrait_Elyse_Upgrade_santa</portrait>
     <desc>Elyse has embraced the magic of the Wyld, becoming one with the world around her. She even sometimes leaves her books at home.</desc>
     <attack>0</attack>
     <health>29</health>
@@ -58916,7 +59432,7 @@
     <id>18</id>
     <card_type>1</card_type>
     <name>General Ursurio</name>
-    <portrait>ursurioupgrade</portrait>
+    <portrait>Ursurio_Upgrade_santa</portrait>
     <desc>After countless years of dedicated laziness and a sloth-like attitude, Ursurio has gotten the promotion he barely wanted. If only it came with free sides.</desc>
     <attack>0</attack>
     <health>45</health>
@@ -65381,7 +65897,7 @@
       <health>70</health>
       <skill id="imbue" x="5" all="1" s="armored" c="3" />
       <skill id="protect" x="3" />
-      <skill id="protect" x="3" all="3" />
+      <skill id="protect" x="3" all="1" />
     </upgrade>
   </unit>
   <!-- END HEROES -->
