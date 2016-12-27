@@ -11794,11 +11794,11 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="legion" y="7" x="1" />
+      <skill id="legion" y="5" x="1" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="legion" y="7" x="2" />
+      <skill id="legion" y="5" x="2" />
     </upgrade>
     <desc>He shows snow mercy.</desc>
   </unit>
@@ -11815,7 +11815,7 @@
     <health>12</health>
     <cost>1</cost>
     <rarity>3</rarity>
-    <skill id="legion" y="7" x="2" />
+    <skill id="legion" y="5" x="2" />
     <skill id="jam" c="6" />
     <type>1</type>
     <sub_type>5</sub_type>
@@ -11826,7 +11826,7 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="legion" y="7" x="2" />
+      <skill id="legion" y="5" x="2" />
       <skill id="jam" c="5" />
     </upgrade>
     <upgrade>
@@ -11835,7 +11835,7 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="legion" y="7" x="3" />
+      <skill id="legion" y="5" x="3" />
       <skill id="jam" c="5" />
     </upgrade>
     <desc>He gives snow ground.</desc>
@@ -11853,7 +11853,7 @@
     <health>14</health>
     <cost>1</cost>
     <rarity>3</rarity>
-    <skill id="legion" y="7" x="3" />
+    <skill id="legion" y="5" x="3" />
     <skill id="jam" c="4" />
     <type>1</type>
     <sub_type>5</sub_type>
@@ -11864,7 +11864,7 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="legion" y="7" x="4" />
+      <skill id="legion" y="5" x="4" />
       <skill id="jam" c="4" />
     </upgrade>
     <upgrade>
@@ -11873,10 +11873,10 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="legion" y="7" x="5" />
+      <skill id="legion" y="5" x="5" />
       <skill id="jam" c="4" />
     </upgrade>
-    <desc>He's making a list, but he forgot to check it so he's killing everyone.</desc>
+    <desc>"He knows a lot about snow." - Jon Nothing</desc>
   </unit>
   <!-- END SET 2000 - Reward -->
   <!-- START SET 3000 - Premium -->

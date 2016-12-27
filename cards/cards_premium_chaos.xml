@@ -12395,6 +12395,155 @@
     </upgrade>
   </unit>
   <unit>
+    <id>6101</id>
+    <card_type>2</card_type>
+    <name>Chasm Dowager</name>
+    <picture>Sewer_Frog_Monster_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1514566800</hidden_until_time>
+    <attack>7</attack>
+    <health>32</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="4" />
+    <skill id="nullify" x="2" />
+    <skill id="leech" x="5" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>33</health>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>34</health>
+      <skill id="corrosive" x="5" />
+      <skill id="nullify" x="2" />
+      <skill id="leech" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>35</health>
+      <skill id="corrosive" x="5" />
+      <skill id="nullify" x="2" />
+      <skill id="leech" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>36</health>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>37</health>
+      <skill id="corrosive" x="5" />
+      <skill id="nullify" x="3" />
+      <skill id="leech" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16101</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Subterrestrial Dowager</name>
+    <picture>Sewer_Frog_Monster_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1514566800</hidden_until_time>
+    <attack>9</attack>
+    <health>38</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="6" />
+    <skill id="nullify" x="3" />
+    <skill id="leech" x="6" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>39</health>
+      <skill id="corrosive" x="6" />
+      <skill id="nullify" x="3" />
+      <skill id="leech" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>40</health>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>41</health>
+      <skill id="corrosive" x="7" />
+      <skill id="nullify" x="3" />
+      <skill id="leech" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>42</health>
+      <attack>11</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>43</health>
+      <skill id="corrosive" x="7" />
+      <skill id="nullify" x="4" />
+      <skill id="leech" x="8" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26101</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Subterranean Dowager</name>
+    <picture>Sewer_Frog_Monster_B</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1514566800</hidden_until_time>
+    <attack>11</attack>
+    <health>44</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="8" />
+    <skill id="nullify" x="4" />
+    <skill id="leech" x="8" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>45</health>
+      <skill id="corrosive" x="8" />
+      <skill id="nullify" x="4" />
+      <skill id="leech" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>46</health>
+      <attack>12</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>47</health>
+      <attack>13</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>48</health>
+      <skill id="corrosive" x="8" />
+      <skill id="nullify" x="4" />
+      <skill id="leech" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>49</health>
+      <skill id="corrosive" x="9" />
+      <skill id="nullify" x="5" />
+      <skill id="leech" x="10" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>6102</id>
     <card_type>2</card_type>
     <name>Ribbithold Guards</name>

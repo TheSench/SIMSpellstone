@@ -12265,6 +12265,136 @@
     </upgrade>
   </unit>
   <unit>
+    <id>7099</id>
+    <card_type>2</card_type>
+    <name>Toadplay</name>
+    <picture>Totem_Frogs_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1514566800</hidden_until_time>
+    <attack>3</attack>
+    <health>16</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="valor" x="4" />
+    <skill id="heal" x="5" y="4" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+      <skill id="valor" x="5" />
+      <skill id="heal" x="5" y="4" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>19</health>
+      <skill id="valor" x="5" />
+      <skill id="heal" x="6" y="4" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>4</attack>
+      <health>20</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17099</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Roughswamping</name>
+    <picture>Totem_Frogs_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1514566800</hidden_until_time>
+    <attack>4</attack>
+    <health>20</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="valor" x="6" />
+    <skill id="heal" x="6" y="4" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>21</health>
+      <skill id="valor" x="6" />
+      <skill id="heal" x="7" y="4" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>22</health>
+      <skill id="valor" x="6" />
+      <skill id="heal" x="7" y="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>23</health>
+      <skill id="valor" x="7" />
+      <skill id="heal" x="7" y="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>5</attack>
+      <health>24</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27099</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Toadal Hijinks</name>
+    <picture>Totem_Frogs_B</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1514566800</hidden_until_time>
+    <attack>5</attack>
+    <health>24</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="valor" x="7" />
+    <skill id="heal" x="8" y="4" />
+    <skill id="berserk" x="2" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+      <skill id="valor" x="8" />
+      <skill id="heal" x="8" y="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>26</health>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>27</health>
+      <skill id="valor" x="9" />
+      <skill id="heal" x="8" y="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="valor" x="9" />
+      <skill id="heal" x="9" y="4" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>7101</id>
     <card_type>2</card_type>
     <name>Shriekers</name>

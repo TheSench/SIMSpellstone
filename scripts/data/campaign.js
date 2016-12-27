@@ -52,8 +52,8 @@ var LOCATIONS = {
     "name": "Goblin Rise Stronghold",
   },
   "112": {
-    "id": "112",
-    "name": "Duskwillow",
+      "id": "112",
+      "name": "Duskwillow",
   },
   "2": {
     "id": "2",

@@ -21864,8 +21864,8 @@ var CARDS = {
           {
             "id": "legion",
             "x": 1,
-            "y": "7",
-            "z": 7,
+            "y": "5",
+            "z": 5,
           },
         ],
       },
@@ -21874,8 +21874,8 @@ var CARDS = {
           {
             "id": "legion",
             "x": 2,
-            "y": "7",
-            "z": 7,
+            "y": "5",
+            "z": 5,
           },
         ],
       },
@@ -21899,8 +21899,8 @@ var CARDS = {
       {
         "id": "legion",
         "x": 2,
-        "y": "7",
-        "z": 7,
+        "y": "5",
+        "z": 5,
       },
       {
         "id": "jam",
@@ -21917,8 +21917,8 @@ var CARDS = {
           {
             "id": "legion",
             "x": 2,
-            "y": "7",
-            "z": 7,
+            "y": "5",
+            "z": 5,
           },
           {
             "id": "jam",
@@ -21935,8 +21935,8 @@ var CARDS = {
           {
             "id": "legion",
             "x": 3,
-            "y": "7",
-            "z": 7,
+            "y": "5",
+            "z": 5,
           },
           {
             "id": "jam",
@@ -21949,7 +21949,7 @@ var CARDS = {
   "22075": {
     "id": "22075",
     "name": "Arcane Snowmenace",
-    "desc": "He's making a list, but he forgot to check it so he's killing everyone.",
+    "desc": "\"He knows a lot about snow.\" - Jon Nothing",
     "picture": "NotFound",
     "hidden_until": "1482512400000",
     "rarity": "3",
@@ -21964,8 +21964,8 @@ var CARDS = {
       {
         "id": "legion",
         "x": 3,
-        "y": "7",
-        "z": 7,
+        "y": "5",
+        "z": 5,
       },
       {
         "id": "jam",
@@ -21982,8 +21982,8 @@ var CARDS = {
           {
             "id": "legion",
             "x": 4,
-            "y": "7",
-            "z": 7,
+            "y": "5",
+            "z": 5,
           },
           {
             "id": "jam",
@@ -22000,8 +22000,8 @@ var CARDS = {
           {
             "id": "legion",
             "x": 5,
-            "y": "7",
-            "z": 7,
+            "y": "5",
+            "z": 5,
           },
           {
             "id": "jam",
@@ -92781,7 +92781,7 @@ var CARDS = {
   "7101": {
     "id": "7101",
     "name": "Shriekers",
-    "picture": "NotFound",
+    "picture": "Frog_Avian_Sonic_Attackers_A",
     "hidden_until": "1482771600000",
     "rarity": "4",
     "set": "4000",
@@ -92875,7 +92875,7 @@ var CARDS = {
   "17101": {
     "id": "17101",
     "name": "Shrieker Bros",
-    "picture": "NotFound",
+    "picture": "Frog_Avian_Sonic_Attackers_A",
     "hidden_until": "1482771600000",
     "rarity": "4",
     "set": "4000",
@@ -92969,7 +92969,7 @@ var CARDS = {
   "27101": {
     "id": "27101",
     "name": "Shrieker Rivals",
-    "picture": "NotFound",
+    "picture": "Frog_Avian_Sonic_Attackers_B",
     "hidden_until": "1482771600000",
     "rarity": "4",
     "set": "4000",
@@ -125753,8 +125753,8 @@ var CARDS = {
   },
   "9994": {
     "id": "9994",
-    "name": "Unused Art",
-    "picture": "Oda_A",
+    "name": "New Art",
+    "picture": "New1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -125767,8 +125767,8 @@ var CARDS = {
   },
   "19994": {
     "id": "19994",
-    "name": "Unused Art",
-    "picture": "Oda_B",
+    "name": "New Art",
+    "picture": "New1_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -125779,10 +125779,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29994": {
-    "id": "29994",
-    "name": "Unused Art",
-    "picture": "Oda_C",
+  "9993": {
+    "id": "9993",
+    "name": "New Art",
+    "picture": "New2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -125795,8 +125795,8 @@ var CARDS = {
   },
   "19993": {
     "id": "19993",
-    "name": "Unused Art",
-    "picture": "Promo_Dragon_B",
+    "name": "New Art",
+    "picture": "New2_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -125809,8 +125809,8 @@ var CARDS = {
   },
   "9992": {
     "id": "9992",
-    "name": "Unused Art",
-    "picture": "Seraph_A",
+    "name": "New Art",
+    "picture": "New3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -125823,8 +125823,8 @@ var CARDS = {
   },
   "19992": {
     "id": "19992",
-    "name": "Unused Art",
-    "picture": "Seraph_B",
+    "name": "New Art",
+    "picture": "New3_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -125837,8 +125837,22 @@ var CARDS = {
   },
   "9991": {
     "id": "9991",
-    "name": "Unused Art",
-    "picture": "Tarian_A",
+    "name": "New Art",
+    "picture": "New4_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19991": {
+    "id": "19991",
+    "name": "New Art",
+    "picture": "New4_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -125852,7 +125866,7 @@ var CARDS = {
   "9990": {
     "id": "9990",
     "name": "Unused Art",
-    "picture": "Tremor_Wurm_A",
+    "picture": "Oda_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -125863,10 +125877,38 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9989": {
-    "id": "9989",
+  "19990": {
+    "id": "19990",
     "name": "Unused Art",
-    "picture": "Unused1_A",
+    "picture": "Oda_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "29990": {
+    "id": "29990",
+    "name": "Unused Art",
+    "picture": "Oda_C",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19989": {
+    "id": "19989",
+    "name": "Unused Art",
+    "picture": "Promo_Dragon_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -125880,7 +125922,21 @@ var CARDS = {
   "9988": {
     "id": "9988",
     "name": "Unused Art",
-    "picture": "Unused2_A",
+    "picture": "Seraph_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19988": {
+    "id": "19988",
+    "name": "Unused Art",
+    "picture": "Seraph_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -125894,7 +125950,7 @@ var CARDS = {
   "9987": {
     "id": "9987",
     "name": "Unused Art",
-    "picture": "Unused3_A",
+    "picture": "Tarian_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -125908,7 +125964,7 @@ var CARDS = {
   "9986": {
     "id": "9986",
     "name": "Unused Art",
-    "picture": "Ursurio_A",
+    "picture": "Tremor_Wurm_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -125922,7 +125978,7 @@ var CARDS = {
   "9985": {
     "id": "9985",
     "name": "Unused Art",
-    "picture": "Void_Abomination_A",
+    "picture": "Unused1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -125935,6 +125991,62 @@ var CARDS = {
   },
   "9984": {
     "id": "9984",
+    "name": "Unused Art",
+    "picture": "Unused2_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9983": {
+    "id": "9983",
+    "name": "Unused Art",
+    "picture": "Unused3_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9982": {
+    "id": "9982",
+    "name": "Unused Art",
+    "picture": "Ursurio_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9981": {
+    "id": "9981",
+    "name": "Unused Art",
+    "picture": "Void_Abomination_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "attack": -1,
+    "health": -1,
+    "cost": -1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9980": {
+    "id": "9980",
     "name": "Unused Art",
     "picture": "Yuriel_A",
     "rarity": "0",

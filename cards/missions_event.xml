@@ -12673,7 +12673,7 @@
     <id>5418</id>
     <name>Frog Civil War</name>
     <energy>9</energy>
-    <desc>When they reach the settlement, they can see immediate strife. Oddly-colored frogs assault other the residents. The assailants don't have the same look as the native Golden Crown frogs...</desc>
+    <desc>When they reach the settlement, they can see immediate strife. Oddly-colored frogs assault the other residents. The assailants don't have the same look as the native Golden Crown frogs...</desc>
     <commander id="290" />
     <deck>
       <card id="1618" name="Frog Scout" />
