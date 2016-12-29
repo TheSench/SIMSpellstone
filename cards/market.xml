@@ -1173,10 +1173,10 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="4" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="4" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -2733,5 +2733,24 @@
     <hc_cost>500</hc_cost>
     <!-- Stuff to give -->
     <pack>3040</pack>
+  </store_item>
+  <store_item>
+    <id>5053</id>
+    <name>Legendary Frogstone Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Includes one Legendary Frog card and three additional Epic or higher Frog cards from Premium set! May be purchased three times!</desc>
+    <asset_prefab>frog_crystal_legendary</asset_prefab>
+    <bundle>51</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>240</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3015</pack>
+    <sp>180</sp>
+    <gold>1000</gold>
+    <item id="1003" quantity="2" />
   </store_item>
 </root>
