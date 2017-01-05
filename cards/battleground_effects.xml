@@ -1,8 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!--
-		[DO NOT USE ID=1 through 100!]
-		Use IDs 101+
+		1-100		DO NOT USE, OFF LIMITS!!
+		101-500		World Event BGE
+		501-1000	Specialty BGE
+		1001-2000	Personal BGE
+		2001-3000	Enemy Scaling BGE
+		3001+		Map Expansion BGE
+		
 	-->
   <!--
 		displayEffect example setup 
@@ -205,6 +210,15 @@
           <shake>true</shake>
         </target_effect>
       </skill>
+    </effect>
+  </battleground>
+  <battleground>
+    <id>113</id>
+    <name>Seafolk BGE</name>
+    <desc>barrier.</desc>
+    <icon>filter_seafolk_64</icon>
+    <effect>
+      <skill id="protect" mult=".2" on_delay_mult=".2" base="health" all="1" y="12" />
     </effect>
   </battleground>
   <!-- 501-1000: Specialty BGE -->
@@ -497,22 +511,9 @@
       <skill id="protect" mult=".20" all="1" y="4" />
     </effect>
   </battleground>
-  <battleground>
-    <id>516</id>
-    <name>Enemy Scaling BGE</name>
-    <desc>In Arena Battles, the player who goes first has one additional Delay added to the first card they play in a battle.</desc>
-    <icon>filter_insect_64.png</icon>
-    <scale_with_level>1</scale_with_level>
-    <!-- Boolean -->
-    <starting_level>1</starting_level>
-    <!-- Starting Mission Level -->
-    <effect>
-      <scale_attributes p=".1" />
-    </effect>
-  </battleground>
   <!-- 1001+: Personal BGE -->
   <battleground>
-    <id>10001</id>
+    <id>1001</id>
     <name>Primal Mending</name>
     <desc>Your creatures get healed for 2 every turn in battle.</desc>
     <icon>healTotem_BGE_64</icon>
@@ -522,12 +523,52 @@
     </effect>
   </battleground>
   <battleground>
-    <id>10002</id>
+    <id>1002</id>
     <name>Personal Frog Buff</name>
     <desc>All ally Frogs gain the Protection of the Watcher, reducing damage taken by 2.</desc>
     <web_picture>filter_frog_64.png</web_picture>
     <effect>
       <skill id="protect" x="2" all="1" y="4" />
+    </effect>
+  </battleground>
+  <!-- 2001+: Enemy Scaling BGE -->
+  <battleground>
+    <id>2001</id>
+    <name>Enemy Scaling BGE</name>
+    <desc>In Arena Battles, the player who goes first has one additional Delay added to the first card they play in a battle.</desc>
+    <icon>filter_insect_64.png</icon>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>0</starting_level>
+    <!-- Starting Mastery Level -->
+    <effect>
+      <scale_attributes base_mult=".2" mult=".1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>2002</id>
+    <name>Enemy Scaling BGE</name>
+    <desc>In Arena Battles, the player who goes first has one additional Delay added to the first card they play in a battle.</desc>
+    <icon>filter_insect_64.png</icon>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>0</starting_level>
+    <!-- Starting Mastery Level -->
+    <effect>
+      <scale_attributes base_mult=".4" mult=".1" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>2003</id>
+    <name>Enemy Scaling BGE</name>
+    <desc>In Arena Battles, the player who goes first has one additional Delay added to the first card they play in a battle.</desc>
+    <icon>filter_insect_64.png</icon>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>0</starting_level>
+    <!-- Starting Mastery Level -->
+    <effect>
+      <scale_attributes base_mult=".6" mult=".1" />
     </effect>
   </battleground>
 </root>

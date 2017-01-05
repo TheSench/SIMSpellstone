@@ -21837,7 +21837,7 @@ var CARDS = {
   },
   "2075": {
     "id": "2075",
-    "name": "Arcane 207",
+    "name": "Arcane Snowman",
     "desc": "He shows snow mercy.",
     "picture": "Arcane_Dust_Snowman_A",
     "hidden_until": "1482512400000",
@@ -45476,6 +45476,208 @@ var CARDS = {
       },
     }
   },
+  "5102": {
+    "id": "5102",
+    "name": "Tribe Tracker",
+    "picture": "Double_Bola_Frog_A",
+    "hidden_until": "1483635600000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["4"],
+    "attack": 4,
+    "health": 13,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "weaken",
+        "x": 2,
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+      },
+      {
+        "id": "flurry",
+        "c": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "weaken",
+            "x": 2,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 5,
+          },
+        ],
+      },
+      "3": {
+        "health": 14,
+        "skill": [],
+      },
+      "4": {
+        "attack": 5,
+        "health": 15,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 5,
+          },
+        ],
+      },
+    }
+  },
+  "15102": {
+    "id": "15102",
+    "name": "Tribe Sleuth",
+    "picture": "Double_Bola_Frog_A",
+    "hidden_until": "1483635600000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["4"],
+    "attack": 5,
+    "health": 15,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "weaken",
+        "x": 3,
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+      },
+      {
+        "id": "flurry",
+        "c": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 16,
+        "skill": [
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "3": {
+        "health": 17,
+        "skill": [],
+      },
+      "4": {
+        "health": 18,
+        "skill": [],
+      },
+      "5": {
+        "attack": 6,
+        "skill": [
+          {
+            "id": "weaken",
+            "x": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+    }
+  },
+  "25102": {
+    "id": "25102",
+    "name": "Tribe Upriser",
+    "picture": "Double_Bola_Frog_B",
+    "hidden_until": "1483635600000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["4"],
+    "attack": 6,
+    "health": 18,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "weaken",
+        "x": 4,
+      },
+      {
+        "id": "weaken",
+        "x": 2,
+      },
+      {
+        "id": "flurry",
+        "c": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 19,
+        "skill": [],
+      },
+      "3": {
+        "attack": 7,
+        "health": 20,
+        "skill": [],
+      },
+      "4": {
+        "health": 21,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "weaken",
+            "x": 5,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+    }
+  },
   "5103": {
     "id": "5103",
     "name": "Mother of Solars",
@@ -69017,6 +69219,470 @@ var CARDS = {
           {
             "id": "flurry",
             "c": 3,
+          },
+        ],
+      },
+    }
+  },
+  "6104": {
+    "id": "6104",
+    "name": "Night Lurker",
+    "picture": "Shadow_Frog_A",
+    "hidden_until": "1483635600000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["4","5"],
+    "attack": 3,
+    "health": 8,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "pierce",
+        "x": 2,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 9,
+        "skill": [],
+      },
+      "3": {
+        "health": 10,
+        "skill": [],
+      },
+      "4": {
+        "attack": 4,
+        "skill": [],
+      },
+      "5": {
+        "health": 11,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "16104": {
+    "id": "16104",
+    "name": "Shadow Lurker",
+    "picture": "Shadow_Frog_A",
+    "hidden_until": "1483635600000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["4","5"],
+    "attack": 4,
+    "health": 12,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "pierce",
+        "x": 3,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "3": {
+        "attack": 5,
+        "health": 13,
+        "skill": [],
+      },
+      "4": {
+        "health": 14,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "26104": {
+    "id": "26104",
+    "name": "Gloom Lurker",
+    "picture": "Shadow_Frog_B",
+    "hidden_until": "1483635600000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["4","5"],
+    "attack": 5,
+    "health": 15,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "pierce",
+        "x": 4,
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 6,
+        "health": 16,
+        "skill": [],
+      },
+      "3": {
+        "health": 17,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "6105": {
+    "id": "6105",
+    "name": "Wasteland Crusher",
+    "desc": "\"You don't want to bug the frogs in the wastes. Trust me. They take their rocks very seriously.\" - Ol' Cedric",
+    "picture": "Four_Armed_Frog_A",
+    "hidden_until": "1483376400000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["4"],
+    "attack": 6,
+    "health": 16,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "4",
+        "z": 4,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 17,
+        "skill": [],
+      },
+      "3": {
+        "health": 18,
+        "skill": [],
+      },
+      "4": {
+        "health": 19,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "nullify",
+            "x": 1,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "16105": {
+    "id": "16105",
+    "name": "Wasteland Smasher",
+    "picture": "Four_Armed_Frog_A",
+    "hidden_until": "1483376400000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["4"],
+    "attack": 7,
+    "health": 19,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 3,
+        "y": "4",
+        "z": 4,
+      },
+      {
+        "id": "nullify",
+        "x": 1,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 20,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "nullify",
+            "x": 1,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "health": 21,
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 4,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "nullify",
+            "x": 1,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 4,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "nullify",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "health": 22,
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 4,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "nullify",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "26105": {
+    "id": "26105",
+    "name": "Wasteland Pulverizer",
+    "picture": "Four_Armed_Frog_B",
+    "hidden_until": "1483376400000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["4"],
+    "attack": 7,
+    "health": 23,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 4,
+        "y": "4",
+        "z": 4,
+      },
+      {
+        "id": "nullify",
+        "x": 2,
+      },
+      {
+        "id": "berserk",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 24,
+        "skill": [],
+      },
+      "3": {
+        "attack": 8,
+        "skill": [],
+      },
+      "4": {
+        "health": 25,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 5,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "nullify",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 5,
+            "y": "4",
+            "z": 4,
+          },
+          {
+            "id": "nullify",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 4,
           },
         ],
       },
@@ -92778,6 +93444,228 @@ var CARDS = {
       },
     }
   },
+  "7100": {
+    "id": "7100",
+    "name": "Snow Caller",
+    "picture": "Ice_Caster_Frog_A",
+    "hidden_until": "1483635600000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["4"],
+    "attack": 5,
+    "health": 8,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 1,
+      },
+      {
+        "id": "heal",
+        "x": 2,
+      },
+      {
+        "id": "jam",
+        "c": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 9,
+        "skill": [],
+      },
+      "3": {
+        "health": 10,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 1,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+        ],
+      },
+      "5": {
+        "attack": 6,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 2,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+        ],
+      },
+    }
+  },
+  "17100": {
+    "id": "17100",
+    "name": "Blizzard Caller",
+    "picture": "Ice_Caster_Frog_A",
+    "hidden_until": "1483635600000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["4"],
+    "attack": 6,
+    "health": 11,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 2,
+      },
+      {
+        "id": "heal",
+        "x": 3,
+      },
+      {
+        "id": "jam",
+        "c": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 2,
+          },
+          {
+            "id": "heal",
+            "x": 4,
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+        ],
+      },
+      "3": {
+        "health": 12,
+        "skill": [],
+      },
+      "4": {
+        "attack": 7,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 3,
+          },
+          {
+            "id": "heal",
+            "x": 4,
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+        ],
+      },
+      "6": {
+        "health": 13,
+        "skill": [],
+      },
+    }
+  },
+  "27100": {
+    "id": "27100",
+    "name": "Tempest Caller",
+    "picture": "Ice_Caster_Frog_B",
+    "hidden_until": "1483635600000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["4"],
+    "attack": 7,
+    "health": 13,
+    "cost": 1,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 3,
+      },
+      {
+        "id": "heal",
+        "x": 5,
+      },
+      {
+        "id": "jam",
+        "c": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "attack": 8,
+        "skill": [],
+      },
+      "4": {
+        "health": 15,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 4,
+          },
+          {
+            "id": "heal",
+            "x": 5,
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 4,
+          },
+          {
+            "id": "heal",
+            "x": 6,
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+        ],
+      },
+    }
+  },
   "7101": {
     "id": "7101",
     "name": "Shriekers",
@@ -93336,7 +94224,7 @@ var CARDS = {
     "picture": "Water_Bender_Frog_A",
     "hidden_until": "1482598800000",
     "rarity": "4",
-    "set": "3000",
+    "set": "4000",
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
@@ -93387,7 +94275,7 @@ var CARDS = {
     "picture": "Water_Bender_Frog_A",
     "hidden_until": "1482598800000",
     "rarity": "4",
-    "set": "3000",
+    "set": "4000",
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
@@ -93441,7 +94329,7 @@ var CARDS = {
     "picture": "Water_Bender_Frog_B",
     "hidden_until": "1482598800000",
     "rarity": "4",
-    "set": "3000",
+    "set": "4000",
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
@@ -93504,6 +94392,291 @@ var CARDS = {
           {
             "id": "berserk",
             "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "7104": {
+    "id": "7104",
+    "name": "Croaker of the Deep",
+    "picture": "NotFound",
+    "hidden_until": "1483981200000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["4","12"],
+    "attack": 1,
+    "health": 16,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 3,
+        "y": "12",
+        "z": 12,
+      },
+      {
+        "id": "leech",
+        "x": 4,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 17,
+        "skill": [],
+      },
+      "3": {
+        "health": 18,
+        "skill": [],
+      },
+      "4": {
+        "health": 19,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "12",
+            "z": 12,
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "12",
+            "z": 12,
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "12",
+            "z": 12,
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "17104": {
+    "id": "17104",
+    "name": "Salient of the Deep",
+    "picture": "NotFound",
+    "hidden_until": "1483981200000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["4","12"],
+    "attack": 1,
+    "health": 20,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 4,
+        "y": "12",
+        "z": 12,
+      },
+      {
+        "id": "leech",
+        "x": 6,
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 21,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 5,
+            "y": "12",
+            "z": 12,
+          },
+          {
+            "id": "leech",
+            "x": 6,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "health": 22,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 5,
+            "y": "12",
+            "z": 12,
+          },
+          {
+            "id": "leech",
+            "x": 7,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "health": 23,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 5,
+            "y": "12",
+            "z": 12,
+          },
+          {
+            "id": "leech",
+            "x": 7,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "27104": {
+    "id": "27104",
+    "name": "Ribbitor of the Deep",
+    "picture": "NotFound",
+    "hidden_until": "1483981200000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["4","12"],
+    "attack": 1,
+    "health": 24,
+    "cost": 2,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 6,
+        "y": "12",
+        "z": 12,
+      },
+      {
+        "id": "leech",
+        "x": 7,
+      },
+      {
+        "id": "berserk",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 25,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 6,
+            "y": "12",
+            "z": 12,
+          },
+          {
+            "id": "leech",
+            "x": 8,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 26,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 7,
+            "y": "12",
+            "z": 12,
+          },
+          {
+            "id": "leech",
+            "x": 8,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "health": 27,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 7,
+            "y": "12",
+            "z": 12,
+          },
+          {
+            "id": "leech",
+            "x": 9,
+          },
+          {
+            "id": "berserk",
+            "x": 4,
           },
         ],
       },
@@ -102426,6 +103599,209 @@ var CARDS = {
       },
     }
   },
+  "8044": {
+    "id": "8044",
+    "name": "Aegis of the Sea",
+    "picture": "Twilight_Mirror_Warrior_B",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "8",
+    "sub_type": [],
+    "attack": 1,
+    "health": 1,
+    "cost": 0,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 15,
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 16,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 17,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "flurry",
+            "c": 6,
+          },
+        ],
+      },
+      "4": {
+        "health": 2,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 18,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 19,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+      "6": {
+        "attack": 2,
+        "health": 3,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 20,
+          },
+          {
+            "id": "protect",
+            "x": 5,
+            "all": "1",
+          },
+          {
+            "id": "flurry",
+            "c": 2,
+          },
+        ],
+      },
+    }
+  },
+  "8045": {
+    "id": "8045",
+    "name": "Summoned Abomination",
+    "picture": "Ice_Yeti_A",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "8",
+    "sub_type": [],
+    "attack": 5,
+    "health": 18,
+    "cost": 4,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 5,
+      },
+      {
+        "id": "heal",
+        "x": 1,
+        "y": "1",
+        "z": 1,
+      },
+      {
+        "id": "taunt",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 6,
+        "health": 19,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 6,
+          },
+          {
+            "id": "taunt",
+          },
+        ],
+      },
+      "3": {
+        "health": 20,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 7,
+          },
+          {
+            "id": "taunt",
+          },
+        ],
+      },
+      "4": {
+        "attack": 7,
+        "health": 22,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 8,
+          },
+          {
+            "id": "taunt",
+          },
+        ],
+      },
+      "5": {
+        "health": 23,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 9,
+          },
+          {
+            "id": "taunt",
+          },
+        ],
+      },
+      "6": {
+        "attack": 8,
+        "health": 25,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 10,
+          },
+          {
+            "id": "taunt",
+          },
+        ],
+      },
+    }
+  },
   "11000": {
     "id": "11000",
     "name": "Stormcloud Pegasus",
@@ -109477,7 +110853,7 @@ var CARDS = {
     "id": "1",
     "name": "Oda the Guardian",
     "desc": "Oda was born in a far away land, shipwrecked, and raised on a remote island temple. He's ventured in search of spellstones as a pilgrimage for his order and honor.",
-    "picture": "NotFound",
+    "picture": "portrait_templeguardian",
     "rarity": "2",
     "set": "7000",
     "card_type": "1",
@@ -109518,7 +110894,7 @@ var CARDS = {
     "id": "2",
     "name": "Yuriel the Owl Mystic",
     "desc": "The Grand Library of the Aether has been curated by the Owl Mystics for hundreds of years. Their knowledge is accumulated in Yuriel through their ancestral bloodline.",
-    "picture": "NotFound",
+    "picture": "portrait_owlmystic",
     "rarity": "3",
     "set": "7000",
     "card_type": "1",
@@ -109680,7 +111056,7 @@ var CARDS = {
     "id": "4",
     "name": "Aria the Necromancer",
     "desc": "Aria is a powerful necromancer who aligns herself with Chaos magic. She likes long walks by moonlight and 'making' new friends.",
-    "picture": "NotFound",
+    "picture": "portrait_necromancer",
     "rarity": "2",
     "set": "7000",
     "card_type": "1",
@@ -109721,7 +111097,7 @@ var CARDS = {
     "id": "5",
     "name": "Decim the Firebringer",
     "desc": "Decim has always had an affinity for fire magic, even before being exiled from his village after it mysteriously burned down. An accident with a stolen spellstone imbued him with powerful abilities while also taking most of his sanity.",
-    "picture": "NotFound",
+    "picture": "portrait_flamebender",
     "rarity": "3",
     "set": "7000",
     "card_type": "1",
@@ -109798,7 +111174,7 @@ var CARDS = {
     "id": "6",
     "name": "Tarian the Lich Lord",
     "desc": "Wrapped in the cold winds of death, Tarian sits upon his throne as the center of the Chaos. Well respected, and well feared. He's a skeleton afterall.",
-    "picture": "NotFound",
+    "picture": "portrait_lichking",
     "rarity": "4",
     "set": "7000",
     "card_type": "1",
@@ -109929,7 +111305,7 @@ var CARDS = {
     "id": "8",
     "name": "Commander Ursurio",
     "desc": "Ursurio is a respected representative of the Wyld despite his often aloof attitude and outlook. And hunger cravings.",
-    "picture": "NotFound",
+    "picture": "portrait_bearcommander",
     "rarity": "3",
     "set": "7000",
     "card_type": "1",
@@ -110004,7 +111380,7 @@ var CARDS = {
     "id": "9",
     "name": "Groc the Hammer",
     "desc": "An ancient being of living stone, Groc wanders the wilderness in search of wisdom. You don't want to be between him and a hard place.",
-    "picture": "NotFound",
+    "picture": "portrait_groc",
     "rarity": "4",
     "set": "7000",
     "card_type": "1",
@@ -110088,7 +111464,7 @@ var CARDS = {
     "id": "10",
     "name": "Rayne the Wavecrasher",
     "desc": "A master of water and wind magic, Rayne is the prime guardian of water life on Arcantica. She really knows how to rain on a parade.",
-    "picture": "NotFound",
+    "picture": "portrait_elementalhero",
     "rarity": "4",
     "set": "7000",
     "card_type": "1",
@@ -110185,7 +111561,7 @@ var CARDS = {
     "id": "11",
     "name": "Orgoth the Hex Fist",
     "desc": "A respected leader of the Salt Waste tribes, Orgoth gained strange magical powers once buried deep in the Wastes. If he tries to give you a handshake you should probably decline.",
-    "picture": "NotFound",
+    "picture": "portrait_orchero",
     "rarity": "4",
     "set": "7000",
     "card_type": "1",
@@ -110287,7 +111663,7 @@ var CARDS = {
     "id": "12",
     "name": "Ol' Cedric",
     "desc": "Cedric is the former First Sword of the Emperor, High Commander of Dawnglow. Since retirement he spends much of his time training younger generations, advising the emperor, and catching flies for recreation.",
-    "picture": "NotFound",
+    "picture": "portrait_froghero",
     "rarity": "4",
     "set": "7000",
     "card_type": "1",
@@ -110408,7 +111784,7 @@ var CARDS = {
     "id": "13",
     "name": "Oda the Aegis",
     "desc": "Oda has taken his place as the Keeper of Seastone Temple's artifact, transcending his abilities. Unfortunately the upgrades don't come with a new outfit.",
-    "picture": "NotFound",
+    "picture": "portrait_odaupgrade",
     "rarity": "4",
     "set": "7000",
     "card_type": "1",
@@ -110514,7 +111890,7 @@ var CARDS = {
     "id": "14",
     "name": "Yuriel the Manashifter",
     "desc": "The true potential of the ancestral bloodline of Owl Mystics has been realized in Yuriel. After years of study, he has stumbled upon the secrets of Manashifting. He's also collected a lot of late fines.",
-    "picture": "NotFound",
+    "picture": "portrait_yurielupgrade",
     "rarity": "4",
     "set": "7000",
     "card_type": "1",
@@ -110600,7 +111976,7 @@ var CARDS = {
     "id": "15",
     "name": "Aria the Nightwielder",
     "desc": "Aria's close call with The Void pushed her to the brink of her abilities. She learned new powers, and intends to use them to make new friends.",
-    "picture": "NotFound",
+    "picture": "portrait_ariaupgrade",
     "rarity": "4",
     "set": "7000",
     "card_type": "1",
@@ -110682,7 +112058,7 @@ var CARDS = {
     "id": "16",
     "name": "Decim the Pyrokinetic",
     "desc": "Decim's training and close contact with dragons has taught him new heights to his abilities. Which shouldn't be a surprise as he's always enjoyed finding new ways to burn things.",
-    "picture": "NotFound",
+    "picture": "portrait_decimupgrade",
     "rarity": "4",
     "set": "7000",
     "card_type": "1",
@@ -110762,7 +112138,7 @@ var CARDS = {
     "id": "17",
     "name": "Elyse the Truestriker",
     "desc": "Elyse has embraced the magic of the Wyld, becoming one with the world around her. She even sometimes leaves her books at home.",
-    "picture": "NotFound",
+    "picture": "portrait_elyseupgrade",
     "rarity": "4",
     "set": "7000",
     "card_type": "1",
@@ -110869,7 +112245,7 @@ var CARDS = {
     "id": "18",
     "name": "General Ursurio",
     "desc": "After countless years of dedicated laziness and a sloth-like attitude, Ursurio has gotten the promotion he barely wanted. If only it came with free sides.",
-    "picture": "NotFound",
+    "picture": "portrait_ursurioupgrade",
     "rarity": "4",
     "set": "7000",
     "card_type": "1",
@@ -114257,7 +115633,7 @@ var CARDS = {
   "249": {
     "id": "249",
     "name": "Lone Frog Scout",
-    "picture": "NotFound",
+    "picture": "portrait_frogscout",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
@@ -125753,8 +127129,8 @@ var CARDS = {
   },
   "9994": {
     "id": "9994",
-    "name": "New Art",
-    "picture": "New1_A",
+    "name": "Unused Art",
+    "picture": "Oda_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -125767,8 +127143,8 @@ var CARDS = {
   },
   "19994": {
     "id": "19994",
-    "name": "New Art",
-    "picture": "New1_B",
+    "name": "Unused Art",
+    "picture": "Oda_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -125779,10 +127155,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9993": {
-    "id": "9993",
-    "name": "New Art",
-    "picture": "New2_A",
+  "29994": {
+    "id": "29994",
+    "name": "Unused Art",
+    "picture": "Oda_C",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -125795,8 +127171,8 @@ var CARDS = {
   },
   "19993": {
     "id": "19993",
-    "name": "New Art",
-    "picture": "New2_B",
+    "name": "Unused Art",
+    "picture": "Promo_Dragon_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -125809,8 +127185,8 @@ var CARDS = {
   },
   "9992": {
     "id": "9992",
-    "name": "New Art",
-    "picture": "New3_A",
+    "name": "Unused Art",
+    "picture": "Seraph_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -125823,8 +127199,8 @@ var CARDS = {
   },
   "19992": {
     "id": "19992",
-    "name": "New Art",
-    "picture": "New3_B",
+    "name": "Unused Art",
+    "picture": "Seraph_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -125837,22 +127213,8 @@ var CARDS = {
   },
   "9991": {
     "id": "9991",
-    "name": "New Art",
-    "picture": "New4_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19991": {
-    "id": "19991",
-    "name": "New Art",
-    "picture": "New4_B",
+    "name": "Unused Art",
+    "picture": "Tarian_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -125866,7 +127228,7 @@ var CARDS = {
   "9990": {
     "id": "9990",
     "name": "Unused Art",
-    "picture": "Oda_A",
+    "picture": "Tremor_Wurm_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -125877,38 +127239,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19990": {
-    "id": "19990",
+  "9989": {
+    "id": "9989",
     "name": "Unused Art",
-    "picture": "Oda_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29990": {
-    "id": "29990",
-    "name": "Unused Art",
-    "picture": "Oda_C",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19989": {
-    "id": "19989",
-    "name": "Unused Art",
-    "picture": "Promo_Dragon_B",
+    "picture": "Unused1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -125922,21 +127256,7 @@ var CARDS = {
   "9988": {
     "id": "9988",
     "name": "Unused Art",
-    "picture": "Seraph_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19988": {
-    "id": "19988",
-    "name": "Unused Art",
-    "picture": "Seraph_B",
+    "picture": "Unused2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -125950,7 +127270,7 @@ var CARDS = {
   "9987": {
     "id": "9987",
     "name": "Unused Art",
-    "picture": "Tarian_A",
+    "picture": "Unused3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -125964,7 +127284,7 @@ var CARDS = {
   "9986": {
     "id": "9986",
     "name": "Unused Art",
-    "picture": "Tremor_Wurm_A",
+    "picture": "Ursurio_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -125978,7 +127298,7 @@ var CARDS = {
   "9985": {
     "id": "9985",
     "name": "Unused Art",
-    "picture": "Unused1_A",
+    "picture": "Void_Abomination_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -125991,62 +127311,6 @@ var CARDS = {
   },
   "9984": {
     "id": "9984",
-    "name": "Unused Art",
-    "picture": "Unused2_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9983": {
-    "id": "9983",
-    "name": "Unused Art",
-    "picture": "Unused3_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9982": {
-    "id": "9982",
-    "name": "Unused Art",
-    "picture": "Ursurio_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9981": {
-    "id": "9981",
-    "name": "Unused Art",
-    "picture": "Void_Abomination_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "attack": -1,
-    "health": -1,
-    "cost": -1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9980": {
-    "id": "9980",
     "name": "Unused Art",
     "picture": "Yuriel_A",
     "rarity": "0",

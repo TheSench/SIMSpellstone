@@ -12395,6 +12395,134 @@
     </upgrade>
   </unit>
   <unit>
+    <id>7100</id>
+    <card_type>2</card_type>
+    <name>Snow Caller</name>
+    <picture>Ice_Caster_Frog_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1483635600</hidden_until_time>
+    <attack>5</attack>
+    <health>8</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="1" />
+    <skill id="heal" x="2" />
+    <skill id="jam" c="3" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="corrosive" x="1" />
+      <skill id="heal" x="3" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="corrosive" x="2" />
+      <skill id="heal" x="3" />
+      <skill id="jam" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17100</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Blizzard Caller</name>
+    <picture>Ice_Caster_Frog_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1483635600</hidden_until_time>
+    <attack>6</attack>
+    <health>11</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="2" />
+    <skill id="heal" x="3" />
+    <skill id="jam" c="3" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="corrosive" x="2" />
+      <skill id="heal" x="4" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="3" />
+      <skill id="heal" x="4" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>13</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27100</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Tempest Caller</name>
+    <picture>Ice_Caster_Frog_B</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1483635600</hidden_until_time>
+    <attack>7</attack>
+    <health>13</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="3" />
+    <skill id="heal" x="5" />
+    <skill id="jam" c="3" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="4" />
+      <skill id="heal" x="5" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="corrosive" x="4" />
+      <skill id="heal" x="6" />
+      <skill id="jam" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>7101</id>
     <card_type>2</card_type>
     <name>Shriekers</name>
@@ -12686,7 +12814,7 @@
     <skill id="berserk" x="1" />
     <type>3</type>
     <sub_type>4</sub_type>
-    <set>3000</set>
+    <set>4000</set>
     <upgrade>
       <level>2</level>
       <health>9</health>
@@ -12726,7 +12854,7 @@
     <skill id="berserk" x="1" />
     <type>3</type>
     <sub_type>4</sub_type>
-    <set>3000</set>
+    <set>4000</set>
     <upgrade>
       <level>2</level>
       <health>13</health>
@@ -12767,7 +12895,7 @@
     <skill id="berserk" x="2" />
     <type>3</type>
     <sub_type>4</sub_type>
-    <set>3000</set>
+    <set>4000</set>
     <upgrade>
       <level>2</level>
       <attack>4</attack>
@@ -12791,6 +12919,146 @@
       <skill id="evade" x="2" />
       <skill id="frost" x="1" />
       <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7104</id>
+    <card_type>2</card_type>
+    <name>Croaker of the Deep</name>
+    <picture>Frog_With_Fins_A</picture>
+    <asset_bundle>82</asset_bundle>
+    <hidden_until_time>1483981200</hidden_until_time>
+    <attack>1</attack>
+    <health>16</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="3" y="12" />
+    <skill id="leech" x="4" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <sub_type>12</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>19</health>
+      <skill id="rally" x="3" y="12" />
+      <skill id="leech" x="5" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="rally" x="4" y="12" />
+      <skill id="leech" x="5" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="rally" x="4" y="12" />
+      <skill id="leech" x="5" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17104</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Salient of the Deep</name>
+    <picture>Frog_With_Fins_A</picture>
+    <asset_bundle>82</asset_bundle>
+    <hidden_until_time>1483981200</hidden_until_time>
+    <attack>1</attack>
+    <health>20</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="4" y="12" />
+    <skill id="leech" x="6" />
+    <skill id="berserk" x="2" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <sub_type>12</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="rally" x="5" y="12" />
+      <skill id="leech" x="6" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>22</health>
+      <skill id="rally" x="5" y="12" />
+      <skill id="leech" x="7" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="rally" x="5" y="12" />
+      <skill id="leech" x="7" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27104</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Ribbitor of the Deep</name>
+    <picture>Frog_With_Fins_B</picture>
+    <asset_bundle>82</asset_bundle>
+    <hidden_until_time>1483981200</hidden_until_time>
+    <attack>1</attack>
+    <health>24</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="6" y="12" />
+    <skill id="leech" x="7" />
+    <skill id="berserk" x="3" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <sub_type>12</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="rally" x="6" y="12" />
+      <skill id="leech" x="8" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>26</health>
+      <skill id="rally" x="7" y="12" />
+      <skill id="leech" x="8" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="rally" x="7" y="12" />
+      <skill id="leech" x="9" />
+      <skill id="berserk" x="4" />
     </upgrade>
   </unit>
 </root>

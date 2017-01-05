@@ -24456,6 +24456,124 @@
     </upgrade>
   </unit>
   <unit>
+    <id>5102</id>
+    <card_type>2</card_type>
+    <name>Tribe Tracker</name>
+    <picture>Double_Bola_Frog_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1483635600</hidden_until_time>
+    <attack>4</attack>
+    <health>13</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="weaken" x="2" />
+    <skill id="weaken" x="1" />
+    <skill id="flurry" c="6" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="weaken" x="2" />
+      <skill id="weaken" x="1" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>15</health>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="weaken" x="3" />
+      <skill id="weaken" x="1" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15102</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Tribe Sleuth</name>
+    <picture>Double_Bola_Frog_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1483635600</hidden_until_time>
+    <attack>5</attack>
+    <health>15</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="weaken" x="3" />
+    <skill id="weaken" x="1" />
+    <skill id="flurry" c="4" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+      <skill id="weaken" x="3" />
+      <skill id="weaken" x="2" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>6</attack>
+      <skill id="weaken" x="4" />
+      <skill id="weaken" x="2" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25102</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Tribe Upriser</name>
+    <picture>Double_Bola_Frog_B</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1483635600</hidden_until_time>
+    <attack>6</attack>
+    <health>18</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="weaken" x="4" />
+    <skill id="weaken" x="2" />
+    <skill id="flurry" c="3" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>20</health>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="weaken" x="5" />
+      <skill id="weaken" x="3" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>5103</id>
     <card_type>2</card_type>
     <name>Mother of Solars</name>
@@ -37373,6 +37491,259 @@
       <skill id="flurry" c="3" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6104</id>
+    <card_type>2</card_type>
+    <name>Night Lurker</name>
+    <picture>Shadow_Frog_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1483635600</hidden_until_time>
+    <attack>3</attack>
+    <health>8</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="pierce" x="2" />
+    <skill id="berserk" x="1" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>11</health>
+      <skill id="evade" x="1" />
+      <skill id="pierce" x="3" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16104</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Shadow Lurker</name>
+    <picture>Shadow_Frog_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1483635600</hidden_until_time>
+    <attack>4</attack>
+    <health>12</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="pierce" x="3" />
+    <skill id="berserk" x="1" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="evade" x="1" />
+      <skill id="pierce" x="3" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>13</health>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="1" />
+      <skill id="pierce" x="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26104</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Gloom Lurker</name>
+    <picture>Shadow_Frog_B</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1483635600</hidden_until_time>
+    <attack>5</attack>
+    <health>15</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="pierce" x="4" />
+    <skill id="berserk" x="2" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="2" />
+      <skill id="pierce" x="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="2" />
+      <skill id="pierce" x="5" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6105</id>
+    <card_type>2</card_type>
+    <name>Wasteland Crusher</name>
+    <picture>Four_Armed_Frog_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1483376400</hidden_until_time>
+    <attack>6</attack>
+    <health>16</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="fervor" x="2" y="4" />
+    <skill id="berserk" x="1" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="fervor" x="3" y="4" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="fervor" x="3" y="4" />
+      <skill id="nullify" x="1" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <desc>"You don't want to bug the frogs in the wastes. Trust me. They take their rocks very seriously." - Ol' Cedric</desc>
+  </unit>
+  <unit>
+    <id>16105</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Wasteland Smasher</name>
+    <picture>Four_Armed_Frog_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1483376400</hidden_until_time>
+    <attack>7</attack>
+    <health>19</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="fervor" x="3" y="4" />
+    <skill id="nullify" x="1" />
+    <skill id="berserk" x="1" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="fervor" x="3" y="4" />
+      <skill id="nullify" x="1" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>21</health>
+      <skill id="fervor" x="4" y="4" />
+      <skill id="nullify" x="1" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="fervor" x="4" y="4" />
+      <skill id="nullify" x="2" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>22</health>
+      <skill id="fervor" x="4" y="4" />
+      <skill id="nullify" x="2" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26105</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Wasteland Pulverizer</name>
+    <picture>Four_Armed_Frog_B</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1483376400</hidden_until_time>
+    <attack>7</attack>
+    <health>23</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="fervor" x="4" y="4" />
+    <skill id="nullify" x="2" />
+    <skill id="berserk" x="3" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="fervor" x="5" y="4" />
+      <skill id="nullify" x="2" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="fervor" x="5" y="4" />
+      <skill id="nullify" x="3" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+  </unit>
   <!-- Wyld Premium Begin -->
   <unit>
     <id>7000</id>
@@ -49748,6 +50119,134 @@
     </upgrade>
   </unit>
   <unit>
+    <id>7100</id>
+    <card_type>2</card_type>
+    <name>Snow Caller</name>
+    <picture>Ice_Caster_Frog_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1483635600</hidden_until_time>
+    <attack>5</attack>
+    <health>8</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="1" />
+    <skill id="heal" x="2" />
+    <skill id="jam" c="3" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="corrosive" x="1" />
+      <skill id="heal" x="3" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="corrosive" x="2" />
+      <skill id="heal" x="3" />
+      <skill id="jam" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17100</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Blizzard Caller</name>
+    <picture>Ice_Caster_Frog_A</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1483635600</hidden_until_time>
+    <attack>6</attack>
+    <health>11</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="2" />
+    <skill id="heal" x="3" />
+    <skill id="jam" c="3" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="corrosive" x="2" />
+      <skill id="heal" x="4" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="3" />
+      <skill id="heal" x="4" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>13</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27100</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Tempest Caller</name>
+    <picture>Ice_Caster_Frog_B</picture>
+    <asset_bundle>79</asset_bundle>
+    <hidden_until_time>1483635600</hidden_until_time>
+    <attack>7</attack>
+    <health>13</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="3" />
+    <skill id="heal" x="5" />
+    <skill id="jam" c="3" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="4" />
+      <skill id="heal" x="5" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="corrosive" x="4" />
+      <skill id="heal" x="6" />
+      <skill id="jam" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>7101</id>
     <card_type>2</card_type>
     <name>Shriekers</name>
@@ -50039,7 +50538,7 @@
     <skill id="berserk" x="1" />
     <type>3</type>
     <sub_type>4</sub_type>
-    <set>3000</set>
+    <set>4000</set>
     <upgrade>
       <level>2</level>
       <health>9</health>
@@ -50079,7 +50578,7 @@
     <skill id="berserk" x="1" />
     <type>3</type>
     <sub_type>4</sub_type>
-    <set>3000</set>
+    <set>4000</set>
     <upgrade>
       <level>2</level>
       <health>13</health>
@@ -50120,7 +50619,7 @@
     <skill id="berserk" x="2" />
     <type>3</type>
     <sub_type>4</sub_type>
-    <set>3000</set>
+    <set>4000</set>
     <upgrade>
       <level>2</level>
       <attack>4</attack>
@@ -50144,6 +50643,146 @@
       <skill id="evade" x="2" />
       <skill id="frost" x="1" />
       <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7104</id>
+    <card_type>2</card_type>
+    <name>Croaker of the Deep</name>
+    <picture>Frog_With_Fins_A</picture>
+    <asset_bundle>82</asset_bundle>
+    <hidden_until_time>1483981200</hidden_until_time>
+    <attack>1</attack>
+    <health>16</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="3" y="12" />
+    <skill id="leech" x="4" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <sub_type>12</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>19</health>
+      <skill id="rally" x="3" y="12" />
+      <skill id="leech" x="5" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="rally" x="4" y="12" />
+      <skill id="leech" x="5" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="rally" x="4" y="12" />
+      <skill id="leech" x="5" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17104</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Salient of the Deep</name>
+    <picture>Frog_With_Fins_A</picture>
+    <asset_bundle>82</asset_bundle>
+    <hidden_until_time>1483981200</hidden_until_time>
+    <attack>1</attack>
+    <health>20</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="4" y="12" />
+    <skill id="leech" x="6" />
+    <skill id="berserk" x="2" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <sub_type>12</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="rally" x="5" y="12" />
+      <skill id="leech" x="6" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>22</health>
+      <skill id="rally" x="5" y="12" />
+      <skill id="leech" x="7" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="rally" x="5" y="12" />
+      <skill id="leech" x="7" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27104</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Ribbitor of the Deep</name>
+    <picture>Frog_With_Fins_B</picture>
+    <asset_bundle>82</asset_bundle>
+    <hidden_until_time>1483981200</hidden_until_time>
+    <attack>1</attack>
+    <health>24</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="6" y="12" />
+    <skill id="leech" x="7" />
+    <skill id="berserk" x="3" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <sub_type>12</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="rally" x="6" y="12" />
+      <skill id="leech" x="8" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>26</health>
+      <skill id="rally" x="7" y="12" />
+      <skill id="leech" x="8" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="rally" x="7" y="12" />
+      <skill id="leech" x="9" />
+      <skill id="berserk" x="4" />
     </upgrade>
   </unit>
   <!-- END SET 3000 - Premium -->
@@ -54466,6 +55105,103 @@
       <skill id="fervor" x="4" y="9" />
     </upgrade>
   </unit>
+  <unit>
+    <id>8044</id>
+    <card_type>2</card_type>
+    <name>Aegis of the Sea</name>
+    <picture>Twilight_Mirror_Warrior_B</picture>
+    <asset_bundle>2</asset_bundle>
+    <attack>1</attack>
+    <health>1</health>
+    <cost>0</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="15" />
+    <skill id="protect" x="1" all="1" />
+    <type>8</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="16" />
+      <skill id="protect" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="17" />
+      <skill id="protect" x="2" all="1" />
+      <skill id="flurry" c="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>2</health>
+      <skill id="armored" x="18" />
+      <skill id="protect" x="2" all="1" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="19" />
+      <skill id="protect" x="3" all="1" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>2</attack>
+      <health>3</health>
+      <skill id="armored" x="20" />
+      <skill id="protect" x="5" all="1" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8045</id>
+    <card_type>2</card_type>
+    <name>Summoned Abomination</name>
+    <picture>Ice_Yeti_A</picture>
+    <asset_bundle>40</asset_bundle>
+    <hidden_until_time></hidden_until_time>
+    <attack>5</attack>
+    <health>18</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="5" />
+    <skill id="heal" x="1" y="1" />
+    <skill id="taunt" />
+    <type>8</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+      <attack>6</attack>
+      <skill id="armored" x="6" />
+      <skill id="taunt" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>20</health>
+      <skill id="armored" x="7" />
+      <skill id="taunt" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>22</health>
+      <attack>7</attack>
+      <skill id="armored" x="8" />
+      <skill id="taunt" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>23</health>
+      <skill id="armored" x="9" />
+      <skill id="taunt" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>8</attack>
+      <health>25</health>
+      <skill id="armored" x="10" />
+      <skill id="taunt" />
+    </upgrade>
+  </unit>
   <!-- END SET 8000 - Story Element Assaults -->
   <!-- START - Fusions -->
   <!-- 1xxxx & 2xxxx -->
@@ -58773,7 +59509,7 @@
     <id>1</id>
     <card_type>1</card_type>
     <name>Oda the Guardian</name>
-    <portrait>Temple_Guardian_santa</portrait>
+    <portrait>templeguardian</portrait>
     <desc>Oda was born in a far away land, shipwrecked, and raised on a remote island temple. He's ventured in search of spellstones as a pilgrimage for his order and honor.</desc>
     <attack>0</attack>
     <health>8</health>
@@ -58800,7 +59536,7 @@
     <id>2</id>
     <card_type>1</card_type>
     <name>Yuriel the Owl Mystic</name>
-    <portrait>Owl_Mystic_santa</portrait>
+    <portrait>owlmystic</portrait>
     <desc>The Grand Library of the Aether has been curated by the Owl Mystics for hundreds of years. Their knowledge is accumulated in Yuriel through their ancestral bloodline.</desc>
     <attack>0</attack>
     <health>15</health>
@@ -58834,7 +59570,7 @@
     <id>3</id>
     <card_type>1</card_type>
     <name>Samael</name>
-    <portrait>Seraph_santa</portrait>
+    <portrait>seraph</portrait>
     <desc>Samael is the powerful and stoic leader of the Aether faction of magic. Don't ask him about the difference between bird wings and angel wings.</desc>
     <attack>0</attack>
     <health>22</health>
@@ -58877,7 +59613,7 @@
     <id>4</id>
     <card_type>1</card_type>
     <name>Aria the Necromancer</name>
-    <portrait>Necromancer_01_santa</portrait>
+    <portrait>necromancer</portrait>
     <desc>Aria is a powerful necromancer who aligns herself with Chaos magic. She likes long walks by moonlight and 'making' new friends.</desc>
     <attack>0</attack>
     <health>8</health>
@@ -58904,7 +59640,7 @@
     <id>5</id>
     <card_type>1</card_type>
     <name>Decim the Firebringer</name>
-    <portrait>epic_chaos3_santa</portrait>
+    <portrait>flamebender</portrait>
     <desc>Decim has always had an affinity for fire magic, even before being exiled from his village after it mysteriously burned down. An accident with a stolen spellstone imbued him with powerful abilities while also taking most of his sanity.</desc>
     <attack>0</attack>
     <health>16</health>
@@ -58941,7 +59677,7 @@
     <id>6</id>
     <card_type>1</card_type>
     <name>Tarian the Lich Lord</name>
-    <portrait>Lich_King_santa</portrait>
+    <portrait>lichking</portrait>
     <desc>Wrapped in the cold winds of death, Tarian sits upon his throne as the center of the Chaos. Well respected, and well feared. He's a skeleton afterall.</desc>
     <attack>0</attack>
     <health>22</health>
@@ -58984,7 +59720,7 @@
     <id>7</id>
     <card_type>1</card_type>
     <name>Elyse the Ranger</name>
-    <portrait>Elyse_santa</portrait>
+    <portrait>elyse</portrait>
     <desc>Elyse lived a simple life on the edge of civilization until adulthood, giving her a burning spirit for adventure and the tools to track it.</desc>
     <attack>0</attack>
     <health>8</health>
@@ -59010,7 +59746,7 @@
     <id>8</id>
     <card_type>1</card_type>
     <name>Commander Ursurio</name>
-    <portrait>Bear_Commander_santa</portrait>
+    <portrait>bearcommander</portrait>
     <desc>Ursurio is a respected representative of the Wyld despite his often aloof attitude and outlook. And hunger cravings.</desc>
     <attack>0</attack>
     <health>22</health>
@@ -59046,7 +59782,7 @@
     <id>9</id>
     <card_type>1</card_type>
     <name>Groc the Hammer</name>
-    <portrait>Legendary_Wyld_santa</portrait>
+    <portrait>groc</portrait>
     <desc>An ancient being of living stone, Groc wanders the wilderness in search of wisdom. You don't want to be between him and a hard place.</desc>
     <attack>0</attack>
     <health>25</health>
@@ -59088,7 +59824,7 @@
     <id>10</id>
     <card_type>1</card_type>
     <name>Rayne the Wavecrasher</name>
-    <portrait>Aether_Elemental_Hero_santa</portrait>
+    <portrait>elementalhero</portrait>
     <desc>A master of water and wind magic, Rayne is the prime guardian of water life on Arcantica. She really knows how to rain on a parade.</desc>
     <attack>0</attack>
     <health>21</health>
@@ -59131,7 +59867,7 @@
     <id>11</id>
     <card_type>1</card_type>
     <name>Orgoth the Hex Fist</name>
-    <portrait>Portrait_Chaos_Orc_Hero_santa</portrait>
+    <portrait>orchero</portrait>
     <desc>A respected leader of the Salt Waste tribes, Orgoth gained strange magical powers once buried deep in the Wastes. If he tries to give you a handshake you should probably decline.</desc>
     <attack>0</attack>
     <health>23</health>
@@ -59177,7 +59913,7 @@
     <id>12</id>
     <card_type>1</card_type>
     <name>Ol' Cedric</name>
-    <portrait>Wyld_Frog_Hero_santa</portrait>
+    <portrait>froghero</portrait>
     <desc>Cedric is the former First Sword of the Emperor, High Commander of Dawnglow. Since retirement he spends much of his time training younger generations, advising the emperor, and catching flies for recreation.</desc>
     <attack>0</attack>
     <health>20</health>
@@ -59222,7 +59958,7 @@
     <id>13</id>
     <card_type>1</card_type>
     <name>Oda the Aegis</name>
-    <portrait>Oda_Upgrade_santa</portrait>
+    <portrait>odaupgrade</portrait>
     <desc>Oda has taken his place as the Keeper of Seastone Temple's artifact, transcending his abilities. Unfortunately the upgrades don't come with a new outfit.</desc>
     <attack>0</attack>
     <health>31</health>
@@ -59268,7 +60004,7 @@
     <id>14</id>
     <card_type>1</card_type>
     <name>Yuriel the Manashifter</name>
-    <portrait>Portrait_Yuriel_Upgrade_santa</portrait>
+    <portrait>yurielupgrade</portrait>
     <desc>The true potential of the ancestral bloodline of Owl Mystics has been realized in Yuriel. After years of study, he has stumbled upon the secrets of Manashifting. He's also collected a lot of late fines.</desc>
     <attack>0</attack>
     <health>45</health>
@@ -59306,7 +60042,7 @@
     <id>15</id>
     <card_type>1</card_type>
     <name>Aria the Nightwielder</name>
-    <portrait>Aria_Upgrade_santa</portrait>
+    <portrait>ariaupgrade</portrait>
     <desc>Aria's close call with The Void pushed her to the brink of her abilities. She learned new powers, and intends to use them to make new friends.</desc>
     <attack>0</attack>
     <health>30</health>
@@ -59348,7 +60084,7 @@
     <id>16</id>
     <card_type>1</card_type>
     <name>Decim the Pyrokinetic</name>
-    <portrait>Portrait_Decim_Upgrade_santa</portrait>
+    <portrait>decimupgrade</portrait>
     <desc>Decim's training and close contact with dragons has taught him new heights to his abilities. Which shouldn't be a surprise as he's always enjoyed finding new ways to burn things.</desc>
     <attack>0</attack>
     <health>42</health>
@@ -59386,7 +60122,7 @@
     <id>17</id>
     <card_type>1</card_type>
     <name>Elyse the Truestriker</name>
-    <portrait>Portrait_Elyse_Upgrade_santa</portrait>
+    <portrait>elyseupgrade</portrait>
     <desc>Elyse has embraced the magic of the Wyld, becoming one with the world around her. She even sometimes leaves her books at home.</desc>
     <attack>0</attack>
     <health>29</health>
@@ -59432,7 +60168,7 @@
     <id>18</id>
     <card_type>1</card_type>
     <name>General Ursurio</name>
-    <portrait>Ursurio_Upgrade_santa</portrait>
+    <portrait>ursurioupgrade</portrait>
     <desc>After countless years of dedicated laziness and a sloth-like attitude, Ursurio has gotten the promotion he barely wanted. If only it came with free sides.</desc>
     <attack>0</attack>
     <health>45</health>
@@ -61161,7 +61897,7 @@
     <id>249</id>
     <card_type>1</card_type>
     <name>Lone Frog Scout</name>
-    <portrait>Frog_Scout_Color_Xmas</portrait>
+    <portrait>frogscout</portrait>
     <attack>0</attack>
     <health>32</health>
     <rarity>3</rarity>

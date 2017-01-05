@@ -60,6 +60,11 @@
     <!-- 244 -->
   </feature_lock>
   <feature_lock>
+    <id>bulkraresalvage</id>
+    <mission_req>244</mission_req>
+    <!-- 244 -->
+  </feature_lock>
+  <feature_lock>
     <id>salvage</id>
     <achievement_req>1101</achievement_req>
     <!-- player has edited deck -->
@@ -5608,7 +5613,7 @@
       <line>
         <commander>owlmystic</commander>
         <enemy>0</enemy>
-        <text>Your hand... you  are a follower of Chaos magic. Do you know where your are, orc? We do not take kind to the dark arts here.</text>
+        <text>Your hand... you  are a follower of Chaos magic. Do you know where you are, orc? We do not take kindly to the dark arts here.</text>
       </line>
     </speech>
   </mission>

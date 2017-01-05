@@ -1173,10 +1173,10 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="4" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="4" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -1429,15 +1429,15 @@
     <name>Leveled Aether Pack</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives three fully leveled Aether cards from the Standard or Premium Set, all guaranteed ^c0DFFEpics ^cFFFFor higher.</desc>
+    <desc>Gives three fully leveled Aether cards from Premium Set, all guaranteed ^c0DFFEpics ^cFFFFor higher.</desc>
     <asset_prefab>aether_crystal_epic</asset_prefab>
     <icon>icon_blue_crystal</icon>
     <bundle>30</bundle>
     <hc_cost>180</hc_cost>
     <cards>
-      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="1" set="1000,3000" />
-      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="1" set="1000,3000" />
-      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="1" set="1000,3000" />
+      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="1" set="3000" />
+      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="1" set="3000" />
+      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="1" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -1445,15 +1445,15 @@
     <name>Leveled Chaos Pack</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives three fully leveled Chaos cards from the Standard or Premium Set, all guaranteed ^c0DFFEpics ^cFFFFor higher.</desc>
+    <desc>Gives three fully leveled Chaos cards from Premium Set, all guaranteed ^c0DFFEpics ^cFFFFor higher.</desc>
     <asset_prefab>chaos_crystal_epic</asset_prefab>
     <icon>icon_blue_crystal</icon>
     <bundle>30</bundle>
     <hc_cost>180</hc_cost>
     <cards>
-      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="2" set="1000,3000" />
-      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="2" set="1000,3000" />
-      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="2" set="1000,3000" />
+      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="2" set="3000" />
+      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="2" set="3000" />
+      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="2" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -1461,15 +1461,15 @@
     <name>Leveled Wyld Pack</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives three fully leveled Wyld cards from the Standard or Premium Set, all guaranteed ^c0DFFEpics ^cFFFFor higher.</desc>
+    <desc>Gives three fully leveled Wyld cards from Premium Set, all guaranteed ^c0DFFEpics ^cFFFFor higher.</desc>
     <asset_prefab>wyld_crystal_epic</asset_prefab>
     <icon>icon_blue_crystal</icon>
     <bundle>30</bundle>
     <hc_cost>180</hc_cost>
     <cards>
-      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="3" set="1000,3000" />
-      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="3" set="1000,3000" />
-      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="3" set="1000,3000" />
+      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="3" set="3000" />
+      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="3" set="3000" />
+      <card fully_leveled="1" min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="3" set="3000" />
     </cards>
   </store_item>
   <store_item>
@@ -1560,6 +1560,25 @@
     <hc_cost>1000</hc_cost>
     <cards>
       <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="4" set="3000" fusion_level="1" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3041</id>
+    <name>Epic Pack</name>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives four cards with one guaranteed Epic or higher. Best chance at Legendaries!</desc>
+    <asset_prefab>epic_sale_pack</asset_prefab>
+    <bundle>30</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>50</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" set="1000" />
     </cards>
   </store_item>
   <!-- =============================== -->
@@ -2342,7 +2361,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <priority>300</priority>
-    <desc>Includes three fully leveled Aether cards from the Standard or Premium Set, all guaranteed ^c0DFFEpics ^cFFFFor higher! May be purchased 5 times!</desc>
+    <desc>Includes three fully leveled Aether cards from Premium Set, all guaranteed ^c0DFFEpics ^cFFFFor higher! May be purchased 5 times!</desc>
     <asset_prefab>aether_crystal_epic</asset_prefab>
     <background_prefab>aether_epic_banner</background_prefab>
     <bundle>30</bundle>
@@ -2360,7 +2379,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <priority>300</priority>
-    <desc>Includes three fully leveled Chaos cards from the Standard or Premium Set, all guaranteed ^c0DFFEpics ^cFFFFor higher! May be purchased 5 times!</desc>
+    <desc>Includes three fully leveled Chaos cards from Premium Set, all guaranteed ^c0DFFEpics ^cFFFFor higher! May be purchased 5 times!</desc>
     <asset_prefab>chaos_crystal_epic</asset_prefab>
     <background_prefab>chaos_epic_banner</background_prefab>
     <bundle>30</bundle>
@@ -2378,7 +2397,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <priority>300</priority>
-    <desc>Includes three fully leveled Wyld cards from the Standard or Premium Set, all guaranteed ^c0DFFEpics ^cFFFFor higher! May be purchased 5 times!</desc>
+    <desc>Includes three fully leveled Wyld cards from Premium Set, all guaranteed ^c0DFFEpics ^cFFFFor higher! May be purchased 5 times!</desc>
     <asset_prefab>wyld_crystal_epic</asset_prefab>
     <background_prefab>wyld_epic_banner</background_prefab>
     <bundle>30</bundle>
@@ -2733,5 +2752,24 @@
     <hc_cost>500</hc_cost>
     <!-- Stuff to give -->
     <pack>3040</pack>
+  </store_item>
+  <store_item>
+    <id>5053</id>
+    <name>Legendary Frogstone Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Includes one Legendary Frog card and three additional Epic or higher Frog cards from Premium set! May be purchased three times!</desc>
+    <asset_prefab>frog_crystal_legendary</asset_prefab>
+    <bundle>51</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>240</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3015</pack>
+    <sp>180</sp>
+    <gold>1000</gold>
+    <item id="1003" quantity="2" />
   </store_item>
 </root>

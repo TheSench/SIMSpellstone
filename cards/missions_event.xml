@@ -13461,8 +13461,8 @@
     <commander id="352" />
     <deck>
       <card id="7007" name="Water Serpent" />
-      <card id="1313" name="Lavafrog" />
-      <card id="1010" name="Lightning Elemental" />
+      <card id="7007" name="Water Serpent" />
+      <card id="1015" name="Windfrog" />
       <card id="1015" name="Windfrog" />
       <card id="1325" name="Chaos Storm" />
       <card id="5053" name="Anura Witch" />
@@ -13485,9 +13485,9 @@
     <commander id="359" />
     <deck>
       <card id="5022" name="Webfoot Raider" />
-      <card id="1312" name="Scythe Demon" />
+      <card id="7007" name="Water Serpent" />
       <card id="6022" name="Illusion Caster" />
-      <card id="7017" name="Coral Elemental" />
+      <card id="7007" name="Water Serpent" />
       <card id="2067" name="Symbol of Elaria" />
       <card id="5099" name="Croak Dropper" />
       <card id="7004" name="Ice Golem" />
@@ -13522,7 +13522,7 @@
       <card id="5050" mastery_level="3" name="Cloud Spear" />
       <card id="6051" mastery_level="4" name="Treeblade Thief" />
       <card id="7005" mastery_level="5" name="Tsunamari" />
-      <card id="7054" mastery_level="6" name="The Thing Below" />
+      <card id="8045" mastery_level="6" name="Summoned Abomination" />
       <card id="7003" mastery_level="7" name="Kraken" />
     </deck>
   </mission>
@@ -13847,7 +13847,7 @@
       <card id="1328" mastery_level="3" name="Poison Bullfrog" />
       <card id="2014" mastery_level="4" name="Tadpole Warmage" />
       <card id="7005" mastery_level="5" name="Tsunamari" />
-      <card id="7054" mastery_level="6" name="The Thing Below" />
+      <card id="8044" mastery_level="6" name="Aegis of the Sea" />
       <card id="7042" mastery_level="7" name="Scurvy Hopper" />
     </deck>
     <speech>
@@ -13873,7 +13873,7 @@
     <deck>
       <card id="7017" name="Coral Elemental" />
       <card id="7017" name="Coral Elemental" />
-      <card id="7022" name="Beetle Tamer" />
+      <card id="8044" name="Aegis of the Sea" />
       <card id="7007" name="Water Serpent" />
       <card id="1625" name="Ferocious Clawkin" />
       <card id="5073" name="Shell Invader" />
@@ -13934,7 +13934,7 @@
       <card id="6022" name="Illusion Caster" />
       <card id="7022" name="Beetle Tamer" />
       <card id="7007" name="Water Serpent" />
-      <card id="7007" name="Water Serpent" />
+      <card id="8044" name="Aegis of the Sea" />
       <card id="2048" name="Sandmite" />
       <card id="5073" name="Shell Invader" />
       <card id="5069" name="Heralidae" />
@@ -13996,7 +13996,7 @@
     <desc>You arrive, a little late, but still in time to check Decim and his friend. They look like they've taken quite the beating, but at least they're still alive.</desc>
     <commander id="238" />
     <deck>
-      <card id="1319" name="Wraith" />
+      <card id="8044" name="Aegis of the Sea" />
       <card id="5022" name="Webfoot Raider" />
       <card id="7007" name="Water Serpent" />
       <card id="7007" name="Water Serpent" />
@@ -14061,7 +14061,7 @@
     <desc>Decim is in no shape to fight. You must face this mysterious foe in his place, and keep everyone safe from the silent attacker. But what could he want?</desc>
     <commander id="238" />
     <deck>
-      <card id="1011" name="Archive Keeper" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="1011" name="Archive Keeper" />
       <card id="7017" name="Coral Elemental" />
       <card id="7007" name="Water Serpent" />
@@ -14097,7 +14097,7 @@
     <desc>You attempt to talk with the savior-turned-destroyer. Yet all he does is utter a single word...</desc>
     <commander id="351" />
     <deck>
-      <card id="1017" name="Judgment" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="1015" name="Windfrog" />
       <card id="1015" name="Windfrog" />
       <card id="7007" name="Water Serpent" />
@@ -14138,7 +14138,7 @@
     <desc>The drake that was with Decim has become completely feral. Foam runs from its mouth, claws scratching against Decim and anyone else it can reach.</desc>
     <commander id="351" />
     <deck>
-      <card id="1312" name="Scythe Demon" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="1015" name="Windfrog" />
       <card id="5022" name="Webfoot Raider" />
       <card id="7007" name="Water Serpent" />
@@ -14174,7 +14174,7 @@
     <desc>At long last the wind drake has been subdued. It lies panting on the ground, foam still trickling from its mouth. Despite Decim's grievous injuries, he rises to his feet, prepared to help his friend no matter the cost...</desc>
     <commander id="16" />
     <deck>
-      <card id="1312" name="Scythe Demon" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="6006" name="Chaos Golem" />
       <card id="5022" name="Webfoot Raider" />
       <card id="6006" name="Chaos Golem" />
@@ -14210,7 +14210,7 @@
     <desc>You manage to convince Decim to stand down before he hurts himself further. Behind you, the Golden Crown Mayor pushes her way forward. She lays her healing hands upon the wind drake...</desc>
     <commander id="340" />
     <deck>
-      <card id="1610" name="Ranger" />
+      <card id="8044" name="Aegis of the Sea" />
       <card id="5022" name="Webfoot Raider" />
       <card id="5022" name="Webfoot Raider" />
       <card id="5017" name="Steam Tempest" />
@@ -14239,9 +14239,40 @@
     <name>Recruiting the Guardian</name>
     <energy>9</energy>
     <desc>The drake is healed beneath the Mayor's touch. Decim also calms upon seeing his friend's health return. The Lantern Guardian approaches you...</desc>
+    <commander id="359" />
+    <deck>
+      <card id="7007" name="Water Serpent" />
+      <card id="7007" name="Water Serpent" />
+      <card id="7004" name="Ice Golem" />
+      <card id="7005" name="Tsunamari" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="7066" name="Aquine" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="5010" name="Concealed Dragon" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="7099" mastery_level="2" name="Toadplay" />
+      <card id="5053" mastery_level="3" name="Anura Witch" />
+      <card id="2070" mastery_level="4" name="Redclaw Tamer" />
+      <card id="1028" mastery_level="5" name="Heroic Frog" />
+      <card id="5095" mastery_level="6" name="Silurigon" />
+      <card id="7083" mastery_level="7" name="Sludge Spine" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lanternguardian</commander>
+        <enemy>0</enemy>
+        <text>Truly amazing... never seen arcane arts that heal even Void-infected. Allow me to join your cause, and fight against these raiders.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5467</id>
+    <name>Boss Mission</name>
+    <energy>9</energy>
+    <desc>Test mission.</desc>
     <commander id="238" />
     <deck>
-      <card id="6022" name="Illusion Caster" />
+      <card id="8044" name="Aegis of the Sea" />
       <card id="5022" name="Webfoot Raider" />
       <card id="5022" name="Webfoot Raider" />
       <card id="7007" name="Water Serpent" />
@@ -14253,16 +14284,9 @@
       <card id="5028" mastery_level="2" name="Winter Blacksmith" />
       <card id="2040" mastery_level="3" name="Owlmancer" />
       <card id="2002" mastery_level="4" name="Lantern Guardian" />
-      <card id="7084" mastery_level="5" name="Witchwood" />
+      <card id="8044" mastery_level="5" name="Aegis of the Sea" />
       <card id="5070" mastery_level="6" name="Hornslicer" />
-      <card id="8036" mastery_level="7" name="Crystal Blockade" />
+      <card id="7083" mastery_level="7" name="Sludge Spine" />
     </deck>
-    <speech>
-      <line>
-        <commander>lanternguardian</commander>
-        <enemy>0</enemy>
-        <text>Truly amazing... never seen arcane arts that heal even Void-infected. Allow me to join your cause.</text>
-      </line>
-    </speech>
   </mission>
 </root>

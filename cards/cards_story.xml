@@ -4339,4 +4339,101 @@
       <skill id="fervor" x="4" y="9" />
     </upgrade>
   </unit>
+  <unit>
+    <id>8044</id>
+    <card_type>2</card_type>
+    <name>Aegis of the Sea</name>
+    <picture>Twilight_Mirror_Warrior_B</picture>
+    <asset_bundle>2</asset_bundle>
+    <attack>1</attack>
+    <health>1</health>
+    <cost>0</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="15" />
+    <skill id="protect" x="1" all="1" />
+    <type>8</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="16" />
+      <skill id="protect" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="17" />
+      <skill id="protect" x="2" all="1" />
+      <skill id="flurry" c="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>2</health>
+      <skill id="armored" x="18" />
+      <skill id="protect" x="2" all="1" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="19" />
+      <skill id="protect" x="3" all="1" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>2</attack>
+      <health>3</health>
+      <skill id="armored" x="20" />
+      <skill id="protect" x="5" all="1" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8045</id>
+    <card_type>2</card_type>
+    <name>Summoned Abomination</name>
+    <picture>Ice_Yeti_A</picture>
+    <asset_bundle>40</asset_bundle>
+    <hidden_until_time></hidden_until_time>
+    <attack>5</attack>
+    <health>18</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="5" />
+    <skill id="heal" x="1" y="1" />
+    <skill id="taunt" />
+    <type>8</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+      <attack>6</attack>
+      <skill id="armored" x="6" />
+      <skill id="taunt" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>20</health>
+      <skill id="armored" x="7" />
+      <skill id="taunt" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>22</health>
+      <attack>7</attack>
+      <skill id="armored" x="8" />
+      <skill id="taunt" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>23</health>
+      <skill id="armored" x="9" />
+      <skill id="taunt" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>8</attack>
+      <health>25</health>
+      <skill id="armored" x="10" />
+      <skill id="taunt" />
+    </upgrade>
+  </unit>
 </root>
