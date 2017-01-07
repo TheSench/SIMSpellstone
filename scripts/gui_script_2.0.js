@@ -95,7 +95,14 @@ $(function () {
 
     setDeckSortable("#attack_deck", '#deck1');
     setDeckSortable("#defend_deck", '#deck2');
+
+    setTimeout(DATA_UPDATER.updateCards, 1, doneLoading);
 });
+
+function doneLoading() {
+    $("body").removeClass("loading");
+    checkTutorial();
+}
 
 function setDeckSortable(deckField, associatedHashField)
 {

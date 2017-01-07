@@ -1,6 +1,7 @@
 ﻿"use strict";
 
 // TODO: Add function for re-checking filters
+var delayTutorial = true;
 
 var fromInventory = false;
 var deck = [];
@@ -145,12 +146,8 @@ var initDeckBuilder = function ()
         onClickFilter(event, filterSet, event.altKey);
     });
 
-    if (_DEFINED("spoilers")) {
-        $("#loadingSplash").html("Checking for New Cards...");
-        setTimeout(DATA_UPDATER.updateCards, 1, loadCards);
-    } else {
-        setTimeout(loadCards, 1);
-    }
+    $("#loadingSplash").html("Checking for New Cards...");
+    setTimeout(DATA_UPDATER.updateCards, 1, loadCards);
 
     if (_DEFINED("unlimited"))
     {
@@ -165,6 +162,7 @@ var loadCards = function () {
     $("#loadingSplash").html("Loading...");
     drawAllCards();
     $("body").removeClass("loading");
+    checkTutorial();
 }
 
 var setupPopups = function ()

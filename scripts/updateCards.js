@@ -7,14 +7,20 @@ var DATA_UPDATER = (function () {
 
     var lastUpdate = null;
     function updateCards(callback) {
+        $("body").addClass("loading");
+        $("#loadingSplash").html("Checking for New Cards...");
         // Don't update more than once per minute
         var now = Date.now();
         if (!lastUpdate || lastUpdate - now > 60000) {
             lastUpdate = now;
             doUpdateCards(callback);
         } else {
-            if (callback) callback();
+            if(callback) callback();
         }
+    }
+
+    function doneLoading() {
+        $("body").removeClass("loading");
     }
 
     function doUpdateCards(callback) {
@@ -50,19 +56,26 @@ var DATA_UPDATER = (function () {
         var unit = {
             id: getValue(node, "id"),
             name: getValue(node, "name"),
+            desc: getValue(node, "desc"),
             picture: getValue(node, "picture") || getValue(node, "portrait") || getValue(node, "asset_prefab") || "NotFound",
             hidden_until: hidden_until,
             rarity: getValue(node, "rarity"),
             set: getValue(node, "set"),
             card_type: getValue(node, "card_type"),
             type: getValue(node, "type"),
+            sub_type: (getValues(node, "sub_type") || []),
             health: getNumeric(node, "health"),
             skill: getSkillsFromXML(node),
             upgrades: getUpgradesFromXML(node)
         };
-        addArrayField(unit, node, "sub_type"),
-        addNumericField(unit, node, "attack");
-        addNumericField(unit, node, "cost");
+        if (unit.card_type == "1") {
+            if (unit.picture !== "NotFound") {
+                unit.picture = "portrait_" + unit.picture;
+            }
+        } else {
+            addNumericField(unit, node, "attack");
+            addNumericField(unit, node, "cost");
+        }
         return unit;
     }
 

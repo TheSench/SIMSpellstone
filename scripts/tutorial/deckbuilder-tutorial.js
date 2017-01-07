@@ -1,6 +1,5 @@
 ﻿function getTutorialScript() {
     var tutorialParts = [
-        /*
        {
            msg: "Welcome to SIM Spellstone!  This is a brief tutorial of how to use the Deck Builder.",
        },
@@ -104,11 +103,12 @@
            msg: 'Right-clicking on a card will display a detailed view of the card.',
            actions: [showDetails, hideFilters]
        },
+       /*
+       {
+           actions: [hideDeck, showDetails, hideFilters],
+           msg: "Placeholder"
+       },
        */
-        {
-            actions: [hideDeck, showDetails, hideFilters],
-            msg: "Placeholder"
-        },
        {
            ui: "#filter-container",
            msg: 'The "Filters" section allows you to filter the cards in the collection.',
