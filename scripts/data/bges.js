@@ -176,7 +176,7 @@ var BATTLEGROUNDS = {
     "effect": [
       {
         "effect_type": "skill",
-        "id": "protect",
+        "id": "protect_seafolk",
         "mult": .2,
         "y": "12",
         "z": 12,
@@ -750,6 +750,7 @@ var BATTLEGROUNDS = {
   "2001": {
     "name": "Enemy Scaling BGE",
     "id": "2001",
+    "enemy_only": true,
     "scale_with_level": "1",
     "starting_level": "0",
     "hidden": true,
@@ -757,6 +758,7 @@ var BATTLEGROUNDS = {
   "2002": {
     "name": "Enemy Scaling BGE",
     "id": "2002",
+    "enemy_only": true,
     "scale_with_level": "1",
     "starting_level": "0",
     "hidden": true,
@@ -764,6 +766,7 @@ var BATTLEGROUNDS = {
   "2003": {
     "name": "Enemy Scaling BGE",
     "id": "2003",
+    "enemy_only": true,
     "scale_with_level": "1",
     "starting_level": "0",
     "hidden": true,

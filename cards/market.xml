@@ -2055,14 +2055,14 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <priority>300</priority>
-    <desc>Includes five Bounty Refill +5 and 1500 gold! May be purchased 5 times!</desc>
+    <desc>Includes four Bounty Refill +10 and 1500 gold! May be purchased 5 times!</desc>
     <asset_prefab>bounty_pack_4</asset_prefab>
     <bundle>15</bundle>
     <icon>icon_blue_crystal</icon>
     <hc_cost>90</hc_cost>
     <!-- Stuff to give -->
     <gold>1500</gold>
-    <item id="1023" quantity="5" />
+    <item id="1024" quantity="4" />
   </store_item>
   <store_item>
     <id>5017</id>

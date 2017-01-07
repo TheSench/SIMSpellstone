@@ -12926,7 +12926,7 @@
     <card_type>2</card_type>
     <name>Croaker of the Deep</name>
     <picture>Frog_With_Fins_A</picture>
-    <asset_bundle>82</asset_bundle>
+    <asset_bundle>83</asset_bundle>
     <hidden_until_time>1483981200</hidden_until_time>
     <attack>1</attack>
     <health>16</health>
@@ -12973,7 +12973,7 @@
     <fusion_level>1</fusion_level>
     <name>Salient of the Deep</name>
     <picture>Frog_With_Fins_A</picture>
-    <asset_bundle>82</asset_bundle>
+    <asset_bundle>83</asset_bundle>
     <hidden_until_time>1483981200</hidden_until_time>
     <attack>1</attack>
     <health>20</health>
@@ -13020,7 +13020,7 @@
     <fusion_level>2</fusion_level>
     <name>Ribbitor of the Deep</name>
     <picture>Frog_With_Fins_B</picture>
-    <asset_bundle>82</asset_bundle>
+    <asset_bundle>83</asset_bundle>
     <hidden_until_time>1483981200</hidden_until_time>
     <attack>1</attack>
     <health>24</health>

@@ -218,7 +218,51 @@
     <desc>barrier.</desc>
     <icon>filter_seafolk_64</icon>
     <effect>
-      <skill id="protect" mult=".2" on_delay_mult=".2" base="health" all="1" y="12" />
+      <skill id="protect_seafolk" mult=".2" on_delay_mult=".2" base="health" all="1" y="12" />
+      <skill id="displayEffect" trigger="onSkillDelay" s="protect_seafolk">
+        <target_effect>
+          <prefab>submerge_fadecloth_delay</prefab>
+          <bundle_id>82</bundle_id>
+          <duration>1</duration>
+          <loop>true</loop>
+          <sound>shield</sound>
+        </target_effect>
+        <projectile_effect>
+          <prefab>ProtectProjectile</prefab>
+          <delay>.5</delay>
+          <duration>.5</duration>
+        </projectile_effect>
+      </skill>
+      <skill id="displayEffect" trigger="onSkill" s="protect_seafolk">
+        <target_effect>
+          <prefab>submerge_fadecloth</prefab>
+          <bundle_id>82</bundle_id>
+          <duration>1</duration>
+          <loop>true</loop>
+          <sound>shield</sound>
+        </target_effect>
+        <projectile_effect>
+          <prefab>ProtectProjectile</prefab>
+          <delay>.5</delay>
+          <duration>.5</duration>
+        </projectile_effect>
+      </skill>
+      <skill id="displayEffect" trigger="onSkillHit" s="protect_seafolk">
+        <actor_effect>
+          <prefab>submerge_barrier</prefab>
+          <bundle_id>82</bundle_id>
+          <duration>3</duration>
+          <delay>1</delay>
+        </actor_effect>
+      </skill>
+      <skill id="displayEffect" trigger="onSkillBreak" s="protect_seafolk">
+        <actor_effect>
+          <prefab>submerge_break</prefab>
+          <bundle_id>82</bundle_id>
+          <duration>3</duration>
+          <delay>1</delay>
+        </actor_effect>
+      </skill>
     </effect>
   </battleground>
   <!-- 501-1000: Specialty BGE -->
@@ -536,7 +580,9 @@
     <id>2001</id>
     <name>Enemy Scaling BGE</name>
     <desc>In Arena Battles, the player who goes first has one additional Delay added to the first card they play in a battle.</desc>
-    <icon>filter_insect_64.png</icon>
+    <icon>healTotem_BGE_64</icon>
+    <icon_bundle>73</icon_bundle>
+    <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
     <starting_level>0</starting_level>
@@ -549,7 +595,9 @@
     <id>2002</id>
     <name>Enemy Scaling BGE</name>
     <desc>In Arena Battles, the player who goes first has one additional Delay added to the first card they play in a battle.</desc>
-    <icon>filter_insect_64.png</icon>
+    <icon>healTotem_BGE_64</icon>
+    <icon_bundle>73</icon_bundle>
+    <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
     <starting_level>0</starting_level>
@@ -562,7 +610,9 @@
     <id>2003</id>
     <name>Enemy Scaling BGE</name>
     <desc>In Arena Battles, the player who goes first has one additional Delay added to the first card they play in a battle.</desc>
-    <icon>filter_insect_64.png</icon>
+    <icon>healTotem_BGE_64</icon>
+    <icon_bundle>73</icon_bundle>
+    <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
     <starting_level>0</starting_level>

@@ -60,7 +60,7 @@ var DATA_UPDATER = (function () {
             skill: getSkillsFromXML(node),
             upgrades: getUpgradesFromXML(node)
         };
-        addField(unit, node, "sub_type"),
+        addArrayField(unit, node, "sub_type"),
         addNumericField(unit, node, "attack");
         addNumericField(unit, node, "cost");
         return unit;
@@ -118,6 +118,10 @@ var DATA_UPDATER = (function () {
         }
     }
 
+    function addArrayField(object, node, field, isAtt) {
+        object[field] = (getValues(node, field, isAtt) || []);
+    }
+
     function addNumericField(object, node, field, isAtt) {
         var value = getNumeric(node, field, isAtt);
         if (value >= 0) {
@@ -145,7 +149,7 @@ var DATA_UPDATER = (function () {
         if (tags.length > 0) {
             values = [];
             for (var i = 0; i < tags.length; i++) {
-                values.push(tags[0].innerHTML);
+                values.push(tags[i].innerHTML);
             }
         }
         return values;
