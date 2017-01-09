@@ -182,6 +182,9 @@ var SIMULATOR = {};
         protect_ice: function (src_card, skill) {
             return activationSkills.protect(src_card, skill, true);
         },
+        protect_seafolk: function (src_card, skill) {
+            return activationSkills.protect(src_card, skill);
+        },
         protect: function (src_card, skill, ice) {
 
             var faction = skill['y'];
@@ -237,6 +240,9 @@ var SIMULATOR = {};
                 var protect_amt = protect;
                 if (!protect_amt) {
                     var mult = skill.mult;
+                    if (!target.isActive()) {
+                        mult += (skill.on_delay_mult || 0);
+                    }
                     protect_amt = Math.ceil(target.health * mult);
                 }
 

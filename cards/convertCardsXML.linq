@@ -827,6 +827,7 @@ public partial class skill : battlegroundEffect
 	private string sField;
 	private string allField;
 	private string multField;
+	private string on_delay_multField;
 
 	public override bool skip
 	{
@@ -854,6 +855,14 @@ public partial class skill : battlegroundEffect
 	{
 		get { return this.multField; }
 		set { this.multField = value; }
+	}
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string on_delay_mult
+	{
+		get { return this.on_delay_multField; }
+		set { this.on_delay_multField = value; }
 	}
 
 	/// <remarks/>
@@ -1180,6 +1189,7 @@ private static void AppendSkill(StringBuilder sb, skill skill, string tabs, bool
 	AppendEntryString(sb, "id", skill.id, propTabs);
 	AppendEntry(sb, "x", skill.x, propTabs);
 	AppendEntry(sb, "mult", skill.mult, propTabs);
+	AppendEntry(sb, "on_delay_mult", skill.on_delay_mult, propTabs);
 	AppendEntryString(sb, "y", skill.y, propTabs);
 	AppendEntry(sb, "z", skill.y, propTabs);
 	AppendEntry(sb, "c", skill.c, propTabs);
