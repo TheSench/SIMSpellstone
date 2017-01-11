@@ -76,11 +76,7 @@ var DATA_UPDATER = (function () {
                 unit.picture = "NotFound";
             }
         }
-        if (unit.card_type == "1") {
-            if (unit.picture !== "NotFound") {
-                unit.picture = "portrait_" + unit.picture;
-            }
-        } else {
+        if (unit.card_type != "1") {
             addNumericField(unit, node, "attack");
             addNumericField(unit, node, "cost");
         }
