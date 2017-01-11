@@ -57,7 +57,7 @@ var DATA_UPDATER = (function () {
             id: getValue(node, "id"),
             name: getValue(node, "name"),
             desc: getValue(node, "desc"),
-            picture: getValue(node, "picture") || getValue(node, "portrait") || getValue(node, "asset_prefab") || "NotFound",
+            picture: getValue(node, "picture") || getValue(node, "asset_prefab"),
             hidden_until: hidden_until,
             rarity: getValue(node, "rarity"),
             set: getValue(node, "set"),
@@ -68,6 +68,14 @@ var DATA_UPDATER = (function () {
             skill: getSkillsFromXML(node),
             upgrades: getUpgradesFromXML(node)
         };
+        if (!unit.picture) {
+            var portrait = getValue(node, "portrait");
+            if (portrait) {
+                unit.picture = "portrait_" + portrait.toLowerCase().replace("portrait_", "");
+            } else {
+                unit.picture = "NotFound";
+            }
+        }
         if (unit.card_type == "1") {
             if (unit.picture !== "NotFound") {
                 unit.picture = "portrait_" + unit.picture;
