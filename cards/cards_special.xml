@@ -297,17 +297,17 @@
     </upgrade>
     <upgrade>
       <level>13</level>
+      <cost>1</cost>
       <health>13</health>
     </upgrade>
     <upgrade>
       <level>14</level>
       <health>14</health>
-      <cost>1</cost>
+      <skill id="strike" x="4" />
     </upgrade>
     <upgrade>
       <level>15</level>
       <health>15</health>
-      <skill id="strike" x="4" />
     </upgrade>
     <upgrade>
       <level>16</level>
@@ -316,11 +316,11 @@
     <upgrade>
       <level>17</level>
       <health>17</health>
+      <skill id="strike" x="5" />
     </upgrade>
     <upgrade>
       <level>18</level>
       <health>18</health>
-      <skill id="strike" x="5" />
     </upgrade>
     <desc>"You know what's better than a tower? A tower with a CANNON!" - Jarad, Castle Guard</desc>
   </unit>

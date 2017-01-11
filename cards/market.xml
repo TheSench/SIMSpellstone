@@ -2772,4 +2772,21 @@
     <gold>1000</gold>
     <item id="1003" quantity="2" />
   </store_item>
+  <store_item>
+    <id>5054</id>
+    <name>Embersoul Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>210</priority>
+    <desc>Gives 40 ^cCC1FEmbersouls^cFFFF! May be purchased ten times!</desc>
+    <asset_prefab>embersoul_package_3</asset_prefab>
+    <!-- <background_prefab>event_016_banner_epic4x</background_prefab> -->
+    <bundle>30</bundle>
+    <!-- <icon>rune_component_bag_item</icon> -->
+    <hc_cost>90</hc_cost>
+    <!-- Stuff to give -->
+    <item id="2515" quantity="40" />
+  </store_item>
 </root>

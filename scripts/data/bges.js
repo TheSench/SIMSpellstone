@@ -171,7 +171,7 @@ var BATTLEGROUNDS = {
     ]
   },
   "113": {
-    "name": "Seafolk BGE",
+    "name": "Underwater Shelter",
     "id": "113",
     "effect": [
       {
@@ -716,6 +716,19 @@ var BATTLEGROUNDS = {
         "mult": .20,
         "y": "4",
         "z": 4,
+        "all": "1",
+      },
+    ]
+  },
+  "516": {
+    "name": "Cursed Land",
+    "id": "516",
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "enhance",
+        "mult": 0.5,
+        "s": "enfeeble",
         "all": "1",
       },
     ]

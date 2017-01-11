@@ -13457,7 +13457,7 @@
     <id>5441</id>
     <name>Thieving Heroes</name>
     <energy>9</energy>
-    <desc>You've learned that the more [items] that the Seafolk raiders possess, the stronger their summoning will be for Lady Scylla. If you could steal some of their reserves, it would weaken the sea monster... (This mission drops higher quantities of [item].)</desc>
+    <desc>You've learned that the more Mist Pearls that the Seafolk raiders possess, the stronger their summoning will be for Lady Scylla. If you could steal some of their reserves, it would weaken the sea monster...</desc>
     <commander id="352" />
     <deck>
       <card id="7007" name="Water Serpent" />
@@ -13481,7 +13481,7 @@
     <id>5442</id>
     <name>Against the Tide</name>
     <energy>9</energy>
-    <desc>The [item] is a type of catalyst for the raiders' summoning. Every little bit you can take will weaken the revival of their Lady of the Sea. (This mission drops higher quantities of [item].)</desc>
+    <desc>The Mist Pearl is a type of catalyst for the raiders' summoning. Every little bit you can take will weaken the revival of their Lady of the Sea.</desc>
     <commander id="359" />
     <deck>
       <card id="5022" name="Webfoot Raider" />

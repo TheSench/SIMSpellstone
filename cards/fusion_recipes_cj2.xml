@@ -1213,6 +1213,17 @@
     <card_id>22071</card_id>
     <resource card_id="12071" number="2" />
   </fusion_recipe>
+  <!-- Scylla Item Fusion -->
+  <fusion_recipe>
+    <card_id>2073</card_id>
+    <resource card_id="2072" number="1" />
+    <resource item_id="2522" number="250" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>2074</card_id>
+    <resource card_id="2073" number="1" />
+    <resource item_id="2522" number="1000" />
+  </fusion_recipe>
   <fusion_recipe>
     <card_id>12075</card_id>
     <resource card_id="2075" number="2" />
@@ -1220,6 +1231,46 @@
   <fusion_recipe>
     <card_id>22075</card_id>
     <resource card_id="12075" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12076</card_id>
+    <resource card_id="2076" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22076</card_id>
+    <resource card_id="12076" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12077</card_id>
+    <resource card_id="2077" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22077</card_id>
+    <resource card_id="12077" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12078</card_id>
+    <resource card_id="2078" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22078</card_id>
+    <resource card_id="12078" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12079</card_id>
+    <resource card_id="2079" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22079</card_id>
+    <resource card_id="12079" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12080</card_id>
+    <resource card_id="2080" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22080</card_id>
+    <resource card_id="12080" number="2" />
   </fusion_recipe>
   <!-- END SET 2000 - Reward -->
   <!-- START SET 3000 - Premium -->

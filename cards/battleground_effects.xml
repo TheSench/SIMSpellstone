@@ -214,8 +214,8 @@
   </battleground>
   <battleground>
     <id>113</id>
-    <name>Seafolk BGE</name>
-    <desc>barrier.</desc>
+    <name>Underwater Shelter</name>
+    <desc>All Seafolk dive beneath the waves, gaining a Barrier equal to 20% of their base Health. This bonus is doubled if the Seafolk is on delay.</desc>
     <icon>filter_seafolk_64</icon>
     <effect>
       <skill id="protect_seafolk" mult=".2" on_delay_mult=".2" base="health" all="1" y="12" />
@@ -553,6 +553,16 @@
     <icon_bundle>69</icon_bundle>
     <effect>
       <skill id="protect" mult=".20" all="1" y="4" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>516</id>
+    <name>Cursed Land</name>
+    <desc>Hex skills are 50% more effective.</desc>
+    <icon>firestarter_64</icon>
+    <icon_bundle>75</icon_bundle>
+    <effect>
+      <skill id="enhance" s="enfeeble" mult="0.5" all="1" />
     </effect>
   </battleground>
   <!-- 1001+: Personal BGE -->

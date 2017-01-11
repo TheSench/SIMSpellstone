@@ -130,11 +130,7 @@ var DATA_UPDATER = (function () {
             object[field] = value;
         }
     }
-
-    function addArrayField(object, node, field, isAtt) {
-        object[field] = (getValues(node, field, isAtt) || []);
-    }
-
+    
     function addNumericField(object, node, field, isAtt) {
         var value = getNumeric(node, field, isAtt);
         if (value >= 0) {
