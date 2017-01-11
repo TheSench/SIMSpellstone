@@ -51,6 +51,10 @@ var LOCATIONS = {
     "id": "111",
     "name": "Goblin Rise Stronghold",
   },
+  "112": {
+      "id": "112",
+      "name": "Duskwillow",
+  },
   "2": {
     "id": "2",
     "name": "Luminis",
@@ -923,6 +927,20 @@ var CAMPAIGNS = {
     "location_id": "111",
     "side_mission": "",
     "missions": ["5385","5386","5387"]
+  },
+  "1108": {
+      "id": "1108",
+      "name": "Weaken the Lady of the Sea",
+      "location_id": "112",
+      "side_mission": "",
+      "missions": ["5441", "5442"]
+  },
+  "1109": {
+      "id": "1109",
+      "name": "The Healer",
+      "location_id": "112",
+      "side_mission": "",
+      "missions": ["5443", "5444", "5445", "5446", "5447", "5448", "5449", "5450", "5451", "5452", "5453", "5454"]
   },
   "10": {
     "id": "10",
