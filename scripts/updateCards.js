@@ -23,9 +23,21 @@ var DATA_UPDATER = (function () {
         $("body").removeClass("loading");
     }
 
-    function doUpdateCards(callback) {
+
+    var cardFiles = [
+        "cards_heroes.xml",
+        "cards_premium_aether.xml",
+        "cards_premium_chaos.xml",
+        "cards_premium_wyld.xml",
+        "cards_reward.xml",
+        "cards_special.xml",
+        "cards_standard.xml",
+        "cards_story.xml"
+    ];
+    function doUpdateCards(callback, i) {
+        i = (i || 0);
         jQuery.ajax({
-            url: baseUrl + "/assets/cards.xml",
+            url: baseUrl + "/assets/" + cardFiles[i],
             success: function (doc) {
                 var units = doc.getElementsByTagName("unit");
                 var newCards = {};
@@ -40,14 +52,22 @@ var DATA_UPDATER = (function () {
                 if (Object.keys(newCards).length > 0 && typeof spoilers !== "undefined") {
                     spoilers = newCards;
                 }
-                if (callback) callback();
+                onloaded(i, callback);
             },
             error: function (response) {
-                if (callback) callback();
+                onloaded(i, callback);
             },
             async: false,
             cache: false,
         });
+    }
+
+    var onloaded = function (i, callback) {
+        if (i < cardFiles.length) {
+            doUpdateCards(callback, i + 1);
+        } else {
+            if (callback) callback();
+        }
     }
 
     function getUnitFromXML(node) {
