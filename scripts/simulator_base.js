@@ -2013,22 +2013,42 @@ var SIMULATOR = {};
             return;
         }
 
-        // Poison
-        // - Target must have taken damage
-        // - Target must be an assault
-        // - Target must not be already poisoned of that level
-        if (damage > 0 && target.isAssault() && current_assault.poison && target.isAlive()) {
-            var poison = current_assault.poison;
-            var enhanced = getEnhancement(current_assault, 'poison');
-            if (enhanced) {
-                if (enhanced < 0) {
-                    enhanced = Math.ceil(poison * -enhanced);
+        // Damage-dependent Status Inflictions
+        if (damage > 0 && target.isAssault() && target.isAlive()) {
+            // Poison
+            // - Target must have taken damage
+            // - Target must be an assault
+            // - Target must not be already poisoned of that level
+            if (current_assault.poison) {
+                var poison = current_assault.poison;
+                var enhanced = getEnhancement(current_assault, 'poison');
+                if (enhanced) {
+                    if (enhanced < 0) {
+                        enhanced = Math.ceil(poison * -enhanced);
+                    }
+                    poison += enhanced;
                 }
-                poison += enhanced;
-            }
-            if (poison > target['poisoned']) {
-                target['poisoned'] = poison;
-                if (debug) echo += debug_name(current_assault) + ' inflicts poison(' + poison + ') on ' + debug_name(target) + '<br>';
+                if (poison > target['poisoned']) {
+                    target['poisoned'] = poison;
+                    if (debug) echo += debug_name(current_assault) + ' inflicts poison(' + poison + ') on ' + debug_name(target) + '<br>';
+                }
+
+                // Nullify
+                // - Attacker must not have died to Vengeance
+                // - Attacker must have taken damage
+                // - Target must be an assault
+                if (current_assault.nullify) {
+                    var nullify = current_assault.nullify;
+                    var enhanced = getEnhancement(current_assault, 'nullify');
+                    if (enhanced) {
+                        if (enhanced < 0) {
+                            enhanced = Math.ceil(nullify * -enhanced);
+                        }
+                        nullify += enhanced;
+                    }
+                    target.nullified += nullify;
+                    if (debug) echo += debug_name(current_assault) + ' inflicts nullify(' + nullify + ') on ' + debug_name(target) + '<br>';
+                }
             }
         }
 
@@ -2182,21 +2202,6 @@ var SIMULATOR = {};
                     target['scorched']['timer'] = 2;
                 }
                 if (debug) echo += debug_name(current_assault) + ' inflicts scorch(' + scorch + ') on ' + debug_name(target) + '<br>';
-            }
-            // Nullify
-            // - Attacker must not have died to Vengeance
-            // - Target must be an assault
-            if (current_assault.nullify) {
-                var nullify = current_assault.nullify;
-                var enhanced = getEnhancement(current_assault, 'nullify');
-                if (enhanced) {
-                    if (enhanced < 0) {
-                        enhanced = Math.ceil(nullify * -enhanced);
-                    }
-                    nullify += enhanced;
-                }
-                target.nullified += nullify;
-                if (debug) echo += debug_name(current_assault) + ' inflicts nullify(' + nullify + ') on ' + debug_name(target) + '<br>';
             }
         }
         
