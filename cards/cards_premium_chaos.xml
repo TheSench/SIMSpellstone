@@ -13045,4 +13045,115 @@
       <skill id="berserk" x="4" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6108</id>
+    <card_type>2</card_type>
+    <name>Redwater Angler</name>
+    <picture>Seafolk_Merfolk_Fish_Hook_A</picture>
+    <asset_bundle>83</asset_bundle>
+    <hidden_until_time>1484240400</hidden_until_time>
+    <attack>7</attack>
+    <health>13</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="enfeeble" x="2" />
+    <skill id="pierce" x="2" />
+    <type>2</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="enfeeble" x="3" />
+      <skill id="pierce" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16108</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Crimson Angler</name>
+    <picture>Seafolk_Merfolk_Fish_Hook_A</picture>
+    <asset_bundle>83</asset_bundle>
+    <hidden_until_time>1484240400</hidden_until_time>
+    <attack>8</attack>
+    <health>16</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="enfeeble" x="3" />
+    <skill id="pierce" x="3" />
+    <type>2</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="1" />
+      <skill id="enfeeble" x="4" />
+      <skill id="pierce" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26108</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Bloodhook Angler</name>
+    <picture>Seafolk_Merfolk_Fish_Hook_B</picture>
+    <asset_bundle>83</asset_bundle>
+    <hidden_until_time>1484240400</hidden_until_time>
+    <attack>9</attack>
+    <health>18</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="enfeeble" x="4" />
+    <skill id="pierce" x="4" />
+    <type>2</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="2" />
+      <skill id="enfeeble" x="4" />
+      <skill id="pierce" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="2" />
+      <skill id="enfeeble" x="5" />
+      <skill id="pierce" x="5" />
+    </upgrade>
+  </unit>
 </root>

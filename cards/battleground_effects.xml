@@ -251,16 +251,16 @@
         <actor_effect>
           <prefab>submerge_barrier</prefab>
           <bundle_id>82</bundle_id>
-          <duration>3</duration>
-          <delay>1</delay>
+          <duration>1</duration>
+          <delay>0</delay>
         </actor_effect>
       </skill>
       <skill id="displayEffect" trigger="onSkillBreak" s="protect_seafolk">
         <actor_effect>
           <prefab>submerge_break</prefab>
           <bundle_id>82</bundle_id>
-          <duration>3</duration>
-          <delay>1</delay>
+          <duration>1</duration>
+          <delay>0</delay>
         </actor_effect>
       </skill>
     </effect>

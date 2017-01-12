@@ -7627,50 +7627,7 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="rally" x="7" y="4" />
-      <skill id="pierce" x="3" />
-      <skill id="leech" x="3" />
-    </upgrade>
-  </unit>
-  <unit>
-    <id>22069</id>
-    <card_type>2</card_type>
-    <fusion_level>2</fusion_level>
-    <name>Sharktooth Surfer</name>
-    <picture>Frog_Surfer_B</picture>
-    <asset_bundle>79</asset_bundle>
-    <hidden_until_time>1481821200</hidden_until_time>
-    <attack>6</attack>
-    <health>18</health>
-    <cost>2</cost>
-    <rarity>3</rarity>
-    <skill id="rally" x="5" y="4" />
-    <skill id="pierce" x="2" />
-    <skill id="leech" x="2" />
-    <type>3</type>
-    <sub_type>4</sub_type>
-    <set>2000</set>
-    <upgrade>
-      <level>2</level>
-      <health>19</health>
-      <skill id="rally" x="6" y="4" />
-      <skill id="pierce" x="2" />
-      <skill id="leech" x="2" />
-    </upgrade>
-    <upgrade>
-      <level>3</level>
-      <health>20</health>
-      <attack>7</attack>
-    </upgrade>
-    <upgrade>
-      <level>4</level>
-      <health>21</health>
-      <skill id="rally" x="7" y="4" />
-      <skill id="pierce" x="2" />
-      <skill id="leech" x="2" />
-    </upgrade>
-    <upgrade>
-      <level>5</level>
+      <health>22</health>
       <skill id="rally" x="7" y="4" />
       <skill id="pierce" x="3" />
       <skill id="leech" x="3" />
@@ -7780,7 +7737,6 @@
     <upgrade>
       <level>2</level>
       <health>15</health>
-      <attack>7</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -7788,7 +7744,6 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>17</health>
       <skill id="corrosive" x="3" />
       <skill id="burn" x="2" />
       <skill id="nullify" x="2" />
@@ -7941,6 +7896,148 @@
       <skill id="valor" x="4" />
       <skill id="heal" x="4" all="1" y="4" />
       <skill id="strike" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2072</id>
+    <card_type>2</card_type>
+    <name>Scylla, Deep Queen</name>
+    <picture>Epic_Seafolk_A</picture>
+    <asset_bundle>38</asset_bundle>
+    <hidden_until_time>1484240400</hidden_until_time>
+    <cannot_salvage>1</cannot_salvage>
+    <attack>4</attack>
+    <health>24</health>
+    <skill id="fury" x="1" />
+    <skill id="enfeeble" all="1" x="1" />
+    <skill id="jam" c="5" />
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <set>5000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="fury" x="1" />
+      <skill id="enfeeble" all="1" x="1" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>5</attack>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>27</health>
+      <skill id="fury" x="2" />
+      <skill id="enfeeble" all="1" x="1" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>28</health>
+      <skill id="fury" x="2" />
+      <skill id="enfeeble" all="1" x="2" />
+      <skill id="jam" c="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2073</id>
+    <card_type>2</card_type>
+    <name>Scylla, Smuggler's End</name>
+    <picture>Legendary_Seafolk_A</picture>
+    <asset_bundle>38</asset_bundle>
+    <hidden_until_time>1484240400</hidden_until_time>
+    <cannot_salvage>1</cannot_salvage>
+    <attack>6</attack>
+    <health>29</health>
+    <skill id="fury" x="2" />
+    <skill id="enfeeble" all="1" x="2" />
+    <skill id="jam" c="4" />
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <set>5000</set>
+    <upgrade>
+      <level>2</level>
+      <health>30</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="fury" x="3" />
+      <skill id="enfeeble" all="1" x="2" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>32</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="fury" x="3" />
+      <skill id="enfeeble" all="1" x="2" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>7</attack>
+      <skill id="fury" x="3" />
+      <skill id="enfeeble" all="1" x="3" />
+      <skill id="jam" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2074</id>
+    <card_type>2</card_type>
+    <name>Scylla, Sea's Torment</name>
+    <asset_prefab>Kraken_A</asset_prefab>
+    <asset_bundle>36</asset_bundle>
+    <hidden_until_time>1484240400</hidden_until_time>
+    <cannot_salvage>1</cannot_salvage>
+    <attack>8</attack>
+    <health>36</health>
+    <skill id="fury" x="4" />
+    <skill id="enfeeble" all="1" x="3" />
+    <skill id="jam" c="3" />
+    <cost>3</cost>
+    <rarity>5</rarity>
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <set>5000</set>
+    <upgrade>
+      <level>2</level>
+      <health>38</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="fury" x="5" />
+      <skill id="enfeeble" all="1" x="3" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>9</attack>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="fury" x="5" />
+      <skill id="enfeeble" all="1" x="4" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>10</attack>
+      <health>42</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>44</health>
+      <skill id="fury" x="5" />
+      <skill id="enfeeble" all="1" x="4" />
+      <skill id="jam" c="2" />
     </upgrade>
   </unit>
   <unit>

@@ -34,10 +34,10 @@ var DATA_UPDATER = (function () {
         "cards_standard.xml",
         "cards_story.xml"
     ];
-    function doUpdateCards(callback, i) {
-        i = (i || 0);
+    function doUpdateCards(callback, file) {
+        file = (file || 0);
         jQuery.ajax({
-            url: baseUrl + "/assets/" + cardFiles[i],
+            url: baseUrl + "/assets/" + cardFiles[file],
             success: function (doc) {
                 var units = doc.getElementsByTagName("unit");
                 var newCards = {};
@@ -52,19 +52,19 @@ var DATA_UPDATER = (function () {
                 if (Object.keys(newCards).length > 0 && typeof spoilers !== "undefined") {
                     spoilers = newCards;
                 }
-                onloaded(i, callback);
+                onloaded(file, callback);
             },
             error: function (response) {
-                onloaded(i, callback);
+                onloaded(file, callback);
             },
             async: false,
             cache: false,
         });
     }
 
-    var onloaded = function (i, callback) {
-        if (i < cardFiles.length) {
-            doUpdateCards(callback, i + 1);
+    var onloaded = function (file, callback) {
+        if (file < cardFiles.length) {
+            doUpdateCards(callback, file + 1);
         } else {
             if (callback) callback();
         }
@@ -77,7 +77,7 @@ var DATA_UPDATER = (function () {
             id: getValue(node, "id"),
             name: getValue(node, "name"),
             desc: getValue(node, "desc"),
-            picture: getValue(node, "picture") || getValue(node, "asset_prefab"),
+            picture: getValue(node, "picture") || prefix(getValue(node, "asset_prefab"), "prefab_"),
             hidden_until: hidden_until,
             rarity: getValue(node, "rarity"),
             set: getValue(node, "set"),
@@ -174,6 +174,14 @@ var DATA_UPDATER = (function () {
             }
         }
         return value;
+    }
+
+    function prefix(value, prefix) {
+        if (value) {
+            return prefix + value;
+        } else {
+            return value;
+        }
     }
 
     function getValues(node, name, isAtt) {

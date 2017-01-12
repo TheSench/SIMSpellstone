@@ -3,7 +3,7 @@
   <Namespace>System.Xml.Serialization</Namespace>
 </Query>
 
-static bool downloadFiles = false;
+static bool downloadFiles = true;
 
 static string path = Path.GetDirectoryName(Util.CurrentQueryPath);
 static string baseUrl = @"https://spellstone.synapse-games.com/assets";
@@ -658,13 +658,23 @@ public partial class unit
 	/// <remarks/>
 	public string picture
 	{
-		get { return this.pictureField ?? this.portrait ?? this.asset_prefabField; }
+		get { return this.pictureField ?? this.portrait ?? this.asset_prefab; }
 		set { this.pictureField = value; }
 	}
 
 	public string asset_prefab
 	{
-		get { return this.asset_prefabField; }
+		get
+		{
+			if (String.IsNullOrWhiteSpace(this.asset_prefabField))
+			{
+				return String.Empty;
+			}
+			else
+			{
+				return "prefab_" + this.asset_prefabField;
+			}
+		}
 		set { this.asset_prefabField = value; }
 	}
 

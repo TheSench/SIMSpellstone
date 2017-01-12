@@ -6054,6 +6054,17 @@
     <arena_y>150</arena_y>
   </location>
   <location>
+    <id>7</id>
+    <name>Duskwillow</name>
+    <mapBG>Map_Duskwillow</mapBG>
+    <asset_bundle>81</asset_bundle>
+    <combatBG>CombatBGVoid</combatBG>
+    <unlock_time>1484240400</unlock_time>
+    <!-- Thu, 12 Jan 2017 17:00:00 GMT -->
+    <arena_x>250</arena_x>
+    <arena_y>150</arena_y>
+  </location>
+  <location>
     <id>100</id>
     <name>Salt Wastes</name>
     <mapBG>EventMap_001</mapBG>

@@ -1767,7 +1767,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <priority>300</priority>
-    <desc>Fifteen Energy Potion +20 for 100 Shards for a limited time only! May be purchased 5 times!</desc>
+    <desc>Fifteen Energy Potion +20 for 100 Shards for a limited time only! May be purchased 10 times!</desc>
     <asset_prefab>event_012_energyChest</asset_prefab>
     <bundle>62</bundle>
     <icon>energy_refill_20</icon>

@@ -1556,6 +1556,118 @@
       <wb>100</wb>
     </reward>
   </achievement>
+  <achievement>
+    <id>423</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XXIII</name>
+    <desc>Collect 8,500 Bounties.</desc>
+    <achievement_req>422</achievement_req>
+    <req>
+      <pvp_wins>8500</pvp_wins>
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>424</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XXIV</name>
+    <desc>Collect 9,000 Bounties.</desc>
+    <achievement_req>423</achievement_req>
+    <req>
+      <pvp_wins>9000</pvp_wins>
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>425</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XXV</name>
+    <desc>Collect 9,500 Bounties.</desc>
+    <achievement_req>424</achievement_req>
+    <req>
+      <pvp_wins>9500</pvp_wins>
+    </req>
+    <reward>
+      <sp>500</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>426</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XXVI</name>
+    <desc>Collect 10,000 Bounties.</desc>
+    <achievement_req>425</achievement_req>
+    <req>
+      <pvp_wins>10000</pvp_wins>
+    </req>
+    <reward>
+      <wb>100</wb>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>427</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XXVII</name>
+    <desc>Collect 10,500 Bounties.</desc>
+    <achievement_req>426</achievement_req>
+    <req>
+      <pvp_wins>10500</pvp_wins>
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>428</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XXVIII</name>
+    <desc>Collect 11,000 Bounties.</desc>
+    <achievement_req>427</achievement_req>
+    <req>
+      <pvp_wins>11000</pvp_wins>
+    </req>
+    <reward>
+      <pack>13</pack>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>429</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XXIX</name>
+    <desc>Collect 11,500 Bounties.</desc>
+    <achievement_req>428</achievement_req>
+    <req>
+      <pvp_wins>11500</pvp_wins>
+    </req>
+    <reward>
+      <sp>500</sp>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>430</id>
+    <type>4</type>
+    <order>506</order>
+    <name>Bounty Hunter XXX</name>
+    <desc>Collect 12,000 Bounties.</desc>
+    <achievement_req>429</achievement_req>
+    <req>
+      <pvp_wins>12000</pvp_wins>
+    </req>
+    <reward>
+      <wb>100</wb>
+    </reward>
+  </achievement>
   <!-- 451+ Bounty Rank Achievements -->
   <achievement>
     <id>451</id>

@@ -3811,6 +3811,69 @@
     </rewards>
     <find_item id="3047" drop_per_energy=".25" />
   </campaign>
+  <!-- Campaign Event -->
+  <campaign>
+    <id>1108</id>
+    <name>Weakening the Lady of the Sea</name>
+    <!-- <icon id='sparkler60' bundle='58' /> -->
+    <locked_start_time>1484240400</locked_start_time>
+    <!-- Thu, 12 Jan 2017 17:00:00 GMT -->
+    <location_id>7</location_id>
+    <x>460</x>
+    <y>123</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5441</mission_id>
+      <mission_id>5442</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="510" />
+      <card level="3" id="510" />
+      <card level="4" id="510" />
+      <card level="5" id="510" />
+      <card level="6" id="510" />
+      <card level="7" id="510" />
+    </rewards>
+    <find_item id="3048" drop_per_energy=".1" />
+    <find_item id="2522" drop_per_energy=".04" />
+  </campaign>
+  <campaign>
+    <id>1109</id>
+    <name>The Healer</name>
+    <!-- <icon id='sparkler60' bundle='58' /> -->
+    <locked_start_time>1484240400</locked_start_time>
+    <!-- Thu, 12 Jan 2017 17:00:00 GMT -->
+    <location_id>7</location_id>
+    <x>165</x>
+    <y>145</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5443</mission_id>
+      <mission_id>5444</mission_id>
+      <mission_id>5445</mission_id>
+      <mission_id>5446</mission_id>
+      <mission_id>5447</mission_id>
+      <mission_id>5448</mission_id>
+      <mission_id>5449</mission_id>
+      <mission_id>5450</mission_id>
+      <mission_id>5451</mission_id>
+      <mission_id>5452</mission_id>
+      <mission_id>5453</mission_id>
+      <mission_id>5454</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2076" />
+      <card level="5" id="512" />
+      <card level="6" id="512" />
+      <card level="7" id="2077" />
+    </rewards>
+    <find_item id="3048" drop_per_energy=".2" />
+    <find_item id="2522" drop_per_energy=".04" />
+  </campaign>
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
   <!-- ============================ -->

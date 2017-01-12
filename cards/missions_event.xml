@@ -13512,7 +13512,7 @@
       <card id="5022" name="Webfoot Raider" />
       <card id="1317" name="Fire Imp" />
       <card id="6022" name="Illusion Caster" />
-      <card id="6022" name="Illusion Caster" />
+      <card id="8044" name="Aegis of the Sea" />
       <card id="5020" name="Frost Frog" />
       <card id="5073" name="Shell Invader" />
       <card id="2034" name="Leap Frog Duo" />
@@ -13536,7 +13536,7 @@
       <card id="5022" name="Webfoot Raider" />
       <card id="5017" name="Steam Tempest" />
       <card id="1311" name="Molten Skeleton" />
-      <card id="6012" name="Ember Drake" />
+      <card id="8044" name="Aegis of the Sea" />
       <card id="5096" name="Enclave Dragon" />
       <card id="5073" name="Shell Invader" />
       <card id="7030" name="Arctic Ambusher" />
@@ -13566,7 +13566,7 @@
     <deck>
       <card id="5022" name="Webfoot Raider" />
       <card id="1618" name="Frog Scout" />
-      <card id="7012" name="Life Drake" />
+      <card id="8044" name="Aegis of the Sea" />
       <card id="6007" name="Goblin Crew" />
       <card id="6020" name="Croak Piercer" />
       <card id="5067" name="Squito Roamer" />
@@ -13600,7 +13600,7 @@
       <card id="6006" name="Chaos Golem" />
       <card id="1319" name="Wraith" />
       <card id="6090" name="Crackshot" />
-      <card id="5060" name="Quack Apprentice" />
+      <card id="8044" name="Aegis of the Sea" />
       <card id="7047" name="Shaman of the Wild" />
       <card id="7005" name="Tsunamari" />
       <card id="7005" name="Tsunamari" />
@@ -13632,7 +13632,7 @@
       <card id="1314" name="Skeletal Hound" />
       <card id="7020" name="Trapper Frog" />
       <card id="5025" name="Steelskin Dragon" />
-      <card id="7041" name="Feral Angel" />
+      <card id="8044" name="Aegis of the Sea" />
       <card id="7005" name="Tsunamari" />
       <card id="7066" name="Aquine" />
       <card id="7053" mastery_level="2" name="Bee Eater" />
@@ -13650,7 +13650,7 @@
     <desc>After considerable searching, you see a small band of frogs. Recognizing their attire as those from Golden Crown, you approach and ask about their fabled healer.</desc>
     <commander id="290" />
     <deck>
-      <card id="1015" name="Windfrog" />
+      <card id="8044" name="Aegis of the Sea" />
       <card id="5022" name="Webfoot Raider" />
       <card id="1015" name="Windfrog" />
       <card id="5022" name="Webfoot Raider" />
@@ -13682,7 +13682,7 @@
     <commander id="252" />
     <deck>
       <card id="1015" name="Windfrog" />
-      <card id="5007" name="Arcane Scroll" />
+      <card id="8044" name="Aegis of the Sea" />
       <card id="6022" name="Illusion Caster" />
       <card id="5022" name="Webfoot Raider" />
       <card id="6069" name="Arachnolite" />
@@ -13736,7 +13736,7 @@
     <desc>All the frogs have fought their hardest, but none can defeat you. They lie panting upon the ground, waiting for you to decide their fate...</desc>
     <commander id="289" />
     <deck>
-      <card id="1014" name="Cherub" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="1610" name="Ranger" />
       <card id="1618" name="Frog Scout" />
       <card id="5022" name="Webfoot Raider" />
@@ -13772,7 +13772,7 @@
     <desc>The frogs do their best to defend the frog woman who appeared from one of the houses. They seem particularly alarmed that she has shown herself to you.</desc>
     <commander id="289" />
     <deck>
-      <card id="1311" name="Molten Skeleton" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="1015" name="Windfrog" />
       <card id="1618" name="Frog Scout" />
       <card id="5022" name="Webfoot Raider" />
@@ -13808,7 +13808,7 @@
       <card id="1618" name="Frog Scout" />
       <card id="1618" name="Frog Scout" />
       <card id="6096" name="Desert Slitherer" />
-      <card id="1625" name="Ferocious Clawkin" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="2069" name="Webfoot Surfer" />
       <card id="5020" name="Frost Frog" />
       <card id="6051" name="Treeblade Thief" />
@@ -13840,7 +13840,7 @@
       <card id="5022" name="Webfoot Raider" />
       <card id="7024" name="Woolmane Dragon" />
       <card id="2001" name="Dunetooth Demon" />
-      <card id="7051" name="Stinglash Rider" />
+      <card id="8044" name="Aegis of the Sea" />
       <card id="6051" name="Treeblade Thief" />
       <card id="6051" name="Treeblade Thief" />
       <card id="5050" mastery_level="2" name="Cloud Spear" />

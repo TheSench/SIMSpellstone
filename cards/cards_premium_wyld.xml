@@ -13061,4 +13061,134 @@
       <skill id="berserk" x="4" />
     </upgrade>
   </unit>
+  <unit>
+    <id>7106</id>
+    <card_type>2</card_type>
+    <name>Octhos, Ruin Baron</name>
+    <picture>Octopus_Legend_A</picture>
+    <asset_bundle>83</asset_bundle>
+    <hidden_until_time>1484240400</hidden_until_time>
+    <attack>6</attack>
+    <health>25</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="4" y="12" />
+    <skill id="protect" x="4" y="12" />
+    <skill id="jam" c="6" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="rally" x="4" y="12" />
+      <skill id="protect" x="4" y="12" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>27</health>
+      <skill id="rally" x="5" y="12" />
+      <skill id="protect" x="4" y="12" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="rally" x="5" y="12" />
+      <skill id="protect" x="5" y="12" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>28</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17106</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Octhos, Relic Crusher</name>
+    <picture>Octopus_Legend_A</picture>
+    <asset_bundle>83</asset_bundle>
+    <hidden_until_time>1484240400</hidden_until_time>
+    <attack>6</attack>
+    <health>29</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="5" y="12" />
+    <skill id="protect" x="5" y="12" />
+    <skill id="jam" c="4" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>30</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="rally" x="6" y="12" />
+      <skill id="protect" x="6" y="12" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>32</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27106</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Octhos, City Swallower</name>
+    <picture>Octopus_Legend_B</picture>
+    <asset_bundle>83</asset_bundle>
+    <hidden_until_time>1484240400</hidden_until_time>
+    <attack>7</attack>
+    <health>32</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="7" y="12" />
+    <skill id="protect" x="6" y="12" />
+    <skill id="jam" c="3" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="rally" x="7" y="12" />
+      <skill id="protect" x="7" y="12" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>33</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>34</health>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>35</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="rally" x="8" y="12" />
+      <skill id="protect" x="8" y="12" />
+      <skill id="jam" c="3" />
+    </upgrade>
+  </unit>
 </root>

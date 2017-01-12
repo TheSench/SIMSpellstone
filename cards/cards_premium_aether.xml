@@ -12858,4 +12858,133 @@
       <skill id="weaken" x="3" all="1" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5106</id>
+    <card_type>2</card_type>
+    <name>Acuro, Sea Captain</name>
+    <picture>Seafolk_Merfolk_Warlord_A</picture>
+    <asset_bundle>83</asset_bundle>
+    <hidden_until_time>1484240400</hidden_until_time>
+    <attack>5</attack>
+    <health>15</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="1" />
+    <skill id="rally" x="3" y="12" />
+    <type>1</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="2" />
+      <skill id="rally" x="3" y="12" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="2" />
+      <skill id="rally" x="1" all="1" y="12" />
+      <skill id="rally" x="3" y="12" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15106</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Acuro, Sea Lord</name>
+    <picture>Seafolk_Merfolk_Warlord_A</picture>
+    <asset_bundle>83</asset_bundle>
+    <hidden_until_time>1484240400</hidden_until_time>
+    <attack>5</attack>
+    <health>18</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="2" />
+    <skill id="rally" x="1" all="1" y="12" />
+    <skill id="rally" x="4" y="12" />
+    <type>1</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>21</health>
+      <skill id="armored" x="3" />
+      <skill id="rally" x="1" all="1" y="12" />
+      <skill id="rally" x="4" y="12" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="3" />
+      <skill id="rally" x="2" all="1" y="12" />
+      <skill id="rally" x="4" y="12" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="3" />
+      <skill id="rally" x="2" all="1" y="12" />
+      <skill id="rally" x="5" y="12" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25106</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Acuro, Sea King</name>
+    <picture>Seafolk_Merfolk_Warlord_B</picture>
+    <asset_bundle>83</asset_bundle>
+    <hidden_until_time>1484240400</hidden_until_time>
+    <attack>5</attack>
+    <health>22</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="3" />
+    <skill id="rally" x="2" all="1" y="12" />
+    <skill id="rally" x="5" y="12" />
+    <type>1</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="4" />
+      <skill id="rally" x="2" all="1" y="12" />
+      <skill id="rally" x="5" y="12" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="4" />
+      <skill id="rally" x="3" all="1" y="12" />
+      <skill id="rally" x="6" y="12" />
+    </upgrade>
+  </unit>
 </root>
