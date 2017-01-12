@@ -63,8 +63,9 @@ var DATA_UPDATER = (function () {
     }
 
     var onloaded = function (file, callback) {
+        file++;
         if (file < cardFiles.length) {
-            doUpdateCards(callback, file + 1);
+            doUpdateCards(callback, file);
         } else {
             if (callback) callback();
         }

@@ -222,6 +222,7 @@ function cloneCard(original) {
     copy.nullify = original.nullify;
     copy.pierce = original.pierce;
     copy.poison = original.poison;
+    copy.taunt = original.taunt;
     copy.valor = original.valor;
     if (original.flurry) {
         copy.skillTimers = [];
@@ -307,6 +308,7 @@ var makeUnit = (function () {
         nullify: 0,
         pierce: 0,
         poison: 0,
+        taunt: false,
         valor: 0,
         // Attack Modifiers
         attack_berserk: 0,
@@ -525,6 +527,10 @@ var makeUnit = (function () {
             var imbueSkillsKey;
             var skillID = skill.id;
             switch (skillID) {
+                // Passive Toggles
+                case 'taunt':
+                    this.taunt = true;
+                    return;
                 // Passives
                 case 'armored':
                 case 'berserk':
@@ -614,6 +620,7 @@ var makeUnit = (function () {
                 case 'nullify':
                 case 'pierce':
                 case 'poison':
+                case 'taunt':
                 case 'valor':
                     return this[s];
                     break;
@@ -1022,6 +1029,10 @@ function copy_skills_2(new_card, original_skills, mult) {
 function setSkill_2(new_card, skill) {
     // These skills could have multiple instances
     switch (skill.id) {
+        // Passive Toggles
+        case 'taunt':
+            new_card.taunt = true;
+            return;
         // Passives
         case 'armored':
         case 'berserk':
@@ -1376,6 +1387,7 @@ function debug_triggered_skills(card, skillText) {
     debugNonActivatedSkill(card, "poison", skillText);
     debugNonActivatedSkill(card, "leech", skillText);
     debugNonActivatedSkill(card, "berserk", skillText);
+    debugNonActivatedSkill(card, "taunt", skillText);
     debugNonActivatedSkill(card, "nullify", skillText);
 }
 

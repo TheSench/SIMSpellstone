@@ -1873,7 +1873,27 @@ var SIMULATOR = {};
 
         // -- START ATTACK SEQUENCE --
         var target = field_o_assaults[current_assault.key];
-        if (!target || !target.isAlive()) target = field_o_commander;
+        if (!target || !target.isAlive()) {
+            target = field_o_commander;
+        } else {
+            // Check for taunt; if unit has taunt, attacks directed at it can't be "taunted" elsewhere
+            var taunted = false;
+            if (!target.taunt) {
+                // Check left first, then right
+                var adjacent = field_o_assaults[current_assault.key - 1];
+                if (adjacent && adjacent.taunt) {
+                    target = adjacent;
+                    taunted = true;
+                } else {
+                    var adjacent = field_o_assaults[current_assault.key + 1];
+                    if (adjacent && adjacent.taunt) {
+                        target = adjacent;
+                        taunted = true;
+                    }
+                }
+            }
+            if (taunted && debug) echo += debug_name(target) + ' taunts ' + debug_name(current_assault);
+        }
 
         // -- CALCULATE DAMAGE --
         var damage = current_assault.adjustedAttack(); // Get base damage + rally/weaken
