@@ -15,7 +15,7 @@
 //  - Level
 //  - RuneID
 
-var cardFactory = (function () {
+var CardFactory = (function () {
 
     var makeUnitKey = (function () {
         var baseKey = {

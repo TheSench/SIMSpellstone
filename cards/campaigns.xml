@@ -3818,6 +3818,7 @@
     <!-- <icon id='sparkler60' bundle='58' /> -->
     <locked_start_time>1484240400</locked_start_time>
     <!-- Thu, 12 Jan 2017 17:00:00 GMT -->
+    <campaign_req>6</campaign_req>
     <location_id>7</location_id>
     <x>460</x>
     <y>123</y>
@@ -3842,6 +3843,7 @@
     <id>1109</id>
     <name>The Healer</name>
     <!-- <icon id='sparkler60' bundle='58' /> -->
+    <campaign_req>6</campaign_req>
     <locked_start_time>1484240400</locked_start_time>
     <!-- Thu, 12 Jan 2017 17:00:00 GMT -->
     <location_id>7</location_id>

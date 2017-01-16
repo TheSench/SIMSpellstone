@@ -5312,6 +5312,7 @@
     <order>101</order>
     <name>The Healer</name>
     <desc>Complete the 'The Healer' campaign on Mastery Level 2.</desc>
+    <mission_req>64</mission_req>
     <locked_start_time>1484240400</locked_start_time>
     <!-- Thu, 12 Jan 2017 17:00:00 GMT -->
     <req>
@@ -5328,6 +5329,7 @@
     <order>101</order>
     <name>The Healer</name>
     <desc>Complete the 'The Healer' campaign on Mastery Level 4.</desc>
+    <mission_req>64</mission_req>
     <locked_start_time>1484240400</locked_start_time>
     <!-- Thu, 12 Jan 2017 17:00:00 GMT -->
     <achievement_req>3188</achievement_req>
@@ -5345,6 +5347,7 @@
     <order>101</order>
     <name>The Healer</name>
     <desc>Complete the 'The Healer' campaign on Mastery Level 6.</desc>
+    <mission_req>64</mission_req>
     <locked_start_time>1484240400</locked_start_time>
     <!-- Thu, 12 Jan 2017 17:00:00 GMT -->
     <achievement_req>3189</achievement_req>
@@ -5362,6 +5365,7 @@
     <order>101</order>
     <name>The Healer</name>
     <desc>Complete the 'The Healer' campaign on Mastery Level 7.</desc>
+    <mission_req>64</mission_req>
     <locked_start_time>1484240400</locked_start_time>
     <!-- Thu, 12 Jan 2017 17:00:00 GMT -->
     <achievement_req>3190</achievement_req>
@@ -5379,6 +5383,7 @@
     <order>101</order>
     <name>The Guardian</name>
     <desc>Complete the 'The Guardian' campaign on Mastery Level 2.</desc>
+    <mission_req>64</mission_req>
     <locked_start_time>1485450000</locked_start_time>
     <!-- Thu, 26 Jan 2017 17:00:00 GMT -->
     <req>
@@ -5395,6 +5400,7 @@
     <order>101</order>
     <name>The Guardian</name>
     <desc>Complete the 'The Guardian' campaign on Mastery Level 4.</desc>
+    <mission_req>64</mission_req>
     <locked_start_time>1485450000</locked_start_time>
     <!-- Thu, 26 Jan 2017 17:00:00 GMT -->
     <achievement_req>3192</achievement_req>
@@ -5412,6 +5418,7 @@
     <order>101</order>
     <name>The Guardian</name>
     <desc>Complete the 'The Guardian' campaign on Mastery Level 6.</desc>
+    <mission_req>64</mission_req>
     <locked_start_time>1485450000</locked_start_time>
     <!-- Thu, 26 Jan 2017 17:00:00 GMT -->
     <achievement_req>3193</achievement_req>
@@ -5429,6 +5436,7 @@
     <order>101</order>
     <name>The Guardian</name>
     <desc>Complete the 'The Guardian' campaign on Mastery Level 7.</desc>
+    <mission_req>64</mission_req>
     <locked_start_time>1485450000</locked_start_time>
     <!-- Thu, 26 Jan 2017 17:00:00 GMT -->
     <achievement_req>3194</achievement_req>
@@ -5447,6 +5455,7 @@
     <order>101</order>
     <name>Weakening the Lady of the Sea</name>
     <desc>Complete the 'Weakening the Lady of the Sea' campaign on Mastery Level 4.</desc>
+    <mission_req>64</mission_req>
     <locked_start_time>1484240400</locked_start_time>
     <!-- Thu, 12 Jan 2017 17:00:00 GMT -->
     <req>
@@ -5464,6 +5473,7 @@
     <order>101</order>
     <name>Weakening the Lady of the Sea</name>
     <desc>Complete the 'Weakening the Lady of the Sea' campaign on Mastery Level 7.</desc>
+    <mission_req>64</mission_req>
     <locked_start_time>1484240400</locked_start_time>
     <!-- Thu, 12 Jan 2017 17:00:00 GMT -->
     <achievement_req>3196</achievement_req>
