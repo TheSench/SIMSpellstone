@@ -13875,7 +13875,7 @@
       <card id="7017" name="Coral Elemental" />
       <card id="8044" name="Aegis of the Sea" />
       <card id="7007" name="Water Serpent" />
-      <card id="1625" name="Ferocious Clawkin" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="5073" name="Shell Invader" />
       <card id="2014" name="Tadpole Warmage" />
       <card id="1028" name="Heroic Frog" />
@@ -13907,8 +13907,8 @@
     <desc>You recognize the human figure from your time in Karthos. It seems he's finally managed to tame a dragon. A strange figure rises from the water's waves, stalking towards the two. You hurry to get closer...</desc>
     <commander id="301" />
     <deck>
-      <card id="7006" name="Treant Sapling" />
-      <card id="7017" name="Coral Elemental" />
+      <card id="8044" name="Aegis of the Sea" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="7007" name="Water Serpent" />
       <card id="7007" name="Water Serpent" />
       <card id="2049" name="Contrapede" />
@@ -13932,20 +13932,20 @@
     <commander id="352" />
     <deck>
       <card id="6022" name="Illusion Caster" />
-      <card id="7022" name="Beetle Tamer" />
       <card id="7007" name="Water Serpent" />
-      <card id="8044" name="Aegis of the Sea" />
+      <card id="7007" name="Water Serpent" />
       <card id="2048" name="Sandmite" />
-      <card id="5073" name="Shell Invader" />
-      <card id="5069" name="Heralidae" />
+      <card id="2076" name="Adorabilis" />
+      <card id="5081" name="Brahze" />
       <card id="2067" name="Symbol of Elaria" />
       <card id="1028" name="Heroic Frog" />
+      <card id="6069" name="Arachnolite" />
       <card id="6031" mastery_level="2" name="Iceblood Assassin" />
       <card id="2070" mastery_level="3" name="Redclaw Tamer" />
       <card id="5053" mastery_level="4" name="Anura Witch" />
-      <card id="5073" mastery_level="5" name="Shell Invader" />
+      <card id="7003" mastery_level="5" name="Kraken" />
       <card id="7054" mastery_level="6" name="The Thing Below" />
-      <card id="7042" mastery_level="7" name="Scurvy Hopper" />
+      <card id="8045" mastery_level="7" name="Summoned Abomination" />
     </deck>
   </mission>
   <mission>
@@ -13955,8 +13955,8 @@
     <desc>Despite your best efforts, it's impossible to reach Decim and his friend before the enemy. As the raider launches an attack, a new armored figure appears to protect the two!</desc>
     <commander id="352" />
     <deck>
-      <card id="5007" name="Arcane Scroll" />
-      <card id="6006" name="Chaos Golem" />
+      <card id="8044" name="Aegis of the Sea" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="7007" name="Water Serpent" />
       <card id="7007" name="Water Serpent" />
       <card id="2048" name="Sandmite" />
@@ -13998,7 +13998,7 @@
     <deck>
       <card id="8044" name="Aegis of the Sea" />
       <card id="5022" name="Webfoot Raider" />
-      <card id="7007" name="Water Serpent" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="7007" name="Water Serpent" />
       <card id="2031" name="Dryad" />
       <card id="7004" name="Ice Golem" />
@@ -14038,14 +14038,14 @@
     <commander id="238" />
     <deck>
       <card id="1018" name="Armored Eagle" />
-      <card id="1616" name="Werewarg" />
+      <card id="8044" name="Aegis of the Sea" />
       <card id="7007" name="Water Serpent" />
       <card id="7007" name="Water Serpent" />
       <card id="2031" name="Dryad" />
       <card id="5073" name="Shell Invader" />
       <card id="7047" name="Shaman of the Wild" />
       <card id="7061" name="Thickskin Dragon" />
-      <card id="7029" name="Owl Griffin" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="7066" mastery_level="2" name="Aquine" />
       <card id="5011" mastery_level="3" name="Sky Whale" />
       <card id="7066" mastery_level="4" name="Aquine" />
@@ -14062,7 +14062,7 @@
     <commander id="238" />
     <deck>
       <card id="8045" name="Summoned Abomination" />
-      <card id="1011" name="Archive Keeper" />
+      <card id="8044" name="Aegis of the Sea" />
       <card id="7017" name="Coral Elemental" />
       <card id="7007" name="Water Serpent" />
       <card id="2002" name="Lantern Guardian" />
@@ -14098,7 +14098,7 @@
     <commander id="351" />
     <deck>
       <card id="8045" name="Summoned Abomination" />
-      <card id="1015" name="Windfrog" />
+      <card id="8044" name="Aegis of the Sea" />
       <card id="1015" name="Windfrog" />
       <card id="7007" name="Water Serpent" />
       <card id="5025" name="Steelskin Dragon" />
@@ -14139,7 +14139,7 @@
     <commander id="351" />
     <deck>
       <card id="8045" name="Summoned Abomination" />
-      <card id="1015" name="Windfrog" />
+      <card id="8044" name="Aegis of the Sea" />
       <card id="5022" name="Webfoot Raider" />
       <card id="7007" name="Water Serpent" />
       <card id="2046" name="Leaping Dragon" />
@@ -14175,7 +14175,7 @@
     <commander id="16" />
     <deck>
       <card id="8045" name="Summoned Abomination" />
-      <card id="6006" name="Chaos Golem" />
+      <card id="8044" name="Aegis of the Sea" />
       <card id="5022" name="Webfoot Raider" />
       <card id="6006" name="Chaos Golem" />
       <card id="1326" name="Titan of Fire" />
@@ -14213,7 +14213,7 @@
       <card id="8044" name="Aegis of the Sea" />
       <card id="5022" name="Webfoot Raider" />
       <card id="5022" name="Webfoot Raider" />
-      <card id="5017" name="Steam Tempest" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="2005" name="Sailing Drake" />
       <card id="1328" name="Poison Bullfrog" />
       <card id="1025" name="Lightbound Archer" />
@@ -14242,12 +14242,12 @@
     <commander id="359" />
     <deck>
       <card id="7007" name="Water Serpent" />
-      <card id="7007" name="Water Serpent" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="7004" name="Ice Golem" />
       <card id="7005" name="Tsunamari" />
       <card id="7030" name="Arctic Ambusher" />
       <card id="7066" name="Aquine" />
-      <card id="1025" name="Lightbound Archer" />
+      <card id="8044" name="Aegis of the Sea" />
       <card id="5010" name="Concealed Dragon" />
       <card id="1026" name="Glass Colossus" />
       <card id="7099" mastery_level="2" name="Toadplay" />
@@ -14273,7 +14273,7 @@
     <commander id="238" />
     <deck>
       <card id="8044" name="Aegis of the Sea" />
-      <card id="5022" name="Webfoot Raider" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="5022" name="Webfoot Raider" />
       <card id="7007" name="Water Serpent" />
       <card id="1026" name="Glass Colossus" />

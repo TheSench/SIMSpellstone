@@ -8,7 +8,6 @@ var BATTLEGROUNDS = {
         "id": "heal",
         "mult": .25,
         "y": "9",
-        "z": 9,
         "all": "1",
       },
     ]
@@ -22,7 +21,6 @@ var BATTLEGROUNDS = {
         "id": "rally",
         "x": 2,
         "y": "5",
-        "z": 5,
         "all": "1",
       },
     ]
@@ -36,7 +34,6 @@ var BATTLEGROUNDS = {
         "id": "protect",
         "x": 2,
         "y": "4",
-        "z": 4,
         "all": "1",
       },
     ]
@@ -95,7 +92,6 @@ var BATTLEGROUNDS = {
         "id": "rally",
         "mult": .5,
         "y": "5",
-        "z": 5,
         "all": "1",
       },
     ]
@@ -180,7 +176,6 @@ var BATTLEGROUNDS = {
         "mult": .2,
         "on_delay_mult": .2,
         "y": "12",
-        "z": 12,
         "all": "1",
       },
     ]
@@ -715,7 +710,6 @@ var BATTLEGROUNDS = {
         "id": "protect",
         "mult": .20,
         "y": "4",
-        "z": 4,
         "all": "1",
       },
     ]
@@ -756,7 +750,6 @@ var BATTLEGROUNDS = {
         "id": "protect",
         "x": 2,
         "y": "4",
-        "z": 4,
         "all": "1",
       },
     ]
@@ -770,11 +763,11 @@ var BATTLEGROUNDS = {
     "hidden": true,
   },
   "2002": {
-    "name": "Enemy Scaling BGE",
+    "name": "Riptide Nightsong",
     "id": "2002",
     "enemy_only": true,
     "scale_with_level": "1",
-    "starting_level": "0",
+    "starting_level": "5",
     "hidden": true,
   },
   "2003": {

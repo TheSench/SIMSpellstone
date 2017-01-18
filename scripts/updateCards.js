@@ -39,18 +39,21 @@ var DATA_UPDATER = (function () {
         jQuery.ajax({
             url: baseUrl + "/assets/" + cardFiles[file],
             success: function (doc) {
+                var trackNewCards = (typeof spoilers !== "undefined");
                 var units = doc.getElementsByTagName("unit");
-                var newCards = {};
                 for (var i = 0; i < units.length; i++) {
                     var unit = units[i];
                     var id = getValue(units[i], "id");
-                    if (!CARDS[id]) {
-                        newCards[id] = true;
+                    var cardData = getUnitFromXML(units[i]);
+                    if (trackNewCards) {
+                        if (!CARDS[id]) {
+                            spoilers[id] = true;
+                        } else if (JSON.stringify(CARDS[id]) !== JSON.stringify(cardData)) {
+                            console.log(id + " has changed");
+                            spoilers[id] = true;
+                        }
                     }
-                    CARDS[id] = getUnitFromXML(units[i]);
-                }
-                if (Object.keys(newCards).length > 0 && typeof spoilers !== "undefined") {
-                    spoilers = newCards;
+                    CARDS[id] = cardData
                 }
                 onloaded(file, callback);
             },
@@ -72,23 +75,11 @@ var DATA_UPDATER = (function () {
     }
 
     function getUnitFromXML(node) {
-        var hidden_until = (getValue(node, "hidden_until") || getValue(node, "hidden_until_time"));
-        if (hidden_until) hidden_until += "000";
-        var unit = {
-            id: getValue(node, "id"),
-            name: getValue(node, "name"),
-            desc: getValue(node, "desc"),
-            picture: getValue(node, "picture") || prefix(getValue(node, "asset_prefab"), "prefab_"),
-            hidden_until: hidden_until,
-            rarity: getValue(node, "rarity"),
-            set: getValue(node, "set"),
-            card_type: getValue(node, "card_type"),
-            type: getValue(node, "type"),
-            sub_type: (getValues(node, "sub_type") || []),
-            health: getNumeric(node, "health"),
-            skill: getSkillsFromXML(node),
-            upgrades: getUpgradesFromXML(node)
-        };
+        var unit = {};
+        unit.id = getValue(node, "id");
+        unit.name = getValue(node, "name");
+        addField(unit, node, "desc");
+        unit.picture = getValue(node, "picture") || prefix(getValue(node, "asset_prefab"), "prefab_");
         if (!unit.picture) {
             var portrait = getValue(node, "portrait");
             if (portrait) {
@@ -97,10 +88,25 @@ var DATA_UPDATER = (function () {
                 unit.picture = "NotFound";
             }
         }
+        var hidden_until = (getValue(node, "hidden_until") || getValue(node, "hidden_until_time"));
+        if (hidden_until) unit.hidden_until = hidden_until + "000";
+        unit.rarity = getValue(node, "rarity");
+        unit.set = getValue(node, "set");
+        unit.card_type = getValue(node, "card_type");
+        unit.type = getValue(node, "type");
+        unit.sub_type = (getValues(node, "sub_type") || []);
+
+        addNumericField(unit, node, "health");
         if (unit.card_type != "1") {
             addNumericField(unit, node, "attack");
             addNumericField(unit, node, "cost");
         }
+        var upgrades = getUpgradesFromXML(node);
+        unit.maxLevel = 1 + Object.keys(upgrades).length;
+
+        unit.skill = getSkillsFromXML(node);
+        unit.upgrades = upgrades;
+
         return unit;
     }
 
@@ -122,10 +128,11 @@ var DATA_UPDATER = (function () {
         };
         addNumericField(skill, node, "x", true);
         addNumericField(skill, node, "mult", true);
-        addField(skill, node, "s", true);
+        addNumericField(skill, node, "on_delay_mult", true);
         addField(skill, node, "y", true);
-        addNumericField(skill, node, "c", true);
         addNumericField(skill, node, "z", true);
+        addNumericField(skill, node, "c", true);
+        addField(skill, node, "s", true);
         addField(skill, node, "all", true);
         return skill;
     }
@@ -140,18 +147,18 @@ var DATA_UPDATER = (function () {
     }
 
     function getUpgradeFromXML(node) {
-        var upgrade = {
-            skill: getSkillsFromXML(node)
-        };
+        var upgrade = {};
         addNumericField(upgrade, node, "attack");
         addNumericField(upgrade, node, "health");
         addNumericField(upgrade, node, "cost");
+        addField(upgrade, node, "desc");
+        upgrade.skill = getSkillsFromXML(node);
         return upgrade;
     }
 
     function addField(object, node, field, isAtt) {
         var value = getValue(node, field, isAtt);
-        if (value != null) {
+        if (value != null && value.length > 0) {
             object[field] = value;
         }
     }
@@ -164,17 +171,12 @@ var DATA_UPDATER = (function () {
     }
 
     function getValue(node, name, isAtt) {
-        var value = null;
         if (isAtt) {
-            value = node.getAttribute(name);
-            return value;
+            return node.getAttribute(name);
         } else {
-            var tags = node.getElementsByTagName(name);
-            if (tags.length > 0) {
-                value = tags[0].innerHTML;
-            }
+            var values = getValues(node, name);
+            return (values ? values[0] : null);
         }
-        return value;
     }
 
     function prefix(value, prefix) {
@@ -185,9 +187,9 @@ var DATA_UPDATER = (function () {
         }
     }
 
-    function getValues(node, name, isAtt) {
+    function getValues(node, name) {
         var values = null;
-        var tags = node.getElementsByTagName(name);
+        var tags = $(node).children(name);
         if (tags.length > 0) {
             values = [];
             for (var i = 0; i < tags.length; i++) {

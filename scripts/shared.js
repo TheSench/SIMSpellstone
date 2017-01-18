@@ -702,7 +702,7 @@ var makeUnit = (function () {
         card.name = original_card.name;
         card.attack = original_card.attack;
         card.health = original_card.health;
-        card.maxLevel = GetMaxLevel(original_card);
+        card.maxLevel = original_card.maxLevel;
         card.level = ((unit_level > card.maxLevel) ? card.maxLevel : unit_level);
         card.cost = original_card.cost;
         card.rarity = original_card.rarity;
@@ -719,6 +719,7 @@ var makeUnit = (function () {
                 if (upgrade.cost !== undefined) card.cost = upgrade.cost;
                 if (upgrade.health !== undefined) card.health = upgrade.health;
                 if (upgrade.attack !== undefined) card.attack = upgrade.attack;
+                if (upgrade.desc !== undefined) card.desc = upgrade.desc;
                 if (upgrade.skill.length > 0) original_skills = upgrade.skill;
                 if (key == card.level) break;
             }
@@ -2241,7 +2242,7 @@ function get_slim_card_by_id(unit, getDetails) {
         new_card.id = current_card.id;
         new_card.name = current_card.name;
         new_card.rarity = current_card.rarity;
-        new_card.maxLevel = GetMaxLevel(current_card);
+        new_card.maxLevel = current_card.maxLevel;
         if (unit.level) {
             new_card.level = unit.level;
             if (new_card.level > new_card.maxLevel) new_card.level = new_card.maxLevel;
@@ -2261,6 +2262,7 @@ function get_slim_card_by_id(unit, getDetails) {
                     if (upgrade.cost !== undefined) new_card.cost = upgrade.cost;
                     if (upgrade.health !== undefined) new_card.health = upgrade.health;
                     if (upgrade.attack !== undefined) new_card.attack = upgrade.attack;
+                    if (upgrade.desc !== undefined) new_card.desc = upgrade.desc;
                     if (upgrade.skill.length > 0) new_card.skill = upgrade.skill;
                     if (key == new_card.level) break;
                 }
@@ -2276,16 +2278,6 @@ function get_slim_card_by_id(unit, getDetails) {
     }
 
     return new_card;
-}
-
-function GetMaxLevel(original_card) {
-    if (original_card.maxLevel) return original_card.maxLevel;
-    original_card.maxLevel = 1;
-    var upgrades = original_card.upgrades;
-    if (upgrades) for (var key in upgrades) {
-        if (upgrades.hasOwnProperty(key)) original_card.maxLevel++;
-    }
-    return original_card.maxLevel;
 }
 
 function loadCard(id) {
@@ -2311,13 +2303,14 @@ function getCardInfo(unit)
                 if (upgrade.cost !== undefined) card.cost = upgrade.cost;
                 if (upgrade.health !== undefined) card.health = upgrade.health;
                 if (upgrade.attack !== undefined) card.attack = upgrade.attack;
+                if (upgrade.desc !== undefined) card.desc = upgrade.desc;
                 if (upgrade.skill.length > 0) card.skill = upgrade.skill;
                 if (key == level) break;
             }
         }
     }
     card.level = level;
-    card.maxLevel = GetMaxLevel(original);
+    card.maxLevel = original.maxLevel;
     return card;
 }
 

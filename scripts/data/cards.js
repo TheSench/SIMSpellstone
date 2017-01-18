@@ -10,6 +10,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 8,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "protect",
@@ -51,6 +52,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 15,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enhance",
@@ -61,7 +63,6 @@ var CARDS = {
         "id": "heal",
         "x": 1,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -81,7 +82,6 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
         ],
@@ -102,7 +102,6 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
         ],
@@ -120,6 +119,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 22,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enhance",
@@ -213,6 +213,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 8,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "weaken",
@@ -254,6 +255,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 16,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enhance",
@@ -331,6 +333,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 22,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enhance",
@@ -425,6 +428,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 8,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "heal",
@@ -462,6 +466,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 22,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enhance",
@@ -472,7 +477,6 @@ var CARDS = {
         "id": "rally",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -492,7 +496,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "heal",
@@ -516,7 +519,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "heal",
@@ -537,6 +539,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 25,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
@@ -621,12 +624,12 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 21,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
         "x": 1,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "protect",
@@ -645,7 +648,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "protect",
@@ -660,7 +662,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "protect",
@@ -675,7 +676,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "protect",
@@ -696,7 +696,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "protect",
@@ -718,6 +717,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 23,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enhance",
@@ -820,18 +820,17 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 20,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "heal",
         "x": 1,
         "y": "4",
-        "z": 4,
       },
     ],
     "upgrades": {
@@ -846,13 +845,11 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "heal",
             "x": 1,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -863,19 +860,16 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "heal",
             "x": 1,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "protect",
             "x": 1,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -886,20 +880,17 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "heal",
             "x": 1,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 1,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -910,20 +901,17 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "heal",
             "x": 1,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 1,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
         ],
@@ -941,6 +929,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 31,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "imbue",
@@ -1047,6 +1036,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 45,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enhance",
@@ -1057,7 +1047,6 @@ var CARDS = {
         "id": "heal",
         "x": 1,
         "y": "1",
-        "z": 1,
         "all": "1",
       },
     ],
@@ -1072,7 +1061,6 @@ var CARDS = {
             "id": "imbue",
             "x": 1,
             "y": "1",
-            "z": 1,
             "s": "nullify",
           },
           {
@@ -1084,7 +1072,6 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
         ],
@@ -1103,7 +1090,6 @@ var CARDS = {
             "id": "imbue",
             "x": 1,
             "y": "1",
-            "z": 1,
             "s": "nullify",
           },
           {
@@ -1115,7 +1101,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
         ],
@@ -1133,6 +1118,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 30,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -1215,6 +1201,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 42,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enhance",
@@ -1242,7 +1229,6 @@ var CARDS = {
             "id": "imbue",
             "x": 1,
             "y": "2",
-            "z": 2,
             "s": "burn",
           },
           {
@@ -1267,7 +1253,6 @@ var CARDS = {
             "id": "imbue",
             "x": 2,
             "y": "2",
-            "z": 2,
             "s": "burn",
           },
           {
@@ -1295,6 +1280,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 29,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "imbue",
@@ -1402,6 +1388,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 45,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enhance",
@@ -1412,7 +1399,6 @@ var CARDS = {
         "id": "rally",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "heal",
@@ -1435,7 +1421,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "heal",
@@ -1459,7 +1444,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "heal",
@@ -1479,7 +1463,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "heal",
@@ -1500,6 +1483,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 6,
+    "maxLevel": 4,
     "skill": [],
     "upgrades": {
       "2": {
@@ -1537,6 +1521,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 9,
+    "maxLevel": 4,
     "skill": [],
     "upgrades": {
       "2": {
@@ -1546,7 +1531,6 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -1557,7 +1541,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -1578,6 +1561,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 8,
+    "maxLevel": 1,
     "skill": [],
     "upgrades": {}
   },
@@ -1592,6 +1576,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 11,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "protect",
@@ -1659,12 +1644,12 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 8,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -1675,13 +1660,11 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "rally",
             "x": 1,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -1692,19 +1675,16 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "rally",
             "x": 1,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "rally",
             "x": 1,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -1725,6 +1705,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 12,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "heal",
@@ -1775,6 +1756,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 17,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "weaken",
@@ -1835,6 +1817,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 16,
+    "maxLevel": 5,
     "skill": [],
     "upgrades": {
       "2": {
@@ -1878,6 +1861,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 20,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
@@ -1937,6 +1921,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 25,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -2013,6 +1998,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 13,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "enhance",
@@ -2085,6 +2071,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 17,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enhance",
@@ -2151,6 +2138,7 @@ var CARDS = {
     "type": "8",
     "sub_type": [],
     "health": 18,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -2211,6 +2199,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 23,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enhance",
@@ -2309,6 +2298,7 @@ var CARDS = {
     "type": "8",
     "sub_type": [],
     "health": 23,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enhance",
@@ -2379,6 +2369,7 @@ var CARDS = {
     "type": "8",
     "sub_type": [],
     "health": 40,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -2476,6 +2467,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 2,
+    "maxLevel": 4,
     "skill": [],
     "upgrades": {
       "2": {
@@ -2503,6 +2495,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 6,
+    "maxLevel": 4,
     "skill": [],
     "upgrades": {
       "2": {
@@ -2530,6 +2523,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 11,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "enhance",
@@ -2587,6 +2581,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 11,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enhance",
@@ -2665,6 +2660,7 @@ var CARDS = {
     "type": "8",
     "sub_type": [],
     "health": 25,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -2744,18 +2740,17 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 29,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "rally",
         "x": 1,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -2766,13 +2761,11 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -2783,13 +2776,11 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -2804,19 +2795,16 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "rally",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "rally",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -2833,6 +2821,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 20,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -2895,6 +2884,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 6,
+    "maxLevel": 4,
     "skill": [],
     "upgrades": {
       "2": {
@@ -2928,6 +2918,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 7,
+    "maxLevel": 4,
     "skill": [],
     "upgrades": {
       "2": {
@@ -2961,6 +2952,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 17,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "weaken",
@@ -3025,6 +3017,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 12,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "enhance",
@@ -3088,6 +3081,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 12,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "enfeeble",
@@ -3130,6 +3124,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 14,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enhance",
@@ -3212,6 +3207,7 @@ var CARDS = {
     "type": "8",
     "sub_type": [],
     "health": 18,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enhance",
@@ -3274,6 +3270,7 @@ var CARDS = {
     "type": "8",
     "sub_type": [],
     "health": 17,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enhance",
@@ -3338,6 +3335,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 18,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -3405,6 +3403,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 18,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enhance",
@@ -3437,7 +3436,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -3457,7 +3455,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -3478,6 +3475,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 18,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enhance",
@@ -3554,6 +3552,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 18,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -3620,6 +3619,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 17,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enhance",
@@ -3680,6 +3680,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 19,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enhance",
@@ -3700,7 +3701,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -3720,13 +3720,11 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "protect",
             "x": 1,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -3746,12 +3744,12 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 24,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "9",
-        "z": 9,
         "all": "1",
       },
     ],
@@ -3767,7 +3765,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
         ],
@@ -3779,7 +3776,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -3795,7 +3791,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -3811,7 +3806,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -3832,6 +3826,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 19,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enhance",
@@ -3894,7 +3889,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
@@ -3915,6 +3909,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 24,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
@@ -3993,6 +3988,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 19,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enhance",
@@ -4047,12 +4043,12 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 25,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "5",
-        "z": 5,
         "all": "1",
       },
     ],
@@ -4064,7 +4060,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -4080,7 +4075,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -4101,7 +4095,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -4123,7 +4116,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -4150,6 +4142,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 23,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
@@ -4249,6 +4242,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 24,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -4338,6 +4332,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 28,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -4429,6 +4424,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 22,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -4554,6 +4550,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 23,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
@@ -4635,6 +4632,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 30,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "jam",
@@ -4714,6 +4712,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 26,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -4790,6 +4789,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 32,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "protect",
@@ -4851,6 +4851,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 27,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
@@ -4920,6 +4921,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 32,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
@@ -4985,6 +4987,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 35,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
@@ -5070,6 +5073,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 30,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
@@ -5182,25 +5186,23 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 40,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
         "id": "rally",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "heal",
         "x": 2,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
     ],
@@ -5212,20 +5214,17 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "heal",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -5237,20 +5236,17 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 5,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "heal",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -5262,20 +5258,17 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 5,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "heal",
             "x": 4,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -5287,20 +5280,17 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 5,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "heal",
             "x": 4,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -5312,20 +5302,17 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 6,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "heal",
             "x": 5,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -5342,19 +5329,18 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 37,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
         "x": 1,
         "y": "1",
-        "z": 1,
         "all": "1",
       },
       {
         "id": "protect",
         "x": 1,
         "y": "1",
-        "z": 1,
         "all": "1",
       },
       {
@@ -5370,14 +5356,12 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 1,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
@@ -5393,14 +5377,12 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 1,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
@@ -5416,14 +5398,12 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 2,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
@@ -5439,14 +5419,12 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 2,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
@@ -5462,14 +5440,12 @@ var CARDS = {
             "id": "heal",
             "x": 5,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 3,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
@@ -5490,6 +5466,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 45,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -5612,6 +5589,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 25,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -5705,6 +5683,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 26,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -5775,6 +5754,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 43,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -5857,12 +5837,12 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 40,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "jam",
@@ -5877,7 +5857,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "jam",
@@ -5892,7 +5871,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "jam",
@@ -5907,7 +5885,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "jam",
@@ -5922,13 +5899,11 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "rally",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "jam",
@@ -5943,13 +5918,11 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "rally",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "jam",
@@ -5969,6 +5942,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 25,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "protect",
@@ -6030,6 +6004,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 30,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
@@ -6105,6 +6080,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 27,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -6179,6 +6155,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 40,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
@@ -6253,6 +6230,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 30,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enhance",
@@ -6336,6 +6314,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 27,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -6411,6 +6390,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 29,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "protect",
@@ -6488,6 +6468,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 32,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
@@ -6571,6 +6552,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 34,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -6650,6 +6632,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 32,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enhance",
@@ -6729,6 +6712,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 40,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enhance",
@@ -6816,6 +6800,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 23,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -6895,6 +6880,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 22,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
@@ -6978,6 +6964,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 26,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
@@ -7055,6 +7042,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 26,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
@@ -7155,6 +7143,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 28,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enhance",
@@ -7247,6 +7236,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 21,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enhance",
@@ -7328,6 +7318,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 32,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enhance",
@@ -7438,6 +7429,7 @@ var CARDS = {
     "type": "2",
     "sub_type": ["7"],
     "health": 30,
+    "maxLevel": 7,
     "skill": [
       {
         "id": "enhance",
@@ -7448,7 +7440,6 @@ var CARDS = {
         "id": "heal",
         "x": 2,
         "y": "7",
-        "z": 7,
         "all": "1",
       },
       {
@@ -7474,7 +7465,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -7500,7 +7490,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -7523,7 +7512,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -7546,7 +7534,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -7568,6 +7555,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 26,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
@@ -7652,6 +7640,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 30,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enhance",
@@ -7753,6 +7742,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 28,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "protect",
@@ -7840,6 +7830,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 35,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enhance",
@@ -7946,6 +7937,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 36,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enhance",
@@ -8041,6 +8033,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 23,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enhance",
@@ -8137,6 +8130,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 35,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enhance",
@@ -8258,6 +8252,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 38,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enhance",
@@ -8359,6 +8354,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 40,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enhance",
@@ -8373,7 +8369,6 @@ var CARDS = {
         "id": "protect",
         "x": 2,
         "y": "5",
-        "z": 5,
       },
     ],
     "upgrades": {
@@ -8397,7 +8392,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
         ],
       },
@@ -8417,7 +8411,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
         ],
       },
@@ -8437,7 +8430,6 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "5",
-            "z": 5,
           },
         ],
       },
@@ -8459,7 +8451,6 @@ var CARDS = {
             "id": "protect",
             "x": 5,
             "y": "5",
-            "z": 5,
           },
         ],
       },
@@ -8475,6 +8466,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 30,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enhance",
@@ -8575,6 +8567,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 33,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enhance",
@@ -8685,6 +8678,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 36,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enhance",
@@ -8804,6 +8798,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 31,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enhance",
@@ -8904,6 +8899,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 35,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enhance",
@@ -9022,6 +9018,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 37,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enhance",
@@ -9142,6 +9139,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 50,
+    "maxLevel": 6,
     "skill": [],
     "upgrades": {
       "2": {
@@ -9177,6 +9175,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 30,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -9260,12 +9259,12 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 22,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
         "x": 1,
         "y": "10",
-        "z": 10,
       },
     ],
     "upgrades": {
@@ -9280,7 +9279,6 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "10",
-            "z": 10,
             "all": "1",
           },
         ],
@@ -9296,7 +9294,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "10",
-            "z": 10,
             "all": "1",
           },
         ],
@@ -9308,7 +9305,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "10",
-            "z": 10,
             "all": "1",
           },
         ],
@@ -9325,6 +9321,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 32,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enhance",
@@ -9414,6 +9411,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 31,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -9493,6 +9491,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 35,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
@@ -9572,6 +9571,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 37,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -9655,6 +9655,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 36,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enhance",
@@ -9764,6 +9765,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 38,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -9867,6 +9869,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 29,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "imbue",
@@ -9941,6 +9944,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 32,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -10015,6 +10019,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 30,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
@@ -10100,12 +10105,12 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 30,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "imbue",
         "x": 2,
         "y": "3",
-        "z": 3,
         "s": "armored",
       },
       {
@@ -10125,7 +10130,6 @@ var CARDS = {
             "id": "imbue",
             "x": 2,
             "y": "3",
-            "z": 3,
             "s": "armored",
           },
           {
@@ -10141,7 +10145,6 @@ var CARDS = {
             "id": "imbue",
             "x": 3,
             "y": "3",
-            "z": 3,
             "s": "armored",
           },
           {
@@ -10157,7 +10160,6 @@ var CARDS = {
             "id": "imbue",
             "x": 3,
             "y": "3",
-            "z": 3,
             "s": "armored",
           },
           {
@@ -10173,7 +10175,6 @@ var CARDS = {
             "id": "imbue",
             "x": 2,
             "y": "3",
-            "z": 3,
             "s": "armored",
             "all": "1",
           },
@@ -10196,6 +10197,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 34,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -10284,6 +10286,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 30,
+    "maxLevel": 7,
     "skill": [
       {
         "id": "enhance",
@@ -10421,6 +10424,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 30,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -10505,6 +10509,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 25,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -10575,6 +10580,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 32,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -10671,6 +10677,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 32,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enhance",
@@ -10753,6 +10760,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 26,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -10823,6 +10831,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 27,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -10901,6 +10910,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 31,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "weaken",
@@ -10989,6 +10999,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 28,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -11085,6 +11096,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 36,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -11195,6 +11207,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 27,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "weaken",
@@ -11285,6 +11298,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 30,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enhance",
@@ -11378,6 +11392,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 34,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
@@ -11481,6 +11496,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 36,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -11592,6 +11608,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 32,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
@@ -11687,6 +11704,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 34,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -11797,6 +11815,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 33,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -11889,6 +11908,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 28,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -11979,6 +11999,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 28,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "protect",
@@ -12075,6 +12096,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 33,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "weaken",
@@ -12167,6 +12189,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 40,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
@@ -12270,6 +12293,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 32,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "jam",
@@ -12383,6 +12407,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 28,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enhance",
@@ -12477,6 +12502,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 14,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
@@ -12486,7 +12512,6 @@ var CARDS = {
         "id": "rally",
         "x": 1,
         "y": "7",
-        "z": 7,
       },
     ],
     "upgrades": {
@@ -12501,13 +12526,11 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "heal",
             "x": 1,
             "y": "7",
-            "z": 7,
           },
         ],
       },
@@ -12522,13 +12545,11 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "heal",
             "x": 1,
             "y": "7",
-            "z": 7,
           },
         ],
       },
@@ -12543,13 +12564,11 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "heal",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
         ],
       },
@@ -12570,6 +12589,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 16,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "weaken",
@@ -12579,7 +12599,6 @@ var CARDS = {
         "id": "imbue",
         "x": 1,
         "y": "7",
-        "z": 7,
         "s": "pierce",
       },
     ],
@@ -12595,7 +12614,6 @@ var CARDS = {
             "id": "imbue",
             "x": 2,
             "y": "7",
-            "z": 7,
             "s": "pierce",
           },
         ],
@@ -12612,7 +12630,6 @@ var CARDS = {
             "id": "imbue",
             "x": 3,
             "y": "7",
-            "z": 7,
             "s": "pierce",
           },
         ],
@@ -12629,7 +12646,6 @@ var CARDS = {
             "id": "imbue",
             "x": 4,
             "y": "7",
-            "z": 7,
             "s": "pierce",
           },
         ],
@@ -12651,6 +12667,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 15,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -12734,6 +12751,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 30,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "weaken",
@@ -12743,14 +12761,12 @@ var CARDS = {
         "id": "imbue",
         "x": 1,
         "y": "7",
-        "z": 7,
         "s": "nullify",
       },
       {
         "id": "heal",
         "x": 2,
         "y": "7",
-        "z": 7,
       },
     ],
     "upgrades": {
@@ -12765,14 +12781,12 @@ var CARDS = {
             "id": "imbue",
             "x": 1,
             "y": "7",
-            "z": 7,
             "s": "nullify",
           },
           {
             "id": "heal",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
         ],
       },
@@ -12791,14 +12805,12 @@ var CARDS = {
             "id": "imbue",
             "x": 2,
             "y": "7",
-            "z": 7,
             "s": "nullify",
           },
           {
             "id": "heal",
             "x": 2,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
         ],
@@ -12814,14 +12826,12 @@ var CARDS = {
             "id": "imbue",
             "x": 2,
             "y": "7",
-            "z": 7,
             "s": "nullify",
           },
           {
             "id": "heal",
             "x": 2,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
         ],
@@ -12837,14 +12847,12 @@ var CARDS = {
             "id": "imbue",
             "x": 3,
             "y": "7",
-            "z": 7,
             "s": "nullify",
           },
           {
             "id": "heal",
             "x": 2,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
         ],
@@ -12862,6 +12870,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 27,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -12871,7 +12880,6 @@ var CARDS = {
         "id": "imbue",
         "x": 2,
         "y": "7",
-        "z": 7,
         "s": "burn",
       },
       {
@@ -12892,7 +12900,6 @@ var CARDS = {
             "id": "imbue",
             "x": 2,
             "y": "7",
-            "z": 7,
             "s": "burn",
           },
           {
@@ -12913,7 +12920,6 @@ var CARDS = {
             "id": "imbue",
             "x": 3,
             "y": "7",
-            "z": 7,
             "s": "burn",
           },
           {
@@ -12934,7 +12940,6 @@ var CARDS = {
             "id": "imbue",
             "x": 3,
             "y": "7",
-            "z": 7,
             "s": "burn",
           },
           {
@@ -12955,7 +12960,6 @@ var CARDS = {
             "id": "imbue",
             "x": 4,
             "y": "7",
-            "z": 7,
             "s": "burn",
           },
           {
@@ -12976,7 +12980,6 @@ var CARDS = {
             "id": "imbue",
             "x": 5,
             "y": "7",
-            "z": 7,
             "s": "burn",
           },
           {
@@ -12999,6 +13002,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 35,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "imbue",
@@ -13130,19 +13134,18 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 72,
+    "maxLevel": 7,
     "skill": [
       {
         "id": "heal",
         "x": 2,
         "y": "7",
-        "z": 7,
         "all": "1",
       },
       {
         "id": "imbue",
         "x": 4,
         "y": "7",
-        "z": 7,
         "s": "berserk",
       },
       {
@@ -13162,14 +13165,12 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
             "id": "imbue",
             "x": 5,
             "y": "7",
-            "z": 7,
             "s": "berserk",
           },
           {
@@ -13189,14 +13190,12 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
             "id": "imbue",
             "x": 6,
             "y": "7",
-            "z": 7,
             "s": "berserk",
           },
           {
@@ -13216,14 +13215,12 @@ var CARDS = {
             "id": "heal",
             "x": 5,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
             "id": "imbue",
             "x": 7,
             "y": "7",
-            "z": 7,
             "s": "berserk",
           },
           {
@@ -13245,19 +13242,18 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 76,
+    "maxLevel": 7,
     "skill": [
       {
         "id": "imbue",
         "x": 2,
         "y": "7",
-        "z": 7,
         "s": "burn",
       },
       {
         "id": "rally",
         "x": 2,
         "y": "7",
-        "z": 7,
         "all": "1",
       },
       {
@@ -13278,7 +13274,6 @@ var CARDS = {
             "id": "imbue",
             "x": 2,
             "y": "7",
-            "z": 7,
             "s": "burn",
             "all": "1",
           },
@@ -13286,7 +13281,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -13307,7 +13301,6 @@ var CARDS = {
             "id": "imbue",
             "x": 2,
             "y": "7",
-            "z": 7,
             "s": "burn",
             "all": "1",
           },
@@ -13315,7 +13308,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -13336,7 +13328,6 @@ var CARDS = {
             "id": "imbue",
             "x": 4,
             "y": "7",
-            "z": 7,
             "s": "burn",
             "all": "1",
           },
@@ -13344,7 +13335,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -13366,6 +13356,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 35,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
@@ -13489,6 +13480,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 25,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "imbue",
@@ -13593,6 +13585,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 50,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "imbue",
@@ -13713,6 +13706,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 14,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
@@ -13722,7 +13716,6 @@ var CARDS = {
         "id": "rally",
         "x": 1,
         "y": "5",
-        "z": 5,
       },
     ],
     "upgrades": {
@@ -13737,7 +13730,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "weaken",
@@ -13756,7 +13748,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "weaken",
@@ -13775,7 +13766,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "weaken",
@@ -13800,6 +13790,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 16,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -13883,6 +13874,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 15,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -13892,7 +13884,6 @@ var CARDS = {
         "id": "imbue",
         "x": 1,
         "y": "5",
-        "z": 5,
         "s": "armored",
       },
     ],
@@ -13912,7 +13903,6 @@ var CARDS = {
             "id": "imbue",
             "x": 1,
             "y": "5",
-            "z": 5,
             "s": "armored",
           },
         ],
@@ -13932,7 +13922,6 @@ var CARDS = {
             "id": "imbue",
             "x": 2,
             "y": "5",
-            "z": 5,
             "s": "armored",
           },
         ],
@@ -13952,7 +13941,6 @@ var CARDS = {
             "id": "imbue",
             "x": 3,
             "y": "5",
-            "z": 5,
             "s": "armored",
           },
         ],
@@ -13974,6 +13962,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 40,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "imbue",
@@ -14084,6 +14073,7 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 27,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -14203,6 +14193,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 35,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
@@ -14324,19 +14315,18 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 70,
+    "maxLevel": 7,
     "skill": [
       {
         "id": "imbue",
         "x": 2,
         "y": "5",
-        "z": 5,
         "s": "frost",
       },
       {
         "id": "rally",
         "x": 2,
         "y": "5",
-        "z": 5,
         "all": "1",
       },
       {
@@ -14356,14 +14346,12 @@ var CARDS = {
             "id": "imbue",
             "x": 2,
             "y": "5",
-            "z": 5,
             "s": "frost",
           },
           {
             "id": "rally",
             "x": 2,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -14379,14 +14367,12 @@ var CARDS = {
             "id": "imbue",
             "x": 2,
             "y": "5",
-            "z": 5,
             "s": "frost",
           },
           {
             "id": "rally",
             "x": 3,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -14402,14 +14388,12 @@ var CARDS = {
             "id": "imbue",
             "x": 3,
             "y": "5",
-            "z": 5,
             "s": "frost",
           },
           {
             "id": "rally",
             "x": 4,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -14429,14 +14413,12 @@ var CARDS = {
             "id": "imbue",
             "x": 4,
             "y": "5",
-            "z": 5,
             "s": "frost",
           },
           {
             "id": "rally",
             "x": 4,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -14458,12 +14440,12 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 72,
+    "maxLevel": 7,
     "skill": [
       {
         "id": "imbue",
         "x": 1,
         "y": "5",
-        "z": 5,
         "s": "berserk",
         "all": "1",
       },
@@ -14583,6 +14565,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 42,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
@@ -14674,6 +14657,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 42,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
@@ -14773,6 +14757,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 14,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
@@ -14844,6 +14829,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 15,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enhance",
@@ -14932,6 +14918,7 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 38,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "weaken",
@@ -15022,12 +15009,12 @@ var CARDS = {
     "type": "2",
     "sub_type": [],
     "health": 32,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "imbue",
         "x": 2,
         "y": "9",
-        "z": 9,
         "s": "burn",
       },
       {
@@ -15052,7 +15039,6 @@ var CARDS = {
             "id": "imbue",
             "x": 3,
             "y": "9",
-            "z": 9,
             "s": "burn",
           },
           {
@@ -15077,7 +15063,6 @@ var CARDS = {
             "id": "imbue",
             "x": 3,
             "y": "9",
-            "z": 9,
             "s": "burn",
           },
           {
@@ -15098,7 +15083,6 @@ var CARDS = {
             "id": "imbue",
             "x": 4,
             "y": "9",
-            "z": 9,
             "s": "burn",
           },
           {
@@ -15124,19 +15108,18 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 76,
+    "maxLevel": 7,
     "skill": [
       {
         "id": "imbue",
         "x": 2,
         "y": "9",
-        "z": 9,
         "s": "frost",
       },
       {
         "id": "protect",
         "x": 3,
         "y": "9",
-        "z": 9,
         "all": "1",
       },
       {
@@ -15156,14 +15139,12 @@ var CARDS = {
             "id": "imbue",
             "x": 3,
             "y": "9",
-            "z": 9,
             "s": "frost",
           },
           {
             "id": "protect",
             "x": 3,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -15183,14 +15164,12 @@ var CARDS = {
             "id": "imbue",
             "x": 3,
             "y": "9",
-            "z": 9,
             "s": "frost",
           },
           {
             "id": "protect",
             "x": 4,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -15210,14 +15189,12 @@ var CARDS = {
             "id": "imbue",
             "x": 4,
             "y": "9",
-            "z": 9,
             "s": "frost",
           },
           {
             "id": "protect",
             "x": 4,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -15238,19 +15215,18 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 72,
+    "maxLevel": 7,
     "skill": [
       {
         "id": "imbue",
         "x": 3,
         "y": "9",
-        "z": 9,
         "s": "berserk",
       },
       {
         "id": "rally",
         "x": 2,
         "y": "9",
-        "z": 9,
         "all": "1",
       },
       {
@@ -15272,14 +15248,12 @@ var CARDS = {
             "id": "imbue",
             "x": 4,
             "y": "9",
-            "z": 9,
             "s": "berserk",
           },
           {
             "id": "rally",
             "x": 2,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -15301,14 +15275,12 @@ var CARDS = {
             "id": "imbue",
             "x": 4,
             "y": "9",
-            "z": 9,
             "s": "berserk",
           },
           {
             "id": "rally",
             "x": 3,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -15330,14 +15302,12 @@ var CARDS = {
             "id": "imbue",
             "x": 5,
             "y": "9",
-            "z": 9,
             "s": "berserk",
           },
           {
             "id": "rally",
             "x": 3,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -15360,6 +15330,7 @@ var CARDS = {
     "type": "3",
     "sub_type": [],
     "health": 58,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "imbue",
@@ -15495,9 +15466,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
@@ -15580,9 +15552,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 4,
     "health": 18,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
@@ -15653,9 +15626,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 5,
     "health": 22,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
@@ -15727,9 +15701,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 2,
     "health": 12,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -15826,9 +15801,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 3,
     "health": 15,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -15887,9 +15863,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 4,
     "health": 19,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -15973,9 +15950,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 0,
     "health": 14,
+    "attack": 0,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -15985,7 +15963,6 @@ var CARDS = {
         "id": "heal",
         "x": 1,
         "y": "1",
-        "z": 1,
         "all": "1",
       },
     ],
@@ -16004,7 +15981,6 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
         ],
@@ -16023,7 +15999,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
         ],
@@ -16039,7 +16014,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
         ],
@@ -16055,9 +16029,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 2,
     "health": 17,
+    "attack": 2,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -16067,7 +16042,6 @@ var CARDS = {
         "id": "heal",
         "x": 2,
         "y": "1",
-        "z": 1,
         "all": "1",
       },
     ],
@@ -16090,7 +16064,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
         ],
@@ -16117,7 +16090,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
         ],
@@ -16133,9 +16105,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 3,
     "health": 20,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -16149,7 +16122,6 @@ var CARDS = {
         "id": "heal",
         "x": 2,
         "y": "1",
-        "z": 1,
         "all": "1",
       },
     ],
@@ -16172,7 +16144,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
         ],
@@ -16191,7 +16162,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
         ],
@@ -16214,7 +16184,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
         ],
@@ -16230,9 +16199,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 13,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -16242,7 +16212,6 @@ var CARDS = {
         "id": "rally",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "weaken",
@@ -16264,7 +16233,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "weaken",
@@ -16282,7 +16250,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "weaken",
@@ -16301,7 +16268,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "weaken",
@@ -16320,7 +16286,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "weaken",
@@ -16340,9 +16305,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 6,
     "health": 16,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -16352,7 +16318,6 @@ var CARDS = {
         "id": "rally",
         "x": 3,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "weaken",
@@ -16379,7 +16344,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "weaken",
@@ -16407,9 +16371,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 7,
     "health": 20,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -16419,7 +16384,6 @@ var CARDS = {
         "id": "rally",
         "x": 4,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "weaken",
@@ -16442,7 +16406,6 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "weaken",
@@ -16469,7 +16432,6 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "weaken",
@@ -16489,9 +16451,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 3,
     "health": 9,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -16574,9 +16537,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 4,
     "health": 13,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -16633,9 +16597,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 5,
     "health": 15,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -16692,9 +16657,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 6,
     "health": 20,
+    "attack": 6,
     "cost": 4,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -16704,7 +16670,6 @@ var CARDS = {
         "id": "protect",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "weaken",
@@ -16722,7 +16687,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "weaken",
@@ -16741,7 +16705,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "weaken",
@@ -16760,7 +16723,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "weaken",
@@ -16779,7 +16741,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "weaken",
@@ -16798,9 +16759,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 7,
     "health": 24,
+    "attack": 7,
     "cost": 4,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -16810,7 +16772,6 @@ var CARDS = {
         "id": "protect",
         "x": 3,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "weaken",
@@ -16832,7 +16793,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "weaken",
@@ -16855,7 +16815,6 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "weaken",
@@ -16874,9 +16833,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 8,
     "health": 30,
+    "attack": 8,
     "cost": 4,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -16886,7 +16846,6 @@ var CARDS = {
         "id": "protect",
         "x": 4,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "weaken",
@@ -16908,7 +16867,6 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "weaken",
@@ -16927,7 +16885,6 @@ var CARDS = {
             "id": "protect",
             "x": 5,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "weaken",
@@ -16952,9 +16909,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 2,
     "health": 10,
+    "attack": 2,
     "cost": 4,
+    "maxLevel": 4,
     "skill": [],
     "upgrades": {
       "2": {
@@ -17001,9 +16959,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 3,
     "health": 11,
+    "attack": 3,
     "cost": 4,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "armored",
@@ -17046,9 +17005,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 4,
     "health": 13,
+    "attack": 4,
     "cost": 4,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "armored",
@@ -17092,9 +17052,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 4,
     "health": 2,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [],
     "upgrades": {
       "2": {
@@ -17116,7 +17077,6 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "burn",
@@ -17135,15 +17095,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 5,
     "health": 3,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "heal",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "burn",
@@ -17161,7 +17121,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "burn",
@@ -17184,15 +17143,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 5,
     "health": 6,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "heal",
         "x": 3,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "burn",
@@ -17210,7 +17169,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "burn",
@@ -17233,9 +17191,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 21,
+    "attack": 5,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "jam",
@@ -17323,9 +17282,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 26,
+    "attack": 6,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "jam",
@@ -17400,9 +17360,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 7,
     "health": 30,
+    "attack": 7,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "jam",
@@ -17477,9 +17438,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 4,
     "health": 13,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -17550,9 +17512,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 5,
     "health": 16,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -17636,9 +17599,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 7,
     "health": 17,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -17710,15 +17674,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 3,
     "health": 9,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "flurry",
@@ -17736,7 +17700,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "flurry",
@@ -17755,7 +17718,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "flurry",
@@ -17775,15 +17737,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 13,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 3,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "flurry",
@@ -17809,7 +17771,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "flurry",
@@ -17829,15 +17790,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 17,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 4,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "flurry",
@@ -17855,7 +17816,6 @@ var CARDS = {
             "id": "heal",
             "x": 5,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "flurry",
@@ -17877,7 +17837,6 @@ var CARDS = {
             "id": "heal",
             "x": 5,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "flurry",
@@ -17896,9 +17855,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 2,
     "health": 20,
+    "attack": 2,
     "cost": 4,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "protect",
@@ -17982,9 +17942,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 3,
     "health": 21,
+    "attack": 3,
     "cost": 4,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "protect",
@@ -18042,9 +18003,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 4,
     "health": 29,
+    "attack": 4,
     "cost": 4,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "protect",
@@ -18101,9 +18063,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 2,
     "health": 7,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "protect",
@@ -18147,9 +18110,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 3,
     "health": 9,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "protect",
@@ -18192,9 +18156,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "protect",
@@ -18237,9 +18202,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 3,
     "health": 10,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -18249,7 +18215,6 @@ var CARDS = {
         "id": "protect",
         "x": 1,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "strike",
@@ -18275,7 +18240,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "strike",
@@ -18293,7 +18257,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "strike",
@@ -18311,7 +18274,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -18331,9 +18293,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 13,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -18343,7 +18306,6 @@ var CARDS = {
         "id": "protect",
         "x": 1,
         "y": "5",
-        "z": 5,
         "all": "1",
       },
       {
@@ -18370,7 +18332,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -18389,7 +18350,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -18408,7 +18368,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -18428,9 +18387,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 16,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -18440,7 +18400,6 @@ var CARDS = {
         "id": "protect",
         "x": 2,
         "y": "5",
-        "z": 5,
         "all": "1",
       },
       {
@@ -18467,7 +18426,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -18486,7 +18444,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -18511,9 +18468,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 2,
     "health": 7,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
@@ -18592,9 +18550,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 3,
     "health": 9,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -18653,9 +18612,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -18726,9 +18686,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 3,
     "health": 13,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "weaken",
@@ -18801,9 +18762,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 15,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "weaken",
@@ -18873,9 +18835,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 19,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "weaken",
@@ -18946,9 +18909,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 2,
     "health": 7,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
@@ -18958,7 +18922,6 @@ var CARDS = {
         "id": "legion",
         "x": 1,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -18977,7 +18940,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -18995,7 +18957,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -19014,7 +18975,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -19029,9 +18989,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 3,
     "health": 10,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
@@ -19045,7 +19006,6 @@ var CARDS = {
         "id": "legion",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -19071,7 +19031,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -19089,7 +19048,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -19104,9 +19062,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 3,
     "health": 13,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
@@ -19120,7 +19079,6 @@ var CARDS = {
         "id": "legion",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -19146,7 +19104,6 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -19164,7 +19121,6 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -19179,9 +19135,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 1,
     "health": 4,
+    "attack": 1,
     "cost": 2,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "weaken",
@@ -19220,9 +19177,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 2,
     "health": 7,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "burn",
@@ -19274,9 +19232,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 9,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "burn",
@@ -19338,9 +19297,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 7,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -19350,7 +19310,6 @@ var CARDS = {
         "id": "legion",
         "x": 1,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -19376,7 +19335,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -19396,9 +19354,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 5,
     "health": 10,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -19408,7 +19367,6 @@ var CARDS = {
         "id": "legion",
         "x": 1,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -19426,7 +19384,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -19448,7 +19405,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -19464,9 +19420,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 6,
     "health": 13,
+    "attack": 6,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -19480,7 +19437,6 @@ var CARDS = {
         "id": "legion",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -19506,7 +19462,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -19530,9 +19485,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -19616,9 +19572,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 13,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -19690,9 +19647,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 16,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -19776,9 +19734,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 5,
     "health": 13,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "weaken",
@@ -19789,7 +19748,6 @@ var CARDS = {
         "id": "protect",
         "x": 1,
         "y": "4",
-        "z": 4,
         "all": "1",
       },
       {
@@ -19813,7 +19771,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -19837,7 +19794,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -19858,9 +19814,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 7,
     "health": 15,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "weaken",
@@ -19871,7 +19828,6 @@ var CARDS = {
         "id": "protect",
         "x": 2,
         "y": "4",
-        "z": 4,
         "all": "1",
       },
       {
@@ -19899,7 +19855,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -19924,9 +19879,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 8,
     "health": 19,
+    "attack": 8,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "weaken",
@@ -19937,7 +19893,6 @@ var CARDS = {
         "id": "protect",
         "x": 2,
         "y": "4",
-        "z": 4,
         "all": "1",
       },
       {
@@ -19961,7 +19916,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -19981,7 +19935,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -20006,15 +19959,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 9,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "protect",
         "x": 1,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "strike",
@@ -20036,7 +19989,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "strike",
@@ -20054,7 +20006,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "strike",
@@ -20072,7 +20023,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "strike",
@@ -20096,15 +20046,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 11,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "protect",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "strike",
@@ -20126,7 +20076,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "strike",
@@ -20148,7 +20097,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "strike",
@@ -20172,15 +20120,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "protect",
         "x": 3,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "strike",
@@ -20202,7 +20150,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "strike",
@@ -20224,7 +20171,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "strike",
@@ -20248,9 +20194,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 1,
     "health": 6,
+    "attack": 1,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "strike",
@@ -20298,9 +20245,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 1,
     "health": 9,
+    "attack": 1,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "strike",
@@ -20344,9 +20292,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 2,
     "health": 10,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "evade",
@@ -20398,9 +20347,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 12,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
@@ -20484,9 +20434,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 15,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
@@ -20558,9 +20509,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 20,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
@@ -20632,9 +20584,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 14,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "protect",
@@ -20644,7 +20597,6 @@ var CARDS = {
         "id": "rally",
         "x": 1,
         "y": "9",
-        "z": 9,
         "all": "1",
       },
       {
@@ -20668,7 +20620,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -20688,7 +20639,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -20709,7 +20659,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -20731,9 +20680,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 18,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "protect",
@@ -20743,7 +20693,6 @@ var CARDS = {
         "id": "rally",
         "x": 2,
         "y": "9",
-        "z": 9,
         "all": "1",
       },
       {
@@ -20767,7 +20716,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -20797,9 +20745,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 7,
     "health": 21,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "protect",
@@ -20809,7 +20758,6 @@ var CARDS = {
         "id": "rally",
         "x": 2,
         "y": "9",
-        "z": 9,
         "all": "1",
       },
       {
@@ -20833,7 +20781,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -20857,7 +20804,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -20878,9 +20824,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 11,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -20894,7 +20841,6 @@ var CARDS = {
         "id": "rally",
         "x": 2,
         "y": "9",
-        "z": 9,
       },
     ],
     "upgrades": {
@@ -20916,7 +20862,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -20934,7 +20879,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -20953,7 +20897,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -20968,9 +20911,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 7,
     "health": 14,
+    "attack": 7,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -20984,7 +20928,6 @@ var CARDS = {
         "id": "rally",
         "x": 3,
         "y": "9",
-        "z": 9,
       },
     ],
     "upgrades": {
@@ -21006,7 +20949,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -21024,7 +20966,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -21043,9 +20984,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 8,
     "health": 16,
+    "attack": 8,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -21059,7 +21001,6 @@ var CARDS = {
         "id": "rally",
         "x": 3,
         "y": "9",
-        "z": 9,
       },
     ],
     "upgrades": {
@@ -21081,7 +21022,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -21103,7 +21043,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -21118,9 +21057,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 7,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "weaken",
@@ -21203,9 +21143,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 10,
+    "attack": 6,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "weaken",
@@ -21276,9 +21217,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 15,
+    "attack": 6,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "weaken",
@@ -21349,9 +21291,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 6,
     "health": 15,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -21361,7 +21304,6 @@ var CARDS = {
         "id": "rally",
         "x": 1,
         "y": "1",
-        "z": 1,
         "all": "1",
       },
       {
@@ -21380,7 +21322,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
@@ -21413,7 +21354,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
@@ -21433,9 +21373,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 7,
     "health": 19,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -21445,7 +21386,6 @@ var CARDS = {
         "id": "rally",
         "x": 2,
         "y": "1",
-        "z": 1,
         "all": "1",
       },
       {
@@ -21472,7 +21412,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
@@ -21492,7 +21431,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
@@ -21517,9 +21455,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 8,
     "health": 23,
+    "attack": 8,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -21529,7 +21468,6 @@ var CARDS = {
         "id": "rally",
         "x": 3,
         "y": "1",
-        "z": 1,
         "all": "1",
       },
       {
@@ -21560,7 +21498,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
@@ -21579,7 +21516,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
@@ -21599,9 +21535,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 5,
     "health": 9,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "protect",
@@ -21612,7 +21549,6 @@ var CARDS = {
         "id": "rally",
         "x": 3,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -21639,7 +21575,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -21658,9 +21593,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 6,
     "health": 11,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -21675,7 +21611,6 @@ var CARDS = {
         "id": "rally",
         "x": 3,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -21702,7 +21637,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -21721,9 +21655,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 7,
     "health": 14,
+    "attack": 7,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -21738,7 +21673,6 @@ var CARDS = {
         "id": "rally",
         "x": 4,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -21761,7 +21695,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -21784,7 +21717,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -21799,9 +21731,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 2,
     "health": 16,
+    "attack": 2,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
@@ -21875,9 +21808,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 3,
     "health": 19,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
@@ -21953,9 +21887,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 25,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
@@ -22029,9 +21964,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 4,
     "health": 11,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -22045,7 +21981,6 @@ var CARDS = {
         "id": "protect",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -22075,7 +22010,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -22090,9 +22024,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 5,
     "health": 14,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -22106,7 +22041,6 @@ var CARDS = {
         "id": "protect",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -22132,7 +22066,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -22151,7 +22084,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -22166,9 +22098,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 6,
     "health": 17,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -22182,7 +22115,6 @@ var CARDS = {
         "id": "protect",
         "x": 3,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -22208,7 +22140,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -22227,7 +22158,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -22242,15 +22172,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 3,
     "health": 6,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
         "x": 1,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "frost",
@@ -22284,7 +22214,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "frost",
@@ -22307,15 +22236,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 5,
     "health": 9,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "frost",
@@ -22345,7 +22274,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "frost",
@@ -22363,7 +22291,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "frost",
@@ -22386,15 +22313,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 6,
     "health": 12,
+    "attack": 6,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
         "x": 3,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "frost",
@@ -22424,7 +22351,6 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "frost",
@@ -22442,7 +22368,6 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "frost",
@@ -22465,9 +22390,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 0,
     "health": 12,
+    "attack": 0,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -22538,9 +22464,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 0,
     "health": 16,
+    "attack": 0,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -22611,9 +22538,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 0,
     "health": 20,
+    "attack": 0,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -22697,9 +22625,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 7,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -22709,7 +22638,6 @@ var CARDS = {
         "id": "rally",
         "x": 1,
         "y": "7",
-        "z": 7,
       },
     ],
     "upgrades": {
@@ -22727,7 +22655,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
         ],
       },
@@ -22745,13 +22672,11 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "legion",
             "x": 1,
             "y": "7",
-            "z": 7,
           },
         ],
       },
@@ -22767,9 +22692,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 10,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -22779,13 +22705,11 @@ var CARDS = {
         "id": "rally",
         "x": 2,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "legion",
         "x": 1,
         "y": "7",
-        "z": 7,
       },
     ],
     "upgrades": {
@@ -22799,13 +22723,11 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "legion",
             "x": 1,
             "y": "7",
-            "z": 7,
           },
         ],
       },
@@ -22827,13 +22749,11 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "legion",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
         ],
       },
@@ -22849,9 +22769,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 13,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -22861,13 +22782,11 @@ var CARDS = {
         "id": "rally",
         "x": 2,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "legion",
         "x": 2,
         "y": "7",
-        "z": 7,
       },
     ],
     "upgrades": {
@@ -22889,13 +22808,11 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "legion",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
         ],
       },
@@ -22909,13 +22826,11 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "legion",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
         ],
       },
@@ -22931,9 +22846,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -22998,9 +22914,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7"],
-    "attack": 5,
     "health": 19,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -23065,9 +22982,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7"],
-    "attack": 6,
     "health": 24,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -23145,21 +23063,20 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "protect",
         "x": 1,
         "y": "7",
-        "z": 7,
         "all": "1",
       },
       {
@@ -23182,13 +23099,11 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "protect",
             "x": 1,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -23213,21 +23128,20 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7"],
-    "attack": 5,
     "health": 13,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "protect",
         "x": 1,
         "y": "7",
-        "z": 7,
         "all": "1",
       },
       {
@@ -23246,13 +23160,11 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "protect",
             "x": 1,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -23273,13 +23185,11 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "protect",
             "x": 2,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -23300,21 +23210,20 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7"],
-    "attack": 6,
     "health": 17,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "protect",
         "x": 2,
         "y": "7",
-        "z": 7,
         "all": "1",
       },
       {
@@ -23337,13 +23246,11 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "protect",
             "x": 2,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -23358,13 +23265,11 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "protect",
             "x": 2,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -23384,21 +23289,20 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7"],
-    "attack": 1,
     "health": 7,
+    "attack": 1,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "heal",
         "x": 1,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -23408,13 +23312,11 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "heal",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -23436,14 +23338,12 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
             "id": "heal",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -23458,22 +23358,21 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7"],
-    "attack": 2,
     "health": 10,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "7",
-        "z": 7,
         "all": "1",
       },
       {
         "id": "heal",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "jam",
@@ -23495,14 +23394,12 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
             "id": "heal",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "jam",
@@ -23530,22 +23427,21 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 16,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "7",
-        "z": 7,
         "all": "1",
       },
       {
         "id": "heal",
         "x": 3,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "jam",
@@ -23559,14 +23455,12 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
             "id": "heal",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "jam",
@@ -23593,14 +23487,12 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
             "id": "heal",
             "x": 4,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "jam",
@@ -23619,15 +23511,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7"],
-    "attack": 2,
     "health": 10,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
         "x": 1,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "frost",
@@ -23645,7 +23537,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "frost",
@@ -23676,7 +23567,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "frost",
@@ -23699,15 +23589,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7"],
-    "attack": 2,
     "health": 15,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
         "x": 1,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "frost",
@@ -23734,7 +23624,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "frost",
@@ -23756,7 +23645,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "frost",
@@ -23779,15 +23667,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 19,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
         "x": 2,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "frost",
@@ -23809,7 +23697,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "frost",
@@ -23836,7 +23723,6 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "frost",
@@ -23860,9 +23746,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 18,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -23951,9 +23838,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 5,
     "health": 21,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -24041,9 +23929,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 5,
     "health": 25,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -24118,9 +24007,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 5,
     "health": 12,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -24130,13 +24020,11 @@ var CARDS = {
         "id": "rally",
         "x": 1,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "rally",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -24162,13 +24050,11 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -24182,13 +24068,11 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -24203,9 +24087,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 6,
     "health": 15,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -24215,13 +24100,11 @@ var CARDS = {
         "id": "rally",
         "x": 2,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "rally",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -24243,13 +24126,11 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -24263,13 +24144,11 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -24283,13 +24162,11 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -24304,9 +24181,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 6,
     "health": 18,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -24316,13 +24194,11 @@ var CARDS = {
         "id": "rally",
         "x": 3,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "rally",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -24344,13 +24220,11 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -24364,13 +24238,11 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "rally",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -24385,13 +24257,11 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "rally",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -24407,9 +24277,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 3,
     "health": 15,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
@@ -24419,7 +24290,6 @@ var CARDS = {
         "id": "legion",
         "x": 2,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "jam",
@@ -24449,7 +24319,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "jam",
@@ -24469,9 +24338,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 18,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
@@ -24481,7 +24351,6 @@ var CARDS = {
         "id": "legion",
         "x": 2,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "jam",
@@ -24508,7 +24377,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "jam",
@@ -24527,7 +24395,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "jam",
@@ -24547,9 +24414,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 5,
     "health": 22,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
@@ -24559,7 +24427,6 @@ var CARDS = {
         "id": "legion",
         "x": 2,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "jam",
@@ -24581,7 +24448,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "jam",
@@ -24600,7 +24466,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "jam",
@@ -24619,7 +24484,6 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "jam",
@@ -24638,15 +24502,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 4,
     "health": 12,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "legion",
         "x": 1,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "strike",
@@ -24664,7 +24528,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "strike",
@@ -24686,7 +24549,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "strike",
@@ -24704,7 +24566,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "strike",
@@ -24727,15 +24588,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "legion",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "strike",
@@ -24761,7 +24622,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "strike",
@@ -24779,7 +24639,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "strike",
@@ -24802,15 +24661,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 4,
     "health": 17,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "legion",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "strike",
@@ -24836,7 +24695,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "strike",
@@ -24854,7 +24712,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "strike",
@@ -24877,15 +24734,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 4,
     "health": 8,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "heal",
@@ -24907,7 +24764,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "heal",
@@ -24929,7 +24785,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "heal",
@@ -24947,7 +24802,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
@@ -24967,9 +24821,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 5,
     "health": 10,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -24979,7 +24834,6 @@ var CARDS = {
         "id": "rally",
         "x": 1,
         "y": "1",
-        "z": 1,
         "all": "1",
       },
       {
@@ -25002,7 +24856,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
@@ -25029,7 +24882,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
@@ -25049,9 +24901,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 6,
     "health": 13,
+    "attack": 6,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -25061,7 +24914,6 @@ var CARDS = {
         "id": "rally",
         "x": 1,
         "y": "1",
-        "z": 1,
         "all": "1",
       },
       {
@@ -25092,7 +24944,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
@@ -25111,7 +24962,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
@@ -25132,9 +24982,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 7,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -25206,9 +25057,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -25280,9 +25132,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -25353,15 +25206,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 3,
     "health": 8,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "protect",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "weaken",
@@ -25383,7 +25236,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "weaken",
@@ -25401,7 +25253,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "weaken",
@@ -25428,15 +25279,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "protect",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "weaken",
@@ -25462,7 +25313,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "weaken",
@@ -25480,7 +25330,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "weaken",
@@ -25503,15 +25352,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 4,
     "health": 13,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "protect",
         "x": 3,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "weaken",
@@ -25537,7 +25386,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "weaken",
@@ -25564,15 +25412,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 16,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "protect",
@@ -25583,7 +25431,6 @@ var CARDS = {
         "id": "protect",
         "x": 1,
         "y": "5",
-        "z": 5,
       },
     ],
     "upgrades": {
@@ -25597,7 +25444,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "protect",
@@ -25608,7 +25454,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "5",
-            "z": 5,
           },
         ],
       },
@@ -25622,7 +25467,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "protect",
@@ -25633,7 +25477,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "5",
-            "z": 5,
           },
         ],
       },
@@ -25643,7 +25486,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "protect",
@@ -25654,7 +25496,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
         ],
@@ -25670,15 +25511,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 20,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 4,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "protect",
@@ -25689,7 +25530,6 @@ var CARDS = {
         "id": "protect",
         "x": 1,
         "y": "5",
-        "z": 5,
         "all": "1",
       },
     ],
@@ -25710,7 +25550,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "protect",
@@ -25721,7 +25560,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
         ],
@@ -25732,7 +25570,6 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "protect",
@@ -25743,7 +25580,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
         ],
@@ -25755,7 +25591,6 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "protect",
@@ -25766,7 +25601,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
         ],
@@ -25782,15 +25616,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 25,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 5,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "protect",
@@ -25801,7 +25635,6 @@ var CARDS = {
         "id": "protect",
         "x": 2,
         "y": "5",
-        "z": 5,
         "all": "1",
       },
     ],
@@ -25825,7 +25658,6 @@ var CARDS = {
             "id": "rally",
             "x": 6,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "protect",
@@ -25836,7 +25668,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
         ],
@@ -25847,7 +25678,6 @@ var CARDS = {
             "id": "rally",
             "x": 6,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "protect",
@@ -25858,7 +25688,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
         ],
@@ -25874,9 +25703,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 3,
     "health": 11,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -25886,13 +25716,11 @@ var CARDS = {
         "id": "heal",
         "x": 2,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "legion",
         "x": 1,
         "y": "5",
-        "z": 5,
       },
     ],
     "upgrades": {
@@ -25914,13 +25742,11 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "legion",
             "x": 1,
             "y": "5",
-            "z": 5,
           },
         ],
       },
@@ -25935,13 +25761,11 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "legion",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
         ],
       },
@@ -25956,9 +25780,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -25968,13 +25793,11 @@ var CARDS = {
         "id": "heal",
         "x": 3,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "legion",
         "x": 2,
         "y": "5",
-        "z": 5,
       },
     ],
     "upgrades": {
@@ -25989,13 +25812,11 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "legion",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
         ],
       },
@@ -26017,13 +25838,11 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "legion",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
         ],
       },
@@ -26038,9 +25857,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 18,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -26050,13 +25870,11 @@ var CARDS = {
         "id": "heal",
         "x": 4,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "legion",
         "x": 3,
         "y": "5",
-        "z": 5,
       },
     ],
     "upgrades": {
@@ -26079,13 +25897,11 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "legion",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
         ],
       },
@@ -26099,13 +25915,11 @@ var CARDS = {
             "id": "heal",
             "x": 5,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "legion",
             "x": 4,
             "y": "5",
-            "z": 5,
           },
         ],
       },
@@ -26120,9 +25934,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 5,
     "health": 14,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -26197,9 +26012,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 6,
     "health": 18,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -26273,9 +26089,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 6,
     "health": 23,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -26351,9 +26168,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 12,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -26363,7 +26181,6 @@ var CARDS = {
         "id": "protect",
         "x": 2,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "flurry",
@@ -26381,7 +26198,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "flurry",
@@ -26407,7 +26223,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "flurry",
@@ -26426,7 +26241,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "flurry",
@@ -26445,9 +26259,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 15,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -26457,7 +26272,6 @@ var CARDS = {
         "id": "protect",
         "x": 3,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "flurry",
@@ -26483,7 +26297,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "flurry",
@@ -26505,7 +26318,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "flurry",
@@ -26524,9 +26336,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 19,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -26536,7 +26349,6 @@ var CARDS = {
         "id": "protect",
         "x": 3,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "flurry",
@@ -26555,7 +26367,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "flurry",
@@ -26585,7 +26396,6 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "flurry",
@@ -26606,9 +26416,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 10,
     "health": 24,
+    "attack": 10,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -26671,9 +26482,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 12,
     "health": 29,
+    "attack": 12,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -26737,9 +26549,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 14,
     "health": 35,
+    "attack": 14,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -26801,9 +26614,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 7,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
@@ -26837,7 +26651,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "strike",
@@ -26856,9 +26669,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 11,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
@@ -26868,7 +26682,6 @@ var CARDS = {
         "id": "legion",
         "x": 1,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "strike",
@@ -26898,7 +26711,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "strike",
@@ -26917,9 +26729,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
@@ -26929,7 +26742,6 @@ var CARDS = {
         "id": "legion",
         "x": 1,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "strike",
@@ -26959,7 +26771,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "strike",
@@ -26978,15 +26789,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 5,
     "health": 10,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "nullify",
@@ -27013,7 +26824,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "nullify",
@@ -27031,7 +26841,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "nullify",
@@ -27058,15 +26867,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 6,
     "health": 15,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "nullify",
@@ -27088,7 +26897,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "nullify",
@@ -27110,7 +26918,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "nullify",
@@ -27128,7 +26935,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "nullify",
@@ -27151,15 +26957,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 7,
     "health": 18,
+    "attack": 7,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 4,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "nullify",
@@ -27190,7 +26996,6 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "nullify",
@@ -27208,7 +27013,6 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "nullify",
@@ -27231,15 +27035,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 2,
     "health": 10,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
         "x": 1,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "strike",
@@ -27266,7 +27070,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "strike",
@@ -27289,7 +27092,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "strike",
@@ -27313,15 +27115,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 3,
     "health": 15,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
         "x": 1,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "strike",
@@ -27356,7 +27158,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "strike",
@@ -27380,15 +27181,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 4,
     "health": 19,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
         "x": 1,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "strike",
@@ -27419,7 +27220,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "strike",
@@ -27438,7 +27238,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "strike",
@@ -27463,9 +27262,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -27524,9 +27324,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 5,
     "health": 12,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -27582,9 +27383,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 6,
     "health": 16,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -27651,15 +27453,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 2,
     "health": 9,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
         "x": 1,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "strike",
@@ -27685,7 +27487,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "strike",
@@ -27707,7 +27508,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "strike",
@@ -27731,15 +27531,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
         "x": 2,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "strike",
@@ -27762,7 +27562,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "strike",
@@ -27789,7 +27588,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "strike",
@@ -27813,15 +27611,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 15,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
         "x": 4,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "strike",
@@ -27853,7 +27651,6 @@ var CARDS = {
             "id": "heal",
             "x": 5,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "strike",
@@ -27872,7 +27669,6 @@ var CARDS = {
             "id": "heal",
             "x": 5,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "strike",
@@ -27897,9 +27693,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 4,
     "health": 12,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "frost",
@@ -27983,9 +27780,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 4,
     "health": 15,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "frost",
@@ -28070,9 +27868,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 4,
     "health": 19,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "frost",
@@ -28144,15 +27943,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "10",
-        "z": 10,
       },
       {
         "id": "weaken",
@@ -28175,7 +27974,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "weaken",
@@ -28194,7 +27992,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "weaken",
@@ -28219,15 +28016,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 4,
     "health": 16,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 3,
         "y": "10",
-        "z": 10,
       },
       {
         "id": "weaken",
@@ -28246,7 +28043,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "weaken",
@@ -28270,7 +28066,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "weaken",
@@ -28303,15 +28098,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 5,
     "health": 20,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 3,
         "y": "10",
-        "z": 10,
       },
       {
         "id": "weaken",
@@ -28334,7 +28129,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "weaken",
@@ -28362,7 +28156,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "weaken",
@@ -28386,22 +28179,21 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "10",
-        "z": 10,
         "all": "1",
       },
       {
         "id": "legion",
         "x": 1,
         "y": "10",
-        "z": 10,
       },
     ],
     "upgrades": {
@@ -28419,14 +28211,12 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "10",
-            "z": 10,
             "all": "1",
           },
           {
             "id": "legion",
             "x": 2,
             "y": "10",
-            "z": 10,
           },
         ],
       },
@@ -28440,14 +28230,12 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "10",
-            "z": 10,
             "all": "1",
           },
           {
             "id": "legion",
             "x": 2,
             "y": "10",
-            "z": 10,
           },
         ],
       },
@@ -28462,14 +28250,12 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "10",
-            "z": 10,
             "all": "1",
           },
           {
             "id": "legion",
             "x": 2,
             "y": "10",
-            "z": 10,
           },
         ],
       },
@@ -28484,9 +28270,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 4,
     "health": 16,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -28496,14 +28283,12 @@ var CARDS = {
         "id": "rally",
         "x": 2,
         "y": "10",
-        "z": 10,
         "all": "1",
       },
       {
         "id": "legion",
         "x": 2,
         "y": "10",
-        "z": 10,
       },
     ],
     "upgrades": {
@@ -28525,14 +28310,12 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "10",
-            "z": 10,
             "all": "1",
           },
           {
             "id": "legion",
             "x": 2,
             "y": "10",
-            "z": 10,
           },
         ],
       },
@@ -28550,14 +28333,12 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "10",
-            "z": 10,
             "all": "1",
           },
           {
             "id": "legion",
             "x": 3,
             "y": "10",
-            "z": 10,
           },
         ],
       },
@@ -28572,9 +28353,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 4,
     "health": 20,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -28584,14 +28366,12 @@ var CARDS = {
         "id": "rally",
         "x": 2,
         "y": "10",
-        "z": 10,
         "all": "1",
       },
       {
         "id": "legion",
         "x": 3,
         "y": "10",
-        "z": 10,
       },
     ],
     "upgrades": {
@@ -28617,14 +28397,12 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "10",
-            "z": 10,
             "all": "1",
           },
           {
             "id": "legion",
             "x": 3,
             "y": "10",
-            "z": 10,
           },
         ],
       },
@@ -28638,14 +28416,12 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "10",
-            "z": 10,
             "all": "1",
           },
           {
             "id": "legion",
             "x": 4,
             "y": "10",
-            "z": 10,
           },
         ],
       },
@@ -28661,9 +28437,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 4,
     "health": 15,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -28673,7 +28450,6 @@ var CARDS = {
         "id": "legion",
         "x": 2,
         "y": "10",
-        "z": 10,
       },
       {
         "id": "jam",
@@ -28691,7 +28467,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "jam",
@@ -28710,7 +28485,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "jam",
@@ -28733,7 +28507,6 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "jam",
@@ -28753,9 +28526,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 4,
     "health": 18,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -28765,7 +28539,6 @@ var CARDS = {
         "id": "legion",
         "x": 3,
         "y": "10",
-        "z": 10,
       },
       {
         "id": "jam",
@@ -28793,7 +28566,6 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "jam",
@@ -28812,7 +28584,6 @@ var CARDS = {
             "id": "legion",
             "x": 4,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "jam",
@@ -28832,9 +28603,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 5,
     "health": 22,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -28844,7 +28616,6 @@ var CARDS = {
         "id": "legion",
         "x": 4,
         "y": "10",
-        "z": 10,
       },
       {
         "id": "jam",
@@ -28872,7 +28643,6 @@ var CARDS = {
             "id": "legion",
             "x": 4,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "jam",
@@ -28891,7 +28661,6 @@ var CARDS = {
             "id": "legion",
             "x": 5,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "jam",
@@ -28912,9 +28681,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 1,
     "health": 10,
+    "attack": 1,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "frost",
@@ -28983,9 +28753,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 2,
     "health": 15,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -29069,9 +28840,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 2,
     "health": 18,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -29142,9 +28914,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "burn",
@@ -29208,9 +28981,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 5,
     "health": 13,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "burn",
@@ -29265,9 +29039,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 6,
     "health": 17,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "burn",
@@ -29324,9 +29099,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 13,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -29387,9 +29163,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 16,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -29449,9 +29226,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 20,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -29511,9 +29289,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 13,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "frost",
@@ -29583,9 +29362,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 18,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "frost",
@@ -29641,9 +29421,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 22,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "frost",
@@ -29700,15 +29481,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 11,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
         "x": 1,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "strike",
@@ -29734,7 +29515,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "strike",
@@ -29767,15 +29547,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 15,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
         "x": 1,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "strike",
@@ -29798,7 +29578,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "strike",
@@ -29818,7 +29597,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "strike",
@@ -29851,15 +29629,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 19,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
         "x": 2,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "strike",
@@ -29890,7 +29668,6 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "strike",
@@ -29909,7 +29686,6 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "strike",
@@ -29934,9 +29710,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 18,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -29946,7 +29723,6 @@ var CARDS = {
         "id": "rally",
         "x": 3,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "burn",
@@ -29969,7 +29745,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "burn",
@@ -29988,7 +29763,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "burn",
@@ -30011,7 +29785,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "burn",
@@ -30031,9 +29804,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 23,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -30043,7 +29817,6 @@ var CARDS = {
         "id": "rally",
         "x": 4,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "burn",
@@ -30065,7 +29838,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "burn",
@@ -30091,7 +29863,6 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "burn",
@@ -30111,9 +29882,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 7,
     "health": 26,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -30123,7 +29895,6 @@ var CARDS = {
         "id": "rally",
         "x": 5,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "burn",
@@ -30154,7 +29925,6 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "burn",
@@ -30172,7 +29942,6 @@ var CARDS = {
             "id": "rally",
             "x": 6,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "burn",
@@ -30193,21 +29962,20 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["13"],
-    "attack": 4,
     "health": 11,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 1,
         "y": "13",
-        "z": 13,
       },
       {
         "id": "protect",
         "x": 1,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -30221,13 +29989,11 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "protect",
             "x": 1,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "flurry",
@@ -30246,13 +30012,11 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "protect",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "flurry",
@@ -30272,21 +30036,20 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["13"],
-    "attack": 5,
     "health": 13,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 2,
         "y": "13",
-        "z": 13,
       },
       {
         "id": "protect",
         "x": 3,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "flurry",
@@ -30313,13 +30076,11 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "protect",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "flurry",
@@ -30339,21 +30100,20 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["13"],
-    "attack": 6,
     "health": 16,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 3,
         "y": "13",
-        "z": 13,
       },
       {
         "id": "protect",
         "x": 4,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "flurry",
@@ -30380,13 +30140,11 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "protect",
             "x": 4,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "flurry",
@@ -30406,9 +30164,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["13"],
-    "attack": 4,
     "health": 17,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -30418,7 +30177,6 @@ var CARDS = {
         "id": "rally",
         "x": 3,
         "y": "13",
-        "z": 13,
       },
       {
         "id": "nullify",
@@ -30441,7 +30199,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "nullify",
@@ -30469,7 +30226,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "nullify",
@@ -30489,9 +30245,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["13"],
-    "attack": 5,
     "health": 23,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -30501,7 +30258,6 @@ var CARDS = {
         "id": "rally",
         "x": 4,
         "y": "13",
-        "z": 13,
       },
       {
         "id": "nullify",
@@ -30519,7 +30275,6 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "nullify",
@@ -30538,7 +30293,6 @@ var CARDS = {
             "id": "rally",
             "x": 6,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "nullify",
@@ -30562,7 +30316,6 @@ var CARDS = {
             "id": "rally",
             "x": 6,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "nullify",
@@ -30586,9 +30339,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["13"],
-    "attack": 6,
     "health": 28,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -30598,7 +30352,6 @@ var CARDS = {
         "id": "rally",
         "x": 6,
         "y": "13",
-        "z": 13,
       },
       {
         "id": "nullify",
@@ -30617,7 +30370,6 @@ var CARDS = {
             "id": "rally",
             "x": 7,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "nullify",
@@ -30645,7 +30397,6 @@ var CARDS = {
             "id": "rally",
             "x": 7,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "nullify",
@@ -30663,7 +30414,6 @@ var CARDS = {
             "id": "rally",
             "x": 8,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "nullify",
@@ -30683,9 +30433,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["13"],
-    "attack": 5,
     "health": 22,
+    "attack": 5,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -30786,9 +30537,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["13"],
-    "attack": 6,
     "health": 28,
+    "attack": 6,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -30875,9 +30627,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["13"],
-    "attack": 8,
     "health": 35,
+    "attack": 8,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -30975,9 +30728,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["13"],
-    "attack": 4,
     "health": 12,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -31046,9 +30800,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["13"],
-    "attack": 5,
     "health": 15,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -31129,9 +30884,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["13"],
-    "attack": 6,
     "health": 16,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -31200,15 +30956,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["13"],
-    "attack": 2,
     "health": 9,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "13",
-        "z": 13,
       },
       {
         "id": "weaken",
@@ -31230,7 +30986,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "weaken",
@@ -31248,7 +31003,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "frost",
@@ -31272,15 +31026,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["13"],
-    "attack": 2,
     "health": 13,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "13",
-        "z": 13,
       },
       {
         "id": "frost",
@@ -31307,7 +31061,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "frost",
@@ -31329,7 +31082,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "frost",
@@ -31353,15 +31105,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["13"],
-    "attack": 3,
     "health": 16,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 4,
         "y": "13",
-        "z": 13,
       },
       {
         "id": "frost",
@@ -31395,7 +31147,6 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "frost",
@@ -31419,15 +31170,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["13"],
-    "attack": 0,
     "health": 17,
+    "attack": 0,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 3,
         "y": "13",
-        "z": 13,
       },
       {
         "id": "heal",
@@ -31452,7 +31203,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "heal",
@@ -31477,7 +31227,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "heal",
@@ -31503,15 +31252,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["13"],
-    "attack": 0,
     "health": 22,
+    "attack": 0,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 4,
         "y": "13",
-        "z": 13,
       },
       {
         "id": "heal",
@@ -31532,7 +31281,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "heal",
@@ -31557,7 +31305,6 @@ var CARDS = {
             "id": "heal",
             "x": 5,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "heal",
@@ -31587,15 +31334,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["13"],
-    "attack": 0,
     "health": 27,
+    "attack": 0,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 5,
         "y": "13",
-        "z": 13,
       },
       {
         "id": "heal",
@@ -31620,7 +31367,6 @@ var CARDS = {
             "id": "heal",
             "x": 6,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "heal",
@@ -31644,7 +31390,6 @@ var CARDS = {
             "id": "heal",
             "x": 6,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "heal",
@@ -31670,9 +31415,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 2,
     "health": 19,
+    "attack": 2,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -31746,9 +31492,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 3,
     "health": 23,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -31810,9 +31557,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 28,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -31899,15 +31647,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 2,
     "health": 12,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "legion",
         "x": 1,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "strike",
@@ -31933,7 +31681,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "strike",
@@ -31961,15 +31708,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 3,
     "health": 16,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "legion",
         "x": 1,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "strike",
@@ -31987,7 +31734,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "strike",
@@ -32005,7 +31751,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "strike",
@@ -32024,7 +31769,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "strike",
@@ -32053,15 +31797,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 3,
     "health": 18,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "legion",
         "x": 2,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "strike",
@@ -32092,7 +31836,6 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "strike",
@@ -32117,9 +31860,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["12"],
-    "attack": 3,
     "health": 16,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -32129,7 +31873,6 @@ var CARDS = {
         "id": "rally",
         "x": 2,
         "y": "12",
-        "z": 12,
       },
       {
         "id": "frost",
@@ -32156,7 +31899,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "frost",
@@ -32174,7 +31916,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "frost",
@@ -32194,9 +31935,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["12"],
-    "attack": 4,
     "health": 20,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -32206,7 +31948,6 @@ var CARDS = {
         "id": "rally",
         "x": 3,
         "y": "12",
-        "z": 12,
       },
       {
         "id": "frost",
@@ -32229,7 +31970,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "frost",
@@ -32251,7 +31991,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "frost",
@@ -32271,9 +32010,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["12"],
-    "attack": 4,
     "health": 24,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -32283,7 +32023,6 @@ var CARDS = {
         "id": "rally",
         "x": 5,
         "y": "12",
-        "z": 12,
       },
       {
         "id": "frost",
@@ -32310,7 +32049,6 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "frost",
@@ -32328,7 +32066,6 @@ var CARDS = {
             "id": "rally",
             "x": 6,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "frost",
@@ -32349,9 +32086,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "burn",
@@ -32423,9 +32161,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 18,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -32497,9 +32236,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 5,
     "health": 22,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -32571,9 +32311,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 8,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "valor",
@@ -32638,9 +32379,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 5,
     "health": 12,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -32724,9 +32466,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 6,
     "health": 14,
+    "attack": 6,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -32811,9 +32554,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 19,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -32899,9 +32643,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 24,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -32974,9 +32719,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 29,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -33051,9 +32797,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 1,
     "health": 10,
+    "attack": 1,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -33129,9 +32876,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 1,
     "health": 13,
+    "attack": 1,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -33204,9 +32952,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 2,
     "health": 16,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -33281,9 +33030,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 5,
     "health": 12,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -33383,9 +33133,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 6,
     "health": 17,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -33475,9 +33226,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 7,
     "health": 22,
+    "attack": 7,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -33553,9 +33305,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 15,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -33565,7 +33318,6 @@ var CARDS = {
         "id": "rally",
         "x": 1,
         "y": "1",
-        "z": 1,
         "all": "1",
       },
       {
@@ -33589,7 +33341,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
@@ -33617,7 +33368,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
@@ -33638,9 +33388,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 20,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -33650,7 +33401,6 @@ var CARDS = {
         "id": "rally",
         "x": 2,
         "y": "1",
-        "z": 1,
         "all": "1",
       },
       {
@@ -33670,7 +33420,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
@@ -33701,7 +33450,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
@@ -33722,9 +33470,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 6,
     "health": 25,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -33734,7 +33483,6 @@ var CARDS = {
         "id": "rally",
         "x": 3,
         "y": "1",
-        "z": 1,
         "all": "1",
       },
       {
@@ -33754,7 +33502,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
@@ -33779,7 +33526,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
@@ -33798,7 +33544,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
@@ -33817,7 +33562,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
@@ -33838,9 +33582,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 7,
     "health": 5,
+    "attack": 7,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "valor",
@@ -33850,7 +33595,6 @@ var CARDS = {
         "id": "protect",
         "x": 1,
         "y": "5",
-        "z": 5,
       },
     ],
     "upgrades": {
@@ -33869,7 +33613,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "5",
-            "z": 5,
           },
         ],
       },
@@ -33884,7 +33627,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
         ],
       },
@@ -33899,7 +33641,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "burn",
@@ -33919,9 +33660,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 7,
     "health": 10,
+    "attack": 7,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "valor",
@@ -33931,7 +33673,6 @@ var CARDS = {
         "id": "protect",
         "x": 2,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "burn",
@@ -33950,7 +33691,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "burn",
@@ -33969,7 +33709,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "burn",
@@ -33992,7 +33731,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "burn",
@@ -34012,9 +33750,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 7,
     "health": 15,
+    "attack": 7,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "valor",
@@ -34024,7 +33763,6 @@ var CARDS = {
         "id": "protect",
         "x": 4,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "burn",
@@ -34043,7 +33781,6 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "burn",
@@ -34062,7 +33799,6 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "burn",
@@ -34081,7 +33817,6 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "burn",
@@ -34100,7 +33835,6 @@ var CARDS = {
             "id": "protect",
             "x": 5,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "burn",
@@ -34121,9 +33855,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 1,
     "health": 6,
+    "attack": 1,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "jam",
@@ -34179,9 +33914,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 1,
     "health": 9,
+    "attack": 1,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -34237,9 +33973,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 2,
     "health": 12,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -34295,15 +34032,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 3,
     "health": 14,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
         "x": 1,
         "y": "5",
-        "z": 5,
         "all": "1",
       },
       {
@@ -34330,7 +34067,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -34356,15 +34092,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 18,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
         "x": 1,
         "y": "5",
-        "z": 5,
         "all": "1",
       },
       {
@@ -34379,7 +34115,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -34394,7 +34129,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -34418,7 +34152,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -34439,9 +34172,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 7,
     "health": 20,
+    "attack": 7,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -34451,7 +34185,6 @@ var CARDS = {
         "id": "protect",
         "x": 2,
         "y": "5",
-        "z": 5,
         "all": "1",
       },
       {
@@ -34483,7 +34216,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -34502,7 +34234,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -34524,9 +34255,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7"],
-    "attack": 1,
     "health": 4,
+    "attack": 1,
     "cost": 0,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "weaken",
@@ -34575,9 +34307,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7"],
-    "attack": 2,
     "health": 8,
+    "attack": 2,
     "cost": 0,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "weaken",
@@ -34645,9 +34378,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 11,
+    "attack": 3,
     "cost": 0,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -34733,9 +34467,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7"],
-    "attack": 2,
     "health": 7,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "burn",
@@ -34801,9 +34536,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 9,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "frost",
@@ -34872,9 +34608,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 13,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "frost",
@@ -34943,9 +34680,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -35017,9 +34755,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 16,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -35093,9 +34832,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 20,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -35171,9 +34911,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 16,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -35243,9 +34984,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7"],
-    "attack": 5,
     "health": 19,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -35315,9 +35057,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7"],
-    "attack": 6,
     "health": 23,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -35387,9 +35130,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6","7"],
-    "attack": 5,
     "health": 18,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -35399,7 +35143,6 @@ var CARDS = {
         "id": "rally",
         "x": 1,
         "y": "7",
-        "z": 7,
         "all": "1",
       },
     ],
@@ -35414,7 +35157,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -35434,7 +35176,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -35461,7 +35202,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -35482,9 +35222,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6","7"],
-    "attack": 6,
     "health": 23,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -35494,7 +35235,6 @@ var CARDS = {
         "id": "rally",
         "x": 1,
         "y": "7",
-        "z": 7,
         "all": "1",
       },
       {
@@ -35518,7 +35258,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -35537,7 +35276,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -35557,7 +35295,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -35582,9 +35319,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6","7"],
-    "attack": 6,
     "health": 28,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -35594,7 +35332,6 @@ var CARDS = {
         "id": "rally",
         "x": 2,
         "y": "7",
-        "z": 7,
         "all": "1",
       },
       {
@@ -35627,7 +35364,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -35647,7 +35383,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -35668,9 +35403,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6","11"],
-    "attack": 4,
     "health": 9,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "valor",
@@ -35754,9 +35490,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6","11"],
-    "attack": 4,
     "health": 12,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "valor",
@@ -35828,9 +35565,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6","11"],
-    "attack": 5,
     "health": 14,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "valor",
@@ -35891,9 +35629,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["11"],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "weaken",
@@ -35958,9 +35697,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["11"],
-    "attack": 5,
     "health": 13,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "weaken",
@@ -36028,9 +35768,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["11"],
-    "attack": 6,
     "health": 15,
+    "attack": 6,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "weaken",
@@ -36110,9 +35851,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["11"],
-    "attack": 4,
     "health": 19,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
@@ -36123,7 +35865,6 @@ var CARDS = {
         "id": "heal",
         "x": 2,
         "y": "11",
-        "z": 11,
       },
       {
         "id": "jam",
@@ -36142,7 +35883,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "jam",
@@ -36171,7 +35911,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "jam",
@@ -36195,9 +35934,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["11"],
-    "attack": 5,
     "health": 23,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
@@ -36208,7 +35948,6 @@ var CARDS = {
         "id": "heal",
         "x": 3,
         "y": "11",
-        "z": 11,
       },
       {
         "id": "jam",
@@ -36237,7 +35976,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "jam",
@@ -36261,7 +35999,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "jam",
@@ -36281,9 +36018,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["11"],
-    "attack": 7,
     "health": 28,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
@@ -36294,7 +36032,6 @@ var CARDS = {
         "id": "heal",
         "x": 4,
         "y": "11",
-        "z": 11,
       },
       {
         "id": "jam",
@@ -36313,7 +36050,6 @@ var CARDS = {
             "id": "heal",
             "x": 5,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "jam",
@@ -36342,7 +36078,6 @@ var CARDS = {
             "id": "heal",
             "x": 5,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "jam",
@@ -36362,7 +36097,6 @@ var CARDS = {
             "id": "heal",
             "x": 6,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "jam",
@@ -36382,9 +36116,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["11"],
-    "attack": 2,
     "health": 8,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -36394,7 +36129,6 @@ var CARDS = {
         "id": "protect",
         "x": 1,
         "y": "11",
-        "z": 11,
       },
       {
         "id": "flurry",
@@ -36412,7 +36146,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "flurry",
@@ -36439,7 +36172,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "flurry",
@@ -36459,9 +36191,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["11"],
-    "attack": 3,
     "health": 11,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -36471,7 +36204,6 @@ var CARDS = {
         "id": "protect",
         "x": 1,
         "y": "11",
-        "z": 11,
       },
       {
         "id": "flurry",
@@ -36493,7 +36225,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "flurry",
@@ -36521,9 +36252,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["11"],
-    "attack": 4,
     "health": 13,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -36533,7 +36265,6 @@ var CARDS = {
         "id": "protect",
         "x": 2,
         "y": "11",
-        "z": 11,
       },
       {
         "id": "flurry",
@@ -36564,7 +36295,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "flurry",
@@ -36584,9 +36314,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["11"],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
@@ -36675,9 +36406,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["11"],
-    "attack": 4,
     "health": 18,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
@@ -36739,9 +36471,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["11"],
-    "attack": 5,
     "health": 21,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
@@ -36818,9 +36551,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 1,
     "health": 5,
+    "attack": 1,
     "cost": 0,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "nullify",
@@ -36866,9 +36600,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 2,
     "health": 9,
+    "attack": 2,
     "cost": 0,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "frost",
@@ -36916,15 +36651,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 0,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "legion",
         "x": 1,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "frost",
@@ -36954,7 +36689,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "frost",
@@ -36978,9 +36712,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "valor",
@@ -36990,7 +36725,6 @@ var CARDS = {
         "id": "protect",
         "x": 2,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "jam",
@@ -37008,7 +36742,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "jam",
@@ -37031,7 +36764,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "jam",
@@ -37053,7 +36785,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "jam",
@@ -37073,9 +36804,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 18,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "valor",
@@ -37085,7 +36817,6 @@ var CARDS = {
         "id": "protect",
         "x": 3,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "jam",
@@ -37111,7 +36842,6 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "jam",
@@ -37139,9 +36869,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 23,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "valor",
@@ -37151,7 +36882,6 @@ var CARDS = {
         "id": "protect",
         "x": 4,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "jam",
@@ -37169,7 +36899,6 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "jam",
@@ -37187,7 +36916,6 @@ var CARDS = {
             "id": "protect",
             "x": 5,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "jam",
@@ -37206,7 +36934,6 @@ var CARDS = {
             "id": "protect",
             "x": 5,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "jam",
@@ -37229,7 +36956,6 @@ var CARDS = {
             "id": "protect",
             "x": 6,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "jam",
@@ -37249,9 +36975,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9","12"],
-    "attack": 3,
     "health": 7,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "valor",
@@ -37261,13 +36988,11 @@ var CARDS = {
         "id": "protect",
         "x": 1,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "legion",
         "x": 1,
         "y": "9",
-        "z": 9,
       },
     ],
     "upgrades": {
@@ -37293,13 +37018,11 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "legion",
             "x": 1,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -37313,13 +37036,11 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "legion",
             "x": 1,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -37335,9 +37056,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9","12"],
-    "attack": 3,
     "health": 11,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "valor",
@@ -37347,13 +37069,11 @@ var CARDS = {
         "id": "protect",
         "x": 2,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "legion",
         "x": 1,
         "y": "9",
-        "z": 9,
       },
     ],
     "upgrades": {
@@ -37379,13 +37099,11 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "legion",
             "x": 1,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -37399,13 +37117,11 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "legion",
             "x": 1,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -37421,9 +37137,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9","12"],
-    "attack": 3,
     "health": 15,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "valor",
@@ -37433,13 +37150,11 @@ var CARDS = {
         "id": "protect",
         "x": 3,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "legion",
         "x": 1,
         "y": "9",
-        "z": 9,
       },
     ],
     "upgrades": {
@@ -37465,13 +37180,11 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "legion",
             "x": 1,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -37485,13 +37198,11 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "legion",
             "x": 2,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -37508,9 +37219,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 2,
     "health": 16,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -37566,9 +37278,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 2,
     "health": 18,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -37637,9 +37350,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 3,
     "health": 20,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -37695,9 +37409,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 28,
+    "attack": 4,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -37774,9 +37489,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 35,
+    "attack": 4,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -37853,9 +37569,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 42,
+    "attack": 4,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -37933,9 +37650,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9","6"],
-    "attack": 4,
     "health": 18,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -37945,7 +37663,6 @@ var CARDS = {
         "id": "heal",
         "x": 1,
         "y": "9",
-        "z": 9,
         "all": "1",
       },
       {
@@ -37974,7 +37691,6 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -37997,7 +37713,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -38018,9 +37733,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9","6"],
-    "attack": 6,
     "health": 23,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -38030,7 +37746,6 @@ var CARDS = {
         "id": "heal",
         "x": 2,
         "y": "9",
-        "z": 9,
         "all": "1",
       },
       {
@@ -38054,7 +37769,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -38079,7 +37793,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -38098,7 +37811,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -38119,9 +37831,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9","6"],
-    "attack": 7,
     "health": 28,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -38131,7 +37844,6 @@ var CARDS = {
         "id": "heal",
         "x": 3,
         "y": "9",
-        "z": 9,
         "all": "1",
       },
       {
@@ -38165,7 +37877,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -38184,7 +37895,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -38205,9 +37915,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -38245,6 +37956,7 @@ var CARDS = {
         "skill": [],
       },
       "5": {
+        "desc": "Everyone looks like ants from up here... now I'm hungry.",
         "skill": [
           {
             "id": "strike",
@@ -38272,9 +37984,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 16,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -38356,9 +38069,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 20,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -38427,15 +38141,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 6,
     "health": 11,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
         "x": 2,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "strike",
@@ -38463,7 +38177,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "strike",
@@ -38481,7 +38194,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "strike",
@@ -38500,7 +38212,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "strike",
@@ -38524,15 +38235,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 8,
     "health": 16,
+    "attack": 8,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
         "x": 3,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "strike",
@@ -38554,7 +38265,6 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "strike",
@@ -38573,7 +38283,6 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "strike",
@@ -38606,15 +38315,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 9,
     "health": 20,
+    "attack": 9,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
         "x": 5,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "strike",
@@ -38633,7 +38342,6 @@ var CARDS = {
             "id": "protect",
             "x": 5,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "strike",
@@ -38661,7 +38369,6 @@ var CARDS = {
             "id": "protect",
             "x": 6,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "strike",
@@ -38679,7 +38386,6 @@ var CARDS = {
             "id": "protect",
             "x": 6,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "strike",
@@ -38703,9 +38409,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 8,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -38715,13 +38422,11 @@ var CARDS = {
         "id": "protect",
         "x": 2,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "legion",
         "x": 1,
         "y": "4",
-        "z": 4,
       },
     ],
     "upgrades": {
@@ -38747,13 +38452,11 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "legion",
             "x": 1,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -38773,9 +38476,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 5,
     "health": 11,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -38785,13 +38489,11 @@ var CARDS = {
         "id": "protect",
         "x": 3,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "legion",
         "x": 1,
         "y": "4",
-        "z": 4,
       },
     ],
     "upgrades": {
@@ -38805,13 +38507,11 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "legion",
             "x": 1,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -38829,13 +38529,11 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "legion",
             "x": 1,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -38859,9 +38557,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 6,
     "health": 14,
+    "attack": 6,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -38871,13 +38570,11 @@ var CARDS = {
         "id": "protect",
         "x": 4,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "legion",
         "x": 1,
         "y": "4",
-        "z": 4,
       },
     ],
     "upgrades": {
@@ -38899,13 +38596,11 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "legion",
             "x": 1,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -38919,13 +38614,11 @@ var CARDS = {
             "id": "protect",
             "x": 5,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "legion",
             "x": 1,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -38939,13 +38632,11 @@ var CARDS = {
             "id": "protect",
             "x": 5,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "legion",
             "x": 2,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -38961,9 +38652,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 4,
     "health": 13,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "weaken",
@@ -39032,9 +38724,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 5,
     "health": 15,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "weaken",
@@ -39104,9 +38797,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 6,
     "health": 18,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "weaken",
@@ -39163,9 +38857,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -39175,7 +38870,6 @@ var CARDS = {
         "id": "protect",
         "x": 1,
         "y": "4",
-        "z": 4,
         "all": "1",
       },
       {
@@ -39200,7 +38894,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -39221,7 +38914,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -39246,7 +38938,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -39268,9 +38959,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 4,
     "health": 20,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -39280,7 +38972,6 @@ var CARDS = {
         "id": "protect",
         "x": 2,
         "y": "4",
-        "z": 4,
         "all": "1",
       },
       {
@@ -39305,7 +38996,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -39326,7 +39016,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -39347,7 +39036,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -39373,9 +39061,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 4,
     "health": 26,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -39385,7 +39074,6 @@ var CARDS = {
         "id": "protect",
         "x": 4,
         "y": "4",
-        "z": 4,
         "all": "1",
       },
       {
@@ -39406,7 +39094,6 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -39431,7 +39118,6 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -39452,7 +39138,6 @@ var CARDS = {
             "id": "protect",
             "x": 5,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -39473,7 +39158,6 @@ var CARDS = {
             "id": "protect",
             "x": 5,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -39495,9 +39179,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10","12"],
-    "attack": 7,
     "health": 24,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -39559,9 +39244,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10","12"],
-    "attack": 8,
     "health": 28,
+    "attack": 8,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -39623,9 +39309,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10","12"],
-    "attack": 9,
     "health": 32,
+    "attack": 9,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -39700,9 +39387,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["12"],
-    "attack": 5,
     "health": 15,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -39712,7 +39400,6 @@ var CARDS = {
         "id": "rally",
         "x": 3,
         "y": "12",
-        "z": 12,
       },
     ],
     "upgrades": {
@@ -39738,7 +39425,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "12",
-            "z": 12,
           },
         ],
       },
@@ -39752,14 +39438,12 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "12",
-            "z": 12,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 3,
             "y": "12",
-            "z": 12,
           },
         ],
       },
@@ -39775,9 +39459,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["12"],
-    "attack": 5,
     "health": 18,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -39787,14 +39472,12 @@ var CARDS = {
         "id": "rally",
         "x": 1,
         "y": "12",
-        "z": 12,
         "all": "1",
       },
       {
         "id": "rally",
         "x": 4,
         "y": "12",
-        "z": 12,
       },
     ],
     "upgrades": {
@@ -39817,14 +39500,12 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "12",
-            "z": 12,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 4,
             "y": "12",
-            "z": 12,
           },
         ],
       },
@@ -39838,14 +39519,12 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "12",
-            "z": 12,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 4,
             "y": "12",
-            "z": 12,
           },
         ],
       },
@@ -39859,14 +39538,12 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "12",
-            "z": 12,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 5,
             "y": "12",
-            "z": 12,
           },
         ],
       },
@@ -39882,9 +39559,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["12"],
-    "attack": 5,
     "health": 22,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -39894,14 +39572,12 @@ var CARDS = {
         "id": "rally",
         "x": 2,
         "y": "12",
-        "z": 12,
         "all": "1",
       },
       {
         "id": "rally",
         "x": 5,
         "y": "12",
-        "z": 12,
       },
     ],
     "upgrades": {
@@ -39927,14 +39603,12 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "12",
-            "z": 12,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 5,
             "y": "12",
-            "z": 12,
           },
         ],
       },
@@ -39948,14 +39622,12 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "12",
-            "z": 12,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 6,
             "y": "12",
-            "z": 12,
           },
         ],
       },
@@ -39970,9 +39642,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 4,
     "health": 9,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -40031,9 +39704,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 5,
     "health": 12,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -40084,9 +39758,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 6,
     "health": 15,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -40183,9 +39858,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 4,
     "health": 15,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -40281,9 +39957,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 5,
     "health": 18,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -40354,9 +40031,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 6,
     "health": 21,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -40439,9 +40117,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 3,
     "health": 7,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -40512,9 +40191,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -40585,9 +40265,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 5,
     "health": 13,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -40670,9 +40351,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 12,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -40758,9 +40440,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 6,
     "health": 15,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -40834,9 +40517,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 6,
     "health": 19,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -40910,9 +40594,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 3,
     "health": 9,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -40988,9 +40673,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -41060,9 +40746,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 4,
     "health": 17,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -41119,9 +40806,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 4,
     "health": 8,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "weaken",
@@ -41207,9 +40895,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 6,
     "health": 9,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -41276,9 +40965,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 6,
     "health": 12,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -41345,9 +41035,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 3,
     "health": 8,
+    "attack": 3,
     "cost": 4,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "counter",
@@ -41401,9 +41092,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 3,
     "health": 13,
+    "attack": 3,
     "cost": 4,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "counter",
@@ -41439,9 +41131,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 5,
     "health": 15,
+    "attack": 5,
     "cost": 4,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "counter",
@@ -41496,9 +41189,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 3,
     "health": 3,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "pierce",
@@ -41543,9 +41237,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 4,
     "health": 6,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "pierce",
@@ -41596,9 +41291,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 5,
     "health": 7,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "pierce",
@@ -41641,9 +41337,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 3,
     "health": 6,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "flurry",
@@ -41728,9 +41425,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 4,
     "health": 9,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -41801,9 +41499,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 5,
     "health": 12,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -41887,9 +41586,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 10,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "weaken",
@@ -41984,9 +41684,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 15,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "weaken",
@@ -42082,9 +41783,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 18,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "weaken",
@@ -42155,9 +41857,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 11,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -42239,9 +41942,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 14,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -42320,9 +42024,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 17,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -42378,9 +42083,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 0,
     "health": 7,
+    "attack": 0,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -42443,9 +42149,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 0,
     "health": 9,
+    "attack": 0,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -42512,9 +42219,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 0,
     "health": 12,
+    "attack": 0,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -42581,9 +42289,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 3,
     "health": 7,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "strike",
@@ -42636,9 +42345,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 11,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "strike",
@@ -42689,9 +42399,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "strike",
@@ -42742,21 +42453,20 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 9,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "fervor",
         "x": 1,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "leech",
@@ -42778,13 +42488,11 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "fervor",
             "x": 1,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "leech",
@@ -42803,13 +42511,11 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "fervor",
             "x": 1,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "leech",
@@ -42828,21 +42534,20 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 6,
     "health": 12,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 2,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "fervor",
         "x": 1,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "leech",
@@ -42864,13 +42569,11 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "fervor",
             "x": 1,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "leech",
@@ -42897,21 +42600,20 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 7,
     "health": 16,
+    "attack": 7,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 2,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "fervor",
         "x": 1,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "leech",
@@ -42933,13 +42635,11 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "fervor",
             "x": 1,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "leech",
@@ -42953,13 +42653,11 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "fervor",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "leech",
@@ -42973,13 +42671,11 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "fervor",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "leech",
@@ -42998,9 +42694,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 6,
     "health": 22,
+    "attack": 6,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -43074,9 +42771,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 7,
     "health": 28,
+    "attack": 7,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -43164,9 +42862,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 8,
     "health": 33,
+    "attack": 8,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -43254,9 +42953,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 2,
     "health": 7,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "poison",
@@ -43311,9 +43011,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 3,
     "health": 10,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "poison",
@@ -43368,9 +43069,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 3,
     "health": 14,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "poison",
@@ -43449,9 +43151,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 5,
     "health": 11,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -43520,9 +43223,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 6,
     "health": 15,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -43594,9 +43298,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 7,
     "health": 20,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -43680,15 +43385,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 1,
     "health": 4,
+    "attack": 1,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "leech",
@@ -43710,7 +43415,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "leech",
@@ -43729,15 +43433,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 2,
     "health": 7,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "leech",
@@ -43759,7 +43463,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "leech",
@@ -43778,15 +43481,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 3,
     "health": 9,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "leech",
@@ -43808,7 +43511,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "leech",
@@ -43828,9 +43530,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -43840,13 +43543,11 @@ var CARDS = {
         "id": "fervor",
         "x": 1,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "legion",
         "x": 2,
         "y": "2",
-        "z": 2,
       },
     ],
     "upgrades": {
@@ -43864,13 +43565,11 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "legion",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
         ],
       },
@@ -43892,13 +43591,11 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "legion",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
         ],
       },
@@ -43914,9 +43611,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 4,
     "health": 17,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -43926,13 +43624,11 @@ var CARDS = {
         "id": "fervor",
         "x": 3,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "legion",
         "x": 2,
         "y": "2",
-        "z": 2,
       },
     ],
     "upgrades": {
@@ -43950,13 +43646,11 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "legion",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
         ],
       },
@@ -43978,13 +43672,11 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "legion",
             "x": 3,
             "y": "2",
-            "z": 2,
           },
         ],
       },
@@ -44000,9 +43692,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 5,
     "health": 21,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -44012,13 +43705,11 @@ var CARDS = {
         "id": "fervor",
         "x": 3,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "legion",
         "x": 3,
         "y": "2",
-        "z": 2,
       },
     ],
     "upgrades": {
@@ -44040,13 +43731,11 @@ var CARDS = {
             "id": "fervor",
             "x": 4,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "legion",
             "x": 3,
             "y": "2",
-            "z": 2,
           },
         ],
       },
@@ -44064,13 +43753,11 @@ var CARDS = {
             "id": "fervor",
             "x": 4,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "legion",
             "x": 4,
             "y": "2",
-            "z": 2,
           },
         ],
       },
@@ -44086,9 +43773,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 5,
     "health": 8,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -44172,9 +43860,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 5,
     "health": 12,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -44258,9 +43947,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 5,
     "health": 15,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -44332,9 +44022,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 5,
     "health": 9,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -44402,9 +44093,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 6,
     "health": 11,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -44472,9 +44164,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 7,
     "health": 13,
+    "attack": 7,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -44542,15 +44235,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 7,
     "health": 16,
+    "attack": 7,
     "cost": 4,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "counter",
@@ -44572,7 +44265,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "counter",
@@ -44596,7 +44288,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "counter",
@@ -44620,15 +44311,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 8,
     "health": 21,
+    "attack": 8,
     "cost": 4,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "fervor",
         "x": 2,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "counter",
@@ -44650,7 +44341,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "counter",
@@ -44672,7 +44362,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "counter",
@@ -44696,15 +44385,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 8,
     "health": 25,
+    "attack": 8,
     "cost": 4,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "fervor",
         "x": 2,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "counter",
@@ -44726,7 +44415,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "counter",
@@ -44750,7 +44438,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "counter",
@@ -44774,9 +44461,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 1,
     "health": 7,
+    "attack": 1,
     "cost": 2,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "weaken",
@@ -44829,9 +44517,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 2,
     "health": 10,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "weaken",
@@ -44883,9 +44572,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 2,
     "health": 14,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "weaken",
@@ -44928,9 +44618,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 12,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -44944,7 +44635,6 @@ var CARDS = {
         "id": "legion",
         "x": 1,
         "y": "9",
-        "z": 9,
       },
     ],
     "upgrades": {
@@ -44966,7 +44656,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -44984,7 +44673,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -45006,7 +44694,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -45021,9 +44708,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 16,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -45037,7 +44725,6 @@ var CARDS = {
         "id": "legion",
         "x": 2,
         "y": "9",
-        "z": 9,
       },
     ],
     "upgrades": {
@@ -45063,7 +44750,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -45086,9 +44772,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 20,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -45102,7 +44789,6 @@ var CARDS = {
         "id": "legion",
         "x": 2,
         "y": "9",
-        "z": 9,
       },
     ],
     "upgrades": {
@@ -45124,7 +44810,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -45150,7 +44835,6 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -45165,15 +44849,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 15,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "enfeeble",
@@ -45196,7 +44880,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "enfeeble",
@@ -45219,7 +44902,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "enfeeble",
@@ -45247,15 +44929,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 19,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 2,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "enfeeble",
@@ -45278,7 +44960,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "enfeeble",
@@ -45305,7 +44986,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "enfeeble",
@@ -45329,15 +45009,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 7,
     "health": 23,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 2,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "enfeeble",
@@ -45360,7 +45040,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "enfeeble",
@@ -45387,7 +45066,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "enfeeble",
@@ -45411,9 +45089,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 4,
     "health": 7,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "pierce",
@@ -45423,7 +45102,6 @@ var CARDS = {
         "id": "fervor",
         "x": 1,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "burn",
@@ -45445,7 +45123,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "burn",
@@ -45463,7 +45140,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "burn",
@@ -45487,9 +45163,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 5,
     "health": 11,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "pierce",
@@ -45499,7 +45176,6 @@ var CARDS = {
         "id": "fervor",
         "x": 2,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "burn",
@@ -45521,7 +45197,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "burn",
@@ -45548,9 +45223,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 6,
     "health": 15,
+    "attack": 6,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "pierce",
@@ -45560,7 +45236,6 @@ var CARDS = {
         "id": "fervor",
         "x": 2,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "burn",
@@ -45578,7 +45253,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "burn",
@@ -45600,7 +45274,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "burn",
@@ -45618,7 +45291,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "burn",
@@ -45638,9 +45310,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 7,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "pierce",
@@ -45716,9 +45389,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 10,
+    "attack": 6,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -45802,9 +45476,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 7,
     "health": 12,
+    "attack": 7,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -45875,9 +45550,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 9,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -45936,9 +45612,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 5,
     "health": 13,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -45997,9 +45674,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 6,
     "health": 16,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -46070,9 +45748,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 6,
     "health": 17,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -46082,13 +45761,11 @@ var CARDS = {
         "id": "legion",
         "x": 1,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "fervor",
         "x": 1,
         "y": "2",
-        "z": 2,
       },
     ],
     "upgrades": {
@@ -46114,13 +45791,11 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "fervor",
             "x": 1,
             "y": "2",
-            "z": 2,
           },
         ],
       },
@@ -46134,13 +45809,11 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "fervor",
             "x": 1,
             "y": "2",
-            "z": 2,
           },
         ],
       },
@@ -46155,9 +45828,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 6,
     "health": 21,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -46167,13 +45841,11 @@ var CARDS = {
         "id": "legion",
         "x": 2,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "fervor",
         "x": 1,
         "y": "2",
-        "z": 2,
       },
     ],
     "upgrades": {
@@ -46199,13 +45871,11 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "fervor",
             "x": 1,
             "y": "2",
-            "z": 2,
           },
         ],
       },
@@ -46219,13 +45889,11 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "fervor",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
         ],
       },
@@ -46240,9 +45908,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 7,
     "health": 24,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -46252,13 +45921,11 @@ var CARDS = {
         "id": "legion",
         "x": 2,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "fervor",
         "x": 2,
         "y": "2",
-        "z": 2,
       },
     ],
     "upgrades": {
@@ -46284,13 +45951,11 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "fervor",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
         ],
       },
@@ -46304,13 +45969,11 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "fervor",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
         ],
       },
@@ -46325,15 +45988,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 2,
     "health": 8,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "enfeeble",
@@ -46359,7 +46022,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -46377,7 +46039,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -46400,15 +46061,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 10,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "enfeeble",
@@ -46434,7 +46095,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -46452,7 +46112,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -46475,15 +46134,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 13,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 3,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "enfeeble",
@@ -46509,7 +46168,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -46527,7 +46185,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -46550,15 +46207,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 4,
     "health": 21,
+    "attack": 4,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "frost",
@@ -46592,7 +46249,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "frost",
@@ -46615,15 +46271,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 5,
     "health": 25,
+    "attack": 5,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "frost",
@@ -46653,7 +46309,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "frost",
@@ -46672,7 +46327,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "frost",
@@ -46695,15 +46349,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 6,
     "health": 29,
+    "attack": 6,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 2,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "frost",
@@ -46733,7 +46387,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "frost",
@@ -46752,7 +46405,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "frost",
@@ -46775,9 +46427,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 6,
     "health": 7,
+    "attack": 6,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "pierce",
@@ -46832,9 +46485,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 6,
     "health": 10,
+    "attack": 6,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "pierce",
@@ -46902,9 +46556,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 7,
     "health": 12,
+    "attack": 7,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -46960,9 +46615,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 5,
     "health": 16,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -47051,9 +46707,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 6,
     "health": 20,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -47129,9 +46786,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 6,
     "health": 24,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -47207,9 +46865,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -47271,9 +46930,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 5,
     "health": 14,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -47348,9 +47008,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 5,
     "health": 18,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -47425,9 +47086,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 2,
     "health": 6,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "poison",
@@ -47488,9 +47150,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 9,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "pierce",
@@ -47558,9 +47221,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "pierce",
@@ -47616,15 +47280,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 13,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
         "x": 2,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "burn",
@@ -47655,7 +47319,6 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "burn",
@@ -47674,7 +47337,6 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "burn",
@@ -47699,15 +47361,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 17,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
         "x": 3,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "burn",
@@ -47738,7 +47400,6 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "burn",
@@ -47757,7 +47418,6 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "burn",
@@ -47782,15 +47442,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 22,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
         "x": 3,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "burn",
@@ -47821,7 +47481,6 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "burn",
@@ -47840,7 +47499,6 @@ var CARDS = {
             "id": "legion",
             "x": 4,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "burn",
@@ -47864,15 +47522,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 19,
+    "attack": 3,
     "cost": 4,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "strike",
@@ -47899,7 +47557,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "strike",
@@ -47923,15 +47580,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 23,
+    "attack": 4,
     "cost": 4,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "fervor",
         "x": 2,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "strike",
@@ -47955,7 +47612,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "strike",
@@ -47978,7 +47634,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "strike",
@@ -48002,15 +47657,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 5,
     "health": 29,
+    "attack": 5,
     "cost": 4,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "fervor",
         "x": 2,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "strike",
@@ -48037,7 +47692,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "strike",
@@ -48057,7 +47711,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "strike",
@@ -48082,9 +47735,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 4,
     "health": 21,
+    "attack": 4,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -48175,9 +47829,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 6,
     "health": 26,
+    "attack": 6,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -48269,9 +47924,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 7,
     "health": 31,
+    "attack": 7,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -48362,9 +48018,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["6"],
-    "attack": 1,
     "health": 6,
+    "attack": 1,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -48411,9 +48068,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["6"],
-    "attack": 2,
     "health": 9,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -48472,9 +48130,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["6"],
-    "attack": 3,
     "health": 11,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -48541,9 +48200,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 17,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -48602,9 +48262,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["6"],
-    "attack": 5,
     "health": 21,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -48676,9 +48337,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["6"],
-    "attack": 6,
     "health": 25,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -48750,9 +48412,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["6"],
-    "attack": 3,
     "health": 7,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -48812,9 +48475,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["6"],
-    "attack": 5,
     "health": 10,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -48874,9 +48538,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["6"],
-    "attack": 6,
     "health": 14,
+    "attack": 6,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -48947,9 +48612,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["6"],
-    "attack": 7,
     "health": 15,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "weaken",
@@ -49021,9 +48687,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["6"],
-    "attack": 8,
     "health": 19,
+    "attack": 8,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "weaken",
@@ -49108,9 +48775,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["6"],
-    "attack": 9,
     "health": 22,
+    "attack": 9,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "weaken",
@@ -49183,9 +48851,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 0,
     "health": 20,
+    "attack": 0,
     "cost": 4,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -49256,9 +48925,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 1,
     "health": 25,
+    "attack": 1,
     "cost": 4,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -49342,9 +49012,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 2,
     "health": 31,
+    "attack": 2,
     "cost": 4,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -49428,9 +49099,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 17,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -49522,9 +49194,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 6,
     "health": 21,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -49602,9 +49275,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 7,
     "health": 25,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -49681,15 +49355,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 3,
     "health": 10,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "burn",
@@ -49711,7 +49385,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "burn",
@@ -49725,7 +49398,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "burn",
@@ -49744,15 +49416,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 4,
     "health": 12,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "fervor",
         "x": 2,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "burn",
@@ -49774,7 +49446,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "burn",
@@ -49792,7 +49463,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "burn",
@@ -49811,9 +49481,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 4,
     "health": 15,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -49823,7 +49494,6 @@ var CARDS = {
         "id": "fervor",
         "x": 3,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "burn",
@@ -49849,7 +49519,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "burn",
@@ -49867,7 +49536,6 @@ var CARDS = {
             "id": "fervor",
             "x": 4,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "burn",
@@ -49886,9 +49554,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 11,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -49983,9 +49652,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 15,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -50059,9 +49729,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 6,
     "health": 18,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -50136,15 +49807,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 1,
     "health": 4,
+    "attack": 1,
     "cost": 0,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "5",
-        "z": 5,
       },
     ],
     "upgrades": {
@@ -50162,7 +49833,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "5",
-            "z": 5,
           },
         ],
       },
@@ -50180,7 +49850,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
         ],
       },
@@ -50195,9 +49864,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 2,
     "health": 5,
+    "attack": 2,
     "cost": 0,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "pierce",
@@ -50207,7 +49877,6 @@ var CARDS = {
         "id": "fervor",
         "x": 2,
         "y": "5",
-        "z": 5,
       },
     ],
     "upgrades": {
@@ -50225,7 +49894,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
         ],
       },
@@ -50248,9 +49916,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 3,
     "health": 7,
+    "attack": 3,
     "cost": 0,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "pierce",
@@ -50260,7 +49929,6 @@ var CARDS = {
         "id": "fervor",
         "x": 2,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "berserk",
@@ -50290,7 +49958,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "berserk",
@@ -50309,15 +49976,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
         "x": 1,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "enfeeble",
@@ -50347,7 +50014,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "enfeeble",
@@ -50366,7 +50032,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "enfeeble",
@@ -50386,9 +50051,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 16,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -50398,7 +50064,6 @@ var CARDS = {
         "id": "legion",
         "x": 1,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "enfeeble",
@@ -50417,7 +50082,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "enfeeble",
@@ -50448,7 +50112,6 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "enfeeble",
@@ -50468,9 +50131,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 20,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -50480,7 +50144,6 @@ var CARDS = {
         "id": "legion",
         "x": 3,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "enfeeble",
@@ -50507,7 +50170,6 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "enfeeble",
@@ -50530,7 +50192,6 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "enfeeble",
@@ -50550,9 +50211,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 28,
+    "attack": 3,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
@@ -50628,9 +50290,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 4,
     "health": 33,
+    "attack": 4,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
@@ -50720,9 +50383,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 5,
     "health": 38,
+    "attack": 5,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
@@ -50798,9 +50462,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 4,
     "health": 11,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -50871,9 +50536,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 4,
     "health": 15,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -50944,9 +50610,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 5,
     "health": 18,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -51006,9 +50673,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 11,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -51055,9 +50723,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 4,
     "health": 15,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -51125,9 +50794,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 6,
     "health": 18,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -51195,9 +50865,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 4,
     "health": 7,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "pierce",
@@ -51253,9 +50924,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 5,
     "health": 9,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -51323,9 +50995,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 6,
     "health": 12,
+    "attack": 6,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -51393,9 +51066,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 8,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "poison",
@@ -51450,9 +51124,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 4,
     "health": 11,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "burn",
@@ -51515,9 +51190,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 5,
     "health": 14,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -51589,9 +51265,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["10"],
-    "attack": 3,
     "health": 20,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -51676,9 +51353,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["10"],
-    "attack": 4,
     "health": 23,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -51750,9 +51428,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["10"],
-    "attack": 5,
     "health": 28,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -51825,9 +51504,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["10"],
-    "attack": 4,
     "health": 8,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "nullify",
@@ -51887,9 +51567,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["10"],
-    "attack": 5,
     "health": 10,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -51944,9 +51625,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["10"],
-    "attack": 6,
     "health": 13,
+    "attack": 6,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -52003,9 +51685,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["10"],
-    "attack": 3,
     "health": 11,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -52076,9 +51759,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["10"],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -52140,9 +51824,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["10"],
-    "attack": 5,
     "health": 18,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -52230,9 +51915,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["10"],
-    "attack": 3,
     "health": 11,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -52303,9 +51989,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["10"],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -52376,9 +52063,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["10"],
-    "attack": 4,
     "health": 18,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -52448,9 +52136,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 3,
     "health": 11,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "burn",
@@ -52544,9 +52233,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 4,
     "health": 15,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "burn",
@@ -52618,9 +52308,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 5,
     "health": 20,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "burn",
@@ -52705,15 +52396,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "enfeeble",
@@ -52743,7 +52434,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "enfeeble",
@@ -52761,7 +52451,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "enfeeble",
@@ -52786,15 +52475,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 17,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 2,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "enfeeble",
@@ -52829,7 +52518,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "enfeeble",
@@ -52854,15 +52542,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 21,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 3,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "enfeeble",
@@ -52893,7 +52581,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "enfeeble",
@@ -52912,7 +52599,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "enfeeble",
@@ -52937,9 +52623,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 18,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -53013,9 +52700,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 22,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -53090,9 +52778,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 7,
     "health": 27,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -53168,9 +52857,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 2,
     "health": 8,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "pierce",
@@ -53242,9 +52932,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 3,
     "health": 11,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "pierce",
@@ -53316,9 +53007,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 13,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "pierce",
@@ -53390,9 +53082,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 13,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -53452,9 +53145,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 17,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -53527,9 +53221,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 8,
     "health": 21,
+    "attack": 8,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -53601,15 +53296,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 12,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "weaken",
@@ -53636,7 +53331,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "weaken",
@@ -53654,7 +53348,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "weaken",
@@ -53672,7 +53365,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "weaken",
@@ -53692,9 +53384,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 15,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -53704,7 +53397,6 @@ var CARDS = {
         "id": "fervor",
         "x": 2,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "weaken",
@@ -53734,7 +53426,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "weaken",
@@ -53758,9 +53449,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 8,
     "health": 18,
+    "attack": 8,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -53770,7 +53462,6 @@ var CARDS = {
         "id": "fervor",
         "x": 2,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "weaken",
@@ -53801,7 +53492,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "weaken",
@@ -53819,7 +53509,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "weaken",
@@ -53840,9 +53529,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 3,
     "health": 7,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -53919,9 +53609,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 9,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -53989,9 +53680,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 12,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -54059,9 +53751,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 5,
     "health": 18,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -54071,7 +53764,6 @@ var CARDS = {
         "id": "fervor",
         "x": 2,
         "y": "13",
-        "z": 13,
       },
       {
         "id": "berserk",
@@ -54089,7 +53781,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "berserk",
@@ -54111,7 +53802,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "berserk",
@@ -54134,7 +53824,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "berserk",
@@ -54154,9 +53843,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 5,
     "health": 24,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -54166,7 +53856,6 @@ var CARDS = {
         "id": "fervor",
         "x": 3,
         "y": "13",
-        "z": 13,
       },
       {
         "id": "berserk",
@@ -54189,7 +53878,6 @@ var CARDS = {
             "id": "fervor",
             "x": 4,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "berserk",
@@ -54211,7 +53899,6 @@ var CARDS = {
             "id": "fervor",
             "x": 4,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "berserk",
@@ -54229,7 +53916,6 @@ var CARDS = {
             "id": "fervor",
             "x": 4,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "berserk",
@@ -54249,9 +53935,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 6,
     "health": 28,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -54261,7 +53948,6 @@ var CARDS = {
         "id": "fervor",
         "x": 4,
         "y": "13",
-        "z": 13,
       },
       {
         "id": "berserk",
@@ -54288,7 +53974,6 @@ var CARDS = {
             "id": "fervor",
             "x": 4,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "berserk",
@@ -54310,7 +53995,6 @@ var CARDS = {
             "id": "fervor",
             "x": 5,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "berserk",
@@ -54330,9 +54014,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 1,
     "health": 7,
+    "attack": 1,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -54404,9 +54089,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 1,
     "health": 10,
+    "attack": 1,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -54481,9 +54167,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 2,
     "health": 13,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -54558,9 +54245,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 4,
     "health": 13,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -54629,9 +54317,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 5,
     "health": 17,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -54712,9 +54401,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 5,
     "health": 21,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -54782,15 +54472,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 3,
     "health": 14,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
         "x": 1,
         "y": "13",
-        "z": 13,
       },
       {
         "id": "poison",
@@ -54816,7 +54506,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "poison",
@@ -54839,7 +54528,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "poison",
@@ -54863,15 +54551,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 4,
     "health": 18,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
         "x": 1,
         "y": "13",
-        "z": 13,
       },
       {
         "id": "poison",
@@ -54890,7 +54578,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "poison",
@@ -54908,7 +54595,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "poison",
@@ -54935,7 +54621,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "poison",
@@ -54959,15 +54644,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 5,
     "health": 21,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
         "x": 2,
         "y": "13",
-        "z": 13,
       },
       {
         "id": "poison",
@@ -54998,7 +54683,6 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "poison",
@@ -55016,7 +54700,6 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "poison",
@@ -55040,9 +54723,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 4,
     "health": 16,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -55119,9 +54803,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 4,
     "health": 22,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -55213,9 +54898,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 5,
     "health": 28,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -55306,9 +54992,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 5,
     "health": 12,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "weaken",
@@ -55377,9 +55064,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 6,
     "health": 15,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "weaken",
@@ -55435,9 +55123,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 7,
     "health": 18,
+    "attack": 7,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "weaken",
@@ -55506,15 +55195,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 7,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "pierce",
@@ -55536,7 +55225,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "pierce",
@@ -55569,15 +55257,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["6"],
-    "attack": 6,
     "health": 10,
+    "attack": 6,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "pierce",
@@ -55600,7 +55288,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "pierce",
@@ -55632,15 +55319,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["6"],
-    "attack": 7,
     "health": 14,
+    "attack": 7,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "pierce",
@@ -55667,7 +55354,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "pierce",
@@ -55685,7 +55371,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "pierce",
@@ -55709,9 +55394,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 13,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -55773,9 +55459,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["6"],
-    "attack": 5,
     "health": 17,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -55837,9 +55524,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["6"],
-    "attack": 6,
     "health": 21,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -55915,15 +55603,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 2,
     "health": 6,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "2",
-        "z": 2,
       },
     ],
     "upgrades": {
@@ -55933,7 +55621,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "berserk",
@@ -55951,7 +55638,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "berserk",
@@ -55979,15 +55665,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 2,
     "health": 9,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "berserk",
@@ -56013,7 +55699,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "berserk",
@@ -56041,15 +55726,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "berserk",
@@ -56080,7 +55765,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "berserk",
@@ -56104,9 +55788,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["6"],
-    "attack": 7,
     "health": 20,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "nullify",
@@ -56180,9 +55865,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["6"],
-    "attack": 8,
     "health": 25,
+    "attack": 8,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "nullify",
@@ -56267,9 +55953,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["6"],
-    "attack": 9,
     "health": 30,
+    "attack": 9,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "nullify",
@@ -56354,21 +56041,20 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["6"],
-    "attack": 2,
     "health": 8,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
         "x": 1,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "fervor",
         "x": 1,
         "y": "6",
-        "z": 6,
       },
     ],
     "upgrades": {
@@ -56390,13 +56076,11 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "fervor",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
         ],
       },
@@ -56406,13 +56090,11 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "fervor",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "burn",
@@ -56432,21 +56114,20 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["6"],
-    "attack": 3,
     "health": 11,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
         "x": 1,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "fervor",
         "x": 2,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "burn",
@@ -56460,13 +56141,11 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "fervor",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "burn",
@@ -56488,13 +56167,11 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "fervor",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "burn",
@@ -56518,21 +56195,20 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
         "x": 2,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "fervor",
         "x": 2,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "burn",
@@ -56558,13 +56234,11 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "fervor",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "burn",
@@ -56578,13 +56252,11 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "fervor",
             "x": 3,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "burn",
@@ -56604,9 +56276,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 9,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -56675,9 +56348,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 6,
     "health": 12,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -56746,9 +56420,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 6,
     "health": 16,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -56817,9 +56492,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 3,
     "health": 13,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "burn",
@@ -56918,9 +56594,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 3,
     "health": 18,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "burn",
@@ -56994,9 +56671,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 24,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "burn",
@@ -57083,9 +56761,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 6,
     "health": 12,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "weaken",
@@ -57154,9 +56833,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 8,
     "health": 16,
+    "attack": 8,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -57229,9 +56909,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 9,
     "health": 20,
+    "attack": 9,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -57304,9 +56985,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 25,
+    "attack": 5,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -57399,9 +57081,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 7,
     "health": 32,
+    "attack": 7,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -57507,9 +57190,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 9,
     "health": 39,
+    "attack": 9,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -57615,9 +57299,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -57680,9 +57365,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 17,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -57771,9 +57457,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 21,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -57849,15 +57536,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 16,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "poison",
@@ -57875,7 +57562,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "poison",
@@ -57902,7 +57588,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "poison",
@@ -57930,15 +57615,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 21,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "poison",
@@ -57961,7 +57646,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "poison",
@@ -57979,7 +57663,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "poison",
@@ -57997,7 +57680,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "poison",
@@ -58016,7 +57698,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "poison",
@@ -58040,15 +57721,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 24,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 2,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "poison",
@@ -58083,7 +57764,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "poison",
@@ -58107,9 +57787,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -58179,9 +57860,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 5,
     "health": 13,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -58239,9 +57921,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 6,
     "health": 17,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -58299,9 +57982,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7","9"],
-    "attack": 6,
     "health": 16,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "pierce",
@@ -58366,9 +58050,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7","9"],
-    "attack": 7,
     "health": 20,
+    "attack": 7,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -58440,9 +58125,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7","9"],
-    "attack": 9,
     "health": 22,
+    "attack": 9,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -58514,9 +58200,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 13,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -58600,9 +58287,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 5,
     "health": 18,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -58686,9 +58374,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 6,
     "health": 23,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -58772,9 +58461,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 2,
     "health": 7,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -58842,9 +58532,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 2,
     "health": 11,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -58916,9 +58607,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 14,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -58991,21 +58683,20 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 2,
     "health": 12,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
         "x": 1,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "fervor",
         "x": 1,
         "y": "7",
-        "z": 7,
       },
     ],
     "upgrades": {
@@ -59019,13 +58710,11 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "fervor",
             "x": 1,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "nullify",
@@ -59047,13 +58736,11 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "fervor",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "nullify",
@@ -59073,21 +58760,20 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 2,
     "health": 16,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
         "x": 3,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "fervor",
         "x": 2,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "nullify",
@@ -59102,13 +58788,11 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "fervor",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "nullify",
@@ -59134,13 +58818,11 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "fervor",
             "x": 3,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "nullify",
@@ -59160,21 +58842,20 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 21,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
         "x": 3,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "fervor",
         "x": 3,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "nullify",
@@ -59201,13 +58882,11 @@ var CARDS = {
             "id": "legion",
             "x": 4,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "fervor",
             "x": 3,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "nullify",
@@ -59221,13 +58900,11 @@ var CARDS = {
             "id": "legion",
             "x": 4,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "fervor",
             "x": 4,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "nullify",
@@ -59247,9 +58924,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 8,
     "health": 22,
+    "attack": 8,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -59314,9 +58992,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 11,
     "health": 29,
+    "attack": 11,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -59394,9 +59073,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 13,
     "health": 36,
+    "attack": 13,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -59489,9 +59169,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -59546,9 +59227,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 4,
     "health": 16,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -59634,9 +59316,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 4,
     "health": 21,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -59712,9 +59395,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -59783,9 +59467,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -59842,9 +59527,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 5,
     "health": 17,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -59913,9 +59599,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 3,
     "health": 11,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -59984,9 +59671,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 5,
     "health": 14,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -60067,9 +59755,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 6,
     "health": 17,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -60138,15 +59827,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7","11"],
-    "attack": 3,
     "health": 13,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 2,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "enfeeble",
@@ -60173,7 +59862,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -60191,7 +59879,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -60211,7 +59898,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -60236,15 +59922,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7","11"],
-    "attack": 4,
     "health": 17,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 3,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "enfeeble",
@@ -60264,7 +59950,6 @@ var CARDS = {
             "id": "fervor",
             "x": 4,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -60288,7 +59973,6 @@ var CARDS = {
             "id": "fervor",
             "x": 4,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -60312,7 +59996,6 @@ var CARDS = {
             "id": "fervor",
             "x": 5,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -60337,15 +60020,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7","11"],
-    "attack": 5,
     "health": 22,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 5,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "enfeeble",
@@ -60365,7 +60048,6 @@ var CARDS = {
             "id": "fervor",
             "x": 5,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -60393,7 +60075,6 @@ var CARDS = {
             "id": "fervor",
             "x": 6,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -60412,7 +60093,6 @@ var CARDS = {
             "id": "fervor",
             "x": 6,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -60437,9 +60117,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 1,
     "health": 6,
+    "attack": 1,
     "cost": 0,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "burn",
@@ -60511,9 +60192,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 1,
     "health": 10,
+    "attack": 1,
     "cost": 0,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "burn",
@@ -60585,9 +60267,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 1,
     "health": 13,
+    "attack": 1,
     "cost": 0,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "burn",
@@ -60659,9 +60342,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 3,
     "health": 7,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -60707,7 +60391,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "strike",
@@ -60727,9 +60410,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 3,
     "health": 11,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -60739,7 +60423,6 @@ var CARDS = {
         "id": "legion",
         "x": 1,
         "y": "11",
-        "z": 11,
       },
       {
         "id": "strike",
@@ -60766,7 +60449,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "strike",
@@ -60784,7 +60466,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "strike",
@@ -60808,9 +60489,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 3,
     "health": 16,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -60820,7 +60502,6 @@ var CARDS = {
         "id": "legion",
         "x": 1,
         "y": "11",
-        "z": 11,
       },
       {
         "id": "strike",
@@ -60850,7 +60531,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "strike",
@@ -60868,7 +60548,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "strike",
@@ -60888,9 +60567,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 5,
     "health": 15,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -60958,9 +60638,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 6,
     "health": 19,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -61031,9 +60712,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 7,
     "health": 22,
+    "attack": 7,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -61105,9 +60787,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 17,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -61185,9 +60868,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 23,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -61292,9 +60976,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 29,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -61386,9 +61071,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 12,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -61457,9 +61143,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 7,
     "health": 15,
+    "attack": 7,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -61528,9 +61215,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 8,
     "health": 18,
+    "attack": 8,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -61612,9 +61300,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 2,
     "health": 9,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "pierce",
@@ -61670,9 +61359,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "pierce",
@@ -61753,9 +61443,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "pierce",
@@ -61824,9 +61515,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9","11"],
-    "attack": 3,
     "health": 9,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -61886,9 +61578,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9","11"],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -61960,9 +61653,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9","11"],
-    "attack": 4,
     "health": 15,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -62034,9 +61728,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "corrosive",
@@ -62109,9 +61804,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 18,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "corrosive",
@@ -62184,9 +61880,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 21,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "corrosive",
@@ -62248,9 +61945,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9","6"],
-    "attack": 4,
     "health": 16,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -62308,9 +62006,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9","6"],
-    "attack": 5,
     "health": 20,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -62385,9 +62084,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9","6"],
-    "attack": 5,
     "health": 24,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -62475,9 +62175,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 7,
     "health": 32,
+    "attack": 7,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "corrosive",
@@ -62566,9 +62267,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 9,
     "health": 38,
+    "attack": 9,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "corrosive",
@@ -62657,9 +62359,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 11,
     "health": 44,
+    "attack": 11,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "corrosive",
@@ -62748,9 +62451,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 4,
     "health": 16,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -62823,9 +62527,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 6,
     "health": 20,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -62898,9 +62603,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 7,
     "health": 24,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -62975,9 +62681,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 5,
     "health": 11,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "pierce",
@@ -63037,9 +62744,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 6,
     "health": 13,
+    "attack": 6,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -63111,9 +62819,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 7,
     "health": 15,
+    "attack": 7,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -63185,9 +62894,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4","5"],
-    "attack": 3,
     "health": 8,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -63244,9 +62954,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4","5"],
-    "attack": 4,
     "health": 12,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -63315,9 +63026,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4","5"],
-    "attack": 5,
     "health": 15,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -63387,15 +63099,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 6,
     "health": 16,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 2,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "berserk",
@@ -63421,7 +63133,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "berserk",
@@ -63435,7 +63146,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "nullify",
@@ -63459,15 +63169,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 7,
     "health": 19,
+    "attack": 7,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 3,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "nullify",
@@ -63489,7 +63199,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "nullify",
@@ -63508,7 +63217,6 @@ var CARDS = {
             "id": "fervor",
             "x": 4,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "nullify",
@@ -63526,7 +63234,6 @@ var CARDS = {
             "id": "fervor",
             "x": 4,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "nullify",
@@ -63545,7 +63252,6 @@ var CARDS = {
             "id": "fervor",
             "x": 4,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "nullify",
@@ -63569,15 +63275,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 7,
     "health": 23,
+    "attack": 7,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 4,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "nullify",
@@ -63607,7 +63313,6 @@ var CARDS = {
             "id": "fervor",
             "x": 5,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "nullify",
@@ -63625,7 +63330,6 @@ var CARDS = {
             "id": "fervor",
             "x": 5,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "nullify",
@@ -63649,9 +63353,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["12"],
-    "attack": 7,
     "health": 13,
+    "attack": 7,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -63699,9 +63404,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["12"],
-    "attack": 8,
     "health": 16,
+    "attack": 8,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -63757,9 +63463,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["12"],
-    "attack": 9,
     "health": 18,
+    "attack": 9,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -63827,9 +63534,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 2,
     "health": 18,
+    "attack": 2,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
@@ -63931,9 +63639,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 4,
     "health": 21,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
@@ -63994,9 +63703,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 5,
     "health": 26,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
@@ -64071,9 +63781,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 5,
     "health": 16,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -64083,13 +63794,11 @@ var CARDS = {
         "id": "rally",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "rally",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -64107,13 +63816,11 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -64127,13 +63834,11 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -64147,13 +63852,11 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -64172,9 +63875,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 6,
     "health": 17,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -64184,13 +63888,11 @@ var CARDS = {
         "id": "rally",
         "x": 4,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "rally",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -64216,13 +63918,11 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -64236,13 +63936,11 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -64257,9 +63955,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 7,
     "health": 19,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -64269,13 +63968,11 @@ var CARDS = {
         "id": "rally",
         "x": 5,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "rally",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -64293,13 +63990,11 @@ var CARDS = {
             "id": "rally",
             "x": 6,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -64317,13 +64012,11 @@ var CARDS = {
             "id": "rally",
             "x": 6,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "rally",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -64342,22 +64035,21 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 6,
     "health": 21,
+    "attack": 6,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
         "x": 1,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
         "id": "rally",
         "x": 1,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
@@ -64376,14 +64068,12 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -64398,14 +64088,12 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -64421,14 +64109,12 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -64443,14 +64129,12 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -64470,22 +64154,21 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 7,
     "health": 24,
+    "attack": 7,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
         "x": 2,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
         "id": "rally",
         "x": 3,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
@@ -64504,14 +64187,12 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -64534,14 +64215,12 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -64561,22 +64240,21 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 8,
     "health": 29,
+    "attack": 8,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
         "x": 3,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
         "id": "rally",
         "x": 3,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
@@ -64595,14 +64273,12 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -64621,14 +64297,12 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -64643,14 +64317,12 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 4,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -64670,9 +64342,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 4,
     "health": 17,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -64682,7 +64355,6 @@ var CARDS = {
         "id": "heal",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "jam",
@@ -64704,7 +64376,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "jam",
@@ -64722,7 +64393,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "jam",
@@ -64741,7 +64411,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "jam",
@@ -64760,7 +64429,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "jam",
@@ -64779,9 +64447,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 6,
     "health": 20,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -64791,7 +64460,6 @@ var CARDS = {
         "id": "heal",
         "x": 4,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "jam",
@@ -64813,7 +64481,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "jam",
@@ -64831,7 +64498,6 @@ var CARDS = {
             "id": "heal",
             "x": 5,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "jam",
@@ -64854,7 +64520,6 @@ var CARDS = {
             "id": "heal",
             "x": 5,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "jam",
@@ -64873,9 +64538,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 6,
     "health": 26,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -64885,7 +64551,6 @@ var CARDS = {
         "id": "heal",
         "x": 5,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "jam",
@@ -64907,7 +64572,6 @@ var CARDS = {
             "id": "heal",
             "x": 5,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "jam",
@@ -64929,7 +64593,6 @@ var CARDS = {
             "id": "heal",
             "x": 6,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "jam",
@@ -64952,9 +64615,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -64964,7 +64628,6 @@ var CARDS = {
         "id": "rally",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -64983,7 +64646,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -64998,7 +64660,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "jam",
@@ -65017,7 +64678,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "jam",
@@ -65036,9 +64696,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 6,
     "health": 14,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -65048,7 +64709,6 @@ var CARDS = {
         "id": "rally",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "jam",
@@ -65070,7 +64730,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "jam",
@@ -65097,9 +64756,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 8,
     "health": 16,
+    "attack": 8,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -65109,7 +64769,6 @@ var CARDS = {
         "id": "rally",
         "x": 4,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "jam",
@@ -65131,7 +64790,6 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "jam",
@@ -65149,7 +64807,6 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "jam",
@@ -65172,9 +64829,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 3,
     "health": 7,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -65245,9 +64903,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 3,
     "health": 10,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -65314,9 +64973,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 4,
     "health": 12,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -65372,9 +65032,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 1,
     "health": 7,
+    "attack": 1,
     "cost": 3,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "leech",
@@ -65427,9 +65088,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 2,
     "health": 10,
+    "attack": 2,
     "cost": 3,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "enfeeble",
@@ -65472,9 +65134,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "enfeeble",
@@ -65518,9 +65181,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 1,
     "health": 5,
+    "attack": 1,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "evade",
@@ -65568,9 +65232,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 2,
     "health": 7,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "evade",
@@ -65613,9 +65278,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 2,
     "health": 10,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "evade",
@@ -65658,15 +65324,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 17,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
         "x": 1,
         "y": "9",
-        "z": 9,
         "all": "1",
       },
       {
@@ -65689,7 +65355,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -65708,7 +65373,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -65727,7 +65391,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -65746,7 +65409,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -65770,15 +65432,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 20,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
         "x": 2,
         "y": "9",
-        "z": 9,
         "all": "1",
       },
       {
@@ -65805,7 +65467,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -65824,7 +65485,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -65843,7 +65503,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -65867,15 +65526,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 23,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
         "x": 3,
         "y": "9",
-        "z": 9,
         "all": "1",
       },
       {
@@ -65898,7 +65557,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -65918,7 +65576,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -65938,7 +65595,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -65958,7 +65614,6 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -65982,9 +65637,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 3,
     "health": 7,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -66094,9 +65750,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 4,
     "health": 9,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -66155,9 +65812,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 6,
     "health": 12,
+    "attack": 6,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -66240,15 +65898,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 2,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "jam",
@@ -66266,7 +65924,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "jam",
@@ -66280,7 +65937,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "jam",
@@ -66299,7 +65955,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "jam",
@@ -66322,15 +65977,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 14,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 3,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "jam",
@@ -66352,7 +66007,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "jam",
@@ -66370,7 +66024,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "jam",
@@ -66388,7 +66041,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "jam",
@@ -66411,15 +66063,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 15,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 5,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "jam",
@@ -66441,7 +66093,6 @@ var CARDS = {
             "id": "heal",
             "x": 5,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "jam",
@@ -66459,7 +66110,6 @@ var CARDS = {
             "id": "heal",
             "x": 6,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "jam",
@@ -66477,7 +66127,6 @@ var CARDS = {
             "id": "heal",
             "x": 6,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "jam",
@@ -66500,9 +66149,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 3,
     "health": 7,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -66562,9 +66212,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -66623,9 +66274,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 4,
     "health": 13,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -66680,15 +66332,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 2,
     "health": 9,
+    "attack": 2,
     "cost": 3,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "heal",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "leech",
@@ -66703,7 +66355,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "leech",
@@ -66723,7 +66374,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "leech",
@@ -66742,15 +66392,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 13,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "heal",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "leech",
@@ -66768,7 +66418,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "leech",
@@ -66782,7 +66431,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "leech",
@@ -66801,15 +66449,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 15,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "heal",
         "x": 4,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "leech",
@@ -66827,7 +66475,6 @@ var CARDS = {
             "id": "heal",
             "x": 5,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "leech",
@@ -66841,7 +66488,6 @@ var CARDS = {
             "id": "heal",
             "x": 5,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "leech",
@@ -66860,22 +66506,21 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 2,
     "health": 15,
+    "attack": 2,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "5",
-        "z": 5,
         "all": "1",
       },
       {
         "id": "fervor",
         "x": 1,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "armored",
@@ -66901,14 +66546,12 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
             "id": "fervor",
             "x": 1,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "armored",
@@ -66922,14 +66565,12 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
             "id": "fervor",
             "x": 1,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "armored",
@@ -66948,22 +66589,21 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 3,
     "health": 18,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "5",
-        "z": 5,
         "all": "1",
       },
       {
         "id": "fervor",
         "x": 1,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "armored",
@@ -66985,14 +66625,12 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
             "id": "fervor",
             "x": 1,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "armored",
@@ -67006,14 +66644,12 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
             "id": "fervor",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "armored",
@@ -67027,14 +66663,12 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
             "id": "fervor",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "armored",
@@ -67053,22 +66687,21 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 3,
     "health": 21,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 3,
         "y": "5",
-        "z": 5,
         "all": "1",
       },
       {
         "id": "fervor",
         "x": 2,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "armored",
@@ -67090,14 +66723,12 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
             "id": "fervor",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "armored",
@@ -67111,14 +66742,12 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
             "id": "fervor",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "armored",
@@ -67132,14 +66761,12 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
             "id": "fervor",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "armored",
@@ -67158,9 +66785,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 5,
     "health": 18,
+    "attack": 5,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -67170,7 +66798,6 @@ var CARDS = {
         "id": "protect",
         "x": 1,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
@@ -67205,7 +66832,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -67225,9 +66851,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 7,
     "health": 24,
+    "attack": 7,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -67237,7 +66864,6 @@ var CARDS = {
         "id": "protect",
         "x": 1,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
@@ -67265,7 +66891,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -67284,7 +66909,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -67303,7 +66927,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -67323,9 +66946,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 8,
     "health": 28,
+    "attack": 8,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -67335,7 +66959,6 @@ var CARDS = {
         "id": "protect",
         "x": 2,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
@@ -67362,7 +66985,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -67381,7 +67003,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -67400,7 +67021,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -67420,15 +67040,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 3,
     "health": 10,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 1,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "jam",
@@ -67455,7 +67075,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "jam",
@@ -67473,7 +67092,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "jam",
@@ -67496,15 +67114,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 15,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 2,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "jam",
@@ -67526,7 +67144,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "jam",
@@ -67544,7 +67161,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "jam",
@@ -67562,7 +67178,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "jam",
@@ -67585,15 +67200,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 18,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 3,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "jam",
@@ -67615,7 +67230,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "jam",
@@ -67633,7 +67247,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "jam",
@@ -67651,7 +67264,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "jam",
@@ -67674,15 +67286,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 2,
     "health": 9,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 2,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "pierce",
@@ -67692,7 +67304,6 @@ var CARDS = {
         "id": "fervor",
         "x": 1,
         "y": "4",
-        "z": 4,
       },
     ],
     "upgrades": {
@@ -67711,7 +67322,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "pierce",
@@ -67721,7 +67331,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -67731,7 +67340,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "pierce",
@@ -67741,7 +67349,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -67756,15 +67363,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 13,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 3,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "pierce",
@@ -67774,7 +67381,6 @@ var CARDS = {
         "id": "fervor",
         "x": 1,
         "y": "4",
-        "z": 4,
       },
     ],
     "upgrades": {
@@ -67788,7 +67394,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "pierce",
@@ -67798,7 +67403,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -67808,7 +67412,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "pierce",
@@ -67818,7 +67421,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -67828,7 +67430,6 @@ var CARDS = {
             "id": "heal",
             "x": 5,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "pierce",
@@ -67838,7 +67439,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -67853,15 +67453,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 16,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 5,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "pierce",
@@ -67871,7 +67471,6 @@ var CARDS = {
         "id": "fervor",
         "x": 1,
         "y": "4",
-        "z": 4,
       },
     ],
     "upgrades": {
@@ -67881,7 +67480,6 @@ var CARDS = {
             "id": "heal",
             "x": 5,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "pierce",
@@ -67891,7 +67489,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -67901,7 +67498,6 @@ var CARDS = {
             "id": "heal",
             "x": 6,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "pierce",
@@ -67911,7 +67507,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -67921,7 +67516,6 @@ var CARDS = {
             "id": "heal",
             "x": 6,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "pierce",
@@ -67931,7 +67525,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -67941,7 +67534,6 @@ var CARDS = {
             "id": "heal",
             "x": 6,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "pierce",
@@ -67951,7 +67543,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -67966,15 +67557,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 2,
     "health": 9,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "heal",
         "x": 1,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "leech",
@@ -68005,15 +67596,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "heal",
         "x": 1,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "leech",
@@ -68031,7 +67622,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "leech",
@@ -68045,7 +67635,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "leech",
@@ -68064,15 +67653,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "heal",
         "x": 2,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "leech",
@@ -68086,7 +67675,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "leech",
@@ -68100,7 +67688,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "leech",
@@ -68115,7 +67702,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "leech",
@@ -68135,9 +67721,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 4,
     "health": 8,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -68147,14 +67734,12 @@ var CARDS = {
         "id": "rally",
         "x": 1,
         "y": "4",
-        "z": 4,
         "all": "1",
       },
       {
         "id": "protect",
         "x": 2,
         "y": "4",
-        "z": 4,
       },
     ],
     "upgrades": {
@@ -68172,14 +67757,12 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 3,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -68197,14 +67780,12 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 3,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -68218,14 +67799,12 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 3,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -68241,9 +67820,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 5,
     "health": 11,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -68253,14 +67833,12 @@ var CARDS = {
         "id": "rally",
         "x": 2,
         "y": "4",
-        "z": 4,
         "all": "1",
       },
       {
         "id": "protect",
         "x": 3,
         "y": "4",
-        "z": 4,
       },
     ],
     "upgrades": {
@@ -68282,14 +67860,12 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 4,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -68313,9 +67889,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 6,
     "health": 15,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -68325,14 +67902,12 @@ var CARDS = {
         "id": "rally",
         "x": 2,
         "y": "4",
-        "z": 4,
         "all": "1",
       },
       {
         "id": "protect",
         "x": 4,
         "y": "4",
-        "z": 4,
       },
     ],
     "upgrades": {
@@ -68350,14 +67925,12 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 4,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -68372,14 +67945,12 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 5,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -68397,14 +67968,12 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 5,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -68420,9 +67989,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 4,
     "health": 11,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -68487,9 +68057,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 5,
     "health": 14,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -68577,9 +68148,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 5,
     "health": 17,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -68654,21 +68226,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 4,
     "health": 11,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "heal",
         "x": 1,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "jam",
@@ -68686,13 +68257,11 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "heal",
             "x": 1,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "jam",
@@ -68706,13 +68275,11 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "heal",
             "x": 1,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "jam",
@@ -68727,13 +68294,11 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "heal",
             "x": 1,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -68754,21 +68319,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 5,
     "health": 14,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "fervor",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "heal",
         "x": 1,
         "y": "4",
-        "z": 4,
         "all": "1",
       },
       {
@@ -68787,13 +68351,11 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "heal",
             "x": 1,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -68812,13 +68374,11 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "heal",
             "x": 2,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -68839,21 +68399,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 6,
     "health": 17,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "fervor",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "heal",
         "x": 2,
         "y": "4",
-        "z": 4,
         "all": "1",
       },
       {
@@ -68872,13 +68431,11 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "heal",
             "x": 2,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -68897,13 +68454,11 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "heal",
             "x": 3,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -68924,9 +68479,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 11,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -68936,7 +68492,6 @@ var CARDS = {
         "id": "rally",
         "x": 3,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "leech",
@@ -68958,7 +68513,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "leech",
@@ -68980,7 +68534,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "leech",
@@ -69000,9 +68553,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 14,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -69012,7 +68566,6 @@ var CARDS = {
         "id": "rally",
         "x": 4,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "leech",
@@ -69042,7 +68595,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "leech",
@@ -69062,9 +68614,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 6,
     "health": 17,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -69074,7 +68627,6 @@ var CARDS = {
         "id": "rally",
         "x": 4,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "leech",
@@ -69096,7 +68648,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "leech",
@@ -69114,7 +68665,6 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "leech",
@@ -69138,15 +68688,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 2,
     "health": 8,
+    "attack": 2,
     "cost": 3,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "4",
-        "z": 4,
       },
     ],
     "upgrades": {
@@ -69174,15 +68724,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 11,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "4",
-        "z": 4,
       },
     ],
     "upgrades": {
@@ -69192,7 +68742,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "leech",
@@ -69210,7 +68759,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "leech",
@@ -69230,15 +68778,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 13,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "fervor",
         "x": 2,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "leech",
@@ -69260,7 +68808,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "leech",
@@ -69279,21 +68826,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 4,
     "health": 13,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "protect",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "poison",
@@ -69311,13 +68857,11 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "protect",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "poison",
@@ -69335,13 +68879,11 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "protect",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "poison",
@@ -69355,13 +68897,11 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "protect",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "poison",
@@ -69380,21 +68920,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 4,
     "health": 17,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "protect",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "poison",
@@ -69412,13 +68951,11 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "protect",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "poison",
@@ -69436,13 +68973,11 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "protect",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "poison",
@@ -69465,21 +69000,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 5,
     "health": 21,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "protect",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "poison",
@@ -69497,13 +69031,11 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "protect",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "poison",
@@ -69517,13 +69049,11 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "protect",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "poison",
@@ -69541,13 +69071,11 @@ var CARDS = {
             "id": "fervor",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "protect",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "poison",
@@ -69567,9 +69095,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 7,
     "health": 15,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "pierce",
@@ -69657,9 +69186,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 7,
     "health": 19,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "pierce",
@@ -69734,9 +69264,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 8,
     "health": 23,
+    "attack": 8,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "pierce",
@@ -69811,21 +69342,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 12,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "rally",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -69839,13 +69369,11 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -69859,13 +69387,11 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -69884,13 +69410,11 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -69905,9 +69429,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 16,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -69917,13 +69442,11 @@ var CARDS = {
         "id": "rally",
         "x": 3,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "rally",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -69945,13 +69468,11 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -69965,13 +69486,11 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -69990,9 +69509,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 7,
     "health": 19,
+    "attack": 7,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -70002,13 +69522,11 @@ var CARDS = {
         "id": "rally",
         "x": 4,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "rally",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -70030,13 +69548,11 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "rally",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -70054,13 +69570,11 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "rally",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -70075,9 +69589,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["11"],
-    "attack": 7,
     "health": 14,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -70150,9 +69665,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["11"],
-    "attack": 8,
     "health": 19,
+    "attack": 8,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -70223,9 +69739,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["11"],
-    "attack": 9,
     "health": 23,
+    "attack": 9,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -70296,9 +69813,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 4,
     "health": 7,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
@@ -70309,7 +69827,6 @@ var CARDS = {
         "id": "fervor",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -70328,7 +69845,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -70347,7 +69863,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -70370,7 +69885,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -70389,9 +69903,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 5,
     "health": 10,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
@@ -70402,7 +69917,6 @@ var CARDS = {
         "id": "fervor",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "enfeeble",
@@ -70429,7 +69943,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -70456,9 +69969,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 6,
     "health": 14,
+    "attack": 6,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
@@ -70469,7 +69983,6 @@ var CARDS = {
         "id": "fervor",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "enfeeble",
@@ -70492,7 +70005,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -70515,7 +70027,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -70534,7 +70045,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -70553,15 +70063,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 6,
     "health": 16,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
         "x": 2,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
@@ -70576,7 +70086,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -70612,9 +70121,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 6,
     "health": 20,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -70624,7 +70134,6 @@ var CARDS = {
         "id": "protect",
         "x": 2,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
@@ -70652,7 +70161,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -70675,7 +70183,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -70695,9 +70202,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 7,
     "health": 25,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -70707,7 +70215,6 @@ var CARDS = {
         "id": "protect",
         "x": 3,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
@@ -70734,7 +70241,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -70758,7 +70264,6 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -70778,15 +70283,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["10"],
-    "attack": 5,
     "health": 11,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "protect",
@@ -70812,7 +70317,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "protect",
@@ -70830,7 +70334,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "protect",
@@ -70853,15 +70356,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["10"],
-    "attack": 6,
     "health": 13,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "protect",
@@ -70883,7 +70386,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "protect",
@@ -70901,7 +70403,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "protect",
@@ -70920,7 +70421,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "protect",
@@ -70943,15 +70443,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["10"],
-    "attack": 6,
     "health": 16,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 4,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "protect",
@@ -70973,7 +70473,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "protect",
@@ -70992,7 +70491,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "protect",
@@ -71011,7 +70509,6 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "protect",
@@ -71034,21 +70531,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["10"],
-    "attack": 4,
     "health": 8,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "protect",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -71070,13 +70566,11 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "protect",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -71091,21 +70585,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["10"],
-    "attack": 5,
     "health": 11,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "protect",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -71123,13 +70616,11 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "protect",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -71139,13 +70630,11 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "protect",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -71160,21 +70649,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["10"],
-    "attack": 5,
     "health": 14,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "protect",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -71196,13 +70684,11 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "protect",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -71217,9 +70703,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 8,
     "health": 11,
+    "attack": 8,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -71270,9 +70757,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 9,
     "health": 15,
+    "attack": 9,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -71331,9 +70819,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 10,
     "health": 17,
+    "attack": 10,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -71416,9 +70905,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 9,
     "health": 20,
+    "attack": 9,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -71428,7 +70918,6 @@ var CARDS = {
         "id": "protect",
         "x": 1,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
@@ -71464,7 +70953,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -71485,9 +70973,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 10,
     "health": 25,
+    "attack": 10,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -71497,7 +70986,6 @@ var CARDS = {
         "id": "protect",
         "x": 2,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
@@ -71527,7 +71015,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -71548,7 +71035,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -71569,7 +71055,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -71590,9 +71075,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 11,
     "health": 32,
+    "attack": 11,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -71602,7 +71088,6 @@ var CARDS = {
         "id": "protect",
         "x": 3,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
@@ -71634,7 +71119,6 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -71655,7 +71139,6 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -71677,9 +71160,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 5,
     "health": 19,
+    "attack": 5,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -71689,7 +71173,6 @@ var CARDS = {
         "id": "rally",
         "x": 1,
         "y": "7",
-        "z": 7,
         "all": "1",
       },
       {
@@ -71712,7 +71195,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -71735,7 +71217,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -71754,7 +71235,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -71775,9 +71255,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 5,
     "health": 24,
+    "attack": 5,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -71787,7 +71268,6 @@ var CARDS = {
         "id": "rally",
         "x": 2,
         "y": "7",
-        "z": 7,
         "all": "1",
       },
       {
@@ -71806,7 +71286,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -71837,7 +71316,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -71858,9 +71336,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 6,
     "health": 29,
+    "attack": 6,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -71870,7 +71349,6 @@ var CARDS = {
         "id": "rally",
         "x": 3,
         "y": "7",
-        "z": 7,
         "all": "1",
       },
       {
@@ -71898,7 +71376,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -71917,7 +71394,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -71936,7 +71412,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -71957,15 +71432,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 2,
     "health": 10,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "enfeeble",
@@ -71987,7 +71462,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -72010,7 +71484,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -72034,15 +71507,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 14,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "enfeeble",
@@ -72064,7 +71537,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -72086,7 +71558,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -72110,15 +71581,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 16,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "enfeeble",
@@ -72145,7 +71616,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -72163,7 +71633,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -72187,15 +71656,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 2,
     "health": 7,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -72213,7 +71682,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -72231,7 +71699,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -72247,9 +71714,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 2,
     "health": 10,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -72259,7 +71727,6 @@ var CARDS = {
         "id": "fervor",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -72277,7 +71744,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -72295,7 +71761,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "berserk",
@@ -72315,9 +71780,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 2,
     "health": 13,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -72327,7 +71793,6 @@ var CARDS = {
         "id": "fervor",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "berserk",
@@ -72357,7 +71822,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "berserk",
@@ -72376,15 +71840,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 6,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "enfeeble",
@@ -72410,7 +71874,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -72433,7 +71896,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -72456,15 +71918,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 11,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "enfeeble",
@@ -72486,7 +71948,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -72512,7 +71973,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -72535,15 +71995,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 5,
     "health": 14,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 2,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "enfeeble",
@@ -72574,7 +72034,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -72592,7 +72051,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -72616,9 +72074,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 12,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -72702,9 +72161,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 5,
     "health": 15,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -72776,9 +72236,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 6,
     "health": 18,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -72849,9 +72310,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 5,
     "health": 14,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -72861,7 +72323,6 @@ var CARDS = {
         "id": "heal",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "berserk",
@@ -72891,7 +72352,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "berserk",
@@ -72910,9 +72370,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 6,
     "health": 18,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -72922,7 +72383,6 @@ var CARDS = {
         "id": "heal",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "berserk",
@@ -72948,7 +72408,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "berserk",
@@ -72967,7 +72426,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "berserk",
@@ -72986,9 +72444,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 7,
     "health": 21,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -72998,7 +72457,6 @@ var CARDS = {
         "id": "heal",
         "x": 4,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "berserk",
@@ -73020,7 +72478,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "berserk",
@@ -73038,7 +72495,6 @@ var CARDS = {
             "id": "heal",
             "x": 5,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "berserk",
@@ -73057,7 +72513,6 @@ var CARDS = {
             "id": "heal",
             "x": 5,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "berserk",
@@ -73077,9 +72532,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 5,
     "health": 22,
+    "attack": 5,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -73142,9 +72598,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 6,
     "health": 28,
+    "attack": 6,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -73236,9 +72693,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 7,
     "health": 34,
+    "attack": 7,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -73329,9 +72787,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 11,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -73341,7 +72800,6 @@ var CARDS = {
         "id": "rally",
         "x": 1,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
     ],
@@ -73372,14 +72830,12 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "legion",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -73395,9 +72851,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 5,
     "health": 15,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -73407,14 +72864,12 @@ var CARDS = {
         "id": "rally",
         "x": 1,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
         "id": "legion",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -73436,14 +72891,12 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "legion",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -73457,14 +72910,12 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "legion",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -73478,14 +72929,12 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "legion",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -73501,9 +72950,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 5,
     "health": 18,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -73513,14 +72963,12 @@ var CARDS = {
         "id": "rally",
         "x": 2,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
         "id": "legion",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -73550,14 +72998,12 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "legion",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -73572,15 +73018,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "leech",
@@ -73603,7 +73049,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "leech",
@@ -73625,7 +73070,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "leech",
@@ -73648,15 +73092,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 5,
     "health": 14,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "leech",
@@ -73682,7 +73126,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "leech",
@@ -73700,7 +73143,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "leech",
@@ -73723,15 +73165,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 5,
     "health": 19,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 3,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "leech",
@@ -73758,7 +73200,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "leech",
@@ -73776,7 +73217,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "leech",
@@ -73800,15 +73240,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 6,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "enfeeble",
@@ -73838,7 +73278,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "enfeeble",
@@ -73862,15 +73301,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "enfeeble",
@@ -73896,7 +73335,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "enfeeble",
@@ -73918,7 +73356,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -73943,15 +73380,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "4",
-        "z": 4,
         "all": "1",
       },
       {
@@ -73978,7 +73415,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -74001,7 +73437,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -74025,9 +73460,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
@@ -74037,13 +73473,11 @@ var CARDS = {
         "id": "heal",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "heal",
         "x": 1,
         "y": "5",
-        "z": 5,
       },
     ],
     "upgrades": {
@@ -74061,13 +73495,11 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "heal",
             "x": 1,
             "y": "5",
-            "z": 5,
           },
         ],
       },
@@ -74081,13 +73513,11 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "heal",
             "x": 1,
             "y": "5",
-            "z": 5,
           },
         ],
       },
@@ -74106,13 +73536,11 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "heal",
             "x": 1,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
         ],
@@ -74128,9 +73556,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 15,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
@@ -74140,13 +73569,11 @@ var CARDS = {
         "id": "heal",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "heal",
         "x": 1,
         "y": "5",
-        "z": 5,
         "all": "1",
       },
     ],
@@ -74165,13 +73592,11 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "heal",
             "x": 1,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
         ],
@@ -74195,13 +73620,11 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "heal",
             "x": 2,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
         ],
@@ -74217,9 +73640,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 19,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
@@ -74229,13 +73653,11 @@ var CARDS = {
         "id": "heal",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "heal",
         "x": 2,
         "y": "5",
-        "z": 5,
         "all": "1",
       },
     ],
@@ -74258,13 +73680,11 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "heal",
             "x": 2,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
         ],
@@ -74279,13 +73699,11 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "heal",
             "x": 2,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
         ],
@@ -74306,15 +73724,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 18,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "5",
-        "z": 5,
         "all": "1",
       },
       {
@@ -74345,7 +73763,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -74364,7 +73781,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -74388,15 +73804,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 6,
     "health": 21,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "5",
-        "z": 5,
         "all": "1",
       },
       {
@@ -74423,7 +73839,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -74443,7 +73858,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -74463,7 +73877,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -74487,15 +73900,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 7,
     "health": 25,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 3,
         "y": "5",
-        "z": 5,
         "all": "1",
       },
       {
@@ -74522,7 +73935,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -74542,7 +73954,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -74562,7 +73973,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -74586,15 +73996,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "heal",
@@ -74616,7 +74026,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "heal",
@@ -74634,7 +74043,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "heal",
@@ -74653,9 +74061,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 13,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -74665,7 +74074,6 @@ var CARDS = {
         "id": "rally",
         "x": 3,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "heal",
@@ -74687,7 +74095,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "heal",
@@ -74706,7 +74113,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "heal",
@@ -74729,9 +74135,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 15,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -74741,7 +74148,6 @@ var CARDS = {
         "id": "rally",
         "x": 4,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "heal",
@@ -74771,7 +74177,6 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "heal",
@@ -74790,9 +74195,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 18,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -74864,9 +74270,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 6,
     "health": 22,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -74938,9 +74345,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 7,
     "health": 25,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -75012,9 +74420,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -75024,7 +74433,6 @@ var CARDS = {
         "id": "protect",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "pierce",
@@ -75042,7 +74450,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "pierce",
@@ -75065,7 +74472,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "pierce",
@@ -75084,7 +74490,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "pierce",
@@ -75103,9 +74508,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 5,
     "health": 13,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -75115,7 +74521,6 @@ var CARDS = {
         "id": "protect",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "pierce",
@@ -75141,7 +74546,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "pierce",
@@ -75159,7 +74563,6 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "pierce",
@@ -75178,9 +74581,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 6,
     "health": 16,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -75190,7 +74594,6 @@ var CARDS = {
         "id": "protect",
         "x": 4,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "pierce",
@@ -75216,7 +74619,6 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "pierce",
@@ -75234,7 +74636,6 @@ var CARDS = {
             "id": "protect",
             "x": 5,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "pierce",
@@ -75253,9 +74654,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["13"],
-    "attack": 5,
     "health": 16,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -75353,9 +74755,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["13"],
-    "attack": 5,
     "health": 21,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -75440,9 +74843,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["13"],
-    "attack": 7,
     "health": 25,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -75527,9 +74931,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -75613,9 +75018,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 5,
     "health": 17,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -75687,9 +75093,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 6,
     "health": 20,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -75749,15 +75156,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 10,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "4",
-        "z": 4,
         "all": "1",
       },
       {
@@ -75788,7 +75195,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -75817,15 +75223,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 4,
     "health": 15,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "4",
-        "z": 4,
         "all": "1",
       },
       {
@@ -75845,7 +75251,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -75864,7 +75269,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -75892,7 +75296,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -75916,15 +75319,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 5,
     "health": 19,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "4",
-        "z": 4,
         "all": "1",
       },
       {
@@ -75956,7 +75359,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -75975,7 +75377,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -76000,9 +75401,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 2,
     "health": 10,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "poison",
@@ -76057,9 +75459,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -76126,9 +75529,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 16,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -76195,9 +75599,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 7,
     "health": 22,
+    "attack": 7,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -76270,9 +75675,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 8,
     "health": 27,
+    "attack": 8,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -76357,9 +75763,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 9,
     "health": 31,
+    "attack": 9,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -76445,9 +75852,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 16,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -76505,9 +75913,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 4,
     "health": 21,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -76578,9 +75987,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 5,
     "health": 24,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -76653,9 +76063,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "jam",
@@ -76733,9 +76144,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 4,
     "health": 15,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -76809,9 +76221,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 5,
     "health": 19,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -76883,9 +76296,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["10"],
-    "attack": 4,
     "health": 19,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -76895,7 +76309,6 @@ var CARDS = {
         "id": "fervor",
         "x": 2,
         "y": "10",
-        "z": 10,
       },
       {
         "id": "berserk",
@@ -76917,7 +76330,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "berserk",
@@ -76935,7 +76347,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "berserk",
@@ -76954,7 +76365,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "berserk",
@@ -76973,9 +76383,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["10"],
-    "attack": 5,
     "health": 22,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -76985,7 +76396,6 @@ var CARDS = {
         "id": "fervor",
         "x": 3,
         "y": "10",
-        "z": 10,
       },
       {
         "id": "berserk",
@@ -77003,7 +76413,6 @@ var CARDS = {
             "id": "fervor",
             "x": 4,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "berserk",
@@ -77029,7 +76438,6 @@ var CARDS = {
             "id": "fervor",
             "x": 4,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "berserk",
@@ -77048,9 +76456,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["10"],
-    "attack": 5,
     "health": 25,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -77060,7 +76469,6 @@ var CARDS = {
         "id": "fervor",
         "x": 4,
         "y": "10",
-        "z": 10,
       },
       {
         "id": "berserk",
@@ -77086,7 +76494,6 @@ var CARDS = {
             "id": "fervor",
             "x": 4,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "berserk",
@@ -77104,7 +76511,6 @@ var CARDS = {
             "id": "fervor",
             "x": 5,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "berserk",
@@ -77125,15 +76531,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["10"],
-    "attack": 2,
     "health": 7,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "enfeeble",
@@ -77147,7 +76553,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -77173,7 +76578,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -77193,15 +76597,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["10"],
-    "attack": 3,
     "health": 10,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 4,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "enfeeble",
@@ -77219,7 +76623,6 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -77237,7 +76640,6 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -77259,7 +76661,6 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -77280,9 +76681,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["10"],
-    "attack": 3,
     "health": 13,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -77292,7 +76694,6 @@ var CARDS = {
         "id": "rally",
         "x": 5,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "enfeeble",
@@ -77323,7 +76724,6 @@ var CARDS = {
             "id": "rally",
             "x": 6,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -77342,7 +76742,6 @@ var CARDS = {
             "id": "rally",
             "x": 6,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -77363,9 +76762,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["10"],
-    "attack": 3,
     "health": 8,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -77375,7 +76775,6 @@ var CARDS = {
         "id": "fervor",
         "x": 1,
         "y": "10",
-        "z": 10,
       },
       {
         "id": "pierce",
@@ -77401,7 +76800,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "pierce",
@@ -77419,7 +76817,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "pierce",
@@ -77439,9 +76836,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["10"],
-    "attack": 4,
     "health": 11,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -77451,7 +76849,6 @@ var CARDS = {
         "id": "fervor",
         "x": 2,
         "y": "10",
-        "z": 10,
       },
       {
         "id": "pierce",
@@ -77473,7 +76870,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "pierce",
@@ -77495,7 +76891,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "pierce",
@@ -77515,9 +76910,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["10"],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -77527,7 +76923,6 @@ var CARDS = {
         "id": "fervor",
         "x": 2,
         "y": "10",
-        "z": 10,
       },
       {
         "id": "pierce",
@@ -77553,7 +76948,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "pierce",
@@ -77571,7 +76965,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "pierce",
@@ -77590,9 +76983,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["10"],
-    "attack": 4,
     "health": 16,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -77602,7 +76996,6 @@ var CARDS = {
         "id": "rally",
         "x": 1,
         "y": "10",
-        "z": 10,
         "all": "1",
       },
       {
@@ -77638,7 +77031,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "10",
-            "z": 10,
             "all": "1",
           },
           {
@@ -77658,9 +77050,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["10"],
-    "attack": 5,
     "health": 21,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -77670,7 +77063,6 @@ var CARDS = {
         "id": "rally",
         "x": 2,
         "y": "10",
-        "z": 10,
         "all": "1",
       },
       {
@@ -77694,7 +77086,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "10",
-            "z": 10,
             "all": "1",
           },
           {
@@ -77721,7 +77112,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "10",
-            "z": 10,
             "all": "1",
           },
           {
@@ -77741,9 +77131,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["10"],
-    "attack": 6,
     "health": 25,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -77753,7 +77144,6 @@ var CARDS = {
         "id": "rally",
         "x": 3,
         "y": "10",
-        "z": 10,
         "all": "1",
       },
       {
@@ -77782,7 +77172,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "10",
-            "z": 10,
             "all": "1",
           },
           {
@@ -77805,7 +77194,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "10",
-            "z": 10,
             "all": "1",
           },
           {
@@ -77826,15 +77214,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 19,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
@@ -77859,7 +77247,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -77888,7 +77275,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -77914,15 +77300,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 24,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
@@ -77943,7 +77329,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -77973,7 +77358,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -77993,7 +77377,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -78019,15 +77402,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 7,
     "health": 28,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 3,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
@@ -78048,7 +77431,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -78078,7 +77460,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -78098,7 +77479,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -78125,9 +77505,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
@@ -78192,9 +77573,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 15,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
@@ -78270,9 +77652,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 20,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
@@ -78337,9 +77720,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 22,
+    "attack": 6,
     "cost": 4,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -78349,7 +77733,6 @@ var CARDS = {
         "id": "fervor",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "enfeeble",
@@ -78378,7 +77761,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -78398,7 +77780,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -78419,9 +77800,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 8,
     "health": 27,
+    "attack": 8,
     "cost": 4,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -78431,7 +77813,6 @@ var CARDS = {
         "id": "fervor",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "enfeeble",
@@ -78451,7 +77832,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -78476,7 +77856,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -78496,7 +77875,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -78517,9 +77895,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 10,
     "health": 32,
+    "attack": 10,
     "cost": 4,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -78529,7 +77908,6 @@ var CARDS = {
         "id": "fervor",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "enfeeble",
@@ -78554,7 +77932,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -78574,7 +77951,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -78594,7 +77970,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -78615,9 +77990,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 17,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -78687,9 +78063,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 19,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -78758,9 +78135,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 22,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -78829,9 +78207,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["13"],
-    "attack": 4,
     "health": 18,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -78907,9 +78286,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["13"],
-    "attack": 5,
     "health": 22,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -78999,9 +78379,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["13"],
-    "attack": 7,
     "health": 25,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -79091,9 +78472,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["13"],
-    "attack": 4,
     "health": 7,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
@@ -79104,7 +78486,6 @@ var CARDS = {
         "id": "heal",
         "x": 1,
         "y": "13",
-        "z": 13,
       },
       {
         "id": "poison",
@@ -79139,7 +78520,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "poison",
@@ -79159,9 +78539,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["13"],
-    "attack": 5,
     "health": 11,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
@@ -79172,7 +78553,6 @@ var CARDS = {
         "id": "heal",
         "x": 3,
         "y": "13",
-        "z": 13,
       },
       {
         "id": "poison",
@@ -79207,7 +78587,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "poison",
@@ -79227,9 +78606,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["13"],
-    "attack": 6,
     "health": 15,
+    "attack": 6,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
@@ -79240,7 +78620,6 @@ var CARDS = {
         "id": "heal",
         "x": 4,
         "y": "13",
-        "z": 13,
       },
       {
         "id": "poison",
@@ -79271,7 +78650,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "poison",
@@ -79290,7 +78668,6 @@ var CARDS = {
             "id": "heal",
             "x": 5,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "poison",
@@ -79310,9 +78687,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["13"],
-    "attack": 1,
     "health": 3,
+    "attack": 1,
     "cost": 0,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -79356,9 +78734,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["13"],
-    "attack": 1,
     "health": 6,
+    "attack": 1,
     "cost": 0,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -79410,9 +78789,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["13"],
-    "attack": 1,
     "health": 9,
+    "attack": 1,
     "cost": 0,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -79469,9 +78849,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 5,
     "health": 8,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -79481,7 +78862,6 @@ var CARDS = {
         "id": "protect",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "jam",
@@ -79499,7 +78879,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "jam",
@@ -79526,7 +78905,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "jam",
@@ -79546,9 +78924,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 6,
     "health": 10,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -79558,7 +78937,6 @@ var CARDS = {
         "id": "protect",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "jam",
@@ -79589,7 +78967,6 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "jam",
@@ -79609,9 +78986,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 7,
     "health": 13,
+    "attack": 7,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -79621,7 +78999,6 @@ var CARDS = {
         "id": "protect",
         "x": 4,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "jam",
@@ -79652,7 +79029,6 @@ var CARDS = {
             "id": "protect",
             "x": 5,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "jam",
@@ -79671,9 +79047,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["13"],
-    "attack": 4,
     "health": 7,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -79752,9 +79129,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["13"],
-    "attack": 4,
     "health": 13,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -79825,9 +79203,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["13"],
-    "attack": 5,
     "health": 16,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -79899,9 +79278,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["13"],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "leech",
@@ -79971,9 +79351,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["13"],
-    "attack": 4,
     "health": 17,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -80061,9 +79442,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["13"],
-    "attack": 5,
     "health": 22,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -80138,22 +79520,21 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 11,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "6",
-        "z": 6,
         "all": "1",
       },
       {
         "id": "protect",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -80176,14 +79557,12 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "6",
-            "z": 6,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -80202,14 +79581,12 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "6",
-            "z": 6,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -80225,9 +79602,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 5,
     "health": 16,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -80237,14 +79615,12 @@ var CARDS = {
         "id": "rally",
         "x": 1,
         "y": "6",
-        "z": 6,
         "all": "1",
       },
       {
         "id": "protect",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -80262,14 +79638,12 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "6",
-            "z": 6,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -80291,14 +79665,12 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "6",
-            "z": 6,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -80314,9 +79686,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 6,
     "health": 21,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -80326,14 +79699,12 @@ var CARDS = {
         "id": "rally",
         "x": 2,
         "y": "6",
-        "z": 6,
         "all": "1",
       },
       {
         "id": "protect",
         "x": 4,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -80360,14 +79731,12 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "6",
-            "z": 6,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -80381,14 +79750,12 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "6",
-            "z": 6,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 5,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -80404,9 +79771,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 5,
     "health": 8,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -80464,9 +79832,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 7,
     "health": 11,
+    "attack": 7,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -80538,9 +79907,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 9,
     "health": 13,
+    "attack": 9,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -80612,9 +79982,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 5,
     "health": 17,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -80624,7 +79995,6 @@ var CARDS = {
         "id": "protect",
         "x": 1,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
@@ -80660,7 +80030,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -80681,9 +80050,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 6,
     "health": 22,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -80693,7 +80063,6 @@ var CARDS = {
         "id": "protect",
         "x": 2,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
@@ -80717,7 +80086,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -80737,7 +80105,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -80761,7 +80128,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -80782,9 +80148,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 8,
     "health": 26,
+    "attack": 8,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -80794,7 +80161,6 @@ var CARDS = {
         "id": "protect",
         "x": 3,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
@@ -80823,7 +80189,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -80846,7 +80211,6 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -80867,27 +80231,25 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 2,
     "health": 14,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "rally",
         "x": 1,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "heal",
         "x": 1,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
     ],
@@ -80910,19 +80272,16 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "heal",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -80943,27 +80302,25 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 2,
     "health": 18,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "rally",
         "x": 2,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "heal",
         "x": 1,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
     ],
@@ -80974,19 +80331,16 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "heal",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -81005,19 +80359,16 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "rally",
             "x": 3,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "heal",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -81038,27 +80389,25 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 2,
     "health": 22,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "rally",
         "x": 3,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "heal",
         "x": 2,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
     ],
@@ -81077,19 +80426,16 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "rally",
             "x": 3,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "heal",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -81100,19 +80446,16 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "rally",
             "x": 4,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "heal",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -81123,19 +80466,16 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "rally",
             "x": 4,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "heal",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -81153,9 +80493,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 3,
     "health": 6,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -81212,9 +80553,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -81284,9 +80626,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 5,
     "health": 14,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -81356,9 +80699,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 9,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "valor",
@@ -81368,7 +80712,6 @@ var CARDS = {
         "id": "heal",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -81387,7 +80730,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -81405,7 +80747,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -81424,7 +80765,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -81440,9 +80780,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 6,
     "health": 12,
+    "attack": 6,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -81456,7 +80797,6 @@ var CARDS = {
         "id": "heal",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -81482,7 +80822,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -81504,7 +80843,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -81520,9 +80858,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 6,
     "health": 16,
+    "attack": 6,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -81536,7 +80875,6 @@ var CARDS = {
         "id": "heal",
         "x": 4,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -81558,7 +80896,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -81580,7 +80917,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -81598,7 +80934,6 @@ var CARDS = {
             "id": "heal",
             "x": 5,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -81614,9 +80949,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 3,
     "health": 11,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -81626,7 +80962,6 @@ var CARDS = {
         "id": "protect",
         "x": 2,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "jam",
@@ -81644,7 +80979,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "jam",
@@ -81663,7 +80997,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "jam",
@@ -81692,9 +81025,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -81704,7 +81038,6 @@ var CARDS = {
         "id": "protect",
         "x": 3,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "jam",
@@ -81723,7 +81056,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "jam",
@@ -81746,7 +81078,6 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "jam",
@@ -81771,9 +81102,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 18,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -81783,7 +81115,6 @@ var CARDS = {
         "id": "protect",
         "x": 4,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "jam",
@@ -81802,7 +81133,6 @@ var CARDS = {
             "id": "protect",
             "x": 5,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "jam",
@@ -81829,7 +81159,6 @@ var CARDS = {
             "id": "protect",
             "x": 6,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "jam",
@@ -81849,9 +81178,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 3,
     "health": 9,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "jam",
@@ -81936,9 +81266,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 13,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
@@ -82028,9 +81359,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 17,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
@@ -82121,9 +81453,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 6,
     "health": 7,
+    "attack": 6,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -82133,7 +81466,6 @@ var CARDS = {
         "id": "heal",
         "x": 1,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "pierce",
@@ -82159,7 +81491,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "pierce",
@@ -82177,7 +81508,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "pierce",
@@ -82202,9 +81532,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 7,
     "health": 11,
+    "attack": 7,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -82214,7 +81545,6 @@ var CARDS = {
         "id": "heal",
         "x": 2,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "pierce",
@@ -82232,7 +81562,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "pierce",
@@ -82250,7 +81579,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "pierce",
@@ -82269,7 +81597,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "pierce",
@@ -82297,9 +81624,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 8,
     "health": 13,
+    "attack": 8,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -82309,7 +81637,6 @@ var CARDS = {
         "id": "heal",
         "x": 4,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "pierce",
@@ -82328,7 +81655,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "pierce",
@@ -82354,7 +81680,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "pierce",
@@ -82372,7 +81697,6 @@ var CARDS = {
             "id": "heal",
             "x": 5,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "pierce",
@@ -82392,15 +81716,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 1,
     "health": 7,
+    "attack": 1,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "enfeeble",
@@ -82426,7 +81750,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -82444,7 +81767,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -82468,15 +81790,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 1,
     "health": 10,
+    "attack": 1,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "enfeeble",
@@ -82502,7 +81824,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -82520,7 +81841,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -82544,15 +81864,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 2,
     "health": 13,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "enfeeble",
@@ -82578,7 +81898,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -82596,7 +81915,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "enfeeble",
@@ -82620,9 +81938,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 3,
     "health": 14,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "valor",
@@ -82694,9 +82013,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 18,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -82785,9 +82105,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 21,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -82875,9 +82196,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 9,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -82949,9 +82271,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 13,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -83035,9 +82358,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 15,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -83111,9 +82435,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 6,
     "health": 20,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -83123,7 +82448,6 @@ var CARDS = {
         "id": "rally",
         "x": 3,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "jam",
@@ -83141,7 +82465,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "jam",
@@ -83160,7 +82483,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "jam",
@@ -83183,7 +82505,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "jam",
@@ -83207,9 +82528,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 6,
     "health": 25,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -83219,7 +82541,6 @@ var CARDS = {
         "id": "rally",
         "x": 5,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "jam",
@@ -83246,7 +82567,6 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "jam",
@@ -83269,7 +82589,6 @@ var CARDS = {
             "id": "rally",
             "x": 6,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "jam",
@@ -83289,9 +82608,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 7,
     "health": 30,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -83301,7 +82621,6 @@ var CARDS = {
         "id": "rally",
         "x": 6,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "jam",
@@ -83323,7 +82642,6 @@ var CARDS = {
             "id": "rally",
             "x": 7,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "jam",
@@ -83350,7 +82668,6 @@ var CARDS = {
             "id": "rally",
             "x": 8,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "jam",
@@ -83371,9 +82688,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 2,
     "health": 9,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -83383,7 +82701,6 @@ var CARDS = {
         "id": "heal",
         "x": 1,
         "y": "7",
-        "z": 7,
       },
     ],
     "upgrades": {
@@ -83409,7 +82726,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
         ],
       },
@@ -83426,9 +82742,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 11,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -83438,7 +82755,6 @@ var CARDS = {
         "id": "heal",
         "x": 2,
         "y": "7",
-        "z": 7,
       },
     ],
     "upgrades": {
@@ -83460,7 +82776,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "7",
-            "z": 7,
           },
         ],
       },
@@ -83481,9 +82796,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 5,
     "health": 14,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -83493,7 +82809,6 @@ var CARDS = {
         "id": "heal",
         "x": 3,
         "y": "7",
-        "z": 7,
       },
     ],
     "upgrades": {
@@ -83515,7 +82830,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "7",
-            "z": 7,
           },
         ],
       },
@@ -83529,13 +82843,11 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "heal",
             "x": 1,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
         ],
@@ -83553,9 +82865,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7","12"],
-    "attack": 5,
     "health": 15,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -83634,9 +82947,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7","12"],
-    "attack": 6,
     "health": 19,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -83711,9 +83025,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7","12"],
-    "attack": 7,
     "health": 22,
+    "attack": 7,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -83788,15 +83103,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 15,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "protect",
         "x": 1,
         "y": "7",
-        "z": 7,
         "all": "1",
       },
       {
@@ -83821,7 +83136,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -83846,7 +83160,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -83872,15 +83185,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 20,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "protect",
         "x": 2,
         "y": "7",
-        "z": 7,
         "all": "1",
       },
       {
@@ -83905,7 +83218,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -83926,7 +83238,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -83956,15 +83267,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 25,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "protect",
         "x": 3,
         "y": "7",
-        "z": 7,
         "all": "1",
       },
       {
@@ -83994,7 +83305,6 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -84015,7 +83325,6 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -84041,9 +83350,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 1,
     "health": 9,
+    "attack": 1,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -84115,9 +83425,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 2,
     "health": 12,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -84201,9 +83512,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 2,
     "health": 15,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -84275,9 +83587,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 8,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "valor",
@@ -84287,7 +83600,6 @@ var CARDS = {
         "id": "fervor",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "leech",
@@ -84313,7 +83625,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "leech",
@@ -84331,7 +83642,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "leech",
@@ -84355,9 +83665,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 12,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "valor",
@@ -84367,7 +83678,6 @@ var CARDS = {
         "id": "fervor",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "leech",
@@ -84389,7 +83699,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "leech",
@@ -84408,7 +83717,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "leech",
@@ -84430,7 +83738,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "leech",
@@ -84450,9 +83757,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 15,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "valor",
@@ -84462,7 +83770,6 @@ var CARDS = {
         "id": "fervor",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "leech",
@@ -84492,7 +83799,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "leech",
@@ -84510,7 +83816,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "leech",
@@ -84530,15 +83835,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["11"],
-    "attack": 2,
     "health": 7,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -84548,7 +83853,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -84567,7 +83871,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -84588,15 +83891,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["11"],
-    "attack": 3,
     "health": 10,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
@@ -84615,7 +83918,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -84630,7 +83932,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -84655,9 +83956,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["11"],
-    "attack": 4,
     "health": 11,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -84667,7 +83969,6 @@ var CARDS = {
         "id": "rally",
         "x": 1,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
@@ -84698,7 +83999,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -84720,9 +84020,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["11"],
-    "attack": 6,
     "health": 15,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -84792,9 +84093,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["11"],
-    "attack": 7,
     "health": 18,
+    "attack": 7,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -84869,9 +84171,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["11"],
-    "attack": 8,
     "health": 21,
+    "attack": 8,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -84946,15 +84249,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["11"],
-    "attack": 2,
     "health": 7,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
         "x": 1,
         "y": "11",
-        "z": 11,
       },
       {
         "id": "poison",
@@ -84968,7 +84271,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "enfeeble",
@@ -85008,15 +84310,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["11"],
-    "attack": 3,
     "health": 10,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
         "x": 1,
         "y": "11",
-        "z": 11,
       },
       {
         "id": "enfeeble",
@@ -85051,7 +84353,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "enfeeble",
@@ -85075,15 +84376,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["11"],
-    "attack": 4,
     "health": 15,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
         "x": 1,
         "y": "11",
-        "z": 11,
       },
       {
         "id": "enfeeble",
@@ -85101,7 +84402,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "11",
-            "z": 11,
             "all": "1",
           },
           {
@@ -85129,7 +84429,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "11",
-            "z": 11,
             "all": "1",
           },
           {
@@ -85149,7 +84448,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "11",
-            "z": 11,
             "all": "1",
           },
           {
@@ -85175,21 +84473,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["11"],
-    "attack": 4,
     "health": 12,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "11",
-        "z": 11,
       },
       {
         "id": "rally",
         "x": 1,
         "y": "11",
-        "z": 11,
       },
       {
         "id": "leech",
@@ -85212,13 +84509,11 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "rally",
             "x": 1,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "leech",
@@ -85232,13 +84527,11 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "rally",
             "x": 1,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "leech",
@@ -85258,21 +84551,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["11"],
-    "attack": 5,
     "health": 15,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "11",
-        "z": 11,
       },
       {
         "id": "rally",
         "x": 1,
         "y": "11",
-        "z": 11,
       },
       {
         "id": "leech",
@@ -85286,13 +84578,11 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "leech",
@@ -85315,13 +84605,11 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "leech",
@@ -85341,21 +84629,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["11"],
-    "attack": 6,
     "health": 17,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 3,
         "y": "11",
-        "z": 11,
       },
       {
         "id": "rally",
         "x": 2,
         "y": "11",
-        "z": 11,
       },
       {
         "id": "leech",
@@ -85378,13 +84665,11 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "leech",
@@ -85398,13 +84683,11 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "rally",
             "x": 3,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "leech",
@@ -85424,9 +84707,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["11","12"],
-    "attack": 7,
     "health": 18,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -85513,9 +84797,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["11","12"],
-    "attack": 9,
     "health": 22,
+    "attack": 9,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -85603,9 +84888,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["11","12"],
-    "attack": 10,
     "health": 28,
+    "attack": 10,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -85693,15 +84979,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9","4"],
-    "attack": 3,
     "health": 13,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "9",
-        "z": 9,
         "all": "1",
       },
       {
@@ -85725,7 +85011,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -85749,7 +85034,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -85769,7 +85053,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -85794,15 +85077,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9","4"],
-    "attack": 4,
     "health": 18,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "9",
-        "z": 9,
         "all": "1",
       },
       {
@@ -85826,7 +85109,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -85850,7 +85132,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -85880,15 +85161,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9","4"],
-    "attack": 6,
     "health": 22,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "9",
-        "z": 9,
         "all": "1",
       },
       {
@@ -85908,7 +85189,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -85937,7 +85217,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -85956,7 +85235,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -85981,9 +85259,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 7,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -86040,9 +85319,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 11,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -86112,9 +85392,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 15,
+    "attack": 6,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -86183,9 +85464,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 19,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "corrosive",
@@ -86262,9 +85544,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 24,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "corrosive",
@@ -86341,9 +85624,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 8,
     "health": 29,
+    "attack": 8,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "corrosive",
@@ -86435,15 +85719,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 20,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 4,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "berserk",
@@ -86462,7 +85746,6 @@ var CARDS = {
             "id": "heal",
             "x": 5,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "berserk",
@@ -86485,7 +85768,6 @@ var CARDS = {
             "id": "heal",
             "x": 5,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "berserk",
@@ -86505,9 +85787,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 24,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -86517,7 +85800,6 @@ var CARDS = {
         "id": "heal",
         "x": 5,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "berserk",
@@ -86536,7 +85818,6 @@ var CARDS = {
             "id": "heal",
             "x": 6,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "berserk",
@@ -86554,7 +85835,6 @@ var CARDS = {
             "id": "heal",
             "x": 6,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "berserk",
@@ -86578,7 +85858,6 @@ var CARDS = {
             "id": "heal",
             "x": 6,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "berserk",
@@ -86598,9 +85877,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 7,
     "health": 27,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -86610,7 +85890,6 @@ var CARDS = {
         "id": "heal",
         "x": 7,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "berserk",
@@ -86638,7 +85917,6 @@ var CARDS = {
             "id": "heal",
             "x": 7,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "berserk",
@@ -86656,7 +85934,6 @@ var CARDS = {
             "id": "heal",
             "x": 8,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "berserk",
@@ -86676,9 +85953,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 16,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -86750,9 +86028,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 19,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -86825,9 +86104,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 7,
     "health": 23,
+    "attack": 7,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -86899,9 +86179,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 6,
     "health": 22,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -86915,7 +86196,6 @@ var CARDS = {
         "id": "rally",
         "x": 1,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
     ],
@@ -86947,7 +86227,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -86966,7 +86245,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -86983,9 +86261,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 7,
     "health": 25,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -86999,7 +86278,6 @@ var CARDS = {
         "id": "rally",
         "x": 2,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
     ],
@@ -87035,7 +86313,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -87052,9 +86329,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 8,
     "health": 29,
+    "attack": 8,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -87068,7 +86346,6 @@ var CARDS = {
         "id": "rally",
         "x": 3,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
     ],
@@ -87100,7 +86377,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -87119,7 +86395,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -87136,9 +86411,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 4,
     "health": 7,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "pierce",
@@ -87190,9 +86466,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 5,
     "health": 11,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "corrosive",
@@ -87248,9 +86525,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 6,
     "health": 15,
+    "attack": 6,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "corrosive",
@@ -87318,9 +86596,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 16,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "valor",
@@ -87330,7 +86609,6 @@ var CARDS = {
         "id": "heal",
         "x": 5,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "berserk",
@@ -87353,7 +86631,6 @@ var CARDS = {
             "id": "heal",
             "x": 5,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "berserk",
@@ -87372,7 +86649,6 @@ var CARDS = {
             "id": "heal",
             "x": 6,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "berserk",
@@ -87397,9 +86673,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 4,
     "health": 20,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "valor",
@@ -87409,7 +86686,6 @@ var CARDS = {
         "id": "heal",
         "x": 6,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "berserk",
@@ -87428,7 +86704,6 @@ var CARDS = {
             "id": "heal",
             "x": 7,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "berserk",
@@ -87447,7 +86722,6 @@ var CARDS = {
             "id": "heal",
             "x": 7,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "berserk",
@@ -87466,7 +86740,6 @@ var CARDS = {
             "id": "heal",
             "x": 7,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "berserk",
@@ -87491,9 +86764,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 5,
     "health": 24,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "valor",
@@ -87503,7 +86777,6 @@ var CARDS = {
         "id": "heal",
         "x": 8,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "berserk",
@@ -87522,7 +86795,6 @@ var CARDS = {
             "id": "heal",
             "x": 8,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "berserk",
@@ -87546,7 +86818,6 @@ var CARDS = {
             "id": "heal",
             "x": 8,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "berserk",
@@ -87564,7 +86835,6 @@ var CARDS = {
             "id": "heal",
             "x": 9,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "berserk",
@@ -87584,9 +86854,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 5,
     "health": 8,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "corrosive",
@@ -87658,9 +86929,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 6,
     "health": 11,
+    "attack": 6,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "corrosive",
@@ -87732,9 +87004,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 7,
     "health": 13,
+    "attack": 7,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "corrosive",
@@ -87806,9 +87079,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4","10"],
-    "attack": 4,
     "health": 17,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "corrosive",
@@ -87900,9 +87174,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4","10"],
-    "attack": 6,
     "health": 23,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "corrosive",
@@ -87994,9 +87269,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4","10"],
-    "attack": 7,
     "health": 29,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "corrosive",
@@ -88088,28 +87364,26 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 2,
     "health": 13,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 3,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "heal",
         "x": 1,
         "y": "4",
-        "z": 4,
         "all": "1",
       },
       {
         "id": "fervor",
         "x": 1,
         "y": "4",
-        "z": 4,
       },
     ],
     "upgrades": {
@@ -88128,20 +87402,17 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "heal",
             "x": 1,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
             "id": "fervor",
             "x": 1,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -88165,28 +87436,26 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 2,
     "health": 19,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 5,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "heal",
         "x": 1,
         "y": "4",
-        "z": 4,
         "all": "1",
       },
       {
         "id": "fervor",
         "x": 1,
         "y": "4",
-        "z": 4,
       },
     ],
     "upgrades": {
@@ -88200,20 +87469,17 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "heal",
             "x": 2,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
             "id": "fervor",
             "x": 1,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -88224,20 +87490,17 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "heal",
             "x": 2,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
             "id": "fervor",
             "x": 2,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -88261,28 +87524,26 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 2,
     "health": 24,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 6,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "heal",
         "x": 2,
         "y": "4",
-        "z": 4,
         "all": "1",
       },
       {
         "id": "fervor",
         "x": 2,
         "y": "4",
-        "z": 4,
       },
     ],
     "upgrades": {
@@ -88301,20 +87562,17 @@ var CARDS = {
             "id": "rally",
             "x": 7,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "heal",
             "x": 2,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
             "id": "fervor",
             "x": 2,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -88328,20 +87586,17 @@ var CARDS = {
             "id": "rally",
             "x": 7,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "heal",
             "x": 3,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
             "id": "fervor",
             "x": 3,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -88358,9 +87613,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 2,
     "health": 8,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "berserk",
@@ -88409,9 +87665,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -88463,9 +87720,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 16,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -88537,15 +87795,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4","12"],
-    "attack": 1,
     "health": 16,
+    "attack": 1,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 3,
         "y": "12",
-        "z": 12,
       },
       {
         "id": "leech",
@@ -88572,7 +87830,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "leech",
@@ -88590,7 +87847,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "leech",
@@ -88608,7 +87864,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "leech",
@@ -88632,15 +87887,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4","12"],
-    "attack": 1,
     "health": 20,
+    "attack": 1,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 4,
         "y": "12",
-        "z": 12,
       },
       {
         "id": "leech",
@@ -88662,7 +87917,6 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "leech",
@@ -88681,7 +87935,6 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "leech",
@@ -88703,7 +87956,6 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "leech",
@@ -88727,15 +87979,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4","12"],
-    "attack": 1,
     "health": 24,
+    "attack": 1,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 6,
         "y": "12",
-        "z": 12,
       },
       {
         "id": "leech",
@@ -88757,7 +88009,6 @@ var CARDS = {
             "id": "rally",
             "x": 6,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "leech",
@@ -88776,7 +88027,6 @@ var CARDS = {
             "id": "rally",
             "x": 7,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "leech",
@@ -88798,7 +88048,6 @@ var CARDS = {
             "id": "rally",
             "x": 7,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "leech",
@@ -88822,21 +88071,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 6,
     "health": 25,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 4,
         "y": "12",
-        "z": 12,
       },
       {
         "id": "protect",
         "x": 4,
         "y": "12",
-        "z": 12,
       },
       {
         "id": "jam",
@@ -88850,13 +88098,11 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "protect",
             "x": 4,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "jam",
@@ -88875,13 +88121,11 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "protect",
             "x": 4,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "jam",
@@ -88895,13 +88139,11 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "protect",
             "x": 5,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "jam",
@@ -88925,21 +88167,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 6,
     "health": 29,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 5,
         "y": "12",
-        "z": 12,
       },
       {
         "id": "protect",
         "x": 5,
         "y": "12",
-        "z": 12,
       },
       {
         "id": "jam",
@@ -88961,13 +88202,11 @@ var CARDS = {
             "id": "rally",
             "x": 6,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "protect",
             "x": 6,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "jam",
@@ -88995,21 +88234,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 7,
     "health": 32,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 7,
         "y": "12",
-        "z": 12,
       },
       {
         "id": "protect",
         "x": 6,
         "y": "12",
-        "z": 12,
       },
       {
         "id": "jam",
@@ -89023,13 +88261,11 @@ var CARDS = {
             "id": "rally",
             "x": 7,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "protect",
             "x": 7,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "jam",
@@ -89056,13 +88292,11 @@ var CARDS = {
             "id": "rally",
             "x": 8,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "protect",
             "x": 8,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "jam",
@@ -89081,9 +88315,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 3,
     "health": 6,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "pierce",
@@ -89138,9 +88373,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 4,
     "health": 8,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "pierce",
@@ -89187,9 +88423,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 5,
     "health": 10,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "pierce",
@@ -89236,9 +88473,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 2,
     "health": 12,
+    "attack": 2,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "pierce",
@@ -89314,9 +88552,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 2,
     "health": 16,
+    "attack": 2,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "weaken",
@@ -89387,9 +88626,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 4,
     "health": 19,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "weaken",
@@ -89472,9 +88712,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 1,
     "health": 10,
+    "attack": 1,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -89562,9 +88803,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 2,
     "health": 10,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -89619,9 +88861,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 3,
     "health": 14,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -89688,21 +88931,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 2,
     "health": 9,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 1,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "rally",
         "x": 1,
         "y": "9",
-        "z": 9,
       },
     ],
     "upgrades": {
@@ -89716,13 +88958,11 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -89732,13 +88972,11 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "rally",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -89749,14 +88987,12 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -89771,22 +89007,21 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 4,
     "health": 12,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 1,
         "y": "9",
-        "z": 9,
         "all": "1",
       },
       {
         "id": "rally",
         "x": 3,
         "y": "9",
-        "z": 9,
       },
     ],
     "upgrades": {
@@ -89804,14 +89039,12 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -89821,14 +89054,12 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -89843,22 +89074,21 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 5,
     "health": 14,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 2,
         "y": "9",
-        "z": 9,
         "all": "1",
       },
       {
         "id": "rally",
         "x": 4,
         "y": "9",
-        "z": 9,
       },
     ],
     "upgrades": {
@@ -89876,14 +89106,12 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 5,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -89893,14 +89121,12 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 5,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -89915,9 +89141,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 2,
     "health": 9,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -89977,9 +89204,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -90046,9 +89274,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 3,
     "health": 15,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -90115,9 +89344,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 1,
     "health": 8,
+    "attack": 1,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -90135,7 +89365,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "strike",
@@ -90149,7 +89378,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "strike",
@@ -90163,7 +89391,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "strike",
@@ -90182,15 +89409,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 2,
     "health": 10,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "protect",
         "x": 2,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "strike",
@@ -90216,7 +89443,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "strike",
@@ -90235,21 +89461,20 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "protect",
         "x": 2,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "rally",
         "x": 1,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "strike",
@@ -90271,13 +89496,11 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "rally",
             "x": 1,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "strike",
@@ -90291,13 +89514,11 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "strike",
@@ -90316,9 +89537,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 11,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "burn",
@@ -90377,9 +89599,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 13,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -90438,9 +89661,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 17,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -90523,9 +89747,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 15,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -90535,7 +89760,6 @@ var CARDS = {
         "id": "legion",
         "x": 1,
         "y": "5",
-        "z": 5,
       },
     ],
     "upgrades": {
@@ -90558,7 +89782,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
         ],
       },
@@ -90572,13 +89795,11 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "legion",
             "x": 1,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -90592,13 +89813,11 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "legion",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -90613,9 +89832,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 6,
     "health": 20,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -90625,13 +89845,11 @@ var CARDS = {
         "id": "legion",
         "x": 2,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "legion",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -90650,13 +89868,11 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "legion",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -90675,13 +89891,11 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "legion",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -90695,13 +89909,11 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "legion",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -90716,9 +89928,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 8,
     "health": 23,
+    "attack": 8,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -90728,13 +89941,11 @@ var CARDS = {
         "id": "legion",
         "x": 3,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "legion",
         "x": 3,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -90760,13 +89971,11 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "legion",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -90780,13 +89989,11 @@ var CARDS = {
             "id": "legion",
             "x": 4,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "legion",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -90801,15 +90008,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 2,
     "health": 9,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "strike",
@@ -90835,7 +90042,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "strike",
@@ -90854,15 +90060,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "fervor",
         "x": 2,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "strike",
@@ -90884,7 +90090,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "strike",
@@ -90898,7 +90103,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "strike",
@@ -90921,15 +90125,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "fervor",
         "x": 3,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "strike",
@@ -90955,7 +90159,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "strike",
@@ -90973,7 +90176,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "strike",
@@ -90996,15 +90198,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 2,
     "health": 11,
+    "attack": 2,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "leech",
@@ -91030,7 +90232,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "leech",
@@ -91048,7 +90249,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "leech",
@@ -91071,15 +90271,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 2,
     "health": 16,
+    "attack": 2,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "fervor",
         "x": 2,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "leech",
@@ -91097,7 +90297,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "leech",
@@ -91115,7 +90314,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "leech",
@@ -91134,7 +90332,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "leech",
@@ -91153,7 +90350,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "leech",
@@ -91176,15 +90372,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 2,
     "health": 19,
+    "attack": 2,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "fervor",
         "x": 3,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "leech",
@@ -91206,7 +90402,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "leech",
@@ -91224,7 +90419,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "leech",
@@ -91243,7 +90437,6 @@ var CARDS = {
             "id": "fervor",
             "x": 4,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "leech",
@@ -91266,21 +90459,20 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 1,
     "health": 9,
+    "attack": 1,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 1,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "legion",
         "x": 1,
         "y": "5",
-        "z": 5,
       },
     ],
     "upgrades": {
@@ -91298,13 +90490,11 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "legion",
             "x": 1,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "flurry",
@@ -91327,21 +90517,20 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 2,
     "health": 13,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 1,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "legion",
         "x": 1,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "flurry",
@@ -91355,13 +90544,11 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "legion",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "flurry",
@@ -91375,13 +90562,11 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "legion",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "flurry",
@@ -91400,14 +90585,12 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
             "id": "legion",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "flurry",
@@ -91426,22 +90609,21 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 3,
     "health": 16,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 1,
         "y": "5",
-        "z": 5,
         "all": "1",
       },
       {
         "id": "legion",
         "x": 2,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "flurry",
@@ -91459,14 +90641,12 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
             "id": "legion",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "flurry",
@@ -91480,14 +90660,12 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
             "id": "legion",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "flurry",
@@ -91501,14 +90679,12 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
             "id": "legion",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "flurry",
@@ -91528,9 +90704,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 5,
     "health": 12,
+    "attack": 5,
     "cost": 4,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -91540,7 +90717,6 @@ var CARDS = {
         "id": "legion",
         "x": 2,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "heal",
@@ -91563,7 +90739,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "heal",
@@ -91583,7 +90758,6 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "heal",
@@ -91603,7 +90777,6 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "heal",
@@ -91624,9 +90797,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 5,
     "health": 17,
+    "attack": 5,
     "cost": 4,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -91636,7 +90810,6 @@ var CARDS = {
         "id": "legion",
         "x": 3,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "heal",
@@ -91659,7 +90832,6 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "heal",
@@ -91678,7 +90850,6 @@ var CARDS = {
             "id": "legion",
             "x": 4,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "heal",
@@ -91703,9 +90874,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 6,
     "health": 20,
+    "attack": 6,
     "cost": 4,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -91715,7 +90887,6 @@ var CARDS = {
         "id": "legion",
         "x": 4,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "heal",
@@ -91742,7 +90913,6 @@ var CARDS = {
             "id": "legion",
             "x": 4,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "heal",
@@ -91761,7 +90931,6 @@ var CARDS = {
             "id": "legion",
             "x": 5,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "heal",
@@ -91782,15 +90951,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 2,
     "health": 8,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "legion",
         "x": 1,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "weaken",
@@ -91817,7 +90986,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "weaken",
@@ -91836,7 +91004,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "weaken",
@@ -91857,9 +91024,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 13,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -91869,7 +91037,6 @@ var CARDS = {
         "id": "legion",
         "x": 1,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "weaken",
@@ -91900,7 +91067,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "weaken",
@@ -91921,9 +91087,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 4,
     "health": 16,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -91933,7 +91100,6 @@ var CARDS = {
         "id": "legion",
         "x": 1,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "weaken",
@@ -91964,7 +91130,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "weaken",
@@ -91984,9 +91149,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 8,
     "health": 15,
+    "attack": 8,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -92045,9 +91211,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 9,
     "health": 20,
+    "attack": 9,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -92144,9 +91311,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 11,
     "health": 24,
+    "attack": 11,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -92231,15 +91399,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 7,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "4",
-        "z": 4,
       },
     ],
     "upgrades": {
@@ -92257,7 +91425,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -92281,9 +91448,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -92297,7 +91465,6 @@ var CARDS = {
         "id": "fervor",
         "x": 1,
         "y": "4",
-        "z": 4,
       },
     ],
     "upgrades": {
@@ -92319,7 +91486,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -92341,7 +91507,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -92357,9 +91522,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 4,
     "health": 13,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -92373,7 +91539,6 @@ var CARDS = {
         "id": "fervor",
         "x": 2,
         "y": "4",
-        "z": 4,
       },
     ],
     "upgrades": {
@@ -92395,7 +91560,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -92417,7 +91581,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -92432,9 +91595,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -92518,9 +91682,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 5,
     "health": 17,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -92605,9 +91770,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 6,
     "health": 21,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -92692,9 +91858,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 9,
     "health": 32,
+    "attack": 9,
     "cost": 3,
+    "maxLevel": 7,
     "skill": [
       {
         "id": "evade",
@@ -92791,9 +91958,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 8,
     "health": 29,
+    "attack": 8,
     "cost": 3,
+    "maxLevel": 7,
     "skill": [
       {
         "id": "armored",
@@ -92902,9 +92070,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 6,
     "health": 26,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 7,
     "skill": [
       {
         "id": "counter",
@@ -93012,27 +92181,25 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 4,
     "health": 13,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "protect",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "fervor",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -93046,19 +92213,16 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "protect",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "fervor",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -93073,20 +92237,17 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "fervor",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -93101,28 +92262,26 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 5,
     "health": 16,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 1,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
         "id": "protect",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "fervor",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -93132,20 +92291,17 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "fervor",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -93163,20 +92319,17 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "fervor",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -93191,28 +92344,26 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 5,
     "health": 21,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 2,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
         "id": "protect",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "fervor",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -93234,20 +92385,17 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "fervor",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -93262,9 +92410,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 2,
     "health": 9,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -93319,9 +92468,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 2,
     "health": 13,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -93388,9 +92538,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 2,
     "health": 16,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -93457,9 +92608,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 3,
     "health": 8,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -93469,7 +92621,6 @@ var CARDS = {
         "id": "protect",
         "x": 1,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -93495,7 +92646,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -93510,9 +92660,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 5,
     "health": 10,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -93522,7 +92673,6 @@ var CARDS = {
         "id": "protect",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -93544,7 +92694,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -93558,7 +92707,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "frost",
@@ -93577,9 +92725,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 5,
     "health": 13,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -93589,7 +92738,6 @@ var CARDS = {
         "id": "protect",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "frost",
@@ -93619,7 +92767,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "frost",
@@ -93638,9 +92785,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 6,
     "health": 12,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -93655,7 +92803,6 @@ var CARDS = {
         "id": "fervor",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -93686,7 +92833,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -93705,9 +92851,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 7,
     "health": 16,
+    "attack": 7,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -93722,7 +92869,6 @@ var CARDS = {
         "id": "fervor",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -93749,7 +92895,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -93772,9 +92917,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 8,
     "health": 20,
+    "attack": 8,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -93789,7 +92935,6 @@ var CARDS = {
         "id": "fervor",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -93816,7 +92961,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -93835,7 +92979,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -93854,7 +92997,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -93870,9 +93012,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 13,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "pierce",
@@ -93941,9 +93084,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 16,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "pierce",
@@ -94024,9 +93168,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 5,
     "health": 19,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "pierce",
@@ -94094,9 +93239,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 10,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "poison",
@@ -94148,9 +93294,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 12,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -94206,9 +93353,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 5,
     "health": 15,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -94264,15 +93412,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7"],
-    "attack": 2,
     "health": 7,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "legion",
         "x": 1,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -94294,7 +93442,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "frost",
@@ -94314,9 +93461,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 9,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -94326,7 +93474,6 @@ var CARDS = {
         "id": "legion",
         "x": 1,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "frost",
@@ -94356,7 +93503,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "frost",
@@ -94376,9 +93522,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 13,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -94388,7 +93535,6 @@ var CARDS = {
         "id": "legion",
         "x": 1,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "frost",
@@ -94418,7 +93564,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "frost",
@@ -94438,15 +93583,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 15,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 2,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "enfeeble",
@@ -94464,7 +93609,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -94486,7 +93630,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -94504,7 +93647,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -94522,7 +93664,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -94546,15 +93687,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 19,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 3,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "enfeeble",
@@ -94576,7 +93717,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -94598,7 +93738,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -94616,7 +93755,6 @@ var CARDS = {
             "id": "fervor",
             "x": 4,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -94640,15 +93778,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 23,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 4,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "enfeeble",
@@ -94678,7 +93816,6 @@ var CARDS = {
             "id": "fervor",
             "x": 4,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -94696,7 +93833,6 @@ var CARDS = {
             "id": "fervor",
             "x": 4,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -94719,15 +93855,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 3,
     "health": 10,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 2,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "frost",
@@ -94753,7 +93889,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "frost",
@@ -94776,15 +93911,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 13,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 2,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "frost",
@@ -94810,7 +93945,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "frost",
@@ -94828,7 +93962,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "frost",
@@ -94851,15 +93984,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 5,
     "health": 15,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 3,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "frost",
@@ -94885,7 +94018,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "frost",
@@ -94903,7 +94035,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "frost",
@@ -94926,9 +94057,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 3,
     "health": 13,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
@@ -94998,9 +94130,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 16,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
@@ -95074,9 +94207,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 5,
     "health": 19,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
@@ -95163,21 +94297,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 3,
     "health": 8,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "fervor",
         "x": 1,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "pierce",
@@ -95199,13 +94332,11 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "fervor",
             "x": 1,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "pierce",
@@ -95219,13 +94350,11 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "fervor",
             "x": 1,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "pierce",
@@ -95244,21 +94373,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 3,
     "health": 11,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 4,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "fervor",
         "x": 1,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "pierce",
@@ -95280,13 +94408,11 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "fervor",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "pierce",
@@ -95300,13 +94426,11 @@ var CARDS = {
             "id": "heal",
             "x": 5,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "fervor",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "pierce",
@@ -95325,21 +94449,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 13,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
         "x": 5,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "fervor",
         "x": 2,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "pierce",
@@ -95361,13 +94484,11 @@ var CARDS = {
             "id": "heal",
             "x": 5,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "fervor",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "pierce",
@@ -95381,13 +94502,11 @@ var CARDS = {
             "id": "heal",
             "x": 5,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "fervor",
             "x": 3,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "pierce",
@@ -95407,9 +94526,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 11,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "pierce",
@@ -95465,9 +94585,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "pierce",
@@ -95536,9 +94657,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["6"],
-    "attack": 5,
     "health": 16,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "pierce",
@@ -95605,9 +94727,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 12,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -95701,9 +94824,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 15,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -95772,9 +94896,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 6,
     "health": 19,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -95841,9 +94966,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 10,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -95912,9 +95038,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 6,
     "health": 14,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -95981,9 +95108,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 7,
     "health": 16,
+    "attack": 7,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -96051,9 +95179,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 13,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -96133,21 +95262,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 4,
     "health": 15,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "rally",
         "x": 2,
         "y": "4",
-        "z": 4,
       },
     ],
     "upgrades": {
@@ -96170,13 +95298,11 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "rally",
             "x": 3,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -96191,21 +95317,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 5,
     "health": 19,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "rally",
         "x": 3,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "berserk",
@@ -96220,13 +95345,11 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "rally",
             "x": 3,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "berserk",
@@ -96245,13 +95368,11 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "rally",
             "x": 4,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "berserk",
@@ -96275,21 +95396,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 7,
     "health": 24,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "rally",
         "x": 4,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "berserk",
@@ -96307,13 +95427,11 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "rally",
             "x": 4,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "berserk",
@@ -96332,13 +95450,11 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "rally",
             "x": 4,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "berserk",
@@ -96358,9 +95474,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 0,
     "health": 3,
+    "attack": 0,
     "cost": 2,
+    "maxLevel": 3,
     "skill": [],
     "upgrades": {
       "2": {
@@ -96383,9 +95500,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 2,
     "health": 10,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "frost",
@@ -96423,9 +95541,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 3,
     "health": 18,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "frost",
@@ -96472,9 +95591,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 21,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "frost",
@@ -96558,9 +95678,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 24,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 7,
     "skill": [
       {
         "id": "frost",
@@ -96647,15 +95768,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 4,
     "health": 12,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "protect",
         "x": 3,
         "y": "10",
-        "z": 10,
       },
       {
         "id": "strike",
@@ -96681,7 +95802,6 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "strike",
@@ -96699,7 +95819,6 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "strike",
@@ -96722,15 +95841,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 5,
     "health": 14,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "protect",
         "x": 4,
         "y": "10",
-        "z": 10,
       },
       {
         "id": "strike",
@@ -96756,7 +95875,6 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "strike",
@@ -96774,7 +95892,6 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "strike",
@@ -96797,15 +95914,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 5,
     "health": 17,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "protect",
         "x": 4,
         "y": "10",
-        "z": 10,
       },
       {
         "id": "strike",
@@ -96831,7 +95948,6 @@ var CARDS = {
             "id": "protect",
             "x": 5,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "strike",
@@ -96851,7 +95967,6 @@ var CARDS = {
             "id": "protect",
             "x": 5,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "strike",
@@ -96875,9 +95990,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["10"],
-    "attack": 2,
     "health": 8,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
@@ -96933,9 +96049,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["10"],
-    "attack": 3,
     "health": 11,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
@@ -96983,9 +96100,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["10"],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
@@ -97053,9 +96171,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["10"],
-    "attack": 3,
     "health": 16,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -97105,9 +96224,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["10"],
-    "attack": 4,
     "health": 20,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -97174,9 +96294,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["10"],
-    "attack": 5,
     "health": 23,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "berserk",
@@ -97234,9 +96355,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 3,
     "health": 9,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
@@ -97307,9 +96429,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 4,
     "health": 12,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
@@ -97386,9 +96509,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 5,
     "health": 15,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
@@ -97451,9 +96575,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 3,
     "health": 18,
+    "attack": 3,
     "cost": 4,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -97463,7 +96588,6 @@ var CARDS = {
         "id": "fervor",
         "x": 1,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "pierce",
@@ -97482,7 +96606,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "pierce",
@@ -97501,7 +96624,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "pierce",
@@ -97520,7 +96642,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "pierce",
@@ -97544,9 +96665,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 24,
+    "attack": 4,
     "cost": 4,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -97556,7 +96678,6 @@ var CARDS = {
         "id": "fervor",
         "x": 2,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "pierce",
@@ -97575,7 +96696,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "pierce",
@@ -97594,7 +96714,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "pierce",
@@ -97614,7 +96733,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "pierce",
@@ -97633,7 +96751,6 @@ var CARDS = {
             "id": "fervor",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "pierce",
@@ -97652,9 +96769,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 30,
+    "attack": 5,
     "cost": 4,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -97664,7 +96782,6 @@ var CARDS = {
         "id": "fervor",
         "x": 4,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "pierce",
@@ -97683,7 +96800,6 @@ var CARDS = {
             "id": "fervor",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "pierce",
@@ -97707,7 +96823,6 @@ var CARDS = {
             "id": "fervor",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "pierce",
@@ -97726,7 +96841,6 @@ var CARDS = {
             "id": "fervor",
             "x": 5,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "pierce",
@@ -97746,9 +96860,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 3,
     "health": 15,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -97807,9 +96922,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 18,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -97864,9 +96980,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 22,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -97922,9 +97039,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 2,
     "health": 7,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -97981,9 +97099,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 3,
     "health": 11,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -98051,9 +97170,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -98120,9 +97240,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 16,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -98132,7 +97253,6 @@ var CARDS = {
         "id": "heal",
         "x": 1,
         "y": "9",
-        "z": 9,
         "all": "1",
       },
       {
@@ -98151,7 +97271,6 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -98179,7 +97298,6 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -98204,9 +97322,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 7,
     "health": 23,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -98216,7 +97335,6 @@ var CARDS = {
         "id": "heal",
         "x": 1,
         "y": "9",
-        "z": 9,
         "all": "1",
       },
       {
@@ -98235,7 +97353,6 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -98254,7 +97371,6 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -98282,7 +97398,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -98302,9 +97417,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 9,
     "health": 26,
+    "attack": 9,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -98314,7 +97430,6 @@ var CARDS = {
         "id": "heal",
         "x": 2,
         "y": "9",
-        "z": 9,
         "all": "1",
       },
       {
@@ -98333,7 +97448,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -98363,7 +97477,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -98383,7 +97496,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -98404,9 +97516,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 3,
     "health": 8,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "pierce",
@@ -98475,9 +97588,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "pierce",
@@ -98547,9 +97661,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 5,
     "health": 13,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "pierce",
@@ -98618,9 +97733,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["13"],
-    "attack": 1,
     "health": 9,
+    "attack": 1,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "burn",
@@ -98664,9 +97780,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["13"],
-    "attack": 2,
     "health": 13,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "frost",
@@ -98714,9 +97831,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["13"],
-    "attack": 3,
     "health": 16,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "frost",
@@ -98772,15 +97890,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["13"],
-    "attack": 2,
     "health": 12,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "13",
-        "z": 13,
       },
       {
         "id": "poison",
@@ -98799,7 +97917,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "poison",
@@ -98822,7 +97939,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "poison",
@@ -98842,9 +97958,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["13"],
-    "attack": 3,
     "health": 16,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -98854,7 +97971,6 @@ var CARDS = {
         "id": "fervor",
         "x": 3,
         "y": "13",
-        "z": 13,
       },
       {
         "id": "poison",
@@ -98885,7 +98001,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "poison",
@@ -98905,9 +98020,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["13"],
-    "attack": 4,
     "health": 20,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -98917,7 +98033,6 @@ var CARDS = {
         "id": "fervor",
         "x": 3,
         "y": "13",
-        "z": 13,
       },
       {
         "id": "poison",
@@ -98943,7 +98058,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "poison",
@@ -98962,7 +98076,6 @@ var CARDS = {
             "id": "fervor",
             "x": 4,
             "y": "13",
-            "z": 13,
           },
           {
             "id": "poison",
@@ -98982,9 +98095,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["13"],
-    "attack": 6,
     "health": 16,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -99058,9 +98172,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["13"],
-    "attack": 7,
     "health": 21,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -99134,9 +98249,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["13"],
-    "attack": 8,
     "health": 25,
+    "attack": 8,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -99198,9 +98314,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "valor",
@@ -99300,9 +98417,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 18,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "valor",
@@ -99390,9 +98508,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 5,
     "health": 23,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "valor",
@@ -99464,9 +98583,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 3,
     "health": 8,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -99489,7 +98609,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "strike",
@@ -99504,7 +98623,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "strike",
@@ -99523,15 +98641,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 4,
     "health": 12,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "strike",
@@ -99550,7 +98668,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "strike",
@@ -99568,7 +98685,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "strike",
@@ -99591,15 +98707,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 4,
     "health": 16,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "fervor",
         "x": 2,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "strike",
@@ -99625,7 +98741,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "strike",
@@ -99644,7 +98759,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "strike",
@@ -99667,9 +98781,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -99679,7 +98794,6 @@ var CARDS = {
         "id": "fervor",
         "x": 1,
         "y": "6",
-        "z": 6,
       },
     ],
     "upgrades": {
@@ -99697,7 +98811,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "6",
-            "z": 6,
           },
         ],
       },
@@ -99715,7 +98828,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "berserk",
@@ -99734,9 +98846,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 5,
     "health": 13,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -99746,7 +98859,6 @@ var CARDS = {
         "id": "fervor",
         "x": 1,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "berserk",
@@ -99768,7 +98880,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "berserk",
@@ -99790,7 +98901,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "berserk",
@@ -99809,9 +98919,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["6"],
-    "attack": 5,
     "health": 16,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -99821,7 +98932,6 @@ var CARDS = {
         "id": "fervor",
         "x": 2,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "berserk",
@@ -99847,7 +98957,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "berserk",
@@ -99866,7 +98975,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "berserk",
@@ -99885,15 +98993,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 9,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "berserk",
@@ -99912,7 +99020,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "pierce",
@@ -99930,7 +99037,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "pierce",
@@ -99948,7 +99054,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "pierce",
@@ -99966,7 +99071,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "pierce",
@@ -99989,15 +99093,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["6"],
-    "attack": 5,
     "health": 11,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 2,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "pierce",
@@ -100015,7 +99119,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "pierce",
@@ -100045,7 +99148,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "pierce",
@@ -100068,15 +99170,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["6"],
-    "attack": 5,
     "health": 15,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 2,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "pierce",
@@ -100102,7 +99204,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "pierce",
@@ -100120,7 +99221,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "pierce",
@@ -100138,7 +99238,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "pierce",
@@ -100162,9 +99261,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 15,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "jam",
@@ -100231,9 +99331,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 6,
     "health": 20,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -100303,9 +99404,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 7,
     "health": 23,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -100361,9 +99463,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 3,
     "health": 8,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -100385,7 +99488,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "5",
-            "z": 5,
           },
         ],
       },
@@ -100404,7 +99506,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "5",
-            "z": 5,
           },
         ],
       },
@@ -100420,9 +99521,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -100432,7 +99534,6 @@ var CARDS = {
         "id": "legion",
         "x": 1,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "nullify",
@@ -100455,7 +99556,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "nullify",
@@ -100477,7 +99577,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "nullify",
@@ -100497,9 +99596,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 12,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -100509,7 +99609,6 @@ var CARDS = {
         "id": "legion",
         "x": 2,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "nullify",
@@ -100535,7 +99634,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "nullify",
@@ -100559,15 +99657,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "weaken",
@@ -100589,7 +99687,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "weaken",
@@ -100605,7 +99702,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -100627,15 +99723,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 13,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "5",
-        "z": 5,
         "all": "1",
       },
       {
@@ -100664,7 +99760,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -100686,9 +99781,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 6,
     "health": 17,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -100698,7 +99794,6 @@ var CARDS = {
         "id": "rally",
         "x": 2,
         "y": "5",
-        "z": 5,
         "all": "1",
       },
       {
@@ -100730,7 +99825,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -100752,21 +99846,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 9,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "heal",
         "x": 1,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "leech",
@@ -100780,13 +99873,11 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "heal",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "leech",
@@ -100800,13 +99891,11 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "heal",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "leech",
@@ -100825,13 +99914,11 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "heal",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "leech",
@@ -100851,21 +99938,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 14,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "heal",
         "x": 2,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "leech",
@@ -100891,14 +99977,12 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
             "id": "heal",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "leech",
@@ -100918,22 +100002,21 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 19,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "7",
-        "z": 7,
         "all": "1",
       },
       {
         "id": "heal",
         "x": 2,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "leech",
@@ -100955,14 +100038,12 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
             "id": "heal",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "leech",
@@ -100976,14 +100057,12 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
             "id": "heal",
             "x": 2,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
@@ -101004,15 +100083,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 12,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "legion",
         "x": 1,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "flurry",
@@ -101031,7 +100110,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "flurry",
@@ -101046,7 +100124,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "flurry",
@@ -101066,7 +100143,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "flurry",
@@ -101086,9 +100162,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 5,
     "health": 17,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -101098,7 +100175,6 @@ var CARDS = {
         "id": "legion",
         "x": 1,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "flurry",
@@ -101117,7 +100193,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "flurry",
@@ -101136,7 +100211,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "flurry",
@@ -101159,7 +100233,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "flurry",
@@ -101179,9 +100252,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 6,
     "health": 22,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -101191,7 +100265,6 @@ var CARDS = {
         "id": "legion",
         "x": 2,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "flurry",
@@ -101210,7 +100283,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "flurry",
@@ -101234,7 +100306,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "flurry",
@@ -101253,7 +100324,6 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "flurry",
@@ -101274,21 +100344,20 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7","11"],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
         "x": 1,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "legion",
         "x": 1,
         "y": "7",
-        "z": 7,
       },
     ],
     "upgrades": {
@@ -101307,13 +100376,11 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "legion",
             "x": 1,
             "y": "7",
-            "z": 7,
           },
         ],
       },
@@ -101328,13 +100395,11 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "legion",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -101355,21 +100420,20 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7","11"],
-    "attack": 4,
     "health": 17,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
         "x": 2,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "legion",
         "x": 2,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "enfeeble",
@@ -101389,13 +100453,11 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "legion",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -101419,13 +100481,11 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "legion",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -101446,21 +100506,20 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7","11"],
-    "attack": 5,
     "health": 21,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
         "x": 3,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "legion",
         "x": 3,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "enfeeble",
@@ -101485,13 +100544,11 @@ var CARDS = {
             "id": "legion",
             "x": 4,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "legion",
             "x": 3,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -101510,13 +100567,11 @@ var CARDS = {
             "id": "legion",
             "x": 4,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "legion",
             "x": 4,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -101538,9 +100593,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 3,
     "health": 11,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "burn",
@@ -101588,9 +100644,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -101646,9 +100703,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 5,
     "health": 16,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -101705,9 +100763,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["11"],
-    "attack": 2,
     "health": 8,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "pierce",
@@ -101772,9 +100831,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["11"],
-    "attack": 3,
     "health": 11,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "pierce",
@@ -101842,9 +100902,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["11"],
-    "attack": 3,
     "health": 14,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "pierce",
@@ -101925,9 +100986,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["11"],
-    "attack": 5,
     "health": 16,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -101937,13 +100999,11 @@ var CARDS = {
         "id": "rally",
         "x": 2,
         "y": "11",
-        "z": 11,
       },
       {
         "id": "heal",
         "x": 3,
         "y": "11",
-        "z": 11,
       },
     ],
     "upgrades": {
@@ -101962,13 +101022,11 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "heal",
             "x": 3,
             "y": "11",
-            "z": 11,
           },
         ],
       },
@@ -101982,13 +101040,11 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "heal",
             "x": 4,
             "y": "11",
-            "z": 11,
           },
         ],
       },
@@ -102009,9 +101065,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["11"],
-    "attack": 6,
     "health": 20,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -102021,13 +101078,11 @@ var CARDS = {
         "id": "rally",
         "x": 3,
         "y": "11",
-        "z": 11,
       },
       {
         "id": "heal",
         "x": 4,
         "y": "11",
-        "z": 11,
       },
     ],
     "upgrades": {
@@ -102042,13 +101097,11 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "heal",
             "x": 4,
             "y": "11",
-            "z": 11,
           },
         ],
       },
@@ -102062,13 +101115,11 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "heal",
             "x": 5,
             "y": "11",
-            "z": 11,
           },
         ],
       },
@@ -102088,13 +101139,11 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "heal",
             "x": 5,
             "y": "11",
-            "z": 11,
           },
         ],
       },
@@ -102110,9 +101159,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["11"],
-    "attack": 7,
     "health": 23,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -102122,13 +101172,11 @@ var CARDS = {
         "id": "rally",
         "x": 5,
         "y": "11",
-        "z": 11,
       },
       {
         "id": "heal",
         "x": 6,
         "y": "11",
-        "z": 11,
       },
     ],
     "upgrades": {
@@ -102152,13 +101200,11 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "heal",
             "x": 6,
             "y": "11",
-            "z": 11,
           },
         ],
       },
@@ -102172,13 +101218,11 @@ var CARDS = {
             "id": "rally",
             "x": 6,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "heal",
             "x": 7,
             "y": "11",
-            "z": 11,
           },
         ],
       },
@@ -102194,15 +101238,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9","11"],
-    "attack": 5,
     "health": 18,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
         "x": 1,
         "y": "11",
-        "z": 11,
       },
       {
         "id": "strike",
@@ -102234,7 +101278,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "strike",
@@ -102252,7 +101295,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "strike",
@@ -102276,15 +101318,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9","11"],
-    "attack": 6,
     "health": 23,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
         "x": 2,
         "y": "11",
-        "z": 11,
       },
       {
         "id": "strike",
@@ -102312,7 +101354,6 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "strike",
@@ -102334,7 +101375,6 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "strike",
@@ -102358,15 +101398,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9","11"],
-    "attack": 8,
     "health": 28,
+    "attack": 8,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
         "x": 3,
         "y": "11",
-        "z": 11,
       },
       {
         "id": "strike",
@@ -102398,7 +101438,6 @@ var CARDS = {
             "id": "legion",
             "x": 4,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "strike",
@@ -102416,7 +101455,6 @@ var CARDS = {
             "id": "legion",
             "x": 4,
             "y": "11",
-            "z": 11,
           },
           {
             "id": "strike",
@@ -102440,9 +101478,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 18,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "corrosive",
@@ -102501,9 +101540,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 22,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "corrosive",
@@ -102576,9 +101616,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 26,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "corrosive",
@@ -102651,9 +101692,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 16,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -102663,13 +101705,11 @@ var CARDS = {
         "id": "rally",
         "x": 3,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "heal",
         "x": 3,
         "y": "9",
-        "z": 9,
       },
     ],
     "upgrades": {
@@ -102687,13 +101727,11 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "heal",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -102711,13 +101749,11 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "heal",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -102733,9 +101769,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 19,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -102745,13 +101782,11 @@ var CARDS = {
         "id": "rally",
         "x": 4,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "heal",
         "x": 4,
         "y": "9",
-        "z": 9,
       },
     ],
     "upgrades": {
@@ -102765,13 +101800,11 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "heal",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -102785,13 +101818,11 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "heal",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -102809,13 +101840,11 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "heal",
             "x": 5,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -102831,9 +101860,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 21,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -102843,13 +101873,11 @@ var CARDS = {
         "id": "rally",
         "x": 6,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "heal",
         "x": 5,
         "y": "9",
-        "z": 9,
       },
     ],
     "upgrades": {
@@ -102871,13 +101899,11 @@ var CARDS = {
             "id": "rally",
             "x": 6,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "heal",
             "x": 5,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -102891,13 +101917,11 @@ var CARDS = {
             "id": "rally",
             "x": 7,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "heal",
             "x": 6,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -102913,9 +101937,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9","10"],
-    "attack": 6,
     "health": 32,
+    "attack": 6,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -102991,9 +102016,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9","10"],
-    "attack": 7,
     "health": 36,
+    "attack": 7,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -103068,9 +102094,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9","10"],
-    "attack": 9,
     "health": 40,
+    "attack": 9,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -103147,15 +102174,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 4,
     "health": 8,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "pierce",
@@ -103178,7 +102205,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "pierce",
@@ -103202,7 +102228,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "pierce",
@@ -103226,15 +102251,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 5,
     "health": 13,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 4,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "pierce",
@@ -103253,7 +102278,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "pierce",
@@ -103280,7 +102304,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "pierce",
@@ -103304,15 +102327,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 6,
     "health": 18,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 5,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "pierce",
@@ -103331,7 +102354,6 @@ var CARDS = {
             "id": "rally",
             "x": 6,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "pierce",
@@ -103355,7 +102377,6 @@ var CARDS = {
             "id": "rally",
             "x": 7,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "pierce",
@@ -103374,7 +102395,6 @@ var CARDS = {
             "id": "rally",
             "x": 7,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "pierce",
@@ -103398,9 +102418,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4","12"],
-    "attack": 3,
     "health": 5,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "burn",
@@ -103463,9 +102484,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4","12"],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "corrosive",
@@ -103535,9 +102557,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4","12"],
-    "attack": 6,
     "health": 14,
+    "attack": 6,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "corrosive",
@@ -103605,9 +102628,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "valor",
@@ -103617,7 +102641,6 @@ var CARDS = {
         "id": "heal",
         "x": 1,
         "y": "4",
-        "z": 4,
         "all": "1",
       },
       {
@@ -103641,7 +102664,6 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -103665,7 +102687,6 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -103685,7 +102706,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -103706,9 +102726,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 4,
     "health": 16,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "valor",
@@ -103718,7 +102739,6 @@ var CARDS = {
         "id": "heal",
         "x": 2,
         "y": "4",
-        "z": 4,
         "all": "1",
       },
       {
@@ -103738,7 +102758,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -103767,7 +102786,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -103786,7 +102804,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -103807,9 +102824,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 5,
     "health": 21,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "valor",
@@ -103819,7 +102837,6 @@ var CARDS = {
         "id": "heal",
         "x": 3,
         "y": "4",
-        "z": 4,
         "all": "1",
       },
       {
@@ -103839,7 +102856,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -103868,7 +102884,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -103887,7 +102902,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -103908,9 +102922,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 4,
     "health": 24,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "fury",
@@ -103997,9 +103012,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 6,
     "health": 29,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fury",
@@ -104088,9 +103104,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 8,
     "health": 36,
+    "attack": 8,
     "cost": 3,
+    "maxLevel": 7,
     "skill": [
       {
         "id": "fury",
@@ -104186,9 +103203,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 0,
     "health": 8,
+    "attack": 0,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [],
     "upgrades": {
       "2": {
@@ -104205,7 +103223,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "5",
-            "z": 5,
           },
         ],
       },
@@ -104215,7 +103232,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
         ],
       },
@@ -104232,15 +103248,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 0,
     "health": 12,
+    "attack": 0,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "legion",
         "x": 2,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "jam",
@@ -104258,7 +103274,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "jam",
@@ -104276,7 +103291,6 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "jam",
@@ -104297,15 +103311,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 0,
     "health": 14,
+    "attack": 0,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "legion",
         "x": 3,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "jam",
@@ -104323,7 +103337,6 @@ var CARDS = {
             "id": "legion",
             "x": 4,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "jam",
@@ -104341,7 +103354,6 @@ var CARDS = {
             "id": "legion",
             "x": 5,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "jam",
@@ -104361,9 +103373,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["12"],
-    "attack": 2,
     "health": 8,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -104428,9 +103441,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["12"],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -104498,9 +103512,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["12"],
-    "attack": 5,
     "health": 13,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -104568,9 +103583,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12","13"],
-    "attack": 3,
     "health": 15,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -104580,7 +103596,6 @@ var CARDS = {
         "id": "rally",
         "x": 1,
         "y": "12",
-        "z": 12,
         "all": "1",
       },
       {
@@ -104604,7 +103619,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "12",
-            "z": 12,
             "all": "1",
           },
           {
@@ -104634,9 +103648,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12","13"],
-    "attack": 4,
     "health": 20,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -104646,7 +103661,6 @@ var CARDS = {
         "id": "rally",
         "x": 1,
         "y": "12",
-        "z": 12,
         "all": "1",
       },
       {
@@ -104669,7 +103683,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "12",
-            "z": 12,
             "all": "1",
           },
           {
@@ -104689,7 +103702,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "12",
-            "z": 12,
             "all": "1",
           },
           {
@@ -104714,9 +103726,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12","13"],
-    "attack": 5,
     "health": 24,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -104726,7 +103739,6 @@ var CARDS = {
         "id": "rally",
         "x": 2,
         "y": "12",
-        "z": 12,
         "all": "1",
       },
       {
@@ -104746,7 +103758,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "12",
-            "z": 12,
             "all": "1",
           },
           {
@@ -104770,7 +103781,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "12",
-            "z": 12,
             "all": "1",
           },
           {
@@ -104790,7 +103800,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "12",
-            "z": 12,
             "all": "1",
           },
           {
@@ -104811,9 +103820,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["12"],
-    "attack": 2,
     "health": 13,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -104861,9 +103871,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["12"],
-    "attack": 3,
     "health": 16,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -104920,9 +103931,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["12"],
-    "attack": 5,
     "health": 18,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -104978,15 +103990,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["12"],
-    "attack": 3,
     "health": 16,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "protect",
         "x": 1,
         "y": "12",
-        "z": 12,
       },
       {
         "id": "jam",
@@ -105000,7 +104012,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "jam",
@@ -105018,7 +104029,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "jam",
@@ -105036,7 +104046,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "jam",
@@ -105056,9 +104065,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["12"],
-    "attack": 3,
     "health": 18,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -105068,7 +104078,6 @@ var CARDS = {
         "id": "protect",
         "x": 2,
         "y": "12",
-        "z": 12,
       },
       {
         "id": "jam",
@@ -105086,7 +104095,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "jam",
@@ -105108,7 +104116,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "jam",
@@ -105126,7 +104133,6 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "jam",
@@ -105146,9 +104152,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["12"],
-    "attack": 3,
     "health": 20,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -105158,7 +104165,6 @@ var CARDS = {
         "id": "protect",
         "x": 4,
         "y": "12",
-        "z": 12,
       },
       {
         "id": "jam",
@@ -105184,7 +104190,6 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "jam",
@@ -105202,7 +104207,6 @@ var CARDS = {
             "id": "protect",
             "x": 5,
             "y": "12",
-            "z": 12,
           },
           {
             "id": "jam",
@@ -105223,9 +104227,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 5,
     "health": 9,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -105296,9 +104301,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 6,
     "health": 12,
+    "attack": 6,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -105373,9 +104379,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 6,
     "health": 16,
+    "attack": 6,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -105450,9 +104457,10 @@ var CARDS = {
     "card_type": "2",
     "type": "0",
     "sub_type": [],
-    "attack": 1,
     "health": 1,
+    "attack": 1,
     "cost": 0,
+    "maxLevel": 1,
     "skill": [],
     "upgrades": {}
   },
@@ -105466,9 +104474,10 @@ var CARDS = {
     "card_type": "2",
     "type": "0",
     "sub_type": [],
-    "attack": 0,
     "health": 1,
+    "attack": 0,
     "cost": 0,
+    "maxLevel": 1,
     "skill": [],
     "upgrades": {}
   },
@@ -105482,9 +104491,10 @@ var CARDS = {
     "card_type": "2",
     "type": "0",
     "sub_type": [],
-    "attack": 0,
     "health": 3,
+    "attack": 0,
     "cost": 0,
+    "maxLevel": 4,
     "skill": [],
     "upgrades": {
       "2": {
@@ -105511,9 +104521,10 @@ var CARDS = {
     "card_type": "2",
     "type": "0",
     "sub_type": [],
-    "attack": 0,
     "health": 5,
+    "attack": 0,
     "cost": 0,
+    "maxLevel": 5,
     "skill": [],
     "upgrades": {
       "2": {
@@ -105544,9 +104555,10 @@ var CARDS = {
     "card_type": "2",
     "type": "0",
     "sub_type": [],
-    "attack": 0,
     "health": 1,
+    "attack": 0,
     "cost": 0,
+    "maxLevel": 1,
     "skill": [],
     "upgrades": {}
   },
@@ -105560,9 +104572,10 @@ var CARDS = {
     "card_type": "2",
     "type": "0",
     "sub_type": [],
-    "attack": 0,
     "health": 1,
+    "attack": 0,
     "cost": 0,
+    "maxLevel": 1,
     "skill": [],
     "upgrades": {}
   },
@@ -105576,9 +104589,10 @@ var CARDS = {
     "card_type": "2",
     "type": "0",
     "sub_type": [],
-    "attack": 0,
     "health": 1,
+    "attack": 0,
     "cost": 0,
+    "maxLevel": 1,
     "skill": [],
     "upgrades": {}
   },
@@ -105591,10 +104605,11 @@ var CARDS = {
     "set": "9999",
     "card_type": "2",
     "type": "0",
-    "sub_type": ["999"],
-    "attack": 0,
+    "sub_type": [],
     "health": 1,
+    "attack": 0,
     "cost": 0,
+    "maxLevel": 18,
     "skill": [],
     "upgrades": {
       "2": {
@@ -105676,10 +104691,11 @@ var CARDS = {
     "set": "9999",
     "card_type": "2",
     "type": "0",
-    "sub_type": ["999"],
-    "attack": 0,
+    "sub_type": [],
     "health": 1,
+    "attack": 0,
     "cost": 4,
+    "maxLevel": 18,
     "skill": [
       {
         "id": "strike",
@@ -105789,10 +104805,11 @@ var CARDS = {
     "set": "9999",
     "card_type": "2",
     "type": "3",
-    "sub_type": ["999"],
-    "attack": 0,
+    "sub_type": [],
     "health": 1,
+    "attack": 0,
     "cost": 4,
+    "maxLevel": 18,
     "skill": [
       {
         "id": "heal",
@@ -105936,6 +104953,7 @@ var CARDS = {
     "type": "0",
     "sub_type": ["999"],
     "cost": 0,
+    "maxLevel": 10,
     "skill": [
       {
         "id": "weakenself",
@@ -106036,10 +105054,11 @@ var CARDS = {
     "set": "9999",
     "card_type": "2",
     "type": "1",
-    "sub_type": ["999"],
-    "attack": 0,
+    "sub_type": [],
     "health": 1,
+    "attack": 0,
     "cost": 4,
+    "maxLevel": 13,
     "skill": [
       {
         "id": "armored",
@@ -106119,10 +105138,11 @@ var CARDS = {
     "set": "9999",
     "card_type": "2",
     "type": "1",
-    "sub_type": ["999"],
-    "attack": 2,
+    "sub_type": [],
     "health": 14,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "armored",
@@ -106171,9 +105191,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 1,
     "health": 2,
+    "attack": 1,
     "cost": 0,
+    "maxLevel": 3,
     "skill": [],
     "upgrades": {
       "2": {
@@ -106196,9 +105217,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 1,
     "health": 7,
+    "attack": 1,
     "cost": 0,
+    "maxLevel": 3,
     "skill": [],
     "upgrades": {
       "2": {
@@ -106221,9 +105243,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 2,
     "health": 9,
+    "attack": 2,
     "cost": 0,
+    "maxLevel": 3,
     "skill": [],
     "upgrades": {
       "2": {
@@ -106236,7 +105259,6 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -106252,9 +105274,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 1,
     "health": 3,
+    "attack": 1,
     "cost": 1,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "armored",
@@ -106282,9 +105305,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 2,
     "health": 5,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "armored",
@@ -106316,9 +105340,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 2,
     "health": 7,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "armored",
@@ -106346,9 +105371,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 2,
     "health": 6,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 3,
     "skill": [],
     "upgrades": {
       "2": {
@@ -106374,9 +105400,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 2,
     "health": 8,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "counter",
@@ -106415,9 +105442,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 2,
     "health": 10,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "counter",
@@ -106457,15 +105485,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 2,
     "health": 4,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "protect",
         "x": 1,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -106489,15 +105517,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 3,
     "health": 7,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "protect",
         "x": 1,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -106511,7 +105539,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -106527,15 +105554,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 3,
     "health": 9,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "protect",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -106553,7 +105580,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -106569,9 +105595,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 3,
     "health": 5,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "weaken",
@@ -106603,9 +105630,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 3,
     "health": 8,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "weaken",
@@ -106633,9 +105661,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 3,
     "health": 11,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "weaken",
@@ -106667,9 +105696,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 2,
     "health": 7,
+    "attack": 2,
     "cost": 4,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "counter",
@@ -106701,9 +105731,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 2,
     "health": 11,
+    "attack": 2,
     "cost": 4,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "armored",
@@ -106734,9 +105765,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 3,
     "health": 13,
+    "attack": 3,
     "cost": 4,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "armored",
@@ -106776,9 +105808,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 1,
     "health": 4,
+    "attack": 1,
     "cost": 1,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "rally",
@@ -106810,9 +105843,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 1,
     "health": 7,
+    "attack": 1,
     "cost": 1,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "rally",
@@ -106844,9 +105878,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 1,
     "health": 9,
+    "attack": 1,
     "cost": 1,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "rally",
@@ -106874,15 +105909,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 1,
     "health": 5,
+    "attack": 1,
     "cost": 2,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "heal",
         "x": 1,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -106892,7 +105927,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -106913,15 +105947,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 2,
     "health": 7,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "heal",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -106935,7 +105969,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "weaken",
@@ -106954,15 +105987,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 2,
     "health": 10,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "heal",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "weaken",
@@ -106976,7 +106009,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "weaken",
@@ -107000,9 +106032,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 1,
     "health": 6,
+    "attack": 1,
     "cost": 2,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "strike",
@@ -107042,9 +106075,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 1,
     "health": 9,
+    "attack": 1,
     "cost": 2,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "strike",
@@ -107076,9 +106110,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 3,
     "health": 11,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "strike",
@@ -107114,9 +106149,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 2,
     "health": 9,
+    "attack": 2,
     "cost": 4,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "armored",
@@ -107169,9 +106205,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 2,
     "health": 12,
+    "attack": 2,
     "cost": 4,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "armored",
@@ -107215,9 +106252,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 3,
     "health": 15,
+    "attack": 3,
     "cost": 4,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "armored",
@@ -107261,15 +106299,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 1,
     "health": 7,
+    "attack": 1,
     "cost": 2,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -107283,7 +106321,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -107294,7 +106331,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "jam",
@@ -107313,15 +106349,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 2,
     "health": 9,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "jam",
@@ -107343,7 +106379,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "jam",
@@ -107362,15 +106397,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 2,
     "health": 12,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "rally",
         "x": 3,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "jam",
@@ -107388,7 +106423,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "jam",
@@ -107402,7 +106436,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "jam",
@@ -107422,9 +106455,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 1,
     "health": 8,
+    "attack": 1,
     "cost": 2,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "weaken",
@@ -107461,9 +106495,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 2,
     "health": 11,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "weaken",
@@ -107499,9 +106534,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 2,
     "health": 14,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "weaken",
@@ -107537,15 +106573,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 1,
     "health": 4,
+    "attack": 1,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "protect",
         "x": 1,
         "y": "4",
-        "z": 4,
       },
     ],
     "upgrades": {
@@ -107559,7 +106595,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -107574,7 +106609,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -107589,9 +106623,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 2,
     "health": 6,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "armored",
@@ -107601,7 +106636,6 @@ var CARDS = {
         "id": "protect",
         "x": 2,
         "y": "4",
-        "z": 4,
       },
     ],
     "upgrades": {
@@ -107628,9 +106662,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 9,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "armored",
@@ -107640,7 +106675,6 @@ var CARDS = {
         "id": "protect",
         "x": 2,
         "y": "4",
-        "z": 4,
       },
     ],
     "upgrades": {
@@ -107662,7 +106696,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -107677,9 +106710,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 3,
     "health": 7,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "counter",
@@ -107689,7 +106723,6 @@ var CARDS = {
         "id": "protect",
         "x": 1,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -107704,7 +106737,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -107719,7 +106751,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -107733,7 +106764,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "flurry",
@@ -107752,9 +106782,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 4,
     "health": 9,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "counter",
@@ -107764,7 +106795,6 @@ var CARDS = {
         "id": "protect",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "flurry",
@@ -107790,7 +106820,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "flurry",
@@ -107809,9 +106838,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 4,
     "health": 12,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "counter",
@@ -107821,7 +106851,6 @@ var CARDS = {
         "id": "protect",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "flurry",
@@ -107843,7 +106872,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "flurry",
@@ -107867,9 +106895,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 3,
     "health": 5,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "armored",
@@ -107914,9 +106943,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 3,
     "health": 9,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "armored",
@@ -107959,9 +106989,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "armored",
@@ -108005,15 +107036,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 1,
     "health": 5,
+    "attack": 1,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "protect",
         "x": 1,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -108028,13 +107059,11 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "protect",
             "x": 1,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -108045,13 +107074,11 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "protect",
             "x": 1,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -108066,21 +107093,20 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 2,
     "health": 8,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "heal",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "protect",
         "x": 1,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -108098,13 +107124,11 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "protect",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -108119,21 +107143,20 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 2,
     "health": 11,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "heal",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "protect",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -108151,13 +107174,11 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "protect",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -108172,9 +107193,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 2,
     "health": 8,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -108229,9 +107251,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 3,
     "health": 13,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -108298,9 +107321,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 15,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -108381,9 +107405,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -108445,9 +107470,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 6,
     "health": 15,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -108504,9 +107530,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 8,
     "health": 18,
+    "attack": 8,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -108576,9 +107603,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 2,
     "health": 5,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -108647,9 +107675,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 3,
     "health": 7,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -108704,9 +107733,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -108762,9 +107792,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 1,
     "health": 6,
+    "attack": 1,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
@@ -108821,9 +107852,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 1,
     "health": 10,
+    "attack": 1,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
@@ -108870,9 +107902,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 2,
     "health": 13,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
@@ -108927,15 +107960,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 3,
     "health": 9,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "5",
-        "z": 5,
         "all": "1",
       },
       {
@@ -108951,7 +107984,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -108966,14 +107998,12 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 1,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "flurry",
@@ -108988,14 +108018,12 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 1,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "flurry",
@@ -109010,14 +108038,12 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "flurry",
@@ -109036,22 +108062,21 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 4,
     "health": 12,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "5",
-        "z": 5,
         "all": "1",
       },
       {
         "id": "protect",
         "x": 2,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "flurry",
@@ -109086,15 +108111,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 5,
     "health": 16,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "5",
-        "z": 5,
         "all": "1",
       },
       {
@@ -109105,7 +108130,6 @@ var CARDS = {
         "id": "protect",
         "x": 2,
         "y": "5",
-        "z": 5,
       },
     ],
     "upgrades": {
@@ -109119,7 +108143,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -109130,7 +108153,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
         ],
       },
@@ -109144,7 +108166,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -109155,7 +108176,6 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
         ],
       },
@@ -109170,9 +108190,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -109182,7 +108203,6 @@ var CARDS = {
         "id": "heal",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "protect",
@@ -109205,7 +108225,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "protect",
@@ -109224,7 +108243,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "protect",
@@ -109243,7 +108261,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "protect",
@@ -109263,9 +108280,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 18,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -109275,7 +108293,6 @@ var CARDS = {
         "id": "heal",
         "x": 3,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "protect",
@@ -109302,7 +108319,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "protect",
@@ -109322,7 +108338,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "protect",
@@ -109342,9 +108357,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 5,
     "health": 20,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -109354,7 +108370,6 @@ var CARDS = {
         "id": "heal",
         "x": 4,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "protect",
@@ -109385,7 +108400,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "protect",
@@ -109405,15 +108419,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 2,
     "health": 7,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "weaken",
@@ -109435,7 +108449,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "weaken",
@@ -109449,7 +108462,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "strike",
@@ -109472,15 +108484,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 3,
     "health": 9,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "strike",
@@ -109506,7 +108518,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "strike",
@@ -109524,7 +108535,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "strike",
@@ -109547,15 +108557,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 11,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "strike",
@@ -109581,7 +108591,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "strike",
@@ -109599,7 +108608,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "strike",
@@ -109622,9 +108630,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 2,
     "health": 16,
+    "attack": 2,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
@@ -109634,7 +108643,6 @@ var CARDS = {
         "id": "legion",
         "x": 1,
         "y": "5",
-        "z": 5,
       },
     ],
     "upgrades": {
@@ -109661,7 +108669,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "5",
-            "z": 5,
           },
         ],
       },
@@ -109676,9 +108683,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 3,
     "health": 18,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
@@ -109689,13 +108697,11 @@ var CARDS = {
         "id": "protect",
         "x": 1,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "legion",
         "x": 1,
         "y": "5",
-        "z": 5,
       },
     ],
     "upgrades": {
@@ -109719,13 +108725,11 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "legion",
             "x": 1,
             "y": "5",
-            "z": 5,
           },
         ],
       },
@@ -109741,13 +108745,11 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "legion",
             "x": 2,
             "y": "5",
-            "z": 5,
           },
         ],
       },
@@ -109762,9 +108764,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 21,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "heal",
@@ -109775,13 +108778,11 @@ var CARDS = {
         "id": "protect",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "legion",
         "x": 2,
         "y": "5",
-        "z": 5,
       },
     ],
     "upgrades": {
@@ -109801,13 +108802,11 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "legion",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
         ],
       },
@@ -109823,13 +108822,11 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "legion",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
         ],
       },
@@ -109845,13 +108842,11 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "legion",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
         ],
       },
@@ -109866,9 +108861,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 3,
     "health": 17,
+    "attack": 3,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -109952,9 +108948,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 22,
+    "attack": 5,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -110015,9 +109012,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 26,
+    "attack": 6,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -110091,9 +109089,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 2,
     "health": 6,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -110170,9 +109169,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 8,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -110235,9 +109235,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 4,
     "health": 12,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -110308,9 +109309,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 5,
     "health": 7,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -110320,13 +109322,11 @@ var CARDS = {
         "id": "heal",
         "x": 1,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "rally",
         "x": 1,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -110356,13 +109356,11 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "rally",
             "x": 1,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -110377,9 +109375,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 6,
     "health": 12,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -110389,13 +109388,11 @@ var CARDS = {
         "id": "heal",
         "x": 2,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "rally",
         "x": 1,
         "y": "1",
-        "z": 1,
         "all": "1",
       },
     ],
@@ -110422,13 +109419,11 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "rally",
             "x": 1,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
         ],
@@ -110443,13 +109438,11 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "rally",
             "x": 1,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
         ],
@@ -110465,9 +109458,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["6"],
-    "attack": 7,
     "health": 16,
+    "attack": 7,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -110477,13 +109471,11 @@ var CARDS = {
         "id": "heal",
         "x": 3,
         "y": "6",
-        "z": 6,
       },
       {
         "id": "rally",
         "x": 2,
         "y": "1",
-        "z": 1,
         "all": "1",
       },
     ],
@@ -110515,13 +109507,11 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "6",
-            "z": 6,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
         ],
@@ -110537,27 +109527,25 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 2,
     "health": 10,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
         "x": 1,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "rally",
         "x": 1,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "legion",
         "x": 1,
         "y": "4",
-        "z": 4,
       },
     ],
     "upgrades": {
@@ -110571,19 +109559,16 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "rally",
             "x": 1,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "legion",
             "x": 1,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -110597,19 +109582,16 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "rally",
             "x": 1,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "legion",
             "x": 2,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -110619,20 +109601,17 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "rally",
             "x": 1,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
             "id": "legion",
             "x": 2,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -110647,28 +109626,26 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 2,
     "health": 14,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
         "x": 2,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "rally",
         "x": 1,
         "y": "4",
-        "z": 4,
         "all": "1",
       },
       {
         "id": "legion",
         "x": 2,
         "y": "4",
-        "z": 4,
       },
     ],
     "upgrades": {
@@ -110686,20 +109663,17 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "rally",
             "x": 1,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
             "id": "legion",
             "x": 2,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -110709,20 +109683,17 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "rally",
             "x": 1,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
             "id": "legion",
             "x": 3,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -110732,20 +109703,17 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
             "id": "legion",
             "x": 3,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -110760,28 +109728,26 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 16,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
         "x": 3,
         "y": "4",
-        "z": 4,
       },
       {
         "id": "rally",
         "x": 2,
         "y": "4",
-        "z": 4,
         "all": "1",
       },
       {
         "id": "legion",
         "x": 3,
         "y": "4",
-        "z": 4,
       },
     ],
     "upgrades": {
@@ -110803,20 +109769,17 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
             "id": "legion",
             "x": 3,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -110826,20 +109789,17 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "4",
-            "z": 4,
           },
           {
             "id": "rally",
             "x": 3,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
             "id": "legion",
             "x": 3,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -110855,9 +109815,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 1,
     "health": 2,
+    "attack": 1,
     "cost": 0,
+    "maxLevel": 3,
     "skill": [],
     "upgrades": {
       "2": {
@@ -110879,9 +109840,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 2,
     "health": 4,
+    "attack": 2,
     "cost": 0,
+    "maxLevel": 3,
     "skill": [],
     "upgrades": {
       "2": {
@@ -110903,9 +109865,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 6,
+    "attack": 3,
     "cost": 0,
+    "maxLevel": 3,
     "skill": [],
     "upgrades": {
       "2": {
@@ -110932,9 +109895,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 1,
     "health": 3,
+    "attack": 1,
     "cost": 1,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "strike",
@@ -110961,9 +109925,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 2,
     "health": 5,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "strike",
@@ -110994,9 +109959,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 2,
     "health": 7,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "strike",
@@ -111024,9 +109990,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 3,
     "health": 3,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 3,
     "skill": [],
     "upgrades": {
       "2": {
@@ -111053,9 +110020,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 3,
     "health": 6,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "poison",
@@ -111086,9 +110054,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 3,
     "health": 8,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "poison",
@@ -111120,9 +110089,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 8,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 3,
     "skill": [],
     "upgrades": {
       "2": {
@@ -111148,9 +110118,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 11,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "counter",
@@ -111177,9 +110148,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 13,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "counter",
@@ -111211,9 +110183,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 2,
     "health": 1,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "pierce",
@@ -111244,9 +110217,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 3,
     "health": 2,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "pierce",
@@ -111277,9 +110251,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 4,
     "health": 3,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "pierce",
@@ -111307,9 +110282,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 2,
     "health": 6,
+    "attack": 2,
     "cost": 3,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "strike",
@@ -111340,9 +110316,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 2,
     "health": 8,
+    "attack": 2,
     "cost": 3,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "strike",
@@ -111381,9 +110358,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 2,
     "health": 10,
+    "attack": 2,
     "cost": 3,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "strike",
@@ -111423,9 +110401,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["12"],
-    "attack": 3,
     "health": 4,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "counter",
@@ -111456,9 +110435,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["12"],
-    "attack": 4,
     "health": 5,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "counter",
@@ -111497,9 +110477,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["12"],
-    "attack": 5,
     "health": 6,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "counter",
@@ -111539,9 +110520,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 1,
     "health": 4,
+    "attack": 1,
     "cost": 1,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "weaken",
@@ -111568,9 +110550,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 2,
     "health": 7,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "weaken",
@@ -111601,9 +110584,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 3,
     "health": 7,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "weaken",
@@ -111642,9 +110626,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 2,
     "health": 4,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [],
     "upgrades": {
       "2": {
@@ -111674,9 +110659,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 6,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "burn",
@@ -111715,9 +110701,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 8,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "strike",
@@ -111760,9 +110747,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 3,
     "health": 6,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "counter",
@@ -111836,9 +110824,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "counter",
@@ -111901,9 +110890,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 4,
     "health": 12,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "counter",
@@ -111956,9 +110946,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 1,
     "health": 5,
+    "attack": 1,
     "cost": 2,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "strike",
@@ -112007,9 +110998,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 2,
     "health": 8,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "enfeeble",
@@ -112044,9 +111036,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 11,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "enfeeble",
@@ -112089,9 +111082,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 2,
     "health": 5,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "enfeeble",
@@ -112134,9 +111128,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 7,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "enfeeble",
@@ -112179,9 +111174,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 10,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "enfeeble",
@@ -112224,9 +111220,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 3,
     "health": 7,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "poison",
@@ -112282,9 +111279,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "evade",
@@ -112335,9 +111333,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 12,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "evade",
@@ -112401,9 +111400,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 2,
     "health": 1,
+    "attack": 2,
     "cost": 2,
+    "maxLevel": 4,
     "skill": [],
     "upgrades": {
       "2": {
@@ -112433,9 +111433,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 3,
     "health": 2,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "strike",
@@ -112470,9 +111471,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 3,
     "health": 4,
+    "attack": 3,
     "cost": 0,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "strike",
@@ -112508,9 +111510,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 2,
     "health": 11,
+    "attack": 2,
     "cost": 4,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "burn",
@@ -112558,9 +111561,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 4,
     "health": 13,
+    "attack": 4,
     "cost": 4,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "burn",
@@ -112603,9 +111607,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 4,
     "health": 15,
+    "attack": 4,
     "cost": 4,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "burn",
@@ -112640,9 +111645,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 2,
     "health": 4,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "enfeeble",
@@ -112685,9 +111691,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 7,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "enfeeble",
@@ -112730,9 +111737,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 9,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "enfeeble",
@@ -112767,9 +111775,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 1,
     "health": 6,
+    "attack": 1,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -112834,9 +111843,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 2,
     "health": 10,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -112891,9 +111901,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -112956,9 +111967,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 3,
     "health": 13,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -113025,9 +112037,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 4,
     "health": 19,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "strike",
@@ -113093,9 +112106,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 5,
     "health": 22,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -113168,9 +112182,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["6"],
-    "attack": 3,
     "health": 8,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -113229,9 +112244,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["6"],
-    "attack": 5,
     "health": 12,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -113278,9 +112294,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["6"],
-    "attack": 6,
     "health": 14,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "counter",
@@ -113347,9 +112364,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 9,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -113406,9 +112424,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 4,
     "health": 12,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -113470,9 +112489,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 5,
     "health": 14,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -113529,9 +112549,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 3,
     "health": 1,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -113604,9 +112625,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 4,
     "health": 1,
+    "attack": 4,
     "cost": 0,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -113681,9 +112703,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 4,
     "health": 3,
+    "attack": 4,
     "cost": 0,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -113751,9 +112774,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 2,
     "health": 7,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "leech",
@@ -113824,9 +112848,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 3,
     "health": 11,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -113893,9 +112918,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["13"],
-    "attack": 3,
     "health": 14,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -113950,15 +112976,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 2,
     "health": 6,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "legion",
         "x": 1,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "strike",
@@ -113984,7 +113010,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "strike",
@@ -114003,15 +113028,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 9,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "legion",
         "x": 1,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "strike",
@@ -114041,7 +113066,6 @@ var CARDS = {
             "id": "legion",
             "x": 1,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "strike",
@@ -114060,9 +113084,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 12,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -114072,7 +113097,6 @@ var CARDS = {
         "id": "legion",
         "x": 1,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "strike",
@@ -114098,7 +113122,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "strike",
@@ -114116,7 +113139,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "strike",
@@ -114135,15 +113157,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 15,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "poison",
@@ -114169,7 +113191,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "poison",
@@ -114187,7 +113208,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "poison",
@@ -114210,15 +113230,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 6,
     "health": 16,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "poison",
@@ -114240,7 +113260,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "poison",
@@ -114259,7 +113278,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "poison",
@@ -114278,7 +113296,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "poison",
@@ -114301,15 +113318,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 6,
     "health": 20,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "fervor",
         "x": 2,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "poison",
@@ -114336,7 +113353,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "poison",
@@ -114355,7 +113371,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "poison",
@@ -114378,9 +113393,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 13,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -114495,9 +113511,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 16,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -114571,9 +113588,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 20,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "strike",
@@ -114660,9 +113678,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 4,
     "health": 9,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "burn",
@@ -114721,9 +113740,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 5,
     "health": 13,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "weaken",
@@ -114794,9 +113814,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 6,
     "health": 16,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "weaken",
@@ -114867,9 +113888,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 7,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -114928,9 +113950,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -114993,9 +114016,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 5,
     "health": 13,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -115066,9 +114090,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 6,
     "health": 20,
+    "attack": 6,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -115140,9 +114165,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 7,
     "health": 24,
+    "attack": 7,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -115217,9 +114243,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 9,
     "health": 27,
+    "attack": 9,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -115309,9 +114336,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 1,
     "health": 2,
+    "attack": 1,
     "cost": 0,
+    "maxLevel": 3,
     "skill": [],
     "upgrades": {
       "2": {
@@ -115333,9 +114361,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 1,
     "health": 7,
+    "attack": 1,
     "cost": 0,
+    "maxLevel": 3,
     "skill": [],
     "upgrades": {
       "2": {
@@ -115357,9 +114386,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 2,
     "health": 9,
+    "attack": 2,
     "cost": 0,
+    "maxLevel": 3,
     "skill": [],
     "upgrades": {
       "2": {
@@ -115372,7 +114402,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -115388,9 +114417,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 2,
     "health": 3,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 3,
     "skill": [],
     "upgrades": {
       "2": {
@@ -115416,9 +114446,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 2,
     "health": 7,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "rally",
@@ -115449,9 +114480,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 2,
     "health": 9,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "rally",
@@ -115479,9 +114511,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 2,
     "health": 7,
+    "attack": 2,
     "cost": 3,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "pierce",
@@ -115513,9 +114546,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 3,
     "health": 10,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "pierce",
@@ -115546,9 +114580,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "pierce",
@@ -115580,9 +114615,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 1,
     "health": 5,
+    "attack": 1,
     "cost": 2,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "heal",
@@ -115613,9 +114649,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 1,
     "health": 8,
+    "attack": 1,
     "cost": 2,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "heal",
@@ -115646,9 +114683,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 1,
     "health": 10,
+    "attack": 1,
     "cost": 2,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "heal",
@@ -115680,9 +114718,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 1,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "armored",
@@ -115709,9 +114748,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 4,
     "health": 3,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "armored",
@@ -115742,9 +114782,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 5,
     "health": 4,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "armored",
@@ -115780,15 +114821,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 1,
     "health": 3,
+    "attack": 1,
     "cost": 1,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "heal",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -115811,21 +114852,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 2,
     "health": 5,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "heal",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "protect",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -115839,13 +114879,11 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "protect",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -115860,21 +114898,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 2,
     "health": 8,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "heal",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "protect",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -115888,13 +114925,11 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "protect",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -115910,9 +114945,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 2,
     "health": 7,
+    "attack": 2,
     "cost": 3,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "poison",
@@ -115943,9 +114979,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 2,
     "health": 9,
+    "attack": 2,
     "cost": 3,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "poison",
@@ -115972,9 +115009,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "poison",
@@ -116006,9 +115044,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 2,
     "health": 10,
+    "attack": 2,
     "cost": 4,
+    "maxLevel": 3,
     "skill": [],
     "upgrades": {
       "2": {
@@ -116032,9 +115071,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 4,
+    "maxLevel": 3,
     "skill": [],
     "upgrades": {
       "2": {
@@ -116060,9 +115100,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 4,
     "health": 15,
+    "attack": 4,
     "cost": 4,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "evade",
@@ -116102,9 +115143,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 2,
     "health": 4,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "pierce",
@@ -116122,7 +115164,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "pierce",
@@ -116145,15 +115186,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 3,
     "health": 6,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "pierce",
@@ -116167,7 +115208,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "pierce",
@@ -116185,7 +115225,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "pierce",
@@ -116204,15 +115243,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 3,
     "health": 8,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "pierce",
@@ -116244,9 +115283,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["13"],
-    "attack": 2,
     "health": 7,
+    "attack": 2,
     "cost": 3,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "poison",
@@ -116298,9 +115338,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["13"],
-    "attack": 3,
     "health": 10,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "evade",
@@ -116351,9 +115392,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["13"],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "evade",
@@ -116405,15 +115447,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 2,
     "health": 8,
+    "attack": 2,
     "cost": 3,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "heal",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -116427,13 +115469,11 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "protect",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -116444,14 +115484,12 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -116466,22 +115504,21 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 3,
     "health": 11,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "heal",
         "x": 1,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
         "id": "protect",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -116499,14 +115536,12 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -116521,22 +115556,21 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 4,
     "health": 12,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "heal",
         "x": 2,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
         "id": "protect",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -116554,14 +115588,12 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -116577,9 +115609,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 3,
     "health": 8,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "pierce",
@@ -116632,9 +115665,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "pierce",
@@ -116677,9 +115711,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 5,
     "health": 11,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "evade",
@@ -116730,9 +115765,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 4,
     "health": 9,
+    "attack": 4,
     "cost": 4,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "armored",
@@ -116742,7 +115778,6 @@ var CARDS = {
         "id": "rally",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "pierce",
@@ -116760,7 +115795,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "pierce",
@@ -116779,7 +115813,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "pierce",
@@ -116798,7 +115831,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -116818,9 +115850,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 5,
     "health": 11,
+    "attack": 5,
     "cost": 4,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "armored",
@@ -116830,7 +115863,6 @@ var CARDS = {
         "id": "rally",
         "x": 1,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
@@ -116853,7 +115885,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -116877,9 +115908,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 5,
     "health": 14,
+    "attack": 5,
     "cost": 4,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "armored",
@@ -116889,7 +115921,6 @@ var CARDS = {
         "id": "rally",
         "x": 1,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
@@ -116912,7 +115943,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -116932,7 +115962,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -116952,21 +115981,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 2,
     "health": 10,
+    "attack": 2,
     "cost": 4,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "heal",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "rally",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -116977,13 +116005,11 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -116994,13 +116020,11 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "leech",
@@ -117015,13 +116039,11 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "leech",
@@ -117040,21 +116062,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 4,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "heal",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "rally",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "leech",
@@ -117072,13 +116093,11 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "leech",
@@ -117101,21 +116120,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 4,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "heal",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "rally",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "leech",
@@ -117133,13 +116151,11 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "leech",
@@ -117154,13 +116170,11 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "leech",
@@ -117180,15 +116194,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 1,
     "health": 5,
+    "attack": 1,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "4",
-        "z": 4,
       },
     ],
     "upgrades": {
@@ -117215,9 +116229,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 2,
     "health": 7,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "evade",
@@ -117227,7 +116242,6 @@ var CARDS = {
         "id": "rally",
         "x": 1,
         "y": "4",
-        "z": 4,
       },
     ],
     "upgrades": {
@@ -117249,7 +116263,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -117264,9 +116277,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 2,
     "health": 10,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "evade",
@@ -117276,7 +116290,6 @@ var CARDS = {
         "id": "rally",
         "x": 2,
         "y": "4",
-        "z": 4,
       },
     ],
     "upgrades": {
@@ -117294,7 +116307,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "4",
-            "z": 4,
           },
         ],
       },
@@ -117314,9 +116326,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 3,
     "health": 10,
+    "attack": 3,
     "cost": 4,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "armored",
@@ -117357,9 +116370,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 13,
+    "attack": 5,
     "cost": 4,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "armored",
@@ -117398,9 +116412,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 15,
+    "attack": 5,
     "cost": 4,
+    "maxLevel": 4,
     "skill": [
       {
         "id": "armored",
@@ -117435,15 +116450,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "pierce",
@@ -117458,7 +116473,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "pierce",
@@ -117472,7 +116486,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -117488,7 +116501,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -117503,7 +116515,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -117523,15 +116534,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 5,
     "health": 13,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
@@ -117546,7 +116557,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -117569,7 +116579,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -117593,9 +116602,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 6,
     "health": 15,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -117605,7 +116615,6 @@ var CARDS = {
         "id": "rally",
         "x": 1,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
@@ -117628,7 +116637,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -117652,7 +116660,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -117672,21 +116679,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 3,
     "health": 19,
+    "attack": 3,
     "cost": 4,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "protect",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "rally",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -117697,13 +116703,11 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -117719,13 +116723,11 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -117737,13 +116739,11 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -117759,21 +116759,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 5,
     "health": 24,
+    "attack": 5,
     "cost": 4,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "protect",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "rally",
         "x": 2,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
     ],
@@ -117788,13 +116787,11 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -117809,20 +116806,17 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "fervor",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -117837,28 +116831,26 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 5,
     "health": 29,
+    "attack": 5,
     "cost": 4,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "protect",
         "x": 4,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "rally",
         "x": 2,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
         "id": "fervor",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -117872,20 +116864,17 @@ var CARDS = {
             "id": "protect",
             "x": 5,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "fervor",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -117901,20 +116890,17 @@ var CARDS = {
             "id": "protect",
             "x": 5,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "fervor",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -117929,9 +116915,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 1,
     "health": 11,
+    "attack": 1,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -117941,7 +116928,6 @@ var CARDS = {
         "id": "heal",
         "x": 1,
         "y": "4",
-        "z": 4,
         "all": "1",
       },
     ],
@@ -117961,7 +116947,6 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
         ],
@@ -117977,7 +116962,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
         ],
@@ -117993,7 +116977,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -118013,9 +116996,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 2,
     "health": 16,
+    "attack": 2,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -118025,7 +117009,6 @@ var CARDS = {
         "id": "heal",
         "x": 2,
         "y": "4",
-        "z": 4,
         "all": "1",
       },
       {
@@ -118056,7 +117039,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -118077,9 +117059,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 20,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -118089,7 +117072,6 @@ var CARDS = {
         "id": "heal",
         "x": 2,
         "y": "4",
-        "z": 4,
         "all": "1",
       },
       {
@@ -118118,7 +117100,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -118138,7 +117119,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "4",
-            "z": 4,
             "all": "1",
           },
           {
@@ -118159,9 +117139,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["11"],
-    "attack": 3,
     "health": 8,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
@@ -118256,9 +117237,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["11"],
-    "attack": 5,
     "health": 11,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
@@ -118337,9 +117319,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["11"],
-    "attack": 5,
     "health": 13,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
@@ -118407,9 +117390,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 13,
+    "attack": 5,
     "cost": 4,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -118427,7 +117411,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -118442,7 +117425,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -118461,7 +117443,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -118480,7 +117461,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -118496,9 +117476,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 7,
     "health": 16,
+    "attack": 7,
     "cost": 4,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -118512,7 +117493,6 @@ var CARDS = {
         "id": "protect",
         "x": 1,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
     ],
@@ -118543,7 +117523,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -118559,9 +117538,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 8,
     "health": 20,
+    "attack": 8,
     "cost": 4,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -118575,7 +117555,6 @@ var CARDS = {
         "id": "protect",
         "x": 1,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
     ],
@@ -118602,7 +117581,6 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -118622,7 +117600,6 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -118638,9 +117615,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 3,
     "health": 13,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -118734,9 +117712,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 4,
     "health": 18,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -118803,9 +117782,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
-    "attack": 5,
     "health": 20,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "enfeeble",
@@ -118872,9 +117852,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 15,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -118921,9 +117902,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 19,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -118980,9 +117962,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 23,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "armored",
@@ -119054,15 +118037,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 11,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 1,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "leech",
@@ -119084,7 +118067,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "leech",
@@ -119098,7 +118080,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "leech",
@@ -119117,15 +118098,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 5,
     "health": 13,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "leech",
@@ -119147,7 +118128,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "leech",
@@ -119161,13 +118141,11 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "protect",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "leech",
@@ -119186,21 +118164,20 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 7,
     "health": 14,
+    "attack": 7,
     "cost": 2,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "protect",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "leech",
@@ -119222,13 +118199,11 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "protect",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "leech",
@@ -119242,13 +118217,11 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "protect",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -119268,15 +118241,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 3,
     "health": 15,
+    "attack": 3,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "leech",
@@ -119294,7 +118267,6 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "leech",
@@ -119313,7 +118285,6 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "leech",
@@ -119331,7 +118302,6 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -119351,7 +118321,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -119371,9 +118340,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 20,
+    "attack": 5,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -119383,7 +118353,6 @@ var CARDS = {
         "id": "heal",
         "x": 2,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
@@ -119410,7 +118379,6 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -119438,9 +118406,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 7,
     "health": 25,
+    "attack": 7,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -119450,7 +118419,6 @@ var CARDS = {
         "id": "heal",
         "x": 3,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
@@ -119477,7 +118445,6 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -119500,7 +118467,6 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -119520,22 +118486,21 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
         "x": 1,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
         "id": "rally",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -119553,14 +118518,12 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -119575,14 +118538,12 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -119598,22 +118559,21 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 4,
     "health": 16,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
         "x": 2,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
         "id": "rally",
         "x": 1,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
     ],
@@ -119632,14 +118592,12 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -119654,14 +118612,12 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -119677,22 +118633,21 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 5,
     "health": 18,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
         "x": 3,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
         "id": "rally",
         "x": 2,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
@@ -119715,14 +118670,12 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -119741,14 +118694,12 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
@@ -119768,9 +118719,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 11,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
@@ -119841,9 +118793,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 6,
     "health": 14,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
@@ -119914,9 +118867,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 7,
     "health": 17,
+    "attack": 7,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
@@ -120001,9 +118955,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 4,
     "health": 7,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "leech",
@@ -120045,7 +119000,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "pierce",
@@ -120068,15 +119022,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 6,
     "health": 9,
+    "attack": 6,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "pierce",
@@ -120111,7 +119065,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "pierce",
@@ -120134,15 +119087,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 7,
     "health": 14,
+    "attack": 7,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 1,
         "y": "3",
-        "z": 3,
       },
       {
         "id": "pierce",
@@ -120168,7 +119121,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "pierce",
@@ -120186,7 +119138,6 @@ var CARDS = {
             "id": "fervor",
             "x": 1,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "pierce",
@@ -120204,7 +119155,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
           {
             "id": "pierce",
@@ -120227,9 +119177,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 3,
     "health": 21,
+    "attack": 3,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -120317,9 +119268,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 3,
     "health": 29,
+    "attack": 3,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -120409,9 +119361,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 4,
     "health": 37,
+    "attack": 4,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -120512,9 +119465,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 7,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
@@ -120599,9 +119553,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 13,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
@@ -120690,9 +119645,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 7,
     "health": 18,
+    "attack": 7,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
@@ -120769,9 +119725,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 7,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -120846,9 +119803,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 5,
     "health": 12,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -120939,9 +119897,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 6,
     "health": 21,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -121029,9 +119988,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -121100,9 +120060,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 19,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -121173,9 +120134,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 22,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -121258,9 +120220,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 16,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
@@ -121270,7 +120233,6 @@ var CARDS = {
         "id": "rally",
         "x": 1,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "flurry",
@@ -121292,7 +120254,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "flurry",
@@ -121314,7 +120275,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "flurry",
@@ -121332,7 +120292,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "flurry",
@@ -121351,9 +120310,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 19,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
@@ -121363,7 +120323,6 @@ var CARDS = {
         "id": "rally",
         "x": 2,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "flurry",
@@ -121381,7 +120340,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "flurry",
@@ -121400,7 +120358,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "flurry",
@@ -121427,7 +120384,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "flurry",
@@ -121446,9 +120402,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 23,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
@@ -121459,7 +120416,6 @@ var CARDS = {
         "id": "rally",
         "x": 4,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "flurry",
@@ -121478,7 +120434,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "flurry",
@@ -121501,7 +120456,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "flurry",
@@ -121524,7 +120478,6 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "flurry",
@@ -121543,9 +120496,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 5,
     "health": 19,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -121555,14 +120509,12 @@ var CARDS = {
         "id": "heal",
         "x": 1,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
         "id": "rally",
         "x": 2,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -121584,14 +120536,12 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -121605,14 +120555,12 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -121626,14 +120574,12 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -121649,9 +120595,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 7,
     "health": 22,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -121661,14 +120608,12 @@ var CARDS = {
         "id": "heal",
         "x": 1,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
         "id": "rally",
         "x": 1,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
     ],
@@ -121684,14 +120629,12 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -121707,14 +120650,12 @@ var CARDS = {
             "id": "heal",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -121730,14 +120671,12 @@ var CARDS = {
             "id": "heal",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -121753,14 +120692,12 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -121776,14 +120713,12 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 4,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -121799,9 +120734,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["4"],
-    "attack": 8,
     "health": 36,
+    "attack": 8,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -121811,14 +120747,12 @@ var CARDS = {
         "id": "heal",
         "x": 5,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
       {
         "id": "rally",
         "x": 4,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
     ],
@@ -121838,14 +120772,12 @@ var CARDS = {
             "id": "heal",
             "x": 5,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 4,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -121860,14 +120792,12 @@ var CARDS = {
             "id": "heal",
             "x": 6,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 4,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -121882,14 +120812,12 @@ var CARDS = {
             "id": "heal",
             "x": 7,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 5,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -121904,14 +120832,12 @@ var CARDS = {
             "id": "heal",
             "x": 8,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
           {
             "id": "rally",
             "x": 6,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -121927,9 +120853,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 6,
     "health": 24,
+    "attack": 6,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -121943,7 +120870,6 @@ var CARDS = {
         "id": "rally",
         "x": 3,
         "y": "3",
-        "z": 3,
       },
     ],
     "upgrades": {
@@ -121970,7 +120896,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
           },
         ],
       },
@@ -121988,7 +120913,6 @@ var CARDS = {
             "id": "rally",
             "x": 1,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -122007,7 +120931,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -122023,9 +120946,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 7,
     "health": 26,
+    "attack": 7,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -122039,7 +120963,6 @@ var CARDS = {
         "id": "rally",
         "x": 2,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
     ],
@@ -122060,7 +120983,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -122080,7 +121002,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -122101,7 +121022,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -122121,7 +121041,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -122142,7 +121061,6 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -122158,9 +121076,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "attack": 11,
     "health": 32,
+    "attack": 11,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -122174,7 +121093,6 @@ var CARDS = {
         "id": "rally",
         "x": 5,
         "y": "3",
-        "z": 3,
         "all": "1",
       },
     ],
@@ -122194,7 +121112,6 @@ var CARDS = {
             "id": "rally",
             "x": 6,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -122214,7 +121131,6 @@ var CARDS = {
             "id": "rally",
             "x": 7,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -122235,7 +121151,6 @@ var CARDS = {
             "id": "rally",
             "x": 8,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -122255,7 +121170,6 @@ var CARDS = {
             "id": "rally",
             "x": 8,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -122275,7 +121189,6 @@ var CARDS = {
             "id": "rally",
             "x": 9,
             "y": "3",
-            "z": 3,
             "all": "1",
           },
         ],
@@ -122291,21 +121204,20 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 3,
     "health": 8,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "rally",
         "x": 1,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "jam",
@@ -122336,13 +121248,11 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "jam",
@@ -122361,21 +121271,20 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 4,
     "health": 13,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
         "x": 3,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "rally",
         "x": 2,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "jam",
@@ -122389,13 +121298,11 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "jam",
@@ -122410,13 +121317,11 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "jam",
@@ -122431,13 +121336,11 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "jam",
@@ -122452,13 +121355,11 @@ var CARDS = {
             "id": "protect",
             "x": 5,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "rally",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "jam",
@@ -122473,13 +121374,11 @@ var CARDS = {
             "id": "protect",
             "x": 5,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "rally",
             "x": 3,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
@@ -122499,21 +121398,20 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 5,
     "health": 17,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
         "x": 6,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "rally",
         "x": 3,
         "y": "1",
-        "z": 1,
         "all": "1",
       },
       {
@@ -122529,13 +121427,11 @@ var CARDS = {
             "id": "protect",
             "x": 7,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "rally",
             "x": 3,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
@@ -122552,13 +121448,11 @@ var CARDS = {
             "id": "protect",
             "x": 7,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "rally",
             "x": 3,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
@@ -122574,13 +121468,11 @@ var CARDS = {
             "id": "protect",
             "x": 7,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "rally",
             "x": 3,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
@@ -122596,13 +121488,11 @@ var CARDS = {
             "id": "protect",
             "x": 7,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "rally",
             "x": 4,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
@@ -122618,13 +121508,11 @@ var CARDS = {
             "id": "protect",
             "x": 8,
             "y": "1",
-            "z": 1,
           },
           {
             "id": "rally",
             "x": 4,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
@@ -122644,9 +121532,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 5,
     "health": 14,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -122656,14 +121545,12 @@ var CARDS = {
         "id": "protect",
         "x": 1,
         "y": "1",
-        "z": 1,
         "all": "1",
       },
       {
         "id": "heal",
         "x": 1,
         "y": "1",
-        "z": 1,
       },
     ],
     "upgrades": {
@@ -122689,14 +121576,12 @@ var CARDS = {
             "id": "protect",
             "x": 1,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
             "id": "heal",
             "x": 2,
             "y": "1",
-            "z": 1,
           },
         ],
       },
@@ -122710,14 +121595,12 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
             "id": "heal",
             "x": 2,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
         ],
@@ -122733,9 +121616,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 6,
     "health": 20,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -122745,14 +121629,12 @@ var CARDS = {
         "id": "protect",
         "x": 2,
         "y": "1",
-        "z": 1,
         "all": "1",
       },
       {
         "id": "heal",
         "x": 2,
         "y": "1",
-        "z": 1,
         "all": "1",
       },
     ],
@@ -122777,14 +121659,12 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
             "id": "heal",
             "x": 3,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
         ],
@@ -122799,14 +121679,12 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
             "id": "heal",
             "x": 3,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
         ],
@@ -122822,14 +121700,12 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
             "id": "heal",
             "x": 3,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
         ],
@@ -122845,9 +121721,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "attack": 7,
     "health": 29,
+    "attack": 7,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -122857,14 +121734,12 @@ var CARDS = {
         "id": "protect",
         "x": 3,
         "y": "1",
-        "z": 1,
         "all": "1",
       },
       {
         "id": "heal",
         "x": 4,
         "y": "1",
-        "z": 1,
         "all": "1",
       },
     ],
@@ -122883,14 +121758,12 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
             "id": "heal",
             "x": 4,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
         ],
@@ -122905,14 +121778,12 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
             "id": "heal",
             "x": 4,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
         ],
@@ -122927,14 +121798,12 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
             "id": "heal",
             "x": 5,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
         ],
@@ -122950,14 +121819,12 @@ var CARDS = {
             "id": "protect",
             "x": 5,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
           {
             "id": "heal",
             "x": 6,
             "y": "1",
-            "z": 1,
             "all": "1",
           },
         ],
@@ -122973,15 +121840,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 2,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "strike",
@@ -123001,7 +121868,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "strike",
@@ -123022,7 +121888,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "strike",
@@ -123043,7 +121908,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "strike",
@@ -123064,7 +121928,6 @@ var CARDS = {
             "id": "fervor",
             "x": 4,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "strike",
@@ -123084,7 +121947,6 @@ var CARDS = {
             "id": "fervor",
             "x": 4,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "strike",
@@ -123108,15 +121970,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 7,
     "health": 15,
+    "attack": 7,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 2,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "strike",
@@ -123147,7 +122009,6 @@ var CARDS = {
             "id": "fervor",
             "x": 2,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "strike",
@@ -123166,7 +122027,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "strike",
@@ -123190,15 +122050,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 8,
     "health": 23,
+    "attack": 8,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 3,
         "y": "2",
-        "z": 2,
       },
       {
         "id": "strike",
@@ -123221,7 +122081,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "strike",
@@ -123240,7 +122099,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "strike",
@@ -123259,7 +122117,6 @@ var CARDS = {
             "id": "fervor",
             "x": 4,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "strike",
@@ -123278,7 +122135,6 @@ var CARDS = {
             "id": "fervor",
             "x": 5,
             "y": "2",
-            "z": 2,
           },
           {
             "id": "strike",
@@ -123302,9 +122158,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 8,
+    "attack": 4,
     "cost": 0,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -123421,9 +122278,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 5,
     "health": 11,
+    "attack": 5,
     "cost": 0,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -123500,9 +122358,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 6,
     "health": 17,
+    "attack": 6,
     "cost": 0,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "enfeeble",
@@ -123607,9 +122466,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 14,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "pierce",
@@ -123708,9 +122568,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 19,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "pierce",
@@ -123809,9 +122670,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 6,
     "health": 23,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "pierce",
@@ -123911,9 +122773,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 5,
     "health": 21,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -123923,13 +122786,11 @@ var CARDS = {
         "id": "legion",
         "x": 3,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "fervor",
         "x": 2,
         "y": "7",
-        "z": 7,
       },
     ],
     "upgrades": {
@@ -123948,13 +122809,11 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "fervor",
             "x": 3,
             "y": "7",
-            "z": 7,
           },
         ],
       },
@@ -123973,13 +122832,11 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "fervor",
             "x": 3,
             "y": "7",
-            "z": 7,
           },
         ],
       },
@@ -123998,9 +122855,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 5,
     "health": 29,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -124010,13 +122868,11 @@ var CARDS = {
         "id": "legion",
         "x": 4,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "fervor",
         "x": 3,
         "y": "7",
-        "z": 7,
       },
     ],
     "upgrades": {
@@ -124035,13 +122891,11 @@ var CARDS = {
             "id": "legion",
             "x": 5,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "fervor",
             "x": 3,
             "y": "7",
-            "z": 7,
           },
         ],
       },
@@ -124056,13 +122910,11 @@ var CARDS = {
             "id": "legion",
             "x": 5,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "fervor",
             "x": 3,
             "y": "7",
-            "z": 7,
           },
         ],
       },
@@ -124081,13 +122933,11 @@ var CARDS = {
             "id": "legion",
             "x": 5,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "fervor",
             "x": 4,
             "y": "7",
-            "z": 7,
           },
         ],
       },
@@ -124102,9 +122952,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 6,
     "health": 34,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -124114,13 +122965,11 @@ var CARDS = {
         "id": "legion",
         "x": 6,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "fervor",
         "x": 4,
         "y": "7",
-        "z": 7,
       },
     ],
     "upgrades": {
@@ -124148,13 +122997,11 @@ var CARDS = {
             "id": "legion",
             "x": 7,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "fervor",
             "x": 4,
             "y": "7",
-            "z": 7,
           },
         ],
       },
@@ -124168,13 +123015,11 @@ var CARDS = {
             "id": "legion",
             "x": 7,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "fervor",
             "x": 5,
             "y": "7",
-            "z": 7,
           },
         ],
       },
@@ -124189,9 +123034,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 5,
     "health": 27,
+    "attack": 5,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -124281,9 +123127,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 5,
     "health": 35,
+    "attack": 5,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -124373,9 +123220,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 6,
     "health": 48,
+    "attack": 6,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -124479,9 +123327,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 14,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "burn",
@@ -124553,9 +123402,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 19,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "burn",
@@ -124627,9 +123477,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 5,
     "health": 23,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "burn",
@@ -124701,9 +123552,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 14,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "frost",
@@ -124765,9 +123617,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 5,
     "health": 22,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "frost",
@@ -124856,9 +123709,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 6,
     "health": 27,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "frost",
@@ -124933,9 +123787,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 1,
     "health": 1,
+    "attack": 1,
     "cost": 0,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "evade",
@@ -124982,9 +123837,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 1,
     "health": 1,
+    "attack": 1,
     "cost": 0,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "evade",
@@ -125031,9 +123887,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 1,
     "health": 1,
+    "attack": 1,
     "cost": 0,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "evade",
@@ -125081,9 +123938,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 20,
     "health": 40,
+    "attack": 20,
     "cost": 8,
+    "maxLevel": 6,
     "skill": [],
     "upgrades": {
       "2": {
@@ -125123,9 +123981,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 30,
     "health": 63,
+    "attack": 30,
     "cost": 8,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -125179,9 +124038,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 41,
     "health": 84,
+    "attack": 41,
     "cost": 8,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -125233,9 +124093,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 0,
     "health": 5,
+    "attack": 0,
     "cost": 0,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -125274,9 +124135,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 0,
     "health": 12,
+    "attack": 0,
     "cost": 0,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "evade",
@@ -125315,9 +124177,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 0,
     "health": 19,
+    "attack": 0,
     "cost": 0,
+    "maxLevel": 5,
     "skill": [
       {
         "id": "jam",
@@ -125352,15 +124215,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 4,
     "health": 10,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "legion",
         "x": 1,
         "y": "10",
-        "z": 10,
       },
       {
         "id": "berserk",
@@ -125388,15 +124251,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 5,
     "health": 14,
+    "attack": 5,
     "cost": 1,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "legion",
         "x": 1,
         "y": "10",
-        "z": 10,
       },
       {
         "id": "berserk",
@@ -125410,7 +124273,6 @@ var CARDS = {
             "id": "legion",
             "x": 2,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "berserk",
@@ -125434,15 +124296,15 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["10"],
-    "attack": 6,
     "health": 18,
+    "attack": 6,
     "cost": 1,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "legion",
         "x": 2,
         "y": "10",
-        "z": 10,
       },
       {
         "id": "berserk",
@@ -125457,7 +124319,6 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "berserk",
@@ -125472,7 +124333,6 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "10",
-            "z": 10,
           },
           {
             "id": "berserk",
@@ -125491,9 +124351,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["10"],
-    "attack": 4,
     "health": 9,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -125566,9 +124427,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["10"],
-    "attack": 6,
     "health": 14,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -125655,9 +124517,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["10"],
-    "attack": 7,
     "health": 22,
+    "attack": 7,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -125744,9 +124607,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 13,
+    "attack": 3,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
@@ -125833,9 +124697,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 21,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
@@ -125935,9 +124800,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 6,
     "health": 30,
+    "attack": 6,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
@@ -126037,9 +124903,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 2,
     "health": 6,
+    "attack": 2,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
@@ -126102,9 +124969,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 3,
     "health": 12,
+    "attack": 3,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
@@ -126196,9 +125064,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 4,
     "health": 18,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
@@ -126279,9 +125148,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 3,
     "health": 9,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
@@ -126358,9 +125228,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 4,
     "health": 15,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
@@ -126438,9 +125309,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["4"],
-    "attack": 6,
     "health": 23,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
@@ -126532,9 +125404,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 3,
     "health": 18,
+    "attack": 3,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -126646,9 +125519,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 3,
     "health": 29,
+    "attack": 3,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -126760,9 +125634,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["11"],
-    "attack": 3,
     "health": 43,
+    "attack": 3,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -126874,9 +125749,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 0,
     "health": 1,
+    "attack": 0,
     "cost": 4,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "counter",
@@ -126903,9 +125779,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 0,
     "health": 3,
+    "attack": 0,
     "cost": 4,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "counter",
@@ -126932,9 +125809,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "attack": 0,
     "health": 5,
+    "attack": 0,
     "cost": 4,
+    "maxLevel": 3,
     "skill": [
       {
         "id": "counter",
@@ -126961,9 +125839,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 6,
     "health": 10,
+    "attack": 6,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "pierce",
@@ -127077,9 +125956,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 7,
     "health": 34,
+    "attack": 7,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -127193,22 +126073,21 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 4,
     "health": 18,
+    "attack": 4,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "protect",
         "x": 2,
         "y": "7",
-        "z": 7,
         "all": "1",
       },
       {
         "id": "fervor",
         "x": 3,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "enfeeble",
@@ -127224,14 +126103,12 @@ var CARDS = {
             "id": "protect",
             "x": 2,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
             "id": "fervor",
             "x": 3,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -127247,14 +126124,12 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
             "id": "fervor",
             "x": 4,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -127270,14 +126145,12 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
             "id": "fervor",
             "x": 4,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -127294,14 +126167,12 @@ var CARDS = {
             "id": "protect",
             "x": 3,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
             "id": "fervor",
             "x": 5,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -127317,14 +126188,12 @@ var CARDS = {
             "id": "protect",
             "x": 4,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
             "id": "fervor",
             "x": 5,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "enfeeble",
@@ -127344,15 +126213,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["7"],
-    "attack": 3,
     "health": 20,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "legion",
         "x": 2,
         "y": "7",
-        "z": 7,
       },
       {
         "id": "strike",
@@ -127372,7 +126241,6 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "strike",
@@ -127392,7 +126260,6 @@ var CARDS = {
             "id": "legion",
             "x": 3,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "strike",
@@ -127412,7 +126279,6 @@ var CARDS = {
             "id": "legion",
             "x": 4,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "strike",
@@ -127433,7 +126299,6 @@ var CARDS = {
             "id": "legion",
             "x": 4,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "strike",
@@ -127453,7 +126318,6 @@ var CARDS = {
             "id": "legion",
             "x": 5,
             "y": "7",
-            "z": 7,
           },
           {
             "id": "strike",
@@ -127477,9 +126341,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["7","6"],
-    "attack": 5,
     "health": 19,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -127489,14 +126354,12 @@ var CARDS = {
         "id": "rally",
         "x": 2,
         "y": "7",
-        "z": 7,
         "all": "1",
       },
       {
         "id": "heal",
         "x": 2,
         "y": "7",
-        "z": 7,
         "all": "1",
       },
     ],
@@ -127512,14 +126375,12 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
             "id": "heal",
             "x": 3,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
         ],
@@ -127536,14 +126397,12 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
             "id": "heal",
             "x": 3,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
         ],
@@ -127559,14 +126418,12 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
             "id": "heal",
             "x": 4,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
         ],
@@ -127583,14 +126440,12 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
             "id": "heal",
             "x": 4,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
         ],
@@ -127606,14 +126461,12 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
           {
             "id": "heal",
             "x": 5,
             "y": "7",
-            "z": 7,
             "all": "1",
           },
         ],
@@ -127629,9 +126482,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["7"],
-    "attack": 6,
     "health": 11,
+    "attack": 6,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "jam",
@@ -127748,9 +126602,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 15,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -127760,7 +126615,6 @@ var CARDS = {
         "id": "rally",
         "x": 6,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "burn",
@@ -127779,7 +126633,6 @@ var CARDS = {
             "id": "rally",
             "x": 7,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "burn",
@@ -127798,7 +126651,6 @@ var CARDS = {
             "id": "rally",
             "x": 7,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "burn",
@@ -127817,7 +126669,6 @@ var CARDS = {
             "id": "rally",
             "x": 7,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "burn",
@@ -127836,7 +126687,6 @@ var CARDS = {
             "id": "rally",
             "x": 8,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "burn",
@@ -127855,7 +126705,6 @@ var CARDS = {
             "id": "rally",
             "x": 8,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "burn",
@@ -127874,22 +126723,21 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["5"],
-    "attack": 6,
     "health": 22,
+    "attack": 6,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
         "x": 3,
         "y": "5",
-        "z": 5,
         "all": "1",
       },
       {
         "id": "protect",
         "x": 3,
         "y": "5",
-        "z": 5,
         "all": "1",
       },
       {
@@ -127914,14 +126762,12 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 3,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -127937,14 +126783,12 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 3,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -127960,14 +126804,12 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 4,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -127987,15 +126829,15 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 1,
     "health": 15,
+    "attack": 1,
     "cost": 0,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "fervor",
         "x": 3,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "pierce",
@@ -128014,7 +126856,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "pierce",
@@ -128038,7 +126879,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "pierce",
@@ -128057,7 +126897,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "pierce",
@@ -128076,7 +126915,6 @@ var CARDS = {
             "id": "fervor",
             "x": 3,
             "y": "5",
-            "z": 5,
           },
           {
             "id": "pierce",
@@ -128099,9 +126937,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["5"],
-    "attack": 9,
     "health": 33,
+    "attack": 9,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "corrosive",
@@ -128196,9 +127035,10 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 4,
     "health": 33,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "corrosive",
@@ -128285,15 +127125,15 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["5"],
-    "attack": 5,
     "health": 24,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "5",
-        "z": 5,
       },
       {
         "id": "jam",
@@ -128312,7 +127152,6 @@ var CARDS = {
             "id": "rally",
             "x": 2,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -128337,7 +127176,6 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -128362,7 +127200,6 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "5",
-            "z": 5,
             "all": "1",
           },
           {
@@ -128386,9 +127223,10 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 18,
+    "attack": 4,
     "cost": 1,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -128488,21 +127326,20 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 22,
+    "attack": 5,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 3,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "rally",
         "x": 3,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "nullify",
@@ -128517,13 +127354,11 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "rally",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "nullify",
@@ -128538,13 +127373,11 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "rally",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "nullify",
@@ -128559,13 +127392,11 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "rally",
             "x": 5,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "nullify",
@@ -128581,13 +127412,11 @@ var CARDS = {
             "id": "rally",
             "x": 6,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "rally",
             "x": 5,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "nullify",
@@ -128602,13 +127431,11 @@ var CARDS = {
             "id": "rally",
             "x": 6,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "rally",
             "x": 6,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "nullify",
@@ -128627,9 +127454,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 13,
+    "attack": 5,
     "cost": 0,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "evade",
@@ -128742,9 +127570,10 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
-    "attack": 5,
     "health": 36,
+    "attack": 5,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "counter",
@@ -128850,22 +127679,21 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 4,
     "health": 30,
+    "attack": 4,
     "cost": 3,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "heal",
         "x": 2,
         "y": "9",
-        "z": 9,
         "all": "1",
       },
       {
         "id": "protect",
         "x": 3,
         "y": "9",
-        "z": 9,
         "all": "1",
       },
       {
@@ -128882,14 +127710,12 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 3,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -128906,14 +127732,12 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 4,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -128931,14 +127755,12 @@ var CARDS = {
             "id": "heal",
             "x": 3,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 4,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -128955,14 +127777,12 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 4,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -128979,14 +127799,12 @@ var CARDS = {
             "id": "heal",
             "x": 4,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
             "id": "protect",
             "x": 5,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
@@ -129007,28 +127825,26 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": ["9"],
-    "attack": 3,
     "health": 26,
+    "attack": 3,
     "cost": 2,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "rally",
         "x": 2,
         "y": "9",
-        "z": 9,
         "all": "1",
       },
       {
         "id": "legion",
         "x": 3,
         "y": "9",
-        "z": 9,
       },
       {
         "id": "fervor",
         "x": 3,
         "y": "9",
-        "z": 9,
       },
     ],
     "upgrades": {
@@ -129039,20 +127855,17 @@ var CARDS = {
             "id": "rally",
             "x": 3,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
             "id": "legion",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "fervor",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -129068,20 +127881,17 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
             "id": "legion",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "fervor",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -129092,20 +127902,17 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
             "id": "legion",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "fervor",
             "x": 3,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -129116,20 +127923,17 @@ var CARDS = {
             "id": "rally",
             "x": 4,
             "y": "9",
-            "z": 9,
             "all": "1",
           },
           {
             "id": "legion",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
           {
             "id": "fervor",
             "x": 4,
             "y": "9",
-            "z": 9,
           },
         ],
       },
@@ -129144,9 +127948,10 @@ var CARDS = {
     "card_type": "2",
     "type": "8",
     "sub_type": [],
-    "attack": 1,
     "health": 1,
+    "attack": 1,
     "cost": 0,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -129254,9 +128059,10 @@ var CARDS = {
     "card_type": "2",
     "type": "8",
     "sub_type": [],
-    "attack": 5,
     "health": 18,
+    "attack": 5,
     "cost": 4,
+    "maxLevel": 6,
     "skill": [
       {
         "id": "armored",
@@ -129266,7 +128072,6 @@ var CARDS = {
         "id": "heal",
         "x": 1,
         "y": "1",
-        "z": 1,
       },
       {
         "id": "taunt",
@@ -129346,9 +128151,10 @@ var CARDS = {
     "card_type": "2",
     "type": "0",
     "sub_type": [],
-    "attack": -1,
     "health": -1,
+    "attack": -1,
     "cost": -1,
+    "maxLevel": 1,
     "skill": [],
     "upgrades": {}
   },
@@ -129360,9 +128166,10 @@ var CARDS = {
     "card_type": "2",
     "type": "0",
     "sub_type": [],
-    "attack": -1,
     "health": -1,
+    "attack": -1,
     "cost": -1,
+    "maxLevel": 1,
     "skill": [],
     "upgrades": {}
   },
@@ -129374,9 +128181,10 @@ var CARDS = {
     "card_type": "2",
     "type": "0",
     "sub_type": [],
-    "attack": -1,
     "health": -1,
+    "attack": -1,
     "cost": -1,
+    "maxLevel": 1,
     "skill": [],
     "upgrades": {}
   },
@@ -129388,9 +128196,10 @@ var CARDS = {
     "card_type": "2",
     "type": "0",
     "sub_type": [],
-    "attack": -1,
     "health": -1,
+    "attack": -1,
     "cost": -1,
+    "maxLevel": 1,
     "skill": [],
     "upgrades": {}
   },
@@ -129402,9 +128211,10 @@ var CARDS = {
     "card_type": "2",
     "type": "0",
     "sub_type": [],
-    "attack": -1,
     "health": -1,
+    "attack": -1,
     "cost": -1,
+    "maxLevel": 1,
     "skill": [],
     "upgrades": {}
   },
@@ -129416,9 +128226,10 @@ var CARDS = {
     "card_type": "2",
     "type": "0",
     "sub_type": [],
-    "attack": -1,
     "health": -1,
+    "attack": -1,
     "cost": -1,
+    "maxLevel": 1,
     "skill": [],
     "upgrades": {}
   },
@@ -129430,9 +128241,10 @@ var CARDS = {
     "card_type": "2",
     "type": "0",
     "sub_type": [],
-    "attack": -1,
     "health": -1,
+    "attack": -1,
     "cost": -1,
+    "maxLevel": 1,
     "skill": [],
     "upgrades": {}
   },
@@ -129444,9 +128256,10 @@ var CARDS = {
     "card_type": "2",
     "type": "0",
     "sub_type": [],
-    "attack": -1,
     "health": -1,
+    "attack": -1,
     "cost": -1,
+    "maxLevel": 1,
     "skill": [],
     "upgrades": {}
   },
@@ -129458,9 +128271,10 @@ var CARDS = {
     "card_type": "2",
     "type": "0",
     "sub_type": [],
-    "attack": -1,
     "health": -1,
+    "attack": -1,
     "cost": -1,
+    "maxLevel": 1,
     "skill": [],
     "upgrades": {}
   },
@@ -129472,9 +128286,10 @@ var CARDS = {
     "card_type": "2",
     "type": "0",
     "sub_type": [],
-    "attack": -1,
     "health": -1,
+    "attack": -1,
     "cost": -1,
+    "maxLevel": 1,
     "skill": [],
     "upgrades": {}
   },
@@ -129486,9 +128301,10 @@ var CARDS = {
     "card_type": "2",
     "type": "0",
     "sub_type": [],
-    "attack": -1,
     "health": -1,
+    "attack": -1,
     "cost": -1,
+    "maxLevel": 1,
     "skill": [],
     "upgrades": {}
   },
@@ -129500,9 +128316,10 @@ var CARDS = {
     "card_type": "2",
     "type": "0",
     "sub_type": [],
-    "attack": -1,
     "health": -1,
+    "attack": -1,
     "cost": -1,
+    "maxLevel": 1,
     "skill": [],
     "upgrades": {}
   },
@@ -129514,9 +128331,10 @@ var CARDS = {
     "card_type": "2",
     "type": "0",
     "sub_type": [],
-    "attack": -1,
     "health": -1,
+    "attack": -1,
     "cost": -1,
+    "maxLevel": 1,
     "skill": [],
     "upgrades": {}
   },
@@ -129528,9 +128346,10 @@ var CARDS = {
     "card_type": "2",
     "type": "0",
     "sub_type": [],
-    "attack": -1,
     "health": -1,
+    "attack": -1,
     "cost": -1,
+    "maxLevel": 1,
     "skill": [],
     "upgrades": {}
   },
@@ -129542,9 +128361,10 @@ var CARDS = {
     "card_type": "2",
     "type": "0",
     "sub_type": [],
-    "attack": -1,
     "health": -1,
+    "attack": -1,
     "cost": -1,
+    "maxLevel": 1,
     "skill": [],
     "upgrades": {}
   },
@@ -129556,9 +128376,10 @@ var CARDS = {
     "card_type": "2",
     "type": "0",
     "sub_type": [],
-    "attack": -1,
     "health": -1,
+    "attack": -1,
     "cost": -1,
+    "maxLevel": 1,
     "skill": [],
     "upgrades": {}
   },
@@ -129570,9 +128391,10 @@ var CARDS = {
     "card_type": "2",
     "type": "0",
     "sub_type": [],
-    "attack": -1,
     "health": -1,
+    "attack": -1,
     "cost": -1,
+    "maxLevel": 1,
     "skill": [],
     "upgrades": {}
   },
@@ -129584,9 +128406,10 @@ var CARDS = {
     "card_type": "2",
     "type": "0",
     "sub_type": [],
-    "attack": -1,
     "health": -1,
+    "attack": -1,
     "cost": -1,
+    "maxLevel": 1,
     "skill": [],
     "upgrades": {}
   },
@@ -129598,9 +128421,10 @@ var CARDS = {
     "card_type": "2",
     "type": "0",
     "sub_type": [],
-    "attack": -1,
     "health": -1,
+    "attack": -1,
     "cost": -1,
+    "maxLevel": 1,
     "skill": [],
     "upgrades": {}
   },
