@@ -13021,8 +13021,8 @@
     <upgrade>
       <level>6</level>
       <skill id="armored" x="2" />
-      <skill id="rally" x="1" all="1" y="12" />
       <skill id="rally" x="3" y="12" />
+      <skill id="rally" x="1" all="1" y="12" />
     </upgrade>
   </unit>
   <unit>
@@ -13038,8 +13038,8 @@
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="armored" x="2" />
-    <skill id="rally" x="1" all="1" y="12" />
     <skill id="rally" x="4" y="12" />
+    <skill id="rally" x="1" all="1" y="12" />
     <type>1</type>
     <sub_type>12</sub_type>
     <set>3000</set>
@@ -13055,20 +13055,20 @@
       <level>4</level>
       <health>21</health>
       <skill id="armored" x="3" />
-      <skill id="rally" x="1" all="1" y="12" />
       <skill id="rally" x="4" y="12" />
+      <skill id="rally" x="1" all="1" y="12" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="armored" x="3" />
-      <skill id="rally" x="2" all="1" y="12" />
       <skill id="rally" x="4" y="12" />
+      <skill id="rally" x="2" all="1" y="12" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <skill id="armored" x="3" />
-      <skill id="rally" x="2" all="1" y="12" />
       <skill id="rally" x="5" y="12" />
+      <skill id="rally" x="2" all="1" y="12" />
     </upgrade>
   </unit>
   <unit>
@@ -13084,8 +13084,8 @@
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="armored" x="3" />
-    <skill id="rally" x="2" all="1" y="12" />
     <skill id="rally" x="5" y="12" />
+    <skill id="rally" x="2" all="1" y="12" />
     <type>1</type>
     <sub_type>12</sub_type>
     <set>3000</set>
@@ -13104,14 +13104,132 @@
     <upgrade>
       <level>5</level>
       <skill id="armored" x="4" />
-      <skill id="rally" x="2" all="1" y="12" />
       <skill id="rally" x="5" y="12" />
+      <skill id="rally" x="2" all="1" y="12" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <skill id="armored" x="4" />
-      <skill id="rally" x="3" all="1" y="12" />
       <skill id="rally" x="6" y="12" />
+      <skill id="rally" x="3" all="1" y="12" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5107</id>
+    <card_type>2</card_type>
+    <name>Thrumming Beacon</name>
+    <picture>Guardian_Dolphin_A</picture>
+    <asset_bundle>83</asset_bundle>
+    <hidden_until_time>1511110800</hidden_until_time>
+    <attack>3</attack>
+    <health>8</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="rally" x="1" y="12" />
+    <skill id="protect" x="1" y="12" />
+    <skill id="jam" c="7" />
+    <type>1</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="rally" x="1" y="12" />
+      <skill id="protect" x="1" y="12" />
+      <skill id="jam" c="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>10</health>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="rally" x="1" y="12" />
+      <skill id="protect" x="2" y="12" />
+      <skill id="jam" c="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15107</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Reverberating Beacon</name>
+    <picture>Guardian_Dolphin_A</picture>
+    <asset_bundle>83</asset_bundle>
+    <hidden_until_time>1511110800</hidden_until_time>
+    <attack>4</attack>
+    <health>10</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="rally" x="1" y="12" />
+    <skill id="protect" x="2" y="12" />
+    <skill id="jam" c="5" />
+    <type>1</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>11</health>
+      <skill id="rally" x="2" y="12" />
+      <skill id="protect" x="2" y="12" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>5</attack>
+      <skill id="rally" x="2" y="12" />
+      <skill id="protect" x="3" y="12" />
+      <skill id="jam" c="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25107</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Aided Beacon</name>
+    <picture>Guardian_Dolphin_B</picture>
+    <asset_bundle>83</asset_bundle>
+    <hidden_until_time>1511110800</hidden_until_time>
+    <attack>5</attack>
+    <health>13</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="rally" x="2" y="12" />
+    <skill id="protect" x="3" y="12" />
+    <skill id="jam" c="4" />
+    <type>1</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>15</health>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="rally" x="3" y="12" />
+      <skill id="protect" x="4" y="12" />
+      <skill id="jam" c="4" />
     </upgrade>
   </unit>
 </root>

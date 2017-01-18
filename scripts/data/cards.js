@@ -39436,14 +39436,14 @@ var CARDS = {
           },
           {
             "id": "rally",
-            "x": 1,
+            "x": 3,
             "y": "12",
-            "all": "1",
           },
           {
             "id": "rally",
-            "x": 3,
+            "x": 1,
             "y": "12",
+            "all": "1",
           },
         ],
       },
@@ -39470,14 +39470,14 @@ var CARDS = {
       },
       {
         "id": "rally",
-        "x": 1,
+        "x": 4,
         "y": "12",
-        "all": "1",
       },
       {
         "id": "rally",
-        "x": 4,
+        "x": 1,
         "y": "12",
+        "all": "1",
       },
     ],
     "upgrades": {
@@ -39498,14 +39498,14 @@ var CARDS = {
           },
           {
             "id": "rally",
-            "x": 1,
+            "x": 4,
             "y": "12",
-            "all": "1",
           },
           {
             "id": "rally",
-            "x": 4,
+            "x": 1,
             "y": "12",
+            "all": "1",
           },
         ],
       },
@@ -39517,14 +39517,14 @@ var CARDS = {
           },
           {
             "id": "rally",
-            "x": 2,
+            "x": 4,
             "y": "12",
-            "all": "1",
           },
           {
             "id": "rally",
-            "x": 4,
+            "x": 2,
             "y": "12",
+            "all": "1",
           },
         ],
       },
@@ -39536,14 +39536,14 @@ var CARDS = {
           },
           {
             "id": "rally",
-            "x": 2,
+            "x": 5,
             "y": "12",
-            "all": "1",
           },
           {
             "id": "rally",
-            "x": 5,
+            "x": 2,
             "y": "12",
+            "all": "1",
           },
         ],
       },
@@ -39570,14 +39570,14 @@ var CARDS = {
       },
       {
         "id": "rally",
-        "x": 2,
+        "x": 5,
         "y": "12",
-        "all": "1",
       },
       {
         "id": "rally",
-        "x": 5,
+        "x": 2,
         "y": "12",
+        "all": "1",
       },
     ],
     "upgrades": {
@@ -39601,14 +39601,14 @@ var CARDS = {
           },
           {
             "id": "rally",
-            "x": 2,
+            "x": 5,
             "y": "12",
-            "all": "1",
           },
           {
             "id": "rally",
-            "x": 5,
+            "x": 2,
             "y": "12",
+            "all": "1",
           },
         ],
       },
@@ -39620,14 +39620,235 @@ var CARDS = {
           },
           {
             "id": "rally",
+            "x": 6,
+            "y": "12",
+          },
+          {
+            "id": "rally",
             "x": 3,
             "y": "12",
             "all": "1",
           },
+        ],
+      },
+    }
+  },
+  "5107": {
+    "id": "5107",
+    "name": "Thrumming Beacon",
+    "picture": "NotFound",
+    "hidden_until": "1511110800000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["12"],
+    "health": 8,
+    "attack": 3,
+    "cost": 1,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 1,
+        "y": "12",
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "y": "12",
+      },
+      {
+        "id": "jam",
+        "c": 7,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
           {
             "id": "rally",
-            "x": 6,
+            "x": 1,
             "y": "12",
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "y": "12",
+          },
+          {
+            "id": "jam",
+            "c": 6,
+          },
+        ],
+      },
+      "3": {
+        "health": 9,
+        "skill": [],
+      },
+      "4": {
+        "attack": 4,
+        "health": 10,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 1,
+            "y": "12",
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "12",
+          },
+          {
+            "id": "jam",
+            "c": 6,
+          },
+        ],
+      },
+    }
+  },
+  "15107": {
+    "id": "15107",
+    "name": "Reverberating Beacon",
+    "picture": "NotFound",
+    "hidden_until": "1511110800000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["12"],
+    "health": 10,
+    "attack": 4,
+    "cost": 1,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 1,
+        "y": "12",
+      },
+      {
+        "id": "protect",
+        "x": 2,
+        "y": "12",
+      },
+      {
+        "id": "jam",
+        "c": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 11,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "12",
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "12",
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+      "3": {
+        "health": 12,
+        "skill": [],
+      },
+      "4": {
+        "health": 13,
+        "skill": [],
+      },
+      "5": {
+        "attack": 5,
+        "skill": [
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "12",
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "12",
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+        ],
+      },
+    }
+  },
+  "25107": {
+    "id": "25107",
+    "name": "Aided Beacon",
+    "picture": "NotFound",
+    "hidden_until": "1511110800000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["12"],
+    "health": 13,
+    "attack": 5,
+    "cost": 1,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "12",
+      },
+      {
+        "id": "protect",
+        "x": 3,
+        "y": "12",
+      },
+      {
+        "id": "jam",
+        "c": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "attack": 6,
+        "health": 15,
+        "skill": [],
+      },
+      "4": {
+        "health": 16,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "12",
+          },
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "12",
+          },
+          {
+            "id": "jam",
+            "c": 4,
           },
         ],
       },
@@ -63338,6 +63559,226 @@ var CARDS = {
           {
             "id": "berserk",
             "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "6107": {
+    "id": "6107",
+    "name": "Great Lava Crab",
+    "picture": "NotFound",
+    "hidden_until": "1511110800000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["12"],
+    "health": 12,
+    "attack": 6,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 3,
+      },
+      {
+        "id": "enfeeble",
+        "x": 1,
+      },
+      {
+        "id": "burn",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 13,
+        "skill": [],
+      },
+      "3": {
+        "attack": 7,
+        "skill": [],
+      },
+      "4": {
+        "health": 14,
+        "skill": [],
+      },
+      "5": {
+        "health": 15,
+        "skill": [],
+      },
+      "6": {
+        "attack": 8,
+        "health": 16,
+        "skill": [],
+      },
+    }
+  },
+  "16107": {
+    "id": "16107",
+    "name": "Bull Lava Crab",
+    "picture": "NotFound",
+    "hidden_until": "1511110800000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["12"],
+    "health": 17,
+    "attack": 8,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 3,
+      },
+      {
+        "id": "enfeeble",
+        "x": 1,
+      },
+      {
+        "id": "burn",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 4,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+        ],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 4,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "attack": 9,
+        "health": 18,
+        "skill": [],
+      },
+      "5": {
+        "health": 19,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 4,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "26107": {
+    "id": "26107",
+    "name": "King Lava Crab",
+    "picture": "NotFound",
+    "hidden_until": "1511110800000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["12"],
+    "health": 19,
+    "attack": 10,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 4,
+      },
+      {
+        "id": "enfeeble",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "burn",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 11,
+        "health": 20,
+        "skill": [],
+      },
+      "3": {
+        "health": 21,
+        "skill": [],
+      },
+      "4": {
+        "health": 22,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 5,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 5,
+          },
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "burn",
+            "x": 3,
           },
         ],
       },
@@ -88301,6 +88742,195 @@ var CARDS = {
           {
             "id": "jam",
             "c": 3,
+          },
+        ],
+      },
+    }
+  },
+  "7107": {
+    "id": "7107",
+    "name": "Hammer Krab",
+    "picture": "NotFound",
+    "hidden_until": "1511110800000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["12"],
+    "health": 12,
+    "attack": 4,
+    "cost": 2,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "corrosive",
+        "x": 1,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 13,
+        "skill": [],
+      },
+      "3": {
+        "attack": 5,
+        "skill": [],
+      },
+      "4": {
+        "health": 14,
+        "skill": [],
+      },
+      "5": {
+        "health": 15,
+        "skill": [],
+      },
+    }
+  },
+  "17107": {
+    "id": "17107",
+    "name": "Mallet Krab",
+    "picture": "NotFound",
+    "hidden_until": "1511110800000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["12"],
+    "health": 15,
+    "attack": 6,
+    "cost": 2,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 3,
+      },
+      {
+        "id": "corrosive",
+        "x": 1,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "corrosive",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "corrosive",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "health": 16,
+        "skill": [],
+      },
+      "5": {
+        "health": 17,
+        "skill": [],
+      },
+    }
+  },
+  "27107": {
+    "id": "27107",
+    "name": "Klubber Krab",
+    "picture": "NotFound",
+    "hidden_until": "1511110800000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["12"],
+    "health": 18,
+    "attack": 7,
+    "cost": 2,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 3,
+      },
+      {
+        "id": "corrosive",
+        "x": 2,
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 8,
+        "skill": [],
+      },
+      "3": {
+        "health": 19,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "corrosive",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "corrosive",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
           },
         ],
       },

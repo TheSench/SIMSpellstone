@@ -3876,6 +3876,43 @@
     <find_item id="3048" drop_per_energy=".2" />
     <find_item id="2522" drop_per_energy=".04" />
   </campaign>
+  <campaign>
+    <id>1110</id>
+    <name>The Guardian</name>
+    <!-- <icon id='sparkler60' bundle='58' /> -->
+    <locked_start_time>1485450000</locked_start_time>
+    <!-- Thu, 26 Jan 2017 17:00:00 GMT -->
+    <battleground_id>2002</battleground_id>
+    <location_id>7</location_id>
+    <x>285</x>
+    <y>405</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5455</mission_id>
+      <mission_id>5456</mission_id>
+      <mission_id>5457</mission_id>
+      <mission_id>5458</mission_id>
+      <mission_id>5459</mission_id>
+      <mission_id>5460</mission_id>
+      <mission_id>5461</mission_id>
+      <mission_id>5462</mission_id>
+      <mission_id>5463</mission_id>
+      <mission_id>5464</mission_id>
+      <mission_id>5465</mission_id>
+      <mission_id>5466</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2078" />
+      <card level="5" id="512" />
+      <card level="6" id="512" />
+      <card level="7" id="2079" />
+    </rewards>
+    <find_item id="3048" drop_per_energy=".4" />
+    <find_item id="2522" drop_per_energy=".04" />
+  </campaign>
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
   <!-- ============================ -->

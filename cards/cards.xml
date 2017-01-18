@@ -25619,8 +25619,8 @@
     <upgrade>
       <level>6</level>
       <skill id="armored" x="2" />
-      <skill id="rally" x="1" all="1" y="12" />
       <skill id="rally" x="3" y="12" />
+      <skill id="rally" x="1" all="1" y="12" />
     </upgrade>
   </unit>
   <unit>
@@ -25636,8 +25636,8 @@
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="armored" x="2" />
-    <skill id="rally" x="1" all="1" y="12" />
     <skill id="rally" x="4" y="12" />
+    <skill id="rally" x="1" all="1" y="12" />
     <type>1</type>
     <sub_type>12</sub_type>
     <set>3000</set>
@@ -25653,20 +25653,20 @@
       <level>4</level>
       <health>21</health>
       <skill id="armored" x="3" />
-      <skill id="rally" x="1" all="1" y="12" />
       <skill id="rally" x="4" y="12" />
+      <skill id="rally" x="1" all="1" y="12" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="armored" x="3" />
-      <skill id="rally" x="2" all="1" y="12" />
       <skill id="rally" x="4" y="12" />
+      <skill id="rally" x="2" all="1" y="12" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <skill id="armored" x="3" />
-      <skill id="rally" x="2" all="1" y="12" />
       <skill id="rally" x="5" y="12" />
+      <skill id="rally" x="2" all="1" y="12" />
     </upgrade>
   </unit>
   <unit>
@@ -25682,8 +25682,8 @@
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="armored" x="3" />
-    <skill id="rally" x="2" all="1" y="12" />
     <skill id="rally" x="5" y="12" />
+    <skill id="rally" x="2" all="1" y="12" />
     <type>1</type>
     <sub_type>12</sub_type>
     <set>3000</set>
@@ -25702,14 +25702,132 @@
     <upgrade>
       <level>5</level>
       <skill id="armored" x="4" />
-      <skill id="rally" x="2" all="1" y="12" />
       <skill id="rally" x="5" y="12" />
+      <skill id="rally" x="2" all="1" y="12" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <skill id="armored" x="4" />
-      <skill id="rally" x="3" all="1" y="12" />
       <skill id="rally" x="6" y="12" />
+      <skill id="rally" x="3" all="1" y="12" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5107</id>
+    <card_type>2</card_type>
+    <name>Thrumming Beacon</name>
+    <picture>Guardian_Dolphin_A</picture>
+    <asset_bundle>83</asset_bundle>
+    <hidden_until_time>1511110800</hidden_until_time>
+    <attack>3</attack>
+    <health>8</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="rally" x="1" y="12" />
+    <skill id="protect" x="1" y="12" />
+    <skill id="jam" c="7" />
+    <type>1</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="rally" x="1" y="12" />
+      <skill id="protect" x="1" y="12" />
+      <skill id="jam" c="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>10</health>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="rally" x="1" y="12" />
+      <skill id="protect" x="2" y="12" />
+      <skill id="jam" c="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15107</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Reverberating Beacon</name>
+    <picture>Guardian_Dolphin_A</picture>
+    <asset_bundle>83</asset_bundle>
+    <hidden_until_time>1511110800</hidden_until_time>
+    <attack>4</attack>
+    <health>10</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="rally" x="1" y="12" />
+    <skill id="protect" x="2" y="12" />
+    <skill id="jam" c="5" />
+    <type>1</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>11</health>
+      <skill id="rally" x="2" y="12" />
+      <skill id="protect" x="2" y="12" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>5</attack>
+      <skill id="rally" x="2" y="12" />
+      <skill id="protect" x="3" y="12" />
+      <skill id="jam" c="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25107</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Aided Beacon</name>
+    <picture>Guardian_Dolphin_B</picture>
+    <asset_bundle>83</asset_bundle>
+    <hidden_until_time>1511110800</hidden_until_time>
+    <attack>5</attack>
+    <health>13</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="rally" x="2" y="12" />
+    <skill id="protect" x="3" y="12" />
+    <skill id="jam" c="4" />
+    <type>1</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>15</health>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="rally" x="3" y="12" />
+      <skill id="protect" x="4" y="12" />
+      <skill id="jam" c="4" />
     </upgrade>
   </unit>
   <!-- Chaos Premium Begin -->
@@ -38735,6 +38853,135 @@
       <skill id="fervor" x="5" y="4" />
       <skill id="nullify" x="3" />
       <skill id="berserk" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6107</id>
+    <card_type>2</card_type>
+    <name>Great Lava Crab</name>
+    <picture>Big_Lava_Crab_A</picture>
+    <asset_bundle>83</asset_bundle>
+    <hidden_until_time>1511110800</hidden_until_time>
+    <attack>6</attack>
+    <health>12</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="3" />
+    <skill id="enfeeble" x="1" />
+    <skill id="burn" x="1" />
+    <type>2</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>8</attack>
+      <health>16</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16107</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Bull Lava Crab</name>
+    <picture>Big_Lava_Crab_A</picture>
+    <asset_bundle>83</asset_bundle>
+    <hidden_until_time>1511110800</hidden_until_time>
+    <attack>8</attack>
+    <health>17</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="3" />
+    <skill id="enfeeble" x="1" />
+    <skill id="burn" x="1" />
+    <type>2</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="counter" x="4" />
+      <skill id="enfeeble" x="1" />
+      <skill id="burn" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="counter" x="4" />
+      <skill id="enfeeble" x="1" />
+      <skill id="burn" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>9</attack>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counter" x="4" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="burn" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26107</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>King Lava Crab</name>
+    <picture>Big_Lava_Crab_B</picture>
+    <asset_bundle>83</asset_bundle>
+    <hidden_until_time>1511110800</hidden_until_time>
+    <attack>10</attack>
+    <health>19</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="4" />
+    <skill id="enfeeble" x="1" all="1" />
+    <skill id="burn" x="2" />
+    <type>2</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>20</health>
+      <attack>11</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="5" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="burn" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counter" x="5" />
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="burn" x="3" />
     </upgrade>
   </unit>
   <unit>
@@ -52017,6 +52264,118 @@
       <skill id="rally" x="8" y="12" />
       <skill id="protect" x="8" y="12" />
       <skill id="jam" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7107</id>
+    <card_type>2</card_type>
+    <name>Hammer Krab</name>
+    <picture>Yeti_Crab_A</picture>
+    <asset_bundle>83</asset_bundle>
+    <hidden_until_time>1511110800</hidden_until_time>
+    <attack>4</attack>
+    <health>12</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="2" />
+    <skill id="corrosive" x="1" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>15</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17107</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Mallet Krab</name>
+    <picture>Yeti_Crab_A</picture>
+    <asset_bundle>83</asset_bundle>
+    <hidden_until_time>1511110800</hidden_until_time>
+    <attack>6</attack>
+    <health>15</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="3" />
+    <skill id="corrosive" x="1" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="3" />
+      <skill id="corrosive" x="2" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="3" />
+      <skill id="corrosive" x="2" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>17</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27107</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Klubber Krab</name>
+    <picture>Yeti_Crab_B</picture>
+    <asset_bundle>83</asset_bundle>
+    <hidden_until_time>1511110800</hidden_until_time>
+    <attack>7</attack>
+    <health>18</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="3" />
+    <skill id="corrosive" x="2" />
+    <skill id="berserk" x="2" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="4" />
+      <skill id="corrosive" x="2" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="4" />
+      <skill id="corrosive" x="3" />
+      <skill id="berserk" x="3" />
     </upgrade>
   </unit>
   <!-- END SET 3000 - Premium -->

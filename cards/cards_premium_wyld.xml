@@ -13191,4 +13191,116 @@
       <skill id="jam" c="3" />
     </upgrade>
   </unit>
+  <unit>
+    <id>7107</id>
+    <card_type>2</card_type>
+    <name>Hammer Krab</name>
+    <picture>Yeti_Crab_A</picture>
+    <asset_bundle>83</asset_bundle>
+    <hidden_until_time>1511110800</hidden_until_time>
+    <attack>4</attack>
+    <health>12</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="2" />
+    <skill id="corrosive" x="1" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>15</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17107</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Mallet Krab</name>
+    <picture>Yeti_Crab_A</picture>
+    <asset_bundle>83</asset_bundle>
+    <hidden_until_time>1511110800</hidden_until_time>
+    <attack>6</attack>
+    <health>15</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="3" />
+    <skill id="corrosive" x="1" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="3" />
+      <skill id="corrosive" x="2" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="3" />
+      <skill id="corrosive" x="2" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>17</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27107</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Klubber Krab</name>
+    <picture>Yeti_Crab_B</picture>
+    <asset_bundle>83</asset_bundle>
+    <hidden_until_time>1511110800</hidden_until_time>
+    <attack>7</attack>
+    <health>18</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="3" />
+    <skill id="corrosive" x="2" />
+    <skill id="berserk" x="2" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="4" />
+      <skill id="corrosive" x="2" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="4" />
+      <skill id="corrosive" x="3" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
 </root>
