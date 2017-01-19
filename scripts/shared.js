@@ -843,6 +843,38 @@ var MakeSkillModifier = (function () {
     })
 }());
 
+var MakeOnPlayBGE = (function () {
+    var OnPlayBGE = function (name, effect) {
+        this.p = null;
+        this.name = name;
+        this.effect = effect;
+        this.runes = [];
+    }
+
+    OnPlayBGE.prototype = {
+        onCardPlayed: function (card) {
+            SIMULATOR.onPlaySkills[this.effect.id](this, card, this.effect);
+        },
+
+        //Card ID is ...
+        isCommander: function () {
+            return false;
+        },
+
+        isAssault: function () {
+            return false;
+        },
+
+        isBattleground: function () {
+            return true;
+        },
+    };
+
+    return (function (name, effects) {
+        return new OnPlayBGE(name, effects);
+    })
+}());
+
 var MakeTrap = (function () {
     var Trap = function (name, trap_card) {
         this.name = name;
@@ -958,6 +990,11 @@ function addBgesFromList(battlegrounds, getbattleground, player) {
                 battlegrounds.onCreate.push(bge);
             } else if (effect_type === "trap_card") {
                 var bge = MakeTrap(battleground.name, effect);
+                if (player === 'player') bge.self_only = true
+                if (player === 'cpu') bge.enemy_only = true
+                battlegrounds.onCardPlayed.push(bge);
+            } else if (effect_type === "on_play") {
+                var bge = MakeOnPlayBGE(battleground.name, effect);
                 if (player === 'player') bge.self_only = true
                 if (player === 'cpu') bge.enemy_only = true
                 battlegrounds.onCardPlayed.push(bge);
