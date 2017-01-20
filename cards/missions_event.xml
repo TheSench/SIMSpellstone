@@ -13934,16 +13934,16 @@
       <card id="6022" name="Illusion Caster" />
       <card id="7007" name="Water Serpent" />
       <card id="7007" name="Water Serpent" />
-      <card id="2048" name="Sandmite" />
+      <card id="2077" name="Drowner Beetle" />
       <card id="2076" name="Adorabilis" />
-      <card id="5081" name="Brahze" />
+      <card id="7029" name="Owl Griffin" />
       <card id="2067" name="Symbol of Elaria" />
       <card id="1028" name="Heroic Frog" />
       <card id="6069" name="Arachnolite" />
       <card id="6031" mastery_level="2" name="Iceblood Assassin" />
       <card id="2070" mastery_level="3" name="Redclaw Tamer" />
-      <card id="5053" mastery_level="4" name="Anura Witch" />
-      <card id="7003" mastery_level="5" name="Kraken" />
+      <card id="5089" mastery_level="4" name="Gomblit" />
+      <card id="5081" mastery_level="5" name="Brahze" />
       <card id="7054" mastery_level="6" name="The Thing Below" />
       <card id="8045" mastery_level="7" name="Summoned Abomination" />
     </deck>
@@ -13957,8 +13957,8 @@
     <deck>
       <card id="8044" name="Aegis of the Sea" />
       <card id="8045" name="Summoned Abomination" />
-      <card id="7007" name="Water Serpent" />
-      <card id="7007" name="Water Serpent" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="7017" name="Coral Elemental" />
       <card id="2048" name="Sandmite" />
       <card id="5025" name="Steelskin Dragon" />
       <card id="2067" name="Symbol of Elaria" />
@@ -13966,7 +13966,7 @@
       <card id="1028" name="Heroic Frog" />
       <card id="5011" mastery_level="2" name="Sky Whale" />
       <card id="5028" mastery_level="3" name="Winter Blacksmith" />
-      <card id="7066" mastery_level="4" name="Aquine" />
+      <card id="2077" mastery_level="4" name="Drowner Beetle" />
       <card id="7066" mastery_level="5" name="Aquine" />
       <card id="7014" mastery_level="6" name="Genbu" />
       <card id="2013" mastery_level="7" name="Stoneclad Toad" />

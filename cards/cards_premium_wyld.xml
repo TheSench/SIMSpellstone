@@ -12270,7 +12270,7 @@
     <name>Toadplay</name>
     <picture>Totem_Frogs_A</picture>
     <asset_bundle>79</asset_bundle>
-    <hidden_until_time>1514566800</hidden_until_time>
+    <hidden_until_time>1483030800</hidden_until_time>
     <attack>3</attack>
     <health>16</health>
     <cost>3</cost>
@@ -12312,7 +12312,7 @@
     <name>Roughswamping</name>
     <picture>Totem_Frogs_A</picture>
     <asset_bundle>79</asset_bundle>
-    <hidden_until_time>1514566800</hidden_until_time>
+    <hidden_until_time>1483030800</hidden_until_time>
     <attack>4</attack>
     <health>20</health>
     <cost>3</cost>
@@ -12357,7 +12357,7 @@
     <name>Toadal Hijinks</name>
     <picture>Totem_Frogs_B</picture>
     <asset_bundle>79</asset_bundle>
-    <hidden_until_time>1514566800</hidden_until_time>
+    <hidden_until_time>1483030800</hidden_until_time>
     <attack>5</attack>
     <health>24</health>
     <cost>3</cost>

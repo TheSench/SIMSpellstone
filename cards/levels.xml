@@ -26,6 +26,12 @@
     <!-- Fusion 2 salvage amount -->
     <sp_cost>5</sp_cost>
     <!-- This is how much it costs to increase to next level, not how much this level costs -->
+    <buyback_cost0>10</buyback_cost0>
+    <!-- Cost to get this card from buyback at Fusion 0 -->
+    <buyback_cost1>80</buyback_cost1>
+    <!-- Cost to get this card from buyback at Fusion 1 -->
+    <buyback_cost2>240</buyback_cost2>
+    <!-- Cost to get this card from buyback at Fusion 2 -->
   </card_level>
   <card_level>
     <rarity>1</rarity>
@@ -50,6 +56,9 @@
     <salvage1>55</salvage1>
     <salvage2>120</salvage2>
     <sp_cost>5</sp_cost>
+    <buyback_cost0>25</buyback_cost0>
+    <buyback_cost1>110</buyback_cost1>
+    <buyback_cost2>240</buyback_cost2>
   </card_level>
   <card_level>
     <rarity>2</rarity>
@@ -82,6 +91,9 @@
     <salvage1>130</salvage1>
     <salvage2>280</salvage2>
     <sp_cost>5</sp_cost>
+    <buyback_cost0>60</buyback_cost0>
+    <buyback_cost1>260</buyback_cost1>
+    <buyback_cost2>560</buyback_cost2>
   </card_level>
   <card_level>
     <rarity>3</rarity>
@@ -122,6 +134,9 @@
     <salvage1>280</salvage1>
     <salvage2>560</salvage2>
     <sp_cost>5</sp_cost>
+    <buyback_cost0>120</buyback_cost0>
+    <buyback_cost1>560</buyback_cost1>
+    <buyback_cost2>1120</buyback_cost2>
   </card_level>
   <card_level>
     <rarity>4</rarity>
@@ -170,6 +185,9 @@
     <salvage1>560</salvage1>
     <salvage2>1100</salvage2>
     <sp_cost>5</sp_cost>
+    <buyback_cost>120</buyback_cost>
+    <buyback_cost1>560</buyback_cost1>
+    <buyback_cost2>1120</buyback_cost2>
   </card_level>
   <card_level>
     <rarity>5</rarity>

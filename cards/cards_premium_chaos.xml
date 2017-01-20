@@ -12400,7 +12400,7 @@
     <name>Chasm Dowager</name>
     <picture>Sewer_Frog_Monster_A</picture>
     <asset_bundle>79</asset_bundle>
-    <hidden_until_time>1514566800</hidden_until_time>
+    <hidden_until_time>1483030800</hidden_until_time>
     <attack>7</attack>
     <health>32</health>
     <cost>4</cost>
@@ -12450,7 +12450,7 @@
     <name>Subterrestrial Dowager</name>
     <picture>Sewer_Frog_Monster_A</picture>
     <asset_bundle>79</asset_bundle>
-    <hidden_until_time>1514566800</hidden_until_time>
+    <hidden_until_time>1483030800</hidden_until_time>
     <attack>9</attack>
     <health>38</health>
     <cost>4</cost>
@@ -12500,7 +12500,7 @@
     <name>Subterranean Dowager</name>
     <picture>Sewer_Frog_Monster_B</picture>
     <asset_bundle>79</asset_bundle>
-    <hidden_until_time>1514566800</hidden_until_time>
+    <hidden_until_time>1483030800</hidden_until_time>
     <attack>11</attack>
     <health>44</health>
     <cost>4</cost>

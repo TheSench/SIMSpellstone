@@ -25070,7 +25070,7 @@
     <name>Sycophant</name>
     <picture>Frog_Casanova_A</picture>
     <asset_bundle>79</asset_bundle>
-    <hidden_until_time>1514566800</hidden_until_time>
+    <hidden_until_time>1483030800</hidden_until_time>
     <attack>3</attack>
     <health>8</health>
     <cost>1</cost>
@@ -25111,7 +25111,7 @@
     <name>Alluring Sycophant</name>
     <picture>Frog_Casanova_A</picture>
     <asset_bundle>79</asset_bundle>
-    <hidden_until_time>1514566800</hidden_until_time>
+    <hidden_until_time>1483030800</hidden_until_time>
     <attack>5</attack>
     <health>11</health>
     <cost>1</cost>
@@ -25154,7 +25154,7 @@
     <name>Adored Sycophant</name>
     <picture>Frog_Casanova_B</picture>
     <asset_bundle>79</asset_bundle>
-    <hidden_until_time>1514566800</hidden_until_time>
+    <hidden_until_time>1483030800</hidden_until_time>
     <attack>6</attack>
     <health>14</health>
     <cost>1</cost>
@@ -38210,7 +38210,7 @@
     <name>Chasm Dowager</name>
     <picture>Sewer_Frog_Monster_A</picture>
     <asset_bundle>79</asset_bundle>
-    <hidden_until_time>1514566800</hidden_until_time>
+    <hidden_until_time>1483030800</hidden_until_time>
     <attack>7</attack>
     <health>32</health>
     <cost>4</cost>
@@ -38260,7 +38260,7 @@
     <name>Subterrestrial Dowager</name>
     <picture>Sewer_Frog_Monster_A</picture>
     <asset_bundle>79</asset_bundle>
-    <hidden_until_time>1514566800</hidden_until_time>
+    <hidden_until_time>1483030800</hidden_until_time>
     <attack>9</attack>
     <health>38</health>
     <cost>4</cost>
@@ -38310,7 +38310,7 @@
     <name>Subterranean Dowager</name>
     <picture>Sewer_Frog_Monster_B</picture>
     <asset_bundle>79</asset_bundle>
-    <hidden_until_time>1514566800</hidden_until_time>
+    <hidden_until_time>1483030800</hidden_until_time>
     <attack>11</attack>
     <health>44</health>
     <cost>4</cost>
@@ -51345,7 +51345,7 @@
     <name>Toadplay</name>
     <picture>Totem_Frogs_A</picture>
     <asset_bundle>79</asset_bundle>
-    <hidden_until_time>1514566800</hidden_until_time>
+    <hidden_until_time>1483030800</hidden_until_time>
     <attack>3</attack>
     <health>16</health>
     <cost>3</cost>
@@ -51387,7 +51387,7 @@
     <name>Roughswamping</name>
     <picture>Totem_Frogs_A</picture>
     <asset_bundle>79</asset_bundle>
-    <hidden_until_time>1514566800</hidden_until_time>
+    <hidden_until_time>1483030800</hidden_until_time>
     <attack>4</attack>
     <health>20</health>
     <cost>3</cost>
@@ -51432,7 +51432,7 @@
     <name>Toadal Hijinks</name>
     <picture>Totem_Frogs_B</picture>
     <asset_bundle>79</asset_bundle>
-    <hidden_until_time>1514566800</hidden_until_time>
+    <hidden_until_time>1483030800</hidden_until_time>
     <attack>5</attack>
     <health>24</health>
     <cost>3</cost>

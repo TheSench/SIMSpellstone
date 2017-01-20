@@ -12472,7 +12472,7 @@
     <name>Sycophant</name>
     <picture>Frog_Casanova_A</picture>
     <asset_bundle>79</asset_bundle>
-    <hidden_until_time>1514566800</hidden_until_time>
+    <hidden_until_time>1483030800</hidden_until_time>
     <attack>3</attack>
     <health>8</health>
     <cost>1</cost>
@@ -12513,7 +12513,7 @@
     <name>Alluring Sycophant</name>
     <picture>Frog_Casanova_A</picture>
     <asset_bundle>79</asset_bundle>
-    <hidden_until_time>1514566800</hidden_until_time>
+    <hidden_until_time>1483030800</hidden_until_time>
     <attack>5</attack>
     <health>11</health>
     <cost>1</cost>
@@ -12556,7 +12556,7 @@
     <name>Adored Sycophant</name>
     <picture>Frog_Casanova_B</picture>
     <asset_bundle>79</asset_bundle>
-    <hidden_until_time>1514566800</hidden_until_time>
+    <hidden_until_time>1483030800</hidden_until_time>
     <attack>6</attack>
     <health>14</health>
     <cost>1</cost>
