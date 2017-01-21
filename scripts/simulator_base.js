@@ -211,17 +211,15 @@ var SIMULATOR = {};
             if (!targets.length) return 0;
 
             // Check All
-            if (all) {
-                var enhanced = 0;
-            } else {
+            if (!all) {
                 targets = choose_random_target(targets);
-                var enhanced = getEnhancement(src_card, skill.id);
-                if (enhanced) {
-                    if (enhanced < 0) {
-                        enhanced = Math.ceil(protect * -enhanced);
-                    }
-                    protect += enhanced;
+            }
+            var enhanced = getEnhancement(src_card, skill.id);
+            if (enhanced) {
+                if (enhanced < 0) {
+                    enhanced = Math.ceil(protect * -enhanced);
                 }
+                protect += enhanced;
             }
 
             var affected = 0;
@@ -289,17 +287,15 @@ var SIMULATOR = {};
             if (!targets.length) return 0;
 
             // Check All
-            if (all) {
-                var enhanced = 0;
-            } else {
+            if (!all) {
                 targets = choose_random_target(targets);
-                var enhanced = getEnhancement(src_card, skill.id);
-                if (enhanced) {
-                    if (enhanced < 0) {
-                        enhanced = Math.ceil(heal * -enhanced);
-                    }
-                    heal += enhanced;
+            }
+            var enhanced = getEnhancement(src_card, skill.id);
+            if (enhanced) {
+                if (enhanced < 0) {
+                    enhanced = Math.ceil(heal * -enhanced);
                 }
+                heal += enhanced;
             }
 
             var affected = 0;
@@ -629,17 +625,15 @@ var SIMULATOR = {};
             if (!targets.length) return 0;
 
             // Check All
-            if (all) {
-                var enhanced = 0;
-            } else {
+            if (!all) {
                 targets = choose_random_target(targets);
-                var enhanced = getEnhancement(src_card, skill.id);
-                if (enhanced) {
-                    if (enhanced < 0) {
-                        enhanced = Math.ceil(enfeeble * -enhanced);
-                    }
-                    enfeeble += enhanced;
+            }
+            var enhanced = getEnhancement(src_card, skill.id);
+            if (enhanced) {
+                if (enhanced < 0) {
+                    enhanced = Math.ceil(enfeeble * -enhanced);
                 }
+                enfeeble += enhanced;
             }
 
             var affected = 0;
@@ -704,17 +698,15 @@ var SIMULATOR = {};
             if (!targets.length) return 0;
 
             // Check All
-            if (all) {
-                var enhanced = 0;
-            } else {
+            if (!all) {
                 targets = choose_random_target(targets);
-                var enhanced = getEnhancement(src_card, skill.id);
-                if (enhanced) {
-                    if (enhanced < 0) {
-                        enhanced = Math.ceil(weaken * -enhanced);
-                    }
-                    weaken += enhanced;
+            }
+            var enhanced = getEnhancement(src_card, skill.id);
+            if (enhanced) {
+                if (enhanced < 0) {
+                    enhanced = Math.ceil(weaken * -enhanced);
                 }
+                weaken += enhanced;
             }
 
             var affected = 0;
@@ -770,17 +762,15 @@ var SIMULATOR = {};
             if (!targets.length) return 0;
 
             // Check All
-            if (all) {
-                var enhanced = 0;
-            } else {
+            if (!all) {
                 targets = choose_random_target(targets);
-                var enhanced = getEnhancement(src_card, skill.id);
-                if (enhanced) {
-                    if (enhanced < 0) {
-                        enhanced = Math.ceil(rally * -enhanced);
-                    }
-                    rally += enhanced;
+            }
+            var enhanced = getEnhancement(src_card, skill.id);
+            if (enhanced) {
+                if (enhanced < 0) {
+                    enhanced = Math.ceil(rally * -enhanced);
                 }
+                rally += enhanced;
             }
 
             var affected = 0;
