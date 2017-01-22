@@ -684,7 +684,7 @@ public partial class unit
 		{
 			if (this.portraitField != null)
 			{
-				return "portrait_" + this.portraitField.ToLower().Replace("portrait_", "").Replace("_santa", "");
+				return "portrait_" + this.portraitField.ToLower().Replace("portrait_", "");
 			}
 			else
 			{
@@ -978,6 +978,7 @@ public partial class add_skill : battlegroundEffect
 	private string sField;
 	private string allField;
 	private string multField;
+	private string on_delay_multField;
 	private string baseField;
 
 	/// <remarks/>
@@ -994,6 +995,14 @@ public partial class add_skill : battlegroundEffect
 	{
 		get { return this.multField; }
 		set { this.multField = value; }
+	}
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string on_delay_mult
+	{
+		get { return this.on_delay_multField; }
+		set { this.on_delay_multField = value; }
 	}
 
 	/// <remarks/>
@@ -1220,7 +1229,7 @@ private static void AppendSkill(StringBuilder sb, skill skill, string tabs, bool
 	AppendEntry(sb, "mult", skill.mult, propTabs);
 	AppendEntry(sb, "on_delay_mult", skill.on_delay_mult, propTabs);
 	AppendEntryString(sb, "y", skill.y, propTabs);
-	//AppendEntry(sb, "z", skill.y, propTabs);
+	//AppendEntry(sb, "z", skill.z, propTabs);
 	AppendEntry(sb, "c", skill.c, propTabs);
 	AppendEntryString(sb, "s", skill.s, propTabs);
 	AppendEntryString(sb, "all", skill.all, propTabs);
@@ -1243,9 +1252,10 @@ private static void AppendAddSkill(StringBuilder sb, add_skill skill, string tab
 	AppendEntryString(sb, "id", skill.id, tabs);
 	AppendEntry(sb, "x", skill.x, tabs);
 	AppendEntry(sb, "mult", skill.mult, tabs);
+	AppendEntry(sb, "mult", skill.on_delay_mult, tabs);
 	AppendEntryString(sb, "base", skill.Base, tabs);
 	AppendEntryString(sb, "y", skill.y, tabs);
-	AppendEntry(sb, "z", skill.y, tabs);
+	//AppendEntry(sb, "z", skill.z, tabs);
 	AppendEntry(sb, "c", skill.c, tabs);
 	AppendEntryString(sb, "s", skill.s, tabs);
 	AppendEntryString(sb, "all", skill.all, tabs);

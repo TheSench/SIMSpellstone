@@ -1613,6 +1613,20 @@
       <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
     </cards>
   </store_item>
+  <store_item>
+    <id>3044</id>
+    <name>Quadra Seafolk Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives four copies of one guaranteed Epic or higher Seafolk card.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" number="4" />
+    </cards>
+  </store_item>
   <!-- =============================== -->
   <!-- ==== Emporium Market Items ==== -->
   <!-- =============================== -->
@@ -1799,7 +1813,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <priority>300</priority>
-    <desc>Fifteen Energy Potion +20 for 100 Shards for a limited time only! May be purchased 10 times!</desc>
+    <desc>Fifteen Energy Potion +20 for 100 Shards for a limited time only! May be purchased 5 times!</desc>
     <asset_prefab>event_012_energyChest</asset_prefab>
     <bundle>62</bundle>
     <icon>energy_refill_20</icon>
@@ -2857,5 +2871,25 @@
     <sp>180</sp>
     <gold>1000</gold>
     <item id="1003" quantity="2" />
+  </store_item>
+  <store_item>
+    <id>5057</id>
+    <name>Quadra Seafolk Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives four copies of one Epic+ Seafolk card from Premium set. Also includes two Bounty Refills +10, two Energy Potions +20, and one random Rare+ Rune. May only be purchased once.</desc>
+    <asset_prefab>frog_crystal_epicX4</asset_prefab>
+    <background_prefab>event_020_seafolk_quadra_pack</background_prefab>
+    <bundle>82</bundle>
+    <!-- <icon>rune_component_bag_item</icon> -->
+    <hc_cost>400</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3044</pack>
+    <item id="1024" quantity="2" />
+    <item id="1004" quantity="2" />
+    <item id="513" quantity="1" />
   </store_item>
 </root>

@@ -309,6 +309,10 @@ img[src='Error.src'] {
     color: lightgreen;
 }
 
+.imbued {
+    color: dodgerblue;
+}
+
 .decreased {
     color: red;
 }

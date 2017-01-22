@@ -3830,6 +3830,14 @@
     <resource card_id="17104" number="2" />
   </fusion_recipe>
   <fusion_recipe>
+    <card_id>17105</card_id>
+    <resource card_id="7105" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27105</card_id>
+    <resource card_id="17105" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
     <card_id>17106</card_id>
     <resource card_id="7106" number="2" />
   </fusion_recipe>

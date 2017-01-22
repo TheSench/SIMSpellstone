@@ -778,4 +778,10 @@ var BATTLEGROUNDS = {
     "starting_level": "0",
     "hidden": true,
   },
+  "3001": {
+      "name": "Duskwillow Fellowship",
+      "id": "3001",
+      "hidden": true,
+      "effect": []
+  },
 };

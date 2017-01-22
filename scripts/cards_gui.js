@@ -405,7 +405,7 @@ var CARD_GUI = {};
     function getSkillsHtml(card, divSkills, skillsShort, skills, onField) {
         for (var i = 0; i < skills.length; i++) {
             var skill = skills[i];
-            divSkills.appendChild(getSkillHtml(card, skill, onField));
+            divSkills.appendChild(getSkillHtml(card, skill, onField, i));
             divSkills.appendChild(document.createElement('br'));
             skillsShort.appendChild(getSkillIcon(skill.id));
         }
@@ -452,12 +452,15 @@ var CARD_GUI = {};
         }
     }
 
-    function getSkillHtml(card, skill, onField) {
+    function getSkillHtml(card, skill, onField, i) {
         var htmlSkill = document.createElement("span");
         htmlSkill.className = "skill";
         htmlSkill.appendChild(getSkillIcon(skill.id));
+        var imbued = isImbued(card, skill.id, i);
         var enhancement = getEnhancement(card, skill.id);
-        if (skill.boosted || enhancement) {
+        if (imbued) {
+            htmlSkill.classList.add("imbued");
+        } else if (skill.boosted || enhancement) {
             htmlSkill.classList.add("increased");
         }
         if (skill.all) htmlSkill.innerHTML += (" All ");

@@ -530,6 +530,7 @@ var makeUnit = (function () {
                 // Passive Toggles
                 case 'taunt':
                     this.taunt = true;
+                    this.imbued[skillID] = 1;
                     return;
                 // Passives
                 case 'armored':
@@ -750,6 +751,63 @@ var getEnhancement = function (card, s) {
     var enhancements = card.enhanced;
     return (enhancements ? (enhancements[s] || 0) : 0);
 };
+
+var isImbued = function (card, skillID, i) {
+    var activation = false;
+    var imbueSkillsKey;
+    switch (skillID) {
+        // Passive Toggles
+        case 'flurry':
+        case 'taunt':
+            return card.imbued[skillID];
+
+        // Passive Skills
+        case 'armored':
+        case 'berserk':
+        case 'burn':
+        case 'corrosive':
+        case 'counter':
+        case 'counterburn':
+        case 'evade':
+        case 'fury':
+        case 'leech':
+        case 'nullify':
+        case 'pierce':
+        case 'poison':
+        case 'valor':
+            return (card[skillID] === card.imbued[skillID])
+
+            // Early Activation skills
+        case 'imbue':
+        case 'enhance':
+        case 'fervor':
+        case 'rally':
+        case 'legion':
+        case 'barrage':
+            imbueSkillsKey = 'earlyActivationSkills';
+            break;
+            // Activation skills (can occur twice on a card)
+        case 'enfeeble':
+        case 'frost':
+        case 'heal':
+        case 'jam':
+        case 'protect':
+        case 'protect_ice':
+        case 'strike':
+        case 'weaken':
+        default:
+            imbueSkillsKey = 'skill';
+            break;
+    }
+
+
+    // Mark the first added skill index
+    if (card.imbued[imbueSkillsKey] !== undefined) {
+        return (i >= imbued[imbueSkillsKey]);
+    } else {
+        return false;
+    }
+}
 
 var addRunes = function (card, runes) {
     if (!card.runes) card.runes = [];

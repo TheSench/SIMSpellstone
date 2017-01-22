@@ -52,6 +52,7 @@ void Main()
 	var sheetIndex = 1;
 	var images = imageFileNames.Count;
 	var dimensions = 10;
+	var lines = new List<string>();
 	while (offset < images)
 	{
 		var height = (images - offset) / dimensions;
@@ -69,8 +70,7 @@ void Main()
 				var x = 84 * (i % dimensions);
 				var y = 120 * (i / dimensions);
 				var imageName = Path.GetFileNameWithoutExtension(fileName);
-
-				css.AppendLine(".sprite-" + imageName + "{ background-position: -" + x + "px -" + y + "px; " + backgroundImage + "}");
+				lines.Add(".sprite-" + imageName + "{ background-position: -" + x + "px -" + y + "px; " + backgroundImage + "}");
 				AddImage(fileName, spriteSheet, x, y);
 			}
 			spriteSheet.Save(Path.Combine(spritePath, sheetName), ImageFormat.Png);
@@ -78,12 +78,15 @@ void Main()
 		}
 		sheetIndex++;
 	}
+	lines.Sort();
+	lines.ForEach(line => css.AppendLine(line));
 
 	// Create Spritesheets for Commander Images
 	offset = 0;
 	sheetIndex = 1;
 	images = portraitFileNames.Count;
 	dimensions = 10;
+	lines = new List<string>();
 	while (offset < images)
 	{
 		var height = (images - offset) / dimensions;
@@ -102,7 +105,7 @@ void Main()
 				var y = 100 * (i / dimensions);
 				var imageName = Path.GetFileNameWithoutExtension(fileName);
 
-				css.AppendLine(".portrait-" + imageName + "{ background-position: -" + x + "px -" + y + "px; " + backgroundImage + "}");
+				lines.Add(".portrait-" + imageName + "{ background-position: -" + x + "px -" + y + "px; " + backgroundImage + "}");
 				AddPortrait(fileName, spriteSheet, x, y);
 			}
 			spriteSheet.Save(Path.Combine(spritePath, sheetName), ImageFormat.Png);
@@ -110,6 +113,8 @@ void Main()
 		}
 		sheetIndex++;
 	}
+	lines.Sort();
+	lines.ForEach(line => css.AppendLine(line));
 
 	var stylesheetPath = Path.Combine(basePath, @"..\styles\spritesheet.css");
 	var cssFile = new FileInfo(stylesheetPath);

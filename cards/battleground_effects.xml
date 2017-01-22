@@ -559,8 +559,8 @@
     <id>516</id>
     <name>Cursed Land</name>
     <desc>Hex skills are 50% more effective.</desc>
-    <icon>firestarter_64</icon>
-    <icon_bundle>75</icon_bundle>
+    <icon>Hex_BGE_64</icon>
+    <icon_bundle>82</icon_bundle>
     <effect>
       <skill id="enhance" s="enfeeble" mult="0.5" all="1" />
     </effect>
