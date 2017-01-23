@@ -65,7 +65,6 @@ var BATTLEGROUNDS = {
         "mult": .3,
         "base": "attack",
         "y": "7",
-        "z": 7,
       },
     ]
   },
@@ -79,7 +78,6 @@ var BATTLEGROUNDS = {
         "mult": 0.5,
         "base": "attack",
         "y": "6",
-        "z": 6,
       },
     ]
   },
@@ -106,7 +104,6 @@ var BATTLEGROUNDS = {
         "mult": .5,
         "base": "attack",
         "y": "4",
-        "z": 4,
       },
     ]
   },
@@ -120,7 +117,6 @@ var BATTLEGROUNDS = {
         "mult": 1,
         "base": "attack",
         "y": "10",
-        "z": 10,
       },
     ]
   },
@@ -134,7 +130,6 @@ var BATTLEGROUNDS = {
         "mult": 0.1,
         "base": "health",
         "y": "13",
-        "z": 13,
       },
     ]
   },
@@ -148,7 +143,6 @@ var BATTLEGROUNDS = {
         "mult": 0.1,
         "base": "health",
         "y": "5",
-        "z": 5,
       },
     ]
   },
@@ -162,7 +156,6 @@ var BATTLEGROUNDS = {
         "mult": 1,
         "base": "attack",
         "y": "11",
-        "z": 11,
       },
     ]
   },
@@ -777,11 +770,5 @@ var BATTLEGROUNDS = {
     "scale_with_level": "1",
     "starting_level": "0",
     "hidden": true,
-  },
-  "3001": {
-      "name": "Duskwillow Fellowship",
-      "id": "3001",
-      "hidden": true,
-      "effect": []
   },
 };

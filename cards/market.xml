@@ -2881,8 +2881,7 @@
     <event_only>1</event_only>
     <priority>300</priority>
     <desc>Gives four copies of one Epic+ Seafolk card from Premium set. Also includes two Bounty Refills +10, two Energy Potions +20, and one random Rare+ Rune. May only be purchased once.</desc>
-    <asset_prefab>frog_crystal_epicX4</asset_prefab>
-    <background_prefab>event_020_seafolk_quadra_pack</background_prefab>
+    <asset_prefab>event_020_seafolk_quadra_pack</asset_prefab>
     <bundle>82</bundle>
     <!-- <icon>rune_component_bag_item</icon> -->
     <hc_cost>400</hc_cost>

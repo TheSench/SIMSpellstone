@@ -1888,7 +1888,11 @@ var isInFaction = function (unit, faction) {
 var isInSubfaction = function (unit, faction) {
     var factionID = factions.IDs[faction];
     var card = get_slim_card_by_id(unit, true);
-    return (card.sub_type.indexOf(factionID.toString()) >= 0);
+    if (typeof factionID === "undefined") {
+        return (card.sub_type.length === 0);
+    } else {
+        return (card.sub_type.indexOf(factionID.toString()) >= 0);
+    }
 }
 
 var isInRange = function (unit, field, min, max) {

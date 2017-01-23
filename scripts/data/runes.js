@@ -1018,5 +1018,21 @@ var RUNES = {
         "stat_boost": {
             "health": "8"
         }
+    },
+    "5506": {
+        "id": "5506",
+        "name": "Seafolk Rune of Health",
+        "type": "3",
+        "category": "3",
+        "set": "2",
+        "rarity": "3",
+        "faction_req": "12",
+        "icon": "rune_health_epic",
+        "bundle": "34",
+        "desc": "Health +8. May only be embedded on Seafolk. May not be crafted.",
+        "usable": "0",
+        "stat_boost": {
+            "health": "8"
+        }
     }
 };
