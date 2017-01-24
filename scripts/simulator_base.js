@@ -26,10 +26,17 @@ var SIMULATOR = {};
             // Activate trap/onPlay battlegrounds
             for (var i = 0; i < battlegrounds.onCardPlayed.length; i++) {
                 var battleground = battlegrounds.onCardPlayed[i];
-                if (battleground.enemy_only && p != 'cpu') continue;
-                if (battleground.self_only && p != 'player') continue;
-                battleground.owner = p;
                 var o = (p === 'player' ? 'cpu' : 'player');
+                if (battleground.defender) {
+                    if (battleground.enemy_only && p != 'player') continue;
+                    if (battleground.self_only && p != 'cpu') continue;
+                    battleground.owner = o;
+
+                } else {
+                    if (battleground.enemy_only && p != 'cpu') continue;
+                    if (battleground.self_only && p != 'player') continue;
+                    battleground.owner = p;
+                }
                 battleground.onCardPlayed(card, deck[p].deck, deck[o].deck);
             }
         }

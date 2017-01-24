@@ -1,6 +1,7 @@
 ﻿'use strict';
 
 var loadDeckDialog;
+var mapBGEDialog;
 
 $(function () {
     $("#deck1").change(function ()
@@ -84,7 +85,21 @@ $(function () {
             Cancel: function () {
                 loadDeckDialog.dialog("close");
             }
-        },
+        }
+    });
+    mapBGEDialog = $("#bgeDialog").dialog({
+        autoOpen: false,
+        minWidth: 320,
+        modal: true,
+        resizable: false,
+        buttons: {
+            OK: function () {
+                mapBGEDialog.dialog("close");
+            },
+            Cancel: function () {
+                mapBGEDialog.dialog("close");
+            }
+        }
     });
 
     deckChanged("attack_deck", hash_decode(''));
@@ -132,6 +147,11 @@ function setDeckSortable(deckField, associatedHashField)
             hashField.val(hash);
         }
     });
+}
+
+function showMapBGEs() {
+    mapBGEDialog.dialog("open");
+    mapBGEDialog.dialog("option", "position", { my: "center", at: "center", of: window });
 }
 
 function loadDeck(hashField) {

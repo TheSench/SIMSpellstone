@@ -81,11 +81,6 @@ $(function () {
     $('#tower_level').val(tower_level);
 
     var tower_type = (_GET('tower_type') || 0);
-    if (tower_type < 3) {
-        // Handle legacy tower_type
-        var options = $("#tower_type").children();
-        tower_type = options[tower_type].value;
-    }
     $("#tower_type").val(tower_type);
 
     $('#auto_mode').prop("checked", _DEFINED("auto_mode"));
@@ -99,10 +94,18 @@ $(function () {
         pvpAI = false;
     }
 
+    var locationID = _GET('location');
     var campaignID = _GET('campaign');
     var missionID = _GET('mission');
     var raidID = _GET('raid');
-    if (campaignID) $('#campaign').val(campaignID).change();
+    if (locationID) $('#location').val(locationID).change();
+    if (campaignID) {
+        if (!locationID) {
+            locationID = CAMPAIGNS[campaignID].location_id;
+            $('#location').val(locationID).change();
+        }
+        $('#campaign').val(campaignID).change();
+    }
     if (missionID) {
         $('#mission_level').val(_GET('mission_level') || 7);
         $('#mission').val(missionID).change();
@@ -112,8 +115,8 @@ $(function () {
         $('#raid').val(raidID).change();
     }
 
-    var bges = _GET('bges');
-    if (bges) {
+    if (_DEFINED("bges")) {
+        var bges = _GET('bges');
         // Each BGE is a 2-character ID in Base64
         for (var i = 0; i < bges.length; i += 2) {
             var bge = base64_to_decimal(bges.substring(i, i + 2));
@@ -251,6 +254,20 @@ function getSelectedBattlegrounds(prefix) {
         var checkbox = bgCheckBoxes[i];
         if (checkbox && checkbox.checked) {
             getbattleground.push(checkbox.value);
+        }
+    }
+    getbattleground = getbattleground.join();
+    return getbattleground;
+}
+
+function getSelectedMapBattlegrounds() {
+    var getbattleground = [];
+    var locationID = $("#location").val();
+    var selects = document.getElementsByName("map-battleground");
+    for (var i = 0; i < selects.length; i++) {
+        var select = selects[i];
+        if (select.value > 0) {
+            getbattleground.push(locationID + "-" + i + "-" + select.value);
         }
     }
     getbattleground = getbattleground.join();
@@ -437,6 +454,7 @@ function generate_link(autostart) {
     addValueParam(parameters, "deck1");
     addValueParam(parameters, "deck2");
 
+    addValueParam(parameters, "location");
     addValueParam(parameters, "campaign");
     addValueParam(parameters, "mission");
     addValueParam(parameters, "mission_level");
@@ -471,7 +489,9 @@ function generate_link(autostart) {
         d = bgCheckBoxes[i];
         if (d.checked) bges += decimal_to_base64(d.value - 10000, 2);
     }
-    parameters.push('selfbges=' + bges);
+    if (bges) {
+        parameters.push('selfbges=' + bges);
+    }
 
     var bges = '';
     var bgCheckBoxes = document.getElementsByName("enemy-battleground");
@@ -479,7 +499,9 @@ function generate_link(autostart) {
         d = bgCheckBoxes[i];
         if (d.checked) bges += decimal_to_base64(d.value - 10000, 2);
     }
-    parameters.push('enemybges=' + bges);
+    if (bges) {
+        parameters.push('enemybges=' + bges);
+    }
     
 
     addValueParam(parameters, "sims");
@@ -678,6 +700,7 @@ var raidlevel = 0;
 var getbattleground = '';
 var enemybges = '';
 var selfbges = '';
+var mapbges = '';
 var getsiege = 0;
 var tower_level = 0;
 var tower_type = 0;

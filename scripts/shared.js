@@ -979,7 +979,7 @@ var MakeTrap = (function () {
     })
 }());
 
-var getBattlegrounds = function (getbattleground, selfbges, enemybges, getraid) {
+var getBattlegrounds = function (getbattleground, selfbges, enemybges, mapbges, getraid) {
 
     // Set up battleground effects, if any
     var battlegrounds = {
@@ -991,6 +991,7 @@ var getBattlegrounds = function (getbattleground, selfbges, enemybges, getraid) 
     addBgesFromList(battlegrounds, getbattleground);
     addBgesFromList(battlegrounds, selfbges, 'player');
     addBgesFromList(battlegrounds, enemybges, 'cpu');
+    addMapBGEs(battlegrounds, mapbges, 'player');
 
     if (getraid) {
         var bge_id = RAIDS[getraid].bge;
@@ -1033,30 +1034,52 @@ function addBgesFromList(battlegrounds, getbattleground, player) {
     for (var i = 0; i < selected.length; i++) {
         var id = selected[i];
         var battleground = BATTLEGROUNDS[id];
-        for (var j = 0; j < battleground.effect.length; j++) {
-            var effect = battleground.effect[j];
-            var effect_type = effect.effect_type;
-            if (effect_type === "skill") {
-                var bge = MakeBattleground(battleground.name, effect);
-                if (player === 'player') bge.self_only = true
-                if (player === 'cpu') bge.enemy_only = true
-                battlegrounds.onTurn.push(bge);
-            } else if (effect_type === "evolve_skill" || effect_type === "add_skill") {
-                var bge = MakeSkillModifier(battleground.name, effect);
-                if (player === 'player') bge.self_only = true
-                if (player === 'cpu') bge.enemy_only = true
-                battlegrounds.onCreate.push(bge);
-            } else if (effect_type === "trap_card") {
-                var bge = MakeTrap(battleground.name, effect);
-                if (player === 'player') bge.self_only = true
-                if (player === 'cpu') bge.enemy_only = true
-                battlegrounds.onCardPlayed.push(bge);
-            } else if (effect_type === "on_play") {
-                var bge = MakeOnPlayBGE(battleground.name, effect);
-                if (player === 'player') bge.self_only = true
-                if (player === 'cpu') bge.enemy_only = true
-                battlegrounds.onCardPlayed.push(bge);
-            }
+        addBgeFromList(battlegrounds, battleground, player);
+    }
+}
+
+function addMapBGEs(battlegrounds, mapbges, player) {
+    if (!mapbges) return null;
+    var selected = mapbges.split(",");
+    for (var i = 0; i < selected.length; i++) {
+        var parts = selected[i].split("-");
+        var location = parts[0];
+        var index = parts[1];
+        var value = parts[2];
+        var mapBGE = Object.keys(MAP_BATTLEGROUNDS).filter(function (id) {
+            return MAP_BATTLEGROUNDS[id].location_id == location;
+        })[0];
+        mapBGE = MAP_BATTLEGROUNDS[mapBGE];
+        var battleground = mapBGE.effects[index].upgrades[value];
+        addBgeFromList(battlegrounds, battleground, player);
+    }
+}
+
+function addBgeFromList(battlegrounds, battleground, player) {
+    for (var j = 0; j < battleground.effect.length; j++) {
+        var effect = battleground.effect[j];
+        var effect_type = effect.effect_type;
+        if (effect_type === "skill") {
+            var bge = MakeBattleground(battleground.name, effect);
+            if (player === 'player') bge.self_only = true
+            if (player === 'cpu') bge.enemy_only = true
+            battlegrounds.onTurn.push(bge);
+        } else if (effect_type === "evolve_skill" || effect_type === "add_skill") {
+            var bge = MakeSkillModifier(battleground.name, effect);
+            if (player === 'player') bge.self_only = true
+            if (player === 'cpu') bge.enemy_only = true
+            battlegrounds.onCreate.push(bge);
+        } else if (effect_type === "trap_card") {
+            var bge = MakeTrap(battleground.name, effect);
+            if (player === 'player') bge.self_only = true
+            if (player === 'cpu') bge.enemy_only = true
+            battlegrounds.onCardPlayed.push(bge);
+        } else if (effect_type === "on_play") {
+            var bge = MakeOnPlayBGE(battleground.name, effect.effect);
+            bge.defender = effect.defender;
+            if (player === 'player') bge.self_only = true
+            if (player === 'cpu') bge.enemy_only = true
+            battlegrounds.onCardPlayed.push(bge);
         }
     }
 }

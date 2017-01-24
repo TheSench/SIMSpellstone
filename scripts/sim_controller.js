@@ -24,6 +24,7 @@ var SIM_CONTROLLER = (function () {
             getbattleground = getSelectedBattlegrounds();
             selfbges = getSelectedBattlegrounds("self-");
             enemybges = getSelectedBattlegrounds("enemy-");
+            mapbges = (getmission ? getSelectedMapBattlegrounds() : "");
         }
 
         sims_left = $('#sims').val() || 1;

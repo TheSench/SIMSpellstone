@@ -134,6 +134,11 @@ option.heroUpgrade {
     color: purple;
 }
 
+select.event,
+option.event {
+    color: cornflowerblue;
+}
+
 thead tr {
     background-color: black;
     color: white;
@@ -361,4 +366,13 @@ tbody tr:nth-child(2n) {
 
 .table-cell {
     display: table-cell;
+}
+
+.fill {
+    width: 100%;
+}
+
+#config-map-bge:disabled {
+        color: #c0c0c0;
+        background-color: #ffffff;
 }

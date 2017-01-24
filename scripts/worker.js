@@ -94,7 +94,7 @@ function initializeSims(params) {
     card_cache = {};    // clear card cache to avoid memory bloat when simulating different decks
 
     // Set up battleground effects, if any
-    SIMULATOR.battlegrounds = getBattlegrounds(getbattleground, getraid);
+    SIMULATOR.battlegrounds = getBattlegrounds(getbattleground, selfbges, enemybges, mapbges, getraid);
 
     cache_player_deck_cards = false;
     cache_cpu_deck_cards = false;

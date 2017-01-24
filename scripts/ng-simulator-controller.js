@@ -1,24 +1,25 @@
 (function (angular) {
     'use strict';
 
-    var getMissionsInCampaign = function (missions, campaignID, campaigns) {
-        var filteredMissions = [];
-        var campaign = { missions: [] };
-        campaigns = campaigns || [];
-        for (var i = 0; i < campaigns.length; i++) {
-            var campaign_i = campaigns[i];
-            if (!campaign_i.isLocation && campaign_i.id == campaignID) {
-                campaign = campaigns[i];
-                break;
-            }
+    var filterByParent = function (unfiltered, parentID, parentIDField) {
+        return unfiltered.filter(function (entry) {
+            return entry[parentIDField] == parentID;
+        });
+    };
+
+    var filterChildren = function (unfiltered, parentID, parents, childrenField, childIDField) {
+        var parent = parents.filter(function(parent) { return parent.id == parentID; })[0];
+        if (parent) {
+            var children = parent[childrenField];
+            var filtered = unfiltered.filter(function (child) {
+                var childID = child[childIDField];
+                var isChildOfParent = children.indexOf(childID) >= 0
+                return isChildOfParent;
+            });
+            return filtered;
+        } else {
+            return [];
         }
-        var campaignMissions = campaign.missions;
-        for (var key in missions) {
-            if (campaignMissions.indexOf(key) >= 0) {
-                filteredMissions.push(missions[key]);
-            }
-        }
-        return filteredMissions;
     };
 
     angular.module('core', []);
@@ -47,17 +48,25 @@
                 return newCampaigns;
             };
         })
-        .filter('inCampaign', function () {
-            return getMissionsInCampaign;
+        .filter('filterByParent', function () {
+            return filterByParent;
+        })
+        .filter('filterChildren', function () {
+            return filterChildren;
         });
 
     angular.module('simulatorApp', ['core'])
-        .controller('SimulatorCtrl', ['$scope', '$window', SimulatorCtrl])
+        .controller('SimulatorCtrl', ['$scope', '$window', SimulatorCtrl]);
+
     function SimulatorCtrl($scope, $window) {
+        $scope.locations = [];
         $scope.campaigns = [];
         $scope.missions = $window.TITANS;
         $scope.raids = $window.RAIDS;
         $scope.battlegrounds = $window.BATTLEGROUNDS;
+        $scope.mapBattlegrounds = toArray($window.MAP_BATTLEGROUNDS);
+
+        $scope.campaignBGEs = [];
 
         $scope.tower = false;
         $scope.auto = false;
@@ -65,6 +74,7 @@
         $scope.debugMode = false;
 
         $scope.selections = {
+            location: '',
             campaign: '',
             mission: '',
             raid: ''
@@ -76,52 +86,54 @@
         };
 
         $scope.campaignSections = function () {
-            var campaigns = $window.CAMPAIGNS;
-            $scope.missions = $window.MISSIONS;
-            var IDs = [];
-            for (var key in campaigns) {
-                IDs.push(key);
-            }
-            IDs.sort(function (a, b) {
-                a = campaigns[a], b = campaigns[b];
-                var locationA = Number(a.location_id) || 99999;
-                var locationB = Number(b.location_id) || 99999;
-                var compare = locationA - locationB;
-                if (compare) return compare;
-                return Number(a.id) - Number(b.id);
+            $scope.locations = ToArray($window.LOCATIONS).sort(function (locationA, locationB) {
+                return Number(locationA.id) - Number(locationB.id);
             });
-            var campaignList = [];
-            var lastCampaign = null;
+            $scope.missions = ToArray($window.MISSIONS);
+            $scope.campaigns = ToArray($window.CAMPAIGNS);
+        };
+
+        function ToArray(table) {
+            var IDs = Object.keys(table);
+            IDs.sort(function (a, b) {
+                return Number(a) - Number(b);
+            });
+            var list = [];
             for (var i = 0; i < IDs.length; i++) {
                 var key = IDs[i];
-                var campaign = campaigns[key];
-                var location_id = campaign.location_id;
-                var lastLocation = (lastCampaign && lastCampaign.location_id);
-                if (location_id != lastLocation) {
-                    var location = $window.LOCATIONS[location_id];
-                    var option = document.createElement('option');
-                    campaignList.push({
-                        id: "loc-" + location.id,
-                        name: location.name,
-                        isLocation: true
-                    });
-                }
-                campaignList.push(campaign);
-
-                lastCampaign = campaign;
+                var entry = table[key];
+                list.push(entry);
             }
-            $scope.campaigns = campaignList;
+            return list;
+        }
+
+        $scope.getLocationClass = function (location) {
+            if (!location) {
+                var selected = $scope.selections.location;
+                location = $scope.locations.filter(function (location) {
+                    return location.id == selected;
+                })[0];
+            }
+            if (!location) {
+                return "grey";
+            } else {
+                var id = Number(location.id);
+                if (id === 0) {
+                    return "heroUpgrade";
+                } else if (id >= 100) {
+                    return "event";
+                } else {
+                    return "black";
+                }
+            }
         };
 
         $scope.getCampaignClass = function (campaign) {
             if (!campaign) {
                 var selected = $scope.selections.campaign;
-                for (var i = 0, len = $scope.campaigns.length; i < len; i++) {
-                    var campaign_i = $scope.campaigns[i];
-                    if (campaign_i.id == selected) {
-                        campaign = campaign_i;
-                    }
-                }
+                campaign = $scope.campaigns.filter(function (campaign) {
+                    return campaign.id == selected;
+                })[0];
             }
             if(!campaign) {
                 return "grey";
@@ -134,21 +146,12 @@
             }
         };
 
+        $scope.$watch("selections.location", function (newValue, oldValue) {
+            $scope.selections.campaign = '';
+        });
+
         $scope.$watch("selections.campaign", function (newValue, oldValue) {
-            var campaignID = newValue;
-            if (!campaignID) {
-                $scope.selections.mission = '';
-            } else {
-                var missions = getMissionsInCampaign($scope.missions, campaignID, $scope.campaigns);
-                var selectedMission = $scope.selections.mission;
-                for (var i = 0; i < missions.length; i++) {
-                    var mission = missions[i];
-                    if (selectedMission == mission.id) {
-                        return;
-                    }
-                }
-                $scope.selections.mission = '';
-            }
+            $scope.selections.mission = '';
         });
 
         function toArray(object) {
