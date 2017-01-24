@@ -70,11 +70,6 @@ void Main()
 				var x = 84 * (i % dimensions);
 				var y = 120 * (i / dimensions);
 				var imageName = Path.GetFileNameWithoutExtension(fileName);
-				if (imageName.StartsWith("Big"))
-				{
-					imageName.Dump();
-					sheetName.Dump();
-				}
 				lines.Add(".sprite-" + imageName + "{ background-position: -" + x + "px -" + y + "px; " + backgroundImage + "}");
 				AddImage(fileName, spriteSheet, x, y);
 			}

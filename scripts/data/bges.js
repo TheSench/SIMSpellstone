@@ -748,7 +748,7 @@ var BATTLEGROUNDS = {
     ]
   },
   "2001": {
-    "name": "Enemy Scaling BGE",
+    "name": "Boss Scaling BGE",
     "id": "2001",
     "enemy_only": true,
     "scale_with_level": "1",

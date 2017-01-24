@@ -52137,6 +52137,139 @@
     </upgrade>
   </unit>
   <unit>
+    <id>7105</id>
+    <card_type>2</card_type>
+    <name>Charybdis</name>
+    <picture>Whirlpool_Monster_Charybdis_A</picture>
+    <asset_bundle>83</asset_bundle>
+    <hidden_until_time>1485190800</hidden_until_time>
+    <attack>7</attack>
+    <health>24</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="enfeeble" x="3" />
+    <skill id="enfeeble" x="3" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="1" />
+      <skill id="enfeeble" x="4" />
+      <skill id="enfeeble" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>27</health>
+      <skill id="evade" x="2" />
+      <skill id="enfeeble" x="4" />
+      <skill id="enfeeble" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17105</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Swirling Charybdis</name>
+    <picture>Whirlpool_Monster_Charybdis_A</picture>
+    <asset_bundle>83</asset_bundle>
+    <hidden_until_time>1485190800</hidden_until_time>
+    <attack>8</attack>
+    <health>28</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="enfeeble" x="4" />
+    <skill id="enfeeble" x="4" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="2" />
+      <skill id="enfeeble" x="5" />
+      <skill id="enfeeble" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>30</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>9</attack>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="3" />
+      <skill id="enfeeble" x="5" />
+      <skill id="enfeeble" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27105</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Charybdis of Whirlpools</name>
+    <picture>Whirlpool_Monster_Charybdis_B</picture>
+    <asset_bundle>83</asset_bundle>
+    <hidden_until_time>1485190800</hidden_until_time>
+    <attack>9</attack>
+    <health>31</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="3" />
+    <skill id="enfeeble" x="6" />
+    <skill id="enfeeble" x="5" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>32</health>
+      <skill id="evade" x="3" />
+      <skill id="enfeeble" x="6" />
+      <skill id="enfeeble" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>33</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="4" />
+      <skill id="enfeeble" x="6" />
+      <skill id="enfeeble" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="4" />
+      <skill id="enfeeble" x="7" />
+      <skill id="enfeeble" x="7" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>7106</id>
     <card_type>2</card_type>
     <name>Octhos, Ruin Baron</name>

@@ -588,7 +588,7 @@
   <!-- 2001+: Enemy Scaling BGE -->
   <battleground>
     <id>2001</id>
-    <name>Enemy Scaling BGE</name>
+    <name>Boss Scaling BGE</name>
     <desc>In Arena Battles, the player who goes first has one additional Delay added to the first card they play in a battle.</desc>
     <icon>healTotem_BGE_64</icon>
     <icon_bundle>73</icon_bundle>
@@ -598,7 +598,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".2" mult=".1" />
+      <scale_attributes base_mult=".6" mult=".1" />
     </effect>
   </battleground>
   <battleground>

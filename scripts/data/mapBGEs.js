@@ -1,4 +1,4 @@
-﻿var MAP_BATTLEGROUNDS = {
+var MAP_BATTLEGROUNDS = {
     "3001": {
         "id": "3001",
         "name": "Duskwillow Fellowship",
