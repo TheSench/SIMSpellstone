@@ -7155,4 +7155,54 @@
       <skill id="protect" x="3" all="1" />
     </upgrade>
   </unit>
+  <!-- Scylla Mythic Enemy -->
+  <unit>
+    <id>360</id>
+    <card_type>1</card_type>
+    <name>Scylla</name>
+    <portrait>Portrait_Mythic_Seafolk</portrait>
+    <attack>0</attack>
+    <health>58</health>
+    <rarity>4</rarity>
+    <skill id="imbue" x="2" all="1" s="armored" />
+    <skill id="protect" x="2" />
+    <skill id="protect" x="1" all="1" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>60</health>
+      <skill id="imbue" x="2" all="1" s="armored" />
+      <skill id="protect" x="2" />
+      <skill id="protect" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>62</health>
+      <skill id="imbue" x="2" all="1" s="armored" />
+      <skill id="protect" x="2" />
+      <skill id="protect" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>65</health>
+      <skill id="imbue" x="2" all="1" s="armored" />
+      <skill id="protect" x="2" />
+      <skill id="protect" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>67</health>
+      <skill id="imbue" x="2" all="1" s="armored" />
+      <skill id="protect" x="2" />
+      <skill id="protect" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>70</health>
+      <skill id="imbue" x="2" all="1" s="armored" />
+      <skill id="protect" x="2" />
+      <skill id="protect" x="1" all="1" />
+    </upgrade>
+  </unit>
 </root>

@@ -13928,7 +13928,7 @@
     <id>5457</id>
     <name>Seafolk Raider</name>
     <energy>9</energy>
-    <desc>It's one of the Seafolk raiders! You run with all your might towards the two on the beach. Decim shivers and hugs the drake, protecting it with his body, as the waves begin to swell.</desc>
+    <desc>It's one of the Seafolk raiders! You run with all your might towards the two on the beach. Decim holds the drake tightly, protecting it with his body, flinging firebolts against his foes. The waves begin to swell.</desc>
     <commander id="352" />
     <deck>
       <card id="6022" name="Illusion Caster" />
@@ -13980,7 +13980,7 @@
       <line>
         <commander>flamebender</commander>
         <enemy>0</enemy>
-        <text>Aaaaah!</text>
+        <text>STAY BACK OR YOU'RE GONNA GET BURNED!</text>
       </line>
       <line>
         <commander>lanternguardian</commander>
@@ -14135,7 +14135,7 @@
     <id>5463</id>
     <name>Heartbreak</name>
     <energy>9</energy>
-    <desc>The drake that was with Decim has become completely feral. Foam runs from its mouth, claws scratching against Decim and anyone else it can reach.</desc>
+    <desc>The drake that was with Decim has become feral. Foam runs from its mouth, claws scratching against Decim and anyone else it can reach.</desc>
     <commander id="351" />
     <deck>
       <card id="8045" name="Summoned Abomination" />
@@ -14158,7 +14158,7 @@
       <line>
         <commander>flamebender</commander>
         <enemy>0</enemy>
-        <text>Buddy... please stop!</text>
+        <text>Whoa, buddy! What's gotten in to you?</text>
       </line>
       <line>
         <commander>Sailing_Drake</commander>
@@ -14230,7 +14230,7 @@
       <line>
         <commander>goldencrownmayor</commander>
         <enemy>0</enemy>
-        <text>Now now, no need for such violence. Let me heal the dragon, and I'll make it right as rain.</text>
+        <text>Now now, no need for such violence. Let me heal your dragon friend, and I'll make it right as rain.</text>
       </line>
     </speech>
   </mission>
@@ -14245,17 +14245,17 @@
       <card id="8045" name="Summoned Abomination" />
       <card id="7004" name="Ice Golem" />
       <card id="7005" name="Tsunamari" />
-      <card id="7030" name="Arctic Ambusher" />
+      <card id="5108" name="Aurora Skimmer" />
       <card id="7066" name="Aquine" />
       <card id="8044" name="Aegis of the Sea" />
       <card id="5010" name="Concealed Dragon" />
-      <card id="1026" name="Glass Colossus" />
+      <card id="5108" name="Aurora Skimmer" />
       <card id="7099" mastery_level="2" name="Toadplay" />
       <card id="5053" mastery_level="3" name="Anura Witch" />
       <card id="2070" mastery_level="4" name="Redclaw Tamer" />
       <card id="1028" mastery_level="5" name="Heroic Frog" />
       <card id="5095" mastery_level="6" name="Silurigon" />
-      <card id="7083" mastery_level="7" name="Sludge Spine" />
+      <card id="7014" mastery_level="7" name="Genbu" />
     </deck>
     <speech>
       <line>
@@ -14267,26 +14267,50 @@
   </mission>
   <mission>
     <id>5467</id>
-    <name>Boss Mission</name>
+    <name>The Tide Swells...</name>
     <energy>9</energy>
-    <desc>Test mission.</desc>
-    <commander id="238" />
+    <desc>The great sea serpent Scylla has awoken from the water's darkest depths, washing away the earth with her torrential tide. You will need to be very well prepared for this battle.</desc>
+    <commander id="360" />
     <deck>
       <card id="8044" name="Aegis of the Sea" />
       <card id="8045" name="Summoned Abomination" />
-      <card id="5022" name="Webfoot Raider" />
-      <card id="7007" name="Water Serpent" />
-      <card id="1026" name="Glass Colossus" />
-      <card id="2031" name="Dryad" />
-      <card id="7038" name="Sol King" />
-      <card id="7066" name="Aquine" />
-      <card id="2067" name="Symbol of Elaria" />
-      <card id="5028" mastery_level="2" name="Winter Blacksmith" />
-      <card id="2040" mastery_level="3" name="Owlmancer" />
-      <card id="2002" mastery_level="4" name="Lantern Guardian" />
-      <card id="8044" mastery_level="5" name="Aegis of the Sea" />
-      <card id="5070" mastery_level="6" name="Hornslicer" />
-      <card id="7083" mastery_level="7" name="Sludge Spine" />
+      <card id="5108" name="Aurora Skimmer" />
+      <card id="2080" name="Hunter Zind" />
+      <card id="2079" name="Koi Guardian" />
+      <card id="5104" name="Pisces" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="6107" name="Great Lava Crab" />
+      <card id="6107" name="Great Lava Crab" />
+      <card id="6109" name="Captain Gnaw" />
+      <card id="7054" name="The Thing Below" />
+      <card id="7083" name="Sludge Spine" />
+      <card id="7105" name="Charybdis" />
+      <card id="7107" name="Hammer Crab" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5468</id>
+    <name>Scylla, Sea's Torment</name>
+    <energy>9</energy>
+    <desc>The great sea serpent Scylla has awoken from the water's darkest depths, washing away the earth with her torrential tide. You will need to be very well prepared for this battle.</desc>
+    <commander id="360" />
+    <deck>
+      <card id="8044" name="Aegis of the Sea" />
+      <card id="8045" name="Summoned Abomination" />
+      <card id="5108" name="Aurora Skimmer" />
+      <card id="2080" name="Hunter Zind" />
+      <card id="2079" name="Koi Guardian" />
+      <card id="5104" name="Pisces" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="6107" name="Great Lava Crab" />
+      <card id="6107" name="Great Lava Crab" />
+      <card id="6109" name="Captain Gnaw" />
+      <card id="7054" name="The Thing Below" />
+      <card id="7083" name="Sludge Spine" />
+      <card id="7105" name="Charybdis" />
+      <card id="7107" name="Hammer Crab" />
     </deck>
   </mission>
 </root>

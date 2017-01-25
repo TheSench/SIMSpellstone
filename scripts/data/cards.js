@@ -15457,6 +15457,137 @@ var CARDS = {
       },
     }
   },
+  "360": {
+    "id": "360",
+    "name": "Scylla",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "3",
+    "sub_type": [],
+    "health": 58,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "imbue",
+        "x": 2,
+        "s": "armored",
+        "all": "1",
+      },
+      {
+        "id": "protect",
+        "x": 2,
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 60,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 2,
+            "s": "armored",
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "3": {
+        "health": 62,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 2,
+            "s": "armored",
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "health": 65,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 2,
+            "s": "armored",
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 67,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 2,
+            "s": "armored",
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "health": 70,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 2,
+            "s": "armored",
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
   "5000": {
     "id": "5000",
     "name": "Azure Sphinx",
