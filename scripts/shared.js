@@ -286,6 +286,23 @@ var makeUnit = (function () {
                         new_card.highlighted.push(new_skill.id);
                     }
                 }
+            } else if (skillModifier.modifierType == "scale") {
+                for (var j = 0; j < skillModifier.effects.length; j++) {
+                    var mult = skillModifier.effects[j].mult;
+                    new_card.attack += Math.ceil(new_card.attack * mult);
+                    new_card.health += Math.ceil(new_card.health * mult);
+                    for (var key in original_skills) {
+                        var skill = original_skills[key];
+                        var mult
+                        if (skill.x) {
+                            skill = copy_skill(skill);
+                            skill.x += Math.ceil(skill.x * mult);;
+                            skill.boosted = true;
+                            original_skills[key] = skill;
+                            new_card.highlighted.push(skill.id);
+                        }
+                    }
+                }
             }
         }
     }
@@ -893,6 +910,9 @@ var MakeSkillModifier = (function () {
         } else if (effect_type === "evolve_skill") {
             this.modifierType = "evolve";
             this.effects = [effect];
+        } else if (effect_type === "scale_attributes") {
+            this.modifierType = "scale";
+            this.effects = [effect];
         }
     }
 
@@ -979,7 +999,7 @@ var MakeTrap = (function () {
     })
 }());
 
-var getBattlegrounds = function (getbattleground, selfbges, enemybges, mapbges, getraid) {
+var getBattlegrounds = function (getbattleground, selfbges, enemybges, mapbges, campaignID, raidID) {
 
     // Set up battleground effects, if any
     var battlegrounds = {
@@ -993,8 +1013,10 @@ var getBattlegrounds = function (getbattleground, selfbges, enemybges, mapbges, 
     addBgesFromList(battlegrounds, enemybges, 'cpu');
     addMapBGEs(battlegrounds, mapbges, 'player');
 
-    if (getraid) {
-        var bge_id = RAIDS[getraid].bge;
+    if (campaignID) {
+        addMissionBGE(battlegrounds, campaignID, missionlevel);
+    } else if (raidID) {
+        var bge_id = RAIDS[raidID].bge;
         if (bge_id) {
             var battleground = BATTLEGROUNDS[bge_id];
             if (battleground && Number(raidlevel) >= Number(battleground.starting_level)) {
@@ -1012,7 +1034,7 @@ var getBattlegrounds = function (getbattleground, selfbges, enemybges, mapbges, 
                         var bge = MakeBattleground(battleground.name, effect, mult);
                         bge.enemy_only = enemy_only;
                         battlegrounds.onTurn.push(bge);
-                    } else if (effect_type === "evolve_skill" || effect_type === "add_skill") {
+                    } else if (effect_type === "evolve_skill" || effect_type === "add_skill" || effect_type === "scale_attributes") {
                         var bge = MakeSkillModifier(battleground.name, effect);
                         bge.enemy_only = enemy_only;
                         battlegrounds.onCreate.push(bge);
@@ -1035,6 +1057,28 @@ function addBgesFromList(battlegrounds, getbattleground, player) {
         var id = selected[i];
         var battleground = BATTLEGROUNDS[id];
         addBgeFromList(battlegrounds, battleground, player);
+    }
+}
+
+function addMissionBGE(battlegrounds, campaignID, missionLevel) {
+    var campaign = CAMPAIGNS[campaignID];
+    if (campaign) {
+        var id = campaign.battleground_id;
+        if (id) {
+            var battleground = BATTLEGROUNDS[id];
+            missionLevel = Number(missionLevel) - 1; // Convert to 0-based
+            if (!battleground.starting_level || Number(battleground.starting_level) <= missionLevel) {
+                if (battleground.scale_with_level) {
+                    battleground = JSON.parse(JSON.stringify(battleground));
+                    var levelsToScale = missionLevel - Number(battleground.starting_level);
+                    for (var i = 0; i < battleground.effect.length; i++) {
+                        var effect = battleground.effect[i];
+                        effect.mult = effect.base_mult + effect.mult * levelsToScale;
+                    }
+                }
+                addBgeFromList(battlegrounds, battleground);
+            }
+        }
     }
 }
 
@@ -1061,23 +1105,23 @@ function addBgeFromList(battlegrounds, battleground, player) {
         var effect_type = effect.effect_type;
         if (effect_type === "skill") {
             var bge = MakeBattleground(battleground.name, effect);
-            if (player === 'player') bge.self_only = true
+            if (player === 'player') bge.ally_only = true
             if (player === 'cpu') bge.enemy_only = true
             battlegrounds.onTurn.push(bge);
-        } else if (effect_type === "evolve_skill" || effect_type === "add_skill") {
+        } else if (effect_type === "evolve_skill" || effect_type === "add_skill" || effect_type === "scale_attributes") {
             var bge = MakeSkillModifier(battleground.name, effect);
-            if (player === 'player') bge.self_only = true
+            if (player === 'player') bge.ally_only = true
             if (player === 'cpu') bge.enemy_only = true
             battlegrounds.onCreate.push(bge);
         } else if (effect_type === "trap_card") {
             var bge = MakeTrap(battleground.name, effect);
-            if (player === 'player') bge.self_only = true
+            if (player === 'player') bge.ally_only = true
             if (player === 'cpu') bge.enemy_only = true
             battlegrounds.onCardPlayed.push(bge);
         } else if (effect_type === "on_play") {
             var bge = MakeOnPlayBGE(battleground.name, effect.effect);
             bge.defender = effect.defender;
-            if (player === 'player') bge.self_only = true
+            if (player === 'player') bge.ally_only = true
             if (player === 'cpu') bge.enemy_only = true
             battlegrounds.onCardPlayed.push(bge);
         }

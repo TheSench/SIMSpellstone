@@ -15457,6 +15457,131 @@ var CARDS = {
       },
     }
   },
+  "360": {
+    "id": "360",
+    "name": "Scylla",
+    "picture": "NotFound",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "3",
+    "sub_type": [],
+    "health": 58,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "imbue",
+        "x": 1,
+        "s": "nullify",
+      },
+      {
+        "id": "protect",
+        "x": 2,
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 60,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 1,
+            "s": "nullify",
+          },
+          {
+            "id": "protect",
+            "x": 1,
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "3": {
+        "health": 62,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 2,
+            "s": "nullify",
+          },
+          {
+            "id": "protect",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "health": 65,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 3,
+            "s": "nullify",
+          },
+          {
+            "id": "protect",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 77,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 3,
+            "s": "nullify",
+          },
+          {
+            "id": "protect",
+            "x": 3,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "health": 99,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 4,
+            "s": "nullify",
+          },
+          {
+            "id": "protect",
+            "x": 3,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
   "5000": {
     "id": "5000",
     "name": "Azure Sphinx",

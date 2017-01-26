@@ -588,25 +588,23 @@
   <!-- 2001+: Enemy Scaling BGE -->
   <battleground>
     <id>2001</id>
-    <name>Boss Scaling BGE</name>
-    <desc>In Arena Battles, the player who goes first has one additional Delay added to the first card they play in a battle.</desc>
-    <icon>healTotem_BGE_64</icon>
-    <icon_bundle>73</icon_bundle>
+    <name>Scylla's Presence</name>
+    <desc>Scylla empowers her minions, increasing their stats with each Mastery level!</desc>
+    <icon>filter_seafolk_64</icon>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".6" mult=".1" />
+      <scale_attributes base_mult=".1" mult=".05" />
     </effect>
   </battleground>
   <battleground>
     <id>2002</id>
     <name>Riptide Nightsong</name>
     <desc>Enemies become stronger with each passing Mastery level.</desc>
-    <icon>healTotem_BGE_64</icon>
-    <icon_bundle>73</icon_bundle>
+    <icon>filter_seafolk_64</icon>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->
@@ -620,8 +618,7 @@
     <id>2003</id>
     <name>Enemy Scaling BGE</name>
     <desc>In Arena Battles, the player who goes first has one additional Delay added to the first card they play in a battle.</desc>
-    <icon>healTotem_BGE_64</icon>
-    <icon_bundle>73</icon_bundle>
+    <icon>filter_seafolk_64</icon>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
     <!-- Boolean -->

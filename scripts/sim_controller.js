@@ -8,6 +8,7 @@ var SIM_CONTROLLER = (function () {
         getexactorder = $('#exactorder').is(':checked');
 
         getdeck2 = $('#deck2').val();
+        getcampaign = $('#campaign').val();
         getmission = $('#mission').val();
         missionlevel = $('#mission_level').val();
         getraid = $('#raid').val();

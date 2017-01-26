@@ -3,7 +3,7 @@
   <Namespace>System.Xml.Serialization</Namespace>
 </Query>
 
-static bool downloadFiles = true;
+static bool downloadFiles = false;
 
 static string path = Path.GetDirectoryName(Util.CurrentQueryPath);
 static string baseUrl = @"https://spellstone.synapse-games.com/assets";
@@ -238,6 +238,7 @@ void Main()
 		name = node.Element("name").Value,
 		location_id = node.Element("location_id").Value,
 		side_mission = (string)node.Element("side_mission"),
+		battleground_id = (string)node.Element("battleground_id"),
 		missions = node.Element("missions").Elements("mission_id").Select(mission_id => Int32.Parse(mission_id.Value)).ToArray()
 	}).OrderBy(campaign => campaign.location_id).ThenBy(campaign => campaign.id);
 
@@ -292,6 +293,7 @@ void Main()
 			writer.WriteLine("    \"name\": \"" + campaign.name + "\",");
 			writer.WriteLine("    \"location_id\": \"" + campaign.location_id + "\",");
 			writer.WriteLine("    \"side_mission\": \"" + campaign.side_mission + "\",");
+			writer.WriteLine("    \"battleground_id\": \"" + campaign.battleground_id + "\",");
 			writer.WriteLine("    \"missions\": [\"" + String.Join("\",\"", campaign.missions) + "\"]");
 			writer.WriteLine("  },");
 		}
@@ -416,6 +418,7 @@ public class battleground
 	[XmlArrayItem(Type = typeof(add_skill), ElementName = "add_skill")]
 	[XmlArrayItem(Type = typeof(evolve_skill), ElementName = "evolve_skill")]
 	[XmlArrayItem(Type = typeof(skill), ElementName = "skill")]
+	[XmlArrayItem(Type = typeof(scale_attributes), ElementName = "scale_attributes")]
 	[XmlArrayItem(Type = typeof(starting_card), ElementName = "starting_card")]
 	[XmlArrayItem(Type = typeof(trap_card), ElementName = "trap_card")]
 	public battlegroundEffect[] effect { get; set; }
@@ -507,6 +510,10 @@ public class battleground
 				else if (effect_i is add_skill)
 				{
 					AppendAddSkill(sb, (add_skill)effect_i, tabs3);
+				}
+				else if (effect_i is scale_attributes)
+				{
+					AppendScaling(sb, (scale_attributes)effect_i, tabs3);
 				}
 				else if (effect_i is trap_card)
 				{
@@ -1048,6 +1055,39 @@ public partial class add_skill : battlegroundEffect
 
 /// <remarks/>
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+public partial class scale_attributes : battlegroundEffect
+{
+	private string yField;
+	private string base_multField;
+	private string multField;
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string base_mult
+	{
+		get { return this.base_multField; }
+		set { this.base_multField = value; }
+	}
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string mult
+	{
+		get { return this.multField; }
+		set { this.multField = value; }
+	}
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string y
+	{
+		get { return this.yField; }
+		set { this.yField = value; }
+	}
+}
+
+/// <remarks/>
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
 public partial class starting_card : battlegroundEffect
 {
 	private string levelField;
@@ -1118,6 +1158,7 @@ public partial class campaign
 	public string name { get; set; }
 	public string location_id { get; set; }
 	public string side_mission { get; set; }
+	public string battleground_id { get; set;}
 	public int[] missions { get; set; }
 }
 
@@ -1252,13 +1293,21 @@ private static void AppendAddSkill(StringBuilder sb, add_skill skill, string tab
 	AppendEntryString(sb, "id", skill.id, tabs);
 	AppendEntry(sb, "x", skill.x, tabs);
 	AppendEntry(sb, "mult", skill.mult, tabs);
-	AppendEntry(sb, "mult", skill.on_delay_mult, tabs);
+	AppendEntry(sb, "on_delay_mult", skill.on_delay_mult, tabs);
 	AppendEntryString(sb, "base", skill.Base, tabs);
 	AppendEntryString(sb, "y", skill.y, tabs);
 	//AppendEntry(sb, "z", skill.z, tabs);
 	AppendEntry(sb, "c", skill.c, tabs);
 	AppendEntryString(sb, "s", skill.s, tabs);
 	AppendEntryString(sb, "all", skill.all, tabs);
+}
+
+private static void AppendScaling(StringBuilder sb, scale_attributes skill, string tabs)
+{
+	AppendEntryString(sb, "id", skill.id, tabs);
+	AppendEntry(sb, "base_mult", skill.base_mult, tabs);
+	AppendEntry(sb, "mult", skill.mult, tabs);
+	AppendEntryString(sb, "y", skill.y, tabs);
 }
 
 private static void AppendTowerLevel(StringBuilder sb, starting_card info, string tabs)

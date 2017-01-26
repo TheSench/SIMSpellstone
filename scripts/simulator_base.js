@@ -29,12 +29,12 @@ var SIMULATOR = {};
                 var o = (p === 'player' ? 'cpu' : 'player');
                 if (battleground.defender) {
                     if (battleground.enemy_only && p != 'player') continue;
-                    if (battleground.self_only && p != 'cpu') continue;
+                    if (battleground.ally_only && p != 'cpu') continue;
                     battleground.owner = o;
 
                 } else {
                     if (battleground.enemy_only && p != 'cpu') continue;
-                    if (battleground.self_only && p != 'player') continue;
+                    if (battleground.ally_only && p != 'player') continue;
                     battleground.owner = p;
                 }
                 battleground.onCardPlayed(card, deck[p].deck, deck[o].deck);
@@ -1706,7 +1706,7 @@ var SIMULATOR = {};
         for (var i = 0; i < battlegrounds.onTurn.length; i++) {
             var battleground = battlegrounds.onTurn[i];
             if (battleground.enemy_only && p !== 'cpu') continue;
-            if (battleground.self_only && p !== 'player') continue;
+            if (battleground.ally_only && p !== 'player') continue;
             battleground.owner = p;
             doEarlyActivationSkills(battleground);
             activation_skills(battleground);

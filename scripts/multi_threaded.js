@@ -285,6 +285,7 @@
         getordered2 = document.getElementById('ordered2').checked;
         getexactorder = true;
         getexactorder2 = true;
+        getcampaign = document.getElementById('campaign').value;
         getmission = document.getElementById('mission').value;
         missionlevel = document.getElementById('mission_level').value;
         getraid = document.getElementById('raid').value;
@@ -333,6 +334,7 @@
         params['getordered2'] = getordered2;
         params['getexactorder'] = getexactorder;
         params['getexactorder2'] = getexactorder2;
+        params['getcampaign'] = getcampaign;
         params['getmission'] = getmission;
         params['missionlevel'] = missionlevel;
         params['getraid'] = getraid;
@@ -468,6 +470,7 @@
         params['getordered2'] = getordered2;
         params['getexactorder'] = getexactorder;
         params['getexactorder2'] = getexactorder2;
+        params['getcampaign'] = getcampaign;
         params['getmission'] = getmission;
         params['missionlevel'] = missionlevel;
         params['getraid'] = getraid;
@@ -520,6 +523,7 @@
         params['getordered2'] = getordered2;
         params['getexactorder'] = getexactorder;
         params['getexactorder2'] = getexactorder2;
+        params['getcampaign'] = getcampaign;
         params['getmission'] = getmission;
         params['getraid'] = getraid;
         params['raidlevel'] = raidlevel;

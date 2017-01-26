@@ -748,12 +748,19 @@ var BATTLEGROUNDS = {
     ]
   },
   "2001": {
-    "name": "Boss Scaling BGE",
+    "name": "Scylla's Presence",
     "id": "2001",
     "enemy_only": true,
     "scale_with_level": "1",
     "starting_level": "0",
     "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .1,
+        "mult": .05,
+      },
+    ]
   },
   "2002": {
     "name": "Riptide Nightsong",
@@ -762,6 +769,13 @@ var BATTLEGROUNDS = {
     "scale_with_level": "1",
     "starting_level": "5",
     "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .1,
+        "mult": .0025,
+      },
+    ]
   },
   "2003": {
     "name": "Enemy Scaling BGE",
@@ -770,5 +784,12 @@ var BATTLEGROUNDS = {
     "scale_with_level": "1",
     "starting_level": "0",
     "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .6,
+        "mult": .1,
+      },
+    ]
   },
 };

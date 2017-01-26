@@ -73,6 +73,7 @@ function initializeSims(params) {
     getordered2 = params['getordered2'];
     getexactorder = params['getexactorder'];
     getexactorder2 = params['getexactorder2'];
+    getcampaign = params['getcampaign'];
     getmission = params['getmission'];
     missionlevel = params['missionlevel'];
     getraid = params['getraid'];
@@ -94,7 +95,7 @@ function initializeSims(params) {
     card_cache = {};    // clear card cache to avoid memory bloat when simulating different decks
 
     // Set up battleground effects, if any
-    SIMULATOR.battlegrounds = getBattlegrounds(getbattleground, selfbges, enemybges, mapbges, getraid);
+    SIMULATOR.battlegrounds = getBattlegrounds(getbattleground, selfbges, enemybges, mapbges, getmission, getraid);
 
     cache_player_deck_cards = false;
     cache_cpu_deck_cards = false;
@@ -304,6 +305,7 @@ var getordered = false;
 var getordered2 = false;
 var getexactorder = false;
 var getexactorder2 = false;
+var getcampaign = 0;
 var getmission = 0;
 var getraid = false;
 var getclash = false;

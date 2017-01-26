@@ -840,6 +840,32 @@
     </item_pack>
   </store_item>
   <store_item>
+    <id>86</id>
+    <name>Random Epic Rune</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Creates one random Epic+ Rune.</desc>
+    <priority>1</priority>
+    <hc_cost>1000</hc_cost>
+    <asset_prefab>rune_empty_epic</asset_prefab>
+    <icon>rune_empty_epic</icon>
+    <bundle>34</bundle>
+    <random_rune number="1" min_rarity="3" max_rarity="4" set="1" />
+  </store_item>
+  <store_item>
+    <id>87</id>
+    <name>Random Legendary Rune</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Creates one random Legendary Rune.</desc>
+    <priority>1</priority>
+    <hc_cost>1000</hc_cost>
+    <asset_prefab>rune_empty_legendary</asset_prefab>
+    <icon>rune_empty_legendary</icon>
+    <bundle>34</bundle>
+    <random_rune number="1" min_rarity="4" max_rarity="4" set="1" />
+  </store_item>
+  <store_item>
     <id>91</id>
     <name>Inventory Expansion</name>
     <category>2</category>
@@ -913,6 +939,37 @@
       <item id="2515" quantity="23" weight=".2" />
       <item id="2515" quantity="24" weight=".1" />
       <item id="2515" quantity="25" weight=".1" />
+    </item_pack>
+  </store_item>
+  <store_item>
+    <id>95</id>
+    <name>Brinesoul Pouch</name>
+    <category>2</category>
+    <desc>Contains between 10 and 25 Brinesouls!</desc>
+    <priority>46</priority>
+    <hc_cost>90</hc_cost>
+    <asset_prefab>brinesoul_bag</asset_prefab>
+    <bundle>35</bundle>
+    <card_restriction>2039</card_restriction>
+    <!-- Remove from store if player has this card -->
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="2522" quantity="10" weight=".25" />
+      <item id="2522" quantity="11" weight=".5" />
+      <item id="2522" quantity="12" weight=".75" />
+      <item id="2522" quantity="13" weight=".75" />
+      <item id="2522" quantity="14" weight=".8" />
+      <item id="2522" quantity="15" weight="1" />
+      <item id="2522" quantity="16" weight="1" />
+      <item id="2522" quantity="17" weight=".8" />
+      <item id="2522" quantity="18" weight=".7" />
+      <item id="2522" quantity="19" weight=".7" />
+      <item id="2522" quantity="20" weight=".4" />
+      <item id="2522" quantity="21" weight=".4" />
+      <item id="2522" quantity="22" weight=".2" />
+      <item id="2522" quantity="23" weight=".2" />
+      <item id="2522" quantity="24" weight=".1" />
+      <item id="2522" quantity="25" weight=".1" />
     </item_pack>
   </store_item>
   <!-- =============================== -->
