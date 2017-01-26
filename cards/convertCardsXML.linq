@@ -292,8 +292,14 @@ void Main()
 			writer.WriteLine("    \"id\": \"" + campaign.id + "\",");
 			writer.WriteLine("    \"name\": \"" + campaign.name + "\",");
 			writer.WriteLine("    \"location_id\": \"" + campaign.location_id + "\",");
-			writer.WriteLine("    \"side_mission\": \"" + campaign.side_mission + "\",");
-			writer.WriteLine("    \"battleground_id\": \"" + campaign.battleground_id + "\",");
+			if (!String.IsNullOrWhiteSpace(campaign.side_mission))
+			{
+				writer.WriteLine("    \"side_mission\": \"" + campaign.side_mission + "\",");
+			}
+			if (!String.IsNullOrWhiteSpace(campaign.battleground_id))
+			{
+				writer.WriteLine("    \"battleground_id\": \"" + campaign.battleground_id + "\",");
+			}
 			writer.WriteLine("    \"missions\": [\"" + String.Join("\",\"", campaign.missions) + "\"]");
 			writer.WriteLine("  },");
 		}

@@ -86,7 +86,6 @@ var CAMPAIGNS = {
     "name": "Applied Knowledge",
     "location_id": "0",
     "side_mission": "1",
-    "battleground_id": "",
     "missions": ["1512","1513","1514","1515","1516","1517"]
   },
   "3004": {
@@ -94,7 +93,6 @@ var CAMPAIGNS = {
     "name": "Oda and the Serpent",
     "location_id": "0",
     "side_mission": "1",
-    "battleground_id": "",
     "missions": ["1518","1519","1520","1521","1522","1523"]
   },
   "3005": {
@@ -102,7 +100,6 @@ var CAMPAIGNS = {
     "name": "Losing Baggage",
     "location_id": "0",
     "side_mission": "1",
-    "battleground_id": "",
     "missions": ["1524","1525","1526","1527","1528","1529"]
   },
   "3006": {
@@ -110,7 +107,6 @@ var CAMPAIGNS = {
     "name": "Trial by Dragonfire",
     "location_id": "0",
     "side_mission": "1",
-    "battleground_id": "",
     "missions": ["1530","1531","1532","1533","1534","1535"]
   },
   "3007": {
@@ -118,7 +114,6 @@ var CAMPAIGNS = {
     "name": "Yuriel and the Orc",
     "location_id": "0",
     "side_mission": "1",
-    "battleground_id": "",
     "missions": ["1536","1537","1538","1539","1540","1541"]
   },
   "3008": {
@@ -126,31 +121,24 @@ var CAMPAIGNS = {
     "name": "Night Watch",
     "location_id": "0",
     "side_mission": "1",
-    "battleground_id": "",
     "missions": ["1542","1543","1544","1545","1546","1547"]
   },
   "1": {
     "id": "1",
     "name": "The Elaria Expedition",
     "location_id": "1",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["11","12","13","14"]
   },
   "2": {
     "id": "2",
     "name": "Rise of the Dead",
     "location_id": "1",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["21","22","23","24"]
   },
   "3": {
     "id": "3",
     "name": "The Good, the Bad, and the Fiery",
     "location_id": "1",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["31","32","33","34"]
   },
   "3000": {
@@ -158,919 +146,690 @@ var CAMPAIGNS = {
     "name": "The Ground Quakes...",
     "location_id": "1",
     "side_mission": "1",
-    "battleground_id": "",
     "missions": ["1500","1501","1502","1503"]
   },
   "4": {
     "id": "4",
     "name": "Source of Chaos",
     "location_id": "1",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["41","42","43","44"]
   },
   "5": {
     "id": "5",
     "name": "Wyldwood Depths",
     "location_id": "1",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["51","52","53","54"]
   },
   "6": {
     "id": "6",
     "name": "Chaos Contagion",
     "location_id": "1",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["61","62","63","64"]
   },
   "1000": {
     "id": "1000",
     "name": "Demon's Pass",
     "location_id": "100",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5001","5002","5003","5004","5005","5006"]
   },
   "1001": {
     "id": "1001",
     "name": "First Contact",
     "location_id": "100",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5007","5008","5009","5010","5011","5012"]
   },
   "1002": {
     "id": "1002",
     "name": "Aria's Fall",
     "location_id": "100",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5013","5014","5015","5016","5017","5018"]
   },
   "1083": {
     "id": "1083",
     "name": "Salt Waste Empire",
     "location_id": "100",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5313","5314","5315","5316","5317"]
   },
   "1084": {
     "id": "1084",
     "name": "Backup Plan",
     "location_id": "100",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5318","5319","5320","5321","5322","5323"]
   },
   "1085": {
     "id": "1085",
     "name": "Ground Inspection",
     "location_id": "100",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5324","5325","5326","5327","5328"]
   },
   "1086": {
     "id": "1086",
     "name": "Reks and the Tamer",
     "location_id": "100",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5329","5330","5331","5332","5333","5334","5335","5336"]
   },
   "1003": {
     "id": "1003",
     "name": "Tarragon Quakes",
     "location_id": "101",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5019","5020","5021","5022","5023","5024"]
   },
   "1004": {
     "id": "1004",
     "name": "Decim's Deceit",
     "location_id": "101",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5025"]
   },
   "1005": {
     "id": "1005",
     "name": "Scorched Lands",
     "location_id": "101",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5026"]
   },
   "1006": {
     "id": "1006",
     "name": "Dragon's Aerie",
     "location_id": "101",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5027"]
   },
   "1007": {
     "id": "1007",
     "name": "Ice Dragon's Realm",
     "location_id": "101",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5028"]
   },
   "1018": {
     "id": "1018",
     "name": "Tarragon Quakes",
     "location_id": "101",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5065","5066","5067","5068","5069","5070"]
   },
   "1019": {
     "id": "1019",
     "name": "Decim's Deceit",
     "location_id": "101",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5071"]
   },
   "1020": {
     "id": "1020",
     "name": "Scorched Lands",
     "location_id": "101",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5072"]
   },
   "1021": {
     "id": "1021",
     "name": "Dragon's Aerie",
     "location_id": "101",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5073"]
   },
   "1022": {
     "id": "1022",
     "name": "Ice Dragon's Realm",
     "location_id": "101",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5074"]
   },
   "1023": {
     "id": "1023",
     "name": "Molten Eruption",
     "location_id": "101",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5075","5076","5077","5078"]
   },
   "1064": {
     "id": "1064",
     "name": "Lakeside",
     "location_id": "101",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5241","5242","5243","5244"]
   },
   "1065": {
     "id": "1065",
     "name": "Nasty Neighbours",
     "location_id": "101",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5245","5246","5247","5248"]
   },
   "1066": {
     "id": "1066",
     "name": "Lost Lambs",
     "location_id": "101",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5249","5250","5251","5252","5253"]
   },
   "1067": {
     "id": "1067",
     "name": "Worst Fears",
     "location_id": "101",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5254","5255","5256"]
   },
   "1068": {
     "id": "1068",
     "name": "Goblins Afoot",
     "location_id": "101",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5257","5258","5259"]
   },
   "1069": {
     "id": "1069",
     "name": "Sinister Intentions",
     "location_id": "101",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5260","5261","5262","5263","5264"]
   },
   "1070": {
     "id": "1070",
     "name": "High Flying",
     "location_id": "101",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5265"]
   },
   "1097": {
     "id": "1097",
     "name": "The Price of Freedom",
     "location_id": "101",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5388","5389","5390","5391","5392"]
   },
   "1098": {
     "id": "1098",
     "name": "Dragon Buddies",
     "location_id": "101",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5393","5394","5395","5396","5397","5398"]
   },
   "1099": {
     "id": "1099",
     "name": "Cry of the Wild",
     "location_id": "101",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5399","5400","5401","5402","5403"]
   },
   "1100": {
     "id": "1100",
     "name": "Relentless Kidnappers",
     "location_id": "101",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5404","5405","5406","5407"]
   },
   "1101": {
     "id": "1101",
     "name": "Showdown",
     "location_id": "101",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5408","5409","5410","5411"]
   },
   "1008": {
     "id": "1008",
     "name": "The Strong Stone",
     "location_id": "102",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5029","5030"]
   },
   "1009": {
     "id": "1009",
     "name": "Golden Lava",
     "location_id": "102",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5031","5032","5033","5034"]
   },
   "1010": {
     "id": "1010",
     "name": "Magma Explosion",
     "location_id": "102",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5035","5036","5037","5038"]
   },
   "1011": {
     "id": "1011",
     "name": "Celestial Depths",
     "location_id": "102",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5039","5040"]
   },
   "1012": {
     "id": "1012",
     "name": "Capturing the Sky",
     "location_id": "102",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5041","5042"]
   },
   "1042": {
     "id": "1042",
     "name": "Scorched Villages",
     "location_id": "102",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5154","5155","5156"]
   },
   "1043": {
     "id": "1043",
     "name": "Back to the Vaults",
     "location_id": "102",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5157","5158","5159"]
   },
   "1044": {
     "id": "1044",
     "name": "To Water Island",
     "location_id": "102",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5160","5161","5162","5163","5164"]
   },
   "1045": {
     "id": "1045",
     "name": "Zen Gardens",
     "location_id": "102",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5165","5166","5167","5168","5169","5170"]
   },
   "1046": {
     "id": "1046",
     "name": "Quick Thinking",
     "location_id": "102",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5171","5172","5173","5174"]
   },
   "1047": {
     "id": "1047",
     "name": "Final Round",
     "location_id": "102",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5175","5176","5177","5178"]
   },
   "1013": {
     "id": "1013",
     "name": "Into the Marshes",
     "location_id": "103",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5043","5044","5045","5046","5047","5048","5049","5050"]
   },
   "1014": {
     "id": "1014",
     "name": "High Grace",
     "location_id": "103",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5051","5052","5053","5054"]
   },
   "1015": {
     "id": "1015",
     "name": "Tadpole Collection",
     "location_id": "103",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5055","5056","5057","5058"]
   },
   "1016": {
     "id": "1016",
     "name": "Search and Rescue",
     "location_id": "103",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5059","5060","5061","5062"]
   },
   "1017": {
     "id": "1017",
     "name": "To The Throne",
     "location_id": "103",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5063","5064"]
   },
   "1024": {
     "id": "1024",
     "name": "To Frigore!",
     "location_id": "104",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5079","5080","5081","5082"]
   },
   "1025": {
     "id": "1025",
     "name": "Vapor Collection",
     "location_id": "104",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5083","5084","5085","5086"]
   },
   "1026": {
     "id": "1026",
     "name": "Vapor Hunters",
     "location_id": "104",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5087","5088","5089","5090","5091","5092"]
   },
   "1027": {
     "id": "1027",
     "name": "Descent into Madness",
     "location_id": "104",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5093","5094","5095","5096"]
   },
   "1028": {
     "id": "1028",
     "name": "Flashing Lights",
     "location_id": "104",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5097","5098"]
   },
   "1029": {
     "id": "1029",
     "name": "Playing With Vapor",
     "location_id": "104",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5099","5100","5101","5102","5103"]
   },
   "1030": {
     "id": "1030",
     "name": "Closer to The Void",
     "location_id": "105",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5104","5105","5106","5107","5108"]
   },
   "1031": {
     "id": "1031",
     "name": "Trial by Purple Fire",
     "location_id": "105",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5109","5110","5111","5112"]
   },
   "1032": {
     "id": "1032",
     "name": "Climate Change",
     "location_id": "105",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5113","5114","5115","5116"]
   },
   "1033": {
     "id": "1033",
     "name": "Infection of The Void",
     "location_id": "105",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5117","5118","5119","5120","5121","5122"]
   },
   "1034": {
     "id": "1034",
     "name": "Lost Laboratory",
     "location_id": "105",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5123","5124","5125","5126"]
   },
   "1035": {
     "id": "1035",
     "name": "Lay Down Your Burdens",
     "location_id": "105",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5127","5128"]
   },
   "1087": {
     "id": "1087",
     "name": "Light of the Wisps",
     "location_id": "105",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5337","5338","5339","5340","5341"]
   },
   "1088": {
     "id": "1088",
     "name": "A Difference of Opinion",
     "location_id": "105",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5342","5343","5344","5345","5346","5347"]
   },
   "1089": {
     "id": "1089",
     "name": "Influence of The Void",
     "location_id": "105",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5348","5349","5350","5351","5352"]
   },
   "1090": {
     "id": "1090",
     "name": "Redemption",
     "location_id": "105",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5353","5354","5355","5356","5357","5358","5359","5360"]
   },
   "1036": {
     "id": "1036",
     "name": "To Skyhaven",
     "location_id": "106",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5129","5130","5131","5132"]
   },
   "1037": {
     "id": "1037",
     "name": "Finding Your Way",
     "location_id": "106",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5133","5134","5135","5136"]
   },
   "1038": {
     "id": "1038",
     "name": "Home Sweet Home",
     "location_id": "106",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5137","5138","5139","5140","5141"]
   },
   "1039": {
     "id": "1039",
     "name": "Old Mistakes",
     "location_id": "106",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5142","5143","5144","5145","5146","5147"]
   },
   "1040": {
     "id": "1040",
     "name": "To Court",
     "location_id": "106",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5148","5149","5150"]
   },
   "1041": {
     "id": "1041",
     "name": "History Repeats",
     "location_id": "106",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5151","5152","5153"]
   },
   "1077": {
     "id": "1077",
     "name": "Rumor Mill",
     "location_id": "106",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5290","5291","5292"]
   },
   "1078": {
     "id": "1078",
     "name": "Territory Control",
     "location_id": "106",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5293","5294","5295"]
   },
   "1079": {
     "id": "1079",
     "name": "Redemption",
     "location_id": "106",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5296","5297","5298","5299","5300"]
   },
   "1080": {
     "id": "1080",
     "name": "Groundwork",
     "location_id": "106",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5301","5302","5303"]
   },
   "1081": {
     "id": "1081",
     "name": "What was Sown",
     "location_id": "106",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5304","5305","5306"]
   },
   "1082": {
     "id": "1082",
     "name": "Plan of Attack",
     "location_id": "106",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5307","5308","5309","5310","5311","5312"]
   },
   "1048": {
     "id": "1048",
     "name": "New Horizons",
     "location_id": "107",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5179","5180","5181"]
   },
   "1049": {
     "id": "1049",
     "name": "Saying Goodbye",
     "location_id": "107",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5182","5183","5184"]
   },
   "1050": {
     "id": "1050",
     "name": "Golden Crown Banquet",
     "location_id": "107",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5185","5186","5187","5188","5189"]
   },
   "1051": {
     "id": "1051",
     "name": "Surprise from Above",
     "location_id": "107",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5190","5191","5192"]
   },
   "1052": {
     "id": "1052",
     "name": "The Chase",
     "location_id": "107",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5193","5194","5195","5196"]
   },
   "1053": {
     "id": "1053",
     "name": "Defensive Maneuvers",
     "location_id": "107",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5197","5198","5199","5200","5201","5202"]
   },
   "1057": {
     "id": "1057",
     "name": "Side Dish",
     "location_id": "107",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5215"]
   },
   "1102": {
     "id": "1102",
     "name": "The Secret Mission",
     "location_id": "107",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5412","5413","5414","5415","5416"]
   },
   "1103": {
     "id": "1103",
     "name": "Gold Versus Dawn",
     "location_id": "107",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5417","5418","5419","5420","5421","5422"]
   },
   "1104": {
     "id": "1104",
     "name": "Tracking the Corruption",
     "location_id": "107",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5423","5424","5425","5426","5427"]
   },
   "1105": {
     "id": "1105",
     "name": "Corrupted Waters",
     "location_id": "107",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5428","5429","5430","5431"]
   },
   "1106": {
     "id": "1106",
     "name": "Alternate Plan",
     "location_id": "107",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5432","5433","5434","5435"]
   },
   "1107": {
     "id": "1107",
     "name": "Spirits of Time",
     "location_id": "107",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5436","5437","5438","5439","5440"]
   },
   "1054": {
     "id": "1054",
     "name": "Volcano of Eruptions",
     "location_id": "108",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5203","5204","5205","5206"]
   },
   "1055": {
     "id": "1055",
     "name": "A Man Who Loves Birds",
     "location_id": "108",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5207","5208","5209","5210"]
   },
   "1056": {
     "id": "1056",
     "name": "Some Gloomy Lake",
     "location_id": "108",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5211","5212","5213","5214"]
   },
   "1058": {
     "id": "1058",
     "name": "Avian Hideaway",
     "location_id": "109",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5216","5217","5218","5219","5220"]
   },
   "1059": {
     "id": "1059",
     "name": "Unwavered",
     "location_id": "109",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5221","5222","5223","5224"]
   },
   "1060": {
     "id": "1060",
     "name": "To Red Feather Valley",
     "location_id": "109",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5225","5226","5227","5228"]
   },
   "1061": {
     "id": "1061",
     "name": "Into the City",
     "location_id": "109",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5229","5230","5231","5232","5233","5234"]
   },
   "1062": {
     "id": "1062",
     "name": "Through the Alleyway",
     "location_id": "109",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5235","5236","5237"]
   },
   "1063": {
     "id": "1063",
     "name": "Frobert and the Magistrate",
     "location_id": "109",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5238","5239","5240"]
   },
   "1071": {
     "id": "1071",
     "name": "SOS",
     "location_id": "110",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5266","5267","5268"]
   },
   "1072": {
     "id": "1072",
     "name": "To Beetleton Bunker",
     "location_id": "110",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5269","5270","5271"]
   },
   "1073": {
     "id": "1073",
     "name": "Town on Fire",
     "location_id": "110",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5272","5273","5274","5275","5276"]
   },
   "1074": {
     "id": "1074",
     "name": "Goblin Incoming",
     "location_id": "110",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5277","5278","5279","5280","5281","5282"]
   },
   "1075": {
     "id": "1075",
     "name": "The Artifact",
     "location_id": "110",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5283","5284","5285","5286"]
   },
   "1076": {
     "id": "1076",
     "name": "Up, Up and Away",
     "location_id": "110",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5287","5288","5289"]
   },
   "1091": {
     "id": "1091",
     "name": "Decim and the Goblins",
     "location_id": "111",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5361","5362","5363","5364","5365"]
   },
   "1092": {
     "id": "1092",
     "name": "Dungeon Depths",
     "location_id": "111",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5366","5367","5368","5369","5370"]
   },
   "1093": {
     "id": "1093",
     "name": "The Fugitive",
     "location_id": "111",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5371","5372","5373","5374","5375","5376"]
   },
   "1094": {
     "id": "1094",
     "name": "Common Enemy",
     "location_id": "111",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5377","5378","5379","5380"]
   },
   "1095": {
     "id": "1095",
     "name": "New Friends",
     "location_id": "111",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5381","5382","5383","5384"]
   },
   "1096": {
     "id": "1096",
     "name": "Trick or Treat",
     "location_id": "111",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5385","5386","5387"]
   },
   "10": {
     "id": "10",
     "name": "The City of Luminis",
     "location_id": "2",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["101","102","103","104"]
   },
   "11": {
     "id": "11",
     "name": "Aether's Scorn",
     "location_id": "2",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["111","112","113","114"]
   },
   "12": {
     "id": "12",
     "name": "Castle on the Rocks",
     "location_id": "2",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["121","122","123","124"]
   },
   "3001": {
@@ -1078,79 +837,60 @@ var CAMPAIGNS = {
     "name": "The Wind Stirs...",
     "location_id": "2",
     "side_mission": "1",
-    "battleground_id": "",
     "missions": ["1504","1505","1506","1507"]
   },
   "7": {
     "id": "7",
     "name": "Road to Luminis",
     "location_id": "2",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["71","72","73","74"]
   },
   "8": {
     "id": "8",
     "name": "The Glowing Grove",
     "location_id": "2",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["81","82","83","84"]
   },
   "9": {
     "id": "9",
     "name": "Mage's River",
     "location_id": "2",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["91","92","93","94"]
   },
   "13": {
     "id": "13",
     "name": "Chaos Arrives",
     "location_id": "3",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["131","132","133","134"]
   },
   "14": {
     "id": "14",
     "name": "Siege of Karthos",
     "location_id": "3",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["141","142","143","144"]
   },
   "15": {
     "id": "15",
     "name": "Karthos, Lair of Chaos",
     "location_id": "3",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["151","152","153","154"]
   },
   "16": {
     "id": "16",
     "name": "Across the Flames",
     "location_id": "3",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["161","162","163","164"]
   },
   "17": {
     "id": "17",
     "name": "Securing an Exit",
     "location_id": "3",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["171","172","173","174"]
   },
   "18": {
     "id": "18",
     "name": "Void's Ambush",
     "location_id": "3",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["181","182","183","184"]
   },
   "3002": {
@@ -1158,174 +898,132 @@ var CAMPAIGNS = {
     "name": "The Heat Rises...",
     "location_id": "3",
     "side_mission": "1",
-    "battleground_id": "",
     "missions": ["1508","1509","1510","1511"]
   },
   "19": {
     "id": "19",
     "name": "Caverns of Crossing",
     "location_id": "4",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["191","192","193","194"]
   },
   "20": {
     "id": "20",
     "name": "The Hermit",
     "location_id": "4",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["201","202","203","204"]
   },
   "21": {
     "id": "21",
     "name": "Eater of Rock",
     "location_id": "4",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["211","212","213","214"]
   },
   "22": {
     "id": "22",
     "name": "Impending Peril",
     "location_id": "4",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["221","222","223","224"]
   },
   "23": {
     "id": "23",
     "name": "Wings of Void",
     "location_id": "4",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["231","232","233","234"]
   },
   "24": {
     "id": "24",
     "name": "The Void Core",
     "location_id": "4",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["241","242","243","244"]
   },
   "25": {
     "id": "25",
     "name": "Swamp Lands",
     "location_id": "5",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["251","252","253","254"]
   },
   "26": {
     "id": "26",
     "name": "Exploring Dawnglow",
     "location_id": "5",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["261","262","263","264"]
   },
   "27": {
     "id": "27",
     "name": "Plagued Waters",
     "location_id": "5",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["271","272","273","274"]
   },
   "28": {
     "id": "28",
     "name": "Small Prints",
     "location_id": "5",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["281","282","283","284"]
   },
   "29": {
     "id": "29",
     "name": "Corruption's Nest",
     "location_id": "5",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["291","292","293","294"]
   },
   "30": {
     "id": "30",
     "name": "Big Mama",
     "location_id": "5",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["301","302","303","304"]
   },
   "31": {
     "id": "31",
     "name": "Tales from the Swamp",
     "location_id": "6",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["311","312","313","314"]
   },
   "32": {
     "id": "32",
     "name": "Finding the Lost",
     "location_id": "6",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["321","322","323","324"]
   },
   "33": {
     "id": "33",
     "name": "Seastone Citadel",
     "location_id": "6",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["331","332","333","334"]
   },
   "34": {
     "id": "34",
     "name": "Brother from Another Mother",
     "location_id": "6",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["341","342","343","344"]
   },
   "35": {
     "id": "35",
     "name": "Next Generation",
     "location_id": "6",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["351","352","353","354"]
   },
   "36": {
     "id": "36",
     "name": "Trial by Fire",
     "location_id": "6",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["361","362","363","364"]
   },
   "1108": {
     "id": "1108",
     "name": "Weakening the Lady of the Sea",
     "location_id": "7",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5441","5442"]
   },
   "1109": {
     "id": "1109",
     "name": "The Healer",
     "location_id": "7",
-    "side_mission": "",
-    "battleground_id": "",
     "missions": ["5443","5444","5445","5446","5447","5448","5449","5450","5451","5452","5453","5454"]
   },
   "1110": {
     "id": "1110",
     "name": "The Guardian",
     "location_id": "7",
-    "side_mission": "",
     "battleground_id": "2002",
     "missions": ["5455","5456","5457","5458","5459","5460","5461","5462","5463","5464","5465","5466"]
   },
@@ -1333,7 +1031,6 @@ var CAMPAIGNS = {
     "id": "1111",
     "name": "The Tide Swells...",
     "location_id": "7",
-    "side_mission": "",
     "battleground_id": "2001",
     "missions": ["5467","5468","5469"]
   },

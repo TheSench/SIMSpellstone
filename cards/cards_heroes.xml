@@ -7182,7 +7182,7 @@
       <skill id="imbue" s="nullify" x="2" />
       <skill id="protect" x="2" />
       <skill id="protect" x="1" all="1" />&gt;
-    </upgrade>
+		</upgrade>
     <upgrade>
       <level>4</level>
       <health>65</health>
