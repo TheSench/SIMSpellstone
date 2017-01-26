@@ -176,16 +176,19 @@ function copy_deck(original_deck) {
     return new_deck;
 }
 
-    function getDeckCards(original_deck) {
-        var new_deck = {};
-        new_deck.commander = get_card_apply_battlegrounds(original_deck.commander);
-        new_deck.deck = [];
-        var list = original_deck.deck;
-        for (var i = 0, len = list.length; i < len; i++) {
-            new_deck.deck.push(get_card_apply_battlegrounds(list[i]));
-        }
-        return new_deck;
+function getDeckCards(original_deck, owner) {
+    var new_deck = {};
+    new_deck.commander = get_card_by_id(original_deck.commander);
+    new_deck.deck = [];
+    var list = original_deck.deck;
+    var battlegrounds = SIMULATOR.battlegrounds.onCreate.filter(function (bge) {
+        return !((owner === 'player' && bge.enemy_only) || (owner === 'cpu' && bge.ally_only));
+    });
+    for (var i = 0, len = list.length; i < len; i++) {
+        new_deck.deck.push(get_card_apply_battlegrounds(list[i], battlegrounds));
     }
+    return new_deck;
+}
 
 function copy_card_list(original_card_list) {
     var new_card_list = [];
@@ -1076,7 +1079,7 @@ function addMissionBGE(battlegrounds, campaignID, missionLevel) {
                         effect.mult = effect.base_mult + effect.mult * levelsToScale;
                     }
                 }
-                addBgeFromList(battlegrounds, battleground);
+                addBgeFromList(battlegrounds, battleground, 'cpu');
             }
         }
     }
@@ -1299,7 +1302,7 @@ function debug_dump_decks() {
     */
     echo += '<br>';
     echo += '<h1>Attacker</h1>';
-    var current_card = get_card_by_id(cache_player_deck.commander, true);
+    var current_card = get_card_by_id(cache_player_deck.commander);
     current_card.owner = 'player';
     current_card.health_left = current_card.health;
     echo += debug_name(current_card) + debug_skills(current_card) + '<br>';
@@ -2119,7 +2122,7 @@ function update_preset_deck(deck) {
             cpu_cards[i] = unit;
         }
     }
-    return getDeckCards(deck);
+    return getDeckCards(deck, 'cpu');
 }
 
 function getPresetCommander(deckInfo, level) {
@@ -2321,8 +2324,8 @@ function getReverseFusions() {
 
 // Output card array
 var get_card_apply_battlegrounds = function (id, battlegrounds) {
-    battlegrounds = battlegrounds || SIMULATOR.battlegrounds;
-    return get_card_by_id(id, battlegrounds.onCreate);
+    battlegrounds = battlegrounds || SIMULATOR.battlegrounds.onCreate;
+    return get_card_by_id(id, battlegrounds);
 }
 
 var get_card_apply_battlegrounds_inner = function (id, battlegrounds) {
@@ -2344,15 +2347,7 @@ function get_skills(id, level) {
 }
 
 function get_card_by_id(unit, skillModifiers) {
-
-    var unitKey = makeUnitKey(unit);
-    var cached = card_cache[unitKey];
-    if (cached) {
-        cached = cloneCard(cached);
-        if (unit.priority) cached.priority = unit.priority;
-        return cached;
-    }
-
+    
     var current_card = loadCard(unit.id);
 
     // Not a valid card
@@ -2369,12 +2364,10 @@ function get_card_by_id(unit, skillModifiers) {
         if (!current_card.skill) {
             current_card.skill = [];
         }
-        var cached = makeUnit(current_card, unit.level, unit.runes, skillModifiers);
+        var card = makeUnit(current_card, unit.level, unit.runes, skillModifiers);
 
-        card_cache[unitKey] = cached;
-        cached = cloneCard(cached);
-        if (unit.priority) cached.priority = unit.priority;
-        return cached
+        if (unit.priority) card.priority = unit.priority;
+        return card
     }
 }
 
@@ -2517,7 +2510,6 @@ function makeUnitInfo(id, level, runes) {
 }
 
 var elariaCaptain = makeUnitInfo(202, 1);
-var card_cache = {};
 
 function getRarity(rarity) {
     return rarityStrings[rarity];

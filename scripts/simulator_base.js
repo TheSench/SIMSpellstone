@@ -1235,10 +1235,10 @@ var SIMULATOR = {};
         // Load enemy deck
         if (getmission && missionlevel > 1 && missionlevel < 7) {
             cache_cpu_deck = load_deck_mission(getmission, missionlevel);
-            cache_cpu_deck_cards = getDeckCards(cache_cpu_deck);
+            cache_cpu_deck_cards = getDeckCards(cache_cpu_deck, 'cpu');
         } else if (getraid) {
             cache_cpu_deck = load_deck_raid(getraid, raidlevel);
-            cache_cpu_deck_cards = getDeckCards(cache_cpu_deck);
+            cache_cpu_deck_cards = getDeckCards(cache_cpu_deck, 'cpu');
         }
         if (cache_cpu_deck_cards) {
             deck['cpu'] = copy_deck(cache_cpu_deck_cards);
@@ -1309,7 +1309,7 @@ var SIMULATOR = {};
         } else {
             cache_player_deck = load_deck_from_cardlist();
         }
-        cache_player_deck_cards = getDeckCards(cache_player_deck);
+        cache_player_deck_cards = getDeckCards(cache_player_deck, 'player');
 
         // Load enemy deck
         pvpAI = true;
@@ -1327,7 +1327,7 @@ var SIMULATOR = {};
         } else {
             cache_cpu_deck = load_deck_from_cardlist();
         }
-        cache_cpu_deck_cards = getDeckCards(cache_cpu_deck);
+        cache_cpu_deck_cards = getDeckCards(cache_cpu_deck, 'cpu');
     }
 
     function setupField(field) {

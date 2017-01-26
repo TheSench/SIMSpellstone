@@ -324,8 +324,6 @@
             cache_cpu_deck = load_deck_from_cardlist();
         }
 
-        card_cache = {};
-
         var params = {};
         params['cache_player_deck'] = cache_player_deck;
         params['cache_cpu_deck'] = cache_cpu_deck;
@@ -455,8 +453,6 @@
         } else {
             cache_cpu_deck = load_deck_from_cardlist();
         }
-
-        card_cache = {};
 
         outp(""); // Clear display
         hideTable();

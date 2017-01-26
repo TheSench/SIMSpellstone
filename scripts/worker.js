@@ -92,7 +92,6 @@ function initializeSims(params) {
     trackStats = params['trackStats'];
     getCardStats = params['getCardStats'];
     sims_per_batch = params['sims_per_batch'];
-    card_cache = {};    // clear card cache to avoid memory bloat when simulating different decks
 
     // Set up battleground effects, if any
     SIMULATOR.battlegrounds = getBattlegrounds(getbattleground, selfbges, enemybges, mapbges, getmission, getraid);
