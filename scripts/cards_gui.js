@@ -19,13 +19,17 @@ var CARD_GUI = {};
         return $deck;
     }
 
-    function makeDeckHTML(deck, noblanks) {
+    function makeDeckHTML(deck, noblanks, battlegrounds) {
         var cards = [];
         var commander = get_card_by_id(deck.commander);
         cards.push(create_card_html(commander, false, false));
         for (var i = 0, len = deck.deck.length; i < len; i++) {
             var deckEntry = deck.deck[i];
-            var unit = get_card_by_id(deckEntry);
+            if (battlegrounds) {
+                var unit = get_card_apply_battlegrounds(deckEntry, battlegrounds);
+            } else {
+                var unit = get_card_by_id(deckEntry);
+            }
             cards.push(create_card_html(unit, false, false));
         }
         if (!noblanks) for (; i < 15; i++) {

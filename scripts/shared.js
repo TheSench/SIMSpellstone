@@ -2328,10 +2328,6 @@ var get_card_apply_battlegrounds = function (id, battlegrounds) {
     return get_card_by_id(id, battlegrounds);
 }
 
-var get_card_apply_battlegrounds_inner = function (id, battlegrounds) {
-    return get_card_by_id(id, battlegrounds.onCreate);
-}
-
 function get_skills(id, level) {
     var card = loadCard(id);
     var skills = card.skill;
