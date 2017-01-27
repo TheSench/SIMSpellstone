@@ -11,7 +11,10 @@ var DATA_UPDATER = (function () {
         $("#loadingSplash").html("Checking for New Cards...");
         // Don't update more than once per minute
         var now = Date.now();
-        if (!lastUpdate || lastUpdate - now > 60000) {
+        if ((typeof spoilers === "undefined")) {
+            // Temp fix
+            if (callback) callback();
+        }else if (!lastUpdate || lastUpdate - now > 60000) {
             lastUpdate = now;
             doUpdateCards(callback);
         } else {
