@@ -2061,23 +2061,23 @@ var SIMULATOR = {};
                     target['poisoned'] = poison;
                     if (debug) echo += debug_name(current_assault) + ' inflicts poison(' + poison + ') on ' + debug_name(target) + '<br>';
                 }
+            }
 
-                // Nullify
-                // - Attacker must not have died to Vengeance
-                // - Attacker must have taken damage
-                // - Target must be an assault
-                if (current_assault.nullify) {
-                    var nullify = current_assault.nullify;
-                    var enhanced = getEnhancement(current_assault, 'nullify');
-                    if (enhanced) {
-                        if (enhanced < 0) {
-                            enhanced = Math.ceil(nullify * -enhanced);
-                        }
-                        nullify += enhanced;
+            // Nullify
+            // - Attacker must not have died to Vengeance
+            // - Attacker must have taken damage
+            // - Target must be an assault
+            if (current_assault.nullify) {
+                var nullify = current_assault.nullify;
+                var enhanced = getEnhancement(current_assault, 'nullify');
+                if (enhanced) {
+                    if (enhanced < 0) {
+                        enhanced = Math.ceil(nullify * -enhanced);
                     }
-                    target.nullified += nullify;
-                    if (debug) echo += debug_name(current_assault) + ' inflicts nullify(' + nullify + ') on ' + debug_name(target) + '<br>';
+                    nullify += enhanced;
                 }
+                target.nullified += nullify;
+                if (debug) echo += debug_name(current_assault) + ' inflicts nullify(' + nullify + ') on ' + debug_name(target) + '<br>';
             }
         }
 
