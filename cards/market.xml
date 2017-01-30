@@ -2750,7 +2750,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <priority>300</priority>
-    <desc>Includes one ^cE7FFLegendary Rune Sliver^cFFFF! May be purchased three times!</desc>
+    <desc>Includes one ^cE7FFLegendary Rune Sliver^cFFFF! May be purchased six times!</desc>
     <asset_prefab>Legendary_rune_fragment</asset_prefab>
     <bundle>35</bundle>
     <icon>icon_purple_crystal</icon>

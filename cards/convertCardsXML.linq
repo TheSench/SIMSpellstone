@@ -3,7 +3,7 @@
   <Namespace>System.Xml.Serialization</Namespace>
 </Query>
 
-static bool downloadFiles = false;
+static bool downloadFiles = true;
 
 static string path = Path.GetDirectoryName(Util.CurrentQueryPath);
 static string baseUrl = @"https://spellstone.synapse-games.com/assets";
@@ -18,10 +18,20 @@ static System.Xml.Serialization.XmlSerializer bgeDeserializer = new System.Xml.S
 
 void Main()
 {
-	var xmlFile = Path.Combine(path, "cards.xml");
-	var doc = XDocument.Load(xmlFile);
+	string xmlFile;
 
-	HashSet<string> existingUnits = LoadUnits(doc);
+	HashSet<string> existingUnits = new HashSet<string>(
+		LoadUnits("cards_config.xml")
+		.Union(LoadUnits("cards_heroes.xml"))
+		.Union(LoadUnits("cards_premium_aether.xml"))
+		.Union(LoadUnits("cards_premium_chaos.xml"))
+		.Union(LoadUnits("cards_premium_wyld.xml"))
+		.Union(LoadUnits("cards_reward.xml"))
+		.Union(LoadUnits("cards_special.xml"))
+		.Union(LoadUnits("cards_standard.xml"))
+		.Union(LoadUnits("cards_story.xml")));
+
+
 	HashSet<string> newUnits = new HashSet<string>();
 
 	Normalize("arena.xml", downloadFiles);
@@ -135,7 +145,7 @@ void Main()
 
 	// Get Fusions
 	xmlFile = Path.Combine(path, "fusion_recipes_cj2.xml");
-	doc = XDocument.Load(xmlFile);
+	var doc = XDocument.Load(xmlFile);
 	var fusions = doc.Descendants("fusion_recipe").Select(node => new fusionRecipe()
 	{
 		fusedCardID = node.Element("card_id").Value,
@@ -382,8 +392,9 @@ void Main()
 	}
 }
 
-private HashSet<string> LoadUnits(XDocument doc)
+private HashSet<string> LoadUnits(string file)
 {
+	var doc = XDocument.Load(Path.Combine(path, file));
 	var existingUnits = new HashSet<string>();
 	var unitNodes = doc.Descendants("unit");
 	foreach (var unitXML in unitNodes)

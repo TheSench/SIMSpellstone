@@ -13487,38 +13487,38 @@
     <asset_bundle>83</asset_bundle>
     <hidden_until_time>1485450000</hidden_until_time>
     <attack>2</attack>
-    <health>11</health>
+    <health>10</health>
     <cost>1</cost>
     <rarity>4</rarity>
     <skill id="evade" x="1" />
-    <skill id="rally" x="1" />
+    <skill id="rally" x="1" all="1" />
     <skill id="jam" c="4" />
     <type>3</type>
     <sub_type>12</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <skill id="evade" x="1" />
-      <skill id="rally" x="2" />
-      <skill id="jam" c="4" />
+      <health>11</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>12</health>
-    </upgrade>
-    <upgrade>
-      <level>4</level>
-      <health>13</health>
-    </upgrade>
-    <upgrade>
-      <level>5</level>
       <skill id="evade" x="1" />
-      <skill id="rally" x="2" />
+      <skill id="rally" x="1" all="1" />
       <skill id="jam" c="3" />
     </upgrade>
     <upgrade>
+      <level>4</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
       <level>6</level>
-      <health>14</health>
+      <skill id="evade" x="1" />
+      <skill id="rally" x="2" all="1" />
+      <skill id="jam" c="3" />
     </upgrade>
   </unit>
   <unit>
