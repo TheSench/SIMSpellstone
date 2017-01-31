@@ -178,7 +178,8 @@
             var selectable = [];
             for (var id in $scope.battlegrounds) {
                 var BGE = $scope.battlegrounds[id];
-                if (Number(BGE.id) > 1000) selectable.push(BGE);
+                var bgeID = Number(BGE.id);
+                if (bgeID > 1000 && bgeID < 2000) selectable.push(BGE);
             }
             selectable.sort(function (a, b) { return a.id - b.id; });
             return selectable;
