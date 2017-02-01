@@ -1472,9 +1472,11 @@ var showAdvancedFilters = function (skill) {
         case 'armored':
         case 'berserk':
         case 'burn':
+        case 'corrosive':
         case 'counter':
         case 'evade':
         case 'frost':
+        case 'fury':
         case 'leech':
         case 'nullify':
         case 'pierce':
@@ -1482,15 +1484,24 @@ var showAdvancedFilters = function (skill) {
         case 'valor':
             $("div#amount").show();
             break;
-            // x="1" y="1" all="0" c="0" s="0"
+
+         // x="1" y="1" all="0" c="0" s="0"
+        case 'silence':
+            $("div#amount").show();
+            $("div#faction").show();
+            break;
+
+        // x="1" y="1" all="0" c="0" s="0"
         case 'fervor':
         case 'legion':
         case 'reanimate':
         case 'resurrect':
             $("div#amount").show();
             $("div#faction").show();
+            $("div#timer").show();
             break;
-            // x="1" y="1" all="1" c="0" s="0"
+
+        // x="1" y="1" all="0" c="1" s="0"
         case 'heal':
         case 'protect':
         case 'protect_ice':
@@ -1499,7 +1510,8 @@ var showAdvancedFilters = function (skill) {
             $("label[for=all]").show();
             $("div#faction").show();
             break;
-            // x="1" y="0" all="1" c="0" s="0"
+
+        // x="1" y="0" all="1" c="0" s="0"
         case 'enfeeble':
         case 'strike':
         case 'weaken':
@@ -1515,17 +1527,21 @@ var showAdvancedFilters = function (skill) {
             $("div#skill").show();
             $("div#timer").show();
             break;
-            // x="0" y="0" all="1" c="1" s="0"
+
+        // x="0" y="0" all="1" c="1" s="0"
         case 'jam':
             $("label[for=all]").show();
             $("div#timer").show();
             break;
-            // x="0" y="0" all="0" c="1" s="0"
+
+        // x="0" y="0" all="0" c="1" s="0"
         case 'flurry':
             $("div#timer").show();
             break;
+        default:
+            return null;
     }
-    advancedFilters.dialog("option", "position", { mw: "center", at: "center", of: $("#" + skill)[0] });;
+    advancedFilters.dialog("option", "position", { mw: "center", at: "center", of: $("[data-filter=" + skill + "]")[0] });;
     advancedFilters.dialog("open");
     advancedFilters.skill = skill;
 
