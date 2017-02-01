@@ -692,7 +692,18 @@ var BATTLEGROUNDS = {
   "514": {
     "name": "The Arena",
     "id": "514",
-    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "on_play",
+        "attacker": 1,
+        "first_play": 1,
+        "effect": {
+        	"effect_type": "add_skill",
+        	"id": "slow",
+        	"x": 1,
+        }
+      },
+    ]
   },
   "515": {
     "name": "Golden Leaf Shelter",

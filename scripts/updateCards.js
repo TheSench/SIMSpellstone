@@ -28,7 +28,7 @@ var DATA_UPDATER = (function () {
 
 
     var cardFiles = [
-        "cards.xml"/*
+        //"cards.xml"
         "cards_heroes.xml",
         "cards_premium_aether.xml",
         "cards_premium_chaos.xml",
@@ -36,7 +36,7 @@ var DATA_UPDATER = (function () {
         "cards_reward.xml",
         "cards_special.xml",
         "cards_standard.xml",
-        "cards_story.xml"*/
+        "cards_story.xml"
     ];
     function doUpdateCards(callback, file) {
         file = (file || 0);

@@ -209,10 +209,12 @@ void Main()
 		};
 		units.Add(unit);
 		// Only add these to spoilers if there are other new units - don't want to overwrite spoilers with just new art
+		/*
 		if (newUnits.Count > 0)
 		{
 			newUnits.Add(unit.id);
 		}
+		*/
 	}
 	if (newFusions.Count > 0)
 	{
@@ -436,6 +438,7 @@ public class battleground
 	[XmlArrayItem(Type = typeof(evolve_skill), ElementName = "evolve_skill")]
 	[XmlArrayItem(Type = typeof(skill), ElementName = "skill")]
 	[XmlArrayItem(Type = typeof(scale_attributes), ElementName = "scale_attributes")]
+	[XmlArrayItem(Type = typeof(on_play), ElementName = "on_play")]
 	[XmlArrayItem(Type = typeof(starting_card), ElementName = "starting_card")]
 	[XmlArrayItem(Type = typeof(trap_card), ElementName = "trap_card")]
 	public battlegroundEffect[] effect { get; set; }
@@ -531,6 +534,10 @@ public class battleground
 				else if (effect_i is scale_attributes)
 				{
 					AppendScaling(sb, (scale_attributes)effect_i, tabs3);
+				}
+				else if (effect_i is on_play)
+				{
+					AppendOnPlay(sb, (on_play)effect_i, tabs3);
 				}
 				else if (effect_i is trap_card)
 				{
@@ -1105,6 +1112,44 @@ public partial class scale_attributes : battlegroundEffect
 
 /// <remarks/>
 [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+public partial class on_play : battlegroundEffect
+{
+	private string attackerField;
+	private string defenderField;
+	private string first_playField;
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string attacker
+	{
+		get { return this.attackerField; }
+		set { this.attackerField = value; }
+	}
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string defender
+	{
+		get { return this.defenderField; }
+		set { this.defenderField = value; }
+	}
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string first_play
+	{
+		get { return this.first_playField; }
+		set { this.first_playField = value; }
+	}
+	
+	[XmlElement("add_skill", typeof(add_skill))]
+	[XmlElement("evolve_skill", typeof(evolve_skill))]
+	[XmlElement("skill", typeof(skill))]
+	public battlegroundEffect effect { get; set; }
+}
+
+/// <remarks/>
+[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
 public partial class starting_card : battlegroundEffect
 {
 	private string levelField;
@@ -1325,6 +1370,44 @@ private static void AppendScaling(StringBuilder sb, scale_attributes skill, stri
 	AppendEntry(sb, "base_mult", skill.base_mult, tabs);
 	AppendEntry(sb, "mult", skill.mult, tabs);
 	AppendEntryString(sb, "y", skill.y, tabs);
+}
+
+private static void AppendOnPlay(StringBuilder sb, on_play skill, string tabs)
+{
+	AppendEntryString(sb, "id", skill.id, tabs);
+	AppendEntry(sb, "attacker", skill.attacker, tabs);
+	AppendEntry(sb, "defender", skill.defender, tabs);
+	AppendEntry(sb, "first_play", skill.first_play, tabs);
+
+	sb.Append(tabs).Append("\"effect\": {\r\n");
+	var effect = skill.effect;
+	var tabs2 = tabs + "\t";
+	AppendEntryString(sb, "effect_type", effect.GetType().Name, tabs2);
+	if (effect is skill)
+	{
+		AppendSkill(sb, (skill)effect, tabs2, false);
+	}
+	else if (effect is evolve_skill)
+	{
+		AppendEvolve(sb, (evolve_skill)effect, tabs2);
+	}
+	else if (effect is add_skill)
+	{
+		AppendAddSkill(sb, (add_skill)effect, tabs2);
+	}
+	else if (effect is scale_attributes)
+	{
+		AppendScaling(sb, (scale_attributes)effect, tabs2);
+	}
+	else if (effect is on_play)
+	{
+		AppendOnPlay(sb, (on_play)effect, tabs2);
+	}
+	else if (effect is trap_card)
+	{
+		AppendTrap(sb, (trap_card)effect, tabs2);
+	}
+	sb.Append(tabs).Append("}\r\n");
 }
 
 private static void AppendTowerLevel(StringBuilder sb, starting_card info, string tabs)

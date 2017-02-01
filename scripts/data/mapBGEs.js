@@ -272,6 +272,7 @@ var MAP_BATTLEGROUNDS = {
                           "effect_type": "on_play",
                           "defender": "1",
                           "effect": {
+                              "effect_type": "skill",
                               "id": "ambush",
                               "base": "health",
                               "mult": 0.1
@@ -287,6 +288,7 @@ var MAP_BATTLEGROUNDS = {
                           "effect_type": "on_play",
                           "defender": "1",
                           "effect": {
+                              "effect_type": "skill",
                               "id": "ambush",
                               "base": "health",
                               "mult": 0.15
@@ -302,6 +304,7 @@ var MAP_BATTLEGROUNDS = {
                           "effect_type": "on_play",
                           "defender": "1",
                           "effect": {
+                              "effect_type": "skill",
                               "id": "ambush",
                               "base": "health",
                               "mult": 0.2
@@ -317,6 +320,7 @@ var MAP_BATTLEGROUNDS = {
                           "effect_type": "on_play",
                           "defender": "1",
                           "effect": {
+                              "effect_type": "skill",
                               "id": "ambush",
                               "base": "health",
                               "mult": 0.25
@@ -332,6 +336,7 @@ var MAP_BATTLEGROUNDS = {
                           "effect_type": "on_play",
                           "defender": "1",
                           "effect": {
+                              "effect_type": "skill",
                               "id": "ambush",
                               "base": "health",
                               "mult": 0.35
@@ -347,6 +352,7 @@ var MAP_BATTLEGROUNDS = {
                           "effect_type": "on_play",
                           "defender": "1",
                           "effect": {
+                              "effect_type": "skill",
                               "id": "ambush",
                               "base": "health",
                               "mult": 0.5
