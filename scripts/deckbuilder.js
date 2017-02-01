@@ -139,7 +139,7 @@ var initDeckBuilder = function () {
         onClickFilter(event, filterSet, event.altKey);
     });
 
-    $("#loadingSplash").html("Checking for New Cards...");
+    $("#loadingSplash").html("Loading Cards...");
     setTimeout(DATA_UPDATER.updateCards, 1, loadCards);
 
     if (_DEFINED("unlimited")) {

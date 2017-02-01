@@ -16,7 +16,8 @@ var DATA_UPDATER = (function () {
             if (callback) callback();
         }else if (!lastUpdate || lastUpdate - now > 60000) {
             lastUpdate = now;
-            doUpdateCards(callback);
+            $("#loadingSplash").html("Checking for New Cards...");
+            setTimeout(doUpdateCards, 0, callback);
         } else {
             if(callback) callback();
         }
