@@ -1218,25 +1218,34 @@ var filterName = (function (field) {
     applyFilters();
 }).throttle(250);
 
-var filterSubfaction = function (button, faction) {
-    subfactionHidden = {};
-    if (button.classList.contains("selected")) {
+var filterSubfaction = function (button, faction, exclude) {
+
+    if (button.classList.contains("selected") || button.classList.contains("excluded")) {
         button.classList.remove("selected");
+        button.classList.remove("excluded");
         button.checked = false;
+    } else if (exclude) {
+        button.classList.add("excluded");
+        button.classList.remove("selected");
     } else {
+        button.classList.remove("excluded");
         button.classList.add("selected");
-        for (var i = 0, len = units.length; i < len; i++) {
-            var unit = units[i];
-            if (!isInSubfaction(unit, faction)) {
+    }
+
+    subfactionHidden = {};
+    var subfactions = $("[name=subfaction].selected").toArray().map(function (a) { return a.attributes["data-filter"].value; });
+    var exclusions = $("[name=subfaction].excluded").toArray().map(function (a) { return a.attributes["data-filter"].value; });
+    for (var i = 0, len = units.length; i < len; i++) {
+        var unit = units[i];
+        for (var s = 0; s < subfactions.length; s++) {
+            if (!isInSubfaction(unit, subfactions[s])) {
                 subfactionHidden[makeUnitKey(unit)] = true;
             }
         }
-    }
-    var filters = document.getElementsByName("subfaction");
-    for (var i = 0; i < filters.length; i++) {
-        var filter = filters[i];
-        if (filter != button) {
-            filter.classList.remove("selected");
+        for (var e = 0; e < exclusions.length; e++) {
+            if (isInSubfaction(unit, exclusions[e])) {
+                subfactionHidden[makeUnitKey(unit)] = true;
+            }
         }
     }
     applyFilters();
