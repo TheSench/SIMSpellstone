@@ -33,6 +33,7 @@
     <rarity>1</rarity>
     <type>1</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>4</health>
@@ -56,6 +57,7 @@
     <rarity>1</rarity>
     <type>1</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>8</health>
@@ -79,6 +81,7 @@
     <rarity>1</rarity>
     <type>1</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>10</health>
@@ -102,6 +105,7 @@
     <type>1</type>
     <sub_type>6</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>4</health>
@@ -127,6 +131,7 @@
     <type>1</type>
     <sub_type>6</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>6</health>
@@ -152,6 +157,7 @@
     <type>1</type>
     <sub_type>6</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>8</health>
@@ -174,6 +180,7 @@
     <type>1</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <skill id="counter" x="1" />
@@ -200,6 +207,7 @@
     <type>1</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>9</health>
@@ -226,6 +234,7 @@
     <type>1</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <attack>3</attack>
@@ -249,6 +258,7 @@
     <type>1</type>
     <sub_type>10</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>6</health>
@@ -274,6 +284,7 @@
     <type>1</type>
     <sub_type>10</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>8</health>
@@ -299,6 +310,7 @@
     <type>1</type>
     <sub_type>10</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>10</health>
@@ -323,6 +335,7 @@
     <skill id="weaken" x="1" />
     <type>1</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>7</health>
@@ -347,6 +360,7 @@
     <skill id="weaken" x="2" />
     <type>1</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>9</health>
@@ -371,6 +385,7 @@
     <skill id="weaken" x="2" />
     <type>1</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <skill id="weaken" x="3" />
@@ -394,6 +409,7 @@
     <type>1</type>
     <sub_type>6</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>10</health>
@@ -421,6 +437,7 @@
     <type>1</type>
     <sub_type>6</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>13</health>
@@ -446,6 +463,7 @@
     <type>1</type>
     <sub_type>6</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>14</health>
@@ -468,6 +486,7 @@
     <skill id="rally" x="1" />
     <type>1</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>6</health>
@@ -492,6 +511,7 @@
     <skill id="rally" x="2" />
     <type>1</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>8</health>
@@ -516,6 +536,7 @@
     <skill id="rally" x="3" />
     <type>1</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>10</health>
@@ -538,6 +559,7 @@
     <skill id="heal" x="1" y="1" />
     <type>1</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <skill id="heal" x="2" y="1" />
@@ -563,6 +585,7 @@
     <skill id="heal" x="2" y="1" />
     <type>1</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>8</health>
@@ -589,6 +612,7 @@
     <skill id="weaken" x="1" />
     <type>1</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <skill id="heal" x="2" y="1" />
@@ -614,6 +638,7 @@
     <type>1</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>8</health>
@@ -643,6 +668,7 @@
     <type>1</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>10</health>
@@ -672,6 +698,7 @@
     <type>1</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>12</health>
@@ -699,6 +726,7 @@
     <skill id="armored" x="1" />
     <type>1</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <skill id="armored" x="2" />
@@ -732,6 +760,7 @@
     <skill id="weaken" x="1" />
     <type>1</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>13</health>
@@ -762,6 +791,7 @@
     <skill id="weaken" x="2" />
     <type>1</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>16</health>
@@ -790,6 +820,7 @@
     <type>1</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>8</health>
@@ -822,6 +853,7 @@
     <type>1</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>10</health>
@@ -852,6 +884,7 @@
     <type>1</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>13</health>
@@ -880,6 +913,7 @@
     <type>1</type>
     <sub_type>6</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>9</health>
@@ -910,6 +944,7 @@
     <type>1</type>
     <sub_type>6</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>12</health>
@@ -939,6 +974,7 @@
     <type>1</type>
     <sub_type>6</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>15</health>
@@ -967,6 +1003,7 @@
     <type>1</type>
     <sub_type>4</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>5</health>
@@ -999,6 +1036,7 @@
     <type>1</type>
     <sub_type>4</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>7</health>
@@ -1028,6 +1066,7 @@
     <type>1</type>
     <sub_type>4</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>10</health>
@@ -1056,6 +1095,7 @@
     <skill id="protect" x="1" y="1" />
     <type>1</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>8</health>
@@ -1091,6 +1131,7 @@
     <skill id="flurry" c="4" />
     <type>1</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>10</health>
@@ -1122,6 +1163,7 @@
     <skill id="flurry" c="4" />
     <type>1</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>13</health>
@@ -1150,6 +1192,7 @@
     <type>1</type>
     <sub_type>10</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>6</health>
@@ -1183,6 +1226,7 @@
     <type>1</type>
     <sub_type>10</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>10</health>
@@ -1213,6 +1257,7 @@
     <type>1</type>
     <sub_type>10</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>13</health>
@@ -1240,6 +1285,7 @@
     <skill id="protect" x="1" y="1" />
     <type>1</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>6</health>
@@ -1273,6 +1319,7 @@
     <skill id="protect" x="1" y="1" />
     <type>1</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>9</health>
@@ -1302,6 +1349,7 @@
     <skill id="protect" x="2" y="1" />
     <type>1</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>12</health>
@@ -1332,6 +1380,7 @@
     <type>1</type>
     <sub_type>6</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>10</health>
@@ -1368,6 +1417,7 @@
     <type>1</type>
     <sub_type>6</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>14</health>
@@ -1406,6 +1456,7 @@
     <type>1</type>
     <sub_type>6</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>16</health>
@@ -1444,6 +1495,7 @@
     <type>1</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <attack>5</attack>
@@ -1484,6 +1536,7 @@
     <type>1</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>16</health>
@@ -1520,6 +1573,7 @@
     <type>1</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>19</health>
@@ -1556,6 +1610,7 @@
     <type>1</type>
     <sub_type>10</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>6</health>
@@ -1596,6 +1651,7 @@
     <type>1</type>
     <sub_type>10</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>8</health>
@@ -1632,6 +1688,7 @@
     <type>1</type>
     <sub_type>10</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>13</health>
@@ -1665,6 +1722,7 @@
     <type>1</type>
     <sub_type>4</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>7</health>
@@ -1703,6 +1761,7 @@
     <type>1</type>
     <sub_type>4</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>11</health>
@@ -1737,6 +1796,7 @@
     <type>1</type>
     <sub_type>4</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>14</health>
@@ -1770,6 +1830,7 @@
     <skill id="flurry" c="6" />
     <type>1</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>10</health>
@@ -1813,6 +1874,7 @@
     <skill id="flurry" c="4" />
     <type>1</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>13</health>
@@ -1846,6 +1908,7 @@
     <skill id="protect" x="2" y="5" />
     <type>1</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>17</health>
@@ -1883,6 +1946,7 @@
     <type>1</type>
     <sub_type>6</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>14</health>
@@ -1926,6 +1990,7 @@
     <type>1</type>
     <sub_type>6</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>19</health>
@@ -1965,6 +2030,7 @@
     <type>1</type>
     <sub_type>6</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>22</health>
@@ -1999,6 +2065,7 @@
     <type>1</type>
     <sub_type>6</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>8</health>
@@ -2037,6 +2104,7 @@
     <type>1</type>
     <sub_type>6</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>10</health>
@@ -2076,6 +2144,7 @@
     <type>1</type>
     <sub_type>6</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>12</health>
@@ -2112,6 +2181,7 @@
     <type>1</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>17</health>
@@ -2148,6 +2218,7 @@
     <type>1</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>19</health>
@@ -2189,6 +2260,7 @@
     <type>1</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>22</health>
@@ -2231,6 +2303,7 @@
     <type>1</type>
     <sub_type>9</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <attack>4</attack>
@@ -2277,6 +2350,7 @@
     <type>1</type>
     <sub_type>9</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>23</health>
@@ -2317,6 +2391,7 @@
     <type>1</type>
     <sub_type>9</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>27</health>
@@ -2357,6 +2432,7 @@
     <type>1</type>
     <sub_type>6</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>7</health>
@@ -2400,6 +2476,7 @@
     <type>1</type>
     <sub_type>6</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>9</health>
@@ -2441,6 +2518,7 @@
     <type>1</type>
     <sub_type>6</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>13</health>
@@ -2482,6 +2560,7 @@
     <type>1</type>
     <sub_type>6</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>8</health>
@@ -2523,6 +2602,7 @@
     <type>1</type>
     <sub_type>6</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>14</health>
@@ -2566,6 +2646,7 @@
     <type>1</type>
     <sub_type>6</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>17</health>
@@ -2606,6 +2687,7 @@
     <type>1</type>
     <sub_type>4</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>11</health>
@@ -2651,6 +2733,7 @@
     <type>1</type>
     <sub_type>4</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>15</health>
@@ -2696,6 +2779,7 @@
     <type>1</type>
     <sub_type>4</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>17</health>
@@ -2737,6 +2821,7 @@
     <type>2</type>
     <sub_type>7</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>3</health>
@@ -2761,6 +2846,7 @@
     <type>2</type>
     <sub_type>7</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <attack>3</attack>
@@ -2784,6 +2870,7 @@
     <type>2</type>
     <sub_type>7</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <skill id="pierce" x="1" />
@@ -2805,6 +2892,7 @@
     <skill id="strike" x="1" />
     <type>2</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>4</health>
@@ -2829,6 +2917,7 @@
     <skill id="strike" x="1" />
     <type>2</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>6</health>
@@ -2852,6 +2941,7 @@
     <skill id="strike" x="2" />
     <type>2</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>8</health>
@@ -2872,6 +2962,7 @@
     <rarity>1</rarity>
     <type>2</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>4</health>
@@ -2897,6 +2988,7 @@
     <skill id="poison" x="1" />
     <type>2</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>7</health>
@@ -2920,6 +3012,7 @@
     <skill id="poison" x="2" />
     <type>2</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>9</health>
@@ -2941,6 +3034,7 @@
     <type>2</type>
     <sub_type>7</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>10</health>
@@ -2966,6 +3060,7 @@
     <type>2</type>
     <sub_type>7</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>12</health>
@@ -2990,6 +3085,7 @@
     <type>2</type>
     <sub_type>7</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>14</health>
@@ -3012,6 +3108,7 @@
     <type>2</type>
     <sub_type>11</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <skill id="pierce" x="2" />
@@ -3037,6 +3134,7 @@
     <type>2</type>
     <sub_type>11</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <skill id="pierce" x="4" />
@@ -3061,6 +3159,7 @@
     <type>2</type>
     <sub_type>11</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>4</health>
@@ -3083,6 +3182,7 @@
     <type>2</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>8</health>
@@ -3109,6 +3209,7 @@
     <type>2</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>9</health>
@@ -3135,6 +3236,7 @@
     <type>2</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>11</health>
@@ -3158,6 +3260,7 @@
     <type>2</type>
     <sub_type>12</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <attack>4</attack>
@@ -3184,6 +3287,7 @@
     <type>2</type>
     <sub_type>12</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <skill id="counter" x="2" />
@@ -3210,6 +3314,7 @@
     <type>2</type>
     <sub_type>12</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <skill id="counter" x="2" />
@@ -3232,6 +3337,7 @@
     <skill id="weaken" x="1" />
     <type>2</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>5</health>
@@ -3256,6 +3362,7 @@
     <skill id="weaken" x="1" />
     <type>2</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <attack>3</attack>
@@ -3280,6 +3387,7 @@
     <skill id="leech" x="1" />
     <type>2</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>9</health>
@@ -3306,6 +3414,7 @@
     <type>2</type>
     <sub_type>7</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <skill id="burn" x="1" />
@@ -3336,6 +3445,7 @@
     <type>2</type>
     <sub_type>7</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>7</health>
@@ -3368,6 +3478,7 @@
     <type>2</type>
     <sub_type>7</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>9</health>
@@ -3396,6 +3507,7 @@
     <skill id="pierce" x="2" />
     <type>2</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>7</health>
@@ -3434,6 +3546,7 @@
     <skill id="leech" x="2" />
     <type>2</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>11</health>
@@ -3467,6 +3580,7 @@
     <skill id="leech" x="3" />
     <type>2</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>13</health>
@@ -3496,6 +3610,7 @@
     <type>2</type>
     <sub_type>4</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>6</health>
@@ -3530,6 +3645,7 @@
     <type>2</type>
     <sub_type>4</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>9</health>
@@ -3559,6 +3675,7 @@
     <type>2</type>
     <sub_type>4</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>12</health>
@@ -3588,6 +3705,7 @@
     <type>2</type>
     <sub_type>7</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <skill id="enfeeble" x="2" />
@@ -3618,6 +3736,7 @@
     <type>2</type>
     <sub_type>7</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>8</health>
@@ -3648,6 +3767,7 @@
     <type>2</type>
     <sub_type>7</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>11</health>
@@ -3676,6 +3796,7 @@
     <type>2</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <skill id="poison" x="2" />
@@ -3710,6 +3831,7 @@
     <type>2</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>11</health>
@@ -3742,6 +3864,7 @@
     <type>2</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>13</health>
@@ -3770,6 +3893,7 @@
     <rarity>2</rarity>
     <type>2</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <skill id="strike" x="1" />
@@ -3798,6 +3922,7 @@
     <skill id="strike" x="1" />
     <type>2</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>3</health>
@@ -3825,6 +3950,7 @@
     <skill id="strike" x="2" />
     <type>2</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <attack>4</attack>
@@ -3851,6 +3977,7 @@
     <type>2</type>
     <sub_type>13</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>13</health>
@@ -3884,6 +4011,7 @@
     <type>2</type>
     <sub_type>13</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>14</health>
@@ -3914,6 +4042,7 @@
     <type>2</type>
     <sub_type>13</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>16</health>
@@ -3942,6 +4071,7 @@
     <type>2</type>
     <sub_type>7</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>6</health>
@@ -3972,6 +4102,7 @@
     <type>2</type>
     <sub_type>7</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>8</health>
@@ -4002,6 +4133,7 @@
     <type>2</type>
     <sub_type>7</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>10</health>
@@ -4031,6 +4163,7 @@
     <type>2</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>8</health>
@@ -4069,6 +4202,7 @@
     <type>2</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>11</health>
@@ -4104,6 +4238,7 @@
     <type>2</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <skill id="strike" x="4" />
@@ -4138,6 +4273,7 @@
     <skill id="burn" x="1" />
     <type>2</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>15</health>
@@ -4176,6 +4312,7 @@
     <skill id="burn" x="3" />
     <type>2</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>21</health>
@@ -4213,6 +4350,7 @@
     <skill id="burn" x="3" />
     <type>2</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>24</health>
@@ -4250,6 +4388,7 @@
     <type>2</type>
     <sub_type>6</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>9</health>
@@ -4290,6 +4429,7 @@
     <type>2</type>
     <sub_type>6</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>13</health>
@@ -4325,6 +4465,7 @@
     <type>2</type>
     <sub_type>6</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>15</health>
@@ -4361,6 +4502,7 @@
     <type>2</type>
     <sub_type>4</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>10</health>
@@ -4397,6 +4539,7 @@
     <type>2</type>
     <sub_type>4</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>13</health>
@@ -4434,6 +4577,7 @@
     <type>2</type>
     <sub_type>4</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>15</health>
@@ -4467,6 +4611,7 @@
     <skill id="pierce" x="1" />
     <type>2</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <skill id="evade" x="1" />
@@ -4505,6 +4650,7 @@
     <skill id="pierce" x="4" />
     <type>2</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>2</health>
@@ -4544,6 +4690,7 @@
     <skill id="poison" x="2" />
     <type>2</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <skill id="evade" x="2" />
@@ -4579,6 +4726,7 @@
     <type>2</type>
     <sub_type>13</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>8</health>
@@ -4622,6 +4770,7 @@
     <type>2</type>
     <sub_type>13</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>12</health>
@@ -4660,6 +4809,7 @@
     <type>2</type>
     <sub_type>13</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>15</health>
@@ -4694,6 +4844,7 @@
     <type>2</type>
     <sub_type>7</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>7</health>
@@ -4729,6 +4880,7 @@
     <type>2</type>
     <sub_type>7</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>10</health>
@@ -4766,6 +4918,7 @@
     <type>2</type>
     <sub_type>7</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>13</health>
@@ -4803,6 +4956,7 @@
     <type>2</type>
     <sub_type>7</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>16</health>
@@ -4842,6 +4996,7 @@
     <type>2</type>
     <sub_type>7</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>17</health>
@@ -4885,6 +5040,7 @@
     <type>2</type>
     <sub_type>7</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>21</health>
@@ -4925,6 +5081,7 @@
     <type>2</type>
     <sub_type>9</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <skill id="strike" x="1" all="1" />
@@ -4975,6 +5132,7 @@
     <type>2</type>
     <sub_type>9</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>17</health>
@@ -5017,6 +5175,7 @@
     <type>2</type>
     <sub_type>9</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <skill id="strike" x="2" all="1" />
@@ -5058,6 +5217,7 @@
     <skill id="leech" x="2" />
     <type>2</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>11</health>
@@ -5097,6 +5257,7 @@
     <skill id="leech" x="4" />
     <type>2</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>14</health>
@@ -5138,6 +5299,7 @@
     <skill id="leech" x="5" />
     <type>2</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>17</health>
@@ -5178,6 +5340,7 @@
     <type>2</type>
     <sub_type>7</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>8</health>
@@ -5218,6 +5381,7 @@
     <type>2</type>
     <sub_type>7</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>11</health>
@@ -5260,6 +5424,7 @@
     <type>2</type>
     <sub_type>7</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>14</health>
@@ -5301,6 +5466,7 @@
     <type>2</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>21</health>
@@ -5344,6 +5510,7 @@
     <type>2</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>25</health>
@@ -5388,6 +5555,7 @@
     <type>2</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>28</health>
@@ -5432,6 +5600,7 @@
     <rarity>1</rarity>
     <type>3</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>4</health>
@@ -5455,6 +5624,7 @@
     <rarity>1</rarity>
     <type>3</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>8</health>
@@ -5477,6 +5647,7 @@
     <rarity>1</rarity>
     <type>3</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>10</health>
@@ -5497,6 +5668,7 @@
     <rarity>1</rarity>
     <type>3</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>5</health>
@@ -5521,6 +5693,7 @@
     <skill id="rally" x="1" />
     <type>3</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>8</health>
@@ -5544,6 +5717,7 @@
     <skill id="rally" x="2" />
     <type>3</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>10</health>
@@ -5565,6 +5739,7 @@
     <skill id="pierce" x="1" />
     <type>3</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <attack>3</attack>
@@ -5590,6 +5765,7 @@
     <skill id="pierce" x="2" />
     <type>3</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>11</health>
@@ -5613,6 +5789,7 @@
     <skill id="pierce" x="3" />
     <type>3</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <skill id="pierce" x="4" />
@@ -5635,6 +5812,7 @@
     <type>3</type>
     <sub_type>12</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>6</health>
@@ -5660,6 +5838,7 @@
     <type>3</type>
     <sub_type>12</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>9</health>
@@ -5684,6 +5863,7 @@
     <type>3</type>
     <sub_type>12</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <attack>2</attack>
@@ -5706,6 +5886,7 @@
     <type>3</type>
     <sub_type>4</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>2</health>
@@ -5731,6 +5912,7 @@
     <type>3</type>
     <sub_type>4</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>4</health>
@@ -5755,6 +5937,7 @@
     <type>3</type>
     <sub_type>4</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>5</health>
@@ -5777,6 +5960,7 @@
     <skill id="heal" x="1" y="3" />
     <type>3</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>5</health>
@@ -5802,6 +5986,7 @@
     <skill id="protect" x="1" y="3" />
     <type>3</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>7</health>
@@ -5827,6 +6012,7 @@
     <skill id="protect" x="2" y="3" />
     <type>3</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>9</health>
@@ -5850,6 +6036,7 @@
     <type>3</type>
     <sub_type>12</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>8</health>
@@ -5875,6 +6062,7 @@
     <type>3</type>
     <sub_type>12</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>10</health>
@@ -5899,6 +6087,7 @@
     <type>3</type>
     <sub_type>12</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>14</health>
@@ -5920,6 +6109,7 @@
     <type>3</type>
     <sub_type>12</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <attack>3</attack>
@@ -5946,6 +6136,7 @@
     <type>3</type>
     <sub_type>12</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>15</health>
@@ -5971,6 +6162,7 @@
     <type>3</type>
     <sub_type>12</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <attack>5</attack>
@@ -5997,6 +6189,7 @@
     <skill id="pierce" x="1" />
     <type>3</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>5</health>
@@ -6029,6 +6222,7 @@
     <skill id="pierce" x="1" />
     <type>3</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <skill id="rally" x="1" y="3" />
@@ -6061,6 +6255,7 @@
     <skill id="pierce" x="2" />
     <type>3</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>9</health>
@@ -6088,6 +6283,7 @@
     <type>3</type>
     <sub_type>13</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>9</health>
@@ -6123,6 +6319,7 @@
     <type>3</type>
     <sub_type>13</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>11</health>
@@ -6155,6 +6352,7 @@
     <type>3</type>
     <sub_type>13</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>13</health>
@@ -6182,6 +6380,7 @@
     <skill id="heal" x="1" y="3" />
     <type>3</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>10</health>
@@ -6214,6 +6413,7 @@
     <skill id="protect" x="2" y="3" />
     <type>3</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <attack>4</attack>
@@ -6243,6 +6443,7 @@
     <skill id="protect" x="3" y="3" />
     <type>3</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>13</health>
@@ -6270,6 +6471,7 @@
     <skill id="pierce" x="2" />
     <type>3</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>9</health>
@@ -6303,6 +6505,7 @@
     <skill id="jam" c="5" />
     <type>3</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <attack>5</attack>
@@ -6333,6 +6536,7 @@
     <skill id="jam" c="4" />
     <type>3</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>12</health>
@@ -6363,6 +6567,7 @@
     <skill id="pierce" x="2" />
     <type>3</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <skill id="armored" x="2" />
@@ -6400,6 +6605,7 @@
     <skill id="pierce" x="3" />
     <type>3</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>12</health>
@@ -6431,6 +6637,7 @@
     <skill id="pierce" x="4" />
     <type>3</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>15</health>
@@ -6464,6 +6671,7 @@
     <type>3</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>11</health>
@@ -6502,6 +6710,7 @@
     <type>3</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>13</health>
@@ -6534,6 +6743,7 @@
     <type>3</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>15</health>
@@ -6568,6 +6778,7 @@
     <type>3</type>
     <sub_type>4</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>6</health>
@@ -6600,6 +6811,7 @@
     <type>3</type>
     <sub_type>4</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>8</health>
@@ -6632,6 +6844,7 @@
     <type>3</type>
     <sub_type>4</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>11</health>
@@ -6659,6 +6872,7 @@
     <type>3</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <attack>4</attack>
@@ -6690,6 +6904,7 @@
     <type>3</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>14</health>
@@ -6720,6 +6935,7 @@
     <type>3</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>16</health>
@@ -6748,6 +6964,7 @@
     <skill id="pierce" x="1" />
     <type>3</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>12</health>
@@ -6786,6 +7003,7 @@
     <skill id="pierce" x="3" />
     <type>3</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <skill id="rally" x="1" all="1" y="3" />
@@ -6822,6 +7040,7 @@
     <skill id="pierce" x="4" />
     <type>3</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>16</health>
@@ -6858,6 +7077,7 @@
     <skill id="rally" x="1" y="3" />
     <type>3</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>21</health>
@@ -6896,6 +7116,7 @@
     <skill id="rally" x="2" all="1" y="3" />
     <type>3</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>26</health>
@@ -6932,6 +7153,7 @@
     <skill id="fervor" x="1" y="3" />
     <type>3</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>31</health>
@@ -6969,6 +7191,7 @@
     <type>3</type>
     <sub_type>4</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>13</health>
@@ -7010,6 +7233,7 @@
     <type>3</type>
     <sub_type>4</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>17</health>
@@ -7046,6 +7270,7 @@
     <type>3</type>
     <sub_type>4</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>21</health>
@@ -7083,6 +7308,7 @@
     <type>3</type>
     <sub_type>11</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>9</health>
@@ -7129,6 +7355,7 @@
     <type>3</type>
     <sub_type>11</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <skill id="rally" x="3" />
@@ -7169,6 +7396,7 @@
     <type>3</type>
     <sub_type>11</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>14</health>
@@ -7204,6 +7432,7 @@
     <type>3</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <skill id="armored" x="1" />
@@ -7248,6 +7477,7 @@
     <type>3</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>17</health>
@@ -7284,6 +7514,7 @@
     <type>3</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>21</health>
@@ -7322,6 +7553,7 @@
     <type>3</type>
     <sub_type>12</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>15</health>
@@ -7367,6 +7599,7 @@
     <type>3</type>
     <sub_type>12</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>19</health>
@@ -7405,6 +7638,7 @@
     <type>3</type>
     <sub_type>12</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>21</health>
@@ -7441,6 +7675,7 @@
     <type>3</type>
     <sub_type>9</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>16</health>
@@ -7477,6 +7712,7 @@
     <type>3</type>
     <sub_type>9</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>20</health>
@@ -7514,6 +7750,7 @@
     <type>3</type>
     <sub_type>9</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>24</health>
@@ -7552,6 +7789,7 @@
     <type>3</type>
     <sub_type>7</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>12</health>
@@ -7588,6 +7826,7 @@
     <type>3</type>
     <sub_type>7</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>14</health>
@@ -7626,6 +7865,7 @@
     <type>3</type>
     <sub_type>7</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>15</health>
@@ -7663,6 +7903,7 @@
     <type>3</type>
     <sub_type>9</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>17</health>
@@ -7710,6 +7951,7 @@
     <type>3</type>
     <sub_type>9</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>21</health>
@@ -7750,6 +7992,7 @@
     <type>3</type>
     <sub_type>9</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>27</health>
@@ -7789,6 +8032,7 @@
     <rarity>4</rarity>
     <type>3</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>13</health>
@@ -7827,6 +8071,7 @@
     <rarity>4</rarity>
     <type>3</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>17</health>
@@ -7866,6 +8111,7 @@
     <rarity>4</rarity>
     <type>3</type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>19</health>
@@ -7907,6 +8153,7 @@
     <type>3</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>12</health>
@@ -7950,6 +8197,7 @@
     <type>3</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>15</health>
@@ -7993,6 +8241,7 @@
     <type>3</type>
     <sub_type>5</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>18</health>
@@ -8037,6 +8286,7 @@
     <type>3</type>
     <sub_type>4</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>8</health>
@@ -8079,6 +8329,7 @@
     <type>3</type>
     <sub_type>4</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>10</health>
@@ -8121,6 +8372,7 @@
     <type>3</type>
     <sub_type>4</sub_type>
     <set>1000</set>
+    <release_set>1</release_set>
     <upgrade>
       <level>2</level>
       <health>15</health>

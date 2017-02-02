@@ -265,6 +265,30 @@
       </skill>
     </effect>
   </battleground>
+  <battleground>
+    <id>114</id>
+    <name>Eagle Eye</name>
+    <desc>Each Avian marks a random target upon first activation, Hexing them for 30% of their base Attack. The Avian chooses a new mark when their current mark dies. Ignores Invisibility.</desc>
+    <icon>filter_avian_64.png</icon>
+    <effect>
+      <add_skill id="mark" mult="0.3" base="attack" y="10" />
+    </effect>
+    <skill id="displayEffect" trigger="onSkill" y="10" s="mark">
+      <target_effect>
+        <prefab>goblinBombTarget</prefab>
+        <bundle_id>75</bundle_id>
+        <delay>0</delay>
+        <duration>1</duration>
+        <!-- <shake>true</shake> -->
+      </target_effect>
+      <!-- <actor_effect>
+					<prefab>goblinBombTarget</prefab>
+					<bundle_id>75</bundle_id>
+					<delay>0</delay>
+					<duration>1</duration>
+				</actor_effect> -->
+    </skill>
+  </battleground>
   <!-- 501-1000: Specialty BGE -->
   <battleground>
     <id>501</id>
@@ -617,8 +641,8 @@
   </battleground>
   <battleground>
     <id>2003</id>
-    <name>Enemy Scaling BGE</name>
-    <desc>In Arena Battles, the player who goes first has one additional Delay added to the first card they play in a battle.</desc>
+    <name>Riptide Nightsong</name>
+    <desc>Enemies become stronger with each passing Mastery level.</desc>
     <icon>filter_seafolk_64</icon>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
@@ -626,7 +650,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".6" mult=".1" />
+      <scale_attributes base_mult=".1" mult=".01" />
     </effect>
   </battleground>
 </root>

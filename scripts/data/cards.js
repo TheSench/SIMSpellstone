@@ -15582,6 +15582,113 @@ var CARDS = {
       },
     }
   },
+  "361": {
+    "id": "361",
+    "name": "The Assassin",
+    "desc": "The same assassin who tried to kill you and Tarian in Karthos, he seeks revenge with the new talents given to him by The Void.",
+    "picture": "portrait_invisibleassassin",
+    "rarity": "3",
+    "set": "9999",
+    "card_type": "1",
+    "type": "2",
+    "sub_type": [],
+    "health": 46,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "enhance",
+        "x": 1,
+        "s": "evade",
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+      },
+      {
+        "id": "imbue",
+        "c": 6,
+        "s": "flurry",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 50,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "evade",
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+          {
+            "id": "imbue",
+            "c": 6,
+            "s": "flurry",
+          },
+        ],
+      },
+      "3": {
+        "health": 52,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 2,
+            "s": "evade",
+          },
+          {
+            "id": "weaken",
+            "x": 4,
+          },
+          {
+            "id": "imbue",
+            "c": 5,
+            "s": "flurry",
+          },
+        ],
+      },
+      "4": {
+        "health": 54,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 3,
+            "s": "evade",
+          },
+          {
+            "id": "weaken",
+            "x": 5,
+          },
+          {
+            "id": "imbue",
+            "c": 4,
+            "s": "flurry",
+          },
+        ],
+      },
+      "5": {
+        "health": 60,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 4,
+            "s": "evade",
+          },
+          {
+            "id": "weaken",
+            "x": 6,
+          },
+          {
+            "id": "imbue",
+            "c": 3,
+            "s": "flurry",
+          },
+        ],
+      },
+    }
+  },
   "5000": {
     "id": "5000",
     "name": "Azure Sphinx",
@@ -39502,6 +39609,217 @@ var CARDS = {
       },
     }
   },
+  "5105": {
+    "id": "5105",
+    "name": "Sea Whisperer",
+    "desc": "\"Sweet nothings.\"",
+    "picture": "Goldfish_Tamer_A",
+    "hidden_until": "1486400400000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["12"],
+    "health": 8,
+    "attack": 3,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "legion",
+        "x": 1,
+        "y": "12",
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 9,
+        "skill": [],
+      },
+      "3": {
+        "health": 10,
+        "skill": [],
+      },
+      "4": {
+        "health": 11,
+        "skill": [],
+      },
+      "5": {
+        "attack": 4,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "legion",
+            "x": 1,
+            "y": "12",
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "15105": {
+    "id": "15105",
+    "name": "Sea Caller",
+    "picture": "Goldfish_Tamer_A",
+    "hidden_until": "1486400400000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["12"],
+    "health": 12,
+    "attack": 4,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 1,
+        "y": "12",
+        "all": "1",
+      },
+      {
+        "id": "legion",
+        "x": 1,
+        "y": "12",
+      },
+      {
+        "id": "weaken",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 13,
+        "skill": [],
+      },
+      "3": {
+        "health": 14,
+        "skill": [],
+      },
+      "4": {
+        "health": 15,
+        "skill": [],
+      },
+      "5": {
+        "attack": 5,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 1,
+            "y": "12",
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 1,
+            "y": "12",
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "25105": {
+    "id": "25105",
+    "name": "Sea Summoner",
+    "picture": "Goldfish_Tamer_B",
+    "hidden_until": "1486400400000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["12"],
+    "health": 16,
+    "attack": 6,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 1,
+        "y": "12",
+        "all": "1",
+      },
+      {
+        "id": "legion",
+        "x": 1,
+        "y": "12",
+      },
+      {
+        "id": "weaken",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 17,
+        "skill": [],
+      },
+      "3": {
+        "health": 18,
+        "skill": [],
+      },
+      "4": {
+        "health": 19,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 2,
+            "y": "12",
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 1,
+            "y": "12",
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 2,
+            "y": "12",
+            "all": "1",
+          },
+          {
+            "id": "legion",
+            "x": 2,
+            "y": "12",
+          },
+          {
+            "id": "weaken",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
   "5106": {
     "id": "5106",
     "name": "Acuro, Sea Captain",
@@ -40272,6 +40590,300 @@ var CARDS = {
           {
             "id": "frost",
             "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "5109": {
+    "id": "5109",
+    "name": "Cyclospout",
+    "picture": "Sky_Jellyfish_A",
+    "hidden_until": "1486054800000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["12"],
+    "health": 18,
+    "attack": 4,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 1,
+        "y": "12",
+        "all": "1",
+      },
+      {
+        "id": "frost",
+        "x": 1,
+      },
+      {
+        "id": "flurry",
+        "c": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 1,
+            "y": "12",
+            "all": "1",
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 5,
+          },
+        ],
+      },
+      "3": {
+        "health": 19,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 1,
+            "y": "12",
+            "all": "1",
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "4": {
+        "health": 20,
+        "skill": [],
+      },
+      "5": {
+        "attack": 5,
+        "health": 21,
+        "skill": [],
+      },
+      "6": {
+        "health": 22,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 1,
+            "y": "12",
+            "all": "1",
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+    }
+  },
+  "15109": {
+    "id": "15109",
+    "name": "Whirlospout",
+    "picture": "Sky_Jellyfish_A",
+    "hidden_until": "1486054800000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["12"],
+    "health": 23,
+    "attack": 5,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 1,
+        "y": "12",
+        "all": "1",
+      },
+      {
+        "id": "frost",
+        "x": 2,
+      },
+      {
+        "id": "flurry",
+        "c": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 24,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "12",
+            "all": "1",
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "3": {
+        "health": 25,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "12",
+            "all": "1",
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 26,
+        "skill": [],
+      },
+      "5": {
+        "attack": 6,
+        "health": 27,
+        "skill": [],
+      },
+      "6": {
+        "health": 28,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "12",
+            "all": "1",
+          },
+          {
+            "id": "frost",
+            "x": 3,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+    }
+  },
+  "25109": {
+    "id": "25109",
+    "name": "Tetraspout",
+    "picture": "Sky_Jellyfish_B",
+    "hidden_until": "1486054800000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["12"],
+    "health": 29,
+    "attack": 6,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 2,
+        "y": "12",
+        "all": "1",
+      },
+      {
+        "id": "frost",
+        "x": 3,
+      },
+      {
+        "id": "flurry",
+        "c": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 30,
+        "skill": [
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "12",
+            "all": "1",
+          },
+          {
+            "id": "frost",
+            "x": 3,
+          },
+          {
+            "id": "flurry",
+            "c": 2,
+          },
+        ],
+      },
+      "3": {
+        "attack": 7,
+        "health": 31,
+        "skill": [],
+      },
+      "4": {
+        "health": 32,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "12",
+            "all": "1",
+          },
+          {
+            "id": "frost",
+            "x": 4,
+          },
+          {
+            "id": "flurry",
+            "c": 2,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "12",
+            "all": "1",
+          },
+          {
+            "id": "frost",
+            "x": 4,
+          },
+          {
+            "id": "flurry",
+            "c": 2,
           },
         ],
       },
@@ -64878,6 +65490,196 @@ var CARDS = {
           {
             "id": "berserk",
             "x": 6,
+          },
+        ],
+      },
+    }
+  },
+  "6110": {
+    "id": "6110",
+    "name": "Sea Mantis",
+    "picture": "Crab_Person_A",
+    "hidden_until": "1486054800000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["12"],
+    "health": 10,
+    "attack": 2,
+    "cost": 1,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "enfeeble",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 11,
+        "skill": [],
+      },
+      "3": {
+        "health": 12,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "enfeeble",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "health": 13,
+        "skill": [],
+      },
+    }
+  },
+  "16110": {
+    "id": "16110",
+    "name": "Surf Mantis",
+    "picture": "Crab_Person_A",
+    "hidden_until": "1486054800000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["12"],
+    "health": 13,
+    "attack": 3,
+    "cost": 1,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "enfeeble",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "enfeeble",
+            "x": 3,
+          },
+          {
+            "id": "nullify",
+            "x": 1,
+          },
+        ],
+      },
+      "4": {
+        "health": 15,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "enfeeble",
+            "x": 4,
+          },
+          {
+            "id": "nullify",
+            "x": 1,
+          },
+        ],
+      },
+      "5": {
+        "health": 16,
+        "skill": [],
+      },
+    }
+  },
+  "26110": {
+    "id": "26110",
+    "name": "Aqua Mantis",
+    "picture": "Crab_Person_B",
+    "hidden_until": "1486054800000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["12"],
+    "health": 17,
+    "attack": 3,
+    "cost": 1,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "enfeeble",
+        "x": 4,
+      },
+      {
+        "id": "nullify",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 4,
+        "skill": [],
+      },
+      "3": {
+        "health": 18,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "enfeeble",
+            "x": 4,
+          },
+          {
+            "id": "nullify",
+            "x": 1,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "enfeeble",
+            "x": 5,
+          },
+          {
+            "id": "nullify",
+            "x": 2,
           },
         ],
       },
@@ -90319,6 +91121,223 @@ var CARDS = {
           {
             "id": "jam",
             "c": 3,
+          },
+        ],
+      },
+    }
+  },
+  "7109": {
+    "id": "7109",
+    "name": "Clownder",
+    "picture": "Clown_Fish_A",
+    "hidden_until": "1486054800000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["12"],
+    "health": 7,
+    "attack": 3,
+    "cost": 1,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "valor",
+        "x": 2,
+      },
+      {
+        "id": "jam",
+        "c": 7,
+      },
+      {
+        "id": "leech",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "valor",
+            "x": 2,
+          },
+          {
+            "id": "jam",
+            "c": 6,
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+        ],
+      },
+      "3": {
+        "health": 8,
+        "skill": [],
+      },
+      "4": {
+        "health": 9,
+        "skill": [
+          {
+            "id": "valor",
+            "x": 3,
+          },
+          {
+            "id": "jam",
+            "c": 6,
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "health": 10,
+        "skill": [],
+      },
+    }
+  },
+  "17109": {
+    "id": "17109",
+    "name": "Jittery Clownder",
+    "picture": "Clown_Fish_A",
+    "hidden_until": "1486054800000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["12"],
+    "health": 10,
+    "attack": 3,
+    "cost": 1,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "valor",
+        "x": 3,
+      },
+      {
+        "id": "jam",
+        "c": 5,
+      },
+      {
+        "id": "leech",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 11,
+        "skill": [],
+      },
+      "3": {
+        "health": 12,
+        "skill": [
+          {
+            "id": "valor",
+            "x": 4,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 13,
+        "skill": [],
+      },
+      "5": {
+        "health": 14,
+        "skill": [],
+      },
+    }
+  },
+  "27109": {
+    "id": "27109",
+    "name": "Kindled Clownder",
+    "picture": "Clown_Fish_B",
+    "hidden_until": "1486054800000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["12"],
+    "health": 14,
+    "attack": 3,
+    "cost": 1,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "valor",
+        "x": 4,
+      },
+      {
+        "id": "jam",
+        "c": 4,
+      },
+      {
+        "id": "leech",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "valor",
+            "x": 5,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+        ],
+      },
+      "3": {
+        "health": 15,
+        "skill": [
+          {
+            "id": "valor",
+            "x": 6,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+        ],
+      },
+      "4": {
+        "health": 16,
+        "skill": [],
+      },
+      "5": {
+        "health": 17,
+        "skill": [
+          {
+            "id": "valor",
+            "x": 6,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+          {
+            "id": "leech",
+            "x": 5,
           },
         ],
       },

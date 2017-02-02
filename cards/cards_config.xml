@@ -452,6 +452,17 @@
     <hidden>1</hidden>
   </skillType>
   <skillType>
+    <id>mark</id>
+    <order>500</order>
+    <icon>hinder</icon>
+    <name>Mark</name>
+    <upkeep>1</upkeep>
+    <!-- This skill occurs before all other actions -->
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <desc>Mark random enemy creatures</desc>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
     <id>displayEffect</id>
     <order>0</order>
     <upkeep>1</upkeep>
@@ -551,6 +562,13 @@
     <pack_picture>GoldPack</pack_picture>
     <picture>set_icon_standard</picture>
   </cardSet>
+  <!-- <cardSet>
+		<id>1100</id>
+		<name>Legacy</name>
+		<visible>1</visible>
+		<icon>set_icon_legacy</icon>
+		<picture>set_icon_legacy</picture>
+	</cardSet> -->
   <cardSet>
     <id>2000</id>
     <name>Reward</name>

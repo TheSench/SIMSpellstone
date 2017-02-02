@@ -14337,4 +14337,826 @@
       <card id="7107" name="Hammer Crab" />
     </deck>
   </mission>
+  <!-- Campaign Event 1 Part 2 -->
+  <mission>
+    <id>5470</id>
+    <name>Rumors of the Powerful</name>
+    <energy>9</energy>
+    <desc>With the Guardian now helping you, you decide to search for more resources to fight against Scylla and her raiders. You have heard tales of a powerful sword-wielder that once lived in Duskwillow. If you could find him, he could help against your upcoming fight with Scylla...</desc>
+    <commander id="359" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="7057" name="Bill Crasher" />
+      <card id="2040" name="Owlmancer" />
+      <card id="5073" name="Shell Invader" />
+      <card id="7005" name="Tsunamari" />
+      <card id="5073" name="Shell Invader" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="6108" name="Redwater Angler" />
+      <card id="5108" mastery_level="2" name="Aurora Skimmer" />
+      <card id="6056" mastery_level="3" name="Potoo" />
+      <card id="6054" mastery_level="4" name="Shadowcrafter" />
+      <card id="5106" mastery_level="5" name="Acuro, Sea Captain" />
+      <card id="7106" mastery_level="6" name="Octhos, Ruin Baron" />
+      <card id="5000" mastery_level="7" name="Azure Sphinx" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5471</id>
+    <name>Quiet as the Grave</name>
+    <energy>9</energy>
+    <desc>This part of town has already been ravaged by the Seafolk raiders. Everything is eerily quiet, monsters rummaging through abandoned residences...</desc>
+    <commander id="352" />
+    <deck>
+      <card id="7007" name="Water Serpent" />
+      <card id="5073" name="Shell Invader" />
+      <card id="2079" name="Koi Guardian" />
+      <card id="2078" name="Septuamaid" />
+      <card id="5108" name="Aurora Skimmer" />
+      <card id="1630" name="Giant Squid" />
+      <card id="6108" name="Redwater Angler" />
+      <card id="2040" name="Owlmancer" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="7005" mastery_level="2" name="Tsunamari" />
+      <card id="2041" mastery_level="3" name="Sharpwing" />
+      <card id="6054" mastery_level="4" name="Shadowcrafter" />
+      <card id="6107" mastery_level="5" name="Great Lava Crab" />
+      <card id="7106" mastery_level="6" name="Octhos, Ruin Baron" />
+      <card id="2043" mastery_level="7" name="Eos" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5472</id>
+    <name>Offended Residents</name>
+    <energy>9</energy>
+    <desc>You enter a house that seems oddly in tact compared to its neighbors. As soon as you step inside, a figure appears behind you in the doorframe, and attacks!</desc>
+    <commander id="325" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="7029" name="Owl Griffin" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="5060" name="Quack Apprentice" />
+      <card id="6054" name="Shadowcrafter" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="7057" mastery_level="2" name="Bill Crasher" />
+      <card id="5044" mastery_level="3" name="Telepathic Magi" />
+      <card id="5058" mastery_level="4" name="Crescent Moon Owl" />
+      <card id="6053" mastery_level="5" name="Squire Gorger" />
+      <card id="7058" mastery_level="6" name="Steppe Stalker" />
+      <card id="7058" mastery_level="7" name="Steppe Stalker" />
+    </deck>
+    <speech>
+      <line>
+        <commander>aviansoldier2</commander>
+        <enemy>1</enemy>
+        <text>You've walked straight into our trap, pirates. Let's get 'em!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5473</id>
+    <name>Not Your Enemy</name>
+    <energy>9</energy>
+    <desc>Avians, the original inhabitants of Duskwillow, pour into the room. You try to explain to them that you are not with the Seafolk raiders...</desc>
+    <commander id="300" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="7055" name="Valley Strider" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="7055" name="Valley Strider" />
+      <card id="7055" name="Valley Strider" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="2041" name="Sharpwing" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="7055" name="Valley Strider" />
+      <card id="2041" mastery_level="2" name="Sharpwing" />
+      <card id="2040" mastery_level="3" name="Owlmancer" />
+      <card id="5058" mastery_level="4" name="Crescent Moon Owl" />
+      <card id="5057" mastery_level="5" name="Skystriker" />
+      <card id="7056" mastery_level="6" name="Trailblazer" />
+      <card id="5057" mastery_level="7" name="Skystriker" />
+    </deck>
+    <speech>
+      <line>
+        <commander>aviansoldier2</commander>
+        <enemy>1</enemy>
+        <text>You say you're not a pirate? A likely story. The pirates have scales, and fins, and...</text>
+      </line>
+      <line>
+        <commander>aviansoldier2</commander>
+        <enemy>1</enemy>
+        <text> ...And you don't have any of those things, do you.</text>
+      </line>
+      <line>
+        <commander>feralbird</commander>
+        <enemy>1</enemy>
+        <text>Screeeech!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5474</id>
+    <name>Closer to the Truth</name>
+    <energy>9</energy>
+    <desc>The Avian tries to settle the feral birds, but it seems you've convinced them of your allegiance. You use the opportunity to ask about the swordsman you heard about...</desc>
+    <commander id="300" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="7055" name="Valley Strider" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="2041" name="Sharpwing" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="7057" name="Bill Crasher" />
+      <card id="2042" mastery_level="2" name="Carrion Hunter" />
+      <card id="5060" mastery_level="3" name="Quack Apprentice" />
+      <card id="6054" mastery_level="4" name="Shadowcrafter" />
+      <card id="5059" mastery_level="5" name="Bemola" />
+      <card id="6055" mastery_level="6" name="Phoenix" />
+      <card id="5055" mastery_level="7" name="Galewing" />
+    </deck>
+    <speech>
+      <line>
+        <commander>aviansoldier2</commander>
+        <enemy>1</enemy>
+        <text>Aye, there once was a man whose family was destroyed by Scylla. He went off to find a means of defeating her.</text>
+      </line>
+      <line>
+        <commander>aviansoldier2</commander>
+        <enemy>1</enemy>
+        <text>He was gone for months... and then he came back with the pirates, attacking our homes!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5475</id>
+    <name>Plan of Action</name>
+    <energy>9</energy>
+    <desc>Thanking the Avians, you depart the house and head towards the shore, where they last saw the swordsman. You wonder why someone who aims to fight Scylla would join her cause...</desc>
+    <commander id="354" />
+    <deck>
+      <card id="7007" name="Water Serpent" />
+      <card id="5073" name="Shell Invader" />
+      <card id="6110" name="Sea Mantis" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="7005" name="Tsunamari" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="2041" name="Sharpwing" />
+      <card id="7029" name="Owl Griffin" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="7030" mastery_level="2" name="Arctic Ambusher" />
+      <card id="2079" mastery_level="3" name="Koi Guardian" />
+      <card id="7066" mastery_level="4" name="Aquine" />
+      <card id="5106" mastery_level="5" name="Acuro, Sea Captain" />
+      <card id="6107" mastery_level="6" name="Great Lava Crab" />
+      <card id="2080" mastery_level="7" name="Hunter Zind" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lanternguardian</commander>
+        <enemy>0</enemy>
+        <text>He must have been infected by The Void. I can see no reason why he'd willingly help his sworn enemy.</text>
+      </line>
+      <line>
+        <commander>goldencrownmayor</commander>
+        <enemy>0</enemy>
+        <text>Well, I'll just have to fix him up right and proper. A little healing magic and he'll be as good as new!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5476</id>
+    <name>Familiar Foe</name>
+    <energy>9</energy>
+    <desc>True to the Avians' description, you find the Seafolk raiders and a mysterious cloaked man at the designated location. You recognize the man as the assassin who nearly killed you and Tarian in Karthos!</desc>
+    <commander id="359" />
+    <deck>
+      <card id="7007" name="Water Serpent" />
+      <card id="6108" name="Redwater Angler" />
+      <card id="2076" name="Adorabilis" />
+      <card id="2079" name="Koi Guardian" />
+      <card id="7005" name="Tsunamari" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="2078" name="Septuamaid" />
+      <card id="5073" name="Shell Invader" />
+      <card id="7005" mastery_level="2" name="Tsunamari" />
+      <card id="2079" mastery_level="3" name="Koi Guardian" />
+      <card id="7066" mastery_level="4" name="Aquine" />
+      <card id="7023" mastery_level="5" name="Zolmosh the Fist" />
+      <card id="7014" mastery_level="6" name="Genbu" />
+      <card id="7014" mastery_level="7" name="Genbu" />
+    </deck>
+    <speech>
+      <line>
+        <commander>invisibleassassin</commander>
+        <enemy>1</enemy>
+        <text>...</text>
+      </line>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>You are fools to chase us all the way out here. Men, get them!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5477</id>
+    <name>Corruption of Morals</name>
+    <energy>9</energy>
+    <desc>With the Seafolk invaders out of the way, the Golden Crown Mayor approaches the assassin. Swirling tendrils of energy surround him.</desc>
+    <commander id="361" />
+    <deck>
+      <card id="7007" name="Water Serpent" />
+      <card id="7005" name="Tsunamari" />
+      <card id="2079" name="Koi Guardian" />
+      <card id="7066" name="Aquine" />
+      <card id="7005" name="Tsunamari" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="2078" name="Septuamaid" />
+      <card id="2078" name="Septuamaid" />
+      <card id="7066" name="Aquine" />
+      <card id="2079" mastery_level="2" name="Koi Guardian" />
+      <card id="2076" mastery_level="3" name="Adorabilis" />
+      <card id="2041" mastery_level="4" name="Sharpwing" />
+      <card id="7106" mastery_level="5" name="Octhos, Ruin Baron" />
+      <card id="6107" mastery_level="6" name="Great Lava Crab" />
+      <card id="6109" mastery_level="7" name="Captain Gnaw" />
+    </deck>
+    <speech>
+      <line>
+        <commander>goldencrownmayor</commander>
+        <enemy>0</enemy>
+        <text>It's as we suspected. The poor boy was infected by The Void, but should return to his senses thanks to my healing.</text>
+      </line>
+      <line>
+        <commander>invisibleassassin</commander>
+        <enemy>1</enemy>
+        <text>... Hahaha...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5478</id>
+    <name>The Assassin</name>
+    <energy>9</energy>
+    <desc>The energy has faded, but the man does not cease his attacks. If anything, he seems to strike against you with even more passion.</desc>
+    <commander id="361" />
+    <deck>
+      <card id="7007" name="Water Serpent" />
+      <card id="7005" name="Tsunamari" />
+      <card id="2079" name="Koi Guardian" />
+      <card id="5073" name="Shell Invader" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="2040" name="Owlmancer" />
+      <card id="2078" name="Septuamaid" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="7066" name="Aquine" />
+      <card id="2078" mastery_level="2" name="Septuamaid" />
+      <card id="2076" mastery_level="3" name="Adorabilis" />
+      <card id="2041" mastery_level="4" name="Sharpwing" />
+      <card id="7054" mastery_level="5" name="The Thing Below" />
+      <card id="7108" mastery_level="6" name="Quetee" />
+      <card id="7108" mastery_level="7" name="Quetee" />
+    </deck>
+    <speech>
+      <line>
+        <commander>invisibleassassin</commander>
+        <enemy>1</enemy>
+        <text>What, were you expecting a 'thank you'? I draw my powers from The Void.</text>
+      </line>
+      <line>
+        <commander>invisibleassassin</commander>
+        <enemy>1</enemy>
+        <text>We have no reason to be allies!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5479</id>
+    <name>One True Enemy</name>
+    <energy>9</energy>
+    <desc>You and your friends try to sway the Assassin's opinion. He seems to only be fighting because he enjoys it. If you could have his help against Scylla, he could become a useful ally...</desc>
+    <commander id="352" />
+    <deck>
+      <card id="7007" name="Water Serpent" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="5108" name="Aurora Skimmer" />
+      <card id="2079" name="Koi Guardian" />
+      <card id="5073" name="Shell Invader" />
+      <card id="2078" name="Septuamaid" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="7066" name="Aquine" />
+      <card id="2079" mastery_level="2" name="Koi Guardian" />
+      <card id="5073" mastery_level="3" name="Shell Invader" />
+      <card id="7005" mastery_level="4" name="Tsunamari" />
+      <card id="7023" mastery_level="5" name="Zolmosh the Fist" />
+      <card id="7003" mastery_level="6" name="Kraken" />
+      <card id="7105" mastery_level="7" name="Charybdis" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lanternguardian</commander>
+        <enemy>0</enemy>
+        <text>After all that Scylla has done to you, I expected you to resist her powers. Not welcome it.</text>
+      </line>
+      <line>
+        <commander>invisibleassassin</commander>
+        <enemy>1</enemy>
+        <text>Scylla...? No, I accepted The Void's powers to fight against her.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5480</id>
+    <name>Enemy Coverage</name>
+    <energy>9</energy>
+    <desc>The Assassin contemplates your words. His Seafolk allies continue their onslaught, uncaring whether the Assassin aids them or not.</desc>
+    <commander id="359" />
+    <deck>
+      <card id="7007" name="Water Serpent" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="6108" name="Redwater Angler" />
+      <card id="5108" name="Aurora Skimmer" />
+      <card id="1630" name="Giant Squid" />
+      <card id="7109" name="Clownder" />
+      <card id="7066" name="Aquine" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="2079" mastery_level="2" name="Koi Guardian" />
+      <card id="5073" mastery_level="3" name="Shell Invader" />
+      <card id="5073" mastery_level="4" name="Shell Invader" />
+      <card id="5106" mastery_level="5" name="Acuro, Sea Captain" />
+      <card id="6107" mastery_level="6" name="Great Lava Crab" />
+      <card id="7106" mastery_level="7" name="Octhos, Ruin Baron" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5481</id>
+    <name>The Price of Power</name>
+    <energy>9</energy>
+    <desc>The Assassin's blade wavers. It was never his intention to help Scylla. All he wanted was the power of The Void.</desc>
+    <commander id="361" />
+    <deck>
+      <card id="7007" name="Water Serpent" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="5084" name="Dotora Spirit" />
+      <card id="5084" name="Dotora Spirit" />
+      <card id="6031" name="Iceblood Assassin" />
+      <card id="5089" name="Gomblit" />
+      <card id="2078" name="Septuamaid" />
+      <card id="2076" name="Adorabilis" />
+      <card id="7005" mastery_level="2" name="Tsunamari" />
+      <card id="2078" mastery_level="3" name="Septuamaid" />
+      <card id="2076" mastery_level="4" name="Adorabilis" />
+      <card id="7003" mastery_level="5" name="Kraken" />
+      <card id="5106" mastery_level="6" name="Acuro, Sea Captain" />
+      <card id="6109" mastery_level="7" name="Captain Gnaw" />
+    </deck>
+    <speech>
+      <line>
+        <commander>invisibleassassin</commander>
+        <enemy>1</enemy>
+        <text>It is through The Void's blessing that I can strike like a shadow, before my enemies are aware of my presence.</text>
+      </line>
+      <line>
+        <commander>lanternguardian</commander>
+        <enemy>0</enemy>
+        <text>And it is also through The Void's power that you became a thrall to the one who destroyed your kin.</text>
+      </line>
+      <line>
+        <commander>invisibleassassin</commander>
+        <enemy>1</enemy>
+        <text>...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5482</id>
+    <name>Recruiting the Assassin</name>
+    <energy>9</energy>
+    <desc>A temporary alliance has been formed. The Assassin will aid you, for a brief time...</desc>
+    <commander id="352" />
+    <deck>
+      <card id="7007" name="Water Serpent" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="2079" name="Koi Guardian" />
+      <card id="2040" name="Owlmancer" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="7066" name="Aquine" />
+      <card id="5073" name="Shell Invader" />
+      <card id="2078" name="Septuamaid" />
+      <card id="5108" name="Aurora Skimmer" />
+      <card id="7005" mastery_level="2" name="Tsunamari" />
+      <card id="2076" mastery_level="3" name="Adorabilis" />
+      <card id="6110" mastery_level="4" name="Sea Mantis" />
+      <card id="7108" mastery_level="5" name="Quetee" />
+      <card id="7014" mastery_level="6" name="Genbu" />
+      <card id="6109" mastery_level="7" name="Captain Gnaw" />
+    </deck>
+    <speech>
+      <line>
+        <commander>invisibleassassin</commander>
+        <enemy>1</enemy>
+        <text>It seems we have a reason to be allies after all.</text>
+      </line>
+      <line>
+        <commander>invisibleassassin</commander>
+        <enemy>1</enemy>
+        <text>I will aid you... but only until Scylla rests at the bottom of the sea.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5483</id>
+    <name>To Tip the Scales</name>
+    <energy>9</energy>
+    <desc>You have decided to go on the offensive against Scylla. Her raiders have retreated into the bay, gathering Mist Pearls. You scour the edge of the village for any usable boats...</desc>
+    <commander id="328" />
+    <deck>
+      <card id="2076" name="Adorabilis" />
+      <card id="2076" name="Adorabilis" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="7055" name="Valley Strider" />
+      <card id="7057" name="Bill Crasher" />
+      <card id="5073" name="Shell Invader" />
+      <card id="6108" name="Redwater Angler" />
+      <card id="5108" name="Aurora Skimmer" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="7005" mastery_level="2" name="Tsunamari" />
+      <card id="6054" mastery_level="3" name="Shadowcrafter" />
+      <card id="7003" mastery_level="4" name="Kraken" />
+      <card id="6107" mastery_level="5" name="Great Lava Crab" />
+      <card id="7056" mastery_level="6" name="Trailblazer" />
+      <card id="6053" mastery_level="7" name="Squire Gorger" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5484</id>
+    <name>Close Quarters</name>
+    <energy>9</energy>
+    <desc>You find a small boat that can just barely fit all of your companions. You shove off a few stray monsters and prepare to set sail.</desc>
+    <commander id="300" />
+    <deck>
+      <card id="7066" name="Aquine" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="7055" name="Valley Strider" />
+      <card id="2041" name="Sharpwing" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="6108" name="Redwater Angler" />
+      <card id="5108" name="Aurora Skimmer" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="6054" mastery_level="2" name="Shadowcrafter" />
+      <card id="5052" mastery_level="3" name="Paradise Avian" />
+      <card id="7003" mastery_level="4" name="Kraken" />
+      <card id="6107" mastery_level="5" name="Great Lava Crab" />
+      <card id="7056" mastery_level="6" name="Trailblazer" />
+      <card id="7056" mastery_level="7" name="Trailblazer" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5485</id>
+    <name>Raider Opposition</name>
+    <energy>9</energy>
+    <desc>The Seafolk raiders see you trying to get closer to their base. They raise their defenses, meeting you while you're still out in the bay!</desc>
+    <commander id="359" />
+    <deck>
+      <card id="7107" name="Hammer Krab" />
+      <card id="6108" name="Redwater Angler" />
+      <card id="5108" name="Aurora Skimmer" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="7005" name="Tsunamari" />
+      <card id="7005" name="Tsunamari" />
+      <card id="7066" name="Aquine" />
+      <card id="2078" mastery_level="2" name="Septuamaid" />
+      <card id="7105" mastery_level="3" name="Charybdis" />
+      <card id="7105" mastery_level="4" name="Charybdis" />
+      <card id="6107" mastery_level="5" name="Great Lava Crab" />
+      <card id="6109" mastery_level="6" name="Captain Gnaw" />
+      <card id="2080" mastery_level="7" name="Hunter Zind" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>Stop them! Don't let them get any closer; they'll interrupt the summoning of Lady Scylla!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5486</id>
+    <name>Out in the Open</name>
+    <energy>9</energy>
+    <desc>One of the raiders managed to pierce through your vessel's hull. Water leaks inside, and your boat begins to slowly sink. You continue to sail towards the Raiders' base, hoping to make it before the boat sinks...</desc>
+    <commander id="352" />
+    <deck>
+      <card id="5108" name="Aurora Skimmer" />
+      <card id="6108" name="Redwater Angler" />
+      <card id="6108" name="Redwater Angler" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="7066" name="Aquine" />
+      <card id="7066" name="Aquine" />
+      <card id="7005" name="Tsunamari" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="2079" mastery_level="2" name="Koi Guardian" />
+      <card id="7108" mastery_level="3" name="Quetee" />
+      <card id="7014" mastery_level="4" name="Genbu" />
+      <card id="7023" mastery_level="5" name="Zolmosh the Fist" />
+      <card id="6107" mastery_level="6" name="Great Lava Crab" />
+      <card id="2080" mastery_level="7" name="Hunter Zind" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5487</id>
+    <name>The Ranger</name>
+    <energy>9</energy>
+    <desc>Your ankles are covered in water by the time you reach the island. When you step onto land, a familiar face is there waiting for you...</desc>
+    <commander id="299" />
+    <deck>
+      <card id="6056" name="Potoo" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="2076" name="Adorabilis" />
+      <card id="6110" name="Sea Mantis" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="1630" mastery_level="2" name="Giant Squid" />
+      <card id="7054" mastery_level="3" name="The Thing Below" />
+      <card id="7014" mastery_level="4" name="Genbu" />
+      <card id="5000" mastery_level="5" name="Azure Sphinx" />
+      <card id="5059" mastery_level="6" name="Bemola" />
+      <card id="5055" mastery_level="7" name="Galewing" />
+    </deck>
+    <speech>
+      <line>
+        <commander>ranger</commander>
+        <enemy>0</enemy>
+        <text>Ahoy there, adventurer! Long time no see. The Elarian researchers sent me here t' collect some samples of Mist Pearls. But ya can see the mess this place is in now. </text>
+      </line>
+      <line>
+        <commander>ranger</commander>
+        <enemy>0</enemy>
+        <text>Whaddya say we team up, jus' like old times, eh?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5488</id>
+    <name>Avian Traitors</name>
+    <energy>9</energy>
+    <desc>More than just the Seafolk forces are here. Some of the resident Avians have joined the raiders to revive Scylla!</desc>
+    <commander id="308" />
+    <deck>
+      <card id="6054" name="Shadowcrafter" />
+      <card id="7029" name="Owl Griffin" />
+      <card id="5060" name="Quack Apprentice" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="2079" name="Koi Guardian" />
+      <card id="2078" name="Septuamaid" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="5060" name="Quack Apprentice" />
+      <card id="6054" mastery_level="2" name="Shadowcrafter" />
+      <card id="6107" mastery_level="3" name="Great Lava Crab" />
+      <card id="5055" mastery_level="4" name="Galewing" />
+      <card id="5055" mastery_level="5" name="Galewing" />
+      <card id="5059" mastery_level="6" name="Bemola" />
+      <card id="5047" mastery_level="7" name="Sky Fisher" />
+    </deck>
+    <speech>
+      <line>
+        <commander>avianmagistrate</commander>
+        <enemy>1</enemy>
+        <text>Do you honestly believe you can stop Lady Scylla? None can compare to her might.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5489</id>
+    <name>Dusted Willow</name>
+    <energy>9</energy>
+    <desc>With the first wave of Avians and Seafolk banished, your party decides to take a quick break. The Ranger tells you about the history of Duskwillow...</desc>
+    <commander id="317" />
+    <deck>
+      <card id="7055" name="Valley Strider" />
+      <card id="2041" name="Sharpwing" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="7057" name="Bill Crasher" />
+      <card id="2076" name="Adorabilis" />
+      <card id="2076" name="Adorabilis" />
+      <card id="7109" name="Clownder" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="6054" mastery_level="2" name="Shadowcrafter" />
+      <card id="7003" mastery_level="3" name="Kraken" />
+      <card id="6055" mastery_level="4" name="Phoenix" />
+      <card id="7056" mastery_level="5" name="Trailblazer" />
+      <card id="7106" mastery_level="6" name="Octhos, Ruin Baron" />
+      <card id="5057" mastery_level="7" name="Skystriker" />
+    </deck>
+    <speech>
+      <line>
+        <commander>ranger</commander>
+        <enemy>0</enemy>
+        <text>D'ya know about why they called this place Duskwillow? There used t' be a great willow, right in th' middle a town.</text>
+      </line>
+      <line>
+        <commander>ranger</commander>
+        <enemy>0</enemy>
+        <text>But when th' raiders attacked, they burned it right down. Nothin' but a pile o' ashes now... real shame.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5490</id>
+    <name>Duskwillow's Sorrow</name>
+    <energy>9</energy>
+    <desc>The Ranger laments the sorry state of Duskwillow. He has traveled to many places and seen many sights, but the power of The Void causes unspeakable tragedies.</desc>
+    <commander id="325" />
+    <deck>
+      <card id="2042" name="Carrion Hunter" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="2040" name="Owlmancer" />
+      <card id="2040" name="Owlmancer" />
+      <card id="7057" name="Bill Crasher" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="7109" name="Clownder" />
+      <card id="5108" name="Aurora Skimmer" />
+      <card id="2041" name="Sharpwing" />
+      <card id="6054" mastery_level="2" name="Shadowcrafter" />
+      <card id="6107" mastery_level="3" name="Great Lava Crab" />
+      <card id="5001" mastery_level="4" name="Aven Skypiercer" />
+      <card id="5001" mastery_level="5" name="Aven Skypiercer" />
+      <card id="7108" mastery_level="6" name="Quetee" />
+      <card id="5056" mastery_level="7" name="Kaliri the Foremost" />
+    </deck>
+    <speech>
+      <line>
+        <commander>ranger</commander>
+        <enemy>0</enemy>
+        <text>Aye... Duskwillow was a home t' frogs an' avians both. But now look, Scylla has convinced 'em to fight even their own family...</text>
+      </line>
+      <line>
+        <commander>ranger</commander>
+        <enemy>0</enemy>
+        <text>We must stop this madness.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5491</id>
+    <name>Duskwillow's Sorrow</name>
+    <energy>9</energy>
+    <desc>You break camp, taking your party deeper towards the heart of the raiders' base. Stopping their summoning would be much easier than fighting against the Lady of the Sea herself.</desc>
+    <commander id="294" />
+    <deck>
+      <card id="5016" name="Fowl Swarm" />
+      <card id="6054" name="Shadowcrafter" />
+      <card id="7055" name="Valley Strider" />
+      <card id="7055" name="Valley Strider" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="7066" name="Aquine" />
+      <card id="7005" name="Tsunamari" />
+      <card id="7005" name="Tsunamari" />
+      <card id="2041" name="Sharpwing" />
+      <card id="6054" mastery_level="2" name="Shadowcrafter" />
+      <card id="7105" mastery_level="3" name="Charybdis" />
+      <card id="5052" mastery_level="4" name="Paradise Avian" />
+      <card id="2043" mastery_level="5" name="Eos" />
+      <card id="2080" mastery_level="6" name="Hunter Zind" />
+      <card id="2043" mastery_level="7" name="Eos" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5492</id>
+    <name>Daunting Wall</name>
+    <energy>9</energy>
+    <desc>You reach a long fortress wall with spiked pikes. A glow emanates from within, stretching up into the heavens. This must be where they are performing the summoning...</desc>
+    <commander id="325" />
+    <deck>
+      <card id="5060" name="Quack Apprentice" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="7029" name="Owl Griffin" />
+      <card id="7029" name="Owl Griffin" />
+      <card id="7057" name="Bill Crasher" />
+      <card id="2078" name="Septuamaid" />
+      <card id="2079" name="Koi Guardian" />
+      <card id="2076" name="Adorabilis" />
+      <card id="6054" name="Shadowcrafter" />
+      <card id="6054" mastery_level="2" name="Shadowcrafter" />
+      <card id="6109" mastery_level="3" name="Captain Gnaw" />
+      <card id="5047" mastery_level="4" name="Sky Fisher" />
+      <card id="5047" mastery_level="5" name="Sky Fisher" />
+      <card id="7054" mastery_level="6" name="The Thing Below" />
+      <card id="6053" mastery_level="7" name="Squire Gorger" />
+    </deck>
+    <speech>
+      <line>
+        <commander>ranger</commander>
+        <enemy>0</enemy>
+        <text>It might seem like an impressive wall, but the tiniest o' cracks can make the whole thing crumble.</text>
+      </line>
+      <line>
+        <commander>ranger</commander>
+        <enemy>0</enemy>
+        <text>HIIIII-YA!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5493</id>
+    <name>Almost There</name>
+    <energy>9</energy>
+    <desc>The entire wall crumbles beneath the Ranger's attack! A host of enemies pours through the broken walls, intent on stopping your advance.</desc>
+    <commander id="325" />
+    <deck>
+      <card id="2040" name="Owlmancer" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="5060" name="Quack Apprentice" />
+      <card id="6056" name="Potoo" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="6108" name="Redwater Angler" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="1630" name="Giant Squid" />
+      <card id="6054" name="Shadowcrafter" />
+      <card id="6054" mastery_level="2" name="Shadowcrafter" />
+      <card id="7003" mastery_level="3" name="Kraken" />
+      <card id="5056" mastery_level="4" name="Kaliri the Foremost" />
+      <card id="7056" mastery_level="5" name="Trailblazer" />
+      <card id="7014" mastery_level="6" name="Genbu" />
+      <card id="6055" mastery_level="7" name="Phoenix" />
+    </deck>
+    <speech>
+      <line>
+        <commander>ranger</commander>
+        <enemy>0</enemy>
+        <text>It's all about knowin' where to hit 'em at their weakest point. An-</text>
+      </line>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>They're this far already?! Keep them occupied just a little longer!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5494</id>
+    <name>Recruiting the Ranger</name>
+    <energy>9</energy>
+    <desc>The entire earth rumbles. A terrible sea serpent rises where the light once was, letting out a ferocious cry...</desc>
+    <commander id="359" />
+    <deck>
+      <card id="2079" name="Koi Guardian" />
+      <card id="2041" name="Sharpwing" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="2040" name="Owlmancer" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="2078" name="Septuamaid" />
+      <card id="7005" name="Tsunamari" />
+      <card id="5073" name="Shell Invader" />
+      <card id="7066" name="Aquine" />
+      <card id="6054" mastery_level="2" name="Shadowcrafter" />
+      <card id="7105" mastery_level="3" name="Charybdis" />
+      <card id="5057" mastery_level="4" name="Skystriker" />
+      <card id="7056" mastery_level="5" name="Trailblazer" />
+      <card id="7105" mastery_level="6" name="Charybdis" />
+      <card id="6055" mastery_level="7" name="Phoenix" />
+    </deck>
+    <speech>
+      <line>
+        <commander>ranger</commander>
+        <enemy>0</enemy>
+        <text>Is that... Scylla? Guess you'll  need me for one last fight, eh.</text>
+      </line>
+      <line>
+        <commander>lanternguardian</commander>
+        <enemy>0</enemy>
+        <text>Clear out the remaining foes, and then focus on her.</text>
+      </line>
+      <line>
+        <commander>invisibleassassin</commander>
+        <enemy>0</enemy>
+        <text>Less talk, more killing. </text>
+      </line>
+      <line>
+        <commander>goldencrownmayor</commander>
+        <enemy>0</enemy>
+        <text>My, aren't you a fiesty one!</text>
+      </line>
+    </speech>
+  </mission>
 </root>

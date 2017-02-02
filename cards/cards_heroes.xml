@@ -7205,4 +7205,47 @@
       <skill id="protect" x="3" all="1" />
     </upgrade>
   </unit>
+  <unit>
+    <id>361</id>
+    <card_type>1</card_type>
+    <name>The Assassin</name>
+    <portrait>invisibleassassin</portrait>
+    <desc>The same assassin who tried to kill you and Tarian in Karthos, he seeks revenge with the new talents given to him by The Void.</desc>
+    <attack>0</attack>
+    <health>46</health>
+    <skill id="enhance" s="evade" x="1" />
+    <skill id="weaken" x="1" />
+    <skill id="imbue" s="flurry" c="6" />
+    <rarity>3</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>50</health>
+      <skill id="enhance" s="evade" x="1" />
+      <skill id="weaken" x="3" />
+      <skill id="imbue" s="flurry" c="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>52</health>
+      <skill id="enhance" s="evade" x="2" />
+      <skill id="weaken" x="4" />
+      <skill id="imbue" s="flurry" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>54</health>
+      <skill id="enhance" s="evade" x="3" />
+      <skill id="weaken" x="5" />
+      <skill id="imbue" s="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>60</health>
+      <skill id="enhance" s="evade" x="4" />
+      <skill id="weaken" x="6" />
+      <skill id="imbue" s="flurry" c="3" />
+    </upgrade>
+  </unit>
 </root>

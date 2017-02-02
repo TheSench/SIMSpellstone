@@ -13558,4 +13558,116 @@
       <skill id="berserk" x="6" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6110</id>
+    <card_type>2</card_type>
+    <name>Sea Mantis</name>
+    <picture>Crab_Person_A</picture>
+    <asset_bundle>83</asset_bundle>
+    <hidden_until_time>1486054800</hidden_until_time>
+    <attack>2</attack>
+    <health>10</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="enfeeble" x="2" />
+    <type>2</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="1" />
+      <skill id="enfeeble" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>13</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16110</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Surf Mantis</name>
+    <picture>Crab_Person_A</picture>
+    <asset_bundle>83</asset_bundle>
+    <hidden_until_time>1486054800</hidden_until_time>
+    <attack>3</attack>
+    <health>13</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="enfeeble" x="3" />
+    <type>2</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="1" />
+      <skill id="enfeeble" x="3" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>15</health>
+      <skill id="evade" x="1" />
+      <skill id="enfeeble" x="4" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>16</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26110</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Aqua Mantis</name>
+    <picture>Crab_Person_B</picture>
+    <asset_bundle>83</asset_bundle>
+    <hidden_until_time>1486054800</hidden_until_time>
+    <attack>3</attack>
+    <health>17</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="enfeeble" x="4" />
+    <skill id="nullify" x="1" />
+    <type>2</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="2" />
+      <skill id="enfeeble" x="4" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="2" />
+      <skill id="enfeeble" x="5" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+  </unit>
 </root>

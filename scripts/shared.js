@@ -154,6 +154,9 @@ function initializeCard(card, p, newKey) {
     card.attack_valor = 0;
     card.valor_triggered = false;
     card.dualstrike_triggered = false;
+    card.mark_target = 0;
+    card.marked = 0;
+    card.markers = [];
     card.nullified = 0;
     card.poisoned = 0;
     card.scorched = 0;
@@ -337,6 +340,10 @@ var makeUnit = (function () {
         attack_weaken: 0,
         attack_corroded: 0,
         corrosion_timer: 0,
+        // Mark
+        mark_target: 0,
+        marked: 0,
+        markers: [],
         // Other Statuses
         // Statuses
         nullified: 0,
@@ -363,6 +370,9 @@ var makeUnit = (function () {
                 this.corrosion_timer = 0;
                 this.attack_berserk = 0;
                 this.attack_valor = 0;
+                this.mark_target = 0;
+                this.marked = 0;
+                this.markers = [];
                 this.nullified = 0;
                 this.poisoned = 0;
                 this.scorched = 0;
@@ -552,6 +562,7 @@ var makeUnit = (function () {
                     this.taunt = true;
                     this.imbued[skillID] = 1;
                     return;
+
                 // Passives
                 case 'armored':
                 case 'berserk':
@@ -575,15 +586,18 @@ var makeUnit = (function () {
                         this.imbued.flurry = true;
                     }
                     return;
+
                 // Early Activation skills
-                case 'imbue':
+                case 'barrage':
                 case 'enhance':
                 case 'fervor':
-                case 'rally':
+                case 'imbue':
                 case 'legion':
-                case 'barrage':
+                case 'mark':
+                case 'rally':
                     imbueSkillsKey = 'earlyActivationSkills';
                     break;
+
                 // Activation skills (can occur twice on a card)
                 case 'enfeeble':
                 case 'frost':
@@ -645,15 +659,18 @@ var makeUnit = (function () {
                 case 'valor':
                     return this[s];
                     break;
+
                 // Early Activation skills
-                case 'imbue':
-                case 'enhance':
-                case 'rally':
-                case 'legion':
-                case 'fervor':
                 case 'barrage':
+                case 'enhance':
+                case 'fervor':
+                case 'imbue':
+                case 'legion':
+                case 'mark':
+                case 'rally':
                     target_skills = this.earlyActivationSkills;
                     break;
+
                 // Activation skills
                 case 'enfeeble':
                 case 'frost':
@@ -797,16 +814,18 @@ var isImbued = function (card, skillID, i) {
         case 'valor':
             return (card[skillID] === card.imbued[skillID])
 
-            // Early Activation skills
-        case 'imbue':
+        // Early Activation skills
+        case 'barrage':
         case 'enhance':
         case 'fervor':
-        case 'rally':
+        case 'imbue':
         case 'legion':
-        case 'barrage':
+        case 'mark':
+        case 'rally':
             imbueSkillsKey = 'earlyActivationSkills';
             break;
-            // Activation skills (can occur twice on a card)
+
+        // Activation skills (can occur twice on a card)
         case 'enfeeble':
         case 'frost':
         case 'heal':
@@ -1199,6 +1218,7 @@ function setSkill_2(new_card, skill) {
         case 'taunt':
             new_card.taunt = true;
             return;
+
         // Passives
         case 'armored':
         case 'berserk':
@@ -1218,16 +1238,19 @@ function setSkill_2(new_card, skill) {
         case 'flurry':
             new_card[skill.id] = skill;
             break;
+
         // Early Activation Skills
-        case 'imbue':
+        case 'barrage':
         case 'enhance':
         case 'fervor':
-        case 'rally':
+        case 'imbue':
         case 'legion':
-        case 'barrage':
+        case 'mark':
+        case 'rally':
             new_card.earlyActivationSkills.push(skill);
             break;
-            // Activation skills (can occur twice on a card)
+
+        // Activation skills (can occur twice on a card)
         case 'enfeeble':
         case 'frost':
         case 'heal':
@@ -1237,7 +1260,7 @@ function setSkill_2(new_card, skill) {
         case 'silence':
         case 'strike':
         case 'weaken':
-            // All other skills
+        // All other skills
         default:
             new_card.skill.push(skill);
             break;

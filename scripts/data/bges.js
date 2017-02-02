@@ -173,6 +173,19 @@ var BATTLEGROUNDS = {
       },
     ]
   },
+  "114": {
+    "name": "Eagle Eye",
+    "id": "114",
+    "effect": [
+      {
+        "effect_type": "add_skill",
+        "id": "mark",
+        "mult": 0.3,
+        "base": "attack",
+        "y": "10",
+      },
+    ]
+  },
   "501": {
     "name": "Castle Siege",
     "id": "501",
@@ -789,7 +802,7 @@ var BATTLEGROUNDS = {
     ]
   },
   "2003": {
-    "name": "Enemy Scaling BGE",
+    "name": "Riptide Nightsong",
     "id": "2003",
     "enemy_only": true,
     "scale_with_level": "1",
@@ -798,8 +811,8 @@ var BATTLEGROUNDS = {
     "effect": [
       {
         "effect_type": "scale_attributes",
-        "base_mult": .6,
-        "mult": .1,
+        "base_mult": .1,
+        "mult": .01,
       },
     ]
   },

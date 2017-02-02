@@ -61,12 +61,14 @@ var SIMULATOR = {};
             // Starting at the first dead unit, start shifting.
             if (!current_assault.isAlive()) {
                 if (debug) echo += debug_name(current_assault) + ' <strong>is removed from field</strong><br>';
+                removeMark(current_assault);
                 var newkey = key;	// Store the new key value for the next alive unit
                 for (key++; key < len; key++) {
                     current_assault = units[key];
                     // If this unit is dead, don't update newkey, we still need to fill that slot
                     if (!current_assault.isAlive()) {
                         if (debug) echo += debug_name(current_assault) + ' <strong>is removed from field</strong><br>';
+                        removeMark(current_assault);
                     }
                         // If this unit is alive, set its key to newkey, and then update newkey to be the next slot
                     else {
@@ -82,6 +84,26 @@ var SIMULATOR = {};
             }
         }
     };
+
+    function removeMark(card) {
+        for (var i = 0; i < card.markers.length; i++) {
+            var uid = card.markers[i].uid;
+            field.uids[uid].mark_target = 0;
+        }
+        if (card.mark_target) {
+            var target = field.uids[card.mark_target];
+            var markToRemove;
+            target.markers = target.markers.filter(function (mark) {
+                if (mark.uid === card.uid) {
+                    markToRemove = mark;
+                    return true;
+                } else {
+                    return true;
+                };
+            });
+            target.marked -= markToRemove.value;
+        }
+    }
 
     // Picks one target by random
     function choose_random_target(targets) {
@@ -394,8 +416,7 @@ var SIMULATOR = {};
                 var strike_damage = strike;
 
                 // Check Protect/Enfeeble
-                var enfeeble = 0;
-                if (target['enfeebled']) enfeeble = target['enfeebled'];
+                var enfeeble = target.enfeebled + target.marked;
                 var protect = 0;
                 if (target['protected']) protect = target['protected'];
 
@@ -427,7 +448,8 @@ var SIMULATOR = {};
                 }
                 if (debug) {
                     echo += '<u>(Strike: +' + strike;
-                    if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
+                    if (target.enfeebled) echo += ' Enfeeble: +' + target.enfeebled;
+                    if (target.marked) echo += ' Mark: +' + target.marked;
                     if (enhanced) echo += ' Enhance: +' + enhanced;
                     if (protect) echo += ' Barrier: -' + protect;
                     echo += ') = ' + strike_damage + ' damage</u><br>';
@@ -554,8 +576,7 @@ var SIMULATOR = {};
                 var frost_damage = frost;
 
                 // Check Protect/Enfeeble
-                var enfeeble = 0;
-                if (target['enfeebled']) enfeeble = target['enfeebled'];
+                var enfeeble = target.enfeebled + target.marked;
                 var protect = 0;
                 if (target['protected']) protect = target['protected'];
 
@@ -583,7 +604,8 @@ var SIMULATOR = {};
                 }
                 if (debug) {
                     echo += '<u>(Frostbreath: +' + frost;
-                    if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
+                    if (target.enfeebled) echo += ' Enfeeble: +' + target.enfeebled;
+                    if (target.marked) echo += ' Mark: +' + target.marked;
                     if (enhanced) echo += ' Enhance: +' + enhanced;
                     if (protect) echo += ' Barrier: -' + protect;
                     echo += ') = ' + frost_damage + ' damage</u><br>';
@@ -961,8 +983,7 @@ var SIMULATOR = {};
                     var strike_damage = strike;
 
                     // Check Protect/Enfeeble
-                    var enfeeble = 0;
-                    if (target['enfeebled']) enfeeble = target['enfeebled'];
+                    var enfeeble = target.enfeebled + target.marked;
                     var protect = 0;
                     if (target['protected']) protect = target['protected'];
 
@@ -987,7 +1008,8 @@ var SIMULATOR = {};
                     }
                     if (debug) {
                         echo += '<u>(Barrage: +1';
-                        if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
+                        if (target.enfeebled) echo += ' Enfeeble: +' + target.enfeebled;
+                        if (target.marked) echo += ' Mark: +' + target.marked;
                         if (enhanced) echo += ' Enhance: +' + enhanced;
                         if (protect) echo += ' Barrier: -' + protect;
                         echo += ') = ' + strike_damage + ' damage</u><br>';
@@ -1138,6 +1160,65 @@ var SIMULATOR = {};
 
                 target.imbue(skill);
                 if (debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target, false) + ' with ' + debug_skill(skill) + '<br>';
+            }
+
+            return affected;
+        },
+
+        mark: function (src_card, skill) {
+
+            // Can only mark one target
+            if (src_card.mark_target) {
+                return 0;
+            }
+
+            var faction = skill['y'];
+
+            var p = get_p(src_card);
+            var o = get_o(src_card);
+
+            var mark = skill['x'];
+
+            var all = skill['all'];
+
+            var field_x_assaults = field[o]['assaults'];
+
+            var targets = [];
+            for (var key = 0, len = field_x_assaults.length; key < len; key++) {
+                var target = field_x_assaults[key];
+                if (target.isAlive()
+                && target.isInFaction(faction)) {
+                    targets.push(key);
+                }
+            }
+
+            // No Targets
+            if (!targets.length) return 0;
+
+            // Check All
+            if (!all) {
+                targets = choose_random_target(targets);
+            }
+            var enhanced = getEnhancement(src_card, skill.id);
+            if (enhanced) {
+                if (enhanced < 0) {
+                    enhanced = Math.ceil(mark * -enhanced);
+                }
+                mark += enhanced;
+            }
+
+            var affected = 0;
+
+            for (var key = 0, len = targets.length; key < len; key++) {
+                var target = field_x_assaults[targets[key]];
+
+                affected++;
+
+                target.marked += mark;
+                src_card.mark_target = target.uid;
+                target.markers.push({ uid: src_card.uid, value: mark });
+
+                if (debug) echo += debug_name(src_card) + ' marks ' + debug_name(target) + ' by ' + mark + '<br>';
             }
 
             return affected;
@@ -1935,7 +2016,7 @@ var SIMULATOR = {};
         var damage = current_assault.adjustedAttack(); // Get base damage + rally/weaken
 
         // Enfeeble
-        var enfeeble = target['enfeebled'];
+        var enfeeble = target.enfeebled + target.marked;
         damage += enfeeble;
 
         if (debug) {
@@ -1945,7 +2026,8 @@ var SIMULATOR = {};
             if (current_assault.attack_rally) echo += ' Rally: +' + current_assault.attack_rally;
             if (current_assault.attack_weaken) echo += ' Weaken: -' + current_assault.attack_weaken;
             if (current_assault.attack_corroded) echo += ' Corrosion: -' + current_assault.attack_corroded;
-            if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
+            if (target.enfeebled) echo += ' Enfeeble: +' + target.enfeebled;
+            if (target.marked) echo += ' Mark: +' + target.marked;
         }
 
         // Pierce

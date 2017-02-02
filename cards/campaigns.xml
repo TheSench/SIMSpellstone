@@ -3925,7 +3925,8 @@
     <!-- Thu, 26 Jan 2017 17:00:00 GMT -->
     <location_id>7</location_id>
     <battleground_id>2001</battleground_id>
-    <!-- <show_level>1</show_level> -->
+    <!-- <show_level>1</show_level>
+		<show_ranking>1</show_ranking> -->
     <x>615</x>
     <y>140</y>
     <combatBG>CombatBGVoid</combatBG>

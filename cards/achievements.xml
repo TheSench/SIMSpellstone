@@ -5485,5 +5485,148 @@
       <item id="2522" number="10" />
     </reward>
   </achievement>
+  <!-- End Extra Node -->
+  <achievement>
+    <id>3198</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Assassin</name>
+    <desc>Complete the 'The Assassin' campaign on Mastery Level 2.</desc>
+    <mission_req>64</mission_req>
+    <locked_start_time>1486659600</locked_start_time>
+    <!-- Thu, 09 Feb 2017 17:00:00 GMT -->
+    <req>
+      <campaign>1112</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3199</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Assassin</name>
+    <desc>Complete the 'The Assassin' campaign on Mastery Level 4.</desc>
+    <mission_req>64</mission_req>
+    <locked_start_time>1486659600</locked_start_time>
+    <!-- Thu, 09 Feb 2017 17:00:00 GMT -->
+    <achievement_req>3198</achievement_req>
+    <req>
+      <campaign>1112</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3200</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Assassin</name>
+    <desc>Complete the 'The Assassin' campaign on Mastery Level 6.</desc>
+    <mission_req>64</mission_req>
+    <locked_start_time>1486659600</locked_start_time>
+    <!-- Thu, 09 Feb 2017 17:00:00 GMT -->
+    <achievement_req>3199</achievement_req>
+    <req>
+      <campaign>1112</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3201</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Assassin</name>
+    <desc>Complete the 'The Assassin' campaign on Mastery Level 7.</desc>
+    <mission_req>64</mission_req>
+    <locked_start_time>1486659600</locked_start_time>
+    <!-- Thu, 09 Feb 2017 17:00:00 GMT -->
+    <achievement_req>3200</achievement_req>
+    <req>
+      <campaign>1112</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3202</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Ranger</name>
+    <desc>Complete the 'The Ranger' campaign on Mastery Level 2.</desc>
+    <mission_req>64</mission_req>
+    <locked_start_time>1487869200</locked_start_time>
+    <!-- Thu, 23 Feb 2017 17:00:00 GMT -->
+    <req>
+      <campaign>1113</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3203</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Ranger</name>
+    <desc>Complete the 'The Ranger' campaign on Mastery Level 4.</desc>
+    <mission_req>64</mission_req>
+    <locked_start_time>1487869200</locked_start_time>
+    <!-- Thu, 23 Feb 2017 17:00:00 GMT -->
+    <achievement_req>3202</achievement_req>
+    <req>
+      <campaign>1113</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3204</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Ranger</name>
+    <desc>Complete the 'The Ranger' campaign on Mastery Level 6.</desc>
+    <mission_req>64</mission_req>
+    <locked_start_time>1487869200</locked_start_time>
+    <!-- Thu, 23 Feb 2017 17:00:00 GMT -->
+    <achievement_req>3203</achievement_req>
+    <req>
+      <campaign>1113</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3205</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Ranger</name>
+    <desc>Complete the 'The Ranger' campaign on Mastery Level 7.</desc>
+    <mission_req>64</mission_req>
+    <locked_start_time>1487869200</locked_start_time>
+    <!-- Thu, 23 Feb 2017 17:00:00 GMT -->
+    <achievement_req>3204</achievement_req>
+    <req>
+      <campaign>1113</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
 </root>
