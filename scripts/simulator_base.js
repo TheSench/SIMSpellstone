@@ -1286,6 +1286,9 @@ var SIMULATOR = {};
             if (tower) {
                 tower = makeUnitInfo(tower.id, tower.level);
                 var towerCard = get_card_apply_battlegrounds(tower);
+                var uid = 150;
+                towerCard.uid = uid;
+                field.uids[uid] = towerCard;
                 play_card(towerCard, 'cpu', true);
             }
         }
@@ -1336,6 +1339,7 @@ var SIMULATOR = {};
                 var card = cards[i];
                 card.owner = player;
                 card.played = false;
+                card.uid = uid;
                 uids[uid] = card;
             }
 
@@ -1344,8 +1348,9 @@ var SIMULATOR = {};
             commander.health_left = commander.health;
             if (!commander.reusableSkills) commander.resetTimers();
 
-            var commanderUid = (player === 'player' ? -1 : -2);
-            uids[commanderUid] = commander;
+            var uid = (player === 'player' ? -1 : -2);
+            commander.uid = uid;
+            uids[uid] = commander;
             field[player].commander = commander;
         });
     }
@@ -2289,7 +2294,7 @@ var SIMULATOR = {};
             var stats = healthStats[unit.owner];
             if (stats) {
                 stats.total += unit.health;
-                if (unit.played) {
+                if (unit.played || unit.isCommander()) {
                     stats.taken += (unit.health - unit.health_left);
                 }
             }
