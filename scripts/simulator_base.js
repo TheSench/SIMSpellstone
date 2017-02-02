@@ -12,6 +12,7 @@ var SIMULATOR = {};
 
         var newKey = field_p_assaults.length;
         initializeCard(card, p, newKey);
+        card.played = true;
 
         if (card.isAssault()) {
             field_p_assaults[newKey] = card;
@@ -60,16 +61,12 @@ var SIMULATOR = {};
             // Starting at the first dead unit, start shifting.
             if (!current_assault.isAlive()) {
                 if (debug) echo += debug_name(current_assault) + ' <strong>is removed from field</strong><br>';
-                if (current_assault.owner == 'player') damage_taken += current_assault.health;
-                else damage_dealt += current_assault.health;
                 var newkey = key;	// Store the new key value for the next alive unit
                 for (key++; key < len; key++) {
                     current_assault = units[key];
                     // If this unit is dead, don't update newkey, we still need to fill that slot
                     if (!current_assault.isAlive()) {
                         if (debug) echo += debug_name(current_assault) + ' <strong>is removed from field</strong><br>';
-                        if (current_assault.owner == 'player') damage_taken += current_assault.health;
-                        else damage_dealt += current_assault.health;
                     }
                         // If this unit is alive, set its key to newkey, and then update newkey to be the next slot
                     else {
@@ -1262,9 +1259,6 @@ var SIMULATOR = {};
     // Simulate one game
     function simulate() {
         simulating = true;
-        damage_taken = 0;
-        damage_dealt = 0;
-        plays = [];
 
         initializeBattle();
 
@@ -1331,21 +1325,29 @@ var SIMULATOR = {};
     }
 
     function setupField(field) {
-        // Initialize player Commander on the field
-        var field_player = field.player;
-        var field_player_commander = deck.player.commander;
-        field_player.commander = field_player_commander;
-        field_player_commander.owner = 'player';
-        field_player_commander.health_left = field_player_commander.health;
-        if (!field_player_commander.reusableSkills) field_player_commander.resetTimers();
+        // Initialize Commander on the fields and set uids
+        var uids = field.uids = {};
+        ['player', 'cpu'].forEach(function (player) {
+            var pDeck = deck[player];
+            var cards = pDeck.deck;
+            var uidBase = (player === 'player' ? 1 : 101);
+            for (var i = 0; i < cards.length; i++) {
+                var uid = uidBase + i;
+                var card = cards[i];
+                card.owner = player;
+                card.played = false;
+                uids[uid] = card;
+            }
 
-        // Initialize cpu Commander on the field
-        var field_cpu = field.cpu;
-        var field_cpu_commander = deck.cpu.commander;
-        field_cpu.commander = field_cpu_commander;
-        field_cpu_commander.owner = 'cpu';
-        field_cpu_commander.health_left = field_cpu_commander.health;
-        if (!field_cpu_commander.reusableSkills) field_cpu_commander.resetTimers();
+            var commander = pDeck.commander;
+            commander.owner = player;
+            commander.health_left = commander.health;
+            if (!commander.reusableSkills) commander.resetTimers();
+
+            var commanderUid = (player === 'player' ? -1 : -2);
+            uids[commanderUid] = commander;
+            field[player].commander = commander;
+        });
     }
 
     SIMULATOR.pause = false;
@@ -2271,8 +2273,6 @@ var SIMULATOR = {};
 
     function calculatePoints(forceWin) {
         var uids = field.uids;
-        damage_taken = 0;
-        damage_dealt = 0;
         var healthStats = {
             player: {
                 total: 0,
@@ -2283,50 +2283,21 @@ var SIMULATOR = {};
                 taken: 0
             },
         };
-        if (uids) {
-            for (var i in uids) {
-                var unit = uids[i];
-                var stats = healthStats[unit.owner];
-                if (stats) {
-                    stats.total += unit.health;
-                    if (unit.played) {
-                        stats.taken += (unit.health - unit.health_left);
-                    }
-                }
-            }
-        } else {
-            var assaults = field.player.assaults;
-            var stats = healthStats.player;
-            for (var i = 0, len = assaults.length; i < len; i++) {
-                var assault = assaults[i];
-                stats.total += assault.health;
-                if (assault.played) {
-                    stats.taken += (assault.health - assault.health_left);
-                }
-            }
-            var assaults = field.cpu.assaults;
-            var stats = healthStats.cpu;
-            for (var i = 0, len = assaults.length; i < len; i++) {
-                var assault = assaults[i];
-                stats.total += assault.health;
-                if (assault.played) {
-                    stats.taken += (assault.health - assault.health_left);
+
+        for (var i in uids) {
+            var unit = uids[i];
+            var stats = healthStats[unit.owner];
+            if (stats) {
+                stats.total += unit.health;
+                if (unit.played) {
+                    stats.taken += (unit.health - unit.health_left);
                 }
             }
         }
-
-        var commander_p = field.player.commander;
-        var stats = healthStats.player;
-        stats.taken += (commander_p.health - commander_p.health_left);
-        stats.total += commander_p.health;
-        stats.percent = stats.taken / stats.total;
+        healthStats.player.percent = stats.taken / stats.total;
+        healthStats.cpu.percent = stats.taken / stats.total;
 
         var commander_o = field.cpu.commander;
-        var stats = healthStats.cpu;
-        stats.taken += (commander_o.health - commander_o.health_left);
-        stats.total += commander_o.health;
-        stats.percent = stats.taken / stats.total;
-
         if (getdeck2) {
             if (commander_o.isAlive() && !forceWin) {
                 // 0-25 points, based on percentage of damage dealt to enemy
@@ -2354,9 +2325,6 @@ var SIMULATOR = {};
     var user_controlled = false;
     var livePvP = false;
     var turn = 0;
-    var damage_taken = 0;
-    var damage_dealt = 0;
-    var plays = [];
     var totalDeckHealth = 0;
     var totalCpuDeckHealth = 0;
 
