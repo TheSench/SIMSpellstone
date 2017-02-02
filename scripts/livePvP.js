@@ -218,6 +218,7 @@ $(document).ready(function () {
         wins = 0;
         losses = 0;
         draws = 0;
+        points = 0;
 
         outp(""); // Clear display
         setSimStatus("");

@@ -23,6 +23,7 @@
         wins = 0;
         losses = 0;
         draws = 0;
+        points = 0;
 
         outp(""); // Clear display
         if (!SIMULATOR.user_controlled) {
@@ -159,6 +160,7 @@
         } else {
             losses++;
         }
+        points += SIMULATOR.calculatePoints();
         games++;
 
         // Increment total turn count

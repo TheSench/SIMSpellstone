@@ -362,8 +362,9 @@ function showWinrate() {
     $("#percentComplete").html(percentComplete);
 
     // Calculate Average length of battle
-    var avg_length = (total_turns / games).toFixed(3);
-    $("#avgLength").html(avg_length);
+    $("#avgLength").html((total_turns / games).toFixed(1));
+
+    $("#avgPoints").html((points / games).toFixed(2));
 
     $("#winrateTable").show();
     // Final output
@@ -712,6 +713,7 @@ var wins = 0;
 var losses = 0;
 var draws = 0;
 var games = 0;
+var points = 0;
 var num_sims = 0;
 var last_games = [];
 var sims_left = 0;
