@@ -25,6 +25,7 @@ var skillFiltersAdv = [];
 var skillHiddenAdv = {};
 var factionHidden = {};
 var subfactionHidden = {};
+var dualFactionHidden = {};
 var rarityFilters = [];
 var rarityHidden = {};
 var typeFilters = [];
@@ -137,6 +138,9 @@ var initDeckBuilder = function () {
     });
     $("[name=set]").click(function (event) {
         onClickFilter(event, filterSet, event.altKey);
+    });
+    $("#dualfaction").click(function (event) {
+        onClickFilter(event, filterDualFaction, event.altKey);
     });
 
     setTimeout(DATA_UPDATER.updateCards, 1, loadCards);
@@ -1251,6 +1255,35 @@ var filterSubfaction = function (button, faction, exclude) {
     applyFilters();
 }
 
+var filterDualFaction = function (button, faction, exclude) {
+
+    var show;
+    if (button.classList.contains("selected") || button.classList.contains("excluded")) {
+        button.classList.remove("selected");
+        button.classList.remove("excluded");
+        button.checked = false;
+    } else if (exclude) {
+        button.classList.add("excluded");
+        button.classList.remove("selected");
+        show = false;
+    } else {
+        button.classList.remove("excluded");
+        button.classList.add("selected");
+        show = true;
+    }
+
+    dualFactionHidden = {};
+    if (typeof show !== "undefined") {
+        for (var i = 0, len = units.length; i < len; i++) {
+            var unit = units[i];
+            if (isDualFaction(unit) !== show) {
+                dualFactionHidden[makeUnitKey(unit)] = true;
+            }
+        }
+    }
+    applyFilters();
+}
+
 var filterAttack = function (button, min, max) {
     attackHidden = {};
     if (button.classList.contains("selected")) {
@@ -1816,7 +1849,8 @@ var applyFilters = function (keepPage, skipDraw) {
         if (skillHidden[key] || factionHidden[key] || subfactionHidden[key]
              || attackHidden[key] || healthHidden[key] || delayHidden[key]
              || typeHidden[key] || fusionHidden[key] || setHidden[key]
-             || nameHidden[key] || rarityHidden[key] || skillHiddenAdv[key]) {
+             || nameHidden[key] || rarityHidden[key] || skillHiddenAdv[key]
+             || dualFactionHidden[key]) {
         } else {
             unitsFiltered.push(unit);
             var card = get_card_by_id(unit);
@@ -1879,6 +1913,7 @@ var clearFilters = function () {
 
     factionHidden = {};
     subfactionHidden = {};
+    dualFactionHidden = {};
 
     rarityFilters = [];
     rarityHidden = {};
@@ -1917,6 +1952,11 @@ var isInSubfaction = function (unit, faction) {
     } else {
         return (card.sub_type.indexOf(factionID.toString()) >= 0);
     }
+}
+
+var isDualFaction = function (unit) {
+    var card = get_slim_card_by_id(unit, true);
+    return (card.sub_type.length > 1);
 }
 
 var isInRange = function (unit, field, min, max) {
