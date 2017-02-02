@@ -2269,6 +2269,83 @@ var SIMULATOR = {};
         }
     }
 
+    function calculatePoints(forceWin) {
+        var uids = field.uids;
+        damage_taken = 0;
+        damage_dealt = 0;
+        var healthStats = {
+            player: {
+                total: 0,
+                taken: 0
+            },
+            cpu: {
+                total: 0,
+                taken: 0
+            },
+        };
+        if (uids) {
+            for (var i in uids) {
+                var unit = uids[i];
+                var stats = healthStats[unit.owner];
+                if (stats) {
+                    stats.total += unit.health;
+                    if (unit.played) {
+                        stats.taken += (unit.health - unit.health_left);
+                    }
+                }
+            }
+        } else {
+            var assaults = field.player.assaults;
+            var stats = healthStats.player;
+            for (var i = 0, len = assaults.length; i < len; i++) {
+                var assault = assaults[i];
+                stats.total += assault.health;
+                if (assault.played) {
+                    stats.taken += (assault.health - assault.health_left);
+                }
+            }
+            var assaults = field.cpu.assaults;
+            var stats = healthStats.cpu;
+            for (var i = 0, len = assaults.length; i < len; i++) {
+                var assault = assaults[i];
+                stats.total += assault.health;
+                if (assault.played) {
+                    stats.taken += (assault.health - assault.health_left);
+                }
+            }
+        }
+
+        var commander_p = field.player.commander;
+        var stats = healthStats.player;
+        stats.taken += (commander_p.health - commander_p.health_left);
+        stats.total += commander_p.health;
+        stats.percent = stats.taken / stats.total;
+
+        var commander_o = field.cpu.commander;
+        var stats = healthStats.cpu;
+        stats.taken += (commander_o.health - commander_o.health_left);
+        stats.total += commander_o.health;
+        stats.percent = stats.taken / stats.total;
+
+        if (getdeck2) {
+            if (commander_o.isAlive() && !forceWin) {
+                // 0-25 points, based on percentage of damage dealt to enemy
+                var points = Math.floor(healthStats.cpu.percent * 25);
+            } else {
+                // 115-130 points, based on percentage of damage taken
+                var points = 130 - Math.floor(healthStats.player.percent * 15);
+            }
+        } else {
+            if (commander_o.isAlive() && !forceWin) {
+                var points = Math.floor(healthStats.cpu.percent / 0.02);
+                points = Math.max(5, points);
+            } else {
+                var points = 200 - Math.floor(healthStats.player.percent / 0.02);
+            }
+        }
+        return points;
+    }
+
     var deck = {};
     var field = {};
     var battlegrounds;
@@ -2286,6 +2363,7 @@ var SIMULATOR = {};
     // public functions
     SIMULATOR.simulate = simulate;
     SIMULATOR.onPlaySkills = onPlaySkills;
+    SIMULATOR.calculatePoints = calculatePoints;
     // public variables
     Object.defineProperties(SIMULATOR, {
         setupDecks: {

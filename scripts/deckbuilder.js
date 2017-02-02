@@ -957,6 +957,101 @@ var updateGraphs = function () {
     }
     var data2 = { labels: labels, series: data2 };
     new Chartist.Pie('#subfactionChart', data2, options);
+
+    
+    var attackStats = [];
+    var healthStats = [];
+    var delayStats = [];
+    var types = {};
+    var sub_types = {};
+    for (var i = 0; i < deck.deck.length; i++) {
+        var unit = deck.deck[i];
+        var card = get_card_by_id(unit);
+        delays[card.cost]++;
+        types[card.type] = (types[card.type] || 0) + 1;
+        attackStats.push(Number(card.attack));
+        healthStats.push(Number(card.health));
+        delayStats.push(Number(card.cost));
+
+        var subFactions = card.sub_type;
+        if (!subFactions.length) subFactions.push(0);
+        for (var s = 0; s < subFactions.length; s++) {
+            var subFaction = subFactions[s];
+            sub_types[subFaction] = (sub_types[subFaction] || 0) + 1;
+        }
+    }
+    var numericSort = function (a, b) { return a - b };
+    attackStats.sort(numericSort);
+    healthStats.sort(numericSort);
+    delayStats.sort(numericSort);
+
+    function sum(total, num) {
+        return total + num;
+    }
+    function average(ary) {
+        return (ary.length ? (ary.reduce(sum) / ary.length).toFixed(0) : 0);
+    }
+    var avgAttack = average(attackStats);
+    var avgHealth = average(healthStats);
+    var avgDelay = average(delayStats);
+
+    var options = {
+        width: 300,
+        height: 200,
+        axisY: {
+            onlyInteger: true
+        },
+        plugins: [
+            Chartist.plugins.legend(),
+            Chartist.plugins.tooltip()
+        ],
+        series: {
+            'Attack': {
+                lineSmooth: Chartist.Interpolation.simple()
+            },
+            'Health': {
+                lineSmooth: Chartist.Interpolation.simple()
+            },
+            'Delay': {
+                lineSmooth: Chartist.Interpolation.simple()
+            }
+        }
+    };
+
+    new Chartist.Line('#statChart', {
+        series: [
+            { name: 'Attack', className: 'ct-series-attack', data: attackStats },
+            { name: 'Health', className: 'ct-series-health', data: healthStats },
+            { name: 'Delay', className: 'ct-series-delay', data: delayStats }
+        ]
+    }, options);
+
+    var totalHealth = get_card_by_id(deck.commander).health + healthStats.reduce(function (prev, curr) { return prev + curr }, 0);
+    var HPPL = totalHealth / 15;
+    var labels = [];
+    var healthNeeded = [];
+    for (var i = 0; i <= 15; i++) {
+        labels.push(130-i);
+        healthNeeded.push(Math.ceil(HPPL * i));
+    }
+
+    var options = {
+        width: 500,
+        height: 200,
+        axisY: {
+            onlyInteger: true
+        },
+        plugins: [
+            Chartist.plugins.legend(),
+            Chartist.plugins.tooltip()
+        ]
+    };
+    new Chartist.Line('#hpplChart', {
+        labels: labels,
+        series: [
+            { name: 'Health Lost', className: 'ct-series-attack', data: healthNeeded },
+        ]
+    }, options);
 }
 
 var changeTracking = [];

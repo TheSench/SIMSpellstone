@@ -115,7 +115,7 @@ var CARD_GUI = {};
         var fieldHTML = [];
         if (turn) {
             var htmlTurnCounter = document.createElement("h1");
-            htmlTurnCounter.innerHTML = "Turn: " + turn
+            htmlTurnCounter.innerHTML = "Turn: " + turn + " (Currently at " + SIMULATOR.calculatePoints(true) + " points)";
             fieldHTML.push(htmlTurnCounter);
         }
 

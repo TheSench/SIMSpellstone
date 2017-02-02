@@ -56,14 +56,20 @@ var SIM_CONTROLLER = (function () {
         sims_left = 0;
         time_stop = new Date();
 
+
         var msg;
-        if (result == 'draw') {
-            msg = '<br><h1>DRAW</h1><br>';
-        } else if (result) {
-            msg = '<br><h1>WIN</h1><br>';
-        } else {
-            msg = '<br><h1>LOSS</h1><br>';
+        var points = "";
+        if (getdeck2) {
+            points = " (" + SIMULATOR.calculatePoints() + " points)";
         }
+        if (result == 'draw') {
+            msg = '<br><h1>DRAW' + points + '</h1><br>';
+        } else if (result) {
+            msg = '<br><h1>WIN' + points + '</h1><br>';
+        } else {
+            msg = '<br><h1>LOSS' + points + '</h1><br>';
+        }
+
         if (echo) {
             outputTurns(echo);
         }
