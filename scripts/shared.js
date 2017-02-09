@@ -155,8 +155,6 @@ function initializeCard(card, p, newKey) {
     card.valor_triggered = false;
     card.dualstrike_triggered = false;
     card.mark_target = 0;
-    card.marked = 0;
-    card.markers = [];
     card.nullified = 0;
     card.poisoned = 0;
     card.scorched = 0;
@@ -342,8 +340,6 @@ var makeUnit = (function () {
         corrosion_timer: 0,
         // Mark
         mark_target: 0,
-        marked: 0,
-        markers: [],
         // Other Statuses
         // Statuses
         nullified: 0,
@@ -371,8 +367,6 @@ var makeUnit = (function () {
                 this.attack_berserk = 0;
                 this.attack_valor = 0;
                 this.mark_target = 0;
-                this.marked = 0;
-                this.markers = [];
                 this.nullified = 0;
                 this.poisoned = 0;
                 this.scorched = 0;
