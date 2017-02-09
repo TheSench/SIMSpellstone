@@ -7214,37 +7214,43 @@
     <attack>0</attack>
     <health>46</health>
     <skill id="enhance" s="evade" x="1" />
-    <skill id="weaken" x="1" />
     <skill id="imbue" s="flurry" c="6" />
-    <rarity>3</rarity>
+    <rarity>4</rarity>
     <type>2</type>
     <set>9999</set>
     <upgrade>
       <level>2</level>
       <health>50</health>
       <skill id="enhance" s="evade" x="1" />
-      <skill id="weaken" x="3" />
+      <skill id="weaken" x="1" all="1" c="5" />
       <skill id="imbue" s="flurry" c="6" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>52</health>
       <skill id="enhance" s="evade" x="2" />
-      <skill id="weaken" x="4" />
+      <skill id="weaken" x="1" all="1" c="4" />
       <skill id="imbue" s="flurry" c="5" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>54</health>
       <skill id="enhance" s="evade" x="3" />
-      <skill id="weaken" x="5" />
+      <skill id="weaken" x="1" all="1" c="3" />
       <skill id="imbue" s="flurry" c="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>60</health>
       <skill id="enhance" s="evade" x="4" />
-      <skill id="weaken" x="6" />
+      <skill id="weaken" x="2" all="1" c="3" />
+      <skill id="imbue" s="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>66</health>
+      <skill id="enhance" s="evade" x="4" />
+      <skill id="weaken" x="2" all="1" c="2" />
       <skill id="imbue" s="flurry" c="3" />
     </upgrade>
   </unit>

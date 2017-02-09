@@ -8744,4 +8744,362 @@
       <skill id="berserk" x="3" />
     </upgrade>
   </unit>
+  <unit>
+    <id>2081</id>
+    <card_type>2</card_type>
+    <name>Starstriker</name>
+    <picture>Avian_Starstriker_A</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1489078800</hidden_until_time>
+    <attack>5</attack>
+    <health>14</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="strike" x="1" all="1" />
+    <skill id="jam" c="6" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="strike" x="1" all="1" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="1" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="jam" c="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12081</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Starstrike Knight</name>
+    <picture>Avian_Starstriker_A</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1489078800</hidden_until_time>
+    <attack>5</attack>
+    <health>17</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="1" />
+    <skill id="strike" x="1" all="1" />
+    <skill id="jam" c="5" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="1" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="2" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="jam" c="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22081</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Starstrike Hero</name>
+    <picture>Avian_Starstriker_B</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1489078800</hidden_until_time>
+    <attack>6</attack>
+    <health>20</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="2" />
+    <skill id="strike" x="1" all="1" />
+    <skill id="jam" c="4" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="3" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="3" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="jam" c="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2082</id>
+    <card_type>2</card_type>
+    <name>Ecru Spear</name>
+    <picture>Avian_Egg_Warrior_A</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1489078800</hidden_until_time>
+    <attack>6</attack>
+    <health>10</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="corrosive" x="3" />
+    <skill id="pierce" x="4" />
+    <type>2</type>
+    <sub_type>10</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="corrosive" x="3" />
+      <skill id="pierce" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>12</health>
+      <skill id="corrosive" x="3" />
+      <skill id="pierce" x="5" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12082</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Ecru Pike</name>
+    <picture>Avian_Egg_Warrior_A</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1489078800</hidden_until_time>
+    <attack>7</attack>
+    <health>13</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="corrosive" x="4" />
+    <skill id="pierce" x="5" />
+    <skill id="berserk" x="1" />
+    <type>2</type>
+    <sub_type>10</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="corrosive" x="4" />
+      <skill id="pierce" x="6" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="4" />
+      <skill id="pierce" x="6" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22082</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Ecru Defender</name>
+    <picture>Avian_Egg_Warrior_B</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1489078800</hidden_until_time>
+    <attack>8</attack>
+    <health>15</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="corrosive" x="4" />
+    <skill id="pierce" x="7" />
+    <skill id="berserk" x="2" />
+    <type>2</type>
+    <sub_type>10</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="corrosive" x="4" />
+      <skill id="pierce" x="8" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="5" />
+      <skill id="pierce" x="8" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2083</id>
+    <card_type>2</card_type>
+    <name>Habrok, the Lance</name>
+    <picture>Angel_Avian_Hawk_Lancer_A</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1486659600</hidden_until_time>
+    <attack>5</attack>
+    <health>16</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="1" all="1" y="1" />
+    <skill id="nullify" x="1" />
+    <skill id="flurry" c="5" />
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <sub_type>10</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="rally" x="1" all="1" y="1" />
+      <skill id="nullify" x="1" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>6</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12083</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Habrok, the Noble</name>
+    <picture>Angel_Avian_Hawk_Lancer_A</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1486659600</hidden_until_time>
+    <attack>6</attack>
+    <health>20</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="1" all="1" y="1" />
+    <skill id="nullify" x="1" />
+    <skill id="flurry" c="4" />
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <sub_type>10</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="rally" x="1" all="1" y="1" />
+      <skill id="nullify" x="2" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="rally" x="2" all="1" y="1" />
+      <skill id="nullify" x="2" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22083</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Habrok, the Warhawk</name>
+    <picture>Angel_Avian_Hawk_Lancer_B</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1486659600</hidden_until_time>
+    <attack>7</attack>
+    <health>23</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="2" all="1" y="1" />
+    <skill id="nullify" x="2" />
+    <skill id="flurry" c="4" />
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <sub_type>10</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="rally" x="2" all="1" y="1" />
+      <skill id="nullify" x="3" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="rally" x="2" all="1" y="1" />
+      <skill id="nullify" x="3" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+  </unit>
 </root>

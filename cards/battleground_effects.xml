@@ -272,22 +272,22 @@
     <icon>filter_avian_64.png</icon>
     <effect>
       <add_skill id="mark" mult="0.3" base="attack" y="10" />
+      <skill id="displayEffect" trigger="onSkill" y="10" s="mark">
+        <target_effect>
+          <prefab>EagleEye</prefab>
+          <bundle_id>84</bundle_id>
+          <delay>0</delay>
+          <duration>3</duration>
+          <!-- <shake>true</shake> -->
+        </target_effect>
+        <actor_effect>
+          <prefab>EagleEye</prefab>
+          <bundle_id>84</bundle_id>
+          <delay>0</delay>
+          <duration>3</duration>
+        </actor_effect>
+      </skill>
     </effect>
-    <skill id="displayEffect" trigger="onSkill" y="10" s="mark">
-      <target_effect>
-        <prefab>goblinBombTarget</prefab>
-        <bundle_id>75</bundle_id>
-        <delay>0</delay>
-        <duration>1</duration>
-        <!-- <shake>true</shake> -->
-      </target_effect>
-      <!-- <actor_effect>
-					<prefab>goblinBombTarget</prefab>
-					<bundle_id>75</bundle_id>
-					<delay>0</delay>
-					<duration>1</duration>
-				</actor_effect> -->
-    </skill>
   </battleground>
   <!-- 501-1000: Specialty BGE -->
   <battleground>
@@ -650,7 +650,21 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".01" />
+      <scale_attributes base_mult=".15" mult=".0025" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>2004</id>
+    <name>Riptide Nightsong</name>
+    <desc>Enemies become stronger with each passing Mastery level.</desc>
+    <icon>filter_seafolk_64</icon>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>0</starting_level>
+    <!-- Starting Mastery Level -->
+    <effect>
+      <scale_attributes base_mult=".2" mult=".005" />
     </effect>
   </battleground>
 </root>

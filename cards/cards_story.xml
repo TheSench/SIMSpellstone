@@ -4398,7 +4398,6 @@
     <cost>4</cost>
     <rarity>4</rarity>
     <skill id="armored" x="5" />
-    <skill id="heal" x="1" y="1" />
     <skill id="taunt" />
     <type>8</type>
     <set>9999</set>

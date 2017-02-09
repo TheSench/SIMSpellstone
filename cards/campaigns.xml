@@ -3947,6 +3947,44 @@
     <find_item id="2522" drop_per_energy=".04" />
   </campaign>
   <!-- End Mythic -->
+  <campaign>
+    <id>1112</id>
+    <name>The Assassin</name>
+    <campaign_req>6</campaign_req>
+    <locked_start_time>1486659600</locked_start_time>
+    <!-- Thu, 09 Feb 2017 17:00:00 GMT -->
+    <location_id>7</location_id>
+    <battleground_id>2003</battleground_id>
+    <x>785</x>
+    <y>405</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5470</mission_id>
+      <mission_id>5471</mission_id>
+      <mission_id>5472</mission_id>
+      <mission_id>5473</mission_id>
+      <mission_id>5474</mission_id>
+      <mission_id>5475</mission_id>
+      <mission_id>5476</mission_id>
+      <mission_id>5477</mission_id>
+      <mission_id>5478</mission_id>
+      <mission_id>5479</mission_id>
+      <mission_id>5480</mission_id>
+      <mission_id>5481</mission_id>
+      <mission_id>5482</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2081" />
+      <card level="5" id="512" />
+      <card level="6" id="512" />
+      <card level="7" id="2040" />
+    </rewards>
+    <find_item id="3048" drop_per_energy=".6" />
+    <find_item id="2522" drop_per_energy=".04" />
+  </campaign>
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
   <!-- ============================ -->

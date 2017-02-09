@@ -811,8 +811,23 @@ var BATTLEGROUNDS = {
     "effect": [
       {
         "effect_type": "scale_attributes",
-        "base_mult": .1,
-        "mult": .01,
+        "base_mult": .15,
+        "mult": .0025,
+      },
+    ]
+  },
+  "2004": {
+    "name": "Riptide Nightsong",
+    "id": "2004",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "0",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .2,
+        "mult": .005,
       },
     ]
   },

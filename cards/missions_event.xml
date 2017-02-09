@@ -14275,7 +14275,7 @@
       <card id="8044" name="Aegis of the Sea" />
       <card id="8044" name="Aegis of the Sea" />
       <card id="5106" name="Acuro, Sea Captain" />
-      <card id="12077" name="Flood Beetle" />
+      <card id="2077" name="Drowner Beetle" />
       <card id="2079" name="Koi Guardian" />
       <card id="5104" name="Pisces" />
       <card id="2079" name="Koi Guardian" />
@@ -14299,7 +14299,7 @@
       <card id="8044" name="Aegis of the Sea" />
       <card id="8044" name="Aegis of the Sea" />
       <card id="5106" name="Acuro, Sea Captain" />
-      <card id="12077" name="Flood Beetle" />
+      <card id="2077" name="Drowner Beetle" />
       <card id="2079" name="Koi Guardian" />
       <card id="5104" name="Pisces" />
       <card id="2079" name="Koi Guardian" />
@@ -14337,7 +14337,7 @@
       <card id="7107" name="Hammer Crab" />
     </deck>
   </mission>
-  <!-- Campaign Event 1 Part 2 -->
+  <!-- Campaign Event Weeks 5-6 -->
   <mission>
     <id>5470</id>
     <name>Rumors of the Powerful</name>
@@ -14352,7 +14352,7 @@
       <card id="5073" name="Shell Invader" />
       <card id="7005" name="Tsunamari" />
       <card id="5073" name="Shell Invader" />
-      <card id="5016" name="Fowl Swarm" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="6108" name="Redwater Angler" />
       <card id="5108" mastery_level="2" name="Aurora Skimmer" />
       <card id="6056" mastery_level="3" name="Potoo" />
@@ -14374,7 +14374,7 @@
       <card id="2079" name="Koi Guardian" />
       <card id="2078" name="Septuamaid" />
       <card id="5108" name="Aurora Skimmer" />
-      <card id="1630" name="Giant Squid" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="6108" name="Redwater Angler" />
       <card id="2040" name="Owlmancer" />
       <card id="5107" name="Thrumming Beacon" />
@@ -14397,7 +14397,7 @@
       <card id="7029" name="Owl Griffin" />
       <card id="5016" name="Fowl Swarm" />
       <card id="7030" name="Arctic Ambusher" />
-      <card id="5060" name="Quack Apprentice" />
+      <card id="8044" name="Aegis of the Sea" />
       <card id="6054" name="Shadowcrafter" />
       <card id="1027" name="Griffin Knight" />
       <card id="5016" name="Fowl Swarm" />
@@ -14430,7 +14430,7 @@
       <card id="7055" name="Valley Strider" />
       <card id="7055" name="Valley Strider" />
       <card id="5058" name="Crescent Moon Owl" />
-      <card id="2041" name="Sharpwing" />
+      <card id="8044" name="Aegis of the Sea" />
       <card id="5044" name="Telepathic Magi" />
       <card id="7055" name="Valley Strider" />
       <card id="2041" mastery_level="2" name="Sharpwing" />
@@ -14473,7 +14473,7 @@
       <card id="5044" name="Telepathic Magi" />
       <card id="2041" name="Sharpwing" />
       <card id="5044" name="Telepathic Magi" />
-      <card id="7057" name="Bill Crasher" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="2042" mastery_level="2" name="Carrion Hunter" />
       <card id="5060" mastery_level="3" name="Quack Apprentice" />
       <card id="6054" mastery_level="4" name="Shadowcrafter" />
@@ -14509,7 +14509,7 @@
       <card id="7107" name="Hammer Krab" />
       <card id="2041" name="Sharpwing" />
       <card id="7029" name="Owl Griffin" />
-      <card id="7030" name="Arctic Ambusher" />
+      <card id="8044" name="Aegis of the Sea" />
       <card id="7030" mastery_level="2" name="Arctic Ambusher" />
       <card id="2079" mastery_level="3" name="Koi Guardian" />
       <card id="7066" mastery_level="4" name="Aquine" />
@@ -14538,7 +14538,7 @@
     <commander id="359" />
     <deck>
       <card id="7007" name="Water Serpent" />
-      <card id="6108" name="Redwater Angler" />
+      <card id="8044" name="Aegis of the Sea" />
       <card id="2076" name="Adorabilis" />
       <card id="2079" name="Koi Guardian" />
       <card id="7005" name="Tsunamari" />
@@ -14581,7 +14581,7 @@
       <card id="7030" name="Arctic Ambusher" />
       <card id="2078" name="Septuamaid" />
       <card id="2078" name="Septuamaid" />
-      <card id="7066" name="Aquine" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="2079" mastery_level="2" name="Koi Guardian" />
       <card id="2076" mastery_level="3" name="Adorabilis" />
       <card id="2041" mastery_level="4" name="Sharpwing" />
@@ -14617,7 +14617,7 @@
       <card id="2040" name="Owlmancer" />
       <card id="2078" name="Septuamaid" />
       <card id="7107" name="Hammer Krab" />
-      <card id="7066" name="Aquine" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="2078" mastery_level="2" name="Septuamaid" />
       <card id="2076" mastery_level="3" name="Adorabilis" />
       <card id="2041" mastery_level="4" name="Sharpwing" />
@@ -14652,7 +14652,7 @@
       <card id="2079" name="Koi Guardian" />
       <card id="5073" name="Shell Invader" />
       <card id="2078" name="Septuamaid" />
-      <card id="7107" name="Hammer Krab" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="7066" name="Aquine" />
       <card id="2079" mastery_level="2" name="Koi Guardian" />
       <card id="5073" mastery_level="3" name="Shell Invader" />
@@ -14682,7 +14682,7 @@
     <commander id="359" />
     <deck>
       <card id="7007" name="Water Serpent" />
-      <card id="7107" name="Hammer Krab" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="6108" name="Redwater Angler" />
       <card id="5108" name="Aurora Skimmer" />
       <card id="1630" name="Giant Squid" />
@@ -14711,7 +14711,7 @@
       <card id="5084" name="Dotora Spirit" />
       <card id="5084" name="Dotora Spirit" />
       <card id="6031" name="Iceblood Assassin" />
-      <card id="5089" name="Gomblit" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="2078" name="Septuamaid" />
       <card id="2076" name="Adorabilis" />
       <card id="7005" mastery_level="2" name="Tsunamari" />
@@ -14754,7 +14754,7 @@
       <card id="7066" name="Aquine" />
       <card id="5073" name="Shell Invader" />
       <card id="2078" name="Septuamaid" />
-      <card id="5108" name="Aurora Skimmer" />
+      <card id="8044" name="Aegis of the Sea" />
       <card id="7005" mastery_level="2" name="Tsunamari" />
       <card id="2076" mastery_level="3" name="Adorabilis" />
       <card id="6110" mastery_level="4" name="Sea Mantis" />
@@ -14787,7 +14787,7 @@
       <card id="1027" name="Griffin Knight" />
       <card id="7055" name="Valley Strider" />
       <card id="7057" name="Bill Crasher" />
-      <card id="5073" name="Shell Invader" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="6108" name="Redwater Angler" />
       <card id="5108" name="Aurora Skimmer" />
       <card id="7107" name="Hammer Krab" />
@@ -14813,7 +14813,7 @@
       <card id="2041" name="Sharpwing" />
       <card id="5107" name="Thrumming Beacon" />
       <card id="6108" name="Redwater Angler" />
-      <card id="5108" name="Aurora Skimmer" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="7030" name="Arctic Ambusher" />
       <card id="6054" mastery_level="2" name="Shadowcrafter" />
       <card id="5052" mastery_level="3" name="Paradise Avian" />
@@ -14837,7 +14837,7 @@
       <card id="1027" name="Griffin Knight" />
       <card id="7107" name="Hammer Krab" />
       <card id="7005" name="Tsunamari" />
-      <card id="7005" name="Tsunamari" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="7066" name="Aquine" />
       <card id="2078" mastery_level="2" name="Septuamaid" />
       <card id="7105" mastery_level="3" name="Charybdis" />
@@ -14869,7 +14869,7 @@
       <card id="7066" name="Aquine" />
       <card id="7005" name="Tsunamari" />
       <card id="5107" name="Thrumming Beacon" />
-      <card id="5107" name="Thrumming Beacon" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="2079" mastery_level="2" name="Koi Guardian" />
       <card id="7108" mastery_level="3" name="Quetee" />
       <card id="7014" mastery_level="4" name="Genbu" />
@@ -14893,7 +14893,7 @@
       <card id="2076" name="Adorabilis" />
       <card id="6110" name="Sea Mantis" />
       <card id="7107" name="Hammer Krab" />
-      <card id="5107" name="Thrumming Beacon" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="1630" mastery_level="2" name="Giant Squid" />
       <card id="7054" mastery_level="3" name="The Thing Below" />
       <card id="7014" mastery_level="4" name="Genbu" />
@@ -14929,7 +14929,7 @@
       <card id="2079" name="Koi Guardian" />
       <card id="2078" name="Septuamaid" />
       <card id="7030" name="Arctic Ambusher" />
-      <card id="5060" name="Quack Apprentice" />
+      <card id="8044" name="Aegis of the Sea" />
       <card id="6054" mastery_level="2" name="Shadowcrafter" />
       <card id="6107" mastery_level="3" name="Great Lava Crab" />
       <card id="5055" mastery_level="4" name="Galewing" />
@@ -14958,7 +14958,7 @@
       <card id="5016" name="Fowl Swarm" />
       <card id="7057" name="Bill Crasher" />
       <card id="2076" name="Adorabilis" />
-      <card id="2076" name="Adorabilis" />
+      <card id="8044" name="Aegis of the Sea" />
       <card id="7109" name="Clownder" />
       <card id="7030" name="Arctic Ambusher" />
       <card id="6054" mastery_level="2" name="Shadowcrafter" />
@@ -14988,7 +14988,7 @@
     <desc>The Ranger laments the sorry state of Duskwillow. He has traveled to many places and seen many sights, but the power of The Void causes unspeakable tragedies.</desc>
     <commander id="325" />
     <deck>
-      <card id="2042" name="Carrion Hunter" />
+      <card id="8044" name="Aegis of the Sea" />
       <card id="1027" name="Griffin Knight" />
       <card id="2040" name="Owlmancer" />
       <card id="2040" name="Owlmancer" />
@@ -15031,7 +15031,7 @@
       <card id="5016" name="Fowl Swarm" />
       <card id="7066" name="Aquine" />
       <card id="7005" name="Tsunamari" />
-      <card id="7005" name="Tsunamari" />
+      <card id="8044" name="Aegis of the Sea" />
       <card id="2041" name="Sharpwing" />
       <card id="6054" mastery_level="2" name="Shadowcrafter" />
       <card id="7105" mastery_level="3" name="Charybdis" />
@@ -15051,7 +15051,7 @@
       <card id="5060" name="Quack Apprentice" />
       <card id="5044" name="Telepathic Magi" />
       <card id="7029" name="Owl Griffin" />
-      <card id="7029" name="Owl Griffin" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="7057" name="Bill Crasher" />
       <card id="2078" name="Septuamaid" />
       <card id="2079" name="Koi Guardian" />
@@ -15082,7 +15082,7 @@
     <name>Almost There</name>
     <energy>9</energy>
     <desc>The entire wall crumbles beneath the Ranger's attack! A host of enemies pours through the broken walls, intent on stopping your advance.</desc>
-    <commander id="325" />
+    <commander id="308" />
     <deck>
       <card id="2040" name="Owlmancer" />
       <card id="5044" name="Telepathic Magi" />
@@ -15091,7 +15091,7 @@
       <card id="5044" name="Telepathic Magi" />
       <card id="6108" name="Redwater Angler" />
       <card id="5107" name="Thrumming Beacon" />
-      <card id="1630" name="Giant Squid" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="6054" name="Shadowcrafter" />
       <card id="6054" mastery_level="2" name="Shadowcrafter" />
       <card id="7003" mastery_level="3" name="Kraken" />
@@ -15127,7 +15127,7 @@
       <card id="5044" name="Telepathic Magi" />
       <card id="2078" name="Septuamaid" />
       <card id="7005" name="Tsunamari" />
-      <card id="5073" name="Shell Invader" />
+      <card id="8045" name="Summoned Abomination" />
       <card id="7066" name="Aquine" />
       <card id="6054" mastery_level="2" name="Shadowcrafter" />
       <card id="7105" mastery_level="3" name="Charybdis" />

@@ -509,7 +509,7 @@ var CARD_GUI = {};
                 iconName = 'Siphon.png';
                 break;
             case 'mark':
-                iconName = 'Hex.png';
+                iconName = 'EagleEye.png';
                 break;
             case 'poisonstrike':
                 iconName = 'Poisonbolt.png';
