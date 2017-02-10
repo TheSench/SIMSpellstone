@@ -939,6 +939,114 @@ var RUNES = {
             }
         }
     },
+    "5191": {
+        "id": "5191",
+        "name": "Rune of Valor",
+        "type": "3",
+        "category": "3",
+        "set": "1",
+        "rarity": "3",
+        "icon": "rune_valor_epic",
+        "bundle": "34",
+        "desc": "Valor +2",
+        "usable": "0",
+        "stat_boost": {
+            "skill": {
+                "id": "valor",
+                "x": "2"
+            }
+        }
+    },
+    "5192": {
+        "id": "5192",
+        "name": "Rune of Greater Valor",
+        "type": "3",
+        "category": "3",
+        "set": "1",
+        "rarity": "4",
+        "icon": "rune_valor_legendary",
+        "bundle": "34",
+        "desc": "Valor +50%, rounded up.",
+        "usable": "0",
+        "stat_boost": {
+            "skill": {
+                "id": "valor",
+                "mult": "0.5"
+            }
+        }
+    },
+    "5201": {
+        "id": "5201",
+        "name": "Rune of Nullification",
+        "type": "3",
+        "category": "3",
+        "set": "1",
+        "rarity": "3",
+        "icon": "rune_nullify_epic",
+        "bundle": "34",
+        "desc": "Nullify +1",
+        "usable": "0",
+        "stat_boost": {
+            "skill": {
+                "id": "nullify",
+                "x": "1"
+            }
+        }
+    },
+    "5202": {
+        "id": "5202",
+        "name": "Rune of Greater Nullification",
+        "type": "3",
+        "category": "3",
+        "set": "1",
+        "rarity": "4",
+        "icon": "rune_nullify_legendary",
+        "bundle": "34",
+        "desc": "Nullify +50%, rounded up.",
+        "usable": "0",
+        "stat_boost": {
+            "skill": {
+                "id": "nullify",
+                "mult": "0.5"
+            }
+        }
+    },
+    "5211": {
+        "id": "5211",
+        "name": "Rune of Corrosion",
+        "type": "3",
+        "category": "3",
+        "set": "1",
+        "rarity": "3",
+        "icon": "rune_corrosive_epic",
+        "bundle": "34",
+        "desc": "Corrosive +1",
+        "usable": "0",
+        "stat_boost": {
+            "skill": {
+                "id": "corrosive",
+                "x": "1"
+            }
+        }
+    },
+    "5212": {
+        "id": "5212",
+        "name": "Rune of Greater Corrosion",
+        "type": "3",
+        "category": "3",
+        "set": "1",
+        "rarity": "4",
+        "icon": "rune_corrosive_legendary",
+        "bundle": "34",
+        "desc": "Corrosive +50%, rounded up.",
+        "usable": "0",
+        "stat_boost": {
+            "skill": {
+                "id": "corrosive",
+                "mult": "0.5"
+            }
+        }
+    },
     "5501": {
         "id": "5501",
         "name": "Angelic Rune of Health",
@@ -1030,6 +1138,22 @@ var RUNES = {
         "icon": "rune_health_epic",
         "bundle": "34",
         "desc": "Health +8. May only be embedded on Seafolk. May not be crafted.",
+        "usable": "0",
+        "stat_boost": {
+            "health": "8"
+        }
+    },
+    "5507": {
+        "id": "5507",
+        "name": "Avian Rune of Health",
+        "type": "3",
+        "category": "3",
+        "set": "2",
+        "rarity": "3",
+        "faction_req": "10",
+        "icon": "rune_health_epic",
+        "bundle": "34",
+        "desc": "Health +8. May only be embedded on Avian. May not be crafted.",
         "usable": "0",
         "stat_boost": {
             "health": "8"
