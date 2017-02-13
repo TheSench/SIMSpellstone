@@ -2204,6 +2204,14 @@
     <resource card_id="15109" number="2" />
   </fusion_recipe>
   <fusion_recipe>
+    <card_id>15110</card_id>
+    <resource card_id="5110" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25110</card_id>
+    <resource card_id="15110" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
     <card_id>15112</card_id>
     <resource card_id="5112" number="2" />
   </fusion_recipe>

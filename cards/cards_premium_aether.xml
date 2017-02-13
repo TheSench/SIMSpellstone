@@ -13636,6 +13636,134 @@
     </upgrade>
   </unit>
   <unit>
+    <id>5110</id>
+    <card_type>2</card_type>
+    <name>Alectryon</name>
+    <picture>Stormcloud_Rooster_A</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1487005200</hidden_until_time>
+    <attack>4</attack>
+    <health>26</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="strike" x="1" all="1" />
+    <skill id="strike" x="1" all="1" />
+    <skill id="strike" x="2" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>28</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="strike" x="1" all="1" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="strike" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>30</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15110</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Alectryon, Sky Regent</name>
+    <picture>Stormcloud_Rooster_A</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1487005200</hidden_until_time>
+    <attack>5</attack>
+    <health>31</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="strike" x="1" all="1" />
+    <skill id="strike" x="1" all="1" />
+    <skill id="strike" x="3" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="strike" x="2" all="1" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="strike" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="strike" x="2" all="1" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="strike" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="strike" x="2" all="1" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="strike" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>32</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>33</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25110</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Alectryon, Arc Regent</name>
+    <picture>Stormcloud_Rooster_B</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1487005200</hidden_until_time>
+    <attack>5</attack>
+    <health>34</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="strike" x="2" all="1" />
+    <skill id="strike" x="2" all="1" />
+    <skill id="strike" x="5" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>35</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>36</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="strike" x="3" all="1" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="strike" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="strike" x="3" all="1" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="strike" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>5112</id>
     <card_type>2</card_type>
     <name>Cloudwing Chaser</name>

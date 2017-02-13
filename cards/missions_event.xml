@@ -14390,7 +14390,7 @@
     <id>5472</id>
     <name>Offended Residents</name>
     <energy>9</energy>
-    <desc>You enter a house that seems oddly in tact compared to its neighbors. As soon as you step inside, a figure appears behind you in the doorframe, and attacks!</desc>
+    <desc>You enter a house that seems oddly intact compared to its neighbors. As soon as you step inside, a figure appears behind you in the doorframe, and attacks!</desc>
     <commander id="325" />
     <deck>
       <card id="1018" name="Armored Eagle" />
