@@ -13690,7 +13690,7 @@
     <name>Fountain Guardian</name>
     <picture>Peacock_Youth_Fountain_A</picture>
     <asset_bundle>85</asset_bundle>
-    <hidden_until_time>1489078800</hidden_until_time>
+    <hidden_until_time>1486659600</hidden_until_time>
     <attack>5</attack>
     <health>28</health>
     <cost>3</cost>
@@ -13735,7 +13735,7 @@
     <name>Fountain Protector</name>
     <picture>Peacock_Youth_Fountain_A</picture>
     <asset_bundle>85</asset_bundle>
-    <hidden_until_time>1489078800</hidden_until_time>
+    <hidden_until_time>1486659600</hidden_until_time>
     <attack>5</attack>
     <health>31</health>
     <cost>3</cost>
@@ -13783,7 +13783,7 @@
     <name>Fountain Mesmerizer</name>
     <picture>Peacock_Youth_Fountain_B</picture>
     <asset_bundle>85</asset_bundle>
-    <hidden_until_time>1489078800</hidden_until_time>
+    <hidden_until_time>1486659600</hidden_until_time>
     <attack>5</attack>
     <health>34</health>
     <cost>3</cost>

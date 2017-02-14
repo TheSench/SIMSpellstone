@@ -13769,7 +13769,7 @@
     <name>Cloudwing Chaser</name>
     <picture>Bird_Cloud_Chaser_A</picture>
     <asset_bundle>85</asset_bundle>
-    <hidden_until_time>1489078800</hidden_until_time>
+    <hidden_until_time>1486659600</hidden_until_time>
     <attack>5</attack>
     <health>18</health>
     <cost>2</cost>
@@ -13810,7 +13810,7 @@
     <name>Cloudwing Seeker</name>
     <picture>Bird_Cloud_Chaser_A</picture>
     <asset_bundle>85</asset_bundle>
-    <hidden_until_time>1489078800</hidden_until_time>
+    <hidden_until_time>1486659600</hidden_until_time>
     <attack>6</attack>
     <health>21</health>
     <cost>2</cost>
@@ -13851,7 +13851,7 @@
     <name>Cloudwing Deadeye</name>
     <picture>Bird_Cloud_Chaser_B</picture>
     <asset_bundle>85</asset_bundle>
-    <hidden_until_time>1489078800</hidden_until_time>
+    <hidden_until_time>1486659600</hidden_until_time>
     <attack>7</attack>
     <health>25</health>
     <cost>2</cost>

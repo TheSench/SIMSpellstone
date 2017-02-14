@@ -1788,6 +1788,20 @@
       <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="3000" />
     </cards>
   </store_item>
+  <store_item>
+    <id>3047</id>
+    <name>Double Legendary Avian Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two copies of one guaranteed Legendary or higher Avian card.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="10" set="3000" number="2" />
+    </cards>
+  </store_item>
   <!-- =============================== -->
   <!-- ==== Emporium Market Items ==== -->
   <!-- =============================== -->
@@ -1841,6 +1855,7 @@
       <!-- <item id='1021' number='1' purchase1='300' purchase2='600' purchase3='1200' purchase4='1900' purchase5='2900' scalar='1500' /> -->
       <item id="4011" number="1" purchase1="4000" purchase2="6000" purchase3="10000" purchase4="14000" purchase5="18000" scalar="4000" />
       <item id="2515" number="1" purchase1="1000" purchase2="2000" purchase3="4000" purchase4="8000" purchase5="12000" scalar="6000" />
+      <item id="2522" number="1" purchase1="1000" purchase2="2000" purchase3="4000" purchase4="8000" purchase5="12000" scalar="6000" />
     </costed_items>
   </store_item>
   <store_item>

@@ -3985,6 +3985,43 @@
     <find_item id="3048" drop_per_energy=".6" />
     <find_item id="2522" drop_per_energy=".04" />
   </campaign>
+  <campaign>
+    <id>1113</id>
+    <name>The Ranger</name>
+    <campaign_req>6</campaign_req>
+    <locked_start_time>1487869200</locked_start_time>
+    <!-- Thu, 23 Feb 2017 17:00:00 GMT -->
+    <battleground_id>2004</battleground_id>
+    <location_id>7</location_id>
+    <x>785</x>
+    <y>205</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5483</mission_id>
+      <mission_id>5484</mission_id>
+      <mission_id>5485</mission_id>
+      <mission_id>5486</mission_id>
+      <mission_id>5487</mission_id>
+      <mission_id>5488</mission_id>
+      <mission_id>5489</mission_id>
+      <mission_id>5490</mission_id>
+      <mission_id>5491</mission_id>
+      <mission_id>5492</mission_id>
+      <mission_id>5493</mission_id>
+      <mission_id>5494</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2082" />
+      <card level="5" id="512" />
+      <card level="6" id="512" />
+      <card level="7" id="2041" />
+    </rewards>
+    <find_item id="3048" drop_per_energy=".8" />
+    <find_item id="2522" drop_per_energy=".04" />
+  </campaign>
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
   <!-- ============================ -->

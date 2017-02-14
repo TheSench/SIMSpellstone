@@ -13679,7 +13679,7 @@
     <name>Fire Hawk</name>
     <picture>Hawk_Fire_Sage_A</picture>
     <asset_bundle>85</asset_bundle>
-    <hidden_until_time>1489078800</hidden_until_time>
+    <hidden_until_time>1486659600</hidden_until_time>
     <attack>4</attack>
     <health>17</health>
     <cost>2</cost>
@@ -13718,7 +13718,7 @@
     <name>Volcanic Hawk</name>
     <picture>Hawk_Fire_Sage_A</picture>
     <asset_bundle>85</asset_bundle>
-    <hidden_until_time>1489078800</hidden_until_time>
+    <hidden_until_time>1486659600</hidden_until_time>
     <attack>4</attack>
     <health>20</health>
     <cost>2</cost>
@@ -13758,7 +13758,7 @@
     <name>Embersage Hawk</name>
     <picture>Hawk_Fire_Sage_B</picture>
     <asset_bundle>85</asset_bundle>
-    <hidden_until_time>1489078800</hidden_until_time>
+    <hidden_until_time>1486659600</hidden_until_time>
     <attack>5</attack>
     <health>22</health>
     <cost>2</cost>
