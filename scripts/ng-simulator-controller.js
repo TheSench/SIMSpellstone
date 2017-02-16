@@ -107,6 +107,23 @@
             return list;
         }
 
+        $scope.filteredRaids = function () {
+            var filtered = {};
+            toArray($scope.raids)
+                .sort(function (raidA, raidB) {
+                    return Number(raidB.id) - Number(raidA.id);
+                })
+            .forEach(function (raid) {
+                if (!filtered[raid.name]) {
+                    filtered[raid.name] = raid;
+                }
+            });
+            return toArray(filtered)
+                .sort(function (raidA, raidB) {
+                    return Number(raidA.id) - Number(raidB.id);
+                });
+        }
+
         $scope.getLocationClass = function (location) {
             if (!location) {
                 var selected = $scope.selections.location;

@@ -141,7 +141,7 @@
                                             <div><span class="label">Raid/Dungeon:</span></div>
                                             <select id="raid" ng-model="selections.raid" ng-class="{grey:selections.raid === ''}" ng-disabled="selections.campaign !== ''">
                                                 <option default value="" class="grey">Select a Raid/Dungeon...</option>
-                                                <option ng-repeat="raid in raids" value="{{raid.id}}" class="black">{{raid.name}}</option>
+                                                <option ng-repeat="raid in filteredRaids()" value="{{raid.id}}" class="black">{{raid.name}}</option>
                                             </select>
                                             <input type="NUMBER" id="raid_level" min="1" max="40" step="1" value="25" size="6">
                                         </div>

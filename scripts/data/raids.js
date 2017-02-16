@@ -2,7 +2,7 @@
     "24002": {
         "id": "24002",
         "type": "Raid",
-        "name": "Nethergore Raid (Old)",
+        "name": "Nethergore Raid",
         "upgradeLevels": "25",
         "bge": "504",
         "commander": {
@@ -196,7 +196,7 @@
     "1505": {
         "id": "1505",
         "type": "Raid",
-        "name": "Frostbite Raid (Old)",
+        "name": "Frostbite Raid",
         "upgradeLevels": "25",
         "commander": {
             "id": "253"
@@ -269,7 +269,7 @@
     "24003": {
         "id": "24003",
         "type": "Raid",
-        "name": "Fortune's Favor Raid (Old)",
+        "name": "Fortune's Favor Raid",
         "upgradeLevels": "25",
         "bge": "505",
         "commander": {
