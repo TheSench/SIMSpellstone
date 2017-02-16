@@ -185,9 +185,9 @@
     <salvage1>560</salvage1>
     <salvage2>1100</salvage2>
     <sp_cost>5</sp_cost>
-    <buyback_cost>120</buyback_cost>
-    <buyback_cost1>560</buyback_cost1>
-    <buyback_cost2>1120</buyback_cost2>
+    <buyback_cost0>120</buyback_cost0>
+    <buyback_cost1>1120</buyback_cost1>
+    <buyback_cost2>2200</buyback_cost2>
   </card_level>
   <card_level>
     <rarity>5</rarity>

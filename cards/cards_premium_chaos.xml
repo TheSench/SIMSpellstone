@@ -13674,6 +13674,146 @@
     </upgrade>
   </unit>
   <unit>
+    <id>6111</id>
+    <card_type>2</card_type>
+    <name>Lord of the Ashes</name>
+    <picture>Phoenix_Goblin_A</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1487610000</hidden_until_time>
+    <attack>4</attack>
+    <health>14</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="burn" x="2" />
+    <skill id="leech" x="4" />
+    <type>2</type>
+    <sub_type>10</sub_type>
+    <sub_type>11</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>16</health>
+      <skill id="evade" x="1" />
+      <skill id="burn" x="2" />
+      <skill id="leech" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>6</attack>
+      <health>18</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16111</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Lord of the Cinders</name>
+    <picture>Phoenix_Goblin_A</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1487610000</hidden_until_time>
+    <attack>6</attack>
+    <health>18</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="burn" x="2" />
+    <skill id="leech" x="6" />
+    <type>2</type>
+    <sub_type>10</sub_type>
+    <sub_type>11</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+      <skill id="evade" x="2" />
+      <skill id="burn" x="2" />
+      <skill id="leech" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="2" />
+      <skill id="burn" x="3" />
+      <skill id="leech" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>20</health>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>22</health>
+      <skill id="evade" x="2" />
+      <skill id="burn" x="3" />
+      <skill id="leech" x="7" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26111</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Lord of the Embers</name>
+    <picture>Phoenix_Goblin_B</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1487610000</hidden_until_time>
+    <attack>8</attack>
+    <health>22</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="burn" x="3" />
+    <skill id="leech" x="7" />
+    <type>2</type>
+    <sub_type>10</sub_type>
+    <sub_type>11</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>23</health>
+      <skill id="evade" x="2" />
+      <skill id="burn" x="3" />
+      <skill id="leech" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>9</attack>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="3" />
+      <skill id="burn" x="3" />
+      <skill id="leech" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="3" />
+      <skill id="burn" x="4" />
+      <skill id="leech" x="9" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>6112</id>
     <card_type>2</card_type>
     <name>Fire Hawk</name>
@@ -13789,6 +13929,143 @@
       <skill id="fervor" x="4" y="10" />
       <skill id="burn" x="5" />
       <skill id="leech" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6113</id>
+    <card_type>2</card_type>
+    <name>Trojan Crow</name>
+    <picture>Avian_Scarecrow_Crows_A</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1487264400</hidden_until_time>
+    <attack>8</attack>
+    <health>32</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="4" />
+    <skill id="strike" x="1" all="1" />
+    <skill id="berserk" x="3" />
+    <type>2</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>33</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>9</attack>
+      <health>34</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>35</health>
+      <skill id="counter" x="5" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>36</health>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counter" x="5" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16113</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Trojan Corvus</name>
+    <picture>Avian_Scarecrow_Crows_A</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1487264400</hidden_until_time>
+    <attack>10</attack>
+    <health>37</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="5" />
+    <skill id="strike" x="2" all="1" />
+    <skill id="berserk" x="4" />
+    <type>2</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>38</health>
+      <attack>11</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>39</health>
+      <skill id="counter" x="6" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>41</health>
+      <attack>12</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counter" x="6" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26113</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Trojan Raven</name>
+    <picture>Avian_Scarecrow_Crows_B</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1487264400</hidden_until_time>
+    <attack>12</attack>
+    <health>42</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="7" />
+    <skill id="strike" x="3" all="1" />
+    <skill id="berserk" x="5" />
+    <type>2</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>43</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>13</attack>
+      <health>44</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>45</health>
+      <attack>14</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>46</health>
+      <skill id="counter" x="8" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counter" x="8" />
+      <skill id="strike" x="4" all="1" />
+      <skill id="berserk" x="6" />
     </upgrade>
   </unit>
 </root>

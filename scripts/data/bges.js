@@ -826,8 +826,8 @@ var BATTLEGROUNDS = {
     "effect": [
       {
         "effect_type": "scale_attributes",
-        "base_mult": .2,
-        "mult": .005,
+        "base_mult": .1,
+        "mult": .05,
       },
     ]
   },

@@ -14323,7 +14323,7 @@
       <card id="8044" name="Aegis of the Sea" />
       <card id="8044" name="Aegis of the Sea" />
       <card id="5106" name="Acuro, Sea Captain" />
-      <card id="12077" name="Flood Beetle" />
+      <card id="2077" name="Drowner Beetle" />
       <card id="2079" name="Koi Guardian" />
       <card id="5104" name="Pisces" />
       <card id="2079" name="Koi Guardian" />
@@ -14863,11 +14863,11 @@
     <deck>
       <card id="5108" name="Aurora Skimmer" />
       <card id="6108" name="Redwater Angler" />
-      <card id="6108" name="Redwater Angler" />
+      <card id="2077" name="Drowner Beetle" />
       <card id="7107" name="Hammer Krab" />
       <card id="7066" name="Aquine" />
-      <card id="7066" name="Aquine" />
-      <card id="7005" name="Tsunamari" />
+      <card id="6110" name="Sea Mantis" />
+      <card id="6110" name="Sea Mantis" />
       <card id="5107" name="Thrumming Beacon" />
       <card id="8045" name="Summoned Abomination" />
       <card id="2079" mastery_level="2" name="Koi Guardian" />

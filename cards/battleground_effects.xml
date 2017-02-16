@@ -664,7 +664,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".2" mult=".005" />
+      <scale_attributes base_mult=".1" mult=".05" />
     </effect>
   </battleground>
 </root>

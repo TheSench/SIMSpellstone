@@ -13819,4 +13819,121 @@
       <skill id="jam" c="3" />
     </upgrade>
   </unit>
+  <unit>
+    <id>7113</id>
+    <card_type>2</card_type>
+    <name>Revenge from Above</name>
+    <picture>Fuzzball_Birds_A</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1487264400</hidden_until_time>
+    <attack>3</attack>
+    <health>13</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="enfeeble" x="2" />
+    <skill id="jam" c="6" />
+    <skill id="poison" x="2" />
+    <type>3</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="enfeeble" x="2" />
+      <skill id="jam" c="5" />
+      <skill id="poison" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>15</health>
+      <skill id="enfeeble" x="3" />
+      <skill id="jam" c="5" />
+      <skill id="poison" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>4</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17113</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Vengeance from Above</name>
+    <picture>Fuzzball_Birds_A</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1487264400</hidden_until_time>
+    <attack>4</attack>
+    <health>15</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="enfeeble" x="3" />
+    <skill id="jam" c="4" />
+    <skill id="poison" x="3" />
+    <type>3</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+      <skill id="enfeeble" x="4" />
+      <skill id="jam" c="4" />
+      <skill id="poison" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>18</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27113</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Aerial Vengeance</name>
+    <picture>Fuzzball_Birds_B</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1487264400</hidden_until_time>
+    <attack>5</attack>
+    <health>18</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="enfeeble" x="4" />
+    <skill id="jam" c="3" />
+    <skill id="poison" x="4" />
+    <type>3</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="enfeeble" x="5" />
+      <skill id="jam" c="3" />
+      <skill id="poison" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>19</health>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="enfeeble" x="6" />
+      <skill id="jam" c="3" />
+      <skill id="poison" x="5" />
+    </upgrade>
+  </unit>
 </root>

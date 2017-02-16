@@ -1887,6 +1887,7 @@
     <name>Atlas, the Ancient</name>
     <asset_prefab>wyldBoss_A</asset_prefab>
     <asset_bundle>36</asset_bundle>
+    <cannot_salvage>1</cannot_salvage>
     <attack>9</attack>
     <health>32</health>
     <cost>3</cost>
@@ -1935,6 +1936,7 @@
     <name>Solaron, the Origin</name>
     <asset_prefab>aetherBoss_A</asset_prefab>
     <asset_bundle>36</asset_bundle>
+    <cannot_salvage>1</cannot_salvage>
     <attack>8</attack>
     <health>29</health>
     <cost>3</cost>
@@ -1988,6 +1990,7 @@
     <name>Vulcanos, the Forge</name>
     <asset_prefab>chaosBoss_A</asset_prefab>
     <asset_bundle>36</asset_bundle>
+    <cannot_salvage>1</cannot_salvage>
     <attack>6</attack>
     <health>26</health>
     <cost>3</cost>
