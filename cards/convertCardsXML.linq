@@ -117,7 +117,6 @@ void Main()
 				if (!File.Exists(imageFile))
 				{
 					notFound[unit.picture] = unit.asset_bundle;
-					unit.picture = "NotFound";
 				}
 			}
 			else if (unit.picture != null)
@@ -127,7 +126,6 @@ void Main()
 				if (!File.Exists(imageFile))
 				{
 					notFound[unit.picture] = unit.asset_bundle;
-					unit.picture = "NotFound";
 				}
 			}
 			else
@@ -443,8 +441,14 @@ public class battleground
 	[XmlArrayItem(Type = typeof(trap_card), ElementName = "trap_card")]
 	public battlegroundEffect[] effect { get; set; }
 	public string id { get; set; }
-	public string desc { get; set; }
 	
+	private string descField;
+	public string desc
+	{
+		get { return this.descField; }
+		set { this.descField = value.Replace("\"", "\\\""); }
+	}
+
 	[XmlIgnore]
 	public bool enemy_only { get; set; }
 	/// <summary>Get a value purely for serialization purposes</summary>
@@ -630,7 +634,7 @@ public partial class unit
 				AppendEntry(sb, "attack", upgrade.attack, skillUpgradePropTabs);
 				AppendEntry(sb, "health", upgrade.health, skillUpgradePropTabs);
 				AppendEntry(sb, "cost", upgrade.cost, skillUpgradePropTabs);
-				AppendEntry(sb, "desc", upgrade.desc, skillUpgradePropTabs);
+				AppendEntryString(sb, "desc", upgrade.desc, skillUpgradePropTabs);
 				AppendSkills(sb, upgrade.skills, skillUpgradePropTabs);
 				sb.Append(upgradeTabs).Append("},\r\n");
 			}
@@ -865,7 +869,7 @@ public partial class unitUpgrade
 	public string desc
 	{
 		get { return this.descField; }
-		set { this.descField = value; }
+		set { this.descField = value.Replace("\"", "\\\""); }
 	}
 
 	/// <remarks/>

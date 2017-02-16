@@ -4,6 +4,7 @@
     display: block;
     width: 84px;
     height: 120px;
+	background-position: -0px -240px; background-image: url('../res/sprites/SpriteSheet7.jpg');
 }
 .portrait {
     position: absolute;
@@ -12,6 +13,7 @@
     display: block;
     width: 84px;
     height: 100px;
+	background-position: -0px -240px; background-image: url('../res/sprites/SpriteSheet7.jpg');
 }
 .sprite-Acid_Elemental_A{ background-position: -0px -0px; background-image: url('../res/sprites/SpriteSheet1.jpg');}
 .sprite-Acid_Elemental_B{ background-position: -84px -0px; background-image: url('../res/sprites/SpriteSheet1.jpg');}

@@ -29,30 +29,13 @@ void Main()
 		}
 	}
 
-	var css = new StringBuilder(
-@".sprite {
-    position: absolute;
-    background-repeat: no-repeat;
-    display: block;
-    width: 84px;
-    height: 120px;
-}
-.portrait {
-    position: absolute;
-    background-repeat: no-repeat;
-	background-color: white;
-    display: block;
-    width: 84px;
-    height: 100px;
-}
-");
-
 	// Create Spritesheets for Card Images
 	var offset = 0;
 	var sheetIndex = 1;
 	var images = imageFileNames.Count;
 	var dimensions = 10;
 	var lines = new List<string>();
+	string notFoundImage = "";
 	while (offset < images)
 	{
 		var height = (images - offset) / dimensions;
@@ -71,6 +54,10 @@ void Main()
 				var y = 120 * (i / dimensions);
 				var imageName = Path.GetFileNameWithoutExtension(fileName);
 				lines.Add(".sprite-" + imageName + "{ background-position: -" + x + "px -" + y + "px; " + backgroundImage + "}");
+				if (imageName == "NotFound")
+				{
+					notFoundImage = ("background-position: -" + x + "px -" + y + "px; " + backgroundImage);
+				}
 				AddImage(fileName, spriteSheet, x, y);
 			}
 			spriteSheet.Save(Path.Combine(spritePath, sheetName), ImageFormat.Png);
@@ -78,6 +65,27 @@ void Main()
 		}
 		sheetIndex++;
 	}
+
+	var css = new StringBuilder(
+$@".sprite {{
+    position: absolute;
+    background-repeat: no-repeat;
+    display: block;
+    width: 84px;
+    height: 120px;
+	{notFoundImage}
+}}
+.portrait {{
+    position: absolute;
+    background-repeat: no-repeat;
+	background-color: white;
+    display: block;
+    width: 84px;
+    height: 100px;
+	{notFoundImage}
+}}
+");
+
 	lines.Sort();
 	lines.ForEach(line => css.AppendLine(line));
 

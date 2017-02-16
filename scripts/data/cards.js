@@ -38213,7 +38213,7 @@ var CARDS = {
         "skill": [],
       },
       "5": {
-        "desc": "Everyone looks like ants from up here... now I'm hungry.",
+        "desc": "\"Everyone looks like ants from up here... now I'm hungry.\"",
         "skill": [
           {
             "id": "strike",
@@ -66360,7 +66360,7 @@ var CARDS = {
   "6111": {
     "id": "6111",
     "name": "Lord of the Ashes",
-    "picture": "NotFound",
+    "picture": "Phoenix_Goblin_A",
     "hidden_until": "1487610000000",
     "rarity": "4",
     "set": "4000",
@@ -66425,7 +66425,7 @@ var CARDS = {
   "16111": {
     "id": "16111",
     "name": "Lord of the Cinders",
-    "picture": "NotFound",
+    "picture": "Phoenix_Goblin_A",
     "hidden_until": "1487610000000",
     "rarity": "4",
     "set": "4000",
@@ -66515,7 +66515,7 @@ var CARDS = {
   "26111": {
     "id": "26111",
     "name": "Lord of the Embers",
-    "picture": "NotFound",
+    "picture": "Phoenix_Goblin_B",
     "hidden_until": "1487610000000",
     "rarity": "4",
     "set": "4000",
