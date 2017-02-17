@@ -1194,6 +1194,9 @@ var SIMULATOR = {};
                 src_card.mark_target = target.uid;
 
                 if (debug) echo += debug_name(src_card) + ' marks ' + debug_name(target) + ' by ' + mark + '<br>';
+
+                // Set countdown so Mark can't trigger twice on dual-strike turn
+                skill.countdown = 1;
             }
 
             return affected;
