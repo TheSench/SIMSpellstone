@@ -13243,7 +13243,7 @@
     <name>Thrumming Beacon</name>
     <picture>Guardian_Dolphin_A</picture>
     <asset_bundle>83</asset_bundle>
-    <hidden_until_time>1511110800</hidden_until_time>
+    <hidden_until_time>1484845200</hidden_until_time>
     <attack>3</attack>
     <health>8</health>
     <cost>1</cost>
@@ -13283,7 +13283,7 @@
     <name>Reverberating Beacon</name>
     <picture>Guardian_Dolphin_A</picture>
     <asset_bundle>83</asset_bundle>
-    <hidden_until_time>1511110800</hidden_until_time>
+    <hidden_until_time>1484845200</hidden_until_time>
     <attack>4</attack>
     <health>10</health>
     <cost>1</cost>
@@ -13324,7 +13324,7 @@
     <name>Aided Beacon</name>
     <picture>Guardian_Dolphin_B</picture>
     <asset_bundle>83</asset_bundle>
-    <hidden_until_time>1511110800</hidden_until_time>
+    <hidden_until_time>1484845200</hidden_until_time>
     <attack>5</attack>
     <health>13</health>
     <cost>1</cost>
@@ -13764,6 +13764,130 @@
     </upgrade>
   </unit>
   <unit>
+    <id>5111</id>
+    <card_type>2</card_type>
+    <name>Bennu</name>
+    <picture>Guardian_Angel_Dove_A</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1488214800</hidden_until_time>
+    <attack>2</attack>
+    <health>10</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="heal" x="1" y="10" />
+    <skill id="jam" c="7" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="heal" x="1" y="10" />
+      <skill id="jam" c="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="heal" x="1" y="10" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>13</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15111</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Shining Bennu</name>
+    <picture>Guardian_Angel_Dove_A</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1488214800</hidden_until_time>
+    <attack>3</attack>
+    <health>13</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="heal" x="1" y="10" />
+    <skill id="jam" c="5" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="heal" x="1" y="10" />
+      <skill id="frost" x="1" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="heal" x="1" y="10" />
+      <skill id="frost" x="1" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>16</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25111</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Brilliant Bennu</name>
+    <picture>Guardian_Angel_Dove_B</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1488214800</hidden_until_time>
+    <attack>3</attack>
+    <health>16</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="heal" x="1" y="10" />
+    <skill id="frost" x="1" />
+    <skill id="jam" c="3" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="heal" x="1" all="1" y="10" />
+      <skill id="frost" x="1" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="heal" x="2" all="1" y="10" />
+      <skill id="frost" x="2" />
+      <skill id="jam" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>5112</id>
     <card_type>2</card_type>
     <name>Cloudwing Chaser</name>
@@ -13997,6 +14121,124 @@
       <skill id="armored" x="2" />
       <skill id="valor" x="6" />
       <skill id="protect" x="4" y="10" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5114</id>
+    <card_type>2</card_type>
+    <name>Wingward</name>
+    <picture>Wing_Shield_Avian_A</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1487869200</hidden_until_time>
+    <attack>5</attack>
+    <health>18</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="protect" x="2" />
+    <skill id="protect" x="1" all="1" />
+    <skill id="legion" x="1" y="10" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>20</health>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="protect" x="3" />
+      <skill id="protect" x="1" all="1" />
+      <skill id="legion" x="2" y="10" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15114</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Stout Wingward</name>
+    <picture>Wing_Shield_Avian_A</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1487869200</hidden_until_time>
+    <attack>6</attack>
+    <health>22</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="protect" x="3" />
+    <skill id="protect" x="1" all="1" />
+    <skill id="legion" x="2" y="10" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>23</health>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>25</health>
+      <skill id="protect" x="4" />
+      <skill id="protect" x="1" all="1" />
+      <skill id="legion" x="2" y="10" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="protect" x="4" />
+      <skill id="protect" x="1" all="1" />
+      <skill id="legion" x="3" y="10" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25114</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Gallant Wingward</name>
+    <picture>Wing_Shield_Avian_B</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1487869200</hidden_until_time>
+    <attack>8</attack>
+    <health>26</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="protect" x="4" />
+    <skill id="protect" x="1" all="1" />
+    <skill id="legion" x="3" y="10" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>28</health>
+      <skill id="protect" x="5" />
+      <skill id="protect" x="1" all="1" />
+      <skill id="legion" x="3" y="10" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="protect" x="5" />
+      <skill id="protect" x="2" all="1" />
+      <skill id="legion" x="4" y="10" />
     </upgrade>
   </unit>
 </root>

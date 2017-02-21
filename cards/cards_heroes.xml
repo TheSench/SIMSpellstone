@@ -1205,7 +1205,7 @@
     <card_type>1</card_type>
     <name>Void Abomination</name>
     <portrait>void</portrait>
-    <desc>The ground shatters to reveal a huge anomoly made of shadows and smoke. Eyes peer out at the adventurers below as its massive form swings and crushes stone.</desc>
+    <desc>The ground shatters to reveal a huge anomaly made of shadows and smoke. Eyes peer out at the adventurers below as its massive form swings and crushes stone.</desc>
     <attack>0</attack>
     <health>40</health>
     <rarity>4</rarity>

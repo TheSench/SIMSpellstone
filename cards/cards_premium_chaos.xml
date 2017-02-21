@@ -13184,7 +13184,7 @@
     <name>Great Lava Crab</name>
     <picture>Big_Lava_Crab_A</picture>
     <asset_bundle>83</asset_bundle>
-    <hidden_until_time>1511110800</hidden_until_time>
+    <hidden_until_time>1484845200</hidden_until_time>
     <attack>6</attack>
     <health>12</health>
     <cost>2</cost>
@@ -13224,7 +13224,7 @@
     <name>Bull Lava Crab</name>
     <picture>Big_Lava_Crab_A</picture>
     <asset_bundle>83</asset_bundle>
-    <hidden_until_time>1511110800</hidden_until_time>
+    <hidden_until_time>1484845200</hidden_until_time>
     <attack>8</attack>
     <health>17</health>
     <cost>2</cost>
@@ -13270,7 +13270,7 @@
     <name>King Lava Crab</name>
     <picture>Big_Lava_Crab_B</picture>
     <asset_bundle>83</asset_bundle>
-    <hidden_until_time>1511110800</hidden_until_time>
+    <hidden_until_time>1484845200</hidden_until_time>
     <attack>10</attack>
     <health>19</health>
     <cost>2</cost>
@@ -13676,8 +13676,8 @@
   <unit>
     <id>6111</id>
     <card_type>2</card_type>
-    <name>Lord of the Ashes</name>
-    <picture>Phoenix_Goblin_A</picture>
+    <name>Aspects of the Ashes</name>
+    <picture>Goblin_Avian_Phoenix_A</picture>
     <asset_bundle>85</asset_bundle>
     <hidden_until_time>1487610000</hidden_until_time>
     <attack>4</attack>
@@ -13720,8 +13720,8 @@
     <id>16111</id>
     <card_type>2</card_type>
     <fusion_level>1</fusion_level>
-    <name>Lord of the Cinders</name>
-    <picture>Phoenix_Goblin_A</picture>
+    <name>Aspects of the Cinders</name>
+    <picture>Goblin_Avian_Phoenix_A</picture>
     <asset_bundle>85</asset_bundle>
     <hidden_until_time>1487610000</hidden_until_time>
     <attack>6</attack>
@@ -13769,8 +13769,8 @@
     <id>26111</id>
     <card_type>2</card_type>
     <fusion_level>2</fusion_level>
-    <name>Lord of the Embers</name>
-    <picture>Phoenix_Goblin_B</picture>
+    <name>Aspects of the Embers</name>
+    <picture>Goblin_Avian_Phoenix_B</picture>
     <asset_bundle>85</asset_bundle>
     <hidden_until_time>1487610000</hidden_until_time>
     <attack>8</attack>
@@ -14066,6 +14066,134 @@
       <skill id="counter" x="8" />
       <skill id="strike" x="4" all="1" />
       <skill id="berserk" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6114</id>
+    <card_type>2</card_type>
+    <name>Blazing Emissary</name>
+    <picture>Horus_A</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1487869200</hidden_until_time>
+    <attack>3</attack>
+    <health>8</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="1" />
+    <skill id="burn" x="1" />
+    <skill id="nullify" x="1" />
+    <type>2</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="2" />
+      <skill id="burn" x="1" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="corrosive" x="2" />
+      <skill id="burn" x="2" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16114</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Blazing Sentry</name>
+    <picture>Horus_A</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1487869200</hidden_until_time>
+    <attack>4</attack>
+    <health>11</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="2" />
+    <skill id="burn" x="2" />
+    <skill id="nullify" x="1" />
+    <type>2</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="3" />
+      <skill id="burn" x="2" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="corrosive" x="3" />
+      <skill id="burn" x="3" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26114</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Blazing Sentinel</name>
+    <picture>Horus_B</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1487869200</hidden_until_time>
+    <attack>5</attack>
+    <health>14</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="3" />
+    <skill id="burn" x="3" />
+    <skill id="nullify" x="1" />
+    <type>2</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="4" />
+      <skill id="burn" x="3" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="corrosive" x="4" />
+      <skill id="burn" x="4" />
+      <skill id="nullify" x="2" />
     </upgrade>
   </unit>
 </root>

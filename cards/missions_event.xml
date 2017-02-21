@@ -14840,8 +14840,8 @@
       <card id="8045" name="Summoned Abomination" />
       <card id="7066" name="Aquine" />
       <card id="2078" mastery_level="2" name="Septuamaid" />
-      <card id="7105" mastery_level="3" name="Charybdis" />
-      <card id="7105" mastery_level="4" name="Charybdis" />
+      <card id="7104" mastery_level="3" name="Croaker of the Deep" />
+      <card id="1644" mastery_level="4" name="Blackfin" />
       <card id="6107" mastery_level="5" name="Great Lava Crab" />
       <card id="6109" mastery_level="6" name="Captain Gnaw" />
       <card id="2080" mastery_level="7" name="Hunter Zind" />
@@ -14862,13 +14862,13 @@
     <commander id="352" />
     <deck>
       <card id="5108" name="Aurora Skimmer" />
-      <card id="6108" name="Redwater Angler" />
+      <card id="2077" name="Drowner Beetle" />
       <card id="2077" name="Drowner Beetle" />
       <card id="7107" name="Hammer Krab" />
       <card id="7066" name="Aquine" />
       <card id="6110" name="Sea Mantis" />
       <card id="6110" name="Sea Mantis" />
-      <card id="5107" name="Thrumming Beacon" />
+      <card id="2077" name="Drowner Beetle" />
       <card id="8045" name="Summoned Abomination" />
       <card id="2079" mastery_level="2" name="Koi Guardian" />
       <card id="7108" mastery_level="3" name="Quetee" />

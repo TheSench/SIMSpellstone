@@ -1346,13 +1346,13 @@
     <name>Quadra Avian Pack</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives four copies of one guaranteed Epic or higher Avian card from Standard or Premium set.</desc>
+    <desc>Gives four copies of one guaranteed Epic or higher Avian card from Premium set.</desc>
     <priority>1</priority>
     <asset_prefab>epic_pack</asset_prefab>
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="1000,3000" number="4" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="3000,4000" number="4" />
     </cards>
   </store_item>
   <store_item>
@@ -1376,16 +1376,16 @@
     <name>Legendary Avianstone Pack</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives one guaranteed Legendary Avian card and three additional Avian cards guaranteed Epic or higher.</desc>
+    <desc>Gives one guaranteed Legendary Avian card and three additional Epic+ Avian cards from Premium.</desc>
     <priority>1</priority>
     <asset_prefab>epic_pack</asset_prefab>
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="10" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="10" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="10" set="3000,4000" />
     </cards>
   </store_item>
   <store_item>
@@ -3123,5 +3123,44 @@
     <cards>
       <card min_level="1" max_level="1" unit_id="5057" display_card_id="5057" />
     </cards>
+  </store_item>
+  <store_item>
+    <id>5061</id>
+    <name>Quadra Avian Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives four copies of one Epic+ Avian card from Premium set. Also includes two Bounty Refills +10, two Energy Potions +20, and one random Rare+ Rune. May only be purchased once.</desc>
+    <asset_prefab>event_011_crystal_epic4x</asset_prefab>
+    <background_prefab>event_011_banner_epic4x</background_prefab>
+    <bundle>59</bundle>
+    <hc_cost>400</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3018</pack>
+    <item id="1024" quantity="2" />
+    <item id="1004" quantity="2" />
+    <item id="513" quantity="1" />
+  </store_item>
+  <store_item>
+    <id>5062</id>
+    <name>Legendary Avianstone Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Includes one ^cE7FFLegendary ^cFFFFAvian card and three additional ^c0DFFEpic^cFFFF+ Avian cards from Premium set! May be purchased three times!</desc>
+    <asset_prefab>event_011_crystal_legendary</asset_prefab>
+    <background_prefab>event_011_banner_legendary</background_prefab>
+    <bundle>59</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3020</pack>
+    <sp>180</sp>
+    <gold>1000</gold>
+    <item id="1003" quantity="2" />
   </store_item>
 </root>
