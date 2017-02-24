@@ -13777,6 +13777,7 @@
     <skill id="heal" x="1" y="10" />
     <skill id="jam" c="7" />
     <type>1</type>
+    <sub_type>6</sub_type>
     <sub_type>10</sub_type>
     <set>4000</set>
     <upgrade>
@@ -13817,6 +13818,7 @@
     <skill id="heal" x="1" y="10" />
     <skill id="jam" c="5" />
     <type>1</type>
+    <sub_type>6</sub_type>
     <sub_type>10</sub_type>
     <set>4000</set>
     <upgrade>
@@ -13860,6 +13862,7 @@
     <skill id="frost" x="1" />
     <skill id="jam" c="3" />
     <type>1</type>
+    <sub_type>6</sub_type>
     <sub_type>10</sub_type>
     <set>4000</set>
     <upgrade>

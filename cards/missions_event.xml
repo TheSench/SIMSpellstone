@@ -15159,4 +15159,448 @@
       </line>
     </speech>
   </mission>
+  <!-- Campaign Event Map 2 -->
+  <!-- Resource Node -->
+  <mission>
+    <id>5495</id>
+    <name>Frigore's Bounty</name>
+    <energy>9</energy>
+    <desc>Frigore boasts the highest quantity of a mystical resource known as Snowdust. Each particle contains a small amount of magical energy, which powerful artifacts can absorb to become even stronger.</desc>
+    <commander id="262" />
+    <deck>
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1319" name="Wraith" />
+      <card id="6112" name="Fire Hawk" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="6011" name="Bomb Spirit" />
+      <card id="5086" name="Spirit Blades" />
+      <card id="1327" name="Fallen Angel" />
+      <card id="7073" mastery_level="2" name="Heralded Slugger" />
+      <card id="2041" mastery_level="3" name="Sharpwing" />
+      <card id="7029" mastery_level="4" name="Owl Griffin" />
+      <card id="5084" mastery_level="5" name="Dotora Spirit" />
+      <card id="5003" mastery_level="6" name="White Knight" />
+      <card id="5038" mastery_level="7" name="Celestial Monarch" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5496</id>
+    <name>Snowdust Rivals</name>
+    <energy>9</energy>
+    <desc>Frigore boasts the highest quantity of a mystical resource known as Snowdust. Each particle contains a small amount of magical energy, which powerful artifacts can absorb to become even stronger.</desc>
+    <commander id="264" />
+    <deck>
+      <card id="1014" name="Cherub" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="6112" name="Fire Hawk" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="7035" name="Carrion Tiger" />
+      <card id="7041" name="Feral Angel" />
+      <card id="1031" mastery_level="2" name="Noble Champion" />
+      <card id="1027" mastery_level="3" name="Griffin Knight" />
+      <card id="2081" mastery_level="4" name="Starstriker" />
+      <card id="1632" mastery_level="5" name="Shadow Rider" />
+      <card id="5043" mastery_level="6" name="Empyrean" />
+      <card id="5031" mastery_level="7" name="Frostlance Valkyrie" />
+    </deck>
+  </mission>
+  <!-- Campaign Event Weeks 1-2 -->
+  <mission>
+    <id>5497</id>
+    <name>Rumors of Frigore</name>
+    <energy>9</energy>
+    <desc>You have heard stories of powerful artifacts that can directly combat the powers of The Void. It's for this reason that you've traveled to the frozen wastelands of Arcantica, known as Frigore.</desc>
+    <commander id="258" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1014" name="Cherub" />
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="1030" name="Paladin" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="5033" name="Lost Soul" />
+      <card id="5021" mastery_level="2" name="Tower Spirit" />
+      <card id="7113" mastery_level="3" name="Revenge from Above" />
+      <card id="2027" mastery_level="4" name="Halo Mage" />
+      <card id="2042" mastery_level="5" name="Carrion Hunter" />
+      <card id="5055" mastery_level="6" name="Galewing" />
+      <card id="6039" mastery_level="7" name="Auroch" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5498</id>
+    <name>Two Old Men</name>
+    <energy>9</energy>
+    <desc>While searching for the artifacts, you spot two forms, face-down in the snow. You are surprised to find that anyone is in an area that's supposed to be abandoned. You run up to them to see if the two are okay...</desc>
+    <commander id="262" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1014" name="Cherub" />
+      <card id="5006" name="Arms Enforcer" />
+      <card id="2040" name="Owlmancer" />
+      <card id="6054" name="Shadowcrafter" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="2023" name="Grizzly Terror" />
+      <card id="6081" mastery_level="2" name="Apparition" />
+      <card id="5113" mastery_level="3" name="Bishop Rook" />
+      <card id="2052" mastery_level="4" name="Protector of Skyhaven" />
+      <card id="2082" mastery_level="5" name="Ecru Spear" />
+      <card id="5000" mastery_level="6" name="Azure Sphinx" />
+      <card id="5043" mastery_level="7" name="Empyrean" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>Malchior, Malchior! Are you harmed?</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>A little singe on my whiskers, but otherwise quite alright.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5499</id>
+    <name>A Tale of Adventure</name>
+    <energy>9</energy>
+    <desc>Roaming monsters attempt to take advantage of the injured duo's state. You fight them off, giving Malchior and Tarian time to collect themselves...</desc>
+    <commander id="261" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="5006" name="Arms Enforcer" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="6054" name="Shadowcrafter" />
+      <card id="2029" name="Sly Critters" />
+      <card id="6056" name="Potoo" />
+      <card id="7034" name="Spore Elk" />
+      <card id="5016" mastery_level="2" name="Fowl Swarm" />
+      <card id="5058" mastery_level="3" name="Crescent Moon Owl" />
+      <card id="2054" mastery_level="4" name="Pack Runner" />
+      <card id="7055" mastery_level="5" name="Valley Strider" />
+      <card id="5057" mastery_level="6" name="Skystriker" />
+      <card id="5039" mastery_level="7" name="Ethereal Knight" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>You have our thanks, adventurer. We were investigating a report of a Void contraption, only for Samael to interfere.</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>The fool caused a massive explosion that will likely attract more of The Void's forces.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5500</id>
+    <name>Samael's Influence</name>
+    <energy>9</energy>
+    <desc>Before the three of you can continue, you notice some figures off in the near distance. A small group has formed on a snowy hilltop, looking straight at you...</desc>
+    <commander id="362" />
+    <deck>
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5040" name="Winged Trumpeter" />
+      <card id="7029" name="Owl Griffin" />
+      <card id="6070" name="Petrifier" />
+      <card id="5040" name="Winged Trumpeter" />
+      <card id="5005" name="Storm Giant" />
+      <card id="7070" mastery_level="2" name="Laughing Menace" />
+      <card id="5072" mastery_level="3" name="Blind Seer" />
+      <card id="7073" mastery_level="4" name="Heralded Slugger" />
+      <card id="2030" mastery_level="5" name="Ebon Duelist" />
+      <card id="6041" mastery_level="6" name="Reaper" />
+      <card id="7072" mastery_level="7" name="Murabi" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>I say, are those friends of yours, adventurer? Over here, friends!</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>No, look closer. Angels... Samael's forces have followed us!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5501</id>
+    <name>Mercenary Angels</name>
+    <energy>9</energy>
+    <desc>You fight off a swarm of angels and mercenaries. Drawn in by Malchior's and Tarian's presence, they cut down anyone who stands in their way.</desc>
+    <commander id="273" />
+    <deck>
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5072" name="Blind Seer" />
+      <card id="5113" name="Bishop Rook" />
+      <card id="2052" name="Protector of Skyhaven" />
+      <card id="5040" name="Winged Trumpeter" />
+      <card id="5004" name="Lightning Lord" />
+      <card id="1025" mastery_level="2" name="Lightbound Archer" />
+      <card id="1031" mastery_level="3" name="Noble Champion" />
+      <card id="7073" mastery_level="4" name="Heralded Slugger" />
+      <card id="7038" mastery_level="5" name="Sol King" />
+      <card id="5042" mastery_level="6" name="Tinkerer" />
+      <card id="6074" mastery_level="7" name="Deific Channeler" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5502</id>
+    <name>Missing Friend</name>
+    <energy>9</energy>
+    <desc>At last you manage to defeat the scouts that were sent to pursue your friends. But Malchior and Tarian have other concerns...</desc>
+    <commander id="258" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1014" name="Cherub" />
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="7041" name="Feral Angel" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="5114" mastery_level="2" name="Wingward" />
+      <card id="1030" mastery_level="3" name="Paladin" />
+      <card id="7030" mastery_level="4" name="Arctic Ambusher" />
+      <card id="6038" mastery_level="5" name="Hemlock" />
+      <card id="7112" mastery_level="6" name="Fountain Guardian" />
+      <card id="7074" mastery_level="7" name="Sijou" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>General Garrick stayed behind to fight the creature that emerged from The Void's Spellstone. Adventurer.... could we trouble you to help our friend? If he's still alive, we must help him.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5503</id>
+    <name>Duskwillow Shield</name>
+    <energy>9</energy>
+    <desc>Malchior takes out a small shield with a peculiar design. It almost looks like a tree stump grows out of it. He promises you the artifact in exchange for finding Garrick.</desc>
+    <commander id="259" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1014" name="Cherub" />
+      <card id="5006" name="Arms Enforcer" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="2081" name="Starstriker" />
+      <card id="7113" name="Revenge from Above" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="5021" name="Tower Spirit" />
+      <card id="2041" mastery_level="2" name="Sharpwing" />
+      <card id="2030" mastery_level="3" name="Ebon Duelist" />
+      <card id="7030" mastery_level="4" name="Arctic Ambusher" />
+      <card id="6112" mastery_level="5" name="Fire Hawk" />
+      <card id="2043" mastery_level="6" name="Eos" />
+      <card id="6055" mastery_level="7" name="Phoenix" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Of course, we wouldn't trouble you lightly. Do you see this shield? It's a legendary artifact from a land known as Duskwillow, where fanatics of a terrible beast called Scylla-</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Oh, familiar with Duskwillow already, are you?! Fascinating, I love meeting fellow scholars! If you'd be willing to help us, then this shield is yours.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5504</id>
+    <name>Artifact of Power</name>
+    <energy>9</energy>
+    <desc>You remember how powerful the Aegis of the Sea was in your adventures in Duskwillow. Having an artifact of similar properties could prove beneficial, even if it needs a little Snowdust to get recharged.</desc>
+    <commander id="261" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1014" name="Cherub" />
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6112" name="Fire Hawk" />
+      <card id="6112" name="Fire Hawk" />
+      <card id="5060" name="Quack Apprentice" />
+      <card id="6070" name="Petrifier" />
+      <card id="5081" name="Brahzee" />
+      <card id="7030" mastery_level="2" name="Arctic Ambusher" />
+      <card id="7073" mastery_level="3" name="Heralded Slugger" />
+      <card id="5114" mastery_level="4" name="Wingward" />
+      <card id="6054" mastery_level="5" name="Shadowcrafter" />
+      <card id="7056" mastery_level="6" name="Trailblazer" />
+      <card id="5112" mastery_level="7" name="Cloudwing Chaser" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Of course, we wouldn't trouble you lightly. Do you see this shield? It's a legendary artifact from a land known as Duskwillow, where fanatics of a terrible beast called Scylla-</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Oh, familiar with Duskwillow already, are you?! Fascinating, I love meeting fellow scholars! If you'd be willing to help us, then this shield is yours.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5505</id>
+    <name>Discus Throw</name>
+    <energy>9</energy>
+    <desc>Malchior has agreed to give you the shield. He balances it in his hands, before tossing it like a discus, far away from you! It spins and flies away...</desc>
+    <commander id="263" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="5006" name="Arms Enforcer" />
+      <card id="2081" name="Starstriker" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="7070" name="Laughing Menace" />
+      <card id="5096" name="Enclave Dragon" />
+      <card id="7057" mastery_level="2" name="Bill Crasher" />
+      <card id="2030" mastery_level="3" name="Ebon Duelist" />
+      <card id="2040" mastery_level="4" name="Owlmancer" />
+      <card id="6054" mastery_level="5" name="Shadowcrafter" />
+      <card id="6053" mastery_level="6" name="Squire Gorger" />
+      <card id="5110" mastery_level="7" name="Alectryon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Excellent. Now catch!</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>...</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>Why did you throw it so far away...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5506</id>
+    <name>Reclaiming the Shield</name>
+    <energy>9</energy>
+    <desc>Malchior seems excited to be traveling with you again. Tarian is far more concerned with his ally, and the enemies that pursue you and the group.</desc>
+    <commander id="264" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1012" name="Cloud Sylph" />
+      <card id="1014" name="Cherub" />
+      <card id="5006" name="Arms Enforcer" />
+      <card id="2082" name="Ecru Spear" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="6054" name="Shadowcrafter" />
+      <card id="2027" name="Halo Mage" />
+      <card id="5093" name="Scaly Newborn" />
+      <card id="7029" mastery_level="2" name="Owl Griffin" />
+      <card id="2054" mastery_level="3" name="Pack Runner" />
+      <card id="7113" mastery_level="4" name="Revenge from Above" />
+      <card id="6054" mastery_level="5" name="Shadowcrafter" />
+      <card id="5001" mastery_level="6" name="Aven Skypiercer" />
+      <card id="5074" mastery_level="7" name="Godfried the Hunter" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>All the more reason to hurry! Can't let one of those angels pick up the shield instead, eh?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5507</id>
+    <name>Would-Be Thieves</name>
+    <energy>9</energy>
+    <desc>As you finally catch up to the place where the shield landed, you notice another group of angels. One has stopped over the shield, and seems to be examining it...</desc>
+    <commander id="306" />
+    <deck>
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7073" name="Heralded Slugger" />
+      <card id="2029" name="Sly Critters" />
+      <card id="2029" name="Sly Critters" />
+      <card id="7038" name="Sol King" />
+      <card id="2081" name="Starstriker" />
+      <card id="5114" mastery_level="2" name="Wingward" />
+      <card id="2054" mastery_level="3" name="Pack Runner" />
+      <card id="5040" mastery_level="4" name="Winged Trumpeter" />
+      <card id="1327" mastery_level="5" name="Fallen Angel" />
+      <card id="6071" mastery_level="6" name="Masked Heraid" />
+      <card id="7040" mastery_level="7" name="Warden of the Leaf" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>All the more reason to hurry! Can't let one of those angels pick up the shield instead, eh?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5508</id>
+    <name>Staunch Enemies</name>
+    <energy>9</energy>
+    <desc>The angel picks up the shield... You will have to fight her to claim it! With more of Samael's forces lurking about, it would be best to take care of it quickly.</desc>
+    <commander id="362" />
+    <deck>
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="5006" name="Arms Enforcer" />
+      <card id="2027" name="Halo Mage" />
+      <card id="2029" name="Sly Critters" />
+      <card id="5072" name="Blind Seer" />
+      <card id="5040" name="Winged Trumpeter" />
+      <card id="7029" name="Owl Griffin" />
+      <card id="7004" mastery_level="2" name="Ice Golem" />
+      <card id="7073" mastery_level="3" name="Heralded Slugger" />
+      <card id="7041" mastery_level="4" name="Feral Angel" />
+      <card id="2030" mastery_level="5" name="Ebon Duelist" />
+      <card id="6040" mastery_level="6" name="Scorching Cutlass" />
+      <card id="5076" mastery_level="7" name="Sorath, the Valkyrie" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Spy_Angel</commander>
+        <enemy>1</enemy>
+        <text>What's this... I feel some kind of power in the shield? Lord Samael would be most interested in an artifact of this caliber. Stand aside!</text>
+      </line>
+    </speech>
+  </mission>
 </root>

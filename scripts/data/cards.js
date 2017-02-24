@@ -15714,6 +15714,126 @@ var CARDS = {
       },
     }
   },
+  "362": {
+    "id": "362",
+    "name": "Skyhaven Agent",
+    "picture": "Portrait_Spy_Angel",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "1",
+    "sub_type": [],
+    "health": 58,
+    "cost": ,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "imbue",
+        "x": 1,
+        "s": "berserk",
+      },
+      {
+        "id": "strike",
+        "x": 2,
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 59,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 1,
+            "s": "berserk",
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+          },
+        ],
+      },
+      "3": {
+        "health": 60,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 2,
+            "s": "berserk",
+          },
+          {
+            "id": "strike",
+            "x": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 61,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 3,
+            "s": "berserk",
+          },
+          {
+            "id": "strike",
+            "x": 5,
+          },
+          {
+            "id": "weaken",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "health": 62,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 4,
+            "s": "berserk",
+          },
+          {
+            "id": "strike",
+            "x": 6,
+          },
+          {
+            "id": "weaken",
+            "x": 5,
+          },
+        ],
+      },
+      "6": {
+        "health": 64,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 5,
+            "s": "berserk",
+          },
+          {
+            "id": "strike",
+            "x": 6,
+          },
+          {
+            "id": "weaken",
+            "x": 6,
+          },
+        ],
+      },
+    }
+  },
   "5000": {
     "id": "5000",
     "name": "Azure Sphinx",
@@ -41166,7 +41286,7 @@ var CARDS = {
     "set": "4000",
     "card_type": "2",
     "type": "1",
-    "sub_type": ["10"],
+    "sub_type": ["6","10"],
     "health": 10,
     "attack": 2,
     "cost": 1,
@@ -41232,7 +41352,7 @@ var CARDS = {
     "set": "4000",
     "card_type": "2",
     "type": "1",
-    "sub_type": ["10"],
+    "sub_type": ["6","10"],
     "health": 13,
     "attack": 3,
     "cost": 1,
@@ -41306,7 +41426,7 @@ var CARDS = {
     "set": "4000",
     "card_type": "2",
     "type": "1",
-    "sub_type": ["10"],
+    "sub_type": ["6","10"],
     "health": 16,
     "attack": 3,
     "cost": 1,
@@ -110244,7 +110364,7 @@ var CARDS = {
     "id": "2081",
     "name": "Starstriker",
     "picture": "Avian_Starstriker_A",
-    "hidden_until": "1489078800000",
+    "hidden_until": "1486659600000",
     "rarity": "3",
     "set": "2000",
     "card_type": "2",
@@ -110310,7 +110430,7 @@ var CARDS = {
     "id": "12081",
     "name": "Starstrike Knight",
     "picture": "Avian_Starstriker_A",
-    "hidden_until": "1489078800000",
+    "hidden_until": "1486659600000",
     "rarity": "3",
     "set": "2000",
     "card_type": "2",
@@ -110384,7 +110504,7 @@ var CARDS = {
     "id": "22081",
     "name": "Starstrike Hero",
     "picture": "Avian_Starstriker_B",
-    "hidden_until": "1489078800000",
+    "hidden_until": "1486659600000",
     "rarity": "3",
     "set": "2000",
     "card_type": "2",
@@ -110458,7 +110578,7 @@ var CARDS = {
     "id": "2082",
     "name": "Ecru Spear",
     "picture": "Avian_Egg_Warrior_A",
-    "hidden_until": "1489078800000",
+    "hidden_until": "1486659600000",
     "rarity": "3",
     "set": "2000",
     "card_type": "2",
@@ -110522,7 +110642,7 @@ var CARDS = {
     "id": "12082",
     "name": "Ecru Pike",
     "picture": "Avian_Egg_Warrior_A",
-    "hidden_until": "1489078800000",
+    "hidden_until": "1486659600000",
     "rarity": "3",
     "set": "2000",
     "card_type": "2",
@@ -110593,7 +110713,7 @@ var CARDS = {
     "id": "22082",
     "name": "Ecru Defender",
     "picture": "Avian_Egg_Warrior_B",
-    "hidden_until": "1489078800000",
+    "hidden_until": "1486659600000",
     "rarity": "3",
     "set": "2000",
     "card_type": "2",
@@ -135311,6 +135431,247 @@ var CARDS = {
           },
           {
             "id": "taunt",
+          },
+        ],
+      },
+    }
+  },
+  "8046": {
+    "id": "8046",
+    "name": "Winter's Sting",
+    "picture": "Angry_Hive_A",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "8",
+    "sub_type": [],
+    "health": 4,
+    "attack": 1,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "nullify",
+        "x": 1,
+      },
+      {
+        "id": "poison",
+        "x": 8,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 2,
+        "health": 5,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "nullify",
+            "x": 1,
+          },
+          {
+            "id": "poison",
+            "x": 9,
+          },
+        ],
+      },
+      "3": {
+        "attack": 3,
+        "health": 6,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "nullify",
+            "x": 2,
+          },
+          {
+            "id": "poison",
+            "x": 10,
+          },
+        ],
+      },
+      "4": {
+        "attack": 4,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "nullify",
+            "x": 3,
+          },
+          {
+            "id": "poison",
+            "x": 12,
+          },
+        ],
+      },
+      "5": {
+        "health": 7,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 4,
+          },
+          {
+            "id": "nullify",
+            "x": 4,
+          },
+          {
+            "id": "poison",
+            "x": 13,
+          },
+        ],
+      },
+      "6": {
+        "attack": 5,
+        "health": 8,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 5,
+          },
+          {
+            "id": "nullify",
+            "x": 5,
+          },
+          {
+            "id": "poison",
+            "x": 15,
+          },
+        ],
+      },
+    }
+  },
+  "8047": {
+    "id": "8047",
+    "name": "Void's Thrall",
+    "picture": "Wasteland_Nomad_B",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "8",
+    "sub_type": [],
+    "health": 1,
+    "attack": 3,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 14,
+      },
+      {
+        "id": "armored",
+        "x": 5,
+      },
+      {
+        "id": "protect",
+        "x": 2,
+        "y": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 1,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 16,
+          },
+          {
+            "id": "armored",
+            "x": 10,
+          },
+          {
+            "id": "protect",
+            "x": 5,
+            "y": "1",
+          },
+        ],
+      },
+      "3": {
+        "attack": 4,
+        "health": 2,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 18,
+          },
+          {
+            "id": "armored",
+            "x": 12,
+          },
+          {
+            "id": "protect",
+            "x": 8,
+            "y": "1",
+          },
+        ],
+      },
+      "4": {
+        "health": 3,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 20,
+          },
+          {
+            "id": "armored",
+            "x": 15,
+          },
+          {
+            "id": "protect",
+            "x": 10,
+            "y": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 3,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 22,
+          },
+          {
+            "id": "armored",
+            "x": 18,
+          },
+          {
+            "id": "protect",
+            "x": 12,
+            "y": "1",
+          },
+        ],
+      },
+      "6": {
+        "attack": 5,
+        "health": 4,
+        "skill": [
+          {
+            "id": "heal",
+            "x": 25,
+          },
+          {
+            "id": "armored",
+            "x": 20,
+          },
+          {
+            "id": "protect",
+            "x": 15,
+            "y": "1",
           },
         ],
       },

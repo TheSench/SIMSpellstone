@@ -8753,7 +8753,7 @@
     <name>Starstriker</name>
     <picture>Avian_Starstriker_A</picture>
     <asset_bundle>85</asset_bundle>
-    <hidden_until_time>1489078800</hidden_until_time>
+    <hidden_until_time>1486659600</hidden_until_time>
     <attack>5</attack>
     <health>14</health>
     <cost>2</cost>
@@ -8790,7 +8790,7 @@
     <name>Starstrike Knight</name>
     <picture>Avian_Starstriker_A</picture>
     <asset_bundle>85</asset_bundle>
-    <hidden_until_time>1489078800</hidden_until_time>
+    <hidden_until_time>1486659600</hidden_until_time>
     <attack>5</attack>
     <health>17</health>
     <cost>2</cost>
@@ -8829,7 +8829,7 @@
     <name>Starstrike Hero</name>
     <picture>Avian_Starstriker_B</picture>
     <asset_bundle>85</asset_bundle>
-    <hidden_until_time>1489078800</hidden_until_time>
+    <hidden_until_time>1486659600</hidden_until_time>
     <attack>6</attack>
     <health>20</health>
     <cost>2</cost>
@@ -8867,7 +8867,7 @@
     <name>Ecru Spear</name>
     <picture>Avian_Egg_Warrior_A</picture>
     <asset_bundle>85</asset_bundle>
-    <hidden_until_time>1489078800</hidden_until_time>
+    <hidden_until_time>1486659600</hidden_until_time>
     <attack>6</attack>
     <health>10</health>
     <cost>1</cost>
@@ -8905,7 +8905,7 @@
     <name>Ecru Pike</name>
     <picture>Avian_Egg_Warrior_A</picture>
     <asset_bundle>85</asset_bundle>
-    <hidden_until_time>1489078800</hidden_until_time>
+    <hidden_until_time>1486659600</hidden_until_time>
     <attack>7</attack>
     <health>13</health>
     <cost>1</cost>
@@ -8944,7 +8944,7 @@
     <name>Ecru Defender</name>
     <picture>Avian_Egg_Warrior_B</picture>
     <asset_bundle>85</asset_bundle>
-    <hidden_until_time>1489078800</hidden_until_time>
+    <hidden_until_time>1486659600</hidden_until_time>
     <attack>8</attack>
     <health>15</health>
     <cost>1</cost>

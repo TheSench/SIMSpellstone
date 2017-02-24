@@ -4435,4 +4435,111 @@
       <skill id="taunt" />
     </upgrade>
   </unit>
+  <unit>
+    <id>8046</id>
+    <card_type>2</card_type>
+    <name>Winter's Sting</name>
+    <picture>Angry_Hive_A</picture>
+    <asset_bundle>65</asset_bundle>
+    <attack>1</attack>
+    <health>4</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="nullify" x="1" />
+    <skill id="poison" x="8" />
+    <type>8</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <attack>2</attack>
+      <health>5</health>
+      <skill id="evade" x="2" />
+      <skill id="nullify" x="1" />
+      <skill id="poison" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>3</attack>
+      <health>6</health>
+      <skill id="evade" x="2" />
+      <skill id="nullify" x="2" />
+      <skill id="poison" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>4</attack>
+      <skill id="evade" x="3" />
+      <skill id="nullify" x="3" />
+      <skill id="poison" x="12" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>7</health>
+      <skill id="evade" x="4" />
+      <skill id="nullify" x="4" />
+      <skill id="poison" x="13" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>5</attack>
+      <health>8</health>
+      <skill id="evade" x="5" />
+      <skill id="nullify" x="5" />
+      <skill id="poison" x="15" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8047</id>
+    <card_type>2</card_type>
+    <name>Void's Thrall</name>
+    <picture>Wasteland_Nomad_B</picture>
+    <asset_bundle>13</asset_bundle>
+    <attack>3</attack>
+    <health>1</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="heal" x="14" />
+    <skill id="armored" x="5" />
+    <skill id="protect" x="2" y="1" />
+    <type>8</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>1</health>
+      <skill id="heal" x="16" />
+      <skill id="armored" x="10" />
+      <skill id="protect" x="5" y="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>2</health>
+      <attack>4</attack>
+      <skill id="heal" x="18" />
+      <skill id="armored" x="12" />
+      <skill id="protect" x="8" y="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>3</health>
+      <skill id="heal" x="20" />
+      <skill id="armored" x="15" />
+      <skill id="protect" x="10" y="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>3</health>
+      <skill id="heal" x="22" />
+      <skill id="armored" x="18" />
+      <skill id="protect" x="12" y="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>5</attack>
+      <health>4</health>
+      <skill id="heal" x="25" />
+      <skill id="armored" x="20" />
+      <skill id="protect" x="15" y="1" />
+    </upgrade>
+  </unit>
 </root>
