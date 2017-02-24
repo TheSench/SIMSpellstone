@@ -15724,7 +15724,6 @@ var CARDS = {
     "type": "1",
     "sub_type": [],
     "health": 58,
-    "cost": ,
     "maxLevel": 6,
     "skill": [
       {

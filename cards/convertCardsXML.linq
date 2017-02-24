@@ -597,8 +597,8 @@ public partial class unit
 		if (card_type != "1")
 		{
 			AppendEntry(sb, "attack", attack, unitTabs);
+			AppendEntry(sb, "cost", cost, unitTabs);
 		}
-		AppendEntry(sb, "cost", cost, unitTabs);
 		
 		var maxLevel = 1 + (upgrades != null ? upgrades.Length : 0);
 		AppendEntry(sb, "maxLevel", maxLevel.ToString(), unitTabs);
