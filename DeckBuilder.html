@@ -242,7 +242,7 @@
                         <tr>
                             <td>
                                 Rows:
-                                <input type="number" name="rows" id="rows" min="1" step="1" max="9" value="3" class="ui-widget-content ui-corner-all" style="width:25px;" onchange="applyFilters(true, false);">
+                                <input type="number" name="rows" id="rows" min="1" step="1" max="9" class="ui-widget-content ui-corner-all" style="width:25px;" onchange="applyFilters(true, false);">
                             </td>
                             <td style="min-width:5px;"></td>
                             <td>
@@ -402,7 +402,7 @@
         <div id="loadDeckDialog" title="Load Deck" ng-controller="DeckStorageCtrl" class="primary-white" style="display:none;">
             <label for="loadDeckName"><strong>Deck:</strong></label><br />
             <select name="loadDeckName" id="loadDeckName" class="ui-widget-content ui-corner-all" style="width:100%;">
-                <option ng-repeat="key in keys(savedDecks) | orderBy:'toString()'" value="{{key}}">{{key}}</option>
+                <option ng-repeat="key in keys(getSaveDecks()) | orderBy:'toString()'" value="{{key}}">{{key}}</option>
             </select>
         </div>
 

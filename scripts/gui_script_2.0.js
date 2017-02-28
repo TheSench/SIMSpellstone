@@ -173,7 +173,7 @@ function showMapBGEs() {
 }
 
 function loadDeck(hashField) {
-    var decks = storageAPI.getSavedDecks;
+    var decks = storageAPI.getSaveDecks();
     $('label[for="loadDeckName"]').html('<strong>Deck:</strong>');
     loadDeckDialog.dialog("open");
     loadDeckDialog.dialog("option", "position", { my: "center", at: "center", of: window });

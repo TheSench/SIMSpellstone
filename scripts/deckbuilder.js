@@ -81,6 +81,11 @@ var initDeckBuilder = function () {
     window.onwheel = changePage;
     window.oncontextmenu = hideContext;
 
+    $("#rows").val(storageAPI.getField("deckBuilder", "rows", 3));
+    $("#rows").bind("change", function() {
+        storageAPI.setField("deckBuilder", "rows", $("#rows").val())
+    });
+
     $nameFilter = $('#nameFilter').keypress(function (event) {
         if (event.which == 13) {
             if (unitsFiltered.length == 1) {
@@ -2178,7 +2183,7 @@ function setDeckName(name) {
 function saveDeck() {
     var hash = $("#hash").val();
     $("#saveDeckName").val("");
-    var savedDecks = storageAPI.savedDecks;
+    var savedDecks = storageAPI.getSaveDecks();
     for (var name in savedDecks) {
         var existing = savedDecks[name];
         if (hash == existing) {
@@ -2191,7 +2196,7 @@ function saveDeck() {
 }
 
 function loadDeck() {
-    var decks = storageAPI.getSavedDecks;
+    var decks = storageAPI.getSaveDecks();
     $('label[for="loadDeckName"]').html('<strong>Deck:</strong>');
     loadDeckDialog.dialog("option", "position", { my: "center", at: "center", of: window });
     loadDeckDialog.dialog("open");
@@ -2200,7 +2205,7 @@ function loadDeck() {
 }
 
 function loadInventory() {
-    var decks = storageAPI.getSavedDecks;
+    var decks = storageAPI.getSaveDecks();
     $('label[for="loadDeckName"]').html('<strong>Inventory:</strong>');
     loadDeckDialog.dialog("option", "position", { my: "center", at: "center", of: window });
     loadDeckDialog.dialog("open");
