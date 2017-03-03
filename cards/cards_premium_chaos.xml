@@ -14196,4 +14196,117 @@
       <skill id="nullify" x="2" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6115</id>
+    <card_type>2</card_type>
+    <name>Spelltalon</name>
+    <picture>Bird_Of_Death_A</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1488474000</hidden_until_time>
+    <attack>5</attack>
+    <health>16</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="strike" x="1" />
+    <skill id="flurry" c="7" />
+    <type>2</type>
+    <sub_type>10</sub_type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="strike" x="1" />
+      <skill id="flurry" c="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="strike" x="2" />
+      <skill id="flurry" c="6" />
+    </upgrade>
+    <desc>It melds with shadow, it is the night.</desc>
+  </unit>
+  <unit>
+    <id>16115</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Phasing Spelltalon</name>
+    <picture>Bird_Of_Death_A</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1488474000</hidden_until_time>
+    <attack>5</attack>
+    <health>18</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="strike" x="2" />
+    <skill id="flurry" c="5" />
+    <type>2</type>
+    <sub_type>10</sub_type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="1" />
+      <skill id="strike" x="3" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26115</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Shifting Spelltalon</name>
+    <picture>Bird_Of_Death_B</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1488474000</hidden_until_time>
+    <attack>6</attack>
+    <health>20</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="strike" x="3" />
+    <skill id="flurry" c="4" />
+    <type>2</type>
+    <sub_type>10</sub_type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="2" />
+      <skill id="strike" x="4" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+  </unit>
 </root>

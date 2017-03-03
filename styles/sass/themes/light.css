@@ -274,6 +274,36 @@ tbody tr:nth-child(2n) {
   width: 100%; }
 
 #config-map-bge:disabled {
-  color: #c0c0c0;
-  background-color: #ffffff; }
+  color: #cbcbcb;
+  background-color: #f8f8f8; }
+
+.tooltip-container {
+  position: relative;
+  overflow: visible; }
+
+.tooltip {
+  display: none; }
+
+label:hover + .tooltip {
+  display: block;
+  position: absolute;
+  background-color: white;
+  top: -10px;
+  right: 25px;
+  overflow: visible;
+  color: grey;
+  border: 1px solid grey;
+  font-size: 12px;
+  padding: 2px;
+  white-space: nowrap;
+  z-index: 9999; }
+
+#tooltip {
+  display: none;
+  position: absolute;
+  padding: 5px;
+  border: 1px solid gray;
+  color: gray;
+  background-color: #f8f8f8;
+  border-radius: 5px; }
 

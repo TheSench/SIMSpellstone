@@ -15019,7 +15019,7 @@
   </mission>
   <mission>
     <id>5491</id>
-    <name>Duskwillow's Sorrow</name>
+    <name>Pushing Onward</name>
     <energy>9</energy>
     <desc>You break camp, taking your party deeper towards the heart of the raiders' base. Stopping their summoning would be much easier than fighting against the Lady of the Sea herself.</desc>
     <commander id="294" />
@@ -15189,7 +15189,7 @@
     <id>5496</id>
     <name>Snowdust Rivals</name>
     <energy>9</energy>
-    <desc>Frigore boasts the highest quantity of a mystical resource known as Snowdust. Each particle contains a small amount of magical energy, which powerful artifacts can absorb to become even stronger.</desc>
+    <desc>Beasts and strange adventurers roam Frigore. Have they also come to collect the Snowdust, or are they after you? You must fight them off if you want the resources to become stronger.</desc>
     <commander id="264" />
     <deck>
       <card id="1014" name="Cherub" />
@@ -15220,7 +15220,7 @@
       <card id="1018" name="Armored Eagle" />
       <card id="1018" name="Armored Eagle" />
       <card id="1014" name="Cherub" />
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8046" name="Winter's Sting" />
       <card id="1027" name="Griffin Knight" />
       <card id="5044" name="Telepathic Magi" />
       <card id="1030" name="Paladin" />
@@ -15244,7 +15244,7 @@
       <card id="1018" name="Armored Eagle" />
       <card id="1018" name="Armored Eagle" />
       <card id="1014" name="Cherub" />
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8047" name="Void's Thrall" />
       <card id="2040" name="Owlmancer" />
       <card id="6054" name="Shadowcrafter" />
       <card id="1025" name="Lightbound Archer" />
@@ -15280,7 +15280,7 @@
       <card id="1018" name="Armored Eagle" />
       <card id="1014" name="Cherub" />
       <card id="1014" name="Cherub" />
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8046" name="Winter's Sting" />
       <card id="2042" name="Carrion Hunter" />
       <card id="6054" name="Shadowcrafter" />
       <card id="2029" name="Sly Critters" />
@@ -15316,7 +15316,7 @@
       <card id="1014" name="Cherub" />
       <card id="1014" name="Cherub" />
       <card id="1014" name="Cherub" />
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8047" name="Void's Thrall" />
       <card id="5040" name="Winged Trumpeter" />
       <card id="7029" name="Owl Griffin" />
       <card id="6070" name="Petrifier" />
@@ -15352,7 +15352,7 @@
       <card id="1014" name="Cherub" />
       <card id="1014" name="Cherub" />
       <card id="1014" name="Cherub" />
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8046" name="Winter's Sting" />
       <card id="5072" name="Blind Seer" />
       <card id="5113" name="Bishop Rook" />
       <card id="2052" name="Protector of Skyhaven" />
@@ -15376,7 +15376,7 @@
       <card id="1018" name="Armored Eagle" />
       <card id="1018" name="Armored Eagle" />
       <card id="1014" name="Cherub" />
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8047" name="Void's Thrall" />
       <card id="5016" name="Fowl Swarm" />
       <card id="5058" name="Crescent Moon Owl" />
       <card id="5044" name="Telepathic Magi" />
@@ -15393,7 +15393,12 @@
       <line>
         <commander>lichking</commander>
         <enemy>0</enemy>
-        <text>General Garrick stayed behind to fight the creature that emerged from The Void's Spellstone. Adventurer.... could we trouble you to help our friend? If he's still alive, we must help him.</text>
+        <text>General Garrick stayed behind to fight the creature that emerged from The Void's Spellstone.</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>Adventurer.... could we trouble you to help our friend? If he's still alive, we must help him.</text>
       </line>
     </speech>
   </mission>
@@ -15407,7 +15412,7 @@
       <card id="1018" name="Armored Eagle" />
       <card id="1018" name="Armored Eagle" />
       <card id="1014" name="Cherub" />
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8046" name="Winter's Sting" />
       <card id="2042" name="Carrion Hunter" />
       <card id="2081" name="Starstriker" />
       <card id="7113" name="Revenge from Above" />
@@ -15424,7 +15429,12 @@
       <line>
         <commander>grandexcavator</commander>
         <enemy>0</enemy>
-        <text>Of course, we wouldn't trouble you lightly. Do you see this shield? It's a legendary artifact from a land known as Duskwillow, where fanatics of a terrible beast called Scylla-</text>
+        <text>Of course, we wouldn't trouble you lightly. Do you see this shield?</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>It's a legendary artifact from Duskwillow, where fanatics of a terrible beast called Scylla-</text>
       </line>
       <line>
         <commander>grandexcavator</commander>
@@ -15443,7 +15453,7 @@
       <card id="1018" name="Armored Eagle" />
       <card id="1018" name="Armored Eagle" />
       <card id="1014" name="Cherub" />
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8047" name="Void's Thrall" />
       <card id="6112" name="Fire Hawk" />
       <card id="6112" name="Fire Hawk" />
       <card id="5060" name="Quack Apprentice" />
@@ -15456,18 +15466,6 @@
       <card id="7056" mastery_level="6" name="Trailblazer" />
       <card id="5112" mastery_level="7" name="Cloudwing Chaser" />
     </deck>
-    <speech>
-      <line>
-        <commander>grandexcavator</commander>
-        <enemy>0</enemy>
-        <text>Of course, we wouldn't trouble you lightly. Do you see this shield? It's a legendary artifact from a land known as Duskwillow, where fanatics of a terrible beast called Scylla-</text>
-      </line>
-      <line>
-        <commander>grandexcavator</commander>
-        <enemy>0</enemy>
-        <text>Oh, familiar with Duskwillow already, are you?! Fascinating, I love meeting fellow scholars! If you'd be willing to help us, then this shield is yours.</text>
-      </line>
-    </speech>
   </mission>
   <mission>
     <id>5505</id>
@@ -15479,7 +15477,7 @@
       <card id="1018" name="Armored Eagle" />
       <card id="1014" name="Cherub" />
       <card id="1014" name="Cherub" />
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8046" name="Winter's Sting" />
       <card id="2081" name="Starstriker" />
       <card id="5044" name="Telepathic Magi" />
       <card id="5058" name="Crescent Moon Owl" />
@@ -15520,7 +15518,7 @@
       <card id="1018" name="Armored Eagle" />
       <card id="1012" name="Cloud Sylph" />
       <card id="1014" name="Cherub" />
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8047" name="Void's Thrall" />
       <card id="2082" name="Ecru Spear" />
       <card id="5044" name="Telepathic Magi" />
       <card id="6054" name="Shadowcrafter" />
@@ -15551,7 +15549,7 @@
       <card id="1014" name="Cherub" />
       <card id="1014" name="Cherub" />
       <card id="1014" name="Cherub" />
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8046" name="Winter's Sting" />
       <card id="7073" name="Heralded Slugger" />
       <card id="2029" name="Sly Critters" />
       <card id="2029" name="Sly Critters" />
@@ -15564,13 +15562,6 @@
       <card id="6071" mastery_level="6" name="Masked Heraid" />
       <card id="7040" mastery_level="7" name="Warden of the Leaf" />
     </deck>
-    <speech>
-      <line>
-        <commander>grandexcavator</commander>
-        <enemy>0</enemy>
-        <text>All the more reason to hurry! Can't let one of those angels pick up the shield instead, eh?</text>
-      </line>
-    </speech>
   </mission>
   <mission>
     <id>5508</id>
@@ -15581,8 +15572,8 @@
     <deck>
       <card id="1014" name="Cherub" />
       <card id="1014" name="Cherub" />
-      <card id="1014" name="Cherub" />
-      <card id="5006" name="Arms Enforcer" />
+      <card id="6070" name="Petrifier" />
+      <card id="8047" name="Void's Thrall" />
       <card id="2027" name="Halo Mage" />
       <card id="2029" name="Sly Critters" />
       <card id="5072" name="Blind Seer" />
@@ -15600,6 +15591,380 @@
         <commander>Portrait_Spy_Angel</commander>
         <enemy>1</enemy>
         <text>What's this... I feel some kind of power in the shield? Lord Samael would be most interested in an artifact of this caliber. Stand aside!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5509</id>
+    <name>Tough Terrain</name>
+    <energy>9</energy>
+    <desc>With the legendary shield in hand, you properly start your quest to find General Garrick. The frozen wastelands of Frigore has tough terrain, which breeds tough monsters.</desc>
+    <commander id="313" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="6070" name="Petrifier" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="5060" name="Quack Apprentice" />
+      <card id="2020" name="Tidetaken Fighter" />
+      <card id="6070" name="Petrifier" />
+      <card id="6038" name="Hemlock" />
+      <card id="6056" name="Potoo" />
+      <card id="6104" mastery_level="2" name="Night Lurker" />
+      <card id="1327" mastery_level="3" name="Fallen Angel" />
+      <card id="1025" mastery_level="4" name="Lightbound Archer" />
+      <card id="7030" mastery_level="5" name="Arctic Ambusher" />
+      <card id="5059" mastery_level="6" name="Bemola" />
+      <card id="7114" mastery_level="7" name="Worshipped Statue" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5510</id>
+    <name>Enemies Ahead</name>
+    <energy>9</energy>
+    <desc>Angels also continue to harry your path. Your search is delayed by their attacks, but you have no choice but to push through.</desc>
+    <commander id="362" />
+    <deck>
+      <card id="6031" name="Iceblood Assassin" />
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="8047" name="Void's Thrall" />
+      <card id="7038" name="Sol King" />
+      <card id="6031" name="Iceblood Assassin" />
+      <card id="7070" name="Laughing Menace" />
+      <card id="2052" name="Protector of Skyhaven" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="7073" mastery_level="2" name="Heralded Slugger" />
+      <card id="1031" mastery_level="3" name="Noble Champion" />
+      <card id="7041" mastery_level="4" name="Feral Angel" />
+      <card id="7029" mastery_level="5" name="Owl Griffin" />
+      <card id="5077" mastery_level="6" name="Everspark Ace" />
+      <card id="7069" mastery_level="7" name="Stoneblade Seraphim" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Spy_Angel</commander>
+        <enemy>1</enemy>
+        <text>Even should I fall, my duty is done. Lord Samael will deal with you soon.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5511</id>
+    <name>Wings of Trouble</name>
+    <energy>9</energy>
+    <desc>The angels have just been stalling you. As another one of their scout falls, you see a familiar pair of wings approaching you and your group...</desc>
+    <commander id="3" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1014" name="Cherub" />
+      <card id="5040" name="Winged Trumpeter" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="5040" name="Winged Trumpeter" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="5040" name="Winged Trumpeter" />
+      <card id="5072" name="Blind Seer" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="7073" mastery_level="2" name="Heralded Slugger" />
+      <card id="7073" mastery_level="3" name="Heralded Slugger" />
+      <card id="7070" mastery_level="4" name="Laughing Menace" />
+      <card id="2081" mastery_level="5" name="Starstriker" />
+      <card id="1042" mastery_level="6" name="Archgeneral" />
+      <card id="5075" mastery_level="7" name="Arith" />
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>1</enemy>
+        <text>I knew I'd find you Chaos fools still attempting to complete your old plan. Now-</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>1</enemy>
+        <text>You... I know you. You're the adventurer who faced me at The Void!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5512</id>
+    <name>Bitter Memories</name>
+    <energy>9</energy>
+    <desc>A frightening look of fury crosses over the normally stoic leader's face. A long time has passed since you first defeated him at The Void. He orders all of his angels to attack.</desc>
+    <commander id="362" />
+    <deck>
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="5040" name="Winged Trumpeter" />
+      <card id="8047" name="Void's Thrall" />
+      <card id="5072" name="Blind Seer" />
+      <card id="2081" name="Starstriker" />
+      <card id="7041" name="Feral Angel" />
+      <card id="5072" name="Blind Seer" />
+      <card id="5060" name="Quack Apprentice" />
+      <card id="2029" mastery_level="2" name="Sly Critters" />
+      <card id="2030" mastery_level="3" name="Ebon Duelist" />
+      <card id="7070" mastery_level="4" name="Laughing Menace" />
+      <card id="5044" mastery_level="5" name="Telepathic Magi" />
+      <card id="2028" mastery_level="6" name="Infinity" />
+      <card id="5071" mastery_level="7" name="Stoic Watcher" />
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>1</enemy>
+        <text>Adventurer. I have scoured the entire world for you, and yet you eluded my grasp.</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>That doesn't sound like something a healthy person would do.</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>1</enemy>
+        <text>I did not need your aid! I would have escaped The Void's influence by myself!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5513</id>
+    <name>Vindictive Justice</name>
+    <energy>9</energy>
+    <desc>Samael is fixated on vengeance. By defeating him at the peak of his plans, you have harmed his pride. He has forgotten his original plans in a desire to find revenge.</desc>
+    <commander id="363" />
+    <deck>
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="1327" name="Fallen Angel" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="2030" name="Ebon Duelist" />
+      <card id="2082" name="Ecru Spear" />
+      <card id="7041" name="Feral Angel" />
+      <card id="7041" name="Feral Angel" />
+      <card id="5113" name="Bishop Rook" />
+      <card id="2029" mastery_level="2" name="Sly Critters" />
+      <card id="7038" mastery_level="3" name="Sol King" />
+      <card id="6070" mastery_level="4" name="Petrifier" />
+      <card id="6054" mastery_level="5" name="Shadowcrafter" />
+      <card id="7040" mastery_level="6" name="Warden of the Leaf" />
+      <card id="5075" mastery_level="7" name="Arith" />
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>1</enemy>
+        <text>Do you see this sword? It burns through the magic fibers that The Void relies upon for controlling one's mind.</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>1</enemy>
+        <text>Surrender, or I'll use it against you next!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5514</id>
+    <name>In His Name</name>
+    <energy>9</energy>
+    <desc>You fight wave after wave of angels. Samael has always had a difficult time admitting defeat, and he is blind to the allies that fall in his name.</desc>
+    <commander id="306" />
+    <deck>
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="2054" name="Pack Runner" />
+      <card id="8047" name="Void's Thrall" />
+      <card id="2030" name="Ebon Duelist" />
+      <card id="2041" name="Sharpwing" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="1030" name="Paladin" />
+      <card id="7029" name="Owl Griffin" />
+      <card id="7073" mastery_level="2" name="Heralded Slugger" />
+      <card id="7038" mastery_level="3" name="Sol King" />
+      <card id="6038" mastery_level="4" name="Hemlock" />
+      <card id="2021" mastery_level="5" name="Snowstep Ranger" />
+      <card id="6071" mastery_level="6" name="Masked Heraid" />
+      <card id="5078" mastery_level="7" name="Asariel" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5515</id>
+    <name>Blazing Faith</name>
+    <energy>9</energy>
+    <desc>At long last, Samael's barrage of attacks begins to falter. Even if he wants to continue fighting, the angels around him have grown weary. It is only a matter of time...</desc>
+    <commander id="363" />
+    <deck>
+      <card id="1014" name="Cherub" />
+      <card id="1014" name="Cherub" />
+      <card id="2027" name="Halo Mage" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="2030" name="Ebon Duelist" />
+      <card id="2040" name="Owlmancer" />
+      <card id="1031" name="Noble Champion" />
+      <card id="1030" name="Paladin" />
+      <card id="6054" name="Shadowcrafter" />
+      <card id="7073" mastery_level="2" name="Heralded Slugger" />
+      <card id="5040" mastery_level="3" name="Winged Trumpeter" />
+      <card id="2027" mastery_level="4" name="Halo Mage" />
+      <card id="7041" mastery_level="5" name="Feral Angel" />
+      <card id="5038" mastery_level="6" name="Celestial Monarch" />
+      <card id="5031" mastery_level="7" name="Frostlance Valkyrie" />
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>1</enemy>
+        <text>No... I cannot lose again. Dyrnwyn, my sword... Give me strength!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5516</id>
+    <name>Lost Faith</name>
+    <energy>9</energy>
+    <desc>The angels have given up, even though Samael still tries to fight. The sword slips from his hand, piercing into the frozen ground. Samael grabs the handle, trying desperately to draw it out of the earth. But the blade refuses... </desc>
+    <commander id="264" />
+    <deck>
+      <card id="1014" name="Cherub" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="5040" name="Winged Trumpeter" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="2030" name="Ebon Duelist" />
+      <card id="2082" name="Ecru Spear" />
+      <card id="2052" name="Protector of Skyhaven" />
+      <card id="7073" name="Heralded Slugger" />
+      <card id="6054" name="Shadowcrafter" />
+      <card id="7073" mastery_level="2" name="Heralded Slugger" />
+      <card id="2030" mastery_level="3" name="Ebon Duelist" />
+      <card id="6070" mastery_level="4" name="Petrifier" />
+      <card id="7041" mastery_level="5" name="Feral Angel" />
+      <card id="6040" mastery_level="6" name="Scorching Cutlass" />
+      <card id="6074" mastery_level="7" name="Deific Channeler" />
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>1</enemy>
+        <text>Dyrnwyn, no... Even you refuse to continue this crusade?!</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>1</enemy>
+        <text>Adventurer... we shall meet again. I promise you this!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5517</id>
+    <name>Blade of Ashes</name>
+    <energy>9</energy>
+    <desc>Samael and his host of angels leave the sword, unable to reclaim it. They retreat, leaving you finally alone with your allies. Cautiously you approach the sword, which has lost its flame while being embedded in the earth...</desc>
+    <commander id="313" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="6112" name="Fire Hawk" />
+      <card id="8047" name="Void's Thrall" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="2082" name="Ecru Spear" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="7055" name="Valley Strider" />
+      <card id="6054" name="Shadowcrafter" />
+      <card id="5060" mastery_level="2" name="Quack Apprentice" />
+      <card id="6056" mastery_level="3" name="Potoo" />
+      <card id="7113" mastery_level="4" name="Revenge from Above" />
+      <card id="7041" mastery_level="5" name="Feral Angel" />
+      <card id="6114" mastery_level="6" name="Blazing Emissary" />
+      <card id="7114" mastery_level="7" name="Worshipped Statue" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5518</id>
+    <name>Sentient Sword</name>
+    <energy>9</energy>
+    <desc>When you grab onto the sword, its flame comes to life. And you hear a whisper in your head, its words too quiet for you to make out. You think it might be speaking in some other language. You tell your companions about the sentient sword...</desc>
+    <commander id="261" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="6112" name="Fire Hawk" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="6038" name="Hemlock" />
+      <card id="2082" name="Ecru Spear" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="7055" name="Valley Strider" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="6054" mastery_level="2" name="Shadowcrafter" />
+      <card id="7113" mastery_level="3" name="Revenge from Above" />
+      <card id="2081" mastery_level="4" name="Starstriker" />
+      <card id="6112" mastery_level="5" name="Fire Hawk" />
+      <card id="7058" mastery_level="6" name="Steppe Stalker" />
+      <card id="6113" mastery_level="7" name="Trojan Crow" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Dyrnwyn, hmm... I have heard legends of it. They say it is a spirit of an angel that takes physical form as a sword.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5519</id>
+    <name>Another Future</name>
+    <energy>9</energy>
+    <desc>The sword imprints images into your mind. You see a new land you have never visited before, and Oda and Elyse, holding a staff. The Void's power erupts like a volcano. Something steps out of the abyss... The images fade from your mind, like sand slipping through your fingers.</desc>
+    <commander id="263" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="2040" name="Owlmancer" />
+      <card id="8047" name="Void's Thrall" />
+      <card id="7073" name="Heralded Slugger" />
+      <card id="2082" name="Ecru Spear" />
+      <card id="6054" name="Shadowcrafter" />
+      <card id="6112" name="Fire Hawk" />
+      <card id="7113" name="Revenge from Above" />
+      <card id="6054" mastery_level="2" name="Shadowcrafter" />
+      <card id="7113" mastery_level="3" name="Revenge from Above" />
+      <card id="6056" mastery_level="4" name="Potoo" />
+      <card id="5114" mastery_level="5" name="Wingward" />
+      <card id="5052" mastery_level="6" name="Paradise Avian" />
+      <card id="5055" mastery_level="7" name="Galewing" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5520</id>
+    <name>With Sword in Hand</name>
+    <energy>9</energy>
+    <desc>You tell your companions the vision that the sword imparted to you. They find it interesting, but aren't sure what to make of it. Tarian especially desires to press on and find his subordinate.</desc>
+    <commander id="262" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="7055" name="Valley Strider" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="6070" name="Petrifier" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="6112" name="Fire Hawk" />
+      <card id="7057" name="Bill Crasher" />
+      <card id="2082" mastery_level="2" name="Ecru Spear" />
+      <card id="6054" mastery_level="3" name="Shadowcrafter" />
+      <card id="6054" mastery_level="4" name="Shadowcrafter" />
+      <card id="6112" mastery_level="5" name="Fire Hawk" />
+      <card id="7112" mastery_level="6" name="Fountain Guardian" />
+      <card id="5047" mastery_level="7" name="Sky Fisher" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>An intelligent sword, fascinating! I wonder what it was trying to tell you?</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>Perhaps we fill discover the meaning in time. For now, let's keep searching for General Garrick.</text>
       </line>
     </speech>
   </mission>

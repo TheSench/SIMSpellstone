@@ -486,6 +486,7 @@ public class battleground
 		sb.Append("  \"" + id + "\": {\r\n");
 		sb.Append(tabs).Append("\"name\": \"").Append(name).Append("\",\r\n");
 		sb.Append(tabs).Append("\"id\": \"").Append(id).Append("\",\r\n");
+		sb.Append(tabs).Append("\"desc\": \"").Append(desc).Append("\",\r\n");
 		if (enemy_only) sb.Append(tabs).Append("\"enemy_only\": ").Append(enemy_only.ToString().ToLower()).Append(",\r\n");
 		if (scale_with_level != null) sb.Append(tabs).Append("\"scale_with_level\": \"").Append(scale_with_level).Append("\",\r\n");
 		if (starting_level != null) sb.Append(tabs).Append("\"starting_level\": \"").Append(starting_level).Append("\",\r\n");

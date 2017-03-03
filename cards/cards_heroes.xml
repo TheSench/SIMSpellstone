@@ -7259,15 +7259,14 @@
     <id>362</id>
     <card_type>1</card_type>
     <name>Skyhaven Agent</name>
-    <picture>Portrait_Spy_Angel</picture>
-    <asset_bundle></asset_bundle>
-    <hidden_until_time></hidden_until_time>
+    <portrait>Portrait_Spy_Angel</portrait>
+    <desc>You get the feeling that you could have been friends with this Agent, if only you'd met under different circumstances.</desc>
     <attack>0</attack>
     <health>58</health>
     <cost />
     <rarity>4</rarity>
     <skill id="imbue" s="berserk" x="1" />
-    <skill id="strike" x="2" />
+    <skill id="strike" x="1" />
     <skill id="weaken" x="1" />
     <type>1</type>
     <set>9999</set>
@@ -7275,36 +7274,84 @@
       <level>2</level>
       <health>59</health>
       <skill id="imbue" s="berserk" x="1" />
-      <skill id="strike" x="3" />
-      <skill id="weaken" x="2" />
+      <skill id="strike" x="2" />
+      <skill id="weaken" x="1" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>60</health>
       <skill id="imbue" s="berserk" x="2" />
-      <skill id="strike" x="4" />
-      <skill id="weaken" x="3" />
+      <skill id="strike" x="3" />
+      <skill id="weaken" x="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>61</health>
       <skill id="imbue" s="berserk" x="3" />
-      <skill id="strike" x="5" />
-      <skill id="weaken" x="4" />
+      <skill id="strike" x="3" />
+      <skill id="weaken" x="2" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>62</health>
       <skill id="imbue" s="berserk" x="4" />
-      <skill id="strike" x="6" />
-      <skill id="weaken" x="5" />
+      <skill id="strike" x="4" />
+      <skill id="weaken" x="2" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>64</health>
       <skill id="imbue" s="berserk" x="5" />
-      <skill id="strike" x="6" />
-      <skill id="weaken" x="6" />
+      <skill id="strike" x="4" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>363</id>
+    <card_type>1</card_type>
+    <name>Samael of White-Hilt</name>
+    <portrait>necromancer</portrait>
+    <desc>Are you fighting the angel and his sword, or the sword and its angel?</desc>
+    <attack>0</attack>
+    <health>49</health>
+    <cost />
+    <rarity>4</rarity>
+    <skill id="imbue" x="1" all="1" s="burn" />
+    <skill id="enhance" x="1" s="armored" />
+    <skill id="weaken" x="1" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>53</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>57</health>
+      <skill id="imbue" x="2" all="1" s="burn" />
+      <skill id="enhance" x="2" s="armored" />
+      <skill id="weaken" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>61</health>
+      <skill id="imbue" x="3" all="1" s="burn" />
+      <skill id="enhance" x="2" s="armored" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>65</health>
+      <skill id="imbue" x="4" all="1" s="burn" />
+      <skill id="enhance" x="3" s="armored" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>70</health>
+      <skill id="imbue" x="5" all="1" s="burn" />
+      <skill id="enhance" x="4" s="armored" />
+      <skill id="weaken" x="3" />
     </upgrade>
   </unit>
 </root>

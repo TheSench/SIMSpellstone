@@ -5628,5 +5628,187 @@
       <gold>800</gold>
     </reward>
   </achievement>
+  <!-- Campaign Event 2 -->
+  <!-- Extra Node -->
+  <achievement>
+    <id>3206</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Snowdust Forge</name>
+    <desc>Complete the 'Snowdust Forge' campaign on Mastery Level 4.</desc>
+    <mission_req>64</mission_req>
+    <locked_start_time>1489078800</locked_start_time>
+    <!-- Thu, 09 Mar 2017 17:00:00 GMT -->
+    <req>
+      <campaign>1114</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <item id="3049" number="50" />
+      <event_points id="7018" number="50" /> --&gt;
+		</reward>
+  </achievement>
+  <achievement>
+    <id>3207</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Snowdust Forge</name>
+    <desc>Complete the 'Snowdust Forge' campaign on Mastery Level 7.</desc>
+    <mission_req>64</mission_req>
+    <locked_start_time>1489078800</locked_start_time>
+    <!-- Thu, 09 Mar 2017 17:00:00 GMT -->
+    <achievement_req>3206</achievement_req>
+    <req>
+      <campaign>1114</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- Mission Nodes -->
+  <achievement>
+    <id>3208</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Ancient Aegis</name>
+    <desc>Complete the 'Ancient Aegis' campaign on Mastery Level 2.</desc>
+    <mission_req>64</mission_req>
+    <locked_start_time>1489078800</locked_start_time>
+    <!-- Thu, 09 Mar 2017 17:00:00 GMT -->
+    <req>
+      <campaign>1115</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3209</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Ancient Aegis</name>
+    <desc>Complete the 'Ancient Aegis' campaign on Mastery Level 4.</desc>
+    <mission_req>64</mission_req>
+    <locked_start_time>1489078800</locked_start_time>
+    <!-- Thu, 09 Mar 2017 17:00:00 GMT -->
+    <achievement_req>3208</achievement_req>
+    <req>
+      <campaign>1115</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3210</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Ancient Aegis</name>
+    <desc>Complete the 'Ancient Aegis' campaign on Mastery Level 6.</desc>
+    <mission_req>64</mission_req>
+    <locked_start_time>1489078800</locked_start_time>
+    <!-- Thu, 09 Mar 2017 17:00:00 GMT -->
+    <achievement_req>3209</achievement_req>
+    <req>
+      <campaign>1115</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3211</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Ancient Aegis</name>
+    <desc>Complete the 'Ancient Aegis' campaign on Mastery Level 7.</desc>
+    <mission_req>64</mission_req>
+    <locked_start_time>1489078800</locked_start_time>
+    <!-- Thu, 09 Mar 2017 17:00:00 GMT -->
+    <achievement_req>3210</achievement_req>
+    <req>
+      <campaign>1115</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3212</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Blazing Dyrnwyn</name>
+    <desc>Complete the 'Blazing Dyrnwyn' campaign on Mastery Level 2.</desc>
+    <mission_req>5508</mission_req>
+    <locked_start_time>1490288400</locked_start_time>
+    <!-- Thu, 23 Mar 2017 17:00:00 GMT -->
+    <achievement_req>3208</achievement_req>
+    <req>
+      <campaign>1116</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3213</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Blazing Dyrnwyn</name>
+    <desc>Complete the 'Blazing Dyrnwyn' campaign on Mastery Level 4.</desc>
+    <mission_req>64</mission_req>
+    <locked_start_time>1490288400</locked_start_time>
+    <!-- Thu, 23 Mar 2017 17:00:00 GMT -->
+    <achievement_req>3212</achievement_req>
+    <req>
+      <campaign>1116</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3214</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Blazing Dyrnwyn</name>
+    <desc>Complete the 'Blazing Dyrnwyn' campaign on Mastery Level 6.</desc>
+    <mission_req>5508</mission_req>
+    <locked_start_time>1490288400</locked_start_time>
+    <!-- Thu, 23 Mar 2017 17:00:00 GMT -->
+    <achievement_req>3213</achievement_req>
+    <req>
+      <campaign>1116</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3215</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Blazing Dyrnwyn</name>
+    <desc>Complete the 'Blazing Dyrnwyn' campaign on Mastery Level 7.</desc>
+    <mission_req>64</mission_req>
+    <locked_start_time>1490288400</locked_start_time>
+    <!-- Thu, 23 Mar 2017 17:00:00 GMT -->
+    <achievement_req>3214</achievement_req>
+    <req>
+      <campaign>1116</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
 </root>

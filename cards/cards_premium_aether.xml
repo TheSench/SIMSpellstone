@@ -14244,4 +14244,130 @@
       <skill id="legion" x="4" y="10" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5115</id>
+    <card_type>2</card_type>
+    <name>Papyrus Crane</name>
+    <picture>Paper_Crane_Flock_A</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1488474000</hidden_until_time>
+    <attack>4</attack>
+    <health>9</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="heal" x="2" y="10" />
+    <skill id="heal" x="1" y="1" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="heal" x="2" y="10" />
+      <skill id="heal" x="2" y="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="heal" x="3" y="10" />
+      <skill id="heal" x="2" y="1" />
+    </upgrade>
+    <desc>Friends come with some assembly required.</desc>
+  </unit>
+  <unit>
+    <id>15115</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Parchment Crane</name>
+    <picture>Paper_Crane_Flock_A</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1488474000</hidden_until_time>
+    <attack>5</attack>
+    <health>11</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="heal" x="3" y="10" />
+    <skill id="heal" x="2" y="1" />
+    <skill id="frost" x="1" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="heal" x="3" y="10" />
+      <skill id="heal" x="3" y="1" />
+      <skill id="frost" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="heal" x="4" y="10" />
+      <skill id="heal" x="3" y="1" />
+      <skill id="frost" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25115</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Origami Crane</name>
+    <picture>Paper_Crane_Flock_B</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1488474000</hidden_until_time>
+    <attack>6</attack>
+    <health>14</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="heal" x="4" y="10" />
+    <skill id="heal" x="3" y="1" />
+    <skill id="frost" x="1" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="heal" x="4" y="10" />
+      <skill id="heal" x="4" y="1" />
+      <skill id="frost" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="heal" x="5" y="10" />
+      <skill id="heal" x="4" y="1" />
+      <skill id="frost" x="1" />
+    </upgrade>
+  </unit>
 </root>

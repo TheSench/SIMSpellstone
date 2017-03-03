@@ -27,6 +27,30 @@ $(function () {
         }
     });
 
+    var bges = $('label[bge-desc]');
+    for (var i = 0; i < bges.length; i++) {
+        var lblBge = $(bges[i]);
+        lblBge.hover(showTooltip, hideTooltip);
+        /*
+        var tooltip = $('<div class="tooltip">' + lblBge.attr("bge-desc") + '</div>');
+        var parent = lblBge.parent();
+        parent.append($('<div></div>').append([lblBge.prev(), lblBge, tooltip]));
+        */
+    }
+
+    function showTooltip(event) {
+        $("#tooltip").html($(event.target).attr('bge-desc'));
+        $("#tooltip").show();
+        var offset = $(event.target).offset();
+        offset.left = 10;
+        offset.top -= 30;
+        $("#tooltip").offset(offset);
+    }
+
+    function hideTooltip(event) {
+        $("#tooltip").hide();
+    }
+
     function deckChanged(deckID, newDeck, owner) {
         var $deck = $("#" + deckID);
         $deck.children().remove();

@@ -4022,6 +4022,105 @@
     <find_item id="3048" drop_per_energy=".8" />
     <find_item id="2522" drop_per_energy=".04" />
   </campaign>
+  <!-- Campaign Event 2 -->
+  <!-- Extra Node -->
+  <campaign>
+    <id>1114</id>
+    <name>Snowdust Forge</name>
+    <campaign_req>6</campaign_req>
+    <locked_start_time>1489078800</locked_start_time>
+    <!-- Thu, 09 March 2017 17:00:00 -->
+    <location_id>8</location_id>
+    <x>385</x>
+    <y>185</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5495</mission_id>
+      <mission_id>5496</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="510" />
+      <card level="3" id="510" />
+      <card level="4" id="510" />
+      <card level="5" id="510" />
+      <card level="6" id="510" />
+      <card level="7" id="510" />
+    </rewards>
+    <find_item id="3049" drop_per_energy=".1" />
+  </campaign>
+  <!-- Mission Nodes -->
+  <campaign>
+    <id>1115</id>
+    <name>Ancient Aegis</name>
+    <campaign_req>6</campaign_req>
+    <locked_start_time>1489078800</locked_start_time>
+    <!-- Thu, 09 March 2017 17:00:00 -->
+    <location_id>8</location_id>
+    <x>215</x>
+    <y>205</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5497</mission_id>
+      <mission_id>5498</mission_id>
+      <mission_id>5499</mission_id>
+      <mission_id>5500</mission_id>
+      <mission_id>5501</mission_id>
+      <mission_id>5502</mission_id>
+      <mission_id>5503</mission_id>
+      <mission_id>5504</mission_id>
+      <mission_id>5505</mission_id>
+      <mission_id>5506</mission_id>
+      <mission_id>5507</mission_id>
+      <mission_id>5508</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2082" />
+      <card level="5" id="512" />
+      <card level="6" id="512" />
+      <card level="7" id="2041" />
+    </rewards>
+    <find_item id="3049" drop_per_energy=".2" />
+  </campaign>
+  <campaign>
+    <id>1116</id>
+    <name>Blazing Dyrnwyn</name>
+    <campaign_req>1115</campaign_req>
+    <locked_start_time>1490288400</locked_start_time>
+    <!-- Thu, 23 March 2017 17:00:00 -->
+    <battleground_id>2005</battleground_id>
+    <location_id>8</location_id>
+    <x>255</x>
+    <y>405</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5509</mission_id>
+      <mission_id>5510</mission_id>
+      <mission_id>5511</mission_id>
+      <mission_id>5512</mission_id>
+      <mission_id>5513</mission_id>
+      <mission_id>5514</mission_id>
+      <mission_id>5515</mission_id>
+      <mission_id>5516</mission_id>
+      <mission_id>5517</mission_id>
+      <mission_id>5518</mission_id>
+      <mission_id>5519</mission_id>
+      <mission_id>5520</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2082" />
+      <card level="5" id="512" />
+      <card level="6" id="512" />
+      <card level="7" id="2041" />
+    </rewards>
+    <find_item id="3049" drop_per_energy=".4" />
+  </campaign>
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
   <!-- ============================ -->

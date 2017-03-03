@@ -667,4 +667,18 @@
       <scale_attributes base_mult=".1" mult=".05" />
     </effect>
   </battleground>
+  <battleground>
+    <id>2005</id>
+    <name>Litany of the Tenacious</name>
+    <desc>Enemies become stronger with each passing Mastery level.</desc>
+    <icon>filter_angel_64</icon>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>5</starting_level>
+    <!-- Starting Mastery Level -->
+    <effect>
+      <scale_attributes base_mult=".1" mult=".0025" />
+    </effect>
+  </battleground>
 </root>
