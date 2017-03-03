@@ -404,9 +404,29 @@ label:hover + .tooltip {
 #tooltip {
     display: none;
     position: absolute;
-    padding: 5px;
-    border: 1px solid $primary-neutral;
-    color: $secondary-neutral;
-    background-color: $secondary-white-white;
-    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+
+    div {
+        padding: 5px;
+        border-color: $primary-neutral;
+        border-style: solid;
+        border-width: 1px 0 1px 1px;
+        color: $secondary-neutral;
+        background-color: $secondary-white-white;
+        border-radius: 5px 0 0 5px;
+        float: left;
+    }
+    .arrow {
+        width: 0px;
+        height: 0px;
+        float: left;
+        border-left: 15px solid $secondary-white-white;
+        border-top-style: solid;
+        border-top-color: transparent;
+        border-bottom-style: solid;
+        border-bottom-color: transparent;
+        border-right: none;
+        background-color: transparent;
+    }
 }
