@@ -4,7 +4,7 @@
     'use strict';
 
     var DeckStorageCtrl = function ($scope, $window) {
-        $scope.getSaveDecks = $window.storageAPI.getSaveDecks;
+        $scope.getSavedDecks = $window.storageAPI.getSavedDecks;
 
         $scope.keys = function (obj) {
             return (obj ? Object.keys(obj) : []);
@@ -106,7 +106,7 @@ if (function (type) {
 } else {
     (function () {
         storageAPI.initialize = function () {
-            storageAPI.getSaveDecks = function () { return {} };
+            storageAPI.getSavedDecks = function () { return {} };
             storageAPI.loadDeck = notSupported;
             storageAPI.deleteDeck = notSupported;
             storageAPI.clearDecks = notSupported;
@@ -132,28 +132,28 @@ if (function (type) {
 
     storageAPI.data = {};
 
-    storageAPI.getSaveDecks = function () {
+    storageAPI.getSavedDecks = function () {
         return storageAPI.getField(SaveFields.decks, "savedDecks", {});
     }
 
     storageAPI.saveDeck = function (name, hash) {
-        var savedDecks = storageAPI.getSaveDecks();
+        var savedDecks = storageAPI.getSavedDecks();
         savedDecks[name] = hash;
         storageAPI.onUpdateDecks(savedDecks);
     };
 
     storageAPI.loadDeck = function (name) {
-        return storageAPI.getSaveDecks()[name];
+        return storageAPI.getSavedDecks()[name];
     };
 
     storageAPI.deleteDeck = function (name) {
-        var savedDecks = storageAPI.getSaveDecks();
+        var savedDecks = storageAPI.getSavedDecks();
         delete savedDecks[name];
         storageAPI.onUpdateDecks(savedDecks);
     };
 
     storageAPI.clearDecks = function (name) {
-        var savedDecks = storageAPI.getSaveDecks();
+        var savedDecks = storageAPI.getSavedDecks();
         for (var name in savedDecks) {
             delete savedDecks[name];
         }

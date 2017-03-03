@@ -2183,7 +2183,7 @@ function setDeckName(name) {
 function saveDeck() {
     var hash = $("#hash").val();
     $("#saveDeckName").val("");
-    var savedDecks = storageAPI.getSaveDecks();
+    var savedDecks = storageAPI.getSavedDecks();
     for (var name in savedDecks) {
         var existing = savedDecks[name];
         if (hash == existing) {
@@ -2196,7 +2196,6 @@ function saveDeck() {
 }
 
 function loadDeck() {
-    var decks = storageAPI.getSaveDecks();
     $('label[for="loadDeckName"]').html('<strong>Deck:</strong>');
     loadDeckDialog.dialog("option", "position", { my: "center", at: "center", of: window });
     loadDeckDialog.dialog("open");
@@ -2205,7 +2204,6 @@ function loadDeck() {
 }
 
 function loadInventory() {
-    var decks = storageAPI.getSaveDecks();
     $('label[for="loadDeckName"]').html('<strong>Inventory:</strong>');
     loadDeckDialog.dialog("option", "position", { my: "center", at: "center", of: window });
     loadDeckDialog.dialog("open");
