@@ -586,6 +586,8 @@
 .sprite-Judgement_A{ background-position: -420px -720px; background-image: url('../res/sprites/SpriteSheet5.jpg');}
 .sprite-Judgement_B{ background-position: -504px -720px; background-image: url('../res/sprites/SpriteSheet5.jpg');}
 .sprite-Judgement_C{ background-position: -588px -720px; background-image: url('../res/sprites/SpriteSheet5.jpg');}
+.sprite-Justice_A{ background-position: -756px -720px; background-image: url('../res/sprites/SpriteSheet12.jpg');}
+.sprite-Justice_B{ background-position: -0px -840px; background-image: url('../res/sprites/SpriteSheet12.jpg');}
 .sprite-Keeper_Of_The_Dead_A{ background-position: -672px -720px; background-image: url('../res/sprites/SpriteSheet5.jpg');}
 .sprite-Keeper_Of_The_Dead_B{ background-position: -756px -720px; background-image: url('../res/sprites/SpriteSheet5.jpg');}
 .sprite-Kestral_A{ background-position: -0px -840px; background-image: url('../res/sprites/SpriteSheet5.jpg');}
@@ -731,6 +733,7 @@
 .sprite-Necromancer_Goblin_A{ background-position: -504px -0px; background-image: url('../res/sprites/SpriteSheet7.jpg');}
 .sprite-Necromancer_Goblin_B{ background-position: -588px -0px; background-image: url('../res/sprites/SpriteSheet7.jpg');}
 .sprite-new_0{ background-position: -588px -0px; background-image: url('../res/sprites/SpriteSheet12.jpg');}
+.sprite-new_0{ background-position: -672px -720px; background-image: url('../res/sprites/SpriteSheet12.jpg');}
 .sprite-Night_Dragon_A{ background-position: -672px -120px; background-image: url('../res/sprites/SpriteSheet7.jpg');}
 .sprite-Night_Dragon_B{ background-position: -756px -120px; background-image: url('../res/sprites/SpriteSheet7.jpg');}
 .sprite-Ninja_Frog_A{ background-position: -252px -360px; background-image: url('../res/sprites/SpriteSheet11.jpg');}
@@ -1164,6 +1167,8 @@
 .sprite-Winter_Blacksmith_B{ background-position: -252px -1080px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
 .sprite-Winter_Wretch_A{ background-position: -336px -1080px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
 .sprite-Winter_Wretch_B{ background-position: -420px -1080px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
+.sprite-Wolf_Demon_A{ background-position: -84px -840px; background-image: url('../res/sprites/SpriteSheet12.jpg');}
+.sprite-Wolf_Demon_B{ background-position: -168px -840px; background-image: url('../res/sprites/SpriteSheet12.jpg');}
 .sprite-Wolf_Girl_A{ background-position: -504px -1080px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
 .sprite-Wolf_Girl_B{ background-position: -588px -1080px; background-image: url('../res/sprites/SpriteSheet10.jpg');}
 .sprite-Wood_Dragon_A{ background-position: -0px -0px; background-image: url('../res/sprites/SpriteSheet11.jpg');}

@@ -868,7 +868,7 @@ var BATTLEGROUNDS = {
     ]
   },
   "2005": {
-    "name": "Litany of the Tenacious",
+    "name": "Anthem of the Tenacious",
     "id": "2005",
     "desc": "Enemies become stronger with each passing Mastery level.",
     "enemy_only": true,
@@ -880,6 +880,22 @@ var BATTLEGROUNDS = {
         "effect_type": "scale_attributes",
         "base_mult": .1,
         "mult": .0025,
+      },
+    ]
+  },
+  "2006": {
+    "name": "Ice Angel's Influence",
+    "id": "2006",
+    "desc": "Ice Angel empowers her minions, increasing their stats with each Mastery level!",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "0",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .1,
+        "mult": .05,
       },
     ]
   },

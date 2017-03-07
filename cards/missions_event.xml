@@ -15936,7 +15936,7 @@
     <id>5520</id>
     <name>With Sword in Hand</name>
     <energy>9</energy>
-    <desc>You tell your companions the vision that the sword imparted to you. They find it interesting, but aren't sure what to make of it. Tarian especially desires to press on and find his subordinate.</desc>
+    <desc>You tell your companions the vision that the sword imparted to you. They find it interesting, but aren't sure what to make of it. You notice some houses on the horizon, and a cavern near its bridge.</desc>
     <commander id="262" />
     <deck>
       <card id="1018" name="Armored Eagle" />
@@ -15964,8 +15964,109 @@
       <line>
         <commander>lichking</commander>
         <enemy>0</enemy>
-        <text>Perhaps we fill discover the meaning in time. For now, let's keep searching for General Garrick.</text>
+        <text>A strange story, but let's press on for General Garrick. Look, there's a village ahead, and a cave near that bridge.</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>Let's split up. Malchior and I will check in town for General Garrick, and you can check the cave, adventurer.</text>
       </line>
     </speech>
+  </mission>
+  <mission>
+    <id>5521</id>
+    <name>Test 1</name>
+    <energy>9</energy>
+    <desc>A boss and such.</desc>
+    <commander id="364" />
+    <deck>
+      <card id="5076" name="Sorath, the Valkyrie" />
+      <card id="5076" name="Sorath, the Valkyrie" />
+      <card id="7039" name="Winged Giant" />
+      <card id="7039" name="Winged Giant" />
+      <card id="5074" name="Godfried the Hunter" />
+      <card id="5074" name="Godfried the Hunter" />
+      <card id="5077" name="Everspark Ace" />
+      <card id="6100" name="Tiamat" />
+      <card id="8047" name="Void's Thrall" />
+      <card id="5075" mastery_level="2" name="Arith" />
+      <card id="2028" mastery_level="3" name="Infinity" />
+      <card id="5111" mastery_level="4" name="Bennu" />
+      <card id="5111" mastery_level="5" name="Bennu" />
+      <card id="5088" mastery_level="6" name="Betrayal" />
+      <card id="2083" mastery_level="7" name="Habrok, the Lance" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5522</id>
+    <name>Test 2</name>
+    <energy>9</energy>
+    <desc>A boss and such.</desc>
+    <commander id="364" />
+    <deck>
+      <card id="5076" name="Sorath, the Valkyrie" />
+      <card id="5076" name="Sorath, the Valkyrie" />
+      <card id="7039" name="Winged Giant" />
+      <card id="7039" name="Winged Giant" />
+      <card id="5074" name="Godfried the Hunter" />
+      <card id="5074" name="Godfried the Hunter" />
+      <card id="5077" name="Everspark Ace" />
+      <card id="6100" name="Tiamat" />
+      <card id="8047" name="Void's Thrall" />
+      <card id="5075" mastery_level="2" name="Arith" />
+      <card id="2028" mastery_level="3" name="Infinity" />
+      <card id="5111" mastery_level="4" name="Bennu" />
+      <card id="5111" mastery_level="5" name="Bennu" />
+      <card id="5088" mastery_level="6" name="Betrayal" />
+      <card id="2083" mastery_level="7" name="Habrok, the Lance" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5523</id>
+    <name>Test 3</name>
+    <energy>9</energy>
+    <desc>A boss and such.</desc>
+    <commander id="364" />
+    <deck>
+      <card id="5076" name="Sorath, the Valkyrie" />
+      <card id="5076" name="Sorath, the Valkyrie" />
+      <card id="7039" name="Winged Giant" />
+      <card id="7039" name="Winged Giant" />
+      <card id="5074" name="Godfried the Hunter" />
+      <card id="5074" name="Godfried the Hunter" />
+      <card id="5077" name="Everspark Ace" />
+      <card id="6100" name="Tiamat" />
+      <card id="8047" name="Void's Thrall" />
+      <card id="5075" mastery_level="2" name="Arith" />
+      <card id="2028" mastery_level="3" name="Infinity" />
+      <card id="5111" mastery_level="4" name="Bennu" />
+      <card id="5111" mastery_level="5" name="Bennu" />
+      <card id="5088" mastery_level="6" name="Betrayal" />
+      <card id="2083" mastery_level="7" name="Habrok, the Lance" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5524</id>
+    <name>Test 4</name>
+    <energy>9</energy>
+    <desc>A boss and such.</desc>
+    <commander id="364" />
+    <deck>
+      <card id="5076" name="Sorath, the Valkyrie" />
+      <card id="5076" name="Sorath, the Valkyrie" />
+      <card id="7039" name="Winged Giant" />
+      <card id="7039" name="Winged Giant" />
+      <card id="5074" name="Godfried the Hunter" />
+      <card id="5074" name="Godfried the Hunter" />
+      <card id="5077" name="Everspark Ace" />
+      <card id="6100" name="Tiamat" />
+      <card id="8047" name="Void's Thrall" />
+      <card id="5075" mastery_level="2" name="Arith" />
+      <card id="2028" mastery_level="3" name="Infinity" />
+      <card id="5111" mastery_level="4" name="Bennu" />
+      <card id="5111" mastery_level="5" name="Bennu" />
+      <card id="5088" mastery_level="6" name="Betrayal" />
+      <card id="2083" mastery_level="7" name="Habrok, the Lance" />
+    </deck>
   </mission>
 </root>

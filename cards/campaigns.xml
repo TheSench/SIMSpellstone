@@ -4042,7 +4042,7 @@
       <card level="1" id="510" />
       <card level="2" id="510" />
       <card level="3" id="510" />
-      <card level="4" id="510" />
+      <card level="4" id="2030" />
       <card level="5" id="510" />
       <card level="6" id="510" />
       <card level="7" id="510" />
@@ -4059,7 +4059,7 @@
     <location_id>8</location_id>
     <x>215</x>
     <y>205</y>
-    <combatBG>CombatBGVoid</combatBG>
+    <combatBG>CombatBGEvent006</combatBG>
     <missions>
       <mission_id>5497</mission_id>
       <mission_id>5498</mission_id>
@@ -4078,10 +4078,10 @@
       <card level="1" id="511" />
       <card level="2" id="511" />
       <card level="3" id="511" />
-      <card level="4" id="2082" />
+      <card level="4" id="2084" />
       <card level="5" id="512" />
       <card level="6" id="512" />
-      <card level="7" id="2041" />
+      <item level="7" id="3050" />
     </rewards>
     <find_item id="3049" drop_per_energy=".2" />
   </campaign>
@@ -4095,7 +4095,7 @@
     <location_id>8</location_id>
     <x>255</x>
     <y>405</y>
-    <combatBG>CombatBGVoid</combatBG>
+    <combatBG>CombatBGEvent006</combatBG>
     <missions>
       <mission_id>5509</mission_id>
       <mission_id>5510</mission_id>
@@ -4114,10 +4114,43 @@
       <card level="1" id="511" />
       <card level="2" id="511" />
       <card level="3" id="511" />
-      <card level="4" id="2082" />
+      <card level="4" id="2085" />
       <card level="5" id="512" />
-      <card level="6" id="512" />
-      <card level="7" id="2041" />
+      <card level="6" id="2054" />
+      <item level="7" id="3050" />
+    </rewards>
+    <find_item id="3049" drop_per_energy=".4" />
+  </campaign>
+  <!-- Boss Node -->
+  <campaign>
+    <id>1117</id>
+    <name>Disciple</name>
+    <type>2</type>
+    <icon id="gem_Boss_LG" bundle="0" />
+    <campaign_req>1116</campaign_req>
+    <locked_start_time>1491498000</locked_start_time>
+    <!-- Thu, 06 April 2017 17:00:00 -->
+    <battleground_id>2006</battleground_id>
+    <location_id>8</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <x>525</x>
+    <y>245</y>
+    <combatBG>CombatBGEvent006</combatBG>
+    <missions>
+      <mission_id>5521</mission_id>
+      <mission_id>5522</mission_id>
+      <mission_id>5523</mission_id>
+      <mission_id>5524</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="512" />
+      <card level="3" id="512" />
+      <item level="4" id="3051" />
+      <item level="5" id="3051" />
+      <item level="6" id="3051" />
+      <item level="7" id="3051" />
     </rewards>
     <find_item id="3049" drop_per_energy=".4" />
   </campaign>

@@ -4442,7 +4442,7 @@
     <picture>Angry_Hive_A</picture>
     <asset_bundle>65</asset_bundle>
     <attack>1</attack>
-    <health>4</health>
+    <health>1</health>
     <cost>0</cost>
     <rarity>4</rarity>
     <skill id="evade" x="1" />
@@ -4452,14 +4452,14 @@
     <upgrade>
       <level>2</level>
       <attack>2</attack>
-      <health>5</health>
+      <health>2</health>
       <skill id="evade" x="2" />
       <skill id="poison" x="9" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <attack>3</attack>
-      <health>6</health>
+      <health>3</health>
       <skill id="evade" x="2" />
       <skill id="poison" x="10" />
     </upgrade>
@@ -4471,14 +4471,14 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>7</health>
+      <health>4</health>
       <skill id="evade" x="4" />
       <skill id="poison" x="13" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <attack>5</attack>
-      <health>8</health>
+      <health>5</health>
       <skill id="evade" x="5" />
       <skill id="poison" x="15" />
     </upgrade>

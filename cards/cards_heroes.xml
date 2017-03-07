@@ -7354,4 +7354,52 @@
       <skill id="weaken" x="3" />
     </upgrade>
   </unit>
+  <!-- Boss -->
+  <unit>
+    <id>364</id>
+    <card_type>1</card_type>
+    <name>Dyrnwyn's Spirit</name>
+    <portrait>necromancer</portrait>
+    <attack>0</attack>
+    <health>49</health>
+    <cost />
+    <rarity>4</rarity>
+    <skill id="imbue" x="1" all="1" s="burn" />
+    <skill id="heal" x="1" all="1" />
+    <skill id="protect" x="1" all="1" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>53</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>57</health>
+      <skill id="imbue" x="2" all="1" s="burn" />
+      <skill id="heal" x="2" all="1" />
+      <skill id="protect" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>61</health>
+      <skill id="imbue" x="3" all="1" s="burn" />
+      <skill id="heal" x="3" all="1" />
+      <skill id="protect" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>65</health>
+      <skill id="imbue" x="4" all="1" s="burn" />
+      <skill id="heal" x="4" all="1" />
+      <skill id="protect" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>70</health>
+      <skill id="imbue" x="5" all="1" s="burn" />
+      <skill id="heal" x="5" all="1" />
+      <skill id="protect" x="4" all="1" />
+    </upgrade>
+  </unit>
 </root>

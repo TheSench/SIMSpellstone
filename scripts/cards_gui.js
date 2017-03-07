@@ -640,6 +640,7 @@ var CARD_GUI = {};
 
     var setNames = {
         1000: "Basic",
+        1100: "Legacy",
         7000: "Basic",
         2000: "Reward",
         3000: "Premium",

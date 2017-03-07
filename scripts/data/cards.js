@@ -15950,6 +15950,125 @@ var CARDS = {
       },
     }
   },
+  "364": {
+    "id": "364",
+    "name": "Dyrnwyn's Spirit",
+    "picture": "portrait_necromancer",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "1",
+    "sub_type": [],
+    "health": 49,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "imbue",
+        "x": 1,
+        "s": "burn",
+        "all": "1",
+      },
+      {
+        "id": "heal",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 53,
+        "skill": [],
+      },
+      "3": {
+        "health": 57,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 2,
+            "s": "burn",
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "health": 61,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 3,
+            "s": "burn",
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 65,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 4,
+            "s": "burn",
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 4,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "health": 70,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 5,
+            "s": "burn",
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 5,
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 4,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
   "5000": {
     "id": "5000",
     "name": "Azure Sphinx",
@@ -112019,6 +112138,679 @@ var CARDS = {
       },
     }
   },
+  "2084": {
+    "id": "2084",
+    "name": "Apocalypse Rider",
+    "picture": "Apocalypse_Rider_A",
+    "hidden_until": "1489078800000",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["6"],
+    "health": 17,
+    "attack": 2,
+    "cost": 3,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "burn",
+        "x": 1,
+      },
+      {
+        "id": "leech",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 18,
+        "skill": [],
+      },
+      "3": {
+        "health": 19,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "attack": 3,
+        "health": 20,
+        "skill": [],
+      },
+      "5": {
+        "health": 21,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "12084": {
+    "id": "12084",
+    "name": "Cataclysm Rider",
+    "picture": "Apocalypse_Rider_A",
+    "hidden_until": "1489078800000",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["6"],
+    "health": 22,
+    "attack": 3,
+    "cost": 3,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "burn",
+        "x": 2,
+      },
+      {
+        "id": "leech",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 4,
+        "health": 23,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 24,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "attack": 5,
+        "health": 25,
+        "skill": [],
+      },
+    }
+  },
+  "22084": {
+    "id": "22084",
+    "name": "Damnation Rider",
+    "picture": "Apocalypse_Rider_B",
+    "hidden_until": "1489078800000",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["6"],
+    "health": 26,
+    "attack": 5,
+    "cost": 3,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 2,
+      },
+      {
+        "id": "burn",
+        "x": 4,
+      },
+      {
+        "id": "leech",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 27,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "burn",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+        ],
+      },
+      "3": {
+        "attack": 6,
+        "health": 28,
+        "skill": [],
+      },
+      "4": {
+        "health": 29,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "burn",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "burn",
+            "x": 5,
+          },
+          {
+            "id": "leech",
+            "x": 6,
+          },
+        ],
+      },
+    }
+  },
+  "2085": {
+    "id": "2085",
+    "name": "Faithstay Supplier",
+    "picture": "Angel_Armory_A",
+    "hidden_until": "1489078800000",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["6"],
+    "health": 11,
+    "attack": 2,
+    "cost": 2,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 1,
+      },
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "6",
+      },
+      {
+        "id": "protect",
+        "x": 2,
+        "y": "6",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 12,
+        "skill": [],
+      },
+      "3": {
+        "attack": 3,
+        "health": 13,
+        "skill": [],
+      },
+      "4": {
+        "health": 14,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 2,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "6",
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "6",
+          },
+        ],
+      },
+    }
+  },
+  "12085": {
+    "id": "12085",
+    "name": "Faithstay Commisioner",
+    "picture": "Angel_Armory_A",
+    "hidden_until": "1489078800000",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["6"],
+    "health": 14,
+    "attack": 4,
+    "cost": 2,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 2,
+      },
+      {
+        "id": "rally",
+        "x": 3,
+        "y": "6",
+      },
+      {
+        "id": "protect",
+        "x": 3,
+        "y": "6",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 15,
+        "skill": [],
+      },
+      "3": {
+        "attack": 5,
+        "health": 16,
+        "skill": [],
+      },
+      "4": {
+        "health": 17,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "6",
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "6",
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "6",
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "6",
+          },
+        ],
+      },
+    }
+  },
+  "22085": {
+    "id": "22085",
+    "name": "Faithstay Armorer",
+    "picture": "Angel_Armory_B",
+    "hidden_until": "1489078800000",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["6"],
+    "health": 18,
+    "attack": 5,
+    "cost": 2,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 3,
+      },
+      {
+        "id": "rally",
+        "x": 4,
+        "y": "6",
+      },
+      {
+        "id": "protect",
+        "x": 4,
+        "y": "6",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 6,
+        "health": 19,
+        "skill": [],
+      },
+      "3": {
+        "attack": 7,
+        "skill": [],
+      },
+      "4": {
+        "health": 20,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 4,
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "6",
+          },
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "6",
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 4,
+          },
+          {
+            "id": "rally",
+            "x": 5,
+            "y": "6",
+          },
+          {
+            "id": "protect",
+            "x": 5,
+            "y": "6",
+          },
+        ],
+      },
+    }
+  },
+  "2086": {
+    "id": "2086",
+    "name": "Rimelight Crusader",
+    "picture": "Ice_Angel_A",
+    "hidden_until": "1489078800000",
+    "rarity": "4",
+    "set": "2000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["6"],
+    "health": 23,
+    "attack": 2,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "frost",
+        "x": 1,
+      },
+      {
+        "id": "burn",
+        "x": 1,
+      },
+      {
+        "id": "flurry",
+        "c": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "frost",
+            "x": 1,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "3": {
+        "health": 24,
+        "skill": [],
+      },
+      "4": {
+        "health": 25,
+        "skill": [],
+      },
+      "5": {
+        "health": 26,
+        "skill": [
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "6": {
+        "health": 27,
+        "skill": [],
+      },
+    }
+  },
+  "12086": {
+    "id": "12086",
+    "name": "Rimelight Raider",
+    "picture": "Ice_Angel_A",
+    "hidden_until": "1489078800000",
+    "rarity": "4",
+    "set": "2000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["6"],
+    "health": 27,
+    "attack": 2,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "frost",
+        "x": 2,
+      },
+      {
+        "id": "burn",
+        "x": 1,
+      },
+      {
+        "id": "flurry",
+        "c": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 3,
+        "health": 28,
+        "skill": [],
+      },
+      "3": {
+        "health": 29,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+      "5": {
+        "health": 30,
+        "skill": [],
+      },
+      "6": {
+        "health": 31,
+        "skill": [
+          {
+            "id": "frost",
+            "x": 3,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+    }
+  },
+  "22086": {
+    "id": "22086",
+    "name": "Rimelight Corsair",
+    "picture": "Ice_Angel_B",
+    "hidden_until": "1489078800000",
+    "rarity": "4",
+    "set": "2000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["6"],
+    "health": 31,
+    "attack": 3,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "frost",
+        "x": 3,
+      },
+      {
+        "id": "burn",
+        "x": 2,
+      },
+      {
+        "id": "flurry",
+        "c": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 32,
+        "skill": [],
+      },
+      "3": {
+        "attack": 4,
+        "health": 33,
+        "skill": [],
+      },
+      "4": {
+        "health": 34,
+        "skill": [],
+      },
+      "5": {
+        "health": 35,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "frost",
+            "x": 4,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+          {
+            "id": "flurry",
+            "c": 2,
+          },
+        ],
+      },
+    }
+  },
   "500": {
     "id": "500",
     "name": "Arcane Dustling",
@@ -136455,7 +137247,7 @@ var CARDS = {
     "card_type": "2",
     "type": "8",
     "sub_type": [],
-    "health": 4,
+    "health": 1,
     "attack": 1,
     "cost": 0,
     "maxLevel": 6,
@@ -136472,7 +137264,7 @@ var CARDS = {
     "upgrades": {
       "2": {
         "attack": 2,
-        "health": 5,
+        "health": 2,
         "skill": [
           {
             "id": "evade",
@@ -136486,7 +137278,7 @@ var CARDS = {
       },
       "3": {
         "attack": 3,
-        "health": 6,
+        "health": 3,
         "skill": [
           {
             "id": "evade",
@@ -136512,7 +137304,7 @@ var CARDS = {
         ],
       },
       "5": {
-        "health": 7,
+        "health": 4,
         "skill": [
           {
             "id": "evade",
@@ -136526,7 +137318,7 @@ var CARDS = {
       },
       "6": {
         "attack": 5,
-        "health": 8,
+        "health": 5,
         "skill": [
           {
             "id": "evade",
@@ -136666,22 +137458,7 @@ var CARDS = {
   "9999": {
     "id": "9999",
     "name": "Unused Art",
-    "picture": "Angel_Armory_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19999": {
-    "id": "19999",
-    "name": "Unused Art",
-    "picture": "Angel_Armory_B",
+    "picture": "Aria_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -136696,7 +137473,7 @@ var CARDS = {
   "9998": {
     "id": "9998",
     "name": "Unused Art",
-    "picture": "Apocalypse_Rider_A",
+    "picture": "Eagle_Shipeater_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -136711,7 +137488,7 @@ var CARDS = {
   "19998": {
     "id": "19998",
     "name": "Unused Art",
-    "picture": "Apocalypse_Rider_B",
+    "picture": "Eagle_Shipeater_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -136726,22 +137503,7 @@ var CARDS = {
   "9997": {
     "id": "9997",
     "name": "Unused Art",
-    "picture": "Aria_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9996": {
-    "id": "9996",
-    "name": "Unused Art",
-    "picture": "Eagle_Shipeater_A",
+    "picture": "Elyse_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -136756,7 +137518,7 @@ var CARDS = {
   "19996": {
     "id": "19996",
     "name": "Unused Art",
-    "picture": "Eagle_Shipeater_B",
+    "picture": "Frost_Bite_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -136771,7 +137533,22 @@ var CARDS = {
   "9995": {
     "id": "9995",
     "name": "Unused Art",
-    "picture": "Elyse_A",
+    "picture": "General_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9994": {
+    "id": "9994",
+    "name": "Unused Art",
+    "picture": "Justice_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -136786,7 +137563,7 @@ var CARDS = {
   "19994": {
     "id": "19994",
     "name": "Unused Art",
-    "picture": "Frost_Bite_B",
+    "picture": "Justice_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -136798,23 +137575,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9993": {
-    "id": "9993",
-    "name": "Unused Art",
-    "picture": "General_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29992": {
-    "id": "29992",
+  "29993": {
+    "id": "29993",
     "name": "Unused Art",
     "picture": "Monster_C",
     "rarity": "0",
@@ -136828,10 +137590,25 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19991": {
-    "id": "19991",
+  "19992": {
+    "id": "19992",
     "name": "Unused Art",
     "picture": "Mythic_Dragon_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9991": {
+    "id": "9991",
+    "name": "Unused Art",
+    "picture": "Mythic_Seafolk_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -136846,7 +137623,7 @@ var CARDS = {
   "9990": {
     "id": "9990",
     "name": "Unused Art",
-    "picture": "Mythic_Seafolk_A",
+    "picture": "Oda_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -136858,10 +137635,25 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9989": {
-    "id": "9989",
+  "19990": {
+    "id": "19990",
     "name": "Unused Art",
-    "picture": "Oda_A",
+    "picture": "Oda_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "29990": {
+    "id": "29990",
+    "name": "Unused Art",
+    "picture": "Oda_C",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -136876,7 +137668,7 @@ var CARDS = {
   "19989": {
     "id": "19989",
     "name": "Unused Art",
-    "picture": "Oda_B",
+    "picture": "Promo_Dragon_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -136888,10 +137680,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29989": {
-    "id": "29989",
+  "9988": {
+    "id": "9988",
     "name": "Unused Art",
-    "picture": "Oda_C",
+    "picture": "Seraph_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -136906,7 +137698,7 @@ var CARDS = {
   "19988": {
     "id": "19988",
     "name": "Unused Art",
-    "picture": "Promo_Dragon_B",
+    "picture": "Seraph_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -136921,22 +137713,7 @@ var CARDS = {
   "9987": {
     "id": "9987",
     "name": "Unused Art",
-    "picture": "Seraph_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19987": {
-    "id": "19987",
-    "name": "Unused Art",
-    "picture": "Seraph_B",
+    "picture": "Tarian_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -136951,7 +137728,7 @@ var CARDS = {
   "9986": {
     "id": "9986",
     "name": "Unused Art",
-    "picture": "Tarian_A",
+    "picture": "Tremor_Wurm_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -136966,7 +137743,7 @@ var CARDS = {
   "9985": {
     "id": "9985",
     "name": "Unused Art",
-    "picture": "Tremor_Wurm_A",
+    "picture": "Unused1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -136981,7 +137758,7 @@ var CARDS = {
   "9984": {
     "id": "9984",
     "name": "Unused Art",
-    "picture": "Unused1_A",
+    "picture": "Unused2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -136996,7 +137773,7 @@ var CARDS = {
   "9983": {
     "id": "9983",
     "name": "Unused Art",
-    "picture": "Unused2_A",
+    "picture": "Unused3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -137011,7 +137788,7 @@ var CARDS = {
   "9982": {
     "id": "9982",
     "name": "Unused Art",
-    "picture": "Unused3_A",
+    "picture": "Ursurio_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -137026,7 +137803,7 @@ var CARDS = {
   "9981": {
     "id": "9981",
     "name": "Unused Art",
-    "picture": "Ursurio_A",
+    "picture": "Void_Abomination_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -137041,7 +137818,22 @@ var CARDS = {
   "9980": {
     "id": "9980",
     "name": "Unused Art",
-    "picture": "Void_Abomination_A",
+    "picture": "Wolf_Demon_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19980": {
+    "id": "19980",
+    "name": "Unused Art",
+    "picture": "Wolf_Demon_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
