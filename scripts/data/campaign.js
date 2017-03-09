@@ -1073,7 +1073,7 @@ var CAMPAIGNS = {
   },
   "1117": {
     "id": "1117",
-    "name": "Disciple",
+    "name": "Dyrnwyn's Test",
     "location_id": "8",
     "battleground_id": "2006",
     "missions": ["5521","5522","5523","5524"]
@@ -40050,7 +40050,7 @@ var MISSIONS = {
   },
   "5521": {
     "id": "5521",
-    "name": "Test 1",
+    "name": "Wisdom",
     "commander": {
         "id": "364"
     },
@@ -40059,10 +40059,10 @@ var MISSIONS = {
         "id": "5076"
       },
       {
-        "id": "5076"
+        "id": "6040"
       },
       {
-        "id": "7039"
+        "id": "5116"
       },
       {
         "id": "7039"
@@ -40110,7 +40110,7 @@ var MISSIONS = {
   },
   "5522": {
     "id": "5522",
-    "name": "Test 2",
+    "name": "Justice",
     "commander": {
         "id": "364"
     },
@@ -40122,7 +40122,7 @@ var MISSIONS = {
         "id": "5076"
       },
       {
-        "id": "7039"
+        "id": "5116"
       },
       {
         "id": "7039"
@@ -40170,19 +40170,19 @@ var MISSIONS = {
   },
   "5523": {
     "id": "5523",
-    "name": "Test 3",
+    "name": "Temperance",
     "commander": {
         "id": "364"
     },
     "deck": [
       {
-        "id": "5076"
+        "id": "5116"
       },
       {
         "id": "5076"
       },
       {
-        "id": "7039"
+        "id": "6040"
       },
       {
         "id": "7039"
@@ -40230,7 +40230,7 @@ var MISSIONS = {
   },
   "5524": {
     "id": "5524",
-    "name": "Test 4",
+    "name": "Courage",
     "commander": {
         "id": "364"
     },
@@ -40242,10 +40242,10 @@ var MISSIONS = {
         "id": "5076"
       },
       {
-        "id": "7039"
+        "id": "5116"
       },
       {
-        "id": "7039"
+        "id": "6040"
       },
       {
         "id": "5074"

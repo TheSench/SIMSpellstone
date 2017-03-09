@@ -7359,9 +7359,9 @@
     <id>364</id>
     <card_type>1</card_type>
     <name>Dyrnwyn's Spirit</name>
-    <portrait>necromancer</portrait>
+    <portrait>seraph</portrait>
     <attack>0</attack>
-    <health>49</health>
+    <health>79</health>
     <cost />
     <rarity>4</rarity>
     <skill id="imbue" x="1" all="1" s="burn" />
@@ -7371,7 +7371,7 @@
     <set>9999</set>
     <upgrade>
       <level>2</level>
-      <health>53</health>
+      <health>83</health>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -7382,21 +7382,21 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>61</health>
+      <health>91</health>
       <skill id="imbue" x="3" all="1" s="burn" />
       <skill id="heal" x="3" all="1" />
       <skill id="protect" x="2" all="1" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>65</health>
+      <health>95</health>
       <skill id="imbue" x="4" all="1" s="burn" />
       <skill id="heal" x="4" all="1" />
       <skill id="protect" x="3" all="1" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>70</health>
+      <health>99</health>
       <skill id="imbue" x="5" all="1" s="burn" />
       <skill id="heal" x="5" all="1" />
       <skill id="protect" x="4" all="1" />

@@ -1558,7 +1558,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000" number="4" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000,4000" number="4" />
     </cards>
   </store_item>
   <store_item>

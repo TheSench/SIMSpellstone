@@ -14370,4 +14370,137 @@
       <skill id="frost" x="1" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5116</id>
+    <card_type>2</card_type>
+    <name>Justice</name>
+    <picture>Justice_A</picture>
+    <asset_bundle>88</asset_bundle>
+    <hidden_until_time>1489078800</hidden_until_time>
+    <attack>2</attack>
+    <health>16</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="2" />
+    <skill id="counter" x="3" />
+    <skill id="jam" c="5" />
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="2" />
+      <skill id="counter" x="3" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="3" />
+      <skill id="counter" x="4" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>19</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15116</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Resolute Justice</name>
+    <picture>Justice_A</picture>
+    <asset_bundle>88</asset_bundle>
+    <hidden_until_time>1489078800</hidden_until_time>
+    <attack>2</attack>
+    <health>19</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="3" />
+    <skill id="counter" x="5" />
+    <skill id="jam" c="4" />
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>20</health>
+      <attack>3</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="4" />
+      <skill id="counter" x="5" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="4" />
+      <skill id="counter" x="5" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>22</health>
+      <skill id="armored" x="4" />
+      <skill id="counter" x="6" />
+      <skill id="jam" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25116</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Indomitable Justice</name>
+    <picture>Justice_B</picture>
+    <asset_bundle>88</asset_bundle>
+    <hidden_until_time>1489078800</hidden_until_time>
+    <attack>3</attack>
+    <health>22</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="5" />
+    <skill id="counter" x="6" />
+    <skill id="jam" c="3" />
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>24</health>
+      <skill id="armored" x="5" />
+      <skill id="counter" x="7" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="6" />
+      <skill id="counter" x="8" />
+      <skill id="jam" c="3" />
+    </upgrade>
+  </unit>
 </root>

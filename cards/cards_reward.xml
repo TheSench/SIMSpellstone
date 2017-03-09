@@ -9355,7 +9355,7 @@
     <id>2086</id>
     <card_type>2</card_type>
     <name>Rimelight Crusader</name>
-    <picture>Ice_Angel_A</picture>
+    <picture>Angel_Ice_Angel_A</picture>
     <asset_bundle>88</asset_bundle>
     <hidden_until_time>1489078800</hidden_until_time>
     <attack>2</attack>
@@ -9399,7 +9399,7 @@
     <card_type>2</card_type>
     <fusion_level>1</fusion_level>
     <name>Rimelight Raider</name>
-    <picture>Ice_Angel_A</picture>
+    <picture>Angel_Ice_Angel_A</picture>
     <asset_bundle>88</asset_bundle>
     <hidden_until_time>1489078800</hidden_until_time>
     <attack>2</attack>
@@ -9444,7 +9444,7 @@
     <card_type>2</card_type>
     <fusion_level>2</fusion_level>
     <name>Rimelight Corsair</name>
-    <picture>Ice_Angel_B</picture>
+    <picture>Angel_Ice_Angel_B</picture>
     <asset_bundle>88</asset_bundle>
     <hidden_until_time>1489078800</hidden_until_time>
     <attack>3</attack>

@@ -13821,6 +13821,134 @@
     </upgrade>
   </unit>
   <unit>
+    <id>7111</id>
+    <card_type>2</card_type>
+    <name>Aurai</name>
+    <picture>Eagle_Shipeater_A</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1489251600</hidden_until_time>
+    <attack>5</attack>
+    <health>18</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="1" />
+    <skill id="rally" x="3" y="3" />
+    <skill id="jam" c="6" />
+    <type>3</type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="1" />
+      <skill id="rally" x="3" y="3" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="1" />
+      <skill id="rally" x="4" y="3" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>6</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17111</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Aurai of the Gales</name>
+    <picture>Eagle_Shipeater_A</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1489251600</hidden_until_time>
+    <attack>6</attack>
+    <health>21</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="1" />
+    <skill id="rally" x="4" y="3" />
+    <skill id="jam" c="4" />
+    <type>3</type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="2" />
+      <skill id="rally" x="4" y="3" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="2" />
+      <skill id="rally" x="5" y="3" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>7</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27111</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Aurai, the Tempest</name>
+    <picture>Eagle_Shipeater_B</picture>
+    <asset_bundle>85</asset_bundle>
+    <hidden_until_time>1489251600</hidden_until_time>
+    <attack>7</attack>
+    <health>24</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="2" />
+    <skill id="rally" x="5" y="3" />
+    <skill id="jam" c="3" />
+    <type>3</type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="2" />
+      <skill id="rally" x="6" y="3" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="3" />
+      <skill id="rally" x="7" y="3" />
+      <skill id="jam" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>7112</id>
     <card_type>2</card_type>
     <name>Fountain Guardian</name>
@@ -14317,6 +14445,126 @@
       <level>5</level>
       <skill id="armored" x="5" />
       <skill id="rally" x="5" all="1" y="3" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7116</id>
+    <card_type>2</card_type>
+    <name>Watchful Hexhound</name>
+    <picture>Wolf_Demon_A</picture>
+    <asset_bundle>88</asset_bundle>
+    <hidden_until_time>1489078800</hidden_until_time>
+    <attack>6</attack>
+    <health>20</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="corrosive" x="3" />
+    <skill id="enfeeble" x="1" all="1" />
+    <skill id="berserk" x="2" />
+    <type>3</type>
+    <sub_type>6</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>22</health>
+      <skill id="corrosive" x="4" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="4" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17116</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Wary Hexhound</name>
+    <picture>Wolf_Demon_A</picture>
+    <asset_bundle>88</asset_bundle>
+    <hidden_until_time>1489078800</hidden_until_time>
+    <attack>7</attack>
+    <health>23</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="corrosive" x="4" />
+    <skill id="enfeeble" x="1" all="1" />
+    <skill id="berserk" x="3" />
+    <type>3</type>
+    <sub_type>6</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>8</attack>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="corrosive" x="5" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>9</attack>
+      <skill id="corrosive" x="5" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27116</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Hostile Hexhound</name>
+    <picture>Wolf_Demon_B</picture>
+    <asset_bundle>88</asset_bundle>
+    <hidden_until_time>1489078800</hidden_until_time>
+    <attack>9</attack>
+    <health>26</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="corrosive" x="5" />
+    <skill id="enfeeble" x="1" all="1" />
+    <skill id="berserk" x="4" />
+    <type>3</type>
+    <sub_type>6</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>10</attack>
+      <health>28</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="corrosive" x="6" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="6" />
+      <skill id="enfeeble" x="2" all="1" />
       <skill id="berserk" x="5" />
     </upgrade>
   </unit>

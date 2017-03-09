@@ -14309,4 +14309,124 @@
       <skill id="flurry" c="4" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6116</id>
+    <card_type>2</card_type>
+    <name>Otherworldly Archer</name>
+    <picture>Demon_Archer_A</picture>
+    <asset_bundle>88</asset_bundle>
+    <hidden_until_time>1489078800</hidden_until_time>
+    <attack>4</attack>
+    <health>14</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="strike" x="2" />
+    <skill id="strike" x="1" />
+    <type>2</type>
+    <sub_type>6</sub_type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="strike" x="2" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>17</health>
+      <skill id="strike" x="3" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <desc>The spirits of the past guide the hands of the present.</desc>
+  </unit>
+  <unit>
+    <id>16116</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Uncanny Archer</name>
+    <picture>Demon_Archer_A</picture>
+    <asset_bundle>88</asset_bundle>
+    <hidden_until_time>1489078800</hidden_until_time>
+    <attack>4</attack>
+    <health>17</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="strike" x="3" />
+    <skill id="strike" x="2" />
+    <type>2</type>
+    <sub_type>6</sub_type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>19</health>
+      <skill id="evade" x="1" />
+      <skill id="strike" x="3" />
+      <skill id="strike" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="1" />
+      <skill id="strike" x="4" />
+      <skill id="strike" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>20</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26116</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Archer of Two Worlds</name>
+    <picture>Demon_Archer_B</picture>
+    <asset_bundle>88</asset_bundle>
+    <hidden_until_time>1489078800</hidden_until_time>
+    <attack>4</attack>
+    <health>20</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="strike" x="4" />
+    <skill id="strike" x="4" />
+    <type>2</type>
+    <sub_type>6</sub_type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>21</health>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="2" />
+      <skill id="strike" x="4" />
+      <skill id="strike" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="2" />
+      <skill id="strike" x="5" />
+      <skill id="strike" x="5" />
+    </upgrade>
+  </unit>
 </root>
