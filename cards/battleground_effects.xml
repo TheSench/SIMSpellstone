@@ -89,8 +89,8 @@
     <id>106</id>
     <name>Angelic Legion</name>
     <desc>Angels have risen to fight, gaining Legion equal to 50% of the their base Attack.</desc>
-    <web_picture>filter_angel_64.png</web_picture>
-    <icon>filter_angel_64</icon>
+    <icon>filter_angel2_64</icon>
+    <icon_bundle>87</icon_bundle>
     <effect>
       <add_skill id="legion" mult="0.5" base="attack" y="6" />
       <skill id="displayEffect" trigger="onSkill" y="6" s="legion">

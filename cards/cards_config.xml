@@ -454,7 +454,7 @@
   <skillType>
     <id>mark</id>
     <order>500</order>
-    <icon>hinder</icon>
+    <icon>hex</icon>
     <name>Mark</name>
     <upkeep>1</upkeep>
     <!-- This skill occurs before all other actions -->
