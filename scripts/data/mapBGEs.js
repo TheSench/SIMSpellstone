@@ -363,5 +363,281 @@ var MAP_BATTLEGROUNDS = {
               ]
           }
         ]
+    },
+    "3002": {
+        "id": "3002",
+        "name": "Frigore Relic Hunt",
+        "desc": "It's a quest for arcane treasure! Gather magical items and level them up to help you in battles on the Frigore map!",
+        "location_id": "8",
+        "effects": [
+          {
+              "id": "5",
+              "name": "Duskwillow Aegis",
+              "upgrades": [
+                {
+                    "desc": "",
+                    "effect": [
+
+                    ]
+                },
+                {
+                    "desc": "All of your creatures gain Armor 1 each turn.",
+                    "name": "Duskwillow Aegis",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "imbue",
+                          "s": "armored",
+                          "x": 1,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures gain Armor 2 each turn.",
+                    "name": "Duskwillow Aegis",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "imbue",
+                          "s": "armored",
+                          "x": 2,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures gain Armor 3 each turn.",
+                    "name": "Duskwillow Aegis",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "imbue",
+                          "s": "armored",
+                          "x": 3,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures gain Armor 4 each turn.",
+                    "name": "Duskwillow Aegis",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "imbue",
+                          "s": "armored",
+                          "x": 4,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures gain Armor 5 each turn.",
+                    "name": "Duskwillow Aegis",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "imbue",
+                          "s": "armored",
+                          "x": 5,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                }
+              ]
+          },
+          {
+              "id": "6",
+              "name": "Blazing Dyrnwyn",
+              "upgrades": [
+                {
+                    "desc": "",
+                    "effect": [
+
+                    ]
+                },
+                {
+                    "desc": "All of your creatures gain Scorch 1 each turn.",
+                    "name": "Blazing Dyrnwyn",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "imbue",
+                          "s": "burn",
+                          "x": 1,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures gain Scorch 2 each turn.",
+                    "name": "Blazing Dyrnwyn",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "imbue",
+                          "s": "burn",
+                          "x": 2,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures gain Scorch 3 each turn.",
+                    "name": "Blazing Dyrnwyn",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "imbue",
+                          "s": "burn",
+                          "x": 3,
+                          "all": "3",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures gain Scorch 4 each turn.",
+                    "name": "Blazing Dyrnwyn",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "imbue",
+                          "s": "burn",
+                          "x": 4,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures gain Scorch 6 each turn.",
+                    "name": "Blazing Dyrnwyn",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "imbue",
+                          "s": "burn",
+                          "x": 6,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures gain Scorch 8 each turn.",
+                    "name": "Blazing Dyrnwyn",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "imbue",
+                          "s": "burn",
+                          "x": 8,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                }
+              ]
+          },
+          {
+              "id": "7",
+              "name": "Life Water",
+              "upgrades": [
+                {
+                    "desc": "",
+                    "effect": [
+
+                    ]
+                },
+                {
+                    "desc": "All of your creatures are Healed for 1 each turn.",
+                    "name": "Life Water",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "heal",
+                          "x": 1,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures are Healed for 2 each turn.",
+                    "name": "Life Water",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "heal",
+                          "x": 2,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures are Healed for 3 each turn.",
+                    "name": "Life Water",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "heal",
+                          "x": 3,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures are Healed for 4 each turn.",
+                    "name": "Life Water",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "heal",
+                          "x": 4,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures are Healed for 5 each turn.",
+                    "name": "Life Water",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "heal",
+                          "x": 5,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures are Healed for 6 each turn.",
+                    "name": "Life Water",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "heal",
+                          "x": 6,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                }
+              ]
+          }
+        ]
     }
 };
