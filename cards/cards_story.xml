@@ -4536,4 +4536,332 @@
       <skill id="protect" x="15" y="8" />
     </upgrade>
   </unit>
+  <!-- Valhalla's Fall Dungeon -->
+  <unit>
+    <id>8048</id>
+    <card_type>2</card_type>
+    <name>Deadeye Sentinel</name>
+    <picture>Cherub_B</picture>
+    <asset_bundle>8</asset_bundle>
+    <attack>2</attack>
+    <health>12</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="1" />
+    <skill id="strike" x="1" />
+    <skill id="weaken" x="1" />
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>14</health>
+      <skill id="armored" x="1" />
+      <skill id="strike" x="2" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+      <attack>3</attack>
+      <skill id="armored" x="1" />
+      <skill id="strike" x="3" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>19</health>
+      <skill id="armored" x="2" />
+      <skill id="strike" x="5" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>22</health>
+      <attack>4</attack>
+      <skill id="armored" x="2" />
+      <skill id="strike" x="6" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>25</health>
+      <skill id="armored" x="3" />
+      <skill id="strike" x="8" />
+      <skill id="weaken" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8049</id>
+    <card_type>2</card_type>
+    <name>Spirit of the Free</name>
+    <picture>The_Tinkerer_A</picture>
+    <asset_bundle>47</asset_bundle>
+    <attack>5</attack>
+    <health>16</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="heal" x="1" all="1" y="6" />
+    <skill id="protect" x="1" all="1" y="6" />
+    <skill id="frost" x="1" />
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+      <skill id="heal" x="2" all="1" y="6" />
+      <skill id="protect" x="2" all="1" y="6" />
+      <skill id="frost" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>21</health>
+      <attack>6</attack>
+      <skill id="heal" x="2" all="1" y="6" />
+      <skill id="protect" x="2" all="1" y="6" />
+      <skill id="frost" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>24</health>
+      <skill id="heal" x="3" all="1" y="6" />
+      <skill id="protect" x="3" all="1" y="6" />
+      <skill id="frost" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>27</health>
+      <attack>7</attack>
+      <skill id="heal" x="3" all="1" y="6" />
+      <skill id="protect" x="3" all="1" y="6" />
+      <skill id="frost" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>30</health>
+      <skill id="heal" x="4" all="1" y="6" />
+      <skill id="protect" x="4" all="1" y="6" />
+      <skill id="frost" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8050</id>
+    <card_type>2</card_type>
+    <name>Heart of Valhalla</name>
+    <picture>Angel_Muscle_Monster_A</picture>
+    <asset_bundle>68</asset_bundle>
+    <attack>2</attack>
+    <health>14</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="pierce" x="1" />
+    <skill id="poison" x="1" />
+    <skill id="berserk" x="1" />
+    <type>2</type>
+    <sub_type>6</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>15</health>
+      <skill id="pierce" x="2" />
+      <skill id="poison" x="2" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>16</health>
+      <attack>3</attack>
+      <skill id="pierce" x="3" />
+      <skill id="poison" x="2" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>17</health>
+      <skill id="pierce" x="4" />
+      <skill id="poison" x="3" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>18</health>
+      <attack>4</attack>
+      <skill id="pierce" x="5" />
+      <skill id="poison" x="3" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>20</health>
+      <skill id="pierce" x="6" />
+      <skill id="poison" x="4" />
+      <skill id="berserk" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>851</id>
+    <card_type>2</card_type>
+    <name>Wings of Valhalla</name>
+    <picture>Legendary_Midnight_Demon_Angel_A</picture>
+    <asset_bundle>68</asset_bundle>
+    <attack>6</attack>
+    <health>30</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="pierce" x="2" />
+    <skill id="nullify" x="2" />
+    <skill id="poison" x="2" />
+    <type>2</type>
+    <sub_type>6</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>32</health>
+      <attack>7</attack>
+      <skill id="pierce" x="3" />
+      <skill id="nullify" x="3" />
+      <skill id="poison" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>34</health>
+      <attack>8</attack>
+      <skill id="pierce" x="4" />
+      <skill id="nullify" x="3" />
+      <skill id="poison" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>36</health>
+      <attack>9</attack>
+      <skill id="pierce" x="4" />
+      <skill id="nullify" x="4" />
+      <skill id="poison" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>38</health>
+      <skill id="pierce" x="5" />
+      <skill id="nullify" x="5" />
+      <skill id="poison" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>10</attack>
+      <health>40</health>
+      <skill id="pierce" x="6" />
+      <skill id="nullify" x="6" />
+      <skill id="poison" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>852</id>
+    <card_type>2</card_type>
+    <name>Shield of the Fallen</name>
+    <picture>Protective_Angel_A</picture>
+    <asset_bundle>68</asset_bundle>
+    <attack>3</attack>
+    <health>35</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="2" />
+    <skill id="counter" x="3" />
+    <skill id="corrosive" x="3" />
+    <type>3</type>
+    <sub_type>6</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>36</health>
+      <skill id="armored" x="2" />
+      <skill id="counter" x="4" />
+      <skill id="corrosive" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>38</health>
+      <attack>4</attack>
+      <skill id="armored" x="3" />
+      <skill id="counter" x="5" />
+      <skill id="corrosive" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>39</health>
+      <skill id="armored" x="3" />
+      <skill id="counter" x="6" />
+      <skill id="corrosive" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>41</health>
+      <attack>5</attack>
+      <skill id="armored" x="4" />
+      <skill id="counter" x="7" />
+      <skill id="corrosive" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>43</health>
+      <skill id="armored" x="5" />
+      <skill id="counter" x="8" />
+      <skill id="corrosive" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>853</id>
+    <card_type>2</card_type>
+    <name>Pious Acolyte</name>
+    <picture>Angel_Mage_B</picture>
+    <asset_bundle>47</asset_bundle>
+    <attack>4</attack>
+    <health>25</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="1" all="1" y="6" />
+    <skill id="weaken" x="1" />
+    <skill id="weaken" x="1" />
+    <type>3</type>
+    <sub_type>6</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>27</health>
+      <attack>5</attack>
+      <skill id="rally" x="2" all="1" y="6" />
+      <skill id="weaken" x="1" />
+      <skill id="weaken" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>29</health>
+      <attack>6</attack>
+      <skill id="rally" x="2" all="1" y="6" />
+      <skill id="weaken" x="2" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>31</health>
+      <skill id="rally" x="3" all="1" y="6" />
+      <skill id="weaken" x="3" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>33</health>
+      <attack>7</attack>
+      <skill id="rally" x="3" all="1" y="6" />
+      <skill id="weaken" x="4" />
+      <skill id="weaken" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>36</health>
+      <skill id="rally" x="4" all="1" y="6" />
+      <skill id="weaken" x="5" />
+      <skill id="weaken" x="5" />
+    </upgrade>
+  </unit>
 </root>

@@ -2284,6 +2284,14 @@
     <resource card_id="15116" number="2" />
   </fusion_recipe>
   <fusion_recipe>
+    <card_id>15117</card_id>
+    <resource card_id="5117" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25117</card_id>
+    <resource card_id="15117" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
     <card_id>15120</card_id>
     <resource card_id="5120" number="2" />
   </fusion_recipe>
@@ -3219,6 +3227,14 @@
   <fusion_recipe>
     <card_id>26116</card_id>
     <resource card_id="16116" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16117</card_id>
+    <resource card_id="6117" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26117</card_id>
+    <resource card_id="16117" number="2" />
   </fusion_recipe>
   <!-- WYLD PREMIUM SET BEGIN -->
   <fusion_recipe>
@@ -4156,6 +4172,14 @@
   <fusion_recipe>
     <card_id>27116</card_id>
     <resource card_id="17116" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17117</card_id>
+    <resource card_id="7117" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27117</card_id>
+    <resource card_id="17117" number="2" />
   </fusion_recipe>
   <!-- END SET 3000 - Premium -->
   <!-- START SET 8000 - Story Element Assaults -->

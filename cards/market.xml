@@ -1835,6 +1835,21 @@
       <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" set="3000,4000" />
     </cards>
   </store_item>
+  <store_item>
+    <id>3049</id>
+    <name>Double Angel Epic Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two guaranteed ^c0DFFEpic^cFFFF+ Angel cards from Premium set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="6" set="3000,4000" />
+    </cards>
+  </store_item>
   <!-- =============================== -->
   <!-- ==== Emporium Market Items ==== -->
   <!-- =============================== -->
@@ -3215,5 +3230,22 @@
     <cards>
       <card min_level="1" max_level="1" unit_id="6055" display_card_id="6055" />
     </cards>
+  </store_item>
+  <store_item>
+    <id>5064</id>
+    <name>Double Angel Epic Pack</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <show_desc>1</show_desc>
+    <desc>Gives two guaranteed ^c0DFFEpic^cFFFF+ Angel cards from Premium set. May be purchased 5 times!</desc>
+    <asset_prefab>event_021_two_epics</asset_prefab>
+    <bundle>84</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>100</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3049</pack>
   </store_item>
 </root>

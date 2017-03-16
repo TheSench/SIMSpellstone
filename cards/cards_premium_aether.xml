@@ -14518,6 +14518,128 @@
     </upgrade>
   </unit>
   <unit>
+    <id>5117</id>
+    <card_type>2</card_type>
+    <name>Spark Chronicler</name>
+    <picture>Fortune_Angel_A</picture>
+    <asset_bundle>88</asset_bundle>
+    <hidden_until_time>1489683600</hidden_until_time>
+    <attack>4</attack>
+    <health>12</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="2" />
+    <skill id="strike" x="3" />
+    <skill id="jam" c="6" />
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="counter" x="2" />
+      <skill id="strike" x="3" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>13</health>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>15</health>
+      <skill id="counter" x="2" />
+      <skill id="strike" x="4" />
+      <skill id="jam" c="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15117</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Bolt Chronicler</name>
+    <picture>Fortune_Angel_A</picture>
+    <asset_bundle>88</asset_bundle>
+    <hidden_until_time>1489683600</hidden_until_time>
+    <attack>5</attack>
+    <health>15</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="3" />
+    <skill id="strike" x="4" />
+    <skill id="jam" c="4" />
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>16</health>
+      <skill id="counter" x="3" />
+      <skill id="strike" x="5" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>17</health>
+      <skill id="counter" x="4" />
+      <skill id="strike" x="5" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>18</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25117</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Fulmination Chronicler</name>
+    <picture>Fortune_Angel_B</picture>
+    <asset_bundle>88</asset_bundle>
+    <hidden_until_time>1489683600</hidden_until_time>
+    <attack>7</attack>
+    <health>18</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="4" />
+    <skill id="strike" x="5" />
+    <skill id="jam" c="3" />
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+      <skill id="counter" x="4" />
+      <skill id="strike" x="6" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>8</attack>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="5" />
+      <skill id="strike" x="7" />
+      <skill id="jam" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>5120</id>
     <card_type>2</card_type>
     <name>Seraph of Stone Rise</name>

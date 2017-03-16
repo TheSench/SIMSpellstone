@@ -136,7 +136,7 @@
     <order>60</order>
     <icon>valor</icon>
     <name>Valor</name>
-    <desc>First time this activates, gains Attack permanently if opposing card has more Attack.</desc>
+    <desc>First time this activates, gains Attack permanently if opposing creature has more Attack.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <balance_points>3</balance_points>
   </skillType>
