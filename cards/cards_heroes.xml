@@ -7528,43 +7528,43 @@
     <name>Soul of the Brave</name>
     <portrait>lightwisp</portrait>
     <attack>0</attack>
-    <health>42</health>
+    <health>52</health>
     <rarity>4</rarity>
-    <skill id="imbue" x="1" s="nullify" />
+    <skill id="imbue" x="1" all="1" s="nullify" />
     <skill id="rally" x="1" all="1" />
     <skill id="weaken" x="1" />
     <type>1</type>
     <set>9999</set>
     <upgrade>
       <level>2</level>
-      <health>43</health>
+      <health>53</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>45</health>
-      <skill id="imbue" x="1" s="nullify" />
+      <health>55</health>
+      <skill id="imbue" x="1" all="1" s="nullify" />
       <skill id="rally" x="1" all="1" />
       <skill id="weaken" x="2" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>46</health>
-      <skill id="imbue" x="2" s="nullify" />
+      <health>56</health>
+      <skill id="imbue" x="2" all="1" s="nullify" />
       <skill id="rally" x="1" all="1" />
       <skill id="weaken" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>48</health>
-      <skill id="imbue" x="2" s="nullify" />
-      <skill id="rally" x="2" all="1" />
+      <health>68</health>
+      <skill id="imbue" x="2" all="1" s="nullify" />
+      <skill id="rally" x="3" all="1" />
       <skill id="weaken" x="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>50</health>
-      <skill id="imbue" x="3" s="nullify" />
-      <skill id="rally" x="2" all="1" />
+      <health>70</health>
+      <skill id="imbue" x="3" all="1" s="nullify" />
+      <skill id="rally" x="4" all="1" />
       <skill id="weaken" x="4" />
     </upgrade>
   </unit>
@@ -7574,7 +7574,7 @@
     <name>Guardian Constructs</name>
     <portrait>windupdragons</portrait>
     <attack>0</attack>
-    <health>42</health>
+    <health>62</health>
     <rarity>4</rarity>
     <skill id="counter" x="1" />
     <skill id="strike" x="1" />
@@ -7583,36 +7583,36 @@
     <set>9999</set>
     <upgrade>
       <level>2</level>
-      <health>43</health>
+      <health>63</health>
       <skill id="counter" x="1" />
       <skill id="strike" x="2" />
       <skill id="strike" x="1" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>45</health>
+      <health>65</health>
       <skill id="counter" x="1" />
       <skill id="strike" x="2" />
       <skill id="strike" x="1" all="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>46</health>
-      <skill id="counter" x="2" />
+      <health>66</health>
+      <skill id="counter" x="3" />
       <skill id="strike" x="3" />
       <skill id="strike" x="1" all="1" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>48</health>
-      <skill id="counter" x="3" />
+      <health>78</health>
+      <skill id="counter" x="4" />
       <skill id="strike" x="3" />
       <skill id="strike" x="1" all="1" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>50</health>
-      <skill id="counter" x="3" />
+      <health>82</health>
+      <skill id="counter" x="5" />
       <skill id="strike" x="4" />
       <skill id="strike" x="2" all="1" />
     </upgrade>
@@ -7623,46 +7623,46 @@
     <name>Spirit of the Beast</name>
     <portrait>winterbigbad</portrait>
     <attack>0</attack>
-    <health>42</health>
+    <health>62</health>
     <rarity>4</rarity>
     <skill id="heal" x="1" all="1" c="4" />
-    <skill id="protect" x="1" />
+    <skill id="protect" x="1" all="1" />
     <skill id="enfeeble" x="1" />
     <type>3</type>
     <set>9999</set>
     <upgrade>
       <level>2</level>
-      <health>45</health>
+      <health>65</health>
       <skill id="heal" x="2" all="1" c="4" />
-      <skill id="protect" x="1" />
+      <skill id="protect" x="1" all="1" />
       <skill id="enfeeble" x="1" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>49</health>
+      <health>69</health>
       <skill id="heal" x="2" all="1" c="4" />
-      <skill id="protect" x="2" />
+      <skill id="protect" x="2" all="1" />
       <skill id="enfeeble" x="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>52</health>
+      <health>72</health>
       <skill id="heal" x="3" all="1" c="3" />
-      <skill id="protect" x="2" />
+      <skill id="protect" x="2" all="1" />
       <skill id="enfeeble" x="2" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>56</health>
+      <health>76</health>
       <skill id="heal" x="4" all="1" c="3" />
-      <skill id="protect" x="2" />
+      <skill id="protect" x="2" all="1" />
       <skill id="enfeeble" x="2" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>60</health>
+      <health>80</health>
       <skill id="heal" x="4" all="1" c="2" />
-      <skill id="protect" x="3" />
+      <skill id="protect" x="3" all="1" />
       <skill id="enfeeble" x="3" />
     </upgrade>
   </unit>
@@ -7674,7 +7674,7 @@
     <attack>0</attack>
     <health>75</health>
     <rarity>5</rarity>
-    <skill id="imbue" x="1" all="1" y="6" s="berserk" />
+    <skill id="imbue" x="1" y="6" s="berserk" />
     <skill id="protect" x="1" all="1" y="6" />
     <skill id="jam" c="6" />
     <type>1</type>
@@ -7682,42 +7682,42 @@
     <upgrade>
       <level>2</level>
       <health>78</health>
-      <skill id="imbue" x="1" all="1" y="6" s="berserk" />
-      <skill id="protect" x="1" all="1" y="6" />
+      <skill id="imbue" x="1" y="6" s="berserk" />
+      <skill id="protect" x="2" all="1" y="6" />
       <skill id="jam" c="5" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>81</health>
-      <skill id="imbue" x="1" all="1" y="6" s="berserk" />
+      <skill id="imbue" x="2" y="6" s="berserk" />
       <skill id="protect" x="2" all="1" y="6" />
       <skill id="jam" c="5" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>85</health>
-      <skill id="imbue" x="2" all="1" y="6" s="berserk" />
-      <skill id="protect" x="2" all="1" y="6" />
+      <skill id="imbue" x="2" y="6" s="berserk" />
+      <skill id="protect" x="3" all="1" y="6" />
       <skill id="jam" c="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>88</health>
-      <skill id="imbue" x="2" all="1" y="6" s="berserk" />
+      <skill id="imbue" x="2" y="6" s="berserk" />
       <skill id="protect" x="3" all="1" y="6" />
       <skill id="jam" c="4" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>91</health>
-      <skill id="imbue" x="2" all="1" y="6" s="berserk" />
-      <skill id="protect" x="3" all="1" y="6" />
+      <skill id="imbue" x="3" y="6" s="berserk" />
+      <skill id="protect" x="4" all="1" y="6" />
       <skill id="jam" c="3" />
     </upgrade>
     <upgrade>
       <level>7</level>
       <health>95</health>
-      <skill id="imbue" x="3" all="1" y="6" s="berserk" />
+      <skill id="imbue" x="3" y="6" s="berserk" />
       <skill id="protect" x="4" all="1" y="6" />
       <skill id="jam" c="2" />
     </upgrade>
@@ -7731,7 +7731,7 @@
     <health>72</health>
     <rarity>5</rarity>
     <skill id="imbue" x="1" all="1" y="6" s="counter" />
-    <skill id="enfeeble" x="1" all="1" />
+    <skill id="strike" x="1" all="1" />
     <skill id="weaken" x="1" all="1" />
     <type>2</type>
     <set>9999</set>
@@ -7743,36 +7743,36 @@
       <level>3</level>
       <health>80</health>
       <skill id="imbue" x="1" all="1" y="6" s="counter" />
-      <skill id="enfeeble" x="1" all="1" />
+      <skill id="strike" x="1" all="1" />
       <skill id="weaken" x="2" all="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>85</health>
       <skill id="imbue" x="2" all="1" y="6" s="counter" />
-      <skill id="enfeeble" x="2" all="1" />
+      <skill id="strike" x="2" all="1" />
       <skill id="weaken" x="2" all="1" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>89</health>
       <skill id="imbue" x="2" all="1" y="6" s="counter" />
-      <skill id="enfeeble" x="2" all="1" />
-      <skill id="weaken" x="3" all="1" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="weaken" x="2" all="1" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>93</health>
       <skill id="imbue" x="2" all="1" y="6" s="counter" />
-      <skill id="enfeeble" x="3" all="1" />
+      <skill id="strike" x="3" all="1" />
       <skill id="weaken" x="3" all="1" />
     </upgrade>
     <upgrade>
       <level>7</level>
       <health>98</health>
       <skill id="imbue" x="3" all="1" y="6" s="counter" />
-      <skill id="enfeeble" x="3" all="1" />
-      <skill id="weaken" x="4" all="1" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="weaken" x="3" all="1" />
     </upgrade>
   </unit>
 </root>

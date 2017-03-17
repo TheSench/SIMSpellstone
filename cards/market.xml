@@ -3241,8 +3241,8 @@
     <priority>300</priority>
     <show_desc>1</show_desc>
     <desc>Gives two guaranteed ^c0DFFEpic^cFFFF+ Angel cards from Premium set. May be purchased 5 times!</desc>
-    <asset_prefab>event_021_two_epics</asset_prefab>
-    <bundle>84</bundle>
+    <asset_prefab>event_022_two_epics</asset_prefab>
+    <bundle>87</bundle>
     <icon>icon_purple_crystal</icon>
     <hc_cost>100</hc_cost>
     <!-- Stuff to give -->
