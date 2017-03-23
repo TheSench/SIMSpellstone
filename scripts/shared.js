@@ -238,8 +238,9 @@ function cloneCard(original) {
     if (original.reusableSkills) {
         copy.skill = original.skill;
         copy.earlyActivationSkills = original.earlyActivationSkills;
+        copy.onDeathSkills = original.onDeathSkills;
     } else {
-        copy_skills(copy, original.skill, original.earlyActivationSkills);
+        copy_skills(copy, original.skill, original.earlyActivationSkills, original.onDeathSkills);
     }
     copy.highlighted = original.highlighted;
     copy.runes = original.runes;
@@ -271,6 +272,7 @@ var makeUnit = (function () {
                 for (var j = 0; j < skillModifier.effects.length; j++) {
                     var addedSkill = skillModifier.effects[j];
                     if (new_card.isInFaction(addedSkill.y)) {
+                        if (addedSkill.rarity && new_card.rarity != addedSkill.rarity) continue;
                         var new_skill = {};
                         new_skill.id = addedSkill.id;
                         if (addedSkill.mult && addedSkill.base) {
@@ -284,6 +286,8 @@ var makeUnit = (function () {
                         new_skill.c = addedSkill.c;
                         new_skill.s = addedSkill.s;
                         new_skill.all = addedSkill.all;
+                        if (addedSkill.card) new_skill.card = addedSkill.card;
+                        if (addedSkill.level) new_skill.level = addedSkill.level;
                         new_skill.boosted = true;
                         if (addedSkill.mult && addedSkill.base && new_skill.x == 0) continue;
                         original_skills.push(new_skill);
@@ -295,18 +299,21 @@ var makeUnit = (function () {
                     var mult = skillModifier.effects[j].mult;
                     new_card.attack += Math.ceil(new_card.attack * mult);
                     new_card.health += Math.ceil(new_card.health * mult);
-                    for (var key in original_skills) {
-                        var skill = original_skills[key];
-                        var mult
-                        if (skill.x) {
-                            skill = copy_skill(skill);
-                            skill.x += Math.ceil(skill.x * mult);;
-                            skill.boosted = true;
-                            original_skills[key] = skill;
-                            new_card.highlighted.push(skill.id);
-                        }
-                    }
+                    scaleSkills(original_skills, mult);
                 }
+            }
+        }
+    }
+
+    function scaleSkills(skillList, mult) {
+        for (var key in skillList) {
+            var skill = skillList[key];
+            if (skill.x) {
+                skill = copy_skill(skill);
+                skill.x += Math.ceil(skill.x * mult);;
+                skill.boosted = true;
+                skillList[key] = skill;
+                new_card.highlighted.push(skill.id);
             }
         }
     }
@@ -330,6 +337,7 @@ var makeUnit = (function () {
         pierce: 0,
         poison: 0,
         taunt: false,
+        unearth: null,
         valor: 0,
         // Attack Modifiers
         attack_berserk: 0,
@@ -581,6 +589,11 @@ var makeUnit = (function () {
                     }
                     return;
 
+
+                case 'unearth':
+                    imbueSkillsKey = 'onDeathSkills';
+                    break;
+
                 // Early Activation skills
                 case 'barrage':
                 case 'enhance':
@@ -620,7 +633,7 @@ var makeUnit = (function () {
             if (imbue) {
                 for (var key in imbue) {
                     var imbuement = imbue[key];
-                    if (key == "skill" || key == "earlyActivationSkills") {
+                    if (key === "skill" || key === "earlyActivationSkills" || key === "onDeathSkills") {
                         this[key] = this[key].slice(0, imbuement);
                     } else {
                         this[key] -= imbuement;
@@ -652,6 +665,11 @@ var makeUnit = (function () {
                 case 'taunt':
                 case 'valor':
                     return this[s];
+                    break;
+                    
+                // On-Death skills
+                case 'unearth':
+                    target_skills = this.onDeathSkills;
                     break;
 
                 // Early Activation skills
@@ -726,7 +744,7 @@ var makeUnit = (function () {
         },
     }
 
-    return (function (original_card, unit_level, runes, skillModifiers) {
+    return (function (original_card, unit_level, runes, skillModifiers, skillMult) {
         if (!unit_level) unit_level = 1;
         var card = Object.create(CardPrototype);
 
@@ -767,8 +785,12 @@ var makeUnit = (function () {
         }
 
         // Apply BGEs
-        if (skillModifiers) {
+        if (skillModifiers && skillModifiers.length) {
             modifySkills(card, original_skills, skillModifiers);
+        }
+
+        if (skillMult) {
+            scaleSkills(original_skills, skillMult);
         }
 
         copy_skills_2(card, original_skills);
@@ -807,6 +829,11 @@ var isImbued = function (card, skillID, i) {
         case 'poison':
         case 'valor':
             return (card[skillID] === card.imbued[skillID])
+
+        // On-Death Skills
+        case 'unearth':
+            imbueSkillsKey = 'onDeathSkills';
+            break;
 
         // Early Activation skills
         case 'barrage':
@@ -1183,6 +1210,7 @@ var MakeBattleground = (function () {
 function copy_skills_2(new_card, original_skills, mult) {
     new_card.skill = [];
     new_card.earlyActivationSkills = [];
+    new_card.onDeathSkills = [];
     var skillTimers = [];
     var reusable = true;
     for (var key in original_skills) {
@@ -1233,6 +1261,11 @@ function setSkill_2(new_card, skill) {
             new_card[skill.id] = skill;
             break;
 
+        // On-Death Skills
+        case 'unearth':
+            new_card.onDeathSkills.push(skill);
+            break;
+
         // Early Activation Skills
         case 'barrage':
         case 'enhance':
@@ -1261,13 +1294,15 @@ function setSkill_2(new_card, skill) {
     }
 }
 
-function copy_skills(new_card, original_skills, original_earlyActivation_Skills) {
+function copy_skills(new_card, original_skills, original_earlyActivation_Skills, original_onDeathSkills) {
     new_card.skill = [];
     new_card.earlyActivationSkills = [];
+    new_card.onDeathSkills = [];
     if (!new_card.skillTimers) new_card.skillTimers = [];
 
     copy_Skill_lists(new_card, new_card.skill, original_skills);
     copy_Skill_lists(new_card, new_card.earlyActivationSkills, original_earlyActivation_Skills);
+    copy_Skill_lists(new_card, new_card.onDeathSkills, original_onDeathSkills);
 }
 
 function copy_Skill_lists(new_card, new_skills, original_skills) {
@@ -1533,6 +1568,9 @@ function debug_skills(card) {
     for (var key in card.skill) {
         skillText.push(debug_skill(card.skill[key]));
     }
+    for (var key in card.onDeathSkills) {
+        skillText.push(debug_skill(card.onDeathSkills[key]));
+    }
     debug_passive_skills(card, skillText);
     debug_triggered_skills(card, skillText);
 
@@ -1561,6 +1599,7 @@ function debug_passive_skills(card, skillText) {
     debugNonActivatedSkill(card, "counterburn", skillText);
     debugNonActivatedSkill(card, "corrosive", skillText);
     debugNonActivatedSkill(card, "fury", skillText);
+    debugNonActivatedSkill(card, "unearth", skillText);
 }
 
 function debug_triggered_skills(card, skillText) {
@@ -2359,7 +2398,7 @@ function get_skills(id, level) {
     return skills;
 }
 
-function get_card_by_id(unit, skillModifiers) {
+function get_card_by_id(unit, skillModifiers, skillMult) {
     
     var current_card = loadCard(unit.id);
 
@@ -2377,7 +2416,7 @@ function get_card_by_id(unit, skillModifiers) {
         if (!current_card.skill) {
             current_card.skill = [];
         }
-        var card = makeUnit(current_card, unit.level, unit.runes, skillModifiers);
+        var card = makeUnit(current_card, unit.level, unit.runes, skillModifiers, skillMult);
 
         if (unit.priority) card.priority = unit.priority;
         return card

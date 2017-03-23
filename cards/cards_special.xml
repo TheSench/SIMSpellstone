@@ -607,7 +607,7 @@
     <type>0</type>
     <sub_type>7</sub_type>
     <skill id="berserk" x="1" />
-    <rarity>3</rarity>
+    <rarity>2</rarity>
     <set>9999</set>
     <upgrade>
       <level>2</level>
@@ -635,7 +635,7 @@
     <type>0</type>
     <sub_type>7</sub_type>
     <skill id="berserk" x="2" />
-    <rarity>4</rarity>
+    <rarity>3</rarity>
     <set>9999</set>
     <upgrade>
       <level>2</level>
@@ -667,7 +667,7 @@
     <type>0</type>
     <sub_type>7</sub_type>
     <skill id="berserk" x="3" />
-    <rarity>2</rarity>
+    <rarity>4</rarity>
     <set>9999</set>
     <upgrade>
       <level>2</level>

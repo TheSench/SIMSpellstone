@@ -326,6 +326,7 @@ var CARD_GUI = {};
         getPassiveSkills(divSkills, skillsShort, card, onField, boosts);
         if (card.earlyActivationSkills) getSkillsHtml(card, divSkills, skillsShort, card.earlyActivationSkills, onField);
         getSkillsHtml(card, divSkills, skillsShort, card.skill, onField);
+        if (card.onDeathSkills) getSkillsHtml(card, divSkills, skillsShort, card.onDeathSkills, onField);
         getTriggeredSkills(divSkills, skillsShort, card, onField, boosts);
         var skillsDetail = divSkills.cloneNode(true);
         skillsDetail.className = "card-skills-detailed";

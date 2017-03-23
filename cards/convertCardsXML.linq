@@ -1016,6 +1016,9 @@ public partial class add_skill : battlegroundEffect
 	private string multField;
 	private string on_delay_multField;
 	private string baseField;
+	private string cardField;
+	private string levelField;
+	private string rarityField;
 
 	/// <remarks/>
 	[System.Xml.Serialization.XmlAttributeAttribute()]
@@ -1079,6 +1082,30 @@ public partial class add_skill : battlegroundEffect
 	{
 		get { return this.allField; }
 		set { this.allField = value; }
+	}
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string rarity
+	{
+		get { return this.rarityField; }
+		set { this.rarityField = value; }
+	}
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string card
+	{
+		get { return this.cardField; }
+		set { this.cardField = value; }
+	}
+
+	/// <remarks/>
+	[System.Xml.Serialization.XmlAttributeAttribute()]
+	public string level
+	{
+		get { return this.levelField; }
+		set { this.levelField = value; }
 	}
 }
 
@@ -1367,6 +1394,9 @@ private static void AppendAddSkill(StringBuilder sb, add_skill skill, string tab
 	AppendEntry(sb, "c", skill.c, tabs);
 	AppendEntryString(sb, "s", skill.s, tabs);
 	AppendEntryString(sb, "all", skill.all, tabs);
+	AppendEntry(sb, "rarity", skill.rarity, tabs);
+	AppendEntry(sb, "card", skill.card, tabs);
+	AppendEntry(sb, "level", skill.level, tabs);
 }
 
 private static void AppendScaling(StringBuilder sb, scale_attributes skill, string tabs)

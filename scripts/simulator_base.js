@@ -123,6 +123,10 @@ var SIMULATOR = {};
             echo += debug_name(src_card) + "'s barrier shatters and hits " + debug_name(target) + ' for ' + amount + ' damage';
             echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
         }
+
+        if (!target.isAlive()) {
+            doOnDeathSkills(target, src_card);
+        }
     };
 
     // Empower, Legion, and Fervor all activate at the beginning of the turn, after commander
@@ -174,6 +178,22 @@ var SIMULATOR = {};
                         drawField(field, null, null, turn, source_card);
                     }
                 }
+            }
+        }
+    };
+
+    function doOnDeathSkills(dying, killer) {
+
+        var skills = dying.onDeathSkills;
+        var len = skills.length;
+        if (len == 0) return;
+
+        for (var i = 0; i < len; i++) {
+            var skill = skills[i];
+            onDeathSkills[skill.id](dying, killer, skill);
+
+            if (showAnimations) {
+                drawField(field, null, null, turn, dying);
             }
         }
     };
@@ -437,6 +457,9 @@ var SIMULATOR = {};
                 if (shatter) {
                     iceshatter(target);
                 }
+                if (!target.isAlive()) {
+                    doOnDeathSkills(target, src_card);
+                }
             }
 
             return affected;
@@ -590,6 +613,9 @@ var SIMULATOR = {};
                 }
                 if (shatter) {
                     iceshatter(target);
+                }
+                if (!target.isAlive()) {
+                    doOnDeathSkills(target, src_card);
                 }
             }
 
@@ -994,6 +1020,9 @@ var SIMULATOR = {};
                     if (shatter) {
                         iceshatter(target);
                     }
+                    if (!target.isAlive()) {
+                        doOnDeathSkills(target, src_card);
+                    }
                 }
             }
 
@@ -1225,9 +1254,40 @@ var SIMULATOR = {};
                 echo += debug_name(src_card) + ' ambushes ' + debug_name(target) + ' for ' + damage + ' damage';
                 echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
             }
+            if (!target.isAlive()) {
+                doOnDeathSkills(target, src_card);
+            }
 
             return 1;
         },
+    };
+
+    var onDeathSkills = {
+        unearth: function (dying, killer, skill) {
+
+            if (dying.isToken) {
+                return;
+            }
+
+            // Get base card
+            var unearthedUnit = makeUnitInfo(skill.card, skill.level);
+            var unearthedCard = get_card_apply_battlegrounds(unearthedUnit);
+            unearthedCard.isToken = true;
+
+            // Get tempalte card with scaled skills and copy them over (do not copy on-death skills)
+            var mult = skill.x;
+            var templateUnit = makeUnitInfo(dying.id, dying.level, dying.runes);
+            var templateCard = get_card_apply_battlegrounds(templateUnit, SIMULATOR.battlegrounds.onCreate, mult);
+            copy_skills(unearthedCard, templateCard.skill, templateCard.earlyActivationSkills, []);
+
+            play_card(unearthedCard, dying.owner, true);
+
+            if (debug) {
+                echo += debug_name(unearthedCard) + ' is unearthed';
+            }
+
+            return 1;
+        }
     };
 
     // Activation Skills
@@ -1941,7 +2001,6 @@ var SIMULATOR = {};
                 }
             }
 
-
             // Corrosion
             var corroded = current_assault.corroded;
             if (corroded) {
@@ -1960,6 +2019,10 @@ var SIMULATOR = {};
                         echo += debug_name(current_assault) + ' loses ' + corrosion + ' attack to corrosion<br>';
                     }
                 }
+            }
+
+            if (!current_assault.isAlive()) {
+                doOnDeathSkills(current_assault, null);
             }
         }
     };
@@ -2097,6 +2160,9 @@ var SIMULATOR = {};
         if (debug) {
             echo += debug_name(current_assault) + ' attacks ' + debug_name(target) + ' for ' + damage + ' damage';
             echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
+        }
+        if (!target.isAlive()) {
+            doOnDeathSkills(target, current_assault);
         }
 
         if (showAnimations) {
@@ -2308,6 +2374,10 @@ var SIMULATOR = {};
             }
         }
         
+        if (!current_assault.isAlive()) {
+            doOnDeathSkills(current_assault, target);
+        }
+
         if (showAnimations) {
             drawField(field, null, null, turn, current_assault);
         }
