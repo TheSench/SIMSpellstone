@@ -4127,7 +4127,7 @@
     <name>Dyrnwyn's Test</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <campaign_req>1116</campaign_req>
+    <campaign_req>1115</campaign_req>
     <locked_start_time>1490288400</locked_start_time>
     <!-- Thu, 23 March 2017 17:00:00 -->
     <battleground_id>2006</battleground_id>

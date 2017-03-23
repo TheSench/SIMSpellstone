@@ -2292,12 +2292,28 @@
     <resource card_id="15117" number="2" />
   </fusion_recipe>
   <fusion_recipe>
+    <card_id>15118</card_id>
+    <resource card_id="5118" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25118</card_id>
+    <resource card_id="15118" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
     <card_id>15120</card_id>
     <resource card_id="5120" number="2" />
   </fusion_recipe>
   <fusion_recipe>
     <card_id>25120</card_id>
     <resource card_id="15120" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15121</card_id>
+    <resource card_id="5121" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25121</card_id>
+    <resource card_id="15121" number="2" />
   </fusion_recipe>
   <!-- CHAOS PREMIUM SET BEGIN -->
   <fusion_recipe>
@@ -3235,6 +3251,14 @@
   <fusion_recipe>
     <card_id>26117</card_id>
     <resource card_id="16117" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16118</card_id>
+    <resource card_id="6118" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26118</card_id>
+    <resource card_id="16118" number="2" />
   </fusion_recipe>
   <fusion_recipe>
     <card_id>16120</card_id>
@@ -4188,6 +4212,14 @@
   <fusion_recipe>
     <card_id>27117</card_id>
     <resource card_id="17117" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17118</card_id>
+    <resource card_id="7118" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27118</card_id>
+    <resource card_id="17118" number="2" />
   </fusion_recipe>
   <!-- END SET 3000 - Premium -->
   <!-- START SET 8000 - Story Element Assaults -->

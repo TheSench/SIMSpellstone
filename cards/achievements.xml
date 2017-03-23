@@ -5810,5 +5810,23 @@
       <gold>800</gold>
     </reward>
   </achievement>
+  <!-- Infinity Craft Recipe -->
+  <achievement>
+    <id>3216</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Dyrnwyn's Test</name>
+    <desc>Complete the 'Dyrnwyn's Test' campaign on Mastery Level 1.</desc>
+    <mission_req>64</mission_req>
+    <locked_start_time>1490288400</locked_start_time>
+    <!-- Thu, 23 Mar 2017 17:00:00 GMT -->
+    <req>
+      <campaign>1117</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="8001" number="1" />
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
 </root>

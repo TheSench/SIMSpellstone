@@ -289,6 +289,19 @@
       </skill>
     </effect>
   </battleground>
+  <battleground>
+    <id>115</id>
+    <name>Undead Unearthed</name>
+    <desc>Desc here</desc>
+    <icon>filter_undead_64.png</icon>
+    <effect>
+      <add_skill id="unearth" x="0.5" rarity="1" y="7" card="607" level="3" />
+      <add_skill id="unearth" x="0.5" rarity="2" y="7" card="608" level="4" />
+      <add_skill id="unearth" x="0.5" rarity="3" y="7" card="609" level="5" />
+      <add_skill id="unearth" x="0.5" rarity="4" y="7" card="610" level="6" />
+      <add_skill id="unearth" x="0.5" rarity="5" y="7" card="611" level="7" />
+    </effect>
+  </battleground>
   <!-- 501-1000: Specialty BGE -->
   <battleground>
     <id>501</id>
@@ -411,23 +424,23 @@
     <icon>tree_of_life_64</icon>
     <icon_bundle>31</icon_bundle>
     <effect>
-      <starting_card id="603" level="1" pvp_rank="2" />
-      <starting_card id="603" level="2" pvp_rank="3" />
-      <starting_card id="603" level="3" pvp_rank="4" />
-      <starting_card id="603" level="4" pvp_rank="5" />
-      <starting_card id="603" level="5" pvp_rank="6" />
-      <starting_card id="603" level="6" pvp_rank="7" />
-      <starting_card id="603" level="7" pvp_rank="8" />
-      <starting_card id="603" level="8" pvp_rank="9" />
-      <starting_card id="603" level="9" pvp_rank="10" />
-      <starting_card id="603" level="10" pvp_rank="11" />
-      <starting_card id="603" level="11" pvp_rank="12" />
-      <starting_card id="603" level="12" pvp_rank="13" />
-      <starting_card id="603" level="13" pvp_rank="14" />
-      <starting_card id="603" level="14" pvp_rank="15" />
-      <starting_card id="603" level="15" pvp_rank="16" />
-      <starting_card id="603" level="16" pvp_rank="17" />
-      <starting_card id="603" level="17" pvp_rank="18" />
+      <starting_card id="603" level="2" pvp_rank="2" />
+      <starting_card id="603" level="3" pvp_rank="3" />
+      <starting_card id="603" level="4" pvp_rank="4" />
+      <starting_card id="603" level="5" pvp_rank="5" />
+      <starting_card id="603" level="6" pvp_rank="6" />
+      <starting_card id="603" level="7" pvp_rank="7" />
+      <starting_card id="603" level="8" pvp_rank="8" />
+      <starting_card id="603" level="9" pvp_rank="9" />
+      <starting_card id="603" level="10" pvp_rank="10" />
+      <starting_card id="603" level="11" pvp_rank="11" />
+      <starting_card id="603" level="12" pvp_rank="12" />
+      <starting_card id="603" level="13" pvp_rank="13" />
+      <starting_card id="603" level="14" pvp_rank="14" />
+      <starting_card id="603" level="15" pvp_rank="15" />
+      <starting_card id="603" level="16" pvp_rank="16" />
+      <starting_card id="603" level="17" pvp_rank="17" />
+      <starting_card id="603" level="18" pvp_rank="18" />
     </effect>
   </battleground>
   <battleground>
@@ -590,6 +603,16 @@
       <skill id="enhance" s="enfeeble" mult="0.5" all="1" />
     </effect>
   </battleground>
+  <battleground>
+    <id>517</id>
+    <name>Enchanted Armor</name>
+    <desc>Armor skills are 50% more effective.</desc>
+    <icon>armor_BGE_64</icon>
+    <icon_bundle>87</icon_bundle>
+    <effect>
+      <skill id="enhance" s="armored" mult="0.5" all="1" />
+    </effect>
+  </battleground>
   <!-- 1001+: Personal BGE -->
   <battleground>
     <id>1001</id>
@@ -693,8 +716,8 @@
   </battleground>
   <battleground>
     <id>2006</id>
-    <name>Ice Angel's Influence</name>
-    <desc>Ice Angel empowers her minions, increasing their stats with each Mastery level!</desc>
+    <name>Elegy of a Hero</name>
+    <desc>Dyrnwyn's Spirit fights harder with each passing Mastery level, increasing cards' stats!</desc>
     <icon>filter_angel_64</icon>
     <enemy_only>1</enemy_only>
     <scale_with_level>1</scale_with_level>
@@ -702,7 +725,7 @@
     <starting_level>0</starting_level>
     <!-- Starting Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".1" mult=".025" />
+      <scale_attributes base_mult=".4" mult=".016" />
     </effect>
   </battleground>
 </root>

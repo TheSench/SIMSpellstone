@@ -200,6 +200,43 @@ var BATTLEGROUNDS = {
       },
     ]
   },
+  "115": {
+    "name": "Undead Unearthed",
+    "id": "115",
+    "desc": "Desc here",
+    "effect": [
+      {
+        "effect_type": "add_skill",
+        "id": "unearth",
+        "x": 0.5,
+        "y": "7",
+      },
+      {
+        "effect_type": "add_skill",
+        "id": "unearth",
+        "x": 0.5,
+        "y": "7",
+      },
+      {
+        "effect_type": "add_skill",
+        "id": "unearth",
+        "x": 0.5,
+        "y": "7",
+      },
+      {
+        "effect_type": "add_skill",
+        "id": "unearth",
+        "x": 0.5,
+        "y": "7",
+      },
+      {
+        "effect_type": "add_skill",
+        "id": "unearth",
+        "x": 0.5,
+        "y": "7",
+      },
+    ]
+  },
   "501": {
     "name": "Castle Siege",
     "id": "501",
@@ -429,71 +466,71 @@ var BATTLEGROUNDS = {
     "effect": {
         "2": {
         	"id": 603,
-        	"level": 1,
+        	"level": 2,
         },
         "3": {
         	"id": 603,
-        	"level": 2,
+        	"level": 3,
         },
         "4": {
         	"id": 603,
-        	"level": 3,
+        	"level": 4,
         },
         "5": {
         	"id": 603,
-        	"level": 4,
+        	"level": 5,
         },
         "6": {
         	"id": 603,
-        	"level": 5,
+        	"level": 6,
         },
         "7": {
         	"id": 603,
-        	"level": 6,
+        	"level": 7,
         },
         "8": {
         	"id": 603,
-        	"level": 7,
+        	"level": 8,
         },
         "9": {
         	"id": 603,
-        	"level": 8,
+        	"level": 9,
         },
         "10": {
         	"id": 603,
-        	"level": 9,
+        	"level": 10,
         },
         "11": {
         	"id": 603,
-        	"level": 10,
+        	"level": 11,
         },
         "12": {
         	"id": 603,
-        	"level": 11,
+        	"level": 12,
         },
         "13": {
         	"id": 603,
-        	"level": 12,
+        	"level": 13,
         },
         "14": {
         	"id": 603,
-        	"level": 13,
+        	"level": 14,
         },
         "15": {
         	"id": 603,
-        	"level": 14,
+        	"level": 15,
         },
         "16": {
         	"id": 603,
-        	"level": 15,
+        	"level": 16,
         },
         "17": {
         	"id": 603,
-        	"level": 16,
+        	"level": 17,
         },
         "18": {
         	"id": 603,
-        	"level": 17,
+        	"level": 18,
         },
     }
   },
@@ -774,6 +811,20 @@ var BATTLEGROUNDS = {
       },
     ]
   },
+  "517": {
+    "name": "Enchanted Armor",
+    "id": "517",
+    "desc": "Armor skills are 50% more effective.",
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "enhance",
+        "mult": 0.5,
+        "s": "armored",
+        "all": "1",
+      },
+    ]
+  },
   "1001": {
     "name": "Primal Mending",
     "id": "1001",
@@ -884,9 +935,9 @@ var BATTLEGROUNDS = {
     ]
   },
   "2006": {
-    "name": "Ice Angel's Influence",
+    "name": "Elegy of a Hero",
     "id": "2006",
-    "desc": "Ice Angel empowers her minions, increasing their stats with each Mastery level!",
+    "desc": "Dyrnwyn's Spirit fights harder with each passing Mastery level, increasing cards' stats!",
     "enemy_only": true,
     "scale_with_level": "1",
     "starting_level": "0",
@@ -894,8 +945,8 @@ var BATTLEGROUNDS = {
     "effect": [
       {
         "effect_type": "scale_attributes",
-        "base_mult": .1,
-        "mult": .025,
+        "base_mult": .4,
+        "mult": .016,
       },
     ]
   },

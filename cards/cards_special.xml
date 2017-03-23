@@ -150,7 +150,7 @@
     <desc>A massive deposit of Spellstone ore. It has little combat use, but can be Vaporized for resources.</desc>
   </unit>
   <!-- =================== -->
-  <!-- === TOWER CARDS === -->
+  <!-- === BATTLEGROUND CARDS === -->
   <!-- =================== -->
   <unit>
     <id>601</id>
@@ -571,5 +571,164 @@
       <skill id="armored" x="4" />
     </upgrade>
     <desc>"THE TOWER IS MOUNTING A COUNTER OFFENSE!" - Jarad, Castle Guard</desc>
+  </unit>
+  <unit>
+    <id>607</id>
+    <card_type>2</card_type>
+    <name>Unearthed Skeleton</name>
+    <picture>Skeleton_Warrior_A</picture>
+    <asset_bundle>9</asset_bundle>
+    <attack>1</attack>
+    <health>1</health>
+    <cost>1</cost>
+    <type>0</type>
+    <sub_type>7</sub_type>
+    <rarity>1</rarity>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>2</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>3</health>
+    </upgrade>
+    <desc>"The most admirable part of the dead is their unwillingness to stay down." - Aria</desc>
+  </unit>
+  <unit>
+    <id>608</id>
+    <card_type>2</card_type>
+    <name>Unearthed Skeleton</name>
+    <picture>Skeleton_Warrior_A</picture>
+    <asset_bundle>9</asset_bundle>
+    <attack>1</attack>
+    <health>1</health>
+    <cost>1</cost>
+    <type>0</type>
+    <sub_type>7</sub_type>
+    <skill id="berserk" x="1" />
+    <rarity>3</rarity>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>2</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>3</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>4</health>
+    </upgrade>
+    <desc>"The most admirable part of the dead is their unwillingness to stay down." - Aria</desc>
+  </unit>
+  <unit>
+    <id>609</id>
+    <card_type>2</card_type>
+    <name>Unearthed Skeleton</name>
+    <picture>Skeleton_Warrior_B</picture>
+    <asset_bundle>9</asset_bundle>
+    <attack>1</attack>
+    <health>1</health>
+    <cost>1</cost>
+    <type>0</type>
+    <sub_type>7</sub_type>
+    <skill id="berserk" x="2" />
+    <rarity>4</rarity>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>2</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>3</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>4</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>5</health>
+    </upgrade>
+    <desc>"The most admirable part of the dead is their unwillingness to stay down." - Aria</desc>
+  </unit>
+  <unit>
+    <id>610</id>
+    <card_type>2</card_type>
+    <name>Unearthed Skeleton</name>
+    <picture>Skeleton_Warrior_C</picture>
+    <asset_bundle>9</asset_bundle>
+    <attack>1</attack>
+    <health>1</health>
+    <cost>1</cost>
+    <type>0</type>
+    <sub_type>7</sub_type>
+    <skill id="berserk" x="3" />
+    <rarity>2</rarity>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>2</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>3</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>4</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>5</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>6</health>
+    </upgrade>
+    <desc>"The most admirable part of the dead is their unwillingness to stay down." - Aria</desc>
+  </unit>
+  <unit>
+    <id>611</id>
+    <card_type>2</card_type>
+    <name>Unearthed Skeleton</name>
+    <picture>Skeleton_Warrior_C</picture>
+    <asset_bundle>9</asset_bundle>
+    <attack>1</attack>
+    <health>1</health>
+    <cost>1</cost>
+    <type>0</type>
+    <sub_type>7</sub_type>
+    <skill id="berserk" x="4" />
+    <rarity>5</rarity>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>2</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>3</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>4</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>5</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>6</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>7</health>
+    </upgrade>
+    <desc>"The most admirable part of the dead is their unwillingness to stay down." - Aria</desc>
   </unit>
 </root>

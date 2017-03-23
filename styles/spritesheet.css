@@ -207,6 +207,7 @@
 .sprite-Cherub_A{ background-position: -420px -480px; background-image: url('../res/sprites/SpriteSheet2.jpg');}
 .sprite-Cherub_B{ background-position: -504px -480px; background-image: url('../res/sprites/SpriteSheet2.jpg');}
 .sprite-Cherub_C_02{ background-position: -588px -480px; background-image: url('../res/sprites/SpriteSheet2.jpg');}
+.sprite-Cherub_C{ background-position: -672px -1080px; background-image: url('../res/sprites/SpriteSheet12.jpg');}
 .sprite-Chicken_A{ background-position: -672px -480px; background-image: url('../res/sprites/SpriteSheet2.jpg');}
 .sprite-Chicken_B{ background-position: -756px -480px; background-image: url('../res/sprites/SpriteSheet2.jpg');}
 .sprite-Chicken_C{ background-position: -0px -600px; background-image: url('../res/sprites/SpriteSheet2.jpg');}

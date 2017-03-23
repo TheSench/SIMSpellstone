@@ -459,7 +459,16 @@
     <upkeep>1</upkeep>
     <!-- This skill occurs before all other actions -->
     <attributes x="1" y="0" all="0" c="0" s="0" />
-    <desc>Mark random enemy creatures</desc>
+    <desc>Marks a random target upon first activation, Hexing them for 30% of their base Attack. The creature chooses a new mark when their current mark dies. Ignores Invisibility.</desc>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>unearth</id>
+    <order>500</order>
+    <!-- <icon>hex</icon> -->
+    <name>Unearth</name>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <desc>When a non token creature dies, it spawns a Token creature with stats based on its own stats.</desc>
     <hidden>1</hidden>
   </skillType>
   <skillType>

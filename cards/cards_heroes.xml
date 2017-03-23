@@ -7310,7 +7310,7 @@
     <id>363</id>
     <card_type>1</card_type>
     <name>Samael of White-Hilt</name>
-    <portrait>necromancer</portrait>
+    <portrait>samaelWithFiresword</portrait>
     <desc>Are you fighting the angel and his sword, or the sword and its angel?</desc>
     <attack>0</attack>
     <health>49</health>
@@ -7359,7 +7359,7 @@
     <id>364</id>
     <card_type>1</card_type>
     <name>Dyrnwyn's Spirit</name>
-    <portrait>seraph</portrait>
+    <portrait>samaelWithFiresword</portrait>
     <attack>0</attack>
     <health>79</health>
     <rarity>4</rarity>

@@ -15981,15 +15981,15 @@
     <desc>The sword has only shown you a fraction of its power. The spirit inside does not trust you enough with its true abilities. You beseech the blade for a chance to prove your worth...</desc>
     <commander id="364" />
     <deck>
-      <card id="5076" name="Sorath, the Valkyrie" />
+      <card id="5111" name="Bennu" />
       <card id="6040" name="Scorching Cutlass" />
       <card id="5116" name="Justice" />
-      <card id="7039" name="Winged Giant" />
       <card id="5074" name="Godfried the Hunter" />
       <card id="5074" name="Godfried the Hunter" />
       <card id="5077" name="Everspark Ace" />
       <card id="6100" name="Tiamat" />
-      <card id="8047" name="Void's Thrall" />
+      <card id="8054" name="Dyrnwyn's Wisdom" />
+      <card id="8054" name="Dyrnwyn's Wisdom" />
       <card id="5075" mastery_level="2" name="Arith" />
       <card id="2028" mastery_level="3" name="Infinity" />
       <card id="5111" mastery_level="4" name="Bennu" />
@@ -16006,14 +16006,14 @@
     <commander id="364" />
     <deck>
       <card id="5076" name="Sorath, the Valkyrie" />
-      <card id="5076" name="Sorath, the Valkyrie" />
+      <card id="6040" name="Scorching Cutlass" />
       <card id="5116" name="Justice" />
-      <card id="7039" name="Winged Giant" />
       <card id="5074" name="Godfried the Hunter" />
       <card id="5074" name="Godfried the Hunter" />
       <card id="5077" name="Everspark Ace" />
       <card id="6100" name="Tiamat" />
-      <card id="8047" name="Void's Thrall" />
+      <card id="8055" name="Dyrnwyn's Justice" />
+      <card id="8055" name="Dyrnwyn's Justice" />
       <card id="5075" mastery_level="2" name="Arith" />
       <card id="2028" mastery_level="3" name="Infinity" />
       <card id="5111" mastery_level="4" name="Bennu" />
@@ -16032,16 +16032,16 @@
       <card id="5116" name="Justice" />
       <card id="5076" name="Sorath, the Valkyrie" />
       <card id="6040" name="Scorching Cutlass" />
-      <card id="7039" name="Winged Giant" />
       <card id="5074" name="Godfried the Hunter" />
       <card id="5074" name="Godfried the Hunter" />
       <card id="5077" name="Everspark Ace" />
       <card id="6100" name="Tiamat" />
-      <card id="8047" name="Void's Thrall" />
+      <card id="8056" name="Dyrnwyn's Temperance" />
+      <card id="8056" name="Dyrnwyn's Temperance" />
       <card id="5075" mastery_level="2" name="Arith" />
       <card id="2028" mastery_level="3" name="Infinity" />
-      <card id="5111" mastery_level="4" name="Bennu" />
-      <card id="5111" mastery_level="5" name="Bennu" />
+      <card id="6120" mastery_level="4" name="Oni Blade" />
+      <card id="5043" mastery_level="5" name="Empyrean" />
       <card id="5088" mastery_level="6" name="Betrayal" />
       <card id="2083" mastery_level="7" name="Habrok, the Lance" />
     </deck>
@@ -16054,14 +16054,14 @@
     <commander id="364" />
     <deck>
       <card id="5076" name="Sorath, the Valkyrie" />
-      <card id="5076" name="Sorath, the Valkyrie" />
       <card id="5116" name="Justice" />
       <card id="6040" name="Scorching Cutlass" />
       <card id="5074" name="Godfried the Hunter" />
       <card id="5074" name="Godfried the Hunter" />
       <card id="5077" name="Everspark Ace" />
       <card id="6100" name="Tiamat" />
-      <card id="8047" name="Void's Thrall" />
+      <card id="8057" name="Dyrnwyn's Courage" />
+      <card id="8057" name="Dyrnwyn's Courage" />
       <card id="5075" mastery_level="2" name="Arith" />
       <card id="2028" mastery_level="3" name="Infinity" />
       <card id="5111" mastery_level="4" name="Bennu" />
