@@ -2275,6 +2275,14 @@ var SIMULATOR = {};
                 current_assault.corroded = { amount: corrosion, timer: 2 };
             }
             if (debug) echo += debug_name(target) + ' inflicts corrosion(' + corrosion + ') on ' + debug_name(current_assault) + '<br>';
+            var currAttack = current_assault.adjustedAttack();
+            if (corrosion > currAttack) {
+                corrosion = currAttack;
+            }
+            current_assault.attack_corroded = corrosion;
+            if (debug) {
+                echo += debug_name(current_assault) + ' loses ' + corrosion + ' attack to corrosion<br>';
+            }
         }
 
         if (target.isAssault() && target.isAlive() && current_assault.isAlive()) {
