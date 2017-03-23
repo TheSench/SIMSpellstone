@@ -141,7 +141,7 @@
                                                 <option default value="" class="grey">Select a Mission...</option>
                                                 <option ng-repeat="mission in missions | filterChildren:selections.campaign:campaigns:'missions':'id'" value="{{mission.id}}" class="black">{{mission.name}}</option>
                                             </select>
-                                            <input type="NUMBER" id="mission_level" min="1" max="7" step="1" value="7" size="6">
+                                            <input type="NUMBER" id="mission_level" min="1" step="1" value="7" size="6">
                                         </div>
                                         <input id="config-map-bge" type="button" onclick="showMapBGEs();" value="Map BGEs" ng-disabled="(mapBattlegrounds | filterByParent:selections.location:'location_id').length === 0" />
                                         <br />
