@@ -399,7 +399,7 @@
     <id>weakenself</id>
     <order>500</order>
     <icon>hinder</icon>
-    <name>Weaken</name>
+    <name>Weaken Ally</name>
     <desc>Reduces Attack of a random allied creature</desc>
     <desc_all>Reduces the Attack of all ally creatures</desc_all>
     <desc_faction>Reduces the Attack of a random allied {y} creature</desc_faction>
@@ -557,6 +557,13 @@
     <id>13</id>
     <name>Insect</name>
     <image></image>
+    <icon>filter_insect_32</icon>
+  </unitType>
+  <unitType>
+    <id>14</id>
+    <name>Bear</name>
+    <image></image>
+    <hidden>1</hidden>
     <icon>filter_insect_32</icon>
   </unitType>
   <!-- =================== -->

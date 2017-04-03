@@ -3262,4 +3262,23 @@
     <!-- Stuff to give -->
     <pack>3049</pack>
   </store_item>
+  <store_item>
+    <id>5065</id>
+    <name>Epic Inscription Bundle</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Includes two ^c0DFFEpic Runeshells^cFFFF, 50 Inscription Powder, a Runecrafter's Pouch, and 1000 gold! May be purchased five times!</desc>
+    <asset_prefab>epic_inscription_bundle</asset_prefab>
+    <bundle>15</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>90</hc_cost>
+    <!-- Stuff to give -->
+    <item id="4012" quantity="2" />
+    <item id="4001" quantity="50" />
+    <item id="514" quantity="1" />
+    <gold>1000</gold>
+  </store_item>
 </root>

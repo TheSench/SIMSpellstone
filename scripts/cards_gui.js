@@ -535,7 +535,15 @@ var CARD_GUI = {};
                 break;
         }
         src += iconName;
-        return createImg(src);
+        var icon = createImg(src);
+        switch (skillName) {
+            case 'weakenself':
+                icon.style = "transform: rotateY(180deg);";
+                break;
+            default:
+                break;
+        }
+        return icon;
     }
 
     function getStatuses(card) {

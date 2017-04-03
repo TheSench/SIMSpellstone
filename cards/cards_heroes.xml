@@ -7775,4 +7775,178 @@
       <skill id="weaken" x="3" all="1" />
     </upgrade>
   </unit>
+  <!-- Campaign Event Map 2 -->
+  <unit>
+    <id>373</id>
+    <card_type>1</card_type>
+    <name>Shadow Garrick</name>
+    <portrait>maniacgeneral</portrait>
+    <attack>0</attack>
+    <health>38</health>
+    <skill id="imbue" x="1" y="7" s="berserk" />
+    <skill id="strike" x="1" />
+    <skill id="weaken" x="1" all="1" />
+    <rarity>4</rarity>
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>43</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>49</health>
+      <skill id="imbue" x="3" y="7" s="berserk" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>54</health>
+      <skill id="imbue" x="4" y="7" s="berserk" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>60</health>
+      <skill id="imbue" x="5" y="7" s="berserk" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>70</health>
+      <skill id="imbue" x="8" y="7" s="berserk" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+  </unit>
+  <!-- April Fool's Gloomy Land -->
+  <unit>
+    <id>374</id>
+    <card_type>1</card_type>
+    <name>Mermod</name>
+    <portrait>mermod</portrait>
+    <attack>0</attack>
+    <health>38</health>
+    <skill id="imbue" s="legion" x="2" />
+    <rarity>4</rarity>
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>43</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>49</health>
+      <skill id="imbue" s="legion" x="2" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>54</health>
+      <skill id="imbue" s="legion" x="3" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>60</health>
+      <skill id="imbue" s="legion" x="3" />
+      <skill id="heal" all="1" x="1" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>70</health>
+      <skill id="imbue" s="legion" x="4" />
+      <skill id="heal" all="1" x="1" />
+      <skill id="jam" all="1" c="4" />
+    </upgrade>
+    <desc>MerMod is the Community Manager for Spellstone, always bringing the community the latest in what's happening in the game!</desc>
+  </unit>
+  <unit>
+    <id>375</id>
+    <card_type>1</card_type>
+    <name>Obyto14</name>
+    <portrait>obyto14</portrait>
+    <attack>0</attack>
+    <health>50</health>
+    <skill id="imbue" s="silence" />
+    <skill id="weaken" all="1" x="1" />
+    <rarity>2</rarity>
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>62</health>
+      <skill id="imbue" s="silence" />
+      <skill id="weaken" all="2" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>71</health>
+      <skill id="imbue" s="silence" />
+      <skill id="weaken" all="3" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>80</health>
+      <skill id="imbue" all="1" s="silence" />
+      <skill id="weaken" all="3" x="1" />
+      <skill id="enfeeble" all="1" x="1" />
+    </upgrade>
+    <desc>Obyto14 is a Designer for Spellstone. He's also the one who wrote this text. It's weird writing about yourself.</desc>
+  </unit>
+  <unit>
+    <id>376</id>
+    <card_type>1</card_type>
+    <name>TyrantShiva</name>
+    <portrait>tyrantshiva</portrait>
+    <attack>0</attack>
+    <health>38</health>
+    <skill id="heal" x="1" />
+    <skill id="protect" x="1" />
+    <rarity>4</rarity>
+    <type>1</type>
+    <sub_type>14</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>43</health>
+      <skill id="heal" x="1" />
+      <skill id="protect" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>49</health>
+      <skill id="heal" x="2" />
+      <skill id="protect" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>54</health>
+      <skill id="heal" x="2" />
+      <skill id="heal" all="1" x="1" />
+      <skill id="protect" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>60</health>
+      <skill id="heal" x="3" />
+      <skill id="heal" all="1" x="1" />
+      <skill id="protect" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>70</health>
+      <skill id="heal" x="4" />
+      <skill id="heal" all="1" x="2" />
+      <skill id="protect" x="3" />
+    </upgrade>
+    <desc>TyrantShiva runs Support for Spellstone! She is the one that will help you out if you ever have a problem in game!</desc>
+  </unit>
 </root>

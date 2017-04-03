@@ -40,11 +40,12 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_health_legendary",
         "bundle": "34",
-        "desc": "Health +30%, rounded up.",
+        "desc": "Health +30%, rounded up. Minimum +6.",
         "usable": "0",
         "stat_boost": {
             "health": {
-                "mult": "0.3"
+                "mult": "0.3",
+                "min_bonus": "6"
             }
         }
     },
@@ -111,12 +112,13 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_barrier_legendary",
         "bundle": "34",
-        "desc": "Barrier +75%, rounded up.",
+        "desc": "Barrier +75%, rounded up. Minimum +4.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "protect",
-                "mult": "0.75"
+                "mult": "0.75",
+                "min_bonus": "4"
             }
         }
     },
@@ -184,12 +186,13 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_heal_legendary",
         "bundle": "34",
-        "desc": "Healing +75%, rounded up.",
+        "desc": "Healing +75%, rounded up. Minimum +4.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "heal",
-                "mult": "0.75"
+                "mult": "0.75",
+                "min_bonus": "4"
             }
         }
     },
@@ -276,12 +279,13 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_vengeance_legendary",
         "bundle": "34",
-        "desc": "Vengeance +50%, rounded up.",
+        "desc": "Vengeance +50%, rounded up. Minimum +3.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "counter",
-                "mult": "0.5"
+                "mult": "0.5",
+                "min_bonus": "3"
             }
         }
     },
@@ -330,12 +334,13 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_shield_legendary",
         "bundle": "34",
-        "desc": "Armored +50%, rounded up.",
+        "desc": "Armored +50%, rounded up. Minimum +3.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "armored",
-                "mult": "0.5"
+                "mult": "0.5",
+                "min_bonus": "3"
             }
         }
     },
@@ -384,12 +389,13 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_empower_legendary",
         "bundle": "34",
-        "desc": "Empower +50%, rounded up.",
+        "desc": "Empower +50%, rounded up. Minimum +3.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "rally",
-                "mult": "0.5"
+                "mult": "0.5",
+                "min_bonus": "3"
             }
         }
     },
@@ -439,12 +445,13 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_legion_legendary",
         "bundle": "34",
-        "desc": "Legion +50%, rounded up.",
+        "desc": "Legion +50%, rounded up. Minimum +2.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "legion",
-                "mult": "0.5"
+                "mult": "0.5",
+                "min_bonus": "2"
             }
         }
     },
@@ -475,12 +482,13 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_fervor_legendary",
         "bundle": "34",
-        "desc": "Fervor +50%, rounded up.",
+        "desc": "Fervor +50%, rounded up. Minimum +2.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "fervor",
-                "mult": "0.5"
+                "mult": "0.5",
+                "min_bonus": "2"
             }
         }
     },
@@ -529,12 +537,13 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_hex_legendary",
         "bundle": "34",
-        "desc": "Hex +50%, rounded up.",
+        "desc": "Hex +50%, rounded up. Minimum +3.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "enfeeble",
-                "mult": "0.5"
+                "mult": "0.5",
+                "min_bonus": "3"
             }
         }
     },
@@ -602,12 +611,13 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_bolt_legendary",
         "bundle": "34",
-        "desc": "Bolt +50%, rounded up.",
+        "desc": "Bolt +50%, rounded up. Minimum +3.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "strike",
-                "mult": "0.5"
+                "mult": "0.5",
+                "min_bonus": "3"
             }
         }
     },
@@ -657,12 +667,13 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_scorch_legendary",
         "bundle": "34",
-        "desc": "Scorch +50%, rounded up.",
+        "desc": "Scorch +50%, rounded up. Minimum +2.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "burn",
-                "mult": "0.5"
+                "mult": "0.5",
+                "min_bonus": "2"
             }
         }
     },
@@ -711,12 +722,13 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_weaken_legendary",
         "bundle": "34",
-        "desc": "Weaken +75%, rounded up.",
+        "desc": "Weaken +75%, rounded up. Minimum +3.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "weaken",
-                "mult": "0.75"
+                "mult": "0.75",
+                "min_bonus": "3"
             }
         }
     },
@@ -804,12 +816,13 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_poison_legendary",
         "bundle": "34",
-        "desc": "Poison +50%, rounded up.",
+        "desc": "Poison +50%, rounded up. Minimum +2.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "poison",
-                "mult": "0.5"
+                "mult": "0.5",
+                "min_bonus": "2"
             }
         }
     },
@@ -858,12 +871,13 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_siphon_legendary",
         "bundle": "34",
-        "desc": "Siphon +75%, rounded up.",
+        "desc": "Siphon +75%, rounded up. Minimum +4.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "leech",
-                "mult": "0.75"
+                "mult": "0.75",
+                "min_bonus": "4"
             }
         }
     },
@@ -894,12 +908,13 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_berserk_legendary",
         "bundle": "34",
-        "desc": "Berserk +50%, rounded up.",
+        "desc": "Berserk +50%, rounded up. Minimum +2.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "berserk",
-                "mult": "0.5"
+                "mult": "0.5",
+                "min_bonus": "2"
             }
         }
     },
@@ -930,12 +945,13 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_frostbreath_legendary",
         "bundle": "34",
-        "desc": "Frostbreath +50%, rounded up.",
+        "desc": "Frostbreath +50%, rounded up. Minimum +2.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "frost",
-                "mult": "0.5"
+                "mult": "0.5",
+                "min_bonus": "2"
             }
         }
     },
@@ -966,12 +982,13 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_valor_legendary",
         "bundle": "34",
-        "desc": "Valor +50%, rounded up.",
+        "desc": "Valor +50%, rounded up. Minimum +3.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "valor",
-                "mult": "0.5"
+                "mult": "0.5",
+                "min_bonus": "3"
             }
         }
     },
@@ -1002,12 +1019,13 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_nullify_legendary",
         "bundle": "34",
-        "desc": "Nullify +50%, rounded up.",
+        "desc": "Nullify +50%, rounded up. Minimum +2.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "nullify",
-                "mult": "0.5"
+                "mult": "0.5",
+                "min_bonus": "2"
             }
         }
     },
@@ -1038,12 +1056,13 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_corrosive_legendary",
         "bundle": "34",
-        "desc": "Corrosive +50%, rounded up.",
+        "desc": "Corrosive +50%, rounded up. Minimum +2.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "corrosive",
-                "mult": "0.5"
+                "mult": "0.5",
+                "min_bonus": "2"
             }
         }
     },

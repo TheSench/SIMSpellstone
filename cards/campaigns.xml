@@ -4154,6 +4154,196 @@
     </rewards>
     <find_item id="3049" drop_per_energy=".4" />
   </campaign>
+  <!-- Campaign Event Weeks 5-6 
+
+	<campaign> 
+		<id>1118</id>
+		<name>Miracle Water</name>
+		<campaign_req>1116</campaign_req>
+		<locked_start_time>1491498000</locked_start_time>	| Thu, 06 April 2017 17:00:00 |
+		<battleground_id>2007</battleground_id>
+		<location_id>8</location_id>
+		<x>615</x>
+		<y>456</y>
+		<combatBG>CombatBGEvent006</combatBG>
+		<missions>
+			<mission_id>5525</mission_id>
+			<mission_id>5526</mission_id>
+			<mission_id>5527</mission_id>
+			<mission_id>5528</mission_id>
+			<mission_id>5529</mission_id>
+			<mission_id>5530</mission_id>
+			<mission_id>5531</mission_id>
+			<mission_id>5532</mission_id>
+			<mission_id>5533</mission_id>
+			<mission_id>5534</mission_id>
+			<mission_id>5535</mission_id>
+			<mission_id>5536</mission_id>
+			<mission_id>5537</mission_id>
+		</missions>
+		<rewards>
+			<card level='1' id='511' />
+			<card level='2' id='511' />
+			<card level='3' id='511' />
+			<card level='4' id='2085' />
+			<card level='5' id='512' />
+			<card level='6' id='2054' />
+			<item level='7' id='3050' />
+		</rewards>
+		<find_item id='3049' drop_per_energy='.6' />
+	</campaign>
+	-->
+  <!-- Campaign Event Weeks 7-8 
+	
+	<campaign> 
+		<id>1119</id>
+		<name>War Stratagem</name>
+		<campaign_req>1118</campaign_req>
+		<locked_start_time>1492707600</locked_start_time>	| Thu, 20 April 2017 17:00:00 |
+		<battleground_id>2008</battleground_id>
+		<location_id>8</location_id>
+		<x>745</x>
+		<y>197</y>
+		<combatBG>CombatBGEvent006</combatBG>
+		<missions>
+			<mission_id>5538</mission_id>
+			<mission_id>5539</mission_id>
+			<mission_id>5540</mission_id>
+			<mission_id>5541</mission_id>
+			<mission_id>5542</mission_id>
+			<mission_id>5543</mission_id>
+			<mission_id>5544</mission_id>
+			<mission_id>5545</mission_id>
+			<mission_id>5546</mission_id>
+			<mission_id>5547</mission_id>
+			<mission_id>5548</mission_id>
+			<mission_id>5549</mission_id>
+		</missions>
+		<rewards>
+			<card level='1' id='511' />
+			<card level='2' id='511' />
+			<card level='3' id='511' />
+			<card level='4' id='2085' />
+			<card level='5' id='512' />
+			<card level='6' id='2054' />
+			<item level='7' id='3050' />
+		</rewards>
+		<find_item id='3049' drop_per_energy='.8' />
+	</campaign>
+	
+	-->
+  <!-- April Fools Campaigns START -->
+  <campaign>
+    <id>1120</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Volcano of Eruptions</name>
+    <icon id="aprilfoolsMissionNode" bundle="52" />
+    <location_id>108</location_id>
+    <x>730</x>
+    <y>300</y>
+    <combatBG>CombatBGAprilFools_001</combatBG>
+    <missions>
+      <mission_id>5550</mission_id>
+      <mission_id>5551</mission_id>
+      <mission_id>5552</mission_id>
+      <mission_id>5553</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="5022" />
+      <card level="3" id="5022" />
+      <card level="4" id="511" />
+      <card level="5" id="5022" />
+      <card level="6" id="5022" />
+      <card level="7" id="511" />
+    </rewards>
+    <find_item id="3052" drop_per_energy="1" min="120" max="150" />
+  </campaign>
+  <campaign>
+    <id>1121</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>A Man Who Loves Birds</name>
+    <icon id="aprilfoolsMissionNode" bundle="52" />
+    <location_id>108</location_id>
+    <x>420</x>
+    <y>220</y>
+    <combatBG>CombatBGAprilFools_001</combatBG>
+    <missions>
+      <mission_id>5554</mission_id>
+      <mission_id>5555</mission_id>
+      <mission_id>5556</mission_id>
+      <mission_id>5557</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="1018" />
+      <card level="3" id="1018" />
+      <card level="4" id="511" />
+      <card level="5" id="1018" />
+      <card level="6" id="1018" />
+      <card level="7" id="511" />
+    </rewards>
+    <find_item id="3052" drop_per_energy="1" min="120" max="150" />
+  </campaign>
+  <campaign>
+    <id>1122</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Some Gloomy Lake</name>
+    <icon id="aprilfoolsMissionNode" bundle="52" />
+    <location_id>108</location_id>
+    <x>250</x>
+    <y>400</y>
+    <combatBG>CombatBGAprilFools_001</combatBG>
+    <missions>
+      <mission_id>5558</mission_id>
+      <mission_id>5559</mission_id>
+      <mission_id>5560</mission_id>
+      <mission_id>5561</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="5007" />
+      <card level="3" id="5007" />
+      <card level="4" id="511" />
+      <card level="5" id="5007" />
+      <card level="6" id="5007" />
+      <card level="7" id="511" />
+    </rewards>
+    <find_item id="3052" drop_per_energy="1" min="120" max="150" />
+  </campaign>
+  <campaign>
+    <id>1123</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>The Evil Castle</name>
+    <icon id="aprilfoolsBossNode" bundle="52" />
+    <location_id>108</location_id>
+    <battleground_id>2009</battleground_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <x>530</x>
+    <y>395</y>
+    <combatBG>CombatBGAprilFools_001</combatBG>
+    <missions>
+      <mission_id>5562</mission_id>
+      <mission_id>5563</mission_id>
+      <mission_id>5564</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="514" />
+      <card level="2" id="510" />
+      <card level="3" id="510" />
+      <item level="4" id="514" />
+      <card level="5" id="511" />
+      <card level="6" id="511" />
+      <item level="7" id="512" />
+    </rewards>
+    <find_item id="3052" drop_per_energy="1" min="120" max="150" />
+  </campaign>
+  <!-- April Fools Campaigns END -->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
   <!-- ============================ -->

@@ -208,7 +208,7 @@ var BATTLEGROUNDS = {
       {
         "effect_type": "add_skill",
         "id": "unearth",
-        "x": 0.5,
+        "mult": 0.3,
         "y": "7",
         "rarity": 1,
         "card": 607,
@@ -217,7 +217,7 @@ var BATTLEGROUNDS = {
       {
         "effect_type": "add_skill",
         "id": "unearth",
-        "x": 0.5,
+        "mult": 0.3,
         "y": "7",
         "rarity": 2,
         "card": 608,
@@ -226,7 +226,7 @@ var BATTLEGROUNDS = {
       {
         "effect_type": "add_skill",
         "id": "unearth",
-        "x": 0.5,
+        "mult": 0.3,
         "y": "7",
         "rarity": 3,
         "card": 609,
@@ -235,7 +235,7 @@ var BATTLEGROUNDS = {
       {
         "effect_type": "add_skill",
         "id": "unearth",
-        "x": 0.5,
+        "mult": 0.3,
         "y": "7",
         "rarity": 4,
         "card": 610,
@@ -244,7 +244,7 @@ var BATTLEGROUNDS = {
       {
         "effect_type": "add_skill",
         "id": "unearth",
-        "x": 0.5,
+        "mult": 0.3,
         "y": "7",
         "rarity": 5,
         "card": 611,
@@ -962,6 +962,54 @@ var BATTLEGROUNDS = {
         "effect_type": "scale_attributes",
         "base_mult": .4,
         "mult": .016,
+      },
+    ]
+  },
+  "2007": {
+    "name": "Requiem of the Relentless",
+    "id": "2007",
+    "desc": "Enemies become stronger with each passing Mastery level.",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "0",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .13,
+        "mult": .0025,
+      },
+    ]
+  },
+  "2008": {
+    "name": "Requiem of the Relentless",
+    "id": "2008",
+    "desc": "Enemies become stronger with each passing Mastery level.",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "0",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .1,
+        "mult": .05,
+      },
+    ]
+  },
+  "2009": {
+    "name": "Developer Hacks",
+    "id": "2009",
+    "desc": "Gets stronger every level. Yeah it's not fair. Not sorry.",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "6",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .1,
+        "mult": .05,
       },
     ]
   },

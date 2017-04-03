@@ -5828,5 +5828,147 @@
       <item id="8001" number="1" />
     </reward>
   </achievement>
+  <!-- Campaign Event 2 -->
+  <achievement>
+    <id>3217</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Miracle Water</name>
+    <desc>Complete the 'Miracle Water' campaign on Mastery Level 2.</desc>
+    <mission_req>5520</mission_req>
+    <locked_start_time>1491498000</locked_start_time>
+    <!-- Thu, 06 April 2017 17:00:00 -->
+    <req>
+      <campaign>1118</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3218</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Miracle Water</name>
+    <desc>Complete the 'Miracle Water' campaign on Mastery Level 4.</desc>
+    <mission_req>5520</mission_req>
+    <locked_start_time>1491498000</locked_start_time>
+    <!-- Thu, 06 April 2017 17:00:00 -->
+    <achievement_req>3217</achievement_req>
+    <req>
+      <campaign>1118</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3219</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Miracle Water</name>
+    <desc>Complete the 'Miracle Water' campaign on Mastery Level 6.</desc>
+    <mission_req>5520</mission_req>
+    <locked_start_time>1491498000</locked_start_time>
+    <!-- Thu, 06 April 2017 17:00:00 -->
+    <achievement_req>3218</achievement_req>
+    <req>
+      <campaign>1118</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3220</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Miracle Water</name>
+    <desc>Complete the 'Miracle Water' campaign on Mastery Level 7.</desc>
+    <mission_req>5520</mission_req>
+    <locked_start_time>1491498000</locked_start_time>
+    <!-- Thu, 06 April 2017 17:00:00 -->
+    <achievement_req>3219</achievement_req>
+    <req>
+      <campaign>1118</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3221</id>
+    <type>2</type>
+    <order>101</order>
+    <name>War Stratagem</name>
+    <desc>Complete the 'War Stratagem' campaign on Mastery Level 2.</desc>
+    <mission_req>5537</mission_req>
+    <locked_start_time>1492707600</locked_start_time>
+    <!-- Thu, 20 April 2017 17:00:00 -->
+    <req>
+      <campaign>1119</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3222</id>
+    <type>2</type>
+    <order>101</order>
+    <name>War Strategem</name>
+    <desc>Complete the 'War Strategem' campaign on Mastery Level 4.</desc>
+    <mission_req>5537</mission_req>
+    <locked_start_time>1492707600</locked_start_time>
+    <!-- Thu, 20 April 2017 17:00:00 -->
+    <achievement_req>3221</achievement_req>
+    <req>
+      <campaign>1119</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3223</id>
+    <type>2</type>
+    <order>101</order>
+    <name>War Strategem</name>
+    <desc>Complete the 'War Strategem' campaign on Mastery Level 6.</desc>
+    <mission_req>5537</mission_req>
+    <locked_start_time>1492707600</locked_start_time>
+    <!-- Thu, 20 April 2017 17:00:00 -->
+    <achievement_req>3222</achievement_req>
+    <req>
+      <campaign>1119</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3224</id>
+    <type>2</type>
+    <order>101</order>
+    <name>War Strategem</name>
+    <desc>Complete the 'War Strategem' campaign on Mastery Level 7.</desc>
+    <mission_req>5537</mission_req>
+    <locked_start_time>1492707600</locked_start_time>
+    <!-- Thu, 20 April 2017 17:00:00 -->
+    <achievement_req>3223</achievement_req>
+    <req>
+      <campaign>1119</campaign>&gt;
+			<level>7</level></req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
 </root>

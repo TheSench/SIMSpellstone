@@ -5900,7 +5900,7 @@
     </speech>
   </mission>
   <!--  END Event 10 -->
-  <!--  STARD Super Serious Event -->
+  <!-- START Super Serious Event -->
   <mission>
     <id>5203</id>
     <name>The Mad Bomber</name>
@@ -15594,6 +15594,7 @@
       </line>
     </speech>
   </mission>
+  <!-- Campaign Event Weeks 3-4 -->
   <mission>
     <id>5509</id>
     <name>Tough Terrain</name>
@@ -16068,6 +16069,1140 @@
       <card id="5111" mastery_level="5" name="Bennu" />
       <card id="5088" mastery_level="6" name="Betrayal" />
       <card id="2083" mastery_level="7" name="Habrok, the Lance" />
+    </deck>
+  </mission>
+  <!-- Campaign Event Weeks 5-6 -->
+  <mission>
+    <id>5525</id>
+    <name>Alone Again</name>
+    <energy>9</energy>
+    <desc>Malchior and Tarian have parted ways from you. You travel towards the cave, which could have be a potential resting place to avoid the last snowfall. Undead roam this area, making progress difficult.</desc>
+    <commander id="268" />
+    <deck>
+      <card id="7035" name="Carrion Tiger" />
+      <card id="5021" name="Tower Spirit" />
+      <card id="2023" name="Grizzly Terror" />
+      <card id="7082" name="Forest Umbras" />
+      <card id="5035" name="Vapor Guard" />
+      <card id="7034" name="Spore Elk" />
+      <card id="6016" name="Skeletal Giant" />
+      <card id="5084" name="Dotora Spirit" />
+      <card id="8047" name="Void's Thrall" />
+      <card id="7073" mastery_level="2" name="Heralded Slugger" />
+      <card id="6083" mastery_level="3" name="Lockejaw" />
+      <card id="6070" mastery_level="4" name="Petrifier" />
+      <card id="6003" mastery_level="5" name="Black Knight" />
+      <card id="7036" mastery_level="6" name="Deepwood Corpse" />
+      <card id="7085" mastery_level="7" name="Moonlit Scavenger" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5526</id>
+    <name>Injured General</name>
+    <energy>9</energy>
+    <desc>You haven't even gotten far when you see a human figure, slouched over. A small pool of blood has formed near him in the snow. You rush over to help him.</desc>
+    <commander id="270" />
+    <deck>
+      <card id="6036" name="Cursed Ogre" />
+      <card id="2059" name="Matriarch's Call" />
+      <card id="7082" name="Forest Umbras" />
+      <card id="1332" name="Vampiric Emira" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="6011" name="Bomb Spirit" />
+      <card id="2060" name="Patchwork Experiment" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="2084" mastery_level="2" name="Apocalypse Rider" />
+      <card id="5084" mastery_level="3" name="Dotora Spirit" />
+      <card id="1327" mastery_level="4" name="Fallen Angel" />
+      <card id="6027" mastery_level="5" name="Frigela, the Dread" />
+      <card id="6035" mastery_level="6" name="Demos" />
+      <card id="5036" mastery_level="7" name="Winter Tail" />
+    </deck>
+    <speech>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>Uggh.... Is someone... there?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5527</id>
+    <name>Spiritual Aid</name>
+    <energy>9</energy>
+    <desc>The man is losing consciousness. You cry out for someone to help you, but you are alone. Then Dyrnwyn shows you a vision - just a flicker, but for a moment, you see the path inside the cave. A magical spring is inside. When the waters touch your wounded friend, his wounds close.</desc>
+    <commander id="269" />
+    <deck>
+      <card id="7038" name="Sol King" />
+      <card id="5117" name="Spark Chronicler" />
+      <card id="6031" name="Iceblood Assassin" />
+      <card id="6083" name="Lockejaw" />
+      <card id="1632" name="Shadow Rider" />
+      <card id="7116" name="Watchful Hexhound" />
+      <card id="7035" name="Carrion Tiger" />
+      <card id="7084" name="Witchwood" />
+      <card id="8047" name="Void's Thrall" />
+      <card id="2030" mastery_level="2" name="Ebon Duelist" />
+      <card id="6031" mastery_level="3" name="Iceblood Assassin" />
+      <card id="7041" mastery_level="4" name="Feral Angel" />
+      <card id="5039" mastery_level="5" name="Ethereal Knight" />
+      <card id="7037" mastery_level="6" name="Bane" />
+      <card id="2026" mastery_level="7" name="Lazarus" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5528</id>
+    <name>Spring's Guardians</name>
+    <energy>9</energy>
+    <desc>Taking Dyrnwyn's vision as a sign of its help, you shoulder the man and head inside. You see the spring, its water glowing an odd blue. Undead rise from the ground, protecting the mysterious water.</desc>
+    <commander id="330" />
+    <deck>
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="7070" name="Laughing Menace" />
+      <card id="2020" name="Tidetaken Fighter" />
+      <card id="1632" name="Shadow Rider" />
+      <card id="2059" name="Matriarch's Call" />
+      <card id="5118" name="Chalice Courier" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="2025" name="Blight Knight" />
+      <card id="2025" name="Blight Knight" />
+      <card id="6070" mastery_level="2" name="Petrifier" />
+      <card id="5084" mastery_level="3" name="Dotora Spirit" />
+      <card id="6070" mastery_level="4" name="Petrifier" />
+      <card id="6085" mastery_level="5" name="Released Captives" />
+      <card id="6033" mastery_level="6" name="Firebeard" />
+      <card id="5085" mastery_level="7" name="Haunting Heir" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5529</id>
+    <name>Have We Met?</name>
+    <energy>9</energy>
+    <desc>At last, you manage to drive back the undead, giving you full access to the cave's spring. You lift the water to Garrick's lips, letting him drink. His wounds start to fall away, just like the vision you saw.</desc>
+    <commander id="330" />
+    <deck>
+      <card id="5084" name="Dotora Spirit" />
+      <card id="2084" name="Apocalypse Rider" />
+      <card id="6031" name="Iceblood Assassin" />
+      <card id="1632" name="Shadow Rider" />
+      <card id="6011" name="Bomb Spirit" />
+      <card id="5118" name="Chalice Courier" />
+      <card id="6083" name="Lockejaw" />
+      <card id="6083" name="Lockejaw" />
+      <card id="8047" name="Void's Thrall" />
+      <card id="7118" mastery_level="2" name="Fleetfoot Wolper" />
+      <card id="5084" mastery_level="3" name="Dotora Spirit" />
+      <card id="5021" mastery_level="4" name="Tower Spirit" />
+      <card id="6032" mastery_level="5" name="Mumohotep" />
+      <card id="7033" mastery_level="6" name="Treebond Skull" />
+      <card id="1342" mastery_level="7" name="Ronin" />
+    </deck>
+    <speech>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>Thank you, adventurer. My name is Garrick.</text>
+      </line>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>Wait, you're-</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5530</id>
+    <name>Secrets to Hide</name>
+    <energy>9</energy>
+    <desc>General Garrick becomes extremely agitated. He squirms in your grasp, starting to visibly sweat. You try to calm him down, before he re-opens his recent wounds.</desc>
+    <commander id="331" />
+    <deck>
+      <card id="5021" name="Tower Spirit" />
+      <card id="2084" name="Apocalypse Rider" />
+      <card id="2020" name="Tidetaken Fighter" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="7084" name="Witchwood" />
+      <card id="1327" name="Fallen Angel" />
+      <card id="7070" name="Laughing Menace" />
+      <card id="6016" name="Skeletal Giant" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="2084" mastery_level="2" name="Apocalypse Rider" />
+      <card id="5084" mastery_level="3" name="Dotora Spirit" />
+      <card id="7084" mastery_level="4" name="Witchwood" />
+      <card id="6084" mastery_level="5" name="Crypt Sentry" />
+      <card id="5036" mastery_level="6" name="Winter Tail" />
+      <card id="5083" mastery_level="7" name="Honor Risen" />
+    </deck>
+    <speech>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>S-sorry to bother you, adventurer. I should- I should really get going now-</text>
+      </line>
+      <line>
+        <commander>maniacgeneral</commander>
+        <enemy>1</enemy>
+        <text>What's the hurry, -General-?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5531</id>
+    <name>Persona</name>
+    <energy>9</energy>
+    <desc>A familiar figure emerges from the spring! He walks out of it, yet the waters do not part, as if he has no physical form. Garrick's jaw drops upon the sight of the specter.</desc>
+    <commander id="373" />
+    <deck>
+      <card id="7070" name="Laughing Menace" />
+      <card id="5086" name="Spirit Blades" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="5033" name="Lost Soul" />
+      <card id="6038" name="Hemlock" />
+      <card id="7116" name="Watchful Hexhound" />
+      <card id="2020" name="Tidetaken Fighter" />
+      <card id="5033" name="Lost Soul" />
+      <card id="8047" name="Void's Thrall" />
+      <card id="5118" mastery_level="2" name="Chalice Courier" />
+      <card id="5084" mastery_level="3" name="Dotora Spirit" />
+      <card id="6011" mastery_level="4" name="Bomb Spirit" />
+      <card id="6117" mastery_level="5" name="Whispering Ophanim" />
+      <card id="5037" mastery_level="6" name="Dauntless Baneblade" />
+      <card id="7086" mastery_level="7" name="Scavenger of Elaria" />
+    </deck>
+    <speech>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>Who ARE you?</text>
+      </line>
+      <line>
+        <commander>maniacgeneral</commander>
+        <enemy>1</enemy>
+        <text>I'm you. The REAL you. Anyone who drinks from this spring must face their true self.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5532</id>
+    <name>Darkness Within</name>
+    <energy>9</energy>
+    <desc>Undead rise again from the ground, while ghosts emerge from the spring's waters. Shadow Garrick commands them to attack, forcing you to defend both yourself and the real Garrick.</desc>
+    <commander id="335" />
+    <deck>
+      <card id="6011" name="Bomb Spirit" />
+      <card id="5033" name="Lost Soul" />
+      <card id="2060" name="Patchwork Experiment" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="2030" name="Ebon Duelist" />
+      <card id="7116" name="Watchful Hexhound" />
+      <card id="7082" name="Forest Umbras" />
+      <card id="5033" name="Lost Soul" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="7084" mastery_level="2" name="Witchwood" />
+      <card id="6031" mastery_level="3" name="Iceblood Assassin" />
+      <card id="7035" mastery_level="4" name="Carrion Tiger" />
+      <card id="6118" mastery_level="5" name="Kindlecrack Demon" />
+      <card id="6032" mastery_level="6" name="Mumohotep" />
+      <card id="6027" mastery_level="7" name="Frigela, the Dread" />
+    </deck>
+    <speech>
+      <line>
+        <commander>maniacgeneral</commander>
+        <enemy>1</enemy>
+        <text>All this talk about fighting The Void, while we ignore the problem of the Aether right in front of us?</text>
+      </line>
+      <line>
+        <commander>maniacgeneral</commander>
+        <enemy>1</enemy>
+        <text>They've been looking for a fight for far too long... let us take the battle to them!</text>
+      </line>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>No... You can't be me.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5533</id>
+    <name>Spring's Reinforcements</name>
+    <energy>9</energy>
+    <desc>The spring's reinforcements seem infinite. Each time you cut down one of the stray spirits, another takes its place. You change your direction, aiming for the shadow that seems to be controlling them, but first you must clear a path...</desc>
+    <commander id="330" />
+    <deck>
+      <card id="5021" name="Tower Spirit" />
+      <card id="5117" name="Spark Chronicler" />
+      <card id="6034" name="Bone Viper" />
+      <card id="6016" name="Skeletal Giant" />
+      <card id="7082" name="Forest Umbras" />
+      <card id="7070" name="Laughing Menace" />
+      <card id="7116" name="Watchful Hexhound" />
+      <card id="7035" name="Carrion Tiger" />
+      <card id="8047" name="Void's Thrall" />
+      <card id="7034" mastery_level="2" name="Spore Elk" />
+      <card id="5084" mastery_level="3" name="Dotora Spirit" />
+      <card id="6011" mastery_level="4" name="Bomb Spirit" />
+      <card id="6039" mastery_level="5" name="Auroch" />
+      <card id="6087" mastery_level="6" name="Dread Obliterator" />
+      <card id="6035" mastery_level="7" name="Demos" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5534</id>
+    <name>Facing One's Self</name>
+    <energy>9</energy>
+    <desc>The shadow spirit shrinks away as you and Garrick get closer. More enemies have already replaced the ones you defeated, and you are completely surrounded. But the leader stands right in front of you, and you seize the chance to end this once and for all...</desc>
+    <commander id="373" />
+    <deck>
+      <card id="6081" name="Apparition" />
+      <card id="5118" name="Chalice Courier" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="6036" name="Cursed Ogre" />
+      <card id="6031" name="Iceblood Assassin" />
+      <card id="5118" name="Chalice Courier" />
+      <card id="2059" name="Matriarch's Call" />
+      <card id="6083" name="Lockejaw" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="7082" mastery_level="2" name="Forest Umbras" />
+      <card id="5084" mastery_level="3" name="Dotora Spirit" />
+      <card id="7084" mastery_level="4" name="Witchwood" />
+      <card id="1041" mastery_level="5" name="Avenging Angel" />
+      <card id="6003" mastery_level="6" name="Black Knight" />
+      <card id="7037" mastery_level="7" name="Bane" />
+    </deck>
+    <speech>
+      <line>
+        <commander>maniacgeneral</commander>
+        <enemy>1</enemy>
+        <text>Working with The Void was a blessing! No need to dance around politics, free from the allegiance of any of the factions!</text>
+      </line>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>Maybe... a small part of me felt that way. But I have a responsibility to those around me. I can't run away from that... or from you.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5535</id>
+    <name>Accepting One's Self</name>
+    <energy>9</energy>
+    <desc>The spring's spirit roars as you finally defeat it. Its form fades away, as the other undead begin to disappear with it. You are finally left with a quiet moment, alone with General Garrick.</desc>
+    <commander id="283" />
+    <deck>
+      <card id="7041" name="Feral Angel" />
+      <card id="6034" name="Bone Viper" />
+      <card id="2059" name="Matriarch's Call" />
+      <card id="6031" name="Iceblood Assassin" />
+      <card id="2084" name="Apocalypse Rider" />
+      <card id="2020" name="Tidetaken Fighter" />
+      <card id="5035" name="Vapor Guard" />
+      <card id="5033" name="Lost Soul" />
+      <card id="8047" name="Void's Thrall" />
+      <card id="1331" mastery_level="2" name="Fallen Soldiers" />
+      <card id="5084" mastery_level="3" name="Dotora Spirit" />
+      <card id="6011" mastery_level="4" name="Bomb Spirit" />
+      <card id="7039" mastery_level="5" name="Winged Giant" />
+      <card id="5085" mastery_level="6" name="Haunting Heir" />
+      <card id="2026" mastery_level="7" name="Lazarus" />
+    </deck>
+    <speech>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>So... There's no point in hiding it now, then. You and I... we've fought in the past.</text>
+      </line>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>I was under the influence of The Void, but it's still no excuse. I don't blame you if you decide you want revenge...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5536</id>
+    <name>Debt to Be Paid</name>
+    <energy>9</energy>
+    <desc>You tell Garrick that Tarian and Malchior have been looking for him. The two of you leave the spring, heading towards the village you saw previously.</desc>
+    <commander id="264" />
+    <deck>
+      <card id="2052" name="Protector of Skyhaven" />
+      <card id="1025" name="Lightbound Archer" />
+      <card id="6034" name="Bone Viper" />
+      <card id="5072" name="Blind Seer" />
+      <card id="5033" name="Lost Soul" />
+      <card id="2054" name="Pack Runner" />
+      <card id="2060" name="Patchwork Experiment" />
+      <card id="7084" name="Witchwood" />
+      <card id="8047" name="Void's Thrall" />
+      <card id="2029" mastery_level="2" name="Sly Critters" />
+      <card id="5084" mastery_level="3" name="Dotora Spirit" />
+      <card id="6073" mastery_level="4" name="Obsidian" />
+      <card id="6040" mastery_level="5" name="Scorching Cutlass" />
+      <card id="7119" mastery_level="6" name="Bunnpaa" />
+      <card id="1342" mastery_level="7" name="Ronin" />
+    </deck>
+    <speech>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>Thank you, adventurer. If I ever have the chance to repay your kindness, I will.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5537</id>
+    <name>To Be Reunited</name>
+    <energy>9</energy>
+    <desc>When you arrive at the village, you find it not as peaceful as it seemed. No living soul roams the area... but plenty of undead do. The entire place is a literal ghost town, the spirits' attention snapping towards you.</desc>
+    <commander id="268" />
+    <deck>
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="2084" name="Apocalypse Rider" />
+      <card id="6034" name="Bone Viper" />
+      <card id="5033" name="Lost Soul" />
+      <card id="6036" name="Cursed Ogre" />
+      <card id="2059" name="Matriarch's Call" />
+      <card id="6031" name="Iceblood Assassin" />
+      <card id="2020" name="Tidetaken Fighter" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="2030" mastery_level="2" name="Ebon Duelist" />
+      <card id="5084" mastery_level="3" name="Dotora Spirit" />
+      <card id="2084" mastery_level="4" name="Apocalypse Rider" />
+      <card id="6071" mastery_level="5" name="Masked Heraid" />
+      <card id="7085" mastery_level="6" name="Moonlit Scavenger" />
+      <card id="2026" mastery_level="7" name="Lazarus" />
+    </deck>
+    <speech>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>This town has clearly been abandoned for some time. But Malchior and Lord Tarian... where are they? They might need our help, but be careful!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5538</id>
+    <name>Ghost Town</name>
+    <energy>9</energy>
+    <desc>You begin your search, but your progress is made slow by the roaming undead. They flock to you like moths to the flame, clawing over their own just to reach you.</desc>
+    <commander id="330" />
+    <deck>
+      <card id="8046" name="Winter's Sting" />
+      <card id="6016" name="Skeletal Giant" />
+      <card id="5035" name="Vapor Guard" />
+      <card id="5033" name="Lost Soul" />
+      <card id="6011" name="Bomb Spirit" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="7035" name="Carrion Tiger" />
+      <card id="5021" mastery_level="2" name="Tower Spirit" />
+      <card id="2020" mastery_level="3" name="Tidetaken Fighter" />
+      <card id="5039" mastery_level="4" name="Ethereal Knight" />
+      <card id="5121" mastery_level="5" name="Cauterizing Psalm" />
+      <card id="7085" mastery_level="6" name="Moonlit Scavenger" />
+      <card id="7033" mastery_level="7" name="Treebond Skull" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5539</id>
+    <name>Frigore's Power</name>
+    <energy>9</energy>
+    <desc>Past the initial wave, you are able to cover more ground. If Tarian and Malchior are here, then they might be in trouble with such creatures on the prowl.</desc>
+    <commander id="283" />
+    <deck>
+      <card id="8047" name="Void's Thrall" />
+      <card id="6034" name="Bone Viper" />
+      <card id="5035" name="Vapor Guard" />
+      <card id="6031" name="Iceblood Assassin" />
+      <card id="5040" name="Winged Trumpeter" />
+      <card id="7038" name="Sol King" />
+      <card id="2027" name="Halo Mage" />
+      <card id="7041" mastery_level="2" name="Feral Angel" />
+      <card id="6083" mastery_level="3" name="Lockejaw" />
+      <card id="5043" mastery_level="4" name="Empyrean" />
+      <card id="5003" mastery_level="5" name="White Knight" />
+      <card id="6003" mastery_level="6" name="Black Knight" />
+      <card id="6033" mastery_level="7" name="Firebeard" />
+    </deck>
+    <speech>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>Adventurer, do you know that certain places in Arcantica are tied more strongly to The Void?</text>
+      </line>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>It's more than simple attraction. The Void is actually leaking into our world. Frigore is one such place, perhaps weakened by the power of Snowdust.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5540</id>
+    <name>Signs of Allies</name>
+    <energy>9</energy>
+    <desc>The sun is starting to set, a cold wind falling upon the abandoned village. You notice tendrils of smoke rising in the distance, behind a few houses. Perhaps your friends are located there...</desc>
+    <commander id="264" />
+    <deck>
+      <card id="8046" name="Winter's Sting" />
+      <card id="2024" name="Dusk Noble" />
+      <card id="6081" name="Apparition" />
+      <card id="6031" name="Iceblood Assassin" />
+      <card id="2085" name="Faithstay Supplier" />
+      <card id="1030" name="Paladin" />
+      <card id="2029" name="Sly Critters" />
+      <card id="5117" mastery_level="2" name="Spark Chronicler" />
+      <card id="7082" mastery_level="3" name="Forest Umbras" />
+      <card id="5071" mastery_level="4" name="Stoic Watcher" />
+      <card id="5031" mastery_level="5" name="Frostlance Valkyrie" />
+      <card id="6032" mastery_level="6" name="Mumohotep" />
+      <card id="6087" mastery_level="7" name="Dread Obliterator" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5541</id>
+    <name>The Living and Undead</name>
+    <energy>9</energy>
+    <desc>When you reach the smoke's source, you find a burning blue fire. Malchior and Tarian have set up camp, some distance away from the undead, although you're uncertain just how safe this location is.</desc>
+    <commander id="261" />
+    <deck>
+      <card id="8047" name="Void's Thrall" />
+      <card id="1332" name="Vampiric Emira" />
+      <card id="1632" name="Shadow Rider" />
+      <card id="5084" name="Dotora Spirit" />
+      <card id="7070" name="Laughing Menace" />
+      <card id="2084" name="Apocalypse Rider" />
+      <card id="7041" name="Feral Angel" />
+      <card id="1031" mastery_level="2" name="Noble Champion" />
+      <card id="7084" mastery_level="3" name="Witchwood" />
+      <card id="7117" mastery_level="4" name="Rael, Skyhaven Giant" />
+      <card id="2055" mastery_level="5" name="Wrath" />
+      <card id="6035" mastery_level="6" name="Demos" />
+      <card id="6084" mastery_level="7" name="Crypt Sentry" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Why hello there, good timing!</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>Garrick... I see you yet count yourself among the living.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5542</id>
+    <name>Mission Unlikely</name>
+    <energy>9</energy>
+    <desc>You keep guard over the camp while your friends rejoice over Garrick's return. But soon enough their conversation turns to a more serious note, one that you can't help but overhear.</desc>
+    <commander id="264" />
+    <deck>
+      <card id="8046" name="Winter's Sting" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="6016" name="Skeletal Giant" />
+      <card id="1327" name="Fallen Angel" />
+      <card id="6116" name="Otherworldly Archer" />
+      <card id="6070" name="Petrifier" />
+      <card id="5021" mastery_level="2" name="Tower Spirit" />
+      <card id="6115" mastery_level="3" name="Spelltalon" />
+      <card id="5034" mastery_level="4" name="Skyward Guardian" />
+      <card id="2028" mastery_level="5" name="Infinity" />
+      <card id="6091" mastery_level="6" name="Bone Sculptor" />
+      <card id="7036" mastery_level="7" name="Deepwood Corpse" />
+    </deck>
+    <speech>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>We were interrupted earlier, but I believe now is a good time. What's the status of the mission you were on?</text>
+      </line>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>There are key points in the world where the fabric of reality seems weaker. The Void attaches itself to these spots, entering our world through these weak points.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5543</id>
+    <name>A Sage's Musings</name>
+    <energy>9</energy>
+    <desc>Malchior's combines the knowledge he already possesses with Garrick's information. The Void has long been plaguing Arcantica, with most steps only treating the symptoms, rather than finding a cure.</desc>
+    <commander id="271" />
+    <deck>
+      <card id="8047" name="Void's Thrall" />
+      <card id="6036" name="Cursed Ogre" />
+      <card id="2060" name="Patchwork Experiment" />
+      <card id="5086" name="Spirit Blades" />
+      <card id="2029" name="Sly Critters" />
+      <card id="6116" name="Otherworldly Archer" />
+      <card id="2030" name="Ebon Duelist" />
+      <card id="5033" mastery_level="2" name="Lost Soul" />
+      <card id="6115" mastery_level="3" name="Spelltalon" />
+      <card id="5036" mastery_level="4" name="Winter Tail" />
+      <card id="6117" mastery_level="5" name="Whispering Ophanim" />
+      <card id="6082" mastery_level="6" name="Rugarth, Fallen Bones" />
+      <card id="6087" mastery_level="7" name="Dread Obliterator" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Hmm. Every door has both an entrance and exit. If The Void is entering through these locations, then...</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>...It means that we can use the same places to enter The Void's realm.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5544</id>
+    <name>Mounting an Offense</name>
+    <energy>9</energy>
+    <desc>The party contemplates on how to reach the realm of The Void. It would be the first time that they could mount a proper offense against the enemy that has been invading Arcantica.</desc>
+    <commander id="269" />
+    <deck>
+      <card id="8046" name="Winter's Sting" />
+      <card id="7082" name="Forest Umbras" />
+      <card id="2020" name="Tidetaken Fighter" />
+      <card id="7084" name="Witchwood" />
+      <card id="7116" name="Watchful Hexhound" />
+      <card id="6116" name="Otherworldly Archer" />
+      <card id="2084" name="Apocalypse Rider" />
+      <card id="6011" mastery_level="2" name="Bomb Spirit" />
+      <card id="6115" mastery_level="3" name="Spelltalon" />
+      <card id="5083" mastery_level="4" name="Honor Risen" />
+      <card id="6039" mastery_level="5" name="Auroch" />
+      <card id="6082" mastery_level="6" name="Rugarth, Fallen Bones" />
+      <card id="7033" mastery_level="7" name="Treebond Skull" />
+    </deck>
+    <speech>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>Is that even possible?</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Yes, but only with the correct setup...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5545</id>
+    <name>Rumors of The Void Dimension</name>
+    <energy>9</energy>
+    <desc>In order to reach this gateway to The Void, you will need some help in the metaphysical realm. Lucky for you, a certain spirit might be interested in helping... if you've proven yourself worthy.</desc>
+    <commander id="330" />
+    <deck>
+      <card id="8047" name="Void's Thrall" />
+      <card id="5084" name="Dotora Spirit" />
+      <card id="5021" name="Tower Spirit" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="7118" name="Fleetfoot Wolper" />
+      <card id="6116" name="Otherworldly Archer" />
+      <card id="1327" name="Fallen Angel" />
+      <card id="5033" mastery_level="2" name="Lost Soul" />
+      <card id="6115" mastery_level="3" name="Spelltalon" />
+      <card id="5087" mastery_level="4" name="Apollyon" />
+      <card id="6071" mastery_level="5" name="Masked Heraid" />
+      <card id="6091" mastery_level="6" name="Bone Sculptor" />
+      <card id="2026" mastery_level="7" name="Lazarus" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Adventurer, how close are you to that magical sword? If we use the Heart of Blue Fire as a catalyst, and channel our energy... </text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Then an interdimensional being could hold the momentary gate open long enough for someone in this realm to pass into the other plane of existence.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5546</id>
+    <name>Some Assembly Required</name>
+    <energy>9</energy>
+    <desc>In the dying sun's light, your companions lay out all the magical items you have collected - the Duskwillow Shield, Dyrnwyn, and a small vial of Life Water. Malchior begins to assemble them all together, until you have a sword unlike that which Arcantica has ever seen.</desc>
+    <commander id="261" />
+    <deck>
+      <card id="8046" name="Winter's Sting" />
+      <card id="5033" name="Lost Soul" />
+      <card id="6083" name="Lockejaw" />
+      <card id="6031" name="Iceblood Assassin" />
+      <card id="1327" name="Fallen Angel" />
+      <card id="6116" name="Otherworldly Archer" />
+      <card id="6119" name="Shady Muse" />
+      <card id="2059" mastery_level="2" name="Matriarch's Call" />
+      <card id="6115" mastery_level="3" name="Spelltalon" />
+      <card id="5087" mastery_level="4" name="Apollyon" />
+      <card id="7039" mastery_level="5" name="Winged Giant" />
+      <card id="6032" mastery_level="6" name="Mumohotep" />
+      <card id="5037" mastery_level="7" name="Dauntless Baneblade" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5547</id>
+    <name>Open Sesame</name>
+    <energy>9</energy>
+    <desc>Malchior takes inventory of all the relics you have collected in your journey. By combining what you have, more paths will be open to you.</desc>
+    <commander id="335" />
+    <deck>
+      <card id="8047" name="Void's Thrall" />
+      <card id="6034" name="Bone Viper" />
+      <card id="2020" name="Tidetaken Fighter" />
+      <card id="1332" name="Vampiric Emira" />
+      <card id="1031" name="Noble Champion" />
+      <card id="6116" name="Otherworldly Archer" />
+      <card id="6119" name="Shady Muse" />
+      <card id="5035" mastery_level="2" name="Vapor Guard" />
+      <card id="6115" mastery_level="3" name="Spelltalon" />
+      <card id="6087" mastery_level="4" name="Dread Obliterator" />
+      <card id="5071" mastery_level="5" name="Stoic Watcher" />
+      <card id="7037" mastery_level="6" name="Bane" />
+      <card id="7086" mastery_level="7" name="Scavenger of Elaria" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Now adventurer, hold onto the Heart of Blue Fire in one hand, and the artifacts in your other.</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>We'll use the remaining Snowdust's power to open a gate to The Void Plane!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5548</id>
+    <name>In the Name of Friendship</name>
+    <energy>9</energy>
+    <desc>Malchior arranges the snowdust in a peculiar fashion. He instructs Garrick and Tarian on how they can help send you to The Void Plane.</desc>
+    <commander id="335" />
+    <deck>
+      <card id="8046" name="Winter's Sting" />
+      <card id="5086" name="Spirit Blades" />
+      <card id="7082" name="Forest Umbras" />
+      <card id="7035" name="Carrion Tiger" />
+      <card id="2084" name="Apocalypse Rider" />
+      <card id="6116" name="Otherworldly Archer" />
+      <card id="5118" name="Chalice Courier" />
+      <card id="6031" mastery_level="2" name="Iceblood Assassin" />
+      <card id="6115" mastery_level="3" name="Spelltalon" />
+      <card id="5116" mastery_level="4" name="Justice" />
+      <card id="7069" mastery_level="5" name="Stoneblade Seraphim" />
+      <card id="5085" mastery_level="6" name="Haunting Heir" />
+      <card id="5083" mastery_level="7" name="Honor Risen" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Now Tarian, Garrick. Stand around and give me your hands.</text>
+      </line>
+      <line>
+        <commander>maniacgeneralreformed</commander>
+        <enemy>0</enemy>
+        <text>To channel the energy?</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>It makes a good friendship pose!</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5549</id>
+    <name>A New Adventure</name>
+    <energy>9</energy>
+    <desc>The snowdust energy collects around the fringe of the camp, sparkling like glistening raindrops beneath the fire's light. They form a blue portal of swirling energy. For a moment you think you see a white robe holding the gate open, and then it is gone, leaving just the portal.</desc>
+    <commander id="330" />
+    <deck>
+      <card id="8047" name="Void's Thrall" />
+      <card id="6011" name="Bomb Spirit" />
+      <card id="6011" name="Bomb Spirit" />
+      <card id="2020" name="Tidetaken Fighter" />
+      <card id="2030" name="Ebon Duelist" />
+      <card id="6116" name="Otherworldly Archer" />
+      <card id="7073" name="Heralded Slugger" />
+      <card id="7084" mastery_level="2" name="Witchwood" />
+      <card id="6115" mastery_level="3" name="Spelltalon" />
+      <card id="7117" mastery_level="4" name="Rael, Skyhaven Giant" />
+      <card id="6118" mastery_level="5" name="Kindlecrack Demon" />
+      <card id="5037" mastery_level="6" name="Dauntless Baneblade" />
+      <card id="5083" mastery_level="7" name="Honor Risen" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>The Void Plane is something of a legend. The world will mirror our own, but be something else entirely.</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Are you ready, adventurer? The gate has opened! Now go!</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- START April Fools Event -->
+  <mission>
+    <id>5550</id>
+    <name>The Mad Bomber</name>
+    <energy>1</energy>
+    <desc>A man has appeared juggling bombs. No one knows where he came from, but those bombs don't look happy. See if you can rescue them!</desc>
+    <commander id="296" />
+    <deck>
+      <card id="8016" />
+      <card id="8016" />
+      <card id="8016" />
+      <card id="8016" />
+      <card id="8016" />
+      <card id="8016" mastery_level="2" />
+      <card id="8016" mastery_level="3" />
+      <card id="8016" mastery_level="4" />
+      <card id="8016" mastery_level="5" />
+      <card id="8016" mastery_level="6" />
+      <card id="1315" remove_mastery_level="3" />
+      <card id="1311" remove_mastery_level="5" />
+      <card id="1311" remove_mastery_level="6" />
+      <card id="1331" remove_mastery_level="7" />
+      <card id="1331" remove_mastery_level="7" />
+      <card id="1331" mastery_level="3" />
+      <card id="1342" mastery_level="5" />
+      <card id="1342" mastery_level="6" />
+      <card id="22026" mastery_level="7" />
+      <card id="22026" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5551</id>
+    <name>The Sad Bomber</name>
+    <energy>1</energy>
+    <desc>Man those bombs look depressed. We should pick up something for them at the store on our way over.</desc>
+    <commander id="296" />
+    <deck>
+      <card id="8016" />
+      <card id="8016" />
+      <card id="8016" />
+      <card id="8016" />
+      <card id="8016" />
+      <card id="8016" mastery_level="2" />
+      <card id="8016" mastery_level="3" />
+      <card id="8016" mastery_level="4" />
+      <card id="8016" mastery_level="5" />
+      <card id="8016" mastery_level="6" />
+      <card id="1315" remove_mastery_level="3" />
+      <card id="1311" remove_mastery_level="5" />
+      <card id="1311" remove_mastery_level="6" />
+      <card id="1331" remove_mastery_level="7" />
+      <card id="1331" remove_mastery_level="7" />
+      <card id="1331" mastery_level="3" />
+      <card id="1342" mastery_level="5" />
+      <card id="1342" mastery_level="6" />
+      <card id="22026" mastery_level="7" />
+      <card id="22026" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5552</id>
+    <name>The Glad Bomber</name>
+    <energy>1</energy>
+    <desc>Did you see that? I think he smiled. He must have been lonely. I'm sure he has some tragic backstory and he really just wanted the power of friendship to save him. Or he just likes exploding things.</desc>
+    <commander id="296" />
+    <deck>
+      <card id="8016" />
+      <card id="8016" />
+      <card id="8016" />
+      <card id="8016" />
+      <card id="8016" />
+      <card id="8016" mastery_level="2" />
+      <card id="8016" mastery_level="3" />
+      <card id="8016" mastery_level="4" />
+      <card id="8016" mastery_level="5" />
+      <card id="8016" mastery_level="6" />
+      <card id="1315" remove_mastery_level="3" />
+      <card id="1311" remove_mastery_level="5" />
+      <card id="1311" remove_mastery_level="6" />
+      <card id="1331" remove_mastery_level="7" />
+      <card id="1331" remove_mastery_level="7" />
+      <card id="1331" mastery_level="3" />
+      <card id="1342" mastery_level="5" />
+      <card id="1342" mastery_level="6" />
+      <card id="22026" mastery_level="7" />
+      <card id="22026" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5553</id>
+    <name>The Rad Bomber</name>
+    <energy>1</energy>
+    <desc>Man, I wish I was cool enough to hang out near an exploding volcano. Mad jealous.</desc>
+    <commander id="296" />
+    <deck>
+      <card id="8016" />
+      <card id="8016" />
+      <card id="8016" />
+      <card id="8016" />
+      <card id="8016" />
+      <card id="8016" mastery_level="2" />
+      <card id="8016" mastery_level="3" />
+      <card id="8016" mastery_level="4" />
+      <card id="8016" mastery_level="5" />
+      <card id="8016" mastery_level="6" />
+      <card id="1315" remove_mastery_level="3" />
+      <card id="1311" remove_mastery_level="5" />
+      <card id="1311" remove_mastery_level="6" />
+      <card id="1331" remove_mastery_level="7" />
+      <card id="1331" remove_mastery_level="7" />
+      <card id="1331" mastery_level="3" />
+      <card id="1342" mastery_level="5" />
+      <card id="1342" mastery_level="6" />
+      <card id="22026" mastery_level="7" />
+      <card id="22026" mastery_level="7" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5554</id>
+    <name>Chicken Assault</name>
+    <energy>1</energy>
+    <desc>Reports of a figure assaulting civilians with chickens are pouring in. Someone should probably do something. Probably you.</desc>
+    <commander id="297" />
+    <deck>
+      <card id="8019" />
+      <card id="8019" />
+      <card id="8019" />
+      <card id="8019" />
+      <card id="8019" />
+      <card id="8019" />
+      <card id="8019" />
+      <card id="8019" />
+      <card id="8019" />
+      <card id="8019" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5555</id>
+    <name>Chickens, Chickens Everywhere</name>
+    <energy>1</energy>
+    <desc>OH MY GODS THEY ARE EVERYWHERE. WHY DO I GO ANYWHERE WITH YOU. NOTHING GOOD HAPPENS.</desc>
+    <commander id="297" />
+    <deck>
+      <card id="8019" />
+      <card id="8019" />
+      <card id="8019" />
+      <card id="8019" />
+      <card id="8019" />
+      <card id="8019" />
+      <card id="8019" />
+      <card id="8019" />
+      <card id="8019" />
+      <card id="8019" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5556</id>
+    <name>Chicken Appreciation Day</name>
+    <energy>1</energy>
+    <desc>Seriously, everytime we go on an adventure something goes wrong. Why do I hang out with you?</desc>
+    <commander id="297" />
+    <deck>
+      <card id="8019" />
+      <card id="8019" />
+      <card id="8019" />
+      <card id="8019" />
+      <card id="8019" />
+      <card id="8019" />
+      <card id="8019" />
+      <card id="8019" />
+      <card id="8019" />
+      <card id="8019" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5557</id>
+    <name>Chicken Divebombs</name>
+    <energy>1</energy>
+    <desc>Are those chickens FALLING FROM THE SKY?! Chickens can't even FLY! Someone needs to teach this artist about chicken physics.</desc>
+    <commander id="297" />
+    <deck>
+      <card id="8019" />
+      <card id="8019" />
+      <card id="8019" />
+      <card id="8019" />
+      <card id="8019" />
+      <card id="8019" />
+      <card id="8019" />
+      <card id="8019" />
+      <card id="8019" />
+      <card id="8019" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5558</id>
+    <name>Doomsday</name>
+    <energy>1</energy>
+    <desc>There's something in the lake. Probably not a good something. You should probably do something about it. Maybe. Do what you want I'm not a cop.</desc>
+    <commander id="295" />
+    <deck>
+      <card id="8017" />
+      <card id="8018" />
+      <card id="8018" />
+      <card id="8018" />
+      <card id="8018" />
+      <card id="8018" />
+      <card id="8018" />
+      <card id="8018" />
+      <card id="8018" />
+      <card id="8018" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5559</id>
+    <name>Doomsday 2, Electric Boogaloo</name>
+    <energy>1</energy>
+    <desc>Oh hey, you did it. Wait, no it's still here. Try again.</desc>
+    <commander id="295" />
+    <deck>
+      <card id="8017" />
+      <card id="8018" />
+      <card id="8018" />
+      <card id="8018" />
+      <card id="8018" />
+      <card id="8018" />
+      <card id="8018" />
+      <card id="8018" />
+      <card id="8018" />
+      <card id="8018" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5560</id>
+    <name>The Day That Doomed</name>
+    <energy>1</energy>
+    <desc>That thing really is made of something else. Keep trying? I'm not sure, I'll consult the manual while you do.</desc>
+    <commander id="295" />
+    <deck>
+      <card id="8017" />
+      <card id="8018" />
+      <card id="8018" />
+      <card id="8018" />
+      <card id="8018" />
+      <card id="8018" />
+      <card id="8018" />
+      <card id="8018" />
+      <card id="8018" />
+      <card id="8018" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5561</id>
+    <name>Doomest Day</name>
+    <energy>1</energy>
+    <desc>Ah. Killing it only makes it stronger. Until it doesn't get stronger. And then it dies. Right here in the manual. I guess keep hitting it until it doesn't get up. Don't look at me, I don't make the rules.</desc>
+    <commander id="295" />
+    <deck>
+      <card id="8017" />
+      <card id="8018" />
+      <card id="8018" />
+      <card id="8018" />
+      <card id="8018" />
+      <card id="8018" />
+      <card id="8018" />
+      <card id="8018" />
+      <card id="8018" />
+      <card id="8018" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5562</id>
+    <name>TyrantShiva</name>
+    <energy>2</energy>
+    <desc>Deep in the customer support dungeons of the Evil Castle lives TyrantShiva, the most caring bear in all the realm!</desc>
+    <commander id="376" />
+    <deck>
+      <card id="8058" />
+      <card id="8058" />
+      <card id="8058" />
+      <card id="8058" />
+      <card id="8058" />
+      <card id="8058" />
+      <card id="8058" />
+      <card id="8058" />
+      <card id="8058" />
+      <card id="8058" />
+      <card id="8059" mastery_level="3" />
+      <card id="8059" mastery_level="3" />
+      <card id="8060" mastery_level="5" />
+      <card id="8060" mastery_level="5" />
+      <card id="8060" mastery_level="5" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5563</id>
+    <name>MerMod</name>
+    <energy>2</energy>
+    <desc>Protecting the inner sactums of the Evil Castle, MerMod is the first line of defense for those that wish to enter. Beware! Her hammer may be fatal if you don't follow the rules!</desc>
+    <commander id="374" />
+    <deck>
+      <card id="8059" />
+      <card id="8059" />
+      <card id="8059" />
+      <card id="8059" />
+      <card id="8059" />
+      <card id="8059" />
+      <card id="8059" />
+      <card id="8059" />
+      <card id="8059" />
+      <card id="8059" />
+      <card id="8058" mastery_level="3" />
+      <card id="8058" mastery_level="3" />
+      <card id="8058" mastery_level="3" />
+      <card id="8060" mastery_level="5" />
+      <card id="8060" mastery_level="5" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5564</id>
+    <name>Obyto14</name>
+    <energy>2</energy>
+    <desc>In the tallest tower of the Evil Castle lives the laziest of all the developers. Obyto14 resides here, nerfing your favorite cards and definitely not answering QA Threads on time!</desc>
+    <commander id="375" />
+    <deck>
+      <card id="8060" />
+      <card id="8060" />
+      <card id="8060" />
+      <card id="8060" />
+      <card id="8060" />
+      <card id="8060" />
+      <card id="8060" />
+      <card id="8060" />
+      <card id="8060" />
+      <card id="8060" />
+      <card id="8060" />
+      <card id="28016" mastery_level="3" />
+      <card id="28016" mastery_level="3" />
+      <card id="28016" mastery_level="5" />
+      <card id="28016" mastery_level="5" />
     </deck>
   </mission>
 </root>

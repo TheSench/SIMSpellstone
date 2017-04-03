@@ -226,6 +226,7 @@ function cloneCard(original) {
     copy.nullify = original.nullify;
     copy.pierce = original.pierce;
     copy.poison = original.poison;
+    copy.silence = original.silence;
     copy.taunt = original.taunt;
     copy.valor = original.valor;
     if (original.flurry) {
@@ -299,13 +300,13 @@ var makeUnit = (function () {
                     var mult = skillModifier.effects[j].mult;
                     new_card.attack += Math.ceil(new_card.attack * mult);
                     new_card.health += Math.ceil(new_card.health * mult);
-                    scaleSkills(original_skills, mult);
+                    scaleSkills(new_card, original_skills, mult);
                 }
             }
         }
     }
 
-    function scaleSkills(skillList, mult) {
+    function scaleSkills(new_card, skillList, mult) {
         for (var key in skillList) {
             var skill = skillList[key];
             if (skill.x) {
@@ -336,6 +337,7 @@ var makeUnit = (function () {
         nullify: 0,
         pierce: 0,
         poison: 0,
+        silence: false,
         taunt: false,
         unearth: null,
         valor: 0,
@@ -560,8 +562,9 @@ var makeUnit = (function () {
             var skillID = skill.id;
             switch (skillID) {
                 // Passive Toggles
+                case 'silence':
                 case 'taunt':
-                    this.taunt = true;
+                    this[skillID] = true;
                     this.imbued[skillID] = 1;
                     return;
 
@@ -662,6 +665,7 @@ var makeUnit = (function () {
                 case 'nullify':
                 case 'pierce':
                 case 'poison':
+                case 'silence':
                 case 'taunt':
                 case 'valor':
                     return this[s];
@@ -790,7 +794,7 @@ var makeUnit = (function () {
         }
 
         if (skillMult) {
-            scaleSkills(original_skills, skillMult);
+            scaleSkills(card, original_skills, skillMult);
         }
 
         copy_skills_2(card, original_skills);
@@ -811,6 +815,7 @@ var isImbued = function (card, skillID, i) {
     switch (skillID) {
         // Passive Toggles
         case 'flurry':
+        case 'silence':
         case 'taunt':
             return card.imbued[skillID];
 
@@ -1235,10 +1240,12 @@ function copy_skills_2(new_card, original_skills, mult) {
 
 function setSkill_2(new_card, skill) {
     // These skills could have multiple instances
-    switch (skill.id) {
+    var skillID = skill.id;
+    switch (skillID) {
         // Passive Toggles
+        case 'silence':
         case 'taunt':
-            new_card.taunt = true;
+            new_card[skillID] = true;
             return;
 
         // Passives
@@ -1609,7 +1616,7 @@ function debug_triggered_skills(card, skillText) {
     debugNonActivatedSkill(card, "poison", skillText);
     debugNonActivatedSkill(card, "leech", skillText);
     debugNonActivatedSkill(card, "berserk", skillText);
-    debugNonActivatedSkill(card, "taunt", skillText);
+    debugNonActivatedSkill(card, "silence", skillText);
     debugNonActivatedSkill(card, "nullify", skillText);
 }
 

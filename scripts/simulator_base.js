@@ -158,6 +158,11 @@ var SIMULATOR = {};
         var len = skills.length;
         if (len == 0) return;
 
+        if (source_card.silenced) {
+            if (debug) echo += debug_name(source_card) + " is silenced and cannot use skills</br>"
+            return;
+        }
+
         var dualstrike = source_card.dualstrike_triggered;
         if (debug && dualstrike) {
             // var main attack loop deal with resetting timer
@@ -1294,6 +1299,11 @@ var SIMULATOR = {};
     // - Must traverse through skills from top to bottom
     function activation_skills(src_card) {
 
+        if (src_card.silenced) {
+            if (debug) echo += debug_name(src_card) + " is silenced and cannot use skills</br>"
+            return;
+        }
+
         var skills = src_card.skill;
 
         for (var i = 0, len = skills.length; i < len; i++) {
@@ -1976,6 +1986,7 @@ var SIMULATOR = {};
             current_assault.attack_weaken = 0;
             current_assault.nullified = 0;
             current_assault.dualstrike_triggered = false;
+            current_assault.silenced = false;
 
             var amount = current_assault['poisoned'];
             if (amount) {
@@ -2210,6 +2221,15 @@ var SIMULATOR = {};
                 }
                 target.nullified += nullify;
                 if (debug) echo += debug_name(current_assault) + ' inflicts nullify(' + nullify + ') on ' + debug_name(target) + '<br>';
+            }
+
+            // Silence
+            // - Attacker must not have died to Vengeance
+            // - Attacker must have taken damage
+            // - Target must be an assault
+            if (current_assault.silence) {
+                target.silenced = true;
+                if (debug) echo += debug_name(current_assault) + ' inflicts silence on ' + debug_name(target) + '<br>';
             }
         }
 
