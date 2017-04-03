@@ -298,8 +298,10 @@ var makeUnit = (function () {
             } else if (skillModifier.modifierType == "scale") {
                 for (var j = 0; j < skillModifier.effects.length; j++) {
                     var mult = skillModifier.effects[j].mult;
-                    new_card.attack += Math.ceil(new_card.attack * mult);
-                    new_card.health += Math.ceil(new_card.health * mult);
+                    var plusAttack = Math.ceil(new_card.attack * mult);
+                    new_card.attack += plusAttack;
+                    var plusHealth = Math.ceil(new_card.health * mult);
+                    new_card.health += plusHealth;
                     scaleSkills(new_card, original_skills, mult);
                 }
             }
