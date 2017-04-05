@@ -276,10 +276,14 @@ var makeUnit = (function () {
                         if (addedSkill.rarity && new_card.rarity != addedSkill.rarity) continue;
                         var new_skill = {};
                         new_skill.id = addedSkill.id;
-                        if (addedSkill.mult && addedSkill.base) {
-                            var base = new_card[addedSkill.base];
-                            if (addedSkill.base == "rarity") base--;
-                            new_skill.x = Math.ceil(addedSkill.mult * base);
+                        if (addedSkill.mult) {
+                            if (addedSkill.base) {
+                                var base = new_card[addedSkill.base];
+                                if (addedSkill.base == "rarity") base--;
+                                new_skill.x = Math.ceil(addedSkill.mult * base);
+                            } else {
+                                new_skill.mult = addedSkill.mult;
+                            }
                         } else {
                             new_skill.x = addedSkill.x;
                         }

@@ -1280,10 +1280,9 @@ var SIMULATOR = {};
             unearthedCard.isToken = true;
 
             // Get tempalte card with scaled skills and copy them over (do not copy on-death skills)
-            var mult = skill.x;
-            var templateUnit = makeUnitInfo(dying.id, dying.level, dying.runes);
-            var templateCard = get_card_apply_battlegrounds(templateUnit, SIMULATOR.battlegrounds.onCreate, mult);
-            copy_skills(unearthedCard, templateCard.skill, templateCard.earlyActivationSkills, []);
+            var mult = skill.mult;
+            unearthedCard.attack = Math.floor(dying.attack * mult);
+            unearthedCard.health = Math.floor(dying.health * mult);
 
             play_card(unearthedCard, dying.owner, true);
 
