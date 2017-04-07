@@ -166,6 +166,7 @@ function initializeCard(card, p, newKey) {
     card.removeImbue();
     card.jammed = false;
     card.silenced = false;
+    card.ondeath_triggered = false;
     card.key = newKey;
     if (!card.reusableSkills) card.resetTimers();
 }
@@ -370,6 +371,7 @@ var makeUnit = (function () {
         silenced: false,
         valor_triggered: false,
         dualstrike_triggered: false,
+        ondeath_triggered: false,
 
         initialize: function (position) {
             this.health_left = this.health;
@@ -397,6 +399,7 @@ var makeUnit = (function () {
                 this.played = false;
                 this.valor_triggered = false;
                 this.dualstrike_triggered = false;
+                this.ondeath_triggered = false;
             }
             if (!this.reusableSkills) this.resetTimers();
         },
@@ -1612,7 +1615,6 @@ function debug_passive_skills(card, skillText) {
     debugNonActivatedSkill(card, "counterburn", skillText);
     debugNonActivatedSkill(card, "corrosive", skillText);
     debugNonActivatedSkill(card, "fury", skillText);
-    debugNonActivatedSkill(card, "unearth", skillText);
 }
 
 function debug_triggered_skills(card, skillText) {

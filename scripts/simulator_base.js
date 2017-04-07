@@ -189,6 +189,7 @@ var SIMULATOR = {};
 
     function doOnDeathSkills(dying, killer) {
 
+        if (dying.ondeath_triggered) return; // Check to make sure we don't trigger this twice
         var skills = dying.onDeathSkills;
         var len = skills.length;
         if (len == 0) return;
@@ -201,6 +202,8 @@ var SIMULATOR = {};
                 drawField(field, null, null, turn, dying);
             }
         }
+
+        dying.ondeath_triggered = true;
     };
 
     var activationSkills = {
