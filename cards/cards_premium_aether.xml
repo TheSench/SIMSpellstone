@@ -15167,4 +15167,141 @@
       <skill id="burn" x="4" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5122</id>
+    <card_type>2</card_type>
+    <name>Crow King</name>
+    <picture>Undead_Crow_Lord_A</picture>
+    <asset_bundle>91</asset_bundle>
+    <hidden_until_time>1491498000</hidden_until_time>
+    <attack>5</attack>
+    <health>26</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="2" />
+    <skill id="counter" x="4" />
+    <skill id="rally" x="2" all="1" y="7" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>28</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="2" />
+      <skill id="counter" x="5" />
+      <skill id="rally" x="2" all="1" y="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>6</attack>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="2" />
+      <skill id="counter" x="5" />
+      <skill id="rally" x="3" all="1" y="7" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15122</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Flock King</name>
+    <picture>Undead_Crow_Lord_A</picture>
+    <asset_bundle>91</asset_bundle>
+    <hidden_until_time>1491498000</hidden_until_time>
+    <attack>6</attack>
+    <health>30</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="2" />
+    <skill id="counter" x="5" />
+    <skill id="rally" x="3" all="1" y="7" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>31</health>
+      <skill id="armored" x="3" />
+      <skill id="counter" x="5" />
+      <skill id="rally" x="3" all="1" y="7" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="3" />
+      <skill id="counter" x="6" />
+      <skill id="rally" x="3" all="1" y="7" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>32</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>33</health>
+      <skill id="armored" x="3" />
+      <skill id="counter" x="6" />
+      <skill id="rally" x="4" all="1" y="7" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25122</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Murder King</name>
+    <picture>Undead_Crow_Lord_B</picture>
+    <asset_bundle>91</asset_bundle>
+    <hidden_until_time>1491498000</hidden_until_time>
+    <attack>7</attack>
+    <health>33</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="3" />
+    <skill id="counter" x="7" />
+    <skill id="rally" x="4" all="1" y="7" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>34</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>35</health>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>36</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="4" />
+      <skill id="counter" x="7" />
+      <skill id="rally" x="4" all="1" y="7" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="4" />
+      <skill id="counter" x="8" />
+      <skill id="rally" x="5" all="1" y="7" />
+    </upgrade>
+  </unit>
 </root>

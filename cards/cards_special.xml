@@ -559,16 +559,14 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>4</attack>
       <health>16</health>
-      <skill id="armored" x="4" />
+      <skill id="evade" x="1" />
+      <skill id="armored" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>5</attack>
+      <attack>4</attack>
       <health>17</health>
-      <skill id="evade" x="1" />
-      <skill id="armored" x="4" />
     </upgrade>
     <desc>"THE TOWER IS MOUNTING A COUNTER OFFENSE!" - Jarad, Castle Guard</desc>
   </unit>
@@ -576,8 +574,8 @@
     <id>607</id>
     <card_type>2</card_type>
     <name>Unearthed Skeleton</name>
-    <picture>Skeleton_Warrior_A</picture>
-    <asset_bundle>9</asset_bundle>
+    <picture>Fortified_Tower_B</picture>
+    <asset_bundle>1</asset_bundle>
     <attack>1</attack>
     <health>1</health>
     <cost>1</cost>
@@ -599,8 +597,8 @@
     <id>608</id>
     <card_type>2</card_type>
     <name>Unearthed Skeleton</name>
-    <picture>Skeleton_Warrior_A</picture>
-    <asset_bundle>9</asset_bundle>
+    <picture>Unearth_Skeleton_A</picture>
+    <asset_bundle>91</asset_bundle>
     <attack>1</attack>
     <health>1</health>
     <cost>1</cost>
@@ -627,8 +625,8 @@
     <id>609</id>
     <card_type>2</card_type>
     <name>Unearthed Skeleton</name>
-    <picture>Skeleton_Warrior_B</picture>
-    <asset_bundle>9</asset_bundle>
+    <picture>Unearth_Skeleton_B</picture>
+    <asset_bundle>91</asset_bundle>
     <attack>1</attack>
     <health>1</health>
     <cost>1</cost>
@@ -659,8 +657,8 @@
     <id>610</id>
     <card_type>2</card_type>
     <name>Unearthed Skeleton</name>
-    <picture>Skeleton_Warrior_C</picture>
-    <asset_bundle>9</asset_bundle>
+    <picture>Unearth_Skeleton_C</picture>
+    <asset_bundle>91</asset_bundle>
     <attack>1</attack>
     <health>1</health>
     <cost>1</cost>
@@ -695,8 +693,8 @@
     <id>611</id>
     <card_type>2</card_type>
     <name>Unearthed Skeleton</name>
-    <picture>Skeleton_Warrior_C</picture>
-    <asset_bundle>9</asset_bundle>
+    <picture>Unearth_Skeleton_C</picture>
+    <asset_bundle>91</asset_bundle>
     <attack>1</attack>
     <health>1</health>
     <cost>1</cost>

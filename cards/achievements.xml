@@ -5921,8 +5921,8 @@
     <id>3222</id>
     <type>2</type>
     <order>101</order>
-    <name>War Strategem</name>
-    <desc>Complete the 'War Strategem' campaign on Mastery Level 4.</desc>
+    <name>War Stratagem</name>
+    <desc>Complete the 'War Stratagem' campaign on Mastery Level 4.</desc>
     <mission_req>5537</mission_req>
     <locked_start_time>1492707600</locked_start_time>
     <!-- Thu, 20 April 2017 17:00:00 -->
@@ -5939,8 +5939,8 @@
     <id>3223</id>
     <type>2</type>
     <order>101</order>
-    <name>War Strategem</name>
-    <desc>Complete the 'War Strategem' campaign on Mastery Level 6.</desc>
+    <name>War Stratagem</name>
+    <desc>Complete the 'War Stratagem' campaign on Mastery Level 6.</desc>
     <mission_req>5537</mission_req>
     <locked_start_time>1492707600</locked_start_time>
     <!-- Thu, 20 April 2017 17:00:00 -->
@@ -5957,8 +5957,8 @@
     <id>3224</id>
     <type>2</type>
     <order>101</order>
-    <name>War Strategem</name>
-    <desc>Complete the 'War Strategem' campaign on Mastery Level 7.</desc>
+    <name>War Stratagem</name>
+    <desc>Complete the 'War Stratagem' campaign on Mastery Level 7.</desc>
     <mission_req>5537</mission_req>
     <locked_start_time>1492707600</locked_start_time>
     <!-- Thu, 20 April 2017 17:00:00 -->

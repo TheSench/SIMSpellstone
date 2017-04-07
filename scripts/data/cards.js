@@ -45467,6 +45467,267 @@ var CARDS = {
       },
     }
   },
+  "5122": {
+    "id": "5122",
+    "name": "Crow King",
+    "picture": "Undead_Crow_Lord_A",
+    "hidden_until": "1491498000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["7","10"],
+    "health": 26,
+    "attack": 5,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "counter",
+        "x": 4,
+      },
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "7",
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 27,
+        "skill": [],
+      },
+      "3": {
+        "health": 28,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "counter",
+            "x": 5,
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "y": "7",
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "attack": 6,
+        "health": 29,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "counter",
+            "x": 5,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "7",
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "15122": {
+    "id": "15122",
+    "name": "Flock King",
+    "picture": "Undead_Crow_Lord_A",
+    "hidden_until": "1491498000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["7","10"],
+    "health": 30,
+    "attack": 6,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "counter",
+        "x": 5,
+      },
+      {
+        "id": "rally",
+        "x": 3,
+        "y": "7",
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 31,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "counter",
+            "x": 5,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "7",
+            "all": "1",
+          },
+        ],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "counter",
+            "x": 6,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "7",
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "health": 32,
+        "skill": [],
+      },
+      "5": {
+        "attack": 7,
+        "skill": [],
+      },
+      "6": {
+        "health": 33,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "counter",
+            "x": 6,
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "7",
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "25122": {
+    "id": "25122",
+    "name": "Murder King",
+    "picture": "Undead_Crow_Lord_B",
+    "hidden_until": "1491498000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["7","10"],
+    "health": 33,
+    "attack": 7,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 3,
+      },
+      {
+        "id": "counter",
+        "x": 7,
+      },
+      {
+        "id": "rally",
+        "x": 4,
+        "y": "7",
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 34,
+        "skill": [],
+      },
+      "3": {
+        "attack": 8,
+        "health": 35,
+        "skill": [],
+      },
+      "4": {
+        "health": 36,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "counter",
+            "x": 7,
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "7",
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "counter",
+            "x": 8,
+          },
+          {
+            "id": "rally",
+            "x": 5,
+            "y": "7",
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
   "6000": {
     "id": "6000",
     "name": "Furnace Mech",
@@ -72491,6 +72752,456 @@ var CARDS = {
           {
             "id": "flurry",
             "c": 3,
+          },
+        ],
+      },
+    }
+  },
+  "6121": {
+    "id": "6121",
+    "name": "Charon",
+    "desc": "\"I swear to HADES I will turn this boat around! Is that what you want?!\"",
+    "picture": "Underworld_Ferryman_A",
+    "hidden_until": "1491584400000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["6","7"],
+    "health": 38,
+    "attack": 7,
+    "cost": 4,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 5,
+      },
+      {
+        "id": "frost",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 5,
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 5,
+          },
+        ],
+      },
+      "3": {
+        "health": 39,
+        "skill": [],
+      },
+      "4": {
+        "attack": 8,
+        "health": 40,
+        "skill": [],
+      },
+      "5": {
+        "health": 41,
+        "skill": [],
+      },
+      "6": {
+        "health": 42,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 5,
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+    }
+  },
+  "16121": {
+    "id": "16121",
+    "name": "Charon of Frost",
+    "picture": "Underworld_Ferryman_A",
+    "hidden_until": "1491584400000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["6","7"],
+    "health": 42,
+    "attack": 8,
+    "cost": 4,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 6,
+      },
+      {
+        "id": "frost",
+        "x": 1,
+      },
+      {
+        "id": "flurry",
+        "c": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 9,
+        "health": 43,
+        "skill": [],
+      },
+      "3": {
+        "health": 44,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 6,
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+      "5": {
+        "health": 45,
+        "skill": [],
+      },
+      "6": {
+        "health": 46,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 7,
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+    }
+  },
+  "26121": {
+    "id": "26121",
+    "name": "Charon of Abyss",
+    "picture": "Underworld_Ferryman_B",
+    "hidden_until": "1491584400000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["6","7"],
+    "health": 46,
+    "attack": 10,
+    "cost": 4,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 7,
+      },
+      {
+        "id": "frost",
+        "x": 2,
+      },
+      {
+        "id": "flurry",
+        "c": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 47,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 7,
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 2,
+          },
+        ],
+      },
+      "3": {
+        "health": 48,
+        "skill": [],
+      },
+      "4": {
+        "attack": 11,
+        "health": 49,
+        "skill": [],
+      },
+      "5": {
+        "health": 50,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 8,
+          },
+          {
+            "id": "frost",
+            "x": 3,
+          },
+          {
+            "id": "flurry",
+            "c": 2,
+          },
+        ],
+      },
+    }
+  },
+  "6122": {
+    "id": "6122",
+    "name": "Relentless Dead",
+    "desc": "\"Death only made them more dangerous.\" - Frigore Survivor",
+    "picture": "Lantern_Undead_A",
+    "hidden_until": "1491498000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["7"],
+    "health": 9,
+    "attack": 3,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "burn",
+        "x": 1,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 10,
+        "skill": [],
+      },
+      "3": {
+        "health": 11,
+        "skill": [],
+      },
+      "4": {
+        "attack": 4,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "6": {
+        "health": 12,
+        "skill": [],
+      },
+    }
+  },
+  "16122": {
+    "id": "16122",
+    "name": "Relentless Corpse",
+    "picture": "Lantern_Undead_A",
+    "hidden_until": "1491498000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["7"],
+    "health": 12,
+    "attack": 4,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "burn",
+        "x": 2,
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "3": {
+        "health": 13,
+        "skill": [],
+      },
+      "4": {
+        "attack": 5,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "health": 14,
+        "skill": [],
+      },
+    }
+  },
+  "26122": {
+    "id": "26122",
+    "name": "Relentless Captain",
+    "picture": "Lantern_Undead_B",
+    "hidden_until": "1491498000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["7"],
+    "health": 15,
+    "attack": 5,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 2,
+      },
+      {
+        "id": "burn",
+        "x": 2,
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 6,
+        "skill": [],
+      },
+      "3": {
+        "health": 16,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
           },
         ],
       },
@@ -100790,6 +101501,221 @@ var CARDS = {
       },
     }
   },
+  "7122": {
+    "id": "7122",
+    "name": "Satyr Runebearer",
+    "desc": "The runes are graphed to their skin during life so that even after death they continue to protect their lands.",
+    "picture": "Satyr_Zombie_A",
+    "hidden_until": "1491498000000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["7"],
+    "health": 9,
+    "attack": 4,
+    "cost": 1,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "rally",
+        "x": 2,
+        "y": "7",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 10,
+        "skill": [],
+      },
+      "3": {
+        "health": 11,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "7",
+          },
+        ],
+      },
+      "5": {
+        "health": 12,
+        "skill": [],
+      },
+    }
+  },
+  "17122": {
+    "id": "17122",
+    "name": "Satyr Runecarrier",
+    "picture": "Satyr_Zombie_A",
+    "hidden_until": "1491498000000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["7"],
+    "health": 12,
+    "attack": 4,
+    "cost": 1,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "rally",
+        "x": 3,
+        "y": "7",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "y": "7",
+          },
+        ],
+      },
+      "3": {
+        "health": 13,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "7",
+          },
+        ],
+      },
+      "5": {
+        "health": 14,
+        "skill": [],
+      },
+    }
+  },
+  "27122": {
+    "id": "27122",
+    "name": "Satyr Runerunner",
+    "picture": "Satyr_Zombie_B",
+    "hidden_until": "1491498000000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["7"],
+    "health": 14,
+    "attack": 5,
+    "cost": 1,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "rally",
+        "x": 4,
+        "y": "7",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 15,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "7",
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "7",
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 5,
+            "y": "7",
+          },
+        ],
+      },
+    }
+  },
   "2000": {
     "id": "2000",
     "name": "Wasteland Nomad",
@@ -118276,6 +119202,616 @@ var CARDS = {
       },
     }
   },
+  "2087": {
+    "id": "2087",
+    "name": "Cranial Hazard",
+    "picture": "Flamehead_A",
+    "hidden_until": "1491498000000",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["7"],
+    "health": 20,
+    "attack": 4,
+    "cost": 3,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 2,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "frost",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 21,
+        "skill": [],
+      },
+      "3": {
+        "health": 22,
+        "skill": [],
+      },
+      "4": {
+        "health": 23,
+        "skill": [],
+      },
+      "5": {
+        "attack": 5,
+        "skill": [],
+      },
+    }
+  },
+  "12087": {
+    "id": "12087",
+    "name": "Cranial Peril",
+    "picture": "Flamehead_A",
+    "hidden_until": "1491498000000",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["7"],
+    "health": 24,
+    "attack": 5,
+    "cost": 3,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 2,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "frost",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 3,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+        ],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 3,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "frost",
+            "x": 1,
+          },
+        ],
+      },
+      "4": {
+        "health": 25,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 3,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "health": 26,
+        "skill": [],
+      },
+    }
+  },
+  "22087": {
+    "id": "22087",
+    "name": "Cranial Menace",
+    "picture": "Flamehead_B",
+    "hidden_until": "1491498000000",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["7"],
+    "health": 27,
+    "attack": 5,
+    "cost": 3,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 3,
+      },
+      {
+        "id": "strike",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "frost",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 6,
+        "skill": [],
+      },
+      "3": {
+        "health": 28,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 4,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 4,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "frost",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "2088": {
+    "id": "2088",
+    "name": "Bog Witch",
+    "picture": "Skull_Witch_A",
+    "hidden_until": "1491498000000",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["7"],
+    "health": 7,
+    "attack": 3,
+    "cost": 1,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 1,
+      },
+      {
+        "id": "enfeeble",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 8,
+        "skill": [],
+      },
+      "3": {
+        "health": 9,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 2,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 10,
+        "skill": [],
+      },
+    }
+  },
+  "12088": {
+    "id": "12088",
+    "name": "Quag Witch",
+    "picture": "Skull_Witch_A",
+    "hidden_until": "1491498000000",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["7"],
+    "health": 10,
+    "attack": 3,
+    "cost": 1,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 2,
+      },
+      {
+        "id": "enfeeble",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "nullify",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 11,
+        "skill": [],
+      },
+      "3": {
+        "attack": 4,
+        "skill": [],
+      },
+      "4": {
+        "health": 12,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 3,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "nullify",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "22088": {
+    "id": "22088",
+    "name": "Mire Witch",
+    "picture": "Skull_Witch_B",
+    "hidden_until": "1491498000000",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["7"],
+    "health": 13,
+    "attack": 4,
+    "cost": 1,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 3,
+      },
+      {
+        "id": "enfeeble",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "nullify",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "attack": 5,
+        "skill": [],
+      },
+      "4": {
+        "health": 15,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 4,
+          },
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "nullify",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "2089": {
+    "id": "2089",
+    "name": "Slagspirit",
+    "picture": "Undead_Flame_Tiger_A",
+    "hidden_until": "1491498000000",
+    "rarity": "4",
+    "set": "2000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["7"],
+    "health": 17,
+    "attack": 7,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 4,
+      },
+      {
+        "id": "burn",
+        "x": 2,
+      },
+      {
+        "id": "nullify",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 18,
+        "skill": [],
+      },
+      "3": {
+        "health": 19,
+        "skill": [],
+      },
+      "4": {
+        "health": 20,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 5,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "nullify",
+            "x": 1,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 5,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+          {
+            "id": "nullify",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "12089": {
+    "id": "12089",
+    "name": "Slagspirit Ripper",
+    "picture": "Undead_Flame_Tiger_A",
+    "hidden_until": "1491498000000",
+    "rarity": "4",
+    "set": "2000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["7"],
+    "health": 21,
+    "attack": 7,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 5,
+      },
+      {
+        "id": "burn",
+        "x": 3,
+      },
+      {
+        "id": "nullify",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 22,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 6,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+          {
+            "id": "nullify",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "health": 23,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 6,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+          {
+            "id": "nullify",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "attack": 8,
+        "skill": [],
+      },
+    }
+  },
+  "22089": {
+    "id": "22089",
+    "name": "Slagspirit Slayer",
+    "picture": "Undead_Flame_Tiger_B",
+    "hidden_until": "1491498000000",
+    "rarity": "4",
+    "set": "2000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["7"],
+    "health": 24,
+    "attack": 8,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 6,
+      },
+      {
+        "id": "burn",
+        "x": 3,
+      },
+      {
+        "id": "nullify",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 25,
+        "skill": [],
+      },
+      "3": {
+        "attack": 9,
+        "skill": [],
+      },
+      "4": {
+        "health": 26,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 7,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+          {
+            "id": "nullify",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 7,
+          },
+          {
+            "id": "burn",
+            "x": 4,
+          },
+          {
+            "id": "nullify",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
   "500": {
     "id": "500",
     "name": "Arcane Dustling",
@@ -118985,18 +120521,7 @@ var CARDS = {
         "skill": [],
       },
       "3": {
-        "attack": 4,
         "health": 16,
-        "skill": [
-          {
-            "id": "armored",
-            "x": 4,
-          },
-        ],
-      },
-      "4": {
-        "attack": 5,
-        "health": 17,
         "skill": [
           {
             "id": "evade",
@@ -119004,9 +120529,14 @@ var CARDS = {
           },
           {
             "id": "armored",
-            "x": 4,
+            "x": 3,
           },
         ],
+      },
+      "4": {
+        "attack": 4,
+        "health": 17,
+        "skill": [],
       },
     }
   },
@@ -119014,7 +120544,7 @@ var CARDS = {
     "id": "607",
     "name": "Unearthed Skeleton",
     "desc": "\"The most admirable part of the dead is their unwillingness to stay down.\" - Aria",
-    "picture": "Skeleton_Warrior_A",
+    "picture": "Fortified_Tower_B",
     "rarity": "1",
     "set": "9999",
     "card_type": "2",
@@ -119040,7 +120570,7 @@ var CARDS = {
     "id": "608",
     "name": "Unearthed Skeleton",
     "desc": "\"The most admirable part of the dead is their unwillingness to stay down.\" - Aria",
-    "picture": "Skeleton_Warrior_A",
+    "picture": "Unearth_Skeleton_A",
     "rarity": "2",
     "set": "9999",
     "card_type": "2",
@@ -119075,7 +120605,7 @@ var CARDS = {
     "id": "609",
     "name": "Unearthed Skeleton",
     "desc": "\"The most admirable part of the dead is their unwillingness to stay down.\" - Aria",
-    "picture": "Skeleton_Warrior_B",
+    "picture": "Unearth_Skeleton_B",
     "rarity": "3",
     "set": "9999",
     "card_type": "2",
@@ -119114,7 +120644,7 @@ var CARDS = {
     "id": "610",
     "name": "Unearthed Skeleton",
     "desc": "\"The most admirable part of the dead is their unwillingness to stay down.\" - Aria",
-    "picture": "Skeleton_Warrior_C",
+    "picture": "Unearth_Skeleton_C",
     "rarity": "4",
     "set": "9999",
     "card_type": "2",
@@ -119157,7 +120687,7 @@ var CARDS = {
     "id": "611",
     "name": "Unearthed Skeleton",
     "desc": "\"The most admirable part of the dead is their unwillingness to stay down.\" - Aria",
-    "picture": "Skeleton_Warrior_C",
+    "picture": "Unearth_Skeleton_C",
     "rarity": "5",
     "set": "9999",
     "card_type": "2",
@@ -144678,8 +146208,38 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29995": {
-    "id": "29995",
+  "9995": {
+    "id": "9995",
+    "name": "Unused Art",
+    "picture": "Ghost_Dragon_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19995": {
+    "id": "19995",
+    "name": "Unused Art",
+    "picture": "Ghost_Dragon_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "29994": {
+    "id": "29994",
     "name": "Unused Art",
     "picture": "Monster_C",
     "rarity": "0",
@@ -144693,25 +146253,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19994": {
-    "id": "19994",
+  "19993": {
+    "id": "19993",
     "name": "Unused Art",
     "picture": "Mythic_Dragon_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9993": {
-    "id": "9993",
-    "name": "Unused Art",
-    "picture": "Mythic_Seafolk_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -144726,37 +146271,22 @@ var CARDS = {
   "9992": {
     "id": "9992",
     "name": "Unused Art",
+    "picture": "Mythic_Seafolk_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9991": {
+    "id": "9991",
+    "name": "Unused Art",
     "picture": "Oda_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19992": {
-    "id": "19992",
-    "name": "Unused Art",
-    "picture": "Oda_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29992": {
-    "id": "29992",
-    "name": "Unused Art",
-    "picture": "Oda_C",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -144771,7 +146301,7 @@ var CARDS = {
   "19991": {
     "id": "19991",
     "name": "Unused Art",
-    "picture": "Promo_Dragon_B",
+    "picture": "Oda_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -144783,10 +146313,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9990": {
-    "id": "9990",
+  "29991": {
+    "id": "29991",
     "name": "Unused Art",
-    "picture": "Seraph_A",
+    "picture": "Oda_C",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -144801,7 +146331,7 @@ var CARDS = {
   "19990": {
     "id": "19990",
     "name": "Unused Art",
-    "picture": "Seraph_B",
+    "picture": "Promo_Dragon_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -144816,7 +146346,22 @@ var CARDS = {
   "9989": {
     "id": "9989",
     "name": "Unused Art",
-    "picture": "Tarian_A",
+    "picture": "Seraph_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19989": {
+    "id": "19989",
+    "name": "Unused Art",
+    "picture": "Seraph_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -144831,7 +146376,7 @@ var CARDS = {
   "9988": {
     "id": "9988",
     "name": "Unused Art",
-    "picture": "Tremor_Wurm_A",
+    "picture": "Tarian_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -144846,22 +146391,7 @@ var CARDS = {
   "9987": {
     "id": "9987",
     "name": "Unused Art",
-    "picture": "Underworld_Ferryman_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19987": {
-    "id": "19987",
-    "name": "Unused Art",
-    "picture": "Underworld_Ferryman_B",
+    "picture": "Tremor_Wurm_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",

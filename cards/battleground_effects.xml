@@ -292,7 +292,7 @@
   <battleground>
     <id>115</id>
     <name>Undead Unearthed</name>
-    <desc>Desc here</desc>
+    <desc>Whenever an Undead creature dies it creates an Unearthed Skeleton token creature with 30% of the Attack and Health of the creature that died. The token has Berserk values based on its rarity.</desc>
     <icon>filter_undead_64.png</icon>
     <effect>
       <add_skill id="unearth" mult="0.3" rarity="1" y="7" card="607" level="3" />

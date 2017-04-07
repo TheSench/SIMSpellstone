@@ -15097,4 +15097,119 @@
       <skill id="heal" x="3" all="1" />
     </upgrade>
   </unit>
+  <unit>
+    <id>7122</id>
+    <card_type>2</card_type>
+    <name>Satyr Runebearer</name>
+    <picture>Satyr_Zombie_A</picture>
+    <asset_bundle>91</asset_bundle>
+    <hidden_until_time>1491498000</hidden_until_time>
+    <attack>4</attack>
+    <health>9</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="1" />
+    <skill id="rally" x="2" y="7" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="1" />
+      <skill id="rally" x="3" y="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>12</health>
+    </upgrade>
+    <desc>The runes are graphed to their skin during life so that even after death they continue to protect their lands.</desc>
+  </unit>
+  <unit>
+    <id>17122</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Satyr Runecarrier</name>
+    <picture>Satyr_Zombie_A</picture>
+    <asset_bundle>91</asset_bundle>
+    <hidden_until_time>1491498000</hidden_until_time>
+    <attack>4</attack>
+    <health>12</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="armored" x="1" />
+    <skill id="rally" x="3" y="7" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="evade" x="1" />
+      <skill id="armored" x="2" />
+      <skill id="rally" x="3" y="7" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="1" />
+      <skill id="armored" x="2" />
+      <skill id="rally" x="4" y="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>14</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27122</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Satyr Runerunner</name>
+    <picture>Satyr_Zombie_B</picture>
+    <asset_bundle>91</asset_bundle>
+    <hidden_until_time>1491498000</hidden_until_time>
+    <attack>5</attack>
+    <health>14</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="armored" x="2" />
+    <skill id="rally" x="4" y="7" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="2" />
+      <skill id="armored" x="2" />
+      <skill id="rally" x="4" y="7" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="2" />
+      <skill id="armored" x="3" />
+      <skill id="rally" x="4" y="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="2" />
+      <skill id="armored" x="3" />
+      <skill id="rally" x="5" y="7" />
+    </upgrade>
+  </unit>
 </root>
