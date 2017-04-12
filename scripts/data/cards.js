@@ -120851,6 +120851,10 @@ var CARDS = {
     "maxLevel": 5,
     "skill": [
       {
+          "id": "evade",
+          "x": 1,
+      },
+      {
         "id": "berserk",
         "x": 2,
       },
@@ -120889,6 +120893,10 @@ var CARDS = {
     "cost": 1,
     "maxLevel": 6,
     "skill": [
+      {
+          "id": "evade",
+          "x": 2,
+      },
       {
         "id": "berserk",
         "x": 3,
@@ -120932,6 +120940,10 @@ var CARDS = {
     "cost": 1,
     "maxLevel": 7,
     "skill": [
+      {
+          "id": "evade",
+          "x": 3,
+      },
       {
         "id": "berserk",
         "x": 4,

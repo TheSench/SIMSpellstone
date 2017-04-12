@@ -1290,7 +1290,7 @@ var SIMULATOR = {};
             play_card(unearthedCard, dying.owner, true);
 
             if (debug) {
-                echo += debug_name(unearthedCard) + ' is unearthed';
+                echo += debug_name(unearthedCard) + ' is unearthed<br>';
             }
 
             return 1;

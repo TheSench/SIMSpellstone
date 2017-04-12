@@ -208,7 +208,7 @@ var BATTLEGROUNDS = {
       {
         "effect_type": "add_skill",
         "id": "unearth",
-        "mult": 0.3,
+        "mult": 0.5,
         "y": "7",
         "rarity": 1,
         "card": 607,
@@ -217,7 +217,7 @@ var BATTLEGROUNDS = {
       {
         "effect_type": "add_skill",
         "id": "unearth",
-        "mult": 0.3,
+        "mult": 0.5,
         "y": "7",
         "rarity": 2,
         "card": 608,
@@ -226,7 +226,7 @@ var BATTLEGROUNDS = {
       {
         "effect_type": "add_skill",
         "id": "unearth",
-        "mult": 0.3,
+        "mult": 0.5,
         "y": "7",
         "rarity": 3,
         "card": 609,
@@ -235,7 +235,7 @@ var BATTLEGROUNDS = {
       {
         "effect_type": "add_skill",
         "id": "unearth",
-        "mult": 0.3,
+        "mult": 0.5,
         "y": "7",
         "rarity": 4,
         "card": 610,
@@ -244,7 +244,7 @@ var BATTLEGROUNDS = {
       {
         "effect_type": "add_skill",
         "id": "unearth",
-        "mult": 0.3,
+        "mult": 0.5,
         "y": "7",
         "rarity": 5,
         "card": 611,

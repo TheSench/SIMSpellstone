@@ -2617,7 +2617,8 @@ var factions = {
         11: 'Goblin',
         12: 'Seafolk',
         13: 'Insect',
-        14: 'Ant',
+        14: 'Bear',
+        15: 'Token',
 
         999: 'Tower'
     },
@@ -2636,7 +2637,8 @@ var factions = {
         Goblin: 11,
         Seafolk: 12,
         Insect: 13,
-        Ant: 14,
+        Bear: 14,
+        Token: 15,
 
         Tower: 999
     }
