@@ -73207,6 +73207,240 @@ var CARDS = {
       },
     }
   },
+  "6126": {
+    "id": "6126",
+    "name": "Terrordactyl",
+    "picture": "Ghost_Dragon_A",
+    "hidden_until": "1491843600000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["7","9"],
+    "health": 27,
+    "attack": 4,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "frost",
+        "x": 2,
+      },
+      {
+        "id": "pierce",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 28,
+        "skill": [],
+      },
+      "3": {
+        "health": 29,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+        ],
+      },
+      "5": {
+        "health": 30,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "frost",
+            "x": 3,
+          },
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+        ],
+      },
+    }
+  },
+  "16126": {
+    "id": "16126",
+    "name": "Frostsnap Terrordactyl",
+    "picture": "Ghost_Dragon_A",
+    "hidden_until": "1491843600000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["7","9"],
+    "health": 31,
+    "attack": 4,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "frost",
+        "x": 3,
+      },
+      {
+        "id": "pierce",
+        "x": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 32,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "frost",
+            "x": 3,
+          },
+          {
+            "id": "pierce",
+            "x": 6,
+          },
+        ],
+      },
+      "4": {
+        "health": 33,
+        "skill": [],
+      },
+      "5": {
+        "health": 34,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "frost",
+            "x": 4,
+          },
+          {
+            "id": "pierce",
+            "x": 6,
+          },
+        ],
+      },
+    }
+  },
+  "26126": {
+    "id": "26126",
+    "name": "Coldsnap Terrordactyl",
+    "picture": "Ghost_Dragon_B",
+    "hidden_until": "1491843600000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["7","9"],
+    "health": 35,
+    "attack": 4,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "frost",
+        "x": 4,
+      },
+      {
+        "id": "pierce",
+        "x": 7,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 36,
+        "skill": [],
+      },
+      "3": {
+        "attack": 5,
+        "skill": [],
+      },
+      "4": {
+        "health": 37,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "frost",
+            "x": 4,
+          },
+          {
+            "id": "pierce",
+            "x": 7,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "frost",
+            "x": 5,
+          },
+          {
+            "id": "pierce",
+            "x": 8,
+          },
+        ],
+      },
+    }
+  },
   "7000": {
     "id": "7000",
     "name": "Treant King",
@@ -120549,7 +120783,7 @@ var CARDS = {
     "set": "9999",
     "card_type": "2",
     "type": "0",
-    "sub_type": ["7"],
+    "sub_type": ["15","7"],
     "health": 1,
     "attack": 1,
     "cost": 1,
@@ -120575,7 +120809,7 @@ var CARDS = {
     "set": "9999",
     "card_type": "2",
     "type": "0",
-    "sub_type": ["7"],
+    "sub_type": ["15","7"],
     "health": 1,
     "attack": 1,
     "cost": 1,
@@ -120610,7 +120844,7 @@ var CARDS = {
     "set": "9999",
     "card_type": "2",
     "type": "0",
-    "sub_type": ["7"],
+    "sub_type": ["15","7"],
     "health": 1,
     "attack": 1,
     "cost": 1,
@@ -120649,7 +120883,7 @@ var CARDS = {
     "set": "9999",
     "card_type": "2",
     "type": "0",
-    "sub_type": ["7"],
+    "sub_type": ["15","7"],
     "health": 1,
     "attack": 1,
     "cost": 1,
@@ -120692,7 +120926,7 @@ var CARDS = {
     "set": "9999",
     "card_type": "2",
     "type": "0",
-    "sub_type": ["7"],
+    "sub_type": ["15","7"],
     "health": 1,
     "attack": 1,
     "cost": 1,
@@ -146208,38 +146442,8 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9995": {
-    "id": "9995",
-    "name": "Unused Art",
-    "picture": "Ghost_Dragon_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19995": {
-    "id": "19995",
-    "name": "Unused Art",
-    "picture": "Ghost_Dragon_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29994": {
-    "id": "29994",
+  "29995": {
+    "id": "29995",
     "name": "Unused Art",
     "picture": "Monster_C",
     "rarity": "0",
@@ -146253,10 +146457,25 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19993": {
-    "id": "19993",
+  "19994": {
+    "id": "19994",
     "name": "Unused Art",
     "picture": "Mythic_Dragon_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9993": {
+    "id": "9993",
+    "name": "Unused Art",
+    "picture": "Mythic_Seafolk_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -146271,7 +146490,7 @@ var CARDS = {
   "9992": {
     "id": "9992",
     "name": "Unused Art",
-    "picture": "Mythic_Seafolk_A",
+    "picture": "Oda_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -146283,10 +146502,25 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9991": {
-    "id": "9991",
+  "19992": {
+    "id": "19992",
     "name": "Unused Art",
-    "picture": "Oda_A",
+    "picture": "Oda_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "29992": {
+    "id": "29992",
+    "name": "Unused Art",
+    "picture": "Oda_C",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -146301,7 +146535,7 @@ var CARDS = {
   "19991": {
     "id": "19991",
     "name": "Unused Art",
-    "picture": "Oda_B",
+    "picture": "Promo_Dragon_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -146313,10 +146547,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29991": {
-    "id": "29991",
+  "9990": {
+    "id": "9990",
     "name": "Unused Art",
-    "picture": "Oda_C",
+    "picture": "Seraph_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -146331,7 +146565,7 @@ var CARDS = {
   "19990": {
     "id": "19990",
     "name": "Unused Art",
-    "picture": "Promo_Dragon_B",
+    "picture": "Seraph_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -146346,22 +146580,7 @@ var CARDS = {
   "9989": {
     "id": "9989",
     "name": "Unused Art",
-    "picture": "Seraph_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19989": {
-    "id": "19989",
-    "name": "Unused Art",
-    "picture": "Seraph_B",
+    "picture": "Tarian_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -146376,7 +146595,7 @@ var CARDS = {
   "9988": {
     "id": "9988",
     "name": "Unused Art",
-    "picture": "Tarian_A",
+    "picture": "Tremor_Wurm_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -146391,7 +146610,7 @@ var CARDS = {
   "9987": {
     "id": "9987",
     "name": "Unused Art",
-    "picture": "Tremor_Wurm_A",
+    "picture": "Unused1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -146406,7 +146625,7 @@ var CARDS = {
   "9986": {
     "id": "9986",
     "name": "Unused Art",
-    "picture": "Unused1_A",
+    "picture": "Unused2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -146421,7 +146640,7 @@ var CARDS = {
   "9985": {
     "id": "9985",
     "name": "Unused Art",
-    "picture": "Unused2_A",
+    "picture": "Unused3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -146436,7 +146655,7 @@ var CARDS = {
   "9984": {
     "id": "9984",
     "name": "Unused Art",
-    "picture": "Unused3_A",
+    "picture": "Ursurio_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -146451,7 +146670,7 @@ var CARDS = {
   "9983": {
     "id": "9983",
     "name": "Unused Art",
-    "picture": "Ursurio_A",
+    "picture": "Void_Abomination_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -146465,21 +146684,6 @@ var CARDS = {
   },
   "9982": {
     "id": "9982",
-    "name": "Unused Art",
-    "picture": "Void_Abomination_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9981": {
-    "id": "9981",
     "name": "Unused Art",
     "picture": "Yuriel_A",
     "rarity": "0",

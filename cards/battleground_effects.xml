@@ -710,7 +710,7 @@
   <battleground>
     <id>2005</id>
     <name>Anthem of the Tenacious</name>
-    <desc>Enemies become stronger with each passing Mastery level.</desc>
+    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
     <icon>filter_angel2_64</icon>
     <icon_bundle>87</icon_bundle>
     <enemy_only>1</enemy_only>
@@ -742,7 +742,7 @@
   <battleground>
     <id>2007</id>
     <name>Requiem of the Relentless</name>
-    <desc>Enemies become stronger with each passing Mastery level.</desc>
+    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
     <web_picture>filter_undead_64.png</web_picture>
     <icon>filter_undead_64</icon>
     <enemy_only>1</enemy_only>
@@ -759,7 +759,7 @@
   <battleground>
     <id>2008</id>
     <name>Requiem of the Relentless</name>
-    <desc>Enemies become stronger with each passing Mastery level.</desc>
+    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
     <web_picture>filter_undead_64.png</web_picture>
     <icon>filter_undead_64</icon>
     <enemy_only>1</enemy_only>

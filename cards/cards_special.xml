@@ -580,6 +580,7 @@
     <health>1</health>
     <cost>1</cost>
     <type>0</type>
+    <sub_type>15</sub_type>
     <sub_type>7</sub_type>
     <rarity>1</rarity>
     <set>9999</set>
@@ -603,6 +604,7 @@
     <health>1</health>
     <cost>1</cost>
     <type>0</type>
+    <sub_type>15</sub_type>
     <sub_type>7</sub_type>
     <skill id="berserk" x="1" />
     <rarity>2</rarity>
@@ -631,6 +633,7 @@
     <health>1</health>
     <cost>1</cost>
     <type>0</type>
+    <sub_type>15</sub_type>
     <sub_type>7</sub_type>
     <skill id="berserk" x="2" />
     <rarity>3</rarity>
@@ -663,6 +666,7 @@
     <health>1</health>
     <cost>1</cost>
     <type>0</type>
+    <sub_type>15</sub_type>
     <sub_type>7</sub_type>
     <skill id="berserk" x="3" />
     <rarity>4</rarity>
@@ -699,6 +703,7 @@
     <health>1</health>
     <cost>1</cost>
     <type>0</type>
+    <sub_type>15</sub_type>
     <sub_type>7</sub_type>
     <skill id="berserk" x="4" />
     <rarity>5</rarity>

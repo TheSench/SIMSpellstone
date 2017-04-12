@@ -520,51 +520,50 @@
   <unitType>
     <id>7</id>
     <name>Undead</name>
-    <image></image>
     <icon>filter_undead_32</icon>
   </unitType>
   <unitType>
     <id>8</id>
     <name>Void</name>
-    <image>filter_void_32</image>
+    <icon>filter_void_32</icon>
     <hidden>1</hidden>
   </unitType>
   <unitType>
     <id>9</id>
     <name>Dragon</name>
-    <image></image>
     <icon>filter_dragon_32</icon>
   </unitType>
   <unitType>
     <id>10</id>
     <name>Avian</name>
-    <image></image>
     <icon>filter_avian_32</icon>
   </unitType>
   <unitType>
     <id>11</id>
     <name>Goblin</name>
-    <image></image>
     <icon>filter_goblin_32</icon>
   </unitType>
   <unitType>
     <id>12</id>
     <name>Seafolk</name>
-    <image></image>
     <icon>filter_seafolk_32</icon>
   </unitType>
   <unitType>
     <id>13</id>
     <name>Insect</name>
-    <image></image>
     <icon>filter_insect_32</icon>
   </unitType>
   <unitType>
     <id>14</id>
     <name>Bear</name>
-    <image></image>
+    <icon></icon>
     <hidden>1</hidden>
-    <icon>filter_insect_32</icon>
+  </unitType>
+  <unitType>
+    <id>15</id>
+    <name>Token</name>
+    <icon></icon>
+    <hidden>1</hidden>
   </unitType>
   <!-- =================== -->
   <!-- ==== CARD SETS ==== -->

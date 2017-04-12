@@ -936,7 +936,7 @@ var BATTLEGROUNDS = {
   "2005": {
     "name": "Anthem of the Tenacious",
     "id": "2005",
-    "desc": "Enemies become stronger with each passing Mastery level.",
+    "desc": "Non-token enemies become stronger with each passing Mastery level.",
     "enemy_only": true,
     "scale_with_level": "1",
     "starting_level": "5",
@@ -968,7 +968,7 @@ var BATTLEGROUNDS = {
   "2007": {
     "name": "Requiem of the Relentless",
     "id": "2007",
-    "desc": "Enemies become stronger with each passing Mastery level.",
+    "desc": "Non-token enemies become stronger with each passing Mastery level.",
     "enemy_only": true,
     "scale_with_level": "1",
     "starting_level": "0",
@@ -984,7 +984,7 @@ var BATTLEGROUNDS = {
   "2008": {
     "name": "Requiem of the Relentless",
     "id": "2008",
-    "desc": "Enemies become stronger with each passing Mastery level.",
+    "desc": "Non-token enemies become stronger with each passing Mastery level.",
     "enemy_only": true,
     "scale_with_level": "1",
     "starting_level": "0",
