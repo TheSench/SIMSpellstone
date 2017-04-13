@@ -45728,6 +45728,214 @@ var CARDS = {
       },
     }
   },
+  "5123": {
+    "id": "5123",
+    "name": "Shadow Stalker",
+    "picture": "Shadow_Ghost_A",
+    "hidden_until": "1492102800000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["7"],
+    "health": 15,
+    "attack": 2,
+    "cost": 2,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "frost",
+        "x": 1,
+      },
+      {
+        "id": "jam",
+        "c": 6,
+      },
+      {
+        "id": "nullify",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "frost",
+            "x": 1,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+          {
+            "id": "nullify",
+            "x": 1,
+          },
+        ],
+      },
+      "3": {
+        "attack": 3,
+        "health": 16,
+        "skill": [],
+      },
+      "4": {
+        "health": 17,
+        "skill": [],
+      },
+      "5": {
+        "health": 18,
+        "skill": [
+          {
+            "id": "frost",
+            "x": 1,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+          {
+            "id": "nullify",
+            "x": 1,
+          },
+        ],
+      },
+    }
+  },
+  "15123": {
+    "id": "15123",
+    "name": "Shadow Chaser",
+    "picture": "Shadow_Ghost_A",
+    "hidden_until": "1492102800000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["7"],
+    "health": 19,
+    "attack": 3,
+    "cost": 2,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "frost",
+        "x": 1,
+      },
+      {
+        "id": "jam",
+        "c": 4,
+      },
+      {
+        "id": "nullify",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 20,
+        "skill": [],
+      },
+      "3": {
+        "health": 21,
+        "skill": [
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+          {
+            "id": "nullify",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "attack": 4,
+        "health": 22,
+        "skill": [],
+      },
+      "5": {
+        "health": 23,
+        "skill": [],
+      },
+    }
+  },
+  "25123": {
+    "id": "25123",
+    "name": "Shadow Trapper",
+    "picture": "Shadow_Ghost_B",
+    "hidden_until": "1492102800000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["7"],
+    "health": 23,
+    "attack": 4,
+    "cost": 2,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "frost",
+        "x": 2,
+      },
+      {
+        "id": "jam",
+        "c": 3,
+      },
+      {
+        "id": "nullify",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 5,
+        "health": 24,
+        "skill": [],
+      },
+      "3": {
+        "health": 25,
+        "skill": [],
+      },
+      "4": {
+        "health": 26,
+        "skill": [
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+          {
+            "id": "nullify",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "health": 27,
+        "skill": [
+          {
+            "id": "frost",
+            "x": 3,
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+          {
+            "id": "nullify",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
   "6000": {
     "id": "6000",
     "name": "Furnace Mech",
@@ -73202,6 +73410,232 @@ var CARDS = {
           {
             "id": "berserk",
             "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "6123": {
+    "id": "6123",
+    "name": "Battleborn Destrier",
+    "desc": "The vampires of Interitus use foul magic to form horses born only for warfare.",
+    "picture": "Vampire_War_Horse_A",
+    "hidden_until": "1492102800000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["7"],
+    "health": 9,
+    "attack": 3,
+    "cost": 1,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "pierce",
+        "x": 3,
+      },
+      {
+        "id": "leech",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 10,
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+          },
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+        ],
+      },
+      "3": {
+        "attack": 4,
+        "skill": [],
+      },
+      "4": {
+        "health": 11,
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 2,
+          },
+          {
+            "id": "pierce",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 2,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "16123": {
+    "id": "16123",
+    "name": "Warborn Destrier",
+    "picture": "Vampire_War_Horse_A",
+    "hidden_until": "1492102800000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["7"],
+    "health": 12,
+    "attack": 4,
+    "cost": 1,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 2,
+      },
+      {
+        "id": "pierce",
+        "x": 4,
+      },
+      {
+        "id": "leech",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 5,
+        "skill": [],
+      },
+      "3": {
+        "health": 13,
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 3,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 14,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 3,
+          },
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "26123": {
+    "id": "26123",
+    "name": "Deathborn Destrier",
+    "picture": "Vampire_War_Horse_B",
+    "hidden_until": "1492102800000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["7"],
+    "health": 14,
+    "attack": 6,
+    "cost": 1,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 3,
+      },
+      {
+        "id": "pierce",
+        "x": 5,
+      },
+      {
+        "id": "leech",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 15,
+        "skill": [],
+      },
+      "3": {
+        "attack": 7,
+        "health": 16,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 4,
+          },
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 4,
+          },
+          {
+            "id": "pierce",
+            "x": 6,
+          },
+          {
+            "id": "leech",
+            "x": 5,
           },
         ],
       },
@@ -101735,6 +102169,233 @@ var CARDS = {
       },
     }
   },
+  "7121": {
+    "id": "7121",
+    "name": "Varachnis",
+    "picture": "Vampire_Spider_A",
+    "hidden_until": "1492448400000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["7","13"],
+    "health": 10,
+    "attack": 2,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 1,
+      },
+      {
+        "id": "jam",
+        "c": 6,
+      },
+      {
+        "id": "leech",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+        ],
+      },
+      "3": {
+        "health": 11,
+        "skill": [],
+      },
+      "4": {
+        "health": 12,
+        "skill": [],
+      },
+      "5": {
+        "attack": 3,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "17121": {
+    "id": "17121",
+    "name": "Varachnis Beguiler",
+    "picture": "Vampire_Spider_A",
+    "hidden_until": "1492448400000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["7","13"],
+    "health": 12,
+    "attack": 3,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 1,
+      },
+      {
+        "id": "jam",
+        "c": 4,
+      },
+      {
+        "id": "leech",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 13,
+        "skill": [],
+      },
+      "3": {
+        "health": 14,
+        "skill": [],
+      },
+      "4": {
+        "attack": 4,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "27121": {
+    "id": "27121",
+    "name": "Varachnis Charmer",
+    "picture": "Vampire_Spider_B",
+    "hidden_until": "1492448400000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["7","13"],
+    "health": 15,
+    "attack": 4,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 1,
+      },
+      {
+        "id": "jam",
+        "c": 3,
+      },
+      {
+        "id": "leech",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 16,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+        ],
+      },
+      "4": {
+        "attack": 5,
+        "skill": [],
+      },
+      "5": {
+        "health": 17,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+        ],
+      },
+    }
+  },
   "7122": {
     "id": "7122",
     "name": "Satyr Runebearer",
@@ -101945,6 +102606,252 @@ var CARDS = {
             "id": "rally",
             "x": 5,
             "y": "7",
+          },
+        ],
+      },
+    }
+  },
+  "7123": {
+    "id": "7123",
+    "name": "Soul Caller",
+    "picture": "Undead_Tribal_Frog_A",
+    "hidden_until": "1492102800000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["7","4"],
+    "health": 17,
+    "attack": 5,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 2,
+      },
+      {
+        "id": "heal",
+        "x": 1,
+        "y": "7",
+        "all": "1",
+      },
+      {
+        "id": "poison",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 18,
+        "skill": [],
+      },
+      "3": {
+        "health": 19,
+        "skill": [],
+      },
+      "4": {
+        "attack": 6,
+        "skill": [],
+      },
+      "5": {
+        "health": 20,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 3,
+          },
+          {
+            "id": "heal",
+            "x": 1,
+            "y": "7",
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 4,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 3,
+          },
+          {
+            "id": "heal",
+            "x": 1,
+            "y": "7",
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 5,
+          },
+        ],
+      },
+    }
+  },
+  "17123": {
+    "id": "17123",
+    "name": "Soul Harbinger",
+    "picture": "Undead_Tribal_Frog_A",
+    "hidden_until": "1492102800000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["7","4"],
+    "health": 21,
+    "attack": 6,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 3,
+      },
+      {
+        "id": "heal",
+        "x": 1,
+        "y": "7",
+        "all": "1",
+      },
+      {
+        "id": "poison",
+        "x": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 7,
+        "health": 22,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 3,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "y": "7",
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 5,
+          },
+        ],
+      },
+      "4": {
+        "health": 23,
+        "skill": [],
+      },
+      "5": {
+        "health": 24,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 4,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "y": "7",
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 6,
+          },
+        ],
+      },
+    }
+  },
+  "27123": {
+    "id": "27123",
+    "name": "Soul Croaker",
+    "picture": "Undead_Tribal_Frog_B",
+    "hidden_until": "1492102800000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["7","4"],
+    "health": 24,
+    "attack": 8,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 4,
+      },
+      {
+        "id": "heal",
+        "x": 2,
+        "y": "7",
+        "all": "1",
+      },
+      {
+        "id": "poison",
+        "x": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 25,
+        "skill": [],
+      },
+      "3": {
+        "attack": 9,
+        "health": 26,
+        "skill": [],
+      },
+      "4": {
+        "health": 27,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 5,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "y": "7",
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 6,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 5,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+            "y": "7",
+            "all": "1",
+          },
+          {
+            "id": "poison",
+            "x": 7,
           },
         ],
       },
@@ -120851,8 +121758,8 @@ var CARDS = {
     "maxLevel": 5,
     "skill": [
       {
-          "id": "evade",
-          "x": 1,
+        "id": "evade",
+        "x": 1,
       },
       {
         "id": "berserk",
@@ -120894,8 +121801,8 @@ var CARDS = {
     "maxLevel": 6,
     "skill": [
       {
-          "id": "evade",
-          "x": 2,
+        "id": "evade",
+        "x": 2,
       },
       {
         "id": "berserk",
@@ -120941,8 +121848,8 @@ var CARDS = {
     "maxLevel": 7,
     "skill": [
       {
-          "id": "evade",
-          "x": 3,
+        "id": "evade",
+        "x": 3,
       },
       {
         "id": "berserk",

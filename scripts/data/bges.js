@@ -203,7 +203,7 @@ var BATTLEGROUNDS = {
   "115": {
     "name": "Undead Unearthed",
     "id": "115",
-    "desc": "Whenever an Undead creature dies it creates an Unearthed Skeleton token creature with 30% of the Attack and Health of the creature that died. The token has Berserk values based on its rarity.",
+    "desc": "When an Undead dies it creates an Unearthed Skeleton token creature with 50% Attack and Health of the Undead that died. The token has Invisibility and Berserk values based on its rarity.",
     "effect": [
       {
         "effect_type": "add_skill",

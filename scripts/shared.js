@@ -899,7 +899,7 @@ var addRunes = function (card, runes) {
                 // Will be handled later
             } else {
                 if (isNaN(boost)) {
-                    boost = Math.ceil(card[key] * boost.mult);
+                    boost = Math.max(Math.ceil(card[key] * boost.mult), (boost.min_bonus || 1));
                 }
                 card[key] += parseInt(boost);
             }
@@ -923,6 +923,7 @@ function addRunesToSkills(skills, runes) {
                     if (skill.id == skillID && (skill.all || 0) == (boost.all || 0)) {
                         skill = copy_skill(skill);
                         if (!amount && mult) amount = Math.ceil(skill.x * mult);
+                        if (boost.min_bonus) amount = Math.max(amount, boost.min_bonus);
                         if (amount) skill.x += parseInt(amount);
                         if (boost.c) skill.c -= parseInt(boost.c);
                         skill.boosted = true;
