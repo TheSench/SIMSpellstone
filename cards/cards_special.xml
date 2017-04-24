@@ -574,8 +574,8 @@
     <id>607</id>
     <card_type>2</card_type>
     <name>Unearthed Skeleton</name>
-    <picture>Fortified_Tower_B</picture>
-    <asset_bundle>1</asset_bundle>
+    <picture>Unearth_Skeleton_A</picture>
+    <asset_bundle>91</asset_bundle>
     <attack>1</attack>
     <health>1</health>
     <cost>1</cost>

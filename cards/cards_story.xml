@@ -1774,18 +1774,18 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>31</health>
+      <health>32</health>
       <skill id="evade" x="4" />
       <skill id="legion" x="5" y="7" />
       <skill id="fervor" x="3" y="7" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>33</health>
+      <health>34</health>
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>34</health>
+      <health>36</health>
       <skill id="evade" x="4" />
       <skill id="legion" x="5" y="7" />
       <skill id="fervor" x="4" y="7" />
@@ -1799,7 +1799,7 @@
     <picture>Skeleton_Warrior_C</picture>
     <asset_bundle>9</asset_bundle>
     <attack>6</attack>
-    <health>34</health>
+    <health>39</health>
     <cost>3</cost>
     <rarity>4</rarity>
     <skill id="evade" x="4" />
@@ -1810,20 +1810,20 @@
     <set>9999</set>
     <upgrade>
       <level>2</level>
-      <health>36</health>
+      <health>40</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>37</health>
+      <health>41</health>
       <attack>7</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>39</health>
+      <health>43</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>40</health>
+      <health>45</health>
       <skill id="evade" x="4" />
       <skill id="legion" x="7" y="7" />
       <skill id="fervor" x="4" y="7" />
@@ -5218,6 +5218,120 @@
       <skill id="armored" x="3" />
       <skill id="weakenself" x="2" />
       <skill id="flurry" c="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8061</id>
+    <card_type>2</card_type>
+    <name>Prophecy of Ruin</name>
+    <picture>Floating_Word_C</picture>
+    <asset_bundle>6</asset_bundle>
+    <attack>1</attack>
+    <health>15</health>
+    <cost>2</cost>
+    <rarity>5</rarity>
+    <skill id="frost" x="1" />
+    <skill id="weaken" x="1" all="1" />
+    <skill id="poisonstrike" x="1" />
+    <type>8</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+      <skill id="frost" x="1" />
+      <skill id="weaken" x="1" all="1" />
+      <skill id="poisonstrike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>19</health>
+      <skill id="frost" x="1" />
+      <skill id="weaken" x="1" all="1" />
+      <skill id="poisonstrike" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>21</health>
+      <skill id="frost" x="1" />
+      <skill id="weaken" x="1" all="1" />
+      <skill id="poisonstrike" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>23</health>
+      <skill id="frost" x="1" />
+      <skill id="weaken" x="1" all="1" />
+      <skill id="poisonstrike" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>25</health>
+      <skill id="frost" x="1" />
+      <skill id="weaken" x="1" all="1" />
+      <skill id="poisonstrike" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>28</health>
+      <skill id="frost" x="1" />
+      <skill id="weaken" x="1" all="1" />
+      <skill id="poisonstrike" x="12" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8062</id>
+    <card_type>2</card_type>
+    <name>Abyss Curse</name>
+    <picture>Burning_Golem_C</picture>
+    <asset_bundle>7</asset_bundle>
+    <attack>1</attack>
+    <health>4</health>
+    <cost>0</cost>
+    <rarity>5</rarity>
+    <skill id="enfeeble" x="4" all="1" />
+    <skill id="weaken" x="4" />
+    <skill id="nullify" x="4" />
+    <type>8</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>5</health>
+      <skill id="enfeeble" x="4" all="1" />
+      <skill id="weaken" x="4" />
+      <skill id="nullify" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>6</health>
+      <skill id="enfeeble" x="4" all="1" />
+      <skill id="weaken" x="4" />
+      <skill id="nullify" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="enfeeble" x="5" all="1" />
+      <skill id="weaken" x="5" />
+      <skill id="nullify" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>7</health>
+      <skill id="enfeeble" x="5" all="1" />
+      <skill id="weaken" x="5" />
+      <skill id="nullify" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>8</health>
+      <skill id="enfeeble" x="5" all="1" />
+      <skill id="weaken" x="5" />
+      <skill id="nullify" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <skill id="enfeeble" x="6" all="1" />
+      <skill id="weaken" x="6" />
+      <skill id="nullify" x="10" />
     </upgrade>
   </unit>
 </root>

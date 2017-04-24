@@ -16493,11 +16493,11 @@
       <card id="6016" name="Skeletal Giant" />
       <card id="5035" name="Vapor Guard" />
       <card id="5033" name="Lost Soul" />
-      <card id="6011" name="Bomb Spirit" />
+      <card id="2060" name="Patchwork Experiment" />
       <card id="6029" name="Spinehead Stalker" />
       <card id="7035" name="Carrion Tiger" />
       <card id="5021" mastery_level="2" name="Tower Spirit" />
-      <card id="2020" mastery_level="3" name="Tidetaken Fighter" />
+      <card id="5035" mastery_level="3" name="Vapor Guard" />
       <card id="5039" mastery_level="4" name="Ethereal Knight" />
       <card id="5121" mastery_level="5" name="Cauterizing Psalm" />
       <card id="7085" mastery_level="6" name="Moonlit Scavenger" />
@@ -16671,7 +16671,7 @@
     <deck>
       <card id="8047" name="Void's Thrall" />
       <card id="7082" name="Forest Umbras" />
-      <card id="2020" name="Tidetaken Fighter" />
+      <card id="2023" name="Grizzly Terror" />
       <card id="7084" name="Witchwood" />
       <card id="7116" name="Watchful Hexhound" />
       <card id="6116" name="Otherworldly Archer" />
@@ -16707,7 +16707,7 @@
       <card id="5084" name="Dotora Spirit" />
       <card id="5021" name="Tower Spirit" />
       <card id="1331" name="Fallen Soldiers" />
-      <card id="7118" name="Fleetfoot Wolper" />
+      <card id="6119" name="Shadowy Muse" />
       <card id="6116" name="Otherworldly Archer" />
       <card id="1327" name="Fallen Angel" />
       <card id="5033" mastery_level="2" name="Lost Soul" />
@@ -17204,5 +17204,834 @@
       <card id="28016" mastery_level="5" />
       <card id="28016" mastery_level="5" />
     </deck>
+  </mission>
+  <!-- Event 24 -->
+  <!-- Extra Node -->
+  <mission>
+    <id>5565</id>
+    <name>Purple Souls</name>
+    <energy>9</energy>
+    <desc>When you defeat the creatures in this realm, they leave behind fragments of their souls. With enough of them you can forge a single Purple Fire Soul. The energy reminds you of the power from the Blue Fire Souls.</desc>
+    <commander id="286" />
+    <deck>
+      <card id="5017" name="Steam Tempest" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="1319" name="Wraith" />
+      <card id="5030" name="Loxphas Mage" />
+      <card id="6015" name="Acidic Sludge" />
+      <card id="2023" name="Grizzly Terror" />
+      <card id="5035" name="Vapor Guard" />
+      <card id="6077" name="Enigma" />
+      <card id="5010" mastery_level="2" name="Concealed Dragon" />
+      <card id="2025" mastery_level="3" name="Blight Knight" />
+      <card id="6102" mastery_level="4" name="Ribbithold Guards" />
+      <card id="1331" mastery_level="5" name="Fallen Soldiers" />
+      <card id="6009" mastery_level="6" name="Siphon Dragon" />
+      <card id="5063" mastery_level="7" name="Runic Dragon" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5566</id>
+    <name>Energy Consumption</name>
+    <energy>9</energy>
+    <desc>Your relics shine faintly with light whenever exposed to the Purple Fire Souls. Defeating the dragons and undead in the area, you collect more energy to feed to your relics.</desc>
+    <commander id="377" />
+    <deck>
+      <card id="5012" name="Static Drake" />
+      <card id="7012" name="Life Drake" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="1319" name="Wraith" />
+      <card id="5091" name="Armor Thief" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="2023" name="Grizzly Terror" />
+      <card id="7035" name="Carrion Tiger" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="2005" mastery_level="2" name="Sailing Drake" />
+      <card id="2020" mastery_level="3" name="Tidetaken Fighter" />
+      <card id="7004" mastery_level="4" name="Ice Golem" />
+      <card id="2088" mastery_level="5" name="Bog Witch" />
+      <card id="7060" mastery_level="6" name="Shenami" />
+      <card id="6024" mastery_level="7" name="Bane Dragon" />
+    </deck>
+  </mission>
+  <!-- Campaign Event Weeks 1-2 -->
+  <mission>
+    <id>5567</id>
+    <name>New World Order</name>
+    <energy>9</energy>
+    <desc>You arrive in a strange land that ignores the laws of physics. A great ship is torn in half, sprawled across the sky. Behind you is a dark sun that radiates cold energy. The wind smells of sulfur. As you climb floating stairs, you see at least one thing that seems familiar...</desc>
+    <commander id="340" />
+    <deck>
+      <card id="8061" name="Prophecy of Ruin" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="1319" name="Wraith" />
+      <card id="7122" name="Satyr Runebearer" />
+      <card id="7084" name="Witchwood" />
+      <card id="1332" name="Vampiric Emira" />
+      <card id="5021" name="Tower Spirit" />
+      <card id="7082" name="Forest Umbras" />
+      <card id="7034" mastery_level="2" name="Spore Elk" />
+      <card id="5021" mastery_level="3" name="Tower Spirit" />
+      <card id="2087" mastery_level="4" name="Cranial Hazard" />
+      <card id="6011" mastery_level="5" name="Bomb Spirit" />
+      <card id="7036" mastery_level="6" name="Deepwood Corpse" />
+      <card id="6033" mastery_level="7" name="Firebeard" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Keep your eyes peeled. We don't know what to expect here.</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Is that - the adventurer who helped us in Elaria? Over here! It's good to see another familiar face.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5568</id>
+    <name>Old Alliance</name>
+    <energy>9</energy>
+    <desc>You've managed to find two old allies in this strange realm. It is one comfort in a place where exotic, hostile creatures roam the floating islands.</desc>
+    <commander id="286" />
+    <deck>
+      <card id="8062" name="Abyss Curse" />
+      <card id="7012" name="Life Drake" />
+      <card id="1319" name="Wraith" />
+      <card id="1319" name="Wraith" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="6097" name="Hoard Dragon" />
+      <card id="2059" name="Matriarch's Call" />
+      <card id="5123" name="Shadow Stalker" />
+      <card id="7095" name="Talonsaur" />
+      <card id="6061" mastery_level="2" name="Decagon" />
+      <card id="1632" mastery_level="3" name="Shadow Rider" />
+      <card id="6063" mastery_level="4" name="Firetail Dragon" />
+      <card id="2059" mastery_level="5" name="Matriarch's Call" />
+      <card id="6024" mastery_level="6" name="Bane Dragon" />
+      <card id="6027" mastery_level="7" name="Frigela, the Dread" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Groc used the Seastone Staff we brought back to send us into The Void Plane.</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>But how did you get here, adventurer?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5569</id>
+    <name>Dyrnwyn's Transformation</name>
+    <energy>9</energy>
+    <desc>When you start to explain your journey in Frigore, you take out the sword Dyrnwyn to show them its power. Yet the sword has changed since entering this realm - it has absorbed the Duskwillow Shield and Life Water, forming a new weapon of even greater power.</desc>
+    <commander id="284" />
+    <deck>
+      <card id="8061" name="Prophecy of Ruin" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="6010" name="Cliffpass Defender" />
+      <card id="7010" name="Honeycomb Dragon" />
+      <card id="5123" name="Shadow Stalker" />
+      <card id="5033" name="Lost Soul" />
+      <card id="7061" name="Thickskin Dragon" />
+      <card id="2004" mastery_level="2" name="Lavatail Dragon" />
+      <card id="6036" mastery_level="3" name="Cursed Ogre" />
+      <card id="7093" mastery_level="4" name="Larva Drakes" />
+      <card id="6011" mastery_level="5" name="Bomb Spirit" />
+      <card id="5063" mastery_level="6" name="Runic Dragon" />
+      <card id="6002" mastery_level="7" name="Spirit of Madness" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5570</id>
+    <name>Seastone Staff</name>
+    <energy>9</energy>
+    <desc>The Seastone Staff is an artifact part of Oda's Order. It has been passed down by generations of monks to those who have proven their worth. You can feel a special power from within it, something similar to your sword Dyrnwyn.</desc>
+    <commander id="284" />
+    <deck>
+      <card id="8062" name="Abyss Curse" />
+      <card id="7012" name="Life Drake" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="7024" name="Woolmane Dragon" />
+      <card id="2001" name="Dunetooth Demon" />
+      <card id="6031" name="Iceblood Assassin" />
+      <card id="5084" name="Dotora Spirit" />
+      <card id="5093" name="Scaly Newborn" />
+      <card id="2045" mastery_level="2" name="Chillbeard Giant" />
+      <card id="5123" mastery_level="3" name="Shadow Stalker" />
+      <card id="6096" mastery_level="4" name="Desert Slitherer" />
+      <card id="6081" mastery_level="5" name="Apparition" />
+      <card id="1640" mastery_level="6" name="Life Dragon" />
+      <card id="7085" mastery_level="7" name="Moonlit Scavenger" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Then we're here for the same cause: to find a way to end The Void's power.</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>If we can find where The Void is leaking into our world, then we could stop The Void's invasion... permanently.</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>I think you should hold onto the Seastone Staff. We'll combine our resources together.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5571</id>
+    <name>Hungry Voidlings</name>
+    <energy>9</energy>
+    <desc>Strange creatures, some mix of undead and others more dragon-like, are drawn to you as if by some unseen force. Sensing that you are not part of The Void, they gather and attack...</desc>
+    <commander id="220" />
+    <deck>
+      <card id="8061" name="Prophecy of Ruin" />
+      <card id="5017" name="Steam Tempest" />
+      <card id="1319" name="Wraith" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="5096" name="Enclave Dragon" />
+      <card id="2066" name="Basalt Dragon" />
+      <card id="6081" name="Apparition" />
+      <card id="7084" name="Witchwood" />
+      <card id="5024" name="Cloudtop Dragon" />
+      <card id="2044" mastery_level="2" name="Quillhide Dragon" />
+      <card id="7082" mastery_level="3" name="Forest Umbras" />
+      <card id="2067" mastery_level="4" name="Symbol of Elaria" />
+      <card id="1331" mastery_level="5" name="Fallen Soldiers" />
+      <card id="1340" mastery_level="6" name="Blazekin Dragon" />
+      <card id="2089" mastery_level="7" name="Slagspirit" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5572</id>
+    <name>New Foes</name>
+    <energy>9</energy>
+    <desc>In this upside-down world, you cannot always tell whether you're moving forward or backwards. You pass by landmarks that seem suspiciously familiar. One particular skeleton raises its sword and points towards you, giving an oddly human-like shriek...</desc>
+    <commander id="377" />
+    <deck>
+      <card id="8062" name="Abyss Curse" />
+      <card id="6012" name="Ember Drake" />
+      <card id="1319" name="Wraith" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="2044" name="Quillhide Dragon" />
+      <card id="1631" name="Venom Dragon" />
+      <card id="2024" name="Dusk Noble" />
+      <card id="6016" name="Skeletal Giant" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="6061" mastery_level="2" name="Decagon" />
+      <card id="6031" mastery_level="3" name="Iceblood Assassin" />
+      <card id="5025" mastery_level="4" name="Steelskin Dragon" />
+      <card id="5021" mastery_level="5" name="Tower Spirit" />
+      <card id="5023" mastery_level="6" name="Nightfall Dragon" />
+      <card id="7037" mastery_level="7" name="Bane" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>Aieeeee!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5573</id>
+    <name>Inverse Reality</name>
+    <energy>9</energy>
+    <desc>The monsters seem to pause as Elyse speaks. Their attacks falter, the skeleton in particular looking at the group in confusion.</desc>
+    <commander id="377" />
+    <deck>
+      <card id="8061" name="Prophecy of Ruin" />
+      <card id="7012" name="Life Drake" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="7093" name="Larva Drakes" />
+      <card id="2001" name="Dunetooth Demon" />
+      <card id="2087" name="Cranial Hazard" />
+      <card id="6034" name="Bone Viper" />
+      <card id="5096" name="Enclave Dragon" />
+      <card id="5010" mastery_level="2" name="Concealed Dragon" />
+      <card id="6031" mastery_level="3" name="Iceblood Assassin" />
+      <card id="5096" mastery_level="4" name="Enclave Dragon" />
+      <card id="5123" mastery_level="5" name="Shadow Stalker" />
+      <card id="6059" mastery_level="6" name="Violetfire Igniter" />
+      <card id="2026" mastery_level="7" name="Lazarus" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>'Aieee'? That's an odd sound from a skeleton.</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>What's that? You flesh creatures can TALK!?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5574</id>
+    <name>The Polite Skeleton</name>
+    <energy>9</energy>
+    <desc>The skeleton stops swinging wildly at the group. A few seconds pass as he stares at you. Finally, he lowers his cane. It seems he's willing to talk to you.</desc>
+    <commander id="283" />
+    <deck>
+      <card id="8062" name="Abyss Curse" />
+      <card id="5012" name="Static Drake" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="2067" name="Symbol of Elaria" />
+      <card id="5010" name="Concealed Dragon" />
+      <card id="2060" name="Patchwork Experiment" />
+      <card id="5084" name="Dotora Spirit" />
+      <card id="2005" name="Sailing Drake" />
+      <card id="5024" mastery_level="2" name="Cloudtop Dragon" />
+      <card id="7035" mastery_level="3" name="Carrion Tiger" />
+      <card id="6061" mastery_level="4" name="Decagon" />
+      <card id="6036" mastery_level="5" name="Cursed Ogre" />
+      <card id="6099" mastery_level="6" name="Opposing Forces" />
+      <card id="6122" mastery_level="7" name="Relentless Dead" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>I am extremely sorry for the mishap. We have never seen such well-articulated flesh creatures. Why, normally they roar and bare their teeth! Terrifying.</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Wait, aren't you a skeleton, though? Why is it that you can - err. Never mind. It's nice to meet you, um, Mister Skeleton.</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>Please, call me Aldus.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5575</id>
+    <name>Truth of the Heart</name>
+    <energy>9</energy>
+    <desc>The skeleton stops swinging wildly at the group. A few seconds pass as he stares at you. Finally, he lowers his cane. It seems he's willing to talk to you.</desc>
+    <commander id="283" />
+    <deck>
+      <card id="8061" name="Prophecy of Ruin" />
+      <card id="6012" name="Ember Drake" />
+      <card id="1319" name="Wraith" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="7062" name="Brine Bellower" />
+      <card id="5024" name="Cloudtop Dragon" />
+      <card id="6016" name="Skeletal Giant" />
+      <card id="5021" name="Tower Spirit" />
+      <card id="6097" name="Hoard Dragon" />
+      <card id="5062" mastery_level="2" name="Cliffhanger Wyrm" />
+      <card id="5084" mastery_level="3" name="Dotora Spirit" />
+      <card id="2046" mastery_level="4" name="Leaping Dragon" />
+      <card id="7122" mastery_level="5" name="Satyr Runebearer" />
+      <card id="7008" mastery_level="6" name="Rock Dragon" />
+      <card id="5085" mastery_level="7" name="Haunting Heir" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>I'm on a quest for Master Bluefire, you see. I'm looking for his lost heart.</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Master... Bluefire? The Heart of Blue Fire?</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>Yes! Have you heard of it? He's been quite distraught since its disappearance.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5576</id>
+    <name>New Powers</name>
+    <energy>9</energy>
+    <desc>You take out your Heart of Blue Fire. Yet parts of it are different than what you remember. Perhaps entering The Void Plane has altered its form.</desc>
+    <commander id="270" />
+    <deck>
+      <card id="8062" name="Abyss Curse" />
+      <card id="7012" name="Life Drake" />
+      <card id="1319" name="Wraith" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="7061" name="Thickskin Dragon" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="6123" name="Battleborn Destrier" />
+      <card id="2088" name="Bog Witch" />
+      <card id="5093" name="Scaly Newborn" />
+      <card id="5025" mastery_level="2" name="Steelskin Dragon" />
+      <card id="6034" mastery_level="3" name="Bone Viper" />
+      <card id="2046" mastery_level="4" name="Leaping Dragon" />
+      <card id="7035" mastery_level="5" name="Carrion Tiger" />
+      <card id="2006" mastery_level="6" name="Zhulong" />
+      <card id="6003" mastery_level="7" name="Black Knight" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5577</id>
+    <name>Whispers of the End</name>
+    <energy>9</energy>
+    <desc>The skeleton gasps as you show show him the Heart of Blue Fire. He clearly recognizes it as the object he's been searching for. However, you are hesitant to hand over such a powerful artifact of The Void.</desc>
+    <commander id="286" />
+    <deck>
+      <card id="8061" name="Prophecy of Ruin" />
+      <card id="6012" name="Ember Drake" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="7095" name="Talonsaur" />
+      <card id="7010" name="Honeycomb Dragon" />
+      <card id="6031" name="Iceblood Assassin" />
+      <card id="2060" name="Patchwork Experiment" />
+      <card id="5062" name="Cliffhanger Wyrm" />
+      <card id="5025" mastery_level="2" name="Steelskin Dragon" />
+      <card id="6083" mastery_level="3" name="Lockejaw" />
+      <card id="2044" mastery_level="4" name="Quillhide Dragon" />
+      <card id="7084" mastery_level="5" name="Witchwood" />
+      <card id="6058" mastery_level="6" name="Tarragon Cuttail" />
+      <card id="5037" mastery_level="7" name="Dauntless Baneblade" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>That's it! You have the heart of Master Bluefire! Oh, he will be so pleased.</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Who is this... 'Master Bluefire'?</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>He's the ruler of The Void, naturally.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5578</id>
+    <name>Lost Heart</name>
+    <energy>9</energy>
+    <desc>A horrible screech rends the air, causing both your group and the monsters to shudder. Above you, you see a pair of wings enveloped in a blue flame, descending towards your allies...</desc>
+    <commander id="259" />
+    <deck>
+      <card id="8062" name="Abyss Curse" />
+      <card id="5012" name="Static Drake" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="6096" name="Desert Slitherer" />
+      <card id="6063" name="Firetail Dragon" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="6016" name="Skeletal Giant" />
+      <card id="6061" name="Decagon" />
+      <card id="5025" mastery_level="2" name="Steelskin Dragon" />
+      <card id="6083" mastery_level="3" name="Lockejaw" />
+      <card id="7093" mastery_level="4" name="Larva Drakes" />
+      <card id="6011" mastery_level="5" name="Bomb Spirit" />
+      <card id="7094" mastery_level="6" name="Basilisk" />
+      <card id="6084" mastery_level="7" name="Crypt Sentry" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>Master Bluefire, down here! We've found your lost heart!</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Weeks 3-4 -->
+  <mission>
+    <id>5579</id>
+    <name>Soulless Aggression</name>
+    <energy>9</energy>
+    <desc>A blue flame sparks nearby. Fire begins to eat the landscape around you, yet the blue fire is devoid of warmth. Creatures of scales and rotting flesh rise from the ground, soulless eyes fixated on you.</desc>
+    <commander id="271" />
+    <deck>
+      <card id="8061" name="Prophecy of Ruin" />
+      <card id="6012" name="Ember Drake" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="5033" name="Lost Soul" />
+      <card id="6063" name="Firetail Dragon" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="5086" name="Spirit Blades" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="2066" name="Basalt Dragon" />
+      <card id="5024" mastery_level="2" name="Cloudtop Dragon" />
+      <card id="2059" mastery_level="3" name="Matriarch's Call" />
+      <card id="7061" mastery_level="4" name="Thickskin Dragon" />
+      <card id="6123" mastery_level="5" name="Battleborn Destrier" />
+      <card id="6060" mastery_level="6" name="Pudgytusk" />
+      <card id="7036" mastery_level="7" name="Deepwood Corpse" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5580</id>
+    <name>Wings of Bluefire</name>
+    <energy>9</energy>
+    <desc>The wings in the sky descend towards your group. It has scales and wings like a dragon, yet there is a spark of intelligence in its eye, much different than the beasts of Arcantica. When it opens its maw, the beast speaks...</desc>
+    <commander id="271" />
+    <deck>
+      <card id="8062" name="Abyss Curse" />
+      <card id="7012" name="Life Drake" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="5035" name="Vapor Guard" />
+      <card id="7024" name="Woolmane Dragon" />
+      <card id="2067" name="Symbol of Elaria" />
+      <card id="2060" name="Patchwork Experiment" />
+      <card id="7034" name="Spore Elk" />
+      <card id="2046" name="Leaping Dragon" />
+      <card id="2067" mastery_level="2" name="Symbol of Elaria" />
+      <card id="6036" mastery_level="3" name="Cursed Ogre" />
+      <card id="7062" mastery_level="4" name="Brine Bellower" />
+      <card id="6031" mastery_level="5" name="Iceblood Assassin" />
+      <card id="5061" mastery_level="6" name="Thunderfist Rex" />
+      <card id="6002" mastery_level="7" name="Spirit of Madness" />
+    </deck>
+    <speech>
+      <line>
+        <commander>raven</commander>
+        <enemy>1</enemy>
+        <text>Thou hast thoughtlessly wandered into my kingdom, believing thyself invincible.</text>
+      </line>
+      <line>
+        <commander>raven</commander>
+        <enemy>1</enemy>
+        <text>Yet previous victories do not predict success of the present.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5581</id>
+    <name>Familiar Foe</name>
+    <energy>9</energy>
+    <desc>The creatures press closer at the dragon's words. They are eager to make enemies of their Master. Each defeated soul simply spawns a new one in its place.</desc>
+    <commander id="286" />
+    <deck>
+      <card id="8061" name="Prophecy of Ruin" />
+      <card id="5012" name="Static Drake" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="7035" name="Carrion Tiger" />
+      <card id="7010" name="Honeycomb Dragon" />
+      <card id="6010" name="Cliffpass Defender" />
+      <card id="7122" name="Satyr Runebearer" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="5062" name="Cliffhanger Wyrm" />
+      <card id="6061" mastery_level="2" name="Decagon" />
+      <card id="2088" mastery_level="3" name="Bog Witch" />
+      <card id="2044" mastery_level="4" name="Quillhide Dragon" />
+      <card id="6011" mastery_level="5" name="Bomb Spirit" />
+      <card id="6026" mastery_level="6" name="Smokefang" />
+      <card id="6087" mastery_level="7" name="Dread Obliterator" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>Oh! Do you know these people, Master Bluefire?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5582</id>
+    <name>Apologetic Skeleton</name>
+    <energy>9</energy>
+    <desc>Even one you thought might be a possible ally has turned quickly on you, albeit apologetically. You have been deemed a threat by The Void...</desc>
+    <commander id="377" />
+    <deck>
+      <card id="8062" name="Abyss Curse" />
+      <card id="6012" name="Ember Drake" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="6083" name="Lockejaw" />
+      <card id="7061" name="Thickskin Dragon" />
+      <card id="6010" name="Cliffpass Defender" />
+      <card id="7084" name="Witchwood" />
+      <card id="5096" name="Enclave Dragon" />
+      <card id="5093" name="Scaly Newborn" />
+      <card id="5010" mastery_level="2" name="Concealed Dragon" />
+      <card id="2087" mastery_level="3" name="Cranial Hazard" />
+      <card id="7024" mastery_level="4" name="Woolmane Dragon" />
+      <card id="7082" mastery_level="5" name="Forest Umbras" />
+      <card id="6095" mastery_level="6" name="Gearplate Dragon" />
+      <card id="6124" mastery_level="7" name="Enfeebling Vizier" />
+    </deck>
+    <speech>
+      <line>
+        <commander>raven</commander>
+        <enemy>1</enemy>
+        <text>Destroy them, for they are enemies who seeketh The Void's destruction.</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>Oh, I'm terribly sorry, fellows. It appears we have no choice but to kill you. Please don't take it personally.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5583</id>
+    <name>Fighting Further</name>
+    <energy>9</energy>
+    <desc>Waves of the monsters throw themselves upon you. You and your companions have come prepared for a fight. Oda and Elyse pool their strength with yours, creating a formidable position that the monsters are unable to breach.</desc>
+    <commander id="377" />
+    <deck>
+      <card id="8061" name="Prophecy of Ruin" />
+      <card id="7012" name="Life Drake" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="2020" name="Tidetaken Fighter" />
+      <card id="7061" name="Thickskin Dragon" />
+      <card id="2001" name="Dunetooth Demon" />
+      <card id="7035" name="Carrion Tiger" />
+      <card id="6096" name="Desert Slitherer" />
+      <card id="6063" name="Firetail Dragon" />
+      <card id="5010" mastery_level="2" name="Concealed Dragon" />
+      <card id="7084" mastery_level="3" name="Witchwood" />
+      <card id="5025" mastery_level="4" name="Steelskin Dragon" />
+      <card id="5123" mastery_level="5" name="Shadow Stalker" />
+      <card id="5063" mastery_level="6" name="Runic Dragon" />
+      <card id="1342" mastery_level="7" name="Ronin" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5584</id>
+    <name>Blue Gaze</name>
+    <energy>9</energy>
+    <desc>When you focus on the monsters before you, you're able to cut them down without much trouble. But whenever your gaze meets Bluefire's, the Plane's reality distorts, and the creatures fight back even stronger...</desc>
+    <commander id="269" />
+    <deck>
+      <card id="8062" name="Abyss Curse" />
+      <card id="5012" name="Static Drake" />
+      <card id="1319" name="Wraith" />
+      <card id="7122" name="Satyr Runebearer" />
+      <card id="6097" name="Hoard Dragon" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="2025" name="Blight Knight" />
+      <card id="2005" name="Sailing Drake" />
+      <card id="7010" name="Honeycomb Dragon" />
+      <card id="5010" mastery_level="2" name="Concealed Dragon" />
+      <card id="5084" mastery_level="3" name="Dotora Spirit" />
+      <card id="7024" mastery_level="4" name="Woolmane Dragon" />
+      <card id="7034" mastery_level="5" name="Spore Elk" />
+      <card id="6062" mastery_level="6" name="Abzu" />
+      <card id="5085" mastery_level="7" name="Haunting Heir" />
+    </deck>
+    <speech>
+      <line>
+        <commander>raven</commander>
+        <enemy>1</enemy>
+        <text>Dost thou not remember our first meeting? Think back... and remember...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5585</id>
+    <name>Violent Memories</name>
+    <energy>9</energy>
+    <desc>You feel a harsh presence that presses against your mind, clawing through your thoughts. It grabs hold of a memory of you have, fighting Samael's Void Abomination. You remember so vividly it's almost as if you're fighting it again...</desc>
+    <commander id="215" />
+    <deck>
+      <card id="8061" name="Prophecy of Ruin" />
+      <card id="5012" name="Static Drake" />
+      <card id="5012" name="Static Drake" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="5093" name="Scaly Newborn" />
+      <card id="7093" name="Larva Drakes" />
+      <card id="6011" name="Bomb Spirit" />
+      <card id="2005" name="Sailing Drake" />
+      <card id="7010" name="Honeycomb Dragon" />
+      <card id="7061" mastery_level="2" name="Thickskin Dragon" />
+      <card id="5084" mastery_level="3" name="Dotora Spirit" />
+      <card id="7024" mastery_level="4" name="Woolmane Dragon" />
+      <card id="7093" mastery_level="5" name="Larva Drakes" />
+      <card id="6059" mastery_level="6" name="Violetfire Igniter" />
+      <card id="7096" mastery_level="7" name="Vala, Sleeping Earth" />
+    </deck>
+    <speech>
+      <line>
+        <commander>void</commander>
+        <enemy>1</enemy>
+        <text>I... Have... Been... RELEASED!!!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5586</id>
+    <name>Violent Present</name>
+    <energy>9</energy>
+    <desc>The presence's grip against your mind weakens. You blink and return to the present. The Void's power gushes through the land like a volcano, a familiar figure emerging.</desc>
+    <commander id="215" />
+    <deck>
+      <card id="8062" name="Abyss Curse" />
+      <card id="7012" name="Life Drake" />
+      <card id="6012" name="Ember Drake" />
+      <card id="5010" name="Concealed Dragon" />
+      <card id="5093" name="Scaly Newborn" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="6031" name="Iceblood Assassin" />
+      <card id="2044" name="Quillhide Dragon" />
+      <card id="2067" name="Symbol of Elaria" />
+      <card id="7061" mastery_level="2" name="Thickskin Dragon" />
+      <card id="5084" mastery_level="3" name="Dotora Spirit" />
+      <card id="7093" mastery_level="4" name="Larva Drakes" />
+      <card id="7061" mastery_level="5" name="Thickskin Dragon" />
+      <card id="6023" mastery_level="6" name="Broodmother" />
+      <card id="6100" mastery_level="7" name="Tiamat" />
+    </deck>
+    <speech>
+      <line>
+        <commander>void</commander>
+        <enemy>1</enemy>
+        <text>I AM THE SHADOW OF BLUEFIRE!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5587</id>
+    <name>Mind Over Matter</name>
+    <energy>9</energy>
+    <desc>Even though you were fighting off Bluefire's forces, you feel the presence against your mind again. Pain ripples through your mind whenever you're about to strike or be hit, and your companions flinch in unison. Whatever is happening to you, is also affecting them.</desc>
+    <commander id="377" />
+    <deck>
+      <card id="8061" name="Prophecy of Ruin" />
+      <card id="6012" name="Ember Drake" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="7034" name="Spore Elk" />
+      <card id="7062" name="Brine Bellower" />
+      <card id="5024" name="Cloudtop Dragon" />
+      <card id="7035" name="Carrion Tiger" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="5021" name="Tower Spirit" />
+      <card id="7024" mastery_level="2" name="Woolmane Dragon" />
+      <card id="6034" mastery_level="3" name="Bone Viper" />
+      <card id="5096" mastery_level="4" name="Enclave Dragon" />
+      <card id="7062" mastery_level="5" name="Brine Bellower" />
+      <card id="7059" mastery_level="6" name="Knotborn Dragon" />
+      <card id="6084" mastery_level="7" name="Crypt Sentry" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Ah... My head, it hurts...!</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>There is an evil presence that is attacking our minds. Try to maintain your inner peace.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5588</id>
+    <name>Opportunists</name>
+    <energy>9</energy>
+    <desc>You feel your strength faltering due to the presence assaulting your mind. The dragons and undead sense a new weakness, renewing their efforts against you.</desc>
+    <commander id="270" />
+    <deck>
+      <card id="8062" name="Abyss Curse" />
+      <card id="7012" name="Life Drake" />
+      <card id="1319" name="Wraith" />
+      <card id="7084" name="Witchwood" />
+      <card id="2005" name="Sailing Drake" />
+      <card id="5062" name="Cliffhanger Wyrm" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="6010" name="Cliffpass Defender" />
+      <card id="5021" name="Tower Spirit" />
+      <card id="6061" mastery_level="2" name="Decagon" />
+      <card id="6036" mastery_level="3" name="Cursed Ogre" />
+      <card id="6010" mastery_level="4" name="Cliffpass Defender" />
+      <card id="7093" mastery_level="5" name="Larva Drakes" />
+      <card id="7032" mastery_level="6" name="Nidhogg" />
+      <card id="7033" mastery_level="7" name="Treebond Skull" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5589</id>
+    <name>Last Hope</name>
+    <energy>9</energy>
+    <desc>Your companions fall, leaving you the only one left to fight. Yet the enemies show no sign of slowing their assault.</desc>
+    <commander id="259" />
+    <deck>
+      <card id="8061" name="Prophecy of Ruin" />
+      <card id="5012" name="Static Drake" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="7084" name="Witchwood" />
+      <card id="2046" name="Leaping Dragon" />
+      <card id="2067" name="Symbol of Elaria" />
+      <card id="6123" name="Battleborn Destrier" />
+      <card id="6010" name="Cliffpass Defender" />
+      <card id="5033" name="Lost Soul" />
+      <card id="7010" mastery_level="2" name="Honeycomb Dragon" />
+      <card id="6083" mastery_level="3" name="Lockejaw" />
+      <card id="7095" mastery_level="4" name="Talonsaur" />
+      <card id="7093" mastery_level="5" name="Larva Drakes" />
+      <card id="5008" mastery_level="6" name="Ice Dragon" />
+      <card id="5085" mastery_level="7" name="Haunting Heir" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>I'm sorry... I don't know how much more of this I can take.</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>Just buy us a little time, and we'll rejoin the fight...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5590</id>
+    <name>Broken</name>
+    <energy>9</energy>
+    <desc>Bluefire steps in. As you prepare to fight, you barely get a few swings in before the silence rings hollow in your mind. Pain flares in your head, replaced by nothingness and a dark abyss. Your companions and The Void Plane vanish from your sight.</desc>
+    <commander id="215" />
+    <deck>
+      <card id="8062" name="Abyss Curse" />
+      <card id="6012" name="Ember Drake" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="7082" name="Forest Umbras" />
+      <card id="5096" name="Enclave Dragon" />
+      <card id="2066" name="Basalt Dragon" />
+      <card id="1332" name="Vampiric Emira" />
+      <card id="6063" name="Firetail Dragon" />
+      <card id="5035" name="Vapor Guard" />
+      <card id="7061" mastery_level="2" name="Thickskin Dragon" />
+      <card id="2088" mastery_level="3" name="Bog Witch" />
+      <card id="7010" mastery_level="4" name="Honeycomb Dragon" />
+      <card id="7024" mastery_level="5" name="Woolmane Dragon" />
+      <card id="5097" mastery_level="6" name="Sierra Dweller" />
+      <card id="2089" mastery_level="7" name="Slagspirit" />
+    </deck>
+    <speech>
+      <line>
+        <commander>raven</commander>
+        <enemy>1</enemy>
+        <text>Enough. Let thy mind accept the silence it craves.</text>
+      </line>
+    </speech>
   </mission>
 </root>

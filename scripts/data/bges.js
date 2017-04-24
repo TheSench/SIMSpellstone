@@ -993,7 +993,7 @@ var BATTLEGROUNDS = {
       {
         "effect_type": "scale_attributes",
         "base_mult": .1,
-        "mult": .05,
+        "mult": .04,
       },
     ]
   },
@@ -1010,6 +1010,22 @@ var BATTLEGROUNDS = {
         "effect_type": "scale_attributes",
         "base_mult": .1,
         "mult": .05,
+      },
+    ]
+  },
+  "2010": {
+    "name": "Harmonious World Sphere Chorus",
+    "id": "2010",
+    "desc": "Non-token enemies become stronger with each passing Mastery level.",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "5",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .1,
+        "mult": .0025,
       },
     ]
   },

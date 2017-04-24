@@ -7949,4 +7949,55 @@
     </upgrade>
     <desc>TyrantShiva runs Support for Spellstone! She is the one that will help you out if you ever have a problem in game!</desc>
   </unit>
+  <unit>
+    <id>377</id>
+    <card_type>1</card_type>
+    <name>Well-Dressed Skeleton</name>
+    <picture></picture>
+    <asset_bundle></asset_bundle>
+    <hidden_until_time></hidden_until_time>
+    <attack>0</attack>
+    <health>55</health>
+    <skill id="imbue" x="1" s="berserk" />
+    <skill id="protect" x="1" all="1" />
+    <skill id="enfeeble" x="1" all="1" />
+    <rarity>4</rarity>
+    <type>8</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>59</health>
+      <skill id="imbue" x="2" s="berserk" />
+      <skill id="protect" x="1" all="1" />
+      <skill id="enfeeble" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>63</health>
+      <skill id="imbue" x="3" s="berserk" />
+      <skill id="protect" x="1" all="1" />
+      <skill id="enfeeble" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>67</health>
+      <skill id="imbue" x="4" s="berserk" />
+      <skill id="protect" x="1" all="1" />
+      <skill id="enfeeble" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>71</health>
+      <skill id="imbue" x="5" s="berserk" />
+      <skill id="protect" x="2" all="1" />
+      <skill id="enfeeble" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>76</health>
+      <skill id="imbue" x="6" s="berserk" />
+      <skill id="protect" x="2" all="1" />
+      <skill id="enfeeble" x="3" all="1" />
+    </upgrade>
+  </unit>
 </root>

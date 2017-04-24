@@ -387,10 +387,10 @@
     <order>500</order>
     <icon>arcane_shot</icon>
     <name>Poisonbolt</name>
-    <desc>Deals damage to a random enemy creature...and poison</desc>
-    <desc_all>Deals damage to all enemy creatures...and poison</desc_all>
-    <desc_faction>Deals damage to a random enemy {y} creature...and poison</desc_faction>
-    <desc_all_faction>Deals damage to all enemy {y} creatures...and poison</desc_all_faction>
+    <desc>Deals bolt damage to a random enemy creature and leaves poison</desc>
+    <desc_all>Deals bolt damage to all enemy creatures and leaves poison</desc_all>
+    <desc_faction>Deals bolt damage to a random enemy {y} creature and leaves poison</desc_faction>
+    <desc_all_faction>Deals bolt damage to all enemy {y} creatures and leaves poison</desc_all_faction>
     <attributes x="1" y="0" all="1" c="0" s="0" />
     <balance_points>6</balance_points>
     <hidden>1</hidden>

@@ -5970,5 +5970,187 @@
       <gold>800</gold>
     </reward>
   </achievement>
+  <!-- Campaign Event 3 -->
+  <!-- Extra Node -->
+  <achievement>
+    <id>3225</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Soul Power</name>
+    <desc>Complete the 'Soul Power' campaign on Mastery Level 4.</desc>
+    <mission_req>64</mission_req>
+    <locked_start_time>1493917200</locked_start_time>
+    <!-- Thu, 04 May 2017 17:00:00 -->
+    <req>
+      <campaign>1124</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <reward>
+        <item id="3053" number="50" />
+        <event_points id="7020" number="50" /> --&gt;
+		</reward>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3226</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Soul Power</name>
+    <desc>Complete the 'Soul Power' campaign on Mastery Level 7.</desc>
+    <mission_req>5537</mission_req>
+    <locked_start_time>1493917200</locked_start_time>
+    <!-- Thu, 04 May 2017 17:00:00 -->
+    <achievement_req>3225</achievement_req>
+    <req>
+      <campaign>1124</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3227</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Void Plane</name>
+    <desc>Complete the 'The Void Plane' campaign on Mastery Level 2.</desc>
+    <mission_req>64</mission_req>
+    <locked_start_time>1493917200</locked_start_time>
+    <!-- Thu, 04 May 2017 17:00:00 -->
+    <req>
+      <campaign>1125</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3228</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Void Plane</name>
+    <desc>Complete the 'The Void Plane' campaign on Mastery Level 4.</desc>
+    <mission_req>64</mission_req>
+    <locked_start_time>1493917200</locked_start_time>
+    <!-- Thu, 04 May 2017 17:00:00 -->
+    <achievement_req>3227</achievement_req>
+    <req>
+      <campaign>1125</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3229</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Void Plane</name>
+    <desc>Complete the 'The Void Plane' campaign on Mastery Level 6.</desc>
+    <mission_req>64</mission_req>
+    <locked_start_time>1493917200</locked_start_time>
+    <!-- Thu, 04 May 2017 17:00:00 -->
+    <achievement_req>3228</achievement_req>
+    <req>
+      <campaign>1125</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3230</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Void Plane</name>
+    <desc>Complete the 'The Void Plane' campaign on Mastery Level 7.</desc>
+    <mission_req>64</mission_req>
+    <locked_start_time>1493917200</locked_start_time>
+    <!-- Thu, 04 May 2017 17:00:00 -->
+    <achievement_req>3229</achievement_req>
+    <req>
+      <campaign>1125</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3231</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Ruler of The Void</name>
+    <desc>Complete the 'Ruler of The Void' campaign on Mastery Level 2.</desc>
+    <mission_req>5578</mission_req>
+    <locked_start_time>1495126800</locked_start_time>
+    <!-- Thu, 18 May 2017 17:00:00 -->
+    <req>
+      <campaign>1126</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3232</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Ruler of The Void</name>
+    <desc>Complete the 'Ruler of The Void' campaign on Mastery Level 4.</desc>
+    <mission_req>5578</mission_req>
+    <locked_start_time>1495126800</locked_start_time>
+    <!-- Thu, 18 May 2017 17:00:00 -->
+    <achievement_req>3231</achievement_req>
+    <req>
+      <campaign>1126</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3233</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Ruler of The Void</name>
+    <desc>Complete the 'Ruler of The Void' campaign on Mastery Level 6.</desc>
+    <mission_req>5578</mission_req>
+    <locked_start_time>1495126800</locked_start_time>
+    <!-- Thu, 18 May 2017 17:00:00 -->
+    <achievement_req>3232</achievement_req>
+    <req>
+      <campaign>1126</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3234</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Ruler of The Void</name>
+    <desc>Complete the 'Ruler of The Void' campaign on Mastery Level 7.</desc>
+    <mission_req>5578</mission_req>
+    <locked_start_time>1495126800</locked_start_time>
+    <!-- Thu, 18 May 2017 17:00:00 -->
+    <achievement_req>3233</achievement_req>
+    <req>
+      <campaign>1126</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
 </root>

@@ -4341,6 +4341,103 @@
     <find_item id="3052" drop_per_energy="1" min="120" max="150" />
   </campaign>
   <!-- April Fools Campaigns END -->
+  <!-- Event 24 -->
+  <campaign>
+    <id>1124</id>
+    <name>Soul Power</name>
+    <campaign_req>6</campaign_req>
+    <locked_start_time>1493917200</locked_start_time>
+    <!-- Thu, 06 May 2017 17:00:00 -->
+    <location_id>9</location_id>
+    <x>683</x>
+    <y>125</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5565</mission_id>
+      <mission_id>5566</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="510" />
+      <card level="3" id="510" />
+      <card level="4" id="2030" />
+      <card level="5" id="510" />
+      <card level="6" id="510" />
+      <card level="7" id="510" />
+    </rewards>
+    <find_item id="3053" drop_per_energy=".1" />
+  </campaign>
+  <campaign>
+    <id>1125</id>
+    <name>The Void Plane</name>
+    <campaign_req>6</campaign_req>
+    <locked_start_time>1493917200</locked_start_time>
+    <!-- Thu, 06 May 2017 17:00:00 -->
+    <location_id>9</location_id>
+    <x>484</x>
+    <y>145</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5567</mission_id>
+      <mission_id>5568</mission_id>
+      <mission_id>5569</mission_id>
+      <mission_id>5570</mission_id>
+      <mission_id>5571</mission_id>
+      <mission_id>5572</mission_id>
+      <mission_id>5573</mission_id>
+      <mission_id>5574</mission_id>
+      <mission_id>5575</mission_id>
+      <mission_id>5576</mission_id>
+      <mission_id>5577</mission_id>
+      <mission_id>5578</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2088" />
+      <card level="5" id="512" />
+      <card level="6" id="2059" />
+      <item level="7" id="3050" />
+    </rewards>
+    <find_item id="3053" drop_per_energy=".2" />
+  </campaign>
+  <campaign>
+    <id>1126</id>
+    <name>Ruler of The Void</name>
+    <campaign_req>6</campaign_req>
+    <locked_start_time>1495126800</locked_start_time>
+    <!-- Thu, 18 May 2017 17:00:00 -->
+    <battleground_id>2010</battleground_id>
+    <location_id>9</location_id>
+    <x>525</x>
+    <y>340</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5579</mission_id>
+      <mission_id>5580</mission_id>
+      <mission_id>5581</mission_id>
+      <mission_id>5582</mission_id>
+      <mission_id>5583</mission_id>
+      <mission_id>5584</mission_id>
+      <mission_id>5585</mission_id>
+      <mission_id>5586</mission_id>
+      <mission_id>5587</mission_id>
+      <mission_id>5588</mission_id>
+      <mission_id>5589</mission_id>
+      <mission_id>5590</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2088" />
+      <card level="5" id="512" />
+      <card level="6" id="2059" />
+      <item level="7" id="3050" />
+    </rewards>
+    <find_item id="3053" drop_per_energy=".4" />
+  </campaign>
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
   <!-- ============================ -->
