@@ -1014,7 +1014,7 @@ var BATTLEGROUNDS = {
     ]
   },
   "2010": {
-    "name": "Harmonious World Sphere Chorus",
+    "name": "Harmonious Sphere Chorus",
     "id": "2010",
     "desc": "Non-token enemies become stronger with each passing Mastery level.",
     "enemy_only": true,
@@ -1024,8 +1024,24 @@ var BATTLEGROUNDS = {
     "effect": [
       {
         "effect_type": "scale_attributes",
-        "base_mult": .1,
-        "mult": .0025,
+        "base_mult": .01,
+        "mult": .003,
+      },
+    ]
+  },
+  "2011": {
+    "name": "Harmonious World Refrain",
+    "id": "2011",
+    "desc": "Bluefire, Void Master fights harder with each passing Mastery level, increasing cards' stats!",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "0",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .3,
+        "mult": .01,
       },
     ]
   },

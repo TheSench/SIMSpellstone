@@ -5228,7 +5228,7 @@
     <asset_bundle>6</asset_bundle>
     <attack>1</attack>
     <health>15</health>
-    <cost>2</cost>
+    <cost>4</cost>
     <rarity>5</rarity>
     <skill id="frost" x="1" />
     <skill id="weaken" x="1" all="1" />
@@ -5272,10 +5272,10 @@
     </upgrade>
     <upgrade>
       <level>7</level>
-      <health>28</health>
+      <health>35</health>
       <skill id="frost" x="1" />
       <skill id="weaken" x="1" all="1" />
-      <skill id="poisonstrike" x="12" />
+      <skill id="poisonstrike" x="15" />
     </upgrade>
   </unit>
   <unit>
@@ -5285,53 +5285,215 @@
     <picture>Burning_Golem_C</picture>
     <asset_bundle>7</asset_bundle>
     <attack>1</attack>
-    <health>4</health>
+    <health>2</health>
     <cost>0</cost>
     <rarity>5</rarity>
-    <skill id="enfeeble" x="4" all="1" />
-    <skill id="weaken" x="4" />
-    <skill id="nullify" x="4" />
+    <skill id="enfeeble" x="2" all="1" />
+    <skill id="weaken" x="1" />
+    <skill id="nullify" x="1" />
     <type>8</type>
     <set>9999</set>
     <upgrade>
       <level>2</level>
-      <health>5</health>
-      <skill id="enfeeble" x="4" all="1" />
-      <skill id="weaken" x="4" />
-      <skill id="nullify" x="5" />
+      <health>2</health>
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="weaken" x="2" />
+      <skill id="poison" x="1" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>6</health>
-      <skill id="enfeeble" x="4" all="1" />
-      <skill id="weaken" x="4" />
-      <skill id="nullify" x="6" />
+      <health>2</health>
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="weaken" x="3" />
+      <skill id="poison" x="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="enfeeble" x="5" all="1" />
-      <skill id="weaken" x="5" />
-      <skill id="nullify" x="7" />
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="weaken" x="3" />
+      <skill id="poison" x="1" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>7</health>
-      <skill id="enfeeble" x="5" all="1" />
-      <skill id="weaken" x="5" />
-      <skill id="nullify" x="8" />
+      <health>2</health>
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="weaken" x="3" />
+      <skill id="poison" x="1" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>8</health>
-      <skill id="enfeeble" x="5" all="1" />
-      <skill id="weaken" x="5" />
-      <skill id="nullify" x="9" />
+      <health>3</health>
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="weaken" x="4" />
+      <skill id="poison" x="1" />
     </upgrade>
     <upgrade>
       <level>7</level>
-      <skill id="enfeeble" x="6" all="1" />
-      <skill id="weaken" x="6" />
-      <skill id="nullify" x="10" />
+      <skill id="enfeeble" x="4" all="1" />
+      <skill id="weaken" x="4" />
+      <skill id="poison" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8063</id>
+    <card_type>2</card_type>
+    <name>Bluefire's Memory</name>
+    <picture>Twilight_Mirror_Warrior_C</picture>
+    <asset_bundle>2</asset_bundle>
+    <attack>1</attack>
+    <health>1</health>
+    <cost>0</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="5" />
+    <skill id="protect" x="1" all="1" />
+    <type>8</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="6" />
+      <skill id="protect" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="7" />
+      <skill id="protect" x="1" all="1" />
+      <skill id="flurry" c="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>2</health>
+      <skill id="armored" x="8" />
+      <skill id="protect" x="1" all="1" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="9" />
+      <skill id="protect" x="2" all="1" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>2</attack>
+      <health>2</health>
+      <skill id="armored" x="10" />
+      <skill id="protect" x="2" all="1" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8064</id>
+    <card_type>2</card_type>
+    <name>Bluefire's Slave</name>
+    <picture>Wasteland_Nomad_B</picture>
+    <asset_bundle>13</asset_bundle>
+    <attack>3</attack>
+    <health>1</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="heal" x="14" />
+    <skill id="armored" x="1" />
+    <skill id="protect" x="2" y="8" />
+    <type>8</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>1</health>
+      <skill id="heal" x="16" />
+      <skill id="armored" x="2" />
+      <skill id="protect" x="5" y="8" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>1</health>
+      <attack>4</attack>
+      <skill id="heal" x="18" />
+      <skill id="armored" x="3" />
+      <skill id="protect" x="8" y="8" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>1</health>
+      <skill id="heal" x="20" />
+      <skill id="armored" x="4" />
+      <skill id="protect" x="10" y="8" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>1</health>
+      <skill id="heal" x="22" />
+      <skill id="armored" x="5" />
+      <skill id="protect" x="12" y="8" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>5</attack>
+      <health>2</health>
+      <skill id="heal" x="25" />
+      <skill id="armored" x="5" />
+      <skill id="protect" x="15" y="8" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8065</id>
+    <card_type>2</card_type>
+    <name>Bluefire's Harmony</name>
+    <picture>Rune_Dragon_B</picture>
+    <asset_bundle>63</asset_bundle>
+    <attack>7</attack>
+    <health>30</health>
+    <cost>4</cost>
+    <rarity>5</rarity>
+    <skill id="strike" x="1" all="1" />
+    <skill id="pierce" x="1" />
+    <skill id="nullify" x="1" />
+    <type>8</type>
+    <sub_type>9</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>31</health>
+      <attack>8</attack>
+      <skill id="strike" x="2" all="1" />
+      <skill id="pierce" x="1" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>33</health>
+      <skill id="strike" x="2" all="1" />
+      <skill id="pierce" x="2" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>35</health>
+      <attack>9</attack>
+      <skill id="strike" x="2" all="1" />
+      <skill id="pierce" x="3" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>36</health>
+      <skill id="strike" x="3" all="1" />
+      <skill id="pierce" x="4" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>37</health>
+      <attack>10</attack>
+      <skill id="strike" x="4" all="1" />
+      <skill id="pierce" x="4" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>38</health>
+      <skill id="strike" x="4" all="1" />
+      <skill id="pierce" x="5" />
+      <skill id="nullify" x="3" />
     </upgrade>
   </unit>
 </root>

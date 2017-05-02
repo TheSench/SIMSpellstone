@@ -5986,10 +5986,8 @@
       <level>4</level>
     </req>
     <reward>
-      <reward>
-        <item id="3053" number="50" />
-        <event_points id="7020" number="50" /> --&gt;
-		</reward>
+      <item id="3053" number="50" />
+      <event_points id="7020" number="50" />
     </reward>
   </achievement>
   <achievement>

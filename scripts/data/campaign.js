@@ -42906,7 +42906,7 @@ var MISSIONS = {
     "id": "5570",
     "name": "Seastone Staff",
     "commander": {
-        "id": "284"
+        "id": "228"
     },
     "deck": [
       {
@@ -43206,7 +43206,7 @@ var MISSIONS = {
     "id": "5575",
     "name": "Truth of the Heart",
     "commander": {
-        "id": "283"
+        "id": "214"
     },
     "deck": [
       {
@@ -43506,7 +43506,7 @@ var MISSIONS = {
     "id": "5580",
     "name": "Wings of Bluefire",
     "commander": {
-        "id": "271"
+        "id": "259"
     },
     "deck": [
       {
@@ -43564,7 +43564,7 @@ var MISSIONS = {
   },
   "5581": {
     "id": "5581",
-    "name": "Familiar Foe",
+    "name": "Minions",
     "commander": {
         "id": "286"
     },
@@ -43585,7 +43585,7 @@ var MISSIONS = {
         "id": "7010"
       },
       {
-        "id": "6010"
+        "id": "1631"
       },
       {
         "id": "7122"
@@ -43645,7 +43645,7 @@ var MISSIONS = {
         "id": "7061"
       },
       {
-        "id": "6010"
+        "id": "2045"
       },
       {
         "id": "7084"
@@ -43654,7 +43654,7 @@ var MISSIONS = {
         "id": "5096"
       },
       {
-        "id": "5093"
+        "id": "5010"
       },
       {
         "id": "5010",
@@ -43673,11 +43673,11 @@ var MISSIONS = {
         "mastery_level": "5"
       },
       {
-        "id": "6095",
+        "id": "5098",
         "mastery_level": "6"
       },
       {
-        "id": "6124",
+        "id": "5087",
         "mastery_level": "7"
       },
     ]
@@ -43686,7 +43686,7 @@ var MISSIONS = {
     "id": "5583",
     "name": "Fighting Further",
     "commander": {
-        "id": "377"
+        "id": "293"
     },
     "deck": [
       {
@@ -43822,13 +43822,13 @@ var MISSIONS = {
         "id": "5025"
       },
       {
-        "id": "5093"
+        "id": "2046"
       },
       {
         "id": "7093"
       },
       {
-        "id": "6011"
+        "id": "2020"
       },
       {
         "id": "2005"
@@ -43837,11 +43837,11 @@ var MISSIONS = {
         "id": "7010"
       },
       {
-        "id": "7061",
+        "id": "5024",
         "mastery_level": "2"
       },
       {
-        "id": "5084",
+        "id": "5086",
         "mastery_level": "3"
       },
       {
@@ -43882,7 +43882,7 @@ var MISSIONS = {
         "id": "5010"
       },
       {
-        "id": "5093"
+        "id": "5025"
       },
       {
         "id": "5025"
@@ -43917,7 +43917,7 @@ var MISSIONS = {
         "mastery_level": "6"
       },
       {
-        "id": "6100",
+        "id": "6059",
         "mastery_level": "7"
       },
     ]
@@ -44122,7 +44122,7 @@ var MISSIONS = {
         "id": "7082"
       },
       {
-        "id": "5096"
+        "id": "5024"
       },
       {
         "id": "2066"
@@ -44153,12 +44153,288 @@ var MISSIONS = {
         "mastery_level": "5"
       },
       {
-        "id": "5097",
+        "id": "7094",
         "mastery_level": "6"
       },
       {
         "id": "2089",
         "mastery_level": "7"
+      },
+    ]
+  },
+  "5591": {
+    "id": "5591",
+    "name": "The Balance of Arcantica",
+    "commander": {
+        "id": "378"
+    },
+    "deck": [
+      {
+        "id": "8063"
+      },
+      {
+        "id": "8064"
+      },
+      {
+        "id": "8065"
+      },
+      {
+        "id": "5010"
+      },
+      {
+        "id": "7096"
+      },
+      {
+        "id": "7096"
+      },
+      {
+        "id": "7094"
+      },
+      {
+        "id": "7094"
+      },
+      {
+        "id": "7093"
+      },
+      {
+        "id": "7061",
+        "mastery_level": "2"
+      },
+      {
+        "id": "2068",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2068",
+        "mastery_level": "4"
+      },
+      {
+        "id": "5023",
+        "mastery_level": "5"
+      },
+      {
+        "id": "6082",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6100",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5592": {
+    "id": "5592",
+    "name": "The Meaning of Peace",
+    "commander": {
+        "id": "378"
+    },
+    "deck": [
+      {
+        "id": "8063"
+      },
+      {
+        "id": "8064"
+      },
+      {
+        "id": "8065"
+      },
+      {
+        "id": "5010"
+      },
+      {
+        "id": "7096"
+      },
+      {
+        "id": "7096"
+      },
+      {
+        "id": "7094"
+      },
+      {
+        "id": "7094"
+      },
+      {
+        "id": "7093"
+      },
+      {
+        "id": "7061",
+        "mastery_level": "2"
+      },
+      {
+        "id": "2068",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2068",
+        "mastery_level": "4"
+      },
+      {
+        "id": "5023",
+        "mastery_level": "5"
+      },
+      {
+        "id": "6082",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6100",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5593": {
+    "id": "5593",
+    "name": "The Journey of One's Soul",
+    "commander": {
+        "id": "378"
+    },
+    "deck": [
+      {
+        "id": "8063"
+      },
+      {
+        "id": "8064"
+      },
+      {
+        "id": "8065"
+      },
+      {
+        "id": "5010"
+      },
+      {
+        "id": "7096"
+      },
+      {
+        "id": "7096"
+      },
+      {
+        "id": "7094"
+      },
+      {
+        "id": "7094"
+      },
+      {
+        "id": "7093"
+      },
+      {
+        "id": "7061",
+        "mastery_level": "2"
+      },
+      {
+        "id": "2068",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2068",
+        "mastery_level": "4"
+      },
+      {
+        "id": "5023",
+        "mastery_level": "5"
+      },
+      {
+        "id": "6082",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6100",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5594": {
+    "id": "5594",
+    "name": "To Rival Fate",
+    "commander": {
+        "id": "378"
+    },
+    "deck": [
+      {
+        "id": "8063"
+      },
+      {
+        "id": "8064"
+      },
+      {
+        "id": "8065"
+      },
+      {
+        "id": "5010"
+      },
+      {
+        "id": "7096"
+      },
+      {
+        "id": "7096"
+      },
+      {
+        "id": "7094"
+      },
+      {
+        "id": "7094"
+      },
+      {
+        "id": "7093"
+      },
+      {
+        "id": "7061",
+        "mastery_level": "2"
+      },
+      {
+        "id": "2068",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2068",
+        "mastery_level": "4"
+      },
+      {
+        "id": "5023",
+        "mastery_level": "5"
+      },
+      {
+        "id": "6082",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6100",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5595": {
+    "id": "5595",
+    "name": "Test",
+    "commander": {
+        "id": "3"
+    },
+    "deck": [
+      {
+        "id": "8063"
+      },
+      {
+        "id": "8064"
+      },
+      {
+        "id": "8065"
+      },
+      {
+        "id": "5010"
+      },
+      {
+        "id": "7096"
+      },
+      {
+        "id": "7096"
+      },
+      {
+        "id": "7094"
+      },
+      {
+        "id": "7094"
+      },
+      {
+        "id": "7093"
       },
     ]
   },

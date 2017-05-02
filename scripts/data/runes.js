@@ -224,13 +224,14 @@ var RUNES = {
         "rarity": "4",
         "icon": "rune_heal_all_legendary",
         "bundle": "34",
-        "desc": "Heal All +50%, rounded up.",
+        "desc": "Heal All +50%, rounded up. Minimum +2.",
         "usable": "0",
         "stat_boost": {
             "skill": {
                 "id": "heal",
                 "mult": "0.5",
-                "all": "1"
+                "all": "1",
+                "min_bonus": "2"
             }
         }
     },

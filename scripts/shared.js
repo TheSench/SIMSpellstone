@@ -1684,7 +1684,6 @@ for(var id in CARDS) {
 
 // Used to determine how to hash runeIDs
 var maxRuneID = 1000;
-var legacyMaxRuneID = 300;
 function unitInfo_to_base64(unit_info) {
 
     var baseID = parseInt(unit_info.id);
@@ -1714,19 +1713,13 @@ function unitInfo_to_base64(unit_info) {
     return decimal_to_base64(dec, 5);
 }
 
-function base64_to_unitInfo(base64, legacy) {
+function base64_to_unitInfo(base64) {
 
     var dec = base64_to_decimal(base64);
 
-    if (legacy) {
-        var priority = dec % 15;
-        dec = (dec - priority) / 15;
-        var runeID = dec % legacyMaxRuneID;
-        dec = (dec - runeID) / legacyMaxRuneID;
-    } else {
-        var runeID = dec % maxRuneID;
-        dec = (dec - runeID) / maxRuneID;
-    }
+    var runeID = dec % maxRuneID;
+    dec = (dec - runeID) / maxRuneID;
+
     var level = dec % 7;
     dec = (dec - level++) / 7;
     var fusion = dec % 3;
@@ -1745,7 +1738,6 @@ function base64_to_unitInfo(base64, legacy) {
             id: runeID + 5000
         });
     }
-    unit_info.priority = priority;
 
     return unit_info;
 }
@@ -1895,7 +1887,7 @@ function areEqual(unitInfo1, unitInfo2) {
 }
 
 //Returns deck array built from hash
-function hash_decode(hash, isLegacy) {
+function hash_decode(hash) {
 
     var current_deck = { deck: [] };
     var unitInfo;
@@ -1911,7 +1903,7 @@ function hash_decode(hash, isLegacy) {
         if (multiplierChars.indexOf(hash[i]) == -1) {
             // Make sure we have valid characters
             var unitHash = hash.substr(i, entryLength);
-            unitInfo = base64_to_unitInfo(unitHash, isLegacy);
+            unitInfo = base64_to_unitInfo(unitHash);
             if (unitidx > 0 && indexes) unitInfo.index = base64ToNumber(indexes[unitidx - 1]); // Skip commander
 
             if (unitInfo) {
@@ -1925,8 +1917,8 @@ function hash_decode(hash, isLegacy) {
                         current_deck.deck.push(unitInfo);
                         unitidx++;
                     }
-                } else if(!isLegacy) {
-                    return hash_decode(hash, true);
+                } else {
+                    console.log("Could not decode '" + unitHash + "' (" + unitInfo.id + ")");
                 }
             }
         } else {

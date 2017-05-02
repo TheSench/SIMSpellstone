@@ -17211,7 +17211,7 @@
     <id>5565</id>
     <name>Purple Souls</name>
     <energy>9</energy>
-    <desc>When you defeat the creatures in this realm, they leave behind fragments of their souls. With enough of them you can forge a single Purple Fire Soul. The energy reminds you of the power from the Blue Fire Souls.</desc>
+    <desc>When you defeat the creatures in this realm, some of them leave behind fragments of their souls. The energy reminds you of the power from the Blue Fire Souls.</desc>
     <commander id="286" />
     <deck>
       <card id="5017" name="Steam Tempest" />
@@ -17357,7 +17357,7 @@
     <name>Seastone Staff</name>
     <energy>9</energy>
     <desc>The Seastone Staff is an artifact part of Oda's Order. It has been passed down by generations of monks to those who have proven their worth. You can feel a special power from within it, something similar to your sword Dyrnwyn.</desc>
-    <commander id="284" />
+    <commander id="228" />
     <deck>
       <card id="8062" name="Abyss Curse" />
       <card id="7012" name="Life Drake" />
@@ -17442,7 +17442,7 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>baronSkeleton</commander>
         <enemy>1</enemy>
         <text>Aieeeee!</text>
       </line>
@@ -17478,7 +17478,7 @@
         <text>'Aieee'? That's an odd sound from a skeleton.</text>
       </line>
       <line>
-        <commander>necromancer</commander>
+        <commander>baronSkeleton</commander>
         <enemy>1</enemy>
         <text>What's that? You flesh creatures can TALK!?</text>
       </line>
@@ -17509,7 +17509,7 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>baronSkeleton</commander>
         <enemy>1</enemy>
         <text>I am extremely sorry for the mishap. We have never seen such well-articulated flesh creatures. Why, normally they roar and bare their teeth! Terrifying.</text>
       </line>
@@ -17519,7 +17519,7 @@
         <text>Wait, aren't you a skeleton, though? Why is it that you can - err. Never mind. It's nice to meet you, um, Mister Skeleton.</text>
       </line>
       <line>
-        <commander>necromancer</commander>
+        <commander>baronSkeleton</commander>
         <enemy>1</enemy>
         <text>Please, call me Aldus.</text>
       </line>
@@ -17530,7 +17530,7 @@
     <name>Truth of the Heart</name>
     <energy>9</energy>
     <desc>The skeleton stops swinging wildly at the group. A few seconds pass as he stares at you. Finally, he lowers his cane. It seems he's willing to talk to you.</desc>
-    <commander id="283" />
+    <commander id="214" />
     <deck>
       <card id="8061" name="Prophecy of Ruin" />
       <card id="6012" name="Ember Drake" />
@@ -17550,7 +17550,7 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>baronSkeleton</commander>
         <enemy>1</enemy>
         <text>I'm on a quest for Master Bluefire, you see. I'm looking for his lost heart.</text>
       </line>
@@ -17560,7 +17560,7 @@
         <text>Master... Bluefire? The Heart of Blue Fire?</text>
       </line>
       <line>
-        <commander>necromancer</commander>
+        <commander>baronSkeleton</commander>
         <enemy>1</enemy>
         <text>Yes! Have you heard of it? He's been quite distraught since its disappearance.</text>
       </line>
@@ -17615,7 +17615,7 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>baronSkeleton</commander>
         <enemy>1</enemy>
         <text>That's it! You have the heart of Master Bluefire! Oh, he will be so pleased.</text>
       </line>
@@ -17625,8 +17625,8 @@
         <text>Who is this... 'Master Bluefire'?</text>
       </line>
       <line>
-        <commander>necromancer</commander>
-        <enemy>0</enemy>
+        <commander>baronSkeleton</commander>
+        <enemy>1</enemy>
         <text>He's the ruler of The Void, naturally.</text>
       </line>
     </speech>
@@ -17656,7 +17656,7 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>baronSkeleton</commander>
         <enemy>1</enemy>
         <text>Master Bluefire, down here! We've found your lost heart!</text>
       </line>
@@ -17692,7 +17692,7 @@
     <name>Wings of Bluefire</name>
     <energy>9</energy>
     <desc>The wings in the sky descend towards your group. It has scales and wings like a dragon, yet there is a spark of intelligence in its eye, much different than the beasts of Arcantica. When it opens its maw, the beast speaks...</desc>
-    <commander id="271" />
+    <commander id="259" />
     <deck>
       <card id="8062" name="Abyss Curse" />
       <card id="7012" name="Life Drake" />
@@ -17725,9 +17725,9 @@
   </mission>
   <mission>
     <id>5581</id>
-    <name>Familiar Foe</name>
+    <name>Minions</name>
     <energy>9</energy>
-    <desc>The creatures press closer at the dragon's words. They are eager to make enemies of their Master. Each defeated soul simply spawns a new one in its place.</desc>
+    <desc>The creatures press closer at the dragon's words. They are eager to make enemies against those who oppose their Master. Each defeated soul simply spawns a new one in its place.</desc>
     <commander id="286" />
     <deck>
       <card id="8061" name="Prophecy of Ruin" />
@@ -17735,7 +17735,7 @@
       <card id="1314" name="Skeletal Hound" />
       <card id="7035" name="Carrion Tiger" />
       <card id="7010" name="Honeycomb Dragon" />
-      <card id="6010" name="Cliffpass Defender" />
+      <card id="1631" name="Venom Dragon" />
       <card id="7122" name="Satyr Runebearer" />
       <card id="1331" name="Fallen Soldiers" />
       <card id="5062" name="Cliffhanger Wyrm" />
@@ -17748,7 +17748,7 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>baronSkeleton</commander>
         <enemy>1</enemy>
         <text>Oh! Do you know these people, Master Bluefire?</text>
       </line>
@@ -17766,16 +17766,16 @@
       <card id="1311" name="Molten Skeleton" />
       <card id="6083" name="Lockejaw" />
       <card id="7061" name="Thickskin Dragon" />
-      <card id="6010" name="Cliffpass Defender" />
+      <card id="2045" name="Chillbeard Giant" />
       <card id="7084" name="Witchwood" />
       <card id="5096" name="Enclave Dragon" />
-      <card id="5093" name="Scaly Newborn" />
+      <card id="5010" name="Concealed Dragon" />
       <card id="5010" mastery_level="2" name="Concealed Dragon" />
       <card id="2087" mastery_level="3" name="Cranial Hazard" />
       <card id="7024" mastery_level="4" name="Woolmane Dragon" />
       <card id="7082" mastery_level="5" name="Forest Umbras" />
-      <card id="6095" mastery_level="6" name="Gearplate Dragon" />
-      <card id="6124" mastery_level="7" name="Enfeebling Vizier" />
+      <card id="5098" mastery_level="6" name="Skybound United" />
+      <card id="5087" mastery_level="7" name="Apollyon" />
     </deck>
     <speech>
       <line>
@@ -17784,7 +17784,7 @@
         <text>Destroy them, for they are enemies who seeketh The Void's destruction.</text>
       </line>
       <line>
-        <commander>necromancer</commander>
+        <commander>baronSkeleton</commander>
         <enemy>1</enemy>
         <text>Oh, I'm terribly sorry, fellows. It appears we have no choice but to kill you. Please don't take it personally.</text>
       </line>
@@ -17795,7 +17795,7 @@
     <name>Fighting Further</name>
     <energy>9</energy>
     <desc>Waves of the monsters throw themselves upon you. You and your companions have come prepared for a fight. Oda and Elyse pool their strength with yours, creating a formidable position that the monsters are unable to breach.</desc>
-    <commander id="377" />
+    <commander id="293" />
     <deck>
       <card id="8061" name="Prophecy of Ruin" />
       <card id="7012" name="Life Drake" />
@@ -17856,13 +17856,13 @@
       <card id="5012" name="Static Drake" />
       <card id="5012" name="Static Drake" />
       <card id="5025" name="Steelskin Dragon" />
-      <card id="5093" name="Scaly Newborn" />
+      <card id="2046" name="Leaping Dragon" />
       <card id="7093" name="Larva Drakes" />
-      <card id="6011" name="Bomb Spirit" />
+      <card id="2020" name="Tidetaken Fighter" />
       <card id="2005" name="Sailing Drake" />
       <card id="7010" name="Honeycomb Dragon" />
-      <card id="7061" mastery_level="2" name="Thickskin Dragon" />
-      <card id="5084" mastery_level="3" name="Dotora Spirit" />
+      <card id="5024" mastery_level="2" name="Cloudtop Dragon" />
+      <card id="5086" mastery_level="3" name="Spirit Blades" />
       <card id="7024" mastery_level="4" name="Woolmane Dragon" />
       <card id="7093" mastery_level="5" name="Larva Drakes" />
       <card id="6059" mastery_level="6" name="Violetfire Igniter" />
@@ -17887,7 +17887,7 @@
       <card id="7012" name="Life Drake" />
       <card id="6012" name="Ember Drake" />
       <card id="5010" name="Concealed Dragon" />
-      <card id="5093" name="Scaly Newborn" />
+      <card id="5025" name="Steelskin Dragon" />
       <card id="5025" name="Steelskin Dragon" />
       <card id="6031" name="Iceblood Assassin" />
       <card id="2044" name="Quillhide Dragon" />
@@ -17897,7 +17897,7 @@
       <card id="7093" mastery_level="4" name="Larva Drakes" />
       <card id="7061" mastery_level="5" name="Thickskin Dragon" />
       <card id="6023" mastery_level="6" name="Broodmother" />
-      <card id="6100" mastery_level="7" name="Tiamat" />
+      <card id="6059" mastery_level="7" name="Violetfire Igniter" />
     </deck>
     <speech>
       <line>
@@ -18014,7 +18014,7 @@
       <card id="6012" name="Ember Drake" />
       <card id="1314" name="Skeletal Hound" />
       <card id="7082" name="Forest Umbras" />
-      <card id="5096" name="Enclave Dragon" />
+      <card id="5024" name="Cloudtop Dragon" />
       <card id="2066" name="Basalt Dragon" />
       <card id="1332" name="Vampiric Emira" />
       <card id="6063" name="Firetail Dragon" />
@@ -18023,7 +18023,7 @@
       <card id="2088" mastery_level="3" name="Bog Witch" />
       <card id="7010" mastery_level="4" name="Honeycomb Dragon" />
       <card id="7024" mastery_level="5" name="Woolmane Dragon" />
-      <card id="5097" mastery_level="6" name="Sierra Dweller" />
+      <card id="7094" mastery_level="6" name="Basilisk" />
       <card id="2089" mastery_level="7" name="Slagspirit" />
     </deck>
     <speech>
@@ -18034,4 +18034,139 @@
       </line>
     </speech>
   </mission>
+  <!-- Boss Node This is the Final Battle -->
+  <mission>
+    <id>5591</id>
+    <name>The Balance of Arcantica</name>
+    <energy>9</energy>
+    <desc>Chaos, Aether, Wyld. The factions claim dominion over that which liveth in Arcantica. Thou thinkest The Void be evil, yet that is the furthest from the truth. The Void is the absence of that which ties the factions. And through nothing we have unlimited potential.</desc>
+    <commander id="378" />
+    <deck>
+      <card id="8063" name="Bluefire's Memory" />
+      <card id="8064" name="Bluefire's Slave" />
+      <card id="8065" name="Bluefire's Harmony" />
+      <card id="5010" name="Concealed Dragon" />
+      <card id="7096" name="Vala, Sleeping Earth" />
+      <card id="7096" name="Vala, Sleeping Earth" />
+      <card id="7094" name="Basilisk" />
+      <card id="7094" name="Basilisk" />
+      <card id="7093" name="Larva Drakes" />
+      <card id="7061" mastery_level="2" name="Thickskin Dragon" />
+      <card id="2068" mastery_level="3" name="Whitesail Wyvern" />
+      <card id="2068" mastery_level="4" name="Whitesail Wyvern" />
+      <card id="5023" mastery_level="5" name="Nightfall Dragon" />
+      <card id="6082" mastery_level="6" name="Rugarth, Fallen Bones" />
+      <card id="6100" mastery_level="7" name="Tiamat" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5592</id>
+    <name>The Meaning of Peace</name>
+    <energy>9</energy>
+    <desc>Doest thou truly believe that thy world's problems shall be solved with The Void's disappearance? Yet without The Void, the tribes would have no enemy to stand against, and turn against one another. Peace is naught but an excuse for the tribes to take what they want.</desc>
+    <commander id="378" />
+    <deck>
+      <card id="8063" name="Bluefire's Memory" />
+      <card id="8064" name="Bluefire's Slave" />
+      <card id="8065" name="Bluefire's Harmony" />
+      <card id="5010" name="Concealed Dragon" />
+      <card id="7096" name="Vala, Sleeping Earth" />
+      <card id="7096" name="Vala, Sleeping Earth" />
+      <card id="7094" name="Basilisk" />
+      <card id="7094" name="Basilisk" />
+      <card id="7093" name="Larva Drakes" />
+      <card id="7061" mastery_level="2" name="Thickskin Dragon" />
+      <card id="2068" mastery_level="3" name="Whitesail Wyvern" />
+      <card id="2068" mastery_level="4" name="Whitesail Wyvern" />
+      <card id="5023" mastery_level="5" name="Nightfall Dragon" />
+      <card id="6082" mastery_level="6" name="Rugarth, Fallen Bones" />
+      <card id="6100" mastery_level="7" name="Tiamat" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5593</id>
+    <name>The Journey of One's Soul</name>
+    <energy>9</energy>
+    <desc>Peace was never within thy heart to begin with. Thou hast conquered many foes, forever in a search to go farther. To get riches. To become powerful. The world is naught but a challenge for you to enjoy. So long as thou continues to pillage for glory, Arcantica shall never know harmony.</desc>
+    <commander id="378" />
+    <deck>
+      <card id="8063" name="Bluefire's Memory" />
+      <card id="8064" name="Bluefire's Slave" />
+      <card id="8065" name="Bluefire's Harmony" />
+      <card id="5010" name="Concealed Dragon" />
+      <card id="7096" name="Vala, Sleeping Earth" />
+      <card id="7096" name="Vala, Sleeping Earth" />
+      <card id="7094" name="Basilisk" />
+      <card id="7094" name="Basilisk" />
+      <card id="7093" name="Larva Drakes" />
+      <card id="7061" mastery_level="2" name="Thickskin Dragon" />
+      <card id="2068" mastery_level="3" name="Whitesail Wyvern" />
+      <card id="2068" mastery_level="4" name="Whitesail Wyvern" />
+      <card id="5023" mastery_level="5" name="Nightfall Dragon" />
+      <card id="6082" mastery_level="6" name="Rugarth, Fallen Bones" />
+      <card id="6100" mastery_level="7" name="Tiamat" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5594</id>
+    <name>To Rival Fate</name>
+    <energy>9</energy>
+    <desc>My brethren are called to a higher purpose. Only through The Void shall the tribes be cleansed of the factions. Their love, their hatred, their will, flows into the same stream. Bonded, in harmonious fusion, the world and their soul become one.</desc>
+    <commander id="378" />
+    <deck>
+      <card id="8063" name="Bluefire's Memory" />
+      <card id="8064" name="Bluefire's Slave" />
+      <card id="8065" name="Bluefire's Harmony" />
+      <card id="5010" name="Concealed Dragon" />
+      <card id="7096" name="Vala, Sleeping Earth" />
+      <card id="7096" name="Vala, Sleeping Earth" />
+      <card id="7094" name="Basilisk" />
+      <card id="7094" name="Basilisk" />
+      <card id="7093" name="Larva Drakes" />
+      <card id="7061" mastery_level="2" name="Thickskin Dragon" />
+      <card id="2068" mastery_level="3" name="Whitesail Wyvern" />
+      <card id="2068" mastery_level="4" name="Whitesail Wyvern" />
+      <card id="5023" mastery_level="5" name="Nightfall Dragon" />
+      <card id="6082" mastery_level="6" name="Rugarth, Fallen Bones" />
+      <card id="6100" mastery_level="7" name="Tiamat" />
+    </deck>
+    <speech>
+      <line>
+        <commander>raven</commander>
+        <enemy>1</enemy>
+        <text>THOU OUGHT HAVE STAYED IN THE ABYSS, WHERE THY SPIRIT WAS ONE WITH ETERNITY.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5595</id>
+    <name>Test</name>
+    <energy>9</energy>
+    <desc>Please send help.</desc>
+    <commander id="3" />
+    <deck>
+      <card id="8063" name="Bluefire's Memory" />
+      <card id="8064" name="Bluefire's Slave" />
+      <card id="8065" name="Bluefire's Harmony" />
+      <card id="5010" name="Concealed Dragon" />
+      <card id="7096" name="Vala, Sleeping Earth" />
+      <card id="7096" name="Vala, Sleeping Earth" />
+      <card id="7094" name="Basilisk" />
+      <card id="7094" name="Basilisk" />
+      <card id="7093" name="Larva Drakes" />
+    </deck>
+  </mission>
+  <!-- 
+    	<card id="5010" name="Concealed Dragon"/>
+    	<card id="7096" name="Vala, Sleeping Earth"/>
+    	<card id="7094" name="Basilisk"/>
+    	<card id="7093" name="Larva Drakes"/>
+    	<card id="7061" name="Thickskin Dragon"/>
+    	<card id="2068" name="Whitesail Wyvern"/>
+    	<card id="5023" name="Nightfall Dragon"/>
+    	<card id="6106" name="Bailong"/>
+    	<card id="6095" name="Gearplate Dragon"/>
+    	<card id="6082" name="Rugarth, Fallen Bones"/>
+    	<card id="7025" name="Webclaw Dragon"/>
+    	<card id="6100" name="Tiamat"/> -->
 </root>
