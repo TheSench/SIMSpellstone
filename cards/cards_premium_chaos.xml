@@ -15863,4 +15863,128 @@
       <skill id="berserk" x="5" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6128</id>
+    <card_type>2</card_type>
+    <name>Grimhunt Wings</name>
+    <picture>Brimstone_Hunting_Dragons_A</picture>
+    <asset_bundle>93</asset_bundle>
+    <hidden_until_time>1493917200</hidden_until_time>
+    <attack>3</attack>
+    <health>16</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="fervor" x="2" y="9" />
+    <skill id="strike" x="2" />
+    <skill id="flurry" c="6" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="fervor" x="2" y="9" />
+      <skill id="strike" x="2" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="fervor" x="2" y="9" />
+      <skill id="strike" x="3" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16128</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Grimhunt Herd</name>
+    <picture>Brimstone_Hunting_Dragons_A</picture>
+    <asset_bundle>93</asset_bundle>
+    <hidden_until_time>1493917200</hidden_until_time>
+    <attack>3</attack>
+    <health>20</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="fervor" x="2" y="9" />
+    <skill id="strike" x="3" />
+    <skill id="flurry" c="4" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="fervor" x="3" y="9" />
+      <skill id="strike" x="3" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>23</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26128</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Grimhunt Brood</name>
+    <picture>Brimstone_Hunting_Dragons_B</picture>
+    <asset_bundle>93</asset_bundle>
+    <hidden_until_time>1493917200</hidden_until_time>
+    <attack>4</attack>
+    <health>23</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="fervor" x="3" y="9" />
+    <skill id="strike" x="4" />
+    <skill id="flurry" c="3" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="fervor" x="4" y="9" />
+      <skill id="strike" x="5" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+  </unit>
 </root>

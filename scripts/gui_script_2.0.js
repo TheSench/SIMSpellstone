@@ -168,12 +168,16 @@ $(function () {
     setDeckSortable("#attack_deck", '#deck1');
     setDeckSortable("#defend_deck", '#deck2');
 
-    setTimeout(DATA_UPDATER.updateCards, 1, doneLoading);
+    loadCardCache();
 });
 
 function doneLoading() {
     $("body").removeClass("loading");
     checkTutorial();
+}
+
+function updateGameData() {
+    DATA_UPDATER.updateCards(doneLoading, true);
 }
 
 function setDeckSortable(deckField, associatedHashField)

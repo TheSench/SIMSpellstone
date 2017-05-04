@@ -18010,21 +18010,21 @@
     <desc>Bluefire steps in. As you prepare to fight, you barely get a few swings in before the silence rings hollow in your mind. Pain flares in your head, replaced by nothingness and a dark abyss. Your companions and The Void Plane vanish from your sight.</desc>
     <commander id="215" />
     <deck>
-      <card id="8062" name="Abyss Curse" />
+      <card id="8061" name="Prophecy of Ruin" />
       <card id="6012" name="Ember Drake" />
       <card id="1314" name="Skeletal Hound" />
-      <card id="7082" name="Forest Umbras" />
+      <card id="1331" name="Fallen Soldiers" />
       <card id="5024" name="Cloudtop Dragon" />
-      <card id="2066" name="Basalt Dragon" />
+      <card id="1632" name="Shadow Rider" />
       <card id="1332" name="Vampiric Emira" />
       <card id="6063" name="Firetail Dragon" />
       <card id="5035" name="Vapor Guard" />
       <card id="7061" mastery_level="2" name="Thickskin Dragon" />
       <card id="2088" mastery_level="3" name="Bog Witch" />
       <card id="7010" mastery_level="4" name="Honeycomb Dragon" />
-      <card id="7024" mastery_level="5" name="Woolmane Dragon" />
-      <card id="7094" mastery_level="6" name="Basilisk" />
-      <card id="2089" mastery_level="7" name="Slagspirit" />
+      <card id="2001" mastery_level="5" name="Dunetooth Demon" />
+      <card id="5094" mastery_level="6" name="Luminesce Dragon" />
+      <card id="6003" mastery_level="7" name="Black Knight" />
     </deck>
     <speech>
       <line>
@@ -18052,7 +18052,7 @@
       <card id="7094" name="Basilisk" />
       <card id="7093" name="Larva Drakes" />
       <card id="7061" mastery_level="2" name="Thickskin Dragon" />
-      <card id="2068" mastery_level="3" name="Whitesail Wyvern" />
+      <card id="6106" mastery_level="3" name="Bailong" />
       <card id="2068" mastery_level="4" name="Whitesail Wyvern" />
       <card id="5023" mastery_level="5" name="Nightfall Dragon" />
       <card id="6082" mastery_level="6" name="Rugarth, Fallen Bones" />
@@ -18076,7 +18076,7 @@
       <card id="7094" name="Basilisk" />
       <card id="7093" name="Larva Drakes" />
       <card id="7061" mastery_level="2" name="Thickskin Dragon" />
-      <card id="2068" mastery_level="3" name="Whitesail Wyvern" />
+      <card id="6106" mastery_level="3" name="Bailong" />
       <card id="2068" mastery_level="4" name="Whitesail Wyvern" />
       <card id="5023" mastery_level="5" name="Nightfall Dragon" />
       <card id="6082" mastery_level="6" name="Rugarth, Fallen Bones" />
@@ -18100,7 +18100,7 @@
       <card id="7094" name="Basilisk" />
       <card id="7093" name="Larva Drakes" />
       <card id="7061" mastery_level="2" name="Thickskin Dragon" />
-      <card id="2068" mastery_level="3" name="Whitesail Wyvern" />
+      <card id="6106" mastery_level="3" name="Bailong" />
       <card id="2068" mastery_level="4" name="Whitesail Wyvern" />
       <card id="5023" mastery_level="5" name="Nightfall Dragon" />
       <card id="6082" mastery_level="6" name="Rugarth, Fallen Bones" />
@@ -18124,7 +18124,7 @@
       <card id="7094" name="Basilisk" />
       <card id="7093" name="Larva Drakes" />
       <card id="7061" mastery_level="2" name="Thickskin Dragon" />
-      <card id="2068" mastery_level="3" name="Whitesail Wyvern" />
+      <card id="6106" mastery_level="3" name="Bailong" />
       <card id="2068" mastery_level="4" name="Whitesail Wyvern" />
       <card id="5023" mastery_level="5" name="Nightfall Dragon" />
       <card id="6082" mastery_level="6" name="Rugarth, Fallen Bones" />

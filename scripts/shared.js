@@ -1,5 +1,13 @@
 "use strict";
 
+function loadCardCache() {
+    var cardData = storageAPI.getField("GameData", "CardCache");
+    if (cardData && cardData.lastUpdated > CardsUpdated) {
+        CARDS = cardData.cards;
+        CardsUpdated = cardData.lastUpdated;
+    }
+}
+
 if (typeof String.prototype.format !== 'function') {
     String.prototype.format = function () {
         var args = arguments;
@@ -2414,7 +2422,8 @@ function get_card_by_id(unit, skillModifiers, skillMult) {
     if (!current_card) {
         console.log(unit.id + " not found");
         current_card = {};
-        current_card.id = undefined;
+        current_card.id = unit.id;
+        current_card.level = unit.level;
         current_card.name = undefined;
         current_card.health = undefined;
         current_card.skill = [];

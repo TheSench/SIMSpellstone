@@ -17531,7 +17531,7 @@ var CARDS = {
   },
   "378": {
     "id": "378",
-    "name": "Bluefire, Void Master",
+    "name": "Bluefire, Master of The Void",
     "picture": "portrait_raven",
     "rarity": "4",
     "set": "9999",
@@ -17579,7 +17579,7 @@ var CARDS = {
           },
           {
             "id": "weaken",
-            "x": 3,
+            "x": 2,
             "c": 4,
           },
         ],
@@ -17600,8 +17600,8 @@ var CARDS = {
           },
           {
             "id": "weaken",
-            "x": 4,
-            "c": 4,
+            "x": 3,
+            "c": 3,
           },
         ],
       },
@@ -17616,13 +17616,13 @@ var CARDS = {
           },
           {
             "id": "enfeeble",
-            "x": 4,
+            "x": 3,
             "all": "1",
           },
           {
             "id": "weaken",
-            "x": 4,
-            "c": 3,
+            "x": 3,
+            "c": 2,
           },
         ],
       },
@@ -17631,18 +17631,18 @@ var CARDS = {
         "skill": [
           {
             "id": "imbue",
-            "x": 5,
+            "x": 4,
             "s": "counter",
             "all": "1",
           },
           {
             "id": "enfeeble",
-            "x": 5,
+            "x": 3,
             "all": "1",
           },
           {
             "id": "weaken",
-            "x": 6,
+            "x": 4,
             "c": 2,
           },
         ],
@@ -46817,6 +46817,248 @@ var CARDS = {
       },
     }
   },
+  "5127": {
+    "id": "5127",
+    "name": "Dynamo Drake",
+    "picture": "Lightning_Dragon_A",
+    "hidden_until": "1493917200000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["9"],
+    "health": 33,
+    "attack": 6,
+    "cost": 4,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "strike",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "weaken",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 34,
+        "skill": [],
+      },
+      "3": {
+        "health": 35,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 5,
+          },
+        ],
+      },
+      "4": {
+        "attack": 7,
+        "skill": [],
+      },
+      "5": {
+        "health": 36,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 5,
+          },
+        ],
+      },
+    }
+  },
+  "15127": {
+    "id": "15127",
+    "name": "Dynamo Dragon",
+    "picture": "Lightning_Dragon_A",
+    "hidden_until": "1493917200000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["9"],
+    "health": 37,
+    "attack": 7,
+    "cost": 4,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "strike",
+        "x": 3,
+        "all": "1",
+      },
+      {
+        "id": "weaken",
+        "x": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 38,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 5,
+          },
+        ],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 6,
+          },
+        ],
+      },
+      "4": {
+        "attack": 8,
+        "health": 39,
+        "skill": [],
+      },
+      "5": {
+        "health": 40,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "strike",
+            "x": 4,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 6,
+          },
+        ],
+      },
+    }
+  },
+  "25127": {
+    "id": "25127",
+    "name": "Dynamo Elder",
+    "picture": "Lightning_Dragon_B",
+    "hidden_until": "1493917200000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["9"],
+    "health": 40,
+    "attack": 8,
+    "cost": 4,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 3,
+      },
+      {
+        "id": "strike",
+        "x": 4,
+        "all": "1",
+      },
+      {
+        "id": "weaken",
+        "x": 7,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 9,
+        "health": 41,
+        "skill": [],
+      },
+      "3": {
+        "health": 42,
+        "skill": [],
+      },
+      "4": {
+        "health": 43,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "strike",
+            "x": 4,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 7,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "strike",
+            "x": 5,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 8,
+          },
+        ],
+      },
+    }
+  },
   "6000": {
     "id": "6000",
     "name": "Furnace Mech",
@@ -75517,6 +75759,214 @@ var CARDS = {
           {
             "id": "berserk",
             "x": 5,
+          },
+        ],
+      },
+    }
+  },
+  "6128": {
+    "id": "6128",
+    "name": "Grimhunt Wings",
+    "picture": "Brimstone_Hunting_Dragons_A",
+    "hidden_until": "1493917200000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["9"],
+    "health": 16,
+    "attack": 3,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "9",
+      },
+      {
+        "id": "strike",
+        "x": 2,
+      },
+      {
+        "id": "flurry",
+        "c": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "9",
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "flurry",
+            "c": 5,
+          },
+        ],
+      },
+      "3": {
+        "health": 17,
+        "skill": [],
+      },
+      "4": {
+        "health": 18,
+        "skill": [],
+      },
+      "5": {
+        "health": 19,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "9",
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+          {
+            "id": "flurry",
+            "c": 5,
+          },
+        ],
+      },
+    }
+  },
+  "16128": {
+    "id": "16128",
+    "name": "Grimhunt Herd",
+    "picture": "Brimstone_Hunting_Dragons_A",
+    "hidden_until": "1493917200000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["9"],
+    "health": 20,
+    "attack": 3,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "9",
+      },
+      {
+        "id": "strike",
+        "x": 3,
+      },
+      {
+        "id": "flurry",
+        "c": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 4,
+        "skill": [],
+      },
+      "3": {
+        "health": 21,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "9",
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "5": {
+        "health": 22,
+        "skill": [],
+      },
+      "6": {
+        "health": 23,
+        "skill": [],
+      },
+    }
+  },
+  "26128": {
+    "id": "26128",
+    "name": "Grimhunt Brood",
+    "picture": "Brimstone_Hunting_Dragons_B",
+    "hidden_until": "1493917200000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["9"],
+    "health": 23,
+    "attack": 4,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 3,
+        "y": "9",
+      },
+      {
+        "id": "strike",
+        "x": 4,
+      },
+      {
+        "id": "flurry",
+        "c": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 24,
+        "skill": [],
+      },
+      "3": {
+        "health": 25,
+        "skill": [],
+      },
+      "4": {
+        "attack": 5,
+        "skill": [],
+      },
+      "5": {
+        "health": 26,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 4,
+            "y": "9",
+          },
+          {
+            "id": "strike",
+            "x": 5,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
           },
         ],
       },
@@ -105286,6 +105736,278 @@ var CARDS = {
       },
     }
   },
+  "7127": {
+    "id": "7127",
+    "name": "Basilclaw Clutch",
+    "picture": "Egg_Protector_Dragon_A",
+    "hidden_until": "1493917200000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["9"],
+    "health": 26,
+    "attack": 5,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "protect",
+        "x": 2,
+        "y": "9",
+        "all": "1",
+      },
+      {
+        "id": "protect",
+        "x": 5,
+        "y": "3",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 27,
+        "skill": [],
+      },
+      "3": {
+        "health": 28,
+        "skill": [],
+      },
+      "4": {
+        "health": 29,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "9",
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 6,
+            "y": "3",
+          },
+        ],
+      },
+      "5": {
+        "attack": 6,
+        "skill": [],
+      },
+      "6": {
+        "health": 30,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "9",
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 6,
+            "y": "3",
+          },
+        ],
+      },
+    }
+  },
+  "17127": {
+    "id": "17127",
+    "name": "Basilclaw Nest",
+    "picture": "Egg_Protector_Dragon_A",
+    "hidden_until": "1493917200000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["9"],
+    "health": 30,
+    "attack": 6,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 2,
+      },
+      {
+        "id": "protect",
+        "x": 2,
+        "y": "9",
+        "all": "1",
+      },
+      {
+        "id": "protect",
+        "x": 7,
+        "y": "3",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 31,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "9",
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 7,
+            "y": "3",
+          },
+        ],
+      },
+      "3": {
+        "health": 32,
+        "skill": [],
+      },
+      "4": {
+        "health": 34,
+        "skill": [],
+      },
+      "5": {
+        "attack": 7,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "9",
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 8,
+            "y": "3",
+          },
+        ],
+      },
+    }
+  },
+  "27127": {
+    "id": "27127",
+    "name": "Basilclaw Swarm",
+    "picture": "Egg_Protector_Dragon_B",
+    "hidden_until": "1493917200000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["9"],
+    "health": 35,
+    "attack": 7,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 2,
+      },
+      {
+        "id": "protect",
+        "x": 3,
+        "y": "9",
+        "all": "1",
+      },
+      {
+        "id": "protect",
+        "x": 8,
+        "y": "3",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 36,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "9",
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 9,
+            "y": "3",
+          },
+        ],
+      },
+      "3": {
+        "health": 37,
+        "skill": [],
+      },
+      "4": {
+        "attack": 8,
+        "health": 38,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "9",
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 9,
+            "y": "3",
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "9",
+            "all": "1",
+          },
+          {
+            "id": "protect",
+            "x": 10,
+            "y": "3",
+          },
+        ],
+      },
+    }
+  },
   "2000": {
     "id": "2000",
     "name": "Wasteland Nomad",
@@ -123651,7 +124373,7 @@ var CARDS = {
   },
   "2091": {
     "id": "2091",
-    "name": "Portal Spawn",
+    "name": "Ignus",
     "picture": "Summoned_Ember_Dragon_A",
     "hidden_until": "1493917200000",
     "rarity": "4",
@@ -123726,7 +124448,7 @@ var CARDS = {
   },
   "12091": {
     "id": "12091",
-    "name": "Portal Harbinger",
+    "name": "Ignus, Harbinger",
     "picture": "Summoned_Ember_Dragon_A",
     "hidden_until": "1493917200000",
     "rarity": "4",
@@ -123814,7 +124536,7 @@ var CARDS = {
   },
   "22091": {
     "id": "22091",
-    "name": "Portal Hellbringer",
+    "name": "Ignus, Hellbringer",
     "picture": "Summoned_Ember_Dragon_B",
     "hidden_until": "1493917200000",
     "rarity": "4",
@@ -151123,7 +151845,22 @@ var CARDS = {
   "9987": {
     "id": "9987",
     "name": "Unused Art",
-    "picture": "Unused1_A",
+    "picture": "Undead_Dragon_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19987": {
+    "id": "19987",
+    "name": "Unused Art",
+    "picture": "Undead_Dragon_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -151138,7 +151875,7 @@ var CARDS = {
   "9986": {
     "id": "9986",
     "name": "Unused Art",
-    "picture": "Unused2_A",
+    "picture": "Unused1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -151153,7 +151890,7 @@ var CARDS = {
   "9985": {
     "id": "9985",
     "name": "Unused Art",
-    "picture": "Unused3_A",
+    "picture": "Unused2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -151168,7 +151905,7 @@ var CARDS = {
   "9984": {
     "id": "9984",
     "name": "Unused Art",
-    "picture": "Ursurio_A",
+    "picture": "Unused3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -151183,7 +151920,7 @@ var CARDS = {
   "9983": {
     "id": "9983",
     "name": "Unused Art",
-    "picture": "Void_Abomination_A",
+    "picture": "Ursurio_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -151198,6 +151935,21 @@ var CARDS = {
   "9982": {
     "id": "9982",
     "name": "Unused Art",
+    "picture": "Void_Abomination_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9981": {
+    "id": "9981",
+    "name": "Unused Art",
     "picture": "Yuriel_A",
     "rarity": "0",
     "card_type": "2",
@@ -151211,3 +151963,4 @@ var CARDS = {
     "upgrades": {}
   },
 };
+var CardsUpdated = 1493915338363.85;

@@ -6,17 +6,13 @@ var DATA_UPDATER = (function () {
 
 
     var lastUpdate = null;
-    function updateCards(callback) {
+    function updateCards(callback, forceUpdate) {
         $("body").addClass("loading");
         $("#loadingSplash").html("Checking for New Cards...");
         // Don't update more than once per minute
         var now = Date.now();
-        if (!_DEFINED("spoilers")) {
-            // Temp fix
-            if (callback) callback();
-        }else if (!lastUpdate || lastUpdate - now > 60000) {
+        if (!lastUpdate || lastUpdate - now > 60000 || forceUpdate) {
             lastUpdate = now;
-            $("#loadingSplash").html("Checking for New Cards...");
             setTimeout(doUpdateCards, 0, callback);
         } else {
             if(callback) callback();
@@ -75,6 +71,11 @@ var DATA_UPDATER = (function () {
         if (file < cardFiles.length) {
             doUpdateCards(callback, file);
         } else {
+            var CARDS_cache = {
+                cards: CARDS,
+                lastUpdated: Date.now()
+            }
+            storageAPI.setField("GameData", "CardCache", CARDS_cache);
             if (callback) callback();
         }
     }

@@ -4360,7 +4360,7 @@
       <card level="1" id="510" />
       <card level="2" id="510" />
       <card level="3" id="510" />
-      <card level="4" id="2030" />
+      <card level="4" id="2001" />
       <card level="5" id="510" />
       <card level="6" id="510" />
       <card level="7" id="510" />
@@ -4397,7 +4397,7 @@
       <card level="3" id="511" />
       <card level="4" id="2090" />
       <card level="5" id="512" />
-      <card level="6" id="2001" />
+      <card level="6" id="512" />
       <item level="7" id="3055" />
     </rewards>
     <find_item id="3053" drop_per_energy=".2" />
@@ -4471,6 +4471,7 @@
 		</rewards>
 		<find_item id='3053' drop_per_energy='.4' />
 	</campaign>
+	
 	-->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

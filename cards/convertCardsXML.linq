@@ -280,6 +280,7 @@ void Main()
 			writer.Write(unit.ToString());
 		}
 		writer.Write("};\r\n");
+		writer.Write("var CardsUpdated = " + DateTime.Now.ToUniversalTime().Subtract(new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc)).TotalMilliseconds + ";");
 	}
 
 	file = new FileInfo(Path.Combine(path, "../scripts/data", "campaign.js"));

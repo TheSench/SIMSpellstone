@@ -9990,7 +9990,7 @@
   <unit>
     <id>2091</id>
     <card_type>2</card_type>
-    <name>Portal Spawn</name>
+    <name>Ignus</name>
     <picture>Summoned_Ember_Dragon_A</picture>
     <asset_bundle>93</asset_bundle>
     <hidden_until_time>1493917200</hidden_until_time>
@@ -10034,7 +10034,7 @@
     <id>12091</id>
     <card_type>2</card_type>
     <fusion_level>1</fusion_level>
-    <name>Portal Harbinger</name>
+    <name>Ignus, Harbinger</name>
     <picture>Summoned_Ember_Dragon_A</picture>
     <asset_bundle>93</asset_bundle>
     <hidden_until_time>1493917200</hidden_until_time>
@@ -10081,7 +10081,7 @@
     <id>22091</id>
     <card_type>2</card_type>
     <fusion_level>2</fusion_level>
-    <name>Portal Hellbringer</name>
+    <name>Ignus, Hellbringer</name>
     <picture>Summoned_Ember_Dragon_B</picture>
     <asset_bundle>93</asset_bundle>
     <hidden_until_time>1493917200</hidden_until_time>

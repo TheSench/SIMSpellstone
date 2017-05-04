@@ -83,7 +83,7 @@ var initDeckBuilder = function () {
 
     $("#rows").val(storageAPI.getField("deckBuilder", "rows", 3));
     $("#rows").bind("change", function() {
-        storageAPI.setField("deckBuilder", "rows", $("#rows").val())
+        storageAPI.setField("deckBuilder", "rows", $("#rows").val());
     });
 
     $nameFilter = $('#nameFilter').keypress(function (event) {
@@ -148,7 +148,13 @@ var initDeckBuilder = function () {
         onClickFilter(event, filterDualFaction, event.altKey);
     });
 
-    setTimeout(DATA_UPDATER.updateCards, 1, loadCards);
+    if (_DEFINED("spoilers")) {
+        $("#loadingSplash").html("Checking for New Cards...");
+        updateGameData();
+    } else {
+        loadCardCache();
+        setTimeout(loadCards, 1);
+    }
 
     if (_DEFINED("unlimited")) {
         $deck = $("#deck");
@@ -158,7 +164,12 @@ var initDeckBuilder = function () {
     $("#graph-accordion").click(updateGraphs);
 }
 
+function updateGameData() {
+    setTimeout(DATA_UPDATER.updateCards, 1, loadCards, true);
+}
+
 var loadCards = function () {
+    allCards = CARDS;
     $("#loadingSplash").html("Loading...");
     drawAllCards();
     $("body").removeClass("loading");
