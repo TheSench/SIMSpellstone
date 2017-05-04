@@ -148,7 +148,7 @@ var initDeckBuilder = function () {
         onClickFilter(event, filterDualFaction, event.altKey);
     });
 
-    if (_DEFINED("spoilers")) {
+    if (_DEFINED("spoilers") || _DEFINED("latestCards")) {
         $("#loadingSplash").html("Checking for New Cards...");
         updateGameData();
     } else {

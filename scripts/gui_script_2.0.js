@@ -168,7 +168,11 @@ $(function () {
     setDeckSortable("#attack_deck", '#deck1');
     setDeckSortable("#defend_deck", '#deck2');
 
-    loadCardCache();
+    if (_DEFINED("latestCards")) {
+        updateGameData();
+    } else {
+        loadCardCache();
+    }
 });
 
 function doneLoading() {
