@@ -75,7 +75,9 @@ var DATA_UPDATER = (function () {
                 cards: CARDS,
                 lastUpdated: Date.now()
             }
-            storageAPI.setField("GameData", "CardCache", CARDS_cache);
+            if (typeof storageAPI !== "undefined") {
+                storageAPI.setField("GameData", "CardCache", CARDS_cache);
+            }
             if (callback) callback();
         }
     }
