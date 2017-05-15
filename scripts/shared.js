@@ -885,7 +885,7 @@ var isImbued = function (card, skillID, i) {
 
     // Mark the first added skill index
     if (card.imbued[imbueSkillsKey] !== undefined) {
-        return (i >= imbued[imbueSkillsKey]);
+        return (i >= card.imbued[imbueSkillsKey]);
     } else {
         return false;
     }
