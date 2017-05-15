@@ -69,7 +69,7 @@ var DATA_UPDATER = (function () {
     var onloaded = function (file, callback) {
         file++;
         if (file < cardFiles.length) {
-            doUpdateCards(callback, file);
+            setTimeout(doUpdateCards, 0, callback, file);
         } else {
             var CARDS_cache = {
                 cards: CARDS,
@@ -78,7 +78,7 @@ var DATA_UPDATER = (function () {
             if (typeof storageAPI !== "undefined") {
                 storageAPI.setField("GameData", "CardCache", CARDS_cache);
             }
-            if (callback) callback();
+            if (callback) setTimeout(callback, 0);
         }
     }
 
@@ -201,7 +201,7 @@ var DATA_UPDATER = (function () {
         if (tags.length > 0) {
             values = [];
             for (var i = 0; i < tags.length; i++) {
-                values.push(tags[i].innerHTML);
+                values.push(tags[i].textContent);
             }
         }
         return values;

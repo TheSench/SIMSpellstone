@@ -1309,9 +1309,9 @@ var filterName = (function (field) {
     var filter = field.value.toLowerCase();
     nameHidden = {};
     if (filter) {
-        if (filter.startsWith("[") || filter.endsWith("]")) {
-            if (!filter.startsWith("[")) filter = ".*" + filter;
-            if (!filter.endsWith("]")) filter += ".*";
+        if (filter.indexOf("[") === 0 || (filter.indexOf("]") - filter.length) === -1) {
+            if (filter.indexOf("[") !== 0) filter = ".*" + filter;
+            if (filter.indexOf("]") - filter.length !== -1) filter += ".*";
             var idRegex = new RegExp("^" + filter.replace("[", "").replace("]", "") + "$");
             for (var i = 0, len = units.length; i < len; i++) {
                 var unit = units[i];

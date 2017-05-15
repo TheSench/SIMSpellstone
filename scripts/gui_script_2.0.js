@@ -169,7 +169,13 @@ $(function () {
     setDeckSortable("#defend_deck", '#deck2');
 
     if (_DEFINED("latestCards")) {
-        updateGameData();
+        var callback = null;
+        if (_DEFINED("autostart")) {
+            callback = function () {
+                SIM_CONTROLLER.startsim(1);
+            };
+        }
+        updateGameData(callback);
     } else {
         loadCardCache();
     }
@@ -180,8 +186,15 @@ function doneLoading() {
     checkTutorial();
 }
 
-function updateGameData() {
-    DATA_UPDATER.updateCards(doneLoading, true);
+function updateGameData(callback) {
+    var done = doneLoading;
+    if (callback) {
+        done = function () {
+            doneLoading();
+            callback();
+        }
+    }
+    DATA_UPDATER.updateCards(done, true);
 }
 
 function setDeckSortable(deckField, associatedHashField)

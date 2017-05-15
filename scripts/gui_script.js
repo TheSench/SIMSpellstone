@@ -156,7 +156,7 @@ $(function () {
     
     document.title = "SimSpellstone " + text_version + " - The Spellstone Simulator that runs from your browser!";
 
-    if (_DEFINED('autostart')) {
+    if (_DEFINED('autostart') && !_DEFINED("latestCards")) {
         SIM_CONTROLLER.startsim(1);
     } else if (_DEFINED('unit_tests')) {
         var body = document.getElementsByTagName("body")[0];
