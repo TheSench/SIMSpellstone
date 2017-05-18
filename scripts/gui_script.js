@@ -146,6 +146,11 @@ $(function () {
         }
     }
 
+    var mapBges = _GET("mapBges");
+    if (mapBges) {
+        setSelectedMapBattlegrounds(mapBges);
+    }
+
     $('#sims').val(_GET('sims') || 10000);
 
     if (_DEFINED("debug")) $('#debug').click();
@@ -272,6 +277,13 @@ function getSelectedMapBattlegrounds() {
     }
     getbattleground = getbattleground.join();
     return getbattleground;
+}
+
+function setSelectedMapBattlegrounds(mapBgeString) {
+    var selects = document.getElementsByName("map-battleground");
+    for (var i = 0; i < mapBgeString.length && i < selects.length; i++) {
+        selects[i].value = mapBgeString[i];
+    }
 }
 
 // Modify HTML to output simulation results
@@ -461,6 +473,10 @@ function generate_link(autostart) {
     addValueParam(parameters, "mission_level");
     addValueParam(parameters, "raid");
     addValueParam(parameters, "raid_level");
+    var mapBges = $('select[name=map-battleground]').toArray().reduce(function (acc, val) { return acc + val.value; }, "");
+    if (mapBges.length) {
+        parameters.push('mapBges=' + mapBges);
+    }
 
     addBoolParam(parameters, "surge");
 
