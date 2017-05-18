@@ -17529,7 +17529,7 @@
     <id>5575</id>
     <name>Truth of the Heart</name>
     <energy>9</energy>
-    <desc>The skeleton stops swinging wildly at the group. A few seconds pass as he stares at you. Finally, he lowers his cane. It seems he's willing to talk to you.</desc>
+    <desc>Aldus the skeleton tells you about his quest in The Void Plane. He is after a powerful artifact that his master has lost, and his description of it is suspiciously like an item you already possess...</desc>
     <commander id="214" />
     <deck>
       <card id="8061" name="Prophecy of Ruin" />
@@ -17712,12 +17712,12 @@
     </deck>
     <speech>
       <line>
-        <commander>raven</commander>
+        <commander>bluefireVoidDragon</commander>
         <enemy>1</enemy>
         <text>Thou hast thoughtlessly wandered into my kingdom, believing thyself invincible.</text>
       </line>
       <line>
-        <commander>raven</commander>
+        <commander>bluefireVoidDragon</commander>
         <enemy>1</enemy>
         <text>Yet previous victories do not predict success of the present.</text>
       </line>
@@ -17779,7 +17779,7 @@
     </deck>
     <speech>
       <line>
-        <commander>raven</commander>
+        <commander>bluefireVoidDragon</commander>
         <enemy>1</enemy>
         <text>Destroy them, for they are enemies who seeketh The Void's destruction.</text>
       </line>
@@ -17839,7 +17839,7 @@
     </deck>
     <speech>
       <line>
-        <commander>raven</commander>
+        <commander>bluefireVoidDragon</commander>
         <enemy>1</enemy>
         <text>Dost thou not remember our first meeting? Think back... and remember...</text>
       </line>
@@ -18028,7 +18028,7 @@
     </deck>
     <speech>
       <line>
-        <commander>raven</commander>
+        <commander>bluefireVoidDragon</commander>
         <enemy>1</enemy>
         <text>Enough. Let thy mind accept the silence it craves.</text>
       </line>
@@ -18132,7 +18132,7 @@
     </deck>
     <speech>
       <line>
-        <commander>raven</commander>
+        <commander>bluefireVoidDragon</commander>
         <enemy>1</enemy>
         <text>THOU OUGHT HAVE STAYED IN THE ABYSS, WHERE THY SPIRIT WAS ONE WITH ETERNITY.</text>
       </line>
@@ -18140,21 +18140,410 @@
   </mission>
   <mission>
     <id>5595</id>
-    <name>Test</name>
+    <name>The Calm After a Storm</name>
     <energy>9</energy>
-    <desc>Please send help.</desc>
-    <commander id="3" />
+    <desc>The pain from your mind has subsided. The panic from the battle has left you. Blackness stretches like a blanket across your mind, and you have an odd sense that this place feels like home.</desc>
+    <commander id="242" />
     <deck>
-      <card id="8063" name="Bluefire's Memory" />
-      <card id="8064" name="Bluefire's Slave" />
-      <card id="8065" name="Bluefire's Harmony" />
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1619" name="Earth Elemental" />
+      <card id="1631" name="Venom Dragon" />
       <card id="5010" name="Concealed Dragon" />
-      <card id="7096" name="Vala, Sleeping Earth" />
-      <card id="7096" name="Vala, Sleeping Earth" />
-      <card id="7094" name="Basilisk" />
-      <card id="7094" name="Basilisk" />
+      <card id="5010" name="Concealed Dragon" />
+      <card id="7078" name="Saprolite" />
+      <card id="6075" name="Consuming Mireling" />
       <card id="7093" name="Larva Drakes" />
+      <card id="2067" name="Symbol of Elaria" />
+      <card id="7010" mastery_level="2" name="Honeycomb Dragon" />
+      <card id="7015" mastery_level="3" name="Bog Aberration" />
+      <card id="7045" mastery_level="4" name="Sakura" />
+      <card id="7028" mastery_level="5" name="Frozen Tide" />
+      <card id="7060" mastery_level="6" name="Shenami" />
+      <card id="7127" mastery_level="7" name="Basilclaw Clutch" />
     </deck>
+  </mission>
+  <mission>
+    <id>5596</id>
+    <name>One Remaining Ally</name>
+    <energy>9</energy>
+    <desc>You think that this would be a good place to nap, your consciousness drifting like a cloud through a dream. But some voice keeps calling out to you, calling your name... And then...</desc>
+    <commander id="283" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1617" name="Water Elemental" />
+      <card id="2090" name="Terra Dweller" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="5024" name="Cloudtop Dragon" />
+      <card id="2056" name="Drainor" />
+      <card id="7075" name="Diamode" />
+      <card id="7095" name="Talonsaur" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="7024" mastery_level="2" name="Woolmane Dragon" />
+      <card id="2010" mastery_level="3" name="Silver Wind" />
+      <card id="7045" mastery_level="4" name="Sakura" />
+      <card id="7046" mastery_level="5" name="Brambleblight" />
+      <card id="7059" mastery_level="6" name="Knotborn Dragon" />
+      <card id="2006" mastery_level="7" name="Zhulong" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Wake up... Wake up!</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>You cannot stay here forever. You know this, don't you?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5597</id>
+    <name>Fake Dreams</name>
+    <energy>9</energy>
+    <desc>The facsimile dream ends. You remember your last battle, and your purpose for entering The Void. Yet even with your memories, the darkness refuses to abate. Shadows twist into forms, hands reaching to pull you down into the abyss.</desc>
+    <commander id="215" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5012" name="Static Drake" />
+      <card id="2046" name="Leaping Dragon" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="6096" name="Desert Slitherer" />
+      <card id="2031" name="Dryad" />
+      <card id="2058" name="Bismuth Bully" />
+      <card id="6097" name="Hoard Dragon" />
+      <card id="2044" name="Quillhide Dragon" />
+      <card id="2066" mastery_level="2" name="Basalt Dragon" />
+      <card id="7021" mastery_level="3" name="Shadow Elemental" />
+      <card id="2032" mastery_level="4" name="Brimstone" />
+      <card id="7079" mastery_level="5" name="Carina" />
+      <card id="7032" mastery_level="6" name="Nidhogg" />
+      <card id="5094" mastery_level="7" name="Luminesce Dragon" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5598</id>
+    <name>A Promise to Endure</name>
+    <energy>9</energy>
+    <desc>The mysterious spirit aids you in your fight against these creatures. Together your power banishes the creatures. Yet the two of you are alone, without sight or sound of Oda and Elyse.</desc>
+    <commander id="286" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5017" name="Steam Tempest" />
+      <card id="2005" name="Sailing Drake" />
+      <card id="5062" name="Cliffhanger Wyrm" />
+      <card id="5024" name="Cloudtop Dragon" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="1032" name="Lunar Elemental" />
+      <card id="2001" name="Dunetooth Demon" />
+      <card id="6063" name="Firetail Dragon" />
+      <card id="2045" mastery_level="2" name="Chillbeard Giant" />
+      <card id="6042" mastery_level="3" name="Shadow of Thunder" />
+      <card id="5046" mastery_level="4" name="Dawn" />
+      <card id="1343" mastery_level="5" name="Firehorn" />
+      <card id="1340" mastery_level="6" name="Blazekin Dragon" />
+      <card id="5061" mastery_level="7" name="Thunderfist Rex" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>You made a promise to stand against The Void. Now go and gather your friends. They have need of you.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5599</id>
+    <name>The Shadow Monk</name>
+    <energy>9</energy>
+    <desc>The spirit vanishes, leaving you. Yet you still sense its presence nearby, like a thought that could take form if you called upon it. You call out for your friends... And you hear an answer.</desc>
+    <commander id="4" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6012" name="Ember Drake" />
+      <card id="7062" name="Brine Bellower" />
+      <card id="7061" name="Thickskin Dragon" />
+      <card id="5096" name="Enclave Dragon" />
+      <card id="2057" name="Twister" />
+      <card id="2032" name="Brimstone" />
+      <card id="6063" name="Firetail Dragon" />
+      <card id="6063" name="Firetail Dragon" />
+      <card id="5025" mastery_level="2" name="Steelskin Dragon" />
+      <card id="5046" mastery_level="3" name="Dawn" />
+      <card id="2058" mastery_level="4" name="Bismuth Bully" />
+      <card id="1343" mastery_level="5" name="Firehorn" />
+      <card id="2068" mastery_level="6" name="Whitesail Wyvern" />
+      <card id="6095" mastery_level="7" name="Gearplate Dragon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>1</enemy>
+        <text>Oh, it's the adventurer...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5600</id>
+    <name>Goal Achieved?</name>
+    <energy>9</energy>
+    <desc>Oda's image appears before you. Yet something seems different about him, as if he is a different person than the one that you know to be your friend. He lifts his hand to strike you down...</desc>
+    <commander id="4" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6012" name="Ember Drake" />
+      <card id="5127" name="Dynamo Drake" />
+      <card id="5096" name="Enclave Dragon" />
+      <card id="5096" name="Enclave Dragon" />
+      <card id="2057" name="Twister" />
+      <card id="2032" name="Brimstone" />
+      <card id="6075" name="Consuming Mireling" />
+      <card id="2044" name="Quillhide Dragon" />
+      <card id="5025" mastery_level="2" name="Steelskin Dragon" />
+      <card id="5046" mastery_level="3" name="Dawn" />
+      <card id="5025" mastery_level="4" name="Steelskin Dragon" />
+      <card id="5049" mastery_level="5" name="Joryl" />
+      <card id="6023" mastery_level="6" name="Broodmother" />
+      <card id="6095" mastery_level="7" name="Gearplate Dragon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>1</enemy>
+        <text>We've been fighting for so long. Don't you think this silence is more peaceful than anything we could achieve in our world?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5601</id>
+    <name>Reformed Resolve</name>
+    <energy>9</energy>
+    <desc>With some time and reasoning, you are eventually able to convince Oda to cease his assault. He seems saddened that he even tried to harm you.</desc>
+    <commander id="340" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="6096" name="Desert Slitherer" />
+      <card id="6061" name="Decagon" />
+      <card id="5096" name="Enclave Dragon" />
+      <card id="7021" name="Shadow Elemental" />
+      <card id="6046" name="Celerity" />
+      <card id="6046" name="Celerity" />
+      <card id="2004" name="Lavatail Dragon" />
+      <card id="6061" mastery_level="2" name="Decagon" />
+      <card id="5080" mastery_level="3" name="Djinnflame Brawler" />
+      <card id="7093" mastery_level="4" name="Larva Drakes" />
+      <card id="5049" mastery_level="5" name="Joryl" />
+      <card id="5023" mastery_level="6" name="Nightfall Dragon" />
+      <card id="6058" mastery_level="7" name="Tarragon Cuttail" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>1</enemy>
+        <text>I don't know what came over me. You're right... I can't give up now.</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>1</enemy>
+        <text>A peace that makes us forget our identity is no peace at all. It is just the work of a puppet master.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5602</id>
+    <name>The Shadow Truestriker</name>
+    <energy>9</energy>
+    <desc>Now with Oda following closely, you begin your search for your other lost companion. Wading through the darkness, you look for some sign of her. You call out for Elyse...</desc>
+    <commander id="4" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1315" name="Nix Elemental" />
+      <card id="6096" name="Desert Slitherer" />
+      <card id="1631" name="Venom Dragon" />
+      <card id="2001" name="Dunetooth Demon" />
+      <card id="7015" name="Bog Aberration" />
+      <card id="6075" name="Consuming Mireling" />
+      <card id="6015" name="Acidic Sludge" />
+      <card id="7024" name="Woolmane Dragon" />
+      <card id="7093" mastery_level="2" name="Larva Drakes" />
+      <card id="6015" mastery_level="3" name="Acidic Sludge" />
+      <card id="7095" mastery_level="4" name="Talonsaur" />
+      <card id="6080" mastery_level="5" name="Titanirous" />
+      <card id="6009" mastery_level="6" name="Siphon Dragon" />
+      <card id="6060" mastery_level="7" name="Pudgytusk" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>1</enemy>
+        <text>...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5603</id>
+    <name>Unlimited Knowledge?</name>
+    <energy>9</energy>
+    <desc>When you talk to Elyse about returning home, she is resistant. A similar aura covers her, like the cloud that had surrounded Oda. Elyse turns on you, and attacks...</desc>
+    <commander id="4" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1315" name="Nix Elemental" />
+      <card id="6096" name="Desert Slitherer" />
+      <card id="1631" name="Venom Dragon" />
+      <card id="2001" name="Dunetooth Demon" />
+      <card id="2031" name="Dryad" />
+      <card id="6015" name="Acidic Sludge" />
+      <card id="2058" name="Bismuth Bully" />
+      <card id="7093" name="Larva Drakes" />
+      <card id="2067" mastery_level="2" name="Symbol of Elaria" />
+      <card id="6075" mastery_level="3" name="Consuming Mireling" />
+      <card id="2001" mastery_level="4" name="Dunetooth Demon" />
+      <card id="7080" mastery_level="5" name="Spornacle" />
+      <card id="6060" mastery_level="6" name="Pudgytusk" />
+      <card id="7008" mastery_level="7" name="Rock Dragon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>1</enemy>
+        <text>All the knowledge I've ever wanted is right here. There's nothing worth exploring in the outside world.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5604</id>
+    <name>Reformed Determination</name>
+    <energy>9</energy>
+    <desc>Recognition lights up in Elyse's eyes. She remembers you, and who she is. Just like Oda, you have broken the curse of The Void placed upon her.</desc>
+    <commander id="310" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1317" name="Fire Imp" />
+      <card id="6061" name="Decagon" />
+      <card id="1631" name="Venom Dragon" />
+      <card id="2005" name="Sailing Drake" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="2075" name="Arcane Snowman" />
+      <card id="5010" name="Concealed Dragon" />
+      <card id="5093" mastery_level="2" name="Scaly Newborn" />
+      <card id="7045" mastery_level="3" name="Sakura" />
+      <card id="7128" mastery_level="4" name="Denizen of the Trees" />
+      <card id="5019" mastery_level="5" name="Vivid Aurora" />
+      <card id="6099" mastery_level="6" name="Opposing Forces" />
+      <card id="5063" mastery_level="7" name="Runic Dragon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>1</enemy>
+        <text>I'm sorry. Knowledge about something is no substitute to experiencing the world first-hand.</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>1</enemy>
+        <text>The people we've met, the memories we've made... this is what it means to be alive.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5605</id>
+    <name>Abyss Creatures</name>
+    <energy>9</energy>
+    <desc>Both your companions have returned to their senses. Yet as Elyse comes to your side, more of the strange abyss creatures appear from the shadows, rising up to fight you.</desc>
+    <commander id="328" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1619" name="Earth Elemental" />
+      <card id="5093" name="Scaly Newborn" />
+      <card id="5024" name="Cloudtop Dragon" />
+      <card id="5062" name="Cliffhanger Wyrm" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="5081" name="Brahzee" />
+      <card id="2032" name="Brimstone" />
+      <card id="5062" name="Cliffhanger Wyrm" />
+      <card id="5025" mastery_level="2" name="Steelskin Dragon" />
+      <card id="2010" mastery_level="3" name="Silver Wind" />
+      <card id="2066" mastery_level="4" name="Basalt Dragon" />
+      <card id="5032" mastery_level="5" name="Hail Hurler" />
+      <card id="5045" mastery_level="6" name="Echo Elemental" />
+      <card id="6059" mastery_level="7" name="Violetfire Igniter" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5606</id>
+    <name>Lost in Darkness</name>
+    <energy>9</energy>
+    <desc>The darkness shows no sign of disappearing. The path to continue forward is unclear. There must be another way...</desc>
+    <commander id="250" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1315" name="Nix Elemental" />
+      <card id="7010" name="Honeycomb Dragon" />
+      <card id="5024" name="Cloudtop Dragon" />
+      <card id="2044" name="Quillhide Dragon" />
+      <card id="7015" name="Bog Aberration" />
+      <card id="5080" name="Djinnflame Brawler" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="6061" name="Decagon" />
+      <card id="5025" mastery_level="2" name="Steelskin Dragon" />
+      <card id="1325" mastery_level="3" name="Chaos Storm" />
+      <card id="2090" mastery_level="4" name="Terra Dweller" />
+      <card id="5048" mastery_level="5" name="Highborn Rose" />
+      <card id="6043" mastery_level="6" name="Sandstorm" />
+      <card id="6062" mastery_level="7" name="Abzu" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>What do we do now?</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>0</enemy>
+        <text>We can't keep fighting these creatures forever. Let's look for a way out.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5607</id>
+    <name>The Path to Light</name>
+    <energy>9</energy>
+    <desc>As you and your companions begin to search for some means of escape, the same spirit that aided you before materializes. The spirit beckons for you to follow...</desc>
+    <commander id="286" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1010" name="Lightning Elemental" />
+      <card id="7024" name="Woolmane Dragon" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="2045" name="Chillbeard Giant" />
+      <card id="7021" name="Shadow Elemental" />
+      <card id="5081" name="Brahzee" />
+      <card id="5046" name="Dawn" />
+      <card id="6063" name="Firetail Dragon" />
+      <card id="6010" mastery_level="2" name="Cliffpass Defender" />
+      <card id="1325" mastery_level="3" name="Chaos Storm" />
+      <card id="2066" mastery_level="4" name="Basalt Dragon" />
+      <card id="5079" mastery_level="5" name="Cyclopnid" />
+      <card id="6045" mastery_level="6" name="Darkflame" />
+      <card id="7094" mastery_level="7" name="Basilisk" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>You've done everything in your power to make it this far.</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>This is the spirit world. And thus, it takes a spirit's power to grant you an exit.</text>
+      </line>
+    </speech>
   </mission>
   <!-- 
     	<card id="5010" name="Concealed Dragon"/>

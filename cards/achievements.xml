@@ -6150,5 +6150,23 @@
       <gold>800</gold>
     </reward>
   </achievement>
+  <!-- Zhulong Crafting Recipe -->
+  <achievement>
+    <id>3235</id>
+    <type>2</type>
+    <order>101</order>
+    <name>This is the Final Battle</name>
+    <desc>Complete the 'This is the Final Battle' campaign on Mastery Level 1.</desc>
+    <mission_req>64</mission_req>
+    <locked_start_time>1495126800</locked_start_time>
+    <!-- Thu, 18 May 2017 17:00:00 -->
+    <req>
+      <campaign>1127</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="8002" number="1" />
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
 </root>

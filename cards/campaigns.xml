@@ -4439,40 +4439,38 @@
     <find_item id="3053" drop_per_energy=".4" />
   </campaign>
   <!--  Boss Node This is the Final Battle -->
-  <!--  
-	<campaign> 
-		<id>1127</id>
-		<name>This is the Final Battle</name>
-		<type>2</type>
-		<icon id='gem_Boss_LG' bundle='0' />
-		<campaign_req>1125</campaign_req>
-		<locked_start_time>1495126800</locked_start_time>	| Thu, 18 May 2017 17:00:00 |
-		<battleground_id>2011</battleground_id>
-		<location_id>9</location_id>
-		<show_level>1</show_level>
-		<show_ranking>1</show_ranking>
-		<x>325</x>
-		<y>340</y>
-		<combatBG>CombatBGVoid</combatBG>
-		<missions>
-			<mission_id>5591</mission_id>
-			<mission_id>5592</mission_id>
-			<mission_id>5593</mission_id>
-			<mission_id>5594</mission_id>
-		</missions>
-		<rewards>
-			<card level='1' id='511' />
-			<card level='2' id='512' />
-			<card level='3' id='512' />
-			<item level='4' id='3054' />
-			<item level='5' id='3054' />
-			<item level='6' id='3054' />
-			<item level='7' id='3054' />
-		</rewards>
-		<find_item id='3053' drop_per_energy='.4' />
-	</campaign>
-	
-	-->
+  <campaign>
+    <id>1127</id>
+    <name>This is the Final Battle</name>
+    <type>2</type>
+    <icon id="gem_Boss_LG" bundle="0" />
+    <campaign_req>1125</campaign_req>
+    <locked_start_time>1495126800</locked_start_time>
+    <!--  Thu, 18 May 2017 17:00:00 -->
+    <battleground_id>2011</battleground_id>
+    <location_id>9</location_id>
+    <show_level>1</show_level>
+    <show_ranking>1</show_ranking>
+    <x>800</x>
+    <y>375</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5591</mission_id>
+      <mission_id>5592</mission_id>
+      <mission_id>5593</mission_id>
+      <mission_id>5594</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="512" />
+      <card level="3" id="512" />
+      <item level="4" id="3054" />
+      <item level="5" id="3054" />
+      <item level="6" id="3054" />
+      <item level="7" id="3054" />
+    </rewards>
+    <find_item id="3053" drop_per_energy=".4" />
+  </campaign>
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
   <!-- ============================ -->

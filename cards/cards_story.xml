@@ -5496,4 +5496,58 @@
       <skill id="nullify" x="3" />
     </upgrade>
   </unit>
+  <unit>
+    <id>8066</id>
+    <card_type>2</card_type>
+    <name>Winter's Crasher</name>
+    <picture>Lightning_Dragon_A</picture>
+    <asset_bundle>93</asset_bundle>
+    <hidden_until_time></hidden_until_time>
+    <attack>6</attack>
+    <health>30</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="heal" x="2" all="1" y="9" />
+    <skill id="frost" x="2" />
+    <skill id="strike" x="6" />
+    <type>3</type>
+    <sub_type>9</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>32</health>
+      <skill id="heal" x="3" all="1" y="9" />
+      <skill id="frost" x="2" />
+      <skill id="strike" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>36</health>
+      <skill id="heal" x="3" all="1" y="9" />
+      <skill id="frost" x="3" />
+      <skill id="strike" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>40</health>
+      <attack>7</attack>
+      <skill id="heal" x="3" all="1" y="9" />
+      <skill id="frost" x="3" />
+      <skill id="strike" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>44</health>
+      <skill id="heal" x="4" all="1" y="9" />
+      <skill id="frost" x="4" />
+      <skill id="strike" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>48</health>
+      <skill id="heal" x="4" all="1" y="9" />
+      <skill id="frost" x="4" />
+      <skill id="strike" x="10" />
+    </upgrade>
+  </unit>
 </root>

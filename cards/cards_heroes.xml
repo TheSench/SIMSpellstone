@@ -6629,33 +6629,33 @@
       <health>40</health>
       <skill id="protect" all="1" x="3" c="4" />
       <skill id="protect" x="2" />
-      <skill id="enfeeble" x="2" />
+      <skill id="enfeeble" x="1" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>45</health>
       <skill id="protect" all="1" x="4" c="4" />
       <skill id="protect" x="2" />
-      <skill id="enfeeble" x="3" />
+      <skill id="enfeeble" x="2" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>50</health>
       <skill id="protect" all="1" x="4" c="3" />
       <skill id="protect" x="2" />
-      <skill id="enfeeble" x="3" />
+      <skill id="enfeeble" x="2" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>55</health>
-      <skill id="protect" all="1" x="5" c="3" />
+      <skill id="protect" all="1" x="4" c="3" />
       <skill id="protect" x="2" />
       <skill id="enfeeble" x="3" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>60</health>
-      <skill id="protect" all="1" x="5" c="2" />
+      <skill id="protect" all="1" x="5" c="3" />
       <skill id="protect" x="3" />
       <skill id="enfeeble" x="3" />
     </upgrade>
@@ -6977,7 +6977,7 @@
     <health>32</health>
     <skill id="imbue" s="burn" x="2" y="9" />
     <skill id="counter" x="3" />
-    <skill id="strike" x="2" all="1" />
+    <skill id="strike" x="1" all="1" />
     <rarity>4</rarity>
     <type>2</type>
     <set>9999</set>
@@ -6988,9 +6988,6 @@
     <upgrade>
       <level>3</level>
       <health>36</health>
-      <skill id="imbue" s="burn" x="3" y="9" />
-      <skill id="counter" x="3" />
-      <skill id="strike" x="2" all="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -6999,14 +6996,14 @@
     <upgrade>
       <level>5</level>
       <health>40</health>
-      <skill id="imbue" s="burn" x="3" y="9" />
+      <skill id="imbue" s="burn" x="2" y="9" />
       <skill id="counter" x="3" />
-      <skill id="strike" x="3" all="1" />
+      <skill id="strike" x="2" all="1" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>42</health>
-      <skill id="imbue" s="burn" x="4" y="9" />
+      <skill id="imbue" s="burn" x="3" y="9" />
       <skill id="counter" x="4" />
       <skill id="strike" x="3" all="1" />
     </upgrade>
@@ -8003,8 +8000,8 @@
   <unit>
     <id>378</id>
     <card_type>1</card_type>
-    <name>Bluefire, Master of The Void</name>
-    <portrait>raven</portrait>
+    <name>Bluefire, Void Master</name>
+    <portrait>bluefireVoidDragon</portrait>
     <attack>0</attack>
     <health>79</health>
     <rarity>4</rarity>
@@ -8041,8 +8038,8 @@
     <upgrade>
       <level>6</level>
       <health>99</health>
-      <skill id="imbue" x="4" all="1" s="counter" />
-      <skill id="enfeeble" x="3" all="1" />
+      <skill id="imbue" x="5" all="1" s="counter" />
+      <skill id="enfeeble" x="4" all="1" />
       <skill id="weaken" x="4" c="2" />
     </upgrade>
   </unit>

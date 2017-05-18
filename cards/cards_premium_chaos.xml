@@ -15987,4 +15987,510 @@
       <skill id="flurry" c="3" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6129</id>
+    <card_type>2</card_type>
+    <name>Scorgon Trapper</name>
+    <picture>Poison_Tail_Dragon_A</picture>
+    <asset_bundle>93</asset_bundle>
+    <hidden_until_time>1494522000</hidden_until_time>
+    <attack>1</attack>
+    <health>6</health>
+    <cost>0</cost>
+    <rarity>3</rarity>
+    <skill id="weaken" x="1" />
+    <skill id="pierce" x="2" />
+    <skill id="poison" x="3" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>7</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>8</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="weaken" x="1" />
+      <skill id="pierce" x="3" />
+      <skill id="poison" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="weaken" x="1" />
+      <skill id="pierce" x="3" />
+      <skill id="poison" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16129</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Scorgon Bushwhacker</name>
+    <picture>Poison_Tail_Dragon_A</picture>
+    <asset_bundle>93</asset_bundle>
+    <hidden_until_time>1494522000</hidden_until_time>
+    <attack>1</attack>
+    <health>9</health>
+    <cost>0</cost>
+    <rarity>3</rarity>
+    <skill id="weaken" x="2" />
+    <skill id="pierce" x="3" />
+    <skill id="poison" x="5" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="weaken" x="2" />
+      <skill id="pierce" x="4" />
+      <skill id="poison" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="weaken" x="2" />
+      <skill id="pierce" x="4" />
+      <skill id="poison" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="weaken" x="2" />
+      <skill id="pierce" x="5" />
+      <skill id="poison" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26129</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Scorgon Ambusher</name>
+    <picture>Poison_Tail_Dragon_B</picture>
+    <asset_bundle>93</asset_bundle>
+    <hidden_until_time>1494522000</hidden_until_time>
+    <attack>1</attack>
+    <health>11</health>
+    <cost>0</cost>
+    <rarity>3</rarity>
+    <skill id="weaken" x="2" />
+    <skill id="pierce" x="6" />
+    <skill id="poison" x="6" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="weaken" x="2" />
+      <skill id="pierce" x="6" />
+      <skill id="poison" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="weaken" x="3" />
+      <skill id="pierce" x="6" />
+      <skill id="poison" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="weaken" x="3" />
+      <skill id="pierce" x="7" />
+      <skill id="poison" x="8" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6130</id>
+    <card_type>2</card_type>
+    <name>Shadowed Wyvern</name>
+    <picture>Spire_Devourer_Dragon_A</picture>
+    <asset_bundle>93</asset_bundle>
+    <hidden_until_time>1495126800</hidden_until_time>
+    <attack>3</attack>
+    <health>26</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="2" />
+    <skill id="strike" x="2" all="1" />
+    <skill id="burn" x="2" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>28</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="3" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="burn" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>30</health>
+      <skill id="corrosive" x="3" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="burn" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16130</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Ignited Wyvern</name>
+    <picture>Spire_Devourer_Dragon_A</picture>
+    <asset_bundle>93</asset_bundle>
+    <hidden_until_time>1495126800</hidden_until_time>
+    <attack>3</attack>
+    <health>31</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="3" />
+    <skill id="strike" x="2" all="1" />
+    <skill id="burn" x="3" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="corrosive" x="3" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="burn" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>32</health>
+      <skill id="corrosive" x="4" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="burn" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>33</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="corrosive" x="4" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="burn" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26130</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Immolation Wyvern</name>
+    <picture>Spire_Devourer_Dragon_B</picture>
+    <asset_bundle>93</asset_bundle>
+    <hidden_until_time>1495126800</hidden_until_time>
+    <attack>4</attack>
+    <health>34</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="4" />
+    <skill id="strike" x="3" all="1" />
+    <skill id="burn" x="4" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>35</health>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>36</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>37</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="5" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="burn" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="corrosive" x="5" />
+      <skill id="strike" x="4" all="1" />
+      <skill id="burn" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6131</id>
+    <card_type>2</card_type>
+    <name>Winged Abducter</name>
+    <picture>Claw_Wing_Dragon_A</picture>
+    <asset_bundle>93</asset_bundle>
+    <hidden_until_time>1495731600</hidden_until_time>
+    <attack>4</attack>
+    <health>12</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="corrosive" x="1" />
+    <skill id="enfeeble" x="3" />
+    <skill id="leech" x="3" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>14</health>
+      <skill id="corrosive" x="2" />
+      <skill id="enfeeble" x="3" />
+      <skill id="leech" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="2" />
+      <skill id="enfeeble" x="4" />
+      <skill id="leech" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16131</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Winged Snatcher</name>
+    <picture>Claw_Wing_Dragon_A</picture>
+    <asset_bundle>93</asset_bundle>
+    <hidden_until_time>1495731600</hidden_until_time>
+    <attack>5</attack>
+    <health>15</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="corrosive" x="2" />
+    <skill id="enfeeble" x="4" />
+    <skill id="leech" x="4" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>16</health>
+      <skill id="corrosive" x="3" />
+      <skill id="enfeeble" x="4" />
+      <skill id="leech" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="3" />
+      <skill id="enfeeble" x="5" />
+      <skill id="leech" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26131</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Winged Skewerer</name>
+    <picture>Claw_Wing_Dragon_B</picture>
+    <asset_bundle>93</asset_bundle>
+    <hidden_until_time>1495731600</hidden_until_time>
+    <attack>7</attack>
+    <health>17</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="corrosive" x="3" />
+    <skill id="enfeeble" x="5" />
+    <skill id="leech" x="5" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>8</attack>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="corrosive" x="4" />
+      <skill id="enfeeble" x="5" />
+      <skill id="leech" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="4" />
+      <skill id="enfeeble" x="6" />
+      <skill id="leech" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6132</id>
+    <card_type>2</card_type>
+    <name>Deception Scalelord</name>
+    <picture>Dual_Personality_Dragon_A</picture>
+    <asset_bundle>93</asset_bundle>
+    <hidden_until_time>1494867600</hidden_until_time>
+    <attack>3</attack>
+    <health>8</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="pierce" x="2" />
+    <skill id="nullify" x="1" />
+    <skill id="berserk" x="1" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>11</health>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="pierce" x="3" />
+      <skill id="nullify" x="1" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="pierce" x="3" />
+      <skill id="nullify" x="2" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16132</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Conflicted Scalelord</name>
+    <picture>Dual_Personality_Dragon_A</picture>
+    <asset_bundle>93</asset_bundle>
+    <hidden_until_time>1494867600</hidden_until_time>
+    <attack>4</attack>
+    <health>12</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="pierce" x="3" />
+    <skill id="nullify" x="2" />
+    <skill id="berserk" x="2" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>15</health>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="pierce" x="4" />
+      <skill id="nullify" x="2" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="pierce" x="4" />
+      <skill id="nullify" x="3" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26132</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Deceitful Scalelord</name>
+    <picture>Dual_Personality_Dragon_B</picture>
+    <asset_bundle>93</asset_bundle>
+    <hidden_until_time>1494867600</hidden_until_time>
+    <attack>5</attack>
+    <health>16</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="pierce" x="4" />
+    <skill id="nullify" x="3" />
+    <skill id="berserk" x="3" />
+    <type>2</type>
+    <sub_type>9</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>6</attack>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="pierce" x="5" />
+      <skill id="nullify" x="3" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="pierce" x="5" />
+      <skill id="nullify" x="4" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+  </unit>
 </root>

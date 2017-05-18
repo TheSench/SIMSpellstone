@@ -4,7 +4,7 @@
 		 101-1000 for Bundle Packages
 		1001-3000 for Boxes & Chance Packs
 		3001-4000 for Special Market
-		4001-5000 for Emporium
+		4001-5000 for Emporium & Arena
 		5001-6000 for Shard Bundle Packages
 		6001-7000 for Reward Boxes
 
@@ -436,10 +436,10 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="9" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="9" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000,4000" />
     </cards>
   </store_item>
   <store_item>
@@ -1893,9 +1893,24 @@
       <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000,4000" />
     </cards>
   </store_item>
-  <!-- =============================== -->
-  <!-- ==== Emporium Market Items ==== -->
-  <!-- =============================== -->
+  <store_item>
+    <id>3053</id>
+    <name>Double Undead Epic Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two guaranteed ^c0DFFEpic^cFFFF+ Dragon cards from Premium set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="9" set="3000,4000" />
+    </cards>
+  </store_item>
+  <!-- ======================================= -->
+  <!-- ==== Emporium & Arena Market Items ==== -->
+  <!-- ======================================= -->
   <!-- 
 		<cycle_length>86400</cycle_length> 	cycle length in seconds. Keep same per pack or may f*** everything
 		<start_offset>0</start_offset> 		offset from UTC in seconds 
@@ -2069,6 +2084,140 @@
 			<item min_rarity='2' max_rarity='3' type='3' />
 		</items>
 	</store_item> -->
+  <store_item>
+    <id>4101</id>
+    <name>Bronze Arena Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Contains various items as a reward for Arenas.</desc>
+    <priority>1</priority>
+    <hc_cost>1000</hc_cost>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="4" quantity="5" weight="1" />
+      <!-- Arcane Dust -->
+      <item id="2501" quantity="4" weight="1" />
+      <!-- Blue Fire Soul -->
+      <item id="1012" quantity="2" weight="1" />
+      <!-- Gold Bar -->
+      <item id="1012" quantity="5" weight=".25" />
+      <!-- Gold Bar -->
+      <item id="2522" quantity="5" weight=".05" />
+      <!-- Mythic Item -->
+      <item id="17" quantity="1000" weight=".005" />
+      <!-- Epic Pack Fragment -->
+    </item_pack>
+  </store_item>
+  <store_item>
+    <id>4102</id>
+    <name>Silver Arena Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Contains various items as a reward for Arenas.</desc>
+    <priority>1</priority>
+    <hc_cost>1000</hc_cost>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="4" quantity="8" weight="1" />
+      <!-- Arcane Dust -->
+      <item id="2501" quantity="6" weight="1" />
+      <!-- Blue Fire Soul -->
+      <item id="2501" quantity="15" weight=".5" />
+      <!-- Blue Fire Soul -->
+      <item id="17" quantity="15" weight=".3" />
+      <!-- Epic Pack Fragment -->
+      <item id="4012" quantity="1" weight=".1" />
+      <!-- Epic Runeshell -->
+      <item id="2522" quantity="20" weight=".05" />
+      <!-- Mythic Item -->
+      <item id="17" quantity="1000" weight=".01" />
+      <!-- Epic Pack Fragment -->
+    </item_pack>
+  </store_item>
+  <store_item>
+    <id>4103</id>
+    <name>Gold Arena Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Contains various items as a reward for Arenas.</desc>
+    <priority>1</priority>
+    <hc_cost>1000</hc_cost>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="4001" quantity="1" weight="1" />
+      <!-- Inscription Powder -->
+      <item id="4" quantity="10" weight="1" />
+      <!-- Arcane Dust -->
+      <item id="2501" quantity="10" weight="1" />
+      <!-- Blue Fire Soul -->
+      <item id="17" quantity="30" weight=".3" />
+      <!-- Epic Pack Fragment -->
+      <item id="4012" quantity="1" weight=".2" />
+      <!-- Epic Runeshell -->
+      <item id="4013" quantity="1" weight=".1" />
+      <!-- Legendary Rune Sliver -->
+      <item id="2522" quantity="30" weight=".05" />
+      <!-- Mythic Item -->
+      <item id="17" quantity="1000" weight=".02" />
+      <!-- Epic Pack Fragment -->
+    </item_pack>
+  </store_item>
+  <store_item>
+    <id>4104</id>
+    <name>Platinum Arena Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Contains various items as a reward for Arenas.</desc>
+    <priority>1</priority>
+    <hc_cost>1000</hc_cost>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="4001" quantity="2" weight="1" />
+      <!-- Inscription Powder -->
+      <item id="4" quantity="15" weight="1" />
+      <!-- Arcane Dust -->
+      <item id="4012" quantity="1" weight=".6" />
+      <!-- Epic Runeshell -->
+      <item id="17" quantity="100" weight=".4" />
+      <!-- Epic Pack Fragment -->
+      <item id="18" quantity="20" weight=".2" />
+      <!-- Legendary Pack Fragment -->
+      <item id="4013" quantity="1" weight=".2" />
+      <!-- Legendary Rune Sliver -->
+      <item id="2522" quantity="80" weight=".05" />
+      <!-- Mythic Item -->
+      <item id="17" quantity="1000" weight=".05" />
+      <!-- Epic Pack Fragment -->
+    </item_pack>
+  </store_item>
+  <store_item>
+    <id>4105</id>
+    <name>Diamond Arena Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Contains various items as a reward for Arenas.</desc>
+    <priority>1</priority>
+    <hc_cost>1000</hc_cost>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="4001" quantity="30" weight="1" />
+      <!-- Inscription Powder -->
+      <item id="17" quantity="1000" weight=".6" />
+      <!-- Epic Pack Fragment -->
+      <item id="4012" quantity="2" weight=".5" />
+      <!-- Epic Runeshell -->
+      <item id="18" quantity="200" weight=".3" />
+      <!-- Legendary Pack Fragment -->
+      <item id="4013" quantity="2" weight=".3" />
+      <!-- Legendary Rune Sliver -->
+      <item id="4" quantity="100" weight=".3" />
+      <!-- Arcane Dust -->
+      <item id="2522" quantity="300" weight=".05" />
+      <!-- Mythic Item -->
+      <item id="18" quantity="1000" weight=".05" />
+      <!-- Legendary Pack Fragment -->
+    </item_pack>
+  </store_item>
   <!-- =============================== -->
   <!-- ==== Shard Bundle Packages ==== -->
   <!-- =============================== -->
@@ -3345,6 +3494,43 @@
     <!-- Stuff to give -->
     <cards>
       <card min_level="1" max_level="1" unit_id="7123" display_card_id="7123" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5068</id>
+    <name>Double Dragon Epic Pack</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <show_desc>1</show_desc>
+    <desc>Gives two guaranteed ^c0DFFEpic^cFFFF+ Dragon cards from Premium set. May be purchased 5 times!</desc>
+    <asset_prefab>event_024_two_epics</asset_prefab>
+    <bundle>92</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>100</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3053</pack>
+  </store_item>
+  <store_item>
+    <id>5069</id>
+    <name>Gearplate Dragon Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFGearplate Dragon^cFFFF! May be purchased four times.</desc>
+    <!-- <asset_prefab>event_015_darkflame</asset_prefab> -->
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="6095" display_card_id="6095" />
     </cards>
   </store_item>
 </root>
