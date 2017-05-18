@@ -600,7 +600,7 @@ var makeUnit = (function () {
                 case 'poison':
                 case 'valor':
                     this[skillID] += parseInt(skill.x);
-                    this.imbued[skillID] += skill.x;
+                    this.imbued[skillID] = this.imbued[skillID] + skill.x;
                     return;
                 case 'flurry':
                     if (!this.flurry) {
