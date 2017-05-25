@@ -10122,4 +10122,134 @@
       <skill id="pierce" x="6" />
     </upgrade>
   </unit>
+  <unit>
+    <id>2092</id>
+    <card_type>2</card_type>
+    <name>Verus, Arena Champion</name>
+    <picture>Mythic_Avian_A</picture>
+    <asset_bundle>38</asset_bundle>
+    <attack>5</attack>
+    <health>13</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="evadebarrier" x="1" />
+    <skill id="jam" c="6" />
+    <skill id="nullify" x="1" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="evadebarrier" x="1" />
+      <skill id="jam" c="5" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>15</health>
+      <skill id="evadebarrier" x="2" />
+      <skill id="jam" c="5" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>6</attack>
+      <skill id="evadebarrier" x="2" />
+      <skill id="jam" c="5" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2093</id>
+    <card_type>2</card_type>
+    <name>Verus, the Wind Dancer</name>
+    <picture>Mythic_Avian_B</picture>
+    <asset_bundle>38</asset_bundle>
+    <attack>6</attack>
+    <health>16</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="evadebarrier" x="3" />
+    <skill id="jam" c="5" />
+    <skill id="nullify" x="2" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evadebarrier" x="3" />
+      <skill id="jam" c="4" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evadebarrier" x="4" />
+      <skill id="jam" c="4" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2094</id>
+    <card_type>2</card_type>
+    <name>Verus, the Galeheart</name>
+    <asset_prefab>Avian_Mythic_A</asset_prefab>
+    <asset_bundle>36</asset_bundle>
+    <attack>7</attack>
+    <health>19</health>
+    <cost>1</cost>
+    <rarity>5</rarity>
+    <skill id="evadebarrier" x="4" />
+    <skill id="jam" c="3" />
+    <skill id="nullify" x="2" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="evadebarrier" x="5" />
+      <skill id="jam" c="3" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evadebarrier" x="5" />
+      <skill id="jam" c="3" />
+      <skill id="nullify" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <attack>8</attack>
+      <skill id="evadebarrier" x="6" />
+      <skill id="jam" c="3" />
+      <skill id="nullify" x="3" />
+    </upgrade>
+  </unit>
 </root>

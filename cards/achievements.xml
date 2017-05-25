@@ -34,6 +34,10 @@
 			req: <sub_achievement>1</sub_achievement>
 		13: Runes
 			req: <sub_achievement>1</sub_achievement>
+		14: Crafting
+			req: 
+		15: Arena
+			req: <tier>1</tier>
 		
 		VALID ACHIEVEMENT REQS:
 			<achievement_req>		(-1 is hidden)
@@ -2390,6 +2394,55 @@
     </reward>
   </achievement>
   <!-- END Runes Quests  -->
+  <!-- 1501+: Arena Quests -->
+  <achievement>
+    <id>1501</id>
+    <type>15</type>
+    <order>901</order>
+    <icon>ArenaIcon</icon>
+    <icon_bundle>31</icon_bundle>
+    <name>Silver Division</name>
+    <desc>Reach Silver Division in the Arena.</desc>
+    <achievement_req>451</achievement_req>
+    <req>
+      <tier>4</tier>
+    </req>
+    <reward>
+      <item id="2525" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1502</id>
+    <type>15</type>
+    <order>901</order>
+    <icon>ArenaIcon</icon>
+    <icon_bundle>31</icon_bundle>
+    <name>Gold Division</name>
+    <desc>Reach Gold Division in the Arena.</desc>
+    <achievement_req>1501</achievement_req>
+    <req>
+      <tier>7</tier>
+    </req>
+    <reward>
+      <item id="4001" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>1503</id>
+    <type>15</type>
+    <order>901</order>
+    <icon>ArenaIcon</icon>
+    <icon_bundle>31</icon_bundle>
+    <name>Platinum Division</name>
+    <desc>Reach Platinum Division in the Arena.</desc>
+    <achievement_req>1502</achievement_req>
+    <req>
+      <tier>10</tier>
+    </req>
+    <reward>
+      <item id="4013" number="3" />
+    </reward>
+  </achievement>
   <!-- 3001+: Event Quests START -->
   <!-- Event 2 Dragons -->
   <achievement>
@@ -6166,6 +6219,148 @@
     </req>
     <reward>
       <item id="8002" number="1" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3236</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Abyss</name>
+    <desc>Complete the 'The Abyss' campaign on Mastery Level 2.</desc>
+    <mission_req>5594</mission_req>
+    <locked_start_time>1496336400</locked_start_time>
+    <!-- Thu, 01 June 2017 17:00:00 -->
+    <req>
+      <campaign>1128</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3237</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Abyss</name>
+    <desc>Complete the 'The Abyss' campaign on Mastery Level 4.</desc>
+    <mission_req>5594</mission_req>
+    <locked_start_time>1496336400</locked_start_time>
+    <!-- Thu, 01 June 2017 17:00:00 -->
+    <achievement_req>3236</achievement_req>
+    <req>
+      <campaign>1128</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3238</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Abyss</name>
+    <desc>Complete the 'The Abyss' campaign on Mastery Level 6.</desc>
+    <mission_req>5594</mission_req>
+    <locked_start_time>1496336400</locked_start_time>
+    <!-- Thu, 01 June 2017 17:00:00 -->
+    <achievement_req>3237</achievement_req>
+    <req>
+      <campaign>1128</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3239</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Abyss</name>
+    <desc>Complete the 'The Abyss' campaign on Mastery Level 7.</desc>
+    <mission_req>5594</mission_req>
+    <locked_start_time>1496336400</locked_start_time>
+    <!-- Thu, 01 June 2017 17:00:00 -->
+    <achievement_req>3238</achievement_req>
+    <req>
+      <campaign>1128</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3240</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Void's Harmony</name>
+    <desc>Complete the 'The Void's Harmony' campaign on Mastery Level 2.</desc>
+    <mission_req>5607</mission_req>
+    <locked_start_time>1497546000</locked_start_time>
+    <!-- Thu, 15 June 2017 17:00:00 -->
+    <req>
+      <campaign>1129</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3241</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Void's Harmony</name>
+    <desc>Complete the 'The Void's Harmony' campaign on Mastery Level 4.</desc>
+    <mission_req>5607</mission_req>
+    <locked_start_time>1497546000</locked_start_time>
+    <!-- Thu, 15 June 2017 17:00:00 -->
+    <achievement_req>3240</achievement_req>
+    <req>
+      <campaign>1129</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3242</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Void's Harmony</name>
+    <desc>Complete the 'The Void's Harmony' campaign on Mastery Level 6.</desc>
+    <mission_req>5607</mission_req>
+    <locked_start_time>1497546000</locked_start_time>
+    <!-- Thu, 15 June 2017 17:00:00 -->
+    <achievement_req>3241</achievement_req>
+    <req>
+      <campaign>1129</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3243</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Void's Harmony</name>
+    <desc>Complete the 'The Void's Harmony' campaign on Mastery Level 7.</desc>
+    <mission_req>5607</mission_req>
+    <locked_start_time>1497546000</locked_start_time>
+    <!-- Thu, 15 June 2017 17:00:00 -->
+    <achievement_req>3242</achievement_req>
+    <req>
+      <campaign>1129</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
     </reward>
   </achievement>
   <!-- END Event Quests  -->

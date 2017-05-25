@@ -345,6 +345,64 @@
     <attributes x="0" y="0" all="0" c="1" s="0" />
     <balance_points>10</balance_points>
   </skillType>
+  <!-- 
+	<skillType>
+		<id>enrage</id>
+		<order>500</order>
+		<name>Enrage</name>
+		<attributes x='1' y='0' all='0' c='0' s='0' />
+		<desc>enrage.</desc>
+		<hidden>1</hidden>
+	</skillType>
+	<skillType>
+		<id>scorchbreath</id>
+		<order>140</order>
+		<icon>frostbreath</icon>
+		<name>Scorchbreath</name>
+		<desc>Deals scorch in a cone to up to three creatures in front of it.</desc>
+		<status_flag>burn</status_flag>
+		<attributes x='1' y='0' all='0' c='0' s='0' />
+		<balance_points>8</balance_points>
+	</skillType>
+	<skillType>
+		<id>intensify</id>
+		<order>140</order>
+		<icon>intensify</icon>
+		<name>Intensify</name>
+		<desc>Intensify.</desc>
+		<attributes x='1' y='0' all='0' c='0' s='0' />
+		<balance_points>8</balance_points>
+	</skillType>
+	<skillType>
+		<id>ignite</id>
+		<order>140</order>
+		<icon>ignite</icon>
+		<name>Ignite</name>
+		<desc>Ignite.</desc>
+		<attributes x='1' y='0' all='0' c='0' s='0' />
+		<balance_points>8</balance_points>
+	</skillType>
+ 	-->
+  <!-- Mythic -->
+  <skillType>
+    <id>fury</id>
+    <order>1</order>
+    <icon>fury</icon>
+    <name>Maelstrom's Fury</name>
+    <desc>When damaged by an attack, deal damage to attacker and increase Attack permanently</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <balance_points>3</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>evadebarrier</id>
+    <order>1</order>
+    <icon>avian_barrier</icon>
+    <name>Wing Ward</name>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <desc>Applies Barrier and Invisibility to a random target allied creature</desc>
+    <hidden>1</hidden>
+  </skillType>
   <!-- Special -->
   <skillType>
     <id>protect_ice</id>
@@ -429,16 +487,6 @@
     <!-- This skill occurs before all other actions -->
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <desc>Deal damage to random enemy creatures</desc>
-    <hidden>1</hidden>
-  </skillType>
-  <skillType>
-    <id>fury</id>
-    <order>1</order>
-    <icon>fury</icon>
-    <name>Maelstrom's Fury</name>
-    <desc>When damaged by an attack, deal damage to attacker and increase Attack permanently</desc>
-    <attributes x="1" y="0" all="0" c="0" s="0" />
-    <balance_points>3</balance_points>
     <hidden>1</hidden>
   </skillType>
   <skillType>

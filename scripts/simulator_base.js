@@ -213,12 +213,17 @@ var SIMULATOR = {};
         // - Targets allied assaults
         // - Can be enhanced
         protect_ice: function (src_card, skill) {
-            return activationSkills.protect(src_card, skill, true);
+            return activationSkills.protect(src_card, skill, "barrier_ice");
         },
         protect_seafolk: function (src_card, skill) {
             return activationSkills.protect(src_card, skill);
         },
-        protect: function (src_card, skill, ice) {
+        evadebarrier: function (src_card, skill) {
+            return activationSkills.protect(src_card, skill, "invisible", function (target, amount) {
+               return ' and imbues it with invisible ' + amount;
+            });
+        },
+        protect: function (src_card, skill, additional, additionalDebug) {
 
             var faction = skill['y'];
 
@@ -278,12 +283,16 @@ var SIMULATOR = {};
                 }
 
                 target.protected += protect_amt;
-                if (ice) {
-                    target.barrier_ice += protect_amt;
+                if (additional) {
+                    target[additional] = (target[additional] || 0) + protect_amt;
                 }
                 if (debug) {
                     if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
-                    echo += debug_name(src_card) + ' barriers ' + debug_name(target) + ' by ' + protect_amt + '<br>';
+                    echo += debug_name(src_card) + ' barriers ' + debug_name(target) + ' by ' + protect_amt;
+                    if (typeof additionalDebug === "function") {
+                        echo += additionalDebug(target, protect_amt);
+                    }
+                    echo += '<br>';
                 }
             }
 
@@ -1263,6 +1272,29 @@ var SIMULATOR = {};
             }
             if (!target.isAlive()) {
                 doOnDeathSkills(target, src_card);
+            }
+
+            return 1;
+        },
+
+        slow: function (src_card, target, skill) {
+
+            var x = skill.x
+            var faction = skill.y;
+            var all = skill.all;
+            var base = skill.base;
+            var mult = skill.mult;
+
+            var slow = x;
+            if (!slow) {
+                var mult = skill.mult;
+                slow = Math.ceil(target[base] * mult);
+            }
+
+            target.timer += slow;
+
+            if (debug) {
+                echo += debug_name(src_card) + ' slows ' + debug_name(target) + ' by ' + slow + '<br>';
             }
 
             return 1;

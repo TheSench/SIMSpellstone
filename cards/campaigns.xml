@@ -4471,6 +4471,80 @@
     </rewards>
     <find_item id="3053" drop_per_energy=".4" />
   </campaign>
+  <!-- Event Campaign 3 Weeks 5-6 
+	<campaign> 
+		<id>1128</id>
+		<name>The Abyss</name>
+		<campaign_req>1126</campaign_req>
+		<locked_start_time>1496336400</locked_start_time>	| Thu, 01 June 2017 17:00:00 |
+		<battleground_id>2012</battleground_id>
+		<location_id>9</location_id>
+		<x>135</x>
+		<y>370</y>
+		<combatBG>CombatBGVoid</combatBG>
+		<missions>
+			<mission_id>5595</mission_id>
+			<mission_id>5596</mission_id>
+			<mission_id>5597</mission_id>
+			<mission_id>5598</mission_id>
+			<mission_id>5599</mission_id>
+			<mission_id>5600</mission_id>
+			<mission_id>5601</mission_id>
+			<mission_id>5602</mission_id>
+			<mission_id>5603</mission_id>
+			<mission_id>5604</mission_id>
+			<mission_id>5605</mission_id>
+			<mission_id>5606</mission_id>
+			<mission_id>5607</mission_id>
+		</missions>
+		<rewards>
+			<card level='1' id='511' />
+			<card level='2' id='511' />
+			<card level='3' id='511' />
+			<card level='4' id='2044' />
+			<card level='5' id='512' />
+			<card level='6' id='2005' />
+			<item level='7' id='3055' />
+		</rewards>
+		<find_item id='3053' drop_per_energy='.6' />
+	</campaign>
+	
+	<campaign> 
+		<id>1129</id>
+		<name>The Void's Harmony</name>
+		<campaign_req>1128</campaign_req>
+		<locked_start_time>1497546000</locked_start_time>	| Thu, 15 June 2017 17:00:00 |
+		<battleground_id>2013</battleground_id>
+		<location_id>9</location_id>
+		<x>585</x>
+		<y>560</y>
+		<combatBG>CombatBGVoid</combatBG>
+		<missions>
+			<mission_id>5608</mission_id>
+			<mission_id>5609</mission_id>
+			<mission_id>5610</mission_id>
+			<mission_id>5611</mission_id>
+			<mission_id>5612</mission_id>
+			<mission_id>5613</mission_id>
+			<mission_id>5614</mission_id>
+			<mission_id>5615</mission_id>
+			<mission_id>5616</mission_id>
+			<mission_id>5617</mission_id>
+			<mission_id>5618</mission_id>
+			<mission_id>5619</mission_id>
+		</missions>
+		<rewards>
+			<card level='1' id='511' />
+			<card level='2' id='511' />
+			<card level='3' id='511' />
+			<card level='4' id='2044' />
+			<card level='5' id='512' />
+			<card level='6' id='2005' />
+			<item level='7' id='3055' />
+		</rewards>
+		<find_item id='3053' drop_per_energy='.8' />
+	</campaign>
+-->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
   <!-- ============================ -->
@@ -4747,4 +4821,33 @@
     </rewards>
   </campaign>
   <!-- END Hero Upgrade Campaigns -->
+  <!-- Test Campaign 
+
+	<campaign>
+		<id>3009</id>
+		<name>Mythic Test</name>
+		<icon id='red_boss_gem' bundle='15' />
+		<campaign_req>24</campaign_req>
+		<side_mission>1</side_mission>
+		<location_id>5</location_id>
+		<x>470</x>
+		<y>320</y>
+		<combatBG>CombatBGEvent004</combatBG>
+		<missions>
+			<mission_id>5620</mission_id>
+			<mission_id>5621</mission_id>
+			<mission_id>5622</mission_id>
+			<mission_id>5623</mission_id>
+		</missions>
+		<rewards>
+			<item level='1' id='1011' />
+			<card level='2' id='510' />
+			<item level='3' id='1011' />
+			<card level='4' id='511' />
+			<item level='5' id='1012' />
+			<card level='6' id='512' />
+			<item level='5' id='1012' />
+		</rewards>
+	</campaign>
+	-->
 </root>

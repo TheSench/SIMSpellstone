@@ -1384,6 +1384,17 @@
     <card_id>22091</card_id>
     <resource card_id="12091" number="2" />
   </fusion_recipe>
+  <!-- Verus Item Fusion -->
+  <fusion_recipe>
+    <card_id>2093</card_id>
+    <resource card_id="2092" number="1" />
+    <resource item_id="2524" number="2500" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>2094</card_id>
+    <resource card_id="2093" number="1" />
+    <resource item_id="2524" number="5000" />
+  </fusion_recipe>
   <!-- END SET 2000 - Reward -->
   <!-- START SET 3000 - Premium -->
   <!-- AETHER PREMIUM SET BEGIN -->

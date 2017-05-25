@@ -627,6 +627,7 @@ var makeUnit = (function () {
 
                 // Activation skills (can occur twice on a card)
                 case 'enfeeble':
+                case "evadebarrier":
                 case 'frost':
                 case 'heal':
                 case 'jam':
@@ -706,6 +707,7 @@ var makeUnit = (function () {
 
                 // Activation skills
                 case 'enfeeble':
+                case "evadebarrier":
                 case 'frost':
                 case 'heal':
                 case 'jam':
@@ -870,6 +872,7 @@ var isImbued = function (card, skillID, i) {
 
         // Activation skills (can occur twice on a card)
         case 'enfeeble':
+        case "evadebarrier":
         case 'frost':
         case 'heal':
         case 'jam':
@@ -1304,6 +1307,7 @@ function setSkill_2(new_card, skill) {
 
         // Activation skills (can occur twice on a card)
         case 'enfeeble':
+        case "evadebarrier":
         case 'frost':
         case 'heal':
         case 'jam':
@@ -1654,6 +1658,8 @@ function convertName(oldName) {
             return "hex";
         case "evade":
             return "invisibility";
+        case "evadebarrier":
+            return "wing ward";
         case "flurry":
             return "dualstrike";
         case "frost":
