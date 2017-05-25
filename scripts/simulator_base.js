@@ -28,11 +28,13 @@ var SIMULATOR = {};
             for (var i = 0; i < battlegrounds.onCardPlayed.length; i++) {
                 var battleground = battlegrounds.onCardPlayed[i];
                 var o = (p === 'player' ? 'cpu' : 'player');
-                if (battleground.defender) {
-                    if (battleground.enemy_only && p != 'player') continue;
-                    if (battleground.ally_only && p != 'cpu') continue;
-                    battleground.owner = o;
 
+                if (battleground.defender) {
+                    if (p != 'cpu') continue;
+                    battleground.owner = o;
+                } else if (battleground.attacker) {
+                    if (p != 'player') continue;
+                    battleground.owner = p;
                 } else {
                     if (battleground.enemy_only && p != 'cpu') continue;
                     if (battleground.ally_only && p != 'player') continue;
