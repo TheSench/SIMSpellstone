@@ -1324,7 +1324,7 @@ var filterName = (function (field) {
             for (var i = 0, len = units.length; i < len; i++) {
                 var unit = units[i];
                 var card = get_slim_card_by_id(unit, true);
-                if (card.name.toLowerCase().indexOf(filter) == -1) {
+                if (!card.name || card.name.toLowerCase().indexOf(filter) == -1) {
                     nameHidden[makeUnitKey(unit)] = true;
                 }
             }
