@@ -4,7 +4,7 @@ var SIMULATOR = {};
 (function () {
 
     // Play card
-    function play_card(card, p, quiet) {
+    function play_card(card, p, turn, quiet) {
         var field_p_assaults = field[p]['assaults'];
 
         // Not a valid card
@@ -42,6 +42,11 @@ var SIMULATOR = {};
                     if (battleground.ally_only && p != 'player') continue;
                     battleground.owner = p;
                 }
+
+                if (turn > 1 && battleground.first_play) {
+                    continue;
+                }
+
                 battleground.onCardPlayed(card, deck[p].deck, deck[o].deck);
             }
         }
@@ -1455,7 +1460,7 @@ var SIMULATOR = {};
                 var uid = 150;
                 towerCard.uid = uid;
                 field.uids[uid] = towerCard;
-                play_card(towerCard, 'cpu', true);
+                play_card(towerCard, 'cpu', -1, true);
             }
         }
 
@@ -1697,7 +1702,7 @@ var SIMULATOR = {};
                 for (var i = 0; i < deck_p_deck.length; i++) {
                     var card = deck_p_deck[i];
                     if (card.trap) {
-                        play_card(card.trap, p);
+                        play_card(card.trap, p, turn);
                         card.trap = false;
                     }
                     if (i === 2) break;
@@ -1707,7 +1712,7 @@ var SIMULATOR = {};
 
             if (card_picked < 0) return false;
 
-            play_card(deck_p_deck[card_picked], p);
+            play_card(deck_p_deck[card_picked], p, turn);
 
             removeFromDeck(deck_p_deck, card_picked);
         }

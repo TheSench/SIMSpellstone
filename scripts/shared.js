@@ -1191,6 +1191,7 @@ function addBgeFromList(battlegrounds, battleground, player) {
             var bge = MakeOnPlayBGE(battleground.name, effect.effect);
             bge.attacker = effect.attacker;
             bge.defender = effect.defender;
+            bge.first_play = effect.first_play;
             if (player === 'player') bge.ally_only = true
             if (player === 'cpu') bge.enemy_only = true
             battlegrounds.onCardPlayed.push(bge);
