@@ -30,10 +30,12 @@ var SIMULATOR = {};
                 var o = (p === 'player' ? 'cpu' : 'player');
 
                 if (battleground.defender) {
-                    if (p != 'cpu') continue;
+                    if (!surge && p != 'cpu') continue;
+                    if (surge && p != 'player') continue;
                     battleground.owner = o;
                 } else if (battleground.attacker) {
-                    if (p != 'player') continue;
+                    if (!surge && p != 'player') continue;
+                    if (surge && p != 'cpu') continue;
                     battleground.owner = p;
                 } else {
                     if (battleground.enemy_only && p != 'cpu') continue;
