@@ -1268,10 +1268,10 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="5" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="5" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" />
     </cards>
   </store_item>
   <store_item>
@@ -1572,7 +1572,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000" number="4" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" number="4" />
     </cards>
   </store_item>
   <store_item>
@@ -2102,7 +2102,7 @@
       <!-- Gold Bar -->
       <item id="1012" quantity="5" weight=".25" />
       <!-- Gold Bar -->
-      <item id="2522" quantity="5" weight=".05" />
+      <item id="2524" quantity="5" weight=".05" />
       <!-- Mythic Item -->
       <item id="17" quantity="1000" weight=".005" />
       <!-- Epic Pack Fragment -->
@@ -2128,7 +2128,7 @@
       <!-- Epic Pack Fragment -->
       <item id="4012" quantity="1" weight=".1" />
       <!-- Epic Runeshell -->
-      <item id="2522" quantity="20" weight=".05" />
+      <item id="2524" quantity="20" weight=".05" />
       <!-- Mythic Item -->
       <item id="17" quantity="1000" weight=".01" />
       <!-- Epic Pack Fragment -->
@@ -2156,7 +2156,7 @@
       <!-- Epic Runeshell -->
       <item id="4013" quantity="1" weight=".1" />
       <!-- Legendary Rune Sliver -->
-      <item id="2522" quantity="30" weight=".05" />
+      <item id="2524" quantity="30" weight=".05" />
       <!-- Mythic Item -->
       <item id="17" quantity="1000" weight=".02" />
       <!-- Epic Pack Fragment -->
@@ -2184,7 +2184,7 @@
       <!-- Legendary Pack Fragment -->
       <item id="4013" quantity="1" weight=".2" />
       <!-- Legendary Rune Sliver -->
-      <item id="2522" quantity="80" weight=".05" />
+      <item id="2524" quantity="80" weight=".05" />
       <!-- Mythic Item -->
       <item id="17" quantity="1000" weight=".05" />
       <!-- Epic Pack Fragment -->
@@ -2212,7 +2212,7 @@
       <!-- Legendary Rune Sliver -->
       <item id="4" quantity="100" weight=".3" />
       <!-- Arcane Dust -->
-      <item id="2522" quantity="300" weight=".05" />
+      <item id="2524" quantity="300" weight=".05" />
       <!-- Mythic Item -->
       <item id="18" quantity="1000" weight=".05" />
       <!-- Legendary Pack Fragment -->
@@ -2730,7 +2730,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <priority>300</priority>
-    <desc>Gives four copies of one ^c0DFFEpic^cFFFF+ Elemental card from Premium set. Also includes two Bounty Refills +10, two Energy Potions +20, and one random Rare+ Rune. May only be purchased once.</desc>
+    <desc>Gives four copies of one ^c0DFFEpic^cFFFF+ Elemental card from Premium set. Also includes two Bounty Refills +10, two Energy Potions +20, and one random Rare+ Rune. May be purchased twice!</desc>
     <asset_prefab>elemental_crystal_epic4x</asset_prefab>
     <background_prefab>event_015_banner_epic4x</background_prefab>
     <bundle>69</bundle>

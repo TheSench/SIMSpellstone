@@ -57,7 +57,7 @@
   </skillType>
   <skillType>
     <id>imbue</id>
-    <order>1</order>
+    <order>2</order>
     <icon>imbue</icon>
     <name>Imbue</name>
     <upkeep>1</upkeep>
@@ -71,7 +71,7 @@
   </skillType>
   <skillType>
     <id>enhance</id>
-    <order>2</order>
+    <order>3</order>
     <icon>enhance</icon>
     <name>Enhance</name>
     <upkeep>1</upkeep>
@@ -345,44 +345,46 @@
     <attributes x="0" y="0" all="0" c="1" s="0" />
     <balance_points>10</balance_points>
   </skillType>
-  <!-- 
-	<skillType>
-		<id>enrage</id>
-		<order>500</order>
-		<name>Enrage</name>
-		<attributes x='1' y='0' all='0' c='0' s='0' />
-		<desc>enrage.</desc>
-		<hidden>1</hidden>
-	</skillType>
-	<skillType>
-		<id>scorchbreath</id>
-		<order>140</order>
-		<icon>frostbreath</icon>
-		<name>Scorchbreath</name>
-		<desc>Deals scorch in a cone to up to three creatures in front of it.</desc>
-		<status_flag>burn</status_flag>
-		<attributes x='1' y='0' all='0' c='0' s='0' />
-		<balance_points>8</balance_points>
-	</skillType>
-	<skillType>
-		<id>intensify</id>
-		<order>140</order>
-		<icon>intensify</icon>
-		<name>Intensify</name>
-		<desc>Intensify.</desc>
-		<attributes x='1' y='0' all='0' c='0' s='0' />
-		<balance_points>8</balance_points>
-	</skillType>
-	<skillType>
-		<id>ignite</id>
-		<order>140</order>
-		<icon>ignite</icon>
-		<name>Ignite</name>
-		<desc>Ignite.</desc>
-		<attributes x='1' y='0' all='0' c='0' s='0' />
-		<balance_points>8</balance_points>
-	</skillType>
- 	-->
+  <!-- TEST SKILLS -->
+  <skillType>
+    <id>enrage</id>
+    <order>500</order>
+    <name>Enrage</name>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <desc>enrage.</desc>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>scorchbreath</id>
+    <order>500</order>
+    <icon>frostbreath</icon>
+    <name>Scorchbreath</name>
+    <desc>Deals scorch in a cone to up to three creatures in front of it.</desc>
+    <status_flag>burn</status_flag>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <balance_points>8</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>intensify</id>
+    <order>500</order>
+    <icon>intensify</icon>
+    <name>Intensify</name>
+    <desc>Intensify.</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <balance_points>8</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>ignite</id>
+    <order>500</order>
+    <icon>ignite</icon>
+    <name>Ignite</name>
+    <desc>Ignite.</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <balance_points>8</balance_points>
+    <hidden>1</hidden>
+  </skillType>
   <!-- Mythic -->
   <skillType>
     <id>fury</id>
@@ -471,7 +473,7 @@
     <order>500</order>
     <icon>burn</icon>
     <name>Vengence Scorch</name>
-    <desc>Deals stacking damage to the enemy across from this creature at end of turn. Wears off if not reapplied for a turn.</desc>
+    <desc>Deals stacking damage to the enemy across from this creature at end of turn. Wears off if not reapplied for a turn</desc>
     <status_flag>burn</status_flag>
     <status_flag>burn_cooldown</status_flag>
     <attributes x="1" y="0" all="0" c="0" s="0" />
@@ -516,7 +518,17 @@
     <!-- <icon>hex</icon> -->
     <name>Unearth</name>
     <attributes x="1" y="0" all="0" c="0" s="0" />
-    <desc>When a non token creature dies, it spawns a Token creature with stats based on its own stats.</desc>
+    <desc>When a non token creature dies, it spawns a Token creature with stats based on its own stats</desc>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>enlarge</id>
+    <order>500</order>
+    <icon>enlarge</icon>
+    <name>Enlarge</name>
+    <desc>Permanently increases the Attack of a creature when played, while this creature is active</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <balance_points>8</balance_points>
     <hidden>1</hidden>
   </skillType>
   <skillType>

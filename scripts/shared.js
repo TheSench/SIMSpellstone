@@ -283,29 +283,36 @@ var makeUnit = (function () {
                     var addedSkill = skillModifier.effects[j];
                     if (new_card.isInFaction(addedSkill.y)) {
                         if (addedSkill.rarity && new_card.rarity != addedSkill.rarity) continue;
-                        var new_skill = {};
-                        new_skill.id = addedSkill.id;
-                        if (addedSkill.mult) {
-                            if (addedSkill.base) {
-                                var base = new_card[addedSkill.base];
-                                if (addedSkill.base == "rarity") base--;
-                                new_skill.x = Math.ceil(addedSkill.mult * base);
-                            } else {
-                                new_skill.mult = addedSkill.mult;
-                            }
+
+                        if (addedSkill.id === "enlarge") {
+                            var mult = addedSkill.mult;
+                            var base = addedSkill.base;
+                            new_card[base] += Math.ceil(new_card[base] * mult);
                         } else {
-                            new_skill.x = addedSkill.x;
+                            var new_skill = {};
+                            new_skill.id = addedSkill.id;
+                            if (addedSkill.mult) {
+                                if (addedSkill.base) {
+                                    var base = new_card[addedSkill.base];
+                                    if (addedSkill.base == "rarity") base--;
+                                    new_skill.x = Math.ceil(addedSkill.mult * base);
+                                } else {
+                                    new_skill.mult = addedSkill.mult;
+                                }
+                            } else {
+                                new_skill.x = addedSkill.x;
+                            }
+                            new_skill.z = addedSkill.z;
+                            new_skill.c = addedSkill.c;
+                            new_skill.s = addedSkill.s;
+                            new_skill.all = addedSkill.all;
+                            if (addedSkill.card) new_skill.card = addedSkill.card;
+                            if (addedSkill.level) new_skill.level = addedSkill.level;
+                            new_skill.boosted = true;
+                            if (addedSkill.mult && addedSkill.base && new_skill.x == 0) continue;
+                            original_skills.push(new_skill);
+                            new_card.highlighted.push(new_skill.id);
                         }
-                        new_skill.z = addedSkill.z;
-                        new_skill.c = addedSkill.c;
-                        new_skill.s = addedSkill.s;
-                        new_skill.all = addedSkill.all;
-                        if (addedSkill.card) new_skill.card = addedSkill.card;
-                        if (addedSkill.level) new_skill.level = addedSkill.level;
-                        new_skill.boosted = true;
-                        if (addedSkill.mult && addedSkill.base && new_skill.x == 0) continue;
-                        original_skills.push(new_skill);
-                        new_card.highlighted.push(new_skill.id);
                     }
                 }
             } else if (skillModifier.modifierType == "scale") {

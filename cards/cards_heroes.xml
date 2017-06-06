@@ -302,8 +302,8 @@
     <desc>An ancient being of living stone, Groc wanders the wilderness in search of wisdom. You don't want to be between him and a hard place.</desc>
     <attack>0</attack>
     <health>25</health>
-    <skill id="protect" x="1" />
     <skill id="rally" x="1" />
+    <skill id="protect" x="1" />
     <rarity>4</rarity>
     <type>3</type>
     <set>7000</set>
@@ -318,22 +318,22 @@
     <upgrade>
       <level>4</level>
       <health>41</health>
-      <skill id="protect" x="2" />
       <skill id="rally" x="1" />
+      <skill id="protect" x="2" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>46</health>
       <skill id="enhance" s="evade" all="1" x="1" />
-      <skill id="protect" x="2" />
       <skill id="rally" x="1" />
+      <skill id="protect" x="2" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>53</health>
       <skill id="enhance" s="evade" all="1" x="1" />
-      <skill id="protect" x="2" />
       <skill id="rally" x="1" all="1" />
+      <skill id="protect" x="2" />
     </upgrade>
   </unit>
   <unit>
@@ -8188,44 +8188,44 @@
     <attack>0</attack>
     <health>60</health>
     <rarity>4</rarity>
-    <skill id="imbue" x="1" s="evade" />
-    <skill id="protect" x="1" all="1" />
+    <skill id="imbue" x="5" s="poison" />
+    <skill id="protect" x="5" all="1" />
     <skill id="jam" c="6" />
     <type>8</type>
     <set>9999</set>
     <upgrade>
       <level>2</level>
       <health>67</health>
-      <skill id="imbue" x="1" s="evade" />
-      <skill id="protect" x="1" all="1" />
+      <skill id="imbue" x="5" s="poison" />
+      <skill id="protect" x="5" all="1" />
       <skill id="jam" c="5" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>75</health>
-      <skill id="imbue" x="1" s="evade" />
-      <skill id="protect" x="2" all="1" />
+      <skill id="imbue" x="5" s="poison" />
+      <skill id="protect" x="6" all="1" />
       <skill id="jam" c="5" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>83</health>
-      <skill id="imbue" x="1" s="evade" />
-      <skill id="protect" x="2" all="1" />
+      <skill id="imbue" x="5" s="poison" />
+      <skill id="protect" x="7" all="1" />
       <skill id="jam" c="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>91</health>
-      <skill id="imbue" x="2" s="evade" />
-      <skill id="protect" x="3" all="1" />
+      <skill id="imbue" x="6" s="poison" />
+      <skill id="protect" x="8" all="1" />
       <skill id="jam" c="4" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>99</health>
-      <skill id="imbue" x="3" s="evade" />
-      <skill id="protect" x="4" all="1" />
+      <skill id="imbue" x="7" s="poison" />
+      <skill id="protect" x="10" all="1" />
       <skill id="jam" c="4" />
     </upgrade>
   </unit>

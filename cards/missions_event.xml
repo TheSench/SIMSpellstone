@@ -18188,12 +18188,12 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>dyrnwynSpirit</commander>
         <enemy>0</enemy>
         <text>Wake up... Wake up!</text>
       </line>
       <line>
-        <commander>necromancer</commander>
+        <commander>dyrnwynSpirit</commander>
         <enemy>0</enemy>
         <text>You cannot stay here forever. You know this, don't you?</text>
       </line>
@@ -18248,7 +18248,7 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>dyrnwynSpirit</commander>
         <enemy>0</enemy>
         <text>You made a promise to stand against The Void. Now go and gather your friends. They have need of you.</text>
       </line>
@@ -18535,12 +18535,12 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>dyrnwynSpirit</commander>
         <enemy>0</enemy>
         <text>You've done everything in your power to make it this far.</text>
       </line>
       <line>
-        <commander>necromancer</commander>
+        <commander>dyrnwynSpirit</commander>
         <enemy>0</enemy>
         <text>This is the spirit world. And thus, it takes a spirit's power to grant you an exit.</text>
       </line>
@@ -18571,7 +18571,7 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>dyrnwynSpirit</commander>
         <enemy>0</enemy>
         <text>It's time for you to return. Finish your fight against Bluefire!</text>
       </line>
@@ -18948,13 +18948,13 @@
       <card id="8005" name="Atlas' Shaman" />
       <card id="8008" name="Solaron's Sentinel" />
       <card id="8008" name="Solaron's Sentinel" />
-      <card id="8063" name="Bluefire's Memory" />
-      <card id="8063" name="Bluefire's Memory" />
-      <card id="8065" name="Bluefire's Harmony" />
-      <card id="8065" name="Bluefire's Harmony" />
-      <card id="8062" name="Abyss Curse" />
-      <card id="8045" name="Summoned Abomination" />
-      <card id="8045" name="Summoned Abomination" />
+      <card id="7121" name="Varachnis" />
+      <card id="8068" name="Void Champion" />
+      <card id="8068" name="Void Champion" />
+      <card id="8069" name="Void-Touched" />
+      <card id="8069" name="Void-Touched" />
+      <card id="8070" name="Scylla's Fool" />
+      <card id="8070" name="Scylla's Fool" />
     </deck>
   </mission>
   <mission>
@@ -18972,13 +18972,13 @@
       <card id="8005" name="Atlas' Shaman" />
       <card id="8008" name="Solaron's Sentinel" />
       <card id="8008" name="Solaron's Sentinel" />
-      <card id="8063" name="Bluefire's Memory" />
-      <card id="8063" name="Bluefire's Memory" />
-      <card id="8065" name="Bluefire's Harmony" />
-      <card id="8065" name="Bluefire's Harmony" />
-      <card id="8062" name="Abyss Curse" />
-      <card id="8045" name="Summoned Abomination" />
-      <card id="8045" name="Summoned Abomination" />
+      <card id="7121" name="Varachnis" />
+      <card id="8068" name="Void Champion" />
+      <card id="8068" name="Void Champion" />
+      <card id="8069" name="Void-Touched" />
+      <card id="8069" name="Void-Touched" />
+      <card id="8070" name="Scylla's Fool" />
+      <card id="8070" name="Scylla's Fool" />
     </deck>
   </mission>
   <mission>
@@ -18996,13 +18996,13 @@
       <card id="8005" name="Atlas' Shaman" />
       <card id="8008" name="Solaron's Sentinel" />
       <card id="8008" name="Solaron's Sentinel" />
-      <card id="8063" name="Bluefire's Memory" />
-      <card id="8063" name="Bluefire's Memory" />
-      <card id="8065" name="Bluefire's Harmony" />
-      <card id="8065" name="Bluefire's Harmony" />
-      <card id="8062" name="Abyss Curse" />
-      <card id="8045" name="Summoned Abomination" />
-      <card id="8045" name="Summoned Abomination" />
+      <card id="7121" name="Varachnis" />
+      <card id="8068" name="Void Champion" />
+      <card id="8068" name="Void Champion" />
+      <card id="8069" name="Void-Touched" />
+      <card id="8069" name="Void-Touched" />
+      <card id="8070" name="Scylla's Fool" />
+      <card id="8070" name="Scylla's Fool" />
     </deck>
   </mission>
   <mission>
@@ -19020,13 +19020,13 @@
       <card id="8005" name="Atlas' Shaman" />
       <card id="8008" name="Solaron's Sentinel" />
       <card id="8008" name="Solaron's Sentinel" />
-      <card id="8063" name="Bluefire's Memory" />
-      <card id="8063" name="Bluefire's Memory" />
-      <card id="8065" name="Bluefire's Harmony" />
-      <card id="8065" name="Bluefire's Harmony" />
-      <card id="8062" name="Abyss Curse" />
-      <card id="8045" name="Summoned Abomination" />
-      <card id="8045" name="Summoned Abomination" />
+      <card id="7121" name="Varachnis" />
+      <card id="8068" name="Void Champion" />
+      <card id="8068" name="Void Champion" />
+      <card id="8069" name="Void-Touched" />
+      <card id="8069" name="Void-Touched" />
+      <card id="8070" name="Scylla's Fool" />
+      <card id="8070" name="Scylla's Fool" />
     </deck>
   </mission>
 </root>

@@ -113,14 +113,14 @@
   <battleground>
     <id>107</id>
     <name>Elemental Surge</name>
-    <desc>Seismic shifts have given Elementals incredible power! Elementals have their Attack increased by 50% of their base, rounded up!</desc>
+    <desc>Seismic shifts have given Elementals incredible power! Elementals have their Attack increased by 75% of their base, rounded up!</desc>
     <web_picture>filter_elementals_64.png</web_picture>
     <icon>filter_elementals_64</icon>
     <effect>
       <card_type>99</card_type>
-      <skill id="rally" mult=".5" all="1" y="5" />
+      <skill id="enlarge" mult=".75" all="1" y="5" />
       <!-- mult is based on attack -->
-      <skill id="displayEffect" trigger="onSkill" y="99" s="rally">
+      <skill id="displayEffect" trigger="onSkill" y="99" s="enlarge">
         <target_effect>
           <prefab>Empower_Target_Elemental</prefab>
           <delay>.5</delay>
@@ -307,6 +307,29 @@
           <delay>0</delay>
           <duration>3</duration>
           <!-- <shake>true</shake> -->
+        </target_effect>
+      </skill>
+    </effect>
+  </battleground>
+  <battleground>
+    <id>116</id>
+    <name>Elemental Surge</name>
+    <desc>Seismic shifts have given Elementals incredible power! Elementals have their Attack increased by 75% of their base, rounded up!</desc>
+    <web_picture>filter_elementals_64.png</web_picture>
+    <icon>filter_elementals_64</icon>
+    <effect>
+      <card_type>99</card_type>
+      <!-- <on_play>
+	            <skill id='enlarge' mult='1' y='5' />
+	        </on_play> -->
+      <add_skill id="enlarge" mult="0.75" base="attack" y="5" />
+      <!-- <skill id='displayEffect' trigger='onSkill' y='99' s='enlarge' > -->
+      <skill id="displayEffect" trigger="onSkill" s="enlarge">
+        <target_effect>
+          <prefab>Empower_Target_Elemental</prefab>
+          <delay>.5</delay>
+          <duration>1</duration>
+          <shake>true</shake>
         </target_effect>
       </skill>
     </effect>
@@ -836,7 +859,8 @@
     <max_level>7</max_level>
     <!-- Max Mastery Level -->
     <effect>
-      <scale_attributes base_mult=".01" mult=".025" />
+      <scale_attributes base_mult=".13" mult=".0025" />
+      <!-- <scale_attributes base_mult='.01' mult='.025' /> -->
     </effect>
   </battleground>
   <battleground>
