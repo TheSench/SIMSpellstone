@@ -2435,6 +2435,29 @@ var SIMULATOR = {};
                 if (debug) echo += debug_name(current_assault) + ' inflicts scorch(' + scorch + ') on ' + debug_name(target) + '<br>';
             }
         }
+        if (current_assault.isAlive() && current_assault.scorchbreath) {
+            var scorch = current_assault.scorchbreath;
+            var enhanced = getEnhancement(current_assault, 'scorchbreath');
+            if (enhanced) {
+                if (enhanced < 0) {
+                    enhanced = Math.ceil(scorch * -enhanced);
+                }
+                scorch += enhanced;
+            }
+            for (var i = -1; i < 2; i++) {
+                var key = current_assault.key + i;
+                var target = field_o_assaults[key];
+                if (target && target.isAlive()) {
+                    if (!target['scorched']) {
+                        target['scorched'] = { 'amount': scorch, 'timer': 2 };
+                    } else {
+                        target['scorched']['amount'] += scorch;
+                        target['scorched']['timer'] = 2;
+                    }
+                    if (debug) echo += debug_name(current_assault) + ' breathes scorchbreath(' + scorch + ') on ' + debug_name(target) + '<br>';
+                }
+            }
+        }
         
         if (!current_assault.isAlive()) {
             doOnDeathSkills(current_assault, target);

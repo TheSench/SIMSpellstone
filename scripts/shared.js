@@ -235,6 +235,7 @@ function cloneCard(original) {
     copy.nullify = original.nullify;
     copy.pierce = original.pierce;
     copy.poison = original.poison;
+    copy.scorchbreath = original.scorchbreath;
     copy.silence = original.silence;
     copy.taunt = original.taunt;
     copy.valor = original.valor;
@@ -359,6 +360,7 @@ var makeUnit = (function () {
         nullify: 0,
         pierce: 0,
         poison: 0,
+        scorchbreath: 0,
         silence: false,
         taunt: false,
         unearth: null,
@@ -605,6 +607,7 @@ var makeUnit = (function () {
                 case 'nullify':
                 case 'pierce':
                 case 'poison':
+                case 'scorchbreath':
                 case 'valor':
                     this[skillID] += parseInt(skill.x);
                     this.imbued[skillID] = (this.imbued[skillID] ||0) + skill.x;
@@ -690,6 +693,7 @@ var makeUnit = (function () {
                 case 'nullify':
                 case 'pierce':
                 case 'poison':
+                case 'scorchbreath':
                 case 'silence':
                 case 'taunt':
                 case 'valor':
@@ -858,6 +862,7 @@ var isImbued = function (card, skillID, i) {
         case 'nullify':
         case 'pierce':
         case 'poison':
+        case 'scorchbreath':
         case 'valor':
             return (card[skillID] === card.imbued[skillID])
 
@@ -1291,6 +1296,7 @@ function setSkill_2(new_card, skill) {
         case 'nullify':
         case 'pierce':
         case 'poison':
+        case 'scorchbreath':
         case 'valor':
             new_card[skill.id] = (new_card[skill.id] | 0) + skill.x;
             break;
@@ -1646,6 +1652,7 @@ function debug_triggered_skills(card, skillText) {
     debugNonActivatedSkill(card, "poison", skillText);
     debugNonActivatedSkill(card, "leech", skillText);
     debugNonActivatedSkill(card, "berserk", skillText);
+    debugNonActivatedSkill(card, "scorchbreath", skillText);
     debugNonActivatedSkill(card, "silence", skillText);
     debugNonActivatedSkill(card, "nullify", skillText);
 }
