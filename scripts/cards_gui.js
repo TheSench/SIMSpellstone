@@ -497,6 +497,9 @@ var CARD_GUI = {};
             case 'enfeeble':
                 iconName = 'Hex.png';
                 break;
+            case 'enlarge':
+                iconName = 'Empower.png';
+                break;
             case 'evade':
                 iconName = 'Invisibility.png';
                 break;
@@ -538,6 +541,7 @@ var CARD_GUI = {};
         var icon = createImg(src);
         switch (skillName) {
             case 'weakenself':
+            case 'enlarge':
                 icon.style = "transform: rotateY(180deg);";
                 break;
             default:

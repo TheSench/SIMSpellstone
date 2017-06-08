@@ -285,35 +285,29 @@ var makeUnit = (function () {
                     if (new_card.isInFaction(addedSkill.y)) {
                         if (addedSkill.rarity && new_card.rarity != addedSkill.rarity) continue;
 
-                        if (addedSkill.id === "enlarge") {
-                            var mult = addedSkill.mult;
-                            var base = addedSkill.base;
-                            new_card[base] += Math.ceil(new_card[base] * mult);
-                        } else {
-                            var new_skill = {};
-                            new_skill.id = addedSkill.id;
-                            if (addedSkill.mult) {
-                                if (addedSkill.base) {
-                                    var base = new_card[addedSkill.base];
-                                    if (addedSkill.base == "rarity") base--;
-                                    new_skill.x = Math.ceil(addedSkill.mult * base);
-                                } else {
-                                    new_skill.mult = addedSkill.mult;
-                                }
+                        var new_skill = {};
+                        new_skill.id = addedSkill.id;
+                        if (addedSkill.mult) {
+                            if (addedSkill.base) {
+                                var base = new_card[addedSkill.base];
+                                if (addedSkill.base == "rarity") base--;
+                                new_skill.x = Math.ceil(addedSkill.mult * base);
                             } else {
-                                new_skill.x = addedSkill.x;
+                                new_skill.mult = addedSkill.mult;
                             }
-                            new_skill.z = addedSkill.z;
-                            new_skill.c = addedSkill.c;
-                            new_skill.s = addedSkill.s;
-                            new_skill.all = addedSkill.all;
-                            if (addedSkill.card) new_skill.card = addedSkill.card;
-                            if (addedSkill.level) new_skill.level = addedSkill.level;
-                            new_skill.boosted = true;
-                            if (addedSkill.mult && addedSkill.base && new_skill.x == 0) continue;
-                            original_skills.push(new_skill);
-                            new_card.highlighted.push(new_skill.id);
+                        } else {
+                            new_skill.x = addedSkill.x;
                         }
+                        new_skill.z = addedSkill.z;
+                        new_skill.c = addedSkill.c;
+                        new_skill.s = addedSkill.s;
+                        new_skill.all = addedSkill.all;
+                        if (addedSkill.card) new_skill.card = addedSkill.card;
+                        if (addedSkill.level) new_skill.level = addedSkill.level;
+                        new_skill.boosted = true;
+                        if (addedSkill.mult && addedSkill.base && new_skill.x == 0) continue;
+                        original_skills.push(new_skill);
+                        new_card.highlighted.push(new_skill.id);
                     }
                 }
             } else if (skillModifier.modifierType == "scale") {
@@ -627,6 +621,7 @@ var makeUnit = (function () {
                 // Early Activation skills
                 case 'barrage':
                 case 'enhance':
+                case 'enlarge':
                 case 'fervor':
                 case 'imbue':
                 case 'legion':
@@ -708,6 +703,7 @@ var makeUnit = (function () {
                 // Early Activation skills
                 case 'barrage':
                 case 'enhance':
+                case 'enlarge':
                 case 'fervor':
                 case 'imbue':
                 case 'legion':
@@ -874,6 +870,7 @@ var isImbued = function (card, skillID, i) {
         // Early Activation skills
         case 'barrage':
         case 'enhance':
+        case 'enlarge':
         case 'fervor':
         case 'imbue':
         case 'legion':
@@ -1312,6 +1309,7 @@ function setSkill_2(new_card, skill) {
         // Early Activation Skills
         case 'barrage':
         case 'enhance':
+        case 'enlarge':
         case 'fervor':
         case 'imbue':
         case 'legion':

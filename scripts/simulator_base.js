@@ -793,6 +793,34 @@ var SIMULATOR = {};
         // - Can target specific faction
         // - Targets allied unjammed, active assaults
         // - Can be enhanced
+        enlarge: function (src_card, skill) {
+
+            var rally = skill['x'];
+            var enhanced = getEnhancement(src_card, skill.id);
+            if (enhanced) {
+                if (enhanced < 0) {
+                    enhanced = Math.ceil(rally * -enhanced);
+                }
+                rally += enhanced;
+            }
+
+            var target = src_card;
+
+            var rally_amt = rally;
+            if (!rally_amt) {
+                var mult = skill.mult;
+                rally_amt = Math.ceil(target.attack * mult);
+            }
+
+            target.attack_rally += rally_amt;
+            if (debug) {
+                if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
+                echo += debug_name(src_card) + ' is enlarged by ' + rally_amt + '<br>';
+            }
+
+            return 1;
+        },
+
         rally: function (src_card, skill) {
 
             var faction = skill['y'];
