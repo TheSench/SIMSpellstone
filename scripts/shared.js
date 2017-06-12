@@ -1668,6 +1668,8 @@ function convertName(oldName) {
             return "scorch";
         case "counter":
             return "vengeance";
+        case "counterburn":
+            return "emberhide";
         case "enfeeble":
             return "hex";
         case "evade":

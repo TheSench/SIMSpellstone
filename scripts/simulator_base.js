@@ -790,9 +790,9 @@ var SIMULATOR = {};
 
     var earlyActivationSkills = {
         // Rally
-        // - Can target specific faction
-        // - Targets allied unjammed, active assaults
+        // - Targets self
         // - Can be enhanced
+        // - Cannot be nullified
         enlarge: function (src_card, skill) {
 
             var rally = skill['x'];
@@ -821,6 +821,10 @@ var SIMULATOR = {};
             return 1;
         },
 
+        // Rally
+        // - Can target specific faction
+        // - Targets allied unjammed, active assaults
+        // - Can be enhanced
         rally: function (src_card, skill) {
 
             var faction = skill['y'];

@@ -108,7 +108,7 @@
   <feature_lock>
     <id>mythichall</id>
     <mission_req>-1</mission_req>
-    <!-- 11 -->
+    <!-- 244 -->
   </feature_lock>
   <!-- COMBAT OPTIONS -->
   <feature_lock>
@@ -1890,7 +1890,7 @@
     <name>Lord of the Undead</name>
     <energy>4</energy>
     <commander id="207" />
-    <desc>You have come face to face with Tarian, leader of the Chaos mages. Before he can ask him what he knows of the Heart of Blue Fire, a figure attacks from the shadows.</desc>
+    <desc>You have come face to face with Tarian, leader of the Chaos mages. Before you can ask him what he knows about the Heart of Blue Fire, a figure attacks from the shadows.</desc>
     <speech>
       <line>
         <commander>necromancer</commander>

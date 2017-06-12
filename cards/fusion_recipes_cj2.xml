@@ -2503,6 +2503,14 @@
     <resource card_id="15132" number="2" />
   </fusion_recipe>
   <fusion_recipe>
+    <card_id>15133</card_id>
+    <resource card_id="5133" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25133</card_id>
+    <resource card_id="15133" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
     <card_id>15137</card_id>
     <resource card_id="5137" number="2" />
   </fusion_recipe>
@@ -4631,6 +4639,22 @@
   <fusion_recipe>
     <card_id>27132</card_id>
     <resource card_id="17132" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17133</card_id>
+    <resource card_id="7133" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27133</card_id>
+    <resource card_id="17133" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17135</card_id>
+    <resource card_id="7135" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27135</card_id>
+    <resource card_id="17135" number="2" />
   </fusion_recipe>
   <!-- END SET 3000 - Premium -->
   <!-- START SET 8000 - Story Element Assaults -->

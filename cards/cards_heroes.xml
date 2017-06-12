@@ -8189,7 +8189,7 @@
     <health>60</health>
     <rarity>4</rarity>
     <skill id="imbue" x="5" s="poison" />
-    <skill id="protect" x="5" all="1" />
+    <skill id="protect" x="7" all="1" />
     <skill id="jam" c="6" />
     <type>8</type>
     <set>9999</set>
@@ -8197,28 +8197,28 @@
       <level>2</level>
       <health>67</health>
       <skill id="imbue" x="5" s="poison" />
-      <skill id="protect" x="5" all="1" />
+      <skill id="protect" x="8" all="1" />
       <skill id="jam" c="5" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>75</health>
       <skill id="imbue" x="5" s="poison" />
-      <skill id="protect" x="6" all="1" />
+      <skill id="protect" x="8" all="1" />
       <skill id="jam" c="5" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>83</health>
       <skill id="imbue" x="5" s="poison" />
-      <skill id="protect" x="7" all="1" />
+      <skill id="protect" x="9" all="1" />
       <skill id="jam" c="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>91</health>
       <skill id="imbue" x="6" s="poison" />
-      <skill id="protect" x="8" all="1" />
+      <skill id="protect" x="10" all="1" />
       <skill id="jam" c="4" />
     </upgrade>
     <upgrade>
