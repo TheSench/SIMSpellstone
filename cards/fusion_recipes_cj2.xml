@@ -668,22 +668,6 @@
     <card_id>21632</card_id>
     <resource card_id="11632" number="2" />
   </fusion_recipe>
-  <fusion_recipe>
-    <card_id>16133</card_id>
-    <resource card_id="6133" number="2" />
-  </fusion_recipe>
-  <fusion_recipe>
-    <card_id>26133</card_id>
-    <resource card_id="16133" number="2" />
-  </fusion_recipe>
-  <fusion_recipe>
-    <card_id>16134</card_id>
-    <resource card_id="6134" number="2" />
-  </fusion_recipe>
-  <fusion_recipe>
-    <card_id>26134</card_id>
-    <resource card_id="16134" number="2" />
-  </fusion_recipe>
   <!-- WYLD BASE SET LEGENDARIES BEGIN -->
   <fusion_recipe>
     <card_id>11640</card_id>
@@ -3574,6 +3558,30 @@
   <fusion_recipe>
     <card_id>26132</card_id>
     <resource card_id="16132" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16133</card_id>
+    <resource card_id="6133" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26133</card_id>
+    <resource card_id="16133" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16134</card_id>
+    <resource card_id="6134" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26134</card_id>
+    <resource card_id="16134" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16137</card_id>
+    <resource card_id="6137" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26137</card_id>
+    <resource card_id="16137" number="2" />
   </fusion_recipe>
   <!-- WYLD PREMIUM SET BEGIN -->
   <fusion_recipe>

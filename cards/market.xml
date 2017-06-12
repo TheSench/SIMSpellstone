@@ -1008,11 +1008,11 @@
     <id>94</id>
     <name>Embersoul Pouch</name>
     <category>2</category>
-    <desc>Contains between 10 and 25 Embersouls!</desc>
+    <desc>Contains between 10 and 25 Embersouls! Used to create the Mythic card ^cF90FNarix, Dragonlord^cFFFF!</desc>
     <priority>45</priority>
     <hc_cost>90</hc_cost>
-    <asset_prefab>embersoul_package_1</asset_prefab>
-    <bundle>30</bundle>
+    <asset_prefab>embersoulBag</asset_prefab>
+    <bundle>35</bundle>
     <card_restriction>2039</card_restriction>
     <!-- Remove from store if player has this card -->
     <item_pack>
@@ -1039,7 +1039,7 @@
     <id>95</id>
     <name>Brinesoul Pouch</name>
     <category>2</category>
-    <desc>Contains between 10 and 25 Brinesouls!</desc>
+    <desc>Contains between 10 and 25 Brinesouls! Used to create the Mythic card ^cF90FScylla, Sea's Torment^cFFFF!</desc>
     <priority>46</priority>
     <hc_cost>90</hc_cost>
     <asset_prefab>brinesoul_bag</asset_prefab>
@@ -1064,6 +1064,37 @@
       <item id="2522" quantity="23" weight=".2" />
       <item id="2522" quantity="24" weight=".1" />
       <item id="2522" quantity="25" weight=".1" />
+    </item_pack>
+  </store_item>
+  <store_item>
+    <id>96</id>
+    <name>Windsoul Pouch</name>
+    <category>2</category>
+    <desc>Contains between 60 and 150 Windsouls! Used to create the Mythic card ^cF90FVerus, the Galeheart^cFFFF!</desc>
+    <priority>47</priority>
+    <hc_cost>90</hc_cost>
+    <asset_prefab>windsoul_bag</asset_prefab>
+    <bundle>35</bundle>
+    <card_restriction>2094</card_restriction>
+    <!-- Remove from store if player has this card -->
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="2524" quantity="60" weight=".25" />
+      <item id="2524" quantity="66" weight=".5" />
+      <item id="2524" quantity="72" weight=".75" />
+      <item id="2524" quantity="78" weight=".75" />
+      <item id="2524" quantity="84" weight=".8" />
+      <item id="2524" quantity="90" weight="1" />
+      <item id="2524" quantity="96" weight="1" />
+      <item id="2524" quantity="102" weight=".8" />
+      <item id="2524" quantity="108" weight=".7" />
+      <item id="2524" quantity="114" weight=".7" />
+      <item id="2524" quantity="120" weight=".4" />
+      <item id="2524" quantity="126" weight=".4" />
+      <item id="2524" quantity="132" weight=".2" />
+      <item id="2524" quantity="138" weight=".2" />
+      <item id="2524" quantity="144" weight=".1" />
+      <item id="2524" quantity="150" weight=".1" />
     </item_pack>
   </store_item>
   <!-- =============================== -->
@@ -1279,22 +1310,22 @@
     <name>x10 Elemental Epic Pack</name>
     <category>0</category>
     <hidden>1</hidden>
-    <desc>Gives ten Epic+ Elemental cards or higher from Standard or Premium set.</desc>
+    <desc>Gives ten ^c0DFFEpic^cFFFF+ Elemental cards from Premium set.</desc>
     <priority>1</priority>
     <asset_prefab>epic_pack</asset_prefab>
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="5" set="3000,4000" />
     </cards>
   </store_item>
   <store_item>
@@ -3560,5 +3591,23 @@
     <cards>
       <card min_level="1" max_level="1" unit_id="6095" display_card_id="6095" />
     </cards>
+  </store_item>
+  <store_item>
+    <id>5070</id>
+    <name>x10 Elemental Mega Bundle!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>510</priority>
+    <show_desc>1</show_desc>
+    <desc>Gives ^cF00FTEN ^cFFFFrandom ^c0DFFEpic^cFFFF+ Elemental cards from Premium set! May be purchased 3 times!</desc>
+    <asset_prefab>event_009_elemental_chest</asset_prefab>
+    <background_prefab>event_009_banner_elementalBox</background_prefab>
+    <bundle>49</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>400</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3013</pack>
   </store_item>
 </root>
