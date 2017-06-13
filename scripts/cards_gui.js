@@ -547,6 +547,7 @@ var CARD_GUI = {};
             default:
                 break;
         }
+        icon.title = convertName(skillName);
         return icon;
     }
 
@@ -596,6 +597,10 @@ var CARD_GUI = {};
             buffs.push(status);
         }
         */
+        if (card.enraged) {
+            var status = createStatus("enrage", card.enraged);
+            debuffs.push(status);
+        }
         if (card.protected) {
             var status = createStatus("protect", card.protected);
             buffs.push(status);
