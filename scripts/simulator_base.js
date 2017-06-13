@@ -316,68 +316,6 @@ var SIMULATOR = {};
             return affected;
         },
 
-        // Enrage
-        // - Can target specific faction
-        // - Targets allied assaults
-        // - Can be enhanced
-        enrage: function (src_card, skill) {
-
-            var p = get_p(src_card);
-
-            var faction = skill.y;
-            var enrage = skill.x;
-            var all = skill.all;
-
-            var field_p_assaults = field[p]['assaults'];
-
-            var targets = [];
-            for (var key = 0, len = field_p_assaults.length; key < len; key++) {
-                var target = field_p_assaults[key];
-                if (target.isAlive()
-                && target.isInFaction(faction)) {
-                    targets.push(key);
-                }
-            }
-
-            // No Targets
-            if (!targets.length) return 0;
-
-            // Check All
-            if (!all) {
-                targets = choose_random_target(targets);
-            }
-            var enhanced = getEnhancement(src_card, skill.id);
-            if (enhanced) {
-                if (enhanced < 0) {
-                    enhanced = Math.ceil(enrage * -enhanced);
-                }
-                enrage += enhanced;
-            }
-
-            var affected = 0;
-
-            for (var key = 0, len = targets.length; key < len; key++) {
-                var target = field_p_assaults[targets[key]];
-
-                // Check Nullify
-                if (target.nullified) {
-                    target.nullified--;
-                    if (debug) echo += debug_name(src_card) + ' enrages ' + debug_name(target) + ' but it is nullified!<br>';
-                    continue;
-                }
-
-                affected++;
-
-                target['enraged'] += enrage;
-                if (debug) {
-                    if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
-                    echo += debug_name(src_card) + ' enrages ' + debug_name(target) + ' by ' + enrage + '<br>';
-                }
-            }
-
-            return affected;
-        },
-
         // Heal
         // - Can target specific faction
         // - Targets allied damaged assaults
@@ -1336,6 +1274,68 @@ var SIMULATOR = {};
                     // temporarily use negatives for multiplier
                     enhancements[s] = -mult;
                     if (debug) echo += debug_name(src_card) + ' enhances ' + s + ' of ' + debug_name(target, false) + ' by ' + (mult * 100) + '%<br>';
+                }
+            }
+
+            return affected;
+        },
+
+        // Enrage
+        // - Can target specific faction
+        // - Targets allied assaults
+        // - Can be enhanced
+        enrage: function (src_card, skill) {
+
+            var p = get_p(src_card);
+
+            var faction = skill.y;
+            var enrage = skill.x;
+            var all = skill.all;
+
+            var field_p_assaults = field[p]['assaults'];
+
+            var targets = [];
+            for (var key = 0, len = field_p_assaults.length; key < len; key++) {
+                var target = field_p_assaults[key];
+                if (target.isAlive()
+                && target.isInFaction(faction)) {
+                    targets.push(key);
+                }
+            }
+
+            // No Targets
+            if (!targets.length) return 0;
+
+            // Check All
+            if (!all) {
+                targets = choose_random_target(targets);
+            }
+            var enhanced = getEnhancement(src_card, skill.id);
+            if (enhanced) {
+                if (enhanced < 0) {
+                    enhanced = Math.ceil(enrage * -enhanced);
+                }
+                enrage += enhanced;
+            }
+
+            var affected = 0;
+
+            for (var key = 0, len = targets.length; key < len; key++) {
+                var target = field_p_assaults[targets[key]];
+
+                // Check Nullify
+                if (target.nullified) {
+                    target.nullified--;
+                    if (debug) echo += debug_name(src_card) + ' enrages ' + debug_name(target) + ' but it is nullified!<br>';
+                    continue;
+                }
+
+                affected++;
+
+                target['enraged'] += enrage;
+                if (debug) {
+                    if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
+                    echo += debug_name(src_card) + ' enrages ' + debug_name(target) + ' by ' + enrage + '<br>';
                 }
             }
 

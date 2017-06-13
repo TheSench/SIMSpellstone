@@ -626,6 +626,7 @@ var makeUnit = (function () {
                 case 'barrage':
                 case 'enhance':
                 case 'enlarge':
+                case 'enrage':
                 case 'fervor':
                 case 'imbue':
                 case 'legion':
@@ -639,6 +640,8 @@ var makeUnit = (function () {
                 case "evadebarrier":
                 case 'frost':
                 case 'heal':
+                case 'intensify':
+                case 'ignite':
                 case 'jam':
                 case 'protect':
                 case 'protect_ice':
@@ -721,6 +724,7 @@ var makeUnit = (function () {
                 case 'barrage':
                 case 'enhance':
                 case 'enlarge':
+                case 'enrage':
                 case 'fervor':
                 case 'imbue':
                 case 'legion':
@@ -734,6 +738,8 @@ var makeUnit = (function () {
                 case "evadebarrier":
                 case 'frost':
                 case 'heal':
+                case 'intensify':
+                case 'ignite':
                 case 'jam':
                 case 'protect':
                 case 'protect_ice':
@@ -888,6 +894,7 @@ var isImbued = function (card, skillID, i) {
         case 'barrage':
         case 'enhance':
         case 'enlarge':
+        case 'enrage':
         case 'fervor':
         case 'imbue':
         case 'legion':
@@ -901,6 +908,8 @@ var isImbued = function (card, skillID, i) {
         case "evadebarrier":
         case 'frost':
         case 'heal':
+        case 'intensify':
+        case 'ignite':
         case 'jam':
         case 'protect':
         case 'protect_ice':
@@ -1327,6 +1336,7 @@ function setSkill_2(new_card, skill) {
         case 'barrage':
         case 'enhance':
         case 'enlarge':
+        case 'enrage':
         case 'fervor':
         case 'imbue':
         case 'legion':
@@ -1340,6 +1350,8 @@ function setSkill_2(new_card, skill) {
         case "evadebarrier":
         case 'frost':
         case 'heal':
+        case 'intensify':
+        case 'ignite':
         case 'jam':
         case 'protect':
         case 'protect_ice':
