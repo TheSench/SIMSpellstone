@@ -2531,7 +2531,7 @@ var SIMULATOR = {};
                     }
                 }
 
-                doCounterDamage(current_assault, 'Vengance', counterBase, counterEnhancement);
+                doCounterDamage(current_assault, target, 'Vengance', counterBase, counterEnhancement);
             }
 
             // Counterburn
@@ -2573,7 +2573,7 @@ var SIMULATOR = {};
                     }
                 }
 
-                doCounterDamage(current_assault, 'Fury', furyBase, furyEnhancement);
+                doCounterDamage(current_assault, target, 'Fury', furyBase, furyEnhancement);
             }
 
             // Berserk
@@ -2670,7 +2670,7 @@ var SIMULATOR = {};
         // -- END OF STATUS INFLICTION --
     };
 
-    function doCounterDamage(attacker, counterType, counterBase, counterEnhancement) {
+    function doCounterDamage(attacker, defender, counterType, counterBase, counterEnhancement) {
 
         var counterDamage = counterBase + counterEnhancement;
 
@@ -2696,7 +2696,7 @@ var SIMULATOR = {};
             echo += (!attacker.isAlive() ? ' and it dies' : '') + '<br>';
         }
 
-        do_damage(target, attacker, counterDamage);
+        do_damage(defender, attacker, counterDamage);
     }
 
     function calculatePoints(forceWin) {
