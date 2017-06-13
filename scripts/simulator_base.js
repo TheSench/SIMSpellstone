@@ -605,7 +605,7 @@ var SIMULATOR = {};
                 var target = field_x_assaults[targets[key]];
 
                 var intensifiedFields = (target.scorched ? "scorch" : "");
-                intensifiedFields += target.poisoned ? (intensifiedFields ? " and poison" : "poison")  : "");
+                intensifiedFields += (target.poisoned ? (intensifiedFields ? " and poison" : "poison")  : "");
 
                 // Check Evade
                 if (target.invisible) {
