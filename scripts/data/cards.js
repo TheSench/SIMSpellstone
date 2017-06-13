@@ -1210,13 +1210,13 @@ var CARDS = {
             "s": "berserk",
           },
           {
-            "id": "intensify",
+            "id": "enfeeble",
             "x": 2,
           },
           {
             "id": "weaken",
             "x": 1,
-            "all": "1",AIOBAAuYYG
+            "all": "1",
           },
         ],
       },
@@ -160256,4 +160256,4 @@ var CARDS = {
     "upgrades": {}
   },
 };
-var CardsUpdated = 1597357274006.38;
+var CardsUpdated = 1497357274006.38;
