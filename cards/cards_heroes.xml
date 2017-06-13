@@ -692,7 +692,7 @@
     <desc>After countless years of dedicated laziness and a sloth-like attitude, Ursurio has gotten the promotion he barely wanted. If only it came with free sides.</desc>
     <attack>0</attack>
     <health>45</health>
-    <skill id="enhance" s="pierce" x="1" />
+    <skill id="imbue" s="pierce" x="1" />
     <skill id="rally" y="3" x="2" />
     <skill id="heal" x="1" />
     <rarity>4</rarity>
@@ -704,7 +704,7 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="enhance" s="pierce" x="2" />
+      <skill id="imbue" s="pierce" x="2" />
       <skill id="rally" y="3" x="2" />
       <skill id="heal" x="1" />
     </upgrade>
@@ -715,14 +715,14 @@
     <upgrade>
       <level>5</level>
       <health>54</health>
-      <skill id="enhance" s="pierce" x="3" />
+      <skill id="imbue" s="pierce" x="3" />
       <skill id="rally" y="3" x="2" />
       <skill id="heal" x="2" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>57</health>
-      <skill id="enhance" s="pierce" x="3" />
+      <skill id="imbue" s="pierce" x="3" />
       <skill id="rally" y="3" x="3" />
       <skill id="heal" x="3" />
     </upgrade>

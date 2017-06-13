@@ -168,6 +168,7 @@ function initializeCard(card, p, newKey) {
     card.scorched = 0;
     card.corroded = 0;
     card.enfeebled = 0;
+    card.enraged = 0;
     card.protected = 0;
     card.barrier_ice = 0;
     card.enhanced = 0;
@@ -375,6 +376,7 @@ var makeUnit = (function () {
         scorched: 0,
         corroded: 0,
         enfeebled: 0,
+        enraged: 0,
         protected: 0,
         enhanced: 0,
         imbued: 0,
@@ -401,6 +403,7 @@ var makeUnit = (function () {
                 this.scorched = 0;
                 this.corroded = 0;
                 this.enfeebled = 0;
+                this.enraged = 0;
                 this.protected = 0;
                 this.barrier_ice = 0;
                 this.enhanced = 0;
@@ -440,6 +443,7 @@ var makeUnit = (function () {
             }
 
             this.enfeebled = 0;
+            this.enraged = 0;
             this.protected = 0;
             this.barrier_ice = 0;
             this.enhanced = 0;
@@ -457,17 +461,16 @@ var makeUnit = (function () {
 
             var poison = this.poisoned;
             if (poison) {
-                do_damage(this, poison);
                 if (debug) {
                     echo += debug_name(this) + ' takes ' + amount + ' poison damage';
                     echo += (!this.isAlive() ? ' and it dies' : '') + '<br>';
                 }
+                do_damage(this, poison);
             }
 
             var scorch = this.scorched;
             if (scorch) {
                 amount = scorch.amount;
-                do_damage(this, amount);
                 if (scorch.timer > 1) {
                     scorch.timer--;
                 } else {
@@ -479,6 +482,7 @@ var makeUnit = (function () {
                     else if (!this.scorched) echo += ' and scorch wears off';
                     echo += '<br>';
                 }
+                do_damage(this, amount);
             }
 
             var corroded = this.corroded;
@@ -652,6 +656,19 @@ var makeUnit = (function () {
                 this[imbueSkillsKey] = original.slice();
             }
             this[imbueSkillsKey].push(skill);
+        },
+
+        scorch: function (amount) {
+            var scorched = this.scorched;
+            if (!scorched) {
+                this.scorched = {
+                    amount: amount,
+                    timer: 2
+                };
+            } else {
+                scorched.amount += amount;
+                scorched.timer = 2;
+            }
         },
 
         removeImbue: function () {

@@ -1424,7 +1424,7 @@ var CARDS = {
     "maxLevel": 6,
     "skill": [
       {
-        "id": "enhance",
+        "id": "imbue",
         "x": 1,
         "s": "pierce",
       },
@@ -1446,7 +1446,7 @@ var CARDS = {
       "3": {
         "skill": [
           {
-            "id": "enhance",
+            "id": "imbue",
             "x": 2,
             "s": "pierce",
           },
@@ -1469,7 +1469,7 @@ var CARDS = {
         "health": 54,
         "skill": [
           {
-            "id": "enhance",
+            "id": "imbue",
             "x": 3,
             "s": "pierce",
           },
@@ -1488,7 +1488,7 @@ var CARDS = {
         "health": 57,
         "skill": [
           {
-            "id": "enhance",
+            "id": "imbue",
             "x": 3,
             "s": "pierce",
           },
@@ -160256,4 +160256,4 @@ var CARDS = {
     "upgrades": {}
   },
 };
-var CardsUpdated = 1497297011253.75;
+var CardsUpdated = 1497357274006.38;

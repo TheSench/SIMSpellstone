@@ -349,17 +349,18 @@
   <skillType>
     <id>enrage</id>
     <order>500</order>
+    <icon>enrage</icon>
     <name>Enrage</name>
     <attributes x="1" y="0" all="0" c="0" s="0" />
-    <desc>enrage.</desc>
+    <desc>Enrage a random ally creature. Until your next turn, every time the creature takes damage, gain Attack permanently.</desc>
     <hidden>1</hidden>
   </skillType>
   <skillType>
     <id>scorchbreath</id>
     <order>500</order>
-    <icon>frostbreath</icon>
+    <icon>scorchbreath</icon>
     <name>Scorchbreath</name>
-    <desc>Deals scorch in a cone to up to three creatures in front of it.</desc>
+    <desc>Deals scorch in a cone to up to three creatures in front of it</desc>
     <status_flag>burn</status_flag>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <balance_points>8</balance_points>
@@ -370,7 +371,7 @@
     <order>500</order>
     <icon>intensify</icon>
     <name>Intensify</name>
-    <desc>Intensify.</desc>
+    <desc>Increases the value of Scorch or Poison on an enemy creature</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <balance_points>8</balance_points>
     <hidden>1</hidden>
@@ -380,7 +381,7 @@
     <order>500</order>
     <icon>ignite</icon>
     <name>Ignite</name>
-    <desc>Ignite.</desc>
+    <desc>Increases the Scorch value on a Scorched enemy creature, or deal Scorch damage to a random enemy creature</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <balance_points>8</balance_points>
     <hidden>1</hidden>

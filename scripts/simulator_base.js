@@ -109,11 +109,24 @@ var SIMULATOR = {};
 
     // Deal damage to card
     // and keep track of cards that have died this turn
-    function do_damage(card, damage) {
+    function do_damage(card, damage, shatter) {
         if (damage >= card.health_left) {
             card.health_left = 0;
         } else {
             card.health_left -= damage;
+            if (card.enraged > 0) {
+                card.attack_berserk += card.enraged;
+                if (debug) {
+                    echo += debug_name(card) + " is enraged and gains " + card.enraged + " attack!</br>";
+                }
+            }
+        }
+
+        if (shatter) {
+            iceshatter(target);
+        }
+        if (!target.isAlive()) {
+            doOnDeathSkills(target, src_card);
         }
     };
 
@@ -126,16 +139,12 @@ var SIMULATOR = {};
         var target = field_o.assaults[src_card.key];
         if (!target || !target.isAlive()) target = field_o.commander;
 
-        do_damage(target, amount);
-
         if (debug) {
             echo += debug_name(src_card) + "'s barrier shatters and hits " + debug_name(target) + ' for ' + amount + ' damage';
             echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
         }
 
-        if (!target.isAlive()) {
-            doOnDeathSkills(target, src_card);
-        }
+        do_damage(target, amount);
     };
 
     // Empower, Legion, and Fervor all activate at the beginning of the turn, after commander
@@ -237,7 +246,6 @@ var SIMULATOR = {};
             var faction = skill['y'];
 
             var p = get_p(src_card);
-            var o = get_o(src_card);
 
             var protect = skill['x'];
             var all = skill['all'];
@@ -308,6 +316,68 @@ var SIMULATOR = {};
             return affected;
         },
 
+        // Enrage
+        // - Can target specific faction
+        // - Targets allied assaults
+        // - Can be enhanced
+        enrage: function (src_card, skill) {
+
+            var p = get_p(src_card);
+
+            var faction = skill.y;
+            var enrage = skill.x;
+            var all = skill.all;
+
+            var field_p_assaults = field[p]['assaults'];
+
+            var targets = [];
+            for (var key = 0, len = field_p_assaults.length; key < len; key++) {
+                var target = field_p_assaults[key];
+                if (target.isAlive()
+                && target.isInFaction(faction)) {
+                    targets.push(key);
+                }
+            }
+
+            // No Targets
+            if (!targets.length) return 0;
+
+            // Check All
+            if (!all) {
+                targets = choose_random_target(targets);
+            }
+            var enhanced = getEnhancement(src_card, skill.id);
+            if (enhanced) {
+                if (enhanced < 0) {
+                    enhanced = Math.ceil(enrage * -enhanced);
+                }
+                enrage += enhanced;
+            }
+
+            var affected = 0;
+
+            for (var key = 0, len = targets.length; key < len; key++) {
+                var target = field_p_assaults[targets[key]];
+
+                // Check Nullify
+                if (target.nullified) {
+                    target.nullified--;
+                    if (debug) echo += debug_name(src_card) + ' enrages ' + debug_name(target) + ' but it is nullified!<br>';
+                    continue;
+                }
+
+                affected++;
+
+                target['enraged'] += enrage;
+                if (debug) {
+                    if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
+                    echo += debug_name(src_card) + ' enrages ' + debug_name(target) + ' by ' + enrage + '<br>';
+                }
+            }
+
+            return affected;
+        },
+
         // Heal
         // - Can target specific faction
         // - Targets allied damaged assaults
@@ -315,7 +385,6 @@ var SIMULATOR = {};
         heal: function (src_card, skill) {
 
             var p = get_p(src_card);
-            var o = get_o(src_card);
 
             var faction = skill.y;
             var heal = skill.x;
@@ -461,15 +530,13 @@ var SIMULATOR = {};
                 var poisonDamage = 0;
                 if (strike_damage < 0) {
                     strike_damage = 0;
-                } else {
-                    do_damage(target, strike_damage);
-                    if (poison && target.isAlive()) {
-                        if (strike > target['poisoned']) {
-                            poisonDamage = strike;
-                            target['poisoned'] = poisonDamage;
-                        }
+                } else if (poison && target.isAlive()) {
+                    if (strike > target['poisoned']) {
+                        poisonDamage = strike;
+                        target['poisoned'] = poisonDamage;
                     }
                 }
+
                 if (debug) {
                     echo += '<u>(Strike: +' + strike;
                     if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
@@ -477,15 +544,148 @@ var SIMULATOR = {};
                     if (protect) echo += ' Barrier: -' + protect;
                     echo += ') = ' + strike_damage + ' damage</u><br>';
                     echo += debug_name(src_card) + ' bolts ' + debug_name(target) + ' for ' + strike_damage + ' damage';
-                    if (poisonDamage) echo += ' and inflicts poison(' + poisonDamage + ') on it';
-                    echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
+                    if (!target.isAlive()) {
+                        echo += ' and it dies';
+                    } else if (poisonDamage) {
+                        echo += ' and inflicts poison(' + poisonDamage + ') on it';
+                    }
+                    echo +=  '<br>';
                 }
-                if (shatter) {
-                    iceshatter(target);
+
+                do_damage(target, strike_damage, shatter);
+            }
+
+            return affected;
+        },
+
+        // Intensify
+        // - Can target specific faction
+        // - Targets poisoned/scorched enemy assaults
+        // - Can be evaded
+        // - Can be enhanced
+        intensify: function (src_card, skill, poison) {
+
+            var o = get_o(src_card);
+
+            var intensify = skill.x
+            var faction = skill.y;
+            var all = skill.all;
+
+            var field_x_assaults = field[o].assaults;
+
+            var targets = [];
+            for (var key = 0, len = field_x_assaults.length; key < len; key++) {
+                var target = field_x_assaults[key];
+                if (target.isAlive()
+                && (target.scorched || target.poisoned)
+                && target.isInFaction(faction)) {
+                    targets.push(key);
                 }
-                if (!target.isAlive()) {
-                    doOnDeathSkills(target, src_card);
+            }
+
+            // No Targets
+            if (!targets.length) return 0;
+
+            // Check All
+            if (!all) {
+                targets = choose_random_target(targets);
+            }
+
+            var enhanced = getEnhancement(src_card, skill.id);
+            if (enhanced) {
+                if (enhanced < 0) {
+                    enhanced = Math.ceil(intensify * -enhanced);
                 }
+                intensify += enhanced;
+            }
+
+            var affected = 0;
+
+            for (var key = 0, len = targets.length; key < len; key++) {
+                var target = field_x_assaults[targets[key]];
+
+                var intensifiedFields = (target.scorched ? "scorch" : "");
+                intensifiedFields += target.poisoned ? (intensifiedFields ? " and poison" : "poison")  : "");
+
+                // Check Evade
+                if (target.invisible) {
+                    target.invisible--;
+                    if (debug) echo += debug_name(src_card) + ' intensifies ' + intensifiedFields + ' on ' + debug_name(target) + ' but it is invisible!<br>';
+                    continue;
+                }
+
+                affected++;
+
+                if(target.scorched) {
+                    target.scorched.amount += intensify;
+                }
+                if(target.poisoned) {
+                    target.poisoned += intensify;
+                }
+
+                if (debug) echo += debug_name(src_card) + ' intensifies ' + intensifiedFields + ' on ' + debug_name(target) + ' by' + intensify + '<br>';
+            }
+
+            return affected;
+        },
+
+        // Ignite
+        // - Can target specific faction
+        // - Targets enemy assaults
+        // - Can be evaded
+        // - Can be enhanced
+        ignite: function (src_card, skill, poison) {
+
+            var o = get_o(src_card);
+
+            var intensify = skill.x
+            var faction = skill.y;
+            var all = skill.all;
+
+            var field_x_assaults = field[o].assaults;
+
+            var targets = [];
+            for (var key = 0, len = field_x_assaults.length; key < len; key++) {
+                var target = field_x_assaults[key];
+                if (target.isAlive()
+                && (target.scorched || target.poisoned)
+                && target.isInFaction(faction)) {
+                    targets.push(key);
+                }
+            }
+
+            // No Targets
+            if (!targets.length) return 0;
+
+            // Check All
+            if (!all) {
+                targets = choose_random_target(targets);
+            }
+
+            var enhanced = getEnhancement(src_card, skill.id);
+            if (enhanced) {
+                if (enhanced < 0) {
+                    enhanced = Math.ceil(intensify * -enhanced);
+                }
+                intensify += enhanced;
+            }
+
+            var affected = 0;
+
+            for (var key = 0, len = targets.length; key < len; key++) {
+                var target = field_x_assaults[targets[key]];
+
+                // Check Evade
+                if (target.invisible) {
+                    target.invisible--;
+                    if (debug) echo += debug_name(src_card) + ' ignites ' + debug_name(target) + ' but it is invisible!<br>';
+                    continue;
+                }
+
+                affected++;
+
+                target.scorch(scorch);
+                if (debug) echo += debug_name(src_card) + ' ignites(' + scorch + ') ' + debug_name(target) + '<br>';
             }
 
             return affected;
@@ -623,11 +823,6 @@ var SIMULATOR = {};
                     frost_damage -= protect;
                 }
 
-                if (frost_damage < 0) {
-                    frost_damage = 0;
-                } else {
-                    do_damage(target, frost_damage);
-                }
                 if (debug) {
                     echo += '<u>(Frostbreath: +' + frost;
                     if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
@@ -637,12 +832,8 @@ var SIMULATOR = {};
                     echo += debug_name(src_card) + ' breathes frost at ' + debug_name(target) + ' for ' + frost_damage + ' damage';
                     echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
                 }
-                if (shatter) {
-                    iceshatter(target);
-                }
-                if (!target.isAlive()) {
-                    doOnDeathSkills(target, src_card);
-                }
+
+                do_damage(target, frost_damage, shatter);
             }
 
             return affected;
@@ -1061,11 +1252,6 @@ var SIMULATOR = {};
                         strike_damage -= protect;
                     }
 
-                    if (strike_damage < 0) {
-                        strike_damage = 0;
-                    } else {
-                        do_damage(target, strike_damage);
-                    }
                     if (debug) {
                         echo += '<u>(Barrage: +1';
                         if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
@@ -1075,12 +1261,8 @@ var SIMULATOR = {};
                         echo += debug_name(src_card) + ' throws a bomb at ' + debug_name(target) + ' for ' + strike_damage + ' damage';
                         echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
                     }
-                    if (shatter) {
-                        iceshatter(target);
-                    }
-                    if (!target.isAlive()) {
-                        doOnDeathSkills(target, src_card);
-                    }
+
+                    do_damage(target, strike_damage, shatter);
                 }
             }
 
@@ -1305,15 +1487,12 @@ var SIMULATOR = {};
                 damage = Math.ceil(target[base] * mult);
             }
 
-            do_damage(target, damage);
-
             if (debug) {
                 echo += debug_name(src_card) + ' ambushes ' + debug_name(target) + ' for ' + damage + ' damage';
                 echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
             }
-            if (!target.isAlive()) {
-                doOnDeathSkills(target, src_card);
-            }
+
+            do_damage(target, damage);
 
             return 1;
         },
@@ -2064,21 +2243,24 @@ var SIMULATOR = {};
 
             var amount = current_assault['poisoned'];
             if (amount) {
-                do_damage(current_assault, amount);
                 if (debug) {
                     echo += debug_name(current_assault) + ' takes ' + amount + ' poison damage';
                     echo += (!current_assault.isAlive() ? ' and it dies' : '') + '<br>';
                 }
+
+                do_damage(current_assault, amount);
             }
 
             var scorch = current_assault['scorched'];
             if (scorch) {
                 amount = scorch['amount'];
-                do_damage(current_assault, amount);
                 if (debug) {
                     echo += debug_name(current_assault) + ' takes ' + amount + ' scorch damage';
                     echo += (!current_assault.isAlive() ? ' and it dies' : '') + '<br>';
                 }
+
+                do_damage(current_assault, amount);
+
                 if (scorch['timer'] > 1) {
                     scorch['timer']--;
                 } else {
@@ -2240,15 +2422,12 @@ var SIMULATOR = {};
         // -- END OF CALCULATE DAMAGE --
 
         // Deal damage to target
-        do_damage(target, damage);
 
         if (debug) {
             echo += debug_name(current_assault) + ' attacks ' + debug_name(target) + ' for ' + damage + ' damage';
             echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
         }
-        if (!target.isAlive()) {
-            doOnDeathSkills(target, current_assault);
-        }
+        do_damage(target, damage);
 
         if (showAnimations) {
             drawField(field, null, null, turn, current_assault);
@@ -2458,12 +2637,7 @@ var SIMULATOR = {};
                     }
                     scorch += enhanced;
                 }
-                if (!target['scorched']) {
-                    target['scorched'] = { 'amount': scorch, 'timer': 2 };
-                } else {
-                    target['scorched']['amount'] += scorch;
-                    target['scorched']['timer'] = 2;
-                }
+                target.scorch(scorch);
                 if (debug) echo += debug_name(current_assault) + ' inflicts scorch(' + scorch + ') on ' + debug_name(target) + '<br>';
             }
         }
@@ -2480,12 +2654,7 @@ var SIMULATOR = {};
                 var key = current_assault.key + i;
                 var target = field_o_assaults[key];
                 if (target && target.isAlive()) {
-                    if (!target['scorched']) {
-                        target['scorched'] = { 'amount': scorch, 'timer': 2 };
-                    } else {
-                        target['scorched']['amount'] += scorch;
-                        target['scorched']['timer'] = 2;
-                    }
+                    target.scorch(scorch);
                     if (debug) echo += debug_name(current_assault) + ' breathes scorchbreath(' + scorch + ') on ' + debug_name(target) + '<br>';
                 }
             }
@@ -2522,12 +2691,12 @@ var SIMULATOR = {};
             echo += ') = ' + counterDamage + ' damage</u><br>';
         }
 
-        do_damage(attacker, counterDamage);
-
         if (debug) {
             echo += debug_name(attacker) + ' takes ' + counterDamage + ' ' + counterType.toLowerCase() + ' damage';
             echo += (!attacker.isAlive() ? ' and it dies' : '') + '<br>';
         }
+
+        do_damage(attacker, counterDamage);
     }
 
     function calculatePoints(forceWin) {
