@@ -80,7 +80,7 @@ $(function () {
     var tower_level = Math.min(Math.max(_GET('tower_level') || 18, 0), 18);
     $('#tower_level').val(tower_level);
 
-    var tower_type = (_GET('tower_type') || 0);
+    var tower_type = (_GET('tower_type') || 501);
     $("#tower_type").val(tower_type);
 
     $('#auto_mode').prop("checked", _DEFINED("auto_mode"));
