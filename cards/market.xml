@@ -3610,4 +3610,20 @@
     <!-- Stuff to give -->
     <pack>3013</pack>
   </store_item>
+  <store_item>
+    <id>5071</id>
+    <name>Windsoul Limited Time Trove!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Includes 200 Windsouls! May be purchased five times!</desc>
+    <asset_prefab>windsoul_box</asset_prefab>
+    <bundle>35</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>90</hc_cost>
+    <!-- Stuff to give -->
+    <item id="2524" quantity="200" />
+  </store_item>
 </root>

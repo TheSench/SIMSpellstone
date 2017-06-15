@@ -1523,24 +1523,27 @@ var SIMULATOR = {};
     var onDeathSkills = {
         unearth: function (dying, killer, skill) {
 
+            // Only nontoken creatures can use unearth
             if (dying.isToken) {
                 return;
             }
 
             // Get base card
-            var unearthedUnit = makeUnitInfo(skill.card, skill.level);
+            var unearthedUnit = makeUnitInfo((skill.card || dying.id), (skill.level || skill.x));
             var unearthedCard = get_card_apply_battlegrounds(unearthedUnit);
             unearthedCard.isToken = true;
 
-            // Get tempalte card with scaled skills and copy them over (do not copy on-death skills)
             var mult = skill.mult;
-            unearthedCard.attack = Math.floor(dying.attack * mult);
-            unearthedCard.health = Math.floor(dying.health * mult);
+            if (mult) {
+                // Unearthed card has scaled stats based on original card
+                unearthedCard.attack = Math.floor(dying.attack * mult);
+                unearthedCard.health = Math.floor(dying.health * mult);
+            }
 
             play_card(unearthedCard, dying.owner, true);
 
             if (debug) {
-                echo += debug_name(unearthedCard) + ' is unearthed<br>';
+                echo += debug_name(unearthedCard) + ' is unearthed</br>';
             }
 
             return 1;

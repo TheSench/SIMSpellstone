@@ -5,6 +5,8 @@
   <!-- Player       - 1-199 -->
   <!-- Story        - 200-499 -->
   <!-- Special Cards    - 500-999 -->
+  <!-- Misc         - 500-599 -->
+  <!-- Battleground - 600-699 -->
   <!-- Standard Set     - 1000-1999 -->
   <!-- Aether       - 1000-1299 -->
   <!-- Chaos        - 1300-1599 -->
@@ -149,9 +151,9 @@
     <set>9999</set>
     <desc>A massive deposit of Spellstone ore. It has little combat use, but can be Vaporized for resources.</desc>
   </unit>
-  <!-- =================== -->
+  <!-- ========================== -->
   <!-- === BATTLEGROUND CARDS === -->
-  <!-- =================== -->
+  <!-- ========================== -->
   <unit>
     <id>601</id>
     <card_type>2</card_type>

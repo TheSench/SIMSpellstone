@@ -88,14 +88,14 @@ var BATTLEGROUNDS = {
     ]
   },
   "107": {
-    "name": "Elemental Surge (old)",
+    "name": "Elemental Surge",
     "id": "107",
-    "desc": "Seismic shifts have given Elementals incredible power! Elementals have their Attack increased by 50% of their base, rounded up!",
+    "desc": "Seismic shifts have given Elementals incredible power! Elementals have their Attack increased by 75% of their base, rounded up!",
     "effect": [
       {
         "effect_type": "skill",
-        "id": "rally",
-        "mult": .5,
+        "id": "enlarge",
+        "mult": .75,
         "y": "5",
         "all": "1",
       },

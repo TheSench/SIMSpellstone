@@ -4545,6 +4545,33 @@
     </rewards>
     <find_item id="3053" drop_per_energy=".8" />
   </campaign>
+  <!-- Event Campaign 4 -->
+  <!-- Extra Node -->
+  <campaign>
+    <id>1130</id>
+    <name>Honey Buzz</name>
+    <campaign_req>6</campaign_req>
+    <locked_start_time>1498755600</locked_start_time>
+    <!-- Thu, 29 June 2017 17:00:00 -->
+    <location_id>10</location_id>
+    <x>683</x>
+    <y>125</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5624</mission_id>
+      <mission_id>5625</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="510" />
+      <card level="3" id="510" />
+      <card level="4" id="2001" />
+      <card level="5" id="510" />
+      <card level="6" id="510" />
+      <card level="7" id="510" />
+    </rewards>
+    <find_item id="3054" drop_per_energy=".1" />
+  </campaign>
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
   <!-- ============================ -->

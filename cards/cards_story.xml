@@ -5,6 +5,8 @@
   <!-- Player       - 1-199 -->
   <!-- Story        - 200-499 -->
   <!-- Special Cards    - 500-999 -->
+  <!-- Misc         - 500-599 -->
+  <!-- Battleground - 600-699 -->
   <!-- Standard Set     - 1000-1999 -->
   <!-- Aether       - 1000-1299 -->
   <!-- Chaos        - 1300-1599 -->
@@ -6236,6 +6238,400 @@
       <skill id="armored" x="6" />
       <skill id="rally" x="8" all="1" />
       <skill id="heal" x="10" all="1" />
+    </upgrade>
+  </unit>
+  <!-- Void Core Dungeon -->
+  <unit>
+    <id>8073</id>
+    <card_type>2</card_type>
+    <name>Vorpal Shock Troop</name>
+    <picture>Void_Infected_Knight_B</picture>
+    <asset_bundle>43</asset_bundle>
+    <attack>6</attack>
+    <health>24</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="strike" x="5" />
+    <skill id="weaken" x="5" />
+    <type>8</type>
+    <sub_type>7</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+      <skill id="evade" x="2" />
+      <skill id="strike" x="6" />
+      <skill id="weaken" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>26</health>
+      <attack>7</attack>
+      <skill id="evade" x="2" />
+      <skill id="strike" x="7" />
+      <skill id="weaken" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>27</health>
+      <skill id="evade" x="2" />
+      <skill id="strike" x="8" />
+      <skill id="weaken" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>28</health>
+      <attack>8</attack>
+      <skill id="evade" x="2" />
+      <skill id="strike" x="9" />
+      <skill id="weaken" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>30</health>
+      <skill id="evade" x="3" />
+      <skill id="strike" x="10" />
+      <skill id="weaken" x="8" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8074</id>
+    <card_type>2</card_type>
+    <name>Vorpal Frostscale</name>
+    <picture>Spike_Blade_Dragon_B</picture>
+    <asset_bundle>63</asset_bundle>
+    <attack>5</attack>
+    <health>34</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="protect" x="3" all="1" y="8" />
+    <skill id="frost" x="4" />
+    <skill id="nullify" x="1" />
+    <type>8</type>
+    <sub_type>9</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>35</health>
+      <skill id="protect" x="3" all="1" y="8" />
+      <skill id="frost" x="5" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>37</health>
+      <skill id="protect" x="4" all="1" y="8" />
+      <skill id="frost" x="5" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>38</health>
+      <attack>6</attack>
+      <skill id="protect" x="4" all="1" y="8" />
+      <skill id="frost" x="5" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>40</health>
+      <skill id="protect" x="4" all="1" y="8" />
+      <skill id="frost" x="6" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>42</health>
+      <skill id="protect" x="5" all="1" y="8" />
+      <skill id="frost" x="6" />
+      <skill id="nullify" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8075</id>
+    <card_type>2</card_type>
+    <name>Vorpal Magnate</name>
+    <picture>Undead_Crow_Lord_B</picture>
+    <asset_bundle>91</asset_bundle>
+    <attack>6</attack>
+    <health>33</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="3" />
+    <skill id="counter" x="6" />
+    <skill id="enfeeble" x="2" all="1" />
+    <type>8</type>
+    <sub_type>7</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>34</health>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>36</health>
+      <skill id="armored" x="3" />
+      <skill id="counter" x="7" />
+      <skill id="enfeeble" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>39</health>
+      <attack>8</attack>
+      <skill id="armored" x="3" />
+      <skill id="counter" x="7" />
+      <skill id="enfeeble" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>42</health>
+      <skill id="armored" x="4" />
+      <skill id="counter" x="7" />
+      <skill id="enfeeble" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>45</health>
+      <skill id="armored" x="4" />
+      <skill id="counter" x="8" />
+      <skill id="enfeeble" x="4" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8076</id>
+    <card_type>2</card_type>
+    <name>Vorpal Knight</name>
+    <picture>Skeleton_Dreadlord_B</picture>
+    <asset_bundle>72</asset_bundle>
+    <attack>3</attack>
+    <health>14</health>
+    <cost>0</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="2" />
+    <skill id="legion" x="3" y="8" />
+    <skill id="fervor" x="3" y="8" />
+    <type>8</type>
+    <sub_type>7</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>15</health>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>16</health>
+      <skill id="armored" x="2" />
+      <skill id="legion" x="4" y="8" />
+      <skill id="fervor" x="3" y="8" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>17</health>
+      <attack>5</attack>
+      <skill id="armored" x="2" />
+      <skill id="legion" x="4" y="8" />
+      <skill id="fervor" x="4" y="8" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>18</health>
+      <skill id="armored" x="3" />
+      <skill id="legion" x="4" y="8" />
+      <skill id="fervor" x="4" y="8" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>20</health>
+      <skill id="armored" x="3" />
+      <skill id="legion" x="5" y="8" />
+      <skill id="fervor" x="5" y="8" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8077</id>
+    <card_type>2</card_type>
+    <name>Vorpal Berserker</name>
+    <picture>Shadow_Frog_B</picture>
+    <asset_bundle>79</asset_bundle>
+    <attack>4</attack>
+    <health>18</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="pierce" x="6" />
+    <skill id="berserk" x="3" />
+    <type>8</type>
+    <sub_type>4</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+      <skill id="evade" x="2" />
+      <skill id="pierce" x="7" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>20</health>
+      <skill id="evade" x="2" />
+      <skill id="pierce" x="8" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>22</health>
+      <skill id="evade" x="2" />
+      <skill id="pierce" x="9" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>23</health>
+      <attack>5</attack>
+      <skill id="evade" x="3" />
+      <skill id="pierce" x="9" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>25</health>
+      <skill id="evade" x="3" />
+      <skill id="pierce" x="10" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8078</id>
+    <card_type>2</card_type>
+    <name>Vorpal Essencer</name>
+    <picture>Void_Elemental_C</picture>
+    <asset_bundle>9</asset_bundle>
+    <attack>5</attack>
+    <health>16</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="1" all="1" y="8" />
+    <skill id="jam" c="4" />
+    <skill id="leech" x="6" />
+    <type>8</type>
+    <sub_type>5</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+      <skill id="rally" x="1" all="1" y="8" />
+      <skill id="jam" c="3" />
+      <skill id="leech" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+      <skill id="rally" x="2" all="1" y="8" />
+      <skill id="jam" c="3" />
+      <skill id="leech" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>21</health>
+      <skill id="rally" x="2" all="1" y="8" />
+      <skill id="jam" c="3" />
+      <skill id="leech" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>24</health>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>27</health>
+      <skill id="rally" x="3" all="1" y="8" />
+      <skill id="jam" c="3" />
+      <skill id="leech" x="8" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8079</id>
+    <card_type>2</card_type>
+    <name>Vorpal Essencer</name>
+    <picture>Void_Elemental_C</picture>
+    <asset_bundle>9</asset_bundle>
+    <attack>5</attack>
+    <health>16</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="1" all="1" y="8" />
+    <skill id="jam" c="4" />
+    <skill id="leech" x="6" />
+    <type>8</type>
+    <sub_type>5</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+      <skill id="rally" x="1" all="1" y="8" />
+      <skill id="jam" c="3" />
+      <skill id="leech" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+      <skill id="rally" x="2" all="1" y="8" />
+      <skill id="jam" c="3" />
+      <skill id="leech" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>20</health>
+      <skill id="rally" x="2" all="1" y="8" />
+      <skill id="jam" c="3" />
+      <skill id="leech" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>23</health>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>26</health>
+      <skill id="rally" x="3" all="1" y="8" />
+      <skill id="jam" c="3" />
+      <skill id="leech" x="8" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8080</id>
+    <card_type>2</card_type>
+    <name>Reanimating Horde</name>
+    <picture>Unearth_Skeleton_B</picture>
+    <asset_bundle>91</asset_bundle>
+    <attack>5</attack>
+    <health>2</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="unearth" x="1" card="8079" />
+    <type>8</type>
+    <sub_type>5</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="unearth" x="2" card="8079" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="unearth" x="3" card="8079" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="unearth" x="4" card="8079" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="unearth" x="5" card="8079" />
     </upgrade>
   </unit>
 </root>

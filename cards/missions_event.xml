@@ -19029,4 +19029,775 @@
       <card id="8070" name="Scylla's Fool" />
     </deck>
   </mission>
+  <mission>
+    <id>5624</id>
+    <name>Investigating the Elements</name>
+    <energy>9</energy>
+    <desc>Previously corrupted river water has been cleansed. Plants inflicted with sickness have been healed. Your next step in your journey takes you underground to the home of the insects, Beetleton Bunker.</desc>
+    <commander id="343" />
+    <deck>
+      <card id="5017" name="Steam Tempest" />
+      <card id="5017" name="Steam Tempest" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="6069" name="Arachnolite" />
+      <card id="5065" name="Hive Guard" />
+      <card id="5004" name="Lightning Lord" />
+      <card id="5041" name="Skylance Raiders" />
+      <card id="2021" name="Snowstep Ranger" />
+      <card id="2049" mastery_level="2" name="Contrapede" />
+      <card id="5107" mastery_level="3" name="Thrumming Beacon" />
+      <card id="6011" mastery_level="4" name="Bomb Spirit" />
+      <card id="5067" mastery_level="5" name="Squito Roamer" />
+      <card id="5066" mastery_level="6" name="Scarab Beast" />
+      <card id="6067" mastery_level="7" name="Gurgitater" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5625</id>
+    <name>Feral Insects</name>
+    <energy>9</energy>
+    <desc>Feral Insects roam the honeycomb land. They attack any and all who stand in their way, whether it be Insects from Beetleton or stray adventurers. You fend them off, searching for more [item].</desc>
+    <commander id="319" />
+    <deck>
+      <card id="1012" name="Cloud Sylph" />
+      <card id="1010" name="Lightning Elemental" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="2050" name="Slithering Pincer" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="6051" name="Treeblade Thief" />
+      <card id="2070" name="Redclaw Tamer" />
+      <card id="5069" mastery_level="2" name="Heralidae" />
+      <card id="5130" mastery_level="3" name="Drakeling Fosterer" />
+      <card id="5114" mastery_level="4" name="Wingward" />
+      <card id="6066" mastery_level="5" name="Psychic Beetle" />
+      <card id="7048" mastery_level="6" name="Bogskull Widow" />
+      <card id="7063" mastery_level="7" name="Poisac Crawler" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5626</id>
+    <name>Loose Ends</name>
+    <energy>9</energy>
+    <desc>Previously corrupted river water has been cleansed. Plants inflicted with sickness have been healed. Your next step in your journey takes you underground to the home of the insects, Beetleton Bunker.</desc>
+    <commander id="345" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1315" name="Nix Elemental" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="7006" name="Treant Sapling" />
+      <card id="7065" name="Disturbed Swarm" />
+      <card id="5069" name="Heralidae" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="7015" name="Bog Aberration" />
+      <card id="2010" name="Silver Wind" />
+      <card id="6044" mastery_level="2" name="Firewalker" />
+      <card id="7021" mastery_level="3" name="Shadow Elemental" />
+      <card id="1629" mastery_level="4" name="Rock Titan" />
+      <card id="7065" mastery_level="5" name="Disturbed Swarm" />
+      <card id="5045" mastery_level="6" name="Echo Elemental" />
+      <card id="7013" mastery_level="7" name="Gold Elemental" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>Hmm... Yes, there is nothing visibly corrupt here, either. It's a shame we aren't closer to knowing an answer.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5627</id>
+    <name>Restless Elementals</name>
+    <energy>9</energy>
+    <desc>You and Rayne carefully go through a maze of honeycomb walls, looking for signs of corruption. Blobs of earth from the ground rise at your presence, menacing you both.</desc>
+    <commander id="328" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1619" name="Earth Elemental" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="1012" name="Cloud Sylph" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="5065" name="Hive Guard" />
+      <card id="5081" name="Brahzee" />
+      <card id="6075" name="Consuming Mireling" />
+      <card id="5133" name="Magnetic Elemental" />
+      <card id="1330" mastery_level="2" name="Devouring Locusts" />
+      <card id="1325" mastery_level="3" name="Chaos Storm" />
+      <card id="1026" mastery_level="4" name="Glass Colossus" />
+      <card id="5067" mastery_level="5" name="Squito Roamer" />
+      <card id="6076" mastery_level="6" name="Magmatic Bang" />
+      <card id="5019" mastery_level="7" name="Vivid Aurora" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5628</id>
+    <name>Frenzied Elementals</name>
+    <energy>9</energy>
+    <desc>The two of you fight off the creatures, which seem to dissipate in a cloud of dust with each strike. Even their numbers cannot hide how weak they are. Rayne sighs...</desc>
+    <commander id="324" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1315" name="Nix Elemental" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="1010" name="Lightning Elemental" />
+      <card id="2048" name="Sandmite" />
+      <card id="5069" name="Heralidae" />
+      <card id="7045" name="Sakura" />
+      <card id="7075" name="Diamode" />
+      <card id="7004" name="Ice Golem" />
+      <card id="5067" mastery_level="2" name="Squito Roamer" />
+      <card id="2058" mastery_level="3" name="Bismuth Bully" />
+      <card id="2032" mastery_level="4" name="Brimstone" />
+      <card id="5067" mastery_level="5" name="Squito Roamer" />
+      <card id="5082" mastery_level="6" name="Memory" />
+      <card id="6065" mastery_level="7" name="Torchsnout" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>Even with The Void vanquished, the Elementals are restless. Something stirs them into a frenzy. Some unknown power...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5629</id>
+    <name>Relentless Elementals</name>
+    <energy>9</energy>
+    <desc>The elementals converge from the skies, the walls, and the floor. They reach towards Rayne, trying desperately to grasp onto one of her water-like tendrils.</desc>
+    <commander id="301" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="2049" name="Contrapede" />
+      <card id="6069" name="Arachnolite" />
+      <card id="2056" name="Drainor" />
+      <card id="6046" name="Celerity" />
+      <card id="6046" name="Celerity" />
+      <card id="6044" mastery_level="2" name="Firewalker" />
+      <card id="2008" mastery_level="3" name="Shadow of Ash" />
+      <card id="6042" mastery_level="4" name="Shadow of Thunder" />
+      <card id="6066" mastery_level="5" name="Psychic Beetle" />
+      <card id="6045" mastery_level="6" name="Darkflame" />
+      <card id="2051" mastery_level="7" name="Dune Hopper" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5630</id>
+    <name>Nothing But Dust</name>
+    <energy>9</energy>
+    <desc>Rayne checks the ground where the Elementals have fallen. Nothing remains except a chalky dust, as if the Elementals have turned into ash.</desc>
+    <commander id="301" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1010" name="Lightning Elemental" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="5017" name="Steam Tempest" />
+      <card id="7065" name="Disturbed Swarm" />
+      <card id="2048" name="Sandmite" />
+      <card id="2057" name="Twister" />
+      <card id="6015" name="Acidic Sludge" />
+      <card id="7078" name="Saprolite" />
+      <card id="2050" mastery_level="2" name="Slithering Pincer" />
+      <card id="5080" mastery_level="3" name="Djinnflame Brawler" />
+      <card id="5046" mastery_level="4" name="Dawn" />
+      <card id="6066" mastery_level="5" name="Psychic Beetle" />
+      <card id="6013" mastery_level="6" name="Rust Goliath" />
+      <card id="7068" mastery_level="7" name="Eve Allurephid" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>It seems we have come here for nothing. The Elementals behave the same here as above ground. The source of their disturbance yet eludes us.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5631</id>
+    <name>The Good News</name>
+    <energy>9</energy>
+    <desc>Rayne finishes inspecting the residue, turning back towards the town. For the last three days, you and Rayne have been staying in the village of Beetleton Bunker.</desc>
+    <commander id="348" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5017" name="Steam Tempest" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="1315" name="Nix Elemental" />
+      <card id="2049" name="Contrapede" />
+      <card id="2050" name="Slithering Pincer" />
+      <card id="2032" name="Brimstone" />
+      <card id="7004" name="Ice Golem" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="1330" mastery_level="2" name="Devouring Locusts" />
+      <card id="6075" mastery_level="3" name="Consuming Mireling" />
+      <card id="5081" mastery_level="4" name="Brahzee" />
+      <card id="2048" mastery_level="5" name="Sandmite" />
+      <card id="6134" mastery_level="6" name="Primitive Hearth" />
+      <card id="7064" mastery_level="7" name="Willowfly" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>My apologies, our efforts were not completely wasted. After all, your friends at Beetleton Bunker want to give you a proper celebration.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5632</id>
+    <name>From Adventurer to Hero</name>
+    <energy>9</energy>
+    <desc>The two of you travel towards the Insect Village. The normally drab town has been decorated in colorful banners. After sealing away The Void, you have been hailed as a hero.</desc>
+    <commander id="348" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1010" name="Lightning Elemental" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="1617" name="Water Elemental" />
+      <card id="6069" name="Arachnolite" />
+      <card id="5065" name="Hive Guard" />
+      <card id="2010" name="Silver Wind" />
+      <card id="2095" name="Spoutal Nemesis" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="5065" mastery_level="2" name="Hive Guard" />
+      <card id="6075" mastery_level="3" name="Consuming Mireling" />
+      <card id="7075" mastery_level="4" name="Diamode" />
+      <card id="6044" mastery_level="5" name="Firewalker" />
+      <card id="5048" mastery_level="6" name="Highborn Rose" />
+      <card id="5068" mastery_level="7" name="Aht-Aht Carrier" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5633</id>
+    <name>Fan Club</name>
+    <energy>9</energy>
+    <desc>A troop of Insects waits for you at the gate of Beetleton. As you and Rayne near, they begin to bounce up and down excitedly, cheering you on.</desc>
+    <commander id="324" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="1619" name="Earth Elemental" />
+      <card id="2048" name="Sandmite" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="5133" name="Magnetic Elemental" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="2056" name="Drainor" />
+      <card id="5067" mastery_level="2" name="Squito Roamer" />
+      <card id="6077" mastery_level="3" name="Enigma" />
+      <card id="2008" mastery_level="4" name="Shadow of Ash" />
+      <card id="7065" mastery_level="5" name="Disturbed Swarm" />
+      <card id="5079" mastery_level="6" name="Cyclopnid" />
+      <card id="7068" mastery_level="7" name="Eve Allurephid" />
+    </deck>
+    <speech>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>Hero! Hero! It wouldn't be right for you to be late to your own party!</text>
+      </line>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>You're certainly popular now, aren't you?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5634</id>
+    <name>Hero Worship</name>
+    <energy>9</energy>
+    <desc>You are mobbed by adoring fans of the six-legged variety. Their sticky hands push you forward, perhaps with too much energy, as they hustle you towards the town plaza.</desc>
+    <commander id="354" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="1617" name="Water Elemental" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="2049" name="Contrapede" />
+      <card id="2032" name="Brimstone" />
+      <card id="7045" name="Sakura" />
+      <card id="2056" name="Drainor" />
+      <card id="5065" mastery_level="2" name="Hive Guard" />
+      <card id="7075" mastery_level="3" name="Diamode" />
+      <card id="2057" mastery_level="4" name="Twister" />
+      <card id="7065" mastery_level="5" name="Disturbed Swarm" />
+      <card id="6078" mastery_level="6" name="Radiation Golem" />
+      <card id="2051" mastery_level="7" name="Dune Hopper" />
+    </deck>
+    <speech>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>My name's Dilbert. Your friends were already heroes of Beetleton Bunker.</text>
+      </line>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>But now, you're heroes of the whole world.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5635</id>
+    <name>Unease</name>
+    <energy>9</energy>
+    <desc>You can feel eyes on your back. You turn around towards the wilderness outside of Beetleton Bunker. You think you see something, but it vanishes too quickly for you to make out clearly.</desc>
+    <commander id="354" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1619" name="Earth Elemental" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="1619" name="Earth Elemental" />
+      <card id="5065" name="Hive Guard" />
+      <card id="7065" name="Disturbed Swarm" />
+      <card id="5046" name="Dawn" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="7015" name="Bog Aberration" />
+      <card id="7065" mastery_level="2" name="Disturbed Swarm" />
+      <card id="2058" mastery_level="3" name="Bismuth Bully" />
+      <card id="2010" mastery_level="4" name="Silver Wind" />
+      <card id="2050" mastery_level="5" name="Slithering Pincer" />
+      <card id="5013" mastery_level="6" name="Radiance" />
+      <card id="6037" mastery_level="7" name="Keeper of Souls" />
+    </deck>
+    <speech>
+      <line>
+        <commander>invisibleassassin</commander>
+        <enemy>1</enemy>
+        <text>...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5636</id>
+    <name>Party Celebration</name>
+    <energy>9</energy>
+    <desc>Dilbert and the rest of the insects eventually get you to the town plaza. The decorations of banners and streamers help give some color to the town, but you notice the buffet table is lined with slimy substances. It might be wise to avoid eating anything.</desc>
+    <commander id="343" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1617" name="Water Elemental" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="1012" name="Cloud Sylph" />
+      <card id="6069" name="Arachnolite" />
+      <card id="5065" name="Hive Guard" />
+      <card id="7004" name="Ice Golem" />
+      <card id="7075" name="Diamode" />
+      <card id="2009" name="Sapling" />
+      <card id="5067" mastery_level="2" name="Squito Roamer" />
+      <card id="5133" mastery_level="3" name="Magnetic Elemental" />
+      <card id="5080" mastery_level="4" name="Djinnflame Brawler" />
+      <card id="6069" mastery_level="5" name="Arachnolite" />
+      <card id="6080" mastery_level="6" name="Titanirous" />
+      <card id="6068" mastery_level="7" name="Night Larva" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5637</id>
+    <name>Mechas of Beetleton</name>
+    <energy>9</energy>
+    <desc>Dilbert points to a mechanical creation. It is shaped similar to their insect brethren, but made of steel and mechanical wheels. Saws are poised above its head, as it works steadily on party decorations.</desc>
+    <commander id="328" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="5017" name="Steam Tempest" />
+      <card id="6044" name="Firewalker" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="6077" name="Enigma" />
+      <card id="6015" name="Acidic Sludge" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="6066" mastery_level="2" name="Psychic Beetle" />
+      <card id="7045" mastery_level="3" name="Sakura" />
+      <card id="5081" mastery_level="4" name="Brahzee" />
+      <card id="5067" mastery_level="5" name="Squito Roamer" />
+      <card id="5032" mastery_level="6" name="Hail Hurler" />
+      <card id="6057" mastery_level="7" name="Beammite" />
+    </deck>
+    <speech>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>Oh, have you not seen our helpers before? We assembled them to do work for us.</text>
+      </line>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>We call them... mechas.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5638</id>
+    <name>Diligent Workers</name>
+    <energy>9</energy>
+    <desc>The machines work together with eerie proficiency. Their knives and saws hit the wood in perfect harmony, creating a perfect rhythm. One mecha stops, red eyes turning towards you.</desc>
+    <commander id="301" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="6069" name="Arachnolite" />
+      <card id="6069" name="Arachnolite" />
+      <card id="5065" name="Hive Guard" />
+      <card id="2057" name="Twister" />
+      <card id="1325" name="Chaos Storm" />
+      <card id="2009" name="Sapling" />
+      <card id="5069" mastery_level="2" name="Heralidae" />
+      <card id="7015" mastery_level="3" name="Bog Aberration" />
+      <card id="2056" mastery_level="4" name="Drainor" />
+      <card id="2049" mastery_level="5" name="Contrapede" />
+      <card id="6076" mastery_level="6" name="Magmatic Bang" />
+      <card id="6037" mastery_level="7" name="Keeper of Souls" />
+    </deck>
+    <speech>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>The mecha have helped us rebuild from the goblins' attacks.We wouldn't be able to host a party like this without them.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5639</id>
+    <name>Mecha Encounter</name>
+    <energy>9</energy>
+    <desc>The mecha insect's wheels squeek as it stops its work, rolling up to you. For an uncomfortable amount of time, it stares at you with its red eyes. And then... it speaks.</desc>
+    <commander id="4" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1012" name="Cloud Sylph" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="6069" name="Arachnolite" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="5065" name="Hive Guard" />
+      <card id="5133" name="Magnetic Elemental" />
+      <card id="6077" name="Enigma" />
+      <card id="7015" name="Bog Aberration" />
+      <card id="2050" mastery_level="2" name="Slithering Pincer" />
+      <card id="6042" mastery_level="3" name="Shadow of Thunder" />
+      <card id="2008" mastery_level="4" name="Shadow of Ash" />
+      <card id="5069" mastery_level="5" name="Heralidae" />
+      <card id="7079" mastery_level="6" name="Carina" />
+      <card id="6067" mastery_level="7" name="Gurgitater" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>Bzzt.... YOU ARE THE ONE. THE VANQUISHER OF THE VOID.</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>DIE!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5640</id>
+    <name>Robot Encounter</name>
+    <energy>9</energy>
+    <desc>The mechanical beetle swings at you. The other mecha workers stop, red eyes all fixating on you. Then they begin to roll closer, wielding their saws and work tools.</desc>
+    <commander id="4" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1010" name="Lightning Elemental" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="6069" name="Arachnolite" />
+      <card id="6069" name="Arachnolite" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="7015" name="Bog Aberration" />
+      <card id="7075" name="Diamode" />
+      <card id="2008" name="Shadow of Ash" />
+      <card id="7065" mastery_level="2" name="Disturbed Swarm" />
+      <card id="6015" mastery_level="3" name="Acidic Sludge" />
+      <card id="2058" mastery_level="4" name="Bismuth Bully" />
+      <card id="6069" mastery_level="5" name="Arachnolite" />
+      <card id="7046" mastery_level="6" name="Brambleblight" />
+      <card id="7048" mastery_level="7" name="Bogskull Widow" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5641</id>
+    <name>The Mecha Uprising</name>
+    <energy>9</energy>
+    <desc>It's an uprising of mecha insects! Behind you, Dilbert and the other Beetleton Insects panic. They run around shrieking, pointing at their former helpers.</desc>
+    <commander id="340" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="5081" name="Brahzee" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="2009" name="Sapling" />
+      <card id="1026" name="Glass Colossus" />
+      <card id="6075" name="Consuming Mireling" />
+      <card id="7065" mastery_level="2" name="Disturbed Swarm" />
+      <card id="7075" mastery_level="3" name="Diamode" />
+      <card id="2057" mastery_level="4" name="Twister" />
+      <card id="6069" mastery_level="5" name="Arachnolite" />
+      <card id="6037" mastery_level="6" name="Keeper of Souls" />
+      <card id="7063" mastery_level="7" name="Poisac Crawler" />
+    </deck>
+    <speech>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>What's going on?! What's happening?!?</text>
+      </line>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>It looks like we will be the ones to help, again. Let's take care of this before things get worse.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5642</id>
+    <name>Cleansing Waves</name>
+    <energy>9</energy>
+    <desc>Rayne brings her waters against the mechanical creatures, which fizzle beneath the waves. You continue to clear out the mechas, who seem content to ignore the innocent Insects, and focus their attention on you.</desc>
+    <commander id="4" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="5017" name="Steam Tempest" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="5065" name="Hive Guard" />
+      <card id="7065" name="Disturbed Swarm" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="1326" name="Titan of Fire" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="6077" mastery_level="2" name="Enigma" />
+      <card id="6069" mastery_level="3" name="Arachnolite" />
+      <card id="5069" mastery_level="4" name="Heralidae" />
+      <card id="2049" mastery_level="5" name="Contrapede" />
+      <card id="7064" mastery_level="6" name="Willowfly" />
+      <card id="7068" mastery_level="7" name="Eve Allurephid" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5643</id>
+    <name>Damaged Celebration</name>
+    <energy>9</energy>
+    <desc>The last of the foes are defeated. But the damage to the plaza has been done. The decorations have been washed away. You're secretly glad that the buffet table didn't survive.</desc>
+    <commander id="324" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1010" name="Lightning Elemental" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="6044" name="Firewalker" />
+      <card id="2048" name="Sandmite" />
+      <card id="2050" name="Slithering Pincer" />
+      <card id="2095" name="Spoutal Nemesis" />
+      <card id="5080" name="Djinnflame Brawler" />
+      <card id="7004" mastery_level="2" name="Ice Golem" />
+      <card id="2049" mastery_level="3" name="Contrapede" />
+      <card id="6066" mastery_level="4" name="Psychic Beetle" />
+      <card id="6066" mastery_level="5" name="Psychic Beetle" />
+      <card id="7080" mastery_level="6" name="Spornacle" />
+      <card id="6067" mastery_level="7" name="Gurgitater" />
+    </deck>
+    <speech>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>Omigosh, I'm so sorry. They've never behaved this way before. It should be impossible...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5644</id>
+    <name>Unknown Restlessness</name>
+    <energy>9</energy>
+    <desc>You, Rayne, Dilbert, and the Insects begin the long cleanup process. The Insects insist that they can take care of the cleaning themselves, but it is far too much for any one person to handle.</desc>
+    <commander id="328" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1012" name="Cloud Sylph" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="5069" name="Heralidae" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="2049" name="Contrapede" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="2032" name="Brimstone" />
+      <card id="7021" name="Shadow Elemental" />
+      <card id="7015" mastery_level="2" name="Bog Aberration" />
+      <card id="2050" mastery_level="3" name="Slithering Pincer" />
+      <card id="6066" mastery_level="4" name="Psychic Beetle" />
+      <card id="2049" mastery_level="5" name="Contrapede" />
+      <card id="7028" mastery_level="6" name="Frozen Tide" />
+      <card id="7064" mastery_level="7" name="Willowfly" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>Even with The Void's defeat, not everything is right. The spirits of the elements are restless. The mechanical creatures move of their own will... Just what is going on?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5645</id>
+    <name>Fighting Insects</name>
+    <energy>9</energy>
+    <desc>As you continue to pick up, you feel eyes on your back again. Turning around, you see nothing. But before you can resume your cleaning, a bug has approached you. But there's something off... He doesn't look like the Beetleton Bunker Insects. Suddenly, he lunges and attacks!</desc>
+    <commander id="326" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1315" name="Nix Elemental" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="6044" name="Firewalker" />
+      <card id="5069" name="Heralidae" />
+      <card id="2050" name="Slithering Pincer" />
+      <card id="2050" name="Slithering Pincer" />
+      <card id="1325" name="Chaos Storm" />
+      <card id="2010" name="Silver Wind" />
+      <card id="2031" mastery_level="2" name="Dryad" />
+      <card id="6066" mastery_level="3" name="Psychic Beetle" />
+      <card id="2050" mastery_level="4" name="Slithering Pincer" />
+      <card id="5065" mastery_level="5" name="Hive Guard" />
+      <card id="6080" mastery_level="6" name="Titanirous" />
+      <card id="6057" mastery_level="7" name="Beammite" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5646</id>
+    <name>Feral Foes</name>
+    <energy>9</energy>
+    <desc>A small group of Insects has corned you, viciously attacking both you and Rayne. Dilbert panics again, as he and the other bugs flee in terror.</desc>
+    <commander id="366" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="6044" name="Firewalker" />
+      <card id="5065" name="Hive Guard" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="1629" name="Rock Titan" />
+      <card id="2056" name="Drainor" />
+      <card id="2031" mastery_level="2" name="Dryad" />
+      <card id="6044" mastery_level="3" name="Firewalker" />
+      <card id="5067" mastery_level="4" name="Squito Roamer" />
+      <card id="5067" mastery_level="5" name="Squito Roamer" />
+      <card id="7043" mastery_level="6" name="Anima" />
+      <card id="2051" mastery_level="7" name="Dune Hopper" />
+    </deck>
+    <speech>
+      <line>
+        <commander>feralbug</commander>
+        <enemy>1</enemy>
+        <text>HISSSSSSS!</text>
+      </line>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>Feral bugs! Look out!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5647</id>
+    <name>Insect Beasts</name>
+    <energy>9</energy>
+    <desc>The insect beasts attack anything in their path. Unlike the mechas, the insects attack whatever they can reach. Their eyes lack the spark of intelligence that the Insects of Beetleton possess.</desc>
+    <commander id="319" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="7065" name="Disturbed Swarm" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="2058" name="Bismuth Bully" />
+      <card id="5046" name="Dawn" />
+      <card id="7015" mastery_level="2" name="Bog Aberration" />
+      <card id="2049" mastery_level="3" name="Contrapede" />
+      <card id="2050" mastery_level="4" name="Slithering Pincer" />
+      <card id="5067" mastery_level="5" name="Squito Roamer" />
+      <card id="6045" mastery_level="6" name="Darkflame" />
+      <card id="7067" mastery_level="7" name="Mantis" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5648</id>
+    <name>Bane of Beetleton</name>
+    <energy>9</energy>
+    <desc>The beasts fall beneath the effort of you and Rayne. Dilbert and the other Beetleton Bunker Insects emerge from hiding. Dilbert once again apologizes profusely.</desc>
+    <commander id="316" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1010" name="Lightning Elemental" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="2048" name="Sandmite" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="5069" name="Heralidae" />
+      <card id="6069" name="Arachnolite" />
+      <card id="2009" name="Sapling" />
+      <card id="2010" name="Silver Wind" />
+      <card id="7045" mastery_level="2" name="Sakura" />
+      <card id="6069" mastery_level="3" name="Arachnolite" />
+      <card id="6069" mastery_level="4" name="Arachnolite" />
+      <card id="5065" mastery_level="5" name="Hive Guard" />
+      <card id="6076" mastery_level="6" name="Magmatic Bang" />
+      <card id="7068" mastery_level="7" name="Eve Allurephid" />
+    </deck>
+    <speech>
+      <line>
+        <commander>architectbug</commander>
+        <enemy>0</enemy>
+        <text>Feral bugs have been our enemies for many years. They're nothing but mindless beasts. I'm so sorry, I don't know how they got in here.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5649</id>
+    <name>Strange Coincidences</name>
+    <energy>9</energy>
+    <desc>Rayne gently leads you to the side. She speaks quietly, hiding her words from the group of Insects behind you.</desc>
+    <commander id="298" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1012" name="Cloud Sylph" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="2049" name="Contrapede" />
+      <card id="7065" name="Disturbed Swarm" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="2050" name="Slithering Pincer" />
+      <card id="6046" name="Celerity" />
+      <card id="7021" name="Shadow Elemental" />
+      <card id="2056" mastery_level="2" name="Drainor" />
+      <card id="6044" mastery_level="3" name="Firewalker" />
+      <card id="6066" mastery_level="4" name="Psychic Beetle" />
+      <card id="5065" mastery_level="5" name="Hive Guard" />
+      <card id="5082" mastery_level="6" name="Memory" />
+      <card id="5068" mastery_level="7" name="Aht-Aht Carrier" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>First the mechas, now the feral bugs. This is too much to all be one coincidence.</text>
+      </line>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>Someone must be orchestrating this. Let's investigate.</text>
+      </line>
+    </speech>
+  </mission>
 </root>
