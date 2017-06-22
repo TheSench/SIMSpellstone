@@ -313,7 +313,7 @@
     <order>210</order>
     <icon>corrupt</icon>
     <name>Poison</name>
-    <desc>Poisons enemies damaged by this card, dealing additional damage at the end of turn</desc>
+    <desc>Poisons creatures damaged by this card, dealing additional damage at the end of turn</desc>
     <status_flag>poison</status_flag>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <balance_points>3</balance_points>
@@ -420,7 +420,6 @@
     <desc_all_faction>Reduces the next Damage dealt to all allied {y} creatures</desc_all_faction>
     <status_flag>protect</status_flag>
     <attributes x="1" y="1" all="1" c="0" s="0" />
-    <balance_points>3</balance_points>
     <hidden>1</hidden>
   </skillType>
   <skillType>
@@ -431,7 +430,6 @@
     <desc>Reanimates creatures when they die.</desc>
     <attributes x="1" y="1" all="0" c="0" s="0" />
     <status_flag>reanimated</status_flag>
-    <balance_points>8</balance_points>
     <hidden>1</hidden>
   </skillType>
   <skillType>
@@ -442,7 +440,6 @@
     <desc>Resurrects creatures when they die.</desc>
     <attributes x="1" y="1" all="0" c="0" s="0" />
     <status_flag>resurrected</status_flag>
-    <balance_points>8</balance_points>
     <hidden>1</hidden>
   </skillType>
   <skillType>
@@ -455,7 +452,6 @@
     <desc_faction>Deals bolt damage to a random enemy {y} creature and leaves poison</desc_faction>
     <desc_all_faction>Deals bolt damage to all enemy {y} creatures and leaves poison</desc_all_faction>
     <attributes x="1" y="0" all="1" c="0" s="0" />
-    <balance_points>6</balance_points>
     <hidden>1</hidden>
   </skillType>
   <skillType>
@@ -468,7 +464,6 @@
     <desc_faction>Reduces the Attack of a random allied {y} creature</desc_faction>
     <desc_all_faction>Reduces the attack of all ally {y} creatures</desc_all_faction>
     <attributes x="1" y="0" all="1" c="0" s="0" />
-    <balance_points>1.5</balance_points>
     <hidden>1</hidden>
   </skillType>
   <skillType>
@@ -480,7 +475,6 @@
     <status_flag>burn</status_flag>
     <status_flag>burn_cooldown</status_flag>
     <attributes x="1" y="0" all="0" c="0" s="0" />
-    <balance_points>4</balance_points>
     <hidden>1</hidden>
   </skillType>
   <skillType>
@@ -501,7 +495,6 @@
     <name>Slow</name>
     <desc>Increases the creature's delay.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
-    <balance_points>10</balance_points>
     <hidden>1</hidden>
   </skillType>
   <skillType>
@@ -531,7 +524,15 @@
     <name>Enlarge</name>
     <desc>Permanently increases the Attack of a creature when played, while this creature is active</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
-    <balance_points>8</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>venom</id>
+    <order>500</order>
+    <icon>venom</icon>
+    <name>Venom</name>
+    <desc>Creatures damaged by this card are afflicted with Venom, increasing damage dealt to it and dealing additional damage at the end of each turn</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
     <hidden>1</hidden>
   </skillType>
   <skillType>

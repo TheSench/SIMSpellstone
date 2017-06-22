@@ -18708,7 +18708,7 @@
     <id>5613</id>
     <name>A Friend's Support</name>
     <energy>9</energy>
-    <desc>Bluefire smashes his entire body into the barrier. The shield crumbles, Bluefire moving to close the distance. He unleashes another draconic breath, singing your skin, when Elyse places herself between you and The Void Master.</desc>
+    <desc>Bluefire smashes his entire body into the barrier. The shield crumbles and Bluefire moves to close the distance. He unleashes another draconic breath, singeing your skin, when Elyse places herself between you and The Void Master.</desc>
     <commander id="286" />
     <deck>
       <card id="8062" name="Abyss Curse" />
@@ -18768,7 +18768,7 @@
     <id>5615</id>
     <name>Teamwork</name>
     <energy>9</energy>
-    <desc>Bluefire roars as he and his creatures struggle to break through your defenses. With Oda and Elyse, and the spirit guiding your back,   you make a powerful team. The enemy tides are beginning to thin.</desc>
+    <desc>Bluefire roars as he and his creatures struggle to break through your defenses. With Oda and Elyse, and the spirit guiding your back, you make a powerful team. The enemy tides are beginning to thin.</desc>
     <commander id="293" />
     <deck>
       <card id="8062" name="Abyss Curse" />
@@ -19440,7 +19440,7 @@
     <id>5638</id>
     <name>Diligent Workers</name>
     <energy>9</energy>
-    <desc>The machines work together with eerie proficiency. Their knives and saws hit the wood in perfect harmony, creating a perfect rhythm. One mecha stops, red eyes turning towards you.</desc>
+    <desc>The machines work together with eerie proficiency. Their knives and saws hit the wood in harmony, creating a perfect rhythm. One mecha stops, red eyes turning towards you.</desc>
     <commander id="301" />
     <deck>
       <card id="5006" name="Arms Enforcer" />

@@ -6363,5 +6363,183 @@
       <gold>800</gold>
     </reward>
   </achievement>
+  <!-- Campaign Event 4 -->
+  <achievement>
+    <id>3244</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Honey Buzz</name>
+    <desc>Complete the 'Honey Buzz' campaign on Mastery Level 4.</desc>
+    <mission_req>64</mission_req>
+    <locked_start_time>1498755600</locked_start_time>
+    <!-- Thu, 29 June 2017 17:00:00 -->
+    <req>
+      <campaign>1130</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <item id="3056" number="50" />
+      <event_points id="7022" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3245</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Honey Buzz</name>
+    <desc>Complete the 'Honey Buzz' campaign on Mastery Level 7.</desc>
+    <locked_start_time>1498755600</locked_start_time>
+    <!-- Thu, 29 June 2017 17:00:00 -->
+    <achievement_req>3244</achievement_req>
+    <req>
+      <campaign>1130</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3246</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Heroes of the World</name>
+    <desc>Complete the 'Heroes of the World' campaign on Mastery Level 2.</desc>
+    <mission_req>64</mission_req>
+    <locked_start_time>1498755600</locked_start_time>
+    <!-- Thu, 29 June 2017 17:00:00 -->
+    <req>
+      <campaign>1131</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3247</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Heroes of the World</name>
+    <desc>Complete the 'Heroes of the World' campaign on Mastery Level 4.</desc>
+    <mission_req>64</mission_req>
+    <locked_start_time>1498755600</locked_start_time>
+    <!-- Thu, 29 June 2017 17:00:00 -->
+    <achievement_req>3246</achievement_req>
+    <req>
+      <campaign>1131</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3248</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Heroes of the World</name>
+    <desc>Complete the 'Heroes of the World' campaign on Mastery Level 6.</desc>
+    <mission_req>64</mission_req>
+    <locked_start_time>1498755600</locked_start_time>
+    <!-- Thu, 29 June 2017 17:00:00 -->
+    <achievement_req>3247</achievement_req>
+    <req>
+      <campaign>1131</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3249</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Heroes of the World</name>
+    <desc>Complete the 'Heroes of the World' campaign on Mastery Level 7.</desc>
+    <mission_req>64</mission_req>
+    <locked_start_time>1498755600</locked_start_time>
+    <!-- Thu, 29 June 2017 17:00:00 -->
+    <achievement_req>3248</achievement_req>
+    <req>
+      <campaign>1131</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3250</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Violent Coincidences</name>
+    <desc>Complete the 'Violent Coincidences' campaign on Mastery Level 2.</desc>
+    <mission_req>5637</mission_req>
+    <locked_start_time>1499965200</locked_start_time>
+    <!-- Thu, 13 July 2017 17:00:00 -->
+    <req>
+      <campaign>1132</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3251</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Violent Coincidences</name>
+    <desc>Complete the 'Violent Coincidences' campaign on Mastery Level 4.</desc>
+    <mission_req>5637</mission_req>
+    <locked_start_time>1499965200</locked_start_time>
+    <!-- Thu, 13 July 2017 17:00:00 -->
+    <achievement_req>3250</achievement_req>
+    <req>
+      <campaign>1132</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3252</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Violent Coincidences</name>
+    <desc>Complete the 'Violent Coincidences' campaign on Mastery Level 6.</desc>
+    <mission_req>5637</mission_req>
+    <locked_start_time>1499965200</locked_start_time>
+    <!-- Thu, 13 July 2017 17:00:00 -->
+    <achievement_req>3251</achievement_req>
+    <req>
+      <campaign>1132</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3253</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Violent Coincidences</name>
+    <desc>Complete the 'Violent Coincidences' campaign on Mastery Level 7.</desc>
+    <mission_req>5637</mission_req>
+    <locked_start_time>1499965200</locked_start_time>
+    <!-- Thu, 13 July 2017 17:00:00 -->
+    <achievement_req>3252</achievement_req>
+    <req>
+      <campaign>1132</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
 </root>

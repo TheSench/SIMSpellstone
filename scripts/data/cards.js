@@ -50336,6 +50336,227 @@ var CARDS = {
       },
     }
   },
+  "5136": {
+    "id": "5136",
+    "name": "Lapis",
+    "picture": "Water_Wing_Angel_A",
+    "hidden_until": "1497891600000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["6","5"],
+    "health": 17,
+    "attack": 6,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "frost",
+        "x": 2,
+      },
+      {
+        "id": "jam",
+        "c": 5,
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "frost",
+            "x": 2,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "3": {
+        "health": 18,
+        "skill": [],
+      },
+      "4": {
+        "health": 19,
+        "skill": [],
+      },
+      "5": {
+        "attack": 7,
+        "skill": [],
+      },
+      "6": {
+        "health": 20,
+        "skill": [],
+      },
+    }
+  },
+  "15136": {
+    "id": "15136",
+    "name": "Lapis, Wavewaker",
+    "picture": "Water_Wing_Angel_A",
+    "hidden_until": "1497891600000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["6","5"],
+    "health": 21,
+    "attack": 7,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "frost",
+        "x": 2,
+      },
+      {
+        "id": "jam",
+        "c": 4,
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "frost",
+            "x": 3,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "frost",
+            "x": 3,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "frost",
+            "x": 3,
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 22,
+        "skill": [],
+      },
+      "6": {
+        "attack": 8,
+        "skill": [],
+      },
+    }
+  },
+  "25136": {
+    "id": "25136",
+    "name": "Lapis, Wavebreaker",
+    "picture": "Water_Wing_Angel_B",
+    "hidden_until": "1497891600000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["6","5"],
+    "health": 23,
+    "attack": 8,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "frost",
+        "x": 3,
+      },
+      {
+        "id": "jam",
+        "c": 3,
+      },
+      {
+        "id": "weaken",
+        "x": 2,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 24,
+        "skill": [],
+      },
+      "3": {
+        "health": 25,
+        "skill": [],
+      },
+      "4": {
+        "attack": 9,
+        "skill": [],
+      },
+      "5": {
+        "health": 26,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "frost",
+            "x": 4,
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
   "6000": {
     "id": "6000",
     "name": "Furnace Mech",
@@ -161832,60 +162053,6 @@ var CARDS = {
       },
     }
   },
-  "8080": {
-    "id": "8080",
-    "name": "Reanimating Horde",
-    "picture": "Unearth_Skeleton_B",
-    "rarity": "3",
-    "set": "9999",
-    "card_type": "2",
-    "type": "8",
-    "sub_type": ["5"],
-    "health": 2,
-    "attack": 5,
-    "cost": 1,
-    "maxLevel": 5,
-    "skill": [
-      {
-        "id": "unearth",
-        "x": 1,
-      },
-    ],
-    "upgrades": {
-      "2": {
-        "skill": [
-          {
-            "id": "unearth",
-            "x": 2,
-          },
-        ],
-      },
-      "3": {
-        "skill": [
-          {
-            "id": "unearth",
-            "x": 3,
-          },
-        ],
-      },
-      "4": {
-        "skill": [
-          {
-            "id": "unearth",
-            "x": 4,
-          },
-        ],
-      },
-      "5": {
-        "skill": [
-          {
-            "id": "unearth",
-            "x": 5,
-          },
-        ],
-      },
-    }
-  },
   "9999": {
     "id": "9999",
     "name": "Unused Art",
@@ -162354,36 +162521,6 @@ var CARDS = {
   "9976": {
     "id": "9976",
     "name": "Unused Art",
-    "picture": "Water_Wing_Angel_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19976": {
-    "id": "19976",
-    "name": "Unused Art",
-    "picture": "Water_Wing_Angel_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9975": {
-    "id": "9975",
-    "name": "Unused Art",
     "picture": "Yuriel_A",
     "rarity": "0",
     "card_type": "2",
@@ -162397,4 +162534,4 @@ var CARDS = {
     "upgrades": {}
   },
 };
-var CardsUpdated = 1497548330351.02;
+var CardsUpdated = 1498133554266.44;

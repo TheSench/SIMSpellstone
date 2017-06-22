@@ -4554,8 +4554,8 @@
     <locked_start_time>1498755600</locked_start_time>
     <!-- Thu, 29 June 2017 17:00:00 -->
     <location_id>10</location_id>
-    <x>683</x>
-    <y>125</y>
+    <x>283</x>
+    <y>200</y>
     <combatBG>CombatBGVoid</combatBG>
     <missions>
       <mission_id>5624</mission_id>
@@ -4570,7 +4570,77 @@
       <card level="6" id="510" />
       <card level="7" id="510" />
     </rewards>
-    <find_item id="3054" drop_per_energy=".1" />
+    <find_item id="3056" drop_per_energy=".1" />
+  </campaign>
+  <campaign>
+    <id>1131</id>
+    <name>Heroes of the World</name>
+    <campaign_req>6</campaign_req>
+    <locked_start_time>1498755600</locked_start_time>
+    <!-- Thu, 29 June 2017 17:00:00 -->
+    <location_id>10</location_id>
+    <x>475</x>
+    <y>180</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5626</mission_id>
+      <mission_id>5627</mission_id>
+      <mission_id>5628</mission_id>
+      <mission_id>5629</mission_id>
+      <mission_id>5630</mission_id>
+      <mission_id>5631</mission_id>
+      <mission_id>5632</mission_id>
+      <mission_id>5633</mission_id>
+      <mission_id>5634</mission_id>
+      <mission_id>5635</mission_id>
+      <mission_id>5636</mission_id>
+      <mission_id>5637</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2090" />
+      <card level="5" id="512" />
+      <card level="6" id="512" />
+      <item level="7" id="3055" />
+    </rewards>
+    <find_item id="3056" drop_per_energy=".2" />
+  </campaign>
+  <campaign>
+    <id>1132</id>
+    <name>Violent Coincidences</name>
+    <campaign_req>1131</campaign_req>
+    <locked_start_time>1499965200</locked_start_time>
+    <!-- Thu, 13 July 2017 17:00:00 -->
+    <location_id>10</location_id>
+    <x>675</x>
+    <y>175</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5638</mission_id>
+      <mission_id>5639</mission_id>
+      <mission_id>5640</mission_id>
+      <mission_id>5641</mission_id>
+      <mission_id>5642</mission_id>
+      <mission_id>5643</mission_id>
+      <mission_id>5644</mission_id>
+      <mission_id>5645</mission_id>
+      <mission_id>5646</mission_id>
+      <mission_id>5647</mission_id>
+      <mission_id>5648</mission_id>
+      <mission_id>5649</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2090" />
+      <card level="5" id="512" />
+      <card level="6" id="512" />
+      <item level="7" id="3055" />
+    </rewards>
+    <find_item id="3056" drop_per_energy=".2" />
   </campaign>
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

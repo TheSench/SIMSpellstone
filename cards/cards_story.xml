@@ -6603,35 +6603,4 @@
       <skill id="leech" x="8" />
     </upgrade>
   </unit>
-  <unit>
-    <id>8080</id>
-    <card_type>2</card_type>
-    <name>Reanimating Horde</name>
-    <picture>Unearth_Skeleton_B</picture>
-    <asset_bundle>91</asset_bundle>
-    <attack>5</attack>
-    <health>2</health>
-    <cost>1</cost>
-    <rarity>3</rarity>
-    <skill id="unearth" x="1" card="8079" />
-    <type>8</type>
-    <sub_type>5</sub_type>
-    <set>9999</set>
-    <upgrade>
-      <level>2</level>
-      <skill id="unearth" x="2" card="8079" />
-    </upgrade>
-    <upgrade>
-      <level>3</level>
-      <skill id="unearth" x="3" card="8079" />
-    </upgrade>
-    <upgrade>
-      <level>4</level>
-      <skill id="unearth" x="4" card="8079" />
-    </upgrade>
-    <upgrade>
-      <level>5</level>
-      <skill id="unearth" x="5" card="8079" />
-    </upgrade>
-  </unit>
 </root>
