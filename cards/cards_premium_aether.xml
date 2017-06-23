@@ -16976,6 +16976,119 @@
     </upgrade>
   </unit>
   <unit>
+    <id>5135</id>
+    <card_type>2</card_type>
+    <name>Shatterwind</name>
+    <picture>Glass_Elemental_A</picture>
+    <asset_bundle>95</asset_bundle>
+    <hidden_until_time>1498150800</hidden_until_time>
+    <attack>5</attack>
+    <health>15</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="rally" x="1" y="5" />
+    <skill id="nullify" x="1" />
+    <skill id="flurry" c="6" />
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="rally" x="1" y="5" />
+      <skill id="nullify" x="1" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="rally" x="2" y="5" />
+      <skill id="nullify" x="1" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15135</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Shatterblades</name>
+    <picture>Glass_Elemental_A</picture>
+    <asset_bundle>95</asset_bundle>
+    <hidden_until_time>1498150800</hidden_until_time>
+    <attack>5</attack>
+    <health>17</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="rally" x="2" y="5" />
+    <skill id="nullify" x="1" />
+    <skill id="flurry" c="4" />
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>19</health>
+      <skill id="rally" x="3" y="5" />
+      <skill id="nullify" x="1" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>20</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25135</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Shatterstorm</name>
+    <picture>Glass_Elemental_B</picture>
+    <asset_bundle>95</asset_bundle>
+    <hidden_until_time>1498150800</hidden_until_time>
+    <attack>6</attack>
+    <health>20</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="rally" x="3" y="5" />
+    <skill id="nullify" x="1" />
+    <skill id="flurry" c="3" />
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="rally" x="4" y="5" />
+      <skill id="nullify" x="2" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>5136</id>
     <card_type>2</card_type>
     <name>Lapis</name>

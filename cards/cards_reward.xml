@@ -3867,6 +3867,7 @@
     <picture>Common_Dragon_A</picture>
     <asset_bundle>38</asset_bundle>
     <cannot_salvage>1</cannot_salvage>
+    <mythic>1</mythic>
     <attack>0</attack>
     <health>3</health>
     <cost>2</cost>
@@ -3891,6 +3892,7 @@
     <picture>Rare_Dragon_A</picture>
     <asset_bundle>38</asset_bundle>
     <cannot_salvage>1</cannot_salvage>
+    <mythic>1</mythic>
     <attack>2</attack>
     <health>10</health>
     <skill id="frost" x="1" />
@@ -3922,6 +3924,7 @@
     <picture>Epic_Dragon_B</picture>
     <asset_bundle>38</asset_bundle>
     <cannot_salvage>1</cannot_salvage>
+    <mythic>1</mythic>
     <attack>3</attack>
     <health>18</health>
     <skill id="frost" x="2" />
@@ -3957,6 +3960,7 @@
     <picture>Legendary_Dragon_B</picture>
     <asset_bundle>38</asset_bundle>
     <cannot_salvage>1</cannot_salvage>
+    <mythic>1</mythic>
     <attack>4</attack>
     <health>21</health>
     <skill id="frost" x="2" />
@@ -7954,6 +7958,7 @@
     <asset_bundle>38</asset_bundle>
     <hidden_until_time>1484240400</hidden_until_time>
     <cannot_salvage>1</cannot_salvage>
+    <mythic>1</mythic>
     <attack>4</attack>
     <health>24</health>
     <skill id="fury" x="1" />
@@ -7998,6 +8003,7 @@
     <asset_bundle>38</asset_bundle>
     <hidden_until_time>1484240400</hidden_until_time>
     <cannot_salvage>1</cannot_salvage>
+    <mythic>1</mythic>
     <attack>6</attack>
     <health>29</health>
     <skill id="fury" x="2" />
@@ -10144,6 +10150,8 @@
     <name>Verus, Arena Champion</name>
     <picture>Mythic_Avian_A</picture>
     <asset_bundle>38</asset_bundle>
+    <cannot_salvage>1</cannot_salvage>
+    <mythic>1</mythic>
     <attack>5</attack>
     <health>13</health>
     <cost>1</cost>
@@ -10185,6 +10193,8 @@
     <name>Verus, the Wind Dancer</name>
     <picture>Mythic_Avian_B</picture>
     <asset_bundle>38</asset_bundle>
+    <cannot_salvage>1</cannot_salvage>
+    <mythic>1</mythic>
     <attack>6</attack>
     <health>16</health>
     <cost>1</cost>
@@ -10226,6 +10236,7 @@
     <name>Verus, the Galeheart</name>
     <asset_prefab>Avian_Mythic_A</asset_prefab>
     <asset_bundle>36</asset_bundle>
+    <cannot_salvage>1</cannot_salvage>
     <attack>7</attack>
     <health>19</health>
     <cost>1</cost>

@@ -8565,4 +8565,52 @@
       <skill id="heal" all="1" y="8" x="5" />
     </upgrade>
   </unit>
+  <!-- Campaign Event 4 -->
+  <unit>
+    <id>391</id>
+    <card_type>1</card_type>
+    <name>Scarab Scrapper</name>
+    <portrait>steampunk_scarab</portrait>
+    <asset_bundle>86</asset_bundle>
+    <attack>0</attack>
+    <health>30</health>
+    <rarity>4</rarity>
+    <skill id="imbue" x="2" s="counter" />
+    <skill id="enhance" x="2" s="corrosive" />
+    <skill id="protect" x="2" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>37</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>44</health>
+      <skill id="imbue" x="3" s="counter" />
+      <skill id="enhance" x="2" s="corrosive" />
+      <skill id="protect" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>51</health>
+      <skill id="imbue" x="4" s="counter" />
+      <skill id="enhance" x="3" s="corrosive" />
+      <skill id="protect" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>58</health>
+      <skill id="imbue" x="5" s="counter" />
+      <skill id="enhance" x="3" s="corrosive" />
+      <skill id="protect" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>66</health>
+      <skill id="imbue" x="6" s="counter" />
+      <skill id="enhance" x="4" s="corrosive" />
+      <skill id="protect" x="6" />
+    </upgrade>
+  </unit>
 </root>

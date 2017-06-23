@@ -1883,7 +1883,7 @@ var SIMULATOR = {};
                 }
             }
 
-            current_assault.enfeebled = 0;
+            current_assault.enfeebled = current_assault.envenomed;
             current_assault.enraged = 0;
             current_assault.protected = 0;
             current_assault.barrier_ice = 0;
@@ -2237,7 +2237,6 @@ var SIMULATOR = {};
             var current_assault = field_p_assaults[key];
 
             current_assault.jammed = false;
-            current_assault.enfeebled = 0;
             current_assault.attack_rally = 0;
             current_assault.attack_weaken = 0;
             current_assault.nullified = 0;
@@ -2460,6 +2459,32 @@ var SIMULATOR = {};
                     target['poisoned'] = poison;
                     if (debug) echo += debug_name(current_assault) + ' inflicts poison(' + poison + ') on ' + debug_name(target) + '<br>';
                 }
+            }
+
+            // Venom
+            // - Target must have taken damage
+            // - Target must be an assault
+            // - Sets poisioned to greater of target's current poisioned or new poison
+            // - Sets envenomed to greater of target's current envenomed or new venom
+            if (current_assault.venom) {
+                var venom = current_assault.venom;
+                var enhanced = getEnhancement(current_assault, 'venom');
+                if (enhanced) {
+                    if (enhanced < 0) {
+                        enhanced = Math.ceil(venom * -enhanced);
+                    }
+                    venom += enhanced;
+                }
+                var affected = false;
+                if (venom > target['envenomed']) {
+                    target['envenomed'] = venom;
+                    affected = true;
+                }
+                if (venom > target['poisoned']) {
+                    target['poisoned'] = venom;
+                    affected = true;
+                }
+                if (debug && affected) echo += debug_name(current_assault) + ' inflicts venom(' + venom + ') on ' + debug_name(target) + '<br>';
             }
 
             // Nullify

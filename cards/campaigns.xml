@@ -4918,12 +4918,12 @@
     </rewards>
   </campaign>
   <!-- END Hero Upgrade Campaigns -->
-  <!-- Test Campaign 
+  <!-- Test Campaign
 
 	<campaign>
 		<id>3009</id>
 		<name>Mythic Test</name>
-		<icon id='red_boss_gem' bundle='15' />
+		<icon id='black_boss_gem' bundle='15' />
 		<campaign_req>24</campaign_req>
 		<side_mission>1</side_mission>
 		<location_id>4</location_id>
@@ -4948,5 +4948,5 @@
 			<item level='5' id='1012' />
 		</rewards>
 	</campaign>
-	-->
+	 -->
 </root>

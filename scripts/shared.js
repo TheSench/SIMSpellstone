@@ -164,6 +164,7 @@ function initializeCard(card, p, newKey) {
     card.dualstrike_triggered = false;
     card.mark_target = 0;
     card.nullified = 0;
+    card.envenomed = 0;
     card.poisoned = 0;
     card.scorched = 0;
     card.corroded = 0;
@@ -240,6 +241,7 @@ function cloneCard(original) {
     copy.silence = original.silence;
     copy.taunt = original.taunt;
     copy.valor = original.valor;
+    copy.venom = original.venom;
     if (original.flurry) {
         copy.skillTimers = [];
         copy.flurry = { id: original.flurry.id, c: original.flurry.c };
@@ -360,6 +362,7 @@ var makeUnit = (function () {
         taunt: false,
         unearth: null,
         valor: 0,
+        venom: 0,
         // Attack Modifiers
         attack_berserk: 0,
         attack_valor: 0,
@@ -371,6 +374,7 @@ var makeUnit = (function () {
         mark_target: 0,
         // Other Statuses
         // Statuses
+        envenomed: 0,
         nullified: 0,
         poisoned: 0,
         scorched: 0,
@@ -398,6 +402,7 @@ var makeUnit = (function () {
                 this.attack_berserk = 0;
                 this.attack_valor = 0;
                 this.mark_target = 0;
+                this.envenomed = 0;
                 this.nullified = 0;
                 this.poisoned = 0;
                 this.scorched = 0;
@@ -442,7 +447,7 @@ var makeUnit = (function () {
                 }
             }
 
-            this.enfeebled = 0;
+            this.enfeebled = this.envenomed;
             this.enraged = 0;
             this.protected = 0;
             this.barrier_ice = 0;
@@ -607,6 +612,7 @@ var makeUnit = (function () {
                 case 'poison':
                 case 'scorchbreath':
                 case 'valor':
+                case 'venom':
                     this[skillID] += parseInt(skill.x);
                     this.imbued[skillID] = (this.imbued[skillID] ||0) + skill.x;
                     return;
@@ -712,6 +718,7 @@ var makeUnit = (function () {
                 case 'silence':
                 case 'taunt':
                 case 'valor':
+                case 'venom':
                     return this[s];
                     break;
                     
@@ -883,6 +890,7 @@ var isImbued = function (card, skillID, i) {
         case 'poison':
         case 'scorchbreath':
         case 'valor':
+        case 'venom':
             return (card[skillID] === card.imbued[skillID])
 
         // On-Death Skills
@@ -1321,6 +1329,7 @@ function setSkill_2(new_card, skill) {
         case 'poison':
         case 'scorchbreath':
         case 'valor':
+        case 'venom':
             new_card[skill.id] = (new_card[skill.id] | 0) + skill.x;
             break;
         case 'flurry':
@@ -1677,6 +1686,7 @@ function debug_triggered_skills(card, skillText) {
     debugNonActivatedSkill(card, "pierce", skillText);
     debugNonActivatedSkill(card, "burn", skillText);
     debugNonActivatedSkill(card, "poison", skillText);
+    debugNonActivatedSkill(card, "venom", skillText);
     debugNonActivatedSkill(card, "leech", skillText);
     debugNonActivatedSkill(card, "berserk", skillText);
     debugNonActivatedSkill(card, "scorchbreath", skillText);

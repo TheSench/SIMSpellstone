@@ -537,6 +537,8 @@
 .sprite-Glass_Colossuss_A{ background-position: -84px -840px; background-image: url('../res/sprites/SpriteSheet4.jpg');}
 .sprite-Glass_Colossuss_B{ background-position: -168px -840px; background-image: url('../res/sprites/SpriteSheet4.jpg');}
 .sprite-Glass_Colossuss_C{ background-position: -252px -840px; background-image: url('../res/sprites/SpriteSheet4.jpg');}
+.sprite-Glass_Elemental_A{ background-position: -756px -240px; background-image: url('../res/sprites/SpriteSheet14.jpg');}
+.sprite-Glass_Elemental_B{ background-position: -0px -360px; background-image: url('../res/sprites/SpriteSheet14.jpg');}
 .sprite-Goblin_Avian_Phoenix_A{ background-position: -336px -480px; background-image: url('../res/sprites/SpriteSheet12.jpg');}
 .sprite-Goblin_Avian_Phoenix_B{ background-position: -420px -480px; background-image: url('../res/sprites/SpriteSheet12.jpg');}
 .sprite-Goblin_Elemental_Surfer_A{ background-position: -420px -0px; background-image: url('../res/sprites/SpriteSheet14.jpg');}

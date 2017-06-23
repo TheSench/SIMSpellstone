@@ -266,6 +266,20 @@ var BATTLEGROUNDS = {
       },
     ]
   },
+  "117": {
+    "name": "Venom Sting",
+    "id": "117",
+    "desc": "Each Insect gains Venom. Creatures damaged by Venom creatures have increased damage dealt to it and are dealt additional damage at the end of each turn.",
+    "effect": [
+      {
+        "effect_type": "add_skill",
+        "id": "venom",
+        "mult": 0.3,
+        "base": "attack",
+        "y": "13",
+      },
+    ]
+  },
   "501": {
     "name": "Castle Siege",
     "id": "501",
@@ -1088,6 +1102,22 @@ var BATTLEGROUNDS = {
         "effect_type": "scale_attributes",
         "base_mult": .1,
         "mult": .04,
+      },
+    ]
+  },
+  "2014": {
+    "name": "Six-Stanza Sonata",
+    "id": "2014",
+    "desc": "Non-token enemies become stronger with each passing Mastery level.",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "5",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .008,
+        "mult": .0025,
       },
     ]
   },
