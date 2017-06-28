@@ -33,7 +33,8 @@ var DATA_UPDATER = (function () {
         "cards_reward.xml",
         "cards_special.xml",
         "cards_standard.xml",
-        "cards_story.xml"
+        "cards_story.xml",
+        "fusion_recipes_cj2.xml"
     ];
     function doUpdateCards(callback, file) {
         file = (file || 0);
@@ -55,6 +56,16 @@ var DATA_UPDATER = (function () {
                         }
                     }
                     CARDS[id] = cardData
+                }
+                var fusions = doc.getElementsByTagName("fusion_recipe");
+                for (var i = 0; i < fusions.length; i++) {
+                    var node = fusions[i];
+                    var fusion = getValue(node, "card_id", false);
+                    var resource = node.getElementsByTagName("resource")[0];
+                    if (resource) {
+                        var base = getValue(resource, "card_id", true);
+                        FUSIONS[base] = fusion;
+                    }
                 }
                 onloaded(file, callback);
             },

@@ -269,13 +269,13 @@ var BATTLEGROUNDS = {
   "117": {
     "name": "Venom Sting",
     "id": "117",
-    "desc": "Each Insect gains Venom. Creatures damaged by Venom creatures have increased damage dealt to it and are dealt additional damage at the end of each turn.",
+    "desc": "Creatures damaged by Insects are inflicted with Venom, taking damage at the end of their turn and taking additional damage from attacks and skills.",
     "effect": [
       {
         "effect_type": "add_skill",
         "id": "venom",
-        "mult": 0.3,
-        "base": "attack",
+        "mult": 0.1,
+        "base": "health",
         "y": "13",
       },
     ]

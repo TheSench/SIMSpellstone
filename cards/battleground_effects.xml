@@ -337,10 +337,10 @@
   <battleground>
     <id>117</id>
     <name>Venom Sting</name>
-    <desc>Each Insect gains Venom. Creatures damaged by Venom creatures have increased damage dealt to it and are dealt additional damage at the end of each turn.</desc>
+    <desc>Creatures damaged by Insects are inflicted with Venom, taking damage at the end of their turn and taking additional damage from attacks and skills.</desc>
     <icon>filter_insect_64.png</icon>
     <effect>
-      <add_skill id="venom" mult="0.3" base="attack" y="13" />
+      <add_skill id="venom" mult="0.1" base="health" y="13" />
     </effect>
   </battleground>
   <!-- 501-1000: Specialty BGE -->

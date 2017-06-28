@@ -545,15 +545,6 @@
     <hidden>1</hidden>
   </skillType>
   <skillType>
-    <id>venompoison</id>
-    <order>500</order>
-    <icon>venom</icon>
-    <name>Venom Poison</name>
-    <desc>Creature has been afflicted with Venom and Poison.</desc>
-    <attributes x="1" y="0" all="0" c="0" s="0" />
-    <hidden>1</hidden>
-  </skillType>
-  <skillType>
     <id>displayEffect</id>
     <order>0</order>
     <upkeep>1</upkeep>
