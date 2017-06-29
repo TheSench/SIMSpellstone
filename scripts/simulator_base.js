@@ -123,7 +123,7 @@ var SIMULATOR = {};
         }
 
         if (debug) {
-            echo += (!current_assault.isAlive() ? ' and it dies' : additionalLog) + '<br>';
+            echo += (!target.isAlive() ? ' and it dies' : additionalLog) + '<br>';
         }
 
         if (shatter) {
