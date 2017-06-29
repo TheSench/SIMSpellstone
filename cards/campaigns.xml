@@ -4565,7 +4565,7 @@
       <card level="1" id="510" />
       <card level="2" id="510" />
       <card level="3" id="510" />
-      <card level="4" id="2001" />
+      <card level="4" id="2098" />
       <card level="5" id="510" />
       <card level="6" id="510" />
       <card level="7" id="510" />
@@ -4600,7 +4600,7 @@
       <card level="1" id="511" />
       <card level="2" id="511" />
       <card level="3" id="511" />
-      <card level="4" id="2090" />
+      <card level="4" id="2048" />
       <card level="5" id="512" />
       <card level="6" id="512" />
       <item level="7" id="3058" />
@@ -4635,9 +4635,9 @@
       <card level="1" id="511" />
       <card level="2" id="511" />
       <card level="3" id="511" />
-      <card level="4" id="2090" />
+      <card level="4" id="2099" />
       <card level="5" id="512" />
-      <card level="6" id="512" />
+      <card level="6" id="2049" />
       <item level="7" id="3058" />
     </rewards>
     <find_item id="3056" drop_per_energy=".4" />

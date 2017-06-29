@@ -336,8 +336,8 @@
   </battleground>
   <battleground>
     <id>117</id>
-    <name>Venom Sting</name>
-    <desc>Creatures damaged by Insects are inflicted with Venom, taking damage at the end of their turn and taking additional damage from attacks and skills.</desc>
+    <name>Insectile Venom</name>
+    <desc>Insects gain Venom equal to 10% of their Health. Creatures damaged by Insects are inflicted with Venom, taking damage at the end of their turn and taking additional damage from attacks and skills.</desc>
     <icon>filter_insect_64.png</icon>
     <effect>
       <add_skill id="venom" mult="0.1" base="health" y="13" />

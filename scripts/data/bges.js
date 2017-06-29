@@ -267,9 +267,9 @@ var BATTLEGROUNDS = {
     ]
   },
   "117": {
-    "name": "Venom Sting",
+    "name": "Insectile Venom",
     "id": "117",
-    "desc": "Creatures damaged by Insects are inflicted with Venom, taking damage at the end of their turn and taking additional damage from attacks and skills.",
+    "desc": "Insects gain Venom equal to 10% of their Health. Creatures damaged by Insects are inflicted with Venom, taking damage at the end of their turn and taking additional damage from attacks and skills.",
     "effect": [
       {
         "effect_type": "add_skill",

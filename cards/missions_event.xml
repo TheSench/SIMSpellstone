@@ -19800,4 +19800,101 @@
       </line>
     </speech>
   </mission>
+  <!-- Boss Node -->
+  <mission>
+    <id>5650</id>
+    <name>Blind Blame</name>
+    <energy>9</energy>
+    <desc>The Assassin order those around him to attack. Although his voice remains calm, you can see how his sword arm trembles. For everything in this world that has changed, he now blames you...</desc>
+    <commander id="392" />
+    <deck>
+      <card id="7067" name="Mantis" />
+      <card id="7064" name="Willowfly" />
+      <card id="7064" name="Willowfly" />
+      <card id="7130" name="Fluttering Stinger" />
+      <card id="7130" name="Fluttering Stinger" />
+      <card id="6065" name="Torchsnout" />
+      <card id="6129" name="Scorgon Trapper" />
+      <card id="6129" name="Scorgon Trapper" />
+      <card id="2099" name="White Regemage" />
+      <card id="5068" name="Aht-Aht Carrier" />
+      <card id="5068" name="Aht-Aht Carrier" />
+      <card id="5070" name="Hornslicer" />
+      <card id="5070" name="Hornslicer" />
+      <card id="2097" name="Gem Harvester" />
+      <card id="2097" name="Gem Harvester" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5651</id>
+    <name>Opposite Spectrums</name>
+    <energy>9</energy>
+    <desc>When you try to explain yourself, to defend all the actions you took and the freedom that you brought, he stops you. For this freedom was not one he wished for. With just one purpose of revenge, his quest has ended, and yet he has no one waiting for him to return home.</desc>
+    <commander id="392" />
+    <deck>
+      <card id="7067" name="Mantis" />
+      <card id="7064" name="Willowfly" />
+      <card id="7064" name="Willowfly" />
+      <card id="7130" name="Fluttering Stinger" />
+      <card id="7130" name="Fluttering Stinger" />
+      <card id="6065" name="Torchsnout" />
+      <card id="6129" name="Scorgon Trapper" />
+      <card id="6129" name="Scorgon Trapper" />
+      <card id="2099" name="White Regemage" />
+      <card id="5068" name="Aht-Aht Carrier" />
+      <card id="5068" name="Aht-Aht Carrier" />
+      <card id="5070" name="Hornslicer" />
+      <card id="5070" name="Hornslicer" />
+      <card id="2097" name="Gem Harvester" />
+      <card id="2097" name="Gem Harvester" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5652</id>
+    <name>War Life</name>
+    <energy>9</energy>
+    <desc>As such, the only life he knows is one of fighting. There is no place for him in this new world of peace. If no trouble exists, than he shall create it. He vows to gather all your enemies, all the people you have trampled upon to reach your position.</desc>
+    <commander id="392" />
+    <deck>
+      <card id="7067" name="Mantis" />
+      <card id="7064" name="Willowfly" />
+      <card id="7064" name="Willowfly" />
+      <card id="7130" name="Fluttering Stinger" />
+      <card id="7130" name="Fluttering Stinger" />
+      <card id="6065" name="Torchsnout" />
+      <card id="6129" name="Scorgon Trapper" />
+      <card id="6129" name="Scorgon Trapper" />
+      <card id="2099" name="White Regemage" />
+      <card id="5068" name="Aht-Aht Carrier" />
+      <card id="5068" name="Aht-Aht Carrier" />
+      <card id="5070" name="Hornslicer" />
+      <card id="5070" name="Hornslicer" />
+      <card id="2097" name="Gem Harvester" />
+      <card id="2097" name="Gem Harvester" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5653</id>
+    <name>Bitter Promises</name>
+    <energy>9</energy>
+    <desc>For while you have created many friends in your quest to defeat The Void, so too have you made many enemies. The Assassin sends the remaining Insects against you, before slipping into the night.</desc>
+    <commander id="392" />
+    <deck>
+      <card id="7067" name="Mantis" />
+      <card id="7064" name="Willowfly" />
+      <card id="7064" name="Willowfly" />
+      <card id="7130" name="Fluttering Stinger" />
+      <card id="7130" name="Fluttering Stinger" />
+      <card id="6065" name="Torchsnout" />
+      <card id="6129" name="Scorgon Trapper" />
+      <card id="6129" name="Scorgon Trapper" />
+      <card id="2099" name="White Regemage" />
+      <card id="5068" name="Aht-Aht Carrier" />
+      <card id="5068" name="Aht-Aht Carrier" />
+      <card id="5070" name="Hornslicer" />
+      <card id="5070" name="Hornslicer" />
+      <card id="2097" name="Gem Harvester" />
+      <card id="2097" name="Gem Harvester" />
+    </deck>
+  </mission>
 </root>

@@ -17163,4 +17163,136 @@
       <skill id="frost" x="4" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6138</id>
+    <card_type>2</card_type>
+    <name>Bitter Therix</name>
+    <picture>Poison_Tail_Insect_A</picture>
+    <asset_bundle>98</asset_bundle>
+    <hidden_until_time>1498755600</hidden_until_time>
+    <attack>6</attack>
+    <health>26</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="4" />
+    <skill id="strike" x="1" all="1" />
+    <skill id="poison" x="5" />
+    <type>2</type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>28</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="corrosive" x="5" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="poison" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>30</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16138</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Toxin Therix</name>
+    <picture>Poison_Tail_Insect_A</picture>
+    <asset_bundle>98</asset_bundle>
+    <hidden_until_time>1498755600</hidden_until_time>
+    <attack>7</attack>
+    <health>30</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="5" />
+    <skill id="strike" x="1" all="1" />
+    <skill id="poison" x="7" />
+    <type>2</type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="corrosive" x="6" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="poison" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>32</health>
+      <skill id="corrosive" x="6" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="poison" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="6" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="poison" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>33</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26138</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Banebite Therix</name>
+    <picture>Poison_Tail_Insect_B</picture>
+    <asset_bundle>98</asset_bundle>
+    <hidden_until_time>1498755600</hidden_until_time>
+    <attack>7</attack>
+    <health>34</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="7" />
+    <skill id="strike" x="2" all="1" />
+    <skill id="poison" x="8" />
+    <type>2</type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="corrosive" x="7" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="poison" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>35</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>8</attack>
+      <health>36</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="8" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="poison" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="corrosive" x="8" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="poison" x="10" />
+    </upgrade>
+  </unit>
 </root>
