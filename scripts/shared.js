@@ -466,8 +466,11 @@ var makeUnit = (function () {
 
             var poison = this.poisoned;
             if (poison) {
-                if (debug) echo += debug_name(this) + ' takes ' + amount + ' poison damage';
-                do_damage(this, poison);
+                do_damage(null, this, poison, null, function (source, target, amount) {
+                    echo += debug_name(target) + ' takes ' + amount + ' poison damage';
+                    if (!target.isAlive()) echo += ' and it dies';
+                    echo += '<br>';
+                });
             }
 
             var scorch = this.scorched;
@@ -479,10 +482,12 @@ var makeUnit = (function () {
                     this.scorched = 0;
                 }
 
-                if (debug) echo += debug_name(this) + ' takes ' + amount + ' scorch damage';
-
-                do_damage(this, amount, false, ' and scorch wears off');
-
+                do_damage(null, this, amount, null, function (source, target, amount) {
+                    echo += debug_name(target) + ' takes ' + amount + ' scorch damage';
+                    if (!target.isAlive()) echo += ' and it dies';
+                    else if (!target.scorched) echo += ' and scorch wears off';
+                    echo += '<br>';
+                });
             }
 
             var corroded = this.corroded;
@@ -592,7 +597,7 @@ var makeUnit = (function () {
                     this.imbued[skillID] = 1;
                     return;
 
-                // Passives
+                    // Passives
                 case 'armored':
                 case 'berserk':
                 case 'burn':
@@ -609,7 +614,7 @@ var makeUnit = (function () {
                 case 'valor':
                 case 'venom':
                     this[skillID] += parseInt(skill.x);
-                    this.imbued[skillID] = (this.imbued[skillID] ||0) + skill.x;
+                    this.imbued[skillID] = (this.imbued[skillID] || 0) + skill.x;
                     return;
                 case 'flurry':
                     if (!this.flurry) {
@@ -623,7 +628,7 @@ var makeUnit = (function () {
                     imbueSkillsKey = 'onDeathSkills';
                     break;
 
-                // Early Activation skills
+                    // Early Activation skills
                 case 'barrage':
                 case 'enhance':
                 case 'enlarge':
@@ -636,7 +641,7 @@ var makeUnit = (function () {
                     imbueSkillsKey = 'earlyActivationSkills';
                     break;
 
-                // Activation skills (can occur twice on a card)
+                    // Activation skills (can occur twice on a card)
                 case 'enfeeble':
                 case "evadebarrier":
                 case 'frost':
@@ -716,13 +721,13 @@ var makeUnit = (function () {
                 case 'venom':
                     return this[s];
                     break;
-                    
-                // On-Death skills
+
+                    // On-Death skills
                 case 'unearth':
                     target_skills = this.onDeathSkills;
                     break;
 
-                // Early Activation skills
+                    // Early Activation skills
                 case 'barrage':
                 case 'enhance':
                 case 'enlarge':
@@ -735,7 +740,7 @@ var makeUnit = (function () {
                     target_skills = this.earlyActivationSkills;
                     break;
 
-                // Activation skills
+                    // Activation skills
                 case 'enfeeble':
                 case "evadebarrier":
                 case 'frost':
@@ -870,7 +875,7 @@ var isImbued = function (card, skillID, i) {
         case 'taunt':
             return card.imbued[skillID];
 
-        // Passive Skills
+            // Passive Skills
         case 'armored':
         case 'berserk':
         case 'burn':
@@ -888,12 +893,12 @@ var isImbued = function (card, skillID, i) {
         case 'venom':
             return (card[skillID] === card.imbued[skillID])
 
-        // On-Death Skills
+            // On-Death Skills
         case 'unearth':
             imbueSkillsKey = 'onDeathSkills';
             break;
 
-        // Early Activation skills
+            // Early Activation skills
         case 'barrage':
         case 'enhance':
         case 'enlarge':
@@ -906,7 +911,7 @@ var isImbued = function (card, skillID, i) {
             imbueSkillsKey = 'earlyActivationSkills';
             break;
 
-        // Activation skills (can occur twice on a card)
+            // Activation skills (can occur twice on a card)
         case 'enfeeble':
         case "evadebarrier":
         case 'frost':
@@ -1309,7 +1314,7 @@ function setSkill_2(new_card, skill) {
             new_card[skillID] = true;
             return;
 
-        // Passives
+            // Passives
         case 'armored':
         case 'berserk':
         case 'burn':
@@ -1331,12 +1336,12 @@ function setSkill_2(new_card, skill) {
             new_card[skill.id] = skill;
             break;
 
-        // On-Death Skills
+            // On-Death Skills
         case 'unearth':
             new_card.onDeathSkills.push(skill);
             break;
 
-        // Early Activation Skills
+            // Early Activation Skills
         case 'barrage':
         case 'enhance':
         case 'enlarge':
@@ -1349,7 +1354,7 @@ function setSkill_2(new_card, skill) {
             new_card.earlyActivationSkills.push(skill);
             break;
 
-        // Activation skills (can occur twice on a card)
+            // Activation skills (can occur twice on a card)
         case 'enfeeble':
         case "evadebarrier":
         case 'frost':
@@ -1362,7 +1367,7 @@ function setSkill_2(new_card, skill) {
         case 'silence':
         case 'strike':
         case 'weaken':
-        // All other skills
+            // All other skills
         default:
             new_card.skill.push(skill);
             break;
@@ -1737,10 +1742,10 @@ var runeDelimiter = "/";
 var indexDelimiter = '-';
 var priorityDelimiter = '|';
 var towers = {};
-for(var id in CARDS) {
-    if(id < 10000) {
+for (var id in CARDS) {
+    if (id < 10000) {
         var card = CARDS[id];
-        if(card.sub_type.indexOf("999") >= 0) {
+        if (card.sub_type.indexOf("999") >= 0) {
             towers[id] = true;
         }
     }
@@ -2406,9 +2411,9 @@ function fuseCard(cardID, fusion) {
             for (var i = 0; i < fusion; i++) {
                 cardID = doFuseCard(cardID);
             }
-        // Max fusion
+            // Max fusion
         } else {
-            while(true) {
+            while (true) {
                 var fused = doFuseCard(cardID);
                 if (cardID === fused) {
                     break;
@@ -2471,7 +2476,7 @@ function get_skills(id, level) {
 }
 
 function get_card_by_id(unit, skillModifiers, skillMult) {
-    
+
     var current_card = loadCard(unit.id);
 
     // Not a valid card
@@ -2565,20 +2570,16 @@ function loadCard(id) {
     return card;
 }
 
-function getCardInfo(unit)
-{
+function getCardInfo(unit) {
     var id = unit.id;
     var level = unit.level;
 
     var original = CARDS[id];
 
     var card = Object.assign({}, original);
-    if (level > 1)
-    {
-        if (level > 1)
-        {
-            for (var key in original.upgrades)
-            {
+    if (level > 1) {
+        if (level > 1) {
+            for (var key in original.upgrades) {
                 var upgrade = original.upgrades[key];
                 if (upgrade.cost !== undefined) card.cost = upgrade.cost;
                 if (upgrade.health !== undefined) card.health = upgrade.health;

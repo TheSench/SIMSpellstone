@@ -91,7 +91,7 @@ var SIMULATOR = {};
             }
         }
     };
-    
+
     // Picks one target by random
     function choose_random_target(targets) {
         var targetIndex = ~~(Math.random() * targets.length)
@@ -109,21 +109,20 @@ var SIMULATOR = {};
 
     // Deal damage to card
     // and keep track of cards that have died this turn
-    function do_damage(source, target, damage, shatter, additionalLog) {
+    function do_damage(source, target, damage, shatter, logFn) {
         if (damage >= target.health_left) {
             target.health_left = 0;
         } else {
             target.health_left -= damage;
-            if (target.enraged > 0) {
-                target.attack_berserk += target.enraged;
-                if (debug) {
-                    echo += debug_name(target) + " is enraged and gains " + target.enraged + " attack!</br>";
-                }
-            }
+           
         }
 
         if (debug) {
-            echo += (!target.isAlive() ? ' and it dies' : (additionalLog || '')) + '<br>';
+            logFn(source, target, damage);
+            if (target.isAlive() && target.enraged > 0) {
+                target.attack_berserk += target.enraged;
+                echo += debug_name(target) + " is enraged and gains " + target.enraged + " attack!</br>";
+            }
         }
 
         if (shatter) {
@@ -143,11 +142,10 @@ var SIMULATOR = {};
         var target = field_o.assaults[src_card.key];
         if (!target || !target.isAlive()) target = field_o.commander;
 
-        if (debug) {
-            echo += debug_name(src_card) + "'s barrier shatters and hits " + debug_name(target) + ' for ' + amount + ' damage';
-        }
-
-        do_damage(src_card, target, amount);
+        do_damage(src_card, target, amount, null, function (source, target, amount) {
+            echo += debug_name(source) + "'s barrier shatters and hits " + debug_name(target) + ' for ' + amount + ' damage';
+            echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
+        });
     };
 
     // Empower, Legion, and Fervor all activate at the beginning of the turn, after commander
@@ -241,7 +239,7 @@ var SIMULATOR = {};
         },
         evadebarrier: function (src_card, skill) {
             return activationSkills.protect(src_card, skill, "invisible", function (target, amount) {
-               return ' and imbues it with invisible ' + amount;
+                return ' and imbues it with invisible ' + amount;
             });
         },
         protect: function (src_card, skill, additional, additionalDebug) {
@@ -292,7 +290,7 @@ var SIMULATOR = {};
                 }
 
                 affected++;
-                
+
                 var protect_amt = protect;
                 if (!protect_amt) {
                     var mult = skill.mult;
@@ -478,18 +476,20 @@ var SIMULATOR = {};
                     }
                 }
 
-                if (debug) {
+                do_damage(src_card, target, strike_damage, shatter, function (source, target, amount) {
                     echo += '<u>(Strike: +' + strike;
                     if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
                     if (enhanced) echo += ' Enhance: +' + enhanced;
                     if (protect) echo += ' Barrier: -' + protect;
-                    echo += ') = ' + strike_damage + ' damage</u><br>';
-                    echo += debug_name(src_card) + ' bolts ' + debug_name(target) + ' for ' + strike_damage + ' damage';
-                    
-                }
-                var additionalLog = (poisonDamage ? ' and inflicts poison(' + poisonDamage + ') on it' : '');
-
-                do_damage(src_card, target, strike_damage, shatter, additionalLog);
+                    echo += ') = ' + amount + ' damage</u><br>';
+                    echo += debug_name(source) + ' bolts ' + debug_name(target) + ' for ' + amount + ' damage';
+                    if (!target.isAlive()) {
+                        echo += ' and it dies';
+                    } else if (poisonDamage) {
+                        echo += ' and inflicts poison(' + poisonDamage + ') on it';
+                    }
+                    echo += '<br>';
+                });
             }
 
             return affected;
@@ -542,7 +542,7 @@ var SIMULATOR = {};
                 var target = field_x_assaults[targets[key]];
 
                 var intensifiedFields = (target.scorched ? "scorch" : "");
-                intensifiedFields += (target.poisoned ? (intensifiedFields ? " and poison" : "poison")  : "");
+                intensifiedFields += (target.poisoned ? (intensifiedFields ? " and poison" : "poison") : "");
 
                 // Check Evade
                 if (target.invisible) {
@@ -553,10 +553,10 @@ var SIMULATOR = {};
 
                 affected++;
 
-                if(target.scorched) {
+                if (target.scorched) {
                     target.scorched.amount += intensify;
                 }
-                if(target.poisoned) {
+                if (target.poisoned) {
                     target.poisoned += intensify;
                 }
 
@@ -759,16 +759,15 @@ var SIMULATOR = {};
                     frost_damage -= protect;
                 }
 
-                if (debug) {
+                do_damage(src_card, target, frost_damage, shatter, function (source, target, amount) {
                     echo += '<u>(Frostbreath: +' + frost;
                     if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
                     if (enhanced) echo += ' Enhance: +' + enhanced;
                     if (protect) echo += ' Barrier: -' + protect;
-                    echo += ') = ' + frost_damage + ' damage</u><br>';
-                    echo += debug_name(src_card) + ' breathes frost at ' + debug_name(target) + ' for ' + frost_damage + ' damage';
-                }
-
-                do_damage(src_card, target, frost_damage, shatter);
+                    echo += ') = ' + amount + ' damage</u><br>';
+                    echo += debug_name(source) + ' breathes frost at ' + debug_name(target) + ' for ' + amount + ' damage';
+                    echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
+                });
             }
 
             return affected;
@@ -1187,16 +1186,15 @@ var SIMULATOR = {};
                         strike_damage -= protect;
                     }
 
-                    if (debug) {
+                    do_damage(src_card, target, strike_damage, shatter, function (source, target, amount) {
                         echo += '<u>(Barrage: +1';
                         if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
                         if (enhanced) echo += ' Enhance: +' + enhanced;
                         if (protect) echo += ' Barrier: -' + protect;
-                        echo += ') = ' + strike_damage + ' damage</u><br>';
-                        echo += debug_name(src_card) + ' throws a bomb at ' + debug_name(target) + ' for ' + strike_damage + ' damage';
-                    }
-
-                    do_damage(src_card, target, strike_damage, shatter);
+                        echo += ') = ' + amount + ' damage</u><br>';
+                        echo += debug_name(source) + ' throws a bomb at ' + debug_name(target) + ' for ' + amount + ' damage';
+                        echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
+                    });
                 }
             }
 
@@ -1483,11 +1481,10 @@ var SIMULATOR = {};
                 damage = Math.ceil(target[base] * mult);
             }
 
-            if (debug) {
-                echo += debug_name(src_card) + ' ambushes ' + debug_name(target) + ' for ' + damage + ' damage';
-            }
-
-            do_damage(src_card, target, damage);
+            do_damage(src_card, target, damage, null, function (source, target, amount) {
+                echo += debug_name(source) + ' ambushes ' + debug_name(target) + ' for ' + amount + ' damage';
+                echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
+            });
 
             return 1;
         },
@@ -1570,7 +1567,7 @@ var SIMULATOR = {};
             if (skill.c && affected > 0) {
                 skill.countdown = skill.c;
             }
-            
+
             if (showAnimations) {
                 drawField(field, null, null, turn, src_card);
             }
@@ -1580,7 +1577,7 @@ var SIMULATOR = {};
     function initializeBattle() {
 
         SIMULATOR.simulation_turns = 0;
-        
+
         // Set up empty decks
         var deck = {
             cpu: {
@@ -1629,7 +1626,7 @@ var SIMULATOR = {};
                                  : getordered ? chooseCardOrdered           // Ordered mode tries to pick the card closest to the specified ordering
                                  : chooseCardRandomly);                     // Player AI falls back on picking a random card
 
-        deck.cpu.chooseCard =   (/*livePvP ? waitForOpponent                  // If this is "Live PvP" - wait for opponent to choose a card
+        deck.cpu.chooseCard = (/*livePvP ? waitForOpponent                  // If this is "Live PvP" - wait for opponent to choose a card
                                 : */getordered2 ? chooseCardOrdered           // Ordered mode tries to pick the card closest to the specified ordering
                                 : pvpAI ? chooseCardByPoints                // PvP defenders have a special algorithm for determining which card to play
                                 : getexactorder2 ? chooseCardRandomly       // If deck is not shuffled, but we're not playing "ordered mode", pick a random card from hand
@@ -1975,7 +1972,7 @@ var SIMULATOR = {};
         }
         if (choice === undefined) {
             return -1;
-            
+
         } else {
             var card_picked = choice;
             if (!card_picked) card_picked = 0;
@@ -2102,7 +2099,7 @@ var SIMULATOR = {};
 
         // Do Commander Early Activation Skills
         doEarlyActivationSkills(field_p.commander);
-        
+
         // Reset invisibility count after enhance has had a chance to fire
         for (var key = 0, len = field_p_assaults.length; key < len; key++) {
             var current_assault = field_p_assaults[key];
@@ -2241,30 +2238,29 @@ var SIMULATOR = {};
 
             var amount = current_assault.poisoned;
             if (amount) {
-                if (debug) {
-                    echo += debug_name(current_assault) + ' takes ' + amount + ' poison damage';
-                }
-
-                do_damage(null, current_assault, amount);
+                do_damage(null, current_assault, amount, null, function (source, target, amount) {
+                    echo += debug_name(target) + ' takes ' + amount + ' poison damage';
+                    echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
+                });
             }
 
             var amount = current_assault.envenomed;
             if (amount) {
-                if (debug) {
-                    echo += debug_name(current_assault) + ' takes ' + amount + ' venom damage';
-                }
-
-                do_damage(null, current_assault, amount);
+                do_damage(null, current_assault, amount, null, function (source, target, amount) {
+                    echo += debug_name(target) + ' takes ' + amount + ' venom damage';
+                    echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
+                });
             }
 
             var scorch = current_assault.scorched;
             if (scorch) {
                 amount = scorch['amount'];
-                if (debug) {
-                    echo += debug_name(current_assault) + ' takes ' + amount + ' scorch damage';
-                }
-
-                do_damage(null, current_assault, amount);
+                do_damage(null, current_assault, amount, null, function (source, target, amount) {
+                    echo += debug_name(target) + ' takes ' + amount + ' scorch damage';
+                    if (!target.isAlive()) echo += ' and it dies';
+                    else if (!target.scorched) echo += ' and scorch wears off';
+                    echo += '<br>';
+                });
 
                 if (scorch['timer'] > 1) {
                     scorch['timer']--;
@@ -2427,11 +2423,10 @@ var SIMULATOR = {};
         // -- END OF CALCULATE DAMAGE --
 
         // Deal damage to target
-
-        if (debug) {
-            echo += debug_name(current_assault) + ' attacks ' + debug_name(target) + ' for ' + damage + ' damage';
-        }
-        do_damage(current_assault, target, damage);
+        do_damage(current_assault, target, damage, null, function (source, target, amount) {
+            echo += debug_name(source) + ' attacks ' + debug_name(target) + ' for ' + amount + ' damage';
+            echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
+        });
 
         if (showAnimations) {
             drawField(field, null, null, turn, current_assault);
@@ -2686,7 +2681,7 @@ var SIMULATOR = {};
                 }
             }
         }
-        
+
         if (!current_assault.isAlive()) {
             doOnDeathSkills(current_assault, target);
         }
@@ -2716,11 +2711,12 @@ var SIMULATOR = {};
             if (counterEnhancement) echo += ' Enhance: +' + counterEnhancement;
             if (protect) echo += ' Barrier: -' + protect;
             echo += ') = ' + counterDamage + ' damage</u><br>';
-
-            echo += debug_name(attacker) + ' takes ' + counterDamage + ' ' + counterType.toLowerCase() + ' damage';
         }
 
-        do_damage(defender, attacker, counterDamage);
+        do_damage(defender, attacker, counterDamage, null, function (source, target, amount) {
+            echo += debug_name(target) + ' takes ' + amount + ' ' + counterType.toLowerCase() + ' damage';
+            echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
+        });
     }
 
     function calculatePoints(forceWin) {
