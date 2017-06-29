@@ -466,10 +466,7 @@ var makeUnit = (function () {
 
             var poison = this.poisoned;
             if (poison) {
-                if (debug) {
-                    echo += debug_name(this) + ' takes ' + amount + ' poison damage';
-                    echo += (!this.isAlive() ? ' and it dies' : '') + '<br>';
-                }
+                if (debug) echo += debug_name(this) + ' takes ' + amount + ' poison damage';
                 do_damage(this, poison);
             }
 
@@ -481,13 +478,11 @@ var makeUnit = (function () {
                 } else {
                     this.scorched = 0;
                 }
-                if (debug) {
-                    echo += debug_name(this) + ' takes ' + amount + ' scorch damage';
-                    if (!this.isAlive()) echo += ' and it dies';
-                    else if (!this.scorched) echo += ' and scorch wears off';
-                    echo += '<br>';
-                }
-                do_damage(this, amount);
+
+                if (debug) echo += debug_name(this) + ' takes ' + amount + ' scorch damage';
+
+                do_damage(this, amount, false, ' and scorch wears off');
+
             }
 
             var corroded = this.corroded;

@@ -109,7 +109,7 @@ var SIMULATOR = {};
 
     // Deal damage to card
     // and keep track of cards that have died this turn
-    function do_damage(source, target, damage, shatter) {
+    function do_damage(source, target, damage, shatter, additionalLog) {
         if (damage >= target.health_left) {
             target.health_left = 0;
         } else {
@@ -120,6 +120,10 @@ var SIMULATOR = {};
                     echo += debug_name(target) + " is enraged and gains " + target.enraged + " attack!</br>";
                 }
             }
+        }
+
+        if (debug) {
+            echo += (!current_assault.isAlive() ? ' and it dies' : additionalLog) + '<br>';
         }
 
         if (shatter) {
@@ -141,7 +145,6 @@ var SIMULATOR = {};
 
         if (debug) {
             echo += debug_name(src_card) + "'s barrier shatters and hits " + debug_name(target) + ' for ' + amount + ' damage';
-            echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
         }
 
         do_damage(src_card, target, amount);
@@ -482,15 +485,11 @@ var SIMULATOR = {};
                     if (protect) echo += ' Barrier: -' + protect;
                     echo += ') = ' + strike_damage + ' damage</u><br>';
                     echo += debug_name(src_card) + ' bolts ' + debug_name(target) + ' for ' + strike_damage + ' damage';
-                    if (!target.isAlive()) {
-                        echo += ' and it dies';
-                    } else if (poisonDamage) {
-                        echo += ' and inflicts poison(' + poisonDamage + ') on it';
-                    }
-                    echo +=  '<br>';
+                    
                 }
+                var additionalLog = (poisonDamage ? ' and inflicts poison(' + poisonDamage + ') on it' : '');
 
-                do_damage(src_card, target, strike_damage, shatter);
+                do_damage(src_card, target, strike_damage, shatter, additionalLog);
             }
 
             return affected;
@@ -767,7 +766,6 @@ var SIMULATOR = {};
                     if (protect) echo += ' Barrier: -' + protect;
                     echo += ') = ' + frost_damage + ' damage</u><br>';
                     echo += debug_name(src_card) + ' breathes frost at ' + debug_name(target) + ' for ' + frost_damage + ' damage';
-                    echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
                 }
 
                 do_damage(src_card, target, frost_damage, shatter);
@@ -1196,7 +1194,6 @@ var SIMULATOR = {};
                         if (protect) echo += ' Barrier: -' + protect;
                         echo += ') = ' + strike_damage + ' damage</u><br>';
                         echo += debug_name(src_card) + ' throws a bomb at ' + debug_name(target) + ' for ' + strike_damage + ' damage';
-                        echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
                     }
 
                     do_damage(src_card, target, strike_damage, shatter);
@@ -1488,7 +1485,6 @@ var SIMULATOR = {};
 
             if (debug) {
                 echo += debug_name(src_card) + ' ambushes ' + debug_name(target) + ' for ' + damage + ' damage';
-                echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
             }
 
             do_damage(src_card, target, damage);
@@ -2247,7 +2243,6 @@ var SIMULATOR = {};
             if (amount) {
                 if (debug) {
                     echo += debug_name(current_assault) + ' takes ' + amount + ' poison damage';
-                    echo += (!current_assault.isAlive() ? ' and it dies' : '') + '<br>';
                 }
 
                 do_damage(null, current_assault, amount);
@@ -2257,7 +2252,6 @@ var SIMULATOR = {};
             if (amount) {
                 if (debug) {
                     echo += debug_name(current_assault) + ' takes ' + amount + ' venom damage';
-                    echo += (!current_assault.isAlive() ? ' and it dies' : '') + '<br>';
                 }
 
                 do_damage(null, current_assault, amount);
@@ -2268,7 +2262,6 @@ var SIMULATOR = {};
                 amount = scorch['amount'];
                 if (debug) {
                     echo += debug_name(current_assault) + ' takes ' + amount + ' scorch damage';
-                    echo += (!current_assault.isAlive() ? ' and it dies' : '') + '<br>';
                 }
 
                 do_damage(null, current_assault, amount);
@@ -2437,7 +2430,6 @@ var SIMULATOR = {};
 
         if (debug) {
             echo += debug_name(current_assault) + ' attacks ' + debug_name(target) + ' for ' + damage + ' damage';
-            echo += (!target.isAlive() ? ' and it dies' : '') + '<br>';
         }
         do_damage(current_assault, target, damage);
 
@@ -2724,11 +2716,8 @@ var SIMULATOR = {};
             if (counterEnhancement) echo += ' Enhance: +' + counterEnhancement;
             if (protect) echo += ' Barrier: -' + protect;
             echo += ') = ' + counterDamage + ' damage</u><br>';
-        }
 
-        if (debug) {
             echo += debug_name(attacker) + ' takes ' + counterDamage + ' ' + counterType.toLowerCase() + ' damage';
-            echo += (!attacker.isAlive() ? ' and it dies' : '') + '<br>';
         }
 
         do_damage(defender, attacker, counterDamage);
