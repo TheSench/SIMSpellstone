@@ -2243,7 +2243,7 @@ var SIMULATOR = {};
             current_assault.dualstrike_triggered = false;
             current_assault.silenced = false;
 
-            var amount = current_assault['poisoned'];
+            var amount = current_assault.poisoned;
             if (amount) {
                 if (debug) {
                     echo += debug_name(current_assault) + ' takes ' + amount + ' poison damage';
@@ -2253,7 +2253,17 @@ var SIMULATOR = {};
                 do_damage(null, current_assault, amount);
             }
 
-            var scorch = current_assault['scorched'];
+            var amount = current_assault.envenomed;
+            if (amount) {
+                if (debug) {
+                    echo += debug_name(current_assault) + ' takes ' + amount + ' venom damage';
+                    echo += (!current_assault.isAlive() ? ' and it dies' : '') + '<br>';
+                }
+
+                do_damage(null, current_assault, amount);
+            }
+
+            var scorch = current_assault.scorched;
             if (scorch) {
                 amount = scorch['amount'];
                 if (debug) {
@@ -2475,16 +2485,13 @@ var SIMULATOR = {};
                     }
                     venom += enhanced;
                 }
-                var affected = false;
-                if (venom > target['envenomed']) {
-                    target['envenomed'] = venom;
-                    affected = true;
+
+                if (venom > target.envenomed) {
+                    var hexIncrease = venom - target.envenomed;
+                    target.envenomed = venom;
+                    target.enfeebled += hexIncrease;
+                    if (debug) echo += debug_name(current_assault) + ' inflicts venom(' + venom + ') on ' + debug_name(target) + '<br>';
                 }
-                if (venom > target['poisoned']) {
-                    target['poisoned'] = venom;
-                    affected = true;
-                }
-                if (debug && affected) echo += debug_name(current_assault) + ' inflicts venom(' + venom + ') on ' + debug_name(target) + '<br>';
             }
 
             // Nullify
