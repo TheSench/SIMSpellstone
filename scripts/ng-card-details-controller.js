@@ -213,57 +213,15 @@
             return ("res/cardAssets/" + fusion + ".png");
         }
 
-        $scope.getSkillIcon = function (skillName)
+        $scope.getSkillIcon = function (skillID)
         {
-            var src = "res/skills/";
-            var iconName = skillName.charAt(0).toUpperCase() + skillName.slice(1) + '.png';
-            switch (skillName)
-            {
-                case 'armored':
-                    iconName = 'Armor.png';
-                    break;
-                case 'strike':
-                    iconName = 'Bolt.png';
-                    break;
-                case 'poisonstrike':
-                    iconName = 'Poisonbolt.png';
-                    break;
-                case 'burn':
-                    iconName = 'Scorch.png';
-                    break;
-                case 'flurry':
-                    iconName = 'Dualstrike.png';
-                    break;
-                case 'enfeeble':
-                    iconName = 'Hex.png';
-                    break;
-                case 'jam':
-                    iconName = 'Freeze.png';
-                    break;
-                case 'leech':
-                    iconName = 'Siphon.png';
-                    break;
-                case 'evade':
-                    iconName = 'Invisibility.png';
-                    break;
-                case 'counter':
-                    iconName = 'Vengeance.png';
-                    break;
-                case 'protect':
-                    iconName = 'Barrier.png';
-                    break;
-                case 'protect_ice':
-                    iconName = "Iceshatter.png";
-                    break;
-                case 'rally':
-                    iconName = 'Empower.png';
-                    break;
-                default:
-                    iconName = (skillName.charAt(0).toUpperCase() + skillName.slice(1)) + ".png";
-                    break;
-            }
-            src += iconName;
-            return src;
+            var skillData = SKILL_DATA[skillID];
+            return "res/skills/" + (skillData ? skillData.icon : skillID) + ".png";
+        }
+
+        $scope.getSkillDescription = function (skillID) {
+            var skillData = SKILL_DATA[skillID];
+            return (skillData ? skillData.desc || skillData.name : skillID);
         }
 
         var setNames = {
@@ -348,6 +306,13 @@
         }
     };
 
+    var DeckBuilderCtrl = function ($scope) {
+        $scope.getSkillIcon = function (skillID) {
+            var skillData = SKILL_DATA[skillID];
+            return "res/skills/" + (skillData ? skillData.icon : skillID) + ".png";
+        }
+    }
+
     angular.module('simulatorApp')
         .controller('CardDetailsCtrl', ['$scope', '$window', CardDetailsCtrl])
         .directive('cardDetails', function ()
@@ -384,6 +349,7 @@
         }).filter('convertName', function ()
         {
             return window.convertName;
-        });
+        })
+    .controller('DeckBuilderCtrl', ['$scope', DeckBuilderCtrl]);
 
 }(angular));

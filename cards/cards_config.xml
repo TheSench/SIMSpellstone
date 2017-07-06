@@ -282,10 +282,21 @@
     <attributes x="1" y="0" all="1" c="0" s="0" />
     <balance_points>1.5</balance_points>
   </skillType>
+  <skillType>
+    <id>enrage</id>
+    <order>180</order>
+    <icon>enrage</icon>
+    <name>Enrage</name>
+    <desc>Enrage a random ally creature. Until your next turn, every time the creature takes damage from an Attack, gain Attack permanently.</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <vfx_location>edge</vfx_location>
+    <balance_points>6</balance_points>
+    <hidden>1</hidden>
+  </skillType>
   <!-- Modifiers -->
   <skillType>
     <id>pierce</id>
-    <order>180</order>
+    <order>190</order>
     <icon>puncture</icon>
     <name>Pierce</name>
     <desc>Reduces the effect of enemy Armor and Barriers</desc>
@@ -295,7 +306,7 @@
   <!-- Damage -->
   <skillType>
     <id>silence</id>
-    <order>190</order>
+    <order>200</order>
     <icon>silence</icon>
     <name>Silence</name>
     <desc>Removes all skills from damaged enemy creature for one turn.</desc>
@@ -304,18 +315,11 @@
     <hidden>1</hidden>
   </skillType>
   <skillType>
-    <id>nullify</id>
-    <order>200</order>
-    <icon>nullify</icon>
-    <name>Nullify</name>
-    <desc>Nullifies enemy creatures damaged by this card. Nullified units avoid their own friendly skills.</desc>
-    <attributes x="1" y="0" all="0" c="0" s="0" />
-    <status_flag>nullified</status_flag>
-    <balance_points>6</balance_points>
-  </skillType>
+    <id>nullify</id>130
+		<order>210</order><icon>nullify</icon><name>Nullify</name><desc>Nullifies enemy creatures damaged by this card. Nullified units avoid their own friendly skills.</desc><attributes x="1" y="0" all="0" c="0" s="0" /><status_flag>nullified</status_flag><balance_points>6</balance_points></skillType>
   <skillType>
     <id>poison</id>
-    <order>210</order>
+    <order>220</order>
     <icon>corrupt</icon>
     <name>Poison</name>
     <desc>Poisons creatures damaged by this card, dealing additional damage at the end of turn</desc>
@@ -326,7 +330,7 @@
   </skillType>
   <skillType>
     <id>leech</id>
-    <order>220</order>
+    <order>230</order>
     <icon>siphon</icon>
     <name>Siphon</name>
     <desc>Heals this card as it deals Attack damage</desc>
@@ -335,7 +339,7 @@
   </skillType>
   <skillType>
     <id>berserk</id>
-    <order>230</order>
+    <order>240</order>
     <icon>berserk</icon>
     <name>Berserk</name>
     <desc>When this creature deals attack damage, Attack is permanently increased</desc>
@@ -345,55 +349,13 @@
   <!-- Dualstrike -->
   <skillType>
     <id>flurry</id>
-    <order>240</order>
+    <order>250</order>
     <icon>swiftness</icon>
     <name>Dualstrike</name>
     <desc>Activates twice in one turn. Activates every {c} turns.</desc>
     <status_flag>flurry_countdown</status_flag>
     <attributes x="0" y="0" all="0" c="1" s="0" />
     <balance_points>10</balance_points>
-  </skillType>
-  <!-- TEST SKILLS -->
-  <skillType>
-    <id>enrage</id>
-    <order>500</order>
-    <icon>enrage</icon>
-    <name>Enrage</name>
-    <desc>Enrage a random ally creature. Until your next turn, every time the creature takes damage, gain Attack permanently.</desc>
-    <attributes x="1" y="0" all="0" c="0" s="0" />
-    <vfx_location>edge</vfx_location>
-    <hidden>1</hidden>
-  </skillType>
-  <skillType>
-    <id>scorchbreath</id>
-    <order>500</order>
-    <icon>scorchbreath</icon>
-    <name>Scorchbreath</name>
-    <desc>Deals scorch in a cone to up to three creatures in front of it</desc>
-    <status_flag>burn</status_flag>
-    <attributes x="1" y="0" all="0" c="0" s="0" />
-    <balance_points>8</balance_points>
-    <hidden>1</hidden>
-  </skillType>
-  <skillType>
-    <id>intensify</id>
-    <order>500</order>
-    <icon>intensify</icon>
-    <name>Intensify</name>
-    <desc>Increases the value of Scorch or Poison on an enemy creature</desc>
-    <attributes x="1" y="0" all="0" c="0" s="0" />
-    <balance_points>8</balance_points>
-    <hidden>1</hidden>
-  </skillType>
-  <skillType>
-    <id>ignite</id>
-    <order>500</order>
-    <icon>ignite</icon>
-    <name>Ignite</name>
-    <desc>Increases the Scorch value on a Scorched enemy creature, or deal Scorch damage to a random enemy creature</desc>
-    <attributes x="1" y="0" all="0" c="0" s="0" />
-    <balance_points>8</balance_points>
-    <hidden>1</hidden>
   </skillType>
   <!-- Mythic -->
   <skillType>
@@ -415,6 +377,17 @@
     <desc>Applies Barrier and Invisibility to a random target allied creature</desc>
     <hidden>1</hidden>
   </skillType>
+  <skillType>
+    <id>scorchbreath</id>
+    <order>1</order>
+    <icon>scorchbreath</icon>
+    <name>Scorchbreath</name>
+    <desc>Deals scorch in a cone to up to three creatures in front of it</desc>
+    <status_flag>burn</status_flag>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <balance_points>8</balance_points>
+    <hidden>1</hidden>
+  </skillType>
   <!-- Special -->
   <skillType>
     <id>protect_ice</id>
@@ -427,26 +400,6 @@
     <desc_all_faction>Reduces the next Damage dealt to all allied {y} creatures</desc_all_faction>
     <status_flag>protect</status_flag>
     <attributes x="1" y="1" all="1" c="0" s="0" />
-    <hidden>1</hidden>
-  </skillType>
-  <skillType>
-    <id>reanimate</id>
-    <order>500</order>
-    <icon>frostbreath</icon>
-    <name>Reanimate</name>
-    <desc>Reanimates creatures when they die.</desc>
-    <attributes x="1" y="1" all="0" c="0" s="0" />
-    <status_flag>reanimated</status_flag>
-    <hidden>1</hidden>
-  </skillType>
-  <skillType>
-    <id>resurrect</id>
-    <order>500</order>
-    <icon>frostbreath</icon>
-    <name>Resurrect</name>
-    <desc>Resurrects creatures when they die.</desc>
-    <attributes x="1" y="1" all="0" c="0" s="0" />
-    <status_flag>resurrected</status_flag>
     <hidden>1</hidden>
   </skillType>
   <skillType>
@@ -525,15 +478,6 @@
     <hidden>1</hidden>
   </skillType>
   <skillType>
-    <id>enlarge</id>
-    <order>500</order>
-    <icon>enlarge</icon>
-    <name>Enlarge</name>
-    <desc>Permanently increases the Attack of a creature when played, while this creature is active</desc>
-    <attributes x="1" y="0" all="0" c="0" s="0" />
-    <hidden>1</hidden>
-  </skillType>
-  <skillType>
     <id>venom</id>
     <order>500</order>
     <icon>venom</icon>
@@ -549,6 +493,56 @@
     <order>0</order>
     <upkeep>1</upkeep>
     <!-- This skill occurs before all other actions -->
+    <hidden>1</hidden>
+  </skillType>
+  <!-- TEST SKILLS -->
+  <skillType>
+    <id>intensify</id>
+    <order>500</order>
+    <icon>intensify</icon>
+    <name>Intensify</name>
+    <desc>Increases the value of Scorch or Poison on an enemy creature</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <balance_points>8</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>ignite</id>
+    <order>500</order>
+    <icon>ignite</icon>
+    <name>Ignite</name>
+    <desc>Increases the Scorch value on a Scorched enemy creature, or deal Scorch damage to a random enemy creature</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <balance_points>8</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>reanimate</id>
+    <order>500</order>
+    <icon>frostbreath</icon>
+    <name>Reanimate</name>
+    <desc>Reanimates creatures when they die.</desc>
+    <attributes x="1" y="1" all="0" c="0" s="0" />
+    <status_flag>reanimated</status_flag>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>resurrect</id>
+    <order>500</order>
+    <icon>frostbreath</icon>
+    <name>Resurrect</name>
+    <desc>Resurrects creatures when they die.</desc>
+    <attributes x="1" y="1" all="0" c="0" s="0" />
+    <status_flag>resurrected</status_flag>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
+    <id>enlarge</id>
+    <order>500</order>
+    <icon>enlarge</icon>
+    <name>Enlarge</name>
+    <desc>Permanently increases the Attack of a creature when played, while this creature is active</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
     <hidden>1</hidden>
   </skillType>
   <!-- =================== -->

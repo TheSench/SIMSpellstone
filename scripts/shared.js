@@ -155,28 +155,7 @@ function initializeCard(card, p, newKey) {
     card.timer = card.cost;
     card.health_left = card.health;
     // Setup status effects
-    card.attack_rally = 0;
-    card.attack_weaken = 0;
-    card.attack_corroded = 0;
-    card.attack_berserk = 0;
-    card.attack_valor = 0;
-    card.valor_triggered = false;
-    card.dualstrike_triggered = false;
-    card.mark_target = 0;
-    card.nullified = 0;
-    card.envenomed = 0;
-    card.poisoned = 0;
-    card.scorched = 0;
-    card.corroded = 0;
-    card.enfeebled = 0;
-    card.enraged = 0;
-    card.protected = 0;
-    card.barrier_ice = 0;
-    card.enhanced = 0;
-    card.removeImbue();
-    card.jammed = false;
-    card.silenced = false;
-    card.ondeath_triggered = false;
+    applyDefaultStatuses(card);
     card.key = newKey;
     if (!card.reusableSkills) card.resetTimers();
 }
@@ -225,23 +204,12 @@ function cloneCard(original) {
     copy.sub_type = original.sub_type || [];
     copy.set = original.set;
     // Passives
-    copy.armored = original.armored;
-    copy.berserk = original.berserk;
-    copy.burn = original.burn;
-    copy.corrosive = original.corrosive;
-    copy.counter = original.counter;
-    copy.counterburn = original.counterburn;
-    copy.evade = original.evade;
-    copy.fury = original.fury;
-    copy.leech = original.leech;
-    copy.nullify = original.nullify;
-    copy.pierce = original.pierce;
-    copy.poison = original.poison;
-    copy.scorchbreath = original.scorchbreath;
-    copy.silence = original.silence;
-    copy.taunt = original.taunt;
-    copy.valor = original.valor;
-    copy.venom = original.venom;
+    for (var id in SKILL_DATA) {
+        var type = SKILL_DATA[id].type
+        if (type === "passive" || type === "toggle") {
+            copy[id] = original[id];
+        }
+    }
     if (original.flurry) {
         copy.skillTimers = [];
         copy.flurry = { id: original.flurry.id, c: original.flurry.c };
@@ -260,6 +228,44 @@ function cloneCard(original) {
     copy.runes = original.runes;
     if (!copy.runes) copy.runes = [];
     return copy;
+}
+
+
+
+var defaultStatusValues = {
+    // Attack Modifiers
+    attack_berserk: 0,
+    attack_valor: 0,
+    attack_rally: 0,
+    attack_weaken: 0,
+    attack_corroded: 0,
+    corrosion_timer: 0,
+    // Mark
+    mark_target: 0,
+    // Other Statuses
+    // Numeric-Statuses
+    barrier_ice: 0,
+    corroded: 0,
+    enfeebled: 0,
+    enhanced: 0,
+    enraged: 0,
+    envenomed: 0,
+    imbued: 0,
+    nullified: 0,
+    poisoned: 0,
+    protected: 0,
+    scorched: 0,
+    // Boolean-Status
+    jammed: false,
+    silenced: false,
+    valor_triggered: false,
+    dualstrike_triggered: false,
+    ondeath_triggered: false,
+}
+function applyDefaultStatuses(card) {
+    for (var status in defaultStatusValues) {
+        card[status] = defaultStatusValues[status];
+    }
 }
 
 var CardPrototype;
@@ -344,81 +350,11 @@ var makeUnit = (function () {
         health_left: 0,
         timer: 0,
         key: undefined,
-        // Passives
-        armored: 0,
-        berserk: 0,
-        burn: 0,
-        corrosive: 0,
-        counter: 0,
-        counterburn: 0,
-        evade: 0,
-        fury: 0,
-        leech: 0,
-        nullify: 0,
-        pierce: 0,
-        poison: 0,
-        scorchbreath: 0,
-        silence: false,
-        taunt: false,
-        unearth: null,
-        valor: 0,
-        venom: 0,
-        // Attack Modifiers
-        attack_berserk: 0,
-        attack_valor: 0,
-        attack_rally: 0,
-        attack_weaken: 0,
-        attack_corroded: 0,
-        corrosion_timer: 0,
-        // Mark
-        mark_target: 0,
-        // Other Statuses
-        // Statuses
-        envenomed: 0,
-        nullified: 0,
-        poisoned: 0,
-        scorched: 0,
-        corroded: 0,
-        enfeebled: 0,
-        enraged: 0,
-        protected: 0,
-        enhanced: 0,
-        imbued: 0,
-        jammed: false,
-        silenced: false,
-        valor_triggered: false,
-        dualstrike_triggered: false,
-        ondeath_triggered: false,
 
         initialize: function (position) {
             this.health_left = this.health;
             if (!this.isCommander()) {
                 this.timer = this.cost;
-                // Setup status effects
-                this.attack_rally = 0;
-                this.attack_weaken = 0;
-                this.attack_corroded = 0;
-                this.corrosion_timer = 0;
-                this.attack_berserk = 0;
-                this.attack_valor = 0;
-                this.mark_target = 0;
-                this.envenomed = 0;
-                this.nullified = 0;
-                this.poisoned = 0;
-                this.scorched = 0;
-                this.corroded = 0;
-                this.enfeebled = 0;
-                this.enraged = 0;
-                this.protected = 0;
-                this.barrier_ice = 0;
-                this.enhanced = 0;
-                this.removeImbue();
-                this.jammed = false;
-                this.silenced = false;
-                this.played = false;
-                this.valor_triggered = false;
-                this.dualstrike_triggered = false;
-                this.ondeath_triggered = false;
             }
             if (!this.reusableSkills) this.resetTimers();
         },
@@ -589,33 +525,18 @@ var makeUnit = (function () {
 
             var imbueSkillsKey;
             var skillID = skill.id;
-            switch (skillID) {
-                // Passive Toggles
-                case 'silence':
-                case 'taunt':
+            var skillType = SKILL_DATA[skillID].type;
+            switch (skillType) {
+                case 'toggle':
                     this[skillID] = true;
                     this.imbued[skillID] = 1;
                     return;
 
-                    // Passives
-                case 'armored':
-                case 'berserk':
-                case 'burn':
-                case 'corrosive':
-                case 'counter':
-                case 'counterburn':
-                case 'evade':
-                case 'fury':
-                case 'leech':
-                case 'nullify':
-                case 'pierce':
-                case 'poison':
-                case 'scorchbreath':
-                case 'valor':
-                case 'venom':
+                case 'passive':
                     this[skillID] += parseInt(skill.x);
                     this.imbued[skillID] = (this.imbued[skillID] || 0) + skill.x;
                     return;
+
                 case 'flurry':
                     if (!this.flurry) {
                         this.flurry = skill;
@@ -623,36 +544,15 @@ var makeUnit = (function () {
                     }
                     return;
 
-
-                case 'unearth':
+                case 'onDeath':
                     imbueSkillsKey = 'onDeathSkills';
                     break;
 
-                    // Early Activation skills
-                case 'barrage':
-                case 'enhance':
-                case 'enlarge':
-                case 'enrage':
-                case 'fervor':
-                case 'imbue':
-                case 'legion':
-                case 'mark':
-                case 'rally':
+                case 'earlyActivation':
                     imbueSkillsKey = 'earlyActivationSkills';
                     break;
 
-                    // Activation skills (can occur twice on a card)
-                case 'enfeeble':
-                case "evadebarrier":
-                case 'frost':
-                case 'heal':
-                case 'intensify':
-                case 'ignite':
-                case 'jam':
-                case 'protect':
-                case 'protect_ice':
-                case 'strike':
-                case 'weaken':
+                case 'activation':
                 default:
                     imbueSkillsKey = 'skill';
                     break;
@@ -698,61 +598,24 @@ var makeUnit = (function () {
         // Has at least one Enhanceable Activation Skill
         // - strike, protect, enfeeble, rally, repair, supply, siege, heal, weaken (unless they have on play/death/attacked/kill)
         hasSkill: function (s, all) {
-            var target_skills = this.skill;
+            var target_skills;
+            var skillType = SKILL_DATA[s].type;
             switch (s) {
-                // Passives
-                case 'armored':
-                case 'berserk':
-                case 'burn':
-                case 'corrosive':
-                case 'counter':
-                case 'counterburn':
-                case 'evade':
-                case 'fury':
+                case 'toggle':
+                case 'passive':
                 case 'flurry':
-                case 'leech':
-                case 'nullify':
-                case 'pierce':
-                case 'poison':
-                case 'scorchbreath':
-                case 'silence':
-                case 'taunt':
-                case 'valor':
-                case 'venom':
                     return this[s];
                     break;
 
-                    // On-Death skills
-                case 'unearth':
+                case 'onDeath':
                     target_skills = this.onDeathSkills;
                     break;
 
-                    // Early Activation skills
-                case 'barrage':
-                case 'enhance':
-                case 'enlarge':
-                case 'enrage':
-                case 'fervor':
-                case 'imbue':
-                case 'legion':
-                case 'mark':
-                case 'rally':
+                case 'earlyActivation':
                     target_skills = this.earlyActivationSkills;
                     break;
 
-                    // Activation skills
-                case 'enfeeble':
-                case "evadebarrier":
-                case 'frost':
-                case 'heal':
-                case 'intensify':
-                case 'ignite':
-                case 'jam':
-                case 'protect':
-                case 'protect_ice':
-                case 'silence':
-                case 'strike':
-                case 'weaken':
+                case 'activation':
                 default:
                     target_skills = this.skill
                     break;
@@ -803,6 +666,15 @@ var makeUnit = (function () {
             addRunes(this, runes);
         },
     }
+    for (var id in SKILL_DATA) {
+        var type = SKILL_DATA[id].type
+        if (type === "passive") {
+            CardPrototype[id] = 0;
+        } else if (type === "toggle") {
+            CardPrototype[id] = false;
+        }
+    }
+    applyDefaultStatuses(CardPrototype);
 
     return (function (original_card, unit_level, runes, skillModifiers, skillMult) {
         if (!unit_level) unit_level = 1;
@@ -868,61 +740,24 @@ var getEnhancement = function (card, s) {
 var isImbued = function (card, skillID, i) {
     var activation = false;
     var imbueSkillsKey;
+    var skillType = SKILL_DATA[skillID].type;
     switch (skillID) {
-        // Passive Toggles
         case 'flurry':
-        case 'silence':
-        case 'taunt':
+        case 'toggle':
             return card.imbued[skillID];
 
-            // Passive Skills
-        case 'armored':
-        case 'berserk':
-        case 'burn':
-        case 'corrosive':
-        case 'counter':
-        case 'counterburn':
-        case 'evade':
-        case 'fury':
-        case 'leech':
-        case 'nullify':
-        case 'pierce':
-        case 'poison':
-        case 'scorchbreath':
-        case 'valor':
-        case 'venom':
+        case 'passive':
             return (card[skillID] === card.imbued[skillID])
 
-            // On-Death Skills
-        case 'unearth':
+        case 'onDeath':
             imbueSkillsKey = 'onDeathSkills';
             break;
 
-            // Early Activation skills
-        case 'barrage':
-        case 'enhance':
-        case 'enlarge':
-        case 'enrage':
-        case 'fervor':
-        case 'imbue':
-        case 'legion':
-        case 'mark':
-        case 'rally':
+        case 'earlyActivation':
             imbueSkillsKey = 'earlyActivationSkills';
             break;
 
-            // Activation skills (can occur twice on a card)
-        case 'enfeeble':
-        case "evadebarrier":
-        case 'frost':
-        case 'heal':
-        case 'intensify':
-        case 'ignite':
-        case 'jam':
-        case 'protect':
-        case 'protect_ice':
-        case 'strike':
-        case 'weaken':
+        case 'activation':
         default:
             imbueSkillsKey = 'skill';
             break;
@@ -1307,67 +1142,28 @@ function copy_skills_2(new_card, original_skills, mult) {
 function setSkill_2(new_card, skill) {
     // These skills could have multiple instances
     var skillID = skill.id;
-    switch (skillID) {
-        // Passive Toggles
-        case 'silence':
-        case 'taunt':
+    var skillType = SKILL_DATA[skillID].type;
+    switch (skillType) {
+        case 'toggle':
             new_card[skillID] = true;
             return;
 
-            // Passives
-        case 'armored':
-        case 'berserk':
-        case 'burn':
-        case 'corrosive':
-        case 'counter':
-        case 'counterburn':
-        case 'evade':
-        case 'fury':
-        case 'leech':
-        case 'nullify':
-        case 'pierce':
-        case 'poison':
-        case 'scorchbreath':
-        case 'valor':
-        case 'venom':
+        case 'passive':
             new_card[skill.id] = (new_card[skill.id] | 0) + skill.x;
             break;
         case 'flurry':
             new_card[skill.id] = skill;
             break;
 
-            // On-Death Skills
-        case 'unearth':
+        case 'onDeath':
             new_card.onDeathSkills.push(skill);
             break;
 
-            // Early Activation Skills
-        case 'barrage':
-        case 'enhance':
-        case 'enlarge':
-        case 'enrage':
-        case 'fervor':
-        case 'imbue':
-        case 'legion':
-        case 'mark':
-        case 'rally':
+        case 'earlyActivation':
             new_card.earlyActivationSkills.push(skill);
             break;
 
-            // Activation skills (can occur twice on a card)
-        case 'enfeeble':
-        case "evadebarrier":
-        case 'frost':
-        case 'heal':
-        case 'intensify':
-        case 'ignite':
-        case 'jam':
-        case 'protect':
-        case 'protect_ice':
-        case 'silence':
-        case 'strike':
-        case 'weaken':
-            // All other skills
+        case 'activation':
         default:
             new_card.skill.push(skill);
             break;
@@ -1652,7 +1448,6 @@ function debug_skills(card) {
         skillText.push(debug_skill(card.onDeathSkills[key]));
     }
     debug_passive_skills(card, skillText);
-    debug_triggered_skills(card, skillText);
 
     if (skillText.length > 0) {
         return ' <u>( ' + skillText.join(" | ") + ' )</u>';
@@ -1672,26 +1467,11 @@ function debug_skill(skill) {
 }
 
 function debug_passive_skills(card, skillText) {
-    debugNonActivatedSkill(card, "evade", skillText);
-    debugNonActivatedSkill(card, "taunt", skillText);
-    debugNonActivatedSkill(card, "armored", skillText);
-    debugNonActivatedSkill(card, "counter", skillText);
-    debugNonActivatedSkill(card, "counterburn", skillText);
-    debugNonActivatedSkill(card, "corrosive", skillText);
-    debugNonActivatedSkill(card, "fury", skillText);
-}
-
-function debug_triggered_skills(card, skillText) {
-    debugNonActivatedSkill(card, "valor", skillText); // TODO: Correct ordering
-    debugNonActivatedSkill(card, "pierce", skillText);
-    debugNonActivatedSkill(card, "burn", skillText);
-    debugNonActivatedSkill(card, "poison", skillText);
-    debugNonActivatedSkill(card, "venom", skillText);
-    debugNonActivatedSkill(card, "leech", skillText);
-    debugNonActivatedSkill(card, "berserk", skillText);
-    debugNonActivatedSkill(card, "scorchbreath", skillText);
-    debugNonActivatedSkill(card, "silence", skillText);
-    debugNonActivatedSkill(card, "nullify", skillText);
+    var passiveSkills = Object.getOwnPropertyNames(SKILL_DATA).filter(function (skillID) {
+        return ["passive", "toggle", "flurry"].indexOf(SKILL_DATA[skillID].type) >= 0;
+    }).forEach(function (skill) {
+        debugNonActivatedSkill(card, skill, skillText);
+    });
 }
 
 function debugNonActivatedSkill(card, skillName, skillText) {
@@ -1701,39 +1481,9 @@ function debugNonActivatedSkill(card, skillName, skillText) {
     }
 }
 
-function convertName(oldName) {
-    switch (oldName) {
-        case "burn":
-            return "scorch";
-        case "counter":
-            return "vengeance";
-        case "counterburn":
-            return "emberhide";
-        case "enfeeble":
-            return "hex";
-        case "evade":
-            return "invisibility";
-        case "evadebarrier":
-            return "wing ward";
-        case "flurry":
-            return "dualstrike";
-        case "frost":
-            return "frostbreath";
-        case "jam":
-            return "freeze";
-        case "leech":
-            return "siphon";
-        case "protect":
-            return "barrier";
-        case "protect_ice":
-            return "iceshatter barrier";
-        case "rally":
-            return "empower";
-        case "strike":
-            return "bolt";
-        default:
-            return oldName;
-    }
+function convertName(skillID) {
+    var skillData = SKILL_DATA[skillID];
+    return (skillData ? skillData.name : skillID);
 }
 
 var base64chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!~";

@@ -3,7 +3,7 @@
   <Namespace>System.Xml.Serialization</Namespace>
 </Query>
 
-static bool downloadFiles = true;
+static bool downloadFiles = false;
 
 static string path = Path.GetDirectoryName(Util.CurrentQueryPath);
 static string baseUrl = @"https://spellstone.synapse-games.com/assets";
@@ -21,8 +21,7 @@ void Main()
 	string xmlFile;
 
 	HashSet<string> existingUnits = new HashSet<string>(
-		LoadUnits("cards_config.xml")
-		.Union(LoadUnits("cards_heroes.xml"))
+		LoadUnits("cards_heroes.xml")
 		.Union(LoadUnits("cards_premium_aether.xml"))
 		.Union(LoadUnits("cards_premium_chaos.xml"))
 		.Union(LoadUnits("cards_premium_wyld.xml"))
@@ -76,6 +75,107 @@ void Main()
 			notFound.Add("portrait_" + portrait, "???");
 		}
 	}
+
+	var skillMappings = new Dictionary<string, string>()
+	{
+		// Toggles
+		{"silence", "toggle"},
+		{"taunt", "toggle"},
+		// Passives
+		{"armored", "passive"},
+		{"berserk", "passive"},
+		{"burn", "passive"},
+		{"corrosive", "passive"},
+		{"counter", "passive"},
+		{"counterburn", "passive"},
+		{"evade", "passive"},
+		{"fury", "passive"},
+		{"leech", "passive"},
+		{"nullify", "passive"},
+		{"pierce", "passive"},
+		{"poison", "passive"},
+		{"scorchbreath", "passive"},
+		{"valor", "passive"},
+		{"venom", "passive"},
+		// Flurry
+		{"flurry", "flurry"},
+		// On Death
+		{"unearth", "onDeath"},
+		// Early Activation
+		{"barrage", "earlyActivation"},
+		{"enhance", "earlyActivation"},
+		{"enlarge", "earlyActivation"},
+		{"enrage", "earlyActivation"},
+		{"fervor", "earlyActivation"},
+		{"imbue", "earlyActivation"},
+		{"legion", "earlyActivation"},
+		{"mark", "earlyActivation"},
+		{"rally", "earlyActivation"},
+		// Activation
+		{"enfeeble", "activation"},
+		{"evadebarrier", "activation"},
+		{"frost", "activation"},
+		{"heal", "activation"},
+		{"intensify", "activation"},
+		{"ignite", "activation"},
+		{"jam", "activation"},
+		{"protect", "activation"},
+		{"protect_ice", "activation"},
+		{"strike", "activation"},
+		{"weaken", "activation"}
+	};
+
+	var iconRemappings = new Dictionary<string, string>()
+	{
+		{"mark", "eagle_eye"},
+		{"barrage", "barrage"},
+		{"protect_ice", "iceshatter"},
+		{"poisonstrike", "poison_bolt"},
+		{"counterburn", "counterburn"},
+		{"slow", "bind"},
+		{"enlarge", "empower"}
+	};
+	
+	var mapped = new Dictionary<string, string>();
+
+	var skillIconNames = new List<string>();
+	var skillFiles = @"C:\Users\JSEN\Documents\Visual Studio 2013\Projects\SIMSpellstone\res\skills";
+	var skills = XDocument.Load(Path.Combine(path, "cards_config.xml")).Descendants("skillType")
+	.Where(node => node.Element("icon") != null)
+	.Select(node =>
+	{
+		var id = node.Element("id").Value;
+		string icon;
+		if (!iconRemappings.TryGetValue(id, out icon))
+		{
+			icon = node.Element("icon").Value;
+		}
+		skillIconNames.Add(icon);
+
+		return new
+		{
+			id = id,
+			name = Clean(node.Element("name").Value),
+			desc = Clean(node.Element("desc").Value),
+			icon = icon,
+			type = (skillMappings.ContainsKey(id) ? skillMappings[id] : (node.Element("upkeep") != null ? "earlyActivation" : "activation")),
+			order = node.Element("order").Value
+		};
+	})
+	.OrderBy(skill => skill.id);
+	skills.GroupBy(skill => skill.icon).Where(g => g.Count() > 1).ToList().ForEach(g => g.Select(s => s.name).Dump(g.Key));
+
+	skillIconNames.Where(icon => !File.Exists(Path.Combine(skillFiles, icon + ".png"))).ToList().Dump("Missing Icons");
+	new DirectoryInfo(skillFiles).GetFiles("*.png", SearchOption.TopDirectoryOnly).ToList().Where(f => !skillIconNames.Contains(f.Name.Replace(".png", ""))).Select(f => f.Name).Dump("Extra Icon Files");
+
+	var skillsJSON = String.Format("var SKILL_DATA = {{\r\n{0}\r\n}}", String.Join(",\r\n", skills.Select(skill => String.Format(
+@"	{0} : {{
+		name: '{1}',
+		type: '{2}',
+		icon: '{3}',
+		desc: '{4}'
+	}}", skill.id, skill.name, skill.type, skill.icon, skill.desc.Replace("'", "\'")))));
+	File.WriteAllText(Path.Combine(path, "../scripts/data", "skills.js"), skillsJSON);
 
 	var unusedImages = new DirectoryInfo(Path.Combine(path, @"..\res\cardImages"))
 		.GetFiles("*.jpg")
@@ -1473,4 +1573,16 @@ private static void Normalize(string fileName, bool downloadFiles)
 		webClient.DownloadFile(url, filepath);
 	}
 	XDocument.Load(filepath).Save(filepath);
+}
+
+private static string Clean(string input)
+{
+	if (input != null)
+	{
+		return input.Replace(@"\", @"\\").Replace("'", @"\'");
+	}
+	else
+	{
+		return input;
+	}
 }

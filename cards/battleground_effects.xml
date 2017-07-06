@@ -905,4 +905,20 @@
       <scale_attributes base_mult=".008" mult=".0025" />
     </effect>
   </battleground>
+  <!-- Mythic Node Scaling -->
+  <battleground>
+    <id>2015</id>
+    <name>Dirge of the World</name>
+    <desc>Bluefire, Mythic Master fights harder with each passing Mastery level, increasing cards' stats!</desc>
+    <web_picture>filter_dragon_64.png</web_picture>
+    <icon>filter_dragon_64</icon>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>7</starting_level>
+    <!-- Starting Mastery Level -->
+    <effect>
+      <scale_attributes base_mult=".1" mult=".01" />
+    </effect>
+  </battleground>
 </root>

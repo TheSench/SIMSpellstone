@@ -18935,9 +18935,9 @@
   <!-- Test -->
   <mission>
     <id>5620</id>
-    <name>Part 1</name>
+    <name>The World Falters...</name>
     <energy>9</energy>
-    <desc>Sometimes I dream in black and white.</desc>
+    <desc>With The Void vanquished, you search for the source of the Elementals' restlessness, and investigate a reported gathering of the Servants of Atlas, Solaron, and Vulcanos. You find them, standing over the fallen forms of their Masters, crying out feverishly...</desc>
     <commander id="382" />
     <deck>
       <card id="8071" name="Vulcanos' Breath" />
@@ -18953,39 +18953,39 @@
       <card id="8068" name="Void Champion" />
       <card id="8069" name="Void-Touched" />
       <card id="8069" name="Void-Touched" />
-      <card id="8070" name="Scylla's Fool" />
-      <card id="8070" name="Scylla's Fool" />
+      <card id="5131" name="Steelscale, Sky's Domain" />
+      <card id="5104" name="Pisces" />
     </deck>
   </mission>
   <mission>
     <id>5621</id>
-    <name>Part 2</name>
+    <name>Reality Breaks...</name>
     <energy>9</energy>
-    <desc>Sometimes I dream in black and white.</desc>
+    <desc>The air shimmers and distorts. Amidst the center of the servants' grief, you see a familiar dragon ripping apart the threads of reality. Bluefire's form catches; something is wrong. Caught between the planes of reality, he shrieks in rage...</desc>
     <commander id="382" />
     <deck>
       <card id="8071" name="Vulcanos' Breath" />
-      <card id="8071" name="Vulcanos' Breath" />
+      <card id="8070" name="Scylla's Fool" />
       <card id="5137" name="Forgesoul Construct" />
       <card id="5137" name="Forgesoul Construct" />
       <card id="8072" name="Atlas' Sage" />
       <card id="8072" name="Atlas' Sage" />
-      <card id="8008" name="Solaron's Sentinel" />
-      <card id="8008" name="Solaron's Sentinel" />
+      <card id="8080" name="Solaron's Gust" />
+      <card id="8080" name="Solaron's Gust" />
       <card id="7121" name="Varachnis" />
       <card id="8068" name="Void Champion" />
       <card id="8068" name="Void Champion" />
       <card id="8069" name="Void-Touched" />
       <card id="8069" name="Void-Touched" />
-      <card id="8070" name="Scylla's Fool" />
-      <card id="8070" name="Scylla's Fool" />
+      <card id="5131" name="Steelscale, Sky's Domain" />
+      <card id="5104" name="Pisces" />
     </deck>
   </mission>
   <mission>
     <id>5622</id>
-    <name>Part 3</name>
+    <name>The Storm Assembles...</name>
     <energy>9</energy>
-    <desc>Sometimes I dream in black and white.</desc>
+    <desc>Only Bluefire's head and chest have made it through the distortion, when his gaze settles to the fallen Titans. Their forms drift towards The Void Master, before fusing and giving him strength. With the hands of Solaron, the arms of Atlas, and the torso of Vulcanos, Bluefire turns to you...</desc>
     <commander id="382" />
     <deck>
       <card id="8071" name="Vulcanos' Breath" />
@@ -19002,14 +19002,14 @@
       <card id="8069" name="Void-Touched" />
       <card id="8069" name="Void-Touched" />
       <card id="8070" name="Scylla's Fool" />
-      <card id="8070" name="Scylla's Fool" />
+      <card id="5104" name="Pisces" />
     </deck>
   </mission>
   <mission>
     <id>5623</id>
-    <name>Part 4</name>
+    <name>The Elements Revolt...</name>
     <energy>9</energy>
-    <desc>Sometimes I dream in black and white.</desc>
+    <desc>And the servants of the Titans fall upon their knees, crying out loudly, 'Our Master is the One who vanquished our Master, unto life and death do we serve, our Lord Bluefire.' With the weight of the fallen Titans, with all their servants at his disposal, Bluefire roars and fights you once more.</desc>
     <commander id="382" />
     <deck>
       <card id="8071" name="Vulcanos' Breath" />
@@ -19018,14 +19018,14 @@
       <card id="5137" name="Forgesoul Construct" />
       <card id="8072" name="Atlas' Sage" />
       <card id="8072" name="Atlas' Sage" />
-      <card id="8008" name="Solaron's Sentinel" />
-      <card id="8008" name="Solaron's Sentinel" />
+      <card id="8080" name="Solaron's Gust" />
+      <card id="8080" name="Solaron's Gust" />
       <card id="7121" name="Varachnis" />
       <card id="8068" name="Void Champion" />
       <card id="8068" name="Void Champion" />
       <card id="8069" name="Void-Touched" />
       <card id="8069" name="Void-Touched" />
-      <card id="8070" name="Scylla's Fool" />
+      <card id="5131" name="Steelscale, Sky's Domain" />
       <card id="8070" name="Scylla's Fool" />
     </deck>
   </mission>
@@ -19033,7 +19033,7 @@
     <id>5624</id>
     <name>Investigating the Elements</name>
     <energy>9</energy>
-    <desc>Previously corrupted river water has been cleansed. Plants inflicted with sickness have been healed. Your next step in your journey takes you underground to the home of the insects, Beetleton Bunker.</desc>
+    <desc>You and Rayne have been investigating strange happenings in Beetleton Bunker. What was supposed to be a celebration has instead become an adventure.</desc>
     <commander id="262" />
     <deck>
       <card id="5017" name="Steam Tempest" />

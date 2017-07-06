@@ -8189,8 +8189,8 @@
   <unit>
     <id>382</id>
     <card_type>1</card_type>
-    <name>Mythic Conglomerate</name>
-    <portrait>necromancer</portrait>
+    <name>Bluefire, Mythic Master</name>
+    <portrait>mythicConglomerate</portrait>
     <attack>0</attack>
     <health>60</health>
     <rarity>4</rarity>

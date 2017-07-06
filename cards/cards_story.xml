@@ -5604,7 +5604,7 @@
       <skill id="protect" x="3" all="1" />
     </upgrade>
   </unit>
-  <!-- Test Mythic -->
+  <!-- Mythic Conglomerate Bluefire -->
   <unit>
     <id>8068</id>
     <card_type>2</card_type>
@@ -5655,102 +5655,6 @@
     </upgrade>
   </unit>
   <unit>
-    <id>18068</id>
-    <card_type>2</card_type>
-    <fusion_level>1</fusion_level>
-    <name>Void Champion</name>
-    <picture>Wasteland_Nomad_A</picture>
-    <asset_bundle>13</asset_bundle>
-    <attack>11</attack>
-    <health>56</health>
-    <cost>3</cost>
-    <rarity>4</rarity>
-    <skill id="armored" x="8" />
-    <skill id="protect" x="4" all="1" />
-    <skill id="weaken" x="5" />
-    <type>8</type>
-    <set>9999</set>
-    <upgrade>
-      <level>2</level>
-      <health>57</health>
-      <skill id="armored" x="8" />
-      <skill id="protect" x="4" all="1" />
-      <skill id="weaken" x="6" />
-    </upgrade>
-    <upgrade>
-      <level>3</level>
-      <attack>12</attack>
-      <health>58</health>
-    </upgrade>
-    <upgrade>
-      <level>4</level>
-      <health>59</health>
-      <skill id="armored" x="8" />
-      <skill id="protect" x="4" all="1" />
-      <skill id="weaken" x="6" />
-    </upgrade>
-    <upgrade>
-      <level>5</level>
-      <skill id="armored" x="8" />
-      <skill id="protect" x="4" all="1" />
-      <skill id="weaken" x="7" />
-    </upgrade>
-    <upgrade>
-      <level>6</level>
-      <health>60</health>
-      <attack>13</attack>
-    </upgrade>
-  </unit>
-  <unit>
-    <id>28068</id>
-    <card_type>2</card_type>
-    <fusion_level>2</fusion_level>
-    <name>Void Champion</name>
-    <picture>Wasteland_Nomad_A</picture>
-    <asset_bundle>13</asset_bundle>
-    <attack>13</attack>
-    <health>61</health>
-    <cost>3</cost>
-    <rarity>4</rarity>
-    <skill id="armored" x="9" />
-    <skill id="protect" x="5" all="1" />
-    <skill id="weaken" x="7" />
-    <type>8</type>
-    <set>9999</set>
-    <upgrade>
-      <level>2</level>
-      <health>62</health>
-      <skill id="armored" x="9" />
-      <skill id="protect" x="5" all="1" />
-      <skill id="weaken" x="7" />
-    </upgrade>
-    <upgrade>
-      <level>3</level>
-      <health>63</health>
-      <skill id="armored" x="9" />
-      <skill id="protect" x="5" all="1" />
-      <skill id="weaken" x="8" />
-    </upgrade>
-    <upgrade>
-      <level>4</level>
-      <health>64</health>
-      <attack>14</attack>
-    </upgrade>
-    <upgrade>
-      <level>5</level>
-      <health>65</health>
-      <skill id="armored" x="10" />
-      <skill id="protect" x="5" all="1" />
-      <skill id="weaken" x="8" />
-    </upgrade>
-    <upgrade>
-      <level>6</level>
-      <skill id="armored" x="10" />
-      <skill id="protect" x="6" all="1" />
-      <skill id="weaken" x="9" />
-    </upgrade>
-  </unit>
-  <unit>
     <id>8069</id>
     <card_type>2</card_type>
     <name>Void-Touched</name>
@@ -5789,92 +5693,6 @@
       <skill id="corrosive" x="13" />
       <skill id="legion" x="8" />
       <skill id="nullify" x="2" />
-    </upgrade>
-  </unit>
-  <unit>
-    <id>18069</id>
-    <card_type>2</card_type>
-    <fusion_level>1</fusion_level>
-    <name>Void-Touched</name>
-    <picture>Chariot_B</picture>
-    <asset_bundle>6</asset_bundle>
-    <attack>7</attack>
-    <health>43</health>
-    <cost>1</cost>
-    <rarity>4</rarity>
-    <skill id="corrosive" x="13" />
-    <skill id="legion" x="9" />
-    <skill id="nullify" x="2" />
-    <type>8</type>
-    <set>9999</set>
-    <upgrade>
-      <level>2</level>
-      <health>44</health>
-      <skill id="corrosive" x="14" />
-      <skill id="legion" x="9" />
-      <skill id="nullify" x="2" />
-    </upgrade>
-    <upgrade>
-      <level>3</level>
-      <health>45</health>
-    </upgrade>
-    <upgrade>
-      <level>4</level>
-      <attack>8</attack>
-      <health>46</health>
-    </upgrade>
-    <upgrade>
-      <level>5</level>
-      <health>47</health>
-    </upgrade>
-    <upgrade>
-      <level>6</level>
-      <skill id="corrosive" x="14" />
-      <skill id="legion" x="9" />
-      <skill id="nullify" x="3" />
-    </upgrade>
-  </unit>
-  <unit>
-    <id>28069</id>
-    <card_type>2</card_type>
-    <fusion_level>2</fusion_level>
-    <name>Void-Touched</name>
-    <picture>Chariot_B</picture>
-    <asset_bundle>6</asset_bundle>
-    <attack>8</attack>
-    <health>47</health>
-    <cost>1</cost>
-    <rarity>4</rarity>
-    <skill id="corrosive" x="15" />
-    <skill id="legion" x="10" />
-    <skill id="nullify" x="3" />
-    <type>8</type>
-    <set>9999</set>
-    <upgrade>
-      <level>2</level>
-      <attack>9</attack>
-      <health>48</health>
-    </upgrade>
-    <upgrade>
-      <level>3</level>
-      <health>49</health>
-    </upgrade>
-    <upgrade>
-      <level>4</level>
-      <attack>10</attack>
-      <health>50</health>
-    </upgrade>
-    <upgrade>
-      <level>5</level>
-      <skill id="corrosive" x="15" />
-      <skill id="legion" x="10" />
-      <skill id="nullify" x="4" />
-    </upgrade>
-    <upgrade>
-      <level>6</level>
-      <skill id="corrosive" x="16" />
-      <skill id="legion" x="10" />
-      <skill id="nullify" x="6" />
     </upgrade>
   </unit>
   <unit>
@@ -5922,95 +5740,6 @@
     </upgrade>
   </unit>
   <unit>
-    <id>18070</id>
-    <card_type>2</card_type>
-    <fusion_level>1</fusion_level>
-    <name>Scylla's Fool</name>
-    <picture>Invisible_Assassin_C</picture>
-    <asset_bundle>10</asset_bundle>
-    <attack>9</attack>
-    <health>10</health>
-    <cost>0</cost>
-    <rarity>4</rarity>
-    <skill id="evade" x="3" />
-    <skill id="poison" x="5" />
-    <skill id="berserk" x="4" />
-    <type>8</type>
-    <set>9999</set>
-    <upgrade>
-      <level>2</level>
-      <attack>9</attack>
-    </upgrade>
-    <upgrade>
-      <level>3</level>
-      <health>11</health>
-      <skill id="evade" x="3" />
-      <skill id="poison" x="6" />
-      <skill id="berserk" x="4" />
-    </upgrade>
-    <upgrade>
-      <level>4</level>
-      <health>12</health>
-    </upgrade>
-    <upgrade>
-      <level>5</level>
-      <skill id="evade" x="4" />
-      <skill id="poison" x="6" />
-      <skill id="berserk" x="4" />
-    </upgrade>
-    <upgrade>
-      <level>6</level>
-      <health>13</health>
-    </upgrade>
-  </unit>
-  <unit>
-    <id>28070</id>
-    <card_type>2</card_type>
-    <fusion_level>2</fusion_level>
-    <name>Scylla's Fool</name>
-    <picture>Invisible_Assassin_C</picture>
-    <asset_bundle>10</asset_bundle>
-    <attack>10</attack>
-    <health>14</health>
-    <cost>0</cost>
-    <rarity>4</rarity>
-    <skill id="evade" x="4" />
-    <skill id="poison" x="7" />
-    <skill id="berserk" x="5" />
-    <type>8</type>
-    <set>9999</set>
-    <upgrade>
-      <level>2</level>
-      <skill id="evade" x="5" />
-      <skill id="poison" x="7" />
-      <skill id="berserk" x="5" />
-    </upgrade>
-    <upgrade>
-      <level>3</level>
-      <health>15</health>
-      <skill id="evade" x="5" />
-      <skill id="poison" x="7" />
-      <skill id="berserk" x="5" />
-    </upgrade>
-    <upgrade>
-      <level>4</level>
-      <attack>10</attack>
-    </upgrade>
-    <upgrade>
-      <level>5</level>
-      <health>16</health>
-      <skill id="evade" x="6" />
-      <skill id="poison" x="7" />
-      <skill id="berserk" x="5" />
-    </upgrade>
-    <upgrade>
-      <level>6</level>
-      <skill id="evade" x="6" />
-      <skill id="poison" x="8" />
-      <skill id="berserk" x="6" />
-    </upgrade>
-  </unit>
-  <unit>
     <id>8071</id>
     <card_type>2</card_type>
     <name>Vulcanos' Breath</name>
@@ -6047,87 +5776,6 @@
     </upgrade>
   </unit>
   <unit>
-    <id>18071</id>
-    <card_type>2</card_type>
-    <fusion_level>1</fusion_level>
-    <name>Vulcanos' Breath</name>
-    <picture>Flaming_Skeleton_Warrior_C</picture>
-    <asset_bundle>10</asset_bundle>
-    <attack>4</attack>
-    <health>15</health>
-    <cost>0</cost>
-    <rarity>4</rarity>
-    <skill id="enfeeble" x="2" all="1" />
-    <skill id="weaken" x="3" all="1" />
-    <skill id="scorchbreath" x="1" />
-    <type>2</type>
-    <sub_type>7</sub_type>
-    <set>9999</set>
-    <upgrade>
-      <level>2</level>
-      <health>16</health>
-    </upgrade>
-    <upgrade>
-      <level>3</level>
-    </upgrade>
-    <upgrade>
-      <level>4</level>
-      <skill id="enfeeble" x="2" all="1" />
-      <skill id="weaken" x="4" all="1" />
-      <skill id="scorchbreath" x="2" />
-    </upgrade>
-    <upgrade>
-      <level>5</level>
-    </upgrade>
-    <upgrade>
-      <level>6</level>
-      <health>17</health>
-    </upgrade>
-  </unit>
-  <unit>
-    <id>28071</id>
-    <card_type>2</card_type>
-    <fusion_level>2</fusion_level>
-    <name>Vulcanos' Breath</name>
-    <picture>Flaming_Skeleton_Warrior_C</picture>
-    <asset_bundle>10</asset_bundle>
-    <hidden_until_time></hidden_until_time>
-    <attack>5</attack>
-    <health>17</health>
-    <cost>0</cost>
-    <rarity>4</rarity>
-    <skill id="enfeeble" x="2" all="1" />
-    <skill id="weaken" x="4" all="1" />
-    <skill id="scorchbreath" x="2" />
-    <type>2</type>
-    <sub_type>7</sub_type>
-    <set>9999</set>
-    <upgrade>
-      <level>2</level>
-      <skill id="enfeeble" x="2" all="1" />
-      <skill id="weaken" x="5" all="1" />
-      <skill id="scorchbreath" x="2" />
-    </upgrade>
-    <upgrade>
-      <level>3</level>
-      <health>18</health>
-    </upgrade>
-    <upgrade>
-      <level>4</level>
-    </upgrade>
-    <upgrade>
-      <level>5</level>
-    </upgrade>
-    <upgrade>
-      <level>6</level>
-      <attack>6</attack>
-      <health>19</health>
-      <skill id="enfeeble" x="3" all="1" />
-      <skill id="weaken" x="6" all="1" />
-      <skill id="scorchbreath" x="3" />
-    </upgrade>
-  </unit>
-  <unit>
     <id>8072</id>
     <card_type>2</card_type>
     <name>Atlas' Sage</name>
@@ -6159,85 +5807,6 @@
     <upgrade>
       <level>6</level>
       <health>47</health>
-    </upgrade>
-  </unit>
-  <unit>
-    <id>18072</id>
-    <card_type>2</card_type>
-    <fusion_level>1</fusion_level>
-    <name>Atlas' Sage</name>
-    <picture>Frog_Shaman_B</picture>
-    <asset_bundle>18</asset_bundle>
-    <attack>8</attack>
-    <health>47</health>
-    <cost>3</cost>
-    <rarity>4</rarity>
-    <skill id="armored" x="4" />
-    <skill id="rally" x="6" all="1" />
-    <skill id="heal" x="8" all="1" />
-    <type>3</type>
-    <sub_type>4</sub_type>
-    <set>9999</set>
-    <upgrade>
-      <level>2</level>
-    </upgrade>
-    <upgrade>
-      <level>3</level>
-      <health>48</health>
-    </upgrade>
-    <upgrade>
-      <level>4</level>
-      <attack>9</attack>
-      <skill id="armored" x="5" />
-      <skill id="rally" x="7" all="1" />
-      <skill id="heal" x="9" all="1" />
-    </upgrade>
-    <upgrade>
-      <level>5</level>
-      <health>49</health>
-    </upgrade>
-    <upgrade>
-      <level>6</level>
-    </upgrade>
-  </unit>
-  <unit>
-    <id>28072</id>
-    <card_type>2</card_type>
-    <fusion_level>2</fusion_level>
-    <name>Atlas' Sage</name>
-    <picture>Frog_Shaman_B</picture>
-    <asset_bundle>18</asset_bundle>
-    <attack>9</attack>
-    <health>49</health>
-    <cost>3</cost>
-    <rarity>4</rarity>
-    <skill id="armored" x="5" />
-    <skill id="rally" x="7" all="1" />
-    <skill id="heal" x="9" all="1" />
-    <type>3</type>
-    <sub_type>4</sub_type>
-    <set>9999</set>
-    <upgrade>
-      <level>2</level>
-      <health>50</health>
-    </upgrade>
-    <upgrade>
-      <level>3</level>
-    </upgrade>
-    <upgrade>
-      <level>4</level>
-      <health>51</health>
-    </upgrade>
-    <upgrade>
-      <level>5</level>
-    </upgrade>
-    <upgrade>
-      <level>6</level>
-      <attack>10</attack>
-      <health>52</health>
-      <skill id="armored" x="6" />
-      <skill id="rally" x="8" all="1" />
-      <skill id="heal" x="10" all="1" />
     </upgrade>
   </unit>
   <!-- Void Core Dungeon -->
@@ -6601,6 +6170,48 @@
       <skill id="rally" x="3" all="1" y="8" />
       <skill id="jam" c="3" />
       <skill id="leech" x="8" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8080</id>
+    <card_type>2</card_type>
+    <name>Solaron's Gust</name>
+    <picture>Cloud_Elemental_C</picture>
+    <asset_bundle>8</asset_bundle>
+    <attack>3</attack>
+    <health>20</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="heal" x="3" y="1" />
+    <skill id="frost" x="1" />
+    <skill id="weaken" x="1" all="1" />
+    <type>1</type>
+    <sub_type>5</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="heal" x="4" y="1" />
+      <skill id="frost" x="1" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>23</health>
+      <skill id="heal" x="5" y="1" />
+      <skill id="frost" x="1" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>24</health>
     </upgrade>
   </unit>
 </root>

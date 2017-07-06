@@ -1121,4 +1121,20 @@ var BATTLEGROUNDS = {
       },
     ]
   },
+  "2015": {
+    "name": "Dirge of the World",
+    "id": "2015",
+    "desc": "Bluefire, Mythic Master fights harder with each passing Mastery level, increasing cards' stats!",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "7",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .1,
+        "mult": .01,
+      },
+    ]
+  },
 };

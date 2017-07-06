@@ -4918,20 +4918,21 @@
     </rewards>
   </campaign>
   <!-- END Hero Upgrade Campaigns -->
-  <!-- Test Campaign
+  <!-- Test Campaign  
 
 	<campaign>
 		<id>3009</id>
-		<name>Mythic Test</name>
+		<name>Reality Distorts...</name>
 		<icon id='black_boss_gem' bundle='15' />
-		<campaign_req>24</campaign_req>
+		<campaign_req>1127</campaign_req>
+		<battleground_id>2015</battleground_id>
 		<side_mission>1</side_mission>
 		<location_id>4</location_id>
 		<show_level>1</show_level>
 		<show_ranking>1</show_ranking>
 		<x>550</x>
 		<y>395</y>
-		<combatBG>CombatBGEvent004</combatBG>
+		<combatBG>CombatBGVoid</combatBG>
 		<missions>
 			<mission_id>5620</mission_id>
 			<mission_id>5621</mission_id>
@@ -4948,5 +4949,5 @@
 			<item level='5' id='1012' />
 		</rewards>
 	</campaign>
-	 -->
+	-->
 </root>

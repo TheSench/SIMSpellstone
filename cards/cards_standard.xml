@@ -4656,34 +4656,34 @@
     <name>Poison Bullfrog</name>
     <picture>Poison_Frog_A</picture>
     <asset_bundle>10</asset_bundle>
-    <attack>3</attack>
-    <health>9</health>
+    <attack>4</attack>
+    <health>12</health>
     <cost>2</cost>
     <rarity>3</rarity>
     <skill id="enfeeble" x="1" />
-    <skill id="poison" x="1" />
+    <skill id="poison" x="2" />
     <type>2</type>
     <sub_type>4</sub_type>
     <set>1000</set>
     <release_set>1</release_set>
     <upgrade>
       <level>2</level>
-      <health>10</health>
+      <health>14</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>11</health>
+      <health>15</health>
       <skill id="enfeeble" x="1" />
-      <skill id="poison" x="2" />
+      <skill id="poison" x="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>4</attack>
+      <attack>5</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="enfeeble" x="1" all="1" />
-      <skill id="poison" x="2" />
+      <skill id="poison" x="3" />
     </upgrade>
   </unit>
   <unit>
@@ -4693,34 +4693,34 @@
     <name>Toxin Bullfrog</name>
     <picture>Poison_Frog_B</picture>
     <asset_bundle>10</asset_bundle>
-    <attack>4</attack>
-    <health>12</health>
+    <attack>5</attack>
+    <health>16</health>
     <cost>2</cost>
     <rarity>3</rarity>
     <skill id="enfeeble" x="1" all="1" />
-    <skill id="poison" x="2" />
+    <skill id="poison" x="3" />
     <type>2</type>
     <sub_type>4</sub_type>
     <set>1000</set>
     <release_set>1</release_set>
     <upgrade>
       <level>2</level>
-      <health>13</health>
+      <health>18</health>
     </upgrade>
     <upgrade>
       <level>3</level>
       <skill id="enfeeble" x="1" all="1" />
-      <skill id="poison" x="3" />
+      <skill id="poison" x="4" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <skill id="evade" x="1" />
       <skill id="enfeeble" x="1" all="1" />
-      <skill id="poison" x="3" />
+      <skill id="poison" x="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>5</attack>
+      <attack>6</attack>
     </upgrade>
   </unit>
   <unit>
@@ -4730,34 +4730,34 @@
     <name>Noxious Bullfrog</name>
     <picture>Poison_Frog_C</picture>
     <asset_bundle>10</asset_bundle>
-    <attack>5</attack>
-    <health>14</health>
+    <attack>6</attack>
+    <health>19</health>
     <cost>2</cost>
     <rarity>3</rarity>
-    <skill id="evade" x="1" />
+    <skill id="evade" x="2" />
     <skill id="enfeeble" x="1" all="1" />
-    <skill id="poison" x="3" />
+    <skill id="poison" x="4" />
     <type>2</type>
     <sub_type>4</sub_type>
     <set>1000</set>
     <release_set>1</release_set>
     <upgrade>
       <level>2</level>
-      <health>15</health>
+      <health>20</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>16</health>
+      <health>21</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>6</attack>
+      <attack>7</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="evade" x="1" />
+      <skill id="evade" x="2" />
       <skill id="enfeeble" x="1" all="1" />
-      <skill id="poison" x="4" />
+      <skill id="poison" x="5" />
     </upgrade>
   </unit>
   <unit>
@@ -7480,8 +7480,8 @@
     <card_type>2</card_type>
     <name>Sage of Croaks</name>
     <picture>Frog_Sage_A</picture>
-    <attack>1</attack>
-    <health>11</health>
+    <attack>3</attack>
+    <health>20</health>
     <cost>3</cost>
     <rarity>3</rarity>
     <skill id="evade" x="1" />
@@ -7492,23 +7492,23 @@
     <release_set>1</release_set>
     <upgrade>
       <level>2</level>
-      <health>13</health>
+      <health>22</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>2</attack>
+      <attack>4</attack>
       <skill id="evade" x="2" />
       <skill id="heal" x="1" all="1" y="4" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>14</health>
+      <health>23</health>
       <skill id="evade" x="2" />
       <skill id="heal" x="2" all="1" y="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>15</health>
+      <health>24</health>
       <skill id="evade" x="2" />
       <skill id="heal" x="2" all="1" y="4" />
       <skill id="enfeeble" x="1" />
@@ -7521,8 +7521,8 @@
     <name>Wizen Sage of Croaks</name>
     <picture>Frog_Sage_B</picture>
     <asset_bundle>9</asset_bundle>
-    <attack>2</attack>
-    <health>16</health>
+    <attack>4</attack>
+    <health>25</health>
     <cost>3</cost>
     <rarity>3</rarity>
     <skill id="evade" x="2" />
@@ -7534,20 +7534,20 @@
     <release_set>1</release_set>
     <upgrade>
       <level>2</level>
-      <health>17</health>
+      <health>26</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>3</attack>
+      <attack>5</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>19</health>
+      <health>28</health>
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="evade" x="2" />
-      <skill id="heal" x="2" all="1" y="4" />
+      <skill id="heal" x="3" all="1" y="4" />
       <skill id="enfeeble" x="1" all="1" />
     </upgrade>
   </unit>
@@ -7558,12 +7558,12 @@
     <name>Great Sage of Croaks</name>
     <picture>Frog_Sage_C</picture>
     <asset_bundle>9</asset_bundle>
-    <attack>3</attack>
-    <health>20</health>
+    <attack>5</attack>
+    <health>29</health>
     <cost>3</cost>
     <rarity>3</rarity>
     <skill id="evade" x="2" />
-    <skill id="heal" x="2" all="1" y="4" />
+    <skill id="heal" x="3" all="1" y="4" />
     <skill id="enfeeble" x="1" all="1" />
     <type>3</type>
     <sub_type>4</sub_type>
@@ -7571,23 +7571,23 @@
     <release_set>1</release_set>
     <upgrade>
       <level>2</level>
-      <health>21</health>
+      <health>31</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>4</attack>
+      <attack>6</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>22</health>
+      <health>32</health>
       <skill id="evade" x="2" />
-      <skill id="heal" x="3" all="1" y="4" />
+      <skill id="heal" x="4" all="1" y="4" />
       <skill id="enfeeble" x="1" all="1" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="evade" x="2" />
-      <skill id="heal" x="3" all="1" y="4" />
+      <skill id="heal" x="4" all="1" y="4" />
       <skill id="enfeeble" x="2" all="1" />
     </upgrade>
   </unit>

@@ -42,7 +42,7 @@
             </div>
         </div>
         <div id="skills">
-            <div ng-repeat="skill in card.skill" class="skill-list">
+            <div ng-repeat="skill in card.skill" class="skill-list" title="{{getSkillDescription(skill.id)}}">
                 <img ng-src="{{getSkillIcon(skill.id)}}" />
                 <span>{{skill.id|convertName|capitalize}}</span>
                 <span ng-if="skill.all == 1">All</span>

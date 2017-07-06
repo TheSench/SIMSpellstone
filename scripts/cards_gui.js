@@ -323,11 +323,10 @@ var CARD_GUI = {};
         }
         var divSkills = createDiv("card-skills");
         var skillsShort = createDiv("card-skills-short");
-        getPassiveSkills(divSkills, skillsShort, card, onField, boosts);
         if (card.earlyActivationSkills) getSkillsHtml(card, divSkills, skillsShort, card.earlyActivationSkills, onField);
         getSkillsHtml(card, divSkills, skillsShort, card.skill, onField);
         if (card.onDeathSkills) getSkillsHtml(card, divSkills, skillsShort, card.onDeathSkills, onField);
-        getTriggeredSkills(divSkills, skillsShort, card, onField, boosts);
+        getPassiveSkills(divSkills, skillsShort, card, onField, boosts);
         var skillsDetail = divSkills.cloneNode(true);
         skillsDetail.className = "card-skills-detailed";
         if (skillsShort.hasChildNodes()) {
@@ -417,24 +416,11 @@ var CARD_GUI = {};
     }
 
     function getPassiveSkills(divSkills, skillsShort, card, onField, boosts) {
-        getNonActivatedSkill(divSkills, skillsShort, onField, card, "evade", boosts);
-        getNonActivatedSkill(divSkills, skillsShort, onField, card, "taunt", boosts);
-        getNonActivatedSkill(divSkills, skillsShort, onField, card, "armored", boosts);
-        getNonActivatedSkill(divSkills, skillsShort, onField, card, "counter", boosts);
-        getNonActivatedSkill(divSkills, skillsShort, onField, card, "counterburn", boosts);
-        getNonActivatedSkill(divSkills, skillsShort, onField, card, "fury", boosts);
-        getNonActivatedSkill(divSkills, skillsShort, onField, card, "corrosive", boosts);
-    }
-
-    function getTriggeredSkills(divSkills, skillsShort, card, onField, boosts) {
-        getNonActivatedSkill(divSkills, skillsShort, onField, card, "valor", boosts);
-        getNonActivatedSkill(divSkills, skillsShort, onField, card, "pierce", boosts);
-        getNonActivatedSkill(divSkills, skillsShort, onField, card, "burn", boosts);
-        getNonActivatedSkill(divSkills, skillsShort, onField, card, "silence", boosts);
-        getNonActivatedSkill(divSkills, skillsShort, onField, card, "nullify", boosts);
-        getNonActivatedSkill(divSkills, skillsShort, onField, card, "poison", boosts);
-        getNonActivatedSkill(divSkills, skillsShort, onField, card, "leech", boosts);
-        getNonActivatedSkill(divSkills, skillsShort, onField, card, "berserk", boosts);
+        var passiveSkills = Object.getOwnPropertyNames(SKILL_DATA).filter(function (skillID) {
+            return ["passive", "toggle"].indexOf(SKILL_DATA[skillID].type) >= 0;
+        }).forEach(function (skill) {
+            getNonActivatedSkill(divSkills, skillsShort, onField, card, skill, boosts);
+        });
         var flurry = card.flurry;
         if (flurry) {
             divSkills.appendChild(getSkillHtml(card, flurry, onField));
@@ -481,65 +467,14 @@ var CARD_GUI = {};
         return htmlSkill;
     }
 
-    function getSkillIcon(skillName) {
+    function getSkillIcon(skillID) {
         var src = getAssetPath("skills");
-        var iconName = skillName.charAt(0).toUpperCase() + skillName.slice(1) + '.png';
-        switch (skillName) {
-            case 'armored':
-                iconName = 'Armor.png';
-                break;
-            case 'burn':
-                iconName = 'Scorch.png';
-                break;
-            case 'counter':
-                iconName = 'Vengeance.png';
-                break;
-            case 'enfeeble':
-                iconName = 'Hex.png';
-                break;
-            case 'enlarge':
-                iconName = 'Empower.png';
-                break;
-            case 'evade':
-                iconName = 'Invisibility.png';
-                break;
-            case 'flurry':
-                iconName = 'Dualstrike.png';
-                break;
-            case 'jam':
-                iconName = 'Freeze.png';
-                break;
-            case 'leech':
-                iconName = 'Siphon.png';
-                break;
-            case 'mark':
-                iconName = 'EagleEye.png';
-                break;
-            case 'poisonstrike':
-                iconName = 'Poisonbolt.png';
-                break;
-            case 'protect':
-                iconName = 'Barrier.png';
-                break;
-            case 'protect_ice':
-                iconName = "Iceshatter.png";
-                break;
-            case 'rally':
-                iconName = 'Empower.png';
-                break;
-            case 'strike':
-                iconName = 'Bolt.png';
-                break;
-            case 'weakenself':
-                iconName = 'Weaken.png';
-                break;
-            default:
-                iconName = (skillName.charAt(0).toUpperCase() + skillName.slice(1)) + ".png";
-                break;
-        }
+
+        var skillData = SKILL_DATA[skillID];
+        var iconName = (skillData ? skillData.icon : skillID) + ".png";
         src += iconName;
         var icon = createImg(src);
-        switch (skillName) {
+        switch (skillID) {
             case 'weakenself':
             case 'enlarge':
                 icon.style = "transform: rotateY(180deg);";
@@ -547,7 +482,7 @@ var CARD_GUI = {};
             default:
                 break;
         }
-        icon.title = convertName(skillName);
+        icon.title = (skillData ? skillData.name : skillID);
         return icon;
     }
 
