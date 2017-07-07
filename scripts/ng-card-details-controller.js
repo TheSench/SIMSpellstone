@@ -306,15 +306,69 @@
         }
     };
 
-    var DeckBuilderCtrl = function ($scope) {
+    var DeckBuilderCtrl = function ($scope, $window) {
         $scope.getSkillIcon = function (skillID) {
             var skillData = SKILL_DATA[skillID];
             return "res/skills/" + (skillData ? skillData.icon : skillID) + ".png";
+        }
+
+        $scope.supportedSkills = ['armored',
+            'protect',
+            //'protect_ice',
+            'berserk',
+            'strike',
+            'corrosive',
+            //'counterburn',
+            'flurry',
+            'rally',
+            'enhance',
+            'fervor',
+            'jam',
+            'frost',
+            'heal',
+            'enfeeble',
+            'imbue',
+            'evade',
+            'legion',
+            'fury',
+            'nullify',
+            'pierce',
+            'poison',
+            //'poisonstrike',
+            'burn',
+            'silence',
+            'leech',
+            'taunt',
+            'counter',
+            'weaken',
+            'valor'
+        ];
+
+        $scope.getSkillName = function (skillID) {
+            var skillData = SKILL_DATA[skillID];
+            return (skillData ? skillData.name : skillID);
+        }
+
+        $scope.showAdvancedFilters = $window.showAdvancedFilters;
+
+        $scope.filterSkill = function (event, skillID) {
+            filterSkill(event.target, skillID, event.altKey);
         }
     }
 
     angular.module('simulatorApp')
         .controller('CardDetailsCtrl', ['$scope', '$window', CardDetailsCtrl])
+        .directive('ngRightClick', function($parse) {
+            return function (scope, element, attrs) {
+                var fn = $parse(attrs.ngRightClick);
+                element.contextmenu(function (event) {
+                    scope.$apply(function () {
+                        event.preventDefault();
+                        fn(scope, { $event: event });
+                    });
+                });
+            };
+        })
         .directive('cardDetails', function ()
         {
             return {
@@ -350,6 +404,6 @@
         {
             return window.convertName;
         })
-    .controller('DeckBuilderCtrl', ['$scope', DeckBuilderCtrl]);
+        .controller('DeckBuilderCtrl', ['$scope', '$window', DeckBuilderCtrl]);
 
 }(angular));

@@ -138,8 +138,10 @@ var initDeckBuilder = function () {
     $("[name=delay]").click(function (event) {
         onClickFilter(event, filterDelay, event.altKey);
     });
-    $("[name=skill]").click(function (event) {
+    $("[name=skill]").on('click', function (event) {
         onClickFilter(event, filterSkill, event.altKey);
+    }).on('contextmenu', function (event) {
+        onContextMenu(event);
     });
     $("[name=set]").click(function (event) {
         onClickFilter(event, filterSet, event.altKey);
@@ -247,7 +249,7 @@ var setupPopups = function () {
         modifyCard(optionsDialog);
     });
 
-    var imageButtons = $('input[type="image"]');
+    var imageButtons = $('input[type="image"]:not(.skill-filter)');
     for (var i = 0; i < imageButtons.length; i++) {
         var imageButton = imageButtons[i];
         var toolTip = '<div class="tooltip">' + imageButton.getAttribute("title") + '</div>';
@@ -1148,6 +1150,12 @@ var onClickFilter = function (event, filterFunction, altKey) {
     var button = event.target;
     var filter = button.getAttribute("data-filter");
     filterFunction(button, filter, altKey);
+}
+
+var onContextMenu = function (event) {
+    var button = event.target;
+    var skill = button.getAttribute("data-filter");
+    showAdvancedFilters(skill);
 }
 
 var filterAdvanced = function (skill) {
