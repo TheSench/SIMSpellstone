@@ -263,6 +263,7 @@ var defaultStatusValues = {
     ondeath_triggered: false,
 }
 function applyDefaultStatuses(card) {
+    card.removeImbue();
     for (var status in defaultStatusValues) {
         card[status] = defaultStatusValues[status];
     }
@@ -355,6 +356,7 @@ var makeUnit = (function () {
             this.health_left = this.health;
             if (!this.isCommander()) {
                 this.timer = this.cost;
+                applyDefaultStatuses(this);
             }
             if (!this.reusableSkills) this.resetTimers();
         },
