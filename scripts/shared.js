@@ -600,7 +600,7 @@ var makeUnit = (function () {
         hasSkill: function (s, all) {
             var target_skills;
             var skillType = SKILL_DATA[s].type;
-            switch (s) {
+            switch (skillType) {
                 case 'toggle':
                 case 'passive':
                 case 'flurry':
@@ -741,7 +741,7 @@ var isImbued = function (card, skillID, i) {
     var activation = false;
     var imbueSkillsKey;
     var skillType = SKILL_DATA[skillID].type;
-    switch (skillID) {
+    switch (skillType) {
         case 'flurry':
         case 'toggle':
             return card.imbued[skillID];
@@ -1151,6 +1151,7 @@ function setSkill_2(new_card, skill) {
         case 'passive':
             new_card[skill.id] = (new_card[skill.id] | 0) + skill.x;
             break;
+
         case 'flurry':
             new_card[skill.id] = skill;
             break;

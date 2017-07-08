@@ -352,7 +352,7 @@
         $scope.showAdvancedFilters = $window.showAdvancedFilters;
 
         $scope.filterSkill = function (event, skillID) {
-            filterSkill(event.target, skillID, event.altKey);
+            $window.filterSkill(event.target, skillID, event.altKey);
         }
     }
 
