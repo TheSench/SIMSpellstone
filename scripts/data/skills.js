@@ -223,7 +223,7 @@ var SKILL_DATA = {
 	},
 	snaretongue: {
 	    name: 'Snaretongue',
-	    type: 'earlyActivation',
+	    type: 'activation',
 	    icon: 'poison_bolt',
 	    desc: 'Move the weakest enemy creature in front of it, shifting all other enemy creatures one space.'
 	},
