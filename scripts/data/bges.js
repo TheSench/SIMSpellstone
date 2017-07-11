@@ -280,6 +280,18 @@ var BATTLEGROUNDS = {
       },
     ]
   },
+  "200": {
+      "name": "Ash Testing",
+      "id": "200",
+      "desc": "Frogs have evolved to have Snaretongue! They grab the enemy with the lowest health and move it in front of them!",
+      "effect": [
+        {
+            "effect_type": "add_skill",
+            "id": "snaretongue",
+            "y": "4",
+        },
+      ]
+  },
   "501": {
     "name": "Castle Siege",
     "id": "501",
@@ -868,6 +880,29 @@ var BATTLEGROUNDS = {
       },
     ]
   },
+  "518": {
+    "name": "Goblin's Treachery",
+    "id": "518",
+    "desc": "Goblin Heals and Empowers all of his allies, increasing in strength as he levels up.",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "26",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "heal",
+        "x": 1.2,
+        "all": "1",
+      },
+      {
+        "effect_type": "skill",
+        "id": "rally",
+        "x": .7,
+        "all": "1",
+      },
+    ]
+  },
   "1001": {
     "name": "Primal Mending",
     "id": "1001",
@@ -1133,6 +1168,22 @@ var BATTLEGROUNDS = {
       {
         "effect_type": "scale_attributes",
         "base_mult": .1,
+        "mult": .01,
+      },
+    ]
+  },
+  "2016": {
+    "name": "Six-Stanza Sonata",
+    "id": "2016",
+    "desc": "The Enraged Assassin fights harder with each passing Mastery level, increasing cards' stats!",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "0",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .2,
         "mult": .01,
       },
     ]

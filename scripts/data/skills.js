@@ -221,6 +221,12 @@ var SKILL_DATA = {
 		icon: 'bind',
 		desc: 'Increases the creature\'s delay.'
 	},
+	snaretongue: {
+	    name: 'Snaretongue',
+	    type: 'earlyActivation',
+	    icon: 'poison_bolt',
+	    desc: 'Move the weakest enemy creature in front of it, shifting all other enemy creatures one space.'
+	},
 	strike : {
 		name: 'Bolt',
 		type: 'activation',

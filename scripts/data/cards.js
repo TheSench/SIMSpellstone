@@ -19038,7 +19038,7 @@ var CARDS = {
   "392": {
     "id": "392",
     "name": "The Enraged Assassin",
-    "picture": "portrait_steampunk_scarab",
+    "picture": "portrait_invisibleassassin",
     "rarity": "4",
     "set": "9999",
     "card_type": "1",
@@ -19079,7 +19079,7 @@ var CARDS = {
           },
           {
             "id": "weaken",
-            "x": 2,
+            "x": 3,
             "all": "1",
           },
         ],
@@ -19099,7 +19099,7 @@ var CARDS = {
           },
           {
             "id": "weaken",
-            "x": 3,
+            "x": 4,
             "all": "1",
           },
         ],
@@ -19119,7 +19119,7 @@ var CARDS = {
           },
           {
             "id": "weaken",
-            "x": 3,
+            "x": 4,
             "all": "1",
           },
         ],
@@ -19134,7 +19134,7 @@ var CARDS = {
           },
           {
             "id": "strike",
-            "x": 4,
+            "x": 3,
             "all": "1",
           },
           {
@@ -19154,12 +19154,12 @@ var CARDS = {
           },
           {
             "id": "strike",
-            "x": 5,
+            "x": 3,
             "all": "1",
           },
           {
             "id": "weaken",
-            "x": 4,
+            "x": 3,
             "all": "1",
           },
         ],
@@ -51446,6 +51446,230 @@ var CARDS = {
           {
             "id": "flurry",
             "c": 3,
+          },
+        ],
+      },
+    }
+  },
+  "5143": {
+    "id": "5143",
+    "name": "Cedric's Battlesnail",
+    "picture": "Snail_Tank_A",
+    "hidden_until": "1499706000000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["4","13"],
+    "health": 17,
+    "attack": 6,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 18,
+        "skill": [],
+      },
+      "3": {
+        "health": 19,
+        "skill": [],
+      },
+      "4": {
+        "attack": 7,
+        "skill": [],
+      },
+      "5": {
+        "health": 20,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "strike",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "15143": {
+    "id": "15143",
+    "name": "Cedric's Warsnail",
+    "picture": "Snail_Tank_A",
+    "hidden_until": "1499706000000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["4","13"],
+    "health": 21,
+    "attack": 7,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "strike",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "3": {
+        "health": 22,
+        "skill": [],
+      },
+      "4": {
+        "attack": 8,
+        "skill": [],
+      },
+      "5": {
+        "health": 23,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "25143": {
+    "id": "25143",
+    "name": "Cedric's Rocketsnail",
+    "picture": "Snail_Tank_B",
+    "hidden_until": "1499706000000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["4","13"],
+    "health": 24,
+    "attack": 8,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 3,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "strike",
+        "x": 2,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 25,
+        "skill": [],
+      },
+      "3": {
+        "attack": 9,
+        "skill": [],
+      },
+      "4": {
+        "health": 26,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "strike",
+            "x": 3,
+            "all": "1",
           },
         ],
       },
@@ -164622,6 +164846,128 @@ var CARDS = {
       },
     }
   },
+  "8081": {
+    "id": "8081",
+    "name": "Feral Bees",
+    "picture": "Angry_Hive_A",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["13"],
+    "health": 10,
+    "attack": 3,
+    "cost": 0,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "fervor",
+        "x": 3,
+        "y": "13",
+      },
+      {
+        "id": "burn",
+        "x": 1,
+      },
+      {
+        "id": "poison",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 11,
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "13",
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+          {
+            "id": "poison",
+            "x": 2,
+          },
+        ],
+      },
+      "3": {
+        "health": 12,
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 1,
+            "y": "13",
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+          {
+            "id": "poison",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 13,
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "13",
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+          {
+            "id": "poison",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "attack": 4,
+        "health": 14,
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "13",
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+          {
+            "id": "poison",
+            "x": 5,
+          },
+        ],
+      },
+      "6": {
+        "health": 15,
+        "skill": [
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "13",
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "poison",
+            "x": 5,
+          },
+        ],
+      },
+    }
+  },
   "9999": {
     "id": "9999",
     "name": "Unused Art",
@@ -165105,7 +165451,7 @@ var CARDS = {
   "9979": {
     "id": "9979",
     "name": "Unused Art",
-    "picture": "Snail_Tank_A",
+    "picture": "Spiky_Bug_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -165120,7 +165466,7 @@ var CARDS = {
   "19979": {
     "id": "19979",
     "name": "Unused Art",
-    "picture": "Snail_Tank_B",
+    "picture": "Spiky_Bug_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -165135,22 +165481,7 @@ var CARDS = {
   "9978": {
     "id": "9978",
     "name": "Unused Art",
-    "picture": "Spiky_Bug_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19978": {
-    "id": "19978",
-    "name": "Unused Art",
-    "picture": "Spiky_Bug_B",
+    "picture": "Tarian_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -165165,7 +165496,7 @@ var CARDS = {
   "9977": {
     "id": "9977",
     "name": "Unused Art",
-    "picture": "Tarian_A",
+    "picture": "Tremor_Wurm_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -165180,7 +165511,7 @@ var CARDS = {
   "9976": {
     "id": "9976",
     "name": "Unused Art",
-    "picture": "Tremor_Wurm_A",
+    "picture": "Unused1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -165195,7 +165526,7 @@ var CARDS = {
   "9975": {
     "id": "9975",
     "name": "Unused Art",
-    "picture": "Unused1_A",
+    "picture": "Unused2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -165210,7 +165541,7 @@ var CARDS = {
   "9974": {
     "id": "9974",
     "name": "Unused Art",
-    "picture": "Unused2_A",
+    "picture": "Unused3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -165225,7 +165556,7 @@ var CARDS = {
   "9973": {
     "id": "9973",
     "name": "Unused Art",
-    "picture": "Unused3_A",
+    "picture": "Ursurio_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -165240,7 +165571,7 @@ var CARDS = {
   "9972": {
     "id": "9972",
     "name": "Unused Art",
-    "picture": "Ursurio_A",
+    "picture": "Void_Abomination_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -165255,21 +165586,6 @@ var CARDS = {
   "9971": {
     "id": "9971",
     "name": "Unused Art",
-    "picture": "Void_Abomination_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9970": {
-    "id": "9970",
-    "name": "Unused Art",
     "picture": "Yuriel_A",
     "rarity": "0",
     "card_type": "2",
@@ -165283,4 +165599,4 @@ var CARDS = {
     "upgrades": {}
   },
 };
-var CardsUpdated = 1499365764462.33;
+var CardsUpdated = 1499689564636.79;

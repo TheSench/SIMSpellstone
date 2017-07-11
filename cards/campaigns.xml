@@ -4642,6 +4642,39 @@
     </rewards>
     <find_item id="3056" drop_per_energy=".4" />
   </campaign>
+  <!-- 
+	<campaign> 
+		<id>1133</id>
+		<name>Test</name>
+		<type>2</type>
+		<icon id='gem_Boss_LG' bundle='0' />
+		<campaign_req>1131</campaign_req>
+		<locked_start_time>1499965200</locked_start_time>	|Thu, 13 July 2017 17:00:00 |
+		<battleground_id>2016</battleground_id>
+		<location_id>10</location_id>
+		<show_level>1</show_level>
+		<show_ranking>1</show_ranking>
+		<x>535</x>
+		<y>410</y>
+		<combatBG>CombatBGVoid</combatBG>
+		<missions>
+			<mission_id>5650</mission_id>
+			<mission_id>5651</mission_id>
+			<mission_id>5652</mission_id>
+			<mission_id>5653</mission_id>
+		</missions>
+		<rewards>
+			<card level='1' id='511' />
+			<card level='2' id='511' />
+			<card level='3' id='511' />
+			<card level='4' id='2099' />
+			<card level='5' id='512' />
+			<card level='6' id='2049' />
+			<item level='7' id='3058' />
+		</rewards>
+		<find_item id='3056' drop_per_energy='.4' />
+	</campaign>
+-->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
   <!-- ============================ -->

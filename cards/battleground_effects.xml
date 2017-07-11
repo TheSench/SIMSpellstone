@@ -654,6 +654,22 @@
       <skill id="enhance" s="armored" mult="0.5" all="1" />
     </effect>
   </battleground>
+  <battleground>
+    <id>518</id>
+    <name>Goblin's Treachery</name>
+    <desc>Goblin Heals and Empowers all of his allies, increasing in strength as he levels up.</desc>
+    <icon>raid_004_BGE_64</icon>
+    <icon_bundle>26</icon_bundle>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>26</starting_level>
+    <!-- Starting Raid Level -->
+    <effect>
+      <skill id="heal" x="1.2" all="1" />
+      <skill id="rally" x=".7" all="1" />
+    </effect>
+  </battleground>
   <!-- 1001+: Personal BGE -->
   <battleground>
     <id>1001</id>
@@ -919,6 +935,21 @@
     <!-- Starting Mastery Level -->
     <effect>
       <scale_attributes base_mult=".1" mult=".01" />
+    </effect>
+  </battleground>
+  <!-- Campaign Event 4 Boss -->
+  <battleground>
+    <id>2016</id>
+    <name>Six-Stanza Sonata</name>
+    <desc>The Enraged Assassin fights harder with each passing Mastery level, increasing cards' stats!</desc>
+    <icon>filter_insect_64.png</icon>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>0</starting_level>
+    <!-- Starting Mastery Level -->
+    <effect>
+      <scale_attributes base_mult=".2" mult=".01" />
     </effect>
   </battleground>
 </root>

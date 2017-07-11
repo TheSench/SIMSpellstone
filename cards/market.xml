@@ -1585,10 +1585,10 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="13" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="1000,3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="1000,3000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="13" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="3000,4000" />
     </cards>
   </store_item>
   <store_item>
@@ -2597,7 +2597,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <priority>300</priority>
-    <desc>Includes one ^cE7FFLegendary ^cFFFFInsect card and three additional ^c0DFFEpic^cFFFF+ Insect cards from Standard or Premium set! May be purchased three times!</desc>
+    <desc>Includes one ^cE7FFLegendary ^cFFFFInsect card and three additional ^c0DFFEpic^cFFFF+ Insect cards from Premium set! May be purchased three times!</desc>
     <asset_prefab>event_013_crystal_legendary</asset_prefab>
     <background_prefab>event_013_banner_legenadaryPack</background_prefab>
     <bundle>64</bundle>

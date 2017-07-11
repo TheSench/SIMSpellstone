@@ -1463,6 +1463,78 @@ var SIMULATOR = {};
 
             return affected;
         },
+
+        snaretongue: function (src_card, skill) {
+
+            var faction = skill['y'];
+
+            var p = get_p(src_card);
+            var o = get_o(src_card);
+
+            var field_x_assaults = field[o]['assaults'];
+
+            var markTarget = src_card.mark_target;
+            var targets = [];
+            for (var key = 0, len = field_x_assaults.length; key < len; key++) {
+                var target = field_x_assaults[key];
+                if (target.isAlive()
+                && target.isInFaction(faction)) {
+                    targets.push(key);
+                }
+            }
+
+            // No Targets
+            if (!targets.length) return 0;
+
+            // Find weakest
+            var target = field_x_assaults[targets.reduce(function (weakest, target) {
+                return ((field_x_assaults[target].health_left < field_x_assaults[weakest].health_left) ? target : weakest);
+            }, targets[0])];
+
+            var toKey = src_card.key;
+            var fromKey = target.key;
+            if (toKey === toKey) {
+                // No change in position
+                if (debug) echo += debug_name(src_card) + ' activates snaretongue and keeps ' + debug_name(target) + ' in front of it<br>';
+                return false;
+            }
+
+            field_x_assaults.splice(target.key, 1);
+            if (field_x_assaults.length < toKey) {
+                CARDS[0] = CARDS[0] || {
+                    "id": "0",
+                    "name": "Filler",
+                    "picture": "",
+                    "rarity": "0",
+                    "set": "9999",
+                    "card_type": "0",
+                    "type": "0",
+                    "sub_type": [],
+                    "health": 1,
+                    "attack": 0,
+                    "cost": 0,
+                    "maxLevel": 1,
+                    "skill": [],
+                };
+                var filler = get_card_by_id({ id: 0, level: 1 });
+                filler.name = "filler";
+                filler.health_left = 0;
+                for (var i = field_x_assaults.length; i < toKey; i++) {
+                    field_x_assaults.push(filler);
+                }
+            }
+            field_x_assaults.splice(toKey, 0, target);
+            for (var i = Math.min(toKey, fromKey), end = Math.max(toKey, fromKey) ; i <= end; i++) {
+                field_x_assaults[i].key = i;
+            }
+
+            if (debug) echo += debug_name(src_card) + ' activates snaretongue and pulls ' + debug_name(target) + ' in front of it<br>';
+
+            // Set countdown so skill can't trigger twice on dual-strike turn
+            skill.countdown = 1;
+
+            return 1;
+        }
     };
 
     var onPlaySkills = {
