@@ -8621,45 +8621,101 @@
     <attack>0</attack>
     <health>66</health>
     <rarity>4</rarity>
-    <skill id="imbue" x="1" s="berserk" />
-    <skill id="strike" x="1" all="1" />
+    <skill id="enhance" s="poison" x="2" />
+    <skill id="strike" x="3" all="1" />
     <skill id="weaken" x="2" all="1" />
     <type>2</type>
     <set>9999</set>
     <upgrade>
       <level>2</level>
       <health>72</health>
-      <skill id="imbue" x="1" s="berserk" />
-      <skill id="strike" x="2" all="1" />
-      <skill id="weaken" x="3" all="1" />
+      <skill id="enhance" s="poison" x="2" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="weaken" x="2" all="1" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>79</health>
-      <skill id="imbue" x="2" s="berserk" />
-      <skill id="strike" x="2" all="1" />
-      <skill id="weaken" x="4" all="1" />
+      <skill id="enhance" s="poison" x="2" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="weaken" x="2" all="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>85</health>
-      <skill id="imbue" x="2" s="berserk" />
+      <skill id="enhance" s="poison" x="2" />
       <skill id="strike" x="3" all="1" />
-      <skill id="weaken" x="4" all="1" />
+      <skill id="weaken" x="2" all="1" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>92</health>
-      <skill id="imbue" x="3" s="berserk" />
+      <skill id="enhance" s="poison" x="3" />
       <skill id="strike" x="3" all="1" />
-      <skill id="weaken" x="3" all="1" />
+      <skill id="weaken" x="2" all="1" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>99</health>
-      <skill id="imbue" x="4" s="berserk" />
+      <skill id="enhance" s="poison" x="3" />
       <skill id="strike" x="3" all="1" />
       <skill id="weaken" x="3" all="1" />
     </upgrade>
+  </unit>
+  <!-- START Gobatron Raid Boss -->
+  <unit>
+    <id>393</id>
+    <card_type>1</card_type>
+    <name>Gobatron</name>
+    <portrait>raid_004</portrait>
+    <attack>0</attack>
+    <health>32</health>
+    <rarity>5</rarity>
+    <skill id="imbue" x="1" s="strike" />
+    <skill id="barrage" x="2" />
+    <skill id="enrage" x="2" y="11" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>42</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>52</health>
+      <skill id="imbue" x="2" s="strike" />
+      <skill id="barrage" x="3" />
+      <skill id="enrage" x="2" y="11" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>62</health>
+      <skill id="imbue" x="3" s="strike" />
+      <skill id="barrage" x="3" />
+      <skill id="enrage" x="3" y="11" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>72</health>
+      <skill id="imbue" x="4" s="strike" />
+      <skill id="barrage" x="4" />
+      <skill id="enrage" x="3" y="11" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>82</health>
+      <skill id="imbue" x="5" s="strike" />
+      <skill id="barrage" x="5" />
+      <skill id="enrage" x="3" y="11" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>92</health>
+      <skill id="imbue" x="6" s="strike" />
+      <skill id="barrage" x="6" />
+      <skill id="enrage" x="3" y="11" all="1" />
+    </upgrade>
+    <desc>The most advanced contraption to ever be conceived by goblin kind! Meet your doom!</desc>
   </unit>
 </root>

@@ -288,6 +288,9 @@
     <icon>enrage</icon>
     <name>Enrage</name>
     <desc>Enrage a random ally creature. Until your next turn, every time the creature takes damage from an Attack, gain Attack permanently.</desc>
+    <desc_all>Enrage all ally creatures. Until your next turn, every time the creatures takes damage from an Attack, gain Attack permanently.</desc_all>
+    <desc_faction>Enrage a random ally {y} creature. Until your next turn, every time the creature takes damage from an Attack, gain Attack permanently.</desc_faction>
+    <desc_all_faction>Enrage all ally {y} creatures. Until your next turn, every time the creatures takes damage from an Attack, gain Attack permanently.</desc_all_faction>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <vfx_location>edge</vfx_location>
     <balance_points>6</balance_points>
@@ -445,7 +448,7 @@
     <upkeep>1</upkeep>
     <!-- This skill occurs before all other actions -->
     <attributes x="1" y="0" all="0" c="0" s="0" />
-    <desc>Deal damage to random enemy creatures</desc>
+    <desc>Deal damage to random enemy creatures one damage at a time. Does not gain bonus damage from Hex or Venom.</desc>
     <hidden>1</hidden>
   </skillType>
   <skillType>

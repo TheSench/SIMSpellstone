@@ -17221,6 +17221,138 @@
     </upgrade>
   </unit>
   <unit>
+    <id>5140</id>
+    <card_type>2</card_type>
+    <name>Copperhorn Beetle</name>
+    <picture>Rhino_Beetle_A</picture>
+    <asset_bundle>98</asset_bundle>
+    <hidden_until_time>1499965200</hidden_until_time>
+    <attack>5</attack>
+    <health>10</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="2" />
+    <skill id="valor" x="3" />
+    <skill id="protect" x="2" y="1" />
+    <type>1</type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="2" />
+      <skill id="valor" x="4" />
+      <skill id="protect" x="2" y="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="2" />
+      <skill id="valor" x="4" />
+      <skill id="protect" x="3" y="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>13</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15140</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Bronzehorn Beetle</name>
+    <picture>Rhino_Beetle_A</picture>
+    <asset_bundle>98</asset_bundle>
+    <hidden_until_time>1499965200</hidden_until_time>
+    <attack>5</attack>
+    <health>13</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="2" />
+    <skill id="valor" x="5" />
+    <skill id="protect" x="3" y="1" />
+    <type>1</type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="3" />
+      <skill id="valor" x="5" />
+      <skill id="protect" x="3" y="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="3" />
+      <skill id="valor" x="6" />
+      <skill id="protect" x="3" y="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="3" />
+      <skill id="valor" x="6" />
+      <skill id="protect" x="4" y="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25140</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Steelhorn Beetle</name>
+    <picture>Rhino_Beetle_B</picture>
+    <asset_bundle>98</asset_bundle>
+    <hidden_until_time>1499965200</hidden_until_time>
+    <attack>5</attack>
+    <health>16</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="3" />
+    <skill id="valor" x="6" />
+    <skill id="protect" x="4" y="1" />
+    <type>1</type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="3" />
+      <skill id="valor" x="7" />
+      <skill id="protect" x="4" y="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="4" />
+      <skill id="valor" x="7" />
+      <skill id="protect" x="4" y="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="4" />
+      <skill id="valor" x="8" />
+      <skill id="protect" x="5" y="1" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>5141</id>
     <card_type>2</card_type>
     <name>Nimbocaster</name>

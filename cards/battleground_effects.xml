@@ -940,7 +940,7 @@
   <!-- Campaign Event 4 Boss -->
   <battleground>
     <id>2016</id>
-    <name>Six-Stanza Sonata</name>
+    <name>Buzzsaw Aphidsong</name>
     <desc>The Enraged Assassin fights harder with each passing Mastery level, increasing cards' stats!</desc>
     <icon>filter_insect_64.png</icon>
     <enemy_only>1</enemy_only>

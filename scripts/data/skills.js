@@ -9,7 +9,7 @@ var SKILL_DATA = {
 		name: 'barrage',
 		type: 'earlyActivation',
 		icon: 'barrage',
-		desc: 'Deal damage to random enemy creatures'
+		desc: 'Deal damage to random enemy creatures one damage at a time. Does not gain bonus damage from Hex or Venom.'
 	},
 	berserk : {
 		name: 'Berserk',

@@ -6224,7 +6224,7 @@
     <health>10</health>
     <cost>0</cost>
     <rarity>4</rarity>
-    <skill id="fervor" x="3" y="13" />
+    <skill id="fervor" x="1" y="13" />
     <skill id="burn" x="1" />
     <skill id="poison" x="1" />
     <type>2</type>
@@ -6233,7 +6233,7 @@
     <upgrade>
       <level>2</level>
       <health>11</health>
-      <skill id="fervor" x="3" y="13" />
+      <skill id="fervor" x="1" y="13" />
       <skill id="burn" x="1" />
       <skill id="poison" x="2" />
     </upgrade>
@@ -6246,25 +6246,328 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>13</health>
+      <health>12</health>
       <skill id="fervor" x="2" y="13" />
       <skill id="burn" x="1" />
       <skill id="poison" x="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>14</health>
+      <health>12</health>
       <attack>4</attack>
-      <skill id="fervor" x="3" y="13" />
+      <skill id="fervor" x="2" y="13" />
       <skill id="burn" x="1" />
-      <skill id="poison" x="5" />
+      <skill id="poison" x="4" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>15</health>
-      <skill id="fervor" x="3" y="13" />
+      <health>12</health>
+      <skill id="fervor" x="2" y="13" />
       <skill id="burn" x="2" />
-      <skill id="poison" x="5" />
+      <skill id="poison" x="3" />
     </upgrade>
+  </unit>
+  <unit>
+    <id>8082</id>
+    <card_type>2</card_type>
+    <name>Gobatron's Ranger</name>
+    <picture>Ranger_Goblin_B</picture>
+    <asset_bundle>74</asset_bundle>
+    <attack>5</attack>
+    <health>18</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="burn" x="2" />
+    <skill id="pierce" x="3" />
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+      <skill id="evade" x="1" />
+      <skill id="burn" x="3" />
+      <skill id="pierce" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>21</health>
+      <attack>6</attack>
+      <skill id="evade" x="2" />
+      <skill id="burn" x="3" />
+      <skill id="pierce" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>22</health>
+      <skill id="evade" x="2" />
+      <skill id="burn" x="4" />
+      <skill id="pierce" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>24</health>
+      <attack>7</attack>
+      <skill id="evade" x="2" />
+      <skill id="burn" x="5" />
+      <skill id="pierce" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>26</health>
+      <skill id="evade" x="3" />
+      <skill id="burn" x="6" />
+      <skill id="pierce" x="8" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8083</id>
+    <card_type>2</card_type>
+    <name>Gobatron's Firebrand</name>
+    <picture>Goblin_Elemental_Surfer_B</picture>
+    <asset_bundle>95</asset_bundle>
+    <attack>6</attack>
+    <health>23</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="2" />
+    <skill id="enfeeble" x="1" all="1" />
+    <skill id="burn" x="2" />
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <sub_type>11</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>24</health>
+      <skill id="corrosive" x="3" />
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="burn" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>26</health>
+      <attack>7</attack>
+      <skill id="corrosive" x="4" />
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="burn" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>28</health>
+      <skill id="corrosive" x="5" />
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="burn" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>30</health>
+      <attack>8</attack>
+      <skill id="corrosive" x="5" />
+      <skill id="enfeeble" x="3" all="1" />
+      <skill id="burn" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>32</health>
+      <skill id="corrosive" x="6" />
+      <skill id="enfeeble" x="4" all="1" />
+      <skill id="burn" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8084</id>
+    <card_type>2</card_type>
+    <name>Gobatron's Bomber</name>
+    <picture>Bomb_Rider_Goblin_A</picture>
+    <asset_bundle>68</asset_bundle>
+    <attack>1</attack>
+    <health>14</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="strike" x="2" />
+    <skill id="strike" x="2" />
+    <skill id="strike" x="2" />
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>15</health>
+      <skill id="strike" x="3" />
+      <skill id="strike" x="3" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+      <skill id="strike" x="4" />
+      <skill id="strike" x="3" />
+      <skill id="strike" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+      <skill id="strike" x="5" />
+      <skill id="strike" x="4" />
+      <skill id="strike" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>20</health>
+      <skill id="strike" x="5" />
+      <skill id="strike" x="5" />
+      <skill id="strike" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>22</health>
+      <skill id="strike" x="6" />
+      <skill id="strike" x="6" />
+      <skill id="strike" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8085</id>
+    <card_type>2</card_type>
+    <name>Gobatron's Right Hand</name>
+    <picture>Bionic_Arm_Goblin_B</picture>
+    <asset_bundle>74</asset_bundle>
+    <attack>7</attack>
+    <health>32</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="flurry" c="5" />
+    <skill id="barrage" x="6" />
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>34</health>
+      <skill id="evade" x="1" />
+      <skill id="flurry" c="4" />
+      <skill id="barrage" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>8</attack>
+      <health>36</health>
+      <skill id="evade" x="2" />
+      <skill id="flurry" c="4" />
+      <skill id="barrage" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>38</health>
+      <skill id="evade" x="2" />
+      <skill id="flurry" c="3" />
+      <skill id="barrage" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>9</attack>
+      <health>40</health>
+      <skill id="evade" x="3" />
+      <skill id="flurry" c="3" />
+      <skill id="barrage" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>10</attack>
+      <health>42</health>
+      <skill id="evade" x="4" />
+      <skill id="flurry" c="3" />
+      <skill id="barrage" x="12" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8086</id>
+    <card_type>2</card_type>
+    <name>Gobatron's Brutalizer</name>
+    <picture>Monster_Tamer_Goblin_B</picture>
+    <asset_bundle>74</asset_bundle>
+    <attack>8</attack>
+    <health>24</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="3" />
+    <skill id="rally" x="2" all="1" y="11" />
+    <skill id="leech" x="6" />
+    <type>3</type>
+    <sub_type>11</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+      <attack>9</attack>
+      <skill id="armored" x="3" />
+      <skill id="rally" x="2" all="1" y="11" />
+      <skill id="leech" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>26</health>
+      <skill id="armored" x="4" />
+      <skill id="rally" x="3" all="1" y="11" />
+      <skill id="leech" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>27</health>
+      <attack>10</attack>
+      <skill id="armored" x="4" />
+      <skill id="rally" x="3" all="1" y="11" />
+      <skill id="leech" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>28</health>
+      <skill id="armored" x="5" />
+      <skill id="rally" x="3" all="1" y="11" />
+      <skill id="leech" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>30</health>
+      <skill id="armored" x="5" />
+      <skill id="rally" x="4" all="1" y="11" />
+      <skill id="leech" x="10" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8087</id>
+    <card_type>2</card_type>
+    <name>Gobatron's Crew</name>
+    <picture>Goblin_Gang_A</picture>
+    <asset_bundle>10</asset_bundle>
+    <attack>4</attack>
+    <health>6</health>
+    <cost>1</cost>
+    <rarity>2</rarity>
+    <skill id="pierce" x="2" />
+    <skill id="flurry" c="5" />
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>8</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>6</attack>
+      <skill id="pierce" x="3" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>11</health>
+      <skill id="pierce" x="4" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <desc>"What they lack in intelligence, they make up for in numbers." - Decim, the Firebringer</desc>
   </unit>
 </root>

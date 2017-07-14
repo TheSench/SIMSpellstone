@@ -19677,7 +19677,7 @@
     <id>5646</id>
     <name>Feral Foes</name>
     <energy>9</energy>
-    <desc>A small group of Insects has corned you, viciously attacking both you and Rayne. Dilbert panics again, as he and the other bugs flee in terror.</desc>
+    <desc>A small group of Insects has cornered you, viciously attacking both you and Rayne. Dilbert panics again, as he and the other bugs flee in terror.</desc>
     <commander id="366" />
     <deck>
       <card id="8070" name="Scylla's Fool" />
@@ -19805,24 +19805,24 @@
     <id>5650</id>
     <name>Blind Blame</name>
     <energy>9</energy>
-    <desc>The Assassin order those around him to attack. Although his voice remains calm, you can see how his sword arm trembles. For everything in this world that has changed, he now blames you...</desc>
+    <desc>The Assassin orders those around him to attack. Although his voice remains calm, you can see how his sword arm trembles. For everything in this world that has changed, he now blames you...</desc>
     <commander id="392" />
     <deck>
       <card id="7067" name="Mantis" />
       <card id="7064" name="Willowfly" />
-      <card id="7064" name="Willowfly" />
+      <card id="6044" name="Firewalker" />
       <card id="8081" name="Feral Bees" />
       <card id="8081" name="Feral Bees" />
       <card id="6065" name="Torchsnout" />
-      <card id="6129" name="Scorgon Trapper" />
-      <card id="6129" name="Scorgon Trapper" />
+      <card id="5142" name="Buzzblade" />
       <card id="2099" name="White Regemage" />
-      <card id="5142" name="Buzzblade" />
-      <card id="5142" name="Buzzblade" />
-      <card id="5070" name="Hornslicer" />
-      <card id="5070" name="Hornslicer" />
       <card id="2097" name="Gem Harvester" />
-      <card id="2097" name="Gem Harvester" />
+      <card id="1330" mastery_level="2" name="Plague Locusts" />
+      <card id="5142" mastery_level="3" name="Buzzblade" />
+      <card id="5070" mastery_level="4" name="Hornslicer" />
+      <card id="5070" mastery_level="5" name="Hornslicer" />
+      <card id="7064" mastery_level="6" name="Willowfly" />
+      <card id="2097" mastery_level="7" name="Gem Harvester" />
     </deck>
   </mission>
   <mission>
@@ -19834,19 +19834,19 @@
     <deck>
       <card id="7067" name="Mantis" />
       <card id="7064" name="Willowfly" />
-      <card id="7064" name="Willowfly" />
+      <card id="6044" name="Firewalker" />
       <card id="8081" name="Feral Bees" />
       <card id="8081" name="Feral Bees" />
       <card id="6065" name="Torchsnout" />
-      <card id="6129" name="Scorgon Trapper" />
-      <card id="6129" name="Scorgon Trapper" />
+      <card id="5142" name="Buzzblade" />
       <card id="2099" name="White Regemage" />
-      <card id="5142" name="Buzzblade" />
-      <card id="5142" name="Buzzblade" />
-      <card id="5070" name="Hornslicer" />
-      <card id="5070" name="Hornslicer" />
       <card id="2097" name="Gem Harvester" />
-      <card id="2097" name="Gem Harvester" />
+      <card id="1330" mastery_level="2" name="Plague Locusts" />
+      <card id="5142" mastery_level="3" name="Buzzblade" />
+      <card id="5070" mastery_level="4" name="Hornslicer" />
+      <card id="5070" mastery_level="5" name="Hornslicer" />
+      <card id="7064" mastery_level="6" name="Willowfly" />
+      <card id="2097" mastery_level="7" name="Gem Harvester" />
     </deck>
   </mission>
   <mission>
@@ -19858,19 +19858,19 @@
     <deck>
       <card id="7067" name="Mantis" />
       <card id="7064" name="Willowfly" />
-      <card id="7064" name="Willowfly" />
+      <card id="6044" name="Firewalker" />
       <card id="8081" name="Feral Bees" />
       <card id="8081" name="Feral Bees" />
       <card id="6065" name="Torchsnout" />
-      <card id="6129" name="Scorgon Trapper" />
-      <card id="6129" name="Scorgon Trapper" />
+      <card id="5142" name="Buzzblade" />
       <card id="2099" name="White Regemage" />
-      <card id="5142" name="Buzzblade" />
-      <card id="5142" name="Buzzblade" />
-      <card id="5070" name="Hornslicer" />
-      <card id="5070" name="Hornslicer" />
       <card id="2097" name="Gem Harvester" />
-      <card id="2097" name="Gem Harvester" />
+      <card id="1330" mastery_level="2" name="Plague Locusts" />
+      <card id="5142" mastery_level="3" name="Buzzblade" />
+      <card id="5070" mastery_level="4" name="Hornslicer" />
+      <card id="5070" mastery_level="5" name="Hornslicer" />
+      <card id="7064" mastery_level="6" name="Willowfly" />
+      <card id="2097" mastery_level="7" name="Gem Harvester" />
     </deck>
   </mission>
   <mission>
@@ -19882,19 +19882,19 @@
     <deck>
       <card id="7067" name="Mantis" />
       <card id="7064" name="Willowfly" />
-      <card id="7064" name="Willowfly" />
+      <card id="6044" name="Firewalker" />
       <card id="8081" name="Feral Bees" />
       <card id="8081" name="Feral Bees" />
       <card id="6065" name="Torchsnout" />
-      <card id="6129" name="Scorgon Trapper" />
-      <card id="6129" name="Scorgon Trapper" />
+      <card id="5142" name="Buzzblade" />
       <card id="2099" name="White Regemage" />
-      <card id="5142" name="Buzzblade" />
-      <card id="5142" name="Buzzblade" />
-      <card id="5070" name="Hornslicer" />
-      <card id="5070" name="Hornslicer" />
       <card id="2097" name="Gem Harvester" />
-      <card id="2097" name="Gem Harvester" />
+      <card id="1330" mastery_level="2" name="Plague Locusts" />
+      <card id="5142" mastery_level="3" name="Buzzblade" />
+      <card id="5070" mastery_level="4" name="Hornslicer" />
+      <card id="5070" mastery_level="5" name="Hornslicer" />
+      <card id="7064" mastery_level="6" name="Willowfly" />
+      <card id="2097" mastery_level="7" name="Gem Harvester" />
     </deck>
   </mission>
 </root>

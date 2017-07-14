@@ -6541,5 +6541,23 @@
       <gold>800</gold>
     </reward>
   </achievement>
+  <!-- Dune Runner Recipe -->
+  <achievement>
+    <id>3254</id>
+    <type>2</type>
+    <order>101</order>
+    <name>No Place is Home</name>
+    <desc>Complete the 'No Place is Home' campaign on Mastery Level 1.</desc>
+    <mission_req>5637</mission_req>
+    <locked_start_time>1499965200</locked_start_time>
+    <!-- Thu, 13 July 2017 17:00:00 -->
+    <req>
+      <campaign>1133</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="8003" number="1" />
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
 </root>

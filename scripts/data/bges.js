@@ -1173,7 +1173,7 @@ var BATTLEGROUNDS = {
     ]
   },
   "2016": {
-    "name": "Six-Stanza Sonata",
+    "name": "Buzzsaw Aphidsong",
     "id": "2016",
     "desc": "The Enraged Assassin fights harder with each passing Mastery level, increasing cards' stats!",
     "enemy_only": true,
