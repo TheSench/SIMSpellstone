@@ -1170,13 +1170,9 @@ var SIMULATOR = {};
                     var strike_damage = strike;
 
                     // Check Protect/Enfeeble
-                    var enfeeble = target.enfeebled;
                     var protect = 0;
                     if (target['protected']) protect = target['protected'];
 
-                    if (enfeeble) {
-                        strike_damage += enfeeble;
-                    }
                     var shatter = false;
                     if (protect) {
                         if (strike_damage >= protect) {
