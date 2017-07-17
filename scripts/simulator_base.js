@@ -1187,7 +1187,6 @@ var SIMULATOR = {};
 
                     do_damage(src_card, target, strike_damage, shatter, function (source, target, amount) {
                         echo += '<u>(Barrage: +1';
-                        if (enfeeble) echo += ' Enfeeble: +' + enfeeble;
                         if (enhanced) echo += ' Enhance: +' + enhanced;
                         if (protect) echo += ' Barrier: -' + protect;
                         echo += ') = ' + amount + ' damage</u><br>';
