@@ -459,11 +459,12 @@ var SIMULATOR = {};
                 if (protect) {
                     if (strike_damage >= protect) {
                         shatter = target.barrier_ice;
-                        target['protected'] = 0;
+                        target.protected = 0;
+                        strike_damage -= protect;
                     } else {
-                        target['protected'] -= strike_damage;
+                        target.protected -= strike_damage;
+                        strike_damage = 0;
                     }
-                    strike_damage -= protect;
                 }
 
                 var poisonDamage = 0;
@@ -752,11 +753,12 @@ var SIMULATOR = {};
                 if (protect) {
                     if (frost_damage >= protect) {
                         shatter = target.barrier_ice;
-                        target['protected'] = 0;
+                        target.protected = 0;
+                        frost_damage -= protect;
                     } else {
-                        target['protected'] -= frost_damage;
+                        target.protected -= frost_damage;
+                        frost_damage = 0;
                     }
-                    frost_damage -= protect;
                 }
 
                 do_damage(src_card, target, frost_damage, shatter, function (source, target, amount) {
@@ -1180,10 +1182,11 @@ var SIMULATOR = {};
                         if (strike_damage >= protect) {
                             shatter = target.barrier_ice;
                             target['protected'] = 0;
+                            strike_damage -= protect;
                         } else {
                             target['protected'] -= strike_damage;
+                            strike_damage = 0;
                         }
-                        strike_damage -= protect;
                     }
 
                     do_damage(src_card, target, strike_damage, shatter, function (source, target, amount) {
