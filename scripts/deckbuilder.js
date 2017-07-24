@@ -138,11 +138,6 @@ var initDeckBuilder = function () {
     $("[name=delay]").click(function (event) {
         onClickFilter(event, filterDelay, event.altKey);
     });
-    $("[name=skill]").on('click', function (event) {
-        onClickFilter(event, filterSkill, event.altKey);
-    }).on('contextmenu', function (event) {
-        onContextMenu(event);
-    });
     $("[name=set]").click(function (event) {
         onClickFilter(event, filterSet, event.altKey);
     });

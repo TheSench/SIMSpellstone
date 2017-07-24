@@ -2182,6 +2182,8 @@ var SIMULATOR = {};
                     }
                     current_assault.invisible += enhanced;
                 }
+            } else {
+                current_assault.invisible = 0;
             }
         }
 

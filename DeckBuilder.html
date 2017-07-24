@@ -139,7 +139,7 @@
                     <fieldset>
                         <span>Skills:</span>
                         <div ng-repeat="skill in supportedSkills" style="display:inline; position:relative; overflow:visible;">
-                            <input type="image" class="skill-filter" ng-cloak data-filter="{{skill}}" name="{{skill}}" ng-src="{{:: getSkillIcon(skill)}}" ng-click="filterSkill($event, skill)" ng-right-click="showAdvancedFilters(skill)" />
+                            <input type="image" class="skill-filter" ng-cloak data-filter="{{skill}}" name="skill" ng-src="{{:: getSkillIcon(skill)}}" ng-click="filterSkill($event, skill)" ng-right-click="showAdvancedFilters(skill)" />
                             <div class="tooltip">{{getSkillName(skill)}}</div>
                         </div>
                     </fieldset>

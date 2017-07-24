@@ -489,7 +489,7 @@ function generate_link(autostart) {
     addBoolParam(parameters, "tournament");
     addBoolParam(parameters, "ordered");
     addBoolParam(parameters, "exactorder");
-    addBoolParam(parameters, "exactorder");
+    addBoolParam(parameters, "ordered2");
     addBoolParam(parameters, "exactorder2");
 
     var bges = '';
