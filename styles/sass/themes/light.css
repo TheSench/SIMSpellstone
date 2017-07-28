@@ -324,3 +324,6 @@ label:hover + .tooltip {
     border-right: none;
     background-color: transparent; }
 
+.affect-self {
+  transform: rotateY(180deg); }
+

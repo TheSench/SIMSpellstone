@@ -477,7 +477,7 @@ var CARD_GUI = {};
         switch (skillID) {
             case 'weakenself':
             case 'enlarge':
-                icon.style = "transform: rotateY(180deg);";
+                icon.classList.add("affect-self");
                 break;
             default:
                 break;
