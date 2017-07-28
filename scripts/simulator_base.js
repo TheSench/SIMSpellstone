@@ -1593,7 +1593,7 @@ var SIMULATOR = {};
 
             // Get base card
             var unearthedUnit = makeUnitInfo((skill.card || dying.id), (skill.level || skill.x));
-            var unearthedCard = get_card_apply_battlegrounds(unearthedUnit);
+            var unearthedCard = get_card_apply_battlegrounds(unearthedUnit, null, true);
             unearthedCard.isToken = true;
 
             var mult = skill.mult;

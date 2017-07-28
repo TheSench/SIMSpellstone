@@ -271,7 +271,7 @@ function applyDefaultStatuses(card) {
 
 var CardPrototype;
 var makeUnit = (function () {
-    function modifySkills(new_card, original_skills, skillModifiers) {
+    function modifySkills(new_card, original_skills, skillModifiers, isToken) {
         new_card.highlighted = [];
         for (var i = 0; i < skillModifiers.length; i++) {
             var skillModifier = skillModifiers[i];
@@ -320,7 +320,7 @@ var makeUnit = (function () {
                         new_card.highlighted.push(new_skill.id);
                     }
                 }
-            } else if (skillModifier.modifierType == "scale") {
+            } else if (skillModifier.modifierType == "scale" && !isToken) {
                 for (var j = 0; j < skillModifier.effects.length; j++) {
                     var mult = skillModifier.effects[j].mult;
                     var plusAttack = Math.ceil(new_card.attack * mult);
@@ -678,7 +678,7 @@ var makeUnit = (function () {
     }
     applyDefaultStatuses(CardPrototype);
 
-    return (function (original_card, unit_level, runes, skillModifiers, skillMult) {
+    return (function (original_card, unit_level, runes, skillModifiers, skillMult, isToken) {
         if (!unit_level) unit_level = 1;
         var card = Object.create(CardPrototype);
 
@@ -720,7 +720,7 @@ var makeUnit = (function () {
 
         // Apply BGEs
         if (skillModifiers && skillModifiers.length) {
-            modifySkills(card, original_skills, skillModifiers);
+            modifySkills(card, original_skills, skillModifiers, isToken);
         }
 
         if (skillMult) {
@@ -2209,9 +2209,9 @@ function getReverseFusions() {
 }
 
 // Output card array
-var get_card_apply_battlegrounds = function (id, battlegrounds) {
+var get_card_apply_battlegrounds = function (id, battlegrounds, isToken) {
     battlegrounds = battlegrounds || SIMULATOR.battlegrounds.onCreate;
-    return get_card_by_id(id, battlegrounds);
+    return get_card_by_id(id, battlegrounds, null, isToken);
 }
 
 function get_skills(id, level) {
@@ -2228,7 +2228,7 @@ function get_skills(id, level) {
     return skills;
 }
 
-function get_card_by_id(unit, skillModifiers, skillMult) {
+function get_card_by_id(unit, skillModifiers, skillMult, isToken) {
 
     var current_card = loadCard(unit.id);
 
@@ -2247,7 +2247,7 @@ function get_card_by_id(unit, skillModifiers, skillMult) {
         if (!current_card.skill) {
             current_card.skill = [];
         }
-        var card = makeUnit(current_card, unit.level, unit.runes, skillModifiers, skillMult);
+        var card = makeUnit(current_card, unit.level, unit.runes, skillModifiers, skillMult, isToken);
 
         if (unit.priority) card.priority = unit.priority;
         return card
