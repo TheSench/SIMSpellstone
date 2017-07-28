@@ -1939,7 +1939,7 @@
   </store_item>
   <store_item>
     <id>3053</id>
-    <name>Double Undead Epic Pack</name>
+    <name>Double Dragon Epic Pack</name>
     <category>0</category>
     <hidden>1</hidden>
     <desc>Gives two guaranteed ^c0DFFEpic^cFFFF+ Dragon cards from Premium set.</desc>
@@ -1982,7 +1982,7 @@
   </store_item>
   <store_item>
     <id>3056</id>
-    <name>Quad Epic Pack</name>
+    <name>Quad Elemental Epic Pack</name>
     <category>0</category>
     <hidden>1</hidden>
     <desc>Gives a guaranteed ^c0DFFQuad Epic^cFFFF+ or higher card from Premium set.</desc>
@@ -2006,6 +2006,49 @@
     <hc_cost>1000</hc_cost>
     <cards>
       <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="5" set="3000,4000" fusion_level="1" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3058</id>
+    <name>Double Insect Epic Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two guaranteed ^c0DFFEpic^cFFFF+ Insect cards from Premium set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="3000,4000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3059</id>
+    <name>Quad Insect Epic Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives a guaranteed ^c0DFFQuad Epic^cFFFF+ Insect or higher card from Premium set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="3000,4000" fusion_level="2" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3060</id>
+    <name>Dual Insect Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two copies of one guaranteed Epic or higher Insect card from Premium set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="3000,4000" number="2" />
     </cards>
   </store_item>
   <!-- ======================================= -->
@@ -3070,7 +3113,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <priority>300</priority>
-    <desc>Gives four copies of one ^c0DFFEpic^cFFFF+ Goblin card from Premium set. Also includes two Bounty Refills +10, two Energy Potions +20, and one random Rare+ Rune. May only be purchased once.</desc>
+    <desc>Gives four copies of one ^c0DFFEpic^cFFFF+ Goblin card from Premium set. Also includes two Bounty Refills +10, two Energy Potions +20, and one random Rare+ Rune. May be purchased twice!</desc>
     <asset_prefab>event_017_crystal_epic4x</asset_prefab>
     <background_prefab>event_017_banner_epic4x</background_prefab>
     <bundle>75</bundle>
@@ -3666,5 +3709,60 @@
     <hc_cost>90</hc_cost>
     <!-- Stuff to give -->
     <item id="2524" quantity="200" />
+  </store_item>
+  <store_item>
+    <id>5072</id>
+    <name>Double Insect Epic Pack</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <show_desc>1</show_desc>
+    <desc>Gives two guaranteed ^c0DFFEpic^cFFFF+ Insect cards from Premium set. May be purchased 5 times!</desc>
+    <asset_prefab>event_026_two_epics</asset_prefab>
+    <bundle>97</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>100</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3058</pack>
+  </store_item>
+  <store_item>
+    <id>5073</id>
+    <name>Quad Insect Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <show_desc>1</show_desc>
+    <desc>Gives a guaranteed ^c0DFFQuad Epic^cFFFF+ Insect cards from Premium set. May be purchased 4 times!</desc>
+    <asset_prefab>event_026_quad_pack</asset_prefab>
+    <bundle>97</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>400</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3059</pack>
+  </store_item>
+  <store_item>
+    <id>5074</id>
+    <name>Varachnis Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFVarachnis^cFFFF! May be purchased four times.</desc>
+    <asset_prefab>Varachnis_card</asset_prefab>
+    <bundle>97</bundle>
+    <background_prefab>legendary_card_banner</background_prefab>
+    <background_bundle>35</background_bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7121" />
+    </cards>
   </store_item>
 </root>

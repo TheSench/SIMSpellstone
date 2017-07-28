@@ -30,7 +30,7 @@
   <campaign>
     <id>2</id>
     <name>Rise of the Dead</name>
-    <campaign_req>1</campaign_req>
+    <campaign_req id="1" level="1" />
     <location_id>1</location_id>
     <x>190</x>
     <y>244</y>
@@ -54,7 +54,7 @@
   <campaign>
     <id>3</id>
     <name>The Good, the Bad, and the Fiery</name>
-    <campaign_req>2</campaign_req>
+    <campaign_req id="2" level="1" />
     <location_id>1</location_id>
     <x>417</x>
     <y>189</y>
@@ -78,7 +78,7 @@
   <campaign>
     <id>4</id>
     <name>Source of Chaos</name>
-    <campaign_req>3</campaign_req>
+    <campaign_req id="3" level="1" />
     <mission_type>2</mission_type>
     <location_id>1</location_id>
     <x>547</x>
@@ -103,7 +103,7 @@
   <campaign>
     <id>5</id>
     <name>Wyldwood Depths</name>
-    <campaign_req>4</campaign_req>
+    <campaign_req id="4" level="1" />
     <location_id>1</location_id>
     <x>510</x>
     <y>416</y>
@@ -127,7 +127,7 @@
   <campaign>
     <id>6</id>
     <name>Chaos Contagion</name>
-    <campaign_req>5</campaign_req>
+    <campaign_req id="5" level="1" />
     <mission_type>2</mission_type>
     <location_id>1</location_id>
     <x>783</x>
@@ -154,7 +154,7 @@
   <campaign>
     <id>7</id>
     <name>Road to Luminis</name>
-    <campaign_req>6</campaign_req>
+    <campaign_req id="6" level="1" />
     <location_id>2</location_id>
     <x>714</x>
     <y>555</y>
@@ -178,7 +178,7 @@
   <campaign>
     <id>8</id>
     <name>The Glowing Grove</name>
-    <campaign_req>7</campaign_req>
+    <campaign_req id="7" level="1" />
     <location_id>2</location_id>
     <x>552</x>
     <y>504</y>
@@ -202,7 +202,7 @@
   <campaign>
     <id>9</id>
     <name>Mage's River</name>
-    <campaign_req>8</campaign_req>
+    <campaign_req id="8" level="1" />
     <location_id>2</location_id>
     <x>370</x>
     <y>335</y>
@@ -226,7 +226,7 @@
   <campaign>
     <id>10</id>
     <name>The City of Luminis</name>
-    <campaign_req>9</campaign_req>
+    <campaign_req id="9" level="1" />
     <location_id>2</location_id>
     <x>513</x>
     <y>265</y>
@@ -250,7 +250,7 @@
   <campaign>
     <id>11</id>
     <name>Aether's Scorn</name>
-    <campaign_req>10</campaign_req>
+    <campaign_req id="10" level="1" />
     <location_id>2</location_id>
     <x>539</x>
     <y>134</y>
@@ -274,7 +274,7 @@
   <campaign>
     <id>12</id>
     <name>Castle on the Rocks</name>
-    <campaign_req>11</campaign_req>
+    <campaign_req id="11" level="1" />
     <location_id>2</location_id>
     <x>730</x>
     <y>126</y>
@@ -300,7 +300,7 @@
   <campaign>
     <id>13</id>
     <name>Chaos Arrives</name>
-    <campaign_req>12</campaign_req>
+    <campaign_req id="12" level="1" />
     <location_id>3</location_id>
     <x>310</x>
     <y>180</y>
@@ -324,7 +324,7 @@
   <campaign>
     <id>14</id>
     <name>Siege of Karthos</name>
-    <campaign_req>13</campaign_req>
+    <campaign_req id="13" level="1" />
     <location_id>3</location_id>
     <x>200</x>
     <y>380</y>
@@ -348,7 +348,7 @@
   <campaign>
     <id>15</id>
     <name>Karthos, Lair of Chaos</name>
-    <campaign_req>14</campaign_req>
+    <campaign_req id="14" level="1" />
     <mission_type>2</mission_type>
     <location_id>3</location_id>
     <x>358</x>
@@ -373,7 +373,7 @@
   <campaign>
     <id>16</id>
     <name>Across the Flames</name>
-    <campaign_req>15</campaign_req>
+    <campaign_req id="15" level="1" />
     <mission_type>2</mission_type>
     <location_id>3</location_id>
     <x>535</x>
@@ -398,7 +398,7 @@
   <campaign>
     <id>17</id>
     <name>Securing an Exit</name>
-    <campaign_req>16</campaign_req>
+    <campaign_req id="16" level="1" />
     <location_id>3</location_id>
     <x>765</x>
     <y>300</y>
@@ -422,7 +422,7 @@
   <campaign>
     <id>18</id>
     <name>Void's Ambush</name>
-    <campaign_req>17</campaign_req>
+    <campaign_req id="17" level="1" />
     <mission_type>2</mission_type>
     <location_id>3</location_id>
     <x>860</x>
@@ -449,7 +449,7 @@
   <campaign>
     <id>19</id>
     <name>Caverns of Crossing</name>
-    <campaign_req>18</campaign_req>
+    <campaign_req id="18" level="1" />
     <location_id>4</location_id>
     <x>751</x>
     <y>160</y>
@@ -473,7 +473,7 @@
   <campaign>
     <id>20</id>
     <name>The Hermit</name>
-    <campaign_req>19</campaign_req>
+    <campaign_req id="19" level="1" />
     <location_id>4</location_id>
     <x>720</x>
     <y>380</y>
@@ -497,7 +497,7 @@
   <campaign>
     <id>21</id>
     <name>Eater of Rock</name>
-    <campaign_req>20</campaign_req>
+    <campaign_req id="20" level="1" />
     <location_id>4</location_id>
     <x>525</x>
     <y>235</y>
@@ -521,7 +521,7 @@
   <campaign>
     <id>22</id>
     <name>Impending Peril</name>
-    <campaign_req>21</campaign_req>
+    <campaign_req id="21" level="1" />
     <location_id>4</location_id>
     <x>370</x>
     <y>180</y>
@@ -545,7 +545,7 @@
   <campaign>
     <id>23</id>
     <name>Wings of Void</name>
-    <campaign_req>22</campaign_req>
+    <campaign_req id="22" level="1" />
     <location_id>4</location_id>
     <x>319</x>
     <y>300</y>
@@ -569,7 +569,7 @@
   <campaign>
     <id>24</id>
     <name>The Void Core</name>
-    <campaign_req>23</campaign_req>
+    <campaign_req id="23" level="1" />
     <location_id>4</location_id>
     <x>216</x>
     <y>395</y>
@@ -595,7 +595,7 @@
   <campaign>
     <id>25</id>
     <name>Swamp Lands</name>
-    <campaign_req>24</campaign_req>
+    <campaign_req id="24" level="1" />
     <location_id>5</location_id>
     <x>97</x>
     <y>189</y>
@@ -619,7 +619,7 @@
   <campaign>
     <id>26</id>
     <name>Exploring Dawnglow</name>
-    <campaign_req>25</campaign_req>
+    <campaign_req id="25" level="1" />
     <location_id>5</location_id>
     <x>257</x>
     <y>140</y>
@@ -643,7 +643,7 @@
   <campaign>
     <id>27</id>
     <name>Plagued Waters</name>
-    <campaign_req>26</campaign_req>
+    <campaign_req id="26" level="1" />
     <location_id>5</location_id>
     <x>440</x>
     <y>128</y>
@@ -667,7 +667,7 @@
   <campaign>
     <id>28</id>
     <name>Small Prints</name>
-    <campaign_req>27</campaign_req>
+    <campaign_req id="27" level="1" />
     <location_id>5</location_id>
     <x>586</x>
     <y>218</y>
@@ -691,7 +691,7 @@
   <campaign>
     <id>29</id>
     <name>Corruption's Nest</name>
-    <campaign_req>28</campaign_req>
+    <campaign_req id="28" level="1" />
     <location_id>5</location_id>
     <x>704</x>
     <y>351</y>
@@ -715,7 +715,7 @@
   <campaign>
     <id>30</id>
     <name>Big Mama</name>
-    <campaign_req>29</campaign_req>
+    <campaign_req id="29" level="1" />
     <location_id>5</location_id>
     <x>343</x>
     <y>432</y>
@@ -741,7 +741,7 @@
   <campaign>
     <id>31</id>
     <name>Tales from the Swamp</name>
-    <campaign_req>30</campaign_req>
+    <campaign_req id="30" level="1" />
     <location_id>6</location_id>
     <x>211</x>
     <y>253</y>
@@ -766,7 +766,7 @@
   <campaign>
     <id>32</id>
     <name>Finding the Lost</name>
-    <campaign_req>31</campaign_req>
+    <campaign_req id="31" level="1" />
     <location_id>6</location_id>
     <x>467</x>
     <y>162</y>
@@ -791,7 +791,7 @@
   <campaign>
     <id>33</id>
     <name>Seastone Citadel</name>
-    <campaign_req>32</campaign_req>
+    <campaign_req id="32" level="1" />
     <location_id>6</location_id>
     <x>680</x>
     <y>163</y>
@@ -816,7 +816,7 @@
   <campaign>
     <id>34</id>
     <name>Brother from Another Mother</name>
-    <campaign_req>33</campaign_req>
+    <campaign_req id="33" level="1" />
     <location_id>6</location_id>
     <x>695</x>
     <y>317</y>
@@ -841,7 +841,7 @@
   <campaign>
     <id>35</id>
     <name>Next Generation</name>
-    <campaign_req>34</campaign_req>
+    <campaign_req id="34" level="1" />
     <location_id>6</location_id>
     <x>563</x>
     <y>450</y>
@@ -866,7 +866,7 @@
   <campaign>
     <id>36</id>
     <name>Trial by Fire</name>
-    <campaign_req>35</campaign_req>
+    <campaign_req id="35" level="1" />
     <location_id>6</location_id>
     <x>343</x>
     <y>453</y>
@@ -917,7 +917,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>First Contact</name>
-    <campaign_req>1000</campaign_req>
+    <campaign_req id="1000" level="1" />
     <location_id>100</location_id>
     <x>580</x>
     <y>320</y>
@@ -940,7 +940,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>Aria's Fall</name>
-    <campaign_req>1001</campaign_req>
+    <campaign_req id="1001" level="1" />
     <location_id>100</location_id>
     <x>350</x>
     <y>435</y>
@@ -994,7 +994,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>Decim's Deceit</name>
-    <campaign_req>1003</campaign_req>
+    <campaign_req id="1003" level="1" />
     <location_id>101</location_id>
     <x>360</x>
     <y>240</y>
@@ -1013,7 +1013,7 @@
     <event_only>1</event_only>
     <name>Scorched Lands</name>
     <icon id="Obsidian_Gravel_01" bundle="16" />
-    <campaign_req>1003</campaign_req>
+    <campaign_req id="1003" level="1" />
     <location_id>101</location_id>
     <x>750</x>
     <y>255</y>
@@ -1034,7 +1034,7 @@
     <event_only>1</event_only>
     <name>Dragon's Aerie</name>
     <icon id="Smoldering_Ember_01" bundle="16" />
-    <campaign_req>1003</campaign_req>
+    <campaign_req id="1003" level="1" />
     <location_id>101</location_id>
     <x>500</x>
     <y>430</y>
@@ -1055,7 +1055,7 @@
     <event_only>1</event_only>
     <name>Ice Dragon's Realm</name>
     <icon id="Tepid_Dragon_Egg_01" bundle="16" />
-    <campaign_req>1003</campaign_req>
+    <campaign_req id="1003" level="1" />
     <location_id>101</location_id>
     <x>600</x>
     <y>600</y>
@@ -1095,7 +1095,7 @@
     <event_only>1</event_only>
     <name>Golden Lava</name>
     <icon id="Lava_Vial" bundle="17" />
-    <campaign_req>1008</campaign_req>
+    <campaign_req id="1008" level="1" />
     <location_id>102</location_id>
     <x>330</x>
     <y>240</y>
@@ -1123,7 +1123,7 @@
     <event_only>1</event_only>
     <name>Magma Explosion</name>
     <icon id="Lava_Vial" bundle="17" />
-    <campaign_req>1009</campaign_req>
+    <campaign_req id="1009" level="1" />
     <location_id>102</location_id>
     <x>700</x>
     <y>290</y>
@@ -1151,7 +1151,7 @@
     <event_only>1</event_only>
     <name>Celestial Depths</name>
     <icon id="Soul_Of_Silver" bundle="17" />
-    <campaign_req>1008</campaign_req>
+    <campaign_req id="1008" level="1" />
     <location_id>102</location_id>
     <x>900</x>
     <y>580</y>
@@ -1176,7 +1176,7 @@
     <event_only>1</event_only>
     <name>Capturing the Sky</name>
     <icon id="Captured_Wind" bundle="17" />
-    <campaign_req>1008</campaign_req>
+    <campaign_req id="1008" level="1" />
     <location_id>102</location_id>
     <x>730</x>
     <y>535</y>
@@ -1235,7 +1235,7 @@
     <event_only>1</event_only>
     <name>High Grace</name>
     <icon id="Tadpole_Egg" bundle="17" />
-    <campaign_req>1013</campaign_req>
+    <campaign_req id="1013" level="1" />
     <location_id>103</location_id>
     <x>770</x>
     <y>290</y>
@@ -1264,7 +1264,7 @@
     <event_only>1</event_only>
     <name>Tadpole Collection</name>
     <icon id="Tadpole_Egg" bundle="17" />
-    <campaign_req>1014</campaign_req>
+    <campaign_req id="1014" level="1" />
     <location_id>103</location_id>
     <x>620</x>
     <y>350</y>
@@ -1293,7 +1293,7 @@
     <event_only>1</event_only>
     <name>Search and Rescue</name>
     <icon id="Tadpole_Egg" bundle="17" />
-    <campaign_req>1015</campaign_req>
+    <campaign_req id="1015" level="1" />
     <location_id>103</location_id>
     <x>800</x>
     <y>490</y>
@@ -1321,7 +1321,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>To The Throne</name>
-    <campaign_req>1016</campaign_req>
+    <campaign_req id="1016" level="1" />
     <location_id>103</location_id>
     <x>345</x>
     <y>430</y>
@@ -1378,7 +1378,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>Decim's Deceit</name>
-    <campaign_req>1018</campaign_req>
+    <campaign_req id="1018" level="1" />
     <location_id>101</location_id>
     <x>360</x>
     <y>240</y>
@@ -1398,7 +1398,7 @@
     <event_only>1</event_only>
     <name>Scorched Lands</name>
     <icon id="Obsidian_Gravel_01" bundle="16" />
-    <campaign_req>1019</campaign_req>
+    <campaign_req id="1019" level="1" />
     <location_id>101</location_id>
     <x>750</x>
     <y>255</y>
@@ -1420,7 +1420,7 @@
     <event_only>1</event_only>
     <name>Dragon's Aerie</name>
     <icon id="Smoldering_Ember_01" bundle="16" />
-    <campaign_req>1019</campaign_req>
+    <campaign_req id="1019" level="1" />
     <location_id>101</location_id>
     <x>500</x>
     <y>430</y>
@@ -1442,7 +1442,7 @@
     <event_only>1</event_only>
     <name>Ice Dragon's Realm</name>
     <icon id="Tepid_Dragon_Egg_01" bundle="16" />
-    <campaign_req>1019</campaign_req>
+    <campaign_req id="1019" level="1" />
     <location_id>101</location_id>
     <x>600</x>
     <y>600</y>
@@ -1462,7 +1462,7 @@
     <event_only>1</event_only>
     <name>Molten Eruption</name>
     <icon id="dragon_claw_icon" bundle="17" />
-    <campaign_req>1020</campaign_req>
+    <campaign_req id="1020" level="1" />
     <location_id>101</location_id>
     <x>505</x>
     <y>170</y>
@@ -1519,7 +1519,7 @@
     <event_only>1</event_only>
     <name>Vapor Collection</name>
     <icon id="arcane_vapor" bundle="17" />
-    <campaign_req>1024</campaign_req>
+    <campaign_req id="1024" level="1" />
     <location_id>104</location_id>
     <x>300</x>
     <y>150</y>
@@ -1547,7 +1547,7 @@
     <event_only>1</event_only>
     <name>Vapor Hunters</name>
     <icon id="arcane_vapor" bundle="17" />
-    <campaign_req>1025</campaign_req>
+    <campaign_req id="1025" level="1" />
     <location_id>104</location_id>
     <x>154</x>
     <y>262</y>
@@ -1577,7 +1577,7 @@
     <event_only>1</event_only>
     <name>Descent into Madness</name>
     <icon id="arcane_vapor" bundle="17" />
-    <campaign_req>1026</campaign_req>
+    <campaign_req id="1026" level="1" />
     <location_id>104</location_id>
     <x>240</x>
     <y>386</y>
@@ -1605,7 +1605,7 @@
     <event_only>1</event_only>
     <name>Flashing Lights</name>
     <icon id="arcane_vapor" bundle="17" />
-    <campaign_req>1027</campaign_req>
+    <campaign_req id="1027" level="1" />
     <location_id>104</location_id>
     <x>542</x>
     <y>448</y>
@@ -1631,7 +1631,7 @@
     <event_only>1</event_only>
     <name>Playing With Vapor</name>
     <icon id="arcane_vapor" bundle="17" />
-    <campaign_req>1028</campaign_req>
+    <campaign_req id="1028" level="1" />
     <location_id>104</location_id>
     <x>763</x>
     <y>521</y>
@@ -2452,7 +2452,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>Unwavered</name>
-    <!-- <campaign_req>1058</campaign_req> -->
+    <!-- <campaign_req id='1058' level='1' /> -->
     <icon id="feather_red_100" bundle="17" />
     <location_id>109</location_id>
     <x>438</x>
@@ -2480,7 +2480,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>To Red Feather Valley</name>
-    <!-- <campaign_req>1059</campaign_req> -->
+    <!-- <campaign_req id='1059' level='1' /> -->
     <icon id="feather_red_100" bundle="17" />
     <location_id>109</location_id>
     <x>806</x>
@@ -2508,7 +2508,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>Into the City</name>
-    <!-- <campaign_req>1060</campaign_req> -->
+    <!-- <campaign_req id='1060' level='1' /> -->
     <icon id="feather_red_100" bundle="17" />
     <location_id>109</location_id>
     <x>526</x>
@@ -2538,7 +2538,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>Through the Alleyway</name>
-    <!-- 	<campaign_req>1061</campaign_req> -->
+    <!-- 	<campaign_req id='1061' level='1' /> -->
     <icon id="feather_red_100" bundle="17" />
     <location_id>109</location_id>
     <x>374</x>
@@ -2565,7 +2565,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <name>Frobert and the Magistrate</name>
-    <!-- 	<campaign_req>1062</campaign_req> -->
+    <!-- 	<campaign_req id='1062' level='1' /> -->
     <icon id="feather_red_100" bundle="17" />
     <location_id>109</location_id>
     <x>199</x>
@@ -3818,7 +3818,7 @@
     <!-- <icon id='sparkler60' bundle='58' /> -->
     <locked_start_time>1484240400</locked_start_time>
     <!-- Thu, 12 Jan 2017 17:00:00 GMT -->
-    <campaign_req>6</campaign_req>
+    <campaign_req id="6" level="1" />
     <location_id>7</location_id>
     <x>460</x>
     <y>123</y>
@@ -3843,7 +3843,7 @@
     <id>1109</id>
     <name>The Healer</name>
     <!-- <icon id='sparkler60' bundle='58' /> -->
-    <campaign_req>6</campaign_req>
+    <campaign_req id="6" level="1" />
     <locked_start_time>1484240400</locked_start_time>
     <!-- Thu, 12 Jan 2017 17:00:00 GMT -->
     <location_id>7</location_id>
@@ -3880,7 +3880,7 @@
     <id>1110</id>
     <name>The Guardian</name>
     <!-- <icon id='sparkler60' bundle='58' /> -->
-    <campaign_req>6</campaign_req>
+    <campaign_req id="6" level="1" />
     <locked_start_time>1485450000</locked_start_time>
     <!-- Thu, 26 Jan 2017 17:00:00 GMT -->
     <battleground_id>2002</battleground_id>
@@ -3920,7 +3920,7 @@
     <name>The Tide Swells...</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <campaign_req>24</campaign_req>
+    <campaign_req id="24" level="1" />
     <locked_start_time>1485450000</locked_start_time>
     <!-- Thu, 26 Jan 2017 17:00:00 GMT -->
     <location_id>7</location_id>
@@ -3950,7 +3950,7 @@
   <campaign>
     <id>1112</id>
     <name>The Assassin</name>
-    <campaign_req>6</campaign_req>
+    <campaign_req id="6" level="1" />
     <locked_start_time>1486659600</locked_start_time>
     <!-- Thu, 09 Feb 2017 17:00:00 GMT -->
     <location_id>7</location_id>
@@ -3988,7 +3988,7 @@
   <campaign>
     <id>1113</id>
     <name>The Ranger</name>
-    <campaign_req>6</campaign_req>
+    <campaign_req id="6" level="1" />
     <locked_start_time>1487869200</locked_start_time>
     <!-- Thu, 23 Feb 2017 17:00:00 GMT -->
     <battleground_id>2004</battleground_id>
@@ -4027,7 +4027,7 @@
   <campaign>
     <id>1114</id>
     <name>Snowdust Forge</name>
-    <campaign_req>6</campaign_req>
+    <campaign_req id="6" level="1" />
     <locked_start_time>1489078800</locked_start_time>
     <!-- Thu, 09 March 2017 17:00:00 -->
     <location_id>8</location_id>
@@ -4053,7 +4053,7 @@
   <campaign>
     <id>1115</id>
     <name>Ancient Aegis</name>
-    <campaign_req>6</campaign_req>
+    <campaign_req id="6" level="1" />
     <locked_start_time>1489078800</locked_start_time>
     <!-- Thu, 09 March 2017 17:00:00 -->
     <location_id>8</location_id>
@@ -4088,7 +4088,7 @@
   <campaign>
     <id>1116</id>
     <name>Blazing Dyrnwyn</name>
-    <campaign_req>1115</campaign_req>
+    <campaign_req id="1115" level="1" />
     <locked_start_time>1490288400</locked_start_time>
     <!-- Thu, 23 March 2017 17:00:00 -->
     <battleground_id>2005</battleground_id>
@@ -4127,7 +4127,7 @@
     <name>Dyrnwyn's Test</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <campaign_req>1115</campaign_req>
+    <campaign_req id="1115" level="1" />
     <locked_start_time>1490288400</locked_start_time>
     <!-- Thu, 23 March 2017 17:00:00 -->
     <battleground_id>2006</battleground_id>
@@ -4158,7 +4158,7 @@
   <campaign>
     <id>1118</id>
     <name>Miracle Water</name>
-    <campaign_req>1116</campaign_req>
+    <campaign_req id="1116" level="1" />
     <locked_start_time>1491498000</locked_start_time>
     <!-- Thu, 06 April 2017 17:00:00 -->
     <battleground_id>2007</battleground_id>
@@ -4196,7 +4196,7 @@
   <campaign>
     <id>1119</id>
     <name>War Stratagem</name>
-    <campaign_req>1118</campaign_req>
+    <campaign_req id="1118" level="1" />
     <locked_start_time>1492707600</locked_start_time>
     <!-- Thu, 20 April 2017 17:00:00 -->
     <battleground_id>2008</battleground_id>
@@ -4345,7 +4345,7 @@
   <campaign>
     <id>1124</id>
     <name>Soul Power</name>
-    <campaign_req>6</campaign_req>
+    <campaign_req id="6" level="1" />
     <locked_start_time>1493917200</locked_start_time>
     <!-- Thu, 06 May 2017 17:00:00 -->
     <location_id>9</location_id>
@@ -4370,7 +4370,7 @@
   <campaign>
     <id>1125</id>
     <name>The Void Plane</name>
-    <campaign_req>6</campaign_req>
+    <campaign_req id="6" level="1" />
     <locked_start_time>1493917200</locked_start_time>
     <!-- Thu, 06 May 2017 17:00:00 -->
     <location_id>9</location_id>
@@ -4405,7 +4405,7 @@
   <campaign>
     <id>1126</id>
     <name>Ruler of The Void</name>
-    <campaign_req>1125</campaign_req>
+    <campaign_req id="1125" level="1" />
     <locked_start_time>1495126800</locked_start_time>
     <!-- Thu, 18 May 2017 17:00:00 -->
     <battleground_id>2010</battleground_id>
@@ -4444,7 +4444,7 @@
     <name>This is the Final Battle</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <campaign_req>1125</campaign_req>
+    <campaign_req id="1125" level="1" />
     <locked_start_time>1495126800</locked_start_time>
     <!--  Thu, 18 May 2017 17:00:00 -->
     <battleground_id>2011</battleground_id>
@@ -4475,7 +4475,7 @@
   <campaign>
     <id>1128</id>
     <name>The Abyss</name>
-    <campaign_req>1126</campaign_req>
+    <campaign_req id="1126" level="1" />
     <locked_start_time>1496336400</locked_start_time>
     <!-- Thu, 01 June 2017 17:00:00 -->
     <battleground_id>2012</battleground_id>
@@ -4512,7 +4512,7 @@
   <campaign>
     <id>1129</id>
     <name>The Void's Harmony</name>
-    <campaign_req>1128</campaign_req>
+    <campaign_req id="1128" level="1" />
     <locked_start_time>1497546000</locked_start_time>
     <!-- Thu, 15 June 2017 17:00:00 -->
     <battleground_id>2013</battleground_id>
@@ -4550,7 +4550,7 @@
   <campaign>
     <id>1130</id>
     <name>Honey Buzz</name>
-    <campaign_req>6</campaign_req>
+    <campaign_req id="6" level="1" />
     <locked_start_time>1498755600</locked_start_time>
     <!-- Thu, 29 June 2017 17:00:00 -->
     <location_id>10</location_id>
@@ -4575,7 +4575,7 @@
   <campaign>
     <id>1131</id>
     <name>Heroes of the World</name>
-    <campaign_req>6</campaign_req>
+    <campaign_req id="6" level="1" />
     <locked_start_time>1498755600</locked_start_time>
     <!-- Thu, 29 June 2017 17:00:00 -->
     <location_id>10</location_id>
@@ -4610,9 +4610,10 @@
   <campaign>
     <id>1132</id>
     <name>Violent Coincidences</name>
-    <campaign_req>1131</campaign_req>
+    <campaign_req id="1131" level="1" />
     <locked_start_time>1499965200</locked_start_time>
     <!-- Thu, 13 July 2017 17:00:00 -->
+    <battleground_id>2014</battleground_id>
     <location_id>10</location_id>
     <x>675</x>
     <y>175</y>
@@ -4642,12 +4643,13 @@
     </rewards>
     <find_item id="3056" drop_per_energy=".4" />
   </campaign>
+  <!-- Campaign Event 4 Boss Node -->
   <campaign>
     <id>1133</id>
     <name>No Place is Home</name>
     <type>2</type>
     <icon id="gem_Boss_LG" bundle="0" />
-    <campaign_req>1131</campaign_req>
+    <campaign_req id="1131" level="1" />
     <locked_start_time>1499965200</locked_start_time>
     <!-- Thu, 13 July 2017 17:00:00 -->
     <battleground_id>2016</battleground_id>
@@ -4674,6 +4676,80 @@
     </rewards>
     <find_item id="3056" drop_per_energy=".4" />
   </campaign>
+  <!-- Campaign Event 4 weeks 5-8 -->
+  <campaign>
+    <id>1134</id>
+    <name>Winds of Change</name>
+    <campaign_req id="1132" level="1" />
+    <locked_start_time>1501174800</locked_start_time>
+    <!--   Thu, 27 July 2017 17:00:00 -->
+    <battleground_id>2017</battleground_id>
+    <location_id>10</location_id>
+    <x>620</x>
+    <y>335</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>3654</mission_id>
+      <mission_id>3655</mission_id>
+      <mission_id>3656</mission_id>
+      <mission_id>3657</mission_id>
+      <mission_id>3658</mission_id>
+      <mission_id>3659</mission_id>
+      <mission_id>3660</mission_id>
+      <mission_id>3661</mission_id>
+      <mission_id>3662</mission_id>
+      <mission_id>3663</mission_id>
+      <mission_id>3664</mission_id>
+      <mission_id>3665</mission_id>
+      <mission_id>3666</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2101" />
+      <card level="5" id="512" />
+      <card level="6" id="2063" />
+      <item level="7" id="3058" />
+    </rewards>
+    <find_item id="3056" drop_per_energy=".6" />
+  </campaign>
+  <campaign>
+    <id>1135</id>
+    <name>Family Grudge</name>
+    <campaign_req id="1134" level="1" />
+    <locked_start_time>1502384400</locked_start_time>
+    <!--   Thu, 10 August 2017 17:00:00 -->
+    <battleground_id>2018</battleground_id>
+    <location_id>10</location_id>
+    <x>745</x>
+    <y>315</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>3667</mission_id>
+      <mission_id>3668</mission_id>
+      <mission_id>3669</mission_id>
+      <mission_id>3670</mission_id>
+      <mission_id>3671</mission_id>
+      <mission_id>3672</mission_id>
+      <mission_id>3673</mission_id>
+      <mission_id>3674</mission_id>
+      <mission_id>3675</mission_id>
+      <mission_id>3676</mission_id>
+      <mission_id>3677</mission_id>
+      <mission_id>3678</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2102" />
+      <card level="5" id="512" />
+      <card level="6" id="2062" />
+      <item level="7" id="3058" />
+    </rewards>
+    <find_item id="3056" drop_per_energy=".8" />
+  </campaign>
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
   <!-- ============================ -->
@@ -4681,7 +4757,7 @@
     <id>3000</id>
     <name>The Ground Quakes...</name>
     <icon id="green_boss_gem" bundle="15" />
-    <campaign_req>24</campaign_req>
+    <campaign_req id="24" level="1" />
     <side_mission>1</side_mission>
     <location_id>1</location_id>
     <x>716</x>
@@ -4707,7 +4783,7 @@
     <id>3001</id>
     <name>The Wind Stirs...</name>
     <icon id="blue_boss_gem" bundle="15" />
-    <campaign_req>24</campaign_req>
+    <campaign_req id="24" level="1" />
     <side_mission>1</side_mission>
     <location_id>2</location_id>
     <x>177</x>
@@ -4733,7 +4809,7 @@
     <id>3002</id>
     <name>The Heat Rises...</name>
     <icon id="red_boss_gem" bundle="15" />
-    <campaign_req>24</campaign_req>
+    <campaign_req id="24" level="1" />
     <side_mission>1</side_mission>
     <location_id>3</location_id>
     <x>630</x>
@@ -4950,13 +5026,16 @@
     </rewards>
   </campaign>
   <!-- END Hero Upgrade Campaigns -->
-  <!-- Test Campaign  
+  <!-- Mythic Bluefire Titan Campaign  
 
 	<campaign>
 		<id>3009</id>
 		<name>Reality Distorts...</name>
 		<icon id='black_boss_gem' bundle='15' />
-		<campaign_req>1127</campaign_req>
+		<campaign_req id='3000' level='7' />
+		<campaign_req id='3001' level='7' />     
+		<campaign_req id='3002' level='7' />
+		<campaign_req id='1127' level='1' /> 
 		<battleground_id>2015</battleground_id>
 		<side_mission>1</side_mission>
 		<location_id>4</location_id>
@@ -4972,13 +5051,13 @@
 			<mission_id>5623</mission_id>
 		</missions>
 		<rewards>
-			<item level='1' id='1011' />
+			<card level='1' id='510' />
 			<card level='2' id='510' />
-			<item level='3' id='1011' />
+			<item level='3' id='2506' number='3' />
 			<card level='4' id='511' />
-			<item level='5' id='1012' />
+			<item level='5' id='2506' number='3' />
 			<card level='6' id='512' />
-			<item level='5' id='1012' />
+			<item level='7' id='2506' number='3' />
 		</rewards>
 	</campaign>
 	-->

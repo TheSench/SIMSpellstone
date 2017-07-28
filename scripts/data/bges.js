@@ -160,7 +160,7 @@ var BATTLEGROUNDS = {
   "112": {
     "name": "Goblin Barrage",
     "id": "112",
-    "desc": "Each active Goblin throws a number of bombs equal to their base Attack at the start of each turn before other skills. Each bomb deals 1 damage.",
+    "desc": "Each active Goblin throws a number of bombs equal to their base Attack at the start of each turn before other skills. Each bomb deals 1 damage and does not benefit from Hex or Venom.",
     "effect": [
       {
         "effect_type": "add_skill",
@@ -279,18 +279,6 @@ var BATTLEGROUNDS = {
         "y": "13",
       },
     ]
-  },
-  "200": {
-      "name": "Ash Testing",
-      "id": "200",
-      "desc": "Frogs have evolved to have Snaretongue! They grab the enemy with the lowest health and move it in front of them!",
-      "effect": [
-        {
-            "effect_type": "add_skill",
-            "id": "snaretongue",
-            "y": "4",
-        },
-      ]
   },
   "501": {
     "name": "Castle Siege",
@@ -1185,6 +1173,38 @@ var BATTLEGROUNDS = {
         "effect_type": "scale_attributes",
         "base_mult": .2,
         "mult": .01,
+      },
+    ]
+  },
+  "2017": {
+    "name": "Six-Stanza Sonata",
+    "id": "2017",
+    "desc": "Non-token enemies become stronger with each passing Mastery level.",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "0",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .2,
+        "mult": .01,
+      },
+    ]
+  },
+  "2018": {
+    "name": "Firecracker Tango",
+    "id": "2018",
+    "desc": "Non-token enemies become stronger with each passing Mastery level.",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "0",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .2,
+        "mult": .03,
       },
     ]
   },

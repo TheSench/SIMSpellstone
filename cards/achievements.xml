@@ -6559,5 +6559,167 @@
       <item id="8003" number="1" />
     </reward>
   </achievement>
+  <!-- Mythic Titan Campaign Bluefire 
+	
+	<achievement>
+		<id>3255</id>
+		<type>2</type>
+		<icon>black_boss_gem</icon>
+		<icon_bundle>15</icon_bundle>
+		<name>Reality Distorts...</name>
+		<desc>Complete the 'Reality Distorts...' Campaign.</desc>
+		<order>625</order>
+		<achievement_req>3235</achievement_req>
+		<req>
+			<campaign>3009</campaign>
+			<level>7</level>
+		</req>
+		<reward>
+			<item id='2506' number='9' />
+		</reward>
+	</achievement> -->
+  <!-- Campaign Event 4 Weeks 5-8 -->
+  <achievement>
+    <id>3256</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Winds of Change</name>
+    <desc>Complete the 'Winds of Change' campaign on Mastery Level 2.</desc>
+    <mission_req>5649</mission_req>
+    <locked_start_time>1501174800</locked_start_time>
+    <!--  Thu, 27 July 2017 17:00:00  -->
+    <req>
+      <campaign>1134</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3257</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Winds of Change</name>
+    <desc>Complete the 'Winds of Change' campaign on Mastery Level 4.</desc>
+    <mission_req>5649</mission_req>
+    <achievement_req>3256</achievement_req>
+    <locked_start_time>1501174800</locked_start_time>
+    <!--  Thu, 27 July 2017 17:00:00  -->
+    <req>
+      <campaign>1134</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3258</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Winds of Change</name>
+    <desc>Complete the 'Winds of Change' campaign on Mastery Level 6.</desc>
+    <mission_req>5649</mission_req>
+    <achievement_req>3257</achievement_req>
+    <locked_start_time>1501174800</locked_start_time>
+    <!--  Thu, 27 July 2017 17:00:00  -->
+    <req>
+      <campaign>1134</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3259</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Winds of Change</name>
+    <desc>Complete the 'Winds of Change' campaign on Mastery Level 7.</desc>
+    <mission_req>5649</mission_req>
+    <achievement_req>3258</achievement_req>
+    <locked_start_time>1501174800</locked_start_time>
+    <!--  Thu, 27 July 2017 17:00:00  -->
+    <req>
+      <campaign>1134</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3260</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Family Grudge</name>
+    <desc>Complete the 'Family Grudge' campaign on Mastery Level 2.</desc>
+    <mission_req>3666</mission_req>
+    <locked_start_time>1502384400</locked_start_time>
+    <!--   Thu, 10 August 2017 17:00:00 -->
+    <req>
+      <campaign>1135</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3261</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Family Grudge</name>
+    <desc>Complete the 'Family Grudge' campaign on Mastery Level 4.</desc>
+    <mission_req>3666</mission_req>
+    <achievement_req>3260</achievement_req>
+    <locked_start_time>1502384400</locked_start_time>
+    <!--   Thu, 10 August 2017 17:00:00 -->
+    <req>
+      <campaign>1135</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3262</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Family Grudge</name>
+    <desc>Complete the 'Family Grudge' campaign on Mastery Level 6.</desc>
+    <mission_req>3666</mission_req>
+    <achievement_req>3261</achievement_req>
+    <locked_start_time>1502384400</locked_start_time>
+    <!--   Thu, 10 August 2017 17:00:00 -->
+    <req>
+      <campaign>1135</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3263</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Family Grudge</name>
+    <desc>Complete the 'Family Grudge' campaign on Mastery Level 7.</desc>
+    <mission_req>3666</mission_req>
+    <achievement_req>3262</achievement_req>
+    <locked_start_time>1502384400</locked_start_time>
+    <!--   Thu, 10 August 2017 17:00:00 -->
+    <req>
+      <campaign>1135</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
 </root>

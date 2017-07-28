@@ -17221,6 +17221,265 @@
     </upgrade>
   </unit>
   <unit>
+    <id>5138</id>
+    <card_type>2</card_type>
+    <name>Geyser Rocva</name>
+    <picture>Armored_Larva_A</picture>
+    <asset_bundle>98</asset_bundle>
+    <hidden_until_time>1500570000</hidden_until_time>
+    <attack>4</attack>
+    <health>23</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="1" all="1" y="13" />
+    <skill id="protect" x="1" all="1" y="13" />
+    <skill id="burn" x="2" />
+    <type>1</type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>25</health>
+      <skill id="rally" x="1" all="1" y="13" />
+      <skill id="protect" x="1" all="1" y="13" />
+      <skill id="burn" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>27</health>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>28</health>
+      <skill id="rally" x="2" all="1" y="13" />
+      <skill id="protect" x="1" all="1" y="13" />
+      <skill id="burn" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15138</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Gush Rocva</name>
+    <picture>Armored_Larva_A</picture>
+    <asset_bundle>98</asset_bundle>
+    <hidden_until_time>1500570000</hidden_until_time>
+    <attack>5</attack>
+    <health>28</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="2" all="1" y="13" />
+    <skill id="protect" x="2" all="1" y="13" />
+    <skill id="burn" x="3" />
+    <type>1</type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>29</health>
+      <skill id="rally" x="2" all="1" y="13" />
+      <skill id="protect" x="2" all="1" y="13" />
+      <skill id="burn" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>30</health>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>32</health>
+      <skill id="rally" x="3" all="1" y="13" />
+      <skill id="protect" x="2" all="1" y="13" />
+      <skill id="burn" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>33</health>
+      <skill id="rally" x="3" all="1" y="13" />
+      <skill id="protect" x="3" all="1" y="13" />
+      <skill id="burn" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25138</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Abyss Rocva</name>
+    <picture>Armored_Larva_B</picture>
+    <asset_bundle>98</asset_bundle>
+    <hidden_until_time>1500570000</hidden_until_time>
+    <attack>6</attack>
+    <health>34</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="3" all="1" y="13" />
+    <skill id="protect" x="3" all="1" y="13" />
+    <skill id="burn" x="4" />
+    <type>1</type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>35</health>
+      <skill id="rally" x="3" all="1" y="13" />
+      <skill id="protect" x="3" all="1" y="13" />
+      <skill id="burn" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>36</health>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>37</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>38</health>
+      <skill id="rally" x="4" all="1" y="13" />
+      <skill id="protect" x="3" all="1" y="13" />
+      <skill id="burn" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="rally" x="4" all="1" y="13" />
+      <skill id="protect" x="4" all="1" y="13" />
+      <skill id="burn" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5139</id>
+    <card_type>2</card_type>
+    <name>Loyal Guard</name>
+    <picture>Ladybug_Guard_A</picture>
+    <asset_bundle>98</asset_bundle>
+    <hidden_until_time>1500570000</hidden_until_time>
+    <attack>5</attack>
+    <health>10</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="2" />
+    <skill id="legion" x="1" y="13" />
+    <skill id="jam" c="7" />
+    <type>1</type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="counter" x="2" />
+      <skill id="legion" x="1" y="13" />
+      <skill id="jam" c="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>6</attack>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="3" />
+      <skill id="legion" x="1" y="13" />
+      <skill id="jam" c="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15139</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Devoted Guard</name>
+    <picture>Ladybug_Guard_A</picture>
+    <asset_bundle>98</asset_bundle>
+    <hidden_until_time>1500570000</hidden_until_time>
+    <attack>6</attack>
+    <health>13</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="3" />
+    <skill id="legion" x="1" y="13" />
+    <skill id="jam" c="5" />
+    <type>1</type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>14</health>
+      <skill id="counter" x="3" />
+      <skill id="legion" x="2" y="13" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="4" />
+      <skill id="legion" x="2" y="13" />
+      <skill id="jam" c="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25139</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Decorated Guard</name>
+    <picture>Ladybug_Guard_B</picture>
+    <asset_bundle>98</asset_bundle>
+    <hidden_until_time>1500570000</hidden_until_time>
+    <attack>8</attack>
+    <health>15</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="4" />
+    <skill id="legion" x="2" y="13" />
+    <skill id="jam" c="4" />
+    <type>1</type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="5" />
+      <skill id="legion" x="3" y="13" />
+      <skill id="jam" c="4" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>5140</id>
     <card_type>2</card_type>
     <name>Copperhorn Beetle</name>
@@ -17723,6 +17982,263 @@
       <skill id="armored" x="4" />
       <skill id="strike" x="1" all="1" />
       <skill id="strike" x="3" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5144</id>
+    <card_type>2</card_type>
+    <name>Wee Sparkcaster</name>
+    <picture>Goblin_Lightning_Master_A</picture>
+    <asset_bundle>100</asset_bundle>
+    <hidden_until_time>1501174800</hidden_until_time>
+    <attack>4</attack>
+    <health>15</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="3" />
+    <skill id="strike" x="3" />
+    <skill id="jam" c="7" />
+    <type>1</type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="counter" x="3" />
+      <skill id="strike" x="3" />
+      <skill id="jam" c="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>16</health>
+      <skill id="counter" x="4" />
+      <skill id="strike" x="3" />
+      <skill id="jam" c="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>18</health>
+      <skill id="counter" x="4" />
+      <skill id="strike" x="4" />
+      <skill id="jam" c="6" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>5</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15144</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Lil' Sparkcaster</name>
+    <picture>Goblin_Lightning_Master_A</picture>
+    <asset_bundle>100</asset_bundle>
+    <hidden_until_time>1501174800</hidden_until_time>
+    <attack>5</attack>
+    <health>19</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="4" />
+    <skill id="strike" x="4" />
+    <skill id="jam" c="5" />
+    <type>1</type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>21</health>
+      <skill id="counter" x="5" />
+      <skill id="strike" x="4" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counter" x="5" />
+      <skill id="strike" x="5" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>22</health>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>23</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25144</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Sparkcaster</name>
+    <picture>Goblin_Lightning_Master_B</picture>
+    <asset_bundle>100</asset_bundle>
+    <hidden_until_time>1501174800</hidden_until_time>
+    <attack>6</attack>
+    <health>24</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="5" />
+    <skill id="strike" x="5" />
+    <skill id="jam" c="4" />
+    <type>1</type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="counter" x="6" />
+      <skill id="strike" x="5" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>25</health>
+      <skill id="counter" x="6" />
+      <skill id="strike" x="6" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>7</attack>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counter" x="7" />
+      <skill id="strike" x="7" />
+      <skill id="jam" c="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5145</id>
+    <card_type>2</card_type>
+    <name>Gobsnout Piercer</name>
+    <picture>Goblin_Heavenly_Crusader_A</picture>
+    <asset_bundle>100</asset_bundle>
+    <hidden_until_time>1501174800</hidden_until_time>
+    <attack>2</attack>
+    <health>8</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="1" />
+    <skill id="pierce" x="1" />
+    <skill id="flurry" c="7" />
+    <type>1</type>
+    <sub_type>11</sub_type>
+    <sub_type>6</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="1" />
+      <skill id="pierce" x="1" />
+      <skill id="flurry" c="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>10</health>
+      <skill id="armored" x="1" />
+      <skill id="pierce" x="2" />
+      <skill id="flurry" c="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>3</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15145</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Gobsnout Dullblade</name>
+    <picture>Goblin_Heavenly_Crusader_A</picture>
+    <asset_bundle>100</asset_bundle>
+    <hidden_until_time>1501174800</hidden_until_time>
+    <attack>3</attack>
+    <health>11</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="1" />
+    <skill id="pierce" x="2" />
+    <skill id="flurry" c="5" />
+    <type>1</type>
+    <sub_type>11</sub_type>
+    <sub_type>6</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="2" />
+      <skill id="pierce" x="3" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>4</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25145</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Gobsnout Ascender</name>
+    <picture>Goblin_Heavenly_Crusader_B</picture>
+    <asset_bundle>100</asset_bundle>
+    <hidden_until_time>1501174800</hidden_until_time>
+    <attack>4</attack>
+    <health>14</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="2" />
+    <skill id="pierce" x="3" />
+    <skill id="flurry" c="4" />
+    <type>1</type>
+    <sub_type>11</sub_type>
+    <sub_type>6</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="2" />
+      <skill id="pierce" x="4" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>15</health>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="3" />
+      <skill id="pierce" x="5" />
+      <skill id="flurry" c="4" />
     </upgrade>
   </unit>
 </root>

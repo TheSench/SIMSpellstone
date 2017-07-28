@@ -260,6 +260,19 @@
     <balance_points>4</balance_points>
   </skillType>
   <skillType>
+    <id>burn2</id>
+    <order>150</order>
+    <icon>burn</icon>
+    <name>Scorch 2</name>
+    <desc>Deals stacking damage to the enemy across from this creature at end of turn. Wears off if not reapplied for a turn.</desc>
+    <status_flag>burn</status_flag>
+    <status_flag>burn_cooldown</status_flag>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <vfx_location>edge</vfx_location>
+    <balance_points>4</balance_points>
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
     <id>jam</id>
     <order>160</order>
     <icon>freeze</icon>

@@ -8718,4 +8718,54 @@
     </upgrade>
     <desc>The most advanced contraption to ever be conceived by goblin kind! Meet your doom!</desc>
   </unit>
+  <!-- Campaign Event 4, Weeks 7-8 -->
+  <unit>
+    <id>394</id>
+    <card_type>1</card_type>
+    <name>Xerkahn, the Vengeant</name>
+    <portrait>necromancer</portrait>
+    <attack>0</attack>
+    <health>55</health>
+    <rarity>4</rarity>
+    <skill id="imbue" x="1" s="counterburn" />
+    <skill id="enfeeble" x="1" all="1" />
+    <skill id="enrage" x="1" all="1" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>60</health>
+      <skill id="imbue" x="1" s="counterburn" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="enrage" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>65</health>
+      <skill id="imbue" x="2" s="counterburn" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="enrage" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>71</health>
+      <skill id="imbue" x="2" s="counterburn" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="enrage" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>76</health>
+      <skill id="imbue" x="3" s="counterburn" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="enrage" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>82</health>
+      <skill id="imbue" x="4" s="counterburn" />
+      <skill id="enfeeble" x="2" all="1" />
+      <skill id="enrage" x="3" all="1" />
+    </upgrade>
+  </unit>
 </root>

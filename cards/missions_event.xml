@@ -18932,11 +18932,11 @@
       </line>
     </speech>
   </mission>
-  <!-- Test -->
+  <!-- Mythic Titan Master Bluefire -->
   <mission>
     <id>5620</id>
     <name>The World Falters...</name>
-    <energy>9</energy>
+    <energy>10</energy>
     <desc>With The Void vanquished, you search for the source of the Elementals' restlessness, and investigate a reported gathering of the Servants of Atlas, Solaron, and Vulcanos. You find them, standing over the fallen forms of their Masters, crying out feverishly...</desc>
     <commander id="382" />
     <deck>
@@ -18960,7 +18960,7 @@
   <mission>
     <id>5621</id>
     <name>Reality Breaks...</name>
-    <energy>9</energy>
+    <energy>10</energy>
     <desc>The air shimmers and distorts. Amidst the center of the servants' grief, you see a familiar dragon ripping apart the threads of reality. Bluefire's form catches; something is wrong. Caught between the planes of reality, he shrieks in rage...</desc>
     <commander id="382" />
     <deck>
@@ -18984,7 +18984,7 @@
   <mission>
     <id>5622</id>
     <name>The Storm Assembles...</name>
-    <energy>9</energy>
+    <energy>10</energy>
     <desc>Only Bluefire's head and chest have made it through the distortion, when his gaze settles to the fallen Titans. Their forms drift towards The Void Master, before fusing and giving him strength. With the hands of Solaron, the arms of Atlas, and the torso of Vulcanos, Bluefire turns to you...</desc>
     <commander id="382" />
     <deck>
@@ -19008,7 +19008,7 @@
   <mission>
     <id>5623</id>
     <name>The Elements Revolt...</name>
-    <energy>9</energy>
+    <energy>10</energy>
     <desc>And the servants of the Titans fall upon their knees, crying out loudly, 'Our Master is the One who vanquished our Master, unto life and death do we serve, our Lord Bluefire.' With the weight of the fallen Titans, with all their servants at his disposal, Bluefire roars and fights you once more.</desc>
     <commander id="382" />
     <deck>
@@ -19029,6 +19029,8 @@
       <card id="8070" name="Scylla's Fool" />
     </deck>
   </mission>
+  <!-- End Mythic -->
+  <!-- Campaign Event 4 Weeks 1-4 -->
   <mission>
     <id>5624</id>
     <name>Investigating the Elements</name>
@@ -19853,7 +19855,7 @@
     <id>5652</id>
     <name>War Life</name>
     <energy>9</energy>
-    <desc>As such, the only life he knows is one of fighting. There is no place for him in this new world of peace. If no trouble exists, than he shall create it. He vows to gather all your enemies, all the people you have trampled upon to reach your position.</desc>
+    <desc>As such, the only life he knows is one of fighting. There is no place for him in this new world of peace. If no trouble exists, then he shall create it. He vows to gather all your enemies, all the people you have trampled upon to reach your position.</desc>
     <commander id="392" />
     <deck>
       <card id="7067" name="Mantis" />
@@ -19896,5 +19898,824 @@
       <card id="7064" mastery_level="6" name="Willowfly" />
       <card id="2097" mastery_level="7" name="Gem Harvester" />
     </deck>
+  </mission>
+  <!-- Campaign Event 4 Weeks 5-8 -->
+  <mission>
+    <id>3654</id>
+    <name>The End of a Thought</name>
+    <energy>9</energy>
+    <desc>After separating from Rayne, you take a closer look around for the one who sabotaged the mecha insects, and who likely lured the feral bugs into Beetleton Bunker. Your search revealed an old friend, with whom you dealt with privately.</desc>
+    <commander id="391" />
+    <deck>
+      <card id="8070" name="Scylla's Fool" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="5065" name="Hive Guard" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="2049" name="Contrapede" />
+      <card id="6069" name="Arachnolite" />
+      <card id="5065" name="Hive Guard" />
+      <card id="5065" name="Hive Guard" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="2048" mastery_level="2" name="Sandmite" />
+      <card id="2050" mastery_level="3" name="Slithering Pincer" />
+      <card id="2098" mastery_level="4" name="Cocoon Crawler" />
+      <card id="6037" mastery_level="5" name="Keeper of Souls" />
+      <card id="5068" mastery_level="6" name="Aht-Aht Carrier" />
+      <card id="7068" mastery_level="7" name="Eve Allurephid" />
+    </deck>
+  </mission>
+  <mission>
+    <id>3655</id>
+    <name>Resolved Differences</name>
+    <energy>9</energy>
+    <desc>You meet up with Rayne and explained what happened. It seems like for now, your troubles with the mech and feral bugs should be settled, now that The Assassin has fled.</desc>
+    <commander id="328" />
+    <deck>
+      <card id="8045" name="Summoned Abomination" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="7065" name="Disturbed Swarm" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="6139" name="Sand Wurm" />
+      <card id="6069" name="Arachnolite" />
+      <card id="5065" name="Hive Guard" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="2048" mastery_level="2" name="Sandmite" />
+      <card id="2049" mastery_level="3" name="Contrapede" />
+      <card id="2099" mastery_level="4" name="White Regemage" />
+      <card id="6057" mastery_level="5" name="Beammite" />
+      <card id="6064" mastery_level="6" name="Dreaded Shock" />
+      <card id="2051" mastery_level="7" name="Dune Hopper" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>It's sad when former allies turn to desperate measures. Let us hope that The Assassin does not return.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>3656</id>
+    <name>Ally Reunion</name>
+    <energy>9</energy>
+    <desc>The next day, you have helped the Insects salvage their festival. Emisarries from foreign lands have gathered, and you recognize a great many faces, and see some new ones.</desc>
+    <commander id="354" />
+    <deck>
+      <card id="8070" name="Scylla's Fool" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="2050" name="Slithering Pincer" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="5065" name="Hive Guard" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="2098" name="Cocoon Crawler" />
+      <card id="6044" name="Firewalker" />
+      <card id="6044" mastery_level="2" name="Firewalker" />
+      <card id="2098" mastery_level="3" name="Cocoon Crawler" />
+      <card id="2099" mastery_level="4" name="White Regemage" />
+      <card id="6067" mastery_level="5" name="Gurgitater" />
+      <card id="7064" mastery_level="6" name="Willowfly" />
+      <card id="2100" mastery_level="7" name="Kheptronos" />
+    </deck>
+    <speech>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Long time no see, adventurer. You've come so far since I last saw you, rescuing those dragon hatchlings.</text>
+      </line>
+      <line>
+        <commander>goldencrownmayor</commander>
+        <enemy>0</enemy>
+        <text>Oh hohoho. You've gotten a little taller since our time in Duskwillow, I do believe.</text>
+      </line>
+      <line>
+        <commander>goldencrownmayor</commander>
+        <enemy>0</enemy>
+        <text>Have you been eating properly? Are those rings around your eyes? Make sure to rest properly!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>3657</id>
+    <name>Frigore Allies</name>
+    <energy>9</energy>
+    <desc>You spend some time mingling with your friends from afar. Most of your friends who helped you reached The Void Plane have also come to celebrate. Among them you spy Malchior and Tarian.</desc>
+    <commander id="317" />
+    <deck>
+      <card id="8045" name="Summoned Abomination" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="2048" name="Sandmite" />
+      <card id="7065" name="Disturbed Swarm" />
+      <card id="6069" name="Arachnolite" />
+      <card id="5069" name="Heralidae" />
+      <card id="5069" name="Heralidae" />
+      <card id="2098" name="Cocoon Crawler" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="5067" mastery_level="2" name="Squito Roamer" />
+      <card id="6139" mastery_level="3" name="Sand Wurm" />
+      <card id="2099" mastery_level="4" name="White Regemage" />
+      <card id="7063" mastery_level="5" name="Poisac Crawler" />
+      <card id="6065" mastery_level="6" name="Torchsnout" />
+      <card id="5070" mastery_level="7" name="Hornslicer" />
+    </deck>
+    <speech>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Ahh, the Beetleton's infamous funnel cake. Naturally it's only for the sake of science that piques my interest.</text>
+      </line>
+      <line>
+        <commander>lichking</commander>
+        <enemy>0</enemy>
+        <text>...Are you certain that is a funnel cake?</text>
+      </line>
+      <line>
+        <commander>grandexcavator</commander>
+        <enemy>0</enemy>
+        <text>Well there's no flour or eggs in this, I'll tell you that much!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>3658</id>
+    <name>Former Enemies</name>
+    <energy>9</energy>
+    <desc>To your surprise, you see someone you did not expect to arrive at the party. The proud Aether leader remains at the festival's fringe. Although he's unwilling to step near the dance floor, his presence still speaks to your victory against The Void.</desc>
+    <commander id="315" />
+    <deck>
+      <card id="8070" name="Scylla's Fool" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="6069" name="Arachnolite" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="6044" name="Firewalker" />
+      <card id="6044" name="Firewalker" />
+      <card id="5069" name="Heralidae" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="5069" mastery_level="2" name="Heralidae" />
+      <card id="6066" mastery_level="3" name="Psychic Beetle" />
+      <card id="2099" mastery_level="4" name="White Regemage" />
+      <card id="7130" mastery_level="5" name="Fluttering Stinger" />
+      <card id="7067" mastery_level="6" name="Mantis" />
+      <card id="7130" mastery_level="7" name="Fluttering Stinger" />
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>0</enemy>
+        <text>...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>3659</id>
+    <name>The Aether Leader's Respect</name>
+    <energy>9</energy>
+    <desc>You approach Samael to speak with him, unable to leave him sulking in the corner. Besides, he looks a little lonely, without any other friends at the festival.</desc>
+    <commander id="304" />
+    <deck>
+      <card id="8045" name="Summoned Abomination" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="6044" name="Firewalker" />
+      <card id="5065" name="Hive Guard" />
+      <card id="5065" name="Hive Guard" />
+      <card id="2050" name="Slithering Pincer" />
+      <card id="5069" name="Heralidae" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="5069" name="Heralidae" />
+      <card id="5069" mastery_level="2" name="Heralidae" />
+      <card id="6066" mastery_level="3" name="Psychic Beetle" />
+      <card id="2099" mastery_level="4" name="White Regemage" />
+      <card id="7086" mastery_level="5" name="Scavenger of Elaria" />
+      <card id="6057" mastery_level="6" name="Beammite" />
+      <card id="7086" mastery_level="7" name="Scavenger of Elaria" />
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>1</enemy>
+        <text>What is it? You are surprised that I would honor someone who sealed The Void?</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>1</enemy>
+        <text>Although our methods differed, I do not deny your accomplishment. The Void was the ultimate threat. Once more, Order has a chance of restoring this broken world.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>3660</id>
+    <name>Farewell to Dyrnwyn</name>
+    <energy>9</energy>
+    <desc>Taking out Dyrnwyn, whose flame has grown cold since leaving The Void Plane, you offer it to Samael. You have sensed that the sword will no longer aid you, perhaps because it believes you strong enough without its power.</desc>
+    <commander id="304" />
+    <deck>
+      <card id="8070" name="Scylla's Fool" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="2048" name="Sandmite" />
+      <card id="5065" name="Hive Guard" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="6069" name="Arachnolite" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="5069" name="Heralidae" />
+      <card id="2098" mastery_level="2" name="Cocoon Crawler" />
+      <card id="5069" mastery_level="3" name="Heralidae" />
+      <card id="2099" mastery_level="4" name="White Regemage" />
+      <card id="7138" mastery_level="5" name="Gaseous Spores" />
+      <card id="6068" mastery_level="6" name="Night Larva" />
+      <card id="7138" mastery_level="7" name="Gaseous Spores" />
+    </deck>
+    <speech>
+      <line>
+        <commander>seraph</commander>
+        <enemy>1</enemy>
+        <text>You... would return Dyrnwyn to me? Even though the sword chose you?</text>
+      </line>
+      <line>
+        <commander>seraph</commander>
+        <enemy>1</enemy>
+        <text>... Thank you. It was not until the sword was gone, that I realized I ignored its call. This time... I will listen to when it reaches to my heart.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>3661</id>
+    <name>Silent Stars</name>
+    <energy>9</energy>
+    <desc>You leave Samael to his thoughts, and instead you wander through the quiet sections of town. Deep below the earth's surface, looking up you can see cracks in the earthen dome. Far, far up are the stars, faint light slowly streaming to touch the ground...</desc>
+    <commander id="281" />
+    <deck>
+      <card id="8045" name="Summoned Abomination" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="5069" name="Heralidae" />
+      <card id="2050" name="Slithering Pincer" />
+      <card id="2050" name="Slithering Pincer" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="7065" name="Disturbed Swarm" />
+      <card id="2049" name="Contrapede" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="6069" mastery_level="2" name="Arachnolite" />
+      <card id="6139" mastery_level="3" name="Sand Wurm" />
+      <card id="2099" mastery_level="4" name="White Regemage" />
+      <card id="6068" mastery_level="5" name="Night Larva" />
+      <card id="6065" mastery_level="6" name="Torchsnout" />
+      <card id="6138" mastery_level="7" name="Bitter Therix" />
+    </deck>
+  </mission>
+  <mission>
+    <id>3662</id>
+    <name>Peaceful World</name>
+    <energy>9</energy>
+    <desc>While you are looking at the stars, Elyse joins you. She watches the stars for a few minutes, the two of you in silence, until finally she speaks...</desc>
+    <commander id="328" />
+    <deck>
+      <card id="8070" name="Scylla's Fool" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="6044" name="Firewalker" />
+      <card id="2098" name="Cocoon Crawler" />
+      <card id="2098" name="Cocoon Crawler" />
+      <card id="5065" name="Hive Guard" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="6069" name="Arachnolite" />
+      <card id="7065" mastery_level="2" name="Disturbed Swarm" />
+      <card id="2048" mastery_level="3" name="Sandmite" />
+      <card id="2099" mastery_level="4" name="White Regemage" />
+      <card id="7048" mastery_level="5" name="Bogskull Widow" />
+      <card id="6008" mastery_level="6" name="Thousand Arm Demon" />
+      <card id="5140" mastery_level="7" name="Copperhorn Beetle" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>It doesn't feel real... does it? The world is safe now.</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>3663</id>
+    <name>Bluefire's Prophecy</name>
+    <energy>9</energy>
+    <desc>Elyse confesses a concern she's had for some time. The journey to The Void Plane was hard on all of you, and some doubts still remain...</desc>
+    <commander id="301" />
+    <deck>
+      <card id="8045" name="Summoned Abomination" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="2050" name="Slithering Pincer" />
+      <card id="2049" name="Contrapede" />
+      <card id="7065" name="Disturbed Swarm" />
+      <card id="6069" name="Arachnolite" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="7065" name="Disturbed Swarm" />
+      <card id="1330" mastery_level="2" name="Devouring Locusts" />
+      <card id="2048" mastery_level="3" name="Sandmite" />
+      <card id="2099" mastery_level="4" name="White Regemage" />
+      <card id="7063" mastery_level="5" name="Poisac Crawler" />
+      <card id="6064" mastery_level="6" name="Dreaded Shock" />
+      <card id="6140" mastery_level="7" name="Maskcraft Scarab" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>I just keep thinking about Bluefire's last words. He seemed so certain that without The Void, the tribes would turn on each other.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>3664</id>
+    <name>Peace Shattered</name>
+    <energy>9</energy>
+    <desc>Elyse is still talking, when you hear something that sounds like an explosion! It came from the party area. Perhaps one of the Insects' mechanical creatures has gone awry again?</desc>
+    <commander id="391" />
+    <deck>
+      <card id="8045" name="Summoned Abomination" />
+      <card id="1318" name="Smelted Lava Slug" />
+      <card id="6069" name="Arachnolite" />
+      <card id="6139" name="Sand Wurm" />
+      <card id="2049" name="Contrapede" />
+      <card id="5065" name="Hive Guard" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="6044" name="Firewalker" />
+      <card id="2048" mastery_level="2" name="Sandmite" />
+      <card id="2048" mastery_level="3" name="Sandmite" />
+      <card id="2099" mastery_level="4" name="White Regemage" />
+      <card id="7048" mastery_level="5" name="Bogskull Widow" />
+      <card id="7064" mastery_level="6" name="Willowfly" />
+      <card id="7141" mastery_level="7" name="Sleetshield" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>I'm sorry. This is supposed to be a celebration and I-</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Wait, did you hear that explosion?! Quick, back to the main square!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>3665</id>
+    <name>Growing Trouble</name>
+    <energy>9</energy>
+    <desc>You and Elyse rush towards the party, but somewhere in the crowd, you end up losing sight of her. There's no time to stop and search. The celebration had been thinning when you last wandered off, but there are far too many people who have gathered...</desc>
+    <commander id="353" />
+    <deck>
+      <card id="8070" name="Scylla's Fool" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="6021" name="Marsh Ogre" />
+      <card id="6139" name="Sand Wurm" />
+      <card id="5091" name="Armor Thief" />
+      <card id="5065" name="Hive Guard" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="6044" name="Firewalker" />
+      <card id="2064" mastery_level="2" name="Tome Sneak" />
+      <card id="7090" mastery_level="3" name="Prospector" />
+      <card id="2099" mastery_level="4" name="White Regemage" />
+      <card id="7026" mastery_level="5" name="Frostjaw" />
+      <card id="7064" mastery_level="6" name="Willowfly" />
+      <card id="6093" mastery_level="7" name="Noz Onehand" />
+    </deck>
+  </mission>
+  <mission>
+    <id>3666</id>
+    <name>Party Crashers</name>
+    <energy>9</energy>
+    <desc>It's difficult to make out all the forms in the darkness, until you draw close. You find that the party-goers are retreating from a group of goblins!</desc>
+    <commander id="321" />
+    <deck>
+      <card id="8045" name="Summoned Abomination" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="7087" name="Goblites" />
+      <card id="5069" name="Heralidae" />
+      <card id="6021" name="Marsh Ogre" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="2098" name="Cocoon Crawler" />
+      <card id="2098" name="Cocoon Crawler" />
+      <card id="5065" name="Hive Guard" />
+      <card id="1628" mastery_level="2" name="Garganotos" />
+      <card id="7087" mastery_level="3" name="Goblites" />
+      <card id="2099" mastery_level="4" name="White Regemage" />
+      <card id="5090" mastery_level="5" name="Reks' Faithful" />
+      <card id="7048" mastery_level="6" name="Bogskull Widow" />
+      <card id="7088" mastery_level="7" name="Jubjub" />
+    </deck>
+    <speech>
+      <line>
+        <commander>goblinraider</commander>
+        <enemy>1</enemy>
+        <text>Party! Party! Look at these great BOMBS we brought as gifts!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>3667</id>
+    <name>Party Control</name>
+    <energy>9</energy>
+    <desc>Fiona and Rayne, having experience in dealing with goblins, are already deep within their ranks and fighting. You struggle to catch up to them before they become out of reach entirely.</desc>
+    <commander id="311" />
+    <deck>
+      <card id="8045" name="Summoned Abomination" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6089" name="Fire Belcher" />
+      <card id="7065" name="Disturbed Swarm" />
+      <card id="2053" name="Rocket Rider" />
+      <card id="2049" name="Contrapede" />
+      <card id="6069" name="Arachnolite" />
+      <card id="5065" name="Hive Guard" />
+      <card id="5069" name="Heralidae" />
+      <card id="6090" mastery_level="2" name="Crackshot" />
+      <card id="2063" mastery_level="3" name="Hob Fletcher" />
+      <card id="5068" mastery_level="4" name="Aht-Aht Carrier" />
+      <card id="7089" mastery_level="5" name="Elder Shaman" />
+      <card id="5066" mastery_level="6" name="Scarab Beast" />
+      <card id="6049" mastery_level="7" name="Goblin Explosioneer" />
+    </deck>
+    <speech>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>You picked the wrong party to crash, goblins!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>3668</id>
+    <name>Firework Destruction</name>
+    <energy>9</energy>
+    <desc>You fight through the looting goblins, who have begun smashing the party decorations that the Insects worked so hard to create. Firework explosions flash in the sky, the goblins doing everything they can to induce chaos.</desc>
+    <commander id="320" />
+    <deck>
+      <card id="8045" name="Summoned Abomination" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="2062" name="Deadeye Apprentice" />
+      <card id="6069" name="Arachnolite" />
+      <card id="5091" name="Armor Thief" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="6044" name="Firewalker" />
+      <card id="5069" name="Heralidae" />
+      <card id="6044" name="Firewalker" />
+      <card id="6090" mastery_level="2" name="Crackshot" />
+      <card id="6072" mastery_level="3" name="Bone Wielder" />
+      <card id="5068" mastery_level="4" name="Aht-Aht Carrier" />
+      <card id="6092" mastery_level="5" name="Smog Charger" />
+      <card id="6140" mastery_level="6" name="Maskcraft Scarab" />
+      <card id="6088" mastery_level="7" name="Doxum's Construct" />
+    </deck>
+  </mission>
+  <mission>
+    <id>3669</id>
+    <name>Joint Effort</name>
+    <energy>9</energy>
+    <desc>Finally you manage to clear your way to the center of the fiercest fighting, joining Fiona and Rayne as they hold the goblins back. You can see that some distance away, an airship has landed, likely how the goblins invaded with such short notice.</desc>
+    <commander id="341" />
+    <deck>
+      <card id="8070" name="Scylla's Fool" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="2053" name="Rocket Rider" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="5089" name="Gomblit" />
+      <card id="5069" name="Heralidae" />
+      <card id="7065" name="Disturbed Swarm" />
+      <card id="6069" name="Arachnolite" />
+      <card id="5065" name="Hive Guard" />
+      <card id="2053" mastery_level="2" name="Rocket Rider" />
+      <card id="2063" mastery_level="3" name="Hob Fletcher" />
+      <card id="7064" mastery_level="4" name="Willowfly" />
+      <card id="6049" mastery_level="5" name="Goblin Explosioneer" />
+      <card id="7064" mastery_level="6" name="Willowfly" />
+      <card id="5092" mastery_level="7" name="Tundra Reaver" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>There you are. Come, let us deal with these nuisances.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>3670</id>
+    <name>Goblin Revenge</name>
+    <energy>9</energy>
+    <desc>You continue to fight through the hoards of goblins. That is, until a goblin with wild hair steps forward. The other goblins part, letting her approach your group.</desc>
+    <commander id="394" />
+    <deck>
+      <card id="8070" name="Scylla's Fool" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="7090" name="Prospector" />
+      <card id="5089" name="Gomblit" />
+      <card id="6021" name="Marsh Ogre" />
+      <card id="2098" name="Cocoon Crawler" />
+      <card id="6139" name="Sand Wurm" />
+      <card id="6139" name="Sand Wurm" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="2063" mastery_level="2" name="Hob Fletcher" />
+      <card id="2062" mastery_level="3" name="Deadeye Apprentice" />
+      <card id="7064" mastery_level="4" name="Willowfly" />
+      <card id="2065" mastery_level="5" name="Pinpin, Dragon Handler" />
+      <card id="7068" mastery_level="6" name="Eve Allurephid" />
+      <card id="7091" mastery_level="7" name="Wave Plunderer" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>Well lookee here, if it ain't the blond lass that had it out fer my bro.</text>
+      </line>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Bro? I mean, brother? Wait, who are you...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>3671</id>
+    <name>A Vengeful Sister</name>
+    <energy>9</energy>
+    <desc>The mysterious goblin seems to be blaming your friend for something. She has an unpleasant grin across her face, while the smaller goblins shout in anger...</desc>
+    <commander id="394" />
+    <deck>
+      <card id="8070" name="Scylla's Fool" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="5089" name="Gomblit" />
+      <card id="2064" name="Tome Sneak" />
+      <card id="1628" name="Garganotos" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="6139" name="Sand Wurm" />
+      <card id="2050" name="Slithering Pincer" />
+      <card id="2062" mastery_level="2" name="Deadeye Apprentice" />
+      <card id="7087" mastery_level="3" name="Goblites" />
+      <card id="7064" mastery_level="4" name="Willowfly" />
+      <card id="7026" mastery_level="5" name="Frostjaw" />
+      <card id="5066" mastery_level="6" name="Scarab Beast" />
+      <card id="6098" mastery_level="7" name="Sheltering Wing" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>Aye, the name's Xerkahn, an' you're responsible for the death of my lil bro Reks! Did you forget him so soon?</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>An' now you all are havin' a party, yet conveniently didn't invite us goblins, eh.</text>
+      </line>
+      <line>
+        <commander>goblinfootmen</commander>
+        <enemy>1</enemy>
+        <text>It's not fair, not fair!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>3672</id>
+    <name>Mecha Dragons</name>
+    <energy>9</energy>
+    <desc>Xerkahn snarls, motioning for the goblins towards the ship. They wheel out strange creations, more mechanical creatures that have the shape of dragons, that join the fray and attack!</desc>
+    <commander id="340" />
+    <deck>
+      <card id="8045" name="Summoned Abomination" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6090" name="Crackshot" />
+      <card id="2064" name="Tome Sneak" />
+      <card id="1628" name="Garganotos" />
+      <card id="5065" name="Hive Guard" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="5065" name="Hive Guard" />
+      <card id="7065" name="Disturbed Swarm" />
+      <card id="6089" mastery_level="2" name="Fire Belcher" />
+      <card id="7090" mastery_level="3" name="Prospector" />
+      <card id="6111" mastery_level="4" name="Aspects of the Ashes" />
+      <card id="6014" mastery_level="5" name="Armored Siegefist" />
+      <card id="5142" mastery_level="6" name="Buzzblade" />
+      <card id="6111" mastery_level="7" name="Aspects of the Ashes" />
+    </deck>
+  </mission>
+  <mission>
+    <id>3673</id>
+    <name>Rise to Defend</name>
+    <energy>9</energy>
+    <desc>The goblins and mecha are clearly concentrating their attacks on Fiona, seeking to overwhelm her. But you and Rayne leap to her aid, distracting the goblin forces long enough for her to mount her own offense!</desc>
+    <commander id="394" />
+    <deck>
+      <card id="8045" name="Summoned Abomination" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="7087" name="Goblites" />
+      <card id="7087" name="Goblites" />
+      <card id="1628" name="Garganotos" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="2098" name="Cocoon Crawler" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="7090" mastery_level="2" name="Prospector" />
+      <card id="6089" mastery_level="3" name="Fire Belcher" />
+      <card id="6111" mastery_level="4" name="Aspects of the Ashes" />
+      <card id="5143" mastery_level="5" name="Cedric's Battlesnail" />
+      <card id="5068" mastery_level="6" name="Aht-Aht Carrier" />
+      <card id="6111" mastery_level="7" name="Aspects of the Ashes" />
+    </deck>
+  </mission>
+  <mission>
+    <id>3674</id>
+    <name>The Missing Tribe</name>
+    <energy>9</energy>
+    <desc>The goblin looters scan the fleeing crowd and those who have stood up to fight. Samael and his angels, along with some of the others, have engaged the goblins in Beetleton. The goblins seem to be looking for something...</desc>
+    <commander id="394" />
+    <deck>
+      <card id="6007" name="Goblin Crew" />
+      <card id="8070" name="Scylla's Fool" />
+      <card id="7065" name="Disturbed Swarm" />
+      <card id="7140" name="Clawgro" />
+      <card id="5065" name="Hive Guard" />
+      <card id="2063" name="Hob Fletcher" />
+      <card id="6021" name="Marsh Ogre" />
+      <card id="1628" name="Garganotos" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="7140" mastery_level="2" name="Clawgro" />
+      <card id="2048" mastery_level="3" name="Sandmite" />
+      <card id="7063" mastery_level="4" name="Poisac Crawler" />
+      <card id="7064" mastery_level="5" name="Willowfly" />
+      <card id="6014" mastery_level="6" name="Armored Siegefist" />
+      <card id="5092" mastery_level="7" name="Tundra Reaver" />
+    </deck>
+    <speech>
+      <line>
+        <commander>goblinraider</commander>
+        <enemy>1</enemy>
+        <text>Boss! Did ya notice? Not ALL the tribes are here. There's another that's missing!</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>Aye. It's safe to say they prob ain't allies, then. And an enemy of my enemy is a potential ally!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>3675</id>
+    <name>Thieving Forces</name>
+    <energy>9</energy>
+    <desc>A group of goblins bursts through the main plaza, running past the chaos and joining Xerkahn in her fight. One is carrying something wrapped in clothe, the contents hidden from your eyes.</desc>
+    <commander id="323" />
+    <deck>
+      <card id="6007" name="Goblin Crew" />
+      <card id="8045" name="Summoned Abomination" />
+      <card id="2049" name="Contrapede" />
+      <card id="6069" name="Arachnolite" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="2062" name="Deadeye Apprentice" />
+      <card id="6090" name="Crackshot" />
+      <card id="7090" name="Prospector" />
+      <card id="2098" name="Cocoon Crawler" />
+      <card id="5139" mastery_level="2" name="Loyal Guard" />
+      <card id="2099" mastery_level="3" name="White Regemage" />
+      <card id="6008" mastery_level="4" name="Thousand Arm Demon" />
+      <card id="6064" mastery_level="5" name="Dreaded Shock" />
+      <card id="6092" mastery_level="6" name="Smog Charger" />
+      <card id="7088" mastery_level="7" name="Jubjub" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Goblin_Captain</commander>
+        <enemy>1</enemy>
+        <text>The vault's empty, boss! They musta moved the Spellstone Hammer somewhere else.</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>Ya fools! I told you not to come back empty-handed!</text>
+      </line>
+      <line>
+        <commander>Portrait_Goblin_Captain</commander>
+        <enemy>1</enemy>
+        <text>We ain't empty-handed, boss!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>3676</id>
+    <name>Thieving Forces</name>
+    <energy>9</energy>
+    <desc>Elyse struggles to catch up, in pursuit of the goblins who have rendezvoused with Xerkahn. Her pace is slowed by a limp, yet she hurries as quickly as she can...</desc>
+    <commander id="341" />
+    <deck>
+      <card id="6007" name="Goblin Crew" />
+      <card id="8070" name="Scylla's Fool" />
+      <card id="2049" name="Contrapede" />
+      <card id="2049" name="Contrapede" />
+      <card id="6044" name="Firewalker" />
+      <card id="5091" name="Armor Thief" />
+      <card id="6090" name="Crackshot" />
+      <card id="6072" name="Bone Wielder" />
+      <card id="6069" name="Arachnolite" />
+      <card id="5139" mastery_level="2" name="Loyal Guard" />
+      <card id="7140" mastery_level="3" name="Clawgro" />
+      <card id="6138" mastery_level="4" name="Bitter Therix" />
+      <card id="6065" mastery_level="5" name="Torchsnout" />
+      <card id="7026" mastery_level="6" name="Frostjaw" />
+      <card id="6094" mastery_level="7" name="Gob Launcher" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>Adventurer, stop them! They've stolen the Seastone Staff!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>3677</id>
+    <name>Sky Pirates</name>
+    <energy>9</energy>
+    <desc>The goblins and Xerkahn retreat to their airship. The mecha beasts stay behind, preventing you from continuing your chase! Xerkahn grabs a rope on the side of the ship, while her men haul her on board. She waves and laughs loudly...</desc>
+    <commander id="353" />
+    <deck>
+      <card id="6007" name="Goblin Crew" />
+      <card id="8045" name="Summoned Abomination" />
+      <card id="2050" name="Slithering Pincer" />
+      <card id="2050" name="Slithering Pincer" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="6021" name="Marsh Ogre" />
+      <card id="6089" name="Fire Belcher" />
+      <card id="2063" name="Hob Fletcher" />
+      <card id="6139" name="Sand Wurm" />
+      <card id="5069" mastery_level="2" name="Heralidae" />
+      <card id="2099" mastery_level="3" name="White Regemage" />
+      <card id="6057" mastery_level="4" name="Beammite" />
+      <card id="5066" mastery_level="5" name="Scarab Beast" />
+      <card id="6088" mastery_level="6" name="Doxum's Construct" />
+      <card id="6093" mastery_level="7" name="Noz Onehand" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>Tah-tah! Don't worry, I'm sure we'll meet again soon, and with an army of all yer worst enemies!</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>Next time, try to invite more tribes to some celebration that's supposed to be for everyone, eh?!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>3678</id>
+    <name>Aftermath</name>
+    <energy>9</energy>
+    <desc>The airship pirates have already left. Remnant fires burn in Beetleton, the party decorations again destroyed. At the very least it doesn't look like anyone was seriously injured...</desc>
+    <commander id="391" />
+    <deck>
+      <card id="6007" name="Goblin Crew" />
+      <card id="8070" name="Scylla's Fool" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="2099" name="White Regemage" />
+      <card id="7065" name="Disturbed Swarm" />
+      <card id="5089" name="Gomblit" />
+      <card id="7087" name="Goblites" />
+      <card id="2064" name="Tome Sneak" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="6139" mastery_level="2" name="Sand Wurm" />
+      <card id="2098" mastery_level="3" name="Cocoon Crawler" />
+      <card id="2051" mastery_level="4" name="Dune Hopper" />
+      <card id="6037" mastery_level="5" name="Keeper of Souls" />
+      <card id="5090" mastery_level="6" name="Reks' Faithful" />
+      <card id="6088" mastery_level="7" name="Doxum's Construct" />
+    </deck>
+    <speech>
+      <line>
+        <commander>dragontamer</commander>
+        <enemy>0</enemy>
+        <text>Ugh... Is it over?</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>0</enemy>
+        <text>They got away with the Seastone Staff... We can't let them do whatever they want.</text>
+      </line>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>They weren't exactly subtle with their plan. Some of us will pursue them, while the rest remain here to help the Insects of Beetleton.</text>
+      </line>
+    </speech>
   </mission>
 </root>

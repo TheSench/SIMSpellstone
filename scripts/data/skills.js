@@ -23,6 +23,12 @@ var SKILL_DATA = {
 		icon: 'burn',
 		desc: 'Deals stacking damage to the enemy across from this creature at end of turn. Wears off if not reapplied for a turn.'
 	},
+	burn2 : {
+		name: 'Scorch 2',
+		type: 'activation',
+		icon: 'burn',
+		desc: 'Deals stacking damage to the enemy across from this creature at end of turn. Wears off if not reapplied for a turn.'
+	},
 	corrosive : {
 		name: 'Corrosive',
 		type: 'passive',
@@ -220,12 +226,6 @@ var SKILL_DATA = {
 		type: 'activation',
 		icon: 'bind',
 		desc: 'Increases the creature\'s delay.'
-	},
-	snaretongue: {
-	    name: 'Snaretongue',
-	    type: 'activation',
-	    icon: 'poison_bolt',
-	    desc: 'Move the weakest enemy creature in front of it, shifting all other enemy creatures one space.'
 	},
 	strike : {
 		name: 'Bolt',

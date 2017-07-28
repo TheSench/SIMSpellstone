@@ -189,7 +189,7 @@
   <battleground>
     <id>112</id>
     <name>Goblin Barrage</name>
-    <desc>Each active Goblin throws a number of bombs equal to their base Attack at the start of each turn before other skills. Each bomb deals 1 damage.</desc>
+    <desc>Each active Goblin throws a number of bombs equal to their base Attack at the start of each turn before other skills. Each bomb deals 1 damage and does not benefit from Hex or Venom.</desc>
     <icon>filter_goblin_64</icon>
     <effect>
       <add_skill id="barrage" mult="1" base="attack" y="11" />
@@ -950,6 +950,39 @@
     <!-- Starting Mastery Level -->
     <effect>
       <scale_attributes base_mult=".2" mult=".01" />
+    </effect>
+  </battleground>
+  <!-- Campaign Event 4 weeks 5-8 -->
+  <battleground>
+    <id>2017</id>
+    <name>Six-Stanza Sonata</name>
+    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+    <icon>filter_insect_64.png</icon>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>0</starting_level>
+    <!-- Starting Mastery Level -->
+    <max_level>7</max_level>
+    <!-- Max Mastery Level -->
+    <effect>
+      <scale_attributes base_mult=".2" mult=".01" />
+    </effect>
+  </battleground>
+  <battleground>
+    <id>2018</id>
+    <name>Firecracker Tango</name>
+    <desc>Non-token enemies become stronger with each passing Mastery level.</desc>
+    <icon>filter_goblin_64</icon>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>0</starting_level>
+    <!-- Starting Mastery Level -->
+    <max_level>7</max_level>
+    <!-- Max Mastery Level -->
+    <effect>
+      <scale_attributes base_mult=".2" mult=".03" />
     </effect>
   </battleground>
 </root>
