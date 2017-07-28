@@ -2655,7 +2655,7 @@ var SIMULATOR = {};
                     }
                     leech_health += enhanced;
                 }
-                leech_health = Math.min(leech_health, damage);
+                leech_health = leech_health;
                 var healthMissing = current_assault.health - current_assault.health_left;
                 if (leech_health >= healthMissing) {
                     leech_health = healthMissing;
