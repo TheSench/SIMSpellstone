@@ -312,36 +312,38 @@
             return "res/skills/" + (skillData ? skillData.icon : skillID) + ".png";
         }
 
-        $scope.supportedSkills = ['armored',
-            'protect',
+        $scope.supportedSkills = [
+            'armored',
+            'protect', /* Barrier */
             //'protect_ice',
             'berserk',
-            'strike',
+            'strike', /* Bolt */
             'corrosive',
             //'counterburn',
-            'flurry',
-            'rally',
+            'flurry', /* Dualstrike */
+            'rally', /* Empower */
             'enhance',
             'fervor',
-            'jam',
-            'frost',
+            'jam', /* Freeze */
+            'frost', /* Frostbreath */
             'heal',
-            'enfeeble',
+            'enfeeble', /* Hex */
             'imbue',
-            'evade',
+            'evade', /* Invisibility */
             'legion',
-            'fury',
+            'fury', /* Maelstrom's Fury */
             'nullify',
             'pierce',
             'poison',
             //'poisonstrike',
-            'burn',
+            'burn', /* Scorch */
+            'scorchbreath',
             'silence',
-            'leech',
+            'leech', /* Siphon */
             'taunt',
-            'counter',
+            'valor',
+            'counter', /* Vengeance */
             'weaken',
-            'valor'
         ];
 
         $scope.getSkillName = function (skillID) {

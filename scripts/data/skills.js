@@ -19,7 +19,7 @@ var SKILL_DATA = {
 	},
 	burn : {
 		name: 'Scorch',
-		type: 'passive',
+		type: 'activation',
 		icon: 'burn',
 		desc: 'Deals stacking damage to the enemy across from this creature at end of turn. Wears off if not reapplied for a turn.'
 	},
@@ -211,7 +211,7 @@ var SKILL_DATA = {
 	},
 	scorchbreath : {
 		name: 'Scorchbreath',
-		type: 'passive',
+		type: 'activation',
 		icon: 'scorchbreath',
 		desc: 'Deals scorch in a cone to up to three creatures in front of it'
 	},

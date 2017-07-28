@@ -84,7 +84,6 @@ void Main()
 		// Passives
 		{"armored", "passive"},
 		{"berserk", "passive"},
-		{"burn", "passive"},
 		{"corrosive", "passive"},
 		{"counter", "passive"},
 		{"counterburn", "passive"},
@@ -94,7 +93,6 @@ void Main()
 		{"nullify", "passive"},
 		{"pierce", "passive"},
 		{"poison", "passive"},
-		{"scorchbreath", "passive"},
 		{"valor", "passive"},
 		{"venom", "passive"},
 		// Flurry
@@ -112,6 +110,7 @@ void Main()
 		{"mark", "earlyActivation"},
 		{"rally", "earlyActivation"},
 		// Activation
+		{"burn", "activation"},
 		{"enfeeble", "activation"},
 		{"evadebarrier", "activation"},
 		{"frost", "activation"},
@@ -121,6 +120,7 @@ void Main()
 		{"jam", "activation"},
 		{"protect", "activation"},
 		{"protect_ice", "activation"},
+		{"scorchbreath", "activation"},
 		{"strike", "activation"},
 		{"weaken", "activation"}
 	};

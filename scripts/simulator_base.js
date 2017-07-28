@@ -227,6 +227,59 @@ var SIMULATOR = {};
 
     var activationSkills = {
 
+        // Scorch
+        // - cone-shaped scorch
+        scorchbreath: function(src_card, skill) {
+            return activationSkills.burn(src_card, skill, true);
+        },
+        // Scorch
+        // - Target must be an assault
+        burn: function (src_card, skill, cone) {
+
+            var o = get_o(src_card);
+
+            var field_o_assaults = field[o]['assaults'];
+
+            var targets;
+            if (cone) {
+                var startKey = Math.max(0, src_card.key - 1);
+                var endKey = Math.min(field_o_assaults.length, src_card.key + 2);
+                targets = field_o_assaults.slice(startKey, endKey);
+            } else {
+                targets = field_o_assaults.slice(src_card.key, src_card.key+1);
+            }
+            if (!targets.length) return 0;
+
+            var scorch = skill.x;
+            var enhanced = getEnhancement(src_card, 'burn');
+            if (enhanced) {
+                if (enhanced < 0) {
+                    enhanced = Math.ceil(scorch * -enhanced);
+                }
+                scorch += enhanced;
+            }
+
+            var affected = 0;
+            for (var i = 0; i < targets.length; i++) {
+                var target = targets[i];
+
+                if (!target.scorched) {
+                    target.scorched = {
+                        amount: scorch,
+                        timer: 2
+                    };
+                } else {
+                    target.scorched.amount += scorch;
+                    target.scorched.timer = 2;
+                }
+                if (debug) echo += debug_name(src_card) + ' inflicts scorch(' + scorch + ') on ' + debug_name(target) + '<br>';
+
+                affected++;
+            }
+
+            return affected;
+        },
+
         // Protect (Barrier)
         // - Can target specific faction
         // - Targets allied assaults
@@ -2715,42 +2768,6 @@ var SIMULATOR = {};
             current_assault.attack_corroded = corrosion;
             if (debug) {
                 echo += debug_name(current_assault) + ' loses ' + corrosion + ' attack to corrosion<br>';
-            }
-        }
-
-        if (target.isAssault() && target.isAlive() && current_assault.isAlive()) {
-            // Scorch
-            // - Attacker must not have died to Vengeance
-            // - Target must be an assault
-            if (current_assault.burn) {
-                var scorch = current_assault.burn;
-                var enhanced = getEnhancement(current_assault, 'burn');
-                if (enhanced) {
-                    if (enhanced < 0) {
-                        enhanced = Math.ceil(scorch * -enhanced);
-                    }
-                    scorch += enhanced;
-                }
-                target.scorch(scorch);
-                if (debug) echo += debug_name(current_assault) + ' inflicts scorch(' + scorch + ') on ' + debug_name(target) + '<br>';
-            }
-        }
-        if (current_assault.isAlive() && current_assault.scorchbreath) {
-            var scorch = current_assault.scorchbreath;
-            var enhanced = getEnhancement(current_assault, 'scorchbreath');
-            if (enhanced) {
-                if (enhanced < 0) {
-                    enhanced = Math.ceil(scorch * -enhanced);
-                }
-                scorch += enhanced;
-            }
-            for (var i = -1; i < 2; i++) {
-                var key = current_assault.key + i;
-                var target = field_o_assaults[key];
-                if (target && target.isAlive()) {
-                    target.scorch(scorch);
-                    if (debug) echo += debug_name(current_assault) + ' breathes scorchbreath(' + scorch + ') on ' + debug_name(target) + '<br>';
-                }
             }
         }
 
