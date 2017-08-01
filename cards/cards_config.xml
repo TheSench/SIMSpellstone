@@ -395,7 +395,7 @@
   </skillType>
   <skillType>
     <id>scorchbreath</id>
-    <order>1</order>
+    <order>155</order>
     <icon>scorchbreath</icon>
     <name>Scorchbreath</name>
     <desc>Deals scorch in a cone to up to three creatures in front of it</desc>

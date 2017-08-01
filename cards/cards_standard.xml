@@ -4773,7 +4773,7 @@
     <skill id="evade" x="1" />
     <skill id="pierce" x="1" />
     <type>2</type>
-    <set>1000</set>
+    <set>1100</set>
     <release_set>1</release_set>
     <upgrade>
       <level>2</level>
@@ -4812,7 +4812,7 @@
     <skill id="evade" x="2" />
     <skill id="pierce" x="4" />
     <type>2</type>
-    <set>1000</set>
+    <set>1100</set>
     <release_set>1</release_set>
     <upgrade>
       <level>2</level>
@@ -4852,7 +4852,7 @@
     <skill id="pierce" x="5" />
     <skill id="poison" x="2" />
     <type>2</type>
-    <set>1000</set>
+    <set>1100</set>
     <release_set>1</release_set>
     <upgrade>
       <level>2</level>
@@ -5227,6 +5227,121 @@
       <skill id="fervor" x="2" y="7" />
       <skill id="poison" x="5" />
       <skill id="leech" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>1333</id>
+    <card_type>2</card_type>
+    <name>Steelcat Mechanist</name>
+    <picture>Goblin_Sabertooth_Mech_A</picture>
+    <asset_bundle>38</asset_bundle>
+    <attack>1</attack>
+    <health>5</health>
+    <cost>0</cost>
+    <rarity>3</rarity>
+    <skill id="enfeeble" x="1" />
+    <skill id="burn" x="1" />
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <set>1000</set>
+    <upgrade>
+      <level>2</level>
+      <health>6</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="enfeeble" x="1" />
+      <skill id="burn" x="1" />
+      <skill id="weaken" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="enfeeble" x="2" />
+      <skill id="burn" x="1" />
+      <skill id="weaken" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>7</health>
+    </upgrade>
+    <desc>Warm kitty, metal kitty, little ball of burns- Mad kitty! Fierce Kitty?! BURNS BURNS BURNS!!!</desc>
+  </unit>
+  <unit>
+    <id>11333</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Steamcat Mechanist</name>
+    <picture>Goblin_Sabertooth_Mech_A</picture>
+    <asset_bundle>38</asset_bundle>
+    <attack>1</attack>
+    <health>7</health>
+    <cost>0</cost>
+    <rarity>3</rarity>
+    <skill id="enfeeble" x="2" />
+    <skill id="burn" x="2" />
+    <skill id="weaken" x="1" />
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <set>1000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="enfeeble" x="2" />
+      <skill id="burn" x="2" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>8</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="enfeeble" x="2" />
+      <skill id="burn" x="2" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="enfeeble" x="3" />
+      <skill id="burn" x="2" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>21333</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Sabercat Mechanist</name>
+    <picture>Goblin_Sabertooth_Mech_B</picture>
+    <asset_bundle>38</asset_bundle>
+    <attack>1</attack>
+    <health>9</health>
+    <cost>0</cost>
+    <rarity>3</rarity>
+    <skill id="enfeeble" x="3" />
+    <skill id="burn" x="2" />
+    <skill id="weaken" x="3" />
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <set>1000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>2</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="enfeeble" x="3" />
+      <skill id="burn" x="2" />
+      <skill id="weaken" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="enfeeble" x="3" />
+      <skill id="burn" x="3" />
+      <skill id="weaken" x="4" />
     </upgrade>
   </unit>
   <!-- Legendarys BEGIN - 1340 -->
@@ -7261,7 +7376,7 @@
     <skill id="rally" x="1" y="3" />
     <skill id="pierce" x="1" />
     <type>3</type>
-    <set>1000</set>
+    <set>1100</set>
     <release_set>1</release_set>
     <upgrade>
       <level>2</level>
@@ -7300,7 +7415,7 @@
     <skill id="rally" x="1" all="1" y="3" />
     <skill id="pierce" x="3" />
     <type>3</type>
-    <set>1000</set>
+    <set>1100</set>
     <release_set>1</release_set>
     <upgrade>
       <level>2</level>
@@ -7337,7 +7452,7 @@
     <skill id="rally" x="1" all="1" y="3" />
     <skill id="pierce" x="4" />
     <type>3</type>
-    <set>1000</set>
+    <set>1100</set>
     <release_set>1</release_set>
     <upgrade>
       <level>2</level>
@@ -7374,7 +7489,7 @@
     <skill id="rally" x="1" y="3" />
     <skill id="protect" x="1" y="3" />
     <type>3</type>
-    <set>1000</set>
+    <set>1100</set>
     <release_set>1</release_set>
     <upgrade>
       <level>2</level>
@@ -7413,7 +7528,7 @@
     <skill id="rally" x="2" all="1" y="3" />
     <skill id="protect" x="3" y="3" />
     <type>3</type>
-    <set>1000</set>
+    <set>1100</set>
     <release_set>1</release_set>
     <upgrade>
       <level>2</level>
@@ -7450,7 +7565,7 @@
     <skill id="protect" x="4" y="3" />
     <skill id="fervor" x="1" y="3" />
     <type>3</type>
-    <set>1000</set>
+    <set>1100</set>
     <release_set>1</release_set>
     <upgrade>
       <level>2</level>
@@ -8187,6 +8302,233 @@
       <level>5</level>
       <skill id="rally" x="4" y="7" />
       <skill id="protect" x="2" y="3" all="1" />
+      <skill id="leech" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>1633</id>
+    <card_type>2</card_type>
+    <name>Leafback</name>
+    <picture>Invisible_Crawler_Insect_A</picture>
+    <asset_bundle>38</asset_bundle>
+    <attack>4</attack>
+    <health>13</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="heal" x="3" y="13" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>13</sub_type>
+    <set>1000</set>
+    <upgrade>
+      <level>2</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="heal" x="4" y="13" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="heal" x="4" y="13" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <desc>"Stalking its prey among the leaves, the Leafback has been the end of quite a few Entomologists." - Stanley, Insect Lover</desc>
+  </unit>
+  <unit>
+    <id>11633</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Predator Leafback</name>
+    <picture>Invisible_Crawler_Insect_A</picture>
+    <asset_bundle>38</asset_bundle>
+    <attack>5</attack>
+    <health>15</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="heal" x="4" y="13" />
+    <skill id="berserk" x="2" />
+    <type>3</type>
+    <sub_type>13</sub_type>
+    <set>1000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="1" />
+      <skill id="heal" x="5" y="13" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>21633</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Primal Leafback</name>
+    <picture>Invisible_Crawler_Insect_B</picture>
+    <asset_bundle>38</asset_bundle>
+    <attack>6</attack>
+    <health>18</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="heal" x="5" y="13" />
+    <skill id="berserk" x="2" />
+    <type>3</type>
+    <sub_type>13</sub_type>
+    <set>1000</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="2" />
+      <skill id="heal" x="5" y="13" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="2" />
+      <skill id="heal" x="6" y="13" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>1634</id>
+    <card_type>2</card_type>
+    <name>Brightshoal Warrior</name>
+    <picture>Merfolk_Monster_Warrior_A</picture>
+    <asset_bundle>38</asset_bundle>
+    <attack>4</attack>
+    <health>9</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="1" />
+    <skill id="valor" x="2" />
+    <skill id="leech" x="2" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <set>1000</set>
+    <upgrade>
+      <level>2</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="1" />
+      <skill id="valor" x="3" />
+      <skill id="leech" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>12</health>
+      <skill id="armored" x="2" />
+      <skill id="valor" x="3" />
+      <skill id="leech" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>11634</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Brightshoal Soldier</name>
+    <picture>Merfolk_Monster_Warrior_A</picture>
+    <asset_bundle>38</asset_bundle>
+    <attack>5</attack>
+    <health>12</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="2" />
+    <skill id="valor" x="3" />
+    <skill id="leech" x="3" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <set>1000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="2" />
+      <skill id="valor" x="4" />
+      <skill id="leech" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>13</health>
+      <skill id="armored" x="3" />
+      <skill id="valor" x="4" />
+      <skill id="leech" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="3" />
+      <skill id="valor" x="4" />
+      <skill id="leech" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>21634</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Brightshoal Legionnaire</name>
+    <picture>Merfolk_Monster_Warrior_B</picture>
+    <asset_bundle>38</asset_bundle>
+    <attack>5</attack>
+    <health>14</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="3" />
+    <skill id="valor" x="5" />
+    <skill id="leech" x="4" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <set>1000</set>
+    <upgrade>
+      <level>2</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="3" />
+      <skill id="valor" x="6" />
+      <skill id="leech" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="4" />
+      <skill id="valor" x="6" />
       <skill id="leech" x="5" />
     </upgrade>
   </unit>

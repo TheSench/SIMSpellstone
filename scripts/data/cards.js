@@ -85184,6 +85184,255 @@ var CARDS = {
       },
     }
   },
+  "6146": {
+    "id": "6146",
+    "name": "Dragonfly Runner",
+    "picture": "Dragonfly_Goblin_Bomber_A",
+    "hidden_until": "1501520400000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["11","13"],
+    "health": 9,
+    "attack": 2,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 3,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 10,
+        "skill": [],
+      },
+      "3": {
+        "health": 11,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 4,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 4,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 4,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "16146": {
+    "id": "16146",
+    "name": "Dragonfly Duster",
+    "picture": "Dragonfly_Goblin_Bomber_A",
+    "hidden_until": "1501520400000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["11","13"],
+    "health": 12,
+    "attack": 2,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 4,
+      },
+      {
+        "id": "strike",
+        "x": 2,
+      },
+      {
+        "id": "strike",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 3,
+        "skill": [],
+      },
+      "3": {
+        "health": 13,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 5,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 5,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 5,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "26146": {
+    "id": "26146",
+    "name": "Dragonfly Bomber",
+    "picture": "Dragonfly_Goblin_Bomber_B",
+    "hidden_until": "1501520400000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["11","13"],
+    "health": 14,
+    "attack": 3,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 5,
+      },
+      {
+        "id": "strike",
+        "x": 3,
+      },
+      {
+        "id": "strike",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 15,
+        "skill": [],
+      },
+      "3": {
+        "attack": 4,
+        "skill": [],
+      },
+      "4": {
+        "health": 16,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 6,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 6,
+          },
+          {
+            "id": "strike",
+            "x": 4,
+          },
+          {
+            "id": "strike",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
   "7000": {
     "id": "7000",
     "name": "Treant King",
@@ -122162,7 +122411,7 @@ var CARDS = {
     "card_type": "2",
     "type": "3",
     "sub_type": [],
-    "health": 32,
+    "health": 33,
     "attack": 9,
     "cost": 3,
     "maxLevel": 7,
@@ -122184,7 +122433,7 @@ var CARDS = {
     ],
     "upgrades": {
       "2": {
-        "health": 35,
+        "health": 36,
         "skill": [],
       },
       "3": {
@@ -122229,11 +122478,11 @@ var CARDS = {
       },
       "6": {
         "attack": 11,
-        "health": 37,
+        "health": 38,
         "skill": [],
       },
       "7": {
-        "health": 38,
+        "health": 40,
         "skill": [
           {
             "id": "evade",
@@ -122262,7 +122511,7 @@ var CARDS = {
     "card_type": "2",
     "type": "1",
     "sub_type": [],
-    "health": 29,
+    "health": 32,
     "attack": 8,
     "cost": 3,
     "maxLevel": 7,
@@ -122301,11 +122550,11 @@ var CARDS = {
       },
       "3": {
         "attack": 9,
-        "health": 30,
+        "health": 34,
         "skill": [],
       },
       "4": {
-        "health": 31,
+        "health": 36,
         "skill": [
           {
             "id": "armored",
@@ -122323,7 +122572,7 @@ var CARDS = {
         ],
       },
       "5": {
-        "health": 32,
+        "health": 38,
         "skill": [
           {
             "id": "armored",
@@ -122342,15 +122591,15 @@ var CARDS = {
       },
       "6": {
         "attack": 10,
-        "health": 34,
+        "health": 40,
         "skill": [],
       },
       "7": {
-        "health": 35,
+        "health": 42,
         "skill": [
           {
             "id": "armored",
-            "x": 5,
+            "x": 8,
           },
           {
             "id": "protect",
@@ -122374,14 +122623,14 @@ var CARDS = {
     "card_type": "2",
     "type": "2",
     "sub_type": [],
-    "health": 26,
-    "attack": 6,
+    "health": 33,
+    "attack": 9,
     "cost": 3,
     "maxLevel": 7,
     "skill": [
       {
         "id": "counter",
-        "x": 5,
+        "x": 6,
       },
       {
         "id": "strike",
@@ -122389,87 +122638,88 @@ var CARDS = {
         "all": "1",
       },
       {
-        "id": "burn",
+        "id": "scorchbreath",
         "x": 3,
       },
     ],
     "upgrades": {
       "2": {
-        "health": 27,
+        "health": 34,
         "skill": [
           {
             "id": "counter",
-            "x": 5,
+            "x": 7,
           },
           {
             "id": "strike",
-            "x": 3,
+            "x": 4,
             "all": "1",
           },
           {
-            "id": "burn",
-            "x": 4,
+            "id": "scorchbreath",
+            "x": 3,
           },
         ],
       },
       "3": {
+        "attack": 10,
         "skill": [
           {
             "id": "counter",
-            "x": 6,
+            "x": 7,
           },
           {
             "id": "strike",
-            "x": 3,
+            "x": 4,
             "all": "1",
           },
           {
-            "id": "burn",
-            "x": 4,
+            "id": "scorchbreath",
+            "x": 3,
           },
         ],
       },
       "4": {
-        "attack": 7,
-        "health": 29,
+        "attack": 11,
+        "health": 36,
         "skill": [],
       },
       "5": {
         "skill": [
           {
             "id": "counter",
-            "x": 7,
+            "x": 8,
           },
           {
             "id": "strike",
-            "x": 3,
+            "x": 4,
             "all": "1",
           },
           {
-            "id": "burn",
+            "id": "scorchbreath",
             "x": 4,
           },
         ],
       },
       "6": {
-        "attack": 8,
-        "health": 31,
+        "attack": 12,
+        "health": 37,
         "skill": [],
       },
       "7": {
-        "health": 33,
+        "health": 38,
         "skill": [
           {
             "id": "counter",
-            "x": 7,
+            "x": 8,
           },
           {
             "id": "strike",
-            "x": 4,
+            "x": 5,
             "all": "1",
           },
           {
-            "id": "burn",
+            "id": "scorchbreath",
             "x": 5,
           },
         ],
@@ -126032,7 +126282,7 @@ var CARDS = {
     "type": "2",
     "sub_type": ["9"],
     "health": 24,
-    "attack": 5,
+    "attack": 6,
     "cost": 2,
     "maxLevel": 7,
     "skill": [
@@ -126091,10 +126341,12 @@ var CARDS = {
         ],
       },
       "6": {
-        "attack": 6,
+        "attack": 7,
+        "health": 29,
         "skill": [],
       },
       "7": {
+        "health": 31,
         "skill": [
           {
             "id": "frost",
@@ -133432,7 +133684,7 @@ var CARDS = {
     ],
     "upgrades": {
       "2": {
-        "health": 30,
+        "health": 31,
         "skill": [],
       },
       "3": {
@@ -133453,10 +133705,11 @@ var CARDS = {
         ],
       },
       "4": {
-        "health": 32,
+        "health": 33,
         "skill": [],
       },
       "5": {
+        "health": 35,
         "skill": [
           {
             "id": "fury",
@@ -148172,7 +148425,7 @@ var CARDS = {
     "name": "Shadow Assassin",
     "picture": "Invisible_Assassin_A",
     "rarity": "3",
-    "set": "1000",
+    "set": "1100",
     "card_type": "2",
     "type": "2",
     "sub_type": [],
@@ -148248,7 +148501,7 @@ var CARDS = {
     "name": "Shade Assassin",
     "picture": "Invisible_Assassin_B",
     "rarity": "3",
-    "set": "1000",
+    "set": "1100",
     "card_type": "2",
     "type": "2",
     "sub_type": [],
@@ -148326,7 +148579,7 @@ var CARDS = {
     "name": "Invisible Assassin",
     "picture": "Invisible_Assassin_C",
     "rarity": "3",
-    "set": "1000",
+    "set": "1100",
     "card_type": "2",
     "type": "2",
     "sub_type": [],
@@ -149017,6 +149270,225 @@ var CARDS = {
           {
             "id": "leech",
             "x": 6,
+          },
+        ],
+      },
+    }
+  },
+  "1333": {
+    "id": "1333",
+    "name": "Steelcat Mechanist",
+    "desc": "Warm kitty, metal kitty, little ball of burns- Mad kitty! Fierce Kitty?! BURNS BURNS BURNS!!!",
+    "picture": "Goblin_Sabertooth_Mech_A",
+    "rarity": "3",
+    "set": "1000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["11"],
+    "health": 5,
+    "attack": 1,
+    "cost": 0,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 1,
+      },
+      {
+        "id": "burn",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 6,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 1,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 2,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+          },
+        ],
+      },
+      "5": {
+        "health": 7,
+        "skill": [],
+      },
+    }
+  },
+  "11333": {
+    "id": "11333",
+    "name": "Steamcat Mechanist",
+    "picture": "Goblin_Sabertooth_Mech_A",
+    "rarity": "3",
+    "set": "1000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["11"],
+    "health": 7,
+    "attack": 1,
+    "cost": 0,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 2,
+      },
+      {
+        "id": "burn",
+        "x": 2,
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 2,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+          },
+        ],
+      },
+      "3": {
+        "health": 8,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 2,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 3,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "21333": {
+    "id": "21333",
+    "name": "Sabercat Mechanist",
+    "picture": "Goblin_Sabertooth_Mech_B",
+    "rarity": "3",
+    "set": "1000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["11"],
+    "health": 9,
+    "attack": 1,
+    "cost": 0,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 3,
+      },
+      {
+        "id": "burn",
+        "x": 2,
+      },
+      {
+        "id": "weaken",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 2,
+        "skill": [],
+      },
+      "3": {
+        "health": 10,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 3,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "weaken",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 3,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+          {
+            "id": "weaken",
+            "x": 4,
           },
         ],
       },
@@ -152296,7 +152768,7 @@ var CARDS = {
     "name": "Ferocious Clawkin",
     "picture": "Bear_Warrior_A",
     "rarity": "3",
-    "set": "1000",
+    "set": "1100",
     "card_type": "2",
     "type": "3",
     "sub_type": [],
@@ -152380,7 +152852,7 @@ var CARDS = {
     "name": "Mighty Clawkin",
     "picture": "Bear_Warrior_B",
     "rarity": "3",
-    "set": "1000",
+    "set": "1100",
     "card_type": "2",
     "type": "3",
     "sub_type": [],
@@ -152448,7 +152920,7 @@ var CARDS = {
     "name": "Clawkin Elite",
     "picture": "Bear_Warrior_C",
     "rarity": "3",
-    "set": "1000",
+    "set": "1100",
     "card_type": "2",
     "type": "3",
     "sub_type": [],
@@ -152525,7 +152997,7 @@ var CARDS = {
     "name": "Tusker",
     "picture": "Oliphant_A",
     "rarity": "3",
-    "set": "1000",
+    "set": "1100",
     "card_type": "2",
     "type": "3",
     "sub_type": [],
@@ -152605,7 +153077,7 @@ var CARDS = {
     "name": "Olitusker",
     "picture": "Oliphant_B",
     "rarity": "3",
-    "set": "1000",
+    "set": "1100",
     "card_type": "2",
     "type": "3",
     "sub_type": [],
@@ -152677,7 +153149,7 @@ var CARDS = {
     "name": "Wartusker",
     "picture": "Oliphant_C",
     "rarity": "3",
-    "set": "1000",
+    "set": "1100",
     "card_type": "2",
     "type": "3",
     "sub_type": [],
@@ -154092,6 +154564,426 @@ var CARDS = {
             "x": 2,
             "y": "3",
             "all": "1",
+          },
+          {
+            "id": "leech",
+            "x": 5,
+          },
+        ],
+      },
+    }
+  },
+  "1633": {
+    "id": "1633",
+    "name": "Leafback",
+    "desc": "\"Stalking its prey among the leaves, the Leafback has been the end of quite a few Entomologists.\" - Stanley, Insect Lover",
+    "picture": "Invisible_Crawler_Insect_A",
+    "rarity": "3",
+    "set": "1000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["13"],
+    "health": 13,
+    "attack": 4,
+    "cost": 2,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 3,
+        "y": "13",
+      },
+      {
+        "id": "berserk",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 4,
+            "y": "13",
+          },
+          {
+            "id": "berserk",
+            "x": 1,
+          },
+        ],
+      },
+      "4": {
+        "attack": 5,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 4,
+            "y": "13",
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "11633": {
+    "id": "11633",
+    "name": "Predator Leafback",
+    "picture": "Invisible_Crawler_Insect_A",
+    "rarity": "3",
+    "set": "1000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["13"],
+    "health": 15,
+    "attack": 5,
+    "cost": 2,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "heal",
+        "x": 4,
+        "y": "13",
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 16,
+        "skill": [],
+      },
+      "3": {
+        "health": 17,
+        "skill": [],
+      },
+      "4": {
+        "attack": 6,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "heal",
+            "x": 5,
+            "y": "13",
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+    }
+  },
+  "21633": {
+    "id": "21633",
+    "name": "Primal Leafback",
+    "picture": "Invisible_Crawler_Insect_B",
+    "rarity": "3",
+    "set": "1000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["13"],
+    "health": 18,
+    "attack": 6,
+    "cost": 2,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "heal",
+        "x": 5,
+        "y": "13",
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 7,
+        "health": 19,
+        "skill": [],
+      },
+      "3": {
+        "health": 20,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "heal",
+            "x": 5,
+            "y": "13",
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "heal",
+            "x": 6,
+            "y": "13",
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "1634": {
+    "id": "1634",
+    "name": "Brightshoal Warrior",
+    "picture": "Merfolk_Monster_Warrior_A",
+    "rarity": "3",
+    "set": "1000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["12"],
+    "health": 9,
+    "attack": 4,
+    "cost": 1,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "valor",
+        "x": 2,
+      },
+      {
+        "id": "leech",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 10,
+        "skill": [],
+      },
+      "3": {
+        "health": 11,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 1,
+          },
+          {
+            "id": "valor",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "health": 12,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "valor",
+            "x": 3,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "11634": {
+    "id": "11634",
+    "name": "Brightshoal Soldier",
+    "picture": "Merfolk_Monster_Warrior_A",
+    "rarity": "3",
+    "set": "1000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["12"],
+    "health": 12,
+    "attack": 5,
+    "cost": 1,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "valor",
+        "x": 3,
+      },
+      {
+        "id": "leech",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "valor",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+      "3": {
+        "health": 13,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "valor",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 14,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "valor",
+            "x": 4,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "21634": {
+    "id": "21634",
+    "name": "Brightshoal Legionnaire",
+    "picture": "Merfolk_Monster_Warrior_B",
+    "rarity": "3",
+    "set": "1000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["12"],
+    "health": 14,
+    "attack": 5,
+    "cost": 1,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 3,
+      },
+      {
+        "id": "valor",
+        "x": 5,
+      },
+      {
+        "id": "leech",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 15,
+        "skill": [],
+      },
+      "3": {
+        "health": 16,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "valor",
+            "x": 6,
+          },
+          {
+            "id": "leech",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "valor",
+            "x": 6,
           },
           {
             "id": "leech",
@@ -168977,22 +169869,7 @@ var CARDS = {
   "9996": {
     "id": "9996",
     "name": "Unused Art",
-    "picture": "Dragonfly_Goblin_Bomber_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19996": {
-    "id": "19996",
-    "name": "Unused Art",
-    "picture": "Dragonfly_Goblin_Bomber_B",
+    "picture": "Elyse_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169007,7 +169884,22 @@ var CARDS = {
   "9995": {
     "id": "9995",
     "name": "Unused Art",
-    "picture": "Elyse_A",
+    "picture": "Firecracker_Goblin_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19995": {
+    "id": "19995",
+    "name": "Unused Art",
+    "picture": "Firecracker_Goblin_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169022,7 +169914,7 @@ var CARDS = {
   "9994": {
     "id": "9994",
     "name": "Unused Art",
-    "picture": "Firecracker_Goblin_A",
+    "picture": "Frog_Guardian_Dragon_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169037,22 +169929,7 @@ var CARDS = {
   "19994": {
     "id": "19994",
     "name": "Unused Art",
-    "picture": "Firecracker_Goblin_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9993": {
-    "id": "9993",
-    "name": "Unused Art",
-    "picture": "Frog_Guardian_Dragon_A",
+    "picture": "Frog_Guardian_Dragon_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169067,7 +169944,7 @@ var CARDS = {
   "19993": {
     "id": "19993",
     "name": "Unused Art",
-    "picture": "Frog_Guardian_Dragon_B",
+    "picture": "Frost_Bite_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169079,10 +169956,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19992": {
-    "id": "19992",
+  "9992": {
+    "id": "9992",
     "name": "Unused Art",
-    "picture": "Frost_Bite_B",
+    "picture": "General_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169097,7 +169974,22 @@ var CARDS = {
   "9991": {
     "id": "9991",
     "name": "Unused Art",
-    "picture": "General_A",
+    "picture": "Giant_Mosquito_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19991": {
+    "id": "19991",
+    "name": "Unused Art",
+    "picture": "Giant_Mosquito_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169112,7 +170004,7 @@ var CARDS = {
   "9990": {
     "id": "9990",
     "name": "Unused Art",
-    "picture": "Giant_Mosquito_A",
+    "picture": "Goblin_Bard_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169127,7 +170019,7 @@ var CARDS = {
   "19990": {
     "id": "19990",
     "name": "Unused Art",
-    "picture": "Giant_Mosquito_B",
+    "picture": "Goblin_Bard_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169142,7 +170034,7 @@ var CARDS = {
   "9989": {
     "id": "9989",
     "name": "Unused Art",
-    "picture": "Goblin_Bard_A",
+    "picture": "Goblin_Bird_Tamer_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169157,7 +170049,7 @@ var CARDS = {
   "19989": {
     "id": "19989",
     "name": "Unused Art",
-    "picture": "Goblin_Bard_B",
+    "picture": "Goblin_Bird_Tamer_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169172,7 +170064,7 @@ var CARDS = {
   "9988": {
     "id": "9988",
     "name": "Unused Art",
-    "picture": "Goblin_Bird_Tamer_A",
+    "picture": "Goblin_Blacksmith_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169187,7 +170079,7 @@ var CARDS = {
   "19988": {
     "id": "19988",
     "name": "Unused Art",
-    "picture": "Goblin_Bird_Tamer_B",
+    "picture": "Goblin_Blacksmith_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169202,7 +170094,7 @@ var CARDS = {
   "9987": {
     "id": "9987",
     "name": "Unused Art",
-    "picture": "Goblin_Blacksmith_A",
+    "picture": "Goblin_Boomerang_Master_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169217,7 +170109,7 @@ var CARDS = {
   "19987": {
     "id": "19987",
     "name": "Unused Art",
-    "picture": "Goblin_Blacksmith_B",
+    "picture": "Goblin_Boomerang_Master_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169232,7 +170124,7 @@ var CARDS = {
   "9986": {
     "id": "9986",
     "name": "Unused Art",
-    "picture": "Goblin_Boomerang_Master_A",
+    "picture": "Goblin_Brigand_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169247,7 +170139,7 @@ var CARDS = {
   "19986": {
     "id": "19986",
     "name": "Unused Art",
-    "picture": "Goblin_Boomerang_Master_B",
+    "picture": "Goblin_Brigand_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169262,7 +170154,7 @@ var CARDS = {
   "9985": {
     "id": "9985",
     "name": "Unused Art",
-    "picture": "Goblin_Brigand_A",
+    "picture": "Goblin_Butcherer_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169277,7 +170169,7 @@ var CARDS = {
   "19985": {
     "id": "19985",
     "name": "Unused Art",
-    "picture": "Goblin_Brigand_B",
+    "picture": "Goblin_Butcherer_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169292,7 +170184,7 @@ var CARDS = {
   "9984": {
     "id": "9984",
     "name": "Unused Art",
-    "picture": "Goblin_Butcherer_A",
+    "picture": "Goblin_Frog_Dark_Magic_Team_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169307,7 +170199,7 @@ var CARDS = {
   "19984": {
     "id": "19984",
     "name": "Unused Art",
-    "picture": "Goblin_Butcherer_B",
+    "picture": "Goblin_Frog_Dark_Magic_Team_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169322,7 +170214,7 @@ var CARDS = {
   "9983": {
     "id": "9983",
     "name": "Unused Art",
-    "picture": "Goblin_Frog_Dark_Magic_Team_A",
+    "picture": "Goblin_Hypnotist_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169337,7 +170229,7 @@ var CARDS = {
   "19983": {
     "id": "19983",
     "name": "Unused Art",
-    "picture": "Goblin_Frog_Dark_Magic_Team_B",
+    "picture": "Goblin_Hypnotist_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169352,7 +170244,7 @@ var CARDS = {
   "9982": {
     "id": "9982",
     "name": "Unused Art",
-    "picture": "Goblin_Hypnotist_A",
+    "picture": "Goblin_Mutant_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169367,7 +170259,7 @@ var CARDS = {
   "19982": {
     "id": "19982",
     "name": "Unused Art",
-    "picture": "Goblin_Hypnotist_B",
+    "picture": "Goblin_Mutant_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169382,7 +170274,7 @@ var CARDS = {
   "9981": {
     "id": "9981",
     "name": "Unused Art",
-    "picture": "Goblin_Mutant_A",
+    "picture": "Goblin_Sand_Witch_Elemental_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169397,7 +170289,7 @@ var CARDS = {
   "19981": {
     "id": "19981",
     "name": "Unused Art",
-    "picture": "Goblin_Mutant_B",
+    "picture": "Goblin_Sand_Witch_Elemental_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169412,7 +170304,7 @@ var CARDS = {
   "9980": {
     "id": "9980",
     "name": "Unused Art",
-    "picture": "Goblin_Sand_Witch_Elemental_A",
+    "picture": "Goblin_War_Drummer_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169427,7 +170319,7 @@ var CARDS = {
   "19980": {
     "id": "19980",
     "name": "Unused Art",
-    "picture": "Goblin_Sand_Witch_Elemental_B",
+    "picture": "Goblin_War_Drummer_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169442,7 +170334,7 @@ var CARDS = {
   "9979": {
     "id": "9979",
     "name": "Unused Art",
-    "picture": "Goblin_War_Drummer_A",
+    "picture": "Merman_Guardian_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169457,37 +170349,22 @@ var CARDS = {
   "19979": {
     "id": "19979",
     "name": "Unused Art",
-    "picture": "Goblin_War_Drummer_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9978": {
-    "id": "9978",
-    "name": "Unused Art",
-    "picture": "Merman_Guardian_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19978": {
-    "id": "19978",
-    "name": "Unused Art",
     "picture": "Merman_Guardian_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "29978": {
+    "id": "29978",
+    "name": "Unused Art",
+    "picture": "Monster_C",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169502,21 +170379,6 @@ var CARDS = {
   "29977": {
     "id": "29977",
     "name": "Unused Art",
-    "picture": "Monster_C",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29976": {
-    "id": "29976",
-    "name": "Unused Art",
     "picture": "Mythic_Avian_C",
     "rarity": "0",
     "card_type": "2",
@@ -169529,10 +170391,25 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19975": {
-    "id": "19975",
+  "19976": {
+    "id": "19976",
     "name": "Unused Art",
     "picture": "Mythic_Dragon_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9975": {
+    "id": "9975",
+    "name": "Unused Art",
+    "picture": "Mythic_Seafolk_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169547,7 +170424,7 @@ var CARDS = {
   "9974": {
     "id": "9974",
     "name": "Unused Art",
-    "picture": "Mythic_Seafolk_A",
+    "picture": "Oda_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169559,10 +170436,25 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9973": {
-    "id": "9973",
+  "19974": {
+    "id": "19974",
     "name": "Unused Art",
-    "picture": "Oda_A",
+    "picture": "Oda_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "29974": {
+    "id": "29974",
+    "name": "Unused Art",
+    "picture": "Oda_C",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169577,7 +170469,7 @@ var CARDS = {
   "19973": {
     "id": "19973",
     "name": "Unused Art",
-    "picture": "Oda_B",
+    "picture": "Promo_Dragon_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169589,10 +170481,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29973": {
-    "id": "29973",
+  "9972": {
+    "id": "9972",
     "name": "Unused Art",
-    "picture": "Oda_C",
+    "picture": "Seraph_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169607,7 +170499,7 @@ var CARDS = {
   "19972": {
     "id": "19972",
     "name": "Unused Art",
-    "picture": "Promo_Dragon_B",
+    "picture": "Seraph_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169622,7 +170514,7 @@ var CARDS = {
   "9971": {
     "id": "9971",
     "name": "Unused Art",
-    "picture": "Seraph_A",
+    "picture": "Spiky_Bug_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169637,7 +170529,7 @@ var CARDS = {
   "19971": {
     "id": "19971",
     "name": "Unused Art",
-    "picture": "Seraph_B",
+    "picture": "Spiky_Bug_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169652,22 +170544,7 @@ var CARDS = {
   "9970": {
     "id": "9970",
     "name": "Unused Art",
-    "picture": "Spiky_Bug_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19970": {
-    "id": "19970",
-    "name": "Unused Art",
-    "picture": "Spiky_Bug_B",
+    "picture": "Tarian_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169682,7 +170559,7 @@ var CARDS = {
   "9969": {
     "id": "9969",
     "name": "Unused Art",
-    "picture": "Tarian_A",
+    "picture": "Tremor_Wurm_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169697,7 +170574,7 @@ var CARDS = {
   "9968": {
     "id": "9968",
     "name": "Unused Art",
-    "picture": "Tremor_Wurm_A",
+    "picture": "Unused1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169712,7 +170589,7 @@ var CARDS = {
   "9967": {
     "id": "9967",
     "name": "Unused Art",
-    "picture": "Unused1_A",
+    "picture": "Unused2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169727,7 +170604,7 @@ var CARDS = {
   "9966": {
     "id": "9966",
     "name": "Unused Art",
-    "picture": "Unused2_A",
+    "picture": "Unused3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169742,7 +170619,7 @@ var CARDS = {
   "9965": {
     "id": "9965",
     "name": "Unused Art",
-    "picture": "Unused3_A",
+    "picture": "Ursurio_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169757,7 +170634,7 @@ var CARDS = {
   "9964": {
     "id": "9964",
     "name": "Unused Art",
-    "picture": "Ursurio_A",
+    "picture": "Void_Abomination_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -169772,21 +170649,6 @@ var CARDS = {
   "9963": {
     "id": "9963",
     "name": "Unused Art",
-    "picture": "Void_Abomination_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9962": {
-    "id": "9962",
-    "name": "Unused Art",
     "picture": "Yuriel_A",
     "rarity": "0",
     "card_type": "2",
@@ -169800,4 +170662,4 @@ var CARDS = {
     "upgrades": {}
   },
 };
-var CardsUpdated = 1501246258677.84;
+var CardsUpdated = 1501551974575.13;

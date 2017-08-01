@@ -2051,6 +2051,21 @@
       <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="13" set="3000,4000" number="2" />
     </cards>
   </store_item>
+  <store_item>
+    <id>3061</id>
+    <name>Double Goblin Epic Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two guaranteed ^c0DFFEpic^cFFFF+ Goblin cards from Premium set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000,4000" />
+    </cards>
+  </store_item>
   <!-- ======================================= -->
   <!-- ==== Emporium & Arena Market Items ==== -->
   <!-- ======================================= -->

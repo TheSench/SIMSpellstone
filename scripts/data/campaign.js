@@ -1013,6 +1013,13 @@ var CAMPAIGNS = {
     "location_id": "4",
     "missions": ["241","242","243","244"]
   },
+  "3009": {
+    "id": "3009",
+    "name": "Reality Distorts...",
+    "location_id": "4",
+    "battleground_id": "2015",
+    "missions": ["5620","5621","5622","5623"]
+  },
   "25": {
     "id": "25",
     "name": "Swamp Lands",
