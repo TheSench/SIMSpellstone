@@ -18241,4 +18241,124 @@
       <skill id="flurry" c="4" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5146</id>
+    <card_type>2</card_type>
+    <name>Lullmage Whisperer</name>
+    <picture>Goblin_Frog_Dark_Magic_Team_A</picture>
+    <asset_bundle>100</asset_bundle>
+    <hidden_until_time>1501779600</hidden_until_time>
+    <attack>4</attack>
+    <health>16</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="rally" x="2" y="11" />
+    <skill id="frost" x="1" />
+    <skill id="nullify" x="1" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="rally" x="2" y="11" />
+      <skill id="frost" x="2" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>19</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15146</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Lullmage Divulger</name>
+    <picture>Goblin_Frog_Dark_Magic_Team_A</picture>
+    <asset_bundle>100</asset_bundle>
+    <hidden_until_time>1501779600</hidden_until_time>
+    <attack>4</attack>
+    <health>20</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="rally" x="2" y="11" />
+    <skill id="frost" x="2" />
+    <skill id="nullify" x="1" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="rally" x="3" y="11" />
+      <skill id="frost" x="2" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="rally" x="3" y="11" />
+      <skill id="frost" x="2" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>21</health>
+      <skill id="rally" x="3" y="11" />
+      <skill id="frost" x="3" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>22</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25146</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Lullmage Evoker</name>
+    <picture>Goblin_Frog_Dark_Magic_Team_B</picture>
+    <asset_bundle>100</asset_bundle>
+    <hidden_until_time>1501779600</hidden_until_time>
+    <attack>4</attack>
+    <health>23</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="rally" x="3" y="11" />
+    <skill id="frost" x="3" />
+    <skill id="nullify" x="2" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="rally" x="4" y="11" />
+      <skill id="frost" x="3" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="rally" x="4" y="11" />
+      <skill id="frost" x="3" />
+      <skill id="nullify" x="3" />
+    </upgrade>
+  </unit>
 </root>

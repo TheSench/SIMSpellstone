@@ -323,6 +323,7 @@
             'flurry', /* Dualstrike */
             'rally', /* Empower */
             'enhance',
+            'enrage',
             'fervor',
             'jam', /* Freeze */
             'frost', /* Frostbreath */

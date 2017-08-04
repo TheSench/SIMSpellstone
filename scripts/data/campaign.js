@@ -1017,6 +1017,7 @@ var CAMPAIGNS = {
     "id": "3009",
     "name": "Reality Distorts...",
     "location_id": "4",
+    "side_mission": "1",
     "battleground_id": "2015",
     "missions": ["5620","5621","5622","5623"]
   },

@@ -5036,6 +5036,7 @@
     <campaign_req id="3001" level="7" />
     <campaign_req id="3002" level="7" />
     <campaign_req id="1127" level="1" />
+    <side_mission>1</side_mission>
     <battleground_id>2015</battleground_id>
     <location_id>4</location_id>
     <show_level>1</show_level>

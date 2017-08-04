@@ -125,6 +125,11 @@ void Main()
 		{"weaken", "activation"}
 	};
 
+	var skillRenames = new Dictionary<string, string>()
+	{
+		{"counterburn", "Counterburn"}
+	};
+
 	var iconRemappings = new Dictionary<string, string>()
 	{
 		{"mark", "eagle_eye"},
@@ -150,12 +155,17 @@ void Main()
 		{
 			icon = node.Element("icon").Value;
 		}
+		string name;
+		if (!skillRenames.TryGetValue(id, out name))
+		{
+			name = Clean(node.Element("name").Value);
+		}
 		skillIconNames.Add(icon);
 
 		return new
 		{
 			id = id,
-			name = Clean(node.Element("name").Value),
+			name = name,
 			desc = Clean(node.Element("desc").Value),
 			icon = icon,
 			type = (skillMappings.ContainsKey(id) ? skillMappings[id] : (node.Element("upkeep") != null ? "earlyActivation" : "activation")),

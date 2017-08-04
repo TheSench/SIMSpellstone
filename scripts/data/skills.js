@@ -42,7 +42,7 @@ var SKILL_DATA = {
 		desc: 'When damaged by an attack, deal damage to attacker'
 	},
 	counterburn : {
-		name: 'Vengence Scorch',
+		name: 'Counterburn',
 		type: 'passive',
 		icon: 'counterburn',
 		desc: 'Deals stacking damage to the enemy across from this creature at end of turn. Wears off if not reapplied for a turn'
@@ -69,7 +69,7 @@ var SKILL_DATA = {
 		name: 'Enrage',
 		type: 'earlyActivation',
 		icon: 'enrage',
-		desc: 'Enrage a random ally creature. Until your next turn, every time the creature takes damage from an Attack, gain Attack permanently.'
+		desc: 'Enrage a random ally creature. Until your next turn, every time the creature takes damage from an Attack, it gains Attack permanently.'
 	},
 	evade : {
 		name: 'Invisibility',
