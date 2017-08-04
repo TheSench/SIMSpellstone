@@ -14,7 +14,7 @@
         SIM_CONTROLLER.getConfiguration();
 
         // Set up battleground effects, if any
-        SIMULATOR.battlegrounds = getBattlegrounds(getbattleground, selfbges, enemybges, mapbges, getcampaign, getraid);
+        SIMULATOR.battlegrounds = getBattlegrounds(getbattleground, selfbges, enemybges, mapbges, getcampaign, missionlevel, getraid, raidlevel);
 
         hideUI();
 

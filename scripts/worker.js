@@ -94,7 +94,7 @@ function initializeSims(params) {
     sims_per_batch = params['sims_per_batch'];
 
     // Set up battleground effects, if any
-    SIMULATOR.battlegrounds = getBattlegrounds(getbattleground, selfbges, enemybges, mapbges, getmission, getraid);
+    SIMULATOR.battlegrounds = getBattlegrounds(getbattleground, selfbges, enemybges, mapbges, getcampaign, missionlevel, getraid, raidlevel);
 
     cache_player_deck_cards = false;
     cache_cpu_deck_cards = false;

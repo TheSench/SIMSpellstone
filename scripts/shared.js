@@ -948,7 +948,7 @@ var MakeTrap = (function () {
     })
 }());
 
-var getBattlegrounds = function (getbattleground, selfbges, enemybges, mapbges, campaignID, raidID) {
+var getBattlegrounds = function (getbattleground, selfbges, enemybges, mapbges, campaignID, missionlevel, raidID, raidlevel) {
 
     // Set up battleground effects, if any
     var battlegrounds = {
@@ -965,36 +965,7 @@ var getBattlegrounds = function (getbattleground, selfbges, enemybges, mapbges, 
     if (campaignID) {
         addMissionBGE(battlegrounds, campaignID, missionlevel);
     } else if (raidID) {
-        var bge_id = RAIDS[raidID].bge;
-        if (bge_id) {
-            var battleground = BATTLEGROUNDS[bge_id];
-            if (battleground && Number(raidlevel) >= Number(battleground.starting_level)) {
-                var enemy_only = battleground.enemy_only;
-
-                for (var j = 0; j < battleground.effect.length; j++) {
-                    var effect = battleground.effect[j];
-                    var effect_type = effect.effect_type;
-                    if (effect_type === "skill") {
-                        if (battleground.scale_with_level) {
-                            var mult = battleground.scale_with_level * (raidlevel - battleground.starting_level + 1);
-                        } else {
-                            var mult = 1;
-                        }
-                        var bge = MakeBattleground(battleground.name, effect, mult);
-                        bge.enemy_only = enemy_only;
-                        battlegrounds.onTurn.push(bge);
-                    } else if (effect_type === "evolve_skill" || effect_type === "add_skill" || effect_type === "scale_attributes") {
-                        var bge = MakeSkillModifier(battleground.name, effect);
-                        bge.enemy_only = enemy_only;
-                        battlegrounds.onCreate.push(bge);
-                    } else if (effect_type === "trap_card") {
-                        var bge = MakeTrap(battleground.name, effect);
-                        bge.enemy_only = enemy_only;
-                        battlegrounds.onCardPlayed.push(bge);
-                    }
-                }
-            }
-        }
+        addRaidBGE(battlegrounds, raidID, raidlevel);
     }
     return battlegrounds;
 }
@@ -1026,6 +997,39 @@ function addMissionBGE(battlegrounds, campaignID, missionLevel) {
                     }
                 }
                 addBgeFromList(battlegrounds, battleground, 'cpu');
+            }
+        }
+    }
+}
+
+function addRaidBGE(battlegrounds, raidID, raidLevel) {
+    var bge_id = RAIDS[raidID].bge;
+    if (bge_id) {
+        var battleground = BATTLEGROUNDS[bge_id];
+        if (battleground && Number(raidLevel) >= Number(battleground.starting_level)) {
+            var enemy_only = battleground.enemy_only;
+
+            for (var j = 0; j < battleground.effect.length; j++) {
+                var effect = battleground.effect[j];
+                var effect_type = effect.effect_type;
+                if (effect_type === "skill") {
+                    if (battleground.scale_with_level) {
+                        var mult = battleground.scale_with_level * (raidLevel - battleground.starting_level + 1);
+                    } else {
+                        var mult = 1;
+                    }
+                    var bge = MakeBattleground(battleground.name, effect, mult);
+                    bge.enemy_only = enemy_only;
+                    battlegrounds.onTurn.push(bge);
+                } else if (effect_type === "evolve_skill" || effect_type === "add_skill" || effect_type === "scale_attributes") {
+                    var bge = MakeSkillModifier(battleground.name, effect);
+                    bge.enemy_only = enemy_only;
+                    battlegrounds.onCreate.push(bge);
+                } else if (effect_type === "trap_card") {
+                    var bge = MakeTrap(battleground.name, effect);
+                    bge.enemy_only = enemy_only;
+                    battlegrounds.onCardPlayed.push(bge);
+                }
             }
         }
     }
