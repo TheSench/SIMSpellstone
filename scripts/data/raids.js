@@ -4367,7 +4367,7 @@
               },
               {
                   "id": "390",
-                  "min_mastery_level": "128"
+                  "min_mastery_level": "126"
               }
             ]
         },
@@ -4642,7 +4642,7 @@
                   "mastery_level": "120"
               },
               {
-                  "id": "8074",
+                  "id": "8088",
                   "mastery_level": "120"
               },
               {
@@ -4654,7 +4654,7 @@
                   "mastery_level": "125"
               },
               {
-                  "id": "8074",
+                  "id": "8088",
                   "mastery_level": "125"
               },
               {
@@ -4678,7 +4678,7 @@
                   "mastery_level": "134"
               },
               {
-                  "id": "8074",
+                  "id": "8088",
                   "mastery_level": "138"
               },
               {
