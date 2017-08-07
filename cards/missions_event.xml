@@ -20433,7 +20433,7 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>skyPirateLadyGoblin</commander>
         <enemy>1</enemy>
         <text>Well lookee here, if it ain't the blond lass that had it out fer my bro.</text>
       </line>
@@ -20469,12 +20469,12 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>skyPirateLadyGoblin</commander>
         <enemy>1</enemy>
         <text>Aye, the name's Xerkahn, an' you're responsible for the death of my lil bro Reks! Did you forget him so soon?</text>
       </line>
       <line>
-        <commander>necromancer</commander>
+        <commander>skyPirateLadyGoblin</commander>
         <enemy>1</enemy>
         <text>An' now you all are havin' a party, yet conveniently didn't invite us goblins, eh.</text>
       </line>
@@ -20563,7 +20563,7 @@
         <text>Boss! Did ya notice? Not ALL the tribes are here. There's another that's missing!</text>
       </line>
       <line>
-        <commander>necromancer</commander>
+        <commander>skyPirateLadyGoblin</commander>
         <enemy>1</enemy>
         <text>Aye. It's safe to say they prob ain't allies, then. And an enemy of my enemy is a potential ally!</text>
       </line>
@@ -20599,7 +20599,7 @@
         <text>The vault's empty, boss! They musta moved the Spellstone Hammer somewhere else.</text>
       </line>
       <line>
-        <commander>necromancer</commander>
+        <commander>skyPirateLadyGoblin</commander>
         <enemy>1</enemy>
         <text>Ya fools! I told you not to come back empty-handed!</text>
       </line>
@@ -20666,12 +20666,12 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>skyPirateLadyGoblin</commander>
         <enemy>1</enemy>
         <text>Tah-tah! Don't worry, I'm sure we'll meet again soon, and with an army of all yer worst enemies!</text>
       </line>
       <line>
-        <commander>necromancer</commander>
+        <commander>skyPirateLadyGoblin</commander>
         <enemy>1</enemy>
         <text>Next time, try to invite more tribes to some celebration that's supposed to be for everyone, eh?!</text>
       </line>

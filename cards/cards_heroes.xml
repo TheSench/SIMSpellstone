@@ -8478,7 +8478,7 @@
     <rarity>5</rarity>
     <skill id="imbue" s="counter" x="6" />
     <skill id="enfeeble" all="1" x="3" />
-    <skill id="strike" x="2" />
+    <skill id="enrage" all="1" y="8" x="2" />
     <type>8</type>
     <set>9999</set>
     <upgrade>
@@ -8489,34 +8489,34 @@
       <level>3</level>
       <skill id="imbue" s="counter" all="1" x="3" />
       <skill id="enfeeble" all="1" x="3" />
-      <skill id="strike" x="2" />
+      <skill id="enrage" all="1" y="8" x="2" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <skill id="imbue" s="counter" all="1" x="3" />
       <skill id="enfeeble" all="1" x="3" />
-      <skill id="strike" x="3" />
+      <skill id="enrage" all="1" y="8" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>84</health>
       <skill id="imbue" s="counter" all="1" x="4" />
       <skill id="enfeeble" all="1" x="3" />
-      <skill id="strike" x="4" />
+      <skill id="enrage" all="1" y="8" x="4" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>88</health>
       <skill id="imbue" s="counter" all="1" x="5" />
       <skill id="enfeeble" all="1" x="3" />
-      <skill id="strike" x="4" />
+      <skill id="enrage" all="1" y="8" x="4" />
     </upgrade>
     <upgrade>
       <level>7</level>
       <health>92</health>
       <skill id="imbue" s="counter" all="1" x="6" />
       <skill id="enfeeble" all="1" x="4" />
-      <skill id="strike" x="5" />
+      <skill id="enrage" all="1" y="8" x="5" />
     </upgrade>
   </unit>
   <unit>
@@ -8723,7 +8723,7 @@
     <id>394</id>
     <card_type>1</card_type>
     <name>Xerkahn, the Vengeant</name>
-    <portrait>necromancer</portrait>
+    <portrait>skyPirateLadyGoblin</portrait>
     <attack>0</attack>
     <health>55</health>
     <rarity>4</rarity>
