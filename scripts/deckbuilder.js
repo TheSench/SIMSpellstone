@@ -79,7 +79,7 @@ var initDeckBuilder = function () {
     $(window).resize(onResize);
 
     window.onwheel = changePage;
-    window.oncontextmenu = hideContext;
+    //window.oncontextmenu = hideContext;
 
     $("#rows").val(storageAPI.getField("deckBuilder", "rows", 3));
     $("#rows").bind("change", function() {
@@ -369,6 +369,8 @@ function addDetailHandler($htmlCards) {
 }
 
 var showDetails = function (event) {
+    event.preventDefault();
+
     var show = false;
     var htmlCard = event.delegateTarget;
     var unit = getUnitFromCard(htmlCard);
@@ -1148,6 +1150,8 @@ var onClickFilter = function (event, filterFunction, altKey) {
 }
 
 var onContextMenu = function (event) {
+    event.preventDefault();
+
     var button = event.target;
     var skill = button.getAttribute("data-filter");
     showAdvancedFilters(skill);
@@ -1705,6 +1709,8 @@ var showAdvancedFilters = function (skill) {
 }
 
 var showCardOptions = function (event) {
+    event.preventDefault();
+
     var show = false;
     var htmlCard = event.delegateTarget;
     var index = $(htmlCard).index() - 1;
