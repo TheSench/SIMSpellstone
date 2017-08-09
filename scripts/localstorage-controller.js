@@ -102,6 +102,12 @@ if (function (type) {
                 storageAPI.setField(SaveFields.decks, "savedDecks", storage);
             }
         }
+
+        window.addEventListener('storage', function (e) {
+            angular.element('#loadDeckDialog').scope().$apply(
+                localStorage.setItem(e.key, e.newValue)
+            );
+        });
     }());
 } else {
     (function () {
