@@ -20471,7 +20471,7 @@
       <line>
         <commander>skyPirateLadyGoblin</commander>
         <enemy>1</enemy>
-        <text>Aye, the name's Xerkahn, an' you're responsible for the death of my lil bro Reks! Did you forget him so soon?</text>
+        <text>Aye, the name's Xerkahn, an' you're responsible for the death of my li'l bro Reks! Did you forget him so soon?</text>
       </line>
       <line>
         <commander>skyPirateLadyGoblin</commander>
@@ -20528,9 +20528,9 @@
       <card id="7090" mastery_level="2" name="Prospector" />
       <card id="6089" mastery_level="3" name="Fire Belcher" />
       <card id="6111" mastery_level="4" name="Aspects of the Ashes" />
-      <card id="5143" mastery_level="5" name="Cedric's Battlesnail" />
+      <card id="2051" mastery_level="5" name="Dune Hopper" />
       <card id="5068" mastery_level="6" name="Aht-Aht Carrier" />
-      <card id="6111" mastery_level="7" name="Aspects of the Ashes" />
+      <card id="2065" mastery_level="7" name="Pinpin, Dragon Handler" />
     </deck>
   </mission>
   <mission>
@@ -20546,12 +20546,12 @@
       <card id="7140" name="Clawgro" />
       <card id="5065" name="Hive Guard" />
       <card id="2063" name="Hob Fletcher" />
-      <card id="6021" name="Marsh Ogre" />
+      <card id="6069" name="Arachnolite" />
       <card id="1628" name="Garganotos" />
       <card id="6066" name="Psychic Beetle" />
       <card id="7140" mastery_level="2" name="Clawgro" />
       <card id="2048" mastery_level="3" name="Sandmite" />
-      <card id="7063" mastery_level="4" name="Poisac Crawler" />
+      <card id="6067" mastery_level="4" name="Gurgitater" />
       <card id="7064" mastery_level="5" name="Willowfly" />
       <card id="6014" mastery_level="6" name="Armored Siegefist" />
       <card id="5092" mastery_level="7" name="Tundra Reaver" />
@@ -20560,7 +20560,7 @@
       <line>
         <commander>goblinraider</commander>
         <enemy>1</enemy>
-        <text>Boss! Did ya notice? Not ALL the tribes are here. There's another that's missing!</text>
+        <text>Captain! Did ya notice? Not ALL the tribes are here. There's another that's missing!</text>
       </line>
       <line>
         <commander>skyPirateLadyGoblin</commander>
@@ -20573,7 +20573,7 @@
     <id>3675</id>
     <name>Thieving Forces</name>
     <energy>9</energy>
-    <desc>A group of goblins bursts through the main plaza, running past the chaos and joining Xerkahn in her fight. One is carrying something wrapped in clothe, the contents hidden from your eyes.</desc>
+    <desc>A group of goblins bursts through the main plaza, running past the chaos and joining Xerkahn in her fight. One is carrying something wrapped in cloth, the contents hidden from your eyes.</desc>
     <commander id="323" />
     <deck>
       <card id="6007" name="Goblin Crew" />
@@ -20587,7 +20587,7 @@
       <card id="2098" name="Cocoon Crawler" />
       <card id="5139" mastery_level="2" name="Loyal Guard" />
       <card id="2099" mastery_level="3" name="White Regemage" />
-      <card id="6008" mastery_level="4" name="Thousand Arm Demon" />
+      <card id="6064" mastery_level="4" name="Dreaded Shock" />
       <card id="6064" mastery_level="5" name="Dreaded Shock" />
       <card id="6092" mastery_level="6" name="Smog Charger" />
       <card id="7088" mastery_level="7" name="Jubjub" />
@@ -20596,7 +20596,7 @@
       <line>
         <commander>Portrait_Goblin_Captain</commander>
         <enemy>1</enemy>
-        <text>The vault's empty, boss! They musta moved the Spellstone Hammer somewhere else.</text>
+        <text>The vault's empty, Captain! They musta moved the Spellstone Hammer somewhere else.</text>
       </line>
       <line>
         <commander>skyPirateLadyGoblin</commander>
@@ -20606,7 +20606,7 @@
       <line>
         <commander>Portrait_Goblin_Captain</commander>
         <enemy>1</enemy>
-        <text>We ain't empty-handed, boss!</text>
+        <text>We ain't empty-handed, Captain!</text>
       </line>
     </speech>
   </mission>
@@ -20715,6 +20715,311 @@
         <commander>elementalhero</commander>
         <enemy>0</enemy>
         <text>They weren't exactly subtle with their plan. Some of us will pursue them, while the rest remain here to help the Insects of Beetleton.</text>
+      </line>
+    </speech>
+  </mission>
+  <!-- Campaign Event 5 -->
+  <!-- Extra Node -->
+  <mission>
+    <id>3679</id>
+    <name>Ancient Technology</name>
+    <energy>9</energy>
+    <desc>The Temple of Pharos is extremely dark and silent. Yet when exposed to electric jellyfish, the machines hum to life. You collect more, seeking to revive the ancient technology of the temple.</desc>
+    <commander id="359" />
+    <deck>
+      <card id="7007" name="Water Serpent" />
+      <card id="7007" name="Water Serpent" />
+      <card id="5017" name="Steam Tempest" />
+      <card id="1010" name="Lightning Elemental" />
+      <card id="1630" name="Giant Squid" />
+      <card id="7109" name="Clownder" />
+      <card id="5030" name="Loxphas Mage" />
+      <card id="6005" name="Gloomkin" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="7107" mastery_level="2" name="Hammer Krab" />
+      <card id="6075" mastery_level="3" name="Consuming Mireling" />
+      <card id="6004" mastery_level="4" name="Branding Construct" />
+      <card id="2076" mastery_level="5" name="Adorabilis" />
+      <card id="7023" mastery_level="6" name="Zolmosh the Fist" />
+      <card id="5105" mastery_level="7" name="Sea Whisperer" />
+    </deck>
+  </mission>
+  <mission>
+    <id>3680</id>
+    <name>Jellyfish Power</name>
+    <energy>9</energy>
+    <desc>The Temple's technology can be directed to aid you in fights around the perimeter of Pharos. Using the power from the jellyfish, you spur the previously inactive machines to do your bidding.</desc>
+    <commander id="344" />
+    <deck>
+      <card id="7007" name="Water Serpent" />
+      <card id="7007" name="Water Serpent" />
+      <card id="7012" name="Life Drake" />
+      <card id="7022" name="Beetle Tamer" />
+      <card id="1630" name="Giant Squid" />
+      <card id="6108" name="Redwater Angler" />
+      <card id="5028" name="Winter Blacksmith" />
+      <card id="6056" name="Potoo" />
+      <card id="1031" name="Noble Champion" />
+      <card id="5108" mastery_level="2" name="Aurora Skimmer" />
+      <card id="7047" mastery_level="3" name="Shaman of the Wild" />
+      <card id="6119" mastery_level="4" name="Shadowy Muse" />
+      <card id="7005" mastery_level="5" name="Tsunamari" />
+      <card id="5105" mastery_level="6" name="Sea Whisperer" />
+      <card id="5105" mastery_level="7" name="Sea Whisperer" />
+    </deck>
+  </mission>
+  <!-- Campaign Event 5 weeks 1-4 -->
+  <mission>
+    <id>3681</id>
+    <name>Seafolk Parley</name>
+    <energy>9</energy>
+    <desc>At Rayne's suggestion, you have returned to Duskwillow. Donning swimming gear, you head out of the bay and into the ocean, where you plunge deep beneath the waters.</desc>
+    <commander id="352" />
+    <deck>
+      <card id="7007" name="Water Serpent" />
+      <card id="7007" name="Water Serpent" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="8044" name="Aegis of the Sea" />
+      <card id="5091" name="Armor Thief" />
+      <card id="2053" name="Rocket Rider" />
+      <card id="5073" name="Shell Invader" />
+      <card id="2078" name="Septuamaid" />
+      <card id="5108" name="Aurora Skimmer" />
+      <card id="2079" mastery_level="2" name="Koi Guardian" />
+      <card id="1630" mastery_level="3" name="Giant Squid" />
+      <card id="2064" mastery_level="4" name="Tome Sneak" />
+      <card id="5107" mastery_level="5" name="Thrumming Beacon" />
+      <card id="7088" mastery_level="6" name="Jubjub" />
+      <card id="7054" mastery_level="7" name="The Thing Below" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>Xerkahn must be planning to get the Seafolk tribe to aid her cause. We should speak with the King and assure the Seafolk of our good intentions.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>3682</id>
+    <name>Return of the Plunderers</name>
+    <energy>9</energy>
+    <desc>While traversing from the bay to the ocean, a familiar face blocks your path. Zolmosh has with him a host of Seafolk!</desc>
+    <commander id="359" />
+    <deck>
+      <card id="7007" name="Water Serpent" />
+      <card id="7007" name="Water Serpent" />
+      <card id="7006" name="Treant Sapling" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="6090" name="Crackshot" />
+      <card id="2102" name="Lowbog Shaman" />
+      <card id="7066" name="Aquine" />
+      <card id="2078" name="Septuamaid" />
+      <card id="1634" name="Brightshoal Warrior" />
+      <card id="6108" mastery_level="2" name="Redwater Angler" />
+      <card id="1630" mastery_level="3" name="Giant Squid" />
+      <card id="1333" mastery_level="4" name="Steelcat Mechanist" />
+      <card id="7005" mastery_level="5" name="Tsunamari" />
+      <card id="6088" mastery_level="6" name="Doxum's Construct" />
+      <card id="7023" mastery_level="7" name="Zolmosh the Fist" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>ZOLMOSH FIST... SMASH!</text>
+      </line>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>It's just as the goblins warned! The heretics who stopped Lady Scylla's awakening are now trying to invade our waters!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>3683</id>
+    <name>Invasion Remnants</name>
+    <energy>9</energy>
+    <desc>You fight against the same invaders of Duskwillow. They are joined by other merfolk and fish, and among their ranks you even see goblins that are wearing makeshift sea gear of their own...</desc>
+    <commander id="352" />
+    <deck>
+      <card id="7007" name="Water Serpent" />
+      <card id="7007" name="Water Serpent" />
+      <card id="5012" name="Static Drake" />
+      <card id="8044" name="Aegis of the Sea" />
+      <card id="2063" name="Hob Fletcher" />
+      <card id="7090" name="Prospector" />
+      <card id="1630" name="Giant Squid" />
+      <card id="5073" name="Shell Invader" />
+      <card id="2076" name="Adorabilis" />
+      <card id="5107" mastery_level="2" name="Thrumming Beacon" />
+      <card id="1634" mastery_level="3" name="Brightshoal Warrior" />
+      <card id="7087" mastery_level="4" name="Goblites" />
+      <card id="5107" mastery_level="5" name="Thrumming Beacon" />
+      <card id="6014" mastery_level="6" name="Armored Siegefist" />
+      <card id="5106" mastery_level="7" name="Acuro, Sea Captain" />
+    </deck>
+  </mission>
+  <mission>
+    <id>3684</id>
+    <name>Return of the Pirates</name>
+    <energy>9</energy>
+    <desc>Past the ranks of Seafolk, you spy familiar pink hair. Xerkahn and her goblins are trying to shuffle off in the fighting, but you stop them before they manage to run again.</desc>
+    <commander id="394" />
+    <deck>
+      <card id="6007" name="Goblin Crew" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="2064" name="Tome Sneak" />
+      <card id="1628" name="Garganotos" />
+      <card id="1630" name="Giant Squid" />
+      <card id="5073" name="Shell Invader" />
+      <card id="2062" name="Deadeye Apprentice" />
+      <card id="2053" mastery_level="2" name="Rocket Rider" />
+      <card id="6021" mastery_level="3" name="Marsh Ogre" />
+      <card id="5091" mastery_level="4" name="Armor Thief" />
+      <card id="5108" mastery_level="5" name="Aurora Skimmer" />
+      <card id="5090" mastery_level="6" name="Reks' Faithful" />
+      <card id="6109" mastery_level="7" name="Captain Gnaw" />
+    </deck>
+    <speech>
+      <line>
+        <commander>skyPirateLadyGoblin</commander>
+        <enemy>1</enemy>
+        <text>Grr, persistent buggers, I can't believe you caught up!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>3685</id>
+    <name>Sea Goblins</name>
+    <energy>9</energy>
+    <desc>Past the ranks of Seafolk, you spy familiar pink hair. Xerkahn and her goblins are trying to shuffle off in the fighting, but you stop them before they manage to run again.</desc>
+    <commander id="4" />
+    <deck>
+      <card id="6007" name="Goblin Crew" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="8046" name="Winter's Sting" />
+      <card id="2053" name="Rocket Rider" />
+      <card id="1628" name="Garganotos" />
+      <card id="1630" name="Giant Squid" />
+      <card id="5108" name="Aurora Skimmer" />
+      <card id="1628" name="Garganotos" />
+      <card id="6143" mastery_level="2" name="Dynamic Entry" />
+      <card id="5089" mastery_level="3" name="Gomblit" />
+      <card id="6089" mastery_level="4" name="Fire Belcher" />
+      <card id="7107" mastery_level="5" name="Hammer Krab" />
+      <card id="6093" mastery_level="6" name="Noz Onehand" />
+      <card id="5109" mastery_level="7" name="Cyclospout" />
+    </deck>
+    <speech>
+      <line>
+        <commander>skyPirateLadyGoblin</commander>
+        <enemy>1</enemy>
+        <text>I don't got time for this! Men, keep 'em busy!</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>Yes Captain!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>3686</id>
+    <name>Raiders and Pirates</name>
+    <energy>9</energy>
+    <desc>Even with a hastily constructed alliance, the seafolk and goblins work with surprising efficiency. The seafolk plow through at the front ranks, while the goblins provide support fire behind them.</desc>
+    <commander id="4" />
+    <deck>
+      <card id="6007" name="Goblin Crew" />
+      <card id="7007" name="Water Serpent" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="8044" name="Aegis of the Sea" />
+      <card id="1628" name="Garganotos" />
+      <card id="1628" name="Garganotos" />
+      <card id="1630" name="Giant Squid" />
+      <card id="1634" name="Brightshoal Warrior" />
+      <card id="5091" name="Armor Thief" />
+      <card id="6143" mastery_level="2" name="Dynamic Entry" />
+      <card id="6072" mastery_level="3" name="Bone Wielder" />
+      <card id="2102" mastery_level="4" name="Lowbog Shaman" />
+      <card id="2079" mastery_level="5" name="Koi Guardian" />
+      <card id="6049" mastery_level="6" name="Goblin Explosioneer" />
+      <card id="7003" mastery_level="7" name="Kraken" />
+    </deck>
+  </mission>
+  <mission>
+    <id>3687</id>
+    <name>War Prevention</name>
+    <energy>9</energy>
+    <desc>By the time you manage to clear a path, Xerkahn has already managed to escape again. The remaining goblin and seafolk forces flee from your presence, or as well as they can, the goblins paddling in place and not moving very quickly.</desc>
+    <commander id="323" />
+    <deck>
+      <card id="6007" name="Goblin Crew" />
+      <card id="7007" name="Water Serpent" />
+      <card id="6012" name="Ember Drake" />
+      <card id="8044" name="Aegis of the Sea" />
+      <card id="2063" name="Hob Fletcher" />
+      <card id="7090" name="Prospector" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="2078" name="Septuamaid" />
+      <card id="1628" name="Garganotos" />
+      <card id="6089" mastery_level="2" name="Fire Belcher" />
+      <card id="7087" mastery_level="3" name="Goblites" />
+      <card id="2102" mastery_level="4" name="Lowbog Shaman" />
+      <card id="1630" mastery_level="5" name="Giant Squid" />
+      <card id="5144" mastery_level="6" name="Wee Sparkcaster" />
+      <card id="6107" mastery_level="7" name="Great Lava Crab" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>Sigh. While I would love to pursue Xerkahn to retrieve the staff, finding the King is our top priority.</text>
+      </line>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>We cannot allow this to escalate into a full war against an entire tribe.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>3688</id>
+    <name>In Search of a King</name>
+    <energy>9</energy>
+    <desc>Rayne corners one of the seafolk who made the unfortunate blunder of swimming straight into a goblin. She pulls the merfolk man back, who cowers beneath her fierce gaze.</desc>
+    <commander id="352" />
+    <deck>
+      <card id="6007" name="Goblin Crew" />
+      <card id="7007" name="Water Serpent" />
+      <card id="6012" name="Ember Drake" />
+      <card id="8044" name="Aegis of the Sea" />
+      <card id="5073" name="Shell Invader" />
+      <card id="2076" name="Adorabilis" />
+      <card id="1630" name="Giant Squid" />
+      <card id="1630" name="Giant Squid" />
+      <card id="1628" name="Garganotos" />
+      <card id="7090" mastery_level="2" name="Prospector" />
+      <card id="5073" mastery_level="3" name="Shell Invader" />
+      <card id="2062" mastery_level="4" name="Deadeye Apprentice" />
+      <card id="2079" mastery_level="5" name="Koi Guardian" />
+      <card id="6088" mastery_level="6" name="Doxum's Construct" />
+      <card id="7054" mastery_level="7" name="The Thing Below" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>Inform us of where we can speak with your king.</text>
+      </line>
+      <line>
+        <commander>kraken_portrait</commander>
+        <enemy>1</enemy>
+        <text>Fshhh, the King has gone to the Temple of Pharos! That's all I know!</text>
       </line>
     </speech>
   </mission>

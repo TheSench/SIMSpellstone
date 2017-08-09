@@ -8764,8 +8764,8 @@
       <level>6</level>
       <health>82</health>
       <skill id="imbue" x="4" s="counterburn" />
-      <skill id="enfeeble" x="2" all="1" />
-      <skill id="enrage" x="3" all="1" />
+      <skill id="enfeeble" x="1" all="1" />
+      <skill id="enrage" x="2" all="1" />
     </upgrade>
   </unit>
 </root>

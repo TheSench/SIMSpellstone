@@ -64,8 +64,7 @@ $(function () {
 
     var $scope = angular.element(document.getElementById('ui')).scope();
 
-    var button = document.getElementById("generate_link");
-    if (button) button.onclick = display_generated_link;
+    $("#generate_link").on("click", display_generated_link);
 
     $("#btn_simulate").on("click", SIM_CONTROLLER.startsim);
     $("#btnStop").on("click", SIM_CONTROLLER.stopsim);

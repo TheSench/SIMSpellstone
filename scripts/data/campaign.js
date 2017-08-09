@@ -47,6 +47,10 @@ var LOCATIONS = {
     "id": "109",
     "name": "Red Feather Valley",
   },
+  "11": {
+    "id": "11",
+    "name": "Temple of Pharos",
+  },
   "110": {
     "id": "110",
     "name": "Beetleton Bunker",
@@ -10573,7 +10577,7 @@ var MISSIONS = {
         "mastery_level": "4"
       },
       {
-        "id": "5143",
+        "id": "2051",
         "mastery_level": "5"
       },
       {
@@ -10581,7 +10585,7 @@ var MISSIONS = {
         "mastery_level": "6"
       },
       {
-        "id": "6111",
+        "id": "2065",
         "mastery_level": "7"
       },
     ]
@@ -10612,7 +10616,7 @@ var MISSIONS = {
         "id": "2063"
       },
       {
-        "id": "6021"
+        "id": "6069"
       },
       {
         "id": "1628"
@@ -10629,7 +10633,7 @@ var MISSIONS = {
         "mastery_level": "3"
       },
       {
-        "id": "7063",
+        "id": "6067",
         "mastery_level": "4"
       },
       {
@@ -10689,7 +10693,7 @@ var MISSIONS = {
         "mastery_level": "3"
       },
       {
-        "id": "6008",
+        "id": "6064",
         "mastery_level": "4"
       },
       {
@@ -10882,6 +10886,606 @@ var MISSIONS = {
       },
       {
         "id": "6088",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "3679": {
+    "id": "3679",
+    "name": "Ancient Technology",
+    "commander": {
+        "id": "359"
+    },
+    "deck": [
+      {
+        "id": "7007"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "5017"
+      },
+      {
+        "id": "1010"
+      },
+      {
+        "id": "1630"
+      },
+      {
+        "id": "7109"
+      },
+      {
+        "id": "5030"
+      },
+      {
+        "id": "6005"
+      },
+      {
+        "id": "7030"
+      },
+      {
+        "id": "7107",
+        "mastery_level": "2"
+      },
+      {
+        "id": "6075",
+        "mastery_level": "3"
+      },
+      {
+        "id": "6004",
+        "mastery_level": "4"
+      },
+      {
+        "id": "2076",
+        "mastery_level": "5"
+      },
+      {
+        "id": "7023",
+        "mastery_level": "6"
+      },
+      {
+        "id": "5105",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "3680": {
+    "id": "3680",
+    "name": "Jellyfish Power",
+    "commander": {
+        "id": "344"
+    },
+    "deck": [
+      {
+        "id": "7007"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "7012"
+      },
+      {
+        "id": "7022"
+      },
+      {
+        "id": "1630"
+      },
+      {
+        "id": "6108"
+      },
+      {
+        "id": "5028"
+      },
+      {
+        "id": "6056"
+      },
+      {
+        "id": "1031"
+      },
+      {
+        "id": "5108",
+        "mastery_level": "2"
+      },
+      {
+        "id": "7047",
+        "mastery_level": "3"
+      },
+      {
+        "id": "6119",
+        "mastery_level": "4"
+      },
+      {
+        "id": "7005",
+        "mastery_level": "5"
+      },
+      {
+        "id": "5105",
+        "mastery_level": "6"
+      },
+      {
+        "id": "5105",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "3681": {
+    "id": "3681",
+    "name": "Seafolk Parley",
+    "commander": {
+        "id": "352"
+    },
+    "deck": [
+      {
+        "id": "7007"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "7017"
+      },
+      {
+        "id": "8044"
+      },
+      {
+        "id": "5091"
+      },
+      {
+        "id": "2053"
+      },
+      {
+        "id": "5073"
+      },
+      {
+        "id": "2078"
+      },
+      {
+        "id": "5108"
+      },
+      {
+        "id": "2079",
+        "mastery_level": "2"
+      },
+      {
+        "id": "1630",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2064",
+        "mastery_level": "4"
+      },
+      {
+        "id": "5107",
+        "mastery_level": "5"
+      },
+      {
+        "id": "7088",
+        "mastery_level": "6"
+      },
+      {
+        "id": "7054",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "3682": {
+    "id": "3682",
+    "name": "Return of the Plunderers",
+    "commander": {
+        "id": "359"
+    },
+    "deck": [
+      {
+        "id": "7007"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "7006"
+      },
+      {
+        "id": "8046"
+      },
+      {
+        "id": "6090"
+      },
+      {
+        "id": "2102"
+      },
+      {
+        "id": "7066"
+      },
+      {
+        "id": "2078"
+      },
+      {
+        "id": "1634"
+      },
+      {
+        "id": "6108",
+        "mastery_level": "2"
+      },
+      {
+        "id": "1630",
+        "mastery_level": "3"
+      },
+      {
+        "id": "1333",
+        "mastery_level": "4"
+      },
+      {
+        "id": "7005",
+        "mastery_level": "5"
+      },
+      {
+        "id": "6088",
+        "mastery_level": "6"
+      },
+      {
+        "id": "7023",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "3683": {
+    "id": "3683",
+    "name": "Invasion Remnants",
+    "commander": {
+        "id": "352"
+    },
+    "deck": [
+      {
+        "id": "7007"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "5012"
+      },
+      {
+        "id": "8044"
+      },
+      {
+        "id": "2063"
+      },
+      {
+        "id": "7090"
+      },
+      {
+        "id": "1630"
+      },
+      {
+        "id": "5073"
+      },
+      {
+        "id": "2076"
+      },
+      {
+        "id": "5107",
+        "mastery_level": "2"
+      },
+      {
+        "id": "1634",
+        "mastery_level": "3"
+      },
+      {
+        "id": "7087",
+        "mastery_level": "4"
+      },
+      {
+        "id": "5107",
+        "mastery_level": "5"
+      },
+      {
+        "id": "6014",
+        "mastery_level": "6"
+      },
+      {
+        "id": "5106",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "3684": {
+    "id": "3684",
+    "name": "Return of the Pirates",
+    "commander": {
+        "id": "394"
+    },
+    "deck": [
+      {
+        "id": "6007"
+      },
+      {
+        "id": "6007"
+      },
+      {
+        "id": "6006"
+      },
+      {
+        "id": "8046"
+      },
+      {
+        "id": "2064"
+      },
+      {
+        "id": "1628"
+      },
+      {
+        "id": "1630"
+      },
+      {
+        "id": "5073"
+      },
+      {
+        "id": "2062"
+      },
+      {
+        "id": "2053",
+        "mastery_level": "2"
+      },
+      {
+        "id": "6021",
+        "mastery_level": "3"
+      },
+      {
+        "id": "5091",
+        "mastery_level": "4"
+      },
+      {
+        "id": "5108",
+        "mastery_level": "5"
+      },
+      {
+        "id": "5090",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6109",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "3685": {
+    "id": "3685",
+    "name": "Sea Goblins",
+    "commander": {
+        "id": "4"
+    },
+    "deck": [
+      {
+        "id": "6007"
+      },
+      {
+        "id": "6007"
+      },
+      {
+        "id": "6006"
+      },
+      {
+        "id": "8046"
+      },
+      {
+        "id": "2053"
+      },
+      {
+        "id": "1628"
+      },
+      {
+        "id": "1630"
+      },
+      {
+        "id": "5108"
+      },
+      {
+        "id": "1628"
+      },
+      {
+        "id": "6143",
+        "mastery_level": "2"
+      },
+      {
+        "id": "5089",
+        "mastery_level": "3"
+      },
+      {
+        "id": "6089",
+        "mastery_level": "4"
+      },
+      {
+        "id": "7107",
+        "mastery_level": "5"
+      },
+      {
+        "id": "6093",
+        "mastery_level": "6"
+      },
+      {
+        "id": "5109",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "3686": {
+    "id": "3686",
+    "name": "Raiders and Pirates",
+    "commander": {
+        "id": "4"
+    },
+    "deck": [
+      {
+        "id": "6007"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "6006"
+      },
+      {
+        "id": "8044"
+      },
+      {
+        "id": "1628"
+      },
+      {
+        "id": "1628"
+      },
+      {
+        "id": "1630"
+      },
+      {
+        "id": "1634"
+      },
+      {
+        "id": "5091"
+      },
+      {
+        "id": "6143",
+        "mastery_level": "2"
+      },
+      {
+        "id": "6072",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2102",
+        "mastery_level": "4"
+      },
+      {
+        "id": "2079",
+        "mastery_level": "5"
+      },
+      {
+        "id": "6049",
+        "mastery_level": "6"
+      },
+      {
+        "id": "7003",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "3687": {
+    "id": "3687",
+    "name": "War Prevention",
+    "commander": {
+        "id": "323"
+    },
+    "deck": [
+      {
+        "id": "6007"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "6012"
+      },
+      {
+        "id": "8044"
+      },
+      {
+        "id": "2063"
+      },
+      {
+        "id": "7090"
+      },
+      {
+        "id": "5107"
+      },
+      {
+        "id": "2078"
+      },
+      {
+        "id": "1628"
+      },
+      {
+        "id": "6089",
+        "mastery_level": "2"
+      },
+      {
+        "id": "7087",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2102",
+        "mastery_level": "4"
+      },
+      {
+        "id": "1630",
+        "mastery_level": "5"
+      },
+      {
+        "id": "5144",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6107",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "3688": {
+    "id": "3688",
+    "name": "In Search of a King",
+    "commander": {
+        "id": "352"
+    },
+    "deck": [
+      {
+        "id": "6007"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "6012"
+      },
+      {
+        "id": "8044"
+      },
+      {
+        "id": "5073"
+      },
+      {
+        "id": "2076"
+      },
+      {
+        "id": "1630"
+      },
+      {
+        "id": "1630"
+      },
+      {
+        "id": "1628"
+      },
+      {
+        "id": "7090",
+        "mastery_level": "2"
+      },
+      {
+        "id": "5073",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2062",
+        "mastery_level": "4"
+      },
+      {
+        "id": "2079",
+        "mastery_level": "5"
+      },
+      {
+        "id": "6088",
+        "mastery_level": "6"
+      },
+      {
+        "id": "7054",
         "mastery_level": "7"
       },
     ]
