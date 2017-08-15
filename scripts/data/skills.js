@@ -191,6 +191,12 @@ var SKILL_DATA = {
 		icon: 'iceshatter',
 		desc: 'Reduces the next Damage dealt to a random allied creature'
 	},
+	protect_seafolk: {
+	    name: 'Barrier',
+	    type: 'activation',
+	    icon: 'mystic_barrier',
+	    desc: 'Reduces the next Damage dealt to a random allied creature'
+	},
 	rally : {
 		name: 'Empower',
 		type: 'earlyActivation',
