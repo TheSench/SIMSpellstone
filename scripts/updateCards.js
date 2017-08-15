@@ -4,7 +4,7 @@ var DATA_UPDATER = (function () {
 
     var baseUrl = "https://spellstone.synapse-games.com";
 
-
+    var newCards = {};
     var lastUpdate = null;
     function updateCards(callback, forceUpdate) {
         $("body").addClass("loading");
@@ -13,6 +13,7 @@ var DATA_UPDATER = (function () {
         var now = Date.now();
         if (!lastUpdate || lastUpdate - now > 60000 || forceUpdate) {
             lastUpdate = now;
+            newCards = {};
             setTimeout(doUpdateCards, 0, callback);
         } else {
             if(callback) callback();
@@ -36,61 +37,70 @@ var DATA_UPDATER = (function () {
         "cards_story.xml",
         "fusion_recipes_cj2.xml"
     ];
-    function doUpdateCards(callback, file) {
-        file = (file || 0);
-        jQuery.ajax({
-            url: baseUrl + "/assets/" + cardFiles[file],
-            success: function (doc) {
-                var trackNewCards = (typeof spoilers !== "undefined");
-                var units = doc.getElementsByTagName("unit");
-                for (var i = 0; i < units.length; i++) {
-                    var unit = units[i];
-                    var id = getValue(units[i], "id");
-                    var cardData = getUnitFromXML(units[i]);
-                    if (trackNewCards) {
+    function doUpdateCards(callback) {
+        var promises = [];
+        for (var file = 0; file < cardFiles.length; file++) {
+            var promise = jQuery.ajax({
+                url: baseUrl + "/assets/" + cardFiles[file],
+                success: function (doc) {
+                    var trackNewCards = (typeof spoilers !== "undefined");
+                    var units = doc.getElementsByTagName("unit");
+                    for (var i = 0; i < units.length; i++) {
+                        var unit = units[i];
+                        var id = getValue(units[i], "id");
+                        var cardData = getUnitFromXML(units[i]);
+                        var newInfo = false;
                         if (!CARDS[id]) {
-                            spoilers[id] = true;
+                            newInfo = true;
                         } else if (JSON.stringify(CARDS[id]) !== JSON.stringify(cardData)) {
-                            console.log(id + " has changed");
-                            spoilers[id] = true;
+                            newInfo = true;
+                        }
+                        if (newInfo) {
+                            if (trackNewCards) {
+                                spoilers[id] = true;
+                            }
+                            newCards[id] = cardData;
+                        }
+                        CARDS[id] = cardData
+                    }
+                    var fusions = doc.getElementsByTagName("fusion_recipe");
+                    for (var i = 0; i < fusions.length; i++) {
+                        var node = fusions[i];
+                        var fusion = getValue(node, "card_id", false);
+                        var resource = node.getElementsByTagName("resource")[0];
+                        if (resource) {
+                            var base = getValue(resource, "card_id", true);
+                            FUSIONS[base] = fusion;
                         }
                     }
-                    CARDS[id] = cardData
-                }
-                var fusions = doc.getElementsByTagName("fusion_recipe");
-                for (var i = 0; i < fusions.length; i++) {
-                    var node = fusions[i];
-                    var fusion = getValue(node, "card_id", false);
-                    var resource = node.getElementsByTagName("resource")[0];
-                    if (resource) {
-                        var base = getValue(resource, "card_id", true);
-                        FUSIONS[base] = fusion;
-                    }
-                }
-                onloaded(file, callback);
-            },
-            error: function (response) {
-                onloaded(file, callback);
-            },
-            async: false,
-            cache: false,
-        });
+                },
+                async: true,
+                cache: false,
+            });
+            promises.push(promise);
+        }
+
+        var finishedLoading = function () {
+            onLoaded(callback);
+        }
+
+        $.when.apply($, promises).done(finishedLoading).fail(finishedLoading);
     }
 
-    var onloaded = function (file, callback) {
-        file++;
-        if (file < cardFiles.length) {
-            setTimeout(doUpdateCards, 0, callback, file);
-        } else {
-            var CARDS_cache = {
-                cards: CARDS,
-                lastUpdated: Date.now()
+    function onLoaded(callback) {
+        if (typeof storageAPI !== "undefined") {
+            var cardData = storageAPI.getField("GameData", "CardCache");
+
+            if (cardData && cardData.newCards) {
+                $.extend(cardData.newCards, newCards);
+            } else {
+                cardData = { newCards: newCards };
             }
-            if (typeof storageAPI !== "undefined") {
-                storageAPI.setField("GameData", "CardCache", CARDS_cache);
-            }
-            if (callback) setTimeout(callback, 0);
+            cardData.lastUpdated = Date.now();
+
+            storageAPI.setField("GameData", "CardCache", cardData);
         }
+        if (callback) setTimeout(callback, 0);
     }
 
     function getUnitFromXML(node) {

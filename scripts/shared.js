@@ -3,8 +3,19 @@
 function loadCardCache() {
     var cardData = storageAPI.getField("GameData", "CardCache");
     if (cardData && cardData.lastUpdated > CardsUpdated) {
-        CARDS = cardData.cards;
+        if (cardData.newCards) {
+            $.extend(CARDS, cardData.newCards);
+        } else {
+            CARDS = cardData.cards;
+        }
         CardsUpdated = cardData.lastUpdated;
+    } else {
+        // Clear cached info to reduce storage used
+        var CARDS_cache = {
+            newCards: {},
+            lastUpdated: Date.now()
+        }
+        storageAPI.setField("GameData", "CardCache", CARDS_cache);
     }
 }
 
