@@ -18361,4 +18361,263 @@
       <skill id="nullify" x="3" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5147</id>
+    <card_type>2</card_type>
+    <name>Bard of Gobsburg</name>
+    <picture>Goblin_Bard_A</picture>
+    <asset_bundle>100</asset_bundle>
+    <hidden_until_time>1502384400</hidden_until_time>
+    <attack>3</attack>
+    <health>25</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="2" />
+    <skill id="heal" x="2" all="1" y="11" />
+    <skill id="weaken" x="1" all="1" />
+    <type>1</type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>28</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="2" />
+      <skill id="heal" x="2" all="1" y="11" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>29</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15147</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Minstrel of Gobsburg</name>
+    <picture>Goblin_Bard_A</picture>
+    <asset_bundle>100</asset_bundle>
+    <hidden_until_time>1502384400</hidden_until_time>
+    <attack>3</attack>
+    <health>29</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="3" />
+    <skill id="heal" x="2" all="1" y="11" />
+    <skill id="weaken" x="2" all="1" />
+    <type>1</type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="counter" x="3" />
+      <skill id="heal" x="3" all="1" y="11" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>30</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="3" />
+      <skill id="heal" x="3" all="1" y="11" />
+      <skill id="weaken" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>32</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25147</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Piper of Gobsburg</name>
+    <picture>Goblin_Bard_B</picture>
+    <asset_bundle>100</asset_bundle>
+    <hidden_until_time>1502384400</hidden_until_time>
+    <attack>3</attack>
+    <health>33</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="3" />
+    <skill id="heal" x="3" all="1" y="11" />
+    <skill id="weaken" x="3" all="1" />
+    <type>1</type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>34</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counter" x="4" />
+      <skill id="heal" x="3" all="1" y="11" />
+      <skill id="weaken" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="4" />
+      <skill id="heal" x="4" all="1" y="11" />
+      <skill id="weaken" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counter" x="4" />
+      <skill id="heal" x="4" all="1" y="11" />
+      <skill id="weaken" x="4" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5148</id>
+    <card_type>2</card_type>
+    <name>Gribmalda of Wings</name>
+    <picture>Goblin_Bird_Tamer_A</picture>
+    <asset_bundle>100</asset_bundle>
+    <hidden_until_time>1502730000</hidden_until_time>
+    <attack>4</attack>
+    <health>16</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="2" y="10" />
+    <skill id="rally" x="2" y="10" />
+    <skill id="jam" c="6" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <sub_type>11</sub_type>
+    <set />
+    <upgrade>
+      <level>2</level>
+      <skill id="rally" x="2" y="10" />
+      <skill id="rally" x="2" y="10" />
+      <skill id="jam" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="rally" x="3" y="10" />
+      <skill id="rally" x="3" y="10" />
+      <skill id="jam" c="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15148</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Gribmalda of Soaring</name>
+    <picture>Goblin_Bird_Tamer_A</picture>
+    <asset_bundle>100</asset_bundle>
+    <hidden_until_time>1502730000</hidden_until_time>
+    <attack>4</attack>
+    <health>19</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="3" y="10" />
+    <skill id="rally" x="3" y="10" />
+    <skill id="jam" c="4" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <sub_type>11</sub_type>
+    <set />
+    <upgrade>
+      <level>2</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>21</health>
+      <skill id="rally" x="4" y="10" />
+      <skill id="rally" x="3" y="10" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>23</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25148</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Gribmalda of the Sky</name>
+    <picture>Goblin_Bird_Tamer_B</picture>
+    <asset_bundle>100</asset_bundle>
+    <hidden_until_time>1502730000</hidden_until_time>
+    <attack>5</attack>
+    <health>23</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="4" y="10" />
+    <skill id="rally" x="4" y="10" />
+    <skill id="jam" c="4" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <sub_type>11</sub_type>
+    <set />
+    <upgrade>
+      <level>2</level>
+      <health>24</health>
+      <skill id="rally" x="4" y="10" />
+      <skill id="rally" x="4" y="10" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="rally" x="5" y="10" />
+      <skill id="rally" x="5" y="10" />
+      <skill id="jam" c="3" />
+    </upgrade>
+  </unit>
 </root>

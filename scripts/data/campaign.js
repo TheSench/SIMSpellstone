@@ -49,7 +49,7 @@ var LOCATIONS = {
   },
   "11": {
     "id": "11",
-    "name": "Temple of Pharos",
+    "name": "Pharos Temple",
   },
   "110": {
     "id": "110",
@@ -11486,6 +11486,246 @@ var MISSIONS = {
       },
       {
         "id": "7054",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "3689": {
+    "id": "3689",
+    "name": "A Prayer for the Godless",
+    "commander": {
+        "id": "4"
+    },
+    "deck": [
+      {
+        "id": "7017"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "6007"
+      },
+      {
+        "id": "8044"
+      },
+      {
+        "id": "2053"
+      },
+      {
+        "id": "2062"
+      },
+      {
+        "id": "7005"
+      },
+      {
+        "id": "1630"
+      },
+      {
+        "id": "1634"
+      },
+      {
+        "id": "7145",
+        "mastery_level": "2"
+      },
+      {
+        "id": "7107",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2078",
+        "mastery_level": "4"
+      },
+      {
+        "id": "5073",
+        "mastery_level": "5"
+      },
+      {
+        "id": "6142",
+        "mastery_level": "6"
+      },
+      {
+        "id": "5106",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "3690": {
+    "id": "3690",
+    "name": "Sea Temple",
+    "commander": {
+        "id": "359"
+    },
+    "deck": [
+      {
+        "id": "5017"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "6007"
+      },
+      {
+        "id": "8044"
+      },
+      {
+        "id": "6143"
+      },
+      {
+        "id": "1628"
+      },
+      {
+        "id": "2076"
+      },
+      {
+        "id": "2079"
+      },
+      {
+        "id": "5108"
+      },
+      {
+        "id": "1333",
+        "mastery_level": "2"
+      },
+      {
+        "id": "5107",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2078",
+        "mastery_level": "4"
+      },
+      {
+        "id": "6108",
+        "mastery_level": "5"
+      },
+      {
+        "id": "7144",
+        "mastery_level": "6"
+      },
+      {
+        "id": "7014",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "3691": {
+    "id": "3691",
+    "name": "Scylla's Devout",
+    "commander": {
+        "id": "352"
+    },
+    "deck": [
+      {
+        "id": "7012"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "6007"
+      },
+      {
+        "id": "8044"
+      },
+      {
+        "id": "2102"
+      },
+      {
+        "id": "5073"
+      },
+      {
+        "id": "7109"
+      },
+      {
+        "id": "1630"
+      },
+      {
+        "id": "5107"
+      },
+      {
+        "id": "7145",
+        "mastery_level": "2"
+      },
+      {
+        "id": "2076",
+        "mastery_level": "3"
+      },
+      {
+        "id": "7005",
+        "mastery_level": "4"
+      },
+      {
+        "id": "6108",
+        "mastery_level": "5"
+      },
+      {
+        "id": "6093",
+        "mastery_level": "6"
+      },
+      {
+        "id": "2080",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "3692": {
+    "id": "3692",
+    "name": "Seafolk Soldiers",
+    "commander": {
+        "id": "7"
+    },
+    "deck": [
+      {
+        "id": "5007"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "6007"
+      },
+      {
+        "id": "8044"
+      },
+      {
+        "id": "1628"
+      },
+      {
+        "id": "5108"
+      },
+      {
+        "id": "2078"
+      },
+      {
+        "id": "6108"
+      },
+      {
+        "id": "7066"
+      },
+      {
+        "id": "2063",
+        "mastery_level": "2"
+      },
+      {
+        "id": "2076",
+        "mastery_level": "3"
+      },
+      {
+        "id": "1634",
+        "mastery_level": "4"
+      },
+      {
+        "id": "1634",
+        "mastery_level": "5"
+      },
+      {
+        "id": "5147",
+        "mastery_level": "6"
+      },
+      {
+        "id": "7108",
         "mastery_level": "7"
       },
     ]

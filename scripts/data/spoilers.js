@@ -1,4 +1,13 @@
 var spoilers = {};
-spoilers[7148] = true;
-spoilers[17148] = true;
-spoilers[27148] = true;
+spoilers[5147] = true;
+spoilers[15147] = true;
+spoilers[25147] = true;
+spoilers[5148] = true;
+spoilers[15148] = true;
+spoilers[25148] = true;
+spoilers[7144] = true;
+spoilers[17144] = true;
+spoilers[27144] = true;
+spoilers[7145] = true;
+spoilers[17145] = true;
+spoilers[27145] = true;

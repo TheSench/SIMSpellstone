@@ -20724,7 +20724,7 @@
     <id>3679</id>
     <name>Ancient Technology</name>
     <energy>9</energy>
-    <desc>The Temple of Pharos is extremely dark and silent. Yet when exposed to electric jellyfish, the machines hum to life. You collect more, seeking to revive the ancient technology of the temple.</desc>
+    <desc>Pharos Temple is extremely dark and silent. Yet when exposed to electric jellyfish, the machines hum to life. You collect more, seeking to revive the ancient technology of the temple.</desc>
     <commander id="359" />
     <deck>
       <card id="7007" name="Water Serpent" />
@@ -20804,7 +20804,7 @@
     <id>3682</id>
     <name>Return of the Plunderers</name>
     <energy>9</energy>
-    <desc>While traversing from the bay to the ocean, a familiar face blocks your path. Zolmosh has with him a host of Seafolk!</desc>
+    <desc>While traversing from the bay to the ocean, a familiar face blocks your path. Zolmosh has with him a host of seafolk!</desc>
     <commander id="359" />
     <deck>
       <card id="7007" name="Water Serpent" />
@@ -20864,7 +20864,7 @@
     <id>3684</id>
     <name>Return of the Pirates</name>
     <energy>9</energy>
-    <desc>Past the ranks of Seafolk, you spy familiar pink hair. Xerkahn and her goblins are trying to shuffle off in the fighting, but you stop them before they manage to run again.</desc>
+    <desc>Past the ranks of seafolk, you spy familiar pink hair. Xerkahn and her goblins are trying to shuffle off in the fighting, but you stop them before they manage to run again.</desc>
     <commander id="394" />
     <deck>
       <card id="6007" name="Goblin Crew" />
@@ -20895,7 +20895,7 @@
     <id>3685</id>
     <name>Sea Goblins</name>
     <energy>9</energy>
-    <desc>Past the ranks of Seafolk, you spy familiar pink hair. Xerkahn and her goblins are trying to shuffle off in the fighting, but you stop them before they manage to run again.</desc>
+    <desc>The goblins' gear looks like it was put together hastily. You're not entirely certain how some of them are able to breathe with just fish bowls over their heads, but they are still determined to follow Xerkahn's orders.</desc>
     <commander id="4" />
     <deck>
       <card id="6007" name="Goblin Crew" />
@@ -21019,8 +21019,118 @@
       <line>
         <commander>kraken_portrait</commander>
         <enemy>1</enemy>
-        <text>Fshhh, the King has gone to the Temple of Pharos! That's all I know!</text>
+        <text>Fshhh, the King has gone to Pharos Temple! That's all I know!</text>
       </line>
     </speech>
+  </mission>
+  <mission>
+    <id>3689</id>
+    <name>A Prayer for the Godless</name>
+    <energy>9</energy>
+    <desc>Rayne releases the kraken, allowing him to flee. She seems unhappy with the turn of events.</desc>
+    <commander id="4" />
+    <deck>
+      <card id="7017" name="Coral Elemental" />
+      <card id="7007" name="Water Serpent" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="8044" name="Aegis of the Sea" />
+      <card id="2053" name="Rocket Rider" />
+      <card id="2062" name="Deadeye Apprentice" />
+      <card id="7005" name="Tsunamari" />
+      <card id="1630" name="Giant Squid" />
+      <card id="1634" name="Brightshoal Warrior" />
+      <card id="7145" mastery_level="2" name="Metalsmith" />
+      <card id="7107" mastery_level="3" name="Hammer Krab" />
+      <card id="2078" mastery_level="4" name="Septuamaid" />
+      <card id="5073" mastery_level="5" name="Shell Invader" />
+      <card id="6142" mastery_level="6" name="Ba Dim Boom" />
+      <card id="5106" mastery_level="7" name="Acuro, Sea Captain" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>1</enemy>
+        <text>Hmm, odd that the king would be visiting a temple. Hopefully he's not a follower of Scylla, or we may have a problem on our hands.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>3690</id>
+    <name>Sea Temple</name>
+    <energy>9</energy>
+    <desc>The two of you follow the underwater path, which Rayne believes will go to the Temple. It doesn't take long to find. Amidst the seaweed forest, you find the crumbling image of a temple.</desc>
+    <commander id="359" />
+    <deck>
+      <card id="5017" name="Steam Tempest" />
+      <card id="7007" name="Water Serpent" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="8044" name="Aegis of the Sea" />
+      <card id="6143" name="Dynamic Entry" />
+      <card id="1628" name="Garganotos" />
+      <card id="2076" name="Adorabilis" />
+      <card id="2079" name="Koi Guardian" />
+      <card id="5108" name="Aurora Skimmer" />
+      <card id="1333" mastery_level="2" name="Steelcat Mechanist" />
+      <card id="5107" mastery_level="3" name="Thrumming Beacon" />
+      <card id="2078" mastery_level="4" name="Septuamaid" />
+      <card id="6108" mastery_level="5" name="Redwater Angler" />
+      <card id="7144" mastery_level="6" name="Kazamo" />
+      <card id="7014" mastery_level="7" name="Genbu" />
+    </deck>
+  </mission>
+  <mission>
+    <id>3691</id>
+    <name>Scylla's Devout</name>
+    <energy>9</energy>
+    <desc>Zolmosh and his forces have returned! They desperately seek to prevent you from entering sacred ground. However as you begin to fight, another group of Seafolk emerge from the Temple.</desc>
+    <commander id="352" />
+    <deck>
+      <card id="7012" name="Life Drake" />
+      <card id="7007" name="Water Serpent" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="8044" name="Aegis of the Sea" />
+      <card id="2102" name="Lowbog Shaman" />
+      <card id="5073" name="Shell Invader" />
+      <card id="7109" name="Clownder" />
+      <card id="1630" name="Giant Squid" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="7145" mastery_level="2" name="Metalsmith" />
+      <card id="2076" mastery_level="3" name="Adorabilis" />
+      <card id="7005" mastery_level="4" name="Tsunamari" />
+      <card id="6108" mastery_level="5" name="Redwater Angler" />
+      <card id="6093" mastery_level="6" name="Noz Onehand" />
+      <card id="2080" mastery_level="7" name="Hunter Zind" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>Grr, we are not too late! Reclaim the Temple; let none stop us!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>3692</id>
+    <name>Seafolk Soldiers</name>
+    <energy>9</energy>
+    <desc>Massive chaos ensues as the Seafolk fight against Zolmosh and his raiders. However, they also turn and point their spears against you and Rayne!</desc>
+    <commander id="7" />
+    <deck>
+      <card id="5007" name="Arcane Scroll" />
+      <card id="7007" name="Water Serpent" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="8044" name="Aegis of the Sea" />
+      <card id="1628" name="Garganotos" />
+      <card id="5108" name="Aurora Skimmer" />
+      <card id="2078" name="Septuamaid" />
+      <card id="6108" name="Redwater Angler" />
+      <card id="7066" name="Aquine" />
+      <card id="2063" mastery_level="2" name="Hob Fletcher" />
+      <card id="2076" mastery_level="3" name="Adorabilis" />
+      <card id="1634" mastery_level="4" name="Brightshoal Warrior" />
+      <card id="1634" mastery_level="5" name="Brightshoal Warrior" />
+      <card id="5147" mastery_level="6" name="Bard of Gobsburg" />
+      <card id="7108" mastery_level="7" name="Quetee" />
+    </deck>
   </mission>
 </root>
