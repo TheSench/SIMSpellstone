@@ -179,7 +179,7 @@ var BATTLEGROUNDS = {
       {
         "effect_type": "skill",
         "id": "protect_seafolk",
-        "mult": .4,
+        "mult": .3,
         "y": "12",
         "all": "1",
       },
