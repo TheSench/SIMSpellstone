@@ -4545,7 +4545,7 @@
     </rewards>
     <find_item id="3053" drop_per_energy=".8" />
   </campaign>
-  <!-- Event Campaign 4 -->
+  <!-- Event Campaign 4 Insects -->
   <!-- Extra Node -->
   <campaign>
     <id>1130</id>
@@ -4643,7 +4643,7 @@
     </rewards>
     <find_item id="3056" drop_per_energy=".4" />
   </campaign>
-  <!-- Campaign Event 4 Boss Node -->
+  <!-- Campaign Event 4 Boss Node Insects -->
   <campaign>
     <id>1133</id>
     <name>No Place is Home</name>
@@ -4676,7 +4676,7 @@
     </rewards>
     <find_item id="3056" drop_per_energy=".4" />
   </campaign>
-  <!-- Campaign Event 4 weeks 5-8 -->
+  <!-- Campaign Event 4 weeks 5-8 Goblins -->
   <campaign>
     <id>1134</id>
     <name>Winds of Change</name>
@@ -4749,6 +4749,104 @@
       <item level="7" id="3058" />
     </rewards>
     <find_item id="3056" drop_per_energy=".8" />
+  </campaign>
+  <!-- Campaign Event 5 -->
+  <!-- Extra Node -->
+  <campaign>
+    <id>1136</id>
+    <name>Sea Temple Defenses</name>
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1503594000</locked_start_time>
+    <!-- Thu, 24 August 2017 17:00:00 -->
+    <location_id>11</location_id>
+    <x>100</x>
+    <y>275</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>3679</mission_id>
+      <mission_id>3680</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="510" />
+      <card level="3" id="510" />
+      <card level="4" id="2098" />
+      <card level="5" id="510" />
+      <card level="6" id="510" />
+      <card level="7" id="510" />
+    </rewards>
+    <find_item id="3059" drop_per_energy=".1" />
+  </campaign>
+  <!-- Campaign Event 5 weeks 1-4 -->
+  <campaign>
+    <id>1137</id>
+    <name>Beneath the Waves</name>
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1503594000</locked_start_time>
+    <!-- Thu, 24 August 2017 17:00:00 -->
+    <location_id>11</location_id>
+    <x>305</x>
+    <y>240</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>3681</mission_id>
+      <mission_id>3682</mission_id>
+      <mission_id>3683</mission_id>
+      <mission_id>3684</mission_id>
+      <mission_id>3685</mission_id>
+      <mission_id>3686</mission_id>
+      <mission_id>3687</mission_id>
+      <mission_id>3688</mission_id>
+      <mission_id>3689</mission_id>
+      <mission_id>3690</mission_id>
+      <mission_id>3691</mission_id>
+      <mission_id>3692</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2048" />
+      <card level="5" id="512" />
+      <card level="6" id="512" />
+      <item level="7" id="3060" />
+    </rewards>
+    <find_item id="3059" drop_per_energy=".2" />
+  </campaign>
+  <campaign>
+    <id>1138</id>
+    <name>The Temple's Judgement</name>
+    <campaign_req id="1137" level="1" />
+    <locked_start_time>1504803600</locked_start_time>
+    <!-- Thu, 7 Sept 2017 17:00:00 -->
+    <location_id>11</location_id>
+    <x>515</x>
+    <y>370</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>3693</mission_id>
+      <mission_id>3694</mission_id>
+      <mission_id>3695</mission_id>
+      <mission_id>3696</mission_id>
+      <mission_id>3697</mission_id>
+      <mission_id>3698</mission_id>
+      <mission_id>3699</mission_id>
+      <mission_id>3700</mission_id>
+      <mission_id>3701</mission_id>
+      <mission_id>3702</mission_id>
+      <mission_id>3703</mission_id>
+      <mission_id>3704</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2048" />
+      <card level="5" id="512" />
+      <card level="6" id="512" />
+      <item level="7" id="3060" />
+    </rewards>
+    <find_item id="3059" drop_per_energy=".4" />
   </campaign>
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

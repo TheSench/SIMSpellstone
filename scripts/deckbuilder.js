@@ -162,7 +162,7 @@ var initDeckBuilder = function () {
 }
 
 function updateGameData() {
-    setTimeout(DATA_UPDATER.updateCards, 1, loadCards, true);
+    setTimeout(DATA_UPDATER.updateData, 1, loadCards, true);
 }
 
 var loadCards = function () {

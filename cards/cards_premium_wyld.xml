@@ -18092,6 +18092,128 @@
     </upgrade>
   </unit>
   <unit>
+    <id>7146</id>
+    <card_type>2</card_type>
+    <name>Goblin Brigand</name>
+    <picture>Goblin_Brigand_A</picture>
+    <asset_bundle>100</asset_bundle>
+    <hidden_until_time>1502989200</hidden_until_time>
+    <attack>6</attack>
+    <health>26</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="2" />
+    <skill id="rally" x="3" y="11" />
+    <skill id="rally" x="3" y="11" />
+    <type>3</type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="2" />
+      <skill id="rally" x="4" y="11" />
+      <skill id="rally" x="3" y="11" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>28</health>
+      <skill id="armored" x="2" />
+      <skill id="rally" x="4" y="11" />
+      <skill id="rally" x="4" y="11" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="2" />
+      <skill id="rally" x="5" y="11" />
+      <skill id="rally" x="4" y="11" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17146</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Rek's Brigand</name>
+    <picture>Goblin_Brigand_A</picture>
+    <asset_bundle>100</asset_bundle>
+    <hidden_until_time>1502989200</hidden_until_time>
+    <attack>7</attack>
+    <health>28</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="2" />
+    <skill id="rally" x="5" y="11" />
+    <skill id="rally" x="5" y="11" />
+    <type>3</type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="3" />
+      <skill id="rally" x="6" y="11" />
+      <skill id="rally" x="5" y="11" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="3" />
+      <skill id="rally" x="6" y="11" />
+      <skill id="rally" x="6" y="11" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>30</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27146</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Xerkahn's Brigand</name>
+    <picture>Goblin_Brigand_B</picture>
+    <asset_bundle>100</asset_bundle>
+    <hidden_until_time>1502989200</hidden_until_time>
+    <attack>7</attack>
+    <health>31</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="3" />
+    <skill id="rally" x="7" y="11" />
+    <skill id="rally" x="6" y="11" />
+    <type>3</type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="3" />
+      <skill id="rally" x="7" y="11" />
+      <skill id="rally" x="7" y="11" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>8</attack>
+      <health>32</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="4" />
+      <skill id="rally" x="7" y="11" />
+      <skill id="rally" x="7" y="11" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="4" />
+      <skill id="rally" x="8" y="11" />
+      <skill id="rally" x="8" y="11" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>7147</id>
     <card_type>2</card_type>
     <name>Kraag</name>

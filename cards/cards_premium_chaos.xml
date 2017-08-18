@@ -17925,6 +17925,248 @@
     </upgrade>
   </unit>
   <unit>
+    <id>6144</id>
+    <card_type>2</card_type>
+    <name>Crossbomb Gremlin</name>
+    <picture>Crossbow_Bomb_Goblin_A</picture>
+    <asset_bundle>100</asset_bundle>
+    <hidden_until_time>1502989200</hidden_until_time>
+    <attack>3</attack>
+    <health>10</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="weaken" x="1" />
+    <skill id="poison" x="1" />
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="weaken" x="2" />
+      <skill id="poison" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="weaken" x="2" />
+      <skill id="poison" x="2" />
+    </upgrade>
+    <desc>Destructive as they are crazy.</desc>
+  </unit>
+  <unit>
+    <id>16144</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Crossbomb Rebel</name>
+    <picture>Crossbow_Bomb_Goblin_A</picture>
+    <asset_bundle>100</asset_bundle>
+    <hidden_until_time>1502989200</hidden_until_time>
+    <attack>3</attack>
+    <health>13</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="weaken" x="2" />
+    <skill id="poison" x="2" />
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="weaken" x="3" />
+      <skill id="poison" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="weaken" x="3" />
+      <skill id="poison" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>15</health>
+    </upgrade>
+    <desc>The goblin's joyous laughter echoed even above the explosions.</desc>
+  </unit>
+  <unit>
+    <id>26144</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Crossbomb Raider</name>
+    <picture>Crossbow_Bomb_Goblin_B</picture>
+    <asset_bundle>100</asset_bundle>
+    <hidden_until_time>1502989200</hidden_until_time>
+    <attack>3</attack>
+    <health>15</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="strike" x="1" all="1" />
+    <skill id="weaken" x="3" />
+    <skill id="poison" x="3" />
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="strike" x="1" all="1" />
+      <skill id="weaken" x="4" />
+      <skill id="poison" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="strike" x="1" all="1" />
+      <skill id="weaken" x="4" />
+      <skill id="poison" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6145</id>
+    <card_type>2</card_type>
+    <name>Goblin Butcher</name>
+    <picture>Goblin_Butcherer_A</picture>
+    <asset_bundle>100</asset_bundle>
+    <hidden_until_time>1502989200</hidden_until_time>
+    <attack>5</attack>
+    <health>11</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="1" />
+    <skill id="enrage" x="2" y="11" />
+    <skill id="berserk" x="1" />
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counter" x="2" />
+      <skill id="enrage" x="2" y="11" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>6</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16145</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Goblin Slaughterer</name>
+    <picture>Goblin_Butcherer_A</picture>
+    <asset_bundle>100</asset_bundle>
+    <hidden_until_time>1502989200</hidden_until_time>
+    <attack>6</attack>
+    <health>14</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="3" />
+    <skill id="enrage" x="2" y="11" />
+    <skill id="berserk" x="1" />
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="counter" x="3" />
+      <skill id="enrage" x="3" y="11" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="counter" x="3" />
+      <skill id="enrage" x="3" y="11" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counter" x="4" />
+      <skill id="enrage" x="3" y="11" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26145</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Goblin Cleaver</name>
+    <picture>Goblin_Butcherer_B</picture>
+    <asset_bundle>100</asset_bundle>
+    <hidden_until_time>1502989200</hidden_until_time>
+    <attack>6</attack>
+    <health>17</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="4" />
+    <skill id="enrage" x="3" y="11" />
+    <skill id="berserk" x="2" />
+    <type>2</type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counter" x="5" />
+      <skill id="enrage" x="3" y="11" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="5" />
+      <skill id="enrage" x="4" y="11" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counter" x="5" />
+      <skill id="enrage" x="4" y="11" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>6146</id>
     <card_type>2</card_type>
     <name>Dragonfly Runner</name>
@@ -18057,6 +18299,136 @@
       <skill id="corrosive" x="6" />
       <skill id="strike" x="4" />
       <skill id="strike" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6147</id>
+    <card_type>2</card_type>
+    <name>Sandspirit Whisperer</name>
+    <picture>Goblin_Sand_Witch_Elemental_A</picture>
+    <asset_bundle>100</asset_bundle>
+    <hidden_until_time>1502989200</hidden_until_time>
+    <attack>3</attack>
+    <health>10</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="enfeeble" x="1" />
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <sub_type>11</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="1" />
+      <skill id="enfeeble" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>4</attack>
+    </upgrade>
+    <desc>The sands of the desert bend to their command, drowning their enemies in body and mind.</desc>
+  </unit>
+  <unit>
+    <id>16147</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Sandspirit Shaman</name>
+    <picture>Goblin_Sand_Witch_Elemental_A</picture>
+    <asset_bundle>100</asset_bundle>
+    <hidden_until_time>1502989200</hidden_until_time>
+    <attack>4</attack>
+    <health>13</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="enfeeble" x="2" />
+    <skill id="strike" x="1" all="1" />
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <sub_type>11</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="evade" x="2" />
+      <skill id="enfeeble" x="2" />
+      <skill id="strike" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="2" />
+      <skill id="enfeeble" x="3" />
+      <skill id="strike" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="2" />
+      <skill id="enfeeble" x="4" />
+      <skill id="strike" x="1" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26147</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Sandspirit Breaker</name>
+    <picture>Goblin_Sand_Witch_Elemental_B</picture>
+    <asset_bundle>100</asset_bundle>
+    <hidden_until_time>1502989200</hidden_until_time>
+    <attack>4</attack>
+    <health>16</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="enfeeble" x="4" />
+    <skill id="strike" x="1" all="1" />
+    <type>2</type>
+    <sub_type>5</sub_type>
+    <sub_type>11</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="3" />
+      <skill id="enfeeble" x="4" />
+      <skill id="strike" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="3" />
+      <skill id="enfeeble" x="5" />
+      <skill id="strike" x="1" all="1" />
     </upgrade>
   </unit>
 </root>

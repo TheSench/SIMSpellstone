@@ -215,10 +215,10 @@
   <battleground>
     <id>113</id>
     <name>Underwater Shelter</name>
-    <desc>All Seafolk dive beneath the waves, gaining a Barrier equal to 20% of their base Health. This bonus is doubled if the Seafolk is on delay.</desc>
+    <desc>All Seafolk dive beneath the waves, gaining a Barrier each turn equal to 40% of their base Health while on delay.</desc>
     <icon>filter_seafolk_64</icon>
     <effect>
-      <skill id="protect_seafolk" mult=".2" on_delay_mult=".2" base="health" all="1" y="12" />
+      <skill id="protect_seafolk" mult=".4" base="health" all="1" y="12" />
       <skill id="displayEffect" trigger="onSkillDelay" s="protect_seafolk">
         <target_effect>
           <prefab>submerge_fadecloth_delay</prefab>

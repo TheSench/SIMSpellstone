@@ -6010,15 +6010,16 @@
     <name>Elaria</name>
     <mapBG>map1</mapBG>
     <combatBG>CombatBGElaria</combatBG>
+    <preview name="Map_Banner_Map1" bundle="102" />
     <arena_x>900</arena_x>
     <arena_y>330</arena_y>
   </location>
   <location>
     <id>2</id>
     <name>Luminis</name>
-    <combatBG>CombatBGLuminis</combatBG>
     <mapBG>map3</mapBG>
-    <!-- <bundle>2</bundle> -->
+    <combatBG>CombatBGLuminis</combatBG>
+    <preview name="Map_Banner_Map3" bundle="102" />
     <req>6</req>
     <arena_x>200</arena_x>
     <arena_y>300</arena_y>
@@ -6029,6 +6030,7 @@
     <mapBG>map2</mapBG>
     <asset_bundle>4</asset_bundle>
     <combatBG>CombatBGKarthos</combatBG>
+    <preview name="Map_Banner_Map2" bundle="102" />
     <req>12</req>
     <arena_x>750</arena_x>
     <arena_y>180</arena_y>
@@ -6039,6 +6041,7 @@
     <mapBG>map4</mapBG>
     <asset_bundle>4</asset_bundle>
     <combatBG>CombatBGVoid</combatBG>
+    <preview name="Map_Banner_Map4" bundle="102" />
     <req>18</req>
     <arena_x>250</arena_x>
     <arena_y>150</arena_y>
@@ -6049,6 +6052,7 @@
     <mapBG>EventMap_009</mapBG>
     <asset_bundle>48</asset_bundle>
     <combatBG>CombatBGEvent004</combatBG>
+    <preview name="Map_Banner_EventMap_009" bundle="102" />
     <req>24</req>
     <arena_x>250</arena_x>
     <arena_y>150</arena_y>
@@ -6059,6 +6063,7 @@
     <mapBG>Map_Seaside</mapBG>
     <asset_bundle>54</asset_bundle>
     <combatBG>CombatBGEvent008</combatBG>
+    <preview name="Map_Banner_Seaside" bundle="102" />
     <req>30</req>
     <arena_x>250</arena_x>
     <arena_y>150</arena_y>
@@ -6069,6 +6074,7 @@
     <mapBG>Map_Duskwillow</mapBG>
     <asset_bundle>81</asset_bundle>
     <combatBG>CombatBGVoid</combatBG>
+    <preview name="Map_Banner_Duskwillow" bundle="102" />
     <unlock_time>1484240400</unlock_time>
     <!-- Thu, 12 Jan 2017 17:00:00 GMT -->
     <req>24</req>
@@ -6081,6 +6087,7 @@
     <name>Frigore</name>
     <mapBG>EventMap_006</mapBG>
     <combatBG>CombatBGEvent006</combatBG>
+    <preview name="Map_Banner_EventMap_006" bundle="102" />
     <asset_bundle>29</asset_bundle>
     <unlock_time>1489078800</unlock_time>
     <!-- Thu, 09 March 2017 17:00:00 -->
@@ -6093,6 +6100,7 @@
     <name>The Void Plane</name>
     <mapBG>Map_VoidPlane</mapBG>
     <combatBG>CombatBGVoid</combatBG>
+    <preview name="Map_Banner_VoidPlane" bundle="102" />
     <asset_bundle>81</asset_bundle>
     <unlock_time>1493917200</unlock_time>
     <!-- Thu, 04 May 2017 17:00:00 -->
@@ -6106,6 +6114,7 @@
     <mapBG>Map_Beetleton_Bunker</mapBG>
     <asset_bundle>66</asset_bundle>
     <combatBG>CombatBGVoid</combatBG>
+    <preview name="Map_Banner_Beetleton_Bunker" bundle="102" />
     <unlock_time>1498755600</unlock_time>
     <!-- Thu, 29 June 2017 17:00:00 -->
     <req>24</req>
@@ -6116,8 +6125,9 @@
     <id>11</id>
     <name>Pharos Temple</name>
     <mapBG>Map_SeafolkWaterTemple</mapBG>
-    <asset_bundle>66</asset_bundle>
+    <asset_bundle>101</asset_bundle>
     <combatBG>CombatBGVoid</combatBG>
+    <preview name="Map_Banner_SeafolkWaterTemple" bundle="102" />
     <unlock_time>1503594000</unlock_time>
     <!-- Thu, 24 August 2017 17:00:00 -->
     <req>24</req>

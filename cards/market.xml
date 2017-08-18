@@ -922,7 +922,7 @@
       <item id="4011" quantity="1" weight=".2" />
       <!-- Rare Runeshell -->
       <item id="4001" quantity="2" weight="1" />
-      <!-- Inscription Dust -->
+      <!-- Inscription Powder -->
       <item id="2001" quantity="4" weight="1" />
       <!-- Arcane Fragments -->
       <item id="2501" quantity="10" weight="1" />
@@ -2062,6 +2062,29 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000,4000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3062</id>
+    <name>x10 Goblin Epic Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives ten ^c0DFFEpic^cFFFF+ Goblin cards from Premium set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000,4000" />
       <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000,4000" />
       <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000,4000" />
     </cards>
@@ -3798,5 +3821,39 @@
     <cards>
       <card min_level="1" max_level="1" unit_id="6088" display_card_id="6088" />
     </cards>
+  </store_item>
+  <store_item>
+    <id>5076</id>
+    <name>x10 Goblin Mega Bundle!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>510</priority>
+    <show_desc>1</show_desc>
+    <desc>Gives ^cF00FTEN ^cFFFFrandom ^c0DFFEpic^cFFFF+ Goblin cards from Premium set! May be purchased 3 times!</desc>
+    <asset_prefab>event_017_chest_w1</asset_prefab>
+    <bundle>75</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>400</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3062</pack>
+  </store_item>
+  <store_item>
+    <id>5077</id>
+    <name>Double Goblin Epic Pack</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <show_desc>1</show_desc>
+    <desc>Gives two guaranteed ^c0DFFEpic^cFFFF+ Goblin cards from Premium set. May be purchased 5 times!</desc>
+    <asset_prefab>event_027_two_epics</asset_prefab>
+    <bundle>99</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>100</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3061</pack>
   </store_item>
 </root>

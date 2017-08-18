@@ -174,13 +174,12 @@ var BATTLEGROUNDS = {
   "113": {
     "name": "Underwater Shelter",
     "id": "113",
-    "desc": "All Seafolk dive beneath the waves, gaining a Barrier equal to 20% of their base Health. This bonus is doubled if the Seafolk is on delay.",
+    "desc": "All Seafolk dive beneath the waves, gaining a Barrier each turn equal to 40% of their base Health while on delay.",
     "effect": [
       {
         "effect_type": "skill",
         "id": "protect_seafolk",
-        "mult": .2,
-        "on_delay_mult": .2,
+        "mult": .4,
         "y": "12",
         "all": "1",
       },

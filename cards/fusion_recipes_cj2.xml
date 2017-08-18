@@ -3832,12 +3832,36 @@
     <resource card_id="16143" number="2" />
   </fusion_recipe>
   <fusion_recipe>
+    <card_id>16144</card_id>
+    <resource card_id="6144" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26144</card_id>
+    <resource card_id="16144" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16145</card_id>
+    <resource card_id="6145" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26145</card_id>
+    <resource card_id="16145" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
     <card_id>16146</card_id>
     <resource card_id="6146" number="2" />
   </fusion_recipe>
   <fusion_recipe>
     <card_id>26146</card_id>
     <resource card_id="16146" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16147</card_id>
+    <resource card_id="6147" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26147</card_id>
+    <resource card_id="16147" number="2" />
   </fusion_recipe>
   <!-- WYLD PREMIUM SET BEGIN -->
   <fusion_recipe>
@@ -4991,6 +5015,14 @@
   <fusion_recipe>
     <card_id>27145</card_id>
     <resource card_id="17145" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17146</card_id>
+    <resource card_id="7146" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27146</card_id>
+    <resource card_id="17146" number="2" />
   </fusion_recipe>
   <fusion_recipe>
     <card_id>17147</card_id>

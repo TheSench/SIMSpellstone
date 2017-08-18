@@ -823,6 +823,24 @@ var CAMPAIGNS = {
     "location_id": "109",
     "missions": ["5238","5239","5240"]
   },
+  "1136": {
+    "id": "1136",
+    "name": "Sea Temple Defenses",
+    "location_id": "11",
+    "missions": ["3679","3680"]
+  },
+  "1137": {
+    "id": "1137",
+    "name": "Beneath the Waves",
+    "location_id": "11",
+    "missions": ["3681","3682","3683","3684","3685","3686","3687","3688","3689","3690","3691","3692"]
+  },
+  "1138": {
+    "id": "1138",
+    "name": "The Temple's Judgement",
+    "location_id": "11",
+    "missions": ["3693","3694","3695","3696","3697","3698","3699","3700","3701","3702","3703","3704"]
+  },
   "1071": {
     "id": "1071",
     "name": "SOS",
@@ -10954,7 +10972,7 @@ var MISSIONS = {
     "id": "3680",
     "name": "Jellyfish Power",
     "commander": {
-        "id": "344"
+        "id": "395"
     },
     "deck": [
       {
@@ -11254,7 +11272,7 @@ var MISSIONS = {
     "id": "3685",
     "name": "Sea Goblins",
     "commander": {
-        "id": "4"
+        "id": "395"
     },
     "deck": [
       {
@@ -11314,7 +11332,7 @@ var MISSIONS = {
     "id": "3686",
     "name": "Raiders and Pirates",
     "commander": {
-        "id": "4"
+        "id": "395"
     },
     "deck": [
       {
@@ -11494,7 +11512,7 @@ var MISSIONS = {
     "id": "3689",
     "name": "A Prayer for the Godless",
     "commander": {
-        "id": "4"
+        "id": "395"
     },
     "deck": [
       {
@@ -11554,7 +11572,7 @@ var MISSIONS = {
     "id": "3690",
     "name": "Sea Temple",
     "commander": {
-        "id": "359"
+        "id": "395"
     },
     "deck": [
       {
@@ -11614,7 +11632,7 @@ var MISSIONS = {
     "id": "3691",
     "name": "Scylla's Devout",
     "commander": {
-        "id": "352"
+        "id": "359"
     },
     "deck": [
       {
@@ -11674,7 +11692,7 @@ var MISSIONS = {
     "id": "3692",
     "name": "Seafolk Soldiers",
     "commander": {
-        "id": "7"
+        "id": "352"
     },
     "deck": [
       {
@@ -11726,6 +11744,726 @@ var MISSIONS = {
       },
       {
         "id": "7108",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "3693": {
+    "id": "3693",
+    "name": "Seafolk King",
+    "commander": {
+        "id": "4"
+    },
+    "deck": [
+      {
+        "id": "8044"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "5073"
+      },
+      {
+        "id": "7109"
+      },
+      {
+        "id": "7107"
+      },
+      {
+        "id": "2079"
+      },
+      {
+        "id": "1630"
+      },
+      {
+        "id": "7066"
+      },
+      {
+        "id": "7107",
+        "mastery_level": "2"
+      },
+      {
+        "id": "2079",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2076",
+        "mastery_level": "4"
+      },
+      {
+        "id": "2076",
+        "mastery_level": "5"
+      },
+      {
+        "id": "7106",
+        "mastery_level": "6"
+      },
+      {
+        "id": "7003",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "3694": {
+    "id": "3694",
+    "name": "Mixed Factions",
+    "commander": {
+        "id": "344"
+    },
+    "deck": [
+      {
+        "id": "8044"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "5107"
+      },
+      {
+        "id": "7109"
+      },
+      {
+        "id": "7107"
+      },
+      {
+        "id": "7107"
+      },
+      {
+        "id": "7107"
+      },
+      {
+        "id": "1630"
+      },
+      {
+        "id": "1634",
+        "mastery_level": "2"
+      },
+      {
+        "id": "2079",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2078",
+        "mastery_level": "4"
+      },
+      {
+        "id": "2078",
+        "mastery_level": "5"
+      },
+      {
+        "id": "6107",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6107",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "3695": {
+    "id": "3695",
+    "name": "Repurposed Staff",
+    "commander": {
+        "id": "4"
+    },
+    "deck": [
+      {
+        "id": "8044"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "5108"
+      },
+      {
+        "id": "2076"
+      },
+      {
+        "id": "7109"
+      },
+      {
+        "id": "7066"
+      },
+      {
+        "id": "5073"
+      },
+      {
+        "id": "1630"
+      },
+      {
+        "id": "1634",
+        "mastery_level": "2"
+      },
+      {
+        "id": "1634",
+        "mastery_level": "3"
+      },
+      {
+        "id": "6108",
+        "mastery_level": "4"
+      },
+      {
+        "id": "7107",
+        "mastery_level": "5"
+      },
+      {
+        "id": "5109",
+        "mastery_level": "6"
+      },
+      {
+        "id": "7014",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "3696": {
+    "id": "3696",
+    "name": "Soldier Squabble",
+    "commander": {
+        "id": "352"
+    },
+    "deck": [
+      {
+        "id": "8044"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "5107"
+      },
+      {
+        "id": "2076"
+      },
+      {
+        "id": "2076"
+      },
+      {
+        "id": "1630"
+      },
+      {
+        "id": "5073"
+      },
+      {
+        "id": "5073"
+      },
+      {
+        "id": "6108",
+        "mastery_level": "2"
+      },
+      {
+        "id": "6108",
+        "mastery_level": "3"
+      },
+      {
+        "id": "7005",
+        "mastery_level": "4"
+      },
+      {
+        "id": "2078",
+        "mastery_level": "5"
+      },
+      {
+        "id": "7054",
+        "mastery_level": "6"
+      },
+      {
+        "id": "2080",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "3697": {
+    "id": "3697",
+    "name": "Outsider Suspicion",
+    "commander": {
+        "id": "344"
+    },
+    "deck": [
+      {
+        "id": "8044"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "2079"
+      },
+      {
+        "id": "2079"
+      },
+      {
+        "id": "7107"
+      },
+      {
+        "id": "1630"
+      },
+      {
+        "id": "1630"
+      },
+      {
+        "id": "6108"
+      },
+      {
+        "id": "5108",
+        "mastery_level": "2"
+      },
+      {
+        "id": "2078",
+        "mastery_level": "3"
+      },
+      {
+        "id": "5073",
+        "mastery_level": "4"
+      },
+      {
+        "id": "2076",
+        "mastery_level": "5"
+      },
+      {
+        "id": "6107",
+        "mastery_level": "6"
+      },
+      {
+        "id": "7108",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "3698": {
+    "id": "3698",
+    "name": "Relentless Negotiations",
+    "commander": {
+        "id": "4"
+    },
+    "deck": [
+      {
+        "id": "8044"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "1630"
+      },
+      {
+        "id": "1630"
+      },
+      {
+        "id": "7109"
+      },
+      {
+        "id": "1634"
+      },
+      {
+        "id": "2076"
+      },
+      {
+        "id": "6108"
+      },
+      {
+        "id": "5073",
+        "mastery_level": "2"
+      },
+      {
+        "id": "5073",
+        "mastery_level": "3"
+      },
+      {
+        "id": "7005",
+        "mastery_level": "4"
+      },
+      {
+        "id": "2076",
+        "mastery_level": "5"
+      },
+      {
+        "id": "5106",
+        "mastery_level": "6"
+      },
+      {
+        "id": "7105",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "3699": {
+    "id": "3699",
+    "name": "A Proposal",
+    "commander": {
+        "id": "352"
+    },
+    "deck": [
+      {
+        "id": "8044"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "5089"
+      },
+      {
+        "id": "5091"
+      },
+      {
+        "id": "2063"
+      },
+      {
+        "id": "7109"
+      },
+      {
+        "id": "6108"
+      },
+      {
+        "id": "5073"
+      },
+      {
+        "id": "5107",
+        "mastery_level": "2"
+      },
+      {
+        "id": "7066",
+        "mastery_level": "3"
+      },
+      {
+        "id": "1634",
+        "mastery_level": "4"
+      },
+      {
+        "id": "7145",
+        "mastery_level": "5"
+      },
+      {
+        "id": "6142",
+        "mastery_level": "6"
+      },
+      {
+        "id": "7105",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "3700": {
+    "id": "3700",
+    "name": "Gathering Energy",
+    "commander": {
+        "id": "395"
+    },
+    "deck": [
+      {
+        "id": "8044"
+      },
+      {
+        "id": "6007"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "7090"
+      },
+      {
+        "id": "2102"
+      },
+      {
+        "id": "2062"
+      },
+      {
+        "id": "2053"
+      },
+      {
+        "id": "2053"
+      },
+      {
+        "id": "6108"
+      },
+      {
+        "id": "2079",
+        "mastery_level": "2"
+      },
+      {
+        "id": "7066",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2079",
+        "mastery_level": "4"
+      },
+      {
+        "id": "1333",
+        "mastery_level": "5"
+      },
+      {
+        "id": "7143",
+        "mastery_level": "6"
+      },
+      {
+        "id": "7106",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "3701": {
+    "id": "3701",
+    "name": "Reviving Technology",
+    "commander": {
+        "id": "359"
+    },
+    "deck": [
+      {
+        "id": "8044"
+      },
+      {
+        "id": "6007"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "6089"
+      },
+      {
+        "id": "2064"
+      },
+      {
+        "id": "1628"
+      },
+      {
+        "id": "6090"
+      },
+      {
+        "id": "2053"
+      },
+      {
+        "id": "7066"
+      },
+      {
+        "id": "1630",
+        "mastery_level": "2"
+      },
+      {
+        "id": "6108",
+        "mastery_level": "3"
+      },
+      {
+        "id": "7107",
+        "mastery_level": "4"
+      },
+      {
+        "id": "5089",
+        "mastery_level": "5"
+      },
+      {
+        "id": "7026",
+        "mastery_level": "6"
+      },
+      {
+        "id": "7023",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "3702": {
+    "id": "3702",
+    "name": "Energy Restoration",
+    "commander": {
+        "id": "395"
+    },
+    "deck": [
+      {
+        "id": "8044"
+      },
+      {
+        "id": "6007"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "7087"
+      },
+      {
+        "id": "1628"
+      },
+      {
+        "id": "1628"
+      },
+      {
+        "id": "7145"
+      },
+      {
+        "id": "2064"
+      },
+      {
+        "id": "7109"
+      },
+      {
+        "id": "7005",
+        "mastery_level": "2"
+      },
+      {
+        "id": "7107",
+        "mastery_level": "3"
+      },
+      {
+        "id": "1634",
+        "mastery_level": "4"
+      },
+      {
+        "id": "5091",
+        "mastery_level": "5"
+      },
+      {
+        "id": "5092",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6107",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "3703": {
+    "id": "3703",
+    "name": "The Guardian's Cries",
+    "commander": {
+        "id": "337"
+    },
+    "deck": [
+      {
+        "id": "8044"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "2063"
+      },
+      {
+        "id": "1628"
+      },
+      {
+        "id": "5073"
+      },
+      {
+        "id": "7066"
+      },
+      {
+        "id": "6089"
+      },
+      {
+        "id": "7107"
+      },
+      {
+        "id": "5107",
+        "mastery_level": "2"
+      },
+      {
+        "id": "2078",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2076",
+        "mastery_level": "4"
+      },
+      {
+        "id": "7087",
+        "mastery_level": "5"
+      },
+      {
+        "id": "7088",
+        "mastery_level": "6"
+      },
+      {
+        "id": "5106",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "3704": {
+    "id": "3704",
+    "name": "The Guardian's Fury",
+    "commander": {
+        "id": "337"
+    },
+    "deck": [
+      {
+        "id": "8044"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "7007"
+      },
+      {
+        "id": "7090"
+      },
+      {
+        "id": "1628"
+      },
+      {
+        "id": "5108"
+      },
+      {
+        "id": "2078"
+      },
+      {
+        "id": "6021"
+      },
+      {
+        "id": "2078"
+      },
+      {
+        "id": "7109",
+        "mastery_level": "2"
+      },
+      {
+        "id": "7066",
+        "mastery_level": "3"
+      },
+      {
+        "id": "1634",
+        "mastery_level": "4"
+      },
+      {
+        "id": "7145",
+        "mastery_level": "5"
+      },
+      {
+        "id": "7054",
+        "mastery_level": "6"
+      },
+      {
+        "id": "7105",
         "mastery_level": "7"
       },
     ]

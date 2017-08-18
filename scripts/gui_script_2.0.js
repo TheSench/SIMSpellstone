@@ -194,7 +194,7 @@ function updateGameData(callback) {
             callback();
         }
     }
-    DATA_UPDATER.updateCards(done, true);
+    DATA_UPDATER.updateData(done, true);
 }
 
 function setDeckSortable(deckField, associatedHashField)

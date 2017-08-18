@@ -6721,5 +6721,202 @@
       <gold>800</gold>
     </reward>
   </achievement>
+  <!-- Campaign Event 5 -->
+  <achievement>
+    <id>3264</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Sea Temple Defenses</name>
+    <desc>Complete the 'Sea Temple Defenses' campaign on Mastery Level 4.</desc>
+    <mission_req>64</mission_req>
+    <locked_start_time>1503594000</locked_start_time>
+    <!-- Thu, 24 August 2017 17:00:00 -->
+    <req>
+      <campaign>1136</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <item id="3059" number="50" />
+      <event_points id="7024" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3265</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Sea Temple Defenses</name>
+    <desc>Complete the 'Sea Temple Defenses' campaign on Mastery Level 7.</desc>
+    <locked_start_time>1503594000</locked_start_time>
+    <!-- Thu, 24 August 2017 17:00:00 -->
+    <achievement_req>3264</achievement_req>
+    <req>
+      <campaign>1136</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3266</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Beneath the Waves</name>
+    <desc>Complete the 'Beneath the Waves' campaign on Mastery Level 2.</desc>
+    <mission_req>64</mission_req>
+    <locked_start_time>1503594000</locked_start_time>
+    <!-- Thu, 24 August 2017 17:00:00 -->
+    <req>
+      <campaign>1137</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3267</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Beneath the Waves</name>
+    <desc>Complete the 'Beneath the Waves' campaign on Mastery Level 4.</desc>
+    <mission_req>64</mission_req>
+    <locked_start_time>1503594000</locked_start_time>
+    <!-- Thu, 24 August 2017 17:00:00 -->
+    <achievement_req>3266</achievement_req>
+    <req>
+      <campaign>1137</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3268</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Beneath the Waves</name>
+    <desc>Complete the 'Beneath the Waves' campaign on Mastery Level 6.</desc>
+    <mission_req>64</mission_req>
+    <locked_start_time>1503594000</locked_start_time>
+    <!-- Thu, 24 August 2017 17:00:00 -->
+    <achievement_req>3267</achievement_req>
+    <req>
+      <campaign>1137</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3269</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Beneath the Waves</name>
+    <desc>Complete the 'Beneath the Waves' campaign on Mastery Level 7.</desc>
+    <mission_req>64</mission_req>
+    <locked_start_time>1503594000</locked_start_time>
+    <!-- Thu, 24 August 2017 17:00:00 -->
+    <achievement_req>3268</achievement_req>
+    <req>
+      <campaign>1137</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3270</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Temple's Judgement</name>
+    <desc>Complete the 'The Temple's Judgement' campaign on Mastery Level 2.</desc>
+    <mission_req>5692</mission_req>
+    <locked_start_time>1504803600</locked_start_time>
+    <!-- Thu, 7 Sept 2017 17:00:00 -->
+    <req>
+      <campaign>1138</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3271</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Temple's Judgement</name>
+    <desc>Complete the 'The Temple's Judgement' campaign on Mastery Level 4.</desc>
+    <mission_req>5692</mission_req>
+    <locked_start_time>1504803600</locked_start_time>
+    <!-- Thu, 7 Sept 2017 17:00:00 -->
+    <achievement_req>3270</achievement_req>
+    <req>
+      <campaign>1138</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3272</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Temple's Judgement</name>
+    <desc>Complete the 'The Temple's Judgement' campaign on Mastery Level 6.</desc>
+    <mission_req>5692</mission_req>
+    <locked_start_time>1504803600</locked_start_time>
+    <!-- Thu, 7 Sept 2017 17:00:00 -->
+    <achievement_req>3271</achievement_req>
+    <req>
+      <campaign>1138</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3273</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Temple's Judgement</name>
+    <desc>Complete the 'The Temple's Judgement' campaign on Mastery Level 7.</desc>
+    <mission_req>5692</mission_req>
+    <locked_start_time>1504803600</locked_start_time>
+    <!-- Thu, 7 Sept 2017 17:00:00 -->
+    <achievement_req>3272</achievement_req>
+    <req>
+      <campaign>1138</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- Frog Clam Recipe 
+	
+	<achievement>
+		<id>3274</id>
+		<type>2</type>
+		<order>101</order>
+		<name>No Place is Home</name>
+		<desc>Complete the 'No Place is Home' campaign on Mastery Level 1.</desc>
+		<mission_req>5692</mission_req>
+		<locked_start_time>1504803600</locked_start_time>	| Thu, 7 Sept 2017 17:00:00 |
+		<req>
+			<campaign>1139</campaign>
+			<level>1</level>
+		</req>
+		<reward>
+			<item id='8003' number='1' />
+		</reward>
+	</achievement>
+	-->
   <!-- END Event Quests  -->
 </root>

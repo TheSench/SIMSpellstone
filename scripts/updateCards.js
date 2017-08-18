@@ -6,7 +6,9 @@ var DATA_UPDATER = (function () {
 
     var newCards = {};
     var lastUpdate = null;
-    function updateCards(callback, forceUpdate) {
+
+    function updateData(callback, forceUpdate) {
+
         $("body").addClass("loading");
         $("#loadingSplash").html("Checking for New Cards...");
         // Don't update more than once per minute
@@ -14,16 +16,44 @@ var DATA_UPDATER = (function () {
         if (!lastUpdate || lastUpdate - now > 60000 || forceUpdate) {
             lastUpdate = now;
             newCards = {};
-            setTimeout(doUpdateCards, 0, callback);
+            var promises = [];
+            promises.push(updateCards());
+            //promises.push(updateBGEs());
+            //promises.push(updateCampaignData());
+            function finishedLoading() {
+                doneLoading();
+                callback && callback();
+            }
+            $.when.apply($, promises).then(finishedLoading, finishedLoading);
         } else {
-            if(callback) callback();
+            if (callback) callback();
         }
+    }
+
+    function updateBGEs() {
+        return jQuery.ajax({
+            url: baseUrl + "/assets/battleground_effects.xml",
+            success: function (doc) {
+                var battlegrounds = doc.getElementsByTagName("battleground");
+                for (var i = 0; i < battlegrounds.length; i++) {
+                    var battleground = battlegrounds[i];
+                    var id = getValue(battleground, "id");
+                    var battlegroundData = getBattlegroundFromXML(battleground);
+
+                    if (JSON.stringify(BATTLEGROUNDS[id]) !== JSON.stringify(battlegroundData)) {
+                        newCards[id] = battlegroundData;
+                        BATTLEGROUNDS[id] = battlegroundData;
+                    }
+                }
+            },
+            async: true,
+            cache: false,
+        });
     }
 
     function doneLoading() {
         $("body").removeClass("loading");
     }
-
 
     var cardFiles = [
         //"cards.xml"
@@ -37,7 +67,7 @@ var DATA_UPDATER = (function () {
         "cards_story.xml",
         "fusion_recipes_cj2.xml"
     ];
-    function doUpdateCards(callback) {
+    function updateCards() {
         var promises = [];
         for (var file = 0; file < cardFiles.length; file++) {
             var promise = jQuery.ajax({
@@ -80,14 +110,10 @@ var DATA_UPDATER = (function () {
             promises.push(promise);
         }
 
-        var finishedLoading = function () {
-            onLoaded(callback);
-        }
-
-        $.when.apply($, promises).done(finishedLoading).fail(finishedLoading);
+        return $.when.apply($, promises);
     }
 
-    function onLoaded(callback) {
+    function onLoaded() {
         if (typeof storageAPI !== "undefined") {
             var cardData = storageAPI.getField("GameData", "CardCache");
 
@@ -100,7 +126,6 @@ var DATA_UPDATER = (function () {
 
             storageAPI.setField("GameData", "CardCache", cardData);
         }
-        if (callback) setTimeout(callback, 0);
     }
 
     function getUnitFromXML(node) {
@@ -185,6 +210,18 @@ var DATA_UPDATER = (function () {
         return upgrade;
     }
 
+    function getBattlegroundFromXML(node) {
+        var battleground = {};
+        battleground.id = getValue(node, "id");
+        battleground.name = getValue(node, "name");
+        battleground.desc = getValue(node, "desc");
+        battleground.desc = getBool(node, "enemy_only");
+        addField(battleground, node, "scale_with_level");
+        addField(battleground, node, "starting_level");
+
+        return battleground;
+    }
+
     function addField(object, node, field, isAtt) {
         var value = getValue(node, field, isAtt);
         if (value != null && value.length > 0) {
@@ -206,6 +243,17 @@ var DATA_UPDATER = (function () {
             var values = getValues(node, name);
             return (values ? values[0] : null);
         }
+    }
+
+    function getBool(node, name, isAtt) {
+        var val;
+        if (isAtt) {
+            val = node.getAttribute(name);
+        } else {
+            var values = getValues(node, name);
+            val = (values ? values[0] : null);
+        }
+        return (val == 1);
     }
 
     function prefix(value, prefix) {
@@ -237,7 +285,72 @@ var DATA_UPDATER = (function () {
         }
     }
 
+    function updateCampaignData() {
+        var promises = [];
+        promises.push(updateCampaigns());
+        promises.push(updateMissions("/assets/missions.xml"));
+        promises.push(updateMissions("/assets/missions_event.xml"));
+        return $.when.apply($, promises);
+    }
+
+    function updateCampaigns() {
+        jQuery.ajax({
+            url: baseUrl + "/assets/campaigns.xml",
+            success: function (doc) {
+                var campaigns = doc.getElementsByTagName("campaign");
+                for (var i = 0; i < campaigns.length; i++) {
+                    var campaign = campaigns[i];
+                    var id = getValue(campaign, "id");
+                    if (!CAMPAIGNS[id]) {
+                        CAMPAIGNS[id] = getCampaignFromXML(campaign);
+                    }
+                }
+            },
+            async: false,
+            cache: false,
+        });
+    }
+
+    function getCampaignFromXML(node) {
+        var campaign = {
+            id: getValue(node, "id"),
+            name: getValue(node, "name"),
+            missions: getCampaignMissionsFromXML(node)
+        };
+        return campaign;
+    }
+
+    function getCampaignMissionsFromXML(node) {
+        var nodes = node.getElementsByTagName("mission_id");
+        var missions = [];
+        for (var i = 0; i < nodes.length; i++) {
+            missions.push(nodes[i].innerHTML);
+        }
+        return missions;
+    }
+
+    function updateMissions(fileURL) {
+        jQuery.ajax({
+            url: baseUrl + fileURL,
+            success: function (doc) {
+                var missions = doc.getElementsByTagName("mission");
+                for (var i = 0; i < missions.length; i++) {
+                    var mission = missions[i];
+                    var id = getValue(mission, "id");
+                    if (!MISSIONS[id]) {
+                        MISSIONS[id] = {
+                            id: id,
+                            name: getValue(mission, "name")
+                        };
+                    }
+                }
+            },
+            async: false,
+            cache: false,
+        });
+    }
+
     return {
-        updateCards: updateCards
+        updateData: updateData
     };
 })();
