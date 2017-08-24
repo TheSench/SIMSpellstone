@@ -2445,9 +2445,9 @@ var factions = {
         12: 'Seafolk',
         13: 'Insect',
         14: 'Bear',
-        15: 'Mecha',
+        15: 'Token',
+        16: 'Mecha',
 
-        9998: 'Token',
         999: 'Tower'
     },
     IDs: {
@@ -2466,9 +2466,9 @@ var factions = {
         Seafolk: 12,
         Insect: 13,
         Bear: 14,
-        Mecha: 15,
+        Token: 15,
+        Mecha: 16,
 
-        Token: 998,
         Tower: 999
     }
 };
