@@ -730,6 +730,7 @@
     <rarity>2</rarity>
     <skill id="armored" x="1" />
     <type>1</type>
+    <sub_type>16</sub_type>
     <set>1000</set>
     <release_set>1</release_set>
     <upgrade>
@@ -764,6 +765,7 @@
     <skill id="armored" x="3" />
     <skill id="weaken" x="1" />
     <type>1</type>
+    <sub_type>16</sub_type>
     <set>1000</set>
     <release_set>1</release_set>
     <upgrade>
@@ -795,6 +797,7 @@
     <skill id="armored" x="3" />
     <skill id="weaken" x="2" />
     <type>1</type>
+    <sub_type>16</sub_type>
     <set>1000</set>
     <release_set>1</release_set>
     <upgrade>
@@ -5243,6 +5246,7 @@
     <skill id="burn" x="1" />
     <type>2</type>
     <sub_type>11</sub_type>
+    <sub_type>16</sub_type>
     <set>1000</set>
     <upgrade>
       <level>2</level>
@@ -5282,6 +5286,7 @@
     <skill id="weaken" x="1" />
     <type>2</type>
     <sub_type>11</sub_type>
+    <sub_type>16</sub_type>
     <set>1000</set>
     <upgrade>
       <level>2</level>
@@ -5322,6 +5327,7 @@
     <skill id="weaken" x="3" />
     <type>2</type>
     <sub_type>11</sub_type>
+    <sub_type>16</sub_type>
     <set>1000</set>
     <upgrade>
       <level>2</level>
@@ -7956,11 +7962,11 @@
     <name>Giant Squid</name>
     <picture>Giant_Squid_A</picture>
     <asset_bundle>3</asset_bundle>
-    <attack>3</attack>
+    <attack>4</attack>
     <health>19</health>
     <cost>3</cost>
     <rarity>3</rarity>
-    <skill id="enfeeble" x="1" />
+    <skill id="enfeeble" x="2" />
     <skill id="jam" c="6" />
     <skill id="leech" x="2" />
     <type>3</type>
@@ -7970,27 +7976,27 @@
     <upgrade>
       <level>2</level>
       <health>20</health>
-      <skill id="enfeeble" x="2" />
+      <skill id="enfeeble" x="3" />
       <skill id="jam" c="6" />
       <skill id="leech" x="2" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>21</health>
-      <skill id="enfeeble" x="2" />
+      <skill id="enfeeble" x="3" />
       <skill id="jam" c="5" />
       <skill id="leech" x="2" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>4</attack>
-      <skill id="enfeeble" x="2" />
+      <attack>5</attack>
+      <skill id="enfeeble" x="3" />
       <skill id="jam" c="5" />
       <skill id="leech" x="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="enfeeble" x="3" />
+      <skill id="enfeeble" x="4" />
       <skill id="jam" c="5" />
       <skill id="leech" x="3" />
     </upgrade>
@@ -8002,11 +8008,11 @@
     <name>Hulking Squid</name>
     <picture>Giant_Squid_B</picture>
     <asset_bundle>3</asset_bundle>
-    <attack>4</attack>
+    <attack>5</attack>
     <health>23</health>
     <cost>3</cost>
     <rarity>3</rarity>
-    <skill id="enfeeble" x="3" />
+    <skill id="enfeeble" x="4" />
     <skill id="jam" c="5" />
     <skill id="leech" x="3" />
     <type>3</type>
@@ -8019,17 +8025,18 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <skill id="enfeeble" x="3" />
+      <skill id="enfeeble" x="5" />
       <skill id="jam" c="5" />
       <skill id="leech" x="4" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>5</attack>
+      <attack>6</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="enfeeble" x="3" />
+      <health>25</health>
+      <skill id="enfeeble" x="5" />
       <skill id="jam" c="4" />
       <skill id="leech" x="5" />
     </upgrade>
@@ -8041,11 +8048,11 @@
     <name>Monstrous Squid</name>
     <picture>Giant_Squid_C</picture>
     <asset_bundle>3</asset_bundle>
-    <attack>5</attack>
-    <health>25</health>
+    <attack>6</attack>
+    <health>26</health>
     <cost>3</cost>
     <rarity>3</rarity>
-    <skill id="enfeeble" x="3" />
+    <skill id="enfeeble" x="6" />
     <skill id="jam" c="4" />
     <skill id="leech" x="5" />
     <type>3</type>
@@ -8054,24 +8061,25 @@
     <release_set>1</release_set>
     <upgrade>
       <level>2</level>
-      <health>26</health>
+      <health>28</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>6</attack>
-      <health>27</health>
+      <attack>7</attack>
+      <health>29</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="enfeeble" x="4" />
+      <skill id="enfeeble" x="7" />
       <skill id="jam" c="4" />
       <skill id="leech" x="6" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="enfeeble" x="5" />
+      <health>31</health>
+      <skill id="enfeeble" x="8" />
       <skill id="jam" c="3" />
-      <skill id="leech" x="6" />
+      <skill id="leech" x="7" />
     </upgrade>
   </unit>
   <unit>
@@ -9081,7 +9089,7 @@
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>30</health>
+      <health>31</health>
       <attack>7</attack>
     </upgrade>
     <upgrade>
@@ -9100,7 +9108,7 @@
     <asset_bundle>38</asset_bundle>
     <hidden_until_time></hidden_until_time>
     <attack>7</attack>
-    <health>32</health>
+    <health>33</health>
     <cost>4</cost>
     <rarity>4</rarity>
     <skill id="evade" x="1" />
@@ -9112,29 +9120,30 @@
     <set>1000</set>
     <upgrade>
       <level>2</level>
-      <health>33</health>
+      <health>34</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>34</health>
+      <health>35</health>
       <skill id="evade" x="1" />
       <skill id="corrosive" x="4" />
       <skill id="enfeeble" x="2" all="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>35</health>
+      <health>36</health>
       <skill id="evade" x="1" />
       <skill id="corrosive" x="5" />
       <skill id="enfeeble" x="2" all="1" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>36</health>
+      <health>37</health>
       <attack>8</attack>
     </upgrade>
     <upgrade>
       <level>6</level>
+      <health>38</health>
       <skill id="evade" x="2" />
       <skill id="corrosive" x="5" />
       <skill id="enfeeble" x="3" all="1" />
@@ -9148,8 +9157,8 @@
     <picture>Undead_Seafolk_B</picture>
     <asset_bundle>38</asset_bundle>
     <hidden_until_time></hidden_until_time>
-    <attack>8</attack>
-    <health>38</health>
+    <attack>9</attack>
+    <health>40</health>
     <cost>4</cost>
     <rarity>4</rarity>
     <skill id="evade" x="2" />
@@ -9161,23 +9170,23 @@
     <set>1000</set>
     <upgrade>
       <level>2</level>
-      <health>39</health>
+      <health>41</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>40</health>
-      <attack>9</attack>
+      <health>42</health>
+      <attack>10</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>41</health>
+      <health>43</health>
       <skill id="evade" x="3" />
       <skill id="corrosive" x="6" />
       <skill id="enfeeble" x="3" all="1" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>42</health>
+      <health>44</health>
       <skill id="evade" x="3" />
       <skill id="corrosive" x="6" />
       <skill id="enfeeble" x="3" all="1" />

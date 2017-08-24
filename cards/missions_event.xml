@@ -20780,7 +20780,7 @@
       <card id="7007" name="Water Serpent" />
       <card id="7007" name="Water Serpent" />
       <card id="7017" name="Coral Elemental" />
-      <card id="8044" name="Aegis of the Sea" />
+      <card id="8089" name="Aegis of the Sea" />
       <card id="5091" name="Armor Thief" />
       <card id="2053" name="Rocket Rider" />
       <card id="5073" name="Shell Invader" />
@@ -20811,7 +20811,7 @@
       <card id="7007" name="Water Serpent" />
       <card id="7007" name="Water Serpent" />
       <card id="7006" name="Treant Sapling" />
-      <card id="8046" name="Winter's Sting" />
+      <card id="8089" name="Temple Automaton" />
       <card id="6090" name="Crackshot" />
       <card id="2102" name="Lowbog Shaman" />
       <card id="7066" name="Aquine" />
@@ -20871,7 +20871,7 @@
       <card id="6007" name="Goblin Crew" />
       <card id="6007" name="Goblin Crew" />
       <card id="6006" name="Chaos Golem" />
-      <card id="8046" name="Winter's Sting" />
+      <card id="8089" name="Temple Automaton" />
       <card id="2064" name="Tome Sneak" />
       <card id="1628" name="Garganotos" />
       <card id="1630" name="Giant Squid" />
@@ -20902,7 +20902,7 @@
       <card id="6007" name="Goblin Crew" />
       <card id="6007" name="Goblin Crew" />
       <card id="6006" name="Chaos Golem" />
-      <card id="8046" name="Winter's Sting" />
+      <card id="8089" name="Temple Automaton" />
       <card id="2053" name="Rocket Rider" />
       <card id="1628" name="Garganotos" />
       <card id="1630" name="Giant Squid" />
@@ -20922,7 +20922,7 @@
         <text>I don't got time for this! Men, keep 'em busy!</text>
       </line>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portraits_Goblin_Diver</commander>
         <enemy>1</enemy>
         <text>Yes Captain!</text>
       </line>
@@ -20998,7 +20998,7 @@
       <card id="6007" name="Goblin Crew" />
       <card id="7007" name="Water Serpent" />
       <card id="6012" name="Ember Drake" />
-      <card id="8044" name="Aegis of the Sea" />
+      <card id="8089" name="Temple Automaton" />
       <card id="5073" name="Shell Invader" />
       <card id="2076" name="Adorabilis" />
       <card id="1630" name="Giant Squid" />
@@ -21050,7 +21050,7 @@
     <speech>
       <line>
         <commander>elementalhero</commander>
-        <enemy>1</enemy>
+        <enemy>0</enemy>
         <text>Hmm, odd that the king would be visiting a temple. Hopefully he's not a follower of Scylla, or we may have a problem on our hands.</text>
       </line>
     </speech>
@@ -21065,7 +21065,7 @@
       <card id="5017" name="Steam Tempest" />
       <card id="7007" name="Water Serpent" />
       <card id="6007" name="Goblin Crew" />
-      <card id="8044" name="Aegis of the Sea" />
+      <card id="8089" name="Temple Automaton" />
       <card id="6143" name="Dynamic Entry" />
       <card id="1628" name="Garganotos" />
       <card id="2076" name="Adorabilis" />
@@ -21120,7 +21120,7 @@
       <card id="5007" name="Arcane Scroll" />
       <card id="7007" name="Water Serpent" />
       <card id="6007" name="Goblin Crew" />
-      <card id="8044" name="Aegis of the Sea" />
+      <card id="8089" name="Temple Automaton" />
       <card id="1628" name="Garganotos" />
       <card id="5108" name="Aurora Skimmer" />
       <card id="2078" name="Septuamaid" />
@@ -21139,7 +21139,7 @@
     <name>Seafolk King</name>
     <energy>9</energy>
     <desc>From the temple's crumbled doors, a fierce-looking Merman emerges. The other Seafolk part their ranks, giving him a path to speak to you.</desc>
-    <commander id="4" />
+    <commander id="396" />
     <deck>
       <card id="8044" name="Aegis of the Sea" />
       <card id="7007" name="Water Serpent" />
@@ -21159,7 +21159,7 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portraits_Seafolk_King</commander>
         <enemy>1</enemy>
         <text>Why have you come to our sacred temple?</text>
       </line>
@@ -21172,7 +21172,7 @@
     <desc>You and Rayne explain why you have traveled all the way under the sea. The merman introduces himself as the King of the Seafolk, stroking his beard thoughtfully...</desc>
     <commander id="344" />
     <deck>
-      <card id="8044" name="Aegis of the Sea" />
+      <card id="8089" name="Temple Automaton" />
       <card id="7007" name="Water Serpent" />
       <card id="7007" name="Water Serpent" />
       <card id="5107" name="Thrumming Beacon" />
@@ -21190,7 +21190,7 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portraits_Seafolk_King</commander>
         <enemy>1</enemy>
         <text>I am the King of the Sea, King Proteus. Those pitiful raiders who attacked Duskwillow are no allies of ours...</text>
       </line>
@@ -21201,7 +21201,7 @@
     <name>Repurposed Staff</name>
     <energy>9</energy>
     <desc>Rayne notices something that the Seafolk King is carrying. But the rest of the Seafolk grow tense when Rayne points it out, some even grabbing their weapons.</desc>
-    <commander id="4" />
+    <commander id="396" />
     <deck>
       <card id="8044" name="Aegis of the Sea" />
       <card id="6007" name="Goblin Crew" />
@@ -21226,7 +21226,7 @@
         <text>Is that... the Seastone Staff you're carrying?</text>
       </line>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portraits_Seafolk_King</commander>
         <enemy>1</enemy>
         <text>It's just as the goblins said. They've come for the staff. Seize them!</text>
       </line>
@@ -21244,7 +21244,7 @@
     <desc>The guards that were with the Seafolk King raise their tridents, battling their might against yours. Despite your hurry, it seems the goblins were able to speak with the King before you, and convinced them to fight...</desc>
     <commander id="397" />
     <deck>
-      <card id="8044" name="Aegis of the Sea" />
+      <card id="8089" name="Temple Automaton" />
       <card id="7007" name="Water Serpent" />
       <card id="7007" name="Water Serpent" />
       <card id="5107" name="Thrumming Beacon" />
@@ -21291,7 +21291,7 @@
         <text>Calm yourself. We have come with the intention of peace.</text>
       </line>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portraits_Seafolk_King</commander>
         <enemy>1</enemy>
         <text>If you've come with the intention of parley, you should have thought twice before making demands.</text>
       </line>
@@ -21302,9 +21302,9 @@
     <name>Relentless Negotiations</name>
     <energy>9</energy>
     <desc>Rayne refuses to stop trying. Failing here could spark a war between the Seafolk and the other tribes. The two of you endure everything that the Seafolk throw at you.</desc>
-    <commander id="4" />
+    <commander id="396" />
     <deck>
-      <card id="8044" name="Aegis of the Sea" />
+      <card id="8089" name="Temple Automaton" />
       <card id="7007" name="Water Serpent" />
       <card id="7007" name="Water Serpent" />
       <card id="1630" name="Giant Squid" />
@@ -21353,12 +21353,12 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portraits_Seafolk_King</commander>
         <enemy>1</enemy>
         <text>Hmm, so you wish to prove yourself. So be it. The power to our main city has gone out.</text>
       </line>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portraits_Seafolk_King</commander>
         <enemy>1</enemy>
         <text>We have arrived here to restore the power supply, which will also activate the Temple's defenses. Aid us, and we might consider your words.</text>
       </line>
@@ -21371,7 +21371,7 @@
     <desc>With a new mission in mind, you and Rayne leave the Seafolk King. Palm-sized jellyfish hover in the sea, which when gathered, emit a charge of electricity.</desc>
     <commander id="395" />
     <deck>
-      <card id="8044" name="Aegis of the Sea" />
+      <card id="8089" name="Temple Automaton" />
       <card id="6007" name="Goblin Crew" />
       <card id="6007" name="Goblin Crew" />
       <card id="7090" name="Prospector" />
@@ -21426,7 +21426,7 @@
     <desc>When you're able to supply at least some power back to the temple's defenses, you return to King Proteus. He has waited, as promised.</desc>
     <commander id="395" />
     <deck>
-      <card id="8044" name="Aegis of the Sea" />
+      <card id="8089" name="Temple Automaton" />
       <card id="6007" name="Goblin Crew" />
       <card id="7007" name="Water Serpent" />
       <card id="7087" name="Goblites" />
@@ -21449,7 +21449,7 @@
         <text>The defense system will require more energy to reboot completely. But it should be enough to help your people, King Proteus.</text>
       </line>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portraits_Seafolk_King</commander>
         <enemy>1</enemy>
         <text>Good.</text>
       </line>
@@ -21485,7 +21485,7 @@
         <text>Now what was THAT?</text>
       </line>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portraits_Seafolk_King</commander>
         <enemy>1</enemy>
         <text>The guardian of the Pharos Temple is awakening...</text>
       </line>
@@ -21498,9 +21498,9 @@
     <desc>Tentacles reach out from the temple, stretching towards you and Rayne! The Seafolk King and his men flee from the creature, leaving you to handle it.</desc>
     <commander id="337" />
     <deck>
-      <card id="8044" name="Aegis of the Sea" />
-      <card id="7007" name="Water Serpent" />
-      <card id="7007" name="Water Serpent" />
+      <card id="8089" name="Temple Automaton" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6007" name="Goblin Crew" />
       <card id="7090" name="Prospector" />
       <card id="1628" name="Garganotos" />
       <card id="5108" name="Aurora Skimmer" />
@@ -21516,7 +21516,7 @@
     </deck>
     <speech>
       <line>
-        <commander>necromancer</commander>
+        <commander>Portraits_Seafolk_King</commander>
         <enemy>0</enemy>
         <text>Guardian, we mean no harm to the Temple!</text>
       </line>

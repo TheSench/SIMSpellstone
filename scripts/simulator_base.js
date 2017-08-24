@@ -288,14 +288,14 @@ var SIMULATOR = {};
             return activationSkills.protect(src_card, skill, "barrier_ice");
         },
         protect_seafolk: function (src_card, skill) {
-            return activationSkills.protect(src_card, skill);
+            return activationSkills.protect(src_card, skill, null, null, true);
         },
         evadebarrier: function (src_card, skill) {
             return activationSkills.protect(src_card, skill, "invisible", function (target, amount) {
                 return ' and imbues it with invisible ' + amount;
             });
         },
-        protect: function (src_card, skill, additional, additionalDebug) {
+        protect: function (src_card, skill, additional, additionalDebug, onlyOnDelay) {
 
             var faction = skill['y'];
 
@@ -310,6 +310,7 @@ var SIMULATOR = {};
             for (var key = 0, len = field_p_assaults.length; key < len; key++) {
                 var target = field_p_assaults[key];
                 if (target.isAlive()
+                && (!onlyOnDelay || !target.isActive())
                 && target.isInFaction(faction)) {
                     targets.push(key);
                 }
