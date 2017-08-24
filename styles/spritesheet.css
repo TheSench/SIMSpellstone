@@ -43,6 +43,8 @@
 .sprite-Angel_Knight_C{ background-position: -168px -120px; background-image: url('../res/sprites/SpriteSheet1.jpg');}
 .sprite-Angel_Mage_A{ background-position: -252px -120px; background-image: url('../res/sprites/SpriteSheet1.jpg');}
 .sprite-Angel_Mage_B{ background-position: -336px -120px; background-image: url('../res/sprites/SpriteSheet1.jpg');}
+.sprite-Angel_Merman_A{ background-position: -588px -120px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
+.sprite-Angel_Merman_B{ background-position: -672px -120px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
 .sprite-Angel_Mountain_Cleaver_Angel_A{ background-position: -252px -840px; background-image: url('../res/sprites/SpriteSheet12.jpg');}
 .sprite-Angel_Mountain_Cleaver_Angel_B{ background-position: -336px -840px; background-image: url('../res/sprites/SpriteSheet12.jpg');}
 .sprite-Angel_Muscle_Monster_A{ background-position: -420px -120px; background-image: url('../res/sprites/SpriteSheet1.jpg');}
@@ -75,6 +77,8 @@
 .sprite-Armored_Eagle_C{ background-position: -420px -360px; background-image: url('../res/sprites/SpriteSheet1.jpg');}
 .sprite-Armored_Larva_A{ background-position: -504px -720px; background-image: url('../res/sprites/SpriteSheet14.jpg');}
 .sprite-Armored_Larva_B{ background-position: -588px -720px; background-image: url('../res/sprites/SpriteSheet14.jpg');}
+.sprite-Armored_Lightning_Kraken_Seafolk_A{ background-position: -756px -120px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
+.sprite-Armored_Lightning_Kraken_Seafolk_B{ background-position: -0px -240px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
 .sprite-Armored_Ogre_A{ background-position: -504px -360px; background-image: url('../res/sprites/SpriteSheet1.jpg');}
 .sprite-Armored_Ogre_B{ background-position: -588px -360px; background-image: url('../res/sprites/SpriteSheet1.jpg');}
 .sprite-Armored_Rock_Frog_A{ background-position: -672px -360px; background-image: url('../res/sprites/SpriteSheet1.jpg');}
@@ -181,6 +185,8 @@
 .sprite-Brimstone_Hunting_Dragons_B{ background-position: -84px -600px; background-image: url('../res/sprites/SpriteSheet13.jpg');}
 .sprite-Broodmother_A{ background-position: -84px -120px; background-image: url('../res/sprites/SpriteSheet2.jpg');}
 .sprite-Broodmother_B{ background-position: -168px -120px; background-image: url('../res/sprites/SpriteSheet2.jpg');}
+.sprite-Bubble_Belly_Fish_A{ background-position: -84px -240px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
+.sprite-Bubble_Belly_Fish_B{ background-position: -168px -240px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
 .sprite-Bug_Goliath_A{ background-position: -0px -360px; background-image: url('../res/sprites/SpriteSheet14.jpg');}
 .sprite-Bug_Goliath_B{ background-position: -84px -360px; background-image: url('../res/sprites/SpriteSheet14.jpg');}
 .sprite-Bug_Of_Fire_and_Ice_A{ background-position: -252px -120px; background-image: url('../res/sprites/SpriteSheet2.jpg');}
@@ -211,6 +217,8 @@
 .sprite-Cerberus_C{ background-position: -0px -360px; background-image: url('../res/sprites/SpriteSheet2.jpg');}
 .sprite-Chain_Fiend_A{ background-position: -84px -360px; background-image: url('../res/sprites/SpriteSheet2.jpg');}
 .sprite-Chain_Fiend_B{ background-position: -168px -360px; background-image: url('../res/sprites/SpriteSheet2.jpg');}
+.sprite-Chain_Shark_A{ background-position: -252px -240px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
+.sprite-Chain_Shark_B{ background-position: -336px -240px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
 .sprite-Chained_Gatekeeper_Dragon_A{ background-position: -336px -720px; background-image: url('../res/sprites/SpriteSheet13.jpg');}
 .sprite-Chained_Gatekeeper_Dragon_B{ background-position: -420px -720px; background-image: url('../res/sprites/SpriteSheet13.jpg');}
 .sprite-Chalice_Angel_A{ background-position: -756px -960px; background-image: url('../res/sprites/SpriteSheet12.jpg');}
@@ -237,6 +245,8 @@
 .sprite-Choas_Frog_Guardian_Dragon_B{ background-position: -588px -720px; background-image: url('../res/sprites/SpriteSheet13.jpg');}
 .sprite-Cicada_Crier_A{ background-position: -168px -360px; background-image: url('../res/sprites/SpriteSheet14.jpg');}
 .sprite-Cicada_Crier_B{ background-position: -252px -360px; background-image: url('../res/sprites/SpriteSheet14.jpg');}
+.sprite-Clam_Frog_A{ background-position: -420px -240px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
+.sprite-Clam_Frog_B{ background-position: -504px -240px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
 .sprite-Claw_Hand_Demon_A{ background-position: -84px -600px; background-image: url('../res/sprites/SpriteSheet2.jpg');}
 .sprite-Claw_Hand_Demon_B{ background-position: -168px -600px; background-image: url('../res/sprites/SpriteSheet2.jpg');}
 .sprite-Claw_Warrior_A{ background-position: -336px -360px; background-image: url('../res/sprites/SpriteSheet14.jpg');}
@@ -284,6 +294,8 @@
 .sprite-Crystal_Light_Bird_B{ background-position: -252px -840px; background-image: url('../res/sprites/SpriteSheet2.jpg');}
 .sprite-Cute_Angel_Critter_A{ background-position: -336px -840px; background-image: url('../res/sprites/SpriteSheet2.jpg');}
 .sprite-Cute_Angel_Critter_B{ background-position: -420px -840px; background-image: url('../res/sprites/SpriteSheet2.jpg');}
+.sprite-Cyborg_Frog_A{ background-position: -588px -240px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
+.sprite-Cyborg_Frog_B{ background-position: -672px -240px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
 .sprite-Dark_Fire_Elemental_A{ background-position: -504px -840px; background-image: url('../res/sprites/SpriteSheet2.jpg');}
 .sprite-Dark_Fire_Elemental_B{ background-position: -588px -840px; background-image: url('../res/sprites/SpriteSheet2.jpg');}
 .sprite-Dawn_Elemental_A{ background-position: -672px -840px; background-image: url('../res/sprites/SpriteSheet2.jpg');}
@@ -311,6 +323,8 @@
 .sprite-Devote_Oracle_C{ background-position: -336px -1080px; background-image: url('../res/sprites/SpriteSheet2.jpg');}
 .sprite-Dino_Frog_A{ background-position: -420px -1080px; background-image: url('../res/sprites/SpriteSheet2.jpg');}
 .sprite-Dino_Frog_B{ background-position: -504px -1080px; background-image: url('../res/sprites/SpriteSheet2.jpg');}
+.sprite-Dinosaur_Fish_A{ background-position: -756px -240px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
+.sprite-Dinosaur_Fish_B{ background-position: -0px -360px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
 .sprite-Dire_Wolf_A{ background-position: -588px -1080px; background-image: url('../res/sprites/SpriteSheet2.jpg');}
 .sprite-Dire_Wolf_B{ background-position: -672px -1080px; background-image: url('../res/sprites/SpriteSheet2.jpg');}
 .sprite-Dire_Wolf_C{ background-position: -756px -1080px; background-image: url('../res/sprites/SpriteSheet2.jpg');}
@@ -354,6 +368,8 @@
 .sprite-Egg_Protector_Dragon_B{ background-position: -252px -600px; background-image: url('../res/sprites/SpriteSheet13.jpg');}
 .sprite-Egyptian_Frog_A{ background-position: -420px -600px; background-image: url('../res/sprites/SpriteSheet11.jpg');}
 .sprite-Egyptian_Frog_B{ background-position: -504px -600px; background-image: url('../res/sprites/SpriteSheet11.jpg');}
+.sprite-Electric_Eel_A{ background-position: -84px -360px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
+.sprite-Electric_Eel_B{ background-position: -168px -360px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
 .sprite-Elk_Dragon_A{ background-position: -0px -240px; background-image: url('../res/sprites/SpriteSheet3.jpg');}
 .sprite-Elk_Dragon_B{ background-position: -84px -240px; background-image: url('../res/sprites/SpriteSheet3.jpg');}
 .sprite-Elyse_A{ background-position: -168px -240px; background-image: url('../res/sprites/SpriteSheet3.jpg');}
@@ -392,6 +408,8 @@
 .sprite-Feather_Eyes_B{ background-position: -0px -600px; background-image: url('../res/sprites/SpriteSheet3.jpg');}
 .sprite-Fencing_Angel_A{ background-position: -84px -600px; background-image: url('../res/sprites/SpriteSheet3.jpg');}
 .sprite-Fencing_Angel_B{ background-position: -168px -600px; background-image: url('../res/sprites/SpriteSheet3.jpg');}
+.sprite-Fencing_Frog_A{ background-position: -252px -360px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
+.sprite-Fencing_Frog_B{ background-position: -336px -360px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
 .sprite-Feral_Angel_A{ background-position: -252px -600px; background-image: url('../res/sprites/SpriteSheet3.jpg');}
 .sprite-Feral_Angel_B{ background-position: -336px -600px; background-image: url('../res/sprites/SpriteSheet3.jpg');}
 .sprite-Fire_Book_Angel_A{ background-position: -420px -960px; background-image: url('../res/sprites/SpriteSheet12.jpg');}
@@ -424,6 +442,8 @@
 .sprite-Firecracker_Goblin_B{ background-position: -252px -840px; background-image: url('../res/sprites/SpriteSheet14.jpg');}
 .sprite-Firewing_Warrior_A{ background-position: -420px -600px; background-image: url('../res/sprites/SpriteSheet3.jpg');}
 .sprite-Firewing_Warrior_B{ background-position: -504px -600px; background-image: url('../res/sprites/SpriteSheet3.jpg');}
+.sprite-Fish_Warrior_A{ background-position: -420px -360px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
+.sprite-Fish_Warrior_B{ background-position: -504px -360px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
 .sprite-Flame_Spirit_A{ background-position: -84px -960px; background-image: url('../res/sprites/SpriteSheet3.jpg');}
 .sprite-Flame_Spirit_B{ background-position: -168px -960px; background-image: url('../res/sprites/SpriteSheet3.jpg');}
 .sprite-Flame_Spirit_C{ background-position: -252px -960px; background-image: url('../res/sprites/SpriteSheet3.jpg');}
@@ -475,6 +495,8 @@
 .sprite-Frog_Avian_Sonic_Attackers_B{ background-position: -756px -600px; background-image: url('../res/sprites/SpriteSheet11.jpg');}
 .sprite-Frog_Bard_A{ background-position: -336px -120px; background-image: url('../res/sprites/SpriteSheet4.jpg');}
 .sprite-Frog_Bard_B{ background-position: -420px -120px; background-image: url('../res/sprites/SpriteSheet4.jpg');}
+.sprite-Frog_Boxer_A{ background-position: -588px -360px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
+.sprite-Frog_Boxer_B{ background-position: -672px -360px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
 .sprite-Frog_Casanova_A{ background-position: -0px -480px; background-image: url('../res/sprites/SpriteSheet11.jpg');}
 .sprite-Frog_Casanova_B{ background-position: -252px -480px; background-image: url('../res/sprites/SpriteSheet11.jpg');}
 .sprite-Frog_Devourer_A{ background-position: -504px -120px; background-image: url('../res/sprites/SpriteSheet4.jpg');}
@@ -581,6 +603,8 @@
 .sprite-Goblin_Elemental_Surfer_B{ background-position: -420px -0px; background-image: url('../res/sprites/SpriteSheet14.jpg');}
 .sprite-Goblin_Explosioneer_A{ background-position: -336px -840px; background-image: url('../res/sprites/SpriteSheet4.jpg');}
 .sprite-Goblin_Explosioneer_B{ background-position: -420px -840px; background-image: url('../res/sprites/SpriteSheet4.jpg');}
+.sprite-Goblin_Fish_Ferry_A{ background-position: -756px -360px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
+.sprite-Goblin_Fish_Ferry_B{ background-position: -0px -480px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
 .sprite-Goblin_Frog_Dark_Magic_Team_A{ background-position: -504px -960px; background-image: url('../res/sprites/SpriteSheet14.jpg');}
 .sprite-Goblin_Frog_Dark_Magic_Team_B{ background-position: -588px -960px; background-image: url('../res/sprites/SpriteSheet14.jpg');}
 .sprite-Goblin_Gang_A{ background-position: -504px -840px; background-image: url('../res/sprites/SpriteSheet4.jpg');}
@@ -642,6 +666,8 @@
 .sprite-Gunslinger_Skeleton_B{ background-position: -588px -240px; background-image: url('../res/sprites/SpriteSheet13.jpg');}
 .sprite-Gusty_A{ background-position: -504px -0px; background-image: url('../res/sprites/SpriteSheet14.jpg');}
 .sprite-Gusty_B{ background-position: -588px -0px; background-image: url('../res/sprites/SpriteSheet14.jpg');}
+.sprite-Gypsy_Mermaid_A{ background-position: -84px -480px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
+.sprite-Gypsy_Mermaid_B{ background-position: -168px -480px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
 .sprite-Hail_Hurler_A{ background-position: -756px -1080px; background-image: url('../res/sprites/SpriteSheet4.jpg');}
 .sprite-Hail_Hurler_B{ background-position: -0px -0px; background-image: url('../res/sprites/SpriteSheet5.jpg');}
 .sprite-Hairy_Chest_Ice_Dragon_A{ background-position: -84px -0px; background-image: url('../res/sprites/SpriteSheet5.jpg');}
@@ -662,6 +688,8 @@
 .sprite-Hellfrog_C{ background-position: -336px -120px; background-image: url('../res/sprites/SpriteSheet5.jpg');}
 .sprite-Henry_Zhao_Dragon_A{ background-position: -420px -120px; background-image: url('../res/sprites/SpriteSheet5.jpg');}
 .sprite-Henry_Zhao_Dragon_B{ background-position: -504px -120px; background-image: url('../res/sprites/SpriteSheet5.jpg');}
+.sprite-Hermit_Crab_A{ background-position: -252px -480px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
+.sprite-Hermit_Crab_B{ background-position: -336px -480px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
 .sprite-High_Knight_Frog_A{ background-position: -588px -120px; background-image: url('../res/sprites/SpriteSheet5.jpg');}
 .sprite-High_Knight_Frog_B{ background-position: -672px -120px; background-image: url('../res/sprites/SpriteSheet5.jpg');}
 .sprite-Hive_Guard_A{ background-position: -756px -120px; background-image: url('../res/sprites/SpriteSheet5.jpg');}
@@ -730,6 +758,8 @@
 .sprite-Katana_Crawler_B{ background-position: -756px -240px; background-image: url('../res/sprites/SpriteSheet13.jpg');}
 .sprite-Keeper_Of_The_Dead_A{ background-position: -672px -720px; background-image: url('../res/sprites/SpriteSheet5.jpg');}
 .sprite-Keeper_Of_The_Dead_B{ background-position: -756px -720px; background-image: url('../res/sprites/SpriteSheet5.jpg');}
+.sprite-Kelp_Monster_A{ background-position: -420px -480px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
+.sprite-Kelp_Monster_B{ background-position: -504px -480px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
 .sprite-Kestral_A{ background-position: -0px -840px; background-image: url('../res/sprites/SpriteSheet5.jpg');}
 .sprite-Kestral_B{ background-position: -84px -840px; background-image: url('../res/sprites/SpriteSheet5.jpg');}
 .sprite-Kestral_C{ background-position: -168px -840px; background-image: url('../res/sprites/SpriteSheet5.jpg');}
@@ -832,12 +862,18 @@
 .sprite-Master_Of_Elements_C{ background-position: -672px -600px; background-image: url('../res/sprites/SpriteSheet6.jpg');}
 .sprite-Mastodon_Mage_A{ background-position: -756px -600px; background-image: url('../res/sprites/SpriteSheet6.jpg');}
 .sprite-Mastodon_Mage_B{ background-position: -0px -720px; background-image: url('../res/sprites/SpriteSheet6.jpg');}
+.sprite-Mecha_Mermaid_Seafolk_A{ background-position: -588px -480px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
+.sprite-Mecha_Mermaid_Seafolk_B{ background-position: -672px -480px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
+.sprite-Mecha_Piranha_Seafolk_A{ background-position: -756px -480px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
+.sprite-Mecha_Piranha_Seafolk_B{ background-position: -0px -600px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
 .sprite-Mechanical_Goblin_A{ background-position: -84px -720px; background-image: url('../res/sprites/SpriteSheet6.jpg');}
 .sprite-Mechanical_Goblin_B{ background-position: -168px -720px; background-image: url('../res/sprites/SpriteSheet6.jpg');}
 .sprite-Merfolk_Huntmaster_A{ background-position: -504px -960px; background-image: url('../res/sprites/SpriteSheet11.jpg');}
 .sprite-Merfolk_Huntmaster_B{ background-position: -588px -960px; background-image: url('../res/sprites/SpriteSheet11.jpg');}
 .sprite-Merfolk_Monster_Warrior_A{ background-position: -336px -120px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
 .sprite-Merfolk_Monster_Warrior_B{ background-position: -420px -120px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
+.sprite-Mergoat_Capricorn_A{ background-position: -84px -600px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
+.sprite-Mergoat_Capricorn_B{ background-position: -168px -600px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
 .sprite-Mermaid_Mage_A{ background-position: -252px -720px; background-image: url('../res/sprites/SpriteSheet6.jpg');}
 .sprite-Mermaid_Mage_B{ background-position: -336px -720px; background-image: url('../res/sprites/SpriteSheet6.jpg');}
 .sprite-Mermaid_Mage_C{ background-position: -420px -720px; background-image: url('../res/sprites/SpriteSheet6.jpg');}
@@ -899,6 +935,7 @@
 .sprite-Mythic_Seafolk_A{ background-position: -84px -120px; background-image: url('../res/sprites/SpriteSheet12.jpg');}
 .sprite-Necromancer_Goblin_A{ background-position: -504px -0px; background-image: url('../res/sprites/SpriteSheet7.jpg');}
 .sprite-Necromancer_Goblin_B{ background-position: -588px -0px; background-image: url('../res/sprites/SpriteSheet7.jpg');}
+.sprite-new_0{ background-position: -504px -120px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
 .sprite-Night_Dragon_A{ background-position: -672px -120px; background-image: url('../res/sprites/SpriteSheet7.jpg');}
 .sprite-Night_Dragon_B{ background-position: -756px -120px; background-image: url('../res/sprites/SpriteSheet7.jpg');}
 .sprite-Nightmare_Demon_A{ background-position: -756px -840px; background-image: url('../res/sprites/SpriteSheet12.jpg');}
@@ -917,6 +954,8 @@
 .sprite-Oliphant_A{ background-position: -420px -240px; background-image: url('../res/sprites/SpriteSheet7.jpg');}
 .sprite-Oliphant_B{ background-position: -504px -240px; background-image: url('../res/sprites/SpriteSheet7.jpg');}
 .sprite-Oliphant_C{ background-position: -588px -240px; background-image: url('../res/sprites/SpriteSheet7.jpg');}
+.sprite-Orca_Planet_Eater_A{ background-position: -252px -600px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
+.sprite-Orca_Planet_Eater_B{ background-position: -336px -600px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
 .sprite-Owl_Knight_A{ background-position: -672px -240px; background-image: url('../res/sprites/SpriteSheet7.jpg');}
 .sprite-Owl_Knight_B{ background-position: -756px -240px; background-image: url('../res/sprites/SpriteSheet7.jpg');}
 .sprite-Owl_Leopard_A{ background-position: -0px -360px; background-image: url('../res/sprites/SpriteSheet7.jpg');}
@@ -948,6 +987,8 @@
 .sprite-Pheonix_B{ background-position: -168px -600px; background-image: url('../res/sprites/SpriteSheet7.jpg');}
 .sprite-Picture_Frame_Ghost_A{ background-position: -168px -360px; background-image: url('../res/sprites/SpriteSheet13.jpg');}
 .sprite-Picture_Frame_Ghost_B{ background-position: -252px -360px; background-image: url('../res/sprites/SpriteSheet13.jpg');}
+.sprite-Pisces_Pisces_A{ background-position: -420px -600px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
+.sprite-Pisces_Pisces_B{ background-position: -504px -600px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
 .sprite-Plague_of_Fire_Locusts_A{ background-position: -252px -600px; background-image: url('../res/sprites/SpriteSheet7.jpg');}
 .sprite-Plague_of_Fire_Locusts_B{ background-position: -336px -600px; background-image: url('../res/sprites/SpriteSheet7.jpg');}
 .sprite-Plague_of_Fire_Locusts_C{ background-position: -420px -600px; background-image: url('../res/sprites/SpriteSheet7.jpg');}
@@ -968,6 +1009,8 @@
 .sprite-Polar_Bear_Warrior_B{ background-position: -504px -720px; background-image: url('../res/sprites/SpriteSheet7.jpg');}
 .sprite-Poliworg_A{ background-position: -588px -720px; background-image: url('../res/sprites/SpriteSheet7.jpg');}
 .sprite-Poliworg_B{ background-position: -672px -720px; background-image: url('../res/sprites/SpriteSheet7.jpg');}
+.sprite-Porcupine_Fish_A{ background-position: -588px -600px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
+.sprite-Porcupine_Fish_B{ background-position: -672px -600px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
 .sprite-Portable_City_Dragon_A{ background-position: -504px -840px; background-image: url('../res/sprites/SpriteSheet13.jpg');}
 .sprite-Portable_City_Dragon_B{ background-position: -588px -840px; background-image: url('../res/sprites/SpriteSheet13.jpg');}
 .sprite-Potoo_Hypnotist_A{ background-position: -756px -720px; background-image: url('../res/sprites/SpriteSheet7.jpg');}
@@ -1069,6 +1112,8 @@
 .sprite-Seafolk_Merfolk_Fish_Hook_B{ background-position: -168px -840px; background-image: url('../res/sprites/SpriteSheet11.jpg');}
 .sprite-Seafolk_Merfolk_Warlord_A{ background-position: -84px -840px; background-image: url('../res/sprites/SpriteSheet11.jpg');}
 .sprite-Seafolk_Merfolk_Warlord_B{ background-position: -252px -840px; background-image: url('../res/sprites/SpriteSheet11.jpg');}
+.sprite-Seaweed_Shark_A{ background-position: -756px -600px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
+.sprite-Seaweed_Shark_B{ background-position: -0px -720px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
 .sprite-Seedling_Elemental_A{ background-position: -504px -360px; background-image: url('../res/sprites/SpriteSheet8.jpg');}
 .sprite-Seedling_Elemental_B{ background-position: -588px -360px; background-image: url('../res/sprites/SpriteSheet8.jpg');}
 .sprite-Seraph_A{ background-position: -672px -360px; background-image: url('../res/sprites/SpriteSheet8.jpg');}
@@ -1114,6 +1159,8 @@
 .sprite-Skull_Witch_B{ background-position: -504px -120px; background-image: url('../res/sprites/SpriteSheet13.jpg');}
 .sprite-Sky_Dragon_A{ background-position: -252px -840px; background-image: url('../res/sprites/SpriteSheet8.jpg');}
 .sprite-Sky_Dragon_B{ background-position: -336px -840px; background-image: url('../res/sprites/SpriteSheet8.jpg');}
+.sprite-Sky_Fish_Shield_A{ background-position: -84px -720px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
+.sprite-Sky_Fish_Shield_B{ background-position: -168px -720px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
 .sprite-Sky_Jellyfish_A{ background-position: -588px -120px; background-image: url('../res/sprites/SpriteSheet12.jpg');}
 .sprite-Sky_Jellyfish_B{ background-position: -672px -120px; background-image: url('../res/sprites/SpriteSheet12.jpg');}
 .sprite-Sky_Manta_Rays_A{ background-position: -420px -0px; background-image: url('../res/sprites/SpriteSheet12.jpg');}
@@ -1563,6 +1610,11 @@
 .portrait-portrait_Portrait_Undercover_Angel_Spy{ background-position: -252px -800px; background-image: url('../res/sprites/PortraitSheet1.jpg');}
 .portrait-portrait_portrait_yuriel_upgrade_santa{ background-position: -0px -400px; background-image: url('../res/sprites/PortraitSheet2.jpg');}
 .portrait-portrait_portraits_fire_sword{ background-position: -252px -400px; background-image: url('../res/sprites/PortraitSheet2.jpg');}
+.portrait-portrait_portraits_goblin_diver{ background-position: -588px -700px; background-image: url('../res/sprites/PortraitSheet2.jpg');}
+.portrait-portrait_portraits_seafolk_ancient_cannon{ background-position: -672px -700px; background-image: url('../res/sprites/PortraitSheet2.jpg');}
+.portrait-portrait_portraits_seafolk_energy_generato{ background-position: -756px -700px; background-image: url('../res/sprites/PortraitSheet2.jpg');}
+.portrait-portrait_portraits_seafolk_king{ background-position: -0px -800px; background-image: url('../res/sprites/PortraitSheet2.jpg');}
+.portrait-portrait_portraits_seafolk_spiked_wall{ background-position: -84px -800px; background-image: url('../res/sprites/PortraitSheet2.jpg');}
 .portrait-portrait_portraits_shield{ background-position: -336px -400px; background-image: url('../res/sprites/PortraitSheet2.jpg');}
 .portrait-portrait_portraits_water_of_life{ background-position: -420px -400px; background-image: url('../res/sprites/PortraitSheet2.jpg');}
 .portrait-portrait_pumpkingportrait{ background-position: -336px -800px; background-image: url('../res/sprites/PortraitSheet1.jpg');}
@@ -1579,6 +1631,7 @@
 .portrait-portrait_seraph{ background-position: -0px -900px; background-image: url('../res/sprites/PortraitSheet1.jpg');}
 .portrait-portrait_skeletonwarrior{ background-position: -84px -900px; background-image: url('../res/sprites/PortraitSheet1.jpg');}
 .portrait-portrait_skybeast{ background-position: -168px -900px; background-image: url('../res/sprites/PortraitSheet1.jpg');}
+.portrait-portrait_skypirateladygoblin{ background-position: -168px -800px; background-image: url('../res/sprites/PortraitSheet2.jpg');}
 .portrait-portrait_sleepymailman{ background-position: -252px -900px; background-image: url('../res/sprites/PortraitSheet1.jpg');}
 .portrait-portrait_steampunk_scarab{ background-position: -84px -700px; background-image: url('../res/sprites/PortraitSheet2.jpg');}
 .portrait-portrait_temple_guardian_santa{ background-position: -84px -100px; background-image: url('../res/sprites/PortraitSheet2.jpg');}

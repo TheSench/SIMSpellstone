@@ -1511,5 +1511,301 @@ var MAP_BATTLEGROUNDS = {
               ]
           }
         ]
+    },
+    "3006": {
+        "id": "3006",
+        "name": "Temple's Defenses",
+        "desc": "Pharos Temple's power has decayed without an energy supply. Revive the ancient technology using Mini Jellyfish!",
+        "location_id": "11",
+        "effects": [
+          {
+              "id": "17",
+              "name": "Hermit Cannon",
+              "upgrades": [
+                {
+                    "desc": "",
+                    "effect": [
+
+                    ]
+                },
+                {
+                    "desc": "All enemy creatures are hit with Bolt 1 each turn.",
+                    "name": "Hermit Cannon",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "strike",
+                          "x": 1,
+                          "all": "1",
+                          "enemy_only": "1",
+                          "ally_turn": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All enemy creatures are hit with Bolt 2 each turn.",
+                    "name": "Hermit Cannon",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "strike",
+                          "x": 2,
+                          "all": "1",
+                          "enemy_only": "1",
+                          "ally_turn": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All enemy creatures are hit with Bolt 3 each turn.",
+                    "name": "Hermit Cannon",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "strike",
+                          "x": 3,
+                          "all": "1",
+                          "enemy_only": "1",
+                          "ally_turn": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All enemy creatures are hit with Bolt 4 each turn.",
+                    "name": "Hermit Cannon",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "strike",
+                          "x": 4,
+                          "all": "1",
+                          "enemy_only": "1",
+                          "ally_turn": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All enemy creatures are hit with Bolt 5 each turn.",
+                    "name": "Hermit Cannon",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "strike",
+                          "x": 5,
+                          "all": "1",
+                          "enemy_only": "1",
+                          "ally_turn": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All enemy creatures are hit with Bolt 6 each turn.",
+                    "name": "Hermit Cannon",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "strike",
+                          "x": 6,
+                          "all": "1",
+                          "enemy_only": "1",
+                          "ally_turn": "1"
+                      }
+                    ]
+                }
+              ]
+          },
+          {
+              "id": "18",
+              "name": "Edgemaker Forge",
+              "upgrades": [
+                {
+                    "desc": "",
+                    "effect": [
+
+                    ]
+                },
+                {
+                    "desc": "All of your creatures gain Pierce 2 each turn.",
+                    "name": "Edgemaker Forge",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "imbue",
+                          "s": "pierce",
+                          "x": 2,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures gain Pierce 4 each turn.",
+                    "name": "Edgemaker Forge",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "imbue",
+                          "s": "pierce",
+                          "x": 4,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures gain Pierce 6 each turn.",
+                    "name": "Edgemaker Forge",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "imbue",
+                          "s": "pierce",
+                          "x": 6,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures gain Pierce 8 each turn.",
+                    "name": "Edgemaker Forge",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "imbue",
+                          "s": "pierce",
+                          "x": 8,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures gain Pierce 10 each turn.",
+                    "name": "Edgemaker Forge",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "imbue",
+                          "s": "pierce",
+                          "x": 10,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures gain Pierce 15 each turn.",
+                    "name": "Edgemaker Forge",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "imbue",
+                          "s": "pierce",
+                          "x": 15,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                }
+              ]
+          },
+          {
+              "id": "19",
+              "name": "Sea Urchin Wall",
+              "upgrades": [
+                {
+                    "desc": "",
+                    "effect": [
+
+                    ]
+                },
+                {
+                    "desc": "All of your creatures gain Vengeance 1 each turn.",
+                    "name": "Sea Urchin Wall",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "imbue",
+                          "s": "counter",
+                          "x": 1,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures gain Vengeance 2 each turn.",
+                    "name": "Sea Urchin Wall",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "imbue",
+                          "s": "counter",
+                          "x": 2,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures gain Vengeance 4 each turn.",
+                    "name": "Sea Urchin Wall",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "imbue",
+                          "s": "counter",
+                          "x": 4,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures gain Vengeance 6 each turn.",
+                    "name": "Sea Urchin Wall",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "imbue",
+                          "s": "counter",
+                          "x": 6,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures gain Vengeance 8 each turn.",
+                    "name": "Sea Urchin Wall",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "imbue",
+                          "s": "counter",
+                          "x": 8,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures gain Vengeance 10 each turn.",
+                    "name": "Sea Urchin Wall",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "imbue",
+                          "s": "counter",
+                          "x": 10,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                }
+              ]
+          }
+        ]
     }
 };
