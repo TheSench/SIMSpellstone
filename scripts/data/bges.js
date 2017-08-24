@@ -890,6 +890,34 @@ var BATTLEGROUNDS = {
       },
     ]
   },
+  "519": {
+    "name": "Corrosive Hide",
+    "id": "519",
+    "desc": "Corrosive skills deal 50% more damage.",
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "enhance",
+        "mult": 0.5,
+        "s": "corrosive",
+        "all": "1",
+      },
+    ]
+  },
+  "520": {
+    "name": "Frozen Winds",
+    "id": "520",
+    "desc": "Frostbreath skills deal 50% more damage.",
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "enhance",
+        "mult": 0.5,
+        "s": "frost",
+        "all": "1",
+      },
+    ]
+  },
   "1001": {
     "name": "Primal Mending",
     "id": "1001",
@@ -1204,6 +1232,38 @@ var BATTLEGROUNDS = {
         "effect_type": "scale_attributes",
         "base_mult": .2,
         "mult": .03,
+      },
+    ]
+  },
+  "2019": {
+    "name": "Coralflow Ballad",
+    "id": "2019",
+    "desc": "Non-token enemies become stronger with each passing Mastery level.",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "5",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .008,
+        "mult": .0025,
+      },
+    ]
+  },
+  "2020": {
+    "name": "Blazing Tidal Etude",
+    "id": "2020",
+    "desc": "Non-token enemies become stronger with each passing Mastery level.",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "0",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .25,
+        "mult": .01,
       },
     ]
   },

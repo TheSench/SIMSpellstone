@@ -647,6 +647,11 @@
     <icon></icon>
     <hidden>1</hidden>
   </unitType>
+  <unitType>
+    <id>16</id>
+    <name>Mecha</name>
+    <icon>filter_mech_32</icon>
+  </unitType>
   <!-- =================== -->
   <!-- ==== CARD SETS ==== -->
   <!-- =================== -->

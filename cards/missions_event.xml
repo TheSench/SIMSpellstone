@@ -19802,7 +19802,7 @@
       </line>
     </speech>
   </mission>
-  <!-- Boss Node -->
+  <!-- Boss Node No Place is Home -->
   <mission>
     <id>5650</id>
     <name>Blind Blame</name>
@@ -20720,8 +20720,9 @@
   </mission>
   <!-- Campaign Event 5 -->
   <!-- Extra Node -->
+  <!-- Return starting at 5654 here -->
   <mission>
-    <id>3679</id>
+    <id>5654</id>
     <name>Ancient Technology</name>
     <energy>9</energy>
     <desc>Pharos Temple is extremely dark and silent. Yet when exposed to electric jellyfish, the machines hum to life. You collect more, seeking to revive the ancient technology of the temple.</desc>
@@ -20745,7 +20746,7 @@
     </deck>
   </mission>
   <mission>
-    <id>3680</id>
+    <id>5655</id>
     <name>Jellyfish Power</name>
     <energy>9</energy>
     <desc>The Temple's technology can be directed to aid you in fights around the perimeter of Pharos. Using the power from the jellyfish, you spur the previously inactive machines to do your bidding.</desc>
@@ -20770,11 +20771,11 @@
   </mission>
   <!-- Campaign Event 5 weeks 1-4 -->
   <mission>
-    <id>3681</id>
+    <id>5656</id>
     <name>Seafolk Parley</name>
     <energy>9</energy>
     <desc>At Rayne's suggestion, you have returned to Duskwillow. Donning swimming gear, you head out of the bay and into the ocean, where you plunge deep beneath the waters.</desc>
-    <commander id="352" />
+    <commander id="397" />
     <deck>
       <card id="7007" name="Water Serpent" />
       <card id="7007" name="Water Serpent" />
@@ -20801,7 +20802,7 @@
     </speech>
   </mission>
   <mission>
-    <id>3682</id>
+    <id>5657</id>
     <name>Return of the Plunderers</name>
     <energy>9</energy>
     <desc>While traversing from the bay to the ocean, a familiar face blocks your path. Zolmosh has with him a host of seafolk!</desc>
@@ -20837,11 +20838,11 @@
     </speech>
   </mission>
   <mission>
-    <id>3683</id>
+    <id>5658</id>
     <name>Invasion Remnants</name>
     <energy>9</energy>
     <desc>You fight against the same invaders of Duskwillow. They are joined by other merfolk and fish, and among their ranks you even see goblins that are wearing makeshift sea gear of their own...</desc>
-    <commander id="352" />
+    <commander id="397" />
     <deck>
       <card id="7007" name="Water Serpent" />
       <card id="7007" name="Water Serpent" />
@@ -20861,7 +20862,7 @@
     </deck>
   </mission>
   <mission>
-    <id>3684</id>
+    <id>5659</id>
     <name>Return of the Pirates</name>
     <energy>9</energy>
     <desc>Past the ranks of seafolk, you spy familiar pink hair. Xerkahn and her goblins are trying to shuffle off in the fighting, but you stop them before they manage to run again.</desc>
@@ -20892,7 +20893,7 @@
     </speech>
   </mission>
   <mission>
-    <id>3685</id>
+    <id>5660</id>
     <name>Sea Goblins</name>
     <energy>9</energy>
     <desc>The goblins' gear looks like it was put together hastily. You're not entirely certain how some of them are able to breathe with just fish bowls over their heads, but they are still determined to follow Xerkahn's orders.</desc>
@@ -20928,7 +20929,7 @@
     </speech>
   </mission>
   <mission>
-    <id>3686</id>
+    <id>5661</id>
     <name>Raiders and Pirates</name>
     <energy>9</energy>
     <desc>Even with a hastily constructed alliance, the seafolk and goblins work with surprising efficiency. The seafolk plow through at the front ranks, while the goblins provide support fire behind them.</desc>
@@ -20945,14 +20946,14 @@
       <card id="5091" name="Armor Thief" />
       <card id="6143" mastery_level="2" name="Dynamic Entry" />
       <card id="6072" mastery_level="3" name="Bone Wielder" />
-      <card id="2102" mastery_level="4" name="Lowbog Shaman" />
+      <card id="5091" mastery_level="4" name="Armor Thief" />
       <card id="2079" mastery_level="5" name="Koi Guardian" />
       <card id="6049" mastery_level="6" name="Goblin Explosioneer" />
       <card id="7003" mastery_level="7" name="Kraken" />
     </deck>
   </mission>
   <mission>
-    <id>3687</id>
+    <id>5662</id>
     <name>War Prevention</name>
     <energy>9</energy>
     <desc>By the time you manage to clear a path, Xerkahn has already managed to escape again. The remaining goblin and seafolk forces flee from your presence, or as well as they can, the goblins paddling in place and not moving very quickly.</desc>
@@ -20988,11 +20989,11 @@
     </speech>
   </mission>
   <mission>
-    <id>3688</id>
+    <id>5663</id>
     <name>In Search of a King</name>
     <energy>9</energy>
     <desc>Rayne corners one of the seafolk who made the unfortunate blunder of swimming straight into a goblin. She pulls the merfolk man back, who cowers beneath her fierce gaze.</desc>
-    <commander id="352" />
+    <commander id="397" />
     <deck>
       <card id="6007" name="Goblin Crew" />
       <card id="7007" name="Water Serpent" />
@@ -21024,7 +21025,7 @@
     </speech>
   </mission>
   <mission>
-    <id>3689</id>
+    <id>5664</id>
     <name>A Prayer for the Godless</name>
     <energy>9</energy>
     <desc>Rayne releases the kraken, allowing him to flee. She seems unhappy with the turn of events.</desc>
@@ -21055,7 +21056,7 @@
     </speech>
   </mission>
   <mission>
-    <id>3690</id>
+    <id>5665</id>
     <name>Sea Temple</name>
     <energy>9</energy>
     <desc>The two of you follow the underwater path, which Rayne believes will go to the Temple. It doesn't take long to find. Amidst the seaweed forest, you find the crumbling image of a temple.</desc>
@@ -21079,7 +21080,7 @@
     </deck>
   </mission>
   <mission>
-    <id>3691</id>
+    <id>5666</id>
     <name>Scylla's Devout</name>
     <energy>9</energy>
     <desc>Zolmosh and his forces have returned! They desperately seek to prevent you from entering sacred ground. However as you begin to fight, another group of Seafolk emerge from the Temple.</desc>
@@ -21110,11 +21111,11 @@
     </speech>
   </mission>
   <mission>
-    <id>3692</id>
+    <id>5667</id>
     <name>Seafolk Soldiers</name>
     <energy>9</energy>
     <desc>Massive chaos ensues as the Seafolk fight against Zolmosh and his raiders. However, they also turn and point their spears against you and Rayne!</desc>
-    <commander id="352" />
+    <commander id="397" />
     <deck>
       <card id="5007" name="Arcane Scroll" />
       <card id="7007" name="Water Serpent" />
@@ -21134,7 +21135,7 @@
     </deck>
   </mission>
   <mission>
-    <id>3693</id>
+    <id>5668</id>
     <name>Seafolk King</name>
     <energy>9</energy>
     <desc>From the temple's crumbled doors, a fierce-looking Merman emerges. The other Seafolk part their ranks, giving him a path to speak to you.</desc>
@@ -21165,7 +21166,7 @@
     </speech>
   </mission>
   <mission>
-    <id>3694</id>
+    <id>5669</id>
     <name>Mixed Factions</name>
     <energy>9</energy>
     <desc>You and Rayne explain why you have traveled all the way under the sea. The merman introduces himself as the King of the Seafolk, stroking his beard thoughtfully...</desc>
@@ -21196,15 +21197,15 @@
     </speech>
   </mission>
   <mission>
-    <id>3695</id>
+    <id>5670</id>
     <name>Repurposed Staff</name>
     <energy>9</energy>
     <desc>Rayne notices something that the Seafolk King is carrying. But the rest of the Seafolk grow tense when Rayne points it out, some even grabbing their weapons.</desc>
     <commander id="4" />
     <deck>
       <card id="8044" name="Aegis of the Sea" />
-      <card id="7007" name="Water Serpent" />
-      <card id="7007" name="Water Serpent" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6007" name="Goblin Crew" />
       <card id="5108" name="Aurora Skimmer" />
       <card id="2076" name="Adorabilis" />
       <card id="7109" name="Clownder" />
@@ -21237,11 +21238,11 @@
     </speech>
   </mission>
   <mission>
-    <id>3696</id>
+    <id>5671</id>
     <name>Soldier Squabble</name>
     <energy>9</energy>
     <desc>The guards that were with the Seafolk King raise their tridents, battling their might against yours. Despite your hurry, it seems the goblins were able to speak with the King before you, and convinced them to fight...</desc>
-    <commander id="352" />
+    <commander id="397" />
     <deck>
       <card id="8044" name="Aegis of the Sea" />
       <card id="7007" name="Water Serpent" />
@@ -21261,15 +21262,15 @@
     </deck>
   </mission>
   <mission>
-    <id>3697</id>
+    <id>5672</id>
     <name>Outsider Suspicion</name>
     <energy>9</energy>
     <desc>The fighting continues, while Rayne tries to negotiate. However, the Seafolk are hesitant to listen, refusing to trust someone interested in treasure...</desc>
     <commander id="344" />
     <deck>
       <card id="8044" name="Aegis of the Sea" />
-      <card id="7007" name="Water Serpent" />
-      <card id="7007" name="Water Serpent" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="6007" name="Goblin Crew" />
       <card id="2079" name="Koi Guardian" />
       <card id="2079" name="Koi Guardian" />
       <card id="7107" name="Hammer Krab" />
@@ -21297,7 +21298,7 @@
     </speech>
   </mission>
   <mission>
-    <id>3698</id>
+    <id>5673</id>
     <name>Relentless Negotiations</name>
     <energy>9</energy>
     <desc>Rayne refuses to stop trying. Failing here could spark a war between the Seafolk and the other tribes. The two of you endure everything that the Seafolk throw at you.</desc>
@@ -21328,11 +21329,11 @@
     </speech>
   </mission>
   <mission>
-    <id>3699</id>
+    <id>5674</id>
     <name>A Proposal</name>
     <energy>9</energy>
     <desc>The Seafolk King considers your words. He tells you about the Temple, and why he has come to a place distant from his own city.</desc>
-    <commander id="352" />
+    <commander id="397" />
     <deck>
       <card id="8044" name="Aegis of the Sea" />
       <card id="7007" name="Water Serpent" />
@@ -21364,7 +21365,7 @@
     </speech>
   </mission>
   <mission>
-    <id>3700</id>
+    <id>5675</id>
     <name>Gathering Energy</name>
     <energy>9</energy>
     <desc>With a new mission in mind, you and Rayne leave the Seafolk King. Palm-sized jellyfish hover in the sea, which when gathered, emit a charge of electricity.</desc>
@@ -21372,7 +21373,7 @@
     <deck>
       <card id="8044" name="Aegis of the Sea" />
       <card id="6007" name="Goblin Crew" />
-      <card id="7007" name="Water Serpent" />
+      <card id="6007" name="Goblin Crew" />
       <card id="7090" name="Prospector" />
       <card id="2102" name="Lowbog Shaman" />
       <card id="2062" name="Deadeye Apprentice" />
@@ -21388,7 +21389,7 @@
     </deck>
   </mission>
   <mission>
-    <id>3701</id>
+    <id>5676</id>
     <name>Reviving Technology</name>
     <energy>9</energy>
     <desc>You begin the long task of re-assembling the Temple's security system. A few stray goblins and Seafolk raiders remain, trying to stop you from completing your task.</desc>
@@ -21419,7 +21420,7 @@
     </speech>
   </mission>
   <mission>
-    <id>3702</id>
+    <id>5677</id>
     <name>Energy Restoration</name>
     <energy>9</energy>
     <desc>When you're able to supply at least some power back to the temple's defenses, you return to King Proteus. He has waited, as promised.</desc>
@@ -21455,7 +21456,7 @@
     </speech>
   </mission>
   <mission>
-    <id>3703</id>
+    <id>5678</id>
     <name>The Guardian's Cries</name>
     <energy>9</energy>
     <desc>Rumbling shakes deep within the temple. Even the Seafolk guards have trouble keeping their balance with their fins. Something monstrous shrieks from the Temple...</desc>
@@ -21491,7 +21492,7 @@
     </speech>
   </mission>
   <mission>
-    <id>3704</id>
+    <id>5679</id>
     <name>The Guardian's Fury</name>
     <energy>9</energy>
     <desc>Tentacles reach out from the temple, stretching towards you and Rayne! The Seafolk King and his men flee from the creature, leaving you to handle it.</desc>
@@ -21525,5 +21526,102 @@
         <text>That thing can't distinguish friend from foe. Let's beat it!</text>
       </line>
     </speech>
+  </mission>
+  <!-- Boss Node Through Water and Fire -->
+  <mission>
+    <id>5680</id>
+    <name>Drum of War</name>
+    <energy>9</energy>
+    <desc>Xerkahn sneers at you and the Seafolk King. At the worst possible time, Zolmosh has returned with an army of Seafolk. Swearing to take revenge for her fallen brother, Xerkahn leads the attack!</desc>
+    <commander id="398" />
+    <deck>
+      <card id="8090" name="Xerkahn's Crew" />
+      <card id="8091" name="Cannon Bomber" />
+      <card id="8091" name="Cannon Bomber" />
+      <card id="5106" name="Acuro, Sea Captain" />
+      <card id="5106" name="Acuro, Sea Captain" />
+      <card id="5109" name="Cyclospout" />
+      <card id="7083" name="Sludge Spine" />
+      <card id="2077" name="Drowner Beetle" />
+      <card id="2079" name="Koi Guardian" />
+      <card id="6127" mastery_level="2" name="Hexapus" />
+      <card id="2103" mastery_level="3" name="Siren" />
+      <card id="5109" mastery_level="4" name="Cyclospout" />
+      <card id="5109" mastery_level="5" name="Cyclospout" />
+      <card id="6127" mastery_level="6" name="Hexapus" />
+      <card id="2103" mastery_level="7" name="Siren" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5681</id>
+    <name>Seaship Attack</name>
+    <energy>9</energy>
+    <desc>A large shadow creeps you and the Seafolk forces. A steel encased ship whirs as its propellers spin, bringing it closer, while a black flag with a skull insignia flutters in the waves...</desc>
+    <commander id="398" />
+    <deck>
+      <card id="8090" name="Xerkahn's Crew" />
+      <card id="8091" name="Cannon Bomber" />
+      <card id="8091" name="Cannon Bomber" />
+      <card id="5106" name="Acuro, Sea Captain" />
+      <card id="5106" name="Acuro, Sea Captain" />
+      <card id="5109" name="Cyclospout" />
+      <card id="7083" name="Sludge Spine" />
+      <card id="2077" name="Drowner Beetle" />
+      <card id="2079" name="Koi Guardian" />
+      <card id="6127" mastery_level="2" name="Hexapus" />
+      <card id="2103" mastery_level="3" name="Siren" />
+      <card id="5109" mastery_level="4" name="Cyclospout" />
+      <card id="5109" mastery_level="5" name="Cyclospout" />
+      <card id="6127" mastery_level="6" name="Hexapus" />
+      <card id="2103" mastery_level="7" name="Siren" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5682</id>
+    <name>Cannon Barrage</name>
+    <energy>9</energy>
+    <desc>Metal plates slide as a sleek cannon emerges near the submarine's hull. The rest of the ship grows more cannons, pointed to the fray. Xerkahn shrieks for them to attack, the sea floor peppered with fierce explosions.</desc>
+    <commander id="398" />
+    <deck>
+      <card id="8090" name="Xerkahn's Crew" />
+      <card id="8091" name="Cannon Bomber" />
+      <card id="8091" name="Cannon Bomber" />
+      <card id="5106" name="Acuro, Sea Captain" />
+      <card id="5106" name="Acuro, Sea Captain" />
+      <card id="5109" name="Cyclospout" />
+      <card id="7083" name="Sludge Spine" />
+      <card id="2077" name="Drowner Beetle" />
+      <card id="2079" name="Koi Guardian" />
+      <card id="6127" mastery_level="2" name="Hexapus" />
+      <card id="2103" mastery_level="3" name="Siren" />
+      <card id="5109" mastery_level="4" name="Cyclospout" />
+      <card id="5109" mastery_level="5" name="Cyclospout" />
+      <card id="6127" mastery_level="6" name="Hexapus" />
+      <card id="2103" mastery_level="7" name="Siren" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5683</id>
+    <name>Consuming Vengeance</name>
+    <energy>9</energy>
+    <desc>The cannons cannot possibly distinguish between forces when yours are so entwined with Xerkahn's. Friend and foe alike are hit with the barrage, Xerkahn's hysterical laughter ringing above the fire, even as it eventually consumes her...</desc>
+    <commander id="398" />
+    <deck>
+      <card id="8090" name="Xerkahn's Crew" />
+      <card id="8091" name="Cannon Bomber" />
+      <card id="8091" name="Cannon Bomber" />
+      <card id="5106" name="Acuro, Sea Captain" />
+      <card id="5106" name="Acuro, Sea Captain" />
+      <card id="5109" name="Cyclospout" />
+      <card id="7083" name="Sludge Spine" />
+      <card id="2077" name="Drowner Beetle" />
+      <card id="2079" name="Koi Guardian" />
+      <card id="6127" mastery_level="2" name="Hexapus" />
+      <card id="2103" mastery_level="3" name="Siren" />
+      <card id="5109" mastery_level="4" name="Cyclospout" />
+      <card id="5109" mastery_level="5" name="Cyclospout" />
+      <card id="6127" mastery_level="6" name="Hexapus" />
+      <card id="2103" mastery_level="7" name="Siren" />
+    </deck>
   </mission>
 </root>

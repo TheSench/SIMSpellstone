@@ -6834,7 +6834,7 @@
     <order>101</order>
     <name>The Temple's Judgement</name>
     <desc>Complete the 'The Temple's Judgement' campaign on Mastery Level 2.</desc>
-    <mission_req>5692</mission_req>
+    <mission_req>5666</mission_req>
     <locked_start_time>1504803600</locked_start_time>
     <!-- Thu, 7 Sept 2017 17:00:00 -->
     <req>
@@ -6851,7 +6851,7 @@
     <order>101</order>
     <name>The Temple's Judgement</name>
     <desc>Complete the 'The Temple's Judgement' campaign on Mastery Level 4.</desc>
-    <mission_req>5692</mission_req>
+    <mission_req>5666</mission_req>
     <locked_start_time>1504803600</locked_start_time>
     <!-- Thu, 7 Sept 2017 17:00:00 -->
     <achievement_req>3270</achievement_req>
@@ -6869,7 +6869,7 @@
     <order>101</order>
     <name>The Temple's Judgement</name>
     <desc>Complete the 'The Temple's Judgement' campaign on Mastery Level 6.</desc>
-    <mission_req>5692</mission_req>
+    <mission_req>5666</mission_req>
     <locked_start_time>1504803600</locked_start_time>
     <!-- Thu, 7 Sept 2017 17:00:00 -->
     <achievement_req>3271</achievement_req>
@@ -6887,7 +6887,7 @@
     <order>101</order>
     <name>The Temple's Judgement</name>
     <desc>Complete the 'The Temple's Judgement' campaign on Mastery Level 7.</desc>
-    <mission_req>5692</mission_req>
+    <mission_req>5666</mission_req>
     <locked_start_time>1504803600</locked_start_time>
     <!-- Thu, 7 Sept 2017 17:00:00 -->
     <achievement_req>3272</achievement_req>
@@ -6899,24 +6899,23 @@
       <gold>800</gold>
     </reward>
   </achievement>
-  <!-- Frog Clam Recipe 
-	
-	<achievement>
-		<id>3274</id>
-		<type>2</type>
-		<order>101</order>
-		<name>No Place is Home</name>
-		<desc>Complete the 'No Place is Home' campaign on Mastery Level 1.</desc>
-		<mission_req>5692</mission_req>
-		<locked_start_time>1504803600</locked_start_time>	| Thu, 7 Sept 2017 17:00:00 |
-		<req>
-			<campaign>1139</campaign>
-			<level>1</level>
-		</req>
-		<reward>
-			<item id='8003' number='1' />
-		</reward>
-	</achievement>
-	-->
+  <!-- Pharite Snapper Recipe -->
+  <achievement>
+    <id>3274</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Through Fire and Water</name>
+    <desc>Complete the 'Fire and Water' campaign on Mastery Level 1.</desc>
+    <mission_req>5666</mission_req>
+    <locked_start_time>1504803600</locked_start_time>
+    <!-- Thu, 7 Sept 2017 17:00:00 -->
+    <req>
+      <campaign>1139</campaign>
+      <level>1</level>
+    </req>
+    <reward>
+      <item id="8004" number="1" />
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
 </root>

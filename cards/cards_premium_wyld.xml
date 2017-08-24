@@ -18136,7 +18136,7 @@
     <id>17146</id>
     <card_type>2</card_type>
     <fusion_level>1</fusion_level>
-    <name>Rek's Brigand</name>
+    <name>Reks' Brigand</name>
     <picture>Goblin_Brigand_A</picture>
     <asset_bundle>100</asset_bundle>
     <hidden_until_time>1502989200</hidden_until_time>
@@ -18472,6 +18472,122 @@
       <skill id="valor" x="6" />
       <skill id="pierce" x="7" />
       <skill id="poison" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7149</id>
+    <card_type>2</card_type>
+    <name>Trident Merman</name>
+    <picture>Fish_Warrior_A</picture>
+    <asset_bundle>104</asset_bundle>
+    <hidden_until_time>1503594000</hidden_until_time>
+    <attack>6</attack>
+    <health>15</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="heal" x="2" y="12" />
+    <skill id="fervor" x="2" y="12" />
+    <skill id="enrage" x="1" y="12" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="heal" x="2" y="12" />
+      <skill id="fervor" x="3" y="12" />
+      <skill id="enrage" x="1" y="12" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="heal" x="2" y="12" />
+      <skill id="fervor" x="3" y="12" />
+      <skill id="enrage" x="2" y="12" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17149</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Trident Crasher</name>
+    <picture>Fish_Warrior_A</picture>
+    <asset_bundle>104</asset_bundle>
+    <hidden_until_time>1503594000</hidden_until_time>
+    <attack>7</attack>
+    <health>17</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="heal" x="3" y="12" />
+    <skill id="fervor" x="3" y="12" />
+    <skill id="enrage" x="2" y="12" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="heal" x="3" y="12" />
+      <skill id="fervor" x="4" y="12" />
+      <skill id="enrage" x="2" y="12" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="heal" x="3" y="12" />
+      <skill id="fervor" x="4" y="12" />
+      <skill id="enrage" x="3" y="12" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27149</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Trident Honor Guard</name>
+    <picture>Fish_Warrior_B</picture>
+    <asset_bundle>104</asset_bundle>
+    <hidden_until_time>1503594000</hidden_until_time>
+    <attack>7</attack>
+    <health>20</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="heal" x="4" y="12" />
+    <skill id="fervor" x="4" y="12" />
+    <skill id="enrage" x="3" y="12" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="heal" x="4" y="12" />
+      <skill id="fervor" x="5" y="12" />
+      <skill id="enrage" x="3" y="12" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="heal" x="5" y="12" />
+      <skill id="fervor" x="5" y="12" />
+      <skill id="enrage" x="4" y="12" />
     </upgrade>
   </unit>
 </root>

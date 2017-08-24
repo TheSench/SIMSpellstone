@@ -19448,26 +19448,26 @@ var CARDS = {
   "395": {
     "id": "395",
     "name": "Goblin Diver",
-    "picture": "portrait_necromancer",
+    "picture": "portrait_portraits_goblin_diver",
     "rarity": "3",
     "set": "9999",
     "card_type": "1",
-    "type": "3",
+    "type": "1",
     "sub_type": [],
     "health": 50,
     "maxLevel": 5,
     "skill": [
       {
         "id": "imbue",
-        "x": 2,
-        "s": "poison",
+        "x": 1,
+        "s": "counter",
       },
       {
         "id": "rally",
         "x": 2,
       },
       {
-        "id": "protect",
+        "id": "strike",
         "x": 1,
         "all": "1",
       },
@@ -19479,15 +19479,15 @@ var CARDS = {
           {
             "id": "imbue",
             "x": 2,
-            "s": "poison",
+            "s": "counter",
           },
           {
             "id": "rally",
             "x": 2,
           },
           {
-            "id": "protect",
-            "x": 2,
+            "id": "strike",
+            "x": 1,
             "all": "1",
           },
         ],
@@ -19497,16 +19497,16 @@ var CARDS = {
         "skill": [
           {
             "id": "imbue",
-            "x": 3,
-            "s": "poison",
+            "x": 2,
+            "s": "counter",
           },
           {
             "id": "rally",
-            "x": 3,
+            "x": 2,
           },
           {
-            "id": "protect",
-            "x": 3,
+            "id": "strike",
+            "x": 2,
             "all": "1",
           },
         ],
@@ -19516,16 +19516,16 @@ var CARDS = {
         "skill": [
           {
             "id": "imbue",
-            "x": 4,
-            "s": "poison",
+            "x": 2,
+            "s": "counter",
           },
           {
             "id": "rally",
-            "x": 4,
+            "x": 3,
           },
           {
-            "id": "protect",
-            "x": 4,
+            "id": "strike",
+            "x": 2,
             "all": "1",
           },
         ],
@@ -19535,17 +19535,332 @@ var CARDS = {
         "skill": [
           {
             "id": "imbue",
-            "x": 5,
-            "s": "poison",
+            "x": 2,
+            "s": "counter",
           },
           {
             "id": "rally",
-            "x": 5,
+            "x": 4,
           },
           {
-            "id": "protect",
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "396": {
+    "id": "396",
+    "name": "King Proteus",
+    "picture": "portrait_portraits_seafolk_king",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "3",
+    "sub_type": [],
+    "health": 60,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "imbue",
+        "x": 2,
+        "s": "armored",
+        "all": "1",
+      },
+      {
+        "id": "rally",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "heal",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 65,
+        "skill": [],
+      },
+      "3": {
+        "health": 70,
+        "skill": [],
+      },
+      "4": {
+        "health": 75,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 3,
+            "s": "armored",
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 80,
+        "skill": [],
+      },
+      "6": {
+        "health": 86,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 4,
+            "s": "armored",
+            "all": "1",
+          },
+          {
+            "id": "rally",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "397": {
+    "id": "397",
+    "name": "Brine Singer",
+    "picture": "portrait_kraken_portrait",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "1",
+    "sub_type": [],
+    "health": 42,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "strike",
+        "x": 1,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 44,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 1,
+            "s": "armored",
+            "all": "1",
+          },
+          {
+            "id": "strike",
+            "x": 1,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+        ],
+      },
+      "3": {
+        "health": 46,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 1,
+            "s": "armored",
+            "all": "1",
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "health": 49,
+        "skill": [],
+      },
+      "5": {
+        "health": 51,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 2,
+            "s": "armored",
+            "all": "1",
+          },
+          {
+            "id": "strike",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "health": 58,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 3,
+            "s": "armored",
+            "all": "1",
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "398": {
+    "id": "398",
+    "name": "Xerkahn, the Avenger",
+    "picture": "portrait_skypirateladygoblin",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "2",
+    "sub_type": [],
+    "health": 78,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "strike",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "enrage",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "barrage",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 82,
+        "skill": [
+          {
+            "id": "strike",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "enrage",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "barrage",
+            "x": 2,
+          },
+        ],
+      },
+      "3": {
+        "health": 86,
+        "skill": [
+          {
+            "id": "strike",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "enrage",
+            "x": 4,
+            "all": "1",
+          },
+          {
+            "id": "barrage",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 90,
+        "skill": [
+          {
+            "id": "strike",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "enrage",
+            "x": 4,
+            "all": "1",
+          },
+          {
+            "id": "barrage",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "health": 94,
+        "skill": [
+          {
+            "id": "strike",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "enrage",
             "x": 5,
             "all": "1",
+          },
+          {
+            "id": "barrage",
+            "x": 5,
+          },
+        ],
+      },
+      "6": {
+        "health": 99,
+        "skill": [
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "enrage",
+            "x": 5,
+            "all": "1",
+          },
+          {
+            "id": "barrage",
+            "x": 6,
           },
         ],
       },
@@ -53996,6 +54311,237 @@ var CARDS = {
       },
     }
   },
+  "5149": {
+    "id": "5149",
+    "name": "Flatfish Ward",
+    "picture": "Sky_Fish_Shield_A",
+    "hidden_until": "1503594000000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["12"],
+    "health": 16,
+    "attack": 6,
+    "cost": 2,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 1,
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "y": "1",
+      },
+      {
+        "id": "protect",
+        "x": 1,
+        "y": "12",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 17,
+        "skill": [],
+      },
+      "3": {
+        "health": 18,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 1,
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "y": "1",
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "12",
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 1,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "1",
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "12",
+          },
+        ],
+      },
+    }
+  },
+  "15149": {
+    "id": "15149",
+    "name": "Flatfish Guard",
+    "picture": "Sky_Fish_Shield_A",
+    "hidden_until": "1503594000000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["12"],
+    "health": 18,
+    "attack": 7,
+    "cost": 2,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 2,
+      },
+      {
+        "id": "protect",
+        "x": 2,
+        "y": "1",
+      },
+      {
+        "id": "protect",
+        "x": 2,
+        "y": "12",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 19,
+        "skill": [],
+      },
+      "3": {
+        "health": 20,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "1",
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "12",
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "1",
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "12",
+          },
+        ],
+      },
+    }
+  },
+  "25149": {
+    "id": "25149",
+    "name": "Flatfish Bulwark",
+    "picture": "Sky_Fish_Shield_B",
+    "hidden_until": "1503594000000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["12"],
+    "health": 21,
+    "attack": 7,
+    "cost": 2,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 3,
+      },
+      {
+        "id": "protect",
+        "x": 3,
+        "y": "1",
+      },
+      {
+        "id": "protect",
+        "x": 3,
+        "y": "12",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 8,
+        "skill": [],
+      },
+      "3": {
+        "health": 22,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 3,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "1",
+          },
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "12",
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 4,
+          },
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "1",
+          },
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "12",
+          },
+        ],
+      },
+    }
+  },
   "6000": {
     "id": "6000",
     "name": "Furnace Mech",
@@ -87386,6 +87932,249 @@ var CARDS = {
             "id": "strike",
             "x": 1,
             "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "6148": {
+    "id": "6148",
+    "name": "Narwhal Spiker",
+    "picture": "Goblin_Fish_Ferry_A",
+    "hidden_until": "1503594000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["11","12"],
+    "health": 40,
+    "attack": 8,
+    "cost": 4,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "pierce",
+        "x": 5,
+      },
+      {
+        "id": "flurry",
+        "c": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "3": {
+        "health": 41,
+        "skill": [],
+      },
+      "4": {
+        "health": 42,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "pierce",
+            "x": 6,
+          },
+          {
+            "id": "flurry",
+            "c": 4,
+          },
+        ],
+      },
+      "5": {
+        "health": 43,
+        "skill": [],
+      },
+      "6": {
+        "health": 44,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "pierce",
+            "x": 6,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+    }
+  },
+  "16148": {
+    "id": "16148",
+    "name": "Narwhal Impailer",
+    "picture": "Goblin_Fish_Ferry_A",
+    "hidden_until": "1503594000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["11","12"],
+    "health": 44,
+    "attack": 8,
+    "cost": 4,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "pierce",
+        "x": 7,
+      },
+      {
+        "id": "flurry",
+        "c": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 45,
+        "skill": [],
+      },
+      "3": {
+        "attack": 9,
+        "health": 46,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "pierce",
+            "x": 7,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+      "5": {
+        "health": 47,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "pierce",
+            "x": 8,
+          },
+          {
+            "id": "flurry",
+            "c": 3,
+          },
+        ],
+      },
+      "6": {
+        "health": 48,
+        "skill": [],
+      },
+    }
+  },
+  "26148": {
+    "id": "26148",
+    "name": "Admiral Narwhal",
+    "picture": "Goblin_Fish_Ferry_B",
+    "hidden_until": "1503594000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["11","12"],
+    "health": 48,
+    "attack": 9,
+    "cost": 4,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 2,
+      },
+      {
+        "id": "pierce",
+        "x": 8,
+      },
+      {
+        "id": "flurry",
+        "c": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 49,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "pierce",
+            "x": 9,
+          },
+          {
+            "id": "flurry",
+            "c": 2,
+          },
+        ],
+      },
+      "3": {
+        "health": 50,
+        "skill": [],
+      },
+      "4": {
+        "attack": 10,
+        "health": 51,
+        "skill": [],
+      },
+      "5": {
+        "health": 52,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "pierce",
+            "x": 10,
+          },
+          {
+            "id": "flurry",
+            "c": 2,
           },
         ],
       },
@@ -121381,7 +122170,7 @@ var CARDS = {
   },
   "17146": {
     "id": "17146",
-    "name": "Rek's Brigand",
+    "name": "Reks' Brigand",
     "picture": "Goblin_Brigand_A",
     "hidden_until": "1502989200000",
     "rarity": "3",
@@ -122012,6 +122801,246 @@ var CARDS = {
           {
             "id": "poison",
             "x": 6,
+          },
+        ],
+      },
+    }
+  },
+  "7149": {
+    "id": "7149",
+    "name": "Trident Merman",
+    "picture": "Fish_Warrior_A",
+    "hidden_until": "1503594000000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["12"],
+    "health": 15,
+    "attack": 6,
+    "cost": 2,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 2,
+        "y": "12",
+      },
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "12",
+      },
+      {
+        "id": "enrage",
+        "x": 1,
+        "y": "12",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 16,
+        "skill": [],
+      },
+      "3": {
+        "health": 17,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 2,
+            "y": "12",
+          },
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "12",
+          },
+          {
+            "id": "enrage",
+            "x": 1,
+            "y": "12",
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 2,
+            "y": "12",
+          },
+          {
+            "id": "fervor",
+            "x": 3,
+            "y": "12",
+          },
+          {
+            "id": "enrage",
+            "x": 2,
+            "y": "12",
+          },
+        ],
+      },
+    }
+  },
+  "17149": {
+    "id": "17149",
+    "name": "Trident Crasher",
+    "picture": "Fish_Warrior_A",
+    "hidden_until": "1503594000000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["12"],
+    "health": 17,
+    "attack": 7,
+    "cost": 2,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 3,
+        "y": "12",
+      },
+      {
+        "id": "fervor",
+        "x": 3,
+        "y": "12",
+      },
+      {
+        "id": "enrage",
+        "x": 2,
+        "y": "12",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 18,
+        "skill": [],
+      },
+      "3": {
+        "health": 19,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 3,
+            "y": "12",
+          },
+          {
+            "id": "fervor",
+            "x": 4,
+            "y": "12",
+          },
+          {
+            "id": "enrage",
+            "x": 2,
+            "y": "12",
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 3,
+            "y": "12",
+          },
+          {
+            "id": "fervor",
+            "x": 4,
+            "y": "12",
+          },
+          {
+            "id": "enrage",
+            "x": 3,
+            "y": "12",
+          },
+        ],
+      },
+    }
+  },
+  "27149": {
+    "id": "27149",
+    "name": "Trident Honor Guard",
+    "picture": "Fish_Warrior_B",
+    "hidden_until": "1503594000000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["12"],
+    "health": 20,
+    "attack": 7,
+    "cost": 2,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "heal",
+        "x": 4,
+        "y": "12",
+      },
+      {
+        "id": "fervor",
+        "x": 4,
+        "y": "12",
+      },
+      {
+        "id": "enrage",
+        "x": 3,
+        "y": "12",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 8,
+        "skill": [],
+      },
+      "3": {
+        "health": 21,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 4,
+            "y": "12",
+          },
+          {
+            "id": "fervor",
+            "x": 5,
+            "y": "12",
+          },
+          {
+            "id": "enrage",
+            "x": 3,
+            "y": "12",
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "heal",
+            "x": 5,
+            "y": "12",
+          },
+          {
+            "id": "fervor",
+            "x": 5,
+            "y": "12",
+          },
+          {
+            "id": "enrage",
+            "x": 4,
+            "y": "12",
           },
         ],
       },
@@ -142995,6 +144024,724 @@ var CARDS = {
           },
           {
             "id": "poison",
+            "x": 5,
+          },
+        ],
+      },
+    }
+  },
+  "2104": {
+    "id": "2104",
+    "name": "Sharkcrusher",
+    "picture": "Chain_Shark_A",
+    "hidden_until": "1503594000000",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["12"],
+    "health": 22,
+    "attack": 8,
+    "cost": 3,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "rally",
+        "x": 4,
+        "y": "12",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 23,
+        "skill": [],
+      },
+      "3": {
+        "health": 24,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "rally",
+            "x": 5,
+            "y": "12",
+          },
+        ],
+      },
+      "5": {
+        "health": 25,
+        "skill": [],
+      },
+    }
+  },
+  "12104": {
+    "id": "12104",
+    "name": "Sharktrooper",
+    "picture": "Chain_Shark_A",
+    "hidden_until": "1503594000000",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["12"],
+    "health": 26,
+    "attack": 9,
+    "cost": 3,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "rally",
+        "x": 5,
+        "y": "12",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 5,
+            "y": "12",
+          },
+        ],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 6,
+            "y": "12",
+          },
+        ],
+      },
+      "4": {
+        "health": 27,
+        "skill": [],
+      },
+      "5": {
+        "health": 28,
+        "skill": [],
+      },
+    }
+  },
+  "22104": {
+    "id": "22104",
+    "name": "Sharkstormer",
+    "picture": "Chain_Shark_B",
+    "hidden_until": "1503594000000",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["12"],
+    "health": 29,
+    "attack": 9,
+    "cost": 3,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "armored",
+        "x": 3,
+      },
+      {
+        "id": "rally",
+        "x": 7,
+        "y": "12",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 10,
+        "skill": [],
+      },
+      "3": {
+        "health": 30,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 7,
+            "y": "12",
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "rally",
+            "x": 8,
+            "y": "12",
+          },
+        ],
+      },
+    }
+  },
+  "2105": {
+    "id": "2105",
+    "name": "Shockscale Eel",
+    "picture": "Electric_Eel_A",
+    "hidden_until": "1503594000000",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["12"],
+    "health": 30,
+    "attack": 5,
+    "cost": 4,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 3,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "weaken",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 31,
+        "skill": [],
+      },
+      "3": {
+        "health": 32,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 4,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 4,
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 4,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 5,
+          },
+        ],
+      },
+      "5": {
+        "attack": 6,
+        "health": 33,
+        "skill": [],
+      },
+    }
+  },
+  "12105": {
+    "id": "12105",
+    "name": "Electrified Eel",
+    "picture": "Electric_Eel_A",
+    "hidden_until": "1503594000000",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["12"],
+    "health": 34,
+    "attack": 6,
+    "cost": 4,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 4,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "weaken",
+        "x": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 35,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 5,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 5,
+          },
+        ],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 5,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 5,
+          },
+        ],
+      },
+      "4": {
+        "health": 36,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 5,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 6,
+          },
+        ],
+      },
+      "5": {
+        "health": 37,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 6,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 6,
+          },
+        ],
+      },
+    }
+  },
+  "22105": {
+    "id": "22105",
+    "name": "Thundering Eel",
+    "picture": "Electric_Eel_B",
+    "hidden_until": "1503594000000",
+    "rarity": "3",
+    "set": "2000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["12"],
+    "health": 37,
+    "attack": 6,
+    "cost": 4,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "counter",
+        "x": 6,
+      },
+      {
+        "id": "strike",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "weaken",
+        "x": 7,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 7,
+        "health": 38,
+        "skill": [],
+      },
+      "3": {
+        "health": 39,
+        "skill": [],
+      },
+      "4": {
+        "health": 40,
+        "skill": [
+          {
+            "id": "counter",
+            "x": 7,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 7,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "counter",
+            "x": 7,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 8,
+          },
+        ],
+      },
+    }
+  },
+  "2106": {
+    "id": "2106",
+    "name": "Pharite Snapjaw",
+    "picture": "Mecha_Piranha_Seafolk_A",
+    "hidden_until": "1503594000000",
+    "rarity": "4",
+    "set": "2000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["12","16"],
+    "health": 25,
+    "attack": 5,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 4,
+      },
+      {
+        "id": "pierce",
+        "x": 3,
+      },
+      {
+        "id": "berserk",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 26,
+        "skill": [],
+      },
+      "3": {
+        "health": 27,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 5,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "health": 28,
+        "skill": [],
+      },
+      "6": {
+        "health": 29,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 5,
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "12106": {
+    "id": "12106",
+    "name": "Pharite Ironjaw",
+    "picture": "Mecha_Piranha_Seafolk_A",
+    "hidden_until": "1503594000000",
+    "rarity": "4",
+    "set": "2000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["12","16"],
+    "health": 29,
+    "attack": 5,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 5,
+      },
+      {
+        "id": "pierce",
+        "x": 5,
+      },
+      {
+        "id": "berserk",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 6,
+        "skill": [],
+      },
+      "3": {
+        "health": 30,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 6,
+          },
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+      "4": {
+        "health": 31,
+        "skill": [],
+      },
+      "5": {
+        "health": 32,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 6,
+          },
+          {
+            "id": "pierce",
+            "x": 6,
+          },
+          {
+            "id": "berserk",
+            "x": 3,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 6,
+          },
+          {
+            "id": "pierce",
+            "x": 6,
+          },
+          {
+            "id": "berserk",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "22106": {
+    "id": "22106",
+    "name": "Pharite Steeljaw",
+    "picture": "Mecha_Piranha_Seafolk_B",
+    "hidden_until": "1503594000000",
+    "rarity": "4",
+    "set": "2000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["12","16"],
+    "health": 32,
+    "attack": 6,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "corrosive",
+        "x": 7,
+      },
+      {
+        "id": "pierce",
+        "x": 6,
+      },
+      {
+        "id": "berserk",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 33,
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 7,
+          },
+          {
+            "id": "pierce",
+            "x": 7,
+          },
+          {
+            "id": "berserk",
+            "x": 4,
+          },
+        ],
+      },
+      "3": {
+        "health": 34,
+        "skill": [],
+      },
+      "4": {
+        "attack": 7,
+        "health": 35,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 8,
+          },
+          {
+            "id": "pierce",
+            "x": 7,
+          },
+          {
+            "id": "berserk",
+            "x": 4,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "corrosive",
+            "x": 8,
+          },
+          {
+            "id": "pierce",
+            "x": 8,
+          },
+          {
+            "id": "berserk",
             "x": 5,
           },
         ],
@@ -173099,6 +174846,246 @@ var CARDS = {
       },
     }
   },
+  "8090": {
+    "id": "8090",
+    "name": "Xerkahn's Crew",
+    "picture": "Goblin_War_Drummer_A",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["11"],
+    "health": 13,
+    "attack": 2,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "jam",
+        "c": 6,
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 14,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "jam",
+            "c": 5,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "3": {
+        "attack": 3,
+        "health": 15,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 5,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "health": 16,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 6,
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "attack": 4,
+        "health": 18,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 8,
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "attack": 4,
+        "health": 20,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 10,
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+          {
+            "id": "weaken",
+            "x": 3,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "8091": {
+    "id": "8091",
+    "name": "Cannon Bomber",
+    "picture": "Crossbow_Bomb_Goblin_B",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["11"],
+    "health": 33,
+    "attack": 1,
+    "cost": 4,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 1,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+      },
+      {
+        "id": "barrage",
+        "x": 10,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 34,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+          },
+          {
+            "id": "barrage",
+            "x": 12,
+          },
+        ],
+      },
+      "3": {
+        "health": 36,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+          },
+          {
+            "id": "barrage",
+            "x": 14,
+          },
+        ],
+      },
+      "4": {
+        "health": 38,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+          },
+          {
+            "id": "barrage",
+            "x": 16,
+          },
+        ],
+      },
+      "5": {
+        "attack": 2,
+        "health": 40,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+          },
+          {
+            "id": "barrage",
+            "x": 18,
+          },
+        ],
+      },
+      "6": {
+        "health": 42,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 5,
+          },
+          {
+            "id": "strike",
+            "x": 1,
+          },
+          {
+            "id": "barrage",
+            "x": 20,
+          },
+        ],
+      },
+    }
+  },
   "9999": {
     "id": "9999",
     "name": "Unused Art",
@@ -173580,4 +175567,4 @@ var CARDS = {
     "upgrades": {}
   },
 };
-var CardsUpdated = 1503335624985.16;
+var CardsUpdated = 1503578191786.2;

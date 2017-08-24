@@ -11401,4 +11401,385 @@
       <skill id="poison" x="5" />
     </upgrade>
   </unit>
+  <unit>
+    <id>2104</id>
+    <card_type>2</card_type>
+    <name>Sharkcrusher</name>
+    <picture>Chain_Shark_A</picture>
+    <asset_bundle>104</asset_bundle>
+    <hidden_until_time>1503594000</hidden_until_time>
+    <attack>8</attack>
+    <health>22</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="armored" x="2" />
+    <skill id="rally" x="4" y="12" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="1" />
+      <skill id="armored" x="2" />
+      <skill id="rally" x="5" y="12" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>25</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12104</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Sharktrooper</name>
+    <picture>Chain_Shark_A</picture>
+    <asset_bundle>104</asset_bundle>
+    <hidden_until_time>1503594000</hidden_until_time>
+    <attack>9</attack>
+    <health>26</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="armored" x="2" />
+    <skill id="rally" x="5" y="12" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="evade" x="1" />
+      <skill id="armored" x="3" />
+      <skill id="rally" x="5" y="12" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="1" />
+      <skill id="armored" x="3" />
+      <skill id="rally" x="6" y="12" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>28</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22104</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Sharkstormer</name>
+    <picture>Chain_Shark_B</picture>
+    <asset_bundle>104</asset_bundle>
+    <hidden_until_time>1503594000</hidden_until_time>
+    <attack>9</attack>
+    <health>29</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="armored" x="3" />
+    <skill id="rally" x="7" y="12" />
+    <type>3</type>
+    <sub_type>12</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>30</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="2" />
+      <skill id="armored" x="3" />
+      <skill id="rally" x="7" y="12" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="2" />
+      <skill id="armored" x="4" />
+      <skill id="rally" x="8" y="12" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2105</id>
+    <card_type>2</card_type>
+    <name>Shockscale Eel</name>
+    <picture>Electric_Eel_A</picture>
+    <asset_bundle>104</asset_bundle>
+    <hidden_until_time>1503594000</hidden_until_time>
+    <attack>5</attack>
+    <health>30</health>
+    <cost>4</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="3" />
+    <skill id="strike" x="1" all="1" />
+    <skill id="weaken" x="4" />
+    <type>1</type>
+    <sub_type>12</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>32</health>
+      <skill id="counter" x="4" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="weaken" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counter" x="4" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="weaken" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>33</health>
+      <attack>6</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12105</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Electrified Eel</name>
+    <picture>Electric_Eel_A</picture>
+    <asset_bundle>104</asset_bundle>
+    <hidden_until_time>1503594000</hidden_until_time>
+    <attack>6</attack>
+    <health>34</health>
+    <cost>4</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="4" />
+    <skill id="strike" x="1" all="1" />
+    <skill id="weaken" x="5" />
+    <type>1</type>
+    <sub_type>12</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>35</health>
+      <skill id="counter" x="5" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="weaken" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="counter" x="5" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="weaken" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>36</health>
+      <skill id="counter" x="5" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="weaken" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>37</health>
+      <skill id="counter" x="6" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="weaken" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22105</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Thundering Eel</name>
+    <picture>Electric_Eel_B</picture>
+    <asset_bundle>104</asset_bundle>
+    <hidden_until_time>1503594000</hidden_until_time>
+    <attack>6</attack>
+    <health>37</health>
+    <cost>4</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="6" />
+    <skill id="strike" x="2" all="1" />
+    <skill id="weaken" x="7" />
+    <type>1</type>
+    <sub_type>12</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>38</health>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>39</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>40</health>
+      <skill id="counter" x="7" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="weaken" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="7" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="weaken" x="8" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2106</id>
+    <card_type>2</card_type>
+    <name>Pharite Snapjaw</name>
+    <picture>Mecha_Piranha_Seafolk_A</picture>
+    <asset_bundle>104</asset_bundle>
+    <hidden_until_time>1503594000</hidden_until_time>
+    <attack>5</attack>
+    <health>25</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="4" />
+    <skill id="pierce" x="3" />
+    <skill id="berserk" x="2" />
+    <type>2</type>
+    <sub_type>12</sub_type>
+    <sub_type>16</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="corrosive" x="5" />
+      <skill id="pierce" x="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>28</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>29</health>
+      <skill id="corrosive" x="5" />
+      <skill id="pierce" x="4" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12106</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Pharite Ironjaw</name>
+    <picture>Mecha_Piranha_Seafolk_A</picture>
+    <asset_bundle>104</asset_bundle>
+    <hidden_until_time>1503594000</hidden_until_time>
+    <attack>5</attack>
+    <health>29</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="5" />
+    <skill id="pierce" x="5" />
+    <skill id="berserk" x="3" />
+    <type>2</type>
+    <sub_type>12</sub_type>
+    <sub_type>16</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>30</health>
+      <skill id="corrosive" x="6" />
+      <skill id="pierce" x="5" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>32</health>
+      <skill id="corrosive" x="6" />
+      <skill id="pierce" x="6" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="corrosive" x="6" />
+      <skill id="pierce" x="6" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22106</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Pharite Steeljaw</name>
+    <picture>Mecha_Piranha_Seafolk_B</picture>
+    <asset_bundle>104</asset_bundle>
+    <hidden_until_time>1503594000</hidden_until_time>
+    <attack>6</attack>
+    <health>32</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="7" />
+    <skill id="pierce" x="6" />
+    <skill id="berserk" x="4" />
+    <type>2</type>
+    <sub_type>12</sub_type>
+    <sub_type>16</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>33</health>
+      <skill id="corrosive" x="7" />
+      <skill id="pierce" x="7" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>34</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>7</attack>
+      <health>35</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="8" />
+      <skill id="pierce" x="7" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="corrosive" x="8" />
+      <skill id="pierce" x="8" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+  </unit>
 </root>

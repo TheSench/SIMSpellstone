@@ -8768,46 +8768,183 @@
       <skill id="enrage" x="2" all="1" />
     </upgrade>
   </unit>
+  <!-- Campaign Event 5 Seafolk -->
   <unit>
     <id>395</id>
     <card_type>1</card_type>
     <name>Goblin Diver</name>
-    <portrait>necromancer</portrait>
+    <portrait>Portraits_Goblin_Diver</portrait>
+    <asset_bundle>86</asset_bundle>
     <attack>0</attack>
     <health>50</health>
     <rarity>3</rarity>
-    <skill id="imbue" x="2" s="poison" />
+    <skill id="imbue" x="1" s="counter" />
     <skill id="rally" x="2" />
-    <skill id="protect" x="1" all="1" />
-    <type>3</type>
+    <skill id="strike" x="1" all="1" />
+    <type>1</type>
     <set>9999</set>
     <upgrade>
       <level>2</level>
       <health>55</health>
-      <skill id="imbue" x="2" s="poison" />
+      <skill id="imbue" x="2" s="counter" />
       <skill id="rally" x="2" />
-      <skill id="protect" x="2" all="1" />
+      <skill id="strike" x="1" all="1" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>60</health>
-      <skill id="imbue" x="3" s="poison" />
-      <skill id="rally" x="3" />
-      <skill id="protect" x="3" all="1" />
+      <skill id="imbue" x="2" s="counter" />
+      <skill id="rally" x="2" />
+      <skill id="strike" x="2" all="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>65</health>
-      <skill id="imbue" x="4" s="poison" />
-      <skill id="rally" x="4" />
-      <skill id="protect" x="4" all="1" />
+      <skill id="imbue" x="2" s="counter" />
+      <skill id="rally" x="3" />
+      <skill id="strike" x="2" all="1" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>70</health>
-      <skill id="imbue" x="5" s="poison" />
-      <skill id="rally" x="5" />
-      <skill id="protect" x="5" all="1" />
+      <skill id="imbue" x="2" s="counter" />
+      <skill id="rally" x="4" />
+      <skill id="strike" x="2" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>396</id>
+    <card_type>1</card_type>
+    <name>King Proteus</name>
+    <portrait>Portraits_Seafolk_King</portrait>
+    <asset_bundle>86</asset_bundle>
+    <attack>0</attack>
+    <health>60</health>
+    <rarity>4</rarity>
+    <skill id="imbue" x="2" all="1" s="armored" />
+    <skill id="rally" x="2" all="1" />
+    <skill id="heal" x="1" all="1" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>65</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>70</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>75</health>
+      <skill id="imbue" x="3" all="1" s="armored" />
+      <skill id="rally" x="2" all="1" />
+      <skill id="heal" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>80</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>86</health>
+      <skill id="imbue" x="4" all="1" s="armored" />
+      <skill id="rally" x="3" all="1" />
+      <skill id="heal" x="2" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>397</id>
+    <card_type>1</card_type>
+    <name>Brine Singer</name>
+    <portrait>kraken_portrait</portrait>
+    <attack>0</attack>
+    <health>42</health>
+    <skill id="strike" x="1" />
+    <skill id="strike" x="1" />
+    <rarity>4</rarity>
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>44</health>
+      <skill id="imbue" x="1" all="1" s="armored" />
+      <skill id="strike" x="1" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>46</health>
+      <skill id="imbue" x="1" all="1" s="armored" />
+      <skill id="strike" x="2" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>49</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>51</health>
+      <skill id="imbue" x="2" all="1" s="armored" />
+      <skill id="strike" x="2" />
+      <skill id="strike" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>58</health>
+      <skill id="imbue" x="3" all="1" s="armored" />
+      <skill id="strike" x="3" />
+      <skill id="strike" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>398</id>
+    <card_type>1</card_type>
+    <name>Xerkahn, the Avenger</name>
+    <portrait>skyPirateLadyGoblin</portrait>
+    <attack>0</attack>
+    <health>78</health>
+    <rarity>4</rarity>
+    <skill id="strike" x="1" all="1" />
+    <skill id="enrage" x="2" all="1" />
+    <skill id="barrage" x="2" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>82</health>
+      <skill id="strike" x="1" all="1" />
+      <skill id="enrage" x="3" all="1" />
+      <skill id="barrage" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>86</health>
+      <skill id="strike" x="1" all="1" />
+      <skill id="enrage" x="4" all="1" />
+      <skill id="barrage" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>90</health>
+      <skill id="strike" x="1" all="1" />
+      <skill id="enrage" x="4" all="1" />
+      <skill id="barrage" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>94</health>
+      <skill id="strike" x="1" all="1" />
+      <skill id="enrage" x="5" all="1" />
+      <skill id="barrage" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>99</health>
+      <skill id="strike" x="2" all="1" />
+      <skill id="enrage" x="5" all="1" />
+      <skill id="barrage" x="6" />
     </upgrade>
   </unit>
 </root>

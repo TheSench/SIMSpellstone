@@ -152,6 +152,25 @@
       <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000,1100" />
     </cards>
   </store_item>
+  <store_item>
+    <id>8</id>
+    <name>Dust Pack x500</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <dust_pack>1</dust_pack>
+    <vip_level_req>9</vip_level_req>
+    <desc>Gives fifty random cards from Standard Set and automatically vaporizes all Common and Rare cards!</desc>
+    <priority>-2</priority>
+    <asset_prefab>dust_pack_crystal</asset_prefab>
+    <bundle>35</bundle>
+    <icon>icon_basic_crystal</icon>
+    <sc_cost>50000</sc_cost>
+    <card_limit>1</card_limit>
+    <level_req>5</level_req>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="1" max_rarity="4" set="1000" num_pulls="500" />
+    </cards>
+  </store_item>
   <!-- HC Packs -->
   <store_item>
     <id>11</id>
@@ -3855,5 +3874,22 @@
     <hc_cost>100</hc_cost>
     <!-- Stuff to give -->
     <pack>3061</pack>
+  </store_item>
+  <store_item>
+    <id>5078</id>
+    <name>Blue Fire Satchel</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 100 Blue Fire Souls! May be purchased an unlimited number of times!</desc>
+    <asset_prefab>blue_fire_soul_satchel</asset_prefab>
+    <background_prefab>blue_fire_soul_satchel_banner</background_prefab>
+    <bundle>30</bundle>
+    <!-- <icon>rune_component_bag_item</icon> -->
+    <hc_cost>40</hc_cost>
+    <!-- Stuff to give -->
+    <item id="2501" quantity="100" />
   </store_item>
 </root>
