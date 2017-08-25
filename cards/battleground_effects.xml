@@ -673,7 +673,7 @@
   <battleground>
     <id>519</id>
     <name>Corrosive Hide</name>
-    <desc>Corrosive skills deal 50% more damage.</desc>
+    <desc>Corrosive skills are 50% more effective.</desc>
     <icon>corrosive_BGE_64</icon>
     <icon_bundle>103</icon_bundle>
     <effect>

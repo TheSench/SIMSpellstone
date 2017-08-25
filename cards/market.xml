@@ -1806,8 +1806,8 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" />
     </cards>
   </store_item>
   <store_item>
@@ -1821,10 +1821,10 @@
     <icon>icon_purple_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="12" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="12" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" />
     </cards>
   </store_item>
   <store_item>
@@ -1838,7 +1838,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" number="4" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" number="4" />
     </cards>
   </store_item>
   <store_item>
@@ -1852,7 +1852,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" />
     </cards>
   </store_item>
   <store_item>
@@ -3496,7 +3496,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <priority>300</priority>
-    <desc>Gives four copies of one Epic+ Seafolk card from Premium set. Also includes two Bounty Refills +10, two Energy Potions +20, and one random Rare+ Rune. May only be purchased once.</desc>
+    <desc>Gives four copies of one ^c0DFFEpic^cFFFF+ Seafolk card from Premium set. Also includes two Bounty Refills +10, two Energy Potions +20, and one random ^c8E5FRare^cFFFF+ Rune. May only be purchased once.</desc>
     <asset_prefab>event_020_seafolk_quadra_pack</asset_prefab>
     <bundle>82</bundle>
     <!-- <icon>rune_component_bag_item</icon> -->
@@ -3891,5 +3891,24 @@
     <hc_cost>40</hc_cost>
     <!-- Stuff to give -->
     <item id="2501" quantity="100" />
+  </store_item>
+  <store_item>
+    <id>5079</id>
+    <name>Blackfin Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFBlackfin^cFFFF! May be purchased four times.</desc>
+    <background_prefab>legendary_card_banner</background_prefab>
+    <background_bundle>35</background_bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="1644" display_card_id="1644" />
+    </cards>
   </store_item>
 </root>

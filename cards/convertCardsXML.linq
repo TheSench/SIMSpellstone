@@ -172,6 +172,18 @@ void Main()
 			order = node.Element("order").Value
 		};
 	})
+	// Add missing skills
+	.Union(new[] {
+		new
+		{
+			id = "protect_seafolk",
+			name = "Barrier",
+			desc = "Reduces the next Damage dealt to a random allied creature",
+			icon = "mystic_barrier",
+			type = "activation",
+			order = "0"
+		}
+	})
 	.OrderBy(skill => skill.id);
 	skills.GroupBy(skill => skill.icon).Where(g => g.Count() > 1).ToList().ForEach(g => g.Select(s => s.name).Dump(g.Key));
 

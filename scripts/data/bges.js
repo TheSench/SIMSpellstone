@@ -893,7 +893,7 @@ var BATTLEGROUNDS = {
   "519": {
     "name": "Corrosive Hide",
     "id": "519",
-    "desc": "Corrosive skills deal 50% more damage.",
+    "desc": "Corrosive skills are 50% more effective.",
     "effect": [
       {
         "effect_type": "skill",

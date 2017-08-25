@@ -6019,7 +6019,7 @@
     <name>Luminis</name>
     <mapBG>map3</mapBG>
     <combatBG>CombatBGLuminis</combatBG>
-    <preview name="Map_Banner_Map3" bundle="102" />
+    <preview name="Map_Banner_Map2" bundle="102" />
     <req>6</req>
     <arena_x>200</arena_x>
     <arena_y>300</arena_y>
@@ -6030,7 +6030,7 @@
     <mapBG>map2</mapBG>
     <asset_bundle>4</asset_bundle>
     <combatBG>CombatBGKarthos</combatBG>
-    <preview name="Map_Banner_Map2" bundle="102" />
+    <preview name="Map_Banner_Map3" bundle="102" />
     <req>12</req>
     <arena_x>750</arena_x>
     <arena_y>180</arena_y>
