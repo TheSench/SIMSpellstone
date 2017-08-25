@@ -314,38 +314,53 @@
 
         $scope.supportedSkills = [
             'armored',
-            'protect', /* Barrier */
-            //'protect_ice',
+            'barrage',
             'berserk',
-            'strike', /* Bolt */
+            'burn',
+            //'burn2',
             'corrosive',
-            //'counterburn',
-            'flurry', /* Dualstrike */
-            'rally', /* Empower */
+            'counter',
+            'counterburn',
+            'enfeeble',
             'enhance',
+            'enlarge',
             'enrage',
+            'evade',
+            'evadebarrier',
             'fervor',
-            'jam', /* Freeze */
-            'frost', /* Frostbreath */
+            'flurry',
+            'frost',
+            'fury',
             'heal',
-            'enfeeble', /* Hex */
+            //'ignite',
             'imbue',
-            'evade', /* Invisibility */
+            //'intensify',
+            'jam',
+            'leech',
             'legion',
-            'fury', /* Maelstrom's Fury */
+            'mark',
             'nullify',
             'pierce',
             'poison',
-            //'poisonstrike',
-            'burn', /* Scorch */
+            'poisonstrike',
+            'protect',
+            //'protect_ice',
+            //'protect_seafolk',
+            'rally',
+            //'reanimate',
+            //'resurrect',
             'scorchbreath',
             'silence',
-            'leech', /* Siphon */
+            //'slow',
+            'strike',
             'taunt',
             'valor',
-            'counter', /* Vengeance */
+            'venom',
             'weaken',
-        ];
+            'weakenself',
+        ].sort(function (idA, idB) {
+            return SKILL_DATA[idA].name.localeCompare(SKILL_DATA[idB].name);
+        });
 
         $scope.getSkillName = function (skillID) {
             var skillData = SKILL_DATA[skillID];
