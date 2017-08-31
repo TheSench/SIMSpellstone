@@ -37,7 +37,7 @@
 
             image.onerror = function ()
             {
-                if (this.naturalHeight != 330)
+                if (this.naturalHeight !== 330)
                 {
                     this.src = th.replace('ImagesLarge', 'Images');
                     this.onload = null;
@@ -137,7 +137,7 @@
             var fusions = $window.FUSIONS;
             for (var key in fusions)
             {
-                if (fusions[key] == $scope.id)
+                if (fusions[key] === $scope.id)
                 {
                     return key;
                 }
@@ -242,7 +242,7 @@
         $scope.getFaction = function (factionID)
         {
             var faction = $window.factions.names[factionID];
-            if (faction == "Tower") {
+            if (faction === "Tower") {
                 faction = "";
             }
             return faction;
@@ -403,7 +403,7 @@
         {
             return function (input)
             {
-                if (!!input)
+                if (input)
                 {
                     var parts = input.split(' ');
                     for (var i = 0; i < parts.length; i++)

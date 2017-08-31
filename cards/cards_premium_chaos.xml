@@ -18607,4 +18607,133 @@
       <skill id="flurry" c="2" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6149</id>
+    <card_type>2</card_type>
+    <name>Pufferspine</name>
+    <picture>Porcupine_Fish_A</picture>
+    <asset_bundle>104</asset_bundle>
+    <hidden_until_time>1504198800</hidden_until_time>
+    <attack>4</attack>
+    <health>30</health>
+    <cost>4</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="3" />
+    <skill id="strike" x="2" all="1" />
+    <skill id="pierce" x="3" />
+    <type>2</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>32</health>
+      <skill id="counter" x="3" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="pierce" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>33</health>
+      <skill id="counter" x="4" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="pierce" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="4" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="pierce" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16149</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Pufferspine Inflater</name>
+    <picture>Porcupine_Fish_A</picture>
+    <asset_bundle>104</asset_bundle>
+    <hidden_until_time>1504198800</hidden_until_time>
+    <attack>4</attack>
+    <health>34</health>
+    <cost>4</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="4" />
+    <skill id="strike" x="3" all="1" />
+    <skill id="pierce" x="5" />
+    <type>2</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>5</attack>
+      <health>35</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="counter" x="5" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="pierce" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>36</health>
+      <skill id="counter" x="5" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="pierce" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>37</health>
+      <skill id="counter" x="5" />
+      <skill id="strike" x="4" all="1" />
+      <skill id="pierce" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26149</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Pufferspine Exploder</name>
+    <picture>Porcupine_Fish_B</picture>
+    <asset_bundle>104</asset_bundle>
+    <hidden_until_time>1504198800</hidden_until_time>
+    <attack>5</attack>
+    <health>38</health>
+    <cost>4</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="6" />
+    <skill id="strike" x="4" all="1" />
+    <skill id="pierce" x="6" />
+    <type>2</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="counter" x="6" />
+      <skill id="strike" x="4" all="1" />
+      <skill id="pierce" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>39</health>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>40</health>
+      <skill id="counter" x="7" />
+      <skill id="strike" x="4" all="1" />
+      <skill id="pierce" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="7" />
+      <skill id="strike" x="5" all="1" />
+      <skill id="pierce" x="8" />
+    </upgrade>
+  </unit>
 </root>

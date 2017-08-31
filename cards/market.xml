@@ -2108,6 +2108,29 @@
       <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="11" set="3000,4000" />
     </cards>
   </store_item>
+  <store_item>
+    <id>3063</id>
+    <name>x10 Seafolk Epic Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives ten ^c0DFFEpic^cFFFF+ Seafolk cards from Premium set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" />
+    </cards>
+  </store_item>
   <!-- ======================================= -->
   <!-- ==== Emporium & Arena Market Items ==== -->
   <!-- ======================================= -->
@@ -3910,5 +3933,39 @@
     <cards>
       <card min_level="1" max_level="1" unit_id="1644" display_card_id="1644" />
     </cards>
+  </store_item>
+  <store_item>
+    <id>5080</id>
+    <name>x10 Seafolk Mega Bundle!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>510</priority>
+    <show_desc>1</show_desc>
+    <desc>Gives ^cF00FTEN ^cFFFFrandom ^c0DFFEpic^cFFFF+ Seafolk cards from Premium set! May be purchased 3 times!</desc>
+    <asset_prefab>event_020_chest_w3</asset_prefab>
+    <bundle>82</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>400</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3063</pack>
+  </store_item>
+  <store_item>
+    <id>5081</id>
+    <name>Brinesoul Stockpile</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>210</priority>
+    <desc>Gives 40 ^cCC1FBrinesoul^cFFFF! May be purchased ten times!</desc>
+    <asset_prefab>brinesoul_box</asset_prefab>
+    <!-- <background_prefab>event_016_banner_epic4x</background_prefab> -->
+    <bundle>35</bundle>
+    <!-- <icon>rune_component_bag_item</icon> -->
+    <hc_cost>90</hc_cost>
+    <!-- Stuff to give -->
+    <item id="2522" quantity="40" />
   </store_item>
 </root>

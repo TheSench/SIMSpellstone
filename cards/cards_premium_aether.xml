@@ -18757,6 +18757,145 @@
     </upgrade>
   </unit>
   <unit>
+    <id>5150</id>
+    <card_type>2</card_type>
+    <name>Deepspear Warfarer</name>
+    <picture>Mecha_Mermaid_Seafolk_A</picture>
+    <asset_bundle>104</asset_bundle>
+    <hidden_until_time>1504198800</hidden_until_time>
+    <attack>4</attack>
+    <health>17</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="2" />
+    <skill id="rally" x="3" y="16" />
+    <skill id="protect" x="3" y="12" />
+    <type>1</type>
+    <sub_type>12</sub_type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="valor" x="3" />
+      <skill id="rally" x="3" y="16" />
+      <skill id="protect" x="4" y="12" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="valor" x="3" />
+      <skill id="rally" x="4" y="16" />
+      <skill id="protect" x="4" y="12" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>20</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15150</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Aquaspear Warfarer</name>
+    <picture>Mecha_Mermaid_Seafolk_A</picture>
+    <asset_bundle>104</asset_bundle>
+    <hidden_until_time>1504198800</hidden_until_time>
+    <attack>4</attack>
+    <health>20</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="4" />
+    <skill id="rally" x="4" y="16" />
+    <skill id="protect" x="5" y="12" />
+    <type>1</type>
+    <sub_type>12</sub_type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="valor" x="4" />
+      <skill id="rally" x="5" y="16" />
+      <skill id="protect" x="5" y="12" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>22</health>
+      <skill id="valor" x="5" />
+      <skill id="rally" x="5" y="16" />
+      <skill id="protect" x="5" y="12" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="valor" x="5" />
+      <skill id="rally" x="5" y="16" />
+      <skill id="protect" x="6" y="12" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>23</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25150</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Brinespear Warfarer</name>
+    <picture>Mecha_Mermaid_Seafolk_B</picture>
+    <asset_bundle>104</asset_bundle>
+    <hidden_until_time>1504198800</hidden_until_time>
+    <attack>4</attack>
+    <health>24</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="5" />
+    <skill id="rally" x="6" y="16" />
+    <skill id="protect" x="6" y="12" />
+    <type>1</type>
+    <sub_type>12</sub_type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="valor" x="6" />
+      <skill id="rally" x="6" y="16" />
+      <skill id="protect" x="6" y="12" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="valor" x="6" />
+      <skill id="rally" x="6" y="16" />
+      <skill id="protect" x="7" y="12" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>25</health>
+      <skill id="valor" x="7" />
+      <skill id="rally" x="6" y="16" />
+      <skill id="protect" x="7" y="12" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="valor" x="7" />
+      <skill id="rally" x="7" y="16" />
+      <skill id="protect" x="8" y="12" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>5153</id>
     <card_type>2</card_type>
     <name>Octopulse</name>
