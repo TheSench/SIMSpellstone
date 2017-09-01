@@ -1619,7 +1619,7 @@
         "type": "Raid",
         "name": "Fortune's Favor Raid",
         "bge": "505",
-        "upgradeLevels": "25",
+        "upgradeLevels": "22",
         "commander": {
             "id": "309"
         },
@@ -1629,137 +1629,127 @@
                   "id": "8021"
               },
               {
+                  "id": "6070",
+                  "remove_mastery_level": "5"
+              },
+              {
+                  "id": "1012",
+                  "remove_mastery_level": "8"
+              },
+              {
                   "id": "1331",
-                  "remove_mastery_level": "23"
+                  "remove_mastery_level": "9"
               },
               {
-                  "id": "1010",
-                  "remove_mastery_level": "11"
-              },
-              {
-                  "id": "1010",
-                  "remove_mastery_level": "10"
-              },
-              {
-                  "id": "1313",
-                  "remove_mastery_level": "11"
-              },
-              {
-                  "id": "1313",
+                  "id": "1311",
                   "remove_mastery_level": "10"
               },
               {
                   "id": "6012",
-                  "remove_mastery_level": "11"
-              },
-              {
-                  "id": "1318",
-                  "remove_mastery_level": "9"
-              },
-              {
-                  "id": "5012",
-                  "remove_mastery_level": "8"
-              },
-              {
-                  "id": "5012",
-                  "remove_mastery_level": "5"
-              },
-              {
-                  "id": "2012",
-                  "mastery_level": "3",
-                  "remove_mastery_level": "22"
-              },
-              {
-                  "id": "1010",
-                  "mastery_level": "4",
                   "remove_mastery_level": "10"
               },
               {
-                  "id": "2041",
+                  "id": "6044",
+                  "remove_mastery_level": "11"
+              },
+              {
+                  "id": "1314",
+                  "remove_mastery_level": "11"
+              },
+              {
+                  "id": "1317",
+                  "remove_mastery_level": "11"
+              },
+              {
+                  "id": "2001",
+                  "remove_mastery_level": "23"
+              },
+              {
+                  "id": "1331",
+                  "mastery_level": "3",
+                  "remove_mastery_level": "10"
+              },
+              {
+                  "id": "6031",
+                  "mastery_level": "4",
+                  "remove_mastery_level": "12"
+              },
+              {
+                  "id": "6044",
                   "mastery_level": "5",
-                  "remove_mastery_level": "21"
+                  "remove_mastery_level": "13"
               },
               {
-                  "id": "2042",
+                  "id": "6070",
                   "mastery_level": "6",
-                  "remove_mastery_level": "20"
+                  "remove_mastery_level": "17"
               },
               {
-                  "id": "6050",
+                  "id": "6004",
                   "mastery_level": "7",
                   "remove_mastery_level": "19"
               },
               {
-                  "id": "1313",
+                  "id": "6125",
                   "mastery_level": "8",
-                  "remove_mastery_level": "9"
+                  "remove_mastery_level": "20"
               },
               {
-                  "id": "6012",
-                  "mastery_level": "8",
-                  "remove_mastery_level": "9"
-              },
-              {
-                  "id": "2042",
+                  "id": "6070",
                   "mastery_level": "9",
-                  "remove_mastery_level": "16"
+                  "remove_mastery_level": "21"
               },
               {
-                  "id": "1028",
+                  "id": "6031",
                   "mastery_level": "9",
-                  "remove_mastery_level": "17"
+                  "remove_mastery_level": "22"
               },
               {
-                  "id": "5058",
-                  "mastery_level": "9",
-                  "remove_mastery_level": "15"
-              },
-              {
-                  "id": "8020",
+                  "id": "8022",
                   "mastery_level": "10"
               },
               {
-                  "id": "6050",
+                  "id": "6038",
                   "mastery_level": "10",
                   "remove_mastery_level": "14"
               },
               {
-                  "id": "6048",
+                  "id": "6028",
                   "mastery_level": "10",
-                  "remove_mastery_level": "13"
+                  "remove_mastery_level": "15"
               },
               {
-                  "id": "5050",
+                  "id": "6013",
                   "mastery_level": "11",
-                  "remove_mastery_level": "12"
+                  "remove_mastery_level": "16"
+              },
+              {
+                  "id": "8021",
+                  "mastery_level": "11"
               },
               {
                   "id": "8020",
                   "mastery_level": "11"
               },
               {
-                  "id": "8023",
-                  "mastery_level": "11"
-              },
-              {
-                  "id": "6048",
+                  "id": "6114",
                   "mastery_level": "12",
-                  "remove_mastery_level": "25"
+                  "remove_mastery_level": "18"
               },
               {
-                  "id": "6035",
+                  "id": "6026",
                   "mastery_level": "13",
-                  "remove_mastery_level": "24"
-              },
-              {
-                  "id": "6028",
-                  "mastery_level": "14",
                   "remove_mastery_level": "19"
               },
               {
-                  "id": "1331",
+                  "id": "6035",
+                  "mastery_level": "14",
+                  "remove_mastery_level": "24"
+              },
+              {
+                  "id": "6094",
                   "mastery_level": "15",
-                  "remove_mastery_level": "18"
+                  "remove_mastery_level": "25"
               },
               {
                   "id": "8024",
@@ -1770,27 +1760,27 @@
                   "mastery_level": "17"
               },
               {
-                  "id": "8022",
+                  "id": "8023",
                   "mastery_level": "18"
               },
               {
-                  "id": "8020",
-                  "mastery_level": "19"
-              },
-              {
-                  "id": "8021",
+                  "id": "8022",
                   "mastery_level": "19"
               },
               {
                   "id": "8023",
+                  "mastery_level": "19"
+              },
+              {
+                  "id": "8020",
                   "mastery_level": "20"
               },
               {
-                  "id": "8020",
+                  "id": "8024",
                   "mastery_level": "21"
               },
               {
-                  "id": "8023",
+                  "id": "8021",
                   "mastery_level": "22"
               },
               {
@@ -1798,11 +1788,11 @@
                   "mastery_level": "23"
               },
               {
-                  "id": "8024",
+                  "id": "8022",
                   "mastery_level": "24"
               },
               {
-                  "id": "8022",
+                  "id": "8023",
                   "mastery_level": "25"
               }
             ]

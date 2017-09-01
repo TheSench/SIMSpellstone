@@ -21527,7 +21527,7 @@
       </line>
     </speech>
   </mission>
-  <!-- Boss Node Through Water and Fire -->
+  <!-- Boss Node Through Fire and Water -->
   <mission>
     <id>5680</id>
     <name>Drum of War</name>
@@ -21622,6 +21622,31 @@
       <card id="5109" mastery_level="5" name="Cyclospout" />
       <card id="6127" mastery_level="6" name="Hexapus" />
       <card id="2103" mastery_level="7" name="Siren" />
+    </deck>
+  </mission>
+  <!-- Test Missions -->
+  <mission>
+    <id>3684</id>
+    <name>Test Mission</name>
+    <energy>9</energy>
+    <desc>Healme</desc>
+    <commander id="399" />
+    <deck>
+      <card id="7100" name="Snow Caller" />
+      <card id="7079" name="Carina" />
+      <card id="7074" name="Sijou" />
+      <card id="7134" name="Prismadew" />
+      <card id="7120" name="Liliane's Blessing" />
+      <card id="7064" name="Willowfly" />
+      <card id="7043" name="Anima" />
+      <card id="5132" name="Whirlwinder" />
+      <card id="7005" name="Tsunamari" />
+      <card id="5111" name="Bennu" />
+      <card id="5121" name="Cauterizing Psalm" />
+      <card id="2043" name="Eos" />
+      <card id="5115" name="Papyrus Crane" />
+      <card id="2099" name="White Regemage" />
+      <card id="8092" name="Taunt" />
     </deck>
   </mission>
 </root>
