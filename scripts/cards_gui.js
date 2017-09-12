@@ -197,7 +197,10 @@ var CARD_GUI = {};
     }
 
     function addMult(htmlCard, multiplier) {
-        if (multiplier > 1) {
+        // Handle range values
+        var iMult = parseInt(multiplier);
+        if (iMult == multiplier) multiplier = iMult;
+        if (iMult) {
             var multDiv = createDiv("multiplier", "x" + multiplier);
             multDiv.setAttribute("data-count", multiplier);
             var multIcon = createImg(getAssetPath("cardAssets") + "multiplier.png", "multiplier");
