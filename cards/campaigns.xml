@@ -4882,6 +4882,81 @@
     </rewards>
     <find_item id="3059" drop_per_energy=".4" />
   </campaign>
+  <!-- Campaign Event 5 weeks 5-8 
+	
+	<campaign> 
+		<id>1140</id>
+		<name>Newfound Alliance</name>
+		<campaign_req id='1138' level='1' />
+		<locked_start_time>1506013200</locked_start_time>	| Thu, 21 Sept 2017 17:00:00 |
+		<battleground_id>2021</battleground_id>
+		<location_id>11</location_id>
+		<x>575</x>
+		<y>245</y>
+		<combatBG>CombatBGVoid</combatBG>
+		<missions>
+			<mission_id>5688</mission_id>
+			<mission_id>5689</mission_id>
+			<mission_id>5690</mission_id>
+			<mission_id>5691</mission_id>
+			<mission_id>5692</mission_id>
+			<mission_id>5693</mission_id>
+			<mission_id>5694</mission_id>
+			<mission_id>5695</mission_id>
+			<mission_id>5696</mission_id>
+			<mission_id>5697</mission_id>
+			<mission_id>5698</mission_id>
+			<mission_id>5699</mission_id>
+			<mission_id>5700</mission_id>
+		</missions>
+		<rewards>
+			<card level='1' id='511' />
+			<card level='2' id='511' />
+			<card level='3' id='511' />
+			<card level='4' id='2105' />
+			<card level='5' id='512' />
+			<card level='6' id='2077' />
+			<item level='7' id='3060' />
+		</rewards>
+		<find_item id='3059' drop_per_energy='.6' />
+	</campaign>
+	
+	<campaign> 
+		<id>1141</id>
+		<name>Warmonger</name>
+		<campaign_req id='1140' level='1' />
+		<locked_start_time>1507222800</locked_start_time>	| Thu, 5 Oct 2017 17:00:00 |
+		<battleground_id>2022</battleground_id>
+		<location_id>11</location_id>
+		<x>700</x>
+		<y>199</y>
+		<combatBG>CombatBGVoid</combatBG>
+		<missions>
+			<mission_id>5701</mission_id>
+			<mission_id>5702</mission_id>
+			<mission_id>5703</mission_id>
+			<mission_id>5704</mission_id>
+			<mission_id>5705</mission_id>
+			<mission_id>5706</mission_id>
+			<mission_id>5707</mission_id>
+			<mission_id>5708</mission_id>
+			<mission_id>5709</mission_id>
+			<mission_id>5710</mission_id>
+			<mission_id>5711</mission_id>
+			<mission_id>5712</mission_id>
+		</missions>
+		<rewards>
+			<card level='1' id='511' />
+			<card level='2' id='511' />
+			<card level='3' id='511' />
+			<card level='4' id='2105' />
+			<card level='5' id='512' />
+			<card level='6' id='2077' />
+			<item level='7' id='3060' />
+		</rewards>
+		<find_item id='3059' drop_per_energy='.8' />
+	</campaign>
+	-->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
   <!-- ============================ -->
@@ -5192,4 +5267,36 @@
       <item level="7" id="2506" number="3" />
     </rewards>
   </campaign>
+  <!-- 
+	<campaign> 
+		<id>3010</id>
+		<name>Test Healmaster</name>
+		<type>2</type>
+		<icon id='white_boss_gem' bundle='15' />
+		<campaign_req id='3009' level='7' />
+		<side_mission>1</side_mission>
+		<battleground_id>2015</battleground_id>
+		<location_id>5</location_id>
+		<show_level>1</show_level>
+		<show_ranking>1</show_ranking>
+		<x>455</x>
+		<y>312</y>
+		<combatBG>CombatBGVoid</combatBG>
+		<missions>
+			<mission_id>5684</mission_id>
+			<mission_id>5685</mission_id>
+			<mission_id>5686</mission_id>
+			<mission_id>5687</mission_id>
+		</missions>
+		<rewards>
+			<card level='1' id='511' />
+			<card level='2' id='512' />
+			<card level='3' id='512' />
+			<item level='4' id='3061' />
+			<item level='5' id='3061' />
+			<item level='6' id='3061' />
+			<item level='7' id='3061' />
+		</rewards>
+	</campaign>
+	  -->
 </root>

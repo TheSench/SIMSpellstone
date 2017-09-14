@@ -2131,6 +2131,20 @@
       <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" />
     </cards>
   </store_item>
+  <store_item>
+    <id>3064</id>
+    <name>Dual Seafolk Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two copies of one guaranteed Epic or higher Seafolk card from Premium set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" number="2" />
+    </cards>
+  </store_item>
   <!-- ======================================= -->
   <!-- ==== Emporium & Arena Market Items ==== -->
   <!-- ======================================= -->
@@ -3967,5 +3981,24 @@
     <hc_cost>90</hc_cost>
     <!-- Stuff to give -->
     <item id="2522" quantity="40" />
+  </store_item>
+  <store_item>
+    <id>5082</id>
+    <name>Webclaw Dragon Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFWebclaw Dragon^cFFFF! May be purchased four times.</desc>
+    <background_prefab>legendary_card_banner</background_prefab>
+    <background_bundle>35</background_bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7025" display_card_id="7025" />
+    </cards>
   </store_item>
 </root>

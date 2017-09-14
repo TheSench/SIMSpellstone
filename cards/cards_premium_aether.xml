@@ -18526,7 +18526,7 @@
     <type>1</type>
     <sub_type>10</sub_type>
     <sub_type>11</sub_type>
-    <set />
+    <set>4000</set>
     <upgrade>
       <level>2</level>
       <skill id="rally" x="2" y="10" />
@@ -18570,7 +18570,7 @@
     <type>1</type>
     <sub_type>10</sub_type>
     <sub_type>11</sub_type>
-    <set />
+    <set>4000</set>
     <upgrade>
       <level>2</level>
       <health>20</health>
@@ -18613,7 +18613,7 @@
     <type>1</type>
     <sub_type>10</sub_type>
     <sub_type>11</sub_type>
-    <set />
+    <set>4000</set>
     <upgrade>
       <level>2</level>
       <health>24</health>
@@ -18896,6 +18896,262 @@
     </upgrade>
   </unit>
   <unit>
+    <id>5151</id>
+    <card_type>2</card_type>
+    <name>Brinebelly</name>
+    <picture>Bubble_Belly_Fish_A</picture>
+    <asset_bundle>104</asset_bundle>
+    <hidden_until_time>1504803600</hidden_until_time>
+    <attack>6</attack>
+    <health>25</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="2" />
+    <skill id="heal" x="1" all="1" />
+    <skill id="protect" x="4" />
+    <type>1</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>27</health>
+      <skill id="armored" x="2" />
+      <skill id="heal" x="1" all="1" />
+      <skill id="protect" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>28</health>
+      <skill id="armored" x="3" />
+      <skill id="heal" x="1" all="1" />
+      <skill id="protect" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="3" />
+      <skill id="heal" x="2" all="1" />
+      <skill id="protect" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>29</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15151</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Brinebelly Bulwark</name>
+    <picture>Bubble_Belly_Fish_A</picture>
+    <asset_bundle>104</asset_bundle>
+    <hidden_until_time>1504803600</hidden_until_time>
+    <attack>6</attack>
+    <health>30</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="3" />
+    <skill id="heal" x="2" all="1" />
+    <skill id="protect" x="7" />
+    <type>1</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>7</attack>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="4" />
+      <skill id="heal" x="2" all="1" />
+      <skill id="protect" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="4" />
+      <skill id="heal" x="3" all="1" />
+      <skill id="protect" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>32</health>
+      <skill id="armored" x="4" />
+      <skill id="heal" x="3" all="1" />
+      <skill id="protect" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>33</health>
+      <skill id="armored" x="5" />
+      <skill id="heal" x="3" all="1" />
+      <skill id="protect" x="9" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25151</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Brinebelly Bastion</name>
+    <picture>Bubble_Belly_Fish_B</picture>
+    <asset_bundle>104</asset_bundle>
+    <hidden_until_time>1504803600</hidden_until_time>
+    <attack>7</attack>
+    <health>34</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="5" />
+    <skill id="heal" x="3" all="1" />
+    <skill id="protect" x="10" />
+    <type>1</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="5" />
+      <skill id="heal" x="4" all="1" />
+      <skill id="protect" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>35</health>
+      <skill id="armored" x="5" />
+      <skill id="heal" x="4" all="1" />
+      <skill id="protect" x="11" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>36</health>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>37</health>
+      <skill id="armored" x="6" />
+      <skill id="heal" x="4" all="1" />
+      <skill id="protect" x="11" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="6" />
+      <skill id="heal" x="5" all="1" />
+      <skill id="protect" x="12" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5152</id>
+    <card_type>2</card_type>
+    <name>Mermaid Merchant</name>
+    <picture>Gypsy_Mermaid_A</picture>
+    <asset_bundle>104</asset_bundle>
+    <hidden_until_time>1505408400</hidden_until_time>
+    <attack>4</attack>
+    <health>14</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="1" />
+    <skill id="rally" x="1" all="1" y="12" />
+    <skill id="heal" x="1" all="1" y="12" />
+    <type>1</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>17</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15152</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Mermaid Trader</name>
+    <picture>Gypsy_Mermaid_A</picture>
+    <asset_bundle>104</asset_bundle>
+    <hidden_until_time>1505408400</hidden_until_time>
+    <attack>5</attack>
+    <health>17</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="1" />
+    <skill id="rally" x="2" all="1" y="12" />
+    <skill id="heal" x="1" all="1" y="12" />
+    <type>1</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>20</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25152</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Mermaid Smuggler</name>
+    <picture>Gypsy_Mermaid_B</picture>
+    <asset_bundle>104</asset_bundle>
+    <hidden_until_time>1505408400</hidden_until_time>
+    <attack>7</attack>
+    <health>20</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="1" />
+    <skill id="rally" x="2" all="1" y="12" />
+    <skill id="heal" x="1" all="1" y="12" />
+    <type>1</type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="2" />
+      <skill id="rally" x="2" all="1" y="12" />
+      <skill id="heal" x="1" all="1" y="12" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="2" />
+      <skill id="rally" x="3" all="1" y="12" />
+      <skill id="heal" x="1" all="1" y="12" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="2" />
+      <skill id="rally" x="3" all="1" y="12" />
+      <skill id="heal" x="2" all="1" y="12" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>5153</id>
     <card_type>2</card_type>
     <name>Octopulse</name>
@@ -19030,6 +19286,140 @@
       <skill id="armored" x="5" />
       <skill id="strike" x="6" all="1" />
       <skill id="nullify" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5154</id>
+    <card_type>2</card_type>
+    <name>Glaucus</name>
+    <picture>Angel_Merman_A</picture>
+    <asset_bundle>104</asset_bundle>
+    <hidden_until_time>1505149200</hidden_until_time>
+    <attack>4</attack>
+    <health>26</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="5" />
+    <skill id="frost" x="2" />
+    <skill id="jam" c="5" />
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <sub_type>12</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="valor" x="5" />
+      <skill id="frost" x="2" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>28</health>
+      <skill id="valor" x="6" />
+      <skill id="frost" x="2" />
+      <skill id="jam" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>30</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15154</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Glaucus, Frosthand</name>
+    <picture>Angel_Merman_A</picture>
+    <asset_bundle>104</asset_bundle>
+    <hidden_until_time>1505149200</hidden_until_time>
+    <attack>4</attack>
+    <health>30</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="7" />
+    <skill id="frost" x="3" />
+    <skill id="jam" c="4" />
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <sub_type>12</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>32</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>33</health>
+      <skill id="valor" x="7" />
+      <skill id="frost" x="3" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="valor" x="8" />
+      <skill id="frost" x="3" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>34</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25154</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Glaucus, Frozen Baron</name>
+    <picture>Angel_Merman_B</picture>
+    <asset_bundle>104</asset_bundle>
+    <hidden_until_time>1505149200</hidden_until_time>
+    <attack>4</attack>
+    <health>35</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="valor" x="8" />
+    <skill id="frost" x="4" />
+    <skill id="jam" c="3" />
+    <type>1</type>
+    <sub_type>6</sub_type>
+    <sub_type>12</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="valor" x="9" />
+      <skill id="frost" x="4" />
+      <skill id="jam" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>36</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>37</health>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>38</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="valor" x="10" />
+      <skill id="frost" x="5" />
+      <skill id="jam" c="3" />
     </upgrade>
   </unit>
 </root>

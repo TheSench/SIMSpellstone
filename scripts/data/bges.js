@@ -1254,7 +1254,7 @@ var BATTLEGROUNDS = {
   "2020": {
     "name": "Blazing Tidal Etude",
     "id": "2020",
-    "desc": "Non-token enemies become stronger with each passing Mastery level.",
+    "desc": "Xerkahn, the Avenger fights harder with each passing Mastery level, increasing cards' stats!",
     "enemy_only": true,
     "scale_with_level": "1",
     "starting_level": "0",
@@ -1264,6 +1264,38 @@ var BATTLEGROUNDS = {
         "effect_type": "scale_attributes",
         "base_mult": .3,
         "mult": .01,
+      },
+    ]
+  },
+  "2021": {
+    "name": "Coralflow Ballad",
+    "id": "2021",
+    "desc": "Non-token enemies become stronger with each passing Mastery level.",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "0",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .2,
+        "mult": .01,
+      },
+    ]
+  },
+  "2022": {
+    "name": "Coralflow Ballad",
+    "id": "2022",
+    "desc": "Non-token enemies become stronger with each passing Mastery level.",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "0",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .2,
+        "mult": .03,
       },
     ]
   },

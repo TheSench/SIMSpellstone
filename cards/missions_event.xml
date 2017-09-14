@@ -21556,7 +21556,7 @@
     <id>5681</id>
     <name>Seaship Attack</name>
     <energy>9</energy>
-    <desc>A large shadow creeps you and the Seafolk forces. A steel encased ship whirs as its propellers spin, bringing it closer, while a black flag with a skull insignia flutters in the waves...</desc>
+    <desc>A large shadow creeps over you and the Seafolk forces. A steel encased ship whirs as its propellers spin, bringing it closer, while a black flag with a skull insignia flutters in the waves...</desc>
     <commander id="398" />
     <deck>
       <card id="8090" name="Xerkahn's Crew" />
@@ -21624,29 +21624,870 @@
       <card id="2103" mastery_level="7" name="Siren" />
     </deck>
   </mission>
-  <!-- Test Missions -->
+  <!-- Test Mission Healmaster -->
   <mission>
-    <id>3684</id>
-    <name>Test Mission</name>
-    <energy>9</energy>
+    <id>5684</id>
+    <name>Test Mission 1</name>
+    <energy>10</energy>
     <desc>Healme</desc>
     <commander id="399" />
     <deck>
       <card id="7100" name="Snow Caller" />
-      <card id="7079" name="Carina" />
-      <card id="7074" name="Sijou" />
-      <card id="7134" name="Prismadew" />
-      <card id="7120" name="Liliane's Blessing" />
-      <card id="7064" name="Willowfly" />
-      <card id="7043" name="Anima" />
+      <card id="7100" name="Snow Caller" />
       <card id="5132" name="Whirlwinder" />
-      <card id="7005" name="Tsunamari" />
       <card id="5111" name="Bennu" />
-      <card id="5121" name="Cauterizing Psalm" />
-      <card id="2043" name="Eos" />
-      <card id="5115" name="Papyrus Crane" />
-      <card id="2099" name="White Regemage" />
-      <card id="8092" name="Taunt" />
+      <card id="8096" name="Nature's Ghost" />
+      <card id="8096" name="Nature's Ghost" />
+      <card id="8095" name="Heal Guardian" />
+      <card id="8095" name="Heal Guardian" />
+      <card id="8094" name="Guardian Familiar" />
+      <card id="8094" name="Guardian Familiar" />
+      <card id="8093" name="Beta Berserker" />
+      <card id="8093" name="Beta Berserker" />
+      <card id="8092" name="Steelsight Visionary" />
+      <card id="8097" name="Frostwing Dragon" />
+      <card id="8097" name="Frostwing Dragon" />
     </deck>
+  </mission>
+  <mission>
+    <id>5685</id>
+    <name>Test Mission 2</name>
+    <energy>10</energy>
+    <desc>Healme</desc>
+    <commander id="399" />
+    <deck>
+      <card id="7100" name="Snow Caller" />
+      <card id="7100" name="Snow Caller" />
+      <card id="5132" name="Whirlwinder" />
+      <card id="5111" name="Bennu" />
+      <card id="8096" name="Nature's Ghost" />
+      <card id="8096" name="Nature's Ghost" />
+      <card id="8095" name="Heal Guardian" />
+      <card id="8095" name="Heal Guardian" />
+      <card id="8094" name="Guardian Familiar" />
+      <card id="8094" name="Guardian Familiar" />
+      <card id="8093" name="Beta Berserker" />
+      <card id="8093" name="Beta Berserker" />
+      <card id="8092" name="Steelsight Visionary" />
+      <card id="8097" name="Frostwing Dragon" />
+      <card id="8097" name="Frostwing Dragon" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5686</id>
+    <name>Test Mission 3</name>
+    <energy>10</energy>
+    <desc>Healme</desc>
+    <commander id="399" />
+    <deck>
+      <card id="7100" name="Snow Caller" />
+      <card id="7100" name="Snow Caller" />
+      <card id="5132" name="Whirlwinder" />
+      <card id="5111" name="Bennu" />
+      <card id="8096" name="Nature's Ghost" />
+      <card id="8096" name="Nature's Ghost" />
+      <card id="8095" name="Heal Guardian" />
+      <card id="8095" name="Heal Guardian" />
+      <card id="8094" name="Guardian Familiar" />
+      <card id="8094" name="Guardian Familiar" />
+      <card id="8093" name="Beta Berserker" />
+      <card id="8093" name="Beta Berserker" />
+      <card id="8092" name="Steelsight Visionary" />
+      <card id="8097" name="Frostwing Dragon" />
+      <card id="8097" name="Frostwing Dragon" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5687</id>
+    <name>Test Mission 4</name>
+    <energy>10</energy>
+    <desc>Healme</desc>
+    <commander id="399" />
+    <deck>
+      <card id="7100" name="Snow Caller" />
+      <card id="7100" name="Snow Caller" />
+      <card id="5132" name="Whirlwinder" />
+      <card id="5111" name="Bennu" />
+      <card id="8096" name="Nature's Ghost" />
+      <card id="8096" name="Nature's Ghost" />
+      <card id="8095" name="Heal Guardian" />
+      <card id="8095" name="Heal Guardian" />
+      <card id="8094" name="Guardian Familiar" />
+      <card id="8094" name="Guardian Familiar" />
+      <card id="8093" name="Beta Berserker" />
+      <card id="8093" name="Beta Berserker" />
+      <card id="8092" name="Steelsight Visionary" />
+      <card id="8097" name="Frostwing Dragon" />
+      <card id="8097" name="Frostwing Dragon" />
+    </deck>
+  </mission>
+  <!-- Campaign Event 5 weeks 4-8 -->
+  <mission>
+    <id>5688</id>
+    <name>Guarding Against a Guardian</name>
+    <energy>9</energy>
+    <desc>The guardian had turned against everything in its path. However, you protected the Seafolk King from being attacked, even after his guards fell.</desc>
+    <commander id="337" />
+    <deck>
+      <card id="8089" name="Temple Automaton" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="7109" name="Clownder" />
+      <card id="5011" name="Sky Whale" />
+      <card id="6108" name="Redwater Angler" />
+      <card id="5108" name="Aurora Skimmer" />
+      <card id="7066" name="Aquine" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="1630" name="Giant Squid" />
+      <card id="2079" mastery_level="2" name="Koi Guardian" />
+      <card id="2076" mastery_level="3" name="Adorabilis" />
+      <card id="1634" mastery_level="4" name="Brightshoal Warrior" />
+      <card id="7106" mastery_level="5" name="Octhos, Ruin Baron" />
+      <card id="5105" mastery_level="6" name="Sea Whisperer" />
+      <card id="7150" mastery_level="7" name="Ika-Roa" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5689</id>
+    <name>Proven Intentions</name>
+    <energy>9</energy>
+    <desc>The Seafolk King reluctantly acknowledges your part in protecting him. The guardian lays dead on the sea bed, a testament to your strength.</desc>
+    <commander id="397" />
+    <deck>
+      <card id="8044" name="Aegis of the Sea" />
+      <card id="7007" name="Water Serpent" />
+      <card id="5149" name="Flatfish Ward" />
+      <card id="5041" name="Skylance Raiders" />
+      <card id="5041" name="Skylance Raiders" />
+      <card id="6108" name="Redwater Angler" />
+      <card id="5073" name="Shell Invader" />
+      <card id="7005" name="Tsunamari" />
+      <card id="1630" name="Giant Squid" />
+      <card id="6149" mastery_level="2" name="Pufferspine" />
+      <card id="5107" mastery_level="3" name="Thrumming Beacon" />
+      <card id="2104" mastery_level="4" name="Sharkcrusher" />
+      <card id="5106" mastery_level="5" name="Acuro, Sea Captain" />
+      <card id="6107" mastery_level="6" name="Great Lava Crab" />
+      <card id="7105" mastery_level="7" name="Charybdis" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Seafolk_King</commander>
+        <enemy>0</enemy>
+        <text>You have proven yourself to be a true ally. If you had wanted to attack us, there would have been no better time than when the guardian attacked.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5690</id>
+    <name>Negotiation Revival</name>
+    <energy>9</energy>
+    <desc>With the Temple's threat neutralized, Rayne believes it's time to further negotiations with the Seafolk. The King just might listen this time.</desc>
+    <commander id="395" />
+    <deck>
+      <card id="8089" name="Temple Automaton" />
+      <card id="7007" name="Water Serpent" />
+      <card id="5108" name="Aurora Skimmer" />
+      <card id="5011" name="Sky Whale" />
+      <card id="5041" name="Skylance Raiders" />
+      <card id="2078" name="Septuamaid" />
+      <card id="2079" name="Koi Guardian" />
+      <card id="6108" name="Redwater Angler" />
+      <card id="5149" name="Flatfish Ward" />
+      <card id="7066" mastery_level="2" name="Aquine" />
+      <card id="2105" mastery_level="3" name="Shockscale Eel" />
+      <card id="5073" mastery_level="4" name="Shell Invader" />
+      <card id="7003" mastery_level="5" name="Kraken" />
+      <card id="7054" mastery_level="6" name="The Thing Below" />
+      <card id="5109" mastery_level="7" name="Cyclospout" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>Thank you, King Proteus. I would like to establish better communication between the Seafolk tribe and the rest of Arcantica.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5691</id>
+    <name>Hesitant Acceptance</name>
+    <energy>9</energy>
+    <desc>The King finally seems to trust you, albeit reluctantly. His hands curl protectively over the Seastone staff, which he's hesitant to give up to you.</desc>
+    <commander id="250" />
+    <deck>
+      <card id="8044" name="Aegis of the Sea" />
+      <card id="7007" name="Water Serpent" />
+      <card id="2069" name="Webfoot Surfer" />
+      <card id="7051" name="Stinglash Rider" />
+      <card id="5050" name="Cloud Spear" />
+      <card id="2078" name="Septuamaid" />
+      <card id="2079" name="Koi Guardian" />
+      <card id="6108" name="Redwater Angler" />
+      <card id="5149" name="Flatfish Ward" />
+      <card id="7066" mastery_level="2" name="Aquine" />
+      <card id="2105" mastery_level="3" name="Shockscale Eel" />
+      <card id="6102" mastery_level="4" name="Ribbithold Guards" />
+      <card id="7003" mastery_level="5" name="Kraken" />
+      <card id="7054" mastery_level="6" name="The Thing Below" />
+      <card id="5051" mastery_level="7" name="Amphibious Digger" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Seafolk_King</commander>
+        <enemy>0</enemy>
+        <text>The Seastone Staff is an artifact forged from another ocean. But I understand it was gifted to an Order of Monks.</text>
+      </line>
+      <line>
+        <commander>Portraits_Seafolk_King</commander>
+        <enemy>0</enemy>
+        <text>We would not be in possession of it if it hadn't been stolen. I understand this. And yet...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5692</id>
+    <name>Unexpected Marauders</name>
+    <energy>9</energy>
+    <desc>Before you can continue your conversation with the King about the Seastone Staff, a soldier swims quickly to the King's side. Despite his whispering, you can still hear the soldier's words...</desc>
+    <commander id="400" />
+    <deck>
+      <card id="8089" name="Temple Automaton" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="2069" name="Webfoot Surfer" />
+      <card id="7016" name="Webfist Shaman" />
+      <card id="2014" name="Tadpole Warmage" />
+      <card id="7053" name="Bee Eater" />
+      <card id="5149" name="Flatfish Ward" />
+      <card id="5041" name="Skylance Raiders" />
+      <card id="5041" name="Skylance Raiders" />
+      <card id="7149" mastery_level="2" name="Trident Merman" />
+      <card id="2034" mastery_level="3" name="Leap Frog Duo" />
+      <card id="1028" mastery_level="4" name="Heroic Frog" />
+      <card id="7083" mastery_level="5" name="Sludge Spine" />
+      <card id="7042" mastery_level="6" name="Scurvy Hopper" />
+      <card id="5100" mastery_level="7" name="Lifegiver Augur" />
+    </deck>
+    <speech>
+      <line>
+        <commander>kraken_portrait</commander>
+        <enemy>0</enemy>
+        <text>My liege! Our forces are under attack by the waters of Duskwillow!</text>
+      </line>
+      <line>
+        <commander>Portraits_Seafolk_King</commander>
+        <enemy>0</enemy>
+        <text>What?! Who dares!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5693</id>
+    <name>A Friend in Need</name>
+    <energy>9</energy>
+    <desc>The Seafolk King swims off before you and Rayne can continue your discussion. Rayne gives chase, urging you to do the same.</desc>
+    <commander id="397" />
+    <deck>
+      <card id="8089" name="Temple Automaton" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="2011" name="Poliworg" />
+      <card id="6020" name="Croak Piercer" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="1630" name="Giant Squid" />
+      <card id="2105" name="Shockscale Eel" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="7005" mastery_level="2" name="Tsunamari" />
+      <card id="7098" mastery_level="3" name="Survivalist" />
+      <card id="6051" mastery_level="4" name="Treeblade Thief" />
+      <card id="5104" mastery_level="5" name="Pisces" />
+      <card id="7018" mastery_level="6" name="Frog Emperor" />
+      <card id="5103" mastery_level="7" name="Mother of Solars" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>Just when we were making progress. Come, adventurer, let's see if they need our help.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5694</id>
+    <name>Looming Threat</name>
+    <energy>9</energy>
+    <desc>You swim as quickly as you can, trying to catch up with the faster Seafolk. A shadow descends from above you, something swimming closer...</desc>
+    <commander id="395" />
+    <deck>
+      <card id="8044" name="Aegis of the Sea" />
+      <card id="7022" name="Beetle Tamer" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="7098" name="Survivalist" />
+      <card id="2012" name="Frogling Swarm" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="5011" name="Sky Whale" />
+      <card id="7109" name="Clownder" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="5149" mastery_level="2" name="Flatfish Ward" />
+      <card id="7099" mastery_level="3" name="Toadplay" />
+      <card id="6102" mastery_level="4" name="Ribbithold Guards" />
+      <card id="5150" mastery_level="5" name="Deepspear Warfarer" />
+      <card id="7050" mastery_level="6" name="Krieg, Northern Sword" />
+      <card id="7103" mastery_level="7" name="Wavomancer" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5695</id>
+    <name>Dawnglow War Life</name>
+    <energy>9</energy>
+    <desc>It's frogs! You can see from their colorful attire that they must be from Dawnglow Swamp. Unlike the peaceful Golden Leaf frogs, the Dawnglow tribe hasn't always been friendly towards you... and now they seem ready to fight!</desc>
+    <commander id="400" />
+    <deck>
+      <card id="8089" name="Temple Automaton" />
+      <card id="7022" name="Beetle Tamer" />
+      <card id="7051" name="Stinglash Rider" />
+      <card id="5099" name="Croak Dropper" />
+      <card id="5053" name="Anura Witch" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="5108" name="Aurora Skimmer" />
+      <card id="5041" name="Skylance Raiders" />
+      <card id="2104" name="Sharkcrusher" />
+      <card id="7107" mastery_level="2" name="Hammer Krab" />
+      <card id="5102" mastery_level="3" name="Tribe Tracker" />
+      <card id="7098" mastery_level="4" name="Survivalist" />
+      <card id="6106" mastery_level="5" name="Bailong" />
+      <card id="5143" mastery_level="6" name="Cedric's Battlesnail" />
+      <card id="6048" mastery_level="7" name="Bulwraag" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Tribal_Frog</commander>
+        <enemy>1</enemy>
+        <text>Rrribbit! Take no prisoners!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5696</id>
+    <name>Frog Fighters</name>
+    <energy>9</energy>
+    <desc>You and Rayne quickly work to dispatch the small force of frogs. You hurry to where you saw King Proteus swimming...</desc>
+    <commander id="252" />
+    <deck>
+      <card id="8044" name="Aegis of the Sea" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="5050" name="Cloud Spear" />
+      <card id="5020" name="Frost Frog" />
+      <card id="6020" name="Croak Piercer" />
+      <card id="6050" name="Wortwog" />
+      <card id="6108" name="Redwater Angler" />
+      <card id="1630" name="Giant Squid" />
+      <card id="2076" name="Adorabilis" />
+      <card id="7109" mastery_level="2" name="Clownder" />
+      <card id="2014" mastery_level="3" name="Tadpole Warmage" />
+      <card id="7099" mastery_level="4" name="Toadplay" />
+      <card id="2106" mastery_level="5" name="Pharite Snapjaw" />
+      <card id="6052" mastery_level="6" name="Fuming Beast" />
+      <card id="6018" mastery_level="7" name="Underwater Lasher" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5697</id>
+    <name>Crossfire</name>
+    <energy>9</energy>
+    <desc>On the other side of Pharos Temple, you find that the King and his men are engaged with a battalion of frogs. When you get closer, you become trapped in the crossfire!</desc>
+    <commander id="400" />
+    <deck>
+      <card id="8089" name="Temple Automaton" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="5053" name="Anura Witch" />
+      <card id="6050" name="Wortwog" />
+      <card id="2012" name="Frogling Swarm" />
+      <card id="6050" name="Wortwog" />
+      <card id="7005" name="Tsunamari" />
+      <card id="5149" name="Flatfish Ward" />
+      <card id="5011" name="Sky Whale" />
+      <card id="2105" mastery_level="2" name="Shockscale Eel" />
+      <card id="1028" mastery_level="3" name="Heroic Frog" />
+      <card id="7016" mastery_level="4" name="Webfist Shaman" />
+      <card id="2106" mastery_level="5" name="Pharite Snapjaw" />
+      <card id="5101" mastery_level="6" name="Sycophant" />
+      <card id="7100" mastery_level="7" name="Snow Caller" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>Stop this fighting, now! What are these Dawnglow frogs even doing here?!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5698</id>
+    <name>War Stratagem</name>
+    <energy>9</energy>
+    <desc>You realize that the Seafolk that are fighting with you aren't actually the King's men. It seems that the Oracle of Scylla has returned, fighting the frogs under the guise of protecting the King!</desc>
+    <commander id="359" />
+    <deck>
+      <card id="8044" name="Aegis of the Sea" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="7053" name="Bee Eater" />
+      <card id="5102" name="Tribe Tracker" />
+      <card id="2011" name="Poliworg" />
+      <card id="5050" name="Cloud Spear" />
+      <card id="2079" name="Koi Guardian" />
+      <card id="5108" name="Aurora Skimmer" />
+      <card id="5041" name="Skylance Raiders" />
+      <card id="2104" mastery_level="2" name="Sharkcrusher" />
+      <card id="6051" mastery_level="3" name="Treeblade Thief" />
+      <card id="5102" mastery_level="4" name="Tribe Tracker" />
+      <card id="7106" mastery_level="5" name="Octhos, Ruin Baron" />
+      <card id="5018" mastery_level="6" name="Grand Knight Frog" />
+      <card id="5018" mastery_level="7" name="Grand Knight Frog" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5699</id>
+    <name>Stubborn King</name>
+    <energy>9</energy>
+    <desc>Rayne has noticed the discrepancy as well. She pulls you and the King Proteus to the side, away from the main fray. She has a plan of her own...</desc>
+    <commander id="400" />
+    <deck>
+      <card id="8044" name="Aegis of the Sea" />
+      <card id="7022" name="Beetle Tamer" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="2034" name="Leap Frog Duo" />
+      <card id="2011" name="Poliworg" />
+      <card id="5050" name="Cloud Spear" />
+      <card id="2076" name="Adorabilis" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="5073" name="Shell Invader" />
+      <card id="7149" mastery_level="2" name="Trident Merman" />
+      <card id="5053" mastery_level="3" name="Anura Witch" />
+      <card id="6020" mastery_level="4" name="Croak Piercer" />
+      <card id="7108" mastery_level="5" name="Quetee" />
+      <card id="6018" mastery_level="6" name="Underwater Lasher" />
+      <card id="7049" mastery_level="7" name="Boundtoad" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>King Proteus, I believe you might be in danger. I want you and the adventurer to flee.</text>
+      </line>
+      <line>
+        <commander>Portraits_Seafolk_King</commander>
+        <enemy>0</enemy>
+        <text>What? My men and I are not afraid to face danger!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5700</id>
+    <name>True Colors</name>
+    <energy>9</energy>
+    <desc>At Rayne's urging, you take the King's hand and try to drag him away. He resists, and you can't make it very far before one of the raiders notices your plight.</desc>
+    <commander id="359" />
+    <deck>
+      <card id="8044" name="Aegis of the Sea" />
+      <card id="7007" name="Water Serpent" />
+      <card id="7098" name="Survivalist" />
+      <card id="6050" name="Wortwog" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="5011" name="Sky Whale" />
+      <card id="7109" name="Clownder" />
+      <card id="2079" name="Koi Guardian" />
+      <card id="5073" name="Shell Invader" />
+      <card id="2104" mastery_level="2" name="Sharkcrusher" />
+      <card id="5102" mastery_level="3" name="Tribe Tracker" />
+      <card id="2105" mastery_level="4" name="Shockscale Eel" />
+      <card id="7023" mastery_level="5" name="Zolmosh the Fist" />
+      <card id="7014" mastery_level="6" name="Genbu" />
+      <card id="7052" mastery_level="7" name="Toad the Ravenous" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>Hold it, King Proteus. You're not allowed to leave!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5701</id>
+    <name>Seafolk Versus Seafolk</name>
+    <energy>9</energy>
+    <desc>The King looks ready to take out the raiders by himself. If you can't calm him down, the next best thing to do is to fight alongside him.</desc>
+    <commander id="359" />
+    <deck>
+      <card id="8089" name="Temple Automaton" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="2011" name="Poliworg" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="1630" name="Giant Squid" />
+      <card id="1634" name="Brightshoal Warrior" />
+      <card id="7149" name="Trident Merman" />
+      <card id="5073" name="Shell Invader" />
+      <card id="2078" mastery_level="2" name="Septuamaid" />
+      <card id="5050" mastery_level="3" name="Cloud Spear" />
+      <card id="6103" mastery_level="4" name="Ribbitaksu" />
+      <card id="6109" mastery_level="5" name="Captain Gnaw" />
+      <card id="7150" mastery_level="6" name="Ika-Roa" />
+      <card id="6103" mastery_level="7" name="Ribbitaksu" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Seafolk_King</commander>
+        <enemy>0</enemy>
+        <text>What is the meaning of this?!</text>
+      </line>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>The Dawnglow frogs are furious that your forces assaulted their sister clan in Duskwillow.</text>
+      </line>
+      <line>
+        <commander>Portraits_Seafolk_King</commander>
+        <enemy>0</enemy>
+        <text>Fiend, you know perfectly well that's a result of your actions!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5702</id>
+    <name>Seastone Staff's Power</name>
+    <energy>9</energy>
+    <desc>King Proteus wants to take care of the raiders by himself. He prepares to finish off Zolmosh and his crew...</desc>
+    <commander id="395" />
+    <deck>
+      <card id="8044" name="Aegis of the Sea" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="7099" name="Toadplay" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="1630" name="Giant Squid" />
+      <card id="7005" name="Tsunamari" />
+      <card id="2076" name="Adorabilis" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="7066" mastery_level="2" name="Aquine" />
+      <card id="6102" mastery_level="3" name="Ribbithold Guards" />
+      <card id="6103" mastery_level="4" name="Ribbitaksu" />
+      <card id="6107" mastery_level="5" name="Great Lava Crab" />
+      <card id="2080" mastery_level="6" name="Hunter Zind" />
+      <card id="2071" mastery_level="7" name="Sproutfrog Rainwisher" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Seafolk_King</commander>
+        <enemy>0</enemy>
+        <text>Stand aside, adventurer. I'll use the Seastone Staff to vanquish these frauds!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5703</id>
+    <name>Empty Promises</name>
+    <energy>9</energy>
+    <desc>The King points the staff dramatically at the Oracle of Scylla. Yet nothing happens. He shakes the staff, while the enemy forces close in.</desc>
+    <commander id="397" />
+    <deck>
+      <card id="8044" name="Aegis of the Sea" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="7098" name="Survivalist" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="2078" name="Septuamaid" />
+      <card id="5041" name="Skylance Raiders" />
+      <card id="7109" name="Clownder" />
+      <card id="7066" name="Aquine" />
+      <card id="7005" mastery_level="2" name="Tsunamari" />
+      <card id="5050" mastery_level="3" name="Cloud Spear" />
+      <card id="6107" mastery_level="4" name="Great Lava Crab" />
+      <card id="7014" mastery_level="5" name="Genbu" />
+      <card id="5153" mastery_level="6" name="Octopulse" />
+      <card id="6052" mastery_level="7" name="Fuming Beast" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5704</id>
+    <name>Fake Seastone Staff</name>
+    <energy>9</energy>
+    <desc>You jump into the battle in order to protect the King. He seems completely distracted with his staff, which refuses to work no matter what position he holds it in.</desc>
+    <commander id="400" />
+    <deck>
+      <card id="8044" name="Aegis of the Sea" />
+      <card id="5073" name="Shell Invader" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="7099" name="Toadplay" />
+      <card id="6051" name="Treeblade Thief" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="5011" name="Sky Whale" />
+      <card id="7005" name="Tsunamari" />
+      <card id="5041" name="Skylance Raiders" />
+      <card id="6108" mastery_level="2" name="Redwater Angler" />
+      <card id="7016" mastery_level="3" name="Webfist Shaman" />
+      <card id="6107" mastery_level="4" name="Great Lava Crab" />
+      <card id="5106" mastery_level="5" name="Acuro, Sea Captain" />
+      <card id="6018" mastery_level="6" name="Underwater Lasher" />
+      <card id="7052" mastery_level="7" name="Toad the Ravenous" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Seafolk_King</commander>
+        <enemy>0</enemy>
+        <text>This staff... it's a fake! Find her! Find the goblin pirate who dares make fun of us!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5705</id>
+    <name>A Friend Indeed</name>
+    <energy>9</energy>
+    <desc>Rayne is forced to intervene again. The two of you have not fled nearly far enough, despite her earlier promptings. The frogs are beginning to catch up...</desc>
+    <commander id="252" />
+    <deck>
+      <card id="8044" name="Aegis of the Sea" />
+      <card id="5108" name="Aurora Skimmer" />
+      <card id="7099" name="Toadplay" />
+      <card id="2034" name="Leap Frog Duo" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="1634" name="Brightshoal Warrior" />
+      <card id="5108" name="Aurora Skimmer" />
+      <card id="5041" name="Skylance Raiders" />
+      <card id="7109" name="Clownder" />
+      <card id="2076" mastery_level="2" name="Adorabilis" />
+      <card id="6050" mastery_level="3" name="Wortwog" />
+      <card id="7054" mastery_level="4" name="The Thing Below" />
+      <card id="6109" mastery_level="5" name="Captain Gnaw" />
+      <card id="6105" mastery_level="6" name="Wasteland Crusher" />
+      <card id="6101" mastery_level="7" name="Chasm Dowager" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>I'll take care of the Dawnglow frogs. You go ahead and help the King. We'll need to find Xerkahn to get the real Seastone Staff...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5706</id>
+    <name>Under Her Thumb</name>
+    <energy>9</energy>
+    <desc>You search for the Seastone Staff, keeping close to the King. Rayne drags the attention of the frogs away from you. Meanwhile, you confront the Seafolk raiders, who you saw working with Xerkahn earlier...</desc>
+    <commander id="359" />
+    <deck>
+      <card id="8089" name="Temple Automaton" />
+      <card id="5073" name="Shell Invader" />
+      <card id="5020" name="Frost Frog" />
+      <card id="5050" name="Cloud Spear" />
+      <card id="7051" name="Stinglash Rider" />
+      <card id="5041" name="Skylance Raiders" />
+      <card id="5011" name="Sky Whale" />
+      <card id="2076" name="Adorabilis" />
+      <card id="7066" name="Aquine" />
+      <card id="7109" mastery_level="2" name="Clownder" />
+      <card id="2034" mastery_level="3" name="Leap Frog Duo" />
+      <card id="7023" mastery_level="4" name="Zolmosh the Fist" />
+      <card id="5106" mastery_level="5" name="Acuro, Sea Captain" />
+      <card id="7042" mastery_level="6" name="Scurvy Hopper" />
+      <card id="7100" mastery_level="7" name="Snow Caller" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Earthquake_Hammer</commander>
+        <enemy>1</enemy>
+        <text>Ack! You win. Okay, I'll tell you were the pirate goblin went...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5707</id>
+    <name>Best Laid Plans</name>
+    <energy>9</energy>
+    <desc>The raiders tell you about Xerkahn. They were supposed to meet after the issue with the King and the Dawnglow frogs had been resolved. Xerkahn will likely be there waiting...</desc>
+    <commander id="395" />
+    <deck>
+      <card id="8044" name="Aegis of the Sea" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="5053" name="Anura Witch" />
+      <card id="6020" name="Croak Piercer" />
+      <card id="5102" name="Tribe Tracker" />
+      <card id="1630" name="Giant Squid" />
+      <card id="1630" name="Giant Squid" />
+      <card id="7149" name="Trident Merman" />
+      <card id="7066" name="Aquine" />
+      <card id="2079" mastery_level="2" name="Koi Guardian" />
+      <card id="7020" mastery_level="3" name="Trapper Frog" />
+      <card id="7105" mastery_level="4" name="Charybdis" />
+      <card id="7106" mastery_level="5" name="Octhos, Ruin Baron" />
+      <card id="7018" mastery_level="6" name="Frog Emperor" />
+      <card id="7097" mastery_level="7" name="Caustic Toadbog" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5708</id>
+    <name>Pirates of All Types</name>
+    <energy>9</energy>
+    <desc>You return to Pharos Temple, where you find Xerkahn waiting with a host of Seafolk pirates. It seems her crew is ready to fight!</desc>
+    <commander id="394" />
+    <deck>
+      <card id="8089" name="Temple Automaton" />
+      <card id="7107" name="Hammer Krab" />
+      <card id="6050" name="Wortwog" />
+      <card id="5020" name="Frost Frog" />
+      <card id="7051" name="Stinglash Rider" />
+      <card id="2078" name="Septuamaid" />
+      <card id="1630" name="Giant Squid" />
+      <card id="6108" name="Redwater Angler" />
+      <card id="7005" name="Tsunamari" />
+      <card id="6149" mastery_level="2" name="Pufferspine" />
+      <card id="2069" mastery_level="3" name="Webfoot Surfer" />
+      <card id="7023" mastery_level="4" name="Zolmosh the Fist" />
+      <card id="7003" mastery_level="5" name="Kraken" />
+      <card id="7108" mastery_level="6" name="Quetee" />
+      <card id="5103" mastery_level="7" name="Mother of Solars" />
+    </deck>
+    <speech>
+      <line>
+        <commander>skyPirateLadyGoblin</commander>
+        <enemy>1</enemy>
+        <text>Well if it ain't the prim an' proper King along with the riffraff adventurer!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5709</id>
+    <name>Intimidation</name>
+    <energy>9</energy>
+    <desc>The Seafolk King doesn't have great negotiation skills. After being duped by the goblin pirate, King Proteus clearly wants a fight.</desc>
+    <commander id="397" />
+    <deck>
+      <card id="8044" name="Aegis of the Sea" />
+      <card id="7066" name="Aquine" />
+      <card id="5102" name="Tribe Tracker" />
+      <card id="5020" name="Frost Frog" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="2079" name="Koi Guardian" />
+      <card id="6108" name="Redwater Angler" />
+      <card id="6108" name="Redwater Angler" />
+      <card id="5149" name="Flatfish Ward" />
+      <card id="5073" mastery_level="2" name="Shell Invader" />
+      <card id="6051" mastery_level="3" name="Treeblade Thief" />
+      <card id="7054" mastery_level="4" name="The Thing Below" />
+      <card id="5105" mastery_level="5" name="Sea Whisperer" />
+      <card id="7108" mastery_level="6" name="Quetee" />
+      <card id="5054" mastery_level="7" name="Reckless Ballista" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Seafolk_King</commander>
+        <enemy>0</enemy>
+        <text>I'll give you one chance to explain why you handed me a fake staff. And I fully expect you to return the genuine article.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5710</id>
+    <name>Master Plan</name>
+    <energy>9</energy>
+    <desc>Xerkahn reveals her master plan, which involves both the Dawnglow frogs and the entire Seafolk kingdom. There's just one problem...</desc>
+    <commander id="395" />
+    <deck>
+      <card id="8089" name="Temple Automaton" />
+      <card id="1630" name="Giant Squid" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="5050" name="Cloud Spear" />
+      <card id="7051" name="Stinglash Rider" />
+      <card id="2076" name="Adorabilis" />
+      <card id="5149" name="Flatfish Ward" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="5073" mastery_level="2" name="Shell Invader" />
+      <card id="7016" mastery_level="3" name="Webfist Shaman" />
+      <card id="7003" mastery_level="4" name="Kraken" />
+      <card id="5109" mastery_level="5" name="Cyclospout" />
+      <card id="2080" mastery_level="6" name="Hunter Zind" />
+      <card id="7018" mastery_level="7" name="Frog Emperor" />
+    </deck>
+    <speech>
+      <line>
+        <commander>skyPirateLadyGoblin</commander>
+        <enemy>1</enemy>
+        <text>Aye, I see you've figured it out. The Dawnglow frogs were quick to mount a counter-offense in retaliation of Duskwillow.</text>
+      </line>
+      <line>
+        <commander>skyPirateLadyGoblin</commander>
+        <enemy>1</enemy>
+        <text>They only needed to have the right incentive... a gift that showed our sincerity an' goodwill...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5711</id>
+    <name>Plan of Attack</name>
+    <energy>9</energy>
+    <desc>Xerkahn ends the conversation. She still has other plans in mind, one of which involves the Seafolk King.</desc>
+    <commander id="394" />
+    <deck>
+      <card id="8044" name="Aegis of the Sea" />
+      <card id="2079" name="Koi Guardian" />
+      <card id="6102" name="Ribbithold Guards" />
+      <card id="6020" name="Croak Piercer" />
+      <card id="2014" name="Tadpole Warmage" />
+      <card id="1630" name="Giant Squid" />
+      <card id="5149" name="Flatfish Ward" />
+      <card id="7005" name="Tsunamari" />
+      <card id="7066" name="Aquine" />
+      <card id="7107" mastery_level="2" name="Hammer Krab" />
+      <card id="6051" mastery_level="3" name="Treeblade Thief" />
+      <card id="5054" mastery_level="4" name="Reckless Ballista" />
+      <card id="7014" mastery_level="5" name="Genbu" />
+      <card id="7054" mastery_level="6" name="The Thing Below" />
+      <card id="5051" mastery_level="7" name="Amphibious Digger" />
+    </deck>
+    <speech>
+      <line>
+        <commander>skyPirateLadyGoblin</commander>
+        <enemy>1</enemy>
+        <text>Why would I give a powerful artifact to a dead man?</text>
+      </line>
+      <line>
+        <commander>skyPirateLadyGoblin</commander>
+        <enemy>1</enemy>
+        <text>Enough talkin', Kingie. You've got a bit o' dying to do. Then the Seafolk will be quick to hate the allied tribes!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5712</id>
+    <name>King Proteus's Answer</name>
+    <energy>9</energy>
+    <desc>King Proteus is quick to give Xerkahn an answer. The Seafolk pirates rally behind the Goblin pirate, the two combining to form an unlikely but devastating alliance.</desc>
+    <commander id="352" />
+    <deck>
+      <card id="8089" name="Temple Automaton" />
+      <card id="5107" name="Thrumming Beacon" />
+      <card id="7099" name="Toadplay" />
+      <card id="7098" name="Survivalist" />
+      <card id="6050" name="Wortwog" />
+      <card id="2104" name="Sharkcrusher" />
+      <card id="7109" name="Clownder" />
+      <card id="6108" name="Redwater Angler" />
+      <card id="7149" name="Trident Merman" />
+      <card id="6149" mastery_level="2" name="Pufferspine" />
+      <card id="5053" mastery_level="3" name="Anura Witch" />
+      <card id="7120" mastery_level="4" name="Liliane's Blessing" />
+      <card id="7003" mastery_level="5" name="Kraken" />
+      <card id="7014" mastery_level="6" name="Genbu" />
+      <card id="7101" mastery_level="7" name="Shriekers" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portraits_Seafolk_King</commander>
+        <enemy>0</enemy>
+        <text>If it's a war you're after, then it's a war you'll get!</text>
+      </line>
+    </speech>
   </mission>
 </root>

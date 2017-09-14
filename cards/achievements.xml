@@ -6917,5 +6917,148 @@
       <item id="8004" number="1" />
     </reward>
   </achievement>
+  <!-- Campaign 5 weeks 5-8 -->
+  <achievement>
+    <id>3275</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Newfound Alliance</name>
+    <desc>Complete the 'Newfound Alliance' campaign on Mastery Level 2.</desc>
+    <mission_req>5679</mission_req>
+    <locked_start_time>1506013200</locked_start_time>
+    <!-- Thu, 21 Sept 2017 17:00:00 -->
+    <req>
+      <campaign>1140</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3276</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Newfound Alliance</name>
+    <desc>Complete the 'Newfound Alliance' campaign on Mastery Level 4.</desc>
+    <mission_req>5679</mission_req>
+    <locked_start_time>1506013200</locked_start_time>
+    <!-- Thu, 21 Sept 2017 17:00:00 -->
+    <achievement_req>3275</achievement_req>
+    <req>
+      <campaign>1140</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3277</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Newfound Alliance</name>
+    <desc>Complete the 'Newfound Alliance' campaign on Mastery Level 6.</desc>
+    <mission_req>5679</mission_req>
+    <locked_start_time>1506013200</locked_start_time>
+    <!-- Thu, 21 Sept 2017 17:00:00 -->
+    <achievement_req>3276</achievement_req>
+    <req>
+      <campaign>1140</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3278</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Newfound Alliance</name>
+    <desc>Complete the 'Newfound Alliance' campaign on Mastery Level 7.</desc>
+    <mission_req>5679</mission_req>
+    <locked_start_time>1506013200</locked_start_time>
+    <!-- Thu, 21 Sept 2017 17:00:00 -->
+    <achievement_req>3277</achievement_req>
+    <req>
+      <campaign>1140</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3279</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Warmongers</name>
+    <desc>Complete the 'Warmongers' campaign on Mastery Level 2.</desc>
+    <mission_req>5700</mission_req>
+    <locked_start_time>1507222800</locked_start_time>
+    <!-- Thu, 5 Oct 2017 17:00:00 -->
+    <req>
+      <campaign>1141</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3280</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Warmongers</name>
+    <desc>Complete the 'Warmongers' campaign on Mastery Level 4.</desc>
+    <mission_req>5700</mission_req>
+    <locked_start_time>1507222800</locked_start_time>
+    <!-- Thu, 5 Oct 2017 17:00:00 -->
+    <achievement_req>3279</achievement_req>
+    <req>
+      <campaign>1141</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3281</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Warmongers</name>
+    <desc>Complete the 'Warmongers' campaign on Mastery Level 6.</desc>
+    <mission_req>5700</mission_req>
+    <locked_start_time>1507222800</locked_start_time>
+    <!-- Thu, 5 Oct 2017 17:00:00 -->
+    <achievement_req>3280</achievement_req>
+    <req>
+      <campaign>1141</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3282</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Warmongers</name>
+    <desc>Complete the 'Warmongers' campaign on Mastery Level 7.</desc>
+    <mission_req>5700</mission_req>
+    <locked_start_time>1507222800</locked_start_time>
+    <!-- Thu, 5 Oct 2017 17:00:00 -->
+    <achievement_req>3281</achievement_req>
+    <req>
+      <campaign>1141</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
 </root>
