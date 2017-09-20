@@ -522,9 +522,7 @@ var SIMULATOR = {};
                 }
 
                 var poisonDamage = 0;
-                if (strike_damage < 0) {
-                    strike_damage = 0;
-                } else if (poison && target.isAlive()) {
+                if (strike_damage > 0 && poison && target.isAlive()) {
                     if (strike > target['poisoned']) {
                         poisonDamage = strike;
                         target['poisoned'] = poisonDamage;
