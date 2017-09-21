@@ -19452,4 +19452,120 @@
       <skill id="jam" c="3" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5155</id>
+    <card_type>2</card_type>
+    <name>Silvertongue Fencer</name>
+    <picture>Fencing_Frog_A</picture>
+    <asset_bundle>106</asset_bundle>
+    <hidden_until_time>1506013200</hidden_until_time>
+    <attack>3</attack>
+    <health>15</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="1" />
+    <skill id="valor" x="1" />
+    <skill id="flurry" c="6" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="1" />
+      <skill id="valor" x="1" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="1" />
+      <skill id="valor" x="2" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>17</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15155</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Silverdash Fencer</name>
+    <picture>Fencing_Frog_A</picture>
+    <asset_bundle>106</asset_bundle>
+    <hidden_until_time>1506013200</hidden_until_time>
+    <attack>4</attack>
+    <health>18</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="1" />
+    <skill id="valor" x="3" />
+    <skill id="flurry" c="5" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="2" />
+      <skill id="valor" x="3" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="2" />
+      <skill id="valor" x="3" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="2" />
+      <skill id="valor" x="4" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25155</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Silverslash Fencer</name>
+    <picture>Fencing_Frog_B</picture>
+    <asset_bundle>106</asset_bundle>
+    <hidden_until_time>1506013200</hidden_until_time>
+    <attack>4</attack>
+    <health>20</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="2" />
+    <skill id="valor" x="5" />
+    <skill id="flurry" c="4" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="3" />
+      <skill id="valor" x="6" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+  </unit>
 </root>

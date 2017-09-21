@@ -19311,4 +19311,120 @@
       <skill id="jam" c="3" />
     </upgrade>
   </unit>
+  <unit>
+    <id>7155</id>
+    <card_type>2</card_type>
+    <name>Seashell Footpad</name>
+    <picture>Seasshell_Club_Frog_A</picture>
+    <asset_bundle>106</asset_bundle>
+    <hidden_until_time>1506013200</hidden_until_time>
+    <attack>4</attack>
+    <health>10</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="enrage" y="4" x="1" />
+    <skill id="pierce" x="2" />
+    <skill id="poison" x="1" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="enrage" y="4" x="1" />
+      <skill id="pierce" x="3" />
+      <skill id="poison" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="enrage" y="4" x="2" />
+      <skill id="pierce" x="3" />
+      <skill id="poison" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17155</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Seashell Brigand</name>
+    <picture>Seasshell_Club_Frog_A</picture>
+    <asset_bundle>106</asset_bundle>
+    <hidden_until_time>1506013200</hidden_until_time>
+    <attack>5</attack>
+    <health>12</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="enrage" y="4" x="3" />
+    <skill id="pierce" x="3" />
+    <skill id="poison" x="2" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="enrage" y="4" x="3" />
+      <skill id="pierce" x="4" />
+      <skill id="poison" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="enrage" y="4" x="3" />
+      <skill id="pierce" x="4" />
+      <skill id="poison" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27155</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Seashell Pirate</name>
+    <picture>Seasshell_Club_Frog_B</picture>
+    <asset_bundle>106</asset_bundle>
+    <hidden_until_time>1506013200</hidden_until_time>
+    <attack>6</attack>
+    <health>14</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="enrage" y="4" x="3" />
+    <skill id="pierce" x="5" />
+    <skill id="poison" x="3" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="enrage" y="4" x="4" />
+      <skill id="pierce" x="5" />
+      <skill id="poison" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="enrage" y="4" x="4" />
+      <skill id="pierce" x="6" />
+      <skill id="poison" x="4" />
+    </upgrade>
+  </unit>
 </root>

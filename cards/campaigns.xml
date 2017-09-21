@@ -4882,392 +4882,100 @@
     </rewards>
     <find_item id="3059" drop_per_energy=".4" />
   </campaign>
-  <!-- Campaign Event 5 weeks 5-8 
-	
-	<campaign> 
-		<id>1140</id>
-		<name>Newfound Alliance</name>
-		<campaign_req id='1138' level='1' />
-		<locked_start_time>1506013200</locked_start_time>	| Thu, 21 Sept 2017 17:00:00 |
-		<battleground_id>2021</battleground_id>
-		<location_id>11</location_id>
-		<x>575</x>
-		<y>245</y>
-		<combatBG>CombatBGVoid</combatBG>
-		<missions>
-			<mission_id>5688</mission_id>
-			<mission_id>5689</mission_id>
-			<mission_id>5690</mission_id>
-			<mission_id>5691</mission_id>
-			<mission_id>5692</mission_id>
-			<mission_id>5693</mission_id>
-			<mission_id>5694</mission_id>
-			<mission_id>5695</mission_id>
-			<mission_id>5696</mission_id>
-			<mission_id>5697</mission_id>
-			<mission_id>5698</mission_id>
-			<mission_id>5699</mission_id>
-			<mission_id>5700</mission_id>
-		</missions>
-		<rewards>
-			<card level='1' id='511' />
-			<card level='2' id='511' />
-			<card level='3' id='511' />
-			<card level='4' id='2105' />
-			<card level='5' id='512' />
-			<card level='6' id='2077' />
-			<item level='7' id='3060' />
-		</rewards>
-		<find_item id='3059' drop_per_energy='.6' />
-	</campaign>
-	
-	<campaign> 
-		<id>1141</id>
-		<name>Warmonger</name>
-		<campaign_req id='1140' level='1' />
-		<locked_start_time>1507222800</locked_start_time>	| Thu, 5 Oct 2017 17:00:00 |
-		<battleground_id>2022</battleground_id>
-		<location_id>11</location_id>
-		<x>700</x>
-		<y>199</y>
-		<combatBG>CombatBGVoid</combatBG>
-		<missions>
-			<mission_id>5701</mission_id>
-			<mission_id>5702</mission_id>
-			<mission_id>5703</mission_id>
-			<mission_id>5704</mission_id>
-			<mission_id>5705</mission_id>
-			<mission_id>5706</mission_id>
-			<mission_id>5707</mission_id>
-			<mission_id>5708</mission_id>
-			<mission_id>5709</mission_id>
-			<mission_id>5710</mission_id>
-			<mission_id>5711</mission_id>
-			<mission_id>5712</mission_id>
-		</missions>
-		<rewards>
-			<card level='1' id='511' />
-			<card level='2' id='511' />
-			<card level='3' id='511' />
-			<card level='4' id='2105' />
-			<card level='5' id='512' />
-			<card level='6' id='2077' />
-			<item level='7' id='3060' />
-		</rewards>
-		<find_item id='3059' drop_per_energy='.8' />
-	</campaign>
-	-->
-  <!-- ============================ -->
-  <!-- START Mythic Titan Campaigns -->
-  <!-- ============================ -->
+  <!-- Campaign Event 5 weeks 5-8 -->
   <campaign>
-    <id>3000</id>
-    <name>The Ground Quakes...</name>
-    <icon id="green_boss_gem" bundle="15" />
-    <campaign_req id="24" level="1" />
-    <side_mission>1</side_mission>
-    <location_id>1</location_id>
-    <x>716</x>
-    <y>145</y>
-    <combatBG>CombatBGElaria</combatBG>
-    <missions>
-      <mission_id>1500</mission_id>
-      <mission_id>1501</mission_id>
-      <mission_id>1502</mission_id>
-      <mission_id>1503</mission_id>
-    </missions>
-    <rewards>
-      <item level="1" id="2506" />
-      <card level="2" id="511" />
-      <card level="3" id="511" />
-      <item level="4" id="2506" />
-      <card level="5" id="512" />
-      <card level="6" id="512" />
-      <item level="7" id="2506" />
-    </rewards>
-  </campaign>
-  <campaign>
-    <id>3001</id>
-    <name>The Wind Stirs...</name>
-    <icon id="blue_boss_gem" bundle="15" />
-    <campaign_req id="24" level="1" />
-    <side_mission>1</side_mission>
-    <location_id>2</location_id>
-    <x>177</x>
-    <y>495</y>
-    <combatBG>CombatBGLuminis</combatBG>
-    <missions>
-      <mission_id>1504</mission_id>
-      <mission_id>1505</mission_id>
-      <mission_id>1506</mission_id>
-      <mission_id>1507</mission_id>
-    </missions>
-    <rewards>
-      <item level="1" id="2506" />
-      <card level="2" id="511" />
-      <card level="3" id="511" />
-      <item level="4" id="2506" />
-      <card level="5" id="512" />
-      <card level="6" id="512" />
-      <item level="7" id="2506" />
-    </rewards>
-  </campaign>
-  <campaign>
-    <id>3002</id>
-    <name>The Heat Rises...</name>
-    <icon id="red_boss_gem" bundle="15" />
-    <campaign_req id="24" level="1" />
-    <side_mission>1</side_mission>
-    <location_id>3</location_id>
-    <x>630</x>
-    <y>450</y>
-    <combatBG>CombatBGKarthos</combatBG>
-    <missions>
-      <mission_id>1508</mission_id>
-      <mission_id>1509</mission_id>
-      <mission_id>1510</mission_id>
-      <mission_id>1511</mission_id>
-    </missions>
-    <rewards>
-      <item level="1" id="2506" />
-      <card level="2" id="511" />
-      <card level="3" id="511" />
-      <item level="4" id="2506" />
-      <card level="5" id="512" />
-      <card level="6" id="512" />
-      <item level="7" id="2506" />
-    </rewards>
-  </campaign>
-  <!-- END Mythic Campaigns -->
-  <!-- Hero Upgrade Campaigns -->
-  <campaign>
-    <id>3003</id>
-    <!-- 
-		<hidden>0</hidden>
-		<event_only>0</event_only>
-		 -->
-    <name>Applied Knowledge</name>
-    <side_mission>1</side_mission>
-    <upgraded_hero_req>7</upgraded_hero_req>
-    <pvp_rank_req>10</pvp_rank_req>
-    <location_id>0</location_id>
-    <x>171</x>
-    <y>475</y>
-    <combatBG>CombatBGEvent004</combatBG>
-    <missions>
-      <mission_id>1512</mission_id>
-      <mission_id>1513</mission_id>
-      <mission_id>1514</mission_id>
-      <mission_id>1515</mission_id>
-      <mission_id>1516</mission_id>
-      <mission_id>1517</mission_id>
-    </missions>
-    <rewards>
-      <item level="1" id="1011" />
-      <card level="2" id="510" />
-      <item level="3" id="1011" />
-      <card level="4" id="511" />
-      <item level="5" id="1012" />
-      <card level="6" id="512" />
-      <item level="7" id="2509" />
-    </rewards>
-  </campaign>
-  <campaign>
-    <id>3004</id>
-    <!-- 
-		<hidden>0</hidden>
-		<event_only>0</event_only>
-		 -->
-    <name>Oda and the Serpent</name>
-    <side_mission>1</side_mission>
-    <upgraded_hero_req>1</upgraded_hero_req>
-    <pvp_rank_req>10</pvp_rank_req>
-    <location_id>0</location_id>
-    <x>171</x>
-    <y>475</y>
-    <combatBG>CombatBGEvent004</combatBG>
-    <missions>
-      <mission_id>1518</mission_id>
-      <mission_id>1519</mission_id>
-      <mission_id>1520</mission_id>
-      <mission_id>1521</mission_id>
-      <mission_id>1522</mission_id>
-      <mission_id>1523</mission_id>
-    </missions>
-    <rewards>
-      <item level="1" id="1011" />
-      <card level="2" id="510" />
-      <item level="3" id="1011" />
-      <card level="4" id="511" />
-      <item level="5" id="1012" />
-      <card level="6" id="512" />
-      <item level="7" id="2510" />
-    </rewards>
-  </campaign>
-  <campaign>
-    <id>3005</id>
-    <!-- 
-		<hidden>0</hidden>
-		<event_only>0</event_only>
-		 -->
-    <name>Losing Baggage</name>
-    <side_mission>1</side_mission>
-    <upgraded_hero_req>4</upgraded_hero_req>
-    <pvp_rank_req>10</pvp_rank_req>
-    <location_id>0</location_id>
-    <x>171</x>
-    <y>475</y>
-    <combatBG>CombatBGEvent004</combatBG>
-    <missions>
-      <mission_id>1524</mission_id>
-      <mission_id>1525</mission_id>
-      <mission_id>1526</mission_id>
-      <mission_id>1527</mission_id>
-      <mission_id>1528</mission_id>
-      <mission_id>1529</mission_id>
-    </missions>
-    <rewards>
-      <item level="1" id="1011" />
-      <card level="2" id="510" />
-      <item level="3" id="1011" />
-      <card level="4" id="511" />
-      <item level="5" id="1012" />
-      <card level="6" id="512" />
-      <item level="7" id="2511" />
-    </rewards>
-  </campaign>
-  <campaign>
-    <id>3006</id>
-    <!-- 
-		<hidden>0</hidden>
-		<event_only>0</event_only>
-		 -->
-    <name>Trial by Dragonfire</name>
-    <side_mission>1</side_mission>
-    <upgraded_hero_req>5</upgraded_hero_req>
-    <pvp_rank_req>10</pvp_rank_req>
-    <location_id>0</location_id>
-    <x>171</x>
-    <y>475</y>
-    <combatBG>CombatBGEvent004</combatBG>
-    <missions>
-      <mission_id>1530</mission_id>
-      <mission_id>1531</mission_id>
-      <mission_id>1532</mission_id>
-      <mission_id>1533</mission_id>
-      <mission_id>1534</mission_id>
-      <mission_id>1535</mission_id>
-    </missions>
-    <rewards>
-      <item level="1" id="1011" />
-      <card level="2" id="510" />
-      <item level="3" id="1011" />
-      <card level="4" id="511" />
-      <item level="5" id="1012" />
-      <card level="6" id="512" />
-      <item level="7" id="2512" />
-    </rewards>
-  </campaign>
-  <campaign>
-    <id>3007</id>
-    <!-- 
-		<hidden>0</hidden>
-		<event_only>0</event_only>
-		 -->
-    <name>Yuriel and the Orc</name>
-    <side_mission>1</side_mission>
-    <upgraded_hero_req>2</upgraded_hero_req>
-    <pvp_rank_req>10</pvp_rank_req>
-    <location_id>0</location_id>
-    <x>171</x>
-    <y>475</y>
-    <combatBG>CombatBGEvent004</combatBG>
-    <missions>
-      <mission_id>1536</mission_id>
-      <mission_id>1537</mission_id>
-      <mission_id>1538</mission_id>
-      <mission_id>1539</mission_id>
-      <mission_id>1540</mission_id>
-      <mission_id>1541</mission_id>
-    </missions>
-    <rewards>
-      <item level="1" id="1011" />
-      <card level="2" id="510" />
-      <item level="3" id="1011" />
-      <card level="4" id="511" />
-      <item level="5" id="1012" />
-      <card level="6" id="512" />
-      <item level="7" id="2513" />
-    </rewards>
-  </campaign>
-  <campaign>
-    <id>3008</id>
-    <!-- 
-		<hidden>0</hidden>
-		<event_only>0</event_only>
-		 -->
-    <name>Night Watch</name>
-    <side_mission>1</side_mission>
-    <upgraded_hero_req>8</upgraded_hero_req>
-    <pvp_rank_req>10</pvp_rank_req>
-    <location_id>0</location_id>
-    <x>171</x>
-    <y>475</y>
-    <combatBG>CombatBGEvent004</combatBG>
-    <missions>
-      <mission_id>1542</mission_id>
-      <mission_id>1543</mission_id>
-      <mission_id>1544</mission_id>
-      <mission_id>1545</mission_id>
-      <mission_id>1546</mission_id>
-      <mission_id>1547</mission_id>
-    </missions>
-    <rewards>
-      <item level="1" id="1011" />
-      <card level="2" id="510" />
-      <item level="3" id="1011" />
-      <card level="4" id="511" />
-      <item level="5" id="1012" />
-      <card level="6" id="512" />
-      <item level="7" id="2514" />
-    </rewards>
-  </campaign>
-  <!-- END Hero Upgrade Campaigns -->
-  <!-- Mythic Bluefire Titan Campaign  -->
-  <campaign>
-    <id>3009</id>
-    <name>Reality Distorts...</name>
-    <type>2</type>
-    <icon id="black_boss_gem" bundle="15" />
-    <campaign_req id="3000" level="7" />
-    <campaign_req id="3001" level="7" />
-    <campaign_req id="3002" level="7" />
-    <campaign_req id="1127" level="1" />
-    <side_mission>1</side_mission>
-    <battleground_id>2015</battleground_id>
-    <location_id>4</location_id>
-    <show_level>1</show_level>
-    <show_ranking>1</show_ranking>
-    <x>550</x>
-    <y>395</y>
+    <id>1140</id>
+    <name>Newfound Alliance</name>
+    <campaign_req id="1138" level="1" />
+    <locked_start_time>1506013200</locked_start_time>
+    <!-- Thu, 21 Sept 2017 17:00:00 -->
+    <battleground_id>2021</battleground_id>
+    <location_id>11</location_id>
+    <x>575</x>
+    <y>245</y>
     <combatBG>CombatBGVoid</combatBG>
     <missions>
-      <mission_id>5620</mission_id>
-      <mission_id>5621</mission_id>
-      <mission_id>5622</mission_id>
-      <mission_id>5623</mission_id>
+      <mission_id>5688</mission_id>
+      <mission_id>5689</mission_id>
+      <mission_id>5690</mission_id>
+      <mission_id>5691</mission_id>
+      <mission_id>5692</mission_id>
+      <mission_id>5693</mission_id>
+      <mission_id>5694</mission_id>
+      <mission_id>5695</mission_id>
+      <mission_id>5696</mission_id>
+      <mission_id>5697</mission_id>
+      <mission_id>5698</mission_id>
+      <mission_id>5699</mission_id>
+      <mission_id>5700</mission_id>
     </missions>
     <rewards>
-      <card level="1" id="510" />
-      <card level="2" id="510" />
-      <item level="3" id="2506" number="3" />
-      <card level="4" id="511" />
-      <item level="5" id="2506" number="3" />
-      <card level="6" id="512" />
-      <item level="7" id="2506" number="3" />
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2014" />
+      <card level="5" id="512" />
+      <card level="6" id="2070" />
+      <item level="7" id="3060" />
     </rewards>
+    <find_item id="3059" drop_per_energy=".6" />
   </campaign>
-  <!-- 
+  <campaign>
+    <id>1141</id>
+    <name>Warmonger</name>
+    <campaign_req id="1140" level="1" />
+    <locked_start_time>1507222800</locked_start_time>
+    <!-- Thu, 5 Oct 2017 17:00:00 -->
+    <battleground_id>2022</battleground_id>
+    <location_id>11</location_id>
+    <x>700</x>
+    <y>199</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5701</mission_id>
+      <mission_id>5702</mission_id>
+      <mission_id>5703</mission_id>
+      <mission_id>5704</mission_id>
+      <mission_id>5705</mission_id>
+      <mission_id>5706</mission_id>
+      <mission_id>5707</mission_id>
+      <mission_id>5708</mission_id>
+      <mission_id>5709</mission_id>
+      <mission_id>5710</mission_id>
+      <mission_id>5711</mission_id>
+      <mission_id>5712</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2107" />
+      <card level="5" id="512" />
+      <card level="6" id="2011" />
+      <item level="7" id="3060" />
+    </rewards>
+    <find_item id="3059" drop_per_energy=".8" />
+  </campaign>
+	--&gt;
+<!-- ============================ --><!-- START Mythic Titan Campaigns --><!-- ============================ --><campaign><id>3000</id><name>The Ground Quakes...</name><icon id="green_boss_gem" bundle="15" /><campaign_req id="24" level="1" /><side_mission>1</side_mission><location_id>1</location_id><x>716</x><y>145</y><combatBG>CombatBGElaria</combatBG><missions><mission_id>1500</mission_id><mission_id>1501</mission_id><mission_id>1502</mission_id><mission_id>1503</mission_id></missions><rewards><item level="1" id="2506" /><card level="2" id="511" /><card level="3" id="511" /><item level="4" id="2506" /><card level="5" id="512" /><card level="6" id="512" /><item level="7" id="2506" /></rewards></campaign><campaign><id>3001</id><name>The Wind Stirs...</name><icon id="blue_boss_gem" bundle="15" /><campaign_req id="24" level="1" /><side_mission>1</side_mission><location_id>2</location_id><x>177</x><y>495</y><combatBG>CombatBGLuminis</combatBG><missions><mission_id>1504</mission_id><mission_id>1505</mission_id><mission_id>1506</mission_id><mission_id>1507</mission_id></missions><rewards><item level="1" id="2506" /><card level="2" id="511" /><card level="3" id="511" /><item level="4" id="2506" /><card level="5" id="512" /><card level="6" id="512" /><item level="7" id="2506" /></rewards></campaign><campaign><id>3002</id><name>The Heat Rises...</name><icon id="red_boss_gem" bundle="15" /><campaign_req id="24" level="1" /><side_mission>1</side_mission><location_id>3</location_id><x>630</x><y>450</y><combatBG>CombatBGKarthos</combatBG><missions><mission_id>1508</mission_id><mission_id>1509</mission_id><mission_id>1510</mission_id><mission_id>1511</mission_id></missions><rewards><item level="1" id="2506" /><card level="2" id="511" /><card level="3" id="511" /><item level="4" id="2506" /><card level="5" id="512" /><card level="6" id="512" /><item level="7" id="2506" /></rewards></campaign><!-- END Mythic Campaigns --><!-- Hero Upgrade Campaigns --><campaign><id>3003</id><!-- 
+		<hidden>0</hidden>
+		<event_only>0</event_only>
+		 --><name>Applied Knowledge</name><side_mission>1</side_mission><upgraded_hero_req>7</upgraded_hero_req><pvp_rank_req>10</pvp_rank_req><location_id>0</location_id><x>171</x><y>475</y><combatBG>CombatBGEvent004</combatBG><missions><mission_id>1512</mission_id><mission_id>1513</mission_id><mission_id>1514</mission_id><mission_id>1515</mission_id><mission_id>1516</mission_id><mission_id>1517</mission_id></missions><rewards><item level="1" id="1011" /><card level="2" id="510" /><item level="3" id="1011" /><card level="4" id="511" /><item level="5" id="1012" /><card level="6" id="512" /><item level="7" id="2509" /></rewards></campaign><campaign><id>3004</id><!-- 
+		<hidden>0</hidden>
+		<event_only>0</event_only>
+		 --><name>Oda and the Serpent</name><side_mission>1</side_mission><upgraded_hero_req>1</upgraded_hero_req><pvp_rank_req>10</pvp_rank_req><location_id>0</location_id><x>171</x><y>475</y><combatBG>CombatBGEvent004</combatBG><missions><mission_id>1518</mission_id><mission_id>1519</mission_id><mission_id>1520</mission_id><mission_id>1521</mission_id><mission_id>1522</mission_id><mission_id>1523</mission_id></missions><rewards><item level="1" id="1011" /><card level="2" id="510" /><item level="3" id="1011" /><card level="4" id="511" /><item level="5" id="1012" /><card level="6" id="512" /><item level="7" id="2510" /></rewards></campaign><campaign><id>3005</id><!-- 
+		<hidden>0</hidden>
+		<event_only>0</event_only>
+		 --><name>Losing Baggage</name><side_mission>1</side_mission><upgraded_hero_req>4</upgraded_hero_req><pvp_rank_req>10</pvp_rank_req><location_id>0</location_id><x>171</x><y>475</y><combatBG>CombatBGEvent004</combatBG><missions><mission_id>1524</mission_id><mission_id>1525</mission_id><mission_id>1526</mission_id><mission_id>1527</mission_id><mission_id>1528</mission_id><mission_id>1529</mission_id></missions><rewards><item level="1" id="1011" /><card level="2" id="510" /><item level="3" id="1011" /><card level="4" id="511" /><item level="5" id="1012" /><card level="6" id="512" /><item level="7" id="2511" /></rewards></campaign><campaign><id>3006</id><!-- 
+		<hidden>0</hidden>
+		<event_only>0</event_only>
+		 --><name>Trial by Dragonfire</name><side_mission>1</side_mission><upgraded_hero_req>5</upgraded_hero_req><pvp_rank_req>10</pvp_rank_req><location_id>0</location_id><x>171</x><y>475</y><combatBG>CombatBGEvent004</combatBG><missions><mission_id>1530</mission_id><mission_id>1531</mission_id><mission_id>1532</mission_id><mission_id>1533</mission_id><mission_id>1534</mission_id><mission_id>1535</mission_id></missions><rewards><item level="1" id="1011" /><card level="2" id="510" /><item level="3" id="1011" /><card level="4" id="511" /><item level="5" id="1012" /><card level="6" id="512" /><item level="7" id="2512" /></rewards></campaign><campaign><id>3007</id><!-- 
+		<hidden>0</hidden>
+		<event_only>0</event_only>
+		 --><name>Yuriel and the Orc</name><side_mission>1</side_mission><upgraded_hero_req>2</upgraded_hero_req><pvp_rank_req>10</pvp_rank_req><location_id>0</location_id><x>171</x><y>475</y><combatBG>CombatBGEvent004</combatBG><missions><mission_id>1536</mission_id><mission_id>1537</mission_id><mission_id>1538</mission_id><mission_id>1539</mission_id><mission_id>1540</mission_id><mission_id>1541</mission_id></missions><rewards><item level="1" id="1011" /><card level="2" id="510" /><item level="3" id="1011" /><card level="4" id="511" /><item level="5" id="1012" /><card level="6" id="512" /><item level="7" id="2513" /></rewards></campaign><campaign><id>3008</id><!-- 
+		<hidden>0</hidden>
+		<event_only>0</event_only>
+		 --><name>Night Watch</name><side_mission>1</side_mission><upgraded_hero_req>8</upgraded_hero_req><pvp_rank_req>10</pvp_rank_req><location_id>0</location_id><x>171</x><y>475</y><combatBG>CombatBGEvent004</combatBG><missions><mission_id>1542</mission_id><mission_id>1543</mission_id><mission_id>1544</mission_id><mission_id>1545</mission_id><mission_id>1546</mission_id><mission_id>1547</mission_id></missions><rewards><item level="1" id="1011" /><card level="2" id="510" /><item level="3" id="1011" /><card level="4" id="511" /><item level="5" id="1012" /><card level="6" id="512" /><item level="7" id="2514" /></rewards></campaign><!-- END Hero Upgrade Campaigns --><!-- Mythic Bluefire Titan Campaign  --><campaign><id>3009</id><name>Reality Distorts...</name><type>2</type><icon id="black_boss_gem" bundle="15" /><campaign_req id="3000" level="7" /><campaign_req id="3001" level="7" /><campaign_req id="3002" level="7" /><campaign_req id="1127" level="1" /><side_mission>1</side_mission><battleground_id>2015</battleground_id><location_id>4</location_id><show_level>1</show_level><show_ranking>1</show_ranking><x>550</x><y>395</y><combatBG>CombatBGVoid</combatBG><missions><mission_id>5620</mission_id><mission_id>5621</mission_id><mission_id>5622</mission_id><mission_id>5623</mission_id></missions><rewards><card level="1" id="510" /><card level="2" id="510" /><item level="3" id="2506" number="3" /><card level="4" id="511" /><item level="5" id="2506" number="3" /><card level="6" id="512" /><item level="7" id="2506" number="3" /></rewards></campaign><!-- 
 	<campaign> 
 		<id>3010</id>
 		<name>Test Healmaster</name>
@@ -5298,5 +5006,4 @@
 			<item level='7' id='3061' />
 		</rewards>
 	</campaign>
-	  -->
-</root>
+	  --></root>

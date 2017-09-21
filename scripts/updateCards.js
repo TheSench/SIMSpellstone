@@ -21,6 +21,7 @@ var DATA_UPDATER = (function () {
             //promises.push(updateBGEs());
             //promises.push(updateCampaignData());
             function finishedLoading() {
+                saveCardCache();
                 doneLoading();
                 callback && callback();
             }
@@ -113,7 +114,7 @@ var DATA_UPDATER = (function () {
         return $.when.apply($, promises);
     }
 
-    function onLoaded() {
+    function saveCardCache() {
         if (typeof storageAPI !== "undefined") {
             var cardData = storageAPI.getField("GameData", "CardCache");
 
