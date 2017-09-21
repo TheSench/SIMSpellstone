@@ -5,6 +5,8 @@ var DATA_UPDATER = (function () {
     var baseUrl = "https://spellstone.synapse-games.com";
 
     var newCards = {};
+    var newBGEs = {};
+    var newFusions = {};
     var lastUpdate = null;
 
     function updateData(callback, forceUpdate) {
@@ -32,6 +34,7 @@ var DATA_UPDATER = (function () {
     }
 
     function updateBGEs() {
+        newBGEs = {};
         return jQuery.ajax({
             url: baseUrl + "/assets/battleground_effects.xml",
             success: function (doc) {
@@ -42,7 +45,7 @@ var DATA_UPDATER = (function () {
                     var battlegroundData = getBattlegroundFromXML(battleground);
 
                     if (JSON.stringify(BATTLEGROUNDS[id]) !== JSON.stringify(battlegroundData)) {
-                        newCards[id] = battlegroundData;
+                        newBGEs[id] = battlegroundData;
                         BATTLEGROUNDS[id] = battlegroundData;
                     }
                 }
@@ -101,7 +104,10 @@ var DATA_UPDATER = (function () {
                         var resource = node.getElementsByTagName("resource")[0];
                         if (resource) {
                             var base = getValue(resource, "card_id", true);
-                            FUSIONS[base] = fusion;
+                            if (!FUSIONS[base] || FUSIONS[base] != fusion) {
+                                newFusions[base] = fusion;
+                                FUSIONS[base] = fusion;
+                            }
                         }
                     }
                 },
@@ -118,10 +124,16 @@ var DATA_UPDATER = (function () {
         if (typeof storageAPI !== "undefined") {
             var cardData = storageAPI.getField("GameData", "CardCache");
 
-            if (cardData && cardData.newCards) {
+            if (cardData) {
+                cardData.newFusions = (cardData.newCards || {});
+                cardData.newCards = (cardData.newFusions || {});
                 $.extend(cardData.newCards, newCards);
+                $.extend(cardData.newFusions, newFusions);
             } else {
-                cardData = { newCards: newCards };
+                cardData = {
+                    newCards: newCards,
+                    newFusions: newFusions
+                };
             }
             cardData.lastUpdated = Date.now();
 

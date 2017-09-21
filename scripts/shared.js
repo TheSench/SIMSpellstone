@@ -5,6 +5,7 @@ function loadCardCache() {
     if (cardData && cardData.lastUpdated > CardsUpdated) {
         if (cardData.newCards) {
             $.extend(CARDS, cardData.newCards);
+            $.extend(FUSIONS, cardData.newFusions);
         } else {
             CARDS = cardData.cards;
         }
@@ -13,6 +14,7 @@ function loadCardCache() {
         // Clear cached info to reduce storage used
         var CARDS_cache = {
             newCards: {},
+            newFusions: {},
             lastUpdated: Date.now()
         }
         storageAPI.setField("GameData", "CardCache", CARDS_cache);
