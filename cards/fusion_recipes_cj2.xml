@@ -2782,6 +2782,14 @@
     <card_id>25155</card_id>
     <resource card_id="15155" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15159</card_id>
+    <resource card_id="5159" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25159</card_id>
+    <resource card_id="15159" number="2" />
+  </fusion_recipe>
   <!-- CHAOS PREMIUM SET BEGIN -->
   <fusion_recipe>
     <card_id>16000</card_id>
