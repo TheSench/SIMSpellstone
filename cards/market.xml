@@ -1404,7 +1404,7 @@
     <icon>icon_blue_crystal</icon>
     <hc_cost>1000</hc_cost>
     <cards>
-      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000" number="4" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000,4000" number="4" />
     </cards>
   </store_item>
   <store_item>
@@ -3434,7 +3434,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <priority>300</priority>
-    <desc>Gives four copies of one Epic+ Frog card from Premium set. Also includes two Bounty Refills +10, two Energy Potions +20, and one random Rare+ Rune. May only be purchased once.</desc>
+    <desc>Gives four copies of one ^c0DFFEpic+ ^cFFFFFrog card from Premium set. Also includes two Bounty Refills +10, two Energy Potions +20, and one random Rare+ Rune. May only be purchased once.</desc>
     <asset_prefab>frog_crystal_epicX4</asset_prefab>
     <background_prefab>event_010_banner_epicX4</background_prefab>
     <bundle>51</bundle>
