@@ -124,7 +124,7 @@ var initDeckBuilder = function () {
         }
     });
 
-    inventory = _GET('inventory');
+    inventory = (_GET('inventory') || inventory);
 
     $("[name=rarity]").click(function (event) {
         onClickFilter(event, filterRarity, event.altKey);
@@ -332,7 +332,7 @@ var drawAllCards = function () {
 
 var drawDeck = function () {
 
-    var hash = _GET('hash');
+    var hash = _GET('hash') || $("#hash").val();
     if (hash) {
         hash_changed(hash);
     }
@@ -2279,4 +2279,9 @@ function generateLink() {
         link += "?" + params.join("&");
     }
     $("#link").attr("href", link).text(link);
+}
+
+function externalData(hash, inventoryHash) {
+    setHash(hash);
+    inventory = inventoryHash;
 }

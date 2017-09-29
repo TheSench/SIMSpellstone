@@ -1,60 +1,169 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
     <title></title>
-    <script src="scripts/shared.js"></script>
-    <script type="text/javascript">
-        function selectText(selectable) {
-            if (document.selection) {
-                var range = document.body.createTextRange();
-                range.moveToElementText(selectable);
-                range.select();
-            } else if (window.getSelection) {
-                var range = document.createRange();
-                range.selectNode(selectable);
-                window.getSelection().addRange(range);
-            }
-        }
-
-        function getHashFromJSON(text) {
-            var parsed = JSON.parse(text);
-            var user_units = (parsed.user_units || parsed);
-            var inv = { commander: elariaCaptain, deck: [] };
-            for (var uid in user_units) {
-                var user_unit = user_units[uid];
-                if (!user_unit.unit_id) break;
-                var unit = makeUnitInfo(user_unit.unit_id, user_unit.level);
-                for (var slot in user_unit.runes) {
-                    var rune = user_unit.runes[slot];
-                    unit.runes.push({ id: rune.item_id });
-                }
-                inv.deck.push(unit);
-            }
-            var hash = hash_encode(inv);
-
-            var converter = document.getElementById("converter");
-            converter.value = hash;
-            converter.select();
-        }
-
-        function getClipboard() {
-            document.getElementById("converter").focus();
-            if (document.execCommand('paste')) {
-                console.log(true);
-            }
-        }
-
-        window.addEventListener("load", function () {
-            document.getElementById("converter").addEventListener('paste', function (e) {
-                if (e.clipboardData) {
-                    e.preventDefault();
-                    getHashFromJSON(e.clipboardData.getData("Text"));
-                }
-            });
-        });
-    </script>
+    <meta charset="utf-8" />
+    <script src="lib/jquery-2.2.1.min.js"></script>
 </head>
 <body>
-    <input type="text" id="converter" style="width:100%;" value="Click this and paste JSON to convert"/>
+    <form>
+        <input type="text" id="user_id" name="user_id" placeholder="user_id" />
+        <input type="text" id="password" name="password" placeholder="password" />
+        <input type="button" value="Submit" onclick="getInventoryHash()" />
+    </form>
+    <hr>
+    <div id="output" style="word-wrap:break-word"></div>
+    <script>
+        'user strict';
+
+        init();
+
+        function getInventoryHash() {
+            var userID = $('#user_id').val();
+            var password = $('#password').val();
+            $('#output').html('');
+
+            var url = "https://spellstone.synapse-games.com/api.php?message=update&user_id=" + userID + "&password=" + password;
+
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4) {
+                    if (this.status == 200) {
+                        var response = JSON.parse(this.responseText);
+                        if (response.user_units) {
+                            var hash = hashInventory(response.user_units);
+                            var output = $('#output');
+                            output.append(createLink("View as Deck Hash", hash, ''));
+                            output.append($('<br/>'));
+                            output.append(createLink("View as Inventory", '', hash));
+                        } else {
+                            throw "Invalid Credentials";
+                        }
+                    } else {
+                        displayError(this.status + '; ' + this.responseText);
+                    }
+                }
+            };
+            xhttp.open("GET", url, true);
+            xhttp.send();
+        }
+
+        function createLink(text, hash, inventory) {
+            var a = $('<a>');
+            a.attr("href", "javascript:void(0);");
+            a.attr("onclick", "openDeckBuilder('" + hash + "', '" + inventory + "')");
+            a.text(text); //add the text node to the newly created div.
+
+            return a;
+        }
+
+        function hashInventory(units) {
+            var inventory = [];
+            for (var uid in units) {
+                var unit = units[uid];
+                unitInfo = { id: unit.unit_id, level: unit.level, runes: [] };
+                for (var key in unit.runes) {
+                    unitInfo.runes.push({ id: unit.runes[key].item_id });
+                }
+                inventory.push(unitInfo);
+            }
+            return hashEncode({ commander: null, deck: inventory });
+        }
+
+        //Returns hash built from deck array
+        function hashEncode(deck, noIndexes) {
+
+            var encoded = [];
+            var has_priorities = false;
+            var has_indexes = false;
+            var indexes = [];
+
+            if (deck.commander) {
+                encoded.push(unitInfoToBase64(deck.commander));
+            }
+            var copies = [1];
+            for (var k in deck.deck) {
+                var unitInfo = deck.deck[k];
+                var unitHash = unitInfoToBase64(unitInfo);
+                encoded.push(unitHash);
+            }
+
+            return encoded.join("");
+        }
+
+        // Used to determine how to hash runeIDs
+        var maxRuneID = 1000;
+        function unitInfoToBase64(unitInfo) {
+
+            var baseID = parseInt(unitInfo.id);
+            var level = (parseInt(unitInfo.level) - 1);
+
+            var fusion = Math.floor(baseID / 10000);
+            baseID %= 10000;
+
+            var runeID = 0;
+            if (unitInfo.runes.length) {
+                runeID = parseInt(unitInfo.runes[0].id);
+                runeID %= 5000; // Runes IDs are all in the range of 5000 - 5999
+            }
+
+            var base10 = baseID;
+            base10 = base10 * 3 + fusion;
+            base10 = base10 * 7 + level;
+            base10 = base10 * maxRuneID + runeID;
+
+            return base10ToBase64(base10, 5);
+        }
+
+        var base64chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!~";
+        function base10ToBase64(base10, len) {
+            var base64 = '';
+            for (var i = 0; i < len; i++) {
+                var part = base10 % 64;
+                base64 += base64chars[part];
+                base10 = (base10 - part) / 64;
+            }
+            return base64;
+        }
+
+        function displayResponse(response) {
+            document.getElementById("output").innerHTML = response;
+        }
+
+        function displayError(response) {
+            displayResponse('<font style="color:red;">' + response + '</font>');
+        }
+
+        // GET variables from query string
+        function _GET(variable) {
+            var query = window.location.search.substring(1);
+            var vars = query.split('&');
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split('=');
+                if (decodeURIComponent(pair[0]) == variable) {
+                    return decodeURIComponent(pair[1] ? pair[1] : '');
+                }
+            }
+            return undefined;
+        }
+
+        function init() {
+            $('#user_id').val(_GET('userID'));
+            $('#password').val(_GET('password'));
+        }
+
+        function openDeckBuilder(hash, inventory) {
+            var win = window.open("DeckBuilder.html");
+            // Push values to window once it has loaded
+            $(win).load((function (hash, inventory) {
+                return function () {
+                    win.externalData(hash, inventory);
+                }
+            })(hash, inventory));
+        }
+    </script>
 </body>
 </html>
+
+
+
