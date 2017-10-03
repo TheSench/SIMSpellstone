@@ -19154,4 +19154,123 @@
       <skill id="strike" x="3" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6153</id>
+    <card_type>2</card_type>
+    <name>Ribbit Roaster</name>
+    <picture>Mechanical_Frog_A</picture>
+    <asset_bundle>106</asset_bundle>
+    <hidden_until_time>1506618000</hidden_until_time>
+    <attack>6</attack>
+    <health>15</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="enfeeble" x="1" />
+    <skill id="burn" x="1" />
+    <skill id="enrage" x="2" y="4" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="enfeeble" x="2" />
+      <skill id="burn" x="1" />
+      <skill id="enrage" x="2" y="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>18</health>
+      <attack>7</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16153</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Ribbit Broaster</name>
+    <picture>Mechanical_Frog_A</picture>
+    <asset_bundle>106</asset_bundle>
+    <hidden_until_time>1506618000</hidden_until_time>
+    <attack>7</attack>
+    <health>19</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="enfeeble" x="2" />
+    <skill id="burn" x="1" />
+    <skill id="enrage" x="2" y="4" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="enfeeble" x="3" />
+      <skill id="burn" x="1" />
+      <skill id="enrage" x="2" y="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="enfeeble" x="3" />
+      <skill id="burn" x="2" />
+      <skill id="enrage" x="3" y="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>21</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26153</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Ribbit Toaster</name>
+    <picture>Mechanical_Frog_B</picture>
+    <asset_bundle>106</asset_bundle>
+    <hidden_until_time>1506618000</hidden_until_time>
+    <attack>7</attack>
+    <health>21</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="enfeeble" x="4" />
+    <skill id="burn" x="2" />
+    <skill id="enrage" x="3" y="4" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>22</health>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="enfeeble" x="5" />
+      <skill id="burn" x="2" />
+      <skill id="enrage" x="3" y="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="enfeeble" x="5" />
+      <skill id="burn" x="3" />
+      <skill id="enrage" x="4" y="4" />
+    </upgrade>
+  </unit>
 </root>

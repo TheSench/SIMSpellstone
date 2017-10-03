@@ -2145,6 +2145,92 @@
       <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="12" set="3000,4000" number="2" />
     </cards>
   </store_item>
+  <store_item>
+    <id>3065</id>
+    <name>Double Frog Epic Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two guaranteed ^c0DFFEpic^cFFFF+ Frog cards from Premium set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000,4000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3066</id>
+    <name>Runecrafter's Pouch</name>
+    <feature_lock_req>runes</feature_lock_req>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Contains various Runecrafting components, including a chance at Runeshells and even ^cE7FFLegendary Rune Slivers^cFFFF.</desc>
+    <hc_cost>20</hc_cost>
+    <asset_prefab>rune_bag</asset_prefab>
+    <bundle>15</bundle>
+    <item_pack>
+      <pulls>1</pulls>
+      <item id="4013" quantity="1" weight=".3" />
+      <item id="4012" quantity="1" weight=".5" />
+      <item id="4012" quantity="2" weight=".05" />
+      <item id="4011" quantity="1" weight="1" />
+      <item id="4011" quantity="2" weight=".1" />
+      <item id="4001" quantity="2" weight="1" />
+      <item id="4001" quantity="3" weight=".5" />
+      <item id="4001" quantity="4" weight=".4" />
+      <item id="4001" quantity="5" weight=".2" />
+      <item id="4001" quantity="10" weight=".1" />
+      <item id="2001" quantity="15" weight="1" />
+      <item id="2001" quantity="20" weight=".5" />
+      <item id="2001" quantity="25" weight=".3" />
+      <item id="2001" quantity="50" weight=".1" />
+      <item id="2501" quantity="40" weight="1" />
+      <item id="2501" quantity="50" weight=".5" />
+      <item id="2501" quantity="60" weight=".3" />
+      <item id="2501" quantity="80" weight=".1" />
+    </item_pack>
+  </store_item>
+  <store_item>
+    <id>3067</id>
+    <name>Runecrafter's Chest</name>
+    <feature_lock_req>runes</feature_lock_req>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Contains 10x Runecrafter's Pouches, plus an additional guaranteed Rune.</desc>
+    <hc_cost>120</hc_cost>
+    <asset_prefab>rune_chest_sale</asset_prefab>
+    <bundle>15</bundle>
+    <desc_list name="Runecrafter Pouch" icon="rune_component_bag_item" bundle="17" quantity="10" />
+    <desc_list name="Random Rare Rune" icon="rune_empty_rare" bundle="34" quantity="1" />
+    <item_pack>
+      <pulls>10</pulls>
+      <item id="4013" quantity="1" weight=".3" />
+      <item id="4012" quantity="1" weight=".5" />
+      <item id="4012" quantity="2" weight=".05" />
+      <item id="4011" quantity="1" weight="1" />
+      <item id="4011" quantity="2" weight=".1" />
+      <item id="4001" quantity="2" weight="1" />
+      <item id="4001" quantity="3" weight=".5" />
+      <item id="4001" quantity="4" weight=".4" />
+      <item id="4001" quantity="5" weight=".2" />
+      <item id="4001" quantity="10" weight=".1" />
+      <item id="2001" quantity="15" weight="1" />
+      <item id="2001" quantity="20" weight=".5" />
+      <item id="2001" quantity="25" weight=".3" />
+      <item id="2001" quantity="50" weight=".1" />
+      <item id="2501" quantity="40" weight="1" />
+      <item id="2501" quantity="50" weight=".5" />
+      <item id="2501" quantity="60" weight=".3" />
+      <item id="2501" quantity="80" weight=".1" />
+    </item_pack>
+    <random_rune number="1" min_rarity="2" max_rarity="4" set="1" />
+  </store_item>
   <!-- ======================================= -->
   <!-- ==== Emporium & Arena Market Items ==== -->
   <!-- ======================================= -->
@@ -4050,6 +4136,42 @@
     <!-- Stuff to give -->
     <cards>
       <card min_level="1" max_level="1" unit_id="5054" display_card_id="5054" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>5084</id>
+    <name>Double Frog Epic Pack</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <show_desc>1</show_desc>
+    <desc>Gives two guaranteed ^c0DFFEpic^cFFFF+ Frog cards from Premium set. May be purchased 5 times!</desc>
+    <asset_prefab>event_029_two_epics</asset_prefab>
+    <bundle>105</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>100</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3065</pack>
+  </store_item>
+  <store_item>
+    <id>5085</id>
+    <name>Liliane's Blessing Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives one copy of a ^cE7FFLiliane's Blessing^cFFFF! May be purchased four times.</desc>
+    <background_prefab>legendary_card_banner</background_prefab>
+    <bundle>35</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>220</hc_cost>
+    <show_desc>1</show_desc>
+    <!-- Stuff to give -->
+    <cards>
+      <card min_level="1" max_level="1" unit_id="7120" display_card_id="7120" />
     </cards>
   </store_item>
 </root>

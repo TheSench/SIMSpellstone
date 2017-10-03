@@ -22490,4 +22490,182 @@
       </line>
     </speech>
   </mission>
+  <!-- Campaign Event 6 -->
+  <!-- Extra node -->
+  <mission>
+    <id>5713</id>
+    <name>Fireshard Power</name>
+    <energy>9</energy>
+    <desc>Although the Chaos of Karthos originally hoped to find the Heart of Blue Fire, they instead found the mine to be a valuable resource of Fireshards. You have taken to collecting stray Fireshards, using them to reboot the mine's old technology. </desc>
+    <commander id="353" />
+    <deck>
+      <card id="5022" name="Webfoot Raider" />
+      <card id="1015" name="Windfrog" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="5004" name="Lightning Lord" />
+      <card id="5005" name="Storm Giant" />
+      <card id="5080" name="Djinnflame Brawler" />
+      <card id="6004" name="Branding Construct" />
+      <card id="6020" name="Croak Piercer" />
+      <card id="5020" mastery_level="2" name="Frost Frog" />
+      <card id="2002" mastery_level="3" name="Lantern Guardian" />
+      <card id="2002" mastery_level="4" name="Lantern Guardian" />
+      <card id="6102" mastery_level="5" name="Ribbithold Guards" />
+      <card id="7052" mastery_level="6" name="Toad the Ravenous" />
+      <card id="6018" mastery_level="7" name="Underwater Lasher" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5714</id>
+    <name>Fireshard Energy</name>
+    <energy>9</energy>
+    <desc>The Fireshards are actually cool beneath skin, but their name comes from their appearance. The stones radiate with energy inside them, lights dancing like firework sparklers.</desc>
+    <commander id="327" />
+    <deck>
+      <card id="6022" name="Illusion Caster" />
+      <card id="1313" name="Lavafrog" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="5108" name="Aurora Skimmer" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="5060" name="Quack Apprentice" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="7098" name="Survivalist" />
+      <card id="2014" mastery_level="2" name="Tadpole Warmage" />
+      <card id="6004" mastery_level="3" name="Branding Construct" />
+      <card id="6004" mastery_level="4" name="Branding Construct" />
+      <card id="2011" mastery_level="5" name="Poliworg" />
+      <card id="1043" mastery_level="6" name="Lilypad Bard" />
+      <card id="1643" mastery_level="7" name="Nimble Leaper" />
+    </deck>
+  </mission>
+  <!-- Campaign Event 6 Weeks 1-4 -->
+  <mission>
+    <id>5715</id>
+    <name>Fireshard Mine's History</name>
+    <energy>9</energy>
+    <desc>After witnessing the strange automaton technology in Pharos Temple, you've heard more reports of similar technology in a place called Fireshard Mine. Along with Aria, the two of you have been sent to investigate a possible connection between the mecha and goblins.</desc>
+    <commander id="354" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1313" name="Lavafrog" />
+      <card id="1313" name="Lavafrog" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="5102" name="Tribe Tracker" />
+      <card id="2011" name="Poliworg" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="6004" name="Branding Construct" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="7053" mastery_level="2" name="Bee Eater" />
+      <card id="6004" mastery_level="3" name="Branding Construct" />
+      <card id="6004" mastery_level="4" name="Branding Construct" />
+      <card id="7016" mastery_level="5" name="Webfist Shaman" />
+      <card id="6105" mastery_level="6" name="Wasteland Crusher" />
+      <card id="6018" mastery_level="7" name="Underwater Lasher" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Long ago, the Chaos thought they could find the Heart of Blue Fire in this mine.</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>But we were clearly mistaken. The mine was abandoned when we realized the cache was nothing more than a pile of Fireshards. </text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5716</id>
+    <name>Product of Karthos</name>
+    <energy>9</energy>
+    <desc>Minecart railways snake down the strip mine, twisting off into tunnels and dead-ends. Although she gets turned around once, Aria leads with a certainty that speaks to her familiarity of the land.</desc>
+    <commander id="344" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="1313" name="Lavafrog" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="6050" name="Wortwog" />
+      <card id="6102" name="Ribbithold Guards" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="5099" name="Croak Dropper" />
+      <card id="2012" mastery_level="2" name="Frogling Swarm" />
+      <card id="6004" mastery_level="3" name="Branding Construct" />
+      <card id="2107" mastery_level="4" name="Battleborn Toad" />
+      <card id="7016" mastery_level="5" name="Webfist Shaman" />
+      <card id="6048" mastery_level="6" name="Bulwraag" />
+      <card id="7018" mastery_level="7" name="Frog Emperor" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5717</id>
+    <name>Recently Abandoned</name>
+    <energy>9</energy>
+    <desc>The railway shows sign of use, glistening metal unhidden by dust or rocky film. The path downward continues unobstructed by roadblocks, making it fairly easy to continue in a relatively straight line.</desc>
+    <commander id="400" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1015" name="Windfrog" />
+      <card id="1618" name="Frog Scout" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="2011" name="Poliworg" />
+      <card id="5050" name="Cloud Spear" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="7099" name="Toadplay" />
+      <card id="7020" mastery_level="2" name="Trapper Frog" />
+      <card id="2002" mastery_level="3" name="Lantern Guardian" />
+      <card id="6153" mastery_level="4" name="Ribbit Roaster" />
+      <card id="5053" mastery_level="5" name="Anura Witch" />
+      <card id="5100" mastery_level="6" name="Lifegiver Augur" />
+      <card id="5051" mastery_level="7" name="Amphibious Digger" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>For being an abandoned mine, there's an odd amount of recent activity...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5718</id>
+    <name>Heavy Metal</name>
+    <energy>9</energy>
+    <desc>As the two of you descend, mechanical creations shuffle out of the tunnels. One leads the approach, a mecha with lava oozing from his center like a furnace, shoulders ablaze with fire.</desc>
+    <commander id="1" />
+    <deck>
+      <card id="5006" name="Arms Enforcer" />
+      <card id="1313" name="Lavafrog" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="5155" name="Silvertongue Fencer" />
+      <card id="5053" name="Anura Witch" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="1328" mastery_level="2" name="Poison Bullfrog" />
+      <card id="2002" mastery_level="3" name="Lantern Guardian" />
+      <card id="2107" mastery_level="4" name="Battleborn Toad" />
+      <card id="5099" mastery_level="5" name="Croak Dropper" />
+      <card id="6093" mastery_level="6" name="Noz Onehand" />
+      <card id="6088" mastery_level="7" name="Doxum's Construct" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>1</enemy>
+        <text>Intruders!! Dragging their feet all across our land, so I've come to offer reprimand, this is insult we shall not withstand!</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Wait, what?</text>
+      </line>
+    </speech>
+  </mission>
 </root>

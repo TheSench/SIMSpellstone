@@ -56410,6 +56410,282 @@ var CARDS = {
       },
     }
   },
+  "5156": {
+    "id": "5156",
+    "name": "Tiltyard Ribbot",
+    "picture": "Mech_Frog_Weaponmaster_A",
+    "hidden_until": "1506618000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["4","16"],
+    "health": 27,
+    "attack": 7,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "rally",
+        "x": 3,
+        "y": "16",
+      },
+      {
+        "id": "legion",
+        "x": 2,
+        "y": "4",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 28,
+        "skill": [],
+      },
+      "3": {
+        "health": 29,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "16",
+          },
+          {
+            "id": "legion",
+            "x": 3,
+            "y": "4",
+          },
+        ],
+      },
+      "5": {
+        "attack": 8,
+        "skill": [],
+      },
+      "6": {
+        "health": 30,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 4,
+            "y": "16",
+          },
+          {
+            "id": "legion",
+            "x": 3,
+            "y": "4",
+          },
+        ],
+      },
+    }
+  },
+  "15156": {
+    "id": "15156",
+    "name": "Tiltyard Ribbotron",
+    "picture": "Mech_Frog_Weaponmaster_A",
+    "hidden_until": "1506618000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["4","16"],
+    "health": 30,
+    "attack": 8,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 3,
+      },
+      {
+        "id": "rally",
+        "x": 5,
+        "y": "16",
+      },
+      {
+        "id": "legion",
+        "x": 3,
+        "y": "4",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 31,
+        "skill": [],
+      },
+      "3": {
+        "health": 32,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 5,
+            "y": "16",
+          },
+          {
+            "id": "legion",
+            "x": 4,
+            "y": "4",
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "rally",
+            "x": 6,
+            "y": "16",
+          },
+          {
+            "id": "legion",
+            "x": 4,
+            "y": "4",
+          },
+        ],
+      },
+      "5": {
+        "attack": 9,
+        "health": 33,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "rally",
+            "x": 6,
+            "y": "16",
+          },
+          {
+            "id": "legion",
+            "x": 4,
+            "y": "4",
+          },
+        ],
+      },
+    }
+  },
+  "25156": {
+    "id": "25156",
+    "name": "Tiltyard Ribboteer",
+    "picture": "Mech_Frog_Weaponmaster_B",
+    "hidden_until": "1506618000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "1",
+    "sub_type": ["4","16"],
+    "health": 33,
+    "attack": 9,
+    "cost": 3,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 4,
+      },
+      {
+        "id": "rally",
+        "x": 6,
+        "y": "16",
+      },
+      {
+        "id": "legion",
+        "x": 5,
+        "y": "4",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 34,
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "rally",
+            "x": 7,
+            "y": "16",
+          },
+          {
+            "id": "legion",
+            "x": 5,
+            "y": "4",
+          },
+        ],
+      },
+      "3": {
+        "health": 35,
+        "skill": [],
+      },
+      "4": {
+        "attack": 10,
+        "health": 36,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 5,
+          },
+          {
+            "id": "rally",
+            "x": 7,
+            "y": "16",
+          },
+          {
+            "id": "legion",
+            "x": 5,
+            "y": "4",
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 5,
+          },
+          {
+            "id": "rally",
+            "x": 8,
+            "y": "16",
+          },
+          {
+            "id": "legion",
+            "x": 6,
+            "y": "4",
+          },
+        ],
+      },
+    }
+  },
   "5159": {
     "id": "5159",
     "name": "Vortex Palm",
@@ -91411,6 +91687,217 @@ var CARDS = {
           {
             "id": "strike",
             "x": 3,
+          },
+        ],
+      },
+    }
+  },
+  "6153": {
+    "id": "6153",
+    "name": "Ribbit Roaster",
+    "picture": "Mechanical_Frog_A",
+    "hidden_until": "1506618000000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["4","16"],
+    "health": 15,
+    "attack": 6,
+    "cost": 2,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 1,
+      },
+      {
+        "id": "burn",
+        "x": 1,
+      },
+      {
+        "id": "enrage",
+        "x": 2,
+        "y": "4",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 16,
+        "skill": [],
+      },
+      "3": {
+        "health": 17,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 2,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+          {
+            "id": "enrage",
+            "x": 2,
+            "y": "4",
+          },
+        ],
+      },
+      "5": {
+        "attack": 7,
+        "health": 18,
+        "skill": [],
+      },
+    }
+  },
+  "16153": {
+    "id": "16153",
+    "name": "Ribbit Broaster",
+    "picture": "Mechanical_Frog_A",
+    "hidden_until": "1506618000000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["4","16"],
+    "health": 19,
+    "attack": 7,
+    "cost": 2,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 2,
+      },
+      {
+        "id": "burn",
+        "x": 1,
+      },
+      {
+        "id": "enrage",
+        "x": 2,
+        "y": "4",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 3,
+          },
+          {
+            "id": "burn",
+            "x": 1,
+          },
+          {
+            "id": "enrage",
+            "x": 2,
+            "y": "4",
+          },
+        ],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 3,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "enrage",
+            "x": 3,
+            "y": "4",
+          },
+        ],
+      },
+      "4": {
+        "health": 20,
+        "skill": [],
+      },
+      "5": {
+        "health": 21,
+        "skill": [],
+      },
+    }
+  },
+  "26153": {
+    "id": "26153",
+    "name": "Ribbit Toaster",
+    "picture": "Mechanical_Frog_B",
+    "hidden_until": "1506618000000",
+    "rarity": "3",
+    "set": "3000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["4","16"],
+    "health": 21,
+    "attack": 7,
+    "cost": 2,
+    "maxLevel": 5,
+    "skill": [
+      {
+        "id": "enfeeble",
+        "x": 4,
+      },
+      {
+        "id": "burn",
+        "x": 2,
+      },
+      {
+        "id": "enrage",
+        "x": 3,
+        "y": "4",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 8,
+        "health": 22,
+        "skill": [],
+      },
+      "3": {
+        "health": 23,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 5,
+          },
+          {
+            "id": "burn",
+            "x": 2,
+          },
+          {
+            "id": "enrage",
+            "x": 3,
+            "y": "4",
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "enfeeble",
+            "x": 5,
+          },
+          {
+            "id": "burn",
+            "x": 3,
+          },
+          {
+            "id": "enrage",
+            "x": 4,
+            "y": "4",
           },
         ],
       },
@@ -127891,6 +128378,484 @@ var CARDS = {
           {
             "id": "poison",
             "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "7156": {
+    "id": "7156",
+    "name": "Dawnglow Sharpshot",
+    "picture": "Dawnglow_Tribal_Frog_A",
+    "hidden_until": "1506618000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["4"],
+    "health": 10,
+    "attack": 5,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "protect",
+        "x": 2,
+        "y": "4",
+      },
+      {
+        "id": "pierce",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 11,
+        "skill": [],
+      },
+      "3": {
+        "attack": 6,
+        "skill": [],
+      },
+      "4": {
+        "health": 12,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "y": "4",
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "4",
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "17156": {
+    "id": "17156",
+    "name": "Dawnglow Bowshot",
+    "picture": "Dawnglow_Tribal_Frog_A",
+    "hidden_until": "1506618000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["4"],
+    "health": 13,
+    "attack": 7,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "protect",
+        "x": 3,
+        "y": "4",
+      },
+      {
+        "id": "pierce",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "4",
+          },
+          {
+            "id": "pierce",
+            "x": 4,
+          },
+        ],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "y": "4",
+          },
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+        ],
+      },
+      "4": {
+        "health": 14,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "4",
+          },
+          {
+            "id": "pierce",
+            "x": 5,
+          },
+        ],
+      },
+      "6": {
+        "attack": 8,
+        "skill": [],
+      },
+    }
+  },
+  "27156": {
+    "id": "27156",
+    "name": "Dawnglow Volleyshot",
+    "picture": "Dawnglow_Tribal_Frog_B",
+    "hidden_until": "1506618000000",
+    "rarity": "4",
+    "set": "3000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["4"],
+    "health": 15,
+    "attack": 8,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 2,
+      },
+      {
+        "id": "protect",
+        "x": 4,
+        "y": "4",
+      },
+      {
+        "id": "pierce",
+        "x": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 16,
+        "skill": [],
+      },
+      "3": {
+        "attack": 9,
+        "skill": [],
+      },
+      "4": {
+        "health": 17,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "protect",
+            "x": 4,
+            "y": "4",
+          },
+          {
+            "id": "pierce",
+            "x": 6,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "protect",
+            "x": 5,
+            "y": "4",
+          },
+          {
+            "id": "pierce",
+            "x": 7,
+          },
+        ],
+      },
+    }
+  },
+  "7159": {
+    "id": "7159",
+    "name": "Lucky Frog",
+    "desc": "Better lucky than good!",
+    "picture": "Lucky_Frog_A",
+    "hidden_until": "1506963600000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["4"],
+    "health": 18,
+    "attack": 5,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "protect",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "jam",
+        "c": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "protect",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+        ],
+      },
+      "3": {
+        "health": 19,
+        "skill": [],
+      },
+      "4": {
+        "health": 20,
+        "skill": [],
+      },
+      "5": {
+        "attack": 6,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "protect",
+            "x": 1,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+        ],
+      },
+      "6": {
+        "health": 21,
+        "skill": [],
+      },
+    }
+  },
+  "17159": {
+    "id": "17159",
+    "name": "Dumb Luck Frog",
+    "picture": "Lucky_Frog_A",
+    "hidden_until": "1506963600000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["4"],
+    "health": 21,
+    "attack": 6,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 2,
+      },
+      {
+        "id": "protect",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "jam",
+        "c": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 22,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 4,
+          },
+        ],
+      },
+      "3": {
+        "health": 23,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 3,
+          },
+          {
+            "id": "protect",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+        ],
+      },
+      "5": {
+        "health": 24,
+        "skill": [],
+      },
+      "6": {
+        "attack": 7,
+        "health": 25,
+        "skill": [],
+      },
+    }
+  },
+  "27159": {
+    "id": "27159",
+    "name": "Blind Luck Frog",
+    "picture": "Lucky_Frog_B",
+    "hidden_until": "1506963600000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["4"],
+    "health": 25,
+    "attack": 7,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 3,
+      },
+      {
+        "id": "protect",
+        "x": 3,
+        "all": "1",
+      },
+      {
+        "id": "jam",
+        "c": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 4,
+          },
+          {
+            "id": "protect",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 3,
+          },
+        ],
+      },
+      "3": {
+        "attack": 8,
+        "health": 26,
+        "skill": [],
+      },
+      "4": {
+        "health": 27,
+        "skill": [],
+      },
+      "5": {
+        "health": 28,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 4,
+          },
+          {
+            "id": "protect",
+            "x": 4,
+            "all": "1",
+          },
+          {
+            "id": "jam",
+            "c": 3,
           },
         ],
       },
@@ -180623,7 +181588,7 @@ var CARDS = {
   "9995": {
     "id": "9995",
     "name": "Unused Art",
-    "picture": "Dawnglow_Tribal_Frog_A",
+    "picture": "Elemental_Frog_Rocks_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -180638,7 +181603,7 @@ var CARDS = {
   "19995": {
     "id": "19995",
     "name": "Unused Art",
-    "picture": "Dawnglow_Tribal_Frog_B",
+    "picture": "Elemental_Frog_Rocks_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -180653,22 +181618,7 @@ var CARDS = {
   "9994": {
     "id": "9994",
     "name": "Unused Art",
-    "picture": "Elemental_Frog_Rocks_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19994": {
-    "id": "19994",
-    "name": "Unused Art",
-    "picture": "Elemental_Frog_Rocks_B",
+    "picture": "Elyse_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -180683,7 +181633,22 @@ var CARDS = {
   "9993": {
     "id": "9993",
     "name": "Unused Art",
-    "picture": "Elyse_A",
+    "picture": "Fire_Breather_Frog_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19993": {
+    "id": "19993",
+    "name": "Unused Art",
+    "picture": "Fire_Breather_Frog_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -180698,7 +181663,7 @@ var CARDS = {
   "9992": {
     "id": "9992",
     "name": "Unused Art",
-    "picture": "Fire_Breather_Frog_A",
+    "picture": "Frog_Boxer_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -180713,7 +181678,7 @@ var CARDS = {
   "19992": {
     "id": "19992",
     "name": "Unused Art",
-    "picture": "Fire_Breather_Frog_B",
+    "picture": "Frog_Boxer_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -180728,7 +181693,7 @@ var CARDS = {
   "9991": {
     "id": "9991",
     "name": "Unused Art",
-    "picture": "Frog_Boxer_A",
+    "picture": "Frog_Egg_Stealer_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -180743,7 +181708,7 @@ var CARDS = {
   "19991": {
     "id": "19991",
     "name": "Unused Art",
-    "picture": "Frog_Boxer_B",
+    "picture": "Frog_Egg_Stealer_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -180758,7 +181723,7 @@ var CARDS = {
   "9990": {
     "id": "9990",
     "name": "Unused Art",
-    "picture": "Frog_Egg_Stealer_A",
+    "picture": "Frog_Frost_Phoenix_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -180773,7 +181738,7 @@ var CARDS = {
   "19990": {
     "id": "19990",
     "name": "Unused Art",
-    "picture": "Frog_Egg_Stealer_B",
+    "picture": "Frog_Frost_Phoenix_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -180788,7 +181753,7 @@ var CARDS = {
   "9989": {
     "id": "9989",
     "name": "Unused Art",
-    "picture": "Frog_Frost_Phoenix_A",
+    "picture": "Frog_Guardian_Dragon_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -180803,22 +181768,7 @@ var CARDS = {
   "19989": {
     "id": "19989",
     "name": "Unused Art",
-    "picture": "Frog_Frost_Phoenix_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9988": {
-    "id": "9988",
-    "name": "Unused Art",
-    "picture": "Frog_Guardian_Dragon_A",
+    "picture": "Frog_Guardian_Dragon_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -180833,7 +181783,7 @@ var CARDS = {
   "19988": {
     "id": "19988",
     "name": "Unused Art",
-    "picture": "Frog_Guardian_Dragon_B",
+    "picture": "Frost_Bite_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -180845,10 +181795,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19987": {
-    "id": "19987",
+  "9987": {
+    "id": "9987",
     "name": "Unused Art",
-    "picture": "Frost_Bite_B",
+    "picture": "General_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -180863,7 +181813,22 @@ var CARDS = {
   "9986": {
     "id": "9986",
     "name": "Unused Art",
-    "picture": "General_A",
+    "picture": "Giant_Mosquito_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19986": {
+    "id": "19986",
+    "name": "Unused Art",
+    "picture": "Giant_Mosquito_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -180878,7 +181843,7 @@ var CARDS = {
   "9985": {
     "id": "9985",
     "name": "Unused Art",
-    "picture": "Giant_Mosquito_A",
+    "picture": "Mergoat_Capricorn_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -180893,7 +181858,7 @@ var CARDS = {
   "19985": {
     "id": "19985",
     "name": "Unused Art",
-    "picture": "Giant_Mosquito_B",
+    "picture": "Mergoat_Capricorn_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -180908,7 +181873,7 @@ var CARDS = {
   "9984": {
     "id": "9984",
     "name": "Unused Art",
-    "picture": "Lucky_Frog_A",
+    "picture": "Merman_Guardian_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -180923,7 +181888,7 @@ var CARDS = {
   "19984": {
     "id": "19984",
     "name": "Unused Art",
-    "picture": "Lucky_Frog_B",
+    "picture": "Merman_Guardian_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -180935,10 +181900,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9983": {
-    "id": "9983",
+  "29983": {
+    "id": "29983",
     "name": "Unused Art",
-    "picture": "Mechanical_Frog_A",
+    "picture": "Monster_C",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -180950,55 +181915,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19983": {
-    "id": "19983",
+  "29982": {
+    "id": "29982",
     "name": "Unused Art",
-    "picture": "Mechanical_Frog_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9982": {
-    "id": "9982",
-    "name": "Unused Art",
-    "picture": "Mech_Frog_Weaponmaster_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19982": {
-    "id": "19982",
-    "name": "Unused Art",
-    "picture": "Mech_Frog_Weaponmaster_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9981": {
-    "id": "9981",
-    "name": "Unused Art",
-    "picture": "Mergoat_Capricorn_A",
+    "picture": "Mythic_Avian_C",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -181013,7 +181933,7 @@ var CARDS = {
   "19981": {
     "id": "19981",
     "name": "Unused Art",
-    "picture": "Mergoat_Capricorn_B",
+    "picture": "Mythic_Dragon_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -181028,7 +181948,7 @@ var CARDS = {
   "9980": {
     "id": "9980",
     "name": "Unused Art",
-    "picture": "Merman_Guardian_A",
+    "picture": "Mythic_Seafolk_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -181040,10 +181960,25 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19980": {
-    "id": "19980",
+  "9979": {
+    "id": "9979",
     "name": "Unused Art",
-    "picture": "Merman_Guardian_B",
+    "picture": "Oda_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19979": {
+    "id": "19979",
+    "name": "Unused Art",
+    "picture": "Oda_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -181058,7 +181993,7 @@ var CARDS = {
   "29979": {
     "id": "29979",
     "name": "Unused Art",
-    "picture": "Monster_C",
+    "picture": "Oda_C",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -181070,10 +182005,25 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29978": {
-    "id": "29978",
+  "19978": {
+    "id": "19978",
     "name": "Unused Art",
-    "picture": "Mythic_Avian_C",
+    "picture": "Promo_Dragon_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9977": {
+    "id": "9977",
+    "name": "Unused Art",
+    "picture": "Seraph_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -181088,7 +182038,7 @@ var CARDS = {
   "19977": {
     "id": "19977",
     "name": "Unused Art",
-    "picture": "Mythic_Dragon_B",
+    "picture": "Seraph_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -181103,7 +182053,22 @@ var CARDS = {
   "9976": {
     "id": "9976",
     "name": "Unused Art",
-    "picture": "Mythic_Seafolk_A",
+    "picture": "Spiky_Bug_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19976": {
+    "id": "19976",
+    "name": "Unused Art",
+    "picture": "Spiky_Bug_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -181118,7 +182083,7 @@ var CARDS = {
   "9975": {
     "id": "9975",
     "name": "Unused Art",
-    "picture": "Oda_A",
+    "picture": "Tarian_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -181130,25 +182095,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19975": {
-    "id": "19975",
+  "9974": {
+    "id": "9974",
     "name": "Unused Art",
-    "picture": "Oda_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29975": {
-    "id": "29975",
-    "name": "Unused Art",
-    "picture": "Oda_C",
+    "picture": "Tower_Shield_Frog_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -181163,7 +182113,7 @@ var CARDS = {
   "19974": {
     "id": "19974",
     "name": "Unused Art",
-    "picture": "Promo_Dragon_B",
+    "picture": "Tower_Shield_Frog_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -181178,22 +182128,7 @@ var CARDS = {
   "9973": {
     "id": "9973",
     "name": "Unused Art",
-    "picture": "Seraph_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19973": {
-    "id": "19973",
-    "name": "Unused Art",
-    "picture": "Seraph_B",
+    "picture": "Tremor_Wurm_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -181208,22 +182143,7 @@ var CARDS = {
   "9972": {
     "id": "9972",
     "name": "Unused Art",
-    "picture": "Spiky_Bug_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19972": {
-    "id": "19972",
-    "name": "Unused Art",
-    "picture": "Spiky_Bug_B",
+    "picture": "Unused1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -181238,7 +182158,7 @@ var CARDS = {
   "9971": {
     "id": "9971",
     "name": "Unused Art",
-    "picture": "Tarian_A",
+    "picture": "Unused2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -181253,22 +182173,7 @@ var CARDS = {
   "9970": {
     "id": "9970",
     "name": "Unused Art",
-    "picture": "Tower_Shield_Frog_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19970": {
-    "id": "19970",
-    "name": "Unused Art",
-    "picture": "Tower_Shield_Frog_B",
+    "picture": "Unused3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -181283,7 +182188,7 @@ var CARDS = {
   "9969": {
     "id": "9969",
     "name": "Unused Art",
-    "picture": "Tremor_Wurm_A",
+    "picture": "Ursurio_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -181298,7 +182203,7 @@ var CARDS = {
   "9968": {
     "id": "9968",
     "name": "Unused Art",
-    "picture": "Unused1_A",
+    "picture": "Void_Abomination_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -181313,7 +182218,22 @@ var CARDS = {
   "9967": {
     "id": "9967",
     "name": "Unused Art",
-    "picture": "Unused2_A",
+    "picture": "Winged_Insect_Frog_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19967": {
+    "id": "19967",
+    "name": "Unused Art",
+    "picture": "Winged_Insect_Frog_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -181328,81 +182248,6 @@ var CARDS = {
   "9966": {
     "id": "9966",
     "name": "Unused Art",
-    "picture": "Unused3_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9965": {
-    "id": "9965",
-    "name": "Unused Art",
-    "picture": "Ursurio_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9964": {
-    "id": "9964",
-    "name": "Unused Art",
-    "picture": "Void_Abomination_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9963": {
-    "id": "9963",
-    "name": "Unused Art",
-    "picture": "Winged_Insect_Frog_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19963": {
-    "id": "19963",
-    "name": "Unused Art",
-    "picture": "Winged_Insect_Frog_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9962": {
-    "id": "9962",
-    "name": "Unused Art",
     "picture": "Yuriel_A",
     "rarity": "0",
     "card_type": "2",
@@ -181416,4 +182261,4 @@ var CARDS = {
     "upgrades": {}
   },
 };
-var CardsUpdated = 1506533964806.02;
+var CardsUpdated = 1507032703024.85;

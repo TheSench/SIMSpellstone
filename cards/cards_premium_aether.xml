@@ -19569,6 +19569,146 @@
     </upgrade>
   </unit>
   <unit>
+    <id>5156</id>
+    <card_type>2</card_type>
+    <name>Tiltyard Ribbot</name>
+    <picture>Mech_Frog_Weaponmaster_A</picture>
+    <asset_bundle>106</asset_bundle>
+    <hidden_until_time>1506618000</hidden_until_time>
+    <attack>7</attack>
+    <health>27</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="2" />
+    <skill id="rally" x="3" y="16" />
+    <skill id="legion" x="2" y="4" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>28</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="2" />
+      <skill id="rally" x="4" y="16" />
+      <skill id="legion" x="3" y="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>30</health>
+      <skill id="armored" x="3" />
+      <skill id="rally" x="4" y="16" />
+      <skill id="legion" x="3" y="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15156</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Tiltyard Ribbotron</name>
+    <picture>Mech_Frog_Weaponmaster_A</picture>
+    <asset_bundle>106</asset_bundle>
+    <hidden_until_time>1506618000</hidden_until_time>
+    <attack>8</attack>
+    <health>30</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="3" />
+    <skill id="rally" x="5" y="16" />
+    <skill id="legion" x="3" y="4" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>32</health>
+      <skill id="armored" x="3" />
+      <skill id="rally" x="5" y="16" />
+      <skill id="legion" x="4" y="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="3" />
+      <skill id="rally" x="6" y="16" />
+      <skill id="legion" x="4" y="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>9</attack>
+      <health>33</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="4" />
+      <skill id="rally" x="6" y="16" />
+      <skill id="legion" x="4" y="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25156</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Tiltyard Ribboteer</name>
+    <picture>Mech_Frog_Weaponmaster_B</picture>
+    <asset_bundle>106</asset_bundle>
+    <hidden_until_time>1506618000</hidden_until_time>
+    <attack>9</attack>
+    <health>33</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="4" />
+    <skill id="rally" x="6" y="16" />
+    <skill id="legion" x="5" y="4" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>34</health>
+      <skill id="armored" x="4" />
+      <skill id="rally" x="7" y="16" />
+      <skill id="legion" x="5" y="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>35</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>10</attack>
+      <health>36</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="5" />
+      <skill id="rally" x="7" y="16" />
+      <skill id="legion" x="5" y="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="5" />
+      <skill id="rally" x="8" y="16" />
+      <skill id="legion" x="6" y="4" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>5159</id>
     <card_type>2</card_type>
     <name>Vortex Palm</name>
