@@ -279,6 +279,21 @@ var BATTLEGROUNDS = {
       },
     ]
   },
+  "118": {
+    "name": "Energy Shield",
+    "id": "118",
+    "desc": "All Mechas have upgraded their protective protocols, gaining a Barrier equal to their base Attack each time they deal Attack damage.",
+    "effect": [
+      {
+        "effect_type": "add_skill",
+        "id": "reinforce",
+        "mult": 1,
+        "base": "attack",
+        "y": "16",
+        "all": "1",
+      },
+    ]
+  },
   "501": {
     "name": "Castle Siege",
     "id": "501",
@@ -1296,6 +1311,22 @@ var BATTLEGROUNDS = {
         "effect_type": "scale_attributes",
         "base_mult": .2,
         "mult": .03,
+      },
+    ]
+  },
+  "2023": {
+    "name": "Ion-pitched Chiptune",
+    "id": "2023",
+    "desc": "Non-token enemies become stronger with each passing Mastery level.",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "5",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .008,
+        "mult": .0025,
       },
     ]
   },

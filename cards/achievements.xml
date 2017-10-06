@@ -5365,7 +5365,7 @@
     <order>101</order>
     <name>The Healer</name>
     <desc>Complete the 'The Healer' campaign on Mastery Level 2.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1484240400</locked_start_time>
     <!-- Thu, 12 Jan 2017 17:00:00 GMT -->
     <req>
@@ -5382,7 +5382,7 @@
     <order>101</order>
     <name>The Healer</name>
     <desc>Complete the 'The Healer' campaign on Mastery Level 4.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1484240400</locked_start_time>
     <!-- Thu, 12 Jan 2017 17:00:00 GMT -->
     <achievement_req>3188</achievement_req>
@@ -5400,7 +5400,7 @@
     <order>101</order>
     <name>The Healer</name>
     <desc>Complete the 'The Healer' campaign on Mastery Level 6.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1484240400</locked_start_time>
     <!-- Thu, 12 Jan 2017 17:00:00 GMT -->
     <achievement_req>3189</achievement_req>
@@ -5418,7 +5418,7 @@
     <order>101</order>
     <name>The Healer</name>
     <desc>Complete the 'The Healer' campaign on Mastery Level 7.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1484240400</locked_start_time>
     <!-- Thu, 12 Jan 2017 17:00:00 GMT -->
     <achievement_req>3190</achievement_req>
@@ -5436,7 +5436,7 @@
     <order>101</order>
     <name>The Guardian</name>
     <desc>Complete the 'The Guardian' campaign on Mastery Level 2.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1485450000</locked_start_time>
     <!-- Thu, 26 Jan 2017 17:00:00 GMT -->
     <req>
@@ -5453,7 +5453,7 @@
     <order>101</order>
     <name>The Guardian</name>
     <desc>Complete the 'The Guardian' campaign on Mastery Level 4.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1485450000</locked_start_time>
     <!-- Thu, 26 Jan 2017 17:00:00 GMT -->
     <achievement_req>3192</achievement_req>
@@ -5471,7 +5471,7 @@
     <order>101</order>
     <name>The Guardian</name>
     <desc>Complete the 'The Guardian' campaign on Mastery Level 6.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1485450000</locked_start_time>
     <!-- Thu, 26 Jan 2017 17:00:00 GMT -->
     <achievement_req>3193</achievement_req>
@@ -5489,7 +5489,7 @@
     <order>101</order>
     <name>The Guardian</name>
     <desc>Complete the 'The Guardian' campaign on Mastery Level 7.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1485450000</locked_start_time>
     <!-- Thu, 26 Jan 2017 17:00:00 GMT -->
     <achievement_req>3194</achievement_req>
@@ -5508,7 +5508,7 @@
     <order>101</order>
     <name>Weakening the Lady of the Sea</name>
     <desc>Complete the 'Weakening the Lady of the Sea' campaign on Mastery Level 4.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1484240400</locked_start_time>
     <!-- Thu, 12 Jan 2017 17:00:00 GMT -->
     <req>
@@ -5526,7 +5526,7 @@
     <order>101</order>
     <name>Weakening the Lady of the Sea</name>
     <desc>Complete the 'Weakening the Lady of the Sea' campaign on Mastery Level 7.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1484240400</locked_start_time>
     <!-- Thu, 12 Jan 2017 17:00:00 GMT -->
     <achievement_req>3196</achievement_req>
@@ -5545,7 +5545,7 @@
     <order>101</order>
     <name>The Assassin</name>
     <desc>Complete the 'The Assassin' campaign on Mastery Level 2.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1486659600</locked_start_time>
     <!-- Thu, 09 Feb 2017 17:00:00 GMT -->
     <req>
@@ -5562,7 +5562,7 @@
     <order>101</order>
     <name>The Assassin</name>
     <desc>Complete the 'The Assassin' campaign on Mastery Level 4.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1486659600</locked_start_time>
     <!-- Thu, 09 Feb 2017 17:00:00 GMT -->
     <achievement_req>3198</achievement_req>
@@ -5580,7 +5580,7 @@
     <order>101</order>
     <name>The Assassin</name>
     <desc>Complete the 'The Assassin' campaign on Mastery Level 6.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1486659600</locked_start_time>
     <!-- Thu, 09 Feb 2017 17:00:00 GMT -->
     <achievement_req>3199</achievement_req>
@@ -5598,7 +5598,7 @@
     <order>101</order>
     <name>The Assassin</name>
     <desc>Complete the 'The Assassin' campaign on Mastery Level 7.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1486659600</locked_start_time>
     <!-- Thu, 09 Feb 2017 17:00:00 GMT -->
     <achievement_req>3200</achievement_req>
@@ -5616,7 +5616,7 @@
     <order>101</order>
     <name>The Ranger</name>
     <desc>Complete the 'The Ranger' campaign on Mastery Level 2.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1487869200</locked_start_time>
     <!-- Thu, 23 Feb 2017 17:00:00 GMT -->
     <req>
@@ -5633,7 +5633,7 @@
     <order>101</order>
     <name>The Ranger</name>
     <desc>Complete the 'The Ranger' campaign on Mastery Level 4.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1487869200</locked_start_time>
     <!-- Thu, 23 Feb 2017 17:00:00 GMT -->
     <achievement_req>3202</achievement_req>
@@ -5651,7 +5651,7 @@
     <order>101</order>
     <name>The Ranger</name>
     <desc>Complete the 'The Ranger' campaign on Mastery Level 6.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1487869200</locked_start_time>
     <!-- Thu, 23 Feb 2017 17:00:00 GMT -->
     <achievement_req>3203</achievement_req>
@@ -5669,7 +5669,7 @@
     <order>101</order>
     <name>The Ranger</name>
     <desc>Complete the 'The Ranger' campaign on Mastery Level 7.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1487869200</locked_start_time>
     <!-- Thu, 23 Feb 2017 17:00:00 GMT -->
     <achievement_req>3204</achievement_req>
@@ -5689,7 +5689,7 @@
     <order>101</order>
     <name>Snowdust Forge</name>
     <desc>Complete the 'Snowdust Forge' campaign on Mastery Level 4.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1489078800</locked_start_time>
     <!-- Thu, 09 Mar 2017 17:00:00 GMT -->
     <req>
@@ -5707,7 +5707,7 @@
     <order>101</order>
     <name>Snowdust Forge</name>
     <desc>Complete the 'Snowdust Forge' campaign on Mastery Level 7.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1489078800</locked_start_time>
     <!-- Thu, 09 Mar 2017 17:00:00 GMT -->
     <achievement_req>3206</achievement_req>
@@ -5726,7 +5726,7 @@
     <order>101</order>
     <name>Ancient Aegis</name>
     <desc>Complete the 'Ancient Aegis' campaign on Mastery Level 2.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1489078800</locked_start_time>
     <!-- Thu, 09 Mar 2017 17:00:00 GMT -->
     <req>
@@ -5743,7 +5743,7 @@
     <order>101</order>
     <name>Ancient Aegis</name>
     <desc>Complete the 'Ancient Aegis' campaign on Mastery Level 4.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1489078800</locked_start_time>
     <!-- Thu, 09 Mar 2017 17:00:00 GMT -->
     <achievement_req>3208</achievement_req>
@@ -5761,7 +5761,7 @@
     <order>101</order>
     <name>Ancient Aegis</name>
     <desc>Complete the 'Ancient Aegis' campaign on Mastery Level 6.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1489078800</locked_start_time>
     <!-- Thu, 09 Mar 2017 17:00:00 GMT -->
     <achievement_req>3209</achievement_req>
@@ -5779,7 +5779,7 @@
     <order>101</order>
     <name>Ancient Aegis</name>
     <desc>Complete the 'Ancient Aegis' campaign on Mastery Level 7.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1489078800</locked_start_time>
     <!-- Thu, 09 Mar 2017 17:00:00 GMT -->
     <achievement_req>3210</achievement_req>
@@ -5815,7 +5815,7 @@
     <order>101</order>
     <name>Blazing Dyrnwyn</name>
     <desc>Complete the 'Blazing Dyrnwyn' campaign on Mastery Level 4.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1490288400</locked_start_time>
     <!-- Thu, 23 Mar 2017 17:00:00 GMT -->
     <achievement_req>3212</achievement_req>
@@ -5851,7 +5851,7 @@
     <order>101</order>
     <name>Blazing Dyrnwyn</name>
     <desc>Complete the 'Blazing Dyrnwyn' campaign on Mastery Level 7.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1490288400</locked_start_time>
     <!-- Thu, 23 Mar 2017 17:00:00 GMT -->
     <achievement_req>3214</achievement_req>
@@ -5870,7 +5870,7 @@
     <order>101</order>
     <name>Dyrnwyn's Test</name>
     <desc>Complete the 'Dyrnwyn's Test' campaign on Mastery Level 1.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1490288400</locked_start_time>
     <!-- Thu, 23 Mar 2017 17:00:00 GMT -->
     <req>
@@ -6031,7 +6031,7 @@
     <order>101</order>
     <name>Soul Power</name>
     <desc>Complete the 'Soul Power' campaign on Mastery Level 4.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1493917200</locked_start_time>
     <!-- Thu, 04 May 2017 17:00:00 -->
     <req>
@@ -6067,7 +6067,7 @@
     <order>101</order>
     <name>The Void Plane</name>
     <desc>Complete the 'The Void Plane' campaign on Mastery Level 2.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1493917200</locked_start_time>
     <!-- Thu, 04 May 2017 17:00:00 -->
     <req>
@@ -6084,7 +6084,7 @@
     <order>101</order>
     <name>The Void Plane</name>
     <desc>Complete the 'The Void Plane' campaign on Mastery Level 4.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1493917200</locked_start_time>
     <!-- Thu, 04 May 2017 17:00:00 -->
     <achievement_req>3227</achievement_req>
@@ -6102,7 +6102,7 @@
     <order>101</order>
     <name>The Void Plane</name>
     <desc>Complete the 'The Void Plane' campaign on Mastery Level 6.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1493917200</locked_start_time>
     <!-- Thu, 04 May 2017 17:00:00 -->
     <achievement_req>3228</achievement_req>
@@ -6120,7 +6120,7 @@
     <order>101</order>
     <name>The Void Plane</name>
     <desc>Complete the 'The Void Plane' campaign on Mastery Level 7.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1493917200</locked_start_time>
     <!-- Thu, 04 May 2017 17:00:00 -->
     <achievement_req>3229</achievement_req>
@@ -6210,7 +6210,7 @@
     <order>101</order>
     <name>This is the Final Battle</name>
     <desc>Complete the 'This is the Final Battle' campaign on Mastery Level 1.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1495126800</locked_start_time>
     <!-- Thu, 18 May 2017 17:00:00 -->
     <req>
@@ -6370,7 +6370,7 @@
     <order>101</order>
     <name>Honey Buzz</name>
     <desc>Complete the 'Honey Buzz' campaign on Mastery Level 4.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1498755600</locked_start_time>
     <!-- Thu, 29 June 2017 17:00:00 -->
     <req>
@@ -6405,7 +6405,7 @@
     <order>101</order>
     <name>Heroes of the World</name>
     <desc>Complete the 'Heroes of the World' campaign on Mastery Level 2.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1498755600</locked_start_time>
     <!-- Thu, 29 June 2017 17:00:00 -->
     <req>
@@ -6422,7 +6422,7 @@
     <order>101</order>
     <name>Heroes of the World</name>
     <desc>Complete the 'Heroes of the World' campaign on Mastery Level 4.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1498755600</locked_start_time>
     <!-- Thu, 29 June 2017 17:00:00 -->
     <achievement_req>3246</achievement_req>
@@ -6440,7 +6440,7 @@
     <order>101</order>
     <name>Heroes of the World</name>
     <desc>Complete the 'Heroes of the World' campaign on Mastery Level 6.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1498755600</locked_start_time>
     <!-- Thu, 29 June 2017 17:00:00 -->
     <achievement_req>3247</achievement_req>
@@ -6458,7 +6458,7 @@
     <order>101</order>
     <name>Heroes of the World</name>
     <desc>Complete the 'Heroes of the World' campaign on Mastery Level 7.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1498755600</locked_start_time>
     <!-- Thu, 29 June 2017 17:00:00 -->
     <achievement_req>3248</achievement_req>
@@ -6728,7 +6728,7 @@
     <order>101</order>
     <name>Sea Temple Defenses</name>
     <desc>Complete the 'Sea Temple Defenses' campaign on Mastery Level 4.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1503594000</locked_start_time>
     <!-- Thu, 24 August 2017 17:00:00 -->
     <req>
@@ -6763,7 +6763,7 @@
     <order>101</order>
     <name>Beneath the Waves</name>
     <desc>Complete the 'Beneath the Waves' campaign on Mastery Level 2.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1503594000</locked_start_time>
     <!-- Thu, 24 August 2017 17:00:00 -->
     <req>
@@ -6780,7 +6780,7 @@
     <order>101</order>
     <name>Beneath the Waves</name>
     <desc>Complete the 'Beneath the Waves' campaign on Mastery Level 4.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1503594000</locked_start_time>
     <!-- Thu, 24 August 2017 17:00:00 -->
     <achievement_req>3266</achievement_req>
@@ -6798,7 +6798,7 @@
     <order>101</order>
     <name>Beneath the Waves</name>
     <desc>Complete the 'Beneath the Waves' campaign on Mastery Level 6.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1503594000</locked_start_time>
     <!-- Thu, 24 August 2017 17:00:00 -->
     <achievement_req>3267</achievement_req>
@@ -6816,7 +6816,7 @@
     <order>101</order>
     <name>Beneath the Waves</name>
     <desc>Complete the 'Beneath the Waves' campaign on Mastery Level 7.</desc>
-    <mission_req>64</mission_req>
+    <mission_req>244</mission_req>
     <locked_start_time>1503594000</locked_start_time>
     <!-- Thu, 24 August 2017 17:00:00 -->
     <achievement_req>3268</achievement_req>
@@ -7054,6 +7054,184 @@
     <achievement_req>3281</achievement_req>
     <req>
       <campaign>1141</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <!-- Campaign Event 6 -->
+  <achievement>
+    <id>3283</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Mining Resources</name>
+    <desc>Complete the 'Mining Resources' campaign on Mastery Level 4.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1508432400</locked_start_time>
+    <!-- Thu, 19 Oct 2017 17:00:00 -->
+    <req>
+      <campaign>1142</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <item id="3062" number="50" />
+      <event_points id="7026" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3284</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Mining Resources</name>
+    <desc>Complete the 'Mining Resources' campaign on Mastery Level 7.</desc>
+    <locked_start_time>1508432400</locked_start_time>
+    <!-- Thu, 19 Oct 2017 17:00:00 -->
+    <achievement_req>3283</achievement_req>
+    <req>
+      <campaign>1142</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3285</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Journey to Fireshard Mine</name>
+    <desc>Complete the 'Journey to Fireshard Mine' campaign on Mastery Level 2.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1508432400</locked_start_time>
+    <!-- Thu, 19 Oct 2017 17:00:00 -->
+    <req>
+      <campaign>1143</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3286</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Journey to Fireshard Mine</name>
+    <desc>Complete the 'Journey to Fireshard Mine' campaign on Mastery Level 4.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1508432400</locked_start_time>
+    <!-- Thu, 19 Oct 2017 17:00:00 -->
+    <achievement_req>3285</achievement_req>
+    <req>
+      <campaign>1143</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3287</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Journey to Fireshard Mine</name>
+    <desc>Complete the 'Journey to Fireshard Mine' campaign on Mastery Level 6.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1508432400</locked_start_time>
+    <!-- Thu, 19 Oct 2017 17:00:00 -->
+    <achievement_req>3286</achievement_req>
+    <req>
+      <campaign>1143</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3288</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Journey to Fireshard Mine</name>
+    <desc>Complete the 'Journey to Fireshard Mine' campaign on Mastery Level 7.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1508432400</locked_start_time>
+    <!-- Thu, 19 Oct 2017 17:00:00 -->
+    <achievement_req>3287</achievement_req>
+    <req>
+      <campaign>1143</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3289</id>
+    <type>2</type>
+    <order>101</order>
+    <name>First Contact</name>
+    <desc>Complete the 'First Contact' campaign on Mastery Level 2.</desc>
+    <mission_req>5726</mission_req>
+    <locked_start_time>1509642000</locked_start_time>
+    <!-- Thu, 2 Nov 2017 17:00:00 -->
+    <req>
+      <campaign>1144</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3290</id>
+    <type>2</type>
+    <order>101</order>
+    <name>First Contact</name>
+    <desc>Complete the 'First Contact' campaign on Mastery Level 4.</desc>
+    <mission_req>5726</mission_req>
+    <locked_start_time>1509642000</locked_start_time>
+    <!-- Thu, 2 Nov 2017 17:00:00 -->
+    <achievement_req>3289</achievement_req>
+    <req>
+      <campaign>1144</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3291</id>
+    <type>2</type>
+    <order>101</order>
+    <name>First Contact</name>
+    <desc>Complete the 'First Contact' campaign on Mastery Level 6.</desc>
+    <mission_req>5726</mission_req>
+    <locked_start_time>1509642000</locked_start_time>
+    <!-- Thu, 2 Nov 2017 17:00:00 -->
+    <achievement_req>3290</achievement_req>
+    <req>
+      <campaign>1144</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3292</id>
+    <type>2</type>
+    <order>101</order>
+    <name>First Contact</name>
+    <desc>Complete the 'First Contact' campaign on Mastery Level 7.</desc>
+    <mission_req>5726</mission_req>
+    <locked_start_time>1509642000</locked_start_time>
+    <!-- Thu, 2 Nov 2017 17:00:00 -->
+    <achievement_req>3291</achievement_req>
+    <req>
+      <campaign>1144</campaign>
       <level>7</level>
     </req>
     <reward>

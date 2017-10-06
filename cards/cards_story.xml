@@ -6635,4 +6635,114 @@
       <skill id="evadebarrier" x="6" />
     </upgrade>
   </unit>
+  <!-- Campaign Event 6 -->
+  <unit>
+    <id>8098</id>
+    <card_type>2</card_type>
+    <name>Prototype Cybot Alpha</name>
+    <picture>Royal_Guardian_A</picture>
+    <asset_bundle>19</asset_bundle>
+    <attack>10</attack>
+    <health>49</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="1" />
+    <skill id="counter" x="3" />
+    <skill id="strike" x="10" />
+    <type>1</type>
+    <sub_type>16</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <attack>11</attack>
+      <health>50</health>
+      <skill id="armored" x="1" />
+      <skill id="counter" x="4" />
+      <skill id="strike" x="11" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>12</attack>
+      <health>51</health>
+      <skill id="armored" x="2" />
+      <skill id="counter" x="4" />
+      <skill id="strike" x="12" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>13</attack>
+      <health>52</health>
+      <skill id="armored" x="2" />
+      <skill id="counter" x="5" />
+      <skill id="strike" x="13" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>14</attack>
+      <health>53</health>
+      <skill id="armored" x="3" />
+      <skill id="counter" x="5" />
+      <skill id="strike" x="14" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>15</attack>
+      <health>55</health>
+      <skill id="armored" x="4" />
+      <skill id="counter" x="6" />
+      <skill id="strike" x="15" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8099</id>
+    <card_type>2</card_type>
+    <name>Prototype Cybot Beta</name>
+    <picture>Royal_Guardian_B</picture>
+    <asset_bundle>19</asset_bundle>
+    <attack>5</attack>
+    <health>16</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="heal" x="10" />
+    <skill id="legion" x="6" />
+    <skill id="flurry" c="6" />
+    <type>1</type>
+    <sub_type>16</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+      <skill id="heal" x="11" />
+      <skill id="legion" x="6" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+      <skill id="heal" x="12" />
+      <skill id="legion" x="6" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>19</health>
+      <skill id="heal" x="13" />
+      <skill id="legion" x="7" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>6</attack>
+      <skill id="heal" x="14" />
+      <skill id="legion" x="7" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>20</health>
+      <skill id="heal" x="15" />
+      <skill id="legion" x="8" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+  </unit>
 </root>

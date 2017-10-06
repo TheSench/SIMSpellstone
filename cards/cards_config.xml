@@ -504,6 +504,16 @@
     <hidden>1</hidden>
   </skillType>
   <skillType>
+    <id>reinforce</id>
+    <order>90</order>
+    <icon>mystic_barrier</icon>
+    <name>Energy Shield</name>
+    <desc>When this creature deals Attack damage they gain a Barrier</desc>
+    <status_flag>protect</status_flag>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
     <id>displayEffect</id>
     <order>0</order>
     <upkeep>1</upkeep>

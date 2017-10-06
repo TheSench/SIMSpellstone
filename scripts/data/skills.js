@@ -209,6 +209,12 @@ var SKILL_DATA = {
 		icon: 'frostbreath',
 		desc: 'Reanimates creatures when they die.'
 	},
+	reinforce : {
+		name: 'Energy Shield',
+		type: 'passive',
+		icon: 'mystic_barrier',
+		desc: 'When this creature deals Attack damage they gain a Barrier'
+	},
 	resurrect : {
 		name: 'Resurrect',
 		type: 'activation',

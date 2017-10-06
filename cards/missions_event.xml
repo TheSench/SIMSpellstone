@@ -22297,7 +22297,7 @@
       <line>
         <commander>Earthquake_Hammer</commander>
         <enemy>1</enemy>
-        <text>Ack! You win. Okay, I'll tell you were the pirate goblin went...</text>
+        <text>Ack! You win. Okay, I'll tell you where the pirate goblin went...</text>
       </line>
     </speech>
   </mission>
@@ -22496,7 +22496,7 @@
     <id>5713</id>
     <name>Fireshard Power</name>
     <energy>9</energy>
-    <desc>Although the Chaos of Karthos originally hoped to find the Heart of Blue Fire, they instead found the mine to be a valuable resource of Fireshards. You have taken to collecting stray Fireshards, using them to reboot the mine's old technology. </desc>
+    <desc>Although the Chaos of Karthos originally hoped to find the Heart of Blue Fire, they instead found the mine to be a valuable resource of Fireshards. You have taken to collecting stray Fireshards, using them to recharge arcane ore infused with magical properties.</desc>
     <commander id="353" />
     <deck>
       <card id="5022" name="Webfoot Raider" />
@@ -22520,7 +22520,7 @@
     <id>5714</id>
     <name>Fireshard Energy</name>
     <energy>9</energy>
-    <desc>The Fireshards are actually cool beneath skin, but their name comes from their appearance. The stones radiate with energy inside them, lights dancing like firework sparklers.</desc>
+    <desc>The Fireshards are actually cool beneath a human's touch, but their name comes from their appearance. The stones radiate with energy inside them, lights dancing like firework sparklers.</desc>
     <commander id="327" />
     <deck>
       <card id="6022" name="Illusion Caster" />
@@ -22548,7 +22548,7 @@
     <desc>After witnessing the strange automaton technology in Pharos Temple, you've heard more reports of similar technology in a place called Fireshard Mine. Along with Aria, the two of you have been sent to investigate a possible connection between the mecha and goblins.</desc>
     <commander id="354" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8098" name="Prototype Cybot Alpha" />
       <card id="1313" name="Lavafrog" />
       <card id="1313" name="Lavafrog" />
       <card id="1011" name="Archive Keeper" />
@@ -22581,10 +22581,10 @@
     <id>5716</id>
     <name>Product of Karthos</name>
     <energy>9</energy>
-    <desc>Minecart railways snake down the strip mine, twisting off into tunnels and dead-ends. Although she gets turned around once, Aria leads with a certainty that speaks to her familiarity of the land.</desc>
+    <desc>Minecart railways snake down the strip mine, twisting off into tunnels and dead-ends. Although she gets turned around once, Aria leads with a certainty that speaks of her familiarity of the land.</desc>
     <commander id="344" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8099" name="Prototype Cybot Beta" />
       <card id="6022" name="Illusion Caster" />
       <card id="1313" name="Lavafrog" />
       <card id="1011" name="Archive Keeper" />
@@ -22608,7 +22608,7 @@
     <desc>The railway shows sign of use, glistening metal unhidden by dust or rocky film. The path downward continues unobstructed by roadblocks, making it fairly easy to continue in a relatively straight line.</desc>
     <commander id="400" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8098" name="Prototype Cybot Alpha" />
       <card id="1015" name="Windfrog" />
       <card id="1618" name="Frog Scout" />
       <card id="1011" name="Archive Keeper" />
@@ -22639,7 +22639,7 @@
     <desc>As the two of you descend, mechanical creations shuffle out of the tunnels. One leads the approach, a mecha with lava oozing from his center like a furnace, shoulders ablaze with fire.</desc>
     <commander id="1" />
     <deck>
-      <card id="5006" name="Arms Enforcer" />
+      <card id="8099" name="Prototype Cybot Beta" />
       <card id="1313" name="Lavafrog" />
       <card id="6022" name="Illusion Caster" />
       <card id="1011" name="Archive Keeper" />
@@ -22667,5 +22667,621 @@
         <text>Wait, what?</text>
       </line>
     </speech>
+  </mission>
+  <mission>
+    <id>5719</id>
+    <name>Scyer of Fire</name>
+    <energy>9</energy>
+    <desc>The mecha clank towards you at the burning Mecha's signal. It seems that they are unhappy to have uninvited visitors...</desc>
+    <commander id="1" />
+    <deck>
+      <card id="8098" name="Prototype Cybot Alpha" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="5020" name="Frost Frog" />
+      <card id="5020" name="Frost Frog" />
+      <card id="7098" name="Survivalist" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="6004" name="Branding Construct" />
+      <card id="7053" mastery_level="2" name="Bee Eater" />
+      <card id="5025" mastery_level="3" name="Steelskin Dragon" />
+      <card id="2012" mastery_level="4" name="Frogling Swarm" />
+      <card id="6153" mastery_level="5" name="Ribbit Roaster" />
+      <card id="6013" mastery_level="6" name="Rust Goliath" />
+      <card id="6080" mastery_level="7" name="Titanirous" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>1</enemy>
+        <text>The name's Scyer, prepare to expire, burn up in fire!</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>This is wonderful. Just our luck. Let's just beat them up and be on our way.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5720</id>
+    <name>Not Among the Living</name>
+    <energy>9</energy>
+    <desc>The mechanical creatures fight unlike anything else you've previously fought. They swing without regards to the damage they might receive in return, something about their mindless gaze and frantic attacks reminding you of the Undead...</desc>
+    <commander id="391" />
+    <deck>
+      <card id="8099" name="Prototype Cybot Beta" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1313" name="Lavafrog" />
+      <card id="1015" name="Windfrog" />
+      <card id="2011" name="Poliworg" />
+      <card id="2034" name="Leap Frog Duo" />
+      <card id="2014" name="Tadpole Warmage" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="7155" mastery_level="2" name="Seashell Footpad" />
+      <card id="1333" mastery_level="3" name="Steelcat Mechanist" />
+      <card id="6102" mastery_level="4" name="Ribbithold Guards" />
+      <card id="1333" mastery_level="5" name="Steelcat Mechanist" />
+      <card id="2071" mastery_level="6" name="Sproutfrog Rainwisher" />
+      <card id="5150" mastery_level="7" name="Deepspear Warfarer" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5721</id>
+    <name>Mecha Reinforcements</name>
+    <energy>9</energy>
+    <desc>Even as you add more of the mecha creatures to the scrap pile, more continue to emerge from the tunnels. Their reinforcements seem endless.</desc>
+    <commander id="1" />
+    <deck>
+      <card id="8098" name="Prototype Cybot Alpha" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1015" name="Windfrog" />
+      <card id="1015" name="Windfrog" />
+      <card id="7099" name="Toadplay" />
+      <card id="5050" name="Cloud Spear" />
+      <card id="2069" name="Webfoot Surfer" />
+      <card id="6004" name="Branding Construct" />
+      <card id="6004" name="Branding Construct" />
+      <card id="7016" mastery_level="2" name="Webfist Shaman" />
+      <card id="5025" mastery_level="3" name="Steelskin Dragon" />
+      <card id="5155" mastery_level="4" name="Silvertongue Fencer" />
+      <card id="1333" mastery_level="5" name="Steelcat Mechanist" />
+      <card id="7103" mastery_level="6" name="Wavomancer" />
+      <card id="6088" mastery_level="7" name="Doxum's Construct" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>There's too many of them. Look, do you see that minecart? Let's run for it!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5722</id>
+    <name>Minecart Escape</name>
+    <energy>9</energy>
+    <desc>Shoving off one mecha who was content to use the minecart as a bed, you hop into the escape vehicle. Aria pushes the cart to gain a little momentum, before joining you inside of it.</desc>
+    <commander id="353" />
+    <deck>
+      <card id="8099" name="Prototype Cybot Beta" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1313" name="Lavafrog" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="7098" name="Survivalist" />
+      <card id="5050" name="Cloud Spear" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="6004" name="Branding Construct" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="6050" mastery_level="2" name="Wortwog" />
+      <card id="5025" mastery_level="3" name="Steelskin Dragon" />
+      <card id="5053" mastery_level="4" name="Anura Witch" />
+      <card id="5025" mastery_level="5" name="Steelskin Dragon" />
+      <card id="1044" mastery_level="6" name="Blackhawk Cavalier" />
+      <card id="5131" mastery_level="7" name="Steelscale, Sky's Domain" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5723</id>
+    <name>Mecha Mayhem</name>
+    <energy>9</energy>
+    <desc>The angry mecha latches onto the cart, trying with all his might to grind your progress to a halt! With one last whack, you send the burning mecha tumbling to the ground.</desc>
+    <commander id="1" />
+    <deck>
+      <card id="8098" name="Prototype Cybot Alpha" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="6020" name="Croak Piercer" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="6004" name="Branding Construct" />
+      <card id="6004" name="Branding Construct" />
+      <card id="7099" mastery_level="2" name="Toadplay" />
+      <card id="5025" mastery_level="3" name="Steelskin Dragon" />
+      <card id="5099" mastery_level="4" name="Croak Dropper" />
+      <card id="1333" mastery_level="5" name="Steelcat Mechanist" />
+      <card id="7120" mastery_level="6" name="Liliane's Blessing" />
+      <card id="5142" mastery_level="7" name="Buzzblade" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>1</enemy>
+        <text>Undignified beep! That was just cheap! Now if only I could leap...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5724</id>
+    <name>Quick Getaway</name>
+    <energy>9</energy>
+    <desc>The cart picks up more momentum as it descends into the mine's depths. Faster and faster the wheels spin, careening dangerously as it threatens to tip over!</desc>
+    <commander id="369" />
+    <deck>
+      <card id="8099" name="Prototype Cybot Beta" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1313" name="Lavafrog" />
+      <card id="1015" name="Windfrog" />
+      <card id="6102" name="Ribbithold Guards" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="7020" mastery_level="2" name="Trapper Frog" />
+      <card id="5025" mastery_level="3" name="Steelskin Dragon" />
+      <card id="5050" mastery_level="4" name="Cloud Spear" />
+      <card id="2107" mastery_level="5" name="Battleborn Toad" />
+      <card id="5103" mastery_level="6" name="Mother of Solars" />
+      <card id="5137" mastery_level="7" name="Forgesoul Construct" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>That was close. But now we face a different problem.</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>How do we stop this thing?!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5725</id>
+    <name>Too Quick Getaway</name>
+    <energy>9</energy>
+    <desc>The cart hits a bump, catapulting you and Aria dangerously through the air! By some miracle the ground you land on has been sifted vigorously, the sand absorbing most of the impact, albeit leaving you with a few scratches.</desc>
+    <commander id="391" />
+    <deck>
+      <card id="8098" name="Prototype Cybot Alpha" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1618" name="Frog Scout" />
+      <card id="1313" name="Lavafrog" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="6020" name="Croak Piercer" />
+      <card id="5020" name="Frost Frog" />
+      <card id="6004" name="Branding Construct" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="2011" mastery_level="2" name="Poliworg" />
+      <card id="5025" mastery_level="3" name="Steelskin Dragon" />
+      <card id="7155" mastery_level="4" name="Seashell Footpad" />
+      <card id="2107" mastery_level="5" name="Battleborn Toad" />
+      <card id="7097" mastery_level="6" name="Caustic Toadbog" />
+      <card id="6095" mastery_level="7" name="Gearplate Dragon" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5726</id>
+    <name>Steel Company</name>
+    <energy>9</energy>
+    <desc>As you pick yourself up, you feel the presence of others nearby. Metallic footsteps echo eerily throughout the strip mine. They are getting closer, eyes on you and Aria...</desc>
+    <commander id="353" />
+    <deck>
+      <card id="8099" name="Prototype Cybot Beta" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1618" name="Frog Scout" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="5099" name="Croak Dropper" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="2011" name="Poliworg" />
+      <card id="6004" name="Branding Construct" />
+      <card id="6004" name="Branding Construct" />
+      <card id="6050" mastery_level="2" name="Wortwog" />
+      <card id="1333" mastery_level="3" name="Steelcat Mechanist" />
+      <card id="5146" mastery_level="4" name="Lullmage Whisperer" />
+      <card id="6153" mastery_level="5" name="Ribbit Roaster" />
+      <card id="6048" mastery_level="6" name="Bulwraag" />
+      <card id="5142" mastery_level="7" name="Buzzblade" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Don't fall asleep on me now, adventurer. It looks like we have company...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5727</id>
+    <name>Mine Dwellers</name>
+    <energy>9</energy>
+    <desc>The shell of a gigantic mecha lays in ruins. Its head is nowhere to be found, vegetation snaking up along its immobile limbs. Mechas, not unlike the ones that ones that attacked you, approach you and Aria... </desc>
+    <commander id="401" />
+    <deck>
+      <card id="8098" name="Prototype Cybot Alpha" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="5155" name="Silvertongue Fencer" />
+      <card id="7099" name="Toadplay" />
+      <card id="2034" name="Leap Frog Duo" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="7098" mastery_level="2" name="Survivalist" />
+      <card id="1333" mastery_level="3" name="Steelcat Mechanist" />
+      <card id="5146" mastery_level="4" name="Lullmage Whisperer" />
+      <card id="6153" mastery_level="5" name="Ribbit Roaster" />
+      <card id="6101" mastery_level="6" name="Chasm Dowager" />
+      <card id="5150" mastery_level="7" name="Deepspear Warfarer" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>1</enemy>
+        <text>*Beep*, surface dwellers have arrived as guests.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5728</id>
+    <name>Loss of Protocol</name>
+    <energy>9</energy>
+    <desc>You stop Aria from offering a snippy reply, and instead attempt to talk to the mechas. Unlike the ones at the mine's entrance, these ones seem more peaceful. You explain your plight with Scyer.</desc>
+    <commander id="391" />
+    <deck>
+      <card id="8099" name="Prototype Cybot Beta" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1313" name="Lavafrog" />
+      <card id="6004" name="Branding Construct" />
+      <card id="5050" name="Cloud Spear" />
+      <card id="5053" name="Anura Witch" />
+      <card id="2014" name="Tadpole Warmage" />
+      <card id="6004" name="Branding Construct" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="6051" mastery_level="2" name="Treeblade Thief" />
+      <card id="1333" mastery_level="3" name="Steelcat Mechanist" />
+      <card id="7155" mastery_level="4" name="Seashell Footpad" />
+      <card id="6153" mastery_level="5" name="Ribbit Roaster" />
+      <card id="5101" mastery_level="6" name="Sycophant" />
+      <card id="5156" mastery_level="7" name="Tiltyard Ribbot" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elyse</commander>
+        <enemy>1</enemy>
+        <text>Warden Scyer's primary protocol has altered upon the loss of his thermometer.</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>1</enemy>
+        <text>Without the thermometer to regulate his temperature, he frequently overheats upon encountering any unknown variable.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5729</id>
+    <name>Singular Intent</name>
+    <energy>9</energy>
+    <desc>Before you can protest, Aria shoves you to the side and questions the Mechas intently. Even with the unexpected company, her goal remains the same... to find out who is aiding the goblins in their quest for war.</desc>
+    <commander id="401" />
+    <deck>
+      <card id="8098" name="Prototype Cybot Alpha" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1015" name="Windfrog" />
+      <card id="6004" name="Branding Construct" />
+      <card id="5102" name="Tribe Tracker" />
+      <card id="7020" name="Trapper Frog" />
+      <card id="5102" name="Tribe Tracker" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="5155" mastery_level="2" name="Silvertongue Fencer" />
+      <card id="1333" mastery_level="3" name="Steelcat Mechanist" />
+      <card id="6051" mastery_level="4" name="Treeblade Thief" />
+      <card id="2107" mastery_level="5" name="Battleborn Toad" />
+      <card id="7050" mastery_level="6" name="Krieg, Northern Sword" />
+      <card id="5042" mastery_level="7" name="Tinkerer" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>You're the ones responsible for providing resources to the goblins, aren't you.</text>
+      </line>
+      <line>
+        <commander>elyse</commander>
+        <enemy>1</enemy>
+        <text>*Bleep, blip?*</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Don't try that innocent act on me, scrap metal. Your boss just nearly killed us.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5730</id>
+    <name>Hesitant Mechas</name>
+    <energy>9</energy>
+    <desc>The mechas back away from Aria. It seems despite the violent encounter with the other mechas, these ones prefer a more peaceful resolution - but certainly aren't opposed to fighting back!</desc>
+    <commander id="391" />
+    <deck>
+      <card id="8099" name="Prototype Cybot Beta" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1313" name="Lavafrog" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="2034" name="Leap Frog Duo" />
+      <card id="7099" name="Toadplay" />
+      <card id="2012" name="Frogling Swarm" />
+      <card id="6004" name="Branding Construct" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="6102" mastery_level="2" name="Ribbithold Guards" />
+      <card id="1333" mastery_level="3" name="Steelcat Mechanist" />
+      <card id="5053" mastery_level="4" name="Anura Witch" />
+      <card id="2107" mastery_level="5" name="Battleborn Toad" />
+      <card id="7042" mastery_level="6" name="Scurvy Hopper" />
+      <card id="6095" mastery_level="7" name="Gearplate Dragon" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5731</id>
+    <name>Mecha Madness</name>
+    <energy>9</energy>
+    <desc>Aria's attempt to negotiate only spurs the mechas into fighting! With their drill hands, they launch themselves at you and attack!</desc>
+    <commander id="391" />
+    <deck>
+      <card id="8098" name="Prototype Cybot Alpha" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1015" name="Windfrog" />
+      <card id="6004" name="Branding Construct" />
+      <card id="7098" name="Survivalist" />
+      <card id="2014" name="Tadpole Warmage" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="6004" name="Branding Construct" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="7016" mastery_level="2" name="Webfist Shaman" />
+      <card id="1333" mastery_level="3" name="Steelcat Mechanist" />
+      <card id="2012" mastery_level="4" name="Frogling Swarm" />
+      <card id="2107" mastery_level="5" name="Battleborn Toad" />
+      <card id="5100" mastery_level="6" name="Lifegiver Augur" />
+      <card id="6088" mastery_level="7" name="Doxum's Construct" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>1</enemy>
+        <text>Error. Communication breakdown.</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>No, you piles of rust. I keep telling you-</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>1</enemy>
+        <text>Initiating sequence: self-preservation.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5732</id>
+    <name>Soothing Words</name>
+    <energy>9</energy>
+    <desc>Shoving Aria out of the way again, you attempt to talk with the mechas once more. Their drill hands stop whirling, eyes transitioning from a dangerous red to a peaceful blue.</desc>
+    <commander id="401" />
+    <deck>
+      <card id="8099" name="Prototype Cybot Beta" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="5099" name="Croak Dropper" />
+      <card id="2069" name="Webfoot Surfer" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="6004" name="Branding Construct" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="2014" mastery_level="2" name="Tadpole Warmage" />
+      <card id="5025" mastery_level="3" name="Steelskin Dragon" />
+      <card id="7155" mastery_level="4" name="Seashell Footpad" />
+      <card id="2107" mastery_level="5" name="Battleborn Toad" />
+      <card id="5159" mastery_level="6" name="Vortex Palm" />
+      <card id="2106" mastery_level="7" name="Pharite Snapjaw" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5733</id>
+    <name>The Plight of Mecha Miners</name>
+    <energy>9</energy>
+    <desc>At last, the mechas calm down enough to continue their earlier talk. You express your interest in returning Scyer back to his previous state, and request more information about his thermometer.</desc>
+    <commander id="391" />
+    <deck>
+      <card id="8098" name="Prototype Cybot Alpha" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="5022" name="Webfoot Raider" />
+      <card id="6004" name="Branding Construct" />
+      <card id="6020" name="Croak Piercer" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="6004" name="Branding Construct" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="2011" mastery_level="2" name="Poliworg" />
+      <card id="5025" mastery_level="3" name="Steelskin Dragon" />
+      <card id="7053" mastery_level="4" name="Bee Eater" />
+      <card id="2107" mastery_level="5" name="Battleborn Toad" />
+      <card id="5054" mastery_level="6" name="Reckless Ballista" />
+      <card id="5142" mastery_level="7" name="Buzzblade" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>1</enemy>
+        <text>Yes, Warden Scyer's thermometer. It fell to the deepest part of the mine.</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>1</enemy>
+        <text>We do not go down there. Never.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5734</id>
+    <name>Hidden Dangers</name>
+    <energy>9</energy>
+    <desc>Aria keeps her distance from the mechas, but can't help but interrupt. She is certain the solution cannot be so simple...</desc>
+    <commander id="353" />
+    <deck>
+      <card id="8099" name="Prototype Cybot Beta" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1015" name="Windfrog" />
+      <card id="6004" name="Branding Construct" />
+      <card id="6050" name="Wortwog" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="1028" name="Heroic Frog" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="5053" mastery_level="2" name="Anura Witch" />
+      <card id="5025" mastery_level="3" name="Steelskin Dragon" />
+      <card id="6020" mastery_level="4" name="Croak Piercer" />
+      <card id="2107" mastery_level="5" name="Battleborn Toad" />
+      <card id="6152" mastery_level="6" name="Bladesear Infuser" />
+      <card id="6095" mastery_level="7" name="Gearplate Dragon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>And is there a reason for that? A reason that we should know?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5735</id>
+    <name>Truth of the Mine</name>
+    <energy>9</energy>
+    <desc>The mecha miner explains why the thermometer has been missing so long. The mecha points down to a deeper region of the mine, one that is cloaked in darkness...</desc>
+    <commander id="353" />
+    <deck>
+      <card id="8098" name="Prototype Cybot Alpha" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="5102" name="Tribe Tracker" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="2012" mastery_level="2" name="Frogling Swarm" />
+      <card id="5025" mastery_level="3" name="Steelskin Dragon" />
+      <card id="2034" mastery_level="4" name="Leap Frog Duo" />
+      <card id="2107" mastery_level="5" name="Battleborn Toad" />
+      <card id="6052" mastery_level="6" name="Fuming Beast" />
+      <card id="6093" mastery_level="7" name="Noz Onehand" />
+    </deck>
+    <speech>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>1</enemy>
+        <text>*Beep* A terrible creature lives down there. Those who venture down there beep loudly, of a monster that melts metal.</text>
+      </line>
+      <line>
+        <commander>templeguardian</commander>
+        <enemy>1</enemy>
+        <text>No one has ever returned.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5736</id>
+    <name>A Robot's Dreams</name>
+    <energy>9</energy>
+    <desc>The Mecha Miner watches you with a light in its eyes that could only be described as hopeful. They seem content to wait for however long it takes...</desc>
+    <commander id="344" />
+    <deck>
+      <card id="8099" name="Prototype Cybot Beta" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1015" name="Windfrog" />
+      <card id="6004" name="Branding Construct" />
+      <card id="5099" name="Croak Dropper" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="6004" name="Branding Construct" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="7099" mastery_level="2" name="Toadplay" />
+      <card id="1333" mastery_level="3" name="Steelcat Mechanist" />
+      <card id="1028" mastery_level="4" name="Heroic Frog" />
+      <card id="2107" mastery_level="5" name="Battleborn Toad" />
+      <card id="7050" mastery_level="6" name="Krieg, Northern Sword" />
+      <card id="6088" mastery_level="7" name="Doxum's Construct" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5737</id>
+    <name>Lovable Scrap Heaps</name>
+    <energy>9</energy>
+    <desc>Aria shrugs, seeming to relent. She looks to you to make the final decision on the matter, while the mecha continue to wait patiently.</desc>
+    <commander id="344" />
+    <deck>
+      <card id="8098" name="Prototype Cybot Alpha" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="6004" name="Branding Construct" />
+      <card id="5050" name="Cloud Spear" />
+      <card id="1328" name="Poison Bullfrog" />
+      <card id="7098" name="Survivalist" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="2014" mastery_level="2" name="Tadpole Warmage" />
+      <card id="1333" mastery_level="3" name="Steelcat Mechanist" />
+      <card id="7155" mastery_level="4" name="Seashell Footpad" />
+      <card id="2107" mastery_level="5" name="Battleborn Toad" />
+      <card id="7018" mastery_level="6" name="Frog Emperor" />
+      <card id="5150" mastery_level="7" name="Deepspear Warfarer" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Well, if you want to help them, I guess I'll come with you. It would be better for these scrap heaps to like us than want to war with all people everywhere.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5738</id>
+    <name>A Warning Sign</name>
+    <energy>9</energy>
+    <desc>You descend into the depths of the mine. Aria lights a torch, chasing back the shadows that grow only fiercer and larger the farther you descend. A low moan echoes eerily throughout the mine, the source somewhere ahead of you...</desc>
+    <commander id="346" />
+    <deck>
+      <card id="8099" name="Prototype Cybot Beta" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="1313" name="Lavafrog" />
+      <card id="6004" name="Branding Construct" />
+      <card id="6020" name="Croak Piercer" />
+      <card id="1627" name="Sage of Croaks" />
+      <card id="7099" name="Toadplay" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="6051" mastery_level="2" name="Treeblade Thief" />
+      <card id="1333" mastery_level="3" name="Steelcat Mechanist" />
+      <card id="6004" mastery_level="4" name="Branding Construct" />
+      <card id="2107" mastery_level="5" name="Battleborn Toad" />
+      <card id="6000" mastery_level="6" name="Furnace Mech" />
+      <card id="5131" mastery_level="7" name="Steelscale, Sky's Domain" />
+    </deck>
   </mission>
 </root>

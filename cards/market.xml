@@ -2231,6 +2231,43 @@
     </item_pack>
     <random_rune number="1" min_rarity="2" max_rarity="4" set="1" />
   </store_item>
+  <store_item>
+    <id>3068</id>
+    <name>Legendary Frog Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives one random ^cE7FFLegendary^cFFFF Frog card!</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="4" max_rarity="4" type="4" set="3000,4000" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3069</id>
+    <name>x10 Frog Epic Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives ten ^c0DFFEpic^cFFFF+ Frog cards from Premium set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="4" set="3000,4000" />
+    </cards>
+  </store_item>
   <!-- ======================================= -->
   <!-- ==== Emporium & Arena Market Items ==== -->
   <!-- ======================================= -->
@@ -4173,5 +4210,23 @@
     <cards>
       <card min_level="1" max_level="1" unit_id="7120" display_card_id="7120" />
     </cards>
+  </store_item>
+  <store_item>
+    <id>5086</id>
+    <name>x10 Frog Mega Bundle!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>510</priority>
+    <show_desc>1</show_desc>
+    <desc>Gives ^cF00FTEN ^cFFFFrandom ^c0DFFEpic^cFFFF+ Frog cards from Premium set! May be purchased 3 times!</desc>
+    <asset_prefab>event_010_chest_w2</asset_prefab>
+    <background_prefab>event_010_banner_w2</background_prefab>
+    <bundle>51</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>400</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3069</pack>
   </store_item>
 </root>

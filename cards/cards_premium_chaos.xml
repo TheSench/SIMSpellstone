@@ -19273,4 +19273,124 @@
       <skill id="enrage" x="4" y="4" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6154</id>
+    <card_type>2</card_type>
+    <name>Egg Thief</name>
+    <picture>Frog_Egg_Stealer_A</picture>
+    <asset_bundle>106</asset_bundle>
+    <hidden_until_time>1507222800</hidden_until_time>
+    <attack>5</attack>
+    <health>15</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="nullify" x="1" />
+    <skill id="leech" x="2" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="1" />
+      <skill id="nullify" x="1" />
+      <skill id="leech" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>6</attack>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>18</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16154</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Brazen Egg Thief</name>
+    <picture>Frog_Egg_Stealer_A</picture>
+    <asset_bundle>106</asset_bundle>
+    <hidden_until_time>1507222800</hidden_until_time>
+    <attack>6</attack>
+    <health>18</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="nullify" x="1" />
+    <skill id="leech" x="4" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>7</attack>
+      <skill id="evade" x="1" />
+      <skill id="nullify" x="2" />
+      <skill id="leech" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="1" />
+      <skill id="nullify" x="2" />
+      <skill id="leech" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>20</health>
+      <attack>8</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26154</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Clever Egg Thief</name>
+    <picture>Frog_Egg_Stealer_B</picture>
+    <asset_bundle>106</asset_bundle>
+    <hidden_until_time>1507222800</hidden_until_time>
+    <attack>8</attack>
+    <health>21</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="evade" x="1" />
+    <skill id="nullify" x="2" />
+    <skill id="leech" x="5" />
+    <type>2</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="evade" x="1" />
+      <skill id="nullify" x="2" />
+      <skill id="leech" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>9</attack>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="2" />
+      <skill id="nullify" x="2" />
+      <skill id="leech" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="2" />
+      <skill id="nullify" x="3" />
+      <skill id="leech" x="7" />
+    </upgrade>
+  </unit>
 </root>

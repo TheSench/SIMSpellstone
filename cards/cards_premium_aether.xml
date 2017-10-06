@@ -19709,6 +19709,133 @@
     </upgrade>
   </unit>
   <unit>
+    <id>5157</id>
+    <card_type>2</card_type>
+    <name>Spellbind Magus</name>
+    <picture>Bookworm_Frog_A</picture>
+    <asset_bundle>106</asset_bundle>
+    <hidden_until_time>1507222800</hidden_until_time>
+    <attack>3</attack>
+    <health>11</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="2" />
+    <skill id="frost" x="1" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counter" x="3" />
+      <skill id="frost" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counter" x="3" />
+      <skill id="frost" x="1" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+    <desc>A good book can help make any problem disappear.</desc>
+  </unit>
+  <unit>
+    <id>15157</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Spellcast Magus</name>
+    <picture>Bookworm_Frog_A</picture>
+    <asset_bundle>106</asset_bundle>
+    <hidden_until_time>1507222800</hidden_until_time>
+    <attack>4</attack>
+    <health>14</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="3" />
+    <skill id="frost" x="1" />
+    <skill id="nullify" x="1" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="counter" x="4" />
+      <skill id="frost" x="1" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="4" />
+      <skill id="frost" x="1" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>16</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25157</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Spellweaver Magus</name>
+    <picture>Bookworm_Frog_B</picture>
+    <asset_bundle>106</asset_bundle>
+    <hidden_until_time>1507222800</hidden_until_time>
+    <attack>5</attack>
+    <health>16</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="5" />
+    <skill id="frost" x="1" />
+    <skill id="nullify" x="2" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="6" />
+      <skill id="frost" x="1" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counter" x="6" />
+      <skill id="frost" x="2" />
+      <skill id="nullify" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>5159</id>
     <card_type>2</card_type>
     <name>Vortex Palm</name>
@@ -19832,6 +19959,147 @@
       <skill id="protect" x="3" all="1" y="4" />
       <skill id="frost" x="3" />
       <skill id="flurry" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5160</id>
+    <card_type>2</card_type>
+    <name>Tetsudo's Shield</name>
+    <picture>Tower_Shield_Frog_A</picture>
+    <asset_bundle>106</asset_bundle>
+    <hidden_until_time>1507568400</hidden_until_time>
+    <attack>7</attack>
+    <health>37</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="2" />
+    <skill id="counter" x="3" />
+    <skill id="weaken" x="2" all="1" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>38</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>39</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>8</attack>
+      <skill id="armored" x="3" />
+      <skill id="counter" x="3" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="3" />
+      <skill id="counter" x="4" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>40</health>
+      <skill id="armored" x="3" />
+      <skill id="counter" x="4" />
+      <skill id="weaken" x="3" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15160</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Tetsudo's Blockade</name>
+    <picture>Tower_Shield_Frog_A</picture>
+    <asset_bundle>106</asset_bundle>
+    <hidden_until_time>1507568400</hidden_until_time>
+    <attack>8</attack>
+    <health>41</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="3" />
+    <skill id="counter" x="4" />
+    <skill id="weaken" x="3" all="1" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>9</attack>
+      <health>42</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="4" />
+      <skill id="counter" x="4" />
+      <skill id="weaken" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>43</health>
+      <skill id="armored" x="4" />
+      <skill id="counter" x="5" />
+      <skill id="weaken" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>44</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>10</attack>
+      <skill id="armored" x="4" />
+      <skill id="counter" x="5" />
+      <skill id="weaken" x="4" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25160</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Tetsudo's Aegis</name>
+    <picture>Tower_Shield_Frog_B</picture>
+    <asset_bundle>106</asset_bundle>
+    <hidden_until_time>1507568400</hidden_until_time>
+    <attack>10</attack>
+    <health>44</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="5" />
+    <skill id="counter" x="5" />
+    <skill id="weaken" x="4" all="1" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>45</health>
+      <skill id="armored" x="5" />
+      <skill id="counter" x="6" />
+      <skill id="weaken" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>46</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>11</attack>
+      <health>47</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="6" />
+      <skill id="counter" x="6" />
+      <skill id="weaken" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="6" />
+      <skill id="counter" x="7" />
+      <skill id="weaken" x="5" all="1" />
     </upgrade>
   </unit>
 </root>

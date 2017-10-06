@@ -2636,7 +2636,7 @@ var SIMULATOR = {};
             iceshatter(target);
         }
 
-        if (damage > 0) {
+        if (damage > 0 && current_assault.isAlive()) {
             // Leech
             // - Must have dealt damage
             // - Cannot leech more than damage dealt
@@ -2644,7 +2644,7 @@ var SIMULATOR = {};
             // - Leecher must not be already dead
             // - Leecher must not be at full health
             // - Increases attack too during Invigorate battleground effect
-            if (current_assault.leech && current_assault.isAlive() && current_assault.isDamaged()) {
+            if (current_assault.leech && current_assault.isDamaged()) {
 
                 var leech_health = current_assault.leech;
                 var enhanced = getEnhancement(current_assault, 'leech');
@@ -2723,7 +2723,7 @@ var SIMULATOR = {};
 
             // Berserk
             // - Must have done some damage to an assault unit
-            if (current_assault.berserk && current_assault.isAlive()) {
+            if (current_assault.berserk) {
 
                 var berserk = current_assault.berserk;
                 var enhanced = getEnhancement(current_assault, 'berserk');
@@ -2736,6 +2736,20 @@ var SIMULATOR = {};
 
                 current_assault.attack_berserk += berserk;
                 if (debug) echo += debug_name(current_assault) + ' activates berserk and gains ' + berserk + ' attack<br>';
+            }
+
+            if (current_assault.reinforce) {
+                var reinforce = current_assault.reinforce;
+                var enhanced = getEnhancement(current_assault, 'reinforce');
+                if (enhanced) {
+                    if (enhanced < 0) {
+                        enhanced = Math.ceil(reinforce * -enhanced);
+                    }
+                    reinforce += enhanced;
+                }
+
+                current_assault.protected += reinforce;
+                if (debug) echo += debug_name(current_assault) + ' reinforces itself with barrier ' + reinforce + '<br>';
             }
         }
 

@@ -93,6 +93,7 @@ void Main()
 		{"nullify", "passive"},
 		{"pierce", "passive"},
 		{"poison", "passive"},
+		{"reinforce", "passive"},
 		{"valor", "passive"},
 		{"venom", "passive"},
 		// Flurry

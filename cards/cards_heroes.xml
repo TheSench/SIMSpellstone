@@ -9047,4 +9047,55 @@
       <skill id="enfeeble" x="3" all="1" />
     </upgrade>
   </unit>
+  <!-- Campaign Event 6 -->
+  <unit>
+    <id>401</id>
+    <card_type>1</card_type>
+    <name>Mining Cydroid</name>
+    <portrait>necromancer</portrait>
+    <asset_bundle></asset_bundle>
+    <attack>0</attack>
+    <health>68</health>
+    <rarity>4</rarity>
+    <skill id="imbue" x="1" all="1" s="burn" />
+    <skill id="heal" x="6" />
+    <skill id="protect" x="1" all="1" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>69</health>
+      <skill id="imbue" x="1" all="1" s="burn" />
+      <skill id="heal" x="7" />
+      <skill id="protect" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>70</health>
+      <skill id="imbue" x="1" all="1" s="burn" />
+      <skill id="heal" x="7" />
+      <skill id="protect" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>72</health>
+      <skill id="imbue" x="1" all="1" s="burn" />
+      <skill id="heal" x="8" />
+      <skill id="protect" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>73</health>
+      <skill id="imbue" x="1" all="1" s="burn" />
+      <skill id="heal" x="9" />
+      <skill id="protect" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>75</health>
+      <skill id="imbue" x="2" all="1" s="burn" />
+      <skill id="heal" x="10" />
+      <skill id="protect" x="3" all="1" />
+    </upgrade>
+  </unit>
 </root>

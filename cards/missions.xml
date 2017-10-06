@@ -6134,6 +6134,18 @@
     <arena_x>250</arena_x>
     <arena_y>150</arena_y>
   </location>
+  <!-- <location>
+		<id>12</id>
+		<name>Fireshard Mine</name>
+		<mapBG>Map_StripMine</mapBG>
+		<asset_bundle>101</asset_bundle>
+		<combatBG>CombatBGVoid</combatBG>
+		<preview name="Map_Banner_StripMine" bundle="101" />
+		<unlock_time>1508432400</unlock_time> Thu, 19 October 2017 17:00:00
+		<req>24</req>
+		<arena_x>250</arena_x>
+		<arena_y>150</arena_y>
+	</location> -->
   <location>
     <id>100</id>
     <name>Salt Wastes</name>
