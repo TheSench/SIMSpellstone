@@ -19836,6 +19836,123 @@
     </upgrade>
   </unit>
   <unit>
+    <id>5158</id>
+    <card_type>2</card_type>
+    <name>Chilltide Stormtender</name>
+    <picture>Frog_Frost_Phoenix_A</picture>
+    <asset_bundle>106</asset_bundle>
+    <hidden_until_time>1507827600</hidden_until_time>
+    <attack>4</attack>
+    <health>15</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="protect" x="1" all="1" />
+    <skill id="frost" x="1" />
+    <skill id="weaken" x="1" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="protect" x="1" all="1" />
+      <skill id="frost" x="1" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>18</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15158</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Frostide Stormtender</name>
+    <picture>Frog_Frost_Phoenix_A</picture>
+    <asset_bundle>106</asset_bundle>
+    <hidden_until_time>1507827600</hidden_until_time>
+    <attack>5</attack>
+    <health>19</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="protect" x="1" all="1" />
+    <skill id="frost" x="1" />
+    <skill id="weaken" x="2" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="protect" x="1" all="1" />
+      <skill id="frost" x="2" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="protect" x="1" all="1" />
+      <skill id="frost" x="2" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>20</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>21</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25158</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Wintertide Stormtender</name>
+    <picture>Frog_Frost_Phoenix_B</picture>
+    <asset_bundle>106</asset_bundle>
+    <hidden_until_time>1507827600</hidden_until_time>
+    <attack>5</attack>
+    <health>22</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="protect" x="1" all="1" />
+    <skill id="frost" x="2" />
+    <skill id="weaken" x="4" />
+    <type>1</type>
+    <sub_type>4</sub_type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="protect" x="1" all="1" />
+      <skill id="frost" x="3" />
+      <skill id="weaken" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="protect" x="2" all="1" />
+      <skill id="frost" x="3" />
+      <skill id="weaken" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>5159</id>
     <card_type>2</card_type>
     <name>Vortex Palm</name>

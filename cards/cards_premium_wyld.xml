@@ -19672,6 +19672,138 @@
     </upgrade>
   </unit>
   <unit>
+    <id>7158</id>
+    <card_type>2</card_type>
+    <name>Toadfly</name>
+    <picture>Winged_Insect_Frog_A</picture>
+    <asset_bundle>106</asset_bundle>
+    <hidden_until_time>1507827600</hidden_until_time>
+    <attack>4</attack>
+    <health>16</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="2" y="13" />
+    <skill id="fervor" x="2" y="4" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="rally" x="3" y="13" />
+      <skill id="fervor" x="2" y="4" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>20</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17158</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Marsh Toadfly</name>
+    <picture>Winged_Insect_Frog_A</picture>
+    <asset_bundle>106</asset_bundle>
+    <hidden_until_time>1507827600</hidden_until_time>
+    <attack>5</attack>
+    <health>20</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="3" y="13" />
+    <skill id="fervor" x="2" y="4" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="rally" x="3" y="13" />
+      <skill id="fervor" x="2" y="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>22</health>
+      <skill id="rally" x="3" y="13" />
+      <skill id="fervor" x="3" y="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="rally" x="4" y="13" />
+      <skill id="fervor" x="3" y="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27158</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Bog Toadfly</name>
+    <picture>Winged_Insect_Frog_B</picture>
+    <asset_bundle>106</asset_bundle>
+    <hidden_until_time>1507827600</hidden_until_time>
+    <attack>5</attack>
+    <health>24</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="rally" x="4" y="13" />
+    <skill id="fervor" x="3" y="4" />
+    <skill id="berserk" x="2" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <sub_type>13</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="rally" x="5" y="13" />
+      <skill id="fervor" x="3" y="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="rally" x="5" y="13" />
+      <skill id="fervor" x="4" y="4" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>7159</id>
     <card_type>2</card_type>
     <name>Lucky Frog</name>
@@ -19800,6 +19932,138 @@
       <skill id="evade" x="4" />
       <skill id="protect" x="4" all="1" />
       <skill id="jam" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7160</id>
+    <card_type>2</card_type>
+    <name>Perilous Stonesteps</name>
+    <picture>Elemental_Frog_Rocks_A</picture>
+    <asset_bundle>106</asset_bundle>
+    <hidden_until_time>1507827600</hidden_until_time>
+    <attack>7</attack>
+    <health>26</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="3" />
+    <skill id="corrosive" x="2" />
+    <skill id="berserk" x="3" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <sub_type>5</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>28</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>29</health>
+      <skill id="armored" x="4" />
+      <skill id="corrosive" x="2" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="4" />
+      <skill id="corrosive" x="3" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17160</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Treacherous Stonesteps</name>
+    <picture>Elemental_Frog_Rocks_A</picture>
+    <asset_bundle>106</asset_bundle>
+    <hidden_until_time>1507827600</hidden_until_time>
+    <attack>8</attack>
+    <health>29</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="4" />
+    <skill id="corrosive" x="3" />
+    <skill id="berserk" x="4" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <sub_type>5</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>30</health>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>32</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>33</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="5" />
+      <skill id="corrosive" x="4" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27160</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Fatal Stonesteps</name>
+    <picture>Elemental_Frog_Rocks_B</picture>
+    <asset_bundle>106</asset_bundle>
+    <hidden_until_time>1507827600</hidden_until_time>
+    <attack>9</attack>
+    <health>33</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="5" />
+    <skill id="corrosive" x="4" />
+    <skill id="berserk" x="5" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <sub_type>5</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>34</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>35</health>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>36</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="6" />
+      <skill id="corrosive" x="4" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="6" />
+      <skill id="corrosive" x="5" />
+      <skill id="berserk" x="6" />
     </upgrade>
   </unit>
 </root>

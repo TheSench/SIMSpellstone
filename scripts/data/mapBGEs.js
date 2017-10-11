@@ -1807,5 +1807,276 @@ var MAP_BATTLEGROUNDS = {
               ]
           }
         ]
+    },
+    "3007": {
+        "id": "3007",
+        "name": "Power Gemstones",
+        "desc": "Fragments of powerful gemstones have been discovered in the mine. Restore their energy using Fireshards!",
+        "location_id": "12",
+        "effects": [
+          {
+              "id": "20",
+              "name": "Aether Gemstone",
+              "upgrades": [
+                {
+                    "desc": "",
+                    "effect": [
+
+                    ]
+                },
+                {
+                    "desc": "All of your creatures are protected by Barrier 1 each turn.",
+                    "name": "Aether Gemstone",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "protect",
+                          "x": 1,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures are protected by Barrier 2 each turn.",
+                    "name": "Aether Gemstone",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "protect",
+                          "x": 2,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures are protected by Barrier 3 each turn.",
+                    "name": "Aether Gemstone",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "protect",
+                          "x": 3,
+                          "all": "3",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures are protected by Barrier 4 each turn.",
+                    "name": "Aether Gemstone",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "protect",
+                          "x": 4,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures are protected by Barrier 5 each turn.",
+                    "name": "Aether Gemstone",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "protect",
+                          "x": 5,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                }
+              ]
+          },
+          {
+              "id": "21",
+              "name": "Wyld Gemstone",
+              "upgrades": [
+                {
+                    "desc": "",
+                    "effect": [
+
+                    ]
+                },
+                {
+                    "desc": "All of your creatures are Healed for 1 each turn.",
+                    "name": "Wyld Gemstone",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "heal",
+                          "x": 1,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures are Healed for 2 each turn.",
+                    "name": "Wyld Gemstone",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "heal",
+                          "x": 2,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures are Healed for 3 each turn.",
+                    "name": "Wyld Gemstone",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "heal",
+                          "x": 3,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures are Healed for 4 each turn.",
+                    "name": "Wyld Gemstone",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "heal",
+                          "x": 4,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures are Healed for 5 each turn.",
+                    "name": "Wyld Gemstone",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "heal",
+                          "x": 5,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures are Healed for 6 each turn.",
+                    "name": "Wyld Gemstone",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "heal",
+                          "x": 6,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                }
+              ]
+          },
+          {
+              "id": "22",
+              "name": "Chaos Gemstone",
+              "upgrades": [
+                {
+                    "desc": "",
+                    "effect": [
+
+                    ]
+                },
+                {
+                    "desc": "All of your creatures gain Scorch 1 each turn.",
+                    "name": "Chaos Gemstone",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "imbue",
+                          "s": "burn",
+                          "x": 1,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures gain Scorch 2 each turn.",
+                    "name": "Chaos Gemstone",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "imbue",
+                          "s": "burn",
+                          "x": 2,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures gain Scorch 3 each turn.",
+                    "name": "Chaos Gemstone",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "imbue",
+                          "s": "burn",
+                          "x": 3,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures gain Scorch 4 each turn.",
+                    "name": "Chaos Gemstone",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "imbue",
+                          "s": "burn",
+                          "x": 4,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures gain Scorch 6 each turn.",
+                    "name": "Chaos Gemstone",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "imbue",
+                          "s": "burn",
+                          "x": 6,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                },
+                {
+                    "desc": "All of your creatures gain Scorch 8 each turn.",
+                    "name": "Chaos Gemstone",
+                    "effect": [
+                      {
+                          "effect_type": "skill",
+                          "id": "imbue",
+                          "s": "burn",
+                          "x": 8,
+                          "all": "1",
+                          "ally_only": "1"
+                      }
+                    ]
+                }
+              ]
+          }
+        ]
     }
 };

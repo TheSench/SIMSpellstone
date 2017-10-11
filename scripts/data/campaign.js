@@ -59,6 +59,10 @@ var LOCATIONS = {
     "id": "111",
     "name": "Goblin Rise Stronghold",
   },
+  "12": {
+    "id": "12",
+    "name": "Fireshard Mine",
+  },
   "2": {
     "id": "2",
     "name": "Luminis",
