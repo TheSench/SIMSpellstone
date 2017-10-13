@@ -319,9 +319,12 @@ var setupPopups = function () {
         resizable: false,
         open: function () {
             jQuery('.ui-widget-overlay').bind('click', function () {
-                detailsDialog.dialog('close');
+            	detailsDialog.dialog('close');
             })
         },
+        close: function () {
+        	cardDetailScope.visible = false;
+        }
     });
 }
 
@@ -376,6 +379,7 @@ var showDetails = function (event) {
     var unit = getUnitFromCard(htmlCard);
 
     cardDetailScope.setUnit(unit).$apply();
+    cardDetailScope.visible = true;
 
     detailsDialog.dialog("option", "position", { my: "center", at: "center", of: window });
     detailsDialog.dialog("open");
