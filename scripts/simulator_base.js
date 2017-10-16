@@ -1274,9 +1274,8 @@ var SIMULATOR = {};
             var targets = [];
             for (var key = 0, len = field_p_assaults.length; key < len; key++) {
                 var target = field_p_assaults[key];
-                if (!target.isUnjammed()) continue;
                 if (!target.isInFaction(faction)) continue;
-                if (require_active_turn && !target.isActive()) continue;
+                if (require_active_turn && !(target.isActive() && target.isUnjammed())) continue;
                 if (target.hasSkill(s, 0) || target.hasSkill(s, 1)) {
                     targets.push(key);
                 }
