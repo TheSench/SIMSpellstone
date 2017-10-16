@@ -392,10 +392,6 @@
         .directive('cardDetails', function ()
         {
             return {
-                scope: {
-                    id: "@unitId",
-                    level: "@unitLevel",
-                },
                 restrict: 'A',
                 replace: true,
                 templateUrl: 'templates/card-template.html',

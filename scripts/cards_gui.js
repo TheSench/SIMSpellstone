@@ -635,10 +635,10 @@ var CARD_GUI = {};
 })();
 
 function createImg(src, className) {
-    var html = document.createElement("img");
-    html.setAttribute("src", src);
-    if (className) html.className = className;
-    return html;
+    var html = $("<img>");
+    html.attr("src", src);
+    if (className) html.addClass(className);
+    return html[0];
 }
 
 function createDiv(className, value) {
