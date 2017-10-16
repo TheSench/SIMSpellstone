@@ -353,18 +353,27 @@ function doDrawDeck() {
     } else */ {
         $deck = CARD_GUI.draw_deck(deck, inventoryMode);
     }
-    var $htmlCards = $deck.find(".card:not(.blank)")
-    addEventHandlers($htmlCards);
+    addDeckEventHandlers($deck);
     updateHash();
 };
 
-function addEventHandlers($htmlCards) {
-    $htmlCards
-        .mousedown(duplicate)
-        //.mouseup(duplicate)
-        .click(deckOnClick)
-        .contextmenu(showCardOptions)
-        .mouseover(highlight);
+function addDeckEventHandlers($deck) {
+	addCardEvent($deck, "mousedown", duplicate);
+	//addCardEvent($deck, "mouseup", duplicate);
+	addCardEvent($deck, "click", deckOnClick);
+	addCardEvent($deck, "contextmenu", showCardOptions);
+	addCardEvent($deck, "mouseover", highlight);
+}
+
+function addCardEvent($collection, eventName, callback) {
+	if (callback) {
+		$collection.on(eventName, function (event) {
+			var htmlCard = event.target.closest('.card');
+			if (htmlCard && !htmlCard.classList.contains('blank')) {
+				return callback(event, htmlCard);
+			}
+		});
+	}
 }
 
 function addDetailHandler($htmlCards) {
@@ -400,16 +409,15 @@ function duplicate(event) {
         var index = $this.index();
         var unit = deck.deck[index - 1];
         var clone = $this.clone();
-        addEventHandlers(clone);
         clone.insertBefore($this.parent().children()[index]);
         deck.deck.splice(index, 0, makeUnitInfo(unit.id, unit.level, unit.runes || []));
         updateHash();
     }
 }
 
-function deckOnClick(event) {
+function deckOnClick(event, htmlCard) {
     if (!event.ctrlKey) {
-        removeFromDeck(event);
+    	removeFromDeck(htmlCard);
     }
 }
 
@@ -673,7 +681,6 @@ var addToDeck = function (htmlCard) {
 
 var addUnitToDeck = function (unit, htmlCard) {
     var $htmlCard = $(htmlCard).clone().find(".multiplier").remove().end();
-    addEventHandlers($htmlCard);
 
     if (!inventoryMode) {
         unit = Object.assign({}, unit);
@@ -740,9 +747,9 @@ function removeFromInventory(unit) {
     return unit;
 }
 
-var removeFromDeck = function (event) {
+var removeFromDeck = function (htmlCard) {
     var unit;
-    var $htmlCard = $(event.delegateTarget)
+    var $htmlCard = $(htmlCard)//$(event.delegateTarget)
     var index = $htmlCard.index();
     /*if (inventoryMode) {
         var inventory = deck.deck;
@@ -790,8 +797,8 @@ var removeFromDeck = function (event) {
     updateHash();
 };
 
-var highlight = function (event) {
-    highlighted = $(event.delegateTarget).index();
+var highlight = function (event, htmlCard) {
+	highlighted = $(htmlCard/*event.delegateTarget*/).index();
     updateHighlights();
 }
 
@@ -1712,11 +1719,11 @@ var showAdvancedFilters = function (skill) {
     return false;
 }
 
-var showCardOptions = function (event) {
+var showCardOptions = function (event, htmlCard) {
     event.preventDefault();
 
     var show = false;
-    var htmlCard = event.delegateTarget;
+    //var htmlCard = event.delegateTarget;
     var index = $(htmlCard).index() - 1;
     if (index < 0) {
         var unit = deck.commander;
@@ -1869,7 +1876,6 @@ var setCard = function (index, unit) {
         deck.deck[index] = unit;
     }
     var htmlCard = CARD_GUI.create_card_html(get_card_by_id(unit), false, false);
-    addEventHandlers($(htmlCard));
     $deck.find(".card").eq(index + 1).replaceWith(htmlCard);
 }
 

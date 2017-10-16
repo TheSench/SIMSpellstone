@@ -53,13 +53,29 @@ var CARD_GUI = {};
 	}
 
 	function draw_card_list(list, compactSkills, onclick, onrightclick, skip, end) {
-		var cards = make_card_list(list, compactSkills, onclick, onrightclick, skip, end);
+		var cards = make_card_list(list, compactSkills, null, null, /*onclick, onrightclick,*/ skip, end);
 		var $cardSpace = $("#cardSpace");
 		$cardSpace.empty();
 		$cardSpace.append(cards);
+
+		addCardEvent($cardSpace, "click", onclick);
+		addCardEvent($cardSpace, "contextmenu", onrightclick);
+		addCardEvent($cardSpace, "mouseover", onmouseover);
+
 		return $cardSpace;
 	}
 
+	function addCardEvent($collection, eventName, callback) {
+		if (callback) {
+			$collection.on(eventName, function (event) {
+				var htmlCard = event.target.closest('.card');
+				if (htmlCard && !htmlCard.classList.contains('blank')) {
+					var i = htmlCard.attributes['data-i'].value;
+					return callback(htmlCard, i);
+				}
+			});
+		}
+	}
 	
 	function draw_inventory(list) {
 		var cards = make_card_list(list);
@@ -97,6 +113,7 @@ var CARD_GUI = {};
 					addMult(htmlCard, multiplier);
 					multiplier = 1;
 					htmlCard = create_card_html(unit, compactSkills, false, onclick, onrightclick, null, i);
+					htmlCard.setAttribute("data-i", i);
 					if (listEntry.index !== undefined) {
 						htmlCard.setAttribute("data-index", listEntry.index);
 					}
@@ -621,6 +638,7 @@ var CARD_GUI = {};
 	CARD_GUI.createItemHTML = createItemHTML;
 	CARD_GUI.addMult = addMult;
 	CARD_GUI.addWeight = addWeight;
+	CARD_GUI.addCardEvent = addCardEvent;
 
 	Object.defineProperties(CARD_GUI, {
 		assetsRoot: {
