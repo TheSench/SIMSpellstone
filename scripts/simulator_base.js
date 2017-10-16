@@ -1755,7 +1755,7 @@ var SIMULATOR = {};
                                 : chooseFirstCard);                         // If none of the other options are true, this is the standard PvE AI and it just picks the first card in hand
     }
 
-    // Simulate one game
+	// Simulate one game
     function simulate() {
         simulating = true;
 
@@ -1947,6 +1947,15 @@ var SIMULATOR = {};
         }
     }
 
+    function debugDraw(commander, deck, i) {
+    	var card = deck[i];
+    	if (card) {
+    		return commander + ' draws ' + debug_name(card, true) + '<br/>';
+    	} else {
+    		return '';
+    	}
+    }
+
     function setup_turn(turn, first_player, second_player, field) {
         simulation_turns = turn;
 
@@ -1960,7 +1969,17 @@ var SIMULATOR = {};
             var o = first_player;
         }
 
-        if (debug) echo += '<div id="turn_"' + turn + ' class="turn-info"><hr/><br/><u>Turn ' + turn + ' begins for ' + debug_name(field[p]['commander']) + '</u><br>';
+        if (debug) {
+        	var commander_p = debug_name(field[p]['commander']);
+        	var deck_p = deck[p].deck;
+        	echo += '<div id="turn_"' + turn + ' class="turn-info"><hr/><br/><u>Turn ' + turn + ' begins for ' + commander_p + '</u><br>';
+
+        	if (turn <= 2) {
+        		echo += debugDraw(commander_p, deck_p, 0);
+        		echo += debugDraw(commander_p, deck_p, 1);
+        	}
+        	echo += debugDraw(commander_p, deck_p, 2);
+        }
 
         var field_p = field[p];
         var field_o = field[o];

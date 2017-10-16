@@ -656,7 +656,7 @@ var makeUnit = (function () {
         },
 
         adjustedAttack: function () {
-            return (this.attack + this.attack_rally + this.attack_berserk + this.attack_valor - this.attack_weaken - this.attack_corroded);
+        	return (this.attack + this.attack_rally + this.attack_berserk + this.attack_fury + this.attack_valor - this.attack_weaken - this.attack_corroded);
         },
 
         permanentAttack: function () {
