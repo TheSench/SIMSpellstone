@@ -656,7 +656,7 @@ var makeUnit = (function () {
         },
 
         adjustedAttack: function () {
-        	return (this.attack + this.attack_rally + this.attack_berserk + this.attack_fury + this.attack_valor - this.attack_weaken - this.attack_corroded);
+        	return (this.attack + this.attack_rally + this.attack_berserk + this.attack_valor - this.attack_weaken - this.attack_corroded);
         },
 
         permanentAttack: function () {
@@ -2110,7 +2110,10 @@ function getPresetUnit(unitInfo, level, maxedAt) {
             cardID = fuseCard(cardID);
         }
     } else if (level > 1 && is_commander(cardID)) {
-        unitLevel = Math.min(level, parseInt(loadCard(cardID).rarity) + 2);
+    	var maxUpgrades = (Number(loadCard(cardID).rarity) + 1);
+    	var upgradesPerLevel = maxUpgrades / (maxedAt - 1);
+    	var levelsFromBase = level - 1;
+    	unitLevel = Math.ceil(upgradesPerLevel * levelsFromBase);
     }
 
     var unit = makeUnitInfo(cardID, unitLevel);

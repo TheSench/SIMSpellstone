@@ -117,12 +117,11 @@ var SIMULATOR = {};
            
         }
 
-        if (debug) {
-            logFn(source, target, damage);
-            if (target.isAlive() && target.enraged > 0 && damage > 0) {
-                target.attack_berserk += target.enraged;
-                echo += debug_name(target) + " is enraged and gains " + target.enraged + " attack!</br>";
-            }
+        if (debug) logFn(source, target, damage);
+        if (target.isAlive() && target.enraged > 0 && damage > 0) {
+            target.attack_berserk += target.enraged;
+
+            if (debug) echo += debug_name(target) + " is enraged and gains " + target.enraged + " attack!</br>";
         }
 
         if (shatter) {
