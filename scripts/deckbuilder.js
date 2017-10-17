@@ -76,6 +76,8 @@ var initDeckBuilder = function () {
 
     $("body").addClass("loading");
 
+    addDeckEventHandlers($("#deck"));
+
     $(window).resize(onResize);
 
     window.onwheel = changePage;
@@ -353,7 +355,6 @@ function doDrawDeck() {
     } else */ {
         $deck = CARD_GUI.draw_deck(deck, inventoryMode);
     }
-    addDeckEventHandlers($deck);
     updateHash();
 };
 
@@ -396,20 +397,20 @@ var showDetails = function (event) {
     detailsDialog.onloaded = setInventory;
 }
 
-function duplicate(event) {
+function duplicate(event, htmlCard) {
     if (event.ctrlKey) {
-        var $this = $(this);
+        var $htmlCard = $(htmlCard);
         if (!inventoryMode) {
-            var emptySpaces = $this.parent().find(".blank");
+            var emptySpaces = $htmlCard.parent().find(".blank");
             if (!emptySpaces.length) {
                 return;
             }
             emptySpaces.first().remove();
         }
-        var index = $this.index();
+        var index = $htmlCard.index();
         var unit = deck.deck[index - 1];
-        var clone = $this.clone();
-        clone.insertBefore($this.parent().children()[index]);
+        var clone = $htmlCard.clone();
+        clone.insertBefore($htmlCard.parent().children()[index]);
         deck.deck.splice(index, 0, makeUnitInfo(unit.id, unit.level, unit.runes || []));
         updateHash();
     }
