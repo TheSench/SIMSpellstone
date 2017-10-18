@@ -58,23 +58,7 @@ var CARD_GUI = {};
 		$cardSpace.empty();
 		$cardSpace.append(cards);
 
-		addCardEvent($cardSpace, "click", onclick);
-		addCardEvent($cardSpace, "contextmenu", onrightclick);
-		addCardEvent($cardSpace, "mouseover", onmouseover);
-
 		return $cardSpace;
-	}
-
-	function addCardEvent($collection, eventName, callback) {
-		if (callback) {
-			$collection.on(eventName, function (event) {
-				var htmlCard = event.target.closest('.card');
-				if (htmlCard && !htmlCard.classList.contains('blank')) {
-					var i = htmlCard.attributes['data-i'].value;
-					return callback(htmlCard, i);
-				}
-			});
-		}
 	}
 	
 	function draw_inventory(list) {
