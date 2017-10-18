@@ -546,16 +546,10 @@ var CARD_GUI = {};
 			var status = createStatus("protect", card.protected);
 			buffs.push(status);
 		}
-		/*
-		if (card.enhanced) {
-			for (var key in card.enhanced) {
-				if (key == 'counter' || key == 'armored' || key == 'evade') {
-					var status = createStatus(key, "+" + card.enhanced[key]);
-					buffs.push(status);
-				}
-			}
+		if (card.invisible) {
+			var status = createStatus("evade", card.invisible);
+			buffs.push(status);
 		}
-		*/
 
 		var statuses = [];
 		if (debuffs.length > 0) {

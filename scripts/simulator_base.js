@@ -2017,6 +2017,7 @@ var SIMULATOR = {};
 
 			current_assault.enfeebled = current_assault.envenomed;
 			current_assault.enraged = 0;
+			current_assault.invisible = 0;
 			current_assault.protected = 0;
 			current_assault.barrier_ice = 0;
 			current_assault.enhanced = 0;
