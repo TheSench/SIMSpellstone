@@ -2766,8 +2766,14 @@ var SIMULATOR = {};
 					reinforce += enhanced;
 				}
 
-				current_assault.protected += reinforce;
-				if (debug) echo += debug_name(current_assault) + ' reinforces itself with barrier ' + reinforce + '<br>';
+
+				if (current_assault.nullified) {
+					current_assault.nullified--;
+					if (debug) echo += debug_name(current_assault) + ' attempts to reinforce itself but it is nullified!<br>';
+				} else {
+					current_assault.protected += reinforce;
+					if (debug) echo += debug_name(current_assault) + ' reinforces itself with barrier ' + reinforce + '<br>';
+				}
 			}
 		}
 
