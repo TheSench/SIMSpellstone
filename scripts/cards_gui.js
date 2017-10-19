@@ -616,7 +616,6 @@ var CARD_GUI = {};
 	CARD_GUI.createItemHTML = createItemHTML;
 	CARD_GUI.addMult = addMult;
 	CARD_GUI.addWeight = addWeight;
-	CARD_GUI.addCardEvent = addCardEvent;
 
 	Object.defineProperties(CARD_GUI, {
 		assetsRoot: {
