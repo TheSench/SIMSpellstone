@@ -2681,6 +2681,20 @@ var SIMULATOR = {};
 				if (debug) echo += debug_name(current_assault) + ' siphons ' + leech_health + ' health<br>';
 			}
 
+			if (current_assault.reinforce) {
+				var reinforce = current_assault.reinforce;
+				var enhanced = getEnhancement(current_assault, 'reinforce');
+				if (enhanced) {
+					if (enhanced < 0) {
+						enhanced = Math.ceil(reinforce * -enhanced);
+					}
+					reinforce += enhanced;
+				}
+
+				current_assault.protected += reinforce;
+				if (debug) echo += debug_name(current_assault) + ' reinforces itself with barrier ' + reinforce + '<br>';
+			}
+
 			// Counter
 			// - Target must have received some amount of damage
 			// - Attacker must not be already dead
@@ -2754,26 +2768,6 @@ var SIMULATOR = {};
 
 				current_assault.attack_berserk += berserk;
 				if (debug) echo += debug_name(current_assault) + ' activates berserk and gains ' + berserk + ' attack<br>';
-			}
-
-			if (current_assault.reinforce) {
-				var reinforce = current_assault.reinforce;
-				var enhanced = getEnhancement(current_assault, 'reinforce');
-				if (enhanced) {
-					if (enhanced < 0) {
-						enhanced = Math.ceil(reinforce * -enhanced);
-					}
-					reinforce += enhanced;
-				}
-
-
-				if (current_assault.nullified) {
-					current_assault.nullified--;
-					if (debug) echo += debug_name(current_assault) + ' attempts to reinforce itself but it is nullified!<br>';
-				} else {
-					current_assault.protected += reinforce;
-					if (debug) echo += debug_name(current_assault) + ' reinforces itself with barrier ' + reinforce + '<br>';
-				}
 			}
 		}
 
