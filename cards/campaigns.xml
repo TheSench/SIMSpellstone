@@ -4975,7 +4975,7 @@
       <card level="1" id="510" />
       <card level="2" id="510" />
       <card level="3" id="510" />
-      <card level="4" id="2104" />
+      <card level="4" id="2109" />
       <card level="5" id="510" />
       <card level="6" id="510" />
       <card level="7" id="510" />
@@ -5010,10 +5010,10 @@
       <card level="1" id="511" />
       <card level="2" id="511" />
       <card level="3" id="511" />
-      <card level="4" id="2107" />
+      <card level="4" id="2110" />
       <card level="5" id="512" />
-      <card level="6" id="2011" />
-      <item level="7" id="3060" />
+      <card level="6" id="512" />
+      <item level="7" id="3063" />
     </rewards>
     <find_item id="3062" drop_per_energy=".2" />
   </campaign>
@@ -5046,12 +5046,40 @@
       <card level="1" id="511" />
       <card level="2" id="511" />
       <card level="3" id="511" />
-      <card level="4" id="2107" />
+      <card level="4" id="2002" />
       <card level="5" id="512" />
-      <card level="6" id="2011" />
-      <item level="7" id="3060" />
+      <card level="6" id="2111" />
+      <item level="7" id="3063" />
     </rewards>
-    <find_item id="3059" drop_per_energy=".4" />
+    <find_item id="3062" drop_per_energy=".4" />
+  </campaign>
+  <!-- Halloween Mecha -->
+  <campaign>
+    <id>1145</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>Trick or Treat</name>
+    <icon id="pumpkin" bundle="75" />
+    <!-- <locked_start_time>1509210000</locked_start_time>	 Sat, 28 Oct 2017 17:00:00 GMT -->
+    <location_id>12</location_id>
+    <x>550</x>
+    <y>295</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>5739</mission_id>
+      <mission_id>5740</mission_id>
+      <mission_id>5741</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="503" />
+      <card level="2" id="502" />
+      <card level="3" id="502" />
+      <card level="4" id="503" />
+      <card level="5" id="502" />
+      <card level="6" id="502" />
+      <card level="7" id="503" />
+    </rewards>
+    <find_item id="3062" drop_per_energy=".2" />
   </campaign>
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->

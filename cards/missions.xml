@@ -6140,7 +6140,7 @@
     <mapBG>Map_StripMine</mapBG>
     <asset_bundle>101</asset_bundle>
     <combatBG>CombatBGVoid</combatBG>
-    <preview name="Map_Banner_StripMine" bundle="101" />
+    <preview name="Map_Banner_StripMine" bundle="102" />
     <unlock_time>1508432400</unlock_time>
     <!-- Thu, 19 October 2017 17:00:00 -->
     <req>24</req>

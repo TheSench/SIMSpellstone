@@ -7238,5 +7238,37 @@
       <gold>800</gold>
     </reward>
   </achievement>
+  <!-- Halloween Mecha -->
+  <achievement>
+    <id>3293</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Trick or Treat</name>
+    <desc>Complete the 'Trick or Treat' campaign on Mastery Level 4.</desc>
+    <event_only>1</event_only>
+    <req>
+      <campaign>1145</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3294</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Trick or Treat</name>
+    <desc>Complete the 'Trick or Treat' campaign on Mastery Level 7.</desc>
+    <event_only>1</event_only>
+    <achievement_req>3293</achievement_req>
+    <req>
+      <campaign>1145</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
 </root>

@@ -9052,8 +9052,8 @@
     <id>401</id>
     <card_type>1</card_type>
     <name>Mining Cydroid</name>
-    <portrait>necromancer</portrait>
-    <asset_bundle></asset_bundle>
+    <portrait>Portraits_Miner_Droid</portrait>
+    <asset_bundle>109</asset_bundle>
     <attack>0</attack>
     <health>68</health>
     <rarity>4</rarity>
@@ -9096,6 +9096,54 @@
       <skill id="imbue" x="2" all="1" s="burn" />
       <skill id="heal" x="10" />
       <skill id="protect" x="3" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>402</id>
+    <card_type>1</card_type>
+    <name>Scyer of Fire</name>
+    <desc>The name is Scyer, the Warden of Fire, prepare to expire!</desc>
+    <portrait>Portrait_Chaos_Mecha_Hero</portrait>
+    <asset_bundle>109</asset_bundle>
+    <attack>0</attack>
+    <health>59</health>
+    <rarity>4</rarity>
+    <skill id="imbue" x="1" all="1" s="burn" />
+    <skill id="enhance" x="1" s="burn" />
+    <skill id="enrage" x="1" all="1" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>62</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>65</health>
+      <skill id="imbue" x="1" all="1" s="burn" />
+      <skill id="enhance" x="2" s="burn" />
+      <skill id="enrage" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>68</health>
+      <skill id="imbue" x="1" all="1" s="burn" />
+      <skill id="enhance" x="3" s="burn" />
+      <skill id="enrage" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>71</health>
+      <skill id="imbue" x="1" all="1" s="burn" />
+      <skill id="enhance" x="4" s="burn" />
+      <skill id="enrage" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>75</health>
+      <skill id="imbue" x="2" all="1" s="burn" />
+      <skill id="enhance" x="5" s="burn" />
+      <skill id="enrage" x="2" all="1" />
     </upgrade>
   </unit>
 </root>

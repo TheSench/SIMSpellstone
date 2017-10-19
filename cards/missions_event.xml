@@ -22545,7 +22545,7 @@
     <id>5715</id>
     <name>Fireshard Mine's History</name>
     <energy>9</energy>
-    <desc>After witnessing the strange automaton technology in Pharos Temple, you've heard more reports of similar technology in a place called Fireshard Mine. Along with Aria, the two of you have been sent to investigate a possible connection between the mecha and goblins.</desc>
+    <desc>After witnessing the strange automaton technology in Pharos Temple, you've heard more reports of similar technology in a place called Fireshard Mine. Along with Aria, the two of you have been sent to investigate a possible connection between the mechas and goblins.</desc>
     <commander id="354" />
     <deck>
       <card id="8098" name="Prototype Cybot Alpha" />
@@ -22637,7 +22637,7 @@
     <name>Heavy Metal</name>
     <energy>9</energy>
     <desc>As the two of you descend, mechanical creations shuffle out of the tunnels. One leads the approach, a mecha with lava oozing from his center like a furnace, shoulders ablaze with fire.</desc>
-    <commander id="1" />
+    <commander id="402" />
     <deck>
       <card id="8099" name="Prototype Cybot Beta" />
       <card id="1313" name="Lavafrog" />
@@ -22657,7 +22657,7 @@
     </deck>
     <speech>
       <line>
-        <commander>templeguardian</commander>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
         <enemy>1</enemy>
         <text>Intruders!! Dragging their feet all across our land, so I've come to offer reprimand, this is insult we shall not withstand!</text>
       </line>
@@ -22672,8 +22672,8 @@
     <id>5719</id>
     <name>Scyer of Fire</name>
     <energy>9</energy>
-    <desc>The mecha clank towards you at the burning Mecha's signal. It seems that they are unhappy to have uninvited visitors...</desc>
-    <commander id="1" />
+    <desc>The mechas clank towards you at the burning Mecha's signal. It seems that they are unhappy to have uninvited visitors...</desc>
+    <commander id="402" />
     <deck>
       <card id="8098" name="Prototype Cybot Alpha" />
       <card id="1011" name="Archive Keeper" />
@@ -22693,7 +22693,7 @@
     </deck>
     <speech>
       <line>
-        <commander>templeguardian</commander>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
         <enemy>1</enemy>
         <text>The name's Scyer, prepare to expire, burn up in fire!</text>
       </line>
@@ -22708,7 +22708,7 @@
     <id>5720</id>
     <name>Not Among the Living</name>
     <energy>9</energy>
-    <desc>The mechanical creatures fight unlike anything else you've previously fought. They swing without regards to the damage they might receive in return, something about their mindless gaze and frantic attacks reminding you of the Undead...</desc>
+    <desc>The mechanical creatures fight unlike anything else you've previously fought. They swing without regard to the damage they might receive in return, something about their mindless gaze and frantic attacks reminding you of the Undead...</desc>
     <commander id="391" />
     <deck>
       <card id="8099" name="Prototype Cybot Beta" />
@@ -22733,7 +22733,7 @@
     <name>Mecha Reinforcements</name>
     <energy>9</energy>
     <desc>Even as you add more of the mecha creatures to the scrap pile, more continue to emerge from the tunnels. Their reinforcements seem endless.</desc>
-    <commander id="1" />
+    <commander id="402" />
     <deck>
       <card id="8098" name="Prototype Cybot Alpha" />
       <card id="1011" name="Archive Keeper" />
@@ -22788,7 +22788,7 @@
     <name>Mecha Mayhem</name>
     <energy>9</energy>
     <desc>The angry mecha latches onto the cart, trying with all his might to grind your progress to a halt! With one last whack, you send the burning mecha tumbling to the ground.</desc>
-    <commander id="1" />
+    <commander id="402" />
     <deck>
       <card id="8098" name="Prototype Cybot Alpha" />
       <card id="1011" name="Archive Keeper" />
@@ -22808,7 +22808,7 @@
     </deck>
     <speech>
       <line>
-        <commander>templeguardian</commander>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
         <enemy>1</enemy>
         <text>Undignified beep! That was just cheap! Now if only I could leap...</text>
       </line>
@@ -22930,7 +22930,7 @@
     </deck>
     <speech>
       <line>
-        <commander>elyse</commander>
+        <commander>Portraits_Miner_Droid</commander>
         <enemy>1</enemy>
         <text>*Beep*, surface dwellers have arrived as guests.</text>
       </line>
@@ -22961,12 +22961,12 @@
     </deck>
     <speech>
       <line>
-        <commander>elyse</commander>
+        <commander>Portraits_Miner_Droid</commander>
         <enemy>1</enemy>
         <text>Warden Scyer's primary protocol has altered upon the loss of his thermometer.</text>
       </line>
       <line>
-        <commander>elyse</commander>
+        <commander>Portraits_Miner_Droid</commander>
         <enemy>1</enemy>
         <text>Without the thermometer to regulate his temperature, he frequently overheats upon encountering any unknown variable.</text>
       </line>
@@ -23002,7 +23002,7 @@
         <text>You're the ones responsible for providing resources to the goblins, aren't you.</text>
       </line>
       <line>
-        <commander>elyse</commander>
+        <commander>Portraits_Miner_Droid</commander>
         <enemy>1</enemy>
         <text>*Bleep, blip?*</text>
       </line>
@@ -23062,7 +23062,7 @@
     </deck>
     <speech>
       <line>
-        <commander>templeguardian</commander>
+        <commander>Portraits_Miner_Droid</commander>
         <enemy>1</enemy>
         <text>Error. Communication breakdown.</text>
       </line>
@@ -23072,7 +23072,7 @@
         <text>No, you piles of rust. I keep telling you-</text>
       </line>
       <line>
-        <commander>templeguardian</commander>
+        <commander>Portraits_Miner_Droid</commander>
         <enemy>1</enemy>
         <text>Initiating sequence: self-preservation.</text>
       </line>
@@ -23127,12 +23127,12 @@
     </deck>
     <speech>
       <line>
-        <commander>templeguardian</commander>
+        <commander>Portraits_Miner_Droid</commander>
         <enemy>1</enemy>
         <text>Yes, Warden Scyer's thermometer. It fell to the deepest part of the mine.</text>
       </line>
       <line>
-        <commander>templeguardian</commander>
+        <commander>Portraits_Miner_Droid</commander>
         <enemy>1</enemy>
         <text>We do not go down there. Never.</text>
       </line>
@@ -23194,12 +23194,12 @@
     </deck>
     <speech>
       <line>
-        <commander>templeguardian</commander>
+        <commander>Portraits_Miner_Droid</commander>
         <enemy>1</enemy>
         <text>*Beep* A terrible creature lives down there. Those who venture down there beep loudly, of a monster that melts metal.</text>
       </line>
       <line>
-        <commander>templeguardian</commander>
+        <commander>Portraits_Miner_Droid</commander>
         <enemy>1</enemy>
         <text>No one has ever returned.</text>
       </line>
@@ -23283,5 +23283,119 @@
       <card id="6000" mastery_level="6" name="Furnace Mech" />
       <card id="5131" mastery_level="7" name="Steelscale, Sky's Domain" />
     </deck>
+  </mission>
+  <!-- Halloween Event -->
+  <mission>
+    <id>5739</id>
+    <name>The Tale of Pumpking</name>
+    <energy>1</energy>
+    <desc>One mecha tells Warden Scyer about the tragic tale of Pumpking, a king who only wanted to spread goodwill by giving children candy. And also his curse...</desc>
+    <commander id="344" />
+    <deck>
+      <card id="1319" name="Wraith" />
+      <card id="1319" />
+      <card id="1319" />
+      <card id="1613" name="Acidic Spider" />
+      <card id="1613" />
+      <card id="1329" name="Shadow Assassin" />
+      <card id="1330" name="Devouring Locusts" />
+      <card id="1330" />
+      <card id="11331" name="Haunted Soldiers" />
+      <card id="1328" mastery_level="2" name="Poison Bullfrog" />
+      <card id="2024" mastery_level="3" name="Dusk Noble" />
+      <card id="1626" mastery_level="4" name="Tusker" />
+      <card id="1632" mastery_level="5" name="Shadow Rider" />
+      <card id="5082" mastery_level="6" name="Memory" />
+      <card id="6035" mastery_level="7" name="Demos" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>0</enemy>
+        <text>Yo trick or treat, gimme something fun to eat!</text>
+      </line>
+      <line>
+        <commander>Portraits_Miner_Droid</commander>
+        <enemy>1</enemy>
+        <text>*Beep, bop* Warden Scyer, cool your initiative. Do you not know the legend of Pumpking?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5740</id>
+    <name>Pumpking's Appearance</name>
+    <energy>1</energy>
+    <desc>Whoever says Pumpking's name is rumored to see the ghost of Pumpking. Scyer scoffs at the legend, daring to take Pumpking's name in vain...</desc>
+    <commander id="342" />
+    <deck>
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1311" />
+      <card id="1311" />
+      <card id="1311" />
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="6017" />
+      <card id="6017" />
+      <card id="1332" name="Vampiric Emira" />
+      <card id="1628" name="Garganotos" />
+      <card id="2015" mastery_level="2" name="Pumpking" />
+      <card id="2015" mastery_level="3" name="Pumpking" />
+      <card id="2015" mastery_level="4" name="Pumpking" />
+      <card id="2015" mastery_level="5" name="Pumpking" />
+      <card id="2015" mastery_level="6" name="Pumpking" />
+      <card id="2015" mastery_level="7" name="Pumpking" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>0</enemy>
+        <text>I say Pumpking, Pumpking, I sing! Whoever say his name thrice, they gonna pay the price-</text>
+      </line>
+      <line>
+        <commander>pumpkingPortrait</commander>
+        <enemy>1</enemy>
+        <text>.....</text>
+      </line>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>0</enemy>
+        <text>Pumpking?!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5741</id>
+    <name>More Treat Than Trick</name>
+    <energy>1</energy>
+    <desc>The strange apparition lays a hollowed pumpkin by Scyer's feet, filled with bright wrappers inside it. The ghost turns, fading into the night...</desc>
+    <commander id="342" />
+    <deck>
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1311" />
+      <card id="1311" />
+      <card id="1315" name="Nix Elemental" />
+      <card id="1315" />
+      <card id="1632" name="Shadow Rider" />
+      <card id="2032" name="Brimstone" />
+      <card id="2032" />
+      <card id="1628" name="Garganotos" />
+      <card id="1326" mastery_level="2" name="Titan of Fire" />
+      <card id="5035" mastery_level="3" name="Vapor Guard" />
+      <card id="5021" mastery_level="4" name="Tower Spirit" />
+      <card id="2062" mastery_level="5" name="Deadeye Apprentice" />
+      <card id="2015" mastery_level="6" name="Pumpking" />
+      <card id="2015" mastery_level="7" name="Pumpking" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>0</enemy>
+        <text>Yeow!</text>
+      </line>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>0</enemy>
+        <text>I thought I was in a bind, but candy was all he left behind!</text>
+      </line>
+    </speech>
   </mission>
 </root>

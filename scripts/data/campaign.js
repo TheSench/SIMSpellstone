@@ -958,6 +958,12 @@ var CAMPAIGNS = {
     "battleground_id": "2023",
     "missions": ["5727","5728","5729","5730","5731","5732","5733","5734","5735","5736","5737","5738"]
   },
+  "1145": {
+    "id": "1145",
+    "name": "Trick or Treat",
+    "location_id": "12",
+    "missions": ["5739","5740","5741"]
+  },
   "10": {
     "id": "10",
     "name": "The City of Luminis",
@@ -53378,7 +53384,7 @@ var MISSIONS = {
     "id": "5718",
     "name": "Heavy Metal",
     "commander": {
-        "id": "1"
+        "id": "402"
     },
     "deck": [
       {
@@ -53438,7 +53444,7 @@ var MISSIONS = {
     "id": "5719",
     "name": "Scyer of Fire",
     "commander": {
-        "id": "1"
+        "id": "402"
     },
     "deck": [
       {
@@ -53558,7 +53564,7 @@ var MISSIONS = {
     "id": "5721",
     "name": "Mecha Reinforcements",
     "commander": {
-        "id": "1"
+        "id": "402"
     },
     "deck": [
       {
@@ -53678,7 +53684,7 @@ var MISSIONS = {
     "id": "5723",
     "name": "Mecha Mayhem",
     "commander": {
-        "id": "1"
+        "id": "402"
     },
     "deck": [
       {
@@ -54630,6 +54636,186 @@ var MISSIONS = {
       },
       {
         "id": "5131",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5739": {
+    "id": "5739",
+    "name": "The Tale of Pumpking",
+    "commander": {
+        "id": "344"
+    },
+    "deck": [
+      {
+        "id": "1319"
+      },
+      {
+        "id": "1319"
+      },
+      {
+        "id": "1319"
+      },
+      {
+        "id": "1613"
+      },
+      {
+        "id": "1613"
+      },
+      {
+        "id": "1329"
+      },
+      {
+        "id": "1330"
+      },
+      {
+        "id": "1330"
+      },
+      {
+        "id": "11331"
+      },
+      {
+        "id": "1328",
+        "mastery_level": "2"
+      },
+      {
+        "id": "2024",
+        "mastery_level": "3"
+      },
+      {
+        "id": "1626",
+        "mastery_level": "4"
+      },
+      {
+        "id": "1632",
+        "mastery_level": "5"
+      },
+      {
+        "id": "5082",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6035",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5740": {
+    "id": "5740",
+    "name": "Pumpking's Appearance",
+    "commander": {
+        "id": "342"
+    },
+    "deck": [
+      {
+        "id": "1311"
+      },
+      {
+        "id": "1311"
+      },
+      {
+        "id": "1311"
+      },
+      {
+        "id": "1311"
+      },
+      {
+        "id": "6017"
+      },
+      {
+        "id": "6017"
+      },
+      {
+        "id": "6017"
+      },
+      {
+        "id": "1332"
+      },
+      {
+        "id": "1628"
+      },
+      {
+        "id": "2015",
+        "mastery_level": "2"
+      },
+      {
+        "id": "2015",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2015",
+        "mastery_level": "4"
+      },
+      {
+        "id": "2015",
+        "mastery_level": "5"
+      },
+      {
+        "id": "2015",
+        "mastery_level": "6"
+      },
+      {
+        "id": "2015",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5741": {
+    "id": "5741",
+    "name": "More Treat Than Trick",
+    "commander": {
+        "id": "342"
+    },
+    "deck": [
+      {
+        "id": "1311"
+      },
+      {
+        "id": "1311"
+      },
+      {
+        "id": "1311"
+      },
+      {
+        "id": "1315"
+      },
+      {
+        "id": "1315"
+      },
+      {
+        "id": "1632"
+      },
+      {
+        "id": "2032"
+      },
+      {
+        "id": "2032"
+      },
+      {
+        "id": "1628"
+      },
+      {
+        "id": "1326",
+        "mastery_level": "2"
+      },
+      {
+        "id": "5035",
+        "mastery_level": "3"
+      },
+      {
+        "id": "5021",
+        "mastery_level": "4"
+      },
+      {
+        "id": "2062",
+        "mastery_level": "5"
+      },
+      {
+        "id": "2015",
+        "mastery_level": "6"
+      },
+      {
+        "id": "2015",
         "mastery_level": "7"
       },
     ]

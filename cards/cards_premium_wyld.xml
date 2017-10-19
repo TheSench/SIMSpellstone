@@ -20066,4 +20066,120 @@
       <skill id="berserk" x="6" />
     </upgrade>
   </unit>
+  <unit>
+    <id>7161</id>
+    <card_type>2</card_type>
+    <name>Alphamecha</name>
+    <picture>Mecha_Wolf_A</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1508432400</hidden_until_time>
+    <attack>1</attack>
+    <health>10</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="enrage" x="1" y="16" />
+    <skill id="leech" x="2" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="enrage" x="1" y="16" />
+      <skill id="leech" x="3" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="enrage" x="2" y="16" />
+      <skill id="leech" x="3" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17161</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Alphamech Trapper </name>
+    <picture>Mecha_Wolf_A</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1508432400</hidden_until_time>
+    <attack>1</attack>
+    <health>13</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="enrage" x="2" y="16" />
+    <skill id="leech" x="4" />
+    <skill id="berserk" x="1" />
+    <type>3</type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="enrage" x="2" y="16" />
+      <skill id="leech" x="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="enrage" x="3" y="16" />
+      <skill id="leech" x="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27161</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Alphamech Stalker</name>
+    <picture>Mecha_Wolf_B</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1508432400</hidden_until_time>
+    <attack>1</attack>
+    <health>16</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="enrage" x="3" y="16" />
+    <skill id="leech" x="5" />
+    <skill id="berserk" x="2" />
+    <type>3</type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>2</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="enrage" x="4" y="16" />
+      <skill id="leech" x="5" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="enrage" x="4" y="16" />
+      <skill id="leech" x="6" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
 </root>

@@ -12102,4 +12102,614 @@
       <skill id="rally" x="6" all="1" y="4" />
     </upgrade>
   </unit>
+  <unit>
+    <id>2109</id>
+    <card_type>2</card_type>
+    <name>Scorchfist Avenger</name>
+    <picture>Fire_Warrior_Mecha_A</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1508432400</hidden_until_time>
+    <attack>4</attack>
+    <health>11</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="2" />
+    <skill id="enfeeble" x="1" />
+    <skill id="burn" x="1" />
+    <type>2</type>
+    <sub_type>16</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="counter" x="3" />
+      <skill id="enfeeble" x="1" />
+      <skill id="burn" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>5</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12109</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Burnfist Avenger</name>
+    <picture>Fire_Warrior_Mecha_A</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1508432400</hidden_until_time>
+    <attack>5</attack>
+    <health>13</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="4" />
+    <skill id="enfeeble" x="1" />
+    <skill id="burn" x="1" />
+    <type>2</type>
+    <sub_type>16</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="counter" x="4" />
+      <skill id="enfeeble" x="2" />
+      <skill id="burn" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="counter" x="4" />
+      <skill id="enfeeble" x="2" />
+      <skill id="burn" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="5" />
+      <skill id="enfeeble" x="2" />
+      <skill id="burn" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22109</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Moltenfist Avenger</name>
+    <picture>Fire_Warrior_Mecha_B</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1508432400</hidden_until_time>
+    <attack>5</attack>
+    <health>15</health>
+    <cost>1</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="5" />
+    <skill id="enfeeble" x="2" />
+    <skill id="burn" x="2" />
+    <type>2</type>
+    <sub_type>16</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counter" x="6" />
+      <skill id="enfeeble" x="2" />
+      <skill id="burn" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="6" />
+      <skill id="enfeeble" x="3" />
+      <skill id="burn" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2110</id>
+    <card_type>2</card_type>
+    <name>Weathered Widgit</name>
+    <picture>Avatar_Mecha_A</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1508432400</hidden_until_time>
+    <attack>5</attack>
+    <health>24</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="heal" x="1" all="1" />
+    <skill id="jam" c="6" />
+    <skill id="poison" x="3" />
+    <type>3</type>
+    <sub_type>16</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="heal" x="1" all="1" />
+      <skill id="jam" c="5" />
+      <skill id="poison" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>26</health>
+      <skill id="heal" x="1" all="1" />
+      <skill id="jam" c="5" />
+      <skill id="poison" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>6</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12110</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Weathered Druid</name>
+    <picture>Avatar_Mecha_A</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1508432400</hidden_until_time>
+    <attack>6</attack>
+    <health>27</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="heal" x="1" all="1" />
+    <skill id="jam" c="4" />
+    <skill id="poison" x="4" />
+    <type>3</type>
+    <sub_type>16</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>28</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="heal" x="2" all="1" />
+      <skill id="jam" c="4" />
+      <skill id="poison" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>7</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22110</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Weathered Archdruid</name>
+    <picture>Avatar_Mecha_B</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1508432400</hidden_until_time>
+    <attack>7</attack>
+    <health>30</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="heal" x="2" all="1" />
+    <skill id="jam" c="3" />
+    <skill id="poison" x="5" />
+    <type>3</type>
+    <sub_type>16</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="heal" x="2" all="1" />
+      <skill id="jam" c="3" />
+      <skill id="poison" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>31</health>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>32</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="heal" x="3" all="1" />
+      <skill id="jam" c="3" />
+      <skill id="poison" x="7" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2111</id>
+    <card_type>2</card_type>
+    <name>Drillbot</name>
+    <picture>Drill_Mecha_A</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1508432400</hidden_until_time>
+    <attack>5</attack>
+    <health>14</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="enrage" x="1" all="1" y="16" />
+    <skill id="pierce" x="2" />
+    <skill id="berserk" x="1" />
+    <type>2</type>
+    <sub_type>16</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="enrage" x="1" all="1" y="16" />
+      <skill id="pierce" x="3" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>6</attack>
+      <health>17</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12111</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Piercing Drillbot</name>
+    <picture>Drill_Mecha_A</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1508432400</hidden_until_time>
+    <attack>6</attack>
+    <health>18</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="enrage" x="1" all="1" y="16" />
+    <skill id="pierce" x="3" />
+    <skill id="berserk" x="1" />
+    <type>2</type>
+    <sub_type>16</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="enrage" x="1" all="1" y="16" />
+      <skill id="pierce" x="4" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>19</health>
+      <skill id="enrage" x="1" all="1" y="16" />
+      <skill id="pierce" x="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>20</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22111</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Spiral Drillbot</name>
+    <picture>Drill_Mecha_B</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1508432400</hidden_until_time>
+    <attack>7</attack>
+    <health>20</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="enrage" x="1" all="1" y="16" />
+    <skill id="pierce" x="5" />
+    <skill id="berserk" x="2" />
+    <type>2</type>
+    <sub_type>16</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>21</health>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="enrage" x="2" all="1" y="16" />
+      <skill id="pierce" x="5" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="enrage" x="2" all="1" y="16" />
+      <skill id="pierce" x="6" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2112</id>
+    <card_type>2</card_type>
+    <name>Warrior Karna</name>
+    <picture>Insect_Champion_Mecha_A</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1508432400</hidden_until_time>
+    <attack>5</attack>
+    <health>11</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="burn" x="1" />
+    <skill id="nullify" x="1" />
+    <type>2</type>
+    <sub_type>13</sub_type>
+    <sub_type>16</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>13</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="1" />
+      <skill id="burn" x="2" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>14</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12112</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Champion Karna</name>
+    <picture>Insect_Champion_Mecha_A</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1508432400</hidden_until_time>
+    <attack>6</attack>
+    <health>15</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="burn" x="2" />
+    <skill id="nullify" x="1" />
+    <type>2</type>
+    <sub_type>13</sub_type>
+    <sub_type>16</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="evade" x="2" />
+      <skill id="burn" x="2" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="2" />
+      <skill id="burn" x="2" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>16</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="2" />
+      <skill id="burn" x="3" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22112</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Vindicator Karna</name>
+    <picture>Insect_Champion_Mecha_B</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1508432400</hidden_until_time>
+    <attack>7</attack>
+    <health>17</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="burn" x="3" />
+    <skill id="nullify" x="2" />
+    <type>2</type>
+    <sub_type>13</sub_type>
+    <sub_type>16</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="3" />
+      <skill id="burn" x="3" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="3" />
+      <skill id="burn" x="4" />
+      <skill id="nullify" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>2113</id>
+    <card_type>2</card_type>
+    <name>Vali, the Thunderer</name>
+    <picture>Underwater_Temple_Guardian_A</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1508432400</hidden_until_time>
+    <attack>6</attack>
+    <health>16</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="1" />
+    <skill id="strike" x="1" all="1" />
+    <skill id="frost" x="1" />
+    <type>1</type>
+    <sub_type>16</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="2" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="frost" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>7</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>12113</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Vali, the Destroyer</name>
+    <picture>Underwater_Temple_Guardian_A</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1508432400</hidden_until_time>
+    <attack>7</attack>
+    <health>20</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="2" />
+    <skill id="strike" x="1" all="1" />
+    <skill id="frost" x="1" />
+    <type>1</type>
+    <sub_type>16</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="armored" x="3" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="frost" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="3" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="frost" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="4" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="frost" x="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>22113</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Vali, the Vanquisher</name>
+    <picture>Underwater_Temple_Guardian_B</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1508432400</hidden_until_time>
+    <attack>7</attack>
+    <health>23</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="4" />
+    <skill id="strike" x="2" all="1" />
+    <skill id="frost" x="1" />
+    <type>1</type>
+    <sub_type>16</sub_type>
+    <set>2000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="5" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="frost" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="5" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="frost" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="5" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="frost" x="2" />
+    </upgrade>
+  </unit>
 </root>
