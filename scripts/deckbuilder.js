@@ -362,6 +362,7 @@ function doDrawDeck() {
 function addDeckEventHandlers($deck) {
 	addCardEvent($deck, "mousedown", duplicate);
 	//addCardEvent($deck, "mouseup", duplicate);
+	addCardEvent($deck, "mouseover", highlight);
 	addCardEvent($deck, "click", deckOnClick);
 	addCardEvent($deck, "contextmenu", showCardOptions);
 }
@@ -799,7 +800,7 @@ var removeFromDeck = function (htmlCard) {
 };
 
 var highlight = function (event, htmlCard) {
-	highlighted = $(htmlCard/*event.delegateTarget*/).index();
+	highlighted = $(htmlCard).index();
 	updateHighlights();
 }
 
