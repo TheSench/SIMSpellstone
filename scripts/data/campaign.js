@@ -1130,6 +1130,14 @@ var CAMPAIGNS = {
     "location_id": "5",
     "missions": ["301","302","303","304"]
   },
+  "3010": {
+    "id": "3010",
+    "name": "Test Healmaster",
+    "location_id": "5",
+    "side_mission": "1",
+    "battleground_id": "2015",
+    "missions": ["5684","5685","5686","5687"]
+  },
   "31": {
     "id": "31",
     "name": "Tales from the Swamp",
