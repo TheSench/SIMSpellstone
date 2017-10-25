@@ -1798,6 +1798,190 @@
             ]
         }
     },
+    "24012": {
+    	"id": "24012",
+    	"type": "Raid",
+    	"name": "Gobatron Raid",
+    	"bge": "518",
+    	"upgradeLevels": "22",
+    	"commander": {
+    		"id": "393"
+    	},
+    	"deck": {
+    		"card": [
+			  {
+			  	"id": "8083"
+			  },
+			  {
+			  	"id": "6015",
+			  	"remove_mastery_level": "5"
+			  },
+			  {
+			  	"id": "8087",
+			  	"remove_mastery_level": "8"
+			  },
+			  {
+			  	"id": "1628",
+			  	"remove_mastery_level": "9"
+			  },
+			  {
+			  	"id": "1318",
+			  	"remove_mastery_level": "10"
+			  },
+			  {
+			  	"id": "8087",
+			  	"remove_mastery_level": "10"
+			  },
+			  {
+			  	"id": "8087",
+			  	"remove_mastery_level": "11"
+			  },
+			  {
+			  	"id": "8087",
+			  	"remove_mastery_level": "11"
+			  },
+			  {
+			  	"id": "8087",
+			  	"remove_mastery_level": "11"
+			  },
+			  {
+			  	"id": "6015",
+			  	"remove_mastery_level": "23"
+			  },
+			  {
+			  	"id": "1628",
+			  	"mastery_level": "3",
+			  	"remove_mastery_level": "10"
+			  },
+			  {
+			  	"id": "2062",
+			  	"mastery_level": "4",
+			  	"remove_mastery_level": "12"
+			  },
+			  {
+			  	"id": "7090",
+			  	"mastery_level": "5",
+			  	"remove_mastery_level": "13"
+			  },
+			  {
+			  	"id": "6072",
+			  	"mastery_level": "6",
+			  	"remove_mastery_level": "17"
+			  },
+			  {
+			  	"id": "6021",
+			  	"mastery_level": "7",
+			  	"remove_mastery_level": "19"
+			  },
+			  {
+			  	"id": "6090",
+			  	"mastery_level": "8",
+			  	"remove_mastery_level": "20"
+			  },
+			  {
+			  	"id": "6089",
+			  	"mastery_level": "9",
+			  	"remove_mastery_level": "21"
+			  },
+			  {
+			  	"id": "7090",
+			  	"mastery_level": "9",
+			  	"remove_mastery_level": "22"
+			  },
+			  {
+			  	"id": "8085",
+			  	"mastery_level": "10"
+			  },
+			  {
+			  	"id": "6072",
+			  	"mastery_level": "10",
+			  	"remove_mastery_level": "14"
+			  },
+			  {
+			  	"id": "6091",
+			  	"mastery_level": "10",
+			  	"remove_mastery_level": "15"
+			  },
+			  {
+			  	"id": "6049",
+			  	"mastery_level": "11",
+			  	"remove_mastery_level": "16"
+			  },
+			  {
+			  	"id": "8084",
+			  	"mastery_level": "11"
+			  },
+			  {
+			  	"id": "8083",
+			  	"mastery_level": "11"
+			  },
+			  {
+			  	"id": "6088",
+			  	"mastery_level": "12",
+			  	"remove_mastery_level": "18"
+			  },
+			  {
+			  	"id": "6049",
+			  	"mastery_level": "13",
+			  	"remove_mastery_level": "19"
+			  },
+			  {
+			  	"id": "6094",
+			  	"mastery_level": "14",
+			  	"remove_mastery_level": "24"
+			  },
+			  {
+			  	"id": "6088",
+			  	"mastery_level": "15",
+			  	"remove_mastery_level": "25"
+			  },
+			  {
+			  	"id": "8082",
+			  	"mastery_level": "16"
+			  },
+			  {
+			  	"id": "8084",
+			  	"mastery_level": "17"
+			  },
+			  {
+			  	"id": "8085",
+			  	"mastery_level": "18"
+			  },
+			  {
+			  	"id": "8086",
+			  	"mastery_level": "19"
+			  },
+			  {
+			  	"id": "8086",
+			  	"mastery_level": "19"
+			  },
+			  {
+			  	"id": "8083",
+			  	"mastery_level": "20"
+			  },
+			  {
+			  	"id": "8082",
+			  	"mastery_level": "21"
+			  },
+			  {
+			  	"id": "8084",
+			  	"mastery_level": "22"
+			  },
+			  {
+			  	"id": "8082",
+			  	"mastery_level": "23"
+			  },
+			  {
+			  	"id": "8086",
+			  	"mastery_level": "24"
+			  },
+			  {
+			  	"id": "8085",
+			  	"mastery_level": "25"
+			  }
+    		]
+    	}
+    },
 
     "28001": {
         "id": "28001",

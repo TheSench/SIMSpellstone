@@ -2451,7 +2451,7 @@
 		<id>4006</id>
 		<name>Cycling Reward Card</name>
 		<category>4</category>
-		<vip_level_req>1</vip_level_req>
+		<vip_level_req>0</vip_level_req>
 		<desc>Gives a single copy of the displayed Reward card. May be purchased multiple times, but the price increases each purchase!</desc>
 		<preview_desc>Unlocks a random Epic Reward card that can be purchased with shards and cycles every 24 hours! Requires VIP Level 1.</preview_desc>
 		<priority>10</priority>
@@ -2462,8 +2462,8 @@
 		<rarity3scaling purchase1='5' purchase2='10' purchase3='15' purchase4='20' scalar='150' />
 		<rarity4scaling purchase1='50' scalar='100' />
 		<cycle_cards>1</cycle_cards>
-		<cycle_length>86400</cycle_length> 		cycle length in seconds. Keep same per pack or may f*** everything
-		<start_offset>61200</start_offset> 		offset from UTC in seconds
+		<cycle_length>86400</cycle_length>
+		<start_offset>61200</start_offset>
 		<cards>
 			<card min_level='1' max_level='1' min_rarity='3' max_rarity='3' set='2000' number='4' />
 		</cards>

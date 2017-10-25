@@ -14309,8 +14309,8 @@
     <skill id="strike" x="1" />
     <skill id="flurry" c="7" />
     <type>2</type>
-    <sub_type>10</sub_type>
     <sub_type>5</sub_type>
+    <sub_type>10</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
@@ -14348,8 +14348,8 @@
     <skill id="strike" x="2" />
     <skill id="flurry" c="5" />
     <type>2</type>
-    <sub_type>10</sub_type>
     <sub_type>5</sub_type>
+    <sub_type>10</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
@@ -14386,8 +14386,8 @@
     <skill id="strike" x="3" />
     <skill id="flurry" c="4" />
     <type>2</type>
-    <sub_type>10</sub_type>
     <sub_type>5</sub_type>
+    <sub_type>10</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
