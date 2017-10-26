@@ -180,6 +180,12 @@
   <!-- Mythic -->
   <card_level>
     <rarity>5</rarity>
+    <level>0</level>
+    <shard_fragment_cost>5</shard_fragment_cost>
+    <shard_sp_cost>5</shard_sp_cost>
+  </card_level>
+  <card_level>
+    <rarity>5</rarity>
     <level>1</level>
     <salvage0>60</salvage0>
     <salvage1>560</salvage1>
@@ -188,6 +194,8 @@
     <buyback_cost0>120</buyback_cost0>
     <buyback_cost1>1120</buyback_cost1>
     <buyback_cost2>2200</buyback_cost2>
+    <shard_fragment_cost>5</shard_fragment_cost>
+    <shard_sp_cost>5</shard_sp_cost>
   </card_level>
   <card_level>
     <rarity>5</rarity>
@@ -196,6 +204,8 @@
     <salvage1>565</salvage1>
     <salvage2>1105</salvage2>
     <sp_cost>15</sp_cost>
+    <shard_fragment_cost>5</shard_fragment_cost>
+    <shard_sp_cost>5</shard_sp_cost>
   </card_level>
   <card_level>
     <rarity>5</rarity>
@@ -204,6 +214,8 @@
     <salvage1>570</salvage1>
     <salvage2>1110</salvage2>
     <sp_cost>30</sp_cost>
+    <shard_fragment_cost>5</shard_fragment_cost>
+    <shard_sp_cost>5</shard_sp_cost>
   </card_level>
   <card_level>
     <rarity>5</rarity>
@@ -212,6 +224,8 @@
     <salvage1>580</salvage1>
     <salvage2>1120</salvage2>
     <sp_cost>75</sp_cost>
+    <shard_fragment_cost>5</shard_fragment_cost>
+    <shard_sp_cost>5</shard_sp_cost>
   </card_level>
   <card_level>
     <rarity>5</rarity>
@@ -220,6 +234,8 @@
     <salvage1>590</salvage1>
     <salvage2>1130</salvage2>
     <sp_cost>150</sp_cost>
+    <shard_fragment_cost>5</shard_fragment_cost>
+    <shard_sp_cost>5</shard_sp_cost>
   </card_level>
   <card_level>
     <rarity>5</rarity>
@@ -228,6 +244,8 @@
     <salvage1>600</salvage1>
     <salvage2>1140</salvage2>
     <sp_cost>300</sp_cost>
+    <shard_fragment_cost>5</shard_fragment_cost>
+    <shard_sp_cost>5</shard_sp_cost>
   </card_level>
   <card_level>
     <rarity>5</rarity>
@@ -235,6 +253,26 @@
     <salvage0>300</salvage0>
     <salvage1>650</salvage1>
     <salvage2>1190</salvage2>
+    <shard_fragment_cost>5</shard_fragment_cost>
+    <shard_sp_cost>5</shard_sp_cost>
+  </card_level>
+  <card_level>
+    <rarity>5</rarity>
+    <level>8</level>
+    <shard_fragment_cost>5</shard_fragment_cost>
+    <shard_sp_cost>5</shard_sp_cost>
+  </card_level>
+  <card_level>
+    <rarity>5</rarity>
+    <level>9</level>
+    <shard_fragment_cost>5</shard_fragment_cost>
+    <shard_sp_cost>5</shard_sp_cost>
+  </card_level>
+  <card_level>
+    <rarity>5</rarity>
+    <level>10</level>
+    <shard_fragment_cost>5</shard_fragment_cost>
+    <shard_sp_cost>5</shard_sp_cost>
   </card_level>
   <!-- Player Levels -->
   <level>

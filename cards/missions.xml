@@ -5977,6 +5977,172 @@
     </speech>
   </mission>
   <!-- END Hero Upgrade Missions -->
+  <!-- Hero UNLOCK Legends -->
+  <mission>
+    <id>1548</id>
+    <name>Lost in Digital Darkness</name>
+    <energy>10</energy>
+    <desc>Scyer stumbles through Fireshard Mine, cooling steam coming from his shoulder pads. He stares mindlessly ahead, his vision receptors unable to recognize the world.</desc>
+    <commander id="401" />
+    <deck>
+      <card id="8098" name="Prototype Cybot Alpha" />
+      <card id="6004" name="Branding Construct" />
+      <card id="7161" name="Alphamecha" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="2110" name="Weathered Widgit" />
+      <card id="2111" name="Drillbot" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="2109" mastery_level="2" name="Scorchfist Avenger" />
+      <card id="2109" mastery_level="3" name="Scorchfist Avenger" />
+      <card id="5137" mastery_level="4" name="Forgesoul Construct" />
+      <card id="5150" mastery_level="5" name="Deepspear Warfarer" />
+      <card id="6157" mastery_level="6" name="Dawnblade Huntress" />
+      <card id="6157" mastery_level="7" name="Dawnblade Huntress" />
+    </deck>
+  </mission>
+  <mission>
+    <id>1549</id>
+    <name>Mystery Unlock</name>
+    <energy>10</energy>
+    <desc>Scyer fails to sense the obstacle on the ground, and he trips straight over it. Although he doesn't try to move right away, he eventually reaches out and finds the offending object. It's a chest...</desc>
+    <commander id="400" />
+    <deck>
+      <card id="8099" name="Prototype Cybot Beta" />
+      <card id="2107" name="Battleborn Toad" />
+      <card id="7161" name="Alphamecha" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="2110" name="Weathered Widgit" />
+      <card id="2111" name="Drillbot" />
+      <card id="2107" name="Battleborn Toad" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="6153" mastery_level="2" name="Ribbit Roaster" />
+      <card id="6153" mastery_level="3" name="Ribbit Roaster" />
+      <card id="5156" mastery_level="4" name="Tiltyard Ribbot" />
+      <card id="5156" mastery_level="5" name="Tiltyard Ribbot" />
+      <card id="6157" mastery_level="6" name="Dawnblade Huntress" />
+      <card id="6157" mastery_level="7" name="Dawnblade Huntress" />
+    </deck>
+  </mission>
+  <mission>
+    <id>1550</id>
+    <name>Cooler Heads Prevail</name>
+    <energy>10</energy>
+    <desc>His hands crush the heavy lock that was meant to protect the chest. Reaching inside, he finds some kind of mechanism. Just holding it causes a calm to befall him. His vision sensors come back to life, the world slowly coming to focus.</desc>
+    <commander id="391" />
+    <deck>
+      <card id="8098" name="Prototype Cybot Alpha" />
+      <card id="2107" name="Battleborn Toad" />
+      <card id="7161" name="Alphamecha" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="2110" name="Weathered Widgit" />
+      <card id="2111" name="Drillbot" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="5025" mastery_level="2" name="Steelskin Dragon" />
+      <card id="5025" mastery_level="3" name="Steelskin Dragon" />
+      <card id="5142" mastery_level="4" name="Buzzblade" />
+      <card id="5137" mastery_level="5" name="Forgesoul Construct" />
+      <card id="6000" mastery_level="6" name="Furnace Mech" />
+      <card id="2113" mastery_level="7" name="Vali, the Thunderer" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>0</enemy>
+        <text>A memory long forgotten, now in my mind... An item lost, I now find.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>1551</id>
+    <name>Forgotten Treachery</name>
+    <energy>10</energy>
+    <desc>Scyer recalls a memory about his meeting with an infamous goblin, Reks. When Reks failed to coerce Scyer and his mecha brethren to aid their cause, Reks stole and locked away an important piece that was imperative to Scyer's critical thinking protocol.</desc>
+    <commander id="369" />
+    <deck>
+      <card id="8099" name="Prototype Cybot Beta" />
+      <card id="6153" name="Ribbit Roaster" />
+      <card id="7161" name="Alphamecha" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="2110" name="Weathered Widgit" />
+      <card id="2111" name="Drillbot" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="1333" mastery_level="2" name="Steelcat Mechanist" />
+      <card id="1333" mastery_level="3" name="Steelcat Mechanist" />
+      <card id="6088" mastery_level="4" name="Doxum's Construct" />
+      <card id="6093" mastery_level="5" name="Noz Onehand" />
+      <card id="6157" mastery_level="6" name="Dawnblade Huntress" />
+      <card id="2113" mastery_level="7" name="Vali, the Thunderer" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>0</enemy>
+        <text>Rrrargh! I remember the goblin and his trick, to take my mind and make me sick!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>1552</id>
+    <name>To Make Amends</name>
+    <energy>10</energy>
+    <desc>Scyer realizes the opportunity that he's missed. He runs back to his camp, desperate to find you and Aria, in an attempt to make amends.</desc>
+    <commander id="401" />
+    <deck>
+      <card id="8098" name="Prototype Cybot Alpha" />
+      <card id="2107" name="Battleborn Toad" />
+      <card id="7161" name="Alphamecha" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="2110" name="Weathered Widgit" />
+      <card id="2111" name="Drillbot" />
+      <card id="6153" name="Ribbit Roaster" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="2110" mastery_level="2" name="Weathered Widgit" />
+      <card id="1333" mastery_level="3" name="Steelcat Mechanist" />
+      <card id="5131" mastery_level="4" name="Steelscale, Sky's Domain" />
+      <card id="5131" mastery_level="5" name="Steelscale, Sky's Domain" />
+      <card id="5042" mastery_level="6" name="Tinkerer" />
+      <card id="5042" mastery_level="7" name="Tinkerer" />
+    </deck>
+  </mission>
+  <mission>
+    <id>1553</id>
+    <name>Yesterday's Enemy</name>
+    <energy>10</energy>
+    <desc>Scyer manages to catch up to you, as your airship prepares to leave. He shouts loudly, waving you down.</desc>
+    <commander id="391" />
+    <deck>
+      <card id="8099" name="Prototype Cybot Beta" />
+      <card id="1333" name="Steelcat Mechanist" />
+      <card id="7161" name="Alphamecha" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="2110" name="Weathered Widgit" />
+      <card id="2111" name="Drillbot" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="5025" mastery_level="2" name="Steelskin Dragon" />
+      <card id="1333" mastery_level="3" name="Steelcat Mechanist" />
+      <card id="5150" mastery_level="4" name="Deepspear Warfarer" />
+      <card id="5137" mastery_level="5" name="Forgesoul Construct" />
+      <card id="5042" mastery_level="6" name="Tinkerer" />
+      <card id="5042" mastery_level="7" name="Tinkerer" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Chaos_Mecha_Hero</commander>
+        <enemy>0</enemy>
+        <text>I have to make this right. With you I shall fight!</text>
+      </line>
+    </speech>
+  </mission>
   <!-- Rival Mission Nodes START -->
   <!-- Starts at 2001 -->
   <rival>

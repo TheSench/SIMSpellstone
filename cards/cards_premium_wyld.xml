@@ -20182,4 +20182,285 @@
       <skill id="berserk" x="3" />
     </upgrade>
   </unit>
+  <unit>
+    <id>7162</id>
+    <card_type>2</card_type>
+    <name>Timberhead Diver</name>
+    <picture>Finned_Lizardman_Mecha_A</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1509037200</hidden_until_time>
+    <attack>5</attack>
+    <health>11</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="pierce" x="3" />
+    <skill id="poison" x="2" />
+    <skill id="leech" x="2" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="pierce" x="4" />
+      <skill id="poison" x="2" />
+      <skill id="leech" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>13</health>
+      <skill id="pierce" x="4" />
+      <skill id="poison" x="3" />
+      <skill id="leech" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="pierce" x="4" />
+      <skill id="poison" x="3" />
+      <skill id="leech" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>6</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17162</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Timberhead Angler</name>
+    <picture>Finned_Lizardman_Mecha_A</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1509037200</hidden_until_time>
+    <attack>6</attack>
+    <health>14</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="pierce" x="5" />
+    <skill id="poison" x="3" />
+    <skill id="leech" x="3" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="pierce" x="5" />
+      <skill id="poison" x="4" />
+      <skill id="leech" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="pierce" x="5" />
+      <skill id="poison" x="4" />
+      <skill id="leech" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>15</health>
+      <skill id="pierce" x="6" />
+      <skill id="poison" x="4" />
+      <skill id="leech" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>16</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27162</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Timberhead Fuscina</name>
+    <picture>Finned_Lizardman_Mecha_B</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1509037200</hidden_until_time>
+    <attack>7</attack>
+    <health>16</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="pierce" x="6" />
+    <skill id="poison" x="5" />
+    <skill id="leech" x="5" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="pierce" x="7" />
+      <skill id="poison" x="5" />
+      <skill id="leech" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>8</attack>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="pierce" x="7" />
+      <skill id="poison" x="6" />
+      <skill id="leech" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="pierce" x="8" />
+      <skill id="poison" x="6" />
+      <skill id="leech" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7165</id>
+    <card_type>2</card_type>
+    <name>Raging Irontusk</name>
+    <picture>Aztec_Mecha_Frog_War_Elephant_A</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1509382800</hidden_until_time>
+    <attack>8</attack>
+    <health>38</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="3" />
+    <skill id="enrage" x="2" all="1" />
+    <skill id="berserk" x="2" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <sub_type>16</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>39</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>40</health>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>41</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>42</health>
+      <skill id="corrosive" x="4" />
+      <skill id="enrage" x="2" all="1" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="corrosive" x="4" />
+      <skill id="enrage" x="3" all="1" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17165</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Thundering Irontusk</name>
+    <picture>Aztec_Mecha_Frog_War_Elephant_A</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1509382800</hidden_until_time>
+    <attack>9</attack>
+    <health>43</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="4" />
+    <skill id="enrage" x="3" all="1" />
+    <skill id="berserk" x="3" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <sub_type>16</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>44</health>
+      <skill id="corrosive" x="5" />
+      <skill id="enrage" x="3" all="1" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>45</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>46</health>
+      <skill id="corrosive" x="5" />
+      <skill id="enrage" x="4" all="1" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="corrosive" x="5" />
+      <skill id="enrage" x="4" all="1" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27165</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Wrathstomp Irontusk</name>
+    <picture>Aztec_Mecha_Frog_War_Elephant_B</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1509382800</hidden_until_time>
+    <attack>11</attack>
+    <health>47</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="5" />
+    <skill id="enrage" x="4" all="1" />
+    <skill id="berserk" x="4" />
+    <type>3</type>
+    <sub_type>4</sub_type>
+    <sub_type>16</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="corrosive" x="6" />
+      <skill id="enrage" x="4" all="1" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>48</health>
+      <attack>12</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>49</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>50</health>
+      <skill id="corrosive" x="7" />
+      <skill id="enrage" x="4" all="1" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="corrosive" x="7" />
+      <skill id="enrage" x="5" all="1" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+  </unit>
 </root>

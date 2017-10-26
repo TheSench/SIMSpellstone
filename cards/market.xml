@@ -2328,6 +2328,34 @@
       <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000,4000" />
     </cards>
   </store_item>
+  <store_item>
+    <id>3074</id>
+    <name>Quad Mecha Epic Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives a guaranteed ^c0DFFQuad Epic^cFFFF+ Mecha or higher card from Premium set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000,4000" fusion_level="2" />
+    </cards>
+  </store_item>
+  <store_item>
+    <id>3075</id>
+    <name>Dual Mecha Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two copies of one guaranteed ^c0DFFEpic^cFFFF+ Mecha card from Premium set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000,4000" number="2" />
+    </cards>
+  </store_item>
   <!-- ======================================= -->
   <!-- ==== Emporium & Arena Market Items ==== -->
   <!-- ======================================= -->
@@ -2459,8 +2487,8 @@
 		<scale_prices>1</scale_prices>
 		<cost_type>3</cost_type>	Items
 		<cost item='5' />
-		<rarity3scaling purchase1='5' purchase2='10' purchase3='15' purchase4='20' scalar='150' />
-		<rarity4scaling purchase1='50' scalar='100' />
+		<rarity3scaling purchase1='600' purchase2='750' purchase3='900' purchase4='1200' scalar='300' />
+		<rarity4scaling purchase1='10000' scalar='5000' />
 		<cycle_cards>1</cycle_cards>
 		<cycle_length>86400</cycle_length>
 		<start_offset>61200</start_offset>
@@ -4309,5 +4337,22 @@
     <sp>180</sp>
     <gold>1000</gold>
     <item id="1003" quantity="2" />
+  </store_item>
+  <store_item>
+    <id>5090</id>
+    <name>Quad Mecha Sale!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <show_desc>1</show_desc>
+    <desc>Gives a guaranteed ^c0DFFQuad Epic^cFFFF+ Mecha cards from Premium set. May be purchased 4 times!</desc>
+    <asset_prefab>event_030_quad_pack</asset_prefab>
+    <bundle>107</bundle>
+    <icon>icon_purple_crystal</icon>
+    <hc_cost>400</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3074</pack>
   </store_item>
 </root>

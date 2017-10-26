@@ -19667,7 +19667,7 @@
     <picture>Drone_Orb_A</picture>
     <asset_bundle>108</asset_bundle>
     <hidden_until_time>1509037200</hidden_until_time>
-    <attack>0</attack>
+    <attack>1</attack>
     <health>7</health>
     <cost>1</cost>
     <rarity>3</rarity>
@@ -19704,7 +19704,7 @@
     <picture>Drone_Orb_A</picture>
     <asset_bundle>108</asset_bundle>
     <hidden_until_time>1509037200</hidden_until_time>
-    <attack>0</attack>
+    <attack>1</attack>
     <health>10</health>
     <cost>1</cost>
     <rarity>3</rarity>
@@ -19742,7 +19742,7 @@
     <picture>Drone_Orb_B</picture>
     <asset_bundle>108</asset_bundle>
     <hidden_until_time>1509037200</hidden_until_time>
-    <attack>0</attack>
+    <attack>1</attack>
     <health>14</health>
     <cost>1</cost>
     <rarity>3</rarity>

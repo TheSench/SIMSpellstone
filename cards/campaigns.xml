@@ -5423,4 +5423,36 @@
 		</rewards>
 	</campaign>
 	  -->
+  <!-- Legend Heroes Unlock 
+
+	<campaign> 
+		<id>3011</id>
+		<name>Tinman's Change of Heart</name>
+		<campaign_req id='1143' level='1' />
+		<locked_start_time>1509123600</locked_start_time>	| Fri, 27 Oct 2017 17:00:00 |
+		<location_id>12</location_id>
+		<x>780</x>
+		<y>580</y>
+		<combatBG>CombatBGVoid</combatBG>
+		<missions>
+			<mission_id>1548</mission_id>
+			<mission_id>1549</mission_id>
+			<mission_id>1550</mission_id>
+			<mission_id>1551</mission_id>
+			<mission_id>1552</mission_id>
+			<mission_id>1553</mission_id>
+		</missions>
+		<rewards>
+			<item level='1' id='1011' />
+			<card level='2' id='510' />
+			<item level='3' id='1011' />
+			<card level='4' id='511' />
+			<item level='5' id='1012' />
+			<card level='6' id='512' />
+			<item level='7' id='2514' />
+		</rewards>
+		<find_item id='3062' drop_per_energy='.2' />
+	</campaign>
+	
+	-->
 </root>
