@@ -1505,8 +1505,8 @@ var CARDS = {
       },
     }
   },
-  "18": {
-  	"id": "18",
+  "19": {
+  	"id": "19",
   	"name": "Scyer the Fury Mecha",
   	"desc": "A new hero has decided to lend his power to your team. It’s the rhyming robot of destruction, the keeper of Fireshard Mine, Scyer the Fury Mecha!",
   	"picture": "portrait_chaos_mecha_hero",
