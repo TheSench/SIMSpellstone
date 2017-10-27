@@ -509,7 +509,8 @@ function doDrawCardList(cardList, resetPage) {
 }
 
 var onResize = (function () {
-	redrawCardList(true);
+	//redrawCardList(true);
+	applyFilters(true);
 }).debounce(50);
 
 function adjustTable(filler) {
@@ -570,7 +571,8 @@ function pageUp() {
 	if (page < 0) {
 		page = 0;
 	} else {
-		redrawCardList(true);
+		//redrawCardList(true);
+		applyFilters(true);
 	}
 }
 
@@ -579,7 +581,8 @@ function pageDown() {
 	if (page >= pages) {
 		page--;
 	} else {
-		redrawCardList(true);
+		//redrawCardList(true);
+		applyFilters(true);
 	}
 }
 
@@ -2131,12 +2134,16 @@ function doSort(select) {
 		var comparison = is_commander(unitB.id) - is_commander(unitA.id);
 		if (comparison != 0) return comparison;
 
-		if (sortField == "id") {
+		if (sortField === 'id') {
 			return compareByID(unitA, unitB);
 		} else {
 			var cardA = get_card_by_id(unitA);
 			var cardB = get_card_by_id(unitB);
-			comparison = (cardA[sortField] || 0) - (cardB[sortField] || 0);
+			if (sortField === 'sub_type') {
+				comparison = compareBySubfactions(cardA, cardB);
+			} else {
+				comparison = (cardA[sortField] || 0) - (cardB[sortField] || 0);
+			}
 			if (comparison != 0) return comparison;
 			// Fall back on sorting by ID
 			return compareByID(unitA, unitB);
@@ -2180,6 +2187,19 @@ var compareByID = function (unitA, unitB) {
 	if (comparison != 0) return comparison;
 
 	return sortByRunes(unitA, unitB);
+}
+
+function compareBySubfactions(cardA, cardB) {
+	var subfactionsA = cardA.sub_type;
+	var subfactionsB = cardB.sub_type;
+	var maxSubfactions = Math.max(subfactionsA.length, subfactionsB.length);
+	for (var i = 0; i < maxSubfactions; i++) {
+		var subfactionA = (subfactionsA[i] || -1);
+		var subfactionB = (subfactionsB[i] || -1);
+		var comparison = subfactionA - subfactionB;
+		if (comparison) return comparison;
+	}
+	return 0;
 }
 
 function sortByRunes(unitA, unitB) {
