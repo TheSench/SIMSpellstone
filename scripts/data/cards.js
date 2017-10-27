@@ -1505,6 +1505,55 @@ var CARDS = {
       },
     }
   },
+  "18": {
+  	"id": "18",
+  	"name": "Scyer the Fury Mecha",
+  	"desc": "A new hero has decided to lend his power to your team. It’s the rhyming robot of destruction, the keeper of Fireshard Mine, Scyer the Fury Mecha!",
+  	"picture": "portrait_chaos_mecha_hero",
+  	"rarity": "4",
+  	"set": "7000",
+  	"card_type": "1",
+  	"type": "2",
+  	"sub_type": [],
+  	"health": 1,
+  	"maxLevel": 6,
+  	"skill": [],
+  	"upgrades": {
+  		"2": {
+			"skill": []
+  		},
+  		"3": {
+  			"skill": []
+  		},
+  		"4": {
+  			"skill": []
+  		},
+		"5": {
+			"skill": []
+		},
+  		"6": {
+  			"health": 55,
+  			"skill": [
+			  {
+			  	"id": "enhance",
+			  	"x": 1,
+			  	"s": "berserk",
+				"all": "1"
+			  },
+			  {
+			  	"id": "enrage",
+			  	"x": 2,
+			  	"y": "16",
+			  },
+			  {
+			  	"id": "enrage",
+			  	"x": 1,
+				"all": "1"
+			  }
+  			]
+  		},
+  	}
+  },
   "200": {
     "id": "200",
     "name": "Undead Horde",
