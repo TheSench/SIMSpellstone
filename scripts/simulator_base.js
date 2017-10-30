@@ -1306,10 +1306,6 @@ var SIMULATOR = {};
 				affected++;
 
 				var enhancements = target.enhanced;
-				if (!enhancements) {
-					enhancements = {};
-					target.enhanced = enhancements;
-				}
 				if (x > 0) {
 					enhancements[s] = (enhancements[s] || 0) + x;
 					if (debug) echo += debug_name(src_card) + ' enhances ' + s + ' of ' + debug_name(target, false) + ' by ' + x + '<br>';
@@ -1443,8 +1439,15 @@ var SIMULATOR = {};
 
 				affected++;
 
-				target.imbue(skill);
-				if (debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target, false) + ' with ' + debug_skill(skill) + '<br>';
+
+				if (target.hasSkill(s)) {
+					var enhancements = target.enhanced;
+					enhancements[s] = (enhancements[s] || 0) + x;
+					if (debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target, false) + ' existing ' + debug_skill(skill) + ' by ' + x + '<br>';
+				} else {
+					target.imbue(skill);
+					if (debug) echo += debug_name(src_card) + ' imbues ' + debug_name(target, false) + ' with ' + debug_skill(skill) + '<br>';
+				}
 			}
 
 			return affected;
@@ -2020,7 +2023,7 @@ var SIMULATOR = {};
 			current_assault.invisible = 0;
 			current_assault.protected = 0;
 			current_assault.barrier_ice = 0;
-			current_assault.enhanced = 0;
+			current_assault.enhanced = {};
 			current_assault.removeImbue();
 
 			// countdown any skills with timers

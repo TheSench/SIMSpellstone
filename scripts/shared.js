@@ -260,7 +260,7 @@ var defaultStatusValues = {
     barrier_ice: 0,
     corroded: 0,
     enfeebled: 0,
-    enhanced: 0,
+    enhanced: {},
     enraged: 0,
     envenomed: 0,
     imbued: 0,
@@ -402,7 +402,7 @@ var makeUnit = (function () {
             this.enraged = 0;
             this.protected = 0;
             this.barrier_ice = 0;
-            this.enhanced = 0;
+            this.enhanced = {};
             this.removeImbue();
         },
 
@@ -612,7 +612,7 @@ var makeUnit = (function () {
 
         // Has at least one Enhanceable Activation Skill
         // - strike, protect, enfeeble, rally, repair, supply, siege, heal, weaken (unless they have on play/death/attacked/kill)
-        hasSkill: function (s, all) {
+        hasSkill: function (s) {
             var target_skills;
             var skillType = SKILL_DATA[s].type;
             switch (skillType) {
@@ -638,8 +638,6 @@ var makeUnit = (function () {
             for (var key in target_skills) {
                 var skill = target_skills[key];
                 if (skill.id !== s) continue;
-                if (skill.all && !all) continue;
-                if (!skill.all && all) continue;
                 return true;
             }
             return false;
