@@ -1646,17 +1646,22 @@ var showAdvancedFilters = function (skill) {
 	switch (skill) {
 		// x="1" y="0" all="0" c="0" s="0"
 		case 'armored':
+		case 'barrage':
 		case 'berserk':
 		case 'burn':
 		case 'corrosive':
 		case 'counter':
+		case 'counterburn':
 		case 'evade':
+		case 'evadebarrier':
 		case 'frost':
 		case 'fury':
 		case 'leech':
 		case 'nullify':
 		case 'pierce':
 		case 'poison':
+		case 'scorchbreath':
+		case 'taunt':
 		case 'valor':
 			$("div#amount").show();
 			break;
@@ -1677,7 +1682,8 @@ var showAdvancedFilters = function (skill) {
 			$("div#timer").show();
 			break;
 
-		// x="1" y="1" all="0" c="1" s="0"
+		// x="1" y="1" all="1" c="1" s="0"
+		case 'enrage':
 		case 'heal':
 		case 'protect':
 		case 'protect_ice':
@@ -1689,8 +1695,10 @@ var showAdvancedFilters = function (skill) {
 
 		// x="1" y="0" all="1" c="0" s="0"
 		case 'enfeeble':
+		case 'poisonstrike':
 		case 'strike':
 		case 'weaken':
+		case 'weakenself':
 			$("div#amount").show();
 			$("label[for=all]").show();
 			break;
