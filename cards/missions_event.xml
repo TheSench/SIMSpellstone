@@ -23398,4 +23398,101 @@
       </line>
     </speech>
   </mission>
+  <!-- Boss Node -->
+  <mission>
+    <id>5742</id>
+    <name>Buried Alive</name>
+    <energy>9</energy>
+    <desc>The earth trembles. The gigantic Mecha which seemed dormant is still functional! It lifts itself from the ground, turning to face you...</desc>
+    <commander id="403" />
+    <deck>
+      <card id="8098" name="Prototype Cybot Alpha" />
+      <card id="5042" name="Tinkerer" />
+      <card id="2111" name="Drillbot" />
+      <card id="2111" name="Drillbot" />
+      <card id="5042" name="Tinkerer" />
+      <card id="5042" name="Tinkerer" />
+      <card id="6161" name="Torero" />
+      <card id="8100" name="Rhino Cyborg" />
+      <card id="8100" name="Rhino Cyborg" />
+      <card id="5131" mastery_level="2" name="Steelscale, Sky's Domain" />
+      <card id="5162" mastery_level="3" name="Aloier, Dragon Sentinel" />
+      <card id="2113" mastery_level="4" name="Vali, the Thunderer" />
+      <card id="5162" mastery_level="5" name="Aloier, Dragon Sentinel" />
+      <card id="2112" mastery_level="6" name="Warrior Karna" />
+      <card id="6161" mastery_level="7" name="Torero" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5743</id>
+    <name>Remnant Fireshards</name>
+    <energy>9</energy>
+    <desc>The silent Mecha teeters uncertainly. Cracks run across its body, the weight of time still heavy upon its limbs. Chunks of fireshards stick to its body, infusing it with just enough energy to fight. </desc>
+    <commander id="403" />
+    <deck>
+      <card id="8098" name="Prototype Cybot Alpha" />
+      <card id="5042" name="Tinkerer" />
+      <card id="2111" name="Drillbot" />
+      <card id="2111" name="Drillbot" />
+      <card id="5042" name="Tinkerer" />
+      <card id="5042" name="Tinkerer" />
+      <card id="6161" name="Torero" />
+      <card id="8100" name="Rhino Cyborg" />
+      <card id="8100" name="Rhino Cyborg" />
+      <card id="5131" mastery_level="2" name="Steelscale, Sky's Domain" />
+      <card id="5162" mastery_level="3" name="Aloier, Dragon Sentinel" />
+      <card id="2113" mastery_level="4" name="Vali, the Thunderer" />
+      <card id="5162" mastery_level="5" name="Aloier, Dragon Sentinel" />
+      <card id="2112" mastery_level="6" name="Warrior Karna" />
+      <card id="6161" mastery_level="7" name="Torero" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5744</id>
+    <name>Powering Down</name>
+    <energy>9</energy>
+    <desc>The Fireshards snap, falling off as the Mecha continues to fight. Its body loses a little bit of glow each time it loses a crystal.</desc>
+    <commander id="403" />
+    <deck>
+      <card id="8098" name="Prototype Cybot Alpha" />
+      <card id="5042" name="Tinkerer" />
+      <card id="2111" name="Drillbot" />
+      <card id="2111" name="Drillbot" />
+      <card id="5042" name="Tinkerer" />
+      <card id="5042" name="Tinkerer" />
+      <card id="6161" name="Torero" />
+      <card id="8100" name="Rhino Cyborg" />
+      <card id="8100" name="Rhino Cyborg" />
+      <card id="5131" mastery_level="2" name="Steelscale, Sky's Domain" />
+      <card id="5162" mastery_level="3" name="Aloier, Dragon Sentinel" />
+      <card id="2113" mastery_level="4" name="Vali, the Thunderer" />
+      <card id="5162" mastery_level="5" name="Aloier, Dragon Sentinel" />
+      <card id="2112" mastery_level="6" name="Warrior Karna" />
+      <card id="6161" mastery_level="7" name="Torero" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5745</id>
+    <name>To Fight a Giant</name>
+    <energy>9</energy>
+    <desc>Aria shouts encouragement while the other Mechas flee from being crushed underfoot. The mechanical beast swings at you one last time, continuing its task with mindless efficiency.</desc>
+    <commander id="403" />
+    <deck>
+      <card id="8098" name="Prototype Cybot Alpha" />
+      <card id="5042" name="Tinkerer" />
+      <card id="2111" name="Drillbot" />
+      <card id="2111" name="Drillbot" />
+      <card id="5042" name="Tinkerer" />
+      <card id="5042" name="Tinkerer" />
+      <card id="6161" name="Torero" />
+      <card id="8100" name="Rhino Cyborg" />
+      <card id="8100" name="Rhino Cyborg" />
+      <card id="5131" mastery_level="2" name="Steelscale, Sky's Domain" />
+      <card id="5162" mastery_level="3" name="Aloier, Dragon Sentinel" />
+      <card id="2113" mastery_level="4" name="Vali, the Thunderer" />
+      <card id="5162" mastery_level="5" name="Aloier, Dragon Sentinel" />
+      <card id="2112" mastery_level="6" name="Warrior Karna" />
+      <card id="6161" mastery_level="7" name="Torero" />
+    </deck>
+  </mission>
 </root>

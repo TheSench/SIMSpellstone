@@ -964,6 +964,12 @@ var CAMPAIGNS = {
     "location_id": "12",
     "missions": ["5739","5740","5741"]
   },
+  "3011": {
+    "id": "3011",
+    "name": "Tinman's Change of Heart",
+    "location_id": "12",
+    "missions": ["1548","1549","1550","1551","1552","1553"]
+  },
   "10": {
     "id": "10",
     "name": "The City of Luminis",
@@ -55176,6 +55182,246 @@ var MISSIONS = {
       },
       {
         "id": "2015",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5742": {
+    "id": "5742",
+    "name": "Buried Alive",
+    "commander": {
+        "id": "403"
+    },
+    "deck": [
+      {
+        "id": "8098"
+      },
+      {
+        "id": "5042"
+      },
+      {
+        "id": "2111"
+      },
+      {
+        "id": "2111"
+      },
+      {
+        "id": "5042"
+      },
+      {
+        "id": "5042"
+      },
+      {
+        "id": "6161"
+      },
+      {
+        "id": "8100"
+      },
+      {
+        "id": "8100"
+      },
+      {
+        "id": "5131",
+        "mastery_level": "2"
+      },
+      {
+        "id": "5162",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2113",
+        "mastery_level": "4"
+      },
+      {
+        "id": "5162",
+        "mastery_level": "5"
+      },
+      {
+        "id": "2112",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6161",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5743": {
+    "id": "5743",
+    "name": "Remnant Fireshards",
+    "commander": {
+        "id": "403"
+    },
+    "deck": [
+      {
+        "id": "8098"
+      },
+      {
+        "id": "5042"
+      },
+      {
+        "id": "2111"
+      },
+      {
+        "id": "2111"
+      },
+      {
+        "id": "5042"
+      },
+      {
+        "id": "5042"
+      },
+      {
+        "id": "6161"
+      },
+      {
+        "id": "8100"
+      },
+      {
+        "id": "8100"
+      },
+      {
+        "id": "5131",
+        "mastery_level": "2"
+      },
+      {
+        "id": "5162",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2113",
+        "mastery_level": "4"
+      },
+      {
+        "id": "5162",
+        "mastery_level": "5"
+      },
+      {
+        "id": "2112",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6161",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5744": {
+    "id": "5744",
+    "name": "Powering Down",
+    "commander": {
+        "id": "403"
+    },
+    "deck": [
+      {
+        "id": "8098"
+      },
+      {
+        "id": "5042"
+      },
+      {
+        "id": "2111"
+      },
+      {
+        "id": "2111"
+      },
+      {
+        "id": "5042"
+      },
+      {
+        "id": "5042"
+      },
+      {
+        "id": "6161"
+      },
+      {
+        "id": "8100"
+      },
+      {
+        "id": "8100"
+      },
+      {
+        "id": "5131",
+        "mastery_level": "2"
+      },
+      {
+        "id": "5162",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2113",
+        "mastery_level": "4"
+      },
+      {
+        "id": "5162",
+        "mastery_level": "5"
+      },
+      {
+        "id": "2112",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6161",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5745": {
+    "id": "5745",
+    "name": "To Fight a Giant",
+    "commander": {
+        "id": "403"
+    },
+    "deck": [
+      {
+        "id": "8098"
+      },
+      {
+        "id": "5042"
+      },
+      {
+        "id": "2111"
+      },
+      {
+        "id": "2111"
+      },
+      {
+        "id": "5042"
+      },
+      {
+        "id": "5042"
+      },
+      {
+        "id": "6161"
+      },
+      {
+        "id": "8100"
+      },
+      {
+        "id": "8100"
+      },
+      {
+        "id": "5131",
+        "mastery_level": "2"
+      },
+      {
+        "id": "5162",
+        "mastery_level": "3"
+      },
+      {
+        "id": "2113",
+        "mastery_level": "4"
+      },
+      {
+        "id": "5162",
+        "mastery_level": "5"
+      },
+      {
+        "id": "2112",
+        "mastery_level": "6"
+      },
+      {
+        "id": "6161",
         "mastery_level": "7"
       },
     ]

@@ -1330,4 +1330,20 @@ var BATTLEGROUNDS = {
       },
     ]
   },
+  "2024": {
+    "name": "Gearweight Metal",
+    "id": "2024",
+    "desc": "Fireshard's Giant fights harder with each passing Mastery level, increasing cards' stats!",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "0",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .25,
+        "mult": .03,
+      },
+    ]
+  },
 };

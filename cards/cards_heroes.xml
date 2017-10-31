@@ -729,6 +729,51 @@
       <skill id="heal" x="3" />
     </upgrade>
   </unit>
+  <unit>
+    <id>19</id>
+    <card_type>1</card_type>
+    <name>Scyer the Fury Mecha</name>
+    <portrait>Portrait_Chaos_Mecha_Hero</portrait>
+    <desc></desc>
+    <attack>0</attack>
+    <health>44</health>
+    <skill id="enhance" s="berserk" x="1" />
+    <skill id="enrage" x="1" />
+    <rarity>4</rarity>
+    <type>2</type>
+    <set>7000</set>
+    <upgrade>
+      <level>2</level>
+      <health>47</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="enhance" s="berserk" x="1" />
+      <skill id="enrage" y="16" x="1" />
+      <skill id="enrage" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>50</health>
+      <skill id="enhance" s="berserk" x="1" />
+      <skill id="enrage" y="16" x="1" />
+      <skill id="enrage" all="1" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>52</health>
+      <skill id="enhance" s="berserk" x="1" />
+      <skill id="enrage" y="16" x="2" />
+      <skill id="enrage" all="1" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>55</health>
+      <skill id="enhance" s="berserk" all="1" x="1" />
+      <skill id="enrage" y="16" x="2" />
+      <skill id="enrage" all="1" x="1" />
+    </upgrade>
+  </unit>
   <!-- ====================== -->
   <!-- == STORY COMMANDERS == -->
   <!-- ====================== -->
@@ -9144,6 +9189,52 @@
       <skill id="imbue" x="2" all="1" s="burn" />
       <skill id="enhance" x="5" s="burn" />
       <skill id="enrage" x="2" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>403</id>
+    <card_type>1</card_type>
+    <name>Fireshard's Giant</name>
+    <portrait>necromancer</portrait>
+    <asset_bundle></asset_bundle>
+    <health>76</health>
+    <rarity>4</rarity>
+    <skill id="imbue" x="2" s="evade" />
+    <skill id="strike" x="4" all="1" />
+    <skill id="weaken" x="1" all="1" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>80</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>85</health>
+      <skill id="imbue" x="2" s="evade" />
+      <skill id="strike" x="4" all="1" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>89</health>
+      <skill id="imbue" x="3" s="evade" />
+      <skill id="strike" x="5" all="1" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>94</health>
+      <skill id="imbue" x="3" s="evade" />
+      <skill id="strike" x="5" all="1" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>99</health>
+      <skill id="imbue" x="4" s="evade" />
+      <skill id="strike" x="5" all="1" />
+      <skill id="weaken" x="2" all="1" />
     </upgrade>
   </unit>
 </root>

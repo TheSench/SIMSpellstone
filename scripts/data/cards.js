@@ -1506,53 +1506,112 @@ var CARDS = {
     }
   },
   "19": {
-  	"id": "19",
-  	"name": "Scyer the Fury Mecha",
-  	"desc": "A new hero has decided to lend his power to your team. It’s the rhyming robot of destruction, the keeper of Fireshard Mine, Scyer the Fury Mecha!",
-  	"picture": "portrait_chaos_mecha_hero",
-  	"rarity": "4",
-  	"set": "7000",
-  	"card_type": "1",
-  	"type": "2",
-  	"sub_type": [],
-  	"health": 1,
-  	"maxLevel": 6,
-  	"skill": [],
-  	"upgrades": {
-  		"2": {
-			"skill": []
-  		},
-  		"3": {
-  			"skill": []
-  		},
-  		"4": {
-  			"skill": []
-  		},
-		"5": {
-			"skill": []
-		},
-  		"6": {
-  			"health": 55,
-  			"skill": [
-			  {
-			  	"id": "enhance",
-			  	"x": 1,
-			  	"s": "berserk",
-				"all": "1"
-			  },
-			  {
-			  	"id": "enrage",
-			  	"x": 2,
-			  	"y": "16",
-			  },
-			  {
-			  	"id": "enrage",
-			  	"x": 1,
-				"all": "1"
-			  }
-  			]
-  		},
-  	}
+    "id": "19",
+    "name": "Scyer the Fury Mecha",
+    "picture": "portrait_chaos_mecha_hero",
+    "rarity": "4",
+    "set": "7000",
+    "card_type": "1",
+    "type": "2",
+    "sub_type": [],
+    "health": 44,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "enhance",
+        "x": 1,
+        "s": "berserk",
+      },
+      {
+        "id": "enrage",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 47,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "berserk",
+          },
+          {
+            "id": "enrage",
+            "x": 1,
+            "y": "16",
+          },
+          {
+            "id": "enrage",
+            "x": 1,
+          },
+        ],
+      },
+      "4": {
+        "health": 50,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "berserk",
+          },
+          {
+            "id": "enrage",
+            "x": 1,
+            "y": "16",
+          },
+          {
+            "id": "enrage",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 52,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "berserk",
+          },
+          {
+            "id": "enrage",
+            "x": 2,
+            "y": "16",
+          },
+          {
+            "id": "enrage",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "health": 55,
+        "skill": [
+          {
+            "id": "enhance",
+            "x": 1,
+            "s": "berserk",
+            "all": "1",
+          },
+          {
+            "id": "enrage",
+            "x": 2,
+            "y": "16",
+          },
+          {
+            "id": "enrage",
+            "x": 1,
+            "all": "1",
+          },
+        ],
+      },
+    }
   },
   "200": {
     "id": "200",
@@ -20422,6 +20481,121 @@ var CARDS = {
           },
           {
             "id": "enrage",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+    }
+  },
+  "403": {
+    "id": "403",
+    "name": "Fireshard's Giant",
+    "picture": "portrait_necromancer",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "1",
+    "type": "2",
+    "sub_type": [],
+    "health": 76,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "imbue",
+        "x": 2,
+        "s": "evade",
+      },
+      {
+        "id": "strike",
+        "x": 4,
+        "all": "1",
+      },
+      {
+        "id": "weaken",
+        "x": 1,
+        "all": "1",
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 80,
+        "skill": [],
+      },
+      "3": {
+        "health": 85,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 2,
+            "s": "evade",
+          },
+          {
+            "id": "strike",
+            "x": 4,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "4": {
+        "health": 89,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 3,
+            "s": "evade",
+          },
+          {
+            "id": "strike",
+            "x": 5,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "5": {
+        "health": 94,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 3,
+            "s": "evade",
+          },
+          {
+            "id": "strike",
+            "x": 5,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
+            "x": 2,
+            "all": "1",
+          },
+        ],
+      },
+      "6": {
+        "health": 99,
+        "skill": [
+          {
+            "id": "imbue",
+            "x": 4,
+            "s": "evade",
+          },
+          {
+            "id": "strike",
+            "x": 5,
+            "all": "1",
+          },
+          {
+            "id": "weaken",
             "x": 2,
             "all": "1",
           },
@@ -186932,6 +187106,113 @@ var CARDS = {
       },
     }
   },
+  "8100": {
+    "id": "8100",
+    "name": "Rhino Cyborg",
+    "picture": "Rhino_Beast_B",
+    "rarity": "4",
+    "set": "9999",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["16"],
+    "health": 16,
+    "attack": 6,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 6,
+      },
+      {
+        "id": "fervor",
+        "x": 2,
+        "y": "3",
+      },
+      {
+        "id": "poison",
+        "x": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 17,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 6,
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "3",
+          },
+          {
+            "id": "poison",
+            "x": 6,
+          },
+        ],
+      },
+      "3": {
+        "attack": 6,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 7,
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "3",
+          },
+          {
+            "id": "poison",
+            "x": 6,
+          },
+        ],
+      },
+      "4": {
+        "health": 18,
+        "skill": [
+          {
+            "id": "evade",
+            "x": 7,
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "3",
+          },
+          {
+            "id": "poison",
+            "x": 7,
+          },
+        ],
+      },
+      "5": {
+        "attack": 6,
+        "health": 18,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 8,
+          },
+          {
+            "id": "fervor",
+            "x": 2,
+            "y": "3",
+          },
+          {
+            "id": "poison",
+            "x": 8,
+          },
+        ],
+      },
+    }
+  },
   "9999": {
     "id": "9999",
     "name": "Unused Art",
@@ -187743,4 +188024,4 @@ var CARDS = {
     "upgrades": {}
   },
 };
-var CardsUpdated = 1509038320175.47;
+var CardsUpdated = 1509468628145.47;

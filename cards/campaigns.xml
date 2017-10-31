@@ -5081,6 +5081,40 @@
     </rewards>
     <find_item id="3062" drop_per_energy=".2" />
   </campaign>
+  <!-- Boss Node Fireshard's Giant Mecha 
+	
+	<campaign> 
+		<id>1146</id>
+		<name>Fireshard's Giant</name>
+		<type>2</type>
+		<icon id='gem_Boss_LG' bundle='0' />
+		<campaign_req id='1143' level='1' />
+		<locked_start_time>1509642000</locked_start_time>	| Thu, 2 Nov 2017 17:00:00 |
+		<battleground_id>2024</battleground_id>
+		<location_id>12</location_id>
+		<show_level>1</show_level>
+		<show_ranking>1</show_ranking>
+		<x>423</x>
+		<y>272</y>
+		<combatBG>CombatBGVoid</combatBG>
+		<missions>
+			<mission_id>5742</mission_id>
+			<mission_id>5743</mission_id>
+			<mission_id>5744</mission_id>
+			<mission_id>5745</mission_id>
+		</missions>
+		<rewards>
+			<card level='1' id='511' />
+			<card level='2' id='512' />
+			<card level='3' id='512' />
+			<item level='4' id='3064' />
+			<item level='5' id='3064' />
+			<item level='6' id='3064' />
+			<item level='7' id='3064' />
+		</rewards>
+		<find_item id='3062' drop_per_energy='.4' />
+	</campaign>
+	-->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
   <!-- ============================ -->
@@ -5423,36 +5457,34 @@
 		</rewards>
 	</campaign>
 	  -->
-  <!-- Legend Heroes Unlock 
-
-	<campaign> 
-		<id>3011</id>
-		<name>Tinman's Change of Heart</name>
-		<campaign_req id='1143' level='1' />
-		<locked_start_time>1509123600</locked_start_time>	| Fri, 27 Oct 2017 17:00:00 |
-		<location_id>12</location_id>
-		<x>780</x>
-		<y>580</y>
-		<combatBG>CombatBGVoid</combatBG>
-		<missions>
-			<mission_id>1548</mission_id>
-			<mission_id>1549</mission_id>
-			<mission_id>1550</mission_id>
-			<mission_id>1551</mission_id>
-			<mission_id>1552</mission_id>
-			<mission_id>1553</mission_id>
-		</missions>
-		<rewards>
-			<item level='1' id='1011' />
-			<card level='2' id='510' />
-			<item level='3' id='1011' />
-			<card level='4' id='511' />
-			<item level='5' id='1012' />
-			<card level='6' id='512' />
-			<item level='7' id='2514' />
-		</rewards>
-		<find_item id='3062' drop_per_energy='.2' />
-	</campaign>
-	
-	-->
+  <!-- Legend Heroes Unlock -->
+  <campaign>
+    <id>3011</id>
+    <name>Tinman's Change of Heart</name>
+    <campaign_req id="1143" level="1" />
+    <locked_start_time>1509469200</locked_start_time>
+    <!--  Tue, 31 Oct 2017 17:00:00 -->
+    <location_id>12</location_id>
+    <x>780</x>
+    <y>580</y>
+    <combatBG>CombatBGVoid</combatBG>
+    <missions>
+      <mission_id>1548</mission_id>
+      <mission_id>1549</mission_id>
+      <mission_id>1550</mission_id>
+      <mission_id>1551</mission_id>
+      <mission_id>1552</mission_id>
+      <mission_id>1553</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="1011" />
+      <card level="2" id="510" />
+      <item level="3" id="1011" />
+      <card level="4" id="511" />
+      <item level="5" id="1012" />
+      <card level="6" id="512" />
+      <item level="7" id="2530" />
+    </rewards>
+    <find_item id="3062" drop_per_energy=".2" />
+  </campaign>
 </root>

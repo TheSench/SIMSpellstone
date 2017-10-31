@@ -6745,4 +6745,54 @@
       <skill id="flurry" c="3" />
     </upgrade>
   </unit>
+  <!-- Campaign Event 6 Boss node -->
+  <unit>
+    <id>8100</id>
+    <card_type>2</card_type>
+    <name>Rhino Cyborg</name>
+    <picture>Rhino_Beast_B</picture>
+    <asset_bundle>19</asset_bundle>
+    <attack>6</attack>
+    <health>16</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="6" />
+    <skill id="fervor" x="2" y="3" />
+    <skill id="poison" x="5" />
+    <type>3</type>
+    <sub_type>16</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+      <skill id="evade" x="6" />
+      <skill id="fervor" x="2" y="3" />
+      <skill id="poison" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>6</attack>
+      <skill id="evade" x="7" />
+      <skill id="fervor" x="2" y="3" />
+      <skill id="poison" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+      <skill id="evade" x="7" />
+      <skill id="fervor" x="2" y="3" />
+      <skill id="poison" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>6</attack>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="8" />
+      <skill id="fervor" x="2" y="3" />
+      <skill id="poison" x="8" />
+    </upgrade>
+  </unit>
 </root>
