@@ -968,6 +968,10 @@ var SIMULATOR = {};
 		// - Cannot be nullified
 		enlarge: function (src_card, skill) {
 
+			var faction = skill['y'];
+
+			var p = get_p(src_card);
+
 			var rally = skill['x'];
 			var enhanced = getEnhancement(src_card, skill.id);
 			if (enhanced) {
@@ -976,22 +980,47 @@ var SIMULATOR = {};
 				}
 				rally += enhanced;
 			}
+			var all = skill['all'];
 
-			var target = src_card;
+			var field_p_assaults = field[p]['assaults'];
 
-			var rally_amt = rally;
-			if (!rally_amt) {
-				var mult = skill.mult;
-				rally_amt = Math.ceil(target.attack * mult);
+			var targets = [];
+			for (var key = 0, len = field_p_assaults.length; key < len; key++) {
+				var target = field_p_assaults[key];
+				if (target.isActive() && target.isInFaction(faction) && target.isUnjammed()) {
+					targets.push(key);
+				}
 			}
 
-			target.attack_rally += rally_amt;
-			if (debug) {
-				if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
-				echo += debug_name(src_card) + ' is enlarged by ' + rally_amt + '<br>';
+			// No Targets
+			if (!targets.length) return 0;
+
+			// Check All
+			if (!all) {
+				targets = choose_random_target(targets);
 			}
 
-			return 1;
+			var affected = 0;
+
+			for (var key = 0, len = targets.length; key < len; key++) {
+				var target = field_p_assaults[targets[key]];
+
+				var rally_amt = rally;
+				if (!rally_amt) {
+					var mult = skill.mult;
+					rally_amt = Math.ceil(target.attack * mult);
+				}
+
+				target.attack_rally += rally_amt;
+				if (debug) {
+					if (enhanced) echo += '<u>(Enhance: +' + enhanced + ')</u><br>';
+					echo += debug_name(src_card) + ' is enlarged by ' + rally_amt + '<br>';
+				}
+
+				affected++;
+			}
+
+			return affected;
 		},
 
 		// Rally
