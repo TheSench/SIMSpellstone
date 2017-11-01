@@ -612,7 +612,7 @@ var makeUnit = (function () {
 
         // Has at least one Enhanceable Activation Skill
         // - strike, protect, enfeeble, rally, repair, supply, siege, heal, weaken (unless they have on play/death/attacked/kill)
-        hasSkill: function (s) {
+        hasSkill: function (s, all) {
             var target_skills;
             var skillType = SKILL_DATA[s].type;
             switch (skillType) {
@@ -638,6 +638,7 @@ var makeUnit = (function () {
             for (var key in target_skills) {
                 var skill = target_skills[key];
                 if (skill.id !== s) continue;
+                if (typeof all !== "undefined" && (skill.all||0) != all) continue;
                 return true;
             }
             return false;
@@ -853,8 +854,9 @@ var canUseRune = function (card, runeID) {
     }
     for (var key in statBoost) {
         if (key == "skill") {
-            var skill = statBoost[key]
-            if (!card.hasSkill(skill.id, skill.all)) return false;
+        	var skill = statBoost[key]
+        	var all = (skill.all ? 1 : 0);
+            if (!card.hasSkill(skill.id, all)) return false;
         }
     }
     return true;

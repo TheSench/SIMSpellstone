@@ -1300,7 +1300,7 @@ var SIMULATOR = {};
 				var target = field_p_assaults[key];
 				if (!target.isInFaction(faction)) continue;
 				if (require_active_turn && !(target.isActive() && target.isUnjammed())) continue;
-				if (target.hasSkill(s, 0) || target.hasSkill(s, 1)) {
+				if (target.hasSkill(s)) {
 					targets.push(key);
 				}
 			}
