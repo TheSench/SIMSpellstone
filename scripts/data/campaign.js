@@ -964,6 +964,13 @@ var CAMPAIGNS = {
     "location_id": "12",
     "missions": ["5739","5740","5741"]
   },
+  "1146": {
+    "id": "1146",
+    "name": "Fireshard's Giant",
+    "location_id": "12",
+    "battleground_id": "2024",
+    "missions": ["5742","5743","5744","5745"]
+  },
   "3011": {
     "id": "3011",
     "name": "Tinman's Change of Heart",

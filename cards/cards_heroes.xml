@@ -9195,8 +9195,8 @@
     <id>403</id>
     <card_type>1</card_type>
     <name>Fireshard's Giant</name>
-    <portrait>necromancer</portrait>
-    <asset_bundle></asset_bundle>
+    <portrait>giantMechaBoss</portrait>
+    <asset_bundle>109</asset_bundle>
     <health>76</health>
     <rarity>4</rarity>
     <skill id="imbue" x="2" s="evade" />

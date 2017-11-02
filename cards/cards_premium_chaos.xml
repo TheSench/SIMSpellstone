@@ -19772,6 +19772,133 @@
     <desc>"Not again!"</desc>
   </unit>
   <unit>
+    <id>6159</id>
+    <card_type>2</card_type>
+    <name>Solder Charger</name>
+    <picture>Mecha_Bull_A</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1509642000</hidden_until_time>
+    <attack>6</attack>
+    <health>24</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="3" />
+    <skill id="leech" x="2" />
+    <skill id="berserk" x="2" />
+    <type>2</type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>26</health>
+      <skill id="counter" x="4" />
+      <skill id="leech" x="2" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counter" x="4" />
+      <skill id="leech" x="3" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>27</health>
+      <attack>7</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16159</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Solder Crasher</name>
+    <picture>Mecha_Bull_A</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1509642000</hidden_until_time>
+    <attack>7</attack>
+    <health>28</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="4" />
+    <skill id="leech" x="3" />
+    <skill id="berserk" x="2" />
+    <type>2</type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>29</health>
+      <skill id="counter" x="5" />
+      <skill id="leech" x="3" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="counter" x="5" />
+      <skill id="leech" x="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>30</health>
+      <skill id="counter" x="5" />
+      <skill id="leech" x="4" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>31</health>
+      <skill id="counter" x="6" />
+      <skill id="leech" x="4" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26159</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Solder Sunderer</name>
+    <picture>Mecha_Bull_B</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1509642000</hidden_until_time>
+    <attack>7</attack>
+    <health>31</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="6" />
+    <skill id="leech" x="5" />
+    <skill id="berserk" x="3" />
+    <type>2</type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>32</health>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>33</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>34</health>
+      <skill id="counter" x="7" />
+      <skill id="leech" x="5" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="7" />
+      <skill id="leech" x="6" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>6161</id>
     <card_type>2</card_type>
     <name>Torero</name>

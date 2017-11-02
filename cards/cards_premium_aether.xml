@@ -20486,4 +20486,121 @@
       <skill id="strike" x="6" all="1" />
     </upgrade>
   </unit>
+  <unit>
+    <id>5163</id>
+    <card_type>2</card_type>
+    <name>Bark Hound</name>
+    <picture>Watchdog_Mecha_A</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1509642000</hidden_until_time>
+    <attack>4</attack>
+    <health>14</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="rally" x="2" y="16" />
+    <skill id="weaken" x="2" />
+    <type>1</type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="rally" x="2" y="16" />
+      <skill id="weaken" x="2" />
+      <skill id="flurry" c="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>16</health>
+      <skill id="rally" x="2" y="16" />
+      <skill id="weaken" x="2" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>5</attack>
+    </upgrade>
+    <desc>"They're wood dogs, Bront." - Commander Ursurio</desc>
+  </unit>
+  <unit>
+    <id>15163</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Bark Patroller</name>
+    <picture>Watchdog_Mecha_A</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1509642000</hidden_until_time>
+    <attack>5</attack>
+    <health>17</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="rally" x="3" y="16" />
+    <skill id="weaken" x="2" />
+    <skill id="flurry" c="5" />
+    <type>1</type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>19</health>
+      <skill id="rally" x="3" y="16" />
+      <skill id="weaken" x="3" />
+      <skill id="flurry" c="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="rally" x="3" y="16" />
+      <skill id="weaken" x="3" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>6</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25163</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Bark Watchers</name>
+    <picture>Watchdog_Mecha_B</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1509642000</hidden_until_time>
+    <attack>6</attack>
+    <health>20</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="rally" x="3" y="16" />
+    <skill id="weaken" x="3" />
+    <skill id="flurry" c="3" />
+    <type>1</type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>22</health>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="rally" x="4" y="16" />
+      <skill id="weaken" x="4" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+  </unit>
 </root>

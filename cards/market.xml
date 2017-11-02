@@ -2370,6 +2370,29 @@
       <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000,4000" />
     </cards>
   </store_item>
+  <store_item>
+    <id>3077</id>
+    <name>x10 Mecha Epic Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives ten ^c0DFFEpic^cFFFF+ Mecha cards from Premium set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000,4000" />
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="16" set="3000,4000" />
+    </cards>
+  </store_item>
   <!-- ======================================= -->
   <!-- ==== Emporium & Arena Market Items ==== -->
   <!-- ======================================= -->
@@ -2489,27 +2512,28 @@
       <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" set="1000,3000" number="4" />
     </cards>
   </store_item>
-  <!-- <store_item>
-		<id>4006</id>
-		<name>Cycling Reward Card</name>
-		<category>4</category>
-		<vip_level_req>0</vip_level_req>
-		<desc>Gives a single copy of the displayed Reward card. May be purchased multiple times, but the price increases each purchase!</desc>
-		<preview_desc>Unlocks a random Epic Reward card that can be purchased with shards and cycles every 24 hours! Requires VIP Level 1.</preview_desc>
-		<priority>10</priority>
-		<icon>icon_blue_crystal</icon>
-		<scale_prices>1</scale_prices>
-		<cost_type>3</cost_type>	Items
-		<cost item='5' />
-		<rarity3scaling purchase1='600' purchase2='750' purchase3='900' purchase4='1200' scalar='300' />
-		<rarity4scaling purchase1='10000' scalar='5000' />
-		<cycle_cards>1</cycle_cards>
-		<cycle_length>86400</cycle_length>
-		<start_offset>61200</start_offset>
-		<cards>
-			<card min_level='1' max_level='1' min_rarity='3' max_rarity='3' set='2000' number='4' />
-		</cards>
-	</store_item> -->
+  <store_item>
+    <id>4006</id>
+    <name>Cycling Reward Card</name>
+    <category>4</category>
+    <vip_level_req>0</vip_level_req>
+    <desc>Gives a single copy of the displayed Reward card. May be purchased multiple times, but the price increases each purchase!</desc>
+    <preview_desc>Unlocks a random Epic Reward card that can be purchased with shards and cycles every 24 hours! Requires VIP Level 1.</preview_desc>
+    <priority>10</priority>
+    <icon>icon_blue_crystal</icon>
+    <scale_prices>1</scale_prices>
+    <cost_type>3</cost_type>
+    <!-- Items -->
+    <cost item="5" />
+    <rarity3scaling purchase1="600" purchase2="750" purchase3="900" purchase4="1200" scalar="300" />
+    <rarity4scaling purchase1="10000" scalar="5000" />
+    <cycle_cards>1</cycle_cards>
+    <cycle_length>86400</cycle_length>
+    <start_offset>61200</start_offset>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="3" set="2000" number="4" />
+    </cards>
+  </store_item>
   <!-- Arena Packs -->
   <store_item>
     <id>4101</id>
@@ -4368,5 +4392,23 @@
     <hc_cost>400</hc_cost>
     <!-- Stuff to give -->
     <pack>3074</pack>
+  </store_item>
+  <store_item>
+    <id>5091</id>
+    <name>x10 Mecha Mega Bundle!</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>510</priority>
+    <show_desc>1</show_desc>
+    <desc>Gives ^cF00FTEN ^cFFFFrandom ^c0DFFEpic^cFFFF+ Mecha cards from Premium set! May be purchased 3 times!</desc>
+    <asset_prefab>event_030_w1</asset_prefab>
+    <background_prefab>event_030_banner_w1</background_prefab>
+    <bundle>107</bundle>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>400</hc_cost>
+    <!-- Stuff to give -->
+    <pack>3077</pack>
   </store_item>
 </root>

@@ -20323,6 +20323,149 @@
     </upgrade>
   </unit>
   <unit>
+    <id>7163</id>
+    <card_type>2</card_type>
+    <name>Alloy of the Trees</name>
+    <picture>Mecha_Tribal_A</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1509642000</hidden_until_time>
+    <attack>4</attack>
+    <health>16</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="2" />
+    <skill id="valor" x="6" />
+    <skill id="heal" x="3" y="3" />
+    <type>3</type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="2" />
+      <skill id="valor" x="7" />
+      <skill id="heal" x="3" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+      <skill id="armored" x="2" />
+      <skill id="valor" x="7" />
+      <skill id="heal" x="4" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="3" />
+      <skill id="valor" x="8" />
+      <skill id="heal" x="4" y="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17163</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Alloy of the Grove</name>
+    <picture>Mecha_Tribal_A</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1509642000</hidden_until_time>
+    <attack>4</attack>
+    <health>20</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="3" />
+    <skill id="valor" x="8" />
+    <skill id="heal" x="4" y="3" />
+    <type>3</type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>21</health>
+      <skill id="armored" x="3" />
+      <skill id="valor" x="8" />
+      <skill id="heal" x="5" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="3" />
+      <skill id="valor" x="9" />
+      <skill id="heal" x="5" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>22</health>
+      <skill id="armored" x="3" />
+      <skill id="valor" x="9" />
+      <skill id="heal" x="6" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="4" />
+      <skill id="valor" x="10" />
+      <skill id="heal" x="6" y="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27163</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Alloy of the Woods</name>
+    <picture>Mecha_Tribal_B</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1509642000</hidden_until_time>
+    <attack>4</attack>
+    <health>24</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="4" />
+    <skill id="valor" x="10" />
+    <skill id="heal" x="6" y="3" />
+    <type>3</type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+      <skill id="armored" x="4" />
+      <skill id="valor" x="10" />
+      <skill id="heal" x="7" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="4" />
+      <skill id="valor" x="11" />
+      <skill id="heal" x="7" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>26</health>
+      <skill id="armored" x="5" />
+      <skill id="valor" x="11" />
+      <skill id="heal" x="7" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>27</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="5" />
+      <skill id="valor" x="12" />
+      <skill id="heal" x="8" y="3" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>7165</id>
     <card_type>2</card_type>
     <name>Raging Irontusk</name>

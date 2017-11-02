@@ -22909,7 +22909,7 @@
     <id>5727</id>
     <name>Mine Dwellers</name>
     <energy>9</energy>
-    <desc>The shell of a gigantic mecha lays in ruins. Its head is nowhere to be found, vegetation snaking up along its immobile limbs. Mechas, not unlike the ones that ones that attacked you, approach you and Aria... </desc>
+    <desc>The shell of a gigantic mecha lays in ruins. Its head is nowhere to be found, vegetation snaking up along its immobile limbs. Mechas, not unlike the ones that attacked you, approach you and Aria... </desc>
     <commander id="401" />
     <deck>
       <card id="8098" name="Prototype Cybot Alpha" />

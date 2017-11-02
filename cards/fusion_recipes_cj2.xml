@@ -2878,6 +2878,14 @@
     <card_id>25162</card_id>
     <resource card_id="15162" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15163</card_id>
+    <resource card_id="5163" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25163</card_id>
+    <resource card_id="15163" number="2" />
+  </fusion_recipe>
   <!-- CHAOS PREMIUM SET BEGIN -->
   <fusion_recipe>
     <card_id>16000</card_id>
@@ -4134,6 +4142,14 @@
   <fusion_recipe>
     <card_id>26158</card_id>
     <resource card_id="16158" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16159</card_id>
+    <resource card_id="6159" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26159</card_id>
+    <resource card_id="16159" number="2" />
   </fusion_recipe>
   <fusion_recipe>
     <card_id>16161</card_id>
@@ -5431,6 +5447,14 @@
   <fusion_recipe>
     <card_id>27162</card_id>
     <resource card_id="17162" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17163</card_id>
+    <resource card_id="7163" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27163</card_id>
+    <resource card_id="17163" number="2" />
   </fusion_recipe>
   <fusion_recipe>
     <card_id>17165</card_id>
