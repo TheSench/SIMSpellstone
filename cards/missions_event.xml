@@ -23495,4 +23495,412 @@
       <card id="6161" mastery_level="7" name="Torero" />
     </deck>
   </mission>
+  <!-- Campaign Event 6 weeks 5-8 -->
+  <mission>
+    <id>5746</id>
+    <name>Call of the Haunted</name>
+    <energy>9</energy>
+    <desc>The original voice you heard earlier has since become silent. For a few seconds you can only hear the footsteps of Aria and yourself. Then, multiple voices begin to groan, in eerie succession...</desc>
+    <commander id="366" />
+    <deck>
+      <card id="8098" name="Prototype Cybot Alpha" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="5086" name="Spirit Blades" />
+      <card id="5086" name="Spirit Blades" />
+      <card id="6158" name="Orbos" />
+      <card id="6158" name="Orbos" />
+      <card id="2110" name="Weathered Widgit" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="2002" mastery_level="2" name="Lantern Guardian" />
+      <card id="5021" mastery_level="3" name="Tower Spirit" />
+      <card id="2087" mastery_level="4" name="Cranial Hazard" />
+      <card id="5042" mastery_level="5" name="Tinkerer" />
+      <card id="6157" mastery_level="6" name="Dawnblade Huntress" />
+      <card id="5036" mastery_level="7" name="Winter Tail" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>I'd recognize the cries of the Undead anywhere. Get ready for a fight.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5747</id>
+    <name>Yearning for the Light</name>
+    <energy>9</energy>
+    <desc>The light from Aria's torch reveals the battered form of a skeleton! Behind it are more undead, drawn to the light like moths to a flame.</desc>
+    <commander id="335" />
+    <deck>
+      <card id="8099" name="Prototype Cybot Beta" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="5163" name="Bark Hound" />
+      <card id="6016" name="Skeletal Giant" />
+      <card id="2059" name="Matriarch's Call" />
+      <card id="6125" name="Deadly Shot" />
+      <card id="6158" name="Orbos" />
+      <card id="7161" name="Alphamecha" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="2109" mastery_level="2" name="Scorchfist Avenger" />
+      <card id="6029" mastery_level="3" name="Spinehead Stalker" />
+      <card id="2020" mastery_level="4" name="Tidetaken Fighter" />
+      <card id="6000" mastery_level="5" name="Furnace Mech" />
+      <card id="6088" mastery_level="6" name="Doxum's Construct" />
+      <card id="6027" mastery_level="7" name="Frigela, the Dread" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5748</id>
+    <name>Fallen Fighters</name>
+    <energy>9</energy>
+    <desc>The Undead fall upon the two of you with avid hunger. Alone in the depths of the mine, they rarely get the chance to find visitors that aren't encased in metal.</desc>
+    <commander id="377" />
+    <deck>
+      <card id="8098" name="Prototype Cybot Alpha" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="6083" name="Lockejaw" />
+      <card id="2024" name="Dusk Noble" />
+      <card id="6125" name="Deadly Shot" />
+      <card id="2110" name="Weathered Widgit" />
+      <card id="7161" name="Alphamecha" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="2111" mastery_level="2" name="Drillbot" />
+      <card id="7034" mastery_level="3" name="Spore Elk" />
+      <card id="7035" mastery_level="4" name="Carrion Tiger" />
+      <card id="7163" mastery_level="5" name="Alloy of the Trees" />
+      <card id="6000" mastery_level="6" name="Furnace Mech" />
+      <card id="6124" mastery_level="7" name="Enfeebling Vizier" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>This behavior isn't natural. There must be something controlling these Undead.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5749</id>
+    <name>Undead Expertise</name>
+    <energy>9</energy>
+    <desc>Aria forges a path through the clumps of Undead forces. Trusting her expertise in matters of the Undead, you aid her efforts and follow her lead.</desc>
+    <commander id="268" />
+    <deck>
+      <card id="8099" name="Prototype Cybot Beta" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="6004" name="Branding Construct" />
+      <card id="7084" name="Witchwood" />
+      <card id="2023" name="Grizzly Terror" />
+      <card id="1331" name="Fallen Soldiers" />
+      <card id="6158" name="Orbos" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="2111" mastery_level="2" name="Drillbot" />
+      <card id="6011" mastery_level="3" name="Bomb Spirit" />
+      <card id="2088" mastery_level="4" name="Bog Witch" />
+      <card id="6157" mastery_level="5" name="Dawnblade Huntress" />
+      <card id="6095" mastery_level="6" name="Gearplate Dragon" />
+      <card id="7085" mastery_level="7" name="Moonlit Scavenger" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>See how their path follows a similar line, like how ants follow each other's footsteps in search of food?</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>If we trace that path to their origin, we should be able to stop the flow of Undead.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5750</id>
+    <name>Undead Pathfinder</name>
+    <energy>9</energy>
+    <desc>Aria's path leads you through the heart of the Undead. Their numbers become greater despite the many that you have taken out, their hands reaching out to claw against you!</desc>
+    <commander id="335" />
+    <deck>
+      <card id="8098" name="Prototype Cybot Alpha" />
+      <card id="1011" name="Archive Keeper" />
+      <card id="6004" name="Branding Construct" />
+      <card id="6034" name="Bone Viper" />
+      <card id="5123" name="Shadow Stalker" />
+      <card id="2025" name="Blight Knight" />
+      <card id="6158" name="Orbos" />
+      <card id="6004" name="Branding Construct" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="2109" mastery_level="2" name="Scorchfist Avenger" />
+      <card id="6036" mastery_level="3" name="Cursed Ogre" />
+      <card id="2060" mastery_level="4" name="Patchwork Experiment" />
+      <card id="2113" mastery_level="5" name="Vali, the Thunderer" />
+      <card id="5142" mastery_level="6" name="Buzzblade" />
+      <card id="5085" mastery_level="7" name="Haunting Heir" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5751</id>
+    <name>Siren Call</name>
+    <energy>9</energy>
+    <desc>Aria pauses in the fighting. She holds up one hand, motioning for you to listen. You can here a groan, the same voice that you heard when you first descended into the mine's depths.</desc>
+    <commander id="7" />
+    <deck>
+      <card id="8099" name="Prototype Cybot Beta" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="7034" name="Spore Elk" />
+      <card id="7034" name="Spore Elk" />
+      <card id="7035" name="Carrion Tiger" />
+      <card id="5163" name="Bark Hound" />
+      <card id="7161" name="Alphamecha" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="2109" mastery_level="2" name="Scorchfist Avenger" />
+      <card id="2023" mastery_level="3" name="Grizzly Terror" />
+      <card id="7082" mastery_level="4" name="Forest Umbras" />
+      <card id="2113" mastery_level="5" name="Vali, the Thunderer" />
+      <card id="7162" mastery_level="6" name="Timberhead Diver" />
+      <card id="6002" mastery_level="7" name="Spirit of Madness" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Wyld_Corrosive_Hero</commander>
+        <enemy>1</enemy>
+        <text>Ungh.... UNNNNNNNGH!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5752</id>
+    <name>Amiable Ooze</name>
+    <energy>9</energy>
+    <desc>NO! Bad zombies, very bad zombies. Do not scare away potential suitors!</desc>
+    <commander id="271" />
+    <deck>
+      <card id="8099" name="Prototype Cybot Beta" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="7161" name="Alphamecha" />
+      <card id="6123" name="Battleborn Destrier" />
+      <card id="2025" name="Blight Knight" />
+      <card id="2087" name="Cranial Hazard" />
+      <card id="2110" name="Weathered Widgit" />
+      <card id="6004" name="Branding Construct" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="7161" mastery_level="2" name="Alphamecha" />
+      <card id="7122" mastery_level="3" name="Satyr Runebearer" />
+      <card id="7084" mastery_level="4" name="Witchwood" />
+      <card id="5042" mastery_level="5" name="Tinkerer" />
+      <card id="7165" mastery_level="6" name="Raging Irontusk" />
+      <card id="1342" mastery_level="7" name="Ronin" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5753</id>
+    <name>Galya, the Acid Elemental</name>
+    <energy>9</energy>
+    <desc>The army diminishes beneath the might of your new ally. With the zombies out of the way, she turns back to you and Aria, sinking back into a puddle appearance.</desc>
+    <commander id="269" />
+    <deck>
+      <card id="8098" name="Prototype Cybot Alpha" />
+      <card id="1319" name="Wraith" />
+      <card id="6158" name="Orbos" />
+      <card id="6081" name="Apparition" />
+      <card id="2020" name="Tidetaken Fighter" />
+      <card id="7125" name="Spectral Presence" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="5163" name="Bark Hound" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="5161" mastery_level="2" name="Bolster Bot" />
+      <card id="2088" mastery_level="3" name="Bog Witch" />
+      <card id="7122" mastery_level="4" name="Satyr Runebearer" />
+      <card id="6000" mastery_level="5" name="Furnace Mech" />
+      <card id="5131" mastery_level="6" name="Steelscale, Sky's Domain" />
+      <card id="1342" mastery_level="7" name="Ronin" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Wyld_Corrosive_Hero</commander>
+        <enemy>1</enemy>
+        <text>I am Galya, the acid Elemental. Welcome to my lovely makeshift abode.</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>You LIVE down here, in the dark with the Undead?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5754</id>
+    <name>In Search of Love</name>
+    <energy>9</energy>
+    <desc>Galya explains her purpose, seeming not to mind the Undead remnants which occasionally give you trouble. They ignore her completely, focusing on you.</desc>
+    <commander id="269" />
+    <deck>
+      <card id="8099" name="Prototype Cybot Beta" />
+      <card id="1319" name="Wraith" />
+      <card id="5163" name="Bark Hound" />
+      <card id="6031" name="Iceblood Assassin" />
+      <card id="2059" name="Matriarch's Call" />
+      <card id="2087" name="Cranial Hazard" />
+      <card id="2110" name="Weathered Widgit" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="2111" name="Drillbot" />
+      <card id="5161" mastery_level="2" name="Bolster Bot" />
+      <card id="1632" mastery_level="3" name="Shadow Rider" />
+      <card id="7084" mastery_level="4" name="Witchwood" />
+      <card id="5042" mastery_level="5" name="Tinkerer" />
+      <card id="5150" mastery_level="6" name="Deepspear Warfarer" />
+      <card id="6027" mastery_level="7" name="Frigela, the Dread" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Wyld_Corrosive_Hero</commander>
+        <enemy>1</enemy>
+        <text>Yes... for now... I have arrived in search of love.</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Really? You expect us to believe that you're in a cave in the complete dark, filled with Undead, searching for love?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5755</id>
+    <name>Lonely Existence</name>
+    <energy>9</energy>
+    <desc>Galya laments her true nature. It seems she has not had any visitors that were capable of holding a conversation for quite a while.</desc>
+    <commander id="377" />
+    <deck>
+      <card id="8098" name="Prototype Cybot Alpha" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="6004" name="Branding Construct" />
+      <card id="6016" name="Skeletal Giant" />
+      <card id="5084" name="Dotora Spirit" />
+      <card id="7122" name="Satyr Runebearer" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="2111" name="Drillbot" />
+      <card id="7161" name="Alphamecha" />
+      <card id="7161" mastery_level="2" name="Alphamecha" />
+      <card id="7125" mastery_level="3" name="Spectral Presence" />
+      <card id="2088" mastery_level="4" name="Bog Witch" />
+      <card id="6000" mastery_level="5" name="Furnace Mech" />
+      <card id="5126" mastery_level="6" name="Ominous Canvas" />
+      <card id="6033" mastery_level="7" name="Firebeard" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Wyld_Corrosive_Hero</commander>
+        <enemy>1</enemy>
+        <text>It is difficult, being an Element of acid. No one to hold me... no one to care for me.</text>
+      </line>
+      <line>
+        <commander>Portrait_Wyld_Corrosive_Hero</commander>
+        <enemy>1</enemy>
+        <text>I thought the Mechas and Undead might be more open-minded, but I fear I was wrong. They melt in my arms, and not in the good way.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5756</id>
+    <name>Thermometer Search</name>
+    <energy>9</energy>
+    <desc>Aria steers back the conversation to your original purpose for delving into the mine's depths. There is little you could do to aid Galya's quest for love.</desc>
+    <commander id="391" />
+    <deck>
+      <card id="8099" name="Prototype Cybot Beta" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="5163" name="Bark Hound" />
+      <card id="6011" name="Bomb Spirit" />
+      <card id="7125" name="Spectral Presence" />
+      <card id="7125" name="Spectral Presence" />
+      <card id="2109" name="Scorchfist Avenger" />
+      <card id="2111" name="Drillbot" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="5161" mastery_level="2" name="Bolster Bot" />
+      <card id="2059" mastery_level="3" name="Matriarch's Call" />
+      <card id="2024" mastery_level="4" name="Dusk Noble" />
+      <card id="6157" mastery_level="5" name="Dawnblade Huntress" />
+      <card id="6095" mastery_level="6" name="Gearplate Dragon" />
+      <card id="6087" mastery_level="7" name="Dread Obliterator" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>Enough of this talk. Have you seen a thermometer?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5757</id>
+    <name>Item Collector</name>
+    <energy>9</energy>
+    <desc>Galya points towards the back of the cavern, where a particularly large Undead glowers at you with red eyes. Other Undead have remained by its side, as if guarding this one creature...</desc>
+    <commander id="330" />
+    <deck>
+      <card id="8098" name="Prototype Cybot Alpha" />
+      <card id="1319" name="Wraith" />
+      <card id="6004" name="Branding Construct" />
+      <card id="5033" name="Lost Soul" />
+      <card id="5035" name="Vapor Guard" />
+      <card id="5021" name="Tower Spirit" />
+      <card id="7161" name="Alphamecha" />
+      <card id="5163" name="Bark Hound" />
+      <card id="5161" name="Bolster Bot" />
+      <card id="2111" mastery_level="2" name="Drillbot" />
+      <card id="2020" mastery_level="3" name="Tidetaken Fighter" />
+      <card id="2060" mastery_level="4" name="Patchwork Experiment" />
+      <card id="2113" mastery_level="5" name="Vali, the Thunderer" />
+      <card id="5137" mastery_level="6" name="Forgesoul Construct" />
+      <card id="5083" mastery_level="7" name="Honor Risen" />
+    </deck>
+    <speech>
+      <line>
+        <commander>Portrait_Wyld_Corrosive_Hero</commander>
+        <enemy>1</enemy>
+        <text>Mm, yes, I may know what you're talking about. See that brute of an Undead over there?</text>
+      </line>
+      <line>
+        <commander>Portrait_Wyld_Corrosive_Hero</commander>
+        <enemy>1</enemy>
+        <text>Look closely at the items lodged in his back...</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5758</id>
+    <name>Brute Boss</name>
+    <energy>9</energy>
+    <desc>Aria grins as Galya points to the Undead. The necromancer steps toward the brute, the rest of the Undead cowering beneath her gaze.</desc>
+    <commander id="330" />
+    <deck>
+      <card id="8099" name="Prototype Cybot Beta" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="6159" name="Solder Charger" />
+      <card id="6031" name="Iceblood Assassin" />
+      <card id="5086" name="Spirit Blades" />
+      <card id="6034" name="Bone Viper" />
+      <card id="6158" name="Orbos" />
+      <card id="2002" name="Lantern Guardian" />
+      <card id="2110" name="Weathered Widgit" />
+      <card id="2111" mastery_level="2" name="Drillbot" />
+      <card id="6123" mastery_level="3" name="Battleborn Destrier" />
+      <card id="2025" mastery_level="4" name="Blight Knight" />
+      <card id="2113" mastery_level="5" name="Vali, the Thunderer" />
+      <card id="5162" mastery_level="6" name="Aloier, Dragon Sentinel" />
+      <card id="6122" mastery_level="7" name="Relentless Dead" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>0</enemy>
+        <text>That has to be it. Let's crush it and get out of here!</text>
+      </line>
+    </speech>
+  </mission>
 </root>
