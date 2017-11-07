@@ -260,7 +260,6 @@ var defaultStatusValues = {
     barrier_ice: 0,
     corroded: 0,
     enfeebled: 0,
-    enhanced: {},
     enraged: 0,
     envenomed: 0,
     imbued: 0,
@@ -276,7 +275,8 @@ var defaultStatusValues = {
     ondeath_triggered: false,
 }
 function applyDefaultStatuses(card) {
-    card.removeImbue();
+	card.removeImbue();
+	card.enhanced = {};
     for (var status in defaultStatusValues) {
         card[status] = defaultStatusValues[status];
     }
