@@ -6534,7 +6534,7 @@
     <health>44</health>
     <cost>3</cost>
     <rarity>4</rarity>
-    <skill id="corrosive" x="10" />
+    <skill id="evade" x="6" />
     <skill id="heal" x="20" all="1" />
     <skill id="legion" x="7" />
     <type>3</type>
@@ -6543,7 +6543,7 @@
     <upgrade>
       <level>2</level>
       <health>47</health>
-      <skill id="corrosive" x="10" />
+      <skill id="evade" x="6" />
       <skill id="heal" x="22" all="1" />
       <skill id="legion" x="8" />
     </upgrade>
@@ -6551,14 +6551,14 @@
       <level>3</level>
       <health>50</health>
       <attack>9</attack>
-      <skill id="corrosive" x="10" />
+      <skill id="evade" x="8" />
       <skill id="heal" x="24" all="1" />
       <skill id="legion" x="8" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>53</health>
-      <skill id="corrosive" x="11" />
+      <skill id="evade" x="8" />
       <skill id="heal" x="26" all="1" />
       <skill id="legion" x="9" />
     </upgrade>
@@ -6566,14 +6566,14 @@
       <level>5</level>
       <health>56</health>
       <attack>10</attack>
-      <skill id="corrosive" x="11" />
+      <skill id="evade" x="8" />
       <skill id="heal" x="28" all="1" />
       <skill id="legion" x="9" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>60</health>
-      <skill id="corrosive" x="12" />
+      <skill id="evade" x="8" />
       <skill id="heal" x="30" all="1" />
       <skill id="legion" x="10" />
     </upgrade>
@@ -6581,7 +6581,7 @@
   <unit>
     <id>8097</id>
     <card_type>2</card_type>
-    <name>Frostwing Dragon</name>
+    <name>Frostwingward Dragon</name>
     <picture>Ghost_Dragon_B</picture>
     <asset_bundle>91</asset_bundle>
     <attack>8</attack>

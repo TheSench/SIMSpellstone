@@ -547,8 +547,8 @@
     <order>500</order>
     <icon>frostbreath</icon>
     <name>Reanimate</name>
-    <desc>Reanimates creatures when they die.</desc>
-    <attributes x="1" y="1" all="0" c="0" s="0" />
+    <desc>The first time this creature would die, it instead heals back to a percent of its total health.</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
     <status_flag>reanimated</status_flag>
     <hidden>1</hidden>
   </skillType>

@@ -207,7 +207,7 @@ var SKILL_DATA = {
 		name: 'Reanimate',
 		type: 'activation',
 		icon: 'frostbreath',
-		desc: 'Reanimates creatures when they die.'
+		desc: 'The first time this creature would die, it instead heals back to a percent of its total health.'
 	},
 	reinforce : {
 		name: 'Energy Shield',

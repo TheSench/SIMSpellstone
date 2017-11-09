@@ -20466,6 +20466,133 @@
     </upgrade>
   </unit>
   <unit>
+    <id>7164</id>
+    <card_type>2</card_type>
+    <name>Pinegrove Primate</name>
+    <picture>Tree_Harvester_Mecha_A</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1510246800</hidden_until_time>
+    <attack>6</attack>
+    <health>35</health>
+    <cost>4</cost>
+    <rarity>3</rarity>
+    <skill id="corrosive" x="3" />
+    <skill id="heal" x="5" y="16" />
+    <skill id="fervor" x="1" y="3" />
+    <type>3</type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>36</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>37</health>
+      <skill id="corrosive" x="3" />
+      <skill id="heal" x="6" y="16" />
+      <skill id="fervor" x="1" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>7</attack>
+      <skill id="corrosive" x="4" />
+      <skill id="heal" x="6" y="16" />
+      <skill id="fervor" x="1" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>38</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17164</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Pinegrove Pummeler</name>
+    <picture>Tree_Harvester_Mecha_A</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1510246800</hidden_until_time>
+    <attack>7</attack>
+    <health>38</health>
+    <cost>4</cost>
+    <rarity>3</rarity>
+    <skill id="corrosive" x="4" />
+    <skill id="heal" x="7" y="16" />
+    <skill id="fervor" x="2" y="3" />
+    <type>3</type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>39</health>
+      <skill id="corrosive" x="5" />
+      <skill id="heal" x="7" y="16" />
+      <skill id="fervor" x="2" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>8</attack>
+      <skill id="corrosive" x="5" />
+      <skill id="heal" x="8" y="16" />
+      <skill id="fervor" x="2" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>41</health>
+      <skill id="corrosive" x="5" />
+      <skill id="heal" x="8" y="16" />
+      <skill id="fervor" x="3" y="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27164</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Pinegrove Punisher</name>
+    <picture>Tree_Harvester_Mecha_A</picture>
+    <asset_bundle>108</asset_bundle>
+    <hidden_until_time>1510246800</hidden_until_time>
+    <attack>8</attack>
+    <health>42</health>
+    <cost>4</cost>
+    <rarity>3</rarity>
+    <skill id="corrosive" x="6" />
+    <skill id="heal" x="8" y="16" />
+    <skill id="fervor" x="3" y="3" />
+    <type>3</type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="corrosive" x="6" />
+      <skill id="heal" x="9" y="16" />
+      <skill id="fervor" x="3" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>43</health>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>44</health>
+      <skill id="corrosive" x="7" />
+      <skill id="heal" x="9" y="16" />
+      <skill id="fervor" x="3" y="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="7" />
+      <skill id="heal" x="10" y="16" />
+      <skill id="fervor" x="4" y="3" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>7165</id>
     <card_type>2</card_type>
     <name>Raging Irontusk</name>

@@ -7306,5 +7306,148 @@
       <item id="8005" number="1" />
     </reward>
   </achievement>
+  <!-- Campaign Event 6 Weeks 5-8 -->
+  <achievement>
+    <id>3296</id>
+    <type>2</type>
+    <order>101</order>
+    <name>In Search of Love</name>
+    <desc>Complete the 'In Search of Love' campaign on Mastery Level 2.</desc>
+    <mission_req>5745</mission_req>
+    <locked_start_time>1510851600</locked_start_time>
+    <!-- Thu, 16 Nov 2017 17:00:00 -->
+    <req>
+      <campaign>1147</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3297</id>
+    <type>2</type>
+    <order>101</order>
+    <name>In Search of Love</name>
+    <desc>Complete the 'In Search of Love' campaign on Mastery Level 4.</desc>
+    <mission_req>5745</mission_req>
+    <locked_start_time>1510851600</locked_start_time>
+    <!-- Thu, 16 Nov 2017 17:00:00 -->
+    <achievement_req>3296</achievement_req>
+    <req>
+      <campaign>1147</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3298</id>
+    <type>2</type>
+    <order>101</order>
+    <name>In Search of Love</name>
+    <desc>Complete the 'In Search of Love' campaign on Mastery Level 6.</desc>
+    <mission_req>5745</mission_req>
+    <locked_start_time>1510851600</locked_start_time>
+    <!-- Thu, 16 Nov 2017 17:00:00 -->
+    <achievement_req>3297</achievement_req>
+    <req>
+      <campaign>1147</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3299</id>
+    <type>2</type>
+    <order>101</order>
+    <name>In Search of Love</name>
+    <desc>Complete the 'In Search of Love' campaign on Mastery Level 7.</desc>
+    <mission_req>5745</mission_req>
+    <locked_start_time>1510851600</locked_start_time>
+    <!-- Thu, 16 Nov 2017 17:00:00 -->
+    <achievement_req>3298</achievement_req>
+    <req>
+      <campaign>1147</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3300</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Confronting the Robot Within</name>
+    <desc>Complete the 'Confronting the Robot Within' campaign on Mastery Level 2.</desc>
+    <mission_req>5758</mission_req>
+    <locked_start_time>1512061200</locked_start_time>
+    <!-- Thu, 30 Nov 2017 17:00:00 -->
+    <req>
+      <campaign>1148</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3301</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Confronting the Robot Within</name>
+    <desc>Complete the 'Confronting the Robot Within' campaign on Mastery Level 4.</desc>
+    <mission_req>5758</mission_req>
+    <locked_start_time>1512061200</locked_start_time>
+    <!-- Thu, 30 Nov 2017 17:00:00 -->
+    <achievement_req>3300</achievement_req>
+    <req>
+      <campaign>1148</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3302</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Confronting the Robot Within</name>
+    <desc>Complete the 'Confronting the Robot Within' campaign on Mastery Level 6.</desc>
+    <mission_req>5758</mission_req>
+    <locked_start_time>1512061200</locked_start_time>
+    <!-- Thu, 30 Nov 2017 17:00:00 -->
+    <achievement_req>3301</achievement_req>
+    <req>
+      <campaign>1148</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3303</id>
+    <type>2</type>
+    <order>101</order>
+    <name>In Search of Love</name>
+    <desc>Complete the 'Confronting the Robot Within' campaign on Mastery Level 7.</desc>
+    <mission_req>5758</mission_req>
+    <locked_start_time>1512061200</locked_start_time>
+    <!-- Thu, 30 Nov 2017 17:00:00 -->
+    <achievement_req>3302</achievement_req>
+    <req>
+      <campaign>1148</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
 </root>

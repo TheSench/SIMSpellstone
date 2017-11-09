@@ -8996,13 +8996,13 @@
     <id>399</id>
     <card_type>1</card_type>
     <name>Healmaster</name>
-    <portrait>necromancer</portrait>
-    <asset_bundle></asset_bundle>
+    <portrait>Portraits_Ancient_Titan_Mecha</portrait>
+    <asset_bundle>109</asset_bundle>
     <attack>0</attack>
     <health>75</health>
     <rarity>4</rarity>
     <skill id="imbue" x="2" all="1" s="armored" />
-    <skill id="enfeeble" x="4" all="1" />
+    <skill id="rally" x="4" all="1" />
     <skill id="jam" c="3" />
     <type>3</type>
     <set>9999</set>
@@ -9010,35 +9010,35 @@
       <level>2</level>
       <health>79</health>
       <skill id="imbue" x="2" all="1" s="armored" />
-      <skill id="enfeeble" x="5" all="1" />
+      <skill id="rally" x="5" all="1" />
       <skill id="jam" c="3" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>84</health>
       <skill id="imbue" x="2" all="1" s="armored" />
-      <skill id="enfeeble" x="5" all="1" />
+      <skill id="rally" x="5" all="1" />
       <skill id="jam" c="3" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>89</health>
       <skill id="imbue" x="3" all="1" s="armored" />
-      <skill id="enfeeble" x="5" all="1" />
+      <skill id="rally" x="5" all="1" />
       <skill id="jam" c="3" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>94</health>
       <skill id="imbue" x="3" all="1" s="armored" />
-      <skill id="enfeeble" x="6" all="1" />
+      <skill id="rally" x="6" all="1" />
       <skill id="jam" c="2" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>99</health>
       <skill id="imbue" x="4" all="1" s="armored" />
-      <skill id="enfeeble" x="6" all="1" />
+      <skill id="rally" x="6" all="1" />
       <skill id="jam" c="2" />
     </upgrade>
   </unit>
@@ -9234,6 +9234,52 @@
       <health>99</health>
       <skill id="imbue" x="4" s="evade" />
       <skill id="strike" x="5" all="1" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>404</id>
+    <card_type>1</card_type>
+    <name>Fireshard's Slumbering Giant</name>
+    <portrait>giantMechaBoss</portrait>
+    <asset_bundle>109</asset_bundle>
+    <health>56</health>
+    <rarity>4</rarity>
+    <skill id="imbue" x="1" s="evade" />
+    <skill id="strike" x="1" all="1" />
+    <skill id="weaken" x="1" all="1" />
+    <type>2</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>60</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>65</health>
+      <skill id="imbue" x="1" s="evade" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>69</health>
+      <skill id="imbue" x="2" s="evade" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>74</health>
+      <skill id="imbue" x="2" s="evade" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="weaken" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>79</health>
+      <skill id="imbue" x="2" s="evade" />
+      <skill id="strike" x="2" all="1" />
       <skill id="weaken" x="2" all="1" />
     </upgrade>
   </unit>

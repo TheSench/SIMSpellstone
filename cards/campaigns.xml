@@ -4956,7 +4956,7 @@
     </rewards>
     <find_item id="3059" drop_per_energy=".8" />
   </campaign>
-  <!-- Campaign Event 6 -->
+  <!-- Campaign Event 6 Mecha -->
   <campaign>
     <id>1142</id>
     <name>Mining Resources</name>
@@ -5114,6 +5114,81 @@
     </rewards>
     <find_item id="3062" drop_per_energy=".4" />
   </campaign>
+  <!-- Campaign Event 6 Mecha weeks 5-8 
+	
+	<campaign> 
+		<id>1147</id>
+		<name>In Search of Love</name>
+		<campaign_req id='1144' level='1' />
+		<locked_start_time>1510851600</locked_start_time>	| Thu, 16 Nov 2017 17:00:00 |
+		<battleground_id>2025</battleground_id>
+		<location_id>12</location_id>
+		<x>563</x>
+		<y>301</y>
+		<combatBG>CombatBGVoid</combatBG>
+		<missions>
+			<mission_id>5746</mission_id>
+			<mission_id>5747</mission_id>
+			<mission_id>5748</mission_id>
+			<mission_id>5749</mission_id>
+			<mission_id>5750</mission_id>
+			<mission_id>5751</mission_id>
+			<mission_id>5752</mission_id>
+			<mission_id>5753</mission_id>
+			<mission_id>5754</mission_id>
+			<mission_id>5755</mission_id>
+			<mission_id>5756</mission_id>
+			<mission_id>5757</mission_id>
+			<mission_id>5758</mission_id>
+		</missions>
+		<rewards>
+			<card level='1' id='511' />
+			<card level='2' id='511' />
+			<card level='3' id='511' />
+			<card level='4' id='2002' />
+			<card level='5' id='512' />
+			<card level='6' id='2111' />
+			<item level='7' id='3063' />
+		</rewards>
+		<find_item id='3062' drop_per_energy='.6' />
+	</campaign>
+	
+	<campaign> 
+		<id>1148</id>
+		<name>Confronting the Robot Within</name>
+		<campaign_req id='1147' level='1' />
+		<locked_start_time>1512061200</locked_start_time>	| Thu, 30 Nov 2017 17:00:00 |
+		<battleground_id>2026</battleground_id>
+		<location_id>12</location_id>
+		<x>823</x>
+		<y>461</y>
+		<combatBG>CombatBGVoid</combatBG>
+		<missions>
+			<mission_id>5759</mission_id>
+			<mission_id>5760</mission_id>
+			<mission_id>5761</mission_id>
+			<mission_id>5762</mission_id>
+			<mission_id>5763</mission_id>
+			<mission_id>5764</mission_id>
+			<mission_id>5765</mission_id>
+			<mission_id>5766</mission_id>
+			<mission_id>5767</mission_id>
+			<mission_id>5768</mission_id>
+			<mission_id>5769</mission_id>
+			<mission_id>5770</mission_id>
+		</missions>
+		<rewards>
+			<card level='1' id='511' />
+			<card level='2' id='511' />
+			<card level='3' id='511' />
+			<card level='4' id='2002' />
+			<card level='5' id='512' />
+			<card level='6' id='2111' />
+			<item level='7' id='3063' />
+		</rewards>
+		<find_item id='3062' drop_per_energy='.8' />
+	</campaign>
+	-->
   <!-- ============================ -->
   <!-- START Mythic Titan Campaigns -->
   <!-- ============================ -->
@@ -5424,7 +5499,7 @@
       <item level="7" id="2506" number="3" />
     </rewards>
   </campaign>
-  <!-- 
+  <!--  
 	<campaign> 
 		<id>3010</id>
 		<name>Test Healmaster</name>
@@ -5455,7 +5530,7 @@
 			<item level='7' id='2506' number='3' />
 		</rewards>
 	</campaign>
-	  -->
+	 -->
   <!-- Legend Heroes Unlock -->
   <campaign>
     <id>3011</id>

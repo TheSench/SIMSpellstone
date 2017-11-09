@@ -62,7 +62,7 @@ var BATTLEGROUNDS = {
   "105": {
     "name": "Devouring Hunger",
     "id": "105",
-    "desc": "The Undead are invigorated with an unquenchable hunger, giving them Berserk which increases their base attack by 30% after dealing damage.",
+    "desc": "The Undead are invigorated with an unquenchable hunger, giving them Berserk equal to 30% of their base Attack.",
     "effect": [
       {
         "effect_type": "add_skill",
@@ -1343,6 +1343,82 @@ var BATTLEGROUNDS = {
         "effect_type": "scale_attributes",
         "base_mult": .25,
         "mult": .03,
+      },
+    ]
+  },
+  "2025": {
+    "name": "Ion-pitched Chiptune",
+    "id": "2025",
+    "desc": "Non-token enemies become stronger with each passing Mastery level.",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "0",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .1,
+        "mult": .01,
+      },
+    ]
+  },
+  "2026": {
+    "name": "Ion-pitched Chiptune",
+    "id": "2026",
+    "desc": "Non-token enemies become stronger with each passing Mastery level.",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "0",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .1,
+        "mult": .03,
+      },
+    ]
+  },
+  "5001": {
+    "name": "The Arena",
+    "id": "5001",
+    "desc": "In Arena Battles, the player who goes first has two additional Delay added to the first card they play in a battle.",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "on_play",
+        "attacker": 1,
+        "first_play": 1,
+        "effect": {
+        	"effect_type": "add_skill",
+        	"id": "slow",
+        	"x": 2,
+        }
+      },
+    ]
+  },
+  "5002": {
+    "name": "The Arena",
+    "id": "5002",
+    "desc": "In Arena Battles, the player who goes first has one additional Delay added to the first two cards they play in a battle.",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "on_play",
+        "attacker": 1,
+        "effect": {
+        	"effect_type": "add_skill",
+        	"id": "slow",
+        	"x": 1,
+        }
+      },
+      {
+        "effect_type": "on_play",
+        "attacker": 1,
+        "effect": {
+        	"effect_type": "add_skill",
+        	"id": "slow",
+        	"x": 1,
+        }
       },
     ]
   },
