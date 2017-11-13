@@ -933,6 +933,23 @@ var BATTLEGROUNDS = {
       },
     ]
   },
+  "521": {
+    "name": "The Arena (Delay 2)",
+    "id": "521",
+    "desc": "In Arena Battles, the player who goes first has two additional Delay added to the first card they play in a battle.",
+    "effect": [
+      {
+        "effect_type": "on_play",
+        "attacker": 1,
+        "first_play": 1,
+        "effect": {
+        	"effect_type": "add_skill",
+        	"id": "slow",
+        	"x": 2,
+        }
+      },
+    ]
+  },
   "1001": {
     "name": "Primal Mending",
     "id": "1001",
@@ -1417,6 +1434,34 @@ var BATTLEGROUNDS = {
         "effect": {
         	"effect_type": "add_skill",
         	"id": "slow",
+        	"x": 1,
+        }
+      },
+    ]
+  },
+  "5003": {
+    "name": "The Arena",
+    "id": "5003",
+    "desc": "In Arena Battles, the player who goes first has one Delay added to the first card they play and the player who goes second has one Delay removed from the first card they play.",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "on_play",
+        "attacker": 1,
+        "first_play": 1,
+        "effect": {
+        	"effect_type": "add_skill",
+        	"id": "slow",
+        	"x": 1,
+        }
+      },
+      {
+        "effect_type": "on_play",
+        "defender": 1,
+        "first_play": 1,
+        "effect": {
+        	"effect_type": "add_skill",
+        	"id": "haste",
         	"x": 1,
         }
       },

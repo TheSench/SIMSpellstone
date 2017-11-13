@@ -6376,11 +6376,11 @@
     <name>Beta Berserker</name>
     <picture>Royal_Guardian_A</picture>
     <asset_bundle>19</asset_bundle>
-    <attack>10</attack>
+    <attack>4</attack>
     <health>22</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="weaken" x="2" all="1" />
+    <skill id="evade" x="6" />
     <skill id="enrage" x="3" all="1" />
     <skill id="berserk" x="4" />
     <type>2</type>
@@ -6389,38 +6389,38 @@
     <upgrade>
       <level>2</level>
       <health>23</health>
-      <skill id="weaken" x="2" all="1" />
+      <skill id="evade" x="6" />
       <skill id="enrage" x="4" all="1" />
       <skill id="berserk" x="4" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>25</health>
-      <attack>11</attack>
-      <skill id="weaken" x="2" all="1" />
+      <attack>5</attack>
+      <skill id="evade" x="6" />
       <skill id="enrage" x="4" all="1" />
       <skill id="berserk" x="5" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>26</health>
-      <skill id="weaken" x="2" all="1" />
+      <skill id="evade" x="7" />
       <skill id="enrage" x="4" all="1" />
       <skill id="berserk" x="5" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>28</health>
-      <attack>12</attack>
-      <skill id="weaken" x="3" all="1" />
+      <attack>5</attack>
+      <skill id="evade" x="7" />
       <skill id="enrage" x="4" all="1" />
       <skill id="berserk" x="5" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>30</health>
-      <attack>14</attack>
-      <skill id="weaken" x="3" all="1" />
+      <attack>6</attack>
+      <skill id="evade" x="7" />
       <skill id="enrage" x="5" all="1" />
       <skill id="berserk" x="6" />
     </upgrade>

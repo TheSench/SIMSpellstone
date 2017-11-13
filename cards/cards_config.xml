@@ -474,6 +474,15 @@
     <hidden>1</hidden>
   </skillType>
   <skillType>
+    <id>haste</id>
+    <order>500</order>
+    <icon>fury</icon>
+    <name>Haste</name>
+    <desc>Decreases the creature's delay.</desc>
+    <attributes x="1" y="0" all="0" c="0" s="0" />
+    <hidden>1</hidden>
+  </skillType>
+  <skillType>
     <id>mark</id>
     <order>500</order>
     <icon>hex</icon>
@@ -545,7 +554,7 @@
   <skillType>
     <id>reanimate</id>
     <order>500</order>
-    <icon>frostbreath</icon>
+    <icon>reanimate</icon>
     <name>Reanimate</name>
     <desc>The first time this creature would die, it instead heals back to a percent of its total health.</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
@@ -692,6 +701,13 @@
     <picture>set_icon_reward</picture>
   </cardSet>
   <cardSet>
+    <id>2100</id>
+    <name>Mythic Reward</name>
+    <visible>1</visible>
+    <icon>set_icon_reward</icon>
+    <picture>set_icon_reward</picture>
+  </cardSet>
+  <cardSet>
     <id>3000</id>
     <name>Premium</name>
     <visible>1</visible>
@@ -707,7 +723,7 @@
   </cardSet>
   <cardSet>
     <id>5000</id>
-    <name>Mythic Reward</name>
+    <name>Champion</name>
     <visible>1</visible>
     <icon>set_icon_reward</icon>
     <picture>set_icon_reward</picture>

@@ -1967,7 +1967,7 @@
     <skill id="rally" x="3" all="1" />
     <skill id="heal" x="3" all="1" />
     <type>3</type>
-    <set>5000</set>
+    <set>2100</set>
     <upgrade>
       <level>2</level>
       <health>36</health>
@@ -2016,7 +2016,7 @@
     <skill id="protect" all="1" x="3" />
     <skill id="legion" x="5" />
     <type>1</type>
-    <set>5000</set>
+    <set>2100</set>
     <upgrade>
       <level>2</level>
       <skill id="armored" x="4" />
@@ -2070,7 +2070,7 @@
     <skill id="strike" all="1" x="3" />
     <skill id="scorchbreath" x="3" />
     <type>2</type>
-    <set>5000</set>
+    <set>2100</set>
     <upgrade>
       <level>2</level>
       <health>34</health>
@@ -3927,7 +3927,7 @@
     <rarity>1</rarity>
     <type>2</type>
     <sub_type>9</sub_type>
-    <set>5000</set>
+    <set>2100</set>
     <upgrade>
       <level>2</level>
       <health>4</health>
@@ -3953,7 +3953,7 @@
     <rarity>2</rarity>
     <type>2</type>
     <sub_type>9</sub_type>
-    <set>5000</set>
+    <set>2100</set>
     <upgrade>
       <level>2</level>
       <health>12</health>
@@ -3986,7 +3986,7 @@
     <rarity>3</rarity>
     <type>2</type>
     <sub_type>9</sub_type>
-    <set>5000</set>
+    <set>2100</set>
     <upgrade>
       <level>2</level>
       <health>19</health>
@@ -4023,7 +4023,7 @@
     <rarity>4</rarity>
     <type>2</type>
     <sub_type>9</sub_type>
-    <set>5000</set>
+    <set>2100</set>
     <upgrade>
       <level>2</level>
       <health>22</health>
@@ -4068,7 +4068,7 @@
     <rarity>5</rarity>
     <type>2</type>
     <sub_type>9</sub_type>
-    <set>5000</set>
+    <set>2100</set>
     <upgrade>
       <level>2</level>
       <skill id="frost" x="2" />
@@ -8035,7 +8035,7 @@
     <rarity>3</rarity>
     <type>3</type>
     <sub_type>12</sub_type>
-    <set>5000</set>
+    <set>2100</set>
     <upgrade>
       <level>2</level>
       <skill id="fury" x="1" />
@@ -8080,7 +8080,7 @@
     <rarity>4</rarity>
     <type>3</type>
     <sub_type>12</sub_type>
-    <set>5000</set>
+    <set>2100</set>
     <upgrade>
       <level>2</level>
       <health>31</health>
@@ -8127,7 +8127,7 @@
     <rarity>5</rarity>
     <type>3</type>
     <sub_type>12</sub_type>
-    <set>5000</set>
+    <set>2100</set>
     <upgrade>
       <level>2</level>
       <health>38</health>

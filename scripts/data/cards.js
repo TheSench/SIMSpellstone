@@ -134701,7 +134701,7 @@ var CARDS = {
   "27164": {
     "id": "27164",
     "name": "Pinegrove Punisher",
-    "picture": "Tree_Harvester_Mecha_A",
+    "picture": "Tree_Harvester_Mecha_B",
     "hidden_until": "1510246800000",
     "rarity": "3",
     "set": "3000",
@@ -135052,6 +135052,240 @@ var CARDS = {
           {
             "id": "berserk",
             "x": 5,
+          },
+        ],
+      },
+    }
+  },
+  "7166": {
+    "id": "7166",
+    "name": "Rejuvenation Acolyte",
+    "picture": "Psychic_Mecha_A",
+    "hidden_until": "1510592400000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["16"],
+    "health": 18,
+    "attack": 3,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 2,
+      },
+      {
+        "id": "heal",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "heal",
+        "x": 3,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 19,
+        "skill": [],
+      },
+      "3": {
+        "health": 20,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 2,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 4,
+          },
+        ],
+      },
+      "5": {
+        "health": 21,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 4,
+          },
+        ],
+      },
+    }
+  },
+  "17166": {
+    "id": "17166",
+    "name": "Rejuvenation Automaton",
+    "picture": "Psychic_Mecha_A",
+    "hidden_until": "1510592400000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["16"],
+    "health": 22,
+    "attack": 4,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 3,
+      },
+      {
+        "id": "heal",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "heal",
+        "x": 4,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 23,
+        "skill": [],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 3,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 5,
+          },
+        ],
+      },
+      "4": {
+        "health": 24,
+        "skill": [],
+      },
+      "5": {
+        "health": 25,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 4,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 5,
+          },
+        ],
+      },
+    }
+  },
+  "27166": {
+    "id": "27166",
+    "name": "Rejuvenation Simulacrum",
+    "picture": "Psychic_Mecha_B",
+    "hidden_until": "1510592400000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "3",
+    "sub_type": ["16"],
+    "health": 26,
+    "attack": 4,
+    "cost": 2,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "armored",
+        "x": 4,
+      },
+      {
+        "id": "heal",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "heal",
+        "x": 6,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 27,
+        "skill": [],
+      },
+      "3": {
+        "attack": 5,
+        "skill": [],
+      },
+      "4": {
+        "health": 28,
+        "skill": [],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 5,
+          },
+          {
+            "id": "heal",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 6,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "armored",
+            "x": 5,
+          },
+          {
+            "id": "heal",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "heal",
+            "x": 7,
           },
         ],
       },
@@ -138777,7 +139011,7 @@ var CARDS = {
     "name": "Atlas, the Ancient",
     "picture": "prefab_wyldBoss_A",
     "rarity": "5",
-    "set": "5000",
+    "set": "2100",
     "card_type": "2",
     "type": "3",
     "sub_type": [],
@@ -138877,7 +139111,7 @@ var CARDS = {
     "name": "Solaron, the Origin",
     "picture": "prefab_aetherBoss_A",
     "rarity": "5",
-    "set": "5000",
+    "set": "2100",
     "card_type": "2",
     "type": "1",
     "sub_type": [],
@@ -138989,7 +139223,7 @@ var CARDS = {
     "name": "Vulcanos, the Forge",
     "picture": "prefab_chaosBoss_A",
     "rarity": "5",
-    "set": "5000",
+    "set": "2100",
     "card_type": "2",
     "type": "2",
     "sub_type": [],
@@ -142444,7 +142678,7 @@ var CARDS = {
     "desc": "A mysterious egg we picked up during our travels. No one knows where it came from, but it begins to move when near Embersouls.",
     "picture": "Common_Dragon_A",
     "rarity": "1",
-    "set": "5000",
+    "set": "2100",
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
@@ -142470,7 +142704,7 @@ var CARDS = {
     "desc": "The egg has hatched into a newborn dragon! He's got an appetite for Embersouls.",
     "picture": "Rare_Dragon_A",
     "rarity": "2",
-    "set": "5000",
+    "set": "2100",
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
@@ -142511,7 +142745,7 @@ var CARDS = {
     "desc": "Narix has grown in size, and he's becoming harder to control. He still follows your orders, but he's getting more intelligent every day.",
     "picture": "Epic_Dragon_B",
     "rarity": "3",
-    "set": "5000",
+    "set": "2100",
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
@@ -142561,7 +142795,7 @@ var CARDS = {
     "name": "Narix, the Tyrant",
     "picture": "Legendary_Dragon_B",
     "rarity": "4",
-    "set": "5000",
+    "set": "2100",
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
@@ -142648,7 +142882,7 @@ var CARDS = {
     "name": "Narix, Dragonlord",
     "picture": "prefab_mythicDragon_A",
     "rarity": "5",
-    "set": "5000",
+    "set": "2100",
     "card_type": "2",
     "type": "2",
     "sub_type": ["9"],
@@ -149958,7 +150192,7 @@ var CARDS = {
     "picture": "Epic_Seafolk_A",
     "hidden_until": "1484240400000",
     "rarity": "3",
-    "set": "5000",
+    "set": "2100",
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
@@ -150048,7 +150282,7 @@ var CARDS = {
     "picture": "Legendary_Seafolk_A",
     "hidden_until": "1484240400000",
     "rarity": "4",
-    "set": "5000",
+    "set": "2100",
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
@@ -150141,7 +150375,7 @@ var CARDS = {
     "picture": "prefab_Kraken_A",
     "hidden_until": "1484240400000",
     "rarity": "5",
-    "set": "5000",
+    "set": "2100",
     "card_type": "2",
     "type": "3",
     "sub_type": ["12"],
@@ -188248,14 +188482,13 @@ var CARDS = {
     "type": "2",
     "sub_type": ["16"],
     "health": 22,
-    "attack": 10,
+    "attack": 4,
     "cost": 2,
     "maxLevel": 6,
     "skill": [
       {
-        "id": "weaken",
-        "x": 2,
-        "all": "1",
+        "id": "evade",
+        "x": 6,
       },
       {
         "id": "enrage",
@@ -188272,9 +188505,8 @@ var CARDS = {
         "health": 23,
         "skill": [
           {
-            "id": "weaken",
-            "x": 2,
-            "all": "1",
+            "id": "evade",
+            "x": 6,
           },
           {
             "id": "enrage",
@@ -188288,13 +188520,12 @@ var CARDS = {
         ],
       },
       "3": {
-        "attack": 11,
+        "attack": 5,
         "health": 25,
         "skill": [
           {
-            "id": "weaken",
-            "x": 2,
-            "all": "1",
+            "id": "evade",
+            "x": 6,
           },
           {
             "id": "enrage",
@@ -188311,9 +188542,8 @@ var CARDS = {
         "health": 26,
         "skill": [
           {
-            "id": "weaken",
-            "x": 2,
-            "all": "1",
+            "id": "evade",
+            "x": 7,
           },
           {
             "id": "enrage",
@@ -188327,13 +188557,12 @@ var CARDS = {
         ],
       },
       "5": {
-        "attack": 12,
+        "attack": 5,
         "health": 28,
         "skill": [
           {
-            "id": "weaken",
-            "x": 3,
-            "all": "1",
+            "id": "evade",
+            "x": 7,
           },
           {
             "id": "enrage",
@@ -188347,13 +188576,12 @@ var CARDS = {
         ],
       },
       "6": {
-        "attack": 14,
+        "attack": 6,
         "health": 30,
         "skill": [
           {
-            "id": "weaken",
-            "x": 3,
-            "all": "1",
+            "id": "evade",
+            "x": 7,
           },
           {
             "id": "enrage",
@@ -189527,7 +189755,7 @@ var CARDS = {
   "9982": {
     "id": "9982",
     "name": "Unused Art",
-    "picture": "Psychic_Mecha_A",
+    "picture": "Seraph_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -189542,7 +189770,7 @@ var CARDS = {
   "19982": {
     "id": "19982",
     "name": "Unused Art",
-    "picture": "Psychic_Mecha_B",
+    "picture": "Seraph_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -189557,7 +189785,7 @@ var CARDS = {
   "9981": {
     "id": "9981",
     "name": "Unused Art",
-    "picture": "Seraph_A",
+    "picture": "Spiky_Bug_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -189572,7 +189800,7 @@ var CARDS = {
   "19981": {
     "id": "19981",
     "name": "Unused Art",
-    "picture": "Seraph_B",
+    "picture": "Spiky_Bug_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -189587,22 +189815,7 @@ var CARDS = {
   "9980": {
     "id": "9980",
     "name": "Unused Art",
-    "picture": "Spiky_Bug_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19980": {
-    "id": "19980",
-    "name": "Unused Art",
-    "picture": "Spiky_Bug_B",
+    "picture": "Tarian_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -189617,7 +189830,7 @@ var CARDS = {
   "9979": {
     "id": "9979",
     "name": "Unused Art",
-    "picture": "Tarian_A",
+    "picture": "Tremor_Wurm_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -189629,10 +189842,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "19978": {
-    "id": "19978",
+  "9978": {
+    "id": "9978",
     "name": "Unused Art",
-    "picture": "Tree_Harvester_Mecha_B",
+    "picture": "Unused1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -189647,7 +189860,7 @@ var CARDS = {
   "9977": {
     "id": "9977",
     "name": "Unused Art",
-    "picture": "Tremor_Wurm_A",
+    "picture": "Unused2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -189662,7 +189875,7 @@ var CARDS = {
   "9976": {
     "id": "9976",
     "name": "Unused Art",
-    "picture": "Unused1_A",
+    "picture": "Unused3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -189677,7 +189890,7 @@ var CARDS = {
   "9975": {
     "id": "9975",
     "name": "Unused Art",
-    "picture": "Unused2_A",
+    "picture": "Ursurio_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -189692,7 +189905,7 @@ var CARDS = {
   "9974": {
     "id": "9974",
     "name": "Unused Art",
-    "picture": "Unused3_A",
+    "picture": "Void_Abomination_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -189707,36 +189920,6 @@ var CARDS = {
   "9973": {
     "id": "9973",
     "name": "Unused Art",
-    "picture": "Ursurio_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9972": {
-    "id": "9972",
-    "name": "Unused Art",
-    "picture": "Void_Abomination_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9971": {
-    "id": "9971",
-    "name": "Unused Art",
     "picture": "Yuriel_A",
     "rarity": "0",
     "card_type": "2",
@@ -189750,4 +189933,4 @@ var CARDS = {
     "upgrades": {}
   },
 };
-var CardsUpdated = 1510249767685.45;
+var CardsUpdated = 1510593774614.82;

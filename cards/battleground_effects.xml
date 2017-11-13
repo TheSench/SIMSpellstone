@@ -724,6 +724,18 @@
       <skill id="enhance" s="frost" mult="0.5" all="1" />
     </effect>
   </battleground>
+  <battleground>
+    <id>521</id>
+    <name>The Arena</name>
+    <desc>In Arena Battles, the player who goes first has two additional Delay added to the first card they play in a battle.</desc>
+    <icon>arenaBGE_64.png</icon>
+    <icon_bundle>31</icon_bundle>
+    <effect>
+      <on_play first_play="1" attacker="1">
+        <add_skill id="slow" x="2" />
+      </on_play>
+    </effect>
+  </battleground>
   <!-- 1001+: Personal BGE -->
   <battleground>
     <id>1001</id>
@@ -1193,6 +1205,21 @@
       </on_play>
       <on_play index="2" attacker="1">
         <add_skill id="slow" x="1" />
+      </on_play>
+    </effect>
+  </battleground>
+  <battleground>
+    <id>5003</id>
+    <name>The Arena</name>
+    <desc>In Arena Battles, the player who goes first has one Delay added to the first card they play and the player who goes second has one Delay removed from the first card they play.</desc>
+    <icon>arenaBGE_64.png</icon>
+    <icon_bundle>31</icon_bundle>
+    <effect>
+      <on_play first_play="1" attacker="1">
+        <add_skill id="slow" x="1" />
+      </on_play>
+      <on_play first_play="1" defender="1">
+        <add_skill id="haste" x="1" />
       </on_play>
     </effect>
   </battleground>

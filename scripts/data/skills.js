@@ -107,6 +107,12 @@ var SKILL_DATA = {
 		icon: 'fury',
 		desc: 'When damaged by an attack, deal damage to attacker and increase Attack permanently'
 	},
+	haste : {
+		name: 'Haste',
+		type: 'activation',
+		icon: 'fury',
+		desc: 'Decreases the creature\'s delay.'
+	},
 	heal : {
 		name: 'Heal',
 		type: 'activation',
@@ -206,7 +212,7 @@ var SKILL_DATA = {
 	reanimate : {
 		name: 'Reanimate',
 		type: 'activation',
-		icon: 'frostbreath',
+		icon: 'reanimate',
 		desc: 'The first time this creature would die, it instead heals back to a percent of its total health.'
 	},
 	reinforce : {
