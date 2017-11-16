@@ -1571,6 +1571,30 @@
     <card_id>22113</card_id>
     <resource card_id="12113" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12114</card_id>
+    <resource card_id="2114" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22114</card_id>
+    <resource card_id="12114" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12115</card_id>
+    <resource card_id="2115" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22115</card_id>
+    <resource card_id="12115" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>12116</card_id>
+    <resource card_id="2116" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>22116</card_id>
+    <resource card_id="12116" number="2" />
+  </fusion_recipe>
   <!-- END SET 2000 - Reward -->
   <!-- START SET 3000 - Premium -->
   <!-- AETHER PREMIUM SET BEGIN -->
@@ -2902,6 +2926,14 @@
     <card_id>25165</card_id>
     <resource card_id="15165" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15167</card_id>
+    <resource card_id="5167" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25167</card_id>
+    <resource card_id="15167" number="2" />
+  </fusion_recipe>
   <!-- CHAOS PREMIUM SET BEGIN -->
   <fusion_recipe>
     <card_id>16000</card_id>
@@ -4182,6 +4214,14 @@
   <fusion_recipe>
     <card_id>26161</card_id>
     <resource card_id="16161" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16163</card_id>
+    <resource card_id="6163" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26163</card_id>
+    <resource card_id="16163" number="2" />
   </fusion_recipe>
   <!-- WYLD PREMIUM SET BEGIN -->
   <fusion_recipe>
@@ -5503,6 +5543,14 @@
   <fusion_recipe>
     <card_id>27166</card_id>
     <resource card_id="17166" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17167</card_id>
+    <resource card_id="7167" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27167</card_id>
+    <resource card_id="17167" number="2" />
   </fusion_recipe>
   <!-- END SET 3000 - Premium -->
   <!-- START SET 8000 - Story Element Assaults -->

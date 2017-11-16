@@ -971,6 +971,20 @@ var CAMPAIGNS = {
     "battleground_id": "2024",
     "missions": ["5742","5743","5744","5745"]
   },
+  "1147": {
+    "id": "1147",
+    "name": "In Search of Love",
+    "location_id": "12",
+    "battleground_id": "2025",
+    "missions": ["5746","5747","5748","5749","5750","5751","5752","5753","5754","5755","5756","5757","5758"]
+  },
+  "1148": {
+    "id": "1148",
+    "name": "Confronting the Robot Within",
+    "location_id": "12",
+    "battleground_id": "2026",
+    "missions": ["5759","5760","5761","5762","5763","5764","5765","5766","5767","5768","5769","5770"]
+  },
   "3011": {
     "id": "3011",
     "name": "Tinman's Change of Heart",

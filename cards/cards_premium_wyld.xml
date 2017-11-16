@@ -3970,7 +3970,7 @@
     <hidden_until_time>1452790800</hidden_until_time>
     <!-- Thu, 14 Jan 2016 17:00:00 GMT -->
     <attack>5</attack>
-    <health>19</health>
+    <health>29</health>
     <cost>4</cost>
     <rarity>4</rarity>
     <skill id="armored" x="1" />
@@ -3981,7 +3981,7 @@
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>21</health>
+      <health>31</health>
     </upgrade>
     <upgrade>
       <level>3</level>
@@ -3991,7 +3991,7 @@
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>23</health>
+      <health>33</health>
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -4016,7 +4016,7 @@
     <hidden_until_time>1452790800</hidden_until_time>
     <!-- Thu, 14 Jan 2016 17:00:00 GMT -->
     <attack>5</attack>
-    <health>24</health>
+    <health>34</health>
     <cost>4</cost>
     <rarity>4</rarity>
     <skill id="armored" x="2" />
@@ -4033,11 +4033,11 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>25</health>
+      <health>35</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>26</health>
+      <health>36</health>
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -4045,9 +4045,9 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="armored" x="3" />
+      <skill id="armored" x="4" />
       <skill id="rally" x="3" all="1" y="7" />
-      <skill id="berserk" x="2" />
+      <skill id="berserk" x="3" />
     </upgrade>
   </unit>
   <unit>
@@ -4060,41 +4060,42 @@
     <hidden_until_time>1452790800</hidden_until_time>
     <!-- Thu, 14 Jan 2016 17:00:00 GMT -->
     <attack>6</attack>
-    <health>29</health>
+    <health>40</health>
     <cost>4</cost>
     <rarity>4</rarity>
-    <skill id="armored" x="3" />
-    <skill id="rally" x="3" all="1" y="7" />
-    <skill id="berserk" x="2" />
+    <skill id="armored" x="4" />
+    <skill id="rally" x="4" all="1" y="7" />
+    <skill id="berserk" x="3" />
     <type>3</type>
     <sub_type>7</sub_type>
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>30</health>
+      <health>44</health>
       <attack>7</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>32</health>
+      <health>46</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <skill id="armored" x="4" />
-      <skill id="rally" x="3" all="1" y="7" />
-      <skill id="berserk" x="2" />
+      <skill id="armored" x="5" />
+      <skill id="rally" x="4" all="1" y="7" />
+      <skill id="berserk" x="4" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="armored" x="4" />
-      <skill id="rally" x="3" all="1" y="7" />
-      <skill id="berserk" x="3" />
+      <skill id="armored" x="5" />
+      <skill id="rally" x="5" all="1" y="7" />
+      <skill id="berserk" x="4" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="armored" x="4" />
-      <skill id="rally" x="4" all="1" y="7" />
-      <skill id="berserk" x="3" />
+      <health>48</health>
+      <skill id="armored" x="6" />
+      <skill id="rally" x="6" all="1" y="7" />
+      <skill id="berserk" x="5" />
     </upgrade>
   </unit>
   <unit>
@@ -4268,6 +4269,7 @@
     <rarity>3</rarity>
     <skill id="evade" x="1" />
     <skill id="fervor" x="2" y="3" />
+    <skill id="berserk" x="1" />
     <type>3</type>
     <sub_type>7</sub_type>
     <set>3000</set>
@@ -4279,6 +4281,7 @@
       <level>3</level>
       <skill id="evade" x="1" />
       <skill id="fervor" x="3" y="3" />
+      <skill id="berserk" x="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -4288,7 +4291,7 @@
       <level>5</level>
       <skill id="evade" x="1" />
       <skill id="fervor" x="3" y="3" />
-      <skill id="berserk" x="1" />
+      <skill id="berserk" x="2" />
     </upgrade>
   </unit>
   <unit>
@@ -4300,13 +4303,13 @@
     <asset_bundle>43</asset_bundle>
     <hidden_until_time>1454000400</hidden_until_time>
     <!-- Thu, 28 Jan 2016 17:00:00 GMT -->
-    <attack>2</attack>
+    <attack>3</attack>
     <health>13</health>
     <cost>1</cost>
     <rarity>3</rarity>
     <skill id="evade" x="1" />
     <skill id="fervor" x="3" y="3" />
-    <skill id="berserk" x="1" />
+    <skill id="berserk" x="2" />
     <type>3</type>
     <sub_type>7</sub_type>
     <set>3000</set>
@@ -4316,17 +4319,17 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>15</health>
+      <health>16</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>3</attack>
+      <attack>4</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="evade" x="1" />
+      <skill id="evade" x="2" />
       <skill id="fervor" x="3" y="3" />
-      <skill id="berserk" x="2" />
+      <skill id="berserk" x="3" />
     </upgrade>
   </unit>
   <unit>
@@ -4451,9 +4454,9 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="fervor" x="3" y="7" />
+      <skill id="fervor" x="4" y="7" />
       <skill id="enfeeble" x="3" />
-      <skill id="pierce" x="5" />
+      <skill id="pierce" x="6" />
     </upgrade>
   </unit>
   <unit>
@@ -20831,7 +20834,7 @@
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="armored" x="4" />
-    <skill id="heal" x="2" all="1" />
+    <skill id="heal" x="2" />
     <skill id="heal" x="6" />
     <type>3</type>
     <sub_type>16</sub_type>
@@ -20851,14 +20854,145 @@
     <upgrade>
       <level>5</level>
       <skill id="armored" x="5" />
-      <skill id="heal" x="2" all="1" />
+      <skill id="heal" x="2" />
       <skill id="heal" x="6" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <skill id="armored" x="5" />
-      <skill id="heal" x="3" all="1" />
+      <skill id="heal" x="3" />
       <skill id="heal" x="7" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>7167</id>
+    <card_type>2</card_type>
+    <name>Salty Scallywag</name>
+    <picture>Undead_Tentacle_Barrier_A</picture>
+    <asset_bundle>112</asset_bundle>
+    <hidden_until_time>1510851600</hidden_until_time>
+    <attack>6</attack>
+    <health>23</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="2" />
+    <skill id="protect" x="2" y="12" />
+    <skill id="poison" x="4" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>25</health>
+      <skill id="armored" x="2" />
+      <skill id="protect" x="2" y="12" />
+      <skill id="poison" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>26</health>
+      <skill id="armored" x="3" />
+      <skill id="protect" x="2" y="12" />
+      <skill id="poison" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>27</health>
+      <skill id="armored" x="3" />
+      <skill id="protect" x="2" y="12" />
+      <skill id="poison" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17167</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Salty Skeleton</name>
+    <picture>Undead_Tentacle_Barrier_A</picture>
+    <asset_bundle>112</asset_bundle>
+    <hidden_until_time>1510851600</hidden_until_time>
+    <attack>6</attack>
+    <health>28</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="3" />
+    <skill id="protect" x="3" y="12" />
+    <skill id="poison" x="6" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>7</attack>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>30</health>
+      <skill id="armored" x="3" />
+      <skill id="protect" x="3" y="12" />
+      <skill id="poison" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="4" />
+      <skill id="protect" x="3" y="12" />
+      <skill id="poison" x="8" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27167</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Salty Brineskull</name>
+    <picture>Undead_Tentacle_Barrier_B</picture>
+    <asset_bundle>112</asset_bundle>
+    <hidden_until_time>1510851600</hidden_until_time>
+    <attack>7</attack>
+    <health>32</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="armored" x="4" />
+    <skill id="protect" x="4" y="12" />
+    <skill id="poison" x="8" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <sub_type>12</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>33</health>
+      <skill id="armored" x="4" />
+      <skill id="protect" x="4" y="12" />
+      <skill id="poison" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>34</health>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>35</health>
+      <skill id="armored" x="5" />
+      <skill id="protect" x="4" y="12" />
+      <skill id="poison" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="5" />
+      <skill id="protect" x="5" y="12" />
+      <skill id="poison" x="10" />
     </upgrade>
   </unit>
 </root>

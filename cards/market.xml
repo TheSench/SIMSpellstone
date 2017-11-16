@@ -4430,4 +4430,20 @@
       <card min_level="1" max_level="1" unit_id="5142" display_card_id="5142" />
     </cards>
   </store_item>
+  <store_item>
+    <id>5093</id>
+    <name>Energy Refill Pack</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Fifteen Energy Potion +20 for 100 Shards for a limited time only! May be purchased an unlimited number of times!</desc>
+    <asset_prefab>event_012_energyChest</asset_prefab>
+    <bundle>62</bundle>
+    <icon>energy_refill_20</icon>
+    <hc_cost>100</hc_cost>
+    <!-- Stuff to give -->
+    <item id="1004" quantity="15" />
+  </store_item>
 </root>

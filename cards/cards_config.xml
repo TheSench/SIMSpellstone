@@ -556,7 +556,7 @@
     <order>500</order>
     <icon>reanimate</icon>
     <name>Reanimate</name>
-    <desc>The first time this creature would die, it instead heals back to a percent of its total health.</desc>
+    <desc>Revives on first death</desc>
     <attributes x="1" y="0" all="0" c="0" s="0" />
     <status_flag>reanimated</status_flag>
     <hidden>1</hidden>

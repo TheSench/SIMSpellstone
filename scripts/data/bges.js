@@ -857,7 +857,7 @@ var BATTLEGROUNDS = {
   "516": {
     "name": "Cursed Land",
     "id": "516",
-    "desc": "Hex skills are 50% more effective.",
+    "desc": "Hex and Hex All skills are 50% more effective.",
     "effect": [
       {
         "effect_type": "skill",
@@ -934,7 +934,7 @@ var BATTLEGROUNDS = {
     ]
   },
   "521": {
-    "name": "The Arena (Delay 2)",
+    "name": "The Arena",
     "id": "521",
     "desc": "In Arena Battles, the player who goes first has two additional Delay added to the first card they play in a battle.",
     "effect": [
@@ -947,6 +947,20 @@ var BATTLEGROUNDS = {
         	"id": "slow",
         	"x": 2,
         }
+      },
+    ]
+  },
+  "522": {
+    "name": "Empowered Spirits",
+    "id": "522",
+    "desc": "Empower and Empower All skills are 50% more effective.",
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "enhance",
+        "mult": 0.5,
+        "s": "rally",
+        "all": "1",
       },
     ]
   },

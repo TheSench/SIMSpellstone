@@ -671,7 +671,7 @@
   <battleground>
     <id>516</id>
     <name>Cursed Land</name>
-    <desc>Hex skills are 50% more effective.</desc>
+    <desc>Hex and Hex All skills are 50% more effective.</desc>
     <icon>Hex_BGE_64</icon>
     <icon_bundle>82</icon_bundle>
     <effect>
@@ -734,6 +734,16 @@
       <on_play first_play="1" attacker="1">
         <add_skill id="slow" x="2" />
       </on_play>
+    </effect>
+  </battleground>
+  <battleground>
+    <id>522</id>
+    <name>Empowered Spirits</name>
+    <desc>Empower and Empower All skills are 50% more effective.</desc>
+    <icon>empower_BGE_64</icon>
+    <icon_bundle>96</icon_bundle>
+    <effect>
+      <skill id="enhance" s="rally" mult="0.5" all="1" />
     </effect>
   </battleground>
   <!-- 1001+: Personal BGE -->
