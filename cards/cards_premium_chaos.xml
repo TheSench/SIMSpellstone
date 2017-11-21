@@ -20302,4 +20302,133 @@
       <skill id="pierce" x="7" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6167</id>
+    <card_type>2</card_type>
+    <name>Macabre Machine</name>
+    <picture>Skeleton_Mecha_Pilot_A</picture>
+    <asset_bundle>112</asset_bundle>
+    <hidden_until_time>1511197200</hidden_until_time>
+    <attack>5</attack>
+    <health>17</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="strike" x="2" />
+    <skill id="strike" x="1" all="1" />
+    <skill id="nullify" x="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <sub_type>16</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="strike" x="3" />
+      <skill id="strike" x="1" all="1" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>20</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16167</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Macabre Construct</name>
+    <picture>Skeleton_Mecha_Pilot_A</picture>
+    <asset_bundle>112</asset_bundle>
+    <hidden_until_time>1511197200</hidden_until_time>
+    <attack>6</attack>
+    <health>21</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="strike" x="4" />
+    <skill id="strike" x="1" all="1" />
+    <skill id="nullify" x="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <sub_type>16</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="strike" x="4" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="strike" x="4" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>23</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26167</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Macabre Mechanation</name>
+    <picture>Skeleton_Mecha_Pilot_B</picture>
+    <asset_bundle>112</asset_bundle>
+    <hidden_until_time>1511197200</hidden_until_time>
+    <attack>7</attack>
+    <health>24</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="strike" x="5" />
+    <skill id="strike" x="2" all="1" />
+    <skill id="nullify" x="2" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <sub_type>16</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="strike" x="6" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="strike" x="6" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="nullify" x="3" />
+    </upgrade>
+  </unit>
 </root>

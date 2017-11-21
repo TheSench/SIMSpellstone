@@ -4223,6 +4223,14 @@
     <card_id>26163</card_id>
     <resource card_id="16163" number="2" />
   </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16167</card_id>
+    <resource card_id="6167" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26167</card_id>
+    <resource card_id="16167" number="2" />
+  </fusion_recipe>
   <!-- WYLD PREMIUM SET BEGIN -->
   <fusion_recipe>
     <card_id>17000</card_id>

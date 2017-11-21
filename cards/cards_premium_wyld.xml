@@ -20834,7 +20834,7 @@
     <cost>2</cost>
     <rarity>4</rarity>
     <skill id="armored" x="4" />
-    <skill id="heal" x="2" />
+    <skill id="heal" x="2" all="1" />
     <skill id="heal" x="6" />
     <type>3</type>
     <sub_type>16</sub_type>
@@ -20854,13 +20854,13 @@
     <upgrade>
       <level>5</level>
       <skill id="armored" x="5" />
-      <skill id="heal" x="2" />
+      <skill id="heal" x="2" all="1" />
       <skill id="heal" x="6" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <skill id="armored" x="5" />
-      <skill id="heal" x="3" />
+      <skill id="heal" x="3" all="1" />
       <skill id="heal" x="7" />
     </upgrade>
   </unit>

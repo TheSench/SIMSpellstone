@@ -23646,7 +23646,7 @@
     <id>5751</id>
     <name>Siren Call</name>
     <energy>9</energy>
-    <desc>Aria pauses in the fighting. She holds up one hand, motioning for you to listen. You can here a groan, the same voice that you heard when you first descended into the mine's depths.</desc>
+    <desc>Aria pauses in the fighting. She holds up one hand, motioning for you to listen. You can hear a groan, the same voice that you heard when you first descended into the mine's depths.</desc>
     <commander id="268" />
     <deck>
       <card id="8099" name="Prototype Cybot Beta" />
@@ -24031,7 +24031,7 @@
     <id>5763</id>
     <name>Raucous Rumble</name>
     <energy>9</energy>
-    <desc>You and Aria start to clear out the droves of the Mechas. In the distance you spot more reinforcments, Scyer leading them towards you.</desc>
+    <desc>You and Aria start to clear out the droves of the Mechas. In the distance you spot more reinforcements, Scyer leading them towards you.</desc>
     <commander id="401" />
     <deck>
       <card id="8098" name="Prototype Cybot Alpha" />
