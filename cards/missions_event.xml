@@ -21627,9 +21627,9 @@
   <!-- Test Mission Healmaster -->
   <mission>
     <id>5684</id>
-    <name>Test Mission 1</name>
+    <name>The Heart Trembles...</name>
     <energy>10</energy>
-    <desc>Healme</desc>
+    <desc>At long last, you are able to return to Dawnglow Swamp, in search of the Seastone Staff, where the Frog Emperor has gathered all of his tribe. They beat steadily on drums, creating a heart-pounding rhythm. Frog Warriors dance, the ground painted with a strange symbol...</desc>
     <commander id="399" />
     <deck>
       <card id="7100" name="Snow Caller" />
@@ -21651,9 +21651,9 @@
   </mission>
   <mission>
     <id>5685</id>
-    <name>Test Mission 2</name>
+    <name>Mortality Ascends...</name>
     <energy>10</energy>
-    <desc>Healme</desc>
+    <desc>In the Emperor's hands is the Seastone Staff! The drums stop abruptly, the dancers ceasing their frantic movements. A beat of silence, and then the earth rumbles. In the distance, lifting a block of earth, is a golden giant standing taller than Dawnglow's ancient tree...</desc>
     <commander id="399" />
     <deck>
       <card id="7100" name="Snow Caller" />
@@ -21675,9 +21675,9 @@
   </mission>
   <mission>
     <id>5686</id>
-    <name>Test Mission 3</name>
+    <name>Desires Constrict...</name>
     <energy>10</energy>
-    <desc>Healme</desc>
+    <desc>The Frog Emperor beseeches the giant, 'We have lost so much to those in greater power. Protect us, protect our children, and take vengeance upon those who thought they could act with impunity.' And he points straight at you...</desc>
     <commander id="399" />
     <deck>
       <card id="7100" name="Snow Caller" />
@@ -21699,9 +21699,9 @@
   </mission>
   <mission>
     <id>5687</id>
-    <name>Test Mission 4</name>
+    <name>Boundaries Liberated</name>
     <energy>10</energy>
-    <desc>Healme</desc>
+    <desc>The giant speaks: 'I am Viracocha, constructed to guard life and death. For it takes a being that is neither alive nor dead to impartially judge who lives and dies. Adventurer, you will tell me. Am I strong enough to become a titan? Now come, and let us fight...'</desc>
     <commander id="399" />
     <deck>
       <card id="7100" name="Snow Caller" />

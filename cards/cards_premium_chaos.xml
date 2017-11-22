@@ -20303,6 +20303,126 @@
     </upgrade>
   </unit>
   <unit>
+    <id>6164</id>
+    <card_type>2</card_type>
+    <name>Abomination</name>
+    <picture>Undead_Stitched_Undead_A</picture>
+    <asset_bundle>112</asset_bundle>
+    <hidden_until_time>1511456400</hidden_until_time>
+    <attack>5</attack>
+    <health>16</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="corrosive" x="2" />
+    <skill id="enrage" x="2" y="7" />
+    <skill id="berserk" x="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="corrosive" x="3" />
+      <skill id="enrage" x="3" y="7" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>19</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16164</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Abomination Stitcher</name>
+    <picture>Undead_Stitched_Undead_A</picture>
+    <asset_bundle>112</asset_bundle>
+    <hidden_until_time>1511456400</hidden_until_time>
+    <attack>6</attack>
+    <health>19</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="corrosive" x="3" />
+    <skill id="enrage" x="3" y="7" />
+    <skill id="berserk" x="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>20</health>
+      <skill id="corrosive" x="4" />
+      <skill id="enrage" x="3" y="7" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="corrosive" x="4" />
+      <skill id="enrage" x="3" y="7" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>22</health>
+      <skill id="corrosive" x="4" />
+      <skill id="enrage" x="4" y="7" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26164</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Abomination Suturer</name>
+    <picture>Undead_Stitched_Undead_B</picture>
+    <asset_bundle>112</asset_bundle>
+    <hidden_until_time>1511456400</hidden_until_time>
+    <attack>6</attack>
+    <health>22</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="corrosive" x="5" />
+    <skill id="enrage" x="4" y="7" />
+    <skill id="berserk" x="2" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>7</attack>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="corrosive" x="6" />
+      <skill id="enrage" x="4" y="7" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>8</attack>
+      <skill id="corrosive" x="6" />
+      <skill id="enrage" x="5" y="7" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>6167</id>
     <card_type>2</card_type>
     <name>Macabre Machine</name>

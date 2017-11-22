@@ -1121,14 +1121,6 @@ var CAMPAIGNS = {
     "battleground_id": "2015",
     "missions": ["5620","5621","5622","5623"]
   },
-  "3010": {
-  	"id": "3010",
-  	"name": "Test Healmaster",
-  	"location_id": "5",
-  	"side_mission": "1",
-  	"battleground_id": "2015",
-  	"missions": ["5684", "5685", "5686", "5687"]
-  },
   "25": {
     "id": "25",
     "name": "Swamp Lands",
@@ -1164,6 +1156,14 @@ var CAMPAIGNS = {
     "name": "Big Mama",
     "location_id": "5",
     "missions": ["301","302","303","304"]
+  },
+  "3010": {
+    "id": "3010",
+    "name": "The Soul Transcends...",
+    "location_id": "5",
+    "side_mission": "1",
+    "battleground_id": "2027",
+    "missions": ["5684","5685","5686","5687"]
   },
   "31": {
     "id": "31",
@@ -51761,7 +51761,7 @@ var MISSIONS = {
   },
   "5684": {
     "id": "5684",
-    "name": "Test Mission 1",
+    "name": "The Heart Trembles...",
     "commander": {
         "id": "399"
     },
@@ -51815,7 +51815,7 @@ var MISSIONS = {
   },
   "5685": {
     "id": "5685",
-    "name": "Test Mission 2",
+    "name": "Mortality Ascends...",
     "commander": {
         "id": "399"
     },
@@ -51869,7 +51869,7 @@ var MISSIONS = {
   },
   "5686": {
     "id": "5686",
-    "name": "Test Mission 3",
+    "name": "Desires Constrict...",
     "commander": {
         "id": "399"
     },
@@ -51923,7 +51923,7 @@ var MISSIONS = {
   },
   "5687": {
     "id": "5687",
-    "name": "Test Mission 4",
+    "name": "Boundaries Liberated",
     "commander": {
         "id": "399"
     },

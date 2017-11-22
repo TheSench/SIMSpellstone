@@ -112,7 +112,7 @@
   </feature_lock>
   <feature_lock>
     <id>maxupgrade</id>
-    <!-- <vip_req>5</vip_req> 	5 -->
+    <!-- <vip_req>4</vip_req> 	4 -->
     <mission_req>-1</mission_req>
     <!-- 11 -->
   </feature_lock>

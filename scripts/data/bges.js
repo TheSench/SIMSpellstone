@@ -1409,6 +1409,22 @@ var BATTLEGROUNDS = {
       },
     ]
   },
+  "2027": {
+    "name": "Rhythm of the Soul",
+    "id": "2027",
+    "desc": "Viracocha, Titan Aspirer fights harder with each passing Mastery level, increasing cards' stats!",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "7",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .1,
+        "mult": .01,
+      },
+    ]
+  },
   "5001": {
     "name": "The Arena",
     "id": "5001",

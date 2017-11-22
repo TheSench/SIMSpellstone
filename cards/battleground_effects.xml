@@ -1191,6 +1191,21 @@
       <scale_attributes base_mult=".1" mult=".03" />
     </effect>
   </battleground>
+  <!-- Mythic Node Scaling Viracocha -->
+  <battleground>
+    <id>2027</id>
+    <name>Rhythm of the Soul</name>
+    <desc>Viracocha, Titan Aspirer fights harder with each passing Mastery level, increasing cards' stats!</desc>
+    <icon>filter_mech_64</icon>
+    <enemy_only>1</enemy_only>
+    <scale_with_level>1</scale_with_level>
+    <!-- Boolean -->
+    <starting_level>7</starting_level>
+    <!-- Starting Mastery Level -->
+    <effect>
+      <scale_attributes base_mult=".1" mult=".01" />
+    </effect>
+  </battleground>
   <battleground>
     <id>5001</id>
     <name>The Arena</name>
