@@ -5346,48 +5346,48 @@
     <health>24</health>
     <cost>2</cost>
     <rarity>4</rarity>
-    <skill id="evade" x="2" />
-    <skill id="strike" x="5" />
-    <skill id="weaken" x="5" />
+    <skill id="evade" x="3" />
+    <skill id="strike" x="6" />
+    <skill id="weaken" x="6" />
     <type>8</type>
     <sub_type>7</sub_type>
     <set>9999</set>
     <upgrade>
       <level>2</level>
       <health>25</health>
-      <skill id="evade" x="2" />
-      <skill id="strike" x="6" />
+      <skill id="evade" x="3" />
+      <skill id="strike" x="7" />
       <skill id="weaken" x="6" />
     </upgrade>
     <upgrade>
       <level>3</level>
       <health>26</health>
       <attack>7</attack>
-      <skill id="evade" x="2" />
-      <skill id="strike" x="7" />
-      <skill id="weaken" x="6" />
+      <skill id="evade" x="3" />
+      <skill id="strike" x="8" />
+      <skill id="weaken" x="7" />
     </upgrade>
     <upgrade>
       <level>4</level>
       <health>27</health>
-      <skill id="evade" x="2" />
-      <skill id="strike" x="8" />
-      <skill id="weaken" x="7" />
+      <skill id="evade" x="3" />
+      <skill id="strike" x="9" />
+      <skill id="weaken" x="8" />
     </upgrade>
     <upgrade>
       <level>5</level>
       <health>28</health>
       <attack>8</attack>
-      <skill id="evade" x="2" />
-      <skill id="strike" x="9" />
-      <skill id="weaken" x="7" />
+      <skill id="evade" x="3" />
+      <skill id="strike" x="10" />
+      <skill id="weaken" x="9" />
     </upgrade>
     <upgrade>
       <level>6</level>
       <health>30</health>
-      <skill id="evade" x="3" />
-      <skill id="strike" x="10" />
-      <skill id="weaken" x="8" />
+      <skill id="evade" x="4" />
+      <skill id="strike" x="11" />
+      <skill id="weaken" x="9" />
     </upgrade>
   </unit>
   <unit>
@@ -5450,48 +5450,48 @@
     <picture>Undead_Crow_Lord_B</picture>
     <asset_bundle>91</asset_bundle>
     <attack>6</attack>
-    <health>33</health>
+    <health>36</health>
     <cost>3</cost>
     <rarity>4</rarity>
-    <skill id="armored" x="3" />
-    <skill id="counter" x="6" />
+    <skill id="armored" x="5" />
+    <skill id="counter" x="8" />
     <skill id="enfeeble" x="2" all="1" />
     <type>8</type>
     <sub_type>7</sub_type>
     <set>9999</set>
     <upgrade>
       <level>2</level>
-      <health>34</health>
+      <health>37</health>
       <attack>7</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>36</health>
-      <skill id="armored" x="3" />
-      <skill id="counter" x="7" />
-      <skill id="enfeeble" x="2" all="1" />
+      <health>39</health>
+      <skill id="armored" x="6" />
+      <skill id="counter" x="9" />
+      <skill id="enfeeble" x="3" all="1" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>39</health>
+      <health>42</health>
       <attack>8</attack>
-      <skill id="armored" x="3" />
-      <skill id="counter" x="7" />
-      <skill id="enfeeble" x="3" all="1" />
+      <skill id="armored" x="6" />
+      <skill id="counter" x="10" />
+      <skill id="enfeeble" x="4" all="1" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <health>42</health>
-      <skill id="armored" x="4" />
-      <skill id="counter" x="7" />
-      <skill id="enfeeble" x="3" all="1" />
+      <health>45</health>
+      <skill id="armored" x="7" />
+      <skill id="counter" x="11" />
+      <skill id="enfeeble" x="4" all="1" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <health>45</health>
-      <skill id="armored" x="4" />
-      <skill id="counter" x="8" />
-      <skill id="enfeeble" x="4" all="1" />
+      <health>48</health>
+      <skill id="armored" x="8" />
+      <skill id="counter" x="12" />
+      <skill id="enfeeble" x="5" all="1" />
     </upgrade>
   </unit>
   <unit>
@@ -5552,50 +5552,50 @@
     <picture>Shadow_Frog_B</picture>
     <asset_bundle>79</asset_bundle>
     <attack>4</attack>
-    <health>18</health>
+    <health>21</health>
     <cost>1</cost>
     <rarity>4</rarity>
-    <skill id="evade" x="2" />
-    <skill id="pierce" x="6" />
-    <skill id="berserk" x="3" />
+    <skill id="evade" x="3" />
+    <skill id="pierce" x="8" />
+    <skill id="berserk" x="4" />
     <type>8</type>
     <sub_type>4</sub_type>
     <set>9999</set>
     <upgrade>
       <level>2</level>
-      <health>19</health>
-      <skill id="evade" x="2" />
-      <skill id="pierce" x="7" />
-      <skill id="berserk" x="3" />
+      <health>22</health>
+      <skill id="evade" x="3" />
+      <skill id="pierce" x="9" />
+      <skill id="berserk" x="4" />
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>20</health>
-      <skill id="evade" x="2" />
-      <skill id="pierce" x="8" />
-      <skill id="berserk" x="4" />
-    </upgrade>
-    <upgrade>
-      <level>4</level>
-      <health>22</health>
-      <skill id="evade" x="2" />
-      <skill id="pierce" x="9" />
-      <skill id="berserk" x="4" />
-    </upgrade>
-    <upgrade>
-      <level>5</level>
       <health>23</health>
-      <attack>5</attack>
-      <skill id="evade" x="3" />
-      <skill id="pierce" x="9" />
-      <skill id="berserk" x="4" />
-    </upgrade>
-    <upgrade>
-      <level>6</level>
-      <health>25</health>
       <skill id="evade" x="3" />
       <skill id="pierce" x="10" />
       <skill id="berserk" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>25</health>
+      <skill id="evade" x="3" />
+      <skill id="pierce" x="11" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>26</health>
+      <attack>5</attack>
+      <skill id="evade" x="4" />
+      <skill id="pierce" x="11" />
+      <skill id="berserk" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>28</health>
+      <skill id="evade" x="4" />
+      <skill id="pierce" x="12" />
+      <skill id="berserk" x="6" />
     </upgrade>
   </unit>
   <unit>
@@ -6315,13 +6315,13 @@
       <skill id="barrage" x="20" />
     </upgrade>
   </unit>
-  <!-- Test Healmaster -->
+  <!-- Mythic Fight The Soul Ascends -->
   <unit>
     <id>8092</id>
     <card_type>2</card_type>
-    <name>Steelsight Visionary</name>
-    <picture>Polar_Bear_Warrior_A</picture>
-    <asset_bundle>40</asset_bundle>
+    <name>Steelshell Devotee</name>
+    <picture>Hermit_Crab_A</picture>
+    <asset_bundle>104</asset_bundle>
     <attack>8</attack>
     <health>35</health>
     <cost>3</cost>
@@ -6330,6 +6330,7 @@
     <skill id="armored" x="2" />
     <skill id="nullify" x="3" />
     <type>1</type>
+    <sub_type>12</sub_type>
     <set>9999</set>
     <upgrade>
       <level>2</level>
@@ -6373,7 +6374,7 @@
   <unit>
     <id>8093</id>
     <card_type>2</card_type>
-    <name>Beta Berserker</name>
+    <name>Prototype Titan</name>
     <picture>Royal_Guardian_A</picture>
     <asset_bundle>19</asset_bundle>
     <attack>4</attack>
@@ -6428,7 +6429,7 @@
   <unit>
     <id>8094</id>
     <card_type>2</card_type>
-    <name>Guardian Familiar</name>
+    <name>Viracocha's Familiar</name>
     <picture>Kestral_B</picture>
     <asset_bundle>8</asset_bundle>
     <attack>1</attack>
@@ -6470,7 +6471,7 @@
   <unit>
     <id>8095</id>
     <card_type>2</card_type>
-    <name>Heal Guardian</name>
+    <name>Transcended Forestlord</name>
     <picture>Boar_Angel_B</picture>
     <asset_bundle>88</asset_bundle>
     <attack>18</attack>
@@ -6527,7 +6528,7 @@
   <unit>
     <id>8096</id>
     <card_type>2</card_type>
-    <name>Nature's Ghost</name>
+    <name>Nature's Rebirth</name>
     <picture>Mystical_Fox_Spirit_B</picture>
     <asset_bundle>33</asset_bundle>
     <attack>8</attack>
@@ -6581,7 +6582,7 @@
   <unit>
     <id>8097</id>
     <card_type>2</card_type>
-    <name>Frostwingward Dragon</name>
+    <name>Frostwing Dragon</name>
     <picture>Ghost_Dragon_B</picture>
     <asset_bundle>91</asset_bundle>
     <attack>8</attack>

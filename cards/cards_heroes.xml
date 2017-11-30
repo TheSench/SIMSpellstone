@@ -734,7 +734,7 @@
     <card_type>1</card_type>
     <name>Scyer the Fury Mecha</name>
     <portrait>Portrait_Chaos_Mecha_Hero</portrait>
-    <desc></desc>
+    <desc>Once a smelter of steel, this Mecha learned how to feel. What he found was endless rage, so it was war he came to wage. Now with his mind restored, he fights of his own accord.</desc>
     <attack>0</attack>
     <health>44</health>
     <skill id="enhance" s="berserk" x="1" />
@@ -8995,7 +8995,7 @@
   <unit>
     <id>399</id>
     <card_type>1</card_type>
-    <name>Healmaster</name>
+    <name>Viracocha, Titan Aspirer</name>
     <portrait>Portraits_Ancient_Titan_Mecha</portrait>
     <asset_bundle>109</asset_bundle>
     <attack>0</attack>

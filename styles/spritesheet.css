@@ -673,6 +673,8 @@
 .sprite-Goblin_Sand_Witch_Elemental_B{ background-position: -84px -0px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
 .sprite-Goblin_Seafolk_Mermaid_A{ background-position: -168px -0px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
 .sprite-Goblin_Seafolk_Mermaid_B{ background-position: -252px -0px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
+.sprite-Goblin_Undead_Skeleton_Puppetmaster_A{ background-position: -0px -960px; background-image: url('../res/sprites/SpriteSheet16.jpg');}
+.sprite-Goblin_Undead_Skeleton_Puppetmaster_B{ background-position: -84px -960px; background-image: url('../res/sprites/SpriteSheet16.jpg');}
 .sprite-Goblin_War_Drummer_A{ background-position: -336px -0px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
 .sprite-Goblin_War_Drummer_B{ background-position: -420px -0px; background-image: url('../res/sprites/SpriteSheet15.jpg');}
 .sprite-Goblin_Zombie_A{ background-position: -504px -0px; background-image: url('../res/sprites/SpriteSheet15.jpg');}

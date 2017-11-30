@@ -63,6 +63,10 @@ var LOCATIONS = {
     "id": "12",
     "name": "Fireshard Mine",
   },
+  "13": {
+    "id": "13",
+    "name": "The Celestial Vault",
+  },
   "2": {
     "id": "2",
     "name": "Luminis",
@@ -1156,6 +1160,14 @@ var CAMPAIGNS = {
     "name": "Big Mama",
     "location_id": "5",
     "missions": ["301","302","303","304"]
+  },
+  "3010": {
+    "id": "3010",
+    "name": "The Soul Transcends...",
+    "location_id": "5",
+    "side_mission": "1",
+    "battleground_id": "2027",
+    "missions": ["5684","5685","5686","5687"]
   },
   "31": {
     "id": "31",
@@ -51753,7 +51765,7 @@ var MISSIONS = {
   },
   "5684": {
     "id": "5684",
-    "name": "Test Mission 1",
+    "name": "The Heart Trembles...",
     "commander": {
         "id": "399"
     },
@@ -51807,7 +51819,7 @@ var MISSIONS = {
   },
   "5685": {
     "id": "5685",
-    "name": "Test Mission 2",
+    "name": "Mortality Ascends...",
     "commander": {
         "id": "399"
     },
@@ -51861,7 +51873,7 @@ var MISSIONS = {
   },
   "5686": {
     "id": "5686",
-    "name": "Test Mission 3",
+    "name": "Desires Constrict...",
     "commander": {
         "id": "399"
     },
@@ -51915,7 +51927,7 @@ var MISSIONS = {
   },
   "5687": {
     "id": "5687",
-    "name": "Test Mission 4",
+    "name": "Boundaries Liberated",
     "commander": {
         "id": "399"
     },
@@ -56890,6 +56902,66 @@ var MISSIONS = {
   "5770": {
     "id": "5770",
     "name": "Fireshard's Protector",
+    "commander": {
+        "id": "404"
+    },
+    "deck": [
+      {
+        "id": "8099"
+      },
+      {
+        "id": "2109"
+      },
+      {
+        "id": "6004"
+      },
+      {
+        "id": "6004"
+      },
+      {
+        "id": "1632"
+      },
+      {
+        "id": "6036"
+      },
+      {
+        "id": "2060"
+      },
+      {
+        "id": "6029"
+      },
+      {
+        "id": "7034"
+      },
+      {
+        "id": "5163",
+        "mastery_level": "2"
+      },
+      {
+        "id": "5163",
+        "mastery_level": "3"
+      },
+      {
+        "id": "7163",
+        "mastery_level": "4"
+      },
+      {
+        "id": "2113",
+        "mastery_level": "5"
+      },
+      {
+        "id": "7036",
+        "mastery_level": "6"
+      },
+      {
+        "id": "7126",
+        "mastery_level": "7"
+      },
+    ]
+  },
+  "5771": {
+    "id": "5771",
+    "name": "Celestial Vault Protector",
     "commander": {
         "id": "404"
     },

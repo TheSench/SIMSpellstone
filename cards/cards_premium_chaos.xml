@@ -20303,6 +20303,258 @@
     </upgrade>
   </unit>
   <unit>
+    <id>6164</id>
+    <card_type>2</card_type>
+    <name>Abomination</name>
+    <picture>Undead_Stitched_Undead_A</picture>
+    <asset_bundle>112</asset_bundle>
+    <hidden_until_time>1511456400</hidden_until_time>
+    <attack>5</attack>
+    <health>16</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="corrosive" x="2" />
+    <skill id="enrage" x="2" y="7" />
+    <skill id="berserk" x="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="corrosive" x="3" />
+      <skill id="enrage" x="3" y="7" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>19</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16164</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Abomination Stitcher</name>
+    <picture>Undead_Stitched_Undead_A</picture>
+    <asset_bundle>112</asset_bundle>
+    <hidden_until_time>1511456400</hidden_until_time>
+    <attack>6</attack>
+    <health>19</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="corrosive" x="3" />
+    <skill id="enrage" x="3" y="7" />
+    <skill id="berserk" x="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>20</health>
+      <skill id="corrosive" x="4" />
+      <skill id="enrage" x="3" y="7" />
+      <skill id="berserk" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="corrosive" x="4" />
+      <skill id="enrage" x="3" y="7" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>21</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>22</health>
+      <skill id="corrosive" x="4" />
+      <skill id="enrage" x="4" y="7" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26164</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Abomination Suturer</name>
+    <picture>Undead_Stitched_Undead_B</picture>
+    <asset_bundle>112</asset_bundle>
+    <hidden_until_time>1511456400</hidden_until_time>
+    <attack>6</attack>
+    <health>22</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="corrosive" x="5" />
+    <skill id="enrage" x="4" y="7" />
+    <skill id="berserk" x="2" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>23</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>7</attack>
+      <health>24</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="corrosive" x="6" />
+      <skill id="enrage" x="4" y="7" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>8</attack>
+      <skill id="corrosive" x="6" />
+      <skill id="enrage" x="5" y="7" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6166</id>
+    <card_type>2</card_type>
+    <name>Corpsedancer</name>
+    <picture>Goblin_Undead_Skeleton_Puppetmaster_A</picture>
+    <asset_bundle>112</asset_bundle>
+    <hidden_until_time>1512061200</hidden_until_time>
+    <attack>4</attack>
+    <health>10</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="enfeeble" x="1" />
+    <skill id="weaken" x="1" all="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="enfeeble" x="2" />
+      <skill id="weaken" x="1" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="enfeeble" x="2" />
+      <skill id="weaken" x="1" all="1" />
+      <skill id="weaken" x="1" />
+    </upgrade>
+    <desc>"They turn the fallen into their own, corpses risen to fight for the enemy!" - No'tuka, Front Line Soldier</desc>
+  </unit>
+  <unit>
+    <id>16166</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Battle Corpsedancer</name>
+    <picture>Goblin_Undead_Skeleton_Puppetmaster_A</picture>
+    <asset_bundle>112</asset_bundle>
+    <hidden_until_time>1512061200</hidden_until_time>
+    <attack>5</attack>
+    <health>13</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="enfeeble" x="2" />
+    <skill id="weaken" x="1" all="1" />
+    <skill id="weaken" x="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="enfeeble" x="3" />
+      <skill id="weaken" x="1" all="1" />
+      <skill id="weaken" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="enfeeble" x="3" />
+      <skill id="weaken" x="1" all="1" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>15</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26166</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Warfield Corpsedancer</name>
+    <picture>Goblin_Undead_Skeleton_Puppetmaster_B</picture>
+    <asset_bundle>112</asset_bundle>
+    <hidden_until_time>1512061200</hidden_until_time>
+    <attack>6</attack>
+    <health>16</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="enfeeble" x="3" />
+    <skill id="weaken" x="1" all="1" />
+    <skill id="weaken" x="2" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <sub_type>11</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="enfeeble" x="4" />
+      <skill id="weaken" x="1" all="1" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="enfeeble" x="4" />
+      <skill id="weaken" x="2" all="1" />
+      <skill id="weaken" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="enfeeble" x="4" />
+      <skill id="weaken" x="2" all="1" />
+      <skill id="weaken" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>6167</id>
     <card_type>2</card_type>
     <name>Macabre Machine</name>
@@ -20429,6 +20681,135 @@
       <skill id="strike" x="6" />
       <skill id="strike" x="3" all="1" />
       <skill id="nullify" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6168</id>
+    <card_type>2</card_type>
+    <name>Chainwhip Spirit</name>
+    <picture>Chain_Wraith_A</picture>
+    <asset_bundle>112</asset_bundle>
+    <hidden_until_time>1511802000</hidden_until_time>
+    <attack>2</attack>
+    <health>7</health>
+    <cost>0</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="strike" x="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>8</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>9</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="1" />
+      <skill id="strike" x="1" />
+      <skill id="strike" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>3</attack>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16168</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Chainlash Spirit</name>
+    <picture>Chain_Wraith_A</picture>
+    <asset_bundle>112</asset_bundle>
+    <hidden_until_time>1511802000</hidden_until_time>
+    <attack>3</attack>
+    <health>11</health>
+    <cost>0</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="strike" x="1" />
+    <skill id="strike" x="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="evade" x="2" />
+      <skill id="strike" x="1" />
+      <skill id="strike" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="2" />
+      <skill id="strike" x="2" />
+      <skill id="strike" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="2" />
+      <skill id="strike" x="2" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>13</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26168</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Chainwrath Spirit</name>
+    <picture>Chain_Wraith_B</picture>
+    <asset_bundle>112</asset_bundle>
+    <hidden_until_time>1511802000</hidden_until_time>
+    <attack>3</attack>
+    <health>14</health>
+    <cost>0</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="2" />
+    <skill id="strike" x="2" />
+    <skill id="strike" x="2" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>15</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="3" />
+      <skill id="strike" x="2" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="3" />
+      <skill id="strike" x="3" />
+      <skill id="strike" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="3" />
+      <skill id="strike" x="3" />
+      <skill id="strike" x="3" />
     </upgrade>
   </unit>
 </root>
