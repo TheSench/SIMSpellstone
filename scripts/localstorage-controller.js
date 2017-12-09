@@ -104,9 +104,14 @@ if (function (type) {
         }
 
         window.addEventListener('storage', function (e) {
-            angular.element('#loadDeckDialog').scope().$apply(
-                localStorage.setItem(e.key, e.newValue)
-            );
+        	if (e.key !== '__storage_test__') {
+        		var oldValue = localStorage.getItem(e.key);
+        		if (oldValue !== e.newValue) {
+        			angular.element('#loadDeckDialog').scope().$apply(
+						localStorage.setItem(e.key, e.newValue)
+					);
+        		}
+        	}
         });
     }());
 } else {
