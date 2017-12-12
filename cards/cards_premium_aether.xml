@@ -21241,6 +21241,141 @@
     </upgrade>
   </unit>
   <unit>
+    <id>5169</id>
+    <card_type>2</card_type>
+    <name>Vengeful Spirit</name>
+    <picture>Vengeful_Ghost_A</picture>
+    <asset_bundle>112</asset_bundle>
+    <hidden_until_time>1512666000</hidden_until_time>
+    <attack>8</attack>
+    <health>39</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="4" />
+    <skill id="legion" x="3" y="7" />
+    <skill id="burn" x="3" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>40</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>41</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="counter" x="5" />
+      <skill id="legion" x="4" y="7" />
+      <skill id="burn" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>9</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>42</health>
+      <skill id="counter" x="5" />
+      <skill id="legion" x="4" y="7" />
+      <skill id="burn" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15169</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Vengeful Shade</name>
+    <picture>Vengeful_Ghost_A</picture>
+    <asset_bundle>112</asset_bundle>
+    <hidden_until_time>1512666000</hidden_until_time>
+    <attack>9</attack>
+    <health>43</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="5" />
+    <skill id="legion" x="4" y="7" />
+    <skill id="burn" x="4" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>44</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="counter" x="6" />
+      <skill id="legion" x="5" y="7" />
+      <skill id="burn" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>45</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>10</attack>
+      <health>46</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="counter" x="6" />
+      <skill id="legion" x="5" y="7" />
+      <skill id="burn" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25169</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Vengeful Specter</name>
+    <picture>Vengeful_Ghost_B</picture>
+    <asset_bundle>112</asset_bundle>
+    <hidden_until_time>1512666000</hidden_until_time>
+    <attack>10</attack>
+    <health>46</health>
+    <cost>4</cost>
+    <rarity>4</rarity>
+    <skill id="counter" x="7" />
+    <skill id="legion" x="5" y="7" />
+    <skill id="burn" x="5" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>47</health>
+      <skill id="counter" x="7" />
+      <skill id="legion" x="6" y="7" />
+      <skill id="burn" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>48</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>11</attack>
+      <health>49</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="8" />
+      <skill id="legion" x="6" y="7" />
+      <skill id="burn" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>12</attack>
+      <skill id="counter" x="8" />
+      <skill id="legion" x="7" y="7" />
+      <skill id="burn" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
     <id>5170</id>
     <card_type>2</card_type>
     <name>Dullahan Destrier</name>
@@ -21360,6 +21495,138 @@
       <skill id="strike" x="2" all="1" />
       <skill id="burn" x="3" />
       <skill id="flurry" c="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>5171</id>
+    <card_type>2</card_type>
+    <name>Dross Collector</name>
+    <picture>Undead_Collector_Undead_A</picture>
+    <asset_bundle>112</asset_bundle>
+    <hidden_until_time>1513011600</hidden_until_time>
+    <attack>9</attack>
+    <health>29</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="2" />
+    <skill id="strike" x="2" all="1" />
+    <skill id="burn" x="2" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>30</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="armored" x="2" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="burn" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>32</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="3" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="burn" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>15171</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Dross Scraper</name>
+    <picture>Undead_Collector_Undead_A</picture>
+    <asset_bundle>112</asset_bundle>
+    <hidden_until_time>1513011600</hidden_until_time>
+    <attack>9</attack>
+    <health>33</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="3" />
+    <skill id="strike" x="3" all="1" />
+    <skill id="burn" x="3" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>10</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="armored" x="3" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="burn" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>34</health>
+      <skill id="armored" x="4" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="burn" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>35</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="4" />
+      <skill id="strike" x="4" all="1" />
+      <skill id="burn" x="4" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>25171</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Dross Reaver</name>
+    <picture>Undead_Collector_Undead_B</picture>
+    <asset_bundle>112</asset_bundle>
+    <hidden_until_time>1513011600</hidden_until_time>
+    <attack>10</attack>
+    <health>35</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="4" />
+    <skill id="strike" x="4" all="1" />
+    <skill id="burn" x="5" />
+    <type>1</type>
+    <sub_type>7</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>36</health>
+      <attack>11</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>37</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>38</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="armored" x="5" />
+      <skill id="strike" x="4" all="1" />
+      <skill id="burn" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="armored" x="5" />
+      <skill id="strike" x="5" all="1" />
+      <skill id="burn" x="6" />
     </upgrade>
   </unit>
 </root>

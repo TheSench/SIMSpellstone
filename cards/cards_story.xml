@@ -6796,4 +6796,108 @@
       <skill id="poison" x="8" />
     </upgrade>
   </unit>
+  <!-- Campaign Event 7 -->
+  <unit>
+    <id>8101</id>
+    <card_type>2</card_type>
+    <name>Former Void-Touched</name>
+    <picture>Spirit_Shaman_A</picture>
+    <asset_bundle>50</asset_bundle>
+    <attack>6</attack>
+    <health>26</health>
+    <cost>2</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="heal" x="1" />
+    <skill id="flurry" c="5" />
+    <type>3</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>27</health>
+      <skill id="evade" x="1" />
+      <skill id="heal" x="2" />
+      <skill id="flurry" c="4" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="2" />
+      <skill id="heal" x="3" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>7</attack>
+      <health>28</health>
+      <skill id="evade" x="3" />
+      <skill id="heal" x="5" />
+      <skill id="flurry" c="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>29</health>
+      <skill id="evade" x="3" />
+      <skill id="heal" x="6" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>8</attack>
+      <health>30</health>
+      <skill id="evade" x="4" />
+      <skill id="heal" x="8" />
+      <skill id="flurry" c="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>8102</id>
+    <card_type>2</card_type>
+    <name>Crimsonwing's Reach</name>
+    <picture>Kestral_A</picture>
+    <attack>6</attack>
+    <health>15</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="evadebarrier" x="2" />
+    <skill id="evadebarrier" x="1" />
+    <skill id="heal" x="1" all="1" />
+    <type>1</type>
+    <sub_type>10</sub_type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>16</health>
+      <skill id="evadebarrier" x="3" />
+      <skill id="evadebarrier" x="1" />
+      <skill id="heal" x="2" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+      <skill id="evadebarrier" x="3" />
+      <skill id="evadebarrier" x="2" />
+      <skill id="heal" x="3" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>18</health>
+      <skill id="evadebarrier" x="3" />
+      <skill id="evadebarrier" x="3" />
+      <skill id="heal" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>19</health>
+      <skill id="evadebarrier" x="4" />
+      <skill id="evadebarrier" x="4" />
+      <skill id="heal" x="4" all="1" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>20</health>
+      <skill id="evadebarrier" x="5" />
+      <skill id="evadebarrier" x="5" />
+      <skill id="heal" x="5" all="1" />
+    </upgrade>
+  </unit>
 </root>

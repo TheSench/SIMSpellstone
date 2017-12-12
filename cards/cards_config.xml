@@ -729,6 +729,13 @@
     <picture>set_icon_reward</picture>
   </cardSet>
   <cardSet>
+    <id>5100</id>
+    <name>Mythic Champion</name>
+    <visible>1</visible>
+    <icon>set_icon_reward</icon>
+    <picture>set_icon_reward</picture>
+  </cardSet>
+  <cardSet>
     <id>7000</id>
     <name>Commanders</name>
     <visible>1</visible>

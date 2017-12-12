@@ -24264,34 +24264,824 @@
       </line>
     </speech>
   </mission>
+  <!-- Campaign Event 7 -->
+  <!-- Extra Node -->
   <mission>
     <id>5771</id>
-    <name>Celestial Vault Protector</name>
+    <name>Celestial Elementals</name>
     <energy>9</energy>
-    <desc>The giant mecha stomps towards you! The smaller Mechas flee, doing their best not to get trampled underfoot. </desc>
-    <commander id="404" />
+    <desc>The Celestial Orbs attract small Elementals. These Elementals are what give the Orbs their powers. You notice that the more Breezy Spirits with you, the more powerfully the Orbs respond.</desc>
+    <commander id="289" />
     <deck>
-      <card id="8099" name="Prototype Cybot Beta" />
-      <card id="2109" name="Scorchfist Avenger" />
-      <card id="6004" name="Branding Construct" />
-      <card id="6004" name="Branding Construct" />
-      <card id="1632" name="Shadow Rider" />
-      <card id="6036" name="Cursed Ogre" />
-      <card id="2060" name="Patchwork Experiment" />
-      <card id="6029" name="Spinehead Stalker" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="5028" name="Winter Blacksmith" />
+      <card id="5118" name="Chalice Courier" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="6164" name="Abomination" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="5021" mastery_level="2" name="Tower Spirit" />
+      <card id="5123" mastery_level="3" name="Shadow Stalker" />
+      <card id="7029" mastery_level="4" name="Owl Griffin" />
+      <card id="5016" mastery_level="5" name="Fowl Swarm" />
+      <card id="2089" mastery_level="6" name="Slagspirit" />
+      <card id="6033" mastery_level="7" name="Firebeard" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5772</id>
+    <name>Breezy Power</name>
+    <energy>9</energy>
+    <desc>You have taken to collecting the Breezy Spirits. With them, you are able to power up the Celestial Orbs, which allow you to borrow their strength.</desc>
+    <commander id="305" />
+    <deck>
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="1319" name="Wraith" />
+      <card id="5041" name="Skylance Raiders" />
+      <card id="6020" name="Croak Piercer" />
+      <card id="6063" name="Firetail Dragon" />
       <card id="7034" name="Spore Elk" />
-      <card id="5163" mastery_level="2" name="Bark Hound" />
-      <card id="5163" mastery_level="3" name="Bark Hound" />
-      <card id="7163" mastery_level="4" name="Alloy of the Trees" />
-      <card id="2113" mastery_level="5" name="Vali, the Thunderer" />
+      <card id="7057" name="Bill Crasher" />
+      <card id="6016" mastery_level="2" name="Skeletal Giant" />
+      <card id="6125" mastery_level="3" name="Deadly Shot" />
+      <card id="1027" mastery_level="4" name="Griffin Knight" />
+      <card id="6056" mastery_level="5" name="Potoo" />
+      <card id="7037" mastery_level="6" name="Bane" />
+      <card id="5000" mastery_level="7" name="Azure Sphinx" />
+    </deck>
+  </mission>
+  <!-- Campaign Event 7 Weeks 1-4 -->
+  <mission>
+    <id>5773</id>
+    <name>Celestial Vaults Arrival</name>
+    <energy>9</energy>
+    <desc>Groc has called you to the Celestial Vault, the home of the Elementals. Ol' Cedric has decided to accompany you as backup. As your airship descends, Groc awaits your arrival on the small island.</desc>
+    <commander id="324" />
+    <deck>
+      <card id="8101" name="Former Void-Touched" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1319" name="Wraith" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="6112" name="Fire Hawk" />
+      <card id="7113" name="Revenge from Above" />
+      <card id="6031" name="Iceblood Assassin" />
+      <card id="6056" name="Potoo" />
+      <card id="6164" mastery_level="2" name="Abomination" />
+      <card id="5086" mastery_level="3" name="Spirit Blades" />
+      <card id="2040" mastery_level="4" name="Owlmancer" />
+      <card id="5114" mastery_level="5" name="Wingward" />
+      <card id="6002" mastery_level="6" name="Spirit of Madness" />
+      <card id="7058" mastery_level="7" name="Steppe Stalker" />
+    </deck>
+    <speech>
+      <line>
+        <commander>groc</commander>
+        <enemy>0</enemy>
+        <text>Ah, adventurer, and Cedric. Thank you for coming so quickly.</text>
+      </line>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>Anything for an old friend, Groc.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5774</id>
+    <name>Tour of the Elements</name>
+    <energy>9</energy>
+    <desc>Groc gives you a tour of the celestial islands. Each one is dedicated to a faction of Wyld, Aether, or Chaos, with Elementals choosing their preferred habitat.</desc>
+    <commander id="305" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1319" name="Wraith" />
+      <card id="7113" name="Revenge from Above" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="6083" name="Lockejaw" />
+      <card id="5114" name="Wingward" />
+      <card id="2088" mastery_level="2" name="Bog Witch" />
+      <card id="2060" mastery_level="3" name="Patchwork Experiment" />
+      <card id="2082" mastery_level="4" name="Ecru Spear" />
+      <card id="6112" mastery_level="5" name="Fire Hawk" />
+      <card id="6122" mastery_level="6" name="Relentless Dead" />
+      <card id="6053" mastery_level="7" name="Squire Gorger" />
+    </deck>
+    <speech>
+      <line>
+        <commander>groc</commander>
+        <enemy>0</enemy>
+        <text>Even with The Void defeated, the world rebuilds itself slowly. I have called you here because I require advice for a certain... circumstance.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5775</id>
+    <name>Avians Outside Their Element</name>
+    <energy>9</energy>
+    <desc>On the island, you see a group of Avians. They are huddled together, watching the roaming Elementals with distant longing. A brightly colored Avian approaches you and Groc. Cedric visibly recoils, but then calms himself and pretends nothing happened...</desc>
+    <commander id="328" />
+    <deck>
+      <card id="8101" name="Former Void-Touched" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="2041" name="Sharpwing" />
+      <card id="7057" name="Bill Crasher" />
+      <card id="6034" name="Bone Viper" />
+      <card id="5060" name="Quack Apprentice" />
+      <card id="1331" mastery_level="2" name="Fallen Soldiers" />
+      <card id="6031" mastery_level="3" name="Iceblood Assassin" />
+      <card id="2081" mastery_level="4" name="Starstriker" />
+      <card id="5113" mastery_level="5" name="Bishop Rook" />
       <card id="7036" mastery_level="6" name="Deepwood Corpse" />
-      <card id="7126" mastery_level="7" name="Wyldheart Hunter" />
+      <card id="7114" mastery_level="7" name="Worshipped Statue" />
+    </deck>
+    <speech>
+      <line>
+        <commander>avianmagistrate</commander>
+        <enemy>1</enemy>
+        <text>Welcome back, Groc. Are these the consultants you mentioned?</text>
+      </line>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>...!</text>
+      </line>
+      <line>
+        <commander>groc</commander>
+        <enemy>0</enemy>
+        <text>They are. The two of them are wise beyond years. Now, please continue your story.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5776</id>
+    <name>Avian Refugees</name>
+    <energy>9</energy>
+    <desc>The Avian's clothes set her apart from the other Avians. She holds herself with a certain composure, speaking in a formal tone. The leader has come to ask the Elementals for a great favor...</desc>
+    <commander id="305" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="7113" name="Revenge from Above" />
+      <card id="7029" name="Owl Griffin" />
+      <card id="5113" name="Bishop Rook" />
+      <card id="6011" name="Bomb Spirit" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="2059" mastery_level="2" name="Matriarch's Call" />
+      <card id="7082" mastery_level="3" name="Forest Umbras" />
+      <card id="5016" mastery_level="4" name="Fowl Swarm" />
+      <card id="6054" mastery_level="5" name="Shadowcrafter" />
+      <card id="6085" mastery_level="6" name="Released Captives" />
+      <card id="5112" mastery_level="7" name="Cloudwing Chaser" />
+    </deck>
+    <speech>
+      <line>
+        <commander>avianmagistrate</commander>
+        <enemy>1</enemy>
+        <text>I am Magistrate Agni, and we are refugees from Duskwillow. First, The Void destroyed Red Feather Village.</text>
+      </line>
+      <line>
+        <commander>avianmagistrate</commander>
+        <enemy>1</enemy>
+        <text>Then Scylla destroyed our second home in Duskwillow. If you would have us, we would like to make the Celestial Vault our new home.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5777</id>
+    <name>Reconvene</name>
+    <energy>9</energy>
+    <desc>Groc asks the Avian Magistrate for a moment to converse privately. You and Cedric step away from the Avians. Magistrate Agni waits patiently for your decision...</desc>
+    <commander id="300" />
+    <deck>
+      <card id="8101" name="Former Void-Touched" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1319" name="Wraith" />
+      <card id="6054" name="Shadowcrafter" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="1632" name="Shadow Rider" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="2060" mastery_level="2" name="Patchwork Experiment" />
+      <card id="5168" mastery_level="3" name="Lamia's Shield" />
+      <card id="2041" mastery_level="4" name="Sharpwing" />
+      <card id="6054" mastery_level="5" name="Shadowcrafter" />
+      <card id="6003" mastery_level="6" name="Black Knight" />
+      <card id="5055" mastery_level="7" name="Galewing" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5778</id>
+    <name>Former Fiend</name>
+    <energy>9</energy>
+    <desc>Cedric brims with rage. Now out of earshot of the Avians, he reveals that he already knows the Avian Magistrate from elsewhere.</desc>
+    <commander id="289" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="5114" name="Wingward" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="2114" name="Ironbound Bonewalker" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="2025" mastery_level="2" name="Blight Knight" />
+      <card id="2025" mastery_level="3" name="Blight Knight" />
+      <card id="5016" mastery_level="4" name="Fowl Swarm" />
+      <card id="6054" mastery_level="5" name="Shadowcrafter" />
+      <card id="5126" mastery_level="6" name="Ominous Canvas" />
+      <card id="7056" mastery_level="7" name="Trailblazer" />
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>That Avian fiend! Long ago, her forces attacked Golden Crown, and kidnapped the Mayor's son. We must not trust her.</text>
+      </line>
+      <line>
+        <commander>groc</commander>
+        <enemy>0</enemy>
+        <text>I had thought it suspicious that they are asking sanctuary now, when Duskwillow was attacked months ago. Cedric's account only deepens my worry.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5779</id>
+    <name>A Friend or Enemy in Need</name>
+    <energy>9</energy>
+    <desc>Groc considers what he knows of the Redfeather Avians, and weighs the safety of the Elementals. The decision has no clear answer...</desc>
+    <commander id="289" />
+    <deck>
+      <card id="8101" name="Former Void-Touched" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="5113" name="Bishop Rook" />
+      <card id="6056" name="Potoo" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="7125" name="Spectral Presence" />
+      <card id="7055" name="Valley Strider" />
+      <card id="2023" mastery_level="2" name="Grizzly Terror" />
+      <card id="2024" mastery_level="3" name="Dusk Noble" />
+      <card id="5060" mastery_level="4" name="Quack Apprentice" />
+      <card id="2082" mastery_level="5" name="Ecru Spear" />
+      <card id="6032" mastery_level="6" name="Mumohotep" />
+      <card id="5115" mastery_level="7" name="Papyrus Crane" />
+    </deck>
+    <speech>
+      <line>
+        <commander>groc</commander>
+        <enemy>0</enemy>
+        <text>Yet what if she has changed, and the Avians are truly in need? We cannot simply punish all of them for the misdeeds of their leader.</text>
+      </line>
+      <line>
+        <commander>groc</commander>
+        <enemy>0</enemy>
+        <text>And if they are up to something, then this is the best place to keep an eye on them. Keep your friends close, and your enemies closer.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5780</id>
+    <name>Return to the Matter at Wing</name>
+    <energy>9</energy>
+    <desc>Groc has made up his mind. The three of you break your huddle, returning to the waiting Magistrate Agni, who has not moved since you left her.</desc>
+    <commander id="328" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1319" name="Wraith" />
+      <card id="6112" name="Fire Hawk" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="5114" name="Wingward" />
+      <card id="6164" name="Abomination" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="2020" mastery_level="2" name="Tidetaken Fighter" />
+      <card id="7035" mastery_level="3" name="Carrion Tiger" />
+      <card id="7055" mastery_level="4" name="Valley Strider" />
+      <card id="7113" mastery_level="5" name="Revenge from Above" />
+      <card id="5037" mastery_level="6" name="Dauntless Baneblade" />
+      <card id="6114" mastery_level="7" name="Blazing Emissary" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5781</id>
+    <name>Protection Plan</name>
+    <energy>9</energy>
+    <desc>Groc explains the terms as politely as he can. Although he wants to aid the Avians, he also has a plan to protect the Elementals in case something goes wrong...</desc>
+    <commander id="325" />
+    <deck>
+      <card id="8101" name="Former Void-Touched" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="5113" name="Bishop Rook" />
+      <card id="6056" name="Potoo" />
+      <card id="6036" name="Cursed Ogre" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="6029" mastery_level="2" name="Spinehead Stalker" />
+      <card id="6083" mastery_level="3" name="Lockejaw" />
+      <card id="2081" mastery_level="4" name="Starstriker" />
+      <card id="5060" mastery_level="5" name="Quack Apprentice" />
+      <card id="7033" mastery_level="6" name="Treebond Skull" />
+      <card id="5110" mastery_level="7" name="Alectryon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>groc</commander>
+        <enemy>0</enemy>
+        <text>Magistrate Agni, we Elementals are happy to provide you and the Redfeather Avians sanctuary.</text>
+      </line>
+      <line>
+        <commander>groc</commander>
+        <enemy>0</enemy>
+        <text>To aid your transition, Cedric and the adventurer will stay close to your side.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5782</id>
+    <name>Celestial Orb Assault</name>
+    <energy>9</energy>
+    <desc>Magistrate Agni contemplates Groc's words. Despite his phrasing, it is clear that Cedric and you will be watching the Avians. Then when she starts to answer...</desc>
+    <commander id="324" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="7029" name="Owl Griffin" />
+      <card id="6056" name="Potoo" />
+      <card id="6164" name="Abomination" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="5086" mastery_level="2" name="Spirit Blades" />
+      <card id="6031" mastery_level="3" name="Iceblood Assassin" />
+      <card id="2040" mastery_level="4" name="Owlmancer" />
+      <card id="2082" mastery_level="5" name="Ecru Spear" />
+      <card id="6027" mastery_level="6" name="Frigela, the Dread" />
+      <card id="5059" mastery_level="7" name="Bemola" />
+    </deck>
+    <speech>
+      <line>
+        <commander>groc</commander>
+        <enemy>0</enemy>
+        <text>Do you find this acceptable?</text>
+      </line>
+      <line>
+        <commander>avianmagistrate</commander>
+        <enemy>1</enemy>
+        <text>I-</text>
+      </line>
+      <line>
+        <commander>goldelemental</commander>
+        <enemy>0</enemy>
+        <text>Lord Groc, it's terrible! The orbs which power each island... they are being attacked!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5783</id>
+    <name>Groc's Request</name>
+    <energy>9</energy>
+    <desc>Groc orders the Elemental to return and assist the defending forces. He turns to ask you for help, once again.</desc>
+    <commander id="324" />
+    <deck>
+      <card id="8101" name="Former Void-Touched" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="7029" name="Owl Griffin" />
+      <card id="2041" name="Sharpwing" />
+      <card id="2040" name="Owlmancer" />
+      <card id="5035" name="Vapor Guard" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="5021" mastery_level="2" name="Tower Spirit" />
+      <card id="5086" mastery_level="3" name="Spirit Blades" />
+      <card id="2081" mastery_level="4" name="Starstriker" />
+      <card id="6112" mastery_level="5" name="Fire Hawk" />
+      <card id="6084" mastery_level="6" name="Crypt Sentry" />
+      <card id="2043" mastery_level="7" name="Eos" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5784</id>
+    <name>Protectors of the Orb</name>
+    <energy>9</energy>
+    <desc>The normally stoic Elemental is extremely alarmed. You and Cedric leave the Avians, heading towards the orbs and the forces that are attacking.</desc>
+    <commander id="325" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="6112" name="Fire Hawk" />
+      <card id="7055" name="Valley Strider" />
+      <card id="5114" name="Wingward" />
+      <card id="6123" name="Battleborn Destrier" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="5086" mastery_level="2" name="Spirit Blades" />
+      <card id="6029" mastery_level="3" name="Spinehead Stalker" />
+      <card id="7030" mastery_level="4" name="Arctic Ambusher" />
+      <card id="6112" mastery_level="5" name="Fire Hawk" />
+      <card id="2026" mastery_level="6" name="Lazarus" />
+      <card id="5001" mastery_level="7" name="Aven Skypiercer" />
+    </deck>
+    <speech>
+      <line>
+        <commander>groc</commander>
+        <enemy>0</enemy>
+        <text>If the orbs are destroyed, the Celestial Vault will fall! </text>
+      </line>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>We'll help you protect the orbs. Right, adventurer?</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5785</id>
+    <name>Orb Assailants</name>
+    <energy>9</energy>
+    <desc>You follow Groc's lead and run to the first orb that powers the island. Avians in strange garments have surrounded the orb, fighting off the last of the Elementals.</desc>
+    <commander id="325" />
+    <deck>
+      <card id="8101" name="Former Void-Touched" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="5123" name="Shadow Stalker" />
+      <card id="7029" name="Owl Griffin" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="7035" name="Carrion Tiger" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="6029" mastery_level="2" name="Spinehead Stalker" />
+      <card id="7034" mastery_level="3" name="Spore Elk" />
+      <card id="2082" mastery_level="4" name="Ecru Spear" />
+      <card id="6054" mastery_level="5" name="Shadowcrafter" />
+      <card id="6114" mastery_level="6" name="Blazing Emissary" />
+      <card id="7114" mastery_level="7" name="Worshipped Statue" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5786</id>
+    <name>Order of Crimsonwings</name>
+    <energy>9</energy>
+    <desc>A hooded Avian appears to be their leader. A strange white flame burns in his wing, yet it does not harm him. The Elementals are falling beneath his might.</desc>
+    <commander id="405" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="6011" name="Bomb Spirit" />
+      <card id="7055" name="Valley Strider" />
+      <card id="7055" name="Valley Strider" />
+      <card id="2042" name="Carrion Hunter" />
+      <card id="5123" name="Shadow Stalker" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="6083" mastery_level="2" name="Lockejaw" />
+      <card id="2115" mastery_level="3" name="Druid of Rot" />
+      <card id="2081" mastery_level="4" name="Starstriker" />
+      <card id="5060" mastery_level="5" name="Quack Apprentice" />
+      <card id="5110" mastery_level="6" name="Alectryon" />
+      <card id="5111" mastery_level="7" name="Bennu" />
     </deck>
     <speech>
       <line>
         <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>Wingless creatures have no right to flight, now be judged by the Order of Crimsonwings!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5787</id>
+    <name>Redfeathers and Crimsonwings</name>
+    <energy>9</energy>
+    <desc>Before the Avian can touch the orb, you, Cedric, and Groc arrive. The Avians' attention shifts to you, brandishing their magic and weapons...</desc>
+    <commander id="405" />
+    <deck>
+      <card id="8101" name="Former Void-Touched" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1319" name="Wraith" />
+      <card id="6031" name="Iceblood Assassin" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="5044" name="Telepathic Magi" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="6036" name="Cursed Ogre" />
+      <card id="5114" name="Wingward" />
+      <card id="6011" mastery_level="2" name="Bomb Spirit" />
+      <card id="2059" mastery_level="3" name="Matriarch's Call" />
+      <card id="7030" mastery_level="4" name="Arctic Ambusher" />
+      <card id="6112" mastery_level="5" name="Fire Hawk" />
+      <card id="6053" mastery_level="6" name="Squire Gorger" />
+      <card id="5104" mastery_level="7" name="Pisces" />
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
         <enemy>0</enemy>
-        <text>Look out adventurer, this one looks tough!</text>
+        <text>Avian attackers, how conveniently timed! Tell me, you wouldn't be affiliated with the Redfeather Avians, would you?</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>Red though we both may be, a feather's power is limited by its wing. Do not confuse royal blood with peons.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5788</id>
+    <name>Unknown Crimsonwing Power</name>
+    <energy>9</energy>
+    <desc>The Avians' wings become enveloped in some kind of power, like that of a white flame. Their eyes seem to look into your soul, pinpointing you and your companions' weaknesses, before they strike for your heart.</desc>
+    <commander id="294" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="6036" name="Cursed Ogre" />
+      <card id="7113" name="Revenge from Above" />
+      <card id="2041" name="Sharpwing" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="6011" name="Bomb Spirit" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="6125" mastery_level="2" name="Deadly Shot" />
+      <card id="2020" mastery_level="3" name="Tidetaken Fighter" />
+      <card id="6056" mastery_level="4" name="Potoo" />
+      <card id="5044" mastery_level="5" name="Telepathic Magi" />
+      <card id="5052" mastery_level="6" name="Paradise Avian" />
+      <card id="5056" mastery_level="7" name="Kaliri the Foremost" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5789</id>
+    <name>Crimsonwing Tactics</name>
+    <energy>9</energy>
+    <desc>Groc manages to clear a path to the Falling Petal orb, relying on you and Cedric to keep the Avian forces busy. Their tactics have switched from orb acquisition to overwhelming you with their sheer numbers.</desc>
+    <commander id="291" />
+    <deck>
+      <card id="8101" name="Former Void-Touched" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1319" name="Wraith" />
+      <card id="6031" name="Iceblood Assassin" />
+      <card id="6056" name="Potoo" />
+      <card id="2040" name="Owlmancer" />
+      <card id="7057" name="Bill Crasher" />
+      <card id="6164" name="Abomination" />
+      <card id="2081" name="Starstriker" />
+      <card id="6123" mastery_level="2" name="Battleborn Destrier" />
+      <card id="6016" mastery_level="3" name="Skeletal Giant" />
+      <card id="5060" mastery_level="4" name="Quack Apprentice" />
+      <card id="2082" mastery_level="5" name="Ecru Spear" />
+      <card id="5057" mastery_level="6" name="Skystriker" />
+      <card id="2068" mastery_level="7" name="Whitesail Wyvern" />
+    </deck>
+    <speech>
+      <line>
+        <commander>groc</commander>
+        <enemy>0</enemy>
+        <text>We are too far up in the atmosphere for even Avians to maintain altitude. If you destroy these orbs, we will all perish.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5790</id>
+    <name>The Petal Orb's Power</name>
+    <energy>9</energy>
+    <desc>The Crimsonwing Avian leader places his wing upon the orb. Energy starts to travel from the Petal Orb and to the Avian. Groc roars ferociously, charging forward.</desc>
+    <commander id="405" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="6029" name="Spinehead Stalker" />
+      <card id="6054" name="Shadowcrafter" />
+      <card id="7057" name="Bill Crasher" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="7084" name="Witchwood" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="6081" mastery_level="2" name="Apparition" />
+      <card id="7122" mastery_level="3" name="Satyr Runebearer" />
+      <card id="5044" mastery_level="4" name="Telepathic Magi" />
+      <card id="2081" mastery_level="5" name="Starstriker" />
+      <card id="5001" mastery_level="6" name="Aven Skypiercer" />
+      <card id="7101" mastery_level="7" name="Shriekers" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>It is a price we knowingly pay. The strong will survive, and the weak will die here. It matters not if they are our own.</text>
+      </line>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>You're insane.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5791</id>
+    <name>Remaining Defense Points</name>
+    <energy>9</energy>
+    <desc>The Crimsonwing Avian is forced to remove his wing from the Orb. Your combined forces are proving to be too much for them. They start to retreat, but Groc is hesitant to pursue them, as it would leave the Petal Orb undefended.</desc>
+    <commander id="294" />
+    <deck>
+      <card id="8101" name="Former Void-Touched" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="6036" name="Cursed Ogre" />
+      <card id="6112" name="Fire Hawk" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="5113" name="Bishop Rook" />
+      <card id="7125" name="Spectral Presence" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="5168" mastery_level="2" name="Lamia's Shield" />
+      <card id="7084" mastery_level="3" name="Witchwood" />
+      <card id="2082" mastery_level="4" name="Ecru Spear" />
+      <card id="6112" mastery_level="5" name="Fire Hawk" />
+      <card id="5059" mastery_level="6" name="Bemola" />
+      <card id="6055" mastery_level="7" name="Phoenix" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>You may have defeated us here, but we will find holes in your defenses. Retreat!</text>
+      </line>
+      <line>
+        <commander>groc</commander>
+        <enemy>0</enemy>
+        <text>I will stay here and protect the Petal Orb. Please go, and save the Lava and Basin Orbs!</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5792</id>
+    <name>Race to the Lava Orb</name>
+    <energy>9</energy>
+    <desc>While the Crimsonwing Avians fly to the next island, you and Cedric are forced to take the bridge connecting the islands. You hurry as quickly as you can move, hoping the Elementals can defend against the Avians until you arrive...</desc>
+    <commander id="313" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1319" name="Wraith" />
+      <card id="6081" name="Apparition" />
+      <card id="7055" name="Valley Strider" />
+      <card id="2040" name="Owlmancer" />
+      <card id="1027" name="Griffin Knight" />
+      <card id="7035" name="Carrion Tiger" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="5084" mastery_level="2" name="Dotora Spirit" />
+      <card id="6081" mastery_level="3" name="Apparition" />
+      <card id="2040" mastery_level="4" name="Owlmancer" />
+      <card id="6056" mastery_level="5" name="Potoo" />
+      <card id="7056" mastery_level="6" name="Trailblazer" />
+      <card id="7110" mastery_level="7" name="Toxin Glider" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5793</id>
+    <name>Crimsonwing Mantra</name>
+    <energy>9</energy>
+    <desc>The bridge pounds beneath your feet. It sways unsteadily, but holds as you and Cedric run across. The Crimsonwing Avians have already begun their assault on the Lava Orb.</desc>
+    <commander id="405" />
+    <deck>
+      <card id="8101" name="Former Void-Touched" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1311" name="Molten Skeleton" />
+      <card id="6083" name="Lockejaw" />
+      <card id="7057" name="Bill Crasher" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="7055" name="Valley Strider" />
+      <card id="7122" name="Satyr Runebearer" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="5084" mastery_level="2" name="Dotora Spirit" />
+      <card id="6016" mastery_level="3" name="Skeletal Giant" />
+      <card id="2081" mastery_level="4" name="Starstriker" />
+      <card id="6054" mastery_level="5" name="Shadowcrafter" />
+      <card id="7111" mastery_level="6" name="Aurai" />
+      <card id="5111" mastery_level="7" name="Bennu" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>...And let fire consume their souls, banished to a realm between the factions of Aether, Chaos, And Wyld. Unite in our power of wings, and soar unto the heavens.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5794</id>
+    <name>Avian Resistance</name>
+    <energy>9</energy>
+    <desc>The Elementals fall beneath the Crimsonwing Avians' attack. Once again, you and Cedric bring the fight to the Crimsonwings, determined to repel their forces.</desc>
+    <commander id="291" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="5033" name="Lost Soul" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="7029" name="Owl Griffin" />
+      <card id="7029" name="Owl Griffin" />
+      <card id="7082" name="Forest Umbras" />
+      <card id="5058" name="Crescent Moon Owl" />
+      <card id="5086" mastery_level="2" name="Spirit Blades" />
+      <card id="5168" mastery_level="3" name="Lamia's Shield" />
+      <card id="7030" mastery_level="4" name="Arctic Ambusher" />
+      <card id="6054" mastery_level="5" name="Shadowcrafter" />
+      <card id="7056" mastery_level="6" name="Trailblazer" />
+      <card id="6055" mastery_level="7" name="Phoenix" />
+    </deck>
+  </mission>
+  <mission>
+    <id>5795</id>
+    <name>Breathtaking Fighting</name>
+    <energy>9</energy>
+    <desc>The Lava Orb glows with a unique light compared to the Petal Orb. You can sense the artifact granting you further powers, as if requesting that you aid in its defense.</desc>
+    <commander id="405" />
+    <deck>
+      <card id="8101" name="Former Void-Touched" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1319" name="Wraith" />
+      <card id="5035" name="Vapor Guard" />
+      <card id="7055" name="Valley Strider" />
+      <card id="7030" name="Arctic Ambusher" />
+      <card id="7113" name="Revenge from Above" />
+      <card id="6083" name="Lockejaw" />
+      <card id="5060" name="Quack Apprentice" />
+      <card id="5123" mastery_level="2" name="Shadow Stalker" />
+      <card id="6031" mastery_level="3" name="Iceblood Assassin" />
+      <card id="2082" mastery_level="4" name="Ecru Spear" />
+      <card id="2041" mastery_level="5" name="Sharpwing" />
+      <card id="5000" mastery_level="6" name="Azure Sphinx" />
+      <card id="5001" mastery_level="7" name="Aven Skypiercer" />
+    </deck>
+    <speech>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>Huff... We can continue this as long as you, huff, like. But we'll just catch up and beat you again.</text>
+      </line>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>So you claim, but your heavy breathing betrays your body's truth.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5796</id>
+    <name>Secret of the Celestial Vault</name>
+    <energy>9</energy>
+    <desc>The fighting intensifies once again. Without Groc, your forces are noticeably weaker. But still you and Cedric carry on his request, aiming to protect the Lava Orb...</desc>
+    <commander id="313" />
+    <deck>
+      <card id="8102" name="Crimsonwing's Reach" />
+      <card id="1018" name="Armored Eagle" />
+      <card id="1314" name="Skeletal Hound" />
+      <card id="5084" name="Dotora Spirit" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="7055" name="Valley Strider" />
+      <card id="6125" name="Deadly Shot" />
+      <card id="6056" name="Potoo" />
+      <card id="5033" mastery_level="2" name="Lost Soul" />
+      <card id="5084" mastery_level="3" name="Dotora Spirit" />
+      <card id="5114" mastery_level="4" name="Wingward" />
+      <card id="2081" mastery_level="5" name="Starstriker" />
+      <card id="5056" mastery_level="6" name="Kaliri the Foremost" />
+      <card id="5115" mastery_level="7" name="Papyrus Crane" />
+    </deck>
+    <speech>
+      <line>
+        <commander>necromancer</commander>
+        <enemy>1</enemy>
+        <text>The Celestial Vault holds many secrets. Would you defend the Elementals if you knew the truth?</text>
+      </line>
+      <line>
+        <commander>froghero</commander>
+        <enemy>0</enemy>
+        <text>We will always stand by our friends in need.</text>
       </line>
     </speech>
   </mission>

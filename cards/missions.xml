@@ -6325,7 +6325,7 @@
     <combatBG>CombatBGEvent003</combatBG>
     <preview name="Map_Banner_StripMine" bundle="102" />
     <unlock_time>1513270800</unlock_time>
-    <!-- Thu, 12 Dec 2017 17:00:00 -->
+    <!-- Thu, 14 Dec 2017 17:00:00 -->
     <asset_bundle>14</asset_bundle>
     <req>24</req>
     <arena_x>250</arena_x>

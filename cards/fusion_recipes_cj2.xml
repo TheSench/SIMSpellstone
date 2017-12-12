@@ -2951,12 +2951,28 @@
     <resource card_id="15168" number="2" />
   </fusion_recipe>
   <fusion_recipe>
+    <card_id>15169</card_id>
+    <resource card_id="5169" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25169</card_id>
+    <resource card_id="15169" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
     <card_id>15170</card_id>
     <resource card_id="5170" number="2" />
   </fusion_recipe>
   <fusion_recipe>
     <card_id>25170</card_id>
     <resource card_id="15170" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>15171</card_id>
+    <resource card_id="5171" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>25171</card_id>
+    <resource card_id="15171" number="2" />
   </fusion_recipe>
   <!-- CHAOS PREMIUM SET BEGIN -->
   <fusion_recipe>
@@ -4256,6 +4272,14 @@
     <resource card_id="16164" number="2" />
   </fusion_recipe>
   <fusion_recipe>
+    <card_id>16165</card_id>
+    <resource card_id="6165" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26165</card_id>
+    <resource card_id="16165" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
     <card_id>16166</card_id>
     <resource card_id="6166" number="2" />
   </fusion_recipe>
@@ -4278,6 +4302,14 @@
   <fusion_recipe>
     <card_id>26168</card_id>
     <resource card_id="16168" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>16169</card_id>
+    <resource card_id="6169" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>26169</card_id>
+    <resource card_id="16169" number="2" />
   </fusion_recipe>
   <!-- WYLD PREMIUM SET BEGIN -->
   <fusion_recipe>
@@ -5623,6 +5655,14 @@
   <fusion_recipe>
     <card_id>27169</card_id>
     <resource card_id="17169" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>17170</card_id>
+    <resource card_id="7170" number="2" />
+  </fusion_recipe>
+  <fusion_recipe>
+    <card_id>27170</card_id>
+    <resource card_id="17170" number="2" />
   </fusion_recipe>
   <!-- END SET 3000 - Premium -->
   <!-- START SET 8000 - Story Element Assaults -->

@@ -5188,102 +5188,108 @@
     </rewards>
     <find_item id="3062" drop_per_energy=".8" />
   </campaign>
-  <!--  
-	<campaign> 
-		<id>1149</id>
-		<name>Test Mission 8</name>
-		<campaign_req id='6' level='1' />
-		<location_id>13</location_id>
-		<x>731</x>
-		<y>420</y>
-		<combatBG>CombatBGEvent003</combatBG>
-		<missions>
-			<mission_id>5771</mission_id>
-		</missions>
-		<rewards>
-			<card level='1' id='511' />
-			<card level='2' id='511' />
-			<card level='3' id='511' />
-			<card level='4' id='2115' />
-			<card level='5' id='512' />
-			<card level='6' id='2024' />
-			<item level='7' id='3063' />
-		</rewards>
-		<find_item id='3062' drop_per_energy='.8' />
-	</campaign>
-
-	<campaign> 
-		<id>1150</id>
-		<name>Test Mission 2</name>
-		<campaign_req id='6' level='1' />
-		<location_id>13</location_id>
-		<x>160</x>
-		<y>518</y>
-		<combatBG>CombatBGEvent003</combatBG>
-		<missions>
-			<mission_id>5771</mission_id>
-		</missions>
-		<rewards>
-			<card level='1' id='511' />
-			<card level='2' id='511' />
-			<card level='3' id='511' />
-			<card level='4' id='2115' />
-			<card level='5' id='512' />
-			<card level='6' id='2024' />
-			<item level='7' id='3063' />
-		</rewards>
-		<find_item id='3062' drop_per_energy='.8' />
-	</campaign>
-	
-	<campaign> 
-		<id>1151</id>
-		<name>Test Mission 3</name>
-		<campaign_req id='6' level='1' />
-		<location_id>13</location_id>
-		<x>270</x>
-		<y>484</y>
-		<combatBG>CombatBGEvent003</combatBG>
-		<missions>
-			<mission_id>5771</mission_id>
-		</missions>
-		<rewards>
-			<card level='1' id='511' />
-			<card level='2' id='511' />
-			<card level='3' id='511' />
-			<card level='4' id='2115' />
-			<card level='5' id='512' />
-			<card level='6' id='2024' />
-			<item level='7' id='3063' />
-		</rewards>
-		<find_item id='3062' drop_per_energy='.8' />
-	</campaign>
-	
+  <!-- Campaign Event 7 -->
+  <!-- Extra Node -->
+  <campaign>
+    <id>1149</id>
+    <name>Orbs' Power Source</name>
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1513270800</locked_start_time>
+    <!-- Thu, 14 Dec 2017 17:00:00 -->
+    <location_id>13</location_id>
+    <x>160</x>
+    <y>518</y>
+    <combatBG>CombatBGEvent003</combatBG>
+    <missions>
+      <mission_id>5771</mission_id>
+      <mission_id>5772</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="510" />
+      <card level="2" id="510" />
+      <card level="3" id="510" />
+      <card level="4" id="2109" />
+      <card level="5" id="510" />
+      <card level="6" id="510" />
+      <card level="7" id="510" />
+    </rewards>
+    <find_item id="3065" drop_per_energy=".1" />
+  </campaign>
+  <campaign>
+    <id>1150</id>
+    <name>Avian Arrival</name>
+    <campaign_req id="6" level="1" />
+    <locked_start_time>1513270800</locked_start_time>
+    <!-- Thu, 14 Dec 2017 17:00:00 -->
+    <location_id>13</location_id>
+    <x>270</x>
+    <y>484</y>
+    <combatBG>CombatBGEvent003</combatBG>
+    <missions>
+      <mission_id>5773</mission_id>
+      <mission_id>5774</mission_id>
+      <mission_id>5775</mission_id>
+      <mission_id>5776</mission_id>
+      <mission_id>5777</mission_id>
+      <mission_id>5778</mission_id>
+      <mission_id>5779</mission_id>
+      <mission_id>5780</mission_id>
+      <mission_id>5781</mission_id>
+      <mission_id>5782</mission_id>
+      <mission_id>5783</mission_id>
+      <mission_id>5784</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2115" />
+      <card level="5" id="512" />
+      <card level="6" id="2024" />
+      <item level="7" id="3066" />
+    </rewards>
+    <find_item id="3065" drop_per_energy=".2" />
+  </campaign>
+  <campaign>
+    <id>1151</id>
+    <name>The Crimsonwings</name>
+    <campaign_req id="1150" level="1" />
+    <locked_start_time>1514480400</locked_start_time>
+    <!-- Thu, 28 Dec 2017 17:00:00 -->
+    <battleground_id>2028</battleground_id>
+    <location_id>13</location_id>
+    <x>400</x>
+    <y>355</y>
+    <combatBG>CombatBGEvent003</combatBG>
+    <missions>
+      <mission_id>5785</mission_id>
+      <mission_id>5786</mission_id>
+      <mission_id>5787</mission_id>
+      <mission_id>5788</mission_id>
+      <mission_id>5789</mission_id>
+      <mission_id>5790</mission_id>
+      <mission_id>5791</mission_id>
+      <mission_id>5792</mission_id>
+      <mission_id>5793</mission_id>
+      <mission_id>5794</mission_id>
+      <mission_id>5795</mission_id>
+      <mission_id>5796</mission_id>
+    </missions>
+    <rewards>
+      <card level="1" id="511" />
+      <card level="2" id="511" />
+      <card level="3" id="511" />
+      <card level="4" id="2115" />
+      <card level="5" id="512" />
+      <card level="6" id="2024" />
+      <item level="7" id="3066" />
+    </rewards>
+    <find_item id="3065" drop_per_energy=".4" />
+  </campaign>
+  <!-- 
 	<campaign> 
 		<id>1152</id>
 		<name>Test Mission 4</name>
-		<campaign_req id='6' level='1' />
-		<location_id>13</location_id>
-		<x>400</x>
-		<y>355</y>
-		<combatBG>CombatBGEvent003</combatBG>
-		<missions>
-			<mission_id>5771</mission_id>
-		</missions>
-		<rewards>
-			<card level='1' id='511' />
-			<card level='2' id='511' />
-			<card level='3' id='511' />
-			<card level='4' id='2115' />
-			<card level='5' id='512' />
-			<card level='6' id='2024' />
-			<item level='7' id='3063' />
-		</rewards>
-		<find_item id='3062' drop_per_energy='.8' />
-	</campaign>
-	
-	<campaign> 
-		<id>1153</id>
-		<name>Test Mission 5</name>
 		<campaign_req id='6' level='1' />
 		<location_id>13</location_id>
 		<x>270</x>
@@ -5305,8 +5311,8 @@
 	</campaign>
 	
 	<campaign> 
-		<id>1154</id>
-		<name>Test Mission 6</name>
+		<id>1153</id>
+		<name>Test Mission 5</name>
 		<campaign_req id='6' level='1' />
 		<location_id>13</location_id>
 		<x>557</x>
@@ -5328,12 +5334,35 @@
 	</campaign>
 	
 	<campaign> 
-		<id>1155</id>
-		<name>Test Mission 7</name>
+		<id>1154</id>
+		<name>Test Mission 6</name>
 		<campaign_req id='6' level='1' />
 		<location_id>13</location_id>
 		<x>721</x>
 		<y>587</y>
+		<combatBG>CombatBGEvent003</combatBG>
+		<missions>
+			<mission_id>5771</mission_id>
+		</missions>
+		<rewards>
+			<card level='1' id='511' />
+			<card level='2' id='511' />
+			<card level='3' id='511' />
+			<card level='4' id='2115' />
+			<card level='5' id='512' />
+			<card level='6' id='2024' />
+			<item level='7' id='3063' />
+		</rewards>
+		<find_item id='3062' drop_per_energy='.8' />
+	</campaign>
+	
+	<campaign> 
+		<id>1155</id>
+		<name>Test Mission 7</name>
+		<campaign_req id='6' level='1' />
+		<location_id>13</location_id>
+		<x>731</x>
+		<y>420</y>
 		<combatBG>CombatBGEvent003</combatBG>
 		<missions>
 			<mission_id>5771</mission_id>

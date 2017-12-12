@@ -738,7 +738,7 @@
     <attack>0</attack>
     <health>44</health>
     <skill id="enhance" s="berserk" x="1" />
-    <skill id="enrage" x="1" />
+    <skill id="enrage" y="16" x="1" />
     <rarity>4</rarity>
     <type>2</type>
     <set>7000</set>
@@ -4367,7 +4367,7 @@
     <id>294</id>
     <card_type>1</card_type>
     <name>Avian Soldiers</name>
-    <portrait>aviansoldier</portrait>
+    <portrait>aviansoldier2</portrait>
     <attack>0</attack>
     <health>37</health>
     <rarity>4</rarity>
@@ -9281,6 +9281,52 @@
       <skill id="imbue" x="2" s="evade" />
       <skill id="strike" x="2" all="1" />
       <skill id="weaken" x="2" all="1" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>405</id>
+    <card_type>1</card_type>
+    <name>Crimsonwing Apostle</name>
+    <portrait>necromancer</portrait>
+    <asset_bundle></asset_bundle>
+    <health>65</health>
+    <rarity>4</rarity>
+    <skill id="imbue" x="1" all="1" s="armored" />
+    <skill id="rally" x="1" all="1" />
+    <skill id="strike" x="3" />
+    <type>1</type>
+    <set>9999</set>
+    <upgrade>
+      <level>2</level>
+      <health>67</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>70</health>
+      <skill id="imbue" x="1" all="1" s="armored" />
+      <skill id="rally" x="1" all="1" />
+      <skill id="strike" x="4" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>73</health>
+      <skill id="imbue" x="1" all="1" s="armored" />
+      <skill id="rally" x="1" all="1" />
+      <skill id="strike" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>76</health>
+      <skill id="imbue" x="1" all="1" s="armored" />
+      <skill id="rally" x="2" all="1" />
+      <skill id="strike" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>79</health>
+      <skill id="imbue" x="2" all="1" s="armored" />
+      <skill id="rally" x="2" all="1" />
+      <skill id="strike" x="6" />
     </upgrade>
   </unit>
 </root>

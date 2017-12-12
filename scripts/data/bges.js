@@ -1425,6 +1425,22 @@ var BATTLEGROUNDS = {
       },
     ]
   },
+  "2028": {
+    "name": "Crimsonwing Anthem",
+    "id": "2028",
+    "desc": "Non-token enemies become stronger with each passing Mastery level.",
+    "enemy_only": true,
+    "scale_with_level": "1",
+    "starting_level": "5",
+    "hidden": true,
+    "effect": [
+      {
+        "effect_type": "scale_attributes",
+        "base_mult": .008,
+        "mult": .0025,
+      },
+    ]
+  },
   "5001": {
     "name": "The Arena",
     "id": "5001",

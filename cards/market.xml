@@ -2430,6 +2430,20 @@
       <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000,4000" />
     </cards>
   </store_item>
+  <store_item>
+    <id>3080</id>
+    <name>Dual Undead Pack</name>
+    <category>0</category>
+    <hidden>1</hidden>
+    <desc>Gives two copies of one guaranteed ^c0DFFEpic^cFFFF+ Undead card from Premium set.</desc>
+    <priority>1</priority>
+    <asset_prefab>epic_pack</asset_prefab>
+    <icon>icon_blue_crystal</icon>
+    <hc_cost>1000</hc_cost>
+    <cards>
+      <card min_level="1" max_level="1" min_rarity="3" max_rarity="4" type="7" set="3000,4000" number="2" />
+    </cards>
+  </store_item>
   <!-- ======================================= -->
   <!-- ==== Emporium & Arena Market Items ==== -->
   <!-- ======================================= -->
@@ -4475,7 +4489,7 @@
     <hidden>1</hidden>
     <event_only>1</event_only>
     <priority>300</priority>
-    <desc>Fifteen Energy Potion +20 for 100 Shards for a limited time only! May be purchased an unlimited number of times!</desc>
+    <desc>Fifteen Energy Potion +20 for 100 Shards for a limited time only! May be purchased 10 times!</desc>
     <asset_prefab>event_012_energyChest</asset_prefab>
     <bundle>62</bundle>
     <icon>energy_refill_20</icon>
@@ -4519,5 +4533,22 @@
     <cards>
       <card min_level="1" max_level="1" unit_id="6082" display_card_id="6082" />
     </cards>
+  </store_item>
+  <store_item>
+    <id>5096</id>
+    <name>Arcane Fragment Satchel</name>
+    <banner>1</banner>
+    <category>1</category>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <priority>300</priority>
+    <desc>Gives 25 Arcane Fragments! May be purchased an unlimited number of times!</desc>
+    <asset_prefab>arcane_fragment_satchel</asset_prefab>
+    <background_prefab>arcane_fragment_satchel_banner</background_prefab>
+    <bundle>30</bundle>
+    <!-- <icon>rune_component_bag_item</icon> -->
+    <hc_cost>45</hc_cost>
+    <!-- Stuff to give -->
+    <item id="2001" quantity="25" />
   </store_item>
 </root>

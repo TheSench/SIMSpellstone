@@ -7449,5 +7449,183 @@
       <gold>800</gold>
     </reward>
   </achievement>
+  <!-- Campaign Event 7 Weeks 1-4 -->
+  <achievement>
+    <id>3304</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Orbs' Power Source</name>
+    <desc>Complete the 'Orbs' Power Source' campaign on Mastery Level 4.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1513270800</locked_start_time>
+    <!-- Thu, 14 Dec 2017 17:00:00 -->
+    <req>
+      <campaign>1149</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <item id="3065" number="50" />
+      <event_points id="7028" number="50" />
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3305</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Orbs' Power Source</name>
+    <desc>Complete the 'Orbs' Power Source' campaign on Mastery Level 7.</desc>
+    <locked_start_time>1513270800</locked_start_time>
+    <!-- Thu, 14 Dec 2017 17:00:00 -->
+    <achievement_req>3304</achievement_req>
+    <req>
+      <campaign>1149</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3306</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Avian Arrival</name>
+    <desc>Complete the 'Avian Arrival' campaign on Mastery Level 2.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1513270800</locked_start_time>
+    <!-- Thu, 14 Dec 2017 17:00:00 -->
+    <req>
+      <campaign>1150</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3307</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Avian Arrival</name>
+    <desc>Complete the 'Avian Arrival' campaign on Mastery Level 4.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1513270800</locked_start_time>
+    <!-- Thu, 14 Dec 2017 17:00:00 -->
+    <achievement_req>3306</achievement_req>
+    <req>
+      <campaign>1150</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3308</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Avian Arrival</name>
+    <desc>Complete the 'Avian Arrival' campaign on Mastery Level 6.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1513270800</locked_start_time>
+    <!-- Thu, 14 Dec 2017 17:00:00 -->
+    <achievement_req>3307</achievement_req>
+    <req>
+      <campaign>1150</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3309</id>
+    <type>2</type>
+    <order>101</order>
+    <name>Avian Arrival</name>
+    <desc>Complete the 'Avian Arrival' campaign on Mastery Level 7.</desc>
+    <mission_req>244</mission_req>
+    <locked_start_time>1513270800</locked_start_time>
+    <!-- Thu, 14 Dec 2017 17:00:00 -->
+    <achievement_req>3308</achievement_req>
+    <req>
+      <campaign>1150</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3310</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Crimsonwings</name>
+    <desc>Complete the 'The Crimsonwings' campaign on Mastery Level 2.</desc>
+    <mission_req>5784</mission_req>
+    <locked_start_time>1514480400</locked_start_time>
+    <!-- Thu, 28 Dec 2017 17:00:00 -->
+    <req>
+      <campaign>1151</campaign>
+      <level>2</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3311</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Crimsonwings</name>
+    <desc>Complete the 'The Crimsonwings' campaign on Mastery Level 4.</desc>
+    <mission_req>5784</mission_req>
+    <locked_start_time>1514480400</locked_start_time>
+    <!-- Thu, 28 Dec 2017 17:00:00 -->
+    <achievement_req>3310</achievement_req>
+    <req>
+      <campaign>1151</campaign>
+      <level>4</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3312</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Crimsonwings</name>
+    <desc>Complete the 'The Crimsonwings' campaign on Mastery Level 6.</desc>
+    <mission_req>5784</mission_req>
+    <locked_start_time>1514480400</locked_start_time>
+    <!-- Thu, 28 Dec 2017 17:00:00 -->
+    <achievement_req>3311</achievement_req>
+    <req>
+      <campaign>1151</campaign>
+      <level>6</level>
+    </req>
+    <reward>
+      <gold>400</gold>
+    </reward>
+  </achievement>
+  <achievement>
+    <id>3313</id>
+    <type>2</type>
+    <order>101</order>
+    <name>The Crimsonwings</name>
+    <desc>Complete the 'The Crimsonwings' campaign on Mastery Level 7.</desc>
+    <mission_req>5784</mission_req>
+    <locked_start_time>1514480400</locked_start_time>
+    <!-- Thu, 28 Dec 2017 17:00:00 -->
+    <achievement_req>3312</achievement_req>
+    <req>
+      <campaign>1151</campaign>
+      <level>7</level>
+    </req>
+    <reward>
+      <gold>800</gold>
+    </reward>
+  </achievement>
   <!-- END Event Quests  -->
 </root>

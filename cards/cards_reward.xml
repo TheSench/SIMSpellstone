@@ -10241,7 +10241,7 @@
     <skill id="nullify" x="1" />
     <type>1</type>
     <sub_type>10</sub_type>
-    <set>2000</set>
+    <set>2100</set>
     <upgrade>
       <level>2</level>
       <skill id="evadebarrier" x="1" />
@@ -10284,7 +10284,7 @@
     <skill id="nullify" x="2" />
     <type>1</type>
     <sub_type>10</sub_type>
-    <set>2000</set>
+    <set>2100</set>
     <upgrade>
       <level>2</level>
       <health>17</health>
@@ -10326,7 +10326,7 @@
     <skill id="nullify" x="2" />
     <type>1</type>
     <sub_type>10</sub_type>
-    <set>2000</set>
+    <set>2100</set>
     <upgrade>
       <level>2</level>
       <skill id="evadebarrier" x="5" />

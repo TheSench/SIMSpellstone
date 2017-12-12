@@ -21258,4 +21258,123 @@
       <skill id="berserk" x="5" />
     </upgrade>
   </unit>
+  <unit>
+    <id>7170</id>
+    <card_type>2</card_type>
+    <name>Gallows Hand</name>
+    <picture>Undead_Executioner_Skeleton_A</picture>
+    <asset_bundle>112</asset_bundle>
+    <hidden_until_time>1512666000</hidden_until_time>
+    <attack>6</attack>
+    <health>16</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="corrosive" x="2" />
+    <skill id="leech" x="4" />
+    <skill id="berserk" x="2" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>18</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="corrosive" x="3" />
+      <skill id="leech" x="4" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="3" />
+      <skill id="leech" x="5" />
+      <skill id="berserk" x="2" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>17170</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Gallows Hew</name>
+    <picture>Undead_Executioner_Skeleton_A</picture>
+    <asset_bundle>112</asset_bundle>
+    <hidden_until_time>1512666000</hidden_until_time>
+    <attack>7</attack>
+    <health>18</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="corrosive" x="3" />
+    <skill id="leech" x="5" />
+    <skill id="berserk" x="2" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>19</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="corrosive" x="3" />
+      <skill id="leech" x="5" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>20</health>
+      <skill id="corrosive" x="4" />
+      <skill id="leech" x="5" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="4" />
+      <skill id="leech" x="6" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>27170</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Gallows Humerus</name>
+    <picture>Undead_Executioner_Skeleton_B</picture>
+    <asset_bundle>112</asset_bundle>
+    <hidden_until_time>1512666000</hidden_until_time>
+    <attack>7</attack>
+    <health>21</health>
+    <cost>2</cost>
+    <rarity>3</rarity>
+    <skill id="corrosive" x="4" />
+    <skill id="leech" x="6" />
+    <skill id="berserk" x="3" />
+    <type>3</type>
+    <sub_type>7</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>22</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="corrosive" x="5" />
+      <skill id="leech" x="6" />
+      <skill id="berserk" x="3" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="corrosive" x="5" />
+      <skill id="leech" x="7" />
+      <skill id="berserk" x="4" />
+    </upgrade>
+  </unit>
 </root>
