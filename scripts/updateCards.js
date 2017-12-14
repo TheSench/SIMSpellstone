@@ -66,6 +66,7 @@ var DATA_UPDATER = (function () {
         "cards_premium_chaos.xml",
         "cards_premium_wyld.xml",
         "cards_reward.xml",
+		"cards_shard_cards,xml",
         "cards_special.xml",
         "cards_standard.xml",
         "cards_story.xml",

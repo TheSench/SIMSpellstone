@@ -26,6 +26,7 @@ void Main()
 		.Union(LoadUnits("cards_premium_chaos.xml"))
 		.Union(LoadUnits("cards_premium_wyld.xml"))
 		.Union(LoadUnits("cards_reward.xml"))
+		.Union(LoadUnits("cards_shard_cards.xml"))
 		.Union(LoadUnits("cards_special.xml"))
 		.Union(LoadUnits("cards_standard.xml"))
 		.Union(LoadUnits("cards_story.xml")));
@@ -44,6 +45,7 @@ void Main()
 	Normalize("cards_premium_chaos.xml", downloadFiles);
 	Normalize("cards_premium_wyld.xml", downloadFiles);
 	Normalize("cards_reward.xml", downloadFiles);
+	Normalize("cards_shard_cards.xml", downloadFiles);
 	Normalize("cards_special.xml", downloadFiles);
 	Normalize("cards_standard.xml", downloadFiles);
 	Normalize("cards_story.xml", downloadFiles);
@@ -215,6 +217,7 @@ void Main()
 		"cards_premium_chaos.xml",
 		"cards_premium_wyld.xml",
 		"cards_reward.xml",
+		"cards_shard_cards.xml",
 		"cards_special.xml",
 		"cards_standard.xml",
 		"cards_story.xml"
@@ -518,14 +521,18 @@ void Main()
 
 private HashSet<string> LoadUnits(string file)
 {
-	var doc = XDocument.Load(Path.Combine(path, file));
+	var filePath = Path.Combine(path, file);
 	var existingUnits = new HashSet<string>();
-	var unitNodes = doc.Descendants("unit");
-	foreach (var unitXML in unitNodes)
+	if (File.Exists(filePath))
 	{
-		var stringReader = new StringReader(unitXML.ToString());
-		var unit = (unit)unitDeserializer.Deserialize(stringReader);
-		existingUnits.Add(unit.id);
+		var doc = XDocument.Load(filePath);
+		var unitNodes = doc.Descendants("unit");
+		foreach (var unitXML in unitNodes)
+		{
+			var stringReader = new StringReader(unitXML.ToString());
+			var unit = (unit)unitDeserializer.Deserialize(stringReader);
+			existingUnits.Add(unit.id);
+		}
 	}
 	return existingUnits;
 }

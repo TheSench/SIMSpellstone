@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- SHARD CARDS -->
+  <!-- Fragment items will be auto generated with the same id as the card -->
+  <unit>
+    <id>4000</id>
+    <name>Noctrus Flintclaw</name>
+    <set>5000</set>
+    <shard_card>1</shard_card>
+    <picture>Avian_Stag_B</picture>
+    <asset_bundle>114</asset_bundle>
+    <item_name>Noctrus Flintclaw Fragment</item_name>
+    <item_desc>Collect Noctrus Flintclaw Fragments to craft and upgrade the Legendary Noctrus Flintclaw card!</item_desc>
+    <item_icon>Shardbot_Bronze</item_icon>
+    <item_bundle_id>17</item_bundle_id>
+    <type>3</type>
+    <sub_type>10</sub_type>
+    <attack>9</attack>
+    <health>33</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="armored" x="3" />
+    <skill id="enfeeble" all="1" x="3" />
+    <skill id="pierce" x="6" />
+    <upgrade>
+      <level>2</level>
+      <health>34</health>
+      <skill id="armored" x="3" />
+      <skill id="enfeeble" all="1" x="3" />
+      <skill id="pierce" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <attack>10</attack>
+      <health>35</health>
+      <skill id="armored" x="3" />
+      <skill id="enfeeble" all="1" x="3" />
+      <skill id="pierce" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>36</health>
+      <skill id="armored" x="4" />
+      <skill id="enfeeble" all="1" x="3" />
+      <skill id="pierce" x="9" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>11</attack>
+      <health>37</health>
+      <skill id="armored" x="4" />
+      <skill id="enfeeble" all="1" x="4" />
+      <skill id="pierce" x="10" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <attack>12</attack>
+      <skill id="armored" x="5" />
+      <skill id="enfeeble" all="1" x="4" />
+      <skill id="pierce" x="11" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <health>38</health>
+      <skill id="armored" x="5" />
+      <skill id="enfeeble" all="1" x="5" />
+      <skill id="pierce" x="11" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <attack>13</attack>
+      <skill id="armored" x="5" />
+      <skill id="enfeeble" all="1" x="5" />
+      <skill id="pierce" x="12" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>39</health>
+      <skill id="armored" x="6" />
+      <skill id="enfeeble" all="1" x="5" />
+      <skill id="pierce" x="13" />
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <attack>14</attack>
+      <skill id="armored" x="6" />
+      <skill id="enfeeble" all="1" x="6" />
+      <skill id="pierce" x="14" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>4001</id>
+    <name>Orbo, the Cuddler</name>
+    <set>5100</set>
+    <shard_card>1</shard_card>
+    <asset_prefab>mythicUndead_A</asset_prefab>
+    <asset_prefab_alt>mythicUndead_B</asset_prefab_alt>
+    <picture>Mythic_Undead_A</picture>
+    <picture>Mythic_Undead_A</picture>
+    <asset_bundle>57</asset_bundle>
+    <item_name>Orbo Fragment</item_name>
+    <item_desc>Collect Orbo Fragments to craft and upgrade the Mythic Orbo card!</item_desc>
+    <item_icon>Shardbot_Bronze</item_icon>
+    <item_bundle_id>17</item_bundle_id>
+    <type>1</type>
+    <sub_type>16</sub_type>
+    <attack>9</attack>
+    <health>20</health>
+    <cost>3</cost>
+    <rarity>5</rarity>
+    <skill id="leech" x="8" />
+    <skill id="berserk" x="4" />
+    <skill id="reanimate" x="5" />
+    <upgrade>
+      <level>2</level>
+      <skill id="leech" x="8" />
+      <skill id="berserk" x="4" />
+      <skill id="reanimate" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="leech" x="9" />
+      <skill id="berserk" x="4" />
+      <skill id="reanimate" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="leech" x="9" />
+      <skill id="berserk" x="5" />
+      <skill id="reanimate" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>11</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="leech" x="9" />
+      <skill id="berserk" x="6" />
+      <skill id="reanimate" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>7</level>
+      <skill id="leech" x="9" />
+      <skill id="berserk" x="7" />
+      <skill id="reanimate" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>8</level>
+      <skill id="leech" x="9" />
+      <skill id="berserk" x="7" />
+      <skill id="reanimate" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>9</level>
+      <health>57</health>
+    </upgrade>
+    <upgrade>
+      <level>10</level>
+      <skill id="leech" x="10" />
+      <skill id="berserk" x="8" />
+      <skill id="reanimate" x="7" />
+    </upgrade>
+  </unit>
+</root>
