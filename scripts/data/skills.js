@@ -211,7 +211,7 @@ var SKILL_DATA = {
 	},
 	reanimate : {
 		name: 'Reanimate',
-		type: 'activation',
+		type: 'onDeath',
 		icon: 'reanimate',
 		desc: 'Revives on first death'
 	},

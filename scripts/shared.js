@@ -243,8 +243,6 @@ function cloneCard(original) {
     return copy;
 }
 
-
-
 var defaultStatusValues = {
     // Attack Modifiers
     attack_berserk: 0,
@@ -273,6 +271,7 @@ var defaultStatusValues = {
     valor_triggered: false,
     dualstrike_triggered: false,
     ondeath_triggered: false,
+	reanimated: false
 }
 function applyDefaultStatuses(card) {
 	card.removeImbue();
@@ -1511,12 +1510,14 @@ var multiplierChars = "_*.'";
 var runeDelimiter = "/";
 var indexDelimiter = '-';
 var priorityDelimiter = '|';
-var towers = {};
+var noFusions = {};
 for (var id in CARDS) {
     if (id < 10000) {
         var card = CARDS[id];
         if (card.sub_type.indexOf("999") >= 0) {
-            towers[id] = true;
+        	noFusions[id] = true;
+        } else if (card.shard_card) {
+        	noFusions[id] = true;
         }
     }
 }
@@ -1528,7 +1529,7 @@ function unitInfo_to_base64(unit_info) {
     var baseID = parseInt(unit_info.id);
     var level = (parseInt(unit_info.level) - 1);
 
-    if (towers[baseID]) {
+    if (noFusions[baseID]) {
         var fusion = level % 3;
         var level = Math.floor(level / 3);
     } else {
@@ -1565,7 +1566,7 @@ function base64_to_unitInfo(base64) {
     dec = (dec - fusion) / 3;
     var unitID = dec;
 
-    if (towers[unitID]) {
+    if (noFusions[unitID]) {
         level = level * 3 + fusion;
     } else if (fusion > 0) {
         unitID = Number(fusion + '' + unitID);

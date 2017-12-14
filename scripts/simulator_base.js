@@ -1687,6 +1687,23 @@ var SIMULATOR = {};
 			}
 
 			return 1;
+		},
+
+		reanimate: function (dying, killer, skill) {
+
+			// Only trigger once
+			if (dying.reanimated) {
+				return 0;
+			}
+
+			dying.health_left = skill.x;
+			dying.reanimated = true;
+
+			if (debug) {
+				echo += ' and is reanimated</br>';
+			}
+
+			return 1;
 		}
 	};
 

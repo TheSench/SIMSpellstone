@@ -746,6 +746,16 @@
       <skill id="enhance" s="rally" mult="0.5" all="1" />
     </effect>
   </battleground>
+  <battleground>
+    <id>523</id>
+    <name>Vengeance War</name>
+    <desc>Vengeance skills are 50% more effective.</desc>
+    <icon>empower_BGE_64</icon>
+    <icon_bundle>96</icon_bundle>
+    <effect>
+      <skill id="enhance" s="counter" mult="0.5" all="1" />
+    </effect>
+  </battleground>
   <!-- 1001+: Personal BGE -->
   <battleground>
     <id>1001</id>

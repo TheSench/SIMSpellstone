@@ -1893,35 +1893,41 @@ var setCard = function (index, unit) {
 	$deck.find(".card").eq(index + 1).replaceWith(htmlCard);
 }
 
-var filterSet = function (button, set, exclude) {
+var filterSet = function (button, sets, exclude) {
 	setHidden = {};
+
+	var clear = null;
 	if (button.classList.contains("selected")) {
 		button.classList.remove("selected");
 		button.checked = false;
-		setFilters.splice(setFilters.indexOf(set), 1);
-		if (set == "1000") {
-			setFilters.splice(setFilters.indexOf("7000"), 1);
-		}
-	} else if (button.classList.contains("excluded")) {
+		clear = "selected";
+	} else if(button.classList.contains("excluded")) {
 		button.classList.remove("excluded");
 		button.checked = false;
-		setExclusions.splice(setExclusions.indexOf(set), 1);
-		if (set == "1000") {
-			setExclusions.splice(setExclusions.indexOf("7000"), 1);
-		}
+		clear = "excluded";
 	} else if (exclude) {
 		button.classList.add("excluded");
-		setExclusions.push(set);
-		if (set == "1000") {
-			setExclusions.push("7000");
-		}
 	} else {
 		button.classList.add("selected");
-		setFilters.push(set);
-		if (set == "1000") {
-			setFilters.push("7000");
-		}
 	}
+
+	sets.split(',').forEach(function (set) {
+		switch (clear) {
+			case "selected":
+				setFilters.splice(setFilters.indexOf(set), 1);
+				break;
+			case "excluded":
+				setExclusions.splice(setExclusions.indexOf(set), 1);
+				break;
+			default:
+				if (exclude) {
+					setExclusions.push(set);
+				} else {
+					setFilters.push(set);
+				}
+				break;
+		}
+	});
 
 	if ((setFilters.length + setExclusions.length) > 0) {
 		for (var i = 0, len = units.length; i < len; i++) {

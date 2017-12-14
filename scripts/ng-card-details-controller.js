@@ -125,12 +125,11 @@
         $scope.getRarityIcon = function ()
         {
             var card = $scope.card;
-            if (card.rarity > 0)
-            {
-                return "res/cardAssets/Level_" + card.rarity + "_" + card.level + ".png";
-            } else if (card.maxLevel > 1)
-            {
-                return "res/cardAssets/" + card.maxLevel + "_" + card.level + ".png";
+            if (card.rarity > 0) {
+            	var rarityType = card.rarity + ((card.maxLevel > Number(card.rarity) + 2) ? '_' + card.maxLevel : '');
+            	return "res/cardAssets/Level_" + rarityType + "_" + card.level + ".png";
+            } else if (card.maxLevel > 1) {
+                return "res/cardAssets/" +card.maxLevel + "_" +card.level + ".png";
             }
         }
 

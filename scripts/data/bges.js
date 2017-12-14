@@ -964,6 +964,20 @@ var BATTLEGROUNDS = {
       },
     ]
   },
+  "523": {
+    "name": "Vengeance War",
+    "id": "523",
+    "desc": "Vengeance skills are 50% more effective.",
+    "effect": [
+      {
+        "effect_type": "skill",
+        "id": "enhance",
+        "mult": 0.5,
+        "s": "counter",
+        "all": "1",
+      },
+    ]
+  },
   "1001": {
     "name": "Primal Mending",
     "id": "1001",

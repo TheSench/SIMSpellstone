@@ -6543,7 +6543,7 @@
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="counter" x="4" />
+      <skill id="counter" x="5" />
       <skill id="leech" x="6" />
       <skill id="berserk" x="4" />
     </upgrade>
@@ -6557,11 +6557,11 @@
     <asset_bundle>56</asset_bundle>
     <hidden_until_time>1462813200</hidden_until_time>
     <!-- Mon, 09 May 2016 17:00:00 GMT -->
-    <attack>5</attack>
-    <health>28</health>
+    <attack>6</attack>
+    <health>30</health>
     <cost>3</cost>
     <rarity>4</rarity>
-    <skill id="counter" x="4" />
+    <skill id="counter" x="6" />
     <skill id="leech" x="6" />
     <skill id="berserk" x="4" />
     <type>2</type>
@@ -6569,27 +6569,27 @@
     <set>4000</set>
     <upgrade>
       <level>2</level>
-      <health>29</health>
+      <health>32</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>30</health>
-      <attack>6</attack>
+      <health>34</health>
+      <attack>7</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>31</health>
+      <health>35</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="counter" x="5" />
-      <skill id="leech" x="6" />
+      <skill id="counter" x="7" />
+      <skill id="leech" x="7" />
       <skill id="berserk" x="4" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="counter" x="5" />
-      <skill id="leech" x="7" />
+      <skill id="counter" x="8" />
+      <skill id="leech" x="8" />
       <skill id="berserk" x="5" />
     </upgrade>
   </unit>
@@ -6885,7 +6885,7 @@
     <asset_bundle>56</asset_bundle>
     <hidden_until_time>1463677200</hidden_until_time>
     <!-- Thu, 19 May 2016 17:00:00 GMT -->
-    <attack>4</attack>
+    <attack>6</attack>
     <health>14</health>
     <cost>2</cost>
     <rarity>3</rarity>
@@ -6925,8 +6925,8 @@
     <asset_bundle>56</asset_bundle>
     <hidden_until_time>1463677200</hidden_until_time>
     <!-- Thu, 19 May 2016 17:00:00 GMT -->
-    <attack>4</attack>
-    <health>18</health>
+    <attack>7</attack>
+    <health>20</health>
     <cost>2</cost>
     <rarity>3</rarity>
     <skill id="enfeeble" x="5" />
@@ -6937,11 +6937,11 @@
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <attack>5</attack>
+      <attack>8</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>19</health>
+      <health>21</health>
     </upgrade>
     <upgrade>
       <level>4</level>
@@ -6953,7 +6953,7 @@
       <level>5</level>
       <skill id="enfeeble" x="6" />
       <skill id="weaken" x="2" all="1" />
-      <skill id="nullify" x="2" />
+      <skill id="nullify" x="3" />
     </upgrade>
   </unit>
   <unit>
@@ -14025,13 +14025,13 @@
       <level>4</level>
       <skill id="fervor" x="4" y="10" />
       <skill id="burn" x="4" />
-      <skill id="leech" x="5" />
+      <skill id="leech" x="6" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="fervor" x="4" y="10" />
+      <skill id="fervor" x="5" y="10" />
       <skill id="burn" x="5" />
-      <skill id="leech" x="6" />
+      <skill id="leech" x="7" />
     </upgrade>
   </unit>
   <unit>
@@ -14221,7 +14221,7 @@
     <picture>Horus_A</picture>
     <asset_bundle>85</asset_bundle>
     <hidden_until_time>1487869200</hidden_until_time>
-    <attack>4</attack>
+    <attack>5</attack>
     <health>11</health>
     <cost>1</cost>
     <rarity>4</rarity>
@@ -14237,11 +14237,11 @@
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>13</health>
+      <health>15</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>5</attack>
+      <attack>6</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
@@ -14264,8 +14264,8 @@
     <picture>Horus_B</picture>
     <asset_bundle>85</asset_bundle>
     <hidden_until_time>1487869200</hidden_until_time>
-    <attack>5</attack>
-    <health>14</health>
+    <attack>7</attack>
+    <health>16</health>
     <cost>1</cost>
     <rarity>4</rarity>
     <skill id="corrosive" x="3" />
@@ -14276,27 +14276,27 @@
     <set>3000</set>
     <upgrade>
       <level>2</level>
-      <health>15</health>
+      <health>17</health>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <attack>6</attack>
+      <attack>8</attack>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>16</health>
+      <health>18</health>
     </upgrade>
     <upgrade>
       <level>5</level>
-      <skill id="corrosive" x="4" />
+      <skill id="corrosive" x="5" />
       <skill id="burn" x="3" />
-      <skill id="nullify" x="1" />
+      <skill id="nullify" x="2" />
     </upgrade>
     <upgrade>
       <level>6</level>
-      <skill id="corrosive" x="4" />
+      <skill id="corrosive" x="6" />
       <skill id="burn" x="4" />
-      <skill id="nullify" x="2" />
+      <skill id="nullify" x="3" />
     </upgrade>
   </unit>
   <unit>
@@ -21072,6 +21072,275 @@
       <skill id="evade" x="3" />
       <skill id="fervor" x="6" y="2" />
       <skill id="poison" x="7" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6170</id>
+    <card_type>2</card_type>
+    <name>Ostromech Stepclaw</name>
+    <picture>Avian_Mecha_Desert_Ostrich_Robo_Rider_A</picture>
+    <asset_bundle>114</asset_bundle>
+    <hidden_until_time>1513270800</hidden_until_time>
+    <attack>6</attack>
+    <health>25</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="4" />
+    <skill id="burn" x="2" />
+    <skill id="poison" x="4" />
+    <type>2</type>
+    <sub_type>10</sub_type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>26</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>27</health>
+      <skill id="corrosive" x="4" />
+      <skill id="burn" x="2" />
+      <skill id="poison" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>28</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>29</health>
+      <skill id="corrosive" x="5" />
+      <skill id="burn" x="2" />
+      <skill id="poison" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>30</health>
+      <skill id="corrosive" x="5" />
+      <skill id="burn" x="3" />
+      <skill id="poison" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16170</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Ostromech Glideclaw</name>
+    <picture>Avian_Mecha_Desert_Ostrich_Robo_Rider_A</picture>
+    <asset_bundle>114</asset_bundle>
+    <hidden_until_time>1513270800</hidden_until_time>
+    <attack>6</attack>
+    <health>30</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="5" />
+    <skill id="burn" x="3" />
+    <skill id="poison" x="6" />
+    <type>2</type>
+    <sub_type>10</sub_type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>31</health>
+      <attack>7</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>32</health>
+      <skill id="corrosive" x="5" />
+      <skill id="burn" x="3" />
+      <skill id="poison" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>33</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>34</health>
+      <skill id="corrosive" x="6" />
+      <skill id="burn" x="3" />
+      <skill id="poison" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>35</health>
+      <skill id="corrosive" x="6" />
+      <skill id="burn" x="4" />
+      <skill id="poison" x="7" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26170</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Ostromech Shredclaw</name>
+    <picture>Avian_Mecha_Desert_Ostrich_Robo_Rider_B</picture>
+    <asset_bundle>114</asset_bundle>
+    <hidden_until_time>1513270800</hidden_until_time>
+    <attack>7</attack>
+    <health>36</health>
+    <cost>3</cost>
+    <rarity>4</rarity>
+    <skill id="corrosive" x="6" />
+    <skill id="burn" x="4" />
+    <skill id="poison" x="7" />
+    <type>2</type>
+    <sub_type>10</sub_type>
+    <sub_type>16</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>37</health>
+      <skill id="corrosive" x="6" />
+      <skill id="burn" x="4" />
+      <skill id="poison" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>38</health>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>39</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <cost>3</cost>
+      <skill id="corrosive" x="7" />
+      <skill id="burn" x="4" />
+      <skill id="poison" x="8" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="corrosive" x="7" />
+      <skill id="burn" x="5" />
+      <skill id="poison" x="9" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>6172</id>
+    <card_type>2</card_type>
+    <name>Steel Plover</name>
+    <picture>Spiked_Orb_Avian_A</picture>
+    <asset_bundle>114</asset_bundle>
+    <hidden_until_time>1513270800</hidden_until_time>
+    <attack>5</attack>
+    <health>24</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="4" />
+    <skill id="fervor" x="3" y="10" />
+    <skill id="leech" x="4" />
+    <type>2</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>25</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>26</health>
+      <skill id="counter" x="4" />
+      <skill id="fervor" x="3" y="10" />
+      <skill id="leech" x="5" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>27</health>
+      <skill id="counter" x="5" />
+      <skill id="fervor" x="3" y="10" />
+      <skill id="leech" x="5" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>16172</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Bladesteel Plover</name>
+    <picture>Spiked_Orb_Avian_A</picture>
+    <asset_bundle>114</asset_bundle>
+    <hidden_until_time>1513270800</hidden_until_time>
+    <attack>6</attack>
+    <health>28</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="5" />
+    <skill id="fervor" x="4" y="10" />
+    <skill id="leech" x="5" />
+    <type>2</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>29</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>30</health>
+      <skill id="counter" x="5" />
+      <skill id="fervor" x="4" y="10" />
+      <skill id="leech" x="6" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>7</attack>
+      <health>31</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="6" />
+      <skill id="fervor" x="4" y="10" />
+      <skill id="leech" x="6" />
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26172</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Spikesteel Plover</name>
+    <picture>Spiked_Orb_Avian_B</picture>
+    <asset_bundle>114</asset_bundle>
+    <hidden_until_time>1513270800</hidden_until_time>
+    <attack>7</attack>
+    <health>31</health>
+    <cost>3</cost>
+    <rarity>3</rarity>
+    <skill id="counter" x="6" />
+    <skill id="fervor" x="5" y="10" />
+    <skill id="leech" x="7" />
+    <type>2</type>
+    <sub_type>10</sub_type>
+    <set>3000</set>
+    <upgrade>
+      <level>2</level>
+      <health>32</health>
+      <attack>8</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>33</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>34</health>
+      <skill id="counter" x="7" />
+      <skill id="fervor" x="5" y="10" />
+      <skill id="leech" x="7" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="counter" x="7" />
+      <skill id="fervor" x="6" y="10" />
+      <skill id="leech" x="8" />
     </upgrade>
   </unit>
 </root>

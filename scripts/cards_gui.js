@@ -374,7 +374,11 @@ var CARD_GUI = {};
 			htmlCard.appendChild(subFactionsDiv);
 		}
 		if (card.rarity > 0) {
-			var htmlLevel = createImg(getAssetPath("cardAssets") + "Level_" + card.rarity + "_" + card.level + ".png");
+			if (card.maxLevel > Number(card.rarity) + 2) {
+				var htmlLevel = createImg(getAssetPath("cardAssets") + "Level_" + card.rarity + "_" + card.maxLevel + "_" + card.level + ".png");
+			} else {
+				var htmlLevel = createImg(getAssetPath("cardAssets") + "Level_" + card.rarity + "_" + card.level + ".png");
+			}
 			htmlLevel.className = "level";
 			if (card.id > 9999) {
 				var fusion = ((card.id.toString()[0] == "1") ? "Dualfuse" : "Quadfuse");
@@ -598,7 +602,8 @@ var CARD_GUI = {};
 		2000: "Reward",
 		3000: "Premium",
 		4000: "BoxOnly",
-		5000: "Level_5_7",
+		5000: "Level_4_10_10",
+		5100: "Level_5_10_10",
 		9999: "StoryElements"
 	}
 

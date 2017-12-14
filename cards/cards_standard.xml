@@ -1686,12 +1686,12 @@
     <name>Castlerock Griffin</name>
     <picture>Griffin_Knight_C</picture>
     <asset_bundle>6</asset_bundle>
-    <attack>3</attack>
-    <health>12</health>
+    <attack>4</attack>
+    <health>14</health>
     <cost>1</cost>
     <rarity>3</rarity>
     <skill id="armored" x="3" />
-    <skill id="counter" x="3" />
+    <skill id="counter" x="4" />
     <skill id="flurry" c="4" />
     <type>1</type>
     <sub_type>10</sub_type>
@@ -1699,20 +1699,21 @@
     <release_set>1</release_set>
     <upgrade>
       <level>2</level>
-      <health>13</health>
+      <health>15</health>
+      <attack>5</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>14</health>
+      <health>16</health>
     </upgrade>
     <upgrade>
       <level>4</level>
-      <attack>4</attack>
+      <attack>6</attack>
     </upgrade>
     <upgrade>
       <level>5</level>
       <skill id="armored" x="3" />
-      <skill id="counter" x="3" />
+      <skill id="counter" x="5" />
       <skill id="flurry" c="3" />
     </upgrade>
   </unit>
@@ -2267,11 +2268,11 @@
     <picture>Lunar_Elemental_B</picture>
     <asset_bundle>38</asset_bundle>
     <attack>5</attack>
-    <health>26</health>
+    <health>29</health>
     <cost>3</cost>
     <rarity>3</rarity>
     <skill id="heal" x="2" all="1" />
-    <skill id="protect" x="3" y="1" />
+    <skill id="protect" x="4" y="1" />
     <skill id="legion" x="3" y="5" />
     <type>1</type>
     <sub_type>5</sub_type>
@@ -2280,27 +2281,28 @@
     <release_set>1</release_set>
     <upgrade>
       <level>2</level>
-      <health>27</health>
+      <health>30</health>
+      <attack>6</attack>
     </upgrade>
     <upgrade>
       <level>3</level>
-      <health>28</health>
+      <health>32</health>
       <skill id="heal" x="2" all="1" />
-      <skill id="protect" x="4" y="1" />
+      <skill id="protect" x="5" y="1" />
       <skill id="legion" x="3" y="5" />
     </upgrade>
     <upgrade>
       <level>4</level>
-      <health>30</health>
-      <skill id="heal" x="2" all="1" />
-      <skill id="protect" x="4" y="1" />
+      <health>34</health>
+      <skill id="heal" x="3" all="1" />
+      <skill id="protect" x="6" y="1" />
       <skill id="legion" x="4" y="5" />
     </upgrade>
     <upgrade>
       <level>5</level>
-      <attack>6</attack>
-      <skill id="heal" x="3" all="1" />
-      <skill id="protect" x="4" y="1" />
+      <attack>7</attack>
+      <skill id="heal" x="4" all="1" />
+      <skill id="protect" x="7" y="1" />
       <skill id="legion" x="4" y="5" />
     </upgrade>
   </unit>

@@ -5208,7 +5208,7 @@
       <card level="1" id="510" />
       <card level="2" id="510" />
       <card level="3" id="510" />
-      <card level="4" id="2109" />
+      <card level="4" id="2117" />
       <card level="5" id="510" />
       <card level="6" id="510" />
       <card level="7" id="510" />
@@ -5222,7 +5222,7 @@
     <locked_start_time>1513270800</locked_start_time>
     <!-- Thu, 14 Dec 2017 17:00:00 -->
     <location_id>13</location_id>
-    <x>270</x>
+    <x>310</x>
     <y>484</y>
     <combatBG>CombatBGEvent003</combatBG>
     <missions>
@@ -5243,9 +5243,9 @@
       <card level="1" id="511" />
       <card level="2" id="511" />
       <card level="3" id="511" />
-      <card level="4" id="2115" />
+      <card level="4" id="2081" />
       <card level="5" id="512" />
-      <card level="6" id="2024" />
+      <card level="5" id="512" />
       <item level="7" id="3066" />
     </rewards>
     <find_item id="3065" drop_per_energy=".2" />
@@ -5279,9 +5279,9 @@
       <card level="1" id="511" />
       <card level="2" id="511" />
       <card level="3" id="511" />
-      <card level="4" id="2115" />
+      <card level="4" id="2118" />
       <card level="5" id="512" />
-      <card level="6" id="2024" />
+      <card level="6" id="2042" />
       <item level="7" id="3066" />
     </rewards>
     <find_item id="3065" drop_per_energy=".4" />

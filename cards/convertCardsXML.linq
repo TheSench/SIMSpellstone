@@ -102,6 +102,7 @@ void Main()
 		{"flurry", "flurry"},
 		// On Death
 		{"unearth", "onDeath"},
+		{"reanimate", "onDeath"},
 		// Early Activation
 		{"barrage", "earlyActivation"},
 		{"enhance", "earlyActivation"},
@@ -723,6 +724,7 @@ public partial class unit
 		AppendEntryString(sb, "rarity", rarity, unitTabs);
 		AppendEntryString(sb, "set", set, unitTabs);
 		AppendEntryString(sb, "card_type", card_type, unitTabs);
+		AppendEntry(sb, "shard_card", shard_card, unitTabs);
 		AppendEntryString(sb, "type", type, unitTabs);
 		AppendEntryArray(sb, "sub_type", sub_type, unitTabs);
 		AppendEntry(sb, "health", health, unitTabs);
@@ -776,6 +778,7 @@ public partial class unit
 
 	private string idField;
 	private string card_typeField;
+	private string shard_cardField;
 	private string nameField;
 	private string descField;
 	private string pictureField;
@@ -803,8 +806,15 @@ public partial class unit
 	/// <remarks/>
 	public string card_type
 	{
-		get { return this.card_typeField; }
+		get { return this.card_typeField ?? "2"; }
 		set { this.card_typeField = value; }
+	}
+
+	/// <remarks/>
+	public string shard_card
+	{
+		get { return this.shard_cardField; }
+		set { this.shard_cardField = value; }
 	}
 
 	/// <remarks/>
