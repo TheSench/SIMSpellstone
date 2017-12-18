@@ -66,7 +66,7 @@ var DATA_UPDATER = (function () {
         "cards_premium_chaos.xml",
         "cards_premium_wyld.xml",
         "cards_reward.xml",
-		"cards_shard_cards,xml",
+		"cards_shard_cards.xml",
         "cards_special.xml",
         "cards_standard.xml",
         "cards_story.xml",
@@ -161,7 +161,7 @@ var DATA_UPDATER = (function () {
         unit.rarity = getValue(node, "rarity");
         unit.set = getValue(node, "set");
         unit.card_type = getValue(node, "card_type");
-        unit.type = getValue(node, "type");
+        unit.type = getValue(node, "type") || 0;
         unit.sub_type = (getValues(node, "sub_type") || []);
 
         addNumericField(unit, node, "health");
