@@ -1888,6 +1888,19 @@ var MAP_BATTLEGROUNDS = {
 				  	"ally_only": "1"
 				  }
 			  	]
+			  },
+			  {
+			  	"desc": "All of your creatures are protected by Barrier 6 each turn.",
+			  	"name": "Aether Gemstone",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "protect",
+				  	"x": 6,
+				  	"all": "1",
+				  	"ally_only": "1"
+				  }
+			  	]
 			  }
 		  	]
 		  },
@@ -2070,6 +2083,290 @@ var MAP_BATTLEGROUNDS = {
 				  	"id": "imbue",
 				  	"s": "burn",
 				  	"x": 8,
+				  	"all": "1",
+				  	"ally_only": "1"
+				  }
+			  	]
+			  }
+		  	]
+		  }
+		]
+	},
+	"3008": {
+		"id": "3008",
+		"name": "Celestial Orbs",
+		"desc": "The Orbs in the Celestial Vault keep the islands afloat. Power them up and gain their strength with Breezy Wind!",
+		"location_id": "13",
+		"effects": [
+		  {
+		  	"id": "23",
+		  	"name": "Petal Orb",
+		  	"upgrades": [
+			  {
+			  	"desc": "",
+			  	"effect": [
+
+			  	]
+			  },
+			  {
+			  	"desc": "All of your creatures are Healed for 1 each turn.",
+			  	"name": "Petal Orb",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "heal",
+				  	"x": 1,
+				  	"all": "1",
+				  	"ally_only": "1"
+				  }
+			  	]
+			  },
+			  {
+			  	"desc": "All of your creatures are Healed for 2 each turn.",
+			  	"name": "Petal Orb",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "heal",
+				  	"x": 2,
+				  	"all": "1",
+				  	"ally_only": "1"
+				  }
+			  	]
+			  },
+			  {
+			  	"desc": "All of your creatures are Healed for 3 each turn.",
+			  	"name": "Petal Orb",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "heal",
+				  	"x": 3,
+				  	"all": "1",
+				  	"ally_only": "1"
+				  }
+			  	]
+			  },
+			  {
+			  	"desc": "All of your creatures are Healed for 4 each turn.",
+			  	"name": "Petal Orb",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "heal",
+				  	"x": 4,
+				  	"all": "1",
+				  	"ally_only": "1"
+				  }
+			  	]
+			  },
+			  {
+			  	"desc": "All of your creatures are Healed for 5 each turn.",
+			  	"name": "Petal Orb",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "heal",
+				  	"x": 5,
+				  	"all": "1",
+				  	"ally_only": "1"
+				  }
+			  	]
+			  },
+			  {
+			  	"desc": "All of your creatures are Healed for 6 each turn.",
+			  	"name": "Petal Orb",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "heal",
+				  	"x": 6,
+				  	"all": "1",
+				  	"ally_only": "1"
+				  }
+			  	]
+			  }
+		  	]
+		  },
+		  {
+		  	"id": "24",
+		  	"name": "Lava Orb",
+		  	"upgrades": [
+			  {
+			  	"desc": "",
+			  	"effect": [
+
+			  	]
+			  },
+			  {
+			  	"desc": "All of your creatures gain Enrage 1 each turn.",
+			  	"name": "Lava Orb",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "imbue",
+				  	"s": "enrage",
+				  	"x": 1,
+				  	"all": "1",
+				  	"ally_only": "1"
+				  }
+			  	]
+			  },
+			  {
+			  	"desc": "All of your creatures gain Enrage 2 each turn.",
+			  	"name": "Lava Orb",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "imbue",
+				  	"s": "enrage",
+				  	"x": 2,
+				  	"all": "1",
+				  	"ally_only": "1"
+				  }
+			  	]
+			  },
+			  {
+			  	"desc": "All of your creatures gain Enrage 3 each turn.",
+			  	"name": "Lava Orb",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "imbue",
+				  	"s": "enrage",
+				  	"x": 3,
+				  	"all": "1",
+				  	"ally_only": "1"
+				  }
+			  	]
+			  },
+			  {
+			  	"desc": "All of your creatures gain Enrage 4 each turn.",
+			  	"name": "Lava Orb",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "imbue",
+				  	"s": "enrage",
+				  	"x": 4,
+				  	"all": "1",
+				  	"ally_only": "1"
+				  }
+			  	]
+			  },
+			  {
+			  	"desc": "All of your creatures gain Enrage 6 each turn.",
+			  	"name": "Lava Orb",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "imbue",
+				  	"s": "enrage",
+				  	"x": 6,
+				  	"all": "1",
+				  	"ally_only": "1"
+				  }
+			  	]
+			  },
+			  {
+			  	"desc": "All of your creatures gain Enrage 8 each turn.",
+			  	"name": "Lava Orb",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "imbue",
+				  	"s": "enrage",
+				  	"x": 8,
+				  	"all": "1",
+				  	"ally_only": "1"
+				  }
+			  	]
+			  }
+		  	]
+		  },
+		  {
+		  	"id": "25",
+		  	"name": "Basin Orb",
+		  	"upgrades": [
+			  {
+			  	"desc": "",
+			  	"effect": [
+
+			  	]
+			  },
+			  {
+			  	"desc": "All of your creatures are protected by Barrier 1 each turn.",
+			  	"name": "Basin Orb",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "protect",
+				  	"x": 1,
+				  	"all": "1",
+				  	"ally_only": "1"
+				  }
+			  	]
+			  },
+			  {
+			  	"desc": "All of your creatures are protected by Barrier 2 each turn.",
+			  	"name": "Basin Orb",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "protect",
+				  	"x": 2,
+				  	"all": "1",
+				  	"ally_only": "1"
+				  }
+			  	]
+			  },
+			  {
+			  	"desc": "All of your creatures are protected by Barrier 3 each turn.",
+			  	"name": "Basin Orb",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "protect",
+				  	"x": 3,
+				  	"all": "3",
+				  	"ally_only": "1"
+				  }
+			  	]
+			  },
+			  {
+			  	"desc": "All of your creatures are protected by Barrier 4 each turn.",
+			  	"name": "Basin Orb",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "protect",
+				  	"x": 4,
+				  	"all": "1",
+				  	"ally_only": "1"
+				  }
+			  	]
+			  },
+			  {
+			  	"desc": "All of your creatures are protected by Barrier 5 each turn.",
+			  	"name": "Basin Orb",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "protect",
+				  	"x": 5,
+				  	"all": "1",
+				  	"ally_only": "1"
+				  }
+			  	]
+			  },
+			  {
+			  	"desc": "All of your creatures are protected by Barrier 6 each turn.",
+			  	"name": "Basin Orb",
+			  	"effect": [
+				  {
+				  	"effect_type": "skill",
+				  	"id": "protect",
+				  	"x": 6,
 				  	"all": "1",
 				  	"ally_only": "1"
 				  }

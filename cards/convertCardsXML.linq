@@ -134,6 +134,11 @@ void Main()
 		{"counterburn", "Counterburn"}
 	};
 
+	var skillIconChanges = new Dictionary<string, string>()
+	{
+		{"reinforce", "reinforce"}
+	};
+
 	var iconRemappings = new Dictionary<string, string>()
 	{
 		{"mark", "eagle_eye"},
@@ -154,8 +159,12 @@ void Main()
 	.Select(node =>
 	{
 		var id = node.Element("id").Value;
+		string skillId;
+		if (skillIconChanges.TryGetValue(id, out skillId)) {
+			skillId = id;
+		}
 		string icon;
-		if (!iconRemappings.TryGetValue(id, out icon))
+		if (!iconRemappings.TryGetValue(skillId, out icon))
 		{
 			icon = node.Element("icon").Value;
 		}

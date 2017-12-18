@@ -5053,7 +5053,7 @@
     </rewards>
     <find_item id="3062" drop_per_energy=".4" />
   </campaign>
-  <!-- Halloween Mecha -->
+  <!-- Halloween 2017 Mecha -->
   <campaign>
     <id>1145</id>
     <hidden>1</hidden>
@@ -5286,30 +5286,36 @@
     </rewards>
     <find_item id="3065" drop_per_energy=".4" />
   </campaign>
+  <!-- Christmas Event 2017 -->
+  <campaign>
+    <id>1152</id>
+    <hidden>1</hidden>
+    <event_only>1</event_only>
+    <name>The Giftbringer</name>
+    <icon id="santaHat" bundle="41" />
+    <location_id>13</location_id>
+    <x>557</x>
+    <y>242</y>
+    <combatBG>CombatBGEvent003</combatBG>
+    <missions>
+      <mission_id>5797</mission_id>
+      <mission_id>5798</mission_id>
+      <mission_id>5799</mission_id>
+      <mission_id>5800</mission_id>
+      <mission_id>5801</mission_id>
+    </missions>
+    <rewards>
+      <item level="1" id="2526" />
+      <item level="2" id="2527" />
+      <item level="3" id="2527" />
+      <card level="4" id="2081" />
+      <item level="5" id="104000" number="5" />
+      <item level="6" id="104000" number="5" />
+      <item level="7" id="104000" number="5" />
+    </rewards>
+    <find_item id="3062" drop_per_energy=".2" />
+  </campaign>
   <!-- 
-	<campaign> 
-		<id>1152</id>
-		<name>Test Mission 4</name>
-		<campaign_req id='6' level='1' />
-		<location_id>13</location_id>
-		<x>270</x>
-		<y>251</y>
-		<combatBG>CombatBGEvent003</combatBG>
-		<missions>
-			<mission_id>5771</mission_id>
-		</missions>
-		<rewards>
-			<card level='1' id='511' />
-			<card level='2' id='511' />
-			<card level='3' id='511' />
-			<card level='4' id='2115' />
-			<card level='5' id='512' />
-			<card level='6' id='2024' />
-			<item level='7' id='3063' />
-		</rewards>
-		<find_item id='3062' drop_per_energy='.8' />
-	</campaign>
-	
 	<campaign> 
 		<id>1153</id>
 		<name>Test Mission 5</name>

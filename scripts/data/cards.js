@@ -99806,6 +99806,224 @@ var CARDS = {
       },
     }
   },
+  "6174": {
+    "id": "6174",
+    "name": "Deatheye Owl",
+    "desc": "\"Came 'cross one in'na dead o' night. Eye glow'in fire, felt like it reached 'ight in an' touched ma' soul.\" - Mort, Village Guard",
+    "picture": "Undead_Owl_Mystic_A",
+    "hidden_until": "1513616400000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["7","10"],
+    "health": 9,
+    "attack": 3,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "strike",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "nullify",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "health": 10,
+        "skill": [],
+      },
+      "3": {
+        "health": 11,
+        "skill": [],
+      },
+      "4": {
+        "attack": 4,
+        "skill": [],
+      },
+      "5": {
+        "health": 12,
+        "skill": [],
+      },
+      "6": {
+        "health": 13,
+        "skill": [],
+      },
+    }
+  },
+  "16174": {
+    "id": "16174",
+    "name": "Endeye Owl",
+    "picture": "Undead_Owl_Mystic_A",
+    "hidden_until": "1513616400000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["7","10"],
+    "health": 13,
+    "attack": 4,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "strike",
+        "x": 1,
+        "all": "1",
+      },
+      {
+        "id": "nullify",
+        "x": 1,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "nullify",
+            "x": 1,
+          },
+        ],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 1,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "nullify",
+            "x": 2,
+          },
+        ],
+      },
+      "4": {
+        "health": 14,
+        "skill": [],
+      },
+      "5": {
+        "attack": 5,
+        "skill": [],
+      },
+      "6": {
+        "health": 15,
+        "skill": [],
+      },
+    }
+  },
+  "26174": {
+    "id": "26174",
+    "name": "Flareye Owl",
+    "picture": "Undead_Owl_Mystic_B",
+    "hidden_until": "1513616400000",
+    "rarity": "4",
+    "set": "4000",
+    "card_type": "2",
+    "type": "2",
+    "sub_type": ["7","10"],
+    "health": 16,
+    "attack": 5,
+    "cost": 1,
+    "maxLevel": 6,
+    "skill": [
+      {
+        "id": "evade",
+        "x": 1,
+      },
+      {
+        "id": "strike",
+        "x": 2,
+        "all": "1",
+      },
+      {
+        "id": "nullify",
+        "x": 2,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "attack": 6,
+        "skill": [],
+      },
+      "3": {
+        "health": 17,
+        "skill": [],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 2,
+            "all": "1",
+          },
+          {
+            "id": "nullify",
+            "x": 2,
+          },
+        ],
+      },
+      "5": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "nullify",
+            "x": 2,
+          },
+        ],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "evade",
+            "x": 2,
+          },
+          {
+            "id": "strike",
+            "x": 3,
+            "all": "1",
+          },
+          {
+            "id": "nullify",
+            "x": 3,
+          },
+        ],
+      },
+    }
+  },
   "7000": {
     "id": "7000",
     "name": "Treant King",
@@ -165019,154 +165237,13 @@ var CARDS = {
   },
   "4001": {
     "id": "4001",
-    "name": "Orbo, the Cuddler",
-    "picture": "Mythic_Undead_A",
-    "rarity": "5",
-    "set": "5100",
+    "name": "Placeholder",
+    "set": "9999",
     "card_type": "2",
-    "shard_card": 1,
-    "type": "1",
-    "sub_type": ["16"],
-    "health": 20,
-    "attack": 9,
-    "cost": 3,
-    "maxLevel": 10,
-    "skill": [
-      {
-        "id": "leech",
-        "x": 8,
-      },
-      {
-        "id": "berserk",
-        "x": 4,
-      },
-      {
-        "id": "reanimate",
-        "x": 5,
-      },
-    ],
-    "upgrades": {
-      "2": {
-        "skill": [
-          {
-            "id": "leech",
-            "x": 8,
-          },
-          {
-            "id": "berserk",
-            "x": 4,
-          },
-          {
-            "id": "reanimate",
-            "x": 6,
-          },
-        ],
-      },
-      "3": {
-        "skill": [
-          {
-            "id": "leech",
-            "x": 9,
-          },
-          {
-            "id": "berserk",
-            "x": 4,
-          },
-          {
-            "id": "reanimate",
-            "x": 6,
-          },
-        ],
-      },
-      "4": {
-        "skill": [
-          {
-            "id": "leech",
-            "x": 9,
-          },
-          {
-            "id": "berserk",
-            "x": 5,
-          },
-          {
-            "id": "reanimate",
-            "x": 6,
-          },
-        ],
-      },
-      "5": {
-        "attack": 11,
-        "skill": [],
-      },
-      "6": {
-        "skill": [
-          {
-            "id": "leech",
-            "x": 9,
-          },
-          {
-            "id": "berserk",
-            "x": 6,
-          },
-          {
-            "id": "reanimate",
-            "x": 6,
-          },
-        ],
-      },
-      "7": {
-        "skill": [
-          {
-            "id": "leech",
-            "x": 9,
-          },
-          {
-            "id": "berserk",
-            "x": 7,
-          },
-          {
-            "id": "reanimate",
-            "x": 6,
-          },
-        ],
-      },
-      "8": {
-        "skill": [
-          {
-            "id": "leech",
-            "x": 9,
-          },
-          {
-            "id": "berserk",
-            "x": 7,
-          },
-          {
-            "id": "reanimate",
-            "x": 7,
-          },
-        ],
-      },
-      "9": {
-        "health": 57,
-        "skill": [],
-      },
-      "10": {
-        "skill": [
-          {
-            "id": "leech",
-            "x": 10,
-          },
-          {
-            "id": "berserk",
-            "x": 8,
-          },
-          {
-            "id": "reanimate",
-            "x": 7,
-          },
-        ],
-      },
-    }
+    "sub_type": [],
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
   },
   "500": {
     "id": "500",
@@ -196681,37 +196758,22 @@ var CARDS = {
   "9973": {
     "id": "9973",
     "name": "Unused Art",
+    "picture": "Mythic_Undead_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "9972": {
+    "id": "9972",
+    "name": "Unused Art",
     "picture": "Oda_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19973": {
-    "id": "19973",
-    "name": "Unused Art",
-    "picture": "Oda_B",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "29973": {
-    "id": "29973",
-    "name": "Unused Art",
-    "picture": "Oda_C",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -196726,7 +196788,7 @@ var CARDS = {
   "19972": {
     "id": "19972",
     "name": "Unused Art",
-    "picture": "Promo_Dragon_B",
+    "picture": "Oda_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -196738,10 +196800,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9971": {
-    "id": "9971",
+  "29972": {
+    "id": "29972",
     "name": "Unused Art",
-    "picture": "Sage_Insect_and_Avian_Son_A",
+    "picture": "Oda_C",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -196756,7 +196818,7 @@ var CARDS = {
   "19971": {
     "id": "19971",
     "name": "Unused Art",
-    "picture": "Sage_Insect_and_Avian_Son_B",
+    "picture": "Promo_Dragon_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -196771,7 +196833,7 @@ var CARDS = {
   "9970": {
     "id": "9970",
     "name": "Unused Art",
-    "picture": "Seraph_A",
+    "picture": "Sage_Insect_and_Avian_Son_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -196786,7 +196848,7 @@ var CARDS = {
   "19970": {
     "id": "19970",
     "name": "Unused Art",
-    "picture": "Seraph_B",
+    "picture": "Sage_Insect_and_Avian_Son_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -196801,7 +196863,7 @@ var CARDS = {
   "9969": {
     "id": "9969",
     "name": "Unused Art",
-    "picture": "Spiky_Bug_A",
+    "picture": "Seraph_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -196816,7 +196878,7 @@ var CARDS = {
   "19969": {
     "id": "19969",
     "name": "Unused Art",
-    "picture": "Spiky_Bug_B",
+    "picture": "Seraph_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -196831,7 +196893,22 @@ var CARDS = {
   "9968": {
     "id": "9968",
     "name": "Unused Art",
-    "picture": "Tarian_A",
+    "picture": "Spiky_Bug_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19968": {
+    "id": "19968",
+    "name": "Unused Art",
+    "picture": "Spiky_Bug_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -196846,22 +196923,7 @@ var CARDS = {
   "9967": {
     "id": "9967",
     "name": "Unused Art",
-    "picture": "Tornado_Bird_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19967": {
-    "id": "19967",
-    "name": "Unused Art",
-    "picture": "Tornado_Bird_B",
+    "picture": "Tarian_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -196876,7 +196938,22 @@ var CARDS = {
   "9966": {
     "id": "9966",
     "name": "Unused Art",
-    "picture": "Tremor_Wurm_A",
+    "picture": "Tornado_Bird_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19966": {
+    "id": "19966",
+    "name": "Unused Art",
+    "picture": "Tornado_Bird_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -196891,22 +196968,7 @@ var CARDS = {
   "9965": {
     "id": "9965",
     "name": "Unused Art",
-    "picture": "Tribal_Avian_Warrior_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19965": {
-    "id": "19965",
-    "name": "Unused Art",
-    "picture": "Tribal_Avian_Warrior_B",
+    "picture": "Tremor_Wurm_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -196921,7 +196983,7 @@ var CARDS = {
   "9964": {
     "id": "9964",
     "name": "Unused Art",
-    "picture": "Undead_Owl_Mystic_A",
+    "picture": "Tribal_Avian_Warrior_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -196936,7 +196998,7 @@ var CARDS = {
   "19964": {
     "id": "19964",
     "name": "Unused Art",
-    "picture": "Undead_Owl_Mystic_B",
+    "picture": "Tribal_Avian_Warrior_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -197069,4 +197131,4 @@ var CARDS = {
     "upgrades": {}
   },
 };
-var CardsUpdated = 1513271112785.77;
+var CardsUpdated = 1513607781024.48;

@@ -21343,4 +21343,133 @@
       <skill id="leech" x="8" />
     </upgrade>
   </unit>
+  <unit>
+    <id>6174</id>
+    <card_type>2</card_type>
+    <name>Deatheye Owl</name>
+    <picture>Undead_Owl_Mystic_A</picture>
+    <asset_bundle>114</asset_bundle>
+    <hidden_until_time>1513616400</hidden_until_time>
+    <attack>3</attack>
+    <health>9</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="strike" x="1" all="1" />
+    <skill id="nullify" x="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <health>10</health>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>11</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <attack>4</attack>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <health>12</health>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>13</health>
+    </upgrade>
+    <desc>"Came 'cross one in'na dead o' night. Eye glow'in fire, felt like it reached 'ight in an' touched ma' soul." - Mort, Village Guard</desc>
+  </unit>
+  <unit>
+    <id>16174</id>
+    <card_type>2</card_type>
+    <fusion_level>1</fusion_level>
+    <name>Endeye Owl</name>
+    <picture>Undead_Owl_Mystic_A</picture>
+    <asset_bundle>114</asset_bundle>
+    <hidden_until_time>1513616400</hidden_until_time>
+    <attack>4</attack>
+    <health>13</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="strike" x="1" all="1" />
+    <skill id="nullify" x="1" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <skill id="evade" x="1" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="nullify" x="1" />
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <skill id="evade" x="1" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <health>14</health>
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <attack>5</attack>
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <health>15</health>
+    </upgrade>
+  </unit>
+  <unit>
+    <id>26174</id>
+    <card_type>2</card_type>
+    <fusion_level>2</fusion_level>
+    <name>Flareye Owl</name>
+    <picture>Undead_Owl_Mystic_B</picture>
+    <asset_bundle>114</asset_bundle>
+    <hidden_until_time>1513616400</hidden_until_time>
+    <attack>5</attack>
+    <health>16</health>
+    <cost>1</cost>
+    <rarity>4</rarity>
+    <skill id="evade" x="1" />
+    <skill id="strike" x="2" all="1" />
+    <skill id="nullify" x="2" />
+    <type>2</type>
+    <sub_type>7</sub_type>
+    <sub_type>10</sub_type>
+    <set>4000</set>
+    <upgrade>
+      <level>2</level>
+      <attack>6</attack>
+    </upgrade>
+    <upgrade>
+      <level>3</level>
+      <health>17</health>
+    </upgrade>
+    <upgrade>
+      <level>4</level>
+      <skill id="evade" x="2" />
+      <skill id="strike" x="2" all="1" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>5</level>
+      <skill id="evade" x="2" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="nullify" x="2" />
+    </upgrade>
+    <upgrade>
+      <level>6</level>
+      <skill id="evade" x="2" />
+      <skill id="strike" x="3" all="1" />
+      <skill id="nullify" x="3" />
+    </upgrade>
+  </unit>
 </root>

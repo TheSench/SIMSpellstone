@@ -1530,8 +1530,8 @@ function unitInfo_to_base64(unit_info) {
     var level = (parseInt(unit_info.level) - 1);
 
     if (noFusions[baseID]) {
-        var fusion = level % 3;
-        var level = Math.floor(level / 3);
+    	var fusion = Math.floor(level / 7);
+    	var level = level % 7;
     } else {
         var fusion = Math.floor(baseID / 10000);
         baseID %= 10000;
@@ -1567,7 +1567,7 @@ function base64_to_unitInfo(base64) {
     var unitID = dec;
 
     if (noFusions[unitID]) {
-        level = level * 3 + fusion;
+    	level += fusion * 7;
     } else if (fusion > 0) {
         unitID = Number(fusion + '' + unitID);
     }

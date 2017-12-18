@@ -25085,4 +25085,195 @@
       </line>
     </speech>
   </mission>
+  <!-- Christmas Event 2017 -->
+  <mission>
+    <id>5797</id>
+    <name>Empty Resources</name>
+    <energy>1</energy>
+    <desc>Rayne has been tasked with settling the Redfeather Avians into their new home, the Celestial Vault. Unfortunately, resources are spread thin. Magistrate Agni approaches Rayne for a favor...</desc>
+    <commander id="308" />
+    <deck>
+      <card id="5007" name="Arcane Scroll" />
+      <card id="6006" name="Chaos Golem" />
+      <card id="7006" name="Treant Sapling" />
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="5025" name="Steelskin Dragon" />
+      <card id="5050" name="Cloud Spear" />
+      <card id="5067" name="Squito Roamer" />
+      <card id="5035" name="Vapor Guard" />
+      <card id="5028" name="Winter Blacksmith" />
+      <card id="5004" mastery_level="2" name="Lightning Lord" />
+      <card id="5161" mastery_level="3" name="Bolster Bot" />
+      <card id="5025" mastery_level="4" name="Steelskin Dragon" />
+      <card id="5141" mastery_level="5" name="Nimbocaster" />
+      <card id="5027" mastery_level="6" name="Northern War-kin" />
+      <card id="5026" mastery_level="7" name="Frostfire Wyrm" />
+    </deck>
+    <speech>
+      <line>
+        <commander>avianmagistrate</commander>
+        <enemy>1</enemy>
+        <text>Ah, Rayne. Might I trouble you for a few more blankets? There are too few to go around the entire camp.</text>
+      </line>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>Magistrate Agni... I wish that I could, but unfortunately we have no more to spare.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5798</id>
+    <name>Refilled Resources</name>
+    <energy>1</energy>
+    <desc>The next day, Rayne goes to check up on the Redfeather Avians. To Rayne's surprise, the Avians all have blankets! They all look to be made well, and are of high quality.</desc>
+    <commander id="308" />
+    <deck>
+      <card id="6017" name="Tar Pit Stalker" />
+      <card id="7022" name="Beetle Tamer" />
+      <card id="6022" name="Illusion Caster" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="5041" name="Skylance Raiders" />
+      <card id="5021" name="Tower Spirit" />
+      <card id="5152" name="Mermaid Merchant" />
+      <card id="5113" name="Bishop Rook" />
+      <card id="5011" name="Sky Whale" />
+      <card id="5005" mastery_level="2" name="Storm Giant" />
+      <card id="5155" mastery_level="3" name="Silvertongue Fencer" />
+      <card id="5139" mastery_level="4" name="Loyal Guard" />
+      <card id="5127" mastery_level="5" name="Dynamo Drake" />
+      <card id="5032" mastery_level="6" name="Hail Hurler" />
+      <card id="5029" mastery_level="7" name="Snowback Dragon" />
+    </deck>
+    <speech>
+      <line>
+        <commander>avianmagistrate</commander>
+        <enemy>1</enemy>
+        <text>Thank you so much, Rayne. These blankets are a most generous gift.</text>
+      </line>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>Ah, but - I am not the one who provided them. Where did you get them?</text>
+      </line>
+      <line>
+        <commander>avianmagistrate</commander>
+        <enemy>1</enemy>
+        <text>Oh? A shipment arrived, so I had assumed it was from you. Regardless, we are very grateful.</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5799</id>
+    <name>Gifts for All</name>
+    <energy>1</energy>
+    <desc>Rayne ponders over their mysterious donor. The Elementals lack the resources for it to be one of them. She decides to investigate, and finds that the Avians aren't the only ones that have new supplies...</desc>
+    <commander id="241" />
+    <deck>
+      <card id="6012" name="Ember Drake" />
+      <card id="6007" name="Goblin Crew" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="7017" name="Coral Elemental" />
+      <card id="5024" name="Cloudtop Dragon" />
+      <card id="5089" name="Gomblit" />
+      <card id="5146" name="Lullmage Whisperer" />
+      <card id="6042" name="Shadow of Thunder" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="5108" mastery_level="2" name="Aurora Skimmer" />
+      <card id="5158" mastery_level="3" name="Chilltide Stormtender" />
+      <card id="6016" mastery_level="4" name="Skeletal Giant" />
+      <card id="5127" mastery_level="5" name="Dynamo Drake" />
+      <card id="5075" mastery_level="6" name="Arith" />
+      <card id="5151" mastery_level="7" name="Brinebelly" />
+    </deck>
+    <speech>
+      <line>
+        <commander>goldelemental</commander>
+        <enemy>1</enemy>
+        <text>Awah! Just what I always wanted, a kit of sparkles to keep my form glittery and golden!</text>
+      </line>
+      <line>
+        <commander>lavacrab</commander>
+        <enemy>1</enemy>
+        <text>*SNAP SNAP* -A new board to sharpen my pincers, to improve my threatening atmosphere!-</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5800</id>
+    <name>Mysterious Donor</name>
+    <energy>1</energy>
+    <desc>Rayne tracks the packages' origin to the fringe of the Celestial Vault, where the hero's airship is docked. There, she sees a fuzzy form adjusting ribbon-wrapped boxes...</desc>
+    <commander id="244" />
+    <deck>
+      <card id="7006" name="Treant Sapling" />
+      <card id="1312" name="Scythe Demon" />
+      <card id="1618" name="Frog Scout" />
+      <card id="1617" name="Water Elemental" />
+      <card id="5024" name="Cloudtop Dragon" />
+      <card id="5081" name="Brahzee" />
+      <card id="5114" name="Wingward" />
+      <card id="6066" name="Psychic Beetle" />
+      <card id="5015" name="Gravity Swell" />
+      <card id="6025" mastery_level="2" name="Dragon Keeper" />
+      <card id="5130" mastery_level="3" name="Drakeling Fosterer" />
+      <card id="6005" mastery_level="4" name="Gloomkin" />
+      <card id="6010" mastery_level="5" name="Cliffpass Defender" />
+      <card id="5074" mastery_level="6" name="Godfried the Hunter" />
+      <card id="6045" mastery_level="7" name="Darkflame" />
+    </deck>
+    <speech>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>Everyone has received gifts! But who could possibly do something so wonderful?</text>
+      </line>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>Hm? What is that... fuzzy person with a red hat....</text>
+      </line>
+    </speech>
+  </mission>
+  <mission>
+    <id>5801</id>
+    <name>The Giftbringer Culprit</name>
+    <energy>1</energy>
+    <desc>The fuzzy tall form can only belong to one person. Ursurio works diligently to wrap all the packages, many more waiting to be given. Rayne approaches the bear.</desc>
+    <commander id="258" />
+    <deck>
+      <card id="5022" name="Webfoot Raider" />
+      <card id="1019" name="Oracle" />
+      <card id="1615" name="Rune Panther" />
+      <card id="1616" name="Werewarg" />
+      <card id="5016" name="Fowl Swarm" />
+      <card id="5080" name="Djinnflame Brawler" />
+      <card id="5139" name="Loyal Guard" />
+      <card id="6089" name="Fire Belcher" />
+      <card id="6069" name="Arachnolite" />
+      <card id="6025" mastery_level="2" name="Dragon Keeper" />
+      <card id="6077" mastery_level="3" name="Enigma" />
+      <card id="5163" mastery_level="4" name="Bark Hound" />
+      <card id="5149" mastery_level="5" name="Flatfish Ward" />
+      <card id="5068" mastery_level="6" name="Aht-Aht Carrier" />
+      <card id="6039" mastery_level="7" name="Auroch" />
+    </deck>
+    <speech>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>1</enemy>
+        <text>Hohoho!</text>
+      </line>
+      <line>
+        <commander>elementalhero</commander>
+        <enemy>0</enemy>
+        <text>Ursurio! So you're the one giving out gifts to everyone. Thank you!</text>
+      </line>
+      <line>
+        <commander>bearcommander</commander>
+        <enemy>0</enemy>
+        <text>It's a great time to enjoy food and holiday cheer!</text>
+      </line>
+    </speech>
+  </mission>
 </root>

@@ -218,7 +218,7 @@ var SKILL_DATA = {
 	reinforce : {
 		name: 'Energy Shield',
 		type: 'passive',
-		icon: 'mystic_barrier',
+		icon: 'reinforce',
 		desc: 'When this creature deals Attack damage they gain a Barrier'
 	},
 	resurrect : {
