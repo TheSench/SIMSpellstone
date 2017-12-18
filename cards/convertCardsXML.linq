@@ -3,7 +3,7 @@
   <Namespace>System.Xml.Serialization</Namespace>
 </Query>
 
-static bool downloadFiles = true;
+static bool downloadFiles = false;
 
 static string path = Path.GetDirectoryName(Util.CurrentQueryPath);
 static string baseUrl = @"https://spellstone.synapse-games.com/assets";
@@ -159,14 +159,13 @@ void Main()
 	.Select(node =>
 	{
 		var id = node.Element("id").Value;
-		string skillId;
-		if (skillIconChanges.TryGetValue(id, out skillId)) {
-			skillId = id;
-		}
 		string icon;
-		if (!iconRemappings.TryGetValue(skillId, out icon))
+		if (!skillIconChanges.TryGetValue(id, out icon))
 		{
-			icon = node.Element("icon").Value;
+			if (!iconRemappings.TryGetValue(id, out icon))
+			{
+				icon = node.Element("icon").Value;
+			}
 		}
 		string name;
 		if (!skillRenames.TryGetValue(id, out name))

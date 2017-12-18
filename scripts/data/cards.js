@@ -165237,13 +165237,154 @@ var CARDS = {
   },
   "4001": {
     "id": "4001",
-    "name": "Placeholder",
-    "set": "9999",
+    "name": "Orbo, the Cuddler",
+    "picture": "Mythic_Undead_A",
+    "rarity": "5",
+    "set": "5100",
     "card_type": "2",
-    "sub_type": [],
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
+    "shard_card": 1,
+    "type": "1",
+    "sub_type": ["16"],
+    "health": 20,
+    "attack": 9,
+    "cost": 3,
+    "maxLevel": 10,
+    "skill": [
+      {
+        "id": "leech",
+        "x": 8,
+      },
+      {
+        "id": "berserk",
+        "x": 4,
+      },
+      {
+        "id": "reanimate",
+        "x": 5,
+      },
+    ],
+    "upgrades": {
+      "2": {
+        "skill": [
+          {
+            "id": "leech",
+            "x": 8,
+          },
+          {
+            "id": "berserk",
+            "x": 4,
+          },
+          {
+            "id": "reanimate",
+            "x": 6,
+          },
+        ],
+      },
+      "3": {
+        "skill": [
+          {
+            "id": "leech",
+            "x": 9,
+          },
+          {
+            "id": "berserk",
+            "x": 4,
+          },
+          {
+            "id": "reanimate",
+            "x": 6,
+          },
+        ],
+      },
+      "4": {
+        "skill": [
+          {
+            "id": "leech",
+            "x": 9,
+          },
+          {
+            "id": "berserk",
+            "x": 5,
+          },
+          {
+            "id": "reanimate",
+            "x": 6,
+          },
+        ],
+      },
+      "5": {
+        "attack": 11,
+        "skill": [],
+      },
+      "6": {
+        "skill": [
+          {
+            "id": "leech",
+            "x": 9,
+          },
+          {
+            "id": "berserk",
+            "x": 6,
+          },
+          {
+            "id": "reanimate",
+            "x": 6,
+          },
+        ],
+      },
+      "7": {
+        "skill": [
+          {
+            "id": "leech",
+            "x": 9,
+          },
+          {
+            "id": "berserk",
+            "x": 7,
+          },
+          {
+            "id": "reanimate",
+            "x": 6,
+          },
+        ],
+      },
+      "8": {
+        "skill": [
+          {
+            "id": "leech",
+            "x": 9,
+          },
+          {
+            "id": "berserk",
+            "x": 7,
+          },
+          {
+            "id": "reanimate",
+            "x": 7,
+          },
+        ],
+      },
+      "9": {
+        "health": 57,
+        "skill": [],
+      },
+      "10": {
+        "skill": [
+          {
+            "id": "leech",
+            "x": 10,
+          },
+          {
+            "id": "berserk",
+            "x": 8,
+          },
+          {
+            "id": "reanimate",
+            "x": 7,
+          },
+        ],
+      },
+    }
   },
   "500": {
     "id": "500",
@@ -196758,7 +196899,7 @@ var CARDS = {
   "9973": {
     "id": "9973",
     "name": "Unused Art",
-    "picture": "Mythic_Undead_A",
+    "picture": "Oda_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -196770,10 +196911,25 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "9972": {
-    "id": "9972",
+  "19973": {
+    "id": "19973",
     "name": "Unused Art",
-    "picture": "Oda_A",
+    "picture": "Oda_B",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "29973": {
+    "id": "29973",
+    "name": "Unused Art",
+    "picture": "Oda_C",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -196788,7 +196944,7 @@ var CARDS = {
   "19972": {
     "id": "19972",
     "name": "Unused Art",
-    "picture": "Oda_B",
+    "picture": "Promo_Dragon_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -196800,10 +196956,10 @@ var CARDS = {
     "skill": [],
     "upgrades": {}
   },
-  "29972": {
-    "id": "29972",
+  "9971": {
+    "id": "9971",
     "name": "Unused Art",
-    "picture": "Oda_C",
+    "picture": "Sage_Insect_and_Avian_Son_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -196818,7 +196974,7 @@ var CARDS = {
   "19971": {
     "id": "19971",
     "name": "Unused Art",
-    "picture": "Promo_Dragon_B",
+    "picture": "Sage_Insect_and_Avian_Son_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -196833,7 +196989,7 @@ var CARDS = {
   "9970": {
     "id": "9970",
     "name": "Unused Art",
-    "picture": "Sage_Insect_and_Avian_Son_A",
+    "picture": "Seraph_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -196848,7 +197004,7 @@ var CARDS = {
   "19970": {
     "id": "19970",
     "name": "Unused Art",
-    "picture": "Sage_Insect_and_Avian_Son_B",
+    "picture": "Seraph_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -196863,7 +197019,7 @@ var CARDS = {
   "9969": {
     "id": "9969",
     "name": "Unused Art",
-    "picture": "Seraph_A",
+    "picture": "Spiky_Bug_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -196878,7 +197034,7 @@ var CARDS = {
   "19969": {
     "id": "19969",
     "name": "Unused Art",
-    "picture": "Seraph_B",
+    "picture": "Spiky_Bug_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -196893,22 +197049,7 @@ var CARDS = {
   "9968": {
     "id": "9968",
     "name": "Unused Art",
-    "picture": "Spiky_Bug_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19968": {
-    "id": "19968",
-    "name": "Unused Art",
-    "picture": "Spiky_Bug_B",
+    "picture": "Tarian_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -196923,7 +197064,22 @@ var CARDS = {
   "9967": {
     "id": "9967",
     "name": "Unused Art",
-    "picture": "Tarian_A",
+    "picture": "Tornado_Bird_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19967": {
+    "id": "19967",
+    "name": "Unused Art",
+    "picture": "Tornado_Bird_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -196938,22 +197094,7 @@ var CARDS = {
   "9966": {
     "id": "9966",
     "name": "Unused Art",
-    "picture": "Tornado_Bird_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19966": {
-    "id": "19966",
-    "name": "Unused Art",
-    "picture": "Tornado_Bird_B",
+    "picture": "Tremor_Wurm_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -196968,7 +197109,22 @@ var CARDS = {
   "9965": {
     "id": "9965",
     "name": "Unused Art",
-    "picture": "Tremor_Wurm_A",
+    "picture": "Tribal_Avian_Warrior_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19965": {
+    "id": "19965",
+    "name": "Unused Art",
+    "picture": "Tribal_Avian_Warrior_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -196983,22 +197139,7 @@ var CARDS = {
   "9964": {
     "id": "9964",
     "name": "Unused Art",
-    "picture": "Tribal_Avian_Warrior_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19964": {
-    "id": "19964",
-    "name": "Unused Art",
-    "picture": "Tribal_Avian_Warrior_B",
+    "picture": "Unused1_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -197013,7 +197154,7 @@ var CARDS = {
   "9963": {
     "id": "9963",
     "name": "Unused Art",
-    "picture": "Unused1_A",
+    "picture": "Unused2_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -197028,7 +197169,7 @@ var CARDS = {
   "9962": {
     "id": "9962",
     "name": "Unused Art",
-    "picture": "Unused2_A",
+    "picture": "Unused3_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -197043,7 +197184,7 @@ var CARDS = {
   "9961": {
     "id": "9961",
     "name": "Unused Art",
-    "picture": "Unused3_A",
+    "picture": "Ursurio_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -197058,7 +197199,22 @@ var CARDS = {
   "9960": {
     "id": "9960",
     "name": "Unused Art",
-    "picture": "Ursurio_A",
+    "picture": "Victorian_Card_Ghost_A",
+    "rarity": "0",
+    "card_type": "2",
+    "type": "0",
+    "sub_type": [],
+    "health": -1,
+    "attack": -1,
+    "cost": -1,
+    "maxLevel": 1,
+    "skill": [],
+    "upgrades": {}
+  },
+  "19960": {
+    "id": "19960",
+    "name": "Unused Art",
+    "picture": "Victorian_Card_Ghost_B",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -197073,22 +197229,7 @@ var CARDS = {
   "9959": {
     "id": "9959",
     "name": "Unused Art",
-    "picture": "Victorian_Card_Ghost_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "19959": {
-    "id": "19959",
-    "name": "Unused Art",
-    "picture": "Victorian_Card_Ghost_B",
+    "picture": "Void_Abomination_A",
     "rarity": "0",
     "card_type": "2",
     "type": "0",
@@ -197103,21 +197244,6 @@ var CARDS = {
   "9958": {
     "id": "9958",
     "name": "Unused Art",
-    "picture": "Void_Abomination_A",
-    "rarity": "0",
-    "card_type": "2",
-    "type": "0",
-    "sub_type": [],
-    "health": -1,
-    "attack": -1,
-    "cost": -1,
-    "maxLevel": 1,
-    "skill": [],
-    "upgrades": {}
-  },
-  "9957": {
-    "id": "9957",
-    "name": "Unused Art",
     "picture": "Yuriel_A",
     "rarity": "0",
     "card_type": "2",
@@ -197131,4 +197257,4 @@ var CARDS = {
     "upgrades": {}
   },
 };
-var CardsUpdated = 1513607781024.48;
+var CardsUpdated = 1513613159539.26;
