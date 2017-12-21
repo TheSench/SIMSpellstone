@@ -1459,11 +1459,15 @@ private static void AppendEntry(StringBuilder sb, string name, string value, str
 	}
 }
 
-private static void AppendEntryString(StringBuilder sb, string name, string value, string tabs)
+private static void AppendEntryString(StringBuilder sb, string name, string value, string tabs, string defaultValue = null)
 {
 	if (!String.IsNullOrEmpty(value))
 	{
 		sb.Append(tabs).Append("\"").Append(name).Append("\": \"").Append(value).Append("\",\r\n");
+	}
+	else if (!String.IsNullOrEmpty(defaultValue))
+	{
+		sb.Append(tabs).Append("\"").Append(name).Append("\": \"").Append(defaultValue).Append("\",\r\n");
 	}
 }
 
